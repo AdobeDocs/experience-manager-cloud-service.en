@@ -19,83 +19,34 @@ Click the square box next to the **[!UICONTROL Banner text color]** to select a 
 
 # Change the primary and secondary color{#Change-the-primary-and-secondary-color}
 
-On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, use the **[!UICONTROL Colors]** section to set primary and secondary colors. These colors customize the background, text, and icon colors of UI elements in your [!DNL Content Hub]. The selected colors also highlight certain elements when selected.
+On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, use the **[!UICONTROL Colors]** section to set primary and secondary colors. These colors customize the background, text, and icon colors of UI elements in your [!DNL Content Hub].
+See [change the primary color scheme](#primary-color-scheme) and [change the secondary color scheme](#secondary-color-scheme) sections to know the application areas of these colors. 
 
-The primary color scheme apply to the following key areas in [!DNL Content Hub] [home page](#home-page) and [[!UICONTROL configuration]](#configuration-page) page:
+## Change the primary color scheme{#primary-color-scheme}
 
-## Primary color scheme on [!DNL Content Hub] home page{#home-page}
+The primary color scheme apply to the following key areas in [!DNL Content Hub] [home page](#primary-color-on-home-page) and [[!UICONTROL configuration]](#configuration-page) page:
+
+### Primary color scheme on [!DNL Content Hub] home page{#primary-color-on-home-page}
 
 The primary color schema apply to the following places on [!DNL Content Hub] home page:
 * Interactive elements like checkboxes, search bars, and toggle switches across [!DNL Content Hub].
 * When an item is Selected.
 * Actions options available on primary [!DNL Content Hub] interfaces such as **[!UICONTROL All Assets]** and **[!UICONTROL Collections]** pages.
 
-## Primary color scheme on configuration page{#configuration-page}
+### Primary color scheme on [!UICONTROL Configuration] page{#primary-color-on-configuration-page}
 
-The primary color schema apply to the following places on [!DNL Content Hub] configuration page:
+The primary color schema apply to the following places on [!DNL Content Hub] [!UICONTROL Configuration] page:
 
-* Toggle switches across configuration page.
-* Selecting table rows within a configuration page.
-* **[!UICONTROL Confirm]** option in Edit dialog boxes of all configuration pages.
+* Toggle switches across [!UICONTROL Configuration] page.
+* Selecting table rows within a [!UICONTROL Configuration] page.
+* **[!UICONTROL Confirm]** option in Edit dialog boxes of all [!UICONTROL Configuration] pages.
 
+## Change the secondary color scheme{#secondary-color-scheme}
 
-The secondary color scheme apply to the following interface elements in Content Hub home page and configuration page:
+The secondary color scheme apply to the following interface elements in [!DNL Content Hub] home page and [!UICONTROL Configuration] page:
 
-## Secondary color scheme on [!DNL Content Hub] home page and configuration page {#secondary-color-on-home-page-and-configuration-page}
+### Secondary color scheme on [!DNL Content Hub] home page and [!UICONTROL Configuration] page {#secondary-color-on-home-page-and-configuration-page}
 
-On the [!DNL Content Hub] home page, the secondary color scheme apply to the UI options and input fields within dialog boxes and on configuration page the color scheme apply to all config menu options and UI options and input fields available on the configuration pages and within dialog boxes.
-
-UI options and input fields within dialog boxes.
-
-## Secondary color scheme on configuration page{#secondary-configuration-page}
-
-All configuration menu options
-UI options and input fields available on the configuration pages and within dialog boxes.
-
-
-
-
------
-
-See [Detailed color application guide](#primary-and-secondary-color-on-the-content-hub-home-page) for a detailed breakdown of where these colors are applied across different pages and UI elements:
-
-
-<summary><strong>Detailed color application guide</strong></summary>
-
-See the following sections to know the places on the [[!DNL Content Hub] home page](#primary-and-secondary-color-on-the-content-hub-home-page) and [[!UICONTROL Configuration]](#primary-and-secondary-color-on-the-content-hub-configuration-page) page where both these colors apply:
-
-## Apply primary and secondary color on the [!DNL Content Hub] home page{#primary-and-secondary-color-on-the-content-hub-home-page}
-
-Primary color apply to the following places on the [!DNL Content Hub] home page: 
-
-* Magnifying glass ![](/help/assets/assets/Magnify.svg) inside the search bar.
-* Border color of the search bar when selected.
-* Selection checkboxes ![](/help/assets/assets/SelectBox.svg) after selection.
-* Toggle switches ![](/help/assets/assets/toogle.svg) and date input fields.
-* UI options such as ![](/help/assets/assets/add-image.svg) **[!UICONTROL Add assets]** on the **[!UICONTROL All Assets]** page and ![](/help/assets/assets/CollectionAdd.svg) **[!UICONTROL Create collection]** on the ![](/help/assets/assets/Collection.svg) **[!UICONTROL Collections]** page.
-* selecting Asset cards from the **[!UICONTROL All Assets]** page. 
-* Selecting collection tiles from the **[!UICONTROL Add aaset to collection]** dialog box or **[!UICONTROL Add to collection]** panel. **[!UICONTROL Add aaset to collection]** dialog box displays when you select ![](/help/assets/assets/add-circle.svg) available on the asset card or select ![](/help/assets/assets/add-circle.svg) **[!UICONTROL Add to collection]** after selecting one or more asset cards. **[!UICONTROL Add to collection]** panel displays when you click asset thumbnail on an asset card and select ![](/help/assets/assets/add-circle.svg) from the menu options in the right pane.
-* The **[!UICONTROL Upload]** option in the **[!UICONTROL Add approved assets]** dialog box. **[!UICONTROL Add approved assets]** dialog box displays when you select ![](/help/assets/assets/add-image.svg) **[!UICONTROL Add assets]** available on the **[!UICONTROL All Assets]** page.
-* The pane displaying the count of selected assets after selecting an asset card from the **[!UICONTROL All Assets]** or ![](/help/assets/assets/Collection.svg) **[!UICONTROL Collections]** page.
-* Hovering over or selecting a rendition from the **[!UICONTROL Download]** panel. **[!UICONTROL Download]** panel displays when you click asset thumbnail on an asset card and select ![](/help/assets/assets/download-icon.svg) from the menu options in the right pane. 
-
-Secondary color apply to the following places on the [!DNL Content Hub] home page: 
-
-* Input fields in dialog boxes, excluding those in the **[!UICONTROL Add approved assets]** dialog box. **[!UICONTROL Add approved assets]** dialog box displays on clicking ![](/help/assets/assets/add-image.svg) **[!UICONTROL Add assets]** available on the **[!UICONTROL All Assets]** page.
-* Options such as **[!UICONTROL Download]**, **[!UICONTROL Generate share link]**, and ![](/help/assets/assets/add-circle.svg) **[!UICONTROL Add to collection]** available in various dialog boxes, excluding the **[!UICONTROL Upload]** option in the **[!UICONTROL Add approved assets]** dialog box.
-
-## Apply primary and secondary color on the [!DNL Content Hub] [!UICONTROL configuration] page{#primary-and-secondary-color-on-the-content-hub-configuration-page}
-
-Secondary color apply to the following places on the [!DNL Content Hub] **[!UICONTROL configuration]** page:
-
-* All configuration options including ![](/help/assets/assets/import.svg) **[!UICONTROL Import]**, ![](/help/assets/assets/filter.svg) **[!UICONTROL Filters]**, ![](/help/assets/assets/info-icon.svg) **[!UICONTROL Asset details]**, ![](/help/assets/assets/asset-card.svg) **[!UICONTROL Asset Card]**, ![](/help/assets/assets/Magnify.svg) **[!UICONTROL Search]**, ![](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]**, ![](/help/assets/assets/expired-assets.svg) **[!UICONTROL Expired Assets]**, **[!UICONTROL Renditions]** and ![](/help/assets/assets/link.svg) **[!UICONTROL Custom Links ]** available on the configuration page.
-* Options including **[!UICONTROL Add filters]** on![](/help/assets/assets/filter.svg) **[!UICONTROL Filters]** page, **[!UICONTROL Add link]** on ![](/help/assets/assets/link.svg) **[!UICONTROL Custom Links]** page and **[!UICONTROL Add metadata]** on ![](/help/assets/assets/import.svg) **[!UICONTROL Import]**, ![](/help/assets/assets/info-icon.svg) **[!UICONTROL Asset details]**, ![](/help/assets/assets/asset-card.svg) **[!UICONTROL Asset Card]** and ![](/help/assets/assets/Magnify.svg) **[!UICONTROL Search]** pages.  
-* Input fields in the **[!UICONTROL Add metadata]**, **[!UICONTROL Add link]** and **[!UICONTROL Add filters]** dialog boxes.
-
-Primary color apply to the following places on the [!DNL Content Hub] [!UICONTROL configuration] page:
-
-* Selecting a row from the table on the configuration pages.
-* Toggle color across all configuration pages.
-* The **[!UICONTROL Confirm]** option in the Edit dialog boxes on all configuration pages.
+On the [!DNL Content Hub] home page, the secondary color scheme applies to UI options and input fields within dialog boxes. On the [!UICONTROL Configuration] page, it applies to all configuration menu options, as well as UI options and input fields on the configuration pages and within dialog boxes.
 
 
