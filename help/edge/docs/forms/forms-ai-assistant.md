@@ -6,15 +6,19 @@ hide: yes
 hidefromtoc: yes
 role: Admin, Architect, Developer
 ---
+
 # AI Assistant for AEM Forms (Forms Experience Builder)
 
 >[!NOTE]
 >
 >
-> The AI Assistant for AEM Forms (Forms Experience Builder) capability is available under the early-adopter program. If you are interested, send a quick email from your work address to mailto:aem-forms-ea@adobe.com to request access to the capability.
+> The AI Assistant for AEM Forms (Forms Experience Builder) capability is available under the **early-adopter program**. If you are interested, send a quick email from your work address to mailto:aem-forms-ea@adobe.com to request access to the capability.
 
+>[!IMPORTANT]
+>
+> **Documentation Subject to Change**: This documentation is currently being tested against the product and is subject to updates and revisions. Features, commands, and examples may change as the AI Assistant for AEM Forms continues to evolve during the early-adopter program.
 
-The AI Assistant for AEM Forms (Forms Experience Builder) enhances your authoring experience by streamlining common form-building tasks through natural language prompts. Available in Forms Manager, the Adaptive Forms Editor, and the Universal Editor, it empowers you to build smarter and faster by supporting both creation and configuration actions. This guide will help you get started and make the most of its capabilities.
+The AI Assistant for AEM Forms (Forms Experience Builder) enhances your authoring experience by streamlining common form-building tasks through natural language prompts. Available in Forms Management UI, the Adaptive Forms Editor, and the Universal Editor, it empowers you to build smarter and faster by supporting both creation and configuration actions. This guide will help you get started and make the most of its capabilities.
 
 ## Getting Started
 
@@ -24,7 +28,7 @@ Before you dive deep, let's cover the basics of accessing and interacting with t
 
 You can access the AI Assistant from three different locations in AEM Forms:
 
-1. **Forms Manager**
+1. **Forms Management UI**
    - Navigate to: Adobe Experience Manager > Forms > Forms & Documents
    - Look for the AI Assistant icon on the left side of the interface
    - Click the icon to open the AI Assistant panel
@@ -51,6 +55,7 @@ The AI Assistant adapts its functionality based on your current location and tas
 - Simply type your request in natural language.
 - Use `/` to view a list of available commands or quick actions.
 - Reference specific form fields using `@fieldName` (e.g., `@firstName`, `@emailAddress`) when you want the assistant to configure or update that particular field.
+- You can upload images, PDFs, Figma files, or other design assets to help the AI Assistant understand your requirements better.
 
 
 ### Quick Start
@@ -66,13 +71,13 @@ This video covers launching the assistant in all environments, basic interaction
 
 | Command | Description | Purpose | Usage Context | Examples | Key Features |
 |---------|-------------|---------|---------------|----------|--------------|
-| /create-form | Start a new form in Forms Manager or Forms Editor | Initiates creation of a completely new form from scratch | Forms Manager, Adaptive Forms Editor | /create-form customer feedback survey | Provides options for forms structure and creates the form |
-| /add-form | Add a new form in Universal Editor | Adds a new form block or component within Universal Editor | Universal Editor for Edge Delivery Services | /add-form contact form with name and email | Inserts form blocks, works with block-based editing |
+| /create-form | Start a new form in Forms Management UI or Forms Editor | Initiates creation of a completely new form from scratch | Forms Management UI, Adaptive Forms Editor | /create-form customer feedback survey based on attached PDF | Provides options for forms structure and creates the form. **Supports attachments** for design references |
+| /add-form | Add a new form in Universal Editor | Adds a new form block or component within Universal Editor | Universal Editor for Edge Delivery Services | /add-form contact form with name and email | Inserts form blocks, works with block-based editing. **Supports attachments** for layout guidance |
 | /update-layout | Change layout of form to accordion, tab-based, wizard, or single page responsive design | Modifies overall structural layout and navigation pattern | All editing environments | /update-layout wizard with 3 steps | Accordion, tabs, wizard, single-page responsive options |
-| /update-field | Modify properties and configuration of existing form fields | Changes field attributes like labels, validation, formatting, behavior | All editing environments | /update-field @email to be required with validation | Labels, validation rules, field types, defaults, visibility |
+| /update-field | Modify properties and configuration of existing form fields | Changes field attributes like labels, validation, formatting, behavior | All editing environments | /update-field @email to be required with validation | Labels, validation rules, field types, defaults, visibility. **Supports attachments** for field design examples |
 | /create-rule | Create dynamic behavior and conditional logic for forms | Implements business logic, calculations, conditional interactions | All editing environments | /create-rule show @spouseName if @maritalStatus equals "Married" | Conditional visibility, calculations, validation, value setting |
-| /create-panel | Create a new panel (container for grouping related fields) | Adds structural containers to organize form fields logically | All editing environments | /create-panel Personal Information with name, email, phone | Field grouping, titles, layout options, collapsible sections |
-| /add-panel | Convert an image to form panel in Universal Editor | Uses AI to analyze uploaded images and convert to structured form panels | Universal Editor | /add-panel from uploaded form image | Image recognition, visual-to-functional conversion, layout preservation |
+| /create-panel | Create a new panel (container for grouping related fields) | Adds structural containers to organize form fields logically | All editing environments | /create-panel Personal Information with name, email, phone | Field grouping, titles, layout options, collapsible sections. **Supports attachments** for panel layout references |
+| /add-panel | Convert an image to form panel in Universal Editor | Uses AI to analyze uploaded images and convert to structured form panels | Universal Editor | /add-panel from uploaded form image | Image recognition, visual-to-functional conversion, layout preservation. **Requires attachments** for image analysis |
 | /configure-submit | Set up form submission actions and data handling | Defines what happens when users submit the completed form | All editing environments | /configure-submit to send email to `support@company.com` | Email, REST API, workflows, spreadsheets, databases, Power Automate |
 | /help | Access assistance and documentation within the AI Assistant | Provides contextual help, guidance, and answers about AEM Forms | All editing environments | /help how do I create multi-step forms? | Feature explanations, guides, best practices, troubleshooting |
 
@@ -101,7 +106,7 @@ This video covers launching the assistant in all environments, basic interaction
 
 | Environment | Available Commands | Special Features |
 |-------------|-------------------|------------------|
-| Forms Manager | /create-form, /help | Form-level creation and management |
+| Forms Management UI | /create-form, /help | Form-level creation and management |
 | Adaptive Forms Editor and  Universal Editor | All commands | Full feature set, detailed configuration |
 
 
@@ -136,17 +141,17 @@ The AI Assistant understands a wide range of commands. Here are some examples to
 
 | Feature Category          | Description                                                                 | Example Prompts                                                                                                                                                                                                                                                                                                                                                               |
 | ------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Form Creation**         | Start a new form from scratch or based on a description.                    | `Create a new form titled 'Employee Onboarding'.` <br> `Generate a customer feedback form with fields for name, email, rating (1-5 stars), and comments.` <br> `Start a simple contact form with name, email, and message fields.` <br> `Design a multi-page registration form for an event.`                                                                                     |
-| **Import Design**         | Convert an existing design (image, Figma, PDF) into an AEM Form.            | `Import the form design from this uploaded PDF file.` <br> `Convert the uploaded Figma design into an adaptive form, focusing on the 'User Profile' frame.` <br> `Use this JPEG image of our old paper form to create a new digital version.` <br> `Create a form based on the layout of the attached PNG.`                                                                    |
-| **Adding Components & Panels** | Add various form fields and structural containers (panels).               | `Add a text input field for 'First Name'.` <br> `Add a 'Personal Details' panel with fields for full name, date of birth, and phone number.` <br> `Insert a checkbox group for 'Interests' with options: Technology, Sports, Music.` <br> `Add a file upload component for 'Resume'.` <br> `Create a repeatable panel named 'WorkExperience' with fields for company, title, and dates.` |
-| **Layout Adjustments**    | Modify the structure and appearance of your form's layout.                | `Change the 'Personal Details' panel to a two-column layout.` <br> `Set the overall form layout to a wizard (multi-step) navigation.` <br> `Make the header section span the full width of the form.` <br> `Adjust the spacing between fields in the 'Address' panel to be compact.` <br> `Align all field labels to the left.`                                                           |
+| **Form Creation**         | Start a new form from scratch or based on a description.                    | `Create a new form titled 'Employee Onboarding'.` <br> `Generate a customer feedback form with fields for name, email, rating (1-5 stars), and comments.` <br> `Start a simple contact form with name, email, and message fields.` <br> `Design a multi-page registration form for an event.` <br> `Create a form based on the attached PDF template.` |
+| **Import Design**         | Convert an existing design (image, Figma, PDF) into an AEM Form.            | `Import the form design from this uploaded PDF file.` <br> `Convert the uploaded Figma design into an adaptive form, focusing on the 'User Profile' frame.` <br> `Use this JPEG image of our old paper form to create a new digital version.` <br> `Create a form based on the layout of the attached PNG.` <br> `Recreate the form shown in the attached screenshot with modern styling.` |
+| **Adding Components & Panels** | Add various form fields and structural containers (panels).               | `Add a text input field for 'First Name'.` <br> `Add a 'Personal Details' panel with fields for full name, date of birth, and phone number.` <br> `Insert a checkbox group for 'Interests' with options: Technology, Sports, Music.` <br> `Add a file upload component for 'Resume'.` <br> `Create a repeatable panel named 'WorkExperience' with fields for company, title, and dates.` <br> `Add a panel matching the layout shown in the attached design mockup.` |
+| **Layout Adjustments**    | Modify the structure and appearance of your form's layout.                | `Change the 'Personal Details' panel to a two-column layout.` <br> `Set the overall form layout to a wizard (multi-step) navigation.` <br> `Make the header section span the full width of the form.` <br> `Adjust the spacing between fields in the 'Address' panel to be compact.` <br> `Align all field labels to the left.` <br> `Update the form layout to match the attached wireframe.` |
 | **Rule Creation & Logic** | Implement dynamic behavior, calculations, and conditional visibility.       | `Make the 'Spouse Name' field visible only if 'Marital Status' is selected as 'Married'.` <br> `Calculate the 'Total Amount' by multiplying @quantity and @price.` <br> `Enable the submit button only when the @termsAndConditions checkbox is checked.` <br> `Set the value of @countryCode to '+1' if @country is 'United States'.` <br> `If @age is less than 18, show a message 'Must be 18 or older'.` |
-| **Field Properties Update** | Modify attributes of specific form fields like labels, placeholders, etc. | `Change the label of @email to 'Primary Email Address'.` <br> `Set the @comment field to be a multi-line text area.` <br> `Make the @phoneNumber field mandatory.` <br> `Add placeholder text 'Enter your ZIP code' to the @zipCode field.` <br> `Change the @country field to a dropdown and populate it with: USA, Canada, UK, Germany.` <br> `Update the help description for @password to 'Must include an uppercase letter, a number, and be at least 8 characters long.'` <br> `Set the maximum length of the @username field to 15 characters.` <br> `Configure the @dateOfBirth field to use a date picker.` |
+| **Field Properties Update** | Modify attributes of specific form fields like labels, placeholders, etc. | `Change the label of @email to 'Primary Email Address'.` <br> `Set the @comment field to be a multi-line text area.` <br> `Make the @phoneNumber field mandatory.` <br> `Add placeholder text 'Enter your ZIP code' to the @zipCode field.` <br> `Change the @country field to a dropdown and populate it with: USA, Canada, UK, Germany.` <br> `Update the help description for @password to 'Must include an uppercase letter, a number, and be at least 8 characters long.'` <br> `Set the maximum length of the @username field to 15 characters.` <br> `Configure the @dateOfBirth field to use a date picker.` <br> `Style the @email field to match the design shown in the attached image.` |
 | **Submit Actions**        | Define what happens when a user submits the form.                         | `Configure the form to submit data to the REST endpoint /api/v2/application-submit.` <br> `Set up an email submission to hr@example.com and sales@example.com on successful submission.` <br> `Trigger an AEM workflow named 'NewLeadProcessing' when this form is submitted.` <br> `On submit, redirect the user to a thank you page at /content/thankyou.html.`              |
-| **Theming**               | Apply existing AEM Forms themes to style your form.                         | `Apply the 'Modern Business' theme to this form.` <br> `Switch to the 'Accessible Dark' theme.` <br> `Revert to the default canvas theme.`                                                                                                                                                                                                                                     |
+| **Theming**               | Apply existing AEM Forms themes to style your form.                         | `Apply the 'Modern Business' theme to this form.` <br> `Switch to the 'Accessible Dark' theme.` <br> `Revert to the default canvas theme.` <br> `Apply styling that matches the brand guidelines shown in the attached style guide.` |
 | **Navigation & Structure**| Add navigation elements or reorganize parts of the form.                    | `Add a 'Next' button to the current panel and a 'Previous' button to the next panel.` <br> `Create a Table of Contents based on the form's panels.` <br> `Move the 'Address' panel to be before the 'Contact Information' panel.`                                                                                                                                         |
 | **Validation**            | Set specific validation rules for fields.                                   | `Set a regex pattern for the @employeeID field to be 'EMP\d{5}'.` <br> `Ensure the @age field only accepts numeric values between 18 and 99.` <br> `Validate the @email field to ensure it is a valid email format.`                                                                                                                                                     |
-| **Review Plan** (Universal Editor) | Preview the assistant's proposed changes before execution.            | `Add a contact form with fields for name, email, subject, and message.` (The assistant will show a plan of components and properties it will create, then you click "Apply").                                                                                                                                                                                |
+| **Review Plan** (Universal Editor) | Preview the assistant's proposed changes before execution.            | `Add a contact form with fields for name, email, subject, and message.` (The assistant will show a plan of components and properties it will create, then you click "Apply"). <br> `Create a form based on the attached design file.` (The assistant will analyze the attachment and show a detailed plan before implementation). |
 
 ## Best Practices for Optimal Results
 
@@ -178,7 +183,7 @@ You can ask the assistant questions like:
 
 ### How to Ask for Help:
 
-1. Open the AI Assistant in Forms Manager or the Adaptive Forms Editor.
+1. Open the AI Assistant in Forms Management UI or the Adaptive Forms Editor.
 2. Type your question in natural language (e.g., "How do I add a repeatable panel?").
 3. The assistant will respond with:
     - Step-by-step instructions.
@@ -195,7 +200,7 @@ You can ask the assistant questions like:
 ## Troubleshooting Common Issues
 
 - **Assistant Not Responding:**
-    - Ensure you are actively working within a supported environment (Forms Manager, Adaptive Forms Editor, or Universal Editor).
+    - Ensure you are actively working within a supported environment (Forms Management UI, Adaptive Forms Editor, or Universal Editor).
     - Check your internet connection.
     - Try closing and reopening the AI Assistant panel.
 
@@ -225,3 +230,65 @@ Your input is invaluable for the continuous improvement of the AI Assistant.
 ## Related Content
 
 [AEM Forms AI Assistant - Prompt Library](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+
+## Working with Attachments
+
+The AI Assistant supports file attachments to enhance your form creation and configuration experience. You can attach various file types to provide visual context, design references, or existing forms to convert.
+
+### Supported Attachment Types
+
+| File Type | Use Cases | Commands That Support Attachments | Examples |
+|-----------|-----------|-----------------------------------|----------|
+| **Images** (PNG, JPG, JPEG, GIF) | Form layout references, UI mockups, paper form scans | /create-form, /add-form, /create-panel, /add-panel, /update-field | Upload a screenshot of desired layout |
+| **PDF Files** | Existing forms to convert, design specifications | /create-form, /add-form, /create-panel, /add-panel | Convert PDF application forms |
+| **Figma Files** | Design system references, UI prototypes | /create-form, /add-form, /create-panel | Import Figma design frames |
+| **Design Files** (Sketch, Adobe XD exports) | Visual design references | /create-form, /add-form, /create-panel | Reference design system components |
+
+### How to Use Attachments
+
+1. **Attach Before or With Your Command:**
+
+   - Click the attachment icon in the AI Assistant interface
+   - Select your file(s) from your device
+   - Type your command referencing the attached file
+
+2. **Reference Attachments in Commands:**
+
+   ```
+   /create-form based on the attached PDF application form
+   /add-panel using the layout shown in the uploaded image
+   /create-panel following the design in the attached Figma file
+   /update-field @email to match the style in the attached screenshot
+   ```
+
+3. **Multiple Attachments:**
+
+   - You can attach multiple files for comparison or reference
+   - Specify which attachment to use: "using the first attached image" or "based on the PDF file"
+
+### Attachment Best Practices
+
+- **Clear, High-Quality Images:** Ensure uploaded images are clear and legible for better AI analysis
+- **Relevant File Names:** Use descriptive file names to help the AI understand context
+- **Single Focus:** Each attachment should focus on one specific aspect (layout, field design, etc.)
+- **Supported Formats:** Stick to common formats (PNG, JPG, PDF) for best compatibility
+- **File Size:** Keep attachments under 10MB for optimal processing speed
+
+### Example Attachment Workflows
+
+**Converting a Paper Form:**
+
+1. Scan or photograph the paper form clearly
+2. Upload the image file
+3. Use command: `/create-form based on the attached form image, converting all fields to digital equivalents`
+
+**Matching a Design System:**
+
+1. Export or screenshot relevant design components
+2. Attach the design reference
+3. Use command: `/create-panel following the visual style and layout shown in the attached design`
+
+**Field Styling Reference:**
+
+1. Attach screenshot of desired field appearance
+2. Use command: `/update-field @email to match the styling and layout shown in the attached image`

@@ -5,6 +5,7 @@ feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
 ---
+
 # AEM Content Fragment Delivery with OpenAPI {#aem-content-fragment-delivery-with-openapi}
 
 In Adobe Experience Manager (AEM) as a Cloud Service, the AEM OpenAPI for Content Fragment Delivery:
