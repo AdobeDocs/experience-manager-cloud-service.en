@@ -34,7 +34,7 @@ exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
     | Text field | Description |
     | - | --- |
     | Site Name | Enter the name of the Edge Delivery site that you are adding.<br>The name serves as a unique identifier for the site within Cloud Manager. |
-    | Repository URL | Enter the Git repository where your website's code is stored.<br>This field allows Cloud Manager to pull the code from that repository during the deployment process.  |
+    | Edge Delivery Origin | The Edge Delivery Origin defines the primary URL endpoint where your Edge Delivery site is served. Cloud Manager uses this path to validate and connect your Edge Delivery site with your program configuration. This URL points to the live deployment of your Edge Delivery project hosted on Adobe's Edge runtime.  |
     | Site description (optional) | Enter a brief description of the Edge Delivery site that you are adding.<br>A description helps to identify and differentiate the site, making it easier to manage and recognize among other sites you have added. |
 
 1. In the lower-right corner of the dialog box, click **Add**.
