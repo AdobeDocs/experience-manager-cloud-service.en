@@ -221,10 +221,10 @@ Select the **[!UICONTROL Reset Defaults]** option to revert your changes and res
 
 #### Change the banner image{#Change-the-banner-image}
 
-On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, execute the following steps to change the banner image of your [!DNL Content Hub]:
+On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, execute the following steps to change the banner image of your [!DNL Content Hub] deployment:
 
-1. Click ![select image](/help/assets/assets/Browse.svg) **[!UICONTROL Select from gallery]** to select a banner image from the asset selector dialog box.
-1. Select the image and click **[!UICONTROL Select]** to make it the header banner of your [!DNL Content Hub].
+1. Click ![select image](/help/assets/assets/Browse.svg) **[!UICONTROL Select from gallery]** to select a banner image using the asset selector dialog box.
+1. Select the image, click **[!UICONTROL Select]**, and then click **[!UICONTROL Save]** to display it as the banner image of your [!DNL Content Hub] deployment.
 
 #### Add title and body text to your banner and change the text color{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
@@ -233,13 +233,11 @@ Click the square box next to the **[!UICONTROL Banner text color]** to select a 
 
 #### Change the primary and secondary color{#Change-the-primary-and-secondary-color}
 
-On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, use the **[!UICONTROL Colors]** section to set primary and secondary colors. These colors set the background, text, and icon colors of UI elements in your [!DNL Content Hub] enabling you to align your [!DNL Content Hub] UI with your brand's theme.
+On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, use the **[!UICONTROL Colors]** section to set primary and secondary colors. These colors set the background, text, and icon colors of UI elements to align your [!DNL Content Hub] UI with your brand's theme.
 
-**[!UICONTROL Primary color]:** The primary color scheme applies to selection action, interactive elements such as checkboxes, search bars, and toggle switches across [!DNL Content Hub] including [!DNL Content Hub] home page and [!UICONTROL Configuration] page. It also applies to action options available on primary [!DNL Content Hub] interfaces such as options available on **[!UICONTROL All Assets]** and **[!UICONTROL Collections]** pages. 
+**[!UICONTROL Primary color]:** The primary color scheme applies to selection actions, interactive elements such as checkboxes, search bars, and toggle switches across [!DNL Content Hub] including [!DNL Content Hub] home page and [!UICONTROL Configuration] page. It also applies to action options available on primary [!DNL Content Hub] interfaces such as options available on **[!UICONTROL All Assets]** and **[!UICONTROL Collections]** pages. 
 
-**[!UICONTROL Secondary color]:** On the [!DNL Content Hub] home page, the secondary color scheme applies to UI options and input fields that are available within dialog boxes. On the [!UICONTROL Configuration] page, it applies to all configuration menu options available on the [!UICONTROL Configuration] page, and UI options and input fields available on each configuration page and within dialog boxes.
-
-The branding updates enabled on the Configuration User Interface display on the Content Hub portal banner.
+**[!UICONTROL Secondary color]:** On the [!DNL Content Hub] home page, the secondary color scheme applies to UI options and input fields that are available within dialog boxes. It applies to all configuration menu options available on the [!UICONTROL Configuration] page except selection actions, checkboxes, search bars, and toggle switches.
 
 ### Expired assets{#expired-assets-content-hub}
 
