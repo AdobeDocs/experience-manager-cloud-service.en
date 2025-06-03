@@ -165,7 +165,7 @@ OSGi properties:
 
 The Java 11 runtime is now deprecated and most customers have been automatically upgraded to the more performant **Java 21 runtime**, for all their environments.
 
-If your environment(s) could not be upgraded due to an unsupported dependency, Adobe has already reached out with an email and will again reach out with details specific to your scenario on how to resolve. All dependencies must be resolved by September 9th, 2025 so your environments can be safely upgraded to the Java 21 runtime.
+If your environment(s) could not be upgraded due to an unsupported dependency, Adobe has already reached out with an email and will again reach out with details specific to your scenario on how to resolve. All dependencies must be resolved by **August 28th, 2025** so your environments can be safely upgraded to the Java 21 runtime.
 
 Note that the Java 21 runtime is independent of whether your code is built with Java 21 (recommended) or with an earlier version. Building with Java 11 is still supported, but a deprecation will be announced in the future.
 
@@ -173,15 +173,29 @@ Note that the Java 21 runtime is independent of whether your code is built with 
 
 As detailed in April release notes, to ensure effective monitoring of customer environments, AEM Java logs must maintain a consistent format and must not be overridden by custom configurations. Log output must remain directed to the default files. For AEM product code, default log levels must be preserved. However, it is acceptable to adjust log levels for customer-developed code. See details in the [Logging article](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Going forward, any of these custom overrides will be ignored for customers, who based on our analysis will not be impacted. Adobe will reach out to those who our analysis suggests may be relying on overrides and thus may be impacted; custom configuration will be ignored in early September for these customers.
+Going forward, any of these custom overrides will be ignored for customers, who based on our analysis will not be impacted. Adobe will reach out to those who our analysis suggests may be relying on overrides and thus may be impacted; custom configuration will be ignored in **early September** for these customers.
 
 Please review and adjust your downstream processes accordingly. For example, if you use the log forwarding feature:
 * If your logging destination expects a custom (non-default) log format, you may need to update your ingestion rules.
 * If changes to log levels reduced log verbosity, be aware that the default log levels may result in a significant increase in log volume.
 
-### Default for Version Purge and Audit Log Purge Maintenance Tasks {#mt-defaults}
+### Default Purging of Older Versions and Audit Logs {#mt-defaults}
 
-In July 2025, newly created environments will have default values applied for Version Purge and Audit Log Purge Maintenance Tasks. See details in the [Maintenance Tasks article](/help/operations/maintenance.md#default). Work in progress...
+Currently, content versions and audit logs have their associated *purge maintenance tasks* disabled by default and thus no data is removed unless you explicitly configured their respective OSGi properties. 
+
+However, to optimize repository performance, starting in **late June 2025, purging will be enabled by default**, according to the following rules:
+
+**Content Versions**
+* New environments created after a soon-to-be-announced date will occasionally run a process to delete versions older than **30 days**. The most recent five versions in the last 30 days are kept, although the most recent version (in addition to the current version) is always preserved.
+* Existing environments before that date will occasionally run a process to delete versions older than **7 years**. All versions in the last 7 years are preserved. These high default values are intended to prevent unexpected removal of recent data, but it is recommended to override with lower values in order to optimize performance.
+* You may modify these defaults through OSGi configuration overrides.
+
+**Audit Logs**
+* New environments created after a soon-to-be-announced date will occasionally run a process to delete replication, DAM, and page audit logs older than **7 days**. All possible events are logged. 
+* Existing environments before that date  will occasionally run a process to delete replication, DAM, and page audit logs older than **7 years**. All possible events are logged. These high default values are intended to prevent unexpected removal of recent data, but it is recommended to override with lower values in order to optimize performance.
+* You may modify these defaults through OSGi configuration overrides.
+
+See details in the [Maintenance Tasks article](/help/operations/maintenance.md#default).
 
 ### CDN configuraton for Edge Delivery Services (Beta) {#cdn-eds-beta}
 
