@@ -41,12 +41,10 @@ Adobe Experience Manager (AEM) as a Cloud Service offers multiple APIs for both 
   * These APIs are intended for structured content management. 
   * Respective GET operators are not optimized for content delivery.
   * This API is REST based. 
-* Content Fragments Support in the AEM Assets HTTP API
-  * The original API for the JSON output for structured content delivery in AEM.  
-    * While robust and proven, this API does not deliver *fully hydrated* JSON output. References are only output as paths, requiring secondary API requests for retrieving further content.
-  * The Assets HTTP API can also be used for managing the Content Fragments and Content Fragment Models (CRUD).
-  * This API is REST based.
-  * Content Fragment Support in Assets HTTP API will be deprecated in the future as it is being succeeded by the Edge Delivery Services JSON REST API. The timescale has not been decided yet.
+
+>[!NOTE]
+>
+>[Content Fragment Support in Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) is now [deprecated](/help/release-notes/deprecated-removed-features.md). It has been replaced by replaced by [Content Fragment Delivery with OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) together with [Content Fragments and Content Fragment Models Management OpenAPIs](/help/headless/content-fragment-openapis.md).
 
 ## What's Next {#whats-next}
 
