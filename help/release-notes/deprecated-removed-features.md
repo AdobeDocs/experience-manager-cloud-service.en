@@ -165,63 +165,63 @@ The APIs in the table below (click to expand to see it) have been announced as d
     <td>8/31/2025</td>
   </tr>
   <tr>
-    <td>org.apache.sling.runmode</td>
-    <td></td>
-    <td>2015</td>
-    <td>7/30/2021</td>
-  </tr>
-  <tr>
-    <td>org.json</td>
-    <td>The Apache Johnzon implementation of <a href="https://johnzon.apache.org/index.html">javax.json</a> is recommended and should be used. </td>
-    <td>4/30/2021</td>
-    <td>12/31/2021</td>
-  </tr>
-  <tr>
 <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
     <td>The Felix web console is not supported in Cloud environments. <a href="#org.apache.felix.webconsole">See removal notes below.</a></td>
     <td>4/30/2021</td>
     <td>8/31/2025</td>
   </tr>
-<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 is in maintenance mode. Commons Lang 3 should be used instead. <a href="#apache.commons">See removal notes below.</a></td>
-    <td>4/30/2021</td>
-    <td>12/31/2021</td>
-  </tr>
-  <tr>
-    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 is in maintenance mode. Commons Collections 4 should be used instead. <a href="#apache.commons">See removal notes below.</a></td>
-    <td>4/30/2021</td>
-    <td>12/31/2021</td>
-  </tr>
-  <tr>
-    <td>com.day.cq.contentsync.handler.util</td>
-    <td>This API is deprecated. Use Apache Sling's Builders instead.</td>
-    <td>10/31/2022</td>
-    <td>1/01/2023</td>
-  </tr>
-  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
-    <td>AEM as a Cloud Service does not support this API.</td>
-    <td>5/15/2023</td>
-    <td>6/15/2023</td>
-  </tr>
-  <tr>
-    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
-    <td>Use org.apache.sling.xss instead.</td>
-    <td>12/12/2023</td>
-    <td>6/30/2024</td>
-  </tr>
-  <tr>
-    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
-    <td>Use org.apache.sling.xss instead.</td>
-    <td>12/12/2023</td>
-    <td>6/30/2024</td>
-  </tr>
-  <tr>
 <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>Usage of this API is not supported in AEM as a Cloud Service.</td>
     <td>10/31/2022</td>
     <td>8/31/2025</td>
   </tr>  
+  <tr>
+    <td>org.apache.sling.runmode</td>
+    <td></td>
+    <td>2015</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td>org.json</td>
+    <td>The Apache Johnzon implementation of <a href="https://johnzon.apache.org/index.html">javax.json</a> is recommended and should be used. </td>
+    <td>4/30/2021</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
+    <td>Commons Lang 2 is in maintenance mode. Commons Lang 3 should be used instead. <a href="#apache.commons">See removal notes below.</a></td>
+    <td>4/30/2021</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
+    <td>Commons Collections 3 is in maintenance mode. Commons Collections 4 should be used instead. <a href="#apache.commons">See removal notes below.</a></td>
+    <td>4/30/2021</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.contentsync.handler.util</td>
+    <td>This API is deprecated. Use Apache Sling's Builders instead.</td>
+    <td>10/31/2022</td>
+    <td>TBD</td>
+  </tr>
+  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
+    <td>AEM as a Cloud Service does not support this API.</td>
+    <td>5/15/2023</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
+    <td>Use org.apache.sling.xss instead.</td>
+    <td>12/12/2023</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
+    <td>Use org.apache.sling.xss instead.</td>
+    <td>12/12/2023</td>
+    <td>TBD</td>
+  </tr>
   </tbody>
 </table>
 </details>
@@ -441,6 +441,18 @@ Properties for the following OSGi component PIDs cannot be modified, as describe
 | **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | all |
 | **`org.apache.felix.http (Factory)`** | all |
 | **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | all |
+| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | all |
+| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | all |
+| **`org.apache.sling.feature.apiregions.impl`** | all |
+| **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | all |
+| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | all |
+| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | all |
+| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | all |
+| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | all |
+| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | all |
+| **`org.apache.http.proxyconfigurator`** | all |
+| **`org.apache.sling.feature.apiregions.factory`** | all |
+| **`com.adobe.granite.toggle.monitor.systemproperty`** | all |
 
 ### OSGi property restrictions {#restrictions-osgi-properties}
 
@@ -499,6 +511,24 @@ The values of some OSGi properties are restricted to the rules described below.
 |  `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` |  Yes | string  | either "INFO", "DEBUG" or "TRACE"  |
 |   |  `org.apache.sling.commons.log.names` |   | array of strings  |   |
 |   |  `org.apache.sling.commons.log.additiv` |   | boolean  |   | 
+|  `org.apache.sling.engine.impl.log.RequestLogger` | `request.log.output` |  No | string  |   |
+|   | `request.log.outputtype` |  No | string  |   |
+|   | `request.log.entry.format` |  No | string  |   |
+|   | `request.log.exit.format` |  No | string  |   |
+|   | `request.log.enabled` |  No | string  |   |
+|   | `access.log.output` |  No | string  |   |
+|   | `access.log.outputtype` |  No | string  |   |
+|   | `access.log.enabled` |  No | string  |   |
+|  `org.apache.sling.servlets.resolver.SlingServletResolver` | `servletresolver.servletRoot` |  No | string  |   |
+|   | `servletresolver.cacheSize` |  No | integer |   |
+|   | `servletresolver.paths` |  No | string[] |   |
+|   | `servletresolver.defaultExtensions` |  No | string |   |
+|   | `servletresolver.mountProviders` |  No | boolean |   |
+|   | `servletresolver.scriptUser` |  No | string | deprecated, do not use  |
+|  `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` |  No | string[]  |   |
+|   | `externalizer.encodedpath` |  No | boolean |   |
+|   | `externalizer.host` |  No | string |   |
+|   | `externalizer.contextpath` |  No | string |   |
 
 ## Java runtime update to version 21 {#java-runtime-update-21}
 
