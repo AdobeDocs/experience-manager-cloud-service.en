@@ -19,6 +19,7 @@ Customers can now also onboard their Azure DevOps Git repositories into Cloud Ma
 >
 >The features described in this article are only available through the early adoption program. For more details and to sign up as an early adopter, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
 
+
 ## Configure an external repository
 
 Configuration of an external repository in Cloud Manager consists of the following steps:
@@ -77,6 +78,8 @@ Configuration of an external repository in Cloud Manager consists of the followi
     | |**Repository type: Bitbucket**<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a repository access token using the [Bitbucket documentation](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Required permissions for the Bitbucket Personal Access Token (PAT)<br>These permissions allow Cloud Manager to access repository content, manage pull requests, and configure or react to webhook events.<br>When you create the app password in Bitbucket, make sure it includes the following required app password permissions:<ul><li>Repository (read-only)<li>Pull requests (read and write)<li>Webhooks (read and write)</li></li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
     | |**Repository type: Azure DevOps**<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a repository access token using the [Azure DevOps documentation](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Required permissions for the Azure DevOps Personal Access Token (PAT).<br>These permissions allow Cloud Manager to access repository content, manage pull requests, and configure or react to webhook events.<br>When you create the app password in Azure DevOps, make sure it includes the following required app password permissions:<ul><li>Repository (read-only)</li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
 
+    See also [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+
     >[!IMPORTANT]
     >
     >The feature **Add new Access Token** is currently in the Early Adopter phase. Additional functionalities are being planned. As a result, the required permissions for access tokens may change. Additionally, the user interface for managing tokens may be updated, potentially including features like token expiration dates. And, automated checks to ensure that tokens linked to repositories remain valid. 
@@ -84,44 +87,6 @@ Configuration of an external repository in Cloud Manager consists of the followi
 1. Click **Validate**.
 
     After validation, the external repository is ready to use and link to a pipeline.
-
-
-### Manage access tokens for external repositories {#manage-access-tokens}
-
-Use the **Manage Access Tokens** feature in Cloud Manager to view, rename, and delete access tokens associated with external Bring Your Own Git repositories, such as GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
-
-#### View access tokens {#view-access-tokens}
-
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program whose Bring Your Own Git access token you want to manage.
-1. In the side menu, under **Program**, click ![Folder outline icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Repositories**.
-1. Near the upper-right corner of the page, click **Manage Access Tokens**.
-
-   This button is only visible if your program is using the Bring Your Own Git feature.
-
-1. In the **Manage Access Tokens** dialog box:
-   * All access tokens are listed.
-   * You can **edit** any token.
-   * You can **delete** only those tokens that are *not currently in use*. If a token is in use, the ![Delete outline icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) button is disabled.
-
-#### Edit an access token {#edit-access-tokens}
-
-1. In the **Manage Access Tokens** dialog box, to the right of a token name, click ![Edit icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg).
-1. In the **Edit Access Token** dialog box, in the **Token Name** text field, update the token name.
-
-    The Access Token secret itself cannot be modified.
-
-1. If the token is in use, a notification warns you that all associated repositories are automatically revalidated.
-
-1. Click **Update** to save the changes.
-
-#### Delete an access token {#delete-access-token}
-
-1. In the **Manage Access Tokens** dialog box, to the right of a token name, click ![Delete icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)
- 
-    The icon is disabled (![Delete outline icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)) for tokens that are currently in use.
-
-1. In the **Delete Access Token** dialog box, click **Delete** to remove the token permanently.
 
 
 ## Link a validated external repository to a pipeline {#validate-ext-repo}
@@ -146,6 +111,7 @@ Use the **Manage Access Tokens** feature in Cloud Manager to view, rename, and d
 >[!TIP]
 >
 >For details about managing repositories in Cloud Manager, see [Cloud Manager Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
+
 
 ## Configure a webhook for an external repository {#configure-webhook}
 
@@ -205,6 +171,7 @@ For all other external repositories that are onboarded with an access token, suc
     | GitLab | These webhook events allow Cloud Manager to trigger pipelines when code is pushed or a merge request is submitted. They also track comments related to pull request validation (through note events).<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Push events<li>Merge request events<li>Note events</li></li></li></ul></ul></ul> | 
     | Bitbucket | These events ensure that Cloud Manager can validate pull requests, respond to code pushes, and interact with comments for pipeline coordination.<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Pull request: Created<li>Pull request: Updated<li>Pull requests: Merged<li>Pull request: Comment<li>Repository: Push</li></li></li></ul></ul></ul> |
     | Azure DevOps | These events ensure that Cloud Manager can validate pull requests, respond to code pushes, and interact with comments for pipeline coordination.<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Repository: Push</li></li></ul></ul></ul> |
+
 
 ### Validation of pull requests with webhooks
 
