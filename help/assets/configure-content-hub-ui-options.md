@@ -207,9 +207,7 @@ Administrators can define the metadata fields that are searched when a user spec
 1. Click **[!UICONTROL Save]** to apply the changes so that the new metadata property gets displayed in the list of metadata fields.
 
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available metadata property, to edit the property or click the delete icon to delete any existing property. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
-
 ![Configuration UI Search on Content Hub](assets/configuration-ui-metadata-search.png)
-
 
 ### Branding {#configure-branding-content-hub}
 
@@ -220,35 +218,35 @@ As an administrator customize your [!DNL Content Hub] portal to meet your brandi
 
 Select **[!UICONTROL Reset Defaults]** option to revert your changes and restore the default theme.
 
-# Change the banner image{#Change-the-banner-image}
+#### Change the banner image{#Change-the-banner-image}
 
 On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, execute the following steps to change the banner image of your [!DNL Content Hub]:
 
 1. Click ![](/help/assets/assets/Browse.svg) **[!UICONTROL Select from gallery]** to select a banner image from the asset selector dialog box.
 1. Select the image and click **[!UICONTROL Select]** to make it the header banner of your [!DNL Content Hub].
 
-# Add title and body text to your banner and change the text color{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
+#### Add title and body text to your banner and change the text color{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
 On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page use the respective fields in the **[!UICONTROL Banner]** section to add title and body texts to your banner.
 Click the square box next to the **[!UICONTROL Banner text color]** to select a text color from the color picker for your banner text or specify the color's hex code in the field next to the color picker square box.
 
-# Change the primary and secondary color{#Change-the-primary-and-secondary-color}
+#### Change the primary and secondary color{#Change-the-primary-and-secondary-color}
 
 On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, use the **[!UICONTROL Colors]** section to set primary and secondary colors. These colors customize the background, text, and icon colors of UI elements in your [!DNL Content Hub].
 See [change the primary color scheme](#primary-color-scheme) and [change the secondary color scheme](#secondary-color-scheme) sections to know the application areas of these colors. 
 
-## Change the primary color scheme{#primary-color-scheme}
+##### Change the primary color scheme{#primary-color-scheme}
 
 The primary color scheme apply to the following key areas in [!DNL Content Hub] [home page](#primary-color-on-home-page) and [[!UICONTROL configuration]](#primary-color-on-configuration-page) page:
 
-### Primary color scheme on [!DNL Content Hub] home page{#primary-color-on-home-page}
+###### Primary color scheme on [!DNL Content Hub] home page{#primary-color-on-home-page}
 
 The primary color schema apply to the following places on [!DNL Content Hub] home page:
 * Interactive elements like checkboxes, search bars, and toggle switches across [!DNL Content Hub].
 * When an item is Selected.
 * Actions options available on primary [!DNL Content Hub] interfaces such as **[!UICONTROL All Assets]** and **[!UICONTROL Collections]** pages.
 
-### Primary color scheme on [!UICONTROL Configuration] page{#primary-color-on-configuration-page}
+###### Primary color scheme on [!UICONTROL Configuration] page{#primary-color-on-configuration-page}
 
 The primary color schema apply to the following places on [!DNL Content Hub] [!UICONTROL Configuration] page:
 
@@ -256,7 +254,7 @@ The primary color schema apply to the following places on [!DNL Content Hub] [!U
 * Selecting table rows within a [!UICONTROL Configuration] page.
 * **[!UICONTROL Confirm]** option in Edit dialog boxes of all [!UICONTROL Configuration] pages.
 
-## Change the secondary color scheme{#secondary-color-scheme}
+##### Change the secondary color scheme{#secondary-color-scheme}
 
 On the [!DNL Content Hub] home page, the secondary color scheme applies to UI options and input fields within dialog boxes. On the [!UICONTROL Configuration] page, it applies to all configuration menu options, as well as UI options and input fields on the configuration pages and within dialog boxes.
 
