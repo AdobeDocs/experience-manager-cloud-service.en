@@ -21,7 +21,7 @@ The Repository Modernizer creates a compatible AEM Cloud Service project structu
 
 - `all` package is a container package that contains the subpackages `ui.apps` and `ui.content`.
 
-> [!NOTE]
+>[!NOTE]
 >
 > The Project structure is based on _Archetype 48_ for packages and their `pom.xml/filter.xml files`. See [Archetype 48](https://github.com/adobe/aem-project-archetype) for more details.
 
@@ -34,7 +34,7 @@ The Repository Modernizer now also supports the following project types:
 
 ## Using the Repository Modernizer {#using-repo-modernizer}
 
-> [!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
 - The Repository Modernizer is now invoked automatically by the Refactoring Service under the Refactoring Job tab. Customers simply need to upload their project and trigger the refactoring job—no additional setup is required.
 
