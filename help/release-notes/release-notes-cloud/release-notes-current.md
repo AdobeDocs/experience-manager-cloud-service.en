@@ -128,7 +128,6 @@ Adobe regularly reviews features, libraries, APIs, and configurations to ensure 
 
 See the [deprecation article](/help/release-notes/deprecated-removed-features.md) for further information.
 
-
 #### Deprecated Java APIs and OSGi configuration nearing removal dates {#deprecated-near-removals}
 
 Expand the list below see the list of deprecated APIs and OSGi configuration which must be removed within the next few weeks. The deprecation article has more details, including the removal date.
@@ -187,28 +186,29 @@ However, to optimize repository performance, starting in **late June 2025**, pur
 
 #### Content Versions {#mt-content}
 
-- **New environments** (created after an upcoming date (to be communicated later)
-  - Versions older than **30 days** will periodically be deleted.
-  - The most recent five versions within the last 30 days are retained, along with the most recent version and the current version, regardless of their age.
+* **New environments** (created after an upcoming date (to be communicated later)
+  * Versions older than **30 days** will periodically be deleted.
+  * The most recent five versions within the last 30 days are retained, along with the most recent version and the current version, regardless of their age.
 
-- **Existing environments** (created before this upcoming date):
-  - Versions older than **7 years** will periodically be deleted.
-  - All versions within the past 7 years are retained.
-  - This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
+* **Existing environments** (created before this upcoming date):
+  * Versions older than **7 years** will periodically be deleted.
+  * All versions within the past 7 years are retained.
+  * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
 
-- You may modify these defaults through OSGi configuration overrides.
+* You may modify these defaults through OSGi configuration overrides.
 
 #### Audit Log {#mt-auditlogs}
-- **New environments** (created after an upcoming date, which will be communicated separately):
-  - Replication, DAM, and page audit logs older than **7 days** will periodically be deleted.
-  - All events are logged by default.
 
-- **Existing environments** (created before this upcoming date):
-  - Replication, DAM, and page audit logs older than **7 years** will periodically be deleted.
-  - All events are logged by default.
-  - This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
+* **New environments** (created after an upcoming date, which will be communicated separately):
+  * Replication, DAM, and page audit logs older than **7 days** will periodically be deleted.
+  * All events are logged by default.
 
-- You may modify these defaults through OSGi configuration overrides.
+* **Existing environments** (created before this upcoming date):
+  * Replication, DAM, and page audit logs older than **7 years** will periodically be deleted.
+  * All events are logged by default.
+  * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
+
+* You may modify these defaults through OSGi configuration overrides.
 
 For more details, see the [Maintenance Tasks article](/help/operations/maintenance.md#default).
 
