@@ -21,173 +21,45 @@ Click the square box next to the **[!UICONTROL Banner text color]** to select a 
 
 On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, use the **[!UICONTROL Colors]** section to set primary and secondary colors. These colors customize the background, text, and icon colors of UI elements in your [!DNL Content Hub]. The selected colors also highlight certain elements when selected.
 
-```mermaid
-graph TD
-    A[Content Hub Interface] --> B[Content Hub home page]
-    A --> C[Configuration Page]
-    
-    %% Making boxes on 3rd layer same width
-    B --> D[Primary color elements                    ]
-    B --> E[Secondary color elements                  ]
-    
-    C --> F[Primary color elements                    ]
-    C --> G[Secondary color elements                  ]
-    
-    %% Standardizing bottom boxes with original content
-    D ---->|Search &<br>Selection| H[Search bar,<br>Checkboxes,<br>Toggle switches &<br>Pane displaying asset count on selecting asset card<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
-    D ---->|Asset<br>Management| I[Add assets option on All Assets page &<br>Create collection option on Collections page<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
-    D ---->|Actions| J[Upload option,<br>Asset card selection &<br>Rendition selection<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
-    
-    E ---->|Dialog<br>Elements| K[Input fields<br>Download options<br>Share options<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
-    
-    F ---->|Interactive<br>Elements| L[Selected table rows<br>Toggle switches<br>Confirm options<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
-    
-    G ---->|Configuration<br>Options| M[Import, Filters, Search,<br>Asset details, Branding<br>Input fields in dialog boxes<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
+The primary color scheme apply to the following key areas in [!DNL Content Hub] [home page](#home-page) and [[!UICONTROL configuration]](#configuration-page) page:
 
-    style A fill:#4682B4,color:#fff
-    style B fill:#E6EEF4,color:#000
-    style C fill:#E6EEF4,color:#000
-    style D fill:#B0C4DE,color:#000
-    style E fill:#DEB887,color:#000
-    style F fill:#B0C4DE,color:#000
-    style G fill:#DEB887,color:#000
-    style H fill:#F0F8FF,color:#000
-    style I fill:#F0F8FF,color:#000
-    style J fill:#F0F8FF,color:#000
-    style K fill:#FFF8DC,color:#000
-    style L fill:#F0F8FF,color:#000
-    style M fill:#FFF8DC,color:#000
+## Primary color scheme on [!DNL Content Hub] home page{#home-page}
 
-    %% Styling for better alignment
-    linkStyle default stroke-width:2px,fill:none,stroke:gray,curve
-    classDef default rx:10,ry:10
-```
+The primary color schema apply to the following places on [!DNL Content Hub] home page:
+* Interactive elements like checkboxes, search bars, and toggle switches across [!DNL Content Hub].
+* When an item is Selected.
+* Actions options available on primary [!DNL Content Hub] interfaces such as **[!UICONTROL All Assets]** and **[!UICONTROL Collections]** pages.
 
-See the following table for information on where both these colors apply:
+## Primary color scheme on configuration page{#configuration-page}
 
-<table style="border-collapse: separate; border-spacing: 0; width: 100%; border-radius: 8px; overflow: hidden;">
-  <tr style="background-color: #4682B4;">
-    <th style="padding: 12px; color: white; font-weight: bold; text-align: left;">Location</th>
-    <th style="padding: 12px; color: white; font-weight: bold; text-align: left;">Color</th>
-    <th style="padding: 12px; color: white; font-weight: bold; text-align: left;">UI Element</th>
-    <th style="padding: 12px; color: white; font-weight: bold; text-align: left;">Navigation Path</th>
-  </tr>
-  <tr>
-    <td rowspan="13" style="padding: 12px; border: 1px solid #d0d0d0; background-color: #E6EEF4; font-weight: bold;">[!DNL Content Hub] home page</td>
-    <td rowspan="11" style="padding: 12px; border: 1px solid #d0d0d0; background-color: #B0C4DE;">Primary</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">
-       <img alt="Magnifying glass icon" src="/help/assets/assets/Magnify.svg" /> Magnifying glass icon in search bar
-    </td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Across [!DNL Content Hub] home page</td>
-  </tr>
-  <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Border color of the search bar when selected</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Across [!DNL Content Hub] home page</td>
-  </tr>
-  <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">
-       <img alt="Selection checkboxes" src="/help/assets/assets/SelectBox.svg" /> Selection checkboxes after selection
-    </td> 
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">Across [!DNL Content Hub] home page</td>
-  </tr>
-  <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">
-       <img alt="Toggle switches" src="/help/assets/assets/toogle.svg" /> Toggle switches and date input fields
-    </td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > Filters or relevant places</td>
-  </tr>
-  <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">
-       <img alt="Add assets" src="/help/assets/assets/add-image.svg" /> <b>[!UICONTROL Add assets]</b> option
-    </td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > <b>[!UICONTROL All Assets]</b></td>
-  </tr>
-  <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">
-       <img alt="Create collection" src="/help/assets/assets/CollectionAdd.svg" /> <b>[!UICONTROL Create collection]</b> option
-    </td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > <b>[!UICONTROL Collections]</b></td>
-  </tr>
-  <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Selected asset cards</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > <b>[!UICONTROL All Assets]</b>  > Select asset card</td>
-  </tr>
-  <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Selected collection tiles</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > Select <img alt="Add to collection" src="/help/assets/assets/add-circle.svg" /> available on the asset card or select <img alt="Add to collection" src="/help/assets/assets/add-circle.svg" /><b>[!UICONTROL Add to collection]</b> after selecting one or more asset cards > select the collection tile from <b>[!UICONTROL Add asset to collection]</b> dialog box. You can also click asset thumbnail > Select <img alt="Add to collection" src="/help/assets/assets/add-circle.svg" /> > select the collection tile from the panel.</td>
-  </tr>
-  <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;"><b>[!UICONTROL Upload]</b> option</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > <img alt="Add assets" src="/help/assets/assets/add-image.svg" /> <b>[!UICONTROL Add assets]</b> > select <b>[!UICONTROL Upload]</b> from <b>[!UICONTROL Add approved assets]</b> dialog box.</td>
-  </tr>
-  <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Selected assets count pane</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > Select asset card from <b>[!UICONTROL All Assets]</b> page or <b>[!UICONTROL Collections]</b> page.</td>
-  </tr>
-  <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;"> Hovering or selecting renditions
-    </td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > click asset thumbnail > select <img alt="Download icon" src="/help/assets/assets/download-icon.svg" />.</td>
-  </tr>
-  <tr>
-    <td rowspan="2" style="padding: 12px; border: 1px solid #d0d0d0; background-color: #DEB887;">Secondary</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;">Input fields in dialog boxes, excluding those in the <b>[!UICONTROL Add approved assets]</b> dialog box.</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > Any dialog box</td>
-  </tr>
-  <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;">Options such as, <b>[!UICONTROL Download]</b>, <b>[!UICONTROL Generate share link]</b>, 
-       <img alt="Add to collection" src="/help/assets/assets/add-circle.svg" /> <b>[!UICONTROL Add to collection]</b> available in various dialog boxes.
-    </td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] home page > Dialog options</td>
-  </tr>
-  <tr>
-    <td rowspan="6" style="padding: 12px; border: 1px solid #d0d0d0; background-color: #E6EEF4; font-weight: bold;">[!DNL Content Hub] [!UICONTROL configuration] page</td>
-    <td rowspan="3" style="padding: 12px; border: 1px solid #d0d0d0; background-color: #B0C4DE;">Primary</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">Selected table rows</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub]<b> [!UICONTROL Configuration] page</b> > Select configuration option > select row</td>
-  </tr>
-  <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;">
-       <img alt="Toggle switch" src="/help/assets/assets/toogle.svg" /> Toggle switches
-    </td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] > <b>[!UICONTROL Configuration]</b> > Toggle switches across all configuration pages.</td>
-  </tr>
-  <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F0F8FF;"><b>[!UICONTROL Confirm]</b> option</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] > <b>[!UICONTROL Configuration]</b> > Edit dialog box on all configuration pages.</td>
-  </tr>
-  <tr>
-    <td rowspan="3" style="padding: 12px; border: 1px solid #d0d0d0; background-color: #DEB887;">Secondary</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;">
-       <img alt="Import" src="/help/assets/assets/import.svg" /> <b>[!UICONTROL Import]</b>, 
-       <img alt="Filters" src="/help/assets/assets/filter.svg" /> <b>[!UICONTROL Filters]</b>, 
-       <img alt="Asset details" src="/help/assets/assets/info-icon.svg" /> <b>[!UICONTROL Asset details]</b>,
-       <img alt="Asset card" src="/help/assets/assets/asset-card.svg" /> <b>[!UICONTROL Asset Card]</b>,
-       <img alt="Search" src="/help/assets/assets/Magnify.svg" /> <b>[!UICONTROL Search]</b>,
-       <img alt="Branding" src="/help/assets/assets/ColorPalette.svg" /> <b>[!UICONTROL Branding]</b>,
-       <img alt="Expired Assets" src="/help/assets/assets/expired-assets.svg" /> <b>[!UICONTROL Expired Assets]</b>,
-       <b>[!UICONTROL Renditions]</b>, and
-       <img alt="Custom Links" src="/help/assets/assets/link.svg" /> <b>[!UICONTROL Custom Links]</b>
-    </td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] > <b>[!UICONTROL Configuration]</b></td>
-  </tr>
-  <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;"><b>[!UICONTROL Add filters]</b> on 
-       <img alt="Filters" src="/help/assets/assets/filter.svg" /> <b>[!UICONTROL Filters]</b> page, <b>[!UICONTROL Add link]</b> on 
-       <img alt="Custom Links" src="/help/assets/assets/link.svg" /> <b>[!UICONTROL Custom Links]</b> page and <b>[!UICONTROL Add metadata]</b> on 
-       <img alt="Import" src="/help/assets/assets/import.svg" /> <b>[!UICONTROL Import]</b>, <img alt="Asset details" src="/help/assets/assets/info-icon.svg" /> <b>[!UICONTROL Asset details]</b>, <img alt="Asset card" src="/help/assets/assets/asset-card.svg" /> <b>[!UICONTROL Asset Card]</b>, and <img alt="Search" src="/help/assets/assets/Magnify.svg" /> <b>[!UICONTROL Search]</b> pages
-    </td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] > <b>[!UICONTROL Configuration]</b> > Respective pages</td>
-  </tr>
-  <tr>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #FFF8DC;">Input fields in <b>[!UICONTROL Add metadata]</b>, <b>[!UICONTROL Add link]</b> and <b>[!UICONTROL Add filters]</b> dialog boxes.</td>
-    <td style="padding: 12px; border: 1px solid #d0d0d0; background-color: #F5F5F5;">[!DNL Content Hub] > <b>[!UICONTROL Configuration]</b> > <b>[!UICONTROL Dialog boxes]</b></td>
-  </tr>
-</table>
+The primary color schema apply to the following places on [!DNL Content Hub] configuration page:
+
+* Toggle switches across configuration page.
+* Selecting table rows within a configuration page.
+* **[!UICONTROL Confirm]** option in Edit dialog boxes of all configuration pages.
+
+
+The secondary color scheme apply to the following interface elements in Content Hub home page and configuration page:
+
+## Secondary color scheme on [!DNL Content Hub] home page and configuration page {#secondary-color-on-home-page-and-configuration-page}
+
+On the [!DNL Content Hub] home page, the secondary color scheme apply to the UI options and input fields within dialog boxes and on configuration page the color scheme apply to all config menu options and UI options and input fields available on the configuration pages and within dialog boxes.
+
+UI options and input fields within dialog boxes.
+
+## Secondary color scheme on configuration page{#secondary-configuration-page}
+
+All configuration menu options
+UI options and input fields available on the configuration pages and within dialog boxes.
+
+
+
+
+-----
 
 See [Detailed color application guide](#primary-and-secondary-color-on-the-content-hub-home-page) for a detailed breakdown of where these colors are applied across different pages and UI elements:
 
-<details>
+
 <summary><strong>Detailed color application guide</strong></summary>
 
 See the following sections to know the places on the [[!DNL Content Hub] home page](#primary-and-secondary-color-on-the-content-hub-home-page) and [[!UICONTROL Configuration]](#primary-and-secondary-color-on-the-content-hub-configuration-page) page where both these colors apply:
@@ -226,4 +98,4 @@ Primary color apply to the following places on the [!DNL Content Hub] [!UICONTRO
 * Toggle color across all configuration pages.
 * The **[!UICONTROL Confirm]** option in the Edit dialog boxes on all configuration pages.
 
-</details>
+
