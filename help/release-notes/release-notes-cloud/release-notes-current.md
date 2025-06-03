@@ -181,21 +181,36 @@ Please review and adjust your downstream processes accordingly. For example, if 
 
 ### Default Purging of Older Versions and Audit Logs {#mt-defaults}
 
-Currently, content versions and audit logs have their associated *purge maintenance tasks* disabled by default and thus no data is removed unless you explicitly configured their respective OSGi properties. 
+Currently, content versions and audit logs have their associated *purge maintenance tasks* disabled by default and thus no data is removed unless explicitly configured via their respective OSGi properties. 
 
-However, to optimize repository performance, starting in **late June 2025, purging will be enabled by default**, according to the following rules:
+However, to optimize repository performance, starting in **late June 2025**, purging will be enabled by default, following these guidelines:
 
-**Content Versions**
-* New environments created after a soon-to-be-announced date will occasionally run a process to delete versions older than **30 days**. The most recent five versions in the last 30 days are kept, although the most recent version (in addition to the current version) is always preserved.
-* Existing environments before that date will occasionally run a process to delete versions older than **7 years**. All versions in the last 7 years are preserved. These high default values are intended to prevent unexpected removal of recent data, but it is recommended to override with lower values in order to optimize performance.
-* You may modify these defaults through OSGi configuration overrides.
+#### Content Versions {#mt-content}
+- **New environments** (created after an upcoming date (to be communicated later)
+  - Versions older than **30 days** will periodically be deleted.
+  - The most recent five versions within the last 30 days are retained, along with the most recent version and the current version, regardless of their age.
 
-**Audit Logs**
-* New environments created after a soon-to-be-announced date will occasionally run a process to delete replication, DAM, and page audit logs older than **7 days**. All possible events are logged. 
-* Existing environments before that date  will occasionally run a process to delete replication, DAM, and page audit logs older than **7 years**. All possible events are logged. These high default values are intended to prevent unexpected removal of recent data, but it is recommended to override with lower values in order to optimize performance.
-* You may modify these defaults through OSGi configuration overrides.
+- **Existing environments** (created before this upcoming date):
+  - Versions older than **7 years** will periodically be deleted.
+  - All versions within the past 7 years are retained.
+  - This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
 
-See details in the [Maintenance Tasks article](/help/operations/maintenance.md#default).
+- You may modify these defaults through OSGi configuration overrides.
+
+
+#### Audit Log {#mt-auditlogs}
+- **New environments** (created after an upcoming date, which will be communicated separately):
+  - Replication, DAM, and page audit logs older than **7 days** will periodically be deleted.
+  - All events are logged by default.
+
+- **Existing environments** (created before this upcoming date):
+  - Replication, DAM, and page audit logs older than **7 years** will periodically be deleted.
+  - All events are logged by default.
+  - This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
+
+- You may modify these defaults through OSGi configuration overrides.
+
+For more details, see the [Maintenance Tasks article](/help/operations/maintenance.md#default).
 
 ### CDN configuraton for Edge Delivery Services (Beta) {#cdn-eds-beta}
 
