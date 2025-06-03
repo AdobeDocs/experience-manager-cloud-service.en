@@ -67,6 +67,9 @@ Some of the key benefits of [!DNL Dynamic Media] templates include:
 >
 >Customers with subscriptions to the Enhanced Security SKU cannot use any [!DNL Dynamic Media] capabilities, including [!DNL Dynamic Media] Templates, on that Cloud Services program.
 
+Learn to create a [!DNL Dynamic Media] template step by step in this video.
+>[!VIDEO](https://video.tv.adobe.com/v/3443281)
+
 ## Before you begin{#prerequisites-for-dynamic-media-wysiwyg-template}
 
 Fulfil the following requirements to create a [!DNL Dynamic Media] template and generate its delivery URL:
@@ -279,9 +282,6 @@ Execute the following steps to copy the delivery URL of the template:
 1. Paste this URL in your browser tab and see your live template. Customize the template in real time by updating the required parameter's value (Key's value) in the URL directly as demonstrated in [step 2](#preview-and-publish-template-and-copy-template-deliver-url) of **Preview and Publish** section.  
 1. Use this URL for rapid merchandising of your products or services. You can share this URL with your customers or integrate it into your website or any downstream third-party application to display the banner and make real-time updates to it to reflect the ongoing offers.
 
-Learn to create a [!DNL Dynamic Media] template step by step in this video.
->[!VIDEO](https://video.tv.adobe.com/v/3443281)
-
 ## Make real-time updates to the template from the URL{#update-the-template-from-the-url}
 
 Editing parameters directly in the URL can be tedious. To simplify: 
@@ -316,8 +316,7 @@ Execute these steps to add a CTA link to a layer:
 
    ![add CTA](/help/assets/assets/add-cta.png)
 
-1. Click **[!UICONTROL Preview]** to preview your template and see its defined parameters. 
-1. Click **[!UICONTROL Publish]** and select **[!UICONTROL Yes]** to publish your template, if not published earlier. 
+1. Click **[!UICONTROL Preview]** and select **[!UICONTROL Publish]** to publish your template, if not published earlier. 
 1. Navigate to the folder where this template is saved, select this template and click ![details page](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Details]**.
 1. Click **[!UICONTROL Copy Options]** and select **[!UICONTROL Copy Embed Code]**. Ensure to publish the template images to [!DNL AEM and Dynamic Media] to copy the embed code.
     
