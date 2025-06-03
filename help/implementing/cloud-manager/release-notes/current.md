@@ -37,8 +37,6 @@ The next planned release is Thursday, July 10, 2025.
 
     See [Add an Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md).
 
-* **
-
 
 ## Early adopter program {#early-adoption}
 

@@ -1195,7 +1195,7 @@ user-guide-title: AEM as a Cloud Service
       + [Add an Adobe Repository](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
       + [Add a Private Repository](/help/implementing/cloud-manager/managing-code/private-repositories.md)
       + [Add an External Repository (Early Adopter)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
-        + [Manage Access Tokens (Early Adopter)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+      + [Manage Access Tokens of External Repositories (Early Adopter)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
       + [Access Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
       + [Git Submodule Support](/help/implementing/cloud-manager/managing-code/git-submodules.md)
       + [Use Git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
