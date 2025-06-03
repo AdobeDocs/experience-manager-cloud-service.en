@@ -213,23 +213,6 @@ Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), ava
 
 ### Branding {#configure-branding-content-hub}
 
-Administrators can also personalize the title and body text on the banner of the Content Hub portal, as per your branding requirements. To do so, execute the following steps:
-
-1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Branding]**.
-
-1. Specify text in **[!UICONTROL Title text on banner]** and **[!UICONTROL Body text on banner]** fields.
-
-1. Click **[!UICONTROL Save]** to apply the changes.
-
-![Configuration UI branding on Content Hub](assets/configuration-ui-branding.png)
-
-The branding updates enabled on the Configuration User Interface display on the Content Hub portal banner:
-
-![Configuration UI branding on Content Hub](assets/configuration-ui-branding-updates.png)
-
-brand's theme.
----
-
 As an administrator customize your [!DNL Content Hub] portal to meet your branding requirements. To do the customization, navigate to your [!DNL Content Hub] home page, select the user icon in the top right corner, click **[!UICONTROL Configurations]** and select ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** to display **[!UICONTROL Banner]**, **[!UICONTROL Colors]** and **[!UICONTROL Banner image]** sections on the **[!UICONTROL Configuration]** page. Execute the following customizations from these section: 
 1. [Change the banner image from [!UICONTROL Banner image] section](#Change-the-banner-image)
 1. [Update the title and body text on the banner and change the text color from the [!UICONTROL Banner] section](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
