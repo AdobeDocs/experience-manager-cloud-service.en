@@ -43,7 +43,7 @@ The current scope of the AI Assistant focuses on addressing product knowledge qu
 
 ## AI Assistant for AEM Forms (Forms Experience Builder) {#ai-forms-builder}
 
-In addition to the general AI Assistant for product knowledge, AEM offers a specialized **AI Assistant for AEM Forms (Forms Experience Builder)**. This enhanced assistant can actively help you create and configure forms through natural language prompts and answer questions specific to forms.
+In addition to the general AI Assistant for product knowledge, AEM offers a specialized **[AI Assistant for AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant.md)**. This enhanced assistant can actively help you create and configure forms through natural language prompts and answer questions specific to forms.
 
 ### Key Capabilities
 
@@ -70,7 +70,7 @@ The AI Assistant for AEM Forms is available in:
 >
 > The AI Assistant for AEM Forms (Forms Experience Builder) is available under the early-adopter program. Send an email from your work address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) to request access.
 
-To learn more about using the AI Assistant for AEM Forms, including detailed examples and best practices, see the AI Assistant for AEM Forms documentation.
+To learn more about using the AI Assistant for AEM Forms, including detailed examples and best practices, see the [AI Assistant for AEM Forms documentation](/help/edge/docs/forms/forms-ai-assistant.md).
 
 ### Example Use Cases
 
