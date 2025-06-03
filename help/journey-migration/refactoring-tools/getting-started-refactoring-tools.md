@@ -1,6 +1,7 @@
 ---
 title: Getting Started with Refactoring Tools
 description: Learn how to get started with Refactoring Tools in AEM as a Cloud Service
+exl-id: 84394bdd-2b92-4f5d-b08a-7dc2c681baa4
 ---
 # Getting Started with Refactoring Tools {#getting-started-refactoring-tools}
 
@@ -105,4 +106,3 @@ When the job is completed successfully, the **Download** button becomes availabl
 
 >[!NOTE]
 >Each job can take up to 1 hour to complete. If the status is not updated, please contact Adobe Support.
-
