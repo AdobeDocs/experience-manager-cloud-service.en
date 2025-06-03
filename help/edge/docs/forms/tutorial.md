@@ -189,6 +189,10 @@ The sample content includes an "enquiry" sheet that serves as a template for the
 
 ![Enquiry form](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
+>[!IMPORTANT]
+>
+>**The sheet where the form is authored has restrictions on what it can be named. Only `helix-default` and `shared-aem` can be used as sheet names.**
+
 Let's start with updating a field label. Open the 'enquiry' sheet for editing, change the label of submit button to `Let's Talk` and use AEM Sidekick to preview and publish the file. 
 
  ![Enquiry form](/help/edge/assets/enquiry-form-preview-publish.png)
