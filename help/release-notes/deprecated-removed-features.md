@@ -427,32 +427,31 @@ Some properties for the following OSGi component PIDs can no longer be modified.
 
 | **OSGI component ID**| **Unmodifiable Properties** | **Deprecation**  | **Enforcement** |
 |---|---|---|---|
-| **`org.apache.sling.commons.log.LogManager`** | all | 4/24/25   | 8/31/25 (config ignored in June) |
+| **`org.apache.sling.commons.log.LogManager`** | all | 4/24/25 | 8/31/25 (config ignored in June) |
 | **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file, org.apache.sling.commons.log.pattern | 4/24/25 | 8/31/25 (config ignored in June) |
+| **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** | all | 2024 | 8/31/25 |
+| **`com.day.cq.auth.impl.cug.CugSupportImpl`** | all | 2024 |
+| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | all | 2024 | 8/31/25 |
+| **`org.apache.felix.http (Factory)`** | all | 2024 | 8/31/25 |
+| **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | all | 2024 | 8/31/25 |
+| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | all | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | all | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.feature.apiregions.impl`** | all | 6/3/25 | 8/31/25 |
+| **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | all | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | all | 6/3/25 | 8/31/25 |
+| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | all | 6/3/25 | 8/31/25 |
+| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | all | 6/3/25 | 8/31/25 |
+| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | all | 6/3/25 | 8/31/25 |
+| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | all | 6/3/25 | 8/31/25 |
+| **`org.apache.http.proxyconfigurator`** | all | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.feature.apiregions.factory`** | all | 6/3/25 | 8/31/25 |
+| **`com.adobe.granite.toggle.monitor.systemproperty`** | all | 6/3/25 | 8/31/25 |
 
+<!--
 ### Unmodifiable OSGi properties {#unmodifiable-osgi-properties}
 
 Properties for the following OSGi component PIDs cannot be modified, as described below.
-
-| **OSGI component ID** | **Unmodifiable Properties** |
-|---|---|
-| **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** | all | 
-| **`com.day.cq.auth.impl.cug.CugSupportImpl`** | all |
-| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | all |
-| **`org.apache.felix.http (Factory)`** | all |
-| **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | all |
-| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | all |
-| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | all |
-| **`org.apache.sling.feature.apiregions.impl`** | all |
-| **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | all |
-| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | all |
-| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | all |
-| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | all |
-| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | all |
-| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | all |
-| **`org.apache.http.proxyconfigurator`** | all |
-| **`org.apache.sling.feature.apiregions.factory`** | all |
-| **`com.adobe.granite.toggle.monitor.systemproperty`** | all |
+-->
 
 ### OSGi property restrictions {#restrictions-osgi-properties}
 
