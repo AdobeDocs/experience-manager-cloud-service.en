@@ -227,6 +227,69 @@ Your input is invaluable for the continuous improvement of the AI Assistant.
 - **Official Support:** For critical issues or further assistance, please reach out through the official Adobe support channels or your organization's designated support contacts.
 
 
+
+## Working with Attachments
+
+The AI Assistant supports file attachments to enhance your form creation and configuration experience. You can attach various file types to provide visual context, design references, or existing forms to convert.
+
+### Supported Attachment Types
+
+| File Type | Use Cases | Commands That Support Attachments | Examples |
+|-----------|-----------|-----------------------------------|----------|
+| **Images** (PNG, JPG, JPEG, GIF) | Form layout references, UI mockups, paper form scans | /create-form, /add-form, /create-panel, /add-panel, /update-field | Upload a screenshot of desired layout |
+| **PDF Files** | Existing forms to convert, design specifications | /create-form, /add-form, /create-panel, /add-panel | Convert PDF application forms |
+| **Figma Files** | Design system references, UI prototypes | /create-form, /add-form, /create-panel | Import Figma design frames |
+| **Design Files** (Sketch, Adobe XD exports) | Visual design references | /create-form, /add-form, /create-panel | Reference design system components |
+
+### How to Use Attachments
+
+1. **Attach Before or With Your Command:**
+
+   - Click the attachment icon in the AI Assistant interface
+   - Select your file(s) from your device
+   - Type your command referencing the attached file
+
+2. **Reference Attachments in Commands:**
+
+   ```
+   /create-form based on the attached PDF application form
+   /add-panel using the layout shown in the uploaded image
+   /create-panel following the design in the attached Figma file
+   /update-field @email to match the style in the attached screenshot
+   ```
+
+3. **Multiple Attachments:**
+
+   - You can attach multiple files for comparison or reference
+   - Specify which attachment to use: "using the first attached image" or "based on the PDF file"
+
+### Attachment Best Practices
+
+- **Clear, High-Quality Images:** Ensure uploaded images are clear and legible for better AI analysis
+- **Relevant File Names:** Use descriptive file names to help the AI understand context
+- **Single Focus:** Each attachment should focus on one specific aspect (layout, field design, etc.)
+- **Supported Formats:** Stick to common formats (PNG, JPG, PDF) for best compatibility
+- **File Size:** Keep attachments under 10MB for optimal processing speed
+
+### Example Attachment Workflows
+
+**Converting a Paper Form:**
+
+1. Scan or photograph the paper form clearly
+2. Upload the image file
+3. Use command: `/create-form based on the attached form image, converting all fields to digital equivalents`
+
+**Matching a Design System:**
+
+1. Export or screenshot relevant design components
+2. Attach the design reference
+3. Use command: `/create-panel following the visual style and layout shown in the attached design`
+
+**Field Styling Reference:**
+
+1. Attach screenshot of desired field appearance
+2. Use command: `/update-field @email to match the styling and layout shown in the attached image`
+
 ## Related Content
 
 [AEM Forms AI Assistant - Prompt Library](/help/edge/docs/forms/ai-assistant-prompt-library.md)
