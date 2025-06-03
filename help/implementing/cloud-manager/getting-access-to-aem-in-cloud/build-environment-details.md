@@ -98,9 +98,7 @@ The following features might not function correctly when deployed on the Java 21
 
 #### Runtime requirements {#runtime-requirements}
 
-The Java 21 runtime is used for builds with Java 21 and Java 17, and it will be applied gradually to Java 11 builds too (see the Note below). An environment must be on AEM release 17098 or more recent to receive the Java 21 update. To ensure compatibility, the following adjustments are required.
-
-Library updates can be applied anytime, as they remain compatible with older Java versions.
+The Java 21 runtime has been applied to all eligibile environments, which are environments on AEM release 17098 or later that satisfy the criteria below. If an environment does not meet the criteria, it is important to make adjustments in order to ensure performance, availability, and security.
 
 * **Minimum version of ASM:**
 Update the usage of the Java package`org.objectweb.asm`, often bundled in `org.ow2.asm.*` artifacts, to version 9.5 or higher to ensure support for newer JVM runtimes.
@@ -122,8 +120,7 @@ When running AEM locally with Java 21, the start scripts (`crx-quickstart/bin/st
 
 >[!IMPORTANT]
 >
->When `.cloudmanager/java-version` is set to `21` or `17`, the Java 21 runtime is deployed. The Java 21 runtime is scheduled for gradual rollout to all environments (not just those environments whose code is built with Java 11) starting Tuesday, February 4, 2025. The rollouts start with sandboxes and development environments, followed by all production environments in April 2025. Customers who want to adopt the Java 21 runtime *earlier* can contact Adobe at [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
-
+>If an environment has not yet been automatically updated to the Java 21 runtime, you can trigger it by building with Java 17 or 21. This is done by setting `.cloudmanager/java-version` to `21` or `17`. Contact Adobe at [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) if you have questions.
 
 #### Build time requirements {#build-time-reqs}
 
