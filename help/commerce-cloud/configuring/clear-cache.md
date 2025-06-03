@@ -65,8 +65,8 @@ Request Type: `POST`
 
 | Parameter| Value| Required/Mandatory| Comment |
 |------------------------------|-------------------|---|---|
-| `Content-Type`                           | `application/json`            | Required | |
-| `Authorization`                      | Corresponding Author's User credentials (Auth Type: Basic Auth)  | Required | Add the corresponding username and password |
+| `Content-Type`    | `application/json`            | Required |  |
+| `Authorization`        | Corresponding Author's User credentials (Auth Type: Basic Auth)  | Required | Add the corresponding username and password. |
 
 
 Below are existing attributes which the feature is giving out of the Box.
@@ -81,8 +81,7 @@ This table show the mandatory property that need to be passed in every API call:
 
 | Propertie | Value | Type (Array/String/Boolean)| Will this clear the dispatcher cache? | Comment |
 |------------------------------|-------------------|---|---|---|
-| `storePath` | Corresponding value of the site path from where the cache needs be removed (Example : 
-`/content/venia/us/en` as reference with venia project)| String  | Yes | This needs to given with the combination of `invalidateType.` |
+| `storePath` | Corresponding value of the site path from where the cache needs be removed (Example : `/content/venia/us/en` as reference with venia project)| String  | Yes | This needs to given with the combination of `invalidateType.`|
 
 
 ### Sample API Request
