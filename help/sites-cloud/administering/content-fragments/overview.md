@@ -91,7 +91,8 @@ After the fragments have been created, you can:
   * edit, publish (to preview or production), and reference your fragments
   * collaborate with other authors using Comments
 * [Analyze](/help/sites-cloud/administering/content-fragments/analysis.md)  the structure of your Content Fragment, using the editor
-* [Access your fragments with GraphQL, for headless delivery to your applications](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md). 
+* [Access your fragments with GraphQL, for headless delivery to your applications](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+* [Integrate and use your Content Fragments in Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md) 
 * [Or use your fragments for page authoring](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
