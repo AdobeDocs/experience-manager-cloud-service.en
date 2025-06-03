@@ -47,6 +47,10 @@ The below screenshot displays the form definition used to create form:
 
 ![Form Definition](/help/forms/assets/form-submission-definition.png)
 
+>[!IMPORTANT]
+>
+>**The sheet where the form is authored has restrictions on what it can be named. Only `helix-default` and `shared-aem` can be used as sheet names.**
+
 #### 2. Enable the spreadsheet to accept data.
 
 Once you have created and previewed the form, enable the corresponding spreadsheet to start receiving data. add a new sheet as `incoming`. You can [manually enable the spreadsheet to accept data](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
