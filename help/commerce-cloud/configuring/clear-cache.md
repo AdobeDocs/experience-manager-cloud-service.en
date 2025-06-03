@@ -69,13 +69,17 @@ Request Type: `POST`
 | `Authorization`        | Corresponding Author's User credentials (Auth Type: Basic Auth)  | Required | Add the corresponding username and password. |
 
 
-Below are existing attributes which the feature is giving out of the Box.
-
-
-
 ### Payload
 
-This InvalidateType needs to be given in combination of Mandatory attribute (i.e storePath).
+The following table shows existing attributes which the feature is giving out-of-the-box. These `InvalidateType` properties need to be given in combination with mandatory attribute (such as `storePath`).
+
+| `invalidateType`| Value | Type (Array/String/Boolean)| Will this clear the dispatcher cache? | Comment |
+|------------------------------|-------------------|---|---|---|
+| `productSkus`                           | Product's sku - which needs to be invalidated from the cache. | Array           | Yes | |
+| `categoryUids`                     | Category's uid - which needs to be invalidated from the cache. | Array  | Yes | Add the corresponding username and password |
+| `regexPatterns`                           | If you need to clear the GraphQL response data  based on regex pattern,use this. | Array           | No | |
+| `cacheNames`                           | This values are defined under the corresponding CIF GraphQL client configuraion factory >> Corresponding StorePath GraphQL configuration >> GraphQL cache configurations | Array           | No | |
+| `invalidateAll`                           | True or false. | Boolean          | Yes | |
 
 This table show the mandatory property that need to be passed in every API call:
 
