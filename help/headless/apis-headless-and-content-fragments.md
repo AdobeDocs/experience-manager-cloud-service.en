@@ -5,6 +5,7 @@ feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
 ---
+
 # AEM APIs for Structured Content Delivery and Management {#aem-apis-structured-content-delivery-and-management}
 
 Adobe Experience Manager (AEM) as a Cloud Service offers multiple APIs for both structured content delivery from Content Fragments and Content Fragment management. See the individual pages for further details of the specific APIs.
@@ -20,7 +21,7 @@ Adobe Experience Manager (AEM) as a Cloud Service offers multiple APIs for both 
 * [Content Fragments and Content Fragment Models OpenAPIs](/help/headless/content-fragment-openapis.md)
   * These APIs are intended for structured content management. 
   * Respective GET operators are not optimized for content delivery.
-  * This API is REST based. 
+  * This API is REST based.
 
 >[!NOTE]
 >
