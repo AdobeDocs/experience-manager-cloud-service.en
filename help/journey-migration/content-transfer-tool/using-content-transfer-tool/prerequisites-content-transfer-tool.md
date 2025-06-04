@@ -15,7 +15,7 @@ role: Admin
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html" text="Important Considerations for Using Content Transfer Tool"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#best-practices" text="Best Practices and Guidelines"
 
-The following table summarizes the prerequisites for using Content Transfer Tool. 
+The following table summarizes the prerequisites for using Content Transfer Tool.
 
 Review all the considerations listed below:
 
