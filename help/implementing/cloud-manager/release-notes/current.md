@@ -33,9 +33,17 @@ The next planned release is Thursday, July 10, 2025.
 
     Simplified the flow for adding an Edge Delivery site by requesting the **Edge Delivery Origin** instead of the **Repository URL**, making onboarding and setup faster and more intuitive <!-- CMGR-67686 -->
 
-    ![Add Edge Delivery site dialog box]()
+    ![Add Edge Delivery site dialog box](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-site.png)
 
     See [Add an Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md).
+
+* **(UI) Pipeline favorites**
+
+    In this release, Cloud Manager introduces the ability to pin favorite pipelines, allowing you to mark specific pipelines as favorites so they appear at the top of the list on the **Pipelines** page. This enhancement makes frequently accessed pipelines easier to find and run. <!-- CMGR-68293 -->
+
+    ![Pipelines marked as favorites](/help/implementing/cloud-manager/release-notes/assets/pipeline-favorites.png)
+
+    See [Mark pipeline favorites](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites).
 
 
 ## Early adopter program {#early-adoption}
@@ -98,17 +106,11 @@ Config Pipelines are now supported for sites built with Edge Delivery Services, 
 If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID.
 
 
-
-
-<!--
 ## Bug fixes
 
-* Issue
+* Sandbox environments previously marked as `HIBERNATED` no longer remain stuck in that state, allowing pipeline execution or deployment to proceed as expected. <!-- CMGR-67705 -->
+* AEM Cloud Manager now correctly maps Maven build failures caused by 409 errors (conflicts) when fetching customer artifacts to a customer-caused failure. This change improves error messaging by distinguishing between internal errors and issues related to customer environment setup. <!-- CMGR-66673 -->
 
-* Issue
-
-* Issue
--->
 
 <!-- ## Known issues {#known-issues} -->
 
