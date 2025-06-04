@@ -23,11 +23,11 @@ The next planned release is Thursday, July 10, 2025.
 
 * **(UI) License dashboard now includes Edge Delivery Services license**
 
-    Edge Delivery Services license usage is now displayed in the License dashboard, providing you with clearer visibility into your entitlements. <!-- CMGR-67686 -->
+    Edge Delivery Services license usage is now displayed in the License dashboard, providing you with clearer visibility into your entitlements and status. <!-- CMGR-67686 -->
 
     ![License Dashboard](/help/implementing/cloud-manager/assets/license-dashboard.png)
 
-    See [Licence dashboard](/help/implementing/cloud-manager/license-dashboard.md).
+    See [License dashboard](/help/implementing/cloud-manager/license-dashboard.md).
 
 * **(UI) Edge Delivery site configuration updated**
 
@@ -41,7 +41,7 @@ The next planned release is Thursday, July 10, 2025.
 
     In this release, Cloud Manager introduces the ability to pin favorite pipelines, allowing you to mark specific pipelines as favorites so they appear at the top of the list on the **Pipelines** page. This enhancement makes frequently accessed pipelines easier to find and run. <!-- CMGR-68293 -->
 
-    ![Pipelines marked as favorites](/help/implementing/cloud-manager/release-notes/assets/pipeline-favorites.png)
+    ![Pipelines marked as favorites](/help/implementing/cloud-manager/release-notes/assets/pipeline-favorites.png) *Two pipelines marked as favorites.*
 
     See [Mark pipeline favorites](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites).
 
@@ -101,7 +101,9 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
 Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Config Pipelines** to manage settings such as traffic filtering rules and Web Application Firewall (WAF) configurations, where applicable. See [Supported Configurations](/help/operations/config-pipeline.md#configurations).
 
-![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png)
+![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adding an Edge Delivery pipeline from the **Program Overview** page, **Pipelines** card.*
+
+![Add Edge Delivery pipeline dialog box](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Add Edge Delivery pipeline dialog box.*
 
 If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID.
 
