@@ -12,19 +12,34 @@ exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
 
 Experience Hub introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, Experience Hub lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, Experience Hub ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
 
+Watch a quick tour of the reimagined AEM Experience Hub workspace (1 minutes, 27 seconds).
+
+>[!VIDEO](https://video.tv.adobe.com/v/3463267?quality=12&learn=on)
+
 <!--
 Available to early adopters, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
 
 ## Experience Hub up close {#aem-experience-hub-about}
 
-The [Adobe Experience Manager page](https://experience.adobe.com/#/experiencemanager) has been updated with enhanced navigation and interactive widgets. The previous collection of solution cards provided access to tools like the following: 
+1. To get started, click [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) to open its home page.
 
-* Brand Portal
-* Cloud Acceleration Manager
-* Cloud Manager
-* Extension Manager
-* Software Distribution
+    ![Adobe Experience Cloud home page](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
+
+1. In the **Quick access** grouping, click **Experience Manager**.
+1. On the **Tell us what you want to do** page, click the option you want so Adobe can tailor your experience. 
+
+    You can change this preference at any anytime.
+
+    ![The Tell us what you want to do page](/help/implementing/cloud-manager/assets/experience-cloud-tellus.png)
+
+The Adobe Experience Manager page has been refreshed with enhanced navigation and interactive widgets. The previous collection of solution cards provided access to tools like the following: 
+
 * Universal Editor
+* Cloud Manager
+* Cloud Acceleration Manager
+* Software Distribution
+* Extension Manager
+* Brand Portal
 
 These solutions are now moved to the main navigation under **Tools**. Additionally, new navigation elements for **Sites** and **Assets** provide quick access to key Adobe Experience Manager features such as Assets, Collections, Sites, and Content Fragments. These features are available for the primary production environment that you have access to.
 
