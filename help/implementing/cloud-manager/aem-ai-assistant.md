@@ -41,6 +41,46 @@ Product knowledge encompasses concepts and topics derived from Adobe Experience 
 
 The current scope of the AI Assistant focuses on addressing product knowledge questions for Adobe Experience Manager as a Cloud Service. This scope includes comprehensive support for key areas, such as Sites, Assets, Forms, and Cloud Manager.
 
+## AI Assistant for AEM Forms (Forms Experience Builder) {#ai-forms-builder}
+
+In addition to the general AI Assistant for product knowledge, AEM offers a specialized **[AI Assistant for AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant.md)**. This enhanced assistant can actively help you create and configure forms through natural language prompts and answer questions specific to forms.
+
+### Key Capabilities
+
+The AI Assistant for AEM Forms provides:
+
+* **Form Creation**: Create new forms from scratch using natural language descriptions
+* **Design Import**: Convert existing designs (PDF, Figma, images) into functional AEM forms  
+* **Form Configuration**: Add fields, panels, validation rules, and conditional logic
+* **Layout Management**: Organize form structure and optimize for different devices
+* **Integration Setup**: Configure form submissions and data handling
+* **Product Knowledge**: Answer questions about AEM Forms features and best practices
+
+### Where to Access
+
+The AI Assistant for AEM Forms is available in:
+
+* **Universal Editor**: For Edge Delivery Services forms with visual editing capabilities
+* **Adaptive Forms Editor**: For detailed form configuration and advanced features  
+* **Forms Management UI**: For high-level form creation and management tasks
+
+### Getting Started
+
+>[!NOTE]
+>
+> The AI Assistant for AEM Forms (Forms Experience Builder) is available under the early-adopter program. Send an email from your work address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) to request access.
+
+To learn more about using the AI Assistant for AEM Forms, including detailed examples and best practices, see the [AI Assistant for AEM Forms documentation](/help/edge/docs/forms/forms-ai-assistant.md).
+
+### Example Use Cases
+
+* **"Create a customer feedback form with name, email, rating, and comments fields"**
+* **"Convert this uploaded PDF application form into a digital adaptive form"**  
+* **"Add conditional logic to show spouse information only when marital status is 'Married'"**
+* **"Configure this form to submit data to our CRM system"**
+
+This specialized Forms AI Assistant represents the next evolution in form building, combining the power of AI with AEM's robust forms capabilities to streamline your form creation workflow.
+
 ## How to craft effective questions {#ai-craft-questions}
 
 To receive the most accurate responses from the AI Assistant, it's important to phrase your questions with clarity and context. Use the following tips to ensure that your queries are clear and well-structured:
