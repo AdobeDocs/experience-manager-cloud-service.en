@@ -243,14 +243,19 @@ Common use cases include:
 
 We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
 
+### AEM S2S Credentials Generated from a Customer-Uploaded Certificate (Limited Availability Program) {#cert-upload-limited)
 
-### CDN configuraton for Edge Delivery Services - Beta Program {#cdn-eds-beta}
+For access to protected custom AEM resources, server-to-server credentials can be generated using the AEM Developer Console. A new feature allows for Adobe to optionally generate credentials based on a **customer-uploaded certificate** so you retain full control over the private key.
+
+To join this limited availability program, email [aemcs-new-devconsole-ui-beta@adobe.com](mailto:aemcs-new-devconsole-ui-beta@adobe.com).
+
+### CDN configuraton for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
 
 The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
 
 Now in a beta, deploy a config pipeline for features including CDN origin selectors, response and request transformations, and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
 
-### AEM Log-Forwarding to More Destinations - Beta Program {#log-forwarding-beta}
+### AEM Log-Forwarding to More Destinations (Beta Program) {#log-forwarding-beta}
 
 Now in beta, you can forward AEM logs to Amazon S3, Sumo Logic, Dynatrace, and your own New Relic account (not the Adobe-provided account). Note that AEM logs (including Apache/Dispatcher) are supported for these logging destination, but not CDN logs. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) for access.
 
