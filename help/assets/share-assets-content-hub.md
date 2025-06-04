@@ -105,7 +105,7 @@ You can do the following on the shared assets page: -->
 * Select one or more assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to download them.
 * Click the asset thumbnail to see the asset's metadata. 
 ![](/help/assets/assets/download-assets-shared-assets-page.png)
-Additionally, the shared assets page ([accessed through a private link](#share-assets)) displays the dynamic renditions of an asset on the **[!UICONTROL Download]** panel. 
+Additionally, the shared assets page ([accessed through a private link](#share-assets)) displays the dynamic renditions of the assets and allows you to download the static,dynamic and smart crop renditions by selecting them from the **[!UICONTROL Download]** panel.     
 ![](/help/assets/assets/download-renditions-shared-assets-page.png)
 
 <!--
