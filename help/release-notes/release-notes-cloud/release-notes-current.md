@@ -49,38 +49,55 @@ Further completing the list of new client-side user interfaces when working with
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Dynamic Media (Scene7) {#dynamic-media-scene7}
+**AI-Generated metadata**
 
-**Dynamic Media (Scene7) not supported in Enhanced Security environments**
+AEM Assets now uses [AI to automatically generate metadata, including Title, Description, and Keywords fields](/help/assets/metadata-assets-view.md#ai-smart-tags). These AI-generated fields enhance metadata quality, making the assets easier to search, categorize, and recommend. This approach not only improves efficiency by eliminating manual tagging but also ensures consistency and scalability across large volumes of digital content.
 
-Dynamic Media (Scene7) on AEM as a Cloud Service is not HIPAA-ready and cannot be used in AEM environments where Enhanced Security is enabled.
+![AI generated metadata](/help/assets/assets/enhanced-smart-tags.png)
 
-Starting with the April 2025 AEM as a Cloud Service release, a technical restriction prevents Dynamic Media (Scene7) from being configured in environments with Enhanced Security. As a result, the **Dynamic Media Configuration** card under **Tools** > **Cloud Services** is no longer visible in these environments.
+**Integration with Figma**
 
-Additionally, customers using AEM 6.5 should be aware that the Dynamic Media (Scene7) stack is not HIPAA-ready.
+AEM Assets integrates natively with Figma, which allows designers to directly access the assets stored in AEM Assets from within the Figma User Interface. You can place content managed in AEM Assets in the Figma canvas and then save new or edited content in AEM Assets repository.
 
-### Dynamic Media Classic {#dynamic-media-classic}
-
-**Reporting**
-
-The Bandwidth tab in the Dynamic Media Classic reporting dashboard is no longer supported as of April 2025. 
-
-See [Bandwidth and Storage, Types of reports](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports). 
+![Integration with Figma](/help/assets/assets/figma-integration.png)
 
 
-## New features in Assets View {#new-features-assets-view}
+### New features in Content Hub {#new features-content-hub}
 
-**Asset relations**
+**Attribute-based Access Control (ABAC)**
 
-The Assets View now supports viewing and editing asset relations in a simplified asset Details panel. Easily add relationships like Source and Derivative to content so that users can more effectively find relevant hero content.
+Content Hub now allows you to restrict access to assets based on user personas, brands, and regions. Asset permissions ensure governance and also makes sure that only the relevant assets are accessible to users.
 
-![Assets relation example](/help/assets/assets/asset-relations-example.png)
+The asset restriction rules are based on metadata and if the conditions defined in the rule match the asset metadata, the asset gets displayed to the user groups.
 
-**Compare versions of an asset**
+Some of the key benefits of Attribute-based Access Control includes:
 
-You can now quickly select and compare any version of an asset with its latest version using the Assets view.
+* Eliminates the dependency on folder structure for permissions
 
-![compare versions of asset](/help/assets/assets/version-compare2.png)
+* Allows administrators to upload assets and retroactively determine permission structures
+
+* Reduces number of duplicates - improves asset integrity. Duplicates are needed in folder based permissions when same assets are shared with different groups.
+
+**UI Branding**
+
+Content Hub now allows administrators to customize the user interface with brand-specific elements, including banner images, banner titles and body text, as well as primary and secondary colors. These enhancements help ensure brand consistency, simplify user onboarding, and build trust in the application.
+
+![UI Branding](/help/assets/assets/content-hub-ui-branding.png)
+
+**Public link sharing**
+
+Content Hub now supports generating shareable links to allow external users, without application access, to view asset metadata or download assets.
+
+![UI Branding](/help/assets/assets/public-and-private-link.png)
+
+**Collections governance**
+
+Content Hub now lets you control access to collections during creation, ensuring only authorized users can view or manage grouped assets. It ensures improved security, better collaboration, organized asset management, and simplified governance.
+
+![Collections governance](/help/assets/assets/collection-permissions.png)
+
+
+
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
