@@ -62,7 +62,7 @@ AEM Assets integrates natively with Figma, which allows designers to directly ac
 ![Integration with Figma](/help/assets/assets/figma-integration.png)
 
 
-### New features in Content Hub {#new features-content-hub}
+### New Features in Content Hub {#new-features-content-hub}
 
 **Attribute-based Access Control (ABAC)**
 
