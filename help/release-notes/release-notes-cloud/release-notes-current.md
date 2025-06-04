@@ -181,11 +181,11 @@ OSGi properties:
 
 The Java 11 runtime is now deprecated and most customers have been automatically upgraded to the more performant **Java 21 runtime**, for all their environments.
 
-If your environment(s) could not be upgraded due to an unsupported dependency, Adobe has already reached out with an email and will again reach out with details specific to your scenario on how to resolve. All dependencies must be resolved by **August 28th, 2025** so your environments can be safely upgraded to the Java 21 runtime.
+If your environment(s) could not be upgraded due to an unsupported dependency (see Java 21 [runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), Adobe will send an email with details specific to your scenario on how to resolve. All dependencies must be resolved by **August 28th, 2025** so your environments can be safely upgraded to the Java 21 runtime.
 
 Note that the Java 21 runtime is independent of whether your code is built with Java 21 (recommended) or with an earlier version. Building with Java 11 is still supported, but a deprecation will be announced in the future.
 
-### Enforcement of AEM's Logging Configuration Policy {#logconfig-policy}
+### Enforcement of AEM's Java Logs Configuration Policy {#logconfig-policy}
 
 As detailed in April release notes, to ensure effective monitoring of customer environments, AEM Java logs must maintain a consistent format and must not be overridden by custom configurations. Log output must remain directed to the default files. For AEM product code, default log levels must be preserved. However, it is acceptable to adjust log levels for customer-developed code. See details in the [Logging article](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
@@ -229,34 +229,34 @@ However, to optimize repository performance, starting in **late June 2025**, pur
 
 For more details, see the [Maintenance Tasks article](/help/operations/maintenance.md#default).
 
-### CDN configuraton for Edge Delivery Services (Beta) {#cdn-eds-beta}
+### Edge Computing (Limited Avalability Program) {#edge-computing-limited}
+
+Edge computing allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
+
+Common use cases include:
+
+* Authenticating users with an identity provider before granting access to content
+* Personalizing content based on geolocation, device type, or user attributes
+* Acting as middleware between the CDN and your origin
+* Reformatting responses from third-party APIs (and perhaps aggegating multiple APIs responses) before delivering them to the browser
+* Composing and serving server-rendered HTML at the edge using content stitched from various backends
+
+We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
+
+
+### CDN configuraton for Edge Delivery Services - Beta Program {#cdn-eds-beta}
 
 The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
 
-Now in a beta, deploy a config pipeline for features including CDN log forwarding, origin selectors, response and request transformations, and more. Please reach out to [aemcs-new-devconsole-ui-beta@adobe.com](mailto:aemcs-new-devconsole-ui-beta@adobe.com) with the details of your use case.
+Now in a beta, deploy a config pipeline for features including CDN origin selectors, response and request transformations, and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
 
-### AEM Log-Forwarding to More Destinations - Beta Program {#log-forwarding-earlyadopter}
+### AEM Log-Forwarding to More Destinations - Beta Program {#log-forwarding-beta}
 
 Now in beta, you can forward AEM logs to Amazon S3, Sumo Logic, Dynatrace, and your own New Relic account (not the Adobe-provided account). Note that AEM logs (including Apache/Dispatcher) are supported for these logging destination, but not CDN logs. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) for access.
 
 While logs can be downloaded from Cloud Manager, many organizations find it beneficial to stream those logs to a preferred logging destination. AEM already supports AEM and CDN log forwarding to Azure Blob Storage, Datadog, HTTPS, Elasticsearch (and OpenSearch), and Splunk. This feature is configured in a self-serve manner, and deployed using the Config Pipeline.
 
 Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md).
-
-### Edge Computing - Request for Feedback! {#edge-computing-feedback}
-
-Edge computing brings data processing closer to the browser, which has benefits including reduced latency. Adobe would like to hear if you find this technology useful for AEM Publish Delivery and Edge Delivery Services projects. Additionally, let us know what you envision using it for as input into the product roadmap. 
-
-Some possible use cases:
-
-* Authentication with an IdP to gate access to content
-* Personalization by rendering dynamic content based on geolocation, device type, user attributes, etc.
-* Advanced image manipulation 
-* Middleware between the CDN and an origin
-* A layer between the browser and a third-party API, perhaps to reformat the API response
-* Aggregating data from multiple origins to make it easier for the client browser to render it
-
-Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with questions and comments!
 
 ## [!DNL Experience Manager] Guides {#guides}
 
