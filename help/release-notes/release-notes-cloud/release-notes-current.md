@@ -70,7 +70,7 @@ Content Hub now allows you to apply rule-based restrictions to access assets. As
 
 The asset restriction rules are based on metadata and if the conditions defined in the rule match the asset metadata, the asset gets displayed to the user groups.
 
-Some of the key benefits of Attribute-based Access Control includes:
+Some of the key benefits of Attribute-based Access Control include:
 
 * Eliminates the dependency on folder structure for permissions
 
