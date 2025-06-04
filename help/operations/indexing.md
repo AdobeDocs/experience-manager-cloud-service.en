@@ -53,7 +53,7 @@ An index definition can fall into one of the following categories:
 
 2. Customization of an OOTB index. To customize an OOTB index, append `-custom-` followed by a number. For example, `/oak:index/damAssetLucene-8-custom-1` is the customization of the OOTB index `/oak:index/damAssetLucene-8`. A customization is typically a copy of the OOTB index, plus additional properties that need to be indexed.
 
-3. Fully custom index: You can create an entirely new index from scratch. These indexes also to end with `-custom-` and a version number. In addition to that, to avoid naming conflicts, use a prefix in the index name. For instance: `/oak:index/acme.product-custom-2`, where `acme.` is the prefix.
+3. Fully custom index: You can create an entirely new index from scratch. These indexes also need to end with `-custom-` and a version number. In addition, to avoid naming conflicts, use a prefix in the index name. For instance: `/oak:index/acme.product-custom-2`, where `acme.` is the prefix.
 
 >[!NOTE]
 >
