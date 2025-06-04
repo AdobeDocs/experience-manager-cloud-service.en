@@ -163,7 +163,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 Asset renditions are different representations of an asset's original file. These can include thumbnails, optimized versions for web or mobile, watermarked or DRM-protected files, or even dynamic elements like smart crops. They do not need to match the original file type, instead, they serve to represent the asset in various use cases.
 
-Learn more about [view and manage renditions in Experience Manager Assets](/help/assets/renditions.md).
+Learn more about [view and manage renditions in [!DNL Experience Manager Assets]](/help/assets/renditions.md).
 
 [!DNL Experience Manager Assets] supports the following types of renditions:
 
