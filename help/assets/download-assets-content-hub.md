@@ -48,15 +48,37 @@ exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
 
 >[!AVAILABILITY]
 >
->Content Hub guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+> [!DNL Content Hub] guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
 >
 >[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-The Content Hub lets you download and share your assets. The Content Hub User Interface displays only approved assets. These assets may include images, videos, or any other digital content. The Content Hub enhances accessibility and adaptability for effective asset distribution.  
+The [!DNL Content Hub] lets you download and share your assets. The [!DNL Content Hub] User Interface displays only approved assets. These assets may include images, videos, or any other digital content. The [!DNL Content Hub] enhances accessibility and adaptability for effective asset distribution.  
 
-You can download single or multiple assets and their available renditions using Content Hub.
+You can download single or multiple assets and their available renditions using [!DNL Content Hub].
 
 See [types of renditions available in Content Hub](#types-of-renditions).
+
+## Download one or more assets and their renditions {#download-asset-renditions}
+
+To download one or more assets and their renditions, execute the following steps: 
+
+1. To download an asset, select ![download](/help/assets/assets/download-icon.svg) available on the asset card to preview the asset, select the available renditions and click **[!UICONTROL Download]** on the dialog box to download the selected renditions as a zip file. If the dialog box displays the asset license (for licensed asset), accept the licensing terms and conditions and click **[!UICONTROL Download]**. 
+![](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+    
+    Alternatively, click the asset thumbnail and select ![download](/help/assets/assets/download-icon.svg) to select and view the available renditions on the dialog box before downloading them.
+
+1. To download multiple assets, select the assets, click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to review the list of selected assets in the **[!UICONTROL Download assets]** dialog box. Click ![unselect](/help/assets/assets/Close.svg) next to an asset to unselect it from the list. Select the renditions and click download to download them. All the available static renditions and smart crops of each asset and selected dynamic renditions, are downloaded as a single zip file. 
+![download multiple assets](/help/assets/assets/download-multiple-assets-CH.png)
+If **[!UICONTROL Download assets]** dialog box displays assets license then select each license from the left pane ([!UICONTROL T&C Documents] section) to preview it and display the selected assets associated with it in the middle pane of the dialog box. Select the renditions, select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and click **[!UICONTROL Download]** to download them.
+![download multiple assets](/help/assets/assets/download-multiple-licensed-assets-CH.png)
+
+   >[!NOTE]
+   >
+   >* The renditions display only if their visibility is enabled using the [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
+   >* The users with access to [Dynamic Media with Open API capabilities](/help/assets/dynamic-media-open-apis-overview.md) can view and download dynamic and smart crop renditions.
+   >* The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+
+<!--
 
 ## Download an asset and its renditions {#download-asset-renditions} 
 
@@ -64,14 +86,15 @@ To download an asset and its renditions, execute the following steps:
 
 1. Click the asset to view its properties.
 
-1. Click ![download](/help/assets/assets/download-icon.svg) to start the download process. The Download panel lists all available asset renditions.
+1. Click ![download](/help/assets/assets/download-icon.svg) to see the list of available asset renditions in the **[!UICONTROL Download]** panel.
 
    >[!NOTE]
    >
    >* The renditions display only if their visibility is enabled using the [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
    >* You can download all [static, dynamic, and smart crop renditions](#types-of-renditions) while downloading an asset.
 
-1. Select one or more renditions and click **[!UICONTROL Download]**.
+1. Select one or more renditions and click **[!UICONTROL Download]** to download the selected renditions as a zip file. 
+While downloading a licensed asset, select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** before clicking **[!UICONTROL Download]**. You can also click **[!UICONTROL terms & conditions]** to view the asset license. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
    ![Download single asset renditions](/help/assets/assets/download-single-asset-renditions.png)
 
@@ -135,8 +158,7 @@ The dialog box that displays depends on whether the download list includes expir
 ### Download non-licensed Assets {#download-non-licensed-assets}
 
  To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.-->
-
-    
+   
 ## Types of renditions {#types-of-renditions} 
 
 Asset renditions are different representations of an asset's original file. These can include thumbnails, optimized versions for web or mobile, watermarked or DRM-protected files, or even dynamic elements like smart crops. They do not need to match the original file type, instead, they serve to represent the asset in various use cases.
