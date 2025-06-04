@@ -164,7 +164,7 @@ OSGi properties:
 
 The Java 11 runtime is now deprecated and most customers have been automatically upgraded to the more performant **Java 21 runtime**, for all their environments.
 
-If your environment(s) could not be upgraded due to an unsupported dependency, Adobe has already reached out with an email and will again reach out with details specific to your scenario on how to resolve. All dependencies must be resolved by **August 28th, 2025** so your environments can be safely upgraded to the Java 21 runtime.
+If your environment(s) could not be upgraded due to an unsupported dependency ([see Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements-runtime-requirements)), Adobe has already reached out with an email and will again reach out with details specific to your scenario on how to resolve. All dependencies must be resolved by **August 28th, 2025** so your environments can be safely upgraded to the Java 21 runtime.
 
 Note that the Java 21 runtime is independent of whether your code is built with Java 21 (recommended) or with an earlier version. Building with Java 11 is still supported, but a deprecation will be announced in the future.
 
