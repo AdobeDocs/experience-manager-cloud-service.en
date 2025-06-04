@@ -181,7 +181,7 @@ OSGi properties:
 
 The Java 11 runtime is now deprecated and most customers have been automatically upgraded to the more performant **Java 21 runtime**, for all their environments.
 
-If your environment(s) could not be upgraded due to an unsupported dependency, Adobe has already reached out with an email and will again reach out with details specific to your scenario on how to resolve. All dependencies must be resolved by **August 28th, 2025** so your environments can be safely upgraded to the Java 21 runtime.
+If your environment(s) could not be upgraded due to an unsupported dependency ([see Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements-runtime-requirements)), Adobe has already reached out with an email and will again reach out with details specific to your scenario on how to resolve. All dependencies must be resolved by **August 28th, 2025** so your environments can be safely upgraded to the Java 21 runtime.
 
 Note that the Java 21 runtime is independent of whether your code is built with Java 21 (recommended) or with an earlier version. Building with Java 11 is still supported, but a deprecation will be announced in the future.
 
@@ -233,7 +233,7 @@ For more details, see the [Maintenance Tasks article](/help/operations/maintenan
 
 The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
 
-Now in a beta, deploy a config pipeline for features including CDN log forwarding, origin selectors, response and request transformations, and more. Please reach out to [aemcs-new-devconsole-ui-beta@adobe.com](mailto:aemcs-new-devconsole-ui-beta@adobe.com) with the details of your use case.
+Now in a beta, deploy a config pipeline for features including origin selectors, response and request transformations, and more. Please reach out to [aemcs-new-devconsole-ui-beta@adobe.com](mailto:aemcs-new-devconsole-ui-beta@adobe.com) with the details of your use case.
 
 ### AEM Log-Forwarding to More Destinations - Beta Program {#log-forwarding-earlyadopter}
 
@@ -243,20 +243,19 @@ While logs can be downloaded from Cloud Manager, many organizations find it bene
 
 Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md).
 
-### Edge Computing - Request for Feedback! {#edge-computing-feedback}
+### Edge Computing (Limited Avalability Program) {#edge-computing-limited}
 
-Edge computing brings data processing closer to the browser, which has benefits including reduced latency. Adobe would like to hear if you find this technology useful for AEM Publish Delivery and Edge Delivery Services projects. Additionally, let us know what you envision using it for as input into the product roadmap. 
+Edge computing allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
 
-Some possible use cases:
+Common use cases include:
 
-* Authentication with an IdP to gate access to content
-* Personalization by rendering dynamic content based on geolocation, device type, user attributes, etc.
-* Advanced image manipulation 
-* Middleware between the CDN and an origin
-* A layer between the browser and a third-party API, perhaps to reformat the API response
-* Aggregating data from multiple origins to make it easier for the client browser to render it
+* Authenticating users with an identity provider before granting access to content
+* Personalizing content based on geolocation, device type, or user attributes
+* Acting as middleware between the CDN and your origin
+* Reformatting responses from third-party APIs (and perhaps aggegating multiple APIs responses) before delivering them to the browser
+* Composing and serving server-rendered HTML at the edge using content stitched from various backends
 
-Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with questions and comments!
+We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
 
 ## [!DNL Experience Manager] Guides {#guides}
 
