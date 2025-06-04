@@ -5,9 +5,8 @@ feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
 role: Admin, Architect, Developer
+exl-id: 333d42e0-625f-432e-a61b-5d49bf08765a
 ---
-
-
 # AEM Forms AI Assistant - Prompt Library
 
 Collection of reusable prompt patterns and examples for common form-building scenarios. Think of these as templates you can adapt to your specific needs. Each section covers a particular use case with guidance on when to use it and proven examples.
@@ -934,4 +933,4 @@ In Universal Editor, create a **responsive contact form** for the company websit
 6. **User acceptance testing** - Have real users test the form before deployment
 
 
-*This prompt library is continuously updated based on user feedback and new AI Assistant capabilities. For the latest features and examples, check the [AEM Forms documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html).* 
+*This prompt library is continuously updated based on user feedback and new AI Assistant capabilities. For the latest features and examples, check the [AEM Forms documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html).*
