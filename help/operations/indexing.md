@@ -53,7 +53,7 @@ An index definition can fall into one of the following categories:
 
 2. Customization of an OOTB index. To customize an OOTB index, append `-custom-` followed by a number. For example, `/oak:index/damAssetLucene-8-custom-1` is the customization of the OOTB index `/oak:index/damAssetLucene-8`. A customization is typically a copy of the OOTB index, plus additional properties that need to be indexed.
 
-3. Fully custom index: You can create an entirely new index from scratch. These indexes also need to end with `-custom-` and a version number. In addition, to avoid naming conflicts, use a prefix in the index name. For instance: `/oak:index/acme.product-custom-2`, where `acme.` is the prefix.
+3. Fully custom index: You can create an entirely new index from scratch. These indexes also need to end with `-custom-` and a version number. In addition, to avoid naming conflicts, use a prefix in the index name. For instance: `/oak:index/acme.product-1-custom-2`, where `acme.` is the prefix.
 
 >[!NOTE]
 >
@@ -288,8 +288,8 @@ The following table shows five index definitions: index `cqPageLucene` is used i
 |---|---|---|---|
 | /oak:index/damAssetLucene-8  | Yes  | Yes  | No  |
 | /oak:index/damAssetLucene-8-custom-1  | Yes (customized)  | No  | Yes  |
-| /oak:index/acme.product-custom-1  | No  | Yes  | No  |
-| /oak:index/acme.product-custom-2  | No  | No  | Yes  |
+| /oak:index/acme.product-1-custom-1  | No  | Yes  | No  |
+| /oak:index/acme.product-1-custom-2  | No  | No  | Yes  |
 | /oak:index/cqPageLucene-2  | Yes  | Yes  | Yes  |
 
 The version number is incremented each time the index is changed. To avoid custom index names colliding with index names of the product itself, custom indexes, and changes to out-of-the-box indexes must end with `-custom-<number>`.
@@ -326,9 +326,9 @@ For best operational performance, indexes should not be excessively large. The t
 
 ### Adding an Index {#adding-an-index}
 
-To add a fully custom index named `/oak:index/acme.product-custom-1`, to be used in a new version of the application and later, the index must be configured as follows:
+To add a fully custom index named `/oak:index/acme.product-1-custom-1`, to be used in a new version of the application and later, the index must be configured as follows:
 
-`acme.product-custom-1`
+`acme.product-1-custom-1`
 
 This configuration works by prepending a custom identifier to the index name, followed by a dot (**`.`**). The identifier should be from 2 through 5 characters in length.
 
@@ -336,15 +336,15 @@ As above, this configuration ensures that the index is only used by the new vers
 
 ### Changing an Index {#changing-an-index}
 
-When an existing index is changed, a new index must be added with the changed index definition. For example, consider the existing index `/oak:index/acme.product-custom-1` is changed. The old index is stored under `/oak:index/acme.product-custom-1`, and the new index is stored under `/oak:index/acme.product-custom-2`.
+When an existing index is changed, a new index must be added with the changed index definition. For example, consider the existing index `/oak:index/acme.product-1-custom-1` is changed. The old index is stored under `/oak:index/acme.product-1-custom-1`, and the new index is stored under `/oak:index/acme.product-1-custom-2`.
 
 The old version of the application uses the following configuration:
 
-`/oak:index/acme.product-custom-1`
+`/oak:index/acme.product-1-custom-1`
 
 The new version of the application uses the following (changed) configuration:
 
-`/oak:index/acme.product-custom-2`
+`/oak:index/acme.product-1-custom-2`
 
 >[!NOTE]
 >
@@ -377,10 +377,10 @@ Follow the steps described in [Undoing a Change](#undoing-a-change-undoing-a-cha
 
 #### Removing a Fully Custom Index
 
-Follow the steps described in [Undoing a Change](#undoing-a-change-undoing-a-change) using a dummy index as the new version. A dummy index is never used for queries and does not contain any data, so the effect is the same as if the index did not exist. For this example, you can name it `/oak:index/acme.product-custom-3`. This name replaces the index `/oak:index/acme.product-custom-2`. An example of such a dummy index is:
+Follow the steps described in [Undoing a Change](#undoing-a-change-undoing-a-change) using a dummy index as the new version. A dummy index is never used for queries and does not contain any data, so the effect is the same as if the index did not exist. For this example, you can name it `/oak:index/acme.product-1-custom-3`. This name replaces the index `/oak:index/acme.product-1-custom-2`. An example of such a dummy index is:
 
 ```xml
-<acme.product-custom-3
+<acme.product-1-custom-3
         jcr:primaryType="oak:QueryIndexDefinition"
         async="async"
         compatVersion="2"
@@ -397,7 +397,7 @@ Follow the steps described in [Undoing a Change](#undoing-a-change-undoing-a-cha
                 </properties>
             </rep:root>
         </indexRules>
-</acme.product-custom-3>
+</acme.product-1-custom-3>
 ```
 
 ## Index and Query Optimizations {#index-query-optimizations}
