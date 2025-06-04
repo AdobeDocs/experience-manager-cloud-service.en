@@ -1,7 +1,6 @@
 ---
 title: Refactoring Tools Overview
 description: Learn how to get started with AEM Refactoring Tools
-exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 ---
 
 >[!CONTEXTUALHELP]
