@@ -227,7 +227,7 @@ However, to optimize repository performance, starting in **late June 2025**, pur
 
 For more details, see the [Maintenance Tasks article](/help/operations/maintenance.md#default).
 
-### Edge Computing (Limited Avalability Program) {#edge-computing-limited}
+### Edge Computing (Co-Development Program) {#edge-computing}
 
 Edge computing allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
 
@@ -239,7 +239,7 @@ Common use cases include:
 * Reformatting responses from third-party APIs (and perhaps aggegating multiple APIs responses) before delivering them to the browser
 * Composing and serving server-rendered HTML at the edge using content stitched from various backends
 
-We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
+We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
 
 ### CDN configuraton for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
 
