@@ -21,7 +21,7 @@ The next planned release is Thursday, July 10, 2025.
  
 ## What's new {#what-is-new}
 
-* **(UI) License dashboard now includes Edge Delivery Services license**
+* **License dashboard now includes Edge Delivery Services license**
 
     Edge Delivery Services license usage is now displayed in the License dashboard, providing you with clearer visibility into your entitlements and status. <!-- CMGR-67686 -->
 
@@ -29,7 +29,7 @@ The next planned release is Thursday, July 10, 2025.
 
     See [License dashboard](/help/implementing/cloud-manager/license-dashboard.md).
 
-* **(UI) Edge Delivery site configuration updated**
+* **Edge Delivery site configuration updated**
 
     Simplified the flow for adding an Edge Delivery site by requesting the **Edge Delivery Origin** instead of the **Repository URL**, making onboarding and setup faster and more intuitive <!-- CMGR-67686 -->
 
@@ -37,7 +37,7 @@ The next planned release is Thursday, July 10, 2025.
 
     See [Add an Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md).
 
-* **(UI) Pipeline favorites**
+* **Pipeline favorites**
 
     In this release, Cloud Manager introduces the ability to pin favorite pipelines, allowing you to mark specific pipelines as favorites so they appear at the top of the list on the **Pipelines** page. This enhancement makes frequently accessed pipelines easier to find and run. <!-- CMGR-68293 -->
 
