@@ -1,10 +1,10 @@
 ---
 title: Download assets from Content Hub
-description: Learn how to download assets from the Content Hub portal
+description: Learn how to download single or multiple assets and their renditions from the Content Hub portal.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
 ---
-# Download assets from the Content Hub {#download-assets}
+# Download assets from Content Hub {#download-assets}
 
 <table>
     <tr>
@@ -48,15 +48,39 @@ exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
 
 >[!AVAILABILITY]
 >
->Content Hub guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
+> [!DNL Content Hub] guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
 >
 >[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-The Content Hub lets you download and share your assets. The Content Hub User Interface displays only approved assets. These assets may include images, videos, or any other digital content. The Content Hub enhances accessibility and adaptability for effective asset distribution.  
+The [!DNL Content Hub] lets you download and share your assets. The [!DNL Content Hub] User Interface displays only approved assets. These assets may include images, videos, or any other digital content. The [!DNL Content Hub] enhances accessibility and adaptability for effective asset distribution.  
 
-You can download single or multiple assets and their available renditions using Content Hub.
+You can download single or multiple assets and their available renditions using [!DNL Content Hub].
 
-See [types of renditions available in Content Hub](#types-of-renditions).
+See the [types of renditions available in Content Hub](#types-of-renditions).
+
+## Download one or more assets and their renditions {#download-asset-renditions}
+
+To download one or more assets and their renditions, execute the following steps: 
+
+1. To download an asset, select ![download](/help/assets/assets/download-icon.svg) available on the asset card to preview the asset, select the available renditions and click the **[!UICONTROL Download]** option in the dialog box to download the selected renditions as a ZIP file. If the dialog box displays an asset license (for licensed asset), accept the licensing terms and conditions and click **[!UICONTROL Download]**. 
+![](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+    
+    Alternatively, click the asset thumbnail and select ![download](/help/assets/assets/download-icon.svg) to select and view the available renditions on the dialog box before downloading them.
+
+1. To download multiple assets, select the assets, click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** and review the list of selected assets in the **[!UICONTROL Download assets]** dialog box. Click ![unselect](/help/assets/assets/Close.svg) next to an asset to unselect it from the list. Select one or more renditions and click **[!UICONTROL Download]** to download them as a single ZIP file. Selecting **[!UICONTROL Smart Crop]** and **[!UICONTROL Static Renditions]** downloads all available static and smart crop renditions of each selected asset.
+![download multiple assets](/help/assets/assets/download-multiple-assets-CH.png)
+You can continue using [!DNL Content Hub] while the download is in progress. Content Hub does not interrupt your workflow during the download process.
+![download multiple assets](/help/assets/assets/download-assets-notification-ch.png)
+If **[!UICONTROL Download assets]** dialog box displays assets licenses, then select each license from the left pane ([!UICONTROL T&C Documents] section) to preview the license and display the selected assets associated with the license in the middle pane of the dialog box. After reviewing each license, select the renditions, click **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and select **[!UICONTROL Download]** to download them.
+![download multiple assets](/help/assets/assets/download-multiple-licensed-assets-CH.png)
+
+   >[!NOTE]
+   >
+   >* The renditions display only if their visibility is enabled using the [!UICONTROL [Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
+   >* The users with access to [!DNL [Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) can view and download dynamic and smart crop renditions.
+   >* The preview of the license displays only if the asset is approved using [!DNL Assets as a Cloud Service] authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+
+<!--
 
 ## Download an asset and its renditions {#download-asset-renditions} 
 
@@ -64,14 +88,15 @@ To download an asset and its renditions, execute the following steps:
 
 1. Click the asset to view its properties.
 
-1. Click ![download](/help/assets/assets/download-icon.svg) to start the download process. The Download panel lists all available asset renditions.
+1. Click ![download](/help/assets/assets/download-icon.svg) to see the list of available asset renditions in the **[!UICONTROL Download]** panel.
 
    >[!NOTE]
    >
    >* The renditions display only if their visibility is enabled using the [Configuration](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
    >* You can download all [static, dynamic, and smart crop renditions](#types-of-renditions) while downloading an asset.
 
-1. Select one or more renditions and click **[!UICONTROL Download]**.
+1. Select one or more renditions and click **[!UICONTROL Download]** to download the selected renditions as a zip file. 
+While downloading a licensed asset, select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** before clicking **[!UICONTROL Download]**. You can also click **[!UICONTROL terms & conditions]** to view the asset license. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
    ![Download single asset renditions](/help/assets/assets/download-single-asset-renditions.png)
 
@@ -135,21 +160,20 @@ The dialog box that displays depends on whether the download list includes expir
 ### Download non-licensed Assets {#download-non-licensed-assets}
 
  To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.-->
-
-    
+   
 ## Types of renditions {#types-of-renditions} 
 
 Asset renditions are different representations of an asset's original file. These can include thumbnails, optimized versions for web or mobile, watermarked or DRM-protected files, or even dynamic elements like smart crops. They do not need to match the original file type, instead, they serve to represent the asset in various use cases.
 
-Learn more about [view and manage renditions in Experience Manager Assets](/help/assets/renditions.md).
+Learn more about [view and manage renditions in [!DNL Experience Manager Assets]](/help/assets/renditions.md).
 
 [!DNL Experience Manager Assets] supports the following types of renditions:
 
 * [Static renditions](/help/assets/renditions.md#static-renditions): Static renditions are pre-created versions of digital assets, typically generated during the asset ingestion or modification. They are optimized for specific uses and platforms, such as web thumbnails, mobile-friendly formats for responsive designs, or high-resolution files for printing, providing a streamlined and consistent experience.
 
-* [Dynamic renditions](/help/assets/renditions.md#dynamic-renditions): Dynamic renditions are real-time, customized versions of assets to perform various actions, such as resizing images for different device resolutions or cropping to fit various aspect ratios. These renditions allows you to offer personalized and optimized experiences for wider requirements. Dynamic renditions of assets are created on [!DNL Adobe Experience Manager Assets] author environment. For information on steps required to enable Dynamic renditions, see [Enable Dynamic renditions](#enable-dynamic-media-renditions).
+* [Dynamic renditions](/help/assets/renditions.md#dynamic-renditions): Dynamic renditions are real-time, customized versions of assets to perform various actions, such as resizing images for different device resolutions or cropping to fit various aspect ratios. These renditions allow you to offer personalized and optimized experiences for wider requirements. Dynamic renditions of assets are created on [!DNL Adobe Experience Manager Assets] author environment. For information on steps required to enable Dynamic renditions, see [Enable Dynamic renditions](#enable-dynamic-media-renditions).
 
-* [Smart crop](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): The smart crop focuses solely on the essential part of an asset during the cropping process. Dynamic media smart crop for leverages artificial intelligence powered by Adobe Sensei to track the point of interest, making sure our assets look like their best on all screen sizes. [!DNL Adobe Experience Manager] smart crop displays width and height of an asset renditions along with the title. See more at [using Smart Crop with AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+* [Smart crop](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): The smart crop focuses solely on the essential part of an asset during the cropping process. Dynamic Media smart crop leverages artificial intelligence powered by Adobe Sensei to track the point of interest, making sure our assets look their best on all screen sizes. [!DNL Adobe Experience Manager] smart crop displays width and height of an asset renditions along with the title. See more at [using Smart Crop with AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
    Smart Crop renditions display and are available for download only if you have access to [Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md). Smart Crop renditions are available only for image assets.
 
@@ -169,7 +193,7 @@ To enable Dynamic renditions:
 
 1. Re-save the existing image presets to make them available on Content Hub. It is applicable only if you have newly onboarded to Dynamic Media with OpenAPI.
 
-   To re-save the existing image presets, navigate to Admin view and select **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**. Select a preset, click **[!UICONTROL Edit]** and then click **[!UICONTROL Save]**.
+   To re-save the existing image presets, navigate to the Admin view and select **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**. Select a preset, click **[!UICONTROL Edit]** and then click **[!UICONTROL Save]**.
 
 
   
