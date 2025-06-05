@@ -84,8 +84,7 @@ Access the shared asets page through the link and do the following:
 * Select one or more assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to select the  **[!UICONTROL Original]**,  **[!UICONTROL Static]** or both renditions from the available download options.
 ![](/help/assets/assets/download-shared-assets.png)
 * Click the asset thumbnail to see the asset's metadata. 
-
-Additionally, on the shared assets page ([accessed through a private link](#share-assets)) click an asset thumbnail and select ![download](/help/assets/assets/download-icon.svg) to select and view the available dynamic renditions of the asset on the **[!UICONTROL Download]** panel before selecting and downloading them.
+* On the shared assets page ([accessed through a private link](#share-assets)) click an asset thumbnail and select ![download](/help/assets/assets/download-icon.svg) to select and view the available dynamic renditions of the asset on the **[!UICONTROL Download]** panel before selecting and downloading them.
 ![](/help/assets/assets/download-renditions-shared-assets-page.png)  
 
 
