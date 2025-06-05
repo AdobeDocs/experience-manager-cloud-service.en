@@ -263,12 +263,6 @@ Common use cases include:
 
 We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
 
-### AEM S2S Credentials Generated from a Customer-Uploaded Certificate (Limited Availability Program) {#cert-upload-limited}
-
-For access to protected custom AEM resources, server-to-server credentials can be generated using the AEM Developer Console. A new feature allows for Adobe to optionally generate credentials based on a **customer-uploaded certificate** so you retain full control over the private key.
-
-To join this limited availability program, email [aemcs-new-devconsole-ui-beta@adobe.com](mailto:aemcs-new-devconsole-ui-beta@adobe.com).
-
 ### CDN configuraton for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
 
 The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
