@@ -68,6 +68,10 @@ You can also select and share assets available in ![collections](/help/assets/as
 Enable the **[!UICONTROL Public Link]** toggle, select a **[!UICONTROL period of expiration]** and click **[!UICONTROL Generate Public Link]** to generate a link to share with public users. Public users, as guests, access the shared assets page without signing in to [!DNL Content Hub].
 ![private and public link](/help/assets/assets/public-and-private-link.png)
 
+   >[!NOTE]
+   > 
+   > [Enable public link sharing from the configuration page]() to display **[!UICONTROL Public Link]** toggle on the **[!UICONTROL Share assets]** dialog box.
+
 ## Share an asset from its preview page {#share-asset-from-preview-page}
 
 Execute the following steps to share an asset while previewing it:
