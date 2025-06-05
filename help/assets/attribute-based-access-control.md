@@ -7,7 +7,7 @@ role: Admin
 
 Attribute-based access control (ABAC) allows Content Hub Administrators to define metadata-based rules to define the level of access to assets available in Content Hub.
 
-Administrators for an organization define rules for user groups, which are mapped to a Group ID. Rules are a mix of [logical and comparison operators](#supported-rule-constructs) and Admins can define as many rules as they need to manage asset access within Content Hub.
+Administrators for an organization define rules for user groups, which are mapped to a Group ID. Rules are a mix of [logical and comparison operators](#supported-rule-constructs) and Admins can define as many rules as they need to manage asset access within Content Hub..
 
 The rules are based on metadata and if the conditions defined in the rule match the asset metadata, the asset gets displayed to the user group. Content Hub scans the asset metadata including the custom metadata for all assets available within **All Assets** and **Collections** to display the results to user groups.
 
