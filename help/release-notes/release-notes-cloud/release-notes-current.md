@@ -39,14 +39,6 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 -->
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### New features in Experience Manager Sites {#enhancements-sites}
-
-**New Content Fragment Model Admin UI**
-
-Further completing the list of new client-side user interfaces when working with AEM Content Fragments, a new admin UI is now available for content fragment models. The new UI provides a clean and modern list view that allows searching models with filters, and that shows model tags and which content fragments exist that are based on a certain model. Documentation can be found [here](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md). 
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 **AI-Generated metadata**
@@ -141,20 +133,6 @@ This release notes lists the innovations delivered in the current release. For t
 #### Adobe Experience Platform (AEP) Integration with Forms
 
 Integration capabilities between Forms and AEP are now available for early adopters.
-
-## CIF Add-on {#cloud-services-cif}
-
-### Enhancements {#enhancements-cif}
-
-* Adding product variant selection for CIF product reference data type
-* [Experimental]: JSON+LD in CIF Core Components in PDPs
-* [Experimental]: CIF ability to clear cache
-
-### Bug fixes {#bug-fixes-cif}
-
-* Fix search issue in product field
-* Product url format not working as expected for #variant_sku
-* Unable to Add More Than 20 SKUs to Product List Component
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
