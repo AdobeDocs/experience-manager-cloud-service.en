@@ -79,7 +79,7 @@ Execute the following steps to share an asset while previewing it:
 
 ## Access the shared assets {#access-shared-assets}
 
-Access the shared asets page through the link and do the following:
+Access the shared assets page through the link and do the following:
 
 * Select one or more assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to select the  **[!UICONTROL Original]**,  **[!UICONTROL Static]** or both renditions from the available download options.
 ![](/help/assets/assets/download-shared-assets.png)
