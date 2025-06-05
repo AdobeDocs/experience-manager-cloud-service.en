@@ -70,7 +70,7 @@ Enable the **[!UICONTROL Public Link]** toggle, select a **[!UICONTROL period of
 
    >[!NOTE]
    > 
-   > [Enable public link sharing from the configuration page]() to display **[!UICONTROL Public Link]** toggle on the **[!UICONTROL Share assets]** dialog box.
+   > [Enable public link sharing from the configuration page](/help/assets/configure-content-hub-ui-options.md#enable-public-link-sharing) to display **[!UICONTROL Public Link]** toggle on the **[!UICONTROL Share assets]** dialog box.
 
 ## Share an asset from its preview page {#share-asset-from-preview-page}
 
