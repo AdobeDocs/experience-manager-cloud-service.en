@@ -58,7 +58,7 @@ To add or edit an environment, a user must be a member of the **Business Owner**
    
 1. In the **Add environment** dialog box, do the following:
    
-   * Click [**Specialized Test Environment**](#environment-types).
+   * Click **Specialized Testing Environment**.
    * Provide an environment **Name**. The environment name cannot be changed after the environment is created.
    * (Optional) Provide a **Description** for the environment.
    * Select a **Primary region** from the drop-down list. Once created, the primary region of the DevXL environment (for example, *United States (West US)*) is locked and cannot be changed.
