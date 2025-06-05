@@ -51,7 +51,7 @@ Further completing the list of new client-side user interfaces when working with
 
 **AI-Generated metadata**
 
-AEM Assets now uses [AI to automatically generate metadata, including Title, Description, and Keywords fields](/help/assets/metadata-assets-view.md#ai-smart-tags). These AI-generated fields enhance metadata quality, making the assets easier to search, categorize, and recommend. This approach not only improves efficiency by eliminating manual tagging but also ensures consistency and scalability across large volumes of digital content.
+AEM Assets now uses [AI to automatically generate metadata, including Title, Description, and Keywords](/help/assets/metadata-assets-view.md#ai-smart-tags). These AI-generated fields enhance metadata accuracy, making the assets easier to search, categorize, and recommend. This approach not only improves efficiency by eliminating manual tagging but also ensures consistency and scalability across large volumes of digital content.
 
 ![AI generated metadata](/help/assets/assets/enhanced-smart-tags.png)
 
@@ -96,8 +96,27 @@ Content Hub now lets you control access to collections during creation, ensuring
 
 ![Collections governance](/help/assets/assets/collection-permissions.png)
 
+>[!NOTE]
+>
+>Collections governance is a limited availability feature. You can get it enabled  by creating a support ticket.
 
+**Download multiple assets as a ZIP**
 
+Content Hub now also allows you to download the selected assets and their renditions in a ZIP file and not as separate files simplifying file management for you.
+
+**Dynamic Media renditions in Content Hub**
+
+Access all your Dynamic Media preset renditions and smart-crops for download, directly from within the Content Hub User Interface.
+
+​![Dynamic Media renditions](/help/assets/assets/dm-renditions-content-hub.png)
+
+### New Features in Dynamic Media {#new-features-dynamic-media}
+
+**Dynamic Media native integration with AJO B2C​**
+
+Native integration of Experience Manager (AEM) Dynamic Media with Journey Optimizer (AJO) B2C, enabling marketers to easily embed AEM Dynamic Media assets (rendition and DM Template) into AJO content and deliver real-time updates and hyper-personalized experiences across channels.
+
+​![Dynamic Media renditions](/help/assets/assets/dm-ajo-integration.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -181,9 +200,9 @@ OSGi properties:
 
 The **Java 11 runtime** is now deprecated, and most environments have already been upgraded to the more performant **Java 21 runtime**.
 
-If your environment couldn’t be upgraded due to unsupported dependencies (see [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), you should have received an email from Adobe with specific next steps. Please ensure all required updates are completed by **August 28, 2025**, so your environment can be upgraded without disruption.
+If your environment couldn't be upgraded due to unsupported dependencies (see [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), you should have received an email from Adobe with specific next steps. Please ensure all required updates are completed by **August 28, 2025**, so your environment can be upgraded without disruption.
 
-Note: The runtime version is separate from your code’s build version. While we recommend building with Java 21, Java 11 builds are still supported for now. A separate deprecation notice for Java 11 builds will be shared in the future.
+Note: The runtime version is separate from your code's build version. While we recommend building with Java 21, Java 11 builds are still supported for now. A separate deprecation notice for Java 11 builds will be shared in the future.
 
 ### Enforcement of AEM Java Logs Configuration Policy {#logconfig-policy}
 
