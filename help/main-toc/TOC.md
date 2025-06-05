@@ -237,6 +237,7 @@ user-guide-title: AEM as a Cloud Service
   + [What is New?](/help/release-notes/what-is-new.md)
   + [Notable Changes in AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
   + [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md)
+  + [Upcoming Features](/help/release-notes/upcoming-features.md)
   + [Prerelease Channel](/help/release-notes/prerelease.md)
 + Security {#security}
   + [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
