@@ -141,13 +141,13 @@ Integration capabilities between Forms and AEP are now available for early adopt
 
 ###  Updated Deprecation Process {#updated-deprecation-process}
 
-Adobe regularly reviews features, libraries, APIs, and configurations to ensure they meet standards for performance, security, and value. When capabilities no longer meet these standards, they are marked for deprecation and usage must stop by a specified removal date. Leading up to this date, Adobe will remind customers with email notifications and actions that need to be taken in Cloud Manager before proceeding with or deploying new builds. Failure to take the necessary action may result in an inability to upgrade to new versions of AEM leading to potential impacts around security, performance, reliability, and availability.
+Adobe regularly reviews features, libraries, APIs, and configurations to ensure they meet standards for performance, security, and value. When capabilities no longer meet these standards, they are marked for deprecation and usage must stop by a specified removal date. Leading up to this date, Adobe will remind customers with email notifications, and actions that need to be taken in Cloud Manager before proceeding with or deploying new builds. Failure to take the necessary action may result in an inability to upgrade to new versions of AEM leading to potential impacts around security, performance, reliability, and availability.
 
 See the [deprecation article](/help/release-notes/deprecated-removed-features.md) for further information.
 
 #### Deprecated Java APIs and OSGi configuration nearing removal dates {#deprecated-near-removals}
 
-Expand the list below see the list of deprecated APIs and OSGi configuration which must be removed within the next few weeks. The deprecation article has more details, including the removal date.
+Expand the list below to view the deprecated APIs and OSGi configurations that must no longer be used. For full details—including removal timelines—refer to the deprecation article.
 
 <details>
   <summary>Expand to see the deprecations</summary>
@@ -179,11 +179,11 @@ OSGi properties:
 
 ### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-The Java 11 runtime is now deprecated and most customers have been automatically upgraded to the more performant **Java 21 runtime**, for all their environments.
+The **Java 11 runtime** is now deprecated, and most environments have already been upgraded to the more performant **Java 21 runtime**.
 
-If your environment(s) could not be upgraded due to an unsupported dependency (see Java 21 [runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), Adobe will send an email with details specific to your scenario on how to resolve. All dependencies must be resolved by **August 28th, 2025** so your environments can be safely upgraded to the Java 21 runtime.
+If your environment couldn’t be upgraded due to unsupported dependencies (see [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), you should have received an email from Adobe with specific next steps. Please ensure all required updates are completed by **August 28, 2025**, so your environment can be upgraded without disruption.
 
-Note that the Java 21 runtime is independent of whether your code is built with Java 21 (recommended) or with an earlier version. Building with Java 11 is still supported, but a deprecation will be announced in the future.
+Note: The runtime version is separate from your code’s build version. While we recommend building with Java 21, Java 11 builds are still supported for now. A separate deprecation notice for Java 11 builds will be shared in the future.
 
 ### Enforcement of AEM's Java Logs Configuration Policy {#logconfig-policy}
 
