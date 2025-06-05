@@ -66,7 +66,7 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
 Cloud Manager now supports the addition of a new environment type called **Specialized Testing Environment**. The environment is designed to help teams validate features under near-production conditions before going live. This environment type is distinct from *Production + Stage*, *Development*, or *Rapid Development* environments and offers a focused space for running advanced validation scenarios. 
 
-See [Adding a Specialized Testing Environment](/help/implementing/cloud-manager/specialized-test-environment.md).
+See [Add a Specialized Testing Environment](/help/implementing/cloud-manager/specialized-test-environment.md).
 
 ![Add environment dialog box with Specialized Testing Environment radio button selected](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
 
