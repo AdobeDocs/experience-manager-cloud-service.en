@@ -3,8 +3,8 @@ title: Component & GraphQL Clear Cache
 description: Learn how to enable and verify the clear-cache feature in AEM CIF.
 feature: Commerce Integration Framework
 role: Admin
+exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
 ---
-
 # Component & GraphQL Clear Cache {#clear-cache}
 
 This document provides a comprehensive guide on enabling and verifying the clear-cache feature in AEM CIF.
