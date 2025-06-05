@@ -68,24 +68,6 @@ You can also select and share assets available in ![collections](/help/assets/as
 Enable the **[!UICONTROL Public Link]** toggle, select a **[!UICONTROL period of expiration]** and click **[!UICONTROL Generate Public Link]** to generate a link to share with public users. Public users, as guests, access the shared assets page without signing in to [!DNL Content Hub].
 ![private and public link](/help/assets/assets/public-and-private-link.png)
 
-<!--
-### Share assets with [!DNL Content Hub] users {#share-assets-with-content-hub-users}
-
-[!DNL Content Hub] users sign in to their [!DNL Content Hub] environment to access and download the shared assets. Execute the following steps to share one or more assets available in the **[!UICONTROL Share assets]** dialog box with [!DNL Content Hub] users:
-
-1. Click the dropdown in the **[!UICONTROL Period of expiration]** field and select a duration after which the recipient cannot access the selected assets. 
-1. Select **[!UICONTROL Generate share link]** to generate a link and copy it subsequently. 
-1. Share this link with your [!DNL Content Hub] users. See [Access the shared assets](#access-shared-assets) section to learn how they access, preview, and download the shared assets after signing in to their [!DNL Content Hub] environment.
-
-### Share assets with public users {#share-assets-with-public-users}
-
-Public users, as guests, access and download the shared assets without signing in to [!DNL Content Hub]. Execute the following steps to share one or more assets available in the **[!UICONTROL Share assets]** dialog box with public users:
-
-1. Enable the **[!UICONTROL Public Link]** toggle, click the dropdown in the **[!UICONTROL Period of expiration]** field and select a duration after which the recipient cannot access the selected assets. 
-1. Click **[!UICONTROL Generate public share link]** to generate a link and copy it subsequently.
-![generate public link share](/help/assets/assets/generate-public-link-share.png)
-1. Share this link with public users. See [Access the shared assets](#access-shared-assets) section to learn how a public user access, preview, and download the shared assets. -->
-
 ## Share an asset from its preview page {#share-asset-from-preview-page}
 
 Execute the following steps to share an asset while previewing it:
@@ -98,29 +80,13 @@ Execute the following steps to share an asset while previewing it:
 ## Access the shared assets {#access-shared-assets}
 
 Access the shared asets page through the link and do the following:
-<!--After receiving the link to shared assets, click the link, to access the page displaying the shared assets. If you access the page through signing-in to your [!DNL Content Hub] environment, it is a private link. If you access the shared assets page without a sign-in step then it is a public link.
 
-You can do the following on the shared assets page: -->
-
-* Select one or more assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to download them.
+* Select one or more assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to select the original, static or both renditions from the available options for download.
 * Click the asset thumbnail to see the asset's metadata. 
-![](/help/assets/assets/download-assets-shared-assets-page.png)
-Additionally, the shared assets page ([accessed through a private link](#share-assets)) displays the dynamic renditions of the assets and allows you to download the static, dynamic and smart crop renditions by selecting them from the **[!UICONTROL Download]** panel.     
-![](/help/assets/assets/download-renditions-shared-assets-page.png)
+![](/help/assets/assets/download-shared-assets.png)
+Additionally, on the shared assets page ([accessed through a private link](#share-assets)) click an asset thumbnail and select ![download](/help/assets/assets/download-icon.svg) to select and view the available dynamic renditions of the asset on the **[!UICONTROL Download]** panel before selecting and downloading them.
+![](/help/assets/assets/download-renditions-shared-assets-page.png)  
 
-<!--
-* Select ![download](/help/assets/assets/download-icon.svg) available on the asset card to download the asset.
-* Click the asset thumbnail to preview the asset and display the asset metadata in the **[!UICONTROL Asset details]** panel. Click ![download](/help/assets/assets/download-icon.svg) to display the asset's static renditions in the **[!UICONTROL Download]** panel. Select and download the renditions on the panel. -->
-
-<!--
-If you access the shared assets page through a private link, you can do the following:
-
-* Select one or more assets and click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** to download the selected assets from the **[!UICONTROL Download assets]** dialog box.
-* Click the asset thumbnail to preview the asset and display the asset metadata in the **[!UICONTROL Asset details]** panel. Select ![download](/help/assets/assets/download-icon.svg) to see the available asset renditions such as, the original, dynamic and smart crop renditions in the **[!UICONTROL Download]** panel. Select and download the renditions. See [view and manage renditions in Experience Manager Assets](/help/assets/renditions.md) article to view and manage renditions on this panel.  
-    ![download asset renditions](/help/assets/assets/private-link-download-assets-rendition.png)
-* Click ![download](/help/assets/assets/download-icon.svg) available on the asset card to display the asset renditions in the **[!UICONTROL Download assets]** dialog box. Select and download the renditions. See [view and manage renditions in Experience Manager Assets](/help/assets/renditions.md) article to view and manage renditions on this panel. 
-    ![download asset rendition from asset card](/help/assets/assets/download-assets-rendition-from-asset-card.png)
--->
 
 
 
