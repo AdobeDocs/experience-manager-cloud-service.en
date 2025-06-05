@@ -34,7 +34,7 @@ exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
     | Text field | Description |
     | - | --- |
     | Site Name | Enter the name of the Edge Delivery site that you are adding.<br>The name serves as a unique identifier for the site within Cloud Manager. |
-    | Repository URL | Enter the Git repository where your website's code is stored.<br>This field allows Cloud Manager to pull the code from that repository during the deployment process.  |
+    | Edge Delivery Origin | This value specifies the URL path to the content source for your site in Edge Delivery Services. It also links Cloud Manager to your live site.<br>The URL typically includes the *branch*, *project*, and *tenant*, as in the following example (for illustration purposes only):<br>`https://main--projectname--tenant.aem.live`  |
     | Site description (optional) | Enter a brief description of the Edge Delivery site that you are adding.<br>A description helps to identify and differentiate the site, making it easier to manage and recognize among other sites you have added. |
 
 1. In the lower-right corner of the dialog box, click **Add**.
