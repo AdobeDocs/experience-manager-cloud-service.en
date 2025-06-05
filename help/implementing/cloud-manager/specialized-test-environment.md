@@ -3,9 +3,8 @@ title: Add a Specialized Testing Environment
 description: Learn how Specialized Testing Environments in Cloud Manager provide a dedicated space to validate features under near-production conditions, ideal for stress testing and advanced pre-deployment checks.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Early Adopter" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" 
-
-
+badge: label="Early Adopter" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
 ---
 # Add a Specialized Testing Environment{#add-special-test-enviro}
 
@@ -69,4 +68,3 @@ To add or edit an environment, a user must be a member of the **Business Owner**
 1. Click **Save**.
 
    The **Overview** page now displays your new environment in the **Environments** card. You can now set up pipelines for your new environment.
-
