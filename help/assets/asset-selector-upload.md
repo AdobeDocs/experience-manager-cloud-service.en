@@ -1,6 +1,6 @@
 ---
-title: Asset Selector for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
-description: Use the Asset selector to search, find, and retrieve assets' metadata and renditions within your application.
+title: Upload assets in Asset Selector
+description: Upload assets in Asset Selector MFE using upload feature
 role: Admin,User
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
 ---

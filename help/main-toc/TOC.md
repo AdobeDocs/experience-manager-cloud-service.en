@@ -333,8 +333,11 @@ user-guide-title: AEM as a Cloud Service
         + [Important Considerations](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
         + [Using User Mapping Tool](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
   + Code Refactoring Tools {#refactoring-tools}
+    + [Getting Started with Refactoring Tools](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
+    + [Refactoring Tools Overview](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
     + [Unified Experience](/help/journey-migration/unified-experience.md)
     + [Repository Modernizer](/help/journey-migration/refactoring-tools/repo-modernizer.md)
+    + [Repository Modernizer (CAM)](/help/journey-migration/refactoring-tools/repo-modernizer-cam.md)
     + [Index Converter](/help/journey-migration/refactoring-tools/index-converter.md)
     + [Asset Workflow Migration](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
     + [AEM Dispatcher Converter](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
@@ -433,6 +436,8 @@ user-guide-title: AEM as a Cloud Service
       + [Delete Considerations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
       + [Analyzing Structure](/help/sites-cloud/administering/content-fragments/analysis.md)
       + [Assets in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+      + [Content Fragments with Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
+      + [Content Fragment AJO External References Extension](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
       + [Keyboard Shortcuts](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
     + Site Creation {#site-creation}
       + [Creating a New Site](/help/sites-cloud/administering/site-creation/create-site.md)
@@ -526,7 +531,7 @@ user-guide-title: AEM as a Cloud Service
     + [Manage publication](/help/assets/manage-publication.md)
     + [Preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
     + [Smart tags for images](/help/assets/smart-tags.md)
-    + [Smart tag your video assets](/help/assets/smart-tags-video-assets.md)
+    + [Smart tags for videos](/help/assets/smart-tags-for-videos.md)
     + [How to organize assets](/help/assets/organize-assets.md)
     + [Use [!DNL Adobe Stock] assets](/help/assets/aem-assets-adobe-stock.md)
     + [Manage collections](/help/assets/manage-collections.md)
@@ -1165,6 +1170,8 @@ user-guide-title: AEM as a Cloud Service
   + [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
   + [Generate Variations](/help/generative-ai/generate-variations.md)
   + [Assistant (Limited Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
+  + [AI Assistant for AEM Forms (Forms Experience Builder)(Early Adopter)](/help/edge/docs/forms/forms-ai-assistant.md)
+  + [AEM Forms AI Assistant - Prompt Library](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + Implementing {#implementing}
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
   + Use Cloud Manager {#using-cloud-manager}
