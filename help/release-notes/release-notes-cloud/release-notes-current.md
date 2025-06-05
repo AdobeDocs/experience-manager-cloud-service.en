@@ -212,8 +212,8 @@ Starting in **late August**, any unsupported custom logging overrides will be ig
 
 Please review and update any downstream processes that rely on custom logging behavior. For example:
 
-- If your log forwarding system expects a custom log format, you may need to adjust your ingestion rules.
-- If you've previously reduced log verbosity by changing log levels, please note that reverting to default levels may increase log volume.
+* If your log forwarding system expects a custom log format, you may need to adjust your ingestion rules.
+* If you've previously reduced log verbosity by changing log levels, please note that reverting to default levels may increase log volume.
 
 ### Default Purging of Older Versions and Audit Logs {#mt-defaults}
 
