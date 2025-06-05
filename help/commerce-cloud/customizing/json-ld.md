@@ -14,7 +14,7 @@ This guide explains how to enable and verify the JSON+LD feature in AEM CIF.
 By default, the **Enable JSON+LD** checkbox is not visible in the CIF configuration. To enable this feature, the project must include the necessary OSGi configuration, which allows the checkbox to be displayed. This configuration enables users to toggle JSON+LD script support on product pages.
 To make the **Enable JSON+LD** checkbox available in the CIF configuration, add the following OSGi configuration to your project: `
 com.adobe.cq.cif.components.models.JsonLdFeatureEnable`.
-For further details on adding this configuration, refer to the following commit: [Adds configuration for Json-Ld](https://github.com/adobe/aem-cif-guides-venia/commit/8ddec1b) in the public aem-cif-guides-venia repository.
+For further details on adding this configuration, refer to [Adds configuration for Json-Ld](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.cif.components.models.JsonLdFeatureEnable.cfg.json) in the public aem-cif-guides-venia repository.
 
 Once this configuration is added and deployed, the checkbox becomes visible in the CIF configuration settings and here are the steps to enable **JSON+LD**:
 
@@ -83,19 +83,22 @@ JSON+LD attributes can be mapped to GraphQL queries in AEM CIF, ensuring structu
 | JSON+LD Attribute| Magento GraphQL Attribute| Required (Y/N)|
 |---------------------------------|-------------------|---|
 | sku                             | sku               | N |
-| offers.url                      | Custom Logic      | Y |
+| offers.url                      | Custom Logic      | N |
 | offers.SpecialPricedate         | special_to_date   | N |
 | offers.sku                      | sku               | N |
+|offers.priceSpecification.priceCurrency | currency   | Y|
 | offers.priceSpecification.price | regular_price     | N |
-| offers.priceCurrency            | currency          | N |
-| offers.price                    | special_price     | N |
+| offers.priceCurrency            | currency          | Y |
+| offers.price                    | special_price     | Y |
 | offers.image                    | media_gallery.url | N |
-| offers.availability             | stock_status      | Y |
+| offers.availability             | stock_status      | N |
 | name                            | name              | Y |
-| image                           | media_gallery.url | N |
-| description                     | description       | Y |
+| image                           | media_gallery.url | Y |
+| description                     | description       | N |
 | aggregateRating.reviewCount     | review_count      | N |
 | aggregateRating.ratingValue     | rating_summary    | N |
-| @id                             | id                | Y |
+| @id                             | id                | N |
 
 This mapping ensures that the JSON+LD script is dynamically populated based on product data retrieved via GraphQL queries.
+
+To test your JSON+LD structure, you can use the [Rich Results Test - Google Search Console](https://search.google.com/test/rich-results/result?id=wtU3LVIEM8H7Aaf5qqK9qw). This tool provides detailed feedback, including whether the required attributes are present or missing, and helps ensure that your structured data is correctly implemented.
