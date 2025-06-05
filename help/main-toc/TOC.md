@@ -692,6 +692,7 @@ user-guide-title: AEM as a Cloud Service
     + [Approve assets for Content Hub](/help/assets/approve-assets-content-hub.md)
     + [Search assets in Content Hub](/help/assets/search-assets-content-hub.md)
     + [Asset properties](/help/assets/asset-properties-content-hub.md)
+    + [Attribute-based access control](/help/assets/attribute-based-access-control.md)
     + [Share assets in Content Hub](/help/assets/share-assets-content-hub.md)
     + [Download assets using Content Hub](/help/assets/download-assets-content-hub.md)
     + [Manage Licensed Assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
