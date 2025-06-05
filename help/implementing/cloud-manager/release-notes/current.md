@@ -55,7 +55,7 @@ The following early adopter opportunities are currently available:
 
 ### Manage Access Tokens{#manage-access-tokens}
 
-Use the **Manage Access Tokens** feature in Cloud Manager to view, rename, and delete access tokens associated with external Bring Your Own Git repositories, such as GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
+Use **Manage Access Tokens** in Cloud Manager to view, rename, and delete access tokens associated with external Bring Your Own Git repositories, such as GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
 
 See [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
 
