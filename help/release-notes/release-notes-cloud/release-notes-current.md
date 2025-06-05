@@ -227,7 +227,7 @@ However, to optimize repository performance, starting in **late June 2025**, pur
 
 For more details, see the [Maintenance Tasks article](/help/operations/maintenance.md#default).
 
-### Edge Computing (Alpha program) {#edge-computing}
+### Edge Computing (Alpha Program) {#edge-computing}
 
 Edge computing allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
 
