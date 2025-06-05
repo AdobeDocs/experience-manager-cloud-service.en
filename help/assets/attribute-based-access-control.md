@@ -2,6 +2,7 @@
 title: Attribute-based access control
 description: Learn how to enable Attribute-based access control to define metadata-based rules to define the level of access to assets available in Content Hub
 role: Admin
+exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
 ---
 # Attribute-based access control {#attribute-based-access-control}
 
@@ -78,13 +79,3 @@ This allows you to write simple and expressive rules, such as: ALLOW if region =
 * Capture the business intent of the rule in comment, regardless of whether the condition is correctly written, as the intent helps us validate and correct the logic, if required.
 
 * The license PDF files, which are set for DRM need to be visible to all, so that users are able to see them when they are downloading the asset with license.
-
-
-
-
-
-
-
-
-
- 
