@@ -185,15 +185,16 @@ If your environment couldn’t be upgraded due to unsupported dependencies (see 
 
 Note: The runtime version is separate from your code’s build version. While we recommend building with Java 21, Java 11 builds are still supported for now. A separate deprecation notice for Java 11 builds will be shared in the future.
 
-### Enforcement of AEM's Java Logs Configuration Policy {#logconfig-policy}
+### Enforcement of AEM Java Logs Configuration Policy {#logconfig-policy}
 
-As detailed in April release notes, to ensure effective monitoring of customer environments, AEM Java logs must maintain a consistent format and must not be overridden by custom configurations. Log output must remain directed to the default files. For AEM product code, default log levels must be preserved. However, it is acceptable to adjust log levels for customer-developed code. See details in the [Logging article](/help/implementing/developing/introduction/logging.md#configuration-loggers).
+As noted in the April release notes, AEM Java logs must follow a standard format to ensure reliable monitoring across all customer environments. Custom log configurations—such as changes to log formatting, output files, or default log levels—are no longer supported. Logs must remain directed to the default files, and default log levels for AEM product code must be preserved. See full details in the [Logging article](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Going forward, any of these custom overrides will be ignored for customers, who based on our analysis will not be impacted. Adobe will reach out to those who our analysis suggests may be relying on overrides and thus may be impacted; custom configuration will be ignored in **early September** for these customers.
+Starting in **late August**, any unsupported custom logging overrides will be ignored. Based on our analysis, most customers will not be impacted and Adobe will directly contact any customers whose current configuration may be affected.
 
-Please review and adjust your downstream processes accordingly. For example, if you use the log forwarding feature:
-* If your logging destination expects a custom (non-default) log format, you may need to update your ingestion rules.
-* If changes to log levels reduced log verbosity, be aware that the default log levels may result in a significant increase in log volume.
+Please review and update any downstream processes that rely on custom logging behavior. For example:
+
+- If your log forwarding system expects a custom log format, you may need to adjust your ingestion rules.
+- If you've previously reduced log verbosity by changing log levels, please note that reverting to default levels may increase log volume.
 
 ### Default Purging of Older Versions and Audit Logs {#mt-defaults}
 
@@ -257,9 +258,9 @@ Now in a beta, deploy a config pipeline for features including CDN origin select
 
 ### AEM Log-Forwarding to More Destinations (Beta Program) {#log-forwarding-beta}
 
-Now in beta, you can forward AEM logs to Amazon S3, Sumo Logic, Dynatrace, and your own New Relic account (not the Adobe-provided account). Note that AEM logs (including Apache/Dispatcher) are supported for these logging destination, but not CDN logs. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) for access.
-
 While logs can be downloaded from Cloud Manager, many organizations find it beneficial to stream those logs to a preferred logging destination. AEM already supports AEM and CDN log forwarding to Azure Blob Storage, Datadog, HTTPS, Elasticsearch (and OpenSearch), and Splunk. This feature is configured in a self-serve manner, and deployed using the Config Pipeline.
+
+Now in beta, you can forward AEM logs to Amazon S3, Sumo Logic, Dynatrace, and your own New Relic account (not the Adobe-provided account). Note that AEM logs (including Apache/Dispatcher) are supported for these logging destinations, but not CDN logs. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) for access.
 
 Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md).
 
