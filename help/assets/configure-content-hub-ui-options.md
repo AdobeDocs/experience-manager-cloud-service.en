@@ -107,6 +107,10 @@ As an administrator, manage the following configuration options for your users:
 
 * [Custom Links](#configure-custom-links-content-hub)
 
+* [Collections governance](#configure-collections-content-hub)
+
+* [Enable public link sharing](#enable-public-link-sharing)
+
 ### Import {#configure-import-options-content-hub}
 
 You can configure the metadata fields that display to the users while uploading or importing assets to the Content Hub portal, such as Campaign Name, Keywords, Channels, Timeframe, Region, and so on. To do so, execute the following steps:
@@ -302,3 +306,29 @@ Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), ava
    The custom link display as a new tab next to Insights tab on the Content Hub home page.
 
    ![Configuration UI Custom Links tabs on Content Hub](assets/configuration-ui-custom-link-tab.png)
+
+### Collections governance {#configure-collections-content-hub}
+
+Administrators can define user permissions while creating collections. To enable these settings, follow these steps:
+
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Collections and sharing]**.
+
+1. Enable  the **[!UICONTROL Read Only Collections]** toggle to allow collections that are accessible to everyone but editable only by the creator and administrator.
+
+1. Enable the **[!UICONTROL Public Collections]** toggle to allow collections that are both accessible and editable by everyone.
+
+1. Click **[!UICONTROL Save]** to apply the changes. 
+
+    ![Configuration Collections tab on Content Hub](assets/configuration-collections-tab.png)
+
+### Enable public link sharing {#enable-public-link-sharing}
+
+Enable the following setting on the Configurations user interface to allow Content Hub users to generate a public link:
+
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Collections and Sharing]**.
+
+1. Enable the **[!UICONTROL Enable Public Link]** toggle and click **[!UICONTROL Save]** to apply the changes.
+
+    ![Enable public link sharing in Content Hub](assets/enable-public-link-sharing-tab.png)
+
+Learn more about [sharing assets in the [!DNL Content Hub]](share-assets-content-hub.md).
