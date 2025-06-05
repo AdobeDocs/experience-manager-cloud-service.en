@@ -22,7 +22,8 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.4.0) is April 24, 2025. The next feature release (2025.5.0) is planned for June 5, 2025.
+
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.5.0) is June 5, 2025. The next feature release (2025.6.0) is planned for June 26, 2025.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -38,48 +39,76 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 -->
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### New features in Experience Manager Sites {#enhancements-sites}
-
-**New Content Fragment Model Admin UI**
-
-Further completing the list of new client-side user interfaces when working with AEM Content Fragments, a new admin UI is now available for content fragment models. The new UI provides a clean and modern list view that allows searching models with filters, and that shows model tags and which content fragments exist that are based on a certain model. Documentation can be found [here](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md). 
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Dynamic Media (Scene7) {#dynamic-media-scene7}
+**AI-Generated metadata**
 
-**Dynamic Media (Scene7) not supported in Enhanced Security environments**
+AEM Assets now uses [AI to automatically generate metadata, including Title, Description, and Keywords](/help/assets/metadata-assets-view.md#ai-smart-tags). These AI-generated fields enhance metadata accuracy, making the assets easier to search, categorize, and recommend. This approach not only improves efficiency by eliminating manual tagging but also ensures consistency and scalability across large volumes of digital content.
 
-Dynamic Media (Scene7) on AEM as a Cloud Service is not HIPAA-ready and cannot be used in AEM environments where Enhanced Security is enabled.
+![AI generated metadata](/help/assets/assets/enhanced-smart-tags.png)
 
-Starting with the April 2025 AEM as a Cloud Service release, a technical restriction prevents Dynamic Media (Scene7) from being configured in environments with Enhanced Security. As a result, the **Dynamic Media Configuration** card under **Tools** > **Cloud Services** is no longer visible in these environments.
+**Integration with Figma**
 
-Additionally, customers using AEM 6.5 should be aware that the Dynamic Media (Scene7) stack is not HIPAA-ready.
+AEM Assets integrates natively with Figma, which allows designers to directly access the assets stored in AEM Assets from within the Figma User Interface. You can place content managed in AEM Assets in the Figma canvas and then save new or edited content in AEM Assets repository.
 
-### Dynamic Media Classic {#dynamic-media-classic}
-
-**Reporting**
-
-The Bandwidth tab in the Dynamic Media Classic reporting dashboard is no longer supported as of April 2025. 
-
-See [Bandwidth and Storage, Types of reports](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports). 
+![Integration with Figma](/help/assets/assets/figma-integration.png)
 
 
-## New features in Assets View {#new-features-assets-view}
+### New Features in Content Hub {#new-features-content-hub}
 
-**Asset relations**
+**Attribute-based Access Control (ABAC)**
 
-The Assets View now supports viewing and editing asset relations in a simplified asset Details panel. Easily add relationships like Source and Derivative to content so that users can more effectively find relevant hero content.
+Content Hub now allows you to apply rule-based restrictions to access assets. Asset permissions ensure governance and also makes sure that only the relevant assets are accessible to users.
 
-![Assets relation example](/help/assets/assets/asset-relations-example.png)
+The asset restriction rules are based on metadata and if the conditions defined in the rule match the asset metadata, the asset gets displayed to the user groups.
 
-**Compare versions of an asset**
+Some of the key benefits of Attribute-based Access Control include:
 
-You can now quickly select and compare any version of an asset with its latest version using the Assets view.
+* Eliminates the dependency on folder structure for permissions
 
-![compare versions of asset](/help/assets/assets/version-compare2.png)
+* Allows administrators to upload assets and retroactively determine permission structures
+
+* Reduces number of duplicates - improves asset integrity. Duplicates are needed in folder based permissions when same assets are shared with different groups.
+
+**UI Branding**
+
+Content Hub now allows administrators to customize the user interface with brand-specific elements, including banner images, banner titles and body text, as well as primary and secondary colors. These enhancements help ensure brand consistency, simplify user onboarding, and build trust.
+
+![UI Branding](/help/assets/assets/content-hub-ui-branding.png)
+
+**Public link sharing**
+
+Content Hub now supports generating shareable links to allow external users, without application access, to view asset metadata or download assets.
+
+![UI Branding](/help/assets/assets/public-and-private-link.png)
+
+**Collections governance**
+
+Content Hub now lets you control access to collections during creation, ensuring only authorized users can view or manage grouped assets. It ensures improved security, better collaboration, organized asset management, and simplified governance.
+
+![Collections governance](/help/assets/assets/collection-permissions.png)
+
+>[!NOTE]
+>
+>Collections governance is a limited availability feature. You can get it enabled  by creating a support ticket.
+
+**Download multiple assets as a ZIP**
+
+Content Hub now also allows you to download the selected assets and their renditions in a ZIP file and not as separate files simplifying file management for you.
+
+**Dynamic Media renditions in Content Hub**
+
+Access all your Dynamic Media preset renditions and smart-crops for download, directly from within the Content Hub User Interface.
+
+​![Dynamic Media renditions](/help/assets/assets/dm-renditions-content-hub.png)
+
+### New Features in Dynamic Media {#new-features-dynamic-media}
+
+**Dynamic Media native integration with AJO B2C​**
+
+Native integration of Experience Manager (AEM) Dynamic Media with Journey Optimizer (AJO) B2C, enabling marketers to easily embed AEM Dynamic Media assets (rendition and DM Template) into AJO content and deliver real-time updates and hyper-personalized experiences across channels.
+
+​![Dynamic Media renditions](/help/assets/assets/dm-ajo-integration.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -105,94 +134,126 @@ This release notes lists the innovations delivered in the current release. For t
 
 Integration capabilities between Forms and AEP are now available for early adopters.
 
-## CIF Add-on {#cloud-services-cif}
-
-### Enhancements {#enhancements-cif}
-
-* Adding product variant selection for CIF product reference data type
-* [Experimental]: JSON+LD in CIF Core Components in PDPs
-* [Experimental]: CIF ability to clear cache
-
-### Bug fixes {#bug-fixes-cif}
-
-* Fix search issue in product field
-* Product url format not working as expected for #variant_sku
-* Unable to Add More Than 20 SKUs to Product List Component
-
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### OpenAPI-based APIs {#open-apis}
+###  Updated Deprecation Process {#updated-deprecation-process}
 
-Developers can deeply integrate AEM as Cloud Service features into their own applications and tools. New AEM as a Cloud Service APIs follow the OpenAPI specification, with a goal of being consistent, well-documented, and user-friendly. Credentials for endpoints requiring authentication are generated by creating Adobe Developer Console projects and support OAuth Server-to-Server, Web App, and Single Page App (SPA).
+Adobe regularly reviews features, libraries, APIs, and configurations to ensure they meet standards for performance, security, and value. When capabilities no longer meet these standards, they are marked for deprecation and usage must stop by a specified removal date. Leading up to this date, Adobe will remind customers with email notifications, and actions that need to be taken in Cloud Manager before proceeding with or deploying new builds. Failure to take the necessary action may result in an inability to upgrade to new versions of AEM leading to potential impacts around security, performance, reliability, and availability.
 
-[See the full list](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) of OpenAPI-based APIs, [learn more](/help/implementing/developing/open-api-based-apis.md), and try out an [end-to-end tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) illustrating configuration and usage.
+See the [deprecation article](/help/release-notes/deprecated-removed-features.md) for further information.
 
-Watch this video to learn how to configure an authenticated API for later usage:
+#### Deprecated Java APIs and OSGi configuration nearing removal dates {#deprecated-near-removals}
 
->[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
+Expand the list below to view the deprecated APIs and OSGi configurations that must no longer be used. For full details—including removal timelines—refer to the deprecation article.
 
-### Domain Mapping-related Enhancements {#cdn-enhancements}
+<details>
+  <summary>Expand to see the deprecations</summary>
 
-The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). Here are a few recent features:
+Java APIs:
+* `org.apache.sling.commons.auth`
+* `org.apache.felix.webconsole`
+* `org.eclipse.jetty`
+* `com.mongodb`
+* `org.apache.abdera`
+* `org.apache.felix.http.whiteboard`
+* `org.apache.cocoon.xml`
+* `ch.qos.logback`
+* `org.slf4j.spi`
+* `org.slf4j.event`
+* `org.apache.log4j`
+* `com.google.common`
+* `com.drew`
+* `org.bson`
+* `org.apache.jackrabbit.oak.plugins.blob`
+* `org.apache.jackrabbit.oak.plugins.memory`
 
-#### Include Additional Properties in CDN Logs {#props-in-cdnlogs}
+OSGi properties:
 
-Useful for scenarios including debugging and data analysis, you can include more information in your CDN logs beyond the default properties by setting the `logProperty` action in [request and response transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations).
+* `org.apache.sling.commons.log.LogManager` (all properties)
+* `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
+ 
+</details>
 
-#### Region, Continent, and Organization Properties as Matching Conditions {#matching-conditions}
+### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-CDN rules can now match based on region, continent, and organization for use cases including blocking traffic and redirects. `clientRegion` and `clientContinent` augment the already-supported `clientCountry` to match based on geography, while `clientAsName` and `clientAsNumber` match Autonomous Systems to identify large ISPs, companies, or cloud providers. Learn more about these [newly exposed request properties](/help/security/traffic-filter-rules-including-waf.md#condition-structure).
+The **Java 11 runtime** is now deprecated, and most environments have already been upgraded to the more performant **Java 21 runtime**.
 
-#### Set Cookie Value {#cookie-attributes}
+If your environment couldn't be upgraded due to unsupported dependencies (see [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), you should have received an email from Adobe with specific next steps. Please ensure all required updates are completed by **August 28, 2025**, so your environment can be upgraded without disruption.
 
-You can set cookie attributes in [response tranformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations).
+Note: The runtime version is separate from your code's build version. While we recommend building with Java 21, Java 11 builds are still supported for now. A separate deprecation notice for Java 11 builds will be shared in the future.
 
-### Java 21 Support {#java21}
+### Enforcement of AEM Java Logs Configuration Policy {#logconfig-policy}
 
-As of the January release, you can build code with Java 21 and Java 17. You gain access to new features like pattern matching, sealed classes, and various performance improvements. For configuration steps, including updating your Maven project and library versions, see the [Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) article.
+As noted in the April release notes, AEM Java logs must follow a standard format to ensure reliable monitoring across all customer environments. Custom log configurations—such as changes to log formatting, output files, or default log levels—are no longer supported. Logs must remain directed to the default files, and default log levels for AEM product code must be preserved. See full details in the [Logging article](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-The more performant Java 21 **runtime** is automatically deployed when a Java 17 or 21 build is detected. However, Adobe also recommends opting into the Java 21 runtime for environments built with Java 11, by emailing [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Learn about [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
+Starting in **late August**, any unsupported custom logging overrides will be ignored. Based on our analysis, most customers will not be impacted and Adobe will directly contact any customers whose current configuration may be affected.
 
->[!IMPORTANT] 
->
-> The Java 21 **runtime** was deployed to your dev/RDE environments in February; it will be applied to your stage/production environments on **April 28 and 29**. Note that **building code** with Java 21 (or Java 17) is independent of the Java 21 runtime -- you must explicitly take steps to build code with Java 21 (or Java 17).
+Please review and update any downstream processes that rely on custom logging behavior. For example:
 
-### Enforcement of AEM's Logging Configuration Policy {#logconfig-policy}
+* If your log forwarding system expects a custom log format, you may need to adjust your ingestion rules.
+* If you've previously reduced log verbosity by changing log levels, please note that reverting to default levels may increase log volume.
 
-To ensure effective monitoring of customer environments, AEM Java logs must maintain a consistent format and should not be overridden by custom configurations. Log output must remain directed to the default files. For AEM product code, default log levels must be preserved. However, it is acceptable to adjust log levels for customer-developed code.
+### Default Purging of Older Versions and Audit Logs {#mt-defaults}
 
-To that end, changes should not be made to the following OSGi properties:
-* **Apache Sling Log Configuration** (PID: `org.apache.sling.commons.log.LogManager`) — *all properties*
-* **Apache Sling Logging Logger Configuration** (Factory PID: `org.apache.sling.commons.log.LogManager.factory.config`):
-  * `org.apache.sling.commons.log.file`
-  * `org.apache.sling.commons.log.pattern`
+Currently, content versions and audit logs have their associated *purge maintenance tasks* disabled by default and thus no data is removed unless explicitly configured via their respective OSGi properties. 
 
-In mid-May, AEM will enforce a policy where any custom modifications to these properties will be ignored. Please review and adjust your downstream processes accordingly. For example, if you use the log forwarding feature:
-* If your logging destination expects a custom (non-default) log format, you may need to update your ingestion rules.
-* If changes to log levels reduced log verbosity, be aware that the default log levels may result in a significant increase in log volume.
+However, to optimize repository performance, starting in **late June 2025**, purging will be enabled by default, following these guidelines:
 
-### AEM Log-Forwarding to More Destinations - Beta Program {#log-forwarding-earlyadopter}
+#### Content Versions {#mt-content}
 
-Now in beta, you can forward AEM logs to New Relic (using HTTPS), Amazon S3, and Sumo Logic. Note that AEM logs (including Apache/Dispatcher) are supported, but not CDN logs. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) for access.
+* **New environments** (created after an upcoming date (to be communicated later)
+  * Versions older than **30 days** will periodically be deleted.
+  * The most recent five versions within the last 30 days are retained, along with the most recent version and the current version, regardless of their age.
 
-While logs can be downloaded from Cloud Manager, many organizations find it beneficial to stream those logs to a preferred logging destination. AEM already supports (GA) AEM and CDN log forwarding to Azure Blob Storage, Datadog, HTTPS, Elasticsearch (and OpenSearch), and Splunk. This feature is configured in a self-serve manner, and deployed using the Config Pipeline.
+* **Existing environments** (created before this upcoming date):
+  * Versions older than **7 years** will periodically be deleted.
+  * All versions within the past 7 years are retained.
+  * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
+
+* You may modify these defaults through OSGi configuration overrides.
+
+#### Audit Log {#mt-auditlogs}
+
+* **New environments** (created after an upcoming date, which will be communicated separately):
+  * Replication, DAM, and page audit logs older than **7 days** will periodically be deleted.
+  * All events are logged by default.
+
+* **Existing environments** (created before this upcoming date):
+  * Replication, DAM, and page audit logs older than **7 years** will periodically be deleted.
+  * All events are logged by default.
+  * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
+
+* You may modify these defaults through OSGi configuration overrides.
+
+For more details, see the [Maintenance Tasks article](/help/operations/maintenance.md#default).
+
+### Edge Computing (Alpha Program) {#edge-computing}
+
+Edge computing allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
+
+Common use cases include:
+
+* Authenticating users with an identity provider before granting access to content
+* Personalizing content based on geolocation, device type, or user attributes
+* Acting as middleware between the CDN and your origin
+* Reformatting responses from third-party APIs (and perhaps aggegating multiple APIs responses) before delivering them to the browser
+* Composing and serving server-rendered HTML at the edge using content stitched from various backends
+
+We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
+
+### CDN configuraton for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
+
+The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
+
+Now in a beta, deploy a config pipeline for features including CDN origin selectors, response and request transformations, and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
+
+### AEM Log-Forwarding to More Destinations (Beta Program) {#log-forwarding-beta}
+
+While logs can be downloaded from Cloud Manager, many organizations find it beneficial to stream those logs to a preferred logging destination. AEM already supports AEM and CDN log forwarding to Azure Blob Storage, Datadog, HTTPS, Elasticsearch (and OpenSearch), and Splunk. This feature is configured in a self-serve manner, and deployed using the Config Pipeline.
+
+Now in beta, you can forward AEM logs to Amazon S3, Sumo Logic, and your own New Relic account (not the Adobe-provided account). Note that AEM logs (including Apache/Dispatcher) are supported for these logging destinations, but not CDN logs. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) for access.
 
 Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md).
-
-### Edge Computing - Request for Feedback! {#edge-computing-feedback}
-
-Edge computing brings data processing closer to the browser, which has benefits including reduced latency. Adobe would like to hear if you find this technology useful for AEM Publish Delivery and Edge Delivery Services projects. Additionally, let us know what you envision using it for as input into the product roadmap. 
-
-Some possible use cases:
-
-* Authentication with an IdP to gate access to content
-* Personalization by rendering dynamic content based on geolocation, device type, user attributes, etc.
-* Advanced image manipulation 
-* Middleware between the CDN and an origin
-* A layer between the browser and a third-party API, perhaps to reformat the API response
-* Aggregating data from multiple origins to make it easier for the client browser to render it
-
-Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with questions and comments!
 
 ## [!DNL Experience Manager] Guides {#guides}
 
