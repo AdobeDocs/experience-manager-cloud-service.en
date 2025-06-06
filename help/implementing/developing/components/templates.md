@@ -219,7 +219,7 @@ To create a folder, you can either do this:
 
 >[!NOTE]
 >
->In the [Configuration Browser,](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) you can edit the global folder and activate the **Editable Templates** option if you want to create templates within this folder, however this is not recommended best practice.
+>In the [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser), you can edit the global folder and activate the **Editable Templates** option if you want to create templates within this folder, however this is not recommended best practice.
 
 ### ACLs and Groups {#acls-and-groups}
 
@@ -461,7 +461,7 @@ Defines the initial content that a new page will have upon creation:
 
 ### Layout {#layout}
 
-When [editing a template you can define the layout](/help/sites-cloud/authoring/page-editor/templates.md), this uses [standard responsive layout,](/help/sites-cloud/administering/responsive-layout.md) which can be [configured on the page by the content author.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+When [editing a template you can define the layout](/help/sites-cloud/authoring/page-editor/templates.md), this uses [standard responsive layout](/help/sites-cloud/administering/responsive-layout.md), which can be [configured on the page by the content author](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
 
 ### Content Policies {#content-policies}
 

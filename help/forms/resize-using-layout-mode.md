@@ -8,7 +8,9 @@ exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
 ---
 # Use Layout mode to resize components for Adaptive Forms {#use-layout-mode-to-resize-components}
 
-<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+>[!NOTE]
+>
+> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components.
 
 | Version | Article link |
 | -------- | ---------------------------- |
@@ -119,7 +121,7 @@ You can disable the Layout mode for forms with old responsive layout by editing 
 Perform the following steps to disable the Layout mode:
 
 1. Select **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Templates]** and open the template used in the form in **[!UICONTROL Edit]** mode.
-1. Select the Form Container in the left pane and select **[!UICONTROL Policy.]**
+1. Select the Form Container in the left pane and select **[!UICONTROL Policy]**.
 
    ![Disable Layout mode](assets/policy_disable_layout_mode.png)
 

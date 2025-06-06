@@ -66,7 +66,7 @@ You receive a message that the project was created.
 
 >[!NOTE]
 >
->It is assumed that the necessary language structure for the translations languages has already been created as part of the [definition of your content structure.](getting-started.md#content-structure) This should be done in collaboration with the content architect.
+>It is assumed that the necessary language structure for the translations languages has already been created as part of the [definition of your content structure](getting-started.md#content-structure). This should be done in collaboration with the content architect.
 >
 >If the language folders are not created ahead of time, you will not be able to create language copies as described in the previous steps.
 
@@ -181,7 +181,7 @@ To add content to a translation job:
 >
 >The path browser is a powerful tool allowing you to search, filter, and navigate your content. Select the **Content Only/Filters** button to toggle the side panel and reveal advanced filters such as **Modified Date** or **Translation Status**.
 >
->You can learn more about the path browser in the [additional resources section.](#additional-resources)
+>You can learn more about the path browser in the [additional resources section](#additional-resources).
 
 You can use the prior steps to add the necessary content to all languages (jobs) for the project. After you have selected all the content, you can start the translation.
 
@@ -199,7 +199,7 @@ Machine translations automatically return with a state of **Approved**. Human tr
 
 ## Reviewing Translated Content {#reviewing}
 
-[As previously seen,](#using-translation-project) machine translated content flows back into AEM with the status of **Approved** since the assumption is that because machine translation is being used, no human intervention is required. However it is still possible to review the translated content.
+[As previously seen](#using-translation-project), machine translated content flows back into AEM with the status of **Approved** since the assumption is that because machine translation is being used, no human intervention is required. However it is still possible to review the translated content.
 
 Simply go to the completed translation job and select a line item by tapping or clicking the checkbox. The icon **Reveal in Content Fragment** is shown in the tool bar.
 
@@ -243,7 +243,7 @@ Build on this knowledge and continue your AEM headless translation journey by ne
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the headless translation journey by reviewing the document [Publish translated content,](publish-content.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
+While it is recommended that you move on to the next part of the headless translation journey by reviewing the document [Publish translated content](publish-content.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
 * [Managing Translation Projects](/help/sites-cloud/administering/translation/managing-projects.md) - Learn the details of translation projects and additional features such as human translation workflows and multi-language projects.
 * [Authoring Environment and Tools](/help/sites-cloud/authoring/path-selection.md#path-selection) - AEM provides various mechanisms for organizing and editing your content including a robust path browser.

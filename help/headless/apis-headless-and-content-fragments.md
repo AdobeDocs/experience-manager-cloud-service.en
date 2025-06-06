@@ -5,11 +5,12 @@ feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
 ---
+
 # AEM APIs for Structured Content Delivery and Management {#aem-apis-structured-content-delivery-and-management}
 
 Adobe Experience Manager (AEM) as a Cloud Service offers multiple APIs for both structured content delivery from Content Fragments and Content Fragment management. See the individual pages for further details of the specific APIs.
 
-* [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-rest-openapi-content-fragment-delivery.md )
+* [AEM Content Fragment Delivery with OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)
   * This API creates JSON responses for delivering structured content from Content Fragments in AEM. 
   * It uses a path to a content fragment as endpoint. 
   * This API is REST based.
@@ -20,28 +21,11 @@ Adobe Experience Manager (AEM) as a Cloud Service offers multiple APIs for both 
 * [Content Fragments and Content Fragment Models OpenAPIs](/help/headless/content-fragment-openapis.md)
   * These APIs are intended for structured content management. 
   * Respective GET operators are not optimized for content delivery.
-  * This API is REST based. 
-* [Content Fragments Support in the AEM Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)
-  * The original API for the JSON output for structured content delivery in AEM.  
-    * While robust and proven, this API does not deliver *fully hydrated* JSON output. References are only output as paths, requiring secondary API requests for retrieving further content.
-  * The Assets HTTP API can also be used for managing the Content Fragments and Content Fragment Models (CRUD).
   * This API is REST based.
-  * Content Fragment Support in Assets HTTP API will be deprecated in the future as it is being succeeded by the Edge Delivery Services JSON REST API. The timescale has not been decided yet.
 
-<!--
-## JSON vs HTML {#json-vs-HTML}
-
-The content delivery format used is driven by frontend implementation. Unstructured content/HTML for full-stack implementations, structured content/JSON for headless implementations, or a combination of both in hybrid implementations. 
-
-Key considerations include:
-
-* Definition
-  * JSON (JavaScript Object Notation) - used to represent, access and process structured data. 
-  * HTML (HyperText Markup Language) - a markup language of tags and elements in a hierarchical structure.
-* Primary Purpose
-  * JSON is often used for transferring structure content between the server and client app.
-  * HTML is the standard markup language for creating and rendering web pages in a browser.
--->
+>[!NOTE]
+>
+>[Content Fragment Support in Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) is now [deprecated](/help/release-notes/deprecated-removed-features.md). It has been replaced by [Content Fragment Delivery with OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md) together with [Content Fragments and Content Fragment Models Management OpenAPIs](/help/headless/content-fragment-openapis.md).
 
 ## REST vs GraphQL {#rest-vs-graphql}
 

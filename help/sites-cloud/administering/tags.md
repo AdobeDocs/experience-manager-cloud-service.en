@@ -69,8 +69,8 @@ To access the tagging console:
 There are several steps to create and use tags to organize your content.
 
 1. [Create a namespace for your tags](#creating-namespaces) (or choose an existing one to reuse).
-1. [Create a new tag.](#creating-tags)
-1. [Publish the tag.](#publishing-tags)
+1. [Create a new tag](#creating-tags).
+1. [Publish the tag](#publishing-tags).
 
 ### Creating Namespaces {#creating-namespaces}
 
@@ -90,7 +90,7 @@ A namespace is used to organize other tags. It can be thought of as the lowest-l
 
 The namespace is created. In the tagging console the namespaces are at the lowest level (at the far left column in the console) and are represented by folder icons, reflecting their nature as a "container" or grouping of other tags.
 
-You can now [create new tags](#creating-tags) in this namespace or [manage existing tags.](#managing-tags)
+You can now [create new tags](#creating-tags) in this namespace or [manage existing tags](#managing-tags).
 
 A namespace need not contain any sub-tags. Because a namespace is itself a tag, it can be used to organize your content as any other tag. However, to continue creating a structured tagging taxonomy, you can [create sub-tags](#creating-tags) within that namespace based on your project requirements.
 
@@ -98,7 +98,7 @@ A namespace need not contain any sub-tags. Because a namespace is itself a tag, 
 
 Tags are generally added to namespaces.
 
-1. To create a tag, open the [tagging console.](#tagging-console)
+1. To create a tag, open the [tagging console](#tagging-console).
 
 1. Select the namespace where you want to create the tag. Or select another tag to create a sub-tag below it.
 
@@ -126,7 +126,7 @@ Tags allow for the flexible creation of your own taxonomy based on your organiza
 
 Just as with creating any other content in AEM, after you have created a tag (or namespace), it only exists in the authoring environment. For your tags to be available to your users, you must publish the tags.
 
-1. To publish a tag, open the [tagging console.](#tagging-console)
+1. To publish a tag, open the [tagging console](#tagging-console).
 
 1. Select the tag or tags you want to publish and in the toolbar, select **Publish**.
 
@@ -170,7 +170,7 @@ When a single tag or namespace or other tag is selected in the tagging console, 
 
 You can view more details about the tag including who last published it and when by switching the console to the **Properties** view.
 
-1. To view the properties of a tag, open the [tagging console.](#tagging-console)
+1. To view the properties of a tag, open the [tagging console](#tagging-console).
 
 1. Select the tag whose properties you want to view and in the left rail select **Properties**.
 
@@ -186,7 +186,7 @@ For more details on selecting viewing modes and the rail, see [Basic Handling](/
 
 Tags and namespaces can be edited after creation.
 
-1. To edit a tag, open the [tagging console.](#tagging-console)
+1. To edit a tag, open the [tagging console](#tagging-console).
 
 1. Select the tag you want to edit and in the toolbar, select **Edit**.
 
@@ -200,13 +200,13 @@ Tags and namespaces can be edited after creation.
 
 For details about adding language translations, see the section on [Managing Tags in Different Languages](#managing-tags-in-different-languages).
 
-If the changes you made were to an already published tag, you may want to [republish it.](#publishing-tags)
+If the changes you made were to an already published tag, you may want to [republish it](#publishing-tags).
 
 ### Unpublishing Tags {#unpublishing-tags}
 
 To deactivate tag on your author instance and remove it from your publish instance, you can unpublish it. 
 
-1. To unpublish a tag, open the [tagging console.](#tagging-console)
+1. To unpublish a tag, open the [tagging console](#tagging-console).
 
 1. Select the tag or tags you want to unpublish and in the toolbar, select **Unpublish**.
 
@@ -226,7 +226,7 @@ The selected tag(s) are queued for unpublication. If the selected tag is a conta
 
 It can be useful to see to which content a particular tag is applied. You can do this by using the **References** view in the tagging console.
 
-1. To view the references of a tag, open the [tagging console.](#tagging-console)
+1. To view the references of a tag, open the [tagging console](#tagging-console).
 
 1. Select the tag whose references you want to view and in the left rail select **References**.
 
@@ -252,7 +252,7 @@ It can be necessary to clean up or otherwise reorganize your tagging taxonomy by
 >
 >It is best practice that only administrators be permitted to move and rename tags.
 
-1. To move or rename a tag, open the [tagging console.](#tagging-console)
+1. To move or rename a tag, open the [tagging console](#tagging-console).
 
 1. Select the tag that you want to move or rename and select **Move** in the toolbar.
 
@@ -275,7 +275,7 @@ The tag is renamed and/or moved to its new location. When the selected tag is a 
 
 If your tagging taxonomy has duplicates or tags that are similar, it can be useful to merge those tags. When tag `A` is merged into tag `B`, all the pages tagged with tag `A` become tagged with tag `B` and tag `A` is no longer available to authors.
 
-1. To merge two tags, open the [tagging console.](#tagging-console)
+1. To merge two tags, open the [tagging console](#tagging-console).
 
 1. Select the tag that you want to merge into another tag and then select **Merge** in the toolbar.
 
@@ -291,7 +291,7 @@ The tag selected in the console is merged into the tag specified in the dialog. 
 
 If your tagging taxonomy changes and makes a tag or namespace unnecessary, it can be deleted.
 
-1. To delete a tag, open the [tagging console.](#tagging-console)
+1. To delete a tag, open the [tagging console](#tagging-console).
 
 1. Select the tag that you want to delete and then select **Delete** in the toolbar.
 
@@ -352,7 +352,7 @@ The `title` property of a tag may be translated into multiple languages. Once tr
 
 Let's assume that we have a tag called `Animals` that we want to translate into German and French.
 
-1. Open the [tagging console.](#tagging-console)
+1. Open the [tagging console](#tagging-console).
 
 1. Select the tag that you want to translate and then select **Edit** in the toolbar.
 

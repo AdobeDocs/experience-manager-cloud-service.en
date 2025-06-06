@@ -7,7 +7,7 @@ role: Admin, User, Developer
 ---
 # Onboarding Preparation {#onboarding-preparation}
 
-Now that you know what is in store for you in the onboarding process by having read the article [AEM as a Cloud Service Onboarding Journey Introduction,](overview.md) you are likely ready to jump in. However, before the onboarding process begins, there are a number or preparatory steps that the system administrator must understand before logging into the system.
+Now that you know what is in store for you in the onboarding process by having read the article [AEM as a Cloud Service Onboarding Journey Introduction](overview.md), you are likely ready to jump in. However, before the onboarding process begins, there are a number or preparatory steps that the system administrator must understand before logging into the system.
 
 ## Objective {#objective}
 

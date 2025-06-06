@@ -9,9 +9,9 @@ exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
 
 Learn how to manage Edge Delivery sites in Cloud Manager by adding a CDN configuration to an existing site. Or, delete an Edge Delivery site.
 
-## Add a CDN configuration to an existing Edge Delivery site {#add-cdn-to-edge-delivery-site}
+## Add a Domain Mapping to an existing Edge Delivery site {#add-cdn-to-edge-delivery-site}
 
-See [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md).
+See [Add a Domain Mapping](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md).
 
 ## Rename an Edge Delivery Site (#rename-edge-delivery-site)
 
@@ -47,14 +47,119 @@ If you delete an Edge Delivery Services site, any associated CDN configurations 
 1. Do either one of the following:
 
     * From the **Program Overview** page, click the **Edge Delivery** tab. In the Edge Delivery site table, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) at the end of a row whose site you want to remove. 
-    Click ![Delete Edge Delivery site](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Delete**, then click **Delete** again to confirm the site's removal.
+    Click ![Delete Edge Delivery site icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Delete**, then click **Delete** again to confirm the site's removal.
 
         ![Add Edge Delivery Site from the Edge Delivery tab](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
 
-    * In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg ) to reveal the left side menu. Under the **Services** heading, click ![Web page for Edge Delivery sites](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**. 
-    In the Edge Delivery site table, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) at the end of a row whose site you want to remove. Click ![Delete Edge Delivery site](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Delete**, then click **Delete** again to confirm the site's removal.
+    * In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg ) to reveal the left side menu. Under the **Services** heading, click ![Web page for Edge Delivery sites icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**. 
+    In the Edge Delivery site table, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) at the end of a row whose site you want to remove. Click ![Delete Edge Delivery site icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Delete**, then click **Delete** again to confirm the site's removal.
 
         ![Add Edge Delivery Site from the Edge Delivery Sites button](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
+
+## Manage an Edge Delivery site between Helix 4 and Helix 5
+
+Use the `/program/{programId}/site/{siteId}` API endpoint to migrate an Edge Delivery site between Helix 4 and Helix 5.
+
+>[!IMPORTANT]
+>
+>CDN configurations for Helix 4 websites cannot be migrated to Helix 5 automatically. This limitation exists because customer production sites may still run on Helix 4, while their Helix 5 versions are still in development.
+
+**Prerequisites**
+
+* The `sitename` must already exist.
+* Know the appropriate `branchName`, Helix `version`, and `repo` values.
+* Migration only modifies `branchName`, Helix `version`, and `repo`. The owner field cannot be changed.
+
+**API format**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**Request body parameters**
+Creates an override for an Edge Delivery site to enforce the origin specified in the request body.
+
+```json
+{
+  "sitename": "<required site name>",
+  "branchName": "<git branch>",
+  "version": "v4" | "v5",
+  "repo": "<git repository name>"
+}
+```
+
+### Example 1: Migrate to Helix 5
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**json**
+
+```json
+{
+  "sitename": "test-site-new-helix5",
+  "branchName": "branch",
+  "version": "v5",
+  "repo": "my-website"
+}
+```
+
+**Origin URL result**
+Returns an Edge Delivery site with the following origin URL:
+
+`"origin": "branch--my-website–Teo48.aem.live"`
+
+
+### Example 2: Migrate to Helix 4
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**json**
+
+```json
+{
+  "sitename": "test-site-new-helix4",
+  "branchName": "branch",
+  "version": "v4",
+  "repo": "my-website"
+}
+```
+
+**Origin URL result**
+Returns an Edge Delivery Site with the following origin URL:
+ 
+`"origin": "branch--my-website--Teo48.hlx.live"`
+
+### Example 3: Migrate repoless site to Helix 5
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**json**
+
+```json
+{
+  "sitename": "test-reposless-website",
+  "branchName": "main",
+  "version": "v5",
+  "repo": "my-reposless-website"
+}
+```
+
+**Origin URL result**
+Returns an Edge Delivery site with the following origin URL:
+ 
+`"origin": "main--my-repoless-website--Teo48.aem.live"`
 
 ## Log a support ticket {#eds-support-ticket}
 

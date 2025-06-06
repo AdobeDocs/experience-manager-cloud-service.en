@@ -25,7 +25,7 @@ In both cases, the version of your custom code and the AEM version remain unchan
 
 >[!TIP]
 >
->It is also possible to restore backups [using the public API.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
+>It is also possible to restore backups [using the public API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
 
 >[!WARNING]
 >
@@ -37,10 +37,10 @@ In both cases, the version of your custom code and the AEM version remain unchan
 
 Before restoring to a full content restoration, consider these options to restore your content more easily.
 
-* If a package for the deleted path is available, install the package again using the [Package Manager.](/help/implementing/developing/tools/package-manager.md)
-* If the deleted path was a page in Sites, use the [Restore Tree function.](/help/sites-cloud/authoring/sites-console/page-versions.md)
-* If the deleted path was an assets folder and the original files are available, re-upload them via [the Assets console.](/help/assets/add-assets.md)
-* If the delete content were assets, consider [restoring previous versions of the assets.](/help/assets/manage-digital-assets.md)
+* If a package for the deleted path is available, install the package again using the [Package Manager](/help/implementing/developing/tools/package-manager.md).
+* If the deleted path was a page in Sites, use the [Restore Tree function](/help/sites-cloud/authoring/sites-console/page-versions.md).
+* If the deleted path was an assets folder and the original files are available, re-upload them via [the Assets console](/help/assets/add-assets.md).
+* If the delete content were assets, consider [restoring previous versions of the assets](/help/assets/manage-digital-assets.md).
 
 If none of the above options work and the contents of the deleted path are significant, perform a content restoration as detailed in the following sections.
 
@@ -53,7 +53,7 @@ By default no user will have permission to execute content restorations on devel
 1. Provide the **Content Restore** permission on the required environment or all environments of the program, depending on your use case.
 1. Assign users to that profile profile.
 
-For details on managing permissions, please see [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md) documentation.
+For details on managing permissions, see [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md) documentation.
 
 ## Restoring Content {#restoring-content}
 
@@ -87,7 +87,7 @@ First determine the time frame of the content that you want to restore. Then to 
 
    ![Backups available](assets/backup-available.png)
 
-1. Find the backup you want to restore by using the information icon to view information regarding the version of the code and AEM release included in that backup and consider the implications of a restore when [choosing the backup.](#choosing-the-right-backup)
+1. Find the backup you want to restore by using the information icon to view information regarding the version of the code and AEM release included in that backup and consider the implications of a restore when [choosing the backup](#choosing-the-right-backup).
 
    ![Backup info](assets/backup-info.png)
 

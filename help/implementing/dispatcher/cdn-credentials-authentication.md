@@ -8,7 +8,7 @@ role: Admin
 
 # Configuring CDN Credentials and Authentication {#cdn-credentials-authentication}
 
-The Adobe-provided CDN has several features and services, some of which rely on credentials and authentication in order to ensure an appropriate level of enterprise security. By declaring rules in a configuration file deployed by using the Cloud Manager [config pipeline,](/help/operations/config-pipeline.md) customers can configure, in a self-service way, the following:
+The Adobe-provided CDN has several features and services, some of which rely on credentials and authentication in order to ensure an appropriate level of enterprise security. By declaring rules in a configuration file deployed by using the Cloud Manager [config pipeline](/help/operations/config-pipeline.md), customers can configure, in a self-service way, the following:
 
 * The X-AEM-Edge-Key HTTP header value used by the Adobe CDN to validate requests coming from a Customer-managed CDN.
 * The API token used to purge resources in the CDN cache.
@@ -17,6 +17,12 @@ The Adobe-provided CDN has several features and services, some of which rely on 
 Each of these, including the configuration syntax, is described in its own section below. 
 
 There is a section on how to [rotate keys](#rotating-secrets), which is a good security practice.
+
+>[!NOTE]
+> Secrets defined as environment variables should be considered immutable. Instead of changing their value, you should create a new secret with a new name and reference that secret in the configuration. Failing to do so will result in the unreliable update of secrets.
+
+>[!WARNING]
+>Do not remove the environment variables that are referenced in your CDN configuration. Doing that might cause failures in updating your CDN configuration (for example, updating rules or custom domains and certificates).
 
 ## Customer-managed CDN HTTP header value {#CDN-HTTP-value}
 
@@ -214,7 +220,9 @@ In addition, the syntax includes:
 
 ## Rotating secrets {#rotating-secrets}
 
-1. It is good security practice to occasionally change credentials. This can be accomplished as exemplified below, using the example of an edge key, although the same strategy is used for purge keys.
+It is a good security practice to change credentials regularly. Remember that environment variables should not be changed directly, but instead create a new secret and reference the new name in the configuration.
+
+This use case is exemplified below, by using the example of an edge key, although the same strategy can also used for purge keys.
 
 1. Initially just `edgeKey1` has been defined, in this case referenced as `${{CDN_EDGEKEY_052824}}`, which as a recommended convention, reflects the date it was created.
 
@@ -236,7 +244,7 @@ In addition, the syntax includes:
           edgeKey2: ${{CDN_EDGEKEY_041425}}
     ```
 
-1. Once you are sure the old edge key is not used anymore, remove it by removing `edgeKey1` from the configuration.    
+1. Once you are sure the old edge key is not used anymore, remove it by removing `edgeKey1` from the configuration.
     ```
     authentication:
       authenticators:
@@ -257,3 +265,47 @@ In addition, the syntax includes:
           edgeKey1: ${{CDN_EDGEKEY_031426}}
 
     ```
+
+When rotating secrets that are set in request headers, for example for authenticating against a backend, it is recommended to do the rotation in two steps in order to guarantee the header value is switched without temporary gaps.
+
+1. Initial configuration before the rotation. In this state the old key is sent to backend.
+
+    ```
+    requestTransformations:
+      rules:
+        - name: set-api-key-header
+          actions:
+            - type: set
+              reqHeader: x-api-key
+              value ${{API_KEY_1}}
+    ```
+
+1. Introduce the new key `API_KEY_2` by setting the same header twice (the new key should be set after the old key). After deploying this you will see the new key in the backend.
+
+    ```
+    requestTransformations:
+      rules:
+        - name: set-api-key-header
+          actions:
+            - type: set
+              reqHeader: x-api-key
+              value ${{API_KEY_1}}
+            - type: set
+              reqHeader: x-api-key
+              value ${{API_KEY_2}}
+    ```
+
+1. Remove the old key `API_KEY_1` from the configuration. After deploying this you will see the new key in the backend and it is safe to remove the old key's environment variable.
+
+
+    ```
+    requestTransformations:
+      rules:
+        - name: set-api-key-header
+          actions:
+            - type: set
+              reqHeader: x-api-key
+              value ${{API_KEY_2}}
+    ```
+
+    

@@ -9,13 +9,14 @@ role: Admin, Architect, Developer
 
 # Create production programs {#create-production-program}
 
-A production program is for users familiar with AEM and Cloud Manager, ready to write, build, and test code, with the goal of deploying it to handle live traffic.
+A production program is for users familiar with Adobe Experience Manager (AEM) and Cloud Manager, ready to write, build, and test code, with the goal of deploying it to handle live traffic.
 
 Learn more about program types in the document [Understanding Program and Program Types](program-types.md).
 
 ## Create a production program {#create}
 
-Depending on your organization's entitlements, you may see [additional options](#options) when adding your program.
+Depending on your organization's entitlements, you may see additional production program options when adding your program.
+See [Additional production program options](#options).
 
 **To create a production program:**
 
@@ -25,34 +26,39 @@ Depending on your organization's entitlements, you may see [additional options](
 
    ![Cloud Manager landing page](assets/log-in.png) 
 
-1. In the *Let's create your program* wizard, in the **Program name** text field, type the name you want for the program.
+1. In the *Let's create your Program* wizard, in the **Program name** text field, type the name you want for the program.
 
-1. Under **Program Objective**, select **`Set up for production`**.
+1. Under **Program Objective**, select ![Globe icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg)**Set up for production**.
 
    ![Creating program wizard](assets/create-production-program.png)
 
-1. (Optional) In the lower-right corner of the wizard dialog box, do any one of the following:
+1. (Optional) In the lower-right corner of the wizard dialog box, do either one of the following:
 
-   * Drag and drop an image file onto the **Add a program image** target.
-   * Click **Add a program image**, then select an image from a file browser.
-   * Click the trash can icon to delete an image that you added.
+   * Drag and drop an image file onto the ![Image icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Add a program image** target.
+   * Click ![Image icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Add a program image**, then select an image from a file browser.
+   * Click ![Delete icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) to remove an image that you added.
    
-1. Click **Continue**. 
+1. Click **Continue**.
 
 1. In the **Solutions &amp; Add-ons** list box, select one or more solutions to include in the program.
 
    * If you are not sure if you need one or more programs for the various solutions you have available, select the one most of interest to you. You can activate additional solutions by [editing the program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) later. See the [Introduction to Production Programs document](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) for more program setup recommendations.
-   * At least one solution is required for program creation.
-   * Select **Edge Deliver Services** for a fully managed CDN solution that optimizes digital experiences. See [About using Edge Delivery Services to deliver your Cloud Manager project](#edge-overview)
-   * If you selected the **[Enable Enhanced Security](#security)** option, you can select only as many solutions for which HIPAA entitlements are available.
+   * It is required that you select at least one solution for program creation. For example, you can choose to select **Edge Delivery Services** for a fully managed CDN solution that optimizes digital experiences. See [About using Edge Delivery Services to deliver your Cloud Manager project](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 
-   ![Select solutions](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
+   ![Select solutions](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/add-production-program-with-edge-v2.png)
 
-1. Click the chevron to the left of a solution name to reveal any optional add-ons, such as the **Commerce** add-on option under **Sites**.
+
+
+
+   <!-- * If you selected the **[Enable Enhanced Security](#security)** option, you can select only as many solutions for which HIPAA entitlements are available. -->
+
+   
+
+   * Click ![Chevron Size 300 icon](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) to the left of a solution name to reveal any optional add-ons. <!-- such as the **Commerce** add-on option under **Sites**. -->
 
    ![Select add-ons](assets/setup-prod-commerce.png)
 
-1. With your solutions and add-ons selected, click **Continue**.
+1. When you are done selecting your solutions and add-ons, click **Continue**.
 
 1. On the **Go-Live Date** tab, enter the date that you plan to have your production program Go Live.
 
@@ -63,11 +69,11 @@ Depending on your organization's entitlements, you may see [additional options](
 
 1. Click **Create**. Cloud Manager creates your program and displays it on the landing page for selection.
 
-![Cloud manager overview](assets/navigate-cm.png)
+   ![Cloud manager overview](assets/navigate-cm.png)
 
 ## Additional production program options {#options}
 
-Depending on what entitlements are available to your organization, you may have additional options available to you when you create a production program.
+Depending on what entitlements are available to your organization, you may have the following additional options available to you when you create a production program.
 
 ### Security {#security}
 
@@ -92,28 +98,30 @@ If you have the necessary entitlements, the **SLA** tab is shown as the second o
 
 ![SLA options](assets/create-production-program-sla.png)
 
-AEM Sites and Forms offer a standard 99.9% service level agreement (SLA). The **99.99% Service Level Agreement** option enables a 99.99% minimum uptime percentage for your production environments for Sites and/or Forms.
+Sites and Forms offer a standard 99.9% service level agreement (SLA). The **99.99% Service Level Agreement** option guarantees a 99.99% minimum uptime for your production environments, whether for Sites, Forms, Edge Delivery Services, or all three.
 
-99.99% SLA offers benefits including higher availability and lower latency, and requires an [additional publish region](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) to be applied to the production environment in the program.
+99.99% SLA offers benefits including higher availability and lower latency.
 
-When the [requirements](#sla-requirements) for enabling 99.99% SLA are met, you must run a [full stack pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) to activate it.
+For Sites and Forms programs, the 99.99% SLA requires an [additional publish region](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) to be applied to the production environment in the program. When the [requirements](#sla-requirements) for enabling 99.99% SLA are met, you must run a [full stack pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) to activate it.
+
+For Edge Delivery Services, there is *no* requirement other than configuring the 99.99% SLA license on the program.
 
 #### Requirements for 99.99% SLA {#sla-requirements}
 
-Beyond the required entitlements, 99.99% SLA has additional requirements for use.
+In addition to the required entitlements, using the 99.99% SLA for Sites or Forms programs comes with the following additional requirements:
 
 * The organization must have 99.99% SLA and additional publish region entitlements available when applying 99.99% SLA to the program.
 * Cloud Manager verifies that an unused [additional publish region](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) entitlement is available before applying 99.99% SLA to the program.
 * When editing a program, if it already contains a production environment with at least one additional publish region, then Cloud Manager checks only for the availability of a 99.99% SLA entitlement.
 * For activation of 99.99% SLA and reporting, the [production/stage environment](/help/implementing/cloud-manager/manage-environments.md#adding-environments) must have been created and at least one additional publish region must have been applied on the production/stage environment.
   * If using [advanced networking](/help/security/configuring-advanced-networking.md), make sure to check the [Adding Multiple Publish Regions to a New Environment](/help/implementing/cloud-manager/manage-environments.md#adding-regions) document for recommendations so that connectivity is maintained if there is regional failure.
-* At least one additional publish region must remain in your 99.99% SLA program. Users are disallowed from deleting the last additional publish region from your 99.99% SLA program.
-* 99.99% SLA is supported for production programs that have the Sites or Forms solution enabled.
+* Your 99.99% SLA program must always include at least one additional publish region. Users are not allowed to delete the last remaining additional publish region from the program.
+* Your 99.99% SLA is supported for production programs that have the Sites or Forms solution enabled.
 * Run a [full stack pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) to activate or &mdash; when editing a program &mdash; deactivate the 99.99% SLA.
 
 ## Access your program {#accessing}
 
-1. When you see your program card on the landing page, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg to view the menu options available to you.
+1. When you see your program card on the landing page, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) to view the menu options available to you.
 
    ![Program overview](assets/program-overview.png)
 

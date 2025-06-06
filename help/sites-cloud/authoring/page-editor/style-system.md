@@ -107,7 +107,7 @@ If you want to use the Style System for your own components do the following:
 
 Core Components version 2 and later are fully enabled to take advantage of the Style System and require no additional configuration.
 
-The following steps are only necessary to enable the Style System for your own custom components or to [enable the optional Styles tab in the Edit dialog.](#enable-styles-tab-edit)
+The following steps are only necessary to enable the Style System for your own custom components or to [enable the optional Styles tab in the Edit dialog](#enable-styles-tab-edit).
 
 ### Enable Style Tab in Design Dialog {#enable-styles-tab-design}
 

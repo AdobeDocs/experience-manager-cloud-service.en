@@ -24,7 +24,7 @@ Also, when designing a taxonomy, it is important to consider whether ordering is
 
 ### Queries in Components {#queries-in-components}
 
-Since queries can be one of the more taxing operations done on an AEM system, it is a good idea to avoid them in your components. Having several queries execute each time a page is rendered can often degrade the performance of the system. There are two strategies that can be used to avoid executing queries when rendering components: **[traversing nodes](#traversing-nodes)** and **[prefetching results.](#prefetching-results)**
+Since queries can be one of the more taxing operations done on an AEM system, it is a good idea to avoid them in your components. Having several queries execute each time a page is rendered can often degrade the performance of the system. There are two strategies that can be used to avoid executing queries when rendering components: **[traversing nodes](#traversing-nodes)** and **[prefetching results](#prefetching-results)**.
 
 ### Traversing Nodes {#traversing-nodes}
 
@@ -56,14 +56,14 @@ A similar strategy can be used to keep the result in an in-memory cache, which i
 
 ## Optimizing Queries {#optimizing-queries}
 
-The Oak documentation provides a [high-level overview how queries are executed.](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing) This forms the basis of all optimization activities described in this document.
+The Oak documentation provides a [high-level overview how queries are executed](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing). This forms the basis of all optimization activities described in this document.
 
 AEM as a Cloud Service provides the [Query Performance Tool](#query-performance-tool), which is designed to support implementing efficient queries.
 
 * It displays already executed queries with their relevant performance characteristics and the query plan.
 * It allows performing ad-hoc queries in various levels, starting from just displaying the query plan up to executing the full query.
 
-The Query Performance Tool is reachable via the [Developer Console in Cloud Manager.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) AEM as a Cloud Service's Query Performance Tool delivers more information about the details of the query execution over the AEM 6.x version.
+The Query Performance Tool is reachable via the [Developer Console in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries). AEM as a Cloud Service's Query Performance Tool delivers more information about the details of the query execution over the AEM 6.x version.
 
 This chart illustrates the general flow to use the Query Performance Tool to optimize queries.
 

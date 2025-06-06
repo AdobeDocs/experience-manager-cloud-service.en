@@ -8,8 +8,42 @@ exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
 ---
 # Use [!DNL Adobe Stock] assets in [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
 
-| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
+        </td>
+    </tr>
+</table>
 
 | Version | Article link |
 | -------- | ---------------------------- |
@@ -22,34 +56,24 @@ exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
 
 Organizations can integrate their enterprise [!DNL Adobe Stock] plan with [!DNL Experience Manager Assets] to ensure that licensed assets are broadly available for their creative and marketing projects, with the powerful asset management capabilities of [!DNL Experience Manager]. [!DNL Experience Manager] users can quickly find, preview, and license Adobe Stock assets that are saved in [!DNL Experience Manager], without leaving the [!DNL Experience Manager] interface.
 
-## Integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
+## Prerequisites to integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
 [!DNL Experience Manager Assets] provides users the ability to search, preview, save, and license [!DNL Adobe Stock] assets directly from [!DNL Experience Manager].
 
-**Prerequisites**
+Meet the following requirements to enable this integration: 
 
-The integration requires: 
-
-* An up and running [!DNL Experience Manager Assets] as a [!DNL Cloud Service] instance
-* An [enterprise [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/)
-* A user with permissions in Admin Console to the default Stock product profile
-* A user with permissions to the Developer Access profile for creating integration in Adobe Developer Console
+* An up and running [!DNL Experience Manager Assets] as a [!DNL Cloud Service] instance.
+* An enterprise [!DNL Adobe Stock] plan.
+* A user with permissions in [!DNL Admin Console] to the default Stock product profile.
+* A user with permissions to the [!DNL Developer Access profile] for creating integration in [!DNL Adobe Developer Console].
 
 An enterprise [!DNL Adobe Stock] plan,
 
-* Provides product entitlement for [!DNL Adobe Stock] (Stocks connected to Experience Manager)
-* Credits purchased into the [!DNL Adobe Admin Console] for your stock entitlement
-* Enables Service Account (JWT) authentication within [!DNL Adobe Developer Console] for your stock entitlement
-* Enables managing the credits and licensing globally from within [!DNL Adobe Admin Console]
+* Provides product entitlement for [!DNL Adobe Stock] (Stocks connected to Experience Manager).
+* Credits purchased into the [!DNL Adobe Admin Console] for your stock entitlement.
+* Enables managing the credits and licensing globally from within [!DNL Adobe Admin Console].
 
 Within the entitlement, a default product profile for [!DNL Adobe Stock] exists in [!DNL Admin Console]. Multiple profiles can be created, and these profiles determines who can license Stock assets. A user having a direct access to the product profile can access [https://stock.adobe.com/](https://stock.adobe.com/) and license Stock assets. Whereas there is another method of using the Developer Access to create an integration (API). This integration authenticates the communication between [!DNL Experience Manager Assets] and [!DNL Adobe Stock].
-
->[!NOTE]
->
->The Stock service account (JWT) authentication comes with the enterprise Stock entitlement.
->
->The integration does not support Oauth authentication for enterprise Stock entitlement.
-
 
 <!--
 ### Create an IMS configuration {#create-an-ims-configuration}
@@ -61,9 +85,10 @@ Within the entitlement, a default product profile for [!DNL Adobe Stock] exists 
 1. Click **[!UICONTROL Create new project]** and click **[!UICONTROL Add API]**. Select **[!UICONTROL Adobe Stock]** from the list of APIs that are available to you. Select [!UICONTROL OAUTH 2.0 Web].
 1. Provide **[!UICONTROL Default redirect URI]** and **[!UICONTROL Redirect URI pattern]** values. Click **[!UICONTROL Save configured API]**. Copy the generated ID and secret.
 1. In [!UICONTROL Adobe IMS Technical Account Configuration] screen, provide the values in the boxes titled **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]**. For detailed information about these values, see [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
-
 -->
-<!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
+
+<!-- 
+TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
 
 <!--
@@ -78,13 +103,13 @@ Within the entitlement, a default product profile for [!DNL Adobe Stock] exists 
 >[!NOTE]
 >
 >If there are multiple [!DNL Adobe Stock] configurations, select the desired configuration in User Preferences panel. To access the panel from Experience Manager home page, click the user icon and then click **[!UICONTROL User Preferences]** > **[!UICONTROL Stock Configuration]**.
-
 -->
 
-## Steps to integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integration-steps}
+## Integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integrate-adobe-stock-with-aem-assets}
 
-To integrate [!DNL Experience Manager] and [!DNL Adobe Stock], perform the following steps in the listed sequence: 
+As a developer, execute the following steps to integrate [!DNL Adobe Experience Manager] and [!DNL Adobe Stock].
 
+<!--
 1. [Obtain public certificate](#public-certificate)
    
    In [!DNL Experience Manager], create an IMS account and generate a public certificate (public key).
@@ -203,8 +228,66 @@ To configure the IMS account:
    Click **[!UICONTROL Check]** in the dialog box. On successful configuration, a message appears that the *Token is retrieved successfully*.
 
    ![health-check](assets/aem-stock-healthcheck.png)
+-->
 
+1. [Set up a program in [!DNL Developer Console]](#set-up-a-program-in-developer-console)
+1. [Add configuration in the [!DNL AEM] author instance](#add-configuration-in-the-aem-author-instance)
 
+### Set up a program in [!DNL Developer Console] {#set-up-a-program-in-developer-console}
+
+Execute the following steps to set up a program in the [!DNL Developer Console]:
+1. Navigate to the [[!DNL Adobe Developer Console]](https://developer.adobe.com/console/14431/user/servicesandapis) and login to your organization.
+1. Select **[!UICONTROL Create new project]** available on the **[!UICONTROL Projects]** dashboard.
+![integrate aem assets with adobe stock](/help/assets/assets/create-new-project-in-adobe-dev-console.png)
+1. Click **[!UICONTROL Add to project]** and select **[!UICONTROL API]**. 
+1. Select **[!UICONTROL Adobe Stock]** and click **[!UICONTROL Next]**.
+1. Specify a **[!UICONTROL Credential name]** and verify that the **[!UICONTROL OAuth Server-to-Server]** is selected and click **[!UICONTROL Next]**.
+1. Select **[!UICONTROL AEM Assets]** **[!UICONTROL Product profile]** and click **[!UICONTROL Save Configured API]**. A success message displays to confirm that you created a project in the [!DNL Developer Console]. Your project's dashboard opens, displaying the project name at the top, **[!UICONTROL Adobe Stock]** under **[!UICONTROL APIS]** and **[!UICONTROL AEM Assets]** under **[!UICONTROL Product profile]** and **[!UICONTROL OAuth Server-to-Server]** credential card under **[!UICONTROL Connected credentials]**. 
+![integrate aem assets and adobe stock](/help/assets/assets/adc-project-name.png)
+1. Select **[!UICONTROL OAuth Server-to-Server]** credentials card and the **[!UICONTROL Credential details]** displays. Use these [!DNL OAuth Server-to-Server] credential details of your project such as **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]**, **[!UICONTROL Scope]**, **[!UICONTROL Credential Name]**, **[!UICONTROL Technical Account ID]**, **[!UICONTROL Organization ID]** to [add configuration in the AEM author instance](#add-configuration-in-the-aem-author-instance).
+![aem assets and adobe stock](/help/assets/assets/oauth-server-server-credentials-details-page.png)
+
+### Add configuration in the [!DNL AEM] author instance {#add-configuration-in-the-aem-author-instance}
+
+Execute the following steps to add configuration in your [!DNL AEM] author instance:
+
+1. [Set up a new [!DNL Adobe Stock IMS configuration] in your [!DNL AEM] author Instance](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
+1. [Add the Cloud configuration to connect to [!DNL Adobe Stock]](#add-cloud-configuration-to-connect-adobe-stock)
+
+#### Set up a new [!DNL Adobe Stock IMS configuration] in your [!DNL AEM author] Instance {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
+
+Execute the following steps to set up a new [!DNL Adobe Stock IMS configuration] in your [!DNL AEM] author instance:
+1. Navigate to your [!DNL AEM] author instance.
+1. Click ![aem assets and adobe stock](/help/assets/assets/Hammer.svg), select **[!UICONTROL Security]** and select **[!UICONTROL Adobe IMS Configurations]**.
+1. Click **[!UICONTROL Create]** to create a new IMS configuration. The **[!UICONTROL Adobe IMS Technical Account Configuration]** page displays multiple fields such as **[!UICONTROL Cloud Solution]**, **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]**, **[!UICONTROL Scope]** and **[!UICONTROL Org ID]**. Follow these instructions to specify the details in these fields:
+   * **[!UICONTROL Cloud Solution]**: Select **[!UICONTROL Adobe Stock]**.
+   * **[!UICONTROL Title]**: Specify a name for this integration.
+   * **[!UICONTROL Authorization Server]**: Add [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/) as the authorization server.
+   * **[!UICONTROL Client ID]**: Navigate to your project dashboard, click **[!UICONTROL OAuth Server-to-Server]** option available in the left pane, select **[!UICONTROL Credential details]**, copy the **[!UICONTROL Client ID]** and paste it here (see [step 7](#set-up-a-program-in-developer-console)).
+
+   * **[!UICONTROL Client Secret]**: Navigate to your project dashboard, click **[!UICONTROL OAuth Server-to-Server]** option available in the left pane, select **[!UICONTROL Credential details]**, click **[!UICONTROL Retrieve Client Secret]**, copy the **[!UICONTROL client secret]** and paste it here (see [step 7](#set-up-a-program-in-developer-console)).
+
+   * **[!UICONTROL Scope]**: Navigate to your project dashboard, click **[!UICONTROL OAuth Server-to-Server]** option available in the left pane, select **[!UICONTROL Credential details]**, copy the **[!UICONTROL Scope]** and paste it here (see [step 7](#set-up-a-program-in-developer-console)).
+
+   * **[!UICONTROL Org ID]**: Navigate to your project dashboard, click **[!UICONTROL OAuth Server-to-Server]** option available in the left pane, select **[!UICONTROL Credential details]**, copy the **[!UICONTROL Organization ID]** and paste it here (see [step 7](#set-up-a-program-in-developer-console)).
+   ![aem assets and adobe stock](/help/assets/assets/adobe-ims-technical-account-configuration.png)
+1. Click **[!UICONTROL Create]**, the **[!UICONTROL Adobe IMS Configurations]** page opens and displays the [!DNL Adobe Stock] integration that you created. 
+
+#### Add the Cloud configuration to connect to [!DNL Adobe Stock] {#add-cloud-configuration-to-connect-adobe-stock}
+
+Execute the following steps to add the cloud configuration to connect to [!DNL Adobe Stock]:
+
+1. Navigate to your [!DNL AEM author] instance.
+1. Click ![aem assets and adobe stock](/help/assets/assets/Hammer.svg), select **[!UICONTROL Cloud Services]**, browse and select **[!UICONTROL Adobe Stock]**.
+![using adobe stock with aem](/help/assets/assets/adding-cloud-config-to-adobe-stock.png)
+1. Click **[!UICONTROL Create]** and the **[!UICONTROL Adobe Stock Configuration]** page displays multiple fields. Follow these instructions to specify the details in these fields:
+   * **[!UICONTROL Title]**: Navigate to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page (see [step 3](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)), copy the title and paste it here.  
+   * **[!UICONTROL Associated Adobe IMS Configuration]**: Select the [!DNL Adobe Stock] integration you created.
+   * **[!UICONTROL Locale]**: Select **[!UICONTROL English (United States)]**.
+1. Click **[!UICONTROL Save & Close]**.
+![using adobe stock with aem](/help/assets/assets/adobe-stock-config-page.png) 
+
+<!--
 ### Configure cloud service {#configure-the-cloud-service}
 
 To configure the [!DNL Adobe Stock] cloud service:
@@ -222,7 +305,7 @@ To configure the [!DNL Adobe Stock] cloud service:
    ![aem-stock-cloud-config](assets/aem-stock-cloud-config.png)
 
 1. Click **[!UICONTROL Save & Close]**. 
-
+-->
    Your [!DNL Experience Manager Assets] author instance is now integrated with [!DNL Adobe Stock]. You can create multiple [!DNL Adobe Stock] configurations (for example, locale-based configurations). You can now access, search, and license the [!DNL Adobe Stock] assets from within the [!DNL Experience Manager] user interface. 
 
    ![search-stock-assets](assets/aem-stock-searchstocks.png)

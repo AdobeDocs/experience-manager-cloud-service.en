@@ -4,6 +4,9 @@ description: Learn how you can create blocks that can be used for both WYSIWYG a
 feature: Edge Delivery Services
 role: User
 exl-id: f039c70a-e1a0-4fcc-8f42-dfa0f8bb3764
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Blocks for WYSIWYG and Document-Based Authoring {#wysiwyg-and-doc-blocks}
 
@@ -11,7 +14,7 @@ Learn how you can create blocks that can be used for both WYSIWYG authoring and 
 
 ## Overview {#overview}
 
-On certain projects, you may want to support both [WYSIWYG authoring using the Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) as well as [document-based authoring.](/help/edge/docs/authoring.md) To minimize development time and ensure the same site experience, you can create one set of blocks to support both use cases.
+On certain projects, you may want to support both [WYSIWYG authoring using the Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) as well as [document-based authoring](/help/edge/docs/authoring.md). To minimize development time and ensure the same site experience, you can create one set of blocks to support both use cases.
 
 To do this, you must use the same content modeling approach for both your WYSIWYG authoring setup as well as your document-based authoring setup.
 

@@ -190,7 +190,7 @@ A typical report should contain these inputs:
 * Documentation detailing the feature set of your particular AEM installation
 * Details on your AEM custom configurations and code
 * Production Dispatcher configurations
-* CDN Configurations (if there are any)
+* Domain mappings (CDN configurations) (if there are any)
 
 **Socialize the Report**
 

@@ -4,6 +4,9 @@ description: Learn what settings are required to ensure your DAM assets for your
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 160f0474-a72d-4183-a2b2-2f8ba177605d
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Publishing Pages with DAM Assets Using Edge Delivery Services {#dam-assets}
 
@@ -15,8 +18,8 @@ When editing content for the Universal Editor, you of course can select assets f
 
 To ensure this seamless behavior, AEM and Edge Delivery Services must have proper access to the DAM in order to publish. This includes:
 
-* [Ensuring that assets folders are accessible.](#accessible)
-* [Ensuring that the assets folder is assigned the proper configuration (as required).](#configuration)
+* [Ensuring that assets folders are accessible](#accessible).
+* [Ensuring that the assets folder is assigned the proper configuration (as required)](#configuration).
 
 ## Ensuring Assets Folders are Accessible {#accessible}
 

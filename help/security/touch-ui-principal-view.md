@@ -1,0 +1,197 @@
+---
+title: Principal View for Permissions Management
+description: Learn about the new Touch UI interface that facilitates permissions management.
+feature: Security
+role: Admin
+exl-id: 855e112a-39f7-4aee-9e29-ece1aa9acf0a
+---
+# Principal View for Permissions Management {#principal-view-for-permissions-management}
+
+## Overview {#overview}
+
+AEM introduces Permissions Management for Users and Groups. The main functionality remains the same as the classic UI, but is more user-friendly and efficient.
+
+## Accessing the UI {#accessing-the-ui}
+
+The new UI-based permissions management is accessed through the Permissions card under Security as shown below:
+
+![Permissions Management UI](assets/screen_shot_2019-03-17at63333pm.png)
+
+The new view makes it easier to look at the whole set of privileges and restrictions for a given principal at all paths where Permissions have been granted explicitly. This removes the need to go to
+
+CRXDE to manage advanced privileges and restrictions. It has been consolidated in the same view. 
+
+![Permission View](assets/permissionView.png)
+
+There is a filter that allows the user to select the type of principals to look at **Users**, **Groups**, or **All **and search for any principal**.**
+
+![Search for types of Principals](assets/image2019-3-20_23-52-51.png)
+
+## Viewing Permissions for a Principal {#viewing-permissions-for-a-principal}
+
+The frame on the left allows users to scroll down to find any principal or search for a Group or a User based on the selected filter, as shown below:
+
+![View Permissions for a Principal](assets/doi-1.png)
+
+Clicking the name shows the assigned permissions on the right. The permissions pane shows the list of Access Control Entries on specific paths along with configured restrictions.
+
+![View ACL List](assets/permissionsList.png)
+
+## Adding new Access Control Entry for a Principal {#adding-new-access-control-entry-for-a-principal}
+
+New permissions can be added by adding an Access Controlling Entry. Simply click the Add ACE button.
+
+![Add new ACL for a Principal](assets/patru.png)
+
+This brings up the window shown below, the next step is to choose a path where the permission must be configured.
+
+![Configure permissions path](assets/cinci-1.png)
+
+Here, a path is selected where you can configure a permission for **dam-users**:
+
+![Example configuration for dam-users](assets/sase-1.png)
+
+After the path is selected, the workflow goes back to this screen, where the user can then select one or more of the privileges from the available namespaces (like `jcr`, `rep` or `crx`) as shown i below.
+
+Privileges can be added by searching using the text field and then selecting from the list.
+
+>[!NOTE]
+>
+>For a complete list of privileges and descriptions, see [User, Group, and Access Rights Administration](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management).
+
+![Search permission for a given path.](assets/image2019-3-21_0-5-47.png) ![Add New Entry for 'dam-users' as shown by a path selected in vertical columns.](assets/image2019-3-21_0-6-53.png)
+
+After the list of privileges has been selected, the user can choose the Permission Type : Deny or Allow, as shown below.
+
+![Select permission](assets/screen_shot_2019-03-17at63938pm.png) ![Select permission](assets/screen_shot_2019-03-17at63947pm.png)
+
+## Using Restrictions {#using-restrictions}
+
+In addition to the list of privileges and the Permission Type on a given path, this screen also lets you add restrictions for fine grained access control as shown below:
+
+![Add restrictions](assets/image2019-3-21_1-4-14.png)
+
+>[!NOTE]
+>
+>For more information on what each restriction means, see [the Jackrabbit Oak Documentation](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+
+Restrictions can be added as shown below by choosing the restriction type, entering the value and hitting the **+** icon. 
+
+![Add the restriction type](assets/sapte-1.png) ![Add the restriction type](assets/opt-1.png)
+
+The new ACE is reflected in the Access Control List as shown below. Note that `jcr:write` is an aggregate privilege that includes `jcr:removeNode` that was added above, but is not shown below as its covered under `jcr:write`.
+
+## Editing ACEs {#editing-aces}
+
+Access Control Entries can be edited by selecting a principal and choosing the ACE that you want to edit.
+
+For example,  here you can edit the below entry for **dam-users** by clicking the pencil icon on the right:
+
+![Add restriction](assets/image2019-3-21_0-35-39.png)
+
+The edit screen is shown with configured ACEs preselected, these can be deleted by clicking the cross icon next to them or new privileges can be added for the given path, as shown below.
+
+![Edit entry](assets/noua-1.png)
+
+Here the `addChildNodes` privilege is added for **dam-users** on the given path.
+
+![Add privilege](assets/image2019-3-21_0-45-35.png)
+
+Changes can be saved by clicking the **Save** button on top right, and the changes are reflected in the new permissions for **dam-users** as shown below:
+
+![Save changes](assets/zece-1.png)
+
+## Deleting ACEs {#deleting-aces}
+
+Access Control Entries can be deleted to remove all permissions given to a principal on a specific path. The X icon on next to ACE can be used to delete it as shown below:
+
+![Delete ACEs](assets/image2019-3-21_0-53-19.png) ![Delete ACEs](assets/unspe.png)
+
+## Permissions View {#permissions-view}
+
+### Touch UI Permissions View {#touch-ui-permisions-view}
+
+Administrators need more granular control and visibility into permission assignments at the node level for better security and management within AEM. Previously, only a principal-based view of permissions was available, limiting the ability to see how ACLs are applied to specific nodes or filtered views. The new node and filtered view provide a detailed and contextualized perspective of permission assignments, allowing for better management and auditing of security configurations. This feature enhances administrative oversight and simplifies permission management, improves security, reduce misconfigurations, and streamline user access controls in AEM.
+
+
+You can access the Permissions Touch UI view by clicking on **Tools - Security - Permissions**, as shown below:
+
+![Permissions Touch UI card](assets/image-2025-2-5_15-37-59.png)
+
+Once you launch the Permissions view, you can click on **Node View** or **Filtered View** in the upper right corner of the screen depending on your viewing preference.
+
+#### Node View
+
+In this view, ACLs are presented for each individual Node(path). It provides information on:
+
+Local ACLs for the selected Node.
+Effective ACLs, which includes ACLs applied to each parent Node up to the root ("/").
+Users have the option to add, remove, or update ACLs. When a path is clicked, the left pane displays its children, while the right side presents a table view of all ACLs associated with that path.
+
+![Node View](assets/image-2025-2-5_15-26-2.png)
+
+#### Filtered View
+
+This view allow users to efficiently search for permissions on a specified path and principals. In this view, users can easily determine the type of permissions granted to a group of principals for the selected path.
+Additionally, the Filtered View provides insights into Effective ACLs. It displays the ACLs associated with the parent node of the selected path, considering the selected principal and any common principals.
+
+![Filter View](assets/FilteredView.png)
+
+### The Repository Browser Permissions View {#the-repository-browser-permissions-view}
+
+The permissions view can also be accessed via the [Repository Browser](/help/implementing/developing/tools/repository-browser.md).
+
+You can access it by:
+
+1. Opening the Developer console, clicking on the **Repository Browser** tab, and then on **open Repository Browser**
+
+   ![Launch the Repository Browser](assets/image-2025-2-5_15-38-47.png)
+
+1. Once in the Repository Browser, click on the **Permissions** tab
+
+   ![Permissions tab](assets/image-2025-2-5_15-29-33.png)
+
+**Note**: To view the permissions, administrator rights are required. Follow the steps mentioned [here](/help/implementing/developing/tools/repository-browser.md#navigate-the-hierarchy-navigate-the-hierarchy)  to access the permissions.
+
+## Classic UI Privilege Combinations {#classic-ui-privilege-combinations}
+
+The new permissions UI explicitly uses the basic set of privileges instead of predefined combinations that do not truly reflect the exact underlying privileges that were granted.
+
+It caused confusion as to what exactly is being configured. The following table lists the mapping between the privilege combinations from the Classic UI to the actual privileges that constitute them:
+
+<table>
+ <tbody>
+  <tr>
+   <th>Classic UI Privilege Combinations</th>
+   <th>Permissions UI Privilege</th>
+  </tr>
+  <tr>
+   <td>Read</td>
+   <td><code>jcr:read</code></td>
+  </tr>
+  <tr>
+   <td>Modify</td>
+   <td><p><code>jcr:modifyProperties</code></p> <p><code>jcr:lockManagement</code></p> <p><code>jcr:versionManagement</code></p> </td>
+  </tr>
+  <tr>
+   <td>Create</td>
+   <td><p><code>jcr:addChildNodes</code></p> <p><code>jcr:nodeTypeManagement</code></p> </td>
+  </tr>
+  <tr>
+   <td>Delete</td>
+   <td><p><code>jcr:removeNode</code></p> <p><code>jcr:removeChildNodes</code></p> </td>
+  </tr>
+  <tr>
+   <td>Read ACL</td>
+   <td><code>jcr:readAccessControl</code></td>
+  </tr>
+  <tr>
+   <td>Edit ACL</td>
+   <td><code>jcr:modifyAccessControl</code></td>
+  </tr>
+  <tr>
+   <td>Replicate</td>
+   <td><code>crx:replicate</code></td>
+  </tr>
+ </tbody>
+</table>
