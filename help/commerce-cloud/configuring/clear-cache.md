@@ -13,7 +13,6 @@ This document provides a comprehensive guide on enabling and verifying the clear
 >
 > This feature is experimental.
 
-
 ## Enabling Clear Cache Feature in CIF Configuration {#enable-clear-cache}
 
 By default, the clear-cache feature is disabled in CIF configuration. To enable it, you need to add the following to your corresponding projects:
@@ -94,7 +93,6 @@ This table shows the mandatory property that needs to be passed in every API cal
 | Property | Value | Type (Array/String/Boolean)| Will this clear the dispatcher cache? | Comment |
 |------------------------------|-------------------|---|---|---|
 | `storePath` | Corresponding value of the site path from where the cache needs be removed (Example : `/content/venia/us/en` as reference with venia project).| String  | Yes | This needs to be given with the combination of `invalidateType.`|
-
 
 ### Sample API Request
 
