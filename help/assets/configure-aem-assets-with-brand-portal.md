@@ -47,7 +47,7 @@ exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=en)                  |
+| AEM 6.5  | [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=en)   |
 | AEM as a Cloud Service     | This article         |
 
 Configuring Adobe Experience Manager Assets Brand Portal lets you publish approved brand assets from Adobe Experience Manager Assets as a [!DNL Cloud Service] instance to Brand Portal and distribute them to the Brand Portal users.
@@ -56,6 +56,7 @@ Configuring Adobe Experience Manager Assets Brand Portal lets you publish approv
 >
 > * Brand Portal is currently under maintenance.
 > * Contact your Adobe representative with details of your use case and specific requirements to activate Brand Portal using Cloud Manager.
+> * Brand Portal is not available with Assets Prime or Assets Ultimate. However, existing Assets Cloud Services customers who already have access to Brand Portal can retain it when they transition to Assets Ultimate.
 
 <!--
 
