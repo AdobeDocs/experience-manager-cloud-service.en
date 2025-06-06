@@ -15,7 +15,7 @@ Learn how to publish your translated content and update the translations as the 
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Sites translation journey, [Translate Content,](configure-connector.md) you learned how to use AEM Translation Projects to translate your content. You should now:
+In the previous document of the AEM Sites translation journey, [Translate Content](configure-connector.md), you learned how to use AEM Translation Projects to translate your content. You should now:
 
 * Understand what a translation project is.
 * Be able to create new translation projects.
@@ -116,7 +116,7 @@ You see that a new job card was added to the project. In this example, another S
 
 You may notice that the statistics listed on the new card is different. This is because AEM recognizes what has changed since the last translation and only includes the content that must be translated. This includes re-translation of updated content and the first-time translation of new content.
 
-From this point, you [start and manage your translation job just as you did the original.](translate-content.md#using-translation-project)
+From this point, you [start and manage your translation job just as you did the original](translate-content.md#using-translation-project).
 
 ### Updating a Manually Created Translation Project {#updating-manual-project}
 
@@ -138,15 +138,15 @@ To update a translation you can add a new job to your existing project that is r
    ![Select target language](assets/select-target-language.png)
 
 1. Once your new translation job's target language is set, select the ellipsis button at the bottom of the job card to view the details of the job.
-1. The job is empty when first created. Add content to the job by tapping or clicking the **Add** button and using the path browser [as you did before when originally creating the translation project.](translate-content.md##manually-creating)
+1. The job is empty when first created. Add content to the job by tapping or clicking the **Add** button and using the path browser [as you did before when originally creating the translation project](translate-content.md##manually-creating).
 
 >[!TIP]
 >
 >The path browser's powerful filters can again be useful to find just the content that has been updated.
 >
->You can learn more about the path browser in the [additional resources section.](#additional-resources)
+>You can learn more about the path browser in the [additional resources section](#additional-resources).
 
-From this point, you [start and manage your translation job just as you did the original.](translate-content.md#using-translation-project)
+From this point, you [start and manage your translation job just as you did the original](translate-content.md#using-translation-project).
 
 ## End of the Journey? {#end-of-journey}
 

@@ -24,7 +24,7 @@ To complete this tutorial, you need the following:
 
 1. Local Development Environment
 
-The tutorial steps and screenshots are performed using **CRXDE Lite**. IDEs can also be used to complete the tutorial. More information on using an IDE to develop [with AEM can be found here.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
+The tutorial steps and screenshots are performed using **CRXDE Lite**. IDEs can also be used to complete the tutorial. More information on using an IDE to develop [with AEM can be found here](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html).
 
 
 ## Project Setup {#project-setup}

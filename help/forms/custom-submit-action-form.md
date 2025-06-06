@@ -11,7 +11,8 @@ exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html)                  |
-| AEM as a Cloud Service     | This article         |
+| AEM as a Cloud Service (Core Components)    | [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components)         |
+| AEM as a Cloud Service (Foundation Components)    | This article         |
 
 An Adaptive Form provides multiple Submit Actions out-of-the-box (OOTB). A Submit Action specifies details of the actions to be performed on the data collected via the Adaptive Form. For example, sending data on an email. 
 
@@ -102,25 +103,29 @@ A Submit Action is a sling:Folder that includes the following:
 
 ## Creating a custom Submit Action {#creating-a-custom-submit-action}
 
+>[!NOTE]
+>
+> To learn how to create a custom submit action for Core Components, see [Create a custom submit action for Adaptive Forms (Core Components)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components).
+
 Perform the following steps to create a custom Submit Action that saves the data in the CRX repository and then sends you an email. The Adaptive Form contains the OOTB Submit Action Store Content (deprecated) that saves the data in the CRX repository. In addition, AEM provides a [Mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API that can be used to send emails. Before using the Mail API, configure the Day CQ Mail service through the system console. You can reuse the Store Content (deprecated) action to store the data in the repository. The Store Content (deprecated) action is available at the location /libs/fd/af/components/guidesubmittype/store in the CRX repository.
 
 1. Log in to CRXDE Lite at the URL https://&lt;server&gt;:&lt;port&gt;/crx/de/index.jsp. Create a node with the property sling:Folder and name store_and_mail in the /apps/custom_submit_action folder. Create the custom_submit_action folder if it does not exist already.
 
    ![Screenshot depicting the creation of a node with the property sling:Folder](assets/step1.png)
 
-1. **Provide the mandatory configuration fields.**
+2. **Provide the mandatory configuration fields.**
 
    Add the configuration the Store action requires. Copy the **cq:dialog** node of the Store action from /libs/fd/af/components/guidesubmittype/store to the action folder at /apps/custom_submit_action/store_and_email.
 
    ![Screenshot showing the copying of the dialog node to the action folder](assets/step2.png)
 
-1. **Provide configuration fields to prompt the author for email configuration.**
+3. **Provide configuration fields to prompt the author for email configuration.**
 
    The Adaptive Form also provides an Email action that sends emails to users. Customize this action based on your requirements. Navigate to /libs/fd/af/components/guidesubmittype/email/dialog. Copy the nodes within the cq:dialog node to cq:dialog node of your Submit Action (/apps/custom_submit_action/store_and_email/dialog).
 
    ![Customizing the email action](assets/step3.png)
 
-1. **Make the action available in the Adaptive Form Edit dialog.**
+4. **Make the action available in the Adaptive Form Edit dialog.**
 
    Add the following properties in the store_and_email node:
 
@@ -132,11 +137,11 @@ Perform the following steps to create a custom Submit Action that saves the data
 
     * **submitService** of type **String** and value **Store and Email**. For more information, see [Schedule Adaptive Form submission for custom actions](#schedule-adaptive-form-submission).
 
-1. Open any Adaptive Form. Click the **Edit** button next to **Start** to open the **Edit** dialog of the Adaptive Form container. The new action is displayed in the **Submit Actions** Tab. Selecting the **Store and Email Action** displays the configuration added in the dialog node.
+5. Open any Adaptive Form. Click the **Edit** button next to **Start** to open the **Edit** dialog of the Adaptive Form container. The new action is displayed in the **Submit Actions** Tab. Selecting the **Store and Email Action** displays the configuration added in the dialog node.
 
    ![Submit Action configuration dialog](assets/store_and_email_submit_action_dialog.jpg)
 
-1. **Use the action to complete a task.**
+6. **Use the action to complete a task.**
 
    Add the post.POST.jsp script to your action. (/apps/custom_submit_action/store_and_mail/).
 

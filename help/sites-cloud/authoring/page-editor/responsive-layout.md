@@ -1,16 +1,26 @@
 ---
 title: Responsive Layout
-description: AEM lets you realize a responsive layout for your pages
+description: AEM lets you realize a responsive layout for your pages by using the Layout Container component.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 ---
+
 # Responsive Layout {#responsive-layout}
 
 AEM lets you have a responsive layout for your pages by using the **Layout Container** component.
 
-This provides a paragraph system that lets you position components within a responsive grid. This grid can rearrange the layout according to the device/window size and format. The component is used in conjunction with the [**Layout** mode](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), which lets you create and edit your responsive layout dependent on device.
+>[!TIP]
+>
+>This document provides an overview of the features of the Layout Container available to content authors. Additional resources are available:
+>
+>* For site administrators, details of how to configure the layout container for your sites is described in the [Configuring the Layout Container and Layout Mode document.](/help/sites-cloud/administering/responsive-layout.md)
+>* For developers, details of the Layout Container and the responsive grid are described in the [The Responsive Design document,](/help/implementing/developing/introduction/responsive-design.md) which provides and tips for using layout containers and responsive grid when designing your site.
+
+## Overview {#overview}
+
+The **Layout Container** component provides a paragraph system that lets you position components within a responsive grid. This grid can rearrange the layout according to the device/window size and format. The component is used in conjunction with the [**Layout** mode](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), which lets you create and edit your responsive layout dependent on device.
 
 The layout container:
 
@@ -43,10 +53,6 @@ With these responsive grid mechanisms you can:
 * Realize column control.
 
 Depending on your project, the Layout Container might be used as the default paragraph system for your pages or as a component available to be added to your page by way of the component browser (or both).
-
->[!TIP]
->
->Adobe provides [GitHub documentation](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) of the responsive layout as a reference that can be given to front-end developers allowing them to use the AEM grid outside of AEM, for example, when creating static HTML mock-ups for a future AEM site.
 
 >[!NOTE]
 >
@@ -131,7 +137,7 @@ A **Layout Container** is a paragraph system that:
 
 >[!NOTE]
 >
->If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page.](/help/sites-cloud/administering/responsive-layout.md)
+>If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-cloud/administering/responsive-layout.md).
 
 1. The **Layout Container** is available as a standard component in the [Components Browser](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). From here you can drag it to the required location on the page after which you can see the **Drag Components here** placeholder.
 1. You can then add components to the layout container. These components will hold the actual content:
@@ -178,7 +184,7 @@ To configure the layout of a responsive grid implemented with the Layout Contain
 * By using the [mode menu in the toolbar](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) and choosing **Layout** mode
   * Select the **Layout** mode just as you would switch to **Edit** mode or **Targeting** mode.
   * **Layout** mode remains persistent and you do not leave **Layout** mode until you select another mode via the mode selector.
-* When [editing an individual component.](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout)
+* When [editing an individual component](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout).
   * By using the **Layout** option in the component's quick action menu, you can switch to **Layout** mode.
   * **Layout** mode persists while editing the component and reverts to **Edit** mode once focus changes to another component.
 

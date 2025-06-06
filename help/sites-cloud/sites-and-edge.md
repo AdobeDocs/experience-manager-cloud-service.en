@@ -16,7 +16,7 @@ In addition to all [the power and features that AEM Sites as a Cloud Service](/h
 
 ## What are Edge Delivery Services? {#what-is-edge}
 
-Edge Delivery Services deliver exceptional experiences that drive engagement and conversions by delivering high-impact experiences that are fast to author and develop. It is a composable set of services that enables a rapid development environment where authors can update and publish quickly, and new sites are launched rapidly. Learn more about Edge Delivery Services in the document [Edge Delivery Services Overview.](/help/edge/overview.md)
+Edge Delivery Services deliver exceptional experiences that drive engagement and conversions by delivering high-impact experiences that are fast to author and develop. It is a composable set of services that enables a rapid development environment where authors can update and publish quickly, and new sites are launched rapidly. Learn more about Edge Delivery Services in the document [Edge Delivery Services Overview](/help/edge/overview.md).
 
 Using Edge Delivery Services along with AEM Sites as a Cloud Service, your projects can benefit from:
 

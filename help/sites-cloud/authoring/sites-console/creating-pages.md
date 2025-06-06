@@ -13,7 +13,7 @@ Learn how to create new pages for your website using the **Sites** console.
 
 >[!TIP]
 >
->Before you begin creating new pages, become familiar with [how your pages are organized in AEM.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>Before you begin creating new pages, become familiar with [how your pages are organized in AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
 
 ## Access Privileges {#access-privileges}
 
@@ -25,7 +25,7 @@ If you encounter any problems, please contact your system administrator.
 
 Unless all pages have been created for you in advance, you must create a page before you can start creating content:
 
-1. Open [the **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Open [the **Sites** console](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Navigate to the location where you want to create the new page.
 1. Open the drop-down selector using **Create** in the toolbar, then select **Page** from the list:
 
@@ -34,7 +34,7 @@ Unless all pages have been created for you in advance, you must create a page be
 1. From the first stage of the wizard, you can either:
 
     * Select the template you want to use to create the new page, then select **Next** to proceed or **Cancel** to abort the process.
-    * Templates are supported for both the [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md) as well as for the [Universal Editor.](/help/sites-cloud/authoring/universal-editor/templates.md)
+    * Templates are supported for both the [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md) as well as for the [Universal Editor](/help/sites-cloud/authoring/universal-editor/templates.md).
 
    ![Selecting a template for a new page](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 

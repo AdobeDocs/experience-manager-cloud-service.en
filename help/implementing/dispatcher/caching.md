@@ -14,7 +14,18 @@ This page also describes how the Dispatcher cache is invalidated and how caching
 
 ## Caching {#caching}
 
+Caching of HTTP responses in AEM as a Cloud Service’s CDN is controlled by the following HTTP response headers from the origin: `Cache-Control`, `Surrogate-Control`, or `Expires`. 
+
+These cache headers are typically set in AEM Dispatcher vhost configurations using mod_headers, but can also be set in custom Java™ code running in AEM Publish itself (see [How to enable CDN caching](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)).
+
+The cache key for CDN resources contains the full request url, including query parameters, so every different query parameter will produce a different cache entry. Consider removing unwanted query parameters; [see below](#marketing-parameters) for improving cache hit ratio.
+
+Origin responses that contain `private`, `no-cache` or `no-store` in  `Cache-Control` are not cached by the AEM as a Cloud Service’s CDN (see [How to disable CDN caching
+](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) for more details).  Also, responses that are setting cookies, i.e. have a `Set-Cookie` response header are not cached by the CDN.
+
 ### HTML/Text {#html-text}
+
+Dispatcher configuration sets some default caching headers for `text/html` content type.
 
 * by default, cached by the browser for five minutes, based on the `cache-control` header emitted by the Apache layer. The CDN also respects this value.
 * the default HTML/Text caching setting can be disabled by defining the `DISABLE_DEFAULT_CACHING` variable in `global.vars`:
@@ -241,12 +252,24 @@ Website URLs frequently include marketing campaign parameters that are used to t
 For environments created in October 2023 or later, to better cache requests, the CDN will remove common marketing related query parameters, specifically those matching the following regex pattern:
  
 ```
-^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid)$
+^(utm_.*|gclid|gdftrk|_ga|mc_.*|trk_.*|dm_i|_ke|sc_.*|fbclid|msclkid|ttclid)$
 ```
- 
-Submit a support ticket if you want this behavior to be disabled.
 
-For environments created before October 2023, it is recommended to configure the Dispatcher configuration's `ignoreUrlParams` property; see [Configuring Dispatcher - Ignoring URL Parameters](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
+This functionality can be toggled on and off using a `requestTransformations` flag in [CDN configuration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
+
+For example, to stop removing marketing params at CDN level one should deploy `removeMarketingParams: false` using a config that contains the following section.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev", "stage", "prod"]
+data:
+  requestTransformations:
+    removeMarketingParams: false
+```
+
+In case `removeMarketingParams` functionality is disabled at CDN level it is still recommended to configure the Dispatcher configuration's `ignoreUrlParams` property; see [Configuring Dispatcher - Ignoring URL Parameters](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters).
 
 There are two possibilities to ignore marketing parameters. (Where the first one is preferred to ignore cache busting via query parameters):
 

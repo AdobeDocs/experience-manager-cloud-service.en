@@ -15,7 +15,7 @@ Scenarios include:
 * A renamed HTML page.
 * SEO optimization.
 
-AEM as a Cloud Service offers [several approaches](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection) to implement client-side redirects, but the strategy described in this article, pipeline-free redirects, is a good choice when:
+AEM as a Cloud Service offers [several approaches](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection) to implement server-side redirects, but the strategy described in this article, pipeline-free redirects, is a good choice when:
 
 * The people maintaining the redirects are business users, who do not have the necessary access to commit file changes to source control or the possibility to execute a Cloud Manager web-tier configuration pipeline.
 * The number of redirects ranges from a few to tens of thousands.
@@ -33,6 +33,8 @@ The core of this feature is the ability for AEM Apache/Dispatcher to load (or re
 
 >[!NOTE]
 > This feature's usage of Redirect Map Manager requires ACS Commons version **6.7.0 or higher** whereas usage of Redirect Manager requires version **6.10.0 or higher**.
+
+For a detailed step-by-step implementation guide, see the [Implementing pipeline-free URL redirects](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects) tutorial.
 
 ## The rewrite map {#rewrite-map}
 
@@ -72,7 +74,6 @@ RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 
 ```
 
-
 ## Considerations {#considerations}
 
 Keep in mind the following:
@@ -80,3 +81,8 @@ Keep in mind the following:
 * By default, when loading a rewrite map, Apache starts up without waiting for the full map file(s) to load, and thus there can be temporary inconsistencies until the full map(s) loads. This setting can be changed so that Apache waits for the full map contents to be loaded, but it takes longer for Apache to start up. To change this behavior so Apache waits, add `wait:true` to the `managed-rewrite-maps.yaml` file.
 * To change the frequency between loads, add `ttl: <integer>` to the `managed-rewrite-maps.yaml` file. For example: `ttl: 120`.
 * Apache has a 1024 length limit for RewriteMap single entries.
+
+## Tutorials {#tutorials}
+
+1. [Implementing pipeline-free URL redirects](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
+1. [URL redirects](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)

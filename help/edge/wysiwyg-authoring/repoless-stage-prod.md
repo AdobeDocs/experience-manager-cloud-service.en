@@ -4,6 +4,9 @@ description: Learn how to set up a separate sites for your staging and productio
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Repoless Stage and Prod Environments {#repoless-stage-prod}
 
@@ -11,9 +14,16 @@ Learn how to set up a separate sites for your staging and production environment
 
 ## Overview {#overview}
 
-You may wish to set up a site for your production environment separate from your staging environment. Setting up a second site for a separate staging and production setup is similar to the [setup required for multi site management.](/help/edge/wysiwyg-authoring/repoless-msm.md) In fact, it can be combined with MSM site structures if required.
+You may wish to set up a site for your production environment separate from your staging environment. Setting up a second site for a separate staging and production setup is similar to the [setup required for multi site management](/help/edge/wysiwyg-authoring/repoless-msm.md). In fact, it can be combined with MSM site structures if required.
 
 This document uses the typical example of separate staging and production environments. You can create separate environments for any environments you wish.
+
+## Requirements {#requirements}
+
+To configure repoless stage and production environments, you must first complete the following tasks:
+
+* This document assumes that you have already created a site for your project based on the [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services guide.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+* You must have already [enabled the repoless feature for your project.](/help/edge/wysiwyg-authoring/repoless.md)
 
 ## Configuration {#configuration}
 
@@ -27,8 +37,8 @@ In this example, we are assuming that a production site has already been created
 
 There are two steps to configuring a separate production site.
 
-1. [Create new Edge Delivery Services sites for your production environment.](#create-edge-site)
-1. [Update cloud configuration in AEM for your production site.](#update-cloud-configuration)
+1. [Create new Edge Delivery Services sites for your production environment](#create-edge-site).
+1. [Update cloud configuration in AEM for your production site](#update-cloud-configuration).
 
 ### Create New Edge Delivery Services Sites for Your Production Environment {#create-edge-site}
 
@@ -39,6 +49,10 @@ There are two steps to configuring a separate production site.
    * The `code` configuration should be the same as you used for the initial project creation.
    * The `content` > `source` > `url` must be adapted to the name of the new site you are creating. In this example, it is `wknd-prod`.
    * I.e., the site name in POST URL and the `content` > `source` > `url` must be the same.
+   * Adapt the `admin` block to define the users who should have full administrative access to the site.
+     * It is an array of email addresses.
+     * The wildcard `*` can be used.
+     * See the document [Configuring Authentication for Authors](https://www.aem.live/docs/authentication-setup-authoring#default-roles) for more information.
 
    ```text
    curl --request POST \
@@ -65,7 +79,7 @@ There are two steps to configuring a separate production site.
            "admin": {
                "role": {
                    "admin": [
-                       "*@adobe.com"
+                       "<email>@<domain>.<tld>"
                    ],
                    "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
@@ -124,3 +138,9 @@ Now that you have made all of the necessary configuration changes, verify that e
 1. Visit your new Edge Delivery Services site for that page at `https://main--wknd-prod--<your-github-org>.aem.page`.
 
 If you see the changes that you made, your separate production site setup is working properly.
+
+## Usage {#usage}
+
+Once you have configured your project with repoless staging and production environments, you can manage code for them independently. The following diagram illustrates the relationship of the content in your various environments in AEM, Edge Delivery Services sites, and your GitHub repositories.
+
+![Illustration of AEM environments and repoless prod/stage environments](assets/repoless/aem-edge-github.png)

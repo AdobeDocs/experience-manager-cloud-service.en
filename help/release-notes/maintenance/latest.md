@@ -10,76 +10,86 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 18751 {#18751}
+## Release 21005 {#21005}
 
-Summarized below are the continuous improvements for maintenance release 18751, which was publicly released on December 11, 2024. The previous maintenance release was release 18598.
+Summarized below are the continuous improvements for maintenance release 21005, which was publicly released on May 27, 2025. The previous maintenance release was release 20626.
 
-The 2025.1.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+The 2025.5.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-18751}
+### Enhancements {#enhancements-21005}
 
-* SKYOPS-88509: Java 21 support for the AEM SDK.
+* GRANITE-58927: Semantic Search toggle improvements.
+* GRANITE-58800: Update of Apache Commons Collections to version 4.5.0.
+* GRANITE-58866: Update of Oak to 1.80.0.
+* SKYOPS-106509: Enhanced GSON compatibility via reflective access in Java 21.
+* SKYOPS-107761: Update of Sling Models Jackson Exporter to 1.1.6.
+* SKYOPS-107813: Update to Sling ResourceResolver 1.12.8.
 
-### Fixed Issues {#fixed-issues-18751}
+### Fixed Issues {#fixed-issues-21005}
 
-* ASSETS-42802: Back button on MFE doesnt always work and shows extra dialog.
-* ASSETS-44148: Fixed NODE_MOVED event in AEM can cause NPE.
-* ASSETS-44418: Fixed Correct env is not configured on skyline.
-* ASSETS-44821: Fixed Update event filter to include form-url-encoded data for upload events.
-* CNTBF-298: Fixed Content Copy fails with UUID conflicts.
-* CNTBF-331: [content-copy-bundle] release 2.0.14.
-* FORMS-16572: Remove Workflow test failures for java 21 SDK build.
-* GRANITE-36205: Automated update for internal oak release in QS.
-* GRANITE-53704: Re-evaluate Sling Discovery on Repository Service.
-* GRANITE-54300: Update Oak to latest public release (1.70.0).
-* GRANITE-54416: Update Filevault to version 3.8.2.
-* GRANITE-54462: Configure SubscriberAgents to use hc.tags of "systemready".
-* GRANITE-54542: Update commons-io dependency to 2.17.0.
-* GRANITE-54658: Add delayFactor and batch-size OSGi configs for fullGC in QS.
-* GRANITE-54696: Widen import range for Jackrabbit API.
-* GRANITE-54803: Disable ClusterAtExchange in AEM when imsauth is active.
-* GRANITE-55095: Update Oak to latest public release (1.72.0).
-* GUIDES-20006: Document state marked as Done reverts back to Draft before saving a new version, resulting in the Done state not persisting in any document versions.
-* GUIDES-21840: In the Native PDF output, chapter titles are missing from the TOC, leading to an incorrect hierarchy.
-* GUIDES-19558: Editing and then saving a baseline on a cloud setup timesout after 1 minute if the baseline has large number of topics or maps.
-* GUIDES-19733: Map translation using baseline becomes slow and eventually fails to load the list of all the associated topics and maps files.
-* SITES-26798: Launch Auto-Promotion is not updating Promotion Status (Promotion Date).
-* SITES-27137: Remove Sling commons metrics dependency from MSM core.
-* SKYOPS-75446: Fixed AEM sometimes returns a 404 or pages with missing content.
-* SKYOPS-76366: No Jetty Threadpool metrics in AEM release 15977 and later.
-* SKYOPS-82371: java.io.IOException: classFile.delete() failed.
-* SKYOPS-83369: AEM deployments fail to start up if the transform job execution does not generate bundles.
-* SKYOPS-83910: Fixed concurrency issues found in SKYOPS-82371.
-* SKYOPS-84821: Set the Sling Main Servlet's sling.includes.checkcontenttype configuration to true.
-* SKYOPS-85798: Fixed Transform job generates empty index definitions.
-* SKYOPS-86251: Upgrade to AEM Analyser core 1.5.6 and and enable the product-package-import analyser in the transform job.
-* SKYOPS-86710: Remove Minify test failures for java 21 sdk build.
-* SKYOPS-86745: Update to Sling ResourceResolver 1.12.2.
-* SKYOPS-89616: Fixed Unable to Create Technical Account in Adobe Developer Console.
-* SKYOPS-89691: Fixed Incorrect artifact id used for ASM warnings.
-* SKYOPS-89699: Missing warnings for old Groovy versions embedded in the 'orbinson' flavour of the Groovy Console.
-* SKYOPS-88664: Log and protect against a case when downloaded map file has line exceeding 1024 limit.
-* SKYOPS-89734: Release dispatcher image 2.0.235.
+* CNTBF-443: Fixed SearchSlingJob `EVENT_JOB_TOPIC` property.
+* GRANITE-57853: Fixed dropdown alignment issues in UI.
+* GRANITE-58107: Fixed 404 errors on Publish by disabling user-based pod affinity in OAuth handler.
+* GRANITE-58276, SLING-12755: Fixed OSGi dependency cycles that could prevent the HTL Script Engine factory from starting correctly, causing intermittent server-side rendering errors.
+* SKYOPS-105151: Fixed NPE when accessing bundle list.
+* SKYOPS-83910, SKYOPS-82371 - Fixed JSP compilation concurrency issues.
 
-For more information about the new and enhanced features and issues fixed in Experience Manager Guides, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+#### AEM Guides {#guides}
 
-### Known Issues {#known-issues-18751}
+* GUIDES-26919 : When opening a DITA map with the unified shell enabled, the editor refreshes intermittently.
+* GUIDES-26282: Failing to close JCR session connections while updating or creating topics result in memory leaks and service downtime.
+* GUIDES-26434: Native PDF publishing continues indefinitely, if the DITA content has a weblink without having scope as `external`.
+* GUIDES-26516:  Publishing of Native PDFs and AEM sites stalls and gets queued, when there are errors in the content.
+
+For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
+
+### Known Issues {#known-issues-21005}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-18751}
+### Deprecated Features and APIs {#deprecated-21005}
+
+* GRANITE-54164: Removed `org.apache.jackrabbit.oak.plugins.blob` from public API.
+* GRANITE-54280: Removed `org.apache.jackrabbit.oak.cache` from public API.
+* GRANITE-58332: Deprecated `org.apache.jackrabbit.oak.plugins.memory` in public API.
+* YUI compressor for javascript has been deprecated.
+* The [Experience Cloud Setup Automation](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) functionality has been deprecated.
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-18751}
+### Security Fixes {#security-21005}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 3 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 5 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-18751}
+### Change Notice {#change-notice-21005}
+
+* This release contains the following new product index versions:
+  * **damAssetLucene-12**
+
+Custom versions of the previous index versions will be automatically merged with the new product index version. Please apply further custom updates to the merged version.
+
+#### Update aem-cloud-testing-clients {#update-aem-cloud-testing-clients-21005}
+
+Upcoming changes will require the library [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) used in your custom functional tests to be updated to at least version **1.2.1** (Recommended: latest version 1.2.9)
+
+Make sure that your dependency in `it.tests/pom.xml` has been updated.
+
+```xml
+<dependency>
+   <groupId>com.adobe.cq</groupId>
+   <artifactId>aem-cloud-testing-clients</artifactId>
+   <version>1.2.9</version>
+</dependency>
+```
+
+This change needs to be performed before June 15, 2025.
+Failing to update the dependency library will result in pipeline failures at the "Custom Functional Testing" step.
+
+### Embedded Technologies {#embedded-tech-21005}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM Oak | 1.72.0|[Oak API 1.72.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.72.0/index.html)| 
+|AEM Oak | 1.80.0|[Oak API 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80.0/index.html)| 
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
-|AEM HTL| 1.4.24-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
-|AEM Core Components| 2.27.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
+|AEM Core Components| 2.29.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|

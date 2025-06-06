@@ -50,25 +50,29 @@ Cloud Manager verifies domain ownership through the customer managed (OV/EV) SSL
 | Deletion failed | The deletion of a custom domain name failed and must be retried.<br>See [Manage custom domain names](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) to learn more. |
 
 
-## Domain name errors {#domain-error}
+## Domain name error {#domain-error}
 
-The following are some common domain name verification errors and their typical resolutions.
+The following is a common domain name verification error and its typical resolution.
 
 ### Domain not installed error {#domain-not-installed}
 
-This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately.
+<!-- This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately. -->
 
-#### Error cause {#cause}
+When you attempt to add a domain mapping in Cloud Manager, you may encounter the following error message: 
 
+*The domain is already installed in a Fastly account. Please remove it first from there before adding to Cloud Service.*
+
+<!-- This message indicates that the domain is currently associated with a different Fastly account—typically outside of Adobe's control. To proceed, the domain must be disassociated from the other account before it can be added to the Adobe-managed Cloud Service. This issue usually occurs when the same domain is already mapped to a different origin in a non-Adobe Fastly configuration. -->
+
+**Error cause**
 Fastly locks a domain to the account that first registers it, and other accounts must request permission to register a subdomain. Furthermore, Fastly only lets you assign an apex domain and associated subdomains to one Fastly service and account. If you have an existing Fastly account that links the same apex and subdomains used for your AEM Cloud Service domains you see this error.
 
-#### Error resolution {#resolution}
-
+**Error resolution**
 The error is fixed as follows:
 
 * Remove the apex and subdomains from the existing account before installing the domain in Cloud Manager.
 
-* Use this option to link the apex domain and all subdomains to the AEM as a Cloud Service Fastly account. See [Working with Domains in the Fastly documentation](https://docs.fastly.com/en/guides/working-with-domains) for additional details.
+* Use this option to link the apex domain and all subdomains to the AEM as a Cloud Service Fastly account. See [Working with domains](https://www.fastly.com/documentation/guides/getting-started/domains/working-with-domains/working-with-domains/) in the Fastly documentation for additional details.
 
 * If your apex domain has multiple subdomains for AEM as a Cloud Service and non-AEM sites that need to link to different Fastly accounts, attempt to install the domain in Cloud Manager. This process helps manage subdomain connections across different Fastly accounts. If the domain installation fails, create a Customer Support ticket with Fastly so Adobe can follow up with Fastly on your behalf.
 
@@ -82,7 +86,7 @@ The error is fixed as follows:
 
 ## Pre-existing CDN configurations for custom domain names {#pre-existing-cdn}
 
-If you already have a CDN configuration for your custom domain names, an informative message appears on the **Custom Domain Names** and **Environment** pages. It encourages you to add these configurations through the UI so they can be managed and viewed within Cloud Manager.
+If you already have a CDN (Content Delivery Network) configuration for your custom domain names, an informative message appears on the **Custom Domain Names** and **Environment** pages. It encourages you to add these configurations through the UI so they can be managed and viewed within Cloud Manager.
 
 The message disappears after all pre-existing environment configurations are migrated using the UI. It may take 1-2 business days for the message to disappear.
 

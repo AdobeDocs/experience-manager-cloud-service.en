@@ -5,8 +5,42 @@ exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
 ---
 # Approve assets for Content Hub {#approve-assets-content-hub}
 
-| [Search Best Practices](/help/assets/search-best-practices.md) |[Metadata Best Practices](/help/assets/metadata-best-practices.md)|[Content Hub](/help/assets/product-overview.md)|[Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)|[AEM Assets developer documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/)|
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
+        </td>
+    </tr>
+</table>
 
 ![Approve assets for Content Hub](assets/content-hub-approve-assets.png)
 
@@ -58,6 +92,52 @@ To bulk approve assets within a folder in Assets view:
 1. Select **[!UICONTROL Approved]** in the **[!UICONTROL Status]** field available in the [!UICONTROL Properties] section in the right pane.
 
 1. Click **[!UICONTROL Save]**.
+
+## Set approval target {#set-approval-target}
+
+Assets view enables you to publish approved assets to Dynamic Media with OpenAPI capabilities, Content Hub, or both based on the value that you set in the **Approval Target** field available on the Asset Details page.
+
+To set approval target:
+
+1. Select the asset, and click **[!UICONTROL Details]** in the toolbar.
+
+1. In the **[!UICONTROL Basic]** tab, select the asset status from the **[!UICONTROL Status]** drop-down list. The possible values include Approved, Rejected, and No Status (default).
+
+1. If you select **Approved** in step 2, select an approval target. The possible values include Delivery and Content Hub. 
+
+   * **Delivery** is the default option selected in the drop-down menu and it publishes the asset to both [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) and [Content Hub](/help/assets/product-overview.md), if both are enabled for Experience Manager Assets. 
+
+   * Selecting **Content Hub** publishes the asset just to Content Hub. Content Hub displays as an option only if it is enabled for Experience Manager Assets.
+
+   * If you do not select an option from the drop-down list, the default option enabled for your AEM as a Cloud Service environment is automatically applied to the asset.
+
+
+   For more information on the available options, see [Default Approval Target and publish destinations for approved assets](#default-approval-target-options-publish-destinations).
+
+   >[!NOTE]
+   >
+   >Setting an approval target is a limited availability feature. You can get it enabled or disabled by creating a support ticket. If you have Dynamic Media with OpenAPI enabled, it is enabled by default.
+
+   ![Approval status](/help/assets/assets/approval-status-delivery.png)
+
+1. Specify other asset properties and click **[!UICONTROL Save]**.
+
+Some additional points to note include:
+
+* When you are not using the default metadata form and cannot view the **[!UICONTROL Approval Target]** field, [edit your metadata form](/help/assets/metadata-assets-view.md#metadata-forms) to drag the **[!UICONTROL Approval for]** field from the available components to your metadata form and click **[!UICONTROL Save]**.
+
+* When you select the approval target as `Content Hub` using the Assets view, the assets are made available in Content Hub to the users that are part of the same organization.
+
+### Default Approval Target and publish destinations for approved assets {#default-approval-target-options-publish-destinations}
+
+The following table illustrates the prerequisites for display of `Approval Target` dropdown list and default approval target based on the enablement of DM with OpenAPI and Content Hub on your AEM as a Cloud Service environment:
+
+| Dynamic Media with OpenAPI| Content Hub | Approval Target dropdown list displays?| Default approval target for approved assets | Publish destination |
+| --- | --- | --- | --- |---|
+| Enabled | Enabled | Yes | Delivery | Dynamic Media with OpenAPI and Content Hub |
+| Not enabled | Enabled | Yes | Content Hub | Content Hub |
+| Enabled | Not enabled | Yes | Delivery | Dynamic Media with OpenAPI|
+| Not enabled | Not enabled | No | N/A | N/A |
 
 ## Automate approval for newly ingested assets in Admin view {#automate-approval-newly-ingested-assets}
 

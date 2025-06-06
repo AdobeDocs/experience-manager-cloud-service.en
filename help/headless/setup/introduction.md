@@ -38,4 +38,4 @@ However in a production situation, the tasks are performed by different personas
 
 ## Next Step {#next-step}
 
-Ready to learn more? Then get started by reading the first part of the Headless Setup: [Creating a Configuration.](create-configuration.md)
+Ready to learn more? Then get started by reading the first part of the Headless Setup: [Creating a Configuration](create-configuration.md).
