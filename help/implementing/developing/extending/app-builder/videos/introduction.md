@@ -1,7 +1,7 @@
 ---
 title: Introduction to App Builder
 description: Learn the basics of App Builder from its business value to its architecture.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect

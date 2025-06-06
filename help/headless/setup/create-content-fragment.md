@@ -23,7 +23,7 @@ Content authors will create any number of Content Fragments to represent the con
 
 1. Log into AEM as a Cloud Service and from the main menu select **Navigation** &gt; **Content Fragments**.
 
-1. Select the [folder you created previously.](create-assets-folder.md)
+1. Select the [folder you created previously](create-assets-folder.md).
 1. Select **Create**.
 1. The creation of a Content Fragment is presented as a dialog. 
    Select the location and model you want to use to create your content fragment.
@@ -43,8 +43,8 @@ Content Fragments can also reference other assets in AEM. [These assets need to 
 
 ## Next Steps {#next-steps}
 
-Now that you have created a Content Fragment, you can move on to the final part of the getting started guide and [create API requests to access and deliver content fragments.](create-api-request.md)
+Now that you have created a Content Fragment, you can move on to the final part of the getting started guide and [create API requests to access and deliver content fragments](create-api-request.md).
 
 >[!TIP]
 >
->For complete details about managing Content Fragments, see the [Content Fragments documentation](/help/sites-cloud/administering/content-fragments/overview.md)
+>For complete details about managing Content Fragments, see the [Content Fragments documentation](/help/sites-cloud/administering/content-fragments/overview.md).

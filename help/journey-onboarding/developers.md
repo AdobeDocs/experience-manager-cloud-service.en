@@ -8,11 +8,11 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 
 # Developer and Deployment Manager Tasks {#developer-deployment-manager}
 
-In this optional part of the [onboarding journey,](overview.md) you learn how developers and deployment managers can access git to develop applications and use pipelines to deploy them.
+In this optional part of the [onboarding journey](overview.md), you learn how developers and deployment managers can access git to develop applications and use pipelines to deploy them.
 
 ## The Story So Far {#story-so-far}
 
-You have come a long way in your onboarding journey! Congratulations! The system administrator has completed the onboarding journey by setting up the necessary cloud resources and granting access in the document [Assigning AEM Product Profiles.](assign-profiles-aem.md) 
+You have come a long way in your onboarding journey! Congratulations! The system administrator has completed the onboarding journey by setting up the necessary cloud resources and granting access in the document [Assigning AEM Product Profiles](assign-profiles-aem.md).
 
 At this point your developers and deployment managers can begin creating your own applications while your AEM users can start creating content. In this sense, your onboarding is complete and now it is time to use your new AEM as a Cloud Service system, which this document will illustrate.
 
@@ -130,7 +130,7 @@ Now that you have read this document you should:
 
 You have hit the ground running as a developer or deployment manager with not only working knowledge of Cloud Manager but also working environments, repositories, and pipelines! But there is more to learn about AEM as a Cloud Service's powerful CI/CD tools. Check out the [Additional Resources](#additional-resources) section for more details.
 
-If you are interested in how content authors access and use AEM as a Cloud service, continue on to the final part of the onboarding journey, [AEM User Tasks.](aem-users.md)
+If you are interested in how content authors access and use AEM as a Cloud service, continue on to the final part of the onboarding journey, [AEM User Tasks](aem-users.md).
 
 >[!TIP]
 >

@@ -4,6 +4,9 @@ title: Installing the AEM Sidekick
 feature: Edge Delivery Services
 exl-id: ec72939d-feb9-446e-9020-0b988ca96f54
 role: Admin, Architect, Developer
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Installing the AEM Sidekick
 

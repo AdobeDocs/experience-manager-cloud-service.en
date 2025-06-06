@@ -7,14 +7,15 @@ exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 ---
 # Add an Edge Delivery site to Cloud Manager {#adding}
 
-After you add an Edge Delivery site to your production program, your Edge Delivery Services license is applied to it.
-
-Adding an Edge Delivery site to Cloud Manager is required to [register a support ticket for your Edge Delivery project](/help/edge/overview.md##support-ticket).
-
-See also [Introduction to Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md).
+>[!IMPORTANT]
+>
+>Learn why you must onboard your Edge Delivery Services site to Cloud Manager.
+>See [Benefits of using the Adobe recommended path for Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
 
 **To add an Edge Delivery site to Cloud Manager:**
 
+1. Be sure you have first created your program with an Edge Delivery Services license before you onboard an Edge Delivery site in Cloud Manager.
+    See [Create a production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 1. Log into Cloud Manager at [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) and select the appropriate program.
 1. Do one of the following:
 
@@ -33,7 +34,7 @@ See also [Introduction to Edge Delivery Services in Cloud Manager](/help/impleme
     | Text field | Description |
     | - | --- |
     | Site Name | Enter the name of the Edge Delivery site that you are adding.<br>The name serves as a unique identifier for the site within Cloud Manager. |
-    | Repository URL | Enter the Git repository where your website's code is stored.<br>This field allows Cloud Manager to pull the code from that repository during the deployment process.  |
+    | Edge Delivery Origin | This value specifies the URL path to the content source for your site in Edge Delivery Services. It also links Cloud Manager to your live site.<br>The URL typically includes the *branch*, *project*, and *tenant*, as in the following example (for illustration purposes only):<br>`https://main--projectname--tenant.aem.live`  |
     | Site description (optional) | Enter a brief description of the Edge Delivery site that you are adding.<br>A description helps to identify and differentiate the site, making it easier to manage and recognize among other sites you have added. |
 
 1. In the lower-right corner of the dialog box, click **Add**.
@@ -42,12 +43,12 @@ See also [Introduction to Edge Delivery Services in Cloud Manager](/help/impleme
 
     | Step number | Description |
     | - | - |
-    | **1** | Add a file with the path and name `well-known/adobe/cloudmanager-challenge.txt` to the `main` branch of the Git repository that is listed in the **Repository URL** field. Do *not* add a period at the start of the location path.<br>If necessary, click ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) to copy the path to the clipboard. |
-    | **2** | Add the code seen in the text field in Step 2 to the file that you just created in Step 1.<br>If necessary, click ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) to copy the code to the clipboard. |
+    | **1** | Add a file with the path and name `well-known/adobe/cloudmanager-challenge.txt` to the `main` branch of the Git repository that is listed in the **Repository URL** field. Do *not* add a period at the start of the location path.<br>If necessary, click ![Copy icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) to copy the path to the clipboard. |
+    | **2** | Add the code seen in the text field in Step 2 to the file that you just created in Step 1.<br>If necessary, click ![Copy icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) to copy the code to the clipboard. |
     | **3** | Create a pull request in the Git repository for the changes you just created, then merge it to `main` to commit the code. |
 
 1. Click **Verify**.
 
 When the repository is verified, its status in the Edge Delivery sites table gets updated. A green circle with a white check mark inside indicates the status.
 
-In the same table, click ![Information about Edge Delivery site](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to view site details. This information includes the verified Repository URL, along with the Preview and Production website URLs.
+In the same table, click ![Information about Edge Delivery site icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to view site details. This information includes the verified Repository URL, along with the Preview and Production website URLs.

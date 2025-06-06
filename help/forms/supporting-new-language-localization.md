@@ -7,7 +7,9 @@ role: User, Developer
 ---
 # Supporting new locales for Adaptive Forms localization {#supporting-new-locales-for-adaptive-forms-localization}
 
-<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+>[!NOTE]
+>
+> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components.
 
 
 | Version | Article link |
@@ -48,7 +50,7 @@ To add support for a new locale at the Adaptive Forms runtime:
 #### 1. Clone the repository {#clone-the-repository}
 
 1. From the command line, navigate to where you would like to clone the Forms Cloud Service repository.
-1. Execute the command that you [retrieved from Cloud Manager.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) It is similar to `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`. 
+1. Execute the command that you [retrieved from Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git). It is similar to `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`. 
 1. Use the git user name and password to clone the repository. 
 1. Open the cloned Forms Cloud Service repository folder in your preferred editor. 
 

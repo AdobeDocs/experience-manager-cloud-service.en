@@ -34,13 +34,17 @@ When a customer managed certificate expires any domains that are in use with the
 
 A user must be a member of the **Business Owner** or **Deployment Manager** role to complete this task.
 
+>[!IMPORTANT]
+>
+>When adding or updating an SSL certificate, do not include the new certificate in the certificate chain. Including it prevents the upload from completing successfully. 
+
 **To update an expired customer managed SSL certificate:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate program.
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 1. In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the side menu. 
 1. Under the **Services** heading, click ![Lock closed icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL Certificates**. 
-1. In the row of the expired customer managed certificate that you want to update, click https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg at the far right, then click **View and Update**.
+1. In the row of the expired customer managed certificate that you want to update, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) at the far right, then click **View and Update**.
 
    ![Update an expired customer managed SSL certification](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
@@ -56,7 +60,7 @@ A user must be a member of the **Business Owner** or **Deployment Manager** role
 
 >[!NOTE]
 >
->If you have two or more SAN certificates that cover the same SAN domain entry, if that domain is covered by one certificate and the other is updated, the latter is installed for the domain.
+>If two or more SAN certificates cover the same SAN domain entry, and one of them is updated, the system installs the updated certificate for the domain.
 >
 >See [Troubleshoot SSL Certificate Problems](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert) for more information.
 

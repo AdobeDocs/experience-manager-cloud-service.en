@@ -15,7 +15,7 @@ The Configuration Browser provides a generic configuration API, content structur
 
 In the context of headless content management in AEM, think of a configuration as a workplace within AEM where you can create your Content Models, which define the structure of your future content and Content Fragments. You can have multiple configurations to separate these models.
 
-If you are familiar with [page templates in a full-stack AEM implementation,](/help/sites-cloud/authoring/page-editor/templates.md) the usage of configurations for the management of Content Models is similar.
+If you are familiar with [page templates in a full-stack AEM implementation](/help/sites-cloud/authoring/page-editor/templates.md), the usage of configurations for the management of Content Models is similar.
 
 ## How to Create a Configuration {#how-to-create-a-configuration}
 
@@ -43,8 +43,8 @@ You can create multiple configurations if necessary. Configurations can also be 
 
 ## Next Steps {#next-steps}
 
-Using this configuration, you can now move on to the second part of the getting started guide and [create Content Fragment Models.](create-content-model.md)
+Using this configuration, you can now move on to the second part of the getting started guide and [create Content Fragment Models](create-content-model.md).
 
 >[!TIP]
 >
->For complete details about the Configuration Browser, [see the Configuration Browser documentation](/help/implementing/developing/introduction/configurations.md).
+>For complete details about the Configuration Browser, see the [Configuration Browser documentation](/help/implementing/developing/introduction/configurations.md).

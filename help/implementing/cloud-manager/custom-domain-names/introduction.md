@@ -57,9 +57,7 @@ Adding a custom domain name requires interaction between the DNS service and Clo
 >
 >Setting up custom domain names with AEM as a Cloud service is typically a simple process. However, on occasion, domain delegation issues can occur which can take 1-2 business days to resolve. For this reason, it is recommended to install the domains well before their go live date. See the document [Check domain name status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) for more information.
 
-## Limitations {#limitations}
-
-There are several limitations to using custom domain names with AEMaaCS.
+## Usage notes {#usage-notes}
 
 * Custom domain names are supported in Cloud Manager only for publish and preview services for Sites programs.
   * Custom domains for author services are not supported.
@@ -69,6 +67,7 @@ There are several limitations to using custom domain names with AEMaaCS.
 * Only one domain name can be added at a time.
 * AEM as a Cloud Service does not support wildcard domains such as `*.example.com`.
 * Before adding a custom domain name, a valid SSL certificate that contains the custom domain name (wildcard certificates are valid) must be installed for your program.
+* Additional configuration steps are required to use a custom domain name with [the Front-End Pipeline feature](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md#custom-domains).
 
 ## Get started {#get-started}
 

@@ -4,6 +4,9 @@ description: Learn how content publishing works with Edge Delivery Services and 
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
 role: User
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 
 # Publishing Content for Edge Delivery Services {#publishing-edge}
@@ -15,7 +18,7 @@ With Edge Delivery Services, publishing content is seamless regardless of your c
 
 ## Publishing Flow from AEM {#publishing-flow}
 
-When using the Universal Editor to author AEM content, publishing is as simple as clicking the **Publish** button in the Universal Editor. Please see the document [Publishing Content with the Universal Editor.](/help/sites-cloud/authoring/universal-editor/publishing.md)
+When using the Universal Editor to author AEM content, publishing is as simple as clicking the **Publish** button in the Universal Editor. Please see the document [Publishing Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md).
 
 The flow of information when publishing is as follows. Once the author starts publication, this flow is automatic and is illustrated here for information purposes.
 

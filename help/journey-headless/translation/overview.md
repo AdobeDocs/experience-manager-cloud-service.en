@@ -25,7 +25,7 @@ This guide leads you through the most important headless translation topics so t
 
 The goal is to give you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it. If you are not familiar with any of these topics, this is your ideal place to start.
 
-If you are already familiar with AEM, headless, and translation, you may already have the foundational knowledge of this journey. Consider referring to our technical documentation linked under the [additional resources section below.](#additional-resources)
+If you are already familiar with AEM, headless, and translation, you may already have the foundational knowledge of this journey. Consider referring to our technical documentation linked under the [additional resources section below](#additional-resources).
 
 ## AEM Documentation Journeys {#documentation-journeys}
 

@@ -4,6 +4,9 @@ title: Development Collaboration and Good Practices
 feature: Edge Delivery Services
 exl-id: e7f9b0f7-d22f-44ec-b8b7-85daa34de2a0
 role: Admin, Architect, Developer
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Development Collaboration and Good Practices
 

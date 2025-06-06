@@ -8,7 +8,7 @@ solution: Experience Manager Sites
 ---
 # Content Fragment Models {#content-fragment-models}
 
-Content Fragment Models in AEM define the structure of content for your [content fragments,](/help/assets/content-fragments/content-fragments.md) serving as a foundation of your headless content.
+Content Fragment Models in AEM define the structure of content for your [content fragments](/help/assets/content-fragments/content-fragments.md), serving as a foundation of your headless content.
 
 To use Content Fragment Models you:
 
@@ -16,6 +16,12 @@ To use Content Fragment Models you:
 1. [Create](#creating-a-content-fragment-model), and [configure](#defining-your-content-fragment-model), your Content Fragment Models
 1. [Enable your Content Fragment Models](#enabling-disabling-a-content-fragment-model) for use when creating Content Fragments 
 1. [Allow your Content Fragment Models on the required Assets folders](#allowing-content-fragment-models-assets-folder) by configuring **Policies**.
+
+>[!NOTE]
+>
+>Content Fragments are a Sites feature, but are stored as **Assets**. 
+>
+>Content Fragments and Content Fragment Models are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** console, though Content Fragments can still be managed from the **Assets** console, and Content Fragment Models from the **Tools** console. This section covers management from the **Assets** and **Tools** consoles.
 
 ## Creating a Content Fragment Model {#creating-a-content-fragment-model}
 
@@ -255,6 +261,7 @@ Content Fragments can form nested content, using either of the following data ty
 * **[Fragment Reference](#fragment-reference-nested-fragments)** (Nested Fragments)
   * References other fragments, dependent on the specific models specified.
   * Lets you include/retrieve structured data.
+
     >[!NOTE]
     >
     >This method is of particular interest in conjunction with [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
@@ -428,6 +435,7 @@ To configure the **Policies** for **Allowed Content Fragment Models**:
 1. **Save** any changes.
 
 The Content Fragment Models allowed for a folder are resolved as follows:
+
 * The **Policies** for **Allowed Content Fragment Models**.
 * If empty, then try to determine the policy using the inheritance rules.
 * If the inheritance chain does not deliver a result, then look at the **Cloud Services** configuration for that folder (also first directly and then via inheritance).
@@ -504,7 +512,7 @@ This feature provides governance for Content Fragment Models that have been publ
 
 ### The Requirements {#the-requirements}
 
-* To make users aware of the risks when editing models that are already used for live content delivery - in other words, models that have been published). 
+* To make users aware of the risks when editing models that are already used for live content delivery - in other words, models that have been published.
 
 * Also, to avoid unintended changes. 
 

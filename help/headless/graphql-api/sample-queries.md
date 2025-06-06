@@ -9,12 +9,6 @@ role: Admin, Developer
 
 Learn to use GraphQL with AEM so you can serve content headlessly by exploring sample content and queries.
 
->[!IMPORTANT]
->
->Various features of the GraphQL API for use with Content Fragments are available through the Early Adopter Program.
->
->To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
-
 >[!NOTE]
 >
 >Read this page along with the following:
@@ -1880,6 +1874,10 @@ For the delivery of the URL to a Dynamic Media asset
 * See [Sample query for Dynamic Media asset delivery by URL - Image Reference](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
 * See [Sample query for Dynamic Media asset delivery by URL - Multiple References](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+
+For the delivery of remote assets, that are not local to the current AEM instance, from the Content Fragment Editor. 
+
+* See [Sample query for Dynamic Media for OpenAPI asset support (Remote Assets)](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-for-openapi-asset-support)
 
 ## The Sample Content Fragment Structure (used with GraphQL) {#content-fragment-structure-graphql}
 

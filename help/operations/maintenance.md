@@ -266,7 +266,7 @@ Keep in mind that in order for the configuration to be valid:
 * all properties must be defined. There are no inherited defaults.
 * the types (integers, strings, booleans, etc) in the property tables below must be respected.
 
-**4** - Create a config pipeline in Cloud Manager, as described in the [config pipeline article.](/help/operations/config-pipeline.md#managing-in-cloud-manager) Sandboxes and rapid development environments (RDEs) do not support purging.  
+**4** - Create a config pipeline in Cloud Manager, as described in the [config pipeline article](/help/operations/config-pipeline.md#managing-in-cloud-manager).  
 
 ### Version Purge {#version-purge}
 

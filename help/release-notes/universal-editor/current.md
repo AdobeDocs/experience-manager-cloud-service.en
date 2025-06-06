@@ -1,30 +1,26 @@
 ---
-title: Universal Editor 2054.01.16 Release Notes
-description: These are the release notes for the 2025.01.16 release of the Universal Editor.
+title: Universal Editor 2025.04.04 Release Notes
+description: These are the release notes for the 2025.04.04 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.01.16 Release Notes {#release-notes}
+# Universal Editor 2025.04.04 Release Notes {#release-notes}
 
-These are the release notes for the 16 January 2025 release of the Universal Editor.
+These are the release notes for the 4 April 2025 release of the Universal Editor.
 
 >[!TIP]
 >
->For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+>For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-## What’s New {#what-is-new}
+## What's New {#what-is-new}
 
-* **Deprecation of CORS Library < 3.0.0** - To ensure future compatibility and to enhance security, the Universal Editor now exclusively supports version 3.0.0 or higher of the 
-`@Adobe Express/universal-editor-cors` library.
-  * The library is now delivered solely via [`universal-editor-service.adobe.io/cors.js`.](http://universal-editor-service.adobe.io/cors.js)
-  * A deprecation notification appears for users when opening a page that uses older versions of the CORS library, prompting them to update.
-* **Extension Point for Landing Page** - [A new extension point](/help/implementing/universal-editor/customizing.md#extending) has been introduced for extensions to appear in the side rail of the Universal Editor's landing page.
-   * Now developers can specify whether extensions are applicable to the editor, the landing page, or both, offering greater customization and usability.
+* **Dynamic Media with OpenAPI support** - [The asset selector](/help/assets/overview-asset-selector.md#repository-switcher) in the Universal Editor now supports [Dynamic Media with OpenAPI and remote assets](/help/assets/integrate-remote-approved-assets-with-sites.md)
+* **IP Allow Listing** - The Universal Editor now supports [IP allow lists.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#universal-editor) You can check the IPs of the Universal Editor Service using [this endpoint.](http://universal-editor-service.adobe.io/ip-ranges)
 
 ## Other Improvements {#other-improvements}
 
-* **Fixed invalid URLs in Recent items on the landing page** - An issues was resolved where URLs displayed in the "Recents" list on the Universal Editor’s landing page were broken.
-* **Theme Synchronization in Unified Shell** - The Universal Editor now dynamically synchronizes the theme with the system's Unified Shell settings and automatically adjusts between light and dark modes.
-  * This ensures a consistent visual appearance across micro-frontends, including fragment and asset selectors.
+* Remove layout context was fixed.
+* Improvements were made to e2e testing.
+* Dependency updates and code cleanup was performed.

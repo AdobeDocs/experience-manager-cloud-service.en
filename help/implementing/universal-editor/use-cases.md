@@ -50,6 +50,8 @@ If this is your use case, as an immediate next step, please see the following do
 
 Once you have read that document, you can return to this page to learn about the WYSIWYG authoring use case and how the Universal Editor works in general.
 
+{{ue-headless-auth}}
+
 ## How the Universal Editor Works {#how-ue-works}
 
 The power of the Universal Editor is its ability to author any content in-place, providing the content author an entirely intuitive and unified UI no matter what the content.
@@ -63,7 +65,7 @@ The Universal Editor works in the following way.
 1. The content author edits the page content in an intuitive WYSIWYG interface, editing in-place.
 1. The Universal Editor persists the changes automatically back to the data source.
 
-If you would like to learn more about the architecture of the Universal Editor, please see the document [Universal Editor Architecture.](/help/implementing/universal-editor/architecture.md)
+If you would like to learn more about the architecture of the Universal Editor, please see the document [Universal Editor Architecture](/help/implementing/universal-editor/architecture.md).
 
 ## Universal Editor Concepts {#concepts}
 
@@ -75,4 +77,5 @@ For a page or app to be editable by the Universal Editor, it must be properly in
 
 The Universal editor can also be adapted to your project needs.
 
-* [Customizing the Universal Editor Authoring Experience](/help/implementing/universal-editor/customizing.md) - The Universal Editor experience can be adapted by filtering various aspects of the editor or by extending the functionality of the editor.
+* [Customizing the Universal Editor](/help/implementing/universal-editor/customizing.md) - The Universal Editor experience can be adapted by filtering various aspects of the editor or by extending the functionality of the editor.
+* [Extending the Universal Editor](/help/implementing/universal-editor/extending.md) - The UI of the Universal Editor can be extending to expand its capabilities to meet your project needs.

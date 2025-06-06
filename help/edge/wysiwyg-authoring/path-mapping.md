@@ -4,6 +4,9 @@ description: Learn how to map page paths used on the AEM authoring instance to p
 feature: Edge Delivery Services
 role: User
 exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Path Mapping for Edge Delivery Services {#path-mapping}
 
@@ -16,7 +19,7 @@ To be able to author WYSIWYG content using AEM and publish it to Edge Delivery S
 * It maps and creates a relationship between page paths used on your AEM authoring instance and the public page paths used on your website.
 * It controls which content (pages, sheets, assets, etc.) are published to Edge Delivery Services.
 
-The path mapping must be configured for each project individually and according to the project's content and URL structure. It is used by AEM during content publishing and while editing content in the [Universal Editor.](/help/sites-cloud/authoring/universal-editor/navigation.md)
+The path mapping must be configured for each project individually and according to the project's content and URL structure. It is used by AEM during content publishing and while editing content in the [Universal Editor](/help/sites-cloud/authoring/universal-editor/navigation.md).
 
 ## Configuration Format {#configuration-format}
 

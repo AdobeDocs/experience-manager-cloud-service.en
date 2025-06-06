@@ -12,7 +12,7 @@ Learn how to set up a new program and pipeline to deploy the add-on.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the Adobe Experience Manager (AEM) Reference Demos Add-on journey, [Understand Reference Demo Add-on Installation,](installation.md) you learned how the installation process of the Reference Demos Add-on works, illustrating how the different pieces work together. You should now:
+In the previous document of the Adobe Experience Manager (AEM) Reference Demos Add-on journey, [Understand Reference Demo Add-on Installation](installation.md), you learned how the installation process of the Reference Demos Add-on works, illustrating how the different pieces work together. You should now:
 
 * Have a basic understanding of Cloud Manager.
 * Understand how pipelines deliver content and configuration to AEM.

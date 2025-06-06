@@ -14,7 +14,11 @@ solution: Experience Manager Sites
 >
 >Content Fragments are a Sites feature, but are stored as **Assets**. 
 >
->There are two editors for authoring Content Fragments; although the basic functionality is the same, there are some differences. This section covers the original editor, primarily accessed from the **Assets** console. See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for details of the new editor (primarily accessed from the **Content Fragments** console).
+>There are two editors for authoring Content Fragments - the new editor and the original editor. The new editor is the default. Although the basic functionality is the same, there are some differences. 
+>
+>This section covers the original editor. This is [opened via the new editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor).
+>
+>See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for full details of the new editor.
 
 From the **Variations** tab you can do the following:
 
@@ -41,7 +45,7 @@ Perform a range of other actions depending on the data-type being edited; for ex
 
 ## Authoring your Content {#authoring-your-content}
 
-When you open your content fragment for editing, the **Variations** tab is open by default. Here you can author the content, for Master or any variations you have. The structured fragment contains fields of various data-types that were defined in the content model. 
+When you open your content fragment for editing in the original editor, the **Variations** tab is open by default. Here you can author the content, for Master or any variations you have. The structured fragment contains fields of various data-types that were defined in the content model. 
 
 For example:
 
@@ -99,7 +103,7 @@ The full-screen text editor provides:
 
 The following actions are also available (for all the [formats](#formats)) when the full-screen editor (that is, multi-line text) is open:
 
-* Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text,](#plain-text) [Markdown](#markdown))
+* Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text](#plain-text), [Markdown](#markdown))
 
 * [Upload content](#uploading-content)
 

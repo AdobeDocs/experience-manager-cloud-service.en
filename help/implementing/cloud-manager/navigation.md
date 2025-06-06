@@ -209,7 +209,7 @@ Each program has numerous options and data associated with it. These options and
 * ![Web pages icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) [Edge Delivery Sites](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) - Manage Edge Delivery sites
 * ![Settings icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [Domain Settings](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Manage custom domain names for the program
 * ![Lock closed icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - Manage SSL certificates for the program
-* ![Social network icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [CDN Configurations](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Manage CDN configurations 
+* ![Social network icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [Domain Mappings](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Manage Domain Mappings 
 * ![Task list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Define allow lists for certain IP addresses
 * ![Box icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [Content Sets](/help/implementing/developing/tools/content-copy.md) - Sets of content created for copy purposes
 * ![History icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [Copy Content Activity](/help/implementing/developing/tools/content-copy.md) - Content copy activities
@@ -237,7 +237,7 @@ For a live program, the status of your last deployment with links for details an
 
 The **Environments** card gives you an overview of your environments and links for quick actions.
 
-The **Environments** card only lists three environments. Click **Show All** to see all environments of the program.
+The **Environments** card only lists three environments. Click ![Workflow icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Show All** to see all environments of the program.
 
 See also [Manage Environments](/help/implementing/cloud-manager/manage-environments.md).
 
@@ -245,7 +245,7 @@ See also [Manage Environments](/help/implementing/cloud-manager/manage-environme
 
 The **Pipelines** card gives you an overview of your pipelines and links for quick actions.
 
-The **Pipelines** card only lists three pipelines. Click **Show All** to see all pipelines of the program.
+The **Pipelines** card only lists three pipelines. Click ![Workflow icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Show All** to see all pipelines of the program.
 
 See also [Manage Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) for details on how to manage your pipelines.
 

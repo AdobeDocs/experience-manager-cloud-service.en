@@ -177,7 +177,7 @@ On local development (using the SDK), `/apps` and `/libs` can be written to dire
 >
 
 >[!NOTE]
->Some customers will have the option to try out a revamped experience for the AEM Cloud Service Developer Console. See [this article](/help/implementing/developing/introduction/aem-developer-console.md) for more information.]
+>Some customers will have the option to try out a revamped experience for the AEM Cloud Service Developer Console. See [this article](/help/implementing/developing/introduction/aem-developer-console.md) for more information.
 
 Customers can access CRXDE lite on the author tier's development environment but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime so attempting to do so will result in errors.
 
@@ -185,7 +185,7 @@ Instead, the Repository Browser can be launched from the AEM as a Cloud Service 
 
 A set of tools for debugging AEM as a Cloud Service developer environments are available in the AEM as a Cloud Service Developer Console for RDE, dev, stage, and production environments. The url can be determined by adjusting the Author or Publish service urls as follows:
 
-`https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
+`https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
 As a shortcut, the following Cloud Manager CLI command can be used to launch the AEM as a Cloud Service Developer Console based on an environment parameter described below:
 

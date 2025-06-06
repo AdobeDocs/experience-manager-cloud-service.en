@@ -64,7 +64,7 @@ The following release (2021.6.0) will be on June 28, 2021.
 
 #### What is new in Dynamic Media {#what-is-new-dm}
 
-* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization enables you to deliver best quality images efficiently, on devices with high resolution displays and constrained network bandwidth. For more information, see [Smart imaging FAQs](/help/assets/dynamic-media/imaging-faq.md) and [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization enables you to deliver best quality images efficiently, on devices with high resolution displays and constrained network bandwidth. For more information, see [Smart imaging FAQs](/help/assets/dynamic-media/imaging-faq.md) and [Image optimization with next generation image formats WebP and AVIF](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4).
 * Introduced support for next generation image format AVIF in Dynamic Media delivery (fmt URL modifier).
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}

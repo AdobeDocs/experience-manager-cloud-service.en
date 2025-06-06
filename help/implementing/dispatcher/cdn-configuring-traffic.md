@@ -12,14 +12,14 @@ AEM as a Cloud Service offers a collection of features configurable at the [Adob
 
 * [Request transformations](#request-transformations) - modify aspects of incoming requests, including headers, paths and parameters.
 * [Response transformations](#response-transformations) - modify headers that are on the way back to the client (for example, a web browser).
-* [Client-side redirects](#client-side-redirectors) - trigger a browser redirect.
+* [Server-side redirects](#server-side-redirectors) - trigger a browser redirect.
 * [Origin selectors](#origin-selectors) - proxy to a different origin backend.
 
 Also configurable at the CDN are Traffic Filter Rules (including WAF), which control what traffic is allowed or denied by the CDN. This feature is already released and you can learn more about it in the [Traffic Filter Rules including WAF rules](/help/security/traffic-filter-rules-including-waf.md) page.
 
 Additionally, if the CDN cannot contact its origin, you can write a rule that references a self-hosted custom error page (which is then rendered). Learn more about this by reading the [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md) article.
 
-All these rules, declared in a configuration file in source control, are deployed by using the Cloud Manager [config pipeline.](/help/operations/config-pipeline.md) Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
+All these rules, declared in a configuration file in source control, are deployed by using the Cloud Manager [config pipeline](/help/operations/config-pipeline.md). Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
 
 ## Order of Evaluation {#order-of-evaluation}
 
@@ -53,9 +53,11 @@ The rule types in the sections below share a common syntax.
 
 A rule is referenced by a name, a conditional "when clause", and actions.
 
-The when clause determines whether a rule will be evaluated, based on properties including domain, path, query strings, headers, and cookies. The syntax is the same across rule types; for details, see the [Condition Structure section](/help/security/traffic-filter-rules-including-waf.md#condition-structure) in the Traffic Filter Rules article.
+The "when" clause determines whether a rule will be evaluated, based on properties including domain, path, query strings, headers, and cookies. The syntax is the same across rule types; for details, see the [Condition Structure section](/help/security/traffic-filter-rules-including-waf.md#condition-structure) in the Traffic Filter Rules article.
 
 The details of the actions node differ per rule type, and are outlined in the individual sections below.
+
+In the configuration rules, you can reference secrets defined as environment variables (see [Configuration Secrets](/help/implementing/dispatcher/cdn-credentials-authentication.md)).
 
 ## Request Transformations {#request-transformations}
 
@@ -100,7 +102,6 @@ data:
         actions:
           - type: unset
             reqHeader: x-some-header
-
       - name: unset-matching-query-params-rule
         when:
           reqProperty: path
@@ -108,7 +109,6 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^removeMe_.*$
-
       - name: unset-all-query-params-except-exact-two-rule
         when:
           reqProperty: path
@@ -116,7 +116,6 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^(?!leaveMe$|leaveMeToo$).*$
-
       - name: multi-action
         when:
           reqProperty: path
@@ -128,7 +127,6 @@ data:
           - type: set
             reqHeader: x-header2
             value: '201'
-
       - name: replace-html
         when:
           reqProperty: path
@@ -139,7 +137,13 @@ data:
             op: replace
             match: \.html$
             replacement: ""
-
+      - name: log-on-request
+        when: "*"
+        actions:
+          - type: set
+            logProperty: forwarded_host
+            value:
+              reqHeader: x-forwarded-host
 ```
 
 **Actions**
@@ -148,11 +152,20 @@ Explained in the table below are the available actions.
 
 | Name      | Properties               | Meaning     |
 |-----------|--------------------------|-------------|
-| **set** |(reqProperty or reqHeader or queryParam or reqCookie), value|Sets a specified request parameter (only "path" property supported), or request header, query parameter, or cookie, to a given value, which could be a string literal or request parameter. |
-|     |var, value|Sets a specified request property to a given value.|
-| **unset** |reqProperty|Removes a specified request parameter (only "path" property supported), or request header, query parameter, or cookie, to a given value, which could be a string literal or request parameter.|
-|         |var|Removes a specified variable.|
-|         |queryParamMatch|Removes all query parameters that match a specified regular expression.|
+| **set** |reqProperty, value|Sets a specified request parameter (only "path" property supported) |
+|     |reqHeader, value|Sets a specified request header to a given value.|
+|     |queryParam, value|Sets a specified query parameter to a given value.|
+|     |reqCookie, value|Sets a specified request cookie to a given value.|
+|     |logProperty, value|Sets a specified CDN log property to a given value.|
+|     |var, value|Sets a specified variable to a given value.|
+| **unset** |reqProperty|Removes a specified request parameter (only "path" property supported)|
+|     |reqHeader, value|Removes a specified request header.|
+|     |queryParam, value|Removes a specified query parameter.|
+|     |reqCookie, value|Removes a specified cookie.|
+|     |logProperty, value|Removes a specified CDN log property.|
+|     |var|Removes a specified variable.|
+|     |queryParamMatch|Removes all query parameters that match a specified regular expression.|
+|     |queryParamDoesNotMatch|Removes all query parameters that do not match a specified regular expression.|
 | **transform** |op:replace, (reqProperty or reqHeader or queryParam or reqCookie or var), match, replacement  | Replaces part of the request parameter (only "path" property supported), or request header, or query parameter, or cookie, or variable with a new value. |
 |              |op:tolower, (reqProperty or reqHeader or queryParam or reqCookie or var) | Sets the request parameter (only "path" property supported), or request header, or query parameter, or cookie, or variable to its lowercase value. |
 
@@ -206,7 +219,6 @@ You can set variables during the request transformation and then reference them 
 Configuration example:
 
 ```
-
 kind: "CDN"
 version: "1"
 metadata:
@@ -233,17 +245,65 @@ data:
           - type: set
             respHeader: x-some-header
             value: some header value
-
 ```
 
-## Response Transformations {#response-transformations}
+### Log property {#logproperty}
 
-Response transformation rules allow you to set and unset headers of the CDN's outgoing responses. Also, see the example above for referencing a variable previously set in a request transformation rule. The response's status code can also be set.
+You can add your own log properties in your CDN logs using request and response transformations.
 
 Configuration example:
 
 ```
+requestTransformations:
+  rules:
+    - name: log-on-request
+      when: "*"
+      actions:
+        - type: set
+          logProperty: forwarded_host
+          value:
+            reqHeader: x-forwarded-host
+responseTransformations:
+  rules:
+    - name: log-on-response
+      when: '*'
+      actions:
+        - type: set
+          logProperty: cache_control
+          value:
+            respHeader: cache-control
+```
 
+Log example:
+```
+{
+"timestamp": "2025-03-26T09:20:01+0000",
+"ttfb": 19,
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"rid": "974e67f6",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"host": "example.com",
+"url": "/content/hello.png",
+"method": "GET",
+"res_ctype": "image/png",
+"cache": "PASS",
+"status": 200,
+"res_age": 0,
+"pop": "PAR",
+"rules": "",
+"forwarded_host": "example.com",
+"cache_control": "max-age=300"
+}
+```
+
+## Response Transformations {#response-transformations}
+
+Response transformation rules allow you to set and unset headers, cookies and status of the CDN's outgoing responses. Also, see the example above for referencing a variable previously set in a request transformation rule.
+
+Configuration example:
+
+```
 kind: "CDN"
 version: "1"
 metadata:
@@ -259,7 +319,6 @@ data:
           - type: set
             value: value-set-by-resp-rule
             respHeader: x-resp-header
-
       - name: unset-response-header-rule
         when:
           reqProperty: path
@@ -267,8 +326,6 @@ data:
         actions:
           - type: unset
             respHeader: x-header1
-
-      # Example: Multi-action on response header
       - name: multi-action-response-header-rule
         when:
           reqProperty: path
@@ -280,7 +337,6 @@ data:
           - type: set
             respHeader: x-resp-header-2
             value: value-set-by-resp-rule-2
-      # Example: setting status code
       - name: status-code-rule
         when:
           reqProperty: path
@@ -288,8 +344,25 @@ data:
         actions:
           - type: set
             respProperty: status
-            value: '410'        
-
+            value: '410'
+      - name: set-response-cookie-with-attributes-as-object
+        when: '*'
+        actions:
+          - type: set
+            respCookie: first-name
+            value: first-value
+            attributes:
+              expires: '2025-08-29T10:00:00'
+              domain: example.com
+              path: /some-path
+              secure: true
+              httpOnly: true
+              extension: ANYTHING
+      - name: unset-response-cookie
+        when: '*'
+        actions:
+          - type: unset
+            respCookie: third-name
 ```
 
 **Actions**
@@ -298,9 +371,15 @@ Explained in the table below are the available actions.
 
 | Name      | Properties               | Meaning     |
 |-----------|--------------------------|-------------|
-| **set** |reqHeader, value|Sets a specified header to a given value in the response.|
-|          |respProperty, value|Sets a response property. Supports just the property "status" in order to set the status code.|
+| **set** |respProperty, value|Sets a response property. Supports just the property "status" in order to set the status code.|
+|     |respHeader, value|Sets a specified response header to a given value.|
+|     |respCookie, attributes (expires, domain, path, secure, httpOnly, extension), value|Sets a specified request cookie with specific attributes to a given value.|
+|     |logProperty, value|Sets a specified CDN log property to a given value.|
+|     |var, value|Sets a specified variable to a given value.|
 | **unset** |respHeader|Removes a specified header from the response.|
+|     |respCookie, value|Removes a specified cookie.|
+|     |logProperty, value|Removes a specified CDN log property.|
+|     |var|Removes a specified variable.|
 
 ## Origin Selectors {#origin-selectors}
 
@@ -309,7 +388,6 @@ You can leverage the AEM CDN to route traffic to different backends, including n
 Configuration example:
 
 ```
-
 kind: "CDN"
 version: "1"
 metadata:
@@ -331,7 +409,6 @@ data:
         # forwardCookie: true
         # forwardAuthorization: true
         # timeout: 20
-
 ```
 
 **Actions**
@@ -393,7 +470,7 @@ data:
 > Since the Adobe Managed CDN is used, make sure to configure push invalidation in **managed** mode, by following the Edge Delivery Services [Setup push invalidation documentation](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
 
 
-## Client-side Redirects {#client-side-redirectors}
+## Server-side Redirects {#server-side-redirectors}
 
 You can use client side redirect rules for 301, 302 and similar client side redirects. If a rule matches, the CDN responds with a status line that includes the status code and message (for example, HTTP/1.1 301 Moved Permanently), as well as the location header set.
 
@@ -452,7 +529,7 @@ redirects:
       action:
         type: redirect
         location:
-          reqProperty: path
+          reqProperty: url
           transform:
             - op: replace
               match: '^/(.*)$'

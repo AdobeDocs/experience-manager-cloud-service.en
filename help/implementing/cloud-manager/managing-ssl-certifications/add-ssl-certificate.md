@@ -13,7 +13,7 @@ Learn how to add your own SSL certificate or and Adobe managed DV (Domain Valida
 
 >[!NOTE]
 >
->If you use a customer managed (OV/EV) SSL certificate and a customer managed CDN provider, you can skip adding an SSL certificate and go directly to [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) when ready.
+>If you use a customer managed (OV/EV) SSL certificate and a customer managed CDN provider, you can skip adding an SSL certificate and go directly to [Add a Domain Mapping](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) when ready.
 
 Provisioning a certificate can take several days. Therefore, Adobe advises provisioning your own certificate well in advance of any deadline or go-live date to avoid delays.
 
@@ -79,13 +79,17 @@ Need help with choosing whether to use an Adobe managed SSL certificate (recomme
 
 You now have added a working Adobe managed DV SSL certificate for your project. This step is often the first to set up a custom domain name.
 
-You are now ready to add a [CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md).
+You are now ready to add a [CDN configuration](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md).
 
 ## Add a customer managed (OV/ED) SSL certificate {#add-customer-managed-ssl-cert}
 
 <!-- IF THIS TOPIC GET UPDATED, REMEMBER TO UPDATE THE STEPS ALSO IN THE "MANAGE SSL CERTIFICATES TOPIC TOO -->
 
 Need help with choosing whether to use an Adobe managed SSL certificate (recommended) or a customer managed SSL certificate with your domain? See [Choosing which SSL certificate to add](#which-ssl-to-add) 
+
+>[!IMPORTANT]
+>
+>When adding or updating an SSL certificate, do not include the new certificate in the certificate chain. Including it prevents the upload from completing successfully.
 
 **To add a customer managed (OV/EV) SSL certificate:**
 
@@ -122,7 +126,7 @@ Need help with choosing whether to use an Adobe managed SSL certificate (recomme
 
 You now have added a working SSL certificate for your project. This step is often the first to set up a custom domain name.
 
-You are now ready to add a [CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md).
+You are now ready to add a [CDN configuration](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md).
     
 
 

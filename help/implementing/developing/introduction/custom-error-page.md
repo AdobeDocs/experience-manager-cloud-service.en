@@ -15,7 +15,7 @@ To respond to errors, AEM provides a `404.jsp` script under `/libs/sling/servlet
 
 >[!TIP]
 >
->Because AEM is based on Apache Sling, further information is available [in the Apache error handling documentation.](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html)
+>Because AEM is based on Apache Sling, further information is available [in the Apache error handling documentation](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html).
 
 >[!NOTE]
 >

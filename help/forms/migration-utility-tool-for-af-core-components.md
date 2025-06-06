@@ -25,22 +25,33 @@ The Forms Conversion Utility converts Adaptive Forms that are based on older Fou
 
 >[!NOTE]
 > 
-> It is recommended to install the AEM Modernize Tools on your local AEM setup. Migrate the Adaptive Forms based on Foundation Components to Core Component based forms. Download the form along with its assets. Then, upload the form and its assets to the required environment.
+>It is recommended to install the AEM Modernize Tools on your local AEM setup. Migrate the Adaptive Forms based on Foundation Components to Core Component based forms. Download the form along with its assets. Then, upload the form and its assets to the required environment.
 
 ## Considerations while using the AEM Modernize Tools {#considerations}
 
- * On successful conversions, all the rules applied to the form are removed. Rules are not automatically migrated. You should manually recreate and apply these rules to the converted form.
+* On successful conversions, all the rules applied to the form are removed. Rules are not automatically migrated. You should manually recreate and apply these rules to the converted form.
 * The translation settings used in the original form are not carried over. Reconfigure translation for the converted form.
-<!-- * If the form built on Foundation Components contains custom function rules, you have to rewrite these rules for the converted form based on Core Components.-->
+* If the form built on Foundation Components contains scripts or custom function rules, you have to rewrite these for the converted form based on Core Components.
+* The following OOTB foundation components are not yet supported in Core Components and are therefore deleted in the converted form:
+
+  * Adobe Sign Block
+  * Chart
+  * File Attachment Listing
+  * Footnote Placeholder
+  * Image Choice
+  * Next Button
+  * Previous Button
+  * Scribble Signature
+  * Summary Step
+  * Toolbar
 
 ## Pre-requisites to use AEM Modernize Tools
 
-* [Set up local development environment for AEM Forms](/help/forms/setup-local-development-environment.md)
-* [Enable Adaptive Forms Core Components for your environment.](/help/forms/enable-adaptive-forms-core-components.md)
-
+* [Set up local development environment for AEM Forms](/help/forms/setup-local-development-environment.md).
+* [Enable Adaptive Forms Core Components for your environment](/help/forms/enable-adaptive-forms-core-components.md).
 * Add your users to the [!DNL forms-users] group. The members of the [!DNL forms-users] group have permissions to create an Adaptive Form. 
-
 * Users with the following roles have the permissions to install the AEM Modernize Tools within an AEM environment:
+
   * Developer role
   * Admin role
 
@@ -51,7 +62,7 @@ For a detailed list of forms-specific user groups, see [Groups and permissions](
 To install and configure the AEM Modernize Tools:
 
 1. [Install AEM Modernize Tools to your local AEM Forms environment](#install-aem-modernize-Tools)
-2. [Enable AEM Modernize Tools for your local AEM Forms environment](#enable-aem-modernize-Tools)
+1. [Enable AEM Modernize Tools for your local AEM Forms environment](#enable-aem-modernize-Tools)
 
 ### Install AEM Modernize Tools to your local AEM Forms environment {#install-aem-modernize-Tools}
 
@@ -62,7 +73,7 @@ Perform the following steps to install AEM Modernize Tools to your local AEM For
 
     `java -jar aem-author-p4502.jar`
 
-1. Clone the [AEM Modernize Tool](/help/journey-migration/refactoring-tools/aem-modernization-tools.md) repository in your local system.
+1. Clone the [AEM Modernize Tool](https://github.com/adobe/forms-modernizer) repository in your local system.
 
     ```Shell 
 
@@ -75,11 +86,12 @@ Perform the following steps to install AEM Modernize Tools to your local AEM For
 1. Navigate to the`[AEM Modernize Tool Repository]`  in your local system.
 1. Run the following command: 
 
-    ```Shell
-        mvn clean install 
+   ```Shell
+       mvn clean install 
     
-    ```
- ![Succesful installation image](/help/forms/assets/aem-modernize-install-steps.png)
+   ```
+
+  ![Succesful installation image](/help/forms/assets/aem-modernize-install-steps.png)
 
 After successful installation, the AEM Modernize Tools becomes available for your environment. 
 
@@ -114,10 +126,12 @@ To enable and use the AEM Modernize Tools for your AEM Environment, it is import
 
 1. Specify the **[!UICONTROL Job Name]**.
 1. In the **[!UICONTROL Form]** tab, you can select one of the following options:
+
    * **None** : Select the option if you do not want to create a copy of the Foundation Component based forms before starting the form conversion.
    * **Restore** : Select the option to restore the form to the state it was in before starting the form conversion.
    * **Copy to Target**: Select the option to create a copy of the Foundation Component based forms before starting the form conversion.
-  In our case, the **Copy to Target** option is selected. If the **Copy to Target** option is selected, the **[!UICONTROL Source Path]** and **[!UICONTROL Target Path]** options become visible.
+
+   In our case, the **Copy to Target** option is selected. If the **Copy to Target** option is selected, the **[!UICONTROL Source Path]** and **[!UICONTROL Target Path]** options become visible.
 
 1. Specify the `source folder` name in the **[!UICONTROL Source Path]**.
 1. Specify the `target folder` name in the **[!UICONTROL Target Path]**.
@@ -137,7 +151,8 @@ To enable and use the AEM Modernize Tools for your AEM Environment, it is import
 
    ![AEM Modernize Tools Success](/help/forms/assets/aem-modernize-tools-success.png)
 
-1.  Select the Adaptive Form and select > **[!UICONTROL Properties]**. The Form Properties page opens. 
+1. Select the Adaptive Form and select > **[!UICONTROL Properties]**. The Form Properties page opens. 
+
      ![AEM Modernize Tools Destination Folder](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
 1. Select **[!UICONTROL Save and Close]** to save the properties of the converted form again.

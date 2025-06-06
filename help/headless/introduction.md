@@ -17,8 +17,6 @@ You can read detailed documentation of the various features involved and/or foll
 >
 >See also [What is Headless?](/help/headless/what-is-headless.md) for an introduction to Headless concepts and terminology.
 
-{{headless-trials-promotion}}
-
 ## Overview {#overview}
 
 AEM Headless is a CMS solution from Experience Manager that allows structured content (Content Fragments) in AEM to be consumed by any app over HTTP using GraphQL. Headless implementations enable delivery of experiences across platforms and channels at scale.
@@ -38,7 +36,7 @@ AEM as a Cloud Service is a flexible tool for the headless implementation model 
 1. **Content Fragments**
    * A Content Fragment is created based on a Content Fragment Model.
    * Content Fragments are created by content authors, using the AEM Content Fragment editor.
-   * Content Fragments are stored as AEM Assets, but can be managed through either the Assets Console, or the [Content Fragments Console](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+   * Content Fragments are stored as AEM Assets, but can be managed through either the Assets Console, or the [Content Fragments Console](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 1. **Content API for delivery**
    * See [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md) for an overview of the various APIs available and comparison of some of the concepts involved.
 
