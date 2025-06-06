@@ -9,23 +9,28 @@ exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
 
 This document provides a comprehensive guide on enabling and verifying the clear-cache feature in AEM CIF.
 
+>[!NOTE]
+>
+> This feature is experimental.
+
+
 ## Enabling Clear Cache Feature in CIF Configuration {#enable-clear-cache}
 
 By default, the clear-cache feature is disabled in CIF configuration. To enable it, you need to add the following to your corresponding projects:
 
 * Enable the servlet `/bin/cif/invalidate-cache` which helps you triggering the clear-cache API with their corresponding requests by adding the `com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json` configuration in your project as shown [here](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config.author/com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json).
-   >[!NOTE]
-   >
-   > Configuration needs to be enabled only for the author instances.
+  >[!NOTE]
+  >
+  > Configuration needs to be enabled only for the author instances.
 
 * Enable the listener to clear cache from each instance of AEM (publish and author) by adding the `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` configuration in your project as shown [here](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json).
-   * Configuration should be enabled for both author and publish instances.
-   * Enable the Dispatcher cache (Optional): you can enable the dispatcher clear cache setting by setting the `enableDispatcherCacheInvalidation` property to true in the above configuration. This provides functionality to clear the cache from the dispatcher.
-   >[!NOTE]
-   >
-   > This only works with publish instances.
+  * Configuration should be enabled for both author and publish instances.
+  * Enable the Dispatcher cache (Optional): you can enable the dispatcher clear cache setting by setting the `enableDispatcherCacheInvalidation` property to true in the above configuration. This provides functionality to clear the cache from the dispatcher.
+  >[!NOTE]
+  >
+  > This only works with publish instances.
    
-   * Also, make sure to give the corresponding pattern which suits your product, category and CMS page needs to be added to the above configuration file to remove it from the dispatcher cache.
+  * Also, make sure to give the corresponding pattern which suits your product, category and CMS page needs to be added to the above configuration file to remove it from the dispatcher cache.
 
 * To improve the SQL queries performance for finding the corresponding page related with product and category, add the corresponding index in your project (recommended). Fore more information, see [cifCacheInvalidationSupport/](link https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml).
 
