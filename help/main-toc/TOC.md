@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2025 {#2025}
+      + [Release Notes for 2025.4.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-4-0.md) 
       + [Release Notes for 2025.3.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-3-0.md) 
       + [Release Notes for 2025.2.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-2-0.md) 
       + [Release Notes for 2025.1.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md)
@@ -117,6 +118,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2025 {#2025}
+      + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
       + [2025.4.0](/help/implementing/cloud-manager/release-notes/2025/2025-4-0.md)
       + [2025.3.0](/help/implementing/cloud-manager/release-notes/2025/2025-3-0.md)
       + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
@@ -691,6 +693,7 @@ user-guide-title: AEM as a Cloud Service
     + [Approve assets for Content Hub](/help/assets/approve-assets-content-hub.md)
     + [Search assets in Content Hub](/help/assets/search-assets-content-hub.md)
     + [Asset properties](/help/assets/asset-properties-content-hub.md)
+    + [Attribute-based access control](/help/assets/attribute-based-access-control.md)
     + [Share assets in Content Hub](/help/assets/share-assets-content-hub.md)
     + [Download assets using Content Hub](/help/assets/download-assets-content-hub.md)
     + [Manage Licensed Assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
@@ -987,12 +990,14 @@ user-guide-title: AEM as a Cloud Service
       + [Caching Options](/help/commerce-cloud/configuring/caching.md)
       + [Custom HTTP Headers](/help/commerce-cloud/configuring/custom-http-headers.md)
       + [Shopping Cart and Dispatcher Setup](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
+      + [Component & GraphQL Clear Cache](/help/commerce-cloud/configuring/clear-cache.md)
     + Developing {#developing}
       + [Developing with AEM Cloud Service SDK](/help/commerce-cloud/develop.md)
       + [Styling CIF Components](/help/commerce-cloud/customizing/style-cif-component.md)
       + [Customizing CIF Components](/help/commerce-cloud/customizing/customize-cif-components.md)
       + [Using CIF Catalog Pickers](/help/commerce-cloud/customizing/use-cif-pickers.md)
       + [Custom Attributes to CIF Product Carousel](/help/commerce-cloud/customizing/product-carousel.md)
+      + [JSON-LD Metadata](/help/commerce-cloud/customizing/json-ld.md)
   + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
   + [Migration](/help/commerce-cloud/migration.md)
   + [FAQ](/help/commerce-cloud/faq.md)
@@ -1190,12 +1195,14 @@ user-guide-title: AEM as a Cloud Service
       + [Project Setup](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
       + [Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
     + [Manage Environments](/help/implementing/cloud-manager/manage-environments.md)
+    + [Specialized Testing Environments (Early Adopter)](/help/implementing/cloud-manager/specialized-test-environment.md)
     + Manage your Code {#managing-code}
       + [Maven Project Version Handling](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
       + [Manage Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
       + [Add an Adobe Repository](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
       + [Add a Private Repository](/help/implementing/cloud-manager/managing-code/private-repositories.md)
       + [Add an External Repository (Early Adopter)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+      + [Manage Access Tokens of External Repositories (Early Adopter)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
       + [Access Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
       + [Git Submodule Support](/help/implementing/cloud-manager/managing-code/git-submodules.md)
       + [Use Git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
