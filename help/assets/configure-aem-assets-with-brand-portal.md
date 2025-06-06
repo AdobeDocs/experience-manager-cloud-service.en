@@ -52,6 +52,13 @@ exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 
 Configuring Adobe Experience Manager Assets Brand Portal lets you publish approved brand assets from Adobe Experience Manager Assets as a [!DNL Cloud Service] instance to Brand Portal and distribute them to the Brand Portal users.
 
+>[!IMPORTANT]
+>
+> * Brand Portal is currently under maintenance.
+> * Contact your Adobe representative with details of your use case and specific requirements to activate Brand Portal using Cloud Manager.
+
+<!--
+
 ## Activate Brand Portal using Cloud Manager {#activate-brand-portal}
 
 The Cloud Manager user activates Brand Portal for an Experience Manager Assets as a [!DNL Cloud Service] instance. The activation workflow creates the required configurations (authorization token, IMS configuration, and Brand Portal cloud service) at the backend and reflects the status of the Brand Portal tenant in Cloud Manager. Activating Brand Portal enables the Experience Manager Assets users to publish assets to Brand Portal and distribute them to the Brand Portal users.  
@@ -217,6 +224,7 @@ Along with the automation workflow to activate Brand Portal on Experience Manage
 >[!NOTE]
 >
 >Contact Customer Support if you are facing any problem while activating your Brand Portal tenant.
+-->
 
 ## Manual configuration using Adobe Developer Console {#manual-configuration}
 
