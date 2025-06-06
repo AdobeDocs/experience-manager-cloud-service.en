@@ -225,7 +225,7 @@ However, to optimize repository performance, starting in **late June 2025**, pur
 
 * You may modify these defaults through OSGi configuration overrides.
 
-For more details, see the [Maintenance Tasks article](/help/operations/maintenance.md#default).
+For more details, see the [Maintenance Tasks article](/help/operations/maintenance.md#defaults).
 
 ### Edge Computing (Alpha Program) {#edge-computing}
 
