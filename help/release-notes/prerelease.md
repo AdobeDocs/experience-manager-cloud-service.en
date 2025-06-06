@@ -19,7 +19,7 @@ Upcoming features generally are made available in one of two ways:
 * As part of an early-adopter program
 * As part of the prerelease channel
 
-This document describes how to enable the prerelease channel. Please see the document [Trying Upcoming Features of AEM as a Cloud Service](/help/release-notes/upcoming-features.md) for details on the AEM release schedule and other ways to access upcoming features.
+This document describes how to enable the prerelease channel. Please see the document [Release Notes for Adobe Experience Manager (AEM) as a Cloud Service](help/release-notes/home.md) for details on the AEM release schedule.
 
 ## Enable the Prerelease Channel to Access and Try Upcoming Features {#enable-prerelease}
 
