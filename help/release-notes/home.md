@@ -66,7 +66,7 @@ Upcoming features are generally made available in one of two ways:
 
 How an upcoming feature is made available will be detailed in the [release notes.](#release-notes)
 
-* If it is part of an early-adopter program, you generally need to contact an email address specified in the release notes.
+* If it is part of an early-adopter program, you generally need to contact Adobe in order to enable it as detailed in the release notes.
 * If it is part of the prerelease channel, you will need to [enable the prerelease channel in a development or sandbox environment.](/help/release-notes/prerelease.md)
 
 ## Train Your Users {#train-users}
