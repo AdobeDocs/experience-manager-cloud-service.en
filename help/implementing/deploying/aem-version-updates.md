@@ -91,7 +91,7 @@ If you encounter an issue related to regression, submit a support case by way of
 
 ## Composite Node Store {#composite-node-store}
 
-Usually, updates incur zero downtime, including for the authoring instance, which is a cluster of nodes. Rolling updates are possible due to [the composite node store feature in Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
+Usually, updates incur zero downtime, including for the authoring instance, which is a cluster of nodes. Rolling updates are possible due to [the composite node store feature in Oak](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html).
 
 This feature allows AEM to reference multiple repositories simultaneously. In a [rolling deployment](/help/implementing/deploying/overview.md#how-rolling-deployments-work), the new AEM version contains its own `/libs` (the TarMK based immutable repository). It is distinct from the older AEM version, although both reference a shared DocumentMK based mutable repository that contains areas like `/content` , `/conf` , `/etc` and others. 
 

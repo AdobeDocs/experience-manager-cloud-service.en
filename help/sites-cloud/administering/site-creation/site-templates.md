@@ -14,7 +14,7 @@ Learn how AEM site templates can be used to predefine site structure and initial
 
 It is convenient to have predefined structures available to quickly deploy a new site based on a set of existing standards. Site templates are a way to combine basic site content into a convenient and reusable package.
 
-Site templates generally contain base site content and structure and site styling information, known as the [site theme,](site-themes.md) to get a new site started quickly. Administrators select a site template upon which to base the site [during the site creation process.](create-site.md)
+Site templates generally contain base site content and structure and site styling information, known as the [site theme](site-themes.md), to get a new site started quickly. Administrators select a site template upon which to base the site [during the site creation process](create-site.md).
 
 Templates are powerful because they are reusable and customizable. And since you can have multiple templates available in your AEM installation, you have the flexibility to create different sites to meet various business needs.
 
@@ -61,7 +61,7 @@ Site templates are simply packages with a logical structure that clearly reflect
 
 ## Standard Site Template {#standard-site-template}
 
-Adobe provides a best-practices reference template that you can use as a basis for creating your own templates. [The Standard Site Template is available on GitHub.](https://github.com/adobe/aem-site-template-standard)
+Adobe provides a best-practices reference template that you can use as a basis for creating your own templates. [The Standard Site Template is available on GitHub](https://github.com/adobe/aem-site-template-standard).
 
 [The latest release of the Standard Site Template](https://github.com/adobe/aem-site-template-standard/releases) can be downloaded and used directly for [creating new sites](create-site.md).
 

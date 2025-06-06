@@ -10,6 +10,10 @@ role: Admin, Architect, Developer
 
 Learn how you can run your own Universal Editor Service either for local development or as part of your own infrastructure.
 
+>[!NOTE]
+>
+>Local Universal Editor Services are not required or supported for projects using AEM authoring with Edge Delivery Services.
+
 ## Overview {#overview}
 
 The Universal Editor Service is what binds the Universal Editor and the backend system. To be able to develop locally for the Universal Editor, you must run a local copy of the Universal Editor Service. This is because:
@@ -95,7 +99,7 @@ The following table details these and additional values available.
 |`UES_SPLUNK_TOKEN`|Yes|None|Splunk token|
 |`UES_SPLUNK_INDEX`|Yes|None|Index to write logs to|
 |`UES_SPLUNK_SOURCE`|Yes|`universal-editor-service`|Name of the source in the splunk logs|
-|`UES_CORS_PRIVATE_NETWORK`|Yes|`false`|Enable sending CORS headers to allow [Private network.](https://wicg.github.io/private-network-access/#private-network-request) Required for users of Chrome version 130+|
+|`UES_CORS_PRIVATE_NETWORK`|Yes|`false`|Enable sending CORS headers to allow [Private network](https://wicg.github.io/private-network-access/#private-network-request). Required for users of Chrome version 130+|
 
 >[!NOTE]
 >
@@ -146,9 +150,9 @@ Once set, you should see every content update call go to `https://localhost:8000
 
 ## Editing a Page with the Local Universal Editor Service {#editing}
 
-With the [Universal Editor Service running locally](#running-ue) and your [content page instrumented to use the local service,](#using-loca-ue) you can now start the editor.
+With the [Universal Editor Service running locally](#running-ue) and your [content page instrumented to use the local service](#using-loca-ue), you can now start the editor.
 
 1. Open your browser to `https://localhost:8000/ping`.
-1. Direct your browser to accept [your self-signed certificate.](#ue-https)
+1. Direct your browser to accept [your self-signed certificate](#ue-https).
 1. Once the self-signed certificate is trusted, you can edit the page using your local Universal Editor Service.
 

@@ -8,7 +8,7 @@ role: Admin
 
 # Configuring CDN Error Pages {#cdn-error-pages}
 
-In the unlikely event that the [Adobe-managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) cannot reach the AEM origin, the CDN by default serves an unbranded, generic error page which indicates that the server cannot be reached. You can override the default error page by hosting static files in self-hosted storage such as Amazon S3 or Azure Blob Storage, and referencing them in a configuration file that is deployed by using the Cloud Manager [config pipeline.](/help/operations/config-pipeline.md#managing-in-cloud-manager)
+In the unlikely event that the [Adobe-managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) cannot reach the AEM origin, the CDN by default serves an unbranded, generic error page which indicates that the server cannot be reached. You can override the default error page by hosting static files in self-hosted storage such as Amazon S3 or Azure Blob Storage, and referencing them in a configuration file that is deployed by using the Cloud Manager [config pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ## Setup {#setup}
 

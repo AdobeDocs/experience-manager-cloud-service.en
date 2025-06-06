@@ -7,7 +7,7 @@ role: Admin, User, Developer
 ---
 # Accessing the Admin Console {#accessing-admin-console}
 
-In this part of the [onboarding journey,](overview.md) you learn about the preparation necessary before you can log into the system for the first time.
+In this part of the [onboarding journey](overview.md), you learn about the preparation necessary before you can log into the system for the first time.
 
 ## Objective {#objective}
 

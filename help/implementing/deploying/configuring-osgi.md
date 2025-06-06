@@ -16,7 +16,7 @@ You can manage the configuration settings for OSGi components through configurat
 
 >[!TIP]
 >
->You can use Cloud Manager to configure environment variables. For more information, consult the documentation [here.](/help/implementing/cloud-manager/environment-variables.md)
+>You can use Cloud Manager to configure environment variables. For more information, consult the documentation [here](/help/implementing/cloud-manager/environment-variables.md).
 
 ## OSGi Configuration Files {#osgi-configuration-files}
 

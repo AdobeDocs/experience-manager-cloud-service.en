@@ -20,17 +20,21 @@ By understanding and using the available operator types and events, you can unlo
 
 The rule editor provides the following logical operators and events using which you can create rules.
 
-* **Is Equal To**
-* **Is Not Equal To**
-* **Starts With**
-* **Ends With**
-* **Contains**
-* **Does not contain**
-* **Is Empty**
-* **Is Not Empty**
-* **Has Selected:** Returns true when the user selects a particular option for a checkbox, drop-down, radio button.
-* **Is Initialized (event):** Returns true when a form object renders in the browser.
-* **Is Changed (event):** Returns true when the user changes the entered value or selected option for a form object.
+* **Is Equal To** – Checks if the a form object matches a specified value.
+* **Is Not Equal To** – Checks if the a form object does not match a specified value.
+* **Starts With** – Checks if the a form object begins with a specified string.
+* **Ends With** – Checks if the a form object ends with a specified string.
+* **Contains** – Checks if the a form object includes a specified substring.
+* **Does Not Contain** – Checks if the a form object does not include a specified substring.
+* **Is Empty** – Checks if the a form object is empty or not provided.
+* **Is Not Empty** – Checks if the a form object is present and not empty.
+* **Has Selected** – Returns true when a user selects a specific checkbox, drop-down, or radio button option.
+* **Is Initialized (event)** – Returns true when a form object is rendered in the browser.
+* **Is Changed (event)** – Returns true when a user modifies the value or selection of a form object.
+* **Is Clicked (event)** - Returns true when a user clicks a form object, for example, a button. A user can [add multiple conditions to the button click](/help/forms/rule-editor-core-components-usecases.md#set-focus-to-another-panel-on-button-click-if-the-first-panel-is-valid).
+* **Is Valid** – Checks if a form object meets validation criteria.
+* **Is Not Valid** – Checks if a form object fails validation criteria.
+
 
 <!--
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
@@ -46,7 +50,7 @@ The rule editor provides a set of predefined rule types that you can use to writ
 
 The **[!UICONTROL When]** rule type follows the **condition-action-alternate action** rule construct, or sometimes, just the **condition-action** construct. In this rule type, you first specify a condition for evaluation followed by an action to trigger if the condition is satisfied ( `True`). While using the When rule type, you can use multiple AND and OR operators to create [nested expressions](/help/forms/rule-editor-core-components-usecases.md#nested-expressions).
 
-Using the When rule type, you can evaluate a condition on a form object and perform actions on one or more objects.
+Using the When rule type, you can evaluate a condition on a form object and perform actions on one or more objects.  
 
 In plain words, a typical When rule is structured as follows:
 
@@ -105,8 +109,12 @@ _
 
 * Ensure that the [core component is set to version 3.0.14 or later](https://github.com/adobe/aem-core-forms-components) to use this feature in the rule editor.
 * If rules are applied to different fields within the When condition, the rule triggers even if only one of those fields is changed.
+* You can only add the multiple fields in the **When** condition for an **AND** rule. It is not possible for an **OR** rule.
 
-
+>[!NOTE]
+>
+> To add multiple conditions that include a button click, make sure the button click event is placed as the first condition. For example, `When button is clicked AND text input equals '5'` is valid, whereas `When text input equals '5' AND button is clicked` is not supported.
+  
 <!--
 * It is not possible to add multiple fields in the When condition while applying rules to a button.
 

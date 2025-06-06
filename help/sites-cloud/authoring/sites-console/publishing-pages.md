@@ -10,26 +10,26 @@ role: User
 
 Once you have created and reviewed your content on the author environment, the goal is to [make it available on your public website](/help/sites-cloud/authoring/author-publish.md) (your publish environment).
 
-This is referred to as publishing a page. When you want to remove a page from the publish environment is referred to as unpublishing. When publishing and unpublishing the page remains available on the author environment for further changes until you delete it.
+This is referred to as publishing a page. When you want to remove a page from the publish environment is referred to as unpublishing. When publishing and unpublishing, the page remains available on the author environment for further changes until you delete it.
 
 You can publish/unpublish a page immediately or at a predefined date/time in the future.
 
 >[!NOTE]
 >
->Publishing an Experience Fragment basically follows the same procedure as for publishing a page, though from the Experience Fragments console or editor.
+>Publishing an [Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) basically follows the same procedure as for publishing a page, though from the Experience Fragments console or editor.
 
 ## Terminology {#terminology}
 
 You may encounter different terms related to publishing as you work with Adobe Experience Manager (AEM) as a Cloud Service.
 
 * **Publish / Unpublish**
-  * These are the primary terms for the actions that make your content publicly available on your publish environment (or not).
+  * These are the primary terms for the actions that make your content publicly available on your publish and/or preview environment(s) (or not).
   * These are the terms used in AEM documentation.
 * **Activate / Deactivate**
   * These terms are synonymous with publish/unpublish.
   * These terms were used in previous versions of AEM.
 * **Replicate / Replication**
-  * These are the technical terms describing the movement of data (for example, page content, files, code, user comments) from one environment to another when you publish a page.
+  * These are the technical terms describing the movement of data (for example, page content, files, code, user comments) from one service to another when you publish a page (e.g. from author to preview).
   * These terms are primarily used by developers.
 
 ## Publishing Pages {#publishing-pages-1}
@@ -50,19 +50,16 @@ Depending on your location, you can publish:
 
 >[!NOTE]
 >
->If you want to preserve page order you have to use [Manage Publication](#manage-publication) to publish the parent page together with any child pages - in a single action.
+>If you want to preserve page order you have to use [Manage Publication](#manage-publication) to publish the parent page together with any child pages in a single action.
 >
 >Page order is not guaranteed:
+>
 >* if only child pages are selected for publication (as the order information is held on the parent page)
 >* if the parent and child pages are published in separate actions 
 
->[!NOTE]
->
-> For additional possibilities see **On Time** and **Off Time** in the [Basic tab of Page Properties](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
-
 ### Publishing from the Page Editor {#publishing-from-the-page-editor}
 
-If you are editing a page in the [page editor,](/help/sites-cloud/authoring/page-editor/introduction.md) it can be published directly from the editor.
+If you are editing a page in the [page editor](/help/sites-cloud/authoring/page-editor/introduction.md), it can be published directly from the editor.
 
 1. Select the **Page Information** icon to open the menu and then the **Publish Page** option.
 
@@ -122,15 +119,7 @@ To publish a page with Quick Publish:
 
 #### Manage Publication {#manage-publication}
 
-**Manage Publication** offers more options than **Quick Publish**, allowing for the inclusion of child pages, customization of the references, and starting any applicable workflows and offering the option to publish at a later date.
-
->[!NOTE]
->
->If you want to preserve page order you have to use **Manage Publication** to publish the parent page together with any child pages in a single action.
->
->Page order is not guaranteed:
->* if only child pages are selected for publication (as the order information is held on the parent page)
->* if the parent and child pages are published in separate actions 
+**Manage Publication** offers more options than **Quick Publish**, allowing for the inclusion of child pages, customization of the references, publishing to a preview service (if available,) and starting any applicable workflows and offering the option to publish at a later date.
 
 To publish or unpublish a page using Manage Publication:
 
@@ -144,6 +133,10 @@ To publish or unpublish a page using Manage Publication:
 
      Choose to publish or unpublish the selected pages.
 
+   * **Destination** 
+
+     Choose if you wish to publish to your publish service (default) or your preview service. Only available if you have a [preview service configured.](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+
    * **Scheduling**
 
      Choose to take that action now or at a later date.
@@ -153,6 +146,10 @@ To publish or unpublish a page using Manage Publication:
      >[!NOTE]
      >
      >If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) to terminate the corresponding workflow.
+
+     >[!NOTE]
+     >
+     >Scheduling content for publishing is not the same as [**On Time** and **Off Time** available in the page properties,](/help/sites-cloud/authoring/sites-console/page-properties.md#basic) but can be used in similar circumstances.
 
    ![Manage Publication Options](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
@@ -226,6 +223,8 @@ To publish or unpublish a page using Manage Publication:
    * Define a title of the workflow package if the option to keep the workflow package was chosen.
 
 1. Click **Publish** or **Publish Later** to complete the publication.
+
+
 
 ## Unpublishing Pages {#unpublishing-pages}
 

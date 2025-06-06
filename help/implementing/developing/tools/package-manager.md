@@ -191,7 +191,7 @@ When creating rules, you define a regular expression (also known as regex, regex
 |include|Include will include all the files and folders in the specified directory that match the regular expression. Include **will not** include other files or folders from under the specified root path.|
 |exclude|Exclude will exclude all the files and folders that match the regular expression.|
 
-Package filters are most often defined when you first [create the package.](#creating-a-new-package) However they can also be edited later, after which the package should be rebuilt to update its content based on the new filter definitions.
+Package filters are most often defined when you first [create the package](#creating-a-new-package). However they can also be edited later, after which the package should be rebuilt to update its content based on the new filter definitions.
 
 >[!TIP]
 >
@@ -236,7 +236,7 @@ There are many actions that can be taken on a package.
 
 ### Creating a Package {#creating-a-new-package}
 
-1. [Access Package Manager.](#accessing)
+1. [Access Package Manager](#accessing).
 
 1. Click **Create Package**.
 
@@ -260,7 +260,7 @@ There are many actions that can be taken on a package.
 
    ![New package](assets/new-package.png)
 
-1. Click **Edit** to define the [package contents.](#package-contents) Click **Save** after you are finished editing the settings.
+1. Click **Edit** to define the [package contents](#package-contents). Click **Save** after you are finished editing the settings.
 
 1. You can now [Build](#building-a-package) your package.
 
@@ -268,13 +268,13 @@ It is not compulsory to immediately build the package after creating it. An unbu
 
 >[!TIP]
 >
->To avoid timeouts, Adobe recommends [not to create large packages.](#package-size)
+>To avoid timeouts, Adobe recommends [not to create large packages](#package-size).
 
 ### Building a Package {#building-a-package}
 
 A package is often built at the same time as you [create the package](#creating-a-new-package), but you can return at a later point to either build or rebuild the package. This can be useful if the content within the repository has changed or the package filters have changed.
 
-1. [Access Package Manager.](#accessing)
+1. [Access Package Manager](#accessing).
 
 1. Open the package details from the package list by clicking the package name.
 
@@ -284,13 +284,13 @@ A package is often built at the same time as you [create the package](#creating-
 
 >[!TIP]
 >
->To avoid timeouts, Adobe recommends [not to create large packages.](#package-size)
+>To avoid timeouts, Adobe recommends [not to create large packages](#package-size).
 
 ### Editing a Package {#edit-package}
 
 Once a package is uploaded to AEM, you can modify its settings.
 
-1. [Access Package Manager.](#accessing)
+1. [Access Package Manager](#accessing).
 
 1. Open the package details from the package list by clicking the package name.
 
@@ -304,7 +304,7 @@ You may need to [rebuild the package](#building-a-package) to update its content
 
 Once a package has been built, it can be rewrapped. Rewrapping changes the package information without such as thumbnail, description, and so on, without changing the package content.
 
-1. [Access Package Manager.](#accessing)
+1. [Access Package Manager](#accessing).
 
 1. Open the package details from the package list by clicking the package name.
 
@@ -318,7 +318,7 @@ Once a package has been built, it can be rewrapped. Rewrapping changes the packa
 
 Because every version of a package appears in the list as any other package, Package Manager can find other versions of a selected package.
 
-1. [Access Package Manager.](#accessing)
+1. [Access Package Manager](#accessing).
 
 1. Open the package details from the package list by clicking the package name.
 
@@ -328,7 +328,7 @@ Because every version of a package appears in the list as any other package, Pac
 
 After a package has been built, you can view the contents.
 
-1. [Access Package Manager.](#accessing)
+1. [Access Package Manager](#accessing).
 
 1. Open the package details from the package list by clicking the package name.
 
@@ -342,7 +342,7 @@ After a package has been built, you can view the contents.
 
 ### Downloading Packages to Your File System {#downloading-packages-to-your-file-system}
 
-1. [Access Package Manager.](#accessing)
+1. [Access Package Manager](#accessing).
 
 1. Open the package details from the package list by clicking the package name.
 
@@ -352,11 +352,11 @@ After a package has been built, you can view the contents.
 
 >[!TIP]
 >
->To avoid timeouts, Adobe recommends [not to create large packages.](#package-size)
+>To avoid timeouts, Adobe recommends [not to create large packages](#package-size).
 
 ### Uploading Packages from Your File System {#uploading-packages-from-your-file-system}
 
-1. [Access Package Manager.](#accessing)
+1. [Access Package Manager](#accessing).
 
 1. Select the group folder into which you want the package to be uploaded.
 
@@ -364,7 +364,7 @@ After a package has been built, you can view the contents.
 
 1. Provide the necessary information about the uploaded package.
 
-   ![Package upload dialog](assets/package-upload-dialog.png)
+   ![Package upload dialog box.](assets/package-upload-dialog.png)
 
     * **Package** - Use the **Browse...** button to select the required package from your local file system.
     * **Force Upload** - If a package with this name already exists, this option forces the upload and overwrites the existing package.
@@ -375,7 +375,7 @@ The package content now exists on AEM, but o make the content available for use,
 
 >[!TIP]
 >
->To avoid timeouts, Adobe recommends [not to create large packages.](#package-size)
+>To avoid timeouts, Adobe recommends [not to create large packages](#package-size).
 
 ### Validating Packages {#validating-packages}
 
@@ -465,14 +465,14 @@ Using the information provided by the validation, the impacted nodes can be revi
 
 Validation of packages can be done in two different ways:
 
-* [Via the Package Manager UI](#via-package-manager)
-* [Via HTTP POST request such as with cURL](#via-post-request)
+* [Via the Package Manager UI](#via-package-manager).
+* [Via HTTP POST request such as with cURL](#via-post-request).
 
 Validation should always occur after uploading the package but before installing it.
 
 ##### Package Validation Via Package Manager {#via-package-manager}
 
-1. [Access Package Manager.](#accessing)
+1. [Access Package Manager](#accessing).
 
 1. Open the package details from the package list by clicking the package name.
 
@@ -510,7 +510,7 @@ When validating via POST request, the response is sent back as a JSON object.
 
 Packages are defined by their filters. You can have Package Manager apply filters of a package to your existing repository content to show what content of the repository is covered by the filter definition of the package.
 
-1. [Access Package Manager.](#accessing)
+1. [Access Package Manager](#accessing).
 
 1. Open the package details from the package list by clicking the package name.
 
@@ -528,7 +528,7 @@ Uploading a package only adds the package content to the repository, but it is n
 
 Prior to installation of your package, Package Manager automatically creates a snapshot package that contains the content that is overwritten. This snapshot is reinstalled if you uninstall your package.
 
-1. [Access Package Manager.](#accessing)
+1. [Access Package Manager](#accessing).
 
 1. Open the package details of the package you want to install from the package list by clicking the package name.
 
@@ -550,7 +550,7 @@ Once the installation is complete and successful, the package list is updated an
 
 ### Reinstalling Packages {#reinstalling-packages}
 
-Reinstalling packages performs the same steps on an already installed package that are processed when [initially installing the package.](#installing-packages)
+Reinstalling packages performs the same steps on an already installed package that are processed when [initially installing the package](#installing-packages).
 
 ### File System Based Upload and Installation {#file-system-based-upload-and-installation}
 
@@ -570,7 +570,7 @@ If the instance is not running, packages placed in the `install` folder are inst
 
 Uninstalling package reverts the contents of the repository to the snapshot made automatically by Package Manager prior to installation.
 
-1. [Access Package Manager.](#accessing)
+1. [Access Package Manager](#accessing).
 
 1. Open the package details of the package you want to uninstall from the package list by clicking the package name.
 
@@ -584,7 +584,7 @@ Uninstalling package reverts the contents of the repository to the snapshot made
 
 Deleting a package only deletes its details from Package Manager. If this package was already installed, then the installed content will not be deleted.
 
-1. [Access Package Manager.](#accessing)
+1. [Access Package Manager](#accessing).
 
 1. Open the package details of the package you want to delete from the package list by clicking the package name.
 
@@ -596,7 +596,7 @@ Deleting a package only deletes its details from Package Manager. If this packag
 
 Replicate the contents of a package to install it on the publish instance.
 
-1. [Access Package Manager.](#accessing)
+1. [Access Package Manager](#accessing).
 
 1. Open the package details of the package you want to replicate from the package list by clicking the package name.
 
@@ -610,4 +610,4 @@ AEM Packages can be used to create and share content across AEMaaCS environments
 
 [Software Distribution](https://downloads.experiencecloud.adobe.com) provides AEM packages for use on the local development AEM SDK. AEM Packages provided on Software Distribution must not be installed on AEMaaCS cloud environments unless expressly approved by Adobe Support.
 
-For more information, please see the [Software Distribution documentation.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+For more information, see the [Software Distribution documentation](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).

@@ -54,6 +54,19 @@ You can also click ![Ellipsis - More icon](https://spectrum.adobe.com/static/ico
 
 ![Pipeline actions](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
 
+### Mark pipeline favorites{#pipeline-favorites}
+
+You can mark specific pipelines as favorites so they appear at the top of the list on the **Pipelines** page. This ability makes frequently accessed pipelines easier to find and run.
+
+**To mark pipeline favorites:**
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
+1. From the **Program Overview** page, click ![Pipeline tab - Workflow icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pipelines** tab.
+1. On the Pipelines page, to the left of a pipeline name and type, click ![Star outline icon for unfavorited pipeline](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg) to add it to your favorites list.
+    Alternatively, click ![Star icon for a favorite pipeline](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg) to remove the pipeline from your favorites list.
+
+
 ## Activity page {#activity}
 
 The **Activity** page shows a complete list of all pipelines executions for the selected program and other important program events.
@@ -89,6 +102,23 @@ You can also click ![Ellipsis - More icon](https://spectrum.adobe.com/static/ico
 You can see the details of the run by clicking ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) again and clicking **[View details](#view-details)**.
 
 Depending on the type of pipeline, you may be able to cancel the run by clicking ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) again and clicking **Cancel**.
+
+## Run multiple pipelines {#run-multiple-pipelines}
+
+With Cloud Manager you can run multiple pipelines simultaneously, improving deployment efficiency for AEM as a Cloud Service customers. The **Run selected** feature lets you select multiple pipelines and trigger them to run at once. It reduces the manual effort of having to run pipelines individually and optimizes build and deployment workflows.  
+
+**To run multiple pipelines:** 
+
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
+1. From the left side menu, click ![Workflow icon ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pipelines**.
+1. In the table on the **Pipeline** page, select the checkboxes next to the pipelines you want to run.
+    If necessary, click ![Filter icon, funnel](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filters** to sort pipelines by name, or environment, or deployed code type, or a combination of all three.
+1. Near the upper-right corner of the page, click **Run selected (x)**.  
+1. In the **Run selected pipelines (x)** dialog box, click **Run (x)**.
+
+    The **Run** button reflects the number of pipelines that can proceed. For example, you may have select four pipelines but one is already running. Or, an environment linked to a selected pipeline no longer exists. In such cases, the system adjusts accordingly. The button updates to "Run (3)" to indicate that three pipelines can proceed.
+
+1. Pipelines begin running, and their status is updated in the **Pipelines** list.
 
 ## Edit a pipeline {#editing-pipelines}
 
@@ -186,3 +216,4 @@ Alternatively, you can cancel a pipeline from the pipeline details page.
    ![Cancel Pipeline details](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
 
 1. Click **Cancel**.
+

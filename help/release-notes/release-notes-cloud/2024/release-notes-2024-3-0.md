@@ -117,7 +117,7 @@ Assets Essentials allows the administrators to manage access levels for private 
 These services enable you to:
 
   * Work with multiple content sources on the same forms site and use your preferred authoring tools, such as Microsoft Excel, Google Sheets, or Adaptive Forms Editor.
-  * Deliver Digital Enrollment experiences that load and render quickly and continuously monitor your forms performance through real use monitoring (RUM).
+  * Deliver Digital Enrollment experiences that load and render quickly and continuously monitor your forms performance through Operational Telemetry.
   * Use plain HTML, modern CSS, and vanilla JavaScript to create exceptional experiences, avoiding the steep learning curve of a specific framework.
 
 
@@ -180,10 +180,10 @@ This update ensures a more inclusive experience for users with disabilities by i
 
      You can write to `aem-forms-ea@adobe.com` from your official email id to join the early adopter program and request access to the capability.
 
-* **[You can leverage the Real Use Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** to enable client-side collection for AEM as a Cloud Service.
-Real Use Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. While this is beneficial for customers who use either Adobe-managed CDN or non-Adobe-managed CDN. Additionally, for customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
+* **[You can leverage the Operational Telemetry Service](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** to enable client-side collection for AEM as a Cloud Service.
+Operational Telemetry Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. While this is beneficial for customers who use either Adobe-managed CDN or non-Adobe-managed CDN. Additionally, for customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
 
-   If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com`, along with your domain name for each of the environments that you would like to enable RUM for from your email address associated with your Adobe ID. Adobe's product team will then enable the Real Use Monitoring (RUM) Data Service for you.
+   If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com`, along with your domain name for each of the environments that you would like to enable Operational Telemetry for from your email address associated with your Adobe ID. Adobe's product team will then enable the Operational Telemetry Service for you.
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -195,11 +195,11 @@ The recently released [Traffic Filter Rules](/help/security/traffic-filter-rules
 
 Now you can email **<aemcs-cdn-config-adopter@adobe.com>** to join the early adopter program so you can be alerted whenever your traffic filter rules are triggered. Actions Center email notifications will keep you informed when certain traffic conditions occur so you can take appropriate measures. 
 
-#### CDN Configuration (Early Adopter Program) {#cdn-config-early-adopter}
+#### Domain Mapping (Early Adopter Program) {#cdn-config-early-adopter}
 
 In addition to the recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which include the optionally licensable Web Application Firewall (WAF) rules, there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. [Learn more](/help/implementing/dispatcher/cdn-configuring-traffic.md) and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>** to gain access to:
 
-* 301/302 client-side redirects
+* 301/302 server-side redirects
 * proxying requests at the edge to arbitrary origins (such as non-AEM applications)
 * URL transformations
 * setting or modifying request or response headers

@@ -26,7 +26,7 @@ Learn more about program types in the document [Understanding Program and Progra
 
    ![Program type creation](assets/create-sandbox.png)
 
-1. (Optional) In the lower-right corner of the wizard dialog box, do either one of the following:
+1. (Optional) In the lower-right corner of the wizard dialog box, do any one of the following:
 
    * Drag and drop an image file onto the ![Image icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Add a program image** target.
    * Click ![Image icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Add a program image**, then select an image from a file browser.
@@ -37,7 +37,7 @@ Learn more about program types in the document [Understanding Program and Progra
 1. In the **Solutions &amp; Add-ons** list box, select one or more solutions to include in the program.
    
    * Click the chevron to the left of a solution name to reveal any available optional add-ons that you want to include with a selected solution.
-   * The **Sites**, **Assets**, and **Edge Deliver Services** solutions are always selected by default when you create a sandbox program. You cannot de-select them.
+   * The **Sites**, **Assets**, and **Edge Delivery Services** solutions are always selected by default when you create a sandbox program. You cannot de-select them.
 
    ![Select solutions and add-ons for a sandbox](assets/sandbox-solutions-add-ons.png)
 

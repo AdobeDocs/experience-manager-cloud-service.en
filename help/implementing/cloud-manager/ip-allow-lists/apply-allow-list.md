@@ -1,5 +1,5 @@
 ---
-title: Apply and Unpply IP Allow Lists 
+title: Apply and Unapply IP Allow Lists 
 description: Learn how to apply and unapply IP Allow Lists to Cloud Manager environments.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
@@ -12,7 +12,6 @@ role: Admin, Architect, Developer
 When applying IP Allow Lists, all IP ranges included in the list's definition are associated with an author or publish service within an environment. Unapplying a list is the inverse to this process. 
 
 {{add-cm-allowlist-frontend-pipeline}}
-
 {{ip-allow-lists-ue}}
 
 ## Apply IP Allow Lists {#applying}

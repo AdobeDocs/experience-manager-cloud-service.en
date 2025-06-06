@@ -8,12 +8,6 @@ role: Admin, Developer
 
 # AEM GraphQL API for use with Content Fragments {#graphql-api-for-use-with-content-fragments}
 
->[!IMPORTANT]
->
->Various features of the GraphQL API for use with Content Fragments are available through the Early Adopter Program.
->
->To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
-
 Learn how to use Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service with the AEM GraphQL API for headless content delivery.
 
 AEM as a Cloud Service GraphQL API used with Content Fragments is heavily based on the standard, open source GraphQL API.
@@ -173,7 +167,7 @@ GraphQL is a strongly-typed API, which means that data must be clearly structure
 
 The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating data on a certain instance. To do this, a client must fetch the [Schema](#schema-generation), which contains all the types necessary for a query. 
 
-For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** [Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) and their data types.
+For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) and their data types.
 
 >[!CAUTION]
 >
@@ -1078,6 +1072,110 @@ query allTeams {
   }
 } 
 ```
+
+## Dynamic Media for OpenAPI asset support (Remote Assets) {#dynamic-media-for-openapi-asset-support}
+
+[Remote assets](/help/sites-cloud/administering/content-fragments/authoring.md#reference-remote-assets) integration allows you to reference Assets, that are not local to the current AEM instance, from the Content Fragment Editor. It is implemented by Dynamic Media for OpenAPI asset support in Content Fragment Editor and GraphQL JSON.
+
+### Sample query for Dynamic Media for OpenAPI asset support (Remote Assets) {#sample-query-dynamic-media-for-openapi-asset-support}
+
+The following is a sample request:
+
+* to illustrate the concept of referencing remote assets
+
+  ```graphql
+  {
+    testModelList {
+      items {
+        remoteasset {
+          ... on RemoteRef {
+              repositoryId
+                  assetId
+          }
+        }
+        multiplecontent {
+          ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+        }
+      }
+      _references {
+        ... on ImageRef {
+            _path
+            _authorUrl
+            _publishUrl
+          }
+          ... on RemoteRef {
+              repositoryId
+              assetId
+          }
+      }
+    }
+  }
+  ```
+
+* the response
+
+  ```graphql
+  {
+    "data": {
+      "testModelList": {
+        "items": [
+          {
+            "remoteasset": {
+              "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+              "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+            },
+            "multiplecontent": [
+              {
+                "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+                "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+              },
+              {
+                "_path": "/content/dam/test-folder/test.jpg",
+                "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+                "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+              }
+            ]
+          }
+        ],
+        "_references": [
+          {
+            "repositoryId": "delivery-p123456-e123456.adobeaemcloud.com",
+            "assetId": "urn:aaid:aem:1fb05fe4-c12b-4f85-b1ca-aa92cdbd6a62"
+          },
+          {
+            "_path": "/content/dam/test-folder/test.jpg",
+            "_authorUrl": "http://localhost:4502/content/dam/test-folder/test.jpg",
+            "_publishUrl": "http://localhost:4503/content/dam/test-folder/test.jpg"
+          }
+        ]
+      }
+    }
+  }  
+  ```
+
+**Limitations**
+
+The current limitations are:
+
+* GraphQL delivery supports only `repositoryId` and `assetId` (other asset metadata is not returned)
+
+  >[!NOTE]
+  >
+  >The full URL then needs to be constructed on the client side, based on the [Asset delivery API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+
+* Only *Approved* assets will be available for reference from the remote repositories
+* If an asset that is referenced is removed from the remote repository, this will result in a broken Content Fragment Asset reference.
+* All Delivery Asset Repositories to which the user has access, will be available for selection, the available list cannot be limited.
+* Both the AEM instance and the Remote Asset Repository instances must be the same version.
+* No Asset Metadata is exposed via the [Management Sites API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) and the [AEM Content Fragment Delivery with OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/). You have to use the Asset Metadata API to retrieve the asset metadata details. 
 
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 

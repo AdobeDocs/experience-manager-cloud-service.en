@@ -4,6 +4,9 @@ description: Learn important considerations when deciding on how you author your
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a75e7051-e5ec-4d2a-848a-a66989e2f30b
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Choosing an Authoring Method {#authoring-methods}
 
@@ -48,7 +51,7 @@ Your first consideration should be how you want to deliver your content. Edge De
 This can help you decide if you need:
 
 * [AEM as a headless CMS](/help/headless/introduction.md) using the Content Fragment Editor and/or Universal Editor.
-* AEM Edge Delivery Services using the [document-based editing](/help/edge/docs/authoring.md) or [WYSIWYG authoring with the Universal Editor.](/help/edge/wysiwyg-authoring/authoring.md)
+* AEM Edge Delivery Services using the [document-based editing](/help/edge/docs/authoring.md) or [WYSIWYG authoring with the Universal Editor](/help/edge/wysiwyg-authoring/authoring.md).
 
 ## Content Authoring Preferences {#content-authoring}
 
@@ -58,8 +61,8 @@ Your next consideration should be how you want to author your content. The follo
 
 This can help you decide if you need:
 
-* AEM Edge Delivery Services using the [document-based editing.](/help/edge/docs/authoring.md)
-* [WYSIWYG authoring with the Universal Editor.](/help/edge/wysiwyg-authoring/authoring.md)
+* AEM Edge Delivery Services using the [document-based editing](/help/edge/docs/authoring.md).
+* [WYSIWYG authoring with the Universal Editor](/help/edge/wysiwyg-authoring/authoring.md).
 
 ## Project Goals {#project-goals}
 

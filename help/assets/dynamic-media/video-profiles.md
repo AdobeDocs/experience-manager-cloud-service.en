@@ -268,7 +268,7 @@ You can edit an existing encoding profile for video to take advantage of advance
    <td><code>keyframe</code></td>
    <td>The target number of frames between keyframes. Calculate this value so you can generate a keyframe every 2-10 seconds. For example, at 30 frames per second, the keyframe interval is 60-300.<br /> <br /> Lower keyframe intervals improve stream seeking and stream switching behavior for adaptive video encodings and can also improve the quality for videos that have lot of motion. However, because keyframes increase a file's size, a lower keyframe interval usually results in lower overall video quality at a given bitrate.</td>
    <td><code>String</code></td>
-   <td><p>Positive number.</p> <p>Default is 300.</p> <p>Recommended value for HLS or DASH (adaptive bitrate streaming) is 60-90. (To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See <a href="/help/assets/dynamic-media/video.md#enable-dash">Enable DASH on your account</a>.)</p> </td>
+   <td><p>Positive number.</p> <p>Default is 300.</p> <p>Recommended value for HLS or DASH (adaptive bitrate streaming) is 60-90.</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -286,7 +286,7 @@ You can edit an existing encoding profile for video to take advantage of advance
    <td><code>audioBitrateCustom</code></td>
    <td>Set value to <code>true</code> to force a constant bitrate for the audio stream, if supported by audio codec.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>Default is <code>false</code>.</p> <p>Recommended value for HLS or DASH is <code>false</code>. (To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See <a href="/help/assets/dynamic-media/video.md#enable-dash">Enable DASH on your account</a>.)</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>Default is <code>false</code>.</p> <p>Recommended value for HLS or DASH is <code>false</code>.</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>

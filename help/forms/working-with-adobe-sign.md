@@ -9,7 +9,9 @@ exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
 ---
 # Use [!DNL Adobe Sign] in an Adaptive Form {#using-adobe-sign-in-an-adaptive-form}
 
-<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+>[!NOTE]
+>
+> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components.
 
 
 | Version | Article link |
@@ -85,7 +87,7 @@ To create a sign-enabled Adaptive Form:
 
     * If you do not have a custom form template, select the **[!UICONTROL Generate Document of Record]** option. When you use the option, the document sent for signing displays all the fields of the Adaptive Form.
 
-1. Select **[!UICONTROL Create.]** A sign-enabled Adaptive Form is created. You can add your [!DNL Adobe Sign] fields to the form and send it for signing.
+1. Select **[!UICONTROL Create]**. A sign-enabled Adaptive Form is created. You can add your [!DNL Adobe Sign] fields to the form and send it for signing.
 
 #### Enable [!DNL Adobe Sign] for an Adaptive Form {#editafsign}
 

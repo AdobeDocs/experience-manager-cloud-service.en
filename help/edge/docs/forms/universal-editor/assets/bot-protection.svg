@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="160px" viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Bot Protection Icon</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle fill="#F5F7F9" cx="80" cy="80" r="80"></circle>
+        <g transform="translate(40, 30)" fill="#1473E6" fill-rule="nonzero">
+            <path d="M72,36 L72,52 C72,54.2 70.2,56 68,56 L64,56 L64,64 C64,66.2 62.2,68 60,68 L52,68 C49.8,68 48,66.2 48,64 L48,56 L32,56 L32,64 C32,66.2 30.2,68 28,68 L20,68 C17.8,68 16,66.2 16,64 L16,56 L12,56 C9.8,56 8,54.2 8,52 L8,36 L72,36 Z M60,24 L60,12 C60,9.8 58.2,8 56,8 L24,8 C21.8,8 20,9.8 20,12 L20,24 L60,24 Z M68,28 L12,28 C5.4,28 0,33.4 0,40 L0,52 C0,58.6 5.4,64 12,64 L16,64 L16,68 C16,73 20,76 24,76 L28,76 C32,76 36,73 36,68 L36,64 L44,64 L44,68 C44,73 48,76 52,76 L56,76 C60,76 64,73 64,68 L64,64 L68,64 C74.6,64 80,58.6 80,52 L80,40 C80,33.4 74.6,28 68,28 Z M28,48 C25.8,48 24,46.2 24,44 C24,41.8 25.8,40 28,40 C30.2,40 32,41.8 32,44 C32,46.2 30.2,48 28,48 Z M52,48 C49.8,48 48,46.2 48,44 C48,41.8 49.8,40 52,40 C54.2,40 56,41.8 56,44 C56,46.2 54.2,48 52,48 Z"></path>
+        </g>
+        <g transform="translate(40, 30)">
+            <circle stroke="#FF0000" stroke-width="8" cx="40" cy="50" r="36"></circle>
+            <line x1="16" y1="74" x2="64" y2="26" stroke="#FF0000" stroke-width="8" stroke-linecap="round"></line>
+        </g>
+    </g>
+</svg> 

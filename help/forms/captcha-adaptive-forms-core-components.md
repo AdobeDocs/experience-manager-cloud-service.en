@@ -117,10 +117,12 @@ To use reCAPTCHA in Adaptive Forms:
     * **[!UICONTROL Title]:** Specify a title for the CAPTCHA widget. The default value is **Captcha**. Select **Hide title** if you do not want title to appear. Select **Allow Rich Text for Title** to edit your title in rich text format. You can also mark your title as **Unbound Form Element**.
     * **[!UICONTROL CAPTCHA Configuration]:** Select a configuration from the Settings drop-down for **reCAPTCHA Enterprise** or **reCAPTCHA v2** to present the Google reCAPTCHA dialog for the form: 
         1. If you select **reCAPTCHA Enterprise** version, the key type can be of **checkbox** or **score based**, It is based on your selection when you configure [site key for websites](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key):
+            
             >[!NOTE] 
             >
             >* In the cloud configuration with **key type** as **checkbox**, the customized error message appears as an inline message if the captcha validation fails.
             >* In the cloud configuration with **key type** as **score based**,  the customized error message shows as a pop-up message if the captcha validation fails.
+            
         1. You can select size as **[!UICONTROL Normal]** and **[!UICONTROL Compact]**.
 
         >[!NOTE] 

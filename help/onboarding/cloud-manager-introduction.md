@@ -16,7 +16,7 @@ Your system administrator is responsible for setting up your Cloud Manager team 
 
 Follow these steps to navigate to Cloud Manager.
 
-1. Navigate to Cloud Manager's login page at [`https://my.cloudmanager.adobe.com`.](https://my.cloudmanager.adobe.com/). 
+1. Navigate to Cloud Manager's login page at [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/). 
 
 1. Select the program from Cloud Manager's **Programs and Products** page to launch the **Overview** page.
 

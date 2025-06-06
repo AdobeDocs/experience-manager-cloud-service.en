@@ -1,19 +1,19 @@
 ---
 title: Using Config Pipelines
-description: Learn how you can use config pipelines to deploy different configurations AEM as a Cloud Service such as log forwarding settings, purge-related maintenance tasks, and various CDN configurations.
+description: Learn how you can use config pipelines to deploy different configurations in AEM as a Cloud Service such as log forwarding settings, purge-related maintenance tasks, and various CDN configurations.
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
 ---
 # Using Config Pipelines {#config-pipelines}
 
-Learn how you can use config pipelines to deploy different configurations AEM as a Cloud Service such as log forwarding settings, purge-related maintenance tasks, and various CDN configurations.
+Learn how you can use config pipelines to deploy different configurations in AEM as a Cloud Service such as log forwarding settings, purge-related maintenance tasks, and various CDN configurations.
 
 ## Overview {#overview}
 
 A Cloud Manager config pipeline deploys configurations files (created in YAML format) to a target environment. A number of features in AEM as a Cloud Service can be configured in this way, including log forwarding, purge-related maintenance tasks, and several CDN features.
 
-Config pipelines can be deployed via Cloud Manager to dev, stage, and production environment types in production (non-sandbox) programs. The configuration files can be deployed to Rapid Development Environments (RDEs) using [command line tooling](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
+Config pipelines can be deployed via Cloud Manager to dev, stage, and production environment types. The configuration files can be deployed to Rapid Development Environments (RDEs) using [command line tooling](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
 
 This following sections of this document give an overview of important information regarding how config pipelines can be used and how configurations for them should be structured. It describes general concepts shared across either all or a subset of the features supported by config pipelines.
 
@@ -32,7 +32,7 @@ The following table offers a comprehensive list of such configurations with link
 | [Traffic Filter Rules, including WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | Declare rules to block malicious traffic |
 | [Request Transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)  | `CDN` | Declare rules to transform the shape of the traffic request |
 | [Response Transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations)  | `CDN` | Declare rules to transform the shape of the response for a given request |
-| [Client-side Redirects](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors)  | `CDN` | Declare 301/302-style client-side redirects |
+| [Server-side Redirects](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors)  | `CDN` | Declare 301/302-style server-side redirects |
 | [Origin Selectors](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors)  | `CDN` | Declare rules to route traffic to different backends, including non-Adobe applications |
 | [CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Override the default error page if AEM origin cannot be reached, referencing the location of self-hosted static content in the configuration file  |
 | [CDN Purge](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Declare the Purge API keys used to purge the CDN |
@@ -40,11 +40,12 @@ The following table offers a comprehensive list of such configurations with link
 | [Basic authentication](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Declare the usernames and passwords for a basic auth dialog protecting certain URLs. |
 | [Version Purge Maintenance Task](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimize the AEM repository by declaring rules around when content versions should be purged |
 | [Audit log Purge Maintenance Task](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimize the AEM audit log for increased performance by declaring rules around when logs should be purged |
-| [Log forwarding](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configure the endpoints and credentials for forwarding logs to various destinations, including Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk) |
+| [Log forwarding](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configure the endpoints and credentials for forwarding logs to various destinations, including Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk |
+| [Registering a Client ID](/help/implementing/developing/open-api-based-apis.md) | `API` | Scope Adobe Developer Console API projects to a specific AEM environments by registering the client ID. This is needed for usage of OpenAPI-based APIs that require authentication |
 
 ## Creating and Managing Config Pipelines {#creating-and-managing}
 
-For information on how to create and configure pipelines, please see the document [CI/CD Pipelines.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)
+For information on how to create and configure pipelines, see [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
 When creating a config pipeline in Cloud Manager, be sure to select a **Targeted Deployment** rather than **Full Stack Code** when configuring the pipeline.
 
@@ -89,7 +90,7 @@ or
     cdn.yaml
 ```
 
-The folder names and filenames below `/config` are arbitrary. The YAML file, however, must include a valid [`kind` property value.](#configurations)
+The folder names and filenames below `/config` are arbitrary. The YAML file, however, must include a valid [`kind` property value](#configurations).
 
 Typically, configurations are deployed to all environments. If all the property values are identical for each environment, a single YAML file will suffice. However, it is common for property values to differ between environments, for example while testing a lower environment.
 

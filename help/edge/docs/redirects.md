@@ -4,6 +4,9 @@ title: Redirects
 feature: Edge Delivery Services
 exl-id: a41e08bb-2488-494d-8abd-b271e0cd4c34
 role: Admin, Architect, Developer
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Redirects
 
