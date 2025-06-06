@@ -26,9 +26,9 @@ By default, the clear-cache feature is disabled in CIF configuration. To enable 
 * Enable the listener to clear cache from each instance of AEM (publish and author) by adding the `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` configuration in your project as shown [here](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json).
   * Configuration should be enabled for both author and publish instances.
   * Enable the Dispatcher cache (Optional): you can enable the dispatcher clear cache setting by setting the `enableDispatcherCacheInvalidation` property to true in the above configuration. This provides functionality to clear the cache from the dispatcher.
-  >[!NOTE]
-  >
-  > This only works with publish instances.
+    >[!NOTE]
+    >
+    > This only works with publish instances.
    
   * Also, make sure to give the corresponding pattern which suits your product, category and CMS page needs to be added to the above configuration file to remove it from the dispatcher cache.
 
