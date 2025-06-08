@@ -86,7 +86,7 @@ Content Hub now supports [generating shareable links to allow external users](/h
 
 Content Hub now lets you [control access to collections during creation, ensuring only authorized users can view or manage grouped assets](/help/assets/collections-content-hub.md##create-collections). It ensures improved security, better collaboration, organized asset management, and simplified governance.
 
-![Collections governance](/help/assets/assets/collection-permissions.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
 >[!NOTE]
 >
@@ -106,9 +106,9 @@ Access all your [Dynamic Media preset renditions and smart-crops for download, d
 
 **Dynamic Media native integration with AJO B2C​**
 
-Native integration of Experience Manager (AEM) Dynamic Media with Journey Optimizer (AJO) B2C, enabling marketers to easily embed AEM Dynamic Media assets (rendition and DM Template) into AJO content and deliver real-time updates and hyper-personalized experiences across channels.
+[Native integration of Experience Manager (AEM) Dynamic Media with Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), enabling marketers to easily embed AEM Dynamic Media assets (rendition and DM Template) into AJO content and deliver real-time updates and hyper-personalized experiences across channels.
 
-​![Dynamic Media renditions](/help/assets/assets/dm-ajo-integration.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
