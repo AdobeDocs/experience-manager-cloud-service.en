@@ -82,8 +82,8 @@ Fulfil the following requirements to start adding the extensibility component on
 
 ## Customize Quick Actions and Actions Bar in Assets view {#customize-quick-actions-and-actions-bar}
 
-You can customize the options that display when you select one or more assets (Actions Bar) in Assets view. Assets view also allows you to customize the options that display when you click More options (...) in the asset card. For more information, see [Browse View](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
+You can customize the actions that display when you select one or more assets (Actions Bar) in Assets view. Assets view also allows you to customize the actions that display when you click More options (...) in the asset card. For more information, see [Browse View](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
 
 ## Open custom dialogs in Assets view {#open-custom-dialogs-assets-view}
 
-Assets view also provides the ability to open custom dialogs that can provide configuration links to users. For more information, see [Modal API](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/#modal-api).
+Assets view also provides the ability to open custom dialogs with text of your choice. You can also add links to the text. For more information, see [Modal API](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/#modal-api).
