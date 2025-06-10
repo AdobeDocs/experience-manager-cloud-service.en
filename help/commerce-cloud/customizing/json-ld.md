@@ -9,6 +9,10 @@ exl-id: 547d3721-e094-4a42-8a7c-27e4ef97ea9c
 
 This guide explains how to enable and verify the JSON+LD feature in AEM CIF.
 
+>[!NOTE]
+>
+> This feature is experimental.
+
 ## Enabling JSON+LD in CIF Configuration {#enabling}
 
 By default, the **Enable JSON+LD** checkbox is not visible in the CIF configuration. To enable this feature, the project must include the necessary OSGi configuration, which allows the checkbox to be displayed. This configuration enables users to toggle JSON+LD script support on product pages.
