@@ -17,21 +17,22 @@ Summarized below are the continuous improvements for maintenance release 21193, 
 The 2025.6.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
 ### Enhancements {#enhancements-21193}
+
+* ASSETS-51245: Improved performance for large folder listings in Touch UI.
+* ASSETS-50820: Added support for XML output format in batch asset download.
 * CQ-4360131: Improved error response for OpenAPI endpoints allowing API clients to receive correct structured error information.
-* ASSETS-51245: Improved performance for large folder listings in Touch UI
-* ASSETS-50820: Added support for XML output format in batch asset download
 
 ### Fixed Issues {#fixed-issues-21193}
 
-* ASSETS-41007: Deleted assets could remain showing in Content Hub
-* ASSETS-50994: AemRequestEventFilter causing excessive Jetty thread contention
-* ASSETS-50155: Fix duplicate autogen events
-* ASSETS-50716: Sorting by Title in Assets List view did not work as expected
-* ASSETS-50562: Updated the Asset Upload API so that versioning is now the default behavior on name conflict
-* ASSETS-50992: Assets API initiateUpload.json endpoint was returning a Content-Type of text/plain instead of application/json
-* ASSETS-51322: Automatic removal and expiration of async barricades that remain persisted indefinitely after a failed job
-* SITES-31678: Experience Fragments (XF) with context-aware references did not resolve the correct language root in XFPublishing API
-* ASSETS-51809: Fixed an issue in Admin View where the CSV editor did not show recently saved changes due to browser caching
+* ASSETS-41007: Deleted assets could remain showing in Content Hub.
+* ASSETS-50994: AemRequestEventFilter causing excessive Jetty thread contention.
+* ASSETS-50155: Fix duplicate autogen events.
+* ASSETS-50716: Sorting by Title in Assets List view did not work as expected.
+* ASSETS-50562: Updated the Asset Upload API so that versioning is now the default behavior on name conflict.
+* ASSETS-50992: Assets API initiateUpload.json endpoint was returning a Content-Type of text/plain instead of application/json.
+* ASSETS-51322: Automatic removal and expiration of async barricades that remain persisted indefinitely after a failed job.
+* ASSETS-51809: Fixed an issue in Admin View where the CSV editor did not show recently saved changes due to browser caching.
+* SITES-31678: Experience Fragments (XF) with context-aware references did not resolve the correct language root in XF Publishing API.
 
 ### Known Issues {#known-issues-21193}
 
