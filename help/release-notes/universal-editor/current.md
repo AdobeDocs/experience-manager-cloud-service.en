@@ -17,7 +17,3 @@ These are the release notes for the 21 May 2025 release of the Universal Editor.
 ## What's New {#what-is-new}
 
 * **Disable open page button** - The open page button [can now be disabled.](/help/implementing/universal-editor/customizing.md#open-page)
-
-## Other Improvements {#other-improvements}
-
-* 
