@@ -39,8 +39,6 @@ exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
     </tr>
 </table>
 
-![Content Hub overview](assets/content-hub-overview.png)
-
 >[!AVAILABILITY]
 >
 >Content Hub guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
@@ -48,6 +46,10 @@ exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
 >[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hub is available as part of Experience Manager Assets as a Cloud Service for democratizing access to on-brand content for organizations and their business partners. It focuses on distributing assets for activation at scale and creation of on-brand content variants for improved marketing agility.
+
+## Content Hub demo {#content-hub-demo}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3463712)
 
 ## Why Content Hub?
 
@@ -68,10 +70,6 @@ Content Hub allows you to create new content with Adobe Express (if you have Ado
 **Gain insights on how content is used across teams**
 
 [!DNL Content Hub] provides valuable insights into assets, addressing a common challenge that marketing stakeholders often encounter - asset usage statistics used in marketing campaigns, channels, and different regions. By gaining a clear understanding of the performance and popularity of the assets, it delivers actionable insights essential for enhancing user experience.
-
-## Content Hub demo {#content-hub-demo}
-
->[!VIDEO](https://video.tv.adobe.com/v/3459547)
 
 ## Prerequisites {#prerequisites-content-hub}
 

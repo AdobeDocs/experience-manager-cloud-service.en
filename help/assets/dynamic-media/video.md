@@ -552,17 +552,17 @@ Added captions are supported with WebVTT and Adobe VTT formats. And, added audio
 1. In asset selection mode, either from ![View card icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Card View) or ![View List icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (List View), select the video asset.
 1. On the toolbar, click ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Properties.
 ![Selected video asset with checkmark over video thumbnail image and View Properties highlighted on the toolbar.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
-1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
+1. On the video's Properties page, select the **[!UICONTROL Captions & Audio tracks]** tab.
 
    >[!TIP]
-   >If you do not see the **[!UICONTROL Captions & Audio Tracks]** tab, it means either one of two things:
+   >If you do not see the **[!UICONTROL Captions & Audio tracks]** tab, it means either one of two things:
    >
    >* The folder in which the selected video resides does not have a video profile assigned to it. In which case, see [Apply a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
    >* Or, Dynamic Media must reprocess the video. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
    >
    >When you have completed either one of the above tasks, return to these steps.
   
-   ![Captions and Audio Tracks tab on the Properties page.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
+   ![Captions and Audio tracks tab on the Properties page.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
    *Captions & Audio tracks tab on the video's Properties page.*
 
 1. To add one or more audio tracks to a video, do the following:
@@ -722,16 +722,45 @@ Multiple caption changes take precedence over a caption added by way of a URL mo
 1. Publish the video as usual.
 The existing URL with the caption modifier can now load multiple captions.
 
+
+### Edit video subtitles
+
+You can edit subtitles (captions) for video assets directly within the Dynamic Media user interface. This feature lets you edit `.vtt` subtitle files, preview updates, and publish changes seamlessly.
+
+* When subtitles are published, any changes are synched and published automatically.
+* If editing errors occur and you need to regenerate the subtitles:
+    * Delete the existing subtitle file.
+    * Use Option 2 (Convert Audio Tracks) in step 7 of [Add multiple captions and audio tracks to your video](#add-msma).
+    * Click **Save** or **Save & Close** to generate a new subtitle file.
+* The subtitle preview inside the editor is for editing only and does not reflect how the subtitles appear in the final video playback user interface.
+
+**To edit video subtitles:**
+
+1. Navigate to the video asset whose subtitles you want to edit.
+1. In asset selection mode, either from ![View card icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Card View) or ![View List icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (List View), select the video asset.
+1. On the toolbar, click ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Properties.
+1. On the Properties page, select the **[!UICONTROL Captions & Audio tracks]** tab. 
+1. Under the **Captions** heading, click ![icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ProjectEdit_18_N.svg) to the right of a caption file name.
+
+    ![The Edit Subtitle icon under the Captions heading](/help/assets/dynamic-media/assets/msma-editcaption.png)
+
+1. In the **Edit Subtitle** dialog box, edit the text in the WebVTT file as necessary.
+
+    ![Edit Subtitle dialog box](/help/assets/dynamic-media/assets/msma-editsubtitle-dialogbox.png)
+
+1. In the lower-right corner of the dialog box, click **Save**.
+
+
 ### View the lifecycle status of uploaded caption and audio track files {#lifecycle-status-video}
 
-You can observe the lifecycle status of any caption or audio track file uploaded to your primary video. You can do so from the **Captions & Audio Tracks** tab of **Properties**.
+You can observe the lifecycle status of any caption or audio track file uploaded to your primary video. You can do so from the **Captions & Audio tracks** tab of **Properties**.
 
 **To view the lifecycle status of a video:**
 
 1. Navigate to the video asset whose lifecycle status you want to view.
 1. In asset selection mode, either from ![View card icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Card View) or ![View List icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (List View), select the video asset.
 1. On the toolbar, click ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Properties.
-1. On the **Properties** page, select the **[!UICONTROL Captions & Audio Tracks]** tab. 
+1. On the **Properties** page, select the **[!UICONTROL Captions & Audio tracks]** tab. 
 1. In the **[!UICONTROL Status]** column, note the state of each caption or audio file.
 
 | Status of Captions and Audio Tracks | Description |
@@ -747,7 +776,7 @@ You can observe the lifecycle status of any caption or audio track file uploaded
 
 By default, a video's original audio is set as the default audio to be played. 
 
-However, any uploaded audio track files can be set as the default audio to play after a video is loaded into the viewer. In the Properties user interface, under the **Captions & Audio Tracks** tab, the `Default` label is applied to the right of the audio track file for video playback. 
+However, any uploaded audio track files can be set as the default audio to play after a video is loaded into the viewer. In the Properties user interface, under the **Captions & Audio tracks** tab, the `Default` label is applied to the right of the audio track file for video playback. 
 
 >[!NOTE]
 >
@@ -761,7 +790,7 @@ However, any uploaded audio track files can be set as the default audio to play 
 1. Navigate to the video asset whose default audio track you want to set.
 1. In asset selection mode, either from ![View card icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Card View) or ![View List icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (List View), select the video asset.
 1. On the toolbar, click ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Properties.
-1. On the Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab. 
+1. On the Properties page, select the **[!UICONTROL Captions & Audio tracks]** tab. 
 1. Under the **Audio Tracks** heading, select the audio track file that you want to set as the video's default.
 1. Click ![Audio icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Audio_18_N.svg) **[!UICONTROL Set as default]**.
 1. In the **Set as default** dialog box, click **[!UICONTROL Replace]**.
@@ -815,7 +844,7 @@ The original audio track extracted from a primary video cannot be deleted.
 1. Navigate to the video asset whose default audio track you want to set.
 1. In asset selection mode, either from ![View card icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Card View) or ![View List icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (List View), select the video asset.
 1. On the toolbar, click ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Properties.
-1. On the Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
+1. On the Properties page, select the **[!UICONTROL Captions & Audio tracks]** tab.
 1. Do either one of the following:
 
    * Captions - Under the **Captions** heading, select one or more caption files that you want to delete from the video, then click ![Delete icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL Delete]**.
@@ -837,7 +866,7 @@ The original audio track extracted from a primary video file cannot be downloade
 1. Navigate to the video asset whose default audio track you want to set.
 1. In asset selection mode, either from ![View card icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Card View) or ![View List icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (List View), select the video asset.
 1. On the toolbar, click ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Properties.
-1. On the **Properties** page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
+1. On the **Properties** page, select the **[!UICONTROL Captions & Audio tracks]** tab.
 1. Do either one of the following:
 
    * Captions - Under the **Captions** heading, select one or more caption files that you want to download from the video, then click ![Download icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL Download]**.
@@ -1562,11 +1591,11 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
 
    ![Asset properties button.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
 
-1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
+1. On the video's Properties page, select the **[!UICONTROL Captions & Audio tracks]** tab.
 
 
    >[!TIP]
-   >If you do not see the [!UICONTROL Captions & Audio Tracks] tab, it means either one of two things:
+   >If you do not see the [!UICONTROL Captions & Audio tracks] tab, it means either one of two things:
    >* The folder in which the selected video resides does not have a video profile assigned to it. In which case, see [Apply a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
    >* Or, Dynamic Media must reprocess the video. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
