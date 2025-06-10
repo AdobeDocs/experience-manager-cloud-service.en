@@ -19,8 +19,8 @@ The 2025.6.0 feature activation will provide the full feature set for this maint
 ### Enhancements {#enhancements-21193}
 
 * ASSETS-51245: Improved performance for large folder listings in Touch UI.
-* ASSETS-50820: Added support for XML output format in batch asset download.
 * CQ-4360131: Improved error response for OpenAPI endpoints allowing API clients to receive correct structured error information.
+* ASSETS-51686: Improvements to bulk operations job, including easier job cancellation, enhanced logging, audit downloads for large results
 
 ### Fixed Issues {#fixed-issues-21193}
 
@@ -28,6 +28,7 @@ The 2025.6.0 feature activation will provide the full feature set for this maint
 * ASSETS-50994: AemRequestEventFilter causing excessive Jetty thread contention.
 * ASSETS-50155: Fix duplicate autogen events.
 * ASSETS-50716: Sorting by Title in Assets List view did not work as expected.
+* ASSETS-50820: Ensure invalid requests to the asset relations API are properly rejected with a 400 error
 * ASSETS-50562: Updated the Asset Upload API so that versioning is now the default behavior on name conflict.
 * ASSETS-50992: Assets API initiateUpload.json endpoint was returning a Content-Type of text/plain instead of application/json.
 * ASSETS-51322: Automatic removal and expiration of async barricades that remain persisted indefinitely after a failed job.
