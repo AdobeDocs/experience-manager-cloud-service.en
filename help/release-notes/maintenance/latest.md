@@ -24,16 +24,17 @@ The 2025.6.0 feature activation will provide the full feature set for this maint
 
 ### Fixed Issues {#fixed-issues-21193}
 
-* ASSETS-41007: Deleted assets could remain showing in Content Hub.
+* ASSETS-41007: Deleted assets could remain visible in Content Hub.
 * ASSETS-50994: AemRequestEventFilter causing excessive Jetty thread contention.
-* ASSETS-50155: Fix duplicate autogen events.
-* ASSETS-50716: Sorting by Title in Assets List view did not work as expected.
+* ASSETS-50155: Duplicate metadata change events triggered.
+* ASSETS-50716: Sorting by Title in Assets List view not working as expected.
 * ASSETS-50820: Ensure invalid requests to the asset relations API are properly rejected with a 400 error.
-* ASSETS-50562: Updated the Asset Upload API so that versioning is now the default behavior on name conflict.
-* ASSETS-50992: Assets API initiateUpload.json endpoint was returning a Content-Type of text/plain instead of application/json.
+* ASSETS-50562: Asset Upload API should create version by default behavior on name conflict.
+* ASSETS-50992: Assets API initiateUpload.json endpoint should return content type of 'application/json'.
 * ASSETS-51322: Automatic removal and expiration of async barricades that remain persisted indefinitely after a failed job.
-* ASSETS-51809: Fixed an issue in Admin View where the CSV editor did not show recently saved changes due to browser caching.
+* ASSETS-51809: CSV editor did not show recently saved changes due to browser caching.
 * SITES-31678: Experience Fragments (XF) with context-aware references did not resolve the correct language root in XF Publishing API.
+
 
 ### Known Issues {#known-issues-21193}
 
