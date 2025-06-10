@@ -54,9 +54,9 @@ Configuring Adobe Experience Manager Assets Brand Portal lets you publish approv
 
 >[!IMPORTANT]
 >
-> * Brand Portal is currently under maintenance.
-> * Contact your Adobe representative with details of your use case and specific requirements to activate Brand Portal using Cloud Manager.
-> * Brand Portal is not available with Assets Prime or Assets Ultimate. However, existing Assets Cloud Services customers who already have access to Brand Portal can retain it when they transition to Assets Ultimate.
+> * Brand Portal is in maintenance mode. All new product innovations are available on [Content Hub](/help/assets/product-overview.md).
+> * If you still need to activate Brand Portal, contact your Adobe representative with details of your use case and other specific requirements.
+> * Brand Portal is not available with [Assets Prime](/help/assets/assets-prime.md) or [Assets Ultimate](/help/assets/assets-ultimate-overview.md). However, existing Assets as a Cloud Service customers, who already have access to Brand Portal can continue to use it when they transition to Assets Ultimate.
 
 <!--
 
