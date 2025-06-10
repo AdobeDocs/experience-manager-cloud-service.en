@@ -201,6 +201,10 @@ After integration with the Adobe's Micro-Frontend Asset Selector, you can see th
 * **G**: Cancel Selection
 * **H**: Select single or multiple assets
 
+>[!NOTE]
+>
+>Folders are only supported when connecting to author repository, and not Dynamic Meda with OpenAPI repository.
+
 >[!MORELIKETHIS]
 >
 >* [Integrate Asset Selector with various applications](/help/assets/integrate-asset-selector.md)
