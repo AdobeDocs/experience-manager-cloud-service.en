@@ -27,7 +27,7 @@ When you as a content author are ready to publish your content, you simply need 
 1. If you have a [preview service](/help/sites-cloud/authoring/sites-console/previewing-content.md) available, you can choose where you publish your content, either to **[Preview](/help/sites-cloud/authoring/sites-console/previewing-content.md)** (if available) or **Publish**.
 1. The **Items** section lists the content that is included in the publication including:
    * **New** items that have not yet been published.
-   * **Mofified** content that has been published, but modified since the last publication.
+   * **Modified** content that has been published, but modified since the last publication.
    * **Published** content that has been published and not modified since that publication.
 
    Tap or click the checkboxes next to those items to include/exclude them from publication as required. Tap or click **Extend** to see individual items included in the totals for the three categories and to be able to in/exclude them individually.
