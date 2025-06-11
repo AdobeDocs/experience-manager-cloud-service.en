@@ -37,9 +37,9 @@ See also [Add External Repositories in Cloud Manager](/help/implementing/cloud-m
 ## Edit an access token {#edit-access-tokens}
 
 1. In the **Manage Access Tokens** dialog box, to the right of a token name, click ![Edit icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg).
-1. In the **Edit Access Token** dialog box, in the **Token Name** text field, update the token name.
+1. In the **Edit Access Token** dialog box, you can update the **Token Name** and the **Access Token** value.
 
-    The Access Token secret itself cannot be edited.
+    If the **Access Token** is currently in use, a notification appears warning you that all associated repositories are automatically revalidated after the update.
 
     ![Edit Access Token dialog box](/help/implementing/cloud-manager/managing-code/assets/access-tokens-edit.png)
 
