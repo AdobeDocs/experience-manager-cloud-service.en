@@ -162,7 +162,7 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 * **[Open in new Editor](#editing-the-content-of-your-fragment)**
 * **[Publish](#publishing-and-previewing-a-fragment)** (and **[Unpublish](#unpublishing-a-fragment)**)
 * **[Manage Tags](#manage-tags)**
-* **Copy**
+* **[Copy](#copy-a-content-fragment)**
 * **[Replace](#find-and-replace)**
 * **Move**
 * **Rename**
@@ -237,6 +237,19 @@ To open your fragment for editing:
 1. The fragment editor opens. Select your required **Variation** amd make your changes as required (they will be auto-saved):
 
    ![Fragment editor](assets/cf-managing-editor.png)
+
+## Copy a Content Fragment {#copy-a-content-fragment}
+
+**Copy** creates a copy of the selected fragment at its location.
+
+* In the **Copy** action you can select whether to include children (referenced fragments). This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
+
+  * Creates a copy of the selected Content Fragment at its location.
+  * Creates copies of all fragments that are referenced by the selected fragment; these are copied to the same location as the selected fragment.
+
+* The copy of the selected fragment will reference the copies of the referenced fragments.
+
+* The **Copy** action does not affect other content references, such as assets or images.
 
 ## View and Manage Tags {#manage-tags}
 
