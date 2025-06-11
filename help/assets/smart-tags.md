@@ -207,7 +207,7 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 *  Helps your assets to become organized and categorized.
 -->
 
-## Enhancing content discovery with AI-Generated Smart Tags {#ai-smart-tags}
+## Enhancing content discovery with AI-Generated metadata {#ai-smart-tags}
 
 Instead of relying on manual input, AI automatically assigns descriptive tags to digital assets. These AI-generated tags enhance metadata quality, making the assets easier to search, categorize, and recommend. This approach not only improves efficiency by eliminating manual tagging but also ensures consistency and scalability across large volumes of digital content. For example, if the asset is an image, AI can identify objects, scenes, emotions, or even brand logos within it and generate relevant tags such as "sunset," "beach," "vacation," or "smiling." AI-generated content can enhance the search for assets by leveraging both semantic and lexical search techniques. See more [Search Assets](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
@@ -225,7 +225,7 @@ To enable AI-generated metadata:
   >
   > The AI-generated title of an asset is displayed in the Asset card only when you have not defined the asset title. It does not overwrite the asset title specified by you. 
 
-### Using AI-Generated Smart Tags {#using-ai-generated-smart-tags}
+### Using AI-Generated metadata {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >

@@ -263,7 +263,7 @@ To enable AI-generated metadata:
   >
   > The AI-generated title of an asset is displayed in the Asset card only when you have not defined the asset title. It does not overwrite the asset title specified by you. 
 
-### Using AI-Generated Smart Tags {#using-ai-generated-smart-tags}
+### Using AI-Generated metadata {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
