@@ -17,7 +17,7 @@ By setting up Cloud Manager to integrate with your private GitHub Cloud (reposit
 >* GitLab (both `gitlab.com` and self-hosted versions of GitLab) repositories 
 >* Bitbucket (both `bitbucket.org` and Bitbucket Server, the self-hosted version of BitBucket) repositories 
 >
->See [Add External Repositories in Cloud Manager - Limited beta](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+>See [Add External Repositories in Cloud Manager - Beta](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
