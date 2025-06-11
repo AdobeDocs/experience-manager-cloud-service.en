@@ -402,7 +402,7 @@ user-guide-title: AEM as a Cloud Service
       + [Managing Projects](/help/sites-cloud/authoring/projects/managing.md)
       + [Working with Tasks](/help/sites-cloud/authoring/projects/tasks.md)
       + [Working with Project Workflows](/help/sites-cloud/authoring/projects/workflows.md)
-    + Launches {#launches}
+    + Launches for Pages {#launches-for-pages}
       + [Working with Launches](/help/sites-cloud/authoring/launches/overview.md)
       + [Creating Launches](/help/sites-cloud/authoring/launches/creating.md)
       + [Managing Pages in Launches](/help/sites-cloud/authoring/launches/managing-pages.md)
