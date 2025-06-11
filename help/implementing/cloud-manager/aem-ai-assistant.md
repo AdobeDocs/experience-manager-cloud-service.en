@@ -1,5 +1,5 @@
 ---
-title: AI Assistant in Adobe Experience Manager (Limited Beta)
+title: AI Assistant in Adobe Experience Manager (Beta)
 description: Use AI Assistant in Adobe Experience Manager to help you find answers, troubleshoot, and explore Sites, Assets, Forms, and Cloud Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -10,7 +10,7 @@ exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
 ---
 # About AI Assistant in Adobe Experience Manager {#aem-home}
 
-The AI Assistant in AEM (Adobe Experience Manager) offers a conversational interface designed to streamline finding answers to your Adobe Experience Manager-related queries. It helps you access product knowledge, troubleshoot issues, and explore information available in Experience League. During the limited Beta program, the AI Assistant supports Adobe Experience Manager as a Cloud Service, including Sites, Assets, Forms, and Cloud Manager.
+The AI Assistant in AEM (Adobe Experience Manager) offers a conversational interface designed to streamline finding answers to your Adobe Experience Manager-related queries. It helps you access product knowledge, troubleshoot issues, and explore information available in Experience League. During the Beta program, the AI Assistant supports Adobe Experience Manager as a Cloud Service, including Sites, Assets, Forms, and Cloud Manager.
 
 >[!IMPORTANT]
 >Be sure you have reviewed and submitted the user agreement so Adobe can enable the AI Assistant feature for you to test out and participate in the Beta program.
