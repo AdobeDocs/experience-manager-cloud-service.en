@@ -51,7 +51,7 @@ Content Hub is available as part of Experience Manager Assets as a Cloud Service
 
 >[!IMPORTANT]
 >
->[Assets Ultimate](/help/assets/assets-ultimate-overview.md) and Assets as a Cloud Service include 250 Content Hub users. [Assets Prime](/help/assets/assets-prime.md) includes 50 Content Hub users.
+>[Assets Ultimate](/help/assets/assets-ultimate-overview.md) and Assets as a Cloud Service include 250 Content Hub Limited users. [Assets Prime](/help/assets/assets-prime.md) includes 50 Content Hub Limited users.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463712)
 
