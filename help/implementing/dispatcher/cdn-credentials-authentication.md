@@ -114,6 +114,29 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-H
 
 After successfully testing, the additional condition can be removed and the configuration redeployed.
 
+### Migrating from legacy BYOCDN to self serve BYOCDN {#migrating-legacy}
+
+>[!NOTE]
+>Before proceeding with the migration, schedule a test migration on the stage environment to verify the strategy.
+
+>[!WARNING]
+> Do not change the key of in the customer-managed CDN until step 4.
+
+To migrate from legacy BYOCDN to self-serve BYOCDN, follow these steps to ensure a smooth transition without downtime:
+
+1. Configure the CDN configuration with both the new and old (Adobe-defined) secrets specified as `edgeKey1` and `edgeKey2` in the CDN configuration. This is a variation of the [rotating secrets](/help/implementing/dispatcher/cdn-credentials-authentication.md#rotating-secrets) documentation.
+
+2. Deploy the secrets and the CDN configuration. At this point, the legacy BYOCDN is still active.
+
+3. Contact Adobe Support to set the `disable_legacy_byocdn` property in the Fastly configuration. The new BYOCDN will work because the old key is still configured in the self-serve configuration.
+
+4. Switch the customer-managed CDN to use the new key. The new key will work because it's configured in the CDN configuration.
+
+5. Remove the old key from the CDN configuration and deploy the configuration pipeline again.
+
+>[!WARNING]
+>If you don't have the fallback with both keys configured simultaneously, it might lead to downtime during the migration.
+
 ## Purge API Token {#purge-API-token}
 
 Customers can [purge the CDN cache](/help/implementing/dispatcher/cdn-cache-purge.md) by using a declared Purge API token. The token is declared in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration. 
