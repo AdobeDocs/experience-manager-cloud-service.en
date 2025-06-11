@@ -49,9 +49,9 @@ AEM Assets now uses [AI to automatically generate metadata, including Title, Des
 
 **Integration with Figma**
 
-AEM Assets integrates natively with Figma, which allows designers to directly access the assets stored in AEM Assets from within the Figma User Interface. You can place content managed in AEM Assets in the Figma canvas and then save new or edited content in AEM Assets repository.
+AEM Assets integrates natively with Figma, which allows designers to directly access the assets stored in AEM Assets from within the Figma User Interface. You can place content managed in AEM Assets in the Figma canvas and then save new or edited content in AEM Assets repository. To access the AEM Assets Connector available on the Figma Community page, click [here](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
-![Integration with Figma](/help/assets/assets/figma-integration.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3463828)
 
 
 ### New Features in Content Hub {#new-features-content-hub}
