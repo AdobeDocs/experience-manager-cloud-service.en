@@ -249,7 +249,7 @@ To view the configured root tags, go to the asset's details page where the mappi
 
 Instead of relying on manual input, AI automatically assigns descriptive tags to digital assets. These AI-generated tags enhance metadata quality, making the assets easier to search, categorize, and recommend. This approach not only improves efficiency by eliminating manual tagging but also ensures consistency and scalability across large volumes of digital content. For example, if the asset is an image, AI can identify objects, scenes, emotions, or even brand logos within it and generate relevant tags such as "sunset," "beach," "vacation," or "smiling." AI-generated content can enhance the search for assets by leveraging both semantic and lexical search techniques. See more [Search Assets](search-assets-view.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3463828)
+![AI Generated metadata](/help/assets/assets/enhanced-smart-tags.png)
 
 ### How to enable AI-generated metadata? {#enable-ai-generated-metadata}
 
