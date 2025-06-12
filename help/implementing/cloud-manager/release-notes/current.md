@@ -46,11 +46,11 @@ The next planned release is Thursday, July 10, 2025.
     See [Mark pipeline favorites](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites).
 
 
-## Beta program {#beta-program}
+## Private beta program {#private-beta-program}
 
-Participate in Cloud Manager's Beta Program to get exclusive access to upcoming features before their general release.
+Participate in Cloud Manager's private Beta Program to get exclusive access to upcoming features before their general release.
 
-The following Beta opportunities are currently available:
+The following private beta opportunities are currently available:
 
 
 ### Specialized Testing Environment {#specialized-test-environment}
