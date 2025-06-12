@@ -19,8 +19,6 @@ App Builder provides a way for customers to easily extend Adobe Experience Manag
 * Core Services Extensibility - Extend core application capabilities by extending the default behavior with custom features & business logic.
 * User Experience Extensibility - Extend core experience to support business requirements or build customer-specific digital properties, storefronts & back-office apps.
 
-App Builder has been available to enterprise customers and partners by way of Adobe's Developer Preview since Summer 2020. General availability (GA) of App Builder is scheduled for December 2021. Adobe welcomes developers to try out App Builder through the [Trial Program](https://developer.adobe.com/app-builder/trial/).
-
 >[!NOTE]
 >
 > For AEM 6.5 customers who want to use the App Builder, see [Extending Adobe Experience Manager 6.5 using Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
