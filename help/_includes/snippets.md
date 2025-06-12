@@ -271,6 +271,6 @@ To log a support ticket, you must first register your Edge Delivery site in Clou
 
 >[!TIP]
 >
->Have you considered Edge Delivery Services for AEM?
+>**Have you considered Edge Delivery Services for AEM?**
 >
->Though accurate, this content no longer reflects the most current technology. Adobe recommends leveraging [Edge Delivery Services](/help/edge/overview.md) for new AEM projects.
+>You can continue using the methods described in this document for existing projects. However for new projects, Adobe recommends leveraging [Edge Delivery Services.](/help/edge/overview.md)

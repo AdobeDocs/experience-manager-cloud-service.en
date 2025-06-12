@@ -8,6 +8,8 @@ role: Admin, Developer
 ---
 # Understand Cloud Manager and the Quick Site Creation Workflow {#understand-cloud-manager}
 
+{{traditional-aem}}
+
 Learn about Cloud Manager and how it ties together the new Quick Site Creation process.
 
 >[!TIP]
