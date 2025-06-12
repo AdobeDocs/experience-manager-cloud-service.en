@@ -11,8 +11,6 @@ solution: Experience Manager Sites
 
 Learn how administrators use AEM create a site using site templates to define the style and structure of your site.
 
-{{edge-delivery-authoring}}
-
 ## Overview {#overview}
 
 Before content authors can create pages with new content, the site must first be created. The success of a site depends greatly on the consideration and planning initially given to the site structure, styling, and initial content. For this reason, initial site creation is generally performed by an AEM administrator.
