@@ -43,7 +43,7 @@ For details on how to do this, see the Developer Console documentation, dependin
 
 * Creating a new OAuth credential:
 
-  * [OAuth Server-to-Server credential implementation guide](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+  * [OAuth Server-to-Server credential implementation guide](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
 * Migrating an existing JWT credential to an OAuth credential:
 
@@ -61,7 +61,7 @@ To create a new Adobe IMS Integration using OAuth:
 
 1. Select **Create**.
 
-1. Complete the configuration based on details from the [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). For example:
+1. Complete the configuration based on details from the [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation). For example:
 
    ![Create OAuth Configuration](assets/ims-create-oauth-configuration.png)
 
