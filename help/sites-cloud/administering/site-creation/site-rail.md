@@ -9,6 +9,8 @@ solution: Experience Manager Sites
 
 # Using the Site panel to Manage Your Site Theme {#site-panel}
 
+{{traditional-aem}}
+
 Learn the powerful features of the Site panel to help you easily customize and manage your site theme.
 
 ## Overview {#overview}

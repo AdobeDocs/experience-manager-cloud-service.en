@@ -8,6 +8,8 @@ role: Admin, Developer
 ---
 # Customize the Site Theme {#customize-the-site-theme}
 
+{{traditional-aem}}
+
 Learn how the site theme is built, how to customize, and how to test using live AEM content.
 
 ## The Story So Far {#story-so-far}
