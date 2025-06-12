@@ -124,7 +124,7 @@ Concretely, the API endpoints listed below are available as part of an early ado
 
 * [Sites Content Fragments APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [Assets APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
-* [Sites and Assets Folders APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
+* Sites and Assets Folders APIs
 * [Forms Communications APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
