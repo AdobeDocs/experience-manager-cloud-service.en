@@ -16,6 +16,12 @@ By using Edge Delivery Services, you can:
 * Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring with the Universal Editor and document-based authoring. As such, you can work with multiple content sources on the same website.
 * Use a built-in experimentation framework that allows quick test creation, execution without performance impact and fast release to production of a test winner.
 
+>[!TIP]
+>
+>**Want to get hands-on right away?**
+>
+>If you want to get hands-on right away, you can start your own Edge Delivery Services project with AEM authoring in less than 30 minutes by [checking out the tutorial on aem.live.](https://www.aem.live/developer/ue-tutorial)
+
 ## Agile Reaction to Business Needs {#agile-reaction}
 
 As a longstanding recognized industry leader, Adobe knows how important it is to be able to create and publish new, meaningful content quickly for your customers. Common challenges in scaling content creation have been made clear by the market, including:
@@ -48,6 +54,22 @@ The following diagram illustrates how you can edit content in Microsoft Word (do
 
 Edge Delivery Services uses GitHub so you can manage and deploy code directly from your GitHub repository. New content is added instantly without a rebuild process.
 
+### AEM Authoring with the Universal Editor{#wysiwyg-authoring}
+
+The Universal Editor is a what-you-see-is-what-you-get (WYSIWYG), customizable, one-stop place to edit content live and in-context with a visual preview.
+
+* With AEM authoring with the Universal Editor, you increase author efficiency whether headless or headful.
+* You can take advantage of AEM's comprehensive content-management capabilities including workflow and governance.
+* Leverage numerous extension points to support your own processes and integrations.
+* The functionality of your site can be developed by using CSS and JavaScript in GitHub.
+
+![AEM authoring with the Universal Editor](assets/wysiwyg-authoring.png)
+
+Get started with AEM authoring with the Universal Editor and Edge Delivery Services:
+
+* For an overview of AEM authoring with the Universal Editor, see the document [Authoring with AEM for Edge Delivery Services](https://www.aem.live/docs/aem-authoring) in the aem.live documentation.
+* For a developer overview, see the document [Getting Started - Universal Editor Developer Tutorial](https://www.aem.live/developer/ue-tutorial) in the aem.live documentation.
+
 ### Document-Based Authoring {#document-based}
 
 With document-based authoring, you can use content directly from Microsoft Word or Google Docs such that those sources become pages on your website. Headings, lists, images, font elements can all be transferred from the initial source into the website.
@@ -64,22 +86,6 @@ Further reading in the document-based authoring documentation:
 * For details on how to get started with Edge Delivery, see the [Build section of the aem.live documentation.](https://www.aem.live/docs/#build)
 * To understand how to author and publish content by using Edge Delivery, see the [Publish section of the aem.live documentation.](https://www.aem.live/docs/authoring)
 * To understand how to launch your website project properly, see the [Launch section of the aem.live documentation](https://www.aem.live/docs/#launch)
-
-### AEM Authoring with the Universal Editor{#wysiwyg-authoring}
-
-The Universal Editor is a what-you-see-is-what-you-get (WYSIWYG), customizable, one-stop place to edit content live and in-context with a visual preview.
-
-* With AEM authoring with the Universal Editor, you increase author efficiency whether headless or headful.
-* You can take advantage of AEM's comprehensive content-management capabilities including workflow and governance.
-* Leverage numerous extension points to support your own processes and integrations.
-* The functionality of your site can be developed by using CSS and JavaScript in GitHub.
-
-![AEM authoring with the Universal Editor](assets/wysiwyg-authoring.png)
-
-Get started with AEM authoring with the Universal Editor and Edge Delivery Services:
-
-* For an overview of AEM authoring with the Universal Editor, see the document [Authoring with AEM for Edge Delivery Services](https://www.aem.live/docs/aem-authoring) in the aem.live documentation.
-* For a developer overview, see the document [Getting Started - Universal Editor Developer Tutorial](https://www.aem.live/developer/ue-tutorial) in the aem.live documentation.
 
 ### Deciding on Your Authoring Method {#authoring-method}
 
