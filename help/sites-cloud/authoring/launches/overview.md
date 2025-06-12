@@ -1,16 +1,16 @@
 ---
-title: Launches
-description: Launches enable you to efficiently develop content for a future release. They allow you to make changes ready for future publication, while maintaining your current pages
+title: Launches for Pages
+description: Learn how to use Launches for Pages in Adobe Experience Manager as a Cloud Service. Launches enable you to efficiently develop content for a future release, while maintaining your current pages.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
 ---
-# Launches {#launches}
+# Launches for Pages {#launches-for-pages}
 
-Launches enable you to efficiently develop content for a future release.
+In Adobe Experience Manager (AEM) as a Cloud Service, Launches enable you to efficiently develop content for a future release.
 
-A *Launch* is created to allow you to make changes in preparation for future publication, at the same time as maintaining your current pages. This means that you are effectively editing two versions at the same time: pages that are currently published, and a version of those pages, to be published at a time in the future. Once that time arrives you can replace the original pages and publish the new version. 
+A *Launch* is created to allow you to make changes in preparation for future publication, at the same time as maintaining your current content. For AEM pages this means that you are effectively editing two versions at the same time: pages that are currently published, and a version of those pages, to be published at a time in the future. Once that time arrives you can replace the original pages and publish the new versions. 
 
 >[!NOTE]
 >
