@@ -526,7 +526,7 @@ For more information and demonstration, see the video tutorial [how to use RDE c
 
 >[!NOTE]
 >
->This feature is available through the Early Adopter program. If you are interested in testing this new feature and sharing your feedback, send an email to [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure.
+>This feature is available through the Beta program. If you are interested in testing this new feature and sharing your feedback, send an email to [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure.
 
 Cloud Manager supports deploying code to an RDE directly from external Git providers when using the [Bring Your Own Git (BYOG) configuration](/help/implementing/cloud-manager/managing-code/external-repositories.md). 
 
