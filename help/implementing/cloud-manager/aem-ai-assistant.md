@@ -1,5 +1,5 @@
 ---
-title: AI Assistant in Adobe Experience Manager (Limited Beta)
+title: AI Assistant in Adobe Experience Manager (Private beta)
 description: Use AI Assistant in Adobe Experience Manager to help you find answers, troubleshoot, and explore Sites, Assets, Forms, and Cloud Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -10,10 +10,10 @@ exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
 ---
 # About AI Assistant in Adobe Experience Manager {#aem-home}
 
-The AI Assistant in AEM (Adobe Experience Manager) offers a conversational interface designed to streamline finding answers to your Adobe Experience Manager-related queries. It helps you access product knowledge, troubleshoot issues, and explore information available in Experience League. During the limited Beta program, the AI Assistant supports Adobe Experience Manager as a Cloud Service, including Sites, Assets, Forms, and Cloud Manager.
+The AI Assistant in AEM (Adobe Experience Manager) offers a conversational interface designed to streamline finding answers to your Adobe Experience Manager-related queries. It helps you access product knowledge, troubleshoot issues, and explore information available in Experience League. During the private beta program, the AI Assistant supports Adobe Experience Manager as a Cloud Service, including Sites, Assets, Forms, and Cloud Manager.
 
 >[!IMPORTANT]
->Be sure you have reviewed and submitted the user agreement so Adobe can enable the AI Assistant feature for you to test out and participate in the Beta program.
+>Be sure you have reviewed and submitted the user agreement so Adobe can enable the AI Assistant feature for you to test out and participate in th private beta program.
 >
 >For any questions, send an email to [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) from your email address associated with your Adobe ID. 
 
@@ -68,7 +68,7 @@ The AI Assistant for AEM Forms is available in:
 
 >[!NOTE]
 >
-> The AI Assistant for AEM Forms (Forms Experience Builder) is available under the early-adopter program. Send an email from your work address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) to request access.
+> The AI Assistant for AEM Forms (Forms Experience Builder) is available under the private beta program. Send an email from your work address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) to request access.
 
 To learn more about using the AI Assistant for AEM Forms, including detailed examples and best practices, see the [AI Assistant for AEM Forms documentation](/help/edge/docs/forms/forms-ai-assistant.md).
 
