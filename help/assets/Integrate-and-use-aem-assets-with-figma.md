@@ -77,8 +77,18 @@ Execute the following steps to import the [!DNL AEM Assets] plugin in [!DNL Figm
 
 Execute the following steps to import the [!DNL AEM] assets into your [!DNL Figma] workflow:
 
-1. Open your desktop app
+1. Open your [!DNL Figma] desktop app.
 1. Click Actions from the menu bar at the bottom of the canvas and select **[!UICONTROL Adobe Experience Manager AEM Assets connector]** to select [!DNL AEM] aasets from the panel.
 1. Drag and drop the asset on the canvas.
+
+## Export [!DNL Figma] design to [!DNL AEM Assets] folder{#export-figma-design-to-aem-assets-folder}
+
+Execute the following steps to export your [!DNL Figma] design to your [!DNL AEM Assets] folder:
+
+1. Open your [!DNL Figma] desktop app.
+1. Click Actions from the menu bar at the bottom of the canvas and select **[!UICONTROL Adobe Experience Manager AEM Assets connector]** to display the folders and assets availabe in your selected AEM Assets repository.
+1. Navigate to a folder, click upload to diaplay the Upload Asset dialog box. On the dialog box, Specify a file name, select a file format, select between selected item and page. Selected item saves a single selected asset or grouped assets from the canvas while selecting page saves the entire canvas page.
+
+Change the destination folder location: On the **[!UICONTROL Adobe Experience Manager AEM Assets connector]** panel clcik the three dots from the folder path and select a folder from the availabe options, clcik upload to upload the asset or the page in that folder.
 
 
