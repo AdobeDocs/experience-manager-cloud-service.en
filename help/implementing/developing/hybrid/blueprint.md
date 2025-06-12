@@ -4,7 +4,9 @@ description: This document describes the general, framework-independent contract
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
 role: Admin, Architect, Developer
+index: no
 ---
+
 # SPA Blueprint {#spa-blueprint}
 
 To enable the author to use the AEM SPA Editor to edit the content of an SPA, there are requirements that the SPA must fulfill.

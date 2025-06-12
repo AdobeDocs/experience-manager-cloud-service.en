@@ -107,6 +107,8 @@ As an administrator, manage the following configuration options for your users:
 
 * [Custom Links](#configure-custom-links-content-hub)
 
+* [Collections and Sharing](#configure-collections-sharing-content-hub)
+
 ### Import {#configure-import-options-content-hub}
 
 You can configure the metadata fields that display to the users while uploading or importing assets to the Content Hub portal, such as Campaign Name, Keywords, Channels, Timeframe, Region, and so on. To do so, execute the following steps:
@@ -150,7 +152,7 @@ Content Hub allows administrators to configure filters that display while search
 
    >[!NOTE]
    >
-   >The new filter gets displayed on the Search page only if there is alteast one asset in the repository matching the filter criteria.
+   >The new filter gets displayed on the Search page only if there is at least one asset in the repository matching the filter criteria.
 
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available filter, to edit the labels or click the delete icon to delete any existing filter. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
 
@@ -184,7 +186,7 @@ The properties enabled on the Configuration User Interface display on the Asset 
 
 ### Asset Card {#asset-card}
 
-You can also configure the key metadata fields that you need to display on the **Asset Card** upto a maximum of 6 fields. To do so, execute the following steps:
+You can also configure the key metadata fields that you need to display on the **Asset Card** up to a maximum of 6 fields. To do so, execute the following steps:
 
 ![key metadata on Asset Card](/help/assets/assets/asset-card-key-metadata.png)
 
@@ -207,25 +209,37 @@ Administrators can define the metadata fields that are searched when a user spec
 1. Click **[!UICONTROL Save]** to apply the changes so that the new metadata property gets displayed in the list of metadata fields.
 
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available metadata property, to edit the property or click the delete icon to delete any existing property. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
-
 ![Configuration UI Search on Content Hub](assets/configuration-ui-metadata-search.png)
-
 
 ### Branding {#configure-branding-content-hub}
 
-Administrators can also personalize the title and body text on the banner of the Content Hub portal, as per your branding requirements. To do so, execute the following steps:
+As an administrator, customize your [!DNL Content Hub] portal to meet your branding requirements. On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page use **[!UICONTROL Banner]**, **[!UICONTROL Colors]** and **[!UICONTROL Banner image]** sections to execute the following customizations:
 
-1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Branding]**.
+1. [Change the banner image from [!UICONTROL Banner image] section](#Change-the-banner-image)
+1. [Update the title and body text on the banner and change the text color from the [!UICONTROL Banner] section](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
+1. [Change the primary and secondary color from the [!UICONTROL Colors] section to apply a color scheme that aligns with your brand's theme](#Change-the-primary-and-secondary-color) 
 
-1. Specify text in **[!UICONTROL Title text on banner]** and **[!UICONTROL Body text on banner]** fields.
+Select the **[!UICONTROL Reset Defaults]** option to revert your changes and restore the default theme.
 
-1. Click **[!UICONTROL Save]** to apply the changes.
+#### Change the banner image{#Change-the-banner-image}
 
-![Configuration UI branding on Content Hub](assets/configuration-ui-branding.png)
+On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, execute the following steps to change the banner image of your [!DNL Content Hub] deployment:
 
-The branding updates enabled on the Configuration User Interface display on the Content Hub portal banner:
+1. Click ![select image](/help/assets/assets/Browse.svg) **[!UICONTROL Select from gallery]** to select a banner image using the asset selector dialog box. The asset selector displays only approved images.
+1. Select the image, click **[!UICONTROL Select]**, and then click **[!UICONTROL Save]** to display it as the banner image of your [!DNL Content Hub] deployment.
 
-![Configuration UI branding on Content Hub](assets/configuration-ui-branding-updates.png)
+#### Add title and body text to your banner and change the text color{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
+
+On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, use the respective fields in the **[!UICONTROL Banner]** section to add title and body texts to your banner.
+Click the square box next to the **[!UICONTROL Banner text color]** to select a text color from the color picker for your banner text or specify the color's hex code in the field next to the color picker square box.
+
+#### Change the primary and secondary color{#Change-the-primary-and-secondary-color}
+
+On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, use the **[!UICONTROL Colors]** section to set primary and secondary colors by either selecting them using color picker or defining the color's hex code. These colors set the background, text, and icon colors of UI elements to align your [!DNL Content Hub] UI with your brand's theme.
+
+**[!UICONTROL Primary color]:** The primary color scheme applies to selection actions, interactive elements such as checkboxes, search bars, and toggle switches across [!DNL Content Hub] including [!DNL Content Hub] home page and [!UICONTROL Configuration] page. It also applies to action options available on primary [!DNL Content Hub] interfaces such as options available on **[!UICONTROL All Assets]** and **[!UICONTROL Collections]** pages. 
+
+**[!UICONTROL Secondary color]:** On the [!DNL Content Hub] home page, the secondary color scheme applies to UI options and input fields that are available within dialog boxes. It applies to all configuration menu options available on the [!UICONTROL Configuration] page except selection actions, checkboxes, search bars, and toggle switches.
 
 ### Expired assets{#expired-assets-content-hub}
 
@@ -290,3 +304,22 @@ Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), ava
    The custom link display as a new tab next to Insights tab on the Content Hub home page.
 
    ![Configuration UI Custom Links tabs on Content Hub](assets/configuration-ui-custom-link-tab.png)
+
+### Collections and Sharing {#configure-collections-sharing-content-hub}
+
+Administrators can define user permissions while creating collections and allow Content Hub users to generate a public link. To enable these settings, follow these steps:
+
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Collections and sharing]**.
+
+1. Enable  the **[!UICONTROL Read Only Collections]** toggle to allow collections that are accessible to everyone but editable only by the creator and administrator.
+
+1. Enable the **[!UICONTROL Public Collections]** toggle to allow collections that are both accessible and editable by everyone.
+
+1. Enable the **[!UICONTROL Enable Public Link]** toggle to let Content Hub users generate a public link.
+
+1. Click **[!UICONTROL Save]** to apply the changes. 
+
+    ![Configuration Collections tab on Content Hub](assets/collections-link-sharing.png)
+
+
+   For more information on collections and sharing assets, see [Manage collections in Content Hub](/help/assets/collections-content-hub.md) and [Sharing assets in [!DNL Content Hub]](share-assets-content-hub.md).
