@@ -14,6 +14,37 @@ A *Launch* is created to allow you to make changes in preparation for future pub
 
 >[!NOTE]
 >
->Launches are also available for Pages. 
+>Launches are also available for Pages. The basic concepts are the same, but there are differences in how to manage them in AEM. 
 >
->The basic concepts are the same, though there are differences in how to manage them in AEM. For full details see [Launches for Pages](/help/sites-cloud/authoring/launches/overview.md).
+>For full details see [Launches for Pages](/help/sites-cloud/authoring/launches/overview.md).
+
+<!-- Confirm this content-->
+
+You create a *Launch*, then after editing and updating Content Fragments in your *Launch* you *Rebase* them back to the *Source*. You can then activate these *Source* fragments. Rebasing duplicates the launch content back to the source and can be done either manually or automatically (dependent on fields set when creating and editing the launch).
+
+For example, the seasonal product fragments of your online store are updated quarterly so that the featured products align with the current season. To prepare for the next quarterly update, you can create a launch of the appropriate fragmemts. Throughout the quarter, the following changes are accumulated in the launch copy:
+
+* Changes to the source Content Fragments occur as a result of normal maintenance tasks. These changes are automatically duplicated in the launch pages.
+* Edits that are performed directly on the launch fragments in preparation for the next quarter.
+
+You can also:
+
+* Navigate content in the launch branch; adding, or removing, fragments as necessary.
+* Preview how published content will look at a specific date in the future.
+
+When the next quarter arrives, you promote the launch pages so that you can publish the source pages (holding the updated content). You can promote either all pages, or only those that you have modified.
+
+This section describes how to create, edit and promote (and if necessary [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) launch fragments from within the [Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md):
+
+* [Create a Launch](#create-a-launch)
+* [Edit a Launch](#edit-a-launch)
+* [Manage content within a Launch](#managing-content)
+* [Rebase a Launch](#rebase-a-launch)
+
+## Create a Launch {#create-a-launch}
+
+## Edit a Launch {#edit-a-launch}
+
+## Manage content within a Launch {#managing-content}
+
+## Rebase a Launch {#rebase-a-launch}
