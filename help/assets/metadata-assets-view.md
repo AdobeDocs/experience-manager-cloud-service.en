@@ -245,13 +245,25 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 To view the configured root tags, go to the asset's details page where the mapping between the metadata form and root tags is performed.
 
-## Enhancing content discovery with AI-Generated Smart Tags {#ai-smart-tags}
+## Enhancing content discovery with AI-Generated metadata {#ai-smart-tags}
 
 Instead of relying on manual input, AI automatically assigns descriptive tags to digital assets. These AI-generated tags enhance metadata quality, making the assets easier to search, categorize, and recommend. This approach not only improves efficiency by eliminating manual tagging but also ensures consistency and scalability across large volumes of digital content. For example, if the asset is an image, AI can identify objects, scenes, emotions, or even brand logos within it and generate relevant tags such as "sunset," "beach," "vacation," or "smiling." AI-generated content can enhance the search for assets by leveraging both semantic and lexical search techniques. See more [Search Assets](search-assets-view.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
-  ![Enhanced smart tags](assets/enhanced-smart-tags.png)
+![AI Generated metadata](/help/assets/assets/enhanced-smart-tags.png)
 
-### Using AI-Generated Smart Tags {#using-ai-generated-smart-tags}
+### How to enable AI-generated metadata? {#enable-ai-generated-metadata}
+
+To enable AI-generated metadata:
+
+* Minimum required AEM release version is `20626`.
+
+* You must sign a GenAI Rider agreement. For more information, contact your Adobe representative.
+
+  >[!IMPORTANT]
+  >
+  > The AI-generated title of an asset is displayed in the Asset card only when you have not defined the asset title. It does not overwrite the asset title specified by you. 
+
+### Using AI-Generated metadata {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -264,7 +276,7 @@ To use the enhanced smart tags feature, execute the following steps:
 
 1. Wait until the newly uploaded asset is processed. Once done, go to asset details.
 
-1. Go to **[!UICONTROL AI-Generated]** tab. If [!DNL Experience Manager] version is incompatible or not updated, then this tab is not visible. The minimum AEM release version required is `20626`. The following fields are there:
+1. Go to **[!UICONTROL AI-Generated]** tab. If [!DNL Experience Manager] version is incompatible or not updated, then this tab is not visible.  The following fields are there:
 
     * **[!UICONTROL Generated title]:** The title provides a clear and concise headline that captures the core idea of an uploaded asset, making it easy to understand at a glance. When adding an asset, if you provide a title (in `dc:title`), it will be displayed in the assets browse view. If left blank, an AI-generated title will be assigned automatically.
     * **[!UICONTROL Generated description]:** The description gives a brief yet informative summary of what the asset is about, helping users and search module to quickly grasp its relevance.
