@@ -14,9 +14,9 @@ A *Launch* is created to allow you to make changes in preparation for future pub
 
 >[!NOTE]
 >
->Launches are also available for Content Fragments. 
+>Launches are also available for Content Fragments. The basic concepts are the same, but there are differences in how to manage them in AEM. 
 >
->The basic concepts are the same, though there are differences in how to manage them in AEM. For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+>For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
 
 You create a *Launch*, then after editing and updating your *Launch* pages you *Promote* them back to the *Source*. You can then activate these *Source* pages (top-level). Promoting duplicates the launch content back to the source pages and can be done either manually or automatically (dependent on fields set when creating and editing the launch).
 
@@ -28,7 +28,7 @@ For example, the seasonal product pages of your online store are updated quarter
 You can also:
 
 * Navigate content in the launch branch; adding, or removing, pages as necessary.
-* Preview how published content will look at a specific date/atim in the future.
+* Preview how published content will look at a specific date in the future.
 
 When the next quarter arrives, you promote the launch pages so that you can publish the source pages (holding the updated content). You can promote either all pages, or only those that you have modified.
 
