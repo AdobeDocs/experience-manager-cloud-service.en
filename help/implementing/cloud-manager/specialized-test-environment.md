@@ -3,14 +3,14 @@ title: Add a Specialized Testing Environment
 description: Learn how Specialized Testing Environments in Cloud Manager provide a dedicated space to validate features under near-production conditions, ideal for stress testing and advanced pre-deployment checks.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
 ---
 # Add a Specialized Testing Environment{#add-special-test-enviro}
 
 >[!NOTE]
 >
->>The feature described in this article is only available through the Beta program. To sign up for Beta, see [Specialized Testing Environment](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>>The feature described in this article is only available through the private beta program. To sign up for the private beta, see [Specialized Testing Environment](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 The Specialized Testing Environment, or DevXL, is a new type of Cloud Manager environment that you can create. It is designed to support advanced use cases such as User Acceptance Testing (UAT) and performance validation. Unlike traditional Development, Rapid Development, or Staging environments, DevXL environments operate outside of the production deployment pipeline. As such, they offer you greater flexibility while maintaining strict isolation to prevent interference with production workflows. 
 

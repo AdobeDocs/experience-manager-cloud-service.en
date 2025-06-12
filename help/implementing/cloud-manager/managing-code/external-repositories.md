@@ -3,7 +3,7 @@ title: Add External Repositories in Cloud Manager
 description: Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps repositories.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" 
+badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" 
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 ---
 # Add external repositories in Cloud Manager {#external-repositories}
@@ -17,7 +17,7 @@ Customers can now also onboard their Azure DevOps Git repositories into Cloud Ma
 
 >[!NOTE]
 >
->The features described in this article are only available through the Beta program. For more details and to sign up for Beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
+>The features described in this article are only available through the private beta program. For more details and to sign up for the private beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
 
 
 ## Configure an external repository
@@ -82,7 +82,7 @@ Configuration of an external repository in Cloud Manager consists of the followi
 
     >[!IMPORTANT]
     >
-    >The feature **Add new Access Token** is currently in Beta. Additional functionalities are being planned. As a result, the required permissions for access tokens may change. Additionally, the user interface for managing tokens may be updated, potentially including features like token expiration dates. And, automated checks to ensure that tokens linked to repositories remain valid. 
+    >The feature **Add new Access Token** is currently in private beta. Additional functionalities are being planned. As a result, the required permissions for access tokens may change. Additionally, the user interface for managing tokens may be updated, potentially including features like token expiration dates. And, automated checks to ensure that tokens linked to repositories remain valid. 
 
 1. Click **Validate**.
 

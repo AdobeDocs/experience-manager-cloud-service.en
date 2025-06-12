@@ -24,7 +24,7 @@ A user with the requisite permissions can create the following environment types
 
 >[!NOTE]
 >
->The **Specialized Testing Environment** feature is currently available only through the Beta program. To sign up for the Beta, see [Specialized Testing Environment](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>The **Specialized Testing Environment** feature is currently available only through the private beta program. To sign up for the private beta, see [Specialized Testing Environment](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 The capabilities of individual environments depend on the solutions that are enabled in the [program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) of the environment.
 
