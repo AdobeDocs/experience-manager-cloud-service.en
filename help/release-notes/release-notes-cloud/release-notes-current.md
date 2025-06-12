@@ -195,7 +195,7 @@ Please review and update any downstream processes that rely on custom logging be
 
 ### Default Purging of Older Versions and Audit Logs {#mt-defaults}
 
-Currently, content versions and audit logs have their associated *purge maintenance tasks* disabled by default and thus no data is removed unless explicitly configured via their respective OSGi properties. 
+Currently, content versions and audit logs have their associated *purge maintenance tasks* disabled by default and thus no data is removed unless explicitly configured. 
 
 However, to optimize repository performance, starting in **late June 2025**, purging will be enabled by default, following these guidelines:
 
