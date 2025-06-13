@@ -48,7 +48,9 @@ role: User
 
 ## Before you begin{#prerequisites-for-aem-assets-and-figma-integration}
 
-You must have access to valid [!DNL AEM Assets] and [!DNL Figma] license to integrate [!DNL AEM Assets] with [!DNL Figma].
+* Minimum required AEM release version is `19149`.
+
+* You must have valid [!DNL AEM Assets] and [!DNL Figma] licenses to integrate [!DNL AEM Assets] with [!DNL Figma].
 
 ## Access [!UICONTROL Adobe Experience Manager (AEM) Assets Connector]{#access-aem-assets-connector}
 
@@ -57,7 +59,7 @@ Execute the following steps to access the [!UICONTROL Adobe Experience Manager (
 1. On your [!DNL Figma] home page, click **[!UICONTROL Actions]** from the toolbar at the bottom of the canvas and search for [!DNL Adobe Experience Manager (AEM) Assets Connector] in the search bar available in the dialog box.
 1. Select [!DNL Adobe Experience Manager (AEM) Assets Connector] to display the [!DNL Adobe Experience Manager (AEM) Assets Connector] panel. [Import [!DNL AEM] assets into your [!DNL Figma] canvas](#import-aem-assets-into-figma-workflow) using this panel.
 ![actions](/help/assets/assets/actions-on-figma.png)
-Alternatively, access the [[!DNL Adobe Experience Manager (AEM) Assets Connector] plugin page](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector) available on [!DNL Figma] community, click **[!UICONTROL Open in...]**, select a recent file or create a new file and click **[!UICONTROL Run]** to access the [!DNL Adobe Experience Manager (AEM) Assets Connector] panel.
+Alternatively, access the [[!DNL Adobe Experience Manager (AEM) Assets Connector]](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector) available on [!DNL Figma] community, click **[!UICONTROL Open in...]**, select a recent file or create a new file and click **[!UICONTROL Run]** to access the [!DNL Adobe Experience Manager (AEM) Assets Connector] panel.
 ![plugin-page-on-figma-community](/help/assets/assets/plugin-page-on-figma-community.png)
 
 >[!NOTE]
@@ -68,7 +70,7 @@ Alternatively, access the [[!DNL Adobe Experience Manager (AEM) Assets Connector
 
 Access [!UICONTROL Adobe Experience Manager (AEM) Assets Connector](#access-aem-assets-connector) panel within your [!DNL Figma] design interface and do the following:
 
-1. See [using Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector) to search for assets in the [!UICONTROL Adobe Experience Manager (AEM) Assets Connector] panel.
+1.  Search for assets in the [!UICONTROL Adobe Experience Manager (AEM) Assets Connector] panel. For more information, see [using Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
 
 1. Drag and drop the asset to the canvas or select the asset and click [**!UICONTROL Select]** to bring the asset on the canvas.
 
@@ -77,11 +79,11 @@ Access [!UICONTROL Adobe Experience Manager (AEM) Assets Connector](#access-aem-
 
 Once your Figma design is ready, you can [export the asset to the AEM Assets repository](#export-figma-design-to-aem-assets-folder). 
 
-## Export assets to [!DNL AEM Assets] folder{#export-figma-design-to-aem-assets-folder}
+## Export assets to [!DNL AEM Assets] repository{#export-figma-design-to-aem-assets-folder}
 
-Access to [!UICONTROL Adobe Experience Manager (AEM) Assets Connector](#access-aem-assets-connector) panel within your [!DNL Figma] design interface and execute the following steps to export your design to the [!DNL AEM Assets] folder:
+Access the [!UICONTROL Adobe Experience Manager (AEM) Assets Connector](#access-aem-assets-connector) panel within your [!DNL Figma] design interface and execute the following steps to export your design to the [!DNL AEM Assets] repository:
 
-1. Navigate to the destination folder where you want to save your [!DNL Figma] design. If you're already inside a folder, click ![three dots](/help/assets/assets/three-dots.svg) in the folder path to select a different destination folder.
+1. Navigate to the destination folder where you want to save your [!DNL Figma] design. If you are already inside a folder, click More options (![three dots](/help/assets/assets/three-dots.svg)) in the folder path to select a different destination folder.
 1. Optional: Group assets on the canvas to select them as a single unit to upload in your folder.
 1. Click ![file upload](/help/assets/assets/upload-icon.svg) **[!UICONTROL Upload]** to display the **[!UICONTROL Upload Asset]** dialog box. 
 1. In the dialog box, specify a file name, choose a file format, select either **[!UICONTROL Selected Item]** or **[!UICONTROL Page]**, and click **[!UICONTROL Upload]** to upload the selected asset or the entire design to the destination folder.
