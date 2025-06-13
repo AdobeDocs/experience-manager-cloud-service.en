@@ -88,12 +88,14 @@ The following section applies to the new version of the Content Transfer Tool. F
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
    The following dialog box is presented. Notice that a migration set will expire after a prolonged period of inactivity. After warnings are displayed on the project card and the migration job table rows for a time period, the migration set will expire and its data will no longer be available. Review [Migration Set Expiry](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) for details.
+   
+   During migration set creation you can pick the geographic region in which the temporary migration data will be stored.  It is recommended you choose the region closest to your target cloud environment to ensure optimal performance during ingestions.  The region cannot be changed after migration set creation; to use a different region you will need to create a new migration set.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
    >[!NOTE]
    >
-   >The name must follow the same conventions of an AEM node so cannot contain any of these characters: . / : [ ] | *
+   >The name must follow the same conventions of an AEM node so cannot contain any of these characters: `. / : [ ] | * < > ^ ? { } % # `` nor any unusual symbols or emojis.
 
 1. You should now see your migration list in the list view. Select the three dots symbol (**...**) to open the drop-down and select **Copy Extraction key**. You need this key during the Extraction phase. Copy this Extraction key.
 
@@ -137,7 +139,7 @@ To populate the migration set you created in the Cloud Acceleration Manager, ins
       >If you intend to include versions as part of a migration set, and are performing top-ups with `wipe=false`, then you must disable version purging due to a current limitation in the Content Transfer Tool. If you prefer to keep version purge enabled and are performing top-ups into a migration set, then you must perform the ingestion as `wipe=true`.
 
       >[!NOTE]
-      >Starting from CTT Version (3.0.24), new features have been included to the Content Transfer Tool, enhancing the process of including and excluding paths. Previously, paths had to be selected one by one, which was tedious and time-consuming. Now, users can include paths directly from the UI or upload a CSV file according to their preference.
+      >Starting from CTT Version (3.0.24), new features have been included to the Content Transfer Tool, enhancing the process of including and excluding paths. Previously, paths had to be selected one by one, which was tedious and time-consuming. Now, users can include paths directly from the UI or upload a CSV file according to their preference.  The CSV file must have one path per line, and no commas.
 
    1. **Paths to be included**: Use path browser to select paths which need to be migrated. Path picker accepts input by typing or by selection. Users can select only one option for including paths: either from the UI or by uploading a CSV file.
       >[!IMPORTANT]

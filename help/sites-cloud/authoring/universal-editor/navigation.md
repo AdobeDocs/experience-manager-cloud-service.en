@@ -111,6 +111,8 @@ Select the icon representing your user to access your user settings. If you do n
 
 The Universal Editor toolbar is always present at the top of the screen just below [the Experience Cloud header](#experience-cloud-header). It gives you quick access to navigate to another page to edit and to publish the current page.
 
+Depending on the configuration of your program, it can also present [additional features that have been enabled as extensions by your administrator.](#additional-toolbar-buttons)
+
 ![The Universal Editor toolbar](assets/universal-editor-toolbar.png)
 
 #### The Home Button {#home-button}
@@ -175,9 +177,9 @@ In preview mode, the page rendered in the editor as it would be seen on your pub
 >
 >Use the hot key `p` to toggle to and from preview mode.
 
-#### Open App Preview {#open-app-preview}
+#### Open Page {#open-page}
 
-Select the open app preview icon to open the page you are currently editing in its own browser tab, free of the editor to preview your content.
+Select the open page icon to open the page you are currently editing in its own browser tab, free of the editor to preview your content.
 
 ![Open app preview](assets/open-app-preview.png)
 
@@ -189,6 +191,10 @@ Select the open app preview icon to open the page you are currently editing in i
 >
 >The preview URL for your app [can be customized](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
+>[!NOTE]
+>
+>The open page button [can be disabled](/help/implementing/universal-editor/customizing.md#open-page) and thus might not appear in your editor.
+
 #### Publish {#publish}
 
 Select the publish button so you can publish the changes to the content live for consumption by your readers or to a preview environment for review.
@@ -198,6 +204,10 @@ Select the publish button so you can publish the changes to the content live for
 >[!TIP]
 >
 >See the document [Publishing Content with the Universal Editor](publishing.md) for more information on publishing with the Universal Editor.
+
+>[!NOTE]
+>
+>The publish button [can be disabled](/help/implementing/universal-editor/customizing.md#disable-publish) and thus might not appear in your editor.
 
 #### Ellipsis {#ellipsis}
 
@@ -211,8 +221,9 @@ For example, the ability to unpublish a page (i.e. reverse the action of the [**
 
 The Universal Editor offers a customizable and extensible authoring experience. If you see additional buttons in the toolbar, your Universal Editor has been extended.
 
-* For details on extension possibilities, please see the [Extending the Universal Editor](/help/implementing/universal-editor/extending.md).
-* For details on how an individual extension works, please see the [Extension Manager documentation](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* For details on how an individual extension works, [please see the Universal Editor authoring documentation.](/help/sites-cloud/authoring/universal-editor/authoring.md#toolbar-options)
+* For details on extension possibilities, please see the [Extending the Universal Editor.](/help/implementing/universal-editor/extending.md)
+* For details on how to install an individual extension, please see the [Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ### The Editor {#editor}
 
@@ -227,6 +238,8 @@ If the editor is in [preview mode](#preview-mode), the content will be navigable
 The properties panel is always present along the right side of the editor. Depending on its mode, it can show details for a component selected in the content or the hierarchy of the page contents.
 
 ![The properties panel](assets/properties-rail.png)
+
+Depending on the configuration of your program, it can also present [additional features that have been enabled as extensions by your administrator.](#additional-properties-panel-buttons)
 
 #### Properties Mode {#properties-mode}
 
@@ -306,12 +319,13 @@ Tapping or clicking the delete button [deletes the component](/help/sites-cloud/
 >
 >Use the hot key `Shift+Backspace` to delete a selected component from a container.
 
-## Additional Features {#additional-features}
+#### Additional Buttons {#additional-properties-panel-buttons}
 
-The Universal Editor offers a customizable and an extensible authoring experience. If you see additional buttons or options in the properties panel or toolbar, your Universal Editor has been extended.
+The Universal Editor offers a customizable and extensible authoring experience. If you see additional buttons in the properties panel, your Universal Editor has been extended.
 
-* For details on extension possibilities, please see the [Customizing and Extending the Universal Editor](/help/implementing/universal-editor/customizing.md).
-* For details on how an individual extension works, please see the [Extension Manager documentation](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* For details on how an individual extension works, [please see the Universal Editor authoring documentation.](/help/sites-cloud/authoring/universal-editor/authoring.md#properties-panel-options)
+* For details on extension possibilities, please see the [Extending the Universal Editor.](/help/implementing/universal-editor/extending.md)
+* For details on how to install an individual extension, please see the [Extension Manager documentation.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ## Next Steps {#next-steps}
 
