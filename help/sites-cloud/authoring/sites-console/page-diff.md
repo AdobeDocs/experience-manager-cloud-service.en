@@ -84,6 +84,7 @@ You can exit the side-by-side diff at any time by clicking the Close button in t
 
 There are some situations in which the page diff may not detect a difference as expected.
 
+* When diffing pages created for use with the [Universal Editor,](/help/sites-cloud/authoring/universal-editor/authoring.md) the pages will be shown side-by-side for convenient comparison, but differences will not be highlighted.
 * When diffing versions and launches, the diff does not take into account dynamic components such as breadcrumbs, menus, product lists or logos (components that rely on the site structure to render their content).
 * For versions, the diff does not recreate the access control policy and live copy relationships.
 * If a page is moved, you can no longer perform a diff with any versions made before the move.
