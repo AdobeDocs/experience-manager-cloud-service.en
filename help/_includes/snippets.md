@@ -266,3 +266,11 @@ To log a support ticket, you must first register your Edge Delivery site in Clou
 >The progressive web app (PWA) features for AEM Sites [has been deprecated](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
 >
 >Existing projects using this feature will continue to be supported, but new projects should not use this feature.
+
+## Traditional AEM {#traditional-aem}
+
+>[!TIP]
+>
+>**Have you considered Edge Delivery Services for AEM?**
+>
+>You can continue using the methods described in this document for existing projects. However for new projects, Adobe recommends leveraging [Edge Delivery Services.](/help/edge/overview.md)

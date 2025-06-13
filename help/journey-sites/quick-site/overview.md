@@ -8,6 +8,8 @@ role: Admin, Developer
 ---
 # AEM Quick Site Creation Journey {#quick-site-creation-journey}
 
+{{traditional-aem}}
+
 Start here for a guided journey through the easy-to-use AEM Quick Site Creation tool to streamline the front-end development of your AEM Site and quickly customize your site with no AEM backend knowledge.
 
 ## Introduction {#introduction}
