@@ -69,7 +69,7 @@ Access [!UICONTROL Adobe Experience Manager (AEM) Assets Connector](#access-aem-
 
 1. Browse your asset's folder or find your assets by searching them using keywords in the seach bar. Click ![filter](/help/assets/assets/filter-icon.svg) to use the filter options, switch view using the view switcher option below the upload option, select a repository from the **[!UICONTROL Repository field]** and select **[!UICONTROL Collections]** to navigate to your collections.
 1. Drag and drop the asset to the canavas or select the asset and click [**!UICONTROL Select]** to bring the asset on the canvas.
-1. Click ![three dots](/help/assets/assets/three-dots.svg) from the folder path and select a folder to navigate to that folder. Clicking ![three dots](/help/assets/assets/three-dots.svg) displays the folders within the folder structure.
+1. Click ![three dots](/help/assets/assets/three-dots.svg) in the folder path to display all parent and sibling folders in the current hierarchy. Select a folder to navigate to that location. 
 ![three dots](/help/assets/assets/assets-folder-structure.png)
 [Export your final figma design to your [!DNL AEM Assets]](#export-figma-design-to-aem-assets-folder) folder. 
 
