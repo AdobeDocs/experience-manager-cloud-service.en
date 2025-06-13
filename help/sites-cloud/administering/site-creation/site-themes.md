@@ -8,6 +8,8 @@ solution: Experience Manager Sites
 ---
 # Site Themes {#site-themes}
 
+{{traditional-aem}}
+
 Learn how AEM site themes can be used to customize the style and design of your site.
 
 ## Overview {#overview}

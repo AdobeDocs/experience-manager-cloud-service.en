@@ -222,7 +222,7 @@ Execute the following steps in Cloud Manager to configure a custom domain in the
 
    ![go live readiness option](/help/assets/assets/go-live-readiness-option.png)
 
-1. Execute the **[!UICONTROL Configure CNAME]** steps to map [cdn.adobeaemcloud.com](http://cdn.adobeaemcloud.com/) (CNAME record) in the DNS record of the DNS service provider. This mapping ensures that requests received at the custom domain are redirected to Adobe's CDN. 
+1. Execute the **[!UICONTROL Configure CNAME]** steps to map `cdn.adobeaemcloud.com` (CNAME record) in the DNS record of the DNS service provider. This mapping ensures that requests received at the custom domain are redirected to Adobe's CDN. 
 
    ![go live readiness dialogbox](/help/assets/assets/go-live-readiness-dialogbox.png){width="500" align="left"}
 
