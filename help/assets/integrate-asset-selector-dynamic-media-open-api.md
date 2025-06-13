@@ -1,5 +1,5 @@
 ---
-title: Asset Selector for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+title: Integrate Asset Selector with Dynamic Media open API
 description: Integrate Asset selector with various Adobe, non-Adobe, and third party applications.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
@@ -200,6 +200,10 @@ After integration with the Adobe's Micro-Frontend Asset Selector, you can see th
 * **F**: [Sorting in ascending or descending order](#sorting)
 * **G**: Cancel Selection
 * **H**: Select single or multiple assets
+
+>[!NOTE]
+>
+>Folders are only supported when connecting to author repository, and not Dynamic Meda with OpenAPI repository.
 
 >[!MORELIKETHIS]
 >

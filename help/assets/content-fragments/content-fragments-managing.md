@@ -31,11 +31,19 @@ The [Content Fragment Editor](#opening-the-fragment-editor) provides various [mo
 
 >[!NOTE]
 >
->Content Fragments are a Sites feature, but are stored as **Assets**. 
+>Content Fragments are a **Sites** feature, but are stored as **Assets**. 
 >
->They are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** console, though they can still be managed from the **Assets** console. This section covers management from the **Assets** console.
+>They are primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** console, though they can still be managed from the **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** console.
 >
->There are two editors for authoring Content Fragments; although the basic functionality is the same, there are some differences. This section covers the original editor, primarily accessed from the **Assets** console. See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for details of the new editor (primarily accessed from the **Content Fragments** console). Both editors have a toggle switch in the top toolbar to provide quick access to the other editor.
+>There are two editors for authoring Content Fragments - the new editor and the original editor. The new editor is the default. Although the basic functionality is the same, there are some differences. 
+>
+>This section covers the original editor. 
+>
+>The default editor for [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md) is the new editor, accessed from both the **Content Fragments** console and the **Assets** console. See the Sites documentation, [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), for details of the new editor.
+>
+>To use the [original editor](/help/assets/content-fragments/content-fragments-variations.md), first open the new editor and then deactivate the **New Editor** switch. 
+>
+>Both editors have a toggle switch in the top toolbar to provide quick access to the other editor.
 
 ## Creating Content Fragments {#creating-content-fragments}
 
@@ -126,23 +134,23 @@ Select the fragment to reveal the toolbar with applicable actions:
 
 ## Opening the Fragment Editor {#opening-the-fragment-editor}
 
-To open your fragment for editing:
+To open your fragment for editing in the original editor:
 
 >[!CAUTION]
 >
 >To edit a content fragment you need [the appropriate permissions](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contact your system administrator if you are experiencing issues.
 
-1. Use the **Assets** console to navigate to the location of your content fragment.
-1. Open the fragment for editing, by either:
+1. Navigate to the location of your content fragment.
 
-   * Clicking/tapping on the fragment or fragment link (this is dependent on the console view).
-   * Selecting the fragment, then **Edit** from the toolbar.
+1. Open the fragment for editing.
 
-1. The fragment editor opens. Make your changes as required:
+1. The fragment opens in the new editor. Deactivate the **New Editor** switch (top right) to open the original editor:
 
    ![Fragment editor](assets/cfm-managing-03.png)
 
-1. After making changes, use **Save**, **Save & close** or **Close** as required.
+1. Make your changes as required.
+
+1. When ready, use **Save**, **Save & close** or **Close** as required.
 
    >[!NOTE]
    >

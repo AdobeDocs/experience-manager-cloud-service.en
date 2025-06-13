@@ -236,7 +236,9 @@ Through a simple configuration, a content author can now enable progressive web 
 
 >[!NOTE]
 >
->See [Enabling Progressive Web App Features](/help/sites-cloud/authoring/sites-console/enable-pwa.md).
+>See [Enabling Progressive Web App Features](/help/sites-cloud/authoring/sites-console/enable-pwa.md) for more details.
+
+{{pwa-deprecation}}
 
 * **Configure installable experience**
 
@@ -331,3 +333,35 @@ Once you have entered Bulk Editing you can:
     * The new values are applied to all selected pages when you select **Done**.
     * When the field is multi-value (for example, Tags), you can either append a new value or remove a common value.
   * Fields that are common, but have different values across the various pages are indicated with a special value such as the text `<Mixed Entries>`.
+
+## Property Inheritance {#inheritance}
+
+If the page is based on a blueprint or otherwise inherits content from another page, inheritance is reflected in the **Page Properties** window for the individual field.
+
+![Inherited properties](assets/property-inhertiance.png)
+
+Inherited properties can not be edited. Tap or click the **Cancel inheritance** icon next to a particular field to break its inheritance.
+
+![Cancel inheritance](assets/cancel-inheritance.png)
+
+Confirm the cancellation in the **Cancel inheritance** modal.
+
+![Cancel inheritance confirmation modal](assets/cancel-inheriance-confirmation.png)
+
+Once inheritance is cancelled for a field, it then becomes editable.
+
+![Cancelled inheritance](assets/property-inheritance-broken.png)
+
+To reinstate inheritance, tap or click the **Revert inheritance** icon next to the field.
+
+![Revert inheritance](assets/revert-inheritance.png)
+
+Confirm the reversion in the **Revert inheritance** modal.
+
+![Revert inheritance confirmation modal](assets/revert-inhertiance-confirmation.png)
+
+Select **Synchronize Page after reverting inheritance** to update the field with the latest values in the blueprint. If you do not, the values will be updated the next time the LiveCopy is synchronized.
+
+>[!TIP]
+>
+>For more information about inheritance, please see the document [Multi Site Manager and Translation](/help/sites-cloud/administering/msm-and-translation.md)

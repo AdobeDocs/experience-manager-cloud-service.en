@@ -134,6 +134,12 @@ Interactive Communications on Cloud is a powerful solution for creating, managin
 
 Ready to start? The Interactive Communications editor is available under the Early Access program for Forms as a Cloud Service deployments. To request access, email your organization ID and program details to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
 
+### AEM Forms Integration with Adobe Experience Platform (AEP)
+
+You can connect AEM Forms with Adobe Experience Platform (AEP) to leverage customer profiles and data for personalized form experiences and trigger downstream workflows based on form submissions. By sending form data directly to AEP datasets, you can enrich customer profiles and gain deeper insights into user interactions.
+
+Ready to start? [Learn more about integrating AEM Forms with Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
+
 ## Additional Early Access Innovations
 
 ### HTML email Templates in Adaptive Forms
