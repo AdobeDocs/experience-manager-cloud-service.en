@@ -137,7 +137,7 @@ The APIs in the table below (click to expand to see it) have been announced as d
     <td>8/31/2025</td>
   </tr>
   <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
-    <td>The Google Guava Core Libraries are deprecated.</td>
+    <td>The Google Guava Core Libraries are deprecated in Cloud Service. <a href="#com.google.common">See removal notes below.</a></td>
     <td>5/15/2023</td>
     <td>8/31/2025</td>
   </tr>
@@ -356,6 +356,19 @@ Action list:
 
 * Add this bundle to your project
   * `org.mongodb:mongo-java-driver:3.12.7`
+
+You might want to pick a different version, depending on your requirements.
+
+### Removal of `com.google.common*` {#com.google.common}
+
+Remove the usage of Google Guava Core Libraries or include an appropriet version in your project. In many cases the usage of this library can be replaced with either collection classes from the JDK or Apache Commons Collections4. If you do not find any replacement, include the latest version of the Google Guave Core Library in your project. If you are using an old version of [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), make sure to update to the latest version.
+
+Action list:
+
+* Update ACS AEM Commons to latest version (at least 6.11.0)
+* Replace usage of Google Guava Core Library with JDK collections or Apache Commons Collections4
+* If still required, add this bundle to your project (substitute the version with the latest available):
+  * `com.google.guava:guava:33.4.8-jre`
 
 ### Removal of `Apache Commons Lang 2 and Apache Commons Collections 3` {#apache.commons}
 
