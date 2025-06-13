@@ -26,7 +26,7 @@ It offers several features that make AEM development easier:
 Before using the AEM Developer Tools, you need to:
 
 * Download and install [Eclipse IDE for Enterprise Java&trade; Developers](https://www.eclipse.org/downloads/packages/).
-* Configure your eclipse installation to ensure that you have at least 1 GB of heap memory by editing your `eclipse.ini` configuration file as described in the [Eclipse FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse).
+* Configure your eclipse installation to ensure that you have at least 1 GB of heap memory by editing your `eclipse.ini` configuration file as described in the [Eclipse FAQ.](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
 
 >[!NOTE]
 >

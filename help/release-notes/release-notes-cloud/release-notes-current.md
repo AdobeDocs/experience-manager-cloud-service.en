@@ -195,7 +195,7 @@ Please review and update any downstream processes that rely on custom logging be
 
 ### Default Purging of Older Versions and Audit Logs {#mt-defaults}
 
-Currently, content versions and audit logs have their associated *purge maintenance tasks* disabled by default and thus no data is removed unless explicitly configured via their respective OSGi properties. 
+Currently, content versions and audit logs have their associated *purge maintenance tasks* disabled by default and thus no data is removed unless explicitly configured. 
 
 However, to optimize repository performance, starting in **late June 2025**, purging will be enabled by default, following these guidelines:
 
@@ -210,7 +210,7 @@ However, to optimize repository performance, starting in **late June 2025**, pur
   * All versions within the past 7 years are retained.
   * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
 
-* You may modify these defaults through OSGi configuration overrides.
+* You may modify these defaults through YAML configuration, deployed using the config pipeline.
 
 #### Audit Log {#mt-auditlogs}
 
@@ -223,7 +223,7 @@ However, to optimize repository performance, starting in **late June 2025**, pur
   * All events are logged by default.
   * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
 
-* You may modify these defaults through OSGi configuration overrides.
+* You may modify these defaults through YAML configuration, deployed using the config pipeline.
 
 For more details, see the [Maintenance Tasks article](/help/operations/maintenance.md#defaults).
 

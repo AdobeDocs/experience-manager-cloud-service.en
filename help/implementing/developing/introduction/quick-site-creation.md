@@ -7,6 +7,8 @@ role: Admin, Architect, Developer
 ---
 # Quick Site Creation and Front-End Customization {#quick-site-creation}
 
+{{traditional-aem}}
+
 Learn how the Quick Site Creation tool uses site templates, themes, and the front-end pipeline to enable fast deployment of new sites and decouple front-end development.
 
 ## Overview {#overview}
