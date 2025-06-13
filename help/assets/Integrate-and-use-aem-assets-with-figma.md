@@ -76,7 +76,7 @@ Access [!UICONTROL Adobe Experience Manager ([!DNL AEM]) Assets Connector](#acce
 
 ## Export assets to [!DNL AEM Assets] folder{#export-figma-design-to-aem-assets-folder}
 
-Access [!UICONTROL Adobe Experience Manager (AEM) Assets Connector](#access-aem-assets-connector) panel within your [!DNL Figma] design interface and execute the following steps to export your design to the [!DNL AEM Assets] folder:
+Access to [!UICONTROL Adobe Experience Manager (AEM) Assets Connector](#access-aem-assets-connector) panel within your [!DNL Figma] design interface and execute the following steps to export your design to the [!DNL AEM Assets] folder:
 
 1. Navigate to the destination folder where you want to save your [!DNL Figma] design. If you're already inside a folder, click ![three dots](/help/assets/assets/three-dots.svg) in the folder path to select a different destination folder.
 1. Click ![file upload](/help/assets/assets/upload-icon.svg) **[!UICONTROL Upload]** to display the **[!UICONTROL Upload Asset]** dialog box. 
