@@ -1,5 +1,5 @@
 ---
-title: Asset Selector for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+title: Customize Asset Selector application
 description: Use functions to customize Asset selector within your application.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609

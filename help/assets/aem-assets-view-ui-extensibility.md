@@ -79,3 +79,11 @@ Fulfil the following requirements to start adding the extensibility component on
 1. Set up your local environment and create your first UI extension to take a firsthand experience of the process of developing UI extensions in [!DNL Assets View]. See [Step-by-step AEM Assets View Extension Development](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/) for more details.
 1. Set up your application using the AIO CLI to generate the basic extension structure and required code. See [code generation for [!DNL AEM Assets View]](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/) for detailed information.
 1. Test your extensions locally to ensure that they work as expected before deployment. Run your extension in a fully isolated environment or with partial isolation and connect your extension to the production [!DNL AEM Assets View] for testing. See [Troubleshooting - [!DNL AEM Assets View] extensibility](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/) for detailed information.
+
+## Customize Quick Actions and Actions Bar in Assets view {#customize-quick-actions-and-actions-bar}
+
+You can customize the actions that display when you select one or more assets (Actions Bar) in Assets view. Assets view also allows you to customize the actions that display when you click More options (...) in the asset card. For more information, see [Browse View](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
+
+## Open custom dialogs in Assets view {#open-custom-dialogs-assets-view}
+
+Assets view also provides the ability to open custom dialogs with text of your choice. You can also add links to the text. For more information, see [Modal API](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/#modal-api).
