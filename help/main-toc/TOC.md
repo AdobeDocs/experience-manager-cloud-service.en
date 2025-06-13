@@ -498,6 +498,7 @@ user-guide-title: AEM as a Cloud Service
   + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
   + [Assets Collaborator users](/help/assets/assets-collaborator-users.md)
   + [Integrate AEM Assets while authoring content for Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
+  + [Integrate [!DNL AEM Assets] with [!DNL Figma]](/help/assets/Integrate-aem-assets-with-figma.md)
   + Manage digital assets {#manage}
     + Micro-Frontend Asset Selector {#asset-selector}
       + [Asset Selector overview](/help/assets/overview-asset-selector.md)
