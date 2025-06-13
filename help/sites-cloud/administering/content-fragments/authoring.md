@@ -29,7 +29,7 @@ This editor provides:
 
 >[!WARNING]
 >
->The editor described in this section is *only* available in the *online* Adobe Experience Manager (AEM) as a Cloud Service.
+>The editor described in this section is *only* available in the [Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md); so *online* Adobe Experience Manager (AEM) as a Cloud Service, not a local instance.
 
 ## Content Fragment Editor {#content-fragment-editor}
 

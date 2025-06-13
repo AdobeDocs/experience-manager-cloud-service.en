@@ -233,9 +233,6 @@ As an administrator you can create language groups and configure them to multipl
 
 Overall, creating language groups enhances the efficiency and productivity of translation projects, ultimately improving the localization process across multiple languages.
 
-
-Learn how to [translate documents from the Web Editor](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)
-
 ### Revamped Experience to Search and Filter Files in the Repository View
 
 Now, you have an enhanced experience while filtering files. The revamped functionality to filter files provides an improved way to effortlessly search and navigate through files. 

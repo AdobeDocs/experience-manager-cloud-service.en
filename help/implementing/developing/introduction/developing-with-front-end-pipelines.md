@@ -8,6 +8,8 @@ role: Admin, Architect, Developer
 
 # Develop Sites with the front-end pipeline {#developing-site-with-front-end-pipeline}
 
+{{traditional-aem}}
+
 The [front-end pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) gives front-end developers greater independence and significantly accelerates development. This article explains how the process works and highlights key considerations to help you get the most out of it.
 
 >[!TIP]
