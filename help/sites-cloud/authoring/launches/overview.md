@@ -107,6 +107,12 @@ Launches allow you to:
 
 ## The Launches Console {#the-launches-console}
 
+>[!NOTE]
+>
+>This console is only for Launches for Pages. 
+>
+>To manage your Content Fragments see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+
 The Launches console provides an overview of your launches and lets you act on those listed. 
 
 ![Launch Console - Manage Content](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
