@@ -191,7 +191,7 @@ To navigate to a layer's properties panel:
 1. Click ![rapid content creation](/help/assets/assets/show-layers-list.svg).
 1. Select the layer from the list. 
 
-This panel includes sections to [reposition](#reposition-resize-delete-a-layer), [resize](#reposition-resize-delete-a-layer) and [rotate](#reposition-resize-delete-a-layer) the layer.  It also provides color fill options for shape layers, [text formatting options](#text-formatting-options-on-properties-panel) for text layers, and an option to [add a CTA link](#add-CTA-in-dynamic-media-templates) to any selected layers.
+This panel includes sections to [reposition](#reposition-resize-delete-a-layer), [resize](#reposition-resize-delete-a-layer) and [rotate](#reposition-resize-delete-a-layer) the layer.  It also provides color fill options for shape layers, [text formatting options](#text-formatting-options-on-properties-panel) for text layers, and an option to [add a CTA link](#add-CTA-in-dynamic-media-templates) to any selected layer.
 
 ![rapid content creation](/help/assets/assets/properties-panel.png)
 
