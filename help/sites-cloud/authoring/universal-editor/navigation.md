@@ -263,7 +263,8 @@ In content tree mode, the panel shows the hierarchy of the page content.
 
 ![Content tree mode](assets/content-tree-mode.png)
 
-When selecting an item in the content tree, the editor scrolls to that content and selects it.
+* When selecting an item in the content tree, the editor scrolls to that content and selects it.
+* When double-clicking an item in the content tree, the editor scrolls to that content and selects it and also opens the associated properties in [properties mode.](#properties-mode)
 
 ![Content tree](assets/content-tree.png)
 
