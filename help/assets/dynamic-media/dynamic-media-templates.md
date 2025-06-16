@@ -1,6 +1,6 @@
 ---
 title: How to manage [!DNL Dynamic Media] templates?
-description: Learn how to create [!DNL Dynamic Media] templates using a WYSIWYG template editor and include multiple images and text layers to quickly create banners and flyers and use them in downstream applications.
+description: Learn how to create [!DNL Dynamic Media] templates using a WYSIWYG template editor and include multiple images, texts and shapes layers to quickly create banners and flyers and use them in downstream applications.
 hide: yes
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
@@ -44,7 +44,7 @@ exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
     </tr>
 </table>
 
-Create real time customizable templates for your banners and flyers using [!DNL Dynamic Media] templates, a WYSIWYG template editor. Publish your [!DNL Dynamic Media] template and use it in downstream applications. A [!DNL Dynamic Media] template includes image and text layers. Add parameters to the image and text layers of the template and use [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) to reposition and resize the layer and update its content in real-time. 
+Create real time customizable templates for your banners and flyers using [!DNL Dynamic Media] templates, a WYSIWYG template editor. Publish your [!DNL Dynamic Media] template to use it in downstream applications. A [!DNL Dynamic Media] template includes image, text and shape layers. Add parameters to the layers of the template and use [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) to reposition, resize or edit the layer and update its content in real-time. 
 
 Some of the key features include:
 
@@ -94,6 +94,7 @@ Execute the following steps to create a [!DNL Dynamic Media] template:
 1. [Create a blank canvas](#create-a-canvas)
 1. [Add images to the canvas](#add-images-to-the-canvas)
 1. [Add text layers to the canvas](#add-text-to-the-canvas)
+1. [Add shapes to the canvas](#add-shapes-to-the-canvas)
 1. [Edit or delete a layer](#edit-or-delete-a-layer)
 1. [Parameterise layers](#parameterise-a-layer)
 
@@ -162,6 +163,17 @@ Execute these steps to add text layers to the canvas:
 
 See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) to reposition, resize, rotate or delete the layer. Format your text to the required font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **[!UICONTROL Text]** section of the panel. The **[!UICONTROL Font Family]** field displays [!UICONTROL Adobe Sans F2] default font, the reprocessed existing fonts and the newly uploaded and published fonts. See point 5 in the [Before you begin](#prerequisites-for-dynamic-media-wysiwyg-template) section above for more information.
 
+### Add shapes to the canvas {#add-shapes-to-the-canvas}
+
+Execute these steps to add shapes to the canvas:
+
+1. Click ![creating shapes](/help/assets/assets/Shapes.svg), select a shape (rectangle or circle) to add it to the canvas. Use the shape's [[!UICONTROL Properties Panel]](#reposition-resize-delete-a-layer) available on the right to reposition, resize, rotate or delete the layer. 
+1. Scroll to the **[!UICONTROL Style]** section of the panel to fill color in the selected shape by defining a hex code in the **[!UICONTROL Shape Color]** field or using the color picker.
+1. Slide the **[!UICONTROL Corner Radius]** slider to adjust the corner curve of the rectangle. 
+![templates with support to dynamic updates](/help/assets/assets/add-shapes-to-the-canvas.png)
+1. [Add the Hide parameter to the selected layer](#parameterise-a-layer) to show or hide it in the template in real time using the template URL. 
+1. Select the layer to [add a CTA link](#add-CTA-in-dynamic-media-templates) to it, allowing users to click the shape as a hyperlink in the live template.
+
 ### Edit or delete a layer {#edit-or-delete-a-layer}
 
 Execute these steps to edit or delete a canvas layer:
@@ -179,7 +191,7 @@ To navigate to a layer's properties panel:
 1. Click ![rapid content creation](/help/assets/assets/show-layers-list.svg).
 1. Select the layer from the list. 
 
-This panel displays the position of the layer's center point on the canvas plane (X and Y values) and the layer's dimensions (width and height) along with text formatting options.
+This panel includes sections to [reposition](#reposition-resize-delete-a-layer), [resize](#reposition-resize-delete-a-layer) and [rotate](#reposition-resize-delete-a-layer) the layer.  It also provides color fill options for shape layers, [text formatting options](#text-formatting-options-on-properties-panel) for text layers, and an option to [add a CTA link](#add-CTA-in-dynamic-media-templates) to selected layers.
 
 ![rapid content creation](/help/assets/assets/properties-panel.png)
 
@@ -190,7 +202,7 @@ From the properties panel of a layer, select another layer on the canvas to navi
 
 See these common layer editing actions to edit a text or an image layer:
 
-* **Reposition the layer:** Drag the layer to move it anywhere on the canvas. This action updates the X and Y values in the properties panel.
+* **Reposition the layer:** Drag the layer to move it anywhere on the canvas. This action updates the X and Y values in the properties panel. X and Y are coordinates of the layer's center on the canvas plane.
 * **Resize the layer:** Select the layer and drag its edge handles to resize it. This action updates the W (width) and H (height) values in the properties panel.
 * **Rotate the layer:** Drag the square handle placed vertically above the layer to rotate it around its center. This action updates the angle values in the properties panel. 
 * **Delete the layer:** Press **Backspace** or **delete** and then click **[!UICONTROL Confirm]** to delete a selected layer.
@@ -204,7 +216,7 @@ Ensure to include **[!UICONTROL Smart Text Resize]**. [!UICONTROL Smart Text Res
 
 ### Parameterise layers {#parameterise-a-layer}
 
-After creating a template with multiple layers of images and texts, parameterise the selected layers. When a layer or its property is parameterised, it gets a key-value pair (also called as parameter). This parameter can be included in the template URL to update the layer's position, size or content in real time resulting in template customisation in no time.
+After creating a template with multiple layers of images, texts and shapes parameterise the selected layers. When a layer or its property is parameterised, it gets a key-value pair (also called as parameter). This parameter can be included in the template URL to update the layer's position, size or content in real time resulting in template customisation in no time.
 
 To parameterise a layer:
 
@@ -306,7 +318,7 @@ Edit the template by following these steps:
 
 ## Add Call to Action (CTA) link to your template layer{#add-CTA-in-dynamic-media-templates}
 
-Turn any image or text layer of your [!DNL Dynamic Media] template into a hyperlink by adding a CTA link to it that directs users to a target page. 
+Turn any image, text or shape layer of your [!DNL Dynamic Media] template into a hyperlink by adding a CTA link to it that directs users to a target page. 
 
 Execute these steps to add a CTA link to a layer:
 
