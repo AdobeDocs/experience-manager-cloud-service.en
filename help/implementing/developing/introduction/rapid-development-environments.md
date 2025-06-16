@@ -78,7 +78,7 @@ After you have added an RDE for your program using Cloud Manager, you can intera
 >Make sure you have version 20 of [Node and NPM installed](https://nodejs.org/en/download/) for Adobe I/O (AIO) CLI and related plugins to work properly.
 
 
-1. Install the AIO CLI tools according to this [procedure](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+1. Install the AIO CLI tools according to this [procedure](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/tools/cli-install).
 1. Install the AIO CLI tools AEM RDE plugin:
 
    ```

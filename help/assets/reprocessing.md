@@ -99,8 +99,6 @@ Organizations that deal with digital assets increasingly use taxonomy-controlled
 
 Compared to natural language vocabularies, tagging digital assets based on business taxonomy helps align them with a company's business and ensures that the most relevant assets appear in searches.
 
-Read more about [Smart tags for video assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags-video-assets.html?lang=en).
-
 Read more about [Reprocess color tags for existing images in DAM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en#color-tags-existing-images).
 
 ### Smart crop {#reprocessing-smart-crop}

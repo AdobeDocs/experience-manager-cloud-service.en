@@ -13,7 +13,7 @@ role: User, Developer
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components)                  |
 | AEM as a Cloud Service     | This article         |
 
 AEM Forms supports custom functions, allowing users to define JavaScript functions for implementing complex business rules. These custom functions extend the capabilities of forms by facilitating manipulation and processing of entered data to meet specified requirements. They enable dynamic alteration of form behavior based on predefined criteria. Custom functions also enable developers to enforce complex validation logic, perform dynamic calculations, and control the display or behavior of form elements based on user interactions or predefined criteria.
