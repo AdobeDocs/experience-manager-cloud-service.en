@@ -37,9 +37,11 @@ When the next quarter arrives, you promote the launch pages, so that you can pub
 This section describes how to create, edit and promote (and if necessary [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) launch fragments from within the [Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md):
 
 * [Create a Launch](#create-a-launch)
-* [Edit a Launch](#edit-a-launch)
-* [Manage content within a Launch](#managing-content)
+* [Edit Launch content](#edit-launch-content)
+* [Manage content within a Launch](#manage-content-within-a-launch)
 * [Rebase a Launch](#rebase-a-launch)
+* [Promote a Launch](#promote-a-launch)
+* [Delete a Launch](#delete-a-launch)
 
 ## Create a Launch {#create-a-launch}
 
@@ -83,7 +85,7 @@ This section describes how to create, edit and promote (and if necessary [delete
 
 1. Select **Edit** for the fragment you want to update. It will open in the [fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md) as usual.
 
-## Manage content within a Launch {#managing-content}
+## Manage content within a Launch {#manage-content-within-a-launch}
 
 1. Navigate to the Content Fragments console.
 
@@ -152,3 +154,5 @@ This section describes how to create, edit and promote (and if necessary [delete
 1. Select your launch.
 
 1. Select **Delete Launch**.
+
+   You are asked to confirm the action before the launch is deleted.
