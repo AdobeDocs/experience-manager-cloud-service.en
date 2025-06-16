@@ -8,6 +8,8 @@ solution: Experience Manager Sites
 ---
 # Site Templates {#site-templates}
 
+{{traditional-aem}}
+
 Learn how AEM site templates can be used to predefine site structure and initial content to allow you to quickly create sites.
 
 ## Overview {#overview}

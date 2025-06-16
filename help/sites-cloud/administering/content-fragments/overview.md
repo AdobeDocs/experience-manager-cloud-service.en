@@ -12,6 +12,10 @@ With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow 
 
 >[!IMPORTANT]
 >
+>Many features described in this section are *only* available in the [Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md); so *online* Adobe Experience Manager (AEM) as a Cloud Service, not a local instance.
+
+>[!IMPORTANT]
+>
 >Content Fragments can be accessed from two consoles: **Content Fragments** and **Assets**.
 >
 >There are also two editors for authoring Content Fragments; although the basic functionality is the same, there are some differences. Both editors are accessible from both consoles.

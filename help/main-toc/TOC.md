@@ -402,7 +402,7 @@ user-guide-title: AEM as a Cloud Service
       + [Managing Projects](/help/sites-cloud/authoring/projects/managing.md)
       + [Working with Tasks](/help/sites-cloud/authoring/projects/tasks.md)
       + [Working with Project Workflows](/help/sites-cloud/authoring/projects/workflows.md)
-    + Launches {#launches}
+    + Launches for Pages {#launches-for-pages}
       + [Working with Launches](/help/sites-cloud/authoring/launches/overview.md)
       + [Creating Launches](/help/sites-cloud/authoring/launches/creating.md)
       + [Managing Pages in Launches](/help/sites-cloud/authoring/launches/managing-pages.md)
@@ -508,7 +508,6 @@ user-guide-title: AEM as a Cloud Service
   + [Enable Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
   + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
   + [Assets Collaborator users](/help/assets/assets-collaborator-users.md)
-  + [Integrate AEM Assets while authoring content for Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
   + Manage digital assets {#manage}
     + Micro-Frontend Asset Selector {#asset-selector}
       + [Asset Selector overview](/help/assets/overview-asset-selector.md)
@@ -704,6 +703,9 @@ user-guide-title: AEM as a Cloud Service
   + Best practices{#best-practices}
     + [Search best practices](/help/assets/search-best-practices.md)
     + [Metadata management and best practices](/help/assets/metadata-best-practices.md)
+
+  + Integration with Figma {#integration-figma}
+    + [Native integration with Figma](/help/assets/Integrate-aem-assets-with-figma.md) 
   + Integration with Adobe Workfront {#integrations}
     + [Integrations with [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
     + [Configure asset metadata mapping](/help/assets/configure-asset-metadata-mapping.md)
@@ -714,7 +716,9 @@ user-guide-title: AEM as a Cloud Service
   + Integration with Adobe Express {#integration-adobe-express}
       + [Native integration with Adobe Express](/help/assets/native-integration-adobe-express.md)    
   + Integration with Creative Cloud {#integration-creative-cloud}
-      + [Connect AEM Assets to Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)     
+      + [Connect AEM Assets to Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md) 
+  + Integrate AEM Assets with Edge Delivery Services {#integrate-aem-assets-edge-delivery-services}
+      + [Integrate AEM Assets while authoring content for Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)   
 + Forms {#forms}
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
@@ -1063,7 +1067,8 @@ user-guide-title: AEM as a Cloud Service
       + [How to Publish and Deploy Forms: Universal Editor Publishing Guide](/help/edge/docs/forms/universal-editor/publish-forms.md)
       + [Build Custom Form Components: Developer's Guide to Universal Editor](/help/edge/docs/forms/universal-editor/create-custom-component.md) 
       + [Form Data Model Integration: Integrating Forms with the Form Data Model](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-      + [Reusable, modular, and standalone segments: Creating and using Form Fragments in forms](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)   
+      + [Reusable, modular, and standalone segments: Creating and using Form Fragments in forms](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+      + [Troubleshooting 403 Forbidden Errors in Edge Delivery Services Form Submission](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)   
     + Document-based authoring {#getting-started-edge-delivery-services-forms}
       + [Build Your First Form: Quick Start Guide with Google Sheets and Excel](/help/edge/docs/forms/tutorial.md)
       + [How to Create Forms Using Google Sheets or Excel: Step-by-Step Guide](/help/edge/docs/forms/create-forms.md)
@@ -1195,14 +1200,14 @@ user-guide-title: AEM as a Cloud Service
       + [Project Setup](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
       + [Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
     + [Manage Environments](/help/implementing/cloud-manager/manage-environments.md)
-    + [Specialized Testing Environments (Early Adopter)](/help/implementing/cloud-manager/specialized-test-environment.md)
+    + [Specialized Testing Environments (Beta)](/help/implementing/cloud-manager/specialized-test-environment.md)
     + Manage your Code {#managing-code}
       + [Maven Project Version Handling](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
       + [Manage Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
       + [Add an Adobe Repository](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
       + [Add a Private Repository](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-      + [Add an External Repository (Early Adopter)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
-      + [Manage Access Tokens of External Repositories (Early Adopter)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+      + [Add an External Repository (Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+      + [Manage Access Tokens of External Repositories (Beta)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
       + [Access Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
       + [Git Submodule Support](/help/implementing/cloud-manager/managing-code/git-submodules.md)
       + [Use Git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
