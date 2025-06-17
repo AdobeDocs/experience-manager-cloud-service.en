@@ -134,7 +134,7 @@ Execute these steps to create a blank canvas:
 * ![template to create banners rapidly](/help/assets/assets/redo.svg): Click ![template to create banners rapidly](/help/assets/assets/redo.svg) or use keyboard shortcut, **Ctrl** + **Y** (Windows) or **Cmd** + **Y** (Mac) to redo the last action.
 * ![template to create flyers rapidly](/help/assets/assets/zoom-in.svg): Click ![template to create flyers rapidly](/help/assets/assets/zoom-in.svg) or use keyboard shortcut, **Ctrl** + **+** (Windows) or **Cmd** + **+** (Mac) to zoom in the canvas.
 * ![template to create banners rapidly](/help/assets/assets/Zoom-out.svg): Click ![template to create banners rapidly](/help/assets/assets/Zoom-out.svg) or use keyboard shortcut, **Ctrl** + **-** (Windows) or **Cmd** + **-** (Mac) to zoom out the canvas.
-* Press **Backspace** or **delete** to delete the selected layer if no text or property is being edited.
+* Press **backspace** or **delete** to delete the selected layer if no text or property is being edited.
 
 Click ![template to create flyers rapidly](/help/assets/assets/show-layers-list.svg) and select more options (![](/help/assets/assets/three-dots.svg)) on the Canvas layer to edit the canvas dimensions anytime while creating the template.
 ![](/help/assets/assets/edit-canvas1.png)
@@ -186,7 +186,7 @@ Execute these steps to edit or delete a canvas layer:
 
 ### Properties Panel{#properties-panel}
 
-[!UICONTROL Properties] panel includes sections to [reposition](#reposition-resize-delete-a-layer), [resize](#reposition-resize-delete-a-layer) and [rotate](#reposition-resize-delete-a-layer) a layer.  It also provides color fill options for shape layers, [text formatting options](#text-formatting-options-on-properties-panel) for text layers, and an option to [add a [!UICONTROL CTA] link](#add-CTA-in-dynamic-media-templates) to any selected layer.
+[!UICONTROL Properties] panel includes sections to [reposition](#reposition-resize-delete-a-layer), [resize](#reposition-resize-delete-a-layer) and [rotate](#reposition-resize-delete-a-layer) a layer.  It also provides color fill options for [shape layers](#add-shapes-to-the-canvas), [text formatting options](#text-formatting-options-on-properties-panel) for text layers, and an option to [add a [!UICONTROL CTA] link](#add-CTA-in-dynamic-media-templates) to any selected layer.
 To navigate to a layer's properties panel, click ![rapid content creation](/help/assets/assets/show-layers-list.svg) and select the layer from the list to display its [!UICONTROL Properties] panel. 
 
 ![rapid content creation](/help/assets/assets/properties-panel.png)
