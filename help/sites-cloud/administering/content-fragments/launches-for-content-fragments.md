@@ -34,6 +34,8 @@ You can also:
 
 When the next quarter arrives, you promote the launch pages, so that you can publish the source pages (holding the updated content). You can promote either all fragments, or only those that you have modified.
 
+![Launches overview - Rebase and Promote](/help/sites-cloud/administering/content-fragments/assets/cf-launches-overview.png)
+
 This section describes how to create, edit and promote (and if necessary [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) launch fragments from within the [Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md):
 
 * [Create a Launch](#create-a-launch)
