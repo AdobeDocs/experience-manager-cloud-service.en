@@ -34,6 +34,26 @@ The **Preview** option in the publish window can therefore be suppressed entirel
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
 ```
 
+## Disabling Open Page {#open-page}
+
+The **Open Page** button can be suppressed entirely in an app by adding the following metadata.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="header-open-page" />
+```
+
+## Disabling Duplicate Button {#duplicate-button}
+
+Certain authoring workflow might need to limit the ability of the content author to duplicate components. You can disable the [duplicate icon](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) by adding the following metadata.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
+```
+
+## Changing Your Endpoint {#custom-endpoint}
+
+If you would like not to use the Universal Editor Service, which is hosted by Adobe, but your own hosted version, you can set this in a meta tag. Please see the document [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md##configuration-settings) for details.
+
 ## Filtering Components {#filtering-components}
 
 You can restrict the allowed components per container in the Universal Editor using component filters. Please see the document [Filtering Components](/help/implementing/universal-editor/filtering.md) for more information.

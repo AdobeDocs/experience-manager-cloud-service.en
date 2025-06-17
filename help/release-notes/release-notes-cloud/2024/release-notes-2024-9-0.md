@@ -39,7 +39,7 @@ Have a look at the September 2024 Release Overview video for a summary of the fe
 
 #### Translation Management {#translation-management}
 
-AEM translation workflows and API actions now trigger events to provide insight about translation job state changes. Users can subscribe to these events through the Adobe Developer Console. See [here](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) for more information on the AEM Translation Management API. 
+AEM translation workflows and API actions now trigger events to provide insight about translation job state changes. Users can subscribe to these events through the Adobe Developer Console.
 
 ### Early Adopter Program {#sites-early-adopter}
 
