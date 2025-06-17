@@ -30,16 +30,53 @@ When the next quarter arrives, you promote the launch pages, so that you can pub
 
 ![Launches overview - Rebase and Promote](/help/sites-cloud/administering/content-fragments/assets/cf-launches-overview.png)
 
-This section describes how to create, edit and promote (and if necessary [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) launch fragments from within the [Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md):
+This section describes how to create, edit, rebase, promote, and if necessary delete, launch fragments from within the [Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md):
 
+* [Access and view Launches in the Content Fragment console](#launches-in-the-content-fragment-console)
 * [Create a Launch](#create-a-launch)
 * [Edit Launch content](#edit-launch-content)
 * [Manage content within a Launch](#manage-content-within-a-launch)
+* [Compare Launch to Source](#compare-launch-to-source)
 * [Rebase a Launch from Source](#rebase-a-launch-from-source)
 * [Promote a Launch to Source](#promote-a-launch-to-source)
 * [Delete a Launch](#delete-a-launch)
 
+## Launches in the Content Fragment Console {#launches-in-the-content-fragment-console}
+
+The **Launches** tab of the Content Fragments console allows you to create launches, list all existing launches, see key properties, and take actions on them.
+
+When no launch is selected you can [create a new launch](#create-a-launch).
+
 ![Launches tab in console](/help/sites-cloud/administering/content-fragments/assets/cf-launches-tab.png)
+
+Select your launch to show:
+
+* the toolbar, with the available actions
+* the right panel, showing properties and further actions
+
+![Launch actions toolbar in console](/help/sites-cloud/administering/content-fragments/assets/cf-launches-actions.png)
+
+The toolbar allows you to:
+
+* **[Open Launch](#edit-launch-content)**
+* **[Edit Sources](#manage-content-within-a-launch)**
+* **[Compare Launch to Source](#compare-launch-to-source)**
+* **[Promote](#promote-a-launch-to-source)**
+* **[Rebase](#promote-a-launch-to-source)**
+* **[Delete Launch](#delete-a-launch)**
+
+While the right panel enables you to:
+
+* Edit the Launch **Title**
+* Edit the Launch **Description**
+* Update configuration details that were set when you [created the launch](#create-a-launch):
+
+  * **Include references**
+  * **Publish Ready**
+
+* And also define:
+
+  * A **Promote Date** and Time
 
 ## Create a Launch {#create-a-launch}
 
@@ -78,13 +115,6 @@ To create your launch:
 1. Select **View** to see further details in the AEM console for [Background Operations](/help/operations/asynchronous-jobs.md).
 
    ![New launch in console](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
-
-1. Select your launch to show:
-
-   * the toolbar, with the available actions
-   * the right panel, showing properties and further actions
-
-   ![Launch actions toolbar in console](/help/sites-cloud/administering/content-fragments/assets/cf-launches-actions.png)
 
 ## Edit Launch content {#edit-launch-content}
 
