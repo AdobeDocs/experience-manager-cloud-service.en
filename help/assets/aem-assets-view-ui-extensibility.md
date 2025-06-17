@@ -67,7 +67,7 @@ Fulfil the following requirements to start adding the extensibility component on
 * [Access to [!DNL Assets View]](#1).
 * Access to the [[!DNL Adobe app builder]](https://developer.adobe.com/app-builder/docs/overview/). 
 * Entitlement to developer of system admin role within the organization. See [this documentation](https://developer.adobe.com/uix/docs/guides/get-access/) for more information.
-* [!DNL Adobe IO command line tool (AIO CLI)] is installed on your local machines. This tool is essential for creating and deploying extension projects. See [this documentation](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up) for more information.
+* [!DNL Adobe IO command line tool (AIO CLI)] is installed on your local machines. This tool is essential for creating and deploying extension projects. See [Create your First App Builder Application](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#local-environment-set-up) (requires authentication for access) for more information.
 * Good understanding of [!DNL JavaScript], [!DNL Node.js], and [!DNL React] technologies.
 
 ## Add the UI extensibility component to [!DNL Assets View] {#ui-extensibility-in-assets-view}
