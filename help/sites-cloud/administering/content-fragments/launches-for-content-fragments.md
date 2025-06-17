@@ -18,19 +18,13 @@ A *Launch* is created to allow you to make changes in preparation for future pub
 >
 >For full details see [Launches for Pages](/help/sites-cloud/authoring/launches/overview.md).
 
-<!-- Confirm this content-->
-
-You create a *Launch*, then after editing and updating Content Fragments in your *Launch* you *Promote* them back to the *Source*. If changes are made to the *Source* fragments during this phase, you can copy them to the *Launch* with the *Rebase* operation. When ready, *Promote* duplicates the launch content back to the source. You can then activate your source fragments, either manually or automatically (dependent on fields set when creating and editing the launch).
+You create a *Launch*, then edit and update your Content Fragments in your *Launch*. If changes are made to the *Source* fragments during this phase, you can copy them to the *Launch* with the *Rebase* operation. When ready, *Promote* duplicates the launch content back to the source. You can then activate your source fragments, either manually or automatically (dependent on fields set when creating and editing the launch).
 
 For example, the seasonal product fragments of your online store are updated quarterly so that the featured products align with the current season. To prepare for the next quarterly update, you can create a launch of the appropriate fragments. Throughout the quarter, the following changes are accumulated in the launch copy:
 
 * Edits that are performed directly on the launch fragments in preparation for the next quarter.
 * Changes to the source Content Fragments that you transfer to the launch pages with *Rebase*.
-
-You can also:
-
-* Navigate content in the launch branch; adding, or removing, fragments as necessary.
-* Preview how published content will look at a specific date in the future.
+* You can also navigate content in the launch branch; adding, or removing, fragments as necessary.
 
 When the next quarter arrives, you promote the launch pages, so that you can publish the source pages (holding the updated content). You can promote either all fragments, or only those that you have modified.
 
@@ -49,13 +43,15 @@ This section describes how to create, edit and promote (and if necessary [delete
 
 ## Create a Launch {#create-a-launch}
 
+To create your launch:
+
 1. Navigate to the Content Fragments console.
 
 1. Open the **Launches** tab.
 
 1. Select **Create Launch**.
 
-1. Select the fragments to be included in the launch:
+1. Navigate to the appropriate folder and select the fragments to be included in the launch:
 
    ![Select content fragments for new launch](/help/sites-cloud/administering/content-fragments/assets/cf-launches-create-select-cfs.png)
 
@@ -79,15 +75,20 @@ This section describes how to create, edit and promote (and if necessary [delete
 
      * **Job started to create new Launch, monitor the progress in AEM and reload page when done.** 
 
-   Select **View** to see further details.
+1. Select **View** to see further details in the AEM console for [Background Operations](/help/operations/asynchronous-jobs.md).
 
    ![New launch in console](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
 
-   Select your launch to show the toolbar actions.
+1. Select your launch to show:
+
+   * the toolbar, with the available actions
+   * the right panel, showing properties and further actions
 
    ![Launch actions toolbar in console](/help/sites-cloud/administering/content-fragments/assets/cf-launches-actions.png)
 
 ## Edit Launch content {#edit-launch-content}
+
+To edit the Content Fragments in your launch:
 
 1. Navigate to the Content Fragments console.
 
@@ -104,6 +105,8 @@ This section describes how to create, edit and promote (and if necessary [delete
 1. Select **Edit** for the fragment you want to update. It will open in the [fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md) as usual.
 
 ## Manage content within a Launch {#manage-content-within-a-launch}
+
+To manage the Content Fragments in your launch, and also edit their content:
 
 1. Navigate to the Content Fragments console.
 
@@ -127,6 +130,8 @@ This section describes how to create, edit and promote (and if necessary [delete
 
 ## Compare Launch to Source {#compare-launch-to-source}
 
+It is recommended that before any Rebase or Promote action you always compare the source and launch to confirm the changes and their impact on your content (both actions overwrite the target content):
+
 1. Navigate to the Content Fragments console.
 
 1. Open the **Launches** tab.
@@ -135,17 +140,24 @@ This section describes how to create, edit and promote (and if necessary [delete
 
 1. Select **Compare Launch to Source**.
 
-   The source and launch fragments will be shown side-by-side to highlight the differences.
+   * The source and launch fragments are shown side-by-side to highlight the differences.
+     * Source fragments are displayed on the left, Launch fragments are displayed on the right.
+   * In the upper left, a summary of all updates is displayed. The number of source updates in blue, the number of launch updates in pink. 
+   * The eye icon allows you to show, or hide, the actual content updates for a clearer overview.
+   * In the upper right, and above every fragment in the launch, sliders allow you to define the Content Fragments to be included in the subsequent Promote or Rebase operation.
+   * Fragment content is displayed at field-level (Content Fragment element/datatype-level); with highlights indicating changes. 
 
    ![Compare Source](/help/sites-cloud/administering/content-fragments/assets/cf-launches-compare.png)
 
 ## Rebase a Launch (from Source) {#rebase-a-launch-from-source}
 
+When updates have been made to the source fragments and you want to copy these changes to your launch:
+
 1. Navigate to the Content Fragments console.
 
 1. Open the **Launches** tab.
 
-1. Select your launch.
+1. Select your launch and fragments.
 
 1. Select **Rebase**.
 
@@ -155,11 +167,13 @@ This section describes how to create, edit and promote (and if necessary [delete
 
 ## Promote a Launch (to Source) {#promote-a-launch-to-source}
 
+When your launch is ready to be published it should be copied to the source:
+
 1. Navigate to the Content Fragments console.
 
 1. Open the **Launches** tab.
 
-1. Select your launch.
+1. Select your launch and fragments.
 
 1. Select **Promote**.
 
@@ -168,6 +182,8 @@ This section describes how to create, edit and promote (and if necessary [delete
 >You can also **Promote** a launch from **Compare Launch to Source**.
 
 ## Delete a Launch {#delete-a-launch}
+
+To delete a source:
 
 1. Navigate to the Content Fragments console.
 
