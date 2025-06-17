@@ -39,9 +39,11 @@ This section describes how to create, edit and promote (and if necessary [delete
 * [Create a Launch](#create-a-launch)
 * [Edit Launch content](#edit-launch-content)
 * [Manage content within a Launch](#manage-content-within-a-launch)
-* [Rebase a Launch](#rebase-a-launch)
-* [Promote a Launch](#promote-a-launch)
+* [Rebase a Launch from Source](#rebase-a-launch-from-source)
+* [Promote a Launch to Source](#promote-a-launch-to-source)
 * [Delete a Launch](#delete-a-launch)
+
+![Launches tab in console](/help/sites-cloud/administering/content-fragments/assets/cf-launches-tab.png)
 
 ## Create a Launch {#create-a-launch}
 
@@ -51,7 +53,11 @@ This section describes how to create, edit and promote (and if necessary [delete
 
 1. Select **Create Launch**.
 
-1. Select the fragments to be included in the launch.
+1. Select the fragments to be included in the launch:
+
+   ![Select content fragments for new launch](/help/sites-cloud/administering/content-fragments/assets/cf-launches-create-select-cfs.png)
+
+1. Select **Next**.
 
 1. Specify details to configure the launch:
 
@@ -59,6 +65,8 @@ This section describes how to create, edit and promote (and if necessary [delete
    * **Description**
    * **Include References**: Create the Launch either with, or without, including any referenced Content Fragments. By default, referenced fragments are included.
    * **Publish Ready**: Enabling this toggle will automatically publish the fragments when the launch is promoted to the source.
+
+   ![Details for new launch](/help/sites-cloud/administering/content-fragments/assets/cf-launches-create-launch-details.png)
 
 1. **Save** the configuration.
 
@@ -69,7 +77,13 @@ This section describes how to create, edit and promote (and if necessary [delete
 
      * **Job started to create new Launch, monitor the progress in AEM and reload page when done.** 
 
-     Select **View** to see further details.
+   Select **View** to see further details.
+
+   ![New launch in console](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
+
+   Select your launch to show the toolbar actions.
+
+   ![Launch actions toolbar in console](/help/sites-cloud/administering/content-fragments/assets/cf-launches-actions.png)
 
 ## Edit Launch content {#edit-launch-content}
 
@@ -77,11 +91,13 @@ This section describes how to create, edit and promote (and if necessary [delete
 
 1. Open the **Launches** tab.
 
-1. Select your launch.
+1. Select your launch to show the toolbar actions.
 
 1. Select **Open Launch**.
 
    Your launch will be shown, together with the fragments it holds.
+
+   ![Edit Launch content](/help/sites-cloud/administering/content-fragments/assets/cf-launches-edit-launch-content.png)
 
 1. Select **Edit** for the fragment you want to update. It will open in the [fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md) as usual.
 
@@ -96,6 +112,8 @@ This section describes how to create, edit and promote (and if necessary [delete
 1. Select **Edit Sources**.
 
    The source fragments of your launch will be shown.
+
+   ![Edit Source](/help/sites-cloud/administering/content-fragments/assets/cf-launches-edit-sources.png)
 
 1. You can:
 
@@ -117,7 +135,9 @@ This section describes how to create, edit and promote (and if necessary [delete
 
    The source and launch fragments will be shown side-by-side to highlight the differences.
 
-### Rebase a Launch {#rebase-a-launch}
+   ![Compare Source](/help/sites-cloud/administering/content-fragments/assets/cf-launches-compare.png)
+
+## Rebase a Launch (from Source) {#rebase-a-launch-from-source}
 
 1. Navigate to the Content Fragments console.
 
@@ -131,7 +151,7 @@ This section describes how to create, edit and promote (and if necessary [delete
 >
 >You can also **Rebase** a launch from **Compare Launch to Source**.
 
-### Promote a Launch {#promote-a-launch}
+## Promote a Launch (to Source) {#promote-a-launch-to-source}
 
 1. Navigate to the Content Fragments console.
 
