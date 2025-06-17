@@ -142,12 +142,20 @@ It is recommended that before any Rebase or Promote action you always compare th
 
    * The source and launch fragments are shown side-by-side to highlight the differences.
      * Source fragments are displayed on the left, Launch fragments are displayed on the right.
-   * In the upper left, a summary of all updates is displayed. The number of source updates in blue, the number of launch updates in pink. 
-   * The eye icon allows you to show, or hide, the actual content updates for a clearer overview.
-   * In the upper right, and above every fragment in the launch, sliders allow you to define the Content Fragments to be included in the subsequent Promote or Rebase operation.
+     * Updates are highlighted:
+       * Source: blue
+       * Launch: pink
+       * Conflicts: yellow
+   * The [Promote](#promote-a-launch-to-source) and [Rebase](#rebase-a-launch-from-source) actions are available from the top right.
+   * **Updates found**: In the upper left, a summary of all updates is displayed. The number of source updates in blue, the number of launch updates in pink. 
+     * The eye icons allow you to show, or hide, the actual content updates for a clearer overview.
+   * **Include** sliders allow you to define the Content Fragments to be included in the subsequent Promote or Rebase operation:
+     * **Include All** at the top right
+     * **Include** above every fragment in the launch
    * Fragment content is displayed at field-level (Content Fragment element/datatype-level); with highlights indicating changes. 
+   * **View** is shown to indicate that the compare details are available as below.
 
-   ![Compare Source](/help/sites-cloud/administering/content-fragments/assets/cf-launches-compare.png)
+   ![Compare Source and Launch](/help/sites-cloud/administering/content-fragments/assets/cf-launches-compare.png)
 
 ## Rebase a Launch (from Source) {#rebase-a-launch-from-source}
 
