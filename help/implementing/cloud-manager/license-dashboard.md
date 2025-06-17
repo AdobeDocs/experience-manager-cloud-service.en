@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 
 # License dashboard {#license-dashboard}
 
-Cloud Manager provides a dashboard for easy viewing of AEMaaCS product entitlements available to your organization or tenant.
+Cloud Manager provides a dashboard for easy viewing of Adobe Experience Manager as a Cloud Service (AEMaaCS) product entitlements available to your organization or tenant.
 
 >[!IMPORTANT]
 >
@@ -35,7 +35,10 @@ The Cloud Manager License dashboard provides easy access to solution entitlement
 
 The dashboard is divided into three sections showing you:
 
-* **Solutions** - Which solutions that you have licensed.
+* **Solutions** - Which solutions that you have licensed. For example, Sites, Edge Delivery Services, and Assets, among others.
+
+  ![Solutions list](assets/solutions.png)
+
 * **Add-ons** - Which add-ons to your licensed solutions that you have available.
 * **Other Entitlements** - What sandbox and dev environment and other entitlements that can be consumed within your tenant.
 

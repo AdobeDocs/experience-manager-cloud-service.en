@@ -17,7 +17,7 @@ This article provides some additional context about how AEM as a Cloud Service s
 
 The main takeaway is that AEM now supports the new OAuth Server-to-Server credentials for AEM as a Cloud Service. You may have received an email with instructions to migrate your JWT credentials, and this migration can now be done.
 
-The sections below list the scenarios where customers must (or in some cases must not) replace their Service Account (JWT) credentials with OAuth Server-to-Server credentials, now that AEM supports them. [Read how](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) to migrate the credentials.
+The sections below list the scenarios where customers must (or in some cases must not) replace their Service Account (JWT) credentials with OAuth Server-to-Server credentials, now that AEM supports them. [Read how](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) to migrate the credentials.
 
 >[!NOTE]
 >
