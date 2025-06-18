@@ -182,8 +182,13 @@ It is recommended that before any Rebase or Promote action you always compare th
    * **Include** sliders allow you to define the Content Fragments to be included in the subsequent Promote or Rebase operation:
      * **Include All** at the top right
      * **Include** above every fragment in the launch
+
+     >[!NOTE]
+     >
+     >The sliders only apply to Promote and Rebase actions taken from the Compare screen.
+
    * Fragment content is displayed at field-level (Content Fragment element/datatype-level); with highlights indicating changes. 
-   * **Comparison complated** and **View** are shown to indicate that the compare details are available as below.
+   * Select **View** to recompute the differences.
 
    ![Compare Source and Launch](/help/sites-cloud/administering/content-fragments/assets/cf-launches-compare.png)
 
@@ -201,11 +206,15 @@ When updates have been made to the source fragments and you want to copy these c
 
 >[!NOTE]
 >
->You can also **Rebase** a launch from **Compare Launch to Source**.
+>You can also **Rebase** a launch from **[Compare Launch to Source](#compare-launch-to-source)**.
 
 ## Promote a Launch (to Source) {#promote-a-launch-to-source}
 
-When your launch is ready to be published it should be copied to the source:
+When your launch is ready to be published it should be copied to the source. You can either do this in the console, or configure the settings for it to happen automatically at a specific date and time.
+
+### Promote Manually {#promote-manually}
+
+When your launch is ready to be published it can be copied to the source with the explicit action:
 
 1. Navigate to the Content Fragments console.
 
@@ -219,9 +228,17 @@ When your launch is ready to be published it should be copied to the source:
 >
 >You can also **Promote** a launch from **Compare Launch to Source**.
 
+### Promote Automatically {#promote-automatically}
+
+For a launch to be automatically promoted at a specified date and time you need to:
+
+1. Set **Publish Ready** when [creating the launch](#create-a-launch), or from the right panel of the  [Launches tab](#launches-in-the-content-fragment-console).
+
+1. Define the **Promote Date** and Time from the right panel of the  [Launches tab](#launches-in-the-content-fragment-console).
+
 ## Delete a Launch {#delete-a-launch}
 
-To delete a source:
+After you have promoted your launch, or decided that you do not need it anymore you can delete it:
 
 1. Navigate to the Content Fragments console.
 
