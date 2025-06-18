@@ -177,9 +177,9 @@ In preview mode, the page rendered in the editor as it would be seen on your pub
 >
 >Use the hot key `p` to toggle to and from preview mode.
 
-#### Open App Preview {#open-app-preview}
+#### Open Page {#open-page}
 
-Select the open app preview icon to open the page you are currently editing in its own browser tab, free of the editor to preview your content.
+Select the open page icon to open the page you are currently editing in its own browser tab, free of the editor to preview your content.
 
 ![Open app preview](assets/open-app-preview.png)
 
@@ -191,6 +191,10 @@ Select the open app preview icon to open the page you are currently editing in i
 >
 >The preview URL for your app [can be customized](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
+>[!NOTE]
+>
+>The open page button [can be disabled](/help/implementing/universal-editor/customizing.md#open-page) and thus might not appear in your editor.
+
 #### Publish {#publish}
 
 Select the publish button so you can publish the changes to the content live for consumption by your readers or to a preview environment for review.
@@ -200,6 +204,10 @@ Select the publish button so you can publish the changes to the content live for
 >[!TIP]
 >
 >See the document [Publishing Content with the Universal Editor](publishing.md) for more information on publishing with the Universal Editor.
+
+>[!NOTE]
+>
+>The publish button [can be disabled](/help/implementing/universal-editor/customizing.md#disable-publish) and thus might not appear in your editor.
 
 #### Ellipsis {#ellipsis}
 
@@ -255,7 +263,8 @@ In content tree mode, the panel shows the hierarchy of the page content.
 
 ![Content tree mode](assets/content-tree-mode.png)
 
-When selecting an item in the content tree, the editor scrolls to that content and selects it.
+* When selecting an item in the content tree, the editor scrolls to that content and selects it.
+* When double-clicking an item in the content tree, the editor scrolls to that content and selects it and also opens the associated properties in [properties mode.](#properties-mode)
 
 ![Content tree](assets/content-tree.png)
 

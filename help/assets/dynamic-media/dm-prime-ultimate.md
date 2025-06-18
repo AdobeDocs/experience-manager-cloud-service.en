@@ -39,7 +39,7 @@ In addition to the Dynamic Media Prime features such as AEM Assets integration w
 * [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) capabilities advanced features such as:
 
    * Secure delivery of assets, 
-   * [Smart Crop, Smart Imaging, Image Presets, and additional image modifiers](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/).
+   * [Smart Crop, Smart Imaging, Image Presets, and additional image modifiers](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
 
 * [Dynamic Media solution in AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md), which also includes the following key capabilities: 
    

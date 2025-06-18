@@ -6,11 +6,18 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 ---
-# Style System{#style-system}
+
+# Style System {#style-system}
 
 The Style System allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making the component more flexible.
 
 This eliminates the need to develop a custom component for each style or to customize the component dialog to enable such style functionality. It leads to more reusable components that can be quickly and easily adapted to the needs of content authors without any AEM back-end development.
+
+>[!NOTE]
+>
+>The Style System only applies to pages created with the Page Editor.
+>
+>Styling Pages created with the [Universal Editor](/help/implementing/universal-editor/introduction.md) and served with [Edge Delivery Services](/help/edge/overview.md) can be done entirely through your GitHub project.
 
 ## Use Case {#use-case}
 

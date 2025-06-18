@@ -3,6 +3,7 @@ title: Generative AI in AEM as a Cloud Service
 description: Learn about Generative AI in Adobe Experience Manager as a Cloud Service
 feature: Generative AI
 role: Admin, Architect, Developer, User
+exl-id: 740d9a5b-bd83-4723-a43e-0ead475c3392
 ---
 # Generative AI in AEM as a Cloud Service {#generative-ai-in-aem-as-a-cloud-service}
 
@@ -31,6 +32,10 @@ Generative AI is used throughout AEM:
 
   Content Hub allows you to create new content with Adobe Express (if you have Adobe Express entitlements). You can edit existing content with easy to use tools, produce on-brand variations with templates and brand elements, and create new content with the latest GenAI capabilities from Adobe Firefly.
 
+* [AI-Generated Smart Tags](/help/assets/metadata-assets-view.md#ai-smart-tags)
+
+  For digital Assets you can use AI to automatically assign descriptive tags, instead of relying on manual input. These AI-generated tags enhance metadata quality, making the assets easier to search, categorize, and recommend. This approach not only improves efficiency by eliminating manual tagging, but also ensures consistency and scalability across large volumes of digital content.
+
 <!-- 
   * [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/aem-ai-assistant.md)
 -->
@@ -38,3 +43,7 @@ Generative AI is used throughout AEM:
 ## Further Information {#further-information}
 
 * [Adobe AI Overview](https://www.adobe.com/ai/overview.html)
+
+* [Generative AI in Experience Cloud products](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
+
+  * [Generative AI in Experience Cloud products - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
