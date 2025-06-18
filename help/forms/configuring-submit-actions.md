@@ -1,7 +1,7 @@
 ---
 title: How to configure a Submit Action for an Adaptive Form?
 description: An Adaptive Form provides multiple Submit Actions. A Submit Action defines how an Adaptive Form is processed after submission. You can use built-in Submit Actions or create your own.
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms, Foundation Components, Core Components, 
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
 ---
@@ -10,15 +10,29 @@ role: User, Developer
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html)                  |
-| AEM as a Cloud Service (Core Components)    | [Click here](/help/forms/configure-submit-actions-core-components.md)        |
 | AEM as a Cloud Service (Foundation Components)    | This article         |
+| AEM as a Cloud Service (Core Components)    | [Click here]()        |
+| AEM as a Cloud Service (Universal Editor)    | [Click here]()        |
 
 **Applies to**: ✔️ Adaptive Form Foundation Components. ❌ [Adaptive Form Core Components](/help/forms/configure-submit-actions-core-components.md). Adobe recommends using Core Components to [add Adaptive Forms to an AEM Sites Page](create-or-add-an-adaptive-form-to-aem-sites-page.md) or to [create standalone Adaptive Forms](creating-adaptive-form-core-components.md).
 
-A Submit Action is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. Forms as a Cloud Service provides the following Submit Actions out of the box. 
+A Submit Action is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. 
 
-* [Submit to REST endpoint](#submit-to-rest-endpoint)
-* [Send email](#send-email)
+To define a Submit action for an Adaptive Form, use the **Submission** tab of an **Adaptive Form Container** component. 
+
+![AEM Forms Submit action](/help/forms/assets/submit-form-foundation-component.png)
+
+## Select and configure a Submit Action for an Adaptive Form based on Foundation Components
+
+You can configure a Submit Action in the **[!UICONTROL Submission]** section of the Adaptive Form Container properties, in the sidebar.
+
+![Configure Submit Action](assets/submission.png)
+
+
+## Submit Actions Supported by Adaptive Forms based on Foundation Components
+
+* [Submit to REST endpoint]()
+* [Send Email]()
 * [Submit using Form Data Mode (FDM)l](#submit-using-form-data-model)
 * [Invoke an AEM Workflow](#invoke-an-aem-workflow)
 * [Submit to SharePoint](#submit-to-sharedrive)
@@ -28,11 +42,8 @@ A Submit Action is triggered when a user clicks the **[!UICONTROL Submit]** butt
 * [Submit to Workfront Fusion](#workfront-fusion)
 * [Submit to Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 
-You can also [extend the default Submit Actions](custom-submit-action-form.md) to create your own Submit Action. 
+You can also [extend the default Submit Actions]() to create your own Submit Action. 
 
-You can configure a Submit Action in the **[!UICONTROL Submission]** section of the Adaptive Form Container properties, in the sidebar.
-
-![Configure Submit Action](assets/submission.png)
 
 
 <!-- [!NOTE]
@@ -52,8 +63,7 @@ You can configure a Submit Action in the **[!UICONTROL Submission]** section of 
 
 >[!CAUTION]
 >
->If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) property) of the Adaptive Form is lost.
--->
+>If you [prefill](prepopulate-adaptive-form-fields.md) a form template, a Form Data Model or schema based Adaptive Form with XML or JSON data complaint to a schema (XML schema, JSON schema, or form data model) that does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are Adaptive Form fields without [bindref](prepopulate-adaptive-form-fields.md) 
 
 ## Submit to REST endpoint {#submit-to-rest-endpoint}
 
@@ -132,7 +142,7 @@ The **Send PDF via Email** Submit Action sends an email with a PDF containing fo
 
 The **Submit to Forms workflow** submit option sends a data xml and file attachments (if any) to an existing Adobe LiveCycle or [!DNL AEM Forms] on JEE process.
 
-For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). -->
+For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). 
 
 ## Submit using Form Data Model (FDM) {#submit-using-form-data-model}
 
@@ -145,7 +155,7 @@ In addition, you can submit a form attachment using a Form Data Model (FDM) and 
 
 The **Forms Portal Submit Action** option makes form data available through an [!DNL AEM Forms] portal.
 
-For more information about the Forms Portal and Submit Action, see [Drafts and submissions component](draft-submission-component.md). -->
+For more information about the Forms Portal and Submit Action, see [Drafts and submissions component](draft-submission-component.md).
 
 ## Invoke an AEM Workflow {#invoke-an-aem-workflow}
 
@@ -467,7 +477,7 @@ As a part of AEM security and hardening guidelines, configure custom error pages
 
 When you prefill a form data model (FDM), or schema based Adaptive Form with XML or JSON data complaint to a schema that is data does not contain `<afData>`, `<afBoundData>`, and `</afUnboundData>` tags, then the data of unbounded fields of the Adaptive Form is lost. The schema can be an XML schema, JSON schema, or a Form Data Model (FDM). Unbounded fields are Adaptive Form fields without the `bindref` property.
 
-<!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
+ For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 
 >[!MORELIKETHIS]
 >
