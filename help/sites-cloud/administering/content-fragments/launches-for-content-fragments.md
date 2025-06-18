@@ -108,8 +108,8 @@ To create your launch:
    * **Include References**: Create the Launch either with, or without, including any referenced Content Fragments. By default, referenced fragments are included.
 
      >[!NOTE]
-      >
-      >See [Details concerning Included References](#details-concerning-included-references)
+     >
+     >See [Details concerning Included References](#details-concerning-included-references)
 
    * **Publish Ready**: Enabling this toggle will automatically publish the fragments when the launch is promoted to the source.
 
