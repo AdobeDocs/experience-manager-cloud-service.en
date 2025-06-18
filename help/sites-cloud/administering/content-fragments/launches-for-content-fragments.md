@@ -107,12 +107,12 @@ To create your launch:
 
 1. You are returned to the **Launches** tab of the Content Fragments console, where:
 
-   * your new launch is also listed.
+   * your new launch is now listed
    * a message is shown to confirm that the launch creation has started: 
 
      * **Job started to create new Launch, monitor the progress in AEM and reload page when done.** 
 
-1. Select **View** to see further details in the AEM console for [Background Operations](/help/operations/asynchronous-jobs.md).
+1. Select **View**, from the message box, to see further details in the AEM console for [Background Operations](/help/operations/asynchronous-jobs.md).
 
    ![New launch in console](/help/sites-cloud/administering/content-fragments/assets/cf-launches-new-launch-in-console.png)
 
@@ -177,13 +177,13 @@ It is recommended that before any Rebase or Promote action you always compare th
        * Launch: pink
        * Conflicts: yellow
    * The [Promote](#promote-a-launch-to-source) and [Rebase](#rebase-a-launch-from-source) actions are available from the top right.
-   * **Updates found**: In the upper left, a summary of all updates is displayed. The number of source updates in blue, the number of launch updates in pink. 
+   * **Updates found**: In the upper left, a summary of all updates is displayed. The number of source updates in blue, the number of launch updates in pink, and updates to both (conflicts) in yellow. 
      * The eye icons allow you to show, or hide, the actual content updates for a clearer overview.
    * **Include** sliders allow you to define the Content Fragments to be included in the subsequent Promote or Rebase operation:
      * **Include All** at the top right
      * **Include** above every fragment in the launch
    * Fragment content is displayed at field-level (Content Fragment element/datatype-level); with highlights indicating changes. 
-   * **View** is shown to indicate that the compare details are available as below.
+   * **Comparison complated** and **View** are shown to indicate that the compare details are available as below.
 
    ![Compare Source and Launch](/help/sites-cloud/administering/content-fragments/assets/cf-launches-compare.png)
 
