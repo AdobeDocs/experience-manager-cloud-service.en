@@ -71,12 +71,12 @@ While the right panel enables you to:
 * Edit the Launch **Description**
 * Update configuration details that were set when you [created the launch](#create-a-launch):
 
-  * **Include references**
-  * **Publish Ready**
+  * **Include references**: Create the Launch either with, or without, including any referenced Content Fragments. By default, referenced fragments are included.
+  * **Publish Ready**; Enabling this toggle will automatically publish the fragments when the launch is promoted to the source.
 
 * And also define:
 
-  * A **Promote Date** and Time
+  * A **Promote Date** and Time: if the [launch is to be automatically promoted](#promote-automatically)
 
 ## Create a Launch {#create-a-launch}
 
@@ -232,9 +232,9 @@ When your launch is ready to be published it can be copied to the source with th
 
 For a launch to be automatically promoted at a specified date and time you need to:
 
-1. Set **Publish Ready** when [creating the launch](#create-a-launch), or from the right panel of the  [Launches tab](#launches-in-the-content-fragment-console).
-
 1. Define the **Promote Date** and Time from the right panel of the  [Launches tab](#launches-in-the-content-fragment-console).
+
+1. If the content can be published when it is promoted, set **Publish Ready** when [creating the launch](#create-a-launch), or from the right panel of the  [Launches tab](#launches-in-the-content-fragment-console).
 
 ## Delete a Launch {#delete-a-launch}
 
