@@ -75,6 +75,10 @@ While the right panel enables you to:
 
     * Referenced fragments are also impacted when you [add, or remove fragments from the launch](#manage-content-within-a-launch) at a later stage.
 
+    >[!NOTE]
+    >
+    >See [Details concerning Included References](#details-concerning-included-references)
+
   * **Publish Ready**; Enabling this toggle will automatically publish the fragments when the launch is promoted to the source.
 
 * And also define:
@@ -102,6 +106,11 @@ To create your launch:
    * **Title**
    * **Description**
    * **Include References**: Create the Launch either with, or without, including any referenced Content Fragments. By default, referenced fragments are included.
+
+     >[!NOTE]
+      >
+      >See [Details concerning Included References](#details-concerning-included-references)
+
    * **Publish Ready**: Enabling this toggle will automatically publish the fragments when the launch is promoted to the source.
 
    ![Details for new launch](/help/sites-cloud/administering/content-fragments/assets/cf-launches-create-launch-details.png)
@@ -164,6 +173,10 @@ To manage the Content Fragments in your launch, and also edit their content:
    1. Select a fragment, then the **Delete Sources** action from the toolbar to remove that fragment from the launch. 
 
       * If **Include References** is true for the launch, all referenced Content Fragments will be removed from the launch as well - unless they are also referenced by other Content Fragments still in the launch.
+
+   >[!NOTE]
+   >
+   >See [Details concerning Included References](#details-concerning-included-references)
 
 ## Compare Launch to Source {#compare-launch-to-source}
 
@@ -256,3 +269,17 @@ After you have promoted your launch, or decided that you do not need it anymore 
 1. Select **Delete Launch**.
 
    You are asked to confirm the action before the launch is deleted.
+
+## Details concerning Included References {#details-concerning-included-references}
+
+For Launches the following Content Fragment references are considered, dependent on [data type](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types):
+
+* **Fragment Reference** and **Fragment Reference (UUID)** data types, applicable to both single fragment references and multi-field fragment references
+* Fragments referenced inside the **Multi line text** data type when using **Rich Text**
+
+All points are also applicable for fragments referenced within variations
+
+The following are not considered:
+
+* Fragments referenced inside content reference data types, both **Content Reference** (path-based) and **Content Reference (UUID)**
+* Fragments referenced inside the **Fragment Reference (UUID)**
