@@ -30,7 +30,7 @@ When the next quarter arrives, you promote the launch pages, so that you can pub
 
 ![Launches overview - Rebase and Promote](/help/sites-cloud/administering/content-fragments/assets/cf-launches-overview.png)
 
-This section describes how to create, edit, rebase, promote, and if necessary delete, launch fragments from within the [Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md):
+This section describes how to create, edit, manage, rebase, promote, and if necessary delete, launches from within the [Content Fragments console](/help/sites-cloud/administering/content-fragments/managing.md):
 
 * [Access and view Launches in the Content Fragment console](#launches-in-the-content-fragment-console)
 * [Create a Launch](#create-a-launch)
@@ -72,6 +72,9 @@ While the right panel enables you to:
 * Update configuration details that were set when you [created the launch](#create-a-launch):
 
   * **Include references**: Create the Launch either with, or without, including any referenced Content Fragments. By default, referenced fragments are included.
+
+    * Referenced fragments are also impacted when you [add, or remove fragments from the launch](#manage-content-within-a-launch) at a later stage.
+
   * **Publish Ready**; Enabling this toggle will automatically publish the fragments when the launch is promoted to the source.
 
 * And also define:
@@ -154,9 +157,13 @@ To manage the Content Fragments in your launch, and also edit their content:
 
    1. **Add Sources** to add more fragments to your launch.
 
+      * If **Include References** is true for the launch, all referenced Content Fragments will be brought into the launch as well (if not already present).
+
    1. Select **Edit** for the source fragment you want to update. It will open in the [fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md) as usual.
 
    1. Select a fragment, then the **Delete Sources** action from the toolbar to remove that fragment from the launch. 
+
+      * If **Include References** is true for the launch, all referenced Content Fragments will be removed from the launch as well - unless they are also referenced by other Content Fragments still in the launch.
 
 ## Compare Launch to Source {#compare-launch-to-source}
 
