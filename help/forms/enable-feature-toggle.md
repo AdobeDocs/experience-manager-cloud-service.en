@@ -28,7 +28,7 @@ Before enabling feature toggles in your AEM SDK setup, ensure the following:
 
 * User is member of `forms-users` group.
 
-* Navigate to `http://<author-instance-url>:portnumber/system/console/bundles` and check whether **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** bundle is present or not. In case it is not present [download the bundle from the Software Distribution Portal](/help/forms/assets/com.adobe.granite.toggle.impl.dev-1.1.2.jar).
+* Navigate to `http://<author-instance-url>:portnumber/system/console/bundles` and check whether **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** bundle is present or not. In case it is not present [download the bundle from the link](/help/forms/assets/com.adobe.granite.toggle.impl.dev-1.1.2.jar).
 
     ![Feature Toggle](/help/forms/assets/aem-web-console-bundle.png)
 
@@ -72,3 +72,7 @@ To disable the feature toggle(s) for features whose toggle(s) are enabled, follo
 ### Technical Consideration
 
 Feature toggles are runtime-managed and best suited for development or testing setups. In a AEM SDK setup, ensure toggles are version-controlled and synced with CI/CD. Page refresh or cache clearing may be needed for changes to reflect.
+
+>[!NOTE] 
+>
+> To enable the feature toggle for the production environment, please contact the Adobe Support team.
