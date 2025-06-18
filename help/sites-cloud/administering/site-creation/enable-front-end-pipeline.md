@@ -8,6 +8,8 @@ solution: Experience Manager Sites
 ---
 # Enabling the Front-End Pipeline {#enable-front-end-pipeline}
 
+{{traditional-aem}}
+
 Learn how you can enable the front-end pipeline for existing sites to use site themes to customize your site more quickly.
 
 ## Overview {#overview}

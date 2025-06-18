@@ -4,7 +4,9 @@ description: The RemotePage Component is a custom page component for editing rem
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 feature: Developing
 role: Admin, Architect, Developer
+index: no
 ---
+
 # The RemotePage Component {#remote-page-component}
 
 When deciding [what level of integration](/help/implementing/developing/headful-headless.md) you would like to have between your external SPA and AEM, it is often clear that you need to be able to view and edit the SPA within AEM. The RemotePage Component is a custom page component just for this purpose.

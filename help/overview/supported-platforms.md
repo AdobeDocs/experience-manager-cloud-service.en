@@ -44,10 +44,9 @@ All browsers are tested with the default set of plug-ins and add-ons.
 |Mozilla Firefox (evergreen)|A: Supported|A: Supported|Z: Unsupported|
 |Mozilla Firefox latest ESR [1]|A: Supported|A: Supported|Z: Unsupported|
 |Safari on macOS (evergreen)|A: Supported|A: Supported|Z: Unsupported|
-|Safari on iOS (evergreen) [2]|Z: Unsupported|A: Supported|Z: Unsupported|
+|Safari on iPadOS (evergreen)|Z: Unsupported|A: Supported|Z: Unsupported|
 
 1. Extended Support Release of Firefox ([learn more on mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/))
-1. Support for Apple iPad only
 
 >[!NOTE]
 >

@@ -152,8 +152,8 @@ Configure java logging for custom Java packages via OSGi configurations for the 
 Changing other LogManager OSGi configuration properties may result in availability issues in AEM as a Cloud Service.
 
 As noted in a previous section, to ensure effective monitoring of customer environments:
-* Java logs for AEM's product code must preserve their default log level "INFO" and must not be overridden by custom configurations.
-* It is acceptable to set the log levels to DEBUG for product code, but use it sparingly to prevent performance degradation and restore back to INFO when it is no longer needed.
+* The log level of AEM's default log configuration (Apache Sling Logging Configuration) must not be modified from its default value of "INFO".
+* It is acceptable to set the log levels to DEBUG for individual packages of product code (using instances of the "Apache Sling Logging Logger configuration" OSGi configuration factory), but use it sparingly to prevent performance degradation and restore back to INFO when it is no longer needed.
 * It is acceptable to adjust log levels for customer-developed code.
 * All logs -- for both AEM product code and customer-developed code -- must maintain the default logging format.
 * Log output must remain directed to the default file "logs/error.log".
