@@ -18,7 +18,7 @@ A *Launch* is created to allow you to make changes in preparation for future pub
 >
 >For full details see [Launches for Pages](/help/sites-cloud/authoring/launches/overview.md).
 
-You create a *Launch*, then edit and update your Content Fragments in your *Launch*. If changes are made to the *Source* fragments during this phase, you can copy them to the *Launch* with the *Rebase* operation. When ready, *Promote* duplicates the launch content back to the source. You can then activate your source fragments, either manually or automatically (dependent on fields set when creating and editing the launch).
+You create a *Launch*, then edit and update your Content Fragments in your *Launch*. If changes are made to the *Source* fragments during this phase, you can copy them to the *Launch* with the *Rebase* operation. When ready, *Promote* duplicates the launch content back to the source. You can then activate your source fragments, either manually or automatically (dependent on fields set when creating and editing the launch). You can also specify whether referenced fragments are to be included in this process.
 
 For example, the seasonal product fragments of your online store are updated quarterly so that the featured products align with the current season. To prepare for the next quarterly update, you can create a launch of the appropriate fragments. Throughout the quarter, the following changes are accumulated in the launch copy:
 
