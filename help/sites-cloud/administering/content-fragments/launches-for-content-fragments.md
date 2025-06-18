@@ -274,12 +274,12 @@ After you have promoted your launch, or decided that you do not need it anymore 
 
 For Launches the following Content Fragment references are considered, dependent on [data type](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types):
 
-* **Fragment Reference** and **Fragment Reference (UUID)** data types, applicable to both single fragment references and multi-field fragment references
-* Fragments referenced inside the **Multi line text** data type when using **Rich Text**
+* The **Fragment Reference** data type, applicable for both single fragment references, and multi-field fragment references.
+* Fragments referenced inside the **Multi line text** data type when using **Rich Text**.
 
 All points are also applicable for fragments referenced within variations
 
 The following are not considered:
 
-* Fragments referenced inside content reference data types, both **Content Reference** (path-based) and **Content Reference (UUID)**
-* Fragments referenced inside the **Fragment Reference (UUID)**
+* Fragments referenced inside content reference data types, both **Content Reference** (path-based) and **Content Reference (UUID)**.
+* Fragments referenced inside the **Fragment Reference (UUID)** data type.
