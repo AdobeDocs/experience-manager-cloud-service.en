@@ -1,6 +1,6 @@
 ---
 title: Page Properties
-description: Learn about the different properties a page has and how they control the behavior of the page and how it is managed.
+description: Learn about the different properties a page can have and how they control the behavior of the page and how it is managed.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
@@ -10,7 +10,7 @@ mini-toc-levels: 2
 
 # Page Properties {#page-properties}
 
-Learn about the different properties a page has and how they control the behavior of the page and how it is managed.
+Learn about the different properties a page can have and how they control the behavior of the page and how it is managed.
 
 >[!TIP]
 >
@@ -24,31 +24,33 @@ Page properties can control many aspects of a page from the page's title and bra
 >
 >This document describes all possible page properties. Depending on the type of page, not all properties will be available.
 
-## Basic {#basic}
+## Basic Tab {#basic}
 
 ### Title &amp; Tags {#title-tags}
 
-* **Title** - The title of the page is shown in various locations. For example, the **Websites** tab list and the **Sites** card/list views.
+* **Title** - Defines the page meta title for SEO purposes as well as the title displayed in the page content (unless overridden)
+  * The title of the page is shown in various locations in the AEM UI including the **Sites** card/list views in the [Sites Console.](/help/sites-cloud/authoring/sites-console/introduction.md)
   * This is a mandatory field.
-* **Tags** - Here you can add, or remove tags from the page by updating the list in the selection box.
-  * After selecting a tag is it listed below the selection box. You can remove a tag from this list using the x.
+* **Tags** - Defines the page meta tags for SEO purposes
+  * You can add or remove tags from the page by updating the list in the selection box.
+   * Use the drop-down to select from existing tags.
+   * After selecting a tag is it listed below the selection box. You can remove a tag from this list using the x.
   * A completely new tag can be entered by typing the name in an empty selection box.
     * The new tag is created when you press enter.
     * The new tag will then be shown with a small star on the right indicating that it is a new tag.
-  * With the drop-down functionality you can select from existing tags.
   * An x appears when you mouse-over a tag entry in the selection box, which can be used to remove that tag for this page.
-  * For more information about tags, see [Using Tags](/help/sites-cloud/authoring/sites-console/tags.md).
-* **Hide in Navigation** - Indicates whether the page is shown or hidden in the page navigation of the resulting site.
+  * For more information about tags, see [Using Tag.](/help/sites-cloud/authoring/sites-console/tags.md)
+* **Hide in Navigation** - Indicates whether the page is shown or hidden in the page navigation of the resulting site
 
 ### Branding {#branding}
 
-Apply a consistent brand identity across pages by appending a brand slug to each page title. This functionality requires use of the Page Component from release 2.14.0 or later of the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
+Apply a consistent brand identity across pages by appending a brand slug to each page title. This functionality requires use of the Page Component from release 2.14.0 or later of the [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
 * **Brand Slug** 
   * **Override** - Check to define the brand slug on this page.
     * The value is inherited by any child pages unless they also have their **Override** values set.
   * **Override value** - The text of the brand slug to be appended to the page title.
-    * The value is appended to the page title after a pipe character such as "Cycling Tuscany | Always ready for the WKND"
+    * The value is appended to the page title after a pipe character such as `Cycling Tuscany | Always ready for the WKND`
 
 ### HTML ID {#html-id}
 
@@ -56,19 +58,15 @@ Apply a consistent brand identity across pages by appending a brand slug to each
 
 ### More Titles and Description {#more-titles}
 
-* **Page Title** - A title to be used on the page. Typically used by title components. If empty, the **Title** is used.
-* **Navigation Title** - You can specify a separate title for use in the navigation (for example, if you want something more concise). If empty, the **Title** is used.
-* **Caption** - A subtitle for use on the page.
-* **Description** - Your description of the page, its purpose, or any other details you want to add.
+* **Page Title** - A title to be used on the page
+  * This is typically used by title components.
+  * If empty, the **Title** is used.
+* **Navigation Title** - You can specify a separate title for use in the navigation (for example, if you want something more concise).
+  * If empty, the **Page Title** is used.
+* **Subtitle** - A subtitle for use on the page
+* **Description** - Your description of the page, its purpose, or any other details you want to add
 
 ### On/Off Time {#on-off-time}
-
->[!NOTE]
->
-> See [On and Off Times - Trigger Configuration](/help/operations/replication.md#on-and-off-times-trigger-configuration) for details of how to configure the related automatic replication.
-
->[!NOTE]
->If either the **On Time** or **Off Time** is in the past, and automatic replication is configured, then the relevant action is triggered immediately.
 
 * **On Time** - The date and time at which the published page is made visible (rendered) on the publish environment. The page must be published, either manually or by pre-configured auto-replication.
 
@@ -78,25 +76,31 @@ Apply a consistent brand identity across pages by appending a brand slug to each
   
 * **Off Time** - Similar to and often used in combination with **On Time**, this defines the time at which the published page is hidden on the publish environment.
 
-* Leave these fields (**On Time** and **Off Time**) empty for pages you want to publish immediately and have available on the publish environment until they are deactivated (the normal scenario).
+Leave these fields (**On Time** and **Off Time**) empty for pages you want to publish immediately and have available on the publish environment until they are deactivated (the normal scenario).
+
+>[!NOTE]
+>
+> See [On and Off Times - Trigger Configuration](/help/operations/replication.md#on-and-off-times-trigger-configuration) for details of how to configure the related automatic replication.
+
+>[!NOTE]
+>If either the **On Time** or **Off Time** is in the past, and automatic replication is configured, then the relevant action is triggered immediately.
 
 ### Vanity URL {#vanity-url}
 
-* Lets you enter a vanity URL for this page, which can allow you to have a shorter and/or more expressive URL.
-* For example, if the Vanity URL is set to `welcome` to the page identified by the path `/v1.0/startpage` for the website `http://example.com`, then `http://example.com/welcome` would be the vanity URL of `http://example.com/content/v1.0/startpage`
+This property lets you enter a vanity URL for this page, which can allow you to have a shorter and/or more expressive URL. For example, if the Vanity URL is set to `welcome` to the page identified by the path `/v1.0/startpage` for the website `http://example.com`, then `http://example.com/welcome` would be the vanity URL of `http://example.com/content/v1.0/startpage`
   
 >[!CAUTION]
 >
 >Vanity URLs:
 >
->* Must be unique so you should take care that the value is not already used by another page.
+>* Must be unique.
 >* Do not support regex patterns.
 >* Should not be set to an existing page.
 
 * **Add** - Select to show a field to define a vanity URL for the page.
   * Select again to add multiple.
   * Select the **Remove** icon to delete the vanity URL.
-* **Redirect Vanity URL** - Indicates whether you want the page to use the vanity URL.
+* **Redirect Vanity URL** - Indicates whether you want the page to use the vanity URL or redirect to the page's actual URL
 
 ## Advanced {#advanced}
 
@@ -104,30 +108,33 @@ Apply a consistent brand identity across pages by appending a brand slug to each
 
 * **Language** - The page language
 * **Language Root** - Must be checked if the page is the root of a language copy
-* **Redirect** - Indicates the page to which this page should automatically redirect with an HTML `302 Found` status. 
+* **Redirect** - Indicates the page to which this page should automatically redirect with an HTML `302 Found` status
   * **Permanent Redirect** - When checked, the page redirects to the target path provided along with an HTML `301 Moved Permanently` status.
-* **Design** - Indicates whether the page is shown or hidden in the page navigation of the resulting site
+* **Design**
 * **Alias** - Specifies an alias to be used with this page
   * For example, if you define an alias of `private` for the page `/content/wknd/us/en/magazine/members-only`, then this page can also be accessed via `/content/wknd/us/en/magazine/private`
   * Creating an alias sets the `sling:alias` property on the page node, which only impacts the resource, not the repository path.
   * Pages accessed by aliases in the editor cannot be published. [Publish options](/help/sites-cloud/authoring/sites-console/publishing-pages.md) in the editor are only available for pages accessed via their actual paths. 
-  * See [Localized page names under SEO and URL Management Best Practices](/help/overview/seo-and-url-management.md#localized-page-names).
+  * See [Localized page names under SEO and URL Management Best Practices](/help/overview/seo-and-url-management.md#localized-page-names) for more information.
 
 ### Configuration {#configuration}
 
-* **Inherited from &lt;path&gt;** - enable/disable inheritance; toggles availability of **Cloud Configuration** for selection
+* **Inherited from &lt;path&gt;** - Enable/disable inheritance of the **Cloud Configuration** for the page
+  * Toggles availability of **Cloud Configuration** for editing
 
 * **Cloud Configuration** - The path to the selected configuration
 
 ### Template Settings {#template-settings}
 
 * **Allowed Templates** - [Defines the list of templates that are available](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) within this sub-branch
+  * Each value must be an absolute path to a template.
+  * Use `/.*` to allow all templates below this path.
 * **Use Page as Template** - [Create a new template based on the current page.](/help/sites-cloud/authoring/universal-editor/templates.md)
   * Only applies to pages created for use with the Universal Editor leveraging Edge Delivery Services.
 
 ### Authentication Requirement {#authentication}
 
-* **Enable** - Enable use of authentication to access the page
+* **Enable** - Enables use of authentication to access the page
 
 >[!NOTE]
 >
@@ -141,15 +148,13 @@ Apply a consistent brand identity across pages by appending a brand slug to each
 
 ## SEO {#seo}
 
-* **Canonical Url** - can be used to overwrite the page's canonical Url; if left blank the page's Url is its canonical Url
+* **Canonical Url** - Used to overwrite the page's canonical URL
+  * If left blank the page's URL is its canonical URL.
 
-* **Robots Tags** - select the robots tags to control the behavior of search engine crawlers.
+* **Robots Tags** - Use the dropdown to select the robots tags to control the behavior of search engine crawlers
+  * Some options conflict with each other, in which case the more permissive option take precedence.
 
->[!NOTE]
->
->Some of the options conflict with each other. In case of a conflict the more permissive option takes precedence.
-
-* **Generate Sitemap** - when selected, a sitemap.xml is generated for this page, and its descendants
+* **Generate Sitemap** - When selected, a `sitemap.xml` is generated for this page, and its descendants.
 
 ## Images {#images}
 
