@@ -1,22 +1,29 @@
 ---
-title: Publishing Pages
-description: Learn how to publish, and unpublish, your pages using various mechanisms in AEM.
+title: Publishing Pages from the Sites Console
+description: Learn how to publish, and unpublish, your pages using the Sites Console.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 ---
-# Publishing Pages {#publishing-pages}
+
+# Publishing Pages from the Sites Console {#publishing-pages}
 
 Once you have created and reviewed your content on the author environment, the goal is to [make it available on your public website](/help/sites-cloud/authoring/author-publish.md) (your publish environment).
 
 This is referred to as publishing a page. When you want to remove a page from the publish environment is referred to as unpublishing. When publishing and unpublishing, the page remains available on the author environment for further changes until you delete it.
 
-You can publish/unpublish a page immediately or at a predefined date/time in the future.
+You can use the [**Sites** console](/help/sites-cloud/authoring/sites-console/introduction.md) to publish/unpublish a page immediately or at a predefined date/time in the future.
 
->[!NOTE]
+>[!TIP]
 >
->Publishing an [Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) basically follows the same procedure as for publishing a page, though from the Experience Fragments console or editor.
+>You can publish from locations other than the Sites console.
+>
+>* [From the Page Editor](/help/sites-cloud/authoring/page-editor/publishing.md)
+>* [From the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
+>* [From the Experience Fragment](/help/sites-cloud/authoring/fragments/experience-fragments.md) console or editor
+>
+>Publishing from these locations offer different options but follow similar procedures and general ideas described here.
 
 ## Terminology {#terminology}
 
@@ -32,14 +39,6 @@ You may encounter different terms related to publishing as you work with Adobe E
   * These are the technical terms describing the movement of data (for example, page content, files, code, user comments) from one service to another when you publish a page (e.g. from author to preview).
   * These terms are primarily used by developers.
 
-## Publishing Pages {#publishing-pages-1}
-
-Depending on your location, you can publish:
-
-* [From the page editor](#publishing-from-the-page-editor)
-* [From the **Sites** console](#publishing-from-the-sites-console)
-* [From the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
-
 >[!NOTE]
 >
 >If you do not have the required privileges for publishing a specific page:
@@ -54,50 +53,17 @@ Depending on your location, you can publish:
 >
 >Page order is not guaranteed:
 >
->* if only child pages are selected for publication (as the order information is held on the parent page)
->* if the parent and child pages are published in separate actions 
+>* If only child pages are selected for publication (as the order information is held on the parent page)
+>* If the parent and child pages are published in separate actions 
 
-### Publishing from the Page Editor {#publishing-from-the-page-editor}
-
-If you are editing a page in the [page editor](/help/sites-cloud/authoring/page-editor/introduction.md), it can be published directly from the editor.
-
-1. Select the **Page Information** icon to open the menu and then the **Publish Page** option.
-
-   ![Publishing a page via page options](/help/sites-cloud/authoring/assets/publishing-page-options.png)
-
-1. Depending on whether the page has references that need publishing:
-
-   * The page is published directly if there are no references to be published.
-   * If the page has references that need publishing, these are listed in the **Publish** wizard, where you can either:
-     * Specify which of the assets, or tags, and so on, that you want to publish together with the page, then use **Publish** to complete the process.
-     * Use **Cancel** to abort the action.
-
-   ![Publishing references with the page](/help/sites-cloud/authoring/assets/publishing-references.png)
-
-1. Selecting **Publish** will replicate the page to the publish environment. In the page editor, an information banner is shown confirming the publish action.
-
-   ![Publish status info banner](/help/sites-cloud/authoring/assets/publishing-info.png)
-
-   When viewing the same page in the console, the updated publication status is visible.
-
-   ![Page publication status in column view in the sites console](/help/sites-cloud/authoring/assets/publishing-status-console-column.png)
-
->[!NOTE]
->
->Publishing from the page editor is a shallow publish, that is, only the selected page/pages is/are published and any child page(s) is/are not.
-
->[!NOTE]
->
->Pages accessed by [aliases](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) in the editor cannot be published. Publish options in the editor are only available for pages accessed via their actual paths.
-
-### Publishing from the Site Console {#publishing-from-the-sites-console}
+## Publishing Pages from the Sites Console {#publishing-from-the-sites-console}
 
 In the **Sites** console there are two options for publishing:
 
 * [Quick Publish](#quick-publish)
 * [Manage Publication](#manage-publication)
 
-#### Quick Publish {#quick-publish}
+### Quick Publish {#quick-publish}
 
 **Quick Publish** is for simple cases and publishes the selected page(s) immediately without any further interaction. Because of this, any non-published references will also be published automatically.
 
@@ -117,7 +83,7 @@ To publish a page with Quick Publish:
 >
 >Quick Publish is a shallow publish, that is, only the selected page/pages is/are published and any child pages are not.
 
-#### Manage Publication {#manage-publication}
+### Manage Publication {#manage-publication}
 
 **Manage Publication** offers more options than **Quick Publish**, allowing for the inclusion of child pages, customization of the references, publishing to a preview service (if available,) and starting any applicable workflows and offering the option to publish at a later date.
 
@@ -224,26 +190,9 @@ To publish or unpublish a page using Manage Publication:
 
 1. Click **Publish** or **Publish Later** to complete the publication.
 
-
-
 ## Unpublishing Pages {#unpublishing-pages}
 
-Unpublishing a page will remove it from your publish, or [preview](/help/sites-cloud/authoring/sites-console/previewing-content.md), environment so that it is no longer available to your readers.
-
-In a [manner similar to publishing](#publishing-pages), one or more pages can be unpublished from the desired destination:
-
-* [From the page editor](#unpublishing-from-the-editor)
-* [From the sites console](#unpublishing-from-the-console)
-
-### Unpublishing from the Editor {#unpublishing-from-the-editor}
-
-When editing a page, if you want to unpublish that page, select **Unpublish Page** in the **Page Information** menu, much as you would [publish the page](#publishing-from-the-editor).
-
->[!NOTE]
->
->Pages accessed by [aliases](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) in the editor cannot be unpublished. Publish options in the editor are only available for pages accessed via their actual paths.
-
-### Unpublishing from the Console {#unpublishing-from-the-console}
+Unpublishing a page will remove it from your publish or [preview](/help/sites-cloud/authoring/sites-console/previewing-content.md) environment so that it is no longer available to your readers.
 
 Just as you [use the Manage Publication option to publish](#manage-publication), you can also use it to unpublish.
 
