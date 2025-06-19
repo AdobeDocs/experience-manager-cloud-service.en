@@ -71,7 +71,7 @@ Apply a consistent brand identity across pages by appending a brand slug to each
 * **On Time** - The date and time at which the published page is made visible (rendered) on the publish environment. The page must be published, either manually or by pre-configured auto-replication.
 
   * If already [published (manually)](/help/sites-cloud/authoring/sites-console/publishing-pages.md) this page is kept dormant (hidden) until rendering at the specified time.
-  * If not published, and configured for auto-replication, the page is automatically published, then rendered, at the ecified time.
+  * If not published, and configured for auto-replication, the page is automatically published, then rendered, at the specified time.
   * If not published, and not configured for auto-replication, the page is not automatically published, so a 404 is seen when an attempt to access the page is made.
   
 * **Off Time** - Similar to and often used in combination with **On Time**, this defines the time at which the published page is hidden on the publish environment.
@@ -185,42 +185,38 @@ This section is used to select and configure the image thumbnail for the page. T
 
 ### ContextHub Configurations {#contexthub-config}
 
-* **Inherited from &lt;path&gt;** - enable/disable inheritance; toggles availability of **ContextHub Pathn** and **Segments Path** for selection
-
 * **ContextHub Path** - Define the [ContextHub configuration](/help/sites-cloud/authoring/personalization/contexthub.md)
 * **Segments Path** - Define the [Segments path](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
   
 ### Targeting Configuration {#targeting-config}
 
-* **Brand** - Defines a [Brand to specify a scope for Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md).
-
->[!NOTE]
->This option requires the user account to be in the `Target Administrators`group.
+* **Brand** - Defines a [Brand to specify a scope for Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md)
+  * This option requires the user account to be in the `Target Administrators` group.
 
 ## Permissions {#permissions}
 
-* **Permissions**
+Use the **Permissions** tab to define which users, groups, or [closed user groups (CUGs)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html) can access and/or modify the page.
 
-  * **Add Permissions**
-  * **Edit Closed User Group**
-  * View the **Effective Permissions**
+* **Add Permissions**
+* **Edit Closed User Group**
+* View the **Effective Permissions**
     
 ## Blueprint {#blueprint}
 
-This tab is only visible for pages that serve as blueprints. Blueprints serve as the basis for Live Copies, and are part of [Multi Site Management](/help/sites-cloud/administering/msm/overview.md).
+This tab is only visible for pages that serve as blueprints. Blueprints serve as the basis for Live Copies, and are part of [Multi Site Management.](/help/sites-cloud/administering/msm/overview.md)
 
-* **Current Live Copies** - Lists pages that are based on (that is, are Live Copies of) this blueprint page
-
-* **Rollout Configs** - Controls the circumstances under which modifications are propagated to the Live Copy
+* **Rollout** - Initiate a rollout of blueprint content to the Live Copies
+* **Live Copy Overview** - Open a window to browse the Live Copy page structure
+* **Current Live Copies** - A list of pages that are based on (that is, are Live Copies of) the selected blueprint page
 
 ## Live Copy {#live-copy}
 
-This tab is only visible for pages that are configured as live copies. As with Blueprints, Live Copies are part of [Multi Site Management](/help/sites-cloud/administering/msm/overview.md).
+This tab is only visible for pages that are configured as live copies. As with [blueprints,](#blueprint) Live Copies are part of [Multi Site Management.](/help/sites-cloud/administering/msm/overview.md)
 
-* **Synchronize** - Synchronize Live Copy with Blueprint, keeping local modifications
-* **Reset** - Reset Live Copy to state of Blueprint, removing local modifications
+* **Synchronize** - Synchronize Live Copy with blueprint, keeping local modifications
+* **Reset** - Reset Live Copy to state of blueprint, removing local modifications
 * **Suspend** - Suspend Live Copy from further rollout modifications
-* **Detach** - Detach Live Copy from Blueprint
+* **Detach** - Detach Live Copy from blueprint
 
 ### Source {#source}
 
@@ -232,41 +228,46 @@ This tab is only visible for pages that are configured as live copies. As with B
 
 ### Configuration {#live-copy-config}
 
-* **Live Copy Inheritance** - If checked, Live Copy configuration is effective on all children
-* **Inherit Rollout Configs from Parent** - If checked, the rollout configuration is inherited from the parent of the page
+* **Live Copy Inheritance** - If checked, the Live Copy configuration is effective on all children.
+* **Inherit Rollout Configs from Parent** - If checked, the rollout configuration is inherited from the parent of the page.
 * **Choose Rollout Config** - Defines the circumstances under which modifications are propagated from the Blueprint and only available when **Inherit Rollout Configs from Parent** is not selected
+* **List of excluded paths**
 
 ## Preview {#preview}
 
-When a Preview environment is enabled you see the following:
+When a [preview environment](/help/sites-cloud/authoring/sites-console/previewing-content.md) is enabled, the following details are available:
 
-* Preview URL - the URL used for accessing the content on the Preview environment
+* **Preview URL** - The URL used for accessing the content on the preview environment
 
 ## Progressive Web App {#progressive-web-app}
 
-Through a simple configuration, a content author can now enable progressive web app (PWA) features for experiences created in AEM Sites.
-
->[!NOTE]
->
->See [Enabling Progressive Web App Features](/help/sites-cloud/authoring/sites-console/enable-pwa.md) for more details.
+Through a simple configuration, a content author can enable progressive web app (PWA) features for experiences created in AEM Sites. Your site can then behave like a native app by becoming it installable on the home screen of the visitors' device and available offline.
 
 {{pwa-deprecation}}
 
 ### Configure installable experience {#config-pwa}
 
-* **Enable PWA** - enable/disable the feature; allows users to install the site as a PWA
-* **StartupURL** - the preferred startup Url
-* **Display Mode** - how the browser should be hidden or otherwise presented to the user on the local device
-* **Screen orientation** - how the PWA will handle device orientations
-* **Theme color** - the color of the app that affects how the local user's operating system displays the native UI toolbar and navigation controls
-* **Background color** - the background color of the app, which is shown as the app loads
-* **Icon** - the icon that represents the app on the user's device
+* **Enable PWA** - When enabled, visitors of the page can install the site as a PWA.
+* **Startup URL** - URL that should be loaded when the user launches the web app
+  * If the URL is relative the manifest URL is used as a base URL to resolve
+  * When empty, the URL of the page from which the app was installed is used.
+  * It is recommended to set a value.
+* **Display Mode** - How the browser should be hidden or otherwise presented to the user on the local device
+* **Screen orientation** - How the PWA will handle device orientations
+* **Theme color** - The color of the app that affects how the local user's operating system displays the native UI toolbar and navigation controls
+* **Background color** - The background color of the app, which is shown as the app loads
+* **Icon** - The icon that represents the app on the user's device when the PWA is installed
 
 ### Cache management (Advanced) {#cache-management}
 
-* **Caching strategy and frequency of content refresh** - defines the caching model for your PWA
+* **Caching strategy and frequency of content refresh** - Defines the caching model for your PWA.
 * **Files to cache for offline use**
-  * **File pre-caching (technical preview)** - files hosted on AEM are saved to the local browser cache when the service worker is installing and before it is used
-  * **Client-side Libraries** - client-side libraries to cache for offline experience
-  * **Path inclusions** - network requests for the defined paths are intercepted and cached content is returned in accordance with the configured Caching strategy and frequency of content refresh
-  * **Path exclusions** - these files will never be cached regardless of the settings under File pre-caching and Path inclusions
+  * **File pre-caching (technical preview)** - Files hosted on AEM are saved to the local browser cache when the service worker is installing and before it is used.
+  * **Client-side Libraries** - Client-side libraries to cache for offline experience
+  * **Path inclusions** - Network requests for the defined paths are intercepted and cached content is returned in accordance with the configured Caching strategy and frequency of content refresh
+  * **Path exclusions** - These files will never be cached regardless of the settings under File pre-caching and Path inclusions.
+
+>[!NOTE]
+>
+>See [Enabling Progressive Web App Features](/help/sites-cloud/authoring/sites-console/enable-pwa.md) for more details.
+
