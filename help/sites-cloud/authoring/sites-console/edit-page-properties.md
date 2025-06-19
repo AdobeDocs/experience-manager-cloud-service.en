@@ -1,6 +1,6 @@
 ---
 title: Editing Page Properties
-description: Learn how to edit the properties required for managing a page in AEM.
+description: Learn how to edit the properties of a page and change behavior of the page and how it is managed.
 solution: Experience Manager Sites
 feature: Authoring
 role: User
@@ -8,7 +8,11 @@ role: User
 
 # Editing Page Properties {#page-properties}
 
-You can define the required properties for a page. These can vary depending on the nature of the page. For example, some pages might be connected to a live copy while others are not and the live copy information is available as appropriate.
+Learn how to edit [the properties of a page](/help/sites-cloud/authoring/sites-console/page-properties.md) and change behavior of the page and how it is managed.
+
+>[!TIP]
+>
+>For details on the individual page properties available, please see the document [Page Properties.](/help/sites-cloud/authoring/sites-console/page-properties.md)
 
 ## Editing Page Properties {#editing-page-properties-1}
 
