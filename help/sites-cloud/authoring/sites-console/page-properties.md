@@ -160,28 +160,26 @@ This property lets you enter a vanity URL for this page, which can allow you to 
 
 ### Featured Image {#featured-image}
 
-Select, and configure, the image to be featured. This is used in components referencing the page; for example, teasers, page lists, and so on.
+This section is used to select and configure the image to be featured. This is used in components referencing the page; for example, teasers, page lists, etc.
 
-* **Image**
-
-  You can **Pick** an Asset, or browse for a file to upload, then **Edit**, or **Clear**.
-
-* **Alternative Text** - a text used to represent the meaning and/or function of the image; for example, for use by screen readers.
-
-* **Inherit - Value taken from the DAM asset** - when checked this will populate the alternative text with the value of the `dc:description`metadata in DAM
+* **Image** -  You can **Pick** an asset, or browse for a file to upload, then **Edit**, or **Clear** the selected image.
+* **Alternative Text** - A text used to represent the meaning and/or function of the image, commonly used by screen readers
+* **Inherit - Value taken from the DAM asset** - When checked, the alternative text is populated with the value of the `dc:description`metadata in DAM.
 
 ### Thumbnail {#thumbnail}
 
-Configure the page thumbnail
+This section is used to select and configure the image thumbnail for the page. This is used in components referencing the page; for example, teasers, page lists, etc.
 
 * **Generate Preview** - Generate a preview of the page to use as thumbnail
 * **Upload Image** - Upload an image to use as thumbnail
-* **Select Image** - Select an existing Asset to use as the thumbnail
+* **Select Image** - Select an existing asset to use as the thumbnail
 * **Revert** - This option becomes available after you have made a change to the thumbnail. If you do not want to keep your change, you can revert that change before saving.
 
 ## Cloud Services {#cloud-services}
 
-* **Cloud Service Configurations** - Define properties for cloud services
+* **Cloud Service Configurations** - Defines which configuration is used for cloud services for the page
+* **Inherited from** - For Live Copies and Language Copies, cloud configurations are by default inherited from the Blueprint.
+  * Uncheck to override inheritance
 
 ## Personalization {#personalization}
 
