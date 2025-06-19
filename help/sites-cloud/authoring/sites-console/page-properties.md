@@ -1,6 +1,6 @@
 ---
 title: Page Properties
-description: Learn how to define the properties required for managing a page in AEM.
+description: Learn about the different properties a page has and how they control the behavior of the page and how it is managed.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
@@ -9,7 +9,11 @@ mini-toc-levels: 2
 ---
 # Page Properties {#page-properties}
 
-You can define the required properties for a page. These can vary depending on the nature of the page. For example, some pages might be connected to a live copy while others are not and the live copy information is available as appropriate.
+Learn about the different properties a page has and how they control the behavior of the page and how it is managed.
+
+>[!TIP]
+>
+>For details on how you can edit and change the properties of a page, please see the document [Editing Page Properties.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
 
 ## Page Properties Tabs {#page-properties-tabs}
 
