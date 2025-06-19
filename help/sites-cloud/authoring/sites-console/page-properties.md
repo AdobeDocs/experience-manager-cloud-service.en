@@ -7,6 +7,7 @@ feature: Authoring
 role: User
 mini-toc-levels: 2
 ---
+
 # Page Properties {#page-properties}
 
 Learn about the different properties a page has and how they control the behavior of the page and how it is managed.
@@ -15,13 +16,17 @@ Learn about the different properties a page has and how they control the behavio
 >
 >For details on how you can edit and change the properties of a page, please see the document [Editing Page Properties.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
 
-## Page Properties Tabs {#page-properties-tabs}
+## Overview and Property Availability {#overview}
 
-The properties are distributed across several tabs.
+Page properties can control many aspects of a page from the page's title and branding to its permissions. The properties are distributed across several tabs, some of which may be hidden depending on the type of page. Like most properties in AEM, [page properties can be inherited.](/help/sites-cloud/authoring/sites-console/edit-page-properties.md#inheritance)
 
-### Basic {#basic}
+>[!NOTE]
+>
+>This document describes all possible page properties. Depending on the type of page, not all properties will be available.
 
-#### Title &amp; Tags {#title-tags}
+## Basic {#basic}
+
+### Title &amp; Tags {#title-tags}
 
 * **Title** - The title of the page is shown in various locations. For example, the **Websites** tab list and the **Sites** card/list views.
   * This is a mandatory field.
@@ -35,7 +40,7 @@ The properties are distributed across several tabs.
   * For more information about tags, see [Using Tags](/help/sites-cloud/authoring/sites-console/tags.md).
 * **Hide in Navigation** - Indicates whether the page is shown or hidden in the page navigation of the resulting site.
 
-#### Branding {#branding}
+### Branding {#branding}
 
 Apply a consistent brand identity across pages by appending a brand slug to each page title. This functionality requires use of the Page Component from release 2.14.0 or later of the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
@@ -45,18 +50,18 @@ Apply a consistent brand identity across pages by appending a brand slug to each
   * **Override value** - The text of the brand slug to be appended to the page title.
     * The value is appended to the page title after a pipe character such as "Cycling Tuscany | Always ready for the WKND"
 
-#### HTML ID {#html-id}
+### HTML ID {#html-id}
 
 * **ID** - HTML ID to apply to the component.
 
-#### More Titles and Description {#more-titles}
+### More Titles and Description {#more-titles}
 
 * **Page Title** - A title to be used on the page. Typically used by title components. If empty, the **Title** is used.
 * **Navigation Title** - You can specify a separate title for use in the navigation (for example, if you want something more concise). If empty, the **Title** is used.
 * **Caption** - A subtitle for use on the page.
 * **Description** - Your description of the page, its purpose, or any other details you want to add.
 
-#### On/Off Time {#on-off-time}
+### On/Off Time {#on-off-time}
 
 >[!NOTE]
 >
@@ -75,7 +80,7 @@ Apply a consistent brand identity across pages by appending a brand slug to each
 
 * Leave these fields (**On Time** and **Off Time**) empty for pages you want to publish immediately and have available on the publish environment until they are deactivated (the normal scenario).
 
-#### Vanity URL {#vanity-url}
+### Vanity URL {#vanity-url}
 
 * Lets you enter a vanity URL for this page, which can allow you to have a shorter and/or more expressive URL.
 * For example, if the Vanity URL is set to `welcome` to the page identified by the path `/v1.0/startpage` for the website `http://example.com`, then `http://example.com/welcome` would be the vanity URL of `http://example.com/content/v1.0/startpage`
@@ -93,9 +98,9 @@ Apply a consistent brand identity across pages by appending a brand slug to each
   * Select the **Remove** icon to delete the vanity URL.
 * **Redirect Vanity URL** - Indicates whether you want the page to use the vanity URL.
 
-### Advanced {#advanced}
+## Advanced {#advanced}
 
-#### Settings {#settings}
+### Settings {#settings}
 
 * **Language** - The page language
 * **Language Root** - Must be checked if the page is the root of a language copy
@@ -108,19 +113,19 @@ Apply a consistent brand identity across pages by appending a brand slug to each
   * Pages accessed by aliases in the editor cannot be published. [Publish options](/help/sites-cloud/authoring/sites-console/publishing-pages.md) in the editor are only available for pages accessed via their actual paths. 
   * See [Localized page names under SEO and URL Management Best Practices](/help/overview/seo-and-url-management.md#localized-page-names).
 
-#### Configuration {#configuration}
+### Configuration {#configuration}
 
 * **Inherited from &lt;path&gt;** - enable/disable inheritance; toggles availability of **Cloud Configuration** for selection
 
 * **Cloud Configuration** - The path to the selected configuration
 
-#### Template Settings {#template-settings}
+### Template Settings {#template-settings}
 
 * **Allowed Templates** - [Defines the list of templates that are available](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) within this sub-branch
 * **Use Page as Template** - [Create a new template based on the current page.](/help/sites-cloud/authoring/universal-editor/templates.md)
   * Only applies to pages created for use with the Universal Editor leveraging Edge Delivery Services.
 
-#### Authentication Requirement {#authentication}
+### Authentication Requirement {#authentication}
 
 * **Enable** - Enable use of authentication to access the page
 
@@ -130,11 +135,11 @@ Apply a consistent brand identity across pages by appending a brand slug to each
 
 * **Login Page** - The page to be used for login
 
-#### Export {#export}
+### Export {#export}
 
 * **Export Configuration** - Specifies an export configuration
 
-### SEO {#seo}
+## SEO {#seo}
 
 * **Canonical Url** - can be used to overwrite the page's canonical Url; if left blank the page's Url is its canonical Url
 
@@ -146,9 +151,9 @@ Apply a consistent brand identity across pages by appending a brand slug to each
 
 * **Generate Sitemap** - when selected, a sitemap.xml is generated for this page, and its descendants
 
-### Images {#images}
+## Images {#images}
 
-#### Featured Image {#featured-image}
+### Featured Image {#featured-image}
 
 Select, and configure, the image to be featured. This is used in components referencing the page; for example, teasers, page lists, and so on.
 
@@ -160,7 +165,7 @@ Select, and configure, the image to be featured. This is used in components refe
 
 * **Inherit - Value taken from the DAM asset** - when checked this will populate the alternative text with the value of the `dc:description`metadata in DAM
 
-#### Thumbnail {#thumbnail}
+### Thumbnail {#thumbnail}
 
 Configure the page thumbnail
 
@@ -169,27 +174,27 @@ Configure the page thumbnail
 * **Select Image** - Select an existing Asset to use as the thumbnail
 * **Revert** - This option becomes available after you have made a change to the thumbnail. If you do not want to keep your change, you can revert that change before saving.
 
-### Cloud Services {#cloud-services}
+## Cloud Services {#cloud-services}
 
 * **Cloud Service Configurations** - Define properties for cloud services
 
-### Personalization {#personalization}
+## Personalization {#personalization}
 
-#### ContextHub Configurations {#contexthub-config}
+### ContextHub Configurations {#contexthub-config}
 
 * **Inherited from &lt;path&gt;** - enable/disable inheritance; toggles availability of **ContextHub Pathn** and **Segments Path** for selection
 
 * **ContextHub Path** - Define the [ContextHub configuration](/help/sites-cloud/authoring/personalization/contexthub.md)
 * **Segments Path** - Define the [Segments path](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
   
-#### Targeting Configuration {#targeting-config}
+### Targeting Configuration {#targeting-config}
 
 * **Brand** - Defines a [Brand to specify a scope for Targeting](/help/sites-cloud/authoring/personalization/targeted-content.md).
 
 >[!NOTE]
 >This option requires the user account to be in the `Target Administrators`group.
 
-### Permissions {#permissions}
+## Permissions {#permissions}
 
 * **Permissions**
 
@@ -197,7 +202,7 @@ Configure the page thumbnail
   * **Edit Closed User Group**
   * View the **Effective Permissions**
     
-### Blueprint {#blueprint}
+## Blueprint {#blueprint}
 
 This tab is only visible for pages that serve as blueprints. Blueprints serve as the basis for Live Copies, and are part of [Multi Site Management](/help/sites-cloud/administering/msm/overview.md).
 
@@ -205,7 +210,7 @@ This tab is only visible for pages that serve as blueprints. Blueprints serve as
 
 * **Rollout Configs** - Controls the circumstances under which modifications are propagated to the Live Copy
 
-### Live Copy {#live-copy}
+## Live Copy {#live-copy}
 
 This tab is only visible for pages that are configured as live copies. As with Blueprints, Live Copies are part of [Multi Site Management](/help/sites-cloud/administering/msm/overview.md).
 
@@ -214,27 +219,27 @@ This tab is only visible for pages that are configured as live copies. As with B
 * **Suspend** - Suspend Live Copy from further rollout modifications
 * **Detach** - Detach Live Copy from Blueprint
 
-#### Source {#source}
+### Source {#source}
 
 * Displays the path of the blueprint for this Live Copy
 
-#### Status {#status}
+### Status {#status}
 
 * Lists current Live Copy status of the page
 
-#### Configuration {#live-copy-config}
+### Configuration {#live-copy-config}
 
 * **Live Copy Inheritance** - If checked, Live Copy configuration is effective on all children
 * **Inherit Rollout Configs from Parent** - If checked, the rollout configuration is inherited from the parent of the page
 * **Choose Rollout Config** - Defines the circumstances under which modifications are propagated from the Blueprint and only available when **Inherit Rollout Configs from Parent** is not selected
 
-### Preview {#preview}
+## Preview {#preview}
 
 When a Preview environment is enabled you see the following:
 
 * Preview URL - the URL used for accessing the content on the Preview environment
 
-### Progressive Web App {#progressive-web-app}
+## Progressive Web App {#progressive-web-app}
 
 Through a simple configuration, a content author can now enable progressive web app (PWA) features for experiences created in AEM Sites.
 
@@ -244,7 +249,7 @@ Through a simple configuration, a content author can now enable progressive web 
 
 {{pwa-deprecation}}
 
-#### Configure installable experience {#config-pwa}
+### Configure installable experience {#config-pwa}
 
 * **Enable PWA** - enable/disable the feature; allows users to install the site as a PWA
 * **StartupURL** - the preferred startup Url
@@ -254,7 +259,7 @@ Through a simple configuration, a content author can now enable progressive web 
 * **Background color** - the background color of the app, which is shown as the app loads
 * **Icon** - the icon that represents the app on the user's device
 
-#### Cache management (Advanced) {#cache-management}
+### Cache management (Advanced) {#cache-management}
 
 * **Caching strategy and frequency of content refresh** - defines the caching model for your PWA
 * **Files to cache for offline use**
@@ -262,35 +267,3 @@ Through a simple configuration, a content author can now enable progressive web 
   * **Client-side Libraries** - client-side libraries to cache for offline experience
   * **Path inclusions** - network requests for the defined paths are intercepted and cached content is returned in accordance with the configured Caching strategy and frequency of content refresh
   * **Path exclusions** - these files will never be cached regardless of the settings under File pre-caching and Path inclusions
-
-## Property Inheritance {#inheritance}
-
-If the page is based on a blueprint or otherwise inherits content from another page, inheritance is reflected in the **Page Properties** window for the individual field.
-
-![Inherited properties](assets/property-inhertiance.png)
-
-Inherited properties can not be edited. Tap or click the **Cancel inheritance** icon next to a particular field to break its inheritance.
-
-![Cancel inheritance](assets/cancel-inheritance.png)
-
-Confirm the cancellation in the **Cancel inheritance** modal.
-
-![Cancel inheritance confirmation modal](assets/cancel-inheriance-confirmation.png)
-
-Once inheritance is cancelled for a field, it then becomes editable.
-
-![Cancelled inheritance](assets/property-inheritance-broken.png)
-
-To reinstate inheritance, tap or click the **Revert inheritance** icon next to the field.
-
-![Revert inheritance](assets/revert-inheritance.png)
-
-Confirm the reversion in the **Revert inheritance** modal.
-
-![Revert inheritance confirmation modal](assets/revert-inhertiance-confirmation.png)
-
-Select **Synchronize Page after reverting inheritance** to update the field with the latest values in the blueprint. If you do not, the values will be updated the next time the LiveCopy is synchronized.
-
->[!TIP]
->
->For more information about inheritance, please see the document [Multi Site Manager and Translation](/help/sites-cloud/administering/msm-and-translation.md)
