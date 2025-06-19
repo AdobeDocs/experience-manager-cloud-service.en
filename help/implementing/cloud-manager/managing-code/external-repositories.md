@@ -77,6 +77,9 @@ Configuration of an external repository in Cloud Manager consists of the followi
 
 >[!TAB GitHub Enterprise]
 
+<!-->
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
+
 | Access token option | Description |
 | --- | --- |
 | **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
@@ -87,6 +90,8 @@ After validation, the external repository is ready to use and link to a pipeline
 See also [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 | Access token option | Description |
 | --- | --- |
@@ -99,6 +104,8 @@ See also [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/m
 
 >[!TAB Bitbucket]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
+
 | Access token option | Description |
 | --- | --- |
 | **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
@@ -109,6 +116,8 @@ After validation, the external repository is ready to use and link to a pipeline
 See also [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
 >[!TAB Azure DevOps]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | Access token option | Description |
 | --- | --- |
@@ -202,11 +211,16 @@ For all other external repositories that are onboarded with an access token &nda
 
 >[!TAB GitHub Enterprise]
 
+<!-->
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
+
 | Required webhook events |
 | --- |
 | These events allow Cloud Manager to respond to GitHub activity, such as pull request validation, push-based triggers for pipelines, or Edge Delivery Services code sync.<br>Make sure that the webhook is set up to trigger on the following required webhook events:<ul><li>Pull requests<li>Pushes<li>Issue comments</li></li></li></ul></ul></ul> |
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 | Required webhook events |
 | --- |
@@ -214,11 +228,15 @@ For all other external repositories that are onboarded with an access token &nda
 
 >[!TAB Bitbucket]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
+
 | Required webhook events |
 | --- |
 | These events ensure that Cloud Manager can validate pull requests, respond to code pushes, and interact with comments for pipeline coordination.<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Pull request: Created<li>Pull request: Updated<li>Pull requests: Merged<li>Pull request: Comment<li>Repository: Push</li></li></li></ul></ul></ul> |
 
 >[!TAB Azure DevOps]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | Required webhook events |
 | --- |
@@ -238,12 +256,17 @@ The behavior varies depending on the Git provider that you use, as outlined belo
 
 >[!TAB GitHub Enterprise]
 
+<!-->
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
+
 When the check is created, it appears like the following screenshot below. The key difference from `GitHub.com` is that `GitHub.com` uses a check-run, while GitHub Enterprise (using personal access tokens) generates a commit status:
 
 ![Commit status to indicate PR validation process on GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 GitLab interactions rely solely on comments. When validation begins, a comment is added. When validation is complete (whether successful or failed), the initial comment is removed and replaced with a new comment containing validation results or error details.
 
@@ -265,6 +288,8 @@ When the code quality validation fails due to customer issues:
 
 
 >[!TAB Bitbucket]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
 
 When code quality validation is running:
 
