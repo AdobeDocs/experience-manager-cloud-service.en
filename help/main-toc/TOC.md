@@ -366,6 +366,7 @@ user-guide-title: AEM as a Cloud Service
       + [Creating Pages](/help/sites-cloud/authoring/sites-console/creating-pages.md)
       + [Managing Pages](/help/sites-cloud/authoring/sites-console/managing-pages.md)
       + [Page Properties](/help/sites-cloud/authoring/sites-console/page-properties.md)
+      + [Editing Page Properties](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
       + [Previewing Pages](/help/sites-cloud/authoring/sites-console/previewing-content.md)
       + [Publishing Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
       + [Page Versions](/help/sites-cloud/authoring/sites-console/page-versions.md)
