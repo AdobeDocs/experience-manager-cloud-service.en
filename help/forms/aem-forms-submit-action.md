@@ -7,7 +7,9 @@ role: User, Developer
 
 # Submit Actions Supported by Adaptive Forms
 
-A Submit Action is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. Forms as a Cloud Service provides the following Submit Actions out of the box. Adaptive forms offer various out of the box submit actions. These out-of-the-box submit actions empower you to:
+Adaptive Forms allow you to create forms that are engaging, responsive, dynamic, and adaptive. They provide an intuitive user interface and a set of out-of-the-box components for designing and managing forms efficiently. You can configure various submit actions to send form data to services like OneDrive, SharePoint, Workfront Fusion, and more.
+
+A submit action is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. Forms as a Cloud Service provides several submit actions out of the box. The built-in submit actions empower you to:
 
 * Effortlessly send form data via email
 * Initiate Microsoft&reg; Power Automate flows or AEM Workflows while transmitting the data.
