@@ -10,45 +10,33 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 21193 {#21193}
+## Release X {#X}
 
-Summarized below are the continuous improvements for maintenance release 21193, which was publicly released on June 10, 2025. The previous maintenance release was release 21005.
+Summarized below are the continuous improvements for maintenance release X, which was publicly released on June 24, 2025. The previous maintenance release was release 21193.
 
 The 2025.6.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-21193}
-
-* ASSETS-51245: Improved performance for large folder listings in Touch UI.
-* ASSETS-51686: Improvements to bulk operations job, including easier job cancellation, enhanced logging, audit downloads for large results.
-* CQ-4360131: Improved error response for OpenAPI endpoints allowing API clients to receive correct structured error information.
-
-### Fixed Issues {#fixed-issues-21193}
-
-* ASSETS-41007: Deleted assets could remain visible in Content Hub.
-* ASSETS-50994: AemRequestEventFilter causing excessive Jetty thread contention.
-* ASSETS-50155: Duplicate metadata change events triggered.
-* ASSETS-50716: Sorting by Title in Assets List view not working as expected.
-* ASSETS-50820: Ensure invalid requests to the asset relations API are properly rejected with a 400 error.
-* ASSETS-50562: Asset Upload API should create version by default behavior on name conflict.
-* ASSETS-50992: Assets API initiateUpload.json endpoint should return content type of 'application/json'.
-* ASSETS-51322: Automatic removal and expiration of async barricades that remain persisted indefinitely after a failed job.
-* ASSETS-51809: CSV editor did not show recently saved changes due to browser caching.
-* SITES-31678: Experience Fragments (XF) with context-aware references did not resolve the correct language root in XF Publishing API.
-
-
-### Known Issues {#known-issues-21193}
+### Enhancements {#enhancements-X}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-21193}
+### Fixed Issues {#fixed-issues-X}
+
+None.
+
+### Known Issues {#known-issues-X}
+
+None.
+
+### Deprecated Features and APIs {#deprecated-X}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-21193}
+### Security Fixes {#security-X}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 2 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses X identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-21193}
+### Embedded Technologies {#embedded-tech-X}
 
 |Technology|Version|Link|
 |---|---|---|
