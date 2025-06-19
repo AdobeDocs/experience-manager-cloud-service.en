@@ -150,7 +150,7 @@ Once set, you should see every content update call go to `https://localhost:8000
 
 ## Editing a Page with the Local Universal Editor Service {#editing}
 
-With the [Universal Editor Service running locally](#running-ue) and your [content page instrumented to use the local service](#using-loca-ue), you can now start the editor.
+With the [Universal Editor Service running locally](#running-ue) and your [content page instrumented to use the local service](/help/implementing/universal-editor/getting-started.md), you can now start the editor.
 
 1. Open your browser to `https://localhost:8000/ping`.
 1. Direct your browser to accept [your self-signed certificate](#ue-https).
