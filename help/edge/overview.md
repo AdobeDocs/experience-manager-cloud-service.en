@@ -8,13 +8,8 @@ role: Admin, Architect, Developer
 
 # Edge Delivery Services Overview {#edge-delivery-services}
 
-With Edge Delivery Services, AEM delivers exceptional experiences that drive engagement and conversions. AEM does so by delivering high-impact experiences that are fast to author and develop. It is a composable set of services that enables a rapid development environment where authors can update and publish quickly, and new sites are launched rapidly. As such, with Edge Delivery Services you can improve conversion, reduce costs, and provide extreme content velocity.
-
-By using Edge Delivery Services, you can:
-
-* Create fast sites with a perfect Lighthouse Score and continuously monitor your site performance through Operational Telemetry.
-* Increase authoring efficiency by decoupling content sources. Out of the box you can use both AEM authoring with the Universal Editor and document-based authoring. As such, you can work with multiple content sources on the same website.
-* Use a built-in experimentation framework that allows quick test creation, execution without performance impact and fast release to production of a test winner.
+## What is Edge Delivery Services?
+Edge Delivery Services is a modern content delivery framework that reimagines how websites are built and delivered—optimized for speed, simplicity, and scalability. It is a core part of Adobe Experience Manager and enables faster digital experiences by pushing rendering and delivery closer to the user, at the edge of the network. However, it is **not** a replacement for a CDN, more of a co-pilot that seamlessly integrates with it.
 
 >[!TIP]
 >
@@ -22,85 +17,54 @@ By using Edge Delivery Services, you can:
 >
 >If you want to get hands-on right away, you can start your own Edge Delivery Services project with AEM authoring in less than 30 minutes by [checking out the tutorial on aem.live.](https://www.aem.live/developer/ue-tutorial)
 
-## Agile Reaction to Business Needs {#agile-reaction}
 
-As a longstanding recognized industry leader, Adobe knows how important it is to be able to create and publish new, meaningful content quickly for your customers. Common challenges in scaling content creation have been made clear by the market, including:
+## Why Edge Delivery Services?
 
-1. **Demand for content continues to grow.**
-   * There is a need to unlock new content authors to meet this demand.
-   * The content creation process must scale effectively across the business.
-   * Authors must be able to react quickly to changing trends.
-1. **There is a need for omni-channel content.**
-   * Layout control is needed irrespective of content delivery.
-   * Authors need to be empowered to change content layout directly.
-1. **Pressure grows to drive ROI on content.**
-   * Authors themselves need the ability to optimize the content that they create.
+### Increases discoverability and traffic
+Edge Delivery websites are optimized for search engines (SEO) and LLMs (bot-friendly experiences). This ensures high visibility and discoverability on all existing and upcoming sources for organic traffic. The **performance-first e2e architecture** ensures a delightful customer experience which will positively impact engagement.
 
-These trends have proved themselves consistent across the industry. However, individual requirements inevitably vary project to project. The goal of any Edge Delivery Services project is to focus on finding the solution that works for your users.
+### Developer efficiency
+Go-live in rather days and weeks than months! Edge Delivery offers all the tools **modern web developers** love: GitHub, local development with auto-reload, performance, simplicity – and none of the complications: no transpilation, no bundlers, no configurations, no overhead.
 
-1. **Focus on value instead of features.** - Determine the most optimized workflow to serve your authors rather than getting lost in AEM's expansive feature set.
-1. **Take advantage of AEM's flexibility.** - AEM features don't need to be used in a vacuum. Use those features that you need per use case.
-1. **Leverage your author's expertise.** - Involve real content authors in the project from the beginning to ensure you are delivering the value they need by implementing the features that make sense.
+The simplicity of Edge Delivery does not require you to use complicated frameworks, tooling, or processes which is ideal for AI code creation. Use plain HTML, modern CSS, and vanilla JavaScript to create exceptional experiences faster than ever before. Focus on work and spend less time for training and learning new tools.
 
-By focusing on value for your authors, your Edge Delivery Services project can meet the modern industry demands facing your content creators and provide content quickly to delight your customers.
+Edge Delivery enables every developer to make lighthouse score 100 a reality.
 
-## Flexible Authoring Tools for Your Content Creators {#overview}
+### Support for multiple content sources
+Content from various solutions can directly integrate with Edge Delivery, **inluding all your existing AEM instances**. Authors can manage and **publish content from any system to Edge Delivery** and gain more velocity.
 
-Edge Delivery Services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. You can use both [AEM content management](/help/sites-cloud/authoring/author-publish.md) and content authoring using the [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) as well as [document-based authoring.](https://www.aem.live/docs/authoring)
+### Composable architecture
+Headless or headful - Deliver the right content in the right format and add the right decoration to make it an experience that stands out in any channel.
 
-The following diagram illustrates how you can edit content in Microsoft Word (document-based authoring) and publish to Edge Delivery Services alongside the AEM content authoring using the Universal Editor.
+## How does it work
+Edge Delivery Services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. It replaces AEM Publish / Dispatcher and the traditional way of building experiences with AEM Core Components with a multi-cloud SaaS solution and pure FE development approach.
 
-![Edge Delivery Architecture](assets/AEM-with-EDS-publishing-simple2.png)
+![Edge Delivery Architecture](assets/AEM-with-EDS-architecture.png)
 
 Edge Delivery Services uses GitHub so you can manage and deploy code directly from your GitHub repository. New content is added instantly without a rebuild process.
 
-### AEM Authoring with the Universal Editor{#wysiwyg-authoring}
-
+## Authoring
 The Universal Editor is a what-you-see-is-what-you-get (WYSIWYG), customizable, one-stop place to edit content live and in-context with a visual preview.
 
-* With AEM authoring with the Universal Editor, you increase author efficiency whether headless or headful.
+* With AEM authoring and the Universal Editor, you increase author efficiency whether headless or headful.
 * You can take advantage of AEM's comprehensive content-management capabilities including workflow and governance.
 * Leverage numerous extension points to support your own processes and integrations.
 * The functionality of your site can be developed by using CSS and JavaScript in GitHub.
 
 ![AEM authoring with the Universal Editor](assets/wysiwyg-authoring.png)
 
+Another approach is document-based authoring where content gets managed as documents. Microsoft Word is a popular choice as many enterprises have Sharepoint in place where the initial content gets created. No need to learn a new tool and publishing content diretly from Sharepoint and Word removes the hassle of copy & paste content into AEM. 
+
+## Start exploring
 Get started with AEM authoring with the Universal Editor and Edge Delivery Services:
 
+* Edge Delivery Services documentation [Edge Delivery Services](https://www.aem.live)
 * For an overview of AEM authoring with the Universal Editor, see the document [Authoring with AEM for Edge Delivery Services](https://www.aem.live/docs/aem-authoring) in the aem.live documentation.
 * For a developer overview, see the document [Getting Started - Universal Editor Developer Tutorial](https://www.aem.live/developer/ue-tutorial) in the aem.live documentation.
-
-### Document-Based Authoring {#document-based}
-
-With document-based authoring, you can use content directly from Microsoft Word or Google Docs such that those sources become pages on your website. Headings, lists, images, font elements can all be transferred from the initial source into the website.
-
-* With document-based authoring, every marketer is enabled to create content quickly with known authoring tools (Microsoft Word, Google Docs, etc.).
-* Content creation is streamlined by allowing authoring, review, and publishing directly within the source documents.
-* Because known tools are used, zero onboarding is required for content authors, increasing content velocity.
-* The functionality of your site can be developed by using CSS and JavaScript in GitHub.
-
-![Document-based authoring](assets/document-based-authoring.png)
-
-Further reading in the document-based authoring documentation:
-
-* For details on how to get started with Edge Delivery, see the [Build section of the aem.live documentation.](https://www.aem.live/docs/#build)
-* To understand how to author and publish content by using Edge Delivery, see the [Publish section of the aem.live documentation.](https://www.aem.live/docs/authoring)
-* To understand how to launch your website project properly, see the [Launch section of the aem.live documentation](https://www.aem.live/docs/#launch)
-
-### Deciding on Your Authoring Method {#authoring-method}
-
-AEM's flexibility ensures that your authoring needs are covered. Adobe can help you determine what method (or methods) best fit your requirements.
-
-* Always involve your content authors in the decision.
-* Multiple authoring methods can be implemented.
-* You can always change your authoring method after-the-fact.
-* You do not need to decide before the implementation, but rather as part of the implementation.
 
 ## Edge Delivery Services and Other Adobe Experience Cloud Products {#edge-other-products}
 
 Edge Delivery Services are part of Adobe Experience Manager. As such, Edge Delivery Services and AEM Sites can co-exist on the same domain, which is a common use case for larger websites. Additionally, your AEM Sites pages can seamlessly consume content from Edge Delivery Services, and the reverse is also true.
-
-See the document [Getting Started - Universal Editor Developer Tutorial](https://www.aem.live/developer/ue-tutorial) in the aem.live documentation to learn how to start your own project to author with AEM and Edge Delivery Services.
 
 You can also use Edge Delivery Services with [Adobe Target](https://www.aem.live/developer/target-integration), [Operational Telemetry](https://www.aem.live/developer/rum) to diagnose usage and performance of your sites, and [Launch.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
 
