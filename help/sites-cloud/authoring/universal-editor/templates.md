@@ -51,7 +51,7 @@ You can either [create a new page](/help/sites-cloud/authoring/sites-console/cre
 
 1. Use the **Sites** console to [navigate to the new or existing page](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources) that you wish to use as a template and tap or click it to select it.
 
-1. Once the page is selected, tap or click the [**Properties** icon](/help/sites-cloud/authoring/sites-console/page-properties.md) in the toolbar.
+1. Once the page is selected, tap or click the [**Properties** icon](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) in the toolbar.
 
 1. On the **Advanced** tab of the properties dialog under the **Template Settings** section, select the toggle **Use Page as Template**.
 
