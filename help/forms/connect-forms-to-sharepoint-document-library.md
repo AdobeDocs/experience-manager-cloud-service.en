@@ -2,7 +2,7 @@
 Title: How to integrate Adaptive Form to a SharePoint Document Library?
 Description: This article explains how to send data from your Adaptive Form to a SharePoint  Document library when you submit the form.
 keywords: How to connnect SharePoint document library for an adpative form, Submit to SharePoint, Create a SharePoint Document Library Configuration, Use the Submit to SharePoint submit action in an Adaptive Form, AEM Forms Data Model SharePoint Document Library, Forms Data Model SharePoint Document Library, Integrate Forms Data Model to SharePoint Document Library
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
 ---
@@ -55,28 +55,65 @@ Now, you can use this SharePoint Sites configuration for the submit action in an
 
 ### 2. Use SharePoint Document Library Configuration in an Adaptive Form
 
-You can use the created SharePoint Document Library configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint folder. Perform the following steps to use a SharePoint Document Library storage configuration in an Adaptive Form as:
+You can use the created SharePoint Document Library configuration in an Adaptive Form, to save data or generated Document of Record in a SharePoint folder. 
 
-1. Create an [Adaptive Form](/help/forms/creating-adaptive-form-core-components.md).
+>[!NOTE]
+>
+> * Select the same [!UICONTROL Configuration Container] for an Adaptive Form, where you have created your SharePoint Document Library storage. 
+> * If no [!UICONTROL Configuration Container] is selected, then the global [!UICONTROL Storage Configuration] folders appear in the Submit Action properties window.
 
-    >[!NOTE]
-    >
-    > * Select the same [!UICONTROL Configuration Container] for an Adaptive Form, where you have created your SharePoint Document Library storage. 
-    > * If no [!UICONTROL Configuration Container] is selected, then the global [!UICONTROL Storage Configuration] folders appear in the Submit Action properties window.
+>[!BEGINTABS]
 
-1. Select **Submit Action** as **[!UICONTROL Submit to SharePoint]**.
+>[!TAB Foundation Component]
+
+Perform the following steps to use a SharePoint Document Library storage configuration in an Adaptive Form based on Foundation Component as:
+
+1. Open the Adaptive Form for editing and navigate to **[!UICONTROL Submission]** section of the Adaptive Form Container properties. 
+1. From the **[!UICONTROL Submit Action]** drop-down list, select **Submit Action** as **[!UICONTROL Submit to SharePoint]**.
+    ![Sharepoint GIF](/help/forms/assets/submit-to-sharepoint-fc.png){width=50%}
+1. Select the **[!UICONTROL Storage Configuration]**, where you want to save your data.
+1. Click **[!UICONTROL Save]** to save the Submit settings.
+
+>[!NOTE]
+>
+> * When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint Document Library Storage. Folder structure to save data is `/folder_name/form_name/year/month/date/submission_id/data`.
+> * Attachments are also stored in the `/folder_name/form_name/year/month/date/submission_id/data` directory. However, if you select **Save Attachments with Original Name**, the attachments are stored in the folder using their original filenames.
+
+>[!TAB Core Component]
+
+Perform the following steps to use a SharePoint Document Library storage configuration in an Adaptive Form based on Core Component as:
+
+1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
+1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 
+1. Click the  **[!UICONTROL Submission]** tab. 
+1. From the **[!UICONTROL Submit Action]** drop-down list, select **Submit Action** as **[!UICONTROL Submit to SharePoint]**.
     ![Sharepoint GIF](/help/forms/assets/sharedrive-video.gif)
 1. Select the **[!UICONTROL Storage Configuration]**, where you want to save your data.
 1. Click **[!UICONTROL Save]** to save the Submit settings.
 
 >[!NOTE]
 >
-> When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint Document Library Storage. Folder structure to save data is `/folder_name/form_name/year/month/date/submission_id/data`.
+> * When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint Document Library Storage. Folder structure to save data is `/folder_name/form_name/year/month/date/submission_id/data`.
+> * Attachments are also stored in the `/folder_name/form_name/year/month/date/submission_id/data` directory. However, if you select **Save Attachments with Original Name**, the attachments are stored in the folder using their original filenames.
+
+>[!TAB Universal Editor]
+
+Perform the following steps to use a SharePoint Document Library storage configuration in an Adaptive Form authored in Universal Editor as:
+
+1. Open the Adaptive Form for editing.
+1. Click the **Edit Form Properties** extension on the editor. 
+    The **Form Properties** dialog appears.
+1. Click **Submission** tab and select **[!UICONTROL Submit to SharePoint]** submit action.
+    ![Sharepoint GIF](/help/forms/assets/submit-to-sharepoint-ue.png)
+1. Select the **[!UICONTROL Storage Configuration]**, where you want to save your data.
+1. Click **[!UICONTROL Save&Close]** to save the Submit settings.
 
 >[!NOTE]
 >
-> Attachments are also stored in the `/folder_name/form_name/year/month/date/submission_id/data` directory. However, if you select **Save Attachments with Original Name**, the attachments are stored in the folder using their original filenames.
-> ![image](/help/forms/assets/sp-doc-attachment-af2.png){height=50%,width=50%}
+> * When you submit the form, the data is saved in the specified Microsoft&reg; Sharepoint Document Library Storage. Folder structure to save data is `/folder_name/form_name/year/month/date/submission_id/data`.
+> * Attachments are also stored in the `/folder_name/form_name/year/month/date/submission_id/data` directory. However, if you select **Save Attachments with Original Name**, the attachments are stored in the folder using their original filenames.
+
+>[!ENDTABS]
 
 ## Related Articles
 
