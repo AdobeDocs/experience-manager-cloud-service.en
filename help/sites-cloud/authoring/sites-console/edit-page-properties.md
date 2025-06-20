@@ -4,8 +4,8 @@ description: Learn how to edit the properties of a page and change behavior of t
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+exl-id: 8fee7e24-bbaa-4cc4-a047-165c9f2cd973
 ---
-
 # Editing Page Properties {#page-properties}
 
 Learn how to edit [the properties of a page](/help/sites-cloud/authoring/sites-console/page-properties.md) and change behavior of the page and how it is managed.

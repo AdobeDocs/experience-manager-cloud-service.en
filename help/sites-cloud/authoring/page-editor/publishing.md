@@ -4,8 +4,8 @@ description: Learn how the Page Editor publishes content.
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+exl-id: dc11ac02-2a8d-4d82-ae10-e0fb97025063
 ---
-
 # Publishing Content with the Sites Editor {#publishing}
 
 Learn how the Page Editor publishes content.
