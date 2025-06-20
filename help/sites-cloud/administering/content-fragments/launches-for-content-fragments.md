@@ -7,8 +7,8 @@ hide: yes
 hidefromtoc: yes
 index: no
 solution: Experience Manager Sites
+exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
 ---
-
 # Launches for Content Fragments {#launches-for-content-fragments}
 
 In Adobe Experience Manager (AEM) as a Cloud Service, Launches enable you to efficiently develop content for a future release.
