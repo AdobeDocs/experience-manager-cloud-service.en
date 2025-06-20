@@ -43,8 +43,6 @@ This article is organized into the following sections:
 * **Recommended Starter Rules:** A set of rules to get started with.
 * **Tutorial:** Practical knowledge about the feature, including how to use dashboard toolings to declare the right rules.
 
-Adobe invites you to give feedback or ask questions about traffic filter rules by emailing **aemcs-waf-adopter@adobe.com**.
-
 ## Traffic Protection Overview {#traffic-protection-overview}
 
 In the current digital landscape, malicious traffic is an ever-present threat. Adobe recognizes the gravity of the risk and offers several approaches to protect customer applications and mitigate attacks when they occur.
