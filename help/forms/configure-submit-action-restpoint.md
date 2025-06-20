@@ -171,7 +171,7 @@ To configure submit action based on Swagger Open API specification for Adaptive 
 
     +++
 
-2. Click **[!UICONTROL Save&Close]**.
+1. Click **[!UICONTROL Save&Close]**.
 
 >[!ENDTABS]
 

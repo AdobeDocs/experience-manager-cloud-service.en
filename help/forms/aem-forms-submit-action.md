@@ -32,7 +32,7 @@ AEM forms offers following out-of-the-box submit actions:
 * [Invoke an AEM Workflow](/help/forms/configure-submit-action-workflow.md)
 * [Submit to Marketo enagage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 * [Submit to Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md) 
-* [Submit to Spreadsheet]()
+* [Submit to Spreadsheet](/help/forms/forms-submission-service.md)
 
 You can also submit an Adaptive Form to other storage configurations:
 
@@ -43,7 +43,7 @@ You can also submit an Adaptive Form to other storage configurations:
 
 The table below shows which submit actions are supported based on the form authoring method used in AEM Forms:
 
-| Submit Action               | Foundation Components | Core Components | Universal Editor | Document-Based Forms |
+| Submit Action               | [Foundation Components](/help/forms/configuring-submit-actions.md) | [Core Components](/help/forms/configure-submit-actions-core-components.md) | [Universal Editor](/help/forms/configure-submit-action-eds-forms.md#submit-actions-supported-by-adaptive-forms-created-in-universal-editor) | [Document-Based Forms](/help/forms/configure-submit-action-eds-forms.md#supported-submit-actions-for-document-based-forms) |
 |----------------------------|------------------------|------------------|------------------|------------------------|
 | Send an Email              | ✅ Supported           | ✅ Supported     | ✅ Supported     | ❌ Not Supported       |
 | Power Automate Flow        | ✅ Supported           | ✅ Supported     | ✅ Supported     | ❌ Not Supported       |

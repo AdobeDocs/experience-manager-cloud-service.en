@@ -12,7 +12,7 @@ role: User, Developer
 |---------|-----------------------------|
 | AEM 6.5 | [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service (Foundation Components) | [Click here](/help/forms/configuring-submit-actions.md) |
-| AEM as a Cloud Service (Core Components) | [Click here](/help/forms/configuring-submit-actions.md) |
+| AEM as a Cloud Service (Core Components) | [Click here](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | This article |
 
 You can create Edge Delivery Services forms using the Universal Editor or create document based forms.
@@ -69,7 +69,7 @@ The following submit actions are supported by Adaptive Forms in the Universal Ed
 * [Invoke an AEM Workflow](/help/forms/configure-submit-action-workflow.md)
 * [Submit to Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 * [Submit to Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
-* [Submit to Spreadsheet]()
+* [Submit to Spreadsheet](/help/forms/forms-submission-service.md)
 
 You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
 

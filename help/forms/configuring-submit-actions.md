@@ -11,8 +11,8 @@ role: User, Developer
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html)                  |
 | AEM as a Cloud Service (Foundation Components)    | This article         |
-| AEM as a Cloud Service (Core Components)    | [Click here]()        |
-| AEM as a Cloud Service (Edge Delivery Services) | [Click here]() |
+| AEM as a Cloud Service (Core Components)    | [Click here](/help/forms/configure-submit-actions-core-components.md)        |
+| AEM as a Cloud Service (Edge Delivery Services) | [Click here](/help/forms/configure-submit-action-eds-forms.md) |
 
 <!--
 **Applies to**: ✔️ Adaptive Form Foundation Components. ❌ [Adaptive Form Core Components](/help/forms/configure-submit-actions-core-components.md). Adobe recommends using Core Components to [add Adaptive Forms to an AEM Sites Page](create-or-add-an-adaptive-form-to-aem-sites-page.md) or to [create standalone Adaptive Forms](creating-adaptive-form-core-components.md).-->
