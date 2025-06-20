@@ -1,17 +1,18 @@
 ---
 title: Automatic update quiet hours and update free periods
-description: Learn how to configure quiet hours and update free periods for your ongoing programs.
+description: Learn how to configure quiet hours and update free periods for your ongoing programs so that automatic updates do not occur.
 feature: Deploying
 role: Admin
 ---
 # Quiet hours and Update free periods {#quiet-hours-update-free-periods}
 
-BETA NOTE
+>[!NOTE]
+>Currently, the quiet hours and update free periods features are available only through the beta program. Please contact either Adobe support or your account manager for access to the beta program.
 
-The AEM as a Cloud Service [automatic maintenance updates](/help/implementing/deploying/aem-version-updates.md) ensure that your instances stay secure and up to date with the latest maintenance releases. That said, in some cases (like go-live events) you might need to "protect' those critical operations from any potential disruptions. As such, AEM as a Cloud Service offers the option to set a window of time where automatic updates do not occur. You can configure these time frames by using two scheduling options:
+The AEM as a Cloud Service [automatic maintenance updates](/help/implementing/deploying/aem-version-updates.md) ensure that your instances stay secure and up to date with the latest maintenance releases. That said, in some cases (like go-live events) you might need to "protect' those critical working hours from any potential disruptions. As such, AEM as a Cloud Service offers the option to set a time frame where automatic updates do not occur. You can configure these time frames by using two scheduling options:
 
-* **Quiet hours** - You can define a time interval within a 24 hour day where updates will not occur.
-* **Update free periods** - You can define a 7 day time period where updates will not occur. You can define up to three update free periods within a 12-month time frame.
+* **Quiet hours** - You can define a time interval up to 8 hours within day where updates will not occur.
+* **Update free periods** - You can define a 7 day time period where updates will not occur. You can have up to three update free periods within a 12-month time frame.
 
 The update free periods and quiet hours features can be configured on a "per program" basis.
 
@@ -27,13 +28,13 @@ The quiet hours feature can be configured by using the AEM Cloud Manager interfa
 
 Go to **Activities>Automatic Updates>Update Options**.
 
-SCREENSHOT
+![Configuration](assets/main-config.png)
 
 1. Make sure the **Use Quiet Hours** option is toggled.
 2. Click Edit.
-3. Set quiet hours interval in the configuration window.
+3. Set the quiet hours interval in the configuration window.
 
-SCREENSHOT
+![Quiet Hours Configuration](assets/quiet-hours.png)
 
 Once set, your specified start and end hours will apply automatically to every calendar day moving forward. You can disable or re-configure the quiet hours time value as needed.
 
@@ -47,12 +48,12 @@ The update free periods feature can be configured by using the AEM Cloud Manager
 
 Go to **Activities>Automatic Updates>Update Options**.
 
-SCREENSHOT
+![Configuration](assets/main-config.png)
 
 1. Go to the update free periods section.
 2. Click **Add Update Free Period**.
 3. Select a one week update free period from the calendar.
 
-SCREENSHOT
+![Update Free Periods Configuration](assets/update-free-periods.png)
 
 An **Active** icon will be displayed near the currently active update free period and a **Complete** icon near the completed update free periods.
