@@ -17,7 +17,7 @@ role: User, Developer
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html)                  |
 | AEM as a Cloud Service (Foundation Components)    | [Click here](/help/forms/configuring-submit-actions.md)        |
 | AEM as a Cloud Service (Core Components)    | This article         |
-| AEM as a Cloud Service (Edge Delivery Services) | [Click here]() |
+| AEM as a Cloud Service (Edge Delivery Services) | [Click here](/help/forms/configure-submit-action-eds-forms.md) |
 
 A Submit Action lets you choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. The Adaptive Forms based on Core Component supports various [out-of-the-box submit actions](#submit-actions-supported-by-adaptive-forms-based-on-core-components). 
 
@@ -80,7 +80,7 @@ Additionally, you can [customize the default Submit Actions](/help/forms/custom-
 To send an email to one or more recipients upon successful submission of the form, you can use the **[!UICONTROL Send Email]** Submit Action. 
 
 Refer to [configure the send email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md) to learn how to set up an Adaptive Form to send an email upon successful submission.
-[!NOTE]
+>[!NOTE]
 >
 >Send PDF via Email Submit Action is applicable only to Adaptive Forms that use XFA template as form model. 
 
