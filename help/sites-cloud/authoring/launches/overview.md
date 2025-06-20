@@ -12,11 +12,13 @@ In Adobe Experience Manager (AEM) as a Cloud Service, Launches enable you to eff
 
 A *Launch* is created to allow you to make changes in preparation for future publication, at the same time as maintaining your current content. For AEM pages this means that you are effectively editing two versions at the same time: pages that are currently published, and a version of those pages, to be published at a time in the future. Once that time arrives you can replace the original pages and publish the new versions. 
 
+<!--
 >[!NOTE]
 >
 >Launches are also available for Content Fragments. The basic concepts are the same, but there are differences in how to manage them in AEM. 
 >
 >For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+-->
 
 You create a *Launch*, then after editing and updating your *Launch* pages you *Promote* them back to the *Source*. You can then activate these *Source* pages (top-level). Promoting duplicates the launch content back to the source pages and can be done either manually or automatically (dependent on fields set when creating and editing the launch).
 
