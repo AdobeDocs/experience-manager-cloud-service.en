@@ -1,16 +1,24 @@
 ---
-title: Launches
-description: Launches enable you to efficiently develop content for a future release. They allow you to make changes ready for future publication, while maintaining your current pages
+title: Launches for Pages
+description: Learn how to use Launches for Pages in Adobe Experience Manager as a Cloud Service. Launches enable you to efficiently develop content for a future release, while maintaining your current pages.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
 ---
-# Launches {#launches}
+# Launches for Pages {#launches-for-pages}
 
-Launches enable you to efficiently develop content for a future release.
+In Adobe Experience Manager (AEM) as a Cloud Service, Launches enable you to efficiently develop content for a future release.
 
-A *Launch* is created to allow you to make changes in preparation for future publication, at the same time as maintaining your current pages. This means that you are effectively editing two versions at the same time: pages that are currently published, and a version of those pages, to be published at a time in the future. Once that time arrives you can replace the original pages and publish the new version.  
+A *Launch* is created to allow you to make changes in preparation for future publication, at the same time as maintaining your current content. For AEM pages this means that you are effectively editing two versions at the same time: pages that are currently published, and a version of those pages, to be published at a time in the future. Once that time arrives you can replace the original pages and publish the new versions. 
+
+<!--
+>[!NOTE]
+>
+>Launches are also available for Content Fragments. The basic concepts are the same, but there are differences in how to manage them in AEM. 
+>
+>For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+-->
 
 You create a *Launch*, then after editing and updating your *Launch* pages you *Promote* them back to the *Source*. You can then activate these *Source* pages (top-level). Promoting duplicates the launch content back to the source pages and can be done either manually or automatically (dependent on fields set when creating and editing the launch).
 
@@ -22,7 +30,7 @@ For example, the seasonal product pages of your online store are updated quarter
 You can also:
 
 * Navigate content in the launch branch; adding, or removing, pages as necessary.
-* Preview how published content will look at a specific date/atim in the future.
+* Preview how published content will look at a specific date in the future.
 
 When the next quarter arrives, you promote the launch pages so that you can publish the source pages (holding the updated content). You can promote either all pages, or only those that you have modified.
 
@@ -100,6 +108,12 @@ Launches allow you to:
    ![Actions to take on launches in sites console](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
 ## The Launches Console {#the-launches-console}
+
+>[!NOTE]
+>
+>This console is only for Launches for Pages. 
+>
+>To manage your Content Fragments see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
 
 The Launches console provides an overview of your launches and lets you act on those listed. 
 
