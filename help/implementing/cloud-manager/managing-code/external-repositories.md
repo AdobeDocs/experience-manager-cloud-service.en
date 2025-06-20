@@ -77,8 +77,7 @@ Configuration of an external repository in Cloud Manager consists of the followi
 
 >[!TAB GitHub Enterprise]
 
-<!-->
-https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
 | Access token option | Description |
 | --- | --- |
