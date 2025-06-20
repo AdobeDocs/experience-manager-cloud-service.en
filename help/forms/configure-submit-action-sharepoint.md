@@ -2,16 +2,16 @@
 Title: How to send data to a SharePoint storage on submission of an Adaptive Form?
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list or Document library when you submit the form.
 keywords: How to connect SharePoint list for an adpative form?, How to connnect SharePoint document library for an adpative form, Submit to SharePoint, Create a SharePoint Document Library Configuration, Use the Submit to SharePoint submit action in an Adaptive Form, Connect an Adaptive Form to Microsoft&reg; SharePoint List.
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
 title: "How to configure a Submit Action for an Adaptive Form?"
 role: User, Developer
 ---
-# Connect an Adaptive Form to Microsoft® SharePoint
+# Connect an Adaptive Form to Microsoft&reg; SharePoint
 
-The **[!UICONTROL Submit to SharePoint]** submit action allows you to seamlessly connect your Adaptive Form with a Microsoft® SharePoint storage. It sends the form data to the SharePoint storage of your choice after you submit the form. 
+The **[!UICONTROL Submit to SharePoint]** submit action allows you to seamlessly connect your Adaptive Form with a Microsoft&reg; SharePoint storage. It sends the form data to the SharePoint storage of your choice after you submit the form. 
 
-AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.
+AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/aem-forms-submit-action.md)  article.
 
 ## Advantages
 
