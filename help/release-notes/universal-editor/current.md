@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2025.05.21 Release Notes
-description: These are the release notes for the 2025.05.21 release of the Universal Editor.
+title: Universal Editor 2025.06.19 Release Notes
+description: These are the release notes for the 2025.06.19 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.05.21 Release Notes {#release-notes}
+# Universal Editor 2025.06.19 Release Notes {#release-notes}
 
-These are the release notes for the 21 May 2025 release of the Universal Editor.
+These are the release notes for the 19 June 2025 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -16,11 +16,6 @@ These are the release notes for the 21 May 2025 release of the Universal Editor.
 
 ## What's New {#what-is-new}
 
-* **Disable open page button** - The open page button [can now be disabled.](/help/implementing/universal-editor/customizing.md#open-page)
-* **Access properties from content tree** - [When you double-click an entry in the content tree,](/help/sites-cloud/authoring/universal-editor/navigation.md) the associated properties will automatically open in the side panel.
 
 ## Other Improvements {#other-improvements}
 
-* References that are already published are now unselected by default in the publish dialog, to prevent re-publishing them.
-* Loading of extensions has been improved.
-* Exceptions raised by extensions are now handled better to not impact the editor.
