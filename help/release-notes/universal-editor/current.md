@@ -27,10 +27,12 @@ For a chance to test some upcoming features, be a part of Adobe's early adopter 
 
 ### **Undo/Redo** {#undo-redo}
 
-* Undo and redo is now available to Universal Editor content authors.
+Undo and redo is now available to Universal Editor content authors.
+
 * This includes edits done in context, edits done via the Properties panel, as well as adding (or duplicating), moving, and deleting blocks.
 * Undo and redo is limited to the current browser session.
-* Please reach out to Adobe if you wish to test this new feature and share your feedback ahead of general availability.
+
+If you are interested in testing this new feature and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 
 
 ## Other Improvements {#other-improvements}
 
