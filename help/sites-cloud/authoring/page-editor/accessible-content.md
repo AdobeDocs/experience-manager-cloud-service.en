@@ -197,8 +197,11 @@ If you must use open captions, embed the text into the video track. This can be 
 
 * [Understanding Success Criteria 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [How to Meet Success Criteria 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
+
+<!--
 * [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/).
 * [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
+-->
 
 ### Audio Description or Media Alternative (Prerecorded) (1.2.3) {#audio-description-or-media-alternative-prerecorded}
 
