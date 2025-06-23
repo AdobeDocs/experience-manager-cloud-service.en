@@ -83,8 +83,9 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * FORMS-14309 - Forms Service APIs : Extract data Response Code Rectification
 * FORMS-19047 - Translations Missing After Publishing an Adaptive Form on AEM Forms on SP22
 * FORMS-19234 - Unable to use timeline feature of PDFs in AEM forms
-
-
+* CQ-4359866 - LanguageUtils class now support unit test without adding additional dependency
+* CQ-4359826 - Resolves inconsistent status in the content fragment reference panel
+* CQ-4359756 - Translation Rules now includes filter properties at component level
 
 ### Known Issues {#known-issues-21331}
 
