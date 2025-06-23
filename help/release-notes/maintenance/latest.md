@@ -86,6 +86,15 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * CQ-4359826 - Resolves inconsistent status in the content fragment reference panel
 * CQ-4359756 - Translation Rules now includes filter properties at component level
 * SITES-31467 - js-errors from contexthub.authoring-hook.js in the page editor
+* SITES-24708 - Filters Rail functionality breaks when zoom is increased to 400%
+* SITES-24668 - References Rail functionality breaks when zoom is increased to 400%
+* SITES-25235 - Filter Rail content loading message is not announced by screen reader
+* SITES-24492 - ARIA tablist has no accessible name
+* SITES-24678 - References Rail status message is not announced by screen reader
+* SITES-25254 - Horizontal scroll bar appears in Carousel Modal when content is when viewed at 320px
+* SITES-30660 - ADA Compliance Issue with Custom AEM Component
+* SITES-26890 - While using Keyboard, Scope "Table headers" keyboard focus is not visible in Manage Publication page
+
 
 ### Known Issues {#known-issues-21331}
 
