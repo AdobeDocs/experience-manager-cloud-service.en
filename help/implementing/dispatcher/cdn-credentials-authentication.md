@@ -114,23 +114,23 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-H
 
 After successfully testing, the additional condition can be removed and the configuration redeployed.
 
-### Migrating from legacy BYOCDN to self serve BYOCDN {#migrating-legacy}
+### Migration process if Adobe Support previously generated the `X-AEM-Edge-Key` HTTP Header value {#migrating-legacy}
 
 >[!NOTE]
 >Before proceeding with the migration, schedule a test migration on the stage environment to verify the strategy.
 
 >[!WARNING]
-> Do not change the key of in the customer-managed CDN until step 4.
+> Do not change the key in the customer-managed CDN until step 4.
 
-To migrate from legacy BYOCDN to self-serve BYOCDN, follow these steps to ensure a smooth transition without downtime:
+Previously, the process for integrating with a customer-managed CDN involved customers requesting an X-AEM-Edge-Key HTTP Header value from Adobe Support, rather than defining the value on their own. In order to migrate to the newer self-serve approach where you define your own edge key values, follow these steps to ensure a smooth transition without downtime:
 
 1. Configure the CDN configuration with both the new and old (Adobe-defined) secrets specified as `edgeKey1` and `edgeKey2` in the CDN configuration. This is a variation of the [rotating secrets](/help/implementing/dispatcher/cdn-credentials-authentication.md#rotating-secrets) documentation.
 
 2. Deploy the secrets and the CDN configuration. At this point, the legacy BYOCDN is still active.
 
-3. Contact Adobe Support to set the `disable_legacy_byocdn` property in the Fastly configuration. The new BYOCDN will work because the old key is still configured in the self-serve configuration.
+3. Contact Adobe Support, requesting that Adobe switches over to use the self-serve configuration, specifying that you have already deployed it.
 
-4. Switch the customer-managed CDN to use the new key. The new key will work because it's configured in the CDN configuration.
+4. Once Adobe confirms that it has performed that action, configure your customer-managed CDN to use the new, customer-defined key for the `X-AEM-Edge-Key` HTTP Header value.
 
 5. Remove the old key from the CDN configuration and deploy the configuration pipeline again.
 
