@@ -75,9 +75,9 @@ After importing the metadata schema forms from [!DNL Touch UI] to [!DNL Assets V
 1. Navigate to any of the associated folders of the imported metadata form.
 1. Navigate to an [asset's details page](/help/assets/navigate-assets-view.md#preview-assets) and verify that the supported metadata components, component fields, and field values are synced  from [!DNL Touch UI]. See [Metadata schemas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas) for more information about metadata components, component fields, and the field values.
     
->[!NOTE]
->
-> Any changes you make to the metadata fields in [!DNL Assets View] syncs back to the metadata form in [!DNL Touch UI] in real time. However, changes made to the schema forms in [!DNL Touch UI] are not synced to the metada form in [!DNL Assets View].
+   >[!NOTE]
+   >
+   > Any changes you make to the metadata fields in [!DNL Assets View] syncs back to the metadata form in [!DNL Touch UI] in real time. However, changes made to the schema forms in [!DNL Touch UI] are not synced to the metada form in [!DNL Assets View].
 
 <!--   
 * Open another tab in your browser and navigate to Touch UI and access the **[!UICONTROL Metadata Schema Forms]** page  --> 
