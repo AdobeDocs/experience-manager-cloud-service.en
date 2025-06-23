@@ -16,6 +16,27 @@ These are the release notes for the 19 June 2025 release of the Universal Editor
 
 ## What's New {#what-is-new}
 
+* **Support for multi-fields in the Properties Rail** - 
+The container component can now be used to create multi-field properties.
+* **Support for nested properties** - 
+* **Resizable right panel** - The side panel can now be resized to better account for longer content displayed in the side panel.
+
+## Early Adopter Features {#early-adopter}
+
+For a chance to test some upcoming features, be a part of Adobe's early adopter program.
+
+### **Undo/Redo** {#undo-redo}
+
+* Undo and redo is now available to Universal Editor content authors.
+* This includes edits done in context, edits done via the Properties panel, as well as adding (or duplicating), moving, and deleting blocks.
+* Undo and redo is limited to the current browser session.
+* Please reach out to Adobe if you wish to test this new feature and share your feedback ahead of general availability.
 
 ## Other Improvements {#other-improvements}
 
+* Resource key collision errors when moving blocks between containers were fixed.
+* An issue was fixed that made duplicating the last block of a container fail.
+* The Add action drop-down now only lists components that have a suitable plugin defined in the `component-definition.json` file.
+* Modification date used by the publish dialog was fixed.
+* MSM inheritance behavior for child nodes was fixed.
+* `fetchUrl` for moving blocks across containers was fixed.
