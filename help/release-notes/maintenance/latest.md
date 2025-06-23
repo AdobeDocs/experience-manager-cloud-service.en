@@ -18,11 +18,19 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 
 ### Enhancements {#enhancements-21331}
 
-None.
+* SITES-27775 - Optimized reference search during publication (metadata lazy loading)
+* SITES-30885 - Optimized JSON processing in persisted queries
 
 ### Fixed Issues {#fixed-issues-21331}
 
-None.
+* SITES-30752 - Do not use `If-modified-since`/`last-modified` headers when generating persisted query response.
+* SITES-30353 - GraphQL DataFetchingExceptions for “src” Field in AEM Content Fragments
+* SITES-30333 - Read asset metadata from jcr to avoid xmp parsing problems
+* SITES-30140 - Dual window issue when creating content fragment reference
+* SITES-29748 - Correct renderconditions to show managepublication/quickpublish actions inside the CF editor
+* SITES-15452 - Unique CF elements should not be checked against their copies in the launch
+* SITES-31987 - Do not show previewURLs for Content Fragments when publishing them to Preview
+
 
 ### Known Issues {#known-issues-21331}
 
