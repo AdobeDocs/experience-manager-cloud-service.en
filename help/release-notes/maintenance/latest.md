@@ -21,6 +21,15 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * SITES-27775 - Optimized reference search during publication (metadata lazy loading)
 * SITES-30885 - Optimized JSON processing in persisted queries
 * SITES-27486 - Universal Editor - AEM Integration
+* SITES-31472 - Delete Launch can cause the repository to pause if the launch is massive
+* SITES-32175 - Allow intermediary commits for both Live Copy creation and MSM Page rollout
+* SITES-28683 - Allow MSM LiveRelationship searches to skip advanced status
+* SITES-10575 - "MSM Blueprint Bloomfilter Loader" tries to load >100000 rows
+* SITES-14542 - Renaming/moving a live copy source page should trigger publishing the renamed/moved live copy page in case it was perviously published
+* SITES-31005 - Enhance Rollout Job UI to show the progress
+* SITES-31020 - Enhance Create Live Copy Job UI to show the progress
+* SITES-25976 - Links inside Experience Fragments not adapting after MSM rollout
+
 
 ### Fixed Issues {#fixed-issues-21331}
 
@@ -37,6 +46,14 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * SITES-31676 - Authoring or Deleting components leaves a blank space at the bottom of the Page
 * SITES-31857 - CF creation fails in folders with single quotes
 * SITES-24697 - Loading state of Image model is not announced by the screen reader
+* SITES-31272 - Not able to create Assets language copy via PageManager.copy
+* SITES-30947 - Null pointer exception due to missing "behavior" property on blueprint during rollout
+* SITES-31387 - JavaScript error "ns.ui.alert is not a function" when re-enabling ghost component inheritance
+* SITES-29075 - Live copy overview not working for high volume websites
+* SITES-32095 - Auto-Refresh Fails on afterchilddelete Event Listener in Live Copy
+* SITES-30877 - Incorrect Child Page Rollout Status
+* SITES-30899 - Rollout “Later” option allows continuing with no date selected
+
 
 ### Known Issues {#known-issues-21331}
 
