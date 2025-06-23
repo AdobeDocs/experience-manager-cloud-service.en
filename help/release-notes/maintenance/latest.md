@@ -35,6 +35,12 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * SITES-27792 - Edge Delivery with Universal Editor: Add dedicated Edge Delivery Service Configuration template
 * SITES-23518 - Edge Delivery with Universal Editor: Add support for Edge Delivery specific asset renditions
 * SITES-27782 - Edge Delivery with Universal Editor: Add specific publisher-subscriber implementation to publish content to Edge Delivery (early access)
+* FORMS-19336 - Search added in Data Source Tree in AF editor 
+* FORMS-19125 - Support Auto Fragment Mapping in AF editor
+* FORMS-19417 - Support of radio buttons in Hierarchy View
+* FORMS-16458 - UI for choosing font properties(typeface)
+* FORMS-19603 - Support master page and desgin page both in Rule-editor
+* FORMS-17707 - AEP connector doesn't work for AEP platform stage
 
 
 
@@ -67,6 +73,16 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * SITES-32237 - Edge Delivery with Universal Editor: Fix rendering of empty / malformed text components
 * SITES-30377 - Edge Delivery with Universal Editor: Sanitize org- and sitenames
 * SITES-30695 - Edge Delivery with Universal Editor: Increase ranking of rewriter pipeline to not interfere with custom code
+* FORMS-19628 - In Auto Generated DOR, excluding nested panel title also hides root panel title
+* FORMS-18526 - When rule with multiple fields in conditions is copied, fixed field does not change
+* FORMS-18977 - DOR service is not passing Title of the Document
+* FORMS-19651 - Fix rule when button clicked is used in binary condition and also same button is used in then statement
+* FORMS-19808 - FormsPortal - Drafts cannot be pulled when lazy loading is enabled
+* FORMS-19887 - Access property not working in HTML5 Preview
+* FORMS-13990 - Forms Service APIs: Document Generation : data field when left empty after being selected gives 200 when expected is 400  
+* FORMS-14309 - Forms Service APIs : Extract data Response Code Rectification
+* FORMS-19047 - Translations Missing After Publishing an Adaptive Form on AEM Forms on SP22
+* FORMS-19234 - Unable to use timeline feature of PDFs in AEM forms
 
 
 
