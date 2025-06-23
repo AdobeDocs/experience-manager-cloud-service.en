@@ -124,7 +124,7 @@ After successfully testing, the additional condition can be removed and the conf
 
 Previously, the process for integrating with a customer-managed CDN involved customers requesting an X-AEM-Edge-Key HTTP Header value from Adobe Support, rather than defining the value on their own. In order to migrate to the newer self-serve approach where you define your own edge key values, follow these steps to ensure a smooth transition without downtime:
 
-1. Configure the CDN configuration with both the new and old (Adobe-defined) secrets specified as `edgeKey1` and `edgeKey2` in the CDN configuration. This is a variation of the [rotating secrets](/help/implementing/dispatcher/cdn-credentials-authentication.md#rotating-secrets) documentation.
+1. Configure the CDN configuration with both the new (customer-generated) and old (Adobe-generated) secrets specified as `edgeKey1` and `edgeKey2`. This is a variation of the [rotating secrets](/help/implementing/dispatcher/cdn-credentials-authentication.md#rotating-secrets) documentation.
 
 2. Deploy the secrets and the CDN configuration. At this point, the legacy BYOCDN is still active.
 
