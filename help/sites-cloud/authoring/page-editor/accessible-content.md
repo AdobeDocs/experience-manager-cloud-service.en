@@ -178,7 +178,7 @@ Inserting multimedia into your AEM web pages is similar to inserting an image. H
 
 #### Purpose - Captions (Prerecorded) (1.2.2) {#purpose-captions-prerecorded}
 
-People who are Deaf or hard of hearing are unable or have great difficulty accessing audio content. Captions are text equivalents for spoken and non-spoken audio, shown on screen at the appropriate time during the video. They allow people who cannot hear the audio to understand what is happening.
+People who are deaf or hard of hearing are unable or have great difficulty accessing audio content. Captions are text equivalents for spoken and non-spoken audio, shown on screen at the appropriate time during the video. They allow people who cannot hear the audio to understand what is happening.
 
 #### How to Meet - Captions (Prerecorded) (1.2.2) {#how-to-meet-captions-prerecorded}
 
