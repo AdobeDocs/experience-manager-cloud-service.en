@@ -21,7 +21,7 @@ These are the release notes for the 19 June 2025 release of the Universal Editor
 * **Support for nested properties** - The [`name` field](/help/implementing/universal-editor/field-types.md#nesting) now supports paths to enable property nesting.
 * **Resizable right panel** - The side panel can now be resized to better account for longer content displayed in the side panel.
 
-## Early Adopter Features {#early-adopter}
+## Early Adoption Features {#early-adopter}
 
 For a chance to test some upcoming features, be a part of Adobe's early adopter program.
 
