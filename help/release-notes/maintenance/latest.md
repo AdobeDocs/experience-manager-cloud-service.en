@@ -41,8 +41,7 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * FORMS-16458 - UI for choosing font properties(typeface)
 * FORMS-19603 - Support master page and desgin page both in Rule-editor
 * FORMS-17707 - AEP connector doesn't work for AEP platform stage
-
-
+* SITES-31677 - Custom workspace support AEM Content fragment export to Target
 
 ### Fixed Issues {#fixed-issues-21331}
 
@@ -86,6 +85,7 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * CQ-4359866 - LanguageUtils class now support unit test without adding additional dependency
 * CQ-4359826 - Resolves inconsistent status in the content fragment reference panel
 * CQ-4359756 - Translation Rules now includes filter properties at component level
+* SITES-31467 - js-errors from contexthub.authoring-hook.js in the page editor
 
 ### Known Issues {#known-issues-21331}
 
