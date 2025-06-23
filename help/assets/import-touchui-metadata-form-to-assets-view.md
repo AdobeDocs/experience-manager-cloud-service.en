@@ -61,7 +61,7 @@ As an administrator, execute the following steps to import the metadata form sch
    > 
    > In the **[!UICONTROL Import Metadata Forms]** table a **[!UICONTROL Duplicate]** label next to a form name shows that the form is already applied to a folder in [!DNL Assets View]. Importing that duplicate form overrides the existing one applied to the folder. To avoid this override, rename the form before importing it. Click the form name to rename it.
 
-1. Select one or more forms in the table and click **[!UICONTROL Start Import]** to import them into [!DNL Assets View]. The [!DNL Assets View] **[!UICONTROL Metadata Forms]** page opens and displays both recently imported and existing forms in [!DNL Assets View]. You can do the following on this page:
+1. Select one or more forms in the table and click **[!UICONTROL Start Import]** to import them into [!DNL Assets View]. The [!DNL Assets View] **[!UICONTROL Metadata Forms]** page opens and displays both recently imported and existing forms available in [!DNL Assets View]. You can do the following on this page:
    * Click the column header to sort the table by [!UICONTROL Name], [!UICONTROL Modified], or [!UICONTROL Author]. 
    * Select the imported form and click **[!UICONTROL Remove from folder(s)]**, then verify the folder name in the folder path to confirm that the folder is correctly ported.
    * Select the imported form and click **[!UICONTROL Edit]** to view all the supported configurations of the metadata form. See [Metadata schemas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas) for more information about the metadata forms, their components, and fields.
