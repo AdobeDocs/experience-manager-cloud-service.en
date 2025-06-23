@@ -17,8 +17,8 @@ These are the release notes for the 19 June 2025 release of the Universal Editor
 ## What's New {#what-is-new}
 
 * **Support for multi-fields in the Properties Rail** - 
-The container component can now be used to create multi-field properties.
-* **Support for nested properties** - 
+[The container component](/help/implementing/universal-editor/field-types.md#container) can now be used to create multi-field properties.
+* **Support for nested properties** - The [`name` field](/help/implementing/universal-editor/field-types.md#nesting) now supports paths to enable property nesting.
 * **Resizable right panel** - The side panel can now be resized to better account for longer content displayed in the side panel.
 
 ## Early Adopter Features {#early-adopter}
