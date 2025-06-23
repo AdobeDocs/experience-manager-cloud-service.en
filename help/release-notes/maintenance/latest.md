@@ -29,6 +29,13 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * SITES-31005 - Enhance Rollout Job UI to show the progress
 * SITES-31020 - Enhance Create Live Copy Job UI to show the progress
 * SITES-25976 - Links inside Experience Fragments not adapting after MSM rollout
+* SITES-23499 - Edge Delivery with Universal Editor: Add support for multiple fields to be used for block options
+* SITES-30328 - Edge Delivery with Universal Editor: Add support to preview from Sidekick
+* SITES-19754 - Edge Delivery with Universal Editor: Add human readable error message when the integration has issues
+* SITES-27792 - Edge Delivery with Universal Editor: Add dedicated Edge Delivery Service Configuration template
+* SITES-23518 - Edge Delivery with Universal Editor: Add support for Edge Delivery specific asset renditions
+* SITES-27782 - Edge Delivery with Universal Editor: Add specific publisher-subscriber implementation to publish content to Edge Delivery (early access)
+
 
 
 ### Fixed Issues {#fixed-issues-21331}
@@ -53,6 +60,14 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * SITES-32095 - Auto-Refresh Fails on afterchilddelete Event Listener in Live Copy
 * SITES-30877 - Incorrect Child Page Rollout Status
 * SITES-30899 - Rollout “Later” option allows continuing with no date selected
+* SITES-30386 - Edge Delivery with Universal Editor: Remove duplicated, legact UE cors.js
+* SITES-25433 - Edge Delivery with Universal Editor: Fix rendering of page versions for multi-language site structures
+* SITES-29514 - Edge Delivery with Universal Editor: Make GitHub / Project URL mandatory when creating a new site
+* SITES-31621 - Edge Delivery with Universal Editor: Remove empty row from Spreadsheets that are live copies
+* SITES-32237 - Edge Delivery with Universal Editor: Fix rendering of empty / malformed text components
+* SITES-30377 - Edge Delivery with Universal Editor: Sanitize org- and sitenames
+* SITES-30695 - Edge Delivery with Universal Editor: Increase ranking of rewriter pipeline to not interfere with custom code
+
 
 
 ### Known Issues {#known-issues-21331}
