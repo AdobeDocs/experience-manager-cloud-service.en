@@ -20,6 +20,7 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 
 * SITES-27775 - Optimized reference search during publication (metadata lazy loading)
 * SITES-30885 - Optimized JSON processing in persisted queries
+* SITES-27486 - Universal Editor - AEM Integration
 
 ### Fixed Issues {#fixed-issues-21331}
 
@@ -30,7 +31,12 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * SITES-29748 - Correct renderconditions to show managepublication/quickpublish actions inside the CF editor
 * SITES-15452 - Unique CF elements should not be checked against their copies in the launch
 * SITES-31987 - Do not show previewURLs for Content Fragments when publishing them to Preview
-
+* SITES-30727 - Unable to Drag and Drop Components on Production Author Editor
+* SITES-30871 - DOM Updates after the afteredit listener is triggered
+* SITES-30634 - RTE Image Alt Text & Alignment Not Working Consistently
+* SITES-31676 - Authoring or Deleting components leaves a blank space at the bottom of the Page
+* SITES-31857 - CF creation fails in folders with single quotes
+* SITES-24697 - Loading state of Image model is not announced by the screen reader
 
 ### Known Issues {#known-issues-21331}
 
