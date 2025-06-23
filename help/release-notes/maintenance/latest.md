@@ -42,6 +42,17 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * FORMS-19603 - Support master page and desgin page both in Rule-editor
 * FORMS-17707 - AEP connector doesn't work for AEP platform stage
 * SITES-31677 - Custom workspace support AEM Content fragment export to Target
+* SITES-26271 - Content Fragments Rest API: switch to BFS Traversal for the GET Variation endpoint
+* SITES-30604 - Content Fragments Rest API: support Model Metadata Schema adoption in new UI
+* SITES-30088 - Content Fragments Rest API: CF Publish - skip retrieval of references when filterReferencesByStatus is empty
+* SITES-29986 - Content Fragments Rest API: support CF Model technical naming
+* SITES-30445 - Content Fragments Rest API: CF Model UI schema: add option to control initial state of collapsible
+* SITES-29930 - Content Fragments Rest API: add metrics for the Content Fragment Publish workflow
+* SITES-5358 - Content Fragments Rest API: Copy CFs with children 
+* SITES-25913 - Content Fragments Rest API: time-boxed validation of resources before starting the publish workflow
+* SITES-31782 - Content Fragments Rest API: add description for local assets 
+* SITES-30886 - Content Fragments Rest API: GET workflows for Content Fragment endpoint based on fragment uuids stored in workflow metadata
+* CQ-4356522 - WorkflowResourceStatusProvider optimisation
 
 ### Fixed Issues {#fixed-issues-21331}
 
@@ -94,7 +105,23 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * SITES-25254 - Horizontal scroll bar appears in Carousel Modal when content is when viewed at 320px
 * SITES-30660 - ADA Compliance Issue with Custom AEM Component
 * SITES-26890 - While using Keyboard, Scope "Table headers" keyboard focus is not visible in Manage Publication page
-
+* SITES-29987 - Content Fragments Rest API: Create & Edit Content Fragment Model don't support "previewUrlPattern"
+* SITES-30585 - Content Fragments Rest API: 'previewUrlPattern' not set on creation of CFMs with references
+* SITES-30583 - Content Fragments Rest API: Find & Replace tool changing all characters to lower case
+* SITES-31157 - Content Fragments Rest API: patch Fails is specific case
+* SITES-30260 - Content Fragments Rest API: error to update/delete CF using latest ETag
+* SITES-30327 - Content Fragments Rest API: publishing CFs without permissions creates separate workflows for each payload resource
+* SITES-31922 - Content Fragments Rest API: page references are not returned by the referencedBy endpoint
+* SITES-29745 - Content Fragments Rest API: implement hydration of references variations in BFS traversal
+* SITES-31327 - Content Fragments Rest API: remove ETag validation in GET Fragment request
+* SITES-31455 - Content Fragments Rest API: fix ETag Mismatch Between Endpoints for the same Content Fragment Model
+* SITES-31459 - Content Fragments Rest API: CF Live copy cannot be edited when there is a content-reference field
+* SITES-31594 - Content Fragments Rest API: extractMetadataSchemaFieldLabel error
+* SITES-24623 - Content Fragments Rest API: fix ETag mismatch between endpoints for the same CF
+* SITES-31888 - Content Fragments deletion fails to propagate to Preview
+* SITES-31822 - ClassicUI Checkbox label missing & Encoded HTML
+* SITES-29789 - Component link change issue on copied root pages
+* SITES-29691 - Unable to move page in specific launches-related case
 
 ### Known Issues {#known-issues-21331}
 
