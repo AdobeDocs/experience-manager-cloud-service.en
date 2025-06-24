@@ -121,6 +121,7 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * SITES-31922: Content Fragments Rest API: page references are not returned by the referencedBy endpoint.
 * SITES-31987: Do not show previewURLs for Content Fragments when publishing them to Preview.
 * SITES-32095: Auto-Refresh Fails on afterchilddelete Event Listener in Live Copy.
+* SITES-32237: Edge Delivery with Universal Editor: Fix rendering of empty/malformed text components.
 
 ### Known Issues {#known-issues-21331}
 
