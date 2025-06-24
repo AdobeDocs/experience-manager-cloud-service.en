@@ -91,7 +91,7 @@ All the selected assets are carried by `handleSelection` function that acts as a
 | Object | JSON |
 |---|---|
 |Host | `assetJsonObj["repo:repositoryId"]`|
-|API root | `/adobe/dynamicmedia/deliver` |
+|API root | `/adobe/assets` |
 |asset-id | `assetJsonObj["repo:assetId"]`|
 |seo-name |`assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")`|
 |format|`.jpg`|
@@ -99,16 +99,17 @@ All the selected assets are carried by `handleSelection` function that acts as a
 #### Approved assets delivery API specification {#approved-assets-delivery-api-specification}
 
 URL format:
-`https://<delivery-api-host>/adobe/assets/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+`https://<delivery-api-host>/adobe/assets/<asset-id>/as/<seo-name>.<format>?<image-modification-query-parameters>`
 
 Where,
 
 * Host is `https://delivery-pxxxxx-exxxxxx.adobe.com`
 * API root is `"/adobe/assets"`
 * `<asset-id>` is Asset identifier
+* `as` is the constant part of open API specification indicating what the asset be referred as
 * `<seo-name>` is name of an asset
 * `<format>` is the output format
-* `<image modification query parameters>` as support by the approved assets' delivery API specification
+* `<image modification query parameters>` as supported by the approved assets' delivery API specification
 
 #### Approved assets Original Rendition delivery API {#approved-assets-delivery-api}
 
@@ -162,7 +163,7 @@ In the above screenshot, the delivery URL of the PDF's original rendition needs 
     { 
         "height": 319, 
         "width": 319, 
-        "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?width=319&height=319", 
+        "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/DragDrop.2.jpg?width=319&height=319", 
         "type": "image/webp" 
     } 
     ```
@@ -193,12 +194,12 @@ After integration with the Adobe's Micro-Frontend Asset Selector, you can see th
 
 ![Dynamic Media with OpenAPI capabilities UI](assets/polaris-ui.png)
 
-* **A**: [Hide/Show panel](#hide-show-panel)
-* **B**: [Assets](#repository)
-* **C**: [Sorting](#sorting)
-* **D**: [Filters](#filters)
-* **E**: [Search bar](#search-bar)
-* **F**: [Sorting in ascending or descending order](#sorting)
+* **A**: Hide/Show panel
+* **B**: Assets
+* **C**: Sorting
+* **D**: Filters
+* **E**: Search bar
+* **F**: Sorting in ascending or descending order
 * **G**: Cancel Selection
 * **H**: Select single or multiple assets
 
