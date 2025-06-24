@@ -1,13 +1,13 @@
 ---
-title: Import [!DNL Touch UI] metadata schema forms to [!DNL Assets View]
-description: This article describes how to import the metadata schema form available in [!DNL Touch UI] to [!DNL Assets View]
+title: Import [!DNL Admin View] metadata forms to [!DNL Assets View]
+description: This article describes how to import the metadata form available in [!DNL Admin View] to [!DNL Assets View]
 contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
 ---
 
-# Import [!DNL Touch UI] metadata schema forms to [!DNL Assets View] {#import-touch-UI-metadata-forms-to-assets-view}
+# Import [!DNL Admin View] metadata forms to [!DNL Assets View] {#import-admin-view-metadata-forms-to-assets-view}
 
 <table>
     <tr>
@@ -46,39 +46,42 @@ exl-id: fb70a068-3ba3-4459-952d-79155d286c42
     </tr>
 </table>
 
-[!DNL Adobe Experience Manager Assets] lets you import metadata forms and their associated folders from [!DNL Touch UI] to [!DNL Assets View].
+[!DNL Adobe Experience Manager Assets] lets you import metadata forms and their associated folders from [!DNL Admin View] to [!DNL Assets View].
+
+## Before you begin{#prerequisites-for-importing-metadata-forms-to-assets-view}
+
+Ensure you have admin rights to import the metadata forms and their associated folders from [!DNL Admin View] to [!DNL Assets View].
 
 ## Import metadata forms to [!DNL Assets View]{#import-metadata-forms-to-assets-view}
 
-As an administrator, execute the following steps to import the metadata form schema available in [!DNL Touch UI] to [!DNL Assets View]:
+As an administrator, execute the following steps to import the metadata forms available in [!DNL Admin View] to [!DNL Assets View]:
 
 1. Navigate to the [!DNL Assets View] home page and click **[!UICONTROL  Metadata Forms]** under **[!UICONTROL Settings]** to open the **[!UICONTROL Metadata Forms]** page displaying the list of metadata forms available in [!DNL Assets View]. 
 ![metadata forms page](/help/assets/assets/metadata-forms-page.png)
-1. Select **[!UICONTROL Import]** to display the **[!UICONTROL Import metadata forms]** table, which includes a list of matadata forms available in [!DNL Touch UI]. The table row includes, metadata form name (under **[!UICONTROL Name]**), folders associated with that form (under **[!UICONTROL Folder Association]**) and an option to preview ![preview](/help/assets/assets/Preview.svg) the form before importing it. Click ![select folder](/help/assets/assets/add-to-folder.svg) to select a folder available in [!DNL Touch UI] to assign the corresponding metadata form to it. Click the red circle to view details about unsupported metadata components or mappings in the form that are excluded from the import.
-
-    ![Import Metadata Forms page](/help/assets/assets/import-metadata-forms-page.png)
+1. Select **[!UICONTROL Import]**, a processing message displays (for example, *Processing 2 metadata forms ... Please wait.*) while the import is in progress. After the processing is complete, the **[!UICONTROL Import metadata forms]** table displays, which includes a list of metadata forms available in [!DNL Admin View]. The table row includes, metadata form name (under **[!UICONTROL Name]**), folders associated with that form (under **[!UICONTROL Folder Association]**) and an option to preview ![preview](/help/assets/assets/Preview.svg) the form before importing it. 
+![Import Metadata Forms page](/help/assets/assets/import-metadata-forms-page.png)
     
-    >[!NOTE]
-    > 
-    > In the **[!UICONTROL Import Metadata Forms]** table a **[!UICONTROL Duplicate]** label next to a form name shows that the form is already applied to a folder in [!DNL Assets View]. Importing that duplicate form overrides the existing one applied to the folder. To avoid this override, rename the form before importing it. Click the form name to rename it.
-
-1. Select one or more forms in the table and click **[!UICONTROL Start Import]** to import the metadata forms and its associated folders into [!DNL Assets View]. The [!DNL Assets View] **[!UICONTROL Metadata Forms]** page opens and displays both recently imported and existing forms available in [!DNL Assets View]. You can do the following on this page:
+   >[!NOTE]
+   > 
+   > In the **[!UICONTROL Import Metadata Forms]**, table a **[!UICONTROL Duplicate]** label next to a form name shows that the form is already applied to a folder in [!DNL Assets View]. Importing that duplicate form overrides the existing one applied to the folder. To avoid this override, rename the form before importing it. Click the form name to rename it.
+1. Click ![select folder](/help/assets/assets/add-to-folder.svg) to select a folder to assign the corresponding metadata form to it. 
+1. Click the red circle to view details about unsupported metadata components or mappings in the form that are excluded from the import.
+![Import Metadata Forms page](/help/assets/assets/unsupported-import-elements.png)
+1. Select one or more forms in the table and click **[!UICONTROL Start Import]** to import the metadata forms and its associated folders into [!DNL Assets View]. A processing message displays (for example, *Importing 3 metadata forms. Please wait!*). Once the import is complete, a success message confirms that the forms are imported successfully and the **[!UICONTROL Metadata Forms]** page (of [!DNL Assets View]) displays both recently imported and existing forms available in [!DNL Assets View]. You can do the following on this page:
    * Click the column header to sort the table by [!UICONTROL Name], [!UICONTROL Modified], or [!UICONTROL Author]. 
    * Select the imported form and click **[!UICONTROL Remove from folder(s)]**, then verify the folder name in the folder path to confirm that the folder is correctly ported.
+   ![verify metadata forms page](/help/assets/assets/confirm-ported-folder.png)
    * Select the imported form and click **[!UICONTROL Edit]** to view all the supported configurations of the metadata form. See [Metadata schemas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas) for more information about the metadata forms, their components, and fields.
    ![verify metadata forms page](/help/assets/assets/verify-metadata-forms-page.png)
 
-## Verify the imported metadata schema forms{#Verify-the-imported-metadata-schema-forms}
+## Verify the imported metadata forms{#Verify-the-imported-metadata-forms}
 
-After importing the metadata schema forms from [!DNL Touch UI] to [!DNL Assets View], follow these steps to verify the import: 
+After importing the metadata forms from [!DNL Admin View] to [!DNL Assets View], follow these steps to verify the import: 
 
 1. Navigate to any of the associated folders of the imported metadata form.
-1. Navigate to an [asset's details page](/help/assets/navigate-assets-view.md#preview-assets) and verify that the supported metadata components, component fields, and field values are synced  from [!DNL Touch UI]. See [Metadata schemas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas) for more information about metadata components, component fields, and the field values.
+1. Navigate to an [asset's details page](/help/assets/navigate-assets-view.md#preview-assets) and verify that the supported metadata components, component fields, and field values are synced  from [!DNL Admin View]. See [Metadata schemas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas) for more information about metadata components, component fields, and the field values.
     
    >[!NOTE]
    >
-   > Any changes you make to the metadata fields in [!DNL Assets View] syncs back to the metadata form in [!DNL Touch UI] in real time. However, changes made to the schema forms in [!DNL Touch UI] are not synced to the metada form in [!DNL Assets View].
-
-<!--   
-* Open another tab in your browser and navigate to Touch UI and access the **[!UICONTROL Metadata Schema Forms]** page  --> 
+   > Any changes you make to the metadata fields in [!DNL Assets View] syncs back to the metadata form in [!DNL Admin View] in real-time. However, changes made to the metadata forms in [!DNL Admin View] are not synced to the metadata form in [!DNL Assets View].
 
