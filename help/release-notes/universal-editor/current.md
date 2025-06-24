@@ -39,6 +39,6 @@ If you are interested in testing this new feature and sharing your feedback, ple
 * Resource key collision errors when moving blocks between containers were fixed.
 * An issue was fixed that made duplicating the last block of a container fail.
 * The Add action drop-down now only lists components that have a suitable plugin defined in the `component-definition.json` file.
-* Modification date used by the publish dialog was fixed.
-* MSM inheritance behavior for child nodes was fixed.
-* `fetchUrl` for moving blocks across containers was fixed.
+* The modification date used by the publish dialog was fixed where in some circumstances pages weren't recognized as modified and weren't republished.
+* Fixed MSM inheritance behavior where editing a container cancelled inheritance for child nodes.
+* `fetchUrl` was fixed, restoring moving blocks from one container to another.
