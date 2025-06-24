@@ -367,6 +367,7 @@ user-guide-title: AEM as a Cloud Service
       + [Creating Pages](/help/sites-cloud/authoring/sites-console/creating-pages.md)
       + [Managing Pages](/help/sites-cloud/authoring/sites-console/managing-pages.md)
       + [Page Properties](/help/sites-cloud/authoring/sites-console/page-properties.md)
+      + [Editing Page Properties](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
       + [Previewing Pages](/help/sites-cloud/authoring/sites-console/previewing-content.md)
       + [Publishing Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
       + [Page Versions](/help/sites-cloud/authoring/sites-console/page-versions.md)
@@ -379,6 +380,7 @@ user-guide-title: AEM as a Cloud Service
       + [The Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md)
       + [Editor Side Panel](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
       + [Editing Pages](/help/sites-cloud/authoring/page-editor/edit-content.md)
+      + [Publishing Pages from the Page Editor](/help/sites-cloud/authoring/page-editor/publishing.md)
       + [Page Templates](/help/sites-cloud/authoring/page-editor/templates.md)
       + [Adding Page Annotations](/help/sites-cloud/authoring/page-editor/annotations.md)
       + [The Rich Text Editor](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
@@ -392,7 +394,7 @@ user-guide-title: AEM as a Cloud Service
     + Universal Editor {#universal-editor}
       + [Navigation](/help/sites-cloud/authoring/universal-editor/navigation.md)
       + [Authoring](/help/sites-cloud/authoring/universal-editor/authoring.md)
-      + [Publishing](/help/sites-cloud/authoring/universal-editor/publishing.md)
+      + [Publishing Pages from the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
       + [Inheritance](/help/sites-cloud/authoring/universal-editor/inheritance.md)
       + [Page Templates](/help/sites-cloud/authoring/universal-editor/templates.md)
     + Fragments {#fragments}
@@ -438,6 +440,7 @@ user-guide-title: AEM as a Cloud Service
       + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
       + [Delete Considerations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
       + [Analyzing Structure](/help/sites-cloud/administering/content-fragments/analysis.md)
+      + [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
       + [Assets in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
       + [Content Fragments with Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
       + [Content Fragment AJO External References Extension](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)

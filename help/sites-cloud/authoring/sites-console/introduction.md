@@ -232,7 +232,7 @@ The actions toolbar only appears when a resource is selected in the console. The
 * **Edit** - Depending on how the selected page was created, the **Edit** action will open the appropriate editor.
   * [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md) - For pages created with the AEM Page Editor
   * [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) - For pages created with the Universal Editor
-* [**Properties**](/help/sites-cloud/authoring/sites-console/page-properties.md) - Opens the page properties window
+* [**Properties**](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) - Opens the page properties window
 * [**Lock**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - Lock a page to prevent others from changing it
 * [**Copy**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Copy a page
 * [**Move**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - Move or rename a page
