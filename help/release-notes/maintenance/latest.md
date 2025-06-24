@@ -24,10 +24,10 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * FORMS-19125: Support Auto Fragment Mapping in AF editor.
 * FORMS-19336: Search added in Data Source Tree in AF editor.
 * FORMS-19417: Support of radio buttons in Hierarchy View.
-* FORMS-19603: Support master page and desgin page both in Rule-editor.
+* FORMS-19603: Support master page and design page both in Rule-editor.
 * SITES-10575: "MSM Blueprint Bloomfilter Loader" tries to load  more than 100000 rows.
 * SITES-14542: Renaming/moving a live copy source page should trigger publishing the renamed/moved live copy page in case it was previously published.
-* SITES-19754: Edge Delivery with Universal Editor: Add human readable error message when the integration has issues.
+* SITES-19754: Edge Delivery with Universal Editor: Add a human readable error message when the integration has issues.
 * SITES-23499: Edge Delivery with Universal Editor: Add support for multiple fields to be used for block options.
 * SITES-23518: Edge Delivery with Universal Editor: Add support for Edge Delivery specific asset renditions.
 * SITES-25913: Content Fragments Rest API: time-boxed validation of resources before starting the publish workflow.
@@ -42,7 +42,7 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * SITES-29986: Content Fragments Rest API: support CF Model technical naming.
 * SITES-30088: Content Fragments Rest API: CF Publish - skip retrieval of references when filterReferencesByStatus is empty.
 * SITES-30328: Edge Delivery with Universal Editor: Add support to preview from Sidekick.
-* SITES-30445: Content Fragments Rest API: CF Model UI schema: add option to control initial state of collapsible.
+* SITES-30445: Content Fragments Rest API: CF Model UI schema: add an option to control initial state of collapsible.
 * SITES-30604: Content Fragments Rest API: support Model Metadata Schema adoption in new UI.
 * SITES-30885: Optimized JSON processing in persisted queries.
 * SITES-30886: Content Fragments Rest API: GET workflows for Content Fragment endpoint based on fragment uuids stored in workflow metadata.
@@ -50,7 +50,7 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * SITES-31020: Enhance Create Live Copy Job UI to show the progress.
 * SITES-31472: Delete Launch can cause the repository to pause if the launch is massive.
 * SITES-31677: Custom workspace support AEM Content fragment export to Target.
-* SITES-31782: Content Fragments Rest API: add description for local assets.
+* SITES-31782: Content Fragments Rest API: add a description for local assets.
 * SITES-32175: Allow intermediary commits for both Live Copy creation and MSM Page rollout.
 * SITES-5358: Content Fragments Rest API: Copy CFs with children.
 
@@ -61,12 +61,12 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * CQ-4359866: LanguageUtils class now support unit test without adding additional dependency.
 * FORMS-13990: Forms Service APIs: Document Generation : data field when left empty after being selected gives 200 when expected is 400.
 * FORMS-14309: Forms Service APIs : Extract data Response Code Rectification.
-* FORMS-18526: When rule with multiple fields in conditions is copied, fixed field does not change.
+* FORMS-18526: When a rule with multiple fields in conditions is copied, fixed field does not change.
 * FORMS-18977: DOR service is not passing Title of the Document.
 * FORMS-19047: Translations Missing After Publishing an Adaptive Form on AEM Forms on SP22.
 * FORMS-19234: Unable to use timeline feature of PDFs in AEM forms.
 * FORMS-19628: In Auto Generated DOR, excluding nested panel title also hides root panel title.
-* FORMS-19651: Fix rule when button clicked is used in binary condition and also same button is used in then statement.
+* FORMS-19651: Fix rule when a button clicked is used in binary condition and also same button is used in then statement.
 * FORMS-19808: FormsPortal - Drafts cannot be pulled when lazy loading is enabled.
 * FORMS-19887: Access property not working in HTML5 Preview.
 * SITES-15452: Unique CF elements should not be checked against their copies in the launch.
@@ -91,19 +91,19 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * SITES-30260: Content Fragments Rest API: error to update/delete CF using latest ETag.
 * SITES-30327: Content Fragments Rest API: publishing CFs without permissions creates separate workflows for each payload resource.
 * SITES-30333: Read asset metadata from jcr to avoid xmp parsing problems.
-* SITES-30353: GraphQL DataFetchingExceptions for “src” Field in AEM Content Fragments.
+* SITES-30353: GraphQL DataFetchingExceptions for "src" Field in AEM Content Fragments.
 * SITES-30377: Edge Delivery with Universal Editor: Sanitize org- and sitenames.
 * SITES-30386: Edge Delivery with Universal Editor: Remove duplicated, legacy UE `cors.js`.
 * SITES-30583: Content Fragments Rest API: Find & Replace tool changing all characters to lower case.
 * SITES-30585: Content Fragments Rest API: `previewUrlPattern` not set on creation of CFMs with references.
 * SITES-30634: RTE Image Alt Text & Alignment Not Working Consistently.
 * SITES-30660: ADA Compliance Issue with Custom AEM Component.
-* SITES-30695: Edge Delivery with Universal Editor: Increase ranking of rewriter pipeline to not interfere with custom code.
+* SITES-30695: Edge Delivery with Universal Editor: Increase ranking of rewriter pipeline not to interfere with custom code.
 * SITES-30727: Unable to Drag and Drop Components on Production Author Editor.
 * SITES-30752: Do not use `If-modified-since`/`last-modified` headers when generating persisted query response.
 * SITES-30871: DOM Updates after the afteredit listener is triggered.
 * SITES-30877: Incorrect Child Page Rollout Status.
-* SITES-30899: Rollout “Later” option allows continuing with no date selected.
+* SITES-30899: Rollout "Later" option allows continuing with no date selected.
 * SITES-30947: Null pointer exception due to missing "behavior" property on blueprint during rollout.
 * SITES-31157: Content Fragments Rest API: patch Fails is specific case.
 * SITES-31272: Not able to create Assets language copy via PageManager.copy.
