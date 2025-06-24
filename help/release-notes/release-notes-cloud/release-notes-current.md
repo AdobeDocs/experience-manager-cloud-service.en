@@ -49,16 +49,16 @@ AEM Assets now uses [AI to automatically generate metadata, including Title, Des
 
 **Integration with Figma**
 
-AEM Assets integrates natively with Figma, which allows designers to directly access the assets stored in AEM Assets from within the Figma User Interface. You can place content managed in AEM Assets in the Figma canvas and then save new or edited content in AEM Assets repository.
+AEM Assets integrates natively with Figma, which allows designers to directly access the assets stored in AEM Assets from within the Figma User Interface. You can place content managed in AEM Assets in the Figma canvas and then save new or edited content in AEM Assets repository. To access the AEM Assets Connector available on the Figma Community page, click [here](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
 
-![Integration with Figma](/help/assets/assets/figma-integration.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3463828)
 
 
 ### New Features in Content Hub {#new-features-content-hub}
 
 **Attribute-based Access Control (ABAC)**
 
-Content Hub now allows you to apply rule-based restrictions to access assets. Asset permissions ensure governance and also makes sure that only the relevant assets are accessible to users.
+[Content Hub now allows you to apply rule-based restrictions to access assets](/help/assets/attribute-based-access-control.md). Asset permissions ensure governance and also makes sure that only the relevant assets are accessible to users.
 
 The asset restriction rules are based on metadata and if the conditions defined in the rule match the asset metadata, the asset gets displayed to the user groups.
 
@@ -72,21 +72,21 @@ Some of the key benefits of Attribute-based Access Control include:
 
 **UI Branding**
 
-Content Hub now allows administrators to customize the user interface with brand-specific elements, including banner images, banner titles and body text, as well as primary and secondary colors. These enhancements help ensure brand consistency, simplify user onboarding, and build trust.
+Content Hub now allows administrators to [customize the user interface with brand-specific elements](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub), including banner images, banner titles and body text, as well as primary and secondary colors. These enhancements help ensure brand consistency, simplify user onboarding, and build trust.
 
 ![UI Branding](/help/assets/assets/content-hub-ui-branding.png)
 
 **Public link sharing**
 
-Content Hub now supports generating shareable links to allow external users, without application access, to view asset metadata or download assets.
+Content Hub now supports [generating shareable links to allow external users](/help/assets/share-assets-content-hub.md##share-assets), without application access, to view asset metadata or download assets.
 
 ![UI Branding](/help/assets/assets/public-and-private-link.png)
 
 **Collections governance**
 
-Content Hub now lets you control access to collections during creation, ensuring only authorized users can view or manage grouped assets. It ensures improved security, better collaboration, organized asset management, and simplified governance.
+Content Hub now lets you [control access to collections during creation, ensuring only authorized users can view or manage grouped assets](/help/assets/collections-content-hub.md##create-collections). It ensures improved security, better collaboration, organized asset management, and simplified governance.
 
-![Collections governance](/help/assets/assets/collection-permissions.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
 >[!NOTE]
 >
@@ -94,11 +94,11 @@ Content Hub now lets you control access to collections during creation, ensuring
 
 **Download multiple assets as a ZIP**
 
-Content Hub now also allows you to download the selected assets and their renditions in a ZIP file and not as separate files simplifying file management for you.
+Content Hub now also allows you to [download the selected assets and their renditions in a ZIP file](/help/assets/download-assets-content-hub.md#download-asset-renditions) and not as separate files simplifying file management for you.
 
 **Dynamic Media renditions in Content Hub**
 
-Access all your Dynamic Media preset renditions and smart-crops for download, directly from within the Content Hub User Interface.
+Access all your [Dynamic Media preset renditions and smart-crops for download, directly from within the Content Hub User Interface](/help/assets/download-assets-content-hub.md#download-asset-renditions).
 
 ​![Dynamic Media renditions](/help/assets/assets/dm-renditions-content-hub.png)
 
@@ -106,9 +106,9 @@ Access all your Dynamic Media preset renditions and smart-crops for download, di
 
 **Dynamic Media native integration with AJO B2C​**
 
-Native integration of Experience Manager (AEM) Dynamic Media with Journey Optimizer (AJO) B2C, enabling marketers to easily embed AEM Dynamic Media assets (rendition and DM Template) into AJO content and deliver real-time updates and hyper-personalized experiences across channels.
+[Native integration of Experience Manager (AEM) Dynamic Media with Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), enabling marketers to easily embed AEM Dynamic Media assets (rendition and DM Template) into AJO content and deliver real-time updates and hyper-personalized experiences across channels.
 
-​![Dynamic Media renditions](/help/assets/assets/dm-ajo-integration.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -195,7 +195,7 @@ Please review and update any downstream processes that rely on custom logging be
 
 ### Default Purging of Older Versions and Audit Logs {#mt-defaults}
 
-Currently, content versions and audit logs have their associated *purge maintenance tasks* disabled by default and thus no data is removed unless explicitly configured via their respective OSGi properties. 
+Currently, content versions and audit logs have their associated *purge maintenance tasks* disabled by default and thus no data is removed unless explicitly configured. 
 
 However, to optimize repository performance, starting in **late June 2025**, purging will be enabled by default, following these guidelines:
 
@@ -210,7 +210,7 @@ However, to optimize repository performance, starting in **late June 2025**, pur
   * All versions within the past 7 years are retained.
   * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
 
-* You may modify these defaults through OSGi configuration overrides.
+* You may modify these defaults through YAML configuration, deployed using the config pipeline.
 
 #### Audit Log {#mt-auditlogs}
 
@@ -223,7 +223,7 @@ However, to optimize repository performance, starting in **late June 2025**, pur
   * All events are logged by default.
   * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
 
-* You may modify these defaults through OSGi configuration overrides.
+* You may modify these defaults through YAML configuration, deployed using the config pipeline.
 
 For more details, see the [Maintenance Tasks article](/help/operations/maintenance.md#defaults).
 

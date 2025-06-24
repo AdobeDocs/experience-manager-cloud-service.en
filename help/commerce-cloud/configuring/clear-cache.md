@@ -31,7 +31,7 @@ By default, the clear-cache feature is disabled in CIF configuration. To enable 
    
   * Also, make sure to give the corresponding pattern which suits your product, category and CMS page needs to be added to the above configuration file to remove it from the dispatcher cache.
 
-* To improve the SQL queries performance for finding the corresponding page related with product and category, add the corresponding index in your project (recommended). Fore more information, see [cifCacheInvalidationSupport/](link https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml).
+* To improve the SQL queries performance for finding the corresponding page related with product and category, add the corresponding index in your project (recommended). Fore more information, see [cifCacheInvalidationSupport](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml).
 
 ## Verifying Clear Cache Feature {#verify-clear-cache}
 
@@ -56,7 +56,7 @@ Now, to check whether the caches are getting cleared properly:
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-If everything goes well, the new changes are reflected in every instance. If changes are not reflected for the publish instance, please check in the private window for the corresponding PLP and PDP pages.
+If everything goes well, the new changes are reflected in every instance. If the changes are not visible on the publish instance, please try accessing the relevant PLP and PDP pages in a private/incognito browser window.
 
 >[!NOTE]
 >

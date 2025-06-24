@@ -8,6 +8,8 @@ solution: Experience Manager Sites
 ---
 # Creating a Site {#creating-site}
 
+{{traditional-aem}}
+
 Learn how to use AEM create a site using site templates to define the style and structure of your site.
 
 ## Overview {#overview}

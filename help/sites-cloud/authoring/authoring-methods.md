@@ -14,24 +14,14 @@ Learn the different ways you can author content in AEM, how they differ, and whe
 
 AEM as a Cloud Service offers several different editors to edit different types of content and support different authoring use cases.
 
-* [WYSIWYG Authoring using the Page Editor](#page-editor) - The Page Editor is the classic editor for authoring content in AEM, tried and trusted for thousands upon thousands of websites.
 * [WYSIWYG Authoring using the Universal Editor](#universal-editor) - The Universal Editor is a modern UI allowing you to author AEM content in a content-agnostic way and is available for AEM projects leveraging Edge Delivery Services.
+* [WYSIWYG Authoring using the Page Editor](#page-editor) - The Page Editor is the classic editor for authoring content in AEM, tried and trusted for thousands upon thousands of websites.
 * [Document-Based Authoring ](#document-based) - If you use Edge Delivery services, you can choose to author your content as conventional documents such as Microsoft Word or Google Docs entirely outside of AEM consoles.
 * [AEM Content Fragment Editor](#cf-editor) - This is the editor of choice for creating headless content.
 
 Because of the integrated and scalable nature of AEM, these methods can be use exclusively or in combination with each other depending on the needs of your project.
 
 Check with your system administrator or project manager if you are uncertain which authoring options are available to you or if you would like to explore new options for authoring your content.
-
-## WYSIWYG Authoring using the Page Editor {#page-editor}
-
-This is the classic editor for authoring content in AEM, tried and trusted for thousands upon thousands of websites.
-
-![The AEM page editor](assets/authoring-methods-page-editor.png)
-
-The AEM page editor presents an integrated environment for authoring your content using a what-you-see-is-what-you-get (WYSIWYG) interface. Drag-and-drop predefined components to build your page and edit content in-place.
-
-To learn more about the AEM page editor, please see the document [The AEM Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md).
 
 ## WYSIWYG Authoring using the Universal Editor {#universal-editor}
 
@@ -42,6 +32,16 @@ The Universal Editor is a modern UI that allows you to author AEM content in a c
 The Universal Editor is accessed through the Sites console within AEM, but offers the power and content-agnostic flexibility to author not only your AEM content, but also properly-instrumented external content.
 
 To learn more about the Universal Editor, please see the document [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md).
+
+## WYSIWYG Authoring using the Page Editor {#page-editor}
+
+This is the classic editor for authoring content in traditional AEM projects, tried and trusted for thousands upon thousands of websites.
+
+![The AEM page editor](assets/authoring-methods-page-editor.png)
+
+The AEM page editor presents an integrated environment for authoring your content using a what-you-see-is-what-you-get (WYSIWYG) interface. Drag-and-drop predefined components to build your page and edit content in-place.
+
+To learn more about the AEM page editor, please see the document [The AEM Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md).
 
 ## Document-Based Authoring  {#document-based}
 
