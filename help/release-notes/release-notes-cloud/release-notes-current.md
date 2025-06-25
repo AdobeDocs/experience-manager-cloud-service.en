@@ -40,74 +40,19 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**AI-Generated metadata**
+**Enhanced Metadata Form management in Assets View**
 
-AEM Assets now uses [AI to automatically generate metadata, including Title, Description, and Keywords](/help/assets/metadata-assets-view.md#ai-smart-tags). These AI-generated fields enhance metadata accuracy, making the assets easier to search, categorize, and recommend. This approach not only improves efficiency by eliminating manual tagging but also ensures consistency and scalability across large volumes of digital content.
+You can now import metadata forms from Admin view directly into Assets view. Any updates made to these forms in Assets view automatically reflect in Admin view, ensuring consistency across both experiences. This capability supports a seamless transition to the new Assets view while maintaining continuity with your existing metadata configurations.
 
-![AI generated metadata](/help/assets/assets/enhanced-smart-tags.png)
-
-**Integration with Figma**
-
-AEM Assets integrates natively with Figma, which allows designers to directly access the assets stored in AEM Assets from within the Figma User Interface. You can place content managed in AEM Assets in the Figma canvas and then save new or edited content in AEM Assets repository. To access the AEM Assets Connector available on the Figma Community page, click [here](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
-
->[!VIDEO](https://video.tv.adobe.com/v/3463828)
-
+![AI generated metadata](/help/assets/assets/import-metadata-forms-page.png)
 
 ### New Features in Content Hub {#new-features-content-hub}
-
-**Attribute-based Access Control (ABAC)**
-
-[Content Hub now allows you to apply rule-based restrictions to access assets](/help/assets/attribute-based-access-control.md). Asset permissions ensure governance and also makes sure that only the relevant assets are accessible to users.
-
-The asset restriction rules are based on metadata and if the conditions defined in the rule match the asset metadata, the asset gets displayed to the user groups.
-
-Some of the key benefits of Attribute-based Access Control include:
-
-* Eliminates the dependency on folder structure for permissions
-
-* Allows administrators to upload assets and retroactively determine permission structures
-
-* Reduces number of duplicates - improves asset integrity. Duplicates are needed in folder based permissions when same assets are shared with different groups.
-
-**UI Branding**
-
-Content Hub now allows administrators to [customize the user interface with brand-specific elements](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub), including banner images, banner titles and body text, as well as primary and secondary colors. These enhancements help ensure brand consistency, simplify user onboarding, and build trust.
-
-![UI Branding](/help/assets/assets/content-hub-ui-branding.png)
-
-**Public link sharing**
-
-Content Hub now supports [generating shareable links to allow external users](/help/assets/share-assets-content-hub.md##share-assets), without application access, to view asset metadata or download assets.
-
-![UI Branding](/help/assets/assets/public-and-private-link.png)
 
 **Collections governance**
 
 Content Hub now lets you [control access to collections during creation, ensuring only authorized users can view or manage grouped assets](/help/assets/collections-content-hub.md##create-collections). It ensures improved security, better collaboration, organized asset management, and simplified governance.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
-
->[!NOTE]
->
->Collections governance is a limited availability feature. You can get it enabled  by creating a support ticket.
-
-**Download multiple assets as a ZIP**
-
-Content Hub now also allows you to [download the selected assets and their renditions in a ZIP file](/help/assets/download-assets-content-hub.md#download-asset-renditions) and not as separate files simplifying file management for you.
-
-**Dynamic Media renditions in Content Hub**
-
-Access all your [Dynamic Media preset renditions and smart-crops for download, directly from within the Content Hub User Interface](/help/assets/download-assets-content-hub.md#download-asset-renditions).
-
-​![Dynamic Media renditions](/help/assets/assets/dm-renditions-content-hub.png)
-
-### New Features in Dynamic Media {#new-features-dynamic-media}
-
-**Dynamic Media native integration with AJO B2C​**
-
-[Native integration of Experience Manager (AEM) Dynamic Media with Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), enabling marketers to easily embed AEM Dynamic Media assets (rendition and DM Template) into AJO content and deliver real-time updates and hyper-personalized experiences across channels.
-
->[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
