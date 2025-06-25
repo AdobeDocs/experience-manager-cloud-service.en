@@ -3,8 +3,8 @@ title: Integrate [!DNL AEM Assets] with [!DNL Figma].
 description: Learn to integrate [!DNL AEM Assets] with [!DNL Figma] to access and use your organization's assets within your [!DNL Figma] design workflow.
 hide: no
 role: User
+exl-id: 530561ca-497b-4331-a014-72c561e1ca84
 ---
-
 # Integrate [!DNL AEM Assets] with [!DNL Figma]{#integrate-aem-assets-with-figma}
 
 <table>
@@ -95,6 +95,4 @@ This integration currently has the following limitations:
 
 * For importing [!DNL AEM] assets into Figma, the supported formats are **JPEG**, **PNG**.
 * For exporting designs from [!DNL Figma] to [!DNL AEM Assets], the supported formats are **PNG**, **PDF**, **JPG**, **SVG**.
-
-
 

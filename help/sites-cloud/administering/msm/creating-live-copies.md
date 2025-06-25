@@ -206,7 +206,7 @@ To view the properties:
 
 ### Seeing the Live Copies of a Blueprint Page {#seeing-the-live-copies-of-a-blueprint-page}
 
-Blueprint pages (that are referenced in a blueprint configuration) provide you with a list of the Live Copy pages that use the current (blueprint) page as the source. Use this list to keep track of the Live Copies. The list appears on the **Blueprint** tab of the [page properties](/help/sites-cloud/authoring/sites-console/page-properties.md).
+Blueprint pages (that are referenced in a blueprint configuration) provide you with a list of the Live Copy pages that use the current (blueprint) page as the source. Use this list to keep track of the Live Copies. The list appears on the **Blueprint** tab of the [page properties.](/help/sites-cloud/authoring/sites-console/page-properties.md)
 
 ![Blueprint tab of page properties](../assets/live-copy-blueprint-tab.png)
 
