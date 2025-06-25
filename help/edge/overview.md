@@ -83,14 +83,6 @@ Adobe is committed to empowering you with the best community engagement and supp
 * Participate in the [Experience League Community](https://adobe.ly/3Q6kTKl) to ask questions, share feedback, initiate discussions, seek assistance from Adobe experts and AEM Advisors/Champs, and connect with like-minded individuals in real-time.
 * Join the [Discord channel](https://discord.gg/aem-live), a more casual platform for real-time interactions and quick idea exchanges.
 
-### How to Access Your Product Collaboration Channel {#collaboration-channel}
-
-Given the value of direct communication channel with users, all AEM Projects at launch establish a Slack channel for speed, critical updates, and scaled reporting on experience quality. You receive an invitation from Adobe to join a Slack channel specific to your organization.
-
-For more information, see the document [Using the Slack Bot](https://www.aem.live/docs/slack) for more details.
-
-You can engage with Adobe product teams via your provisioned product collaboration channel to answer questions on product use or best practices. There are no service level targets (SLTs) associated with the conversations via the product collaboration channel. 
-
 ### Logging a Support Ticket {#support-ticket}
 
 {{support-ticket}}
