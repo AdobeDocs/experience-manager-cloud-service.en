@@ -12,11 +12,13 @@ To create a communication document, perform the following steps:
 2. Navigate to **Forms > Forms & Documents**.
 3. Click the **Create** button and select **Interactive Communication**.
 
-![Find IC Docu](/help/)
+![Find IC Docu](/help/forms/interactive-communication/assets/find-ic-documnet.png)
 
 ## 2. Define Communication Document Properties
 
 When you click Interactive Communication, a configuration window appears where you can define key details of your communication document. This includes the following sections:
+
+![Find IC Docu](/help/forms/interactive-communication/assets/create-ic-document.png)
 
 1. Provide a **Title** as the display name visible to users and authors.
 2. Assign a unique **Name** for repository identification.
@@ -33,9 +35,13 @@ Once these fields are completed, click the **Create** button to start building y
 
 After clicking the Create button, a new window opens displaying the Interactive Communication Editor UI. This interface presents components and segments such as Design View, Master Pages, PDF Preview, Object Library, Fragments, and more, allowing you to visually build, customize, and preview your communication document with real-time data integration.
 
+![Find IC Docu](/help/forms/interactive-communication/assets/ic-ui.png)
+
 ## 4. Components and Segments
 
 These views help you visually design and structure your communication document with ease.
+
+![Find IC Docu](/help/forms/interactive-communication/assets/ic-component-and-segment.png)
 
 ### 4.1 Master Pages
 In Master Pages, you can define layout elements like headers, footers, watermarks, and logos that appear on every page of the communication. This ensures brand consistency and saves time by reusing common design components.
@@ -49,6 +55,8 @@ The PDF Preview lets you instantly see how your communication will appear as a f
 ## 5. Core Interface Elements
 
 These tools allow you to define structure, bind data, and manage component behavior in your communication document.
+
+![Find IC Docu](/help/forms/interactive-communication/assets/ic-core-interface-element.png)
 
 ### 5.1 Component Hierarchy
 This panel shows the tree structure of your document layout. You can manage the nesting of containers, forms, and elements, rename components, and rearrange them to maintain a logical flow.
