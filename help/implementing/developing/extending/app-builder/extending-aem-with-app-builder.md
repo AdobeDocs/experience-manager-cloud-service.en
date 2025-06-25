@@ -19,8 +19,6 @@ App Builder provides a way for customers to easily extend Adobe Experience Manag
 * Core Services Extensibility - Extend core application capabilities by extending the default behavior with custom features & business logic.
 * User Experience Extensibility - Extend core experience to support business requirements or build customer-specific digital properties, storefronts & back-office apps.
 
-App Builder has been available to enterprise customers and partners by way of Adobe's Developer Preview since Summer 2020. General availability (GA) of App Builder is scheduled for December 2021. Adobe welcomes developers to try out App Builder through the [Trial Program](https://developer.adobe.com/app-builder/trial/).
-
 >[!NOTE]
 >
 > For AEM 6.5 customers who want to use the App Builder, see [Extending Adobe Experience Manager 6.5 using Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
@@ -29,16 +27,16 @@ App Builder has been available to enterprise customers and partners by way of Ad
 
 Instead of an out-of-the-box solution, Adobe Developer App Builder provides a common, consistent, standardized development platform for extending Adobe Cloud solutions such as AEM including:
 
-* Adobe Developer Console — For custom microservice and extension development, letting developers build and manage projects while accessing all the tools and APIs needed so they can create plugins and integrations. 
-* Developer Tools — Open-source tools, SDKs, and libraries to allow developers to easily build custom extensions and integrations. Use React Spectrum (Adobe's UI toolkit) so you have one common user interface for all Adobe apps. 
-* Services — I/O Runtime for hosting infrastructure on Adobe's serverless platform, and I/O Events for event-based integrations. Adobe also provides out-of-the-box support for storing data and files. 
-* Adobe Experience Cloud — Developers can submit extensions and integrations to be published within their Experience Cloud Org. System admins can then review, manage, and approve these extensions. Once published, your custom App Builder extensions and tools can be found alongside other Adobe Experience Cloud apps.
+* Adobe Developer Console - For custom microservice and extension development, letting developers build and manage projects while accessing all the tools and APIs needed so they can create plugins and integrations. 
+* Developer Tools - Open-source tools, SDKs, and libraries to allow developers to easily build custom extensions and integrations. Use React Spectrum (Adobe's UI toolkit) so you have one common user interface for all Adobe apps. 
+* Services - I/O Runtime for hosting infrastructure on Adobe's serverless platform, and I/O Events for event-based integrations. Adobe also provides out-of-the-box support for storing data and files. 
+* Adobe Experience Cloud - Developers can submit extensions and integrations to be published within their Experience Cloud Org. System admins can then review, manage, and approve these extensions. Once published, your custom App Builder extensions and tools can be found alongside other Adobe Experience Cloud apps.
 
 The following diagram illustrates how a standard application built on App Builder uses these functionalities:
 
 ![Architecture](/help/implementing/developing/extending/assets/appbuilder-architecture.jpg)
 
-For more details about the App Builder architecture, have a look at [Architecture Overview](https://developer.adobe.com/app-builder/docs/guides/).
+For more details about the App Builder architecture, have a look at [Architecture Overview.](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture-overview)
 
 ## Get Started with App Builder {#additional-resources}
 

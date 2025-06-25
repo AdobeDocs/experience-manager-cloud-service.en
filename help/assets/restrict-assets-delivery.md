@@ -107,7 +107,7 @@ Similarly, for Assets view, if your asset is not based on the default metadata s
 
 ## Delivery of restricted assets {#delivery-restricted-assets}
 
-The delivery of restricted assets is based on successful authorization to access assets. The authorization is either through [IMS Bearer Tokens](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/) (application for requests initiated from [AEM Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)), or a secure-cookie (if you have custom identity providers set up on your AEM Publish/Preview services, and have set up the cookie creation and inclusion on the pages).
+The delivery of restricted assets is based on successful authorization to access assets. The authorization is either through [IMS Bearer Tokens](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/) (application for requests initiated from [AEM Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)), or a secure-cookie (if you have custom identity providers set up on your AEM Publish/Preview services, and have set up the cookie creation and inclusion on the pages).
 
 ### Delivery for AEM author or Asset Selector requests {#delivery-aem-author-asset-selector}
 

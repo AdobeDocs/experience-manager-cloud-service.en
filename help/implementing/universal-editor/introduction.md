@@ -43,10 +43,12 @@ The Universal Editor supports the following two primary AEM setups:
 The Universal Editor is supported by:
 
 * AEM as a Cloud Service (release `2023.8.13099` or higher)
-* AEM 6.5 (service pack 21 or 22 plus a feature pack)
+* [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
+  * Both on-premises and AMS hosting are supported.
+* [AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
   * Both on-premises and AMS hosting are supported.
 
-This documentation is for using the Universal Editor with AEM as a Cloud Service. For using the Universal Editor with AEM 6.5, [please see the AEM 6.5 documentation.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
+This documentation is for using the Universal Editor with AEM as a Cloud Service.
 
 ## Features {#features}
 
@@ -96,7 +98,7 @@ A marketing practitioner wants to create content that is tailored to the layout 
 As you explore the Universal Editor and move forward implementing it in your own projects, please keep the following limitations in mind.
 
 * No more than 25 AEM resources (Content Fragments, pages, Experience Fragments, Assets, etc.) should be references as instrumentation on a single page.
-* AEM as a Cloud Service and [AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) are the only supported AEM backends.
+* AEM as a Cloud Service, [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction), and [AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) are the only supported AEM backends.
 * Release `2023.8.13099` or higher is required for AEM as a Cloud Service.
 * Content authors must have their own individual Experience Cloud accounts.
 * As part of AEM, the Universal Editor [supports the same desktop browsers as AEM.](/help/overview/supported-platforms.md)
