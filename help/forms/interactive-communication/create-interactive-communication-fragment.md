@@ -5,8 +5,6 @@ A Communication Fragment allows users to create reusable, modular content blocks
 
 When you launch the Interactive Communication Editor, you can choose to create communication fragments that integrate seamlessly into various templates and documents. Guided steps will help you define layout, reusable logic, and styling for fragment reuse.
 
----
-
 ## 1. Create a Communication Fragment
 
 To create a communication fragment, perform the following steps:
@@ -14,8 +12,6 @@ To create a communication fragment, perform the following steps:
 1. Open your Adobe Experience Manager (AEM) environment.  
 2. Navigate to `Forms > Forms & Documents`.  
 3. Click the **Create** button and select **Interactive Communication Fragment**.
-
----
 
 ## 2. Define Communication Fragment Properties
 
@@ -32,13 +28,9 @@ When you click **Interactive Communication Fragment**, a configuration window ap
 
 Once these fields are completed, click the **Create** button to begin designing your reusable Communication Fragment.
 
----
-
 ## 3. Interactive Communication Fragment Editor UI
 
 After clicking the **Create** button, a new window opens displaying the **Interactive Communication Fragment Editor UI**. This interface provides access to components and segments such as **Design View**, **PDF Preview**, **Object Library**, **Fragments**, and more enabling you to visually build, configure, and preview your reusable content blocks with support for dynamic data integration.
-
----
 
 ## 4. Components and Segments
 
@@ -51,8 +43,6 @@ Use **Design View** to build the actual layout of your communication. Simply dra
 ### 4.2 PDF Preview
 
 The **PDF Preview** lets you instantly see how your communication will appear as a finalized PDF. It reflects all current data bindings and layout elements, helping you quickly identify and correct any formatting issues before publishing.
-
----
 
 ## 5. Core Interface Elements
 
@@ -77,8 +67,6 @@ The **Data Model** allows you to bind your communication fragment to XML or JSON
 ### 5.5 Data Binding
 
 This section enables you to link form fields to backend data sources, ensuring that user information is pre-filled automatically from connected systems. It enhances accuracy and reduces manual input.
-
----
 
 ## 6. Conclusion
 
