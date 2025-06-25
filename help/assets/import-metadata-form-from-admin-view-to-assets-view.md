@@ -64,6 +64,7 @@ As an administrator, execute the following steps to import the metadata forms av
    >[!NOTE]
    > 
    > In the **[!UICONTROL Import Metadata Forms]**, table a **[!UICONTROL Duplicate]** label next to a form name shows that the form is already applied to a folder in [!DNL Assets View]. Importing that duplicate form overrides the existing one applied to the folder. To avoid this override, rename the form before importing it. Click the form name to rename it.
+1. Click ![select folder](/help/assets/assets/x.svg) next to a folder name (under [!UICONTROL Folder Association]) to remove the metadata form from that folder.
 1. Click ![select folder](/help/assets/assets/add-to-folder.svg) to select a folder to assign the corresponding metadata form to it. 
 1. Click the red circle to view details about unsupported metadata components or mappings in the form that are excluded from the import.
 ![Import Metadata Forms page](/help/assets/assets/unsupported-import-elements.png)
@@ -71,7 +72,7 @@ As an administrator, execute the following steps to import the metadata forms av
    * Click the column header to sort the table by [!UICONTROL Name], [!UICONTROL Modified], or [!UICONTROL Author]. 
    * Select the imported form and click **[!UICONTROL Remove from folder(s)]**, then verify the folder name in the folder path to confirm that the folder is correctly ported.
    ![verify metadata forms page](/help/assets/assets/confirm-ported-folder.png)
-   * Select the imported form and click **[!UICONTROL Edit]** to view all the supported configurations of the metadata form. See [Metadata schemas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas) for more information about the metadata forms, their components, and fields.
+   * Select the imported form and click **[!UICONTROL Edit]** to view all the supported configurations of the metadata form. See [Setup Metadata Forms](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) for more information about the metadata forms, their components, and fields.
    ![verify metadata forms page](/help/assets/assets/verify-metadata-forms-page.png)
 
 ## Verify the imported metadata forms{#Verify-the-imported-metadata-forms}
@@ -79,7 +80,7 @@ As an administrator, execute the following steps to import the metadata forms av
 After importing the metadata forms from [!DNL Admin View] to [!DNL Assets View], follow these steps to verify the import: 
 
 1. Navigate to any of the associated folders of the imported metadata form.
-1. Navigate to an [asset's details page](/help/assets/navigate-assets-view.md#preview-assets) and verify that the supported metadata components, component fields, and field values are synced  from [!DNL Admin View]. See [Metadata schemas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas) for more information about metadata components, component fields, and the field values.
+1. Navigate to an [asset's details page](/help/assets/navigate-assets-view.md#preview-assets) and verify that the supported metadata components, component fields, and field values are synced  from [!DNL Admin View]. See [Metadata in Assets Essentials](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata) article for more information about metadata components, component fields, and the field values.
     
    >[!NOTE]
    >
