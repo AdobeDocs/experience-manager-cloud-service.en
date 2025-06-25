@@ -61,7 +61,7 @@ The Universal Editor is a what-you-see-is-what-you-get (WYSIWYG), customizable, 
 Another approach is document-based authoring where content gets managed as documents. Microsoft Word is a popular choice as many enterprises have SharePoint in place where the initial content gets created. No need to learn a new tool and publishing content diretly from SharePoint and Word removes the hassle of copy & paste content into AEM. Customers without SharePoint can also use Gdrive as an alternative.
 
 ## Operational Telemetry
-Adobe Experience Manager uses [Operational Telemetry](https://www.aem.live/developer/rum) to diagnose usage and performance of web sites running on Adobe Experience Manager. As a developer, you can use the RUM APIs to observe additional events about how your site is used.
+Adobe Experience Manager uses [Operational Telemetry](https://www.aem.live/docs/operational-telemetry) to gather operations data that is strictly necessary to discover and fix functional and performance issues on Adobe Experience Manager-powered sites. Operational Telemetry data can be used to diagnose performance issues, and to measure the effectiveness of experiments. Operational Telemetry preserves the privacy of visitors through [sampling](https://www.aem.live/docs/operational-telemetry#operational-telemetry-data-is-sampled) (only a small portion of all page views will be monitored) and []udicious exclusion of personally identifiable information](https://www.aem.live/docs/operational-telemetry#what-data-is-being-collected) (PII).
 
 ## Start exploring
 Get started using AEM authoring with the Universal Editor and Edge Delivery Services:
