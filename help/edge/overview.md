@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 # Edge Delivery Services Overview {#edge-delivery-services}
 
 ## What is Edge Delivery Services?
-Edge Delivery Services is a modern content delivery framework that reimagines how websites are built and delivered—optimized for speed, simplicity, and scalability. It is a core part of Adobe Experience Manager and enables faster digital experiences by pushing rendering and delivery closer to the user, at the edge of the network. However, it is **not** a replacement for a CDN, but it integrates seamlessly with your own CDN or the included Adobe-managed CDN.
+Edge Delivery Services is a modern content delivery framework that reimagines how websites are built and delivered—optimized for speed, simplicity, and scalability. It is a core part of Adobe Experience Manager and enables faster digital experiences by pushing rendering and delivery closer to the user, at the edge of the network. However, it is not a replacement for a CDN, but it integrates seamlessly with your own CDN or the included Adobe-managed CDN.
 
 >[!TIP]
 >
