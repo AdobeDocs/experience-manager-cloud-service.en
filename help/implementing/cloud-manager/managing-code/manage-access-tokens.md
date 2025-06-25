@@ -3,7 +3,7 @@ title: Manage Access Tokens of External Repositories in Cloud Manager
 description: Learn how to view, edit, and delete access tokens used for Bring Your Own Git in AEM Cloud Manager.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Early Adopter" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
+badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
 ---
 # Manage access tokens for external repositories {#manage-access-tokens}
@@ -16,7 +16,7 @@ See also [Add External Repositories in Cloud Manager](/help/implementing/cloud-m
 
 >[!NOTE]
 >
->The features described in this article are only available through the early adoption program. For more details and to sign up as an early adopter, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
+>The features described in this article are only available through the private beta program. For more details and to sign up for the private beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
 
 ## View access tokens {#view-access-tokens}
 
@@ -37,13 +37,11 @@ See also [Add External Repositories in Cloud Manager](/help/implementing/cloud-m
 ## Edit an access token {#edit-access-tokens}
 
 1. In the **Manage Access Tokens** dialog box, to the right of a token name, click ![Edit icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg).
-1. In the **Edit Access Token** dialog box, in the **Token Name** text field, update the token name.
-
-    The Access Token secret itself cannot be edited.
+1. In the **Edit Access Token** dialog box, update the **Token Name**, or the **Access Token** value, or both.
 
     ![Edit Access Token dialog box](/help/implementing/cloud-manager/managing-code/assets/access-tokens-edit.png)
 
-1. If the token is in use, a notification warns you that all associated repositories are automatically revalidated.
+1. If the **Access Token** is currently in use, a notification appears warning you that all associated repositories are automatically revalidated after the update.
 
 1. Click **Update** to save the changes.
 

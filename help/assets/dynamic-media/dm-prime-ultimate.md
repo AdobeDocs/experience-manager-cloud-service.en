@@ -12,7 +12,7 @@ Adobe Experience Manager as a Cloud Service enables you to access Dynamic Media 
 
 ## Dynamic Media Prime {#dynamic-media-prime}
 
-Dynamic Media Prime is an activation service for Experience Manager Assets, which offers [Dynamic Media with OpenAPI basic capabilities](/help/assets/dynamic-media-open-apis-overview.md) enabling organizations to integrate AEM Assets with Adobe or non-Adobe applications. It supports transformation (rotate, crop, flip, size, preferwebp, height, width, quality) and optimized delivery.
+Dynamic Media Prime is an activation service for Experience Manager Assets, which offers [Dynamic Media with OpenAPI basic capabilities](/help/assets/dynamic-media-open-apis-overview.md) enabling organizations to integrate AEM Assets with Adobe or non-Adobe applications. It supports transformation (rotate, crop, flip, height, width, quality) and optimized delivery.
 
 If you need Dynamic Media basic as well as advanced capabilities and access to Dynamic Media solution in AEM as a Cloud Service, see [Dynamic Media Ultimate](#dynamic-media-ultimate).
 
@@ -34,12 +34,12 @@ Some of the other key benefits of Dynamic Media Prime include:
 
 Dynamic Media Ultimate is an activation service for Experience Manager Assets, which includes [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) basic and advanced capabilities as well as [Dynamic Media solution in AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md). It enables organizations to generate and deliver multiple variations of rich content in real-time through its global, scalable, performance-optimized network.
 
-In addition to the Dynamic Media Prime features such as AEM Assets integration with Adobe or non-Adobe applications, transformation (rotate, crop, flip, size, preferwebp, height, width, quality), and optimized delivery, Dynamic Media Ultimate also offers:
+In addition to the Dynamic Media Prime features such as AEM Assets integration with Adobe or non-Adobe applications, transformation (rotate, crop, flip, height, width, quality), and optimized delivery, Dynamic Media Ultimate also offers:
 
 * [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) capabilities advanced features such as:
 
    * Secure delivery of assets, 
-   * [Smart Crop, Smart Imaging, Image Presets, and additional image modifiers](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/).
+   * [Smart Crop, Smart Imaging, Image Presets, and additional image modifiers](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
 
 * [Dynamic Media solution in AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md), which also includes the following key capabilities: 
    
