@@ -126,7 +126,7 @@ Previously, the process for integrating with a customer-managed CDN involved cus
 
 1. Configure the CDN configuration with both the new (customer-generated) and old (Adobe-generated) secrets specified as `edgeKey1` and `edgeKey2`. This is a variation of the [rotating secrets](/help/implementing/dispatcher/cdn-credentials-authentication.md#rotating-secrets) documentation.
 
-2. Deploy the secrets and the CDN configuration. At this point, the legacy BYOCDN is still active.
+2. Deploy the secrets and the self-serve CDN configuration. At this point in the process, the old Adobe-defined secret should still remain as the X-AEM-Edge-Key value passed by the customer-managed CDN.
 
 3. Contact Adobe Support, requesting that Adobe switches over to use the self-serve configuration, specifying that you have already deployed it.
 
