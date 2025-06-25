@@ -24,7 +24,6 @@ Enabling Adaptive Forms Core Components on AEM Forms as a Cloud Service, lets yo
 
 *   If your existing Cloud Service environment provides option to [create Core Components-based Adaptive Forms](creating-adaptive-form-core-components.md), Adaptive Forms Core Components and Headless Adaptive Forms are already enabled for your environment and you can serve Core Component based Adaptive Forms as headless forms to channels such as mobile, web, native apps, and services that require a headless representation of Adaptive Forms.
 
-
 ## Enable Adaptive Forms Core Components and Headless Adaptive Forms {#enable-headless-forms}
 
 Perform the following steps, in the listed order, to enable Adaptive Forms Core Components and Headless Adaptive Forms for an AEM Forms as a Cloud Service environment
@@ -366,6 +365,13 @@ To check that Adaptive Forms Core Components are enabled for your environment:
     ![locate the core-forms-components-af-core artifact in all/pom.xml](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
 
     If the dependencies exist, Adaptive Forms Core Components are enabled for your environment.
+
+### Why do Core Component-based forms fail to render in project?
+
+Core Component-based forms may fail to render due to a version mismatch between the Forms Core Components package and the version included in the project archetype. This issue typically occurs when the version specified in the project archetype is equal to or higher than the version bundled with the Forms Core Components package. To resolve this issue, do one of the following:
+
+* Use a lower version of the Forms Core Components package in the project archetype.
+* Remove the Forms Core Components dependency from the project archetype, as the required version is already included in the package.
 
 >[!MORELIKETHIS]
 >
