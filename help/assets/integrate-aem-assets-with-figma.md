@@ -95,3 +95,4 @@ This integration currently has the following limitations:
 
 * For importing [!DNL AEM] assets into Figma, the supported formats are **JPEG**, **PNG**.
 * For exporting designs from [!DNL Figma] to [!DNL AEM Assets], the supported formats are **PNG**, **PDF**, **JPG**, **SVG**.
+
