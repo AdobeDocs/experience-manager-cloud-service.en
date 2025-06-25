@@ -81,7 +81,7 @@ After importing the metadata forms from [!DNL Admin View] to [!DNL Assets View],
 
 1. Navigate to any of the associated folders of the imported metadata form.
 1. Navigate to an [asset's details page](/help/assets/navigate-assets-view.md#preview-assets) and verify that the supported metadata components, component fields, and field values are synced from [!DNL Admin View]. See [Metadata in Assets Essentials](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata) article for more information about metadata components, component fields, and the field values.
-    
+
    >[!NOTE]
    >
-   > In a metadata form available in [!DNL Assets View] or [!DNL Admin View], changes to the field values are automatically synced between the two interfaces. However, structural changes in the form, such as adding or removing components, fields, or other modifications, are not synced.
+   > In [[!DNL Assets View] details page](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) or [[!DNL Admin View] properties page](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/metadata-schemas), changes to the metadata property values are automatically synced between the two interfaces. However, structural changes in the form, such as adding or removing fields, or other modifications, are not synced.
