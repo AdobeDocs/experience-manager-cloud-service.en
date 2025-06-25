@@ -144,7 +144,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
             const container = document.getElementById('asset-selector');
 
             /// Use the PureJSSelectors in globals to render the AssetSelector/DestinationSelector component
-            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () => {
+            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () =>
                 const assetSelectorDialog = document.getElementById('asset-selector-dialog');
                 assetSelectorDialog.showModal();
             });
