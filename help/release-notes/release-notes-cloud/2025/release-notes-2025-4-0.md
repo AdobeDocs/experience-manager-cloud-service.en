@@ -29,7 +29,7 @@ You can find the latest maintenance release notes [here](/help/release-notes/mai
 
 ## Release Video {#release-video}
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.4.0 release:
+Have a look at the April 2025 Release Overview video for a summary of the features added in the 2025.4.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
