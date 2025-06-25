@@ -64,7 +64,7 @@ As an administrator, execute the following steps to import the metadata forms av
    >[!NOTE]
    > 
    > In the **[!UICONTROL Import Metadata Forms]**, table a **[!UICONTROL Duplicate]** label next to a form name shows that the form is already applied to a folder in [!DNL Assets View]. Importing that duplicate form overrides the existing one applied to the folder. To avoid this override, rename the form before importing it. Click the form name to rename it.
-1. Click ![select folder](/help/assets/assets/x.svg) next to a folder name (under [!UICONTROL Folder Association]) to remove the metadata form from that folder.
+1. Click ![select folder](/help/assets/assets/x.svg) next to a folder name (under [!UICONTROL Folder Association]) to remove the corresponding metadata form from that folder.
 1. Click ![select folder](/help/assets/assets/add-to-folder.svg) to select a folder to assign the corresponding metadata form to it. 
 1. Click the red circle to view details about unsupported metadata components or mappings in the form that are excluded from the import.
 ![Import Metadata Forms page](/help/assets/assets/unsupported-import-elements.png)
