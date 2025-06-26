@@ -91,7 +91,14 @@ The following table summarizes the available Content Hub user types, the privile
 
 ## Step 1: Enable Content Hub for Experience Manager Assets using Cloud Manager {#enable-content-hub}
 
-To access the Content Hub portal, administrators first need to enable Content Hub for Experience Manager Assets as a Cloud Service using Cloud Manager. Execute the following steps:
+
+To access the Content Hub portal, administrators first need to enable Content Hub for Experience Manager Assets as a Cloud Service using Cloud Manager. 
+
+### Permissions {#permissions-edit-program}
+
+You must have Business Owner role to edit programs in Cloud Manager. For more information, see [Edit Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+
+To enable Content Hub for Experience Manager Assets:
 
 1. Log on to Cloud Manager. Ensure that you select the right organization while logging in. The Cloud Manager lists all your programs.
 
