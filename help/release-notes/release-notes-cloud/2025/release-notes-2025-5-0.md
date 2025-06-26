@@ -51,7 +51,7 @@ AEM Assets integrates natively with Figma, which allows designers to directly ac
 
 **Attribute-based Access Control (ABAC)**
 
-[Content Hub now allows you to apply rule-based restrictions to access assets](/help/assets/attribute-based-access-control.md). Asset permissions ensure governance and also makes sure that only the relevant assets are accessible to users.
+[Content Hub now allows you to apply rule-based restrictions to access assets](/help/assets/attribute-based-access-control.md). Asset permissions ensure governance and also make sure that only the relevant assets are accessible to users.
 
 The asset restriction rules are based on metadata and if the conditions defined in the rule match the asset metadata, the asset gets displayed to the user groups.
 
@@ -229,7 +229,7 @@ Common use cases include:
 * Authenticating users with an identity provider before granting access to content
 * Personalizing content based on geolocation, device type, or user attributes
 * Acting as middleware between the CDN and your origin
-* Reformatting responses from third-party APIs (and perhaps aggegating multiple APIs responses) before delivering them to the browser
+* Reformatting responses from third-party APIs (and perhaps aggregating multiple APIs responses) before delivering them to the browser
 * Composing and serving server-rendered HTML at the edge using content stitched from various backends
 
 We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
