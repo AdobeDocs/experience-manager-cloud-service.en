@@ -128,7 +128,7 @@ Content Hub allows you to filter collections view to easily find exactly what yo
 
 To filter the collections view, go to **[!DNL Collections]** tab and navigate to Collections drop down. Choose among the following options:
     
-* **[!UICONTROL All Collections]:** Select this option to view all collections that are private and shared with you.
+* **[!UICONTROL All Collections]:** Select this option to view and edit all collections, including those that are private or shared with you.
 * **[!UICONTROL Only me]:** Select this option to view collections that are accessible to you.
 * **[!UICONTROL Anyone can view]:** This option lets you filter collections that are accessible to everyone but editable only by the creator.
 * **[!UICONTROL Anyone can edit]:** Select this option to filter collections that are both accessible and editable by everyone.
