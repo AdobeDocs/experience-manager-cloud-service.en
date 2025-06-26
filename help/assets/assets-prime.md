@@ -66,7 +66,7 @@ Assets as a Cloud Service Prime includes a lightweight DAM that enables you to p
 
    >[!NOTE]
    >
-   >Dynamic Media with OpenAPI capabilities, which provides you access to basic image modifiers like rotate, crop (manual only - no smart crop), flip, size, preferwebp, height, width, quality, format and adaptive video streaming, is also available with Assets Prime. Reach out to Adobe account team to learn more.
+   >Dynamic Media with OpenAPI capabilities, which provides you access to basic image modifiers like rotate, crop (manual only - no smart crop), flip, height, width, quality, format and adaptive video streaming, is also available with Assets Prime. Reach out to Adobe account team to learn more.
 
 1. [Create a new program](/help/journey-onboarding/create-program.md).
 
