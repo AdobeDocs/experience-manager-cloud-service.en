@@ -46,7 +46,7 @@ exl-id: fb70a068-3ba3-4459-952d-79155d286c42
     </tr>
 </table>
 
-[!DNL Adobe Experience Manager Assets] lets you import metadata forms and their associated folders from [!DNL Admin View] to [!DNL Assets View].
+[!DNL Adobe Experience Manager Assets] lets you import metadata forms and their folder associations from [!DNL Admin View] to [!DNL Assets View].
 
 ## Before you begin{#prerequisites-for-importing-metadata-forms-to-assets-view}
 
