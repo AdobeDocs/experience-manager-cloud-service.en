@@ -91,17 +91,18 @@ Execute the steps below to control access while creating collections:
     | **Anyone can view**| Public | Everyone can access this collection, but only creator and Administrators can edit. |
     | **Anyone can view and edit**| Public | This collection is open to everyone, with full access and editing permissions granted without restrictions.|
 
->[!NOTE]
->
-> [!DNL Content Hub] administrator can view all the options available under **[!UICONTROL Who can access]** dropdown, whereas for regular users, you need to [specify and configure](configure-content-hub-ui-options.md) which options they can access.
+    >[!NOTE]
+    >
+    > [!DNL Content Hub] administrator can view all the options available under **[!UICONTROL Who can access]** dropdown, whereas for regular users, you need to [specify and configure](configure-content-hub-ui-options.md) which options they can access.
 
 1. Click **[!UICONTROL Create]**. Once done, you can [add assets to the collection](#add-assets-to-existing-collection).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336) 
 
+<!--
 >[!NOTE]
 >
->Collections governance is a limited availability feature. You can get it enabled  by creating a support ticket. Once enabled, you need to [Configure Collections in Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub).
+>Collections governance is a limited availability feature. You can get it enabled  by creating a support ticket. Once enabled, you need to [Configure Collections in Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub).-->
 
 <!--To create a new collection, navigate to the **[!UICONTROL Collections]** tab and click **[!UICONTROL Create new collection]**. Enter the **[!UICONTROL Title]** and provide an optional **[!UICONTROL Description]** for the assets. Click **[!UICONTROL Create]**.
 ![Create collection](assets/add-assets-collection.jpg)          
