@@ -371,7 +371,7 @@ To check that Adaptive Forms Core Components are enabled for your environment:
 Core Component-based forms may fail to render due to a version mismatch between the Forms Core Components package and the version included in the project archetype. This issue typically occurs when the version specified in the project archetype is equal to or higher than the version bundled with the Forms Core Components package. To resolve this issue, do one of the following:
 
 * Use a lower version of the Forms Core Components package in the project archetype.
-* Remove the Forms Core Components dependency from the project archetype, as the required version is already included in the package.
+* Remove the Forms Core Components dependency from the project archetype, as the required version is already included with AEM as a Cloud Service. The Forms Core Components package is bundled with AEM as a Cloud Service starting from release 20133.
 
 >[!MORELIKETHIS]
 >
