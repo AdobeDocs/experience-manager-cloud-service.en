@@ -49,7 +49,7 @@ role: User, Admin
 
 ## Before you begin{#prerequisites-for-importing-metadata-forms-to-assets-view}
 
-Ensure you have admin rights to import the metadata forms and their associated folders from [!DNL Admin View] to [!DNL Assets View].
+Ensure you have admin rights to import the metadata forms and their folder associations from [!DNL Admin View] to [!DNL Assets View].
 
 ## Import metadata forms to [!DNL Assets View]{#import-metadata-forms-to-assets-view}
 
