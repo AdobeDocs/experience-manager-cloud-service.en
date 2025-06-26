@@ -4,8 +4,8 @@ description: This article describes how to import the metadata form available in
 contentOwner: AG
 feature: Metadata
 role: User, Admin
+exl-id: 5fb4fe97-486a-4a91-af60-a7182efcc2f9
 ---
-
 # Import [!DNL Admin View] metadata forms to [!DNL Assets View] {#import-admin-view-metadata-forms-to-assets-view}
 
 <table>
