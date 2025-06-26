@@ -107,9 +107,9 @@ As an administrator, manage the following configuration options for your users:
 
 * [Custom Links](#configure-custom-links-content-hub)
 
-* [Collections](#configure-collections-content-hub)
+* [Collections and Sharing](#configure-collections-content-hub)
 
-* [Enable public link sharing](#enable-public-link-sharing)
+<!--* [Enable public link sharing](#enable-public-link-sharing)-->
 
 ### Import {#configure-import-options-content-hub}
 
