@@ -87,9 +87,13 @@ Execute the steps below to control access while creating collections:
 
     |Access method | Access type | Description |
     |---|---|---|
-    | **Only you and administrators can access**| Private | Only Creator and the administrators can edit and access this collection. |
-    | **Anyone can access**| Public | Everyone can access this collection, but only creator and Administrators can edit. |
-    | **Anyone can access and edit**| Public | This collection is open to everyone, with full access and editing permissions granted without restrictions.|
+    | **Only you and administrators can edit**| Private | Only creator and the administrators can edit and access this collection. |
+    | **Anyone can view**| Public | Everyone can access this collection, but only creator and Administrators can edit. |
+    | **Anyone can view and edit**| Public | This collection is open to everyone, with full access and editing permissions granted without restrictions.|
+
+>[!NOTE]
+>
+> [!DNL Content Hub] administrator can view all the options available under **[!UICONTROL Who can access]** dropdown, whereas for regular users, you need to [specify and configure](configure-content-hub-ui-options.md) which options they can access.
 
 1. Click **[!UICONTROL Create]**. Once done, you can [add assets to the collection](#add-assets-to-existing-collection).
 
@@ -168,17 +172,23 @@ Learn how to [download an asset from the [!DNL Content Hub]](download-assets-con
 
 You can also share the assets available within a collection. Ensure to [enable public link sharing in Content Hub](configure-content-hub-ui-options.md#enable-public-link-sharing). Navigate to the **[!UICONTROL Collections]** tab. Select the ![share icon](assets/share.svg) icon on the collection card. The share link is copied. You can share the copied link with the recipient. Learn more about [sharing assets in the [!DNL Content Hub]](share-assets-content-hub.md).
 
-While sharing collections in Content Hub, you can define the scope of access and actions which recipients can perform on digital resources within the system. Content Hub Collections provides comprehensive governance tools for effective asset management, including customizable sharing permissions and collaboration features. From read-only access to full administrative control, these settings support fine governance over asset distribution.
+Content Hub Collections provides comprehensive governance tools for effective asset management, including customizable sharing permissions and collaboration features. From read-only access to full administrative control, these settings support fine governance over asset distribution. When sharing an asset either individually or as part of a collection, the scope of access is determined by the collection's current access level assigned to the user. Alternatively, you cannot share a private collection.
 
 ## Edit details of a collection {#edit-details-of-collection}
 
-To edit **[!UICONTROL Title]** and **[!UICONTROL Description]** of a collection, click the collection name and then click the ![info icon](assets/info-icon.svg) icon. [!UICONTROL Collection Details] screen appears that allows you to edit the **[!UICONTROL Title]** and **[!UICONTROL Description]** of a collection. Click **[!UICONTROL Save Changes]** to confirm the modifications.
+To edit **[!UICONTROL Title]** and **[!UICONTROL Description]** of a collection, click the collection name and then click the ![info icon](assets/info-icon.svg) icon. [!UICONTROL Collection Details] screen appears that allows you to edit the **[!UICONTROL Title]** and **[!UICONTROL Description]** of a collection. Click **[!UICONTROL Save Changes]** to confirm the modifications. Moreover, you can update the access to the collection through the Edit Collection dialog, depending on the configuration.
 
 ![collection details](assets/collection-details.png)
 
 ## Remove assets from a collection{#remove-assets-from-a-collection}
 
-You can remove single or multiple assets from a collection. To remove assets from a collection, click the collection from which you need to remove assets, select the assets and click **[!UICONTROL Remove from collection]**. 
+The following users can remove single or multiple assets from a collection:
+
+* An administrator 
+* An owner of collection
+* A non-admin user with the edit rights
+
+To remove assets from a collection, click the collection from which you need to remove assets, select the assets and click **[!UICONTROL Remove from collection]**. 
 
  ![Remove collection](assets/remove-collection-new.jpg)
 
@@ -187,7 +197,7 @@ The selected assets are successfully removed from the collection.
 
 ## Delete a collection{#delete-collection}
 
-To delete a collection, navigate to the **[!UICONTROL Collections]** tab and click the collection that you need to delete. Click ![remove icon](assets/remove-icon.svg) icon to delete the collection.
+Only administrators and creator can delete a collection. To delete a collection, navigate to the **[!UICONTROL Collections]** tab and click the collection that you need to delete. Click ![delete icon](assets/delete-icon.svg) icon to delete the collection.
 
 
  
