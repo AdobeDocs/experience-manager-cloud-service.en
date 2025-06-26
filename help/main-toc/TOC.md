@@ -89,6 +89,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2025 {#2025}
+      + [Maintenance Release Notes for 2025.6.0](/help/release-notes/maintenance/2025/2025-6-0.md)
       + [Maintenance Release Notes for 2025.5.0](/help/release-notes/maintenance/2025/2025-5-0.md)
       + [Maintenance Release Notes for 2025.4.0](/help/release-notes/maintenance/2025/2025-4-0.md)
       + [Maintenance Release Notes for 2025.3.0](/help/release-notes/maintenance/2025/2025-3-0.md)
@@ -707,7 +708,7 @@ user-guide-title: AEM as a Cloud Service
     + [Search best practices](/help/assets/search-best-practices.md)
     + [Metadata management and best practices](/help/assets/metadata-best-practices.md)
   + Integration with Figma {#integration-figma}
-    + [Native integration with Figma](/help/assets/integrate-aem-assets-with-figma.md) 
+    + [Native integration with Figma](/help/assets/integrate-aem-assets-with-figma.md)
   + Integration with Adobe Workfront {#integrations}
     + [Integrations with [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
     + [Configure asset metadata mapping](/help/assets/configure-asset-metadata-mapping.md)
@@ -739,6 +740,7 @@ user-guide-title: AEM as a Cloud Service
     + [Migrate from [!DNL AEM 6.5 Forms] or earlier to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
     + [Groups and permissions](/help/forms/forms-groups-privileges-tasks.md)
     + [Import, export, and organize Adaptive Forms, PDF forms, and other assets](/help/forms/import-export-forms-templates.md)
+    + [Enable Feature Toggle  on Adobe Experience Software Development Kit (AEM SDK)](/help/forms/enable-feature-toggle.md)
   + Getting Started {#getting-started-forms}
     + [Use Case and setup development environment](/help/forms/create-adaptive-form-tutorial-getting-started.md)
     + [Create the loan application form](/help/forms/create-adaptive-form-tutorial.md)
