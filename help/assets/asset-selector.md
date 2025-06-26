@@ -474,7 +474,7 @@ All the selected assets are carried by `handleSelection` function that acts as a
 | Object | JSON |
 |---|---|
 |Host | `assetJsonObj["repo:repositoryId"]`|
-|API root | `/adobe/dynamicmedia/deliver` |
+|API root | `/adobe/assets` |
 |asset-id | `assetJsonObj["repo:assetId"]`|
 |seo-name |`assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")`|
 |format|`.jpg`|
