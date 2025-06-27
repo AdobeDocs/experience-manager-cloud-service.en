@@ -107,7 +107,9 @@ As an administrator, manage the following configuration options for your users:
 
 * [Custom Links](#configure-custom-links-content-hub)
 
-* [Collections and Sharing](#configure-collections-sharing-content-hub)
+* [Collections and Sharing](#configure-collections-content-hub)
+
+<!--* [Enable public link sharing](#enable-public-link-sharing)-->
 
 ### Import {#configure-import-options-content-hub}
 
@@ -305,21 +307,33 @@ Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), ava
 
    ![Configuration UI Custom Links tabs on Content Hub](assets/configuration-ui-custom-link-tab.png)
 
-### Collections and Sharing {#configure-collections-sharing-content-hub}
+### Collections and Sharing {#configure-collections-content-hub}
 
-Administrators can define user permissions while creating collections and allow Content Hub users to generate a public link. To enable these settings, follow these steps:
+Administrators can define user permissions while crating collections. To enable these settings, follow these steps:
 
-1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Collections and sharing]**.
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Collections]**.
 
-1. Enable  the **[!UICONTROL Read Only Collections]** toggle to allow collections that are accessible to everyone but editable only by the creator and administrator.
+1. Enable the **[!UICONTROL Enable Public Link]** toggle to allow creation of public links that external users can use to access and download assets without logging in to the Content Hub.
 
-1. Enable the **[!UICONTROL Public Collections]** toggle to allow collections that are both accessible and editable by everyone.
+1. Enable  the **[!UICONTROL View Only Collections]** toggle to allow collections that are accessible to everyone but editable only by the creator and administrator.
 
-1. Enable the **[!UICONTROL Enable Public Link]** toggle to let Content Hub users generate a public link.
+1. Enable the **[!UICONTROL Public Collections]** toggle to allow collections that are both accessible and editable by everyone. If **[!UICONTROL View Only Collections]** and **[!UICONTROL Public Collections]** toggles are disabled, then by default, non-admin users can create only private collections.
 
 1. Click **[!UICONTROL Save]** to apply the changes. 
 
-    ![Configuration Collections tab on Content Hub](assets/collections-link-sharing.png)
+    ![Configuration Collections tab on Content Hub](assets/collections-and-sharing.png)
 
+<!--
+### Enable public link sharing {#enable-public-link-sharing}
 
-   For more information on collections and sharing assets, see [Manage collections in Content Hub](/help/assets/collections-content-hub.md) and [Sharing assets in [!DNL Content Hub]](share-assets-content-hub.md).
+Enable the following setting on the Configurations user interface to allow Content Hub users to generate a public link:
+
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Collections and Sharing]**.
+
+1. Enable the **[!UICONTROL Enable Public Link]** toggle and click **[!UICONTROL Save]** to apply the changes.
+
+    ![Enable public link sharing in Content Hub](assets/enable-public-link-sharing-tab.png)
+
+-->
+
+Learn more about [sharing assets in the [!DNL Content Hub]](share-assets-content-hub.md).
