@@ -76,8 +76,8 @@ If **[!UICONTROL Download assets]** dialog box displays assets licenses, then se
 
    >[!NOTE]
    >
-   >* The renditions display only if their visibility is enabled using the [!UICONTROL [Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
-   >* The users with access to [!DNL [Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) can view and download dynamic and smart crop renditions.
+   >* The renditions display only if their visibility is enabled using the [[!UICONTROL Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
+   >* The users with access to [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) can view and download dynamic and smart crop renditions.
    >* The preview of the license displays only if the asset is approved using [!DNL Assets as a Cloud Service] authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 <!--

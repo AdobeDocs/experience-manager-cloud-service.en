@@ -1,12 +1,12 @@
 ---
-title: Import [!DNL Admin View] metadata forms to [!DNL Assets View]
-description: This article describes how to import the metadata form available in [!DNL Admin View] to [!DNL Assets View]
+title: Import metadata forms from [!DNL Admin View] to [!DNL Assets View]
+description: This article describes how to import the metadata form from [!DNL Admin View] to [!DNL Assets View]
 contentOwner: AG
 feature: Metadata
 role: User, Admin
+exl-id: 5fb4fe97-486a-4a91-af60-a7182efcc2f9
 ---
-
-# Import [!DNL Admin View] metadata forms to [!DNL Assets View] {#import-admin-view-metadata-forms-to-assets-view}
+# Import metadata forms from [!DNL Admin View] to [!DNL Assets View] {#import-metadata-forms-from-admin-view-to-assets-view}
 
 <table>
     <tr>
@@ -56,22 +56,30 @@ Ensure you have admin rights to import the metadata forms and their folder assoc
 As an administrator, execute the following steps to import the metadata forms available in [!DNL Admin View] to [!DNL Assets View]:
 
 1. Navigate to the [!DNL Assets View] home page and click **[!UICONTROL  Metadata Forms]** under **[!UICONTROL Settings]** to open the **[!UICONTROL Metadata Forms]** page displaying the list of metadata forms available in [!DNL Assets View]. 
-![metadata forms page](/help/assets/assets/metadata-forms-page.png)
+
+   ![metadata forms page](/help/assets/assets/metadata-forms-page.png)
+
 1. Select **[!UICONTROL Import]**, a processing message displays (for example, *Processing 2 metadata forms ... Please wait.*) while the import is in progress. After the processing is complete, the **[!UICONTROL Import metadata forms]** table displays, which includes a list of metadata forms available in [!DNL Admin View]. The table row includes, metadata form name (under **[!UICONTROL Name]**), folders associated with that form (under **[!UICONTROL Folder Association]**) and an option to preview ![preview](/help/assets/assets/Preview.svg) the form before importing it. 
-![Import Metadata Forms page](/help/assets/assets/import-metadata-forms-page.png)
+
+   ![Import Metadata Forms page](/help/assets/assets/import-metadata-forms-page.png)
     
    >[!NOTE]
    > 
    > In the **[!UICONTROL Import Metadata Forms]**, table a **[!UICONTROL Duplicate]** label next to a form name shows that the form is already applied to a folder in [!DNL Assets View]. Importing that duplicate form overrides the existing one applied to the folder. To avoid this override, rename the form before importing it. Click the form name to rename it.
+   
 1. Click ![select folder](/help/assets/assets/x.svg) next to a folder name (under [!UICONTROL Folder Association]) to remove the folder association with the form.
 1. Click ![select folder](/help/assets/assets/add-to-folder.svg) to select a folder to assign the corresponding metadata form to it. 
 1. Click the red circle to view details about unsupported metadata components or mappings in the form that are excluded from the import.
-![Import Metadata Forms page](/help/assets/assets/unsupported-import-elements.png)
+
+   ![Import Metadata Forms page](/help/assets/assets/unsupported-import-elements.png)
+
 1. Select one or more forms in the table and click **[!UICONTROL Start Import]** to import the metadata forms and its associated folders into [!DNL Assets View]. A processing message displays (for example, *Importing 3 metadata forms. Please wait!*). Once the import is complete, a success message confirms that the forms are imported successfully and the **[!UICONTROL Metadata Forms]** page (of [!DNL Assets View]) displays both recently imported and existing forms available in [!DNL Assets View]. You can do the following on this page:
+
    * Click the column header to sort the table by [!UICONTROL Name], [!UICONTROL Modified], or [!UICONTROL Author]. 
    * Select the imported form and click **[!UICONTROL Remove from folder(s)]**, then verify the folder name in the folder path to confirm that the folder is correctly ported.
    ![verify metadata forms page](/help/assets/assets/confirm-ported-folder.png)
    * Select the imported form and click **[!UICONTROL Edit]** to view all the supported configurations of the metadata form. See [Setup Metadata Forms](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) for more information about the metadata forms, their components, and fields.
+   
    ![verify metadata forms page](/help/assets/assets/verify-metadata-forms-page.png)
 
 ## Verify the imported metadata forms{#Verify-the-imported-metadata-forms}
