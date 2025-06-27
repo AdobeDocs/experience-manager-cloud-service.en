@@ -1,12 +1,12 @@
 ---
-title: Import [!DNL Admin View] metadata forms to [!DNL Assets View]
-description: This article describes how to import the metadata form available in [!DNL Admin View] to [!DNL Assets View]
+title: Import metadata forms from [!DNL Admin View] to [!DNL Assets View]
+description: This article describes how to import the metadata form from [!DNL Admin View] to [!DNL Assets View]
 contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: 5fb4fe97-486a-4a91-af60-a7182efcc2f9
 ---
-# Import [!DNL Admin View] metadata forms to [!DNL Assets View] {#import-admin-view-metadata-forms-to-assets-view}
+# Import metadata forms from [!DNL Admin View] to [!DNL Assets View] {#import-metadata-forms-from-admin-view-to-assets-view}
 
 <table>
     <tr>
