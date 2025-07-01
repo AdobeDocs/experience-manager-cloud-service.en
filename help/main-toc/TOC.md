@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2025 {#2025}
+      + [Release Notes for 2025.5.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md) 
       + [Release Notes for 2025.4.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-4-0.md) 
       + [Release Notes for 2025.3.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-3-0.md) 
       + [Release Notes for 2025.2.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-2-0.md) 
@@ -221,6 +222,8 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Universal Editor {#univeral-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + 2025 {#2025}
+      + [2025.05.21 Release Notes](/help/release-notes/universal-editor/2025/2025-05-21.md)
+      + [2025.04.04 Release Notes](/help/release-notes/universal-editor/2025/2025-04-04.md)
       + [2025.03.10 Release Notes](/help/release-notes/universal-editor/2025/2025-03-10.md)
       + [2025.02.25 Release Notes](/help/release-notes/universal-editor/2025/2025-02-25.md)
       + [2025.02.17 Release Notes](/help/release-notes/universal-editor/2025/2025-02-17.md)
@@ -676,6 +679,7 @@ user-guide-title: AEM as a Cloud Service
     + [Edit videos](/help/assets/edit-videos-assets-view.md)
     + [View and manage renditions](/help/assets/renditions.md)
     + [Manage asset metadata](/help/assets/metadata-assets-view.md)
+    + [Import metadata form from Admin View to Assets View](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md)
     + [Bulk rename](/help/assets/bulk-rename-assets-view.md)
     + [Bulk metadata edit](/help/assets/bulk-metadata-edit.md)
     + [Share assets](/help/assets/share-links-for-assets-view.md)
