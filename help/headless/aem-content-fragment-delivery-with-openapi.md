@@ -72,7 +72,7 @@ The CORS allowed origins defined on the dispatcher configuration side, specifica
 
 ## API Rate Limits {#api-rate-limits}
 
-The API allows new requests at a rate of up to 200 requests per second, per bucket. 
+The API allows new requests at a rate of up to 200 requests per second, per environment. 
 
 Once this limit is exceeded, the API starts sending 429 errors. These errors must be handled by any client applications, and failed requests retried following an exponential backoff retry.
 
