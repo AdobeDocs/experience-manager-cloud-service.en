@@ -22,8 +22,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.5.0) is June 5, 2025. The next feature release (2025.6.0) is planned for June 26, 2025.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.6.0) is June 26, 2025. The next feature release (2025.7.0) is planned for July 31, 2025.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -41,98 +40,19 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**AI-Generated metadata**
+**Enhanced Metadata Form management in Assets View**
 
-AEM Assets now uses [AI to automatically generate metadata, including Title, Description, and Keywords](/help/assets/metadata-assets-view.md#ai-smart-tags). These AI-generated fields enhance metadata accuracy, making the assets easier to search, categorize, and recommend. This approach not only improves efficiency by eliminating manual tagging but also ensures consistency and scalability across large volumes of digital content.
+You can now import metadata forms from Admin view directly into Assets view. Any updates made to these forms in Assets view automatically reflect in Admin view, ensuring consistency across both experiences. This capability supports a seamless transition to the new Assets view while maintaining continuity with your existing metadata configurations.
 
-![AI generated metadata](/help/assets/assets/enhanced-smart-tags.png)
-
-**Integration with Figma**
-
-AEM Assets integrates natively with Figma, which allows designers to directly access the assets stored in AEM Assets from within the Figma User Interface. You can place content managed in AEM Assets in the Figma canvas and then save new or edited content in AEM Assets repository. To access the AEM Assets Connector available on the Figma Community page, click [here](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
-
->[!VIDEO](https://video.tv.adobe.com/v/3463828)
-
+![AI generated metadata](/help/assets/assets/import-metadata-forms-page.png)
 
 ### New Features in Content Hub {#new-features-content-hub}
-
-**Attribute-based Access Control (ABAC)**
-
-[Content Hub now allows you to apply rule-based restrictions to access assets](/help/assets/attribute-based-access-control.md). Asset permissions ensure governance and also makes sure that only the relevant assets are accessible to users.
-
-The asset restriction rules are based on metadata and if the conditions defined in the rule match the asset metadata, the asset gets displayed to the user groups.
-
-Some of the key benefits of Attribute-based Access Control include:
-
-* Eliminates the dependency on folder structure for permissions
-
-* Allows administrators to upload assets and retroactively determine permission structures
-
-* Reduces number of duplicates - improves asset integrity. Duplicates are needed in folder based permissions when same assets are shared with different groups.
-
-**UI Branding**
-
-Content Hub now allows administrators to [customize the user interface with brand-specific elements](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub), including banner images, banner titles and body text, as well as primary and secondary colors. These enhancements help ensure brand consistency, simplify user onboarding, and build trust.
-
-![UI Branding](/help/assets/assets/content-hub-ui-branding.png)
-
-**Public link sharing**
-
-Content Hub now supports [generating shareable links to allow external users](/help/assets/share-assets-content-hub.md##share-assets), without application access, to view asset metadata or download assets.
-
-![UI Branding](/help/assets/assets/public-and-private-link.png)
 
 **Collections governance**
 
 Content Hub now lets you [control access to collections during creation, ensuring only authorized users can view or manage grouped assets](/help/assets/collections-content-hub.md##create-collections). It ensures improved security, better collaboration, organized asset management, and simplified governance.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
-
->[!NOTE]
->
->Collections governance is a limited availability feature. You can get it enabled  by creating a support ticket.
-
-**Download multiple assets as a ZIP**
-
-Content Hub now also allows you to [download the selected assets and their renditions in a ZIP file](/help/assets/download-assets-content-hub.md#download-asset-renditions) and not as separate files simplifying file management for you.
-
-**Dynamic Media renditions in Content Hub**
-
-Access all your [Dynamic Media preset renditions and smart-crops for download, directly from within the Content Hub User Interface](/help/assets/download-assets-content-hub.md#download-asset-renditions).
-
-​![Dynamic Media renditions](/help/assets/assets/dm-renditions-content-hub.png)
-
-### New Features in Dynamic Media {#new-features-dynamic-media}
-
-**Dynamic Media native integration with AJO B2C​**
-
-[Native integration of Experience Manager (AEM) Dynamic Media with Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), enabling marketers to easily embed AEM Dynamic Media assets (rendition and DM Template) into AJO content and deliver real-time updates and hyper-personalized experiences across channels.
-
->[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
-
-## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
-
-### Pre-release Features 
-
-* [Universal Editor - Form Fragments](/help/edge/docs/forms/universal-editor/creating-form-fragments.md): The Universal Editor now allows you to create and reuse Form Fragments for Adaptive Forms. These fragments are reusable form sections (e.g., contact details, consent fields) that can be built once and applied across multiple forms. This feature streamlines form creation, ensures consistency, and improves authoring efficiency.
- 
-* [SharePoint Document Library - Save Attachments with Original Filenames](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): You now have the option to save form attachments using their original filenames when storing them in a SharePoint Document Library. This enhancement simplifies the identification and management of uploaded files.
-
-* **Rule Editor**:
-    * [Binary Condition with Click Event in "When" Clause](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): The Rule Editor now allows combining a button click event (_Is Clicked_) with other conditions within the "When" clause. This enables more precise control over rule execution based on user interaction and other factors. Note: When using multiple conditions, the click event must be the first condition listed.
-    * [Validation Conditions for Fields and Panels](/help/forms/rule-editor-core-components-usecases.md): The Rule Editor now includes _IsValid_ and _IsNotValid_ conditions. These allow you to check the validation status of specific fields or entire panels (including layouts like Horizontal Tabs, Vertical Tabs, Accordions, and Wizards), facilitating improved form navigation and user experience based on validation results.
-* [Improved Scope Management for SharePoint Lists](/help/forms/connect-forms-to-sharepoint-list.md): SharePoint sites now support all managed paths, for example, /sites and /teams. This enhancement enables broader integration across various SharePoint site structures, offering greater flexibility in connecting to organizational content.
-* [Support for Saving Document of Record to SharePoint List](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): Forms created using a SharePoint List–based Form Data Model (FDM) can now save the Document of Record (DoR) to SharePoint Lists by configuring the Document of Record Bind Reference field property. This enhancement enables seamless integration of supported form data and documents with SharePoint storage.
-
-### Early Access Features in AEM Forms {#forms-new-early-access-features}
-
-The AEM Forms Early Access Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations, and help shape their development.
-
-This release notes lists the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
-
-#### Adobe Experience Platform (AEP) Integration with Forms
-
-Integration capabilities between Forms and AEP are now available for early adopters.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -178,7 +98,7 @@ OSGi properties:
 
 The **Java 11 runtime** is now deprecated, and most environments have already been upgraded to the more performant **Java 21 runtime**.
 
-If your environment couldn't be upgraded due to unsupported dependencies (see [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), you should have received an email from Adobe with specific next steps. Please ensure all required updates are completed by **August 28, 2025**, so your environment can be upgraded without disruption.
+If your environment could not be upgraded due to unsupported dependencies (see [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), you should have received an email from Adobe with specific next steps. Please ensure all required updates are completed by **August 28, 2025**, so your environment can be upgraded without disruption.
 
 Note: The runtime version is separate from your code's build version. While we recommend building with Java 21, Java 11 builds are still supported for now. A separate deprecation notice for Java 11 builds will be shared in the future.
 
@@ -186,7 +106,7 @@ Note: The runtime version is separate from your code's build version. While we r
 
 As noted in the April release notes, AEM Java logs must follow a standard format to ensure reliable monitoring across all customer environments. Custom log configurations—such as changes to log formatting, output files, or default log levels—are no longer supported. Logs must remain directed to the default files, and default log levels for AEM product code must be preserved. See full details in the [Logging article](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Starting in **late August**, any unsupported custom logging overrides will be ignored. Based on our analysis, most customers will not be impacted and Adobe will directly contact any customers whose current configuration may be affected.
+Starting in **late August**, any unsupported custom logging overrides will be ignored. Based on our analysis, most customers will not be impacted and Adobe has contacted customers whose current configuration may be affected.
 
 Please review and update any downstream processes that rely on custom logging behavior. For example:
 
@@ -197,7 +117,7 @@ Please review and update any downstream processes that rely on custom logging be
 
 Currently, content versions and audit logs have their associated *purge maintenance tasks* disabled by default and thus no data is removed unless explicitly configured. 
 
-However, to optimize repository performance, starting in **late June 2025**, purging will be enabled by default, following these guidelines:
+However, to optimize repository performance, starting in **early July 2025**, purging will be enabled by default, following these guidelines:
 
 #### Content Versions {#mt-content}
 
@@ -236,7 +156,7 @@ Common use cases include:
 * Authenticating users with an identity provider before granting access to content
 * Personalizing content based on geolocation, device type, or user attributes
 * Acting as middleware between the CDN and your origin
-* Reformatting responses from third-party APIs (and perhaps aggegating multiple APIs responses) before delivering them to the browser
+* Reformatting responses from third-party APIs (and perhaps aggregating multiple APIs responses) before delivering them to the browser
 * Composing and serving server-rendered HTML at the edge using content stitched from various backends
 
 We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
