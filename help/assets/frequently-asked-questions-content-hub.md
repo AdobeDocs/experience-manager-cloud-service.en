@@ -9,7 +9,7 @@ exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 
 ## What is Content Hub? {#what-is-content-hub} 
 
-Content Hub is a feature of Adobe Experience Manager Assets as a Cloud Service. 
+Content Hub is a feature of Adobe Experience Manager Assets as a Cloud Service.. 
 
 Content Hub enables broader teams to easily discover relevant, approved assets through an intuitive portal and quickly adapt them to their needs.  In addition, Content Hub provides an ingestion mechanism that allows those users to easily self–serve as they upload assets into the DAM. This directly accommodates the need organizations have for higher content creation velocity, while preserving brand consistency and compliance with appropriate safeguards.
 

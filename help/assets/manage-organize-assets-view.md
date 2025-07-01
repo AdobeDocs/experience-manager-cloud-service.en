@@ -10,7 +10,7 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 
 You can do various digital asset management (DAM) tasks easily using the user-friendly interface of [!DNL Assets view]. After you've added the assets, you can search, download, move, copy, rename, delete, update, and edit your assets. 
 
-Use [!DNL Assets view] to accomplish the following asset management tasks. When you select an asset, the following options display in the toolbar at the top.
+Use [!DNL Assets view] to accomplish the following asset management tasks. When you select an asset, the following options display in the toolbar at the top..
 
 ![Toolbar options when you select an asset](assets/toolbar-image-selected.png)
 
