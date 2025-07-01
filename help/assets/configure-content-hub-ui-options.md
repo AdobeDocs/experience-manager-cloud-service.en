@@ -200,7 +200,7 @@ On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]
 
 **[!UICONTROL Secondary color]:** On the [!DNL Content Hub] home page, the secondary color scheme applies to UI options and input fields that are available within dialog boxes. It applies to all configuration menu options available on the [!UICONTROL Configuration] page except selection actions, checkboxes, search bars, and toggle switches.
 
-### Expired assets{#expired-assets-content-hub}
+### Asset Visibility{#asset-visibility-content-hub}
 
 Administrators can control if they need expired assets to be visible on Content Hub. If the expired assets are made visible, they can also define if users can download them.
 
@@ -208,15 +208,15 @@ Expired assets do not display in Content Hub by default.
 
 To do so, execute the following steps:
 
-1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Expired Assets]**.
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Asset Visibility]**.
 
 1. In the **[!UICONTROL Visible]** section, enable the **[!UICONTROL Allow users to view expired assets]** toggle to make all expired assets visible on Content Hub.
 
 1. After enabling the visibility of assets, you can enable or disable the ability to download expired assets using the **[!UICONTROL Allow users to download expired assets]** toggle. 
-
+1. Enable the **[!UICONTROL Allow users to view assets approved for delivery]** toggle to display all assets approved for delivery in Content Hub.
 1. Click **[!UICONTROL Save]** to apply the changes.
 
-   ![Expired assets on Content Hub](assets/expired-assets-content-hub.png)
+   ![Expired assets on Content Hub](assets/asset-visibility-content-hub.png)
 
 After enabling the visibility of assets, you can view the expired assets on Content Hub, as depicted in the following image:
 
@@ -238,7 +238,7 @@ On the [Configurations](#access-configuration-options-content-hub) user interfac
 
 * Enable or disable **[!UICONTROL Allow users to download original assets]** toggle to control the availability to download original assets.
 
-   ![Configure renditions on Content Hub](assets/config-renditions.png)
+   ![Configure renditions on Content Hub](assets/configuration-renditions.png)
 
 For information on how to view and download renditions in Content Hub, see [download assets in Content Hub](/help/assets/download-assets-content-hub.md).
 
@@ -257,12 +257,10 @@ You can also add custom tabs in addition to standard **[!UICONTROL All Assets]**
 1. Click **[!UICONTROL Save]** to apply the changes.
 
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each URL, to edit the links or click the delete icon to delete any existing URL. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
+![Configuration UI Custom Links on Content Hub](assets/configuration-custom-links.png)
 
-   ![Configuration UI Custom Links on Content Hub](assets/configuration-ui-custom-links.png)
-
-   The custom link display as a new tab next to Insights tab on the Content Hub home page.
-
-   ![Configuration UI Custom Links tabs on Content Hub](assets/configuration-ui-custom-link-tab.png)
+The custom link display as a new tab next to Insights tab on the Content Hub home page.
+![Configuration UI Custom Links tabs on Content Hub](assets/configuration-ui-custom-link-tab.png)
 
 ### Collections and Sharing {#configure-collections-content-hub}
 
