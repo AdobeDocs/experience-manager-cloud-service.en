@@ -77,8 +77,7 @@ Configuration of an external repository in Cloud Manager consists of the followi
 
 >[!TAB GitHub Enterprise]
 
-<!-->
-https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
 | Access token option | Description |
 | --- | --- |
@@ -211,8 +210,7 @@ For all other external repositories that are onboarded with an access token &nda
 
 >[!TAB GitHub Enterprise]
 
-<!-->
-https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
 | Required webhook events |
 | --- |
@@ -238,9 +236,9 @@ https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-se
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
-| Required webhook events |
+| Required webhook events and authentication |
 | --- |
-| These events ensure that Cloud Manager can validate pull requests, respond to code pushes, and interact with comments for pipeline coordination.<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Repository: Push</li></li></ul></ul></ul> |
+| These events ensure that Cloud Manager can validate pull requests, respond to code pushes, and interact with comments for pipeline coordination.<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Repository: Push</li></ul>Set authentication:<br>1. In the **Basic authentication username** field, type `cloudmanager`.<br>2. In the **Basic authentication password** field, type the Webhook Secret generated from the Cloud Manager user interface.  |
 
 >[!ENDTABS]
 
@@ -256,8 +254,7 @@ The behavior varies depending on the Git provider that you use, as outlined belo
 
 >[!TAB GitHub Enterprise]
 
-<!-->
-https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
 When the check is created, it appears like the following screenshot below. The key difference from `GitHub.com` is that `GitHub.com` uses a check-run, while GitHub Enterprise (using personal access tokens) generates a commit status:
 
