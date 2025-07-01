@@ -10,7 +10,7 @@ role: Admin
 
 | Product | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2025.5.0 |
+| Version | 2025.6.0 |
 | Type | Continuous Updates |
 | Availability date | Continuous Update |
 
@@ -61,12 +61,12 @@ You can also [check the known issues](/help/release-notes/maintenance/latest.md)
 
 Upcoming features are generally made available in one of two ways:
 
-* As part of an early-adopter program
+* As part of an Alpha, Beta or Limited Availability program
 * As part of the prerelease channel
 
 How an upcoming feature is made available will be detailed in the [release notes.](#release-notes)
 
-* If it is part of an early-adopter program, you generally need to contact Adobe in order to enable it as detailed in the release notes.
+* If it is part of an Alpha, Beta or Limited Availability  program, you generally need to contact Adobe in order to enable it as detailed in the release notes.
 * If it is part of the prerelease channel, you will need to [enable the prerelease channel in a development or sandbox environment.](/help/release-notes/prerelease.md)
 
 ## Train Your Users {#train-users}
