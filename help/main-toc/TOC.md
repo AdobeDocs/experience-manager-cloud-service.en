@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2025 {#2025}
+      + [Release Notes for 2025.5.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md) 
       + [Release Notes for 2025.4.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-4-0.md) 
       + [Release Notes for 2025.3.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-3-0.md) 
       + [Release Notes for 2025.2.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-2-0.md) 
@@ -89,6 +90,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2025 {#2025}
+      + [Maintenance Release Notes for 2025.6.0](/help/release-notes/maintenance/2025/2025-6-0.md)
       + [Maintenance Release Notes for 2025.5.0](/help/release-notes/maintenance/2025/2025-5-0.md)
       + [Maintenance Release Notes for 2025.4.0](/help/release-notes/maintenance/2025/2025-4-0.md)
       + [Maintenance Release Notes for 2025.3.0](/help/release-notes/maintenance/2025/2025-3-0.md)
@@ -220,6 +222,8 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Universal Editor {#univeral-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + 2025 {#2025}
+      + [2025.05.21 Release Notes](/help/release-notes/universal-editor/2025/2025-05-21.md)
+      + [2025.04.04 Release Notes](/help/release-notes/universal-editor/2025/2025-04-04.md)
       + [2025.03.10 Release Notes](/help/release-notes/universal-editor/2025/2025-03-10.md)
       + [2025.02.25 Release Notes](/help/release-notes/universal-editor/2025/2025-02-25.md)
       + [2025.02.17 Release Notes](/help/release-notes/universal-editor/2025/2025-02-17.md)
@@ -675,6 +679,7 @@ user-guide-title: AEM as a Cloud Service
     + [Edit videos](/help/assets/edit-videos-assets-view.md)
     + [View and manage renditions](/help/assets/renditions.md)
     + [Manage asset metadata](/help/assets/metadata-assets-view.md)
+    + [Import metadata form from Admin View to Assets View](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md)
     + [Bulk rename](/help/assets/bulk-rename-assets-view.md)
     + [Bulk metadata edit](/help/assets/bulk-metadata-edit.md)
     + [Share assets](/help/assets/share-links-for-assets-view.md)
@@ -706,9 +711,8 @@ user-guide-title: AEM as a Cloud Service
   + Best practices{#best-practices}
     + [Search best practices](/help/assets/search-best-practices.md)
     + [Metadata management and best practices](/help/assets/metadata-best-practices.md)
-
   + Integration with Figma {#integration-figma}
-    + [Native integration with Figma](/help/assets/Integrate-aem-assets-with-figma.md) 
+    + [Native integration with Figma](/help/assets/integrate-aem-assets-with-figma.md)
   + Integration with Adobe Workfront {#integrations}
     + [Integrations with [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
     + [Configure asset metadata mapping](/help/assets/configure-asset-metadata-mapping.md)
@@ -740,6 +744,7 @@ user-guide-title: AEM as a Cloud Service
     + [Migrate from [!DNL AEM 6.5 Forms] or earlier to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
     + [Groups and permissions](/help/forms/forms-groups-privileges-tasks.md)
     + [Import, export, and organize Adaptive Forms, PDF forms, and other assets](/help/forms/import-export-forms-templates.md)
+    + [Enable Feature Toggle  on Adobe Experience Software Development Kit (AEM SDK)](/help/forms/enable-feature-toggle.md)
   + Getting Started {#getting-started-forms}
     + [Use Case and setup development environment](/help/forms/create-adaptive-form-tutorial-getting-started.md)
     + [Create the loan application form](/help/forms/create-adaptive-form-tutorial.md)
