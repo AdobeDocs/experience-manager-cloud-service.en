@@ -18,13 +18,24 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 
 [!DNL Experience Manager Forms] Data Integration lets you configure and connect to disparate data sources. The following types are supported out-of-the-box:
 
-* Relational databases - MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], postgreSQL, and [!DNL Oracle RDBMS] 
+| Supported Data Source Types       | Examples                                                                 |
+|----------------------------------|--------------------------------------------------------------------------|
+| Relational databases             | MySQL, [!DNL Microsoft&reg; SQL Server], [!DNL IBM&reg; DB2&reg;], postgreSQL, Azure SQL, [!DNL Oracle RDBMS] |
+| RESTful web services             | Open API Specification version 2.0, Open API Specification version 3.0                         |
+| SOAP-based web services          | Web Services  |
+| OData services  (Version 4)                 |     Microsoft Graph API , SharePoint Lists             |
+| Microsoft&reg; services              | Microsoft&reg; Dynamics, Microsoft&reg; Azure Blob Storage              |
+| Cloud CRMs                       | SalesForce                                                               |
+
+
+<!--
+* Relational databases - MySQL, [!DNL Microsoft&reg; SQL Server], [!DNL IBM&reg; DB2&reg;], postgreSQL, and [!DNL Oracle RDBMS] 
 * RESTful web services  
 * SOAP-based web services
 * OData services (Version 4.0)
 * Microsoft&reg; Dynamics
 * SalesForce
-* Microsoft&reg; Azure Blob Storage
+* Microsoft&reg; Azure Blob Storage-->
 
 Data integration supports OAuth2.0([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, and API Key authentication types out-of-the-box, and allows implementing custom authentication for accessing web services. While RESTful, SOAP-based, and OData services are configured in [!DNL Experience Manager] as a Cloud Service, JDBC for relational databases and connector for [!DNL Experience Manager] user profile are configured in [!DNL Experience Manager] web console.
 
@@ -41,18 +52,89 @@ Before configuring relational databases using [!DNL Experience Manager] Web Cons
 
 You can configure relational databases using [!DNL Experience Manager] Web Console Configuration. Do the following:
 
+**Step1: Clone AEM as a Cloud Service Git repository**
+
+1. Open the command line and choose a directory to store your AEM as a Cloud Service repository, such as `/cloud-service-repository/`.
+
+2. Run the below command to clone the repository:
+
+    ```
+    git clone https://git.cloudmanager.adobe.com/<organization-name>/<app-id>/
+    ```
+
+   **Where to find this information?**
+
+   For step-by-step instructions on locating these details, refer to the Adobe Experience League article "[Accessing Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)".
+
+   When the command completes successfully, you see a new folder created in your local directory. This folder is named after your application. 
+
+**Step 2: Navigate to the Configuration Folder**
+
+1. Open the repository folder in an editor. 
+
+1. Navigate to the following directory within your `<application folder>` where the OSGi configuration for the JDBC pool should be placed:
+
+   ```bash
+   cd ui.config/src/jcr_root/apps/<application folder>/osgiconfig/config/
+   ```
+
+**Step 3: Create the MySQL Connection Configuration File**
+
+1. Create the file:
+
+      ```bash
+      com.day.commons.datasource.jdbcpool.JdbcPoolService~<application folder>-mysql.cfg.json
+      ```
+
+1. Add the below lines of code:
+
+```json
+{
+  "jdbc.driver.class": "com.mysql.cj.jdbc.Driver",
+  "jdbc.connection.uri": "jdbc:mysql://<hostname>:<port>/<database>?useSSL=false",
+  "jdbc.username": "<your-db-username>",
+  "jdbc.password": "<your-db-password>",
+  "datasource.name": "<application folder>-mysql",
+  "datasource.svc.prop.name": "<application folder>-mysql"
+}
+```
+
+> ![NOTE]
+>
+> Replace placeholders like `<application folder>, `<hostname>`, `<database>`, `<your-db-username>`, and `<your-db-password>` with actual values.
+
+**Step 4: Commit and Push the Changes**
+
+Open the terminal and run the below commands:
+
+```bash
+git add .
+git commit -m "<commit message>"
+git push 
+```
+
+**Step 5: Deploy the Changes via Cloud Manager Pipeline**
+
+1. Log in to **AEM Cloud Manager**.
+1. Navigate to your project and run the pipeline to deploy the changes.
+
+>[!NOTE]
+>
+> See [SQL connections using JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) for more detailed information.
+
+<!--
 1. Go to [!DNL Experience Manager] web console at `https://server:host/system/console/configMgr`.
-1. Locate **[!UICONTROL Day Commons JDBC Connections Pools]** configuration. Select to open the configuration in edit mode.
+2. Locate **[!UICONTROL Day Commons JDBC Connections Pools]** configuration. Select to open the configuration in edit mode.
 
    ![JDBC Connector Pool](/help/forms/assets/jdbc_connector.png)
 
-1. In the configuration dialog, specify the details for the database you want to configure, such as:
+3. In the configuration dialog, specify the details for the database you want to configure, such as:
 
     * Java&trade; class name for the JDBC driver
     * JDBC connection URI
     * Username and password to establish connection with the JDBC driver
     * Specify a SQL SELECT query in the **[!UICONTROL Validation Query]** field to validate connections from the pool. The query must return at least one row. Based on your database, specify one of the following:
-      * SELECT 1 (MySQL and MS® SQL) 
+      * SELECT 1 (MySQL and MS&reg; SQL) 
       * SELECT 1 from dual (Oracle)
     * Name of the data source
 
@@ -64,11 +146,9 @@ You can configure relational databases using [!DNL Experience Manager] Web Conso
       "jdbc.connection.uri": "jdbc:mysql://$[env:AEM_PROXY_HOST;default=proxy.tunnel]:30001/sqldatasourcename"
    ```
 
-   >[!NOTE]
-   >
-   > See [SQL connections using JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) for more detailed information.
+
     
-1. Select **[!UICONTROL Save]** to save the configuration.
+4. Select **[!UICONTROL Save]** to save the configuration.
 
 Now, you can use the configured relational database with your Form Data Model (FDM). 
 
@@ -289,7 +369,7 @@ An OData service is identified by its service root URL. To configure an OData se
 >[!NOTE]
 >
 > Form data model (FDM) supports [OData version 4](https://www.odata.org/documentation/).
->For a step-by-step guide to configure [!DNL Microsoft®&reg; Dynamics 365], online or on-premises, see [[!DNL Microsoft&reg; Dynamics] OData Configuration](ms-dynamics-odata-configuration.md).
+>For a step-by-step guide to configure [!DNL Microsoft&reg;&reg; Dynamics 365], online or on-premises, see [[!DNL Microsoft&reg; Dynamics] OData Configuration](ms-dynamics-odata-configuration.md).
 
 1. Go to **[!UICONTROL Tools > Cloud Services > Data Sources]**. Select to select the folder where you want to create a cloud configuration.
 
@@ -305,24 +385,24 @@ An OData service is identified by its service root URL. To configure an OData se
 
    >[!NOTE]
    >
-   >Select the OAuth 2.0 authentication type to connect with [!DNL Microsoft®&reg; Dynamics] services using the OData endpoint as the service root.
+   >Select the OAuth 2.0 authentication type to connect with [!DNL Microsoft&reg;&reg; Dynamics] services using the OData endpoint as the service root.
 
 1. Select **[!UICONTROL Create]** to create the cloud configuration for the OData service.
 
 <!--
-## Configure Microsoft® SharePoint List {#config-sharepoint-list}
+## Configure Microsoft&reg; SharePoint List {#config-sharepoint-list}
 
 <span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
-To save data in a tabular form use, Microsoft® SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
+To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 
-1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.   
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft&reg; SharePoint]**.   
 1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
 1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
 1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
     * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
     * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
-    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft® Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
+    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft&reg; Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
     * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
 
       >[!NOTE]
@@ -331,7 +411,7 @@ To save data in a tabular form use, Microsoft® SharePoint List. To configure a 
 
 1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
 1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
-1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft&reg; SharePointList.
 
 -->
 
