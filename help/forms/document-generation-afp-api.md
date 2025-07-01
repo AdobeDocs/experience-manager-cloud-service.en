@@ -1,8 +1,15 @@
-
+---
+title: How to use AFP output sync API? 
+description: Learn how to use the AFP Output Sync API to retrieve and synchronize output renditions generated from Adaptive Forms with external systems or storage locations.
+feature: Adaptive Forms
+role: Admin, User
+---
 # Generating AFP Output Using the AEM Forms API
 
-Advanced Function Presentation (AFP) is a high-performance document format designed primarily for printing purposes. Adobe Experience Manager (AEM) Forms supports AFP generation through a dedicated API, but it requires a specific set of bundles, configuration toggles, and request setup. This guide outlines all necessary steps and configurations to generate AFP output using AEM Forms.
+Advanced Function Presentation (AFP) is a high-performance document format designed primarily for printing purposes.  
+This guide outlines all necessary steps and configurations to generate AFP output using AEM Forms.
 
+<!--
 ## Prerequisites
 
 To support AFP output generation, the following OSGi bundles must be present and in an **active** state:
@@ -15,7 +22,7 @@ To support AFP output generation, the following OSGi bundles must be present and
 >[!NOTE]
 >
 > * If any bundle is inactive, resolve dependency issues or reinstall manually.
-> * To enable AFP generation, the `FT_FORMS-17887` toggle configurations must be set in AEM configuration manager.
+> * To enable AFP generation, the `FT_FORMS-17887` toggle configurations must be set in AEM configuration manager.-->
 
 ## AFP Generation API
 
