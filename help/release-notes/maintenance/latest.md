@@ -24,6 +24,16 @@ None.
 
 None.
 
+#### AEM Guides {#guides-X}
+
+* GUIDES-29781: When an XML comment is added within an element in the Source view, the leading and trailing spaces around the comment are lost upon switching views.
+* GUIDES-29078: When opening a topic in Author view after a browser refresh, previously applied tags in the File Properties panel are not retained, and adding new tags overwrites the existing ones, particularly when a large number of tags are available for selection.
+* GUIDES-28214: Attempts to create review tasks through the AEM workflow consistently fail because the review node is not created.
+* GUIDES-28104: Publishing a DITA map with `chunk=to-content` attribute creates duplicate JCR nodes in the new AEM Sites output, leading to redundant content structure in AEM Sites.
+* GUIDES-29065, GUIDES-28793: Performance issues like longer loading times and intermittent timeouts are observed when working with large collections.
+
+For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
+
 ### Known Issues {#known-issues-X}
 
 None.
