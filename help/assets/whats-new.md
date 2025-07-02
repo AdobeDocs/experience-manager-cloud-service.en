@@ -44,7 +44,7 @@ Some of the key benefits of Attribute-based Access Control include:
 
 * Reduces number of duplicates - improves asset integrity. Duplicates are needed in folder based permissions when same assets are shared with different groups.
 
-|Informative (default)|[!BADGE Learn More]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}|
+[!BADGE Learn More]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}|
 
 ## UI Branding {#ui-branding}
 
@@ -52,7 +52,7 @@ Content Hub now allows administrators to customize the user interface with brand
 
 ![UI Branding](/help/assets/assets/content-hub-ui-branding.png)
 
-|Informative (default)|[!BADGE Learn More]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}|
+[!BADGE Learn More]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}|
 
 ## Public link sharing {#public-link-sharing}
 
@@ -60,7 +60,7 @@ Content Hub now supports generating shareable links to allow external users, wit
 
 ![UI Branding](/help/assets/assets/public-and-private-link.png)
 
-|Informative (default)|[!BADGE Learn More]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}|
+[!BADGE Learn More]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}|
 
 ## Collections governance {#collections-governance}
 
@@ -68,7 +68,7 @@ Content Hub now lets you control access to collections during creation, ensuring
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
-|Informative (default)|[!BADGE Learn More]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}|
+[!BADGE Learn More]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}|
 
 >[!NOTE]
 >
@@ -78,7 +78,7 @@ Content Hub now lets you control access to collections during creation, ensuring
 
 Content Hub now also allows you to download the selected assets and their renditions in a ZIP file and not as separate files simplifying file management for you.
 
-|Informative (default)|[!BADGE Learn More]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}|
+[!BADGE Learn More]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}|
 
 ## Dynamic Media renditions in Content Hub {#dynamic-media-renditions}
 
@@ -86,4 +86,4 @@ Access all your Dynamic Media preset renditions and smart-crops for download, di
 
 ​![Dynamic Media renditions](/help/assets/assets/dm-renditions-content-hub.png)
 
-|Informative (default)|[!BADGE Learn More]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}|
+[!BADGE Learn More]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}|
