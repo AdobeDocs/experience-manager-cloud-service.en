@@ -10,7 +10,7 @@ The [!DNL Content Hub] lets you download and share your assets. The [!DNL Conten
 
 You can download single or multiple assets and their available renditions using [!DNL Content Hub].
 
-See the [types of renditions available in Content Hub](#types-of-renditions)..
+See the [types of renditions available in Content Hub](#types-of-renditions).
 
 ## Download one or more assets and their renditions {#download-asset-renditions}
 

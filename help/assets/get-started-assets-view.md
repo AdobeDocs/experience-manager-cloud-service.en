@@ -15,7 +15,7 @@ Managing your digital assets using [!DNL Assets View] requires only three simple
 * **Step 2**: [Search](/help/assets/search-assets-view.md) and [download](/help/assets/manage-organize-assets-view.md#download) assets.
 * **Step 3**: [Manage and organize](/help/assets/manage-organize-assets-view.md) the assets.
 
-To use [!DNL Assets View], log in at [https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets). When logging in, select `Company or School Account`. To receive access, contact your organization's administrator..
+To use [!DNL Assets View], log in at [https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets). When logging in, select `Company or School Account`. To receive access, contact your organization's administrator.
 
 <!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
