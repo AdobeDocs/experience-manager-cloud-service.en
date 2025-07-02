@@ -1,7 +1,7 @@
 ---
 title: How to use AFP output sync API? 
-description: Learn how to use the AFP Output Sync API to retrieve and synchronize output renditions generated from Adaptive Forms with external systems or storage locations.
-feature: Adaptive Forms
+description: Learn how to use the AFP Output Sync API to retrieve and synchronize output renditions.
+feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
 ---
 # Generating AFP Output Using the AEM Forms API
