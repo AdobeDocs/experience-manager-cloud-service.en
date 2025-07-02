@@ -47,7 +47,7 @@ Whether headless or headful, you can deliver the right content in the right form
 
 Edge Delivery Services is a composable set of services that allows for a high degree of flexibility in how you author content on your website. It replaces AEM Publish / Dispatcher and the traditional way of building experiences with AEM Core Components with a multi-cloud SaaS solution and pure front-end development approach.
 
-![Edge Delivery Architecture](assets/AEM-with-EDS-architecture.png)
+![Edge Delivery Architecture](assets/aem-with-eds-architecture.png)
 
 Edge Delivery Services uses GitHub so you can manage and deploy code directly from your GitHub repository. New content is added instantly without a rebuild process.
 
