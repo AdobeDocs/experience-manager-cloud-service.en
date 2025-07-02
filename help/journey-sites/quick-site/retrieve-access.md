@@ -8,6 +8,8 @@ role: Admin, Developer
 ---
 # Retrieve Git Repository Access Information {#retrieve-access}
 
+{{traditional-aem}}
+
 Learn how the front-end developer uses Cloud Manager to access git repository information.
 
 ## The Story So Far {#story-so-far}

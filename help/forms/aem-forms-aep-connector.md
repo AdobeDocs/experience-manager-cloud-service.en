@@ -75,6 +75,8 @@ Before setting up the AEP Connector in AEM Forms, ensure you have completed the 
     * Client Secret (obtained from developer console)
     * OAuth URL (There is a default URL but it can be obtained from the developer console also) 
 
+    ![AEP Cloud Configuration](/help/forms/assets/aep-cloud-configuration.png)
+
 1. Click **Connect** to establish the connection. After establishing the connection, configure these additional settings:
     * Base URL: platform.adobe.io (This is a default URL and can be obtained from the developer console also, the oauth and platform URLs are defaulted to prod URLs. In case, you are required to connect to stage - stage URLs should be used.)
     * Organization ID (This is obtained from the developer console along with client ID/secret)
@@ -88,13 +90,18 @@ Before setting up the AEP Connector in AEM Forms, ensure you have completed the 
 1. In the **source** tab, select a template
 1. In the **Data** tab, select the **Adobe Experience Platform** option.
 
-1. In the properties pane, select your cloud configuration. The system loads all available schemas from Adobe Experience Platform
+1. In the properties pane, select your cloud configuration. 
+
+    ![](/help/forms/assets/xdm-schema-integration.png)
+
+    The system loads all available schemas from Adobe Experience Platform
 
     >[!NOTE]
     >
     >
     > * Only profile-enabled and non-system-generated schemas are fetched.
     > * Initial schema loading may take some time on first-time setup.
+
 1. Select the appropriate/required fields of the schema. (See video for detailed steps)
 1. In the submission tab:
     * Select the **Submit to Adobe Experience Platform** submit action
@@ -140,20 +147,21 @@ Before setting up the AEP Connector in AEM Forms, ensure you have completed the 
 
 ### General Questions {#general-questions}
 
-**Q: Can I use this connector with any version of AEM Forms?**
-A: No, this integration is only available for AEM Forms as a Cloud Service under the Early Access program.
+**Q: "Is this connector available with multiple offerings of AEM Forms?**
+A: No, this integration is only available for AEM Forms as a Cloud Service and is under the Early Access program.
 
 **Q: Does this connector work with both Adaptive Forms Core Components and Foundation Components?**
-A: This connector works best with Adaptive Forms Core Components, which is the recommended approach for all new forms.
+A: This connector works with both Adaptive Forms Core Components and Adaptive Forms Foundation Components.
 
 **Q: Can I send data to multiple AEP datasets from a single form?**
-A: Currently, each form can only submit to one dataset. For multiple dataset submissions, you would need to create custom workflows.
+A: Currently, each form can only submit to one dataset. 
 
 **Q: Is there a limit to how many form submissions can be processed?**
-A: Form submissions are subject to your AEP streaming ingestion quotas and rate limits.
+A: Form submissions are subject to your AEP streaming ingestion [quotas and rate limits](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/api/quota).
 
+<!-- >
 **Q: Can form attachments be sent to AEP?**
-A: No, form attachments cannot be directly sent to AEP. You would need to store attachments separately and only send metadata to AEP.
+A: No, form attachments cannot be directly sent to AEP. You would need to store attachments separately and only send metadata to AEP. -->
 
 ### Implementation Questions {#implementation-questions}
 

@@ -9,9 +9,9 @@ exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
 
 Learn how to manage Edge Delivery sites in Cloud Manager by adding a CDN configuration to an existing site. Or, delete an Edge Delivery site.
 
-## Add a CDN configuration to an existing Edge Delivery site {#add-cdn-to-edge-delivery-site}
+## Add a Domain Mapping to an existing Edge Delivery site {#add-cdn-to-edge-delivery-site}
 
-See [Add a CDN configuration](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md).
+See [Add a Domain Mapping](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md).
 
 ## Rename an Edge Delivery Site (#rename-edge-delivery-site)
 

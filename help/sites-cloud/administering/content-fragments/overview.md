@@ -12,6 +12,10 @@ With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow 
 
 >[!IMPORTANT]
 >
+>Many features described in this section are *only* available in the [Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md); so *online* Adobe Experience Manager (AEM) as a Cloud Service, not a local instance.
+
+>[!IMPORTANT]
+>
 >Content Fragments can be accessed from two consoles: **Content Fragments** and **Assets**.
 >
 >There are also two editors for authoring Content Fragments; although the basic functionality is the same, there are some differences. Both editors are accessible from both consoles.
@@ -91,7 +95,8 @@ After the fragments have been created, you can:
   * edit, publish (to preview or production), and reference your fragments
   * collaborate with other authors using Comments
 * [Analyze](/help/sites-cloud/administering/content-fragments/analysis.md)  the structure of your Content Fragment, using the editor
-* [Access your fragments with GraphQL, for headless delivery to your applications](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md). 
+* [Access your fragments with GraphQL, for headless delivery to your applications](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+* [Integrate and use your Content Fragments in Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md) 
 * [Or use your fragments for page authoring](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]

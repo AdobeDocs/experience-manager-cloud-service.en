@@ -31,7 +31,7 @@ To prepare for content delivery using AEM's built-in CDN through Cloud Manager's
 * [Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 * [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [Introduction to SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
-* [Configure a CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+* [Configure a CDN](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
 
 **Restricting traffic**
 
@@ -72,10 +72,10 @@ For light authentication use cases including business stakeholders reviewing con
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
->title="Customer CDN points to AEM Managed CDN"
+>title="Customer CDN (or proxy) points to AEM Managed CDN"
 >abstract="AEM as Cloud Service offers an option for customers to use its existing CDN. For the publish tier, customers can optionally point to it from their own CDN, which they must manage. This scenario is allowed on a case-by-case basis, based on meeting certain pre-requisites including, but not limited to, the customer having a legacy integration with their CDN vendor that is difficult to abandon."
 
-If a customer must use its existing CDN, they can manage it and point it to the AEM-managed CDN, providing the following are satisfied:
+If a customer must use its existing CDN (or any kind of reverse proxy, for example a loadbalancer or a WAF), they can manage it and point it to the AEM-managed CDN, providing the following are satisfied:
 
 * The customer must have an existing CDN that would be onerous to replace.
 * The customer must manage it.
