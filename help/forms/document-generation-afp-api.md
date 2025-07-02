@@ -30,7 +30,7 @@ Generates an AFP (Advanced Function Presentation) file using an XDP template and
 
 ### Authorization
 
-You can either use **BasicAuth** (Admin credentials) or **BearerAuth** authorization.
+You can either use **BasicAuth** (Admin credentials) for local environments or **BearerAuth** authorization for AEM Cloud instances.
 
 ### Request
 
