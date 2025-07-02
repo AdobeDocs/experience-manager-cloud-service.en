@@ -6,7 +6,7 @@ exl-id: 58194858-6e1c-460b-bab3-3496176b2851
 ---
 # Deploy Content Hub {#deploy-content-hub}
 
-Content Hub is available as part of Experience Manager Assets as a Cloud Service for democratizing access to on-brand content for organizations and their business partners..
+Content Hub is available as part of Experience Manager Assets as a Cloud Service for democratizing access to on-brand content for organizations and their business partners.
 
 The assets that are marked Approved on Experience Manager Assets as a Cloud Service are available for asset distribution on Content Hub.
 
