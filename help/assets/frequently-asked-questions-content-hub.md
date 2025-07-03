@@ -91,3 +91,40 @@ Adobe provides migration support from Brand Portal to Content Hub that you can u
 ## Why cannot I see the Product Settings/Configuration option in Content Hub? {#ui-configuration-option-missing}
 
 To access the [Configuration User Interface](/help/assets/configure-content-hub-ui-options.md), you need to be a [Content Hub Administrator](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator). If you are assigned to the AEM Administrators product profile on the production author instance in Adobe Admin Console and you still cannot see the configuration option, ensure that the AEM Administrators product profile is not renamed. See [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md) for more details.
+
+## How Content Hub addresses the limitations of Brand Portal? {#content-hub-brand-portal-comparison} 
+
+
+The table below outlines the key differences between the two solutions:
+
+| Area | Capability |Content Hub|Brand Portal|
+|---|---|----|----|
+| Configuring distribution experience | Configure metadata for filters, asset details, and add assets page |&#10003;|&minus;|
+|  | Configure external links from portal |&#10003;|&minus;|
+|  | Configure banner messaging |&#10003;|&#10003;|
+|  | Configure banner image for branding |&#10003;|&#10003;|
+|  | Configure primary and secondary colors for UI as per branding requirements |&#10003;|&minus;|
+|Sharing assets from the DAM  | Sharing original approved assets from DAM |&#10003;|&#10003;|
+|  | Approved asset changes synced automatically |&#10003;|&minus;|
+| Search and filters | Dynamic filters (options show dynamically based on assets shared) |&#10003;|&minus;|
+|  | Seach history and search suggestions |&#10003;|&minus;|
+| Asset upload | Local drive |&#10003;|&#10003;|
+|  | OneDrive, Dropbox|&#10003;|&minus;|
+|  | Add configurable metadata while uploading assets |&#10003;|&minus;|
+| Download and renditions | Download original asset |&#10003;|&#10003;|
+|  | Share and download static renditions from DAM |&#10003;|&#10003;|
+|  | Configure dynamic rendition preset for download |&#10003;|&#10003;|
+|  Link sharing and Collections| Link share for signed-in users |&#10003;|&#10003;|
+|  | Public collections |&#10003;|&#10003;|
+|  | Search within collections |&#10003;|&minus;|
+|  | Anonymous link share |&#10003;|&#10003;|
+|  | Private collections |&#10003;|&#10003;|
+|  Permissions| ACL-based permissions |&minus;|&#10003;|
+|  | Attribute-based access control |&#10003;|&minus;|
+|  Express integration| Edit Content Hub Assets in Adobe Express and save to DAM |&#10003;|&minus;|
+|  Dashboards and reports| Insights dashboard |&#10003;|&minus;|
+|  | Download report and link share report|Coming soon|&#10003;|
+|  Multiple portals| Multiple portals connected to single DAM |Coming soon|&minus;|
+| UI Extensibility| Custom extension points on asset details page |Limited availability|&minus;|
+
+
