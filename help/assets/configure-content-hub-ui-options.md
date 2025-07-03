@@ -118,7 +118,6 @@ Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), ava
 The filters enabled on the Configuration User Interface display on the Search page:
 ![Search on Content Hub](assets/content-hub-filters1.png)
 
-
 ### Asset details {#configure-asset-details-content-hub}
 
 You can also configure the asset properties that display for each asset, such as file name, title, format, size, and so on. To do so, execute the following steps:
