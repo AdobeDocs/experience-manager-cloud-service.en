@@ -140,7 +140,7 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 
 ### Known Issues {#known-issues-21331}
 
-None.
+* SITES-33177: Section styles stored as comma separated strings are broken.
 
 ### Deprecated Features and APIs {#deprecated-21331}
 
