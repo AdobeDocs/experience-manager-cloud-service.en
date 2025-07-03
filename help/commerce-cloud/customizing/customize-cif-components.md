@@ -4,6 +4,7 @@ description: Learn how to customize AEM CIF Core Components. The tutorial covers
 feature: Commerce Integration Framework
 role: Admin
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
+index: no
 ---
 # Customize AEM CIF Core Components {#customize-cif-components}
 
