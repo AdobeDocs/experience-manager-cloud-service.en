@@ -4,6 +4,7 @@ description: Learn how to enable and verify the JSON+LD feature in AEM CIF.
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 547d3721-e094-4a42-8a7c-27e4ef97ea9c
+index: no
 ---
 # JSON-LD Metadata {#json-ld}
 

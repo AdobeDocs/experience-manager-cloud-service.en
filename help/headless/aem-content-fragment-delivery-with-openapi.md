@@ -74,7 +74,7 @@ The CORS allowed origins defined on the dispatcher configuration side, specifica
 
 The API allows new requests at a rate of up to 200 requests per second, per environment. 
 
-Once this limit is exceeded, the API starts sending 429 errors. These errors must be handled by any client applications, and failed requests retried following an exponential backoff retry.
+Once this limit is exceeded, the API starts sending [429 error](https://www.rfc-editor.org/rfc/rfc6585#section-4) responses. These errors must be handled by any client applications, and failed requests retried following an exponential backoff retry. The HTTP response comes with a specific header, `Retry-After`, that indicates to the client how long they need to wait before before sending the request again.
 
 <!-- 
 ## Limitations {#limitations}
