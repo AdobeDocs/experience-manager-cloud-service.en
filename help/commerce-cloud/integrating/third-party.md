@@ -5,6 +5,7 @@ thumbnail: cif-third-party-architecture.jpg
 exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c
 feature: Commerce Integration Framework
 role: Admin
+index: no
 ---
 # AEM and third-Party Commerce Integration using Commerce Integration Framework {#aem-third-party}
 
