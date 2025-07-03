@@ -192,7 +192,7 @@ The document formats supported for asset management features are as follows.
 
 ## Tips and limitations {#limitations-and-tips}
 
-* Currently, the file size limit for metadata extraction is approximately 15 GB. When uploading large assets, sometimes metadata extraction operation fails.
+* Currently, the file size limit for metadata extraction is approximately 15 GB. When uploading large assets, sometimes the metadata extraction operation fails.
 
 ## Dynamic Media - Supported input video formats for transcoding {#video-dynamic-media-transcoding}
 
