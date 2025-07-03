@@ -28,7 +28,7 @@ The following legend describes the level of support for each format.
 | *             | See remarks below the table |
 | -             | Not applicable              |
 
->[!Important]
+>[!IMPORTANT]
 >
 >[!DNL Adobe Experience Manager Assets] supports only the file formats listed in this article.
 >Some features might seem to work with other formats, but these formats are not officially supported. Results may be inconsistent, and features may not work as expected.
