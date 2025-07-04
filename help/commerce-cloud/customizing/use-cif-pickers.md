@@ -43,6 +43,7 @@ Also, standard dialog box field properties like `name`, `fieldLabel`, or `fieldD
 >[!CAUTION]
 >
 >The `cifproductfield` component requires the `cif.shell.picker` clientlib. To add a clientlib to a dialog, you can use the extraClientlibs property.
+
 >[!CAUTION]
 >
 >Starting with CIF Core Components version 2.0.0 the support for `id` was removed and replaced with `uid`. Adobe recommends using `sku` or `slug` as a product identifier. Adobe continues to support `id` only for projects using CIF Core Components version 1.x.
@@ -73,6 +74,7 @@ Also, standard dialog box field properties like `name`, `fieldLabel`, or `fieldD
 >[!CAUTION]
 >
 >Same as the `cifproductfield` component the `cifcategoryfield` component also requires the `cif.shell.picker` clientlib. To add a clientlib to a dialog, you can use the `extraClientlibs` property. See [Customizing Dialogs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) of the AEM Core Components documentation.
+
 >[!CAUTION]
 >
 >Starting with CIF Core Components version 2.0.0 the support for `id` was removed and replaced with `uid`. Adobe recommends using `uid` or `urlPath` as category identifier. Adobe continue to support `id` & `idAndUrlPath` only for projects using CIF Core Components version 1.x.
