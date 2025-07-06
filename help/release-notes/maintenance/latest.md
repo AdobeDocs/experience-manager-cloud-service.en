@@ -10,21 +10,21 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release X {#X}
+## Release 21484 {#21484}
 
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on July 8, 2025. The previous maintenance release was release 21331.
+Summarized below are the continuous improvements for maintenance release 21484, which was publicly released on July 8, 2025. The previous maintenance release was release 21331.
 
 The 2025.7.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-X}
-
-* SITES-33177: Section styles stored as comma separated strings are broken.
-
-### Fixed Issues {#fixed-issues-X}
+### Enhancements {#enhancements-21484}
 
 None.
 
-#### AEM Guides {#guides-X}
+### Fixed Issues {#fixed-issues-21484}
+
+None.
+
+#### AEM Guides {#guides-21484}
 
 * GUIDES-29781: When an XML comment is added within an element in the Source view, the leading and trailing spaces around the comment are lost upon switching views.
 * GUIDES-29078: When opening a topic in Author view after a browser refresh, previously applied tags in the File Properties panel are not retained, and adding new tags overwrites the existing ones, particularly when a large number of tags are available for selection.
@@ -34,19 +34,19 @@ None.
 
 For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
 
-### Known Issues {#known-issues-X}
+### Known Issues {#known-issues-21484}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-X}
+### Deprecated Features and APIs {#deprecated-21484}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-X}
+### Security Fixes {#security-21484}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses X identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 5 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-X}
+### Embedded Technologies {#embedded-tech-21484}
 
 |Technology|Version|Link|
 |---|---|---|
