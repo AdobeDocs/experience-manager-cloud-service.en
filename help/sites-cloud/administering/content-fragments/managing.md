@@ -245,13 +245,13 @@ To open your fragment for editing:
 * In the **Copy** action you can select whether to include children (referenced fragments). This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
 
   * Creates a copy of the selected Content Fragment at its location.
-  * Creates copies of all fragments that are referenced by the selected fragment; these are copied to the same location as the referenced fragment.
+  * Creates copies of all fragments that are referenced by the selected fragment; these are copied to the same location as the original referenced fragment.
 
 * The copy of the selected fragment will reference the copies of the referenced fragments.
 
 * A deep copy is made; so if a referenced Content Fragment also references fragments, these are copied as well.
 
-* The **Copy** action does not affect other content references, such as assets or images.
+* The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset content itself.
 
 <!--
 **Copy** creates a copy of the selected fragment at its location.
@@ -259,13 +259,13 @@ To open your fragment for editing:
 * In the **Copy** action you can select whether to include children (referenced fragments). This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
 
   * Creates a copy of the selected Content Fragment at its location.
-  * Creates copies of all fragments that are referenced by the selected fragment; these are copied to the same location as the selected fragment.
+  * Creates copies of all fragments that are referenced by the selected fragment; these are copied to the same location as the original selected fragment.
 
 * The copy of the selected fragment will reference the copies of the referenced fragments.
 
 * A deep copy is made; so if a referenced Content Fragment also references fragments, these are copied as well.
 
-* The **Copy** action does not affect other content references, such as assets or images.
+* The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset content itself.
 -->
 
 ## View and Manage Tags {#manage-tags}
