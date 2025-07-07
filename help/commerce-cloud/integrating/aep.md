@@ -11,6 +11,7 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
+index: no
 ---
 
 # AEM-CIF core components and Adobe Experience Platform integration {#aem-cif-aep-integration}
