@@ -11,6 +11,7 @@ kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
 role: Admin
+index: no
 ---
 # Enrich Product Data with Associated AEM Content
 
