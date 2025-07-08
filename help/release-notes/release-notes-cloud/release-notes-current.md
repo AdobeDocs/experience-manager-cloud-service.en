@@ -54,6 +54,13 @@ Content Hub now lets you [control access to collections during creation, ensurin
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
+
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### Pre-release Features 
+
+* [Generate and Sync AFP Renditions from Adaptive Forms](/help/forms/document-generation-afp-api.md): The AFP Output Sync API enables administrators and users to generate AFP (Advanced Function Presentation) output from Adaptive Forms and synchronize the output with external systems or storage locations. AFP is a high-performance document format optimized for printing, often used in large-scale enterprise environments.
+
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ###  Updated Deprecation Process {#updated-deprecation-process}
