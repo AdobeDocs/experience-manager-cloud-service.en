@@ -4,7 +4,7 @@ description: Learn how to use the AFP Output Sync API to retrieve and synchroniz
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
 ---
-# Generating AFP Output Using the AEM Forms API
+# Generate AFP Output Using the AEM Forms API
 
 Advanced Function Presentation (AFP) is a high-performance document format designed primarily for printing purposes.  
 This guide outlines all necessary steps and configurations to generate AFP output using AEM Forms.
