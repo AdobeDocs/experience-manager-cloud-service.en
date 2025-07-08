@@ -107,7 +107,7 @@ The table below outlines the key differences between the two solutions:
 |Sharing assets from the DAM  | Sharing original approved assets from DAM |&#10003;|&#10003;|
 |  | Approved asset changes synced automatically |&#10003;|&minus;|
 | Search and filters | Dynamic filters (options show dynamically based on assets shared) |&#10003;|&minus;|
-|  | Seach history and search suggestions |&#10003;|&minus;|
+|  | Search history and search suggestions |&#10003;|&minus;|
 | Asset upload | Local drive |&#10003;|&#10003;|
 |  | Add configurable metadata while uploading assets |&#10003;|&minus;|
 | Download and renditions | Download original asset |&#10003;|&#10003;|
