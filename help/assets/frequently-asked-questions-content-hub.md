@@ -109,7 +109,6 @@ The table below outlines the key differences between the two solutions:
 | Search and filters | Dynamic filters (options show dynamically based on assets shared) |&#10003;|&minus;|
 |  | Seach history and search suggestions |&#10003;|&minus;|
 | Asset upload | Local drive |&#10003;|&#10003;|
-|  | OneDrive, Dropbox|&#10003;|&minus;|
 |  | Add configurable metadata while uploading assets |&#10003;|&minus;|
 | Download and renditions | Download original asset |&#10003;|&#10003;|
 |  | Share and download static renditions from DAM |&#10003;|&#10003;|
