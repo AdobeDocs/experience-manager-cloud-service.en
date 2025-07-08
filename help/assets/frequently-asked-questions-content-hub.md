@@ -38,7 +38,7 @@ It is possible to evaluate Content Hub without impacting your users/production c
 
 There is an early access program to Content Hub on Sandbox programs and their author production environments. For more information, see [Introduction to Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). To learn more about the early access program, reach out to your Adobe account team. 
 
-Content Hub is not yet available for non-production environments (stage & dev). Expected avaialbility for stage/dev environments for Assets Ultimate is March 2025.
+Content Hub is not yet available for non-production environments (stage & dev). Expected availability for stage/dev environments for Assets Ultimate is March 2025.
 
 ## Why do not I see any assets after logging on to Content Hub? {#no-assets-in-content-hub}
 
