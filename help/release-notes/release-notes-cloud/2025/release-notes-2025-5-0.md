@@ -106,11 +106,10 @@ Access all your [Dynamic Media preset renditions and smart-crops for download, d
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-<!--
 ### Pre-release Features 
 
-* [Universal Editor - Form Fragments](/help/edge/docs/forms/universal-editor/creating-form-fragments.md): The Universal Editor now allows you to create and reuse Form Fragments for Adaptive Forms. These fragments are reusable form sections (e.g., contact details, consent fields) that can be built once and applied across multiple forms. This feature streamlines form creation, ensures consistency, and improves authoring efficiency.
- 
+* [Universal Editor for Adaptive Forms and Form Fragments](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): The Universal Editor now supports the creation of both Adaptive Forms and reusable Form Fragments. Authors can visually build forms, configure submit actions, and add reCAPTCHA validation, all in a simplified, WYSIWYG authoring environment. This capability accelerates form creation, enhances consistency, and improves protection against spam and automated abuse.
+  
 * [SharePoint Document Library - Save Attachments with Original Filenames](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): You now have the option to save form attachments using their original filenames when storing them in a SharePoint Document Library. This enhancement simplifies the identification and management of uploaded files.
 
 * **Rule Editor**:
@@ -123,11 +122,11 @@ Access all your [Dynamic Media preset renditions and smart-crops for download, d
 
 The AEM Forms Early Access Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations, and help shape their development.
 
-This release notes lists the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). -->
+This release notes lists the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
 #### Adobe Experience Platform (AEP) Integration with Forms
 
-Integration capabilities between Forms and AEP are now available for early adopters.
+* [Integration of AEM Forms with Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): The AEM Forms to Adobe Experience Platform Connector enables seamless integration between Adaptive Forms and Adobe Experience Platform. This feature allows form data to be mapped to XDM schemas and submitted directly to AEP in real time. It streamlines data capture for personalization and activation use cases across Adobe Experience Cloud solutions.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
