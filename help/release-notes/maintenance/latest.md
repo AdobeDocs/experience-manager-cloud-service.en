@@ -140,7 +140,8 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 
 ### Known Issues {#known-issues-21331}
 
-None.
+* SITES-33177: Section styles stored as comma separated strings are broken.
+* SITES-33262: Blocks with no name property fail page rendering and publishing.
 
 ### Deprecated Features and APIs {#deprecated-21331}
 

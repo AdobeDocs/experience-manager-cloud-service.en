@@ -5,43 +5,6 @@ exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
 ---
 # Configure Content Hub user interface {#configure-content-hub-user-interface}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
-        </td>
-    </tr>
-</table>
-
 >[!CONTEXTUALHELP]
 >id="configure_content_hub"
 >title="Configure Content Hub user interface"
@@ -51,12 +14,6 @@ exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
 <!-- ![Download assets](assets/download-asset.jpg) -->
 
 ![Configure assets on Content Hub](assets/configure-assets.png)
-
->[!AVAILABILITY]
->
->Content Hub guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
->
->[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Experience Manager Assets enables administrators to configure the options available on the Content Hub user interface. Based on the configuration options selected by the administrators, the Content Hub users are able to view fields on Content Hub. The configuration options include:
 
@@ -133,11 +90,10 @@ Click the **[!UICONTROL Auto-approval]** toggle if you need all assets that you 
 
 Click **[!UICONTROL Save]** after making all modifications to apply the changes.
 
-![Configuration UI upload details on Content Hub](assets/configuration-ui-upload-details.png)
+![Configuration UI upload details on Content Hub](/help/assets/assets/import-content-hub1.png)
 
 Metadata enabled on the Configuration User Interface display on the asset upload page:
-
-![Upload metadata on Content Hub](assets/configuration-ui-add-assets.png)
+![Upload metadata on Content Hub](assets/add-assets-for-approval1.png)
 
 ### Filters {#configure-filters-content-hub}
 
@@ -157,13 +113,10 @@ Content Hub allows administrators to configure filters that display while search
    >The new filter gets displayed on the Search page only if there is at least one asset in the repository matching the filter criteria.
 
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available filter, to edit the labels or click the delete icon to delete any existing filter. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
-
-   ![Configuration UI filters on Content Hub](assets/configuration-ui-filters.png)
+![Configuration UI filters on Content Hub](assets/configuration-filter1.png)
 
 The filters enabled on the Configuration User Interface display on the Search page:
-
-![Search on Content Hub](assets/filters-for-search.png)
-
+![Search on Content Hub](assets/content-hub-filters1.png)
 
 ### Asset details {#configure-asset-details-content-hub}
 
@@ -180,24 +133,23 @@ You can also configure the asset properties that display for each asset, such as
 
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available property, to edit the labels or click the delete icon to delete any existing asset detail. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
 
-   ![Configuration UI asset details on Content Hub](assets/configuration-ui-asset-details.png)
+   ![Configuration UI asset details on Content Hub](assets/configuration-asset-details.png)
 
 The properties enabled on the Configuration User Interface display on the Asset Details page:
 
-![Asset properties on Content Hub](assets/config-ui-asset-properties.png)
+![Asset properties on Content Hub](assets/asset-details-page-content-hub1.png)
 
 ### Asset Card {#asset-card}
 
-You can also configure the key metadata fields that you need to display on the **Asset Card** up to a maximum of 6 fields. To do so, execute the following steps:
-
-![key metadata on Asset Card](/help/assets/assets/asset-card-key-metadata.png)
+You can also configure the key metadata properties that you need to display on the **Asset Card** up to a maximum of 6 fields. 
+![key metadata on Asset Card](/help/assets/assets/asset-card-metadata.png)
+Execute the following steps to configure the metadata properties to display them on the **[!UICONTROL Asset card]**:
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **Asset Card**.
 2. Click **Add metadata**. The **Add asset card metadata** dialog box displays.
 3. Specify the metadata name in the **Label** field and select a metadata property in the **Metadata** field.
 4. Click **Confirm** and then click **Save** to apply the changes so that the new property display on the asset details page.
-![asset card](/help/assets/assets/asset-card.png)
-
+![asset card](/help/assets/assets/configuration-asset-card1.png)
 Similarly, click ![edit](/help/assets/assets/edit-content-hub.svg) that is available next to each available property, to make any required modifications or click ![delete](/help/assets/assets/delete-content-hub.svg) to delete any existing metadata property. Click **Save** after making all modifications to apply the changes.
 
 ### Search {#configure-metadata-search-content-hub}
@@ -211,11 +163,13 @@ Administrators can define the metadata fields that are searched when a user spec
 1. Click **[!UICONTROL Save]** to apply the changes so that the new metadata property gets displayed in the list of metadata fields.
 
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available metadata property, to edit the property or click the delete icon to delete any existing property. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
-![Configuration UI Search on Content Hub](assets/configuration-ui-metadata-search.png)
+![Configuration UI Search on Content Hub](assets/configuration-search.png)
 
 ### Branding {#configure-branding-content-hub}
 
-As an administrator, customize your [!DNL Content Hub] portal to meet your branding requirements. On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page use **[!UICONTROL Banner]**, **[!UICONTROL Colors]** and **[!UICONTROL Banner image]** sections to execute the following customizations:
+As an administrator, customize your [!DNL Content Hub] portal to meet your branding requirements. 
+![reset default](/help/assets/assets/reset-default-content-hub.png)
+On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page use **[!UICONTROL Banner]**, **[!UICONTROL Colors]** and **[!UICONTROL Banner image]** sections to execute the following customizations:
 
 1. [Change the banner image from [!UICONTROL Banner image] section](#Change-the-banner-image)
 1. [Update the title and body text on the banner and change the text color from the [!UICONTROL Banner] section](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
@@ -229,21 +183,23 @@ On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]
 
 1. Click ![select image](/help/assets/assets/Browse.svg) **[!UICONTROL Select from gallery]** to select a banner image using the asset selector dialog box. The asset selector displays only approved images.
 1. Select the image, click **[!UICONTROL Select]**, and then click **[!UICONTROL Save]** to display it as the banner image of your [!DNL Content Hub] deployment.
+![banner image](/help/assets/assets/banner-image-content-hub1.png)
 
 #### Add title and body text to your banner and change the text color{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
 On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, use the respective fields in the **[!UICONTROL Banner]** section to add title and body texts to your banner.
 Click the square box next to the **[!UICONTROL Banner text color]** to select a text color from the color picker for your banner text or specify the color's hex code in the field next to the color picker square box.
+![banner text content hub](/help/assets/assets/banner-text-content-hub.png)
 
 #### Change the primary and secondary color{#Change-the-primary-and-secondary-color}
 
 On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, use the **[!UICONTROL Colors]** section to set primary and secondary colors by either selecting them using color picker or defining the color's hex code. These colors set the background, text, and icon colors of UI elements to align your [!DNL Content Hub] UI with your brand's theme.
-
+![primary and secondary color](/help/assets/assets/primary-secondary-color-content-hub1.png)
 **[!UICONTROL Primary color]:** The primary color scheme applies to selection actions, interactive elements such as checkboxes, search bars, and toggle switches across [!DNL Content Hub] including [!DNL Content Hub] home page and [!UICONTROL Configuration] page. It also applies to action options available on primary [!DNL Content Hub] interfaces such as options available on **[!UICONTROL All Assets]** and **[!UICONTROL Collections]** pages. 
 
 **[!UICONTROL Secondary color]:** On the [!DNL Content Hub] home page, the secondary color scheme applies to UI options and input fields that are available within dialog boxes. It applies to all configuration menu options available on the [!UICONTROL Configuration] page except selection actions, checkboxes, search bars, and toggle switches.
 
-### Expired assets{#expired-assets-content-hub}
+### Asset Visibility{#asset-visibility-content-hub}
 
 Administrators can control if they need expired assets to be visible on Content Hub. If the expired assets are made visible, they can also define if users can download them.
 
@@ -251,15 +207,15 @@ Expired assets do not display in Content Hub by default.
 
 To do so, execute the following steps:
 
-1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Expired Assets]**.
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Asset Visibility]**.
 
 1. In the **[!UICONTROL Visible]** section, enable the **[!UICONTROL Allow users to view expired assets]** toggle to make all expired assets visible on Content Hub.
 
 1. After enabling the visibility of assets, you can enable or disable the ability to download expired assets using the **[!UICONTROL Allow users to download expired assets]** toggle. 
-
+1. Enable the **[!UICONTROL Allow users to view assets approved for delivery]** toggle to display all assets approved for delivery in Content Hub.
 1. Click **[!UICONTROL Save]** to apply the changes.
 
-   ![Expired assets on Content Hub](assets/expired-assets-content-hub.png)
+   ![Expired assets on Content Hub](assets/asset-visibility-content-hub1.png)
 
 After enabling the visibility of assets, you can view the expired assets on Content Hub, as depicted in the following image:
 
@@ -281,7 +237,7 @@ On the [Configurations](#access-configuration-options-content-hub) user interfac
 
 * Enable or disable **[!UICONTROL Allow users to download original assets]** toggle to control the availability to download original assets.
 
-   ![Configure renditions on Content Hub](assets/config-renditions.png)
+   ![Configure renditions on Content Hub](assets/configuration-renditions1.png)
 
 For information on how to view and download renditions in Content Hub, see [download assets in Content Hub](/help/assets/download-assets-content-hub.md).
 
@@ -300,12 +256,10 @@ You can also add custom tabs in addition to standard **[!UICONTROL All Assets]**
 1. Click **[!UICONTROL Save]** to apply the changes.
 
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each URL, to edit the links or click the delete icon to delete any existing URL. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
+![Configuration UI Custom Links on Content Hub](assets/configuration-custom-links1.png)
 
-   ![Configuration UI Custom Links on Content Hub](assets/configuration-ui-custom-links.png)
-
-   The custom link display as a new tab next to Insights tab on the Content Hub home page.
-
-   ![Configuration UI Custom Links tabs on Content Hub](assets/configuration-ui-custom-link-tab.png)
+The custom link display as a new tab next to Insights tab on the Content Hub home page.
+![Configuration UI Custom Links tabs on Content Hub](assets/configuration-ui-custom-link-tab.png)
 
 ### Collections and Sharing {#configure-collections-content-hub}
 
@@ -321,7 +275,7 @@ Administrators can define user permissions while crating collections. To enable 
 
 1. Click **[!UICONTROL Save]** to apply the changes. 
 
-    ![Configuration Collections tab on Content Hub](assets/collections-and-sharing.png)
+    ![Configuration Collections tab on Content Hub](assets/collections-and-sharing1.png)
 
 <!--
 ### Enable public link sharing {#enable-public-link-sharing}
