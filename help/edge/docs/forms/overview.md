@@ -40,20 +40,23 @@ This guide will:
 *   **CORS (Cross-Origin Resource Sharing):** A browser security feature that needs configuration when embedding forms from different domains.
 *   **CDN (Content Delivery Network):** A network of servers that delivers web content quickly to users based on their geographic location.
 
+
 **Conceptual Diagram of Edge Delivery Services Form Interaction**
-    
+
+<!--  
 ```mermaid
 graph LR
-    User[User on Device] -->|Interacts| EdgeForm[Edge-Delivered Form Page]
-    EdgeForm -->|Loads Instantly| CDN[CDN Edge Server]
-    CDN -->|Serves Content| User
-    EdgeForm -->|Submits Data| Backend[Backend Processing - e.g. Forms Submission Service / AEM Publish]
+    User[User on Device] >|Interacts| EdgeForm[Edge-Delivered Form Page]
+    EdgeForm >|Loads Instantly| CDN[CDN Edge Server]
+    CDN >|Serves Content| User
+    EdgeForm >|Submits Data| Backend[Backend Processing - e.g. Forms Submission Service / AEM Publish]
     style User fill:#f9f,stroke:#333,stroke-width:2px
     style EdgeForm fill:#ccf,stroke:#333,stroke-width:2px
     style CDN fill:#9cf,stroke:#333,stroke-width:2px
     style Backend fill:#fca,stroke:#333,stroke-width:2px
-```
+``` -->
 
+![Form Intercation](/help/forms/assets/eds-form-interaction.png)
 This diagram shows a user interacting with a form delivered quickly via a CDN. The data they submit is then handled by a backend system.
 
 ## How Forms Work on the Edge?
@@ -69,20 +72,22 @@ With EDS, your website content (including the structure of your forms) can origi
 
 **Simplified Edge Delivery Services Architecture with Forms**
 
+<!--
 ```mermaid
     graph TD
-        UserStart[<img src='https://img.icons8.com/ios-filled/50/000000/user.png' width='30' /> User on Device] -->|Interacts| EdgeForm[Edge-Delivered Form Page]
-        EdgeForm -->|Loads Instantly| CDN[CDN Edge Server]
-        CDN -->|Serves Content| UserEnd[<img src='https://img.icons8.com/ios-filled/50/000000/user.png' width='30' /> User on Device]
-        EdgeForm -->|Submits Data| Backend[Backend Processing - Form Submission Service / AEM Publish]
+        UserStart[<img src='https://img.icons8.com/ios-filled/50/000000/user.png' width='30' /> User on Device] >|Interacts| EdgeForm[Edge-Delivered Form Page]
+        EdgeForm >|Loads Instantly| CDN[CDN Edge Server]
+        CDN >|Serves Content| UserEnd[<img src='https://img.icons8.com/ios-filled/50/000000/user.png' width='30' /> User on Device]
+        EdgeForm >|Submits Data| Backend[Backend Processing - Form Submission Service / AEM Publish]
 
         style UserStart fill:#f9f,stroke:#333,stroke-width:2px
         style UserEnd fill:#f9f,stroke:#333,stroke-width:2px
         style EdgeForm fill:#ccf,stroke:#333,stroke-width:2px
         style CDN fill:#9cf,stroke:#333,stroke-width:2px
         style Backend fill:#fca,stroke:#333,stroke-width:2px
-```
+``` -->
 
+![Architecture](/help/forms/assets/eds-simplified-architecture.png)
 This diagram shows the journey: forms are defined in an authoring system, published to the edge, served to users, and submitted data is processed by a backend.
 
 ## Choosing Your Form Authoring Method
@@ -94,22 +99,24 @@ You have three main ways to create forms for your Edge Delivery Services sites. 
 Use this decision tree to help you choose:
 
 **Form Authoring Decision Tree**
-    
+<!--    
 ```mermaid
     graph TD
-        A{Start: I need to create a form for an Edge Delivery Services site} --> B{What are my team's primary content creation tools & skills?}
-        B -- "We mainly use Word / Google Docs / Sheets" --> C{How complex is the form and where does the data need to go?}
-        B -- "We use AEM and prefer visual tools (Marketers or Designers)" --> D[Use Universal Editor - WYSIWYG]
-        B -- "Our site content is managed in Document Authoring (DA)" --> E[Use Document Authoring - Embed Forms]
-        C -- "Simple to moderate form, data to a spreadsheet or email" --> F[Use Document-Based Authoring]
-        C -- "More complex logic or needs AEM backend integration" --> D
-        E --> G[Create form using Document-Based Authoring or Universal Editor, then embed in your DA page]
+        A{Start: I need to create a form for an Edge Delivery Services site} > B{What are my team's primary content creation tools & skills?}
+        B -- "We mainly use Word / Google Docs / Sheets" > C{How complex is the form and where does the data need to go?}
+        B -- "We use AEM and prefer visual tools (Marketers or Designers)" > D[Use Universal Editor - WYSIWYG]
+        B -- "Our site content is managed in Document Authoring (DA)" > E[Use Document Authoring - Embed Forms]
+        C -- "Simple to moderate form, data to a spreadsheet or email" > F[Use Document-Based Authoring]
+        C -- "More complex logic or needs AEM backend integration" > D
+        E > G[Create form using Document-Based Authoring or Universal Editor, then embed in your DA page]
 
         style A fill:#f9f,stroke:#333,stroke-width:2px
         style F fill:#ccf,stroke:#333,stroke-width:2px
         style D fill:#ccf,stroke:#333,stroke-width:2px
         style G fill:#ccf,stroke:#333,stroke-width:2px
-```
+``` -->
+
+![Selecting right platform](/help/forms/assets/eds-authoring-selection.png)
 
 This decision tree helps you select an authoring method based on your team and form needs.
 
@@ -143,21 +150,22 @@ You define your form's fields, labels, and types directly in a Word document or 
 Forms created this way usually [send their data to the AEM Forms Submission Service](/help/forms/forms-submission-service.md). You'll configure this (often in the source document itself) to send data to a Google Sheet, an Excel file on OneDrive/SharePoint, or as an email.
 
 **Document-Based Authoring Concept**
-    
+<!--    
 ```mermaid
     graph LR
         subgraph Authoring["You define your form in a Google Sheet or Word Document"]
         Sheet[Spreadsheet or Document with field definitions:\nField Name - Type - Label\nemail - email - Email Address\nmessage - textarea - Your Message]
     end
 
-        Sheet -->|Edge Delivery Services automatically converts it| JSON[Internal Form Definition as JSON]
-    JSON -->|A 'Form Block' on your page renders it as| HTMLForm[Live HTML Form on Your Website]
+        Sheet >|Edge Delivery Services automatically converts it| JSON[Internal Form Definition as JSON]
+    JSON >|A 'Form Block' on your page renders it as| HTMLForm[Live HTML Form on Your Website]
 
         style Sheet fill:#e6ffe6,stroke:#333
         style JSON fill:#e6e6ff,stroke:#333
         style HTMLForm fill:#ffe6e6,stroke:#333
-```
+```-->
 
+![Document based](/help/forms/assets/eds-doc-based.png)
 This diagram shows how a form defined in a document becomes a live web form.
 
 ### Forms Visually with Universal Editor
@@ -190,7 +198,8 @@ Forms built with Universal Editor can:
 *  Submit data to your AEM Publish instance for more advanced processing (like starting an AEM Workflow, using the Form Data Model, or integrating with other enterprise systems).
 
 **Universal Editor Concept**
-    
+
+<!--    
 ```mermaid
     graph TD
     subgraph UE_Interface["Universal Editor Interface in your Browser"]
@@ -199,13 +208,15 @@ Forms built with Universal Editor can:
         ComponentPalette[Available Form Components:\nInput / Dropdown / Button\nDrag and drop]
         PropertiesPanel[Configure Selected Component:\nLabel / Validation / Rules]
     end
-    ComponentPalette -->|Drag & Drop onto| Canvas
-    Canvas -->|Select a component to edit its| PropertiesPanel
-    UE_Interface -->|Creates| RenderedForm[Live Form on Your Website]
+    ComponentPalette >|Drag & Drop onto| Canvas
+    Canvas >|Select a component to edit its| PropertiesPanel
+    UE_Interface >|Creates| RenderedForm[Live Form on Your Website]
 
     style UE_Interface fill:#f0f8ff,stroke:#333
     style RenderedForm fill:#ffe6e6,stroke:#333
-```
+```-->
+
+![Universal Editor](/help/forms/assets/eds-ue-based.png)
 
 This diagram shows the main parts of the Universal Editor used for form building.
 
@@ -232,12 +243,12 @@ DA itself is **not a tool for building forms from scratch**. Instead, you use DA
 1. **Embed the Form:** Use a specific "block" or component within your DA page to reference and embed the form from its URL. The DA page will then fetch and display this externally created form.
 
 **Document Authoring with Embedded Form**
-
+<!--
 ```mermaid
     graph TD
     subgraph FormCreation["1. Create Form using other methods"]
-        UE_Form[Universal Editor Form] -->|Published to| FormLocation[Form lives at its own Edge Delivery Services URL:\nfor example: /forms/my-contact-form]
-        DocBased_Form[Document-Based Form] -->|Published to| FormLocation
+        UE_Form[Universal Editor Form] >|Published to| FormLocation[Form lives at its own Edge Delivery Services URL:\nfor example: /forms/my-contact-form]
+        DocBased_Form[Document-Based Form] >|Published to| FormLocation
     end
 
     subgraph DA_Content["2. Author Page in Document Authoring"]
@@ -245,14 +256,16 @@ DA itself is **not a tool for building forms from scratch**. Instead, you use DA
         EmbedBlock[On DA Page, add 'Embed Form' Block\nPoints to /forms/my-contact-form]
     end
 
-    DAPage --> EmbedBlock
-    User[User visits your DA Page] --> DAPage
-    EmbedBlock -->|DA Page fetches and displays| FormLocation[The Form appears on your DA Page]
+    DAPage > EmbedBlock
+    User[User visits your DA Page] > DAPage
+    EmbedBlock >|DA Page fetches and displays| FormLocation[The Form appears on your DA Page]
 
     style FormCreation fill:#e6ffe6,stroke:#333
     style DA_Content fill:#ffe6cc,stroke:#333
     style FormLocation fill:#ccf,stroke:#333
-```
+```-->
+
+![Document Authoring](/help/forms/assets/eds-da-based.png)
 
 This diagram shows that you first create a form using UE or Docs, then embed it into a page you build in Document Authoring.
 
@@ -270,22 +283,22 @@ This diagram shows that you first create a form using UE or Docs, then embed it 
 | **Best For...**                  | Rapid creation of simple forms by content teams, quick data capture. | Marketers, business users needing visual control, complex forms, or deep AEM integration. | Sites where primary content is managed in DA, requiring forms from other sources. |
 
 **Enhanced Decision Tree**
-
+<!--
 ```mermaid
     graph TD
-    A{Start Here: I need a form on my Edge Delivery Services Site} --> B{What's my team's main authoring tool & skill for form content?};
-    B -- "Word/Google Docs" --> C{How complex is the form & data destination?};
-    C -- "Simple form, data to Sheet/Email" --> Sol1[CHOOSE: Document-Based Authoring + Forms Submission Service];
-    C -- "Needs more logic OR AEM backend\nlike Workflow or FDM" --> Sol2[CONSIDER: Can Universal Editor meet this need better?];
+    A{Start Here: I need a form on my Edge Delivery Services Site} > B{What's my team's main authoring tool & skill for form content?};
+    B -- "Word/Google Docs" > C{How complex is the form & data destination?};
+    C -- "Simple form, data to Sheet/Email" > Sol1[CHOOSE: Document-Based Authoring + Forms Submission Service];
+    C -- "Needs more logic OR AEM backend\nlike Workflow or FDM" > Sol2[CONSIDER: Can Universal Editor meet this need better?];
 
-    B -- "AEM User / Visual Editor needed\nMarketer or Designer" --> D{Where does the form data need to go?};
-    D -- "Simple - to Sheet/Email" --> Sol3[CHOOSE: Universal Editor + Forms Submission Service];
-    D -- "Advanced - AEM Workflow, FDM,\n3rd Party via AEM" --> Sol4[CHOOSE: Universal Editor + AEM Publish Submissions\nRequires additional setup];
+    B -- "AEM User / Visual Editor needed\nMarketer or Designer" > D{Where does the form data need to go?};
+    D -- "Simple - to Sheet/Email" > Sol3[CHOOSE: Universal Editor + Forms Submission Service];
+    D -- "Advanced - AEM Workflow, FDM,\n3rd Party via AEM" > Sol4[CHOOSE: Universal Editor + AEM Publish Submissions\nRequires additional setup];
 
-    B -- "Our main site content is in Document Authoring (DA)" --> Sol5[STRATEGY: Author form using Sol1, Sol2, Sol3 or Sol4 first\nTHEN embed that form into your DA page];
+    B -- "Our main site content is in Document Authoring (DA)" > Sol5[STRATEGY: Author form using Sol1, Sol2, Sol3 or Sol4 first\nTHEN embed that form into your DA page];
 
-    A --> F{Will this form be embedded or fetched from another site or domain?};
-    F -- "Yes" --> G[IMPORTANT: Configure CORS on the site hosting the form.\nEnsure any form JavaScript blocks are available where the form is displayed];
+    A > F{Will this form be embedded or fetched from another site or domain?};
+    F -- "Yes" > G[IMPORTANT: Configure CORS on the site hosting the form.\nEnsure any form JavaScript blocks are available where the form is displayed];
 
     style Sol1 fill:#90ee90,stroke:#333
     style Sol2 fill:#fffacd,stroke:#333
@@ -293,8 +306,9 @@ This diagram shows that you first create a form using UE or Docs, then embed it 
     style Sol4 fill:#90ee90,stroke:#333
     style Sol5 fill:#add8e6,stroke:#333
     style G fill:#ffb6c1,stroke:#333
-```
+```-->
 
+![Decision Tree](/help/forms/assets/eds-enhanced-decision.png)
 
 ## Feature comparison of Authoring Methods
 
