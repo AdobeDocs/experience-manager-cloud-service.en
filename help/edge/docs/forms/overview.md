@@ -1,7 +1,6 @@
 ---
 title: Edge Delivery Services for AEM Forms Overview
-description: Edge Delivery Services for AEM Forms
- built for peak performance, empowering you to envision the future of streamlined data collection and user engagement.
+description: Edge Delivery Services for AEM Forms built for peak performance, empowering you to envision the future of streamlined data collection and user engagement.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
@@ -9,14 +8,16 @@ role: Admin, Architect, Developer
 
 # Getting Started with Forms on AEM Edge Delivery Services
 
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
 This guide helps you understand and implement forms using Adobe Experience Manager (AEM) Edge Delivery Services (EDS). Whether you are creating a simple contact form or a complex data collection tool, this page walks you through your options.
 
 ## Understanding Forms in Edge Delivery Services
 
-Edge Delivery Services is Adobe's modern solution for delivering web content, including forms, with exceptional performance and agility. By using EDS for your forms, you can:
+Edge Delivery Services is Adobe's modern solution for delivering web content, including forms, with exceptional performance and agility. By using Edge Delivery Services for your forms, you can:
 
 * **Deliver Faster Experiences:** Forms load incredibly quickly because they are served from a global network of edge servers (CDNs) close to your users. This improves user satisfaction and can increase form completion rates.
-* **Update Forms More Easily:** The EDS approach often allows for faster development cycles and content updates, so you can adapt your forms quickly.
+* **Update Forms More Easily:** The Edge Delivery Services approach often allows for faster development cycles and content updates, so you can adapt your forms quickly.
 * **Build Modern, Responsive Forms:** Create forms that look great and work seamlessly on any device.
 * **Benefit from Scalability and Reliability:** Your forms will be as robust and scalable as the underlying edge infrastructure.
 
@@ -33,20 +34,20 @@ This guide will:
 *   **AEM Forms:** Adobe's solution for creating, managing, and processing forms.
 *   **Universal Editor (UE):** A visual, WYSIWYG editor for AEM content, including forms.
 *   **Document-Based Authoring:** Creating forms using Microsoft Word or Google Docs/Sheets.
-*   **Document Authoring (DA):** An Adobe-hosted service for authoring content (including pages that can host forms) for EDS.
+*   **Document Authoring (DA):** An Adobe-hosted service for authoring content (including pages that can host forms) for Edge Delivery Services.
 *   **Forms Submission Service (FSS):** An Adobe service that simplifies sending form data to spreadsheets or email.
 *   **AEM Publish Instance:** The live AEM environment that can process complex form submissions.
 *   **CORS (Cross-Origin Resource Sharing):** A browser security feature that needs configuration when embedding forms from different domains.
 *   **CDN (Content Delivery Network):** A network of servers that delivers web content quickly to users based on their geographic location.
 
-Conceptual Diagram of EDS Form Interaction
+**Conceptual Diagram of Edge Delivery Services Form Interaction**
     
 ```mermaid
 graph LR
     User[User on Device] -->|Interacts| EdgeForm[Edge-Delivered Form Page]
     EdgeForm -->|Loads Instantly| CDN[CDN Edge Server]
     CDN -->|Serves Content| User
-    EdgeForm -->|Submits Data| Backend[Backend Processing - e.g. FSS / AEM Publish]
+    EdgeForm -->|Submits Data| Backend[Backend Processing - e.g. Forms Submission Service / AEM Publish]
     style User fill:#f9f,stroke:#333,stroke-width:2px
     style EdgeForm fill:#ccf,stroke:#333,stroke-width:2px
     style CDN fill:#9cf,stroke:#333,stroke-width:2px
@@ -57,27 +58,23 @@ This diagram shows a user interacting with a form delivered quickly via a CDN. T
 
 ## How Forms Work on the Edge?
 
-To effectively use forms with EDS, it helps to understand the basic architecture.
-
-**A Quick Look at Edge Delivery Services Architecture**
-
 With EDS, your website content (including the structure of your forms) can originate from various sources like AEM as a Cloud Service, SharePoint, Google Drive, or the Document Authoring (DA) service. This content is then published to a global CDN. When a user visits your site, the content is served directly from the nearest CDN edge server, ensuring maximum speed.
 
-*   **Where AEM Forms Fit In**
+<!--*   **Where AEM Forms Fit In**
     Forms in an EDS architecture are designed to be:
     *   **Fast Loading:** Form structures are often simple HTML rendered client-side.
     *   **Decoupled:** The visual part of the form (frontend) is separate from where the data goes after submission (backend).
     *   **Flexible to Create:** You have different tools to build your forms.
-    *   **Configurable for Submission:** You can send data to simple services or powerful AEM backends.
+    *   **Configurable for Submission:** You can send data to simple services or powerful AEM backends.-->
 
-    **Simplified EDS Architecture with Forms**
+**Simplified Edge Delivery Services Architecture with Forms**
 
 ```mermaid
     graph TD
         UserStart[<img src='https://img.icons8.com/ios-filled/50/000000/user.png' width='30' /> User on Device] -->|Interacts| EdgeForm[Edge-Delivered Form Page]
         EdgeForm -->|Loads Instantly| CDN[CDN Edge Server]
         CDN -->|Serves Content| UserEnd[<img src='https://img.icons8.com/ios-filled/50/000000/user.png' width='30' /> User on Device]
-        EdgeForm -->|Submits Data| Backend[Backend Processing - FSS / AEM Publish]
+        EdgeForm -->|Submits Data| Backend[Backend Processing - Form Submission Service / AEM Publish]
 
         style UserStart fill:#f9f,stroke:#333,stroke-width:2px
         style UserEnd fill:#f9f,stroke:#333,stroke-width:2px
@@ -100,7 +97,7 @@ Use this decision tree to help you choose:
     
 ```mermaid
     graph TD
-        A{Start: I need to create a form for an EDS site} --> B{What are my team's primary content creation tools & skills?}
+        A{Start: I need to create a form for an Edge Delivery Services site} --> B{What are my team's primary content creation tools & skills?}
         B -- "We mainly use Word / Google Docs / Sheets" --> C{How complex is the form and where does the data need to go?}
         B -- "We use AEM and prefer visual tools (Marketers or Designers)" --> D[Use Universal Editor - WYSIWYG]
         B -- "Our site content is managed in Document Authoring (DA)" --> E[Use Document Authoring - Embed Forms]
@@ -118,7 +115,7 @@ This decision tree helps you select an authoring method based on your team and f
 
 ### Creating Forms with Documents (Word/Google Docs)
 
-This method is great for quickly creating forms if your team is comfortable with Microsoft Word or Google Docs/Sheets.
+This method is great for quickly [creating forms if your team is comfortable with Microsoft Word or Google Docs/Sheets](/help/edge/docs/forms/create-forms.md).
 
 **How It Works: From Document to Web Form**
 
@@ -143,7 +140,7 @@ You define your form's fields, labels, and types directly in a Word document or 
 
 **How Submissions Work (Primarily Forms Submission Service)**
 
-Forms created this way usually send their data to the AEM Forms Submission Service. You'll configure this (often in the source document itself) to send data to a Google Sheet, an Excel file on OneDrive/SharePoint, or as an email.
+Forms created this way usually [send their data to the AEM Forms Submission Service](/help/forms/forms-submission-service.md). You'll configure this (often in the source document itself) to send data to a Google Sheet, an Excel file on OneDrive/SharePoint, or as an email.
 
 **Document-Based Authoring Concept**
     
@@ -153,7 +150,7 @@ Forms created this way usually send their data to the AEM Forms Submission Servi
         Sheet[Spreadsheet or Document with field definitions:\nField Name - Type - Label\nemail - email - Email Address\nmessage - textarea - Your Message]
     end
 
-        Sheet -->|EDS automatically converts it| JSON[Internal Form Definition as JSON]
+        Sheet -->|Edge Delivery Services automatically converts it| JSON[Internal Form Definition as JSON]
     JSON -->|A 'Form Block' on your page renders it as| HTMLForm[Live HTML Form on Your Website]
 
         style Sheet fill:#e6ffe6,stroke:#333
@@ -165,7 +162,7 @@ This diagram shows how a form defined in a document becomes a live web form.
 
 ### Forms Visually with Universal Editor
 
-The Universal Editor offers a modern, drag-and-drop interface for building forms directly in your web browser.
+The [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) offers a modern, drag-and-drop interface for building forms directly in your web browser.
 
 **How It Works: Drag-and-Drop Form Building**
         
@@ -189,7 +186,7 @@ You use a visual interface to drag form components (like input fields, buttons, 
 
 Forms built with Universal Editor can:
 
-*  Use the simple Forms Submission Service (for sending data to spreadsheets or email).
+*  Use the simple [Forms Submission Service](/help/forms/forms-submission-service.md) (for sending data to spreadsheets or email).
 *  Submit data to your AEM Publish instance for more advanced processing (like starting an AEM Workflow, using the Form Data Model, or integrating with other enterprise systems).
 
 **Universal Editor Concept**
@@ -214,7 +211,7 @@ This diagram shows the main parts of the Universal Editor used for form building
 
 ### Using Forms with Document Authoring (DA)
     
-Document Authoring (DA) is an Adobe-hosted service for creating and managing your main website content (pages, articles) that will be delivered via Edge Delivery Services. It's an alternative to using SharePoint or Google Drive for your EDS source content.
+[Document Authoring (DA)](https://www.aem.live/developer/da-tutorial) is an Adobe-hosted service for creating and managing your main website content (pages, articles) that will be delivered via Edge Delivery Services. It's an alternative to using SharePoint or Google Drive for your Edge Delivery Services source content.
 
 **Understanding Document Authoring (DA) for Edge Delivery Services Content**
 
@@ -239,7 +236,7 @@ DA itself is **not a tool for building forms from scratch**. Instead, you use DA
 ```mermaid
     graph TD
     subgraph FormCreation["1. Create Form using other methods"]
-        UE_Form[Universal Editor Form] -->|Published to| FormLocation[Form lives at its own EDS URL:\nfor example: /forms/my-contact-form]
+        UE_Form[Universal Editor Form] -->|Published to| FormLocation[Form lives at its own Edge Delivery Services URL:\nfor example: /forms/my-contact-form]
         DocBased_Form[Document-Based Form] -->|Published to| FormLocation
     end
 
@@ -269,14 +266,14 @@ This diagram shows that you first create a form using UE or Docs, then embed it 
 | **Typical Form Complexity**      | Simple to Moderate                    | Moderate to Complex, Enterprise-grade   | Depends on the embedded form              |
 | **Submission Option 1 (Simple)** | Forms Submission Service (to Sheet/Email) | Forms Submission Service (to Sheet/Email) | Follows embedded form's setup           |
 | **Submission Option 2 (Advanced)**| N/A                                   | AEM Publish (Workflow, FDM, etc.)       | Follows embedded form's setup             |
-| **AEM Backend Integration**      | Minimal                               | High (with AEM Publish submission)      | Indirectly, via embedded UE form          |
+| **AEM Backend Integration**      | Minimal                               | High (with AEM Publish submission)      | Indirectly, via embedded Universal Editor form          |
 | **Best For...**                  | Rapid creation of simple forms by content teams, quick data capture. | Marketers, business users needing visual control, complex forms, or deep AEM integration. | Sites where primary content is managed in DA, requiring forms from other sources. |
 
 **Enhanced Decision Tree**
 
 ```mermaid
     graph TD
-    A{Start Here: I need a form on my EDS Site} --> B{What's my team's main authoring tool & skill for form content?};
+    A{Start Here: I need a form on my Edge Delivery Services Site} --> B{What's my team's main authoring tool & skill for form content?};
     B -- "Word/Google Docs" --> C{How complex is the form & data destination?};
     C -- "Simple form, data to Sheet/Email" --> Sol1[CHOOSE: Document-Based Authoring + Forms Submission Service];
     C -- "Needs more logic OR AEM backend\nlike Workflow or FDM" --> Sol2[CONSIDER: Can Universal Editor meet this need better?];
@@ -305,8 +302,8 @@ The following table provides a detailed comparison of key features across differ
 
 | **Capability**                          | **Universal Editor (WYSIWYG)** | **Document-based Authoring** | **Document Authoring (DA)** |
 |-----------------------------------------|-------------------------------|-----------------------------|-----------------------------|
-| **Unified Composition with Sites**      | ✅                            | ❌                          | ✅ (with embedded forms)     |
-| **Embedding Form Support**              | ✅                            | ✅                          | ✅ (embed from UE or Docs)   |
+| **Unified Composition with Sites**      | ✅                            |                              | ✅ (with embedded forms)     |
+| **Embedding Form Support**              | ✅                            | ✅                          | ✅ (embed from Universal Editor or Docs)   |
 | **Rules (Dynamic Behavior)**            | Advanced rules editor with custom functions | Limited: Show/hide, compute value, custom functions | Depends on embedded form     |
 | **Attachment Support**                  | ✅                            | ℹ️ (Early Access)           | Depends on embedded form     |
 | **CAPTCHA Support**                     | reCAPTCHA Enterprise          | reCAPTCHA Enterprise       | Depends on embedded form     |
@@ -314,23 +311,23 @@ The following table provides a detailed comparison of key features across differ
 | **Data Schema**                         | FDM, Custom                   | Custom                      | Based on embedded form       |
 | **Pre-fill**                            | 💡 (via Wizard)               | ✅                          | Depends on embedded form     |
 | **Fragments**                           | ✅                            | ✅                          | Depends on embedded form     |
-| **Visual Rule Editor**                  | ✅                            | ❌                          | ❌                            |
+| **Visual Rule Editor**                  | ✅                            |                              |                              |
 | **Localization**                        | 💡 (via Sites)                | ℹ️ (Excel/Sheets manual)    | Depends on embedded form     |
-| **Data Schema (Data Tree)**             | 💡 (via UI Extension)         | ❌                          | ❌                            |
-| **Template Support**                    | Only Initial Content          | ❌                          | ❌                            |
-| **Portal**                              | ❌                            | ❌                          | ❌                            |
-❌                            |
+| **Data Schema (Data Tree)**             | 💡 (via UI Extension)         |                              |                              |
+| **Template Support**                    | Only Initial Content          |                              |                              |
+| **Portal**                              |                               |                              |                              |
 | **Theme**                               | ℹ️ (at project level)         | ℹ️ (at project level)        | ℹ️ (based on hosting site)    |
 | **Custom Component**                    | ✅                            | ✅                          | ✅ (if embedded component supports it) |
 | **OOTB & Custom Functions**             | ✅                            | ✅                          | ✅ (in embedded form)        |
-| **Fragment Reference**                  | ❌                            | ❌                          | ❌                            |
-| **Sign Integration**                    | ❌                            | ❌                          | ❌                            |
+| **Fragment Reference**                  |                               |                              |                              |
+| **Sign Integration**                    |                               |                              |                              |
 | **Experimentation**                     | ✅                            | ✅                          | Depends on embed context     |
-| **Task Management via Workfront**       | ✅                            | ❌                          | ❌                            |
-| **Personalization Extension**           | 💡                            | ❌                          | ❌                            |
-| **Editor Customization**                | ✅ (via UI Extension)         | ❌                          | ❌                            |
+| **Task Management via Workfront**       | ✅                            |                              |                              |
+| **Personalization Extension**           | 💡                            |                              |                              |
+| **Editor Customization**                | ✅ (via UI Extension)         |                              |                              |
 | **Submit Action**                       | ✅                            | Only Spreadsheet            | Based on embedded form       |
 
+<!--
 
 ## Best Practices for Creating Forms
 
@@ -365,7 +362,6 @@ Building great forms goes beyond just the technology. Here's how to ensure your 
     *   **Time-Based Checks:** Measure how quickly a form is submitted. Submissions that are too fast are often bots.
     *   **Invisible reCAPTCHA (v3):** This Google service analyzes user behavior in the background and only presents a challenge if the user seems suspicious. This is often a much better user experience.
 
-<!--
 **Form Design Do's and Don'ts**
 
 ```mermaid
@@ -405,13 +401,19 @@ Let's bring it all together to help you decide on the best approach for your for
     *   **For visually rich forms with potential for AEM backend integration:** Universal Editor is your tool. You can start with the Forms Submission Service for simple needs and scale to full AEM Publish submissions for complex workflows.
     *   **If your site content is managed in Document Authoring (DA):** You'll create forms using one of the above methods and then embed them into your DA pages. The submission logic will be tied to how the original embedded form was configured.-->
 
+To build on what you've learned, here's how you can move forward:
+
+[Choose your submission strategy](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md.md) decide whether your project requires the simplicity of the Forms Submission Service (ideal for spreadsheet/email output) or the flexibility and backend integration offered by AEM Publish Submit Actions.
+
+Refer to the [Best Practices for Creating Forms](/help/edge/docs/forms/universal-editor/best-pratices-eds-forms.md) article to learn how to design effective, accessible, and user-friendly forms.
+
 ## Next Steps
 
 This guide has provided an overview of using forms with AEM Edge Delivery Services. For more detailed, step-by-step instructions on specific configurations, please refer to the official Adobe Experience Manager documentation:
 
-* [Document-Based Authoring with EDS Forms](https://experienceleague.adobe.com/docs/experience-manager-forms/edge-delivery/document-authoring/document-based-authoring.html)
-* [Universal Editor with EDS Forms](https://experienceleague.adobe.com/docs/experience-manager-forms/edge-delivery/universal-editor/universal-editor-authoring.html)
-* [Document Authoring (DA) and Embedding Content](https://experienceleague.adobe.com/docs/experience-manager-forms/edge-delivery/document-authoring/embed-forms.html)
+* [Document-Based Authoring with Edge Delivery Services Forms](/help/edge/docs/forms/tutorial.md)
+* [Universal Editor with Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+* [Document Authoring (DA) and Embedding Content](https://www.aem.live/developer/da-tutorial)
 * [AEM Forms Submission Service](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md.md)
 
 
@@ -540,21 +542,21 @@ The following diagrams illustrate the process of creating, publishing, and submi
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: -5px;">
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md">
-            <img src="/help/edge/assets/smock_devices_18_n.svg" alt="Create a form using eds forms" style="border-radius: 5px;"> </b>
+            <img src="/help/edge/assets/smock_devices_18_n.svg" alt="Create a form using Edge Delivery Services forms" style="border-radius: 5px;"> </b>
             <br><b style="margin-top: 5px;">Create a form using Google Sheets or Microsoft Excel</b>
         </a>
         <p>Create forms that load and render quickly and automatically reflows on mobile devices.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/create-forms.md#manually-configure-a-spreadsheet-to-accept-data">   
-            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Submit form" alt="Use Form Fragments in an EDS Form" style="border-radius: 5px;"> </b>
+            <img src="/help/edge/assets/smock_platformdatamapping_18_n.svg" alt="Submit form" alt="Use Form Fragments in an Edge Delivery Services Form" style="border-radius: 5px;"> </b>
             <br><b style="margin-top: 5px;">Submit form to spreadsheet</b>
         </a>
         <p>Submit forms directly to your Microsoft Excel or Google Sheets.</p>
     </div>
      <div class="card-container">
         <a href="/help/edge/docs/forms/style-theme-forms.md">
-            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Apply styles or themes to an eds form" style="border-radius: 5px;"> </b>
+            <img src="/help/edge/assets/smock_imageautomode_18_N.svg" alt="Apply styles or themes to an Edge Delivery Services form" style="border-radius: 5px;"> </b>
             <br><b style="margin-top: 5px;">Customize a theme</b>
         </a>
         <p>Create a consistent brand image by applying the same theme across forms.</p>
@@ -575,14 +577,14 @@ The following diagrams illustrate the process of creating, publishing, and submi
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/translate-forms.md">  
-            <img src="/help/edge/assets/smock_abc_18_n.svg" alt="Translate an EDS Form" style="border-radius: 5px;"> </b>
+            <img src="/help/edge/assets/smock_abc_18_n.svg" alt="Translate an Edge Delivery Services Form" style="border-radius: 5px;"> </b>
             <br><b style="margin-top: 5px;">Translate a form</b>
         </a>
         <p>Extend the reach of your forms while keeping costs in check.</p>
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/repeatable-forms.md">  
-            <img src="/help/edge/assets/smock_addto_18_n.svg" alt="Add repeatable sections to an EDS Form" style="border-radius: 5px;"> </b>
+            <img src="/help/edge/assets/smock_addto_18_n.svg" alt="Add repeatable sections to an Edge Delivery Services Form" style="border-radius: 5px;"> </b>
             <br><b style="margin-top: 5px;">Add repeatable sections</b>
         </a>
         <p>Effortlessly create and add repeatable sections to a form.</p>
@@ -596,7 +598,7 @@ The following diagrams illustrate the process of creating, publishing, and submi
     </div>
     <div class="card-container">
         <a href="/help/edge/docs/forms/recaptacha-forms.md">  
-            <img src="/help//edge/assets/smock_keyclock_18_n.svg" alt="Use reCAPTCHA in an EDS Form" style="border-radius: 5px;"> </b>
+            <img src="/help//edge/assets/smock_keyclock_18_n.svg" alt="Use reCAPTCHA in an Edge Delivery Services Form" style="border-radius: 5px;"> </b>
             <br><b style="margin-top: 5px;">Use reCAPTCHA</b>
         </a>
         <p>Use OOTB reCAPTCHA integration for robust spam and bot protection.</p>

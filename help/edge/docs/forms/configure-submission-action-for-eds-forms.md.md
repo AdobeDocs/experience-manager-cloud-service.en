@@ -1,3 +1,9 @@
+---
+title: Configure Submit Actions for AEM Forms with Edge Delivery Services
+description: Learn how to configure submit actions in AEM Forms using Edge Delivery Services. Choose between Forms Submission Service and AEM Publish Submit Action to handle form data securely and efficiently.
+feature: Edge Delivery Services
+role: Admin, Architect, Developer
+---
 
 # Configuring Form Submissions: Where Does Your Data Go?
 
@@ -9,7 +15,7 @@ This service is ideal for common, straightforward actions like sending data to a
 
 **What is It and How Can It Help You?**
 
-The Forms Submission Service is an Adobe-hosted endpoint. When your form submits data to it, this service takes over and performs a pre-configured action. It's designed to be easy to set up. You Can Configure: Submitting to Spreadsheets or Email:
+The [Forms Submission Service](/help/forms/forms-submission-service.md) is an Adobe-hosted endpoint. When your form submits data to it, this service takes over and performs a pre-configured action. It's designed to be easy to set up. You Can Configure: Submitting to Spreadsheets or Email:
 
 *   **Submit to Spreadsheet:** Automatically add the submitted form data as a new row in a Google Sheet or a Microsoft Excel file (stored on OneDrive or SharePoint).
 *   **Send Email:** Send an email containing the form data to one or more email addresses you specify.
@@ -39,7 +45,7 @@ This flowchart shows how the Forms Submission Service takes submitted data and s
 
 ## Method 2: Submitting to Your AEM Publish Instance (Advanced)
     
-For more complex needs, forms (especially those created with the Universal Editor) can send data directly to your AEM as a Cloud Service Publish instance. This unlocks AEM's full backend power.
+For more complex needs, [forms (especially those created with the Universal Editor) can send data directly to your AEM as a Cloud Service Publish instance](/help/forms/configure-submit-actions-core-components.md). This unlocks AEM's full backend power.
 
 **When Do You Need to Submit to AEM Publish?**
 
@@ -51,16 +57,16 @@ For more complex needs, forms (especially those created with the Universal Edito
 
 **Available Submit Actions (AEM Publish Submissions)**
 
-*   Submit to a REST endpoint
-*   Send email (using AEM's mail services)
-*   Submit using Form Data Model (FDM)
-*   Invoke an AEM Workflow
-*   Submit to SharePoint (as list items or documents)
-*   Submit to OneDrive (as documents)
-*   Submit to Azure Blob Storage
-*   Submit to Microsoft Power Automate
-*   Submit to Adobe Workfront Fusion
-*   Submit to Adobe Marketo Engage
+*   [Submit to a REST endpoint](/help/forms/configure-submit-action-restpoint.md)
+*   [Send email (using AEM's mail services)](/help/forms/configure-submit-action-send-email.md)
+*   [Submit using Form Data Model (FDM)](/help/forms/configure-data-sources.md)
+*   [Invoke an AEM Workflow](/help/forms/aem-forms-workflow-step-reference.md)
+*   [Submit to SharePoint (as list items or documents)](/help/forms/configure-submit-action-sharepoint.md)
+*   [Submit to OneDrive (as documents)](/help/forms/configure-submit-action-onedrive.md)
+*   [Submit to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+*   [Submit to Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+*   [Submit to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+*   [Submit to Adobe Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 >[!NOTE]
 >
@@ -135,7 +141,7 @@ This diagram shows the Host Page fetching form HTML from the Form Source and dis
 
 ## Setting Up CORS for Embedded Forms
     
-**CORS (Cross-Origin Resource Sharing)** is a browser security feature. If your Host Page (e.g., `site-a.com`) tries to fetch a form from a different domain (e.g., `forms-site-b.com`), the browser will block it unless `forms-site-b.com` explicitly allows it via CORS headers.
+[CORS (Cross-Origin Resource Sharing)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) is a browser security feature. If your Host Page (e.g., `site-a.com`) tries to fetch a form from a different domain (e.g., `forms-site-b.com`), the browser will block it unless `forms-site-b.com` explicitly allows it via CORS headers.
 
 Without correct CORS headers on the **Form Source server**, the browser prevents the Host Page from loading the form, and your embedded form would not appear.
 
@@ -335,9 +341,7 @@ Your main website content is created in Document Authoring (DA). You create your
 
 This guide has provided an overview of using forms with AEM Edge Delivery Services. For more detailed, step-by-step instructions on specific configurations, please refer to the official Adobe Experience Manager documentation:
 
-* [Document-Based Authoring with EDS Forms](https://experienceleague.adobe.com/docs/experience-manager-forms/edge-delivery/document-authoring/document-based-authoring.html)
-* [Universal Editor with EDS Forms](https://experienceleague.adobe.com/docs/experience-manager-forms/edge-delivery/universal-editor/universal-editor-authoring.html)
-* [Document Authoring (DA) and Embedding Content](https://experienceleague.adobe.com/docs/experience-manager-forms/edge-delivery/document-authoring/embed-forms.html)
-* [AEM Forms Submission Service](https://experienceleague.adobe.com/docs/experience-manager-forms/edge-delivery/form-submission/submission-service.html)
-* [Configuring AEM Publish for External Submissions (Dispatcher, Referrer Filter, etc.)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/handling-form-submissions/dispatcher-referrer-filter-config.html)
-* [CORS Configuration for Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/handling-form-submissions/configure-cors.html)
+* [Document-Based Authoring with Edge Delivery Services Forms](/help/edge/docs/forms/tutorial.md)
+* [Universal Editor with Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+* [Document Authoring (DA) and Embedding Content](https://www.aem.live/developer/da-tutorial)
+* [AEM Forms Submission Service](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md.md)
