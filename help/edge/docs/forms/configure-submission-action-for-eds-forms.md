@@ -26,20 +26,21 @@ The [Forms Submission Service](/help/forms/forms-submission-service.md) is an Ad
 * **Early Access Program:** Some features of this service, especially for spreadsheets, might be part of an early access program. You may need to request access by emailing `aem-forms-ea@adobe.com` or filling out a specific Adobe form with your project details. Always check the latest Adobe documentation.
 
 **Forms Submission Service Flowchart**
-
+<!--
 ```mermaid
     graph TD
-    UserForm[User Submits Form on Your EDS Site] -->|Data Sent| FormSubmissionService[AEM Forms Submission Service]
-    FormSubmissionService -- "If configured for Google Sheets" --> GoogleSheet[Data written to Google Sheet]
-    FormSubmissionService -- "If configured for Excel (OneDrive or SharePoint)" --> ExcelSheet[Data written to Excel]
-    FormSubmissionService -- "If configured for Email" --> Email[Email with data is sent]
+    UserForm[User Submits Form on Your EDS Site] >|Data Sent| FormSubmissionService[AEM Forms Submission Service]
+    FormSubmissionService -- "If configured for Google Sheets" > GoogleSheet[Data written to Google Sheet]
+    FormSubmissionService -- "If configured for Excel (OneDrive or SharePoint)" > ExcelSheet[Data written to Excel]
+    FormSubmissionService -- "If configured for Email" > Email[Email with data is sent]
 
     style UserForm fill:#ccf,stroke:#333
     style FormSubmissionService fill:#fca,stroke:#333
     style GoogleSheet fill:#90ee90,stroke:#333
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
-```
+```-->
+![Forms Submission](/help/forms/assets/eds-fss.png)
 
 This flowchart shows how the Forms Submission Service takes submitted data and sends it to a configured spreadsheet or email.
 
@@ -74,21 +75,22 @@ For more complex needs, [forms (especially those created with the Universal Edit
 
 **AEM Publish Submission Flowchart**
     
-```mermaid
+<!--```mermaid
     graph TD
-    UEForm[User Submits Universal Editor Form on EDS Site] -->|Data sent to AEM Publish URL - example: /adobe/forms/af/submit/...| AEMPublish[AEM Publish Instance]
-    AEMPublish -- Configured to run AEM Workflow --> AEMWorkflow[AEM Workflow is Triggered]
-    AEMPublish -- Configured to use Form Data Model --> FDM[FDM updates Backend System or Database]
-    AEMPublish -- Configured for Marketo --> Marketo[Data sent to Marketo Engage]
-    AEMPublish -- Other configured actions... --> OtherIntegrations[...]
+    UEForm[User Submits Universal Editor Form on EDS Site] >|Data sent to AEM Publish URL - example: /adobe/forms/af/submit/...| AEMPublish[AEM Publish Instance]
+    AEMPublish -- Configured to run AEM Workflow > AEMWorkflow[AEM Workflow is Triggered]
+    AEMPublish -- Configured to use Form Data Model > FDM[FDM updates Backend System or Database]
+    AEMPublish -- Configured for Marketo > Marketo[Data sent to Marketo Engage]
+    AEMPublish -- Other configured actions... > OtherIntegrations[...]
 
     style UEForm fill:#ccf,stroke:#333
     style AEMPublish fill:#fca,stroke:#333
     style AEMWorkflow fill:#add8e6,stroke:#333
     style FDM fill:#add8e6,stroke:#333
     style Marketo fill:#add8e6,stroke:#333
-```
+```-->
 
+![AEM Publish Submission Flowchart](/help/forms/assets/eds-aem-publish.png)
 This flowchart shows a form submitting to AEM Publish, which then handles complex backend tasks.
 
 ### Forms Submission Service vs. AEM Publish Submissions
@@ -118,25 +120,25 @@ The page where you want the form to appear (let's call it "Host Page") will cont
 
 **Embedded Form Architecture**
 
-```mermaid
+<!--```mermaid
    graph LR
-    User[User] -->|Visits| HostPage[Host Page - for example: your-site.com/landing-page]
-    HostPage -->|Contains code to embed form| FetchForm{Host Page Requests Form HTML}
-    FetchForm -->|HTTP GET request to the form URL| FormSource[Form Source - for example: forms-repo.hlx.page/my-form]
-    FormSource -->|Returns form HTML| FetchForm
-    FetchForm -->|Injects form HTML into page| HostPage
-    HostPage -->|Displays full page with embedded form| User
+    User[User] >|Visits| HostPage[Host Page - for example: your-site.com/landing-page]
+    HostPage >|Contains code to embed form| FetchForm{Host Page Requests Form HTML}
+    FetchForm >|HTTP GET request to the form URL| FormSource[Form Source - for example: forms-repo.hlx.page/my-form]
+    FormSource >|Returns form HTML| FetchForm
+    FetchForm >|Injects form HTML into page| HostPage
+    HostPage >|Displays full page with embedded form| User
 
     subgraph Submission ["Form Submission from Host Page"]
-        HostPage_Form[Embedded form on the host page] -->|User submits| TargetEndpoint[Submission endpoint - FSS or AEM Publish]
+        HostPage_Form[Embedded form on the host page] >|User submits| TargetEndpoint[Submission endpoint - FSS or AEM Publish]
     end
 
     style HostPage fill:#e6f3ff,stroke:#333
     style FormSource fill:#ffe6e6,stroke:#333
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
-```
-
+```-->
+![Embedded Form Architecture](/help/forms/assets/eds-embedded-form.png)
 This diagram shows the Host Page fetching form HTML from the Form Source and displaying it. Submission uses the original form's configured endpoint.
 
 ## Setting Up CORS for Embedded Forms
@@ -184,21 +186,23 @@ This is the simplest setup. You create your form in Word/Google Docs, and it sub
 1.  Ensure `forms@adobe.com` (or the relevant service account) has edit access to your target spreadsheet.
 1.  Publish your document to your Edge Delivery site.
 
-**Doc-Based + FSS Architecture**
-
+**Doc-Based + Forms Submissions Service Architecture**
+<!--
 ```mermaid
     graph TD
-        User[<img src='https://img.icons8.com/ios-filled/50/000000/user.png' width='30' /> User] -->|Fills Out| EDS_Page_DocBased[EDS Page with Document-Based Form]
-        EDS_Page_DocBased -->|Submits Data| FSS[AEM Forms Submission Service]
-        FSS --> Target[<img src='https://img.icons8.com/color/48/000000/google-sheets.png' width='30' /> Data to Spreadsheet / <img src='https://img.icons8.com/color/48/000000/filled-sent.png' width='30' /> Email Notification]
+        User[<img src='https://img.icons8.com/ios-filled/50/000000/user.png' width='30' /> User] >|Fills Out| EDS_Page_DocBased[EDS Page with Document-Based Form]
+        EDS_Page_DocBased >|Submits Data| FSS[AEM Forms Submission Service]
+        FSS > Target[<img src='https://img.icons8.com/color/48/000000/google-sheets.png' width='30' /> Data to Spreadsheet / <img src='https://img.icons8.com/color/48/000000/filled-sent.png' width='30' /> Email Notification]
 
-        Authoring[Form defined in Google Doc/Sheet] -->|EDS Syncs & Renders| EDS_Page_DocBased
+        Authoring[Form defined in Google Doc/Sheet] >|EDS Syncs & Renders| EDS_Page_DocBased
 
         style EDS_Page_DocBased fill:#ccf,stroke:#333
         style FSS fill:#fca,stroke:#333
         style Target fill:#90ee90,stroke:#333
         style Authoring fill:#e6ffe6,stroke:#333
-```
+```-->
+
+![Doc-Based + Forms Submissions Service Architecture](/help/forms/assets/eds-doc-fss.png)
 
 #### Universal Editor Form with Spreadsheet/Email Submission
 
@@ -210,20 +214,22 @@ You use the visual Universal Editor to build your form, but still use the simple
 1.  If using spreadsheets, ensure `forms@adobe.com` has edit access.
 1.  Publish your page containing the form from AEM to your Edge Delivery site.
 
-    **UE + FSS Architecture**
+    **Universal Editor + Forms Submission Service Architecture**
 
-    ```mermaid
+    ![Universal Editor + Forms Submission Service Architecture](/help/forms/assets/eds-ue-fss.png)
+
+    <!--```mermaid
     graph TD
-    User[User] -->|Fills Out| EDS_Page_UE[EDS Page with Universal Editor Form]
-    EDS_Page_UE -->|Submits Data| FSS[AEM Forms Submission Service]
-    FSS --> Target[Data sent to Google Sheet and Email Notification]
-    AuthoringUE[Form built in Universal Editor - AEM] -->|AEM Publishes to EDS| EDS_Page_UE
-
+    User[User] >|Fills Out| EDS_Page_UE[EDS Page with Universal Editor Form]
+    EDS_Page_UE >|Submits Data| FSS[AEM Forms Submission Service]
+    FSS > Target[Data sent to Google Sheet and Email Notification]
+    AuthoringUE[Form built in Universal Editor - AEM] >|AEM Publishes to EDS| EDS_Page_UE
     style EDS_Page_UE fill:#ccf,stroke:#333
     style FSS fill:#fca,stroke:#333
     style Target fill:#90ee90,stroke:#333
     style AuthoringUE fill:#e6f3ff,stroke:#333
     ```
+    -->
 
 #### Universal Editor Form with AEM Publish Submission (Advanced)
     
@@ -245,41 +251,18 @@ This setup uses the Universal Editor for form creation and your AEM Publish inst
   
     ```javascript
         // in your-eds-project/scripts/constants.js
-         export const AEM_PUBLISH_URL = 'https://publish-p123-e456.adobeaemcloud.com';
-                // Your form submission script might then construct the submit URL:
-                // const submitUrl = `${AEM_PUBLISH_URL}/adobe/forms/af/submit/...`;
+        export const AEM_PUBLISH_URL = 'https://publish-p123-e456.adobeaemcloud.com';
+             // Your form submission script might then construct the submit URL:
+            // const submitUrl = `${AEM_PUBLISH_URL}/adobe/forms/af/submit/...`;
     ```
 
 1.  **Publish:** Publish your form page from AEM to EDS, and ensure all AEM configurations are active on your AEM Publish instance.
 
-    **UE + AEM Publish Architecture**
-
-    ```mermaid
-    graph TD
-    User[User] -->|Fills Out| EDS_Page_UE[EDS Page with UE Form\nExample: your-eds-site.hlx.page/form]
-
-    subgraph EdgeDeliveryTier["Edge Delivery Tier - your-eds-site.hlx.page"]
-        EDS_Page_UE -->|Form submits to\n/adobe/forms/af/submit/... on EDS domain| EdgeCDN[Edge CDN]
-    end
-
-    subgraph AEM_CS_Tier["AEM as a Cloud Service Tier"]
-        AEMDispatcher[Dispatcher\non AEM Publish] --> AEMPublish[AEM Publish Instance\nyour-aem-publish.com]
-        AEMPublish --> BackendServices[AEM Workflow, FDM, Integrations etc.]
-    end
-
-    EdgeCDN -->|CDN rule forwards submit request to AEM Publish| AEMDispatcher
-
-    AuthoringUE[UE on AEM Author] -->|Publishes form to EDS| EDS_Page_UE
-
-    style EDS_Page_UE fill:#ccf,stroke:#333
-    style EdgeCDN fill:#9cf,stroke:#333
-    style AEMDispatcher fill:#fca,stroke:#333
-    style AEMPublish fill:#fca,stroke:#333
-    style BackendServices fill:#add8e6,stroke:#333
-    style AuthoringUE fill:#e6f3ff,stroke:#333
-    ```
+    **Universal Editor + AEM Publish Architecture**
     
-    This shows the flow: user submits on EDS site, CDN routes to AEM Dispatcher, then AEM Publish processes it.
+![Universal Editor + AEM Publish Architecture](/help/forms/assets/eds-aem-publish.png)
+    
+This shows the flow: user submits on EDS site, CDN routes to AEM Dispatcher, then AEM Publish processes it.
 
 #### Embedding a Form into a Document Authoring (DA) Page
 
@@ -295,23 +278,8 @@ Your main website content is created in Document Authoring (DA). You create your
 1.  **Publish DA Page:** Publish your DA page. It will now fetch and display the form.
 
     **Forms Embedded in DA Architecture**
-
-    ```mermaid
-    graph TD
-    User[User] -->|Accesses| DAPage_EDS[DA Authored Page on Edge Delivery\nExample: your-da-site.hlx.page/main-page]
-    DAPage_EDS -->|Contains Embed Block that fetches| EmbeddedForm[Form - Doc-Based or UE\nServed from its own EDS URL\nExample: forms-repo.hlx.page/my-form\nCORS must be enabled]
-
-    EmbeddedForm -->|Form submission logic as configured| SubmissionTarget[Forms Submission Service or AEM Publish]
-
-    AuthoringDA[Content authored in Document Authoring] -->|Publishes Page to EDS| DAPage_EDS
-    AuthoringForm[Form created via Doc-Based or Universal Editor] -->|Publishes Form to EDS URL| EmbeddedForm
-
-    style DAPage_EDS fill:#e6f3ff,stroke:#333
-    style EmbeddedForm fill:#ccf,stroke:#333
-    style SubmissionTarget fill:#fca,stroke:#333
-    style AuthoringDA fill:#ffe6cc,stroke:#333
-    style AuthoringForm fill:#e6ffe6,stroke:#333
-    ```
+    
+    ![Forms Embedded in DA Architecture](/help/forms/assets/eds-forms-embedd-da.png)
     
     This shows a DA page pulling in a form from another EDS location. The embedded form handles its own submission.
 

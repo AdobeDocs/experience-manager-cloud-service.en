@@ -39,33 +39,17 @@ Building great forms goes beyond just the technology. Here's how to ensure your 
 
 ## Form Design Do's and Don'ts
 
-```mermaid
-    graph LR
-subgraph GoodFormUX [Do ✅ - For Better Forms]
-    direction LR
-    ClearLabels[Use Visible <label> Tags for All Fields]
-    SimpleInputs[Prefer Standard HTML Input Types]
-    KeyboardNav[Ensure Full Keyboard Navigation]
-    ClearErrors[Show Clear, Actionable Error Messages]
-    MinimalPII[Ask Only for Necessary Information]
-    TransparentUse[Explain How Data is Used - Privacy Info]
-    InvisibleCaptcha[Use Invisible or Behavioral CAPTCHA]
-    ProminentPlacement[Make Form Easy to Find on Page]
-end
+| ✅ Do – For Better Forms                                              | ❌ Don't – Avoid These                                           |
+|----------------------------------------------------------------------|------------------------------------------------------------------|
+| Use visible `<label>` tags for all fields                            | Only use placeholder text instead of proper labels               |
+| Prefer standard HTML input types (e.g., `<input type="email">`)      | Use overly complex custom widgets                               |
+| Ensure full keyboard navigation                                      | Provide vague or missing error messages                         |
+| Show clear, actionable error messages                                | Request excessive personal data without justification           |
+| Ask only for necessary information                                   | Use hard-to-solve visible CAPTCHAs                              |
+| Explain how data is used (privacy info or links)                     | Hide the form deep within the page                              |
+| Use invisible or behavioral CAPTCHA techniques                       |                                                                  |
+| Make the form easy to find on the page (prominent placement)         |                                                                  |
 
-subgraph BadFormUX [Don't ❌ - Avoid These]
-    direction LR
-    PlaceholderOnly[Only Use Placeholder Text for Labels]
-    ComplexWidgets[Use Overly Complex Custom Widgets]
-    PoorErrors[Vague or Missing Error Messages]
-    ExcessivePII[Request Excessive Personal Data]
-    VisibleHardCaptcha[Use Hard-to-Solve Visible CAPTCHAs]
-    HiddenForm[Hide the Form Deep in the Page]
-end
-
-style GoodFormUX fill:#e6ffe6,stroke:#333
-style BadFormUX fill:#ffe6e6,stroke:#333
-```
 
 ## Next Steps
 
