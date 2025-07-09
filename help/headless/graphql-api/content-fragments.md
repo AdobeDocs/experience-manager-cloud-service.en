@@ -8,12 +8,6 @@ role: Admin, Developer
 
 # AEM GraphQL API for use with Content Fragments {#graphql-api-for-use-with-content-fragments}
 
->[!IMPORTANT]
->
->Various features of the GraphQL API for use with Content Fragments are available through the Early Adopter Program.
->
->To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
-
 Learn how to use Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service with the AEM GraphQL API for headless content delivery.
 
 AEM as a Cloud Service GraphQL API used with Content Fragments is heavily based on the standard, open source GraphQL API.
@@ -795,7 +789,6 @@ The structure and syntax is:
 * `flip`: an enumeration of HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
 * `quality`: an integer from 1&ndash;100 notating the percentage of the image quality
 * `width`: an integer that defines the width of the output image but is ignored by the Image Generator
-* `preferWebp`: a boolean that indicates if webp is preferred (default value is false)
 
 The URL transform is available for all query types: by path, list or paginated.
 
@@ -823,7 +816,6 @@ The following is a sample query with a full set of parameters:
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -862,7 +854,6 @@ query ($seoName: String!) {
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -901,7 +892,6 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -1181,7 +1171,7 @@ The current limitations are:
 * If an asset that is referenced is removed from the remote repository, this will result in a broken Content Fragment Asset reference.
 * All Delivery Asset Repositories to which the user has access, will be available for selection, the available list cannot be limited.
 * Both the AEM instance and the Remote Asset Repository instances must be the same version.
-* No Asset Metadata is exposed via the [Management API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) and [Delivery API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/). You have to use the Asset Metadata API to retrieve the asset metadata details. 
+* No Asset Metadata is exposed via the [Management Sites API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) and the [AEM Content Fragment Delivery with OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/). You have to use the Asset Metadata API to retrieve the asset metadata details. 
 
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 

@@ -31,7 +31,7 @@ Sandbox programs feature auto-creation. Whenever you [create a sandbox program](
 
 A sandbox program has only one development environment.
 
-## Limitations and conditions {#limitations}
+## Usage notes and conditions {#usage-notes-conditions}
 
 Because they are not meant for live traffic, sandbox programs have certain limitations and conditions on their usage, which differentiates them from production programs.
 

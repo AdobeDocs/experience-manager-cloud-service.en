@@ -17,7 +17,7 @@ By setting up Cloud Manager to integrate with your private GitHub Cloud (reposit
 >* GitLab (both `gitlab.com` and self-hosted versions of GitLab) repositories 
 >* Bitbucket (both `bitbucket.org` and Bitbucket Server, the self-hosted version of BitBucket) repositories 
 >
->See [Add External Repositories in Cloud Manager - Limited beta](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+>See [Add External Repositories in Cloud Manager - private beta](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
@@ -147,9 +147,7 @@ Validated private repositories can be associated with [full-stack and frontend p
 
 
 
-## Limitations {#limitations}
-
-Certain limitations apply when using private GitHub Cloud repositories with Cloud Manager.
+## Usage notes {#usage-notes}
 
 * Web tier and config pipelines are not supported with private repositories.
 * No Git tag is created and pushed when using private repositories on production full stack pipelines.

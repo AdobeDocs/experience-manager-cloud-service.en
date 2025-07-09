@@ -26,6 +26,10 @@ In addition, the editor allows you to organize the existing content on you page 
 * [Edit component layout](#editing-component-layout)
 * [Edit component inheritance](#inherited-components)
 
+>[!NOTE]
+>
+>Your project team can customize the editor if necessary. See [Customizing Page Authoring](/help/implementing/developing/extending/page-authoring.md) for further details.
+
 ## Adding Components {#adding-components}
 
 You can drag-and-drop new components onto your page by selecting them from the [component browser in the side panel](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) and dropping them in a component placeholder.

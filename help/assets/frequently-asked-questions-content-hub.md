@@ -5,54 +5,11 @@ exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 ---
 # Content Hub frequently asked questions {#content-hub-frequently-asked-questions}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
-        </td>
-    </tr>
-</table>
-
 ![Content Hub frequently asked question](assets/content-hub-faqs.png)
-
->[!AVAILABILITY]
->
->Content Hub guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
->
->[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 ## What is Content Hub? {#what-is-content-hub} 
 
-Content Hub is a feature of Adobe Experience Manager Assets as a Cloud Service. 
+Content Hub is a feature of Adobe Experience Manager Assets as a Cloud Service.
 
 Content Hub enables broader teams to easily discover relevant, approved assets through an intuitive portal and quickly adapt them to their needs.  In addition, Content Hub provides an ingestion mechanism that allows those users to easily self–serve as they upload assets into the DAM. This directly accommodates the need organizations have for higher content creation velocity, while preserving brand consistency and compliance with appropriate safeguards.
 
@@ -105,9 +62,23 @@ You can quickly find assets uploaded using Content Hub on AEM as a Cloud Service
 
 1. Sorting assets using the **[!UICONTROL Modified Date]** field.
 
-## Why do not I view the edit using Adobe Express option on my asset card to be able to remix assets to create new variations? {#edit-using-express-not-available}
+## Why do not I see the Edit using Adobe Express option on my asset card to be able to remix assets to create new variations? {#edit-using-express-not-available}
 
-To view the edit using Adobe Express option on the asset card, you must have Adobe Express entitlements in addition to privileges for [Content Hub users with rights to remix assets to new variations](#onboard-content-hub-users-add-assets). Adobe Express has to be deployed in the same organization in Adobe Admin console where Adobe Experience Manager is deployed.
+To view the **Edit using Adobe Express** option on the asset card, the user must have Adobe Express Enterprise or Teams entitlement (see [plans](https://www.adobe.com/express/pricing)) in addition to privileges for [Content Hub users with rights to remix assets to new variations](#onboard-content-hub-users-add-assets). 
+
+There are a few configurations of how users are assigned to [!DNL Content Hub] & [!DNL Adobe Express]:
+
+1. The organization has [Assets Ultimate](/help/assets/assets-ultimate-overview.md) or [Assets Prime](/help/assets/assets-prime.md) license, and the user is assigned to one of the Experience Manager profiles in Admin console that include Adobe Express entitlement (Collaborator or Power user). The integration works without any additional configuration.
+   
+1. [!DNL Adobe Express] is deployed in the same [!DNL Adobe Admin Console] as [!DNL Experience Manager Assets] with [!DNL Content Hub]. The integration works without any additional configuration.
+
+1. [!DNL Adobe Express] is deployed in a different [!DNL Adobe Admin Console] than [!DNL Experience Manager Assets] with [!DNL Content Hub]. In this case, the [!DNL Assets] administrator can configure the integration (see [documentation](/help/assets/connect-assets-with-creative-cloud.md)) for the integration to work.
+
+   >[!NOTE]
+   >
+   >The user assigned to Express and Assets product profiles in two Admin Consoles needs to have the same email address and use a business **Enterprise or School** account, and not the **Personal** one. The ideal configuration is to have both Admin Consoles set up as **Federated ID** with trust relationship set up between them, so that the user has a seamless single sign-on experience. Some of the Express plans (for example, Express Teams) does not support Federated ID / single sign-on.
+ 
+In addition to the right product entitlements, Adobe Express integration in Content Hub requires that the assigned user has at least [!UICONTROL Can Edit] permissions on the Assets author environment powering Content Hub, on at least the **[#UICONTROL /content/dam/hydrated-assets/]** folder hierarchy, where Content Hub users can save content that they created using Express. See [Permissions Management](/help/security/touch-ui-principal-view.md) in the Admin view (Touch UI) or a simplified [permissions management in Assets view](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Can I setup Content Hub so that my organization's brand guidelines display as a link on the home page? {#content-hub-setup-brand-guidelines}
 

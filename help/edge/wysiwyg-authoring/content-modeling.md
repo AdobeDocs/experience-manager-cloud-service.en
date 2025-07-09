@@ -4,6 +4,9 @@ description: Learn how content modeling works for WYSIWYG Authoring with Edge De
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 
 # Content Modeling for WYSIWYG Authoring with Edge Delivery Services Projects {#content-modeling}
@@ -636,8 +639,3 @@ Now that you know how to model content, you can create blocks for your own Edge 
 See the document [Creating Blocks Instrumented for use with the Universal Editor](/help/edge/wysiwyg-authoring/create-block.md) to learn how to create blocks instrumented for use with the Universal Editor in WYSIWYG authoring with Edge Delivery Services projects.
 
 If you are already familiar with creating blocks, please see the document [Developer Getting Started Guide for WYSIWYG authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) to get you up-and-running with a new Adobe Experience Manager site using Edge Delivery Services and the Universal Editor for content authoring.
-
->[!TIP]
->
->For an end-to-end walkthrough of creating a new Edge Delivery Services project that is enabled for WYSIWYG authoring with AEM as a Cloud Service as a content source, please view [this AEM GEMs webinar](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery).
-

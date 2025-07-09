@@ -7,44 +7,7 @@ exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
 ---
 # [!DNL Dynamic Media] templates{#dynamic-media-templates}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
-        </td>
-    </tr>
-</table>
-
-Create real time customizable templates for your banners and flyers using [!DNL Dynamic Media] templates, a WYSIWYG template editor. Use your [!DNL Dynamic Media] template in downstream applications. A [!DNL Dynamic Media] template includes image and text layers. Add parameters to the image and text layers of the template and use [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) to reposition and resize the layer and update its content in real-time. 
+Create real time customizable templates for your banners and flyers using [!DNL Dynamic Media] templates, a WYSIWYG template editor. Publish your [!DNL Dynamic Media] template and use it in downstream applications. A [!DNL Dynamic Media] template includes image and text layers. Add parameters to the image and text layers of the template and use [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) to reposition and resize the layer and update its content in real-time. 
 
 Some of the key features include:
 
@@ -67,22 +30,30 @@ Some of the key benefits of [!DNL Dynamic Media] templates include:
 >
 >Customers with subscriptions to the Enhanced Security SKU cannot use any [!DNL Dynamic Media] capabilities, including [!DNL Dynamic Media] Templates, on that Cloud Services program.
 
+Learn to create a [!DNL Dynamic Media] template step by step in this video.
+>[!VIDEO](https://video.tv.adobe.com/v/3443281)
+
 ## Before you begin{#prerequisites-for-dynamic-media-wysiwyg-template}
 
-To create a [!DNL Dynamic Media] template, you must have:
+Fulfil the following requirements to create a [!DNL Dynamic Media] template and generate its delivery URL:
 
 1. Access to [!DNL Dynamic Media].
-1. [Synced the images available in your [!DNL AEM Assets] instance with [!DNL Dynamic Media] to use them for creating the template](/help/assets/dynamic-media/config-dm.md).
-1. verified the following in the Touch UI:
+1. On the [!DNL Assets View] homepage, you have a folder in **[!UICONTROL Dynamic Media Assets]** to save your template. [Create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** to replicate that folder in **[!UICONTROL Dynamic Media Assets]**.
+1. [Sync the images available in your [!DNL AEM Assets] instance with [!DNL Dynamic Media] to use them for creating the template](/help/assets/dynamic-media/config-dm.md).
+1. Publish the images to use in creating the template to generate the delivery URL of the template after creating it. The delivery URL can be used in downstream applications.
+1. To use a font other than the default [!UICONTROL Adobe Sans F2] font in the template's text layer, [upload and publish the font file to AEM and Dynamic Media simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation). [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Also, ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them. See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) for more information.<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
+1. verify the following in the Touch UI:
    * On the **[!UICONTROL Edit [!DNL Dynamic Media] Configuration page]**, **[!UICONTROL [!DNL Dynamic Media] sync mode]** that is set to **[!UICONTROL Disabled by default]**, is not applied to all AEM folders (**[!UICONTROL Sync all content]** is unchecked). See [configuring Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md) for more information.
    * **[!UICONTROL [!DNL Dynamic Media] sync mode]** is set to **[!UICONTROL Enable for subfolders]** for the destination folder or subfolder where you will save the template after creation. See [configuring [!DNL Dynamic Media] Cloud Service](/help/assets/dynamic-media/config-dm.md) for more information.
-
-## Create [!DNL Dynamic Media] WYSIWYG template{#how-to-create-dynamic-media-wysiwyg-template}
+ 
+## Create [!DNL Dynamic Media] template{#how-to-create-dynamic-media-template}
 
 Execute the following steps to create a [!DNL Dynamic Media] template:
-
+<!--
 1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
-1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them for creating the template. 
+1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
+1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
+-->
 1. [Create a blank canvas](#create-a-canvas)
 1. [Add images to the canvas](#add-images-to-the-canvas)
 1. [Add text layers to the canvas](#add-text-to-the-canvas)
@@ -102,6 +73,7 @@ Execute these steps to create a blank canvas:
    >[!NOTE]
    >
    >  The template is saved in the location where you create it. On [!DNL Assets View] home page, select **[!UICONTROL Dynamic Media Assets]** and click **[!UICONTROL Create Template]** to save the template in **[!UICONTROL Dynamic Media Assets]** root folder.
+ 
 1. Specify a template name, define the canvas width and height, and click **[!UICONTROL Create]**. A blank canvas displays with menu options on both sides to use for creating the template. Hover over the menu options to see their tooltip. 
 ![real-time customizable template](/help/assets/assets/blank-canvas-page.png)
 
@@ -115,18 +87,18 @@ Execute these steps to create a blank canvas:
 * ![customizable templates](/help/assets/assets/add-text.svg): Click to add texts to the canvas.
 * ![customizable templates](/help/assets/assets/show-layers-list.svg): Click to see the list of all layers (image and text) on the canvas. Every image and text added to the canvas is represented as a separate layer.
 
-**Menu options on the left pane:** Use these options for common editor actions as mentioned below.
+**Menu options on the left pane:** Use these options for the following common editor actions.
 
-* ![DM Templates](/help/assets/assets/layer-selector.svg): Select a layer.
-* ![templates that support customization](/help/assets/assets/bring-forward.svg): Click to bring a selected layer forward or press **Ctrl** + **]** (Windows) or **Cmd** + **]** (Mac).
-* ![how to create a template that can be customized easily](/help/assets/assets/send-backward.svg): Click to send a selected layer backward or press **Ctrl** + **[** (Windows) or **Cmd** + **[** (Mac).
-* ![create a template that can be customized instantly](/help/assets/assets/undo.svg): Click to undo the last action or press **Ctrl** + **Z** (Windows) or **Cmd** + **Z** (Mac).
-* ![template to create banners rapidly](/help/assets/assets/redo.svg): Click to redo the last action or press **Ctrl** + **Y** (Windows) or **Cmd** + **Y** (Mac).
-* ![template to create flyers rapidly](/help/assets/assets/zoom-in.svg): Click to zoom in the canvas or press **Ctrl** + **+** (Windows) or Cmd + **+** (Mac).
-* ![template to create banners rapidly](/help/assets/assets/Zoom-out.svg): Click to zoom out the canvas or press **Ctrl** + **-** (Windows) or **Cmd** + **-** (Mac).
+* ![DM Templates](/help/assets/assets/layer-selector.svg): Select ![DM Templates](/help/assets/assets/layer-selector.svg) and click a layer on the canvas to select it.
+* ![templates that support customization](/help/assets/assets/bring-forward.svg): Click ![templates that support customization](/help/assets/assets/bring-forward.svg) or use keyboard shortcut, **Ctrl** + **]** (Windows) or **Cmd** + **]** (Mac) to bring a selected layer forward. 
+* ![how to create a template that can be customized easily](/help/assets/assets/send-backward.svg): Click ![how to create a template that can be customized easily](/help/assets/assets/send-backward.svg) or use keyboard shortcut, **Ctrl** + **[** (Windows) or **Cmd** + **[** (Mac) to send a selected layer backward.
+* ![create a template that can be customized instantly](/help/assets/assets/undo.svg): Click ![create a template that can be customized instantly](/help/assets/assets/undo.svg) or use keyboard shortcut, **Ctrl** + **Z** (Windows) or **Cmd** + **Z** (Mac) to undo the last action.
+* ![template to create banners rapidly](/help/assets/assets/redo.svg): Click ![template to create banners rapidly](/help/assets/assets/redo.svg) or use keyboard shortcut, **Ctrl** + **Y** (Windows) or **Cmd** + **Y** (Mac) to redo the last action.
+* ![template to create flyers rapidly](/help/assets/assets/zoom-in.svg): Click ![template to create flyers rapidly](/help/assets/assets/zoom-in.svg) or use keyboard shortcut, **Ctrl** + **+** (Windows) or **Cmd** + **+** (Mac) to zoom in the canvas.
+* ![template to create banners rapidly](/help/assets/assets/Zoom-out.svg): Click ![template to create banners rapidly](/help/assets/assets/Zoom-out.svg) or use keyboard shortcut, **Ctrl** + **-** (Windows) or **Cmd** + **-** (Mac) to zoom out the canvas.
 * Press **Backspace** or **delete** to delete the selected layer if no text or property is being edited.
 
-Click ![template to create flyers rapidly](/help/assets/assets/show-layers-list.svg) **>** more options (![](/help/assets/assets/three-dots.svg)) on the Canvas layer to edit the canvas dimensions anytime while creating the template.
+Click ![template to create flyers rapidly](/help/assets/assets/show-layers-list.svg) and select more options (![](/help/assets/assets/three-dots.svg)) on the Canvas layer to edit the canvas dimensions anytime while creating the template.
 ![](/help/assets/assets/edit-canvas1.png)
 
    >[!NOTE]
@@ -137,7 +109,7 @@ Click ![template to create flyers rapidly](/help/assets/assets/show-layers-list.
 
 Execute these steps to add images to the canvas:
 
-1. Click ![create a banner in no time](/help/assets/assets/add-image.svg) to display the [Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) panel. The panel displays the images in your AEM Assets instance that are synced to [!DNL Dynamic Media]. 
+1. Click ![create a banner in no time](/help/assets/assets/add-image.svg) to open the [Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector) panel. The panel displays the images in your AEM Assets instance that are synced to [!DNL Dynamic Media]. 
 1. Browse the panel or use keywords in the search bar to find a specific image.
 1. Drag and drop an image on the canvas to use it. See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) for resizing or repositioning a layer on the canvas.
 ![create a banner within seconds](/help/assets/assets/add-image-to-canvas.png)
@@ -151,11 +123,7 @@ Execute these steps to add text layers to the canvas:
 1. Select **[!UICONTROL Smart Text Resize]** in the Properties panel to  automatically adjust the text length and font size to optimally fit in the designated area. 
 ![best customizable banners](/help/assets/assets/add-text-layer.png)
 
-See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) to reposition, resize, rotate or delete the layer. Format your text to the required font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **[!UICONTROL Text]** section of the panel.
-
-   >[!NOTE]
-   >
-   > To use a font other than the default Adobe Sans F2 font family, you need to upload and publish the font file to [!AEM Assets] and [!DNL Dynamic Media]. If you have some old fonts in your instance, ensure to [reprocess](/help/assets/reprocessing-assets-view.md) to view them in the Template editor.
+See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) to reposition, resize, rotate or delete the layer. Format your text to the required font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **[!UICONTROL Text]** section of the panel. The **[!UICONTROL Font Family]** field displays [!UICONTROL Adobe Sans F2] default font, the reprocessed existing fonts and the newly uploaded and published fonts. See point 5 in the [Before you begin](#prerequisites-for-dynamic-media-wysiwyg-template) section above for more information.
 
 ### Edit or delete a layer {#edit-or-delete-a-layer}
 
@@ -263,24 +231,19 @@ Execute these steps to preview and publish the template and copy the delivery UR
    ![creating content on the fly](/help/assets/assets/dm-templates-publish-status.png)
    You can also toggle **[!UICONTROL Include all parameters]** to edit all of the displayed parameter values and see the updates in the template preview.
    <br>
-1. To publish the template on the preview page, click **[!UICONTROL Publish]**  and confirm to publish. **[!UICONTROL Publish Complete]** message displays and the publish status updates to **[!UICONTROL Published]**.
-
- >[!NOTE]
- >
- >Publishing the template requires the template images to be published first.
+1. To publish the template from the preview page, click **[!UICONTROL Publish]**  and confirm to publish. A **[!UICONTROL Publish Complete]** message displays and the publish status updates to **[!UICONTROL Published]**.
 
 ### Copy the delivery URL
 
 The selected parameters on the **[!UICONTROL Preview]** page become the URL parameters in the template URL.
 
-To copy the URL of the published template displayed in preview:
+Ensure the images in the template are already published to AEM and Dynamic Media to generate the delivery URL of the template.
+
+Execute the following steps to copy the delivery URL of the template:
 
 1. Click **[!UICONTROL Copy URL]**. The **[!UICONTROL Copy URL]** dialog box displays. Select and copy the displayed URL. The first parameter in the URL starts after a question mark **([!UICONTROL ?])** and a key-value pair starts with **[!UICONTROL $]** and ends with **[!UICONTROL &]**. The key and value are separated by an equals sign **([!UICONTROL =])**, with the key on the left and the value on the right. 
 1. Paste this URL in your browser tab and see your live template. Customize the template in real time by updating the required parameter's value (Key's value) in the URL directly as demonstrated in [step 2](#preview-and-publish-template-and-copy-template-deliver-url) of **Preview and Publish** section.  
 1. Use this URL for rapid merchandising of your products or services. You can share this URL with your customers or integrate it into your website or any downstream third-party application to display the banner and make real-time updates to it to reflect the ongoing offers.
-
-Learn to create a [!DNL Dynamic Media] template step by step in this video.
->[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## Make real-time updates to the template from the URL{#update-the-template-from-the-url}
 
@@ -306,7 +269,9 @@ Edit the template by following these steps:
 
 ## Add Call to Action (CTA) link to your template layer{#add-CTA-in-dynamic-media-templates}
 
-Turn any image or text layer of your [!DNL Dynamic Media] template into a hyperlink by adding a CTA link to it that directs users to a target page. Execute these steps to add a CTA link to a layer:
+Turn any image or text layer of your [!DNL Dynamic Media] template into a hyperlink by adding a CTA link to it that directs users to a target page. 
+
+Execute these steps to add a CTA link to a layer:
 
 1. Navigate to your template location, select the template and click ![edit](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL Edit Template]**. The template displays on the canvas.
 1. Select the template layer and [navigate to its properties panel](#edit-or-delete-a-layer) to add a CTA link to it.
@@ -314,10 +279,9 @@ Turn any image or text layer of your [!DNL Dynamic Media] template into a hyperl
 
    ![add CTA](/help/assets/assets/add-cta.png)
 
-1. Click **[!UICONTROL Preview]** to preview your template and see its defined parameters. 
-1. Click **[!UICONTROL Publish]** and select **[!UICONTROL Yes]** to publish your template, if not published earlier. 
+1. Click **[!UICONTROL Preview]** and select **[!UICONTROL Publish]** to publish your template, if not published earlier. 
 1. Navigate to the folder where this template is saved, select this template and click ![details page](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Details]**.
-1. Click **[!UICONTROL Copy Options]** and select **[!UICONTROL Copy Embed Code]**. 
+1. Click **[!UICONTROL Copy Options]** and select **[!UICONTROL Copy Embed Code]**. Ensure to publish the template images to [!DNL AEM and Dynamic Media] to copy the embed code.
     
    ![copy embed code](/help/assets/assets/copy-options1.png)
 

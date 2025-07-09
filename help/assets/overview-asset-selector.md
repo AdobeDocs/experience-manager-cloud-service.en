@@ -6,43 +6,6 @@ exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 ---
 # Micro-Frontend Asset Selector {#Overview}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
-        </td>
-    </tr>
-</table>
-
 Micro-Frontend Asset Selector provides a user interface that easily integrates with the [!DNL Experience Manager Assets] repository so that you can browse or search digital assets available in the repository and use them in your application authoring experience.
 
 The Micro-Frontend user interface is made available in your application experience using the Asset Selector package. Any updates to the package are automatically imported and the latest deployed Asset Selector loads automatically within your application.
@@ -200,6 +163,46 @@ Asset Selector lets you view the asset in four different views:
 * ![gallery view](assets/do-not-localize/gallery-view.png) [!UICONTROL **Gallery View**] The gallery view displays files or folders in a center-locked horizontal list.
 * ![waterfall view](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Waterfall** View] The waterfall view displays files or folders in the form of a Bridge.
 
+### Asset details and metadata {#asset-details-and-metadata}
+
+The Asset Details Page provides a comprehensive view of a specific asset, consolidating all key information in one place. It includes an overview with the name, file format, status, and a brief description, along with a preview or thumbnail for easy visual identification. It also includes metadata of an asset such as creation date, author, size, color scheme, and so on. These attributes help efficient search, filtering, and classification of an asset. The asset details panel is available in both rail and modal view of Asset Selector. In the rail view, it is required to enable and configure `onDrop` property to return an asset. Alternatively, in the modal view, `handleSelection` property returns an asset. See [Asset Selector Properties](asset-selector-properties.md).
+
+To view details of an asset and metadata, execute the steps below:
+
+1. Open Asset Selector MFE and navigate to an asset.
+1. Hover the asset and click ![info icon](/help/assets/assets/info-icon-solid-black.svg).
+1. Go to the **[!UICONTROL Info]** tab to see the asset's details. <!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
+
+To customize the details view panel of an asset, see [Customize information in modal view](asset-selector-customization.md#customize-info-in-modal-view).
+
+![Asset details](assets/asset-details.png)
+
+<!--
+
+#### Asset renditions {#asset-renditions}
+
+Renditions in Adobe Experience Manager (AEM) are customized versions of digital assets, such as images, designed for different devices and platforms to ensure optimal performance. See [Dynamic Media renditions](/help/assets/renditions.md#dynamic-media-renditions).
+
+>[!NOTE]
+>
+>* Prerequisites to [Dynamic Media with OpenAPI Capabilities renditions](/help/assets/renditions.md##prereqs-dm-with-openapi-renditions).
+>* Renditions tab in the details panel of an asset shows up if `featureSet`  props is set to `['detail-panel', 'dm-renditions']`.
+>* An asset should be approved to see Dynamic Media with OpenAPI renditions and/or ensure processing/publishing of the asset to Dynamic Media is complete (for images only).
+
+![Asset details dynamic media renditions](assets/asset-details-dm-renditions.png)
+
+For assets that are approved and have renditions enabled, you see the **Dynamic Media with Open API** badge. 
+
+![Dynamic Media Open API stamp](assets/dm-open-api-stamp.png)
+
+Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI capabilities](integrate-asset-selector-dynamic-media-open-api.md##interface-dynamic-media-open-api).
+
+##### Add modifiers {#modifiers-dm-media-renditions}
+
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+
+-->
+
 ## Learn more on key capabilities {#key-capabilities-asset-selector}
 
 <table>
@@ -213,39 +216,39 @@ Asset Selector lets you view the asset in four different views:
      </td>
     <td>
         <img src="assets/with-adobe-app.gif" width="70px" height="70px" alt="Integrate Asset Selector with Adobe applications graphic"><br/>
-        <a href="integrate-asset-selector.md">Integrate Asset Selector with Adobe applications</a>
+        <a href="integrate-asset-selector-adobe-app.md">Integrate Asset Selector with Adobe applications</a>
         <p>
         <em>Discover how to integrate Asset Selector with various Adobe applications.</em>
         </p>
     </td>
     <td>
         <img src="assets/third-party-app.gif" width="70px" height="70px" alt="Integrate Asset Selector graphic"><br/>
-        <a href="integrate-asset-selector.md">Integrate Asset Selector with third party applications</a>
+        <a href="integrate-asset-selector-non-adobe-app.md">Integrate Asset Selector with third party applications</a>
         <p>
         <em>Dig up the capabilities to integrate Asset Selector with non-Adobe applications.</em>
         </p>
     </td>
     <td>
         <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="Integrate Asset Selector graphic"><br/>
-        <a href="integrate-asset-selector.md">Integrate Asset Selector with Dynamic Media Open APIs</a>
+        <a href="integrate-asset-selector-dynamic-media-open-api.md">Integrate Asset Selector with Dynamic Media Open APIs</a>
         <p>
         <em>Understand how to integrate Asset Selector with Dynamic Media Open APIs.</em>
         </p>
      </td>
      <td>
-        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Asset Selector properties graphic"><br/>
-        <a href="asset-selector-customization.md">Asset Selector Properties</a>
+        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Asset Selector examples graphic"><br/>
+        <a href="asset-selector-properties.md">Asset Selector Properties</a>
         <p>
-        <em>Learn the basics of customizing various components of Asset Selector, such as filters, selection of assets, expired assets, and much more. </em>
+        <em>Understand the usage of properties in a practical manner. </em>
         </p>
     </td>
 </tr>
 <tr>
     <td>
-        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Asset Selector examples graphic"><br/>
-        <a href="asset-selector-customization.md">Asset Selector Examples</a>
+        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Asset Selector properties graphic"><br/>
+        <a href="asset-selector-examples.md">Asset Selector Examples</a>
         <p>
-        <em>Understand the usage of properties in a practical manner. </em>
+        <em>Learn the basics of customizing various components of Asset Selector, such as filters, selection of assets, expired assets, and much more. </em>
         </p>
     </td>
     <td>
@@ -266,7 +269,7 @@ Asset Selector lets you view the asset in four different views:
         <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="Asset Selector collections graphic"><br/>
         <a href="asset-selector-collections.md">Asset Selector Collections</a>
         <p>
-        <em>Learn how to use collections inside Asset Selector using Experience Manager repository. </em>
+        <em>Learn how to use collections inside Asset Selector using the Experience Manager repository. </em>
         </p>
     </td>
     <td>
@@ -280,3 +283,4 @@ Asset Selector lets you view the asset in four different views:
 >* [Integrate Asset Selector with various applications](/help/assets/integrate-asset-selector.md)
 >* [Asset Selector properties](/help/assets/asset-selector-properties.md)
 >* [Integrate Asset Selector with Dynamic Media with OpenAPI capabilities](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Product Visuals powered by AEM Assets Integration for Commerce](https://experienceleague.adobe.com/en/docs/commerce/product-visuals/overview)

@@ -4,7 +4,9 @@ description: This document describes the recommended steps to upload a standalon
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
+index: no
 ---
+
 # Editing an External SPA within AEM {#editing-external-spa-within-aem}
 
 When deciding [what level of integration](/help/implementing/developing/headful-headless.md) you would like to have between your external SPA and AEM, consider that you must be able to edit and view the SPA within AEM, often.
