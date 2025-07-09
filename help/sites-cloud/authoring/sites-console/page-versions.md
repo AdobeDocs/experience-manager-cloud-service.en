@@ -196,10 +196,6 @@ To compare a previous version with the current page:
 
 Timewarp is a feature designed to simulate the *published* state of a page at specific times in the past.
 
->[!TIP]
->
->[Timewarp can also be used with Launches to preview the future](/help/sites-cloud/authoring/launches/preview.md).
-
 Because content creation is an ongoing and collaborative process, the purpose of Timewarp is to allow authors to track the published website over time so they can understand how the content has changed. This feature uses the page versions to determine the state of the publish environment.
 
 To use this feature:
@@ -208,6 +204,16 @@ To use this feature:
 * It means the version shown was created/activated *before* the point in time selected in Timewarp.
 * When navigating to a page that has been deleted, it also rendered - as long as the old versions of the page are still available in the repository.
 * If no published version is found, Timewarp reverts to the current state of the page on the author environment (the reason is to prevent an error/404 page, which would prevent browsing).
+
+>[!NOTE]
+>
+>Timewarp works, and is intended to be used, for AEM pages - versions for history and launches for future content states. 
+>
+>It does not work for nested launches or when experience fragments are used.
+
+>[!TIP]
+>
+>[Timewarp can also be used with Launches to preview the future](/help/sites-cloud/authoring/launches/preview.md).
 
 ### Using Timewarp {#using-timewarp}
 
@@ -234,6 +240,7 @@ Timewarp makes a best effort to reproduce a page at a selected point in time. Ho
 * **Removed versions affect Timewarp** - If versions are removed from the repository then Timewarp cannot show the correct view.  
 * **Timewarp is read-only** - You cannot edit the old version of the page. It is only available for viewing. If you want to restore the older version, you must do that manually using [restore](#revert-to-a-version).
 * **Timewarp is based on page content** - If elements for rendering the website changed, such as code, css, and assets, the view differs from what it was originally. Those items are not versioned in the repository.
+* Timewarp does not work for nested launches or when experience fragments are used.
 
 >[!CAUTION]
 >
