@@ -13,7 +13,7 @@ role: User, Developer
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions)                  |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components)                  |
 | AEM as a Cloud Service     | This article         |
 
 AEM Forms supports custom functions, allowing users to define JavaScript functions for implementing complex business rules. These custom functions extend the capabilities of forms by facilitating manipulation and processing of entered data to meet specified requirements. They enable dynamic alteration of form behavior based on predefined criteria. Custom functions also enable developers to enforce complex validation logic, perform dynamic calculations, and control the display or behavior of form elements based on user interactions or predefined criteria.
@@ -163,6 +163,7 @@ You can create a custom function with or without jsdoc comments.
             // code to be executed
         }
 ```
+
 If the user does not add any JavaScript annotations to the custom function, it is listed in the rule editor by its function name. However, it is recommended to include JavaScript annotations for improved readability of the custom functions.
 
 ### Arrow function with mandatory JavaScript annotations or comment
@@ -208,6 +209,16 @@ To list custom functions in the rule editor of an Adaptive Form, create custom f
 ```
 
 If the user does not add any JavaScript annotations to the custom function, the custom function is not listed in the rule editor of an Adaptive Form.
+
+## Known Issue
+
+* Custom functions do not support JavaScript regular expression literals. Using regex literals in a custom function results in errors during execution. For example:
+  `const pattern = /^abc$/;`
+
+  To ensure compatibility, use the RegExp constructor in the custom functions.
+  
+  `const pattern = new RegExp("^abc$");`
+  Refactor regular expressions to use the RegExp constructor to ensure consistent and reliable execution.
 
 ## Next Step
 

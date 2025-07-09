@@ -1,13 +1,13 @@
 ---
 title: Page Editor and Universal Editor
-description: The Page Editor remains supported by Adobe, but the Universal Editor bring exiting possibilities to your new projects.
+description: The Page Editor remains supported by Adobe, but the Universal Editor brings exciting possibilities to your new projects.
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
 ---
 # Page Editor and Universal Editor {#page-editor-universal-editor}
 
-The Page Editor remains supported by Adobe, but the Universal Editor bring exiting possibilities to your new projects.
+The Page Editor remains supported by Adobe, but the Universal Editor brings exciting possibilities to your new projects.
 
 ## Background {#background}
 
@@ -34,23 +34,23 @@ Because the feature gap between the two editors is constantly shrinking, be sure
 
 ||Page Editor|Notes|Universal Editor|Notes|
 |---|---|---|---|---|
-|[Classic AEM Delivery](/help/sites-cloud/authoring/author-publish.md)|[!BADGE Available]{type=Positive}|Recommended for use with the Core Components|[!BADGE Unavailable]{type=Negative}|Classic AEM pages typically rely on several Page Editor-specific features that are difficult to replicate as-is with the Universal Editor.|
+|[Publish Delivery](/help/sites-cloud/authoring/author-publish.md)|[!BADGE Available]{type=Positive}|Recommended for use with the Core Components and traditional AEM projects|[!BADGE Unavailable]{type=Negative}|Traditional AEM pages typically rely on several Page Editor-specific features that are difficult to replicate as-is with the Universal Editor.|
 |[Edge Delivery](/help/edge/overview.md)|[!BADGE Unavailable]{type=Negative}||[!BADGE Available]{type=Positive}||
 |[Headless Delivery](/help/headless/introduction.md)|[!BADGE Partially Available]{type=Caution}|Only with [the SPA Editor,](/help/implementing/developing/hybrid/introduction.md) which was [deprecated](/help/implementing/developing/hybrid/spa-editor-deprecation.md) in favor of the Universal Editor|[!BADGE Available]{type=Positive}|The Universal Editor allows developers to bring their own web app without imposing any specific framework requirements or implementation constraints.|
 
 ### Persistence {#persistence}
 
-||Page Editor|Note|Universal Editor|Notes|
+||Page Editor|Notes|Universal Editor|Notes|
 |---|---|---|---|---|
 |Editing Page components|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |Editing [Content Fragments](/help/assets/content-fragments/content-fragments.md)|[!BADGE Unavailable]{type=Negative}||[!BADGE Available]{type=Positive}|Including inserting new and reordering fragments|
 
 ### Capabilities {#capabilities}
 
-||Page Editor|Note|Universal Editor|Notes|
+||Page Editor|Notes|Universal Editor|Notes|
 |---|---|---|---|---|
 |Page Templates|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|The Universal Editor is agnostic of the template system used. However, the typical implementation pattern favors developer-defined templates, as modern frontend tooling makes it much easier for developers to define and maintain template logic directly in code. |
-|WYSIWYG Editing|[!BADGE Available]{type=Positive} Limited to Pages||[!BADGE Available]{type=Positive}|Supporting Pages and Content Fragments|
+|WYSIWYG Editing|[!BADGE Available]{type=Positive}|Limited to Pages|[!BADGE Available]{type=Positive}|Supporting Pages and Content Fragments|
 |[Generate Variations](/help/generative-ai/generate-variations.md)|[!BADGE Unavailable]{type=Negative}||[!BADGE Available]{type=Positive}|[Available as an extension](/help/implementing/universal-editor/extending.md)|
 |Insert new block|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |Reorder Block|[!BADGE Available]{type=Positive}|Possible with in-context drag-and-drop, but not in the "tree view" side panel|[!BADGE Available]{type=Positive}|Possible via drag-and-drop in the "tree view" side panel, but not yet in-context (planned)|
@@ -67,7 +67,7 @@ Because the feature gap between the two editors is constantly shrinking, be sure
 |Content tree|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Also allows reordering within the tree|
 |Device simulation|[!BADGE Available]{type=Positive}|[Configured devices can be simulated,](/help/sites-cloud/administering/responsive-layout.md) but the user cannot manually enter any different screen dimensions to simulate.|[!BADGE Available]{type=Positive}|[Any screen dimensions to simulate can be manually entered,](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) but default breakpoints can not be configured.|
 |[Page locking](/help/sites-cloud/authoring/sites-console/managing-pages.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Respects lock status set in Sites Console with extension available to lock/unlock pages from the editor|
-|[Page properties](/help/sites-cloud/authoring/sites-console/page-properties.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available from the Site Admin, with extension to also access the properties of pages from the editor|
+|[Page properties](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available from the Site Admin, with extension to also access the properties of pages from the editor|
 |Multi-field properties|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned|
 |[Remote DAM](/help/assets/dynamic-media-open-apis-overview.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |[Page versioning](/help/sites-cloud/authoring/sites-console/page-versions.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
@@ -97,6 +97,6 @@ There is no direct migration path from the Page Editor to the Universal Editor. 
   * This affects many areas of the dialogs, like custom widgets, field validation, show/hide rules, and template-based customizations.
     * While such capabilities are still possible, the Universal Editor solves them through configuration, instead of custom JavaScript deployed in dialogs.
 
-While the Universal Editor can technically enable editing for classic AEM pages (e.g. built with the Core Components), these sites typically rely on several Page Editor-specific features, such as the Style System, Responsive Grid, Editable Templates, and custom Javascript within dialogs.
+While the Universal Editor can technically enable editing pages for traditional AEM projects (e.g. built with the Core Components), these sites typically rely on several Page Editor-specific features, such as the Style System, Responsive Grid, Editable Templates, and custom Javascript within dialogs.
 
 Since the Universal Editor follows a more streamlined, modern approach that does not support these legacy features, migrating such sites would require significant refactoring. For this reason, **migrating Page Editor sites to the Universal Editor is only recommended for projects transitioning to Edge Delivery Services.**

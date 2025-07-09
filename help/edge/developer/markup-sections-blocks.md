@@ -4,6 +4,9 @@ title: Markup, Sections, Blocks, and Auto Blocking
 feature: Edge Delivery Services
 exl-id: 3f4ae9e9-e5c8-4873-a3d0-591c4d8683dd
 role: Admin, Architect, Developer
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Markup, Sections, Blocks, and Auto Blocking
 

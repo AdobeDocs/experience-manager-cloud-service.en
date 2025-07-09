@@ -34,10 +34,10 @@ The AEM Forms Boilerplate template gets you started quickly with an AEM project 
 1. Create a GitHub repository for your AEM Project. To create repository:  
     1. Go to [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms). 
 
-        ![AEM Forms Boilerplate](/help/edge/assets/aem-forms-boilerplate.png)
+        ![AEM Forms Boilerplate](/help/edge/docs/forms/assets/eds-form-boilerplate.png)
     1. Click the **Use this template** option and select the **Create a new repository** option. The create a new repository screen opens.  
 
-        ![Create new repository using AEM Forms Boilerplate](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
+        ![Create new repository using AEM Forms Boilerplate](/help/edge/docs/forms/assets/use-eds-form-template.png)
     
     1. On the create a new repository screen, select the **owner**, and specify **Repository name** . Adobe recommends that the repository is set to **Public**. So, select the **public** option, and click **Create Repository**. 
 
@@ -189,6 +189,10 @@ The sample content includes an "enquiry" sheet that serves as a template for the
 
 ![Enquiry form](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
+>[!IMPORTANT]
+>
+>**The sheet where the form is authored has restrictions on what it can be named. Only `helix-default` and `shared-aem` can be used as sheet names.**
+
 Let's start with updating a field label. Open the 'enquiry' sheet for editing, change the label of submit button to `Let's Talk` and use AEM Sidekick to preview and publish the file. 
 
  ![Enquiry form](/help/edge/assets/enquiry-form-preview-publish.png)
@@ -276,32 +280,87 @@ If you have an existing AEM Project, you can integrate the Adaptive Forms Block 
 >[!NOTE]
 >
 >
-> This step applies to projects built with the [AEM Boilerplate](https://github.com/adobe/aem-boilerplate). If you created your AEM project using the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), you can skip this step.
+> This step applies to projects built with the [AEM Boilerplate XWalk](https://github.com/adobe/aem-boilerplate). If you created your AEM project using the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), you can skip this step.
 
-To Integrate:
+To integrate:
 
-1. **Add required files and folders**
-   1. Copy and paste the following folders and files from the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) into your AEM Project:
+1. Navigate to the AEM Project repository folder on your local system.
 
-      * [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)  folder
-       * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)  folder
-       * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) folder
-       * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) file
-       * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) file
+1. Copy and paste the following folders and files from the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) into your AEM Project:
 
-1. **Update component definitions and models files**
-    1. Navigate to the `../models/_component-definition.json` file in your AEM Project and update it with the changes from the [_component-definition.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
+   * [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) folder
+   * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) file
+   * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) file
+1. Navigate to the `/scripts/editor-support.js` file in your AEM Project and update it with the [editor-support.js file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
+1. Navigate to the `/models/_section.json` in your AEM Project and append "form" and "embed-adaptive-form" to the components array of the `filters` object:
     
-    1. Navigate to the `../models/_component-models.json` file in your AEM Project and update it with the changes from the [_component-models.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
+    ```
+        "filters": [
+        {
+      "id": "section",
+      "components": [
+        .
+        .
+        .
+        "form",
+        "embed-adaptive-form"
+      ]
+     }]
+    ```
 
-1. **Add Form Editor in editor script**
-    1. Navigate to the `../scripts/editor-support.js` file in your AEM Project and update it with the changes from the [editor-support.js file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
-1. **Update ESLint configuration file**
-    1. Navigate to the `../.eslintignore` file in your AEM Project and add the following line of codes to prevent errors related to the Form Block rule engine:
-        ```
-            blocks/form/rules/formula/*
-            blocks/form/rules/model/*
-        ```
+1. (Optional) Navigate to `/.eslintignore` in your AEM Project and add below lines of code:
+    
+    ```
+    blocks/form/rules/formula/*
+    blocks/form/rules/model/*
+    blocks/form/rules/functions.js
+    scripts/editor-support.js
+    scripts/editor-support-rte.js
+    ```
+
+1. (Optional) Navigate to `/.eslintrc.js` in your AEM Project and add below lines of code in the `rules` object:
+    
+    ```
+    'xwalk/max-cells': ['error', {
+      '*': 4, // default limit for all models
+      form: 15,
+      wizard: 12,
+      'form-button': 7,
+      'checkbox-group': 20,
+      checkbox: 19,
+      'date-input': 21,
+      'drop-down': 19,
+      email: 22,
+      'file-input': 20,
+      'form-fragment': 15,
+      'form-image': 7,
+      'multiline-input': 23,
+      'number-input': 22,
+      panel: 17,
+      'radio-group': 20,
+      'form-reset-button': 7,
+      'form-submit-button': 7,
+      'telephone-input': 20,
+      'text-input': 23,
+      accordion: 14,
+      modal: 11,
+      rating: 18,
+      password: 20,
+      tnc: 12,
+    }],
+    'xwalk/no-orphan-collapsible-fields': 'off', // Disable until enhancement is done for Forms properties
+    ```
+
+1. Open the terminal and run the below commands:
+    
+    ```
+    npm i
+    npm run build:json
+    ```
+
+    >[!NOTE]
+    >
+    > Before pushing the changes to your AEM Project repository on GitHub, ensure that the `component-definition.json`, `component-models.json`, and `component-filters.json` files located at the root level of the AEM project are updated with the form-related objects.
 
 1. Commit and push these changes to your AEM Project repository on GitHub.
 
@@ -312,7 +371,7 @@ That's it! The Adaptive Forms Block is now part of your AEM project. You can sta
 Ensure a smooth GitHub build process by addressing potential issues:
 
 * **Resolve Module Path Error:**
-    If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
+    If you encounter the error "Unable to resolve path to module "'/scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
 * **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from `"lint": "npm run lint:js && npm run lint:css"` to `"lint": "echo 'skipping linting for now'"`. Save the file and commit the changes to your GitHub project.

@@ -1,6 +1,6 @@
 ---
-title: About AEM Launchpad &ndash; Early Adopter
-description: Learn about the Adobe Experience Manager Launchpad page.
+title: About Experience Hub
+description: Learn about the AEM Experience Hub page.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
@@ -8,44 +8,60 @@ hide: yes
 hidefromtoc: yes
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
 ---
-# About AEM Launchpad &ndash; Early Adopter {#aem-launchpad}
+# About Experience Hub {#aem-experience-hub}
 
-AEM Launchpad introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, AEM Launchpad lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, AEM Launchpad ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
+Experience Hub introduces a centralized starting point for managing content, assets, and sites within Adobe Experience Manager. Designed to deliver a personalized experience, Experience Hub lets you navigate the AEM ecosystem seamlessly according to your roles and goals. Acting as a guide, it provides key insights and recommended actions to help you achieve your objectives efficiently. With a clear, persona-driven layout, Experience Hub ensures quick access to essential tools, supporting a streamlined and effective experience across all AEM features.
 
-Available to early adopters, AEM Launchpad offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence AEM Launchpad's development by providing feedback that helps shape its future and enhances its value for the entire AEM community.
+Watch a quick tour of the reimagined AEM Experience Hub workspace (1 minutes, 27 seconds).
 
-## AEM Launchpad up close {#aem-launchpad-about}
+>[!VIDEO](https://video.tv.adobe.com/v/3463267?quality=12&learn=on)
 
-The [Adobe Experience Manager page](https://experience.adobe.com/#/experiencemanager) has been updated with enhanced navigation and interactive widgets. The previous collection of solution cards provided access to tools like the following: 
+<!--
+Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
 
-* Brand Portal
-* Cloud Acceleration Manager
-* Cloud Manager
-* Extension Manager
-* Software Distribution
+## Experience Hub up close {#aem-experience-hub-about}
+
+1. To get started, click [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) to open its home page.
+
+    ![Adobe Experience Cloud home page](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
+
+1. In the **Quick access** grouping, click **Experience Manager**.
+1. On the **Tell us what you want to do** page, click the option you want so Adobe can tailor your experience. 
+
+    You can change this preference at any anytime.
+
+    ![The Tell us what you want to do page](/help/implementing/cloud-manager/assets/experience-cloud-tellus.png)
+
+The Adobe Experience Manager page has been refreshed with enhanced navigation and interactive widgets. The previous collection of solution cards provided access to tools like the following: 
+
 * Universal Editor
+* Cloud Manager
+* Cloud Acceleration Manager
+* Software Distribution
+* Extension Manager
+* Brand Portal
 
 These solutions are now moved to the main navigation under **Tools**. Additionally, new navigation elements for **Sites** and **Assets** provide quick access to key Adobe Experience Manager features such as Assets, Collections, Sites, and Content Fragments. These features are available for the primary production environment that you have access to.
 
-![AEM Launchpad environments](/help/implementing/cloud-manager/assets/aem-launchpad-author-environments.png)
+![Experience Hub environments](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
 
-Serving as the central hub for Adobe Experience Manager, the AEM Launchpad page expands to feature additional widgets and actions tailored to each user role. Fully customizable, the page lets you choose the optimal layout for your screen. Widgets can be filtered so that only selected ones appear on the main page, ensuring a personalized experience. 
+Serving as the central hub for Adobe Experience Manager, the Experience Hub page expands to feature additional widgets and actions tailored to each user role. Fully customizable, the page lets you choose the optimal layout for your screen. Widgets can be filtered so that only selected ones appear on the main page, ensuring a personalized experience. 
 
-![AEM Launchpad customized](/help/implementing/cloud-manager/assets/aem-launchpad-custom.png)
+![Experience Hub customized](/help/implementing/cloud-manager/assets/experience-hub-custom.png)
 
 Widgets can also be resized and repositioned on the page to suit your needs and preferences better.
 
-![AEM Launchpad widgets](/help/implementing/cloud-manager/assets/aem-launchpad-widgets.png)
+![Experience Hub widgets](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
 
 The **Authoring Environments** section displays all AEM environments accessible to you, while the **Recents** section provides a list of recently visited pages tracked within the AEM systems.
 
 The navigation elements include Assets Browse, which loads the repository of the production environment accessible to the user.
 
-![AEM Launchpad navigation elements](/help/implementing/cloud-manager/assets/aem-launchpad-navigation.png)
+![Experience Hub navigation elements](/help/implementing/cloud-manager/assets/experience-hub-navigation.png)
 
 If no production AEM Cloud Service environments are available, the options appear dimmed (unavailable) for the user.
 
-![AEM Launchpad no production environments](/help/implementing/cloud-manager/assets/aem-launchpad-no-prod-environs.png)
+![Experience Hub no production environments](/help/implementing/cloud-manager/assets/experience-hub-no-prod-environs.png)
 
 
 

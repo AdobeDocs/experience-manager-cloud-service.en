@@ -8,6 +8,11 @@ role: Admin, Architect, Developer
 
 # Generate Variations {#generate-variations}
 
+
+>[!NOTE]
+>
+>It is recommended that you access [Generate Variations integrated into AEM editors](/help/generative-ai/generate-variations-integrated-editor.md), as the version described on this page will be deprecated in the future.
+
 If you are looking for a way to optimize your digital channels and accelerate content creation, you can use Generate Variations. Generate Variations uses generative Artificial Intelligence (AI) to create content variations based on prompts; these prompts are either provided by Adobe or created, and managed, by users. After creating variations, you can use the content on your website, and also measure their success using the [Experimentation](https://www.aem.live/docs/experimentation) functionality of [Edge Delivery Services](/help/edge/overview.md).
 
 You can [access Generate Variations](#access-generate-variations) from:
@@ -19,10 +24,6 @@ You can [access Generate Variations](#access-generate-variations) from:
 >[!NOTE]
 >
 >In all cases, to use Generate Variations you must ensure that the [access prerequisites](#access-prerequisites) are fulfilled.
-
->[!NOTE]
->
->You can also access [Generate Variations integrated into AEM editors](/help/generative-ai/generate-variations-integrated-editor.md).
 
 You can then:
 
@@ -483,6 +484,7 @@ For further information you can also read:
 
 * [GenAI Generate Variations on GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services Experimentation](https://www.aem.live/docs/experimentation)
+* [Generative in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
 
 ## FAQs {#faqs}
 

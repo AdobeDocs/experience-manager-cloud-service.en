@@ -29,7 +29,7 @@ You can [access Generate Variations](#access-generate-variations) from the follo
 
 >[!NOTE]
 >
->The standalone version of [Generate Variations can still be directly accessed](/help/generative-ai/generate-variations.md).
+>It is recommended that you use this version, as although the standalone version of [Generate Variations can still be directly accessed](/help/generative-ai/generate-variations.md), it will be deprecated in the future.
 
 You can then:
 
@@ -54,6 +54,10 @@ Before using Generate Variations you are recommended to read the [Adobe Experien
 -->
 
 [Usage of Generate Variations](#generative-action-usage) is tied to the consumption of generative actions.
+
+>[!NOTE]
+>
+>See the [Security Fact Sheet for details related to Generate Variation in AEM](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf).
 
 ## Overview {#overview}
 
@@ -303,7 +307,10 @@ To use the Generate Variations in the Sidekick (of Edge Delivery Services), incl
 
 ### Access from the AEM Universal Editor {#access-aem-universal-editor}
 
-Access from the [AEM Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) is implemented as an extension. See the [Extension Manager in AEM Experience Manager](https://developer.adobe.com/uix/docs/extension-manager/) for further details.
+Access from the [AEM Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) is implemented as an extension.
+
+* For details on how to access Generate Variations from the Universal Editor, please see the document [Authoring Content with the Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations)
+* For details on how to enable the extension, please see the document [Extension Manager in AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
 
 ### Access from the AEM Content Fragment Editor {#access-aem-content-fragment-editor}
 
@@ -315,6 +322,13 @@ For further information you can also read:
 
 * [GenAI Generate Variations on GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services Experimentation](https://www.aem.live/docs/experimentation)
+* [Generative AI in Experience Cloud products](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
+
+  * [Generative AI in Experience Cloud products - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
+
+* [Generate Variations landing page on Experience Cloud](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html)
+
+* [Generative in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
 
 ## Release History {#release-history}
 

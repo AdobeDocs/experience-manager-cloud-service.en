@@ -14,6 +14,10 @@ Content requests include requests sent to AEM Sites. These requests may route th
 
 The system counts content requests when a user views a page using HTML or JSON. It measures the request at the point where the first caching system receives it. Certain HTTP requests are included or excluded for purposes of counting content requests. See the full list of HTTP [included content requests](#included-content-requests) and [excluded content requests](#excluded-content-request).
 
+>[!NOTE]
+>
+>Data shown in the Content Requests view is refreshed every 24 hours.
+
 ## About Cloud Service content requests {#understanding-cloud-service-content-requests}
 
 A *page request* refers to an HTTP request that retrieves core structured content (for example, HTML or JSON) necessary to render the main page experience. It does not include requests for assets, such as images or scripts.
@@ -91,3 +95,4 @@ Agent: skyline-service-warmup/1.*|
 | Exclude Commerce Integration Framework calls | Excluded | Requests made to AEM that gets forwarded to the Commerce Integration Framework&mdash;the URL starts with `/api/graphql`&mdash;to avoid double counting, they are not billable for Cloud Service.|
 | Exclude `manifest.json` | Excluded | Manifest is not an API call. It is here to provide information on how to install web sites on a desktop or mobile phone. Adobe should not count JSON request to `/etc.clientlibs/*/manifest.json`|
 | Exclude `favicon.ico` | Excluded | Although the returned content should not be HTML or JSON, certain scenarios like SAML authentication flows have been observed to return favicons as HTML. As a result, favicons are explicitly excluded from the count.|
+| Experience Fragment (XF) – Same-domain reuse | Excluded | Requests made to XF paths (such as `/content/experience-fragments/...`) from pages hosted on the same domain (as identified by the Referer header matching the request host).<br><br> Example: A homepage on `aem.customer.com` pulling in an XF for a banner or card from the same domain.<br><br>&bull; URL matches /content/experience-fragments/...<br>&bull; Referer domain matches `request_x_forwarded_host`<br><br>**Note:** If the Experience Fragment path is customized (for example using `/XFrags/...` or any path outside of `/content/experience-fragments/`), the request will not be excluded and may be counted, even if it's same-domain. We recommend using Adobe’s standard XF path structure to ensure exclusion logic applies correctly.|

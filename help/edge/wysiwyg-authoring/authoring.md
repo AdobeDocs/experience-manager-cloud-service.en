@@ -4,6 +4,9 @@ description: Learn how content authoring works with Edge Delivery Services and h
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 
 # WYSIWYG Content Authoring for Edge Delivery Services {#authoring-edge}
@@ -50,4 +53,4 @@ Please see the [Developer Getting Started Guide for WYSIWYG Authoring with Edge 
 
 WYSIWYG authoring is a powerful and intuitive tools for content authors. However, there are many different authoring use cases, which is why AEM offers additional authoring solutions.
 
-Please see the document [Choosing an Authoring Method](/help/edge/authoring-methods.md) to learn more about the authoring solutions AEM offers including document-based authoring and headless.
+Please see the document [Edge Delivery Services Overview](/help/edge/overview.md#authoring-method) to learn more about the authoring solutions AEM offers including document-based authoring and headless.
