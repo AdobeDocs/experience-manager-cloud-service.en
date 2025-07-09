@@ -58,4 +58,4 @@ This guide has provided an overview of using forms with AEM Edge Delivery Servic
 * [Document-Based Authoring with Edge Delivery Services Forms](/help/edge/docs/forms/tutorial.md)
 * [Universal Editor with Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
 * [Document Authoring (DA) and Embedding Content](https://www.aem.live/developer/da-tutorial)
-* [AEM Forms Submission Service](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md.md)
+* [AEM Forms Submission Service](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)

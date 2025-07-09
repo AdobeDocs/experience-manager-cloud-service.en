@@ -417,7 +417,7 @@ Let's bring it all together to help you decide on the best approach for your for
 
 To build on what you've learned, here's how you can move forward:
 
-[Choose your submission strategy](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md.md) decide whether your project requires the simplicity of the Forms Submission Service (ideal for spreadsheet/email output) or the flexibility and backend integration offered by AEM Publish Submit Actions.
+[Choose your submission strategy](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md) decide whether your project requires the simplicity of the Forms Submission Service (ideal for spreadsheet/email output) or the flexibility and backend integration offered by AEM Publish Submit Actions.
 
 Refer to the [Best Practices for Creating Forms](/help/edge/docs/forms/universal-editor/best-pratices-eds-forms.md) article to learn how to design effective, accessible, and user-friendly forms.
 
@@ -428,7 +428,7 @@ This guide has provided an overview of using forms with AEM Edge Delivery Servic
 * [Document-Based Authoring with Edge Delivery Services Forms](/help/edge/docs/forms/tutorial.md)
 * [Universal Editor with Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
 * [Document Authoring (DA) and Embedding Content](https://www.aem.live/developer/da-tutorial)
-* [AEM Forms Submission Service](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md.md)
+* [AEM Forms Submission Service](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
 
 
 <!-- 
