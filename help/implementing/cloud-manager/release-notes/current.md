@@ -31,19 +31,19 @@ The next planned release is Thursday, August 7, 2025.
 
     ![Sites usage details page](/help/implementing/cloud-manager/release-notes/assets/sites-license-usage-page.png)
 
+    See [License dashboard](/help/implementing/cloud-manager/license-dashboard.md).
+
 ## Early adopter programs {#private-beta-program}
 
 Participate in Cloud Manager's alpha and beta programs to get exclusive early access to upcoming features before their general release.
 
 The following opportunities are currently available:
 
-
 ### One-click rollback for pipeline deployments {#one-click-rollback} 
 
 Quickly revert to a previous deployment if the latest code is not working as expected—no need to rerun the full pipeline or manually revert commits.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-<!-- Add link to topic within the affected article ==>
-
+See [Content Restore in AEM as a Cloud Service](/help/operations/restore.md).
 
 ### Specialized Testing Environment {#specialized-test-environment}
 
