@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 
 # Getting Started with Forms on AEM Edge Delivery Services
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span> 
 
 This guide helps you understand and implement forms using Adobe Experience Manager (AEM) Edge Delivery Services (EDS). Whether you are creating a simple contact form or a complex data collection tool, this page walks you through your options.
 
@@ -419,7 +419,7 @@ To build on what you've learned, here's how you can move forward:
 
 [Choose your submission strategy](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md) decide whether your project requires the simplicity of the Forms Submission Service (ideal for spreadsheet/email output) or the flexibility and backend integration offered by AEM Publish Submit Actions.
 
-Refer to the [Best Practices for Creating Forms](/help/edge/docs/forms/universal-editor/best-pratices-eds-forms.md) article to learn how to design effective, accessible, and user-friendly forms.
+Refer to the [Best Practices for Creating Forms](/help/edge/docs/forms/universal-editor/best-pratices-eds-forms.md) article to learn how to design effective, accessible, and user-friendly forms. 
 
 ## Next Steps
 
