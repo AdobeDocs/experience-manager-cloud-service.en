@@ -127,6 +127,6 @@ The table below outlines the key differences between the two solutions:
 |  Innovations coming soon| Favourite collections by user |&#10003;|&minus;|
 |  | Pinned collections by Admin |&#10003;|&minus;|
 |  | Semantic Search |&#10003;|&minus;|
-|  | Localised search and metadata display |&#10003;|&#10003;|
+|  | Localised search and metadata display |&#10003;|&minus;|
 
 
