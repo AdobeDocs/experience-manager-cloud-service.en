@@ -251,7 +251,7 @@ To open your fragment for editing:
 
 * A deep copy is made; so if a referenced Content Fragment also references fragments, these are copied as well.
 
-* The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset content itself.
+* The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset/image content itself.
 
 <!--
 **Copy** creates a copy of the selected fragment at its location.
@@ -265,7 +265,7 @@ To open your fragment for editing:
 
 * A deep copy is made; so if a referenced Content Fragment also references fragments, these are copied as well.
 
-* The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset content itself.
+* The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset/image content itself.
 -->
 
 ## View and Manage Tags {#manage-tags}
