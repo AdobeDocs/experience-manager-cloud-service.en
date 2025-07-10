@@ -31,18 +31,34 @@ The next planned release is Thursday, August 7, 2025.
 
     ![Sites usage details page](/help/implementing/cloud-manager/release-notes/assets/sites-license-usage-page.png)
 
+    See [License dashboard](/help/implementing/cloud-manager/license-dashboard.md).
+
 ## Early adopter programs {#private-beta-program}
 
 Participate in Cloud Manager's alpha and beta programs to get exclusive early access to upcoming features before their general release.
 
 The following opportunities are currently available:
 
-
 ### One-click rollback for pipeline deployments {#one-click-rollback} 
 
-Quickly revert to a previous deployment if the latest code is not working as expected—no need to rerun the full pipeline or manually revert commits.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
+Quickly revert to a previous deployment if the latest customer source code is not working as expected—no need to rerun the full pipeline or manually revert commits.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-<!-- Add link to topic within the affected article ==>
+![Restore customer source code from the Environments card](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Environments card above showing the **Restore** > **Previous code deployed** option for a selected environment.* 
+
+
+![Restore previous code deployed dialog box](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png) 
+*In the **Restore previous code deployed** dialog box, review the currently deployed version and the version you want to restore, then click **Confirm***.
+
+
+![Restoring activation](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png) 
+*Cloud Manager rolls the environment back to the earlier build, keeps content and configuration intact, and marks the environment **Restoring** until deployment completes.*
+
+
+![Source code version in use](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *The Environment details view, as seen above, now also shows the active source-code version in use.*
+
+If you are interested in testing this new feature and sharing your feedback, send an email to [restorecode@adobe.com](mailto:restorecode@adobe.com) from your email address associated with your Adobe ID.
+
+See also [Content Restore in AEM as a Cloud Service](/help/operations/restore.md).
 
 
 ### Specialized Testing Environment {#specialized-test-environment}
