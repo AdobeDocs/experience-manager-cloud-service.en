@@ -50,7 +50,7 @@ By default no user will have permission to execute content restorations on devel
 
 1. Create a product profile with an expressive name that refers to content restoration.
 1. Provide the **Program Access** permission on the required program.
-1. Provide the **Content Restore** permission on the required environment or all environments of the program, depending on your use case.
+1. Provide the **Environment Restore Create** permission on the required environment or all environments of the program, depending on your use case.
 1. Assign users to that profile profile.
 
 For details on managing permissions, see [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md) documentation.
