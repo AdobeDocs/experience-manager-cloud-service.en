@@ -106,13 +106,14 @@ The table below outlines the key differences between the two solutions:
 |  | Configure primary and secondary colors for UI as per branding requirements |&#10003;|&minus;|
 |Sharing assets from the DAM  | Sharing original approved assets from DAM |&#10003;|&#10003;|
 |  | Approved asset changes synced automatically |&#10003;|&minus;|
-| Search and filters | Dynamic filters (options show dynamically based on assets shared) |&#10003;|&minus;|
-|  | Search history and search suggestions |&#10003;|&minus;|
+| Search and filters | Dynamic filters (options show dynamically based on assets displayed) |&#10003;|&minus;|
+|  | Search history |&#10003;|&minus;|
 | Asset upload | Local drive |&#10003;|&#10003;|
 |  | Add configurable metadata while uploading assets |&#10003;|&minus;|
 | Download and renditions | Download original asset |&#10003;|&#10003;|
 |  | Share and download static renditions from DAM |&#10003;|&#10003;|
-|  | Configure dynamic rendition preset for download |&#10003;|&#10003;|
+|  | Download dynamic renditions (preset & smart crops)  |&#10003;|&#10003;|
+|  | Ability to restrict view and download of expired assets  |&#10003;|&minus;|
 |  Link sharing and Collections| Link share for signed-in users |&#10003;|&#10003;|
 |  | Public collections |&#10003;|&#10003;|
 |  | Search within collections |&#10003;|&minus;|
@@ -122,8 +123,10 @@ The table below outlines the key differences between the two solutions:
 |  | Attribute-based access control |&#10003;|&minus;|
 |  Express integration| Edit Content Hub Assets in Adobe Express and save to DAM |&#10003;|&minus;|
 |  Dashboards and reports| Insights dashboard |&#10003;|&minus;|
-|  | Download report and link share report|Coming soon|&#10003;|
-|  Multiple portals| Multiple portals connected to single DAM |Coming soon|&minus;|
 | UI Extensibility| Custom extension points on asset details page |Limited availability|&minus;|
+|  Innovations coming soon| Favourite collections by user |&#10003;|&minus;|
+|  | Pinned collections by Admin |&#10003;|&minus;|
+|  | Semantic Search |&#10003;|&minus;|
+|  | Localised search and metadata display |&#10003;|&#10003;|
 
 
