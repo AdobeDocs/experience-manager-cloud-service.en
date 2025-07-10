@@ -18,7 +18,7 @@ These are the release notes for the 9 July 2025 release of the Universal Editor.
 
 * [When clicking the **Add** toolbar button on containers,](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) if only one component type is allowed, it is inserted immediately without requiring selection from the drop-down menu.
 * [The authentication header toolbar option](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings) has been placed behind a feature toggle, as it is not useful in most cases.
-* Since container nesting is not permitted for multi-fields in the properties panel, the rendering routine now filters out nested containers from the field list to prevent invalid nesting.
+* [Since container nesting is not permitted for multi-fields in the properties panel,](/help/implementing/universal-editor/field-types.md#fields) the rendering routine now filters out nested containers from the field list to prevent invalid nesting.
 
 ## Early Adoption Features {#early-adopter}
 
