@@ -42,6 +42,8 @@ The following opportunities are currently available:
 
 Quickly revert to a previous deployment if the latest code is not working as expected—no need to rerun the full pipeline or manually revert commits.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
+<!-- Add link to topic within the affected article ==>
+
 
 ### Specialized Testing Environment {#specialized-test-environment}
 
