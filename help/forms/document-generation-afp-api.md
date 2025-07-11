@@ -6,6 +6,8 @@ role: Admin, User
 ---
 # Generate AFP Output Using the AEM Forms API
 
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span> 
+
 Advanced Function Presentation (AFP) is a high-performance document format designed primarily for printing purposes.  
 This guide outlines all necessary steps and configurations to generate AFP output using AEM Forms.
 
