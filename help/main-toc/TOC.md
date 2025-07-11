@@ -224,6 +224,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Universal Editor {#univeral-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + 2025 {#2025}
+      + [2025.06.19 Release Notes](/help/release-notes/universal-editor/2025/2025-06-19.md)
       + [2025.05.21 Release Notes](/help/release-notes/universal-editor/2025/2025-05-21.md)
       + [2025.04.04 Release Notes](/help/release-notes/universal-editor/2025/2025-04-04.md)
       + [2025.03.10 Release Notes](/help/release-notes/universal-editor/2025/2025-03-10.md)
@@ -904,6 +905,7 @@ user-guide-title: AEM as a Cloud Service
   + Interactive Communication {#interactive-communocation}
     + [Introduction to interactive communication](/help/forms/introduction-to-interactive-communication.md)
     + [Create your first Interactive Communication](/help/forms/create-your-first-communication.md)
+    + [Generate AFP Output Using the AEM Forms API](/help/forms/document-generation-afp-api.md)
     + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
   + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
