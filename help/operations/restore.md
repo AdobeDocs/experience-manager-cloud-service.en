@@ -14,7 +14,7 @@ You can restore your AEM as a Cloud Service content from backup using Cloud Mana
 
 Cloud Manager's self-service restore process copies data from Adobe system backups and restores it to its original environment. A restore is performed to return data, which has been lost, damaged, or accidentally deleted, to its original condition.
 
-The restore process only affects content, leaving your code and version of AEM unchanged. You can initiate a restore operation of individual environments at any time. (If you need to restore previously deployed source code in an easy and fast manner, without the need to start a new pipeline execution, you can use [Restore Previous Code Deployed]()). 
+The restore process only affects content, leaving your code and version of AEM unchanged. You can initiate a restore operation of individual environments at any time. (If you need to restore previously deployed source code in an easy and fast manner, without the need to start a new pipeline execution, you can use [Restore the Previous Code Deployed](/help/operations/restore-previous-code-deployed.md)). 
 
 Cloud Manager provides two types of backups from which you may restore content.
 
