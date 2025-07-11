@@ -54,9 +54,36 @@ Content Hub now lets you [control access to collections during creation, ensurin
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
+
+## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+* [Universal Editor for Adaptive Forms and Form Fragments](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): The Universal Editor now supports the creation of both Adaptive Forms and reusable Form Fragments. Authors can visually build forms, configure submit actions, and add reCAPTCHA validation, all in a simplified, WYSIWYG authoring environment. This capability accelerates form creation, enhances consistency, and improves protection against spam and automated abuse.
+
+### Pre-release Features 
+
+* [Generate and Sync AFP Renditions from Adaptive Forms](/help/forms/document-generation-afp-api.md): The AFP Output Sync API enables administrators and users to generate AFP (Advanced Function Presentation) output from Adaptive Forms and synchronize the output with external systems or storage locations. AFP is a high-performance document format optimized for printing, often used in large-scale enterprise environments.
+
+* [SharePoint Document Library - Save Attachments with Original Filenames](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): You now have the option to save form attachments using their original filenames when storing them in a SharePoint Document Library. This enhancement simplifies the identification and management of uploaded files.
+
+* **Rule Editor**:
+    * [Binary Condition with Click Event in "When" Clause](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): The Rule Editor now allows combining a button click event (_Is Clicked_) with other conditions within the "When" clause. This enables more precise control over rule execution based on user interaction and other factors. Note: When using multiple conditions, the click event must be the first condition listed.
+    * [Validation Conditions for Fields and Panels](/help/forms/rule-editor-core-components-usecases.md): The Rule Editor now includes _IsValid_ and _IsNotValid_ conditions. These allow you to check the validation status of specific fields or entire panels (including layouts like Horizontal Tabs, Vertical Tabs, Accordions, and Wizards), facilitating improved form navigation and user experience based on validation results.
+* [Improved Scope Management for SharePoint Lists](/help/forms/connect-forms-to-sharepoint-list.md): SharePoint sites now support all managed paths, for example, /sites and /teams. This enhancement enables broader integration across various SharePoint site structures, offering greater flexibility in connecting to organizational content.
+* [Support for Saving Document of Record to SharePoint List](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): Forms created using a SharePoint List–based Form Data Model (FDM) can now save the Document of Record (DoR) to SharePoint Lists by configuring the Document of Record Bind Reference field property. This enhancement enables seamless integration of supported form data and documents with SharePoint storage. 
+  
+### Early Access Features in AEM Forms {#forms-new-early-access-features}
+
+The AEM Forms Early Access Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations, and help shape their development.
+
+This release notes lists the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
+
+#### Adobe Experience Platform (AEP) Integration with Forms
+
+* [Integration of AEM Forms with Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): The AEM Forms to Adobe Experience Platform Connector enables seamless integration between Adaptive Forms and Adobe Experience Platform. This feature allows form data to be mapped to XDM schemas and submitted directly to AEP in real time. It streamlines data capture for personalization and activation use cases across Adobe Experience Cloud solutions.
+  
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-###  Updated Deprecation Process {#updated-deprecation-process}
+### Updated Deprecation Process {#updated-deprecation-process}
 
 Adobe regularly reviews features, libraries, APIs, and configurations to ensure they meet standards for performance, security, and value. When capabilities no longer meet these standards, they are marked for deprecation and usage must stop by a specified removal date. Leading up to this date, Adobe will remind customers with email notifications, and actions that need to be taken in Cloud Manager before proceeding with or deploying new builds. Failure to take the necessary action may result in an inability to upgrade to new versions of AEM leading to potential impacts around security, performance, reliability, and availability.
 
