@@ -61,6 +61,8 @@ Say hello to a Digital Asset Management solution that understands the diverse ne
 
 [![See the Guide](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
+<!--
+
 ### Insights to take data-driven decisions {#insights-data}
 
 To keep pace with content velocity, actionable insights are essential. The Assets view offers advanced insights within the My Workspace, providing valuable data on asset performance, audience usage, and engagements. Marketers can make data-driven decisions, optimize content strategies, and refine their downstream delivery to achieve optimal results. With access to meaningful insights, businesses can stay ahead of the competition and drive exceptional outcomes.
@@ -68,6 +70,8 @@ To keep pace with content velocity, actionable insights are essential. The Asset
 ![Insights overview](assets/insights-overview.gif)
 
 [![See the Guide](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
+
+-->
 
 ### Adobe Photoshop Express integration to accelerate collaboration {#accelerate-collaboration}
 
