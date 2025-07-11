@@ -106,8 +106,6 @@ The required options can be selected in **Page Properties** of the required fold
 
    For example, for a folder:
 
-   <!-- need a new screenshot -->
-
    ![Folder - Cloud Services](assets/cf-target-integration-01.png "Folder - Cloud Services")
 
 1. **Save & Close**.
