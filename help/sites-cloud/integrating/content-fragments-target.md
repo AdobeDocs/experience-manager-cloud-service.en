@@ -10,8 +10,7 @@ role: Admin
 
 >[!CAUTION]
 >
->* The AEM Content Fragments are exported into the default workspace of Adobe Target.
->* AEM must be integrated with Adobe Target according to the instructions under [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
+>AEM must be integrated with Adobe Target according to the instructions under [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 You can export [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md), created in Adobe Experience Manager as a Cloud Service (AEM), to Adobe Target (Target). They can then be used as offers in Target activities, to test and personalize experiences at scale.
 
