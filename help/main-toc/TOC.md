@@ -90,6 +90,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2025 {#2025}
+      + [Maintenance Release Notes for 2025.7.0](/help/release-notes/maintenance/2025/2025-7-0.md)
       + [Maintenance Release Notes for 2025.6.0](/help/release-notes/maintenance/2025/2025-6-0.md)
       + [Maintenance Release Notes for 2025.5.0](/help/release-notes/maintenance/2025/2025-5-0.md)
       + [Maintenance Release Notes for 2025.4.0](/help/release-notes/maintenance/2025/2025-4-0.md)
@@ -120,6 +121,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2025 {#2025}
+      + [2025.6.0](/help/implementing/cloud-manager/release-notes/2025/2025-6-0.md)
       + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
       + [2025.4.0](/help/implementing/cloud-manager/release-notes/2025/2025-4-0.md)
       + [2025.3.0](/help/implementing/cloud-manager/release-notes/2025/2025-3-0.md)
@@ -1062,7 +1064,9 @@ user-guide-title: AEM as a Cloud Service
     + [Redirects](/help/edge/docs/redirects.md)
   + Building Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
+    + [Configure Submission for Edge Delivery Services Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
     + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
+    + [Best Practices for creating forms](/help/edge/docs/forms/universal-editor/best-pratices-eds-forms.md) 
     + WYSIWYG Authoring {#universal-editor}
       + [Introduction to Forms Universal Editor for Edge Delivery Services - Complete Guide](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + [How to Start Authoring Using Universal Editor - Step by Step Tutorial](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
