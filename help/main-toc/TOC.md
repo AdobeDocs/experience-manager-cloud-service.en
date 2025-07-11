@@ -902,6 +902,7 @@ user-guide-title: AEM as a Cloud Service
   + Interactive Communication {#interactive-communocation}
     + [Introduction to interactive communication](/help/forms/introduction-to-interactive-communication.md)
     + [Create your first Interactive Communication](/help/forms/create-your-first-communication.md)
+    + [Generate AFP Output Using the AEM Forms API](/help/forms/document-generation-afp-api.md)
     + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
   + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
