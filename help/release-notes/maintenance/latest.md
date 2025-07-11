@@ -12,7 +12,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 21484 {#21484}
 
-Summarized below are the continuous improvements for maintenance release 21484, which was publicly released on July 8, 2025. The previous maintenance release was release 21331.
+Summarized below are the continuous improvements for maintenance release 21484, which was publicly released on July 10, 2025. The previous maintenance release was release 21331.
 
 The 2025.7.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
