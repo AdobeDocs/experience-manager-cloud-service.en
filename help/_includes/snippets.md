@@ -104,9 +104,9 @@ The following table demonstrates the difference between the features available i
    </td>
    </tr>
    <tr>
-    <td>ES10 Support </td>
-    <td>ES10 is not supported yet. It only supports ES5 JavaScript features. </td>
-    <td>Support for modern JavaScript features such as let and arrow functions (ES10 support) within custom functions. 
+    <td>ES2022 Support </td>
+    <td>ES2022 is not supported yet; support is limited to ES5 JavaScript features. </td>
+    <td>Support for modern JavaScript features, for example, let and arrow functions, up to ES2022, is available within custom functions. 
    </td>
    </tr>
    </tr>
