@@ -4,7 +4,7 @@ description: Learn how to restore an environment to its last successful build &n
 feature: Operations
 role: Admin
 badge: label="Alpha" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
+
 ---
 # Restore the previous source code deployed in AEM as a Cloud Service {#restore-previous-code-deployed}
 
