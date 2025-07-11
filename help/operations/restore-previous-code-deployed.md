@@ -1,5 +1,5 @@
 ---
-title: Restore the Previous Source Code Deployed in AEM as a Cloud Service
+title: Restore the Previous Source Code Deployed
 description: Learn how to restore an environment to its last successful build &ndash; no pipeline run required.
 feature: Operations
 role: Admin
