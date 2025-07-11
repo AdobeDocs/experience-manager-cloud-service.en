@@ -34,7 +34,7 @@ The **Restore previous code deployed** feature becomes available only when **eve
 
 If any check fails, Cloud Manager opens the following dialog box that lists one or more unmet conditions and disables **Confirm**, preventing the restore.
 
-![Restore previous code deployed failure dialog box](/help/operations/restore-previous-code-deployment-not-allowed.png).
+![Restore previous code deployed failure dialog box](/help/operations/assets/restore-previous-code-deployment-not-allowed.png).
 
 If you just want to restore data, which has been lost, damaged, or accidentally deleted, to its original condition, you can use [Restore Content in AEM as a Cloud Service](/help/operations/restore.md). This restore process only affects content, leaving your source code and version of AEM unchanged.
 
