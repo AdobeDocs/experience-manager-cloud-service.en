@@ -1,12 +1,12 @@
 ---
-title: Content Restore in AEM as a Cloud Service
+title: Restore Content in AEM as a Cloud Service
 description: Learn how to restore your AEM as a Cloud Service content from backup using Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
 ---
 
-# Content restore in AEM as a Cloud Service {#content-restore}
+# Restore content in AEM as a Cloud Service {#content-restore}
 
 You can restore your AEM as a Cloud Service content from backup using Cloud Manager.
 
@@ -14,7 +14,7 @@ You can restore your AEM as a Cloud Service content from backup using Cloud Mana
 
 Cloud Manager's self-service restore process copies data from Adobe system backups and restores it to its original environment. A restore is performed to return data, which has been lost, damaged, or accidentally deleted, to its original condition.
 
-The restore process only affects content, leaving your code and version of AEM unchanged. You can initiate a restore operation of individual environments at any time.
+The restore process only affects content, leaving your code and version of AEM unchanged. You can initiate a restore operation of individual environments at any time. (If you need to restore previously deployed source code in an easy and fast manner, without the need to start a new pipeline execution, you can use [Restore the Previous Code Deployed](/help/operations/restore-previous-code-deployed.md)). 
 
 Cloud Manager provides two types of backups from which you may restore content.
 
@@ -81,7 +81,7 @@ For details on managing permissions, see [Custom Permissions](/help/implementing
       >
       >The **Environments** card lists three environments only. Click **Show All** in the card to see *all* environments of the program.
 
-1. In the Environments table, to the right of an environment whose content you want to restore, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), then click **Restore Content**.
+1. In the Environments table, to the right of an environment whose content you want to restore, click ![More icon or ellipsis menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), then click **Restore Content**.
 
    ![Restore content option from the ellipsis menu](/help/operations/assets/environments-ellipsis-menu.png)
 

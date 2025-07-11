@@ -58,6 +58,8 @@ Quickly revert to a previous deployment if the latest customer source code is no
 
 If you are interested in testing this new feature and sharing your feedback, send an email to [restorecode@adobe.com](mailto:restorecode@adobe.com) from your email address associated with your Adobe ID.
 
+See [Restore the Previous Code Deployed in AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
+
 See also [Content Restore in AEM as a Cloud Service](/help/operations/restore.md).
 
 
