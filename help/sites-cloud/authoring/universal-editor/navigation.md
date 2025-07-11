@@ -149,6 +149,10 @@ Select the authentication header settings icon if you need to [set a custom auth
 
 ![Authentication heder settings button](assets/authentication-header-settings.png)
 
+>[!NOTE]
+>
+>This button is hidden by default as it is of limited value in most cases. If you require it, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID.
+
 #### Emulator Settings {#emulator}
 
 Select the emulation icon to define how the Universal Editor renders the page.
