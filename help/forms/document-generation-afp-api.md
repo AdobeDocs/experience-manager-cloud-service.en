@@ -1,8 +1,9 @@
 ---
-title: How to use AFP output sync API? 
+title: How to use AFP output sync API?
 description: Learn how to use the AFP Output Sync API to retrieve and synchronize output renditions.
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
+exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
 ---
 # Generate AFP Output Using the AEM Forms API
 
