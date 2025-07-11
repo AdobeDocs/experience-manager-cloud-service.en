@@ -61,7 +61,6 @@ Say hello to a Digital Asset Management solution that understands the diverse ne
 
 [![See the Guide](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
-<!--
 
 ### Insights to take data-driven decisions {#insights-data}
 
@@ -71,7 +70,6 @@ To keep pace with content velocity, actionable insights are essential. The Asset
 
 [![See the Guide](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
 
--->
 
 ### Adobe Photoshop Express integration to accelerate collaboration {#accelerate-collaboration}
 
