@@ -693,6 +693,8 @@ user-guide-title: AEM as a Cloud Service
     + [Content Credentials](/help/assets/content-credentials.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
     + [AEM Assets View UI Extensibility](/help/assets/aem-assets-view-ui-extensibility.md)
+
+    + [Manage reports](/help/assets/manage-reports-assets-view.md)
   + Content Hub {#content-hub}
     + [Overview](/help/assets/product-overview.md)
     + [What's new in Content Hub](/help/assets/whats-new.md)
