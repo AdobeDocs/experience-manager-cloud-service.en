@@ -1,7 +1,7 @@
 ---
 title: How to configure a Submit Action for an Adaptive Form?
 description: An Adaptive Form provides multiple Submit Actions. A Submit Action defines how an Adaptive Form is processed after submission. You can use built-in Submit Actions or create your own.
-feature: Adaptive Forms, Foundation Components, Core Components, 
+feature: Adaptive Forms, Foundation Components, Core Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
 ---
@@ -19,13 +19,7 @@ role: User, Developer
 
 The [Adaptive Forms based on Foundation Component](/help/forms/creating-adaptive-form.md) supports various [out-of-the-box submit actions](#submit-actions-supported-by-adaptive-forms-based-on-foundation-components). A Submit action is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. 
 
-## Configure a Submit Action for an Adaptive Form based on Foundation Components
-
-You can configure a Submit Action in the **[!UICONTROL Submission]** section of the Adaptive Form Container properties, in the sidebar.
-
-![AEM Forms Submit action](/help/forms/assets/submit-form-foundation-component.png)
-
-## Submit Actions Supported by Adaptive Forms based on Foundation Components
+## Submit Actions for Forms based on Foundation Components
 
 The following Submit Actions are supported by Adaptive Forms based on Foundation Components:
 
@@ -48,6 +42,11 @@ You can also submit an Adaptive Form based on Foundation Components to other sto
 
 Additionally, you can [customize the default Submit Actions](/help/forms/custom-submit-action-form.md) to align with specific organizational requirements.
 
+### Configure a Submit Action for Form based on Foundation Components
+
+You can configure a Submit Action in the **[!UICONTROL Submission]** section of the Adaptive Form Container properties, in the sidebar.
+
+![AEM Forms Submit action](/help/forms/assets/submit-form-foundation-component.png)
 
 <!-- [!NOTE]
 >

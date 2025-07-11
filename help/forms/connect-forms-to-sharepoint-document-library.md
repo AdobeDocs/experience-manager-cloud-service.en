@@ -103,6 +103,12 @@ Perform the following steps to use a SharePoint Document Library storage configu
 1. Open the Adaptive Form for editing.
 1. Click the **Edit Form Properties** extension on the editor. 
     The **Form Properties** dialog appears.
+
+    >[!NOTE]
+    >
+    > * If you do not see the **Edit Form Properties** icon in your Universal Editor interface, enable the **Edit Form Properties** extension in the Extension Manager. 
+    > * Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable or disable extensions in the Universal Editor.
+    
 1. Click **Submission** tab and select **[!UICONTROL Submit to SharePoint]** submit action.
     ![Sharepoint GIF](/help/forms/assets/submit-to-sharepoint-ue.png)
 1. Select the **[!UICONTROL Storage Configuration]**, where you want to save your data.

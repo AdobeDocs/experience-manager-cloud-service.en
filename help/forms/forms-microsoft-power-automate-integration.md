@@ -297,6 +297,13 @@ After you [Connect your Forms as a Cloud Service instance with Microsoft&reg; Po
 1. Open the Adaptive Form for editing.
 1. Click the **Edit Form Properties** extension on the editor. 
     The **Form Properties** dialog appears.
+
+    >[!NOTE]
+    >
+    > * If you do not see the **Edit Form Properties** icon in your Universal Editor interface, enable the **Edit Form Properties** extension in the Extension Manager. 
+    > * Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable or disable extensions in the Universal Editor.
+
+
 1. Click **Submission** tab and select **[!UICONTROL Invoke a Power Automate flow]** Submit action. Select the required flow and Adaptive Forms data is submitted to it on submission.    
 
      ![Configure Submit Action](/help/forms/assets/power-automate-ue.png)
