@@ -124,6 +124,8 @@ Depending on the needs of your workflow, you may want to edit the Content Fragme
 
    ![Select add icon](assets/add-icon.png)
 
+1. If more than one component is allowed for the container, select which one you wish to insert from the drop-down. If only one component is allowed, it is inserted automatically.
+
 The component is inserted into the container and can be edited in the editor.
 
 >[!TIP]
