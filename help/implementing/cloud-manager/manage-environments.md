@@ -155,9 +155,13 @@ If you want to provision [advanced networking](/help/security/configuring-advanc
    ![View environment details](assets/view-environment-details.png)
 
 
-## Restore content of an environment (Alpha) {#restore-environment}
+## Restore content of an environment {#restore-environment}
 
-See [Content Restore in AEM as a Cloud Service](/help/operations/restore.md).
+See [Restore Content in AEM as a Cloud Service](/help/operations/restore.md).
+
+## Restore previous code deployed {#restore-previous-code-deployed}
+
+See [Restore previous code deployed in AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
 
 
 ### Access the preview service {#access-preview-service}
