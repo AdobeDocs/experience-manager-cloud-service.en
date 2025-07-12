@@ -24,7 +24,18 @@ Some of the key benefits of attribute-based access control include:
 
 ## How to enable Attribute-based access control? {#enable-attribute-based-access-control}
 
-As of now, you cannot create Attribute-based access control rules on your own using the Content Hub User Interface. Create an Adobe support ticket to define rules in a spreadsheet using the guidelines defined in this article.
+As of now, you cannot create Attribute-based access control rules on your own using the Content Hub User Interface.
+
+Click `Download Spreadsheet` to download and define rules in a spreadsheet. Create an Adobe support ticket and provide the rules defined in the spreadsheet to Adobe.
+
+[!BADGE Download Spreadsheet]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+
+
+Define rules in the spreadsheet using the guidelines defined in this article.
+
+>[!IMPORTANT]
+>
+> After defining the rules, navigate to the **Validation Errors** tab of the spreadsheet and click **Run ABAC Validations**. **All validations passed** message confirms that you can provide the defined rules to Adobe.
 
 ## Example Attribute-based Access Control use case {#example-metadata-based-rules}
 
