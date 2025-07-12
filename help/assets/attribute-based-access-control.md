@@ -26,7 +26,7 @@ Some of the key benefits of attribute-based access control include:
 
 As of now, you cannot create Attribute-based access control rules on your own using the Content Hub User Interface.
 
-Click `Download Spreadsheet` to download and define rules in a spreadsheet. Create an Adobe support ticket and provide the rules defined in the spreadsheet to Adobe.
+Click **Download Spreadsheet** to download and define rules in a spreadsheet. Create an Adobe support ticket and provide the rules defined in the spreadsheet to Adobe.
 
 [!BADGE Download Spreadsheet]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
 
