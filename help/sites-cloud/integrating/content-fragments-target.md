@@ -65,48 +65,21 @@ Before exporting a fragment you need to add the **Cloud Configuration** for **Ad
 * select a Target workspace as destination
 * select an externalizer domain for rewriting references in the Content Fragment (optional)
 
-The required options can be selected in **Page Properties** of the required folder, or fragment, or both; the specification is inherited as necessary.
+The required options can be selected in **Properties** of the required folder; the specification is inherited as necessary.
 
 1. Navigate to the **Assets** console.
 
-1. Open **Page Properties** for the appropriate folder or fragment.
+1. Open **Properties** for the appropriate folder.
 
    >[!NOTE]
    >
    >If you add the cloud configuration to the Content Fragment parent folder, the configuration is inherited by all the children.
-   >
-   >If you add the cloud configuration to the Content Fragment itself, the configuration is inherited by all variations.
 
 1. Select the **Cloud Services** tab.
 
-1. Under **Cloud Service Configuration**, select **Adobe Target** from the drop-down list.
+1. Under **Cloud Service Configuration**, select your target configuration from the drop-down list.
 
-   <!-- is this note appropriate? -->
-
-   >[!NOTE]
-   >
-   >The JSON format of a Content Fragment offer can be customized. To do this define a customer Content Fragment component and then annotate how to export its properties in the component Sling Model.
-   >
-   >See the core component: [Core Components - Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
-
-1. Under **Adobe Target** select:
-
-   * the appropriate configuration
-   * the required format option
-   * an Adobe Target workspace
-   * if necessary - the externalizer domain
-
-   >[!CAUTION]
-   >
-   >The externalizer domain is optional. 
-   >
-   > An AEM externalizer is configured when you want the exported content to point to a specific *publish* domain. For more details see [Configuring the AEM Link Externalizer](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer).
-   >
-   > Also note that Externalizer Domains are only relevant to the content of the Content Fragment that is sent to Target, and not metadata such as View Offer Content.
-
-   For example, for a folder:
-
-   ![Folder - Cloud Services](assets/cf-target-integration-01.png "Folder - Cloud Services")
+1. Select your Adobe Target workspace.
 
 1. **Save & Close**.
 
