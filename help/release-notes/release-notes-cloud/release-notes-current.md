@@ -117,7 +117,7 @@ Please review and update any downstream processes that rely on custom logging be
 
 Currently, content versions and audit logs have their associated *purge maintenance tasks* disabled by default and thus no data is removed unless explicitly configured. 
 
-However, to optimize repository performance, starting in **early July 2025**, purging will be enabled by default, following these guidelines:
+However, to optimize repository performance, purging will be enabled by default at a future announced date, following these guidelines:
 
 #### Content Versions {#mt-content}
 
@@ -158,6 +158,7 @@ Common use cases include:
 * Acting as middleware between the CDN and your origin
 * Reformatting responses from third-party APIs (and perhaps aggregating multiple APIs responses) before delivering them to the browser
 * Composing and serving server-rendered HTML at the edge using content stitched from various backends
+* Exposing an MCP server for LLMs like ChatGPT and Claude to access custom tools
 
 We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
 
@@ -167,11 +168,17 @@ The Adobe-Managed CDN offers flexible configuration options, as described in the
 
 Now in a beta, deploy a config pipeline for features including CDN origin selectors, response and request transformations, and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
 
+### Snapshots for RDEs (Alpha Program) {#rde-snapshot-beta}
+
+In alpha, Rapid Development Environments (RDEs) now support a feature to take a snapshot of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
+
+Please email [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) if there's interest in providing feedback on this feature.
+
 ### AEM Log-Forwarding to More Destinations (Beta Program) {#log-forwarding-beta}
 
 While logs can be downloaded from Cloud Manager, many organizations find it beneficial to stream those logs to a preferred logging destination. AEM already supports AEM and CDN log forwarding to Azure Blob Storage, Datadog, HTTPS, Elasticsearch (and OpenSearch), and Splunk. This feature is configured in a self-serve manner, and deployed using the Config Pipeline.
 
-Now in beta, you can forward AEM logs to Amazon S3, Sumo Logic, and your own New Relic account (not the Adobe-provided account). Note that AEM logs (including Apache/Dispatcher) are supported for these logging destinations, but not CDN logs. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) for access.
+Now in beta, you can forward AEM logs to Amazon S3, Sumo Logic, Dynatrace, and your own New Relic account (not the Adobe-provided account). Note that AEM logs (including Apache/Dispatcher) are supported for these logging destinations, but not CDN logs. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) for access.
 
 Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md).
 
