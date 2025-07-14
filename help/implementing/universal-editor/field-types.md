@@ -95,7 +95,7 @@ A field object has the following type definition.
 |`readOnly`|`boolean`|Is the field read only|No|
 |`hidden`|`boolean`|Is the field hidden by default|No|
 |`condition`|`RulesLogic`|Rule to show or hide the field based on a [condition](/help/implementing/universal-editor/customizing.md#conditionally-hide)|No|
-|`multi`|`boolean`|Is the field a multi field|No|
+|`multi`|`boolean`|Is the field a multi field<br/>Note that container nesting is not permitted for multi-fields in the properties panel|No|
 |`validation`|`ValidationType`|Validation rule or rules for the field|No|
 |`raw`|`unknown`|Raw data which can be used by the component|No|
 
@@ -283,7 +283,7 @@ Similar to a boolean, a checkbox group component type allows for the selection o
 
 #### Container {#container}
 
-A container component type allows the grouping of components including multifield support. It offers an additional configuration.
+A container component type allows the grouping of components including multifield support. It offers an additional configuration. Note that container nesting is not permitted for multi-fields in the properties panel
 
 |Configuration|Value Type|Description|Required|
 |---|---|---|---|
