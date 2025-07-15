@@ -8,7 +8,7 @@ exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 
 # Responsive Mode in WYSIWYG Authoring
 
-<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 
 ## Introduction to Responsive Forms
 
