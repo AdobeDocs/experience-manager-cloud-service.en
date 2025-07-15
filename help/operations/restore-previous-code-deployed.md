@@ -28,9 +28,8 @@ The **Restore previous code deployed** feature becomes available only when **eve
 * Your organization is enrolled in the Early Adopter program and the feature flag is on.
 * The program runs on AEM as a Cloud Service.
 * The chosen environment is a `Development` environment (temporary Alpha limit).
-* The last pipeline for that environment finished successfully and ran **fewer than 10 days** ago.
+* The last pipeline for that environment finished successfully and ran **fewer than 30 days** ago.
 * The environment status is *Running* and no pipeline is in progress.
-* The target source code version that you want to restore was deployed **within 30 days**.
 
 If any check fails, Cloud Manager opens the following dialog box that lists one or more unmet conditions and disables **Confirm**, preventing the restore.
 
