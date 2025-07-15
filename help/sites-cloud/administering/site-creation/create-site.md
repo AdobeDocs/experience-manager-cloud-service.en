@@ -9,23 +9,15 @@ solution: Experience Manager Sites
 
 # Creating a Site {#creating-site}
 
-{{traditional-aem}}
-
 Learn how to use AEM create a site using site templates to define the style and structure of your site.
 
 ## Overview {#overview}
 
-Before content authors can create pages with content, the site must first be created. This is generally performed by an AEM administrator who defines the initial structure of the site. Using site templates makes site creation fast and flexible.
-
-The AEM Quick Site Creation tool allows non-developers to quickly create a site from scratch by using site templates.
+Before content authors can create pages with content, the site must first be created. This is generally performed by an AEM administrator who defines the initial structure of the site. Using site templates makes site creation fast and flexible for non-developers.
 
 ## Planning Site Structure {#structure}
 
-Take time to consider your site's purpose and planned content well in advance. This will drive how you design the structure of the site. A good site structure supports easy navigation and content discovery for your site visitors and supports various AEM features such as [multisite management and translation](/help/sites-cloud/administering/msm-and-translation.md).
-
->[!TIP]
->
->[The WKND reference site](https://wknd.site) provides a best-practices implementation of a fully functional outdoor experiences brand website. Explore it to see how a well-built AEM site is structured.
+Take time to consider your site's purpose and planned content well in advance. This will drive how you design the structure of the site. A good site structure supports easy navigation and content discovery for your site visitors and supports various AEM features such as [multisite management and translation.](/help/sites-cloud/administering/msm-and-translation.md)
 
 ## Site Templates {#site-templates}
 
@@ -43,7 +35,7 @@ Site templates generally contain base site content and structure and site stylin
 
 ### Adobe-Provided Site Templates {#adobe-templates}
 
-To accelerate your site creation, Adobe provides a number of templates suited to different purposes.
+To accelerate site creation, Adobe provides a number of templates suited to different purposes.
 
 * [AEM Site with Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) - For authoring AEM pages with the Universal Editor and delivering through [edge delivery](/help/edge/overview.md)
 * [Edge Delivery Services with AEM Authoring for Commerce](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases) - For authoring AEM pages with the Universal Editor for commerce projects and delivery through [edge delivery](/help/edge/overview.md)
@@ -103,7 +95,7 @@ Content authors can now begin authoring!
 Templates are helpful to quickly set up the basic structure and style of a site. However most projects require some additional styling and customization. Site templates help decouple the styling of the site so that front-end developers need no knowledge of AEM to style the site and can 
 work separately from and parallel to the content creators. Depending on the type of project, this can take two forms.
 
-* For projects with authoring AEM pages with the Universal Editor and delivering through [edge delivery,](/help/edge/overview.md) all styling is done in the GitHub project.
+* For projects with AEM page authoring with the Universal Editor and delivery through [edge delivery,](/help/edge/overview.md) all styling is done in the GitHub project.
   * Please see the document [Getting Started - Universal Editor Developer Tutorial](https://www.aem.live/developer/ue-tutorial) for more information.
-* For projects with authoring traditional AEM pages and delivering through [publish delivery,](/help/sites-cloud/authoring/author-publish.md) the AEM administrator simply downloads the site theme and provides it to the front-end developer who customizes it using their favorite tools and then commits the changes to the AEM code repository, which is then deployed.
-  * Please see the document[AEM Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md) for more information.
+* For projects with traditional AEM page authoring and delivery through [publish delivery,](/help/sites-cloud/authoring/author-publish.md) the AEM administrator simply downloads the site theme and provides it to the front-end developer who customizes it using their favorite tools and then commits the changes to the AEM code repository, which is then deployed.
+  * Please see the document [AEM Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md) for more information.
