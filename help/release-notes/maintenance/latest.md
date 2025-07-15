@@ -36,7 +36,7 @@ For more information about the new and enhanced features and issues fixed in the
 
 ### Known Issues {#known-issues-21484}
 
-None.
+* The SDK made available in the Software Distribution portal has issues running locally. Please continue using the previous SDK for local testing.
 
 ### Deprecated Features and APIs {#deprecated-21484}
 
