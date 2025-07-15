@@ -25,14 +25,11 @@ These services enable you to:
 
 Adobe Experience Manager (AEM) Edge Delivery Services (EDS) lets you serve blazing-fast, highly scalable web experiences from the edge. This guide explains **how to build and publish forms for those experiences**—with a clear recommendation hierarchy:
 
-1. **Universal Editor (UE) – Best choice for most teams**  
-2. **Document-Based Authoring (Docs/Sheets) – Great for quick, simple forms**  
-3. **Document Authoring (DA) – Use to embed forms into DA-authored pages**
+* **Universal Editor (UE) – Best choice for most teams**  
+* **Document-Based Authoring (Docs/Sheets) – Great for quick, simple forms**  
+* **Document Authoring (DA) – Use to embed forms into DA-authored pages**
 
 By the end you will be able to pick the right authoring method, understand submission options, and follow next steps toward production-ready forms.
-
-
-
 
 
 | Team & Requirement | Recommended Method | Why |
@@ -48,7 +45,7 @@ By the end you will be able to pick the right authoring method, understand submi
 
 <span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 
-Universal Editor is a visual, drag-and-drop authoring tool for marketers and designers that combines speed with enterprise-grade power:
+[Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) is a visual, drag-and-drop authoring tool for marketers and designers that combines speed with enterprise-grade power:
 
 * Real-time WYSIWYG editing and device previews.
 * Direct integration with AEM assets, workflows, and Form Data Model (FDM).
@@ -64,12 +61,12 @@ Universal Editor is a visual, drag-and-drop authoring tool for marketers and des
 * Ability to choose from multiple submit actions for handling form submissions, including submitting data to Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics, many more data sources.
 * Submit using Forms Submission Service (FSS) or AEM Publish submit actions
 
-> **Recommendation**: Start every new form project with Universal Editor unless your team is 100 % document-centric and the form is very basic.
+**Recommendation**: Start every new form project with Universal Editor unless your team is 100 % document-centric and the form is very basic.
 
 
 ### Document-Based authoring (Using Microsoft Docs or Google Sheets)
 
-Document-Based Authoring is best suited for creating simple, low-complexity forms using familiar tools such as Microsoft Word, Google Docs, or Google Sheets. This method is ideal for content teams who require a fast and straightforward way to build forms.
+[Document-Based authoring](/help/edge/docs/forms/tutorial.md) is best suited for creating simple, low-complexity forms using familiar tools such as Microsoft Word, Google Docs, or Google Sheets. This method is ideal for content teams who require a fast and straightforward way to build forms.
 
 * Accessible components for a user-friendly experience.
 * Standardized HTML structure for consistent rendering.
@@ -110,9 +107,11 @@ The following diagram illustrates how you can edit forms in Microsoft Excel or G
 
 ## Next Steps
 
-1. **Start with Universal Editor:** See the [Universal Editor getting started guide](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) to begin authoring forms.
-1. **Use Document-Based Authoring:** To create forms with Microsoft Excel or Google Sheets, follow the [Document-Based Authoring tutorial](/help/edge/docs/forms/tutorial.md).
-1. **Embed Forms in Document Authoring:** If you are building pages in Document Authoring, create the form using the **Universal Editor** (recommended) or Document-Based Authoring, and embed the form to a [DA page](https://www.aem.live/developer/da-tutorial).
+* [Features and capabilities of Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+* [Create your first form using Universal Editor](/help/edge/docs/forms/universal-editor/create-forms.md)
+* [Create your first form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/tutorial.md).
+* [Embed Forms in Document Authoring (DA)](https://www.aem.live/developer/da-tutorial)
+
 
 You are now ready to create your first high-performance form with AEM Edge Delivery Services.
 
