@@ -63,7 +63,6 @@ Before exporting a fragment you need to add the **Cloud Configuration** for **Ad
 
 * specify the format option(s) to be used for the export
 * select a Target workspace as destination
-* select an externalizer domain for rewriting references in the Content Fragment (optional)
 
 The required options can be selected in **Properties** of the required folder; the specification is inherited as necessary.
 
