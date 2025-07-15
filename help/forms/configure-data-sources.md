@@ -23,9 +23,8 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 | Relational databases             | MySQL, [!DNL Microsoft&reg; SQL Server], [!DNL IBM&reg; DB2&reg;], postgreSQL, Azure SQL, [!DNL Oracle RDBMS] |
 | RESTful web services             | Open API Specification version 2.0, Open API Specification version 3.0                         |
 | SOAP-based web services          | Web Services  |
-| OData services  (Version 4)                 |     Microsoft Graph API , SharePoint Lists             |
-| Microsoft&reg; services              | Microsoft&reg; Dynamics, Microsoft&reg; Azure Blob Storage              |
-| Cloud CRMs                       | SalesForce                                                               |
+| OData services  (Version 4)                 |     Microsoft&reg; Dynamics, Microsoft&reg; Azure Blob Storage              |
+| Cloud CRMs                       | SalesForce            |
 
 
 <!--
