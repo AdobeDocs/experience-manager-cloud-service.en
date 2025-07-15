@@ -124,26 +124,29 @@ Changes made to the production environment apply to both production and staging 
 
 If you want to provision [advanced networking](/help/security/configuring-advanced-networking.md) for the program, it is recommended that this provisioning is done before adding additional publish regions to the environments. Otherwise, the additional publish regions' traffic goes through the primary region's proxy.
 
-## Access Environment details {#viewing-environment}
+## View details of an environment {#viewing-environment}
 
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. To access Environment details, do one of the following:
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click the program for which you want to view details of an environment.
 
-   * From the **Overview** page, in the left side menu, click ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments**.
+1. List all environments for the program by doing one of the following:
 
-   ![Environments tab](assets/environments-tab2.png)
+   * From the left side menu, under **Services**, click ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments**.
 
-   * From the **Environments** card, click ![Workflow icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Show All**.
+   ![Environments tab](assets/environments-1.png)
 
-     ![Show all option](assets/environment-showall.png)
+   * From the left side menu, under **Program**, click **Overview**, then from the **Environments** card, click ![Workflow icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Show All**.
 
-   The **Environments** page opens and lists all environments for the program.
+     ![Show all option](assets/environments-2.png)
 
-   ![The environments tab](assets/environments-tab2.png)
+   >[!NOTE]
+   >
+   >The **Environments** card lists three environments only. Click **Show All** in the card to see *all* environments of the program.
 
 1. On the Environments page, do one of the following:
 
-   * Click an environment in the list to reveal its details.
+   * Click an environment in the list to view its details.
 
    ![Environment details](assets/environ-preview1.png)
 
@@ -151,9 +154,15 @@ If you want to provision [advanced networking](/help/security/configuring-advanc
 
    ![View environment details](assets/view-environment-details.png)
 
->[!NOTE]
->
->The **Environments** card only lists three environments. Click **Show All** in the card to see all environments of the program.
+
+## Restore content of an environment {#restore-environment}
+
+See [Restore Content in AEM as a Cloud Service](/help/operations/restore.md).
+
+## Restore previous code deployed {#restore-previous-code-deployed}
+
+See [Restore previous code deployed in AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
+
 
 ### Access the preview service {#access-preview-service}
 

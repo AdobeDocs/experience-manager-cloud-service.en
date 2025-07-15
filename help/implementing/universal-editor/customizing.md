@@ -103,8 +103,6 @@ Conditions can be defined using [JsonLogic schema](https://jsonlogic.com/). If t
 
 You can specify a custom preview URL via a `urn:adobe:aue:config:preview` meta configuration, which will open when clicking the **Open page** button in the [editor's top-right toolbar](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
-This is particularly useful for applications with specific preview requirements, such as those [using Edge Delivery Services with WYSIWYG authoring](/help/edge/wysiwyg-authoring/authoring.md).
-
 To do so, simply include the desired preview URL in a meta tag of the instrumented app like the following example.
 
 ```html
