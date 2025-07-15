@@ -31,7 +31,6 @@ None
 ### Known Issues {#known-issues-21570}
 
 * The related AEM SDK carries a different release ID (21575) and is available via the Software Distribution portal.
-* The SDK made available in the Software Distribution portal has issues running locally. Please continue using the previous SDK for local testing.
 
 ### Deprecated Features and APIs {#deprecated-21570}
 
