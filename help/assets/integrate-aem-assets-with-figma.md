@@ -3,46 +3,10 @@ title: Integrate [!DNL AEM Assets] with [!DNL Figma].
 description: Learn to integrate [!DNL AEM Assets] with [!DNL Figma] to access and use your organization's assets within your [!DNL Figma] design workflow.
 hide: no
 role: User
+exl-id: 530561ca-497b-4331-a014-72c561e1ca84
 ---
 
 # Integrate [!DNL AEM Assets] with [!DNL Figma]{#integrate-aem-assets-with-figma}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL AEM Assets] integrates natively with [!DNL Figma], which allows designers to directly access the assets stored in [!DNL AEM Assets] from within the [!DNL Figma] user interface. You can place content managed in [!DNL AEM Assets] in the [!DNL Figma] canvas and then save new or edited content in the [!DNL AEM Assets] repository.
 
@@ -95,6 +59,3 @@ This integration currently has the following limitations:
 
 * For importing [!DNL AEM] assets into Figma, the supported formats are **JPEG**, **PNG**.
 * For exporting designs from [!DNL Figma] to [!DNL AEM Assets], the supported formats are **PNG**, **PDF**, **JPG**, **SVG**.
-
-
-

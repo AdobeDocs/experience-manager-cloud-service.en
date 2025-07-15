@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2025 {#2025}
+      + [Release Notes for 2025.5.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md) 
       + [Release Notes for 2025.4.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-4-0.md) 
       + [Release Notes for 2025.3.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-3-0.md) 
       + [Release Notes for 2025.2.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-2-0.md) 
@@ -89,6 +90,8 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2025 {#2025}
+      + [Maintenance Release Notes for 2025.7.0](/help/release-notes/maintenance/2025/2025-7-0.md)
+      + [Maintenance Release Notes for 2025.6.0](/help/release-notes/maintenance/2025/2025-6-0.md)
       + [Maintenance Release Notes for 2025.5.0](/help/release-notes/maintenance/2025/2025-5-0.md)
       + [Maintenance Release Notes for 2025.4.0](/help/release-notes/maintenance/2025/2025-4-0.md)
       + [Maintenance Release Notes for 2025.3.0](/help/release-notes/maintenance/2025/2025-3-0.md)
@@ -118,6 +121,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2025 {#2025}
+      + [2025.6.0](/help/implementing/cloud-manager/release-notes/2025/2025-6-0.md)
       + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
       + [2025.4.0](/help/implementing/cloud-manager/release-notes/2025/2025-4-0.md)
       + [2025.3.0](/help/implementing/cloud-manager/release-notes/2025/2025-3-0.md)
@@ -220,6 +224,9 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Universal Editor {#univeral-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + 2025 {#2025}
+      + [2025.06.19 Release Notes](/help/release-notes/universal-editor/2025/2025-06-19.md)
+      + [2025.05.21 Release Notes](/help/release-notes/universal-editor/2025/2025-05-21.md)
+      + [2025.04.04 Release Notes](/help/release-notes/universal-editor/2025/2025-04-04.md)
       + [2025.03.10 Release Notes](/help/release-notes/universal-editor/2025/2025-03-10.md)
       + [2025.02.25 Release Notes](/help/release-notes/universal-editor/2025/2025-02-25.md)
       + [2025.02.17 Release Notes](/help/release-notes/universal-editor/2025/2025-02-17.md)
@@ -366,6 +373,7 @@ user-guide-title: AEM as a Cloud Service
       + [Creating Pages](/help/sites-cloud/authoring/sites-console/creating-pages.md)
       + [Managing Pages](/help/sites-cloud/authoring/sites-console/managing-pages.md)
       + [Page Properties](/help/sites-cloud/authoring/sites-console/page-properties.md)
+      + [Editing Page Properties](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
       + [Previewing Pages](/help/sites-cloud/authoring/sites-console/previewing-content.md)
       + [Publishing Pages](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
       + [Page Versions](/help/sites-cloud/authoring/sites-console/page-versions.md)
@@ -378,6 +386,7 @@ user-guide-title: AEM as a Cloud Service
       + [The Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md)
       + [Editor Side Panel](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
       + [Editing Pages](/help/sites-cloud/authoring/page-editor/edit-content.md)
+      + [Publishing Pages from the Page Editor](/help/sites-cloud/authoring/page-editor/publishing.md)
       + [Page Templates](/help/sites-cloud/authoring/page-editor/templates.md)
       + [Adding Page Annotations](/help/sites-cloud/authoring/page-editor/annotations.md)
       + [The Rich Text Editor](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
@@ -391,7 +400,7 @@ user-guide-title: AEM as a Cloud Service
     + Universal Editor {#universal-editor}
       + [Navigation](/help/sites-cloud/authoring/universal-editor/navigation.md)
       + [Authoring](/help/sites-cloud/authoring/universal-editor/authoring.md)
-      + [Publishing](/help/sites-cloud/authoring/universal-editor/publishing.md)
+      + [Publishing Pages from the Universal Editor](/help/sites-cloud/authoring/universal-editor/publishing.md)
       + [Inheritance](/help/sites-cloud/authoring/universal-editor/inheritance.md)
       + [Page Templates](/help/sites-cloud/authoring/universal-editor/templates.md)
     + Fragments {#fragments}
@@ -437,6 +446,7 @@ user-guide-title: AEM as a Cloud Service
       + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
       + [Delete Considerations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
       + [Analyzing Structure](/help/sites-cloud/administering/content-fragments/analysis.md)
+      + [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
       + [Assets in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
       + [Content Fragments with Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
       + [Content Fragment AJO External References Extension](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
@@ -672,20 +682,23 @@ user-guide-title: AEM as a Cloud Service
     + [Edit videos](/help/assets/edit-videos-assets-view.md)
     + [View and manage renditions](/help/assets/renditions.md)
     + [Manage asset metadata](/help/assets/metadata-assets-view.md)
+    + [Import metadata form from Admin View to Assets View](/help/assets/import-metadata-form-from-admin-view-to-assets-view.md)
     + [Bulk rename](/help/assets/bulk-rename-assets-view.md)
     + [Bulk metadata edit](/help/assets/bulk-metadata-edit.md)
     + [Share assets](/help/assets/share-links-for-assets-view.md)
     + [Manage collections](/help/assets/manage-collections-assets-view.md)
     + [Asset Relations](/help/assets/asset-relations-for-assets-view.md)
     + [Watch asset, folders, and collections](/help/assets/manage-notifications-assets-view.md)
-    + [Manage reports](/help/assets/manage-reports-assets-view.md)
     + [Reprocessing](/help/assets/reprocessing-assets-view.md)
     + [Manage tags](/help/assets/tagging-management-assets-view.md)
     + [Content Credentials](/help/assets/content-credentials.md)
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
     + [AEM Assets View UI Extensibility](/help/assets/aem-assets-view-ui-extensibility.md)
+
+    + [Manage reports](/help/assets/manage-reports-assets-view.md)
   + Content Hub {#content-hub}
     + [Overview](/help/assets/product-overview.md)
+    + [What's new in Content Hub](/help/assets/whats-new.md)
     + [Deploy Content Hub](/help/assets/deploy-content-hub.md)
     + [Upload or Import brand-approved assets to Content Hub](/help/assets/upload-brand-approved-assets.md)
     + [Configure Content Hub user interface](/help/assets/configure-content-hub-ui-options.md)
@@ -703,9 +716,8 @@ user-guide-title: AEM as a Cloud Service
   + Best practices{#best-practices}
     + [Search best practices](/help/assets/search-best-practices.md)
     + [Metadata management and best practices](/help/assets/metadata-best-practices.md)
-
   + Integration with Figma {#integration-figma}
-    + [Native integration with Figma](/help/assets/Integrate-aem-assets-with-figma.md) 
+    + [Native integration with Figma](/help/assets/integrate-aem-assets-with-figma.md)
   + Integration with Adobe Workfront {#integrations}
     + [Integrations with [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
     + [Configure asset metadata mapping](/help/assets/configure-asset-metadata-mapping.md)
@@ -737,6 +749,7 @@ user-guide-title: AEM as a Cloud Service
     + [Migrate from [!DNL AEM 6.5 Forms] or earlier to [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
     + [Groups and permissions](/help/forms/forms-groups-privileges-tasks.md)
     + [Import, export, and organize Adaptive Forms, PDF forms, and other assets](/help/forms/import-export-forms-templates.md)
+    + [Enable Feature Toggle  on Adobe Experience Software Development Kit (AEM SDK)](/help/forms/enable-feature-toggle.md)
   + Getting Started {#getting-started-forms}
     + [Use Case and setup development environment](/help/forms/create-adaptive-form-tutorial-getting-started.md)
     + [Create the loan application form](/help/forms/create-adaptive-form-tutorial.md)
@@ -892,6 +905,7 @@ user-guide-title: AEM as a Cloud Service
   + Interactive Communication {#interactive-communocation}
     + [Introduction to interactive communication](/help/forms/introduction-to-interactive-communication.md)
     + [Create your first Interactive Communication](/help/forms/create-your-first-communication.md)
+    + [Generate AFP Output Using the AEM Forms API](/help/forms/document-generation-afp-api.md)
     + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
   + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
@@ -1053,7 +1067,9 @@ user-guide-title: AEM as a Cloud Service
     + [Redirects](/help/edge/docs/redirects.md)
   + Building Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
+    + [Configure Submission for Edge Delivery Services Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
     + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
+    + [Best Practices for creating forms](/help/edge/docs/forms/universal-editor/best-pratices-eds-forms.md) 
     + WYSIWYG Authoring {#universal-editor}
       + [Introduction to Forms Universal Editor for Edge Delivery Services - Complete Guide](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + [How to Start Authoring Using Universal Editor - Step by Step Tutorial](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
@@ -1450,7 +1466,8 @@ user-guide-title: AEM as a Cloud Service
   + [Additional Publish Regions](/help/operations/additional-publish-regions.md)
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
   + [Maintenance Tasks](/help/operations/maintenance.md)
-  + [Self-Service Restore](/help/operations/restore.md)
+  + [Restore Content](/help/operations/restore.md)
+  + [Restore Previous Code Deployed (Alpha)](/help/operations/restore-previous-code-deployed.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Using Config Pipelines](/help/operations/config-pipeline.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)

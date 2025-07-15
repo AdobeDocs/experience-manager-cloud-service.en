@@ -6,43 +6,6 @@ exl-id: 55848de0-aff2-42a0-b959-c771235d9425
 ---
 # Integration with a non-Adobe application {#integrate-asset-selector-non-adobe-app}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
-        </td>
-    </tr>
-</table>
-
 Asset Selector allows you to integrate using various non-Adobe or third party applications to enable them to work together seamlessly.
 
 ## Prerequisites {#prereqs-non-adobe-app} 
@@ -144,7 +107,7 @@ Asset Selector is rendered on the `<div>` container element, as mentioned in *li
             const container = document.getElementById('asset-selector');
 
             /// Use the PureJSSelectors in globals to render the AssetSelector/DestinationSelector component
-            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () => {
+            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () =>
                 const assetSelectorDialog = document.getElementById('asset-selector-dialog');
                 assetSelectorDialog.showModal();
             });
