@@ -29,7 +29,7 @@ The following sections describe these steps in detail.
 
 ### Add a Comment {#addcomment}
 
-Commenting available via timeline allows users to create a centralized and historical record for discussions that take place about the channel, location, or any folder in the screen.
+Commenting is available via timelines and allows users to create a centralized and historical record for discussions that take place about the channel, location, or any folder in the screen.
 Comments provide a nice consolidated way for AEM users to discuss a way that can be persisted, allowing others to understand key decisions.
 
 1. Navigate to the channel for which you want to add a comment.
