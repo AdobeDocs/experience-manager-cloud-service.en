@@ -10,43 +10,37 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 21484 {#21484}
+## Release 21570 {#21570}
 
-Summarized below are the continuous improvements for maintenance release 21484, which was publicly released on July 10, 2025. The previous maintenance release was release 21331.
+Summarized below are the continuous improvements for maintenance release 21570, which was publicly released on July 15, 2025. The previous maintenance release was release 21484.
+
+>[!NOTE]
+>
+>[Release 21484](/help/release-notes/maintenance/2025/2025-7-0.md#21484) was made private and replaced by release 21570.
 
 The 2025.7.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-21484}
+### Enhancements {#enhancements-21570}
 
-None.
+None
 
-### Fixed Issues {#fixed-issues-21484}
+### Fixed Issues {#fixed-issues-21570}
 
-None.
+* SKYOPS-112722 - Fixed an issue causing vanity URL resolution to fail
 
-#### AEM Guides {#guides-21484}
+### Known Issues {#known-issues-21570}
 
-* GUIDES-29781: When an XML comment is added within an element in the Source view, the leading and trailing spaces around the comment are lost upon switching views.
-* GUIDES-29078: When opening a topic in Author view after a browser refresh, previously applied tags in the File Properties panel are not retained, and adding new tags overwrites the existing ones, particularly when a large number of tags are available for selection.
-* GUIDES-28214: Attempts to create review tasks through the AEM workflow consistently fail because the review node is not created.
-* GUIDES-28104: Publishing a DITA map with `chunk=to-content` attribute creates duplicate JCR nodes in the new AEM Sites output, leading to redundant content structure in AEM Sites.
-* GUIDES-29065, GUIDES-28793: Performance issues like longer loading times and intermittent timeouts are observed when working with large collections.
+* The related AEM SDK carries a different release ID (21575) and is available via the Software Distribution portal.
 
-For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
-
-### Known Issues {#known-issues-21484}
-
-* The SDK made available in the Software Distribution portal has issues running locally. Please continue using the previous SDK for local testing.
-
-### Deprecated Features and APIs {#deprecated-21484}
+### Deprecated Features and APIs {#deprecated-21570}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-21484}
+### Security Fixes {#security-21570}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 5 identified vulnerabilities, reinforcing our commitment to robust system protection.
+None
 
-### Embedded Technologies {#embedded-tech-21484}
+### Embedded Technologies {#embedded-tech-21570}
 
 |Technology|Version|Link|
 |---|---|---|
