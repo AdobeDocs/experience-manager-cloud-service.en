@@ -14,6 +14,10 @@ The following section outlines the technical release notes for the current maint
 
 Summarized below are the continuous improvements for maintenance release 21570, which was publicly released on July 15, 2025. The previous maintenance release was release 21484.
 
+>[!NOTE]
+>
+>[Release 21484](/help/release-notes/maintenance/2025/2025-7-0.md#21484) was made private and replaced by release 21570.
+
 The 2025.7.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
 ### Enhancements {#enhancements-21570}
