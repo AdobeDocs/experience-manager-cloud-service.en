@@ -80,6 +80,10 @@ The required options can be selected in **Properties** of the required folder; t
 
 1. Select your Adobe Target workspace.
 
+   For example:
+
+   ![Folder - Cloud Services](assets/cf-target-integration-01.png "Folder - Cloud Services")
+
 1. **Save & Close**.
 
 ## Add the Legacy Configuration {#add-the-legacy-configuration}
