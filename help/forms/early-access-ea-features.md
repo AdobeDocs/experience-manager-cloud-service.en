@@ -67,21 +67,6 @@ Here's what more Conversational Forms bring:
 
 Conversational Forms are more than just a new look – they're a game-changer for user experience.  Boost engagement, reduce form abandonment, and make interacting with your website a more enjoyable experience for everyone.
 
-
-### WYSIWYG Authoring for Edge Delivery Services
-
-WYSIWYG Authoring provides WYSIWYG interfaces (Universal Editor and Adaptive Forms Editor) to build and publish adaptive forms to Edge Delivery Services. WYSIWYG Authoring offers all the capabilities of [Document-based Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus a wide range of additional features:
-
-* Advanced rules editor for creating complex logic.
-* Server-side extensibility for custom functionalities.
-* WYSIWYG editing experience for easy form creation and visualization.
-* Document of record functionality to create tamper-proof archives of submitted data.
-* Integration with Adobe Sign for electronic signatures.
-* Integration with various data sources for pre-populating forms and submitting data.
-* Form Data Model (FDM) for defining data structure and interactions with various data sources.
-* Ability to choose from multiple submit actions for handling form submissions, including submitting data to Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics, and many more data sources.
-
-
 ### AEM Forms to Marketo Connector
 
 The [AEM Forms to Marketo Connector](/help/forms/integrate-form-to-marketo-engage.md) bridges the gap between your web forms (Adaptive Forms) built with Adobe Experience Manager (AEM) and your marketing automation platform, Marketo. 

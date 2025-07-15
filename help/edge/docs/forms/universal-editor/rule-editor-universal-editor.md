@@ -182,7 +182,7 @@ Now, let's explore how to [write rules in the Rule Editor](#write-rules).
 
 To understand how to write rules in Visual Rule Editor, let's consider an simple example of a tax calculation form: 
 
-![Rule Editor example](/help/edge/docs/forms/assets/rule-editor-1.png)
+![Screenshot of the Rule Editor interface showing the creation of a conditional rule with When-Then logic for form field visibility](/help/edge/docs/forms/assets/rule-editor-1.png)
 
 In the form described above, the user enters the gross salary. Based on this input, conditional field is displayed and the payable tax is calculated. 
 
@@ -217,7 +217,7 @@ To write rules, perform the following steps:
       * Submit (Submit Button)
    1. Hide the `Additional Deduction` form field, by opening its `Properties`.
    
-      ![Rule Editor example](/help/edge/docs/forms/assets/rule-editor2.png)
+      ![Screenshot of a tax calculation form with input fields for gross salary, marital status, and dependent children, demonstrating the form structure before rules are applied](/help/edge/docs/forms/assets/rule-editor2.png)
 
 ### 2. Add a conditional rule for a form field
 
