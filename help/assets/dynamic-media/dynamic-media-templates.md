@@ -45,7 +45,7 @@ exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
     </tr>
 </table>
 
-Create real time customizable templates for your banners and flyers using [!DNL Dynamic Media] templates, a WYSIWYG template editor. Publish your [!DNL Dynamic Media] template to use it in downstream applications. A [!DNL Dynamic Media] template includes image, text and shape layers. Add parameters to the layers of the template and use [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) to reposition, resize or edit the layer and update its content in real-time. .
+Create real time customizable templates for your banners and flyers using [!DNL Dynamic Media] templates, a WYSIWYG template editor. Publish your [!DNL Dynamic Media] template to use it in downstream applications. A [!DNL Dynamic Media] template includes image, text and shape layers. Add parameters to the layers of the template and use [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) to reposition, resize or edit the layer and update its content in real-time. 
 
 Some of the key features include:
 
