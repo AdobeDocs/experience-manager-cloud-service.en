@@ -49,21 +49,22 @@ The Adaptive Forms Block offers a standardized HTML structure, simplifying the p
   * **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css file`. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms.
 
   * **CSS Styling for Forms**: To ensure that your styles are applied correctly, wrap your form-specific CSS within the `main .form form` selector. This ensures that your styles target only the form elements within the main content area, avoiding conflicts with other parts of the website.
+    
     Example:
 
     ```css
-      main .form form input {
-          /* Add styles specific to input fields inside the form */
-      }
+    main .form form .{Type}-wrapper input {
+        /* Add styles specific to input fields inside the form */
+    }
 
-      main .form form button {
-          /* Add styles specific to buttons inside the form */
-      }
+    main .form form .{Type}-wrapper button {
+        /* Add styles specific to buttons inside the form */
+    }
 
-      main .form form label {
-          /* Add styles specific to labels inside the form */
-      }
-
+    main .form form .{Type}-wrapper label {
+        /* Add styles specific to labels inside the form */
+    }
+    ```
 
 ## Components Structure 
 

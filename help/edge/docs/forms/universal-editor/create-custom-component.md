@@ -33,7 +33,7 @@ Adding a custom component in the Universal Editor means making a new component a
 
 Let's take an example of creating a new custom component called **range**. The range component appears as a straight line and displays values such as the minimum, maximum, or selected value.
 
-![Range component style](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
+![A visual representation of a range component showing a slider with minimum and maximum values, and a selected value indicator](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
 
 By the end of this article, you learn to create custom components from the scratch.
 
@@ -319,11 +319,11 @@ const OOTBComponentDecorators = ['file-input',
 
 After completing the above steps, the custom component appears in the form's component list within the Universal Editor. You can then drag and drop it into your form section.
 
-![range component](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+![Screenshot of the Universal Editor component palette showing the custom range component available for drag-and-drop into forms](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
 
 The screenshot below shows the properties of the `range` component added to the component model, which specifies the properties the form author can configure.:
 
-![Properties of range component](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
+![Screenshot of the Universal Editor properties panel displaying configurable settings for the range component including basic properties, validation rules, and styling options](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 You can now define the runtime behavior of your custom component by adding styling and functionality.
 
@@ -451,7 +451,7 @@ You can modify custom components using predefined markup, as explained in the [S
     After incorporating custom styling and functionality, the range component's appearance and behavior are enhanced. The updated design reflects the applied styles, while the added functionality ensures a more dynamic and interactive user experience. 
     The below screenshot illustrates the updated range component.
 
-![Range component style](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
+![The final range component in action showing a styled slider with value bubble display and interactive functionality in the Universal Editor](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
 
 ## Frequently Asked Question
 
