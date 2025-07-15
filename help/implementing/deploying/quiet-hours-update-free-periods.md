@@ -18,7 +18,7 @@ The update free periods and quiet hours features are configured on a "per progra
 
 ## Quiet hours {#quiet-hours}
 
-The quiet hours feature allows you to define a time window during the day without any automatic updates. All maintenance updates will shift to occur outside of the configured time window. If, for example, an update is scheduled during your specified quiet hours, it will automatically start after the specified quiet hour interval ends. The configured time interval cannot exceed 8 hours so that updates can still occur daily. You can define these quiet hours **per program**, using your local timezone.
+The quiet hours feature allows you to define a time window during the day without any automatic updates. All maintenance updates will shift to occur outside of the configured time window. If, for example, an update is scheduled during your specified quiet hours, it will automatically start after the quiet hour interval ends. The configured time interval cannot exceed 8 hours so that updates can still occur daily. You can define these quiet hours **per program**, using your local timezone.
 
 ### How to configure the quiet hours interval {#configure-quiet-hours}
 
