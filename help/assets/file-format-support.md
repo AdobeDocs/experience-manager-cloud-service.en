@@ -8,43 +8,6 @@ exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 ---
 # [!DNL Assets] supported file formats {#supported-file-formats}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
-        </td>
-    </tr>
-</table>
-
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] supports basic content management capabilities &mdash; storage, managing metadata online, versioning, upload and download, and so on &mdash; for any binary file, independent of its format. [!DNL Adobe Experience Manager Assets] supports a wide range of file formats and each product feature has varied support for different formats.
 
 In addition, [!DNL Experience Manager Assets] provides extended support to generate previews and renditions and to extract metadata and text for full-text indexing. This extended support is provided using [asset microservices](asset-microservices-configure-and-use.md).
@@ -64,6 +27,12 @@ The following legend describes the level of support for each format.
 | &#10003;      | Supported                   |
 | *             | See remarks below the table |
 | -             | Not applicable              |
+
+>[!IMPORTANT]
+>
+>[!DNL Adobe Experience Manager Assets] supports only the file formats listed in this article.
+>Some features might seem to work with other formats, but these formats are not officially supported. Results may be inconsistent, and features may not work as expected.
+>To ensure consistent and reliable results, use only the supported formats.
 
 ## Adobe formats {#adobe-formats}
 
@@ -223,7 +192,7 @@ The document formats supported for asset management features are as follows.
 
 ## Tips and limitations {#limitations-and-tips}
 
-* Currently, the file size limit for metadata extraction is approximately 15 GB. When uploading large assets, sometimes metadata extraction operation fails.
+* Currently, the file size limit for metadata extraction is approximately 15 GB. When uploading large assets, sometimes the metadata extraction operation fails.
 
 ## Dynamic Media - Supported input video formats for transcoding {#video-dynamic-media-transcoding}
 

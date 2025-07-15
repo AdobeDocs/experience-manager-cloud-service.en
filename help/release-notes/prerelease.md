@@ -16,7 +16,7 @@ Adobe Experience Manager as a Cloud Service delivers new features on a regular c
 
 Upcoming features generally are made available in one of two ways:
 
-* As part of an early-adopter program
+* As part of an Alpha, Beta or Limited Availability program
 * As part of the prerelease channel
 
 This document describes how to enable the prerelease channel. The prerelease channel provides access to early features that will be introduced a future feature release of AEM. This gives you the chance to validate new features and plan for their adoption ahead of their future release. Please see the document [Release Notes for Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/home.md) for details on the AEM release schedule.

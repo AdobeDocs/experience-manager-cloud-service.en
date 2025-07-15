@@ -114,6 +114,29 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-H
 
 After successfully testing, the additional condition can be removed and the configuration redeployed.
 
+### Migration process if Adobe Support previously generated the `X-AEM-Edge-Key` HTTP Header value {#migrating-legacy}
+
+>[!NOTE]
+>Before proceeding with the migration, schedule a test migration on the stage environment to verify the strategy.
+
+>[!WARNING]
+> Do not change the key in the customer-managed CDN until step 4.
+
+Previously, the process for integrating with a customer-managed CDN involved customers requesting an X-AEM-Edge-Key HTTP Header value from Adobe Support, rather than defining the value on their own. In order to migrate to the newer self-serve approach where you define your own edge key values, follow these steps to ensure a smooth transition without downtime:
+
+1. Configure the CDN configuration with both the new (customer-generated) and old (Adobe-generated) secrets specified as `edgeKey1` and `edgeKey2`. This is a variation of the [rotating secrets](/help/implementing/dispatcher/cdn-credentials-authentication.md#rotating-secrets) documentation.
+
+2. Deploy the secrets and the self-serve CDN configuration. At this point in the process, the old Adobe-defined secret should still remain as the X-AEM-Edge-Key value passed by the customer-managed CDN.
+
+3. Contact Adobe Support, requesting that Adobe switches over to use the self-serve configuration, specifying that you have already deployed it.
+
+4. Once Adobe confirms that it has performed that action, configure your customer-managed CDN to use the new, customer-defined key for the `X-AEM-Edge-Key` HTTP Header value.
+
+5. Remove the old key from the CDN configuration and deploy the configuration pipeline again.
+
+>[!WARNING]
+>If you don't have the fallback with both keys configured simultaneously, it might lead to downtime during the migration.
+
 ## Purge API Token {#purge-API-token}
 
 Customers can [purge the CDN cache](/help/implementing/dispatcher/cdn-cache-purge.md) by using a declared Purge API token. The token is declared in a file named `cdn.yaml` or similar, somewhere under a top-level `config` folder. Read [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure) for details about the folder structure and how to deploy the configuration. 

@@ -789,7 +789,6 @@ The structure and syntax is:
 * `flip`: an enumeration of HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
 * `quality`: an integer from 1&ndash;100 notating the percentage of the image quality
 * `width`: an integer that defines the width of the output image but is ignored by the Image Generator
-* `preferWebp`: a boolean that indicates if webp is preferred (default value is false)
 
 The URL transform is available for all query types: by path, list or paginated.
 
@@ -817,7 +816,6 @@ The following is a sample query with a full set of parameters:
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -856,7 +854,6 @@ query ($seoName: String!) {
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -895,7 +892,6 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
