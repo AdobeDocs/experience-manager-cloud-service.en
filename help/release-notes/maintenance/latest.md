@@ -10,45 +10,43 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 21193 {#21193}
+## Release 21484 {#21484}
 
-Summarized below are the continuous improvements for maintenance release 21193, which was publicly released on June 10, 2025. The previous maintenance release was release 21005.
+Summarized below are the continuous improvements for maintenance release 21484, which was publicly released on July 10, 2025. The previous maintenance release was release 21331.
 
-The 2025.6.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+The 2025.7.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-21193}
-
-* ASSETS-51245: Improved performance for large folder listings in Touch UI.
-* ASSETS-51686: Improvements to bulk operations job, including easier job cancellation, enhanced logging, audit downloads for large results.
-* CQ-4360131: Improved error response for OpenAPI endpoints allowing API clients to receive correct structured error information.
-
-### Fixed Issues {#fixed-issues-21193}
-
-* ASSETS-41007: Deleted assets could remain visible in Content Hub.
-* ASSETS-50994: AemRequestEventFilter causing excessive Jetty thread contention.
-* ASSETS-50155: Duplicate metadata change events triggered.
-* ASSETS-50716: Sorting by Title in Assets List view not working as expected.
-* ASSETS-50820: Ensure invalid requests to the asset relations API are properly rejected with a 400 error.
-* ASSETS-50562: Asset Upload API should create version by default behavior on name conflict.
-* ASSETS-50992: Assets API initiateUpload.json endpoint should return content type of 'application/json'.
-* ASSETS-51322: Automatic removal and expiration of async barricades that remain persisted indefinitely after a failed job.
-* ASSETS-51809: CSV editor did not show recently saved changes due to browser caching.
-* SITES-31678: Experience Fragments (XF) with context-aware references did not resolve the correct language root in XF Publishing API.
-
-
-### Known Issues {#known-issues-21193}
+### Enhancements {#enhancements-21484}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-21193}
+### Fixed Issues {#fixed-issues-21484}
+
+None.
+
+#### AEM Guides {#guides-21484}
+
+* GUIDES-29781: When an XML comment is added within an element in the Source view, the leading and trailing spaces around the comment are lost upon switching views.
+* GUIDES-29078: When opening a topic in Author view after a browser refresh, previously applied tags in the File Properties panel are not retained, and adding new tags overwrites the existing ones, particularly when a large number of tags are available for selection.
+* GUIDES-28214: Attempts to create review tasks through the AEM workflow consistently fail because the review node is not created.
+* GUIDES-28104: Publishing a DITA map with `chunk=to-content` attribute creates duplicate JCR nodes in the new AEM Sites output, leading to redundant content structure in AEM Sites.
+* GUIDES-29065, GUIDES-28793: Performance issues like longer loading times and intermittent timeouts are observed when working with large collections.
+
+For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
+
+### Known Issues {#known-issues-21484}
+
+None.
+
+### Deprecated Features and APIs {#deprecated-21484}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-21193}
+### Security Fixes {#security-21484}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 2 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 5 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-21193}
+### Embedded Technologies {#embedded-tech-21484}
 
 |Technology|Version|Link|
 |---|---|---|
