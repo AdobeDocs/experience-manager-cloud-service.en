@@ -42,7 +42,7 @@ This section details these steps. You may find it useful to see the [Terms](#ter
 
 ### Create a New Product Profile {#create}
 
-First create a product profile before to which you can assign custom permissions.
+First create a product profile to which you can assign custom permissions.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
@@ -139,7 +139,7 @@ The following permissions are available for creating custom profiles.
 | IP Allowlist Manage | Let users create/edit/delete IP allowlist and IP allowlist binding. |
 | Network Infrastructure Manage | Let users create/edit/delete network infrastructure. |
 | SSL Certificate Manage | Let users create/edit/delete SSL certificate. |
-|New Relic Sub Account User Manage | Let users read/edit New Relic subaccount users. |
+| New Relic Sub Account User Manage | Let users read/edit New Relic subaccount users. |
 
 ### Organization-Level Permissions {#organization-level}
 
