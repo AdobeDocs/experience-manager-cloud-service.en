@@ -253,6 +253,39 @@ To open your fragment for editing:
 
 * The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset/image content itself.
 
+So, if we start with:
+
+```xml
+FolderA 
+    FragmentA (inside FolderA)
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA)
+
+
+FolderB
+   FragmentB
+```
+
+Copying FragmentA to FolderC, would result in:
+
+```xml
+FolderA 
+    FragmentA (inside FolderA)
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA)
+
+
+FolderB
+    FragmentB
+    Copy_of_FragmentB
+
+
+FolderC
+    Copy_of_FragmentA
+    | 
+    |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
+```
+
 <!--
 **Copy** creates a copy of the selected fragment at its location.
 
@@ -266,6 +299,38 @@ To open your fragment for editing:
 * A deep copy is made; so if a referenced Content Fragment also references fragments, these are copied as well.
 
 * The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset/image content itself.
+
+So, if we start with:
+
+```xml
+FolderA 
+    FragmentA (inside FolderA)
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA)
+
+
+FolderB
+   FragmentB
+```
+
+Copying FragmentA to FolderC, would result in:
+
+```xml
+FolderA 
+    FragmentA (inside FolderA) 
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA) 
+
+FolderB 
+    FragmentB
+
+
+FolderC
+   Copy_of_FragmentA
+   | 
+   |___./Copy_of_FragmentB (referenced by FragmentA)
+   Copy_of_FragmentB
+```
 -->
 
 ## View and Manage Tags {#manage-tags}
