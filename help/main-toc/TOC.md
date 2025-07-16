@@ -1195,8 +1195,8 @@ user-guide-title: AEM as a Cloud Service
   + [Generative AI in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
   + [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
   + [Generate Variations](/help/generative-ai/generate-variations.md)
-  + [Assistant (Limited Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
-  + [AI Assistant for AEM Forms (Forms Experience Builder)(Early Adopter)](/help/edge/docs/forms/forms-ai-assistant.md)
+  + [AEM AI Assistant (Limited Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
+  + [AEM Forms AI Assistant (Forms Experience Builder)(Early Adopter)](/help/edge/docs/forms/forms-ai-assistant.md)
   + [AEM Forms AI Assistant - Prompt Library](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + Implementing {#implementing}
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
