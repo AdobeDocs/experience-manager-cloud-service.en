@@ -102,7 +102,7 @@ To create a form fragment in Universal Editor, perform the following steps:
 
     The below screenshot displays the `contact fragment` created in Universal Editor.
 
-    ![Contact fragment](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+    ![Screenshot of a completed contact details form fragment in the Universal Editor, showing fields for name, phone, email, and address that can be reused across multiple forms](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
 
     Once you have created the fragment, you can [add the created fragment in the Edge Delivery Services Forms](#adding-form-fragments-in-forms).
 
@@ -134,7 +134,7 @@ Let's create a simple `Employee Details` form that includes both employee and su
 
     The form fragment is added by reference to the form and remains in synchronized with the standalone form fragment.
 
-    ![Fragment in form](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+    ![Screenshot showing the contact details fragment successfully integrated into an employee form within the Universal Editor, demonstrating how fragments maintain their structure when reused](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
     You can preview the form to see how the form appears in the **Preview** mode.
 
