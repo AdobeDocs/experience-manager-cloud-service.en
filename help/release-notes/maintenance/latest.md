@@ -22,7 +22,7 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 
 ### Enhancements {#enhancements-21570}
 
-None
+Migrated to Apache Httpd 2.4.63
 
 ### Fixed Issues {#fixed-issues-21570}
 
@@ -31,6 +31,7 @@ None
 ### Known Issues {#known-issues-21570}
 
 * The related AEM SDK carries a different release ID (21575) and is available via the Software Distribution portal.
+* Apache Httpd version 2.4.63 introduced a breaking change in how mod_rewrite handles question marks (?) in URLs. This change was implemented to prevent the usage of the UnsafeAllow3F flag, which was considered a security risk. This affects any RewriteRule directives that rely on question mark detection in URL patterns.
 
 ### Deprecated Features and APIs {#deprecated-21570}
 
@@ -47,4 +48,5 @@ None
 |AEM Oak | 1.80.0|[Oak API 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80.0/index.html)| 
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
+|Apache HTTPD| 2.4.63 | [Apache Httpd 2.4.63](https://www.apachelounge.com/changelog-2.4.html)|
 |AEM Core Components| 2.29.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
