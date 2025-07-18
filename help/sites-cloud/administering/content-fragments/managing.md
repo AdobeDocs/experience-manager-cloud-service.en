@@ -309,7 +309,7 @@ FolderC
 
 ### Locations that the referenced fragments are copied to {#locations-that-the-referenced-fragments-are-copied-to}
 
-When copying Content Fragments you can specify where referenced fragments should be copied to with **Copy also referenced content fragments** and the related option:
+When copying Content Fragments you can specify where referenced fragments should be copied to with **Copy also referenced content fragments** and the related options:
 
 ![Copy fragments](/help/sites-cloud/administering/content-fragments/assets/cf-managing-copy.png)
 
