@@ -5,54 +5,11 @@ exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 ---
 # Content Hub frequently asked questions {#content-hub-frequently-asked-questions}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
-        </td>
-    </tr>
-</table>
-
 ![Content Hub frequently asked question](assets/content-hub-faqs.png)
-
->[!AVAILABILITY]
->
->Content Hub guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
->
->[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 ## What is Content Hub? {#what-is-content-hub} 
 
-Content Hub is a feature of Adobe Experience Manager Assets as a Cloud Service. 
+Content Hub is a feature of Adobe Experience Manager Assets as a Cloud Service.
 
 Content Hub enables broader teams to easily discover relevant, approved assets through an intuitive portal and quickly adapt them to their needs.  In addition, Content Hub provides an ingestion mechanism that allows those users to easily self–serve as they upload assets into the DAM. This directly accommodates the need organizations have for higher content creation velocity, while preserving brand consistency and compliance with appropriate safeguards.
 
@@ -81,7 +38,7 @@ It is possible to evaluate Content Hub without impacting your users/production c
 
 There is an early access program to Content Hub on Sandbox programs and their author production environments. For more information, see [Introduction to Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). To learn more about the early access program, reach out to your Adobe account team. 
 
-Content Hub is not yet available for non-production environments (stage & dev). Expected avaialbility for stage/dev environments for Assets Ultimate is March 2025.
+Content Hub is not yet available for non-production environments (stage & dev). Expected availability for stage/dev environments for Assets Ultimate is March 2025.
 
 ## Why do not I see any assets after logging on to Content Hub? {#no-assets-in-content-hub}
 
@@ -105,9 +62,23 @@ You can quickly find assets uploaded using Content Hub on AEM as a Cloud Service
 
 1. Sorting assets using the **[!UICONTROL Modified Date]** field.
 
-## Why do not I view the edit using Adobe Express option on my asset card to be able to remix assets to create new variations? {#edit-using-express-not-available}
+## Why do not I see the Edit using Adobe Express option on my asset card to be able to remix assets to create new variations? {#edit-using-express-not-available}
 
-To view the edit using Adobe Express option on the asset card, you must have Adobe Express entitlements in addition to privileges for [Content Hub users with rights to remix assets to new variations](#onboard-content-hub-users-add-assets). Adobe Express has to be deployed in the same organization in Adobe Admin console where Adobe Experience Manager is deployed.
+To view the **Edit using Adobe Express** option on the asset card, the user must have Adobe Express Enterprise or Teams entitlement (see [plans](https://www.adobe.com/express/pricing)) in addition to privileges for [Content Hub users with rights to remix assets to new variations](#onboard-content-hub-users-add-assets). 
+
+There are a few configurations of how users are assigned to [!DNL Content Hub] & [!DNL Adobe Express]:
+
+1. The organization has [Assets Ultimate](/help/assets/assets-ultimate-overview.md) or [Assets Prime](/help/assets/assets-prime.md) license, and the user is assigned to one of the Experience Manager profiles in Admin console that include Adobe Express entitlement (Collaborator or Power user). The integration works without any additional configuration.
+   
+1. [!DNL Adobe Express] is deployed in the same [!DNL Adobe Admin Console] as [!DNL Experience Manager Assets] with [!DNL Content Hub]. The integration works without any additional configuration.
+
+1. [!DNL Adobe Express] is deployed in a different [!DNL Adobe Admin Console] than [!DNL Experience Manager Assets] with [!DNL Content Hub]. In this case, the [!DNL Assets] administrator can configure the integration (see [documentation](/help/assets/connect-assets-with-creative-cloud.md)) for the integration to work.
+
+   >[!NOTE]
+   >
+   >The user assigned to Express and Assets product profiles in two Admin Consoles needs to have the same email address and use a business **Enterprise or School** account, and not the **Personal** one. The ideal configuration is to have both Admin Consoles set up as **Federated ID** with trust relationship set up between them, so that the user has a seamless single sign-on experience. Some of the Express plans (for example, Express Teams) does not support Federated ID / single sign-on.
+ 
+In addition to the right product entitlements, Adobe Express integration in Content Hub requires that the assigned user has at least [!UICONTROL Can Edit] permissions on the Assets author environment powering Content Hub, on at least the **[#UICONTROL /content/dam/hydrated-assets/]** folder hierarchy, where Content Hub users can save content that they created using Express. See [Permissions Management](/help/security/touch-ui-principal-view.md) in the Admin view (Touch UI) or a simplified [permissions management in Assets view](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Can I setup Content Hub so that my organization's brand guidelines display as a link on the home page? {#content-hub-setup-brand-guidelines}
 
@@ -120,3 +91,42 @@ Adobe provides migration support from Brand Portal to Content Hub that you can u
 ## Why cannot I see the Product Settings/Configuration option in Content Hub? {#ui-configuration-option-missing}
 
 To access the [Configuration User Interface](/help/assets/configure-content-hub-ui-options.md), you need to be a [Content Hub Administrator](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator). If you are assigned to the AEM Administrators product profile on the production author instance in Adobe Admin Console and you still cannot see the configuration option, ensure that the AEM Administrators product profile is not renamed. See [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md) for more details.
+
+## How Content Hub addresses the limitations of Brand Portal? {#content-hub-brand-portal-comparison} 
+
+
+The table below outlines the key differences between the two solutions:
+
+| Area | Capability |Content Hub|Brand Portal|
+|---|---|----|----|
+| Configuring distribution experience | Configure metadata for filters, asset details, and add assets page |&#10003;|&minus;|
+|  | Configure external links from portal |&#10003;|&minus;|
+|  | Configure banner messaging |&#10003;|&#10003;|
+|  | Configure banner image for branding |&#10003;|&#10003;|
+|  | Configure primary and secondary colors for UI as per branding requirements |&#10003;|&minus;|
+|Sharing assets from the DAM  | Sharing original approved assets from DAM |&#10003;|&#10003;|
+|  | Approved asset changes synced automatically |&#10003;|&minus;|
+| Search and filters | Dynamic filters (options show dynamically based on assets displayed) |&#10003;|&minus;|
+|  | Search history |&#10003;|&minus;|
+| Asset upload | Local drive |&#10003;|&#10003;|
+|  | Add configurable metadata while uploading assets |&#10003;|&minus;|
+| Download and renditions | Download original asset |&#10003;|&#10003;|
+|  | Share and download static renditions from DAM |&#10003;|&#10003;|
+|  | Download dynamic renditions (preset & smart crops)  |&#10003;|&#10003;|
+|  | Ability to restrict view and download of expired assets  |&#10003;|&minus;|
+|  Link sharing and Collections| Link share for signed-in users |&#10003;|&#10003;|
+|  | Public collections |&#10003;|&#10003;|
+|  | Search within collections |&#10003;|&minus;|
+|  | Anonymous link share |&#10003;|&#10003;|
+|  | Private collections |&#10003;|&#10003;|
+|  Permissions| ACL-based permissions |&minus;|&#10003;|
+|  | Attribute-based access control |&#10003;|&minus;|
+|  Express integration| Edit Content Hub Assets in Adobe Express and save to DAM |&#10003;|&minus;|
+|  Dashboards and reports| Insights dashboard |&#10003;|&minus;|
+| UI Extensibility| Custom extension points on asset details page |Limited availability|&minus;|
+|  Innovations coming soon| Favourite collections by user |&#10003;|&minus;|
+|  | Pinned collections by Admin |&#10003;|&minus;|
+|  | Semantic search |&#10003;|&minus;|
+|  | Localised search and metadata display |&#10003;|&minus;|
+
+

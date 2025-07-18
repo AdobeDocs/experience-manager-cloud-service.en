@@ -6,27 +6,18 @@ role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 solution: Experience Manager Sites
 ---
+
 # Creating a Site {#creating-site}
 
 Learn how to use AEM create a site using site templates to define the style and structure of your site.
 
 ## Overview {#overview}
 
-Before content authors can create pages with content, the site must first be created. This is generally performed by an AEM administrator who defines the initial structure of the site. Using site templates makes site creation fast and flexible.
-
-The AEM Quick Site Creation tool allows non-developers to quickly create a site from scratch by using site templates.
-
-Once created, the Quick Site Creation tool also enables fast customization of the theme and styling of the AEM site (JavaScript, CSS, and static resources). This allows the front-end developer, who need zero knowledge of AEM, to work separately from and parallel to the content creators. The AEM administrator simply downloads the site theme and provides it to the front-end developer who customizes it using their favorite tools and then commits the changes to the AEM code repository, which is then deployed.
-
-This document focuses on site creation using the Quick Site Creation tool. If you would like an overview of the site creation and customization workflow, see [AEM Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md)
+Before content authors can create pages with content, the site must first be created. This is generally performed by an AEM administrator who defines the initial structure of the site. Using site templates makes site creation fast and flexible for non-developers.
 
 ## Planning Site Structure {#structure}
 
-Take time to consider your site's purpose and planned content well in advance. This will drive how you design the structure of the site. A good site structure supports easy navigation and content discovery for your site visitors and supports various AEM features such as [multisite management and translation](/help/sites-cloud/administering/msm-and-translation.md).
-
->[!TIP]
->
->[The WKND reference site](https://wknd.site) provides a best-practices implementation of a fully functional outdoor experiences brand website. Explore it to see how a well-built AEM site is structured.
+Take time to consider your site's purpose and planned content well in advance. This will drive how you design the structure of the site. A good site structure supports easy navigation and content discovery for your site visitors and supports various AEM features such as [multisite management and translation.](/help/sites-cloud/administering/msm-and-translation.md)
 
 ## Site Templates {#site-templates}
 
@@ -36,11 +27,15 @@ Site templates generally contain base site content and structure and site stylin
 
 >[!TIP]
 >
->For further detail on site templates, see [Site Templates](site-templates.md).
+>For further detail on site templates, see the document [Site Templates.](site-templates.md)
 
 >[!NOTE]
 >
->The site template is not to be confused with page templates. Site templates define the overall structure of a site. A page template defines the structure and initial content of an individual page.
+>The site template is not to be confused with [page templates.](/help/sites-cloud/authoring/page-editor/templates.md) Site templates define the overall structure of a site. A page template defines the structure and initial content of an individual page.
+
+### Adobe-Provided Site Templates {#adobe-templates}
+
+{{adobe-templates}}
 
 ## Creating a Site {#create-site}
 
@@ -72,6 +67,11 @@ Using a template to create a site is simple.
    * The site name becomes part of the URL.
    * The site name must comply with [AEM's page naming conventions](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices).
 
+1. Provide additional site details as required by the site template.
+
+   * Different templates may require additional details.
+   * For example, templates for [Edge Delivery Services projects](https://www.aem.live/developer/ue-tutorial) require the GitHub repository of your project.
+
 1. Select **Create** and the site is created from the site template.
 
    ![Details of the new site](../assets/create-site-details.png)
@@ -88,10 +88,10 @@ Content authors can now begin authoring!
 
 ## Site Customization {#site-customization}
 
-If your site requires customization beyond the templates available you have several options.
+Templates are helpful to quickly set up the basic structure and style of a site. However most projects require some additional styling and customization. Site templates help decouple the styling of the site so that front-end developers need no knowledge of AEM to style the site and can 
+work separately from and parallel to the content creators. Depending on the type of project, this can take two forms.
 
-* If the site structure or initial content must be adjusted, [the site template can be customized to meet your requirements](site-templates.md).
-* If the site styling must be adjusted, [the site theme can be downloaded and customized](/help/journey-sites/quick-site/overview.md).
-* If the site functionality must be adjusted, [the site can be fully customized](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
-
-Any customization should be undertaken with the support of a development team.
+* For projects with AEM page authoring with the Universal Editor and delivery through [edge delivery,](/help/edge/overview.md) all styling is done in the GitHub project.
+  * Please see the document [Getting Started - Universal Editor Developer Tutorial](https://www.aem.live/developer/ue-tutorial) for more information.
+* For projects with traditional AEM page authoring and delivery through [publish delivery,](/help/sites-cloud/authoring/author-publish.md) the AEM administrator simply downloads the site theme and provides it to the front-end developer who customizes it using their favorite tools and then commits the changes to the AEM code repository, which is then deployed.
+  * Please see the document [AEM Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md) for more information.

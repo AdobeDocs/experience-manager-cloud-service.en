@@ -97,6 +97,9 @@ You can use submit actions such as "Send Email", "Invoke an AEM workflow", "Invo
 ![Image Submit Actions](/help/forms/assets/submit-actions-img.png)
 
 
+>[!NOTE]
+>
+> You can save the Document of Record for any Form Data Model by using **[!UICONTROL Document of Record Bind Reference field]** property.
 
 ## Incremental updates to Document of Record template {#document-of-record-template-incremental-updates}
 
@@ -371,7 +374,13 @@ To localize the branding information that you enter in the Document of Record ta
 
 1. To save the branding changes, select **[!UICONTROL Done]**.
 
-
+>[!NOTE]
+> 
+> To display a custom form title in your Document of Record, edit the **Custom Form Title** in **Document of Record Properties** > **Master Page Properties**. This custom title:
+> 
+> * Appears in the header of the generated PDF
+> * Appears as the Title in the PDF's document properties
+> * Appears as the Initial View Title when the PDF is opened
 
 ## Table and column layouts for panels in Document of Record {#table-and-column-layouts-for-panels-in-document-of-record}
 

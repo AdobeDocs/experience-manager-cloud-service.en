@@ -4,6 +4,8 @@ Description: Learn how to use forms submission service for submitting forms.
 Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
+hide: yes
+hidefromtoc: yes
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
 ---
 # Forms Submission Service with Edge Delivery Services Forms
@@ -46,6 +48,10 @@ Author a form using Google Sheets or Microsoft Excel. To learn how to create a f
 The below screenshot displays the form definition used to create form:
 
 ![Form Definition](/help/forms/assets/form-submission-definition.png)
+
+>[!IMPORTANT]
+>
+>**The sheet where the form is authored has restrictions on what it can be named. Only `helix-default` and `shared-aem` can be used as sheet names.**
 
 #### 2. Enable the spreadsheet to accept data.
 
