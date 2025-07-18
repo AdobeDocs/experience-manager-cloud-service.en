@@ -125,6 +125,30 @@ You can connect AEM Forms with Adobe Experience Platform (AEP) to leverage custo
 
 Ready to start? [Learn more about integrating AEM Forms with Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
 
+### AEM Forms HTML5 Forms
+
+AEM Forms HTML5 Forms enables you to render existing XFA (XML Forms Architecture) form templates in HTML5 format, making them accessible on modern browsers and mobile devices where XFA-based PDF is not supported. This capability bridges the gap between traditional PDF forms and modern web experiences.
+
+![HTML5 Forms Preview](/help/forms/assets/mobile_form_on_an_ipad_date_14.png)
+
+**Key capabilities:**
+
+* **HTML5-based rendering of XFA form templates**: Render your existing XFA-based forms in HTML5 format to expand your client platform to mobile devices (Apple iPad, Android tablet, smartphones, and more) that support HTML5 but do not support Adobe Reader with XFA Forms.
+
+* **Mobile-ready forms**: HTML5 Forms bring numerous capabilities that are mobile-ready, helping you expand your current solutions and workflows to tablets or smartphones with HTML5 browsers.
+
+* **Accessibility support**: HTML5 Forms use the ARIA HTML5 accessibility standard and support tabbed navigation, making them compatible with common screen readers like JAWS and VoiceOver.
+
+* **Customization capabilities**: You can customize the appearance of existing widgets, create your own custom widgets, or use custom styles in forms using standard web technologies like CSS and JavaScript.
+
+* **Right-to-left language support**: HTML5 Forms support right-to-left languages such as Hebrew, allowing you to display and fill forms in RTL languages.
+
+* **Attachment support**: Upload, preview, and submit attachments with HTML5 forms for enhanced data collection.
+
+* **Draft saving**: Save an HTML5 form as a draft and resume filling the form at a later stage.
+
+Ready to start? The [Introduction to HTML5 forms](/help/forms/introductionhtml5.md) documentation provides a comprehensive overview and getting started guide for this innovation.
+
 ## Additional Early Access Innovations
 
 ### HTML email Templates in Adaptive Forms
