@@ -285,7 +285,7 @@ FolderC
 
 <!-- CQDOC-22785 - will replace above text -->
 
-<!--
+
 **Copy** creates a copy of the selected fragment at its location.
 
 * In the **Copy** action you can select whether to include children (referenced fragments). This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
@@ -293,14 +293,13 @@ FolderC
   * Creates a copy of the selected Content Fragment at its location.
   * Creates copies of all fragments that are referenced by the selected fragment.
 
-    The location that the referenced fragments are copied to depends on the configuration of your instance:
+    The [locations that the referenced fragments are copied to](#locations-that-the-referenced-fragments-are-copied-to) depends on the option you select:
 
-    * By default the referenced fragments are copied to the same location as the original referenced fragment.
-    * When configured, the referenced fragments are copied to the same location as the original selected fragment. 
+    * **Copy to the selected folder**
+      When selected, the referenced fragments are copied to the same location as the original selected fragment. 
 
-    >[!NOTE]
-    >
-    >This behavior depends on the `copyReferencesToMainFolder` property.
+    * **Copy to their original locations**
+      The referenced fragments are copied to the same location as the original referenced fragment. This is the default, and will be used when no option is selected.
 
 * The copy of the selected fragment will reference the copies of the referenced fragments.
 
@@ -308,11 +307,15 @@ FolderC
 
 * The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset/image content itself.
 
-### How referenced fragments are copied {#how-referenced-fragments-are-copied}
+### Locations that the referenced fragments are copied to {#locations-that-the-referenced-fragments-are-copied-to}
 
-#### Default behavior {#default-behavior}
+When copying Content Fragments you can specify where referenced fragments should be copied to with **Copy also referenced content fragments** and the related option:
 
-By default the referenced fragments are copied to the same location as the original referenced fragment.
+![Copy fragments](/help/sites-cloud/administering/content-fragments/assets/cf-managing-copy.png)
+
+#### Copy to their original locations {#copy-to-their-original-locations}
+
+When you select **Copy to their original locations**, the referenced fragments are copied to the same location as the original referenced fragment. This is also the default action when no selection is made.
 
 So, if we start with:
 
@@ -344,9 +347,9 @@ FolderC
     |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
 ```
 
-#### Configured behavior {#configured-behavior}
+#### Copy to the selected folder {#copy-to-the-selected-folder}
 
-When configured, the referenced fragments are copied to the same location as the original selected fragment.
+When selected, the referenced fragments are copied to the same location as the original selected fragment.
 
 So, if we start with:
 
