@@ -28,6 +28,12 @@ The following legend describes the level of support for each format.
 | *             | See remarks below the table |
 | -             | Not applicable              |
 
+>[!IMPORTANT]
+>
+>[!DNL Adobe Experience Manager Assets] supports only the file formats listed in this article.
+>Some features might seem to work with other formats, but these formats are not officially supported. Results may be inconsistent, and features may not work as expected.
+>To ensure consistent and reliable results, use only the supported formats.
+
 ## Adobe formats {#adobe-formats}
 
 | File format | Thumbnail generation | Full-text extraction | Metadata extraction | Width/Height |
@@ -186,7 +192,7 @@ The document formats supported for asset management features are as follows.
 
 ## Tips and limitations {#limitations-and-tips}
 
-* Currently, the file size limit for metadata extraction is approximately 15 GB. When uploading large assets, sometimes metadata extraction operation fails.
+* Currently, the file size limit for metadata extraction is approximately 15 GB. When uploading large assets, sometimes the metadata extraction operation fails.
 
 ## Dynamic Media - Supported input video formats for transcoding {#video-dynamic-media-transcoding}
 

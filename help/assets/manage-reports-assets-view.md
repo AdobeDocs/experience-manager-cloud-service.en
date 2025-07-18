@@ -4,6 +4,8 @@ description: Access the data in the reports section of Assets view to assess pro
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
+hide: yes
+hidefromtoc: yes
 ---
 # Manage reports {#manage-reports}
 
@@ -239,7 +241,7 @@ Click **[!UICONTROL Insights]** available in the left navigation pane to view th
 
 * **Uploads**: The number of assets uploaded to the Assets view environment in the last 30 days or 12 months represented using a line graph.
 ![insights-uploads](/help/assets/assets/insights-uplods2.svg)
-<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
+<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.
 
 * **Storage usage**: The storage usage, in bytes, for the Assets view environment represented using a bar chart.
 ![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
