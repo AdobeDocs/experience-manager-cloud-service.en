@@ -173,6 +173,8 @@ Your app is now instrumented to use the Universal Editor!
 
 See [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) to learn how easy and intuitive it is for content authors to create content using the Universal Editor.
 
+{{ue-headless-auth}}
+
 ## Additional Resources {#additional-resources}
 
 To learn more about the Universal Editor, see these documents.

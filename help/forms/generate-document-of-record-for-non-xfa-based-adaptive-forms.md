@@ -390,6 +390,14 @@ To localize the branding information that you enter in the Document of Record ta
 
 1. To save the branding changes, select **[!UICONTROL Done]**.
 
+>[!NOTE]
+> 
+> To display a custom form title in your Document of Record, edit the **Custom Form Title** in **Document of Record Properties** > **Master Page Properties**. This custom title:
+> 
+> * Appears in the header of the generated PDF
+> * Appears as the Title in the PDF's document properties
+> * Appears as the Initial View Title when the PDF is opened
+
 ## Document of Record Support in Adaptive Form Editor {#dor-support-in-adaptiveform}
 
 You can configure the [!UICONTROL Document of Record] template directly from the Adaptive Form editor or Adaptive Form template editor. 

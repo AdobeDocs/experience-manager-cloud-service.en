@@ -4,6 +4,9 @@ description: Learn important considerations when deciding on how you author your
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a75e7051-e5ec-4d2a-848a-a66989e2f30b
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 # Choosing an Authoring Method {#authoring-methods}
 

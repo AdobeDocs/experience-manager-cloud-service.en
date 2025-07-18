@@ -8,6 +8,8 @@ role: Admin, Developer
 ---
 # Grant Access to the Front-End Developer {#grant-fed-access}
 
+{{traditional-aem}}
+
 Onboard the front-end developers into Cloud Manager so they have access to your AEM site git repository and pipeline.
 
 ## The Story So Far {#story-so-far}

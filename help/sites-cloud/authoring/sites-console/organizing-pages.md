@@ -11,8 +11,6 @@ role: User
 
 Learn how to organize your website with AEM. Once you understand how you need to organize your pages, you can [create new pages](/help/sites-cloud/authoring/sites-console/creating-pages.md) and [manage exiting pages](/help/sites-cloud/authoring/sites-console/managing-pages.md).
 
-{{edge-delivery-authoring}}
-
 ## Organizing your Site {#organizing-your-site}
 
 As an author, you need to organize your site within AEM. This involves creating and naming your content pages so that:

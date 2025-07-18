@@ -8,6 +8,8 @@ role: Admin, Developer
 ---
 # Deploy Your Customized Theme {#deploy-your-customized-theme}
 
+{{traditional-aem}}
+
 Learn how to deploy the site theme using the pipeline.
 
 ## The Story So Far {#story-so-far}

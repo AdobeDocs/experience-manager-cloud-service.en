@@ -139,7 +139,7 @@ To populate the migration set you created in the Cloud Acceleration Manager, ins
       >If you intend to include versions as part of a migration set, and are performing top-ups with `wipe=false`, then you must disable version purging due to a current limitation in the Content Transfer Tool. If you prefer to keep version purge enabled and are performing top-ups into a migration set, then you must perform the ingestion as `wipe=true`.
 
       >[!NOTE]
-      >Starting from CTT Version (3.0.24), new features have been included to the Content Transfer Tool, enhancing the process of including and excluding paths. Previously, paths had to be selected one by one, which was tedious and time-consuming. Now, users can include paths directly from the UI or upload a CSV file according to their preference.
+      >Starting from CTT Version (3.0.24), new features have been included to the Content Transfer Tool, enhancing the process of including and excluding paths. Previously, paths had to be selected one by one, which was tedious and time-consuming. Now, users can include paths directly from the UI or upload a CSV file according to their preference.  The CSV file must have one path per line, and no commas.
 
    1. **Paths to be included**: Use path browser to select paths which need to be migrated. Path picker accepts input by typing or by selection. Users can select only one option for including paths: either from the UI or by uploading a CSV file.
       >[!IMPORTANT]

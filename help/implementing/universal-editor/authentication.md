@@ -25,3 +25,7 @@ To use the Universal Editor, the user must be logged into the Unified Shell whic
 Whenever a user performs a CRUD operation, a call is sent to the Universal Editor service with the IMS bearer token in the HTTP header. The Universal Editor service then uses the bearer token to authenticate the request against the AEM backend system to execute operations in the user's name.
 
 ![Standard authentication flow](assets/standard-flow.png)
+
+This diagram and article describe the internal authentication of the Universal Editor itself.
+
+{{ue-headless-auth}}

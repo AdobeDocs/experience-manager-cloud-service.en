@@ -1,13 +1,14 @@
 ---
-title: Editor Limitations
-description: The editor in the touch-enabled UI makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers.
+title: Page Editor Limitations
+description: The Page Editor makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 feature: Developing
 role: Admin, Architect, Developer
 ---
-# Editor Limitations {#editor-limitations}
 
-The editor in the touch-enabled UI makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers. This page summarizes these limitations and provides solutions or work-arounds where possible.
+# Page Editor Limitations {#editor-limitations}
+
+[The Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md) makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers. This page summarizes these limitations and provides solutions or work-arounds where possible.
 
 ## Functional Limitations {#functional-limitations}
 
@@ -21,7 +22,7 @@ When [editing a page](/help/sites-cloud/authoring/page-editor/edit-content.md), 
 
 ### Structure Pages {#structure-pages}
 
-Pagescannot be named `structure`. Pages that are named `structure` will not be editable in the page editor.
+Pages cannot be named `structure`. Pages that are named `structure` will not be editable in the page editor.
 
 ## CSS Limitations {#css-limitations}
 

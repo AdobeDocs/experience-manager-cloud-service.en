@@ -15,8 +15,6 @@ This document is designed to give an overview of basic handling when using the A
 >
 >Keyboard shortcuts are available throughout AEM. In particular when [using the sites console](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) and [the page editor](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
 
-{{edge-delivery-authoring}}
-
 ## A Touch-Enabled UI {#a-touch-enabled-ui}
 
 AEM's user interface is enabled for touch. A touch-enabled interface lets you use touch to interact with the software through gestures such as tap, tap-and-hold, and swipe. Because the AEM UI is touch-enabled, you can use the touch gestures on your touch devices such as your mobile phone or tablet. However mouse actions on a traditional desktop device are also available, giving you flexibility in how you choose to author your content.

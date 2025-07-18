@@ -20,8 +20,13 @@ A user with the requisite permissions can create the following environment types
 | **Production + Stage** | The production and staging environments are available as a pair and are used for production and testing purposes, respectively. Conduct performance and security tests on stage environment. It has the same sizing as production. |
 | **Development** | A development environment can be created for development and testing purposes and can be associated with non-production pipelines only. Development environments do not have the same sizing as stage and production, and should not be used to conduct performance and security tests. |
 | **Rapid Development** | A Rapid Development Environment (RDE) lets developers quickly deploy and review changes. This ability reduces the time needed to test features that have already been validated in a local development environment. See [the rapid development environment documentation](/help/implementing/developing/introduction/rapid-development-environments.md) for details about how to use an RDE. |
+| **Specialized Testing Environment** | Specialized Testing Environments provide a dedicated space to validate features under near-production conditions, ideal for stress testing and advanced pre-deployment checks. See [Add a Specialized Testing Environment](/help/implementing/cloud-manager/specialized-test-environment.md) |
 
-The capabilities of individual environments depend on the solutions that were enabled in the [program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) of the environment.
+>[!NOTE]
+>
+>The **Specialized Testing Environment** feature is currently available only through the private beta program. To sign up for the private beta, see [Specialized Testing Environment](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+
+The capabilities of individual environments depend on the solutions that are enabled in the [program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) of the environment.
 
 * [Sites](/help/overview/introduction.md)
 * [Assets](/help/assets/overview.md)
@@ -99,7 +104,7 @@ If you want to provision [advanced networking](/help/security/configuring-advanc
 
 ### Edit multiple publish regions {#edit-regions}
 
-If you did not specify any additional regions initially, you can do so after the environments are created if you have the necessary entitlements.
+If you did not specify any additional regions initially, you can do so after the environment is created and you have the necessary entitlements.
 
 You can also remove additional publish regions. However, you can only add or only remove regions in one transaction. If you must add one region and remove one region, first add, save your change, and then remove (or conversely).
 
@@ -119,26 +124,29 @@ Changes made to the production environment apply to both production and staging 
 
 If you want to provision [advanced networking](/help/security/configuring-advanced-networking.md) for the program, it is recommended that this provisioning is done before adding additional publish regions to the environments. Otherwise, the additional publish regions' traffic goes through the primary region's proxy.
 
-## Access Environment details {#viewing-environment}
+## View details of an environment {#viewing-environment}
 
+1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
-1. To access Environment details, do one of the following:
+1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click the program for which you want to view details of an environment.
 
-   * From the **Overview** page, in the left side menu, click ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments**.
+1. List all environments for the program by doing one of the following:
 
-   ![Environments tab](assets/environments-tab2.png)
+   * From the left side menu, under **Services**, click ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments**.
 
-   * From the **Environments** card, click ![Workflow icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Show All**.
+   ![Environments tab](assets/environments-1.png)
 
-     ![Show all option](assets/environment-showall.png)
+   * From the left side menu, under **Program**, click **Overview**, then from the **Environments** card, click ![Workflow icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Show All**.
 
-   The **Environments** page opens and lists all environments for the program.
+     ![Show all option](assets/environments-2.png)
 
-   ![The environments tab](assets/environments-tab2.png)
+   >[!NOTE]
+   >
+   >The **Environments** card lists three environments only. Click **Show All** in the card to see *all* environments of the program.
 
 1. On the Environments page, do one of the following:
 
-   * Click an environment in the list to reveal its details.
+   * Click an environment in the list to view its details.
 
    ![Environment details](assets/environ-preview1.png)
 
@@ -146,9 +154,15 @@ If you want to provision [advanced networking](/help/security/configuring-advanc
 
    ![View environment details](assets/view-environment-details.png)
 
->[!NOTE]
->
->The **Environments** card only lists three environments. Click **Show All** in the card to see all environments of the program.
+
+## Restore content of an environment {#restore-environment}
+
+See [Restore Content in AEM as a Cloud Service](/help/operations/restore.md).
+
+## Restore previous code deployed {#restore-previous-code-deployed}
+
+See [Restore previous code deployed in AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
+
 
 ### Access the preview service {#access-preview-service}
 
@@ -292,7 +306,7 @@ See [Hibernating and De-hibernating Sandbox Environments](https://experienceleag
 
 This option is also available from the **Environment** tab of the **Overview** window when clicking ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) of an individual environment.
 
-## Login locally {#login-locally}
+## Log in locally {#login-locally}
 
 1. Do one of the following: 
 

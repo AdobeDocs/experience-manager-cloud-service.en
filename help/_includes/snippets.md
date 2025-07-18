@@ -104,9 +104,9 @@ The following table demonstrates the difference between the features available i
    </td>
    </tr>
    <tr>
-    <td>ES10 Support </td>
-    <td>ES10 is not supported yet. It only supports ES5 JavaScript features. </td>
-    <td>Support for modern JavaScript features such as let and arrow functions (ES10 support) within custom functions. 
+    <td>ES2022 Support </td>
+    <td>ES2022 is not supported yet; support is limited to ES5 JavaScript features. </td>
+    <td>Support for modern JavaScript features, for example, let and arrow functions, up to ES2022, is available within custom functions. 
    </td>
    </tr>
    </tr>
@@ -252,3 +252,33 @@ To log a support ticket, you must first register your Edge Delivery site in Clou
 * [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
 * [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
 * [Using Form Submission Service](/help/forms/forms-submission-service.md)
+
+## Universal Editor Headless Authentication {#ue-headless-auth}
+
+>[!NOTE]
+>
+>If you are using the Universal Editor in a headless use case, your headless app must manage its own authentication.
+
+## PWA Deprecation {#pwa-deprecation}
+
+>[!IMPORTANT]
+>
+>The progressive web app (PWA) features for AEM Sites [has been deprecated](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
+>
+>Existing projects using this feature will continue to be supported, but new projects should not use this feature.
+
+## Traditional AEM {#traditional-aem}
+
+>[!TIP]
+>
+>**Have you considered Edge Delivery Services for AEM?**
+>
+>You can continue using the methods described in this document for existing projects. However for new projects, Adobe recommends leveraging [Edge Delivery Services.](/help/edge/overview.md)
+
+## Adobe-Provided Site Templates {#adobe-templates}
+
+To accelerate site creation, Adobe provides a number of templates suited to different purposes.
+
+* [AEM Site with Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) - For authoring AEM pages with the Universal Editor and delivering through [edge delivery](/help/edge/overview.md)
+* [Edge Delivery Services with AEM Authoring for Commerce](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases) - For authoring AEM pages with the Universal Editor for commerce projects and delivery through [edge delivery](/help/edge/overview.md)
+* [Standard AEM Site Template](https://github.com/adobe/aem-site-template-standard/releases) - For authoring traditional AEM pages and delivering through [publish delivery](/help/sites-cloud/authoring/author-publish.md)

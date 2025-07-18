@@ -8,13 +8,11 @@ solution: Experience Manager Sites
 ---
 # An overview of working with Content Fragments {#overview-working-with-content-fragments}
 
+With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate, and publish page-independent content. They allow you to prepare content ready for use in multiple locations, and over multiple channels, ideal for [headless delivery](/help/headless/what-is-headless.md), and [page authoring](/help/sites-cloud/authoring/fragments/content-fragments.md).
+
 >[!IMPORTANT]
 >
->Various features of the Content Fragments and Content Fragment Models are available through the Early Adopter Program.
->
->To see the status, and how to apply if you are interested, check the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md).
-
-With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate, and publish page-independent content. They allow you to prepare content ready for use in multiple locations, and over multiple channels, ideal for [headless delivery](/help/headless/what-is-headless.md), and [page authoring](/help/sites-cloud/authoring/fragments/content-fragments.md).
+>Many features described in this section are *only* available in the [Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md); so *online* Adobe Experience Manager (AEM) as a Cloud Service, not a local instance.
 
 >[!IMPORTANT]
 >
@@ -97,7 +95,8 @@ After the fragments have been created, you can:
   * edit, publish (to preview or production), and reference your fragments
   * collaborate with other authors using Comments
 * [Analyze](/help/sites-cloud/administering/content-fragments/analysis.md)  the structure of your Content Fragment, using the editor
-* [Access your fragments with GraphQL, for headless delivery to your applications](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md). 
+* [Access your fragments with GraphQL, for headless delivery to your applications](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+* [Integrate and use your Content Fragments in Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md) 
 * [Or use your fragments for page authoring](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]

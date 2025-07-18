@@ -9,14 +9,15 @@ role: Admin, Architect, Developer
 
 # Experience Audit dashboard {#experience-audit-dashboard}
 
-Discover how Experience Audit validates your deployment process, ensuring that changes meet baseline standards for performance, accessibility, best practices, and SEO. It provides a clear and informative dashboard interface to track these metrics.
+<!-- Engineer architect over this feature was Bogdan Anton; scrum master Alexandru Nica -->
+
+Discover how Experience Audit validates your deployment process, ensuring that changes meet baseline standards for performance, accessibility, best practices, and SEO (Search Engine Optimization). It provides a clear and informative dashboard interface to track these metrics.
 
 ## Overview {#overview}
 
 Experience Audit validates the deployment process and helps ensure that the changes are deployed:
 
-1. Meet baseline standards for performance, accessibility, best practices, and SEO (Search Engine Optimization).
-
+1. Meet baseline standards for performance, accessibility, best practices, and SEO.
 1. Do not introduce regressions.
 
 Experience Audit in Cloud Manager ensures that the user's experience on the site are of the highest standards.
@@ -29,9 +30,9 @@ Experience Audit is powered by [Google Lighthouse](https://developer.chrome.com/
 
 Experience Audit is available for Cloud Manager:
 
-* (Default) Sites production pipelines
-* (Optional) Development of full-stack pipelines
-* (Optional) Development of front-end pipelines
+* (Default) Sites production pipelines.
+* (Optional) Development of full-stack pipelines.
+* (Optional) Development of front-end pipelines.
 
 See the [Configuration section](#configuration) for more information on how to configure the audit for the optional environments.
 
@@ -43,9 +44,9 @@ Experience Audit is available by default for production pipelines. It can be opt
 
 1. Depending on the type of pipeline you want to configure, do one of the following:
 
-   * Add a new [production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) to define the paths you want the audit to evaluate.
-   * Add a new [non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md), if you want to enable the audit on a front-end or development full-stack pipeline.
-   * Or, you can [edit an existing pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), and update the existing options.
+   * [Add a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) to define the paths you want the audit to evaluate.
+   * [Add a non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md), if you want to enable the audit on a front-end or development full-stack pipeline.
+   * [Edit an existing pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), and update the existing options.
 
 1. To use Experience Audit when adding or editing a non-production pipeline, select the **Experience Audit** checkbox. You can find this option on the **Source Code** tab.
 
@@ -74,7 +75,7 @@ Experience Audit is available by default for production pipelines. It can be opt
 
 ## Experience Audit results {#results}
 
-The results of the Experience Audit are presented in the **Stage testing** phase of the production pipeline via the [production pipeline execution page](/help/implementing/cloud-manager/deploy-code.md).
+The results of the Experience Audit are presented in the **Stage testing** phase of the production pipeline through the [production pipeline execution page](/help/implementing/cloud-manager/deploy-code.md).
 
 ![Dashboard in the pipeline](assets/experience-audit-dashboard.png)
 
@@ -142,7 +143,7 @@ When moving the mouse over the chart, a tooltip displays the values for the Goog
 
 ![Trend details](assets/experience-audit-trend-details.png)
 
-If you click on the chart at a point in time, a popover opens with detail of that scan. Click the **open experience audit scan** to load that scan results into the **[Experience Audit scan results](#scan-results)** section.
+If you click on the chart at a point in time, a pop-up opens with detail of that scan. Click the **open experience audit scan** to load that scan results into the **[Experience Audit scan results](#scan-results)** section.
 
 ![Select different scan](assets/experience-audit-open-scan.png)
 

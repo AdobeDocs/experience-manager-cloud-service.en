@@ -13,11 +13,15 @@ AEM offers a Sites preview service lets developers and content authors preview a
 
 It facilitates previewing page experiences that would not be otherwise visible from the author environment, like page transitions and other publish side only content. 
 
+>[!IMPORTANT]
+>
+>Access to the Preview environment requires configuration of an IP allowlist. For details see [Access the preview service](/help/implementing/cloud-manager/manage-environments.md#access-preview-service#access-preview-service).
+>
+>For further details about all environments, see [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+
 >[!NOTE]
 >
->As the content is *published* to the preview environment it is accessible by URL (so does not need access to AEM).
-
-For more details about the preview environments, see [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+>As the content is *published* to the preview environment it is accessible by URL.
 
 ## Publishing Content to Preview {#publishing-content-to-preview}
 
@@ -42,7 +46,7 @@ Alternatively to using the URLs displayed in the wizard to see the preview conte
 https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.html
 ```
 
-See the document [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) for more information on how retrieve the URLs for your environments.
+See [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) for more information on how retrieve the URLs for your environments.
 
 Content may also be published to preview by using a [publish content tree workflow](/help/operations/replication.md#publish-content-tree-workflow) with the `agentId` parameter set to `preview` or by using the [replication API](/help/operations/replication.md#replication-api) with an `AgentFilter` configured for preview.
 

@@ -1,18 +1,21 @@
 ---
 title: Enabling the Front-End Pipeline
-description: Learn how you can enable the front-end pipeline for existing sites to use site themes to customize your site more quickly.
+description: Learn how you can enable the front-end pipeline for existing traditional AEM authoring sites with publish delivery to use site themes to customize your site more quickly.
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
 ---
+
 # Enabling the Front-End Pipeline {#enable-front-end-pipeline}
 
-Learn how you can enable the front-end pipeline for existing sites to use site themes to customize your site more quickly.
+{{traditional-aem}}
+
+Learn how you can enable the front-end pipeline for existing traditional AEM authoring sites with publish delivery to use site themes to customize your site more quickly.
 
 ## Overview {#overview}
 
-The front-end pipeline is a mechanism that can quickly deploy just the front-end code of your websites based on [site themes](site-themes.md) and [site templates](site-templates.md).
+The front-end pipeline is a mechanism for traditional AEM authoring projects with [publish delivery](/help/sites-cloud/authoring/author-publish.md) that can quickly deploy just the front-end code of your websites based on [site themes](site-themes.md) and [site templates.](site-templates.md)
 
 This pipeline handles only front-end code, making the deployment process faster than full-stack deployments. It allows front-end developers to customize your site easily without needing knowledge of AEM.
 

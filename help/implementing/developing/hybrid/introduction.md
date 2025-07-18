@@ -4,7 +4,9 @@ description: This article introduces the concepts of a SPA and walks through usi
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
 role: Admin, Architect, Developer
+index: no
 ---
+
 # SPA Introduction and Walkthrough {#spa-introduction}
 
 Single page applications (SPAs) can offer compelling experiences for website users. Developers want to be able to build sites using SPA frameworks and authors want to seamlessly edit content within AEM for a site built using such frameworks.

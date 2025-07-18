@@ -18,6 +18,12 @@ Each of these, including the configuration syntax, is described in its own secti
 
 There is a section on how to [rotate keys](#rotating-secrets), which is a good security practice.
 
+>[!NOTE]
+> Secrets defined as environment variables should be considered immutable. Instead of changing their value, you should create a new secret with a new name and reference that secret in the configuration. Failing to do so will result in the unreliable update of secrets.
+
+>[!WARNING]
+>Do not remove the environment variables that are referenced in your CDN configuration. Doing that might cause failures in updating your CDN configuration (for example, updating rules or custom domains and certificates).
+
 ## Customer-managed CDN HTTP header value {#CDN-HTTP-value}
 
 As described in the [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) page, customers may choose to route traffic through their own CDN, which is referred to as the Customer CDN (also sometimes called BYOCDN).
@@ -107,6 +113,29 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-H
 ```
 
 After successfully testing, the additional condition can be removed and the configuration redeployed.
+
+### Migration process if Adobe Support previously generated the `X-AEM-Edge-Key` HTTP Header value {#migrating-legacy}
+
+>[!NOTE]
+>Before proceeding with the migration, schedule a test migration on the stage environment to verify the strategy.
+
+>[!WARNING]
+> Do not change the key in the customer-managed CDN until step 4.
+
+Previously, the process for integrating with a customer-managed CDN involved customers requesting an X-AEM-Edge-Key HTTP Header value from Adobe Support, rather than defining the value on their own. In order to migrate to the newer self-serve approach where you define your own edge key values, follow these steps to ensure a smooth transition without downtime:
+
+1. Configure the CDN configuration with both the new (customer-generated) and old (Adobe-generated) secrets specified as `edgeKey1` and `edgeKey2`. This is a variation of the [rotating secrets](/help/implementing/dispatcher/cdn-credentials-authentication.md#rotating-secrets) documentation.
+
+2. Deploy the secrets and the self-serve CDN configuration. At this point in the process, the old Adobe-defined secret should still remain as the X-AEM-Edge-Key value passed by the customer-managed CDN.
+
+3. Contact Adobe Support, requesting that Adobe switches over to use the self-serve configuration, specifying that you have already deployed it.
+
+4. Once Adobe confirms that it has performed that action, configure your customer-managed CDN to use the new, customer-defined key for the `X-AEM-Edge-Key` HTTP Header value.
+
+5. Remove the old key from the CDN configuration and deploy the configuration pipeline again.
+
+>[!WARNING]
+>If you don't have the fallback with both keys configured simultaneously, it might lead to downtime during the migration.
 
 ## Purge API Token {#purge-API-token}
 
@@ -214,7 +243,9 @@ In addition, the syntax includes:
 
 ## Rotating secrets {#rotating-secrets}
 
-1. It is good security practice to occasionally change credentials. This can be accomplished as exemplified below, using the example of an edge key, although the same strategy is used for purge keys.
+It is a good security practice to change credentials regularly. Remember that environment variables should not be changed directly, but instead create a new secret and reference the new name in the configuration.
+
+This use case is exemplified below, by using the example of an edge key, although the same strategy can also used for purge keys.
 
 1. Initially just `edgeKey1` has been defined, in this case referenced as `${{CDN_EDGEKEY_052824}}`, which as a recommended convention, reflects the date it was created.
 
@@ -236,7 +267,7 @@ In addition, the syntax includes:
           edgeKey2: ${{CDN_EDGEKEY_041425}}
     ```
 
-1. Once you are sure the old edge key is not used anymore, remove it by removing `edgeKey1` from the configuration.    
+1. Once you are sure the old edge key is not used anymore, remove it by removing `edgeKey1` from the configuration.
     ```
     authentication:
       authenticators:
@@ -257,3 +288,47 @@ In addition, the syntax includes:
           edgeKey1: ${{CDN_EDGEKEY_031426}}
 
     ```
+
+When rotating secrets that are set in request headers, for example for authenticating against a backend, it is recommended to do the rotation in two steps in order to guarantee the header value is switched without temporary gaps.
+
+1. Initial configuration before the rotation. In this state the old key is sent to backend.
+
+    ```
+    requestTransformations:
+      rules:
+        - name: set-api-key-header
+          actions:
+            - type: set
+              reqHeader: x-api-key
+              value ${{API_KEY_1}}
+    ```
+
+1. Introduce the new key `API_KEY_2` by setting the same header twice (the new key should be set after the old key). After deploying this you will see the new key in the backend.
+
+    ```
+    requestTransformations:
+      rules:
+        - name: set-api-key-header
+          actions:
+            - type: set
+              reqHeader: x-api-key
+              value ${{API_KEY_1}}
+            - type: set
+              reqHeader: x-api-key
+              value ${{API_KEY_2}}
+    ```
+
+1. Remove the old key `API_KEY_1` from the configuration. After deploying this you will see the new key in the backend and it is safe to remove the old key's environment variable.
+
+
+    ```
+    requestTransformations:
+      rules:
+        - name: set-api-key-header
+          actions:
+            - type: set
+              reqHeader: x-api-key
+              value ${{API_KEY_2}}
+    ```
+
+    

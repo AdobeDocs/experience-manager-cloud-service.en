@@ -1,5 +1,5 @@
 ---
-title: Apply and Unpply IP Allow Lists 
+title: Apply and Unapply IP Allow Lists 
 description: Learn how to apply and unapply IP Allow Lists to Cloud Manager environments.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager

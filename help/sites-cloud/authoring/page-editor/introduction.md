@@ -18,6 +18,8 @@ Once your page is created in the [**Sites** console](/help/sites-cloud/authoring
 >
 >Your account needs the appropriate access rights and permissions to edit pages. Contact your system administrator if you do not have permissions.
 
+{{traditional-aem}}
+
 ## Orientation {#orientation}
 
 The AEM page editor is composed primarily of three sections:

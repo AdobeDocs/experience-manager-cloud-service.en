@@ -8,49 +8,20 @@ exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 ---
 # Configure Experience Manager Assets with Brand Portal {#configure-aem-assets-with-brand-portal}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
-        </td>
-    </tr>
-</table>
-
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=en)                  |
+| AEM 6.5  | [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=en)   |
 | AEM as a Cloud Service     | This article         |
 
 Configuring Adobe Experience Manager Assets Brand Portal lets you publish approved brand assets from Adobe Experience Manager Assets as a [!DNL Cloud Service] instance to Brand Portal and distribute them to the Brand Portal users.
+
+>[!IMPORTANT]
+>
+> * Brand Portal is in maintenance mode. All new product innovations are available on [Content Hub](/help/assets/product-overview.md).
+> * If you still need to activate Brand Portal, contact your Adobe representative with details of your use case and other specific requirements.
+> * Brand Portal is not available with [Assets Prime](/help/assets/assets-prime.md) or [Assets Ultimate](/help/assets/assets-ultimate-overview.md). However, existing Assets as a Cloud Service customers, who already have access to Brand Portal can continue to use it when they transition to Assets Ultimate.
+
+<!--
 
 ## Activate Brand Portal using Cloud Manager {#activate-brand-portal}
 
@@ -217,6 +188,7 @@ Along with the automation workflow to activate Brand Portal on Experience Manage
 >[!NOTE]
 >
 >Contact Customer Support if you are facing any problem while activating your Brand Portal tenant.
+-->
 
 ## Manual configuration using Adobe Developer Console {#manual-configuration}
 

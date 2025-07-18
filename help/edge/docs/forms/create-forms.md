@@ -1,6 +1,6 @@
 ---
-title: Getting Started with Edge Delivery Services for AEM Forms. Create a form.
-description: Craft perfect forms, fast! ⚡ AEM Forms Edge Delivery doc-based authoring = blazing speed & SEO-friendly forms for happier users & search engines.
+title: Create a Form Using Adaptive Forms Block
+description: Get started with Edge Delivery Services for AEM Forms. Craft perfect forms, fast! AEM Forms Edge Delivery doc-based authoring = blazing speed & SEO-friendly forms for happier users & search engines.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
@@ -75,6 +75,10 @@ To proceed with form creation:
 1. Open the created spreadsheet and rename the default sheet to "shared-aem". 
 
     ![rename default sheet to "shared-default"](/help/edge/assets/rename-sheet-to-shared-default.png)
+
+    >[!IMPORTANT]
+    >
+    >**The sheet where the form is authored has restrictions on what it can be named. Only `helix-default` and `shared-aem` can be used as sheet names.**
 
 1. To add the form fields, insert rows and column headers into the 'shared-aem' sheet. Each row should represent a [form field](/help/edge/docs/forms/form-components.md#available-components), with column headers defining the corresponding field [properties](/help/edge/docs/forms/form-components.md#components-properties).
 

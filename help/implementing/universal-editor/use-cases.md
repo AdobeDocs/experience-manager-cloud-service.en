@@ -50,6 +50,8 @@ If this is your use case, as an immediate next step, please see the following do
 
 Once you have read that document, you can return to this page to learn about the WYSIWYG authoring use case and how the Universal Editor works in general.
 
+{{ue-headless-auth}}
+
 ## How the Universal Editor Works {#how-ue-works}
 
 The power of the Universal Editor is its ability to author any content in-place, providing the content author an entirely intuitive and unified UI no matter what the content.

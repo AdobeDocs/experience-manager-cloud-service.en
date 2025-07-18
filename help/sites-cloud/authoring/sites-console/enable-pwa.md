@@ -5,6 +5,8 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+index: no
+
 ---
 # Enabling Progressive Web App Features {#enabling-pwa}
 
@@ -21,11 +23,7 @@ Through a simple configuration, a content author can now enable progressive web 
 >
 >Before using this feature, Adobe recommends that you discuss this with your development team to define the best way to use it for your project.
 
->[!IMPORTANT]
->
->The progressive web app (PWA) features for AEM Sites [has been deprecated](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
->
->Existing projects using this feature will continue to be supported, but new projects should not use this feature.
+{{pwa-deprecation}}
 
 ## Introduction {#introduction}
 

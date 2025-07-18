@@ -18,12 +18,11 @@ Content fragments in Adobe Experience Manager (AEM) as a Cloud Service are [crea
 >
 >Content Fragments are a **Sites** feature, but are stored as **Assets**. 
 >
->They are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** console, though they can still be managed from the **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** console.
+>They are primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** console, though they can still be managed from the **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** console.
 >
->There are two editors for authoring Content Fragments:
+>The default editor for [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md) is the new editor; accessed from both the **Content Fragments** console and the **Assets** console. 
 >
->* The new editor for [Content Fragments - Authoring](/help/sites-cloud/administering/content-fragments/authoring.md), is primarily accessed from the **Content Fragments** console.
->* The [original editor](/help/assets/content-fragments/content-fragments-variations.md) is primarily accessed from the **Assets** console. 
+>To use the [original editor](/help/assets/content-fragments/content-fragments-variations.md), first open the new editor and then deactivate the **New Editor** switch. 
 
 >[!NOTE]
 >

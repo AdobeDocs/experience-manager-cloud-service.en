@@ -24,7 +24,7 @@ The components are available on the **Components** tab of the side panel of the 
 
 You can select a component and drag it to the required location on your page. You can then edit it using:
 
-* [Configure Properties](/help/sites-cloud/authoring/sites-console/page-properties.md)
+* [Configure Properties](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
 * [Edit Content](/help/sites-cloud/authoring/page-editor/edit-content.md)
 * [Edit Content - Full Screen Mode](/help/sites-cloud/authoring/page-editor/edit-content.md#edit-content-full-screen-mode)
 

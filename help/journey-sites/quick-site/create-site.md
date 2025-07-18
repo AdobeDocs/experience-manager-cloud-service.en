@@ -8,6 +8,8 @@ role: Admin, Developer
 ---
 # Create Site from Template {#create-site-from-template}
 
+{{traditional-aem}}
+
 Learn how to quickly create an AEM site using a site template.
 
 ## The Story So Far {#story-so-far}

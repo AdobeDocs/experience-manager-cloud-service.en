@@ -118,7 +118,7 @@ Once licensed, these advanced WAF rules can be deployed to the CDN using the Clo
  
 Read about [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), including WAF. Speak to your AEM account team about licensing WAF-DDoS Protection or Enhanced Security.
 
-### CDN Configuration Early Adopter Program {#cdn-config-early-adopter}
+### Domain Mapping Early Adopter Program {#cdn-config-early-adopter}
 
 In addition to the recently released [Traffic Filter Rules (including WAF)](/help/security/traffic-filter-rules-including-waf.md), there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. We'd love to hear about your use cases, including:
 * 301/302 client-side redirects

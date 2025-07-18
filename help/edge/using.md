@@ -4,6 +4,9 @@ description: Learn how AEM as a Cloud Service can be used with Edge Delivery Ser
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 role: Admin, Architect, Developer
+index: no
+hide: yes
+hidefromtoc: yes
 ---
 
 # Using Edge Delivery Services with AEM {#using-edge}

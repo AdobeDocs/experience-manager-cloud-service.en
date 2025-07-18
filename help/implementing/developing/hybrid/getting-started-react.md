@@ -4,7 +4,9 @@ description: This article presents a sample SPA application, explains how it is 
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 feature: Developing
 role: Admin, Architect, Developer
+index: no
 ---
+
 # Getting Started with SPAs in AEM Using React {#getting-started-with-spas-in-aem-using-react}
 
 Single page applications (SPAs) can offer compelling experiences for website users. Developers want to be able to build sites using SPA frameworks and authors want to seamlessly edit content within AEM for a site built using SPA frameworks.

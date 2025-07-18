@@ -28,7 +28,7 @@ To connect **[!DNL AEM Forms]** with **[!DNL Adobe Acrobat Sign]**, set up the s
 
 You require the following setup to integrate [!DNL Adobe Acrobat Sign] with [!DNL AEM Forms]:
 
-1. An active [Adobe Acrobat Sign developer account](https://acrobat.adobe.com/us/en/sign/developer-form.html). 
+1. An active [Adobe Acrobat Sign developer account.](https://www.adobe.com/acrobat/business/developer-form.html) 
 1. An [Adobe Acrobat Sign API application](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 1. Credentials (Client ID and Client Secret) of [!DNL Adobe Acrobat Sign] API application.
 1. (Only for Government ID-based authentication) [Enable the authentication method](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html#AuditReport) for Government ID authentication.

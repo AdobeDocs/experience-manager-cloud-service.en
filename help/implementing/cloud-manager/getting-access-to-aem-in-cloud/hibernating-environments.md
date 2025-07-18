@@ -38,7 +38,7 @@ You can manually hibernate your sandbox program from the Developer Console. Acce
 
 1. On the **Developer Console** page, click **Hibernate**.
 
-<!-- UPDATE THESE SCREENSHOTS WHEN NEW AEM DEVELOPER CONSOLE UI IS RELEASED. AS OF OCTOBER 14, 2024, NEW UI IS STILL IN BETA -->
+<!-- UPDATE THESE SCREENSHOTS WHEN NEW AEM DEVELOPER CONSOLE UI IS RELEASED. AS OF OCTOBER 14, 2024, NEW UI IS STILL IN PRIVATE BETA -->
 
    ![Hibernate button](assets/hibernate-1.png)
 

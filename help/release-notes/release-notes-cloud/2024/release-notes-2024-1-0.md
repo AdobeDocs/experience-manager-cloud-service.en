@@ -89,10 +89,10 @@ Assets Essentials now enables you to define blocklist that comprises words that 
 
      You can write to `aem-forms-early-adopter-program@adobe.com` from your official email id to join the early adopter program and request access to the capability.
 
-* **[You can leverage the Real Use Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** to enable client-side collection for AEM as a Cloud Service.
-Real Use Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. While this is beneficial for customers who use either Adobe-managed CDN or non-Adobe-managed CDN. Additionally, for customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
+* **[You can leverage the Operational Telemetry Service](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** to enable client-side collection for AEM as a Cloud Service.
+Operational Telemetry Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. While this is beneficial for customers who use either Adobe-managed CDN or non-Adobe-managed CDN. Additionally, for customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
 
-   If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com`, along with your domain name for each of the environments that you would like to enable RUM for from your email address associated with your Adobe ID. Adobe's product team will then enable the Real Use Monitoring (RUM) Data Service for you.
+   If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com`, along with your domain name for each of the environments that you would like to enable Operational Telemetry for from your email address associated with your Adobe ID. Adobe's product team will then enable the Operational Telemetry Service for you.
      
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -104,7 +104,7 @@ Dynatrace customers may monitor their AEM usage. [Read how](/help/implementing/c
 
 [Rapid Development Environments (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) now support front-end code based on [site themes](/help/sites-cloud/administering/site-creation/site-themes.md) and [site templates](/help/sites-cloud/administering/site-creation/site-templates.md), for early adopters. With RDEs, this is done using a command line directive, rather than a [front-end pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Please reach out to **aemcs-rde-support@adobe.com** to try it out and provide feedback.
 
-### CDN Configuration Early Adopter Program {#cdn-config-early-adopter}
+### Domain Mapping Early Adopter Program {#cdn-config-early-adopter}
 
 In addition to the recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which includes the optionally licensable Web Application Firewall (WAF) rules, there's an opportunity to use the Configuration Pipeline to declare and deploy [other types of CDN configuration](/help/implementing/dispatcher/cdn-configuring-traffic.md). Join the early adopter program by emailing **aemcs-cdn-config-adopter@adobe.com** to gain access to:
 * 301/302 client-side redirects

@@ -155,7 +155,7 @@ Perform the following steps to create a custom Submit Action that saves the data
 
    `String mailTo = properties.get("mailTo");`
 
-   Finally, use the CQ Mail API to send the email. Use the [SimpleEmail](https://commons.apache.org/proper/commons-email/apidocs/org/apache/commons/mail/SimpleEmail.html) class to create the Email Object as depicted below:
+   Finally, use the CQ Mail API to send the email. Use the [SimpleEmail](https://commons.apache.org/proper/commons-email/commons-email2-javax/apidocs/org/apache/commons/mail2/javax/SimpleEmail.html) class to create the Email Object as depicted below:
 
    >[!NOTE]
    >

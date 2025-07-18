@@ -4,10 +4,13 @@ description: Immerse yourself in SPA development with this multi-part tutorial l
 exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
 feature: Developing
 role: Admin, Architect, Developer
+index: no
 ---
+
 # WKND SPA Project {#wknd-spa-project}
 
 {{ue-over-spa}}
+{{traditional-aem}}
 
 Immerse yourself in SPA development with this multi-part tutorial leading you through project setup, component mapping, front-end development tools, and application routing to implement your own SPA.
 

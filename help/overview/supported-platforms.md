@@ -29,7 +29,7 @@ Adobe defines the following levels of support for AEM's client platforms.
 
 The AEM user interface is optimized for larger screens found in notebooks, desktop computers, and tablet devices (such as Apple iPad or Microsoft Surface). The phone form factor is not supported for any authoring use case.
 
-The Adobe Experience Manager user interface works with the following client platforms depending on [authoring method.](/help/edge/authoring-methods.md)
+The Adobe Experience Manager user interface works with the following client platforms depending on [authoring method.](/help/edge/overview.md#authoring-method)
 
 * [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md)
@@ -44,10 +44,9 @@ All browsers are tested with the default set of plug-ins and add-ons.
 |Mozilla Firefox (evergreen)|A: Supported|A: Supported|Z: Unsupported|
 |Mozilla Firefox latest ESR [1]|A: Supported|A: Supported|Z: Unsupported|
 |Safari on macOS (evergreen)|A: Supported|A: Supported|Z: Unsupported|
-|Safari on iOS (evergreen) [2]|Z: Unsupported|A: Supported|Z: Unsupported|
+|Safari on iPadOS (evergreen)|Z: Unsupported|A: Supported|Z: Unsupported|
 
 1. Extended Support Release of Firefox ([learn more on mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/))
-1. Support for Apple iPad only
 
 >[!NOTE]
 >

@@ -51,7 +51,11 @@ Both models offer the following general features for managing your certificates:
 
 DV certificates are the most basic level of SSL certification and are often used for testing purposes or for securing websites with basic encryption. DV certificates are available in both [production programs and sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
-After the DV certificate is created, Adobe renews it automatically every three months, unless it is deleted. 
+After the DV certificate is created, Adobe renews it automatically every three months, unless it is deleted.
+
+>[!IMPORTANT]
+>
+>If your environment uses (DV) SSL certificates with a CNAME-based validation, be aware that removing the CNAME record prior to automatic certificate renewal can cause the renewal to fail. The removal can result in certificate expiration and service disruption. To avoid this issue, be sure that the CNAME record remains in place through the full renewal process. The renewal process relies on the presence of the CNAME record for domain ownership validation.
 
 ### Customer-managed (OV/EV) SSL certificates {#customer-managed}
 

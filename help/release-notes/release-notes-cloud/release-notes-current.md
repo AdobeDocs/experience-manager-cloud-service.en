@@ -22,7 +22,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.3.0) is March 27, 2025. The next feature release (2025.4.0) is planned for April 24, 2025.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.6.0) is June 26, 2025. The next feature release (2025.7.0) is planned for July 31, 2025.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -40,106 +40,171 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New features in Dynamic Media {#new-features-dynamic-media}
+**Enhanced Metadata Form management in Assets View**
 
-**Long form support for videos delivered using Dynamic Media with Open API**
+You can now import metadata forms from Admin view directly into Assets view. Any updates made to these forms in Assets view automatically reflect in Admin view, ensuring consistency across both experiences. This capability supports a seamless transition to the new Assets view while maintaining continuity with your existing metadata configurations.
 
-Dynamic Media with OpenAPI now supports long form videos. The long form videos can support up to 50GB and 2 hours.
+![AI generated metadata](/help/assets/assets/import-metadata-forms-page.png)
 
-### Dynamic Media Classic {#dmc} 
+### New Features in Content Hub {#new-features-content-hub}
 
-<!-- CARRY OVER TO APRIL 2025 RELEASE NOTES -->
+**Collections governance**
 
-The Bandwidth tab in the Dynamic Media Classic reporting dashboard is no longer supported as of April 2025. 
+Content Hub now lets you [control access to collections during creation, ensuring only authorized users can view or manage grouped assets](/help/assets/collections-content-hub.md##create-collections). It ensures improved security, better collaboration, organized asset management, and simplified governance.
 
-See [Bandwidth and Storage, Types of reports](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports). 
+>[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
-
-## New features in Assets view {#new-features-assets-view}
-
-
-**Support for root tags**
-
-AEM Assets now supports mapping a tag property in a metadata form to custom metadata. In addition, as an administrator, you can restrict the availability of tags to users by restricting access to a specific root tag and the tags that exist under the root tag.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
- 
-### Early Access features in AEM Forms {#forms-new-early-access-features}
+
+* [Universal Editor for Adaptive Forms and Form Fragments](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): The Universal Editor now supports the creation of both Adaptive Forms and reusable Form Fragments. Authors can visually build forms, configure submit actions, and add reCAPTCHA validation, all in a simplified, WYSIWYG authoring environment. This capability accelerates form creation, enhances consistency, and improves protection against spam and automated abuse.
+
+### Pre-release Features 
+
+* [Generate and Sync AFP Renditions from Adaptive Forms](/help/forms/document-generation-afp-api.md): The AFP Output Sync API enables administrators and users to generate AFP (Advanced Function Presentation) output from Adaptive Forms and synchronize the output with external systems or storage locations. AFP is a high-performance document format optimized for printing, often used in large-scale enterprise environments.
+
+* [SharePoint Document Library - Save Attachments with Original Filenames](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): You now have the option to save form attachments using their original filenames when storing them in a SharePoint Document Library. This enhancement simplifies the identification and management of uploaded files.
+
+* **Rule Editor**:
+    * [Binary Condition with Click Event in "When" Clause](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): The Rule Editor now allows combining a button click event (_Is Clicked_) with other conditions within the "When" clause. This enables more precise control over rule execution based on user interaction and other factors. Note: When using multiple conditions, the click event must be the first condition listed.
+    * [Validation Conditions for Fields and Panels](/help/forms/rule-editor-core-components-usecases.md): The Rule Editor now includes _IsValid_ and _IsNotValid_ conditions. These allow you to check the validation status of specific fields or entire panels (including layouts like Horizontal Tabs, Vertical Tabs, Accordions, and Wizards), facilitating improved form navigation and user experience based on validation results.
+* [Improved Scope Management for SharePoint Lists](/help/forms/connect-forms-to-sharepoint-list.md): SharePoint sites now support all managed paths, for example, /sites and /teams. This enhancement enables broader integration across various SharePoint site structures, offering greater flexibility in connecting to organizational content.
+* [Support for Saving Document of Record to SharePoint List](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): Forms created using a SharePoint List–based Form Data Model (FDM) can now save the Document of Record (DoR) to SharePoint Lists by configuring the Document of Record Bind Reference field property. This enhancement enables seamless integration of supported form data and documents with SharePoint storage. 
+  
+### Early Access Features in AEM Forms {#forms-new-early-access-features}
 
 The AEM Forms Early Access Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations, and help shape their development.
 
 This release notes lists the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
-#### HTML Email Templates in Adaptive Forms
+#### Adobe Experience Platform (AEP) Integration with Forms
 
-Adaptive Forms allows you to use [HTML email templates](/help/forms/html-email-templates-in-adaptive-forms.md). HTML email templates enable you to send rich, personalized, and visually appealing emails when a form is submitted. These emails can be customized with form data and enhanced using various email tags, such as images and links. With Adaptive Forms, you can either upload a file containing an HTML template or use a plain-text editor to create these templates.
-
-![HTML email templates](/help/forms/assets/html-email.png)
-
-#### Enhanced Cloud Storage Support: Direct PDF Upload to Azure Blob Storage
-
-AEM Forms Document Generation APIs now let you [directly upload generated PDF documents](/help/forms/early-access-ea-features.md#doc-generation-api) to Azure Blob Storage. This enhancement streamlines storage and retrieval, improving efficiency and integration with cloud workflows.
-
+* [Integration of AEM Forms with Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): The AEM Forms to Adobe Experience Platform Connector enables seamless integration between Adaptive Forms and Adobe Experience Platform. This feature allows form data to be mapped to XDM schemas and submitted directly to AEP in real time. It streamlines data capture for personalization and activation use cases across Adobe Experience Cloud solutions.
+  
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Java 21 support {#java21}
+### Updated Deprecation Process {#updated-deprecation-process}
 
-As of the January release, you can build code with Java 21 and Java 17. You gain access to new features like pattern matching, sealed classes, and various performance improvements. For configuration steps, including updating your Maven project and library versions, see the [Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) article.
+Adobe regularly reviews features, libraries, APIs, and configurations to ensure they meet standards for performance, security, and value. When capabilities no longer meet these standards, they are marked for deprecation and usage must stop by a specified removal date. Leading up to this date, Adobe will remind customers with email notifications, and actions that need to be taken in Cloud Manager before proceeding with or deploying new builds. Failure to take the necessary action may result in an inability to upgrade to new versions of AEM leading to potential impacts around security, performance, reliability, and availability.
 
-The more performant Java 21 **runtime** is automatically deployed when a Java 17 or 21 build is detected. However, Adobe also recommends opting into the Java 21 runtime for environments built with Java 11, by emailing [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Learn about [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
+See the [deprecation article](/help/release-notes/deprecated-removed-features.md) for further information.
 
->[!IMPORTANT] 
->
-> The Java 21 **runtime** was deployed to your dev/RDE environments in February; it will be applied to your stage/production environments on **April 28 and 29**. Note that **building code** with Java 21 (or Java 17) is independent of the Java 21 runtime -- you must explicitly take steps to build code with Java 21 (or Java 17).
+#### Deprecated Java APIs and OSGi configuration nearing removal dates {#deprecated-near-removals}
 
-### AEM Log-Forwarding to more destinations - Beta Program {#log-forwarding-earlyadopter}
+Expand the list below to view the deprecated APIs and OSGi configurations that must no longer be used. For full details—including removal timelines—refer to the deprecation article.
 
-Now in beta, you can forward AEM logs to New Relic (using HTTPS), Amazon S3, and Sumo Logic. Note that AEM logs (including Apache/Dispatcher) are supported, but not CDN logs. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) for access.
+<details>
+  <summary>Expand to see the deprecations</summary>
 
-While logs can be downloaded from Cloud Manager, many organizations find it beneficial to stream those logs to a preferred logging destination. AEM already supports (GA) AEM and CDN log forwarding to Azure Blob Storage, Datadog, HTTPS, Elasticsearch (and OpenSearch), and Splunk. This feature is configured in a self-serve manner, and deployed using the Config Pipeline.
+Java APIs:
+* `org.apache.sling.commons.auth`
+* `org.apache.felix.webconsole`
+* `org.eclipse.jetty`
+* `com.mongodb`
+* `org.apache.abdera`
+* `org.apache.felix.http.whiteboard`
+* `org.apache.cocoon.xml`
+* `ch.qos.logback`
+* `org.slf4j.spi`
+* `org.slf4j.event`
+* `org.apache.log4j`
+* `com.google.common`
+* `com.drew`
+* `org.bson`
+* `org.apache.jackrabbit.oak.plugins.blob`
+* `org.apache.jackrabbit.oak.plugins.memory`
+
+OSGi properties:
+
+* `org.apache.sling.commons.log.LogManager` (all properties)
+* `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
+ 
+</details>
+
+### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
+
+The **Java 11 runtime** is now deprecated, and most environments have already been upgraded to the more performant **Java 21 runtime**.
+
+If your environment could not be upgraded due to unsupported dependencies (see [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), you should have received an email from Adobe with specific next steps. Please ensure all required updates are completed by **August 28, 2025**, so your environment can be upgraded without disruption.
+
+Note: The runtime version is separate from your code's build version. While we recommend building with Java 21, Java 11 builds are still supported for now. A separate deprecation notice for Java 11 builds will be shared in the future.
+
+### Enforcement of AEM Java Logs Configuration Policy {#logconfig-policy}
+
+As noted in the April release notes, AEM Java logs must follow a standard format to ensure reliable monitoring across all customer environments. Custom log configurations—such as changes to log formatting, output files, or default log levels—are no longer supported. Logs must remain directed to the default files, and default log levels for AEM product code must be preserved. See full details in the [Logging article](/help/implementing/developing/introduction/logging.md#configuration-loggers).
+
+Starting in **late August**, any unsupported custom logging overrides will be ignored. Based on our analysis, most customers will not be impacted and Adobe has contacted customers whose current configuration may be affected.
+
+Please review and update any downstream processes that rely on custom logging behavior. For example:
+
+* If your log forwarding system expects a custom log format, you may need to adjust your ingestion rules.
+* If you've previously reduced log verbosity by changing log levels, please note that reverting to default levels may increase log volume.
+
+### Default Purging of Older Versions and Audit Logs {#mt-defaults}
+
+Currently, content versions and audit logs have their associated *purge maintenance tasks* disabled by default and thus no data is removed unless explicitly configured. 
+
+However, to optimize repository performance, starting in **early July 2025**, purging will be enabled by default, following these guidelines:
+
+#### Content Versions {#mt-content}
+
+* **New environments** (created after an upcoming date (to be communicated later)
+  * Versions older than **30 days** will periodically be deleted.
+  * The most recent five versions within the last 30 days are retained, along with the most recent version and the current version, regardless of their age.
+
+* **Existing environments** (created before this upcoming date):
+  * Versions older than **7 years** will periodically be deleted.
+  * All versions within the past 7 years are retained.
+  * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
+
+* You may modify these defaults through YAML configuration, deployed using the config pipeline.
+
+#### Audit Log {#mt-auditlogs}
+
+* **New environments** (created after an upcoming date, which will be communicated separately):
+  * Replication, DAM, and page audit logs older than **7 days** will periodically be deleted.
+  * All events are logged by default.
+
+* **Existing environments** (created before this upcoming date):
+  * Replication, DAM, and page audit logs older than **7 years** will periodically be deleted.
+  * All events are logged by default.
+  * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
+
+* You may modify these defaults through YAML configuration, deployed using the config pipeline.
+
+For more details, see the [Maintenance Tasks article](/help/operations/maintenance.md#defaults).
+
+### Edge Computing (Alpha Program) {#edge-computing}
+
+Edge computing allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
+
+Common use cases include:
+
+* Authenticating users with an identity provider before granting access to content
+* Personalizing content based on geolocation, device type, or user attributes
+* Acting as middleware between the CDN and your origin
+* Reformatting responses from third-party APIs (and perhaps aggregating multiple APIs responses) before delivering them to the browser
+* Composing and serving server-rendered HTML at the edge using content stitched from various backends
+
+We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
+
+### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
+
+The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
+
+Now in a beta, deploy a config pipeline for features including CDN origin selectors, response and request transformations, and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
+
+### AEM Log-Forwarding to More Destinations (Beta Program) {#log-forwarding-beta}
+
+While logs can be downloaded from Cloud Manager, many organizations find it beneficial to stream those logs to a preferred logging destination. AEM already supports AEM and CDN log forwarding to Azure Blob Storage, Datadog, HTTPS, Elasticsearch (and OpenSearch), and Splunk. This feature is configured in a self-serve manner, and deployed using the Config Pipeline.
+
+Now in beta, you can forward AEM logs to Amazon S3, Sumo Logic, and your own New Relic account (not the Adobe-provided account). Note that AEM logs (including Apache/Dispatcher) are supported for these logging destinations, but not CDN logs. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) for access.
 
 Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md).
 
-### Edge Computing - Request for Feedback! {#edge-computing-feedback}
-
-Edge computing brings data processing closer to the browser, which has benefits including reduced latency. Adobe would like to hear if you find this technology useful for AEM Publish Delivery and Edge Delivery Services projects. Additionally, let us know what you envision using it for as input into the product roadmap. 
-
-Some possible use cases:
-
-* Authentication with an IdP to gate access to content
-* Rendering dynamic (personalized, localized) content based on geolocation, device type, user attributes, etc.
-* Advanced image manipulation 
-* Middleware between the CDN and an origin
-* A layer between the browser and a third-party API, perhaps to reformat the API response
-* Aggregating data from multiple origins to make it easier for the client browser to render it
-
-Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with questions and comments!
-
-### OpenAPI-based APIs - Early Adopter Program {#open-apis-earlyadopter}
-
-Developers can deeply integrate AEM as Cloud Service features into their own applications and tools. New AEM as a Cloud Service APIs follow the OpenAPI specification, with a goal of being consistent, well-documented, and user-friendly. Credentials for endpoints requiring authentication are generated by creating Adobe Developer Console projects.
-
-Learn more about [OpenAPI-based AEM APIs](/help/implementing/developing/open-api-based-apis.md) and try out an [end-to-end tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) illustrating configuration and usage.
-
-Concretely, the API endpoints listed below are available as part of an early adopter program. If interested, email [aem-apis@adobe.com](mailto:aem-apis@adobe.com) describing how you intend to make use of them.
-
-* [Sites Content Fragments APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
-* [Assets APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
-* [Sites and Assets Folders APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
-* [Forms Communications APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
-
-### New AEM Developer Console (Public Beta) {#aem-developer-console-beta}
-
-Try out a revamped [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md), which offers a more interactive experience for debugging code in Cloud environments.
-
-Anyone can access the public beta by clicking the *New Console Available* button in the current AEM Developer Console. Adobe welcomes feedback, which you can email to [aemcs-new-devconsole-ui-beta@adobe.com](mailto:aemcs-new-devconsole-ui-beta@adobe.com)
-
 ## [!DNL Experience Manager] Guides {#guides}
 
-You can find a complete list of new and enhanced features of the latest release of Adobe Experience Manager Guides [here](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0).
-
-<!-- THE FOLLOWING URL WAS USED ABOVE BUT IT WAS 404. IT WAS REPLACED WITH THE URL ABOVE 
-(https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0). -->
+You can find a complete list of new and enhanced features of the latest release of Adobe Experience Manager Guides [here](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

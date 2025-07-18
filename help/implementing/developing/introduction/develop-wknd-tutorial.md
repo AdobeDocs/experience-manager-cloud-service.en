@@ -9,6 +9,8 @@ role: Admin, Architect, Developer
 
 ## Overview {#overview}
 
+{{traditional-aem}}
+
 New to developing Adobe Experience Manager as a Cloud Service? Need a refresher on the latest practices? This is the place to start!
 
 The goal for this multi-part tutorial is to teach a developer who is new to AEM how to implement a website in AEM using the latest standards and technologies. The hope is at the end of this tutorial you will understand the basic foundation of the AEM platform and knowledge of some of the common design patterns.

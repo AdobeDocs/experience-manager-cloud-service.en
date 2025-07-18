@@ -8,6 +8,8 @@ role: Admin, Developer
 ---
 # Set up Your Pipeline {#set-up-your-pipeline}
 
+{{traditional-aem}}
+
 Create a front-end pipeline to manage the customization of your site's theme.
 
 ## The Story So Far {#story-so-far}
