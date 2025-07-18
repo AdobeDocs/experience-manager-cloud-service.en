@@ -58,7 +58,7 @@ The following diagram shows how the mentioned configuration elements are linked.
 | `user.dynamicMembership`  | We recommend enabling dynamic group membership  | true  |
 | `user.enforceDynamicMembership`  | We recommend enabling the enforcement of dynamic group membership  | true  |
 | `group.dynamicGroups`  | We recommend enabling dynamic groups  |  true |
-| user.propertyMapping  | The provided implementation of `UserInfoProcessor` synchronizes only few properties. It can be modified and customized.  | <code>"profile/givenName=profile/given_name",<br/>"profile/familyName=profile/family_name",<br/>"rep:fullname=profile/name",<br/>"profile/email=profile/email",<br/>"access_token=access_token",<br/>"refresh_token=refresh_token"</code> |
+| user.propertyMapping  | The provided implementation of `UserInfoProcessor` synchronizes only few properties. It can be modified and customized.  | <code>"profile/givenName=profile/given_name",</code><br><code>"profile/familyName=profile/family_name",</code><br><code>"rep:fullname=profile/name",</code><br><code>"profile/email=profile/email",</code><br><code>"access_token=access_token",</code><br><code>"refresh_token=refresh_token"</code> ||
 
 ### Configure a new Application in Azure Active Directory {#configure-a-new-application-in-azure-ad}
 
