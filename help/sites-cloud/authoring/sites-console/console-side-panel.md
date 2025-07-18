@@ -93,7 +93,7 @@ The **References** view shows a list of references types to or from to the resou
 
 Select the appropriate reference type for more information. In certain situations further actions are available when you select a specific reference, including:
 
-* **Incoming Links**, provides a list of pages that directly reference the select page, together direct access to **Edit** one of those pages when you select a specific link.
+* **Incoming Links**, provides a list of pages that directly reference the select page along with direct access to **Edit** one of those pages when you select a specific link.
   * This only show static links, not dynamically generated links such as from the List component.
 * [Launches](/help/sites-cloud/authoring/launches/overview.md), provides access to related launches
 * [Live Copies](/help/sites-cloud/administering/msm/overview.md) displays the paths of all live copies that are based on the selected resource.
