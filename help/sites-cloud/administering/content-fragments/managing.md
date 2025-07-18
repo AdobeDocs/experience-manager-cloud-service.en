@@ -285,7 +285,7 @@ FolderC
 
 <!-- CQDOC-22785 - will replace above text -->
 
-
+<!--
 **Copy** creates a copy of the selected fragment at its location.
 
 * In the **Copy** action you can select whether to include children (referenced fragments). This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
