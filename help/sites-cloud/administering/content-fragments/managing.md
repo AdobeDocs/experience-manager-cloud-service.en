@@ -242,7 +242,7 @@ To open your fragment for editing:
 
 **Copy** creates a copy of the selected fragment at its location.
 
-* In the **Copy** action you can select whether to include children (referenced fragments). This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
+* In the **Copy** action you can select whether to **Copy with children** (referenced fragments). This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
 
   * Creates a copy of the selected Content Fragment at its location.
   * Creates copies of all fragments that are referenced by the selected fragment; these are copied to the same location as the original referenced fragment.
@@ -288,7 +288,7 @@ FolderC
 <!--
 **Copy** creates a copy of the selected fragment at its location.
 
-* In the **Copy** action you can select whether to include children (referenced fragments). This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
+* In the **Copy** action you can select whether to **Copy also referenced content fragments**. This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
 
   * Creates a copy of the selected Content Fragment at its location.
   * Creates copies of all fragments that are referenced by the selected fragment.
