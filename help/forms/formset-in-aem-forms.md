@@ -14,7 +14,10 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 039afdf3-013b-41b2-8821-664d28617f61
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
+hide: yes
+hidefromtoc: yes
 ---
+
 # Form set in AEM Forms{#form-set-in-aem-forms}
 
 ## Overview {#overview}
@@ -138,7 +141,7 @@ An eligibility expression can be any valid JavaScript statement that returns a B
 
 In addition to the standard JavaScript functions, form set also exposes the fs.valueOf API that provides access to the value of a field of a form in a form set. Use this API to access the value of a form field in a form set. The API syntax is fs.valueOf (formUid, fieldSOM), where:
 
-* formUid (string): A unique ID of a form in the form set. You can specify it while creating the form set in the forms manager user interface. By default, it’s the form name.
+* formUid (string): A unique ID of a form in the form set. You can specify it while creating the form set in the forms manager user interface. By default, it's the form name.
 * fieldSOM (string): A SOM expression of the field in the form specified by the formUid. SOM expression or Scripting Object Model expression is used to reference values, properties, and methods within a particular document object model (DOM). You can view it in Form Designer under the Scripts tab while the field is selected.
 
 >[!NOTE]
@@ -340,7 +343,7 @@ This tag indicates the start of HTML5 Form XML. This is added in the submit XML 
 
 The name rootElement is just a placeholder. The actual name is picked from the forms used in the form set. The subtree that starts with rootElement contains the data of the fields and subforms inside the Forms in the form set. There are multiple factors that determine the structure of the rootElement and its children.
 
-In prefill XML, this tag is optional, but if it’s missing, the entire XML is ignored.
+In prefill XML, this tag is optional, but if it's missing, the entire XML is ignored.
 
 NAME OF THE ROOT ELEMENT TAG
 
