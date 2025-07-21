@@ -166,6 +166,10 @@ See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) t
 
 ### Add shapes to the canvas {#add-shapes-to-the-canvas}
 
+Learn to add shapes to the canvas step by step in this video.
+![templates with support to dynamic updates](/help/assets/assets/add-shapes-to-the-canvas.png)
+>[!VIDEO]()
+
 Execute these steps to add shapes to the canvas:
 
 1. Click ![creating shapes](/help/assets/assets/Shapes.svg), select a shape (rectangle or circle) to add it to the canvas. Use the shape's [[!UICONTROL Properties Panel]](#reposition-resize-delete-a-layer) to reposition, resize, rotate or delete the layer. 
