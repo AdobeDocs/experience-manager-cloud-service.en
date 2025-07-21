@@ -22,6 +22,10 @@ Some if its key benefits include:
 
 * **Search based on text-based prompts**: Experience Manager Assets applies filters to content and displays appropriate results automatically based on simple text-based prompts.
 
+>[!IMPORTANT]
+>
+> Specify three or more than three words for the Semantic Search to display appropriate results.
+
 ### Examples {#examples-semantic-search}
 
 **Example Prompt**: *Woman drinking coffee*
