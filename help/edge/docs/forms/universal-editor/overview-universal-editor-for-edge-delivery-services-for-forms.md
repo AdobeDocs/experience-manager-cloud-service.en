@@ -8,7 +8,7 @@ exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 
 # Universal Editor for Edge Delivery Services for Forms
 
-<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 
 The Universal Editor revolutionizes form creation for Adobe Edge Delivery Services by offering a simple, visual, and intuitive What You See Is What You Get (WYSIWYG) interface. Designed for content creators and form authors, it eliminates the complexity of traditional form-building processes, making it accessible even to non-technical users.
 
@@ -39,7 +39,7 @@ Whether you're managing lightweight client-side rendering, ensuring cross-browse
 
 | ![Analytics & Tracking](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Form Fragments](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![Data Binding](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Analytics & Tracking**](https://www.aem.live/developer/martech-integration) | **Form Fragments** (Coming Soon)| **Data Binding** (Coming Soon) |
+| [**Analytics & Tracking**](https://www.aem.live/developer/martech-integration) | **Form Fragments** (Coming Soon)| [**Data Binding**](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) |
 | Gain insights into user behavior, form interactions, and submission rates with built-in analytics and tracking to enable data-driven form optimization. | Form Fragments enable reusability by allowing commonly used sections to be created once and reused across multiple forms, ensuring consistency and reducing maintenance effort.| Data binding enables direct connections between form fields and backend data sources, supporting real-time updates and advanced data mapping. |
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Embedding Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Thank You Configuration](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
@@ -211,7 +211,7 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## Onboarding
 
-To enable the Universal Editor and its advanced features like Rule Editor write to us at aem-forms-ea@adobe.com from your official email id . The Adobe team is here to assist you in transforming your form-building experience.
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 
 ## Frequently asked questions (FAQ)
 
