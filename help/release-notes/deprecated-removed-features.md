@@ -447,9 +447,9 @@ Properties for the following OSGi component PIDs are deprecated and usage should
 | **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | all | 6/3/25 | 8/31/25 |
 | **`org.apache.http.proxyconfigurator`** | all | 6/3/25 | 8/31/25 |
 
-### Unmodifiable OSGi properties {#unmodifiable-osgi-properties}
+### Unmodifiable OSGi Configurations {#unmodifiable-osgi-properties}
 
-Properties for the following OSGi component PIDs cannot be modified, as described below.
+Properties for the following OSGi component PIDs cannot be modified, therefore these must not be configured.
 
 | **OSGI component ID**| **Unmodifiable Properties** |
 |---|---|
@@ -469,7 +469,7 @@ Properties for the following OSGi component PIDs cannot be modified, as describe
 
 ### Future enforced OSGi property restrictions {#future-restrictions-osgi-properties}
 
-In the future, Adobe will enforce the following OSGi properties restrictions so usage should stop.
+In the future, Adobe will enforce the following OSGi properties restrictions. For the mentioned PIDs, only the listed properties are allowed to be configured.
 
 | OSGi component PID  |   | Required  | Type  | Restriction (if applies)  |
 |---|---|---|---|---|

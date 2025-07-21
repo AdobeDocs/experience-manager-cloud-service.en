@@ -273,7 +273,7 @@ Changing service users, or ACLs that access content or code, could lead to error
 
 ### Index Changes {#index-changes}
 
-If changes to indexes are made, it is important that the new version continues to use its indexes until it is terminated, while the old version uses its own modified set of indexes. The developer should follow the index management techniques described under [Content Search and Indexing](/help/operations/indexing.md).
+If changes to indexes are made, it is important that the old version continues to use its indexes until it is terminated, while the new version uses its own modified set of indexes. The developer should follow the index management techniques described under [Content Search and Indexing](/help/operations/indexing.md).
 
 ### Conservative Coding for Rollbacks {#conservative-coding-for-rollbacks}
 

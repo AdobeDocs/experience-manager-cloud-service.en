@@ -4,6 +4,7 @@ description: Learn about the different configurations available to enable GraphQ
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
 feature: Commerce Integration Framework
 role: Admin
+index: no
 ---
 # Caching & Performance {#caching}
 

@@ -518,6 +518,15 @@ Refer to the gif below, which demonstrates that when the `Delete Traveler` butto
 
 ![Delete Panel](/help/forms/assets/custom-function-delete-panel.gif)
 
+## Known Issue
+
+* Custom functions do not support JavaScript regular expression literals. Using regex literals in a custom function results in errors during execution. For example:
+  `const pattern = /^abc$/;`
+
+  To ensure compatibility, use the RegExp constructor in the custom functions.
+  
+  `const pattern = new RegExp("^abc$");`
+  Refactor regular expressions to use the RegExp constructor to ensure consistent and reliable execution.
 
 ## Troubleshooting
 

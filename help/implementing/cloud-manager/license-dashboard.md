@@ -72,6 +72,8 @@ The left side of the window presents a pie chart showing the contract breakdown 
 
 The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
 
+Near the upper-right corner of the dashboard page, you can click **Download report** to export its data as a CSV file. This download simplifies analyzing and sharing usage trends.
+
 <!-- REMOVED AS PER CQDOC-21983
 ### Assets usage details {#assets-usage-details}
 
