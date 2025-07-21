@@ -1,6 +1,6 @@
 ---
 title: Semantic search in Assets view
-description: 
+description: Learn how to use Semantic Search within Assets view. Semantic Search uses artificial intelligence (AI), natural language processing (NLP), and machine learning to deliver more accurate and context-aware results.
 ---
 # Semantic Search in Assets view {#semantic-search-assets-view}
 
