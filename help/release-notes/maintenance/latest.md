@@ -28,7 +28,7 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * ASSETS-53535: Improved YouTube video upload performance.
 * ASSETS-53612: Control for Hybrid Search in Assets Omnisearch.
 * GRANITE-60183: Update commons-fileupload dependency to 1.6.0.
-* GRANITE-60287:  Update QS to Jackrabbit 2.22.1.
+* GRANITE-60287: Update QS to Jackrabbit 2.22.1.
 * SITES-30452: Content API with ASO - Title & Description Suggestions.
 * SITES-31677: Custom workspace support AEM Content fragment export to Target.
 * SKYOPS-112741: Remove the `com.adobe.granite.product.support` bundle from the AEM-CS SDK.
@@ -37,12 +37,12 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 
 * ASSETS-12882: UI alignment issues after opening viewer presets.
 * ASSETS-48958: Issue with Asset Sync changing Published Status in Sites local AEM.
-* ASSETS-50856: dam:processingAttempts not being reset on completeUpload.
+* ASSETS-50856: `dam:processingAttempts` not being reset on completeUpload.
 * ASSETS-51604: Link Share Report CSV Missing “Shared With” Data.
 * ASSETS-51783: Fallback to DM config under `/conf/global` if no config is found using search query.
 * ASSETS-51857: Asset table items not reorderable.
 * ASSETS-52169: New BAT machine rendition erroneously included in asset downloads.
-* ASSETS-52229: Missing Inbox Notifications for Asset Reports in AEM as a Cloud Service
+* ASSETS-52229: Missing Inbox Notifications for Asset Reports in AEM as a Cloud Service.
 * ASSETS-52399: Version bump in com.day.cq.dam.api might break customer code.
 * ASSETS-52780: Asset can be marked for preview even without toggled enabled.
 * ASSETS-52866: Migrated DM videos remain in processing state under folder with DM Sync disabled.
