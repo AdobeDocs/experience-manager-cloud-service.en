@@ -51,13 +51,13 @@ The 2025.7.0 feature activation will provide the full feature set for this maint
 * ASSETS-53446: Intermittent YouTube auth token refresh failures due to NPE.
 * ASSETS-53827: ACL validation blocks saving Mixed Media Sets.
 * ASSETS-5403: Dynamicmedia clientlibs used on publish instance should have `allowProxy=true`.
-* ASSETS-54261: Metadata import leaks connections and becomes blocked if file fails to download.
+* ASSETS-54261: Metadata import leaks connections and becomes blocked if the file fails to download.
 * CQ-4359863: Tags search broken for keywords out of order in Content Fragment Editor/Asset editor.
 * CQ-4359958: Make openapi-support compatible with AEM 6.5.22.0 and above.
 * CQ-4360256: Include the servlet context path in the request path for HTTP requests handled via the `/adobe` servlet context.
-* CQ-4360317: Add method for setting Sunset date header when building responses.
+* CQ-4360317: Add method for setting the Sunset date header when building responses.
 * GRANITE-60311: AEM SDK Quickstart – NPE on “OSGi Installer Configuration Printer”.
-* GS-15285: Users are showing as deactivated.
+* GS-15285: Users are shown as deactivated.
 
 ### Known Issues {#known-issues-21644}
 
@@ -75,7 +75,7 @@ AEM as a Cloud Service is dedicated to optimizing your platform's security and p
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM Oak | 1.80.0|[Oak API 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80.0/index.html)| 
+|AEM Oak | 1.80.0|[Oak API 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80/index.html)| 
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |Apache HTTP Server| 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES)|
