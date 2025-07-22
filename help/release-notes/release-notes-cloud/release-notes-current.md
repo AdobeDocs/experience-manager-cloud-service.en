@@ -22,7 +22,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.6.0) is June 26, 2025. The next feature release (2025.7.0) is planned for July 31, 2025.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.6.0) is June 26, 2025. The next feature release (2025.7.0) is planned for August 7, 2025.
 
 ## Maintenance Release Notes {#maintenance}
 
