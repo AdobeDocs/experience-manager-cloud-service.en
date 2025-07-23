@@ -7,7 +7,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
 ---
-# Customer Managed Keys Setup for AEM as a Cloud Service {#cusomer-managed-keys-for-aem-as-a-cloud-service}
+# Customer Managed Keys Setup for AEM as a Cloud Service {#customer-managed-keys-for-aem-as-a-cloud-service}
 
 AEM as a Cloud Service currently stores customer data in Azure Blob Storage and MongoDB, utilizing provider-managed encryption keys by default to secure data. While this setup meets the security needs of many organizations, businesses in regulated industries or those requiring enhanced data security may seek greater control over their encryption practices. For organizations that prioritize data security, compliance, and the ability to manage their encryption keys, the Customer-Managed Keys (CMK) solution offers a critical enhancement.
 
@@ -36,8 +36,8 @@ You will also be guided through the following steps for creating and configuring
 1. Set up your environment
 1. Obtain an application ID from Adobe
 1. Create a new resource group
-1. Create a key kault
-1. Grant Adobe access to the key kault
+1. Create a key vault
+1. Grant Adobe access to the key vault
 1. Create an encryption key
 
 You will need to share the key vault URL, the encryption key name and information about the key vault with Adobe.
@@ -91,7 +91,7 @@ az keyvault create `
   --location $location `
   --resource-group $resourceGroup `
   --name $keyVaultName `
-  --default-action=Deny `
+  --default-action=Allow `
   --enable-purge-protection `
   --enable-rbac-authorization `
   --public-network-access Enabled
@@ -101,7 +101,7 @@ az keyvault create `
 
 In this step you will allow Adobe to access your key vault via an Entra application. The ID of the Entra application should have been already provided by Adobe.
 
-First, you must create a service principal attached to the Entra appplication and assign ot it the **Key Vault Reader** and **Key Vault Crypto User** roles. The roles are limited to the key vault created in this guide.
+First, you must create a service principal attached to the Entra application and assign to it the **Key Vault Reader** and **Key Vault Crypto User** roles. The roles are limited to the key vault created in this guide.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -122,7 +122,7 @@ az role assignment create --assignee $servicePrincipalId --role "Key Vault Reade
 az role assignment create --assignee $servicePrincipalId --role "Key Vault Crypto User" --scope $keyVaultId
 ```
 
-## Create an Encryption Key {#create-an-ecryption-key}
+## Create an Encryption Key {#create-an-encryption-key}
 
 Finally, you can create an encryption key in your key vault. Please note that you will need the **Key Vault Crypto Officer** role to complete this step. If the logged in user does not have this role, contact your system administrator to have this role granted to you or ask someone who already has that role to complete this step for you. 
 
@@ -132,7 +132,7 @@ Network access to the key vault is required to create the encryption key. First 
 # Reuse this information from the previous steps.
 $keyVaultName="<KEY VAULT NAME>"
 
-# Chose a name for your key.
+# Choose a name for your key.
 $keyName="<KEY NAME>"
 
 # Create the key.
@@ -141,7 +141,7 @@ az keyvault key create --vault-name $keyVaultName --name $keyName
 
 ## Share the Key Vault Information {#share-the-key-vault-information}
 
-At this point, you are all set. You just need to share some required information with Adobe, who will take care of configuring your environment for you.
+At this point, you are all set. You just need to share some required information through the CMK UI, which will start the environment configuration process.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -171,11 +171,7 @@ If you decide to revoke Platform access to your data, you can do so by removing 
 
 ## Next steps {#next-steps}
 
-Contact Adobe and share:
-
-* The URL of your key vault. You retrieved it in this step and saved it in the `$keyVaultUri` variable.
-* The name of your encryption key. You have created the key in a previous step and saved it in the `$keyName` variable.
-* The `$resourceGroup`, `$subscriptionId` and `$tenantId` which are required to setup the connection to the key vault.
+Follow the steps in the CMK UI to complete the setup of your Customer Managed Keys. The CMK UI is available in the AEM Home Security UI, under the **Customer Managed Keys** section.
 
 <!-- Alexandru: hiding this for now
 
@@ -190,8 +186,13 @@ Afterwards, an Adobe Engineer assigned to you will contact you to confirm the cr
 
 Notify the Adobe Engineer once this process is complete and the Private Endpoints show up as **Approved**. -->
 
+<!-- Gerald: Hiding this not to confuse customers with the Private Link Beta
 ## Customer Managed Keys in Private Beta {#customer-managed-keys-in-private-beta}
 
 The Engineering team at Adobe is currently working on an enhanced implementation of CMK leveraging Azure's Private Link. The new implementation will allow sharing your key through the Azure backbone thanks to a direct Private Link connection between Adobe's tenant and your Key Vault.
-
+__
 This enhanced implementation is currently in Private Beta, and can be enabled for selected customers who agree to subscribe to the Private Beta program and work closely with Adobe Engineering. If you are interested in the Private Beta for CMK using Private Link, please contact Adobe for further information.
+-->
+
+## Questions and Support {#questions-and-support}
+Reach out to us if you have any questions, inquiries or need assistance with the Customer Managed Keys setup for AEM as a Cloud Service. Adobe Support? can help you with any issues you may encounter during the process.
