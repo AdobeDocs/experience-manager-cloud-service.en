@@ -174,11 +174,11 @@ The user is authenticated by an ID Token, and additional attributes are fetched 
 
 ### Additional Information about Azure AD Groups {#additional-information-about-azure-ad-groups}
 
-To configure a group to for the enterprise application, you need to search the application on: **Enterprise Applications** and add the groups: <!-- Alexandru: this bit cound be clearer-->
+To configure a group to for the enterprise application in the Microsoft Azure Portal, you need to search the application on: **Enterprise Applications** and add the groups: <!-- Alexandru: this bit cound be clearer-->
 
 ![OIDC Group add](/help/security/assets/oidc-ad-additional-info.png)
 
-To enable the group claim in Id Token, add the claim in **Token Configuration**: <!-- Alexandru: this bit cound be clearer as well-->
+To enable the group claim in Id Token, add the claim inthe **Token Configuration** section of the Microsoft Azure Portal: <!-- Alexandru: this bit cound be clearer as well-->
 
 ![OIDC Claim Token ID](/help/security/assets/oidc-claim-id-token.png)
 
