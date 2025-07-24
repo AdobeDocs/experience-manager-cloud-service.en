@@ -1,11 +1,11 @@
 ---
 title: Edge Delivery Services for AEM Forms Overview
-description: Edge Delivery Services for AEM Forms
- built for peak performance, empowering you to envision the future of streamlined data collection and user engagement.
+description: Create and deliver high-performing forms on Adobe Experience Manager Edge Delivery Services, with an emphasis on the Universal Editor authoring approach.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 ---
+
 # Edge Delivery Services for AEM Forms
  
 
@@ -20,37 +20,53 @@ These services enable you to:
 * **Use developer friendly toolset:** Edge Delivery Services for AEM Forms
  uses plain HTML, modern CSS, and vanilla JavaScript to create exceptional experiences, avoiding the steep learning curve of a specific framework. A developer with basic web development skills can customize and easily build form components and experiences. There is no need to wait for a pipeline to run, just check-in your code into GitHub and your changes are live.
 
-## Edge Delivery Services for AEM Forms Overview {#edge-overview}
-
-Edge Delivery Services for AEM Forms allows for a high degree of flexibility in how you author forms on your website. You can author content and forms with [WYSIWYG Authoring](/help/forms/creating-adaptive-form-core-components.md) as well as [Document-based Authoring](/help/edge/docs/forms/create-forms.md). Edge Delivery Services for AEM Forms
- provide a forms block, known as [Adaptive Forms Block](/help/edge/docs/forms/create-forms.md) to add a form to your Edge Delivery Services site.
-
-For example, you author forms directly in Microsoft Excel or Google Sheets and these spreadsheets are transformed into forms for your website. Any new form or form content, such as a new form field, is instantly available on your website without requiring a rebuild process.
-
-The following diagram illustrates how you can edit forms in Microsoft Excel or Google Sheets (Document-based Authoring) and publish to Edge Delivery Services. It also shows the AEM publishing method using the WYSIWYG Authoring (Universal Editor or Adaptive Forms Editor).
-
-![Publish to Edge Delivery Services and AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
-
-Edge Delivery Services for AEM Forms uses GitHub so customers can manage and deploy code directly from their GitHub repository. For example, you can write forms in either [Google Sheets](/help/edge/docs/forms/create-forms.md) or [Microsoft Excel](/help/edge/docs/forms/create-forms.md) and the components of your forms can be developed by using CSS and JavaScript in a GitHub repository.
-
-When your forms are ready, you can use the [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content), a chrome browser extension, to preview and publish content updates.
-
-![Install AEM SideKick](/help/edge/assets/aem-sidekick-preview-publish-forms.png)
-
-The choice between the [Document-based Authoring ](#document-based-authoring-features) and [WYSIWYG Authoring](#wysiwyg-authoring-features) depends on your specific requirements:
-
-* For simple forms that just collect basic information with a few fields (think contact us forms, lead generation forms, or service request forms), and where you need quick data connectivity using a spreadsheet, the [Document-based Authoring](#document-based-authoring-features) is a good fit. You can build these forms like you would build a document in Google Sheets or Microsoft Excel. 
-
-* For complex forms, like forms requiring multiple panels, complex rules and business logic, data manipulation, integration with external systems, or streamlined workflows using AEM features, then [WYSIWYG Authoring](#wysiwyg-authoring-features) is a better option. 
+## Choosing an authoring method
 
 
-### Key Features of Document-based Authoring and WYSIWYG Authoring
+Adobe Experience Manager (AEM) Edge Delivery Services (EDS) lets you serve blazing-fast, highly scalable web experiences from the edge. This guide explains **how to build and publish forms for those experiences**—with a clear recommendation hierarchy:
 
-Document-based Authoring offers a basic set of features and WYSIWYG Authoring unlocks additional capabilities beyond the Document-based Authoring, empowering you to build more complex and interactive forms. The key features of both Document-based Authoring and WYSIWYG Authoring are:
+* **Universal Editor (UE) – Best choice for most teams**  
+* **Document-Based Authoring (Docs/Sheets) – Great for quick, simple forms**  
+* **Document Authoring (DA) – Use to embed forms into DA-authored pages**
 
-#### Document-based Authoring features
+By the end you will be able to pick the right authoring method, understand submission options, and follow next steps toward production-ready forms.
 
-Document-based Authoring  allows you to create forms using familiar tools like Microsoft Excel or Google Sheets. These forms offer the following functionalities:
+
+| Team & Requirement | Recommended Method | Why |
+|--------------------|--------------------|-----|
+| Marketers / Designers need visual control, conditional logic, or AEM integrations | **Universal Editor** | Drag-and-drop, advanced rules, submits to FSS or AEM Publish |
+| Content authors already working in Word / Google Docs / Sheets; simple data capture to spreadsheet/email | **Document-Based Authoring** | Familiar tools, fastest path for basic forms |
+| Website pages built in **Document Authoring (DA)** | **Embed** a UE or Doc-Based form into the DA page | DA does not build forms itself |
+
+
+## Authoring methods in detail
+
+###  Universal Editor 
+
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
+
+[Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) is a visual, drag-and-drop authoring tool for marketers and designers that combines speed with enterprise-grade power:
+
+* Real-time WYSIWYG editing and device previews.
+* Direct integration with AEM assets, workflows, and Form Data Model (FDM).
+* Seamless hand-off to developers for custom components in vanilla JS/CSS.
+* Advanced rules editor for creating complex logic.
+* Server-side extensibility for custom functionalities.
+* WYSIWYG editing experience for easy form creation and visualization.
+* Document of record functionality to create tamper-proof archives of submitted data.
+* Integration with Adobe Sign for electronic signatures.
+* Integration with Adobe Workfront Fusion to triggering Adobe Workfront Fusion scenarios upon form submission.
+* Integration with various data sources for pre-populating forms and submitting data.
+* Form Data Model (FDM) for defining data structure and interactions with various data sources.
+* Ability to choose from multiple submit actions for handling form submissions, including submitting data to Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics, many more data sources.
+* Submit using Forms Submission Service (FSS) or AEM Publish submit actions
+
+**Recommendation**: Start every new form project with Universal Editor unless your team is 100 % document-centric and the form is very basic.
+
+
+### Document-Based authoring (Using Microsoft Docs or Google Sheets)
+
+[Document-Based authoring](/help/edge/docs/forms/tutorial.md) is best suited for creating simple, low-complexity forms using familiar tools such as Microsoft Word, Google Docs, or Google Sheets. This method is ideal for content teams who require a fast and straightforward way to build forms.
 
 * Accessible components for a user-friendly experience.
 * Standardized HTML structure for consistent rendering.
@@ -61,38 +77,46 @@ Document-based Authoring  allows you to create forms using familiar tools like M
 * Submit form data directly to Microsoft Excel or Google Sheets or email addresses.
 * Monitor your forms performance through Operational Telemetry
 
-#### WYSIWYG Authoring features
 
-WYSIWYG Authoring provides WYSIWYG interfaces (Universal Editor and Adaptive Forms Editor) for building forms and offers all the capabilities of Document-based Authoring, plus a wide range of additional features:
+### Embedding Forms in Document Authoring (DA)
 
-* Advanced rules editor for creating complex logic.
-* Server-side extensibility for custom functionalities.
-* WYSIWYG editing experience for easy form creation and visualization.
-* Document of record functionality to create tamper-proof archives of submitted data.
-* Integration with Adobe Sign for electronic signatures.
-* Integration with Adobe Workfront Fusion to triggering Adobe Workfront Fusion scenarios upon form submission.
-* Integration with various data sources for pre-populating forms and submitting data.
-* Form Data Model (FDM) for defining data structure and interactions with various data sources.
-* Ability to choose from multiple submit actions for handling form submissions, including submitting data to Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics, many more data sources.
+Document Authoring (DA) is designed for creating structured page content and does not support native form creation. To add a form to a DA-authored page, you can create the form using the **Universal Editor** (recommended) or Document-Based Authoring and embed the form to Document Authoring page. 
 
-The all above features are also available via Adaptive Forms Editor. 
+## Publishing Edge Delivery Services Forms {#edge-overview}
 
-In essence, WYSIWYG Authoring (Universal Editor and [Adaptive Forms Editor](/help/forms/creating-adaptive-form-core-components.md)) builds upon the foundation of [Document-based Authoring](/help/edge/docs/forms/create-forms.md), providing a more advanced toolkit for creating and managing complex forms. 
+The following diagram illustrates how you can edit forms in Microsoft Excel or Google Sheets (Document-based Authoring) and publish to Edge Delivery Services. It also shows the AEM publishing method using the WYSIWYG Authoring (Universal Editor).
 
->[!NOTE]
->
->
-> The WYSIWYG Authoring capability is available under the early-adopter program. If you are interested, send a quick email from your work address to aem-forms-ea@adobe.com to request access to the capability.
+![Publish to Edge Delivery Services and AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
-### Edge Delivery Services for AEM Forms
 
-: Authoring, Publishing, and Submission of Forms  
+<!-- 
+## Feature Comparison
 
-The following diagrams illustrate the process of creating, publishing, and submitting forms using Document-based Authoring and WYSIWYG Authoring.
+| Capability | Universal Editor | Document-Based | Document Authoring |
+|------------|-----------------|----------------|--------------------|
+| Visual drag-and-drop | ✅ | – | – |
+| Advanced rules editor | ✅ | Limited | – |
+| Attachments | ✅ | EA | – |
+| reCAPTCHA Enterprise | ✅ | ✅ | Depends on embed |
+| Submit to spreadsheet/email | ✅ (FSS) | ✅ (FSS) | Via embed |
+| Submit to AEM workflows/FDM | ✅ | – | Via UE embed |
+| Custom components (JS/CSS) | ✅ | ✅ | Via embed |
+| Localization via Sites | ✅ | Manual | Via embed |
 
-![Document-based Authoring](/help/edge/assets/document-based-authoring-workflow.png)
+-->
 
-![WYSIWYG Authoring](/help/edge/assets/wysiwyg-authoring-workflow.png)
+## Next Steps
+
+* [Features and capabilities of Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+* [Create your first form using Universal Editor](/help/edge/docs/forms/universal-editor/create-forms.md)
+* [Create your first form using Google Sheets or Microsoft Excel](/help/edge/docs/forms/tutorial.md).
+* [Embed Forms in Document Authoring (DA)](https://www.aem.live/developer/da-tutorial)
+
+
+You are now ready to create your first high-performance form with AEM Edge Delivery Services.
+
+
+<!-- 
 
 ## Start creating forms
 

@@ -4,6 +4,7 @@ description: Get to know how to manage product catalog pages and templates
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
 feature: Commerce Integration Framework
 role: Admin
+index: no
 ---
 # Manage product catalog pages and templates {#product-catalog}
 
