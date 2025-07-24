@@ -46,7 +46,7 @@ You will need to share the key vault URL, the encryption key name and informatio
 
 The Azure Command Line Interface (CLI) is the only requirement for this guide. If you do not already have the Azure CLI installed, follow the official installation instructions [here](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
 
-Before proceeding with the rest of this guide, please login your CLI with `az login`.
+Before proceeding with the rest of this guide, please login to your CLI with `az login`.
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Before proceeding with the rest of this guide, please login your CLI with `az lo
 ## Start the CMK configuration process for AEM as a Cloud Service {#request-cmk-for-aem-as-a-cloud-service}
 
 You need to request the Customer Managed Keys (CMK) configuration for your AEM as a Cloud Service environment via the UI. To do this, navigate to the AEM Home Security UI, under the **Customer Managed Keys** section. 
-Then you can start the onboarding process by clicking on the **Start onboarding** button.
+You can then start the onboarding process by clicking on the **Start onboarding** button.
 
 ![Start onboarding of a website using the CMK UI](./assets/cmk/step1.png)
 
@@ -87,7 +87,7 @@ If you already have a resource group, feel free to use it instead. In the rest o
 
 ## Create a Key Vault {#create-a-key-vault}
 
-You will need to create a key vault to contain your encryption key. The key vault must have purge protection enabled. Purge protection is necessary for encrypting data at rest from other Azure services. Public network access must be enabled, too, to ensure that the Adobe tenant can access the key vault.
+You will need to create a key vault to contain your encryption key. The key vault must have purge protection enabled. Purge protection is necessary for encrypting data at rest from other Azure services. Public network access must be enabled to ensure that the Adobe services can access the key vault.
 
 >[!IMPORTANT]
 >The creation of the Key Vault with Public Network Access disabled enforces that all Key Vault related operations, such as Key Creation or Rotation have to be executed from an environment that has network access to the KeyVault - for example, a VM that can access the KeyVault.
@@ -215,4 +215,4 @@ Once the configuration process is completed, you will be able to see the status 
 ![The process in now completed](./assets/cmk/step5.png)
 
 ## Questions and Support {#questions-and-support}
-Reach out to us if you have any questions, inquiries or need assistance with the Customer Managed Keys setup for AEM as a Cloud Service. Adobe Support can help you with any questions you might have.
+Reach out to us if you have any questions, inquiries, or need assistance with the Customer Managed Keys setup for AEM as a Cloud Service. Adobe Support can help you with any questions you might have.
