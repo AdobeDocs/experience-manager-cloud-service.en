@@ -72,6 +72,7 @@ After the request is completed, you will be able to see the application ID in th
 ![The Entra Application ID is provided by Adobe](./assets/cmk/step3.png)
 
 ## Create a New Resource Group {#create-a-new-resource-group}
+
 Create a new resource group in a location of your choice.
 
 ```powershell
@@ -185,6 +186,7 @@ Revoking or disabling access to the Key Vault, key, or CMK app can result in sig
 If you decide to revoke Platform access to your data, you can do so by removing the user role associated with the application from the Key Vault within Azure.
 
 ## Next steps {#next-steps}
+
 After you have provided the required information in the CMK UI, Adobe will start the configuration process for your AEM as a Cloud Service environment. This process may take some time, and you will be notified once it is completed.
 
 ![Wait for Adobe to configure the environment.](./assets/cmk/step4.png)
@@ -211,8 +213,10 @@ This enhanced implementation is currently in Private Beta, and can be enabled fo
 -->
 
 ## Complete the CMK Setup {#complete-the-cmk-setup}
+
 Once the configuration process is completed, you will be able to see the status of your CMK setup in the UI. You can also see the key vault and the encryption key.
 ![The process in now completed](./assets/cmk/step5.png)
 
 ## Questions and Support {#questions-and-support}
+
 Reach out to us if you have any questions, inquiries, or need assistance with the Customer Managed Keys setup for AEM as a Cloud Service. Adobe Support can help you with any questions you might have.
