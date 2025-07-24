@@ -38,7 +38,7 @@ The [API reference documentation](https://developer.adobe.com/experience-cloud/e
 
 ## Document Generation
 
-Communications document generation APIs help to combine a template (XFA or PDF) with customer data (XML) to generate documents in PDF and Print Formats like PS, PCL, DPL, IPL, and ZPL formats. These APIs utilize PDF and XFA templates with [XML data](communications-known-issues-limitations.md#form-data) to generate a single document on demand or multiple documents using a batch job.
+Communications document generation APIs help to combine a template (XFA or PDF) with customer data (XML) to generate documents in PDF, AFP (Advanced Function Presentation) and Print Formats like PS, PCL, DPL, IPL, and ZPL formats. These APIs use PDF and XFA templates with [XML data](communications-known-issues-limitations.md#form-data) to generate a single document on demand or multiple documents using a batch job.
 
 Typically, you create a template using [Designer](use-forms-designer.md) and use Communications APIs to merge data with the template. Your application can send the output document to a network printer, a local printer, or to a storage system for archival. A typical out of the box and custom workflows look like the following:
 
@@ -48,14 +48,28 @@ Depending on the use case, you can also make these documents available for downl
 
 ### Key Document Generation Capabilities
 
-#### Create PDF documents {#create-pdf-documents}
+#### Create documents in PDF/AFP electronic formats
 
-You can use the document generation APIs to create a PDF document that is based on a form design and XML form data. The output is a non-interactive PDF document. That is, users cannot enter or modify the form data. A basic workflow is to merge XML form data with a form design to create a PDF document. The following Illustration shows the merging of a form design and XML form data to produce a PDF document.
+You can use the document generation APIs to create a document in PDF or AFP formats that is based on a form design and XML form data. The output is a non-interactive document. That is, users cannot enter or modify the form data. A basic workflow is to merge XML form data with a form design to create a document. The following Illustration shows the merging of a form design and XML form data to produce a PDF document.
 
 ![Create PDF documents](assets/outPutPDF_popup.png)
-Figure: Typical workflow to create a PDF document
+Figure: Typical workflow to create a document
 
-The document generation API returns the generated PDF document. You can also optionally upload the generated PDFs to Azure Blob Storage.
+The below table displays the difference between the AFP and PDF formats: 
+
+| **Feature**                | **AFP (Advanced Function Presentation)**                          | **PDF (Portable Document Format)**                          |
+|---------------------------|--------------------------------------------------------------------|-------------------------------------------------------------|
+| **Purpose**               | High-volume printing and production of transactional documents     | General-purpose document sharing and viewing                |
+| **Use Case**              | Banking statements, bills, invoices, insurance documents           | E-books, forms, reports, resumes, manuals                   |
+| **Platform Origin**       | Developed by IBM                                                   | Developed by Adobe                                          |
+| **Structure**             | Page-oriented format with structured fields and objects            | Page-oriented but with fixed layout                         |
+| **Editability**           | Designed for production printing and is rarely edited                  | Can be edited with various tools, for example, Adobe Acrobat      |
+| **File Size & Performance**| Optimized for performance in high-speed printing environments     | May be larger and less optimized for bulk output            |
+| **Interactivity**         | Minimal to none; static pages                                      | Supports interactive elements like forms, links, JavaScript |
+| **Output Control**        | Fine-grained control over layout for printers                      | Visual layout optimized for screen and print                |
+| **Fonts and Graphics**    | Uses font and resource references; requires renderers to interpret | Embeds fonts and images directly in the file                |
+
+The document generation API returns the generated PDF document or AFP document. You can also optionally upload the generated PDFs to Azure Blob Storage.
 
 <span class="preview"> Uploading the generated PDFs using document generation API to Azure Blob Storage capability is under [Early Adopter Program](/help/forms/early-access-ea-features.md). You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 

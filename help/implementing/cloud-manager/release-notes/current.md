@@ -1,61 +1,73 @@
 ---
-title: Release Notes for Cloud Manager 2025.6.0
-description: Learn about the release of Cloud Manager 2025.6.0 in Adobe Experience Manager as a Cloud Service.
+title: Release Notes for Cloud Manager 2025.7.0
+description: Learn about the release of Cloud Manager 2025.7.0 in Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 ---
-# Release notes for Cloud Manager 2025.6.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release notes for Cloud Manager 2025.7.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
 <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.03.0+Release -->
 
-Learn about the release of Cloud Manager 2025.6.0 in AEM (Adobe Experience Manager) as a Cloud Service.
+Learn about the release of Cloud Manager 2025.7.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Release dates {#release-date}
 
-The release date for Cloud Manager 2025.6.0 in AEM as a Cloud Service is Thursday, June 5, 2025. 
+The release date for Cloud Manager 2025.7.0 in AEM as a Cloud Service is Thursday, July 10, 2025. 
 
-The next planned release is Thursday, July 10, 2025.
+The next planned release is Thursday, August 7, 2025.
  
 ## What's new {#what-is-new}
 
-* **License dashboard now includes Edge Delivery Services license**
+* **Cloud Manager adds ECDSA (Elliptic Curve Digital Signature Algorithm) SSL certificate support**
 
-    Edge Delivery Services license usage is now displayed in the License dashboard, providing you with clearer visibility into your entitlements and status. <!-- CMGR-67686 -->
+    Cloud Manager now supports ECDSA certificates. The feature delivers strong security with smaller key sizes, enabling customers to apply lightweight modern cryptography in their CDN configurations. <!-- https://jira.corp.adobe.com/browse/CMGR-62399 -->
 
-    ![License Dashboard](/help/implementing/cloud-manager/assets/license-dashboard.png)
+* **Download Site license-usage report**
+
+    On the **Sites usage details** page (In Cloud Manager, click **License**. In the Solutions table, in the **Sites** row, click **View usage details**), customers can now click **Download report** to export its data as a CSV file. This download simplifies analyzing and sharing usage trends. <!-- https://jira.corp.adobe.com/browse/CMGR-42274 -->
+
+    ![Sites usage details page](/help/implementing/cloud-manager/release-notes/assets/sites-license-usage-page.png)
 
     See [License dashboard](/help/implementing/cloud-manager/license-dashboard.md).
 
-* **Edge Delivery site configuration updated**
+## Alpha/Beta programs {#private-beta-program}
 
-    Simplified the flow for adding an Edge Delivery site by requesting the **Edge Delivery Origin** instead of the **Repository URL**, making onboarding and setup faster and more intuitive <!-- CMGR-67686 -->
+Participate in Cloud Manager's alpha and beta programs to get exclusive access to upcoming features before their general release.
 
-    ![Add Edge Delivery site dialog box](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-site.png)
+The following opportunities are currently available:
 
-    See [Add an Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md).
+### One-click rollback for pipeline deployments {#one-click-rollback} 
 
-* **Pipeline favorites**
+Quickly revert to a previous deployment if the latest customer source code is not working as expected—no need to rerun the full pipeline or manually revert commits.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-    In this release, Cloud Manager introduces the ability to pin favorite pipelines, allowing you to mark specific pipelines as favorites so they appear at the top of the list on the **Pipelines** page. This enhancement makes frequently accessed pipelines easier to find and run. <!-- CMGR-68293 -->
-
-    ![Pipelines marked as favorites](/help/implementing/cloud-manager/release-notes/assets/pipeline-favorites.png) *Two pipelines marked as favorites.*
-
-    See [Mark pipeline favorites](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites).
+![Restore customer source code from the Environments card](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Environments card above showing the **Restore** > **Previous code deployed** option for a selected environment.* 
 
 
-## Private beta program {#private-beta-program}
+![Restore previous code deployed dialog box](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png) 
+*In the **Restore previous code deployed** dialog box, review the currently deployed version and the version you want to restore, then click **Confirm***.
 
-Participate in Cloud Manager's private Beta Program to get exclusive access to upcoming features before their general release.
 
-The following private beta opportunities are currently available:
+![Restoring activation](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png) 
+*Cloud Manager rolls the environment back to the earlier build, keeps content and configuration intact, and marks the environment **Restoring** until deployment completes.*
+
+
+![Source code version in use](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *The Environment details view, as seen above, now also shows the active source-code version in use.*
+
+If you are interested in testing this new feature and sharing your feedback, send an email to [restorecode@adobe.com](mailto:restorecode@adobe.com) from your email address associated with your Adobe ID.
+
+See [Restore the Previous Code Deployed in AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
+
+See also [Content Restore in AEM as a Cloud Service](/help/operations/restore.md).
 
 
 ### Specialized Testing Environment {#specialized-test-environment}
 
-Cloud Manager now supports the addition of a new environment type called **Specialized Testing Environment**. The environment is designed to help teams validate features under near-production conditions before going live. This environment type is distinct from *Production + Stage*, *Development*, or *Rapid Development* environments and offers a focused space for running advanced validation scenarios. 
+Cloud Manager now supports the addition of a new environment type called **Specialized Testing Environment**. The environment is designed to help teams validate features under near-production conditions before going live. This environment type is distinct from *Production + Stage*, *Development*, or *Rapid Development* environments and offers a focused space for running advanced validation scenarios.
+
+Recent enhancement: You can now configure specialized testing environments on a non-production pipeline through a simpler, more intuitive workflow. The streamlined setup speeds completion and reduces configuration errors.
 
 See [Add a Specialized Testing Environment](/help/implementing/cloud-manager/specialized-test-environment.md).
 
@@ -114,8 +126,13 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
 ## Bug fixes
 
-* Sandbox environments previously marked as `HIBERNATED` no longer remain stuck in that state, allowing pipeline execution or deployment to proceed as expected. <!-- CMGR-67705 -->
-* AEM Cloud Manager now correctly maps Maven build failures caused by 409 errors (conflicts) when fetching customer artifacts to a customer-caused failure. This change improves error messaging by distinguishing between internal errors and issues related to customer environment setup. <!-- CMGR-66673 -->
+* Cloud Manager now updates the release version for all pipelines during environment upgrades, ensuring consistent version tracking across all pipeline types. <!-- CMGR-69043 -->
+* The UI now displays status and detailed error messages when a Domain Validation (DV) SSL certificate fails, helping to understand and resolve certificate issues. <!-- CMGR-68872 -->
+* While editing a domain mapping, the UI now prevents selecting SSL certificates that do not match the chosen domain, reducing misconfigurations and improving reliability during setup. <!-- CMGR-64307 -->
+* In some situations, the certificates were not properly deleted, maintaining the domain is still active. <!-- CMGR-69867 -->
+* Fixed an issue that could block upgrades from *Adobe Assets* to *Adobe Assets Ultimate* in certain cases. Transitions are now smoother and more reliable. <!-- CMGR-69506 -->
+* Resolved an issue where key region fields are automatically set when creating multi-region environments to support downstream services and deployments smoothly. <!-- CMGR-69471 -->
+* Resolved an issue where some configuration pipelines did not stop properly after execution. Now, pipelines are completed successfully and close as expected, improving reliability. <!-- CMGR-69344 -->
 
 
 <!-- ## Known issues {#known-issues} -->
