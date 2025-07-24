@@ -58,21 +58,6 @@ To add assets to Content Hub, perform the following steps:
 
 Administrators can also configure the mandatory and optional fields that display while uploading assets, such as Campaign name, Keywords, Channels, and so on. For more information, see [Configure the Content Hub user interface](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
 
-
-## Add assets to Content Hub from OneDrive or Dropbox data sources {#add-assets-onedrive-dropbox}
-
-To add assets to Content Hub from OneDrive or Dropbox data sources:
-
-1. Click **[!UICONTROL Add Assets]** to view the **[!UICONTROL Add your approved assets]** dialog box that enables you to import assets from OneDrive or Dropbox.
-
-1. Click **[!UICONTROL OneDrive]** or **[!UICONTROL Dropbox]** to start the import process. Content Hub prompts you to log on to your OneDrive or Dropbox account and then displays your OneDrive or Dropbox folder structure in the left pane.
-
-1. Click the + icon adjacent to the file or the folder name to view the item in the list of Selected items. After selecting all the files that you need to add to the Content Hub portal, repeat steps 3 to 6 of [Add assets to Content Hub from the local file system](#add-assets-local-file-system) to complete the upload process.
-
-   ![Upload assets to Content Hub from OneDrive or Dropbox](assets/add-assets-onedrive-dropbox.png)
-
-Administrators can also configure the mandatory and optional fields that display while uploading assets, such as Campaign name, Keywords, Channels, and so on. For more information, see [Configure the Content Hub user interface](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
-
 ## Manage assets uploaded using Content Hub {#manage-assets-uploaded-using-content-hub}
 
 [Content Hub users with rights to add assets](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) can [add assets to the Content Hub](/help/assets/upload-brand-approved-assets.md) either from local file system or import assets from OneDrive or Dropbox data sources. All assets display at the top-level in Content Hub irrespective of the folder structure available on your local file system or OneDrive and Dropbox data sources to enhance the search capabilities.

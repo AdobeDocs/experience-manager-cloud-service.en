@@ -46,7 +46,11 @@ You can also use assets delivered using [!DNL Dynamic Media with OpenAPI capabil
 * Governance (references vs. copies of the asset), which helps with auto-propagation of asset lifecycle events like expiration, deletion, and updates.
 * Dynamic image renditions and Smart Crop.
 * Rich media optimization and delivery, such as adaptive video streaming out-of-the-box, and original asset delivery for PDFs.
+<!--
+
 * Asset-level impressions report ([limited availability](/help/assets/manage-reports-assets-view.md#dynamic-media-delivery-reports)).
+
+-->
 
 For more details on the capabilities, see [[!DNL Dynamic Media with OpenAPI capabilities]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) documentation.
 
