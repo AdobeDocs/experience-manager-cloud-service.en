@@ -46,18 +46,32 @@ You will need to share the key vault URL, the encryption key name and informatio
 
 The Azure Command Line Interface (CLI) is the only requirement for this guide. If you do not already have the Azure CLI installed, follow the official installation instructions [here](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
 
-Before proceeding with the rest of this guide, please login your CLI with `az login`. 
+Before proceeding with the rest of this guide, please login your CLI with `az login`.
 
 >[!NOTE]
 >
 >While this guide uses the Azure CLI, it is possible to perform the same operations via the Azure console. If you prefer to use the Azure console, use the commands below as a reference.
 
+
+## Start the CMK configuration process for AEM as a Cloud Service {#request-cmk-for-aem-as-a-cloud-service}
+
+You need to request the Customer Managed Keys (CMK) configuration for your AEM as a Cloud Service environment via the UI. To do this, navigate to the AEM Home Security UI, under the **Customer Managed Keys** section. 
+Then you can start the onboarding process by clicking on the **Start onboarding** button.
+
+![Start onboarding of a website using the CMK UI](./assets/cmk/step1.png)
+
+
 ## Obtain an Application ID from Adobe {#obtain-an-application-id-from-adobe}
 
-Adobe will provide you with an Entra application ID that you will need in the rest of this guide. If you don't already have an application ID, contact Adobe to obtain one.
+After starting the onboarding process, an Entra application ID will be provided by Adobe. This application ID is necessary for the rest of the guide and will be used to create a service principal that allows Adobe to access your key vault. If you don't already have an application ID, you need to wait until it is provided by Adobe.
+
+![The request is being process, wait for Adobe to provide the Entra Application ID](./assets/cmk/step2.png)
+
+After the request is completed, you will be able to see the application ID in the CMK UI.
+
+![The Entra Application ID is provided by Adobe](./assets/cmk/step3.png)
 
 ## Create a New Resource Group {#create-a-new-resource-group}
-
 Create a new resource group in a location of your choice.
 
 ```powershell
@@ -161,7 +175,8 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
-
+Provide this information in the CMK UI:
+![Fill the information in the UI](./assets/cmk/step3a.png)
 
 ## Implications of Revoking Key Access {#implications-of-revoking-key-access}
 
@@ -170,8 +185,9 @@ Revoking or disabling access to the Key Vault, key, or CMK app can result in sig
 If you decide to revoke Platform access to your data, you can do so by removing the user role associated with the application from the Key Vault within Azure.
 
 ## Next steps {#next-steps}
+After you have provided the required information in the CMK UI, Adobe will start the configuration process for your AEM as a Cloud Service environment. This process may take some time, and you will be notified once it is completed.
 
-Follow the steps in the CMK UI to complete the setup of your Customer Managed Keys. The CMK UI is available in the AEM Home Security UI, under the **Customer Managed Keys** section.
+![Wait for Adobe to configure the environment.](./assets/cmk/step4.png)
 
 <!-- Alexandru: hiding this for now
 
@@ -194,5 +210,9 @@ __
 This enhanced implementation is currently in Private Beta, and can be enabled for selected customers who agree to subscribe to the Private Beta program and work closely with Adobe Engineering. If you are interested in the Private Beta for CMK using Private Link, please contact Adobe for further information.
 -->
 
+## Complete the CMK Setup {#complete-the-cmk-setup}
+Once the configuration process is completed, you will be able to see the status of your CMK setup in the UI. You can also see the key vault and the encryption key.
+![The process in now completed](./assets/cmk/step5.png)
+
 ## Questions and Support {#questions-and-support}
-Reach out to us if you have any questions, inquiries or need assistance with the Customer Managed Keys setup for AEM as a Cloud Service. Adobe Support? can help you with any issues you may encounter during the process.
+Reach out to us if you have any questions, inquiries or need assistance with the Customer Managed Keys setup for AEM as a Cloud Service. Adobe Support can help you with any questions you might have.
