@@ -6,7 +6,7 @@ role: Admin, User
 
 # Asset preview using [!DNL Dynamic Media with OpenAPI capabilities]{#asset-preview-using-Dynamic-Media-with-OpenAPI-capabilities}
 
-[!DNL Dynamic Media with OpenAPI capabilities] lets you preview assets in your web page before publishing them live. The asset preview is available on the author and preview tiers in [!DNL Adobe Experience Manager (AEM) Cloud Service] environment. Share the preview page with the updated assets to get feedback, make changes, and refine assets before publishing them for public consumption. You can create and track multiple asset versions throughout the review cycle.
+[!DNL Dynamic Media with OpenAPI capabilities] lets you preview assets in your web page before publishing them live. The asset preview is available on the author and preview tiers in [!DNL Adobe Experience Manager (AEM) Site] environment. Share the preview page with the updated assets to get feedback, make changes, and refine assets before publishing them for public consumption. You can create and track multiple asset versions throughout the review cycle.
 
 ## Before you begin{#prerequisites-for-previewing-assets-using-Dynamic-Media-with-OpenAPI-capabilities}
 
@@ -17,4 +17,6 @@ You must have access to AEM Assets as a Cloud Service and permissions to edit th
 Execute the following steps to preview assets in your web page using [!DNL Dynamic Media with OpenAPI capabilities] before publishing them live:
 
 1. 
+
+1. [Access remote assets in AEM Page Editor](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor)
 
