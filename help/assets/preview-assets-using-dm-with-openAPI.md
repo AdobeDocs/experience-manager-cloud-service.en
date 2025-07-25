@@ -12,11 +12,10 @@ role: Admin, User
 
 You must have access to AEM Assets as a Cloud Service and permissions to edit the Review Status property for an asset.
 
-# Preview assets using [!DNL Dynamic Media with OpenAPI capabilities]{#Preview-assets-using-Dynamic-Media-with-OpenAPI-capabilities}
+## Preview assets using [!DNL Dynamic Media with OpenAPI capabilities]{#Preview-assets-using-Dynamic-Media-with-OpenAPI-capabilities}
 
 Execute the following steps to preview assets in your web page using [!DNL Dynamic Media with OpenAPI capabilities] before publishing them live:
 
 1. 
-
 1. [Access remote assets in AEM Page Editor](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor)
 
