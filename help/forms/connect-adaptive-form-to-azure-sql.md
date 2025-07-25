@@ -153,3 +153,7 @@ Once the AEM and Azure setup is complete and the code changes are deployed:
 * Monitor JDBC connectivity logs for failures and latency.
 * Follow Azure best practices for securing SQL databases and firewall configurations.
 * Avoid using high-privilege database accounts for form access.
+
+## Related Articles
+
+{{af-submit-action}}
