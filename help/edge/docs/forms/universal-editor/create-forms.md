@@ -79,7 +79,7 @@ Perform the following steps to choose the template and create the form:
 
     When you click **[!UICONTROL Create]**, the form opens in the Universal Editor for authoring.
 
-    ![author the form](/help/edge/assets/author-form.png)
+    ![Screenshot of the Universal Editor showing a form being authored with the component palette on the left, form canvas in the center, and properties panel on the right](/help/edge/assets/author-form.png)
 1. Click **[!UICONTROL Create]** to create the form. Now, you can [author the form using the Universal Editor](#author-the-form).
 
 >[!TAB Core Component-based template]
@@ -129,7 +129,7 @@ Perform the following steps to author forms using the Universal Editor for Edge 
 
      The screenshot below displays the `Registration Form` authored in the Universal Editor:
 
-     ![contact us form](/help/edge/assets/contact-us.png)
+     ![Screenshot of a completed contact us form in the Universal Editor showing form fields for name, email, phone, and message with proper styling and layout](/help/edge/assets/contact-us.png)
 
   >[!NOTE]
   >
@@ -213,7 +213,7 @@ To access the form on Edge Delivery Services, it is mandatory to publish the for
 
    1. Publish the form by clicking the **[!UICONTROL Publish]** button in the upper-right corner of the Universal Editor.
 
-  ![publish form](/help/edge/assets/publish-form.png)
+  ![Screenshot of the Universal Editor showing the publish dialog with form publication options and confirmation buttons](/help/edge/assets/publish-form.png)
 
    >[!NOTE]
    >
