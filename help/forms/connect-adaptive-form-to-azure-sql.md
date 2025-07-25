@@ -26,11 +26,21 @@ Integrating Adaptive Forms with Azure SQL offers several benefits:
 
 ## Prerequisites
 
-* Enable [Advanced networking configured using a dedicated egress IP](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address).
+* Create [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal) and ensure **proxy connection** is enabled.
+    
+    >[!NOTE]
+    >
+    > Navigate to: `Azure Portal → SQL Server → Security → Networking → Connectivity` to enable **proxy connection**.
+
+   ![Create Azure Db](/help/forms/assets/create-azure-db.png)
+
+* Enable [Advanced networking configured using a dedicated egress IP](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address) for the created Azure database.
 
     >[!NOTE]
     >
     >    After enabling dedicated egress IP. Go to `Azure Portal → SQL Server → Security → Networking → Public Access` and add the egress IP to the firewall rules.
+
+    ![Egress IP](/help/forms/assets/cretae-azure-db-egress-ip.png)
 
 * Set port forwarding in the cloud environment with:
     * **portOrigin**: Between `30000–30999`
@@ -40,12 +50,6 @@ Integrating Adaptive Forms with Azure SQL offers several benefits:
         > ![NOTE]
         > 
         > You can contact Adobe Cloud Manager support to configure the port forwarding.
-
-* Create [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal) and ensure **proxy connection** is enabled.
-    
-    >[!NOTE]
-    >
-    > Navigate to: `Azure Portal → SQL Server → Security → Networking → Connectivity` to enable **proxy connection**.
 
 
 ## Steps to Connect Adaptive Forms to Azure SQL
@@ -70,11 +74,11 @@ Integrating Adaptive Forms with Azure SQL offers several benefits:
 
 **Step2: Add Required JARs**
 
-Include the [MySQL driver dependency](https://central.sonatype.com/artifact/com.microsoft.sqlserver/mssql-jdbc/12.8.0.jre11?smo=true) to the AEM project via the `all` package.:
+Include the [SQL driver dependency](https://central.sonatype.com/artifact/com.microsoft.sqlserver/mssql-jdbc/12.8.0.jre11?smo=true) to the AEM project via the `all` package.:
 
 >[!NOTE]
 >
-> To include the MySQL dependency in your project, refer to the [MySQL driver dependencies](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies) section.
+> To include the SQL dependency in your project, refer to the [SQL driver dependencies](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies) section.
 
 **Step 3: Add JDBC Configuration**
 
@@ -84,12 +88,12 @@ Include the [MySQL driver dependency](https://central.sonatype.com/artifact/com.
    cd ui.config/src/jcr_root/apps/<application folder>/osgiconfig/config/
    ```
 
-**Step 4: Create the Azure MySQL Connection Configuration File**
+**Step 4: Create the Azure SQL Connection Configuration File**
 
 1. Create the file:
 
       ```bash
-      com.day.commons.datasource.jdbcpool.JdbcPoolService~<application folder>-mysql.cfg.json
+      com.day.commons.datasource.jdbcpool.JdbcPoolService~<application folder>-sql.cfg.json
       ```
 
 1. Add the below lines of code:
@@ -133,6 +137,8 @@ Once the AEM and Azure setup is complete and the code changes are deployed:
 1. Create new **Form Data Model**.
 1. In the **Data Sources** tab, select the created JDBC configuration.
 1. Click **[!UICONTROL Create]** and verify the connection.
+
+![Create Form Data Model](/help/forms/assets/create-azure-sql-fdm.png)
 
 **Step 8:  Use the created FDM in an Adaptive Form**
 
