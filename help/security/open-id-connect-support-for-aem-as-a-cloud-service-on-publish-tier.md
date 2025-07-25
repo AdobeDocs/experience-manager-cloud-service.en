@@ -178,7 +178,7 @@ To configure a group to for the enterprise application in the Microsoft Azure Po
 
 ![OIDC Group add](/help/security/assets/oidc-ad-additional-info.png)
 
-To enable the group claim in Id Token, add the claim inthe **Token Configuration** section of the Microsoft Azure Portal: <!-- Alexandru: this bit cound be clearer as well-->
+To enable the group claim in Id Token, add the claim in the **Token Configuration** section of the Microsoft Azure Portal: <!-- Alexandru: this bit cound be clearer as well-->
 
 ![OIDC Claim Token ID](/help/security/assets/oidc-claim-id-token.png)
 
