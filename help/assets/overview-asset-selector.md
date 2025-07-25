@@ -227,7 +227,7 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
         <p>
         <em>Dig up the capabilities to integrate Asset Selector with non-Adobe applications.</em>
         </p>
-    </td>
+    </td>   
     <td>
         <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="Integrate Asset Selector graphic"><br/>
         <a href="integrate-asset-selector-dynamic-media-open-api.md">Integrate Asset Selector with Dynamic Media Open APIs</a>

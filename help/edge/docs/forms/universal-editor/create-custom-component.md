@@ -7,7 +7,7 @@ exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 ---
 # Create Custom Component in WYSIWYG Authoring
 
-<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 
 
 Edge Delivery Services Forms offer customization, allowing front-end developers to build tailored form components. These custom components integrate seamlessly into the WYSIWYG authoring experience, enabling form authors to easily add, configure, and manage them within the form editor. With custom components, authors can enhance functionality while ensuring a smooth and intuitive authoring process.
@@ -33,7 +33,7 @@ Adding a custom component in the Universal Editor means making a new component a
 
 Let's take an example of creating a new custom component called **range**. The range component appears as a straight line and displays values such as the minimum, maximum, or selected value.
 
-![Range component style](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
+![A visual representation of a range component showing a slider with minimum and maximum values, and a selected value indicator](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
 
 By the end of this article, you learn to create custom components from the scratch.
 
@@ -319,11 +319,11 @@ const OOTBComponentDecorators = ['file-input',
 
 After completing the above steps, the custom component appears in the form's component list within the Universal Editor. You can then drag and drop it into your form section.
 
-![range component](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+![Screenshot of the Universal Editor component palette showing the custom range component available for drag-and-drop into forms](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
 
 The screenshot below shows the properties of the `range` component added to the component model, which specifies the properties the form author can configure.:
 
-![Properties of range component](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
+![Screenshot of the Universal Editor properties panel displaying configurable settings for the range component including basic properties, validation rules, and styling options](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 You can now define the runtime behavior of your custom component by adding styling and functionality.
 
@@ -451,7 +451,7 @@ You can modify custom components using predefined markup, as explained in the [S
     After incorporating custom styling and functionality, the range component's appearance and behavior are enhanced. The updated design reflects the applied styles, while the added functionality ensures a more dynamic and interactive user experience. 
     The below screenshot illustrates the updated range component.
 
-![Range component style](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
+![The final range component in action showing a styled slider with value bubble display and interactive functionality in the Universal Editor](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
 
 ## Frequently Asked Question
 
