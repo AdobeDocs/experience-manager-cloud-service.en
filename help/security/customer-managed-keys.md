@@ -191,26 +191,6 @@ After you have provided the required information in the CMK UI, Adobe will start
 
 ![Wait for Adobe to configure the environment.](./assets/cmk/step4.png)
 
-<!-- Alexandru: hiding this for now
-
-### Private Link Approvals {#private-link-approvals}
-
->[!TIP]
->You can also consult the [Azure Documentation](https://learn.microsoft.com/en-us/azure/key-vault/general/private-link-service?tabs=portal#how-to-manage-a-private-endpoint-connection-to-key-vault-using-the-azure-portal) on how to approve a Private Endpoint Connection.
-
-Afterwards, an Adobe Engineer assigned to you will contact you to confirm the creation of the private endpoints, and will request you to approve a set of required Connection Requests. The requests can be approved either using the Azure Portal UI, where you can go to **KeyVault > Settings > Networking > Private Endpoint Connections** and approve the requests with names similar to these: 
-
-`mongodb-atlas-<REGION>-<NUMBER>`, `storage-account-private-endpoint` and `backup-storage-account-private-endpoint`. 
-
-Notify the Adobe Engineer once this process is complete and the Private Endpoints show up as **Approved**. -->
-
-<!-- Gerald: Hiding this not to confuse customers with the Private Link Beta
-## Customer Managed Keys in Private Beta {#customer-managed-keys-in-private-beta}
-
-The Engineering team at Adobe is currently working on an enhanced implementation of CMK leveraging Azure's Private Link. The new implementation will allow sharing your key through the Azure backbone thanks to a direct Private Link connection between Adobe's tenant and your Key Vault.
-__
-This enhanced implementation is currently in Private Beta, and can be enabled for selected customers who agree to subscribe to the Private Beta program and work closely with Adobe Engineering. If you are interested in the Private Beta for CMK using Private Link, please contact Adobe for further information.
--->
 
 ## Complete the CMK Setup {#complete-the-cmk-setup}
 
