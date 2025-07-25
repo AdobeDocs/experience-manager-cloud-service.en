@@ -291,3 +291,15 @@ Enable the following setting on the Configurations user interface to allow Conte
 -->
 
 Learn more about [sharing assets in the [!DNL Content Hub]](share-assets-content-hub.md).
+
+### Select repository {#select-repository}
+
+When you configure Content Hub for Production and other lower environments for the same Program, you can select the repository and display the assets for the selected environment. Execute the following steps:
+
+1. Click the user icon in the right pane.
+
+1. In the **[!UICONTROL Product Settings]** section, select **[!UICONTROL Select Repository]**.
+
+1. Select the repository from the **[!UICONTROL Repository]** drop-down menu and click **[!UICONTROL OK]** to confirm.
+
+Content Hub now displays assets for the selected environment.
