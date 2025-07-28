@@ -86,7 +86,7 @@ The following table demonstrates the difference between the features available i
   <tr>
     <td>Set the drop-down list of options </td>
     <td>The drop-down list of options is set using the Rule Editor's <b>Set Options of</b> property.</td>
-    <td>The dropdown options are set using the custom functions. 
+    <td>The drop-down list of options is set using the Rule Editor's <b>Invoke Service</b> property. 
    </td>
    </tr>
      </tr>

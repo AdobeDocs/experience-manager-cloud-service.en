@@ -31,6 +31,8 @@ Visual rule editor allows you to create rules for success and failure handlers f
 
 ![Invoke service handlers](/help/forms/assets/invoke-service-rule-editor.png)
 
+### Adding Success Handler and Failure Handler
+
 To add success or failure handler, click **[!UICONTROL Add Success Handler]** or **[!UICONTROL Add Failure Handler]**, respectively. 
 
 When you click **[!UICONTROL Add Success Handler]**, the **[!UICONTROL Invoke Service Success Handler]** rule editor appears, allowing you to specify rules or logic to manage the **Invoke Service** output response when the operation is successful. You can specify rules even without defining conditions; however, you can add conditions for the success handler by clicking the **[!UICONTROL Add Condition]** option. 
@@ -150,6 +152,10 @@ To achieve this, create a rule on the `Pet ID` text box to invoke the `getPetByI
 
 ![Set drop-down value](/help/forms/assets/set-dropdownoption.png)  
 
+>[!NOTE]
+>
+> See the [Adding Success Handler and Failure Handler](#adding-success-handler-and-failure-handler) section to learn how to set success and failure handlers. 
+
 #### Output  
 
 Enter `101` in the `Pet ID` text box to dynamically populate the dropdown options based on the entered value.  
@@ -171,6 +177,10 @@ Create a rule on the `Pet ID` text box to invoke the `getPetById` service. In **
 
 ![Create rule for repeatable panel](/help/forms/assets/create-rule-repeatable-panel.png)  
 
+>[!NOTE]
+>
+> See the [Adding Success Handler and Failure Handler](#adding-success-handler-and-failure-handler) section to learn how to set success and failure handlers. 
+
 #### Output  
 
 Enter `101` in the `Pet ID` text box to populate the repeatable panel dynamically based on the input value.  
@@ -190,6 +200,10 @@ This use case demonstrates how to dynamically set the value of a panel based on 
 
 Create a rule on the `Pet ID` text box to invoke the `getPetById` service. In **[!UICONTROL Add Success Handler]**, add another success handler response. Set the value of the `categoryname` text box to `category.name` in the rule.  
 
+>[!NOTE]
+>
+> See the [Adding Success Handler and Failure Handler](#adding-success-handler-and-failure-handler) section to learn how to set success and failure handlers. 
+
 ![Create rule for repeatable panel](/help/forms/assets/set-panel-values.png)  
 
 #### Output  
@@ -204,7 +218,11 @@ This use case demonstrates how to use the output of an **Invoke Service** to dyn
 
 #### Implementation  
 
-Create a rule on the `Pet ID` text box to invoke the `getPetById` service. In **[!UICONTROL Add Failure Handler]**, add a failure handler response. Hide the **Submit** button if an incorrect `Pet ID` is entered.  
+Create a rule on the `Pet ID` text box to invoke the `getPetById` service. In **[!UICONTROL Add Failure Handler]**, add a failure handler response. Hide the **Submit** button if an incorrect `Pet ID` is entered. 
+
+>[!NOTE]
+>
+> See the [Adding Success Handler and Failure Handler](#adding-success-handler-and-failure-handler) section to learn how to set success and failure handlers. 
 
 ![Failure Handler](/help/forms/assets/create-rule-failure-handler.png)  
 
