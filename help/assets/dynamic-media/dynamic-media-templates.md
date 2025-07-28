@@ -153,7 +153,7 @@ Execute these steps to add images to the canvas:
 1. Drag and drop an image on the canvas to use it. See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) for resizing or repositioning a layer on the canvas.
 ![create a banner within seconds](/help/assets/assets/add-image-to-canvas.png)
 1. Enable the **[!UICONTROL Uniform Radius]** toggle and use the **[!UICONTROL Corner Radius]** slider to adjust the roundness of all four corners of an image uniformly. Disable the toggle to customize the corner roundness by assigning specific radius values to each corner.
-![create a banner within seconds](/help/assets/assets/enable)
+![create a banner within seconds](/help/assets/assets/enable-uniform-radius-image.png)
 
 ### Add text layers to the canvas{#add-text-to-the-canvas}
 
