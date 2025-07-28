@@ -32,9 +32,10 @@ Follow these steps to preview an asset on your Sites page before publishing it l
 Execute the following steps to approve an asset for public delivery:
 
 1. In [!DNL Assets View], select **[!UICONTROL Assets]** and navigate to your folder.
-1. Select the asset to preview.
-1. Click **[!UICONTROL Details]**.
-1. In the [!UICONTROL Information Panel], set **[!UICONTROL Status]** to **[!UICONTROL Approved]**, then click **[!UICONTROL Save]**.
+2. Select the asset to preview.
+3. Click **[!UICONTROL Details]**.
+4. In the [!UICONTROL Information Panel], set **[!UICONTROL Status]** to **[!UICONTROL Approved]**, then click **[!UICONTROL Save]**.
+![](/help/assets/assets/asset-status.png)
 
    >[!NOTE]
    >
@@ -47,7 +48,7 @@ Execute these steps to replace the existing asset on your site with the latest a
 1. In your Sites authoring page, follow the steps in [Access remote assets in AEM Page Editor](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) section to select the latest approved asset.
 1. Publish the page by executing the steps in [Publishing from the Page Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor) section. Alternatively, follow the steps in [Publishing Pages from the Sites Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console) section to publish your page from your site's console.
 ![The page has been published](/help/assets/assets/the-page-has-been-publushed.png)
-A confirmation message **[!UICONTROL The page has been published]** displays after successful publication.
+A confirmation message **[!UICONTROL The page has been published]** displays after successful publishing.
 
 1. Select [View as Published](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/introduction#view-as-published) from the authoring page to display a published view of your live page (with updated asset) in a new tab. Use this copy of your live page to [Verify the publish status](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#determining-publication-status).
 
