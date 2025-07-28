@@ -1,6 +1,6 @@
 ---
 title: Preview assets using [!DNL Dynamic Media with OpenAPI capabilities]
-description: [!DNL Dynamic Media with OpenAPI capabilities] lets you preview assets in your web pages on the author and preview tiers before publishing them live. Share the preview page with multiple stakeholders to refine assets through a review cycle, and create and track multiple asset versions throughout the review process.
+description: [!DNL Dynamic Media with OpenAPI capabilities] lets you preview assets in your Sites page before making them publicly available. Share the preview page with multiple stakeholders to refine assets through a review cycle, and create and track multiple asset versions throughout the review process.
 role: Admin, User
 ---
 
