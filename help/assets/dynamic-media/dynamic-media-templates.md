@@ -152,6 +152,8 @@ Execute these steps to add images to the canvas:
 1. Browse the panel or use keywords in the search bar to find a specific image.
 1. Drag and drop an image on the canvas to use it. See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) for resizing or repositioning a layer on the canvas.
 ![create a banner within seconds](/help/assets/assets/add-image-to-canvas.png)
+1. Enable the **[!UICONTROL Uniform Radius]** toggle and use the **[!UICONTROL Corner Radius]** slider to adjust the roundness of all four corners of an image uniformly. Disable the toggle to customize the corner roundness by assigning specific radius values to each corner.
+![create a banner within seconds](/help/assets/assets/enable)
 
 ### Add text layers to the canvas{#add-text-to-the-canvas}
 
@@ -166,16 +168,12 @@ See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) t
 
 ### Add shapes to the canvas {#add-shapes-to-the-canvas}
 
-Learn to add shapes to the canvas step by step in this video.
-![templates with support to dynamic updates](/help/assets/assets/add-shapes-to-the-canvas.png)
->[!VIDEO]()
-
 Execute these steps to add shapes to the canvas:
 
 1. Click ![creating shapes](/help/assets/assets/Shapes.svg), select a shape (rectangle or circle) to add it to the canvas. Use the shape's [[!UICONTROL Properties Panel]](#reposition-resize-delete-a-layer) to reposition, resize, rotate or delete the layer. 
 1. Scroll to the **[!UICONTROL Style]** section of the panel, define a hex code in the **[!UICONTROL Shape Color]** field or use the color picker to fill color in the selected shape. 
-1. Slide the **[!UICONTROL Corner Radius]** slider to adjust the corner curve of the rectangle. 
-![templates with support to dynamic updates](/help/assets/assets/add-shapes-to-the-canvas.png)
+1. Enable the **[!UICONTROL Uniform Radius]** toggle and use the **[!UICONTROL Corner Radius]** slider to adjust the roundness of all four corners of the rectangle uniformally. Disable the toggle to customize the corner roundness by assigning specific radius values to each corner.
+![templates with support to dynamic updates](/help/assets/assets/enable-uniform-radius-shape.png)
 1. [Add the **[!UICONTROL Hide]** parameter to the selected layer](#parameterise-a-layer) to show or hide the layer in the template in real time using the template URL. 
 1. Select the layer to [add a [!UICONTROL CTA] link](#add-CTA-in-dynamic-media-templates) to it, allowing users to click the shape as a hyperlink in the live template.
 
