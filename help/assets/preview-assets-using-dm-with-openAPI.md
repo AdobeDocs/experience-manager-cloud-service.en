@@ -8,7 +8,7 @@ role: Admin, User
 
 [!DNL Dynamic Media with OpenAPI capabilities] lets you preview assets available in your [!DNL Adobe Experience Manager (AEM) Sites] author page before making them publicly available. 
 
-To [generate an asset preview](#asset-preview-on-sites-page-using-Dynamic-Media-with-OpenAPI-capabilities) update the asset on the AEM sites author page and publish the page to generate a preview URL. Share this preview URL with stakeholders for review and feedback. After generating the preview page, [revert to the original live asset](#revert-to-the-original-live-asset) to keep the live site unchanged until you finalize the asset version for publishing. Reverting to the original live asset preserves the integrity of the live site and ensures users continue to see the original, consistent asset.
+To [generate an asset preview](#asset-preview-on-sites-page-using-Dynamic-Media-with-OpenAPI-capabilities) update the asset on the AEM sites author page and publish the page to generate a preview URL. Share this preview URL with stakeholders for review and feedback. After generating the preview page, [revert to the original live asset](#revert-to-the-original-live-asset) to keep the live site unchanged until you finalize the asset version for publishing. Reverting to the original live asset preserves the integrity of the live site and ensures that users continue to see the original, consistent asset.
 
 During the review cycle, you can create and manage multiple versions of the asset before publishing the final version for public use.
 
@@ -56,17 +56,17 @@ Execute these steps to replace the existing asset on your site with the latest a
 Execute the following steps to change the asset status from approved to preview to generate a preview URL of the page:
 
 1. In [!DNL Assets View], navigate to the asset's details page and change the **[!UICONTROL Status]** to **[!UICONTROL Preview]**. Click **[!UICONTROL Save]**.
-1. Navigate to your Sites authoring page, follow the steps in [Publishing Content to Preview](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content) section to generate a preview URL of your page. Share this preview URL with the stakeholders for review and feedback.
+1. Navigate to your Sites authoring page and follow the steps in the[Publishing Content to Preview](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content) section to generate a preview URL of your page. Share this preview URL with the stakeholders for review and feedback.
 
    >[!TIP]
    >
    >Switch between Preview and Publish versions of the page by replacing the word Preview with Publish (or vice versa) in the URL.
 
-After sharing the preview page with the stakeholders for review, [revert to the original live asset](#revert-to-the-original-live-asset) until you finalize the asset version to publish. This helps to maintain the integrity of the live site and ensure that users continue to see the original, consistent asset.
+After sharing the preview page with the stakeholders for review, [revert to the original live asset](#revert-to-the-original-live-asset) until you finalize the asset version to publish. This step helps to maintain the integrity of the live site and ensure that users continue to see the original, consistent asset.
 
 ## Revert to the original live asset{#revert-to-the-original-live-asset}
 
-Meanwhile the stakeholders review your asset file and suggest changes, revert to the original live asset to keep the live site unchanged to ensure your users continue to see the original, consistent asset. Execute the following steps to revert to the original live asset:
+Meanwhile, the stakeholders review your asset file and suggest changes, revert to the original live asset to keep the live site unchanged to ensure that your users continue to see the original, consistent asset. Execute the following steps to revert to the original live asset:
 
 1. In [!DNL Assets View], locate the asset that was originally live, navigate to its details page and set the **[!UICONTROL Status]** to **[!UICONTROL Approved]**. Click **[!UICONTROL Save]**.
 1. Navigate to your Sites authoring page and execute the steps in [Access remote assets in AEM Page Editor](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) section to select this re-approved asset using the asset selector panel. 
