@@ -6,7 +6,7 @@ role: Admin, User
 
 # Asset preview using [!DNL Dynamic Media with OpenAPI capabilities]{#asset-preview-using-Dynamic-Media-with-OpenAPI-capabilities}
 
-[!DNL Dynamic Media with OpenAPI capabilities] lets you preview assets in your Sites page before making them publicly available. You can update assets on the [!DNL Adobe Experience Manager (AEM) Sites] author page and share the preview page with stakeholders to review and refine the assets. Throughout the review cycle, you can create and track multiple versions of each asset before publishing them for public consumption.
+[!DNL Dynamic Media with OpenAPI capabilities] lets you preview assets in your [!DNL Adobe Experience Manager (AEM) Sites] author page before making them publicly available. You can share the [!DNL Adobe Experience Manager (AEM) Sites] preview page with stakeholders to review and refine the assets before making them live. Throughout the review cycle, you can create and track multiple versions of an asset before publishing it for public consumption.
 
 ## Before you begin{#prerequisites-for-previewing-assets-using-Dynamic-Media-with-OpenAPI-capabilities}
 
@@ -17,7 +17,7 @@ You must have access to [!DNL AEM Assets as a Cloud Service] and permissions to 
 Execute the following steps to preview assets in your web page using [!DNL Dynamic Media with OpenAPI capabilities] before publishing them live:
 
 1. On the [!DNL Assets View] home page, select **[!UICONTROL Assets]** and go to your folder. 
-1. Select the asset to preview in your sites page and click **[!UICONTROL Details]** to display the **[!UICONTROL Basic tab]** in the **[!UICONTROL Information panel]** by default.
+1. Select the asset to preview it in your sites page and click **[!UICONTROL Details]** to display the **[!UICONTROL Information panel]**.
 1. Click the dropdown in the **[!UICONTROL Status]** field and select **[!UICONTROL Approved]** and click **[!UICONTROL  Save]** to approve the asset for public delivery using [!DNL Dynamic Media with OpenAPI capabilities]. Asset selector panel opens in the [!DNL Adobe Experience Manager (AEM) Site] authoring page and displays only approved assets. 
 1. Execute the steps in [Access remote assets in AEM Page Editor](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) section to select your latest approved asset using the asset selector panel in your [!DNL Adobe Experience Manager (AEM) Site] authoring page.
 1. Execute the steps in [Publishing from the Page Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor) section to publish the page. See [Publishing Pages from the Sites Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console) section to publish your page from your site's console. **[!UICONTROL Page has been published]** message displays after publishing is complete. 
