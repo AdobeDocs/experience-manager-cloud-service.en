@@ -1,6 +1,6 @@
 ---
-title: Use [!DNL Dynamic Media with OpenAPI capabilities] to preview assets on AEM Site Page
-description: Use [!DNL Dynamic Media with OpenAPI capabilities] to preview assets in your Sites page before making them publicly available. Share the preview page with multiple stakeholders to refine assets through a review cycle, and create and track multiple asset versions throughout the review process
+title: Use [!DNL Dynamic Media with OpenAPI capabilities] to preview assets on [!DNL AEM Site] Page
+description: "Use [!DNL Dynamic Media with OpenAPI capabilities] to preview assets in your Sites page before making them publicly available. Share the preview page with multiple stakeholders to refine assets through a review cycle, and create and track multiple asset versions throughout the review process"
 role: Admin, User
 ---
 
@@ -24,17 +24,17 @@ Ensure you have:
 Follow these steps to preview an asset on your Sites page before publishing it live:
 
 1. [ Set the asset status to [!UICONTROL Approved] for public delivery](#approve-asset-for-public-delivery)
-2. [Replace the existing asset in your live site and publish the page](#replace-the-existing-asset-and-publish-the-page)
-3. [Set the asset status to [!UICONTROL Preview] and generate a preview page](#set-the-asset-to-preview-status-and-generate-a-preview-page)
+1. [Replace the existing asset in your live site and publish the page](#replace-the-existing-asset-and-publish-the-page)
+1. [Set the asset status to [!UICONTROL Preview] and generate a preview page](#set-the-asset-to-preview-status-and-generate-a-preview-page)
 
 ### Set the asset status to [!UICONTROL Approved] for public delivery{#approve-asset-for-public-delivery}
 
 Execute the following steps to approve an asset for public delivery:
 
 1. In [!DNL Assets View], select **[!UICONTROL Assets]** and navigate to your folder.
-2. Select the asset to preview.
+1. Select the asset to preview.
 1. Click **[!UICONTROL Details]**.
-3. In the [!UICONTROL Information Panel], set **[!UICONTROL Status]** to **[!UICONTROL Approved]**, then click **[!UICONTROL Save]**.
+1. In the [!UICONTROL Information Panel], set **[!UICONTROL Status]** to **[!UICONTROL Approved]**, then click **[!UICONTROL Save]**.
 
    >[!NOTE]
    >
