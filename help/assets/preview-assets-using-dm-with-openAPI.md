@@ -6,7 +6,12 @@ role: Admin, User
 
 # Asset preview using [!DNL Dynamic Media with OpenAPI capabilities]{#asset-preview-using-Dynamic-Media-with-OpenAPI-capabilities}
 
-[!DNL Dynamic Media with OpenAPI capabilities] lets you preview assets in your [!DNL Adobe Experience Manager (AEM) Sites] author page before making them publicly available. You can share the [!DNL Adobe Experience Manager (AEM) Sites] preview page with stakeholders to review and refine the assets before making them live. Throughout the review cycle, you can create and track multiple versions of an asset before publishing it for public consumption.
+[!DNL Dynamic Media with OpenAPI capabilities] lets you preview assets available in your [!DNL Adobe Experience Manager (AEM) Sites] author page before making them publicly available. 
+
+After generating the [!DNL Adobe Experience Manager (AEM) Sites] preview page including new assets, you can share this page with stakeholders to review and refine the assets before making them live. Throughout the review cycle, you can create and track multiple versions of an asset before publishing it for public consumption.
+The workflow includes, app
+
+[Generating an asset preview]() includes, updating an asset on the sites author page, and then publishing the page to generate a preview url of the page to share with stakeholders for review. [Revert to the original live asset]() until you finalize the updated version to publish. This helps maintain the integrity of the live site and ensures users continue to see the original, consistent asset.
 
 ## Before you begin{#prerequisites-for-previewing-assets-using-Dynamic-Media-with-OpenAPI-capabilities}
 
