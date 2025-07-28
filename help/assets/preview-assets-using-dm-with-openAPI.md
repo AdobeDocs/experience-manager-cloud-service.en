@@ -1,6 +1,6 @@
 ---
 title: Use [!DNL Dynamic Media with OpenAPI capabilities] to preview assets on AEM Site Page
-description: [!DNL Dynamic Media with OpenAPI capabilities] lets you preview assets in your Sites page before making them publicly available. Share the preview page with multiple stakeholders to refine assets through a review cycle, and create and track multiple asset versions throughout the review process
+description: Use [!DNL Dynamic Media with OpenAPI capabilities] to preview assets in your Sites page before making them publicly available. Share the preview page with multiple stakeholders to refine assets through a review cycle, and create and track multiple asset versions throughout the review process
 role: Admin, User
 ---
 
