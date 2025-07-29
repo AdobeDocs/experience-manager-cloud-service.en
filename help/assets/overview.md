@@ -1,8 +1,8 @@
 ---
 title: Introducing Assets as a Cloud Service for Digital Asset Management in AEM
 description: Introducing Assets as a Cloud Service for Digital Asset Management in AEM
+exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 ---
-
 # Introducing Assets as a Cloud Service for Digital Asset Management in AEM {#assets-as-cloud-service-digital-asset-management-aem}
 
 Adobe Experience Manager Assets as a Cloud Service offers a cloud-native, PaaS solution for businesses to not only perform their Digital Asset Management and Dynamic Media operations with speed and impact, but also use next-generation smart capabilities, such as AI/ML, from within a system that is always current, always available, and always learning.
@@ -900,5 +900,3 @@ Users with access to the Admin view can also access the Assets view. Assets View
 DAM librarians, developers, and super-users may continue to use the Admin view or switch between the user interfaces, as needed. You can select the experience that works best for your role. 
 
 For information on how to access the Assets view and some of the simplifications that it offers over Admin view, see [Introduction to Assets view](/help/assets/assets-view-introduction.md).
-
-
