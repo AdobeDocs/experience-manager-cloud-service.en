@@ -569,7 +569,7 @@ The "Ingest Logs" scope attribute is required for the Token.
 
 ### Sumo Logic {#sumologic}
 
-Log Forwarding to Sumo Logic supports AEM and Dispatcher Logs, CDN logs are not yet supported.
+Log Forwarding to Sumo Logic supports AEM and Dispatcher Logs; CDN logs are not yet supported.
 
 When configuring Sumo Logic for data ingestion you will be presented with an "HTTP Source Address" which provides the host, receiverURI and the private key in a single string.  For example:
 
