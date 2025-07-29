@@ -12,6 +12,10 @@ The assets that are marked Approved on Experience Manager Assets as a Cloud Serv
 
 This article provides an end-to-end workflow to provide Content Hub access to users including the variations of privileges based on their needs.
 
+See this video to learn how to enable Content Hub for Experience Manager Assets:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469851)
+
 The variations of privileges on Content Hub include:
 
 * [Content Hub users](#onboard-content-hub-users): Access brand approved assets on the Content Hub portal.
