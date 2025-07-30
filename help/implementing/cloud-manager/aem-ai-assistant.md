@@ -8,11 +8,11 @@ hide: no
 hidefromtoc: yes
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
 ---
-# About AEM AI Assistant in Adobe Experience Manager {#aem-home}
+# AI Assistant in Adobe Experience Manager {#aem-home}
 
-The AI Assistant in AEM (Adobe Experience Manager) offers a conversational interface designed to streamline finding answers to your Adobe Experience Manager-related queries. It helps you get instant answers to your AEM product-related questions (*available to all users*), and automate support ticket creation (*available to Support Admins*). 
+The AEM (Adobe Experience Manager) AI Assistant offers a conversational interface designed to streamline finding answers to your Adobe Experience Manager-related queries. It helps you get instant answers to your AEM product-related questions (*available to all users*), and automate support ticket creation (*available to Support Admins*). 
 
-The AEM AI Assistant supports AEM as a Cloud Service, including the following solutions:
+During the private beta, the AEM AI Assistant supports AEM as a Cloud Service, including the following solutions:
 
 * Sites
 * Assets
@@ -28,8 +28,16 @@ It is directly embedded in AEM and accessible from AEM Experience Hub, Cloud Man
 >
 >For any questions, send an email to [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) from your email address associated with your Adobe ID. 
 
-## Privacy, Security, and Governance
+## Scope {#scope}
 
+The current scope of the AEM AI Assistant focuses on addressing product knowledge questions for Adobe Experience Manager as a Cloud Service. This scope includes comprehensive support for key areas, such as Sites, Assets, Forms, Edge Delivery Services, and Cloud Manager.
+
+* **Surfaces**: Available across AEM Experience Hub, Author UI, Cloud Manager.
+* **Capabilities**: Product‑knowledge and first-stop for troubleshooting and guidance, automated support ticket creation and lookup.
+* **Value**: Saves time, accelerates learning and time to value, reduced need to manually create support tickets, and efficiency in creating support tickets.
+
+## Privacy, Security, and Governance{#privacy-security-governance}
+ 
 The AEM AI Assistant is designed with a strong emphasis on privacy, security, and governance.
 
 This article outlines the trust-centered features that you can expect from the AEM AI Assistant:
@@ -46,14 +54,18 @@ This article outlines the trust-centered features that you can expect from the A
 
 Product knowledge encompasses concepts and topics derived from Adobe Experience League documentation. These questions can be categorized into the following sub-groups:
 
+
 | Product knowledge | Available to all users<br>Examples |
-| --- | --- |
+| :--- | :--- |
 | Pointed learning | <ul><li>What is the Universal Editor?</li><li>How do I create a program in Cloud Manager?</li></ul> |
 | Open discovery | <ul><li>How do I use Universal Editor?</li><li>Is there a way to copy content from one environment to another?</li></ul>  |
-| Troubleshooting | <ul><li>Why can't I access the Universal Editor?</li><li>Why is my pipeline failing?</li></ul>  | 
-| Automated support ticket creation | **Available to Support Admins only** |
+| Troubleshooting | <ul><li>Why can't I access the Universal Editor?</li><li>Why is my pipeline failing?</li></ul>  |
+| **Support ticket creation** | **Available to Support Admins only**<br>**Examples** |
+| Automated support ticket creation capturing AI Assistant chat history and context | <ul><li>Create a support ticket for me.</li></ul> |
+| Retrieve status of support ticket | <ul><li>Show me all the support tickets I have opened.</li><li>Show me the status of ticket "E-----------"</li></ul> |
 
-The current scope of the AEM AI Assistant focuses on addressing product knowledge questions for Adobe Experience Manager as a Cloud Service. This scope includes comprehensive support for key areas, such as Sites, Assets, Forms, Edge Delivery Services, and Cloud Manager.
+{style="table-layout:auto"}
+
 
 ## How to craft effective questions {#ai-craft-questions}
 
@@ -75,6 +87,7 @@ For example, in your prompt, it helps to name the AEM solution you are working i
 
 ## Use AEM AI Assistant {#ai-use} 
 
+<!-- UNHIDE AFTER BETA or at GA
 ### Enable AEM AI Assistant access through Admin Console 
 
 To use the AEM AI Assistant, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
@@ -89,7 +102,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
-See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
+See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
 
 ### Start or reset a conversation
