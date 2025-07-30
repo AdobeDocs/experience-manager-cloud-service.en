@@ -33,8 +33,8 @@ It is directly embedded in AEM and accessible from AEM Experience Hub, Cloud Man
 The current scope of the AEM AI Assistant focuses on addressing product knowledge questions for Adobe Experience Manager as a Cloud Service. This scope includes comprehensive support for key areas, such as Sites, Assets, Forms, Edge Delivery Services, and Cloud Manager.
 
 * **Surfaces**: Available across AEM Experience Hub, Author UI, Cloud Manager.
-* **Capabilities**: Product‑knowledge and first-stop for troubleshooting and guidance, automated support ticket creation and lookup.
-* **Value**: Saves time, accelerates learning and time to value, reduced need to manually create support tickets, and efficiency in creating support tickets.
+* **Capabilities**: Product‑knowledge and first-stop for troubleshooting and guidance, automated creation of support tickets and lookup.
+* **Value**: Saves time, accelerates learning and time to value, reduces the need to create support tickets manually, and improves efficiency in creating support tickets.
 
 ## Privacy, Security, and Governance{#privacy-security-governance}
  
@@ -62,7 +62,7 @@ Product knowledge encompasses concepts and topics derived from Adobe Experience 
 | Troubleshooting | <ul><li>Why can't I access the Universal Editor?</li><li>Why is my pipeline failing?</li></ul>  |
 | **Support ticket creation** | **Available to Support Admins only**<br>**Examples** |
 | Automated support ticket creation capturing AI Assistant chat history and context | <ul><li>Create a support ticket for me.</li></ul> |
-| Retrieve status of support ticket | <ul><li>Show me all the support tickets I have opened.</li><li>Show me the status of ticket "E-----------"</li></ul> |
+| Retrieve status of support ticket | <ul><li>Show me all the support tickets that I have opened.</li><li>Show me the status of ticket "E-----------"</li></ul> |
 
 {style="table-layout:auto"}
 
