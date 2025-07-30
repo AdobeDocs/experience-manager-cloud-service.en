@@ -45,23 +45,23 @@ Execute the following steps to approve an asset for public delivery:
 
 Execute these steps to replace the existing asset on your site with the latest approved asset and then publish the page:
 
-1. In your Sites authoring page, follow the steps in [Access remote assets in AEM Page Editor](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) section to select the latest approved asset.
+1. In your Sites authoring page, select your latest approved asset by executing the steps in [Access remote assets in AEM Page Editor](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) section.
 1. Publish the page by executing the steps in [Publishing from the Page Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor) section. Alternatively, follow the steps in [Publishing Pages from the Sites Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console) section to publish your page from your site's console.
 ![The page has been published](/help/assets/assets/the-page-has-been-publushed.png)
 A confirmation message **[!UICONTROL The page has been published]** displays after successful publishing.
 
-1. Select [View as Published](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/introduction#view-as-published) from the authoring page to display a published view of your live page (with updated asset) in a new tab. Use this copy of your live page to [Verify the publish status](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#determining-publication-status).
+1. Select **[!UICONTROL View as Published](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/introduction#view-as-published)** option in the authoring page to display a published view of your live page (with updated asset) in a new tab. Use this copy of your live page to [Verify the publish status](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#determining-publication-status).
 
 ### Set the asset status to [!UICONTROL Preview] and generate a preview page{#set-the-asset-to-preview-status-and-generate-a-preview-page}
 
 Execute the following steps to change the asset status from approved to preview to generate a preview URL of the page:
 
 1. In [!DNL Assets View], navigate to the asset's details page and change the **[!UICONTROL Status]** to **[!UICONTROL Preview]**. Click **[!UICONTROL Save]**.
-1. Navigate to your Sites authoring page and follow the steps in the[Publishing Content to Preview](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content) section to generate a preview URL of your page. Share this preview URL with the stakeholders for review and feedback.
+1. Navigate to your Sites authoring page and follow the steps in the [Publishing Content to Preview](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content) section to generate a preview URL of your page. Share this preview URL with the stakeholders for review and feedback.
 
    >[!TIP]
    >
-   >Switch between Preview and Publish versions of the page by replacing the word Preview with Publish (or vice versa) in the URL.
+   > Switch between Preview and Publish versions of the page by replacing the word Preview with Publish (or vice versa) in the preview or publish URL.
 
 After sharing the preview page with the stakeholders for review, [revert to the original live asset](#revert-to-the-original-live-asset) until you finalize the asset version to publish. This step helps to maintain the integrity of the live site and ensure that users continue to see the original, consistent asset.
 
