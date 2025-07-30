@@ -221,10 +221,7 @@ To enable AI-generated metadata:
 * Minimum required AEM release version is `20626`.
 
 * You must sign a GenAI Rider agreement. For more information, contact your Adobe representative.
-
-  >[!IMPORTANT]
-  >
-  > The AI-generated title of an asset is displayed in the Asset card only when you have not defined the asset title. It does not overwrite the asset title specified by you.
+  
 
 ### Using AI-generated metadata {#using-ai-generated-smart-tags}
 
