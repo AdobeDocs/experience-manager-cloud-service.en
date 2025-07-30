@@ -221,9 +221,23 @@ To enable AI-generated metadata:
 
 * You must sign a GenAI Rider agreement. For more information, contact your Adobe representative.
 
-  >[!IMPORTANT]
-  >
-  > The AI-generated title of an asset is displayed in the Asset card only when you have not defined the asset title. It does not overwrite the asset title specified by you. 
+### Configure AI-generated titles {#configure-ai-generated-titles}
+
+AEM enables you to configure the display of asset titles in Card view or List view on the Asset Browse page. You can choose to display the asset title defined by you, title generated using AI, or use AI-generated title only if there is no existing title for the asset.
+
+To configure AI-generated titles:
+
+1. Navigate to **[!UICONTROL Tools > Assets > Assets Configuration > Smart Tag Enhancement Configuration]**.
+
+1. Select one of the following options:
+
+   * **Display DC Title (Default)**: Specify the title in the **[!UICONTROL Title]** field available in asset properties to display it in Card view or List view. If the asset title is not defined, AEM Assets displays the file name.
+
+   * **Display AI-Generated Title**: Displays the AI-generated title and ignores the title specified in asset properties. If AI-generated title is not available for an asset, AEM Assets displays the default asset title available in its properties.
+
+   * **Display AI-Generated Title only if DC Title doesn't exist**: AEM Assets displays the AI-generated title only if asset title is not defined for an asset.  
+
+     ![Configure AI-generated titles](assets/configure-title-ai-generated.png)
 
 ### Using AI-Generated metadata {#using-ai-generated-smart-tags}
 
@@ -245,6 +259,26 @@ To use the enhanced smart tags feature, execute the following steps:
     * **[!UICONTROL Generated keywords]:** The keywords are targeted terms that represent the main themes of an asset, aiding in tagging and content filtering.
 
 1. [Optional] You may add additional tags or create your own if you feel any relevant tags are missing. To do this, write your tags in the  **[!UICONTROL Generated keywords]** field and click **[!UICONTROL Save]**.
+
+### Disable AI-generated metadata {#disable-ai-generated-metadata}
+
+ You can disable AI-generated metadata at the folder-level. All child folders inherit the properties from the parent folder.
+
+To disable AI-generated metadata at the folder-level:
+
+1. Navigate to **[!UICONTROL Adobe Experience Manager > Assets > Files]**.
+
+1. Select the folder and click **[!UICONTROL Properties]**.
+
+1. In the **[!UICONTROL Asset Processing]** tab, navigate to the **[!UICONTROL Smart Tags Enhancements for images]** folder. Select one of the following values from the drop-down list:
+
+   * Inherited - The folder inherits the enable or disable options from the parent folder.
+
+   * Enable - Enables AI-generated metadata for the selected folder.
+
+   * Disable - Disables AI-generated metadata for the selected folder.
+
+      ![Disable AI-generated metadata](assets/disable-ai-generated-metadata.png)
 
 ## Limitations and best practices related to Smart Tags {#limitations-best-practices-smart-tags}
 
