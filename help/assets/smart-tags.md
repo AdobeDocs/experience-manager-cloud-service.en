@@ -221,10 +221,6 @@ To enable AI-generated metadata:
 
 * You must sign a GenAI Rider agreement. For more information, contact your Adobe representative.
 
-  >[!IMPORTANT]
-  >
-  > The AI-generated title of an asset is displayed in the Asset card only when you have not defined the asset title. It does not overwrite the asset title specified by you. 
-
 ### Configure AI-generated titles {#configure-ai-generated-titles}
 
 AEM enables you to configure the display of asset titles in Card view or List view on the Asset Browse page. You can choose to display the asset title defined by you, title generated using AI, or use AI-generated title only if there is no existing title for the asset.
