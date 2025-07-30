@@ -63,7 +63,7 @@ The AEM Forms Boilerplate template gets you started quickly with an AEM project 
 
         ![open fstab.yaml file](/help/edge/docs/forms/assets/open-fstab.png)
 
-    1. Add the below line of codes to the **fstab.yaml** file to add the mount point of your project. Add the URL of your AEM as a Cloud Service authoring instance.
+    1. Add the mountpoint of your project to the **fstab.yaml** file. Add the URL of your AEM as a Cloud Service authoring instance.
         `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
         ![edit fstab.yaml file](/help/edge/docs/forms/assets/edit-fstab-file.png)
