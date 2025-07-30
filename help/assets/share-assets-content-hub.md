@@ -15,12 +15,19 @@ Create a link to selected assets to share them with others easily. As an authori
 ## Share assets {#share-assets}
 
 To share one or more assets with private or public users, execute the following steps:
-1. Navigate to your [!DNL Content Hub] homepage, select one or more assets and click ![share](/help/assets/assets/share.svg) **[!UICONTROL Share]** to display a single selected asset or a list of multiple selected assets in the **[!UICONTROL Share assets]** dialog box. 
-You can also select and share assets available in ![collections](/help/assets/assets/Smock_Collection_18_N.svg) **[!UICONTROL Collections]**. 
+
+1. Navigate to your [!DNL Content Hub] homepage, select one or more assets and click ![share](/help/assets/assets/share.svg) **[!UICONTROL Share]** to display a single selected asset or a list of multiple selected assets in the **[!UICONTROL Share assets]** dialog box.
+
+   You can also select and share assets available in ![collections](/help/assets/assets/Smock_Collection_18_N.svg) **[!UICONTROL Collections]**. 
+
 1. View an asset or review the list of assets available in **[!UICONTROL Share assets]** dialog box. Click ![unselect](/help/assets/assets/Close.svg) next to an asset to unselect it from the list. 
+
 1. Select a **[!UICONTROL period of expiration]** and click **[!UICONTROL Generate Private Link]** to generate a link to share with private users. Private users sign in to their [!DNL Content Hub] environment to access the shared assets page.
+
 ![private and public link](/help/assets/assets/private-and-public-link.png)
-Enable the **[!UICONTROL Public Link]** toggle, select a **[!UICONTROL period of expiration]** and click **[!UICONTROL Generate Public Link]** to generate a link to share with public users. Public users, as guests, access the shared assets page without signing in to [!DNL Content Hub].
+
+   Enable the **[!UICONTROL Public Link]** toggle, select a **[!UICONTROL period of expiration]** and click **[!UICONTROL Generate Public Link]** to generate a link to share with public users. Public users, as guests, access the shared assets page without signing in to [!DNL Content Hub].
+   
 ![private and public link](/help/assets/assets/public-and-private-link.png)
 
    >[!NOTE]
