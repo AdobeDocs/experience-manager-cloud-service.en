@@ -14,7 +14,7 @@ Create a link to selected assets to share them with others easily. As an authori
 
 ## Share assets {#share-assets}
 
-To share one or more assets with private or public users, execute the following steps:
+You can include a title and description when sharing an asset through a shareable link. To share one or more assets with private or public users, execute the following steps:
 
 1. Navigate to your [!DNL Content Hub] homepage, select one or more assets and click ![share](/help/assets/assets/share.svg) **[!UICONTROL Share]** to display a single selected asset or a list of multiple selected assets in the **[!UICONTROL Share assets]** dialog box.
 
