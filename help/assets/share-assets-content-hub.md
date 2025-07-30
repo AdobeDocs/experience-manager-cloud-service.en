@@ -54,6 +54,3 @@ Access the shared assets page through the link and do the following:
 ![](/help/assets/assets/download-renditions-shared-assets-page.png)  
 
 
-
-
-
