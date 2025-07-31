@@ -1,6 +1,6 @@
 ---
 title: Use [!DNL Dynamic Media with OpenAPI capabilities] to preview assets on [!DNL AEM Site] Page
-description: "Use [!DNL Dynamic Media with OpenAPI capabilities] to preview assets in your Sites page before making them publicly available. Share the preview page with multiple stakeholders to refine assets through a review cycle, and create and track multiple asset versions throughout the review process"
+description: Dynamic Media with OpenAPI capabilities enables you to preview assets before using them in your live Adobe Experience Manager (AEM) Sites page. The asset preview is available in a replica of your live site (Preview page), enabling you and your stakeholders to review and validate the updates safely before going live. 
 role: Admin, User
 ---
 
@@ -8,7 +8,10 @@ role: Admin, User
 
 [!DNL Dynamic Media with OpenAPI capabilities] lets you preview assets available in your [!DNL Adobe Experience Manager (AEM) Sites] author page before making them publicly available. 
 
-To [generate an asset preview](#asset-preview-on-sites-page-using-Dynamic-Media-with-OpenAPI-capabilities) update the asset on the AEM sites author page and publish the page to generate a preview URL. Share this preview URL with stakeholders for review and feedback. After generating the preview page, [revert to the original live asset](#revert-to-the-original-live-asset) to keep the live site unchanged until you finalize the asset version for publishing. Reverting to the original live asset preserves the integrity of the live site and ensures that users continue to see the original, consistent asset.
+To [generate an asset preview](#asset-preview-on-sites-page-using-Dynamic-Media-with-OpenAPI-capabilities) update your AEM Sites author page by either adding the new assets or replacing the existing ones and then publish the page. Then, generate a preview URL of the page.
+Dynamic Media with OpenAPI capabilities enables the updated assets' preview in your Sites preview page. The preview page mirrors your live site with updated assets. Share this preview page with stakeholders to collect feedback on the visual quality and contextual alignment of the updated assets. Refine the assets based on the feedback. 
+
+After generating the preview page, [revert to the original live asset](#revert-to-the-original-live-asset) to keep the live site unchanged until you finalize the asset version suitable for public use. Reverting to the original live asset preserves the integrity of the live site and ensures that users continue to see the original, consistent asset.
 
 During the review cycle, you can create and manage multiple versions of the asset before publishing the final version for public use.
 
