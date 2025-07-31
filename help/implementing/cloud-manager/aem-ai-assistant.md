@@ -23,6 +23,10 @@ During the private beta, the AEM AI Assistant supports AEM as a Cloud Service, i
 
 It is directly embedded in AEM and accessible from AEM Experience Hub, Cloud Manager, and Author UI.
 
+The following 3-minute, 39-second video delivers a step-by-step walkthrough of the AEM AI Assistant.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on) 
+
 >[!IMPORTANT]
 >Be sure you have reviewed and submitted the user agreement so Adobe can enable the AI Assistant feature for you to test out and participate in the private beta program.
 >
@@ -48,7 +52,6 @@ This article outlines the trust-centered features that you can expect from the A
 * User-provided prompts (questions, queries, and so on) are not shared with other customers.
 
 <!-- See also [Security at Adobe whitepaper](). NEED ACTIVE LINK FROM ADRIAN NICOLAE TANASE. CURRENTLY 404. -->
-
 
 ## Get to know the AEM AI Assistant for product knowledge and automated support ticket creation {#ai-prod-insights}
 
