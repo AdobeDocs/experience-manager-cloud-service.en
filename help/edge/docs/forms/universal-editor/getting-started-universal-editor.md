@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 ---
 
-# Getting Started with Edge Delivery Services for AEM Forms using Universal Editor (WYSIWYG) 
+# Getting Started with Edge Delivery Services for AEM Forms using Universal Editor (WYSIWYG)
 
 | Version | Article link |
 | -------- | ---------------------------- |
@@ -23,7 +23,6 @@ AEM Forms provide a block, known as the Adaptive Forms Block, to help you easily
 ![Github Repository Workflow](/help/edge/assets/repo-workflow.png){width=auto}
 
 This tutorial guides you through creating, previewing, and publishing your own form with a new or existing Adobe Experience Manager Site project using Universal Editor's WYSIWYG authoring.
-
 
 ## Prerequisites
 
@@ -60,16 +59,16 @@ The AEM Forms Boilerplate template gets you started quickly with an AEM project 
 1. Now link the GitHub repository you created using AEM Forms Boilerplate to your AEM Project authoring environment. To connect:
 
     1. Go to the GitHub repository that you created eariler using AEM Forms Boilerplate.
-    1. Open the **fstab.yaml** file for editing.
+    1. Add the **fstab.yaml** file in the root folder.
 
         ![open fstab.yaml file](/help/edge/docs/forms/assets/open-fstab.png)
 
-    1. Edit the **fstab.yaml** file to update the mount point of your project. Replace the URL with the URL of your AEM as a Cloud Service authoring instance.
+    1. Add the mountpoint of your project to the **fstab.yaml** file. Add the URL of your AEM as a Cloud Service authoring instance.
         `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
         ![edit fstab.yaml file](/help/edge/docs/forms/assets/edit-fstab-file.png)
 
-    1. Commit the updated **fstab.yaml** file, once you have updated the reference and everything looks good. 
+    1. Commit the **fstab.yaml** file, once you have added the reference and everything looks good. 
 
         ![commit the changes](/help/edge/docs/forms/assets/commit-fstab-changes.png)
    
