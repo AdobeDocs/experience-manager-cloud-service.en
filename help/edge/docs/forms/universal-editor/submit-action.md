@@ -4,6 +4,8 @@ description: Configure Submit Actions for Adaptive Form.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
+hide: yes
+hidefromToC: yes
 ---
 # Adaptive Form Submit Action
 
