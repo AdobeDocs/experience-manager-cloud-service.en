@@ -33,9 +33,9 @@ The next planned release is Thursday, August 7, 2025.
 
     See [License dashboard](/help/implementing/cloud-manager/license-dashboard.md).
 
-## Early adopter programs {#private-beta-program}
+## Alpha/Beta programs {#private-beta-program}
 
-Participate in Cloud Manager's alpha and beta programs to get exclusive early access to upcoming features before their general release.
+Participate in Cloud Manager's alpha and beta programs to get exclusive access to upcoming features before their general release.
 
 The following opportunities are currently available:
 
@@ -57,6 +57,8 @@ Quickly revert to a previous deployment if the latest customer source code is no
 ![Source code version in use](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *The Environment details view, as seen above, now also shows the active source-code version in use.*
 
 If you are interested in testing this new feature and sharing your feedback, send an email to [restorecode@adobe.com](mailto:restorecode@adobe.com) from your email address associated with your Adobe ID.
+
+See [Restore the Previous Code Deployed in AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
 
 See also [Content Restore in AEM as a Cloud Service](/help/operations/restore.md).
 
