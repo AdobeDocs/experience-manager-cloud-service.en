@@ -22,13 +22,15 @@ You can include a title and description when sharing an asset through a shareabl
 
 1. View an asset or review the list of assets available in **[!UICONTROL Share assets]** dialog box. Click ![unselect](/help/assets/assets/Close.svg) next to an asset to unselect it from the list. 
 
-1. Select a **[!UICONTROL period of expiration]** and click **[!UICONTROL Generate Private Link]** to generate a link to share with private users. Private users sign in to their [!DNL Content Hub] environment to access the shared assets page.
+1. Select a **[!UICONTROL period of expiration]**.
+
+1. Under **[!UICONTROL Who can access]** drop down, select the access options and click **[!UICONTROL Get Link]** to generate a link to share with the selected users. Private users need to sign in to their [!DNL Content Hub] environment to access the shared assets page. Whereas, public users, as guests, can access the shared assets page without signing in to [!DNL Content Hub].
+
+<!--1. Select a **[!UICONTROL period of expiration]** and click **[!UICONTROL Get Link]** to generate a link to share with private users. Private users sign in to their [!DNL Content Hub] environment to access the shared assets page.-->
 
 ![private and public link](/help/assets/assets/private-and-public-link.png)
 
-   Enable the **[!UICONTROL Public Link]** toggle, select a **[!UICONTROL period of expiration]** and click **[!UICONTROL Generate Public Link]** to generate a link to share with public users. Public users, as guests, access the shared assets page without signing in to [!DNL Content Hub].
-   
-![private and public link](/help/assets/assets/public-and-private-link.png)
+   <!--Enable the **[!UICONTROL Public Link]** toggle, select a **[!UICONTROL period of expiration]** and click **[!UICONTROL Generate Public Link]** to generate a link to share with public users. Public users, as guests, access the shared assets page without signing in to [!DNL Content Hub].-->
 
    >[!NOTE]
    > 
