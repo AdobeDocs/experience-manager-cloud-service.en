@@ -13,7 +13,7 @@ Integrating forms with a Form Data Model (FDM) in Universal Editor allows you to
 
 * If you do not see the **Data Sources** icon in your Universal Editor interface or **Bind Reference** property in the right property panel, enable the **Data source** extension in the **Extension Manager**.
 
-    ![extension manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+    ![Screenshot of the Universal Editor Extension Manager interface showing available extensions including the Data Sources extension that can be enabled for form integration](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
     Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable and disable extensions in the Universal Editor.
 
@@ -73,7 +73,7 @@ When you create a schema-based form, it is automatically configured with a data 
 
     As soon as you click **[!UICONTROL Create]**, the form opens in the Universal editor for authoring. 
 
-    ![author the form](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
+    ![Screenshot of the Universal Editor showing a schema-based form with pre-populated form fields and the Content Browser displaying available data source elements](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
 
     The form is created using the data elements from the associated data source, with the form fields having preconfigured data binding. 
 
@@ -125,7 +125,7 @@ When you create a non-schema-based form, no data source is configured. You can e
 
     You can also drag-drop these elements to build your Adaptive Form. When you click **[!UICONTROL Add]**, the selected elements from the **[!UICONTROL Datasource]** tab are added to your form, and a tick mark appears in front of the added elements.
 
-    ![Build form](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
+    ![Screenshot showing the Universal Editor with a non-schema form being built by dragging and dropping data elements from the Data Source tab into the form structure](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
 You can add data binding to a form field by selecting it from the **Bind Reference** property. For example, let's add a data binding reference to the **Id** text box that is already present in the form. 
 To select the data binding for the form field from the data source tree, perform the following steps:

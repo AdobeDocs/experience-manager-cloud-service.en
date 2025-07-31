@@ -7,7 +7,7 @@ exl-id: ac780399-34fe-457d-aaf4-b675656c024d
 ---
 # Customize the look of your forms
 
-<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 
 
 Forms are crucial for user interaction on websites, allowing them to input data. You can use Cascading Style Sheets (CSS) to style fields of a form, enhancing the visual presentation of your forms, and improving the user experience. 
@@ -49,21 +49,22 @@ The Adaptive Forms Block offers a standardized HTML structure, simplifying the p
   * **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css file`. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms.
 
   * **CSS Styling for Forms**: To ensure that your styles are applied correctly, wrap your form-specific CSS within the `main .form form` selector. This ensures that your styles target only the form elements within the main content area, avoiding conflicts with other parts of the website.
+    
     Example:
 
     ```css
-      main .form form input {
-          /* Add styles specific to input fields inside the form */
-      }
+    main .form form .{Type}-wrapper input {
+        /* Add styles specific to input fields inside the form */
+    }
 
-      main .form form button {
-          /* Add styles specific to buttons inside the form */
-      }
+    main .form form .{Type}-wrapper button {
+        /* Add styles specific to buttons inside the form */
+    }
 
-      main .form form label {
-          /* Add styles specific to labels inside the form */
-      }
-
+    main .form form .{Type}-wrapper label {
+        /* Add styles specific to labels inside the form */
+    }
+    ```
 
 ## Components Structure 
 
