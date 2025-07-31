@@ -1,11 +1,11 @@
 ---
 title: How to Configure a Submit Action for an Adaptive Form?
 description: An Adaptive Form provides multiple Submit Actions. A Submit Action defines how an Adaptive Form is processed after submission. You can use built-in Submit Actions or create your own.
-keywords: how to select submit action for an adaptive form, connect an adaptive form to sharepoint list, connect an adaptive form to sharepoint document library, connect an adaptive form to form data model (FDM) 
+keywords: how to select submit action for an adaptive form, connect an adaptive form to sharepoint list, connect an adaptive form to sharepoint document library, connect an adaptive form to form data model (FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
+exl-id: 3f8950c3-9022-4e9f-b3ed-723245201e45
 ---
-
 # Submit Actions for Edge Delivery Services Forms
 
 | Version | Article Link |
@@ -62,4 +62,3 @@ Document Based Forms support submission only to spreadsheets. To learn how to se
 ## See Also {#see-also}
 
 {{af-submit-action}}
-
