@@ -8,7 +8,7 @@ exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 
 # Introduction to Rule Editor in WYSIWYG Authoring
 
-<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 
 
 You can add dynamic form behaviour using the Rule Editor, which allows you to create rules. These rules enable conditional field visibility, automate calculations based on user input, and improve the overall user experience. By streamlining the form-filling process, the Rule Editor helps ensure both accuracy and efficiency.
@@ -182,7 +182,7 @@ Now, let's explore how to [write rules in the Rule Editor](#write-rules).
 
 To understand how to write rules in Visual Rule Editor, let's consider an simple example of a tax calculation form: 
 
-![Rule Editor example](/help/edge/docs/forms/assets/rule-editor-1.png)
+![Screenshot of the Rule Editor interface showing the creation of a conditional rule with When-Then logic for form field visibility](/help/edge/docs/forms/assets/rule-editor-1.png)
 
 In the form described above, the user enters the gross salary. Based on this input, conditional field is displayed and the payable tax is calculated. 
 
@@ -217,7 +217,7 @@ To write rules, perform the following steps:
       * Submit (Submit Button)
    1. Hide the `Additional Deduction` form field, by opening its `Properties`.
    
-      ![Rule Editor example](/help/edge/docs/forms/assets/rule-editor2.png)
+      ![Screenshot of a tax calculation form with input fields for gross salary, marital status, and dependent children, demonstrating the form structure before rules are applied](/help/edge/docs/forms/assets/rule-editor2.png)
 
 ### 2. Add a conditional rule for a form field
 
