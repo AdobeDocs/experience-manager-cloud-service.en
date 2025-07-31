@@ -1,6 +1,6 @@
 ---
 title: Use [!DNL Dynamic Media with OpenAPI capabilities] to preview assets on [!DNL AEM Site] Page
-description: Dynamic Media with OpenAPI capabilities enables you to preview assets before using them in your live Adobe Experience Manager (AEM) Sites page. The asset preview is available in a replica of your live site (Preview page), enabling you and your stakeholders to review and validate the updates safely before going live. 
+description: Dynamic Media with OpenAPI capabilities enables you to preview assets before using them in your live Adobe Experience Manager (AEM) Sites page. The asset preview is available on your site's Preview page (a replica of your live site), enabling you and your stakeholders to review and validate the updates safely before going live. 
 role: Admin, User
 ---
 
