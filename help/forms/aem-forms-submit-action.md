@@ -3,8 +3,8 @@ title: How to configure a Submit Action for an Adaptive Form?
 description: An Adaptive Form provides multiple Submit Actions. A Submit Action defines how an Adaptive Form is processed after submission. You can use built-in Submit Actions or create your own.
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: User, Developer
+exl-id: f609566e-6210-4a66-adaf-1dac9e9cd6d7
 ---
-
 # Submit Actions Supported by Adaptive Forms
 
 Adaptive Forms allow you to create forms that are engaging, responsive, dynamic, and adaptive. They provide an intuitive user interface and a set of out-of-the-box components for designing and managing forms efficiently. You can configure various submit actions to send form data to services like OneDrive, SharePoint, Workfront Fusion, and more.
@@ -112,4 +112,3 @@ When you prefill a form data model (FDM), or schema based Adaptive Form with XML
 ## See Also
 
 {{af-submit-action}}
-
