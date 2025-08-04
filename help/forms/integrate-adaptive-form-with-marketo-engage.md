@@ -32,7 +32,50 @@ Prerequisite to connect Marketo Engage with forms:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442867/marketo-aem-marketo-engage-engage-aem-forms)
 
-To configure new Adaptive Form to integrate with Marketo Engage, perform the following steps:
+>[!BEGINTABS]
+
+>[!TAB Foundation Component]
+
+To configure new Adaptive Form based on Foundation Components to integrate with Marketo Engage, perform the following steps:
+
+1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+
+    ![Select Forms and Documents](/help/forms/assets/select-forms.png)
+
+1. Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The form creation wizard opens. 
+
+    ![Select AF](/help/forms/assets/select-create-forms.png)
+
+1. In the **[!UICONTROL Source]** tab, select a template 
+
+    ![Select Templates](/help/forms/assets/select-template-af1.png)
+
+1. From the **[!UICONTROL Style]**, select the theme.
+
+    ![Select Theme](/help/forms/assets/select-form-theme-af1.png)
+1. In the **[!UICONTROL Data]** tab, select a data model as **Marketo Engage**.
+1. Select the **[!UICONTROL Cloud Configuration]** from the drop-down list that appears in the right-pane of the screen. 
+    By default all fields of the associated configuration appears. The wizard offers the convenience of allowing you to selectively choose which fields should be included in the Adaptive Form through the use of checkboxes. 
+
+    ![Select Data Model](/help/forms/assets/select-marketo-data-af1.png)
+
+1. In the **[!UICONTROL Submission]** tab, select submit action as **[!UICONTROL Submit to Marketo]**.
+
+    When you select the data model as **Marketo Engage**, then the submit action as **Submit to Marketo**  is auto-selected. You can select a different submit action from the **[!UICONTROL Submission]** tab. The **[!UICONTROL Submission]** tab displays all the available submit actions.
+
+    ![Submit to Marketo engage](/help/forms/assets/select-marketo-engage.png)
+
+1. Select **[!UICONTROL Create]**. Specify title, name, and location to save the Adaptive Form.
+
+    ![Create Form](/help/forms/assets/create-marketo-form.png)
+
+1. Select **[!UICONTROL Create]**.
+
+The Adaptive Form is now configured to connect with Marketo Engage instance. Alternatively, you can also edit the Adaptive Form properties to change its associated configuration
+
+>[!TAB Core Component]
+
+To configure new Adaptive Form based on Core Components to integrate with Marketo Engage, perform the following steps:
 
 1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
 
@@ -72,6 +115,45 @@ To configure new Adaptive Form to integrate with Marketo Engage, perform the fol
 
 The Adaptive Form is now configured to connect with Marketo Engage instance. Alternatively, you can also edit the Adaptive Form properties to change its associated configuration.
 
+>[!TAB Universal Editor]
+
+To configure new Adaptive Form authored in Universal Editor to integrate with Marketo Engage, perform the following steps:
+
+1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+
+    ![Select Forms and Documents](/help/forms/assets/select-forms.png)
+
+1. Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The form creation wizard opens. 
+
+    ![Select AF](/help/forms/assets/select-create-forms.png)
+
+1. In the **[!UICONTROL Source]** tab, select a template 
+
+    ![Select Templates](/help/forms/assets/select-template-ue.png)
+
+1. In the **[!UICONTROL Data]** tab, select a data model as **Marketo Engage**.
+
+1. Select the **[!UICONTROL Cloud Configuration]** from the drop-down list that appears in the right-pane of the screen. 
+    By default all fields of the associated configuration appears. The wizard offers the convenience of allowing you to selectively choose which fields should be included in the Adaptive Form through the use of checkboxes. 
+
+    ![Select Data Model](/help/forms/assets/select-marketo-data-ue.png)
+
+1. In the **[!UICONTROL Submission]** tab, select submit action as **[!UICONTROL Submit to Marketo]**.
+
+    When you select the data model as **Marketo Engage**, then the submit action as **Submit to Marketo**  is auto-selected. You can select a different submit action from the **[!UICONTROL Submission]** tab. The **[!UICONTROL Submission]** tab displays all the available submit actions.
+
+    ![Submit to Marketo engage](/help/forms/assets/select-marketo-engage-ue.png)
+
+1. Select **[!UICONTROL Create]**. Specify title, name, and location to save the Adaptive Form.
+
+    ![Create Form](/help/forms/assets/create-marketo-form.png)
+
+1. Select **[!UICONTROL Create]**.
+
+The Adaptive Form is now configured to connect with Marketo Engage instance. Alternatively, you can also edit the Adaptive Form properties to change its associated configuration.
+
+>[!ENDTABS]
+
 ## Frequently asked questions (FAQs)
 
 **Q: Can you change the submit action for forms configured to connect with the Marketo Engage schema?** 
@@ -83,6 +165,7 @@ The Adaptive Form is now configured to connect with Marketo Engage instance. Alt
 
 **Q: What are the three operations available in the Invoke Service of the Rule Editor for forms integrated with Marketo Engage?**  
     **A:** The three out-of-the-box operations available in the **Invoke Service** for forms integrated with Marketo Engage are:
+
 * Sync Lead
 * Get Lead by ID
 * Get Lead by Filter Type
