@@ -105,8 +105,8 @@ To copy the sample content to your own content folder and point your GitHub repo
 1. Now that you have your content folder set up, it's time to link it to your project on GitHub that you created using AEM Forms Boilerplate earlier. To connect: 
 
     1. Go to the GitHub repository that you created eariler using AEM Forms Boilerplate.
-    1. Open the `fstab.yaml` for editing.
-    1. Replace the existing reference with the path to the folder that you shared with the AEM user (forms@adobe.com).
+    1. Add the `fstab.yaml` file in the root folder.
+    1. Add the reference with the path to the folder that you shared with the AEM user (forms@adobe.com).
 
         ![Sample Content on Google Drive](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -130,7 +130,7 @@ To copy the sample content to your own content folder and point your GitHub repo
         For more information on managing files with Microsoft SharePoint, see [How to use Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).  
 
       
-    1. Commit the updated `fsatb.yaml` file, once you've updated the reference and everything looks good. If you encounter any build issues, see [Troubleshooting GitHub build issues](#troubleshooting-github-build-issues). 
+    1. Commit the `fsatb.yaml` file, once you've added the reference and everything looks good. If you encounter any build issues, see [Troubleshooting GitHub build issues](#troubleshooting-github-build-issues). 
     
         ![Commit updated fsatab.yaml file](/help/edge/assets/commit-updated-fstab-yaml.png)
 
