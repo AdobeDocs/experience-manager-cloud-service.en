@@ -182,7 +182,7 @@ Select the **[!UICONTROL Reset Defaults]** option to revert your changes and res
 
 On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]** page, execute the following steps to change the logo image of your [!DNL Content Hub] deployment:
 
-1. Click ![select image](/help/assets/assets/Browse.svg) **[!UICONTROL Select from gallery]** to select a logo image using the asset selector dialog box. The asset selector displays only approved images.
+1. Click ![select image](/help/assets/assets/Browse.svg) **[!UICONTROL Select Image]** to select a logo image using the asset selector dialog box. The asset selector displays only approved images.
 1. Select the image, click **[!UICONTROL Select]**, and then click **[!UICONTROL Save]** to display it as the logo image of your [!DNL Content Hub] deployment.
 ![banner image](/help/assets/assets/logo-image-content-hub1.png)
 
