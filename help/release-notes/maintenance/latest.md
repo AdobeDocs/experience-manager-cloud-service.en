@@ -16,7 +16,8 @@ Summarized below are the continuous improvements for maintenance release 21772, 
 
 
 The 2025.8.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
-
+### New Features  {#new-features-21772}
+* SITES-30049  - Added new endpoint for retrieving the language copies of a Content Fragment by its UUID
 ### Enhancements {#enhancements-21772}
 
 * SITES-33025 - Open new CF Editor via ID instead of path
@@ -35,7 +36,16 @@ The 2025.8.0 feature activation will provide the full feature set for this maint
 * SITES-30495 - CF Launch create / edit sources: support fragment reference UUID
   - Enhancement to support UUID-based fragment references in Content Fragment launches
 * SITES-32151 - cq:isContainer exposed
-  - API enhancement exposing container property functionality          
+  - API enhancement exposing container property functionality
+* SITES-26849 - Adjust back-references when a Content Fragment Variation si moved or deleted.
+* SITES-31846 - Add option to copy/paste root fragment and references in the same folder for copy tree operation.
+* SITES-30241 - Adjust References located inside a long text field when moving, renaming or deleting a fragment.
+* SITES-32684 - Enhance mechanism for syncing tab changes in UI schema.
+* SITES-33308 - Add retry mechanism for syncing changes to the UI Schema when editing models.
+* SITES-32247: [SLA3] AEM "Text and Personalization" Component – Missing Dialog Personalization & UI Misalignment - https://jira.corp.adobe.com/browse/SITES-32247
+* SITES-32261: [SLA3] Experience Fragment i18n Not Applied to Field - https://jira.corp.adobe.com/browse/SITES-32261
+* SITES-32666: Template Predicate contains \n causing HTML lookup to fail - https://jira.corp.adobe.com/browse/SITES-32666
+* SITES-32674: [SLA3] Featured Image Field Image Picker not working for Page Creation Wizard Despite cq:showOnCreate - https://jira.corp.adobe.com/browse/SITES-32674           
 
 ### Fixed Issues {#fixed-issues-21772}
 
@@ -62,7 +72,26 @@ The 2025.8.0 feature activation will provide the full feature set for this maint
 * SITES-33014 - Excessive WARN logs from LaunchesAdapterFactory fix
   - Fixed excessive warning log generation from LaunchesAdapterFactory
 * SITES-32305 - Live Copy Inheritance Break Fails After Layout
-  - Fixed live copy inheritance break functionality after layout changes    
+  - Fixed live copy inheritance break functionality after layout changes
+* SITES-32268 - Disable URL encoding for Content Fragment Search.
+* SITES-32772  - Property locked in variation's fields was always false when enabling the enhancements from SITES-31455 - related to unifying etag value.
+* SITES-32696 - Fixed issue when a Content Fragment Live Copy field with broken inheritance couldn't not be edited anymore.
+* SITES-33453
+* SITES-31712: [SLA3] Slow Queries from the Omni-search on prod Author - https://jira.corp.adobe.com/browse/SITES-31712
+* SITES-33039: Page Events not triggering correctly - https://jira.corp.adobe.com/browse/SITES-33039
+* SITES-32931: wcm mobile code is readable by everyone - https://jira.corp.adobe.com/browse/SITES-32931
+* SITES-31192: Experience Fragments losing Version History after being moved - https://jira.corp.adobe.com/browse/SITES-31192
+* SITES-33529: [SLA4] AEMaaCS-ACS integration returns 503 (invalid JSON) – Error while linking the ACS Campaign templates with AEM pages https://jira.corp.adobe.com/browse/SITES-33529
+* SITES-33468: [AEM] AEMaaCS unable to connect to ACS - https://jira.corp.adobe.com/browse/SITES-33468      
+
+### Altered functionality {#altered-functionality-21772}
+* SITES-26344 - Unify validation of fragmentId / modelId between endpoints - these ids are now validated and a 400 status code is returned if they are not valid.
+* SITES-29598 - Validate Content Fragment references added in fragment reference fields when updating a Content Fragment Model.
+
+### Tasks {#tasks-21772}
+* SITES-30887: [TouchUI] Add Contet Fragment uuids stored in workflow metadata - https://jira.corp.adobe.com/browse/SITES-30887
+* SITES-33678: Add Toggle for SITES-33529 - https://jira.corp.adobe.com/browse/SITES-33678
+  
 ### Known Issues {#known-issues-21772}
 
 None.
@@ -73,7 +102,7 @@ Deprecated and removed features and APIs in AEM as a Cloud Service are detailed 
 
 ### Security Fixes {#security-21772}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 2 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 12 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
 ### Embedded Technologies {#embedded-tech-21772}
 
