@@ -3,7 +3,7 @@ title: Integration of Adobe Workfront Fusion with AEM Forms Submission
 description: Adobe Workfront Fusion allows you to focus on new tasks rather than focusing on repetitive tasks. You can connect Adobe Workfront Fusion to an Adaptive Form using Form Submission.
 keywords: Submit an Adaptive Form to Adobe Workfront Fusion, Integration of Adobe Workfront Fusion with AEM Forms Submission, Adobe Workfront Fusion with AEM Forms, Workfront Fusion with AEM Forms, Connect Workfront Fusion to AEM Forms, AEM Forms and Workfront Fusion, How to connect Workfront Fusion with AEM Forms?, Connect Workfront Fusion to a Form
 topic-tags: author, developer
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 ---
@@ -45,6 +45,7 @@ To create a Workfront scenario, perform the following steps:
 #### Create a scenario {#create-scenario}
 
 To create a scenario:
+
 1. Sign into your [Workfront Fusion account](https://app-qa.workfrontfusion.com/).
 1. Click **[!UICONTROL Scenarios]** ![Share icon](/help/forms/assets/Smock_ShareAndroid_18_N.svg) in the left panel. 
  1. Click **[!UICONTROL Create a new scenario]** in the upper-right corner of the page. A page to create new scenario appears on-screen.
@@ -139,47 +140,54 @@ To add a connection:
 
 ### 2. Configure submit action of an Adaptive Form for Workfront Fusion
 
-You can configure the submit action for Workfront Fusion for:
-* [New Adaptive Forms](#new-af-submit-action)
-* [Existing Adaptive forms](#existing-af-submit-action)
+>[!BEGINTABS]
 
-#### Configure submit action of new Adaptive Form for Workfront Fusion {#new-af-submit-action}
+>[!TAB Foundation Component]
 
-To configure submit action of new Adaptive Form for Workfront Fusion:
+To configure submit action of an Adaptive Form based on Foundation Components for Workfront Fusion:
 
-1. Log in to your AEM instance.
-1. Go to **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents]** > **[!UICONTROL Create]** > **[!UICONTROL Adaptive Form]**. The **[!UICONTROL Create Form]** wizard appears.
-1. Select an Adaptive Form template from the **[!UICONTROL Source]** tab.
-1. Select a theme from the **[!UICONTROL Style]** tab.
+1. Open the Adaptive Form for editing and navigate to **[!UICONTROL Submission]** section of the Adaptive Form Container properties. 
+1. From the **[!UICONTROL Submit Action]** drop-down list, select **[!UICONTROL Invoke a WorkFront Fusion Scenario]**.
+    ![Submit action for Workfront Fusion](/help/forms/assets/workfront-fusion-fc.png)
 
-      ![Submit action for Workfront Fusion](/help/forms/assets/workfront-scenario-new-af.png)
+1. Select **[!UICONTROL Workfront Fusion scenario]** from the drop-down list.
+1. Click **[!UICONTROL Done]**.
 
-1. Select the **[!UICONTROL Invoke a WorkFront Fusion Scenario]** from the **[!UICONTROL Submission]** tab.
-1. Select the created webhook from the **[!UICONTROL Options]** tab in the **[!UICONTROL Properties]** window.
+
+>[!TAB Core Component]
+
+To configure submit action of an Adaptive Form based on Core Components for Workfront Fusion:
+
+1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
+1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 
+1. Click the  **[!UICONTROL Submission]** tab. 
+1. From the **[!UICONTROL Submit Action]** drop-down list, select **[!UICONTROL Invoke a WorkFront Fusion Scenario]**.
+   
+    ![Submit action for Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
+1. Select **[!UICONTROL Workfront Fusion scenario]** from the drop-down list.
+1. Click **[!UICONTROL Done]**.
+
+>[!TAB Universal Editor]
+
+To configure submit action of an Adaptive Form authored using Universal Editor:
+
+1. Open the Adaptive Form for editing.
+1. Click the **Edit Form Properties** extension on the editor. 
+    The **Form Properties** dialog appears.
 
     >[!NOTE]
     >
-    > The webhook name of the WorkFront scenario appears in the **Options** drop-down list.
+    > * If you do not see the **Edit Form Properties** icon in your Universal Editor interface, enable the **Edit Form Properties** extension in the Extension Manager. 
+    > * Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable or disable extensions in the Universal Editor.
+    
+1. Click **Submission** tab and select **[!UICONTROL Invoke a WorkFront Fusion Scenario]** submit action.
 
-1. Click **[!UICONTROL Create]**.
-1. Specify the name for your new Adaptive Form and click **[!UICONTROL Create]**.
+    ![Submit action for Workfront Fusion](/help/forms/assets/workfront-fusion-ue.png)
 
-#### Configure submit action of existing Adaptive Form for Workfront Fusion {#existing-af-submit-action}
-
-To configure submit action of existing Adaptive Form for Workfront Fusion:
-
-1. Log in to your AEM instance.
-1. Go to **[!UICONTROL Forms]** > **[!UICONTROL Forms and Documents]**.
-1. Select an Adaptive Form and open the form in an edit mode.
-1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
-1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens.  
-
-    ![Submit action for Workfront Fusion](/help/forms/assets/workfront-scenario-existing-af.png)
-
-1. Open the **[!UICONTROL Submission]** tab.
-1. Select the **[!UICONTROL Submit action]** as **[!UICONTROL Invoke a WorkFront Fusion Scenario]**
 1. Select **[!UICONTROL Workfront Fusion scenario]** from the drop-down list.
-1. Click **[!UICONTROL Done]**.
+1. Click **[!UICONTROL Save&Close]**.
+
+>[!ENDTABS]
 
 ## Best Practices {#best-practices}
 
