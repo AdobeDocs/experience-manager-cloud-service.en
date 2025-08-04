@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
 ---
 
-# Add a domain mapping {#add-domain-mapping}
+# About add a domain mapping {#add-domain-mapping}
 
 To link a domain with an SSL certificate on the Adobe-managed CDN within your program, you must add a CDN (Content Delivery Network) configuration.
 
@@ -46,4 +46,23 @@ See also [Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed).
    | Adobe managed CDN | Under **Configuration details**, do the following:<br>a. In the **Domain** drop-down list, select the domain name that you want to use.<br>No verified domains available in the drop-down list? See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).<br>b. In the **SSL certificate** drop-down list, select a certificate that you want to use.<br>No SSL certificates available in the drop-down list? See [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
    | Other CDN provider | Select this option if you are using your own CDN provider and not the Adobe managed CDN that is available to you.<br>Under **Configuration details**, in the **Domain** drop-down list, select the domain name that you want to use.<br>No verified domains available in the drop-down list? See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 
-1. Click **Save**.
+1. Click **Save**. 
+
+   Adobe recommends that you test the domain mapping.
+
+## Test the domain mapping {#test-domain-mapping}
+
+You can verify that a new domain mapping is live on the Adobe-managed CDN without waiting for public DNS propagation. 
+
+Run a **curl** command that overrides DNS resolution and points straight to the CDN edge:
+
+```bash
+curl -svo /dev/null https://www.example.com \
+--resolve www.example.com:443:151.101.3.10
+```
+
+* Replace **`www.example.com`** with your domain.
+* Substitute **151.101.3.10** with the Edge IP address shown in Cloud Manager for this mapping.
+
+The `--resolve` flag forces the request to the specified IP and returns success only after the certificate and routing for your domain have been installed correctly.
+
