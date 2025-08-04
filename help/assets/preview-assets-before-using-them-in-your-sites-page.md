@@ -8,10 +8,7 @@ role: Admin, User
 
 [!DNL Dynamic Media with OpenAPIs capabilities] lets you preview assets available in your [!DNL Adobe Experience Manager (AEM) Sites] author pages before making them publicly available. 
 
-To [generate assets preview](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPIs-capabilities) update your AEM Sites author page by either adding the new assets or replacing the existing ones and then publish the pages. **_Then, generate a preview URL of the page._**
-Dynamic Media with OpenAPIs capabilities enables the updated assets' preview in your Sites preview page. **_The preview page mirrors your live site with updated assets_**. Share this preview page with stakeholders to collect feedback on the visual quality and contextual alignment of the updated assets. Refine the assets based on the feedback. 
-
-**_After generating the preview page, [revert to the original live asset](#revert-to-the-original-live-asset) to keep the live site unchanged until you finalize the asset version suitable for public use. Reverting to the original live asset preserves the integrity of the live site and ensures that users continue to see the original, consistent asset._**
+To [generate assets preview](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPIs-capabilities) update your AEM Sites author pages by either adding the new assets or replacing the existing ones and then publish your authoring pages to the preview tier to generate a preview URL of the page. [!DNL Dynamic Media with OpenAPIs capabilities] enables the preview of updated assets in your Sites preview tier. Share this preview page with stakeholders to collect feedback on the visual quality and contextual alignment of the updated assets. Refine the assets based on the feedback. 
 
 During the review cycle, you can create and manage multiple versions of the asset before publishing the final version for public use.
 
@@ -57,16 +54,21 @@ A confirmation message **[!UICONTROL The page has been published]** displays aft
 
 ### Set the asset status to [!UICONTROL Preview] and generate a preview page{#set-the-asset-to-preview-status-and-generate-a-preview-page}
 
-Execute the following steps to change the asset status from approved to preview in [!DNL Assets View] and then publish your Sites authoring page to preview tier to generate a preview URL of the page displaying the updated assets:
+Execute the following steps to change the asset status from approved to preview in [!DNL Assets View] and then publish your Sites authoring page to preview tier to generate a preview URL of the page:
 
 1. In [!DNL Assets View], navigate to the asset's details page and change the **[!UICONTROL Status]** to **[!UICONTROL Preview]**. Click **[!UICONTROL Save]**.
-1. Navigate to your Sites authoring page and follow the steps in the [Publishing Content to Preview](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content) section to publish your page to preview tier using **[!UICONTROL Manage Publication]** option. Then, generate a preview URL of your page. Share this preview URL with the stakeholders for review and feedback. Ensure that your stakeholders have access to the preview page. See [Access the preview service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments#access-preview-service) for information on providing access to the preview pages.
+1. Navigate to your Sites authoring page and follow the steps in the [Publishing Content to Preview](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content) section to publish your page to preview tier using **[!UICONTROL Manage Publication]** option. Then, generate a preview URL of your page. The Preview page displays the updated assets in your Sites page. Share this preview URL with the stakeholders for review and feedback. Ensure that your stakeholders have access to the preview page. See [Access the preview service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments#access-preview-service) for information on providing access to the preview pages.
+
+   >[!NOTE]
+   >
+   >[Image V3 core component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/image#version-and-compatibility) supports preview version of assets by default. If you select an asset in preview version using the asset selector panel then the Image V3 core component automatcally renders the asset in the preview version on your Sites author page.
+
+After sharing the preview page with the stakeholders for review, [revert to the original live asset](#revert-to-the-original-live-asset) until you finalize the asset version to publish. This step helps to maintain the integrity of the live site and ensure that users continue to see the original, consistent asset.
+
 
    >[!TIP]
    >
    > Switch between Preview and Publish versions of the page by replacing the word Preview with Publish (or vice versa) in the preview or publish URL.
-
-After sharing the preview page with the stakeholders for review, [revert to the original live asset](#revert-to-the-original-live-asset) until you finalize the asset version to publish. This step helps to maintain the integrity of the live site and ensure that users continue to see the original, consistent asset.
 
 ## Revert to the original live asset{#revert-to-the-original-live-asset}
 
