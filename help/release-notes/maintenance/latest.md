@@ -23,6 +23,7 @@ The 2025.8.0 feature activation will provide the full feature set for this maint
 * SITES-32741 - Trigger update of contenf-fragment page references asynchronously
 * SITES-32087 - GraphQL: Add support for _ignoreCase on StringArray
 * SITES-31791 - Upgrade graphql-java library to 24.0
+* SITES-12211 - Improved Performance in template editor
 
 ### Fixed Issues {#fixed-issues-21772}
 
@@ -30,6 +31,12 @@ The 2025.8.0 feature activation will provide the full feature set for this maint
 * SITES-29967 - GraphiQL: Long query names are cut off
 * SITES-26266 - Content references that don't start with / are not returned from BE response (Java API)
 * SITES-17874 - GraphQL persisted queries: Fix encoding for content-type application/graphql-response+json
+* SITES-24506 Screen readers informed on search results
+* SITES-25268 Screen reader improvements for annotations
+* SITES-32366 Spell Check results hidden behind RTE dialog
+* SITES-32829 MediaQuery emulator improvements to parse media query level 3 and 4 
+* SITES-32278 Tag fields fixed to use field label correctly
+* SITES-25244 Horizontal bar not appearing in image modal anymore
 
 ### Known Issues {#known-issues-21772}
 
