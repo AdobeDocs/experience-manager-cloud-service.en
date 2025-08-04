@@ -21,7 +21,7 @@ Ensure you have:
 
 ## Preview assets in your sites preview page {#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPIs-capabilities}
 
-Follow these steps to preview an asset in your site's Preview page (a replica of your live site) before publishing them live:
+Follow these steps to preview an asset in your site's Preview tier before publishing them live:
 
 1. [ In Assets View, set the asset status to [!UICONTROL Approved] for public delivery](#approve-asset-for-public-delivery)
 1. [Replace the existing asset in your live sites' author page and publish the pages](#replace-the-existing-asset-and-publish-the-pages)
@@ -61,7 +61,7 @@ Execute the following steps to change the asset status from approved to preview 
 
    >[!NOTE]
    >
-   >[Image V3 core component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/image#version-and-compatibility) supports preview version of assets by default. If you select an asset in preview version using the asset selector panel then the Image V3 core component automatcally renders the asset in the preview version on your Sites author page.
+   >[Image V3 core component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/image#version-and-compatibility) supports preview version of assets by default. If you select an asset in preview version using the Asset Selector panel then the Image V3 core component automatcally renders the asset in the Preview tier (a preview version on your Sites author page).
 
 After sharing the preview page with the stakeholders for review, [revert to the original live asset](#revert-to-the-original-live-asset) until you finalize the asset version to publish. This step helps to maintain the integrity of the live site and ensure that users continue to see the original, consistent asset.
 
