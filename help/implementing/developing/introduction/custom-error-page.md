@@ -23,6 +23,10 @@ To respond to errors, AEM provides a `404.jsp` script under `/libs/sling/servlet
 >
 >On a publish instance, CQ WCM Debug Filter is **always** disabled (even if configured as enabled).
 
+>[!NOTE]
+>
+>For further information about error handling with the Dispatcher see [Configuring CDN Error Pages](/help/implementing/dispatcher/cdn-error-pages.md).
+
 ## How to Customize Pages Shown by the Error Handler {#how-to-customize-pages-shown-by-the-error-handler}
 
 You can develop your own scripts to customize the pages shown by the error handler when an error is encountered. To do this you use [AEM's standard overlay mechanism](/help/implementing/developing/introduction/overlays.md) so that your customized pages are created under `/apps` and overlay the default pages that are under `/libs`.

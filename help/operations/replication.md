@@ -265,7 +265,7 @@ The size of the content transmitted per replication call must not exceed `10 MB`
 
 To troubleshoot replication, navigate to the Replication Queues in the AEM Author Service Web UI:
 
-1. From the AEM Start Menu, navigate to **Tools** > **Deployment** > **Distribution**
+1. From the AEM [Global Navigation](/help/sites-cloud/authoring/basic-handling.md#global-navigation), navigate to **Tools** > **Deployment** > **Distribution**
 1. Select the card **publish**
 
    ![Status](assets/publish-status.png "Status")

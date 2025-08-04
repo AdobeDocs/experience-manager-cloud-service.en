@@ -402,9 +402,10 @@ const filterSchema = useMemo ((); => {
 
 ## Upload in Asset Selector {#upload-in-asset-selector}
 
-You can upload files or folders to Asset Selector from your local file system. To upload files using the local file system, you generally need to use an upload  feature provided by a Asset Selector micro front-end application. Various code snippets required to invoke upload in asset selector involves:
+You can upload files or folders to Asset Selector from your local file system. To upload files using the local file system, you generally need to use an upload  feature provided by a Asset Selector micro front-end application. The `upload` Various code snippets required to invoke upload in asset selector involves:
 
 * [Basic upload form code snippet](#basic-upload)
+* [Upload configuration](#upload-config)
 * [Upload with metadata](#upload-with-metadata)
 * [Customized upload](#customized-upload)
 * [Upload using third party sources](#upload-using-third-party-source)
@@ -443,6 +444,25 @@ export const UploadExample = () => {
     )
 }
 ```
+
+### Upload configuration {#upload-config}
+
+```
+uploadConfig: {
+        onUploadStart: action('onUploadStart'),
+        onUploadComplete: action('onUploadComplete'),
+        metadataSchema: [
+            {
+                mapToProperty: 'dam:assetStatus',
+                value: 'approved',
+                element: 'hidden',
+            },
+        ],
+        ... more properties
+     }, 
+```
+
+*More properties include `metadataSchema`, `onMetadataFormChange`, `targetUploadPath`, `hideUploadButton`, `onUploadStart`, `importSettings` `onUploadComplete`, `onFilesChange`, `uploadingPlaceholder`*. See [Asset Selector properties](#asset-selector-properties.md) for more information.
 
 ### Upload with metadata {#upload-with-metadata}
 
