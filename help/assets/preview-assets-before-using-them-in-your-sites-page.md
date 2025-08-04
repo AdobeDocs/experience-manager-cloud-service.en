@@ -35,7 +35,7 @@ Execute the following steps to approve an asset for public delivery:
 2. Select the asset to preview.
 3. Click **[!UICONTROL Details]**.
 4. In the [!UICONTROL Information Panel], set **[!UICONTROL Status]** to **[!UICONTROL Approved]**, then click **[!UICONTROL Save]**.
-![](/help/assets/assets/asset-status.png)
+![Approved](/help/assets/assets/asset-status.png)
 
    >[!NOTE]
    >
@@ -57,6 +57,7 @@ A confirmation message **[!UICONTROL The page has been published]** displays aft
 Execute the following steps to change the asset status from approved to preview in [!DNL Assets View] and then publish your Sites authoring page to preview tier to generate a preview URL of the page:
 
 1. In [!DNL Assets View], navigate to the asset's details page and change the **[!UICONTROL Status]** to **[!UICONTROL Preview]**. Click **[!UICONTROL Save]**.
+![Preview](/help/assets/assets/preview-boat-at-bay.png)
 1. Navigate to your Sites authoring page and follow the steps in the [Publishing Content to Preview](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content) section to publish your page to preview tier using **[!UICONTROL Manage Publication]** option. Then, generate a preview URL of your page. The Preview page displays the updated assets in your Sites page. Share this preview URL with the stakeholders for review and feedback. Ensure that your stakeholders have access to the preview page. See [Access the preview service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments#access-preview-service) for information on providing access to the preview pages.
 
    >[!NOTE]
