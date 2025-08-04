@@ -69,7 +69,7 @@ FORMS-18450: reCAPTCHA V2 (including invisible reCAPTCHA) is now easier to set u
 * FORMS-10836: Changed orientation of master page properties in Document of Record (DoR) for Right to Left languages.
 * SITES-32014 - Edge Delivery with Universal Editor: Add automatic configuration of CORS policies for localhost, aem.page and aem.live
 * SITES-26532 - Edge Delivery with Universal Editor: Add Support for localized URLs (early access)          
-
+* CQ-4358722 : Resolved localization issues caused by differing locale codes between Java 11 and Java 17. 
 ### Fixed Issues {#fixed-issues-21772}
 
 * SITES-31992 - GraphQL: Fix sporadical errors in model scan during bundles startup
@@ -127,7 +127,9 @@ FORMS-18450: reCAPTCHA V2 (including invisible reCAPTCHA) is now easier to set u
 * SITES-33177 - Edge Delivery with Universal Editor: fix broken section styles when stored as comma separated strings
 * SITES-33262 - Edge Delivery with Universal Editor: fix blocks with no name property break page rendering and publishing
 * SITES-33309 - Edge Delivery with Universal Editor: fix IllegalArgumentException when writing to a spreadsheet with a slash in columns
-* SITES-33408 - Edge Delivery with Universal Editor: fix Spreadsheets don't appear as modified after making changes      
+* SITES-33408 - Edge Delivery with Universal Editor: fix Spreadsheets don't appear as modified after making changes
+* CQ-4360190 : Fixed UnsupportedOperationException occurring when attempting to use add on a keySet that does not support the operation.
+* CQ-4360421 :  Addressed an issue with Microsoft Translator subscription key encryption to improve security and compatibility.      
 
 ### Altered functionality {#altered-functionality-21772}
 * SITES-26344 - Unify validation of fragmentId / modelId between endpoints - these ids are now validated and a 400 status code is returned if they are not valid.
