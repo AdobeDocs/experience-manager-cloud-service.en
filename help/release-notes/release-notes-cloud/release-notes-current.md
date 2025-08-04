@@ -57,29 +57,46 @@ Content Hub now lets you [control access to collections during creation, ensurin
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [Universal Editor for Adaptive Forms and Form Fragments](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): The Universal Editor now supports the creation of both Adaptive Forms and reusable Form Fragments. Authors can visually build forms, configure submit actions, and add reCAPTCHA validation, all in a simplified, WYSIWYG authoring environment. This capability accelerates form creation, enhances consistency, and improves protection against spam and automated abuse.
+**Generate and sync AFP renditions from Adaptive Forms**
 
-### Pre-release Features 
+The [AFP Output Sync API](/help/forms/document-generation-afp-api.md) enables administrators and users to generate AFP (Advanced Function Presentation) output from Adaptive Forms and synchronize the output with external systems or storage locations. AFP is a high-performance document format optimized for printing, often used in large-scale enterprise environments.
 
-* [Generate and Sync AFP Renditions from Adaptive Forms](/help/forms/document-generation-afp-api.md): The AFP Output Sync API enables administrators and users to generate AFP (Advanced Function Presentation) output from Adaptive Forms and synchronize the output with external systems or storage locations. AFP is a high-performance document format optimized for printing, often used in large-scale enterprise environments.
+### New pre-release features in AEM Forms {#forms-new-early-access-features}
 
-* [SharePoint Document Library - Save Attachments with Original Filenames](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): You now have the option to save form attachments using their original filenames when storing them in a SharePoint Document Library. This enhancement simplifies the identification and management of uploaded files.
+**Enhancements in Rule Editor**
 
-* **Rule Editor**:
-    * [Binary Condition with Click Event in "When" Clause](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): The Rule Editor now allows combining a button click event (_Is Clicked_) with other conditions within the "When" clause. This enables more precise control over rule execution based on user interaction and other factors. Note: When using multiple conditions, the click event must be the first condition listed.
-    * [Validation Conditions for Fields and Panels](/help/forms/rule-editor-core-components-usecases.md): The Rule Editor now includes _IsValid_ and _IsNotValid_ conditions. These allow you to check the validation status of specific fields or entire panels (including layouts like Horizontal Tabs, Vertical Tabs, Accordions, and Wizards), facilitating improved form navigation and user experience based on validation results.
-* [Improved Scope Management for SharePoint Lists](/help/forms/connect-forms-to-sharepoint-list.md): SharePoint sites now support all managed paths, for example, /sites and /teams. This enhancement enables broader integration across various SharePoint site structures, offering greater flexibility in connecting to organizational content.
-* [Support for Saving Document of Record to SharePoint List](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): Forms created using a SharePoint List–based Form Data Model (FDM) can now save the Document of Record (DoR) to SharePoint Lists by configuring the Document of Record Bind Reference field property. This enhancement enables seamless integration of supported form data and documents with SharePoint storage. 
+* The `validate` method in the function list now supports validation at the panel, field, and form levels.
+* Client-side custom function parsing now supports ES10+ JavaScript features and static imports.
+* The button to download Document of Record (DoR) is now available as an out-of-the-box (OOTB) option in the rule editor.
+* Rules now support the use of dynamic variables.
+* Custom event-based rules are now supported.
+* Repeatable panel rules are now executed based on context, rather than only on the last panel instance.
+* Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
+* Form-specific custom function scripts are now supported for Adaptive Forms in Edge Delivery Services.
+
   
-### Early Access Features in AEM Forms {#forms-new-early-access-features}
+### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 
-The AEM Forms Early Access Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations, and help shape their development.
+The AEM Forms Early Access Program offers a unique opportunity for you to get exclusive access to cutting-edge innovations and help shape their development.
 
-This release notes lists the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
+These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
-#### Adobe Experience Platform (AEP) Integration with Forms
 
-* [Integration of AEM Forms with Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): The AEM Forms to Adobe Experience Platform Connector enables seamless integration between Adaptive Forms and Adobe Experience Platform. This feature allows form data to be mapped to XDM schemas and submitted directly to AEP in real time. It streamlines data capture for personalization and activation use cases across Adobe Experience Cloud solutions.
+**Forms Optimization opportunities**
+
+Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469472/) 
+
+Key optimization opportunities include:
+
+* Increasing visibility for forms with low views
+* Improving completion rates for forms with low conversions
+* Addressing accessibility compliance issues
+* Streamlining navigation to enhance user experience
+
+With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive.
+
   
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
