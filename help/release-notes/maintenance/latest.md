@@ -45,7 +45,28 @@ The 2025.8.0 feature activation will provide the full feature set for this maint
 * SITES-32247: [SLA3] AEM "Text and Personalization" Component – Missing Dialog Personalization & UI Misalignment - https://jira.corp.adobe.com/browse/SITES-32247
 * SITES-32261: [SLA3] Experience Fragment i18n Not Applied to Field - https://jira.corp.adobe.com/browse/SITES-32261
 * SITES-32666: Template Predicate contains \n causing HTML lookup to fail - https://jira.corp.adobe.com/browse/SITES-32666
-* SITES-32674: [SLA3] Featured Image Field Image Picker not working for Page Creation Wizard Despite cq:showOnCreate - https://jira.corp.adobe.com/browse/SITES-32674           
+* SITES-32674: [SLA3] Featured Image Field Image Picker not working for Page Creation Wizard Despite cq:showOnCreate - https://jira.corp.adobe.com/browse/SITES-32674 
+* FORMS-19624: Enabled Interactive Communications (IC). It empowers organizations to deliver personalized, on-demand communications—such as statements, invoices, and correspondence—by combining structured templates with dynamic data. With features like web-based template design, reusable content fragments, rule-driven variations, and seamless data integration, IC enables consistent and scalable customer communications across channels.
+* FORMS-19587, FORMS-17107, FORMS-19591, FORMS-19582, FORMS-20129, FORMS-20002, FORMS-19593,FORMS-20655, FORMS-19583, FORMS-18024, FORMS-19581: The following enhancements have been made to the Adaptive Forms Rule Editor:
+    * The `validate` method in the function list can now validate panels, fields, and forms.
+    * Improved client-side custom function parsing to support ES10+ features and static imports.
+    * Added an out-of-the-box (OOTB) "Download Document of Record (DoR)" button in the rule editor.
+    * Added support for dynamic variables within rules.
+    * Enabled creation of rules based on custom events.
+    * Rules for repeatable panels now execute in the correct context, rather than only on the last panel instance.
+    * Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
+    * Added support for form-specific custom function scripts in EDS (Experience Data Store).
+    * Added support for using `EVENT_PAYLOAD` in the "Navigate To" action within the success handler of the rule editor.
+    * Supported function calls within input parameters in rule editor and ensured rules are not saved if any required parameters are missing from the function call.
+    * Highlighted broken rules in the rule editor UI.
+FORMS-18450: reCAPTCHA V2 (including invisible reCAPTCHA) is now easier to set up and use in Adaptive Forms. The configuration is now managed in one place, making it simpler for you to enable spam protection in your forms.
+* FORMS-18385: Added support for AFP generation from XDP and data in AEM Forms through the Output service.
+* FORMS-17789: Added an out-of-the-box button in the rule editor to download Document of Record (DoR).
+* FORMS-20313, FORMS-2896: Added support for the `dorExclude` property to disable specific features in core component-based forms.
+* FORMS-20262: Handled invalid file attachments (0 byte) on the client-side.
+* FORMS-18347: Improved Adaptive Forms editor logging for missing form container proxy components.
+* FORMS-16205: Excluded disabled components from Document of Record (DoR) in core component-based forms.
+* FORMS-10836: Changed orientation of master page properties in Document of Record (DoR) for Right to Left languages.          
 
 ### Fixed Issues {#fixed-issues-21772}
 
@@ -82,7 +103,25 @@ The 2025.8.0 feature activation will provide the full feature set for this maint
 * SITES-32931: wcm mobile code is readable by everyone - https://jira.corp.adobe.com/browse/SITES-32931
 * SITES-31192: Experience Fragments losing Version History after being moved - https://jira.corp.adobe.com/browse/SITES-31192
 * SITES-33529: [SLA4] AEMaaCS-ACS integration returns 503 (invalid JSON) – Error while linking the ACS Campaign templates with AEM pages https://jira.corp.adobe.com/browse/SITES-33529
-* SITES-33468: [AEM] AEMaaCS unable to connect to ACS - https://jira.corp.adobe.com/browse/SITES-33468      
+* SITES-33468: [AEM] AEMaaCS unable to connect to ACS - https://jira.corp.adobe.com/browse/SITES-33468
+* FORMS-20980: Fixed keyboard accessibility issues on Date Picker with custom display format in Adaptive Forms. The calendar pop-up now opens correctly when pressing Space or Enter, ensuring compliance with WCAG 2.1.1.
+* FORMS-20498: Added a check for null pointer exceptions in OdataResponse to prevent runtime errors.
+* FORMS-20947: Addressed multiple accessibility issues, including screen-reader violations and text truncation/overlap problems.
+* FORMS-21030, FORMS-20630: Resolved issues with dropdown fields configured for multiple selections in adaptive forms. The generated PDF now correctly includes all selected values.
+* FORMS-19579: Fixed the issue where the Invoke service rule did not auto-correct on re-save.
+* FORMS-20734: Corrected the duplication of signature fields in PDF documents generated by the Output service for XFAF based input PDF templates.
+* FORMS-20934: Fixed the Autofill Attribute dropdown in AEM Forms authoring UI to remove duplicate entries and include all standard HTML autocomplete tokens.
+* FORMS-20700: Resolved the flickering of dropdown help-text on initial load in AEM Forms.
+* FORMS-20307: Fixed the issue where forms embedded on a site page were not getting translated with 4-character locales.
+* FORMS-20493: Addressed the issue where forms automatically refreshed when data was fetched, causing user inconvenience.
+* FORMS-18455: Enhanced the Adaptive Forms Editor for Core Components to show dots for used data objects in the data source tree.
+* FORMS-19373: Prevented replication errors for publish environments that do not have any replication agents configured.
+* FORMS-20042: Fixed the broken properties view caused by the Apache Sling GET Servlet Configuration with HTML config enabled.
+* FORMS-20036, FORMS-19978: Addressed PDF/A-1b compliance and validation issues.
+* LC-3923083: Resolved "path object not tagged" error for bordered items in XDP templates.
+* FORMS-19166: Moved pagedatasource.jsp to servlet to improve error stack trace clarity and added more guardrails and logging.
+* FORMS-16466: Fixed issues with repeatable panels not populating correctly in AEM Forms.
+* FORMS-19629: Addressed issues with customer JSON schema parsing providing invalid results..      
 
 ### Altered functionality {#altered-functionality-21772}
 * SITES-26344 - Unify validation of fragmentId / modelId between endpoints - these ids are now validated and a 400 status code is returned if they are not valid.
@@ -92,6 +131,7 @@ The 2025.8.0 feature activation will provide the full feature set for this maint
 * SITES-30887: [TouchUI] Add Contet Fragment uuids stored in workflow metadata - https://jira.corp.adobe.com/browse/SITES-30887
 * SITES-33678: Add Toggle for SITES-33529 - https://jira.corp.adobe.com/browse/SITES-33678
   
+
 ### Known Issues {#known-issues-21772}
 
 None.
@@ -102,7 +142,11 @@ Deprecated and removed features and APIs in AEM as a Cloud Service are detailed 
 
 ### Security Fixes {#security-21772}
 
+<<<<<<< HEAD
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 12 identified vulnerabilities, reinforcing our commitment to robust system protection.
+=======
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 23 identified vulnerabilities, reinforcing our commitment to robust system protection.
+>>>>>>> next-maintenance-release
 
 ### Embedded Technologies {#embedded-tech-21772}
 
