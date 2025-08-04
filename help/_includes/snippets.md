@@ -274,3 +274,11 @@ To log a support ticket, you must first register your Edge Delivery site in Clou
 >**Have you considered Edge Delivery Services for AEM?**
 >
 >You can continue using the methods described in this document for existing projects. However for new projects, Adobe recommends leveraging [Edge Delivery Services.](/help/edge/overview.md)
+
+## Adobe-Provided Site Templates {#adobe-templates}
+
+To accelerate site creation, Adobe provides a number of templates suited to different purposes.
+
+* [AEM Site with Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) - For authoring AEM pages with the Universal Editor and delivering through [edge delivery](/help/edge/overview.md)
+* [Edge Delivery Services with AEM Authoring for Commerce](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases) - For authoring AEM pages with the Universal Editor for commerce projects and delivery through [edge delivery](/help/edge/overview.md)
+* [Standard AEM Site Template](https://github.com/adobe/aem-site-template-standard/releases) - For authoring traditional AEM pages and delivering through [publish delivery](/help/sites-cloud/authoring/author-publish.md)

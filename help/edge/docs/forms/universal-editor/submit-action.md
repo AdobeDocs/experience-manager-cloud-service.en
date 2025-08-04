@@ -4,8 +4,48 @@ description: Configure Submit Actions for Adaptive Form.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
+hide: yes
+hidefromToC: yes
 ---
 # Adaptive Form Submit Action
+
+## Overview
+
+Form submission is the critical final step in the user journey—it's where collected data is processed and actions are taken. This document provides a comprehensive guide to configuring and managing submit actions for Adaptive Forms in Universal Editor.
+
+### What You'll Learn
+
+By the end of this document, you'll understand how to:
+
+* Configure different types of submit actions for your forms
+* Set up REST endpoint submissions for integration with external systems
+* Configure email submissions for form responses
+* Implement custom submit actions for specific business needs
+* Handle form validation and error scenarios during submission
+
+### Target Audience
+
+This guide is designed for:
+
+* **Form developers** implementing submission logic
+* **System integrators** connecting forms to backend systems
+* **Business analysts** defining form workflows
+* **Technical architects** designing form submission processes
+
+### Available Submit Actions
+
+Universal Editor provides two primary submit action types:
+
+1. **Submit to REST endpoint** * Send form data to API endpoints
+2. **Send Email** * Deliver form responses via email
+
+### Prerequisites
+
+Before configuring submit actions, ensure you have:
+
+* Access to Universal Editor
+* Proper permissions for form configuration
+* Understanding of your target submission endpoint or email configuration
 
 A Submit Action specifies the destination for the data collected through an Adaptive Form. The submission process begins when the user clicks the **[!UICONTROL Submit]** button on the form. AEM Forms offers two types of submit actions described below, and lets you create and use custom submit actions to meet your specific needs. The out-of-the-box submit actions are:
 
@@ -36,7 +76,7 @@ To configure a REST endpoint:
 1. Specify the REST endpoint URL.
 1. You can also **Enable POST request** and provide a URL to post the request. 
 
-![Enable post request for adaptive forms](/help/forms/assets/enable-post-request-ue.png)
+![Screenshot of the Universal Editor properties panel showing the REST endpoint configuration fields including URL input and Enable POST request toggle for form submission](/help/forms/assets/enable-post-request-ue.png)
 
   >[!NOTE]
   >
@@ -118,7 +158,7 @@ To configure a submit action as an Email for your form submission:
         * **Use External Template**: Enables the use of an external email template for formatting the email content. Provide the URL or path to the External template path to integrate a pre-designed email template hosted in your AEM Assets folder.
         * **Include Attachment**: Specifies whether the submitted form data should include an attachment submitted through the form in the email.
 
-    {width=50%,height=50%}![Enable post request for adaptive forms](/help/forms/assets/email-config-ue.png)
+    ![Screenshot of the Universal Editor email configuration panel showing fields for From, To, CC, BCC, Subject, and options for external templates and attachments](/help/forms/assets/email-config-ue.png)
 
 -->
 
