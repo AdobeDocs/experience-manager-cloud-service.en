@@ -57,17 +57,20 @@ Content Hub now lets you [control access to collections during creation, ensurin
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-**Generate and sync AFP renditions from Adaptive Forms**
-The [AFP Output Sync API](/help/forms/document-generation-afp-api.md) enables administrators and users to generate AFP (Advanced Function Presentation) output from Adaptive Forms and synchronize the output with external systems or storage locations. AFP is a high-performance document format optimized for printing, often used in large-scale enterprise environments.
+### New features in AEM Forms {#forms-new-features}
 
-### New pre-release features in AEM Forms {#forms-new-early-access-features}
-=======
-* [Universal Editor for Adaptive Forms and Form Fragments](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): The Universal Editor now supports the creation of both Adaptive Forms and reusable Form Fragments. Authors can visually build forms, configure submit actions, and add reCAPTCHA validation, all in a simplified, WYSIWYG authoring environment. This capability accelerates form creation, enhances consistency, and improves protection against spam and automated abuse.
+**Universal Editor for Adaptive Forms and Form Fragments**
+
+ The [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) now supports the creation of both Adaptive Forms and reusable Form Fragments. Authors can visually build forms, configure submit actions, and add reCAPTCHA validation, all in a simplified, WYSIWYG authoring environment. This capability accelerates form creation, enhances consistency, and improves protection against spam and automated abuse.
 
   ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} 
 
 
-* [Generate and Sync AFP Renditions from Adaptive Forms](/help/forms/document-generation-afp-api.md): The AFP Output Sync API enables administrators and users to generate AFP (Advanced Function Presentation) output from Adaptive Forms and synchronize the output with external systems or storage locations. AFP is a high-performance document format optimized for printing, often used in large-scale enterprise environments.
+**Generate and sync AFP renditions from Adaptive Forms**
+
+The [AFP Output Sync API](/help/forms/document-generation-afp-api.md) enables administrators and users to generate AFP (Advanced Function Presentation) output from Adaptive Forms and synchronize the output with external systems or storage locations. AFP is a high-performance document format optimized for printing, often used in large-scale enterprise environments.
+
+### New pre-release features in AEM Forms {#forms-new-early-access-features}
 
 **Enhancements in Rule Editor**
 
