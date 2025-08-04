@@ -66,7 +66,9 @@ FORMS-18450: reCAPTCHA V2 (including invisible reCAPTCHA) is now easier to set u
 * FORMS-20262: Handled invalid file attachments (0 byte) on the client-side.
 * FORMS-18347: Improved Adaptive Forms editor logging for missing form container proxy components.
 * FORMS-16205: Excluded disabled components from Document of Record (DoR) in core component-based forms.
-* FORMS-10836: Changed orientation of master page properties in Document of Record (DoR) for Right to Left languages.          
+* FORMS-10836: Changed orientation of master page properties in Document of Record (DoR) for Right to Left languages.
+* SITES-32014 - Edge Delivery with Universal Editor: Add automatic configuration of CORS policies for localhost, aem.page and aem.live
+* SITES-26532 - Edge Delivery with Universal Editor: Add Support for localized URLs (early access)          
 
 ### Fixed Issues {#fixed-issues-21772}
 
@@ -121,7 +123,11 @@ FORMS-18450: reCAPTCHA V2 (including invisible reCAPTCHA) is now easier to set u
 * LC-3923083: Resolved "path object not tagged" error for bordered items in XDP templates.
 * FORMS-19166: Moved pagedatasource.jsp to servlet to improve error stack trace clarity and added more guardrails and logging.
 * FORMS-16466: Fixed issues with repeatable panels not populating correctly in AEM Forms.
-* FORMS-19629: Addressed issues with customer JSON schema parsing providing invalid results..      
+* FORMS-19629: Addressed issues with customer JSON schema parsing providing invalid results..
+* SITES-33177 - Edge Delivery with Universal Editor: fix broken section styles when stored as comma separated strings
+* SITES-33262 - Edge Delivery with Universal Editor: fix blocks with no name property break page rendering and publishing
+* SITES-33309 - Edge Delivery with Universal Editor: fix IllegalArgumentException when writing to a spreadsheet with a slash in columns
+* SITES-33408 - Edge Delivery with Universal Editor: fix Spreadsheets don't appear as modified after making changes      
 
 ### Altered functionality {#altered-functionality-21772}
 * SITES-26344 - Unify validation of fragmentId / modelId between endpoints - these ids are now validated and a 400 status code is returned if they are not valid.
@@ -142,11 +148,8 @@ Deprecated and removed features and APIs in AEM as a Cloud Service are detailed 
 
 ### Security Fixes {#security-21772}
 
-<<<<<<< HEAD
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 12 identified vulnerabilities, reinforcing our commitment to robust system protection.
-=======
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 23 identified vulnerabilities, reinforcing our commitment to robust system protection.
->>>>>>> next-maintenance-release
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 35 identified vulnerabilities, reinforcing our commitment to robust system protection.
+
 
 ### Embedded Technologies {#embedded-tech-21772}
 
