@@ -24,6 +24,18 @@ The 2025.8.0 feature activation will provide the full feature set for this maint
 * SITES-32087 - GraphQL: Add support for _ignoreCase on StringArray
 * SITES-31791 - Upgrade graphql-java library to 24.0
 * SITES-12211 - Improved Performance in template editor
+* SITES-32861  Create Live Copy Chunked 
+  - Performance improvement for live copy creation through chunked processing
+* SITES-21383 - Improve performance when deleting large CF launches
+  - Performance optimization for Content Fragment launch deletion operations
+* SITES-31165 - Split the Rollout Job in multiple Chunks
+  - Performance enhancement by splitting rollout operations into manageable chunks
+* SITES-21353 - [Launches4CFs] use index for CF queries
+  - Query performance improvement for Content Fragment launches using database indexing
+* SITES-30495 - CF Launch create / edit sources: support fragment reference UUID
+  - Enhancement to support UUID-based fragment references in Content Fragment launches
+* SITES-32151 - cq:isContainer exposed
+  - API enhancement exposing container property functionality          
 
 ### Fixed Issues {#fixed-issues-21772}
 
@@ -37,7 +49,20 @@ The 2025.8.0 feature activation will provide the full feature set for this maint
 * SITES-32829 MediaQuery emulator improvements to parse media query level 3 and 4 
 * SITES-32278 Tag fields fixed to use field label correctly
 * SITES-25244 Horizontal bar not appearing in image modal anymore
-
+* SITES-33395 - Rollout button disabled for Content Fragment Live-Copy sync via References rail
+  - Fixed rollout button functionality for Content Fragment live copy synchronization
+* SITES-33147 - PredicateProvider not bound to LiveRelationshipServlet
+  - Fixed service binding issue affecting live relationship functionality
+* SITES-33528 - Comment timestamps reset to launch promotion time after Launch promotion
+  - Fixed timestamp preservation issue during launch promotion
+* SITES-33556 - Fix bug introduced by SITES-31178
+  - Regression fix for issues introduced in previous enhancement
+* SITES-31178 - (Referenced in SITES-33556 fix)
+  - Original issue that required subsequent bug fix
+* SITES-33014 - Excessive WARN logs from LaunchesAdapterFactory fix
+  - Fixed excessive warning log generation from LaunchesAdapterFactory
+* SITES-32305 - Live Copy Inheritance Break Fails After Layout
+  - Fixed live copy inheritance break functionality after layout changes    
 ### Known Issues {#known-issues-21772}
 
 None.
@@ -48,7 +73,7 @@ Deprecated and removed features and APIs in AEM as a Cloud Service are detailed 
 
 ### Security Fixes {#security-21772}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 4 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 2 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
 ### Embedded Technologies {#embedded-tech-21772}
 
