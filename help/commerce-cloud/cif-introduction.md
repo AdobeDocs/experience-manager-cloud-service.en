@@ -2,7 +2,6 @@
 title: Introducing AEM Commerce Integration Framework (CIF)
 description: Understand how to use and administer Experience Manager Content and Commerce as a Cloud Service with CIF.
 thumbnail: introducing-aem-commerce.jpg
-exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
 feature: Commerce Integration Framework
 role: Admin
 ---
