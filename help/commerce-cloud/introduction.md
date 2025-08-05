@@ -51,7 +51,7 @@ You have an existing storefront (e.g. built with React JS) and want to use Adobe
 
 ### AEM CIF storefront {#cif}
 
-Adobe's recommendation and reference architecture is to use Edge Delivery Services. The CIF storefront with its AEM CIF Core Components is now in maintenance mode and should not be used in new projects. For reference, please see the [CIF documentation.](./cif-introduction.md)
+Adobe's recommendation and reference architecture is to use Edge Delivery Services. The CIF storefront with its AEM CIF Core Components is now in maintenance mode and should not be used in new projects. For reference, please see the [CIF documentation.](/help/commerce-cloud/cif-introduction.md)
 
 >[!NOTE]
 >
