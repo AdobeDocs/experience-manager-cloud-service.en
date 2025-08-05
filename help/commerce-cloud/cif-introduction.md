@@ -4,8 +4,8 @@ description: Understand how to use and administer Experience Manager Content and
 thumbnail: introducing-aem-commerce.jpg
 feature: Commerce Integration Framework
 role: Admin
+exl-id: 3f18f976-ff8a-4726-b4c5-db4e19ae7cee
 ---
-
 # Introducing AEM Commerce Integration Framework (CIF) {#cif-intro}
 
 A commerce solution can be anything from a commercial solution such as the Adobe Commerce Cloud to a set of custom commerce services. The integration is highly dependent on the use-case and ecosystem. It usually affects various systems and comes in many different varieties:
