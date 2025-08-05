@@ -8,7 +8,7 @@ role: Admin, User
 
 [!DNL Dynamic Media with OpenAPIs capabilities] lets you preview assets available in your [!DNL Adobe Experience Manager (AEM) Sites] author pages before making them publicly available. 
 
-To [generate assets preview](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPIs-capabilities) update your AEM Sites author pages by either adding the new assets or replacing the existing ones and then publish your authoring pages to the preview tier to generate a preview URL of the page. [!DNL Dynamic Media with OpenAPIs capabilities] enables the preview of updated assets in your Sites preview tier. Share this preview page with stakeholders to collect feedback on the visual quality and contextual alignment of the updated assets. Refine the assets based on the feedback. 
+To [generate assets preview](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPIs-capabilities), update your AEM Sites author pages by either adding the new assets or replacing the existing ones. Then publish your updated author pages to the preview tier to generate a preview URL of the page. [!DNL Dynamic Media with OpenAPIs capabilities] enables the preview of updated assets in your Sites preview tier. Share this preview page with stakeholders to collect feedback on the visual quality and contextual alignment of the updated assets. Refine the assets based on the feedback. 
 
 During the review cycle, you can create and manage multiple versions of the asset before publishing the final version for public use.
 
@@ -25,7 +25,7 @@ Follow these steps to preview an asset in your site's Preview tier before publis
 
 1. [ In Assets View, set the asset status to [!UICONTROL Approved] for public delivery](#approve-asset-for-public-delivery)
 1. [Replace the existing asset in your live sites' author page and publish the pages](#replace-the-existing-asset-and-publish-the-pages)
-1. [In Assets View, set the asset status to [!UICONTROL Preview] and publish your Sites authoring page to preview tier to generate a preview page](#set-the-asset-to-preview-status-and-generate-a-preview-page)
+1. [In Assets View, set the asset status to [!UICONTROL Preview]. Then publish your Sites authoring page to preview tier to generate a preview page](#set-the-asset-to-preview-status-and-generate-a-preview-page)
 
 ### Set the asset status to [!UICONTROL Approved] for public delivery{#approve-asset-for-public-delivery}
 
