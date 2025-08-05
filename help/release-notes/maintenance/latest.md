@@ -123,7 +123,7 @@ The 2025.8.0 feature activation will provide the full feature set for this maint
 
 ### Known Issues {#known-issues-21772}
 
-None.
+* SITES-31791: Content Fragments GraphQL - New confioguration for "Maximum field count". See [Knowledge Base article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27231).
 
 ### Deprecated Features and APIs {#deprecated-21772}
 
