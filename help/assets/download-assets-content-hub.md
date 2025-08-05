@@ -134,8 +134,8 @@ Learn more about [view and manage renditions in [!DNL Experience Manager Assets]
   ![Renditions types](/help/assets/assets/renditions-types.png)
 
   >[!NOTE]
-   > 
-   > The Download panel displays only custom static renditions. The default `cq5dam.*` thumbnails do not display in Content Hub.
+  > 
+  > The Download panel displays only custom static renditions. The default `cq5dam.*` thumbnails do not display in Content Hub.
 
 ### Enable Dynamic renditions {#enable-dynamic-media-renditions}
 
