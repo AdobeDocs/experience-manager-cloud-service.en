@@ -1,11 +1,49 @@
 ---
 title: How to manage [!DNL Dynamic Media] templates?
-description: Learn how to create [!DNL Dynamic Media] templates using a WYSIWYG template editor and include multiple images and text layers to quickly create banners and flyers and use them in downstream applications.
+description: Learn how to create [!DNL Dynamic Media] templates using a WYSIWYG template editor and include multiple images, texts and shapes layers to quickly create banners and flyers and use them in downstream applications.
 hide: yes
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
 ---
+
 # [!DNL Dynamic Media] templates{#dynamic-media-templates}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
+        </td>
+    </tr>
+</table>
 
 Create real time customizable templates for your banners and flyers using [!DNL Dynamic Media] templates, a WYSIWYG template editor. Publish your [!DNL Dynamic Media] template and use it in downstream applications. A [!DNL Dynamic Media] template includes image and text layers. Add parameters to the image and text layers of the template and use [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) to reposition and resize the layer and update its content in real-time. 
 
@@ -57,6 +95,7 @@ Execute the following steps to create a [!DNL Dynamic Media] template:
 1. [Create a blank canvas](#create-a-canvas)
 1. [Add images to the canvas](#add-images-to-the-canvas)
 1. [Add text layers to the canvas](#add-text-to-the-canvas)
+1. [Add shapes to the canvas](#add-shapes-to-the-canvas)
 1. [Edit or delete a layer](#edit-or-delete-a-layer)
 1. [Parameterise layers](#parameterise-a-layer)
 
@@ -72,7 +111,7 @@ Execute these steps to create a blank canvas:
 ![how to create dynamic templates that can be customised in real time](/help/assets/assets/new-template.png)
    >[!NOTE]
    >
-   >  The template is saved in the location where you create it. On [!DNL Assets View] home page, select **[!UICONTROL Dynamic Media Assets]** and click **[!UICONTROL Create Template]** to save the template in **[!UICONTROL Dynamic Media Assets]** root folder.
+   >  The template is saved in the location where you create it. On the [!DNL Assets View] home page, select **[!UICONTROL Dynamic Media Assets]** and click **[!UICONTROL Create Template]** to save the template in **[!UICONTROL Dynamic Media Assets]** root folder.
  
 1. Specify a template name, define the canvas width and height, and click **[!UICONTROL Create]**. A blank canvas displays with menu options on both sides to use for creating the template. Hover over the menu options to see their tooltip. 
 ![real-time customizable template](/help/assets/assets/blank-canvas-page.png)
@@ -96,7 +135,7 @@ Execute these steps to create a blank canvas:
 * ![template to create banners rapidly](/help/assets/assets/redo.svg): Click ![template to create banners rapidly](/help/assets/assets/redo.svg) or use keyboard shortcut, **Ctrl** + **Y** (Windows) or **Cmd** + **Y** (Mac) to redo the last action.
 * ![template to create flyers rapidly](/help/assets/assets/zoom-in.svg): Click ![template to create flyers rapidly](/help/assets/assets/zoom-in.svg) or use keyboard shortcut, **Ctrl** + **+** (Windows) or **Cmd** + **+** (Mac) to zoom in the canvas.
 * ![template to create banners rapidly](/help/assets/assets/Zoom-out.svg): Click ![template to create banners rapidly](/help/assets/assets/Zoom-out.svg) or use keyboard shortcut, **Ctrl** + **-** (Windows) or **Cmd** + **-** (Mac) to zoom out the canvas.
-* Press **Backspace** or **delete** to delete the selected layer if no text or property is being edited.
+* Press **backspace** or **delete** to delete the selected layer if no text or property is being edited.
 
 Click ![template to create flyers rapidly](/help/assets/assets/show-layers-list.svg) and select more options (![](/help/assets/assets/three-dots.svg)) on the Canvas layer to edit the canvas dimensions anytime while creating the template.
 ![](/help/assets/assets/edit-canvas1.png)
@@ -113,6 +152,8 @@ Execute these steps to add images to the canvas:
 1. Browse the panel or use keywords in the search bar to find a specific image.
 1. Drag and drop an image on the canvas to use it. See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) for resizing or repositioning a layer on the canvas.
 ![create a banner within seconds](/help/assets/assets/add-image-to-canvas.png)
+1. Enable the **[!UICONTROL Uniform Radius]** toggle and use the **[!UICONTROL Corner Radius]** slider to adjust the roundness of all four corners of an image uniformly. Disable the toggle to customize the corner roundness by assigning specific radius values to each corner.
+![adjust corner roundness of image](/help/assets/assets/enable-uniform-radius-image.png)
 
 ### Add text layers to the canvas{#add-text-to-the-canvas}
 
@@ -124,6 +165,17 @@ Execute these steps to add text layers to the canvas:
 ![best customizable banners](/help/assets/assets/add-text-layer.png)
 
 See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) to reposition, resize, rotate or delete the layer. Format your text to the required font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **[!UICONTROL Text]** section of the panel. The **[!UICONTROL Font Family]** field displays [!UICONTROL Adobe Sans F2] default font, the reprocessed existing fonts and the newly uploaded and published fonts. See point 5 in the [Before you begin](#prerequisites-for-dynamic-media-wysiwyg-template) section above for more information.
+
+### Add shapes to the canvas {#add-shapes-to-the-canvas}
+
+Execute these steps to add shapes to the canvas:
+
+1. Click ![creating shapes](/help/assets/assets/Shapes.svg), select a shape (rectangle or circle) to add it to the canvas. Use the shape's [[!UICONTROL Properties Panel]](#reposition-resize-delete-a-layer) to reposition, resize, rotate or delete the layer. 
+1. Scroll to the **[!UICONTROL Style]** section of the panel, define a hex code in the **[!UICONTROL Shape Color]** field or use the color picker to fill color in the selected shape. 
+1. Enable the **[!UICONTROL Uniform Radius]** toggle and use the **[!UICONTROL Corner Radius]** slider to adjust the roundness of all four corners of the rectangle uniformally. Disable the toggle to customize the corner roundness by assigning specific radius values to each corner.
+![adjust corner roundness of shapes](/help/assets/assets/enable-uniform-radius-shape.png)
+1. [Add the **[!UICONTROL Hide]** parameter to the selected layer](#parameterise-a-layer) to show or hide the layer in the template in real time using the template URL. 
+1. Select the layer to [add a [!UICONTROL CTA] link](#add-CTA-in-dynamic-media-templates) to it, allowing users to click the shape as a hyperlink in the live template.
 
 ### Edit or delete a layer {#edit-or-delete-a-layer}
 
@@ -137,43 +189,38 @@ Execute these steps to edit or delete a canvas layer:
 
 ### Properties Panel{#properties-panel}
 
-To navigate to a layer's properties panel:
-
-1. Click ![rapid content creation](/help/assets/assets/show-layers-list.svg).
-1. Select the layer from the list. 
-
-This panel displays the position of the layer's center point on the canvas plane (X and Y values) and the layer's dimensions (width and height) along with text formatting options.
+[!UICONTROL Properties] panel includes sections to [reposition](#reposition-resize-delete-a-layer), [resize](#reposition-resize-delete-a-layer) and [rotate](#reposition-resize-delete-a-layer) a layer.  It also provides color fill options for [shape layers](#add-shapes-to-the-canvas), [text formatting options](#text-formatting-options-on-properties-panel) for [text layers](#add-text-to-the-canvas), and an option to [add a [!UICONTROL CTA] link](#add-CTA-in-dynamic-media-templates) to any selected layer.
+To navigate to a layer's properties panel, click ![rapid content creation](/help/assets/assets/show-layers-list.svg) and select the layer from the list to display its [!UICONTROL Properties] panel. 
 
 ![rapid content creation](/help/assets/assets/properties-panel.png)
 
-From the properties panel of a layer, select another layer on the canvas to navigate to its properties panel.
+From the [!UICONTROL Properties] panel of a layer, select another layer on the canvas to navigate to its [!UICONTROL Properties] panel.
  
-
 #### Reposition, resize, rotate or delete a layer{#reposition-resize-delete-a-layer}
 
 See these common layer editing actions to edit a text or an image layer:
 
-* **Reposition the layer:** Drag the layer to move it anywhere on the canvas. This action updates the X and Y values in the properties panel.
+* **Reposition the layer:** Drag the layer to move it anywhere on the canvas. This action updates the X and Y values in the properties panel. X and Y are the coordinates of the layer's center on the canvas plane.
 * **Resize the layer:** Select the layer and drag its edge handles to resize it. This action updates the W (width) and H (height) values in the properties panel.
 * **Rotate the layer:** Drag the square handle placed vertically above the layer to rotate it around its center. This action updates the angle values in the properties panel. 
 * **Delete the layer:** Press **Backspace** or **delete** and then click **[!UICONTROL Confirm]** to delete a selected layer.
 
 #### Text formatting options{#text-formatting-options-on-properties-panel}
 
-Format your text to required font, size, color, style, alignment (within the layer) by changing their values in the respective fields under the **[!UICONTROL Text]** section on the panel.
+Format your text to the required font, size, color, style, alignment (within the layer) by changing their values in the respective fields under the **[!UICONTROL Text]** section on the panel.
 Ensure to include **[!UICONTROL Smart Text Resize]**. [!UICONTROL Smart Text Resize] works on [Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) algorithum to optimally fill text in the text area and prevents text overflow and minimizes extra space at the bottom of the text.
 
 ![content creation in no time](/help/assets/assets/smart-text-resize.png)
 
 ### Parameterise layers {#parameterise-a-layer}
 
-After creating a template with multiple layers of images and texts, parameterise the selected layers. When a layer or its property is parameterised, it gets a key-value pair (also called as parameter). This parameter can be included in the template URL to update the layer's position, size or content in real time resulting in template customisation in no time.
+After creating a template with multiple layers of images, texts and shapes, parameterise the selected layers. When a layer or its property is parameterised, it gets a key-value pair (also called as parameter). This parameter can be included in the template URL to update the layer's position, size or content in real time resulting in template customisation in no time.
 
 To parameterise a layer:
 
 1. click ![instant content creation](/help/assets/assets/show-layers-list.svg), select a layer and click **[!UICONTROL Parameters]**. The **[!UICONTROL Parameters]** panel displays.
-1. Toggle **[!UICONTROL Include Parameter]** to parameterise a property. See [Parameters panel option](#parameterisation-options-or-allowed-parameters) to know the property's behaviour after parameterisation.
-1. **Optional:** Rename the parameter name. A parameter name has layer name followed by a suffix. For a selected layer all its parameterized properties share the same layer name followed by a varying suffix. Rename the layer name by following the semantic naming convention so that when you include the parameter in the URL, the parameter name self explains about the layer's content or its purpose.
+1. Toggle **[!UICONTROL Include Parameter]** to parameterise a property. See the [Parameters panel option](#parameterisation-options-or-allowed-parameters) to know the property's behavior after parameterisation.
+1. **Optional:** Rename the parameter name. A parameter name has a layer name followed by a suffix. For a selected layer all its parameterized properties share the same layer name followed by a varying suffix. Rename the layer name by following the semantic naming convention so that when you include the parameter in the URL, the parameter name self explains about the layer's content or its purpose.
 1. Click **[!UICONTROL Save]**.
 ![instant content creation](/help/assets/assets/parameterise-a-layer.png)
 To switch between the Parameter panel of an image and text layer, select the layer on the canvas and click **[!UICONTROL Parameters]**.
@@ -184,16 +231,16 @@ The parameterised properties can be included as URL parameters in the template U
 
 **Image parameters:**
 
-**[!UICONTROL X]:** Include to move the layer horizontally along its centreline, parallel to the X-axis of the template plane, by changing the parameter's value in the URL.
-**[!UICONTROL Y]:** Include to move the layer vertically along its centre line, parallel to the Y-axis of the template plane, by changing the parameter's value in the URL. 
+**[!UICONTROL X]:** Include to move the layer horizontally along its centerline, parallel to the X-axis of the template plane, by changing the parameter's value in the URL.
+**[!UICONTROL Y]:** Include to move the layer vertically along its centerline, parallel to the Y-axis of the template plane, by changing the parameter's value in the URL. 
 **[!UICONTROL Width]:** Include to adjust the layer's width by changing the parameter's value in the URL.
 **[!UICONTROL Height]:** Include to adjust the layer's height by changing the parameter's value in the URL.
 **[!UICONTROL Hide]:** Include to hide or show the layer in the template using 0 (show) and 1 (hide).
-**[!UICONTROL Source]:** Include to replace the layer's image with new image by changing the image path in the parameter's value in the URL.
+**[!UICONTROL Source]:** Include to replace the layer's image with a new image by changing the image path in the parameter's value in the URL.
 
 **Text formatting parameters:**
 
-Include the below parameters to edit the text, its font, colour and size from the URL by updating the parameter values in the URL.
+Include the below parameters to edit the text, its font, color and size from the URL by updating the parameter values in the URL.
 
 **[!UICONTROL Text]:** Include to update text from the URL.
 **[!UICONTROL Font Family]:** Include to update the text's font from the URL.
@@ -202,9 +249,9 @@ Include the below parameters to edit the text, its font, colour and size from th
 
 ### Group layers to control their visibility simultaneously{#group-layers}
 
-Another way to keep your templates flexible, is by utilising a single parameter name to control multiple layers. This strategy is helpful for the visibility (hide or show layers) parameter, to update the design or graphics from a single template.
+Another way to keep your templates flexible, is by using a single parameter name to control multiple layers. This strategy is helpful for the visibility (hide or show layers) parameter, to update the design or graphics from a single template.
 
-Follow these steps to assign the same name to the hide parameters (![fast content creation](/help/assets/assets/Visibility-icon.svg)) of multiple layers, allowing you to hide or show them simultaneously.
+Follow these steps to assign the same name to the [!UICONTROL Hide] parameters (![fast content creation](/help/assets/assets/Visibility-icon.svg)) of multiple layers, allowing you to hide or show them simultaneously.
 
 1. Navigate to the [**[!UICONTROL Properties Panel]**](#parameterise-a-layer) of a layer.
 1. Toggle the **[!UICONTROL Hide]** Parameter if not parameterised earlier.
@@ -213,14 +260,14 @@ Follow these steps to assign the same name to the hide parameters (![fast conten
 1. Go to the Parameter panel of other layers by selecting them from the canvas and toggle their **[!UICONTROL Hide]** Parameter if not parameterised.
 1. Replace their **[!UICONTROL Hide parameter]** name with the copied name.
 1. Click **[!UICONTROL Save]** to group the layers. 
-1. Execute step 3 and then 4 in [**[!UICONTROL Preview and Publish]**](#preview-and-publish-template-and-copy-template-deliver-url) section to see your changes. 
+1. Execute step 3 and then 4 in the [**[!UICONTROL Preview and Publish]**](#preview-and-publish-template-and-copy-template-deliver-url) section to see your changes. 
 
 ## Preview and publish the template to copy the delivery URL{#preview-and-publish-template-and-copy-template-deliver-url}
 
 Execute these steps to preview and publish the template and copy the delivery URL:
 
 1. On the canvas page, click **[!UICONTROL Preview]**. You can also navigate to **[!UICONTROL Assets View]** **>** **[!UICONTROL Dynamic Media Assets]** **>** find and select your template **>** click **[!UICONTROL Edit Template]** **>** click **[!UICONTROL Preview]**. The preview page displays the template, its parameters (parameterized layers and properties), publish status, and the **[!UICONTROL Publish]** option.
-1. Select parameters from **[!UICONTROL Template Parameters]** panel to edit their values and instantly update the content, size, position, or text formatting of the corresponding template layer in the preview. For example: 
+1. Select parameters from the **[!UICONTROL Template Parameters]** panel to edit their values and instantly update the content, size, position, or text formatting of the corresponding template layer in the preview. For example: 
    1. Select a text layer and edit its text or 
    1. Select an image layer, click ![creating content on the fly](/help/assets/assets/add-image.svg), select an image from the asset selector, and click **[!UICONTROL Refresh]**. 
 
@@ -252,7 +299,7 @@ Editing parameters directly in the URL can be tedious. To simplify:
 1. Copy the URL and paste it into a notepad. 
 1. Use Cmd+F (Mac) or Ctrl+F (Windows) to find and edit the parameter values. Such as:
    * Find and replace image paths for image layers.
-   * Find layer's [parameterized](#parameterise-a-layer) coordinates, width and height, to adjust their values. 
+   * Find the layer's [parameterized](#parameterise-a-layer) coordinates, width and height, to adjust their values. 
    * Edit text, font, color, size, or alignment for text layers. 
    * Change visibility values between 0 and 1. 
 
@@ -269,7 +316,7 @@ Edit the template by following these steps:
 
 ## Add Call to Action (CTA) link to your template layer{#add-CTA-in-dynamic-media-templates}
 
-Turn any image or text layer of your [!DNL Dynamic Media] template into a hyperlink by adding a CTA link to it that directs users to a target page. 
+Turn any image, text or shape layer of your [!DNL Dynamic Media] template into a hyperlink by adding a CTA link to it that directs users to a target page. 
 
 Execute these steps to add a CTA link to a layer:
 
@@ -308,9 +355,9 @@ Watch this step by step video to learn how to add a CTA link to a template layer
 ## Important points to note {#important-points-to-note}
 
 * After creating a template with parameterized image layers for dynamic updates, ensure that the images intended for future updates share the same dimensions as the parameterized images. This ensures the images fit perfectly within the layers without overflowing or leaving empty spaces. Currently, the template does not support automatic dimension adjustments to fit images into the layers.
-* There is no substring support in a text layer. User cannot apply different font properties on substring of a text layer.
+* There is no substring support in a text layer. The user cannot apply different font properties on substring of a text layer.
 * Support of multiple [!DNL Dynamic Media] companies is not currently available with [!DNL Dynamic Media] Templates.
-* In case of copy or move, Destination Selector shows all the folders (including non-[!DNL Dynamic Media] synced folders). Also, currently, it does not display the [!DNL Dynamic Media] Template assets (both of these are limitations of destination selector).
+* In case of copy or move, Destination Selector shows all the folders (including non-[!DNL Dynamic Media] synced folders). Also, currently, it does not display the [!DNL Dynamic Media] Template assets (both of these are limitations of the destination selector).
 * Any update operation on a folder (for example, Publish or Delete) from Assets section impacts the [!DNL Dynamic Media] Templates available within that folder. 
 * Trash does not work for [!DNL Dynamic Media] Templates. If an asset is moved to trash and then restored, the asset is restored in AEM but not on [!DNL Dynamic Media]. The same is valid for [!DNL Dynamic Media] Templates.
 
