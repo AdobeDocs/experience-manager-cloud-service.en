@@ -24,273 +24,149 @@ Let's now explore each method in detail with specific use cases to help you unde
  
 ## Validate Method in Function List
 
-Enhanced validation capabilities allowing the validate() method to be used in the function list to validate panels, fields, or entire forms. For example, in a multi-step loan application form, you need to validate different sections before allowing users to proceed to the next step.
+Enhanced validation capabilities allowing the **validate()** method to be used in the function list to validate panels, fields, or entire forms. For example, in a multi-step loan application form, you need to validate different sections before allowing users to proceed to the next step.
 
 **Scenario:** A financial institution offers a multi-step loan application form where users must complete different sections such as:
 
 * Personal Details
-* Employment Information
+* Employment Details
 * Loan Details
 * Review & Submit
 
-Before a user moves from one step to the next, the form must validate only the fields within the current section. For example, the user should not be allowed to proceed to "Employment Information" unless all required fields in "Personal Details" are correctly filled.
+Before a user moves from one step to the next, the form must validate only the fields within the current section. For example, the user should not be allowed to proceed to "Employment Details" unless all required fields in "Personal Details" are correctly filled.
 
 **Implementation using validate() in the Rule Editor**
 
 A **Next** button in each panel triggers a rule using the **validate()** method. The rule checks if all fields in the current panel are valid. If validation passes, the form navigates to the next panel. If not, error messages are displayed, guiding the user to correct the input.
 
+The screenshot below displays the rule applied to the **Next** button:
 
+![Validate Next Button](/help/forms/assets/validate-next.png)
 
+In the above rule, the **Next** button checks whether the fields in the **Personal Details** section are valid. If the details are not valid, the focus moves to the **Name** field in the **Personal Details** panel.
+
+![output](/help/forms/assets/valid-output.png)
 
 ## DownloadDor as OOTB fuction in Rule Editor
 
-Using the  DownloadDor() out-of-the-box (OOTB) function in the Rule Editor, allows user to download the Document pf Record , if the form is configured to generate Document pf Recored. 
+Using the  **DownloadDor()** out-of-the-box (OOTB) function in the Rule Editor, allows user to download the Document of Record , if the form is configured to generate Document of Recored. 
+
+>[!NOTE]
+>
+> If the form is not configured for Document of Record, an error message is displayed when the rule using the **downloadDoR()** function is applied to the button.
 
 **Scenario**: A government agency provides a digital application form for issuing certificates. After submitting the form, applicants often require a copy of the completed form for their records or to share with another department. To improve the user experience, the agency wants to give applicants the option to download a Document of Record (DoR) immediately after submission or at any stage before final submission.
 
 **Implementation using DownloadDor() in the Rule Editor**
 
-A Download button is added to the confirmation panel. Using the Rule Editor, a rule is configured to trigger the **DownloadDor()** function when the button is clicked.
+A **Download** button is added to form using the Rule Editor, a rule is configured to trigger the **DownloadDor()** function when the button is clicked.
+
+The screenshot below displays the rule applied to the **Download** button:
+
+![Download Button rule](/help/forms/assets/download-button-rule.png)
+
+>[!NOTE]
+>
+> The **Input** field allows the user to specify the file name for a downloadable document. This is an optional parameter.
 
 If the form is configured for DoR generation, this function generates and downloads the PDF instantly, without requiring any custom function.
 
-##  Support for Dynamic Variables in Rules
+![Document of Record](/help/forms/assets/download-dor-output.png)
 
-Enhanced rule editor supporting dynamic variables that can be created, modified, and used throughout the form lifecycle.
+## Support for Dynamic Variables in Rules
 
-### Use Case Scenario
-Creating complex calculations and conditional logic that depend on multiple form inputs and external data sources.
+The enhanced rule editor now supports the creation and use of dynamic (temporary) variables. These variables can be set and retrieved throughout the form's lifecycle using the built-in **Set Variable Value** and **Get Variable Value** functions.
+These variables:
 
-### Adaptive Form Example
-**Scenario:** E-commerce order form with dynamic pricing, taxes, and shipping calculations.
+* Are not submitted with the form data.
+* Can hold intermediate or calculated values.
+* Can be used in conditional logic and actions.s
 
-**Rule Implementation:**
-```javascript
-// Rule: Initialize dynamic variables
-When: Form loads
-Then:
-  Create variable "basePrice" = 0
-  Create variable "taxRate" = 0.08
-  Create variable "shippingCost" = 0
-  Create variable "totalAmount" = 0
+**Scenario**: An e-commerce company provides an order form where users can select a product and a preferred shipping method. While product price is captured through a form field, shipping cost is determined dynamically based on the selected method and used only in real-time price calculation, not stored in form data.
 
-// Rule: Calculate dynamic pricing
-When: NumericField "Quantity" value changes OR DropDown "ProductType" value changes
-Then:
-  Set variable "basePrice" = NumericField "Quantity" * getProductPrice(DropDown "ProductType")
-  Set variable "shippingCost" = calculateShipping(DropDown "ShippingMethod", variable "basePrice")
-  Set variable "totalAmount" = variable "basePrice" + (variable "basePrice" * variable "taxRate") + variable "shippingCost"
-  Set value of NumericField "TotalAmount" = variable "totalAmount"
-```
+To keep the form structure clean and avoid adding unnecessary hidden fields, the business wants to handle shipping cost as a temporary value that supports real-time calculation of the total amount.
 
-**Advanced Example:**
-```javascript
-// Rule: Dynamic discount calculation
-When: TextField "PromoCode" value changes
-Then:
-  Set variable "discountPercent" = validatePromoCode(TextField "PromoCode")
-  If variable "discountPercent" > 0
-    Set variable "discountAmount" = variable "basePrice" * (variable "discountPercent" / 100)
-    Set variable "totalAmount" = variable "totalAmount" - variable "discountAmount"
-    Show(TextField "DiscountApplied")
-    Set value of TextField "DiscountApplied" = "Discount: $" + variable "discountAmount"
-```
+**Implementation using Set Variable Value and Get Variable Value functions in the Rule Editor**
 
-**Benefits:**
-- Complex calculations without multiple hidden fields
-- Improved form performance
-- Reusable variables across multiple rules
-- Dynamic content generation
+A rule is configured to set the temporary variable shippingCost using the **Set Variable Value** when a user selects a shipping method. For example, selecting "Standard" sets the value to 50, while "Express" sets it to 100.
 
----
+Later, when calculating the total price, **Get Variable Value** function is used to retrieve the shipping cost and add it to the product price field value. The calculated total is then displayed in a dedicated field.
 
-## 4. Custom Event Based Rules Support
+This setup avoids storing shipping cost in a field, while enabling a responsive and dynamic user experience, without writing custom code.
 
-### Description
+
+## Custom Event Based Rules Support
+
+The enhanced rule editor supports custom event handling using the **Dispatch Event** and **On Trigger Event** functions. These functions allow different parts of the form to communicate by emitting and listening to custom events, enabling cleaner, modular logic without tightly coupling actions to specific fields.
+
+**Scenario**: A job application form is integrated with an external HR system that performs background verification. Once the check is complete, the system updates the form with the **Background Verification Complete!** message. The form must dynamically adjust what the applicant sees based on this result.
+
+Instead of binding logic directly to the field receiving the status, the form uses a custom event-based approach to improve modularity and maintainability.
+
+**Implementation using Dispatch Event and On Trigger Event**
+
+When the background check status is updated, a rule uses **Dispatch Event** to emit a custom event as **bgvmsg** along with the status outcome. A separate rule listens for this event using **On Trigger Event**.
+
+The screenshots below display the rules applied to the "Is Background Verification Complete?" radio button and the "bgvmsg" text field.
+
+![dispatch event](/help/forms/assets/dispatch-event-rule.png)
+
+![on trigger event](/help/forms/assets/trigger-event-rule.png)
+
+When the event is detected, it checks the status and updates the form accordingly. For example:
+
+* If the background check is passed, the form displays a confirmation message.
+* If additional documents are needed, the form displays a section asking the applicant to upload the required information, along with an alert message.
+
+![Dispatch event output](/help/forms/assets/dispatch-trigger-output.png)
+
 Support for custom events allowing developers to create and trigger custom events that can be used as conditions in rule editor.
 
-### Use Case Scenario
-Integration with external systems and creation of complex form workflows that respond to custom business events.
+## Context-Based Rule Execution for Repeatable Panels
 
-### Adaptive Form Example
-**Scenario:** Job application form that integrates with external HR systems and responds to custom approval workflows.
+Adaptive Forms support context-aware rule execution for repeatable panels. This allows rules to apply specifically to the panel instance where the user interacts, rather than affecting all instances or defaulting to the last one.
 
-**Rule Implementation:**
-```javascript
-// Rule: Custom event for background check completion
-When: Custom event "backgroundCheckComplete" is triggered
-Then:
-  If eventData.status == "passed"
-    Show(Panel "FinalApproval")
-    Set value of TextField "BackgroundStatus" = "✓ Background Check Passed"
-    Set property of TextField "BackgroundStatus".style = "color: green"
-  Else
-    Show(Panel "AdditionalDocuments")
-    Set value of TextField "BackgroundStatus" = "⚠ Additional Documentation Required"
-```
+**Scenario**: A product order form lets users add multiple products in separate panels. Each panel includes a **Number of Product** field and a **Total Cost** field. When a user updates the quantity for a product, the form should recalculate the total price, but only for that specific panel, not for all others.
 
-**Integration Example:**
-```javascript
-// Rule: Custom event for real-time validation
-When: Custom event "creditScoreUpdated" is triggered
-Then:
-  Set variable "creditScore" = eventData.score
-  If variable "creditScore" >= 700
-    Show(Panel "PremiumOptions")
-    Set value of TextField "LoanStatus" = "Pre-approved for premium rates"
-  Else If variable "creditScore" >= 600
-    Show(Panel "StandardOptions")
-  Else
-    Show(Panel "AlternativeOptions")
-    Trigger custom event "requireCosigner"
-```
+**Implementation using Context-Aware Rules in the Rule Editor**
 
-**Benefits:**
-- Real-time integration with external systems
-- Event-driven form behavior
-- Improved user experience with instant feedback
-- Flexible workflow management
+A rule is configured on the **Number of Product** field inside the repeatable product panel. 
 
----
+The below screenshot displays the rule for the **Number of Product** field inside the repeatable product panel:
 
-## 5. Context-Based Repeatable Panel Rules Execution
+![number of product rule](/help/forms/assets/number-of-product-rule.png)
 
-### Description
-Enhanced rule execution for repeatable panels that considers the context of each panel instance rather than defaulting to the last panel instance.
+When the quantity is changed, the rule fetches the unit price of the selected product and calculates the total cost for that panel only. 
 
-### Use Case Scenario
-Order forms with multiple line items where each item has its own calculation rules and validation logic.
+![Context aware rule output](/help/forms/assets/context-aware-rule-output.png)
 
-### Adaptive Form Example
-**Scenario:** Purchase order form where users can add multiple products, each with independent pricing and availability rules.
+## URL and Browser Parameter-Based Rules in Adaptive Forms
 
-**Rule Implementation:**
-```javascript
-// Rule: Product-specific calculations for each repeatable panel instance
-When: NumericField "Quantity" value changes in Panel "ProductLine[context]"
-Then:
-  // Context-aware rule execution for current panel instance
-  Set variable "unitPrice" = getProductPrice(DropDown "Product[context]")
-  Set variable "lineTotal" = NumericField "Quantity[context]" * variable "unitPrice"
-  Set value of NumericField "LineTotal[context]" = variable "lineTotal"
-  
-  // Check inventory for this specific product
-  If NumericField "Quantity[context]" > getInventory(DropDown "Product[context]")
-    Show(TextField "InventoryWarning[context]")
-    Set value of TextField "InventoryWarning[context]" = "Only " + getInventory(DropDown "Product[context]") + " items available"
-  Else
-    Hide(TextField "InventoryWarning[context]")
-```
+Adaptive Forms support dynamic rule execution using external parameters passed through the form URL or derived from the user's browser environment. This enables personalized and context-aware form experiences based on where the visitor came from or what device they're using.
 
-**Advanced Context Example:**
-```javascript
-// Rule: Dynamic shipping calculation per product line
-When: DropDown "ShippingMethod" value changes in Panel "ProductLine[context]"
-Then:
-  Set variable "productWeight" = getProductWeight(DropDown "Product[context]")
-  Set variable "shippingCost[context]" = calculateShipping(
-    DropDown "ShippingMethod[context]", 
-    variable "productWeight", 
-    NumericField "Quantity[context]"
-  )
-  Set value of NumericField "ShippingCost[context]" = variable "shippingCost[context]"
-  
-  // Update total shipping cost
-  Trigger custom event "updateTotalShipping"
-```
+## Allowed Parameter Types
 
-**Benefits:**
-- Accurate calculations for each repeatable instance
-- Independent validation per panel instance
-- Improved data integrity
-- Better user experience with contextual feedback
+| Parameter Type    | Supported Options   | Description  | Example Value |
+| --- | --- | --- | ---|
+| Query Parameter   | `ref` (only string values)                                          | Generic key-value pair in the URL after `?`         | `?ref=partner123`                          |
+| UTM Parameter     | UTM Source<br>UTM Medium<br>UTM Campaign<br>UTM Term<br>UTM Content | Special query parameters used for campaign tracking | `?utm_source=google&utm_medium=email`      |
+| URL Parameter     | Host name<br>Path                                                   | Extracts structural components of the form URL      | `hostname=www.example.com`, `path=/signup` |
+| Browser Parameter | Browser Agent<br>Browser Language<br>Browser Platform               | Values derived from the user's browser or device    | `Browser Agent=Mozilla`, `Language=en-US`  |
 
----
+**Scenario**: A lead generation form needs to tailor its welcome message depending on the traffic source. When a user lands on the form through a Google ad campaign (using utm_source=google in the URL), the form should show a custom greeting.
 
-## 6. Query/UTM/Browser Parameter Based Rules Support
+**Implementation using UTM Parameter**
 
-### Description
-Support for creating rules based on URL query parameters, UTM parameters, and browser parameters, enabling dynamic form behavior based on external context.
+A rule is configured on a text field that displays custom message to Google users and it uses **utm_source** parameter. 
 
-### Use Case Scenario
-Marketing campaign forms that adapt their content and behavior based on traffic source, campaign parameters, and user context.
+The below screenshot displays the rule configured on text message:
 
-### Adaptive Form Example
-**Scenario:** Lead generation form that customizes content based on marketing campaign source and user referral data.
+![rule on text message](/help/forms/assets/utm-param-rule.png)
 
-**Rule Implementation:**
-```javascript
-// Rule: Campaign-specific form customization
-When: Form loads
-Then:
-  Set variable "campaignSource" = getURLParam("utm_source")
-  Set variable "campaignMedium" = getURLParam("utm_medium")
-  Set variable "referralCode" = getURLParam("ref")
-  
-  If variable "campaignSource" == "google"
-    Set value of TextField "WelcomeMessage" = "Welcome Google visitor! Special offer inside."
-    Show(Panel "GoogleSpecialOffer")
-  Else If variable "campaignSource" == "facebook"
-    Set value of TextField "WelcomeMessage" = "Facebook friends get exclusive benefits!"
-    Show(Panel "SocialMediaDiscount")
-  
-  If variable "referralCode" != null
-    Show(Panel "ReferralBonuses")
-    Set value of TextField "ReferralMessage" = "Thanks for the referral from: " + variable "referralCode"
-```
+If the **utm_source** parameter value equals "google", a custom message as "Hello Google users, welcome to the Campaign Ad!" is shown.
 
-**Browser-Based Rules:**
-```javascript
-// Rule: Device-specific form optimization
-When: Form loads
-Then:
-  Set variable "userAgent" = getBrowserParam("userAgent")
-  Set variable "screenWidth" = getBrowserParam("screenWidth")
-  
-  If variable "screenWidth" < 768
-    Hide(Panel "DetailedInstructions")
-    Show(Panel "MobileOptimizedInstructions")
-    Set property of Button "Submit".text = "Submit"
-  Else
-    Set property of Button "Submit".text = "Submit Application"
-  
-  If variable "userAgent".contains("Mobile")
-    Set property of FileUpload "Documents".accept = "image/*"
-    Show(TextField "MobileUploadTip")
-```
+![utm-param-output](/help/forms/assets/utm-param-output.png)
 
-**UTM Tracking Integration:**
-```javascript
-// Rule: UTM parameter tracking and form pre-population
-When: Form loads
-Then:
-  Set variable "utmCampaign" = getURLParam("utm_campaign")
-  Set variable "utmContent" = getURLParam("utm_content")
-  
-  // Pre-populate hidden fields for analytics
-  Set value of HiddenField "TrackingCampaign" = variable "utmCampaign"
-  Set value of HiddenField "TrackingContent" = variable "utmContent"
-  
-  // Customize form based on campaign
-  If variable "utmCampaign" == "summer2024"
-    Show(Panel "SummerPromotion")
-    Set value of NumericField "DiscountPercent" = 15
-  Else If variable "utmCampaign" == "blackfriday"
-    Show(Panel "BlackFridayDeal")
-    Set value of NumericField "DiscountPercent" = 25
-```
+This allows marketers to deliver relevant content to users based on the campaign that brought them to the form without requiring manual field input or custom scripting.
 
-**Benefits:**
-- Personalized form experiences based on traffic source
-- Automatic campaign tracking and attribution
-- Dynamic content based on external parameters
-- Improved conversion rates through targeted messaging
-- Better analytics and marketing insights
-
----
-
-
-
-These six enhancements significantly expand the capabilities of the Adaptive Forms Rule Editor, providing developers with powerful tools to create more dynamic, interactive, and intelligent forms. Each enhancement addresses specific business needs while maintaining the ease-of-use that makes the Rule Editor accessible to both technical and non-technical users.
-
-The combination of these features enables the creation of sophisticated form experiences that can adapt to user context, integrate with external systems, and provide rich interactive functionality without requiring extensive custom development.
+These enhancements significantly expand the capabilities of the Adaptive Forms Rule Editor, providing developers with powerful tools to create more dynamic, interactive, and intelligent forms. Each enhancement addresses specific business needs while maintaining the ease-of-use that makes the Rule Editor accessible to both technical and non-technical users.
