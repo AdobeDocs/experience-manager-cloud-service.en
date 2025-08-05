@@ -16,8 +16,11 @@ Summarized below are the continuous improvements for maintenance release 21772, 
 
 
 The 2025.8.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+
 ### New Features  {#new-features-21772}
+
 * SITES-30049  - Added new endpoint for retrieving the language copies of a Content Fragment by its UUID
+
 ### Enhancements {#enhancements-21772}
 
 * SITES-33025 - Open new CF Editor via ID instead of path
@@ -70,6 +73,7 @@ FORMS-18450: reCAPTCHA V2 (including invisible reCAPTCHA) is now easier to set u
 * SITES-32014 - Edge Delivery with Universal Editor: Add automatic configuration of CORS policies for localhost, aem.page and aem.live
 * SITES-26532 - Edge Delivery with Universal Editor: Add Support for localized URLs (early access)          
 * CQ-4358722 : Resolved localization issues caused by differing locale codes between Java 11 and Java 17. 
+
 ### Fixed Issues {#fixed-issues-21772}
 
 * SITES-31992 - GraphQL: Fix sporadical errors in model scan during bundles startup
@@ -132,10 +136,12 @@ FORMS-18450: reCAPTCHA V2 (including invisible reCAPTCHA) is now easier to set u
 * CQ-4360421 :  Addressed an issue with Microsoft Translator subscription key encryption to improve security and compatibility.      
 
 ### Altered functionality {#altered-functionality-21772}
+
 * SITES-26344 - Unify validation of fragmentId / modelId between endpoints - these ids are now validated and a 400 status code is returned if they are not valid.
 * SITES-29598 - Validate Content Fragment references added in fragment reference fields when updating a Content Fragment Model.
 
 ### Tasks {#tasks-21772}
+
 * SITES-30887: [TouchUI] Add Contet Fragment uuids stored in workflow metadata - https://jira.corp.adobe.com/browse/SITES-30887
 * SITES-33678: Add Toggle for SITES-33529 - https://jira.corp.adobe.com/browse/SITES-33678
   
