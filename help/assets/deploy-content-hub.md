@@ -14,7 +14,7 @@ This article provides an end-to-end workflow to provide Content Hub access to us
 
 See this video to learn how to enable Content Hub for Experience Manager Assets:
 
->[!VIDEO](https://video.tv.adobe.com/v/3469851)
+>[!VIDEO](https://video.tv.adobe.com/v/3470434)
 
 The variations of privileges on Content Hub include:
 
