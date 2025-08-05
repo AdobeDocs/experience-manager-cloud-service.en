@@ -47,7 +47,6 @@ The 2025.8.0 feature activation will provide the full feature set for this maint
 * SITES-33025: Open new CF Editor via ID instead of path.
 * SITES-32741: Trigger update of contenf-fragment page references asynchronously.
 * SITES-32087: GraphQL: Add support for `_ignoreCase` on StringArray.
-* SITES-31791: Upgrade graphql-java library to 24.0.
 * SITES-12211: Improved Performance in template editor
 * SITES-32861: Performance improvement for live copy creation through chunked processing.
 * SITES-21383: Performance optimization for Content Fragment launch deletion operations.
@@ -67,11 +66,10 @@ The 2025.8.0 feature activation will provide the full feature set for this maint
 * SITES-32014: Edge Delivery with Universal Editor: Add automatic configuration of CORS policies for localhost, aem.page and aem.live
 * SITES-26532: Edge Delivery with Universal Editor: Add Support for localized URLs (early access).
 * SITES-30887: Add Contet Fragment uuids stored in workflow metadata.
-* SITES-29598: Validate Content Fragment references added in fragment reference fields when updating a Content Fragment Model.
 
 ### Fixed Issues {#fixed-issues-21772}
 
-* CQ-4360190: Fixed UnsupportedOperationException occurring when attempting to use add on a keySet that does not support the operation.
+* CQ-4360190: Fixed `UnsupportedOperationException` occurring when attempting to use add on a keySet that does not support the operation.
 * CQ-4360421:  Addressed an issue with Microsoft Translator subscription key encryption to improve security and compatibility.
 * FORMS-20980: Fixed keyboard accessibility issues on Date Picker with custom display format in Adaptive Forms.
 * FORMS-20498: Added a check for null pointer exceptions in OdataResponse to prevent runtime errors.
@@ -93,12 +91,11 @@ The 2025.8.0 feature activation will provide the full feature set for this maint
 * LC-3923083: Resolved "path object not tagged" error for bordered items in XDP templates.
 * SITES-33177: Edge Delivery with Universal Editor: fix broken section styles when stored as comma separated strings.
 * SITES-33262: Edge Delivery with Universal Editor: fix blocks with no name property break page rendering and publishing.
-* SITES-33309: Edge Delivery with Universal Editor: fix IllegalArgumentException when writing to a spreadsheet with a slash in columns.
+* SITES-33309: Edge Delivery with Universal Editor: fix `IllegalArgumentException` when writing to a spreadsheet with a slash in columns.
 * SITES-33408: Edge Delivery with Universal Editor: fix Spreadsheets don't appear as modified after making changes.
-* SITES-26344 - Unify validation of fragmentId / modelId between endpoints - these ids are now validated and a 400 status code is returned if they are not valid.
 * SITES-31992: GraphQL: Fix sporadical errors in model scan during bundles startup.
 * SITES-29967: GraphiQL: Long query names are cut off.
-* SITES-26266: Content references that don't start with / are not returned from BE response (Java API).
+* SITES-26266: Content references that don't start with `/` are not returned from BE response (Java API).
 * SITES-17874: GraphQL persisted queries: Fix encoding for content-type application/graphql-response+json.
 * SITES-24506: Screen readers informed on search results.
 * SITES-25268: Screen reader improvements for annotations.
@@ -119,11 +116,16 @@ The 2025.8.0 feature activation will provide the full feature set for this maint
 * SITES-31192: Experience Fragments losing Version History after being moved.
 * SITES-33529: Error while linking the ACS Campaign templates with AEM pages.
 * SITES-33678: Add Toggle for SITES-33529.
-* SITES-33468: AEMaaCS unable to connect to ACS.  
+* SITES-33468: AEMaaCS unable to connect to ACS.
+
+### Altered functionality {#altered-functionality-21772}
+
+* SITES-26344: Unify validation of `fragmentId`/`modelId` between endpoints - these ids are now validated and a 400 status code is returned if they are not valid.
+* SITES-29598: Validate Content Fragment references added in fragment reference fields when updating a Content Fragment Model.
 
 ### Known Issues {#known-issues-21772}
 
-* SITES-31791: Content Fragments GraphQL - New confioguration for "Maximum field count". See [Knowledge Base article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27231).
+* SITES-31791: Content Fragments GraphQL - Query failing with "Maximum field count exceeded". See [Knowledge Base article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27231).
 
 ### Deprecated Features and APIs {#deprecated-21772}
 
