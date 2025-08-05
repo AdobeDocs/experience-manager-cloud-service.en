@@ -27,7 +27,7 @@ If your business wants the fastest and AI-friendliest storefront on the web and 
 
 #### 1. Integration with Adobe Commerce as a Cloud Service {#acaacs}
 
-This is the perfect solution if you are useing Edge Delivery and the [Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) as your starting point. The storefront comes with a boilerplate that is pre-integrated with Adobe Commerce services, APIs, and offers a variety of Commerce drop-in components to rapidly build a storefront.
+This is the perfect solution if you are using Edge Delivery and the [Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) as your starting point. The storefront comes with a boilerplate that is pre-integrated with Adobe Commerce services, APIs, and offers a variety of Commerce drop-in components to rapidly build a storefront.
 
 Good fit: Typical storefront experience with Adobe Commerce as a Cloud Service
 
