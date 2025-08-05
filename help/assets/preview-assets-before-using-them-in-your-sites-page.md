@@ -54,7 +54,7 @@ A confirmation message **[!UICONTROL The page has been published]** displays aft
 
 ### Set the asset status to [!UICONTROL Preview] and generate a preview page{#set-the-asset-to-preview-status-and-generate-a-preview-page}
 
-Execute the following steps to change the asset status from approved to preview in [!DNL Assets View] and then publish your Sites authoring page to preview tier to generate a preview URL of the page:
+Execute the following steps to change the asset status from approved to preview in [!DNL Assets View] and then publish your Sites authoring page to the preview tier to generate a preview URL of the page:
 
 1. In [!DNL Assets View], navigate to the asset's details page and change the **[!UICONTROL Status]** to **[!UICONTROL Preview]**. Click **[!UICONTROL Save]**.
 ![Preview](/help/assets/assets/preview-boat-at-bay.png)
