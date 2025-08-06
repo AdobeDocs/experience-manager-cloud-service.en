@@ -19,6 +19,11 @@ The release date for Cloud Manager 2025.8.0 in AEM as a Cloud Service is Thursda
 
 The next planned release is Thursday, September 4, 2025.
 
+
+
+
+
+
 ## What's new {#what-is-new}
 
 * **Edge Delivery Services license can be included in a HIPAA program in a self-service manner** 
@@ -32,6 +37,10 @@ The next planned release is Thursday, September 4, 2025.
 * **Automated provisioning for the new Forms Add‑on**
 
     You can now add **Marketing Forms**, at a program level, directly to your AEM Sites or Edge Delivery Services from Cloud Manager, making it faster to launch this new types of forms without additional setup. <!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
+
+
+
+
 
 
 ## Alpha/Beta programs {#private-beta-program}
@@ -123,10 +132,18 @@ Config Pipelines are now supported for sites built with Edge Delivery Services, 
 
 **Recent enhancement**
 
-* The Pipelines table now lists a **Delivery Type** column that tags each pipeline as **Edge Delivery** or **Publish Delivery**. Also, Edge Delivery Services pipelines now display **Configuration** in the **Deployed Code** column, enabling instant identification of configuration-only deployments. <!-- CMGR‑69681 -->
-* Cloud Manager shows **Add Edge Delivery Pipeline** once a program contains one Edge Delivery Services site and one mapped domain. Otherwise, the option appears disabled, and a tooltip explains missing requirements. <!-- CMGR‑69680 -->
+* Edge Delivery Services pipelines now display **Configuration** in the **Deployed Code** column, enabling instant identification of configuration-only deployments. <!-- CMGR‑69681 -->
+* Cloud Manager shows **Add Edge Delivery Pipeline** once a program contains at least one Edge Delivery Services site and one mapped domain. Otherwise, the option appears disabled, and a tooltip explains missing requirements. <!-- CMGR‑69680 -->
+
+
+
+
+
+
 
 <!-- ADD THE FOLLOWING BULLET POINTS ONLY IF THEY ARE FINISHED IN TIME FOR THE AUGUST RELEASE 
+
+* The Pipelines table adds a **Delivery Type** column that labels each pipeline as **Edge Delivery** or **Publish Delivery**, making it easier to find the pipeline you need. (CMGR-????)
 
 * Edge Delivery tab shows a new **Edge Delivery pipelines** widget that lists each pipeline's Name, Status, Repository, and Branch. <--(CMGR-69052)
 
