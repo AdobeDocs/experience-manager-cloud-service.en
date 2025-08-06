@@ -66,6 +66,16 @@ Content Hub now lets you [control access to collections during creation, ensurin
   ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} 
 
 
+**Forms Submission Service for Edge Derliver Service Forms**
+
+The see [Forms Submission Service](/help/forms/forms-submission-service.md). allows you to seamlessly store data from Adaptive Form submissions directly into popular spreadsheet platforms such as Google Sheets, Microsoft OneDrive, or SharePoint. This integration streamlines data management by enabling direct submission of form data to your chosen spreadsheet, eliminating manual data transfer and reducing errors.
+
+Key benefits include:
+
+- **Direct integration:** Configure your forms to submit data directly to a specified spreadsheet.
+- **Custom data mapping:** Map form fields to corresponding spreadsheet columns for organized storage.
+- **Access control:** Leverage existing spreadsheet permissions to manage who can access or modify submitted data.
+
 **Generate and sync AFP renditions from Adaptive Forms**
 
 The [AFP Output Sync API](/help/forms/document-generation-afp-api.md) enables administrators and users to generate AFP (Advanced Function Presentation) output from Adaptive Forms and synchronize the output with external systems or storage locations. AFP is a high-performance document format optimized for printing, often used in large-scale enterprise environments.
