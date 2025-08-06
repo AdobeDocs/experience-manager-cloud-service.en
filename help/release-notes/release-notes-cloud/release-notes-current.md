@@ -32,7 +32,7 @@ You can find the latest maintenance release notes [here](/help/release-notes/mai
 
 ## Release Video {#release-video}
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
+Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
@@ -72,9 +72,9 @@ The see [Forms Submission Service](/help/forms/forms-submission-service.md). all
 
 Key benefits include:
 
-- **Direct integration:*- Configure your forms to submit data directly to a specified spreadsheet.
-- **Custom data mapping:*- Map form fields to corresponding spreadsheet columns for organized storage.
-- **Access control:*- Leverage existing spreadsheet permissions to manage who can access or modify submitted data.
+* **Direct integration:*- Configure your forms to submit data directly to a specified spreadsheet.
+* **Custom data mapping:*- Map form fields to corresponding spreadsheet columns for organized storage.
+* **Access control:*- Leverage existing spreadsheet permissions to manage who can access or modify submitted data.
 
 **Generate and sync AFP renditions from Adaptive Forms**
 
@@ -84,14 +84,14 @@ The [AFP Output Sync API](/help/forms/document-generation-afp-api.md) enables ad
 
 **Enhancements in Rule Editor**
 
-- The `validate` method in the function list now supports validation at the panel, field, and form levels.
-- Client-side custom function parsing now supports ES10+ JavaScript features and static imports.
-- The button to download Document of Record (DoR) is now available as an out-of-the-box (OOTB) option in the rule editor.
-- Rules now support the use of dynamic variables.
-- Custom event-based rules are now supported.
-- Repeatable panel rules are now executed based on context, rather than only on the last panel instance.
-- Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
-- Form-specific custom function scripts are now supported for Adaptive Forms in Edge Delivery Services.
+* The `validate` method in the function list now supports validation at the panel, field, and form levels.
+* Client-side custom function parsing now supports ES10+ JavaScript features and static imports.
+* The button to download Document of Record (DoR) is now available as an out-of-the-box (OOTB) option in the rule editor.
+* Rules now support the use of dynamic variables.
+* Custom event-based rules are now supported.
+* Repeatable panel rules are now executed based on context, rather than only on the last panel instance.
+* Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
+* Form-specific custom function scripts are now supported for Adaptive Forms in Edge Delivery Services.
 
   
 ### New Early Access Features in AEM Forms {#forms-new-early-access-features}
@@ -109,10 +109,10 @@ Forms Optimization uses AI to analyze your forms and suggest improvements for be
 
 Key optimization opportunities include:
 
-- Increasing visibility for forms with low views
-- Improving completion rates for forms with low conversions
-- Addressing accessibility compliance issues
-- Streamlining navigation to enhance user experience
+* Increasing visibility for forms with low views
+* Improving completion rates for forms with low conversions
+* Addressing accessibility compliance issues
+* Streamlining navigation to enhance user experience
 
 With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive.
 
@@ -125,7 +125,6 @@ Build dynamic, data-driven actions directly within your documents using an intui
 >[!VIDEO](https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
 Accelerate your AEM Forms Edge Delivery Services development with this CLI tool. Instantly generate the code and wiring needed to kickstart custom component development — no boilerplate, no hassle.
-
   
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -144,27 +143,27 @@ Expand the list below to view the deprecated APIs and OSGi configurations that m
 
 Java APIs:
 
-- `org.apache.sling.commons.auth`
-- `org.apache.felix.webconsole`
-- `org.eclipse.jetty`
-- `com.mongodb`
-- `org.apache.abdera`
-- `org.apache.felix.http.whiteboard`
-- `org.apache.cocoon.xml`
-- `ch.qos.logback`
-- `org.slf4j.spi`
-- `org.slf4j.event`
-- `org.apache.log4j`
-- `com.google.common`
-- `com.drew`
-- `org.bson`
-- `org.apache.jackrabbit.oak.plugins.blob`
-- `org.apache.jackrabbit.oak.plugins.memory`
+* `org.apache.sling.commons.auth`
+* `org.apache.felix.webconsole`
+* `org.eclipse.jetty`
+* `com.mongodb`
+* `org.apache.abdera`
+* `org.apache.felix.http.whiteboard`
+* `org.apache.cocoon.xml`
+* `ch.qos.logback`
+* `org.slf4j.spi`
+* `org.slf4j.event`
+* `org.apache.log4j`
+* `com.google.common`
+* `com.drew`
+* `org.bson`
+* `org.apache.jackrabbit.oak.plugins.blob`
+* `org.apache.jackrabbit.oak.plugins.memory`
 
 OSGi properties:
 
-- `org.apache.sling.commons.log.LogManager` (all properties)
-- `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
+* `org.apache.sling.commons.log.LogManager` (all properties)
+* `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
  
 </details>
 
@@ -184,8 +183,8 @@ Starting in **late August**, any unsupported custom logging overrides will be ig
 
 Please review and update any downstream processes that rely on custom logging behavior. For example:
 
-- If your log forwarding system expects a custom log format, you may need to adjust your ingestion rules.
-- If you've previously reduced log verbosity by changing log levels, please note that reverting to default levels may increase log volume.
+* If your log forwarding system expects a custom log format, you may need to adjust your ingestion rules.
+* If you've previously reduced log verbosity by changing log levels, please note that reverting to default levels may increase log volume.
 
 ### Default Purging of Older Versions and Audit Logs {#mt-defaults}
 
@@ -195,29 +194,29 @@ However, to optimize repository performance, purging will be enabled by default 
 
 #### Content Versions {#mt-content}
 
-- **New environments*- (created after an upcoming date (to be communicated later)
-  - Versions older than **30 days*- will periodically be deleted.
-  - The most recent five versions within the last 30 days are retained, along with the most recent version and the current version, regardless of their age.
+* **New environments*- (created after an upcoming date (to be communicated later)
+  * Versions older than **30 days*- will periodically be deleted.
+  * The most recent five versions within the last 30 days are retained, along with the most recent version and the current version, regardless of their age.
 
-- **Existing environments*- (created before this upcoming date):
-  - Versions older than **7 years*- will periodically be deleted.
-  - All versions within the past 7 years are retained.
-  - This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
+* **Existing environments*- (created before this upcoming date):
+  * Versions older than **7 years*- will periodically be deleted.
+  * All versions within the past 7 years are retained.
+  * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
 
-- You may modify these defaults through YAML configuration, deployed using the config pipeline.
+* You may modify these defaults through YAML configuration, deployed using the config pipeline.
 
 #### Audit Log {#mt-auditlogs}
 
-- **New environments*- (created after an upcoming date, which will be communicated separately):
-  - Replication, DAM, and page audit logs older than **7 days*- will periodically be deleted.
-  - All events are logged by default.
+* **New environments*- (created after an upcoming date, which will be communicated separately):
+  * Replication, DAM, and page audit logs older than **7 days*- will periodically be deleted.
+  * All events are logged by default.
 
-- **Existing environments*- (created before this upcoming date):
-  - Replication, DAM, and page audit logs older than **7 years*- will periodically be deleted.
-  - All events are logged by default.
-  - This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
+* **Existing environments*- (created before this upcoming date):
+  * Replication, DAM, and page audit logs older than **7 years*- will periodically be deleted.
+  * All events are logged by default.
+  * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
 
-- You may modify these defaults through YAML configuration, deployed using the config pipeline.
+* You may modify these defaults through YAML configuration, deployed using the config pipeline.
 
 For more details, see the [Maintenance Tasks article](/help/operations/maintenance.md#defaults).
 
@@ -227,12 +226,12 @@ Edge computing allows you to execute JavaScript at the CDN layer, bringing data 
 
 Common use cases include:
 
-- Authenticating users with an identity provider before granting access to content
-- Personalizing content based on geolocation, device type, or user attributes
-- Acting as middleware between the CDN and your origin
-- Reformatting responses from third-party APIs (and perhaps aggregating multiple APIs responses) before delivering them to the browser
-- Composing and serving server-rendered HTML at the edge using content stitched from various backends
-- Exposing an MCP server for LLMs like ChatGPT and Claude to access custom tools
+* Authenticating users with an identity provider before granting access to content
+* Personalizing content based on geolocation, device type, or user attributes
+* Acting as middleware between the CDN and your origin
+* Reformatting responses from third-party APIs (and perhaps aggregating multiple APIs responses) before delivering them to the browser
+* Composing and serving server-rendered HTML at the edge using content stitched from various backends
+* Exposing an MCP server for LLMs like ChatGPT and Claude to access custom tools
 
 We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
 
