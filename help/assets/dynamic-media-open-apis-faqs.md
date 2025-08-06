@@ -6,12 +6,12 @@ exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 ---
 # Dynamic Media with OpenAPI capabilities frequently asked questions {#new-dynaminc-media-apis-frequently-asked-questions}
 
- ## Are all assets in Experience Manager Assets as a Cloud Service repository available for search and delivery using Dynamic Media with OpenAPI capabilities? {#assets-available-for-search}
+## Are all assets in Experience Manager Assets as a Cloud Service repository available for search and delivery using Dynamic Media with OpenAPI capabilities? {#assets-available-for-search}
 
 No, only [approved and latest version of the assets](/help/assets/approve-assets.md) are available for search and delivery using Dynamic Media with OpenAPI capabilities, ensuring brand consistency across all channels and applications.
 
 
-## How can administrators mark new and existing assets added to a folder as approved? {#add-assets-to-folder-approved}
+## How can administrators mark new and existing assets added to a folder as approved? {#add-assets-to-folder-as-approved}
 
 The status of an asset in Experience Manager Assets is governed by `jcr:content/metadata/dam:status` property. The values of this property can be:
 
@@ -82,12 +82,12 @@ For more information, see [Restrict access to assets in Experience Manager](rest
 As a DAM user, you might not have permissions to [approve assets](approve-assets.md#approve-assets). To get the permissions to edit the approval status of an asset, the administrators can edit the default or any other metadata schema applied to the asset folder to provide edit permissions to the **[!UICONTROL Review Status]** field. For more information, see [how to disable edit for the Review Status](approve-assets.md#configuration) field.
 
 
-## What is the supported file size for videos? {#supported-file-formates-videos}
+## What is the supported file size for videos? {#supported-file-formats-videos}
 
 Dynamic Media with OpenAPI capabilities supports long form videos. The videos can support upto 50 GB and 2 hours.
 
 
-## How Dynamic Media with OpenAPI capabilities is different from Dynamic Media solution? {#dynamic-media-and dynamic-media-eith-openapi-differences}
+## How Dynamic Media with OpenAPI capabilities is different from Dynamic Media solution? {#dynamic-media-and-dynamic-media-with-openapi-differences}
 
 Dynamic Media with OpenAPI capabilities and Dynamic Media represent distinct solutions, each offering its specialized delivery capabilities. It is imperative to thoroughly review your specific requirements to determine the most fitting solution that aligns with your needs.
 
