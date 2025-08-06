@@ -57,11 +57,15 @@ You can now also choose to disable AI-generated metadata at the folder level.
 
 ### New Features in Content Hub {#new-features-content-hub}
 
-**Collections governance**
+**Enhanced branding flexibility in Content Hub**
 
-Content Hub now lets you [control access to collections during creation, ensuring only authorized users can view or manage grouped assets](/help/assets/collections-content-hub.md##create-collections). It ensures improved security, better collaboration, organized asset management, and simplified governance.
+Admins can now personalize their Content Hub deployment by adding custom logo images, bringing a stronger brand presence to the experience. Support for the TIFF file format has also been added for both banner and logo images, enabling greater design flexibility.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463336)
+**Smarter sharing with titled links**
+
+You can now add a title when generating a shared link—whether from the asset detail view or after selecting one or more assets. This helps recipients easily identify the purpose of each link, especially when receiving multiple shared assets. 
+
+
 
 ### AEM Desktop App release 3.0.0 {#desktop-app-release-3.0.0}
 
