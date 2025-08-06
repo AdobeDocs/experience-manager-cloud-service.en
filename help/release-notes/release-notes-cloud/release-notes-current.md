@@ -66,7 +66,7 @@ Content Hub now lets you [control access to collections during creation, ensurin
   ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} 
 
 
-**Forms Submission Service for Edge Derliver Service Forms**
+**Forms Submission Service for Edge Delivery Services Forms**
 
 The see [Forms Submission Service](/help/forms/forms-submission-service.md). allows you to seamlessly store data from Adaptive Form submissions directly into popular spreadsheet platforms such as Google Sheets, Microsoft OneDrive, or SharePoint. This integration streamlines data management by enabling direct submission of form data to your chosen spreadsheet, eliminating manual data transfer and reducing errors.
 
