@@ -1,6 +1,6 @@
 ---
 title: Preview assets before using them in your AEM Sites pages 
-description: Dynamic Media with OpenAPIs capabilities enables you to preview assets before using them in your live Adobe Experience Manager (AEM) Sites pages. The asset preview is available on your site's author and Preview tier, enabling you and your stakeholders to review and validate the updates to your assets before publishing the pages with updated assets. 
+description: Dynamic Media with OpenAPIs capabilities enables you to preview assets before using them in your Adobe Experience Manager (AEM) Sites pages. The asset preview is available on your site's author and Preview tier, enabling you and your stakeholders to review and validate the updates to your assets before publishing the pages with updated assets. 
 role: Admin, User
 ---
 
@@ -18,6 +18,8 @@ Ensure you have:
 
 * Access to [!DNL AEM Assets as a Cloud Service].
 * Permission to edit the Review Status property of assets.
+* a
+* The key to generate the preview token. [Contact Adobe support](https://helpx.adobe.com/in/contact.html) and raise a request for the key.
 
 ## Preview assets in your sites preview page {#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPIs-capabilities}
 
