@@ -40,11 +40,20 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Enhanced Metadata Form management in Assets View**
+**Add shapes to Dynamic Media templates**
 
-You can now import metadata forms from Admin view directly into Assets view. Any updates made to these forms in Assets view automatically reflect in Admin view, ensuring consistency across both experiences. This capability supports a seamless transition to the new Assets view while maintaining continuity with your existing metadata configurations.
+You can now [add shape layers to Dynamic Media templates](/help/assets/dynamic-media/dynamic-media-templates.md#add-shapes-to-the-canvas) in Experience Manager Assets. Similar to image and text layers, shape layers support parameters for real-time updates via the template URL. You can also include call-to-action (CTA) links to shapes in your templates.
 
-![AI generated metadata](/help/assets/assets/import-metadata-forms-page.png)
+![Add shpaes to Dynamic Media templates](/help/assets/assets/enable-uniform-radius-shape.png)
+
+**AI-generated metadata enhancements**
+
+AEM Assets now enables you to [configure the display of asset titles in Card view or List view](/help/assets/smart-tags.md#configure-ai-generated-titles) on the Asset Browse page. You can choose to display the asset title defined by you, title generated using AI, or use AI-generated title only if there is no existing title for the asset. 
+
+![Configure AI-generated titles](/help/assets/assets/configure-title-ai-generated.png)
+
+You can now also choose to disable AI-generated metadata at the folder level. 
+
 
 ### New Features in Content Hub {#new-features-content-hub}
 
@@ -53,6 +62,12 @@ You can now import metadata forms from Admin view directly into Assets view. Any
 Content Hub now lets you [control access to collections during creation, ensuring only authorized users can view or manage grouped assets](/help/assets/collections-content-hub.md##create-collections). It ensures improved security, better collaboration, organized asset management, and simplified governance.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
+
+### AEM Desktop App release 3.0.0 {#desktop-app-release-3.0.0}
+
+Enjoy automated upload of new files and folders, enhanced file operations, smarter asset discovery, and seamless integration with AEM—making content management faster, clearer, and more intuitive.
+
+For the complete list of features, see [Desktop App Release Notes](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
