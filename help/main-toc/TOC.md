@@ -121,6 +121,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2025 {#2025}
+      + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
       + [2025.6.0](/help/implementing/cloud-manager/release-notes/2025/2025-6-0.md)
       + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
       + [2025.4.0](/help/implementing/cloud-manager/release-notes/2025/2025-4-0.md)
@@ -1268,6 +1269,7 @@ user-guide-title: AEM as a Cloud Service
       + [Introduction to CI-CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
       + [Configure a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
       + [Configure a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+      + [Configure an Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
       + [Manage Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
       + [Pipeline Variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
     + [Deploy Your Code](/help/implementing/cloud-manager/deploy-code.md)
