@@ -7,7 +7,7 @@ exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 ---
 # Publish your Adaptive Form to Edge Delivery Services
 
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
+<!--<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>-->
 
 
 When your form is finalized and ready for use, you can publish it to make it accessible to your customers for data collection and submission. Publishing ensures that the form is available on Edge Delivery, enabling users to interact with it seamlessly. This process allows customers to fill out and submit the form in real time, ensuring efficient data capture and streamlined processing.

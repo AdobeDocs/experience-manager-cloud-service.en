@@ -1,0 +1,39 @@
+---
+title: How to integrate Form Data Model (FDM) for a form with Adaptive Form?
+description: Learn to create forms based on a form data model(FDM). Generate and edit sample data for data model objects in the FDM.
+feature: Edge Delivery Services, Adaptive Forms, Form Data Model
+role: Admin, User
+---
+# Integrate forms with Form Data Model
+
+Integrating forms with a Form Data Model (FDM) allows you to use diverse backend data sources to create a Form Data Model (FDM). You can use the Form Data Model (FDM) as a schema in various form workflows. Configure the data sources and create a Form Data Model (FDM) based on the data model objects and services available in data sources.
+
+## Advantages of Integrating Forms with Form Data Model (FDM)
+
+* **Seamless Backend Connectivity**: Connect forms to various backend systems (e.g., databases, REST APIs, SOAP services, CRMs) without custom code. This enables real-time data exchange and reduces integration effort.
+* **Centralized Data Schema** The Form Data Model serves as a unified data schema that simplifies mapping and management of data objects and services used across multiple forms and workflows.
+
+* **Improved Form Prefill and Submission**: Easily configure prefill and submission actions using Form Data services, ensuring accurate and up-to-date data retrieval and storage.
+
+* **Support for Dynamic Workflows**: Form Data Model can be integrated with workflows to automate business processes based on submitted or retrieved data, enhancing overall efficiency.
+
+## Prerequistes
+
+Before configuring your form with the Form Data Model, ensure you have completed the following steps:
+
+* [Configure Data Source](/help/forms/configure-data-sources.md): Set up the data source to connect your form to backend data.
+* [Create Form Data Model (FDM)](/help/forms/create-form-data-models.md): Build a data model using data objects and services from the configured data source.
+* [Configure Data Model Objects and Services](/help/forms/work-with-form-data-model.md): Map the data model objects and services to ensure smooth data flow between the form and the data source.
+
+>[!BEGINTABS]
+
+>[!TAB Foundation Component]
+
+Perform the following steps to configure Form Data Model with Adaptive Form based on Foundation Component as:
+
+1. Open the Adaptive Form for editing and navigate to **[!UICONTROL Submission]** section of the Adaptive Form Container properties. 
+1. From the **[!UICONTROL Submit Action]** drop-down list, select **[!UICONTROL Submit Using Form Data Model]**.
+1. Select the created **[!UICONTROL Data Model to submit]** configuration.
+    * **Submit form attachments**:  Select **Submit form attachments** 
+
+1. 

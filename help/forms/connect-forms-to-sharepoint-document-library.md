@@ -10,6 +10,9 @@ exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444368/formautomation-productivitytools-adaptiveforms--sharepointintegration-documentlibrary/?quality=12&learn=on)
 
+<span> This video is applicable only for Core Components. For UE/Foundation Components, please refer to the article.</span>
+ 
+
 To use the **[!UICONTROL Submit to SharePoint Document Library]** Submit Action in an Adaptive Form:
 
 1. [Create a SharePoint Document Library Configuration](#1-create-a-sharepoint-document-library-configuration): It connects AEM Forms to your Microsoft&reg; Sharepoint Storage.

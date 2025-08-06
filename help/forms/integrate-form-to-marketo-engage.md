@@ -62,6 +62,8 @@ Below are the prerequisites to connect Marketo Engage with AEM Forms:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442865/engage-marketo-aem-forms-aem)
 
+<span> This video is applicable only for Core Components. For UE/Foundation Components, please refer to the article.</span>
+ 
 The Cloud configuration connects your Experience Manager instance to the Adobe Marketo Engage instance. Perform the following steps to create a Marketo Engage cloud configuration:
 
 1. Go to **Tools** > **Cloud Services** > **Marketo Engage**.
