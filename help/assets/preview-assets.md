@@ -23,7 +23,7 @@ Ensure you have:
 
 ## Preview assets in your sites preview page {#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPIs-capabilities}
 
-You can preview new assets or assets that are already approved and are available on the live Sites pages. Approved assets only displays on your live Sites pages.
+You can preview new assets or assets that are already approved. Approved assets only displays on your live Sites pages.
 
 Execute the following steps to set the asset status to preview in [!DNL Assets View] and then publish your Sites authoring page to the preview tier to generate a preview URL of the page:
 
