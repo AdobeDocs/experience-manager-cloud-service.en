@@ -1012,6 +1012,7 @@ user-guide-title: AEM as a Cloud Service
   + [Screens as a Cloud Service FAQs](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
   + [Introduction and overview](/help/commerce-cloud/introduction.md)
+  + [CIF Introduction](/help/commerce-cloud/cif-introduction.md)
   + [Notable Changes to AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/changes.md)
   + Commerce Journeys {#journeys}
     + Content Author Journey {#author}
