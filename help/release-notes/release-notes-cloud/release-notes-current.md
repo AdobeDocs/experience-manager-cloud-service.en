@@ -59,13 +59,17 @@ You can now also choose to disable AI-generated metadata at the folder level.
 
 **Enhanced branding flexibility in Content Hub**
 
-Admins can now personalize their Content Hub deployment by adding custom logo images, bringing a stronger brand presence to the experience. Support for the TIFF file format has also been added for both banner and logo images, enabling greater design flexibility.
+Building on existing personalization features, Content Hub now allows admins to further tailor their deployment by adding custom logo images. Support for the TIFF file format has also been added for both banner and logo images, enabling greater design flexibility.
 
 **Smarter sharing with titled links**
 
-You can now add a title when generating a shared link—whether from the asset detail view or after selecting one or more assets. This helps recipients easily identify the purpose of each link, especially when receiving multiple shared assets. 
+You can now add a title when generating a shared link—whether from the asset details view or after selecting one or more assets. This helps recipients easily identify the purpose of each link, especially when receiving multiple shared assets.
 
+![private and public link](/help/assets/assets/shared-link-for-assets.png)
 
+**Improved filter navigation in Content Hub**
+
+Content Hub now includes a **Show All** option within filters, allowing users to view all available categories along with asset counts. Enhanced search and sort capabilities within each filter make it easier to discover and manage assets more efficiently.
 
 ### AEM Desktop App release 3.0.0 {#desktop-app-release-3.0.0}
 
