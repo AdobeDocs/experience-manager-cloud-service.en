@@ -45,6 +45,8 @@ The video below gives a step-by-step guide on the prerequisites (like creating a
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457850/)
 
+<span> This video is applicable only for Core Components. For UE/Foundation Components, please refer to the article.</span>
+ 
 ## Prerequisites {#prerequisites}
 
 Before setting up the AEP Connector in AEM Forms, ensure you have completed the following in Adobe Experience Platform:
@@ -84,12 +86,17 @@ Before setting up the AEP Connector in AEM Forms, ensure you have completed the 
 
 ### 2. Form Creation with XDM Schema Integration {#form-creation}
 
+>[!BEGINTABS]
+
+>[!TAB Foundation Component]
+
+Perform the following steps to create Adaptive Form based on Foundation Components with Schema Integration:
+
 1. Access the form creation wizard:
     * Navigate to your **Adobe Experience Manager instance** > **Forms** > **Forms & Documents**.
     * Click **Create** > **Adaptive Form**.
-1. In the **source** tab, select a template
+1. In the **source** tab, select a foundation template.
 1. In the **Data** tab, select the **Adobe Experience Platform** option.
-
 1. In the properties pane, select your cloud configuration. 
 
     ![](/help/forms/assets/xdm-schema-integration.png)
@@ -115,6 +122,85 @@ Before setting up the AEP Connector in AEM Forms, ensure you have completed the 
     * Storage path
 1. Add the submit button to the form. Your form is ready to submit data to AEP.
 
+>[!TAB Core Component]
+
+Perform the following steps to create Adaptive Form based on Core Components with Schema Integration:
+
+1. Access the form creation wizard:
+    * Navigate to your **Adobe Experience Manager instance** > **Forms** > **Forms & Documents**.
+    * Click **Create** > **Adaptive Form**.
+1. In the **source** tab, select a Core Component based template.
+1. In the **Data** tab, select the **Adobe Experience Platform** option.
+1. In the properties pane, select your cloud configuration. 
+
+    ![](/help/forms/assets/xdm-schema-integration.png)
+
+    The system loads all available schemas from Adobe Experience Platform
+
+    >[!NOTE]
+    >
+    >
+    > * Only profile-enabled and non-system-generated schemas are fetched.
+    > * Initial schema loading may take some time on first-time setup.
+
+1. Select the appropriate/required fields of the schema. (See video for detailed steps)
+1. In the submission tab:
+    * Select the **Submit to Adobe Experience Platform** submit action
+    * Configure the form submission settings for **AEM Forms data submission to Experience Platform**
+1. In the properties pane:
+    * Add the streaming URL (obtained from AEP Sources > Streaming Connection)
+    * Add the data flow ID (found in AEP Sources > Flow > API Usage Information)
+1. Click **Save**. Provide the form details:
+    * Title
+    * Name
+    * Storage path
+1. Add the submit button to the form. Your form is ready to submit data to AEP.
+
+>[!TAB Universal Editor]
+
+Perform the following steps to create Adaptive Form authored using Universal Editor with Schema Integration:
+
+1. Access the form creation wizard:
+    * Navigate to your **Adobe Experience Manager instance** > **Forms** > **Forms & Documents**.
+    * Click **Create** > **Adaptive Form**.
+1. In the **source** tab, select Edge Delivery based template.
+1. In the **Data** tab, select the **Adobe Experience Platform** option.
+1. In the properties pane, select your cloud configuration. 
+
+    ![schema integration](/help/forms/assets/xdm-schema-integration.png)
+
+    The system loads all available schemas from Adobe Experience Platform
+
+    >[!NOTE]
+    >
+    >
+    > * Only profile-enabled and non-system-generated schemas are fetched.
+    > * Initial schema loading may take some time on first-time setup.
+
+1. Select the appropriate/required fields of the schema. (See video for detailed steps)
+1. In the submission tab:
+    * Select the **Submit to Adobe Experience Platform** submit action
+    * Configure the form submission settings for **AEM Forms data submission to Experience Platform**
+
+        >[!NOTE]
+        >
+        >* If you do not see the Data Sources icon in your Universal Editor interface or Bind Reference property in the right property panel, enable the **Data source** extension in the Extension Manager.
+        >* If you do not see the **Edit Form Properties** icon in your Universal Editor interface, enable the **Edit Form Properties** extension in the Extension Manager.
+        > 
+        > * Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable or disable extensions in the Universal Editor.
+
+    The prefill service for forms in the Universal Editor is currently not supported.
+
+1. In the properties pane:
+    * Add the streaming URL (obtained from AEP Sources > Streaming Connection)
+    * Add the data flow ID (found in AEP Sources > Flow > API Usage Information)
+1. Click **Save**. Provide the form details:
+    * Title
+    * Name
+    * Storage path
+1. Add the submit button to the form. Your form is ready to submit data to AEP.
+   
+>[!ENDTABS]
 
 ## Important Notes {#important-notes}
 

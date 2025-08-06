@@ -1,4 +1,67 @@
 ---
+title: How to Configure a Submit Action for an Adaptive Form?
+description: An Adaptive Form provides multiple Submit Actions. A Submit Action defines how an Adaptive Form is processed after submission. You can use built-in Submit Actions or create your own.
+keywords: how to select submit action for an adaptive form, connect an adaptive form to sharepoint list, connect an adaptive form to sharepoint document library, connect an adaptive form to form data model (FDM)
+feature: Adaptive Forms, Edge Delivery Services
+role: User, Developer
+exl-id: 3f8950c3-9022-4e9f-b3ed-723245201e45
+---
+# Submit Actions for Edge Delivery Services Forms
+
+| Version | Article Link |
+|---------|-----------------------------|
+| AEM 6.5 | [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
+| AEM as a Cloud Service (Foundation Components) | [Click here](/help/forms/configuring-submit-actions.md) |
+| AEM as a Cloud Service (Core Components) | [Click here](/help/forms/configure-submit-actions-core-components.md) |
+| AEM as a Cloud Service (Edge Delivery Services) | This article |
+
+Submit Actions define what happens when a user submits a form, such as storing data, triggering workflows, or integrating with third-party systems. The type of submit actions you can configure depends on the authoring method used to create Edge Delivery Services Forms.
+
+You can create Edge Delivery Services Forms using either the [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) and configure the forms with different submit actions accordingly.
+
+## Submit Actions for Forms created in Universal Editor 
+
+The following submit actions are supported by [Adaptive Forms authored in the Universal Editor](/help/edge/docs/forms/universal-editor/create-forms.md):
+
+* [Send Email](/help/forms/configure-submit-action-send-email.md)
+* [Invoke a Power Automate Flow](/help/forms/forms-microsoft-power-automate-integration.md)
+* [Submit to SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [Invoke Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [Submit using Form Data Model (FDM)](/help/forms/using-form-data-model.md)
+* [Submit to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+* [Submit to REST Endpoint](/help/forms/configure-submit-action-restpoint.md)
+* [Submit to OneDrive](/help/forms/configure-submit-action-onedrive.md)
+* [Invoke an AEM Workflow](/help/forms/configure-submit-action-workflow.md)
+* [Submit to Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [Submit to Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
+* [Submit to Spreadsheet](/help/forms/forms-submission-service.md)
+
+<!--You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
+
+* [Connect Adaptive Form to Salesforce](/help/forms/aem-forms-salesforce-integration.md)
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)-->
+
+You can configure the submit action for forms created in the Universal Editor using the **Submission** tab of the **Edit Form Properties** extension.
+
+**How to Configure Submit Action for Forms authored in Universal Editor?**
+You can configure the submit action for forms created in the Universal Editor using the **Submission** tab of the **Edit Form Properties** extension.
+
+![Form properties icon](/help/forms/assets/ue-form-properties-icon.png)
+
+![Universal Editor Form Properties](/help/forms/assets/ue-form-properties.png)
+
+>[!NOTE]
+>
+> * If you do not see the **Edit Form Properties** icon in your Universal Editor interface, enable the **Edit Form Properties** extension in the Extension Manager. 
+> * Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable or disable extensions in the Universal Editor.
+
+## See Also {#see-also}
+
+{{af-submit-action}}
+
+
+<!--
+---
 title: Submit Actions
 description: Configure Submit Actions for Adaptive Form.
 feature: Edge Delivery Services
@@ -49,32 +112,27 @@ Before configuring submit actions, ensure you have:
 
 A Submit Action specifies the destination for the data collected through an Adaptive Form. The submission process begins when the user clicks the **[!UICONTROL Submit]** button on the form. AEM Forms offers two types of submit actions described below, and lets you create and use custom submit actions to meet your specific needs. The out-of-the-box submit actions are:
 
-<!--To define a Submit Action for an Adaptive Form, you use the Properties dialog of the **Adaptive Form block** in the **Editor**-->
+<!--To define a Submit Action for an Adaptive Form, you use the Properties dialog of the **Adaptive Form block** in the **Editor**
 
-* [Submit to REST endpoint](#rest-endpoint-submission-ue)
-* [Send Email](#email-submission-ue)
+- [Submit to REST endpoint {#rest-endpoint-submission-ue}](#submit-to-rest-endpoint-rest-endpoint-submission-ue)
+- [Send Email {#email-submission-ue}](#send-email-email-submission-ue)
 
 
 ### Submit to REST endpoint {#rest-endpoint-submission-ue}
 
 Submit to REST Endpoint action is used to send the submitted form data to a specified REST endpoint. The endpoint can belong to either an internal server where the form is hosted or to an external server by using a relative path or an absolute path. To submit data to the AEM server hosting the form, use a relative path corresponding to the root path of the AEM server. For example, `/content/forms/af/SampleForm.html`. To submit data to any other server, use the absolute path.
-
-<!--Configuring the Submit Action to REST Endpoint for Adaptive Forms offers several benefits such as:  
+Configuring the Submit Action to REST Endpoint for Adaptive Forms offers several benefits such as:  
 * It facilitates seamless integration of form data with external systems and services via RESTful APIs.  
 * Offers flexibility in managing data submissions from Adaptive Forms, accommodating dynamic and complex data structures.  
 * Allows dynamic mapping of form fields to parameters within the REST endpoint URL, enabling adaptable and customizable data submissions.
--->
-
-
-
 To configure a REST endpoint:
 
 1. Open your Adaptive Form in **[!UICONTROL Editor]**.
-1. Select **[!UICONTROL Adaptive Form Block]**. 
-1. Click the properties ![properties](/help/forms/assets/Smock_Properties_18_N.svg) icon.
-1. Select the **[!UICONTROL Submit to a REST endpoint]** from the **[!UICONTROL Submit Action]** drop-down list.
-1. Specify the REST endpoint URL.
-1. You can also **Enable POST request** and provide a URL to post the request. 
+2. Select **[!UICONTROL Adaptive Form Block]**. 
+3. Click the properties ![properties](/help/forms/assets/Smock_Properties_18_N.svg) icon.
+4. Select the **[!UICONTROL Submit to a REST endpoint]** from the **[!UICONTROL Submit Action]** drop-down list.
+5. Specify the REST endpoint URL.
+6. You can also **Enable POST request** and provide a URL to post the request. 
 
 ![Screenshot of the Universal Editor properties panel showing the REST endpoint configuration fields including URL input and Enable POST request toggle for form submission](/help/forms/assets/enable-post-request-ue.png)
 
@@ -142,12 +200,6 @@ To configure a submit action as an Email for your form submission:
     </tr>
   </tbody>
 </table>
-
-
-
-
-
-
 <!--
         
         * **From**: The email address of the sender.
@@ -159,8 +211,6 @@ To configure a submit action as an Email for your form submission:
         * **Include Attachment**: Specifies whether the submitted form data should include an attachment submitted through the form in the email.
 
     ![Screenshot of the Universal Editor email configuration panel showing fields for From, To, CC, BCC, Subject, and options for external templates and attachments](/help/forms/assets/email-config-ue.png)
-
--->
 
 ## Show a custom thank you message on Adaptive Form submission {#submit-action-message-ue}
 
@@ -176,5 +226,6 @@ On Submit option helps you to configure a Submit Action message on Adaptive Form
 
 ## See also
 
-{{universal-editor-see-also}}
+{{universal-editor-see-also}}-->
+
 

@@ -7,7 +7,7 @@ exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 ---
 # Create Custom Component in WYSIWYG Authoring
 
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
+<!--<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>-->
 
 
 Edge Delivery Services Forms offer customization, allowing front-end developers to build tailored form components. These custom components integrate seamlessly into the WYSIWYG authoring experience, enabling form authors to easily add, configure, and manage them within the form editor. With custom components, authors can enhance functionality while ensuring a smooth and intuitive authoring process.

@@ -32,6 +32,8 @@ Prerequisite to use Marketo Engage data source with forms:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442871/marketo-aem-forms-aem-marketo-engage)
 
+<span> This video is applicable only for Core Components. For UE/Foundation Components, please refer to the article.</span>
+ 
 >[!BEGINTABS]
 
 >[!TAB Foundation Component]
