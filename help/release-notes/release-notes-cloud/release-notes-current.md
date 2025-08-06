@@ -32,7 +32,7 @@ You can find the latest maintenance release notes [here](/help/release-notes/mai
 
 ## Release Video {#release-video}
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
+Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
@@ -81,11 +81,21 @@ For the complete list of features, see [Desktop App Release Notes](https://exper
   ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} 
 
 
+**Forms Submission Service for Edge Delivery Services Forms**
+
+The see [Forms Submission Service](/help/forms/forms-submission-service.md). allows you to seamlessly store data from Adaptive Form submissions directly into popular spreadsheet platforms such as Google Sheets, Microsoft OneDrive, or SharePoint. This integration streamlines data management by enabling direct submission of form data to your chosen spreadsheet, eliminating manual data transfer and reducing errors.
+
+Key benefits include:
+
+* **Direct integration:*- Configure your forms to submit data directly to a specified spreadsheet.
+* **Custom data mapping:*- Map form fields to corresponding spreadsheet columns for organized storage.
+* **Access control:*- Leverage existing spreadsheet permissions to manage who can access or modify submitted data.
+
 **Generate and sync AFP renditions from Adaptive Forms**
 
 The [AFP Output Sync API](/help/forms/document-generation-afp-api.md) enables administrators and users to generate AFP (Advanced Function Presentation) output from Adaptive Forms and synchronize the output with external systems or storage locations. AFP is a high-performance document format optimized for printing, often used in large-scale enterprise environments.
 
-### New pre-release features in AEM Forms {#forms-new-early-access-features}
+### New pre-release features in AEM Forms {#forms-new-pre-release-features}
 
 **Enhancements in Rule Editor**
 
@@ -121,9 +131,15 @@ Key optimization opportunities include:
 
 With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive.
 
-**Rule Editor for Interactive Communications Editor** 
+**Rule Editor for Interactive Communications Editor*- 
 
 Build dynamic, data-driven actions directly within your documents using an intuitive, point-and-click interface. Easily define conditional logic, automate workflows, and personalize content without writing code.
+
+**AEM Forms CLI Tool for Rapid Custom Component Development**
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+
+Accelerate your AEM Forms Edge Delivery Services development with this CLI tool. Instantly generate the code and wiring needed to kickstart custom component development — no boilerplate, no hassle.
   
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -141,6 +157,7 @@ Expand the list below to view the deprecated APIs and OSGi configurations that m
   <summary>Expand to see the deprecations</summary>
 
 Java APIs:
+
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
 * `org.eclipse.jetty`
@@ -167,7 +184,7 @@ OSGi properties:
 
 ### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-The **Java 11 runtime** is now deprecated, and most environments have already been upgraded to the more performant **Java 21 runtime**.
+The **Java 11 runtime*- is now deprecated, and most environments have already been upgraded to the more performant **Java 21 runtime**.
 
 If your environment could not be upgraded due to unsupported dependencies (see [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), you should have received an email from Adobe with specific next steps. Please ensure all required updates are completed by **August 28, 2025**, so your environment can be upgraded without disruption.
 
@@ -186,18 +203,18 @@ Please review and update any downstream processes that rely on custom logging be
 
 ### Default Purging of Older Versions and Audit Logs {#mt-defaults}
 
-Currently, content versions and audit logs have their associated *purge maintenance tasks* disabled by default and thus no data is removed unless explicitly configured. 
+Currently, content versions and audit logs have their associated *purge maintenance tasks- disabled by default and thus no data is removed unless explicitly configured. 
 
 However, to optimize repository performance, purging will be enabled by default at a future announced date, following these guidelines:
 
 #### Content Versions {#mt-content}
 
-* **New environments** (created after an upcoming date (to be communicated later)
-  * Versions older than **30 days** will periodically be deleted.
+* **New environments*- (created after an upcoming date (to be communicated later)
+  * Versions older than **30 days*- will periodically be deleted.
   * The most recent five versions within the last 30 days are retained, along with the most recent version and the current version, regardless of their age.
 
-* **Existing environments** (created before this upcoming date):
-  * Versions older than **7 years** will periodically be deleted.
+* **Existing environments*- (created before this upcoming date):
+  * Versions older than **7 years*- will periodically be deleted.
   * All versions within the past 7 years are retained.
   * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
 
@@ -205,12 +222,12 @@ However, to optimize repository performance, purging will be enabled by default 
 
 #### Audit Log {#mt-auditlogs}
 
-* **New environments** (created after an upcoming date, which will be communicated separately):
-  * Replication, DAM, and page audit logs older than **7 days** will periodically be deleted.
+* **New environments*- (created after an upcoming date, which will be communicated separately):
+  * Replication, DAM, and page audit logs older than **7 days*- will periodically be deleted.
   * All events are logged by default.
 
-* **Existing environments** (created before this upcoming date):
-  * Replication, DAM, and page audit logs older than **7 years** will periodically be deleted.
+* **Existing environments*- (created before this upcoming date):
+  * Replication, DAM, and page audit logs older than **7 years*- will periodically be deleted.
   * All events are logged by default.
   * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
 
