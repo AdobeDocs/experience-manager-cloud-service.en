@@ -781,6 +781,7 @@ user-guide-title: AEM as a Cloud Service
        + [Configure Submit Action for an Adaptive Form based on Core Components](/help/forms/configure-submit-actions-core-components.md)
        + [Configure Submit Action for Edge Delivery Services Forms](/help/forms/configure-submit-action-eds-forms.md)
        + [Configure the Send Email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md)
+       + [Integrate Adaptive Form with Form Data Model](/help/forms/integrate-adaptive-form-with-fdm.md)
        + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
        + Connect an Adaptive Form to Microsoft&reg; SharePoint{#connect-to-sharepoint}
           + [Connect an Adaptive Form to Microsoft&reg; SharePoint](/help/forms/configure-submit-action-sharepoint.md)
@@ -1105,6 +1106,7 @@ user-guide-title: AEM as a Cloud Service
       + [Introduction to Forms Universal Editor for Edge Delivery Services - Complete Guide](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + [How to Start Authoring Using Universal Editor - Step by Step Tutorial](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
       + [How to Create Your First Form Using Universal Editor - Step by Step Tutorial](/help/edge/docs/forms/universal-editor/create-forms.md)
+      + [Guide Users After Submission: Configure Redirects and Thank You Messages in Universal Editor](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
       + [Universal Editor Interface Guide: Tools, Features, and Navigation Explained](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
       + [Make Your Forms Mobile-Friendly: Responsive Design in Universal Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
       + [Design Beautiful Forms: Styling and Theming Guide for Universal Editor](/help/edge/docs/forms/universal-editor/style-theme-forms.md)

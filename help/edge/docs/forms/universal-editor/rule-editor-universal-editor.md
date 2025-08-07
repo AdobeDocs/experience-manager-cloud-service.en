@@ -11,6 +11,7 @@ exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 
 The Rule Editor in Universal Editor enables you to create intelligent, dynamic forms that respond to user input in real time. You can transform static forms into interactive experiences with conditional field visibility, automated calculations, and complex business logic—all without writing code.
 
+
 ## What You'll Learn
 
 By the end of this guide, you will:

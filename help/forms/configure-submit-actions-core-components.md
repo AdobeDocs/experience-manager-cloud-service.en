@@ -34,7 +34,7 @@ The following Submit Actions are supported by Adaptive Forms based on Core Compo
 * [Invoke a Power Automate flow](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Submit to SharePoint](/help/forms/configure-submit-action-sharepoint.md)
 * [Invoke a Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Submit using Form Data Model (FDM)](/help/forms/using-form-data-model.md)
+* [Submit using Form Data Model (FDM)](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [Submit to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Submit to REST endpoint](/help/forms/configure-submit-action-restpoint.md)
 * [Submit to OneDrive](/help/forms/configure-submit-action-onedrive.md)
