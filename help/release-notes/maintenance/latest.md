@@ -118,7 +118,7 @@ The 2025.8.0 feature activation will provide the full feature set for this maint
 * SITES-33678: Add Toggle for SITES-33529.
 * SITES-33468: AEMaaCS unable to connect to ACS.
 
-### Altered functionality {#altered-functionality-21772}
+### Altered Functionality {#altered-functionality-21772}
 
 * SITES-26344: Unify validation of `fragmentId`/`modelId` between endpoints - these ids are now validated and a 400 status code is returned if they are not valid.
 * SITES-29598: Validate Content Fragment references added in fragment reference fields when updating a Content Fragment Model.
@@ -135,7 +135,6 @@ Deprecated and removed features and APIs in AEM as a Cloud Service are detailed 
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 35 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-
 ### Embedded Technologies {#embedded-tech-21772}
 
 |Technology|Version|Link|
@@ -146,4 +145,3 @@ AEM as a Cloud Service is dedicated to optimizing your platform's security and p
 |Apache HTTP Server| 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES)|
 |AEM Core Components| 2.29.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
 |Node.js|14 (default)|[Supported Node.js versions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions)|
-
