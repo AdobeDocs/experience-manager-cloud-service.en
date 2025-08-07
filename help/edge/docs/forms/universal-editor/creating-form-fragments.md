@@ -18,17 +18,17 @@ By the end of the article, you learn how to create and use fragments in forms us
 
 ## Features of Edge Delivery Services Form Fragments
 
-* **Maintaining consistency with form fragments**
+- **Maintaining consistency with form fragments**
     You can integrate fragments into different forms, helping you maintain consistent layouts and standardized content. 
     
     >[!NOTE]
     >
     > With a "change once, reflect everywhere" approach, any update made to a fragment automatically applies to all forms at Preview mode. However, in the Publish mode, you must publish the fragment or republish the form for the changes to reflect.
 
-* **Adding form fragments multiple times within form**
+- **Adding form fragments multiple times within form**
     You can add a form fragment multiple times within a form and configure its data binding properties to data sources or schemas. 
 
-* **Using fragments within fragments**
+- **Using fragments within fragments**
     You can create nested form fragments, which means you can add a fragment in another fragment, and can have nested fragment structure.
 
     >[!NOTE]
@@ -37,23 +37,23 @@ By the end of the article, you learn how to create and use fragments in forms us
 
 ## Considerations while using Edge Delivery Services Form Fragments
 
-* You need to add the same GitHub URL in both the fragment and the form where you intend to use the fragment.
-* You cannot edit a form fragment within a form. To make changes, modify the standalone form fragment.
+- You need to add the same GitHub URL in both the fragment and the form where you intend to use the fragment.
+- You cannot edit a form fragment within a form. To make changes, modify the standalone form fragment.
 
 ## Prerequisites
 
-* [Set up your GitHub repository](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) to establish a connection between your AEM environment and the GitHub repository.
-* If you are already using Edge Delivery Services, add the latest version of the [Adaptive Forms block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) to your GitHub repository. 
-* The AEM Forms Author instance includes a template based on Edge Delivery Services. 
-* Keep the URL of your AEM Forms as a Cloud Service author instance and your GitHub Repository handy. 
+- [Set up your GitHub repository](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) to establish a connection between your AEM environment and the GitHub repository.
+- If you are already using Edge Delivery Services, add the latest version of the [Adaptive Forms block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) to your GitHub repository. 
+- The AEM Forms Author instance includes a template based on Edge Delivery Services. 
+- Keep the URL of your AEM Forms as a Cloud Service author instance and your GitHub Repository handy. 
 
 ## Working with Edge Delivery Services Form Fragments
 
 You can create Edge Delivery Services Form Fragments in the Universal Editor and add the created fragments to Edge Delivery Services forms. You can perform the following actions with Edge Delivery Services Form Fragments:
 
-* [Creating form fragments](#creating-form-fragments)
-* [Adding form fragments to a form](#adding-form-fragments-to-a-form)
-* [Managing form fragments](#managing-form-fragments)
+- [Creating form fragments](#creating-form-fragments)
+- [Adding form fragments to a form](#adding-form-fragments-to-a-form)
+- [Managing form fragments](#managing-form-fragments)
 
 ### Creating form fragments
 
@@ -78,14 +78,14 @@ To create a form fragment in Universal Editor, perform the following steps:
 
    ![Displays model type in the Form Model tab](/help/edge/docs/forms/universal-editor/assets/select-fdm-for-fragment.png)
 
-    * **Form Data Model (FDM)**: Integrate data model objects and services from data sources into your fragment. Choose Form Data Model (FDM) if your form requires reading and writing data from multiple sources.
+    - **Form Data Model (FDM)**: Integrate data model objects and services from data sources into your fragment. Choose Form Data Model (FDM) if your form requires reading and writing data from multiple sources.
 
-    * **JSON Schema**: Integrate your form with a backend system by associating a JSON schema that defines the data structure. It allows you to add dynamic content using the schema elements. 
-    * **None**: Specifies to create the fragment from scratch without using any form model.
+    - **JSON Schema**: Integrate your form with a backend system by associating a JSON schema that defines the data structure. It allows you to add dynamic content using the schema elements. 
+    - **None**: Specifies to create the fragment from scratch without using any form model.
 
     >[!NOTE]
     >
-    > To learn how to integrate forms or fragments with a Form Data Model (FDM) in the Universal Editor to use diverse backend data sources, [click here](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
+    > To learn how to integrate forms or fragments with a Form Data Model (FDM) in the Universal Editor to use diverse backend data sources, see [Integrate forms with Form Data Model in Universal Editor](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
 
 1. (Optional) Specify the **Publish Date** or **Unpublish Date** for the fragment in the **Advanced** tab.
 
@@ -205,10 +205,8 @@ You can perform several operations on form fragments using the AEM Forms user in
 
 ## Best Practices 
 
-* Ensure that the fragment name is unique. The fragment fails to create if there is an existing fragment with the same name.
-* Any expression, script, or style in a stand-alone form fragment is retained when it is inserted by reference or embedded in an form.
-* When you publish a form, the form fragments inserted by reference within the form are published automatically.
+- Ensure that the fragment name is unique. The fragment fails to create if there is an existing fragment with the same name.
+- Any expression, script, or style in a stand-alone form fragment is retained when it is inserted by reference or embedded in an form.
+- When you publish a form, the form fragments inserted by reference within the form are published automatically.
 
-## See Also
 
-{{universal-editor-see-also}}

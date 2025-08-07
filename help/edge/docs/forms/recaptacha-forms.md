@@ -21,19 +21,20 @@ Edge Delivery Services only supports the **Score based(v3)-reCAPTCHA** for the A
 
 
 By the end of this article, you learn to:
-  * [Enable Google reCAPTCHA for a single form](#enable-google-recaptchas-for-a-single-form)
-  * [Enable reCAPTCHA for all the forms on your Site](#enable-recaptcha-for-all-the-forms)
+  - [Enable Google reCAPTCHA for a single form](#enable-google-recaptchas-for-a-single-form)
+  - [Enable reCAPTCHA for all the forms on your Site](#enable-recaptcha-for-all-the-forms)
 
 ## Pre-requisites
 
-* Begin the development of Edge Delivery Services Forms by following the steps explained in [Create a form using Adaptive Forms Block](/help/edge/docs/forms/create-forms.md). 
-* Register your domain with [Google reCAPTCHA and obtain credentials](https://www.google.com/recaptcha/admin/create).
+- Begin the development of Edge Delivery Services Forms by following the steps explained in [Create a form using Adaptive Forms Block](/help/edge/docs/forms/create-forms.md). 
+- Register your domain with [Google reCAPTCHA and obtain credentials](https://www.google.com/recaptcha/admin/create).
 
 ## Enable Google reCAPTCHA for a single form {#enable-google-recaptchas-for-a-single-form}
 
 Enabling Google reCAPTCHA for a single form involves integrating Google's reCAPTCHA service into a specific web form to prevent automated abuse or spam submissions.
 
 To enable Google reCAPTCHA for a single form:
+
 1. [Configure the reCAPTCHA secret key in the project configuration file](#configure-secret-key)
 1. [Add the reCAPTCHA site key to your form](#add-site-key)
 
@@ -52,13 +53,13 @@ The Site Secret for domain registered with Google reCAPTCHA is added to project 
 
 1. Open the `config` file and add the following key and value pairs:
 
-    * **captcha.secret**: Google reCAPTCHA secret key value
-    * **captcha.type**: reCAPTCHA v2
+    - **captcha.secret**: Google reCAPTCHA secret key value
+    - **captcha.type**: reCAPTCHA v2
 
     >[!NOTE]
     >
-    >  * You can retrieve the reCAPTCHA keys from the [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin).
-    >  *  You must specify the value of **captcha.type** in the `config` file as **reCAPTCHA v2**.
+    >  - You can retrieve the reCAPTCHA keys from the [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin).
+    >  - You must specify the value of **captcha.type** in the `config` file as **reCAPTCHA v2**.
 
    Refer to the screenshot of a project configuration file below:
 
@@ -74,8 +75,8 @@ The Site Key for a domain registered with Google reCAPTCHA is added to the sprea
 
 1. Go to your AEM Project folder on Microsoft&reg; SharePoint or Google Drive and open your spreadsheet. You can also create new spreadsheet for a form.
 1. Insert a row into the spreadsheet to add new field as CAPTCHA, including the following details:
-    * **type**: captcha
-    * **value**: Google reCAPTCHA site key value
+    - **type**: captcha
+    - **value**: Google reCAPTCHA site key value
   
     Refer to the screenshot below, depicting the spreadsheet with the new row type as CAPTCHA:
   
@@ -123,8 +124,4 @@ Deploy the updated `recaptcha.js` file to your GitHub project and verify a succe
 Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) to preview and publish the site. 
 
 The reCAPTCHA badge starts appearing for all the forms on your Site. 
-
-## See also
-
-{{see-more-forms-eds}}
 
