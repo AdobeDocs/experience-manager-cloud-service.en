@@ -122,7 +122,7 @@ Key benefits include:
 
 The [AFP Output Sync API](/help/forms/document-generation-afp-api.md) enables administrators and users to generate AFP (Advanced Function Presentation) output from Adaptive Forms and synchronize the output with external systems or storage locations. AFP is a high-performance document format optimized for printing, often used in large-scale enterprise environments.
 
-### New pre-release features in AEM Forms {#forms-new-pre-release-features}
+<!-- ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
 
 **Enhancements in Rule Editor**
 
@@ -135,7 +135,8 @@ The [AFP Output Sync API](/help/forms/document-generation-afp-api.md) enables ad
 * Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
 * Form-specific custom function scripts are now supported for Adaptive Forms in Edge Delivery Services.
 
-  
+ --> 
+
 ### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 
 The AEM Forms Early Access Program offers a unique opportunity for you to get exclusive access to cutting-edge innovations and help shape their development.
@@ -158,7 +159,7 @@ Key optimization opportunities include:
 
 With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. --> 
 
-**Rule Editor for Interactive Communications Editor*- 
+**Rule Editor for Interactive Communications Editor** 
 
 Build dynamic, data-driven actions directly within your documents using an intuitive, point-and-click interface. Easily define conditional logic, automate workflows, and personalize content without writing code.
 
