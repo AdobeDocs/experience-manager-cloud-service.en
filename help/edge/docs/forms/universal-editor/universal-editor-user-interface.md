@@ -112,14 +112,18 @@ Here's what each component offers:
 
     >[!NOTE]
     >
-    > - The Rule Editor extension is not enabled by default in Universal Editor. To enable this powerful feature, contact us at [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official email address.
     > - To learn how to create and manage rules, refer to the article [Introduction to Rule Editor in WYSIWYG Authoring](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md).
 
 - **Edit Form Properties**
     
-     The **Edit Form Properties** option allows you to configure important form settings such as the Form Data Model (FDM) and publication date. These properties influence how your form behaves and integrates with back-end systems.
+    The Edit Form Properties option allows you to configure key form settings such as the Form Data Model (FDM), prefill behavior, and thank-you options. These settings influence how your form behaves and integrates with back-end systems.
     
     ![Edit Form Properties](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
+
+    The Form Properties panel includes the following sections:
+    **Prefill**: Configure how form fields are automatically populated before the user interacts with the form. You can connect to data sources such as a Form Data Model (FDM) or use URL parameters to prepopulate fields, enhancing the user experience and reducing manual input. To learn more, see the [Prefill Service](/help/edge/docs/forms/universal-editor/prefill-form.md) article.
+    * **Submission**: Define what happens after a user submits the form. Choose from multiple submission actions such as sending data via email, submitting to SharePoint, using a Form Data Model, or integrating with services like Adobe Experience Platform or Microsoft Power Automate. For a full list of supported submit actions, refer to the [Submit Action article](/help/edge/docs/forms/universal-editor/submit-action.md).
+    * **Thank You**: Customize what users see after submitting the form. You can display a confirmation message or redirect them to another webpage, ensuring a smooth and professional completion experience. To learn how to configure a thank-you message for forms, see the [Configure Thank You Message](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md) article.
 
 - **Authentication Header Settings**
     

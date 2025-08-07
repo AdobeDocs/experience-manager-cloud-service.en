@@ -130,6 +130,8 @@ To set up automated process with [AEM Workflow](https://experienceleague.adobe.c
     >
     > Learn more about [Forms-centric AEM Workflows - Step Reference to automate business processes](/help/forms/aem-forms-workflow-step-reference.md).
 
+>[!ENDTABS]
+
 <!--
 ## Best Practices
 
