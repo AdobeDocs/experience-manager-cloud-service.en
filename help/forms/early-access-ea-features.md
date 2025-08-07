@@ -151,7 +151,7 @@ AEM Forms HTML5 Forms enables you to render existing XFA (XML Forms Architecture
 
 Ready to start? The [Introduction to HTML5 forms](/help/forms/introductionhtml5.md) documentation provides a comprehensive overview and getting started guide for this innovation.
 
-### AEM Forms CLI Tool for Rapid Custom Component Development
+### "AEM Forms Scaffolder CLI for Custom Components
 
 Accelerate your AEM Forms Edge Delivery Services development with the AEM Forms CLI tool. This command-line interface enables you to instantly generate the code and wiring needed to kickstart custom component development—no boilerplate, no hassle.
 
