@@ -4,6 +4,8 @@ description: This article explores various use cases for the rule editor in an A
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+hide: yes
+hidefromtoc: yes
 ---
 # Rule Editor Enhancements and Use Cases
 
