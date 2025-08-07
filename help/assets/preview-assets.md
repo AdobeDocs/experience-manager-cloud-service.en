@@ -57,7 +57,7 @@ After finalising the asset version, [publish your page](#publish-assets-to-publi
 After finalising the asset version for public use, set the asset status to **[!UICONTROL Approved]** and then publish your pages to the publish tier. Execute the following steps to publish your page:
 
 1. Follow step 1 in [Preview assets in your sites preview page](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities) section above to change asset status to **[!UICONTROL Approved]**. 
-1. Navigate to your Sites author page and publish it to [!DNL Publish tier]. Publish the pages by executing the steps in [Publishing from the Page Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor) section. 
+1. Navigate to your Sites author page and publish it to the [!DNL Publish tier]. Publish the pages by executing the steps in [Publishing from the Page Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor) section. 
 Alternatively, follow the steps in [Publishing Pages from the Sites Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console) section to publish your page from your site's console.
 
    >[!NOTE]
@@ -69,9 +69,9 @@ A confirmation message **[!UICONTROL The page has been published]** displays aft
 
 ## Verify the publish status{#verify-the-publish-status}
 
-After publishing your page, varify that the new assets are available on your Sites page. Execute the following step to varify the publish status:
+After publishing your page, verify that the new assets are available on your Sites page. Execute the following step to verify the publish status:
 
-1. Select [View as Published](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/introduction#view-as-published) option in the authoring page to display a published view of your live pages (with updated asset) in a new tab. Use this copy of your live pages to [Verify the publish status](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#determining-publication-status).
+1. Select [View as Published](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/introduction#view-as-published) option in the authoring page to display a published view of your live pages (with new or updated asset) in a new tab. Use this copy of your live pages to [Verify the publish status](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#determining-publication-status).
 
    >[!TIP]
    >
