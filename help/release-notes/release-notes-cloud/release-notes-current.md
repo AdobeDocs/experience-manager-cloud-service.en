@@ -67,9 +67,9 @@ You can now add a title when generating a shared link—whether from the asset d
 
 ![private and public link](/help/assets/assets/shared-link-for-assets.png)
 
-**Improved filter navigation in Content Hub**
+**Improved filter navigation**
 
-Content Hub now includes a **Show All** option within filters, allowing users to view all available categories along with asset counts. Enhanced search and sort capabilities within each filter make it easier to discover and manage assets more efficiently.
+Content Hub now includes a **Show All** option within filters, allowing users to view all available facets along with asset counts from the current limitation of viewing only upto ten facets. Enhanced search and sort capabilities within each filter make it easier to discover and manage assets more efficiently.
 
 ### AEM Desktop App release 3.0.0 {#desktop-app-release-3.0.0}
 
