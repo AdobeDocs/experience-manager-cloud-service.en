@@ -6,7 +6,7 @@ role: Admin, User
 
 # Preview assets before using them in your AEM Sites pages {#asset-preview-using-Dynamic-Media-with-OpenAPI-capabilities}
 
-[!DNL Dynamic Media with OpenAPI capabilities] lets you preview assets available in your [!DNL Adobe Experience Manager (AEM) Sites] author pages before making them publicly available. .
+[!DNL Dynamic Media with OpenAPI capabilities] lets you preview assets available in your [!DNL Adobe Experience Manager (AEM) Sites] author pages before making them publicly available. 
 
 To [generate assets preview](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities), update your AEM Sites author pages by either adding the new assets or replacing the existing ones. Then publish your updated author pages to the preview tier to generate a preview URL of the page. [!DNL Dynamic Media with OpenAPI capabilities] enables the preview of updated assets in your Sites preview tier. Share this preview page with stakeholders to collect feedback on the visual quality and contextual alignment of the updated assets. Refine the assets based on the feedback. 
 
@@ -50,11 +50,11 @@ Share this preview URL with the stakeholders for review and feedback. Ensure tha
    >
    >The [Image V3 core component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/image#version-and-compatibility) supports preview version of assets by default. When you select a preview version of an asset (asset with preview status) using the [Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-upload) panel, the Image V3 component automatically renders it in the Preview tier (a preview version on your Sites author page).
 
-After finalising the asset version, [publish your page](#publish-assets-to-publish-tier) to the publish tier for public consumption.
+After finalising the asset version, [publish your pages to the publish tier](#publish-your-pages-to-publish-tier) for public consumption.
 
-## Publish assets{#publish-assets-to-publish-tier}
+## Publish your pages with approved assets for public use{#publish-your-pages-to-publish-tier}
 
-After finalising the asset version for public use, set the asset status to **[!UICONTROL Approved]** and then publish your pages to the publish tier. Execute the following steps to publish your page:
+After finalising the asset version for public use, set the asset status to **[!UICONTROL Approved]**. Then publish your pages to the publish tier. Execute the following steps to publish your page:
 
 1. Follow step 1 in [Preview assets in your sites preview page](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities) section above to change asset status to **[!UICONTROL Approved]**. 
 1. Navigate to your Sites author page and publish it to the [!DNL Publish tier]. Publish the pages by executing the steps in [Publishing from the Page Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor) section. 
@@ -62,18 +62,8 @@ Alternatively, follow the steps in [Publishing Pages from the Sites Console](htt
 
    >[!NOTE]
    >
-   > Only Approved assets are published to the Publish tier. Approve the assets before publishing them to the Publish tier for public use.
+   > Only approved assets can be delivered on the Publish tier. Approve the assets before publishing your page to the Publish tier for public use.
 
    ![The page has been published](/help/assets/assets/the-page-has-been-publushed.png)
-A confirmation message **[!UICONTROL The page has been published]** displays after successful publishing.
-
-## Verify the publish status{#verify-the-publish-status}
-
-After publishing your page, verify that the new assets are available on your Sites page. Execute the following step to verify the publish status:
-
-1. Select [View as Published](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/introduction#view-as-published) option in the authoring page to display a published view of your live pages (with new or updated asset) in a new tab. Use this copy of your live pages to [Verify the publish status](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#determining-publication-status).
-
-   >[!TIP]
-   >
-   > Switch between Preview and Publish versions of the page by replacing the word Preview with Publish (or vice versa) in the preview or publish URL.
+A confirmation message **[!UICONTROL The page has been published]** displays after successful publishing. Navigate to your published page on publish tier to confirm the updates are live and the content displays as expected.
 
