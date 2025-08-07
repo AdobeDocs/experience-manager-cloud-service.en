@@ -127,7 +127,7 @@ The table below outlines the key differences between the two solutions:
 
 ## Some modifiers are marked as Limited Availability. How can I start using them? {#use-limited-availability-modifiers}
 
-To enable the production use of modifiers in Limited Availability on your account:
+To enable the production use of [modifiers in Limited Availability](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) on your account:
 
 1. [Create an Adobe Support case using Admin Console](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
