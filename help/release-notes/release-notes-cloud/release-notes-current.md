@@ -42,7 +42,10 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### New features in Experience Manager Sites {#enhancements-sites}
 
-Content to be added.
+**Content Fragments Enhancements**
+
+* You can now copy content fragments with children.
+* You can now configure a custom workspace in the folder settings, to export the content fragments to the configured workspace in target.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
