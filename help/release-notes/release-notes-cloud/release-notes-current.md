@@ -83,6 +83,12 @@ Enjoy automated upload of new files and folders, enhanced file operations, smart
 
 For the complete list of features, see [Desktop App Release Notes](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
 
+### New Features in Dynamic Media with OpenAPI capabilities {#new-features-dynamic-media-with-openapi}
+
+**Preview assets before publishing**
+
+[!DNL Dynamic Media with OpenAPI capabilities] now allows to preview assets directly within [!DNL AEM Sites] author pages before making them publicly available. Share preview pages with stakeholders to gather feedback on visual quality and contextual fit. During the review cycle, you can create and manage multiple asset versions before finalizing them for publication.
+
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
