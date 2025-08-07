@@ -1,18 +1,18 @@
 ---
 title: Preview assets before using them in your AEM Sites pages 
-description: Dynamic Media with OpenAPIs capabilities enables you to preview assets before using them in your Adobe Experience Manager (AEM) Sites pages. The asset preview is available on your site's author and Preview tier, enabling you and your stakeholders to review and validate the updates to your assets before publishing the pages with updated assets. 
+description: Dynamic Media with OpenAPI capabilities enables you to preview assets before using them in your Adobe Experience Manager (AEM) Sites pages. The asset preview is available on your site's author and Preview tier, enabling you and your stakeholders to review and validate the updates to your assets before publishing the pages with updated assets. 
 role: Admin, User
 ---
 
-# Preview assets before using them in your AEM Sites pages {#asset-preview-using-Dynamic-Media-with-OpenAPIs-capabilities}
+# Preview assets before using them in your AEM Sites pages {#asset-preview-using-Dynamic-Media-with-OpenAPI-capabilities}
 
-[!DNL Dynamic Media with OpenAPIs capabilities] lets you preview assets available in your [!DNL Adobe Experience Manager (AEM) Sites] author pages before making them publicly available. 
+[!DNL Dynamic Media with OpenAPI capabilities] lets you preview assets available in your [!DNL Adobe Experience Manager (AEM) Sites] author pages before making them publicly available. 
 
-To [generate assets preview](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPIs-capabilities), update your AEM Sites author pages by either adding the new assets or replacing the existing ones. Then publish your updated author pages to the preview tier to generate a preview URL of the page. [!DNL Dynamic Media with OpenAPIs capabilities] enables the preview of updated assets in your Sites preview tier. Share this preview page with stakeholders to collect feedback on the visual quality and contextual alignment of the updated assets. Refine the assets based on the feedback. 
+To [generate assets preview](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities), update your AEM Sites author pages by either adding the new assets or replacing the existing ones. Then publish your updated author pages to the preview tier to generate a preview URL of the page. [!DNL Dynamic Media with OpenAPI capabilities] enables the preview of updated assets in your Sites preview tier. Share this preview page with stakeholders to collect feedback on the visual quality and contextual alignment of the updated assets. Refine the assets based on the feedback. 
 
 During the review cycle, you can create and manage multiple versions of the asset before publishing the final version for public use.
 
-## Before you begin{#prerequisites-for-previewing-assets-using-Dynamic-Media-with-OpenAPIs-capabilities}
+## Before you begin{#prerequisites-for-previewing-assets-using-Dynamic-Media-with-OpenAPI-capabilities}
 
 Ensure you have:
 
@@ -22,7 +22,7 @@ Ensure you have:
 ![Add Preview option](/help/assets/assets/metedata-form-preview.png)
 * The key to generate the preview token. [Contact Adobe support](https://helpx.adobe.com/in/contact.html) and raise a request for the key.
 
-## Preview assets in your sites preview page {#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPIs-capabilities}
+## Preview assets in your sites preview page {#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities}
 
 You can preview new assets or assets that are already approved. Approved assets only display on your live Sites pages.
 
