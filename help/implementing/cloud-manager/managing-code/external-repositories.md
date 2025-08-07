@@ -3,21 +3,22 @@ title: Add External Repositories in Cloud Manager
 description: Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps repositories.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" 
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 ---
 # Add external repositories in Cloud Manager {#external-repositories}
 
+<!-- badge: label="Beta - Azure DevOps only" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" -->
+
 Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, and Bitbucket repositories.
 
-Customers can now also onboard their Azure DevOps Git repositories into Cloud Manager, with support for both modern Azure DevOps and legacy VSTS (Visual Studio Team Services) repositories.
+Customers can now also onboard their Azure DevOps (Beta) Git repositories into Cloud Manager, with support for both modern Azure DevOps and legacy VSTS (Visual Studio Team Services) repositories.
 
 * For Edge Delivery Services users, the onboarded repository can be used to sync and deploy site code.
 * For AEM as a Cloud Service and Adobe Managed Services (AMS) users, the repository can be linked to both full-stack and frontend pipelines.
 
 >[!NOTE]
 >
->The features described in this article are only available through the private beta program. For more details and to sign up for the private beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
+>The support added for Azure DevOps described in this article is available only through the private beta program. For more details and to sign up for the beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts).
 
 
 ## Configure an external repository
@@ -114,7 +115,7 @@ After validation, the external repository is ready to use and link to a pipeline
 
 See also [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
->[!TAB Azure DevOps]
+>[!TAB Azure DevOps (Beta)]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
@@ -232,7 +233,7 @@ For all other external repositories that are onboarded with an access token &nda
 | --- |
 | These events ensure that Cloud Manager can validate pull requests, respond to code pushes, and interact with comments for pipeline coordination.<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Pull request: Created<li>Pull request: Updated<li>Pull requests: Merged<li>Pull request: Comment<li>Repository: Push</li></li></li></ul></ul></ul> |
 
->[!TAB Azure DevOps]
+>[!TAB Azure DevOps (Beta)]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
