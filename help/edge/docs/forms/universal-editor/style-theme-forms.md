@@ -130,7 +130,7 @@ All form fields, except for dropdowns, radio groups, and checkbox groups, has th
 
 +++ CSS Selector for General Components
 
-  ```CSS
+```CSS
   
   /- Primary Pattern: Target field wrapper by type */
   .form .{Type}-wrapper {

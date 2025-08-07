@@ -175,9 +175,9 @@ The `fstab.yaml` file connects your GitHub repository to AEM authoring environme
    *Figure: Committing the fstab.yaml configuration*
 
 **Validation:** Confirm your GitHub repository connection to AEM.
-
->[!NOTE]
->
+    
+        >[!NOTE]
+        >
 >Having build issues? See [Troubleshooting GitHub build issues](#troubleshooting-github-build-issues).
 
 +++
@@ -204,12 +204,12 @@ The `fstab.yaml` file connects your GitHub repository to AEM authoring environme
    ![Site Template Selection](/help/edge/docs/forms/assets/select-site-template.png)
    *Figure: Selecting the Edge Delivery Services site template*
 
-   >[!NOTE]
-   >
-   >**Template not available?** If you don't see the Edge Delivery Services template:
-   >
-   >1. Click **Import** to upload the template
-   >2. Download templates from [GitHub releases](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)
+    >[!NOTE]
+    >
+    >**Template not available?** If you don't see the Edge Delivery Services template:
+    >
+    >1. Click **Import** to upload the template
+    >2. Download templates from [GitHub releases](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)
 
 4. **Configure your site**
    
@@ -393,11 +393,11 @@ Let's walk through each step:
 
     ```bash
     # Form block rule engine files
-     blocks/form/rules/formula/*
-     blocks/form/rules/model/*
-     blocks/form/rules/functions.js
-     scripts/editor-support.js
-     scripts/editor-support-rte.js
+    blocks/form/rules/formula/*
+    blocks/form/rules/model/*
+    blocks/form/rules/functions.js
+    scripts/editor-support.js
+    scripts/editor-support-rte.js
     ```
 
 2. **Update .eslintrc.js**
@@ -642,7 +642,7 @@ A local development environment allows you to make changes and see them instantl
    The AEM CLI simplifies local development tasks:
    
     ```bash
-    npm install -g @adobe/aem-cli
+        npm install -g @adobe/aem-cli
     ```
 
 2. **Clone your repository**
