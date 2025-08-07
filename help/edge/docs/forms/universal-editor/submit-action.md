@@ -73,9 +73,5 @@ You can configure the submit action for forms created in the Universal Editor us
 > - If you do not see the **Edit Form Properties** icon in your Universal Editor interface, enable the **Edit Form Properties** extension in the Extension Manager. 
 > - Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable or disable extensions in the Universal Editor.
 
-## See Also {#see-also}
-
-{{af-submit-action}}
-
 
 
