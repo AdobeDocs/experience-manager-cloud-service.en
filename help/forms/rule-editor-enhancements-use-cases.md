@@ -14,8 +14,8 @@ The table below lists recent enhancements to the rule editor in Adaptive Forms, 
 | Enhancement    | Description     | Advantages|
 |---|----|---|
 | **Validation using the `validate()` method**     | Available in the function list to validate individual fields, panels, or the entire form.            | - Granular validation at panel, field, or form level  <br> - Better user experience with targeted error messaging <br> - Prevents progression with incomplete data <br> - Reduces form submission errors |
-| **Download DOR**                                 | Out-of-the-box function available in the rule editor to download the Document of Record (DoR).        | - No custom development required for downloading DoR <br> - Consistent download experience across forms <br> - Supports various file types and dynamic URLs <br> - Integrated with form workflow |
-| **Dynamic variables**                            | Create rules using variables that change based on user input or other conditions.                     | - Enables flexible rule conditions <br> - Reduces need for duplicate logic <br> - Improves maintainability |
+| **Download DOR**                                 | Out-of-the-box function available in the rule editor to download the Document of Record (DoR).        | - No custom development required for downloading DoR <br> - Consistent download experience across forms |
+| **Dynamic variables**                            | Create rules using variables that change based on user input or other conditions.                     | - Enables flexible rule conditions <br> - Reduces need for duplicate logic <br> - Eliminates requirement to create hidden fields  |
 | **Custom event-based rules**                     | Define rules that respond to custom events beyond the standard triggers.                              | - Supports advanced use cases <br> - Greater control over when and how rules are executed <br> - Enhances interactivity |
 | **Context-aware repeatable panel execution**     | Rules now execute in the correct context for each repeated panel, instead of only the last instance.  | - Accurate rule application for each repeat instance <br> - Reduces errors in dynamic sections <br> - Improves user experience with repeated content |
 | **Support for query string, UTM, and browser parameters** | Create rules that adapt form behavior based on URL parameters or browser-specific values.        | - Enables personalization based on source or environment <br> - Useful for marketing or tracking-specific flows <br> - No need for extra scripting or customization |
@@ -46,6 +46,10 @@ The screenshot below displays the rule applied to the **Next** button:
 In the above rule, the **Next** button checks whether the fields in the **Personal Details** section are valid. If the details are not valid, the focus moves to the **Name** field in the **Personal Details** panel.
 
 ![output](/help/forms/assets/valid-output.png)
+
+>[!NOTE]
+>
+> You can use the **validate()** method on forms, fragments, or individual fields. When a fragment is included in a form, both the form and the fragment appear as options in the validation context. In this case, the fragment refers to the fields within it, while the form refers to the parent form where the fragment is embedded.
 
 ## DownloadDor as OOTB fuction in Rule Editor
 
@@ -80,19 +84,27 @@ These variables:
 
 * Are not submitted with the form data.
 * Can hold intermediate or calculated values.
-* Can be used in conditional logic and actions.s
+* Can be used in conditional logic and actions.
 
-**Scenario**: An e-commerce company provides an order form where users can select a product and a preferred shipping method. While product price is captured through a form field, shipping cost is determined dynamically based on the selected method and used only in real-time price calculation, not stored in form data.
+**Scenario**: An e-commerce company provides an order form where users can select a product and a preferred shipping method. While product price is captured through a form field, shipping cost is determined dynamically based on the selected method and the country chosen.
 
 To keep the form structure clean and avoid adding unnecessary hidden fields, the business wants to handle shipping cost as a temporary value that supports real-time calculation of the total amount.
 
 **Implementation using Set Variable Value and Get Variable Value functions in the Rule Editor**
 
-A rule is configured to set the temporary variable shippingCost using the **Set Variable Value** when a user selects a shipping method. For example, selecting "Standard" sets the value to 50, while "Express" sets it to 100.
+A rule is configured to set a temporary variable named **extracharge** using the **Set Variable Value** function. The value of this variable depends on the selected country. For example, if the user selects "United States," the value is set to 50. For any other country, it is set to 100.
 
-Later, when calculating the total price, **Get Variable Value** function is used to retrieve the shipping cost and add it to the product price field value. The calculated total is then displayed in a dedicated field.
+![Set variable value](/help/forms/assets/setvalue.png)
 
-This setup avoids storing shipping cost in a field, while enabling a responsive and dynamic user experience, without writing custom code.
+Later, when calculating the total shipment cost, the **Get Variable Value** function retrieves the **extracharge** value based on the selected country. 
+
+![Get variable value](/help/forms/assets/getvalue.png)
+
+This value is then added to the product's shipping cost, and the result is displayed in the **Total Shipment Cost** field.
+
+![output](/help/forms/assets/getsetvalue-output.png)
+
+This approach allows you to calculate and display additional charges dynamically without storing them in a visible field, enabling a clean, responsive, and code-free user experience.
 
 
 ## Custom Event Based Rules Support
