@@ -63,14 +63,11 @@ Quickly revert to a previous deployment if the latest customer source code is no
 
 ![Restore customer source code from the Environments card](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Environments card above showing the **Restore** > **Previous code deployed** option for a selected environment.* 
 
-
 ![Restore previous code deployed dialog box](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png) 
 *In the **Restore previous code deployed** dialog box, review the currently deployed version and the version you want to restore, then click **Confirm***.
 
-
 ![Restoring activation](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png) 
 *Cloud Manager rolls the environment back to the earlier build, keeps content and configuration intact, and marks the environment **Restoring** until deployment completes.*
-
 
 ![Source code version in use](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *The Environment details view, as seen above, now also shows the active source-code version in use.*
 
