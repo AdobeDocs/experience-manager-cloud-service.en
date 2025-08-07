@@ -18,7 +18,23 @@ The following video demonstrates Content Hub key capabilities:
 
 ## Release Date {#release-date}
 
-The release date of Content Hub feature release (2025.6.0) is June 26, 2025 (same as that of AEM as a Cloud Service release). The next feature release (2025.7.0) is planned for July 31, 2025.
+The release date of Content Hub feature release (2025.7.0) is August 07, 2025 (same as that of AEM as a Cloud Service release). The next feature release (2025.8.0) is planned for August 28, 2025.
+
+## July release features {#july-release-features}
+
+**Enhanced branding flexibility in Content Hub**
+
+Building on existing personalization features, Content Hub now allows admins to further tailor their deployment by adding custom logo images. Support for the TIFF file format has also been added for both banner and logo images, enabling greater design flexibility.
+
+**Smarter sharing with titled links**
+
+You can now add a title when generating a shared link—whether from the asset details view or after selecting one or more assets. This helps recipients easily identify the purpose of each link, especially when receiving multiple shared assets.
+
+![private and public link](/help/assets/assets/shared-link-for-assets.png)
+
+**Improved filter navigation**
+
+Content Hub now includes a **Show All** option within filters, allowing users to view all available facets along with asset counts from the current limitation of viewing only upto ten facets. Enhanced search and sort capabilities within each filter make it easier to discover and manage assets more efficiently.
 
 ## June release features {#june-release-features}
 

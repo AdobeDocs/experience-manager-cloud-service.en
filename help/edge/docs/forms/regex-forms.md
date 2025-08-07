@@ -21,10 +21,10 @@ Here are some regular expressions you can use to enhance form validation beyond 
 
 Ensures at least 8 characters with:
 
-* Lowercase letter (a-z)
-* Uppercase letter (A-Z)
-* Digit (0-9)
-* Special character (@$!%*?&)
+- Lowercase letter (a-z)
+- Uppercase letter (A-Z)
+- Digit (0-9)
+- Special character (@$!%*?&)
 
 
 ## Email Address

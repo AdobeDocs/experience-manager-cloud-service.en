@@ -104,10 +104,9 @@ The following table demonstrates the difference between the features available i
    </td>
    </tr>
    <tr>
-    <td>ES2022 Support </td>
-    <td>ES2022 is not supported yet; support is limited to ES5 JavaScript features. </td>
-    <td>Support for modern JavaScript features, for example, let and arrow functions, up to ES2022, is available within custom functions. 
-   </td>
+    <td>ECMAScript Version Support</td>
+    <td>Supports only ES5 JavaScript features.</td>
+    <td>Supports modern JavaScript features (e.g., <code>let</code>, arrow functions) within custom functions.</td>
    </tr>
    </tr>
    <tr>
