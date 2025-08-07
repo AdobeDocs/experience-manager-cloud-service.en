@@ -27,7 +27,7 @@ The following submit actions are supported by [Adaptive Forms authored in the Un
 * [Invoke a Power Automate Flow](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Submit to SharePoint](/help/forms/configure-submit-action-sharepoint.md)
 * [Invoke Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Submit using Form Data Model (FDM)](/help/forms/using-form-data-model.md)
+* [Submit using Form Data Model (FDM)](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [Submit to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Submit to REST Endpoint](/help/forms/configure-submit-action-restpoint.md)
 * [Submit to OneDrive](/help/forms/configure-submit-action-onedrive.md)
