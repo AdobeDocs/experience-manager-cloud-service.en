@@ -12,6 +12,7 @@ exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 
 Users access forms on a wide range of devices, including desktops, tablets, and smartphones. Designing responsive forms ensures an optimal experience for all users, regardless of device. This guide explains how to design, test, and optimize forms for any screen size using the Universal Editor.
 
+
 Responsive form creation involves two main activities:
 
 - **Responsive Testing:** Preview and test your forms across various screen sizes using device emulators.

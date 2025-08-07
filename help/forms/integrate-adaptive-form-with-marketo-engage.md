@@ -32,6 +32,8 @@ Prerequisite to connect Marketo Engage with forms:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442867/marketo-aem-marketo-engage-engage-aem-forms)
 
+<span> This video is applicable only for Core Components. For UE/Foundation Components, please refer to the article.</span>
+ 
 >[!BEGINTABS]
 
 >[!TAB Foundation Component]
