@@ -178,7 +178,7 @@ Set up a dedicated sheet to receive form submission data.
 ![Incoming sheet](/help/forms/assets/form-submission-incoming-sheet.png)
 *Example: Incoming sheet with column headers matching form fields*
 
->[!WARNING]
+>[!WARNING] 
 >
 >**Critical Requirement**
 >
@@ -211,7 +211,7 @@ Grant the Adobe Forms Submission Service access to your spreadsheet.
 3. **Send the sharing invitation**
 4. **Copy the spreadsheet link** for the next step
 
-![Share incoming sheet](/help/forms/assets/form-submission-share-incoming.png)
+    ![Share incoming sheet](/help/forms/assets/form-submission-share-incoming.png)
 *Step-by-step sharing process for granting Adobe service access*
 
 **Platform-Specific Instructions:**
@@ -228,7 +228,7 @@ Grant the Adobe Forms Submission Service access to your spreadsheet.
 - Set link sharing to "Anyone with the link can edit"
 - Copy the sharing URL
 
-![Copy link of incoming sheet](/help/forms/assets/form-submission-copy-link.png)
+    ![Copy link of incoming sheet](/help/forms/assets/form-submission-copy-link.png)
 *Example: Copying the shareable link for form configuration*
 
 **Validation Checkpoint:**
@@ -248,7 +248,7 @@ Link your form definition to the submission spreadsheet.
 3. **Paste the copied spreadsheet link** into the **Action** column for the Submit field
 4. **Save the changes** to your form definition
 
-![Link a spreadsheet](/help/forms/assets/form-submission-sheet-linking.png)
+    ![Link a spreadsheet](/help/forms/assets/form-submission-sheet-linking.png)
 *Example: Connecting the submit action to your data collection spreadsheet*
 
 **Publishing Your Form:**
@@ -330,8 +330,8 @@ Postman provides a user-friendly interface for testing API submissions.
    - `[organization]` → Your GitHub organization/username
 
 **Request Configuration:**
-
-```json
+   
+    ```json
 POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
 Headers:
@@ -340,20 +340,20 @@ x-adobe-routing: tier=live,bucket=main--your-repo--your-org
 
 Body (JSON):
 {
-    "data": {
-        "startDate": "2025-01-10",
-        "endDate": "2025-01-25",
-        "destination": "Australia",
-        "class": "First Class",
-        "budget": "2000",
-        "amount": "1000000",
-        "name": "Mary",
-        "age": "35",
-        "subscribe": null,
-        "email": "mary@gmail.com"
-    }
+        "data": {
+            "startDate": "2025-01-10",
+            "endDate": "2025-01-25",
+            "destination": "Australia",
+            "class": "First Class",
+            "budget": "2000",
+            "amount": "1000000",
+            "name": "Mary",
+            "age": "35",
+            "subscribe": null,
+            "email": "mary@gmail.com"
+                }
 }
-```
+     ```
 
 **Expected Response:**
 
@@ -381,29 +381,29 @@ Replace the following placeholders in the commands below:
 
 ```bash
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
-  --header "Content-Type: application/json" \
+    --header "Content-Type: application/json" \
   --header "x-adobe-routing: tier=live,bucket=main--your-repo--your-org" \
-  --data '{
-    "data": {
-      "startDate": "2025-01-10",
-      "endDate": "2025-01-25",
-      "destination": "Australia",
-      "class": "First Class",
-      "budget": "2000",
-      "amount": "1000000",
-      "name": "Joe",
-      "age": "35",
-      "subscribe": null,
+    --data '{
+        "data": {
+            "startDate": "2025-01-10",
+            "endDate": "2025-01-25",
+            "destination": "Australia",
+            "class": "First Class",
+            "budget": "2000",
+            "amount": "1000000",
+            "name": "Joe",
+            "age": "35",
+            "subscribe": null,
       "email": "joe@example.com"
-    }
-  }'
-```
+                }
+            }'
+        ```
 
 >[!TAB Windows Command Prompt]
-
+     
 ```cmd
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" ^
-  --header "Content-Type: application/json" ^
+    --header "Content-Type: application/json" ^
   --header "x-adobe-routing: tier=live,bucket=main--your-repo--your-org" ^
   --data "{\"data\": {\"startDate\": \"2025-01-10\", \"endDate\": \"2025-01-25\", \"destination\": \"Australia\", \"class\": \"First Class\", \"budget\": \"2000\", \"amount\": \"1000000\", \"name\": \"Joe\", \"age\": \"35\", \"subscribe\": null, \"email\": \"joe@example.com\"}}"
 ```
@@ -430,7 +430,7 @@ Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-
   -Method POST `
   -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
   -Body $body
-```
+    ```
 
 >[!ENDTABS]
 
