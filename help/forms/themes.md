@@ -206,7 +206,7 @@ The Theme Editor is divided in two panels:
 
 * **Canvas** - Appears on the right side. It shows a sample Adaptive Form <!--  or interactive communication --> in which all styling changes reflect instantly. You can also select objects directly from the canvas to look up styles associated with them, and to edit these styles. A device resolution ruler on the top governs the Canvas. Selecting a resolution breakpoint from the ruler shows the preview of the sample form <!--  or interactive communication --> for the respective resolution. Canvas is discussed in detail [below](themes.md#using-canvas).
 
-* **Sidebar**- Appears on the left side. It has the following items:
+* **Sidebar*** Appears on the left side. It has the following items:
 
     * **Selector:** Shows the component selected for styling, and its properties that you can style. The selector represents all the components of a type. If you select a text box component in a theme for styling, all the text boxes in your form <!-- or interactive communication --> inherit the style. Selectors let you select a generic component or a specific component for styling. For example, a field component is a generic component, and a text box is a specific component.
 
