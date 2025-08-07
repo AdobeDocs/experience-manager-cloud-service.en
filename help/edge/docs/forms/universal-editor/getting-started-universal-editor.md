@@ -206,10 +206,10 @@ The `fstab.yaml` file connects your GitHub repository to AEM authoring environme
 
     >[!NOTE]
     >
-   >**Template not available?** If you don't see the Edge Delivery Services template:
-   >
-   >1. Click **Import** to upload the template
-   >2. Download templates from [GitHub releases](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)
+    >**Template not available?** If you don't see the Edge Delivery Services template:
+    >
+    >1. Click **Import** to upload the template
+    >2. Download templates from [GitHub releases](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)
 
 4. **Configure your site**
    
