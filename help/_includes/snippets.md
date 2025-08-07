@@ -36,7 +36,7 @@
 * [Send email](/help/forms/configure-submit-action-send-email.md)
 * [Submit to SharePoint Document Library](/help/forms/connect-forms-to-sharepoint-document-library.md)
 * [Submit to SharePoint List](/help/forms/connect-forms-to-sharepoint-list.md)
-* [Submit using Form Data Model](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
+* [Submit using Form Data Model](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [Submit to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Submit to REST endpoint](/help/forms/configure-submit-action-restpoint.md)
 * [Submit to OneDrive](/help/forms/configure-submit-action-onedrive.md)
