@@ -35,11 +35,11 @@ By the end you will be able to pick the right authoring method, understand submi
 
 Universal Editor is a visual, drag-and-drop authoring tool for marketers and designers that combines speed with enterprise-grade power:
 
-* Real-time WYSIWYG editing and device previews.
-* Advanced rules and validation UI—no code required.
-* Direct integration with AEM assets, workflows, and Form Data Model (FDM).
-* Seamless hand-off to developers for custom components in vanilla JS/CSS.
-* Flexible submission targets: start simple with the **Forms Submission Service (FSS)** or switch to **AEM Publish submit actions** as your needs grow.
+- Real-time WYSIWYG editing and device previews.
+- Advanced rules and validation UI—no code required.
+- Direct integration with AEM assets, workflows, and Form Data Model (FDM).
+- Seamless hand-off to developers for custom components in vanilla JS/CSS.
+- Flexible submission targets: start simple with the **Forms Submission Service (FSS)** or switch to **AEM Publish submit actions** as your needs grow.
 
 > **Recommendation**: Start every new form project with Universal Editor unless your team is 100 % document-centric and the form is very basic.
 
@@ -48,10 +48,10 @@ Universal Editor is a visual, drag-and-drop authoring tool for marketers and des
 
 Document-Based Authoring is best suited for creating simple, low-complexity forms using familiar tools such as Microsoft Word, Google Docs, or Google Sheets. This method is ideal for content teams who require a fast and straightforward way to build forms.
 
-* Define form fields within a table (Docs) or as rows (Sheets).
-* Supports basic field validation and Google reCAPTCHA for spam protection.
-* Form submissions are handled exclusively through the Forms Submission Service.
-* Instant publishing—any changes made in the source document are immediately reflected on the site without requiring a deployment pipeline.
+- Define form fields within a table (Docs) or as rows (Sheets).
+- Supports basic field validation and Google reCAPTCHA for spam protection.
+- Form submissions are handled exclusively through the Forms Submission Service.
+- Instant publishing—any changes made in the source document are immediately reflected on the site without requiring a deployment pipeline.
 
 
 ### Embedding Forms in Document Authoring (DA)
