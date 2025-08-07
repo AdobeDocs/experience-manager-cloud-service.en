@@ -168,6 +168,11 @@ Build dynamic, data-driven actions directly within your documents using an intui
 >[!VIDEO](https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
 Accelerate your AEM Forms Edge Delivery Services development with this CLI tool. Instantly generate the code and wiring needed to kickstart custom component development — no boilerplate, no hassle.
+
+**API Integration Tool for Dynamic Form Data**
+
+The API Integration Tool enables form authors to create dynamic, intelligent forms that automatically fetch and populate data from external REST APIs based on user interactions. This no-code integration capability transforms static forms into responsive data collection interfaces.
+
   
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
