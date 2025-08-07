@@ -665,7 +665,7 @@ user-guide-title: AEM as a Cloud Service
        + [Delivery APIs](/help/assets/deliver-assets-apis.md)
        + [Restrict assets delivery](/help/assets/restrict-assets-delivery.md)
        + [Integrate remote AEM Assets with AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
-       + [Preview assets](/help/assets/preview-assets.md).
+       + [Preview assets](/help/assets/preview-assets.md)
        + [Frequently asked questions](/help/assets/dynamic-media-open-apis-faqs.md)
        + [Configure custom domain](/help/assets/configure-custom-domain.md)
   + Working with Assets view {#assets-view}
