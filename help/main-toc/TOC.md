@@ -836,6 +836,7 @@ user-guide-title: AEM as a Cloud Service
           + [Examples for a Rule Editor for an Adaptive Form Based on Core Components](/help/forms/rule-editor-core-components-usecases.md)
           + [Using asynchronous functions in an Adaptive Form](/help/forms/using-async-funct-in-rule-editor.md)
           + [Invoke Service enhancements in the Visual Rule Editor for forms based on Core Components](/help/forms/invoke-service-enhancements-rule-editor.md)
+          + [Rule Editor Enhancements](/help/forms/rule-editor-enhancements-use-cases.md)
         + Introduction to Custom Functions for Adaptive Forms based on Core Components{#create-and-use-custom-function-core-component}
           + [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md)
           + [Create and use a Custom Function for an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md)
