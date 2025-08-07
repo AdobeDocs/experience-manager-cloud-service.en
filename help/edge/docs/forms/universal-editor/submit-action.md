@@ -41,18 +41,18 @@ This guide is designed for:
 
 The following submit actions are supported by [Adaptive Forms authored in the Universal Editor](/help/edge/docs/forms/universal-editor/create-forms.md):
 
-* [Send Email](/help/forms/configure-submit-action-send-email.md)
-* [Invoke a Power Automate Flow](/help/forms/forms-microsoft-power-automate-integration.md)
-* [Submit to SharePoint](/help/forms/configure-submit-action-sharepoint.md)
-* [Invoke Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Submit using Form Data Model (FDM)](/help/forms/integrate-adaptive-form-with-fdm.md)
-* [Submit to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
-* [Submit to REST Endpoint](/help/forms/configure-submit-action-restpoint.md)
-* [Submit to OneDrive](/help/forms/configure-submit-action-onedrive.md)
-* [Invoke an AEM Workflow](/help/forms/configure-submit-action-workflow.md)
-* [Submit to Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
-* [Submit to Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
-* [Submit to Spreadsheet](/help/forms/forms-submission-service.md)
+- [Send Email](/help/forms/configure-submit-action-send-email.md)
+- [Invoke a Power Automate Flow](/help/forms/forms-microsoft-power-automate-integration.md)
+- [Submit to SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+- [Invoke Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+- [Submit using Form Data Model (FDM)](/help/forms/integrate-adaptive-form-with-fdm.md)
+- [Submit to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+- [Submit to REST Endpoint](/help/forms/configure-submit-action-restpoint.md)
+- [Submit to OneDrive](/help/forms/configure-submit-action-onedrive.md)
+- [Invoke an AEM Workflow](/help/forms/configure-submit-action-workflow.md)
+- [Submit to Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+- [Submit to Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
+- [Submit to Spreadsheet](/help/forms/forms-submission-service.md)
 
 <!--You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
 
@@ -70,8 +70,8 @@ You can configure the submit action for forms created in the Universal Editor us
 
 >[!NOTE]
 >
-> * If you do not see the **Edit Form Properties** icon in your Universal Editor interface, enable the **Edit Form Properties** extension in the Extension Manager. 
-> * Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable or disable extensions in the Universal Editor.
+> - If you do not see the **Edit Form Properties** icon in your Universal Editor interface, enable the **Edit Form Properties** extension in the Extension Manager. 
+> - Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable or disable extensions in the Universal Editor.
 
 ## See Also {#see-also}
 
