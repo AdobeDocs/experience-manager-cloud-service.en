@@ -1296,6 +1296,7 @@ user-guide-title: AEM as a Cloud Service
       + [Introduction to Edge Delivery Services in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
       + [Add an Edge Delivery Site to Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
       + [Create Your First Edge Delivery Site with One Click](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+      + [Configure an Edge Delivery site to use an external Git repository](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)
       + [Setup Push Validation for an Edge Delivery site](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
       + [Configure Your Content Source](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
       + [Manage Edge Delivery Sites in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
