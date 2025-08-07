@@ -61,15 +61,6 @@ You can configure the submit action for forms created in the Universal Editor us
 
 
 <!--
----
-title: Submit Actions
-description: Configure Submit Actions for Adaptive Form.
-feature: Edge Delivery Services
-role: Admin, Architect, Developer
-exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-hide: yes
-hidefromToC: yes
----
 # Adaptive Form Submit Action
 
 ## Overview
