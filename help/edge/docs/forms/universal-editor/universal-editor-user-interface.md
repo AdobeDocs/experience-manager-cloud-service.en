@@ -124,7 +124,7 @@ The Form Properties panel includes the following sections.
 
 ![Form properties wizard](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
 
-- **Prefill**: Configure how form fields are automatically populated before the user interacts with the form. You can connect to data sources such as a Form Data Model (FDM) or use URL parameters to prepopulate fields, enhancing the user experience and reducing manual input. To learn more, see the [Prefill Service](/help/edge/docs/forms/universal-editor/prefill-form.md) article.
+- **Prefill**: Configure how form fields are automatically populated before the user interacts with the form. You can connect to data sources such as a Form Data Model (FDM) or use URL parameters to prepopulate fields, enhancing the user experience and reducing manual input. To learn more, see the Prefill Service article.
   
 - **Submission**: Define what happens after a user submits the form. Choose from multiple submission actions such as sending data via email, submitting to SharePoint, using a Form Data Model, or integrating with services like Adobe Experience Platform or Microsoft Power Automate. For a full list of supported submit actions, refer to the [Submit Action article](/help/edge/docs/forms/universal-editor/submit-action.md).
   
