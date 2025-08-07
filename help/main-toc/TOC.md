@@ -1107,6 +1107,7 @@ user-guide-title: AEM as a Cloud Service
       + [Introduction to Forms Universal Editor for Edge Delivery Services - Complete Guide](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + [How to Start Authoring Using Universal Editor - Step by Step Tutorial](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
       + [How to Create Your First Form Using Universal Editor - Step by Step Tutorial](/help/edge/docs/forms/universal-editor/create-forms.md)
+      + [Guide Users After Submission: Configure Redirects and Thank You Messages in Universal Editor](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
       + [Universal Editor Interface Guide: Tools, Features, and Navigation Explained](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
       + [Make Your Forms Mobile-Friendly: Responsive Design in Universal Editor](/help/edge/docs/forms/universal-editor/responsive-layout.md)
       + [Design Beautiful Forms: Styling and Theming Guide for Universal Editor](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
