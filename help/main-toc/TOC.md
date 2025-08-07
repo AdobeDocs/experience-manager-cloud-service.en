@@ -781,6 +781,7 @@ user-guide-title: AEM as a Cloud Service
        + [Configure Submit Action for an Adaptive Form based on Core Components](/help/forms/configure-submit-actions-core-components.md)
        + [Configure Submit Action for Edge Delivery Services Forms](/help/forms/configure-submit-action-eds-forms.md)
        + [Configure the Send Email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md)
+       + [Integrate Adaptive Form with Form Data Model](/help/forms/integrate-adaptive-form-with-fdm.md)
        + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
        + Connect an Adaptive Form to Microsoft&reg; SharePoint{#connect-to-sharepoint}
           + [Connect an Adaptive Form to Microsoft&reg; SharePoint](/help/forms/configure-submit-action-sharepoint.md)
