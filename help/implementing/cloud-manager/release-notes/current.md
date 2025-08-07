@@ -142,26 +142,13 @@ Config Pipelines are now supported for sites built with Edge Delivery Services, 
 
 * Edge Delivery Services pipelines now display **Configuration** in the **Deployed Code** column, enabling instant identification of configuration-only deployments. <!-- CMGR‑69681 -->
 * Cloud Manager shows **Add Edge Delivery Pipeline** once a program contains at least one Edge Delivery Services site and one mapped domain. Otherwise, the option appears disabled, and a tooltip explains missing requirements. <!-- CMGR‑69680 -->
-
-
-
-
-
-
-
-<!-- ADD THE FOLLOWING BULLET POINTS ONLY IF THEY ARE FINISHED IN TIME FOR THE AUGUST RELEASE 
-
-* The Pipelines table adds a **Delivery Type** column that labels each pipeline as **Edge Delivery** or **Publish Delivery**, making it easier to find the pipeline you need. (CMGR-????)
-
-* Edge Delivery tab shows a new **Edge Delivery pipelines** widget that lists each pipeline's Name, Status, Repository, and Branch. <--(CMGR-69052)
+* The **Edge Delivery** tab shows a new **Edge Delivery pipelines** widget that lists each pipeline's Name, Status, Repository, and Branch. <!-- (CMGR-69052) -->
 
     ![Edge Delivery pipeline widget showing pipeline name, status, repository, and branch](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-widget.png)
 
-* The **Filters** panel adds a **Delivery Type** section; includes **Edge delivery** and **Publish delivery** checkboxes. <-- (CMGR-69682)
+* The **Filters** panel adds a **Delivery Type** section; includes **Edge delivery** and **Publish delivery** checkboxes. <!-- (CMGR-69682) -->
 
     ![Filter panel showing new Delivery type of Edge delivery and Publish delivery](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
--->
-
 
 ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adding an Edge Delivery pipeline from the **Program Overview** page, **Pipelines** card.*
 
