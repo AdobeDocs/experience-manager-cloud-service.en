@@ -111,9 +111,9 @@ The see [Forms Submission Service](/help/forms/forms-submission-service.md). all
 
 Key benefits include:
 
-* **Direct integration:*- Configure your forms to submit data directly to a specified spreadsheet.
-* **Custom data mapping:*- Map form fields to corresponding spreadsheet columns for organized storage.
-* **Access control:*- Leverage existing spreadsheet permissions to manage who can access or modify submitted data.
+* **Direct integration:** Configure your forms to submit data directly to a specified spreadsheet.
+* **Custom data mapping:** Map form fields to corresponding spreadsheet columns for organized storage.
+* **Access control:** Leverage existing spreadsheet permissions to manage who can access or modify submitted data.
 
 **Generate and sync AFP renditions from Adaptive Forms**
 
@@ -140,7 +140,7 @@ The AEM Forms Early Access Program offers a unique opportunity for you to get ex
 These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
 
-**Forms Optimization opportunities**
+<!-- **Forms Optimization opportunities**
 
 Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
 
@@ -153,13 +153,13 @@ Key optimization opportunities include:
 * Addressing accessibility compliance issues
 * Streamlining navigation to enhance user experience
 
-With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive.
+With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. --> 
 
 **Rule Editor for Interactive Communications Editor*- 
 
 Build dynamic, data-driven actions directly within your documents using an intuitive, point-and-click interface. Easily define conditional logic, automate workflows, and personalize content without writing code.
 
-**AEM Forms CLI Tool for Rapid Custom Component Development**
+**AEM Forms Scaffolder CLI for Custom Components**
 
 >[!VIDEO](https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
