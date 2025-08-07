@@ -32,13 +32,24 @@ The next planned release is Thursday, September 4, 2025.
 
 * **BYOG is now available for Edge Delivery Services**
 
-    Cloud Manager now lets you configure external Git repositories (enabling more flexible code management workflows) <!--(CMGR‑69010, CMGR‑70988) --> and provides the ability to pull code from a chosen branch directly from the Cloud Manager UI, reducing manual steps in repository management. See [Configure Edge Delivery site to use an external Git repository](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md) <!-- (CMGR‑68085)(CMGR-69015) --> <!-- KT: https://wiki.corp.adobe.com/display/DMSArchitecture/%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+with+EDS -->
+    Cloud Manager now lets you configure external Git repositories, enabling flexible code-management workflows. <!--(CMGR‑69010, CMGR‑70988) --> It also lets you pull code from a chosen branch directly in the Cloud Manager UI, reducing manual repository tasks. See [Configure Edge Delivery site to use an external Git repository](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md) <!-- (CMGR‑68085)(CMGR-69015) --> <!-- KT: https://wiki.corp.adobe.com/display/DMSArchitecture/%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+with+EDS -->
 
 * **Automated provisioning for the new Forms Add‑on**
 
-    You can now add **Marketing Forms**, at a program level, directly to your AEM Sites or Edge Delivery Services from Cloud Manager, making it faster to launch this new types of forms without additional setup. <!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
+    Sites-only customers often need a lightweight, low-cost way to build marketing forms. The new AEM Forms Sites Add-On meets that need by adding limited Forms features to a Sites program. It also creates a clear upgrade path to the full AEM Forms offering, if desired. <!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
 
+    The add-on:
+    * Attaches to a Sites program and deploys alongside it&mdash;no separate Forms program or entitlement.
+    * Targets simple marketing-form use cases.
+    * Appears in the **Solutions & Add-ons** list during Production Program creation or Production Program edit, only when the IMS org holds available Forms add-on licenses.
 
+        ![Forms add-ons](/help/implementing/cloud-manager/release-notes/assets/forms-add-on.png) *The Forms add-on can be added in the Program only if Forms add-on licenses are available in your IMS org.*
+
+        ![Forms add-on in Solutions & Add-Ons when creating a production program](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png) *During Program Creation, you can select the Forms add-on within the Sites solution.* 
+
+        ![Forms add-on when editing a production program](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *In **Edit Program**, select the Forms add-on for the Sites program, then run the pipeline to activate it in the environments.*
+
+        For more information, see [Create a production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
 ## Beta programs {#private-beta-program}
 
@@ -76,7 +87,7 @@ Cloud Manager now supports the addition of a new environment type called **Speci
 
 **Recent enhancements**
 
-* You can now configure specialized testing environments on a non-production pipeline through a simpler, more intuitive workflow. The streamlined setup speeds completion and reduces configuration errors.
+* You can now configure a Specialized Testing Environment on a non-production pipeline through a simpler, more intuitive workflow. The streamlined setup speeds completion and reduces configuration errors.
 * **Copy Content** is now supported in Specialized Testing Environments. You can now run **Copy Content** safely in isolated testing environments that mirror Production. <!-- (CMGR‑68900) -->
 
 See [Add a Specialized Testing Environment](/help/implementing/cloud-manager/specialized-test-environment.md).
@@ -110,7 +121,7 @@ If you are interested in testing this new feature and sharing your feedback, sen
 |---|---|
 | *How can a project switch back to the Adobe-managed Git repository if needed?* | Switching back is straightforward. [Update the pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) to point to the Adobe repository and remove the external repository if it is no longer required. |
 | *Is it possible to configure different repositories for different environments (for example, non-production versus production) to allow testing in non-production first?* | Yes, different repositories can be configured for separate environments. For example, the dev or code quality pipeline can point to an external repository while the production pipeline remains connected to the Adobe repository. Make sure that the sync job between the two repositories remains active during this configuration. |
-| *Do existing settings like IP allow lists continue to work?* | Yes, existing IP allow lists continue to work as usual. However, if the external Git repository is protected by a firewall, the necessary [Adobe IP addresses must be added to the allow list](/help/implementing/cloud-manager/ip-allow-lists/introduction.md). |
+| *Do existing settings like `IP Allow` lists continue to work?* | Yes, existing `IP Allow` lists continue to work as usual. However, if the external Git repository is protected by a firewall, the necessary [Adobe IP addresses must be added to the allow list](/help/implementing/cloud-manager/ip-allow-lists/introduction.md). |
 | *Do all GitLab repository URLs work? The repository URL in use follows the format `https://gitlab_dedicated_url.com/path/repo-name.git`, which differs from the example in the documentation.* | Yes, any GitLab repository that supports API V3 or V4 is supported, including self-hosted GitLab URLs like the one described in [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`). |
 
 
