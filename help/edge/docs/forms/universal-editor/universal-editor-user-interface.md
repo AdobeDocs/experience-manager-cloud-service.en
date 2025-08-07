@@ -174,14 +174,14 @@ The **Universal Editor Toolbar** contains your primary form editing and publishi
 **Purpose:** View your form in a new tab without the editor interface  
 **When to use:** For full-screen testing, sharing with stakeholders for review
     
-    ![Open Page](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
+![Open Page](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
 
 #### **Publish**
     
 **Purpose:** Make your form live and accessible to users  
 **When to use:** After thorough testing in Preview and Responsive modes
     
-    ![Publish](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
+![Publish](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
 
 **Validation Checklist Before Publishing:**
 
@@ -210,12 +210,22 @@ The **Universal Editor Toolbar** contains your primary form editing and publishi
 
 **These tools are used for specific scenarios or advanced setups:**
 
-#### **Edit Form Properties**
+#### **AEM Form Properties**
 
 **Purpose:** Configure form-level settings like Form Data Model (FDM) and publication dates  
 **When to use:** Setting up data integrations, scheduling publication
 
 ![Form Properties](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
+
+![Form Properties wizard](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
+
+The Form Properties panel includes the following sections:
+
+- **Submission**: Define what happens after a user submits the form. Choose from multiple submission actions such as sending data via email, submitting to SharePoint, using a Form Data Model, or integrating with services like Adobe Experience Platform or Microsoft Power Automate. For a full list of supported submit actions, refer to the [Submit Action](/help/edge/docs/forms/universal-editor/submit-action.md) article.
+
+- **Prefill**: Configure how form fields are automatically populated before the user interacts with the form. You can connect to data sources such as a Form Data Model (FDM) or use URL parameters to prepopulate fields, enhancing the user experience and reducing manual input. To learn more, see the [Prefill Service](/help/edge/docs/forms/universal-editor/prefill-form.md) article.
+
+- **Thank You**: Customize what users see after submitting the form. You can display a confirmation message or redirect them to another webpage, ensuring a smooth and professional completion experience. To learn how to configure a thank-you message for forms, see the [Configure Thank You Message](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md) article.
 
 #### **Rule Editor** (Early Access)
 
@@ -515,4 +525,3 @@ Now that you understand the Universal Editor interface:
 4. **Master rule editor** - Add dynamic behaviors with the [Rule Editor Guide](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
 
 **Remember:** The Universal Editor is designed to make form building intuitive. Start with the essentials and gradually explore advanced features as your needs grow.
-

@@ -24,6 +24,8 @@ Some of the advantages of seamless integration of AEM Forms and Microsoft&reg; O
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
 
+<span> This video is applicable only for Core Components. For UE/Foundation Components, please refer to the article.</span>
+
 Configuring OneDrive for AEM Forms submission, perform the following steps:
 
 1. [Create a OneDrive Configuration](#create-a-onedrive-configuration-create-onedrive-configuration): It connects AEM Forms to your Microsoft&reg; OneDrive Storage.

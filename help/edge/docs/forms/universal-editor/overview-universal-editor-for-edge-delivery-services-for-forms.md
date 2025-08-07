@@ -152,9 +152,6 @@ The Universal Editor provides the following form components out of the box:
   </tbody>
 </table>
 
-
-## Onboarding
-
 ## Frequently asked questions (FAQ)
 
 **Q. Who can use the Universal Editor?**
