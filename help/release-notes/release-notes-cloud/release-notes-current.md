@@ -89,6 +89,10 @@ For the complete list of features, see [Desktop App Release Notes](https://exper
 
 [!DNL Dynamic Media with OpenAPI capabilities] now allows to preview assets directly within [!DNL AEM Sites] author pages before making them publicly available. Share preview pages with stakeholders to gather feedback on visual quality and contextual fit. During the review cycle, you can create and manage multiple asset versions before finalizing them for publication.
 
+**Enhanced Smart Imaging for OpenAPI image requests**
+
+All OpenAPI image requests now fully leverage Smart Imaging with auto-promotion and fallback logic. This enhancement optimizes images based on device and network conditions, delivering faster page loads and reduced bandwidth usage—while maintaining visual quality.
+
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
