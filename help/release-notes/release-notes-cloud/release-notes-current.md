@@ -38,6 +38,12 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 -->
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### New features in Experience Manager Sites {#enhancements-sites}
+
+Content to be added.
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 **Add shapes to Dynamic Media templates**
