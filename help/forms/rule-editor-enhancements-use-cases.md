@@ -7,6 +7,8 @@ level: Beginner, Intermediate
 ---
 # Rule Editor Enhancements and Use Cases
 
+<span class="preview"> These are pre-release features available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>.
+
 This article introduces the latest enhancements to the rule editor in Adaptive Forms. These updates are designed to help you define form behavior more easily, without writing custom code, and to create more dynamic, responsive, and personalized form experiences.
 
 The table below lists recent enhancements to the rule editor in Adaptive Forms, along with a brief description and the key advantages of each feature.:
