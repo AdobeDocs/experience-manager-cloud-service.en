@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="phase1Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bbdefb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="phase2Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f3e5f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e1bee7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="phase3Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f5e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c8e6c9;stop-opacity:1" />
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="3" dy="3" stdDeviation="4" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="white"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="20" font-weight="bold">
+    Form Creation and Publishing Workflow
+  </text>
+  <text x="400" y="50" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="14">
+    Three sequential phases for successful form deployment
+  </text>
+  
+  <!-- Phase 1: Template Selection and Form Creation -->
+  <g id="phase1">
+    <rect x="50" y="80" width="200" height="250" rx="15" fill="url(#phase1Gradient)" stroke="#1976d2" stroke-width="2" filter="url(#cardShadow)"/>
+    
+    <!-- Phase Number -->
+    <circle cx="90" cy="110" r="20" fill="#1976d2" stroke="white" stroke-width="2"/>
+    <text x="90" y="116" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">1</text>
+    
+    <!-- Phase Title -->
+    <text x="150" y="110" text-anchor="middle" fill="#1976d2" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Template Selection</text>
+    <text x="150" y="125" text-anchor="middle" fill="#1976d2" font-family="Arial, sans-serif" font-size="14" font-weight="bold">and Form Creation</text>
+    
+    <!-- Phase Content -->
+    <text x="150" y="150" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Key Activities:</text>
+    <text x="150" y="170" text-anchor="middle" fill="#555" font-family="Arial, sans-serif" font-size="11">• Choose template type</text>
+    <text x="150" y="185" text-anchor="middle" fill="#555" font-family="Arial, sans-serif" font-size="11">• Access form creation</text>
+    <text x="150" y="200" text-anchor="middle" fill="#555" font-family="Arial, sans-serif" font-size="11">• Configure options</text>
+    <text x="150" y="215" text-anchor="middle" fill="#555" font-family="Arial, sans-serif" font-size="11">• Complete setup</text>
+    <text x="150" y="230" text-anchor="middle" fill="#555" font-family="Arial, sans-serif" font-size="11">• Validate creation</text>
+    
+    <!-- Outcome -->
+    <rect x="60" y="250" width="180" height="60" rx="8" fill="#e3f2fd" stroke="#1976d2" stroke-width="1"/>
+    <text x="150" y="270" text-anchor="middle" fill="#1976d2" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Outcome:</text>
+    <text x="150" y="285" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="10">Form ready for authoring</text>
+    <text x="150" y="300" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="10">in appropriate editor</text>
+  </g>
+  
+  <!-- Arrow 1 to 2 -->
+  <path d="M 260 205 L 290 205" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="275" y="200" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Next</text>
+  
+  <!-- Phase 2: Form Authoring and Design -->
+  <g id="phase2">
+    <rect x="300" y="80" width="200" height="250" rx="15" fill="url(#phase2Gradient)" stroke="#7b1fa2" stroke-width="2" filter="url(#cardShadow)"/>
+    
+    <!-- Phase Number -->
+    <circle cx="340" cy="110" r="20" fill="#7b1fa2" stroke="white" stroke-width="2"/>
+    <text x="340" y="116" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">2</text>
+    
+    <!-- Phase Title -->
+    <text x="400" y="110" text-anchor="middle" fill="#7b1fa2" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Form Authoring</text>
+    <text x="400" y="125" text-anchor="middle" fill="#7b1fa2" font-family="Arial, sans-serif" font-size="14" font-weight="bold">and Design</text>
+    
+    <!-- Phase Content -->
+    <text x="400" y="150" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Key Activities:</text>
+    <text x="400" y="170" text-anchor="middle" fill="#555" font-family="Arial, sans-serif" font-size="11">• Add form components</text>
+    <text x="400" y="185" text-anchor="middle" fill="#555" font-family="Arial, sans-serif" font-size="11">• Configure properties</text>
+    <text x="400" y="200" text-anchor="middle" fill="#555" font-family="Arial, sans-serif" font-size="11">• Set validation rules</text>
+    <text x="400" y="215" text-anchor="middle" fill="#555" font-family="Arial, sans-serif" font-size="11">• Apply styling</text>
+    <text x="400" y="230" text-anchor="middle" fill="#555" font-family="Arial, sans-serif" font-size="11">• Test functionality</text>
+    
+    <!-- Outcome -->
+    <rect x="310" y="250" width="180" height="60" rx="8" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1"/>
+    <text x="400" y="270" text-anchor="middle" fill="#7b1fa2" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Outcome:</text>
+    <text x="400" y="285" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="10">Complete form design</text>
+    <text x="400" y="300" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="10">ready for publishing</text>
+  </g>
+  
+  <!-- Arrow 2 to 3 -->
+  <path d="M 510 205 L 540 205" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="525" y="200" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Next</text>
+  
+  <!-- Phase 3: Configuration and Publishing -->
+  <g id="phase3">
+    <rect x="550" y="80" width="200" height="250" rx="15" fill="url(#phase3Gradient)" stroke="#388e3c" stroke-width="2" filter="url(#cardShadow)"/>
+    
+    <!-- Phase Number -->
+    <circle cx="590" cy="110" r="20" fill="#388e3c" stroke="white" stroke-width="2"/>
+    <text x="590" y="116" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">3</text>
+    
+    <!-- Phase Title -->
+    <text x="650" y="110" text-anchor="middle" fill="#388e3c" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Configuration</text>
+    <text x="650" y="125" text-anchor="middle" fill="#388e3c" font-family="Arial, sans-serif" font-size="14" font-weight="bold">and Publishing</text>
+    
+    <!-- Phase Content -->
+    <text x="650" y="150" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Key Activities:</text>
+    <text x="650" y="170" text-anchor="middle" fill="#555" font-family="Arial, sans-serif" font-size="11">• Configure EDS</text>
+    <text x="650" y="185" text-anchor="middle" fill="#555" font-family="Arial, sans-serif" font-size="11">• Set up publishing</text>
+    <text x="650" y="200" text-anchor="middle" fill="#555" font-family="Arial, sans-serif" font-size="11">• Publish form</text>
+    <text x="650" y="215" text-anchor="middle" fill="#555" font-family="Arial, sans-serif" font-size="11">• Verify URLs</text>
+    <text x="650" y="230" text-anchor="middle" fill="#555" font-family="Arial, sans-serif" font-size="11">• Test deployment</text>
+    
+    <!-- Outcome -->
+    <rect x="560" y="250" width="180" height="60" rx="8" fill="#e8f5e8" stroke="#388e3c" stroke-width="1"/>
+    <text x="650" y="270" text-anchor="middle" fill="#388e3c" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Outcome:</text>
+    <text x="650" y="285" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="10">Live form accessible</text>
+    <text x="650" y="300" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="10">via Edge Delivery Services</text>
+  </g>
+  
+  <!-- Validation Steps -->
+  <g id="validation">
+    <rect x="200" y="350" width="400" height="40" rx="8" fill="#fff3cd" stroke="#856404" stroke-width="1"/>
+    <text x="400" y="365" text-anchor="middle" fill="#856404" font-family="Arial, sans-serif" font-size="12" font-weight="bold">✓ Each phase includes validation steps to confirm correct setup</text>
+    <text x="400" y="380" text-anchor="middle" fill="#856404" font-family="Arial, sans-serif" font-size="11">Complete each phase fully before proceeding to the next</text>
+  </g>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#666"/>
+    </marker>
+  </defs>
+</svg>
