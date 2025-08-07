@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="coreGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f7931e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="edsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066cc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004499;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="white"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+    Choose Your Template Type
+  </text>
+  
+  <!-- Start -->
+  <g id="start">
+    <circle cx="400" cy="80" r="30" fill="#28a745" stroke="#155724" stroke-width="2" filter="url(#shadow)"/>
+    <text x="400" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">START</text>
+  </g>
+  
+  <!-- First Decision -->
+  <g id="decision1">
+    <polygon points="400,140 480,180 400,220 320,180" fill="#ffc107" stroke="#856404" stroke-width="2" filter="url(#shadow)"/>
+    <text x="400" y="175" text-anchor="middle" fill="#856404" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Do you need complex</text>
+    <text x="400" y="190" text-anchor="middle" fill="#856404" font-family="Arial, sans-serif" font-size="11" font-weight="bold">enterprise workflows?</text>
+  </g>
+  
+  <!-- Arrow from start to decision1 -->
+  <path d="M 400 110 L 400 130" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- YES Branch -->
+  <path d="M 320 180 L 250 180 L 250 280" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="280" y="175" fill="#666" font-family="Arial, sans-serif" font-size="11" font-weight="bold">YES</text>
+  
+  <!-- Second Decision (Performance Priority) -->
+  <g id="decision2">
+    <polygon points="550,180 630,220 550,260 470,220" fill="#ffc107" stroke="#856404" stroke-width="2" filter="url(#shadow)"/>
+    <text x="550" y="215" text-anchor="middle" fill="#856404" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Is performance</text>
+    <text x="550" y="230" text-anchor="middle" fill="#856404" font-family="Arial, sans-serif" font-size="11" font-weight="bold">your priority?</text>
+  </g>
+  
+  <!-- NO Branch from decision1 -->
+  <path d="M 480 180 L 530 180 L 530 200 L 470 220" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="505" y="175" fill="#666" font-family="Arial, sans-serif" font-size="11" font-weight="bold">NO</text>
+  
+  <!-- Core Components Result -->
+  <g id="coreResult">
+    <rect x="150" y="300" width="200" height="140" rx="10" fill="url(#coreGradient)" stroke="#ff6b35" stroke-width="2" filter="url(#shadow)"/>
+    <text x="250" y="325" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Core Components</text>
+    <text x="250" y="345" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Template</text>
+    
+    <text x="250" y="370" text-anchor="middle" fill="#ffe6e6" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Best for:</text>
+    <text x="250" y="385" text-anchor="middle" fill="#ffe6e6" font-family="Arial, sans-serif" font-size="10">• Enterprise workflows</text>
+    <text x="250" y="400" text-anchor="middle" fill="#ffe6e6" font-family="Arial, sans-serif" font-size="10">• Complex integrations</text>
+    <text x="250" y="415" text-anchor="middle" fill="#ffe6e6" font-family="Arial, sans-serif" font-size="10">• AEM ecosystem</text>
+    <text x="250" y="430" text-anchor="middle" fill="#ffe6e6" font-family="Arial, sans-serif" font-size="10">• Advanced capabilities</text>
+  </g>
+  
+  <!-- EDS Result -->
+  <g id="edsResult">
+    <rect x="450" y="300" width="200" height="140" rx="10" fill="url(#edsGradient)" stroke="#0066cc" stroke-width="2" filter="url(#shadow)"/>
+    <text x="550" y="325" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Edge Delivery</text>
+    <text x="550" y="345" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Services Template</text>
+    
+    <text x="550" y="370" text-anchor="middle" fill="#e6f3ff" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Best for:</text>
+    <text x="550" y="385" text-anchor="middle" fill="#e6f3ff" font-family="Arial, sans-serif" font-size="10">• High performance</text>
+    <text x="550" y="400" text-anchor="middle" fill="#e6f3ff" font-family="Arial, sans-serif" font-size="10">• Modern development</text>
+    <text x="550" y="415" text-anchor="middle" fill="#e6f3ff" font-family="Arial, sans-serif" font-size="10">• Git-based workflow</text>
+    <text x="550" y="430" text-anchor="middle" fill="#e6f3ff" font-family="Arial, sans-serif" font-size="10">• Simplified forms</text>
+  </g>
+  
+  <!-- Arrow to EDS -->
+  <path d="M 630 220 L 670 220 L 670 320 L 660 320" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="675" y="215" fill="#666" font-family="Arial, sans-serif" font-size="11" font-weight="bold">YES</text>
+  
+  <!-- Arrow to Core (NO from performance) -->
+  <path d="M 470 220 L 400 220 L 400 280 L 350 290" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="430" y="215" fill="#666" font-family="Arial, sans-serif" font-size="11" font-weight="bold">NO</text>
+  
+  <!-- Editor Information -->
+  <g id="editors">
+    <rect x="50" y="480" width="300" height="80" rx="5" fill="#fff3cd" stroke="#856404" stroke-width="1"/>
+    <text x="200" y="500" text-anchor="middle" fill="#856404" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Core Components → Adaptive Forms Editor</text>
+    <text x="200" y="520" text-anchor="middle" fill="#856404" font-family="Arial, sans-serif" font-size="11">Full-featured editing with advanced capabilities</text>
+    <text x="200" y="535" text-anchor="middle" fill="#856404" font-family="Arial, sans-serif" font-size="11">Dual publishing: AEM + Edge Delivery Services</text>
+    <text x="200" y="550" text-anchor="middle" fill="#856404" font-family="Arial, sans-serif" font-size="11">Complex validation and business logic</text>
+    
+    <rect x="450" y="480" width="300" height="80" rx="5" fill="#d1ecf1" stroke="#0c5460" stroke-width="1"/>
+    <text x="600" y="500" text-anchor="middle" fill="#0c5460" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Edge Delivery Services → Universal Editor</text>
+    <text x="600" y="520" text-anchor="middle" fill="#0c5460" font-family="Arial, sans-serif" font-size="11">Modern, streamlined WYSIWYG editing</text>
+    <text x="600" y="535" text-anchor="middle" fill="#0c5460" font-family="Arial, sans-serif" font-size="11">Optimized for Edge Delivery Services only</text>
+    <text x="600" y="550" text-anchor="middle" fill="#0c5460" font-family="Arial, sans-serif" font-size="11">Git-based development workflow</text>
+  </g>
+  
+  <!-- Arrows to editor info -->
+  <path d="M 250 450 L 200 470" stroke="#666" stroke-width="1" stroke-dasharray="3,3"/>
+  <path d="M 550 450 L 600 470" stroke="#666" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+</svg>
