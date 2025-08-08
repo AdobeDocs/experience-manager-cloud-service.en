@@ -54,7 +54,7 @@ Content Hub now lets you [control access to collections during creation, ensurin
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-###  Updated Deprecation Process {#updated-deprecation-process}
+### Updated Deprecation Process {#updated-deprecation-process}
 
 Adobe regularly reviews features, libraries, APIs, and configurations to ensure they meet standards for performance, security, and value. When capabilities no longer meet these standards, they are marked for deprecation and usage must stop by a specified removal date. Leading up to this date, Adobe will remind customers with email notifications, and actions that need to be taken in Cloud Manager before proceeding with or deploying new builds. Failure to take the necessary action may result in an inability to upgrade to new versions of AEM leading to potential impacts around security, performance, reliability, and availability.
 
@@ -64,10 +64,10 @@ See the [deprecation article](/help/release-notes/deprecated-removed-features.md
 
 Expand the list below to view the deprecated APIs and OSGi configurations that must no longer be used. For full details—including removal timelines—refer to the deprecation article.
 
-<details>
-  <summary>Expand to see the deprecations</summary>
++++Expand to see the deprecations
 
 Java APIs:
+
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
 * `org.eclipse.jetty`
@@ -90,7 +90,7 @@ OSGi properties:
 * `org.apache.sling.commons.log.LogManager` (all properties)
 * `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
  
-</details>
++++
 
 ### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
@@ -119,7 +119,7 @@ However, to optimize repository performance, starting in **early July 2025**, pu
 
 #### Content Versions {#mt-content}
 
-* **New environments** (created after an upcoming date (to be communicated later)
+* **New environments** (created after an upcoming date to be communicated later)
   * Versions older than **30 days** will periodically be deleted.
   * The most recent five versions within the last 30 days are retained, along with the most recent version and the current version, regardless of their age.
 
