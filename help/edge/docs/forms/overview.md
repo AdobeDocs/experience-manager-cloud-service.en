@@ -146,10 +146,10 @@ You are now ready to create your first high-performance form with AEM Edge Deliv
         border-radius: 5px;
         padding: 5px;
         box-sizing: border-box;
-        transition: background-color 0.3s ease; /- Adding transition effect */
+        transition: background-color 0.3s ease; /* Adding transition effect */
     }
     .card-container:hover {
-        background-color: #f0f0f0; /- Changing background color on hover */
+        background-color: #f0f0f0; /* Changing background color on hover */
     }
 </style>
 
