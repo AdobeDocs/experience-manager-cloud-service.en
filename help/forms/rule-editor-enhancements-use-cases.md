@@ -53,7 +53,7 @@ In the above rule, the **Next** button checks whether the fields in the **Person
 
 >[!NOTE]
 >
-> You can use the **validate()** method on forms, fragments, or individual fields. When a fragment is included in a form, both the form and the fragment appear as options in the validation context. In this case, the fragment refers to the fields within it, while the form refers to the parent form where the fragment is embedded.
+>You can use the **validate()** method on forms, fragments, or individual fields. When a fragment is included in a form, both the form and the fragment appear as options in the validation context. In this case, the fragment refers to the fields within it, while the form refers to the parent form where the fragment is embedded.
 
 ## DownloadDor as OOTB fuction in Rule Editor
 
@@ -61,7 +61,7 @@ Using the  **DownloadDor()** out-of-the-box (OOTB) function in the Rule Editor, 
 
 >[!NOTE]
 >
-> If the form is not configured for Document of Record, an error message is displayed when the rule using the **downloadDoR()** function is applied to the button.
+>If the form is not configured for Document of Record, an error message is displayed when the rule using the **downloadDoR()** function is applied to the button.
 
 **Scenario**: A government agency provides a digital application form for issuing certificates. After submitting the form, applicants often require a copy of the completed form for their records or to share with another department. To improve the user experience, the agency wants to give applicants the option to download a Document of Record (DoR) immediately after submission or at any stage before final submission.
 
