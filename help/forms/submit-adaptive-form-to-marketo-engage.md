@@ -30,6 +30,9 @@ Prerequisite to configure the submit action to Marketo Engage:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442866/submit-action-marketo-engage-marketo-aem-aem-forms-engage)
 
+<span> This video is applicable only for Core Components. For UE/Foundation Components, please refer to the article.</span>
+ 
+
 >[!BEGINTABS]
 
 >[!TAB Foundation Component]

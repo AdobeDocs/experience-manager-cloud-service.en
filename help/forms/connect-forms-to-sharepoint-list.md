@@ -11,6 +11,8 @@ exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
+<span> This video is applicable only for Core Components. For UE/Foundation Components, please refer to the article.</span>
+
 To use the [!UICONTROL Submit to SharePoint List] Submit Action in an Adaptive Form:
 
 1. [Create a SharePoint List Configuration](#1-create-a-sharepoint-list-configuration): It connects AEM Forms to your Microsoft&reg; Sharepoint List Storage.

@@ -36,7 +36,7 @@
 * [Send email](/help/forms/configure-submit-action-send-email.md)
 * [Submit to SharePoint Document Library](/help/forms/connect-forms-to-sharepoint-document-library.md)
 * [Submit to SharePoint List](/help/forms/connect-forms-to-sharepoint-list.md)
-* [Submit using Form Data Model](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
+* [Submit using Form Data Model](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [Submit to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Submit to REST endpoint](/help/forms/configure-submit-action-restpoint.md)
 * [Submit to OneDrive](/help/forms/configure-submit-action-onedrive.md)
@@ -104,10 +104,9 @@ The following table demonstrates the difference between the features available i
    </td>
    </tr>
    <tr>
-    <td>ES2022 Support </td>
-    <td>ES2022 is not supported yet; support is limited to ES5 JavaScript features. </td>
-    <td>Support for modern JavaScript features, for example, let and arrow functions, up to ES2022, is available within custom functions. 
-   </td>
+    <td>ECMAScript Version Support</td>
+    <td>Supports only ES5 JavaScript features.</td>
+    <td>Supports modern JavaScript features (e.g., <code>let</code>, arrow functions) within custom functions.</td>
    </tr>
    </tr>
    <tr>
