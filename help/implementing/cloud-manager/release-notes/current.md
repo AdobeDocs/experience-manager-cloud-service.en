@@ -31,7 +31,7 @@ The next planned release is Thursday, September 4, 2025.
 
 * **Automated provisioning for the new Forms Add‑on**
 
-    Sites-only customers often need a lightweight, low-cost way to build marketing forms. The new AEM Forms Sites Add-On meets that need by adding limited Forms features to a Sites program. It also creates a clear upgrade path to the full AEM Forms offering, if desired. <!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
+    Sites-only customers often need a lightweight, low-cost way to build marketing forms. The new AEM Forms Sites Add-On meets that need by adding limited Forms features to a Sites program. It also creates a clear upgrade path to the full AEM Forms offering. <!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
 
     The add-on:
     * Attaches to a Sites program and deploys alongside it&mdash;no separate Forms program or entitlement.
@@ -71,7 +71,6 @@ If you are interested in testing this new feature and sharing your feedback, sen
 See [Restore the Previous Code Deployed in AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
 
 See also [Content Restore in AEM as a Cloud Service](/help/operations/restore.md).
-
 
 ### Specialized Testing Environment {#specialized-test-environment}
 
