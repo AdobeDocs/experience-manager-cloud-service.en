@@ -62,7 +62,6 @@ AEM Assets now enables you to [configure the display of asset titles in Card vie
 
 You can now also choose to disable AI-generated metadata at the folder level. 
 
-
 ### New Features in Content Hub {#new-features-content-hub}
 
 **Enhanced branding flexibility in Content Hub**
@@ -174,6 +173,10 @@ The API Integration Tool enables form authors to create dynamic, intelligent for
 
   
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### Principal View for Permissions Management {#principal-view}
+
+AEM introduces Permissions Management for Users and Groups. The main functionality remains the same as the classic UI, but is more user-friendly and efficient. See the [dedicated article](/help/security/touch-ui-principal-view.md) for further information.
 
 ### Updated Deprecation Process {#updated-deprecation-process}
 
