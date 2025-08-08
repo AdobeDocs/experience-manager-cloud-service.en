@@ -1,6 +1,6 @@
 ---
-Title: How to configure a SharePoint Site with limited access using authorization scope?
-Description: Learn how to configure SharePoint Site with limited access using the authorization scope.
+title: How to configure a SharePoint Site with limited access using authorization scope?
+description: Learn how to configure SharePoint Site with limited access using the authorization scope.
 keywords: How to configure SharePoint Site with limited access?, Configure SharePoint with limited access, Using authorization scope to limit access for SharePoint Site.
 feature: Adaptive Forms, Core Components
 role: User, Developer
