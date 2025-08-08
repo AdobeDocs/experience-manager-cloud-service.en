@@ -134,8 +134,8 @@ The Universal Editor provides two prefill service options:
 
 6. Click **Done** to save the argument and **Save** to save the FDM
 
-        >[!NOTE]
-        >
+   >[!NOTE]
+   >
    > Learn more about configuring FDM services in [Work with Form Data Model (FDM)](/help/forms/work-with-form-data-model.md).
 
 +++
@@ -145,20 +145,21 @@ The Universal Editor provides two prefill service options:
 ### Step 3: Create an Adaptive Form
 
 1. Navigate to **Adobe Experience Manager** > **Forms** > **Forms & Documents**
-2. Select **Create** > **Adaptive Forms**
-3. In the **Source** tab, select an Edge Delivery Services template:
+1. Select **Create** > **Adaptive Forms**
+1. In the **Source** tab, select an Edge Delivery Services template:
 
-        ![Edge Delivery Services template](/help/edge/assets/create-eds-forms.png)
+   ![Edge Delivery Services template](/help/edge/assets/create-eds-forms.png)
 
-4. Click **Create** to open the **Create Form** wizard
-5. Specify the form details:
+1. Click **Create** to open the **Create Form** wizard
+1. Specify the form details:
+
    - **Name**: Enter a descriptive name for your form
    - **Title**: Provide a user-friendly title
    - **GitHub URL**: Enter your repository URL (e.g., `https://github.com/wkndforms/edsforms`)
 
-6. Click **Create**
+1. Click **Create**
 
-        ![Create schema based form](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
+   ![Create schema based form](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
 
 The form opens in the Universal Editor for authoring.
 
@@ -166,13 +167,13 @@ The form opens in the Universal Editor for authoring.
   
 1. Select your form and click **Properties**
 
-        ![Select Form Properties](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
+   ![Select Form Properties](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
         
 2. Open the **Form Model** tab
 3. From the **Select From** dropdown, choose **Form Data Model (FDM)**
 4. Select your created Form Data Model (e.g., PetFDM) from the dropdown
  
-        ![Select Form Model tab](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
+   ![Select Form Model tab](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
    
 5. Click **Save & Close**
 6. Open the form for editing in Universal Editor
@@ -187,11 +188,12 @@ The form elements from your FDM appear in the **Datasource** tab of the **Conten
    ![Screenshot of Universal Editor showing schema-based form](/help/edge/docs/forms/universal-editor/assets/ue-form.png)
 
 3. Add data binding to form fields:
+
    - Select a form field
    - In the **Properties** panel, find the **Bind Reference** property
    - Select the appropriate data binding reference
 
-        ![Data Binding](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding1.png)
+     ![Data Binding](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding1.png)
 
 +++
 
@@ -202,12 +204,14 @@ The form elements from your FDM appear in the **Datasource** tab of the **Conten
 Ensure these extensions are enabled in Universal Editor:
 
 1. **AEM Form Properties Extension**
+
    - Open **Extension Manager** in Universal Editor
    - Enable the **AEM Form Properties** extension
 
    ![Form properties icon](/help/edge/docs/forms/universal-editor/assets/form-edit-properties.png)
 
-2. **Data Source Extension**
+1. **Data Source Extension**
+
    - Enable the **Data source** extension if you don't see the **Data Sources** icon
 
    ![Screenshot of Universal Editor Extension Manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
@@ -226,7 +230,7 @@ Ensure these extensions are enabled in Universal Editor:
 3. Click the **Prefill** tab
 4. Select **Form Data Model Prefill Service**
 
-        ![Select Prefill service](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
+   ![Select Prefill service](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
 
 5. Click **Save & Close**
 
@@ -241,13 +245,13 @@ Ensure these extensions are enabled in Universal Editor:
 3. Choose **Preview as HTML**
 4. Test prefilling by appending parameters to the URL:
 
-        https://your-preview-url.com?<bindreferencefield>=<value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **Example:**
 
-        https://your-preview-url.com?petid=12345
+   https://your-preview-url.com?petid=12345
 
-        ![Prefill Form](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
+   ![Prefill Form](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
 
 The form should automatically populate with data based on the provided parameter.
 
@@ -300,11 +304,11 @@ The URLs below are for illustration purposes only and will not work as-is. Repla
 
 **Basic prefill test:**
 
-        https://preview.example.com/form.html?userId=12345
+`https://preview.example.com/form.html?userId=12345`
 
 **Multiple parameter test:**
 
-        https://preview.example.com/form.html?userId=12345&category=premium
+`https://preview.example.com/form.html?userId=12345&category=premium`
 
 
 ## Troubleshooting
@@ -324,21 +328,25 @@ The URLs below are for illustration purposes only and will not work as-is. Repla
 +++Debugging Steps
 
 1. **Verify FDM Configuration:**
+
    - Check if services are configured correctly
    - Test FDM services independently
    - Validate data source connectivity
 
 2. **Check Form Configuration:**
+
    - Confirm form is associated with correct FDM
    - Verify field `bindRef` values
    - Test form without prefill first
 
 3. **Test Data Flow:**
+
    - Use browser developer tools to inspect network requests
    - Check console for JavaScript errors
    - Validate response data format
 
 4. **Common Error Messages:**
+
    - "Prefill service not found": Check service configuration
    - "Data binding failed": Verify `bindRef` accuracy
    - "Invalid data format": Ensure data matches schema
