@@ -1,13 +1,12 @@
 ---
-title: How to prefill Adaptive Form fields?
-description: Use existing data to prefill fields of an Adaptive Form. Users can prefill basic information in a form by logging in with their social profiles.
+title: "How to prefill Adaptive Form fields"
+description: "Use existing data to prefill fields of an Adaptive Form. Users can prefill basic information in a form by logging in with their social profiles."
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: prefill adaptive form, adaptive forms edge delivery services, adaptive form autofill
 ---
-
 # Configuring Prefill Service in Adaptive Forms using Edge Delivery Services
 
 Form prefilling is the process of automatically populating form fields with relevant data from external sources as soon as a user opens the form. By leveraging information from user profiles, databases, saved drafts, or other backend systems, prefilling streamlines the form-filling experience—reducing manual input, minimizing errors, and accelerating completion. This not only enhances user satisfaction but also increases the likelihood of successful form submissions.
@@ -31,9 +30,9 @@ The following diagram illustrates the automatic prefill process that occurs when
 The prefill process involves four key steps:
 
 1. **User Opens Form**: User accesses an Adaptive Form through a URL or navigation
-2. **Identify Data Source**: Prefill service determines the configured data source (Form Data Model or Draft service)
-3. **Retrieve Data**: System fetches relevant user data based on context, parameters, or user identification
-4. **Map and Display**: Data is mapped to form fields using `bindRef` properties and the populated form is displayed to the user
+1. **Identify Data Source**: Prefill service determines the configured data source (Form Data Model or Draft service)
+1. **Retrieve Data**: System fetches relevant user data based on context, parameters, or user identification
+1. **Map and Display**: Data is mapped to form fields using `bindRef` properties and the populated form is displayed to the user
 
 This automated process ensures users see a form pre-populated with their relevant information, significantly improving the user experience and form completion rates.
 
@@ -56,7 +55,6 @@ The data format must match your form model:
 - **JSON schema forms**: JSON compliant with the schema
 - **Form Data Model (FDM) forms**: JSON matching the FDM structure
 - **Schema-less forms**: All fields are unbound and use unbound XML
-
 
 ## Prerequisites
 
@@ -100,39 +98,39 @@ The Universal Editor provides two prefill service options:
 
 ## Configure Prefill Service for a Form
 
-
 +++Phase 1: Setting Up Form Data Model
 
 ### Step 1: Create Form Data Model
 
 1. Log in to your AEM Forms as a Cloud Service instance
-2. Navigate to **Adobe Experience Manager** > **Forms** > **Data Integrations**
-3. Select **Create** > **Form Data Model**
-4. Choose your **Data Source Configuration** and select the configured **Data Source**
+1. Navigate to **Adobe Experience Manager** > **Forms** > **Data Integrations**
+1. Select **Create** > **Form Data Model**
+1. Choose your **Data Source Configuration** and select the configured **Data Source**
 
    ![Created Form Data Model](/help/edge/docs/forms/universal-editor/assets/create-fdm.png)
 
    >[!TIP]
    >
-   > For detailed instructions on creating Form Data Models, see [Create Form Data Model](/help/forms/create-form-data-models.md).
+   >For detailed instructions on creating Form Data Models, see [Create Form Data Model](/help/forms/create-form-data-models.md).
 
 ### Step 2: Configure FDM Services
 
 1. Go to **Adobe Experience Manager** > **Forms** > **Data Integrations**
-2. Open your Form Data Model in edit mode
-3. Select a data model object and click **Edit Properties**
-4. Configure **Read** and **Write** services for the selected data model objects
+1. Open your Form Data Model in edit mode
+1. Select a data model object and click **Edit Properties**
+1. Configure **Read** and **Write** services for the selected data model objects
 
    ![Configure read write service](/help/edge/docs/forms/universal-editor/assets/configure-reda-write-service.png)
 
-5. Configure service arguments:
+1. Configure service arguments:
+
    - Click the edit icon for the read service argument
    - Bind the argument to a **User Profile Attribute**, **Request Attribute**, or **Literal value**
    - Specify the binding value (e.g., `petid` for a pet registration form)
 
    ![Configure pet id argument](/help/edge/docs/forms/universal-editor/assets/pet-id-arguments.png)
 
-6. Click **Done** to save the argument and **Save** to save the FDM
+1. Click **Done** to save the argument and **Save** to save the FDM
 
    >[!NOTE]
    >
