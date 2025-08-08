@@ -36,10 +36,11 @@ For the purposes of this onboarding journey, to get you started with a minimal, 
 
 ## Create an environment {#creating-environments}
 
->!IMPORTANT
+>[!NOTE]
 >
->
+>The system records the user who creates an environment as its creator. Because deleted users can sometimes be restored, choose the environment creator carefully.
 
+**To create an environment:**
 
 1. Log on to Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
