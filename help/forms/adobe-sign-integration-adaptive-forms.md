@@ -233,13 +233,15 @@ The representative generates and shares credentials with you. In the next sectio
      
       ![Adobe Acrobat Sign Cloud Configuration Success](assets/adobe-sign-cloud-configuration-success.png)
 
-      <!-- > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. --> 
+      <!-- 
+      > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. 
+      --> 
 
-1.  Select **[!UICONTROL Create]** to create the configuration.
+1. Select **[!UICONTROL Create]** to create the configuration.
 
-1.  Select the configuration and click **[!UICONTROL Publish]**, select the configuration, and click **[!UICONTROL Publish]**. It replicates the configuration to the corresponding publish environments.
+1. Select the configuration and click **[!UICONTROL Publish]**, select the configuration, and click **[!UICONTROL Publish]**. It replicates the configuration to the corresponding publish environments.
 
-1.  Repeat all the above steps on your developer, stage, and production instances (whichever left) to complete configuring [!DNL Adobe Acrobat Sign Solutions for Government] with [!DNL AEM Forms] for your environment.
+1. Repeat all the above steps on your developer, stage, and production instances (whichever left) to complete configuring [!DNL Adobe Acrobat Sign Solutions for Government] with [!DNL AEM Forms] for your environment.
 
 Now, you can [use add Adobe Acrobat Sign fields in an Adaptive Form](working-with-adobe-sign.md) or [AEM Workflow](/help/forms/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). Ensure that you add the configuration container used for the Cloud Service configuration to all the Adaptive Forms being enabled for [!DNL Adobe Acrobat Sign]. You can specify a configuration container from the  properties of an Adaptive Form.
 

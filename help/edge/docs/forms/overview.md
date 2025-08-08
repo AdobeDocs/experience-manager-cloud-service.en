@@ -43,7 +43,9 @@ By the end you will be able to pick the right authoring method, understand submi
 
 ###  Universal Editor 
 
-<!--<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>-->
+<!--
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
+-->
 
 [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) is a visual, drag-and-drop authoring tool for marketers and designers that combines speed with enterprise-grade power:
 
