@@ -19,11 +19,6 @@ The release date for Cloud Manager 2025.8.0 in AEM as a Cloud Service is Thursda
 
 The next planned release is Thursday, September 4, 2025.
 
-
-
-
-
-
 ## What's new {#what-is-new}
 
 * **Edge Delivery Services license can be included in a HIPAA program in a self-service manner** 
@@ -152,7 +147,7 @@ Config Pipelines are now supported for sites built with Edge Delivery Services, 
 
 See [Add Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
 
-If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID.
+<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID. -->
 
 
 ## Bug fixes
