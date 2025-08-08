@@ -42,10 +42,9 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### New features in Experience Manager Sites {#enhancements-sites}
 
-**Content Fragments Enhancements**
-
-* You can now copy content fragments with children.
-* You can now configure a custom workspace in the folder settings, to export the content fragments to the configured workspace in Adobe Target.
+* You can now copy content fragments with referenced fragments (children) in one operation. This allows re-using existing content fragment structures for creating new content.
+* In Content Fragments Admin UI you can now view the workflow status for content fragments, with detailed information about past and currently running workflows for a selected fragment.
+* Renaming or moving a live copy source page will now trigger re-publishing a correspondingly renamed or moved live copy page. 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -62,7 +61,6 @@ AEM Assets now enables you to [configure the display of asset titles in Card vie
 ![Configure AI-generated titles](/help/assets/assets/configure-title-ai-generated.png)
 
 You can now also choose to disable AI-generated metadata at the folder level. 
-
 
 ### New Features in Content Hub {#new-features-content-hub}
 
@@ -175,6 +173,10 @@ The API Integration Tool enables form authors to create dynamic, intelligent for
 
   
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### Principal View for Permissions Management {#principal-view}
+
+AEM introduces Permissions Management for Users and Groups. The main functionality remains the same as the classic UI, but is more user-friendly and efficient. See the [dedicated article](/help/security/touch-ui-principal-view.md) for further information.
 
 ### Updated Deprecation Process {#updated-deprecation-process}
 
