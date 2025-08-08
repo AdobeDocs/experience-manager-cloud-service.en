@@ -21,8 +21,8 @@ You can configure the submit action for forms created in the Universal Editor us
 
 >[!NOTE]
 >
-> * If you do not see the **Form Properties** icon in your Universal Editor interface, enable the **Edit Form Properties** extension in the Extension Manager. 
-> * Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable or disable extensions in the Universal Editor.
+>* If you do not see the **Form Properties** icon in your Universal Editor interface, enable the **Edit Form Properties** extension in the Extension Manager. 
+>* Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable or disable extensions in the Universal Editor.
 
 ## How to Configure Redirect or Thank You Message?
 
@@ -31,9 +31,9 @@ On submission of a form, you can redirect the user to another webpage or show a 
 To configure the redirect page or thank you message: 
 
 1. Open the Adaptive Form for editing.
-2. Open the Content Tree and select the **[!UICONTROL Guide Container]**. 
-3. Click the Adaptive Form Container properties ![Adaptive Form Container properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box to configure Data Models opens. 
-4. Open the **[!UICONTROL Submission]** tab. Options to configure a redirect page or a message are displayed: 
+1. Open the Content Tree and select the **[!UICONTROL Guide Container]**. 
+1. Click the Adaptive Form Container properties ![Adaptive Form Container properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box to configure Data Models opens. 
+1. Open the **[!UICONTROL Submission]** tab. Options to configure a redirect page or a message are displayed: 
 
     ![Submission dialog of Guide Contaner to configure a redirect page or a message](/help/forms/assets/adaptive-forms-core-components-redirect-page-or-thank-you-message.png)
 
