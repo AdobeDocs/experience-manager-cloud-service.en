@@ -1,6 +1,6 @@
 ---
-Title: How to send an email on submission of an Adaptive Form?
-Description: Explore the process to set up email notifications when submitting an Adaptive Form.
+title: How to send an email on submission of an Adaptive Form?
+description: Explore the process to set up email notifications when submitting an Adaptive Form.
 keywords: how to send an email for an adpative form, Email Submit Action, Adaptive Form Email, Form Submission Email, Send Email Guide
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f

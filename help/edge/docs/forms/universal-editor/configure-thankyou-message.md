@@ -1,6 +1,6 @@
 ---
-title: How to Configure a Redirect Page or Thank you message?
-description: Learn how users can be displayed a thank you message or redirected to a webpage that form authors can configure while creating the form.
+title: "How to Configure a Redirect Page or Thank you message"
+description: "Learn how users can be displayed a thank you message or redirected to a webpage that form authors can configure while creating the form."
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
@@ -42,7 +42,7 @@ To configure the redirect page or thank you message:
 * To configure a Redirect URL, for on Submit option, select the **[!UICONTROL Redirect to URL option]**, and provide an absolute address or a Redirect URL or relative path of an AEM Sites page. 
 
 ![redirect](/help/edge/docs/forms/universal-editor/assets/redirect-ue.png)
-  
+
 **Configure Thankyou message**
 
 * To configure a custom or thank you message, select the **[!UICONTROL Show Message]** option, and provide a message in the Message content box. It is a rich text box, you can use the full screen option to view all the available rich text items. 
