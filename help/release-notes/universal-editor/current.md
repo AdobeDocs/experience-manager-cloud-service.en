@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2025.07.09 Release Notes
-description: These are the release notes for the 2025.07.09 release of the Universal Editor.
+title: Universal Editor 2025.07.31 Release Notes
+description: These are the release notes for the 2025.07.31 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.07.09 Release Notes {#release-notes}
+# Universal Editor 2025.07.31 Release Notes {#release-notes}
 
-These are the release notes for the 9 July 2025 release of the Universal Editor.
+These are the release notes for the 31 July 2025 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -16,9 +16,13 @@ These are the release notes for the 9 July 2025 release of the Universal Editor.
 
 ## What's New {#what-is-new}
 
-* [When clicking the **Add** toolbar button on containers,](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) if only one component type is allowed, it is inserted immediately without requiring selection from the drop-down menu.
-* [The authentication header toolbar option](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings) has been placed behind a feature toggle, as it is not useful in most cases.
-* [Since container nesting is not permitted for multi-fields in the properties panel,](/help/implementing/universal-editor/field-types.md#fields) the rendering routine now filters out nested containers from the field list to prevent invalid nesting.
+* New features for [RTE early adopters](#new-rte)
+  * Dark mode support was added.
+  * Text alignment support was added.
+    * Disabled by default and only available for headless projects
+  * Indentation support was added.
+    * Disabled by default and only available for headless projects
+  * Breaks (`<br>`) are now inserted on shift+enter.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -37,14 +41,12 @@ Undo and redo is now available to Universal Editor content authors.
 
 ## Other Improvements {#other-improvements}
 
-* An issue was fixed where single asset reference removal was not possible when editing via the property rail.
-* An issue was fixed where the Properties panel would load indefinitely because asset references were automatically converted to arrays, causing an infinite loading state.
-    * Asset reference values are now stored as-is, without automatic conversion to arrays.
-* An issue was fixed where the Properties panel did not display fields when a model was defined but contained no content.
-    * This caused an infinite loading state for the Properties panel for empty empty detail responses, like empty Content Fragments.
-* The ESLint configuration has been refactored for compatibility with version 9, including updated rules and plugin support.
+* Fixes for the early adopter RTE
+  * Pressing enter now creates a new list item (`<li>`) when within a list.
+* Videos now properly update when using remote DAM.
+* Service support added for 6.5 LTS.
 
 ## Deprecations {#deprecations}
 
-* The `text-input` component is now officially deprecated.
-    * In `model-definition.json`, use the text component to create text inputs for the Properties panel.
+* The `text-input` component was officially deprecated with [release 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)
+  * In `model-definition.json`, use the text component to create text inputs for the Properties panel.
