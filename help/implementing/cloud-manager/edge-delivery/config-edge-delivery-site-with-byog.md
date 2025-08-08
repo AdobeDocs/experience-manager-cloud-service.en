@@ -3,7 +3,6 @@ title: Configure an Edge Delivery site to use an external Git repository
 description: Learn how to link an Edge Delivery site to a private or enterprise Git repository.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-
 ---
 
 # Configure an Edge Delivery site to use an external Git repository

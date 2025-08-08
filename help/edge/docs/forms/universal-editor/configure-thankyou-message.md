@@ -50,5 +50,3 @@ To configure the redirect page or thank you message:
 ![thankyou](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 Form authors can configure a page for each form, to which the form users are redirected after submitting a form.
-
-
