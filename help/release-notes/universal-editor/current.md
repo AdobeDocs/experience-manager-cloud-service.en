@@ -16,6 +16,8 @@ These are the release notes for the 31 July 2025 release of the Universal Editor
 
 ## What's New {#what-is-new}
 
+* [The authentication header toolbar option](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings) remains behind a feature toggle as introduced in [release 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)
+  * However it is now enabled by default.
 * New features for [RTE early adopters](#new-rte)
   * Dark mode support was added.
   * Text alignment support was added.
@@ -48,5 +50,5 @@ Undo and redo is now available to Universal Editor content authors.
 
 ## Deprecations {#deprecations}
 
-* The `text-input` component was officially deprecated with [release 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)
+* The `text-input` and `text-area` components were officially deprecated with [release 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)
   * In `model-definition.json`, use the text component to create text inputs for the Properties panel.
