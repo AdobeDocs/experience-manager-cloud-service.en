@@ -19,11 +19,6 @@ The release date for Cloud Manager 2025.8.0 in AEM as a Cloud Service is Thursda
 
 The next planned release is Thursday, September 4, 2025.
 
-
-
-
-
-
 ## What's new {#what-is-new}
 
 * **Edge Delivery Services license can be included in a HIPAA program in a self-service manner** 
@@ -36,7 +31,7 @@ The next planned release is Thursday, September 4, 2025.
 
 * **Automated provisioning for the new Forms Add‑on**
 
-    Sites-only customers often need a lightweight, low-cost way to build marketing forms. The new AEM Forms Sites Add-On meets that need by adding limited Forms features to a Sites program. It also creates a clear upgrade path to the full AEM Forms offering, if desired. <!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
+    Sites-only customers often need a lightweight, low-cost way to build marketing forms. The new AEM Forms Sites Add-On meets that need by adding limited Forms features to a Sites program. It also creates a clear upgrade path to the full AEM Forms offering. <!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
 
     The add-on:
     * Attaches to a Sites program and deploys alongside it&mdash;no separate Forms program or entitlement.
@@ -76,7 +71,6 @@ If you are interested in testing this new feature and sharing your feedback, sen
 See [Restore the Previous Code Deployed in AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
 
 See also [Content Restore in AEM as a Cloud Service](/help/operations/restore.md).
-
 
 ### Specialized Testing Environment {#specialized-test-environment}
 
@@ -152,7 +146,7 @@ Config Pipelines are now supported for sites built with Edge Delivery Services, 
 
 See [Add Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
 
-If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID.
+<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID. -->
 
 
 ## Bug fixes
