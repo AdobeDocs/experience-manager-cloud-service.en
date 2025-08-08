@@ -62,7 +62,6 @@ AEM Assets now enables you to [configure the display of asset titles in Card vie
 
 You can now also choose to disable AI-generated metadata at the folder level. 
 
-
 ### New Features in Content Hub {#new-features-content-hub}
 
 **Enhanced branding flexibility in Content Hub**
