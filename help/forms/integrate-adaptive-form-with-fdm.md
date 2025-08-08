@@ -60,15 +60,19 @@ Perform the following steps to configure Form Data Model with Adaptive Form auth
 
 1. Open the Adaptive Form for editing.
 1. Click the **Edit Form Properties** extension on the editor. 
+
     The **Form Properties** dialog appears.
     
     >[!NOTE]
     >
     > * If you do not see the **Edit Form Properties** icon in your Universal Editor interface, enable the **Edit Form Properties** extension in the Extension Manager. 
     > * Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable or disable extensions in the Universal Editor.
+
 1. Click **Submission** tab and select **[!UICONTROL Submit using Form Data Model]**.
+
     ![OneDrive GIF](/help/forms/assets/submit-uisng-fdm-ue.png)
     If you select **Save Attachments with Original Name**, the attachments are stored in the folder using their original filenames. You can also save Document of Record (DoR) in the Azure Blob Storage.
+
 1. Select the **[!UICONTROL Storage Configuration]**, where you want to save your data.
 1. Click **[!UICONTROL Save&Close]**
 
