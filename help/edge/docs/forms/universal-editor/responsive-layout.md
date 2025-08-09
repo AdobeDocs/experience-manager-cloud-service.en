@@ -10,8 +10,9 @@ exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 
 # Create Responsive Forms with Universal Editor
 
-Users access forms on a wide range of devices, including desktops, tablets, and smartphones. Designing responsive forms ensures an optimal experience for all users, regardless of device. This guide explains how to design, test, and optimize forms for any screen size using the Universal Editor.
+The modern web landscape demands forms that function seamlessly across an ever-expanding spectrum of devices and screen sizes. From large desktop monitors to compact smartphone screens, users expect consistent, intuitive experiences regardless of their chosen device. Creating responsive forms is no longer optional—it's a fundamental requirement for delivering professional, accessible, and conversion-optimized digital experiences.
 
+Universal Editor provides comprehensive tools and methodologies for developing responsive forms that adapt intelligently to various screen dimensions, input methods, and user contexts. This guide explores the technical foundations, implementation strategies, and optimization techniques necessary to create forms that perform exceptionally across all devices while maintaining usability, accessibility, and visual appeal.
 
 Responsive form creation involves two main activities:
 
@@ -154,115 +155,116 @@ Layout patterns determine how your form content adapts to different screen sizes
 
 ### Panel Layout
 
-**Purpose:** Organizes related content into visually distinct sections that can be viewed simultaneously.
+The Panel Layout organizes related content into visually distinct sections, allowing users to view multiple sections at once. This layout is ideal for forms with categorized information that benefits from a side-by-side presentation on larger screens.
 
 ![Panel Layout Example](/help/edge/docs/forms/universal-editor/assets/panel-layout.png)
 
-**Responsive Behavior:**
+**Responsive Behavior**
 
-- **Desktop (1200px+):** Panels display side-by-side or in a grid
-- **Tablet (768px–1199px):** Panels stack vertically with spacing
-- **Mobile (320px–767px):** Single-column layout with clear section breaks
+- **Desktop (1200px and above):** Panels are displayed side-by-side or in a grid for maximum visibility.
+- **Tablet (768px–1199px):** Panels stack vertically with appropriate spacing to maintain clarity.
+- **Mobile (320px–767px):** Panels are presented in a single-column layout, with clear separation between sections for easy navigation.
 
-**Implementation Steps:**
+**How to Implement**
 
-1. Use the [Panel Component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
-2. Group related fields within each panel.
-3. Add clear headings for each section.
-4. Ensure adequate spacing between panels.
+1. Add the [Panel Component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) to your form.
+2. Group related fields within each panel to maintain logical organization.
+3. Assign clear, descriptive headings to each panel section.
+4. Ensure there is sufficient spacing between panels to prevent visual clutter.
 
-**Best Practices:**
+**Best Practices**
 
-- Limit to 3–4 panels on desktop to avoid overwhelming users.
-- Use descriptive titles for each panel.
-- Group related fields logically to reduce cognitive load.
-- Test panel navigation on touch devices.
+- Limit the number of panels to 3 or 4 on desktop to avoid overwhelming users.
+- Use concise, descriptive titles for each panel to aid user understanding.
+- Organize fields within panels logically to minimize cognitive load.
+- Test panel navigation on touch devices to ensure usability across all platforms.
 
-**Example Use Cases:**
+**Common Use Cases**
 
-- **Job Application:** Personal Info, Education, Experience, References
-- **Product Registration:** Basic Details, Technical Specs, Warranty Info
-- **Survey Forms:** Demographics, Preferences, Feedback, Contact
+- **Job Application:** Sections for Personal Information, Education, Experience, and References.
+- **Product Registration:** Panels for Basic Details, Technical Specifications, and Warranty Information.
+- **Survey Forms:** Groupings for Demographics, Preferences, Feedback, and Contact Information.
 
 ### Wizard Layout
 
-**Purpose:** Guides users through complex processes step-by-step, reducing cognitive load and improving completion rates.
+The Wizard Layout guides users through a multi-step process, presenting one section at a time. This layout is especially effective for complex forms, as it reduces cognitive load and increases completion rates by breaking the process into manageable steps.
 
 ![Wizard Layout Example](/help/edge/docs/forms/universal-editor/assets/wizard-layout.png)
 
-**Responsive Behavior:**
+**Responsive Behavior**
 
-- **All Devices:** Maintains single-step focus for optimal mobile experience.
-- **Step Content:** Adapts within each step (stacking or side-by-side).
-- **Navigation:** Touch-friendly buttons with sufficient spacing.
-- **Progress Indicator:** Scales appropriately for screen size.
+- **All Devices:** Maintains a single-step focus, which is optimal for mobile users.
+- **Step Content:** Each step adapts responsively, stacking fields or arranging them side-by-side as appropriate for the screen size.
+- **Navigation:** Features touch-friendly buttons with adequate spacing for easy interaction.
+- **Progress Indicator:** Progress bars or step indicators scale appropriately for different devices, providing clear feedback on completion status.
 
-**Implementation Steps:**
+**How to Implement**
 
-1. Use the [Wizard Component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
-2. Break complex forms into logical steps (3–7 steps is optimal).
-3. Include progress indicators for user orientation.
-4. Provide clear navigation controls (Next, Back, Save).
+1. Insert the [Wizard Component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) into your form.
+2. Divide the form into logical steps, ideally between 3 and 7, to keep each step focused and manageable.
+3. Add progress indicators to help users understand their position in the process.
+4. Provide clear navigation controls, such as Next, Back, and Save buttons.
 
-**Mobile Optimization:**
+**Mobile Optimization Tips**
 
-- Use large touch targets (minimum 44px) for navigation buttons.
-- Ensure step indicators are clear and visible on small screens.
-- Limit the number of fields per step to reduce scrolling.
-- Enable auto-save to prevent data loss.
+- Use large touch targets (at least 44px in height) for navigation controls to enhance accessibility.
+- Ensure that step indicators are visible and legible on small screens.
+- Limit the number of fields per step to minimize scrolling and improve focus.
+- Enable auto-save functionality to prevent data loss if users leave the form.
 
-**Best Practices:**
+**Best Practices**
 
-- Ensure logical step progression—each step should build on the previous.
-- Use clear step titles so users know what to expect.
-- Validate input at each step to catch errors early.
-- Allow users to navigate backward to review or edit information.
+- Design steps to follow a logical progression, with each step building on the previous one.
+- Use clear, descriptive titles for each step to set user expectations.
+- Validate user input at each step to catch errors early and reduce frustration.
+- Allow users to navigate backward to review or edit previous information without losing data.
 
-**Example Use Cases:**
+**Common Use Cases**
 
-- **Insurance Claims:** Incident → Evidence → Personal → Review
-- **Account Setup:** Basic Info → Preferences → Security → Confirmation
-- **Order Process:** Products → Shipping → Payment → Summary
+- **Insurance Claims:** Steps for Incident Details, Evidence Submission, Personal Information, and Review.
+- **Account Setup:** Stages for Basic Information, Preferences, Security Settings, and Confirmation.
+- **Order Process:** Steps for Product Selection, Shipping Information, Payment Details, and Order Summary.
 
 ### Accordion Layout
 
-**Purpose:** Saves space by organizing content into collapsible sections, ideal for optional or secondary information.
+The Accordion Layout saves space by organizing content into collapsible sections, making it ideal for optional or secondary information. This layout is particularly effective for forms with content that can be logically grouped and does not need to be displayed all at once.
 
 ![Accordion Layout Example](/help/edge/docs/forms/universal-editor/assets/accordion-layout.png)
 
-**Responsive Behavior:**
+**Responsive Behavior**
 
-- **Excellent mobile performance:** Only relevant content is shown.
-- **Touch-optimized headers:** Easy to tap and expand sections.
-- **Smooth animations:** Provide visual feedback for interactions.
-- **Space efficient:** Minimizes scrolling on all devices.
+- **Mobile Performance:** Only the relevant section is expanded, reducing the need for scrolling and improving load times.
+- **Touch-Optimized Headers:** Section headers are easy to tap and expand, supporting natural gestures on mobile devices.
+- **Smooth Animations:** Expanding and collapsing sections provide visual feedback for user interactions.
+- **Space Efficiency:** Collapsed sections minimize vertical space, making the form easier to navigate on all devices.
 
-**Implementation Steps:**
+**How to Implement**
 
-1. Use the [Accordion Component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
-2. Group related optional content in each section.
-3. Use descriptive section headers.
-4. Set appropriate default open/closed states.
+1. Add the [Accordion Component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) to your form.
+2. Group related optional or secondary content within each accordion section.
+3. Use clear, descriptive headers for each section to help users understand what information is contained within.
+4. Set appropriate default open or closed states for each section based on importance and user needs.
 
-**Mobile Advantages:**
+**Mobile Advantages**
 
-- Reduces scrolling by collapsing unused sections.
-- Touch-friendly interaction with natural expand/collapse gestures.
-- Faster loading—only active content is visible.
-- Improved focus—users see only what they need.
+- Reduces scrolling by collapsing unused sections, allowing users to focus on one section at a time.
+- Touch-friendly interaction supports natural expand/collapse gestures.
+- Faster loading, as only the active content is visible.
+- Improved focus, since users see only the information they need at any given time.
 
-**Best Practices:**
+**Best Practices**
 
-- Use clear section headers so users know what's inside before expanding.
-- Group related content logically within each section.
-- Set important sections to start expanded if needed.
-- Provide brief section previews to help users decide what to expand.
+- Use clear section headers so users know what to expect before expanding a section.
+- Group related content logically within each section to aid comprehension.
+- Set important sections to start expanded if immediate attention is required.
+- Provide brief section previews or summaries to help users decide which sections to expand.
 
-**Example Use Cases:**
+**Common Use Cases**
 
-- **Product Configuration:** Basic → Advanced → Accessories → Support
-- **FAQ Forms:** Account → Billing → Technical → General
-- **Settings Forms:** Privacy → Notifications → Appearance → Advanced
+- **Product Configuration:** Sections for Basic Options, Advanced Settings, Accessories, and Support.
+- **FAQ Forms:** Groupings for Account, Billing, Technical, and General questions.
+- **Settings Forms:** Sections for Privacy, Notifications, Appearance, and Advanced options.
+
 
 ## Part 3: Responsive Design Best Practices
 
@@ -270,42 +272,42 @@ Layout patterns determine how your form content adapts to different screen sizes
 
 +++Mobile Optimization (320px–767px)
 
-**Essential Practices:**
+**Layout and Interaction:**
 
-- Use a single-column layout for all content.
-- Provide large, touch-friendly buttons (minimum 44px height).
-- Simplify navigation with clear back/next options.
-- Minimize scrolling within each section.
-- Auto-focus on the first field to display the keyboard.
+- Use a single-column layout for all form content to maximize readability and ease of use.
+- Ensure all buttons and interactive elements are at least 44px in height for reliable touch interaction.
+- Provide clear, simple navigation with visible back and next buttons.
+- Minimize the need for scrolling within each section by breaking up long forms.
+- Automatically focus on the first input field to prompt the mobile keyboard.
 
-**Field-Specific Guidelines:**
+**Field Guidelines:**
 
-- **Text inputs:** Full width with ample padding.
-- **Dropdowns:** Use native select elements for better touch experience.
-- **Date pickers:** Use native date inputs for mobile compatibility.
-- **File uploads:** Provide large, clear upload areas.
+- Text fields should span the full width of the screen with sufficient padding for touch input.
+- Use native dropdown/select elements for optimal mobile usability.
+- Implement native date pickers for consistent mobile experience.
+- Make file upload areas large and clearly labeled for easy access.
 
 +++
 
 +++Tablet Optimization (768px–1199px)
 
-**Layout Strategies:**
+**Layout and Usability:**
 
-- Use two-column layouts for related fields.
-- Test both portrait and landscape orientations.
-- Support both touch and mouse interactions.
-- Provide larger content areas while maintaining readability.
+- Utilize two-column layouts for related fields to take advantage of increased screen space.
+- Test form appearance and usability in both portrait and landscape orientations.
+- Design for both touch and mouse input, ensuring all controls are easily accessible.
+- Increase content area size while maintaining clear visual hierarchy and readability.
 
 +++
 
 +++Desktop Optimization (1200px+)
 
-**Advanced Features:**
+**Advanced Features and Layout:**
 
-- Use multi-column layouts for efficient space usage.
-- Offer keyboard shortcuts for power users.
-- Implement hover states for interactive feedback.
-- Provide advanced validation with detailed error messages.
+- Use multi-column layouts to efficiently use horizontal space and reduce vertical scrolling.
+- Provide keyboard shortcuts for frequent actions to support power users.
+- Implement hover states and visual feedback for interactive elements.
+- Offer advanced validation with clear, detailed error messages for complex forms.
 
 +++
 
@@ -315,52 +317,52 @@ Layout patterns determine how your form content adapts to different screen sizes
 
 +++Form Layout Breaks on Mobile
 
-**Common Causes:**
+**Possible Causes:**
 
-- Fixed-width elements that do not scale
-- CSS designed for desktop-first layouts
-- Images or content that overflow their containers
+- Fixed-width elements that do not adapt to smaller screens
+- Desktop-first CSS that overrides mobile styles
+- Images or content overflowing their containers
 
-**Solutions:**
+**How to Fix:**
 
-- Ensure images and containers scale to screen size.
-- Use a mobile-first design with progressive enhancement.
-- Test with both device emulators and real devices.
-- Use flexible sizing instead of fixed dimensions.
+- Make sure all images and containers use relative or percentage-based sizing.
+- Start with a mobile-first CSS approach and layer on enhancements for larger screens.
+- Test forms using both device emulators and real devices.
+- Avoid fixed dimensions; use flexible layouts.
 
 +++
 
 +++Touch Targets Too Small
 
-**Common Causes:**
+**Possible Causes:**
 
-- Buttons smaller than 44px × 44px
+- Buttons or links smaller than 44px by 44px
 - Interactive elements placed too close together
-- Custom CSS overriding touch-friendly defaults
+- Custom CSS reducing default touch target size
 
-**Solutions:**
+**How to Fix:**
 
-- Ensure all interactive elements are at least 44px × 44px.
-- Add spacing between buttons and links.
-- Test touch interaction with actual fingers, not just a mouse.
-- Increase touch target areas for easier tapping.
+- Ensure every interactive element is at least 44px by 44px.
+- Add adequate spacing between buttons, links, and other controls.
+- Test with real touch devices, not just a mouse.
+- Expand touch target areas as needed for accessibility.
 
 +++
 
 +++Content Overflow Issues
 
-**Common Causes:**
+**Possible Causes:**
 
 - Long text or labels that do not wrap
-- Fixed-width containers
-- Images that do not scale properly
+- Containers with fixed widths
+- Images that do not scale responsively
 
-**Solutions:**
+**How to Fix:**
 
-- Enable text wrapping for long content.
-- Use responsive images that scale appropriately.
-- Implement flexible layouts that adapt to content.
-- Test with various content lengths.
+- Enable text wrapping for all labels and content.
+- Use responsive images that scale with the container.
+- Design flexible layouts that adapt to varying content lengths.
+- Test with both short and long content to ensure adaptability.
 
 +++
 
@@ -368,18 +370,18 @@ Layout patterns determine how your form content adapts to different screen sizes
 
 +++Slow Loading on Mobile
 
-**Common Causes:**
+**Possible Causes:**
 
-- Large images not optimized for mobile
-- Excessive JavaScript execution
-- Too many form fields loading at once
+- Large, unoptimized images
+- Heavy or excessive JavaScript
+- Too many form fields loading simultaneously
 
-**Solutions:**
+**How to Fix:**
 
-- Optimize images for different screen sizes.
-- Load non-critical content only when needed.
-- Use techniques to speed up mobile loading.
-- Minimize third-party scripts and widgets.
+- Optimize images for mobile and use appropriate file formats.
+- Defer or lazy-load non-critical content.
+- Minimize the use of third-party scripts and widgets.
+- Streamline form fields to load only what is necessary.
 
 +++
 
@@ -387,18 +389,18 @@ Layout patterns determine how your form content adapts to different screen sizes
 
 +++Emulator vs. Real Device Differences
 
-**Common Causes:**
+**Possible Causes:**
 
-- Browser-specific rendering differences
-- Touch versus mouse interaction differences
-- Network speed variations
+- Differences in browser rendering engines
+- Touch interaction not accurately simulated by mouse
+- Network speed discrepancies
 
-**Solutions:**
+**How to Fix:**
 
-- Test on actual devices whenever possible.
-- Use multiple browsers for emulator testing.
-- Simulate different network speeds during testing.
-- Validate with real users in target environments.
+- Always test on real devices in addition to emulators.
+- Use multiple browsers and devices for comprehensive testing.
+- Simulate various network speeds to identify performance bottlenecks.
+- Gather feedback from real users in your target audience.
 
 +++
 
@@ -406,33 +408,34 @@ Layout patterns determine how your form content adapts to different screen sizes
 
 +++Key Performance Indicators
 
-**User Experience Metrics:**
+**User Experience:**
 
-- **Form completion rate:** Target 85%+ on mobile
-- **Time to complete:** Mobile completion time should be within 20% of desktop
-- **Error rate:** Less than 5% validation errors
-- **Abandonment points:** Identify where users drop off
+- **Form completion rate:** Aim for 85% or higher on mobile devices.
+- **Time to complete:** Mobile users should complete forms within 20% of desktop completion times.
+- **Error rate:** Keep validation errors below 5%.
+- **Abandonment points:** Identify and address steps where users drop off.
 
 **Technical Performance:**
 
-- **Page load time:** Under 3 seconds on 3G networks
-- **Core Web Vitals:** Pass all Google performance benchmarks
-- **Accessibility score:** WCAG 2.1 AA compliance
-- **Cross-browser compatibility:** 98%+ functionality across major browsers
+- **Page load time:** Less than 3 seconds on a 3G connection.
+- **Core Web Vitals:** Meet or exceed Google's recommended thresholds.
+- **Accessibility:** Achieve WCAG 2.1 AA compliance.
+- **Browser compatibility:** Ensure 98%+ functionality across all major browsers.
 
 +++
 
 +++Testing Checklist
 
-**Before Publishing:**
+**Pre-Publication Checklist:**
 
-- Test the form on actual mobile devices.
+- Test the form on actual mobile devices (not just emulators).
 - Ensure all touch targets are at least 44px × 44px.
-- Verify text readability at all screen sizes.
-- Confirm form validation works across all devices.
-- Ensure loading time is under 3 seconds on mobile.
-- Check that all interactive elements are accessible.
+- Verify text readability at all supported screen sizes.
+- Confirm form validation works consistently across devices and browsers.
+- Ensure mobile loading time is under 3 seconds.
+- Check that all interactive elements are accessible via keyboard and screen readers.
 - Test form submission on all supported devices.
+
 
 +++
 

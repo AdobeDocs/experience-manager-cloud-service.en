@@ -13,18 +13,14 @@ exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
 
 The Forms Submission Service is Adobe's hosted solution that automatically stores form submission data directly in your preferred spreadsheets—Google Sheets, Microsoft OneDrive, or SharePoint. This eliminates the need for complex backend infrastructure while providing real-time data collection and management.
 
->[!NOTE]
->
->**Early Access Program:** This feature is currently available through early access. To request access, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) with your GitHub organization and repository names from your official address.
->
->**Example:** For repository `https://github.com/adobe/abc`, send: organization = `adobe`, repository = `abc`
+
 
 ## Overview
 
 ![Forms submission service](/help/forms/assets/form-submission-service.png)
 *Figure: Forms Submission Service workflow - from form submission to spreadsheet storage*
 
-### Who Should Use This Service?
++++ Who Should Use This Service?
 
 **Perfect for:**
 
@@ -39,7 +35,9 @@ The Forms Submission Service is Adobe's hosted solution that automatically store
 - Enterprise integrations with databases
 - Forms needing advanced validation or processing
 
-### Common Use Cases
++++
+
++++ Common Use Cases
 
 | Use Case | Example | Spreadsheet Benefit |
 |----------|---------|-------------------|
@@ -48,38 +46,54 @@ The Forms Submission Service is Adobe's hosted solution that automatically store
 | **Lead Generation** | Newsletter signups → SharePoint | Marketing campaign analysis |
 | **Feedback Collection** | Survey responses → Google Sheets | Quick data visualization |
 
++++
+
 ## Key Benefits
 
 The Forms Submission Service offers several advantages for streamlined data collection:
 
-### **Simplified Setup**
+
+
++++ Simplified Setup
 
 - **No backend infrastructure** required - Adobe hosts the submission endpoint
 - **Direct integration** with popular spreadsheet platforms
 - **Automatic data mapping** from form fields to spreadsheet columns
 
-### **Real-Time Data Management**
++++
+
+
++++ Real-Time Data Management
 
 - **Instant data capture** - submissions appear immediately in your spreadsheet
 - **Structured storage** - organized columns for easy analysis
 - **Live collaboration** - multiple team members can access and analyze data
 
-### **Built-in Security & Access Control**
++++
+
++++ Built-in Security & Access Control
 
 - **Leverages existing permissions** - use your spreadsheet platform's sharing controls
 - **Adobe-managed security** - secure submission endpoint with enterprise-grade protection
 - **Data ownership** - your data stays in your chosen spreadsheet platform
 
++++
+
 ## Prerequisites
 
 Before setting up the Forms Submission Service, ensure you have:
 
-### **Technical Requirements**
+
+
++++ Technical Requirements
 
 - **GitHub repository** set up for your Edge Delivery Services project with the latest Adaptive Forms Block installed
 - **Access approval** - repository added to the allowlist
 
-### **Spreadsheet Platform Setup**
++++
+
++++ Spreadsheet Platform Setup
+
 
 Choose one of the supported platforms:
 
@@ -87,11 +101,15 @@ Choose one of the supported platforms:
 - **Microsoft OneDrive** - Microsoft 365 account with Excel Online access
 - **SharePoint** - SharePoint access with list/library permissions
 
-### **Permissions & Access**
++++
+
++++ Permissions & Access
 
 - **Edit permissions** for the target spreadsheet
 - **Sharing capabilities** to grant access to `forms@adobe.com`
 - **Link generation** permissions for your chosen platform
+
++++
 
 >[!TIP]
 >
@@ -101,19 +119,23 @@ Choose one of the supported platforms:
 
 The Forms Submission Service offers two configuration approaches. Choose the method that best fits your workflow:
 
-### Choose Your Configuration Method
+
++++ Choose Your Configuration Method
 
 | Method | Best For | Time Required | Technical Level |
 |--------|----------|---------------|-----------------|
 | **[Manual Setup](#manual-configuration)** | Content creators, one-time setup | 10-15 minutes | Beginner |
 | **[API Configuration](#api-configuration)** | Developers, automated workflows | 5-10 minutes | Intermediate |
 
-### Project Setup
++++
+
++++ Project Setup
 
 Before configuring either method, ensure your AEM project foundation is ready:
 
 1. **Create or update your AEM project** with the latest Adaptive Forms Block ([Getting Started Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
-1. **Update `fstab.yaml`** in your project root:
+
+2. **Update `fstab.yaml`** in your project root:
 
    ```yaml
    # Replace with the path to your shared folder
@@ -121,7 +143,10 @@ Before configuring either method, ensure your AEM project foundation is ready:
      /: https://drive.google.com/drive/folders/your-shared-folder-id
    ```
 
-1. **Share your project folder** with `forms@adobe.com` (edit permissions required)
+
+3. **Share your project folder** with `forms@adobe.com` (edit permissions required)
+
++++
 
 ## Manual Configuration
 
@@ -130,16 +155,18 @@ Before configuring either method, ensure your AEM project foundation is ready:
 
 Follow these step-by-step instructions to set up your form with spreadsheet submission:
 
-### Step 1: Create Your Form Definition
+
+
++++ Step 1: Create Your Form Definition
 
 Create your form structure using Google Sheets or Microsoft Excel.
 
 **Form Creation Steps:**
 
 1. **Open your spreadsheet platform** (Google Sheets or Microsoft Excel)
-1. **Create a new spreadsheet** for your form project
-1. **Name your sheet** (must be either `helix-default` or `shared-aem`)
-1. **Define your form structure** using the [form creation guide](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+2. **Create a new spreadsheet** for your form project
+3. **Name your sheet** (must be either `helix-default` or `shared-aem`)
+4. **Define your form structure** using the [form creation guide](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![Form Definition](/help/forms/assets/form-submission-definition.png)
 *Example: Form definition with field types, labels, and validation rules*
@@ -161,16 +188,18 @@ Create your form structure using Google Sheets or Microsoft Excel.
 - Sheet is named correctly (`helix-default` or `shared-aem`)
 - Field types and validation rules are properly configured
 
-### Step 2: Create the Data Collection Sheet
++++
+
++++ Step 2: Create the Data Collection Sheet
 
 Set up a dedicated sheet to receive form submission data.
 
 **Data Sheet Setup:**
 
 1. **Add a new sheet** to your existing spreadsheet
-1. **Name the sheet exactly `incoming`** (case-sensitive)
-1. **Set up column headers** that match your form fields
-1. **Save the spreadsheet** to ensure changes are preserved
+2. **Name the sheet exactly `incoming`** (case-sensitive)
+3. **Set up column headers** that match your form fields
+4. **Save the spreadsheet** to ensure changes are preserved
 
 ![Incoming sheet](/help/forms/assets/form-submission-incoming-sheet.png)
 *Example: Incoming sheet with column headers matching form fields*
@@ -195,23 +224,22 @@ Set up a dedicated sheet to receive form submission data.
 >
 >**Pro Tip:** Copy the exact field names from your form definition to ensure perfect matching between form fields and spreadsheet columns.
 
-### Step 3: Share Spreadsheet with Adobe Service
++++
+
++++ Step 3: Share Spreadsheet with Adobe Service
 
 Grant the Adobe Forms Submission Service access to your spreadsheet.
 
 **Sharing Process:**
 
 1. **Click the Share button** in the top-right corner of your spreadsheet
-1. **Add the Adobe service account:**
-
+2. **Add the Adobe service account:**
    - Email: `forms@adobe.com`
    - Permission level: **Editor** (required for data writing)
-
-1. **Send the sharing invitation**
-1. **Copy the spreadsheet link** for the next step
+3. **Send the sharing invitation**
+4. **Copy the spreadsheet link** for the next step
 
     ![Share incoming sheet](/help/forms/assets/form-submission-share-incoming.png)
-
 *Step-by-step sharing process for granting Adobe service access*
 
 **Platform-Specific Instructions:**
@@ -237,26 +265,27 @@ Grant the Adobe Forms Submission Service access to your spreadsheet.
 - Spreadsheet link is copied and ready for use
 - Sharing permissions allow external access
 
-### Step 4: Connect Form to Spreadsheet
++++
+
++++ Step 4: Connect Form to Spreadsheet
 
 Link your form definition to the submission spreadsheet.
 
 **Form-Spreadsheet Connection:**
 
 1. **Open your form definition spreadsheet** (the one with `helix-default` or `shared-aem` sheet)
-1. **Locate the Submit field row** in your form definition
-1. **Paste the copied spreadsheet link** into the **Action** column for the Submit field
-1. **Save the changes** to your form definition
+2. **Locate the Submit field row** in your form definition
+3. **Paste the copied spreadsheet link** into the **Action** column for the Submit field
+4. **Save the changes** to your form definition
 
     ![Link a spreadsheet](/help/forms/assets/form-submission-sheet-linking.png)
-
 *Example: Connecting the submit action to your data collection spreadsheet*
 
 **Publishing Your Form:**
 
 1. **Open AEM Sidekick** in your browser
-1. **Preview your form** to test the configuration
-1. **Publish the form** to make it live
+2. **Preview your form** to test the configuration
+3. **Publish the form** to make it live
 
 **Final Validation:**
 
@@ -274,11 +303,14 @@ Link your form definition to the submission spreadsheet.
 - [Complete example spreadsheet](/help/forms/assets/spreadsheet.xlsx) with proper configuration
 - [AEM Sidekick documentation](https://www.aem.live/docs/sidekick) for publishing guidance
 
++++
+
 ## API Configuration
 
 The API method allows developers to programmatically submit data to the Forms Submission Service, ideal for automated workflows and custom integrations.
 
-### When to Use the API
+
++++ When to Use the API
 
 **Perfect for:**
 
@@ -287,7 +319,9 @@ The API method allows developers to programmatically submit data to the Forms Su
 - Integration with existing applications
 - Bulk data submission workflows
 
-### API Prerequisites
++++
+
++++ API Prerequisites
 
 Before using the API, ensure you have:
 
@@ -306,7 +340,9 @@ Before using the API, ensure you have:
 >- `forms@adobe.com` must have Editor access
 >- Sheet must be published via AEM Sidekick
 
-### API Endpoint & Authentication
++++
+
++++ API Endpoint & Authentication
 
 **Base URL:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
 
@@ -317,23 +353,24 @@ Before using the API, ensure you have:
 
 **API Documentation:** [Complete API Reference](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
 
-### Using Postman
++++
+
++++ Using Postman
 
 Postman provides a user-friendly interface for testing API submissions.
 
 **Setup Instructions:**
 
 1. **Create a new POST request** in Postman
-1. **Configure the endpoint:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
-1. **Replace placeholders:**
-
+2. **Configure the endpoint:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
+3. **Replace placeholders:**
    - `{id}` → Your actual Form ID
    - `[repository]` → Your GitHub repository name
    - `[organization]` → Your GitHub organization/username
 
 **Request Configuration:**
    
-```json
+    ```json
 POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
 Headers:
@@ -355,7 +392,7 @@ Body (JSON):
             "email": "mary@gmail.com"
                 }
 }
-```
+     ```
 
 **Expected Response:**
 
@@ -365,7 +402,9 @@ Body (JSON):
 ![postman screen](/help/forms/assets/postman-api.png)
 *Example: Successful API submission using Postman interface*
 
-### Using Command Line (curl)
++++
+
++++ Using Command Line (curl)
 
 For developers who prefer terminal/command prompt, use curl to submit data programmatically.
 
@@ -399,7 +438,7 @@ curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
       "email": "joe@example.com"
                 }
             }'
-```
+        ```
 
 >[!TAB Windows Command Prompt]
      
@@ -432,11 +471,13 @@ Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-
   -Method POST `
   -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
   -Body $body
-```
+    ```
 
 >[!ENDTABS]
 
-### API Response & Verification
++++
+
++++ API Response & Verification
 
 **Successful Response:**
 
@@ -464,9 +505,13 @@ After a successful submission, verify the data appears in your spreadsheet:
 - **Data appears** in your `incoming` sheet within seconds
 - **All form fields** are properly mapped to spreadsheet columns
 
++++
+
 ## Troubleshooting
 
-### Common Issues & Solutions
+
+
++++ Common Issues & Solutions
 
 **Problem: 403 Forbidden Error**
 
@@ -512,7 +557,9 @@ Solutions:
 ```
 
 
-### Getting Help
++++
+
++++ Getting Help
 
 **Support Channels:**
 
@@ -520,24 +567,33 @@ Solutions:
 - **API Documentation:** [Developer Reference](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
 - **Community Support:** [Adobe Experience League Community](https://experienceleaguecommunities.adobe.com/)
 
++++
+
 ## Next Steps
 
 Now that you have the Forms Submission Service configured, explore these related topics:
 
-### **Enhance Your Forms**
+
++++ Enhance Your Forms
 
 - **[Create Advanced Forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** - Add validation, conditional logic, and custom styling
 - **[Form Components Guide](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** - Explore available form field types
 
-### **Alternative Submission Methods**
++++
+
++++ Alternative Submission Methods
 
 - **[AEM Publish Submissions](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)** - For complex workflows and enterprise integrations
 - **[Custom Submit Actions](/help/forms/configure-submit-actions-core-components.md)** - Advanced submission handling
 
-### **Data Management**
++++
+
++++ Data Management
 
 - **[Form Analytics](/help/forms/view-understand-aem-forms-analytics-reports.md)** - Track form performance and usage
 - **[Data Integration](/help/forms/configure-data-sources.md)** - Connect forms to databases and CRM systems
+
++++
 
 ## Summary
 
@@ -549,4 +605,4 @@ The Forms Submission Service provides a powerful, no-code solution for collectin
 - **API access** - Programmatic submission capabilities
 - **Enterprise security** - Adobe-managed endpoints with access controls
 
-**Ready to get started?*** Follow the [manual configuration](#manual-configuration) guide for a visual setup, or jump to [API configuration](#api-configuration) for programmatic integration.
+**Ready to get started?** Follow the [manual configuration](#manual-configuration) guide for a visual setup, or jump to [API configuration](#api-configuration) for programmatic integration.
