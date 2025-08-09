@@ -13,41 +13,64 @@ exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 <span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 -->
 
-Forms often include common sections like contact information, identification details, or consent agreements. The form developers create these sections every time they build a new form, which is repetitive and time-consuming. 
-To eliminate this duplication of effort, Universal Editor provides a way to create reusable form segments, such as panels or groups of fields, just once and reuse them across various forms. These reusable, modular, and standalone segments are called form fragments. For example, the same emergency contact fragment can be used in different sections of a form, such as for employee and supervisor contact details.
+Form fragments are reusable components that eliminate repetitive development work and ensure consistency across your organization's forms. Instead of recreating common sections like contact information, address details, or consent agreements for every form, you can build these elements once as fragments and reuse them across multiple forms.
 
-By the end of the article, you learn how to create and use fragments in forms using the Universal Editor.
+**What you'll accomplish in this article:**
 
-## Features of Edge Delivery Services Form Fragments
+- Understand the business value and technical capabilities of form fragments
+- Create reusable form fragments using Universal Editor
+- Integrate fragments into existing forms with proper configuration
+- Manage fragment lifecycle and maintain consistency across forms
 
-- **Maintaining consistency with form fragments**
-    You can integrate fragments into different forms, helping you maintain consistent layouts and standardized content. 
-    
-    >[!NOTE]
-    >
-    > With a "change once, reflect everywhere" approach, any update made to a fragment automatically applies to all forms at Preview mode. However, in the Publish mode, you must publish the fragment or republish the form for the changes to reflect.
+**Business benefits:**
 
-- **Adding form fragments multiple times within form**
-    You can add a form fragment multiple times within a form and configure its data binding properties to data sources or schemas. 
+- **Reduced development time**: Build common form sections once, reuse everywhere
+- **Improved consistency**: Standardized layouts and content across all forms
+- **Simplified maintenance**: Update a fragment once to reflect changes across all forms that use it
+- **Enhanced compliance**: Ensure regulatory sections remain consistent and up-to-date
 
-- **Using fragments within fragments**
-    You can create nested form fragments, which means you can add a fragment in another fragment, and can have nested fragment structure.
+Form fragments in Edge Delivery Services support advanced capabilities including nested fragments, multiple instances within a single form, and seamless integration with data sources.
 
-    >[!NOTE]
-    >
-    > You cannot nest a fragment within itself, as this can cause recursive references and unintended behavior, leading to errors or rendering issues.
+## Understanding Form Fragments
 
-## Considerations while using Edge Delivery Services Form Fragments
+Form fragments in Edge Delivery Services provide powerful capabilities for modular form development:
 
-- You need to add the same GitHub URL in both the fragment and the form where you intend to use the fragment.
-- You cannot edit a form fragment within a form. To make changes, modify the standalone form fragment.
+**Core capabilities:**
+
+- **Consistency management**: Fragments maintain identical layouts and content across multiple forms. With a "change once, reflect everywhere" approach, updates to a fragment automatically apply to all forms in Preview mode.
+- **Multiple usage**: Add the same fragment multiple times within a single form, each with independent data binding to different data sources or schema elements.
+- **Nested structures**: Create complex hierarchies by embedding fragments within other fragments for sophisticated form architectures.
+
+**Technical requirements:**
+
+- **GitHub URL consistency**: Both the fragment and any form using it must specify the same GitHub repository URL
+- **Standalone editing**: Fragments can only be modified in their standalone form; changes cannot be made within the host form
+
+**Publication behavior:**
+
+>[!IMPORTANT]
+>
+>In Preview mode, fragment changes reflect immediately across all forms. In Publish mode, you must republish both the fragment and any forms that use it to see updates.
+
+>[!CAUTION]
+>
+>Avoid recursive fragment references (nesting a fragment within itself) as this causes rendering errors and unexpected behavior.
 
 ## Prerequisites
 
-- [Set up your GitHub repository](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) to establish a connection between your AEM environment and the GitHub repository.
-- If you are already using Edge Delivery Services, add the latest version of the [Adaptive Forms block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) to your GitHub repository. 
-- The AEM Forms Author instance includes a template based on Edge Delivery Services. 
-- Keep the URL of your AEM Forms as a Cloud Service author instance and your GitHub Repository handy. 
+**Technical setup requirements:**
+
+- [GitHub repository configured](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) with connection established between your AEM environment and GitHub repository
+- [Latest Adaptive Forms block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) added to your GitHub repository (for existing Edge Delivery Services projects)
+- AEM Forms Author instance with Edge Delivery Services template available
+- Access to your AEM Forms as a Cloud Service author instance URL and GitHub repository URL
+
+**Required knowledge and permissions:**
+
+- Basic understanding of form design concepts and component hierarchy
+- Familiarity with Universal Editor interface and form creation workflows
+- Author-level permissions in AEM Forms to create and manage form assets
+- Understanding of your organization's form standards and reusable component requirements 
 
 ## Working with Edge Delivery Services Form Fragments
 
@@ -57,11 +80,11 @@ You can create Edge Delivery Services Form Fragments in the Universal Editor and
 - [Adding form fragments to a form](#adding-form-fragments-to-a-form)
 - [Managing form fragments](#managing-form-fragments)
 
-### Creating form fragments
++++ Creating form fragments
 
 To create a form fragment in Universal Editor, perform the following steps:
 
-1. Login into your AEM Forms as a Cloud Service author instance.
+1. Log in to your AEM Forms as a Cloud Service author instance.
 1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
 1. Click **Create &gt; Adaptive Form Fragment**.
 
@@ -72,7 +95,7 @@ To create a form fragment in Universal Editor, perform the following steps:
    ![Select Edge Delivery Services template](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
 1. Specify title, name, description and tags for the fragment. Ensure that you specify a unique name for the fragment. If another fragment exists with the same name, the fragment fails to create. 
-1. Specify the **GitHub URL**. For example, if your GitHub repository is named `edsforms`, it is located under the account `wkndforms`,the URL is `https://github.com/wkndforms/edsforms`.
+1. Specify the **GitHub URL**. For example, if your GitHub repository is named `edsforms`, it is located under the account `wkndforms`, the URL is `https://github.com/wkndforms/edsforms`.
 
     ![basic properties](/help/edge/docs/forms/universal-editor/assets/fragment-basic-properties.png)
 
@@ -91,26 +114,40 @@ To create a form fragment in Universal Editor, perform the following steps:
 
 1. (Optional) Specify the **Publish Date** or **Unpublish Date** for the fragment in the **Advanced** tab.
 
-    ![Adavanced tab](/help/edge/docs/forms/universal-editor/assets/advanced-properties-fragment.png)
-1. Click **Create** and a wizard appears. 
+    ![Advanced tab](/help/edge/docs/forms/universal-editor/assets/advanced-properties-fragment.png)
+1. Click **Create** to generate the fragment. A success dialog appears with editing options.
 
     ![Edit fragment](/help/edge/docs/forms/universal-editor/assets/edit-fragment.png)
 
-1. Click **Edit** and the created fragment with a default template opens in Universal Editor for authoring. 
+1. Click **Edit** to open the fragment in Universal Editor with the default template applied.
 
-    ![Fragment in Univerasal Editor for authoring](/help/edge/docs/forms/universal-editor/assets/fragment-in-ue.png)
+    ![Fragment in Universal Editor for authoring](/help/edge/docs/forms/universal-editor/assets/fragment-in-ue.png)
 
-    In edit mode, you can add any form components to the fragment. To learn how to create a fragment in the Universal Editor, refer to the [Getting Started with Edge Delivery Services for AEM Forms using Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg) article.
+1. **Design your fragment content**: Add form components (text fields, dropdowns, checkboxes) to build the reusable section. For detailed component guidance, see [Getting Started with Edge Delivery Services for AEM Forms using Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg).
 
-    The below screenshot displays the `contact fragment` created in Universal Editor.
+1. **Configure component properties**: Set field names, validation rules, and default values as needed for your use case.
+
+1. **Save and preview**: Save your fragment and use the Preview mode to verify the layout and functionality.
 
     ![Screenshot of a completed contact details form fragment in the Universal Editor, showing fields for name, phone, email, and address that can be reused across multiple forms](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
 
-    Once you have created the fragment, you can [add the created fragment in the Edge Delivery Services Forms](#adding-form-fragments-in-forms).
+**Validation checkpoint:**
 
-### Adding form fragments to a form
+- Fragment loads without errors in Universal Editor
+- All form components render correctly
+- Field properties and validation rules work as expected
+- Fragment is saved and available in the Forms & Documents console
 
-Let's create a simple `Employee Details` form that includes both employee and supervisor information. You can use the `Contact Details` fragment in both the employee and supervisor panels. To use the form fragment in your form, perform the following steps:
+Once your fragment is complete, you can [integrate it into any Edge Delivery Services form](#adding-form-fragments-to-a-form).
+
++++
+
+
++++ Adding form fragments to a form
+
+This example demonstrates creating an `Employee Details` form that uses the `Contact Details` fragment for both employee and supervisor information sections. This approach ensures consistent data collection while reducing development effort.
+
+To integrate a form fragment into your form:
 
 1. Open the form in edit mode.
 1. Add the Form Fragment component to the form.
@@ -134,7 +171,7 @@ Let's create a simple `Employee Details` form that includes both employee and su
 
 1. Click **[!UICONTROL Select]**.
 
-    The form fragment is added by reference to the form and remains in synchronized with the standalone form fragment.
+    The form fragment is added by reference to the form and remains synchronized with the standalone form fragment.
 
     ![Screenshot showing the contact details fragment successfully integrated into an employee form within the Universal Editor, demonstrating how fragments maintain their structure when reused](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
@@ -144,13 +181,17 @@ Let's create a simple `Employee Details` form that includes both employee and su
 
     Similarly, you can repeat Steps 3 to 7 to insert the `Contact Details` fragment for the `Supervisor Details` panel.
 
-    ![Empoyee Details form](/help/edge/docs/forms/universal-editor/assets/employee-detail-form-with-fragments.png)
+    ![Employee Details form](/help/edge/docs/forms/universal-editor/assets/employee-detail-form-with-fragments.png)
 
-### Managing form fragments
++++
+
+
+
++++ Managing form fragments
 
 You can perform several operations on form fragments using the AEM Forms user interface.
 
-1. Login into your AEM Forms as a Cloud Service author instance.
+1. Log in to your AEM Forms as a Cloud Service author instance.
 1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
 
 1. Select a form fragment and the toolbar displays the following operations you can perform on the selected fragment.
@@ -203,12 +244,52 @@ You can perform several operations on form fragments using the AEM Forms user in
    <td><p>Compares two different form fragments for previewing purposes.<br /> <br /> </p> </td>
     </tr>
     </tbody>
-    </table> 
+    </table>
 
-## Best Practices 
++++ 
 
-- Ensure that the fragment name is unique. The fragment fails to create if there is an existing fragment with the same name.
-- Any expression, script, or style in a stand-alone form fragment is retained when it is inserted by reference or embedded in an form.
-- When you publish a form, the form fragments inserted by reference within the form are published automatically.
+## Best Practices
+
+**Fragment design and naming:**
+
+- **Use descriptive, unique names**: Choose names that clearly indicate the fragment's purpose (e.g., "contact-details-with-validation" rather than "fragment1")
+- **Plan for reusability**: Design fragments to be context-independent so they work across different form types
+- **Keep fragments focused**: Create single-purpose fragments rather than complex, multi-function components
+
+**Development workflow:**
+
+- **Test fragments independently**: Verify fragment functionality before integrating into forms
+- **Maintain consistent GitHub URLs**: Ensure the same repository URL is used across all related fragments and forms
+- **Document fragment purpose**: Include clear descriptions and tags to help team members understand when to use each fragment
+
+**Publication and maintenance:**
+
+- **Coordinate publication**: When updating fragments, plan to republish all dependent forms simultaneously
+- **Version control**: Use meaningful commit messages when updating fragments to track changes over time
+- **Monitor dependencies**: Keep track of which forms use each fragment to assess update impact
+
+>[!TIP]
+>
+>Fragment styles, scripts, and expressions are preserved when embedded, so design with this inheritance in mind.
+
+## Summary
+
+You have successfully learned how to leverage form fragments in Edge Delivery Services to improve development efficiency and maintain consistency across your organization's forms. 
+
+**Key accomplishments:**
+
+- **Understanding**: Grasped the business value and technical capabilities of form fragments
+- **Creation**: Built reusable form fragments using Universal Editor with proper configuration
+- **Integration**: Added fragments to forms with correct reference setup and property configuration  
+- **Management**: Explored fragment lifecycle operations and maintenance workflows
+
+**Next steps:**
+
+- Create a library of commonly used fragments for your organization
+- Establish naming conventions and governance policies for fragment usage
+- Explore advanced integration with [Form Data Models](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) for dynamic data-driven fragments
+- Implement fragment-based form templates for consistent user experiences
+
+Your forms now benefit from modular, maintainable architecture that scales efficiently across projects while ensuring consistent user experiences.
 
 
