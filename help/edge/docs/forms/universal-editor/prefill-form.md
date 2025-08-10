@@ -261,40 +261,40 @@ The form should automatically populate with data based on the provided parameter
 
 **JSON Example for FDM-based Form:**
 
-      ```
+```
 
-        {
-          "afBoundData": {
-            "user": {
-              "firstName": "John",
-              "lastName": "Doe",
-              "email": "john.doe@example.com",
-              "phone": "+1-555-0123"
-            }
-          },
-          "afUnBoundData": {
-            "additionalInfo": "User preferences loaded"
-          }
-        }
+  {
+    "afBoundData": {
+      "user": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "phone": "+1-555-0123"
+      }
+    },
+    "afUnBoundData": {
+      "additionalInfo": "User preferences loaded"
+    }
+  }
 
-      ```
+```
 
 **XML Example for XFA-based Form:**
 
-      ```
+```
 
-        <?xml version="1.0" encoding="UTF-8"?>
-        <afData>
-          <afBoundData>
-            <user>
-              <firstName>John</firstName>
-              <lastName>Doe</lastName>
-              <email>john.doe@example.com</email>
-            </user>
-          </afBoundData>
-        </afData>
+  <?xml version="1.0" encoding="UTF-8"?>
+  <afData>
+    <afBoundData>
+      <user>
+        <firstName>John</firstName>
+        <lastName>Doe</lastName>
+        <email>john.doe@example.com</email>
+      </user>
+    </afBoundData>
+  </afData>
 
-      ```
+```
 
 ### Example Prefill URLs
 
