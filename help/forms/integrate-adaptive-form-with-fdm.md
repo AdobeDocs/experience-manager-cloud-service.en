@@ -48,6 +48,7 @@ Perform the following steps to configure Form Data Model with Adaptive Form base
 1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 
 1. Click the  **[!UICONTROL Submission]** tab. 
 1. From the **[!UICONTROL Submit Action]** drop-down list, select **[Submit Using Form Data Model]**.
+
     ![submit using Form Data Model](/help/forms/assets/submit-uisng-fdm-cc.png)
 
 1. Select the created **[!UICONTROL Data Model to submit]** configuration.

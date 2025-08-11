@@ -20,9 +20,12 @@ A user must have the **[Deployment Manager](/help/onboarding/cloud-manager-intro
 >
 >An Edge Delivery pipeline cannot be configured until the following has happened: 
 >
->* A program is created that contains one Edge Delivery Services site and one mapped domain. Otherwise, the option **Add Edge Delivery Pipeline** appears disabled in the user interface, and a tooltip explains missing requirements. <!-- CMGR‑69680 -->
+>* A program is created that contains one Edge Delivery Services site and one mapped domain. Otherwise, the option **Add Edge Delivery Pipeline** appears disabled in the user interface, and a tooltip explains missing requirements.
 >* The Git repository has at least one branch.
 >* The production and staging environments are created.
+
+<!-- CMGR‑69680 -->
+
 
 Before you start to deploy your code, configure your pipeline settings from the [!UICONTROL Cloud Manager].
 
