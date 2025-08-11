@@ -1,16 +1,18 @@
 ---
 title: Preview assets before using them in your AEM Sites pages 
-description: Dynamic Media with OpenAPI capabilities enables you to preview assets before using them in your Adobe Experience Manager (AEM) Sites pages. The asset preview is available on your site's author and Preview tier, enabling you and your stakeholders to review and validate the updates to your assets before publishing the pages with updated assets. 
+description: Dynamic Media with OpenAPI capabilities enables you to preview assets on Adobe Experience Manager (AEM) Sites preview pages. This asset preview enables you and your stakeholders to review and validate the updates to your assets before publishing the author pages (with updated assets) for public consumption. 
 role: Admin, User
 ---
 
 # Preview assets before using them in your AEM Sites pages {#asset-preview-using-Dynamic-Media-with-OpenAPI-capabilities}
 
-[!DNL Dynamic Media with OpenAPI capabilities] lets you preview assets available in your [!DNL Adobe Experience Manager (AEM) Sites] author pages before making them publicly available. 
+[!DNL Dynamic Media with OpenAPI capabilities] lets you preview assets available in your [!DNL Adobe Experience Manager (AEM) Sites] author pages before making them publicly available. The asset preview is available on your site's author and preview tier.
 
-To [generate assets preview](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities), update your AEM Sites author pages by either adding the new assets or replacing the existing ones. Then publish your updated author pages to the preview tier to generate a preview URL of the page. [!DNL Dynamic Media with OpenAPI capabilities] enables the preview of updated assets in your Sites preview tier. Share this preview page with stakeholders to collect feedback on the visual quality and contextual alignment of the updated assets. Refine the assets based on the feedback. 
+To [preview assets on AEM Sites preview pages](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities), update your site's author pages by either adding the assets you want to preview or replacing the existing ones available in your live sites page. Then, publish the updated author pages to the preview tier to generate a preview URL.
 
-During the review cycle, you can create and manage multiple versions of the asset before publishing the final version for public use.
+Share the preview page with stakeholders to gather feedback on the visual quality and contextual alignment of the updated assets. Refine the assets based on feedback, creating and managing multiple versions during the review cycle if needed.
+
+Once you finalize the assets for public use, update them in your author pages and publish the pages to the publish tier for public access.
 
 ## Before you begin{#prerequisites-for-previewing-assets-using-Dynamic-Media-with-OpenAPI-capabilities}
 
