@@ -420,17 +420,19 @@ Check that all fields have correct `bindRef` values that match your FDM exactly.
 
 +++
 
++++Can I use multiple prefill services in one form?
+
+You can configure one primary prefill service per form. However, you can combine different data sources within a single Form Data Model to achieve similar functionality.
+
++++
+
 +++How do I handle authentication for prefill services?
 
 Authentication depends on your data source configuration. For FDM-based prefilling, configure authentication in your data source settings. For draft prefilling, users typically need to be logged in to access their saved drafts.
 
 +++
 
-+++Can I use multiple prefill services in one form?
 
-You can configure one primary prefill service per form. However, you can combine different data sources within a single Form Data Model to achieve similar functionality.
-
-+++
 
 ## Related Topics
 

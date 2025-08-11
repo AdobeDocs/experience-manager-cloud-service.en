@@ -7,12 +7,6 @@ exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 ---
 # Creating Form Fragments in Universal Editor
 
-<!--
-<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
-
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
--->
-
 Form fragments are reusable components that eliminate repetitive development work and ensure consistency across your organization's forms. Instead of recreating common sections like contact information, address details, or consent agreements for every form, you can build these elements once as fragments and reuse them across multiple forms.
 
 **What you'll accomplish in this article:**

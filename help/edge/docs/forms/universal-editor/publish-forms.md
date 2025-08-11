@@ -278,7 +278,8 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 
 - [Configure form submission actions](/help/edge/docs/forms/universal-editor/submit-action.md)
 - [Style and theme your forms](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-- [Add reCAPTCHA protection](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 - [Create responsive form layouts](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+- [Add reCAPTCHA protection](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+
 
 
