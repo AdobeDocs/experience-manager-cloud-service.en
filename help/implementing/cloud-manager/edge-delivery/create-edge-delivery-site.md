@@ -17,7 +17,7 @@ This automation helps reduce the manual effort that is required to set up your i
 
 
 
-<!-- >
+<!--
 ## Practical use cases {#use-cases}
 
 | Use case | Description |
