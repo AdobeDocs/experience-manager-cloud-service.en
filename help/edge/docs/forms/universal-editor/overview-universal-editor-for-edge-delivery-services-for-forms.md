@@ -32,7 +32,7 @@ Whether you're managing lightweight client-side rendering, ensuring cross-browse
 
 | ![Styling](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![Pre-fill Services](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![A/B Testing](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Styling**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **Pre-fill Services** (Coming Soon) | [**A/B Testing**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| [**Styling**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **[Pre-fill forms](/help/edge/docs/forms/universal-editor/prefill-form.md)** | [**A/B Testing**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | Styling with CSS enables developers to customize the appearance of form elements and create a visually appealing design that aligns with the website aesthetics. | Pre-fill Services automatically populate form fields with relevant user data from various sources, reducing manual input and enhancing user experience. | A/B testing enables organizations to experiment with different form designs, layouts, and features to identify the best-performing variants. |
 
 | ![Analytics & Tracking](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Form Fragments](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![Data Binding](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
@@ -152,9 +152,6 @@ The Universal Editor provides the following form components out of the box:
   </tbody>
 </table>
 
-
-## Onboarding
-
 ## Frequently asked questions (FAQ)
 
 **Q. Who can use the Universal Editor?**
@@ -170,11 +167,13 @@ Absolutely. The Universal Editor supports seamless data binding with backend sys
 **Q: Is it possible to customize the form components?**
 Yes, the Universal Editor allows developers to create custom components tailored to specific organizational needs. Additionally, you can extend the functionality of the editor through UI extensions and custom workflows.
 
+**Q: What kind of analytics can I get from the forms?**
+The Universal Editor includes built-in analytics and tracking tools to monitor user interactions, form submission rates, and conversion metrics. These insights help optimize your forms for better performance.
+
 **Q: How does the Universal Editor handle accessibility?**
 The Universal Editor is designed with strict adherence to accessibility standards, including WCAG (Web Content Accessibility Guidelines). This ensures that the forms are usable by individuals with disabilities, providing an inclusive experience.
 
-**Q: What kind of analytics can I get from the forms?**
-The Universal Editor includes built-in analytics and tracking tools to monitor user interactions, form submission rates, and conversion metrics. These insights help optimize your forms for better performance.
+
 
 
 

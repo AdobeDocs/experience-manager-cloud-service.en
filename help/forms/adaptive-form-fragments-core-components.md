@@ -77,9 +77,11 @@ To add an Adaptive Form fragment to an Adaptive Form:
 
      ![select the Adaptive Form Fragments option](/help/forms/assets/adaptive-form-fragment-basic.png)
 
-  <!-- >[!NOTE]
+<!-- 
+   >[!NOTE]
    >
-   >The Adaptive Form fragment is not enabled for authoring from within the Adaptive Form. Moreover, you cannot use an XSD-based fragment in a JSON-based Adaptive Form and the opposite way. -->
+   >The Adaptive Form fragment is not enabled for authoring from within the Adaptive Form. Moreover, you cannot use an XSD-based fragment in a JSON-based Adaptive Form and the opposite way. 
+-->
 
 The Adaptive Form fragment is added by reference to the Adaptive Form and remains in synchronized with the standalone Adaptive Form fragment. This implies that any modifications made to the Adaptive Form fragment are mirrored across all instances where the fragment is incorporated within Adaptive Forms.
 

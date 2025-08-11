@@ -1,9 +1,9 @@
 ---
-Title: How to configure Marketo Engage data for Adaptive Forms?
-Description: Learn how to use Marketo Engage schema in Adaptive Forms.
-Keywords: Use Marketo Engage data source in Adaptive Forms, How to connect a Marketo instance data source with form? , Connect a form to Marketo.
-Feature: Adaptive Forms, Form Data Model
-Role: User, Developer
+title: How to configure Marketo Engage data for Adaptive Forms?
+description: Learn how to use Marketo Engage schema in Adaptive Forms.
+keywords: Use Marketo Engage data source in Adaptive Forms, How to connect a Marketo instance data source with form? , Connect a form to Marketo.
+feature: Adaptive Forms, Form Data Model
+role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
 ---
 # Configure Marketo Engage data source for existing Adaptive Forms
@@ -32,6 +32,8 @@ Prerequisite to use Marketo Engage data source with forms:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442871/marketo-aem-forms-aem-marketo-engage)
 
+<span> This video is applicable only for Core Components. For UE/Foundation Components, please refer to the article.</span>
+ 
 >[!BEGINTABS]
 
 >[!TAB Foundation Component]

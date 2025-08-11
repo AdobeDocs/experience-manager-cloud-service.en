@@ -74,11 +74,12 @@ The **Edge Delivery to-do list** in Cloud Manager is an onboarding task checklis
 | 1 | Join the product collaboration channel | Clicking **Submit request now** submits a request to Adobe to create a channel for your company. If the channel already exists, you are forwarded to your company's channel. |
 | 2 | Complete prerequisites | See [View Getting Started tutorial](https://www.aem.live/developer/tutorial). |
 | 3 | Add Edge Delivery Site OR <br>Create site now | See [Add an Edge Delivery site](#eds-add-site).<br>See [Create an Edge Delivery site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). |
-| 4 | Add domain | See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
-| 5 | Add SSL certificate | See [Add SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
-| 6 | Configure the CDN of your Edge Delivery site | See [Add a Domain Mapping](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md). |
-| 7 | Setup push validation | See [Setup push validation for an Edge Delivery site](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
-| 8 | Go-Live | See [Go-Live checklist](/help/edge/docs/go-live-checklist.md). |
+| 4 | Configure an Edge Delivery site to use an external Git repository | See [Configure an Edge Delivery site to use an external Git repository](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md). |
+| 5 | Add domain | See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
+| 6 | Add SSL certificate | See [Add SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
+| 7 | Configure the CDN of your Edge Delivery site | See [Add a Domain Mapping](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md). |
+| 8 | Setup push validation | See [Setup push validation for an Edge Delivery site](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
+| 9 | Go-Live | See [Go-Live checklist](/help/edge/docs/go-live-checklist.md). |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
