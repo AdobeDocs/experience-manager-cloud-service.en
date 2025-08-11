@@ -9,8 +9,6 @@ exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 ---
 # Publish Adaptive Forms with Edge Delivery Services
 
-## Overview
-
 Publishing an Adaptive Form makes it available on Edge Delivery Services for end users to access and submit. This process involves three main phases: publishing the form, configuring security settings, and accessing the live form.
 
 **What you'll accomplish:**
@@ -22,29 +20,35 @@ Publishing an Adaptive Form makes it available on Edge Delivery Services for end
 
 ## Prerequisites
 
-- **Form Requirements:**
   - Adaptive Form created using Edge Delivery Services template
   - Form tested and ready for production use
-
-- **Access Requirements:**
   - AEM Forms author permissions
   - Cloud Manager access (for production configuration)
   - Developer access to form block code (for submission setup)
 
-- **Related Documentation:**
-  - [Create forms with Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-  - [Configure submit actions](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+## Publishing Process Overview
 
-## Phase 1: Publish Your Form
+Publishing forms to Edge Delivery Services follows a three-phase approach:
 
-### Step 1: Initiate Publishing
+- **Phase 1: Form Publication** - Publish your form to the CDN and verify publication status
+- **Phase 2: Security Configuration** - Set up CORS policies and referrer filters for secure submissions  
+- **Phase 3: Access and Validation** - Test form functionality and validate the complete workflow
+
+Each phase builds on the previous one to ensure secure, functional deployment.
+
+### Phase 1: Publish Your Form
+
++++ Step 1: Initiate Publishing
 
 1. **Access your form**: Open your Adaptive Form in the Universal Editor
 2. **Start publishing**: Click the **Publish** icon in the toolbar
 
    ![Click Publish](/help/forms/assets/publish-icon-eds-form.png)
 
-### Step 2: Review and Confirm
++++
+
+
++++ Step 2: Review and Confirm
 
 1. **Review publishing assets**: The system shows all assets being published, including your form
 
@@ -55,7 +59,10 @@ Publishing an Adaptive Form makes it available on Edge Delivery Services for end
 
    ![Publish Success](/help/forms/assets/publish-success.png)
 
-### Step 3: Verify Publication Status
++++
+
+
++++ Step 3: Verify Publication Status
 
 **Check status**: Click the **Publish** icon again to view current status
 
@@ -67,7 +74,10 @@ Publishing an Adaptive Form makes it available on Edge Delivery Services for end
 - No error messages during publishing process
 - Form appears in published assets list
 
-### Managing Published Forms
++++
+
+
++++ Managing Published Forms
 
 **To unpublish a form:**
 
@@ -77,9 +87,12 @@ Publishing an Adaptive Form makes it available on Edge Delivery Services for end
 
 ![Unpublish form](/help/forms/assets/unpublish--form.png)
 
-## Phase 2: Configure Security Settings
++++
 
-### Why Security Configuration is Required
+
+### Phase 2: Configure Security Settings
+
++++ Why Security Configuration is Required
 
 To enable secure form submissions, you must configure security settings that:
 
@@ -92,7 +105,11 @@ To enable secure form submissions, you must configure security settings that:
 >
 >**Required for Production**: These configurations are mandatory for form submissions to work in production environments.
 
-### Step 1: Configure Form Submission URL
++++
+
+
+
++++ Step 1: Configure Form Submission URL
 
 **Purpose**: Direct form submissions to your AEM instance
 
@@ -117,7 +134,11 @@ export const submitBaseUrl = 'https://publish-staging-p120-e12.adobeaemcloud.com
 - URL matches your environment (production, staging, or local)
 - No trailing slash in the URL
 
-### Step 2: Configure CORS Settings
++++
+
+
+
++++ Step 2: Configure CORS Settings
 
 **Purpose**: Allow form submission requests from Edge Delivery Services domains
 
@@ -145,7 +166,11 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 - [CORS Configuration Guide](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
 - [Referrer Filter Documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
-### Step 3: Configure Referrer Filter
++++
+
+
+
++++ Step 3: Configure Referrer Filter
 
 **Purpose**: Restrict write operations to authorized Edge Delivery Services domains
 
@@ -192,9 +217,14 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 - [Configure Referrer Filter via Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 
-## Phase 3: Access Your Published Form
++++
 
-### URL Structure for Edge Delivery Services
+
+### Phase 3: Access Your Published Form
+
+
+
++++ URL Structure for Edge Delivery Services
 
 **Standard URL Format:**
 
@@ -219,7 +249,11 @@ https://main--universaleditor--wkndforms.aem.live/content/forms/af/wknd-form
 https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 ```
 
-### Final Validation Steps
++++
+
+
+
++++ Final Validation Steps
 
 **Verify Form Accessibility:**
 
@@ -236,29 +270,16 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 - Data appears in configured destination (spreadsheet, email, etc.)
 - No console errors related to CORS or security policies
 
++++
+
 
 ## Next Steps
 
-**Immediate Actions:**
-
-- Test your published form thoroughly
-- Monitor form submission data
-- Set up analytics tracking if needed
-
-**Advanced Topics:**
 
 - [Configure form submission actions](/help/edge/docs/forms/universal-editor/submit-action.md)
 - [Style and theme your forms](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-- [Add reCAPTCHA protection](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 - [Create responsive form layouts](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+- [Add reCAPTCHA protection](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
-## Summary
 
-You have successfully:
 
-- Published your Adaptive Form to Edge Delivery Services
-- Configured security settings for form submission
-- Set up proper URL access for end users
-- Verified form functionality and accessibility
-
-Your form is now live and ready for production use.

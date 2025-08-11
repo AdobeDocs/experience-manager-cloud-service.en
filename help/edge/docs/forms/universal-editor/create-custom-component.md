@@ -39,10 +39,13 @@ By the end of this article, you learn to create custom components from the scrat
 Before a custom component can be used, it must be registered so that the Universal Editor recognizes it as an available option. This is achieved through a component definition, which includes a unique identifier, default properties, and the component's structure.Perform the following steps to make the custom component available for form authoring:
 
 1. **Add new folder and files**
-Add new folder and files for your new custom component in your AEM Project.
+
+    Add new folder and files for your new custom component in your AEM Project.
+
     1. Open your AEM project and navigate to `../blocks/form/components/`.
     1. Add a new folder for your custom component at `../blocks/form/components/<component_name>`. In this example, we create a folder named `range`.
     1. Navigate to the newly created folder at `../blocks/form/components/<component_name>`. For example, navigate to `../blocks/form/components/range`, and add the following files:
+
         - `/blocks/form/components/range/_range.json`: Contains the definition of the custom component.
         - `../blocks/form/components/range/range.css`: Defines the styling for the custom component.
         - `../blocks/form/components/range/range.js`: Customizes the custom component at runtime.
@@ -352,18 +355,18 @@ You can modify custom components using predefined markup, as explained in the [S
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #00008B; /- Dark Blue */
-    border: 3px solid #00008B; /- Dark Blue */
+    background: #00008B; /* Dark Blue */
+    border: 3px solid #00008B; /* Dark Blue */
     cursor: pointer;
     outline: 3px solid #fff;
     }
  
     .range-widget-wrapper.decorated input[type="range"]:focus::-webkit-slider-thumb {
-    border-color: #00008B; /- Dark Blue */
+    border-color: #00008B; /* Dark Blue */
     }
  
     .range-widget-wrapper.decorated .range-bubble {
-    color: #00008B; /- Dark Blue */
+    color: #00008B; /* Dark Blue */
     font-size: 20px;
     line-height: 28px;
     position: relative;
@@ -401,7 +404,7 @@ You can modify custom components using predefined markup, as explained in the [S
     const bubble = element.querySelector('.range-bubble');
     // during initial render the width is 0. Hence using a default here.
     const bubbleWidth = bubble.getBoundingClientRect().width || 31;
-    const left = `${(current / total) - 100}% - ${(current / total) - bubbleWidth}px`;
+    const left = `${(current / total) * 100}% - ${(current / total) * bubbleWidth}px`;
     bubble.innerText = `${value}`;
     const steps = {
         '--total-steps': Math.ceil((max - min) / step),
@@ -495,12 +498,12 @@ The supported fieldTypes for forms are:
 - number-input
 - date-input
 - panel
-- checkbox
-- drop-down
-- radio-group
 - plain-text
 - file-input
 - email
 - image
 - button
+- checkbox
+- drop-down
+- radio-group
 

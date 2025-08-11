@@ -42,45 +42,47 @@ Select the approach that matches your scenario:
 
 ## Prerequisites
 
-Before you begin, ensure you have the following:
+To ensure a smooth and successful experience with Edge Delivery Services for AEM Forms using Universal Editor, review and confirm the following prerequisites before proceeding:
 
-### Required Access
+### Access Requirements
 
-- **GitHub account** with permission to create repositories
-- **AEM as a Cloud Service** authoring access
+- **GitHub Account**: You must have a GitHub account with permissions to create new repositories. This is essential for managing your project source code and collaborating with your team.
+- **AEM as a Cloud Service Authoring Access**: Ensure you have author-level access to your AEM as a Cloud Service environment. This access is required to create, edit, and publish forms.
 
 ### Technical Requirements
 
-- **Git basics**: clone, commit, push operations
-- **Web technologies**: HTML, CSS, JavaScript fundamentals
-- **Node.js** (version 16+ recommended) for local development
-- **npm** or **yarn** package manager
+- **Familiarity with Git**: You should be comfortable performing basic Git operations such as cloning repositories, committing changes, and pushing updates. These skills are fundamental for source control and project collaboration.
+- **Understanding of Web Technologies**: A working knowledge of HTML, CSS, and JavaScript is recommended. These technologies form the foundation of form customization and troubleshooting.
+- **Node.js (version 16 or higher)**: Node.js is required for local development and running build tools. Ensure you have version 16 or later installed on your system.
+- **Package Manager (npm or yarn)**: You will need either npm (Node Package Manager) or yarn to manage project dependencies and scripts.
 
-### Recommended Knowledge
+### Recommended Background
 
-- Basic understanding of AEM Sites concepts
-- Familiarity with form design principles
-- Experience with WYSIWYG editors
+- **AEM Sites Concepts**: A basic understanding of AEM Sites, including site structure and content authoring, will help you navigate and integrate forms effectively.
+- **Form Design Principles**: Familiarity with best practices in form design—such as usability, accessibility, and data validation—will enable you to create effective and user-friendly forms.
+- **Experience with WYSIWYG Editors**: Prior experience using What You See Is What You Get (WYSIWYG) editors will help you leverage the Universal Editor's visual authoring capabilities more efficiently.
 
 >[!TIP]
 >
 > New to AEM? Start with the [AEM Sites Getting Started Guide](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html).
 
-## Path A: Create New Project with Forms
+## Path A: Create a New Project with Forms
 
-**Best for:** New implementations or proof-of-concepts
+**Recommended for:** New projects, pilots, or proof-of-concept initiatives
 
-The AEM Forms Boilerplate provides a pre-configured template with integrated Adaptive Forms Block.
+Leverage the AEM Forms Boilerplate to accelerate your project setup. This boilerplate offers a ready-to-use template that seamlessly integrates the Adaptive Forms Block, enabling you to quickly build and deploy forms within your AEM Site.
 
-### Overview of Steps
+### Overview
 
-1. Set up a GitHub repository from the template
-2. Install AEM Code Sync
-3. Configure AEM project connection
-4. Create and publish an AEM Site
-5. Add forms using Universal Editor
+To successfully launch your new project with integrated forms, you will:
 
-Let's walk through each step:
+1. Create a GitHub repository using the AEM Forms Boilerplate template.
+2. Set up AEM Code Sync to automate content synchronization between AEM and your repository.
+3. Configure the connection between your GitHub project and your AEM environment.
+4. Establish and publish a new AEM Site.
+5. Add and manage forms using the Universal Editor.
+
+The following sections will guide you through each step in detail, ensuring a smooth and efficient project setup experience.
 
 +++Step 1: Create GitHub Repository from Template
 
@@ -175,9 +177,9 @@ The `fstab.yaml` file connects your GitHub repository to AEM authoring environme
    *Figure: Committing the fstab.yaml configuration*
 
 **Validation:** Confirm your GitHub repository connection to AEM.
-
->[!NOTE]
->
+    
+        >[!NOTE]
+        >
 >Having build issues? See [Troubleshooting GitHub build issues](#troubleshooting-github-build-issues).
 
 +++
@@ -204,12 +206,12 @@ The `fstab.yaml` file connects your GitHub repository to AEM authoring environme
    ![Site Template Selection](/help/edge/docs/forms/assets/select-site-template.png)
    *Figure: Selecting the Edge Delivery Services site template*
 
-   >[!NOTE]
-   >
-   >**Template not available?** If you don't see the Edge Delivery Services template:
-   >
-   >1. Click **Import** to upload the template
-   >2. Download templates from [GitHub releases](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)
+    >[!NOTE]
+    >
+    >**Template not available?** If you don't see the Edge Delivery Services template:
+    >
+    >1. Click **Import** to upload the template
+    >2. Download templates from [GitHub releases](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)
 
 4. **Configure your site**
    
@@ -314,20 +316,26 @@ If you already have an AEM project using Edge Delivery Services, you can add for
 
 ### Prerequisites for Path B
 
-- Existing AEM project built with [AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk)
-- Local development environment set up
-- Git access to your project repository
+To proceed with integrating forms into your existing AEM project, ensure the following prerequisites are met:
 
-**Using AEM Forms Boilerplate?** If your project was created with the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), forms are already integrated. Skip to [Create Your First Form](#create-your-first-form).
+- You have an existing AEM project that was created using the [AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
+- You have a [local development environment set up](#set-up-local-development-environment)
+- You possess Git access to your project repository, allowing you to clone, modify, and push changes as needed.
 
-Let's walk through each step:
+>[!NOTE]
+>
+> If your project was originally set up using the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), form functionality is already included. In this case, you can move ahead to the [Create Your First Form](#create-your-first-form) section.
 
-### Overview of Steps
+The following guide provides a structured approach to adding form capabilities to your existing project. Each step is designed to ensure a seamless integration and optimal functionality within the Universal Editor environment.
 
-1. Copy Adaptive Forms Block files
-2. Update project configuration
-3. Configure ESLint rules
-4. Build and commit changes
+### Overview
+
+You will complete the following high-level steps:
+
+1. Copy the Adaptive Forms Block files into your project.
+2. Update your project's configuration to recognize and support form components.
+3. Adjust ESLint rules to accommodate the new files and coding patterns.
+4. Build your project and commit the changes to your repository.
 
 +++Step 1: Copy Forms Block Files
 
@@ -393,11 +401,11 @@ Let's walk through each step:
 
     ```bash
     # Form block rule engine files
-     blocks/form/rules/formula/*
-     blocks/form/rules/model/*
-     blocks/form/rules/functions.js
-     scripts/editor-support.js
-     scripts/editor-support-rte.js
+    blocks/form/rules/formula/*
+    blocks/form/rules/model/*
+    blocks/form/rules/functions.js
+    scripts/editor-support.js
+    scripts/editor-support-rte.js
     ```
 
 2. **Update .eslintrc.js**
@@ -488,19 +496,31 @@ Let's walk through each step:
 
 ## Create Your First Form
 
-**Applies to:** Both Path A and Path B users
+**Who should follow this section:**  
+This section is relevant for users following either Path A (new project) or Path B (existing project).
 
-Now that your project is set up with form capabilities, let's create your first form using Universal Editor's WYSIWYG interface.
+With your project now equipped for form creation, you are ready to build your first form using the Universal Editor's intuitive WYSIWYG authoring environment. The following steps provide a structured approach to designing, configuring, and publishing a form within your AEM Site.
 
-### Overview of Form Creation Process
+### Overview
 
-1. **Add Adaptive Form Block** to your page
-2. **Add form components** (text inputs, buttons, etc.)
-3. **Configure component properties** 
-4. **Preview and test** your form
-5. **Publish** the updated page
+The process of creating a form in Universal Editor consists of several key stages:
 
-Let's walk through each step:
+1. **Insert the Adaptive Form Block**  
+   Begin by adding the Adaptive Form Block to your chosen page.
+
+2. **Add Form Components**  
+   Populate your form by inserting components such as text fields, buttons, and other input elements.
+
+3. **Configure Component Properties**  
+   Adjust the settings and properties of each component to meet your form's requirements.
+
+4. **Preview and Test Your Form**  
+   Use the preview functionality to validate the appearance and behavior of your form before publishing.
+
+5. **Publish the Updated Page**  
+   Once satisfied, publish your page to make the form available to end users.
+
+The following sections will guide you through each of these steps in detail, ensuring a smooth and effective form creation experience.
 
 +++Step 1: Add Adaptive Form Block
 
@@ -642,7 +662,7 @@ A local development environment allows you to make changes and see them instantl
    The AEM CLI simplifies local development tasks:
    
     ```bash
-    npm install -g @adobe/aem-cli
+        npm install -g @adobe/aem-cli
     ```
 
 2. **Clone your repository**
@@ -733,6 +753,28 @@ If you see "Unable to resolve path to module '/scripts/lib-franklin.js'":
 
 +++
 
++++Form Functionality Issues
+
+**Problem:** Form submissions not working
+
+**Solutions:**
+
+- Ensure you have a submit button component
+- Check form action URL configuration
+- Verify form validation rules
+- Test in preview mode first
+
+**Problem:** Styling issues
+
+**Solutions:**
+
+- Check CSS file paths in `blocks/form/`
+- Clear browser cache
+- Verify CSS syntax
+- Test in the local development environment
+
++++
+
 +++Universal Editor Issues
 
 **Problem:** Form components not appearing in Universal Editor
@@ -754,25 +796,5 @@ If you see "Unable to resolve path to module '/scripts/lib-franklin.js'":
 
 +++
 
-+++Form Functionality Issues
-
-**Problem:** Form submissions not working
-
-**Solutions:**
-
-- Ensure you have a submit button component
-- Check form action URL configuration
-- Verify form validation rules
-- Test in preview mode first
-
-**Problem:** Styling issues
-
-**Solutions:**
-
-- Check CSS file paths in `blocks/form/`
-- Clear browser cache
-- Verify CSS syntax
-- Test in the local development environment
-
-+++ 
+ 
 

@@ -505,7 +505,8 @@ To configure a theme to use the Adobe Fonts configuration, perform the following
 
    Now, you can see that the fonts are added in the font-family property of the theme.
 
-<!-- >
+<!-- 
+
 ### Listing and selecting fonts in theme editor {#listing-and-selecting-fonts-in-theme-editor}
 
 You can use the theme configuration service to add more fonts to the theme editor. Perform the following steps to add fonts:
@@ -515,7 +516,8 @@ You can use the theme configuration service to add more fonts to the theme edito
 
    ![theme-config](assets/theme-config.png)
 
-1. Click +, specify the name of the font, and click **Save**. The font is added and available in theme editor. -->
+1. Click +, specify the name of the font, and click **Save**. The font is added and available in theme editor. 
+-->
 
 #### Selecting fonts in theme editor {#selecting-fonts-in-theme-editor}
 
