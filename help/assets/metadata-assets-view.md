@@ -6,6 +6,7 @@ contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
 ---
+
 # Metadata in Assets View {#metadata}
 
 Metadata means data or description about the data. For example, your images as an asset can contain information about the camera it was clicked with or any copyright information. This information is metadata of the image. Metadata is critical for efficient asset management. Metadata is the collection of all the data available for an asset but it may not necessarily be contained in that asset.
@@ -175,7 +176,6 @@ Follow the steps below to use link component on metadata form:
    * Click ![edit icon](assets/do-not-localize/edit.svg) to edit the URL.
 1. Click **[!UICONTROL Save]** to save the changes.
 
-
 ### Working with Tags component in metadata form {#tag-component-metadata-form}
 
 The root element represents the tree structure of the tags that you can associate with the assets, helping to identify the asset based on the tag assigned to it. Additionally, you can restrict the access of a specific taxonomy while configuring the metadata form in metadata editor.
@@ -207,6 +207,17 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 -->
 
 To view the configured root tags, go to the asset's details page where the mapping between the metadata form and root tags is performed.
+
+## Edit Metadata Forms {#edit-metadata-forms}
+
+Execute the following steps to edit a metadata form:
+
+1. Navigate to [!DNL Assets View] homepage and select **[!DNL Metadata Forms]** to view a list a metadata forms.
+1. Select a form and click **[!UICONTROL Edit]** to open the [!DNL Metadata Form Editor] page. This page displays components of the metadata form in the left pane, tabs such as Basic, Advanced, Tags and more in the middle pane and the Settings panel for editing the metadata properties in the right pane.
+1. Open a tab (**[!DNL Basic]**, **[!DNL Advanced]**, or **[!DNL Tags]**).
+1. Select a metadata property to edit its settings in the **[!UICONTROL Settings]** panel. You can update property mappings, rename labels, modify or add property values, and perform more such edits in the **[!UICONTROL Settings]** panel.
+1. Click **[!UICONTROL Preview]** to review the changes to the form before saving those changes.
+1. Click **[!UICONTROL Save]** to apply the changes.
 
 ## Enhancing content discovery with AI-generated metadata {#ai-smart-tags}
 
@@ -285,4 +296,3 @@ How can one search based strictly on the metadata. Similar to AEM Assets GQL que
 >
 >* [Search assets](search.md).
 -->
-

@@ -1,13 +1,12 @@
 ---
-title: How to prefill Adaptive Form fields?
-description: Use existing data to prefill fields of an Adaptive Form. Users can prefill basic information in a form by logging in with their social profiles.
+title: "How to prefill Adaptive Form fields"
+description: "Use existing data to prefill fields of an Adaptive Form. Users can prefill basic information in a form by logging in with their social profiles."
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: prefill adaptive form, adaptive forms edge delivery services, adaptive form autofill
 ---
-
 # Configuring Prefill Service in Adaptive Forms using Edge Delivery Services
 
 Form prefilling is the process of automatically populating form fields with relevant data from external sources as soon as a user opens the form. By leveraging information from user profiles, databases, saved drafts, or other backend systems, prefilling streamlines the form-filling experience—reducing manual input, minimizing errors, and accelerating completion. This not only enhances user satisfaction but also increases the likelihood of successful form submissions.
@@ -31,9 +30,9 @@ The following diagram illustrates the automatic prefill process that occurs when
 The prefill process involves four key steps:
 
 1. **User Opens Form**: User accesses an Adaptive Form through a URL or navigation
-2. **Identify Data Source**: Prefill service determines the configured data source (Form Data Model or Draft service)
-3. **Retrieve Data**: System fetches relevant user data based on context, parameters, or user identification
-4. **Map and Display**: Data is mapped to form fields using `bindRef` properties and the populated form is displayed to the user
+1. **Identify Data Source**: Prefill service determines the configured data source (Form Data Model or Draft service)
+1. **Retrieve Data**: System fetches relevant user data based on context, parameters, or user identification
+1. **Map and Display**: Data is mapped to form fields using `bindRef` properties and the populated form is displayed to the user
 
 This automated process ensures users see a form pre-populated with their relevant information, significantly improving the user experience and form completion rates.
 
@@ -56,7 +55,6 @@ The data format must match your form model:
 - **JSON schema forms**: JSON compliant with the schema
 - **Form Data Model (FDM) forms**: JSON matching the FDM structure
 - **Schema-less forms**: All fields are unbound and use unbound XML
-
 
 ## Prerequisites
 
@@ -100,42 +98,42 @@ The Universal Editor provides two prefill service options:
 
 ## Configure Prefill Service for a Form
 
-
 +++Phase 1: Setting Up Form Data Model
 
 ### Step 1: Create Form Data Model
 
 1. Log in to your AEM Forms as a Cloud Service instance
-2. Navigate to **Adobe Experience Manager** > **Forms** > **Data Integrations**
-3. Select **Create** > **Form Data Model**
-4. Choose your **Data Source Configuration** and select the configured **Data Source**
+1. Navigate to **Adobe Experience Manager** > **Forms** > **Data Integrations**
+1. Select **Create** > **Form Data Model**
+1. Choose your **Data Source Configuration** and select the configured **Data Source**
 
    ![Created Form Data Model](/help/edge/docs/forms/universal-editor/assets/create-fdm.png)
 
    >[!TIP]
    >
-   > For detailed instructions on creating Form Data Models, see [Create Form Data Model](/help/forms/create-form-data-models.md).
+   >For detailed instructions on creating Form Data Models, see [Create Form Data Model](/help/forms/create-form-data-models.md).
 
 ### Step 2: Configure FDM Services
 
 1. Go to **Adobe Experience Manager** > **Forms** > **Data Integrations**
-2. Open your Form Data Model in edit mode
-3. Select a data model object and click **Edit Properties**
-4. Configure **Read** and **Write** services for the selected data model objects
+1. Open your Form Data Model in edit mode
+1. Select a data model object and click **Edit Properties**
+1. Configure **Read** and **Write** services for the selected data model objects
 
    ![Configure read write service](/help/edge/docs/forms/universal-editor/assets/configure-reda-write-service.png)
 
-5. Configure service arguments:
+1. Configure service arguments:
+
    - Click the edit icon for the read service argument
    - Bind the argument to a **User Profile Attribute**, **Request Attribute**, or **Literal value**
    - Specify the binding value (e.g., `petid` for a pet registration form)
 
    ![Configure pet id argument](/help/edge/docs/forms/universal-editor/assets/pet-id-arguments.png)
 
-6. Click **Done** to save the argument and **Save** to save the FDM
+1. Click **Done** to save the argument and **Save** to save the FDM
 
-        >[!NOTE]
-        >
+   >[!NOTE]
+   >
    > Learn more about configuring FDM services in [Work with Form Data Model (FDM)](/help/forms/work-with-form-data-model.md).
 
 +++
@@ -145,20 +143,21 @@ The Universal Editor provides two prefill service options:
 ### Step 3: Create an Adaptive Form
 
 1. Navigate to **Adobe Experience Manager** > **Forms** > **Forms & Documents**
-2. Select **Create** > **Adaptive Forms**
-3. In the **Source** tab, select an Edge Delivery Services template:
+1. Select **Create** > **Adaptive Forms**
+1. In the **Source** tab, select an Edge Delivery Services template:
 
-        ![Edge Delivery Services template](/help/edge/assets/create-eds-forms.png)
+   ![Edge Delivery Services template](/help/edge/assets/create-eds-forms.png)
 
-4. Click **Create** to open the **Create Form** wizard
-5. Specify the form details:
+1. Click **Create** to open the **Create Form** wizard
+1. Specify the form details:
+
    - **Name**: Enter a descriptive name for your form
    - **Title**: Provide a user-friendly title
    - **GitHub URL**: Enter your repository URL (e.g., `https://github.com/wkndforms/edsforms`)
 
-6. Click **Create**
+1. Click **Create**
 
-        ![Create schema based form](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
+   ![Create schema based form](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
 
 The form opens in the Universal Editor for authoring.
 
@@ -166,13 +165,13 @@ The form opens in the Universal Editor for authoring.
   
 1. Select your form and click **Properties**
 
-        ![Select Form Properties](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
+   ![Select Form Properties](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
         
 2. Open the **Form Model** tab
 3. From the **Select From** dropdown, choose **Form Data Model (FDM)**
 4. Select your created Form Data Model (e.g., PetFDM) from the dropdown
  
-        ![Select Form Model tab](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
+   ![Select Form Model tab](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
    
 5. Click **Save & Close**
 6. Open the form for editing in Universal Editor
@@ -187,11 +186,12 @@ The form elements from your FDM appear in the **Datasource** tab of the **Conten
    ![Screenshot of Universal Editor showing schema-based form](/help/edge/docs/forms/universal-editor/assets/ue-form.png)
 
 3. Add data binding to form fields:
+
    - Select a form field
    - In the **Properties** panel, find the **Bind Reference** property
    - Select the appropriate data binding reference
 
-        ![Data Binding](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding1.png)
+     ![Data Binding](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding1.png)
 
 +++
 
@@ -202,12 +202,14 @@ The form elements from your FDM appear in the **Datasource** tab of the **Conten
 Ensure these extensions are enabled in Universal Editor:
 
 1. **AEM Form Properties Extension**
+
    - Open **Extension Manager** in Universal Editor
    - Enable the **AEM Form Properties** extension
 
    ![Form properties icon](/help/edge/docs/forms/universal-editor/assets/form-edit-properties.png)
 
-2. **Data Source Extension**
+1. **Data Source Extension**
+
    - Enable the **Data source** extension if you don't see the **Data Sources** icon
 
    ![Screenshot of Universal Editor Extension Manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
@@ -226,7 +228,7 @@ Ensure these extensions are enabled in Universal Editor:
 3. Click the **Prefill** tab
 4. Select **Form Data Model Prefill Service**
 
-        ![Select Prefill service](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
+   ![Select Prefill service](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
 
 5. Click **Save & Close**
 
@@ -241,13 +243,13 @@ Ensure these extensions are enabled in Universal Editor:
 3. Choose **Preview as HTML**
 4. Test prefilling by appending parameters to the URL:
 
-        https://your-preview-url.com?<bindreferencefield>=<value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **Example:**
 
-        https://your-preview-url.com?petid=12345
+   https://your-preview-url.com?petid=12345
 
-        ![Prefill Form](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
+   ![Prefill Form](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
 
 The form should automatically populate with data based on the provided parameter.
 
@@ -259,40 +261,40 @@ The form should automatically populate with data based on the provided parameter
 
 **JSON Example for FDM-based Form:**
 
-      ```
+```
 
-        {
-          "afBoundData": {
-            "user": {
-              "firstName": "John",
-              "lastName": "Doe",
-              "email": "john.doe@example.com",
-              "phone": "+1-555-0123"
-            }
-          },
-          "afUnBoundData": {
-            "additionalInfo": "User preferences loaded"
-          }
-        }
+  {
+    "afBoundData": {
+      "user": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "phone": "+1-555-0123"
+      }
+    },
+    "afUnBoundData": {
+      "additionalInfo": "User preferences loaded"
+    }
+  }
 
-      ```
+```
 
 **XML Example for XFA-based Form:**
 
-      ```
+```
 
-        <?xml version="1.0" encoding="UTF-8"?>
-        <afData>
-          <afBoundData>
-            <user>
-              <firstName>John</firstName>
-              <lastName>Doe</lastName>
-              <email>john.doe@example.com</email>
-            </user>
-          </afBoundData>
-        </afData>
+  <?xml version="1.0" encoding="UTF-8"?>
+  <afData>
+    <afBoundData>
+      <user>
+        <firstName>John</firstName>
+        <lastName>Doe</lastName>
+        <email>john.doe@example.com</email>
+      </user>
+    </afBoundData>
+  </afData>
 
-      ```
+```
 
 ### Example Prefill URLs
 
@@ -300,11 +302,11 @@ The URLs below are for illustration purposes only and will not work as-is. Repla
 
 **Basic prefill test:**
 
-        https://preview.example.com/form.html?userId=12345
+`https://preview.example.com/form.html?userId=12345`
 
 **Multiple parameter test:**
 
-        https://preview.example.com/form.html?userId=12345&category=premium
+`https://preview.example.com/form.html?userId=12345&category=premium`
 
 
 ## Troubleshooting
@@ -324,21 +326,25 @@ The URLs below are for illustration purposes only and will not work as-is. Repla
 +++Debugging Steps
 
 1. **Verify FDM Configuration:**
+
    - Check if services are configured correctly
    - Test FDM services independently
    - Validate data source connectivity
 
 2. **Check Form Configuration:**
+
    - Confirm form is associated with correct FDM
    - Verify field `bindRef` values
    - Test form without prefill first
 
 3. **Test Data Flow:**
+
    - Use browser developer tools to inspect network requests
    - Check console for JavaScript errors
    - Validate response data format
 
 4. **Common Error Messages:**
+
    - "Prefill service not found": Check service configuration
    - "Data binding failed": Verify `bindRef` accuracy
    - "Invalid data format": Ensure data matches schema
@@ -414,17 +420,18 @@ Check that all fields have correct `bindRef` values that match your FDM exactly.
 
 +++
 
++++Can I use multiple prefill services in one form?
+
+You can configure one primary prefill service per form. However, you can combine different data sources within a single Form Data Model to achieve similar functionality.
+
++++
+
 +++How do I handle authentication for prefill services?
 
 Authentication depends on your data source configuration. For FDM-based prefilling, configure authentication in your data source settings. For draft prefilling, users typically need to be logged in to access their saved drafts.
 
 +++
 
-+++Can I use multiple prefill services in one form?
-
-You can configure one primary prefill service per form. However, you can combine different data sources within a single Form Data Model to achieve similar functionality.
-
-+++
 
 
 ## Related Topics

@@ -1,10 +1,9 @@
 ---
-Title: How to submit data from an Adaptive Form to Microsoft&reg; OneDrive?
-Description: Explore the streamlined process of connecting AEM Forms with Microsoft&reg; OneDrive using the Submit to OneDrive Submit Action. Learn the step-by-step guide to configure OneDrive and set up submission actions for efficient data storage and retrieval
+title: How to submit data from an Adaptive Form to Microsoft&reg; OneDrive?
+description: Explore the streamlined process of connecting AEM Forms with Microsoft&reg; OneDrive using the Submit to OneDrive Submit Action. Learn the step-by-step guide to configure OneDrive and set up submission actions for efficient data storage and retrieval
 keywords: AEM Forms OneDrive Integration, Connect to Microsoft OneDrive, OneDrive Configuration Setup with AEM forms
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
-title: "How to configure a Submit Action for an Adaptive Form?"
 role: User, Developer
 ---
 # Submit an Adaptive Form to Microsoft&reg; OneDrive 
@@ -23,6 +22,8 @@ Some of the advantages of seamless integration of AEM Forms and Microsoft&reg; O
 ## Connect OneDrive to an Adaptive Form
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424864/connect-aem-adaptive-form-to-onedrive/?quality=12&learn=on)
+
+<span> This video is applicable only for Core Components. For UE/Foundation Components, please refer to the article.</span>
 
 Configuring OneDrive for AEM Forms submission, perform the following steps:
 
