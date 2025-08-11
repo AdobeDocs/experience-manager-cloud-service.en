@@ -368,8 +368,9 @@ Postman provides a user-friendly interface for testing API submissions.
    - `[organization]` → Your GitHub organization/username
 
 **Request Configuration:**
+   
+    ```json
 
-```json
 POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
 Headers:
@@ -391,7 +392,7 @@ Body (JSON):
             "email": "mary@gmail.com"
                 }
 }
-```
+     ```
 
 **Expected Response:**
 
@@ -437,7 +438,7 @@ curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
       "email": "joe@example.com"
                 }
             }'
-```
+        ```
 
 >[!TAB Windows Command Prompt]
 
@@ -470,7 +471,7 @@ Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-
   -Method POST `
   -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
   -Body $body
-```
+    ```
 
 >[!ENDTABS]
 
