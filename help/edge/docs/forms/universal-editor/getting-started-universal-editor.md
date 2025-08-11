@@ -1,194 +1,406 @@
 ---
-title: Getting Started with Edge Delivery Services for AEM Forms in Universal Editor - Developer Tutorial
-description: This tutorial helps get you up-and-running with a new Adobe Experience Manager Forms (AEM) project. In ten to twenty minutes, you will have created your own Edge Delivery Services Forms in Universal Editor.
+title: Getting Started with Edge Delivery Services for AEM Forms using Universal Editor
+description: Learn how to create and publish high-performance forms using Edge Delivery Services with Universal Editor's WYSIWYG authoring.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
+level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 ---
 
-# Getting Started with Edge Delivery Services for AEM Forms using Universal Editor (WYSIWYG)
+# Getting Started with Edge Delivery Services for AEM Forms using Universal Editor
 
-| Version | Article link |
-| -------- | ---------------------------- |
-| Universal Editor-based Authoring  |    This article                  |
-| Document-based Authoring     | [Click here](/help/edge/docs/forms/tutorial.md)   |
+| Authoring Method                | Guide                                                                 |
+|---------------------------------|-----------------------------------------------------------------------|
+| **Universal Editor (WYSIWYG)**  | This article                                                         |
+| **Document-based Authoring**    | [Document-based tutorial](/help/edge/docs/forms/tutorial.md)          |
 
+Edge Delivery Services for AEM Forms combines high-performance web delivery with WYSIWYG authoring in Universal Editor. This guide covers creating, customizing, and publishing fast-loading forms.
 
-<span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> with your GitHub organization name and repository name. For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+## What You'll Accomplish
 
-In today's digital age, user-friendly forms are essential for all organizations. Edge Delivery Services Forms are created using the Universal Editor, which offers WYSIWYG (what-you-see-is-what-you-get) capabilities. It provides a modern, intuitive interface for efficient form authoring.
+By the end of this tutorial, you will:
 
-AEM Forms provide a block, known as the Adaptive Forms Block, to help you easily create Edge Delivery Services Forms to capture and store data. You can [create a new AEM Project pre-configured with the Adaptive Forms Block](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [add the Adaptive Forms Block to an existing AEM Project](#add-adaptive-forms-block-to-your-existing-aem-project).
+- Set up a GitHub repository with the Adaptive Forms Block
+- Create an AEM Site integrated with Edge Delivery Services
+- Build and publish forms using Universal Editor
+- Configure local development environment
 
-![Github Repository Workflow](/help/edge/assets/repo-workflow.png){width=auto}
+## Choose Your Path
 
-This tutorial guides you through creating, previewing, and publishing your own form with a new or existing Adobe Experience Manager Site project using Universal Editor's WYSIWYG authoring.
+Select the approach that matches your scenario:
+
+![Choose Your Path Decision Guide](/help/edge/docs/forms/universal-editor/assets/choose-your-path.svg)
+*Figure: Visual guide to help you choose the right implementation path*
+
+| **Path A: New Project**                | **Path B: Existing Project**              |
+|----------------------------------------|-------------------------------------------|
+| Start with a pre-configured template   | Add forms to your current AEM project     |
+| **Best for:** New implementations      | **Best for:** Existing AEM Sites          |
+| **What you get:** Pre-configured Forms Block | **What you get:** Forms added to existing site |
+| **Steps:** Template → Setup → Forms    | **Steps:** Integration → Configuration → Forms |
+| [Start with Path A](#path-a-create-new-project-with-forms) | [Start with Path B](#path-b-add-forms-to-existing-project) |
 
 ## Prerequisites
 
-* You have a GitHub account, and understand Git basics.
-* You understand the basics of HTML, CSS, and JavaScript.
-* You have Node/npm installed for local development.
+To ensure a smooth and successful experience with Edge Delivery Services for AEM Forms using Universal Editor, review and confirm the following prerequisites before proceeding:
 
-## Create a new AEM project pre-configured with Adaptive Forms Block
+### Access Requirements
 
-The AEM Forms Boilerplate template gets you started quickly with an AEM project pre-configured with the Adaptive Forms Block. It is the quickest and easiest way to follow AEM best practices and jump right into building your forms.
+- **GitHub Account**: You must have a GitHub account with permissions to create new repositories. This is essential for managing your project source code and collaborating with your team.
+- **AEM as a Cloud Service Authoring Access**: Ensure you have author-level access to your AEM as a Cloud Service environment. This access is required to create, edit, and publish forms.
 
-### Get started with the AEM Forms boilerplate repository template
+### Technical Requirements
 
-1. Create a GitHub repository for your AEM Project. To create repository:  
-    1. Go to [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms). 
+- **Familiarity with Git**: You should be comfortable performing basic Git operations such as cloning repositories, committing changes, and pushing updates. These skills are fundamental for source control and project collaboration.
+- **Understanding of Web Technologies**: A working knowledge of HTML, CSS, and JavaScript is recommended. These technologies form the foundation of form customization and troubleshooting.
+- **Node.js (version 16 or higher)**: Node.js is required for local development and running build tools. Ensure you have version 16 or later installed on your system.
+- **Package Manager (npm or yarn)**: You will need either npm (Node Package Manager) or yarn to manage project dependencies and scripts.
 
-        ![AEM Forms Boilerplate](/help/edge/docs/forms/assets/eds-form-boilerplate.png)
-    1. Click the **Use this template** option and select the **Create a new repository** option. 
+### Recommended Background
 
-        ![Create new repository using AEM Forms Boilerplate](/help/edge/docs/forms/assets/use-eds-form-template.png)
-    
-        The **Create a new repository** screen opens.  
+- **AEM Sites Concepts**: A basic understanding of AEM Sites, including site structure and content authoring, will help you navigate and integrate forms effectively.
+- **Form Design Principles**: Familiarity with best practices in form design—such as usability, accessibility, and data validation—will enable you to create effective and user-friendly forms.
+- **Experience with WYSIWYG Editors**: Prior experience using What You See Is What You Get (WYSIWYG) editors will help you leverage the Universal Editor's visual authoring capabilities more efficiently.
 
-    1. On the **Create a new repository** screen, select the **owner**, and specify **Repository name** . Adobe recommends to set the repository to **Public**. So, select the **public** option, and click **Create Repository**. 
+>[!TIP]
+>
+> New to AEM? Start with the [AEM Sites Getting Started Guide](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html).
 
-        ![Set the repository to public](/help/edge/docs/forms/assets/name-eds-repo.png)
+## Path A: Create a New Project with Forms
 
-1. Install the AEM Code Sync GitHub App on your repository. To install:
-    1. Go to [https://github.com/apps/aem-code-sync/installations/new](https://github.com/apps/aem-code-sync/installations/new).
-    1. On the **Install AEM Code Sync** screen, select the **Only select Repositories** option and select your newly created repository. Click **Save**.
+**Recommended for:** New projects, pilots, or proof-of-concept initiatives
 
-    ![Set the repository to public](/help/edge/docs/forms/assets/aem-code-sync-up.png)
-    
-1. Now link the GitHub repository you created using AEM Forms Boilerplate to your AEM Project authoring environment. To connect:
+Leverage the AEM Forms Boilerplate to accelerate your project setup. This boilerplate offers a ready-to-use template that seamlessly integrates the Adaptive Forms Block, enabling you to quickly build and deploy forms within your AEM Site.
 
-    1. Go to the GitHub repository that you created eariler using AEM Forms Boilerplate.
-    1. Add the **fstab.yaml** file in the root folder.
+### Overview
 
-        ![open fstab.yaml file](/help/edge/docs/forms/assets/open-fstab.png)
+To successfully launch your new project with integrated forms, you will:
 
-    1. Add the mountpoint of your project to the **fstab.yaml** file. Add the URL of your AEM as a Cloud Service authoring instance.
-        `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
+1. Create a GitHub repository using the AEM Forms Boilerplate template.
+2. Set up AEM Code Sync to automate content synchronization between AEM and your repository.
+3. Configure the connection between your GitHub project and your AEM environment.
+4. Establish and publish a new AEM Site.
+5. Add and manage forms using the Universal Editor.
 
-        ![edit fstab.yaml file](/help/edge/docs/forms/assets/edit-fstab-file.png)
+The following sections will guide you through each step in detail, ensuring a smooth and efficient project setup experience.
 
-    1. Commit the **fstab.yaml** file, once you have added the reference and everything looks good. 
++++Step 1: Create GitHub Repository from Template
 
-        ![commit the changes](/help/edge/docs/forms/assets/commit-fstab-changes.png)
+1. **Access the AEM Forms Boilerplate template**
+   - Go to [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms)
+
+   ![AEM Forms Boilerplate Template](/help/edge/docs/forms/assets/eds-form-boilerplate.png)
+   *Figure: AEM Forms Boilerplate repository with pre-configured Adaptive Forms Block*
+
+2. **Create your repository**
+   - Click **Use this template** > **Create a new repository**
+
+   ![Create Repository from Template](/help/edge/docs/forms/assets/use-eds-form-template.png)
+   *Figure: Using the template to create a new repository*
+
+3. **Configure repository settings**
+   - **Owner**: Select your GitHub account or organization
+   - **Repository name**: Choose a descriptive name (e.g., `my-forms-project`)
+   - **Visibility**: Select **Public** (recommended for Edge Delivery Services)
+   - Click **Create Repository**
+
+   ![Repository Configuration](/help/edge/docs/forms/assets/name-eds-repo.png)
+   *Figure: Configuring your new repository with public visibility*
+
+**Validation:** Confirm you have a new GitHub repository based on the AEM Forms Boilerplate template.
+
++++
+
++++Step 2: Install AEM Code Sync
+
+AEM Code Sync automatically synchronizes content changes between your AEM authoring environment and your GitHub repository.
+
+1. **Install the GitHub App**
+   - Go to [https://github.com/apps/aem-code-sync/installations/new](https://github.com/apps/aem-code-sync/installations/new)
+
+2. **Configure access permissions**
+   - Select **Only select repositories**
+   - Choose your newly created repository
+   - Click **Save**
+
+   ![AEM Code Sync Installation](/help/edge/docs/forms/assets/aem-code-sync-up.png)
+   *Figure: Installing AEM Code Sync with repository-specific permissions*
+
+**Checkpoint:** AEM Code Sync is now installed and has access to your repository.
+
++++
+
++++Step 3: Configure AEM Integration
+
+The `fstab.yaml` file connects your GitHub repository to AEM authoring environment for content synchronization.
+
+1. **Navigate to your repository**
+   - Go to your newly created GitHub repository
+   - You should see the AEM Forms Boilerplate files
+
+2. **Create the fstab.yaml file**
+   - Click **Add file** > **Create new file** in the root directory
+   - Name the file `fstab.yaml`
+
+   ![Creating fstab.yaml file](/help/edge/docs/forms/assets/open-fstab.png)
+   *Figure: Creating the fstab.yaml configuration file*
+
+3. **Add your AEM connection details**
    
-        If you encounter any build issues, see [Troubleshooting GitHub build issues](#troubleshooting-github-build-issues).
+   Copy and paste the following configuration, replacing the placeholders:
+   
+   ```yaml
+   mountpoints:
+     /: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+   ```
+   
+   **Replace:**
+   - `<aem-author>`: Your AEM as a Cloud Service author URL (e.g., `author-p12345-e67890.adobeaemcloud.com`)
+   - `<owner>`: Your GitHub username or organization
+   - `<repository>`: Your repository name
+   
+   **Example:**
 
-### Create a new AEM Project
+   ```yaml
+   mountpoints:
+     /: https://author-p12345-e67890.adobeaemcloud.com/bin/franklin.delivery/mycompany/my-forms-project/main
+   ```
 
-Now that you have a GitHub project, you can proceed to create and publish a new AEM Project at the AEM as a Cloud Service authoring instance.
+   ![Editing fstab.yaml file](/help/edge/docs/forms/assets/edit-fstab-file.png)
+   *Figure: Configuring the mountpoint for AEM integration*
 
-1. To create a new AEM Project:
+4. **Commit the configuration**
+   - Add a commit message: "Add AEM integration configuration"
+   - Click **Commit new file**
 
-   1. Login to AEM as a Cloud Service authoring instance and select **Sites**.
+   ![Committing fstab changes](/help/edge/docs/forms/assets/commit-fstab-changes.png)
+   *Figure: Committing the fstab.yaml configuration*
 
-        ![select sites](/help/edge/assets/select-sites.png)
-
-   1. Click **Create** > **Site from template**.
-
-        ![create-sites](/help/edge/docs/forms/assets/create-sites.png)
-
-   1. Select the Edge Delivery Services Site template and click **Next**.
-
-        ![select-site-template](/help/edge/docs/forms/assets/select-site-template.png)
+**Validation:** Confirm your GitHub repository connection to AEM.
     
         >[!NOTE]
         >
-        > * If the Edge Delivery Services Site template is not available on your authoring instance, click the Import button to upload the template. 
-        > * You can download the Edge Delivery Services Site templates from [GitHub](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases). 
+>Having build issues? See [Troubleshooting GitHub build issues](#troubleshooting-github-build-issues).
 
-   1. Enter the following details to create a new AEM Project:
-       * **Site title** - Add a descriptive title for the site.
-       * **Site title** - Use the `site-name` that you defined in the previous step.
-       * **GitHub URL** - Use the URL of the GitHub project you created in the previous step.
++++
 
-        ![create AEM Site](/help/edge/docs/forms/assets/create-aem-site.png)
++++Step 4: Create an AEM Site connected to your GitHub repository.
 
-   1. The **Create Site** dialog appears, click **Okay**.
+1. **Access the AEM Sites console**
+   - Log into your AEM as a Cloud Service authoring instance
+   - Navigate to **Sites**
 
-         ![click ok](/help/edge/docs/forms/assets/click-ok-aem-site.png)
+   ![AEM Sites Console](/help/edge/assets/select-sites.png)
+   *Figure: Accessing the AEM Sites console*
 
-       In just a few minutes, your new AEM Project is created.
+2. **Start site creation**
+   - Click **Create** > **Site from template**
 
-   1. Navigate to your newly-created AEM project in the Sites console and click **Edit**. 
-        In this case, the `index.html` page is used for illustration.
+   ![Create Site Option](/help/edge/docs/forms/assets/create-sites.png)
+   *Figure: Creating a new site from template*
 
-        ![edit AEM Site](/help/edge/docs/forms/assets/edit-site.png)
+3. **Select the Edge Delivery Services template**
+   - Choose the **Edge Delivery Services Site** template
+   - Click **Next**
 
-        The AEM Project opens in the Universal Editor in a new tab, enabling WYSIWYG authoring. You can now edit your AEM Project. 
-
-        ![Site opens in Universal Editor](/help/edge/docs/forms/assets/site-in-universal-editor.png)
-
-1. Publish your created AEM Project    
-
-    Once you finish editing your AEM Project, publish it. To publish:
-
-   1. On the Sites console, select all of the AEM Project pages and click **Quick Publish**.
-
-        ![publish AEM Sites Project](/help/edge/docs/forms/assets/publish-sites.png)
-
-   1. The **Quick Publish** confirmation dialog appears, click **Publish** to start the publishing process.
-
-        ![Quick Publish confirmation dialog](/help/edge/docs/forms/assets/quick-publish.png)
-
-        Alternatively, you can publish your AEM Project pages directly from the Universal Editor user interface.
-
-        ![Quick Publish confirmation dialog](/help/edge/docs/forms/assets/qui.png)
-
-    Congratulations! You have a new website running on `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`. 
-
-      * `<branch>` refers to the branch of your GitHub repository. 
-      * `<repository>` denotes your GitHub repository. 
-      * `<owner>` refers to username of your GitHub account that hosts your GitHub repository.
-      * `<site-name>` refers to the name of your created site name.
-
-    For example, if the branch name is `main`, repository is `edsforms`, owner is `wkndforms` and the `site-name` is `eds-forms`, the website would be up and running at `https://main--edsforms--wkndforms.aem.page/content/eds-forms/`
+   ![Site Template Selection](/help/edge/docs/forms/assets/select-site-template.png)
+   *Figure: Selecting the Edge Delivery Services site template*
 
     >[!NOTE]
     >
-    > * To view the `index.html` page of the AEM Project, use the URL: `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`
-    > * To view pages other than the `index page` of the AEM Project, use the URL: `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/<site-page-name>`
+    >**Template not available?** If you don't see the Edge Delivery Services template:
+    >
+    >1. Click **Import** to upload the template
+    >2. Download templates from [GitHub releases](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)
 
-Now, you can start [creating and adding forms to your AEM Project](#add-edge-delivery-services-forms-to-aem-project).
+4. **Configure your site**
+   
+   Enter the following information:
+   
+   | Field           | Value                        | Example                                 |
+   |-----------------|-----------------------------|-----------------------------------------|
+   | **Site Title**  | Descriptive name for site    | "My Forms Project"                      |
+   | **Site Name**   | URL-friendly name            | "my-forms-project"                      |
+   | **GitHub URL**  | Your repository URL          | `https://github.com/mycompany/my-forms-project` |
 
-## Add Adaptive Forms Block to your existing AEM Project
+   ![Site Configuration](/help/edge/docs/forms/assets/create-aem-site.png)
+   *Figure: Configuring your new AEM site with GitHub integration*
 
-If you have an existing AEM Project, you can integrate the Adaptive Forms Block into your current project to get started on form creation. 
+5. **Complete site creation**
+   - Review your settings
+   - Click **Create**
+
+   ![Confirm Site Creation](/help/edge/docs/forms/assets/click-ok-aem-site.png)
+   *Figure: Confirming site creation*
+
+   **Success!** Your AEM site is now created and connected to GitHub.
+
+6. **Open in Universal Editor**
+   - In the Sites console, locate your new site
+   - Select the `index` page
+   - Click **Edit**
+
+   ![Edit Site in Universal Editor](/help/edge/docs/forms/assets/edit-site.png)
+   *Figure: Opening your site for editing*
+
+   The Universal Editor opens in a new tab, providing WYSIWYG authoring capabilities.
+
+   ![Universal Editor Interface](/help/edge/docs/forms/assets/site-in-universal-editor.png)
+   *Figure: Your site opened in Universal Editor for WYSIWYG editing*
+
+**Validation:** Confirm your AEM site is ready for form authoring.
+
++++
+
++++Step 5: Publish Your Site
+
+Publishing makes your site available on Edge Delivery Services for global access.
+
+1. **Quick publish from Sites console**
+   - Return to the AEM Sites console
+   - Select your site pages (or select all with Ctrl+A)
+   - Click **Quick Publish**
+
+   ![Publishing AEM Site](/help/edge/docs/forms/assets/publish-sites.png)
+   *Figure: Selecting pages for quick publish*
+
+2. **Confirm publishing**
+   - In the confirmation dialog, click **Publish**
+
+   ![Quick Publish Dialog](/help/edge/docs/forms/assets/quick-publish.png)
+   *Figure: Confirming the publish action*
+
+   **Alternative:** You can also publish directly from Universal Editor using the publish button.
+
+   ![Publish from Universal Editor](/help/edge/docs/forms/assets/qui.png)
+   *Figure: Publishing directly from Universal Editor*
+
+3. **Access your live site**
+   
+   Your site is now live at:
+
+   ```
+   https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/
+   ```
+   
+   **URL Structure Explained:**
+   - `<branch>`: GitHub branch (usually `main`)
+   - `<repo>`: Your repository name
+   - `<owner>`: Your GitHub username or organization
+   - `<site-name>`: Your AEM site name
+   
+   **Example:**
+
+   ```
+   https://main--my-forms-project--mycompany.aem.page/content/my-forms-project/
+   ```
+
+**Validation:** Confirm your site is live on Edge Delivery Services.
+
+>[!TIP]
+>
+> **URL Patterns:**
+>
+> - **Home page:** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`
+> - **Other pages:** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/<page-name>`
+
+**Next:** [Create your first form](#create-your-first-form)
+
++++
+
+## Path B: Add Forms to Existing Project
+
+**Best for:** Existing AEM Sites with Edge Delivery Services
+
+If you already have an AEM project using Edge Delivery Services, you can add form capabilities by integrating the Adaptive Forms Block.
+
+### Prerequisites for Path B
+
+To proceed with integrating forms into your existing AEM project, ensure the following prerequisites are met:
+
+- You have an existing AEM project that was created using the [AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
+- You have a [local development environment set up](#set-up-local-development-environment)
+- You possess Git access to your project repository, allowing you to clone, modify, and push changes as needed.
 
 >[!NOTE]
 >
->
-> This step applies to projects built with the [AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk). If you created your AEM Project using the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), you can skip this step.
+> If your project was originally set up using the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), form functionality is already included. In this case, you can move ahead to the [Create Your First Form](#create-your-first-form) section.
 
-To integrate:
+The following guide provides a structured approach to adding form capabilities to your existing project. Each step is designed to ensure a seamless integration and optimal functionality within the Universal Editor environment.
 
-1. Navigate to the AEM Project repository folder on your local system.
+### Overview
 
-1. Copy and paste the following folders and files from the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) into your AEM Project:
+You will complete the following high-level steps:
 
-   * [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) folder
-   * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) file
-   * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) file
-1. Navigate to the `/scripts/editor-support.js` file in your AEM Project and update it with the [editor-support.js file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
-1. Navigate to the `/models/_section.json` in your AEM Project and append "form" and "embed-adaptive-form" to the components array of the `filters` object:
-    
-    ```
+1. Copy the Adaptive Forms Block files into your project.
+2. Update your project's configuration to recognize and support form components.
+3. Adjust ESLint rules to accommodate the new files and coding patterns.
+4. Build your project and commit the changes to your repository.
+
++++Step 1: Copy Forms Block Files
+
+1. **Navigate to your local project**
+
+   ```bash
+   cd /path/to/your/aem-project
+   ```
+
+2. **Download required files from AEM Forms Boilerplate**
+   
+   Copy these files from the [AEM Forms Boilerplate repository](https://github.com/adobe-rnd/aem-boilerplate-forms):
+   
+   | Source                                                                 | Destination                | Purpose                    |
+   |------------------------------------------------------------------------|----------------------------|----------------------------|
+   | [`blocks/form/`](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) | `blocks/form/`             | Core form functionality    |
+   | [`scripts/form-editor-support.js`](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) | `scripts/form-editor-support.js` | Universal Editor integration |
+   | [`scripts/form-editor-support.css`](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) | `scripts/form-editor-support.css` | Editor styling             |
+
+3. **Update editor support**
+   - Replace your `/scripts/editor-support.js` file with the [editor-support.js from AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
+
+**Validation:** Confirm form block files are in your project.
+
++++
+
++++Step 2: Update Component Configuration
+
+1. **Update section model**
+   
+   Open `/models/_section.json` and add form components to the filters:
+   
+   ```json
+   {
         "filters": [
         {
       "id": "section",
       "components": [
-        .
-        .
-        .
+           "text",
+           "image",
+           "button",
         "form",
         "embed-adaptive-form"
       ]
-     }]
-    ```
+       }
+     ]
+   }
+   ```
+   
+   **What this does:** Enables form components in the Universal Editor component picker.
 
-1. (Optional) Navigate to `/.eslintignore` in your AEM Project and add below lines of code:
-    
-    ```
+**Validation:** Confirm form components appear in Universal Editor.
+
++++
+
++++Step 3: Configure ESLint (Optional)
+
+**Why this step:** Prevents linting errors from form-specific files and configures proper validation rules.
+
+1. **Update .eslintignore**
+   
+   Add these lines to `/.eslintignore`:
+
+    ```bash
+    # Form block rule engine files
     blocks/form/rules/formula/*
     blocks/form/rules/model/*
     blocks/form/rules/functions.js
@@ -196,11 +408,18 @@ To integrate:
     scripts/editor-support-rte.js
     ```
 
-1. (Optional) Navigate to `/.eslintrc.js` in your AEM Project and add below lines of code in the `rules` object:
-    
-    ```
+2. **Update .eslintrc.js**
+   
+   Add these rules to the `rules` object in `/.eslintrc.js`:
+   
+   ```javascript
+   {
+     "rules": {
+       // Existing rules...
+       
+       // Form component cell limits
     'xwalk/max-cells': ['error', {
-      '*': 4, // default limit for all models
+         '*': 4, // default limit
       form: 15,
       wizard: 12,
       'form-button': 7,
@@ -224,153 +443,358 @@ To integrate:
       modal: 11,
       rating: 18,
       password: 20,
-      tnc: 12,
-    }],
-    'xwalk/no-orphan-collapsible-fields': 'off', // Disable until enhancement is done for Forms properties
-    ```
+         tnc: 12
+       }],
+       
+       // Disable this rule for forms
+       'xwalk/no-orphan-collapsible-fields': 'off'
+     }
+   }
+   ```
 
-1. Open the terminal and run the below commands:
+**Validation:** Confirm ESLint works with form components.
+
++++
+
++++Step 4: Build and Deploy
+
+1. **Install dependencies and build**
+
+    ```bash
+    # Install any new dependencies
+    npm install
     
-    ```
-    npm i
+    # Build component definitions
     npm run build:json
     ```
 
-    >[!NOTE]
-    >
-    > Before pushing the changes to your AEM Project repository on GitHub, ensure that the `component-definition.json`, `component-models.json`, and `component-filters.json` files located at the root level of the AEM project are updated with the form-related objects.
+   **What this does:**
+   - Updates `component-definition.json` with form components
+   - Generates `component-models.json` with form models
+   - Creates `component-filters.json` with filtering rules
 
-1. Commit and push these changes to your AEM Project repository on GitHub.
-
-    <!--
-    1. **Update ESLint configuration file**
-    2. Navigate to the `../.eslintignore` file in your AEM Project and add the following line of codes to prevent errors related to the Form Block rule engine:
-        
-            blocks/form/rules/formula/*
-            blocks/form/rules/model/*
-       * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)  folder
-       * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) folder
-    
-     3. **Update component definitions and models files**
-       1. Navigate to the `../models/_component-definition.json` file in your AEM Project and update it with the changes from the [_component-definition.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
-    
-    3. Navigate to the `../models/_component-models.json` file in your AEM Project and update it with the changes from the [_component-models.json file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26) -->
-        
-That's it! The Adaptive Forms Block is now part of your AEM Project. You can [start creating and adding forms to your AEM Project](#add-edge-delivery-services-forms-to-aem-site-project).
-
-## Author Forms using WYSIWYG
-
-You can open your AEM Project in the Universal Editor for WYSIWYG authoring, where you can edit the project and add the Adaptive Form section to include Edge Delivery Services forms on AEM Project pages.
+2. **Verify generated files**
    
-1. Add the Adaptive Form section to your AEM Project page. To add:
-   1. Navigate to your AEM project in the Sites console, select the site page you want to edit, and click **Edit**. The AEM project page opens in Universal Editor for editing.
-   In this case, the `index.html` page is used for illustration.
-   1. Open the Content tree and navigate to a section where you want to add the Adaptive Form section.
-   1. Click the **[!UICONTROL Add]** icon and select the **[!UICONTROL Adaptive Form]** component from the component list.
+   Check that these files in your project root contain form-related objects:
+   - `component-definition.json`
+   - `component-models.json`
+   - `component-filters.json`
 
-    ![content tree](/help/edge/docs/forms/assets/add-adaptive-form-block.png)
-
-    The Adaptive Form section is added. You can now begin adding form components to the AEM Project page.
-
-1. Add form components to the added Adaptive Form section. To add form components: 
-    1. Navigate to the added Adaptive Form section in the Content tree.
+3. **Commit and push changes**
    
-        ![adaptive form block added](/help/edge/docs/forms/assets/adative-form-block.png)
+   ```bash
+   git add .
+   git commit -m "Add Adaptive Forms Block integration"
+   git push origin main
+   ```
 
+**Validation:** Confirm your project includes form capabilities.
 
-    1. Click the **[!UICONTROL Add]** icon and add the desired components from the **Adaptive Form Components** list. 
++++
+
+**Next:** [Create Your First Form](#create-your-first-form)
+
+## Create Your First Form
+
+**Who should follow this section:**  
+This section is relevant for users following either Path A (new project) or Path B (existing project).
+
+With your project now equipped for form creation, you are ready to build your first form using the Universal Editor's intuitive WYSIWYG authoring environment. The following steps provide a structured approach to designing, configuring, and publishing a form within your AEM Site.
+
+### Overview
+
+The process of creating a form in Universal Editor consists of several key stages:
+
+1. **Insert the Adaptive Form Block**  
+   Begin by adding the Adaptive Form Block to your chosen page.
+
+2. **Add Form Components**  
+   Populate your form by inserting components such as text fields, buttons, and other input elements.
+
+3. **Configure Component Properties**  
+   Adjust the settings and properties of each component to meet your form's requirements.
+
+4. **Preview and Test Your Form**  
+   Use the preview functionality to validate the appearance and behavior of your form before publishing.
+
+5. **Publish the Updated Page**  
+   Once satisfied, publish your page to make the form available to end users.
+
+The following sections will guide you through each of these steps in detail, ensuring a smooth and effective form creation experience.
+
++++Step 1: Add Adaptive Form Block
+
+1. **Open your page in Universal Editor**
+   - Navigate to the **Sites** console in AEM
+   - Select the page where you want to add a form (e.g., `index`)
+   - Click **Edit**
    
-        ![add component](/help/edge/docs/forms/assets/add-component.png)
+   Your page opens in Universal Editor for WYSIWYG editing.
 
-        You can also drag and drop the required Adaptive Forms components, as the Universal Editor offers an intuitive drag-and-drop feature.
+2. **Add the Adaptive Form component**
+   - Open the **Content Tree** panel (left sidebar)
+   - Navigate to a section where you want to add your form
+   - Click the **Add** (+) icon
+   - Select **Adaptive Form** from the component list
 
-    1. Select the added Adaptive Form component to update its properties using **[!UICONTROL Properties]**.
- 
-        ![open properties](/help/edge/docs/forms/assets/component-properties.png)
+   ![Adding Adaptive Form Block](/help/edge/docs/forms/assets/add-adaptive-form-block.png)
+   *Figure: Adding an Adaptive Form block to your page*
 
-    1. Preview the form. 
-        The screenshot below displays the form authored in the AEM Project using WYSIWYG authoring:
+**Validation:** Confirm you have an empty form container.
 
-        ![added form](/help/edge/docs/forms/assets/added-form-aem-sites.png)
++++
 
-        Once satisfied with the preview, the user can proceed to publish the page.
++++Step 2: Add Form Components
 
-        >[!NOTE]
-        >
-        > It is important to publish your AEM Project page again after making changes; otherwise, the updates are not visible in the browser.
+1. **Navigate to your form block**
+   - In the Content Tree, locate your newly added Adaptive Form section
 
-1. Re-publish the AEM Project page. 
+   ![Adaptive Form Block Added](/help/edge/docs/forms/assets/adative-form-block.png)
+   *Figure: Adaptive Form block in the content tree*
 
-   1. Click **Publish** to publish the AEM Project page again after adding the form.
+2. **Add form components**
+   
+   You can add components in two ways:
+   
+   **Method A: Click to Add**
+   - Click the **Add** (+) icon in your form section
+   - Select components from the **Adaptive Form Components** list
+   
+   **Method B: Drag and Drop**
+   - Drag components directly from the component panel to your form
+   
+   ![Adding Form Components](/help/edge/docs/forms/assets/add-component.png)
+   *Figure: Adding components to your form*
+   
+   **Recommended starter components:**
+   - Text Input (for name, email)
+   - Text Area (for messages)
+   - Submit Button
 
-        ![publish form](/help/edge/docs/forms/assets/publish-form.png)
+3. **Configure component properties**
+   - Select any form component
+   - Use the **Properties** panel (right sidebar) to configure:
+     - Labels and placeholders
+     - Validation rules
+     - Required field settings
 
-   1. The **Publish** confirmation dialog appears on screen, click **Publish** to start publishing.
+   ![Component Properties Panel](/help/edge/docs/forms/assets/component-properties.png)
+   *Figure: Configuring component properties*
 
-        ![publish form1](/help/edge/docs/forms/assets/publish-form1.png)
+4. **Preview your form**
+   
+   Your form will look something like this:
+   
+   ![Completed Form Preview](/help/edge/docs/forms/assets/added-form-aem-sites.png)
+   *Figure: Example form created with Universal Editor*
 
-        Once you click the **Publish** button, the `Publish started successfully` message appears.
+**Validation:** Confirm your form is ready for publishing.
 
-        ![publish form2](/help/edge/docs/forms/assets/publish-form2.png)
-
-    You can now view the AEM Project page with the added Edge Delivery Services Form at the following URL:
-    `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`.
-
-    For example, if the branch name is `main`, the repository is `edsforms`, the owner is `wkndforms`, and the site-name is `eds-forms`, the URL would be:
-    `https://main--edsforms--wkndforms.aem.page/content/eds-forms/`
-
-    ![index page](/help/edge/docs/forms/assets/publish-index-page.png)
-
-You can style the Edge Delivery Services Forms by editing the `.css` and `.js` files in the Adaptive Forms Block and [setting up a local AEM development environment](#set-up-local-aem-development-environment) to view the changes instantly in your browser.
-
->[!NOTE]
+>[!IMPORTANT]
 >
-> You can also [author a standalone form in Universal Editor and publish it to Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md).
+> Remember to publish your page after making changes to see updates in the browser.
 
-## Set up local AEM development environment
++++
 
-You can set up a local AEM development environment for developing custom styles and components locally. To be up and running with a local AEM development environment:
++++Step 3: Publish Your Form
 
-1. **Install the AEM CLI**: The AEM CLI simplifies development tasks. Let's install it globally using npm:
+1. **Publish from Universal Editor**
+   - Click the **Publish** button in Universal Editor
 
-    ```Bash
+   ![Publishing Form](/help/edge/docs/forms/assets/publish-form.png)
+   *Figure: Publishing your form from Universal Editor*
+
+2. **Confirm publishing**
+   - In the confirmation dialog, click **Publish**
+
+   ![Publish Confirmation](/help/edge/docs/forms/assets/publish-form1.png)
+   *Figure: Confirming the publish action*
+
+   You'll see a success message confirming publication.
+
+   ![Publish Success](/help/edge/docs/forms/assets/publish-form2.png)
+   *Figure: Successful publication confirmation*
+
+3. **View your live form**
+   
+   Your form is now live at:
+
+   ```
+   https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/
+   ```
+   
+   **Example URL:**
+
+   ```
+   https://main--my-forms-project--mycompany.aem.page/content/my-forms-project/
+   ```
+
+   ![Live Form Page](/help/edge/docs/forms/assets/publish-index-page.png)
+   *Figure: Your published form page on Edge Delivery Services*
+
+**Congratulations!** Your form is now live and ready to collect submissions.
+
++++
+
+### Next Steps
+
+Now that you have a working form, you can:
+
+- **Customize styling** by editing CSS and JavaScript files
+- **Add advanced form features** like validation rules and conditional logic
+- **Set up local development** for faster iteration
+- **Create standalone forms** for specific use cases
+
+>[!TIP]
+>
+> **Learn more:** [Create standalone forms in Universal Editor](/help/edge/docs/forms/universal-editor/create-forms.md)
+
+## Set Up Local Development Environment
+
+**Best for:** Developers who want to customize form styling and behavior
+
+A local development environment allows you to make changes and see them instantly without going through the publish cycle.
+
++++Set up AEM CLI and local development
+
+1. **Install AEM CLI**
+   
+   The AEM CLI simplifies local development tasks:
+   
+    ```bash
         npm install -g @adobe/aem-cli
     ```
 
-1. **Clone your GitHub project**: Clone your AEM Project repository from GitHub using the following command, replacing <owner> with the repository owner and <repo> with the repository name:
+2. **Clone your repository**
 
-    ```
-
+    ```bash
     git clone https://github.com/<owner>/<repo>
-
+    cd <repo>
     ```
 
-1. **Start Your Local Environment**: Navigate to your project directory and start your local AEM instance with a single command:
+   Replace `<owner>` and `<repo>` with your actual GitHub details.
 
-    ```  
-    cd <repo>
+3. **Start the local development server**
+
+    ```bash
     aem up
     ```
  
-You can make local changes in the Adaptive Forms Block `blocks/form` folder for styling and coding for your forms! Edit the `.css` or `.js` files within this directory, and you can see that the changes reflected instantly in your browser.
+   This starts a local server with hot-reload capabilities.
 
-Once you have completed your changes, use Git commands to commit and push them. This updates your preview and production environments, accessible at the following URLs (replace placeholders with your project details):
+4. **Make customizations**
+   
+   - Edit files in the `blocks/form/` directory for form styling and behavior
+   - Modify `form.css` for styling
+   - Update `form.js` for behavior
+   
+   **See changes instantly** in your browser at `http://localhost:3000`
 
-Preview: `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>`
+5. **Deploy your changes**
+   
+   ```bash
+   git add .
+   git commit -m "Custom form styling"
+   git push origin main
+   ```
+   
+   Your changes will be available at:
+   - **Preview:** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>`
+   - **Production:** `https://<branch>--<repo>--<owner>.aem.live/content/<site-name>`
 
-Production: `https://<branch>--<repo>--<owner>.aem.live/content/<site-name>`
++++
 
 
-## Troubleshooting GitHub build issues 
+## Troubleshooting
 
-Ensure a smooth GitHub build process by addressing potential issues:
+### Common Issues and Solutions
 
-* **Handle Linting Errors:**
-    Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from `"lint": "npm run lint:js && npm run lint:css"` to `"lint": "echo 'skipping linting for now'"`. Save the file and commit the changes to your GitHub project.
++++GitHub Build Issues
 
-* **Resolve Module Path Error:**
-    If you encounter the error "Unable to resolve path to module "'/scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file. 
+**Problem:** Build failures or linting errors
 
-## See also
+**Solution 1: Handle Linting Errors**
 
-{{universal-editor-see-also}}
+If you encounter linting errors:
+
+1. Open `package.json` in your project root
+2. Find the `lint` script:
+
+   ```json
+   "scripts": {
+     "lint": "npm run lint:js && npm run lint:css"
+   }
+   ```
+
+3. Temporarily disable linting:
+
+   ```json
+   "scripts": {
+     "lint": "echo 'skipping linting for now'"
+   }
+   ```
+
+4. Commit and push the changes
+
+**Solution 2: Module Path Errors**
+
+If you see "Unable to resolve path to module '/scripts/lib-franklin.js'":
+
+1. Navigate to `blocks/form/form.js`
+2. Update the import statement:
+
+   ```javascript
+   // Change this:
+   import { ... } from '/scripts/lib-franklin.js';
+   
+   // To this:
+   import { ... } from '/scripts/aem.js';
+   ```
+
++++
+
++++Form Functionality Issues
+
+**Problem:** Form submissions not working
+
+**Solutions:**
+
+- Ensure you have a submit button component
+- Check form action URL configuration
+- Verify form validation rules
+- Test in preview mode first
+
+**Problem:** Styling issues
+
+**Solutions:**
+
+- Check CSS file paths in `blocks/form/`
+- Clear browser cache
+- Verify CSS syntax
+- Test in the local development environment
+
++++
+
++++Universal Editor Issues
+
+**Problem:** Form components not appearing in Universal Editor
+
+**Solutions:**
+
+- Verify AEM Code Sync is installed and running
+- Check that `fstab.yaml` has the correct AEM author URL
+- Ensure your AEM instance has early access enabled
+- Confirm `component-definition.json` includes form components
+
+**Problem:** Changes not visible after publishing
+
+**Solutions:**
+
+- Wait for CDN cache refresh
+- Check browser cache (try incognito/private mode)
+- Verify the correct URL format is being used
+
++++
+
+ 
+
