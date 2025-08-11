@@ -10,7 +10,7 @@ role: Admin, User
 
 To [preview assets on AEM Sites preview pages](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities), update your site's author pages by either adding the assets you want to preview or replacing the existing ones available in your live sites page. Then, publish the updated author pages to the preview tier to generate a preview URL.
 
-Share the preview page with stakeholders to gather feedback on the visual quality and contextual alignment of the updated assets. Refine the assets based on feedback, creating and managing multiple versions during the review cycle if needed.
+Share the preview page with stakeholders to gather feedback on the visual quality and contextual alignment of the updated assets. Refine the assets based on feedback. Create and manage multiple versions of the asset during the review cycle.
 
 Once you finalize the assets for public use, update them in your author pages and publish the pages to the publish tier for public access.
 
