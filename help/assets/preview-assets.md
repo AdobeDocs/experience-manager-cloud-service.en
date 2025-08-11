@@ -17,8 +17,8 @@ During the review cycle, you can create and manage multiple versions of the asse
 Ensure you have:
 
 * Access to [!DNL AEM Assets as a Cloud Service].
-* Permission to edit the Review Status property of assets.
-* [Added [!UICONTROL Preview] value to the [!UICONTROL  Status] metadata property available in [!UICONTROL Basic] tab](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) of the metadata form applied to the folder containing the assets to preview.
+* Permission to edit the Status property of assets.
+* [Added [!UICONTROL Preview] value to the [!UICONTROL  Status] metadata property available in [!UICONTROL Basic] tab](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) of the metadata form applied to the folder containing the assets to preview.
 ![Add Preview option](/help/assets/assets/metedata-form-preview.png)
 * The key to generate the preview token. [Contact Adobe support](https://helpx.adobe.com/in/contact.html) and raise a request for the key.
 
