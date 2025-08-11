@@ -501,19 +501,19 @@ Master these shortcuts to build forms faster and more efficiently:
 - **Plan before building** - Sketch your form structure before starting
 - **Keep it simple** - Avoid overwhelming users with too many fields
 
-### **Performance Optimization**
-
-- **Minimize components** - Use only necessary form fields
-- **Optimize images** - Compress any images used in forms
-- **Test on mobile** - Ensure good performance on slower mobile connections
-- **Validate early** - Set up proper validation to prevent submission errors
-
 ### **User Experience**
 
 - **Test frequently** - Use Preview Mode after every major change
 - **Think like users** - Consider the complete form-filling experience  
 - **Provide clear labels** - Make field purposes obvious to users
 - **Add helpful text** - Use help text for complex fields
+
+### **Performance Optimization**
+
+- **Minimize components** - Use only necessary form fields
+- **Optimize images** - Compress any images used in forms
+- **Test on mobile** - Ensure good performance on slower mobile connections
+- **Validate early** - Set up proper validation to prevent submission errors
 
 ## Next Steps
 

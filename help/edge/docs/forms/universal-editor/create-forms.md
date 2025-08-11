@@ -35,10 +35,12 @@ Before you begin, determine which template type aligns with your requirements:
 
 **Decision Guidance:**
 
+![Template Selection Decision](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 - Use **Core Components** for complex workflows, deep AEM integration, or if leveraging existing AEM assets.
 - Use **Edge Delivery Services** for performance, simplicity, and modern development practices.
 
-![Template Selection Decision](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 *Decision flowchart for choosing the appropriate template type*
 
 ## Prerequisites
