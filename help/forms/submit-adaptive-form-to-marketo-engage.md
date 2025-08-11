@@ -1,9 +1,9 @@
 ---
-Title: How to configure submit action to Marketo Engage for forms?
-Description: Learn how to configure the submit action of Adaptive Form to send data to Marketo Engage.
-Keywords: Submit data to Marketo engage, Configure submit action as Submit to Marketo Engage
-Feature: Adaptive Forms, Form Data Model
-Role: User, Developer
+title: How to configure submit action to Marketo Engage for forms?
+description: Learn how to configure the submit action of Adaptive Form to send data to Marketo Engage.
+keywords: Submit data to Marketo engage, Configure submit action as Submit to Marketo Engage
+feature: Adaptive Forms, Form Data Model
+role: User, Developer
 exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
 ---
 # Configure the submit action to Marketo Engage for existing forms 
@@ -29,6 +29,9 @@ Prerequisite to configure the submit action to Marketo Engage:
 ## How to configure submit action to Marketo Engage for existing forms?
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442866/submit-action-marketo-engage-marketo-aem-aem-forms-engage)
+
+<span> This video is applicable only for Core Components. For UE/Foundation Components, please refer to the article.</span>
+ 
 
 >[!BEGINTABS]
 

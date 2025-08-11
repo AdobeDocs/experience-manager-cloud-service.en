@@ -17,10 +17,10 @@ This AEM Forms tutorial guides you through creating, previewing, and publishing 
 
 ## Prerequisites
 
-* You have a GitHub account, and understand Git basics.
-* You have a Google or Microsoft SharePoint account.
-* You understand the basics of HTML, CSS, and JavaScript.
-* You have Node/npm installed for local development.
+- You have a GitHub account, and understand Git basics.
+- You have a Google or Microsoft SharePoint account.
+- You understand the basics of HTML, CSS, and JavaScript.
+- You have Node/npm installed for local development.
 
 **Heads up!** This tutorial uses macOS, Chrome, and Visual Studio Code. While the steps can be adapted for other setups, the screenshots and specific UI elements might differ based on your chosen operating system, browser, and code editor.
 
@@ -57,9 +57,9 @@ The AEM Forms Boilerplate template gets you started quickly with an AEM project 
 
     Congratulations! You have a new website running on `https://<branch>--<repo>--<owner>.aem.page/`. 
 
-    * `<branch>` refers to the branch of your GitHub repository. 
-    * `<repository>` denotes your GitHub repository. 
-    * `<owner>` refers to username of your GitHub account that hosts your GitHub repository.
+    - `<branch>` refers to the branch of your GitHub repository. 
+    - `<repository>` denotes your GitHub repository. 
+    - `<owner>` refers to username of your GitHub account that hosts your GitHub repository.
 
     For example, if the branch name is `main`, repository is `wefinance`, and owner is `wkndforms`, the website would be up and running at `https://main--wefinance--wkndforms.aem.page`
     <!--(https://main--wefinance--wkndform.aem.page)-->
@@ -173,9 +173,9 @@ To preview unpublished content:
        
     ```
 
-    * `<branch>` refers to the branch of your GitHub repository. 
-    * `<repository>` denotes your GitHub repository. 
-    * `<owner>` refers to username of your GitHub account that hosts your GitHub repository.
+    - `<branch>` refers to the branch of your GitHub repository. 
+    - `<repository>` denotes your GitHub repository. 
+    - `<owner>` refers to username of your GitHub account that hosts your GitHub repository.
 
     
     `https://<branch>--<repo>--<owner>.aem.page/enquiry` URL. 
@@ -288,9 +288,9 @@ To integrate:
 
 1. Copy and paste the following folders and files from the [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) into your AEM Project:
 
-   * [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) folder
-   * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) file
-   * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) file
+   - [form block](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) folder
+   - [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) file
+   - [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) file
 1. Navigate to the `/scripts/editor-support.js` file in your AEM Project and update it with the [editor-support.js file in the AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)
 1. Navigate to the `/models/_section.json` in your AEM Project and append "form" and "embed-adaptive-form" to the components array of the `filters` object:
     
@@ -370,13 +370,9 @@ That's it! The Adaptive Forms Block is now part of your AEM project. You can sta
 
 Ensure a smooth GitHub build process by addressing potential issues:
 
-* **Resolve Module Path Error:**
+- **Resolve Module Path Error:**
     If you encounter the error "Unable to resolve path to module "'/scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
-* **Handle Linting Errors:**
+- **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from `"lint": "npm run lint:js && npm run lint:css"` to `"lint": "echo 'skipping linting for now'"`. Save the file and commit the changes to your GitHub project.
 
-
-## See also
-
-{{see-more-forms-eds}}

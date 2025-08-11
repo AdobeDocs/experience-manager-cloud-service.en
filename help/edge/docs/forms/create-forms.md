@@ -20,9 +20,9 @@ These forms submit data directly to a Microsoft Excel or Google Sheets file, ena
 
 Before you start, ensure that you have completed the following steps:
 
-* Set up an [AEM project using AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [added Adaptive Forms Block to your existing AEM Project](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) and clone the corresponding GitHub repository on your local machine. 
+- Set up an [AEM project using AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [added Adaptive Forms Block to your existing AEM Project](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) and clone the corresponding GitHub repository on your local machine. 
 <!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
-* Ensure that you have access to Google Sheets or Microsoft SharePoint. To set up Microsoft SharePoint as your content source, see [How to use SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
+- Ensure that you have access to Google Sheets or Microsoft SharePoint. To set up Microsoft SharePoint as your content source, see [How to use SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
 
@@ -48,10 +48,10 @@ After completing these steps, the Adaptive Forms Block is successfully added to 
 
 Ensure a smooth GitHub build process by addressing potential issues:
 
-* **Resolve Module Path Error:**
+- **Resolve Module Path Error:**
     If you encounter the error "Unable to resolve path to module "'../../scripts/lib-franklin.js'", navigate to the [EDS Project]/blocks/forms/form.js file. Update the import statement by replacing the lib-franklin.js file with the aem.js file.
 
-* **Handle Linting Errors:**
+- **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
 +++ Step 1: Author a form using Microsoft Excel or Google Sheet.
@@ -101,9 +101,9 @@ To proceed with form creation:
        
     ```
 
-    * `<branch>` refers to the branch of your GitHub repository. 
-    * `<repository>` denotes your GitHub repository. 
-    * `<owner>` refers to username of your GitHub account that hosts your GitHub repository.
+    - `<branch>` refers to the branch of your GitHub repository. 
+    - `<repository>` denotes your GitHub repository. 
+    - `<owner>` refers to username of your GitHub account that hosts your GitHub repository.
 
     For example, if your project's repository is named "wefinance", it's located under the account "wkndform", and you're using the "main" branch, the URL look like the following:
 
@@ -160,6 +160,3 @@ Till now, you have prepared the structure of the form. Now, to preview the form:
 [Prepare your spreadsheet](/help/edge/docs/forms/submit-forms.md) to begin accepting data upon form submission.
 
 
-## See also
-
-{{see-more-forms-eds}}

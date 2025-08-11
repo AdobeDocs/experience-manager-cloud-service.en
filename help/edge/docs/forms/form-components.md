@@ -20,17 +20,17 @@ Here's an overview of the available components:
 
 ### Input Fields
 
-* All the valid HTML5 [input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) and [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea). For example, button, checkbox, color, date, datetime-local, email, file, hidden, image, month, number, password, radio, range, reset, submit, tel, text, time, url, and week. 
+- All the valid HTML5 [input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) and [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea). For example, button, checkbox, color, date, datetime-local, email, file, hidden, image, month, number, password, radio, range, reset, submit, tel, text, time, url, and week. 
 
 ### Selection Controls
 
-* [Checkbox groups](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox): For selecting multiple options.
-* [Radio groups](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio): For selecting a single option from a group.
-* [Dropdown menus](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select): To display a menu of options. For example, drop-down box. 
+- [Checkbox groups](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox): For selecting multiple options.
+- [Radio groups](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio): For selecting a single option from a group.
+- [Dropdown menus](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select): To display a menu of options. For example, drop-down box. 
 
 ### Containers
 
-* Panels/Containers: To group related form elements together for better organization. It is a combination of the [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) and [legend](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend). 
+- Panels/Containers: To group related form elements together for better organization. It is a combination of the [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) and [legend](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend). 
 
 
 ## Components properties
@@ -58,8 +58,3 @@ Each form component comes with various properties that allow you to control its 
 | Repeatable  | All                          | A Boolean property for `fieldset` indicating that a particular fieldset can be repeated for specified `Min` and `Max` number of times. The `Min` property should set to 1 or greater, don't set the `Min` property to 0. |
 | Visible Expression  | All                          | A visible expression refers to a spreadsheet formula, denoted by the '=' tag, used for controlling the visibility of a field. In this formula, only the value property of other fields can be employed, allowing straightforward management of field visibility within the system.|
 | Value Expression  | All                          | A value expression refers to a spreadsheet formula, denoted by the '=' tag, used for controlling the value of a field. In this formula, only the value property of other fields can be employed, allowing straightforward management of field value within the system. |
-
-
-## See also
-
-{{see-more-forms-eds}}
