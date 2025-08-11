@@ -16,7 +16,7 @@ Once you finalize the assets for public use, update them in your author pages an
 
 ## Before you begin{#prerequisites-for-previewing-assets-using-Dynamic-Media-with-OpenAPI-capabilities}
 
-Ensure you have:.
+Ensure you have:
 
 * Access to [!DNL AEM Assets as a Cloud Service].
 * Permission to edit the Status property of assets.
