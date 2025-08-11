@@ -658,7 +658,7 @@ Forms become powerful tools for data collection, lead qualification, and user en
 
 +++
 
-+++ Next steps
+## Next steps
 
 **Recommended learning path**:
 
@@ -674,4 +674,3 @@ Forms become powerful tools for data collection, lead qualification, and user en
 - [Extension Manager guide](/help/implementing/developing/extending/extension-manager.md) for enabling additional capabilities
 - [Edge Delivery Services forms](/help/edge/docs/forms/overview.md) for comprehensive form development guidance
 
-+++

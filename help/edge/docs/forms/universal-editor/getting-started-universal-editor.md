@@ -753,6 +753,28 @@ If you see "Unable to resolve path to module '/scripts/lib-franklin.js'":
 
 +++
 
++++Form Functionality Issues
+
+**Problem:** Form submissions not working
+
+**Solutions:**
+
+- Ensure you have a submit button component
+- Check form action URL configuration
+- Verify form validation rules
+- Test in preview mode first
+
+**Problem:** Styling issues
+
+**Solutions:**
+
+- Check CSS file paths in `blocks/form/`
+- Clear browser cache
+- Verify CSS syntax
+- Test in the local development environment
+
++++
+
 +++Universal Editor Issues
 
 **Problem:** Form components not appearing in Universal Editor
@@ -774,25 +796,5 @@ If you see "Unable to resolve path to module '/scripts/lib-franklin.js'":
 
 +++
 
-+++Form Functionality Issues
-
-**Problem:** Form submissions not working
-
-**Solutions:**
-
-- Ensure you have a submit button component
-- Check form action URL configuration
-- Verify form validation rules
-- Test in preview mode first
-
-**Problem:** Styling issues
-
-**Solutions:**
-
-- Check CSS file paths in `blocks/form/`
-- Clear browser cache
-- Verify CSS syntax
-- Test in the local development environment
-
-+++ 
+ 
 
