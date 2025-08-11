@@ -1,90 +1,97 @@
 
-# Create Communication Document
+# Create an Interactive Communication
 
-A Communication Document allows users to create personalized, data-driven communications, such as insurance summaries, policy updates, or customer notices, and distribute them across channels including email, print, or web. It's ideal for delivering dynamic, multi-platform customer communication.
+Interactive communication enables you to create, manage, and deliver personalized and interactive communications, including customer service, billing, onboarding documents, offer letters, account updates, and more. It is designed to support any scenario where dynamic, user-specific content enhances the communication experience across industries.
 
-When you launch the Interactive Communication Editor, you can create a new document, use an existing template, or reuse sample fragments—guided steps will help you define the layout, structure, and data integration for your first communication.
+Imagine you need to send a bank statement, insurance policy, or utility bill to thousands of customers. Each one has the same layout but personalized data. Interactive Communication (IC) makes that possible efficiently.
 
-## 1. Create a Communication Document
+![Find IC Docu](/help/forms/interactive-communication/assets/Picture1.png)
 
-To create a communication document, perform the following steps:
-1. Open your Adobe Experience Manager (AEM) environment.
-2. Navigate to **Forms > Forms & Documents**.
-3. Click the **Create** button and select **Interactive Communication**.
+Manually producing these documents can be time-consuming and often results in inconsistencies, especially when personalization and data integration are required. With the Interactive Communication Editor, users can streamline the process of creating Interactive communication. 
+
+In this article, we'll explore how to create your first Interactive Communication. 
+
+## 1. Create an Communication Communication
+
+Below are three ways to start an Interactive Communication, depending on the level of reuse and data integration you need.
+
+### 1.1. Create a Blank Interactive Communication
+
+Creating a blank interactive communication allows you to start from scratch, ideal when you want full control over layout, structure, and logic.
+Steps to follow:
+
+* Open your **Adobe Experience Manager (AEM) Forms as a Cloud Service instance**.
+* Navigate to **Forms > Forms & Documents**.
+* Click **Create > Interactive Communication**.
+
 
 ![Find IC Docu](/help/forms/interactive-communication/assets/find-ic-documnet.png)
 
-## 2. Define Communication Document Properties
-
-When you click Interactive Communication, a configuration window appears where you can define key details of your communication document. This includes the following sections:
+* In the creation screen, leave the **Template** field blank.
 
 ![Find IC Docu](/help/forms/interactive-communication/assets/create-ic-document.png)
 
-1. Provide a **Title** as the display name visible to users and authors.
-2. Assign a unique **Name** for repository identification.
-3. Include a brief **Description** of the communication.
-4. Link a **Form Data Model** to populate the document dynamically.
-5. Add relevant **Tags** for easier categorization and searchability.
-6. Mention the **Author** responsible for creating the content.
-7. Set a **Publish Date** to schedule when the document should go live.
-8. Specify an **Unpublished Date** to define when the document should expire.
+* Fill out other details like Title, Name, Author, etc.
+* Click **Create** to enter the Interactive Communication Editor UI and begin designing.
 
-Once these fields are completed, click the **Create** button to start building your first Interactive Communication Document.
+### 1.2. Create a Template-based Interactive Communication
 
-## 3. Interactive Communication Editor UI
+Using a template helps speed up design by reusing consistent layout elements such as headers, footers, logos, or standard formatting.
+Templates ensure brand consistency and save time for commonly used communication types. Perform the below steps:
 
-After clicking the Create button, a new window opens displaying the Interactive Communication Editor UI. This interface presents components and segments such as Design View, Master Pages, PDF Preview, Object Library, Fragments, and more, allowing you to visually build, customize, and preview your communication document with real-time data integration.
+* Open AEM Forms as a Cloud Service instance.
+* Go to **Forms > Forms & Documents**, click **Create > Interactive Communication**.
+* In the creation form, select an enabled template from the dropdown.
+* Fill out other details like Title, Name, Author, etc.
+* Click **Create** to design your communication with the selected template structure.
+
+### 1.3. Create a Data-Interacted Interactive Communication
+Data-interacted communications automatically personalize content using backend data.
+Ideal for statements, invoices, or notices where structure remains constant, but the data varies per recipient. Steps to follow:
+*    Open AEM Forms as a Cloud Service instance.
+*    Go to **Forms > Forms & Documents**, click **Create > Interactive Communication**.
+*    In the **Form Data Model** field, link your predefined **FDM (Form Data Model)**.
+*    Fill out other details like Title, Name, Author, etc.
+*    Use **Data Model** inside the editor to bind fields to dynamic data (e.g., customer name, balance, account number).
+*    Use **Content Areas, Subforms**, and **Fragments** to structure and repeat data where needed.
+*    Preview using **PDF Preview** and finalize the communication for delivery.
+
+## 2. Interactive Communication Editor UI
+
+A new window opens displaying the **Interactive Communication Editor UI**. 
 
 ![Find IC Docu](/help/forms/interactive-communication/assets/ic-ui.png)
 
-## 4. Components and Segments
+## 3. Interactive Communication Views
 
 These views help you visually design and structure your communication document with ease.
 
 ![Find IC Docu](/help/forms/interactive-communication/assets/ic-component-and-segment.png)
 
-### 4.1 Master Pages
-In Master Pages, you can define layout elements like headers, footers, watermarks, and logos that appear on every page of the communication. This ensures brand consistency and saves time by reusing common design components.
+**Master Pages:** Define reusable elements like headers, footers, and logos for consistent layout across all pages.
+**Design View:** Build your layout using drag-and-drop components from the Object Library.
+**PDF Preview:** Instantly preview the final PDF with applied layout and data bindings.
 
-### 4.2 Design View
-Use Design View to build the actual layout of your communication. Simply drag and drop components like text fields, images, and tables from the Object Library onto your document. You can adjust spacing, align components, and group related items to match your communication design. After building your layout in Design View, make sure to save your changes before using the PDF previewer.
+**[Note: See article Components and Segments for more information]**
 
-### 4.3 PDF Preview
-The PDF Preview lets you instantly see how your communication will appear as a finalized PDF. It reflects all current data bindings and layout elements, helping you quickly identify and correct any formatting issues before publishing.
+## 4. Interface Elements
 
-## 5. Core Interface Elements
-
-These tools allow you to define structure, bind data, and manage component behavior in your communication document.
+Core interface elements allow you to define structure, bind data, and manage component behavior in your communication document.
 
 ![Find IC Docu](/help/forms/interactive-communication/assets/ic-core-interface-element.png)
 
-### 5.1 Component Hierarchy
-This panel shows the tree structure of your document layout. You can manage the nesting of containers, forms, and elements, rename components, and rearrange them to maintain a logical flow.
+**Component Hierarchy:** Displays the layout's hierarchical structure to manage nesting, rename, or reorder elements.
 
-### 5.2 Object Library
-The Object Library provides a collection of reusable components such as text boxes, images, buttons, tables, checkboxes, and more. You can drag these objects into your Design View and configure their properties as per your communication needs.
+**Object Library:** Provides reusable drag-and-drop components like text boxes, buttons, and tables.
 
-### 5.3 Fragments
-Fragments are reusable content blocks like disclaimers, legal notices, or reusable layouts. You can import them into different communication documents, ensuring consistency and reducing duplication of effort.
+**Fragments:** Lets you insert prebuilt, reusable content blocks for consistency and efficiency.
 
-### 5.4 Data Model
-The Data Model allows you to bind your communication document to XML or JSON data sources. This ensures that customer-specific data (like name, address, policy number) is dynamically inserted into the document at runtime.
+**Data Model:** Connects your document to FDM for real-time dynamic personalization.
 
-### 5.5 Add Pages
-If your communication spans multiple sections, use this option to add one or more pages. This is useful when working with long statements or multi-part documents.
+**Add Pages:** Allows insertion of additional pages to support long or sectioned documents.
 
-### 5.6 Content Areas
-Content Areas are zones where data-driven or personalized content will be displayed. You can assign data-bound components here that change based on the user or data context.
+**Properties Panel (Right side of UI showing selected element properties):** Displays editable properties of the selected object, allowing you to customize behavior, appearance, and data bindings.
 
-### 5.7 Subforms
-Subforms are used to group related fields—like a list of transactions or dependent names—that may repeat dynamically depending on the input data. You can define if they repeat horizontally or vertically.
+**[Note: See article Interface Elements for more information]**
 
-### 5.8 Object
-Use this panel to configure individual component properties like visibility, size, layout alignment, conditional behavior, and interactivity. This helps you tailor the experience based on user data or actions.
-
-### 5.9 Data Binding
-This is where you link form fields to backend data, ensuring that user information is pre-filled automatically from connected systems. It ensures accuracy and eliminates manual input.
-
-## 6. Conclusion
-
-By using views and interface elements, users can drag, drop, configure, and preview personalized communications that meet customer needs. AEM's Interactive Communication Editor simplifies the design and delivery of consistent, dynamic, and automated experiences across platforms.
+These interface elements help achieve visually structured, data-integrated documents tailored to each recipient. They streamline design while enabling consistent, automated communication experiences.
