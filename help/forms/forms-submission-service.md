@@ -130,7 +130,8 @@ The Forms Submission Service offers two configuration approaches. Choose the met
 Before configuring either method, ensure your AEM project foundation is ready:
 
 1. **Create or update your AEM project** with the latest Adaptive Forms Block ([Getting Started Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial))
-1. **Update `fstab.yaml`** in your project root:
+
+2. **Update `fstab.yaml`** in your project root:
 
    ```yaml
    # Replace with the path to your shared folder
@@ -138,7 +139,10 @@ Before configuring either method, ensure your AEM project foundation is ready:
      /: https://drive.google.com/drive/folders/your-shared-folder-id
    ```
 
-1. **Share your project folder** with `forms@adobe.com` (edit permissions required)
+
+3. **Share your project folder** with `forms@adobe.com` (edit permissions required)
+
++++
 
 +++
 
@@ -158,9 +162,9 @@ Create your form structure using Google Sheets or Microsoft Excel.
 **Form Creation Steps:**
 
 1. **Open your spreadsheet platform** (Google Sheets or Microsoft Excel)
-1. **Create a new spreadsheet** for your form project
-1. **Name your sheet** (must be either `helix-default` or `shared-aem`)
-1. **Define your form structure** using the [form creation guide](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+2. **Create a new spreadsheet** for your form project
+3. **Name your sheet** (must be either `helix-default` or `shared-aem`)
+4. **Define your form structure** using the [form creation guide](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![Form Definition](/help/forms/assets/form-submission-definition.png)
 *Example: Form definition with field types, labels, and validation rules*
@@ -191,9 +195,9 @@ Set up a dedicated sheet to receive form submission data.
 **Data Sheet Setup:**
 
 1. **Add a new sheet** to your existing spreadsheet
-1. **Name the sheet exactly `incoming`** (case-sensitive)
-1. **Set up column headers** that match your form fields
-1. **Save the spreadsheet** to ensure changes are preserved
+2. **Name the sheet exactly `incoming`** (case-sensitive)
+3. **Set up column headers** that match your form fields
+4. **Save the spreadsheet** to ensure changes are preserved
 
 ![Incoming sheet](/help/forms/assets/form-submission-incoming-sheet.png)
 *Example: Incoming sheet with column headers matching form fields*
@@ -227,13 +231,11 @@ Grant the Adobe Forms Submission Service access to your spreadsheet.
 **Sharing Process:**
 
 1. **Click the Share button** in the top-right corner of your spreadsheet
-1. **Add the Adobe service account:**
-
+2. **Add the Adobe service account:**
    - Email: `forms@adobe.com`
    - Permission level: **Editor** (required for data writing)
-
-1. **Send the sharing invitation**
-1. **Copy the spreadsheet link** for the next step
+3. **Send the sharing invitation**
+4. **Copy the spreadsheet link** for the next step
 
    ![Share incoming sheet](/help/forms/assets/form-submission-share-incoming.png)
    *Step-by-step sharing process for granting Adobe service access*
@@ -270,18 +272,19 @@ Link your form definition to the submission spreadsheet.
 **Form-Spreadsheet Connection:**
 
 1. **Open your form definition spreadsheet** (the one with `helix-default` or `shared-aem` sheet)
-1. **Locate the Submit field row** in your form definition
-1. **Paste the copied spreadsheet link** into the **Action** column for the Submit field
-1. **Save the changes** to your form definition
+2. **Locate the Submit field row** in your form definition
+3. **Paste the copied spreadsheet link** into the **Action** column for the Submit field
+4. **Save the changes** to your form definition
 
     ![Link a spreadsheet](/help/forms/assets/form-submission-sheet-linking.png)
-    *Example: Connecting the submit action to your data collection spreadsheet*
+
+*Example: Connecting the submit action to your data collection spreadsheet*
 
 **Publishing Your Form:**
 
 1. **Open AEM Sidekick** in your browser
-1. **Preview your form** to test the configuration
-1. **Publish the form** to make it live
+2. **Preview your form** to test the configuration
+3. **Publish the form** to make it live
 
 **Final Validation:**
 
@@ -358,16 +361,15 @@ Postman provides a user-friendly interface for testing API submissions.
 **Setup Instructions:**
 
 1. **Create a new POST request** in Postman
-1. **Configure the endpoint:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
-1. **Replace placeholders:**
-
+2. **Configure the endpoint:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
+3. **Replace placeholders:**
    - `{id}` → Your actual Form ID
    - `[repository]` → Your GitHub repository name
    - `[organization]` → Your GitHub organization/username
 
 **Request Configuration:**
    
-```json
+    ```json
 POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
 Headers:
@@ -389,7 +391,7 @@ Body (JSON):
             "email": "mary@gmail.com"
                 }
 }
-```
+     ```
 
 **Expected Response:**
 
@@ -435,7 +437,7 @@ curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
       "email": "joe@example.com"
                 }
             }'
-```
+        ```
 
 >[!TAB Windows Command Prompt]
      
@@ -468,7 +470,7 @@ Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-
   -Method POST `
   -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
   -Body $body
-```
+    ```
 
 >[!ENDTABS]
 
