@@ -4,6 +4,7 @@ description: An Adaptive Form provides multiple Submit Actions. A Submit Action 
 keywords: how to select submit action for an adaptive form, connect an adaptive form to sharepoint list, connect an adaptive form to sharepoint document library, connect an adaptive form to form data model (FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
+exl-id: beee9be7-8215-496b-9fb9-61fba000a055
 ---
 # Adaptive Form Submit Action
 
@@ -71,6 +72,3 @@ You can configure the submit action for forms created in the Universal Editor us
 >
 > - If you do not see the **Edit Form Properties** icon in your Universal Editor interface, enable the **Edit Form Properties** extension in the Extension Manager. 
 > - Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable or disable extensions in the Universal Editor.
-
-
-
