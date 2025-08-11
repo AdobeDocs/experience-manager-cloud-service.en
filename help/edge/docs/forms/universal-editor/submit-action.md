@@ -14,7 +14,6 @@ role: User, Developer
 | AEM as a Cloud Service (Core Components) | [Click here](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | This article |
 
-## Overview
 
 Form submission is the critical final step in the user journey—it's where collected data is processed and actions are taken. This document provides a comprehensive guide to configuring and managing submit actions for Adaptive Forms in Universal Editor.
 

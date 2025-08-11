@@ -311,7 +311,7 @@ The Accordion Layout saves space by organizing content into collapsible sections
 
 +++
 
-## Comprehensive Troubleshooting
+## Troubleshooting
 
 ### Layout Issues
 

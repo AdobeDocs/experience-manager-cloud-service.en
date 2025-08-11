@@ -1505,6 +1505,33 @@ main .form .text-wrapper input {
 
 +++
 
++++ Form State Styling
+
+```css
+/- Validation states */
+.form .field-wrapper.error input {
+  border-color: var(--form-error-color);
+}
+
+.form .field-wrapper.success input {
+  border-color: var(--form-success-color);
+}
+
+/- Loading state */
+.form[data-submitting="true"] {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/- Disabled state */
+.form input:disabled {
+  background-color: var(--form-input-disabled-background);
+  cursor: not-allowed;
+}
+```
+
++++
+
 +++ Common Selector Mistakes
 
 ```css
@@ -1531,31 +1558,7 @@ main .form form .text-wrapper input {
 
 +++
 
-+++ Form State Styling
 
-```css
-/- Validation states */
-.form .field-wrapper.error input {
-  border-color: var(--form-error-color);
-}
-
-.form .field-wrapper.success input {
-  border-color: var(--form-success-color);
-}
-
-/- Loading state */
-.form[data-submitting="true"] {
-  opacity: 0.7;
-  pointer-events: none;
-}
-
-/- Disabled state */
-.form input:disabled {
-  background-color: var(--form-input-disabled-background);
-  cursor: not-allowed;
-}
-```
-+++
 
 ### **Component-Specific Best Practices**
 

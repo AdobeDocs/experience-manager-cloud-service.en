@@ -1,6 +1,6 @@
 ---
 title: How to integrate Form Data Model (FDM) for a form in Universal Editor?
-description: Learn to create forms based on a form data model(FDM). Generate and edit sample data for data model objects in the FDM.
+description: Learn to create forms for edge delivery services based on a form data model(FDM). Generate and edit sample data for data model objects in the FDM.
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
