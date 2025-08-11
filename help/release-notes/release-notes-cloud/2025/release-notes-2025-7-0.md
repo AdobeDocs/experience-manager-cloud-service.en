@@ -60,7 +60,6 @@ AEM Assets now enables you to [configure the display of asset titles in Card vie
 
 You can now also choose to disable AI-generated metadata at the folder level. 
 
-
 ### New Features in Content Hub {#new-features-content-hub}
 
 **Enhanced branding flexibility in Content Hub**
@@ -169,13 +168,12 @@ Accelerate your AEM Forms Edge Delivery Services development with this CLI tool.
 **API Integration Tool for Dynamic Form Data**
 
 The API Integration Tool enables form authors to create dynamic, intelligent forms that automatically fetch and populate data from external REST APIs based on user interactions. This no-code integration capability transforms static forms into responsive data collection interfaces.
-
   
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Principal View for Permissions Management {#principal-view}
+### Node View for Permissions Management {#node-view}
 
-AEM introduces Permissions Management for Users and Groups. The main functionality remains the same as the classic UI, but is more user-friendly and efficient. See the [dedicated article](/help/security/touch-ui-principal-view.md) for further information.
+AEM introduces Node view Permissions Management. The main functionality remains the same as the classic UI, but is more user-friendly and efficient. See the [dedicated article](/help/security/touch-ui-principal-view.md) for further information.
 
 ### Updated Deprecation Process {#updated-deprecation-process}
 
