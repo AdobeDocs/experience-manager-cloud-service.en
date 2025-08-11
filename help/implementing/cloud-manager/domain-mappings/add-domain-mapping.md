@@ -62,7 +62,7 @@ curl -svo /dev/null https://www.example.com \
 ```
 
 * Replace **`www.example.com`** with your domain.
-* Substitute **151.101.3.10** with the Edge IP address shown in Cloud Manager for this mapping.
+* The IP address ``151.101.3.10`` is one of the IPs that can be used to access AEM Cloud Service. See also [APEX record](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-apex-record).
 
 The `--resolve` flag forces the request to the specified IP and returns success only after the certificate and routing for your domain have been installed correctly.
 
