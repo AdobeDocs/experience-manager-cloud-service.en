@@ -6,13 +6,14 @@ feature: Commerce Integration Framework
 role: Admin
 index: no
 ---
+
 # Building Product Experiences {#building-experiences}
 
 Learn how to manage product experiences.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the Adobe Experience Manager (AEM) Content and Commerce journey, [Manage staged product catalog experiences](staged-catalog.md), you learned how to manage staged product catalog experiences.
+In the previous document of the Adobe Experience Manager (AEM) Content and Commerce journey, [Manage staged product catalog experiences,](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md) you learned how to manage staged product catalog experiences.
 
 ## Objective {#objective}
 
@@ -26,7 +27,7 @@ In AEM, you can create various types of content and link them to the product cat
 
 ### Assets {#assets}
 
-On a high level, there are two types of assets related to products: product & marketing. Product assets are managed by merchants and focus on showing the product (mostly in front of a neutral background). The assets are either managed in the commerce solution or in AEM Assets (with an Assets integration to the commerce / pim solution).
+On a high level, there are two types of assets related to products: product & marketing. Product assets are managed by merchants and focus on showing the product (mostly in front of a neutral background). The assets are either managed in the commerce solution or in AEM Assets (with an Assets integration to the commerce/PIM solution).
 
 Marketing assets are related to promoting and using the product which is owned by marketing. Examples are showing multiple products ("shop the look"), in a specific context ("outdoor fall collection"), or how-to pdfs. CIF provides an easy way to link any AEM asset with a product catalog object.
 
@@ -110,6 +111,6 @@ You are now ready to manage product experiences using AEM Content and Commerce. 
 
 ## Additional Resources {#additional-resources}
 
-* [Authoring Commerce Experiences](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
-* [Product Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
-* [Content Fragment component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)
+* [Authoring Commerce Experiences](/help/commerce-cloud/cif-storefront/authoring/authoring-commerce-experiences.md)
+* [Product Cockpit](/help/commerce-cloud/cif-storefront/authoring/product-cockpit.md)
+* [Content Fragment component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)

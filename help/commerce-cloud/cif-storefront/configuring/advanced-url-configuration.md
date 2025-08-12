@@ -13,11 +13,12 @@ exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
 role: Admin
 index: no
 ---
+
 # Advanced URL Configurations {#url}
 
 >[!NOTE]
 >
-> Search Engine Optimization (SEO) has become a key concern for many marketers. As a result, SEO concerns must be addressed on many projects on Adobe Experience Manager (AEM) as a Cloud Service. See [SEO and URL Management Best Practices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html) for additional information.
+> Search Engine Optimization (SEO) has become a key concern for many marketers. As a result, SEO concerns must be addressed on many projects on Adobe Experience Manager (AEM) as a Cloud Service. See [SEO and URL Management Best Practices](/help/overview/seo-and-url-management.md) for additional information.
 
 [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) provides advanced configurations to customize the URLs for product and category pages. Many implementations customize these URLs for search engine optimization (SEO) purposes. The following video details how to configure the `UrlProvider` Service and features of [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) to customize the URLs for product and category pages.
 
@@ -25,11 +26,11 @@ index: no
 
 ## Configuration {#configuration}
 
-To configure the `UrlProvider` service according to the SEO requirements and needs, a project must provide an OSGI configuration for the _CIF URL Provider configuration_.
+To configure the `UrlProvider` service according to the SEO requirements and needs, a project must provide an OSGi configuration for the _CIF URL Provider configuration_.
 
 >[!NOTE]
 >
-> Since release 2.0.0 of the AEM CIF Core Components, the URL Provider configuration only provides pre-defined URL formats, instead of the free-text configureable formats known from 1.x releases. Furthermore the use of selectors to pass data in URLs has been replaced with suffixes.
+> Since release 2.0.0 of the AEM CIF Core Components, the URL Provider configuration only provides pre-defined URL formats, instead of the free-text configurable formats known from 1.x releases. Furthermore the use of selectors to pass data in URLs has been replaced with suffixes.
 
 ### Product Page URL Format {#product}
 
@@ -153,7 +154,7 @@ The alternative "new-products/new-in-summer-2022/gold-cirque-earrings.html" matc
 
 ## Specific Category and Product Pages {#specific-pages}
 
-It is possible to create [multi-category and product pages](../authoring/multi-template-usage.md) for only a specific subset of categories or products of a catalog. 
+It is possible to create [multi-category and product pages](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md) for only a specific subset of categories or products of a catalog. 
 
 ### Selection Criteria {#specific-pages-selection}
 
@@ -218,15 +219,15 @@ URL rewrites can also be achieved by using AEM Dispatcher HTTP server with `mod_
 
 As mentioned before selecting one of the available default formats, or even implementing a custom format, highly depends on the needs and requirements of a store. The following suggestions may help to make an educated decision.
 
-_**Use a product page URL format that contains the SKU.**_
+#### Use a product page URL format that contains the SKU. {#use-sku}
 
 The CIF Core Components use the SKU as primary identifier in all components. If the product page URL format does not contain the SKU, a GraphQL query is necessary to resolve it. This resolution may impact the time-to-first-byte. Also, it may be desired, that shoppers can find products by SKU using search engines.
 
-_**Use a product page URL format that contains the category context.**_
+#### Use a product page URL format that contains the category context. {#use-url}
 
 Some features of the CIF URL Provider are only available when using product URL formats, that encode the category context, like the category `url_key` or the category `url_path`. Even if those features may not be required for a new store, using one of these URL formats in the beginning helps to reduce migration efforts in the future.
 
-_**Balance between URL length and encoded information.**_
+#### Balance between URL length and encoded information. {#balance-url}
 
 Depending on the catalog size, in particular the size and depth of the category tree, it may not be reasonable to encode the full `url_path` of categories into the URL. In that case, the URL length could be reduced by including only the category's `url_key` instead. This method supports most of the features that are available when using the category `url_path`.
 
@@ -238,7 +239,7 @@ Many of the default URL formats are somehow compatible with each other, meaning 
 
 On the other hand, search engines need time to recrawl all catalog pages with the new URL format. To support this process and also to improve the end-user experience, it is recommended to provide redirects that forward the user from the old URLs to the new ones.
 
-One approach for that could be, to connect a stage environment to the production e-commerce backend and configure it to use the new URL format. Afterwards obtain the [product sitemap generated by CIF products sitemap generator](../../overview/seo-and-url-management.md) for both the stage and the production environment, and use them to create an [Apache httpd rewrite map](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). This rewrite map can then be deployed to the Dispatcher together with the rollout of the new URL format.
+One approach for that could be, to connect a stage environment to the production e-commerce backend and configure it to use the new URL format. Afterwards obtain the [product sitemap generated by CIF products sitemap generator](/help/overview/seo-and-url-management.md) for both the stage and the production environment, and use them to create an [Apache httpd rewrite map](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). This rewrite map can then be deployed to the Dispatcher together with the rollout of the new URL format.
 
 ## Example {#example}
 
@@ -251,5 +252,5 @@ The [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia) proje
 ## Additional Resources {#additional}
 
 * [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM Resource Mapping](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
+* [AEM Resource Mapping](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
 * [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

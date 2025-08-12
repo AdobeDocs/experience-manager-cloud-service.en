@@ -6,6 +6,7 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: 3f18f976-ff8a-4726-b4c5-db4e19ae7cee
 ---
+
 # Introducing AEM Commerce Integration Framework (CIF) {#cif-intro}
 
 A commerce solution can be anything from a commercial solution such as the Adobe Commerce Cloud to a set of custom commerce services. The integration is highly dependent on the use-case and ecosystem. It usually affects various systems and comes in many different varieties:
@@ -63,4 +64,4 @@ CIF supports you with standardized integration patterns based on best practices.
 
 If you are following a Commerce Journey, go to the next step:
 
-* The [AEM Content Author journey](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
+* The [AEM Content Author journey](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/getting-started.md)

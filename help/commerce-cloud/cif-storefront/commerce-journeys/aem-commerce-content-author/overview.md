@@ -6,6 +6,7 @@ feature: Commerce Integration Framework
 role: Admin
 index: no
 ---
+
 # AEM Content and Commerce Content Author Journey {#aem-commerce-author-journey}
 
 Start here for a guided journey through AEM Content and Commerce to learn how to manage product experiences.
@@ -51,4 +52,4 @@ Although you can go directly to a particular part of the journey, many concepts 
 
 ## What's Next {#what-is-next}
 
-You are now ready to get started on your AEM Content and Commerce Development journey. We encourage you to continue on to the next part of the journey and read the article [Learn about AEM Content and Commerce](/help/commerce-cloud/introduction.md).
+You are now ready to get started on your AEM Content and Commerce Development journey. We encourage you to continue on to the next part of the journey and read the article [Learn about AEM Content and Commerce.](/help/commerce-cloud/cif-storefront/introduction.md)

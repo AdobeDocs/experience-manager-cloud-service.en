@@ -16,7 +16,7 @@ index: no
 
 # AEM-CIF core components and Adobe Experience Platform integration {#aem-cif-aep-integration}
 
-The [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif-components) core components provide seamless integration with [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) to forward storefront events and their data from client-side interactions such as __add to cart__.
+The [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif-components) core components provide seamless integration with [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html) to forward storefront events and their data from client-side interactions such as __add to cart__.
 
 The [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) project provides a JavaScript library called [Adobe Experience Platform connector for Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) to collect event data from your Commerce storefront. That event data is sent to the Experience Platform where it is used in other Adobe Experience Cloud products, such as Adobe Analytics and Adobe Target to build a 360-degree profile that covers a customer journey. By connecting Commerce data to other products in the Adobe Experience Cloud, you can perform tasks like analyze user behavior on your site, perform AB testing, and create personalized campaigns.
 
@@ -30,9 +30,9 @@ The following steps show how to send the `addToCart` event data from AEM-rendere
 
 ## Prerequisites {#prerequisites}
 
-Use a local development environment to complete this demo. This includes a running instance of AEM that is configured and connected to an Adobe Commerce instance. Review the requirements and steps for [setting up local development with AEM as a Cloud Service SDK](../develop.md).
+Use a local development environment to complete this demo. This includes a running instance of AEM that is configured and connected to an Adobe Commerce instance. Review the requirements and steps for [setting up local development with AEM as a Cloud Service SDK.](/help/commerce-cloud/cif-storefront/develop.md)
 
-You also need access to [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html) and permissions to create the schema, dataset, and datastreams for data collection. For more information, see [Permission management](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html).
+You also need access to [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html) and permissions to create the schema, dataset, and datastreams for data collection. For more information, see [Permission management.](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html)
 
 ## AEM Commerce as a Cloud Service setup {#aem-setup}
 
@@ -40,11 +40,11 @@ To have a working __AEM Commerce as a Cloud Service__ local environment with the
 
 ### Local setup
 
-Follow the [Local Setup](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#local-setup) steps so you can have a working AEM Commerce as a Cloud Service environment.
+Follow the [Local Setup](/help/commerce-cloud/cif-storefront/develop.md#local-setup) steps so you can have a working AEM Commerce as a Cloud Service environment.
 
 ### Project setup
 
-Follow the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#project) steps so you can create a brand new AEM Commerce (CIF) project. 
+Follow the [AEM Project Archetype](/help/commerce-cloud/cif-storefront/develop.md#project) steps so you can create a brand new AEM Commerce (CIF) project. 
 
 >[!TIP]
 >
@@ -144,8 +144,9 @@ Navigate to the `ui.frontend` module and update the `webpack.common.js` file so 
 
 The [Apollo Client](https://www.apollographql.com/docs/react/) is used to manage both local and remote data with GraphQL. It also stores the results of GraphQL queries in a local, normalized, in-memory cache. 
 
-For [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) to work effectively, you need a `possibleTypes.js` file. To generate this file, see [Generating possibleTypes automatically](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). Also, see the [PWA Studio reference implementation](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) and an example of a [`possibleTypes.js`](../assets/aep-integration/possibleTypes.js) file.
+For [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) to work effectively, you need a `possibleTypes.js` file. To generate this file, see [Generating possibleTypes automatically.](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically)
 
+Also, see the [PWA Studio reference implementation](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) and an example of a [`possibleTypes.js`](../assets/aep-integration/possibleTypes.js) file.
 
 1. Navigate to the `ui.frontend` module and save the file as `./src/main/possibleTypes.js`
 
@@ -223,7 +224,7 @@ To initialize the React-based Peregrine and CIF core components, create the requ
 
     >[!IMPORTANT]
     >
-    >While you might already be familiar with the [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) file from __AEM Guides - CIF Venia Project__, there are a few changes you must make to this file. First, review any __TODO__ comments. Then, inside the `eventsCollector` property, find the `eventsCollector > aep` object and update the `orgId` and `datastreamId` properties to the correct values. [Learn more](./aep.md#add-aep-values-to-aem).
+    >While you might already be familiar with the [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) file from __AEM Guides - CIF Venia Project__, there are a few changes you must make to this file. First, review any __TODO__ comments. Then, inside the `eventsCollector` property, find the `eventsCollector > aep` object and update the `orgId` and `datastreamId` properties to the correct values. [Learn more.](#add-aep-values-to-aem)
 
 1.  Create an `App.js` file with the following content. This file resembles a typical React application-starting point file and contains React and custom hooks and React Context usage to facilitate the Experience Platform integration. 
 
@@ -327,9 +328,9 @@ To initialize the React-based Peregrine and CIF core components, create the requ
     - initializes them with a given configuration for Experience Platform and/or ACDS
     - subscribes to all events from Peregrine and forwards them to the events SDK
 
-    You can review the implementation details of  `EventCollectorContext`. See [aem-core-cif-components on GitHub](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js).
+    You can review the implementation details of  `EventCollectorContext`. See [aem-core-cif-components on GitHub.](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js)
 
-### Build and deploy the updated AEM project
+### Build and deploy the updated AEM project {#build-and-deploy}
 
 To make sure the above package installation, code, and config changes are correct, rebuild, and deploy the updated AEM Commerce project using the following Maven command: `$ mvn clean install -PautoInstallSinglePackage`.
 
@@ -339,9 +340,9 @@ To receive and store the event data coming from the AEM Commerce pages such as c
 
 >[!AVAILABILITY]
 >
->Make sure you are part of the correct __Product Profiles__ under __Adobe Experience Platform__ and __Adobe Experience Platform Data Collection__. If needed, work with your system administrator to create, update, or assign __Product Profiles__ under the [Admin Console](https://adminconsole.adobe.com/).
+>Make sure you are part of the correct __Product Profiles__ under __Adobe Experience Platform__ and __Adobe Experience Platform Data Collection__. If needed, work with your system administrator to create, update, or assign __Product Profiles__ under the [Admin Console.](https://adminconsole.adobe.com/)
 
-### Create Schema with Commerce field group
+### Create Schema with Commerce field group {#create-schema}
 
 To define the structure for commerce event data, you must create an Experience Data Model (XDM) schema. A schema is a set of rules that represent and validate the structure and format of data.
 
@@ -364,7 +365,7 @@ To define the structure for commerce event data, you must create an Experience D
 >
 >See the [Basics of schema composition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) for more information.
 
-### Create Dataset
+### Create Dataset {#create-dataset}
 
 To store the event data, you must create a Dataset that conforms to the schema definition. A dataset is a storage and management construct for a collection of data&ndash; typically a table&ndash;that contains a schema (columns) and fields (rows). 
 
@@ -391,7 +392,7 @@ To store the event data, you must create a Dataset that conforms to the schema d
 >See the [Datasets overview](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html) for more information.
 
 
-### Create Datastream
+### Create Datastream {#create-datastream}
 
 Complete the following steps so you can create a Datastream in the Experience Platform.
 
@@ -440,28 +441,21 @@ To trigger the event, you can use AEM author or the publish service from your lo
 
 1. Click any preferred product card in the __Product Page__, then select __color, size__ to enable the __Add to Cart__ button. 
 
-
 1. Open the __Snowplow Inspector__ extension from the browser's extension panel and select __Experience Platform Wed SDK__ in the left rail. 
-
 
 1. Return to the __Product Page__ and click __Add to Cart__ button. This sends data to the Experience Platform. The __Adobe Experience Platform Debugger__ extension shows the event details.
 
     ![AEP Debugger Add-To-Cart Event-Data](../assets/aep-integration/AEP-Debugger-AddToCart-EventData.png)
 
-
-
 1. Within Experience Platform product UI, navigate to __Datasets > My Demo StoreFront__, under the __Dataset activity__ tab. If __Metrics and graphs__ is enabled, the event-data stats are displayed.
 
     ![Experience Platform Dataset Data stats](../assets/aep-integration/AEP-Dataset-AddToCart-EventData.png)
-
-
 
 ## Implementation Details {#implementation-details}
 
 The [CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) is built on top of the [Data Connection for Adobe Commerce](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html), which is part of the [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) project.
 
  The PWA Studio project lets you create Progressive Web Application (PWA) storefronts powered by Adobe Commerce or Magento Open Source. The project also contains a component library called [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) for adding logic to visual components. The [Peregrin library](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) also provides the custom React hooks that are used by [CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) to integrate with Experience Platform seamlessly. 
-
 
 ## Supported Events {#supported-events}
 
@@ -491,7 +485,6 @@ __Profile XDM Events:__
 1. Sign in
 1. Create Account
 1. Edit Account
-
 
 ## Additional Resources {#additional-resources}
 

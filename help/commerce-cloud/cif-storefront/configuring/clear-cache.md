@@ -6,6 +6,7 @@ role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
 index: no
 ---
+
 # Component & GraphQL Clear Cache {#clear-cache}
 
 This document provides a comprehensive guide on enabling and verifying the clear-cache feature in AEM CIF.
@@ -18,13 +19,13 @@ This document provides a comprehensive guide on enabling and verifying the clear
 
 By default, the clear-cache feature is disabled in CIF configuration. To enable it, you need to add the following to your corresponding projects:
 
-* Enable the servlet `/bin/cif/invalidate-cache` which helps you triggering the clear-cache API with their corresponding requests by adding the `com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json` configuration in your project as shown [here](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config.author/com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json).
+* Enable the servlet `/bin/cif/invalidate-cache` which helps you triggering the clear-cache API with their corresponding requests by adding the `com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json` configuration in your project as shown [here.](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config.author/com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json)
 
   >[!NOTE]
   >
   > Configuration needs to be enabled only for the author instances.
 
-* Enable the listener to clear cache from each instance of AEM (publish and author) by adding the `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` configuration in your project as shown [here](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json).
+* Enable the listener to clear cache from each instance of AEM (publish and author) by adding the `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` configuration in your project as shown [here.](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json)
   * Configuration should be enabled for both author and publish instances.
   * Enable the Dispatcher cache (Optional): you can enable the dispatcher clear cache setting by setting the `enableDispatcherCacheInvalidation` property to true in the above configuration. This provides functionality to clear the cache from the dispatcher.
 
@@ -34,7 +35,7 @@ By default, the clear-cache feature is disabled in CIF configuration. To enable 
    
   * Also, make sure to give the corresponding pattern which suits your product, category and CMS page needs to be added to the above configuration file to remove it from the dispatcher cache.
 
-* To improve the SQL queries performance for finding the corresponding page related with product and category, add the corresponding index in your project (recommended). Fore more information, see [cifCacheInvalidationSupport](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml).
+* To improve the SQL queries performance for finding the corresponding page related with product and category, add the corresponding index in your project (recommended). Fore more information, see [cifCacheInvalidationSupport.](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml)
 
 ## Verifying Clear Cache Feature {#verify-clear-cache}
 
@@ -74,7 +75,7 @@ This is the API which you need to trigger whenever you wanted to clear cache of 
 
 Request Type: `POST`
 
-### Headers
+### Headers {#headers}
 
 | Parameter| Value| Required/Mandatory| Comment |
 |------------------------------|-------------------|---|---|
@@ -82,7 +83,7 @@ Request Type: `POST`
 | `Authorization`        | Corresponding Author's User credentials (Auth Type: Basic Auth)  | Required | Add the corresponding username and password. |
 
 
-### Payload
+### Payload {#payload}
 
 The following table shows existing attributes which the feature is giving out-of-the-box. These `InvalidateType` properties need to be given in combination with mandatory attribute (such as `storePath`).
 
@@ -91,7 +92,7 @@ The following table shows existing attributes which the feature is giving out-of
 | `productSkus`                           | Product's sku - which needs to be invalidated from the cache. | Array           | Yes |Clear the cache from internal memory using the following pattern:<br>```"\"sku\":\\s*\""```<br>Dispatcher<br><ul><li>Clear the PDP page cache of the corresponding SKUs</li><li>Clear cache of the  corresponding categories page in which they exists(Based on the graphql response from commerce)</li><li>Clear cache based on the following query:</li></ul><br>```SELECT content.[jcr:path] FROM [nt:unstructured] AS content<br>WHERE ISDESCENDANTNODE(content, '{storePath}')<br>AND ( (content.[product] IN ('sku1','sku2') AND content.[productType] = 'combinedSku')<br> OR (content.[selection] IN ('sku1','sku2') AND content.[selectionType] IN ('combinedSku', 'sku')))``` |
 | `categoryUids`                     | Category's uid - which needs to be invalidated from the cache. | Array  | Yes |Clear the cache from internal memory using the following pattern:<br>```"\"uid\"\\s*:\\s*\\{\"id\"\\s*:\\s*\""```<br>Dispatcher<br><ul><li>Clear the category pages cache for corresponding data(including its children category page)</li><li>Clear all the PDP pages  which have the corresponding  categories</li><li>Clear cache based on the following query:</li></ul><br>```SELECT content.[jcr:path] FROM [nt:unstructured] AS content<br>WHERE ISDESCENDANTNODE(content,'{storePath}')<br>AND ((content.[categoryId] in ('category1','category2')<br>AND content.[categoryIdType] in ('uid'))<br>OR (content.[category] in ('category1','category2') AND content.[categoryType] in ('uid')))``` |
 | `regexPatterns`                           | If you need to clear the GraphQL response data  based on regex pattern, use this. | Array           | No | |
-| `cacheNames`                           | This values are defined under the corresponding CIF GraphQL client configuraion factory >> Corresponding StorePath GraphQL configuration >> GraphQL cache configurations | Array        | No | |
+| `cacheNames`                           | This values are defined under the corresponding CIF GraphQL client configuration factory >> Corresponding StorePath GraphQL configuration >> GraphQL cache configurations | Array        | No | |
 | `invalidateAll`                           | True or false | Boolean          | Yes | |
 
 This table shows the mandatory property that needs to be passed in every API call:
@@ -100,9 +101,9 @@ This table shows the mandatory property that needs to be passed in every API cal
 |------------------------------|-------------------|---|---|---|
 | `storePath` | Corresponding value of the site path from where the cache needs be removed (Example : `/content/venia/us/en` as reference with venia project).| String  | Yes | This needs to be given with the combination of `invalidateType.`|
 
-### Sample API Request
+### Sample API Request {#sample-request}
 
-```
+```text
 curl --location 'https://author-p10603-e145552-cmstg.adobeaemcloud.com/bin/cif/invalidate-cache' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: ******' \
@@ -129,8 +130,9 @@ In cases where the cache needs to be cleared that are not currently covered by t
 
 If, for example, you don't want to use the existing attribute for clearing the cache, then you have the flexibility to create your own attribute and define its corresponding functionality.
 
-* If you only need to clear cache from the internal memory of AEM (the graphql response), then you need to follow [this reference](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomInvalidation.java).
-* If you need to clear cache from the internal memory and the dispatcher cache, then you need to follow [this reference](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomDispatcherInvalidation.java).
+* If you only need to clear cache from the internal memory of AEM (the graphql response), then you need to follow [this reference.](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomInvalidation.java)
+* If you need to clear cache from the internal memory and the dispatcher cache, then you need to follow [this reference.](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomDispatcherInvalidation.java)
+
    >[!NOTE]
    >
    > You can ignore the internal clear cache by returning `null` for the `getPatterns()` method.

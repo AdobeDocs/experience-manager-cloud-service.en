@@ -6,7 +6,10 @@ role: Admin, Developer
 exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
 index: no
 ---
+
 # Custom Attributes to CIF Product Carousel {#product-carousel}
+
+Learn how to extend the AEM CIF Product Carousel component by updating the Sling Model and customizing the markup.
 
 ## Introduction {#intro}
 
@@ -14,7 +17,9 @@ The Product Carousel component is extended throughout this tutorial. As a first 
 
 1. Navigate to the Home Page of the site, for example [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 1. Insert a new Product Carousel component into the main layout container on the page.
+
     ![Product Carousel component](/help/commerce-cloud/cif-storefront/assets/product-carousel-component.png)
+
 1. Expand the Side Panel (if not already toggled) and switch the asset finder dropdown to **Products**.
 
    ![Carousel Products](/help/commerce-cloud/cif-storefront/assets/carousel-products.png)
@@ -33,7 +38,7 @@ You can extend the business logic of the Product Carousel by implementing a Slin
 
 1. In your IDE, navigate under the core module to `core/src/main/java/com/venia/core/models/commerce` and create a CustomCarousel Interface that extends the CIF ProductCarousel interface:
     
-    ```
+    ```text
     package com.venia.core.models.commerce;
     import com.adobe.cq.commerce.core.components.models.productcarousel.ProductCarousel;
     public interface CustomCarousel extends ProductCarousel {
@@ -41,17 +46,18 @@ You can extend the business logic of the Product Carousel by implementing a Slin
     ```
 
 1. Next, create an implementation class `CustomCarouselImpl.java` at `core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`.
+
    The delegation pattern for Sling Models allows `CustomCarouselImpl` to reference `ProductCarousel` model via the `sling:resourceSuperType` property:
 
-    ```
+    ```text
     @Self
     @Via(type = ResourceSuperType.class)
     private ProductCarousel productCarousel;
     ```
 
-1. The @PostConstruct annotation ensures that this method is called when the Sling Model is initialized. The product GraphQL query has already been extended using the extendProductQueryWith method to retrieve attributes. Update the GraphQL query to include the attribute in the partial query:
+1. The `@PostConstruct` annotation ensures that this method is called when the Sling Model is initialized. The product GraphQL query has already been extended using the extendProductQueryWith method to retrieve attributes. Update the GraphQL query to include the attribute in the partial query:
 
-    ```
+    ```javascript
     @PostConstruct
     private void initModel() {
     productsRetriever = productCarousel.getProductsRetriever();
@@ -66,7 +72,7 @@ You can extend the business logic of the Product Carousel by implementing a Slin
     
     In the above code, the `addCustomSimpleField` is used to retrieve the `accessory_gemstone_addon` attribute.
 
-## Customizing the Markup {#customize-markup}
+## Customizing the Markup {#customize-markup}
 
 To further customize the markup:
 

@@ -8,6 +8,7 @@ exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
 role: Admin
 index: no
 ---
+
 # Getting started with AEM Extension for PWA Studio {#getting-started-pwa}
 
 Out of the box, PWA Studio integrates seamlessly with Adobe Commerce via GraphQL providing unlimited options for creating innovative and engaging storefronts and other digital experiences.
@@ -24,7 +25,7 @@ Designing the structure you need is easy with the Content Fragment Model Editor 
 
 Follow the Adobe Commerce [PWA Studio documentation](https://developer.adobe.com/commerce/pwa-studio/tutorials/) to setup your PWA Studio app.
 
-To connect PWA Studio with the GraphQL endpoint of AEM, you can use the [AEM Extension for PWA Studio](https://github.com/adobe/aem-pwa-studio-extensions).
+To connect PWA Studio with the GraphQL endpoint of AEM, you can use the [AEM Extension for PWA Studio.](https://github.com/adobe/aem-pwa-studio-extensions)
 
 1. Check out the repository
 
@@ -34,7 +35,7 @@ To connect PWA Studio with the GraphQL endpoint of AEM, you can use the [AEM Ext
    yarn add --dev file:{path-to-extension}/extension
    ```
 
-1. Add the Apollo Link wrapper to your PWA Studio application. In pwa-root/src/index.js, make the following changes:
+1. Add the Apollo Link wrapper to your PWA Studio application. In `pwa-root/src/index.js`, make the following changes:
 
    ```javascript
      import { linkWrapper } from '@adobe/pwa-studio-aem-cfm-blog-extension';
@@ -44,9 +45,9 @@ To connect PWA Studio with the GraphQL endpoint of AEM, you can use the [AEM Ext
    <Adapter apiBase={apiBase} apollo={{ link: linkWrapper(apolloLink) }} store={store}>
    ```
 
-   You can find more details on the Apollo Client customisation in [linkWrapper.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/linkWrapper.js).
+   You can find more details on the Apollo Client customization in [linkWrapper.js.](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/linkWrapper.js)
 
-1. To extend the navigation component with a Blog entry, add the following adaptions to pwa-root/local-intercept.js:
+1. To extend the navigation component with a Blog entry, add the following adaptions to `pwa-root/local-intercept.js`:
 
    ```javascript
    const addBlogToNavigation = require('@adobe/pwa-studio-aem-cfm-blog-extension/src/addBlogToNavigation');
@@ -100,7 +101,7 @@ Follow the AEM Content Fragments documentation to setup a GraphQL endpoint for y
 
    Example: `pwa-studio-test-vflyn.local.pwadev`
 
-You can find full examples of both configurations here: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
+You can find full examples of both configurations [here.](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config)
 
 To showcase the GraphQL endpoint, there are some prepared sample Content Fragment models and data via a content package. These work well together with the React Components provided with the PWA Studio extension.
 
@@ -112,7 +113,7 @@ Depending on your use case, you want to create your own custom Content Fragment 
 
 Production setups can vary in multiple aspects.
 
-* You can have a single federated GraphQL endpoint which combines AEM and Adobe Commerce GraphQL data instead of customising Apollo client.
+* You can have a single federated GraphQL endpoint which combines AEM and Adobe Commerce GraphQL data instead of customizing Apollo client.
 * Your PWA Studio application could use the AEM GraphQL endpoint URL directly, without a proxy with UPWARD. The proxy could also be moved to a different layer (for example, CDN).
 * Which approach fits best for you also heavily depends on how you deliver the PWA Studio application to the user.
 

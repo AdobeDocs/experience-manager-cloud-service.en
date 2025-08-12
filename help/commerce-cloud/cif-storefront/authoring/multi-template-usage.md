@@ -13,6 +13,7 @@ exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
 role: Admin
 index: no
 ---
+
 # Creating Multiple Category and Product Pages {#multiple}
 
 >[!NOTE]
@@ -27,9 +28,9 @@ Specific product pages can be selected either by a sku or by a product's categor
 
 You can find more information on this topic from the following resource(s):
 
-- [Advanced URL Configurations](../configuring/advanced-url-configuration.md)
+- [Advanced URL Configurations](/help/commerce-cloud/cif-storefront/configuring/advanced-url-configuration.md)
 - [AEM CIF Core Components - Multi catalog page configuration](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
 ## Related Resources {#related}
 
-It is also possible to dynamically target specific regions of a page and re-use the same template. Learn how to [enrich product data with associated AEM content](/help/commerce-cloud/cif-storefront/authoring/enrich-product-associated-content.md).
+It is also possible to dynamically target specific regions of a page and re-use the same template. Learn how to [enrich product data with associated AEM content.](/help/commerce-cloud/cif-storefront/authoring/enrich-product-associated-content.md)

@@ -6,13 +6,14 @@ feature: Commerce Integration Framework
 role: Admin
 index: no
 ---
+
 # Manage product catalog pages and templates {#product-catalog}
 
 Get to know how to manage product catalog pages and templates.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Content and Commerce authoring journey, [Getting Started with AEM CIF authoring basics](getting-started.md), you learned the basic of CIF authoring.
+In the previous document of the AEM Content and Commerce authoring journey, [Getting Started with AEM CIF authoring basics,](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/getting-started.md) you learned the basic of CIF authoring.
 
 This article builds on those fundamentals.
 
@@ -29,9 +30,11 @@ This document helps you understand how to manage product catalog pages and templ
 Venia storefront comes with a typical product catalog experience with navigation, and landing, category (PLP), & product detail pages (PDP).
 
 Catalog pages are built dynamically using an AEM CIF catalog template and real-time product data that is fetched from the commerce endpoint when needed. Every catalog has a generic template for product and category pages.
+
 ![catalog structure](assets/catalog-structure.png)
 
 The navigation component shows content and catalog pages. It is possible to show either the catalog landing page or the first level categories in the navigation. Hovering over a category will show second level categories as a second line.
+
 ![catalog navigation](assets/catalog-navigation.png)
 
 Clicking on a category opens the category page (or product list page).
@@ -47,9 +50,11 @@ Clicking on a product opens the product detail page.
 ### Generic templates {#generic}
 
 The generic Venia catalog template uses the Product List Core Component. This component displays the category image if available and products from the category.
+
 ![category template](assets/category-template.png)
 
 The generic Venia product template uses the Product Detail Core Component. This component displays product information for various product types and add-to-cart action.
+
 ![product template](assets/product-template.png)
 
 ### Edit Templates {#edit-templates}
@@ -72,7 +77,7 @@ Enter the title and create the page.
 
 Notice that you have now a specific template under the generic one.
 
-![create template hierachry](assets/create-template-hierachry.png)
+![create template hierarchy](assets/create-template-hierachry.png)
 
 Open the template. It looks exactly like the generic category template.
 
@@ -82,7 +87,7 @@ Add any image on top of the page.
 
 ![create template update](assets/create-template-update.png)
 
-The template can be previewed with any category / product. Open **Page Information** and then select **View with category / product**. Select the product / category from the picker to get a preview with this product / category. Select **Shop The Look** category to get a preview of the updated template.
+The template can be previewed with any category/product. Open **Page Information** and then select **View with category/product**. Select the product/category from the picker to get a preview with this product/category. Select **Shop The Look** category to get a preview of the updated template.
 
 ![create template ](assets/create-template-picker.png)
 
@@ -104,11 +109,11 @@ Now that you have completed this part of the journey you should:
 * how generic templates work
 * have created an individual template
 
-Build on this knowledge and continue your journey by next reviewing the document [Manage staged product catalog experiences](staged-catalog.md), where you learn how to work with staged product data and AEM Launches.
+Build on this knowledge and continue your journey by next reviewing the document [Manage staged product catalog experiences,](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md) where you learn how to work with staged product data and AEM Launches.
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the journey by reviewing the document [Manage staged product catalog experiences](staged-catalog.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey:
+While it is recommended that you move on to the next part of the journey by reviewing the document [Manage staged product catalog experience,](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey:
 
-* [Creating Multiple Category and Product Pages](/help/commerce-cloud/authoring/multi-template-usage.md)
-* [Migration guide for the Experience Manager Cloud Service](/help/commerce-cloud/migration.md) - How to migrate to the AEM Commerce Integration Framework (CIF) add-on from an old version
+* [Creating Multiple Category and Product Pages](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md)
+* [Migration guide for the Experience Manager Cloud Service](/help/commerce-cloud/cif-storefront/migration.md) - How to migrate to the AEM Commerce Integration Framework (CIF) add-on from an old version

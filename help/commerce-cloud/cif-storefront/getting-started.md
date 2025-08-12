@@ -13,24 +13,24 @@ role: Admin
 
 # Getting started with AEM Commerce as a Cloud Service {#start}
 
-To get started with Adobe Experience Manager (AEM) Commerce as a Cloud Service, your Experience Manager Cloud Service must be provisioned with the Commerce Integration Framework (CIF) add-on. The CIF add-on is an extra module on top of [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
+To get started with Adobe Experience Manager (AEM) Commerce as a Cloud Service, your Experience Manager Cloud Service must be provisioned with the Commerce Integration Framework (CIF) add-on. The CIF add-on is an extra module on top of [AEM Sites as a Cloud Service.](/help/sites-cloud/sites-cloud-changes.md)
 
 >[!TIP]
 >
 >**Have you considered Edge Delivery Services?**
 >
->Edge Delivery Services is the Adobe-preferred solution for creating a storefront. Please see the document [Introduction and overview](help/commerce-cloud/introduction.md) for more information.
+>Edge Delivery Services is the Adobe-preferred solution for creating a storefront. Please see the document [Introduction and overview](/help/commerce-cloud/introduction.md) for more information.
 
 ## Onboarding {#onboarding}
 
 The onboarding for AEM Commerce as a Cloud Service is a two-step process:
 
 1. Get AEM Commerce as a Cloud Service enabled and the CIF add-on provisioned
-2. Connect AEM Commerce as a Cloud Service with your commerce solution
+1. Connect AEM Commerce as a Cloud Service with your commerce solution
 
 The first onboarding step is done by Adobe. For more details on pricing and provisioning, you must reach out to your sales representative.
 
-After you are provisioned with the CIF add-on, it is applied to any existing Cloud Manager programs. In case you do not have a Cloud Manager Program, you must create one. For more details, see [Set up your Program](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
+After you are provisioned with the CIF add-on, it is applied to any existing Cloud Manager programs. In case you do not have a Cloud Manager Program, you must create one. For more details, see [Set up your Program.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html)
 
 The second step is self-service for each AEM as a Cloud Service environment. There are some additional configurations that you must do after the initial provisioning of the CIF add-on.
 
@@ -69,29 +69,29 @@ After the endpoint and optionally an authorization header for staged catalog sup
 
 To connect AEM with a commerce solution by way of Adobe I/O CLI, follow these steps:
 
-1. Get the Adobe I/O CLI with the Cloud Manager plugin
+1. Get the Adobe I/O CLI with the Cloud Manager plugin.
 
-    Check the [Adobe Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) on how to download, setup, and use the [Adobe I/O CLI](https://github.com/adobe/aio-cli) with the [Cloud Manager CLI plugin](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   * Check the [Adobe Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) on how to download, setup, and use the [Adobe I/O CLI](https://github.com/adobe/aio-cli) with the [Cloud Manager CLI plugin.](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
-2. Authenticate the Adobe I/O CLI with the AEM as a Cloud Service program
+1. Authenticate the Adobe I/O CLI with the AEM as a Cloud Service program.
 
-3. Set the `COMMERCE_ENDPOINT` variable in Cloud Manager
+1. Set the `COMMERCE_ENDPOINT` variable in Cloud Manager.
 
     ```bash
     aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable COMMERCE_ENDPOINT "<Magento GraphQL endpoint URL>"
     ```
 
-    See [CLI docs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) for details.
+    * See [CLI docs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) for details.
 
-    The commerce GraphQL endpoint URL must point to commerce's GraphQl service and use a secure HTTPS connection. For example: `https://<yourcommercesystem>/graphql`.
+    * The commerce GraphQL endpoint URL must point to commerce's GraphQl service and use a secure HTTPS connection. For example: `https://<yourcommercesystem>/graphql`.
 
-4. Enable Staged catalog features that require authentication (Optional)
+1. Enable Staged catalog features that require authentication (Optional).
 
     >[!NOTE]
     >
     >This feature is only available with Adobe Commerce Enterprise or Cloud Edition. See [Token-based authentication](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens) for details.
 
-    Set the `COMMERCE_AUTH_HEADER` secret variable in Cloud Manager:
+    * Set the `COMMERCE_AUTH_HEADER` secret variable in Cloud Manager:
 
     ```bash
     aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization: Bearer <Access Token>"
@@ -111,9 +111,9 @@ This configuration can be adjusted for the project by way of the CIF Cloud Servi
 
 1. In AEM go to Tools > Cloud Services > CIF Configuration.
 
-2. Select the commerce configuration that you want to change.
+1. Select the commerce configuration that you want to change.
 
-3. Open the configuration properties by way of the action bar.
+1. Open the configuration properties by way of the action bar.
 
 ![CIF Cloud Services Configuration](/help/commerce-cloud/cif-storefront/assets/cif-cloud-service-config.png)
 
@@ -122,26 +122,25 @@ The following properties can be configured:
 - GraphQL Client - select the configured GraphQL client for commerce backend communication. This client should typically stay at default.
 - Store View - the store view identifier. If empty, the default store view is used.
 - GraphQL Proxy Path - the URL path GraphQL Proxy in AEM use to proxy requests to the commerce backend GraphQL endpoint.
-    >[!NOTE]
-    >
-    > In most setups, the default value `/api/graphql` must not be changed. Only advanced setup not using the provided GraphQL proxy should change this setting.
+  >[!NOTE]
+  >
+  > In most setups, the default value `/api/graphql` must not be changed. Only advanced setup not using the provided GraphQL proxy should change this setting.
 - Enable Catalog UID Support - enable support for UID instead of ID in the commerce backend GraphQL calls.
-    >[!NOTE]
-    >
-    > Support for UIDs got introduced in Adobe Commerce 2.4.2. Only enable UIDs if your commerce backend supports a GraphQL schema of version 2.4.2 or later.
+  >[!NOTE]
+  >
+  > Support for UIDs got introduced in Adobe Commerce 2.4.2. Only enable UIDs if your commerce backend supports a GraphQL schema of version 2.4.2 or later.
 - Catalog Root Category Identifier - the identifier (UID or ID) of the store catalog root
-    >[!CAUTION]
-    >
-    > Starting with CIF Core Components version 2.0.0 the support for `id` was removed and replaced with `uid`. If your project uses CIF Core Components version 2.0.0 you must enable Catalog UID Support and use a valid category UID as "Catalog Root Category Identifier".
+  >[!CAUTION]
+  >
+  > Starting with CIF Core Components version 2.0.0 the support for `id` was removed and replaced with `uid`. If your project uses CIF Core Components version 2.0.0 you must enable Catalog UID Support and use a valid category UID as "Catalog Root Category Identifier".
 
 The configuration shown above is for reference. Projects should provide their own configurations.
 
-For more complex setups, using multiple AEM site structures combined with different commerce catalogs see the [Commerce Multi-Store Setup](configuring/multi-store-setup.md) tutorial.
+For more complex setups, using multiple AEM site structures combined with different commerce catalogs see the [Commerce Multi-Store Setup](/help/commerce-cloud/cif-storefront/configuring/multi-store-setup.md) tutorial.
 
 ## Additional Resources {#additional-resources}
 
 - [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-- [Commerce Multi-Store Setup](configuring/multi-store-setup.md)
-- [Multiple Commerce Systems Setups](configuring/multiple-commerce-systems-setup.md)
-
+- [Commerce Multi-Store Setup](/help/commerce-cloud/cif-storefront/configuring/multi-store-setup.md)
+- [Multiple Commerce Systems Setups](/help/commerce-cloud/cif-storefront/configuring/multiple-commerce-systems-setup.md)

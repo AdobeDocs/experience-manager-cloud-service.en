@@ -6,9 +6,10 @@ role: Admin
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
 index: no
 ---
+
 # Customize AEM CIF Core Components {#customize-cif-components}
 
-The [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) is a reference code base for using [CIF Core Components](https://github.com/adobe/aem-core-cif-components). In this tutorial, you further extend the [Product Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) component to display a custom attribute from Adobe Commerce. You also learn more about the GraphQL integration between AEM and Adobe Commerce and the extension hooks provided by the CIF Core Components.
+The [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) is a reference code base for using [CIF Core Components.](https://github.com/adobe/aem-core-cif-components) In this tutorial, you further extend the [Product Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) component to display a custom attribute from Adobe Commerce. You also learn more about the GraphQL integration between AEM and Adobe Commerce and the extension hooks provided by the CIF Core Components.
 
 >[!TIP]
 >
@@ -22,13 +23,13 @@ The Venia brand recently started manufacturing some products using sustainable m
 
 ## Prerequisites {#prerequisites}
 
-A local development environment is required to complete this tutorial. This environment includes a running instance of AEM that is configured and connected to an Adobe Commerce instance. Review the requirements and steps for [setting up a local development with AEM as a Cloud Service SDK](../develop.md). To follow the tutorial completely, you need permission to add [Attributes to a Product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
+A local development environment is required to complete this tutorial. This environment includes a running instance of AEM that is configured and connected to an Adobe Commerce instance. Review the requirements and steps for [setting up a local development with AEM as a Cloud Service SDK.](/help/commerce-cloud/cif-storefront/develop.md) To follow the tutorial completely, you need permission to add [Attributes to a Product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
 
 You also need GraphQL IDE such as [GraphiQL](https://github.com/graphql/graphiql) or a browser extension to run the code samples and tutorials. If you install a browser extension, make sure it can set request headers. On Google Chrome, _Altair GraphQL Client_ is one extension that can do the job.
 
 ## Clone the Venia Project {#clone-venia-project}
 
-Clone the [Venia Project](https://github.com/adobe/aem-cif-guides-venia), and then override the default styles.
+Clone the [Venia Project,](https://github.com/adobe/aem-cif-guides-venia) and then override the default styles.
 
 >[!NOTE]
 >
@@ -61,11 +62,11 @@ The Product Teaser Component is extended throughout this tutorial. As a first st
 
 1. Navigate to the **Home Page** of the site: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
-2. Insert a new **Product Teaser** Component into the main layout container on the page.
+1. Insert a new **Product Teaser** Component into the main layout container on the page.
 
    ![Insert Product Teaser](../assets/customize-cif-components/product-teaser-add-component.png)
 
-3. Expand the Side Panel (if not already toggled) and switch the asset finder drop-down list to **Products**. This list should display a list of available products from a connected Adobe Commerce instance. Select a product and **drag+drop** it onto the **Product Teaser** component on the page.
+1. Expand the Side Panel (if not already toggled) and switch the asset finder drop-down list to **Products**. This list should display a list of available products from a connected Adobe Commerce instance. Select a product and **drag+drop** it onto the **Product Teaser** component on the page.
 
    ![Drag + Drop Product Teaser](../assets/customize-cif-components/drag-drop-product-teaser.png)
 
@@ -73,7 +74,7 @@ The Product Teaser Component is extended throughout this tutorial. As a first st
    >
    > Note, you can also configure the displayed product by configuring the component using the dialog (clicking the _wrench_ icon).
 
-4. You should now see a Product being displayed by the Product Teaser. The Name of the product and the Price of the product are default attributes that are displayed.
+1. You should now see a Product being displayed by the Product Teaser. The Name of the product and the Price of the product are default attributes that are displayed.
 
    ![Product Teaser - default style](../assets/customize-cif-components/product-teaser-default-style.png)
 
@@ -112,7 +113,7 @@ The products and product data displayed in AEM are stored in Adobe Commerce. Nex
 
    >[!TIP]
    >
-   > More details about managing [Product Attributes can be found in the Adobe Commerce user guide](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
+   > More details about managing [Product Attributes can be found in the Adobe Commerce user guide.](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html)
 
 1. Navigate to **System** > **Tools** > **Cache Management**. Because an update was made to the data schema, you must invalidate some of the Cache Types in Adobe Commerce.
 1. Check the box next to **Configuration** and submit the cache type for **Refresh**
@@ -121,7 +122,7 @@ The products and product data displayed in AEM are stored in Adobe Commerce. Nex
 
    >[!TIP]
    >
-   > More details about [Cache Management can be found in the Adobe Commerce user guide](https://docs.magento.com/user-guide/system/cache-management.html).
+   > More details about [Cache Management can be found in the Adobe Commerce user guide.](https://docs.magento.com/user-guide/system/cache-management.html)
 
 ## Use a GraphQL IDE to Verify Attribute {#use-graphql-ide}
 
@@ -130,7 +131,7 @@ Before jumping into AEM code, it is useful to explore the [GraphQL Overview](htt
 Next, use a GraphQL IDE to verify that the `eco_friendly` attribute has been added to the product attribute set. Screenshots in this tutorial are using the _Altair GraphQL Client_ Google Chrome extension.
 
 1. Open the GraphQL IDE and enter the URL `http://<commerce-server>/graphql` in the URL bar of your IDE or extension.
-2. Add the following [products query](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) where `YOUR_SKU` is the **SKU** of the product used in the previous exercise:
+1. Add the following [products query](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) where `YOUR_SKU` is the **SKU** of the product used in the previous exercise:
 
    ```json
      {
@@ -146,7 +147,7 @@ Next, use a GraphQL IDE to verify that the `eco_friendly` attribute has been add
    }
    ```
 
-3. Execute the query and you should get a response like the following:
+1. Execute the query and you should get a response like the following:
 
    ```json
    {
@@ -170,7 +171,7 @@ Next, use a GraphQL IDE to verify that the `eco_friendly` attribute has been add
 
    >[!TIP]
    >
-   > For more information see [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+   > For more information see [Adobe Commerce GraphQL.](https://devdocs.magento.com/guides/v2.4/graphql/index.html)
 
 ## Update the Sling Model for the Product Teaser {#updating-sling-model-product-teaser}
 
@@ -178,7 +179,7 @@ Next, you extend the business logic of the Product Teaser by implementing a Slin
 
 Sling Models are implemented as Java&trade; and can be found in the **core** module of the generated project.
 
-Use [the IDE of your choice](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) to import the Venia project. Screenshots used are from the [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+Use [the IDE of your choice](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) to import the Venia project. Screenshots used are from the [Visual Studio Code IDE.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)
 
 1. In your IDE, navigate under the **core** module to: `core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`.
 
@@ -278,7 +279,7 @@ Use [the IDE of your choice](https://experienceleague.adobe.com/docs/experience-
 
    >[!NOTE]
    >
-   > The `createdAt()` method has been implemented as part of the [Product Interface](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java). Most of the commonly found schema attributes have been implemented, so only use the `addCustomSimpleField` for truly custom attributes.
+   > The `createdAt()` method has been implemented as part of the [Product Interface.](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java) Most of the commonly found schema attributes have been implemented, so only use the `addCustomSimpleField` for truly custom attributes.
 
 1. Add a logger so you can debug the Java&trade; code:
 
@@ -343,7 +344,7 @@ In this case, you want to render a banner on top of the teaser to indicate that 
 
    The Component definition above is for the Product Teaser Component in your project. Notice the property `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. This property is an example of creating a [Proxy component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). Instead of copying and pasting the Product Teaser HTL scripts from the AEM CIF Core Components, you can use the `sling:resourceSuperType` to inherit all the functionality.
 
-1. Open the file `productteaser.html`. This file is a copy of the `productteaser.html` file from the [CIF Product Teaser](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html).
+1. Open the file `productteaser.html`. This file is a copy of the `productteaser.html` file from the [CIF Product Teaser.](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)
 
    ```html
    <!--/* productteaser.html */-->
@@ -381,7 +382,7 @@ In this case, you want to render a banner on top of the teaser to indicate that 
 
    When calling a Sling Model method in HTL the `get` and `is` portion of the method is dropped and the first letter is lowercased. So `isShowBadge()` becomes `.showBadge` and `isEcoFriendly` becomes `.ecoFriendly`. Based on the boolean value returned from `.isEcoFriendly()` determines if the `<span>Eco Friendly</span>` is displayed.
 
-   More information about `data-sly-test` and other HTL block statements can be found in [The HTL Specification](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html).
+   More information about `data-sly-test` and other HTL block statements can be found in [The HTL Specification.](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html)
 
 1. Save the changes and deploy the updates to AEM using your Maven skills, from a command-line terminal:
 
@@ -475,7 +476,7 @@ At this point the logic for when to display the **Eco Friendly** badge is workin
 
 ## Congratulations {#congratulations}
 
-You customized your first AEM CIF component! You can [download the solution files here](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
+You customized your first AEM CIF component! You can [download the solution files here.](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip)
 
 ## Bonus Challenge {#bonus-challenge}
 
@@ -487,7 +488,6 @@ Review the functionality of the **New** badge that has already been implemented 
 
 - [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 - [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components)
-- [Customizing AEM CIF Core Components](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/customize-cif-components.html)
 - [Customizing Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
 - [Getting Started with AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 - [Usage of CIF product & category picker](use-cif-pickers.md)
