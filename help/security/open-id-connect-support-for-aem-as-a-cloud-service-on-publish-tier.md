@@ -195,6 +195,7 @@ The user is authenticated by an ID Token, and additional attributes are fetched 
    * The groups are sent in the ID Token in a claim called: `groups`
 
 #### org.apache.sling.auth.oauth_client.impl.OidcConnectionImpl~azure.cfg.json
+
 ```
 {
   "name":"azure",
@@ -206,7 +207,9 @@ The user is authenticated by an ID Token, and additional attributes are fetched 
   "clientSecret":"secret"
 }
 ```
+
 #### org.apache.sling.auth.oauth_client.impl.OidcAuthenticationHandler~azure.cfg.json 
+
 ```
 {
   "callbackUri":"https://www.mywebsite.com/content/wknd/us/en/adventures/j_security_check",
@@ -217,14 +220,18 @@ The user is authenticated by an ID Token, and additional attributes are fetched 
   "defaultConnectionName":"azure"
 }
 ```
+
 #### org.apache.jackrabbit.oak.spi.security.authentication.external.impl.ExternalLoginModuleFactory~azure.cfg.json
+
 ```
 {
   "sync.handlerName":"azure",
   "idp.name":"azure"
 }
 ```
+
 #### org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler~azure.cfg.json
+
 ```
 {
   "user.expirationTime":"1s",
