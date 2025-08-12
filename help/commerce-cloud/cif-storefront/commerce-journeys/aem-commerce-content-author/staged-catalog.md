@@ -68,4 +68,4 @@ You are now ready to manage [product experiences.](/help/commerce-cloud/cif-stor
 
 * [Product Cockpit](/help/commerce-cloud/cif-storefront/authoring/product-cockpit.md)
 * [Getting Started](/help/commerce-cloud/cif-storefront/getting-started.md)
-* [Launches](/help/sites-cloud/cif-storefront/authoring/launches/overview.md)
+* [Launches](/help/sites-cloud/authoring/launches/overview.md)
