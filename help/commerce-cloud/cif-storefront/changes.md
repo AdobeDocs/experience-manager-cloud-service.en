@@ -54,7 +54,7 @@ Product catalog data get requested on-demand via real-time calls to an external 
 
 AEM renders product catalog experiences on-the-fly using AEM catalog templates that have been assigned to products and categories. No replication needed.
 
-### Previous CIF Versions {#previous-versions-catalog}
+### Previous CIF Versions {#previous-cif-versions}
 
 * CIF Classic: AEM Author creates an AEM page for every category / product using the catalog blueprint tool. These pages get replicated to AEM Publish.
 

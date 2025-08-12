@@ -54,7 +54,7 @@ To connect an AEM site and AEM CIF Core Components to a dedicated store view, do
    * Select the Advanced tab.
    * In the `Configuration` section, select the configuration that you created at step 3.
 
-## Additional Resources {additional-resources}
+## Additional Resources {#additional-resources}
 
 * [Adobe Commerce Websites, Stores &amp; Views](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 * [AEM CIF Core Components - Multi store / site configuration](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)

@@ -16,9 +16,9 @@ index: no
 
 Developing AEM Commerce projects, based on Commerce Integration Framework (CIF) for AEM as a Cloud Service, follows the same rules and best practices like other AEM Projects on AEM as a Cloud Service. Review the following first:
 
-- [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
-- [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-- [AEM as a Cloud Service Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md)
+* [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+* [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [AEM as a Cloud Service Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md)
 
 ## Local Development with AEM as a Cloud Service SDK {#local}
 
@@ -37,12 +37,12 @@ The CIF Add-On is provided as a Sling Feature archive. The zip file available on
 
 The following should be installed locally:
 
-- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
-- [Java&trade; 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-- [Apache Maven](https://maven.apache.org/) (3.3.9 or newer)
-- [Node.js v10+](https://nodejs.org/en)
-- [npm 6+](https://www.npmjs.com/)
-- [Git](https://git-scm.com/)
+* [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+* [Java&trade; 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
+* [Apache Maven](https://maven.apache.org/) (3.3.9 or newer)
+* [Node.js v10+](https://nodejs.org/en)
+* [npm 6+](https://www.npmjs.com/)
+* [Git](https://git-scm.com/)
 
 ### Accessing the CIF Add-On {#accessing-add-on}
 
@@ -176,6 +176,6 @@ To get started with the Venia Reference Store, clone the Git repository and star
 
 ## Additional Resources {#additional-resources}
 
-- [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
-- [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-- [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
+* [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
+* [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
+* [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
