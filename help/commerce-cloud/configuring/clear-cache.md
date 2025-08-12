@@ -19,6 +19,7 @@ This document provides a comprehensive guide on enabling and verifying the clear
 By default, the clear-cache feature is disabled in CIF configuration. To enable it, you need to add the following to your corresponding projects:
 
 * Enable the servlet `/bin/cif/invalidate-cache` which helps you triggering the clear-cache API with their corresponding requests by adding the `com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json` configuration in your project as shown [here](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config.author/com.adobe.cq.cif.cacheinvalidation.internal.InvalidateCacheNotificationImpl.cfg.json).
+
   >[!NOTE]
   >
   > Configuration needs to be enabled only for the author instances.
@@ -26,6 +27,7 @@ By default, the clear-cache feature is disabled in CIF configuration. To enable 
 * Enable the listener to clear cache from each instance of AEM (publish and author) by adding the `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` configuration in your project as shown [here](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json).
   * Configuration should be enabled for both author and publish instances.
   * Enable the Dispatcher cache (Optional): you can enable the dispatcher clear cache setting by setting the `enableDispatcherCacheInvalidation` property to true in the above configuration. This provides functionality to clear the cache from the dispatcher.
+
     >[!NOTE]
     >
     > This only works with publish instances.
@@ -43,13 +45,15 @@ To verify that everything is set up properly:
 * Verify that the same node has been created in each publish instance.
 
 Now, to check whether the caches are getting cleared properly:
+
 1. Navigate to the corresponding PLP and PDP pages.
 2. Update a product or category name in the commerce engine. The changes are not reflected in AEM immediately based on cache configurations.
 3. Trigger the servlet API as shown here:
+
    ```
    curl --location '{Author AEM Instance Url}/bin/cif/invalidate-cache' \
    --header 'Content-Type: application/json' \
-   --header 'Authorization: ••••••' \ // Mandatory
+   --header 'Authorization: ******' \ // Mandatory
    --header 'Cookie: private_content_version=0299c5e4368a1577a6f454a61370317b' \
    --data '{
        "productSkus": ["Sku1", "Sku2"], // Optional: Pass the corresponding sku which got updated.
@@ -57,6 +61,7 @@ Now, to check whether the caches are getting cleared properly:
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
+
 If everything goes well, the new changes are reflected in every instance. If the changes are not visible on the publish instance, please try accessing the relevant PLP and PDP pages in a private/incognito browser window.
 
 >[!NOTE]
@@ -100,7 +105,7 @@ This table shows the mandatory property that needs to be passed in every API cal
 ```
 curl --location 'https://author-p10603-e145552-cmstg.adobeaemcloud.com/bin/cif/invalidate-cache' \
 --header 'Content-Type: application/json' \
---header 'Authorization: ••••••' \
+--header 'Authorization: ******' \
 --header 'Cookie: private_content_version=0299c5e4368a1577a6f454a61370317b' \
 --data '{
 "productSkus": ["VP01", "VT10"], // This will clear cache for the corresponding pages related with mentioned skus.

@@ -244,7 +244,7 @@ Ensure these extensions are enabled in Universal Editor:
 3. Choose **Preview as HTML**
 4. Test prefilling by appending parameters to the URL:
 
-   https://your-preview-url.com?<bindreferencefield>=<value>
+   https://your-preview-url.com?`<bindreferencefield>`=`<value>`
 
    **Example:**
 
