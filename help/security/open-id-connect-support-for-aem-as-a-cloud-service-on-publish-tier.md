@@ -285,15 +285,3 @@ The filaname that needs to be modified is `org.apache.sling.auth.oauth_client.im
   "storeRefreshToken": "false"
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
