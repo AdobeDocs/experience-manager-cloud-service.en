@@ -250,7 +250,9 @@ The user is authenticated by an ID Token, and additional attributes are fetched 
   "handler.name":"azure"
 }
 ```
+
 #### org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessorImpl~azure.cfg.json
+
 ```
 {
   "groupsInIdToken": "true",
