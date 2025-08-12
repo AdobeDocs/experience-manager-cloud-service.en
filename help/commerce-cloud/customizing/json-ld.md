@@ -17,8 +17,11 @@ This guide explains how to enable and verify the JSON+LD feature in AEM CIF.
 ## Enabling JSON+LD in CIF Configuration {#enabling}
 
 By default, the **Enable JSON+LD** checkbox is not visible in the CIF configuration. To enable this feature, the project must include the necessary OSGi configuration, which allows the checkbox to be displayed. This configuration enables users to toggle JSON+LD script support on product pages.
-To make the **Enable JSON+LD** checkbox available in the CIF configuration, add the following OSGi configuration to your project: `
-com.adobe.cq.cif.components.models.JsonLdFeatureEnable`.
+
+To make the **Enable JSON+LD** checkbox available in the CIF configuration, add the following OSGi configuration to your project: 
+
+`com.adobe.cq.cif.components.models.JsonLdFeatureEnable`.
+
 For further details on adding this configuration, refer to [Adds configuration for Json-Ld](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.cif.components.models.JsonLdFeatureEnable.cfg.json) in the public aem-cif-guides-venia repository.
 
 Once this configuration is added and deployed, the checkbox becomes visible in the CIF configuration settings and here are the steps to enable **JSON+LD**:

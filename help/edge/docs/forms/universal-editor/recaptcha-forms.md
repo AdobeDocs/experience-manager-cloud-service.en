@@ -1,199 +1,363 @@
 ---
-title: Protect Your Forms with reCAPTCHA - A Visual Guide
-description: Learn how to easily add Google reCAPTCHA to your Edge Delivery Services forms to prevent spam and bot submissions
+title: Add Google reCAPTCHA to Forms in Universal Editor
+description: Guide to implementing Google reCAPTCHA protection in Edge Delivery Services forms to prevent spam and automated attacks
 feature: Edge Delivery Services
 keywords: reCAPTCHA in forms, Using reCAPTCHA in Universal Editor, Add reCAPTCHA in forms, form security, spam protection
-role: Developer
+role: Developer, Admin
+level: Intermediate
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
 ---
 
-# Protect Your Forms from Spam with Google reCAPTCHA
+# Add Google reCAPTCHA to Forms in Universal Editor
 
-<span class="preview"> This feature is available through the early access program. To request access, send an email from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> with your GitHub organization name and repository name.</span>
+Google reCAPTCHA helps protect forms by distinguishing between human users and automated bots. This guide explains how to implement both reCAPTCHA Enterprise and Standard versions in Universal Editor.
 
+**Objectives:**
 
+- Select the appropriate reCAPTCHA solution
+- Configure reCAPTCHA Enterprise or Standard
+- Add reCAPTCHA to your forms
+- Validate and test the implementation
+- Monitor and optimize performance
 
-## Why use reCAPTCHA in your forms?
+## Prerequisites
+
+Before starting, ensure you have the following:
+
+### Access Requirements
+
+- AEM as a Cloud Service authoring access
+- Universal Editor access with form editing permissions
+- Enrollment in the early access program for reCAPTCHA features
+
+### Technical Requirements
+
+- Active Google account
+- For Enterprise: Google Cloud Platform project with billing enabled
+- For Standard: Google reCAPTCHA account
+- Verified domain ownership for your forms
+
+### Knowledge Requirements
+
+- Basic understanding of AEM Forms and Universal Editor
+- Familiarity with cloud service configurations
+- Understanding of form security concepts
+
+## Why Use reCAPTCHA in Your Forms?
 
 | ![Security](/help/edge/docs/forms/universal-editor/assets/security.svg) | ![Bot Protection](/help/edge/docs/forms/universal-editor/assets/bot-protection.svg) | ![User Experience](/help/edge/docs/forms/universal-editor/assets/user-experience.svg) |
 |:-------------:|:-------------:|:-------------:|
 | **Enhanced Security** | **Bot & Spam Prevention** | **Seamless User Experience** |
-| Protect your forms from fraudulent activities and malicious attacks | Stop automated bots from flooding your forms with irrelevant or harmful content | The invisible reCAPTCHA works behind the scenes without disrupting legitimate users |
+| Protect forms from fraudulent activities and attacks | Prevent automated bots from submitting forms | Invisible reCAPTCHA does not disrupt legitimate users |
 
-For example, a tax calculation form with sensitive financial information needs protection from misuse. reCAPTCHA verifies that submissions come from genuine users, not automated systems.
+**Key Concept:** reCAPTCHA uses machine learning to analyze user behavior and assigns a score (0.0 to 1.0) indicating the likelihood of human interaction. Higher scores indicate human users; lower scores suggest bots.
+
+**Example:** A tax calculation form handling sensitive data requires protection from automated attacks. reCAPTCHA verifies that submissions are from real users, not bots.
 
 ## Choose Your reCAPTCHA Solution
 
-Edge Delivery Services Forms supports two Google reCAPTCHA options:
+Edge Delivery Services Forms supports two Google reCAPTCHA options. Use the following criteria to select the right solution:
 
-| ![reCAPTCHA Enterprise](/help/edge/docs/forms/universal-editor/assets/enterprise.svg) | ![reCAPTCHA Standard](/help/edge/docs/forms/universal-editor/assets/standard.svg) |
-|:-------------:|:-------------:|
-| [**reCAPTCHA Enterprise**](#set-up-recaptcha-enterprise) | [**reCAPTCHA Standard**](#set-up-recaptcha-standard) |
-| Premium, enterprise-grade fraud detection with additional features and customization | Free service with score-based detection that operates invisibly in the background |
-| Best for: Large organizations with complex security needs | Best for: Small to medium projects with basic protection needs |
+### Quick Decision Guide
 
-Both options use score-based detection (0.0 to 1.0) to identify human vs. bot interactions without disrupting the user experience.
+**Use reCAPTCHA Enterprise if you have:**
+
+- High-traffic forms (>10,000 requests/month)
+- Strict compliance requirements (GDPR, SOX, HIPAA)
+- Need for advanced analytics and reporting
+- Budget for premium security features
+- Complex multi-domain deployments
+
+**Use reCAPTCHA Standard if you have:**
+
+- Low to moderate traffic (<10,000 requests/month)
+- Basic security needs
+- Limited budget (free tier)
+- Simple single-domain setup
+- Are new to reCAPTCHA
+
+### Detailed Comparison
+
+| **Feature** | **reCAPTCHA Enterprise** | **reCAPTCHA Standard** |
+|-------------|--------------------------|------------------------|
+| **Cost** | Paid (usage-based pricing) | Free |
+| **Request Limit** | Unlimited | 1M requests/month |
+| **Advanced Analytics** | Detailed reporting | Basic stats only |
+| **Custom Rules** | Account-specific rules | Global rules only |
+| **Multi-domain Support** | Advanced management | Basic support |
+| **SLA** | 99.9% uptime guarantee | Best effort |
+| **Support** | Enterprise support | Community support |
+| **Compliance** | Enterprise-grade | Standard compliance |
+
+**Both solutions provide:**
+
+- Score-based detection (0.0 to 1.0 scale)
+- Invisible operation (no user interaction required)
+- Machine learning-powered bot detection
+- Real-time risk assessment
 
 ## Set Up reCAPTCHA Enterprise
 
-### Step 1: Get Your Google Cloud Credentials
 
-Before configuring reCAPTCHA Enterprise, you'll need:
++++ Step 1: Prepare Google Cloud Environment
 
-- A [Google Cloud project](https://cloud.google.com/recaptcha/docs/prepare-environment#before-you-begin) with your [Project ID](https://support.google.com/googleapi/answer/7014113)
-- [reCAPTCHA Enterprise API enabled](https://cloud.google.com/recaptcha/docs/prepare-environment#enable-api) for your project
-- An [API key](https://console.cloud.google.com/apis/credentials) for authentication
-- A [site key](https://console.cloud.google.com/security/recaptcha) for your domain
+**Requirements:**
 
-### Step 2: Create a Cloud Configuration Container
+1. Google Cloud Project with billing enabled
+2. Project ID (from GCP dashboard)
+3. Domain verification for your forms
+4. Admin access to GCP and AEM
+
+**Setup:**
+
+1. Create or select a Google Cloud Project
+   - Go to [Google Cloud Console](https://console.cloud.google.com/)
+   - Create a new project or select an existing one
+   - Note your Project ID
+
+2. Enable reCAPTCHA Enterprise API
+   - Go to APIs & Services > Library
+   - Search for "reCAPTCHA Enterprise API"
+   - Click Enable
+
+3. Create API Credentials
+   - Go to APIs & Services > Credentials
+   - Click Create Credentials > API Key
+   - Copy and store your API key
+
+4. Create Site Key
+   - Go to Security > reCAPTCHA Enterprise
+   - Click Create Key
+   - Choose Score-based key type
+   - Add your domain(s)
+   - Set threshold score (recommended: 0.5)
+
+**Validation Checkpoint:** Ensure you have:
+
+- Project ID
+- API Key
+- Site Key
+- Verified domain in Google Cloud
+
++++
+
++++ Step 2: Configure AEM Cloud Configuration Container
 
 ![Step-by-step cloud configuration setup](/help/edge/docs/forms/universal-editor/assets/recaptcha-general-configuration.png)
+*Figure: Enabling cloud configurations for your form container*
 
-1. Log in to your AEM author instance
-2. Navigate to **Tools** > **General** > **Configuration Browser**
-3. Find your form and select **Properties**
-4. Enable **Cloud Configurations** in the dialog
-5. Save and publish your configuration
+**Setup:**
 
-### Step 3: Configure reCAPTCHA Enterprise Service
+1. Access Configuration Browser
+   - Log in to your AEM author instance
+   - Go to Tools > General > Configuration Browser
+
+2. Enable Cloud Configurations
+   - Locate your form's configuration container
+   - Select Properties
+   - Check Cloud Configurations
+   - Click Save & Close
+
+3. Verify Configuration
+   - Confirm "Cloud Configurations" appears in the container properties
+
+**Validation Checkpoint:** 
+
+- Cloud Configurations enabled for your container
+- Container appears in Configuration Browser
+- Properties show "Cloud Configurations" as enabled
+
++++
+
++++ Step 3: Configure reCAPTCHA Enterprise Service in AEM
 
 ![reCAPTCHA Enterprise configuration screen](/help/edge/docs/forms/universal-editor/assets/recaptcha-enterprise.png)
+*Figure: reCAPTCHA Enterprise configuration interface in AEM*
 
-1. Go to **Tools** > **Cloud Services** > **reCAPTCHA**
-2. Navigate to your form and click **Create**
-3. In the dialog:
-   - Select **ReCAPTCHA Enterprise** version
-   - Enter a Title and Name
-   - Add your Project ID, Site Key, and API key
-   - Select **Score-based site key** as Key type
-   - Set a threshold score (0-1) to distinguish humans from bots
-4. Click **Create** and publish your configuration
+**Configuration:**
+
+1. Access reCAPTCHA Configuration
+   - Go to Tools > Cloud Services > reCAPTCHA
+   - Select your form's configuration container
+   - Click Create
+
+2. Configure Enterprise Settings
+   - Title: Descriptive name (e.g., "Production reCAPTCHA")
+   - Name: System name (auto-generated or custom)
+   - Version: Select ReCAPTCHA Enterprise
+   - Project ID: Enter your Google Cloud Project ID
+   - Site Key: Enter the site key from Google Cloud
+   - API Key: Enter your Google Cloud API key
+   - Key Type: Select Score-based site key
+
+3. Set Security Threshold
+   - Threshold Score: Set between 0.0 and 1.0
+   - Recommended values:
+     - 0.7-0.9: High security (may block some legitimate users)
+     - 0.5-0.7: Balanced security (recommended)
+     - 0.1-0.5: Lower security (allows more users)
+
+4. Save and Publish
+   - Click Create to save configuration
+   - Click Publish to make it available
+
+**Validation Checkpoint:**
+
+- Configuration saved successfully
+- All required fields completed
+- Configuration published and visible
+- No error messages
+
++++
 
 ## Set Up reCAPTCHA Standard
 
-### Step 1: Get Your API Keys
-
-Before starting, [obtain a reCAPTCHA API key pair](https://www.google.com/recaptcha/admin) (Site key and Secret key) from the Google reCAPTCHA Console.
++++Step 1: Obtain reCAPTCHA API Keys (See details)
 
 >[!IMPORTANT]
 >
->Edge Delivery Services Forms only supports **reCAPTCHA Score based** version.
+> Edge Delivery Services Forms only supports reCAPTCHA v2 (Score-based). Do not use the checkbox version.
 
-### Step 2: Create a Cloud Configuration Container
+**Key Generation:**
 
-Follow the same steps as in the Enterprise version to create and publish a cloud configuration container.
+1. Access Google reCAPTCHA Console
 
-### Step 3: Configure reCAPTCHA Standard Service
+   - Go to [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin)
+   - Sign in with your Google account
+
+2. Create New Site
+
+   - Click + to add a new site
+   - Label: Enter a descriptive name
+   - reCAPTCHA Type: Select reCAPTCHA v2 > "I'm not a robot" Invisible
+   - Domains: Add your form domain(s)
+   - Accept terms and click Submit
+
+3. Collect Your Keys
+
+   - Site Key: Copy the site key (public key)
+   - Secret Key: Copy the secret key (private key)
+
+**Validation Checkpoint:**
+
+- Site created in reCAPTCHA console
+
+- Site Key obtained
+
+- Secret Key obtained
+
+- Domain(s) added and verified
+
++++
+
++++Step 2: Configure AEM Cloud Configuration Container (See details)
+
+Follow the same process as in the Enterprise setup:
+
+1. Enable Cloud Configurations in Configuration Browser
+
+2. Verify container configuration
+
+3. Confirm settings are saved
+
++++
+
++++Step 3: Configure reCAPTCHA Standard Service in AEM (See details)
 
 ![reCAPTCHA Standard configuration screen](/help/edge/docs/forms/universal-editor/assets/recaptcha.png)
+*Figure: reCAPTCHA Standard configuration interface in AEM*
 
-1. Go to **Tools** > **Cloud Services** > **reCAPTCHA**
-2. Navigate to your form and click **Create**
-3. In the dialog:
-   - Select **ReCAPTCHA v2** version
-   - Enter a Title and Name
-   - Add your Site Key and Secret Key
-4. Click **Create** and publish your configuration
+**Configuration:**
 
-## Add reCAPTCHA to your Form
+1. Access reCAPTCHA Configuration
 
-Now that you've configured reCAPTCHA, it's time to add it to your form:
+   - Go to Tools > Cloud Services > reCAPTCHA
+   - Select your form's configuration container
+   - Click Create
+
+2. Configure Standard Settings
+
+   - Title: Descriptive name (e.g., "Standard reCAPTCHA")
+   - Name: System name (auto-generated or custom)
+   - Version: Select ReCAPTCHA v2
+   - Site Key: Enter your Google reCAPTCHA site key
+   - Secret Key: Enter your Google reCAPTCHA secret key
+
+3. Save and Publish
+
+   - Click Create to save configuration
+   - Click Publish to make it available
+
+**Validation Checkpoint:**
+
+- Configuration created without errors
+
+- Both keys entered correctly
+
+- Configuration published successfully
+
+- Configuration appears in the list
+
++++
+
+## Add reCAPTCHA to Your Form
+
+After configuring the reCAPTCHA service, add protection to your form as follows:
 
 ![Adding the reCAPTCHA component to a form](/help/edge/docs/forms/universal-editor/assets/add-recaptcha-component.png)
+*Figure: Adding the Invisible Captcha component to your form*
 
-1. Open your form in Universal Editor
-2. Navigate to the Adaptive Form section in the Content tree
-3. Click the **Add** icon and select **Captcha (Invisible)** from the Adaptive Form Components list
-   - *Alternatively, drag and drop the component into your form*
-4. Click **Publish** to update your form with reCAPTCHA protection
++++1. Open Form in Universal Editor
+Go to your form in AEM Sites and click Edit to open it in Universal Editor. Wait for the editor to load.
 
-Your form is now protected! View it at:
-`https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form-name>`
+- Go to your form in AEM Sites
+- Click Edit to open in Universal Editor
+- Wait for the editor to load
++++
 
-![Form with reCAPTCHA protection enabled](/help/edge/docs/forms/universal-editor/assets/form-with-recaptcha.png)
++++2. Locate the Form Structure
+In the Content Tree (left panel), find your Adaptive Form section and expand the form structure to see insertion points.
 
-## Validating your reCAPTCHA integration
+- In the Content Tree (left panel), find your Adaptive Form section
+- Expand the form structure to see insertion points
++++
 
-After adding reCAPTCHA to your form, it's essential to verify that it's working correctly. Here's how to validate your implementation:
++++3. Add reCAPTCHA Component
+Add the Captcha (Invisible) component to your form.
 
-### Visual verification
+- Click the Add (+) icon in your form section
+- From the component list, select Captcha (Invisible)
+- Alternatively, drag and drop the component from the components panel
++++
 
-While reCAPTCHA v2 (Score-based) operates invisibly, you can confirm its presence by:
++++4. Configure Component (Optional)
+Select the newly added captcha component and verify it uses your reCAPTCHA configuration.
 
-1. **Inspect the page source**: Right-click on your form page and select "View Page Source"
-   - Look for the reCAPTCHA script inclusion with your site key
-   - Example: `<script src="https://www.google.com/recaptcha/api.js?render=YOUR_SITE_KEY"></script>`
+- Select the newly added captcha component
+- In the Properties panel, verify it uses your reCAPTCHA configuration
+- No additional configuration is needed for basic setup
++++
 
-2. **Check Network Requests**: Using browser developer tools (F12)
-   - Submit your form and look for network requests to `google.com/recaptcha`
-   - These requests indicate reCAPTCHA is active on your form
++++5. Publish Your Changes
+Publish your changes and verify there are no errors.
 
-### Functional testing
+- Click Publish in Universal Editor
+- Wait for confirmation
+- Verify no errors appear
++++
 
-To verify reCAPTCHA is actually protecting your form:
+### Verify Implementation
 
-1. **Normal Submission Test**:
-   - Fill out your form with valid data
-   - Submit the form at a normal human pace
-   - Verify the form submits successfully
+Your protected form is now available at:
 
-2. **Bot-like Behavior Test**:
-   - Open your form in an incognito/private browsing window
-   - Fill out the form extremely quickly (automated-like behavior)
-   - Submit multiple times in rapid succession
-   - If reCAPTCHA is working, these submissions might be blocked or flagged
+```
+https://<branch>--<repo>--<owner>.aem.live/content/forms/af/
+<form-name>
+```
 
-3. **Check Form Submission Records**:
-   - Review your form submission data
-   - Each submission should include a reCAPTCHA score
-   - Scores closer to 1.0 indicate likely human users
-   - Scores closer to 0.0 indicate potential bot activity
+**Example URL:**
 
-### Using Google reCAPTCHA admin console
-
-For Enterprise users, the Google Cloud Console provides detailed analytics:
-
-1. Go to the [Google Cloud Console](https://console.cloud.google.com/)
-2. Navigate to **Security** > **reCAPTCHA**
-3. Select your site key
-4. Review the assessment charts and statistics
-5. Look for:
-   - Traffic patterns
-   - Score distributions
-   - Potentially fraudulent activities
-
-For Standard reCAPTCHA users, basic statistics are available in the [reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin/).
-
-### Adjusting your implementation
-
-Based on your validation results:
-
-- If legitimate users are being blocked, consider lowering your threshold score
-- If you're still receiving spam, consider increasing your threshold score
-- For persistent issues, review your reCAPTCHA configuration and ensure all keys are correctly entered
-
-Remember that reCAPTCHA uses machine learning to improve over time, so its effectiveness may increase as it learns your site's traffic patterns.
-
-## Troubleshooting & FAQs
-
-| ![Question](/help/edge/docs/forms/universal-editor/assets/question.svg) | ![Answer](/help/edge/docs/forms/universal-editor/assets/answer.svg) |
-|:-------------:|:-------------:|
-| **What if I don't create a reCAPTCHA configuration?** | The system will look for a configuration in the Global Container. If none exists, you'll get an error. |
-| **What if I create multiple configurations?** | The system automatically uses the first created configuration. |
-| **Why aren't my changes visible on the published URL?** | Make sure you republish your form after making changes. |
-| **Which reCAPTCHA services are supported?** | Edge Delivery Services Forms only supports score-based reCAPTCHA services. |
-
-## Next steps
-
-Now that you've protected your form with reCAPTCHA:
-
-- **Validate your implementation**: Follow the [validation steps](#-validating-your-recaptcha-integration) to ensure reCAPTCHA is working correctly
-- **Monitor performance**: Regularly check your Google reCAPTCHA dashboard for suspicious activities and score distributions
-- **Fine-tune settings**: Adjust your threshold score based on your security needs and user experience feedback
-- **Stay updated**: Keep your reCAPTCHA implementation current with Google's latest security recommendations
-- **Educate your team**: Share knowledge about how reCAPTCHA works and how to interpret the analytics
-- **Collect feedback**: Monitor user experience to ensure legitimate users aren't being blocked
-
-Remember that effective form protection is an ongoing process that requires regular monitoring and adjustments.
-
-
+```
+https://main--my-forms--company.aem.live/content/forms/af/
+contact-us-form
+```

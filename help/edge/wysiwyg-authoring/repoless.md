@@ -70,6 +70,7 @@ You need to create a site configuration and add it to your path mapping.
 1. Create a new page at the root of your site and choose the [**Configuration** template](/help/edge/wysiwyg-authoring/tabular-data.md#other).
    * You can leave the configuration empty with only the predefined `key` and `value` columns. You only need to create it.
 1. Create a mapping in the public configuration to the site configuration using a cURL command similar to the following.
+
    ```text
    curl --request POST \
      --url https://admin.hlx.page/config/<your-github-org>/sites/<your-aem-project>/public.json \
@@ -87,7 +88,9 @@ You need to create a site configuration and add it to your path mapping.
        }
    }'
    ```
+
 1. Validate that the public configuration has been set an is available with a cURL command similar to the following.
+
    ```text
    curl 'https://main--<your-aem-project>--<your-github-org>.aem.live/config.json'
    ```
