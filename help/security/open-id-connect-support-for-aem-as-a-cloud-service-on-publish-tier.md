@@ -17,7 +17,7 @@ Until now, AEM customers were responsible for implementing their own custom logi
 
 Whether you're delivering a personalized consumer website or an authenticated internal portal, OIDC on Publish simplifies identity federation and reduces risk through centralized identity governance. It also helps organizations meet modern compliance and security standards without sacrificing agility.
 
-## Configure an OIDC Application {#configure-an-azure-ad-oidc-application}
+## Configure AEM for OIDC Authentication {#configure-aem-oidc-authentication}
 
 ### Prerequisites {#prerequisits}
 
@@ -49,41 +49,9 @@ The following diagram shows how the mentioned configuration elements are linked.
 
 ![OIDC configuration diagram](/help/security/assets/oidc-diagram.png)
 
-### Details on the Configuration of DefaultSyncHandler {#details-on-the-configuration-of-defaultsynchandler}
-
-|  Property name | Notes  | Suggested value  |
-|---|---|---|
-| `user.expirationTime`  | Duration until a synced user gets expired. Users are synchronized only after the expiration time.  | 1h  |
-| `user.membershipExpTime`     | Duration until a synced user membership gets expired. User memberships are synchronized only after the expiration time.  | 1h  |
-| `user.dynamicMembership`  | We recommend enabling dynamic group membership  | true  |
-| `user.enforceDynamicMembership`  | We recommend enabling the enforcement of dynamic group membership  | true  |
-| `group.dynamicGroups`  | We recommend enabling dynamic groups  |  true |
-| user.propertyMapping  | The provided implementation of `UserInfoProcessor` synchronizes only few properties. It can be modified and customized.  | <code>"profile/givenName=profile/given_name",</code><br><code>"profile/familyName=profile/family_name",</code><br><code>"rep:fullname=profile/name",</code><br><code>"profile/email=profile/email",</code><br><code>"access_token=access_token",</code><br><code>"refresh_token=refresh_token"</code> ||
-
-### Configure a new Application in Azure Active Directory {#configure-a-new-application-in-azure-ad}
-
-First, follow the steps below in order to create a new application in Azure Active Directory:
-
-1. Go to the IAM Portal to set your password and Multi Factor Authentication for the stage version of Active Directory
-1. Login to `https://adobe-stage.okta.com/`
-1. Go to `portal.azure.com` and select the domain `Adobessostest.com`
-1. Click on **More Services** and then on **Identity**
-1. Click on **App registration**
-1. Add a name, supported account types and redict uri of type "web", as shown in the screenshot below
-
-   ![App Registration](/help/security/assets/odic-register-app.png)
-
-1. See below how the screen detailing the application overview should look:
-
-   ![Application Overview](/help/security/assets/odic-application-overview.png)
-
-1. Create a secret and copy the value.
-
-## Configure the AEM Authentication Handler {#configure-the-aem-authentication-handler}
-
 ### Configure the OIDC Connection {#configure-the-oidc-connection}
 
-Next, we need to configure the OIDC connection. Multiple OIDC connections can be configured, and each has to have a different name.
+First, we need to configure the OIDC connection. Multiple OIDC connections can be configured, and each has to have a different name.
 
 1. Create a new `.cfg.json` file that will house the configuration. For example, you can use `org.apache.sling.auth.oauth_client.impl.OidcConnectionImpl~azure.cfg.json` - the **azure** suffix must be a unique identifier for the connection
 1. Follow the configuration format in the example below:
@@ -102,12 +70,12 @@ Next, we need to configure the OIDC connection. Multiple OIDC connections can be
 
 1. Configure the its properties as follows:
    * The **"name"** can be defined by the user
-   * `baseUrl`, `clientid` and `clientSecret` are configuration values that come from Azure
+   * `baseUrl`, `clientid` and `clientSecret` are configuration values that come from the IdP.
    * The scopes must contain at least the value `openid`. 
 
 ### Configure OIDC Authentication Handler {#configure-oidc-authentication-handler}
 
-Now, configure the OIDC authentication handler. Multiple OIDC connections can be configured. Each has to have a different name. If they share the same [OAK External Identity Provider](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html), they can share users.
+Now, configure the OIDC authentication handler. Multiple OIDC connections can be configured. Each has to have a different name. If they share the same [OAK External Identity Provider](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html), they can share users.
 
 1. Create the configuration file. For this example, we'll use `org.apache.sling.auth.oauth_client.impl.OidcConnectionImpl~azure.cfg.json`. The `azure` suffix must be a unique identifier. See an example of the configuration file below:
 
@@ -125,8 +93,29 @@ Now, configure the OIDC authentication handler. Multiple OIDC connections can be
    * `path`: the path to be protected
    * `callbackUri`: to the path to be protected, adding the suffix: `/j_security_check`
    * `defaultConnectionName`: configure with the same name defined for the OIDC connection on the previous step+
-   * `pkceEnabled`: `false` if this feature is not enabled in Azure AD
-   * `idp`: the name of the [OAK External Identity Provider](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html). Note that different OAK IDP cannot share users or groups
+   * `pkceEnabled`: `true` Proof Key for Code Exchange (PKCE) on Authorization code flow 
+   * `idp`: the name of the [OAK External Identity Provider](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). Note that different OAK IDP cannot share users or groups
+
+### Configure SlingUserInfoProcessor
+
+1. Create the configuration file. For this example, we'll use `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessor~azure.cfg.json`. The `azure` suffix must be a unique identifier. See an example of the configuration file below:
+   ```
+   {
+      "groupsInIdToken":true,
+      "groupsClaimName": "groups",
+      "connection":"azure",
+      "storeAccessToken": false,
+      "storeRefreshToken": false
+   }
+   ```
+1. Then, configure its properties as follows:
+   * `groupsInIdToken`: Set to true if the groups are sent in ID Token. If the value is false, or not specified, the groups are read from UserInfo endpoint.
+   * `groupsClaimName`: Name of the claim contains the groups to be synchronized in AEM.
+   * `connection`: configure with the same name defined for the OIDC connection on the previous step
+   * `storeAccessToken`: true if the Access Token must be stored in the repostory. By default this is false. Set it to true only if AEM needs to access resources in behalf of the user stored in external servers protected by the same IdP.
+   * `storeRefreshToken`: true if the Refresh Token must be stored in the repostory. By default this is false. Set it to true only if AEM needs to access resources in behalf of the user stored in external servers protected by the same IdP and need to refresh the token from the IdP.
+Remark that Access Token and Refresh Token are stored encrypted with AEM master key.
+
 
 ### Configure the Synchronization Handler {#configure-the-synchronization-handler}
 
@@ -150,6 +139,18 @@ Create a file named `org.apache.jackrabbit.oak.spi.security.authentication.exter
 }
 ```
 
+Below some of the most relevant attributes to be configured in DefaultSyncHandler. Remark that Dynamic Group Memberhsip should always be enabled in Cloud Services.
+
+|  Property name | Notes  | Suggested value  |
+|---|---|---|
+| `user.expirationTime`  | Duration until a synced user gets expired. Users are synchronized only after the expiration time.  | 1h  |
+| `user.membershipExpTime`     | Duration until a synced user membership gets expired. User memberships are synchronized only after the expiration time.  | 1h  |
+| `user.dynamicMembership`  | We recommend enabling dynamic group membership  | true  |
+| `user.enforceDynamicMembership`  | We recommend enabling the enforcement of dynamic group membership  | true  |
+| `group.dynamicGroups`  | We recommend enabling dynamic groups  |  true |
+| user.propertyMapping  | The provided implementation of `UserInfoProcessor` synchronizes only few properties. It can be modified and customized.  | <code>"profile/givenName=profile/given_name",</code><br><code>"profile/familyName=profile/family_name",</code><br><code>"rep:fullname=profile/name",</code><br><code>"profile/email=profile/email",</code><br><code>"access_token=access_token",</code><br><code>"refresh_token=refresh_token"</code> ||
+| `user.membershipNestingDepth`| Returns the maximum depth of group nesting when membership relations are synced. A value of 0 effectively disables group membership lookup. A value of 1 only adds the direct groups of a user. This value has no effect when syncing individual groups only when syncing a users membership ancestry. | 1|
+
 ### Configure the External Login Module {#configure-the-external-login-module}
 
 Finally, you need to configure the External Login Module.
@@ -170,7 +171,97 @@ Finally, you need to configure the External Login Module.
 
 ### Optional: Implement a Custom UserInfoProcessor {#implement-a-custom-userinfoprocessor}
 
-The user is authenticated by an ID Token, and additional attributes are fetched in the `userInfo` endpoint defined for the IdP. If additional non-standard operations must be performed, a custom implementation of the [UserInfoProcessor](https://github.com/apache/sling-org-apache-sling-auth-oauth-client/blob/c546845be914a42aaf6c8171f2e486e28728f798/src/main/java/org/apache/sling/auth/oauth_client/spi/UserInfoProcessor.java) can be provided. [Here](https://github.com/apache/sling-org-apache-sling-auth-oauth-client/blob/c546845be914a42aaf6c8171f2e486e28728f798/src/main/java/org/apache/sling/auth/oauth_client/impl/SlingUserInfoProcessorImpl.java) is the default implementation from Sling. 
+The user is authenticated by an ID Token, and additional attributes are fetched in the `userInfo` endpoint defined for the IdP. If additional non-standard operations must be performed, a custom implementation of the [UserInfoProcessor](https://github.com/apache/sling-org-apache-sling-auth-oauth-client/blob/master/src/main/java/org/apache/sling/auth/oauth_client/impl/SlingUserInfoProcessorImpl.java) is the default implementation from Sling. 
+
+## Example: Configure OIDC authentication with Azure Active Directory
+
+### Configure a new Application in Azure Active Directory {#configure-a-new-application-in-azure-ad}
+
+1. Create a new application in Azure Active Directory by following the [Azure Active Directory documentation](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings#create-an-app-registration-in-azure).  See below how the screen detailing the application overview should look:
+
+   ![Application Overview](/help/security/assets/odic-application-overview.png)
+
+1. If Groups or application roles are required, follow the [documentation](https://learn.microsoft.com/en-us/entra/external-id/customers/how-to-use-app-roles-customers) to enable them for the application and send them in the ID Token. Below an example of configured groups:
+
+![OIDC Claim Token ID](/help/security/assets/oidc-claim-id-token.png)
+
+1. Follow the previously documented steps to create the required configuration files. Below an example specific for Azure AD where:
+   * We define the name of oidc Connection, Authentication Handler and DefaultSyncHandler as: `azure`
+   * The website url is: `www.mywebsite.com`
+   * We protect the path `/content/wknd/us/en/adventures`
+   * Tennant is: `tennat-id`,
+   * Client id is: `client-id`,
+   * Secret is: `secret`,
+   * The groups are sent in the ID Token in a claim called: `groups`
+
+#### org.apache.sling.auth.oauth_client.impl.OidcConnectionImpl~azure.cfg.json
+
+```
+{
+  "name":"azure",
+  "scopes":[
+    openid", "User.Read", "profile", "email
+  ],
+  "baseUrl":"https://login.microsoftonline.com/tenant-id/v2.0",
+  "clientId":"client-id",
+  "clientSecret":"secret"
+}
+```
+
+#### org.apache.sling.auth.oauth_client.impl.OidcAuthenticationHandler~azure.cfg.json 
+
+```
+{
+  "callbackUri":"https://www.mywebsite.com/content/wknd/us/en/adventures/j_security_check",
+  "path":[
+    "/content/wknd/us/en/adventures"
+  ],
+  "idp":"azure",
+  "defaultConnectionName":"azure"
+}
+```
+
+#### org.apache.jackrabbit.oak.spi.security.authentication.external.impl.ExternalLoginModuleFactory~azure.cfg.json
+
+```
+{
+  "sync.handlerName":"azure",
+  "idp.name":"azure"
+}
+```
+
+#### org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler~azure.cfg.json
+
+```
+{
+  "user.expirationTime":"1s",
+  "user.membershipExpTime":"1s",
+  "user.propertyMapping":[
+    "profile/givenName=profile/given_name",
+    "profile/familyName=profile/family_name",
+    "rep:fullname=profile/name",
+    "profile/email=profile/email",
+    "access_token=access_token",
+    "refresh_token=refresh_token"
+  ],
+  "user.pathPrefix":"azure",
+  "group.pathPrefix": "oidc",
+  "user.membershipNestingDepth": "1",
+  "handler.name":"azure"
+}
+```
+
+#### org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessorImpl~azure.cfg.json
+
+```
+{
+  "groupsInIdToken": "true",
+  "storeAccessToken": "false",
+  "storeRefreshToken": "false",
+  "connection": "azure",
+  "groupsClaimName": "groups"
+}
+```
 
 ### Additional Information about Azure AD Groups {#additional-information-about-azure-ad-groups}
 
@@ -195,13 +286,6 @@ The filaname that needs to be modified is `org.apache.sling.auth.oauth_client.im
 }
 ```
 
->[!NOTE]
->
-> These changes will work after that following tickets are completed:
-> * [SLING-12851](https://issues.apache.org/jira/browse/SLING-12851)
-> * [SLING-12850](https://issues.apache.org/jira/browse/SLING-12850)
-
-<!-- Alexandru: is it worth referencing the above SLING tickets in the public docs? -->
 
 
 
