@@ -1018,19 +1018,19 @@ user-guide-title: AEM as a Cloud Service
 + Content and Commerce {#content-and-commerce}
   + [Introduction and overview](/help/commerce-cloud/introduction.md)
   + Edge Delivery Services Storefront {#edge-storefront}
-    + [Some great content](/help/commerce-cloud/edge-storefront/some-great-content.md)
+    + [Introduction](/help/commerce-cloud/edge-storefront/introduction.md)
   + Third Party Storefront {#thrid-party-storefront}
-    + [Some more great content](/help/commerce-cloud/third-party-storefront/some-more-great-content.md)
+    + [Introduction](/help/commerce-cloud/third-party-storefront/introduction.md)
   + CIF Storefront {#cif-storefront}
-    + [CIF Introduction](/help/commerce-cloud/cif-storefront/cif-introduction.md)
+    + [CIF Introduction](/help/commerce-cloud/cif-storefront/introduction.md)
     + [Notable Changes to AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/cif-storefront/changes.md)
-      + Commerce Journeys {#journeys}
-        + Content Author Journey {#author}
-          + [AEM Content and Commerce Content Author Journey](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/overview.md)
-          + [Getting Started with CIF Authoring](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/getting-started.md)
-          + [Manage product catalog pages and template](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
-          + [Building Staged Product Catalog Experiences](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
-          + [Building Product Experiences](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
+    + Commerce Journeys {#journeys}
+      + Content Author Journey {#author}
+        + [AEM Content and Commerce Content Author Journey](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/overview.md)
+        + [Getting Started with CIF Authoring](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/getting-started.md)
+        + [Manage product catalog pages and template](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
+        + [Building Staged Product Catalog Experiences](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
+        + [Building Product Experiences](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
     + Integrations {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/cif-storefront/integrating/magento.md)
       + [Live Search CIF Component](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md)
@@ -1043,7 +1043,7 @@ user-guide-title: AEM as a Cloud Service
         + [Commerce Experiences](/help/commerce-cloud/cif-storefront/authoring/authoring-commerce-experiences.md)
         + [Product Cockpit](/help/commerce-cloud/cif-storefront/authoring/product-cockpit.md)
         + [Multi-Template Usage](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md)
-        + [Enrich Product Data with Associated Content](/help/commerce-cloud/authoring/enrich-product-associated-content.md)
+        + [Enrich Product Data with Associated Content](/help/commerce-cloud/cif-storefront/authoring/enrich-product-associated-content.md)
         + [Product Recommendations](/help/commerce-cloud/cif-storefront/authoring/product-recommendations.md)
       + Administering {#administering}
         + [Multi-Store Setup](/help/commerce-cloud/cif-storefront/configuring/multi-store-setup.md)

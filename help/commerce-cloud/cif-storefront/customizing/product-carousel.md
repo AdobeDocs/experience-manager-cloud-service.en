@@ -12,20 +12,20 @@ index: no
 
 The Product Carousel component is extended throughout this tutorial. As a first step, add an instance of the Product Carousel to the Home page to understand the baseline functionality:
 
-1. Navigate to the Home Page of the site, for example [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
-1. Insert a new Product Carousel component into the main layout container on the page.
-    ![Product Carousel component](/help/commerce-cloud/assets/product-carousel-component.png)
+1. Navigate to the Home Page of the site, for example [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
+1. Insert a new Product Carousel component into the main layout container on the page.
+    ![Product Carousel component](/help/commerce-cloud/cif-storefront/assets/product-carousel-component.png)
 1. Expand the Side Panel (if not already toggled) and switch the asset finder dropdown to **Products**.
 
-   ![Carousel Products](/help/commerce-cloud/assets/carousel-products.png)
+   ![Carousel Products](/help/commerce-cloud/cif-storefront/assets/carousel-products.png)
 
 1. This should display a list of available products from a connected Adobe Commerce instance.
 
-    ![Connected Instance](/help/commerce-cloud/assets/connected-instance.png)
+    ![Connected Instance](/help/commerce-cloud/cif-storefront/assets/connected-instance.png)
 
 1. Products will be shown like below with default properties:
 
-    ![Product Shown with Properties](/help/commerce-cloud/assets/discount.png)
+    ![Product Shown with Properties](/help/commerce-cloud/cif-storefront/assets/discount.png)
     
 ## Update the Sling Model {#update-sling-model}
 
