@@ -3,8 +3,8 @@ title: Open ID Connect Support for AEM as a Cloud Service on Publish Tier
 description: Learn how to set up Open ID Connect (OIDC) for AEM as a Cloud Service on Publish Tier
 feature: Security
 role: Admin
+exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
 ---
-
 # Open ID Connect Support for AEM as a Cloud Service on Publish Tier
 
 ## Introduction {#introduction}
