@@ -3,8 +3,8 @@ title: Open ID Connect Support for AEM as a Cloud Service on Publish Tier
 description: Learn how to set up Open ID Connect (OIDC) for AEM as a Cloud Service on Publish Tier
 feature: Security
 role: Admin
+exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
 ---
-
 # Open ID Connect Support for AEM as a Cloud Service on Publish Tier
 
 ## Introduction {#introduction}
@@ -99,6 +99,7 @@ Now, configure the OIDC authentication handler. Multiple OIDC connections can be
 ### Configure SlingUserInfoProcessor
 
 1. Create the configuration file. For this example, we'll use `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessor~azure.cfg.json`. The `azure` suffix must be a unique identifier. See an example of the configuration file below:
+
    ```
    {
       "groupsInIdToken":true,
@@ -108,6 +109,7 @@ Now, configure the OIDC authentication handler. Multiple OIDC connections can be
       "storeRefreshToken": false
    }
    ```
+
 1. Then, configure its properties as follows:
    * `groupsInIdToken`: Set to true if the groups are sent in ID Token. If the value is false, or not specified, the groups are read from UserInfo endpoint.
    * `groupsClaimName`: Name of the claim contains the groups to be synchronized in AEM.
