@@ -8,7 +8,7 @@ role: Admin, User
 
 [!DNL Dynamic Media with OpenAPI capabilities] lets you preview assets available in your [!DNL Adobe Experience Manager (AEM) Sites] author pages before making them publicly available. The asset preview is available on your site's author and preview tier.
 
-To [preview assets on AEM Sites preview pages](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities), update your site's author pages by either adding the assets you want to preview or replacing the existing ones available in your live sites page. Then, publish the updated author pages to the preview tier to generate a preview URL.
+To [preview assets on AEM Sites preview pages](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities), update your site's author pages by either adding the assets you want to preview or replacing the existing ones available in your live sites page. Publish the updated author pages to the preview tier to generate a preview URL.
 
 Share the preview page with stakeholders to gather feedback on the visual quality and contextual alignment of the updated assets. Refine the assets based on feedback. Create and manage multiple versions of the asset during the review cycle.
 
@@ -38,7 +38,7 @@ Execute the following steps to set the asset status to preview in [!DNL Assets V
    1. In the [!UICONTROL Information Panel], set **[!UICONTROL Status]** to **[!UICONTROL Preview]**, then click **[!UICONTROL Save]**.
    ![Preview](/help/assets/assets/preview-boat-at-bay.png)
 
-1. Navigate to your Sites authoring page. Execute the steps in [Access remote assets in AEM Page Editor](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) section to select the asset you recently set to Preview (status) using the Asset Selector panel. 
+1. Navigate to your Sites authoring page. Execute the steps in [Access remote assets in AEM Page Editor](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) section to use the Asset Selector panel for selecting the asset you recently set to Preview (status). 
 
    >[!NOTE] 
    >
@@ -56,7 +56,7 @@ After finalising the asset version, [publish your pages to the publish tier](#pu
 
 ## Publish your pages with approved assets for public use{#publish-your-pages-to-publish-tier}
 
-After finalising the asset version for public use, set the asset status to **[!UICONTROL Approved]**. Then publish your pages to the publish tier. Execute the following steps to publish your page:
+After finalising the asset version for public use, set the asset status to **[!UICONTROL Approved]**. Then publish your pages to the publish tier. Execute the following steps to publish your pages:
 
 1. Follow step 1 in [Preview assets in your sites preview page](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities) section above to change asset status to **[!UICONTROL Approved]**. 
 1. Navigate to your Sites author page and publish it to the [!DNL Publish tier]. Publish the pages by executing the steps in [Publishing from the Page Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor) section. 
