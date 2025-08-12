@@ -5,6 +5,7 @@ exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 feature: Commerce Integration Framework
 role: Admin
 ---
+
 # Authoring Commerce Experiences {#authoring-commerce-experiences}
 
 ## Overview {#overview}
@@ -25,7 +26,7 @@ Clicking on the parent category will take the author back to the product level.
 
 ![Product picker](../assets/authoring/product-picker-variation.png)
 
-**Example product teaser**
+#### Example Product Teaser {#example-product-teaser}
 
 ![Teaser component without selection](../assets/authoring/teaser_component_without_selection.png)
 
@@ -39,7 +40,7 @@ This picker offers browsing through the catalog structure to find the category.
 
 ![Category picker](../assets/authoring/category-picker.png)
 
-**Example category carousel**
+#### Example Category Carousel {#example-carousel}
 
 ![Carousel component without selection](../assets/authoring/carousel_component_without_selection.png)
 

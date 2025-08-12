@@ -7,6 +7,7 @@ feature: Commerce Integration Framework
 role: Admin
 index: no
 ---
+
 # AEM and third-Party Commerce Integration using Commerce Integration Framework {#aem-third-party}
 
 The integration of non-Adobe Commerce solution is a common scenario for CIF. Third-party solutions with different APIs and schemas get connected via an integration layer.
@@ -15,27 +16,27 @@ The integration of non-Adobe Commerce solution is a common scenario for CIF. Thi
 
 The overall architecture is as follows:
 
-![AEM non-Magento/Third-Party Architecture Overview](../assets//AEM_nonMagento_Architecture.png)
+![AEM non-Magento/Third-Party Architecture Overview](../assets/AEM_nonMagento_Architecture.png)
 
 The purpose of this integration layer is to map 3rd-party APIs and schemas against the supported Adobe Commerce GraphQL APIs and schemas outside of the Experience Manager. Thanks to this encapsulation, the integration logic, and systems can get updated without changing code inside the Experience Manager.
 
-## Solution requirements for an integration
+## Solution requirements for an integration {#requirements}
 
 As the Experience Manager retrieves data on-demand, real-time APIs for product catalog are required.
 
 >[!TIP]
 >
->If no real-time APIs are available, an external product cache with APIs should be used for the integration. Example [Adobe Commerce Open Source](https://business.adobe.com/products/magento/open-source.html).
+>If no real-time APIs are available, an external product cache with APIs should be used for the integration. Example [Adobe Commerce Open Source](https://business.adobe.com/products/magento/open-source.html)
 
 There is no need to implement the complete GraphQL schema, just the objects of the schema to enable the desired use-cases.
 
-## Backend use-cases
+## Backend Use-Cases {#backend}
 
 CIF extends the Experience Manager with real-time product catalog access and product experience management tools. This seamless integration enables authors to access commerce data using embedded UIs whenever needed without leaving the content context.
 
 The integrations of product catalog APIs are required to unlock these use-cases.
 
-## Frontend use-cases
+## Frontend Use-Cases {#frontend}
 
 [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) retrieve and exchange data via the CIF supported Adobe Commerce APIs. To reuse components, the respective APIs must be implemented.
 

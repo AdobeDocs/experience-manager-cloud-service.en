@@ -6,7 +6,10 @@ feature: Commerce Integration Framework
 role: Admin
 index: no
 ---
+
 # Product Cockpit {#product-cockpit}
+
+Learn how to work with the Product Cockpit, which provides a unified overview of linked product catalogs and associated content.
 
 ## Overview {#overview}
 
@@ -20,9 +23,9 @@ Staged product data includes any mutation in the future such as new categories, 
 
 ## Configuration {#configuration}
 
-Product catalogs must be configured in AEM. See [configuring store and catalogs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog) for more information.
+Product catalogs must be configured in AEM. See [configuring store and catalogs](/help/commerce-cloud/cif-storefront/getting-started.md#catalog) for more information.
 
-Enabling staged catalog features require authentication. See [Getting Started](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) for more information.
+Enabling staged catalog features require authentication. See [Getting Started](/help/commerce-cloud/cif-storefront/getting-started.md) for more information.
 
 >[!NOTE]
 >

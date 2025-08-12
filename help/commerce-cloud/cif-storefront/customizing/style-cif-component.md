@@ -14,15 +14,16 @@ exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
 role: Admin
 index: no
 ---
+
 # Style AEM CIF Core Components {#style-aem-cif-core-components}
 
-The [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) is a reference code base for using [CIF Core Components](https://github.com/adobe/aem-core-cif-components). In this tutorial, you inspect the Venia reference project and understand how CSS and JavaScript used by AEM CIF Core components are organized. You also create a style using CSS to update the default style of the **Product Teaser** component.
+The [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) is a reference code base for using [CIF Core Components.](https://github.com/adobe/aem-core-cif-components) In this tutorial, you inspect the Venia reference project and understand how CSS and JavaScript used by AEM CIF Core components are organized. You also create a style using CSS to update the default style of the **Product Teaser** component.
 
 >[!TIP]
 >
 > Use the [AEM Project archetype](https://github.com/adobe/aem-project-archetype) when starting your own commerce implementation.
 
-## What You Will Build
+## What You Will Build {#what-you-will-build}
 
 In this tutorial, a new style is implemented for the Product Teaser component that resembles a card. Lessons learned in the tutorial can be applied to other CIF Core Components.
 
@@ -30,11 +31,11 @@ In this tutorial, a new style is implemented for the Product Teaser component th
 
 ## Prerequisites {#prerequisites}
 
-A local development environment is required to complete this tutorial. This environment includes a running instance of AEM that is configured and connected to an Adobe Commerce instance. Review the requirements and steps for [setting up a local development with AEM as a Cloud Service SDK](../develop.md).
+A local development environment is required to complete this tutorial. This environment includes a running instance of AEM that is configured and connected to an Adobe Commerce instance. Review the requirements and steps for [setting up a local development with AEM as a Cloud Service SDK.](/help/commerce-cloud/cif-storefront/develop.md)
 
 ## Clone the Venia Project {#clone-venia-project}
 
-You are going to clone the [Venia Project](https://github.com/adobe/aem-cif-guides-venia), and then override the default styles.
+You are going to clone the [Venia Project,](https://github.com/adobe/aem-cif-guides-venia) and then override the default styles.
 
 >[!NOTE]
 >
@@ -55,7 +56,7 @@ You are going to clone the [Venia Project](https://github.com/adobe/aem-cif-guid
 
 1. Add the necessary OSGi configurations so you can connect your AEM instance to an Adobe Commerce instance or add the configurations to the created project.
 
-1. At this point, you should have a working version of a storefront that is connected to an Adobe Commerce instance. Navigate to the `US` > `Home` page at: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. At this point, you should have a working version of a storefront that is connected to an Adobe Commerce instance. Navigate to the `US` > `Home` page at: [http://localhost:4502/editor.html/content/venia/us/en.html.](http://localhost:4502/editor.html/content/venia/us/en.html)
 
     You should see that the storefront currently is using the Venia theme. Expanding the Main Menu of the storefront, you should see various categories, indicating that the connection to Adobe Commerce is working.
 
@@ -77,7 +78,7 @@ The `ui.frontend` module is also a Maven module and integrated with the larger p
 
 ## Update the Teaser Style {#ui-frontend-module}
 
-Next, make a small change to the Teaser style to see how the `ui.frontend` module and client libraries work. Use [the IDE of your choice](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) to import the Venia project. Screenshots used are from the [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+Next, make a small change to the Teaser style to see how the `ui.frontend` module and client libraries work. Use [the IDE of your choice](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) to import the Venia project. Screenshots used are from the [Visual Studio Code IDE.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)
 
 1. Navigate and expand the **ui.frontend** module and expand the folder hierarchy to: `ui.frontend/src/main/styles/commerce`:
 
@@ -174,9 +175,9 @@ Next, make a small change to the Teaser style to see how the `ui.frontend` modul
 
     These client libraries are not managed by the `ui.frontend` module. Instead these client libraries include CSS and JavaScript dependencies provided by Adobe. The definition for these client libraries is in the `.content.xml` file beneath each folder.
 
-    **clientlib-base** - An empty client library that simply embeds the necessary dependencies from [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). The category is `venia.base`.
+    **clientlib-base** - An empty client library that simply embeds the necessary dependencies from [AEM Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) The category is `venia.base`.
 
-    **clientlib-cif** - An empty client library that simply embeds the necessary dependencies from [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components). The category is `venia.cif`.
+    **clientlib-cif** - An empty client library that simply embeds the necessary dependencies from [AEM CIF Core Components.](https://github.com/adobe/aem-core-cif-components) The category is `venia.cif`.
 
     **clientlib-grid** - Includes the CSS to enable AEM's Responsive Grid feature. Using the AEM grid enables [Layout Mode](/help/sites-cloud/authoring/page-editor/responsive-layout.md) in the AEM Editor and gives content authors the ability to resize components. The category is `venia.grid` and is embedded in the `venia.base` library.
 
@@ -201,7 +202,7 @@ Next, make a small change to the Teaser style to see how the `ui.frontend` modul
 
 Now that the code updates have been deployed, add an instance of the Product Teaser component to the home page of the site using the AEM authoring tools. Do so lets us view the updated styles.
 
-1. Open a new browser tab and navigate to the **Home Page** of the site: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Open a new browser tab and navigate to the **Home Page** of the site: [http://localhost:4502/editor.html/content/venia/us/en.html.](http://localhost:4502/editor.html/content/venia/us/en.html)
 
 1. Expand the Asset finder (the side rail) in **Edit** mode. Switch the Asset filter to **Products**.
 
@@ -217,7 +218,7 @@ Now that the code updates have been deployed, add an instance of the Product Tea
 
 Next verify the inclusion of the client libraries on the page.
 
-1. Navigate to the **Home Page** of the site: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Navigate to the **Home Page** of the site: [http://localhost:4502/editor.html/content/venia/us/en.html.](http://localhost:4502/editor.html/content/venia/us/en.html)
 
 1. Select the **Page Information** menu and click **View as Published**:
 
@@ -251,9 +252,9 @@ Next verify the inclusion of the client libraries on the page.
 
 ## Client Library Inclusion with Page Templates {#client-library-inclusion-pagetemplates}
 
-There are several options for how to include a client-side library. Next inspect how the generated project includes the `clientlib-site` libraries via [Page Templates](/help/implementing/developing/components/templates.md).
+There are several options for how to include a client-side library. Next inspect how the generated project includes the `clientlib-site` libraries via [Page Templates.](/help/implementing/developing/components/templates.md)
 
-1. Navigate to the **Home Page** of the site within the AEM Editor: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Navigate to the **Home Page** of the site within the AEM Editor: [http://localhost:4502/editor.html/content/venia/us/en.html.](http://localhost:4502/editor.html/content/venia/us/en.html)
 
 1. Select the **Page Information** menu and click **Edit Template**:
 
@@ -288,7 +289,7 @@ In the previous exercise, an update was made to a Sass file in the `ui.frontend`
 
 The webpack-dev-server proxies images and some of the CSS/JavaScript from the local instance of AEM but allows the developer to modify the styles and JavaScript in the `ui.frontend` module.
 
-1. In the browser navigate to the **Home** page and **View as Published**: [http://localhost:4502/content/venia/us/en.html?wcmmode=disabled](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled).
+1. In the browser navigate to the **Home** page and **View as Published**: [http://localhost:4502/content/venia/us/en.html?wcmmode=disabled.](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled)
 
 1. View the source of the page and the **copy** the raw HTML of the page.
 
@@ -322,7 +323,7 @@ The webpack-dev-server proxies images and some of the CSS/JavaScript from the lo
     $ npm start
     ```
 
-    This command starts the webpack-dev-server on [http://localhost:8080/](http://localhost:8080/)
+    This command starts the webpack-dev-server on [http://localhost:8080/.](http://localhost:8080/)
 
     >[!CAUTION]
     >
@@ -447,7 +448,7 @@ Return to the IDE and the generated project.
 
 After the code for the project has been deployed to AEM, you should now be able to see the changes to the Product Teaser.
 
-1. Return to your browser and refresh the Home page: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html). You should see the updated product teaser styles applied.
+1. Return to your browser and refresh the Home page: [http://localhost:4502/editor.html/content/venia/us/en.html.](http://localhost:4502/editor.html/content/venia/us/en.html) You should see the updated product teaser styles applied.
 
     ![Updated Product Teaser style](../assets/style-cif-component/product-teaser-new-style.png)
 
@@ -461,7 +462,7 @@ You can verify in [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) that the 
 
 When deploying new CSS files, or JavaScript files, or both, it is also important to ensure that the browser is not serving stale files. You can eliminate this potential issue by clearing the browser cache or starting a fresh browser session.
 
-AEM also attempts to cache client libraries for performance. Occasionally, following a code deployment the older files are served. You can manually invalidate AEM's client library cache using the [Rebuild Client Libraries tool](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html). *Invalidate Caches is the preferred method if you suspect AEM has cached an old version of a client library. Rebuild Libraries is inefficient and time consuming.*
+AEM also attempts to cache client libraries for performance. Occasionally, following a code deployment the older files are served. You can manually invalidate AEM's client library cache using the [Rebuild Client Libraries tool.](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) *Invalidate Caches is the preferred method if you suspect AEM has cached an old version of a client library. Rebuild Libraries is inefficient and time consuming.*
 
 ## Congratulations {#congratulations}
 

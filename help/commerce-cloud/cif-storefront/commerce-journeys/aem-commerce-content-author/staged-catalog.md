@@ -6,13 +6,14 @@ feature: Commerce Integration Framework
 role: Admin
 index: no
 ---
+
 # Building Staged Product Catalog Experiences {#building-experiences}
 
 Learn how to manage staged product catalog experiences.
 
 ## The Story So Far {#story-so-far}
 
-In the previous document of the AEM Content and Commerce journey, [Manage Product Catalog Pages and Templates](catalog-templates.md), you learned how to manage and build product catalog experiences based on templates.
+In the previous document of the AEM Content and Commerce journey, [Manage Product Catalog Pages and Templates,](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/catalog-templates.md) you learned how to manage and build product catalog experiences based on templates.
 
 This article builds on those fundamentals.
 
@@ -22,7 +23,7 @@ This document helps you understand how to manage product catalog experience base
 
 >[!NOTE]
 >
->This feature is only available with Adobe Commerce or Cloud Edition and third-party connectors that support token-based authentication. See [Getting Started](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html) for additional information.
+>This feature is only available with Adobe Commerce or Cloud Edition and third-party connectors that support token-based authentication. See [Getting Started](/help/commerce-cloud/cif-storefront/getting-started.md) for additional information.
 
 First, let's see how authors can access staged product data with CIF.
 
@@ -46,7 +47,7 @@ You can now browse the catalog with the staged data. If you open a staged catego
 
 ## AEM Launches {#launches}
 
-AEM Launches enables you to create content for staged product data. If you are not familiar with Launches, follow the documentation link under the [Additional Resources section](#additional-resources). The Launch Date is then used to access staged product data.
+AEM Launches enables you to create content for staged product data. If you are not familiar with Launches, follow the documentation link under the [Additional Resources section.](#additional-resources) The Launch Date is then used to access staged product data.
 
 ![stage launch](assets/staged-launch.png)
 
@@ -61,10 +62,10 @@ Now that you have completed this part of the journey you should:
 * understand the concepts of staged product catalog and content with Launches
 * be able to access staged product catalog data via product cockpit and editor
 
-You are now ready to manage [product experiences](product-experience-management.md). However, AEM Content and Commerce have many additional options available. Check out some of the additional resources available in the [Additional Resources section](#additional-resources) to learn more about the features you saw in this journey.
+You are now ready to manage [product experiences.](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/product-experience-management.md) However, AEM Content and Commerce have many additional options available. Check out some of the additional resources available in the [Additional Resources section](#additional-resources) to learn more about the features you saw in this journey.
 
 ## Additional Resources {#additional-resources}
 
-* [Product Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
-* [Getting Started](/help/commerce-cloud/getting-started.md)
-* [Launches](/help/sites-cloud/authoring/launches/overview.md)
+* [Product Cockpit](/help/commerce-cloud/cif-storefront/authoring/product-cockpit.md)
+* [Getting Started](/help/commerce-cloud/cif-storefront/getting-started.md)
+* [Launches](/help/sites-cloud/cif-storefront/authoring/launches/overview.md)

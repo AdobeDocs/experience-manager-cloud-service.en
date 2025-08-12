@@ -6,6 +6,7 @@ feature: Commerce Integration Framework
 role: Admin
 index: no
 ---
+
 # [!DNL Live Search] Popover CIF Component {#live-search-popover}
 
 The [!DNL Live Search] Popover is the element that contains the [!DNL Live Search] results as you type in the search field.
@@ -15,7 +16,7 @@ This topic describes how to integrate this component into your AEM site.
 
 To enable the CIF component, files must be edited and created.
 
-* ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/.content.xml
+* `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/.content.xml`
 
   Create the `.content.xml` file:
 
@@ -28,7 +29,7 @@ To enable the CIF component, files must be edited and created.
     jsProcessor="[default:none,min:none]"/>
   ```
 
-* ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/css.txt
+* `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/css.txt`
 
   Create the `css.txt` file:
 
@@ -38,10 +39,9 @@ To enable the CIF component, files must be edited and created.
   searchbar.css
   ```
 
-* ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/css/searchbar.css
+* `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/css/searchbar.css`
 
   Create the `searchbar.css` file:
-
   
   ```css
   .searchbar__root .action.search:before {
@@ -133,7 +133,7 @@ To enable the CIF component, files must be edited and created.
   }
   ```
 
-* ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/js.txt
+* `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/js.txt`
 
   Create the `js.txt` file:
 
@@ -141,7 +141,7 @@ To enable the CIF component, files must be edited and created.
   js/searchbar.js
   ```
 
-* ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/js/searchbar.js
+* `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/js/searchbar.js`
 
   Create the `searchbar.js` file:
 
@@ -487,7 +487,7 @@ To enable the CIF component, files must be edited and created.
   })();
   ```
 
-* ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/searchbar.html
+* `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/searchbar.html`
 
   Create the `searchbar.html` file:
 
@@ -549,7 +549,7 @@ To enable the CIF component, files must be edited and created.
   </div>
   ```
 
-* ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json
+* `ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json`
 
   Create the `com.adobe.cq.commerce.core.components.internal.servlets.ProductPageRedirectServlet.cfg.json` file:
 
@@ -563,7 +563,7 @@ To enable the CIF component, files must be edited and created.
   }
   ```
 
-  * ui.tests/test-module/specs/venia/searchbar.js
+  * `ui.tests/test-module/specs/venia/searchbar.js`
 
     Edit the `searchbar.js` file, Line 19-20, changing `describe` to `describe.skip`:
 

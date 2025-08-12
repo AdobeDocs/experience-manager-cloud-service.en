@@ -1,12 +1,13 @@
 ---
-title: JSON-LD Metadata
+title: JSON+LD Metadata
 description: Learn how to enable and verify the JSON+LD feature in AEM CIF.
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 547d3721-e094-4a42-8a7c-27e4ef97ea9c
 index: no
 ---
-# JSON-LD Metadata {#json-ld}
+
+# JSON+LD Metadata {#json-ld}
 
 This guide explains how to enable and verify the JSON+LD feature in AEM CIF.
 
@@ -35,7 +36,7 @@ Once this configuration is added and deployed, the checkbox becomes visible in t
 
 To illustrate the steps to verify JSON+LD,  the Venia project is used as an example, where the required JSON+LD configuration is already added to enable the feature. Here are the steps to follow:
 
-1. Navigate to your local AEM instance and open the Product Detail Page (PDP): http://localhost:4502/editor.html/content/venia/us/en/products/product-page.html
+1. Navigate to your local AEM instance and open the Product Detail Page (PDP): `http://localhost:4502/editor.html/content/venia/us/en/products/product-page.html`
 1. Author a product on the Product Detail Page (PDP).
 1. Switch to **View as Publish** mode.
 1. Open the **View Page Source** in your browser.
@@ -47,7 +48,7 @@ If configured correctly, you find the JSON+LD script associated with the product
 
 Below is an example **JSON+LD** structure for the Agatha Skirt, authored on the PDP page in the Venia project:
 
-```
+```html
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
@@ -109,4 +110,4 @@ JSON+LD attributes can be mapped to GraphQL queries in AEM CIF, ensuring structu
 
 This mapping ensures that the JSON+LD script is dynamically populated based on product data retrieved via GraphQL queries.
 
-To test your JSON+LD structure, you can use the [Rich Results Test - Google Search Console](https://search.google.com/test/rich-results/result?id=wtU3LVIEM8H7Aaf5qqK9qw). This tool provides detailed feedback, including whether the required attributes are present or missing, and helps ensure that your structured data is correctly implemented.
+To test your JSON+LD structure, you can use the [Rich Results Test - Google Search Console.](https://search.google.com/test/rich-results/result?id=wtU3LVIEM8H7Aaf5qqK9qw) This tool provides detailed feedback, including whether the required attributes are present or missing, and helps ensure that your structured data is correctly implemented.
