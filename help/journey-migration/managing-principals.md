@@ -12,7 +12,7 @@ exl-id: a75598d0-8f59-466b-984e-dfe527388c2a
 
 Before content is transferred to the AEM as a Cloud Service cloud environment, there are a few tasks that can be carried out on the Admin Console.  They are: create users, create groups, and assign users to groups; these users and groups will exist in in IMS, Adobe's Identity Management Service, which is used to manage users and groups for all Adobe cloud-based services.
 
-### Creating Groups and their Users in Admin Console
+## Creating Groups and their Users in Admin Console
 
 [Using Admin Console for AEM Principals](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/ims-support#how-to-set-up) provides detailed instructions on how to create users and groups in IMS, and how to add the users to the groups at the same time or later.  The document includes three options for creating them: Manually through the Admin Console, via CSV upload through the Admin Console, and via a User Sync Tool.  
 

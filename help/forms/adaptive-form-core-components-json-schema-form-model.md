@@ -121,7 +121,7 @@ Adaptive Form uses information available in JSON Schema to map each generated fi
 
 >[!TAB JSON Schema v4]
   
-  ```json 
+```json 
   {
   "$schema": "https://json-schema.org/draft-04/schema#",
   "definitions": {
@@ -418,11 +418,12 @@ Adaptive Form uses information available in JSON Schema to map each generated fi
       }
   }
   }
-  ```
+```
   
 >[!ENDTABS]
 
 The key changes from JSON Schema V4 to version 2020-12 specifications are:
+
 * Id is declared as `$id`
 * definitions is declared as `$defs`
 
@@ -477,8 +478,10 @@ You can use the **aem:afProperties** property to preconfigure JSON Schema field 
 }
 
 ```
+-->
 
-<!--- ## Configure scripts or expressions for form objects  {#configure-scripts-or-expressions-for-form-objects}
+<!-- 
+## Configure scripts or expressions for form objects  {#configure-scripts-or-expressions-for-form-objects}
 
 JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. You can pre-configure form objects to [evaluate an expression](adaptive-form-expressions.md) on a form event.
 

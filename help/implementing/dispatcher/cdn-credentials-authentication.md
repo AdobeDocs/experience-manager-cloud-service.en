@@ -239,6 +239,7 @@ In addition, the syntax includes:
   * action - must specify "authenticate", with the intended authenticator referenced, which is basic-auth for this scenario
 
 >[!NOTE]
+>
 >The passwords must be configured as [secret type Cloud Manager environment variables](/help/operations/config-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
 
 ## Rotating secrets {#rotating-secrets}
@@ -256,8 +257,10 @@ This use case is exemplified below, by using the example of an edge key, althoug
           type: edge
           edgeKey1: ${{CDN_EDGEKEY_052824}}
     ```
+
 1. When it's time to rotate the key, create a new Cloud Manager secret, for example `${{CDN_EDGEKEY_041425}}`.
 1. In the configuration, reference it from `edgeKey2` and deploy.
+
     ```
     authentication:
       authenticators:
@@ -268,6 +271,7 @@ This use case is exemplified below, by using the example of an edge key, althoug
     ```
 
 1. Once you are sure the old edge key is not used anymore, remove it by removing `edgeKey1` from the configuration.
+
     ```
     authentication:
       authenticators:
@@ -275,6 +279,7 @@ This use case is exemplified below, by using the example of an edge key, althoug
           type: edge
           edgeKey2: ${{CDN_EDGEKEY_041425}}
     ```       
+
 1. Delete the old secret reference (`${{CDN_EDGEKEY_052824}}`) from Cloud Manager and deploy.
 
 1. When ready for the next rotation, follow the same procedure, however this time you will add `edgeKey1` to the configuration, referencing a new Cloud Manager environment secret named, for example, `${{CDN_EDGEKEY_031426}}`.
