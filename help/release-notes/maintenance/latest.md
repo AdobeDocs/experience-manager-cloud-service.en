@@ -135,7 +135,7 @@ Deprecated and removed features and APIs in AEM as a Cloud Service are detailed 
 ### Security Fixes {#security-21772}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 35 identified vulnerabilities, reinforcing our commitment to robust system protection.
-In Apache HTTPD version 2.4.65, the following security vulnerabilities have been addressed: CVE-2024-43204, CVE-2024-43394, CVE-2024-47252, CVE-2025-23048, CVE-2025-49630, CVE-2025-49812, and CVE-2025-53020.  
+In Apache HTTPD version 2.4.65, the following security vulnerabilities have been addressed: CVE-2024-43204, CVE-2024-43394, CVE-2024-47252, CVE-2025-23048, CVE-2025-49630, CVE-2025-49812, and CVE-2025-53020. See : https://httpd.apache.org/security/vulnerabilities_24.html
 
 ### Embedded Technologies {#embedded-tech-21772}
 
@@ -144,6 +144,6 @@ In Apache HTTPD version 2.4.65, the following security vulnerabilities have been
 |AEM Oak | 1.80.0|[Oak API 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80/index.html)| 
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
-|Apache HTTP Server| 2.4.65 | [Apache Httpd 2.4.65](https://www.apachelounge.com/changelog-2.4.html)|
+|Apache HTTP Server| 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES)|
 |AEM Core Components| 2.29.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
 |Node.js|14 (default)|[Supported Node.js versions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions)|
