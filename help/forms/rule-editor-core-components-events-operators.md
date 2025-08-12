@@ -62,12 +62,11 @@ In plain words, a typical When rule is structured as follows:
 
 `Action 2 on Object B;`
 `AND`
-`Action 3 on Object C;
+`Action 3 on Object C;`
 
 `Else, do the following:`
 
 `Action 2 on Object C;`
-_
 
 When you have a multi-value component, such as radio buttons or list, while creating a rule for that component the options are automatically retrieved and made available to the rule creator. You need not type the option values again.
 

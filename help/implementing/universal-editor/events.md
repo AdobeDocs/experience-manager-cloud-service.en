@@ -139,6 +139,7 @@ The payload is the updated value.
 For all the content update events, the requested payload as well as the response payload is passed into the event. E.g., for an update call:
 
 Request Payload:
+
 ```json
 {
   "connections": [
@@ -158,6 +159,7 @@ Request Payload:
 ```
 
 Response Payload
+
 ```json
 {
     "updates": [
