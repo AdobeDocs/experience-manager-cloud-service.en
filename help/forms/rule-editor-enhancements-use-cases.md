@@ -6,6 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 hide: yes
 hidefromtoc: yes
+exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
 ---
 # Rule Editor Enhancements and Use Cases
 
