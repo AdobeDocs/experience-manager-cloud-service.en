@@ -126,6 +126,7 @@ The 2025.8.0 feature activation will provide the full feature set for this maint
 ### Known Issues {#known-issues-21772}
 
 * SITES-31791: Content Fragments GraphQL - Query failing with "Maximum field count exceeded". See [Knowledge Base article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27231).
+* Apache HTTPD version 2.4.65 includes changes that may impact certain configurations as a result of new restrictions implemented to address the vulnerabilities outlined in the security fixes.  
 
 ### Deprecated Features and APIs {#deprecated-21772}
 
@@ -134,6 +135,7 @@ Deprecated and removed features and APIs in AEM as a Cloud Service are detailed 
 ### Security Fixes {#security-21772}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 35 identified vulnerabilities, reinforcing our commitment to robust system protection.
+In Apache HTTPD version 2.4.65, the following security vulnerabilities have been addressed: CVE-2024-43204, CVE-2024-43394, CVE-2024-47252, CVE-2025-23048, CVE-2025-49630, CVE-2025-49812, and CVE-2025-53020.  
 
 ### Embedded Technologies {#embedded-tech-21772}
 
@@ -142,6 +144,6 @@ AEM as a Cloud Service is dedicated to optimizing your platform's security and p
 |AEM Oak | 1.80.0|[Oak API 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80/index.html)| 
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
-|Apache HTTP Server| 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES)|
+|Apache HTTP Server| 2.4.65 | [Apache Httpd 2.4.65](https://www.apachelounge.com/changelog-2.4.html)|
 |AEM Core Components| 2.29.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
 |Node.js|14 (default)|[Supported Node.js versions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions)|
