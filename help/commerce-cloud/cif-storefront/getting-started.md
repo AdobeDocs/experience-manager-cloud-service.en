@@ -40,8 +40,8 @@ To connect the CIF add-on & the [AEM CIF Core Components](https://github.com/ado
 
 This environment variable is used in two places:
 
-- GraphQL calls from AEM to commerce backend, by way of some common shareable GraphQl client, used by the AEM CIF Core Components and customer project components.
-- Set up a GraphQL proxy URL on each AEM environment the variable is set available at `/api/graphql`. This URL is used by the AEM commerce authoring tools (CIF add-on) and CIF client-side components.
+* GraphQL calls from AEM to commerce backend, by way of some common shareable GraphQl client, used by the AEM CIF Core Components and customer project components.
+* Set up a GraphQL proxy URL on each AEM environment the variable is set available at `/api/graphql`. This URL is used by the AEM commerce authoring tools (CIF add-on) and CIF client-side components.
 
 A different  GraphQL endpoint URL can be used for each AEM as a Cloud Service environment. That way projects can connect AEM staging environments with commerce staging systems and AEM production environment to a commerce production system. That GraphQL endpoint must be publicly available, private VPN or local connections are not supported. Optionally, an authentication header can be provided to use additional CIF features that require authentication.
 
@@ -119,17 +119,17 @@ This configuration can be adjusted for the project by way of the CIF Cloud Servi
 
 The following properties can be configured:
 
-- GraphQL Client - select the configured GraphQL client for commerce backend communication. This client should typically stay at default.
-- Store View - the store view identifier. If empty, the default store view is used.
-- GraphQL Proxy Path - the URL path GraphQL Proxy in AEM use to proxy requests to the commerce backend GraphQL endpoint.
+* GraphQL Client - select the configured GraphQL client for commerce backend communication. This client should typically stay at default.
+* Store View - the store view identifier. If empty, the default store view is used.
+* GraphQL Proxy Path - the URL path GraphQL Proxy in AEM use to proxy requests to the commerce backend GraphQL endpoint.
   >[!NOTE]
   >
   > In most setups, the default value `/api/graphql` must not be changed. Only advanced setup not using the provided GraphQL proxy should change this setting.
-- Enable Catalog UID Support - enable support for UID instead of ID in the commerce backend GraphQL calls.
+* Enable Catalog UID Support - enable support for UID instead of ID in the commerce backend GraphQL calls.
   >[!NOTE]
   >
   > Support for UIDs got introduced in Adobe Commerce 2.4.2. Only enable UIDs if your commerce backend supports a GraphQL schema of version 2.4.2 or later.
-- Catalog Root Category Identifier - the identifier (UID or ID) of the store catalog root
+* Catalog Root Category Identifier - the identifier (UID or ID) of the store catalog root
   >[!CAUTION]
   >
   > Starting with CIF Core Components version 2.0.0 the support for `id` was removed and replaced with `uid`. If your project uses CIF Core Components version 2.0.0 you must enable Catalog UID Support and use a valid category UID as "Catalog Root Category Identifier".
@@ -140,7 +140,7 @@ For more complex setups, using multiple AEM site structures combined with differ
 
 ## Additional Resources {#additional-resources}
 
-- [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
-- [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-- [Commerce Multi-Store Setup](/help/commerce-cloud/cif-storefront/configuring/multi-store-setup.md)
-- [Multiple Commerce Systems Setups](/help/commerce-cloud/cif-storefront/configuring/multiple-commerce-systems-setup.md)
+* [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
+* [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
+* [Commerce Multi-Store Setup](/help/commerce-cloud/cif-storefront/configuring/multi-store-setup.md)
+* [Multiple Commerce Systems Setups](/help/commerce-cloud/cif-storefront/configuring/multiple-commerce-systems-setup.md)
