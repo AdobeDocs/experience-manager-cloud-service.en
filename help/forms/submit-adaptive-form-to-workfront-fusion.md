@@ -25,6 +25,8 @@ AEM Forms as a Cloud Service provides an OOTB connector to connect and submit an
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
+<span> This video is applicable only for Core Components. For UE/Foundation Components, please refer to the article.</span>
+
 ## Prerequisites to integrate AEM Forms with Adobe Workfront Fusion {#prerequisites}
 
 To establish a connection between Workfront Fusion and AEM Forms, the following are necessary:
