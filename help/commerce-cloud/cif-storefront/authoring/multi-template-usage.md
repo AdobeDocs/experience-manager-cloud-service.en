@@ -32,4 +32,4 @@ You can find more information on this topic from the following resource(s):
 
 ## Related Resources {#related}
 
-It is also possible to dynamically target specific regions of a page and re-use the same template. Learn how to [enrich product data with associated AEM content](./enrich-product-associated-content.md).
+It is also possible to dynamically target specific regions of a page and re-use the same template. Learn how to [enrich product data with associated AEM content](/help/commerce-cloud/cif-storefront/authoring/enrich-product-associated-content.md).
