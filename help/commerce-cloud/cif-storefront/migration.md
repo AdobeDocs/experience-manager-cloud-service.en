@@ -17,7 +17,7 @@ For Experience Manager as a Cloud Service the CIF add-on is the only supported c
 
 To support projects deploying CIF Adobe provide [AEM CIF Core Components.](https://github.com/adobe/aem-core-cif-components)
 
-CIF add-on is available for AEM 6.5 as well via the [Software Distribution portal.](//help/implementing/developing/tools/package-manager.md) It is compatible and provides the same features as the CIF add-on for Experience Manager as a Cloud Service - no adjustments are required.
+CIF add-on is available for AEM 6.5 as well via the [Software Distribution portal.](/help/implementing/developing/tools/package-manager.md) It is compatible and provides the same features as the CIF add-on for Experience Manager as a Cloud Service - no adjustments are required.
 
 Classic CIF with its dependencies is not available anymore. Code relying on this CIF version using `com.adobe.cq.commerce.api` Java APIs must be adjusted to the CIF add-on and its principles.
 
