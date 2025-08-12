@@ -141,6 +141,7 @@ Typography and spacing variables provide comprehensive control over text present
     --form-input-padding: 0.5rem 0.4rem;
 }
 ```
+
 +++
 
 +++ Layout and Structure Variables

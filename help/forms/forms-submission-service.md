@@ -144,8 +144,6 @@ Before configuring either method, ensure your AEM project foundation is ready:
 
 +++
 
-+++
-
 ## Manual Configuration
 
 ![Workflow for forms submission service](/help/forms/assets/forms-submission-service-workflow.png)
@@ -363,6 +361,7 @@ Postman provides a user-friendly interface for testing API submissions.
 1. **Create a new POST request** in Postman
 2. **Configure the endpoint:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
 3. **Replace placeholders:**
+
    - `{id}` → Your actual Form ID
    - `[repository]` → Your GitHub repository name
    - `[organization]` → Your GitHub organization/username
