@@ -98,14 +98,14 @@ The following are some of the key differences between Dynamic Media with OpenAPI
 | Dynamic Media with OpenAPI capabilities | Dynamic Media |
 |---|---|
 | [Available only with Assets as a Cloud Service](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | Also available with On-premise or Adobe Managed Services with additional configuration and provisioning steps. |
-| [Limited set of supported image modifiers, such as width, height, rotate, flip, quality, and format](/help/assets/deliver-assets-apis.md) | Rich set of available image modifiers |
+| [Rich set of supported image modifiers, such as width, height, rotate, flip, quality, and format](/help/assets/deliver-assets-apis.md) | Rich set of available image modifiers |
 | [Restricted asset delivery based on users, roles, date, and time](/help/assets/restrict-assets-delivery.md) | Assets published to Dynamic Media are accessible to all users |
 | Most developers are familiar with OpenAPI specifications. AEM Assets extensibility becomes really simple by using [Micro-Frontend Asset Selector](/help/assets/overview-asset-selector.md). | SOAP -based APIs, which become a barrier while developing integration customizations. |
 | Any changes made to approved assets in DAM, including version updates and metadata modifications, are automatically reflected in the delivery URLs. With a short Time-to-Live (TTL) value of 10 minutes configured for Dynamic Media with OpenAPI capabilities via CDN, updates become visible across all authoring and published interfaces in under 10 minutes. | Recommended CDN TTL of 10 hours. You can override the TTL value using the cache invalidation action. |
 | Only approved assets are available for asset delivery to downstream applications, enabling on brand approved assets in digital experiences.| Any updates to a Dynamic Media published asset are auto-published without any approval workflow, which does not ensure on brand approved assets in digital experiences.    |
 | Usage reports based on number of assets delivered. This feature will be available soon.| Usage reports are not available. This feature will be available soon. |
 | Assets marked as Expired on Assets as a Cloud Service repository are not anymore available to downstream applications.| No inherent asset expiry. An asset remains public until it is deleted from AEM as a Cloud Service repository.|
-| Does not support image presets and video smart crop capabilities.| Supports image presets and video smart crop capabilities. |
+| Does not support video smart crop capabilities.| Supports video smart crop capabilities. |
 | Dynamic video encodes, that ensure best encodes are served based on the input video. No setup is required for native video delivery.| Standard 3 encodes irrespective of input video (can impact video delivery performance). You need to manually set up different encodes for different video bit rates. |
 |  Difficult to guess asset UID based URLs (enables URL obfuscation), but SEO optimized. | URL obfuscation only available for URL query parameters. Assets IDs (asset names) in URLs are recognizable. |
 
