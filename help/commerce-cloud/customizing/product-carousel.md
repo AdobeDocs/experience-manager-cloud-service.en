@@ -16,10 +16,15 @@ The Product Carousel component is extended throughout this tutorial. As a first 
 1. Insert a new Product Carousel component into the main layout container on the page.
     ![Product Carousel component](/help/commerce-cloud/assets/product-carousel-component.png)
 1. Expand the Side Panel (if not already toggled) and switch the asset finder dropdown to **Products**.
-     ![Carousel Products](/help/commerce-cloud/assets/carousel-products.png)    
+
+   ![Carousel Products](/help/commerce-cloud/assets/carousel-products.png)
+
 1. This should display a list of available products from a connected Adobe Commerce instance.
+
     ![Connected Instance](/help/commerce-cloud/assets/connected-instance.png)
+
 1. Products will be shown like below with default properties:
+
     ![Product Shown with Properties](/help/commerce-cloud/assets/discount.png)
     
 ## Update the Sling Model {#update-sling-model}
@@ -34,6 +39,7 @@ You can extend the business logic of the Product Carousel by implementing a Slin
     public interface CustomCarousel extends ProductCarousel {
     }
     ```
+
 1. Next, create an implementation class `CustomCarouselImpl.java` at `core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`.
    The delegation pattern for Sling Models allows `CustomCarouselImpl` to reference `ProductCarousel` model via the `sling:resourceSuperType` property:
 
@@ -43,7 +49,7 @@ You can extend the business logic of the Product Carousel by implementing a Slin
     private ProductCarousel productCarousel;
     ```
 
-1. The @PostConstruct annotation ensures that this method is called when the Sling Model is initialized. The product GraphQL query has already been extended using the extendProductQueryWith method to retrieve attributes. Update the GraphQL query to include the  attribute in the partial query:
+1. The @PostConstruct annotation ensures that this method is called when the Sling Model is initialized. The product GraphQL query has already been extended using the extendProductQueryWith method to retrieve attributes. Update the GraphQL query to include the attribute in the partial query:
 
     ```
     @PostConstruct
