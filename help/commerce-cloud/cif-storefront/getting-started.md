@@ -59,7 +59,7 @@ This configuration can be done using a dialog box on the Environment Details pag
 
 Clicking this button opens a dialog box:
 
-![CM Commerce Endpoint](/help/commerce-cloud/assets/cif-storefront/commerce-cm-endpoint.png)
+![CM Commerce Endpoint](/help/commerce-cloud/cif-storefront/assets/commerce-cm-endpoint.png)
 
 After the endpoint and optionally an authorization header for staged catalog support is set, the endpoint is displayed on the detail page. Clicking the Edit icon to open the same dialog box where you can edit the endpoint, if necessary.
 
