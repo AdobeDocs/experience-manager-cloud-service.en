@@ -37,7 +37,7 @@ You require the following to create an Adaptive Form based on Core Components us
 Perform the following steps to create an Adaptive Form using XFA or XDP form templates:
 
 1. Log in to your [!DNL Experience Manager Forms] author instance. 
-1.  Enter your credentials on the Experience Manager login page. After you are logged in, in the upper-left corner, select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+1. Enter your credentials on the Experience Manager login page. After you are logged in, in the upper-left corner, select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
 
     ![Forms and Documents](/help/forms/assets/create-fdm.png)
 
@@ -54,18 +54,18 @@ Perform the following steps to create an Adaptive Form using XFA or XDP form tem
 
      ![Select theme](/help/forms/assets/select-form-theme.png)
 
-1.  Select **[!UICONTROL Create]**. A dialog to specify title, name, and location to save the Adaptive Form appears. 
+1. Select **[!UICONTROL Create]**. A dialog to specify title, name, and location to save the Adaptive Form appears. 
 1. Specify its title, name and location.
 1. Select **[!UICONTROL Create]**.
     ![Provide name and title](/help/forms/assets/create-form.png)        
 
     An Adaptive Form is created and opens in the Adaptive Forms editor. The editor displays the contents available in the template.
-1.  Select ![Page information](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Open Properties]**. 
+1. Select ![Page information](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Open Properties]**. 
 
     ![Open properties](/help/forms/assets/form-properties.png)
 
     The Form Properties page opens. 
-1.  Go to the **[!UICONTROL Form Model]** tab and choose **Form Templates**. 
+1. Go to the **[!UICONTROL Form Model]** tab and choose **Form Templates**. 
 1. Select the .xdp file from the dropdown list.
 
     ![Select XDP file](/help/forms/assets/select-xdp-file.png)
@@ -74,7 +74,7 @@ Perform the following steps to create an Adaptive Form using XFA or XDP form tem
 
     ![Warning Dialog](/help/forms/assets/fdm-warning.png)
 
-1.  Select **[!UICONTROL Save & Close]** to save the properties.
+1. Select **[!UICONTROL Save & Close]** to save the properties.
 
     >[!NOTE]
     >
@@ -87,7 +87,3 @@ An Adaptive Form is created and opens in the Adaptive Forms editor. The editor d
 >
 > You can disable scripts for XDP form fields using the panel toolbar of the added field. Create logics for the added fields using the [Visual Rule Editor](/help/forms/rule-editor-core-components.md).   
 
-## See also
-
-{{see-also}}
-* [Add dynamic behavior to forms using the rule editor](/help/forms/rule-editor-core-components.md)
