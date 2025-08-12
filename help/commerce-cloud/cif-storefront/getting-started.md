@@ -10,9 +10,16 @@ thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 role: Admin
 ---
+
 # Getting started with AEM Commerce as a Cloud Service {#start}
 
 To get started with Adobe Experience Manager (AEM) Commerce as a Cloud Service, your Experience Manager Cloud Service must be provisioned with the Commerce Integration Framework (CIF) add-on. The CIF add-on is an extra module on top of [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
+
+>[!TIP]
+>
+>**Have you considered Edge Delivery Services?**
+>
+>Edge Delivery Services is the Adobe-preferred solution for creating a storefront. Please see the document [Introduction and overview](help/commerce-cloud/introduction.md) for more information.
 
 ## Onboarding {#onboarding}
 
