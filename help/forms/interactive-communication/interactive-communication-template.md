@@ -29,3 +29,4 @@ Proceed by clicking the Create button.
 This action allows the template to be used for creating Interactive Communications.
 
 By following these steps, you can successfully create an Interactive Communication Template in AEM. Once enabled, these templates can be reused to build consistent, personalized communication documents efficiently.
+
