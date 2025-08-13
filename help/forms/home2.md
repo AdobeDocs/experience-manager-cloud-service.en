@@ -33,8 +33,9 @@ The service is always current, always available, and always learning. Organizati
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] is a customer-centric solution to support every step of the customer journey: 
 
-<!-- See Error list at end of this page. The HTML code below was causing errors and preventing the PRs from being able to merge. 
+<!-- See Error list at end of this page. The HTML code below was causing errors and preventing the PRs from being able to merge. -->
 
+<!--
 <div class="card-container" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
   <div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
     <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
@@ -252,24 +253,6 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] is a customer-centric s
   <h3 style="margin-top: 0; color: #1473e6;">Ready to Get Started?</h3>
   <p><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service" style="font-weight: bold; color: #1473e6;">Onboard to AEM Forms as a Cloud Service</a> today and transform your organization's digital forms experience.</p>
 </div>
--->
 
-<!--
-[ERROR] workspace/experience-manager-cloud-service/help/forms/home2.md: 39: MD033/no-inline-html Inline HTML [Element: h3]
-[ERROR] workspace/experience-manager-cloud-service/help/forms/home2.md: 59: MD033/no-inline-html Inline HTML [Element: h3]
-[ERROR] workspace/experience-manager-cloud-service/help/forms/home2.md: 80: MD033/no-inline-html Inline HTML [Element: h3]
-[ERROR] workspace/experience-manager-cloud-service/help/forms/home2.md: 95: MD033/no-inline-html Inline HTML [Element: h3]
-[ERROR] workspace/experience-manager-cloud-service/help/forms/home2.md: 111: MD033/no-inline-html Inline HTML [Element: h3]
-[ERROR] workspace/experience-manager-cloud-service/help/forms/home2.md: 125: MD033/no-inline-html Inline HTML [Element: h3]
-[ERROR] workspace/experience-manager-cloud-service/help/forms/home2.md: 139: MD033/no-inline-html Inline HTML [Element: h3]
-[ERROR] workspace/experience-manager-cloud-service/help/forms/home2.md: 153: MD033/no-inline-html Inline HTML [Element: h3]
-[ERROR] workspace/experience-manager-cloud-service/help/forms/home2.md: 157: MD033/no-inline-html Inline HTML [Element: h4]
-[ERROR] workspace/experience-manager-cloud-service/help/forms/home2.md: 164: MD033/no-inline-html Inline HTML [Element: h4]
-[ERROR] workspace/experience-manager-cloud-service/help/forms/home2.md: 173: MD033/no-inline-html Inline HTML [Element: h4]
-[ERROR] workspace/experience-manager-cloud-service/help/forms/home2.md: 192: MD033/no-inline-html Inline HTML [Element: h3]
-[ERROR] workspace/experience-manager-cloud-service/help/forms/home2.md: 205: MD033/no-inline-html Inline HTML [Element: h3]
-[ERROR] workspace/experience-manager-cloud-service/help/forms/home2.md: 218: MD033/no-inline-html Inline HTML [Element: h3]
-[ERROR] workspace/experience-manager-cloud-service/help/forms/home2.md: 234: MD033/no-inline-html Inline HTML [Element: h3]
-[ERROR] workspace/experience-manager-cloud-service/help/forms/home2.md: 250: MD033/no-inline-html Inline HTML [Element: h3]
 -->
 
