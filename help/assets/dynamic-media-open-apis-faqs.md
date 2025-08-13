@@ -141,4 +141,4 @@ To enable the production use of [modifiers in Limited Availability](https://deve
 ## How do I test modifiers that are not generally available? {#modifiers-not-generally-available}
 
 You can test any modifier, which is not generally available via experimental APIs. For example, </adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>
-[Click here to know more on how to use the experimental APIs and the complete list of modifiers](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/delivery/).
+[Click here to know more on how to use the experimental APIs and the complete list of modifiers](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
