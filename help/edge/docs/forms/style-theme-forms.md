@@ -672,14 +672,13 @@ The selector styles all panels that can be repeated, ensuring a consistent look 
 - Targeting Individual Fields within a Panel:
 
 ```CSS
-
 /* Target all form field wrappers within a repeatable panel */
 .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
   /* Add your styles here (e.g., margin) */
   margin-bottom: 10px;
 }
-
 ```
+
 This selector styles all field wrappers within a repeatable panel, maintaining consistent spacing between fields.
 
 - Targeting Specific Fields (within a Panel):
@@ -691,9 +690,6 @@ This selector styles all field wrappers within a repeatable panel, maintaining c
 }
 
 /* Target all
-
-
-
 ```
 
 +++
