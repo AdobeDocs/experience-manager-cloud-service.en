@@ -254,6 +254,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] is a customer-centric s
 
 ## Early Adopter Features
 
+<!-- 
 <div class="card" style="flex: 1 1 calc(50% - 20px); min-width: 300px; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; margin-bottom: 30px;">
   <div class="card-header" style="background-color: #f5f5f5; padding: 15px 20px; border-bottom: 1px solid #e1e1e1;">
     <h3>AEM Forms Early Access Program</h3>
@@ -278,4 +279,3 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] is a customer-centric s
   <p><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service" style="font-weight: bold; color: #1473e6;">Onboard to AEM Forms as a Cloud Service</a> today and transform your organization's digital forms experience.</p>
 </div>
 -->
-
