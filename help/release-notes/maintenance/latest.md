@@ -40,7 +40,7 @@ For more information about the new and enhanced features and issues fixed in the
 
 ### Known Issues {#known-issues-X}
 
-Apache HTTPD version 2.4.65 introduces changes that may affect certain configurations due to new restrictions implemented as part of security fixes. These fixes address vulnerabilities by ensuring that directives such as RequestHeader set, edit, and edit_r used to modify the Content-Type header are now correctly limited to request headers. This change prevents unintended modifications to response headers, particularly for static content.
+* Apache HTTPD version 2.4.65 introduces changes that may affect certain configurations due to new restrictions implemented as part of security fixes. These fixes address vulnerabilities by ensuring that directives such as `RequestHeader set`, `edit`, and `edit_r` used to modify the Content-Type header are now correctly limited to request headers. This change prevents unintended modifications to response headers, particularly for static content.
 
 ### Deprecated Features and APIs {#deprecated-X}
 
