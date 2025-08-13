@@ -104,7 +104,6 @@ The following diagram illustrates how you can edit forms in Microsoft Excel or G
 | Submit to AEM workflows/FDM | ✅ | – | Via UE embed |
 | Custom components (JS/CSS) | ✅ | ✅ | Via embed |
 | Localization via Sites | ✅ | Manual | Via embed |
-
 -->
 
 ## Next Steps
@@ -118,8 +117,7 @@ The following diagram illustrates how you can edit forms in Microsoft Excel or G
 You are now ready to create your first high-performance form with AEM Edge Delivery Services.
 
 
-<!-- 
-
+<!--
 ## Start creating forms
 
 - [Get started with Edge Delivery Services for AEM Forms](/help/edge/docs/forms/tutorial.md)
@@ -131,9 +129,6 @@ You are now ready to create your first high-performance form with AEM Edge Deliv
 - [Show a custom thank you message after form submission​](/help/edge/docs/forms/thank-you-page-form.md)
 - [Adaptive Form Block components and their properties](/help/edge/docs/forms/form-components.md)
 - [Real Use Monitoring](https://www.aem.live/developer/rum#authentication)
--->
-
-<!-- 
 
 ## Start creating forms
 
