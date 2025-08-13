@@ -27,7 +27,6 @@ The next planned release is Thursday, September 4, 2025.
     
     Experience Hub is a unified starting point that delivers personalized, contextual experiences to help users achieve goals faster. The rollout concludes by August 26, 2025 making it available to all users. The new Experience Hub is accessible directly at [experience.adobe.com](https://experience.adobe.com/). To learn more, see [Adobe Experience Hub](/help/implementing/cloud-manager/aem-home.md).
 
-
 * **Edge Delivery Services license can be included in a HIPAA program in a self-service manner** 
 
     Organizations with healthcare or sensitive data requirements can now use Edge Delivery Services in a self-service manner, enabling HIPAA compliance to meet strict regulatory standards. <!-- CMGR-70016 -->
