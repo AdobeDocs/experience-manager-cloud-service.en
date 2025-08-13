@@ -240,7 +240,7 @@ To learn how to add custom functions, click [Create custom functions in an Adapt
 1. Add the below code for custom error handler in the JavaScript file, for example, `function.js`. The file comprises the code for custom error handler.
 Let's add the following code to the JavaScript file to display the response and headers, received from the REST service endpoint, in the browser console.
 
-    ```javascript
+   ```javascript
         /**
         * Custom Error handler
         * @name customErrorHandler Custom Error Handler Function
@@ -254,21 +254,19 @@ Let's add the following code to the JavaScript file to display the response and 
             guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers);
             console.log("Custom Error Handler processing end...");
         }
-    ```
+   ```
 
-    >[!NOTE]
-    >
-    > * To call the default error handler from your custom error handler, the following line of the sample code is used: `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
-    > * In the `.content.xml` file, add the `allowProxy` and `categories` properties to use custom error handler client library in an Adaptive Form. 
-    >
-    >   * `allowProxy = [Boolean]true`
-    >   * `categories= customfunctionsdemo`
-    >       For example, in this case, [custom-errorhandler-name] is provided as `customfunctionsdemo`.
+   >[!NOTE]
+   >
+   > * To call the default error handler from your custom error handler, the following line of the sample code is used: `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+   > * In the `.content.xml` file, add the `allowProxy` and `categories` properties to use custom error handler client library in an Adaptive Form. 
+   >
+   >   * `allowProxy = [Boolean]true`
+   >   * `categories= customfunctionsdemo`
+   >       For example, in this case, [custom-errorhandler-name] is provided as `customfunctionsdemo`.
 
 
 1. Add, commit, and push the changes in the repository.
-
-<!--
 
 <!--
 1. Save the `function.js` file.

@@ -6,14 +6,12 @@ role: Admin, User
 feature: Adaptive Forms
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
 ---
-
+# Import or Export Adaptive Forms and AEM Forms assets {#importing-and-exporting-assets-to-aem-forms}
 
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates)                  |
 | AEM as a Cloud Service     | This article   |
-
-# Import or Export Adaptive Forms and AEM Forms assets {#importing-and-exporting-assets-to-aem-forms}
 
 You can move Adaptive Forms and related assets such as Adaptive Form themes, Form Data Model (FDM), Adaptive Form templates, Fragments, and PDF forms between [!DNL AEM Forms] instances.
 

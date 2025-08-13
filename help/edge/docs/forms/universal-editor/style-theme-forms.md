@@ -141,6 +141,7 @@ Typography and spacing variables provide comprehensive control over text present
     --form-input-padding: 0.5rem 0.4rem;
 }
 ```
+
 +++
 
 +++ Layout and Structure Variables
@@ -301,7 +302,7 @@ The Adaptive Forms Block offers a consistent HTML structure for various form ele
 
 All form fields, except for dropdowns, radio groups, and checkbox groups, has the following HTML structure:
 
-#### HTML Structure of General Components
+### HTML Structure of General Components
 
 ```HTML
 
@@ -1095,7 +1096,7 @@ You can style form fields based on their specific type (`{Type}-wrapper`) or ind
 
 You can use CSS Selectors to target specific field types and apply styles consistently. 
 
-#### HTML Structure
+### HTML Structure
 
 ```HTML
 
@@ -1141,7 +1142,7 @@ You can use CSS Selectors to target specific field types and apply styles consis
 
 
 
-#### Example CSS Selectors
+### Example CSS Selectors
 
 ```CSS
 
@@ -1158,9 +1159,8 @@ You can use CSS Selectors to target specific field types and apply styles consis
   letter-spacing: 2px; /- Example for adding letter spacing to all number fields */
   text-align: center;
 }
-
-
 ```
+
 +++
 
 +++ Styling Based on Field name

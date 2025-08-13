@@ -244,7 +244,7 @@ To be up and running with a local AEM development environment in no time:
 
     ```
 
-1. Clone your GitHub project: Clone your project repository from GitHub using the following command, replacing <owner> with the repository owner and <repo> with the repository name:
+1. Clone your GitHub project: Clone your project repository from GitHub using the following command, replacing `<owner>` with the repository owner and `<repo>` with the repository name:
 
     ```
 
