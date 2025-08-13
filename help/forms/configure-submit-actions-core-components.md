@@ -58,7 +58,7 @@ Additionally, you can [customize the default Submit Actions](/help/forms/custom-
 * Form Data Model Tab
 * Submission Tab
   ![AEM Forms Submit action](/help/forms/assets/aem-forms-submit-action.png)
-  -->
+-->
 
 You can define the Form Container properties using the Submission tab of the Configure Dialog. To learn more about the Configure Dialog of a Form Container component, [click here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html). 
 
@@ -73,8 +73,9 @@ You can define the Form Container properties using the Submission tab of the Con
 
     ![Click the Wrench icon to open Adaptive Form Container dialog box to configure a submit action](/help/forms/assets/adaptive-forms-submit-message.png)
 
-1. Select and configure a **[!UICONTROL Submit action]**, based on your requirements. -->
-    
+1. Select and configure a **[!UICONTROL Submit action]**, based on your requirements.
+-->
+
 <!--
 ## Send Email {#send-email}
 
@@ -212,7 +213,7 @@ As a part of AEM security and hardening guidelines, configure custom error pages
 
 When you prefill a form data model (FDM), or schema based Adaptive Form with XML or JSON data complaint to a schema that is data does not contain `<afData>`, `<afBoundData>`, and `</afUnboundData>` tags, then the data of unbounded fields of the Adaptive Form is lost. The schema can be an XML schema, JSON schema, or a Form Data Model (FDM). Unbounded fields are Adaptive Form fields without the `bindref` property.
 
-<!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). 
+For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). 
 ## See next
 
 * [Create style or themes for your forms](using-themes-in-core-components.md)

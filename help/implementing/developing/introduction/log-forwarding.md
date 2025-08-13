@@ -13,22 +13,6 @@ role: Admin, Architect, Developer
 
 Customers with a license with a logging vendor or who host a logging product can have AEM logs (including Apache/Dispatcher) and CDN logs forwarded to the associated logging destination. AEM as a Cloud Service supports the following logging destinations:
 
-<html>
-<style>
-table {
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-  table-layout: fixed;
-}
-th, td {
-  width: 5%;
-  max-width: 100%;
-  border: 1px solid black;
-  padding: 8px;
-  word-wrap: break-word;
-}
-</style>
 <table>
   <tbody>
     <tr>
@@ -103,7 +87,6 @@ th, td {
     </tr>
   </tbody>
 </table>
-</html>
 
 >[!NOTE]
 >
@@ -195,14 +178,7 @@ It is possible to set different values between CDN logs and AEM logs (including 
 Some organizations choose to restrict which traffic can be received by the logging destinations, others may require to use ports other than HTTPS (443).  If so [Advanced Networking](/help/security/configuring-advanced-networking.md) will need to be configured before deploying log forwarding configuration.
 
 Use the table below to see what the requirements are for Advanced Networking and Logging configuration based on whether you are using port 443 or not, and whether or not you need your logs to appear from a fixed IP address.
-<html>
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-}
-</style>
+
 <table>
   <tbody>
     <tr>
@@ -234,7 +210,6 @@ table, th, td {
       <td>Yes</td>
   </tbody>
 </table>
-</html>
 
 >[!NOTE]
 >Whether your logs appear from a single IP address is determined by your choice of Advanced Networking configuration.  Dedicated Egress must be used to facilitate this.
@@ -265,6 +240,7 @@ The example below shows how to configure logging on a standard HTTPS port with A
 For CDN logs, you can allow-list the IP addresses, as described in [Fastly documentation - Public IP List](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). If that list of shared IP addresses is too large, consider sending traffic to an https server or (non-Adobe) Azure Blob Store where logic can be written to send the logs out of a known IP to their ultimate destination.
 
 >[!NOTE]
+>
 >It is not possible for CDN logs to appear from the same IP address that your AEM logs appear from, this is because logs are sent directly from Fastly and not AEM Cloud Service.
 
 ## Logging Destination Configuration {#logging-destinations}
@@ -298,7 +274,7 @@ In order to use the S3 Log Forwarder, you will need to preconfigure an AWS IAM u
 
 The IAM policy should allow the user to use `s3:putObject`.  For example:
 
- ```json
+```json
  {
     "Version": "2012-10-17",
     "Statement": [{
@@ -512,6 +488,7 @@ Log Forwarding to New Relic leverages the New Relic HTTPS API for ingestion.  Cu
   ```
 
 >[!NOTE]
+>
 >Log forwarding to New Relic is only available to customer owned New Relic accounts.
 >
 >Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.
@@ -538,6 +515,7 @@ The "Ingest Logs" scope attribute is required for the Token.
   ```
 
 >[!NOTE]
+>
 > Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.
 
 ### Splunk {#splunk}
@@ -631,6 +609,7 @@ When ready to migrate, simply configure the YAML file as described in the preced
 It is recommended, but not required, that a configuration is deployed to all environments so they are all under self-serve control. If not, you may forget which environments have been configured by Adobe versus those configured in a self-serve way.
 
 >[!NOTE]
+>
 >The `sourcetype` field's values sent to your Splunk index may have changed, so adjust accordingly.
 >
 >When Log Forwarding is deployed to an environment previously configured by Adobe support, you may receive duplicate logs for up to a few hours. This will eventually auto-resolve.

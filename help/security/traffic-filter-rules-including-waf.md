@@ -741,8 +741,8 @@ Add the following rules to your existing configuration:
    * After deploying this rule, carefully analyze CDN logs to verify that legitimate requests are not being flagged incorrectly. Once you are confident that no legitimate traffic is impacted, switch to block mode.
 
 >[!NOTE]
-> Our experience indicates that false positives associated with the ATTACK flag are rare. Therefore, it can be a practical strategy to immediately block all suspicious traffic—even if the IP address is not known to be malicious—and subsequently use CDN log analysis to identify and introduce allow rules for legitimate traffic. Each organization should evaluate its own tolerance for risk, weighing the benefits of greater protection against the risk of inadvertently blocking legitimate requests.
 >
+> Our experience indicates that false positives associated with the ATTACK flag are rare. Therefore, it can be a practical strategy to immediately block all suspicious traffic—even if the IP address is not known to be malicious—and subsequently use CDN log analysis to identify and introduce allow rules for legitimate traffic. Each organization should evaluate its own tolerance for risk, weighing the benefits of greater protection against the risk of inadvertently blocking legitimate requests.
 
 ```
     # blocks likely attack traffic, which also comes from suspected IPs
@@ -769,8 +769,7 @@ Add the following rules to your existing configuration:
 
 Prior to July 2025, Adobe recommended the WAF rules listed below, which are still valid and effective in defending against malicious traffic. See the tutorial for considerations around migrating to the new recommended rules.
 
-<details>
-  <summary>Expand to see the legacy recommended WAF rules.</summary>
++++ Expand to see the legacy recommended WAF rules.
 
 ```
     # Enable recommended WAF protections (only works if WAF is licensed enabled for your environment)
@@ -795,7 +794,8 @@ Prior to July 2025, Adobe recommended the WAF rules listed below, which are stil
           - PRIVATEFILE
           - NULLBYTE
 ```
-</details>
+
++++
 
 ## Tutorial {#tutorial}
 
@@ -809,7 +809,3 @@ The tutorials include:
 * Testing your rules using tools to simulate malicious traffic
 * Analyzing results using the Log Analysis Tooling
 * Best practices
-
-
-
-

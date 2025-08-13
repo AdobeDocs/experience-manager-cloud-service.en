@@ -4,7 +4,7 @@ description: Learn how to publish, configure, and access Adaptive Forms using Ed
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
-keywords: [publish forms, Edge Delivery Services, form configuration, CORS, referrer filter]
+keywords: publish forms, Edge Delivery Services, form configuration, CORS, referrer filter
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 ---
 # Publish Adaptive Forms with Edge Delivery Services

@@ -34,6 +34,7 @@ Before you can configure traffic at the CDN you need to do the following:
 1. Create a file named `cdn.yaml` or similar, referencing the various configuration snippets in the sections below.
 
     All snippets have these common properties, which are described under [Config Pipeline](/help/operations/config-pipeline.md#common-syntax). The `kind` property value should be *CDN* and the `version` property should be set to *1*.
+
     ```
     kind: "CDN"
     version: "1"
@@ -275,6 +276,7 @@ responseTransformations:
 ```
 
 Log example:
+
 ```
 {
 "timestamp": "2025-03-26T09:20:01+0000",
