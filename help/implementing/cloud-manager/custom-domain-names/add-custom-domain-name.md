@@ -88,13 +88,18 @@ To configure these settings, determine if a `CNAME` or apex record must be confi
 >
 >For Adobe-managed CDNs, when using DV (Domain Validation) certificates, only sites with ACME validation are permitted.
 
-#### Requirements {#adobe-managed-cert-dv-requirements}
 
-Fulfill these requirements before configuring your DNS records.
+### Configure DNS{#config-dns}
+
+>[!WARNING]
+>
+>The "register before you advertise" principle applies here. That is, configure DNS should only be performed *after* you have added the domain mapping successfully. Doing so ensures that Cloud Manager recognizes and validates that the domain exists in its own configuration before it can respond to requests for it. It also avoids any domain takeover attempts.
+
+Be sure you fulfill the following requirements *before* you configure your DNS records:
 
 * Identify your domain host or registrar if you do not know it already.
 * Be able to edit the DNS records for your organization's domain, or contact the appropriate person who can.
-* You must have already verified your configured custom domain name as described in the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
+* You have already verified your configured custom domain name as described in the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
 #### CNAME record {#adobe-managed-cert-cname-record}
 
