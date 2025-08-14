@@ -16,7 +16,8 @@ These are the release notes for the 14 August 2025 release of the Universal Edit
 
 ## What's New {#what-is-new}
 
-
+* New feature for [RTE early adopters](#new-rte)
+  * A configuration option was added to disable target in the RTE link dialog.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -35,7 +36,9 @@ Undo and redo is now available to Universal Editor content authors.
 
 ## Other Improvements {#other-improvements}
 
-
+* An issue with full screen scrolling in the [new RTE](#new-rte) was fixed.
+* The persist behavior when editing conditional fields was corrected.
+* `aem-content-fragment` was enabled to switch between variations.
 
 ## Deprecations {#deprecations}
 
