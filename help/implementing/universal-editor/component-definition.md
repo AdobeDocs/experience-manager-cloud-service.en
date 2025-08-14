@@ -15,11 +15,11 @@ The `component-definition.json` file defines the components available to your co
 
 >[!TIP]
 >
->For an overview of the content modeling process, please see the document [Content Modeling for WYSIWYG Authoring with Edge Delivery Services Projects](/help/edge/wysiwyg-authoring/content-modeling.md).
+>For an overview of the content modeling process, please see the document [Content Modeling for WYSIWYG Authoring with Edge Delivery Services Projects.](https://www.aem.live/developer/component-model-definitions)
 
 >[!TIP]
 >
->You do not need to create your own `component-definition.json` file from scratch. The project boilerplate that you use to [bootstrap your project](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) contains a [fully-functioning `component-definition.json` file](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) that you can adapt to your needs.
+>You do not need to create your own `component-definition.json` file from scratch. The project boilerplate that you use to [bootstrap your project](https://www.aem.live/developer/ue-tutorial) contains a [fully-functioning `component-definition.json` file](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) that you can adapt to your needs.
 
 ## Example Component Definition {#example}
 

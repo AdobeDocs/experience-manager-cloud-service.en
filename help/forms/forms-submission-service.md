@@ -5,8 +5,6 @@ keywords: Forms Submission Service, Edge Delivery Services forms, spreadsheet in
 feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner, Intermediate
-hide: yes
-hidefromtoc: yes
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
 ---
 # Forms Submission Service for Edge Delivery Services
@@ -141,6 +139,8 @@ Before configuring either method, ensure your AEM project foundation is ready:
 
 
 3. **Share your project folder** with `forms@adobe.com` (edit permissions required)
+
++++
 
 +++
 
@@ -361,14 +361,13 @@ Postman provides a user-friendly interface for testing API submissions.
 1. **Create a new POST request** in Postman
 2. **Configure the endpoint:** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
 3. **Replace placeholders:**
-
    - `{id}` → Your actual Form ID
    - `[repository]` → Your GitHub repository name
    - `[organization]` → Your GitHub organization/username
 
 **Request Configuration:**
    
-```json
+    ```json
 
 POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
@@ -391,7 +390,7 @@ Body (JSON):
             "email": "mary@gmail.com"
                 }
 }
-```
+     ```
 
 **Expected Response:**
 
@@ -437,7 +436,7 @@ curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
       "email": "joe@example.com"
                 }
             }'
-```
+        ```
 
 >[!TAB Windows Command Prompt]
 
@@ -470,7 +469,7 @@ Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-
   -Method POST `
   -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
   -Body $body
-```
+    ```
 
 >[!ENDTABS]
 
