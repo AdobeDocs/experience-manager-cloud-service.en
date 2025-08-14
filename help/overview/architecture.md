@@ -232,5 +232,5 @@ The latest architecture for AEM as a Cloud Service introduces some fundamental c
   * [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md)
 * Edge Delivery Services:
   * [AEM as a Cloud Service Overview - with Edge Delivery Services](/help/edge/overview.md)
-  * [Using Edge Delivery Services](/help/edge/using.md)
+  * [Using Edge Delivery Services](/help/edge/overview.md)
   * [Explore the underlying architecture and important pieces of AEM as a Cloud Service with Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
