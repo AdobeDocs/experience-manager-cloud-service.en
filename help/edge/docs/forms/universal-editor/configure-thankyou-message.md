@@ -1,12 +1,11 @@
 ---
-
-title: "How to Configure a Redirect Page or Thank you message"
-description: "Learn how users can be displayed a thank you message or redirected to a webpage that form authors can configure while creating the form."
+title: How to Configure a Redirect Page or Thank you message
+description: Learn how users can be displayed a thank you message or redirected to a webpage that form authors can configure while creating the form.
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
+exl-id: cacd7b0a-aad0-4b5d-a6a0-e4bac4cb196d
 ---
-
 # Configure Thank You Messages and Redirect URLs
 
 Post-submission experiences significantly impact user satisfaction and form completion rates. Adobe's Universal Editor provides comprehensive options for configuring what users see after submitting forms, whether through personalized thank you messages or strategic redirects to specific pages.
@@ -243,4 +242,3 @@ After successfully configuring your post-submission experience:
 
 - [Form submission configuration guide](submit-action.md)
 - [User experience best practices](responsive-layout.md)
-
