@@ -1060,24 +1060,7 @@ user-guide-title: AEM as a Cloud Service
   + [FAQ](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
   + [Edge Delivery Services Overview](/help/edge/overview.md)
-  + [Using Edge Delivery Services with AEM](/help/edge/using.md)
-  + [Choosing an Authoring Method](/help/edge/authoring-methods.md)
-  + WYSIWYG Authoring {#wysiwyg-authoring}
-    + [WYSIWYG Content Authoring for Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
-    + [Publishing Content for Edge Delivery](/help/edge/wysiwyg-authoring/publishing.md)
-    + [Developer Getting Started Guide](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
-    + [Creating Blocks](/help/edge/wysiwyg-authoring/create-block.md)
-    + [Content Modeling](/help/edge/wysiwyg-authoring/content-modeling.md)
-    + [Path Mapping](/help/edge/wysiwyg-authoring/path-mapping.md)
-    + [Tabular Data and Spreadheets](/help/edge/wysiwyg-authoring/tabular-data.md)
-    + [Managing Taxonomy Data](/help/edge/wysiwyg-authoring/taxonomy.md)
-    + [WYSIWYG and Doc-Based Blocks](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
-    + [Pages with DAM Assets](/help/edge/wysiwyg-authoring/dam-assets.md)
-    + [Reusing Code Across Sites](/help/edge/wysiwyg-authoring/repoless.md)
-    + [Repoless Multi Site Management](/help/edge/wysiwyg-authoring/repoless-msm.md)
-    + [Repoless Stage and Prod Environments](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
-    + [Configuring Site Authentication](/help/edge/wysiwyg-authoring/site-authentication.md)
-    + [WIP Sites Features](/help/edge/wysiwyg-authoring/wip-features.md)
+{#wysiwyg-authoring}
   + Building Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
     + WYSIWYG Authoring {#universal-editor}
