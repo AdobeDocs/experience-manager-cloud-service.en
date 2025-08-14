@@ -1089,7 +1089,6 @@ user-guide-title: AEM as a Cloud Service
       + [Form Field Validation: Add Error Checks to Your Forms](/help/edge/docs/forms/validate-forms.md)
       + [Design Beautiful Forms: Styling and Customization Guide](/help/edge/docs/forms/style-theme-forms.md)
       + [Create Success Messages: Customize Your Form's Thank You Page](/help/edge/docs/forms/thank-you-page-form.md)
-      + [Form Submission Guide: Using the Forms Submission Service](/help/forms/forms-submission-service.md)
       + [Dynamic Form Fields: Loading Options from URLs](/help/edge/docs/forms/load-options-from-url.md)
       + [Add Smart Behavior: Form Rules and Logic Guide](/help/edge/docs/forms/rules-forms.md)
       + [Advanced Form Validation: Regular Expression Guide](/help/edge/docs/forms/regex-forms.md)
@@ -1100,6 +1099,7 @@ user-guide-title: AEM as a Cloud Service
       + [Build Custom Form Components: Developer's Guide](/help/edge/docs/forms/custom-components-forms.md)
       + [Monitor Form Performance: Operational Telemetry Guides](/help/edge/docs/forms/operational-telemetry-for-forms.md) 
     + [Configure Submission for Edge Delivery Services Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+    + [Form Submission Guide: Using the Forms Submission Service](/help/forms/forms-submission-service.md)
     + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)   
   + [Best Practices for creating forms](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
