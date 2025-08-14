@@ -47,7 +47,7 @@ Edge Delivery Services also increases your content creation velocity by offering
 
 The Universal Editor offers a seamless, what-you-see-is-what-you-get (WYSIWYG) authoring experience that can be used to author any content.
 
-Please see the document [WYSIWYG Content Authoring for Edge Delivery Services](/help/edge/wysiwyg-authoring/authoring.md) to learn more about content authoring with the Universal Editor.
+Please see the document [WYSIWYG Content Authoring for Edge Delivery Services](https://www.aem.live/docs/aem-authoring) to learn more about content authoring with the Universal Editor.
 
 ### Document-Based Authoring {#document-authoring}
 

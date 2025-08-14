@@ -398,7 +398,7 @@ The **[!UICONTROL Cancel]** button discards any changes you made to a rule and c
 
 ## Write rules {#write-rules}
 
-You can write rules using the visual rule editor <!-- or the code editor>. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule.
+You can write rules using the visual rule editor.
 
 Let's first look at how to write rules using visual editor.
 
