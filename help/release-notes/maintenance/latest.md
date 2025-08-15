@@ -10,25 +10,35 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release X {#X}
+## Release 21977 {#21977}
 
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on August 19, 2025. The previous maintenance release was release 21772.
+Summarized below are the continuous improvements for maintenance release 21977, which was publicly released on August 19, 2025. The previous maintenance release was release 21772.
 
 The 2025.8.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### New Features  {#new-features-X}
+### New Features  {#new-features-21977}
 
-None.
+None
 
-### Enhancements {#enhancements-X}
+### Enhancements {#enhancements-21977}
 
-None.
+* GRANITE-60967: Create metrics for tracking clientlib compilation time
+* GRANITE-60714: Mongo Java Driver 5.2
+* GRANITE-60778: Filevault 4.0.0
+* SKYOPS-113929: Add metrics for replication ready check
+* GRANITE-53488: Improve deleteconf.json endpoint error handling
+* SKYOPS-105469: Adding support for acsredirectMgr in autofix api
+* GRANITE-59968: Allow to configure REPLICATION_FORCE_READY_MILLIES
 
-### Fixed Issues {#fixed-issues-X}
+### Fixed Issues {#fixed-issues-21977}
 
-None.
+* SITES-34277: Fix blocking error in translations workflows for pages
+* GRANITE-60167: Async index update in Skyline doesn't support CSV data
+* SKYOPS-105471: Support dambaseredirect fix for aso autofix
+* GRANITE-60532: Modification of value toggles is not picked up
+* SKYOPS-109532: adding feature removed link as comment behind toggle
 
-#### AEM Guides {#guides-X}
+#### AEM Guides {#guides-21977}
 
 * GUIDES-26688: CSS and Page layout files in Native PDF templates exhibit inconsistent file locking behavior, allowing edits even when the files are locked.
 * GUIDES-30900: Copying a folder with a large number of assets from the Assets UI leads to an API timeout. The operation continues to run in the backend and completes after some time, but no success or failure message, or notification is shown in the UI.
@@ -38,23 +48,23 @@ None.
 
 For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
 
-### Known Issues {#known-issues-X}
+### Known Issues {#known-issues-21977}
 
 * Apache HTTPD version 2.4.65 introduces changes that may affect certain configurations due to new restrictions implemented as part of security fixes. These fixes address vulnerabilities by ensuring that directives such as `RequestHeader set`, `edit`, and `edit_r` used to modify the Content-Type header are now correctly limited to request headers. This change prevents unintended modifications to response headers, particularly for static content.
 
-### Deprecated Features and APIs {#deprecated-X}
+### Deprecated Features and APIs {#deprecated-21977}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-X}
+### Security Fixes {#security-21977}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses X identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-X}
+### Embedded Technologies {#embedded-tech-21977}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM Oak | 1.80.0|[Oak API 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80/index.html)| 
+|AEM Oak | 1.84.0|[Oak API 1.84.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.84/index.html)| 
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |Apache HTTP Server| 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES)|
