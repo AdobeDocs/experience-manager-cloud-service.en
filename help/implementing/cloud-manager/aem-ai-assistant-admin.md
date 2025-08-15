@@ -101,14 +101,47 @@ Reference article: [Assign custom permissions to the new product profile](https:
 
 >[!TAB Use an exisiting user group] 
 
-Use an existing AEM user group if it meets AI Assistant access requirements, instead of creating a new group.
+You can use an existing AEM user group if it meets AI Assistant access requirements, instead of creating a new group.
+
+>[!ENDTABS]
+
+## 4 - Add users to the user group{#add-users}
+
+1. Do one of the following:
+
+>[!BEGINTABS]
+
+>[!TAB Add individual users]
+
+1. On the **User groups** page, in the **Group name** table, click the user group name that you newly created, or an existing user group name.
+
+    ![User groups page showing AEM AI Assistant user group name in the table](/help/implementing/cloud-manager/assets/ai-assistant-user-group-name-in-table.png)
+
+1. In the **User groups** page for the **AEM AI Assistant**, click the **Users** tab, then click **Add users**.
+
+    ![The AEM AI Assistant user groups page, showing the Users tab and the Add users buttion](/help/implementing/cloud-manager/assets/ai-assistant-add-users.png)
+
+1. On the **Add users to this user group** page, search for and select users who need access to the AEM AI Assistant.
+
+    ![Add users to this user group page](/help/implementing/cloud-manager/assets/ai-assistant-add-users-to-this-group.png)
+
+1. In the lower-right corner of the page, click **Save**.
+
+>[!TAB Add users in bulk]
+
+You can use the bulk upload feature in the Admin Console.
+    
+1. Prepare a CSV file with user information.
+    
+1. Use the **Add users by CSV** option for efficient bulk addition.
 
 >[!ENDTABS]
 
 
-## 4 - Add users to the user group{#add-users}
 
 
 ## 5 - Assign the product profile to the user group{#assign-product-profile}
+
+
 
 
