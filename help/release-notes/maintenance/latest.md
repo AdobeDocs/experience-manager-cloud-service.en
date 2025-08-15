@@ -25,6 +25,13 @@ None
 * GRANITE-60967: Create metrics for tracking clientlib compilation time
 * GRANITE-60714: Mongo Java Driver 5.2
 * GRANITE-60778: Filevault 4.0.0
+* GRANITE-60823: Jackrabbit 2.22.2
+* GRANITE-60663: Apache commons-text 1.14.0
+* GRANITE-60645: Apache commons-ui 2.20.0
+* GRANITE-60637: Apache commons-codec to 1.19.0
+* GRANITE-60306: Apache commons-lang to 3.18.0
+* SKYOPS-84821: Sling engine 2.16.6
+* GRANITE-60183: Apache commons-fileupload 1.6.0
 * SKYOPS-113929: Add metrics for replication ready check
 * GRANITE-53488: Improve deleteconf.json endpoint error handling
 * SKYOPS-105469: Adding support for acsredirectMgr in autofix api
