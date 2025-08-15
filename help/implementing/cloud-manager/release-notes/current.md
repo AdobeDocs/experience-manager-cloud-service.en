@@ -134,7 +134,6 @@ See [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage
 
 <!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
 
-
 ### Add Edge Delivery Config Pipeline {#add-eds-pipeline}
 
 Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Config Pipelines** to manage settings such as traffic filtering rules and Web Application Firewall (WAF) configurations, where applicable. See [Supported Configurations](/help/operations/config-pipeline.md#configurations).
