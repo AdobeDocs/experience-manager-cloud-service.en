@@ -142,8 +142,6 @@ Before configuring either method, ensure your AEM project foundation is ready:
 
 +++
 
-+++
-
 ## Manual Configuration
 
 ![Workflow for forms submission service](/help/forms/assets/forms-submission-service-workflow.png)
