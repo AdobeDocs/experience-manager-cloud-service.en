@@ -89,7 +89,7 @@ To configure these settings, determine if a `CNAME` or apex record must be confi
 >For Adobe-managed CDNs, when using DV (Domain Validation) certificates, only sites with ACME validation are permitted.
 
 
-### Configure DNS{#config-dns}
+## Configure DNS{#config-dns}
 
 >[!WARNING]
 >
@@ -101,7 +101,7 @@ Be sure you fulfill the following requirements *before* you configure your DNS r
 * Be able to edit the DNS records for your organization's domain, or contact the appropriate person who can.
 * You have already verified your configured custom domain name as described in the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
-#### CNAME record {#adobe-managed-cert-cname-record}
+### CNAME record {#adobe-managed-cert-cname-record}
 
 A canonical name or CNAME record is a type of DNS record that maps an alias name to a true or canonical domain name. CNAME records are typically used to map a subdomain such as `www.example.com` to the domain hosting that subdomain's content. 
 
@@ -111,7 +111,7 @@ Log in to your DNS service provider and create a `CNAME` record to point your cu
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
-#### APEX record {#adobe-managed-cert-apex-record}
+### APEX record {#adobe-managed-cert-apex-record}
 
 An apex domain is a custom domain that does not contain a subdomain, such as `example.com`. An apex domain is configured with an `A`, `ALIAS`, or `ANAME` record through your DNS provider. Apex domains must point to specific IP addresses.
 
