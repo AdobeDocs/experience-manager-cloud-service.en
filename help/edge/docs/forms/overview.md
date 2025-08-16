@@ -116,7 +116,6 @@ The following diagram illustrates how you can edit forms in Microsoft Excel or G
 
 You are now ready to create your first high-performance form with AEM Edge Delivery Services.
 
-
 <!--
 ## Start creating forms
 
