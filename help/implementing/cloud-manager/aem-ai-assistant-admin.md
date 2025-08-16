@@ -6,7 +6,7 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: yes
 hidefromtoc: yes
-
+exl-id: a7f3dc14-29f7-473a-9870-d52393e6fa6e
 ---
 # Configure the AI Assistant in Adobe Experience Manager {#aem-ai-asst-admin-setup}
 
@@ -141,7 +141,3 @@ You can use the bulk upload feature in the Admin Console.
 
 
 ## 5 - Assign the product profile to the user group{#assign-product-profile}
-
-
-
-
