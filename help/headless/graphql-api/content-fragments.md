@@ -1165,7 +1165,7 @@ The current limitations are:
 
   >[!NOTE]
   >
-  >The full URL then needs to be constructed on the client side, based on the [Asset delivery API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+  >The full URL then needs to be constructed on the client side, based on the [Asset delivery API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 * Only *Approved* assets will be available for reference from the remote repositories
 * If an asset that is referenced is removed from the remote repository, this will result in a broken Content Fragment Asset reference.
