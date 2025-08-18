@@ -240,6 +240,7 @@ To open your fragment for editing:
 
 ## Copy a Content Fragment {#copy-a-content-fragment}
 
+<!--
 **Copy** creates a copy of the selected fragment at its location.
 
 * In the **Copy** action you can select whether to **Copy with children** (referenced fragments). This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
@@ -282,10 +283,10 @@ FolderC
     | 
     |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
 ```
+-->
 
 <!-- CQDOC-22785 - will replace above text -->
 
-<!--
 **Copy** creates a copy of the selected fragment at its location.
 
 * In the **Copy** action you can select whether to **Copy also referenced content fragments**. This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
@@ -382,7 +383,6 @@ FolderC
    |___./Copy_of_FragmentB (referenced by FragmentA)
    Copy_of_FragmentB
 ```
--->
 
 ## View and Manage Tags {#manage-tags}
 
