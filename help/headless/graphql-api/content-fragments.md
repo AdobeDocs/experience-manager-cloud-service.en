@@ -45,7 +45,7 @@ GraphQL is:
 
   See [Explore GraphQL](https://www.graphql.com).
 
-* *"...a data query language and specification developed internally by Facebook in 2012 before being publicly open sourced in 2015. It provides an alternative to REST-based architectures with the purpose of increasing developer productivity and minimizing amounts of data transferred. GraphQL is used in production by hundreds of organizations of all sizes..."*
+* *"...a data query language and specification developed internally by Facebook in 2012 before being publicly open sourced in 2015. It provides an alternative to REST-based architectures with the purpose of increasing developer productivity and minimizing the amounts of data transferred. GraphQL is used in production by hundreds of organizations of all sizes..."*
   
   See [GraphQL Foundation](https://foundation.graphql.org/).
 
@@ -103,7 +103,7 @@ With GraphQL you can perform queries to return either:
   
 * A **[list of entries](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM provides capabilities to convert queries (both types) to [Persisted Queries, that can be cached](/help/headless/graphql-api/persisted-queries.md) by Dispatcher and the CDN.
+AEM provides capabilities to convert queries (both types) to [Persisted Queries, that can be cached](/help/headless/graphql-api/persisted-queries.md) by the Dispatcher and the CDN.
 
 ### GraphQL Query Best Practices (Dispatcher and CDN) {#graphql-query-best-practices}
 
@@ -163,7 +163,7 @@ Also, the user must have access to a GraphQL endpoint to be able to execute Grap
 
 ## Schema Generation {#schema-generation}
 
-GraphQL is a strongly-typed API, which means that data must be clearly structured and organized by type.
+GraphQL is a strongly typed API, which means that data must be clearly structured and organized by type.
 
 The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating data on a certain instance. To do this, a client must fetch the [Schema](#schema-generation), which contains all the types necessary for a query. 
 
