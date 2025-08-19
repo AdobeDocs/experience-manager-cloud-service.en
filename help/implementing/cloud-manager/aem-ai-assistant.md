@@ -36,7 +36,7 @@ The following 3-minute, 39-second video delivers a step-by-step walkthrough of t
 
     The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more.
 
-1. The AEM Admin configures the AI Assistant in AEM for use in their organization. See [Configure the AI Assistant in AEM](/help/implementing/cloud-manager/aem-ai-assistant-admin.md).
+1. The AEM Admin configures the AI Assistant for use in their organization. See [Configure the AI Assistant in AEM](/help/implementing/cloud-manager/aem-ai-assistant-admin.md).
 
 <!--
 >[!IMPORTANT]
@@ -46,7 +46,7 @@ The following 3-minute, 39-second video delivers a step-by-step walkthrough of t
 
 ## Scope {#scope}
 
-The current scope of the AI Assistant in AEM focuses on addressing product knowledge questions for AEMr as a Cloud Service. This scope includes comprehensive support for key areas, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager.
+The current scope of the AI Assistant in AEM focuses on addressing product knowledge questions for AEMr as a Cloud Service. This scope includes comprehensive support for key areas. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
 
 * **Surfaces**: Available across AEM Experience Hub, Author UI, Cloud Manager.
 * **Capabilities**: Product‑knowledge and first-stop for troubleshooting and guidance, automated creation of support tickets and lookup.
@@ -126,7 +126,7 @@ You can reset the AI Assistant in AEM and start a new conversation when you want
 
 ![Start conversation button](/help/implementing/cloud-manager/assets/ai-assistant-start-conversation.png)
 
-**To start or reset an AI Assistant in AEM conversation:** 
+**To start or reset a conversation:** 
 
 1. On the AI Assistant in AEM, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).  
 1. To inform the AI Assistant of a new topic or a change in topic, click **Start New Conversation**. 
@@ -167,7 +167,7 @@ Here are answers to some common questions about the AI Assistant:
   Currently, AI Assistant supports product knowledge inquiries in AEM as a Cloud Service, including Sites, Assets, Dynamic Media, Cloud Manager, and Forms.
 * **What are the capabilities of AI Assistant in AEM?**  
   AI Assistant in AEM is designed to answer queries related to Adobe product knowledge.
-* **Does AI Assistant in AEM use personal information for training data?**  
+* **Does the AI Assistant in AEM use personal information for training data?**  
   No. AI Assistant in AEM does not use personal information for training purposes. Avoid sharing personal information about yourself or others, including names or contact details, with the AI Assistant in AEM.
 
 <!-- IS THE DOCUMENTATION BELOW STILL NEEDED? IF SO, GO AHEAD AND DELETE THE COMMENT TAGS!!
