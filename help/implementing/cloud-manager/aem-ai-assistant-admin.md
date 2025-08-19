@@ -10,11 +10,9 @@ exl-id: a7f3dc14-29f7-473a-9870-d52393e6fa6e
 ---
 # Configure the AI Assistant in Adobe Experience Manager {#aem-ai-asst-admin-setup}
 
-An Administrator must configure access, permissions, and settings before users in their organization can use the features in AEM (Adobe Experience Manager) AI Assistant. This article describes how to enable the AI Assistant for your organization, set up required credentials, and save configuration changes.
+An Administrator must configure access, permissions, and settings before users in their organization can use the features in AEM (Adobe Experience Manager) AI Assistant. 
 
-**Overview of the AEM AI Assistant configuration process**
-
-The configuration process consists of the following steps:
+The configuration process of the AEM AI Assistant consists of the following steps:
 
 1. [Create a new product profile in the Adobe Admin Console](#create-profile).
 1. [Enable the AI Assistant Product Knowledge permission](#enable-permission).
@@ -29,6 +27,14 @@ Before you begin, be sure you have met the following prerequisites:
 * You must have Product Administrator rights at a minimum in the Adobe Admin Console.
 * You have an understanding of your organization's user management structure.
 
+**Configuration considerations**
+    
+* Processing time: Resources created in Cloud Manager may take up to 2 minutes to display in the Admin Console for permission configuration.
+* Multiple profiles: Users can be part of multiple profiles, and permissions are combined from all assigned profiles.
+* Organization scope: Some permissions may apply at the organization level across all programs.
+* Predefined profiles: Do not delete predefined permission profiles from the Admin Console.
+
+
 ## 1 - Create a new product profile in the Adobe Admin Console{#create-profile}
 
 1. Follow the detailed instructions in [Create a new product profile in the Adobe Admin Console](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile) found in the Experience Platform documentation.
@@ -41,8 +47,6 @@ Before you begin, be sure you have met the following prerequisites:
     | Display name (optional) | `AI Assistant` |
     | Description (optional) | `Product profile for managing AEM AI Assistant access` |
     | Notification | Configure based on your organization's preferences |
-
-
 
 
 ## 2 - Enable the AI Assistant Product Knowledge permission{#enable-permission}
@@ -126,18 +130,58 @@ You can use an existing AEM user group if it meets AI Assistant access requireme
     ![Add users to this user group page](/help/implementing/cloud-manager/assets/ai-assistant-add-users-to-this-group.png)
 
 1. In the lower-right corner of the page, click **Save**.
+1. Now, assign the product profile to the user group](#assign-product-profile).
 
 >[!TAB Add users in bulk]
 
 You can use the bulk upload feature in the Admin Console.
     
 1. Prepare a CSV file with user information.
-    
 1. Use the **`Add users by CSV`** option for efficient bulk addition.
+1. Now, assign the product profile to the user group](#assign-product-profile).
 
 >[!ENDTABS]
 
 
-
-
 ## 5 - Assign the product profile to the user group{#assign-product-profile}
+
+This step follows the standard Adobe Admin Console workflow for assigning product profiles to user groups.
+
+Reference article: [Manage product profiles for enterprise users](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)
+
+1. While still in your AEM AI Assistant user group from [4 - Add users to the user group](#add-users), click the **Assigned product profiles** tab.
+1. Click **Assign profile**.
+
+    ![AEM AI Assistant user group page with Assigned product profiles tab selected](/help/implementing/cloud-manager/assets/ai-assistant-assign-profile.png)
+
+1. On the **Assign products and profiles** page, in the **Select product profiles** dialog box, search for and select your **AI Assistant** product profile.
+
+    ![The "Assign products and profiles" page, showing the "Select product profiles" dialog box, and the "AI Assistant" product profile selected](/help/implementing/cloud-manager/assets/ai-assistant-select-product-profile.png)
+
+1. Near the lower-right corner of the dialog box, click **Apply**.
+1. Near the lower-right corner of the **Assign products and profiles** page, click **Save**.
+
+    ![The AI Assistant product profile shown assigned to the AEM AI Assistant user group](/help/implementing/cloud-manager/assets/ai-assistant-profile-assigned-to-user-group.png)
+
+
+## Verify the configuration
+
+* Check that your product profile shows the correct number of assigned user groups.
+* Verify that the user group shows the correct number of users.
+* Confirm that the AI Assistant Product Knowledge permission is enabled and properly configured.
+
+
+## Test the configuration
+
+Have a user from the assigned group do the following:
+
+1. Log into AEM.
+2. Verify that the AI Assistant features are accessible.
+3. Test the functionality of the AI Assistant to ensure proper activation.
+
+## See also 
+
+* [Adobe Experience Platform Access Control](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
+* [Cloud Manager Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md)
+
+
