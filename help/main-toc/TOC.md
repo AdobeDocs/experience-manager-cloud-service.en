@@ -739,7 +739,6 @@ user-guide-title: AEM as a Cloud Service
 + Forms {#forms}
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
-    + [Introduction](/help/forms/home2.md)
     + [Top Adobe Experience Manager Forms innovations](/help/forms/latest-innovations.md)
     + [Early Access (EA) capabilities](/help/forms/early-access-ea-features.md)
     + [Notable changes](/help/forms/notable-changes.md)
@@ -826,13 +825,13 @@ user-guide-title: AEM as a Cloud Service
         + [Use Turnstile Captcha in an Adaptive Form Core Components ](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
         + [Add custom error handler in an Adaptive Form](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
         + [Add a locale for Adaptive Forms based on Core Components](/help/forms/supporting-new-language-localization-core-components.md)
-        +  [Design JSON Schema for an Adaptive Form (Core Components)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
-        +  [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-        +  [Compare Adaptive Forms](/help/forms/compare-forms.md) 
-        +  [Create custom submit action](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
-        +  [Converting Adaptive Forms based on foundation components to Core Component-based forms using migration utility tool](/help/forms/migration-utility-tool-for-af-core-components.md)
+        + [Design JSON Schema for an Adaptive Form (Core Components)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
+        + [Add versionings, comments, and annotations to an Adaptive Form](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
+        + [Compare Adaptive Forms](/help/forms/compare-forms.md) 
+        + [Create custom submit action](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+        + [Converting Adaptive Forms based on foundation components to Core Component-based forms using migration utility tool](/help/forms/migration-utility-tool-for-af-core-components.md)
         + [Email Templates in Adaptive Forms](/help/forms/html-email-templates-in-adaptive-forms.md)
-        + [​Manage Publication in Experience Manager Forms](/help/forms/manage-publication.md)
+        + [Manage Publication in Experience Manager Forms](/help/forms/manage-publication.md)
         + Introduction to Rule Editor for Adaptive Forms based on Core Components{#rule-editor-core-components}
           + [Introduction to Rule Editor for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components.md)
           + [Rule Editor user interface for Adaptive Forms based on Core Components](/help/forms/rule-editor-core-components-user-interface.md)
@@ -849,9 +848,9 @@ user-guide-title: AEM as a Cloud Service
           + [Examples of Custom Functions for an Adaptive Form Based on Core Components](/help/forms/custom-function-core-components-use-cases.md)
         + Introduction to Forms Portal and its components{#introduction-to-forms-portal}
           + [Introduction to Forms Portal component](/help/forms/configure-forms-portal.md)
-          +  [List forms on the Sites page using the Search & Lister component](/help/forms/list-forms-on-sites-page.md)
-          +  [Save and list forms as drafts on Sites page using the Drafts & Submissions component](/help/forms/save-core-component-based-form-as-draft.md)
-          +  [Add form links to Sites page using the Link component](/help/forms/add-form-link-to-aem-sites-page.md)
+          + [List forms on the Sites page using the Search & Lister component](/help/forms/list-forms-on-sites-page.md)
+          + [Save and list forms as drafts on Sites page using the Drafts & Submissions component](/help/forms/save-core-component-based-form-as-draft.md)
+          + [Add form links to Sites page using the Link component](/help/forms/add-form-link-to-aem-sites-page.md)
     + Foundation Components {#authoring-adaptive-forms-foundation-components}
       + Convert your PDF forms to Adaptive Forms {#afcs}
         + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
@@ -889,8 +888,8 @@ user-guide-title: AEM as a Cloud Service
         + [Add rules to an Adaptive Form](/help/forms/rule-editor.md)
         + [Add custom error handler using Rule Editor's Invoke service](/help/forms/add-custom-error-handler-adaptive-forms.md)
         + [Grant rule editor access to select user groups](/help/forms/rule-editor-access-user-groups.md)
-        +  [Using SOM expressions in Adaptive Forms](/help/forms/using-som-expressions-adaptive-forms.md)
-        +  [Adaptive Form Expressions](/help/forms/adaptive-form-expressions.md)
+        + [Using SOM expressions in Adaptive Forms](/help/forms/using-som-expressions-adaptive-forms.md)
+        + [Adaptive Form Expressions](/help/forms/adaptive-form-expressions.md)
       + Use [!DNL Adobe Sign] {#use-adobe-sign}
         + [Use Adobe Sign to e-sign an Adaptive Form](/help/forms/working-with-adobe-sign.md)
       + Configure Submit Actions and metadata submission {#configure-submit-actions-and-metadata-submission}
@@ -1066,50 +1065,7 @@ user-guide-title: AEM as a Cloud Service
     + [FAQ](/help/commerce-cloud/cif-storefront/faq.md)
 + Edge Delivery Services {#edge-delivery}
   + [Edge Delivery Services Overview](/help/edge/overview.md)
-  + [Using Edge Delivery Services with AEM](/help/edge/using.md)
-  + [Choosing an Authoring Method](/help/edge/authoring-methods.md)
-  + WYSIWYG Authoring {#wysiwyg-authoring}
-    + [WYSIWYG Content Authoring for Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
-    + [Publishing Content for Edge Delivery](/help/edge/wysiwyg-authoring/publishing.md)
-    + [Developer Getting Started Guide](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
-    + [Creating Blocks](/help/edge/wysiwyg-authoring/create-block.md)
-    + [Content Modeling](/help/edge/wysiwyg-authoring/content-modeling.md)
-    + [Path Mapping](/help/edge/wysiwyg-authoring/path-mapping.md)
-    + [Tabular Data and Spreadheets](/help/edge/wysiwyg-authoring/tabular-data.md)
-    + [Managing Taxonomy Data](/help/edge/wysiwyg-authoring/taxonomy.md)
-    + [WYSIWYG and Doc-Based Blocks](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
-    + [Pages with DAM Assets](/help/edge/wysiwyg-authoring/dam-assets.md)
-    + [Reusing Code Across Sites](/help/edge/wysiwyg-authoring/repoless.md)
-    + [Repoless Multi Site Management](/help/edge/wysiwyg-authoring/repoless-msm.md)
-    + [Repoless Stage and Prod Environments](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
-    + [Configuring Site Authentication](/help/edge/wysiwyg-authoring/site-authentication.md)
-    + [WIP Sites Features](/help/edge/wysiwyg-authoring/wip-features.md)
-  + Document-Based Authoring {#document-authoring}
-    + [Authoring](/help/edge/docs/authoring.md)
-    + [Bulk Metadata](/help/edge/docs/bulk-metadata.md)
-    + [Placeholders](/help/edge/docs/placeholders.md)
-    + [Sitemap](/help/edge/developer/sitemap.md)
-    + [SharePoint Setup](/help/edge/docs/setup-customer-sharepoint.md)
-    + [Slack Bot](/help/edge/docs/slack.md)
-  + Building Applications {#build}
-    + [Getting Started - Developer Tutorial](/help/edge/developer/tutorial.md)
-    + [Anatomy of a Project](/help/edge/developer/anatomy-of-a-franklin-project.md)
-    + [Block Collection](/help/edge/developer/block-collection.md)
-    + [Spreadsheets](/help/edge/developer/spreadsheets.md)
-    + [Forms](/help/edge/developer/forms.md)
-    + [Indexing](/help/edge/developer/indexing.md)
-    + [Keeping it 100](/help/edge/developer/keeping-it-100.md)
-    + [Markup - Sections](/help/edge/developer/markup-sections-blocks.md)
-    + [Favicon](/help/edge/developer/favicon.md)
-    + [Custom Headers](/help/edge/docs/custom-headers.md)
-    + [Best Practices for Developers](/help/edge/docs/dev-collab-and-good-practices.md)
-  + Launching Applications {#launch}
-    + [Go Live Checklist](/help/edge/docs/go-live-checklist.md)
-    + [Push Invalidation](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
-    + [Cloudflare Worker Setup](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
-    + [Akamai Setup](/help/edge/docs/byo-cdn-akamai-setup.md)
-    + [Fastly Setup](/help/edge/docs/byo-cdn-fastly-setup.md)
-    + [Redirects](/help/edge/docs/redirects.md)
+{#wysiwyg-authoring}
   + Building Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
     + WYSIWYG Authoring {#universal-editor}
@@ -1138,7 +1094,6 @@ user-guide-title: AEM as a Cloud Service
       + [Form Field Validation: Add Error Checks to Your Forms](/help/edge/docs/forms/validate-forms.md)
       + [Design Beautiful Forms: Styling and Customization Guide](/help/edge/docs/forms/style-theme-forms.md)
       + [Create Success Messages: Customize Your Form's Thank You Page](/help/edge/docs/forms/thank-you-page-form.md)
-      + [Form Submission Guide: Using the Forms Submission Service](/help/forms/forms-submission-service.md)
       + [Dynamic Form Fields: Loading Options from URLs](/help/edge/docs/forms/load-options-from-url.md)
       + [Add Smart Behavior: Form Rules and Logic Guide](/help/edge/docs/forms/rules-forms.md)
       + [Advanced Form Validation: Regular Expression Guide](/help/edge/docs/forms/regex-forms.md)
@@ -1148,17 +1103,10 @@ user-guide-title: AEM as a Cloud Service
       + [Protect Your Forms: Adding reCAPTCHA Security](/help/edge/docs/forms/recaptacha-forms.md)
       + [Build Custom Form Components: Developer's Guide](/help/edge/docs/forms/custom-components-forms.md)
       + [Monitor Form Performance: Operational Telemetry Guides](/help/edge/docs/forms/operational-telemetry-for-forms.md) 
+    + [Form Submission Guide: Using the Forms Submission Service](/help/forms/forms-submission-service.md)
     + [Configure Submission for Edge Delivery Services Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
     + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)   
-  + [Best Practices for creating forms](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md) 
-  + Edge Delivery Resources {#resources}
-    + Sidekick {#sidekick}
-      + [Using Sidekick](/help/edge/docs/sidekick.md)
-      + [Installing Extension](/help/edge/docs/sidekick-extension.md)
-      + [Sidekick Library](/help/edge/docs/sidekick-library.md)
-    + [FAQ](/help/edge/docs/faq.md)
-    + Tools {#tools}
-      + [Audit Log](/help/edge/docs/auditlog.md)
+  + [Best Practices for creating forms](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
   + [What is a Headless CMS?](/help/headless/what-is-headless.md)
   + [Introduction to AEM Headless](/help/headless/introduction.md)
@@ -1242,6 +1190,7 @@ user-guide-title: AEM as a Cloud Service
   + [Generative AI in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
   + [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
   + [Generate Variations](/help/generative-ai/generate-variations.md)
+  + [Configure the AI Assistant in AEM](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
   + [AEM AI Assistant (Limited Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
   + [AEM Forms AI Assistant (Forms Experience Builder)(Early Adopter)](/help/edge/docs/forms/forms-ai-assistant.md)
   + [AEM Forms AI Assistant - Prompt Library](/help/edge/docs/forms/ai-assistant-prompt-library.md)
