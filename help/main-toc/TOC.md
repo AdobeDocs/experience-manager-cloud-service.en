@@ -91,6 +91,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2025 {#2025}
+      + [Maintenance Release Notes for 2025.8.0](/help/release-notes/maintenance/2025/2025-8-0.md)
       + [Maintenance Release Notes for 2025.7.0](/help/release-notes/maintenance/2025/2025-7-0.md)
       + [Maintenance Release Notes for 2025.6.0](/help/release-notes/maintenance/2025/2025-6-0.md)
       + [Maintenance Release Notes for 2025.5.0](/help/release-notes/maintenance/2025/2025-5-0.md)
@@ -226,6 +227,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Universal Editor {#univeral-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + 2025 {#2025}
+      + [2025.07.31 Release Notes](/help/release-notes/universal-editor/2025/2025-07-31.md)
       + [2025.07.09 Release Notes](/help/release-notes/universal-editor/2025/2025-07-09.md)
       + [2025.06.19 Release Notes](/help/release-notes/universal-editor/2025/2025-06-19.md)
       + [2025.05.21 Release Notes](/help/release-notes/universal-editor/2025/2025-05-21.md)
@@ -1017,47 +1019,52 @@ user-guide-title: AEM as a Cloud Service
   + [Screens as a Cloud Service FAQs](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
   + [Introduction and overview](/help/commerce-cloud/introduction.md)
-  + [CIF Introduction](/help/commerce-cloud/cif-introduction.md)
-  + [Notable Changes to AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/changes.md)
-  + Commerce Journeys {#journeys}
-    + Content Author Journey {#author}
-      + [AEM Content and Commerce Content Author Journey](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
-      + [Getting Started with CIF Authoring](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
-      + [Manage product catalog pages and template](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
-      + [Building Staged Product Catalog Experiences](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
-      + [Building Product Experiences](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
-  + Integrations {#integrations}
-    + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
-    + [Live Search CIF Component](/help/commerce-cloud/integrating/live-search-plp.md)
-    + [Live Search Popover CIF Component](/help/commerce-cloud/integrating/live-search-popover.md)
-    + [Third-Party Commerce Solution](/help/commerce-cloud/integrating/third-party.md)
-    + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
-  + AEM Storefront {#storefront}
-    + [Getting Started](/help/commerce-cloud/getting-started.md)
-    + Authoring {#authoring}
-      + [Commerce Experiences](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
-      + [Product Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
-      + [Multi-Template Usage](/help/commerce-cloud/authoring/multi-template-usage.md)
-      + [Enrich Product Data with Associated Content](/help/commerce-cloud/authoring/enrich-product-associated-content.md)
-      + [Product Recommendations](/help/commerce-cloud/authoring/product-recommendations.md)
-    + Administering {#administering}
-      + [Multi-Store Setup](/help/commerce-cloud/configuring/multi-store-setup.md)
-      + [Multiple Commerce Systems Setup](/help/commerce-cloud/configuring/multiple-commerce-systems-setup.md)
-      + [Configuring URLs for SEO](/help/commerce-cloud/configuring/advanced-url-configuration.md)
-      + [Caching Options](/help/commerce-cloud/configuring/caching.md)
-      + [Custom HTTP Headers](/help/commerce-cloud/configuring/custom-http-headers.md)
-      + [Shopping Cart and Dispatcher Setup](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
-      + [Component & GraphQL Clear Cache](/help/commerce-cloud/configuring/clear-cache.md)
-    + Developing {#developing}
-      + [Developing with AEM Cloud Service SDK](/help/commerce-cloud/develop.md)
-      + [Styling CIF Components](/help/commerce-cloud/customizing/style-cif-component.md)
-      + [Customizing CIF Components](/help/commerce-cloud/customizing/customize-cif-components.md)
-      + [Using CIF Catalog Pickers](/help/commerce-cloud/customizing/use-cif-pickers.md)
-      + [Custom Attributes to CIF Product Carousel](/help/commerce-cloud/customizing/product-carousel.md)
-      + [JSON-LD Metadata](/help/commerce-cloud/customizing/json-ld.md)
-  + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
-  + [Migration](/help/commerce-cloud/migration.md)
-  + [FAQ](/help/commerce-cloud/faq.md)
+  + Edge Delivery Services Storefront {#edge-storefront}
+    + [Introduction](/help/commerce-cloud/edge-storefront/introduction.md)
+  + Third Party Storefront {#thrid-party-storefront}
+    + [Introduction](/help/commerce-cloud/third-party-storefront/introduction.md)
+  + CIF Storefront {#cif-storefront}
+    + [CIF Introduction](/help/commerce-cloud/cif-storefront/introduction.md)
+    + [Notable Changes to AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/cif-storefront/changes.md)
+    + Commerce Journeys {#journeys}
+      + Content Author Journey {#author}
+        + [AEM Content and Commerce Content Author Journey](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/overview.md)
+        + [Getting Started with CIF Authoring](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/getting-started.md)
+        + [Manage product catalog pages and template](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
+        + [Building Staged Product Catalog Experiences](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
+        + [Building Product Experiences](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
+    + Integrations {#integrations}
+      + [Adobe Commerce](/help/commerce-cloud/cif-storefront/integrating/magento.md)
+      + [Live Search CIF Component](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md)
+      + [Live Search Popover CIF Component](/help/commerce-cloud/cif-storefront/integrating/live-search-popover.md)
+      + [Third-Party Commerce Solution](/help/commerce-cloud/cif-storefront/integrating/third-party.md)
+      + [Experience Platform](/help/commerce-cloud/cif-storefront/integrating/aep.md)
+    + AEM Storefront {#storefront}
+      + [Getting Started](/help/commerce-cloud/cif-storefront/getting-started.md)
+      + Authoring {#authoring}
+        + [Commerce Experiences](/help/commerce-cloud/cif-storefront/authoring/authoring-commerce-experiences.md)
+        + [Product Cockpit](/help/commerce-cloud/cif-storefront/authoring/product-cockpit.md)
+        + [Multi-Template Usage](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md)
+        + [Enrich Product Data with Associated Content](/help/commerce-cloud/cif-storefront/authoring/enrich-product-associated-content.md)
+        + [Product Recommendations](/help/commerce-cloud/cif-storefront/authoring/product-recommendations.md)
+      + Administering {#administering}
+        + [Multi-Store Setup](/help/commerce-cloud/cif-storefront/configuring/multi-store-setup.md)
+        + [Multiple Commerce Systems Setup](/help/commerce-cloud/cif-storefront/configuring/multiple-commerce-systems-setup.md)
+        + [Configuring URLs for SEO](/help/commerce-cloud/cif-storefront/configuring/advanced-url-configuration.md)
+        + [Caching Options](/help/commerce-cloud/cif-storefront/configuring/caching.md)
+        + [Custom HTTP Headers](/help/commerce-cloud/cif-storefront/configuring/custom-http-headers.md)
+        + [Shopping Cart and Dispatcher Setup](/help/commerce-cloud/cif-storefront/configuring/shopping-cart-dispatcher.md)
+        + [Component & GraphQL Clear Cache](/help/commerce-cloud/cif-storefront/configuring/clear-cache.md)
+      + Developing {#developing}
+        + [Developing with AEM Cloud Service SDK](/help/commerce-cloud/cif-storefront/develop.md)
+        + [Styling CIF Components](/help/commerce-cloud/cif-storefront/customizing/style-cif-component.md)
+        + [Customizing CIF Components](/help/commerce-cloud/cif-storefront/customizing/customize-cif-components.md)
+        + [Using CIF Catalog Pickers](/help/commerce-cloud/cif-storefront/customizing/use-cif-pickers.md)
+        + [Custom Attributes to CIF Product Carousel](/help/commerce-cloud/cif-storefront/customizing/product-carousel.md)
+        + [JSON-LD Metadata](/help/commerce-cloud/cif-storefront/customizing/json-ld.md)
+    + [Adobe Commerce PWA Studio](/help/commerce-cloud/cif-storefront/pwa-studio/getting-started.md)
+    + [Migration](/help/commerce-cloud/cif-storefront/migration.md)
+    + [FAQ](/help/commerce-cloud/cif-storefront/faq.md)
 + Edge Delivery Services {#edge-delivery}
   + [Edge Delivery Services Overview](/help/edge/overview.md)
 {#wysiwyg-authoring}
