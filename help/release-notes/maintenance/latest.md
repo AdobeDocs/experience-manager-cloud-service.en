@@ -36,6 +36,7 @@ None.
 * SKYOPS-105469: Adding support for acsredirectMgr in autofix api.
 * SKYOPS-113929: Add metrics for replication ready check.
 * SKYOPS-84821: Sling engine 2.16.6.
+* SKYOPS-114322: Bump up closure compiler language in level to `ECMASCRIPT_2018`.
 
 ### Fixed Issues {#fixed-issues-21994}
 
