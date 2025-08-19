@@ -54,7 +54,7 @@ Adding a custom domain name requires interaction between the DNS service and Clo
 | 1 | [Add SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | [Add a custom domain](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
 | 3 | [Add domain mapping](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 4 | [Configure DNS](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)  |
+| 4 | [Configure DNS](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#config-dns)  |
 | 5 | [Check DNS status](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]

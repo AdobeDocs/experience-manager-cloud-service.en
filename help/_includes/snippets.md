@@ -226,7 +226,7 @@ To log a support ticket, you must first register your Edge Delivery site in Clou
 >
 >The SPA Editor [has been deprecated](/help/implementing/developing/hybrid/spa-editor-deprecation.md) for new projects. It remains supported by Adobe for existing projects, but should not be used for new projects. The preferred editors for managing headless content in AEM are now:
 >
->* [The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) for visually editing headless content.
+>* [The Universal Editor](https://www.aem.live/docs/aem-authoring) for visually editing headless content.
 >* [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing of headless content.
 
 ## Universal Editor{#ue-see-also}

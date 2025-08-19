@@ -79,7 +79,7 @@ The **Edge Delivery to-do list** in Cloud Manager is an onboarding task checklis
 | 6 | Add SSL certificate | See [Add SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 7 | Configure the CDN of your Edge Delivery site | See [Add a Domain Mapping](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md). |
 | 8 | Setup push validation | See [Setup push validation for an Edge Delivery site](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
-| 9 | Go-Live | See [Go-Live checklist](/help/edge/docs/go-live-checklist.md). |
+| 9 | Go-Live | See [Go-Live checklist](https://www.aem.live/docs/go-live-checklist). |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
