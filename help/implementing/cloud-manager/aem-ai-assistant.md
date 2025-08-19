@@ -1,5 +1,5 @@
 ---
-title: AI Assistant in Adobe Experience Manager (Beta)
+title: AI Assistant in AEM
 description: Use AI Assistant to help you find answers, and troubleshoot for the solutions that are available in Adobe Experience Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -8,18 +8,20 @@ hide: no
 hidefromtoc: yes
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
 ---
-# AI Assistant in Adobe Experience Manager {#aem-home}
+# AI Assistant in AEMr {#aem-home}
 
 The AEM (Adobe Experience Manager) AI Assistant offers a conversational interface designed to streamline finding answers to your Adobe Experience Manager-related queries. It helps you get instant answers to your AEM product-related questions (*available to all users*), and automate support ticket creation (*available to Support Admins*). 
 
-During the private beta, the AEM AI Assistant supports AEM as a Cloud Service, including the following solutions:
+The AEM AI Assistant supports AEM as a Cloud Service, including the following solutions:
 
+* Experience Hub overview page
+* Edge Delivery Services
 * Sites
 * Assets
-* Dynamic Media
-* Edge Delivery Services
-* Cloud Manager
 * Forms
+* Dynamic Media
+* Cloud Manager
+
 
 It is directly embedded in AEM and accessible from AEM Experience Hub, Cloud Manager, and Author UI.
 
@@ -27,14 +29,20 @@ The following 3-minute, 39-second video delivers a step-by-step walkthrough of t
 
 >[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on) 
 
+## How to get access to AEM AI Assistant
+
+1. [Customers must sign the Gen AI rider with Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1). The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more.
+1. The AEM Admin configures the AEM AI Assistant for use in their organization. See [Configure the AI Assistant in AEM](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
+
+<!--
 >[!IMPORTANT]
 >Be sure you have reviewed and submitted the user agreement so Adobe can enable the AI Assistant feature for you to test out and participate in the private beta program.
 >
->For any questions, send an email to [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) from your email address associated with your Adobe ID. 
+>For any questions, send an email to [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) from your email address associated with your Adobe ID. --> 
 
 ## Scope {#scope}
 
-The current scope of the AEM AI Assistant focuses on addressing product knowledge questions for Adobe Experience Manager as a Cloud Service. This scope includes comprehensive support for key areas, such as Sites, Assets, Forms, Edge Delivery Services, and Cloud Manager.
+The current scope of the AEM AI Assistant focuses on addressing product knowledge questions for AEMr as a Cloud Service. This scope includes comprehensive support for key areas, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager.
 
 * **Surfaces**: Available across AEM Experience Hub, Author UI, Cloud Manager.
 * **Capabilities**: Product‑knowledge and first-stop for troubleshooting and guidance, automated creation of support tickets and lookup.
@@ -108,7 +116,7 @@ For a guided walkthrough of setting up users and groups in AEM as a Cloud Servic
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
 
-### Start or reset a conversation
+### Start or reset an AEM AI Assistant conversation
 
 You can reset the AEM AI Assistant and start a new conversation when you want to change topics. This ability is especially helpful when troubleshooting queries that are failing or providing incorrect information.
 
