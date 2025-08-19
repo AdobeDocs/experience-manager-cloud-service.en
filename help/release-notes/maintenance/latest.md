@@ -10,42 +10,42 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 21977 {#21977}
+## Release 21994 {#21994}
 
-Summarized below are the continuous improvements for maintenance release 21977, which was publicly released on August 19, 2025. The previous maintenance release was release 21772.
+Summarized below are the continuous improvements for maintenance release 21994, which was publicly released on August 19, 2025. The previous maintenance release was release 21772.
 
 The 2025.8.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### New Features  {#new-features-21977}
+### New Features  {#new-features-21994}
 
-None
+None.
 
-### Enhancements {#enhancements-21977}
+### Enhancements {#enhancements-21994}
 
-* GRANITE-60967: Create metrics for tracking clientlib compilation time
-* GRANITE-60714: Mongo Java Driver 5.2
-* GRANITE-60778: Filevault 4.0.0
-* GRANITE-60823: Jackrabbit 2.22.2
-* GRANITE-60663: Apache commons-text 1.14.0
-* GRANITE-60645: Apache commons-ui 2.20.0
-* GRANITE-60637: Apache commons-codec to 1.19.0
-* GRANITE-60306: Apache commons-lang to 3.18.0
-* SKYOPS-84821: Sling engine 2.16.6
-* GRANITE-60183: Apache commons-fileupload 1.6.0
-* SKYOPS-113929: Add metrics for replication ready check
-* GRANITE-53488: Improve deleteconf.json endpoint error handling
-* SKYOPS-105469: Adding support for acsredirectMgr in autofix api
-* GRANITE-59968: Allow to configure REPLICATION_FORCE_READY_MILLIES
+* GRANITE-53488: Improve deleteconf.json endpoint error handling.
+* GRANITE-59968: Allow to configure REPLICATION_FORCE_READY_MILLIES.
+* GRANITE-60183: Apache commons-fileupload 1.6.0.
+* GRANITE-60306: Apache commons-lang to 3.18.0.
+* GRANITE-60637: Apache commons-codec to 1.19.0.
+* GRANITE-60645: Apache commons-ui 2.20.0.
+* GRANITE-60663: Apache commons-text 1.14.0.
+* GRANITE-60714: Mongo Java Driver 5.2.
+* GRANITE-60778: Filevault 4.0.0.
+* GRANITE-60823: Jackrabbit 2.22.2.
+* GRANITE-60967: Create metrics for tracking clientlib compilation time.
+* SKYOPS-105469: Adding support for acsredirectMgr in autofix api.
+* SKYOPS-113929: Add metrics for replication ready check.
+* SKYOPS-84821: Sling engine 2.16.6.
 
-### Fixed Issues {#fixed-issues-21977}
+### Fixed Issues {#fixed-issues-21994}
 
-* SITES-34277: Fix blocking error in translations workflows for pages
-* GRANITE-60167: Async index update in Skyline doesn't support CSV data
-* SKYOPS-105471: Support dambaseredirect fix for aso autofix
-* GRANITE-60532: Modification of value toggles is not picked up
-* SKYOPS-109532: adding feature removed link as comment behind toggle
+* GRANITE-60167: Async index update in Skyline doesn't support CSV data.
+* GRANITE-60532: Modification of value toggles is not picked up.
+* SITES-34277: Fix blocking error in translations workflows for pages.
+* SKYOPS-105471: Support dambaseredirect fix for aso autofix.
+* SKYOPS-109532: adding feature removed link as comment behind toggle.
 
-#### AEM Guides {#guides-21977}
+#### AEM Guides {#guides-21994}
 
 * GUIDES-26688: CSS and Page layout files in Native PDF templates exhibit inconsistent file locking behavior, allowing edits even when the files are locked.
 * GUIDES-30900: Copying a folder with a large number of assets from the Assets UI leads to an API timeout. The operation continues to run in the backend and completes after some time, but no success or failure message, or notification is shown in the UI.
@@ -55,19 +55,19 @@ None
 
 For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
 
-### Known Issues {#known-issues-21977}
+### Known Issues {#known-issues-21994}
 
 * Apache HTTPD version 2.4.65 introduces changes that may affect certain configurations due to new restrictions implemented as part of security fixes. These fixes address vulnerabilities by ensuring that directives such as `RequestHeader set`, `edit`, and `edit_r` used to modify the Content-Type header are now correctly limited to request headers. This change prevents unintended modifications to response headers, particularly for static content.
 
-### Deprecated Features and APIs {#deprecated-21977}
+### Deprecated Features and APIs {#deprecated-21994}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-21977}
+### Security Fixes {#security-21994}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses X identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 2 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-21977}
+### Embedded Technologies {#embedded-tech-21994}
 
 |Technology|Version|Link|
 |---|---|---|
