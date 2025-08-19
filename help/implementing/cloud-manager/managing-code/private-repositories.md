@@ -156,4 +156,4 @@ Validated private repositories can be associated with [full-stack and frontend p
 * [Artifact reuse functionality](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) does not apply to private repositories.
 * You cannot pause the pull request validation using the GitHub check from Cloud Manager.
 If the GitHub repository is validated in Cloud Manager, Cloud Manager always tries to validate the pull requests created for that repository.
-* If the GitHub Organization has IP restrictions, create a support case to receive the list of IP addresses to be allowed.
+* If the GitHub organization has IP restrictions, create a support case to receive the list of IP addresses to be allowed.
