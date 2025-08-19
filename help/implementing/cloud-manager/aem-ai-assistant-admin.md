@@ -1,5 +1,5 @@
 ---
-title: Configure the AI Assistant in Adobe Experience Manager
+title: Configure the AI Assistant in AEM
 description: Learn how to set up and configure the AI Assistant using the Admin Console in Adobe Experience Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -8,9 +8,15 @@ hide: yes
 hidefromtoc: yes
 exl-id: a7f3dc14-29f7-473a-9870-d52393e6fa6e
 ---
-# Configure the AI Assistant in Adobe Experience Manager {#aem-ai-asst-admin-setup}
+# Configure the AI Assistant in AEM {#aem-ai-asst-admin-setup}
 
-An Administrator must configure access, permissions, and settings before users in their organization can use the features in AEM (Adobe Experience Manager) AI Assistant. 
+<!-- An Administrator must configure access, permissions, and settings before users in their organization can use the features in AEM (Adobe Experience Manager) AI Assistant. -->
+
+To use the AEM AI Assistant, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the AI Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
+
+From an employee's perspective, the process is straightforward: identify the product administrator for Adobe Experience Manager in your organization and request to be added to the AI-enabled user group. Once you appear in that group, the Assistant icon shows up automatically the next time you sign in.
+
+Administrators should keep normal Cloud Manager governance in mind. Hold product administrator rights in the Admin Console to create profiles, manage user groups, or edit permissions. If users also need the Assistant's built-in **Create Support Ticket** feature, add the standard **Support Admin** role (standard Admin Console role) to the same individuals or group.
 
 The configuration process of the AEM AI Assistant consists of the following steps:
 
@@ -130,7 +136,7 @@ You can use an existing AEM user group if it meets AI Assistant access requireme
     ![Add users to this user group page](/help/implementing/cloud-manager/assets/ai-assistant-add-users-to-this-group.png)
 
 1. In the lower-right corner of the page, click **Save**.
-1. Now, assign the product profile to the user group](#assign-product-profile).
+1. Now, [assign the product profile to the user group](#assign-product-profile).
 
 >[!TAB Add users in bulk]
 
@@ -138,7 +144,7 @@ You can use the bulk upload feature in the Admin Console.
     
 1. Prepare a CSV file with user information.
 1. Use the **`Add users by CSV`** option for efficient bulk addition.
-1. Now, assign the product profile to the user group](#assign-product-profile).
+1. Now, [assign the product profile to the user group](#assign-product-profile).
 
 >[!ENDTABS]
 
@@ -181,6 +187,7 @@ Have a user from the assigned group do the following:
 
 ## See also 
 
+* [AI Assistant in AEM](/help/implementing/cloud-manager/aem-ai-assistant.md)
 * [Adobe Experience Platform Access Control](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
 * [Cloud Manager Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md)
 
