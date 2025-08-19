@@ -29,10 +29,13 @@ The following 3-minute, 39-second video delivers a step-by-step walkthrough of t
 
 >[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on) 
 
-## How to get access to AEM AI Assistant
+## How to get access to AEM AI Assistant{#get-access}
 
-1. [Customers must sign the Gen AI rider with Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1). The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more.
-1. The AEM Admin configures the AEM AI Assistant for use in their organization. See [Configure the AI Assistant in AEM](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
+1. [Customers must sign the Gen AI rider with Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1). 
+
+    The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more.
+
+1. The AEM Admin configures the AEM AI Assistant for use in their organization. See [Configure the AI Assistant in AEM](/help/implementing/cloud-manager/aem-ai-assistant-admin.md).
 
 <!--
 >[!IMPORTANT]
