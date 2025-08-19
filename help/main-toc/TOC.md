@@ -1195,7 +1195,7 @@ user-guide-title: AEM as a Cloud Service
   + [AI Assistant in AEM - Configuration](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
   + [AI Assistant in AEM (Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
   + [AI Assistant in AEM Forms (Forms Experience Builder)(Early Adopter)](/help/edge/docs/forms/forms-ai-assistant.md)
-  + [AEM Forms AI Assistant - Prompt Library](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+  + [AI Assistant in AEM Forms - Prompt Library](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + Implementing {#implementing}
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
   + Use Cloud Manager {#using-cloud-manager}
