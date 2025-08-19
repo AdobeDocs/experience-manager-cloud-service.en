@@ -99,32 +99,42 @@ All OpenAPI image requests now fully leverage Smart Imaging with auto-promotion 
 
 ### New features in AEM Forms {#forms-new-features}
 
-**Universal Editor for Adaptive Forms and Form Fragments**
+* **Universal Editor for Adaptive Forms and Form Fragments**
 
- The [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) now supports the creation of both Adaptive Forms and reusable Form Fragments. Authors can visually build forms, configure submit actions, and add reCAPTCHA validation, all in a simplified, WYSIWYG authoring environment. This capability accelerates form creation, enhances consistency, and improves protection against spam and automated abuse.
+   The [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) now supports the creation of both Adaptive Forms and reusable Form Fragments. Authors can visually build forms, configure submit actions, and add reCAPTCHA validation, all in a simplified, WYSIWYG authoring environment. This capability accelerates form creation, enhances consistency, and improves protection against spam and automated abuse.
 
-  ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} 
+    ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} 
 
 
-**Forms Submission Service for Edge Delivery Services Forms**
+* **Forms Submission Service for Edge Delivery Services Forms**
 
-The see [Forms Submission Service](/help/forms/forms-submission-service.md). allows you to seamlessly store data from Adaptive Form submissions directly into popular spreadsheet platforms such as Google Sheets, Microsoft OneDrive, or SharePoint. This integration streamlines data management by enabling direct submission of form data to your chosen spreadsheet, eliminating manual data transfer and reducing errors.
+  [Forms Submission Service](/help/forms/forms-submission-service.md) allows you to seamlessly store data from Adaptive Form submissions directly into popular spreadsheet platforms such as Google Sheets, Microsoft OneDrive, or SharePoint. This integration streamlines data management by enabling direct submission of form data to your chosen spreadsheet, eliminating manual data transfer and reducing errors.Key benefits include:
 
-Key benefits include:
+    * **Direct integration:** Configure your forms to submit data directly to a specified spreadsheet.
+    * **Custom data mapping:** Map form fields to corresponding spreadsheet columns for organized storage.
+    * **Access control:** Leverage existing spreadsheet permissions to manage who can access or modify submitted data.
 
-* **Direct integration:** Configure your forms to submit data directly to a specified spreadsheet.
-* **Custom data mapping:** Map form fields to corresponding spreadsheet columns for organized storage.
-* **Access control:** Leverage existing spreadsheet permissions to manage who can access or modify submitted data.
+* **Generate and sync AFP renditions from Adaptive Forms**
 
-**Generate and sync AFP renditions from Adaptive Forms**
+  The [AFP Output Sync API](/help/forms/document-generation-afp-api.md) enables administrators and users to generate AFP (Advanced Function Presentation) output from Adaptive Forms and synchronize the output with external systems or storage locations. AFP is a high-performance document format optimized for printing, often used in large-scale enterprise environments.
 
-The [AFP Output Sync API](/help/forms/document-generation-afp-api.md) enables administrators and users to generate AFP (Advanced Function Presentation) output from Adaptive Forms and synchronize the output with external systems or storage locations. AFP is a high-performance document format optimized for printing, often used in large-scale enterprise environments.
+* **Auto-Mapping Support for Adaptive Form Fragments**
 
-<!-- ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
+  Adaptive Forms now support [automatic mapping of Adaptive Form fragments](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form). With this enhancement, matching fragments are automatically inserted when schema objects align with a defined fragment structure. It simplifies form creation, improves reusability of fragments, and ensures consistency across data-integrated forms.
+
+* **Custom Form Title in Document of Record**
+  
+  Authors can now define a [custom form title in the Document of Record](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record) by editing Custom Form Title. The custom title appears in the PDF header, the PDF's document properties, and as the initial view title when the PDF is opened, ensuring clear identification and consistent branding.
+
+* **Enhanced Error Handling for Restricted File Types**
+  
+  [Error handling for restricted file types](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) is now supported, which blocks unsupported file uploads. When users attempt to submit a file by changing its type to an unsupported format, the form throws an error during submission.
+  
+### Pre-release features in AEM Forms {#forms-new-pre-release-features}
 
 **Enhancements in Rule Editor**
 
-* The `validate` method in the function list now supports validation at the panel, field, and form levels.
+* The `validate` / `reset` method in the function list now supports validation at the panel, field, and form levels.
 * Client-side custom function parsing now supports ES10+ JavaScript features and static imports.
 * The button to download Document of Record (DoR) is now available as an out-of-the-box (OOTB) option in the rule editor.
 * Rules now support the use of dynamic variables.
@@ -133,8 +143,7 @@ The [AFP Output Sync API](/help/forms/document-generation-afp-api.md) enables ad
 * Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
 * Form-specific custom function scripts are now supported for Adaptive Forms in Edge Delivery Services.
 
- --> 
-
+<!--
 ### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 
 The AEM Forms Early Access Program offers a unique opportunity for you to get exclusive access to cutting-edge innovations and help shape their development.
@@ -142,7 +151,7 @@ The AEM Forms Early Access Program offers a unique opportunity for you to get ex
 These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
 
-<!-- **Forms Optimization opportunities**
+**Forms Optimization opportunities**
 
 Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
 
