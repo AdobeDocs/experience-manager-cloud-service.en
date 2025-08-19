@@ -124,8 +124,7 @@ The following table demonstrates the difference between the features available i
    </tr>
    </tr>
   </tbody>
-  <table>
-  </tbody>
+<table>
 
 ## Rule Editor See Also {#see-also-rule-editor}
 
