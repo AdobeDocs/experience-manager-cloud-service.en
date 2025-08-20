@@ -211,6 +211,7 @@ Add the `submitService` property of type string to the `sling:Folder` of your cu
 
 
    ![Submit service property](assets/submit-service-property.png)
+   
 
 <!-- You can't do comments within comments, so I changed comment tags to <start-comment> <end-comment> -->
 

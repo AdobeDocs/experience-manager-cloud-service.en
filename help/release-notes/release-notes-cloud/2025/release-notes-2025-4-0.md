@@ -106,8 +106,8 @@ This release notes lists the innovations delivered in the current release. For t
 ### Enhancements {#enhancements-cif}
 
 * Adding product variant selection for CIF product reference data type
-* **Experimental**: [JSON+LD in CIF Core Components in PDPs](/help/commerce-cloud/customizing/json-ld.md)
-* **Experimental**: [CIF ability to clear cache](/help/commerce-cloud/configuring/clear-cache.md)
+* **Experimental**: [JSON+LD in CIF Core Components in PDPs](/help/commerce-cloud/cif-storefront/customizing/json-ld.md)
+* **Experimental**: [CIF ability to clear cache](/help/commerce-cloud/cif-storefront/configuring/clear-cache.md)
 
 ### Bug fixes {#bug-fixes-cif}
 

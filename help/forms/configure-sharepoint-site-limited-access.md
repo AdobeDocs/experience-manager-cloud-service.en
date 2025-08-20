@@ -1,14 +1,14 @@
 ---
-Title: How to configure a SharePoint Site with limited access using authorization scope?
-Description: Learn how to configure SharePoint Site with limited access using the authorization scope.
+title: How to configure a SharePoint Site with limited access using authorization scope?
+description: Learn how to configure SharePoint Site with limited access using the authorization scope.
 keywords: How to configure SharePoint Site with limited access?, Configure SharePoint with limited access, Using authorization scope to limit access for SharePoint Site.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
 ---
-<span class="preview"> The feature is available under the early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-
 # Configure SharePoint Site with limited access using authorization scope
+
+<span class="preview"> The feature is available under the early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
 The purpose of limited or restricted access is to enhance security management by allowing administrators to control user access to a particular SharePoint Site or a group of SharePoint Sites. The permission level is useful when you need to grant a user or group access to a specific Site without allowing them to view any other non-allowed SharePoint Sites.
 

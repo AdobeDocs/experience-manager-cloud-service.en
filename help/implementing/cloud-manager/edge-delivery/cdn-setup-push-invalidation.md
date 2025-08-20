@@ -21,6 +21,6 @@ The following configuration properties define the production host's name and the
 | `cdn.prod.host` | `<Production Host>`  | Host name of the production site. For example, `www.example.com`. |
 | `cdn.prod.type` | managed |   |
 
-Once changes are made to the configuration sheet, users must preview and activate them using the [Sidekick tool](/help/edge/docs/sidekick.md) to apply the updates.
+Once changes are made to the configuration sheet, users must preview and activate them using the [Sidekick tool](https://www.aem.live/docs/sidekick) to apply the updates.
 
 See also [About the Edge Delivery to-do list in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list).
