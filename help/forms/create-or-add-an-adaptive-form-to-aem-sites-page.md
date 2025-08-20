@@ -70,7 +70,7 @@ Before you start creating or an Adaptive Form, enable Adaptive Forms Core Compon
 
 Ensure that the [Adaptive Forms Core Components are enabled for your AEM Forms as a Cloud Service environment](enable-adaptive-forms-core-components.md). 
 
-###  Add Adaptive Forms Client Libraries to your AEM Sites page or Experience Fragment 
+### Add Adaptive Forms Client Libraries to your AEM Sites page or Experience Fragment 
 
 To enable complete functionality of the Adaptive Forms Container component, add the Customheaderlibs and Customfooterlibs client libraries to your AEM Sites page using the deployment pipeline. To add the libraries:
 
@@ -245,21 +245,5 @@ On submission of a form, you can redirect the user to another webpage or a messa
 
     * To configure a Redirect URL, for on Submit option, select the **[!UICONTROL Redirect to URL]** option, and browse and select an AEM Sites page, or provide URL of an external page.  
     * To configure a custom or thank you message, for on Submit option, select the **[!UICONTROL Show Message]** option, and provide a message in the **[!UICONTROL Message content]** box. It is a rich text box, you can use the full screen option to view all the available rich text items. 
-
-
-<!--
-## See next
-
-* [Create style or themes for your forms](using-themes-in-core-components.md)
-* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
-* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
-
--->
-
-## See Also {#see-also}
-
-{{see-also}}
-* [Add dynamic behavior to forms using the rule editor](rule-editor.md)
-* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 
 

@@ -1,6 +1,7 @@
 ---
 title: Deprecated and Removed Features
 description: Release notes specific to deprecated and removed features in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
@@ -30,7 +31,7 @@ The functionality in the table below have been announced as deprecated, but have
 | ------------ | ------------------ | ----------- |
 | Sites | [Content Fragment Support in Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | [Content Fragment Delivery with OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>together with<br> [Content Fragments and Content Fragment Models Management OpenAPIs](/help/headless/content-fragment-openapis.md) |
 |Sites|[PWA Features](/help/sites-cloud/authoring/sites-console/enable-pwa.md)|None|
-|Sites|[SPA Editor](/help/implementing/developing/hybrid/introduction.md)|The preferred editors for managing headless content in AEM are:<br>- [The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) for visual editing.<br>- [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing.|
+|Sites|[SPA Editor](/help/implementing/developing/hybrid/introduction.md)|The preferred editors for managing headless content in AEM are:<br>- [The Universal Editor](https://www.aem.live/docs/aem-authoring) for visual editing.<br>- [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing.|
 |[!DNL Sites]|[JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api)|[Java Use API](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api)|
 | [!DNL Sites]       | Experience Fragments properties for **Social Media Status**. | The feature is planned for removal soon. |
 |Sites|[Experience Cloud Setup Automation](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)|None|
@@ -447,9 +448,9 @@ Properties for the following OSGi component PIDs are deprecated and usage should
 | **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | all | 6/3/25 | 8/31/25 |
 | **`org.apache.http.proxyconfigurator`** | all | 6/3/25 | 8/31/25 |
 
-### Unmodifiable OSGi properties {#unmodifiable-osgi-properties}
+### Unmodifiable OSGi Configurations {#unmodifiable-osgi-properties}
 
-Properties for the following OSGi component PIDs cannot be modified, as described below.
+Properties for the following OSGi component PIDs cannot be modified, therefore these must not be configured.
 
 | **OSGI component ID**| **Unmodifiable Properties** |
 |---|---|
@@ -469,7 +470,7 @@ Properties for the following OSGi component PIDs cannot be modified, as describe
 
 ### Future enforced OSGi property restrictions {#future-restrictions-osgi-properties}
 
-In the future, Adobe will enforce the following OSGi properties restrictions so usage should stop.
+In the future, Adobe will enforce the following OSGi properties restrictions. For the mentioned PIDs, only the listed properties are allowed to be configured.
 
 | OSGi component PID  |   | Required  | Type  | Restriction (if applies)  |
 |---|---|---|---|---|

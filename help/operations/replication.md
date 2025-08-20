@@ -120,9 +120,8 @@ The workflow processes content in chunks, each of which represents a subset of t
 >
 >This feature is deprecated in favor of the more performant Tree Activation step, which can be included in a custom workflow.  
 
-<details>
-<summary>Click here to learn more about this deprecated feature.</summary>
-   
++++ Click here to learn more about this deprecated feature.
+
 You can trigger a tree replication by choosing **Tools - Workflow - Models** and copying the **Publish Content Tree** out-of-the-box workflow model, as shown below:
 
 ![The Publish Content Tree Workflow Card](/help/operations/assets/publishcontenttreeworkflow.png)
@@ -187,7 +186,8 @@ The following are examples of logs that are generated during a sample publish co
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
-</details>
+
++++
 
 ### Replication API {#replication-api}
 
@@ -265,7 +265,7 @@ The size of the content transmitted per replication call must not exceed `10 MB`
 
 To troubleshoot replication, navigate to the Replication Queues in the AEM Author Service Web UI:
 
-1. From the AEM Start Menu, navigate to **Tools** > **Deployment** > **Distribution**
+1. From the AEM [Global Navigation](/help/sites-cloud/authoring/basic-handling.md#global-navigation), navigate to **Tools** > **Deployment** > **Distribution**
 1. Select the card **publish**
 
    ![Status](assets/publish-status.png "Status")

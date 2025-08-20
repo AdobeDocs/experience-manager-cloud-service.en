@@ -1,73 +1,889 @@
 ---
-title: Adobe's Digital Asset Management (DAM) using AEM 
-description: Understand how to use and administer Adobe's Digital Asset Management (DAM) using Experience Manager Assets as a Cloud Service.
-contentOwner: AK
-feature: Asset Management
-role: User, Leader, Architect
+title: Introducing Assets as a Cloud Service for Digital Asset Management in AEM
+description: Introducing Assets as a Cloud Service for Digital Asset Management in AEM
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 ---
+# Introducing Assets as a Cloud Service for Digital Asset Management in AEM {#assets-as-cloud-service-digital-asset-management-aem}
 
-# Introducing Assets as a [!DNL Cloud Service] for Digital Asset Management in AEM {#assets-cloud-service-introduction}
+Adobe Experience Manager Assets as a Cloud Service offers a cloud-native, PaaS solution for businesses to not only perform their Digital Asset Management and Dynamic Media operations with speed and impact, but also use next-generation smart capabilities, such as AI/ML, from within a system that is always current, always available, and always learning.
 
-<!-- Need review information from gklebus -->
+Adobe offers robust Digital Asset Management (DAM) solutions for you to get the most out of your digital assets. Adobe Experience Manager Assets has two separate experiences that use the same Cloud Services repository to fit your requirements. For information on persona-based experiences for AEM Assets, see [Available persona-based experiences for Digital Asset Management](#persona-based-experiences).
+
+For information on AEM Assets Ultimate and AEM Assets Prime offerings, see [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md) and [Assets as a Cloud Service Prime](/help/assets/assets-prime.md).
+
+Some of the key features of Adobe's Digital Asset Management include:
+
+![add-tags](assets/aem-assets-features-landing-page.png)
+
+
+>[!BEGINTABS]
+
+>[!TAB Asset Ingestion]
+
+## Asset ingestion {#asset-ingestion}
+
+Use the bulk import feature to import large number of assets directly from a data source, such as Azure, AWS, Google Cloud, Dropbox, and OneDrive, to Assets as a Cloud Service.
+
+You can perform the bulk import operation using Admin view or Assets view. Assets view provides more data source options as compared to Admin view.
+
+In addition to web browser user interface, Experience Manager supports other clients on desktop. They also provide upload experience without the need to go to the web browser.
+
+* Adobe Asset Link provides access to assets from Experience Manager in Adobe Photoshop, Adobe Illustrator, and Adobe InDesign desktop applications. You can upload the currently open document into Experience Manager directly from Adobe Asset Link user interface from within these desktop applications.
+
+* Experience Manager desktop app simplifies working with assets on desktop, independent on their file type or native application that handles them. It is useful to upload files in nested folder hierarchies from your local file system, as browser upload only supports uploading flat file lists.
+
+Use these links to access detailed documentation on these asset ingestion tools:
 
 <table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
-        </td>
-    </tr>
+<td>
+   <a href="/help/assets/bulk-import-assets-view.md">
+   <img alt="Bulk Import tool" src="./assets/bulk-images.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/bulk-import-assets-view.md">
+      <strong>Use Bulk Import tool</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to import large number of assets directly from a data source</em>
+   </p>
+</td>
+
+
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
+   <img alt="Use AEM desktop app" src="./assets/desktop-app-upload.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using">
+      <strong>Use AEM desktop app</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to use AEM desktop app to upload files in nested folder hierarchies from your local file system.</em>
+   </p>
+</td>
+<td>
+   <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
+   <img alt="Use Adobe Asset Link" src="./assets/adobe-asset-link.jpeg" />
+   </a>
+   <div>
+      <a href="https://helpx.adobe.com/enterprise/using/adobe-asset-link.html">
+      <strong>Use Adobe Asset Link</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to upload assets to Experience Manager using Creative Cloud applications.</em>
+   </p>
+</td>
 </table>
 
-Adobe Experience Manager Assets as a [!DNL Cloud Service] offers a cloud-native, PaaS solution for businesses to not only perform their Digital Asset Management and Dynamic Media operations with speed and impact, but also use next-generation smart capabilities, such as AI/ML, from within a system that is always current, always available, and always learning.
+>[!TAB AI-Powered features]
 
-Concurrent ingestion of many assets or complex assets is resource-intensive task for an Experience Manager Author instance. The primary instance consumes considerable CPU, memory, and I/O resources when assets are added, processed, or even migrated. Such performance issues impact authoring and browsing experience of end users.
+**Smart Tags**: Smart Tags use the artificially intelligent framework of Adobe Sensei to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. AEM automatically applies smart tags to uploaded assets, by default.
 
-Businesses require support for a wide variety of file formats and content resolutions for multi-device, cross-geography, and multilingual use cases. Asset processing and storage requirements demand resources and capabilities that can overburden a traditional solution. At times, technical limitations of asset processing do not yield the desired results and at other times the cost of storage is an impediment for profit margins.
+**Intelligent Color-based Tagging & Search**: AEM Assets uses Adobe Sensei AI capabilities to distinguish between colors in an image and apply those as tags automatically on ingestion. These tags enable an enhanced Search experience, based on image color composition.
 
-To begin with, understand the [benefits of a cloud-native offering](#solution-benefits) for Digital Asset Management. Check out the notable [changes to Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) that also impact Experience Manager Assets followed up the notable [changes to Assets](/help/assets/assets-cloud-changes.md).
+**AI-generated metadata**: AEM Assets uses AI to automatically generate metadata, including Title, Description, and Keywords. These AI-generated fields enhance metadata accuracy, making the assets easier to search, categorize, and recommend. This approach not only improves efficiency by eliminating manual tagging but also ensures consistency and scalability across large volumes of digital content.
 
-Read on to know the [details of the new Assets capabilities](#whats-new-assets) and the [known issues](/help/release-notes/maintenance/latest.md). See a list of [deprecated or removed functionality](/help/release-notes/deprecated-removed-features.md) to know what is removed in this release. Finally, understand the Experience Manager terms with the help of this [glossary](/help/overview/terminology.md).
+**AI-powered assets bulk rename**: [Assets view allows you to rename multiple assets at once using Artificial Intelligence](/help/assets/bulk-rename-assets-view.md). You can select multiple files at once and rename them all together. Some of the example conversational rename prompts include *Change all files to 'my-file' and append an incrementing number* and *Prefix the files with 001, 002, etc. and translate into English*.
 
-## Solution benefits {#solution-benefits}
+<table>
+<td>
+   <a href="/help/assets/smart-tags.md">
+   <img alt="Smart Tags in AEM Assets" src="./assets/smart-tags-ai.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/smart-tags.md">
+      <strong>Add AI Smart Tags to assets</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to automatically apply smart tags to uploaded assets.</em>
+   </p>
+</td>
 
-The following are the key benefits of Assets as a [!DNL Cloud Service] for Digital Asset Management. To know more, see [overview of Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md).
 
-* **Modern cloud services for asset processing**: The new asset microservices is a cloud-based, scalable, reliable, and hassle-free asset processing service.
-* **Highly scalable**: Elastic scalability across all types of deployments. Practically unlimited resources that are available on-demand, as and when needed. Saves the cost of over-design as compared to a traditional system.
-* **Latest software**: Always current and always updated. All users have only the latest software with all patches, features, security, and bug fixes available to them. Developers and integrator work with the latest set of APIs without issues of multi-version support.
-* **Always online**: Zero downtime (0dt), thanks to the instance deployed in a cluster with backups and redundancy. Upgrades are 0dt as well.
-* **Constant monitoring**: The monitoring of the system is automated and built-in checks and triggers help maintain the performance, availability, and overall robustness.
-* **Hassle-free deployments**: Experience Manager in the Cloud operations are completely automated that require no manual intervention. For automated deployments, the Cloud Manager (CM) component automates the build of deployable Docker images containing your custom code.
+<td>
+   <a href="/help/assets/color-tag-images.md">
+   <img alt="Add Intelligent color-based tags" src="./assets/color-tags.jpg" />
+   </a>
+   <div>
+      <a href="/help/assets/manage-notifications-assets-view.md">
+      <strong>Add Intelligent color-based tags</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to apply color-based tags automatically on ingestion.</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/metadata-assets-view.md">
+   <img alt="AI-generated metadata" src="./assets/ai-generated-metadata-landing.jpg" />
+   </a>
+   <div>
+      <a href="/help/assets/metadata-assets-view.md">
+      <strong>AI-generated metadata</strong>
+      </a>
+   </div>
+   <p>
+      <em>Use AI to generate asset metadata, such as Title and Description. </em>
+   </p>
+</td>
+</table>
+
+**Contextual Search**: AEM Assets allows you to search assets available in the repository by defining text prompts. Experience Manager Assets automatically transforms those text prompts to search filters and displays the search results. You can view and modify automatic filters using the Filters Pane to further narrow down the search results. Some of the conversational text prompt examples include *Images at least 200px tall and 100px wide with beach and clear sky* and *I need images of blue sky that are 1500 and 2500 pixel height and created in the past month that are not expired and are approved*.
+
+**Generate assets using Adobe Firefly within AEM**: AEM Assets allows you to generate an asset, if your search query does not return any results, using Adobe Firefly in real-time. AEM Assets also then enables you to upload the generated image to the AEM Assets repository from within AEM Assets User Interface.
+
+**Integration with Adobe Express**: AEM Assets integrates natively with Adobe Express, which allows you to directly access the assets stored in AEM Assets from within the Adobe Express user interface. You can also use Adobe Firefly Artifical Intelligence within Express to generate images using simple text prompts and place them on Express canvas. You can then save new or edited content in an AEM Assets repository.
+
+<table>
+<td>
+   <a href="/help/assets/search-assets-view.md#contextual-search">
+   <img alt="Contextual Search" src="./assets/ai-based-search.jpg" />
+   </a>
+   <div>
+      <a href="/help/assets/search-assets-view.md#contextual-search">
+      <strong>Contextual Search</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to search assets using simple text prompts.</em>
+   </p>
+</td>
+
+
+<td>
+   <a href="/help/assets/search-assets-view.md#search-firefly">
+   <img alt="Generate assets using Adobe Firefly" src="./assets/adobe-firefly.jpg" />
+   </a>
+   <div>
+      <a href="/help/assets/search-assets-view.md#search-firefly">
+      <strong>Generate assets using Adobe Firefly</strong>
+      </a>
+   </div>
+   <p>
+      <em>Generate assets in real-time using Adobe Firefly.</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/native-integration-adobe-express.md">
+   <img alt="Integration with Adobe Express" src="./assets/content-hub-express.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/native-integration-adobe-express.md">
+      <strong>Integration with Adobe Express</strong>
+      </a>
+   </div>
+   <p>
+      <em>Use Adobe Express AI features within AEM Assets User Interface.</em>
+   </p>
+</td>
+</table>
+
+**Smart Imaging**: Smart Imaging provides even better image asset delivery performance by automatically optimizing an image's format and file size based on a customer's browser capability. It works with your existing image presets and uses intelligence at delivery. This intelligence further reduces image file size based on browser and network connection speed.
+
+**Smart Crop**: An Adobe Sensei AI capability, to automatically detect the focal point in any image or video, and crop to maintain it. It captures the intended point of interest regardless of screen size and hence eliminates tedious manual tasks and delivers high-quality, fast-loading imagery and video that looks good on any device or screen.
+
+**AI-generated video captions**: AI-generated video captions in Adobe Dynamic Media use artificial intelligence to generate captions automatically for video content. This feature is designed to improve accessibility and enhance the user experience by providing accurate captions. Captions are generated from the original audio, any additional audio tracks, or extra captions are provided in the `Captions and Audio` tab on the video properties page. With support for more than 60 languages, captions can be reviewed and previewed before publishing the video.
+<table>
+<td>
+   <a href="/help/assets/dynamic-media/imaging-faq.md">
+   <img alt="Smart Imaging" src="./assets/smart-imaging.jpg" />
+   </a>
+   <div>
+      <a href="/help/assets/dynamic-media/imaging-faq.md">
+      <strong>Smart Imaging</strong>
+      </a>
+   </div>
+   <p>
+      <em>Optimize an image's format and file size based on a user's browser capability and network speed.</em>
+   </p>
+</td>
+
+
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html">
+   <img alt="Smart Crop" src="./assets/smart-cropping.jpg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html">
+      <strong>Smart Crop</strong>
+      </a>
+   </div>
+   <p>
+      <em>Use AI to automatically detect the focal point in any image or video, and crop to maintain it</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/dynamic-media/video.md">
+   <img alt="AI-generated video captions" src="./assets/videos-with-captions.jpg" />
+   </a>
+   <div>
+      <a href="/help/assets/dynamic-media/video.md">
+      <strong>AI-generated video captions</strong>
+      </a>
+   </div>
+   <p>
+      <em>Use Artificial Intelligence to generate captions automatically for video content. </em>
+   </p>
+</td>
+</table>
+
+>[!TAB Asset Discovery]
+
+## Asset discovery {#asset-discovery}
+
+After importing your assets to AEM Assets, it is a challenge is to find right assets quickly from such a huge collection.
+
+AEM Assets provides features that facilitate you get to the right asset in no time such as AI-generated tagging (smart tags), customized metadata, and capabilities that boost the search experience for you.
+
+**Metadata management**: Metadata is the most critical aspect while starting your asset management journey. Managing metadata gets completely out of the control of the administrators once the assets are distributed to the users. Effective asset metadata ensures better search, which is the ultimate destination for any DAM tool.
+
+
+**Metadata Forms**: Assets as a Cloud Service provides many standard metadata fields by default. If you have additional metadata needs and need more metadata fields to add business-specific metadata. Metadata forms let businesses add custom metadata fields to an asset's Details page. The business-specific metadata improves the governance and discovery of its assets. You can create forms from scratch or repurpose an existing form.
+
+<table>
+<td>
+   <a href="/help/assets/metadata-assets-view.md">
+   <img alt="Manage metadata Assets view" src="./assets/manage-metadata-assets-view.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/metadata-assets-view.md">
+      <strong>Manage Metadata in Assets view</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to manage metadata and metadata forms using Assets view.</em>
+   </p>
+</td>
+
+
+<td>
+   <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+   <img alt="Metadata management best practices" src="./assets/metadata-best-practices.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-blogs/how-to-manage-metadata-before-and-after-migrating-to-aem-assets/ba-p/744298">
+      <strong>Metadata management best practices</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to manage metadata before and after migrating your assets to AEM.</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/manage-metadata.md">
+   <img alt="Use Adobe Asset Link" src="./assets/metadata-management-admin-view.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/manage-metadata.md">
+      <strong>Manage metadata in Admin view</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to manage metadata and metadata forms using Admin view.</em>
+   </p>
+</td>
+</table>
+
+**Smart Tags**: Smart Tags use the artificially intelligent framework of Adobe Sensei to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. AEM automatically applies smart tags to uploaded assets, by default.
+
+**Search assets**: Once you have the right metadata in place, AEM Assets allows you to search using various operators, wildcards, advanced queries, and custom filters.
+
+**Contextual Search**: AEM Assets also provides the Contextual Search capability, which enables you to search assets available in the repository by defining text prompts. Experience Manager Assets automatically transforms those text prompts to search filters and displays the search results. You can view and modify automatic filters using the Filters Pane to further narrow down the search results.
+
+<table>
+<td>
+   <a href="/help/assets/smart-tags.md">
+   <img alt="Smart Tags in AEM Assets" src="./assets/smart-tags-ai.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/smart-tags.md">
+      <strong>Add Smart Tags to assets</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to automatically apply smart tags to uploaded assets.</em>
+   </p>
+</td>
+
+
+<td>
+   <a href="/help/assets/search-assets-view.md">
+   <img alt="Search Assets View" src="./assets/search-assets-view-landing.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/search-assets-view.md">
+      <strong>Search assets in Assets view</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to effectively use Contextual Search and other search capabilities in Assets view.</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/search-best-practices.md">
+   <img alt="Search best practices" src="./assets/search-best-practices.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/search-best-practices.md">
+      <strong>Search best practices</strong>
+      </a>
+   </div>
+   <p>
+      <em>Describes various scenarios to assist AEM users to perform basic to advanced level search.</em>
+   </p>
+</td>
+</table>
+
+>[!TAB Asset Governance]
+
+## Asset management and governance {#asset-management-governance}
+
+Once you have uploaded your assets to AEM Assets and set its metadata for better discoverability, you can perform various digital asset management tasks using the user-friendly interface of Assets view. 
+
+**Asset Management Tasks**: Some of the basic tasks include search, download, move, copy, rename, delete, update, and edit operations.
+
+You can also maintain asset versions, set asset status, and set asset expiration.
+
+**My Workspace**: Assets view also includes a customizable workspace that provides widgets for convenient access to key areas of the Assets user interface and information that is most relevant to you. This page serves as a one-stop solution to provide an overview of your work items and to give quick access to key workflows.
+
+**Content Credentials**: Another powerful feature that AEM Assets supports is Content Credentials. Brands are more concerned than ever about content transparency, AI disclosure, and preventing the tampering of assets. The Content Authenticity Initiative (CAI) at Adobe builds tools compliant with the Coalition for Content Provenance and Authenticity (C2PA) technical standard. Content Credentials, which are a new kind of encrypted, tamper-evident metadata can help viewers understand the lineage of content and ensure the integrity of brand assets. They can include a wide range of provenance data that offer insight into the history of a digital asset.
+
+<table>
+<td>
+   <a href="/help/assets/manage-organize-assets-view.md">
+   <img alt="Asset manageement tasks" src="./assets/asset-management.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/manage-organize-assets-view.md">
+      <strong>Asset management tasks</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to perform some basic as well as advanced asset management tasks.</em>
+   </p>
+</td>
+
+
+<td>
+   <a href="/help/assets/my-workspace-assets-view.md">
+   <img alt="Mt Workspace" src="./assets/my-workspace.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/my-workspace-assets-view.md">
+      <strong>My Workspace</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to work with My Workspace to quickly access key areas of Assets User Interface.</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/content-credentials.md">
+   <img alt="Content Credentials" src="./assets/content-credentials.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/content-credentials.md">
+      <strong>Content Credentials</strong>
+      </a>
+   </div>
+   <p>
+      <em>Gain insights on the history of a digital asset using Content Credentials.</em>
+   </p>
+</td>
+</table>
+
+**Collections**: AEM Assets also enables you to organize your assets into collections. A collection is a set of assets, folders, or other collections within Adobe Experience Manager Assets view. Use collections to share assets between users. Unlike folders, a collection can include assets from different locations. You can share multiple collections with a user. Each collection contains references to assets. The referential integrity of assets is maintained across collections.
+
+**Notifications**: Assets view notifications enable you to monitor the operations performed on the assets, folders, or collections available in the repository. You need to select and subscribe to the content for which the notifications are sent to you. You can also configure the categories for which the notifications are sent to you.
+
+**Detect duplicate assets**: AEM Assets also supports detecting duplicate assets. If a DAM user uploads one or more assets that already exist in the repository, Experience Manager detects the duplication and notifies the user.
+
+
+
+<table>
+<td>
+   <a href="/help/assets/manage-collections-assets-view.md">
+   <img alt="Manage Collections" src="./assets/manage-collections.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/manage-collections-assets-view.md">
+      <strong>Manage Collections</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to organize your assets into collections for efficient sharing of assets.</em>
+   </p>
+</td>
+
+
+<td>
+   <a href="/help/assets/manage-notifications-assets-view.md">
+   <img alt="Set Notifications" src="./assets/manage-notifications.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/manage-notifications-assets-view.md">
+      <strong>Set Notifications</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to set notifications to monitor the operations performed on assets, folders, or collections.</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/detect-duplicate-assets.md">
+   <img alt="Detect duplicate assets" src="./assets/duplicate-assets.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/detect-duplicate-assets.md">
+      <strong>Detect duplicate assets</strong>
+      </a>
+   </div>
+   <p>
+      <em>Detect duplicate assets uploaded to AEM Assets and notify to users.</em>
+   </p>
+</td>
+</table>
+
+>[!TAB Integrations]
+
+## Integration with Adobe and non-Adobe applications {#integration-adobe-non-adode-apps}
+
+AEM Assets can integrate seamlessly with various Adobe and non-Adobe applications. The following is a summarized view of the available integrations:
+
++++**Integration with Adobe and non-Adobe applications**
+
+* **Dynamic Media with OpenAPI capabilities**: [Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md) offers a comprehensive set of [search](/help/assets/search-assets-api.md) and [delivery](/help/assets/deliver-assets-apis.md) APIs. It allows your developers to easily integrate delivery of assets with their applications. The applications include Adobe as well as third-party applications. It provides a Micro Frontend assets selector user interface to search and select approved assets. The selector can be effortlessly integrated with any application based on JavaScript frameworks such as React JS, Angular JS, and Vanilla JS.
+
+* **Micro-Frontend Asset Selector**: Micro-Frontend Asset Selector provides a user interface that easily integrates with the Experience Manager Assets repository so that you can browse or search digital assets available in the repository and use them in your application authoring experience.
+You can integrate Asset Selector with an Adobe or a non-Adobe application.
+
+<table>
+<td>
+   <a href="/help/assets/dynamic-media-open-apis-overview.md">
+   <img alt="Dynamic Media with OpenAPI capabilities overview" src="./assets/dm-openapi-uses.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/dynamic-media-open-apis-overview.md">
+      <strong>Dynamic Media with OpenAPI capabilities overview</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn key benefits and how to enable get it enabled. </em>
+   </p>
+</td>
+
+
+<td>
+   <a href="/help/assets/restrict-assets-delivery.md">
+   <img alt="Restrict access to assets in Experience Manager" src="./assets/restrict-assets.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/restrict-assets-delivery.md">
+      <strong>Restrict access to assets in Experience Manager</strong>
+      </a>
+   </div>
+   <p>
+      <em> Configure roles to restrict access to approved assets.</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/overview-asset-selector.md">
+   <img alt="Asset Selector" src="./assets/integration-asset-selector.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/overview-asset-selector.md">
+      <strong>Micro-Frontend Asset Selector</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to integrate Micro-Frontend Asset Selector with an Adobe or a non-Adobe application.</em>
+   </p>
+</td>
+</table>
+
++++
+
++++**Native integration with Adobe applications**
+
+* **Integration with Adobe Workfront**: [!DNL Adobe Workfront] is a work management application that helps you manage the entire lifecycle of work in one place. The integration between [!DNL Workfront] and [!DNL Adobe Experience Manager Assets] lets organizations improve content velocity and time-to-market by intrinsically connecting work and digital asset management. Within the context of managing their work in Workfront, users have access to the required documents and images.
+
+   Adobe offers to [integrate [!DNL Workfront] and [!DNL Adobe Experience Manager Assets] natively ](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html).
+
+* **Integration with Figma**: AEM Assets integrates natively with Figma, which allows designers to directly access the assets stored in AEM Assets from within the Figma User Interface. You can place content managed in AEM Assets in the Figma canvas and then save new or edited content in AEM Assets repository. To access the AEM Assets Connector available on the Figma Community page, click [here](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector).
+
+* **Native integration with Adobe Express**: AEM Assets integrates natively with Adobe Express, which allows you to directly access the assets stored in AEM Assets from within the Adobe Express user interface. You can place content managed in AEM Assets in the Express canvas and then save new or edited content in an AEM Assets repository.
+
+* **Connect AEM Assets to Creative Cloud**: Experience Manager Assets has the ability to connect to a Creative Cloud entitlement that is provisioned to a different IMS organization to easily use the latest Creative Cloud integrations in AEM Assets, including Express and Creative Cloud Libraries. If your Creative Cloud products and AEM Assets are provisioned to separate IMS organizations, you can connect to a different Creative Cloud organization to be able to execute integrated workflows between the two solutions.
+
+<table>
+<td>
+   <a href="/help/assets/workfront-integrations.md">
+   <img alt="Integration with Adobe Workfront" src="./assets/integration-adobe-workfront.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/workfront-integrations.md">
+      <strong>Integration with Adobe Workfront</strong>
+      </a>
+   </div>
+   <p>
+      <em>Integrate with Adobe Workfront to manage the entire work lifecycle at one place.</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/manage-collections-assets-view.md">
+   <img alt="Integration with Figma" src="./assets/integration-commerce.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/manage-collections-assets-view.md">
+      <strong>Integration with Figma</strong>
+      </a>
+   </div>
+   <p>
+      <em>Access the assets stored in AEM Assets from within the Figma User Interface</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/native-integration-adobe-express.md">
+   <img alt="Native integration with Adobe Express" src="./assets/integration-adobe-express.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/native-integration-adobe-express.md">
+      <strong>Native integration with Adobe Express</strong>
+      </a>
+   </div>
+   <p>
+      <em>Place assets available within AEM Assets on the Express canvas and save updated assets to AEM. </em>
+   </p>
+</td>
+
+
+</table>
+
+
+* **Integration with Adobe Journey Optimizer**: Bring marketing and creative workflows together using Adobe Experience Manager Assets. Natively integrated with Adobe Journey Optimizer, access Assets as a Cloud Service to store, manage, discover and distribute digital assets. It provides a single, centralized repository of assets that you can use to populate your messages.
+
+* **Integration with Commerce**: Adobe Experience Manager (AEM) Assets Integration for Commerce combines the robust capabilities of AEM as a Digital Asset Management (DAM) system with Adobe Commerce to enhance eCommerce experiences. These capabilities are delivered by connecting Commerce projects to AEM's powerful asset management environment to provide a seamless, scalable, and efficient way to manage and deliver assets across commerce storefronts.
+* **Integrating AEM Assets with Document-Based Authoring flows for Edge Delivery Services**: When [!DNL AEM Assets] integrates with your Document-Based Authoring tools, such as [!DNL Microsoft Word] or [!DNL Google Docs], it provides an asset selector in your authoring tool. Use this asset selector to access [!DNL AEM Assets], and insert approved assets into your content.
+If you already have an [!DNL Edge Delivery Services] website, see [[!DNL AEM Assets] plugin](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) documentation to learn how to integrate [!DNL AEM Assets] with your existing [!DNL AEM] project.
+
+* **Integrating [!DNL AEM Assets] with [!DNL Universal Editor] based authoring flows for [!DNL Edge Delivery Services]**: Set up the [!DNL Universal Editor] to integrate with [!DNL AEM Assets]. This integration enables you to use [!DNL Dynamic Media with OpenAPI capabilities] to deliver assets.
+
+   * See [Configuration in [!DNL Edge Delivery] Site](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) to learn how to add a custom asset picker function in [!DNL Universal Editor]. The custom asset picker enables you to insert assets into your [!DNL Universal Editor] content directly.
+   * See [Extension overview](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) to learn how to access to [!DNL AEM Assets] and insert the assets while authoring in [!DNL Universal Editor].
+
+<table>
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
+   <img alt="Integration with Adobe Journey Optimizer" src="./assets/integration-figma.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/assets">
+      <strong>Integration with Adobe Journey Optimizer</strong>
+      </a>
+   </div>
+   <p>
+      <em>Bring marketing and creative workflows together using integration with AJO</em>
+   </p>
+</td>
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+   <img alt="Integration with Commerce" src="./assets/integration-ajo.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">
+      <strong>Integration with Commerce</strong>
+      </a>
+   </div>
+   <p>
+      <em>Integrate AEM Assets with Commerce to enhance eCommerce experiences.</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md">
+   <img alt="Integrate AEM Assets with EDS" src="./assets/integrate-ue-assets.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md">
+      <strong>Integrate AEM Assets with EDS</strong>
+      </a>
+   </div>
+   <p>
+      <em>Integrate AEM Assets with document-based and Universal Editor based authoring flows.</em>
+   </p>
+</td>
+</table>
+
++++
+
+>[!TAB Asset Activation]
+
+## Asset activation {#asset-activation}
+
+Unlock the full potential of your digital assets with AEM Assets using Content Hub to Dynamic Media—including powerful OpenAPI capabilities. AEM Assets offers a comprehensive suite of solutions designed to streamline asset transformation and optimize delivery across various channels.
+
++++**Content Hub**
+
+Content Hub is available as part of Experience Manager Assets as a Cloud Service for democratizing access to on-brand content for organizations and their business partners. It focuses on distributing assets for activation at scale and creation of on-brand content variants for improved marketing agility.
+
+Content Hub offers the following key benefits:
+
+* **Find and share all brand approved assets available in an intuitive portal**: AEM Assets serves as a single source of truth and all approved assets are automatically available on Content Hub in a flat hierarchy to improve the search experience.
+
+* **Configurable User interface**: The most common properties within Content Hub, such as filters for search, fields available while adding or importing assets, asset properties, banner content for branding are configurable and an administrator can easily configure the Content Hub user interface based on their requirements.   
+
+* **Empower non-creatives to edit and remix content while staying on brand**: Content Hub allows you to create new content with Adobe Express (if you have Adobe Express entitlements). You can edit existing content with easy to use tools, produce on-brand variations with templates and brand elements, and create new content with the latest GenAI capabilities from Adobe Firefly.
+
+* **Gain insights on how content is used across teams**: [!DNL Content Hub] provides valuable insights into assets, addressing a common challenge that marketing stakeholders often encounter - asset usage statistics used in marketing campaigns, channels, and different regions. By gaining a clear understanding of the performance and popularity of the assets, it delivers actionable insights essential for enhancing user experience.
+
+<table>
+<td>
+   <a href="/help/assets/product-overview.md">
+   <img alt="Content Hub Overview" src="./assets/content-hub-overview.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/product-overview.md">
+      <strong>Content Hub Overview</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn more about Content Hub, its key benefits, and how to access it. </em>
+   </p>
+</td>
+
+
+<td>
+   <a href="/help/assets/configure-content-hub-ui-options.md">
+   <img alt="Configure Content Hub User Interface" src="./assets/content-hub-configuration.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/configure-content-hub-ui-options.md">
+      <strong>Configure Content Hub User Interface</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to configure options available on Content Hub  User Interface .</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/edit-images-content-hub.md">
+   <img alt="Edit using Adobe Express" src="./assets/content-hub-express.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/edit-images-content-hub.md">
+      <strong>Edit using Adobe Express</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to edit images in Content Hub using Adobe Express.</em>
+   </p>
+</td>
+</table>
+
++++
+
++++**Dynamic Media**
+
+Dynamic Media helps you deliver rich visual merchandising and marketing assets on demand. It also helps you create and serve interactive viewing experiences, including zoom, 360-degree spin, and video. Your assets are dynamically scaled for consumption on web, mobile, and social sites. Using a set of primary source assets – such as images, video, and 3D – Dynamic Media generates and delivers multiple variations of this rich content, in real time through its global, scalable, performance-optimized CDN (Content Delivery Network).
+
+Dynamic Media offers the following key features:
+
+* **Smart Imaging**: Smart Imaging provides even better image asset delivery performance by automatically optimizing an image's format and file size based on a customer's browser capability. It works with your existing image presets and uses intelligence at delivery. This intelligence further reduces image file size based on browser and network connection speed. 
+
+* **Adaptive video sets**: An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats. You start with your original, primary video, which you upload into the system. Dynamic Media automatically sizes, or transcodes, that video into multiple videos. Then, at the time of delivery, it intelligently determines which video screen, what quality, and what format to use, and delivers it to either the phone, tablet, or desktop computer.
+
+* **Smart Crop**: An Adobe Sensei AI capability, to automatically detect the focal point in any image or video, and crop to maintain it. It captures the intended point of interest regardless of screen size and hence eliminates tedious manual tasks and delivers high-quality, fast-loading imagery and video that looks good on any device or screen.
+
+* **Dynamic Media templates**: Create real time customizable templates for your banners and flyers using Dynamic Media templates, a WYSIWYG template editor. Publish your Dynamic Media template and use it in downstream applications. A Dynamic Media template includes image and text layers. Add parameters to the image and text layers of the template and use Dynamic Media URLs to reposition and resize the layer and update its content in real-time.
+
+* **Multi-audio and caption**: Add multiple captions and multiple audio tracks to a primary video. This capability means that your videos are accessible to a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the captions and audio tracks from a single tab in the user interface.
+
+* **Dynamic Adaptive Streaming over HTTP (DASH) support**: Dynamic Media supports Adaptive streaming in Dynamic Media video delivery (with CMAF enabled), which ensures better user viewing experience for videos. DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry.
+
+* **AI-generated video captions**: AI-generated video captions in Adobe Dynamic Media use artificial intelligence to generate captions automatically for video content. With support for more than 60 languages, captions can be reviewed and previewed before publishing the video.
+
+For information on available Dynamic Media offerings, see [Dynamic Media Prime and Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md).
+
+
+
+<table>
+<td>
+   <a href="/help/assets/dynamic-media/dynamic-media.md">
+   <img alt="Work with Dynamic Media" src="./assets/work-with-dynamic-media.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/dynamic-media/dynamic-media.md">
+      <strong>Work with Dynamic Media</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to deliver assets for consumption on web, mobile, and social sites. </em>
+   </p>
+</td>
+
+
+<td>
+   <a href="/help/assets/dynamic-media/dm-journey-part1.md">
+   <img alt="Dynamic Media Journey" src="./assets/dm-journey.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/dynamic-media/dm-journey-part1.md">
+      <strong>Dynamic Media Journey</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how Dynamic Media brings value to your work.</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/dynamic-media/dm-best-practices.md">
+   <img alt="Connect AEM Assets to Creative Cloud" src="./assets/dm-best-practices.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/dynamic-media/dm-best-practices.md">
+      <strong>Dynamic Media best practices</strong>
+      </a>
+   </div>
+   <p>
+      <em>Best practices while working with images, videos, and viewers.</em>
+   </p>
+</td>
+</table>
+
++++
+
++++**Dynamic Media with OpenAPI capabilities**
+
+In today's fast-paced digital world, unlocking the full potential of your brand's digital assets is crucial for staying ahead of the competition. A holistic Digital Assets Management (DAM) solution facilitates assets governance, promotes brand consistency, and accelerates content delivery while ensuring brand integrity, and exceptional customer experiences.
+
+Dynamic Media with OpenAPI capabilities puts DAM at the core of an agile and efficient content supply chain ecosystem to ensure asset governance and delivery.
+
+Dynamic Media with OpenAPI capabilities offers the following key benefits:
+
+* **Seamless integrations**: Dynamic Media with OpenAPI capabilities offers a comprehensive set of search and delivery APIs. It allows your developers to easily [integrate delivery of assets with their applications](/help/assets/integrate-dynamic-media-open-apis.md). The applications include Adobe as well as third-party applications. It provides a [Micro Frontend assets selector user interface](/help/assets/overview-asset-selector.md) to search and select approved assets. The selector can be effortlessly integrated with any application based on JavaScript frameworks such as React JS, Angular JS, and Vanilla JS.
+
+* **Centralized management of digital assets**: DAM is the single source of truth for all digital assets. Your digital assets are managed centrally in AEM Assets and delivered to consuming applications by reference using delivery URLs, without copying asset binaries. 
+
+* **Real-time updates**: Any changes made to approved assets in DAM, including version updates and metadata modifications, are automatically reflected in the delivery URLs. With a short Time-to-Live (TTL) value of 10 minutes configured for Dynamic Media with OpenAPI capabilities via CDN, updates become visible across all authoring and published interfaces in under 10 minutes. 
+
+* **Brand consistency**: Only [brand-approved assets](/help/assets/approve-assets.md) are exposed to downstream applications. [Brand Managers and Marketers maintain strict control over brand assets](/help/assets/restrict-assets-delivery.md). Only approved and latest version of the asset is available for use, ensuring brand consistency across all channels and applications.
+
+* **Web-optimized delivery**: Digital assets are delivered in web-optimized formats to enhance your digital experiences' Core Web Vitals. This includes support for WebP renditions for images, adaptive streaming through HLS or DASH protocols for videos, and original renditions for documents.
+
+* **Dynamic asset transformation**: Our system allows for on-the-fly image transformation using URL parameters known as image modifiers. [For example, width, height, rotate, flip, quality, crop, format, and smart crop](/help/assets/deliver-assets-apis.md). Transformed renditions are generated dynamically and delivered seamlessly via the CDN.
+
+* **Secure delivery of assets**: Dynamic Media with OpenAPI capabilities provides a mechanism for control over access to your digital assets. You can specify user roles or groups as metadata for to-be-secured assets and set a predefined timeframe during which [only authorized users can access these assets](/help/assets/restrict-assets-delivery.md). The delivery URLs for secured assets do not resolve for unauthorized users during the restricted period.
+
+For information on available Dynamic Media offerings, see [Dynamic Media Prime and Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md).
+
+<table>
+<td>
+   <a href="/help/assets/dynamic-media-open-apis-overview.md">
+   <img alt="Dynamic Media with OpenAPI capabilities overview" src="./assets/dm-openapi-uses.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/dynamic-media-open-apis-overview.md">
+      <strong>Dynamic Media with OpenAPI capabilities overview</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn key benefits and how to enable get it enabled. </em>
+   </p>
+</td>
+
+
+<td>
+   <a href="/help/assets/restrict-assets-delivery.md">
+   <img alt="Restrict access to assets in Experience Manager" src="./assets/restrict-assets.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/restrict-assets-delivery.md">
+      <strong>Restrict access to assets in Experience Manager</strong>
+      </a>
+   </div>
+   <p>
+      <em> Configure roles to restrict access to approved assets.</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
+   <img alt="Integrate remote AEM Assets with AEM Sites" src="./assets/integration-aem-sites.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/integrate-remote-approved-assets-with-sites.md">
+      <strong>Integrate remote AEM Assets with AEM Sites</strong>
+      </a>
+   </div>
+   <p>
+      <em>Integrate remote AEM Assets with AEM Sites environment. </em>
+   </p>
+</td>
+</table>
+
++++
+
+>[!TAB Insights]
+
+## Asset Insights {#asset-insights}
+
+Asset reporting provides administrators with visibility into activity of the Adobe Experience Manager Assets View environment. This data provides useful information about how users interact with content and the product. All users can access the Insights dashboard and the ones who are assigned to the Administrators product profile can create user-defined reports.
+
+You can generate various types of reports, such as Upload, Download, and Dynamic Media delivery.
+
+* **Insights in Assets view**: Assets view enables you to view real-time data for your Assets view environment with the Insights dashboard. You can view real-time event metrics during the last 30 days or for the last 12 months. The events include Downloads, Uploads, Storage Usage, Top Searches, Asset Count by Size, and Asset Count by Asset Type.
+
+* **Adobe Analytics integration in Admin view**: Assets Insights functionality lets you track user ratings and usage statistics of images that are used in third-party websites, marketing campaigns, and Adobe's creative solutions. It helps provide insights about performance and popularity of the images. Assets Insights captures user activity details, such as the number of times an image is rated, clicked, and impressions (number of times an image is loaded on the website). It assigns scores to images based on these statistics. You can use the scores and performance statistics to select popular images for inclusion in catalogs, marketing campaigns, and so on. You can even formulate archival and license renewal policies based on these statistics. To let Assets Insights display usage statistics for assets, first configure the feature to fetch reporting data from Adobe Analytics.
+
+* **Content Hub Insights**: Content Hub provides valuable insights into assets, addressing a common challenge that marketing stakeholders often encounter - asset usage statistics used in marketing campaigns, channels, and different regions. By gaining a clear understanding of the performance and popularity of the assets, it delivers actionable insights essential for enhancing user experience.
+
+<table>
+<td>
+   <a href="/help/assets/manage-reports-assets-view.md">
+   <img alt="Manage reports in Assets view" src="./assets/assets-insights-assets-view.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/manage-reports-assets-view.md">
+      <strong>Manage reports in Assets view</strong>
+      </a>
+   </div>
+   <p>
+      <em>Derive insights on key success metrics using Assets view. </em>
+   </p>
+</td>
+
+
+<td>
+   <a href="/help/assets/asset-reports.md">
+   <img alt="Manage reports in Admin view" src="./assets/assets-insights-admin-view.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/asset-reports.md">
+      <strong>Manage reports in Admin view</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to manage Adobe Analytics integrated reports in Admin view.</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/insights-content-hub.md">
+   <img alt="Assets insights in Content Hub" src="./assets/asset-insights-content-hub.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/insights-content-hub.md">
+      <strong>Assets insights in Content Hub</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to view assets insights in Content Hub.</em>
+   </p>
+</td>
+</table>
+
+>[!ENDTABS]
 
 ## Available persona-based experiences for Digital Asset Management {#persona-based-experiences}
 
@@ -77,43 +893,10 @@ Adobe offers robust Digital Asset Management (DAM) solutions for you to get the 
 
 * **Assets View**: Adobe's lightweight asset management experience to store, manage, discover, and use digital assets. Streamlined user interface containing essential Digital Asset Management capabilities. Designed for the light-weight DAM users with a focus on upload, metadata management, search, download, and sharing.
 
+![add-tags](assets/newui-overview.svg)
+
 Users with access to the Admin view can also access the Assets view. Assets View provides simplified user interface makes it easy to manage, discover, and distribute your digital assets. A broad set of users from across different functions, including creatives, marketing and line-of-business teams can collaborate on assets and access the right, approved assets when and where they need them. Many casual DAM users prefer the Assets view because it only contains a subset of features. The experience is targeted to creatives, read-only asset consumers, and lighter-weight DAM users.  
 
 DAM librarians, developers, and super-users may continue to use the Admin view or switch between the user interfaces, as needed. You can select the experience that works best for your role. 
 
-![add-tags](assets/newui-overview.svg)
-
 For information on how to access the Assets view and some of the simplifications that it offers over Admin view, see [Introduction to Assets view](/help/assets/assets-view-introduction.md).
-
-## Integration with Document-based Authoring  for Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
-
-Edge Delivery enables you to create fast, engaging websites where authors can update and publish content quickly, and new sites can be launched rapidly. 
-
-Integrate AEM Assets with Document-based Authoring  for Edge Delivery Services to enable website authors to use images available in AEM Assets repositories while authoring documents in Microsoft Word or Google Docs. For more information, see [Integrate AEM Assets with Document-based Authoring ](/help/edge/using.md#integrate-assets-edge).
-
-## Integration with Adobe Journey Optimizer {#integration-with-ajo}
-
-[Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html) simplifies journey management for customers to provide omnichannel campaigns with intelligent decisioning and insights. When designing messages using Journey Optimizer, you can access Assets as a Cloud Service repository directly from within the Journey Optimizer interface. Users get access to assets, using the embedded user interface of Experience Manager Assets. For more information, see [Create and manage assets with Experience Manager Assets](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html).
-
-## New Assets capabilities {#whats-new-assets}
-
-The significant new capabilities are:
-
-* [Asset microservices](/help/assets/asset-microservices-overview.md)
-* [Asset upload methods](/help/assets/add-assets.md)
-
-**See also**
-
-* [Translate Assets](translate-assets.md)
-* [Assets HTTP API](mac-api-assets.md)
-* [Assets supported file formats](file-format-support.md)
-* [Search assets](search-assets.md)
-* [Connected assets](use-assets-across-connected-assets-instances.md)
-* [Asset reports](asset-reports.md)
-* [Metadata schemas](metadata-schemas.md)
-* [Download assets](download-assets-from-aem.md)
-* [Manage metadata](manage-metadata.md)
-* [Search facets](search-facets.md)
-* [Manage collections](manage-collections.md)
-* [Bulk metadata import](metadata-import-export.md)
-* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

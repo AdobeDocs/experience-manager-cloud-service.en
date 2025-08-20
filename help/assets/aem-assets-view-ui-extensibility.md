@@ -7,40 +7,6 @@ exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
 ---
 # Enable UI extensibility in [!DNL AEM Assets View] {#AEM-Assets-View-UI-Extensibility}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
-        </td>
-    </tr>
-</table>
-
 [!DNL AEM Assets View] supports UI extensibility enabling you to add custom UI components to your [!DNL Assets View] UI for specific workflows and business requirements that are not met by the out-of-the-box capabilities of [!DNL AEM Assets View]. This UI extensibility capability of [!DNL AEM Assets View] enhances its flexibility, enabling organizations to adapt the interface for specific workflows and requirements.  
 You can add your extensions to **Asset**, **Folder** and **Collection** level. The added extension displays on a dedicated panel on the **Asset**, **Collection**, or **Folder** **[!UICONTROL Details]** page.
 
@@ -67,7 +33,7 @@ Fulfil the following requirements to start adding the extensibility component on
 * [Access to [!DNL Assets View]](#1).
 * Access to the [[!DNL Adobe app builder]](https://developer.adobe.com/app-builder/docs/overview/). 
 * Entitlement to developer of system admin role within the organization. See [this documentation](https://developer.adobe.com/uix/docs/guides/get-access/) for more information.
-* [!DNL Adobe IO command line tool (AIO CLI)] is installed on your local machines. This tool is essential for creating and deploying extension projects. See [this documentation](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up) for more information.
+* [!DNL Adobe IO command line tool (AIO CLI)] is installed on your local machines. This tool is essential for creating and deploying extension projects. See [Create your First App Builder Application](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#local-environment-set-up) (requires authentication for access) for more information.
 * Good understanding of [!DNL JavaScript], [!DNL Node.js], and [!DNL React] technologies.
 
 ## Add the UI extensibility component to [!DNL Assets View] {#ui-extensibility-in-assets-view}
