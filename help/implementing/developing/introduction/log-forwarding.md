@@ -561,7 +561,7 @@ You will need to copy the last section of the URL (without the preceeding `/`) a
   metadata:
     envTypes: ["dev"]
   data:
-    sumologic:
+    sumoLogic:
       default:
         enabled: true
         collectorURL: "https://collectors.de.sumologic.com/receiver/v1/http"
