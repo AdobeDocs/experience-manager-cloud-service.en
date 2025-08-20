@@ -62,7 +62,7 @@ The [AEM REST OpenAPI for Content Fragment Delivery](/help/headless/aem-content-
 
 The preferred editors for managing headless content in AEM are now:
 
-* [The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) for visual editing.
+* [The Universal Editor](https://www.aem.live/docs/aem-authoring) for visual editing.
 * [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing.
 
 #### PWA Features {#pwa-features}

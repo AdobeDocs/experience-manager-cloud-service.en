@@ -87,7 +87,6 @@ Customers with a license with a logging vendor or who host a logging product can
     </tr>
   </tbody>
 </table>
-</html>
 
 >[!NOTE]
 >
@@ -211,7 +210,6 @@ Use the table below to see what the requirements are for Advanced Networking and
       <td>Yes</td>
   </tbody>
 </table>
-</html>
 
 >[!NOTE]
 >Whether your logs appear from a single IP address is determined by your choice of Advanced Networking configuration.  Dedicated Egress must be used to facilitate this.
@@ -563,7 +561,7 @@ You will need to copy the last section of the URL (without the preceeding `/`) a
   metadata:
     envTypes: ["dev"]
   data:
-    sumologic:
+    sumoLogic:
       default:
         enabled: true
         collectorURL: "https://collectors.de.sumologic.com/receiver/v1/http"

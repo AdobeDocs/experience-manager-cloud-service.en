@@ -750,6 +750,7 @@ Here is the sample JSON code for previously mentioned examples.
 }
 
 ```
+
 -->
 
 ## Limit acceptable values for an Adaptive Form component {#limit-acceptable-values-for-an-adaptive-form-component}
