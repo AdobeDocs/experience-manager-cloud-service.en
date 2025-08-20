@@ -36,7 +36,7 @@
 * [Send email](/help/forms/configure-submit-action-send-email.md)
 * [Submit to SharePoint Document Library](/help/forms/connect-forms-to-sharepoint-document-library.md)
 * [Submit to SharePoint List](/help/forms/connect-forms-to-sharepoint-list.md)
-* [Submit using Form Data Model](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
+* [Submit using Form Data Model](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [Submit to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Submit to REST endpoint](/help/forms/configure-submit-action-restpoint.md)
 * [Submit to OneDrive](/help/forms/configure-submit-action-onedrive.md)
@@ -104,10 +104,9 @@ The following table demonstrates the difference between the features available i
    </td>
    </tr>
    <tr>
-    <td>ES10 Support </td>
-    <td>ES10 is not supported yet. It only supports ES5 JavaScript features. </td>
-    <td>Support for modern JavaScript features such as let and arrow functions (ES10 support) within custom functions. 
-   </td>
+    <td>ECMAScript Version Support</td>
+    <td>Supports only ES5 JavaScript features.</td>
+    <td>Supports modern JavaScript features (e.g., <code>let</code>, arrow functions) within custom functions.</td>
    </tr>
    </tr>
    <tr>
@@ -125,8 +124,7 @@ The following table demonstrates the difference between the features available i
    </tr>
    </tr>
   </tbody>
-  <table>
-  </tbody>
+<table>
 
 ## Rule Editor See Also {#see-also-rule-editor}
 
@@ -228,7 +226,7 @@ To log a support ticket, you must first register your Edge Delivery site in Clou
 >
 >The SPA Editor [has been deprecated](/help/implementing/developing/hybrid/spa-editor-deprecation.md) for new projects. It remains supported by Adobe for existing projects, but should not be used for new projects. The preferred editors for managing headless content in AEM are now:
 >
->* [The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) for visually editing headless content.
+>* [The Universal Editor](https://www.aem.live/docs/aem-authoring) for visually editing headless content.
 >* [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing of headless content.
 
 ## Universal Editor{#ue-see-also}
@@ -274,3 +272,11 @@ To log a support ticket, you must first register your Edge Delivery site in Clou
 >**Have you considered Edge Delivery Services for AEM?**
 >
 >You can continue using the methods described in this document for existing projects. However for new projects, Adobe recommends leveraging [Edge Delivery Services.](/help/edge/overview.md)
+
+## Adobe-Provided Site Templates {#adobe-templates}
+
+To accelerate site creation, Adobe provides a number of templates suited to different purposes.
+
+* [AEM Site with Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) - For authoring AEM pages with the Universal Editor and delivering through [edge delivery](/help/edge/overview.md)
+* [Edge Delivery Services with AEM Authoring for Commerce](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases) - For authoring AEM pages with the Universal Editor for commerce projects and delivery through [edge delivery](/help/edge/overview.md)
+* [Standard AEM Site Template](https://github.com/adobe/aem-site-template-standard/releases) - For authoring traditional AEM pages and delivering through [publish delivery](/help/sites-cloud/authoring/author-publish.md)

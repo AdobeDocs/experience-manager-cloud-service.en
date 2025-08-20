@@ -178,7 +178,7 @@ Inserting multimedia into your AEM web pages is similar to inserting an image. H
 
 #### Purpose - Captions (Prerecorded) (1.2.2) {#purpose-captions-prerecorded}
 
-People who are Deaf or hard of hearing are unable or have great difficulty accessing audio content. Captions are text equivalents for spoken and non-spoken audio, shown on screen at the appropriate time during the video. They allow people who cannot hear the audio to understand what is happening.
+People who are deaf or hard of hearing are unable or have great difficulty accessing audio content. Captions are text equivalents for spoken and non-spoken audio, shown on screen at the appropriate time during the video. They allow people who cannot hear the audio to understand what is happening.
 
 #### How to Meet - Captions (Prerecorded) (1.2.2) {#how-to-meet-captions-prerecorded}
 
@@ -195,12 +195,12 @@ If you must use open captions, embed the text into the video track. This can be 
 
 #### More Information - Captions (Prerecorded) (1.2.2) {#more-information-captions-prerecorded}
 
-* [Understanding Success Criteria 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html).
-* [How to Meet Success Criteria 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded).
+* [Understanding Success Criteria 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
+* [How to Meet Success Criteria 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
-c
+<!--
 * [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/).
-* [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/).
+* [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
 -->
 
 ### Audio Description or Media Alternative (Prerecorded) (1.2.3) {#audio-description-or-media-alternative-prerecorded}

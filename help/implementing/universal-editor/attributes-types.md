@@ -46,6 +46,6 @@ In order for an app to be editable by the Universal Editor, it must be properly 
 * It is not required directly on the tag where the `data-aue-type` is set.
 * In case it is not set, the `data-aue-resource` attribute of a the nearest parent will be used.
 
-`data-aue-prop` is required whenever you want to do an edit in context the except for a container where it is optional (if set the container is a content fragment and the prop points to a multi-reference field).
+`data-aue-prop` is required whenever you want to edit in context except for a container where it is optional (if set the container is a content fragment and the prop points to a multi-reference field).
 
 * The `data-aue-prop` is the attribute to update for the primary key of `data-aue-resource`.

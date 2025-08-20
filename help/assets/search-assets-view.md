@@ -7,43 +7,6 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 ---
 # Search assets in [!DNL Assets view] {#search-assets}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
-        </td>
-    </tr>
-</table>
-
 >[!CONTEXTUALHELP]
 >id="assets_search"
 >title="Search Assets"
@@ -52,7 +15,7 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 
 [!DNL Assets view] provides an effective search, that just works by default. The search is comprehensive as it is a full-text search. The powerful search functionality lets you quickly discover the appropriate asset and help you improve your content velocity. [!DNL Assets view] provides full-text search and even searches through the metadata such as smart tags, title, date created, and copyright.
 
-To search assets, 
+To search assets:
 
 * Click in the search box at the top of the page. By default, it searches within the folder that you are currently browsing. Do one of the following:
 
@@ -150,7 +113,41 @@ To remove custom filters:
 
 1. On the **[!UICONTROL Custom filters management]** dialog box, deselect the filters that you need to remove from the existing list of filters.
 
-1. Click **[!UICONTROL Confirm]** to remove the filters from the user interface. 
+1. Click **[!UICONTROL Confirm]** to remove the filters from the user interface.
+
+## Semantic Search {#semantic-search}
+
+Semantic Search is an advanced search capability that understands the meaning and intent behind a user's query rather than relying on exact keyword matches. It uses artificial intelligence (AI), natural language processing (NLP), and machine learning to deliver more accurate and context-aware results.
+
+Unlike traditional keyword-based search, which looks for exact terms, Semantic Search interprets relationships between words, concepts, and user intent. This ensures that users find what they are looking for—even if their query is phrased differently, contains typos, or is in another language.
+
+Some if its key benefits include:
+
+* **Multilingual support**: Search across multiple languages without requiring exact translations. Users can find relevant content regardless of their query language.
+
+* **Handles misspellings**: Automatically corrects or interprets typos and spelling errors, ensuring accurate results even with imperfect input.
+
+* **Understands synonyms**: Delivers results for related terms and phrases, so users do not need to guess the right keyword.
+
+* **Context-Aware search**: Recognizes the intent behind a query, not just the words.
+
+* **Search based on text-based prompts**: Experience Manager Assets applies filters to content and displays appropriate results automatically based on simple text-based prompts.
+
+>[!IMPORTANT]
+>
+> Specify three or more than three words for the Semantic Search to display appropriate results.
+
+### Examples for Semantic Search {#examples-semantic-search}
+
+**Example Prompt**: *Woman drinking coffee*
+
+The traditional keyword-based search looks for exact matches of asset metadata, such as Woman, Coffee, and so on, and returns assets that include these keywords.
+
+However, Semantic Search looks for similar words such as `Girl`, `Lady` in case of `Woman` and coffee options, such as `Cappuccino` and `Latte` in case of `Coffee`.
+
+Similarly, you can specify this prompt in Spanish or misspell `Woman` as `Wman` and still get the same results.
+
+![Semantic Search in Assets view](assets/semantic-search.png)
 
 ## Search assets using [!DNL Adobe Firefly] {#search-firefly}
 

@@ -3,30 +3,32 @@ title: Add External Repositories in Cloud Manager
 description: Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps repositories.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" 
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
 ---
 # Add external repositories in Cloud Manager {#external-repositories}
 
+<!-- badge: label="Beta - Azure DevOps only" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" -->
+
 Learn how to add an external repository into Cloud Manager. Cloud Manager supports integration with GitHub Enterprise, GitLab, and Bitbucket repositories.
 
-Customers can now also onboard their Azure DevOps Git repositories into Cloud Manager, with support for both modern Azure DevOps and legacy VSTS (Visual Studio Team Services) repositories.
+Customers can now also onboard their Azure DevOps (Beta) Git repositories into Cloud Manager, with support for both modern Azure DevOps and legacy VSTS (Visual Studio Team Services) repositories.
 
 * For Edge Delivery Services users, the onboarded repository can be used to sync and deploy site code.
 * For AEM as a Cloud Service and Adobe Managed Services (AMS) users, the repository can be linked to both full-stack and frontend pipelines.
 
 >[!NOTE]
 >
->The features described in this article are only available through the private beta program. For more details and to sign up for the private beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
+>The support added for Azure DevOps described in this article is available only through the private beta program. For more details and to sign up for the beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts).
 
 
 ## Configure an external repository
 
 Configuration of an external repository in Cloud Manager consists of the following steps:
 
-1. [Add an external repository](#add-external-repo) to a selected program.
-1. Provide an access token to the external repository.
-1. Validate ownership of the private GitHub repository.
+1. [Add an external repository](#add-external-repo) to a selected program
+1. [Link a validated external repository to a pipeline](#validate-ext-repo)
+    <!-- 1. Provide an access token to the external repository.
+    1. Validate ownership of the private GitHub repository. -->
 1. [Configure a webhook](#configure-webhook) to an external repository.
 
 
@@ -60,33 +62,73 @@ Configuration of an external repository in Cloud Manager consists of the followi
     | --- | --- |
     | **Repository Name** | Required. An expressive name for your new repository. | 
     | **Repository URL** | Required. The URL of the repository.<br><br>If you are using a GitHub-hosted repository, the path must end in `.git`.<br>For example, *`https://github.com/org-name/repo-name.git`* (URL path is for illustration purposes only).<br><br>If you are using an external repository, it must use the following URL path format:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> or<br>`https://self-hosted-domain/org-name/repo-name.git`<br>And match your Git vendor. |
-    | **Select Repository Type** | Required. Select the repository type that you are using. If the repository URL path includes the Git vendor name, such as GitLab or Bitbucket, the repository type is already pre-selected for you.:<ul><li>**GitHub** (GitHub Enterprise and the self-hosted version of GitHub)</li><li>**GitLab** (both `gitlab.com` and the self-hosted version of GitLab) </li><li>**Bitbucket** (only `bitbucket.org` - cloud version) is supported. The self-hosted version of Bitbucket was deprecated starting February 15, 2024.)</li><li>**Azure DevOps** (`dev.azure.com`) </ul> |
+    | **Select Repository Type** | Required. Select the repository type that you are using. If the repository URL path includes the Git vendor name, such as GitLab or Bitbucket, the repository type is already pre-selected for you.:<ul><li>**GitHub** (GitHub Enterprise and the self-hosted version of GitHub)</li><li>**GitLab** (both `gitlab.com` and the self-hosted version of GitLab) </li><li>**Bitbucket** (only `bitbucket.org` - cloud version) is supported. The self-hosted version of Bitbucket was deprecated starting February 15, 2024.</li><li>**Azure DevOps** (`dev.azure.com`) </ul> |
     | **Description** | Optional. A detailed description of the repository. |
 
-1. Select **Save** to add the repository.
+1. Select **Save** to add the repository. 
 
-1. In the **Private Repository Ownership Validation** dialog box, provide an access token to validate ownership of the external repository so you can access it.
+    Now, provide an access token to validate ownership of the external repository. 
+
+1. In the **Private Repository Ownership Validation** dialog box, provide an access token to validate ownership of the external repository so you can access it, then click **Validation**.
 
     ![Selecting an existing access token for a repository](/help/implementing/cloud-manager/managing-code/assets/repositories-exisiting-access-token.png)
-    *Selecting an existing access token for a Bitbucket repository.*
+    *Selecting an existing access token for a Bitbucket repository (for illustration only).*
 
-    | Token type | Description |
-    | --- | --- |
-    | **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
-    | **Add new Access Token** |**Repository type: GitHub Enterprise**<br><ul><li> In the **Token Name** text field, type a name for the access token you are creating.<li>Create a personal access token by following the instructions in the [GitHub documentation](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Required permissions for the GitHub Enterprise Personal Access Token (PAT)<br>These permissions ensure that Cloud Manager can validate pull requests, manage commit status checks, and access necessary repo details.<br>When you generate the PAT in GitHub Enterprise, make sure it includes the following repository permissions:<ul><li>Pull request (read and write)<li>Commit statuses (read and write)<li>Repository metadata (read-only)</li></li></ul></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
-    | | **Repository type: GitLab**<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a personal access token by following the instruction in the [GitLab documentation](https://docs.gitlab.com/user/profile/personal_access_tokens/).<li>Required permissions for the GitLab Personal Access Token (PAT)<br>These scopes allow Cloud Manager to access repository data and user information as needed for validation and webhook integration.<br>When you generate the PAT in GitLab, make sure it includes the following token scopes:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. | 
-    | |**Repository type: Bitbucket**<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a repository access token using the [Bitbucket documentation](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Required permissions for the Bitbucket Personal Access Token (PAT)<br>These permissions allow Cloud Manager to access repository content, manage pull requests, and configure or react to webhook events.<br>When you create the app password in Bitbucket, make sure it includes the following required app password permissions:<ul><li>Repository (read-only)<li>Pull requests (read and write)<li>Webhooks (read and write)</li></li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
-    | |**Repository type: Azure DevOps**<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a repository access token using the [Azure DevOps documentation](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Required permissions for the Azure DevOps Personal Access Token (PAT).<br>These permissions allow Cloud Manager to access repository content, manage pull requests, and configure or react to webhook events.<br>When you create the app password in Azure DevOps, make sure it includes the following required app password permissions:<ul><li>Repository (read-only)</li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
+>[!BEGINTABS]
 
-    See also [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+>[!TAB GitHub Enterprise]
 
-    >[!IMPORTANT]
-    >
-    >The feature **Add new Access Token** is currently in private beta. Additional functionalities are being planned. As a result, the required permissions for access tokens may change. Additionally, the user interface for managing tokens may be updated, potentially including features like token expiration dates. And, automated checks to ensure that tokens linked to repositories remain valid. 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
-1. Click **Validate**.
+| Access token option | Description |
+| --- | --- |
+| **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
+| **Add new Access Token** |<ul><li> In the **Token Name** text field, type a name for the access token you are creating.<li>Create a personal access token by following the instructions in the [GitHub documentation](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Required permissions for the GitHub Enterprise Personal Access Token (PAT)<br>These permissions ensure that Cloud Manager can validate pull requests, manage commit status checks, and access necessary repo details.<br>When you generate the PAT in GitHub Enterprise, make sure it includes the following repository permissions:<ul><li>Pull request (read and write)<li>Commit statuses (read and write)<li>Repository metadata (read-only)</li></li></ul></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
 
-    After validation, the external repository is ready to use and link to a pipeline.
+After validation, the external repository is ready to use and link to a pipeline.
+
+See also [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+
+>[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
+
+| Access token option | Description |
+| --- | --- |
+| **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
+| **Add new Access Token** |<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a personal access token by following the instruction in the [GitLab documentation](https://docs.gitlab.com/user/profile/personal_access_tokens/).<li>Required permissions for the GitLab Personal Access Token (PAT)<br>These scopes allow Cloud Manager to access repository data and user information as needed for validation and webhook integration.<br>When you generate the PAT in GitLab, make sure it includes the following token scopes:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. | 
+
+After validation, the external repository is ready to use and link to a pipeline.
+
+See also [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+
+>[!TAB Bitbucket]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
+
+| Access token option | Description |
+| --- | --- |
+| **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
+| **Add new Access Token** |<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a repository access token using the [Bitbucket documentation](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Required permissions for the Bitbucket Personal Access Token (PAT)<br>These permissions allow Cloud Manager to access repository content, manage pull requests, and configure or react to webhook events.<br>When you create the app password in Bitbucket, make sure it includes the following required app password permissions:<ul><li>Repository (read-only)<li>Pull requests (read and write)<li>Webhooks (read and write)</li></li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
+
+After validation, the external repository is ready to use and link to a pipeline.
+
+See also [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+
+>[!TAB Azure DevOps (Beta)]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
+
+| Access token option | Description |
+| --- | --- |
+| **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
+| **Add new Access Token** |<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a repository access token using the [Azure DevOps documentation](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Required permissions for the Azure DevOps Personal Access Token (PAT).<br>These permissions allow Cloud Manager to access repository content, manage pull requests, and configure or react to webhook events.<br>When you create the app password in Azure DevOps, make sure it includes the following required app password permissions:<ul><li>Repository (read-only)</li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
+
+After validation, the external repository is ready to use and link to a pipeline.
+
+See also [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+
+>[!ENDTABS]
 
 
 ## Link a validated external repository to a pipeline {#validate-ext-repo}
@@ -125,7 +167,7 @@ For example, webhooks allow Cloud Manager to trigger actions based on events suc
 
 Webhook configuration is not required for repositories hosted on `GitHub.com` because Cloud Manager integrates directly through the GitHub app.
 
-For all other external repositories that are onboarded with an access token, such as GitHub Enterprise, GitLab, and Bitbucket, webhook configuration is available and must be set up manually.
+For all other external repositories that are onboarded with an access token &ndash; such as GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps &ndash; webhook configuration is available and must be set up manually.
 
 **To configure a webhook for an external repository:**
 
@@ -152,9 +194,9 @@ For all other external repositories that are onboarded with an access token, suc
     1. Next to the **Webhook Secret** token/key field, click **Generate**, then click ![Copy icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
     Paste the secret in a plain text file. The copied secret is required for your Git vendor's Webhook settings.
 1. Click **Close**. 
-1. Navigate to your Git vendor solution (GitHub Enterpriser, GitLab, or Bitbucket).
+1. Navigate to your Git vendor solution (GitHub Enterpriser, GitLab, Bitbucket, or Azure DevOps).
 
-    All the details on the webhook configuration and the events that are required for each vendor are available in [Add an external repository](#add-ext-repo). Under step 8, see the table.
+    All the details on the webhook configuration and the events that are required for each vendor are available in [Add an external repository](#add-ext-repo). Under step 8, see the tabbed table.
 
 1. Locate the solution's **Webhook** Settings section.
 1. Paste the Webhook URL that you copied earlier into the URL text field.
@@ -163,57 +205,101 @@ For all other external repositories that are onboarded with an access token, suc
         To generate an API key, you must create an integration project in Adobe Developer Console. See [Creating an API Integration Project](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) for full details.
     
 1. Paste the Webhook Secret that you copied earlier into the **Secret** (or **Secret key**, or **Secret token**) text field.
-1. Configure the webhook to send the required events that Cloud Manager expects.
+1. Configure the webhook to send the events that Cloud Manager requires. Use the following table to determine the correct events for your Git provider.
 
-    | Repository | Required webhook events |
-    | --- | --- |
-    | GitHub Enterprise | These events allow Cloud Manager to respond to GitHub activity, such as pull request validation, push-based triggers for pipelines, or Edge Delivery Services code sync.<br>Make sure that the webhook is set up to trigger on the following required webhook events:<ul><li>Pull requests<li>Pushes<li>Issue comments</li></li></li></ul></ul></ul> |
-    | GitLab | These webhook events allow Cloud Manager to trigger pipelines when code is pushed or a merge request is submitted. They also track comments related to pull request validation (through note events).<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Push events<li>Merge request events<li>Note events</li></li></li></ul></ul></ul> | 
-    | Bitbucket | These events ensure that Cloud Manager can validate pull requests, respond to code pushes, and interact with comments for pipeline coordination.<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Pull request: Created<li>Pull request: Updated<li>Pull requests: Merged<li>Pull request: Comment<li>Repository: Push</li></li></li></ul></ul></ul> |
-    | Azure DevOps | These events ensure that Cloud Manager can validate pull requests, respond to code pushes, and interact with comments for pipeline coordination.<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Repository: Push</li></li></ul></ul></ul> |
+>[!BEGINTABS]
+
+>[!TAB GitHub Enterprise]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
+
+| Required webhook events |
+| --- |
+| These events allow Cloud Manager to respond to GitHub activity, such as pull request validation, push-based triggers for pipelines, or Edge Delivery Services code sync.<br>Make sure that the webhook is set up to trigger on the following required webhook events:<ul><li>Pull requests<li>Pushes<li>Issue comments</li></li></li></ul></ul></ul> |
+
+>[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
+
+| Required webhook events |
+| --- |
+| These webhook events allow Cloud Manager to trigger pipelines when code is pushed or a merge request is submitted. They also track comments related to pull request validation (through note events).<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Push events<li>Merge request events<li>Note events</li></li></li></ul></ul></ul> | 
+
+>[!TAB Bitbucket]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
+
+| Required webhook events |
+| --- |
+| These events ensure that Cloud Manager can validate pull requests, respond to code pushes, and interact with comments for pipeline coordination.<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Pull request: Created<li>Pull request: Updated<li>Pull requests: Merged<li>Pull request: Comment<li>Repository: Push</li></li></li></ul></ul></ul> |
+
+>[!TAB Azure DevOps (Beta)]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
+
+| Required webhook events and authentication |
+| --- |
+| These events ensure that Cloud Manager can validate pull requests, respond to code pushes, and interact with comments for pipeline coordination.<br>Make sure that the webhook is set up to trigger on the following required webhook events<ul><li>Repository: Push</li></ul>Set authentication:<br>1. In the **Basic authentication username** field, type `cloudmanager`.<br>2. In the **Basic authentication password** field, type the Webhook Secret generated from the Cloud Manager user interface.  |
+
+>[!ENDTABS]
 
 
 ### Validation of pull requests with webhooks
 
 After webhooks are correctly configured, Cloud Manager automatically triggers pipeline executions or PR validation checks for your repository. 
 
-The following behaviors apply:
+The behavior varies depending on the Git provider that you use, as outlined below.
 
-* **GitHub Enterprise**
+>[!BEGINTABS]
 
-    When the check is created, it appears like the following screenshot below. The key difference from `GitHub.com` is that `GitHub.com` uses a check-run, while GitHub Enterprise (using personal access tokens) generates a commit status:
 
-    ![Commit status to indicate PR validation process on GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
+>[!TAB GitHub Enterprise]
 
-* **Bitbucket**
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github -->
 
-    When code quality validation is running:
+When the check is created, it appears like the following screenshot below. The key difference from `GitHub.com` is that `GitHub.com` uses a check-run, while GitHub Enterprise (using personal access tokens) generates a commit status:
 
-    ![Status while code quality validation is running](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket1.png)
+![Commit status to indicate PR validation process on GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 
-    Uses commit status for tracking PR validation progress. In the following case, the screenshot shows what happens when a code quality validation fails due to a customer issue. A comment is added with detailed error information, and a commit check is created, which shows the failure (visible on the right):
 
-    ![Pull request validation status for Bitbucket](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket2.png)
+>[!TAB GitLab]
 
-* **GitLab**
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
-    GitLab interactions rely solely on comments. When validation begins, a comment is added. When validation is complete (whether successful or failed), the initial comment is removed and replaced with a new comment containing validation results or error details.
+GitLab interactions rely solely on comments. When validation begins, a comment is added. When validation is complete (whether successful or failed), the initial comment is removed and replaced with a new comment containing validation results or error details.
 
-    When code quality validation is running:
+When code quality validation is running:
 
-    ![When code quality validation is running](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab1.png)
+![When code quality validation is running](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab1.png)
 
-    When cold quality validation is finished:
+When cold quality validation is finished:
 
-    ![When cold quality validation is finished](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab2.png)
+![When cold quality validation is finished](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab2.png)
 
-    When code quality validation fails with an error:
+When code quality validation fails with an error:
 
-    ![When code quality validation fails with an error](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab3.png)
+![When code quality validation fails with an error](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab3.png)
 
-    When the code quality validation fails due to customer issues:
+When the code quality validation fails due to customer issues:
 
-    ![When the code quality validation fails due to customer issues](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab4.png)
+![When the code quality validation fails due to customer issues](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-gitlab4.png)
+
+
+>[!TAB Bitbucket]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
+
+When code quality validation is running:
+
+![Status while code quality validation is running](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket1.png)
+
+Uses commit status for tracking PR validation progress. In the following case, the screenshot shows what happens when a code quality validation fails due to a customer issue. A comment is added with detailed error information, and a commit check is created, which shows the failure (visible on the right):
+
+![Pull request validation status for Bitbucket](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket2.png)
+
+
+
+>[!ENDTABS]
 
 
 ## Troubleshoot webhook issues

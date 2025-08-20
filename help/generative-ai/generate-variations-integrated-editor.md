@@ -192,7 +192,7 @@ To grant access to specific users, assign their user account to the respective p
 
 ### Access from the AEM Sidekick for document based authoring {#access-aem-sidekick}
 
-Access from the AEM Sidekick is used for [document based authoring](/help/edge/wysiwyg-authoring/authoring.md). 
+Access from the AEM Sidekick is used for [document based authoring](https://www.aem.live/docs/aem-authoring). 
 
 Some configuration is needed before you can access Generate Variations from the Sidekick (of Edge Delivery Services). 
 

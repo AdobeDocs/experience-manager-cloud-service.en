@@ -38,6 +38,7 @@ The below diagram depicts the steps to create a custom submit action for an Adap
     ```
     git clone https://git.cloudmanager.adobe.com/<organization-name>/<app-id>/
     ```
+
     **Where to find this information?**
 
     For step-by-step instructions on locating these details, refer to the Adobe Experience League article "[Accessing Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)".
@@ -60,8 +61,8 @@ The below diagram depicts the steps to create a custom submit action for an Adap
 
     ```
     /ui.apps/src/main/content/jcr_root/apps/<app-id>/
-
     ```
+
     **Important**: Replace `<app-id>` with your actual application ID.
 
 1. Create new folder for your custom submit action and give it a name of your choice. For example, name the folder as `customsubmitaction`.
@@ -74,7 +75,7 @@ The below diagram depicts the steps to create a custom submit action for an Adap
 
     `/ui.apps/src/main/content/jcr_root/apps/<app-id>/customsubmitaction/`
 
-    `Important`: Replace <app-id> with your actual application ID.
+    `Important`: Replace `<app-id>` with your actual application ID.
 
 1. Create new configuration file.
    Within the `customsubmitaction` folder, create a new file named `.content.xml`. 
@@ -112,6 +113,7 @@ The below diagram depicts the steps to create a custom submit action for an Adap
     ```
     <filter root="/apps/<app-id>/[customsubmitaction-folder]"/>
     ```
+
     For example, add the following line of code to add the `customsubmitaction` folder in the `filter.xml` file:
 
     ```
@@ -126,7 +128,7 @@ The below diagram depicts the steps to create a custom submit action for an Adap
 
 1. Navigate to the following directory within your `[AEMaaCS project directory]`:
     `/core/src/main/java/com/<app-id>/core/service/`
-    `Important`: Replace <app-id> with your actual application ID.
+    `Important`: Replace `<app-id>` with your actual application ID.
 1. Create new Java file to implement the service for the added submit action. For example, add new Java file as `CustomSubmitService.java`.
 
     ![Custom Submit Action Folder](/help/forms/assets/custom-submit-action-custom-submit-folder.png)
@@ -193,6 +195,7 @@ The below diagram depicts the steps to create a custom submit action for an Adap
         ```
         mvn -PautoInstallPackage clean install
         ```
+        
         ![Local Deployment](/help/forms/assets/custom-submit-action-local-deployment.png)
 
 **Deploy the code for the Cloud Service environment**

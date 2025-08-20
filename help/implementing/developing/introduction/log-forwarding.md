@@ -13,23 +13,90 @@ role: Admin, Architect, Developer
 
 Customers with a license with a logging vendor or who host a logging product can have AEM logs (including Apache/Dispatcher) and CDN logs forwarded to the associated logging destination. AEM as a Cloud Service supports the following logging destinations:
 
-* Amazon S3 (private beta, see note below)
-* Azure Blob Storage
-* Datadog
-* Elasticsearch or OpenSearch
-* HTTPS
-* Splunk
-* Sumo Logic (private beta, see note below)
+<table>
+  <tbody>
+    <tr>
+      <th>Log Technnology</th>
+      <th>Private Beta*</th>
+      <th>AEM</th>
+      <th>Dispatcher</th>
+      <th>CDN</th>
+    </tr>
+    <tr>
+      <td>Amazon S3</td>
+      <td style="background-color: #ffb3b3;">Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td style="background-color: #ffb3b3;">No</td>
+    </tr>
+    <tr>
+      <td>Azure Blob Storage</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>DataDog</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Dynatrace</td>
+      <td style="background-color: #ffb3b3;">Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td style="background-color: #ffb3b3;">No</td>
+    </tr>
+    <tr>
+      <td>ElasticSearch<br>OpenSearch</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>HTTPS</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>New Relic</td>
+      <td style="background-color: #ffb3b3;">Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td style="background-color: #ffb3b3;">No</td>
+    </tr>
+    <tr>
+      <td>Splunk</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Sumo Logic</td>
+      <td style="background-color: #ffb3b3;">Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td style="background-color: #ffb3b3;">No</td>
+    </tr>
+  </tbody>
+</table>
+
+>[!NOTE]
+>
+> For technologies in Private Beta, please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.  
 
 Log forwarding is configured in a self-service manner by declaring a configuration in Git, and can be deployed via Cloud Manager config pipelines to dev, stage, and production environment types. The configuration file can be deployed to Rapid Development Environments (RDEs) using command line tooling.
 
 There is an option for the AEM and Apache/Dispatcher logs to be routed through AEM's advanced networking infrastructure, such as dedicated egress IP.
 
 Note that the network bandwidth associated with logs sent to the logging destination are considered part of your organization's Network I/O usage.
-
->[!NOTE]
->
->Amazon S3 and Sumo Logic are in Private Beta and only support AEM logs (including Apache/Dispatcher).  New Relic over HTTPS is also in private beta. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.  
 
 ## How This Article is Organized {#how-organized}
 
@@ -43,7 +110,7 @@ This article is organized in the following way:
 
 ## Setup {#setup}
 
-1. Create a file named `logForwarding.yaml`. It should contain metadata, as described in the [config pipeline article](/help/operations/config-pipeline.md#common-syntax) (**kind** should be set to `LogForwarding` and version set to "1"), with a configuration similar to the following (we use Splunk as an example).
+1. Create a file named `logForwarding.yaml`. It should contain metadata, as described in the [Configuration Pipeline](/help/operations/config-pipeline.md#common-syntax) article (**kind** should be set to `LogForwarding` and version set to "1"), with a configuration similar to the following (we use Splunk as an example).
 
    ```yaml
    kind: "LogForwarding"
@@ -111,14 +178,7 @@ It is possible to set different values between CDN logs and AEM logs (including 
 Some organizations choose to restrict which traffic can be received by the logging destinations, others may require to use ports other than HTTPS (443).  If so [Advanced Networking](/help/security/configuring-advanced-networking.md) will need to be configured before deploying log forwarding configuration.
 
 Use the table below to see what the requirements are for Advanced Networking and Logging configuration based on whether you are using port 443 or not, and whether or not you need your logs to appear from a fixed IP address.
-<html>
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-}
-</style>
+
 <table>
   <tbody>
     <tr>
@@ -128,7 +188,7 @@ table, th, td {
       <th>LogForwarding.yaml Port Definition Needed</th>
     </tr>
     <tr>
-      <td rowspan="2">HTTPS (443)</td>
+      <td rowspan="2"ro>HTTPS (443)</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -150,7 +210,6 @@ table, th, td {
       <td>Yes</td>
   </tbody>
 </table>
-</html>
 
 >[!NOTE]
 >Whether your logs appear from a single IP address is determined by your choice of Advanced Networking configuration.  Dedicated Egress must be used to facilitate this.
@@ -181,6 +240,7 @@ The example below shows how to configure logging on a standard HTTPS port with A
 For CDN logs, you can allow-list the IP addresses, as described in [Fastly documentation - Public IP List](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). If that list of shared IP addresses is too large, consider sending traffic to an https server or (non-Adobe) Azure Blob Store where logic can be written to send the logs out of a known IP to their ultimate destination.
 
 >[!NOTE]
+>
 >It is not possible for CDN logs to appear from the same IP address that your AEM logs appear from, this is because logs are sent directly from Fastly and not AEM Cloud Service.
 
 ## Logging Destination Configuration {#logging-destinations}
@@ -189,13 +249,17 @@ Configurations for the supported logging destinations are listed below, along wi
 
 ### Amazon S3 {#amazons3}
 
+Log Forwarding to Amazon S3 supports AEM and Dispatcher logs, CDN logs are not yet supported.
+
 >[!NOTE]
 >
->Logs written to S3 periodically, every 10 minutes for each log file type.  This may result in an initial delay for logs being written to S3 once the feature is toggled.  More information on why this behaviour exists can be found [here](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
+>Logs written to S3 periodically, every 10 minutes for each log file type.  This may result in an initial delay for logs being written to S3 once the feature is toggled.  [Further information on this behavior](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
 
   ```yaml
   kind: "LogForwarding"
   version: "1.0"
+  metadata:
+    envTypes: ["dev"]
   data:
     awsS3:
       default:
@@ -206,11 +270,11 @@ Configurations for the supported logging destinations are listed below, along wi
         secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
   ```
 
-In order to use the S3 Log Forwarder, you will need to preconfigure an AWS IAM user with appropriate policy for accessing your S3 bucket.  See [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) for how to create IAM user credetials.
+In order to use the S3 Log Forwarder, you will need to preconfigure an AWS IAM user with appropriate policy for accessing your S3 bucket.  See [AWS IAM User Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) for how to create IAM user credentials.
 
 The IAM policy should allow the user to use `s3:putObject`.  For example:
 
- ```json
+```json
  {
     "Version": "2012-10-17",
     "Statement": [{
@@ -223,7 +287,7 @@ The IAM policy should allow the user to use `s3:putObject`.  For example:
 }
 ```
 
-See [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) for more information on AWS Bucket Policy implementation.
+See [AWS Bucket Policy Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) for more information on how to implement.
 
 ### Azure Blob Storage {#azureblob}
 
@@ -316,7 +380,7 @@ See the log entry formats under [Logging for AEM as a Cloud Service](/help/imple
          
    ```
 
-Considerations:
+#### Considerations
 
 * Create an API Key, without any integration with a specific cloud provider.
 * The tags property is optional
@@ -343,7 +407,7 @@ Considerations:
    
    ```
 
-Considerations:
+#### Considerations
 
 * by default, the port is 443. It can optionally be overridden with a property named `port`
 * For credentials, make sure to use use deployment credentials, rather than account credentials. These are the credentials that are generated in a screen that may resemble this image:
@@ -378,17 +442,10 @@ ctx._index = sourceType + "_" + envType + "_" + date;
    
    ```
 
-Considerations:
+#### Considerations
 
 * The url string must include **https://** or validation will fail.
 * The url may include a port. For example, `https://example.com:8443/aem_logs/aem`. If no port is included in the url string, port 443 (the default HTTPS port) is assumed.
-
-#### New Relic Log API {#newrelic-https}
-
-Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.
-
->[!NOTE]
->New Relic provide region specific endpoints based on where your New Relic account is provisioned.  See [here](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) for New Relic documentation.
 
 #### HTTPS CDN logs {#https-cdn}
 
@@ -413,6 +470,54 @@ There is also be a property named `Source-Type`, which is set to one of these va
 * aemhttpdaccess
 * aemhttpderror
 
+### New Relic Log API {#newrelic-https}
+
+Log Forwarding to New Relic leverages the New Relic HTTPS API for ingestion.  Currently it only supports logs from AEM and Dispatcher; CDN logs are not yet supported.
+
+  ```yaml
+    kind: "LogForwarding"
+    version: "1"
+    metadata:
+      envTypes: ["dev"]
+    data:
+      newRelic:
+        default:
+          enabled: true
+          uri: "https://log-api.newrelic.com/log/v1"
+          apiKey: "${{NR_API_KEY}}"
+  ```
+
+>[!NOTE]
+>
+>Log forwarding to New Relic is only available to customer owned New Relic accounts.
+>
+>Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.
+>
+>New Relic provides region specific endpoints based on where your New Relic account is provisioned.  See [New Relic documentation](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) for further information.
+
+### Dynatrace Log API {#dynatrace-https}
+
+Log Forwarding to Dynatrace leverages the Dynatrace HTTPS API for ingestion.  Currently it only supports logs from AEM and Dispatcher; CDN logs are not yet supported.
+
+The "Ingest Logs" scope attribute is required for the Token.
+
+  ```yaml
+    kind: "LogForwarding"
+    version: "1"
+    metadata:
+      envTypes: ["dev"]
+    data:
+      dynatrace:
+        default:
+          enabled: true
+          environmentId: "${{DYNATRACE_ENVID}}"
+          token: "${{DYNATRACE_TOKEN}}"  
+  ```
+
+>[!NOTE]
+>
+> Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.
+
 ### Splunk {#splunk}
 
    ```yaml
@@ -429,7 +534,7 @@ There is also be a property named `Source-Type`, which is set to one of these va
          index: "aemaacs"
    ```
 
-Considerations:
+#### Considerations
 
 * By default, the port is 443. It can optionally be overridden with a property named `port`.
 * The sourcetype field will have one of the following values, depending on the specific log: *aemaccess*, *aemerror*,
@@ -441,6 +546,8 @@ Considerations:
 > [If migrating](#legacy-migration) from legacy Log Forwarding to this self-serve model, the `sourcetype` field's values sent to your Splunk index may have changed, so adjust accordingly.
 
 ### Sumo Logic {#sumologic}
+
+Log Forwarding to Sumo Logic supports AEM and Dispatcher Logs; CDN logs are not yet supported.
 
 When configuring Sumo Logic for data ingestion you will be presented with an "HTTP Source Address" which provides the host, receiverURI and the private key in a single string.  For example:
 
@@ -502,6 +609,7 @@ When ready to migrate, simply configure the YAML file as described in the preced
 It is recommended, but not required, that a configuration is deployed to all environments so they are all under self-serve control. If not, you may forget which environments have been configured by Adobe versus those configured in a self-serve way.
 
 >[!NOTE]
+>
 >The `sourcetype` field's values sent to your Splunk index may have changed, so adjust accordingly.
 >
 >When Log Forwarding is deployed to an environment previously configured by Adobe support, you may receive duplicate logs for up to a few hours. This will eventually auto-resolve.

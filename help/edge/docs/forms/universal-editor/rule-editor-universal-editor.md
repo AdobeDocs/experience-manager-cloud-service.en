@@ -1,385 +1,676 @@
 ---
-title: How to use the rule editor to apply rules to form fields, enabling dynamic behavior and complex logic for forms created with WYSIWYG authoring?
-description: The rule editor in Universal Editor allows you to add dynamic behavior and build complex logic into forms without coding or scripting.
+title: Rule Editor for Dynamic Forms in Universal Editor
+description: Create dynamic, intelligent forms using the Rule Editor in Universal Editor. Add conditional logic, calculations, and interactive behaviors without coding.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
+level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 ---
 
-# Introduction to Rule Editor in WYSIWYG Authoring
+# Rule Editor for Dynamic Forms in Universal Editor
 
-<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
+The Rule Editor allows authors to turn static forms into responsive, intelligent experiences—without writing code. You can conditionally show fields, perform calculations, validate data, guide users through flows, and integrate business logic that adapts as people type.
+
+## What you'll learn
+
+By the end of this guide, you will be able to:
+
+- Understand how rules work and when to use different rule types
+- Enable and access the Rule Editor in Universal Editor
+- Create conditional logic to show or hide fields dynamically
+- Implement automated calculations and data validation
+- Build custom functions for complex business rules
+- Apply best practices for performance, maintainability, and UX
+
+## Why use the Rule Editor?
+
+- **Conditional logic**: Show relevant fields only when needed to reduce noise and cognitive load.
+- **Dynamic calculations**: Compute values automatically (totals, rates, tax) as users type.
+- **Data validation**: Prevent errors early with real-time checks and clear messages.
+- **Guided experiences**: Lead users through logical steps (wizards, branching).
+- **No-code authoring**: Configure powerful behavior through a visual interface.
+
+Common scenarios include tax calculators, loan and premium estimators, eligibility flows, multi-step applications, and surveys with conditional questions.
+
+## How rules work
+
+A rule defines what should happen when a condition is met. Conceptually, a rule has two parts:
+
+- **Condition**: A statement that evaluates to true or false.
+  - Examples: "Income > 50,000," "Coverage = 'Yes'," "Field is empty"
+- **Action**: What occurs when the condition is true (and optionally, when it is false).
+  - Examples: Show/Hide a field, Set/Clear a value, Validate input, Enable/Disable a button
+
++++ Rule logic patterns
+
+- **Condition → Action (When/Then)**
+  
+  ```text
+  WHEN Gross Salary > 50000
+  THEN Show "Additional Deduction"
+  ```
+
+  Best for conditional visibility and progressive disclosure.
+
+- **Action ← Condition (Set If/Only if)**
+
+  ```text
+  SET Taxable Income = Gross Salary - Deductions
+  IF Deductions are applicable
+  ```
+
+  Best for calculations and data transformations.
+
+- **If → Then → Else (Alternate action)**
+
+  ```text
+  IF Income > 50000
+  THEN Show "High Income" fields
+  ELSE Show "Standard Income" fields
+  ```
+
+  Best for branching logic and mutually exclusive flows.
+
++++
+
++++ Real-world example
+
+- **Condition**: "Gross salary exceeds $50,000"
+- **Primary action**: Show "Additional Deduction"
+- **Alternate action**: Hide "Additional Deduction"
+- **Result**: Users see only the fields that apply to them
+
++++
+
+## Prerequisites
 
 
-You can add dynamic form behaviour using the Rule Editor, which allows you to create rules. These rules enable conditional field visibility, automate calculations based on user input, and improve the overall user experience. By streamlining the form-filling process, the Rule Editor helps ensure both accuracy and efficiency.
++++ Access requirements
 
-The Rule Editor offers an intuitive visual interface for creating and managing rules. Its user-friendly approach makes it accessible to all users, even those without extensive technical expertise, allowing them to implement logic effortlessly within their forms.
+**Essential permissions and setup**:
 
-## Understanding a rule
+- **AEM as a Cloud Service**: Authoring access with form editing permissions
+- **Universal Editor**: Installed and configured on your environment
+- **Rule Editor extension**: Enabled via [Extension Manager](/help/implementing/developing/extending/extension-manager.md)
+- **Form editing permissions**: Ability to create and modify form components in Universal Editor
 
-Rules are instructions that guide users on what actions to perform under specific conditions.
+**Verification steps**:
 
-* **Condition**: A condition is a check or rule that evaluates whether something is true or false. It answers the question: "Does this meet the requirement?"
+1. Confirm you can access Universal Editor from your AEM Sites console
+2. Verify you can create and edit form components
+3. Check that the Rule Editor icon ![edit-rules](/help/forms/assets/edit-rules-icon.svg) appears when selecting form components
 
-* **Action**: An action is what happens when the condition is true. It is the task or behavior triggered based on the evaluation of the condition.
++++
 
-A rule typically follows one of the following constructs:
++++ Technical requirements
 
-* **Condition-Action**: Check a condition first, then perform an action. In the rule editor, the `When` rule type enforces the `condition-action` construct.
-* **Action-Condition**: Perform an action first, then check a condition. The `Set Value Of`, and `Validate` rule types in the rule editor enforce the `action-condition` construct.
-* **Action-Condition-Alternate Action**: Perform an action, check a condition, and then either perform the main action or an alternate action based on the condition. For example, by default, the alternate action for `Show` is `Hide`, and for `Enable` it is `Disable`.
+**Required knowledge and skills**:
 
-For example, a condition might check if a user has entered a certain value in a field, and the action could be to show or hide a field.
-* **Condition**: Check if the income is greater than $50,000.
-* **Action**: If the condition is true, show the `Additional Deduction` field; otherwise, perform the alternate action: hide the `Additional Deduction` field.
+- **Universal Editor proficiency**: Experience creating forms with text inputs, dropdowns, and basic field properties
+- **Business logic understanding**: Ability to define conditional requirements and validation rules for your specific use case
+- **Form component familiarity**: Knowledge of field types (text, number, dropdown), properties (required, visible, read-only), and form structure
 
-For detailed step-by-step instructions, see the [add a conditional rule](#2-add-a-conditional-rule).
+**Optional for advanced usage**:
 
-## How to enable Rule Editor extension?
+- **JavaScript fundamentals**: Required only for creating custom functions (data types, functions, basic syntax)
+- **JSON understanding**: Helpful for complex data manipulation and API integrations
 
-In Universal Editor, the Rule Editor extension is not enabled by default. To enable the Rule Editor extension write to us at [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official email id.
+**Assessment questions**:
 
-After the Rule Editor extension is enabled for your environment, the ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon appears in the upper-right corner of the editor.
+- Can you create a basic form with text inputs and a submit button in Universal Editor?
+- Do you understand when fields should be required vs optional in your business context?
+- Can you identify which form elements need conditional visibility in your use case?
+
++++
+
++++ Enable the Rule Editor extension
+
+**Important**: The Rule Editor extension is not enabled by default in Universal Editor environments.
+
+**Activation steps**:
+
+1. Navigate to the [Extension Manager](/help/implementing/developing/extending/extension-manager.md) in your AEM environment
+2. Locate the "Rule Editor" extension in the available extensions list
+3. Click **Enable** and confirm the activation
+4. Wait for the system to refresh (may take 1-2 minutes)
+
+**Verification**:
+
+- After enabling, the Rule Editor icon appears when you select a form component: ![edit-rules](/help/forms/assets/edit-rules-icon.svg)
 
 ![Universal Editor rule editor](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
+Figure: Rule Editor icon appears when you select form components
 
-Select the form component for which you want to write a rule, and click the ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon. The Rule Editor user interface appears.
+To open the Rule Editor:
+
+1. Select a form component in Universal Editor.
+2. Click the Rule Editor icon.
+3. The Rule Editor opens in a side panel.
 
 ![Rule Editor user interface](/help/edge/docs/forms/assets/rule-editor-for-field.png)
+Figure: Rule Editor interface for editing component rules
 
-In this article, `form object` and `form component` are used interchangeably.
+>[!NOTE]
+>
+> Throughout this article, "form component" and "form object" refer to the same elements (for example, inputs, buttons, panels).
 
-Now, you can start writing rules or business logic for the selected form field by using the [available rule types in the Rule Editor](#available-rule-types-in-rule-editor).
-
-## Understanding Rule Editor User Interface
-
-The editor of the Rule Editor opens when you click the ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon:
+## Rule Editor interface overview
 
 ![Rule Editor user Interface](/help/edge/docs/forms/assets/rule-editor-interface.png)
+Figure: Complete Rule Editor interface with numbered components
 
-<table border="1">
-  <thead>
-    <tr>
-      <th>Component of Rule Editor</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1. Title</td>
-      <td>Displays the title of the form component and the selected rule type. For example, 'Enter Gross Salary' is a text box component for which the 'When' rule type is selected. </td>
-    </tr>
-    <tr>
-      <td>2. Form objects and functions</td>
-      <td>The <b>Forms Objects</b> tab shows a hierarchical view of all components contained in the form. The <b>Functions</b> tab includes a set of built-in functions in the rule editor.</td>
-    </tr>
-    <tr>
-      <td>3. Form objects and functions toggle</td>
-      <td>The toggle button alternately shows or hides the form objects and functions pane. </td>
-    </tr>
-    <tr>
-      <td>4. Visual Rule Editor</td>
-      <td>The visual Rule Editor is the interface where you can create rules for the form components.</td>
-    </tr>
-    <tr>
-      <td>5. Done and cancel buttons</td>
-      <td>The <b>Done</b> button is used to save a rule. The <b>Cancel</b> button discards any changes that you made to a rule and closes the Rule Editor.</td>
-    </tr>
-  </tbody>
-</table>
+- **Component title and rule type**: Confirms the selected component and active rule type.
+- **Form Objects and Functions panel**:
+  - Form Objects: hierarchical view of fields and containers for referencing in rules
+  - Functions: built-in math, string, date, and validation helpers
+- **Panel toggle**: Show/hide the objects and functions panel to increase workspace
+- **Visual rule builder**: Drag-and-drop, dropdown-driven rule composer
+- **Controls**: Done (save), Cancel (discard). Always test rules before saving.
 
-Any existing rules on a form component are listed when you select the component. You can view the title and a preview the rule summary on the Rule Editor. Furthermore, you can change the order of rules, edit rules, enable/disbale rules or delete rules.
++++
 
-![show the available rules of form object](/help/edge/docs/forms/assets/rule-editor15.png)
++++ Managing existing rules
+
+When a component already has rules, you can:
+
+- **View**: See rule summaries and logic
+- **Edit**: Modify conditions and actions
+- **Reorder**: Change execution order (top to bottom)
+- **Enable/Disable**: Toggle rules for testing
+- **Delete**: Remove rules safely
+
+>[!TIP]
+>
+> Put specific rules before general ones. Execution is top-to-bottom.
+
++++
 
 ## Available rule types
 
-The Rule Editor provides a set of predefined rule types that you can use to write rules, as displayed in below table:
+Choose the rule type that best matches your intent.
 
-<table border="1">
-  <thead>
-    <tr>
-      <th>Rule Type</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Set Value of</td>
-      <td>Sets the value of a form component depending on whether the specified condition is satisfied or not.</td>
-    </tr>
-    <tr>
-      <td>Clear Value Of</td>
-      <td>Clears the value of the specified form component.</td>
-    </tr>
-    <tr>
-      <td>Hide/Show</td>
-      <td>Hides or shows a form component based on whether a condition is satisfied or not.</td>
-    </tr>
-    <tr>
-      <td>Enable/Disable</td>
-      <td>Enables or disables a form component based on whether a condition is satisfied or not.</td>
-    </tr>
-    <tr>
-      <td>Validate</td>
-      <td>Checks the form component based on a condition and displays an error if the condition is not met. </td>
-    </tr>
-    <tr>
-      <td>When</td>
-      <td>It specifies a condition for evaluation followed by an action to trigger if the condition is satisfied. It follows the <i>condition-action-alternate</i> action rule construct or <i>condition-action</i> rule construct. </td>
-    </tr>
-    <tr>
-      <td>Format</td>
-      <td> Modifies the display value of the form component using the given expression when its value changes.</td>
-    </tr>
-    <tr>
-      <td>Invoke Service</td>
-      <td>Invokes a service configured using external APIs, Form Data Model or RESTful web services.</td>
-    </tr>
-    <tr>
-      <td>Set Property</td>
-      <td>Sets the value of a property of the specified form component based on a condition.</td>
-    </tr>
-    <tr>
-      <td>Set Focus</td>
-      <td>Sets focus on the specified form component.</td>
-    </tr>
-    <tr>
-      <td>Save Form</td>
-      <td>It allows user to save the form as a draft using the Drafts & Submissions Forms Portal component. </td>
-    </tr>
-    <tr>
-      <td>Submit Form</td>
-      <td>Submits the form.</td>
-    </tr>
-    <tr>
-      <td>Reset Form</td>
-      <td>Resets the form.</td>
-    </tr>
-    <tr>
-      <td>Add/Remove Instance</td>
-      <td>Adds or removes an instance of the specified repeatable panel or table row.</td>
-    </tr>
-    <tr>
-      <td>Navigate To</td>
-      <td>Navigates to other Adaptive Forms, other assets such as images or document fragments, or an external URL.</td>
-    </tr>
-    <tr>
-      <td>Dispatch Event</td>
-      <td>Triggers specific actions based on predefined conditions or events.</td>
-    </tr>
-    <tr>
-      <td>Navigate Among the Panels</td>
-      <td>Allows you to shift focus among different panels in a form.</td>
-    </tr>
-  </tbody>
-</table>
++++ Conditional logic
 
+- **When**: Primary rule for complex conditional behavior (Condition → Action ± Else)
+- **Hide/Show**: Controls visibility based on a condition (progressive disclosure)
+- **Enable/Disable**: Controls whether a field is interactive (for example, disable Submit until required fields are valid)
 
-Now, let's explore how to [write rules in the Rule Editor](#write-rules).
++++
 
-## Write Rules
++++ Data manipulation
 
-To understand how to write rules in Visual Rule Editor, let's consider an simple example of a tax calculation form: 
+- **Set Value Of**: Auto-populate values (for example, dates, totals, copies)
+- **Clear Value Of**: Remove data when conditions change
+- **Format**: Transform display formatting (currency, phone, date) without altering stored values
 
-![Rule Editor example](/help/edge/docs/forms/assets/rule-editor-1.png)
++++
 
-In the form described above, the user enters the gross salary. Based on this input, conditional field is displayed and the payable tax is calculated. 
++++ Validation
 
-**Form Fields:**
-* Gross Salary (user input)
-* Additional Deduction (conditional field)
-* Taxable Income (calculated field)
-* Tax Payable (calculated field)
+- **Validate**: Custom validation logic, including cross-field checks and business rules
 
-**Conditional Rule:**
-  * Condition: Gross Salary > 50,000
-  * Action: Show the Additional Deduction field
++++
 
-**Calculation Rules:**
++++ Calculation
 
-* Taxable Income = Gross Salary - Additional Deduction (if applicable)
-* Tax Payable = Taxable Income * Tax Rate (for simplicity, assume a fixed rate of 10%)
+- **Mathematical Expression**: Compute values in real time (totals, tax, ratios)
 
-To write rules, perform the following steps:
++++
 
-### 1. Author a form
++++ User interface
 
-  To author a form in Universal Editor:
+- **Set Focus**: Move focus to a specific field (use sparingly)
+- **Set Property**: Modify component properties dynamically (placeholder, options, etc.)
 
-   1. Open a form in Universal Editor for editing.
-   1. Add the following form components:
-      * Tax Calculation Form (Title)
-      * Gross Salary (Number Input)
-      * Additional Deduction (Number Input)
-      * Taxable Income (Number Input)
-      * Tax Payable (Number Input)
-      * Submit (Submit Button)
-   1. Hide the `Additional Deduction` form field, by opening its `Properties`.
-   
-      ![Rule Editor example](/help/edge/docs/forms/assets/rule-editor2.png)
++++
 
-### 2. Add a conditional rule for a form field
++++ Form control
 
-  Once you have authored the form, write the first rule to show the `Additional Deduction` field only if the gross salary exceeds $50,000. To add a conditional rule:
+- **Submit Form**: Programmatically submit the form (only after validations pass)
+- **Reset Form**: Clear and reset to initial state (confirm before use)
+- **Save Form**: Save as draft for later (long forms, multi-session)
 
-  1. Open a form in Universal Editor for editing and select the **[!UICONTROL Gross Salary]** field in the content tree and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Alternatively, you can select **[!UICONTROL Gross Salary]** field directly from the **[!UICONTROL Forms Object]** pane.
-    ![Rule Editor example1](/help/edge/docs/forms/assets/rule-editor3.png)
-  The visual Rule Editor interface appears.
-  1. Click **[!UICONTROL Create]** to create rules.
-   ![Rule Editor example2](/help/edge/docs/forms/assets/rule-editor4.png)
-  By default, the `Set Value Of` rule type is selected. While you cannot change or modify the selected object, you can use the rule drop-down to select another rule type.  
-  ![Rule Editor example3](/help/edge/docs/forms/assets/rule-editor5.png)
-  1. Open the rule type drop-down list and select **[!UICONTROL When]** rule type.
-  ![Rule Editor example4](/help/edge/docs/forms/assets/rule-editor6.png)
-  1. Select **[!UICONTROL Select State]** drop-down and select **[!UICONTROL is greater than]**. The **[!UICONTROL Enter a Number]** field appears.
-  ![Rule Editor example5](/help/edge/docs/forms/assets/rule-editor7.png)
-  1. Enter `50000` in the **[!UICONTROL Enter a Number]** field in the rule.
-  ![Rule Editor example6](/help/edge/docs/forms/assets/rule-editor8.png)
-  You have defined the condition as `When Gross Salary is greater than 50000`. Next, define the action to perform if this condition is `True`.
-  1. In the `Then` statement, select **[!UICONTROL Show]** from the **[!UICONTROL Select Action]** drop-down.
-  ![Rule Editor example7](/help/edge/docs/forms/assets/rule-editor9.png)
-  1. Drag-drop the **[!UICONTROL Additional Deduction]** field from the Form Objects tab on the **[!UICONTROL Drop object or select here]** field. Alternatively, select the **[!UICONTROL Drop object or select here]** field and select the **[!UICONTROL Additional Deduction]** field from the pop-up menu, which lists all form objects in the form.
-  ![Rule Editor example8](/help/edge/docs/forms/assets/rule-editor10.png)
-  1. Click **[!UICONTROL Add Else Section]** to add another condition for the **[!UICONTROL Gross Salary]** field, in case you enter salary less than `50000`.
-  ![Rule Editor example9](/help/edge/docs/forms/assets/rule-editor11.png)
-  1. Select **[!UICONTROL Hide]** from the **[!UICONTROL Select Action]** drop-down in the `Else` statement.
-  ![Rule Editor example10](/help/edge/docs/forms/assets/rule-editor12.png)
-  1. Drag-drop the **[!UICONTROL Additional Deduction]** field from the Form Objects tab on the **[!UICONTROL Drop object or select here]** field. Alternatively, select the **[!UICONTROL Drop object or select here]** field and select the **[!UICONTROL Additional Deduction]** field from the pop-up menu, which lists all form objects in the form.
-  ![Rule Editor example11](/help/edge/docs/forms/assets/rule-editor13.png)
-  1. Select **[!UICONTROL Done]** to save the rule.
-  The rule appears as follows in the Rule Editor.
-  ![Rule Editor example12](/help/edge/docs/forms/assets/rule-editor14.png)
++++
 
-  >[!NOTE]
-  >
-  > Alternatively, you can write a Show rule on the Additional Deduction field, instead of a When rule on the Gross Salary field, to implement the same behavior.
++++ Advanced
 
-### 3. Add calculation rules for the form fields
+- **Invoke Service**: Call external APIs/services (handle loading and errors)
+- **Add/Remove Instance**: Manage repeatable sections (for example, dependents, addresses)
+- **Navigate To**: Route to other forms/pages (preserve data before navigation)
+- **Navigate Among Panels**: Control wizard step navigation and skipping
+- **Dispatch Event**: Trigger custom events for integrations or analytics
 
-  Next, write a rule to compute the `Taxable Income`, which is the difference between `Gross Salary` and `Additional Deduction` (if applicable). To add calculation rule on the **[!UICONTROL Taxable Income]** field, perform the following steps:
-  
-  1. In authoring mode, select the **[!UICONTROL Taxable Income]** field and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon. Alternatively, you can select **[!UICONTROL Taxable Income]** field directly from the **[!UICONTROL Forms Object]** pane.
-  1. Next, select **[!UICONTROL Create]** to create the rule.
-    ![Rule Editor example13](/help/edge/docs/forms/assets/rule-editor16.png)
-  1. Select **[!UICONTROL Select Option]** and select **[!UICONTROL Mathematical Expression]**. A field to write mathematical expression opens.
-    ![Rule Editor example14](/help/edge/docs/forms/assets/rule-editor17.png)
++++
 
-  1. In the mathematical expression field:
-  
-      * Select or drag-drop from the Forms Object tab the **[!UICONTROL Gross Salary]** field in the first **[!UICONTROL Drop object or select here]** field.
-  
-      * Select **[!UICONTROL Minus]** from the **[!UICONTROL Select Operator]** field.
-  
-      * Select or drag-drop from the Forms Object tab the **[!UICONTROL Additional Deduction]** field in the other **[!UICONTROL Drop object or select here]** field.
-      ![Rule Editor example15](/help/edge/docs/forms/assets/rule-editor18.png)
+## Step-by-step tutorial: Build a smart tax calculator
 
-  1. Select **[!UICONTROL Done]** to save the rule.  
-      
-      Now, add a rule for the `Tax Payable ` field, which is determined by multiplying the taxable income by the tax rate. For simplicity, assume a fixed tax rate of `10%`.
++++ Tutorial overview
 
-  1. In authoring mode, select the **[!UICONTROL Tax Payable]** field and select ![edit-rules](/help/forms/assets/edit-rules-icon.svg) icon. Next, select **[!UICONTROL Create]** to create rules.
-  ![Rule Editor example16](/help/edge/docs/forms/assets/rule-editor19.png)
-  1. Select **[!UICONTROL Select Option]** and select **[!UICONTROL Mathematical Expression]**. A field to write mathematical expression opens.
-  ![Rule Editor example17](/help/edge/docs/forms/assets/rule-editor20.png)
-  1. In the mathematical expression field:
-  
-      * Select or drag-drop from the Forms Object tab the **[!UICONTROL Taxable Income]** field in the first **[!UICONTROL Drop object or select here]** field.
-  
-      * Select **[!UICONTROL Multiplied by]** from the **[!UICONTROL Select Operator]** field.
-  
-      * Select **Number** from the  **[!UICONTROL Select Option]** field  and enter the value as `10` in the **[!UICONTROL Enter a Number]** field.
-      ![Rule Editor example18](/help/edge/docs/forms/assets/rule-editor21.png)
-  1. Next, select in the highlighted area around the expression field and select **[!UICONTROL Extend Expression]**.
-    ![Rule Editor example19](/help/edge/docs/forms/assets/rule-editor22.png)
-  1. In the extended expression field, select **[!UICONTROL divided by]** from the **[!UICONTROL Select Operator]** field and **[!UICONTROL Number]** from the **[!UICONTROL Select Option]** field. Then, specify `100` in the number field.
-    ![Rule Editor example20](/help/edge/docs/forms/assets/rule-editor23.png)
-  1. Select **[!UICONTROL Done]** to save the rule. 
+This example demonstrates conditional visibility and automatic calculations.
 
-### 4. Preview a form
+![Screenshot of the Rule Editor interface showing the creation of a conditional rule with When-Then logic for form field visibility](/help/edge/docs/forms/assets/rule-editor-1.png)
+Figure: Tax calculation form with intelligent conditional fields
 
-Now, when you preview the form and enter the **Gross Salary** as `60,000`, the **Additional Deduction** field appears, and the **Taxable Income** and **Tax Payable** are calculated accordingly.
+You will build a form that:
+
+1. Adapts to user input by showing relevant fields
+2. Calculates values in real time
+3. Validates data to improve accuracy
+
++++
+
++++ Form structure
+
+| Field Name              | Type          | Purpose                        | Behavior                                |
+|-------------------------|---------------|--------------------------------|-----------------------------------------|
+| Gross Salary            | Number Input  | User's annual income           | Triggers conditional logic               |
+| Additional Deduction    | Number Input  | Extra deductions (if eligible) | Visible only when Salary > $50,000       |
+| Taxable Income          | Number Input  | Calculated value               | Read-only, updates on change             |
+| Tax Payable             | Number Input  | Calculated value               | Read-only, computed at a flat rate       |
+
++++
+
++++ Business logic
+
+- **Rule 1: Conditional display**
+
+  ```text
+  WHEN Gross Salary > 50,000
+  THEN Show "Additional Deduction"
+  ELSE Hide "Additional Deduction"
+  ```
+
+- **Rule 2: Taxable Income calculation**
+
+  ```text
+  SET Taxable Income = Gross Salary - Additional Deduction
+  (Only when Additional Deduction applies)
+  ```
+
+- **Rule 3: Tax Payable calculation**
+
+  ```text
+  SET Tax Payable = Taxable Income × 10%
+  (Simplified flat rate)
+  ```
+
++++
+
++++ Step 1: Create the foundation form
+
+**Objective**: Build the base form with all fields and initial settings.
+
+1. **Open Universal Editor**:
+   - Navigate to AEM Sites console, select your page, click **Edit**
+   - Ensure you have the [Universal Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) properly configured
+
+2. **Add form components in this order**:
+   - Title (H2): "Tax Calculation Form"
+   - Number Input: "Gross Salary" (Required: Yes, Placeholder: "Enter annual salary")
+   - Number Input: "Additional Deduction" (Required: No, Placeholder: "Enter additional deductions")
+   - Number Input: "Taxable Income" (Read-only: Yes)
+   - Number Input: "Tax Payable" (Read-only: Yes)
+   - Submit button: "Calculate Tax"
+
+3. **Configure initial field properties**:
+   - Hide "Additional Deduction" (set Visible: No in Properties panel)
+   - Set "Taxable Income" and "Tax Payable" to Read-only: Yes
+
+![Screenshot of a tax calculation form with input fields for gross salary, marital status, and dependent children, demonstrating the form structure before rules are applied](/help/edge/docs/forms/assets/rule-editor2.png)
+Figure: Initial form structure with basic components configured
+
+**Checkpoint**: You should have a form with all required fields where "Additional Deduction" is hidden and calculated fields are read-only.
+
++++
+
++++ Step 2: Add conditional visibility rule
+
+**Goal**: Show "Additional Deduction" field only when Gross Salary exceeds $50,000.
+
+1. **Select the Gross Salary field** and click the Rule Editor icon ![edit-rules](/help/forms/assets/edit-rules-icon.svg)
+2. **Create a new rule**:
+   - Click **Create**
+   - Change rule type from "Set Value Of" to **"When"**
+3. **Configure the condition**:
+   - Select **"is greater than"** from the dropdown
+   - Enter `50000` in the number field
+4. **Set the Then action**:
+   - Choose **"Show"** from the Select Action dropdown
+   - Drag or select **"Additional Deduction"** field from Form Objects
+5. **Add the Else action**:
+   - Click **"Add Else Section"**
+   - Choose **"Hide"** from the Select Action dropdown
+   - Select **"Additional Deduction"** field
+6. **Save the rule**: Click **Done**
+
+>[!NOTE]
+>
+> Alternative approach: You can achieve the same result by creating a Show/Hide rule directly on the "Additional Deduction" field instead of a When rule on "Gross Salary."
+
++++
+
++++ Step 3: Add calculation rules
+
+**Goal**: Automatically compute "Taxable Income" and "Tax Payable" based on user input.
+
+**Configure Taxable Income calculation**:
+
+1. **Select "Taxable Income" field** and open Rule Editor
+2. **Create Mathematical Expression**:
+   - Click **Create** → Select **"Mathematical Expression"**
+   - Build expression: **Gross Salary − Additional Deduction**
+   - Drag "Gross Salary" to first field
+   - Select **"Minus"** operator
+   - Drag "Additional Deduction" to second field
+3. **Save**: Click **Done**
+
+**Configure Tax Payable calculation**:
+
+1. **Select "Tax Payable" field** and open Rule Editor
+2. **Create Mathematical Expression**:
+   - Click **Create** → Select **"Mathematical Expression"**
+   - Build expression: **Taxable Income × 10 ÷ 100**
+   - Drag "Taxable Income" to first field
+   - Select **"Multiplied by"** operator
+   - Enter `10` as number
+   - Click **"Extend Expression"**
+   - Select **"divided by"** operator
+   - Enter `100` as number
+3. **Save**: Click **Done**
+
++++
+
++++ Step 4: Test the form
+
+**Verify your implementation by testing the complete flow**:
+
+1. **Preview the form**: Click the preview mode in Universal Editor
+2. **Test the conditional logic**:
+   - Enter Gross Salary = `30000` → "Additional Deduction" should remain hidden
+   - Enter Gross Salary = `60000` → "Additional Deduction" should appear
+3. **Test calculations**:
+   - With Gross Salary = `60000`, enter Additional Deduction = `5000`
+   - Verify Taxable Income = `55000` (60000 - 5000)
+   - Verify Tax Payable = `5500` (55000 × 10%)
 
 ![Preview a form](/help/edge/docs/forms/assets/rule-editor-form.png)
+Figure: Completed tax calculator with conditional fields and automatic calculations
 
-Apart from the out-of-the-box functions like Sum, Average that are listed under Functions Output, you can [write custom functions](#create-a-custom-function) to implement complex business logics.
-
-## Custom Function in Rule Editor
-
-Edge Delivery Services Forms supports custom functions, that allows users to define JavaScript functions for implementing complex business rules. The custom functions extend the capabilities of forms by facilitating manipulation and processing of entered data to meet specified requirements. 
-
-### Create a custom function
-
-To create a custom functions, edit the `../[blocks]/form/functions.js` file. The creation process generally involves the following steps:
-
-* **Function Declaration**: Define the function name and its parameters (the inputs that it accepts).
-* **Logic Implementation**: Write the code that outlines the specific calculations or manipulations performed by the function.
-* **Function Export**: Make the function accessible within your rules by exporting it from the relevant file.
+**Success criteria**: The form should dynamically show/hide fields and calculate values in real-time as users type.
 
 
-This example demonstrates two custom functions as`getFullName` and `days`:  
++++
 
-```JavaScript
+## Advanced: Custom functions
 
+For complex business logic beyond built-in capabilities, you can create custom JavaScript functions that integrate seamlessly with the Rule Editor.
+
++++ When to use custom functions
+
+**Ideal scenarios for custom functions**:
+
+- **Complex calculations**: Multi-step computations not easily expressed in the Mathematical Expression rule
+- **Business-specific validations**: Custom validation logic specific to your organization or industry
+- **Data transformations**: Format conversions, string manipulations, or data parsing
+- **External integrations**: Calls to internal APIs or third-party services (with limitations)
+
+**Benefits of custom functions**:
+
+- **Reusability**: Write once, use across multiple forms and rules
+- **Maintainability**: Centralized logic that's easier to update and debug
+- **Performance**: Optimized JavaScript execution compared to complex rule chains
+- **Flexibility**: Handle edge cases and complex scenarios not addressed by standard rules
+
++++
+
++++ Creating and implementing custom functions
+
+**File location**: All custom functions must be defined in `/blocks/form/functions.js` in your Edge Delivery Services project.
+
+**Development workflow**:
+
+1. **Function design**
+   - Use descriptive, action-oriented function names
+   - Define clear parameter types and return values
+   - Handle edge cases and invalid inputs gracefully
+
+2. **Implementation**
+   - Write clean, well-commented JavaScript
+   - Include input validation and error handling
+   - Test functions independently before integration
+
+3. **Documentation**
+   - Add comprehensive JSDoc comments
+   - Include usage examples and parameter descriptions
+   - Document any limitations or dependencies
+
+4. **Deployment**
+   - Export functions using named exports
+   - Deploy to your project repository
+   - Verify build completion before testing
+
+**Example implementation**:
+
+```javascript
 /**
- * Get Full Name
- * @name getFullName Concats first name and last name
- * @param {string} firstname in Stringformat
- * @param {string} lastname in Stringformat
- * @return {string}
+ * Concatenates first and last name with proper formatting
+ * @name getFullName
+ * @description Combines first and last name, handles edge cases like missing values
+ * @param {string} firstName - The person's first name
+ * @param {string} lastName - The person's last name  
+ * @returns {string} Formatted full name or empty string if both inputs are invalid
  */
-function getFullName(firstname, lastname) {
-  return `${firstname} ${lastname}`.trim();
+function getFullName(firstName, lastName) {
+  // Handle null, undefined, or empty string inputs
+  const first = (firstName || '').toString().trim();
+  const last = (lastName || '').toString().trim();
+  
+  return `${first} ${last}`.trim();
 }
 
 /**
- * Calculate the number of days between two dates.
- * @param {*} endDate
- * @param {*} startDate
- * @name days Calculates the numebr of days between two dates
- * @returns {number} returns the number of days between two dates
+ * Calculates the number of days between two dates
+ * @name days
+ * @description Computes absolute difference in days, handles various date input formats
+ * @param {Date|string} endDate - End date (Date object or ISO string)
+ * @param {Date|string} startDate - Start date (Date object or ISO string)
+ * @returns {number} Number of days between dates, 0 if inputs are invalid
  */
 function days(endDate, startDate) {
+  // Convert string inputs to Date objects
   const start = typeof startDate === 'string' ? new Date(startDate) : startDate;
   const end = typeof endDate === 'string' ? new Date(endDate) : endDate;
 
-  // return zero if dates are valid
+  // Validate date objects
   if (Number.isNaN(start.getTime()) || Number.isNaN(end.getTime())) {
     return 0;
   }
 
+  // Calculate absolute difference in milliseconds, then convert to days
   const diffInMs = Math.abs(end.getTime() - start.getTime());
   return Math.floor(diffInMs / (1000 * 60 * 60 * 24));
 }
 
-// eslint-disable-next-line import/prefer-default-export
+// Export functions for use in Rule Editor
 export { getFullName, days };
-
 ```
+
 ![Adding custom Function](/help/edge/docs/forms/assets/create-custom-function.png)
+Figure: Adding custom functions to the functions.js file
 
-### Use a Custom Function in Rule Editor
++++
 
-To use the custom function in the Rule Editor:
++++ Using custom functions in Rule Editor
 
-1. **Add the Function**: Include your custom function in the`../[blocks]/form/functions.js` file. Remember to add it to the `export` statement within the file.
-1. **Deploy the File**: Deploy the updated `functions.js` file to your GitHub project and verify a successful build.
-1. **Function Usage**: Access the function within your form's Rule Editor by selecting the `Function Output` option in the **[!UICONTROL Select Action]** field.
+**Integration steps**:
 
-    ![Custom Function in Rule Editor](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
+1. **Add function to project**
+   - Create or edit `/blocks/form/functions.js` in your project
+   - Include your function in the export statement
 
-1. **Preview the form**: Preview your form with the newly implemented function.  
+2. **Deploy and build**
+   - Commit changes to your repository
+   - Ensure the build process completes successfully
+   - Allow time for CDN cache updates
 
-## Additional Information
+3. **Access in Rule Editor**
+   - Open Rule Editor for any form component  
+   - Select **"Function Output"** in the **Select Action** dropdown
+   - Choose your custom function from the available functions list
+   - Configure function parameters using form fields or static values
 
->[!NOTE]
+4. **Test thoroughly**
+   - Preview the form to verify function behavior
+   - Test with various input combinations including edge cases
+   - Verify performance impact on form loading and interaction
+
+![Custom Function in Rule Editor](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
+Figure: Selecting and configuring custom functions in the Rule Editor interface
+
+**Best practices for function usage**:
+
+- **Error handling**: Always include fallback behavior for function failures
+- **Performance**: Profile functions with realistic data volumes  
+- **Security**: Validate all inputs to prevent security vulnerabilities
+- **Testing**: Create test cases covering normal and edge cases
+
++++
+
+## Best practices for rule development
+
+
++++ Performance optimization
+
+- Minimize rule complexity; split large logic into small, focused rules
+- Order rules by frequency (most common first)
+- Keep rule sets per component manageable
+- Prefer reusable custom functions over duplicating logic
+
++++
+
++++ User experience
+
+- Provide clear validation and inline feedback
+- Avoid jarring visual changes; use show/hide thoughtfully
+- Test across devices and layouts
+
++++
+
++++ Development hygiene
+
+- Test with edge cases and known values
+- Verify across browsers
+- Document intent behind complex rules, not just mechanics
+- Maintain a rule inventory for large forms
+- Use consistent naming for components and rules
+- Version custom functions and test in non-production environments
+
++++
+
+## Troubleshooting common issues
+
+
++++ Rules not triggering
+
+- Verify component names and references
+- Check execution order (top to bottom)
+- Validate conditions with known values
+- Inspect browser console for blocking errors
+
++++
+
++++ Incorrect behavior
+
+- Review operators and grouping (AND/OR)
+- Test expression fragments individually
+- Confirm data types (numbers vs strings)
+
++++
+
++++ Performance issues
+
+- Simplify deeply nested conditions
+- Profile custom functions
+- Minimize external calls inside rules
+- Use specific selectors and references
+
++++
+
++++ Custom function issues
+
+- Confirm file path: `/blocks/form/functions.js`
+- Ensure named exports are correct
+- Confirm the build includes your changes
+- Clear browser cache after deployment
+- Validate parameter types and error handling
+
++++
+
++++ Universal Editor integration
+
+- Confirm the Rule Editor extension is enabled
+- Select a supported component
+- Use a supported browser (Chrome, Firefox, Safari)
+- Verify you have required permissions
+
+## Important limitations
+
+>[!IMPORTANT]
 >
-> In Universal Editor, static and dynamic imports are not supported in custom function scripts. You need to add the complete code in the `../[blocks]/form/functions.js` file.
+> Custom function constraints:
+>
+> - Static/dynamic imports are not supported
+> - All logic must reside in `/blocks/form/functions.js`
+> - Functions must be synchronous (no async/await or Promises)
+> - Browser API access is limited
 
-This article provides limited information on the Rule Editor available in the Universal Editor. To learn more about the Rule Editor and custom functions, refer to the following articles:
+>[!WARNING]
+>
+> Production considerations:
+>
+> - Test thoroughly in staging
+> - Monitor performance post-deploy
+> - Have a rollback plan for rule issues
+> - Consider slow networks and low-spec devices
 
-{{see-also-rule-editor}}
+## Summary
 
-## See also
+The Rule Editor in Universal Editor transforms static forms into intelligent, responsive experiences that adapt to user input in real-time. By leveraging conditional logic, automated calculations, and custom business rules, you can create sophisticated form workflows without writing application code.
 
-{{universal-editor-see-also}}
+**Key capabilities you've learned**:
+
+- **Conditional logic**: Show and hide fields based on user input to create focused, relevant experiences
+- **Dynamic calculations**: Automatically compute values (taxes, totals, rates) as users interact with the form
+- **Data validation**: Implement real-time validation with clear, actionable feedback messages
+- **Custom functions**: Extend capabilities with JavaScript for complex business logic and integrations
+- **Performance optimization**: Apply best practices for maintainable, efficient rule development
+
+**Value delivered**:
+
+- **Enhanced user experience**: Reduce cognitive load with progressive disclosure and intelligent form flows
+- **Reduced errors**: Prevent invalid submissions through real-time validation and guided input
+- **Improved efficiency**: Automate calculations and data entry to minimize user effort
+- **Maintainable solutions**: Create reusable, well-documented rules that scale across your organization
+
+**Business impact**:
+
+Forms become powerful tools for data collection, lead qualification, and user engagement. The Rule Editor enables non-technical authors to implement sophisticated business logic, reducing development costs while improving form completion rates and data quality.
+
++++
+
+## Next steps
+
+**Recommended learning path**:
+
+1. **Start with basics**: Create simple show/hide rules to understand the core concepts
+2. **Practice with tutorials**: Use the tax calculator example as a foundation for your own forms
+3. **Expand gradually**: Add mathematical expressions and validation rules as your confidence grows
+4. **Implement custom functions**: Develop JavaScript functions for specialized business requirements
+5. **Optimize and scale**: Apply performance best practices and maintain rule documentation
+
+**Additional resources**:
+
+- [Universal Editor documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html) for broader context
+- [Extension Manager guide](/help/implementing/developing/extending/extension-manager.md) for enabling additional capabilities
+- [Edge Delivery Services forms](/help/edge/docs/forms/overview.md) for comprehensive form development guidance
+

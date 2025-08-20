@@ -14,9 +14,9 @@ Traffic filter rules can be used to block or allow requests at the CDN layer, wh
 * Establishing rate limits to be less susceptible to volumetric DoS attacks
 * Preventing IP addresses known to be malicious from targeting your pages
 
-Most of these traffic filter rules are available to all AEM as a Cloud Service Sites and Forms customers. They mainly operate on request properties and request headers, including IP, hostname, path, and user agent.
+Many of these traffic filter rules are available to all AEM as a Cloud Service Sites and Forms customers. Referred to as *standard traffic filter rules*, they mainly operate on request properties and request headers, including IP, hostname, path, and user agent. Standard traffic filter rules include rate limit rules to guard against traffic spikes.
 
-A subcategory of traffic filter rules requires either an Enhanced Security license or WAF-DDoS Protection license. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or WAF rules for short) and have access to the [WAF Flags](#waf-flags-list) described later in this article.
+A subcategory of traffic filter rules requires either an Enhanced Security license or WAF-DDoS Protection license. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or *WAF rules* for short) and have access to the [WAF Flags](#waf-flags-list) described later in this article.
 
 Traffic filter rules can be deployed via Cloud Manager config pipelines to dev, stage, and production environment types. The configuration file can be deployed to Rapid Development Environments (RDEs) using command line tooling.
 
@@ -43,8 +43,6 @@ This article is organized into the following sections:
 * **Recommended Starter Rules:** A set of rules to get started with.
 * **Tutorial:** Practical knowledge about the feature, including how to use dashboard toolings to declare the right rules.
 
-Adobe invites you to give feedback or ask questions about traffic filter rules by emailing **aemcs-waf-adopter@adobe.com**.
-
 ## Traffic Protection Overview {#traffic-protection-overview}
 
 In the current digital landscape, malicious traffic is an ever-present threat. Adobe recognizes the gravity of the risk and offers several approaches to protect customer applications and mitigate attacks when they occur.
@@ -57,23 +55,23 @@ Customers may take proactive measures to mitigate application layer attacks (lay
 
 For example, at the Apache layer, customers may configure either the [Dispatcher module](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) or [ModSecurity](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) to limit access to certain content.
 
-As this article describes, traffic filter rules may be deployed to the Adobe Managed CDN, using Cloud Manager's [config pipelines](/help/operations/config-pipeline.md). In addition to traffic filter rules based on properties like IP address, path, and headers, or rules based on setting rate limits, customers may also license a powerful subcategory of traffic filter rules called WAF rules.
+As this article describes, traffic filter rules may be deployed to the Adobe Managed CDN, using Cloud Manager's [config pipelines](/help/operations/config-pipeline.md). In addition to *standard traffic filter rules* based on properties like IP address, path, and headers, or rules based on setting rate limits, customers may also license a powerful subcategory of traffic filter rules called *WAF rules*.
 
 ## Suggested Process {#suggested-process}
 
 The following is a high-level recommended end-to-end process for coming up with the right traffic filter rules:
 
 1. Configure non-production and production config pipelines, as described in the [Setup](#setup) section.
-1. Customers who have licensed the subcategory of WAF traffic filter rules should enable them in Cloud Manager.
+1. Customers who have licensed the *WAF traffic filter rules* should enable them in Cloud Manager.
 1. Read and try out the tutorial to concretely understand how to use traffic filter rules, including WAF rules if they've been licensed. The tutorial walks you through deploying rules to a dev environment, simulating malicious traffic, downloading the [CDN logs](#cdn-logs), and analyzing them in [dashboard tooling](#dashboard-tooling).
-1. Copy the recommended starter rules to `cdn.yaml` and deploy the configuration to the production environment in log mode.
-1. After collecting some traffic, analyze the results using [dashboard tooling](#dashboard-tooling) to see if there were any matches. Lookout for false positives, and make any necessary adjustments, ultimately enabling the starter rules in block mode.
-1. Add custom rules based on analysis of the CDN logs, first testing with simulated traffic on dev environments before deploying to stage and production environments in log mode, then block mode.
+1. Copy the recommended starter rules to `cdn.yaml` and deploy the configuration to the production environment, with some of the rules in log mode.
+1. After collecting some traffic, analyze the results using [dashboard tooling](#dashboard-tooling) to see if there were any matches. Lookout for false positives, and make any necessary adjustments, ultimately enabling all the starter rules in block mode.
+1. If necessary, add custom rules based on analysis of the CDN logs, first testing with simulated traffic on dev environments before deploying to stage and production environments in log mode, then block mode.
 1. Monitor traffic on an ongoing basis, changing the rules as the threat landscape evolves.
 
 ## Setup {#setup}
 
-1. Create a file `cdn.yaml` with a set of traffic filter rules, including WAF rules.
+1. Create a file `cdn.yaml` with a set of traffic filter rules, including WAF rules. For example:
 
    ```
    kind: "CDN"
@@ -103,13 +101,13 @@ The following is a high-level recommended end-to-end process for coming up with 
 
    1. To configure WAF on an existing program, [edit your program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) and on the **Security** tab uncheck or check the **WAF-DDOS** option at any time.
 
-1. Create a config pipeline in Cloud Manager, as described in [config pipeline article](/help/operations/config-pipeline.md#managing-in-cloud-manager). The pipeline will reference a top level `config` folder with the `cdn.yaml` file placed somewhere below, see [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure).
+1. Create a config pipeline in Cloud Manager, as described in the [config pipeline article](/help/operations/config-pipeline.md#managing-in-cloud-manager). The pipeline will reference a top level `config` folder with the `cdn.yaml` file placed somewhere below, see [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure).
 
 ## Traffic Filter Rules Syntax {#rules-syntax}
 
 You can configure *traffic filter rules* to match on patterns such as IPs, user agent, request headers, hostname, geo, and url.
 
-Customers who license the Enhanced Security or WAF-DDoS Protection Security offering can also configure a special category of traffic filter rules called *WAF traffic filter rules* (or WAF rules for short) that reference one or more [WAF flags](#waf-flags-list).
+Customers who license the Enhanced Security or WAF-DDoS Protection Security offering can also configure a special category of traffic filter rules called *WAF traffic filter rules* (or *WAF rules* for short) that reference one or more [WAF flags](#waf-flags-list).
 
 Here's an example of a set of traffic filter rules, which also includes a WAF rule.
 
@@ -233,8 +231,8 @@ The `wafFlags` property, which can be used in the licensable WAF traffic filter 
 
 | **Flag ID**  | **Flag Name** | **Description**  |
 |---|---|---|
-| ATTACK | Attack | Flag to identify requests that contain one or several of attack kinds listed in that table |
-| ATTACK-FROM-BAD-IP | Attack from bad IP | Flag to identify requests coming from `BAD-IP` and that contain  one or several of attack kinds listed in that table |
+| ATTACK | Attack | An aggregation of flags related to malicious traffic (SQLI, CMDEXE, XSS, etc). See the [Recommended WAF rules section](#recommended-waf-starter-rules) for how this flag may be used effectively. |
+| ATTACK-FROM-BAD-IP | Attack from bad IP | Similar to the ATTACK flag, but "logically AND-ed" with the `BAD-IP` flag so a request is flagged if it matched both ATTACK and BAD-IP. See the [Recommended WAF rules section](#recommended-waf-starter-rules) for how this flag may be used effectively. |
 | SQLI  | SQL Injection  | SQL Injection is the attempt to gain access to an application or obtain privileged information by executing arbitrary database queries.  |
 | BACKDOOR  |  Backdoor | A backdoor signal is a request which attempts to determine if a common backdoor file is present on the system.  |
 | CMDEXE  | Command Execution  | Command Execution is the attempt to gain control or damage a target system through arbitrary system commands by means of user input.  |
@@ -250,10 +248,10 @@ The `wafFlags` property, which can be used in the licensable WAF traffic filter 
 | **Flag ID**  | **Flag Name** | **Description**  |
 |---|---|---|
 | ABNORMALPATH  | Abnormal Path  | Abnormal Path indicates that the original path differs from the normalized path (for example, `/foo/./bar` is normalized to `/foo/bar`)  |
-| BAD-IP | Bad IP | Flag to identify request coming from IPs identify as bad, either because there are identify as malicious sources (`SANS`, `TORNODE`) or because they have been identified as bad by the WAF after they sent too many malicious requests |
+| BAD-IP | Bad IP | Identifies requests originating from IP addresses known to be malicious, either due to inclusion in datasets such as `SANS` and `TORNODE`, or based on prior detection of malicious behavior by the WAF |
 | BHH  | Bad Hop Headers | Bad Hop Headers indicate an HTTP smuggling attempt through either a malformed Transfer-Encoding (TE) or Content-Length (CL) header, or a well-formed TE and CL header  |
 | CODEINJECTION | Code Injection | Code Injection is the attempt to gain control or damage a target system through arbitrary application code commands by user input. |
-| COMPRESSED | Compression Detected	| The POST request body is compressed and cannot be inspected. For example, if a `Content-Encoding: gzip` request header is specified and the POST body is not plain text. |
+| COMPRESSED | Compression Detected    | The POST request body is compressed and cannot be inspected. For example, if a `Content-Encoding: gzip` request header is specified and the POST body is not plain text. |
 | RESPONSESPLIT  | HTTP Response Splitting  | Identifies when CRLF characters are submitted as input to the application to inject headers into the HTTP response  |
 | NOTUTF8  | Invalid Encoding  | Invalid Encoding can cause the server to translate malicious characters from a request into a response, causing either a denial of service or XSS  |
 | MALFORMED-DATA  | Malformed Data in the request body  | A POST, PUT, or PATCH request body that is malformed according to the "Content-Type" request header. For example, if a "Content-Type: application/x-www-form-urlencoded" request header is specified and contains a POST body that is json. This is often a programming error, automated or malicious request. Requires agent 3.2 or higher.  |
@@ -261,7 +259,7 @@ The `wafFlags` property, which can be used in the licensable WAF traffic filter 
 | NO-CONTENT-TYPE  | Missing "Content-Type" request header  | A POST, PUT, or PATCH request that does not have a "Content-Type" request header. By default application servers should assume "Content-Type: text/plain; charset=us-ascii" in this case. Many automated and malicious requests may be missing "Content Type".  |
 | NOUA  | No User Agent  | Indicates a request contained no "User-Agent" header or the header value was not set.  |
 | NULLBYTE  | Null Byte | Null bytes do not normally appear in a request and indicate that the request is malformed and potentially malicious. |
-| OOB-DOMAIN | Out-of-Band Domain	| Out-of-Band domains are generally used during penetration testing to identify vulnerabilities in which network access is allowed. |
+| OOB-DOMAIN | Out-of-Band Domain    | Out-of-Band domains are generally used during penetration testing to identify vulnerabilities in which network access is allowed. |
 | PRIVATEFILE  | Private files  | Private files are confidential in nature, such as an Apache `.htaccess` file, or a configuration file which could leak sensitive information  |
 | SCANNER  |  Scanner | Identifies popular scanning services and tools  |
 
@@ -658,11 +656,20 @@ Adobe provides a mechanism to download dashboard tooling onto your computer to i
 
 Dashboard tooling can be cloned directly from the [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) GitHub repository.
 
-[Tutorials](#tutorial) are available for concrete instructions on how to use the dashboard tooling.
+[A tutorial](#tutorial) is available for concrete instructions on how to use the dashboard tooling.
 
-## Recommended starter rules {#recommended-starter-rules}
+## Recommended Starter Rules {#recommended-starter-rules}
 
-You can copy the recommended rules below into your `cdn.yaml` to get started. Start in log mode, analyze your traffic, and when satisfied, change to block mode. You may want to modify the rules based on the unique characteristics of your website's live traffic.
+Adobe suggests starting with the traffic filter rules below and then refining over time. *Standard rules* are available with a Sites or Forms license, while *WAF rules* require an Enhanced Security or WAF-DDoS Protection license.
+
+### Recommended Standard Rules {#recommended-nonwaf-starter-rules}
+
+Start with these rules:
+
+1. rate limit (Log Mode):
+   * log when traffic from a given IP exceeds a rate limit. Change to block mode after validating that no alerts are received; if alerts were received, it would have indicated that the limit value was too low.
+2. specific countries (Block Mode):
+   * block traffic from certain countries (modify the country codes based on your business requirements)
 
 ```
 kind: "CDN"
@@ -698,8 +705,9 @@ data:
         groupBy:
           - reqProperty: clientIp
       action: log
+      alert: true
     # Block requests coming from OFAC countries
-    - name: block-ofac-countries
+    - name: ofac-countries
       when:
         allOf:
           - { reqProperty: tier, in: ["author", "publish"] }
@@ -717,7 +725,53 @@ data:
               - ZW
               - CU
               - CI
-      action: log
+      action: block
+
+```
+
+### Recommended WAF rules {#recommended-waf-starter-rules}
+
+Add the following rules to your existing configuration:
+
+1. ATTACK-FROM-BAD-IP Flag (Block Mode):
+   * Immediately block traffic that both matches suspicious patterns (including several in the [WAF flags list](#waf-flags-list)) and originates from IP addresses known to be malicious.
+   * The ATTACK-FROM-BAD-IP flag inherently satisfies both conditions (pattern match and known malicious IP), minimizing the risk of false positives. Thus, you can safely apply this rule in blocking mode immediately.
+2. ATTACK Flag (Log Mode):
+   * Initially log (rather than block) traffic that matches suspicious patterns but does not originate from known malicious IP addresses. This cautious approach of logging rather than blocking helps avoid inadvertently blocking legitimate traffic (false positives).
+   * After deploying this rule, carefully analyze CDN logs to verify that legitimate requests are not being flagged incorrectly. Once you are confident that no legitimate traffic is impacted, switch to block mode.
+
+>[!NOTE]
+>
+> Our experience indicates that false positives associated with the ATTACK flag are rare. Therefore, it can be a practical strategy to immediately block all suspicious traffic—even if the IP address is not known to be malicious—and subsequently use CDN log analysis to identify and introduce allow rules for legitimate traffic. Each organization should evaluate its own tolerance for risk, weighing the benefits of greater protection against the risk of inadvertently blocking legitimate requests.
+
+```
+    # blocks likely attack traffic, which also comes from suspected IPs
+    - name: attacks-from-bad-ips-globally
+      when:
+        reqProperty: tier
+        in: ["author", "publish"]
+      action:
+        type: block
+        wafFlags:
+          - ATTACK-FROM-BAD-IP
+    # log likely attack traffic, and later switch to block mode if false positives aren't observed
+    - name: attacks-from-any-ips-globally
+      when:
+        reqProperty: tier
+        in: ["author", "publish"]
+      action:
+        type: log
+        wafFlags:
+          - ATTACK
+```
+
+### Legacy recommended WAF rules {#previous-waf-starter-rules}
+
+Prior to July 2025, Adobe recommended the WAF rules listed below, which are still valid and effective in defending against malicious traffic. See the tutorial for considerations around migrating to the new recommended rules.
+
++++ Expand to see the legacy recommended WAF rules.
+
+```
     # Enable recommended WAF protections (only works if WAF is licensed enabled for your environment)
     - name: block-waf-flags-globally
       when:
@@ -741,31 +795,17 @@ data:
           - NULLBYTE
 ```
 
-## Tutorials {#tutorial}
++++
 
-Two tutorials are available.
+## Tutorial {#tutorial}
 
-### Protecting websites with traffic filter rules (including WAF rules) {#tutorial-protecting-websites}
+Work through [a series of tutorials](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) to gain practical knowledge and experience around traffic filter rules, including WAF rules.
 
-[Work through a tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) to gain general, practical knowledge and experience around traffic filter rules, including WAF rules.
+The tutorials include:
 
-The tutorial walks you through:
-
-* Setting up the Cloud Manager config pipeline
-* Using tools to simulate malicious traffic
-* Declaring traffic filter rules, including WAF rules
-* Analyzing results with dashboard tooling
+* An overview of standard and WAF traffic filter rules
+* Configuring the recommended standard and WAF traffic filter rules to block attacks including Denial of Service (DoS) and other threats
+* Deploying rules using the Cloud Manager config pipeline
+* Testing your rules using tools to simulate malicious traffic
+* Analyzing results using the Log Analysis Tooling
 * Best practices
-
-### Blocking DoS and DDoS attacks using traffic filter rules {#tutorial-blocking-DDoS-with-rules}
-
-[Deep-dive on how to block](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Denial of Service (DoS) and Distributed Denial of Service (DDoS) attacks using rate limit traffic filter rules and other strategies.
-
-The tutorial walks you through:
-
-* understanding protection
-* receiving alerts when rate limits are exceeded
-* analyzing traffic patterns using dashboard tooling to configure thresholds for rate limit traffic filter rules
-
-
-

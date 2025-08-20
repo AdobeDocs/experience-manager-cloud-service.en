@@ -6,52 +6,6 @@ exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
 ---
 # Download assets from Content Hub {#download-assets}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
-        </td>
-    </tr>
-</table>
-
-<!-- ![Download assets](assets/download-asset.jpg) -->
-![Download assets](assets/download-asset-genstudio.jpeg)
-
->[!AVAILABILITY]
->
-> [!DNL Content Hub] guide is now available in PDF format. Download the entire guide and use Adobe Acrobat AI Assistant to answer your queries. 
->
->[!BADGE Content Hub Guide PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
-
 The [!DNL Content Hub] lets you download and share your assets. The [!DNL Content Hub] User Interface displays only approved assets. These assets may include images, videos, or any other digital content. The [!DNL Content Hub] enhances accessibility and adaptability for effective asset distribution.  
 
 You can download single or multiple assets and their available renditions using [!DNL Content Hub].
@@ -76,8 +30,8 @@ If **[!UICONTROL Download assets]** dialog box displays assets licenses, then se
 
    >[!NOTE]
    >
-   >* The renditions display only if their visibility is enabled using the [!UICONTROL [Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
-   >* The users with access to [!DNL [Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) can view and download dynamic and smart crop renditions.
+   >* The renditions display only if their visibility is enabled using the [[!UICONTROL Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
+   >* The users with access to [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) can view and download dynamic and smart crop renditions.
    >* The preview of the license displays only if the asset is approved using [!DNL Assets as a Cloud Service] authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 <!--
@@ -178,6 +132,10 @@ Learn more about [view and manage renditions in [!DNL Experience Manager Assets]
    Smart Crop renditions display and are available for download only if you have access to [Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md). Smart Crop renditions are available only for image assets.
 
   ![Renditions types](/help/assets/assets/renditions-types.png)
+
+  >[!NOTE]
+  > 
+  > The Download panel displays only custom static renditions. The default `cq5dam.*` thumbnails do not display in Content Hub.
 
 ### Enable Dynamic renditions {#enable-dynamic-media-renditions}
 
