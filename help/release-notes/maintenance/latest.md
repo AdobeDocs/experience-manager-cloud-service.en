@@ -10,77 +10,71 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 21706 {#21706}
+## Release 21994 {#21994}
 
-Summarized below are the continuous improvements for maintenance release 21706, which was publicly released on July 24, 2025. The previous maintenance release was release 21570.
+Summarized below are the continuous improvements for maintenance release 21994, which was publicly released on August 19, 2025. The previous maintenance release was release 21772.
 
->[!NOTE]
->
->Release 21644 was made private and replaced by release 21706.
+The 2025.8.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-The 2025.7.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
-
-### Enhancements {#enhancements-21706}
-
-* ASSETS-39377: Improve handling of 429s from remote storage in Assets Bulk Importer.
-* ASSETS-46026: Configurable max depth for metadata exporter.
-* ASSETS-49172: Dynamic Media Template assets should inherit Metadata from Folder.
-* ASSETS-50209: Support for substring in DM Templates.
-* ASSETS-52326: AEM Assets configuration page to set Title display preferences for Assets.
-* ASSETS-52805: Add CSV output/download support for Bulk Operation job.
-* ASSETS-52873: Add a new configuration in the folder properties to disable AI processing for that folder.
-* ASSETS-53535: Improved YouTube video upload performance.
-* ASSETS-53612: Control for Hybrid Search in Assets Omnisearch.
-* GRANITE-60183: Update commons-fileupload dependency to 1.6.0.
-* GRANITE-60287: Update QS to Jackrabbit 2.22.1.
-* SITES-30452: Content API with ASO - Title & Description Suggestions.
-* SITES-31677: Custom workspace support AEM Content fragment export to Target.
-* SKYOPS-112741: Remove the `com.adobe.granite.product.support` bundle from the AEM-CS SDK.
-
-### Fixed Issues {#fixed-issues-21706}
-
-* ASSETS-12882: UI alignment issues after opening viewer presets.
-* ASSETS-48958: Issue with Asset Sync changing Published Status in Sites local AEM.
-* ASSETS-50856: `dam:processingAttempts` not being reset on completeUpload.
-* ASSETS-51604: Link Share Report CSV Missing “Shared With” Data.
-* ASSETS-51783: Fallback to DM config under `/conf/global` if no config is found using search query.
-* ASSETS-51857: Asset table items not reorderable.
-* ASSETS-52169: New BAT machine rendition erroneously included in asset downloads.
-* ASSETS-52229: Missing Inbox Notifications for Asset Reports in AEM as a Cloud Service.
-* ASSETS-52399: Version bump in com.day.cq.dam.api might break customer code.
-* ASSETS-52780: Asset can be marked for preview even without toggled enabled.
-* ASSETS-52866: Migrated DM videos remain in processing state under folder with DM Sync disabled.
-* ASSETS-53237: Color Profile dropdown blank in Image Preset editor.
-* ASSETS-53240: Asset Report - Disk Usage fails when getting asset rendition size from Dynamic Media.
-* ASSETS-53446: Intermittent YouTube auth token refresh failures due to NPE.
-* ASSETS-53827: ACL validation blocks saving Mixed Media Sets.
-* ASSETS-5403: Dynamicmedia clientlibs used on publish instance should have `allowProxy=true`.
-* ASSETS-54261: Metadata import leaks connections and becomes blocked if the file fails to download.
-* CQ-4359863: Tags search broken for keywords out of order in Content Fragment Editor/Asset editor.
-* CQ-4359958: Make openapi-support compatible with AEM 6.5.22.0 and above.
-* CQ-4360256: Include the servlet context path in the request path for HTTP requests handled via the `/adobe` servlet context.
-* CQ-4360317: Add method for setting the Sunset date header when building responses.
-* GRANITE-60311: AEM SDK Quickstart – NPE on “OSGi Installer Configuration Printer”.
-* GS-15285: Users are shown as deactivated.
-
-### Known Issues {#known-issues-21706}
+### New Features  {#new-features-21994}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-21706}
+### Enhancements {#enhancements-21994}
+
+* GRANITE-53488: Improve deleteconf.json endpoint error handling.
+* GRANITE-59968: Allow to configure REPLICATION_FORCE_READY_MILLIES.
+* GRANITE-60183: Apache commons-fileupload 1.6.0.
+* GRANITE-60306: Apache commons-lang to 3.18.0.
+* GRANITE-60637: Apache commons-codec to 1.19.0.
+* GRANITE-60645: Apache commons-ui 2.20.0.
+* GRANITE-60663: Apache commons-text 1.14.0.
+* GRANITE-60714: Mongo Java Driver 5.2.
+* GRANITE-60778: Filevault 4.0.0.
+* GRANITE-60823: Jackrabbit 2.22.2.
+* GRANITE-60967: Create metrics for tracking clientlib compilation time.
+* SKYOPS-105469: Adding support for acsredirectMgr in autofix api.
+* SKYOPS-113929: Add metrics for replication ready check.
+* SKYOPS-84821: Sling engine 2.16.6.
+* SKYOPS-114322: Bump up closure compiler language in level to `ECMASCRIPT_2018`.
+
+### Fixed Issues {#fixed-issues-21994}
+
+* GRANITE-60167: Async index update in Skyline doesn't support CSV data.
+* GRANITE-60532: Modification of value toggles is not picked up.
+* SITES-34277: Fix blocking error in translations workflows for pages.
+* SKYOPS-105471: Support dambaseredirect fix for aso autofix.
+* SKYOPS-109532: adding feature removed link as comment behind toggle.
+
+#### AEM Guides {#guides-21994}
+
+* GUIDES-26688: CSS and Page layout files in Native PDF templates exhibit inconsistent file locking behavior, allowing edits even when the files are locked.
+* GUIDES-30900: Copying a folder with a large number of assets from the Assets UI leads to an API timeout. The operation continues to run in the backend and completes after some time, but no success or failure message, or notification is shown in the UI.
+* GUIDES-29090: In the Native PDF output, the List of Index (LOI) appears in a non-alphabetical order and nested index terms are not grouped properly, making the index difficult to navigate.
+* GUIDES-11227: Copying a DITA map from the Assets UI also copies its attached Baseline to the new map.
+* GUIDES-31506: The Home page goes blank when one of the files listed in the Recent files widget is based on a template whose source template does not include a thumbnail.
+
+For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
+
+### Known Issues {#known-issues-21994}
+
+* Apache HTTPD version 2.4.65 introduces changes that may affect certain configurations due to new restrictions implemented as part of security fixes. These fixes address vulnerabilities by ensuring that directives such as `RequestHeader set`, `edit`, and `edit_r` used to modify the Content-Type header are now correctly limited to request headers. This change prevents unintended modifications to response headers, particularly for static content.
+
+### Deprecated Features and APIs {#deprecated-21994}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-21706}
+### Security Fixes {#security-21994}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 4 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 2 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-21706}
+### Embedded Technologies {#embedded-tech-21994}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM Oak | 1.80.0|[Oak API 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80/index.html)| 
+|AEM Oak | 1.84.0|[Oak API 1.84.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.84/index.html)| 
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
-|Apache HTTP Server| 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES)|
+|Apache HTTP Server| 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES)|
 |AEM Core Components| 2.29.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|Node.js|14 (default)|[Supported Node.js versions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions)|

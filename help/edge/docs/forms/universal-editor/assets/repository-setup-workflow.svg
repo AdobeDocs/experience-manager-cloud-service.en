@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f0f0f0" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="githubGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#24292e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2f363d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="aemGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff0000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cc0000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="edsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066cc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004499;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="white"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="20" font-weight="bold">
+    Repository Setup Workflow for Edge Delivery Services
+  </text>
+  
+  <!-- Step 1: GitHub Repository -->
+  <g id="step1">
+    <rect x="50" y="80" width="160" height="120" rx="8" fill="url(#githubGradient)" stroke="#24292e" stroke-width="2"/>
+    <text x="130" y="105" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">1. GitHub Repository</text>
+    <text x="130" y="125" text-anchor="middle" fill="#f6f8fa" font-family="Arial, sans-serif" font-size="11">Create from AEM Forms</text>
+    <text x="130" y="140" text-anchor="middle" fill="#f6f8fa" font-family="Arial, sans-serif" font-size="11">Boilerplate Template</text>
+    <text x="130" y="160" text-anchor="middle" fill="#f6f8fa" font-family="Arial, sans-serif" font-size="10">• Adaptive Forms Block</text>
+    <text x="130" y="175" text-anchor="middle" fill="#f6f8fa" font-family="Arial, sans-serif" font-size="10">• Pre-configured files</text>
+    <text x="130" y="190" text-anchor="middle" fill="#f6f8fa" font-family="Arial, sans-serif" font-size="10">• Public visibility</text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <path d="M 220 140 L 280 140" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="250" y="135" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="11">Install</text>
+  
+  <!-- Step 2: AEM Code Sync -->
+  <g id="step2">
+    <rect x="290" y="80" width="160" height="120" rx="8" fill="#f8f9fa" stroke="#6f42c1" stroke-width="2"/>
+    <text x="370" y="105" text-anchor="middle" fill="#6f42c1" font-family="Arial, sans-serif" font-size="14" font-weight="bold">2. AEM Code Sync</text>
+    <text x="370" y="125" text-anchor="middle" fill="#495057" font-family="Arial, sans-serif" font-size="11">GitHub App</text>
+    <text x="370" y="145" text-anchor="middle" fill="#495057" font-family="Arial, sans-serif" font-size="10">• Auto-sync content</text>
+    <text x="370" y="160" text-anchor="middle" fill="#495057" font-family="Arial, sans-serif" font-size="10">• Repository permissions</text>
+    <text x="370" y="175" text-anchor="middle" fill="#495057" font-family="Arial, sans-serif" font-size="10">• AEM ↔ GitHub bridge</text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <path d="M 460 140 L 520 140" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="490" y="135" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="11">Configure</text>
+  
+  <!-- Step 3: AEM Integration -->
+  <g id="step3">
+    <rect x="530" y="80" width="160" height="120" rx="8" fill="url(#aemGradient)" stroke="#ff0000" stroke-width="2"/>
+    <text x="610" y="105" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">3. AEM Integration</text>
+    <text x="610" y="125" text-anchor="middle" fill="#ffe6e6" font-family="Arial, sans-serif" font-size="11">fstab.yaml Configuration</text>
+    <text x="610" y="145" text-anchor="middle" fill="#ffe6e6" font-family="Arial, sans-serif" font-size="10">• Mountpoint setup</text>
+    <text x="610" y="160" text-anchor="middle" fill="#ffe6e6" font-family="Arial, sans-serif" font-size="10">• Author URL connection</text>
+    <text x="610" y="175" text-anchor="middle" fill="#ffe6e6" font-family="Arial, sans-serif" font-size="10">• Content sync path</text>
+  </g>
+  
+  <!-- Step 4: Configuration File -->
+  <g id="step4">
+    <rect x="200" y="250" width="300" height="80" rx="8" fill="#fff3cd" stroke="#856404" stroke-width="2"/>
+    <text x="350" y="275" text-anchor="middle" fill="#856404" font-family="Arial, sans-serif" font-size="14" font-weight="bold">fstab.yaml Configuration</text>
+    <text x="350" y="295" text-anchor="middle" fill="#856404" font-family="Arial, sans-serif" font-size="12">mountpoints:</text>
+    <text x="350" y="310" text-anchor="middle" fill="#856404" font-family="Arial, sans-serif" font-size="11">  /: https://&lt;aem-author&gt;/bin/franklin.delivery/&lt;owner&gt;/&lt;repo&gt;/main</text>
+  </g>
+  
+  <!-- Arrows to config -->
+  <path d="M 370 210 L 350 240" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 610 210 L 450 240" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 5: Edge Delivery Services -->
+  <g id="step5">
+    <rect x="300" y="380" width="200" height="100" rx="8" fill="url(#edsGradient)" stroke="#0066cc" stroke-width="2"/>
+    <text x="400" y="405" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">4. Edge Delivery Services</text>
+    <text x="400" y="425" text-anchor="middle" fill="#e6f3ff" font-family="Arial, sans-serif" font-size="11">Automatic Deployment</text>
+    <text x="400" y="445" text-anchor="middle" fill="#e6f3ff" font-family="Arial, sans-serif" font-size="10">• Global CDN</text>
+    <text x="400" y="460" text-anchor="middle" fill="#e6f3ff" font-family="Arial, sans-serif" font-size="10">• Fast form delivery</text>
+    <text x="400" y="475" text-anchor="middle" fill="#e6f3ff" font-family="Arial, sans-serif" font-size="10">• Auto-build on changes</text>
+  </g>
+  
+  <!-- Arrow to EDS -->
+  <path d="M 350 340 L 400 370" fill="none" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Validation Steps -->
+  <g id="validation">
+    <rect x="550" y="350" width="200" height="120" rx="8" fill="#d4edda" stroke="#155724" stroke-width="2"/>
+    <text x="650" y="375" text-anchor="middle" fill="#155724" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Validation Steps</text>
+    <text x="650" y="395" text-anchor="middle" fill="#155724" font-family="Arial, sans-serif" font-size="11">1. Verify Adaptive Forms Block</text>
+    <text x="650" y="410" text-anchor="middle" fill="#155724" font-family="Arial, sans-serif" font-size="11">2. Test AEM-GitHub connection</text>
+    <text x="650" y="425" text-anchor="middle" fill="#155724" font-family="Arial, sans-serif" font-size="11">3. Confirm EDS deployment</text>
+    <text x="650" y="445" text-anchor="middle" fill="#155724" font-family="Arial, sans-serif" font-size="10">✓ Repository contains forms block</text>
+    <text x="650" y="460" text-anchor="middle" fill="#155724" font-family="Arial, sans-serif" font-size="10">✓ Content sync working</text>
+  </g>
+  
+  <!-- Data Flow Arrows -->
+  <g id="dataflow">
+    <!-- GitHub to AEM -->
+    <path d="M 130 220 Q 130 280 200 300" fill="none" stroke="#28a745" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="140" y="250" fill="#28a745" font-family="Arial, sans-serif" font-size="10">Content</text>
+    <text x="140" y="265" fill="#28a745" font-family="Arial, sans-serif" font-size="10">Sync</text>
+    
+    <!-- AEM to EDS -->
+    <path d="M 610 220 Q 610 280 500 350" fill="none" stroke="#28a745" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="620" y="250" fill="#28a745" font-family="Arial, sans-serif" font-size="10">Auto</text>
+    <text x="620" y="265" fill="#28a745" font-family="Arial, sans-serif" font-size="10">Deploy</text>
+  </g>
+  
+  <!-- Legend -->
+  <g id="legend">
+    <rect x="20" y="520" width="200" height="70" rx="5" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+    <text x="120" y="540" text-anchor="middle" fill="#495057" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Workflow Flow</text>
+    <line x1="30" y1="550" x2="50" y2="550" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="55" y="555" fill="#495057" font-family="Arial, sans-serif" font-size="10">Setup Steps</text>
+    <line x1="30" y1="565" x2="50" y2="565" stroke="#28a745" stroke-width="2" stroke-dasharray="3,3"/>
+    <text x="55" y="570" fill="#495057" font-family="Arial, sans-serif" font-size="10">Data Flow</text>
+    <text x="30" y="585" fill="#495057" font-family="Arial, sans-serif" font-size="9">Each step must be completed</text>
+    <text x="30" y="595" fill="#495057" font-family="Arial, sans-serif" font-size="9">in sequence for proper setup</text>
+  </g>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

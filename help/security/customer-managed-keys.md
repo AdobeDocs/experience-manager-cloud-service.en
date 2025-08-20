@@ -3,8 +3,6 @@ title: Customer Managed Keys for AEM as a Cloud Service
 description: Learn how to manage encryption keys for AEM as a Cloud Service
 feature: Security
 role: Admin
-hide: yes
-hidefromtoc: yes
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
 ---
 # Customer Managed Keys Setup for AEM as a Cloud Service {#customer-managed-keys-for-aem-as-a-cloud-service}
@@ -176,6 +174,7 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
+
 Provide this information in the CMK UI:
 ![Fill the information in the UI](./assets/cmk/step3a.png)
 

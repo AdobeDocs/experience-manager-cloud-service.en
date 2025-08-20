@@ -7,74 +7,302 @@ exl-id: ac780399-34fe-457d-aaf4-b675656c024d
 ---
 # Customize the look of your forms
 
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
+Form styling in Edge Delivery Services for AEM Forms requires a sophisticated understanding of CSS custom properties, block-based architecture, and component-specific targeting strategies. Unlike traditional form styling approaches, the Adaptive Forms Block implements a systematic design token system that enables consistent theming while maintaining the performance and accessibility benefits of Edge Delivery Services.
 
+The Adaptive Forms Block architecture generates standardized HTML structures across all form components, creating predictable patterns for CSS targeting and customization. This consistency enables developers to implement comprehensive styling systems that scale across complex form implementations while preserving the block-based performance optimizations that make Edge Delivery Services exceptionally fast.
 
-Forms are crucial for user interaction on websites, allowing them to input data. You can use Cascading Style Sheets (CSS) to style fields of a form, enhancing the visual presentation of your forms, and improving the user experience. 
+This comprehensive guide covers the technical foundations of form styling within the Edge Delivery Services ecosystem, including CSS custom property systems, component HTML structure patterns, and advanced styling techniques. The documentation provides both theoretical understanding and practical implementation guidance for creating sophisticated, branded form experiences.
 
-The Adaptive Forms Block produces a consistent structure for all form fields. The consistent structure makes it easier to develop CSS Selectors to select and style form fields based on field type and field names. 
+## What You'll Master
 
-This document outlines the HTML Structure for various form components, helps you build an understanding of how to create CSS Selectors for various form fields to style form fields of an Adaptive Forms Block. 
+**CSS Custom Properties Mastery**: Understand the complete variable system that controls form appearance, including color schemes, typography scales, spacing systems, and layout parameters. Learn how to override and extend these properties to implement comprehensive brand themes.
 
-By the end of the article:
+**Component Architecture Understanding**: Gain deep knowledge of the HTML structure patterns used by each form component type, enabling precise CSS targeting and customization without breaking the underlying functionality or accessibility features.
 
-* You build an understanding of the structure of the default CSS file included with Adaptive Forms Block. 
-* You build an understanding of the HTML structure of the form components provided by the Adaptive Forms Block, including general components and specific components like dropdowns, radio groups, and checkbox groups.
-* You learn how to style form fields based on field type and field names using CSS Selectors, allowing for consistent or unique styling based on requirements.
+**Advanced Styling Techniques**: Implement sophisticated styling patterns including state-based styling, responsive design integration, and performance-optimized customization strategies that maintain the fast-loading characteristics of Edge Delivery Services.
+
+**Professional Implementation Strategies**: Learn industry-standard approaches to form styling including design system integration, maintainable CSS architecture, and troubleshooting techniques for complex styling scenarios.
 
 ## Understanding Form Field Types
 
 Before diving into styling, let's review the common form [field types](/help/edge/docs/forms/universal-editor/create-custom-component.md#supported-fieldtypes) supported by the Adaptive Forms Block:
 
-* Input Fields: These include text inputs, email inputs, password inputs, and more.
-* Checkbox Groups: Used for selecting multiple options.
-* Radio Groups: Used for selecting only one option from a group.
-* Dropdowns: Also known as select boxes, used for selecting one option from a list.
-* Panels/Containers: Used to group related form elements together.
+- Input Fields: These include text inputs, email inputs, password inputs, and more.
+- Checkbox Groups: Used for selecting multiple options.
+- Radio Groups: Used for selecting only one option from a group.
+- Dropdowns: Also known as select boxes, used for selecting one option from a list.
+- Panels/Containers: Used to group related form elements together.
 
 ## Basic Styling Principles
 
 Understanding [fundamental CSS concepts](https://www.w3schools.com/css/css_intro.asp) is crucial before styling specific form fields:
 
-* [Selectors](https://www.w3schools.com/css/css_selectors.asp): CSS Selectors allow you to target specific HTML elements for styling. You can use element selectors, class selectors, or ID selectors.
-* [Properties](https://www.w3schools.com/css/css_syntax.asp): CSS properties define the visual appearance of elements. Common properties for styling form fields include color, background-color, border, padding, margin, and more.
-* [Box Model](https://www.w3schools.com/css/css_boxmodel.asp): The CSS box model describes the structure of HTML elements as a content area surrounded by padding, borders, and margins.
-* Flexbox/Grid: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) and [Grid layouts](https://www.w3schools.com/css/css_grid.asp) are powerful tools for creating responsive and flexible designs.
+- [Selectors](https://www.w3schools.com/css/css_selectors.asp): CSS Selectors allow you to target specific HTML elements for styling. You can use element selectors, class selectors, or ID selectors.
+- [Properties](https://www.w3schools.com/css/css_syntax.asp): CSS properties define the visual appearance of elements. Common properties for styling form fields include color, background-color, border, padding, margin, and more.
+- [Box Model](https://www.w3schools.com/css/css_boxmodel.asp): The CSS box model describes the structure of HTML elements as a content area surrounded by padding, borders, and margins.
+- Flexbox/Grid: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) and [Grid layouts](https://www.w3schools.com/css/css_grid.asp) are powerful tools for creating responsive and flexible designs.
 
 
-## Styling a form for Adaptive Forms Block
 
-The Adaptive Forms Block offers a standardized HTML structure, simplifying the process of selecting and styling form components:
 
-  * **Update default styles**: You can modify the default styles of a form by editing the `/blocks/form/form.css file`. This file provides comprehensive styling for a form, supporting multi-step wizard forms. It emphasizes using custom CSS variables for easy customization, maintenance, and uniform styling across forms.
+## Comprehensive Form Styling with CSS Custom Properties
 
-  * **CSS Styling for Forms**: To ensure that your styles are applied correctly, wrap your form-specific CSS within the `main .form form` selector. This ensures that your styles target only the form elements within the main content area, avoiding conflicts with other parts of the website.
+The Adaptive Forms Block utilizes a sophisticated CSS architecture built on custom properties (CSS variables) that enables systematic theming and consistent styling across all form components. Understanding this structure is essential for effective form customization and branding.
+
+### Understanding the forms.css Architecture
+
+The default form styles are located in your project repository at `/blocks/form/form.css` and follow a structured approach that prioritizes maintainability, consistency, and customization flexibility. The architecture consists of several key components:
+
+**CSS Custom Properties Foundation**: The styling system is built on CSS custom properties defined at the `:root` level, providing a centralized theming system that cascades throughout all form components. These variables establish design tokens for colors, typography, spacing, and layout properties.
+
+**Block-Based CSS Structure**: Edge Delivery Services employs a block-based architecture where the `.form` class serves as the primary namespace for all form-related styles, ensuring proper scope isolation and preventing CSS conflicts with other page components.
+
+**Component-Specific Styling**: Individual form components are styled using consistent wrapper patterns (`.{Type}-wrapper`) that provide predictable targeting for different field types while maintaining the overall design system integrity.
+
+### CSS Custom Properties Reference and Customization
+
+The form styling system includes over 50 CSS custom properties that control every aspect of form appearance and behavior. Understanding these properties enables comprehensive customization while maintaining design consistency.
+
++++ Color and Theming Variables
+
+The color system establishes a complete visual foundation for forms through carefully organized custom properties:
+
+```css
+:root {
+    /* Primary color system */
+    --background-color-primary: #fff;
+    --label-color: #666;
+    --border-color: #818a91;
+    --form-error-color: #ff5f3f;
     
-    Example:
+    /* Button color system */
+    --button-primary-color: #5F8DDA;
+    --button-secondary-color: #666;
+    --button-primary-hover-color: #035fe6;
+    
+    /* Form-specific color applications */
+    --form-background-color: var(--background-color-primary);
+    --form-input-border-color: var(--border-color);
+    --form-invalid-border-color: #ff5f3f;
+    --form-label-color: var(--label-color);
+}
+```
 
-    ```css
-    main .form form .{Type}-wrapper input {
-        /* Add styles specific to input fields inside the form */
-    }
+**Practical Customization Example**: To implement a dark theme for your forms, override the base color variables:
 
-    main .form form .{Type}-wrapper button {
-        /* Add styles specific to buttons inside the form */
-    }
+```css
+:root {
+    --background-color-primary: #1a1a1a;
+    --label-color: #e0e0e0;
+    --border-color: #404040;
+    --form-error-color: #ff6b6b;
+    --button-primary-color: #4a9eff;
+}
+```
 
-    main .form form .{Type}-wrapper label {
-        /* Add styles specific to labels inside the form */
-    }
-    ```
+This single change propagates through all form components because the system uses variable references rather than hardcoded values.
+
++++
+
++++ Typography and Spacing Variables
+
+Typography and spacing variables provide comprehensive control over text presentation and layout spacing:
+
+```css
+:root {
+    /* Font size system */
+    --form-font-size-m: 22px;
+    --form-font-size-s: 18px;
+    --form-font-size-xs: 16px;
+    
+    /* Component-specific typography */
+    --form-label-font-size: var(--form-font-size-s);
+    --form-label-font-weight: 400;
+    --form-title-font-weight: 600;
+    --form-input-font-size: 1rem;
+    
+    /* Spacing system */
+    --form-field-horz-gap: 40px;
+    --form-field-vert-gap: 20px;
+    --form-input-padding: 0.75rem 0.6rem;
+    --form-padding: 0 10px;
+}
+```
+
+**Practical Customization Example**: To create a more compact form layout with smaller typography:
+
+```css
+:root {
+    --form-font-size-m: 18px;
+    --form-font-size-s: 14px;
+    --form-font-size-xs: 12px;
+    --form-field-horz-gap: 20px;
+    --form-field-vert-gap: 15px;
+    --form-input-padding: 0.5rem 0.4rem;
+}
+```
+
++++
+
++++ Layout and Structure Variables
+
+Layout variables control form dimensions, grid behavior, and component arrangement:
+
+```css
+:root {
+    /* Form layout */
+    --form-width: 100%;
+    --form-columns: 12;
+    --form-submit-width: 100%;
+    
+    /* Card-based components */
+    --form-card-border-radius: 4px;
+    --form-card-padding: 0.6rem 0.8rem;
+    --form-card-shadow: 0 1px 2px rgb(0 0 0 / 3%);
+    --form-card-hover-shadow: 0 2px 4px rgb(0 0 0 / 6%);
+    
+    /* Wizard-specific layout */
+    --form-wizard-padding: 0px;
+    --form-wizard-padding-bottom: 160px;
+    --form-wizard-step-legend-padding: 10px;
+}
+```
+
+**Practical Customization Example**: To create a card-style form with enhanced visual depth:
+
+```css
+:root {
+    --form-card-border-radius: 12px;
+    --form-card-padding: 1.5rem 2rem;
+    --form-card-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+    --form-card-hover-shadow: 0 8px 24px rgb(0 0 0 / 12%);
+    --form-background-color: #f8f9fa;
+}
+
+.form {
+    background: var(--form-background-color);
+    border-radius: var(--form-card-border-radius);
+    box-shadow: var(--form-card-shadow);
+    padding: var(--form-card-padding);
+    max-width: 600px;
+    margin: 2rem auto;
+}
+```
+
++++
+
+### CSS Styling Patterns and Best Practices
+
+The Adaptive Forms Block follows specific CSS patterns that ensure maintainable, performant, and consistent styling across all components.
+
++++ Primary Styling Patterns
+
+**Block-Level Form Container**: Target the primary form container for overall layout and background styling:
+
+```css
+.form {
+    /* Form-wide styles */
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--form-background-color);
+    padding: var(--form-padding);
+    border-radius: var(--form-card-border-radius);
+}
+```
+
+**Component Wrapper Patterns**: Target specific field types using consistent wrapper classes:
+
+```css
+/* Text input fields */
+.form .text-wrapper input {
+    padding: var(--form-input-padding);
+    border: var(--form-input-border-size) solid var(--form-input-border-color);
+    font-size: var(--form-input-font-size);
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Email input fields */
+.form .email-wrapper input {
+    padding: var(--form-input-padding);
+    border: var(--form-input-border-size) solid var(--form-input-border-color);
+    font-size: var(--form-input-font-size);
+}
+
+/* Button styling */
+.form .button-wrapper button {
+    background-color: var(--form-button-background-color);
+    color: var(--form-button-color);
+    padding: var(--form-button-padding);
+    border: var(--form-button-border);
+    font-size: var(--form-button-font-size);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.form .button-wrapper button:hover {
+    background-color: var(--form-button-background-hover-color);
+}
+```
+
++++ 
+
++++ Advanced Customization Patterns
+
+**Field-Specific Targeting**: Target individual fields by name for unique styling requirements:
+
+```css
+/* Style specific fields */
+.form .field-email input {
+    background-image: url('data:image/svg+xml;...'); /* Email icon */
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 40px;
+}
+
+.form .field-phone input {
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: monospace;
+}
+```
+
+**State-Based Styling**: Implement validation and interaction states:
+
+```css
+/* Validation states */
+.form .field-wrapper[data-valid="false"] input {
+    border-color: var(--form-error-color);
+    box-shadow: 0 0 0 2px rgba(255, 95, 63, 0.1);
+}
+
+.form .field-wrapper[data-valid="true"] input {
+    border-color: #28a745;
+    box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.1);
+}
+
+/* Focus states */
+.form .text-wrapper input:focus,
+.form .email-wrapper input:focus {
+    outline: none;
+    border-color: var(--button-primary-color);
+    box-shadow: 0 0 0 2px rgba(95, 141, 218, 0.2);
+}
+```
+
++++
+
 
 ## Components Structure 
 
 The Adaptive Forms Block offers a consistent HTML structure for various form elements, ensuring easier styling and management. You can manipulate the components using CSS for styling purposes.
 
-### General Components (except dropdowns, radio groups, and checkbox groups):
++++ General Components (except dropdowns, radio groups, and checkbox groups):
 
 All form fields, except for dropdowns, radio groups, and checkbox groups, has the following HTML structure:
 
-+++ HTML Structure of General Components
+### HTML Structure of General Components
 
 ```HTML
 
@@ -88,14 +316,14 @@ All form fields, except for dropdowns, radio groups, and checkbox groups, has th
 
 ```
 
-  * Classes: The div element has several classes for targeting specific elements and styling. You require the `{Type}-wrapper` or `field-{Name}` classes to develop a CSS Selector to style a form field:
-  * {Type}: Identifies the component by field type. For example, text (text-wrapper), number (number-wrapper), date (date-wrapper).
-  * {Name}: Identifies the component by name. The name of the field can have only alphanumeric characters, the multiple consecutive dashes in the name are replaced with a single dash `(-)`, and starting and ending dashes in a field name are removed. For example, first-name (field-first-name field-wrapper).
-  * {FieldId}: It is a unique identifier for the field, automatically generated.
-  * {Required}: It is a boolean indicating if the field is required.
-  * Label: The `label` element provides a descriptive text for the field and associates it with the input element using the `for` attribute.
-  * Input: The `input` element defines the type of data to be entered. For example, text, number, email.
-  * Description (Optional): The `div` with class `field-description` provides additional information or instructions for the user.
+  - Classes: The div element has several classes for targeting specific elements and styling. You require the `{Type}-wrapper` or `field-{Name}` classes to develop a CSS Selector to style a form field:
+  - {Type}: Identifies the component by field type. For example, text (text-wrapper), number (number-wrapper), date (date-wrapper).
+  - {Name}: Identifies the component by name. The name of the field can have only alphanumeric characters, the multiple consecutive dashes in the name are replaced with a single dash `(-)`, and starting and ending dashes in a field name are removed. For example, first-name (field-first-name field-wrapper).
+  - {FieldId}: It is a unique identifier for the field, automatically generated.
+  - {Required}: It is a boolean indicating if the field is required.
+  - Label: The `label` element provides a descriptive text for the field and associates it with the input element using the `for` attribute.
+  - Input: The `input` element defines the type of data to be entered. For example, text, number, email.
+  - Description (Optional): The `div` with class `field-description` provides additional information or instructions for the user.
 
 **Example of HTML Structure**
 
@@ -111,66 +339,71 @@ All form fields, except for dropdowns, radio groups, and checkbox groups, has th
 
 ```
 
-+++
+#### CSS Selector for General Components
 
-+++ CSS Selector for General Components
+```css
+/* Primary Pattern: Target field wrapper by type */
+.form .{Type}-wrapper {
+    /* Container styling for specific field types */
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
 
-```CSS
-  
-  /* Target all input fields within any .{Type}-wrapper  */
-  main .form form .{Type}-wrapper  {
-    /* Add your styles here */
-    border: 1px solid #ccc;
-    padding: 8px;
+/* Primary Pattern: Target input fields within wrapper */
+.form .{Type}-wrapper input {
+    /* Input field styling using CSS custom properties */
+    border: var(--form-input-border-size) solid var(--form-input-border-color);
+    padding: var(--form-input-padding);
     border-radius: 4px;
-  }
-  
-  /* Target all input fields within any .{Type}-wrapper  */
-  main .form form .{Type}-wrapper input {
-    /* Add your styles here */
-    border: 1px solid #ccc;
-    padding: 8px;
-    border-radius: 4px;
-  }
-  
-  /* Target any element with the class field-{Name}  */
-  main .form form .field-{Name} {
-    /* Add your styles here */
-    /* This could be used for styles specific to all elements with   field-{Name} class, not just inputs */
-  }
-  
-  ```
-  * `.{Type}-wrapper`: Targets the outer `div` element based on    the field type. For example, `.text-wrapper` targets all text    fields.
-  * `.field-{Name}`: Further selects the element based on the specific field name. For example, `.field-first-name` targets the "First Name" text field. While this selector can be used for targeting elements with the field-{Name} class, it's important to be cautious. In this specific case, it wouldn't be useful for styling input fields because it would target not only the input itself but also the label and description elements. It's recommended to use more specific selectors like the ones you have for targeting text input fields (.text-wrapper input).
+    width: 100%;
+    font-size: var(--form-input-font-size);
+}
+
+/* Context-specific: Target element by field name when higher specificity needed */
+.form .field-{Name} input {
+    /* Field-specific customizations */
+    /* Use this pattern for unique styling requirements */
+}
+```
+
+  - `.form .{Type}-wrapper`: Targets the field wrapper element based on the field type. For example, `.form .text-wrapper` targets all text field containers.
+  - `.form .{Type}-wrapper input`: Targets the actual input elements within the wrapper. This is the recommended pattern for styling form inputs.
+  - `.form .field-{Name}`: Targets elements based on the specific field name. For example, `.form .field-first-name` targets the "First Name" field container. Use `.form .field-{Name} input` to target the input element specifically.
+  - **Avoid**: `main .form form .{Type}-wrapper` - This creates unnecessary CSS specificity and is harder to maintain.
 
 **Example CSS Selectors for General Components**
 
-```CSS
-
-/*Target all text input fields */
-main .form form .text-wrapper input {
-  border: 1px solid #ccc;
-  padding: 8px;
-  border-radius: 4px;
-  color: red;
+```css
+/* Primary Pattern: Target all text input fields */
+.form .text-wrapper input {
+    border: var(--form-input-border-size) solid var(--form-input-border-color);
+    padding: var(--form-input-padding);
+    border-radius: 4px;
+    width: 100%;
+    font-size: var(--form-input-font-size);
+    background-color: var(--form-input-background-color);
 }
 
-/*Target all fields with name first-name*/
-main .form form .field-first-name input {
-  border: 1px solid #ccc;
-  padding: 8px;
-  border-radius: 4px;
+/* Context-specific: Target field by name when higher specificity needed */
+.form .field-first-name input {
+    text-transform: capitalize;
+    border-color: var(--button-primary-color);
 }
 
+/* Alternative with main context if needed */
+main .form .text-wrapper input {
+    /* Use only when you need higher specificity */
+    color: var(--form-label-color);
+}
 ```
 
 +++
 
-### Dropdown Component
++++ Dropdown Component
 
 For dropdown menus, the `select` element is used instead of an `input` element:
 
-+++ HTML Structure of Dropdown Component
+#### HTML Structure of Dropdown Component
 
 ```HTML
 
@@ -202,45 +435,52 @@ For dropdown menus, the `select` element is used instead of an `input` element:
 
 ```
 
-+++
-
-+++ CSS Selectors for dropdown component
+#### CSS Selectors for dropdown component
 
 The following CSS lists some example CSS Selectors for dropdown components.
 
-```CSS
+```css
+/* Primary Pattern: Target the dropdown wrapper */
+.form .drop-down-wrapper {
+    /* Container layout using flexbox */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--form-field-vert-gap);
+}
 
-/* Target the outer wrapper */
-main .form form .drop-down-wrapper {
-  /* Add your styles here */
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
+/* Target the select element */
+.form .drop-down-wrapper select {
+    border: var(--form-input-border-size) solid var(--form-input-border-color);
+    padding: var(--form-input-padding);
+    border-radius: 4px;
+    background-color: var(--form-input-background-color);
+    font-size: var(--form-input-font-size);
+    color: var(--form-label-color);
 }
 
 /* Style the label */
-main .form form .drop-down-wrapper .field-label {
-  margin-bottom: 5px;
-  font-weight: bold;
+.form .drop-down-wrapper .field-label {
+    margin-bottom: 5px;
+    font-weight: var(--form-label-font-weight);
+    color: var(--form-label-color);
+    font-size: var(--form-label-font-size);
 }
-
 ```
-   * Target the Wrapper: The first selector (`.drop-down-wrapper`) targets the outer wrapper element, ensuring styles apply to the entire dropdown component.
-   * Flexbox Layout: Flexbox arranges the label, dropdown, and description vertically for a clean layout.
-   * Label Styling: The label stands out with bolder font weight and a slight margin.
-   * Dropdown Styling: The `select` element receives a border, padding, and rounded corners for a polished look.
-   * Background Color: A consistent background color is set for visual harmony.
-   * Arrow Customization: Optional styles hide the default dropdown arrow and create a custom arrow using a Unicode character and positioning.
+
+   - Target the Wrapper: The first selector (`.drop-down-wrapper`) targets the outer wrapper element, ensuring styles apply to the entire dropdown component.
+   - Flexbox Layout: Flexbox arranges the label, dropdown, and description vertically for a clean layout.
+   - Label Styling: The label stands out with bolder font weight and a slight margin.
+   - Dropdown Styling: The `select` element receives a border, padding, and rounded corners for a polished look.
+   - Background Color: A consistent background color is set for visual harmony.
+   - Arrow Customization: Optional styles hide the default dropdown arrow and create a custom arrow using a Unicode character and positioning.
 
 +++
 
----
-
-### Radio Groups
++++ Radio Groups
 
 Similar to dropdown components, radio groups have their own HTML structure and CSS structure:
 
-+++ HTML Structure of Radio Group 
+#### HTML Structure of Radio Group 
 
 ```HTML
 
@@ -280,55 +520,57 @@ Similar to dropdown components, radio groups have their own HTML structure and C
 
 ```
 
-+++
+#### CSS Selectors for Radio Groups
 
-+++ CSS Selectors for Radio Groups
+- Targeting the Fieldset
 
-* Targeting the Fieldset
-
-```CSS
-
-  main .form form .radio-group-wrapper {
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-
+```css
+/* Target radio group container */
+.form .radio-group-wrapper {
+    border: var(--form-input-border-size) solid var(--form-input-border-color);
+    padding: var(--form-input-padding);
+    border-radius: 4px;
+    margin-bottom: var(--form-field-vert-gap);
+}
 ```
+
 This selector targets any fieldset with the class radio-group-wrapper. This would be useful for applying general styles to the entire radio group.
 
-* Targeting Radio Button Labels
+- Targeting Radio Button Labels
 
-```CSS
-
-main .form form .radio-wrapper label {
-    font-weight: normal;
+```css
+/* Target radio button labels */
+.form .radio-wrapper label {
+    font-weight: var(--form-label-font-weight);
     margin-right: 10px;
-  }
-
+    color: var(--form-label-color);
+    font-size: var(--form-label-font-size);
+    cursor: pointer;
+}
 ```
 
-* Target all radio button labels within a specific fieldset based on its name
+- Target all radio button labels within a specific fieldset based on its name
 
-```CSS
-
-main .form form .field-color .radio-wrapper label {
-  /* Your styles here */
+```css
+/* Target all radio button labels within a specific fieldset based on its name */
+.form .field-color .radio-wrapper label {
+    /* Field-specific radio label customizations */
+    /* Add your custom styles here */
 }
-
 ```
 
 +++
 
-### Checkbox Groups
++++ Checkbox Groups
 
-+++ HTML Structure of Checkbox Group 
+#### HTML Structure of Checkbox Group 
 
 ```HTML
 
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
    <legend for="{FieldId}" class="field-label">....</legend>
    <% for each radio in Group %>
-   <div class="radio-wrapper field-{Name}">
+   <div class="checkbox-wrapper field-{Name}">
       <input type="checkbox" value="" id="{UniqueId}" data-field-type="checkbox-group" name="{FieldId}">
       <label for="{UniqueId}" class="field-label">...</label>
    </div>
@@ -359,99 +601,141 @@ main .form form .field-color .radio-wrapper label {
 
 ```
 
-+++
+#### CSS Selectors for checkbox groups
 
-+++ CSS Selectors for checkbox groups
+- Targeting the outer wrapper: These selectors target the outermost containers of both radio and checkbox groups, allowing you to apply general styles to the entire group structure. This is useful for setting spacing, alignment, or other layout-related properties.
 
-* Targeting the outer wrapper: These selectors target the outermost containers of both radio and checkbox groups, allowing you to apply general styles to the entire group structure. This is useful for setting spacing, alignment, or other layout-related properties.
+```css
+/* Primary Pattern: Targets radio group wrappers */
+.form .radio-group-wrapper {
+    margin-bottom: var(--form-field-vert-gap); /* Adds space between radio groups */
+    display: flex;
+    flex-direction: column;
+    border: var(--form-fieldset-border);
+    padding: var(--form-input-padding);
+}
 
-```CSS
-  
-  /* Targets radio group wrappers */
-  main .form form .radio-group-wrapper {
-    margin-bottom: 20px; /* Adds space between radio groups */  
-  }
-
-  /* Targets checkbox group wrappers */
-  main .form form .checkbox-group-wrapper {
-    margin-bottom: 20px; /* Adds space between checkbox groups */
-  }
-
+/* Primary Pattern: Targets checkbox group wrappers */
+.form .checkbox-group-wrapper {
+    margin-bottom: var(--form-field-vert-gap); /* Adds space between checkbox groups */
+    display: flex;
+    flex-direction: column;
+    border: var(--form-fieldset-border);
+    padding: var(--form-input-padding);
+}
 ```
 
-* Targeting Group Labels: This selector targets the `.field-label` element within both radio and checkbox group wrappers. This allows you to style the labels specifically for these groups, potentially making them stand out more.
+- Targeting Group Labels: This selector targets the `.field-label` element within both radio and checkbox group wrappers. This allows you to style the labels specifically for these groups, potentially making them stand out more.
 
-```CSS
-
-main .form form .radio-group-wrapper legend,
-main .form form .checkbox-group-wrapper legend {
-  font-weight: bold; /* Makes the group label bold */
+```css
+/* Primary Pattern: Target group labels */
+.form .radio-group-wrapper legend,
+.form .checkbox-group-wrapper legend {
+    font-weight: var(--form-title-font-weight); /* Makes the group label bold */
+    margin-bottom: 0.5rem;
+    font-size: var(--form-fieldset-legend-font-size);
+    color: var(--form-fieldset-legend-color);
+    padding: var(--form-fieldset-legend-padding);
+    border: var(--form-fieldset-legend-border);
 }
-
 ```
 
-* Targeting Individual Inputs and Labels: These selectors provide more granular control over individual radio buttons, checkboxes, and their associated labels. You can use these to adjust sizing, spacing, or apply more distinct visual styles.
+- Targeting Individual Inputs and Labels: These selectors provide more granular control over individual radio buttons, checkboxes, and their associated labels. You can use these to adjust sizing, spacing, or apply more distinct visual styles.
 
-```CSS
-
-/* Styling radio buttons */
-main .form form .radio-group-wrapper input[type="radio"] {
-  margin-right: 5px; /* Adds space between the input and its label */
+```css
+/* Primary Pattern: Styling radio buttons */
+.form .radio-group-wrapper input[type="radio"] {
+    margin-right: 8px; /* Adds space between the input and its label */
+    margin-bottom: 4px;
+    cursor: pointer;
 }
 
-/* Styling radio button labels */
-main .form form .radio-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
+/* Primary Pattern: Styling radio button labels */
+.form .radio-group-wrapper label {
+    font-size: var(--form-label-font-size); /* Changes the label font size */
+    color: var(--form-label-color);
+    font-weight: var(--form-label-font-weight);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
-/* Styling checkboxes */
-main .form form .checkbox-group-wrapper input[type="checkbox"] {
-  margin-right: 5px; /* Adds space between the input and its label */
+/* Primary Pattern: Styling checkboxes */
+.form .checkbox-group-wrapper input[type="checkbox"] {
+    margin-right: 8px; /* Adds space between the input and its label */
+    margin-bottom: 4px;
+    cursor: pointer;
 }
 
-/* Styling checkbox labels */
-main .form form .checkbox-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
+/* Primary Pattern: Styling checkbox labels */
+.form .checkbox-group-wrapper label {
+    font-size: var(--form-label-font-size); /* Changes the label font size */
+    color: var(--form-label-color);
+    font-weight: var(--form-label-font-weight);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
-
 ```
 
-* Customizing the Appearance of Radio Buttons and Checkboxes: This technique hides the default input and uses `:before` and `:after` pseudo-elements to create custom visuals that change appearance based on the 'checked' state.
+- Customizing the Appearance of Radio Buttons and Checkboxes: This technique hides the default input and uses `:before` and `:after` pseudo-elements to create custom visuals that change appearance based on the 'checked' state.
 
-```CSS
-
+```css
 /* Hide the default radio button or checkbox */
-main .form form .radio-group-wrapper input[type="radio"],
-main .form form .checkbox-group-wrapper input[type="checkbox"] {
-  opacity: 0;
-  position: absolute;
+.form .radio-group-wrapper input[type="radio"],
+.form .checkbox-group-wrapper input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
 }
 
 /* Create a custom radio button */
-main .form form .radio-group-wrapper input[type="radio"] + label::before {
-  /* ... styles for custom radio button ... */
+.form .radio-group-wrapper input[type="radio"] + label::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--form-input-border-color);
+    border-radius: 50%;
+    margin-right: 8px;
+    background-color: var(--form-input-background-color);
+    transition: all 0.2s ease;
 }
 
-main .form form .radio-group-wrapper input[type="radio"]:checked + label::before {
-  /* ... styles for checked radio button ... */
+.form .radio-group-wrapper input[type="radio"]:checked + label::before {
+    background-color: var(--button-primary-color);
+    border-color: var(--button-primary-color);
+    box-shadow: inset 0 0 0 3px var(--form-input-background-color);
 }
 
 /* Create a custom checkbox */
-main .form form .checkbox-group-wrapper input[type="checkbox"] + label::before {
-  /* ... styles for custom checkbox ... */
+.form .checkbox-group-wrapper input[type="checkbox"] + label::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--form-input-border-color);
+    border-radius: 2px;
+    margin-right: 8px;
+    background-color: var(--form-input-background-color);
+    transition: all 0.2s ease;
 }
 
-main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::before {
-  /* ... styles for checked checkbox ... */
+.form .checkbox-group-wrapper input[type="checkbox"]:checked + label::before {
+    background-color: var(--button-primary-color);
+    border-color: var(--button-primary-color);
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="white" d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
 ```
 
 +++
 
-### Panel/Container components
++++ Panel/Container components
 
-+++ HTML Structure of Panel/Container components
+#### HTML Structure of Panel/Container components
 
 ```HTML
 
@@ -492,21 +776,20 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 
 ```
 
-* The fieldset element acts as the panel container with the class panel-wrapper and additional classes for styling based on the panel name (field-login).
-* The legend element (<legend>) serves as the panel title with the text "Login Information" and the class field-label. The data-visible="false" attribute can be used with JavaScript to control the visibility of the title.
-* Inside the fieldset, multiple.{Type}-wrapper elements (.text-wrapper and .password-wrapper in this case) represent individual form fields within the panel.
-* Each wrapper contains a label, input field, and description, similar to the previous examples.
+- The fieldset element acts as the panel container with the class panel-wrapper and additional classes for styling based on the panel name (field-login).
+- The legend element (`<legend>`) serves as the panel title with the text "Login Information" and the class field-label. The data-visible="false" attribute can be used with JavaScript to control the visibility of the title.
+- Inside the fieldset, multiple.{Type}-wrapper elements (.text-wrapper and .password-wrapper in this case) represent individual form fields within the panel.
+- Each wrapper contains a label, input field, and description, similar to the previous examples.
 
-+++ 
 
-+++ Example CSS Selectors for Panel/Container components
+#### Example CSS Selectors for Panel/Container components
 
 1. Targeting the Panel:
 
   ```CSS
-    /* Target the entire panel container */
+    /- Target the entire panel container */
     main .form form .panel-wrapper {
-      /* Add your styles here (e.g., border, padding, background color) */
+      /- Add your styles here (e.g., border, padding, background color) */
       border: 1px solid #ccc;
       padding: 15px;
       border-radius: 4px;
@@ -516,64 +799,65 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 
   ```
 
-  * The `.panel-wrapper` selector styles all elements with the class panel-wrapper, creating a consistent look for all panels.
+  - The `.panel-wrapper` selector styles all elements with the class panel-wrapper, creating a consistent look for all panels.
 
 1. Targeting the Panel Title:
 
   ```CSS
-    /* Target the legend element (panel title) */
+    /- Target the legend element (panel title) */
     .panel-wrapper legend {
-      /* Add your styles here (e.g., font-weight, font-size) */
+      /- Add your styles here (e.g., font-weight, font-size) */
       font-weight: bold;
       font-size: 16px;
       padding-bottom: 5px;
       margin-bottom: 10px;
-      border-bottom: 1px solid #ddd; /* Optional: create a separation line */
+      border-bottom: 1px solid #ddd; /- Optional: create a separation line */
     }
 
   ```
 
-  * The `.panel-wrapper legend` selector styles the legend element within the panel, making the title stand out visually.
+  - The `.panel-wrapper legend` selector styles the legend element within the panel, making the title stand out visually.
 
 
 1. Targeting Individual Fields within the Panel:  
 
   ```CSS
 
-  /* Target all form field wrappers within a panel */
+  /- Target all form field wrappers within a panel */
   main .form form .panel-wrapper .{Type}-wrapper {
-    /* Add your styles here (e.g., margin) */
+    /- Add your styles here (e.g., margin) */
     margin-bottom: 10px;
   }
 
 
   ```
 
-  * The `.panel-wrapper .{Type}-wrapper` selector targets all wrappers with the `.{Type}-wrapper` class within the panel, allowing you to style the spacing between form fields.
+  - The `.panel-wrapper .{Type}-wrapper` selector targets all wrappers with the `.{Type}-wrapper` class within the panel, allowing you to style the spacing between form fields.
 
 1. Targeting Specific Fields (Optional):
 
   ```CSS
 
-    /* Target the username field wrapper */
+    /- Target the username field wrapper */
     main .form form .panel-wrapper .text-wrapper.field-username {
-      /* Add your styles here (specific to username field) */
+      /- Add your styles here (specific to username field) */
     }
 
-    /* Target the password field wrapper */
+    /- Target the password field wrapper */
     main .form form .panel-wrapper .password-wrapper.field-password {
-      /* Add your styles here (specific to password field) */
+      /- Add your styles here (specific to password field) */
     }
 
   ```
 
-  * These optional selectors allow you to target specific field wrappers within the panel for unique styling, such as highlighting the username field.
+  - These optional selectors allow you to target specific field wrappers within the panel for unique styling, such as highlighting the username field.
+
 
 +++
 
-### Repeatable Panel
++++ Repeatable Panel
 
-+++ HTML Structure of a Repeatable Panel
+#### HTML Structure of a Repeatable Panel
 
 ```HTML
 
@@ -633,21 +917,20 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 
 Each panel has the same structure as the single panel example, with additional attributes:
 
-* data-repeatable="true": This attribute indicates that the panel can be repeated dynamically using JavaScript or a framework.
+- data-repeatable="true": This attribute indicates that the panel can be repeated dynamically using JavaScript or a framework.
 
-* Unique IDs and names: Each element within the panel has a unique ID (for example, name-1, email-1) and name attribute based on the index of the panel (for example, name="contacts[0].name"). This allows for proper data collection when multiple panels are submitted.
+- Unique IDs and names: Each element within the panel has a unique ID (for example, name-1, email-1) and name attribute based on the index of the panel (for example, name="contacts[0].name"). This allows for proper data collection when multiple panels are submitted.
 
-+++ 
 
-+++ CSS Selectors for a Repeatable Panel
+#### CSS Selectors for a Repeatable Panel
 
-* Targeting All Repeatable Panels:
+- Targeting All Repeatable Panels:
 
 ```CSS
 
-  /* Target all panels with the repeatable attribute */
+  /- Target all panels with the repeatable attribute */
  main .form form .panel-wrapper[data-repeatable="true"] {
-    /* Add your styles here (e.g., border, margin) */
+    /- Add your styles here (e.g., border, margin) */
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 4px;
@@ -660,38 +943,41 @@ Each panel has the same structure as the single panel example, with additional a
 The selector styles all panels that can be repeated, ensuring a consistent look and feel.
 
 
-* Targeting Individual Fields within a Panel:
+- Targeting Individual Fields within a Panel:
 
 ```CSS
 
-/* Target all form field wrappers within a repeatable panel */
+/- Target all form field wrappers within a repeatable panel */
 main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
-  /* Add your styles here (e.g., margin) */
+  /- Add your styles here (e.g., margin) */
   margin-bottom: 10px;
 }
 
 ```
+
 This selector styles all field wrappers within a repeatable panel, maintaining consistent spacing between fields.
 
-* Targeting Specific Fields (within a Panel):
+- Targeting Specific Fields (within a Panel):
 
 ```CSS
-/* Target the name field wrapper within the first panel */
+/- Target the name field wrapper within the first panel */
 main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wrapper.field-name {
-  /* Add your styles here (specific to first name field) */
+  /- Add your styles here (specific to first name field) */
 }
 
-/* Target all
+/- Target all
 
 
 
 ```
 
+
 +++
 
-### File attachment
 
-+++ HTML Structure for File Attachment
++++ File attachment
+
+#### HTML Structure for File Attachment
 
 ```HTML
 
@@ -735,21 +1021,20 @@ main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wra
 
 ```
 
-* The class attribute uses the provided name for the file attachment (claim_form).
-* The id and name attributes of the input element match the file attachment name (claim_form).
-* The files-list section is initially empty. It is populated dynamically with JavaScript when files are uploaded.
+- The class attribute uses the provided name for the file attachment (claim_form).
+- The id and name attributes of the input element match the file attachment name (claim_form).
+- The files-list section is initially empty. It is populated dynamically with JavaScript when files are uploaded.
 
-+++ 
 
-+++ CSS Selectors for the File Attachment component
+#### CSS Selectors for the File Attachment component
 
-* Targeting the Entire File Attachment Component:
+- Targeting the Entire File Attachment Component:
 
 ```CSS
 
-/* Target the entire file attachment component */
+/- Target the entire file attachment component */
 main .form form .file-wrapper {
-  /* Add your styles here (e.g., border, padding) */
+  /- Add your styles here (e.g., border, padding) */
   border: 1px solid #ccc;
   padding: 15px;
   border-radius: 4px;
@@ -761,36 +1046,36 @@ main .form form .file-wrapper {
 
 This selector styles the entire file attachment component, including the legend, drag area, input field, and list.
 
-* Targeting Specific Elements:
+- Targeting Specific Elements:
 
 ```CSS
 
-/* Target the drag and drop area */
+/- Target the drag and drop area */
 main .form form .file-wrapper .file-drag-area {
-  /* Add your styles here (e.g., background color, border) */
+  /- Add your styles here (e.g., background color, border) */
   background-color: #f0f0f0;
   border: 1px dashed #ddd;
   padding: 10px;
   text-align: center;
 }
 
-/* Target the file input element */
+/- Target the file input element */
 main .form form .file-wrapper input[type="file"] {
-  /* Add your styles here (e.g., hide the default input) */
+  /- Add your styles here (e.g., hide the default input) */
   display: none;
 }
 
-/* Target individual file descriptions within the list (populated dynamically) */
+/- Target individual file descriptions within the list (populated dynamically) */
 main .form form .file-wrapper .files-list .file-description {
-  /* Add your styles here (e.g., margin, display) */
+  /- Add your styles here (e.g., margin, display) */
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
 }
 
-/* Target the file name within the description */
+/- Target the file name within the description */
 main .form form .file-wrapper .files-list .file-description .file-description-name {
-  /* Add your styles here (e.g., font-weight) */
+  /- Add your styles here (e.g., font-weight) */
   font-weight: bold;
 }
 
@@ -802,15 +1087,16 @@ These selectors allow you to style various parts of the file attachment componen
 +++
 
 
+
 ## Styling components
 
 You can style form fields based on their specific type (`{Type}-wrapper`) or individual names (`field-{Name}`). This allows for more granular control and customization of your form's appearance.
 
-### Styling Based on Field Type
++++ Styling Based on Field Type
 
 You can use CSS Selectors to target specific field types and apply styles consistently. 
 
-+++ HTML Structure
+### HTML Structure
 
 ```HTML
 
@@ -846,42 +1132,42 @@ You can use CSS Selectors to target specific field types and apply styles consis
 
 ```
 
-* Each field is wrapped in a `div` element with several classes:
-   * `{Type}-wrapper`: Identifies the type of field. For example, `form-text-wrapper`, `form-number-wrapper`, `form-email-wrapper`.
-   * `field-{Name}`: Identifies the field by its name. For example `form-name`, `form-age`, `form-email`.
-   * `field-wrapper`: A generic class for all field wrappers.
-* The `data-required` attribute indicates whether the field is required or optional.
-* Each field has a corresponding label, input element, and potential additional elements like placeholders and descriptions.
+- Each field is wrapped in a `div` element with several classes:
+   - `{Type}-wrapper`: Identifies the type of field. For example, `form-text-wrapper`, `form-number-wrapper`, `form-email-wrapper`.
+   - `field-{Name}`: Identifies the field by its name. For example `form-name`, `form-age`, `form-email`.
+   - `field-wrapper`: A generic class for all field wrappers.
+- The `data-required` attribute indicates whether the field is required or optional.
+- Each field has a corresponding label, input element, and potential additional elements like placeholders and descriptions.
 
 
-+++ 
 
 
-+++ Example CSS Selectors
+### Example CSS Selectors
 
 ```CSS
 
-/* Target all text input fields */
-main .form form .text-wrapper input {
-  /* Add your styles here */
+/- Primary Pattern: Target all text input fields */
+.form .text-wrapper input {
+  /- Add your styles here */
+  width: 100%;
+  padding: var(--form-input-padding);
 }
 
-/* Target all number input fields */
-main .form form .number-wrapper input {
-  /* Add your styles here */
-  letter-spacing: 2px; /* Example for adding letter spacing to all number fields */
+/- Primary Pattern: Target all number input fields */
+.form .number-wrapper input {
+  /- Add your styles here */
+  letter-spacing: 2px; /- Example for adding letter spacing to all number fields */
+  text-align: center;
 }
-
-
 ```
 
 +++
 
-### Styling Based on Field name
++++ Styling Based on Field name
 
 You can also target individual fields by name to apply unique styles. 
 
-+++ HTML Structure
+#### HTML Structure
 
 ```HTML
 
@@ -910,26 +1196,423 @@ You can also target individual fields by name to apply unique styles.
 
 ```
 
-+++ 
 
-+++ Example CSS Selector
+#### Example CSS Selector
 
 ```CSS
 
-main .form form .field-otp input {
-   letter-spacing: 2px
+/- Primary Pattern: Target specific field by name */
+.form .field-otp input {
+   letter-spacing: 2px;
+   text-align: center;
+   font-family: monospace;
 }
 
+/- Context-specific: Use higher specificity when needed */
+main .form .field-otp input {
+   /- Use only when you need to override other styles */
+   font-weight: bold;
+}
 
 ```
 
-This CSS targets all input elements that are located within an element that has the class `field-otp`. Your form's HTML structure follows conventions of the Adaptive Forms Block, this implies there's a container marked with the class "field-otp" holds the field with the name "otp".
-
-+++ 
+This CSS targets all input elements that are located within an element that has the class `field-otp`. The Edge Delivery Services form structure follows the Adaptive Forms Block conventions, where containers are marked with field-specific classes like "field-otp" for fields with the name "otp".
 
 
+## CSS File Structure and Implementation
+
+### **Reference Implementation**
+
+The complete form styling reference is available in the AEM Forms Boilerplate repository:
+
+```
+https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/blocks/form/form.css
+```
+
+This file serves as the canonical implementation of the CSS custom properties system and provides the foundation for all form styling. It includes comprehensive definitions for all CSS variables, component styling patterns, and responsive design implementations.
+
++++
+
++++ Project Integration
+
+In your Edge Delivery Services project, implement form styling through this structured approach:
+
+```
+/blocks/form/form.css          // Core form block styles (copied from boilerplate)
+/styles/styles.css             // Global site styles and CSS variable overrides
+/styles/lazy-styles.css        // Additional component enhancements
+```
+
++++
+
++++ Implementation Strategy
+
+**CSS Custom Property Overrides**: Override form variables in your global styles to implement brand-specific theming:
+
+```css
+/* In /styles/styles.css */
+:root {
+    /* Brand-specific overrides */
+    --button-primary-color: #your-brand-color;
+    --form-background-color: #your-background;
+    --label-color: #your-text-color;
+}
+```
+
+**Component-Specific Customizations**: 
+Add component-specific styling while maintaining the CSS variable system:
+
+```css
+/* Enhanced component styling */
+.form .text-wrapper input {
+    border-radius: var(--form-card-border-radius);
+    transition: all 0.2s ease;
+}
+
+.form .text-wrapper input:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 0 0 3px rgba(var(--button-primary-color), 0.1);
+}
+```
+
+**Responsive Design Integration**: Utilize CSS custom properties within media queries for consistent responsive behavior:
+
+```css
+@media (max-width: 768px) {
+    :root {
+        --form-input-padding: 0.875rem;
+        --form-field-vert-gap: 1rem;
+        --form-padding: 1rem;
+    }
+}
+```
+
++++
+
+### Complete Styling Implementation Example
+
+This section demonstrates how to create a modern, branded form using CSS custom properties. The implementation is broken down into clear subsections for easier understanding and navigation.
 
 
-## See also
 
-{{universal-editor-see-also}}
++++ 1. Brand Theme Variables
+
+Define your brand's color palette, spacing, and typography using CSS custom properties.
+
+```css
+/* Custom brand theme */
+:root {
+  /* Brand color system */
+  --brand-primary: #2563eb;
+  --brand-secondary: #64748b;
+  --brand-success: #059669;
+  --brand-error: #dc2626;
+  --brand-background: #f8fafc;
+  
+  /* Override form variables */
+  --background-color-primary: #ffffff;
+  --button-primary-color: var(--brand-primary);
+  --button-primary-hover-color: #1d4ed8;
+  --form-error-color: var(--brand-error);
+  --form-background-color: var(--brand-background);
+  --label-color: var(--brand-secondary);
+  --border-color: #d1d5db;
+  
+  /* Enhanced spacing */
+  --form-input-padding: 1rem;
+  --form-field-vert-gap: 1.5rem;
+  --form-padding: 2rem;
+  
+  /* Modern typography */
+  --form-font-size-s: 16px;
+  --form-label-font-weight: 500;
+}
+```
+  
+
++++
+
++++ 2. Form Container Styling
+
+Apply a modern background, border radius, and shadow to the form container for a visually appealing layout.
+
+
+```css
+/* Enhanced form container */
+.form {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+```
+        
+
+        
+
++++
+
++++ 3. Input Field Styling
+
+Style text, email, and number input fields for a clean, modern look.
+
+
+```css
+/* Modern input styling */
+.form .text-wrapper input,
+.form .email-wrapper input,
+.form .number-wrapper input {
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: var(--form-input-padding);
+    font-size: 16px;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+```
+
+
++++
+
++++ 4. Additional Customization
+
+You can further extend the form styling by targeting specific fields, states, or components as needed. Refer to earlier sections for advanced patterns.
+
+```css
+/* Custom brand theme */
+:root {
+    /* Brand color system */
+    --brand-primary: #2563eb;
+    --brand-secondary: #64748b;
+    --brand-success: #059669;
+    --brand-error: #dc2626;
+    --brand-background: #f8fafc;
+    
+    /* Override form variables */
+    --background-color-primary: #ffffff;
+    --button-primary-color: var(--brand-primary);
+    --button-primary-hover-color: #1d4ed8;
+    --form-error-color: var(--brand-error);
+    --form-background-color: var(--brand-background);
+    --label-color: var(--brand-secondary);
+    --border-color: #d1d5db;
+    
+    /* Enhanced spacing */
+    --form-input-padding: 1rem;
+    --form-field-vert-gap: 1.5rem;
+    --form-padding: 2rem;
+    
+    /* Modern typography */
+    --form-font-size-s: 16px;
+    --form-label-font-weight: 500;
+}
+
+/* Enhanced form container */
+.form {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+
+/* Modern input styling */
+.form .text-wrapper input,
+.form .email-wrapper input,
+.form .number-wrapper input {
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: var(--form-input-padding);
+    font-size: 16px;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+.form .text-wrapper input:focus,
+.form .email-wrapper input:focus,
+.form .number-wrapper input:focus {
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    transform: translateY(-1px);
+}
+
+/* Enhanced button styling */
+.form .button-wrapper button[type="submit"] {
+    background: linear-gradient(135deg, var(--brand-primary) 0%, #1d4ed8 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.form .button-wrapper button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+```
+
+This comprehensive approach demonstrates how CSS custom properties enable sophisticated theming while maintaining the structural integrity and accessibility features of the Adaptive Forms Block system.
+
++++
+
+## Troubleshooting CSS Issues
+
++++ CSS Specificity Problems
+
+```css
+/- ❌ Problem: Styles not applying */
+.text-wrapper input {
+  color: red;
+}
+
+/- ✅ Solution: Match or exceed existing specificity */
+.form .text-wrapper input {
+  color: red;
+}
+
+/- ✅ Alternative: Use higher specificity when needed */
+main .form .text-wrapper input {
+  color: red;
+}
+```
+
++++
+
++++ CSS Variable Override Issues
+
+```css
+/- ❌ Problem: Variables not working */
+.form {
+  --form-border-color: blue; /- Local scope only */
+}
+
+/- ✅ Solution: Define in root scope */
+:root {
+  --form-border-color: blue; /- Global scope */
+}
+```
+
++++
+
++++ Form State Styling
+
+```css
+/- Validation states */
+.form .field-wrapper.error input {
+  border-color: var(--form-error-color);
+}
+
+.form .field-wrapper.success input {
+  border-color: var(--form-success-color);
+}
+
+/- Loading state */
+.form[data-submitting="true"] {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/- Disabled state */
+.form input:disabled {
+  background-color: var(--form-input-disabled-background);
+  cursor: not-allowed;
+}
+```
+
++++
+
++++ Common Selector Mistakes
+
+```css
+/- ❌ Incorrect: Assumes direct nesting */
+.form form input {
+  /- This might miss inputs in wrappers */
+}
+
+/- ✅ Correct: Target actual structure */
+.form .text-wrapper input {
+  /- Targets actual HTML structure */
+}
+
+/- ❌ Avoid: Unnecessary specificity */
+main .form form .text-wrapper input {
+  /- Too specific, harder to override */
+}
+
+/- ✅ Preferred: Balanced specificity */
+.form .text-wrapper input {
+  /- Easier to maintain and override */
+}
+```
+
++++
+
+
+
+### **Component-Specific Best Practices**
+
+
++++ Button Styling
+
+```css
+/- Primary buttons */
+.form .button-wrapper button[type="submit"] {
+  background-color: var(--form-focus-color);
+  color: white;
+  border: none;
+  padding: var(--form-input-padding);
+  border-radius: var(--form-border-radius);
+}
+
+/- Secondary buttons */
+.form .button-wrapper button[type="reset"] {
+  background-color: transparent;
+  color: var(--form-text-color);
+  border: 1px solid var(--form-border-color);
+}
+```
+
++++
+
++++ Responsive Form Design
+
+```css
+/- Mobile-first approach */
+.form {
+  width: 100%;
+  padding: 1rem;
+}
+
+/- Tablet and up */
+@media (min-width: 768px) {
+  .form {
+    max-width: var(--form-max-width);
+    padding: var(--form-padding);
+  }
+}
+```
+
++++
+
+## Best Practices Summary
+
+1. **Use CSS Custom Properties**: Leverage variables for consistent theming
+2. **Follow Block-Based Architecture**: Use `.form` as the primary block selector
+3. **Avoid Over-Specificity**: Don't use `main .form form` unless necessary
+4. **Target Wrappers**: Use `.{Type}-wrapper` patterns for component targeting
+5. **Maintain Consistency**: Use the same selector patterns throughout your project
+6. **Test Across Devices**: Ensure forms work well on mobile, tablet, and desktop
+7. **Validate Accessibility**: Ensure styles don't interfere with screen readers or keyboard navigation
+
+
