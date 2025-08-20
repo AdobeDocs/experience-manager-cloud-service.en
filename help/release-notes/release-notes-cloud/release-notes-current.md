@@ -129,7 +129,9 @@ All OpenAPI image requests now fully leverage Smart Imaging with auto-promotion 
 * **Enhanced Error Handling for Restricted File Types**
   
   [Error handling for restricted file types](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) is now supported, which blocks unsupported file uploads. When users attempt to submit a file by changing its type to an unsupported format, the form throws an error during submission.
-  
+
+
+<!--
 ### Pre-release features in AEM Forms {#forms-new-pre-release-features}
 
 **Enhancements in Rule Editor**
@@ -143,7 +145,6 @@ All OpenAPI image requests now fully leverage Smart Imaging with auto-promotion 
 * Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
 * Form-specific custom function scripts are now supported for Adaptive Forms in Edge Delivery Services.
 
-<!--
 ### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 
 The AEM Forms Early Access Program offers a unique opportunity for you to get exclusive access to cutting-edge innovations and help shape their development.
