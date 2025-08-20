@@ -1,6 +1,6 @@
 ---
 title: About Experience Hub
-description: Learn about the AEM Experience Hub page.
+description: Learn about the Adobe Experience Hub page.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
