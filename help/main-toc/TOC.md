@@ -1188,11 +1188,14 @@ user-guide-title: AEM as a Cloud Service
       + [Authoring Basics for Headless with AEM](/help/journey-headless/author/basics.md)
       + [Learn about using references in Content Fragments](/help/journey-headless/author/references.md)
       + [Learn about defining Metadata and Tagging for Content Fragments](/help/journey-headless/author/metadata-tagging.md)
++ AI Assistant {#ai-assistant-in-aem}
+  + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
+  + [About AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
 + Generative AI {#generative-ai}
   + [Generative AI in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
   + [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
   + [Generate Variations](/help/generative-ai/generate-variations.md)
-  + [AI Assistant in AEM - Configuration](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
+  + [AI Assistant in AEM - Set up ](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
   + [AI Assistant in AEM (Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
   + [AI Assistant in AEM Forms (Forms Experience Builder)(Early Adopter)](/help/edge/docs/forms/forms-ai-assistant.md)
   + [AI Assistant in AEM Forms - Prompt Library](/help/edge/docs/forms/ai-assistant-prompt-library.md)
