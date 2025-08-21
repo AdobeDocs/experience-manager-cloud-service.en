@@ -132,9 +132,9 @@ Include a file upload field for @profilePicture with size limit of 5MB
 
 ## Form Creation & Management
 
-**When to use:** When you need to create new forms or modify existing ones.
+**When to use:** When you need to create new forms or modify existing ones. 
 
-**How to use:** Choose one of two approaches: Create from Scratch or Import & Convert (see [Getting Started Guide](forms-ai-assistant-getting-started.md#two-ways-to-create-forms)).
+**How to use:** Choose one of two approaches: Create from Scratch or Import & Convert (see [Getting Started Guide](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)).
 
 **Example Prompt - Simple Form Creation:**
 
@@ -511,7 +511,7 @@ Configure **database integration** to save form submissions as records. Create n
 
 **When to use:** When you have existing forms, documents, or designs to transform into modern AEM forms.
 
-**How to use:** Upload your source file and describe the conversion requirements (see [Import Guide](forms-ai-assistant-getting-started.md#2-import-and-convert)).
+**How to use:** Upload your source file and describe the conversion requirements (see [Import Guide](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)).
 
 **Example Prompt - PDF Form Conversion:**
 
