@@ -16,7 +16,9 @@ These are the release notes for the 28 August 2025 release of the Universal Edit
 
 ## What's New {#what-is-new}
 
-
+* New features for [RTE early adopters](#new-rte)
+  * Link title is now available in the link dialog.
+  * Unlinking is now available.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -35,7 +37,7 @@ Undo and redo is now available to Universal Editor content authors.
 
 ## Other Improvements {#other-improvements}
 
-
+* [The undo/redo early adopter feature](#undo-redo) no longer triggers a page reload when a component is added via a undo or redo operation.
 
 ## Deprecations {#deprecations}
 
