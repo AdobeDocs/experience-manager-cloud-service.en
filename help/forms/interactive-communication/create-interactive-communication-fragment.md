@@ -1,15 +1,21 @@
+---
+title: Create an Interactive Communication Fragment
+description: Create Interactive Communication Fragments in AEM Forms to build modular, reusable content blocks that ensure consistency, save time, and support personalized, data-driven communications.
+products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
+feature: Adaptive Forms, Interactive Communication
+role: User, Developer, Author, Admin
+---
 
-# Interactive Communication Fragment
+# Create an Interactive Communication Fragment
 
 An Interactive Communication Fragment allows users to create reusable, modular content blocks such as headers, footers, or standard disclaimers that can be used across multiple communication documents. These fragments help maintain consistency, reduce repetitive work, and accelerate the design process when building personalized, data-integrated communications.
 
-## Prerequisites
+## Prerequisite
 
-* User must have XYZ permissions.
-
-* AEM Archetype version X or later should be available.
+User must be part of forms-users group
 
 ## Create an Interactive Communication Fragment
+
 To create an interactive communication fragment, perform the following steps:
 
 * Open your **Adobe Experience Manager (AEM) Forms as a Cloud Service** instance.
@@ -21,7 +27,7 @@ To create an interactive communication fragment, perform the following steps:
 
 * Upon selecting Interactive Communication Fragment, a screen appears where you define key fragment details such as title, name, description, data model (a structured representation of backend data), and tags.
 
-To learn more, refer to the [Data Model Configuration Guide](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/configure-unified-storage-connector).
+To learn more, refer to the [Data Model Configuration Guide]().
 
 ![Find IC Docu](/help/forms/interactive-communication/assets/createfrgmnt.png)
 

@@ -1,6 +1,14 @@
+---
+title: Introduction to Adobe Interactive Communication Editor
+description: Discover Adobe Interactive Communication Editor in AEM Forms. Learn key features, onboarding steps, and real-world use cases to create dynamic, personalized communications.
+products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
+feature: Adaptive Forms, Interactive Communication
+role: User, Developer, Author, Admin
+---
+
 # Introduction to Adobe Interactive Communication Editor
 
-## 1.1 What is Adobe Interactive Communication Editor?
+## What is Adobe Interactive Communication Editor?
 
 Adobe Interactive Communication (IC) Editor is an intuitive visual design environment within Adobe Experience Manager Forms. It enables organizations to create highly personalized, data-integrated communications in print format using a single authoring experience. These communications are often used for customer correspondence such as billing statements, policy documents, welcome kits, and investment summaries.
 
@@ -8,7 +16,7 @@ You can integrate components such as text, images, charts, tables, and barcodes,
 
 ![Find IC Doc](/help/forms/interactive-communication/assets/introimg.png)
 
-## 1.2 Purpose and Use Cases
+## Purpose and Use Cases
 
 Common Use Cases Include:
 
@@ -19,7 +27,7 @@ Common Use Cases Include:
 * **Government & Education:** Populating citizen notices, certificates, and personalized mailers
 * **Human Resources:** Creating offer letters, onboarding kits, and employee communication documents
 
-## 1.3 Key Features and Capabilities
+## Key Features and Capabilities
 
 Interactive Communication (IC) Editor is designed for efficiency, usability, and control. Its features empower authors to create visually appealing, personalized, and data-integrated communications.
 
@@ -33,9 +41,9 @@ Interactive Communication (IC) Editor is designed for efficiency, usability, and
 | **Fragment Library**               | - Create modular building blocks (headers, footers, disclaimers, icons) <br> - Maintain consistency across multiple communications |
 | **Template Master PagesSupport** | - Use master pages to define consistent layouts <br> - Ensure uniform branding and structure across communications |
 
-## 2. Onboarding and Environment Setup for Interactive Communication (Enterprise Access) 
+## Onboarding and Environment Setup for Interactive Communication (Enterprise Access) 
 
-As part of the onboarding process for Interactive Communication (IC) Enterprise Access (EA), user need to request enablement of IC for their environment and configure appropriate user access. Once the environment is enabled and the necessary permissions are assigned, users can begin creating and managing Interactive Communications.
+As part of the onboarding process for Interactive Communication (IC) Enterprise Access (EA), user need to request enablement of IC for their environment and configure appropriate user access. Once the environment is enabled and the necessary permissions are assigned, users can start creating and managing Interactive Communications.
 
 Onboarding Steps:
 
@@ -45,12 +53,9 @@ Onboarding Steps:
 
 * Create a user account in the enabled environment.
 
-* Assign the user to the required XYZ user group.
-
 * Access the environment to start creating Interactive Communications.
 
-
-## 3. Where to Find IC Documentation, Samples, and Tutorials
+## Where to Find IC Documentation, Samples, and Tutorials
 
 Whether you're just getting started or looking to build complex communications, Adobe offers extensive learning resources:
 [Note: we'll add resources afterwards, below is just the format]
