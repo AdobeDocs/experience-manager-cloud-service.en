@@ -6,6 +6,7 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: yes
 hidefromtoc: yes
+index: no
 
 ---
 # AI Assistant in AEM {#aem-home}
