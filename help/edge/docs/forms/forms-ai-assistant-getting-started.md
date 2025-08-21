@@ -6,9 +6,8 @@ hide: yes
 index: no
 hidefromtoc: yes
 role: Admin, Architect, Developer
-exl-id: b8f64082-a23f-4919-ad66-042faad77d30
+exl-id: da429952-ccc0-4579-a243-8bddeb73a0fb
 ---
-
 # Getting Started with Forms Experience Builder
 
 >[!NOTE]
