@@ -527,6 +527,7 @@ Figure: Adding custom functions to the functions.js file
 ![Custom Function in Rule Editor](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 Figure: Selecting and configuring custom functions in the Rule Editor interface
 
+
 **Best practices for function usage**:
 
 - **Error handling**: Always include fallback behavior for function failures
@@ -535,6 +536,51 @@ Figure: Selecting and configuring custom functions in the Rule Editor interface
 - **Testing**: Create test cases covering normal and edge cases
 
 +++
+
+
+### Static Imports for Custom Functions
+
+The Universal Editor's Rule Editor supports static imports, enabling you to organize reusable logic across multiple files and forms. Instead of keeping all custom functions in a single file (/blocks/form/functions.js), you can import functions from other modules. 
+For example: Importing Functions from an External File
+Consider the following folder structure:
+```
+      form
+      ┣ commonLib
+      ┃ ┗ functions.js
+      ┣ rules
+      ┃ ┗ _form.json
+      ┣ form.js
+      ┗ functions.js
+```
+
+You can import functions from `commonLib/functions.js` into your main `functions.js` file as shown below:
+
+```
+`import {days} from './commonLib/functions';
+/**
+ * Get Full Name
+ * @name getFullName Concats first name and last name
+ * @param {string} firstname in String format
+ * @param {string} lastname in String format
+ * @return {string}
+ */
+function getFullName(firstname, lastname) {
+  return `${firstname} ${lastname}`.trim();
+}
+
+// Export multiple functions for use in Rule Editor
+export { getFullName, days};
+```
+
+### Organizing Custom Functions Across Different Forms
+
+You can create different sets of functions in separate files or folders and export them as required:
+ 
+* If you want certain functions to be available only in specific forms, you can provide the path to the functions file in the form configuration.
+
+* If the textbox for the path is left blank, the Rule Editor defaults to loading functions from `/blocks/form/functions.js`
+
+This allows flexibility by sharing functions across multiple forms or keeping them isolated per form.
 
 ## Best practices for rule development
 

@@ -4,8 +4,6 @@ description: This article explores various use cases for the rule editor in an A
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-hide: yes
-hidefromtoc: yes
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
 ---
 # Rule Editor Enhancements and Use Cases
@@ -91,26 +89,27 @@ These variables:
 * Can hold intermediate or calculated values.
 * Can be used in conditional logic and actions.
 
-**Scenario**: An e-commerce company provides an order form where users can select a product and a preferred shipping method. While product price is captured through a form field, shipping cost is determined dynamically based on the selected method and the country chosen.
+**Scenario**: An online shopping form allows users to select a product, enter quantity, and choose a country for shipping. The product price is a fixed value captured through a form field, while the shipping charge varies dynamically depending on the country selected.
 
-To keep the form structure clean and avoid adding unnecessary hidden fields, the business wants to handle shipping cost as a temporary value that supports real-time calculation of the total amount.
+To avoid cluttering the form with hidden fields, the business decides to store the shipping cost in a temporary variable and use it for real-time calculations.
 
 **Implementation using Set Variable Value and Get Variable Value functions in the Rule Editor**
 
-A rule is configured to set a temporary variable named **extracharge** using the **Set Variable Value** function. The value of this variable depends on the selected country. For example, if the user selects "United States," the value is set to 50. For any other country, it is set to 100.
+A rule is configured on the **Address** fragment using the **Set Variable Value** function to assign a temporary variable named **extracharge**. The value of this variable changes dynamically based on the selected country. For example:
+
+* If the user selects United States, **extracharge** is set to 500.
+* For any other country, **extracharge** is set to 100.
 
 ![Set variable value](/help/forms/assets/setvalue.png)
 
-Later, when calculating the total shipment cost, the **Get Variable Value** function retrieves the **extracharge** value based on the selected country. 
+Later, when the **Total Shipment Cost** is calculated, the **Get Variable Value** function is used to retrieve the value of **extracharge**. This value is added to the **Product Price × Product Quantity** to compute the final payable amount on the button click.
 
 ![Get variable value](/help/forms/assets/getvalue.png)
 
-This value is then added to the product's shipping cost, and the result is displayed in the **Total Shipment Cost** field.
-
+The **Total Shipment Cost** field dynamically updates to reflect both the product cost and shipping charge as the user changes the country or quantity.
 ![output](/help/forms/assets/getsetvalue-output.png)
 
-This approach allows you to calculate and display additional charges dynamically without storing them in a visible field, enabling a clean, responsive, and code-free user experience.
-
+This approach enables dynamic, real-time calculations without adding extra fields to the form, keeping the structure clean and user-friendly.
 
 ## Custom Event Based Rules Support
 
