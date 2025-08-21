@@ -477,4 +477,4 @@ The Forms Experience Builder can also teach you about AEM Forms features:
 
 **Still need help?** Type `/help` followed by your specific question or contact your system administrator.
 
-For additional support, refer to the main [Forms Experience Builder Prompt Library](ai-assistant-prompt-library.md) or contact your system administrator for technical assistance.
+For additional support, refer to the main [Forms Experience Builder Prompt Library](/help/edge/docs/forms/ai-assistant-prompt-library.md) or contact your system administrator for technical assistance.
