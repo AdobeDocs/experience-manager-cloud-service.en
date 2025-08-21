@@ -50,15 +50,15 @@ By convention it is recommended to create a folder with a lowercase experiment I
 
 Your experiments folder will look something like this:
 
-FIG 1
+![experiments-folder](/assets/experiments-folder.png)
 
 Once the folder has been created, put a copy of your control page into that folder, and apply the changes on the page that you would like to test as part of your experiment variant. As an example let’s assume we have the following page on the website that we want to run an experiment on.
 
-FIG 2
+![control-page](/assets/control-page.png)
 
-Your copy of the challenger placed in the experiments/<experiment-id> folder might look like this:
+Your copy of the challenger placed in the `experiments/<experiment-id>` folder might look like this:
 
-FIG 3
+![challenger-page](/assets/challenger-page.png)
 
 Preview and publish the challenger page using the sidekick and when you are done authoring the challenger page, the URL of the published challenger will be used in the next section - setting up the experiment.
 
@@ -68,13 +68,13 @@ As soon as you have your challengers ready to go, all you need to do is to go ba
 
 There are two metadata rows that need to be added for an experiment variant.
 
-Experiment : containing your experiment ID
+* Experiment : containing your experiment ID
 
-Experiment Variants: containing URLs for all the challengers of this page, separated by line breaks if you have more than one challenger
+* Experiment Variants: containing URLs for all the challengers of this page, separated by line breaks if you have more than one challenger
 
 See example below:
 
-FIG 4
+![metadata-page](/assets/metadata-page.png)
 
 For an experiment variant the traffic split between all the variants (control + challengers) is automatically set to an even distribution. If you have one challenger, there will automatically be an even 50/50 split between control and the challenger. If you have 2 challengers, you will automatically see a third of the traffic allocated to control and each challenger and so on.
 
@@ -84,7 +84,7 @@ You can override the traffic split via metadata. For more information, see the f
 
 As soon as you are ready to preview and stage your experiment you can preview the control page with the additional metadata. Whenever you are previewing a page that has a running experiment, you will see the experimentation overlay in your .hlx.page preview environment that lets you switch between the variants and gives you confidence that your test is setup correctly and ready to be launched.
 
-FIG 5
+![experimentation-overlay](/assets/experimentation-overlay.png)
 
 Authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.
 
