@@ -25,15 +25,32 @@ Interactive Communication (IC) Editor is designed for efficiency, usability, and
 
 | **Feature**                          | **Key Capabilities**                                                                 |
 |--------------------------------------|---------------------------------------------------------------------------------------|
-| **WYSIWYG Design Interface**         | - Pixel perfection for accurate rendering <br> - Font styling controls <br> - Flexible layout for professional design |
+| **WYSIWYG Editor**         | - Pixel perfection for accurate rendering <br> - Font styling controls <br> - Flexible layout for professional design |
 | **Layout Control**                   | - Positioning (absolute and flowed) <br> - Easy drag-and-drop functionality           |
-| **Prebuilt Elements and Components** | - Access to text, images, tables, charts, and barcodes <br> - Ready-to-use components for faster design |
+| **Out Of The Box Components** | - Access to text, images, tables, charts, and barcodes <br> - Ready-to-use components for faster design |
 | **Data Binding**                     | - Directly link components to data sources (Form Data Models) <br> - Automatically prefill fields for personalized communication |
-| **Bringing Dynamic Behavior Using Rules** | - Configure dynamic validations <br> - Add calculations and conditional logic for interactivity |
-| **Reusable Fragments**               | - Create modular building blocks (headers, footers, disclaimers, icons) <br> - Maintain consistency across multiple communications |
-| **Templating and Modularity (Master Pages)** | - Use master pages to define consistent layouts <br> - Ensure uniform branding and structure across communications |
+| **Rule Editor** | - Configure dynamic validations <br> - Add calculations and conditional logic for interactivity |
+| **Fragment Library**               | - Create modular building blocks (headers, footers, disclaimers, icons) <br> - Maintain consistency across multiple communications |
+| **Template Master PagesSupport** | - Use master pages to define consistent layouts <br> - Ensure uniform branding and structure across communications |
 
-## 2. Where to Find IC Documentation, Samples, and Tutorials
+## 2. Onboarding and Environment Setup for Interactive Communication (Enterprise Access) 
+
+As part of the onboarding process for Interactive Communication (IC) Enterprise Access (EA), user need to request enablement of IC for their environment and configure appropriate user access. Once the environment is enabled and the necessary permissions are assigned, users can begin creating and managing Interactive Communications.
+
+Onboarding Steps:
+
+* Send an email to the Adobe EA support team with your Environment ID and Organization ID.
+
+* Enable Interactive Communication (IC) for your environment with assistance from Adobe.
+
+* Create a user account in the enabled environment.
+
+* Assign the user to the required XYZ user group.
+
+* Access the environment to start creating Interactive Communications.
+
+
+## 3. Where to Find IC Documentation, Samples, and Tutorials
 
 Whether you're just getting started or looking to build complex communications, Adobe offers extensive learning resources:
 [Note: we'll add resources afterwards, below is just the format]
