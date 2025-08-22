@@ -11,7 +11,7 @@ exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
 
 The Visual Rule Editor in an Adaptive Form supports the **Invoke Service** feature, which allows you to select a service from the list of Form Data Models (FDM) configured for your instance. You can map form fields directly to the input parameters of the service. To map form fields to the output parameters, use the event payload option for the specified Form Data Model service. Additionally, the Visual rule editor allows you to create rules for success and failure handlers for **Invoke Service** operations based on its output responses. Success handlers manage the successful execution of the **Invoke Service** operation, while failure handlers address any errors that occur.
 
-### Advantages of using the Invoke Service in the form's rule editor
+## Advantages of using the Invoke Service in the form's rule editor
 
 Here are few advantages of using Invoke Service operation in the rule editor of an Adaotive Form:
 
@@ -55,7 +55,7 @@ Below are the prerequisites you must satisfy before using **Invoke Service** in 
 
 * Make sure you have configured a data source. For instructions on configuring a data source, [click here](/help/forms/configure-data-sources.md).
 * Create a Form Data Model using the configured data source. For guidance on creating a Form Data Model, [click here](/help/forms/create-form-data-models.md).
-* Ensure that Core Components are enabled for your environment. For detailed instructions on how to enable Core Components for your environment, [click here](/help/forms/enable-adaptive-forms-core-components.md).
+* Ensure that Core Components are enabled for your environment. Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
 
 ## Exploring Invoke Service through different use cases
 

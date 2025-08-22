@@ -22,7 +22,7 @@ Using the GraphQL API in AEM enables the efficient delivery of Content Fragments
 >
 >GraphQL is currently used in two (separate) scenarios in Adobe Experience Manager (AEM) as a Cloud Service:
 >
->* [AEM Commerce consumes data from a Commerce platform via GraphQL](/help/commerce-cloud/integrating/magento.md).
+>* [AEM Commerce consumes data from a Commerce platform via GraphQL.](/help/commerce-cloud/cif-storefront/integrating/magento.md)
 >* AEM Content Fragments work together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications.
 
 >[!NOTE]
@@ -45,7 +45,7 @@ GraphQL is:
 
   See [Explore GraphQL](https://www.graphql.com).
 
-* *"...a data query language and specification developed internally by Facebook in 2012 before being publicly open sourced in 2015. It provides an alternative to REST-based architectures with the purpose of increasing developer productivity and minimizing amounts of data transferred. GraphQL is used in production by hundreds of organizations of all sizes..."*
+* *"...a data query language and specification developed internally by Facebook in 2012 before being publicly open sourced in 2015. It provides an alternative to REST-based architectures with the purpose of increasing developer productivity and minimizing the amounts of data transferred. GraphQL is used in production by hundreds of organizations of all sizes..."*
   
   See [GraphQL Foundation](https://foundation.graphql.org/).
 
@@ -103,7 +103,7 @@ With GraphQL you can perform queries to return either:
   
 * A **[list of entries](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM provides capabilities to convert queries (both types) to [Persisted Queries, that can be cached](/help/headless/graphql-api/persisted-queries.md) by Dispatcher and the CDN.
+AEM provides capabilities to convert queries (both types) to [Persisted Queries, that can be cached](/help/headless/graphql-api/persisted-queries.md) by the Dispatcher and the CDN.
 
 ### GraphQL Query Best Practices (Dispatcher and CDN) {#graphql-query-best-practices}
 
@@ -163,7 +163,7 @@ Also, the user must have access to a GraphQL endpoint to be able to execute Grap
 
 ## Schema Generation {#schema-generation}
 
-GraphQL is a strongly-typed API, which means that data must be clearly structured and organized by type.
+GraphQL is a strongly typed API, which means that data must be clearly structured and organized by type.
 
 The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating data on a certain instance. To do this, a client must fetch the [Schema](#schema-generation), which contains all the types necessary for a query. 
 
@@ -789,7 +789,6 @@ The structure and syntax is:
 * `flip`: an enumeration of HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
 * `quality`: an integer from 1&ndash;100 notating the percentage of the image quality
 * `width`: an integer that defines the width of the output image but is ignored by the Image Generator
-* `preferWebp`: a boolean that indicates if webp is preferred (default value is false)
 
 The URL transform is available for all query types: by path, list or paginated.
 
@@ -817,7 +816,6 @@ The following is a sample query with a full set of parameters:
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -856,7 +854,6 @@ query ($seoName: String!) {
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -895,7 +892,6 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -1169,7 +1165,7 @@ The current limitations are:
 
   >[!NOTE]
   >
-  >The full URL then needs to be constructed on the client side, based on the [Asset delivery API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+  >The full URL then needs to be constructed on the client side, based on the [Asset delivery API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 * Only *Approved* assets will be available for reference from the remote repositories
 * If an asset that is referenced is removed from the remote repository, this will result in a broken Content Fragment Asset reference.

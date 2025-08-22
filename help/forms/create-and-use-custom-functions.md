@@ -163,6 +163,7 @@ You can create a custom function with or without jsdoc comments.
             // code to be executed
         }
 ```
+
 If the user does not add any JavaScript annotations to the custom function, it is listed in the rule editor by its function name. However, it is recommended to include JavaScript annotations for improved readability of the custom functions.
 
 ### Arrow function with mandatory JavaScript annotations or comment
@@ -208,6 +209,16 @@ To list custom functions in the rule editor of an Adaptive Form, create custom f
 ```
 
 If the user does not add any JavaScript annotations to the custom function, the custom function is not listed in the rule editor of an Adaptive Form.
+
+## Known Issue
+
+* Custom functions do not support JavaScript regular expression literals. Using regex literals in a custom function results in errors during execution. For example:
+  `const pattern = /^abc$/;`
+
+  To ensure compatibility, use the RegExp constructor in the custom functions.
+  
+  `const pattern = new RegExp("^abc$");`
+  Refactor regular expressions to use the RegExp constructor to ensure consistent and reliable execution.
 
 ## Next Step
 
