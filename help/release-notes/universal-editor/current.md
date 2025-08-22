@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2025.05.21 Release Notes
-description: These are the release notes for the 2025.05.21 release of the Universal Editor.
+title: Universal Editor 2025.08.22 Release Notes
+description: These are the release notes for the 2025.08.22 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.05.21 Release Notes {#release-notes}
+# Universal Editor 2025.08.22 Release Notes {#release-notes}
 
-These are the release notes for the 21 May 2025 release of the Universal Editor.
+These are the release notes for the 22 August 2025 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -16,11 +16,32 @@ These are the release notes for the 21 May 2025 release of the Universal Editor.
 
 ## What's New {#what-is-new}
 
-* **Disable open page button** - The open page button [can now be disabled.](/help/implementing/universal-editor/customizing.md#open-page)
-* **Access properties from content tree** - [When you double-click an entry in the content tree,](/help/sites-cloud/authoring/universal-editor/navigation.md) the associated properties will automatically open in the side panel.
+* New features for [RTE early adopters](#new-rte)
+  * Link title is now available in the link dialog.
+  * Unlinking is now available.
+  * List items now support inline formatting and links.
+  * Scrollable area was fixed.
+
+## Early Adoption Features {#early-adopter}
+
+If you are interested in testing these upcoming features and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 
+
+### New RTE {#new-rte}
+
+The new ProseMirror RTE, featuring a page picker in the link dialog, is now available in the right panel.
+
+### Undo/Redo {#undo-redo}
+
+Undo and redo is now available to Universal Editor content authors.
+
+* This includes edits done in context, edits done via the Properties panel, as well as adding (or duplicating), moving, and deleting blocks.
+* Undo and redo is limited to the current browser session.
 
 ## Other Improvements {#other-improvements}
 
-* References that are already published are now unselected by default in the publish dialog, to prevent re-publishing them.
-* Loading of extensions has been improved.
-* Exceptions raised by extensions are now handled better to not impact the editor.
+* [The undo/redo early adopter feature](#undo-redo) no longer triggers a page reload when a component is added via a undo or redo operation.
+
+## Deprecations {#deprecations}
+
+* The `text-input` and `text-area` components were officially deprecated with [release 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)
+  * In `model-definition.json`, use the text component to create text inputs for the Properties panel.

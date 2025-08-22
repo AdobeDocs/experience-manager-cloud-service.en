@@ -14,14 +14,13 @@ This page also describes how the Dispatcher cache is invalidated and how caching
 
 ## Caching {#caching}
 
-Caching of HTTP responses in AEM as a Cloud Service’s CDN is controlled by the following HTTP response headers from the origin: `Cache-Control`, `Surrogate-Control`, or `Expires`. 
+Caching of HTTP responses in AEM as a Cloud Service's CDN is controlled by the following HTTP response headers from the origin: `Cache-Control`, `Surrogate-Control`, or `Expires`. 
 
-These cache headers are typically set in AEM Dispatcher vhost configurations using mod_headers, but can also be set in custom Java™ code running in AEM Publish itself (see [How to enable CDN caching](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)).
+These cache headers are typically set in AEM Dispatcher vhost configurations using mod_headers, but can also be set in custom Java&trade; code running in AEM Publish itself (see [How to enable CDN caching](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)).
 
 The cache key for CDN resources contains the full request url, including query parameters, so every different query parameter will produce a different cache entry. Consider removing unwanted query parameters; [see below](#marketing-parameters) for improving cache hit ratio.
 
-Origin responses that contain `private`, `no-cache` or `no-store` in  `Cache-Control` are not cached by the AEM as a Cloud Service’s CDN (see [How to disable CDN caching
-](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) for more details).  Also, responses that are setting cookies, i.e. have a `Set-Cookie` response header are not cached by the CDN.
+Origin responses that contain `private`, `no-cache` or `no-store` in  `Cache-Control` are not cached by the AEM as a Cloud Service's CDN (see [How to disable CDN caching](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) for more details).  Also, responses that are setting cookies, i.e. have a `Set-Cookie` response header are not cached by the CDN.
 
 ### HTML/Text {#html-text}
 
@@ -285,6 +284,7 @@ In the following example only `page` and `product` parameters are not ignored an
 ```
 
 1. Allow all parameters except the marketing parameters. The file [marketing_query_parameters.any](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.dispatcher.d/cache/marketing_query_parameters.any) defines a list of commonly used marketing parameters that will be ignored. Adobe will not update this file. It can be extended by users depending on their marketing providers.
+
 ```
 /ignoreUrlParams {
    /0001 { /glob "*" /type "deny" }

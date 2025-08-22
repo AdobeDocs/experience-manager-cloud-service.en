@@ -17,6 +17,10 @@ The existing usage of [Assets HTTP API](https://experienceleague.adobe.com/en/do
 >
 >See [OpenAPI-Based APIs](/help/implementing/developing/open-api-based-apis.md) for details of authorizing your access to the OpenAPI.
 
+>[!CAUTION]
+>
+>By default the Content Fragment Management OpenAPI is disabled on publish. Instead of this, for delivery-oriented use-cases, we recommend using the [Content Fragment Delivery OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md).
+
 >[!NOTE]
 >
 >See [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md) for an overview of the various APIs available and comparison of some of the concepts involved.

@@ -50,6 +50,7 @@ Understanding SSL/TLS connection problems can sometimes be difficult. To trouble
    ![image](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
 >[!NOTE]
+>
 >This flag is only for debugging SSL issues. Ensure that the flag is disabled before running the extraction, as it may require a large amount of disk space. This could potentially fill the drive capacity and cause the extraction process to fail.
 
 ## Running the Content Transfer Tool {#running-tool}
@@ -95,7 +96,7 @@ The following section applies to the new version of the Content Transfer Tool. F
 
    >[!NOTE]
    >
-   >The name must follow the same conventions of an AEM node so cannot contain any of these characters: `. / : [ ] | * < > ^ ? { } % # `` nor any unusual symbols or emojis.
+   >The name must follow the same conventions of an AEM node so cannot contain any of these characters: `. / : [ ] | * < > ^ ? { } % # ` nor any unusual symbols or emojis.
 
 1. You should now see your migration list in the list view. Select the three dots symbol (**...**) to open the drop-down and select **Copy Extraction key**. You need this key during the Extraction phase. Copy this Extraction key.
 

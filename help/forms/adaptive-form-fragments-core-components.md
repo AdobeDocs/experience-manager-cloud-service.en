@@ -77,9 +77,11 @@ To add an Adaptive Form fragment to an Adaptive Form:
 
      ![select the Adaptive Form Fragments option](/help/forms/assets/adaptive-form-fragment-basic.png)
 
-  <!-- >[!NOTE]
+<!-- 
+   >[!NOTE]
    >
-   >The Adaptive Form fragment is not enabled for authoring from within the Adaptive Form. Moreover, you cannot use an XSD-based fragment in a JSON-based Adaptive Form and the opposite way. -->
+   >The Adaptive Form fragment is not enabled for authoring from within the Adaptive Form. Moreover, you cannot use an XSD-based fragment in a JSON-based Adaptive Form and the opposite way. 
+-->
 
 The Adaptive Form fragment is added by reference to the Adaptive Form and remains in synchronized with the standalone Adaptive Form fragment. This implies that any modifications made to the Adaptive Form fragment are mirrored across all instances where the fragment is incorporated within Adaptive Forms.
 
@@ -113,15 +115,14 @@ You can use a none-based and schema-based form fragment multiple times in an Ada
 
 ![using multiple fragment in adaptive form](/help/forms/assets/using-multiple-fragment-af.gif)
 
-<!--
+## Auto mapping support for fragments in an Adaptive Form 
 
-## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
+When you create an Adaptive Form Fragment based on a JSON schema definition, it can be automatically reused in forms created from the same schema.
+If you drag and drop a schema object or any nested objects that matches the JSON schema definition mapping of an Adaptive Form Fragment, the object is replaced by the matched Adaptive Form Fragment. Instead of adding a panel with individual fields, the form inserts the mapped Adaptive Form Fragment.
 
-When you create an Adaptive Form fragment using an XFA form template or XSD complex type and drag-drop the fragment to an Adaptive Form, the XFA fragment or the XSD complex type is automatically replaced by the corresponding Adaptive Form fragment whose fragment model root is mapped to the XFA fragment or XSD complex Type.
+   ![Drag and drop a fragment](/help/forms/assets/fragment.png)
 
-You can change the fragment asset and its bindings from the Edit component dialog.
-
-You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragment library in AEM content finder and provide the correct bind reference from the Edit component dialog of the Adaptive Form fragment panel. -->
+You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragment library in AEM content finder and provide the correct bind reference from the Edit component dialog of the Adaptive Form fragment panel.
 
 ## Manage fragments {#manage-fragments}
 

@@ -67,21 +67,6 @@ Here's what more Conversational Forms bring:
 
 Conversational Forms are more than just a new look – they're a game-changer for user experience.  Boost engagement, reduce form abandonment, and make interacting with your website a more enjoyable experience for everyone.
 
-
-### WYSIWYG Authoring for Edge Delivery Services
-
-WYSIWYG Authoring provides WYSIWYG interfaces (Universal Editor and Adaptive Forms Editor) to build and publish adaptive forms to Edge Delivery Services. WYSIWYG Authoring offers all the capabilities of [Document-based Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features), plus a wide range of additional features:
-
-* Advanced rules editor for creating complex logic.
-* Server-side extensibility for custom functionalities.
-* WYSIWYG editing experience for easy form creation and visualization.
-* Document of record functionality to create tamper-proof archives of submitted data.
-* Integration with Adobe Sign for electronic signatures.
-* Integration with various data sources for pre-populating forms and submitting data.
-* Form Data Model (FDM) for defining data structure and interactions with various data sources.
-* Ability to choose from multiple submit actions for handling form submissions, including submitting data to Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics, and many more data sources.
-
-
 ### AEM Forms to Marketo Connector
 
 The [AEM Forms to Marketo Connector](/help/forms/integrate-form-to-marketo-engage.md) bridges the gap between your web forms (Adaptive Forms) built with Adobe Experience Manager (AEM) and your marketing automation platform, Marketo. 
@@ -125,6 +110,8 @@ Interactive Communications on Cloud is a powerful solution for creating, managin
 
 * **Format Flexibility**: Output to PDF, HTML, PCL, PostScript&reg;, and ZPL formats.
 
+* **Rule Editor**: Build dynamic, data-driven actions directly within your documents using an intuitive, point-and-click interface. Easily define conditional logic, automate workflows, and personalize content without writing code.
+
 #### Use Cases:
 
 * Financial institutions generating account statements
@@ -139,6 +126,62 @@ Ready to start? The Interactive Communications editor is available under the Ear
 You can connect AEM Forms with Adobe Experience Platform (AEP) to leverage customer profiles and data for personalized form experiences and trigger downstream workflows based on form submissions. By sending form data directly to AEP datasets, you can enrich customer profiles and gain deeper insights into user interactions.
 
 Ready to start? [Learn more about integrating AEM Forms with Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md).
+
+### AEM Forms HTML5 Forms
+
+AEM Forms HTML5 Forms enables you to render existing XFA (XML Forms Architecture) form templates in HTML5 format, making them accessible on modern browsers and mobile devices where XFA-based PDF is not supported. This capability bridges the gap between traditional PDF forms and modern web experiences.
+
+![HTML5 Forms Preview](/help/forms/assets/mobile_form_on_an_ipad_date_14.png)
+
+**Key capabilities:**
+
+* **HTML5-based rendering of XFA form templates**: Render your existing XFA-based forms in HTML5 format to expand your client platform to mobile devices (Apple iPad, Android tablet, smartphones, and more) that support HTML5 but do not support Adobe Reader with XFA Forms.
+
+* **Mobile-ready forms**: HTML5 Forms bring numerous capabilities that are mobile-ready, helping you expand your current solutions and workflows to tablets or smartphones with HTML5 browsers.
+
+* **Accessibility support**: HTML5 Forms use the ARIA HTML5 accessibility standard and support tabbed navigation, making them compatible with common screen readers like JAWS and VoiceOver.
+
+* **Customization capabilities**: You can customize the appearance of existing widgets, create your own custom widgets, or use custom styles in forms using standard web technologies like CSS and JavaScript.
+
+* **Right-to-left language support**: HTML5 Forms support right-to-left languages such as Hebrew, allowing you to display and fill forms in RTL languages.
+
+* **Attachment support**: Upload, preview, and submit attachments with HTML5 forms for enhanced data collection.
+
+* **Draft saving**: Save an HTML5 form as a draft and resume filling the form at a later stage.
+
+Ready to start? The [Introduction to HTML5 forms](/help/forms/introductionhtml5.md) documentation provides a comprehensive overview and getting started guide for this innovation.
+
+### AEM Forms Scaffolder CLI for Custom Components
+
+Accelerate your AEM Forms Edge Delivery Services development with the AEM Forms CLI tool. This command-line interface enables you to instantly generate the code and wiring needed to kickstart custom component development—no boilerplate, no hassle.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+
+**Key capabilities:**
+
+* **Rapid scaffolding**: Instantly generate the structure and code for new custom components, reducing manual setup time.
+* **Best practices built-in**: The tool follows recommended patterns for AEM Forms Edge Delivery Services, ensuring consistency and maintainability.
+* **Developer productivity**: Focus on building business logic and UI, while the CLI handles repetitive setup tasks.
+* **Seamless integration**: Generated components are ready to use and integrate with your existing AEM Forms projects.
+
+Ready to start? The AEM Forms CLI tool is available under the Early Access program for Forms as a Cloud Service deployments. To request access, email your organization ID and program details to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
+
+### API Integration Tool for Dynamic Form Data
+
+The API Integration Tool enables form authors to create dynamic, intelligent forms that automatically fetch and populate data from external REST APIs based on user interactions. This no-code integration capability transforms static forms into responsive data collection interfaces.
+
+Key capabilities include:
+
+* **Visual Configuration Interface**: Create API integrations through an intuitive, point-and-click interface without custom coding
+* **Real-time Data Population**: Automatically populate form fields based on user in put (e.g., auto-fill city and state when user enters zip code)  
+* **Flexible API Support**: Connect to any publicly accessible REST API with support for GET/POST methods, authentication, and JSON/XML responses
+* **Rule-Based Triggers**: Define when API calls are triggered using the built-in rule engine (e.g., field changes, form events)
+* **Smart Data Mapping**: Configure how API response data maps to specific form fields using Adobe's JSON parsing capabilities
+* **Enhanced User Experience**: Reduce manual data entry, improve data accuracy, and create more engaging form interactions
+
+This tool is particularly useful for scenarios like address auto-completion, dynamic dropdown population, real-time validation against external databases, and creating context-aware form experiences that adapt based on user input.
+
+
 
 ## Additional Early Access Innovations
 

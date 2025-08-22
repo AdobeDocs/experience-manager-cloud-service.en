@@ -25,7 +25,7 @@ DevXL is built to mirror the size, scalability, and configurations of a typical 
 | Environment Size | Matches Stage environment. |
 | Isolation | Fully isolated from other environments. |
 | Code Pipelines | Same as the Development environment (Validation, Build, Deploy). |
-| Content Copy | Allowed from Production or Stage environment. |
+| Copy Content | Allowed from Production, Stage, or a Specialized Testing Environment. |
 | Content Restore | Same as the Development environment. |
 | Access Logs | Same as the Development environment. |
 | Developer Console | Same as the Development environment. |
@@ -46,9 +46,8 @@ To add or edit an environment, a user must be a member of the **Business Owner**
 
 1. Do one of the following: 
 
-   If the **Add Environment** option is dimmed (disabled), it may be due to a lack of permissions or dependent on the licensed resources. 
-
    * On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, on the **Environments** card, click **Add Environment**.
+      If the **Add Environment** option is dimmed (disabled), it may be due to a lack of permissions or dependent on the licensed resources. 
 
    ![Environments card](assets/no-environments.png)
 
