@@ -18,22 +18,21 @@ User must be part of forms-users group
 
 To create an interactive communication fragment, perform the following steps:
 
-* Open your **Adobe Experience Manager (AEM) Forms as a Cloud Service** instance.
-* Navigate to **Forms > Forms & Documents**.
-* Click the **Create** button and select **Interactive Communication Fragment**.
+1. Open your **Adobe Experience Manager (AEM) Forms as a Cloud Service** instance.
+1. Navigate to **Forms > Forms & Documents**.
+1. Click the **Create** button and select **Interactive Communication Fragment**.
 
-![Find IC Docu](/help/forms/interactive-communication/assets/fragment.png)
+    ![Find IC Docu](/help/forms/interactive-communication/assets/fragment.png)
 
+1. Upon selecting Interactive Communication Fragment, a screen appears where you define key fragment details such as title, name, description, data model (a structured representation of backend data), and tags.
 
-* Upon selecting Interactive Communication Fragment, a screen appears where you define key fragment details such as title, name, description, data model (a structured representation of backend data), and tags.
+    To learn more, refer to the [Data Model Configuration Guide](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models).
 
-To learn more, refer to the [Data Model Configuration Guide]().
+    ![Find IC Docu](/help/forms/interactive-communication/assets/createfrgmnt.png)
 
-![Find IC Docu](/help/forms/interactive-communication/assets/createfrgmnt.png)
+1. After filling all the mandatory fields, click the Create button.
+1. It opens the IC Editor, where you can begin designing your fragment.
 
-* After filling all the mandatory fields, click the Create button.
-* It opens the IC Editor, where you can begin designing your fragment.
-
-![Find IC Docu](/help/forms/interactive-communication/assets/frgmntui.png)
+    ![Find IC Docu](/help/forms/interactive-communication/assets/frgmntui.png)
 
 By creating Interactive Communication Fragments, you ensure design consistency, save time, and streamline the process of building dynamic, personalized communications.
