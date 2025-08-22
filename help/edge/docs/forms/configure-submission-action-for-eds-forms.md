@@ -109,7 +109,7 @@ Update the AEM Cloud Service instance URL in the `constant.js` file in the `../f
    export const submitBaseUrl = 'http://localhost:<port-number>';
 
    ```
-
+<!--
 #### 2. AEM Dispatcher Configuration
 
 Configure Dispatcher on your AEM Publish instance:
@@ -132,9 +132,9 @@ Example Dispatcher filter configuration:
   /0102 { /type "allow" /method "POST" /url "/content/forms/portal/submit/adaptiveform" }
 }
 ```
+-->
 
-
-#### 3. OSGi Referrer Filter
+#### 2. OSGi Referrer Filter
 
 Configure the Referrer Filter to allow your specific Edge Delivery site domains:
 
@@ -170,7 +170,7 @@ Configure the Referrer Filter to allow your specific Edge Delivery site domains:
 
 3. Deploy the configuration through Cloud Manager
 
-### 4. CORS (Cross-Origin Resource Sharing) Issues
+### 3. CORS (Cross-Origin Resource Sharing) Issues
 
 Configure CORS settings in AEM to allow requests from your specific Edge Delivery site domains:
 
@@ -205,14 +205,14 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 For detailed CORS configuration, refer to the [CORS Configuration Guide](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
 
-#### 5. CDN Redirect Rules
+#### 4. CDN Redirect Rules
 
 Configure your Edge Delivery CDN to route submissions:
 
 - Route requests from `/adobe/forms/af/submit/...` to your AEM Publish instance
 - Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)
 
-#### 6. Form Configuration
+#### 5. Form Configuration
 
 1. Create form in Universal Editor
 2. Configure submit action to target AEM Forms action
