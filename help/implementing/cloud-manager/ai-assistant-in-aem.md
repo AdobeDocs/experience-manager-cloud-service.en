@@ -4,10 +4,10 @@ description: Use AI Assistant to help you find answers, and troubleshoot for the
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Beta" type="Positive"
-hide: no
+hide: yes
 hidefromtoc: yes
-exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
+index: no
+exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
 ---
 # AI Assistant in AEM {#aem-home}
 
