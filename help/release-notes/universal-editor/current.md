@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2025.08.28 Release Notes
-description: These are the release notes for the 2025.08.28 release of the Universal Editor.
+title: Universal Editor 2025.08.22 Release Notes
+description: These are the release notes for the 2025.08.22 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.08.28 Release Notes {#release-notes}
+# Universal Editor 2025.08.22 Release Notes {#release-notes}
 
-These are the release notes for the 28 August 2025 release of the Universal Editor.
+These are the release notes for the 22 August 2025 release of the Universal Editor.
 
 >[!TIP]
 >
