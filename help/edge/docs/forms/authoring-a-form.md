@@ -31,14 +31,14 @@ AEM provides multiple form authoring options to create interactive and engaging 
 
 AEM supports multiple authoring methods, each suited for different user needs, technical skill levels, and publishing destinations.
 
-* [Foundation Components](/help/forms/create-adaptive-form-tutorial.md): Use Foundation Components to build traditional, interactive forms. Best suited for forms that integrate with legacy systems or rely on long-established workflows. Forms authored with Foundation Components can be published on AEM only, and are not compatible with Edge Delivery Services.
+- [Foundation Components](/help/forms/create-adaptive-form-tutorial.md): Use Foundation Components to build traditional, interactive forms. Best suited for forms that integrate with legacy systems or rely on long-established workflows. Forms authored with Foundation Components can be published on AEM only, and are not compatible with Edge Delivery Services.
 
-* [Core Components](/help/forms/creating-adaptive-form-core-components.md): Use Core Components to create modern, responsive, and scalable forms. They support reusability, accessibility, and better performance. Forms authored with Core Components can be published on both AEM and Edge Delivery Services, offering flexibility across platforms.
+- [Core Components](/help/forms/creating-adaptive-form-core-components.md): Use Core Components to create modern, responsive, and scalable forms. They support reusability, accessibility, and better performance. Forms authored with Core Components can be published on both AEM and Edge Delivery Services, offering flexibility across platforms.
 
-* [Edge Delivery Services Forms](/help/edge/docs/forms/overview.md): Edge Delivery Services Forms transform the way forms are authored, executed, and processed. By leveraging Edge Delivery Services, organizations can create fast, secure, and highly available digital forms, enhancing user experience and operational efficiency with a rapid development environment. You can author the Edge Delivery Services Forms in two ways:
-  * [WYSIWYG Authoring](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): Use the Universal Editor for visual, drag-and-drop form creation ideal for content authors with limited technical knowledge. Forms authored with Universal Editor are delivered using Edge Delivery Services for fast, lightweight rendering.
-  * [Document-Based Authoring](/help/edge/docs/forms/tutorial.md): Use tools like Microsoft Excel or Google Sheets to define form structure and content. This method is useful for business users who prefer spreadsheet-driven input. These forms are typically published through Edge Delivery Services and are suitable for lightweight, high-volume use cases.
-* [Headless Authoring](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service): Use APIs to render forms as JSON for any frontend, for example, React, Angular, mobile apps, or kiosks, without depending on AEM. Currently, only Core Components support headless delivery. Headless forms are ideal for omnichannel use cases and are consumed independently of AEM's page rendering, making them flexible for custom front-end deployments.
+- [Edge Delivery Services Forms](/help/edge/docs/forms/overview.md): Edge Delivery Services Forms transform the way forms are authored, executed, and processed. By leveraging Edge Delivery Services, organizations can create fast, secure, and highly available digital forms, enhancing user experience and operational efficiency with a rapid development environment. You can author the Edge Delivery Services Forms in two ways:
+  - [WYSIWYG Authoring](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): Use the Universal Editor for visual, drag-and-drop form creation ideal for content authors with limited technical knowledge. Forms authored with Universal Editor are delivered using Edge Delivery Services for fast, lightweight rendering.
+  - [Document-Based Authoring](/help/edge/docs/forms/tutorial.md): Use tools like Microsoft Excel or Google Sheets to define form structure and content. This method is useful for business users who prefer spreadsheet-driven input. These forms are typically published through Edge Delivery Services and are suitable for lightweight, high-volume use cases.
+- [Headless Authoring](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service): Use APIs to render forms as JSON for any frontend, for example, React, Angular, mobile apps, or kiosks, without depending on AEM. Currently, only Core Components support headless delivery. Headless forms are ideal for omnichannel use cases and are consumed independently of AEM's page rendering, making them flexible for custom front-end deployments.
 
 ### Comparative analysis of AEM form authoring methods
 
@@ -101,7 +101,7 @@ The following table provides a detailed comparison of key features across differ
 
 ## Related Article
 
-* [Document-based authoring using Microsoft Excel or Google Sheets](/help/edge/docs/forms/create-forms.md)
-* [Universal Editor for WYSIWYG authoring](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
-* [Create an Adaptive Form (Foundation Components)](/help/forms/creating-adaptive-form.md)
-* [Create an Adaptive Form (Core Components)](/help/forms/create-an-adaptive-form.md)
+- [Document-based authoring using Microsoft Excel or Google Sheets](/help/edge/docs/forms/create-forms.md)
+- [Universal Editor for WYSIWYG authoring](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
+- [Create an Adaptive Form (Foundation Components)](/help/forms/creating-adaptive-form.md)
+- [Create an Adaptive Form (Core Components)](/help/forms/create-an-adaptive-form.md)

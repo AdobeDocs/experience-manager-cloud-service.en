@@ -21,7 +21,7 @@ exl-id: 84394bdd-2b92-4f5d-b08a-7dc2c681baa4
 
 Use the Refactoring Tool to migrate your code for compatibility with AEM as a Cloud Service.
 
-1. If you haven’t created a CAM project yet, refer to [Creating and Managing a Project in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md#create-project).
+1. If you haven't created a CAM project yet, refer to [Creating and Managing a Project in CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md#create-project).
 1. Click the **Code Refactoring** card to upload the source code.
 
    ![image](/help/journey-migration/refactoring-tools/assets/rscam1.png)
@@ -29,8 +29,6 @@ Use the Refactoring Tool to migrate your code for compatibility with AEM as a Cl
 1. When you first access the **Source Code View**, you will see an empty state prompting you to upload your source code.
 
    ![image](/help/journey-migration/refactoring-tools/assets/rscam2.png)
-
----
 
 ## Uploading Source Code {#uploading}
 
@@ -62,12 +60,12 @@ When customers first access the **Refactoring Tools**, they are presented with a
    ![image](/help/journey-migration/refactoring-tools/assets/rscam5.png)
 
 >[!NOTE]
+>
 >Uploading a new project will delete the existing one. Ensure any necessary data is saved before proceeding.
 
 >[!NOTE]
+>
 >Refactoring jobs can only be executed if the source code upload is successful.
-
----
 
 ## Refactoring Jobs {#refactoring-jobs}
 
@@ -84,9 +82,8 @@ When you click the **Refactoring Job** tab, you will see a list of existing jobs
 ![image](/help/journey-migration/refactoring-tools/assets/rscam7.png)
 
 >[!NOTE]
+>
 >You can trigger individual refactoring jobs or execute all available tools in one go using the **All Tools Together** option.
-
----
 
 ### 2. Job Status
 
@@ -105,4 +102,5 @@ When the job is completed successfully, the **Download** button becomes availabl
 ![image](/help/journey-migration/refactoring-tools/assets/rscam9.png)
 
 >[!NOTE]
+>
 >Each job can take up to 1 hour to complete. If the status is not updated, please contact Adobe Support.

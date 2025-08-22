@@ -93,6 +93,7 @@ With the improvements in features and subsequent updates in the versions of AEM 
 > * Ensure that the **ContentType** header is **application/problem+json**.
 
 Where:
+
 * `type (required)` specifies the type of failure. It can be one of the following values:
     * `SERVER_SIDE_VALIDATION` indicates a failure due to server-side validation.
     * `FORM_SUBMISSION` indicates a failure during form submission
@@ -179,6 +180,7 @@ Using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs
 > * A default error handler is provided to display error messages on fields if the error response is in the standard schema. You can also call the default error handler from the custom error handler function. 
 
 Using Rule Editor, you can:
+
 * [Add default error handler function](#add-default-errror-handler)
 * [Add custom error handler function](#add-custom-errror-handler)
 
@@ -217,6 +219,7 @@ The custom error handler is a function (Client Library) designed to respond to e
 To understand how to create and use a custom error handler using the [Rule Editor's Invoke service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#invoke) action, let's take an example of Adaptive Form with two fields, **Pet ID** and **Pet Name** and use a custom error handler at the **Pet ID** field to check for various errors returned by the REST endpoint configured to invoke an external service, for example, `200 - OK`,`404 - Not Found`, `400 - Bad Request`.  
 
 To add and use a custom error handler in an Adaptive Form, perform the following steps:
+
 1. [Create a custom error handler](#create-custom-error-message) 
 1. [Use the Rule Editor to configure custom error handler](#use-custom-error-handler)
 
@@ -250,6 +253,7 @@ Let's add the following code to the JavaScript file to display the response and 
         return true; // true - call default error handler, false - don't call default error handler.
     }
     ```
+
     In the code above, `return true` invokes the default error handler automatically. To prevent the default error handler from being called by default, include `return false`.
 
     >[!NOTE]

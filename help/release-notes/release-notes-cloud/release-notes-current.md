@@ -22,7 +22,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.6.0) is June 26, 2025. The next feature release (2025.7.0) is planned for August 7, 2025.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.7.0) is August 7, 2025. The next feature release (2025.8.0) is planned for August 28, 2025.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -32,56 +32,160 @@ You can find the latest maintenance release notes [here](/help/release-notes/mai
 
 ## Release Video {#release-video}
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
+Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### New features in Experience Manager Sites {#enhancements-sites}
+
+* You can now copy content fragments with referenced fragments (children) in one operation. This allows re-using existing content fragment structures for creating new content.
+* In Content Fragments Admin UI you can now view the workflow status for content fragments, with detailed information about past and currently running workflows for a selected fragment.
+* Renaming or moving a live copy source page will now trigger re-publishing a correspondingly renamed or moved live copy page. 
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Enhanced Metadata Form management in Assets View**
+**Add shapes to Dynamic Media templates**
 
-You can now import metadata forms from Admin view directly into Assets view. Any updates made to these forms in Assets view automatically reflect in Admin view, ensuring consistency across both experiences. This capability supports a seamless transition to the new Assets view while maintaining continuity with your existing metadata configurations.
+You can now [add shape layers to Dynamic Media templates](/help/assets/dynamic-media/dynamic-media-templates.md#add-shapes-to-the-canvas) in Experience Manager Assets. Similar to image and text layers, shape layers support parameters for real-time updates via the template URL. You can also include call-to-action (CTA) links to shapes in your templates.
 
-![AI generated metadata](/help/assets/assets/import-metadata-forms-page.png)
+![Add shpaes to Dynamic Media templates](/help/assets/assets/enable-uniform-radius-shape.png)
+
+**AI-generated metadata enhancements**
+
+AEM Assets now enables you to [configure the display of asset titles in Card view or List view](/help/assets/smart-tags.md#configure-ai-generated-titles) on the Asset Browse page. You can choose to display the asset title defined by you, title generated using AI, or use AI-generated title only if there is no existing title for the asset. 
+
+![Configure AI-generated titles](/help/assets/assets/configure-title-ai-generated.png)
+
+You can now also choose to disable AI-generated metadata at the folder level. 
 
 ### New Features in Content Hub {#new-features-content-hub}
 
-**Collections governance**
+**Enhanced branding flexibility in Content Hub**
 
-Content Hub now lets you [control access to collections during creation, ensuring only authorized users can view or manage grouped assets](/help/assets/collections-content-hub.md##create-collections). It ensures improved security, better collaboration, organized asset management, and simplified governance.
+Building on existing personalization features, Content Hub now allows admins to further tailor their deployment by adding custom logo images. Support for the TIFF file format has also been added for both banner and logo images, enabling greater design flexibility.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463336)
+**Smarter sharing with titled links**
+
+You can now add a title when generating a shared link—whether from the asset details view or after selecting one or more assets. This helps recipients easily identify the purpose of each link, especially when receiving multiple shared assets.
+
+![private and public link](/help/assets/assets/shared-link-for-assets.png)
+
+**Improved filter navigation**
+
+Content Hub now includes a **Show All** option within filters, allowing users to view all available facets along with asset counts from the current limitation of viewing only upto ten facets. Enhanced search and sort capabilities within each filter make it easier to discover and manage assets more efficiently.
+
+### AEM Desktop App release 3.0.0 {#desktop-app-release-3.0.0}
+
+Enjoy automated upload of new files and folders, enhanced file operations, smarter asset discovery, and seamless integration with AEM—making content management faster, clearer, and more intuitive.
+
+For the complete list of features, see [Desktop App Release Notes](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
+
+### New Features in Dynamic Media with OpenAPI capabilities {#new-features-dynamic-media-with-openapi}
+
+**Preview assets before publishing**
+
+[!DNL Dynamic Media with OpenAPI capabilities] now allows to preview assets directly within [!DNL AEM Sites] author pages before making them publicly available. Share preview pages with stakeholders to gather feedback on visual quality and contextual fit. During the review cycle, you can create and manage multiple asset versions before finalizing them for publication.
+
+**Enhanced Smart Imaging for OpenAPI image requests**
+
+All OpenAPI image requests now fully leverage Smart Imaging with auto-promotion and fallback logic. This enhancement optimizes images based on device and network conditions, delivering faster page loads and reduced bandwidth usage—while maintaining visual quality.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [Universal Editor for Adaptive Forms and Form Fragments](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): The Universal Editor now supports the creation of both Adaptive Forms and reusable Form Fragments. Authors can visually build forms, configure submit actions, and add reCAPTCHA validation, all in a simplified, WYSIWYG authoring environment. This capability accelerates form creation, enhances consistency, and improves protection against spam and automated abuse.
+### New features in AEM Forms {#forms-new-features}
 
-### Pre-release Features 
+* **Universal Editor for Adaptive Forms and Form Fragments**
 
-* [Generate and Sync AFP Renditions from Adaptive Forms](/help/forms/document-generation-afp-api.md): The AFP Output Sync API enables administrators and users to generate AFP (Advanced Function Presentation) output from Adaptive Forms and synchronize the output with external systems or storage locations. AFP is a high-performance document format optimized for printing, often used in large-scale enterprise environments.
+   The [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) now supports the creation of both Adaptive Forms and reusable Form Fragments. Authors can visually build forms, configure submit actions, and add reCAPTCHA validation, all in a simplified, WYSIWYG authoring environment. This capability accelerates form creation, enhances consistency, and improves protection against spam and automated abuse.
 
-* [SharePoint Document Library - Save Attachments with Original Filenames](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): You now have the option to save form attachments using their original filenames when storing them in a SharePoint Document Library. This enhancement simplifies the identification and management of uploaded files.
+    ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} 
 
-* **Rule Editor**:
-    * [Binary Condition with Click Event in "When" Clause](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): The Rule Editor now allows combining a button click event (_Is Clicked_) with other conditions within the "When" clause. This enables more precise control over rule execution based on user interaction and other factors. Note: When using multiple conditions, the click event must be the first condition listed.
-    * [Validation Conditions for Fields and Panels](/help/forms/rule-editor-core-components-usecases.md): The Rule Editor now includes _IsValid_ and _IsNotValid_ conditions. These allow you to check the validation status of specific fields or entire panels (including layouts like Horizontal Tabs, Vertical Tabs, Accordions, and Wizards), facilitating improved form navigation and user experience based on validation results.
-* [Improved Scope Management for SharePoint Lists](/help/forms/connect-forms-to-sharepoint-list.md): SharePoint sites now support all managed paths, for example, /sites and /teams. This enhancement enables broader integration across various SharePoint site structures, offering greater flexibility in connecting to organizational content.
-* [Support for Saving Document of Record to SharePoint List](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): Forms created using a SharePoint List–based Form Data Model (FDM) can now save the Document of Record (DoR) to SharePoint Lists by configuring the Document of Record Bind Reference field property. This enhancement enables seamless integration of supported form data and documents with SharePoint storage. 
+
+* **Forms Submission Service for Edge Delivery Services Forms**
+
+  [Forms Submission Service](/help/forms/forms-submission-service.md) allows you to seamlessly store data from Adaptive Form submissions directly into popular spreadsheet platforms such as Google Sheets, Microsoft OneDrive, or SharePoint. This integration streamlines data management by enabling direct submission of form data to your chosen spreadsheet, eliminating manual data transfer and reducing errors.Key benefits include:
+
+    * **Direct integration:** Configure your forms to submit data directly to a specified spreadsheet.
+    * **Custom data mapping:** Map form fields to corresponding spreadsheet columns for organized storage.
+    * **Access control:** Leverage existing spreadsheet permissions to manage who can access or modify submitted data.
+
+* **Generate and sync AFP renditions from Adaptive Forms**
+
+  The [AFP Output Sync API](/help/forms/document-generation-afp-api.md) enables administrators and users to generate AFP (Advanced Function Presentation) output from Adaptive Forms and synchronize the output with external systems or storage locations. AFP is a high-performance document format optimized for printing, often used in large-scale enterprise environments.
+
+* **Auto-Mapping Support for Adaptive Form Fragments**
+
+  Adaptive Forms now support [automatic mapping of Adaptive Form fragments](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form). With this enhancement, matching fragments are automatically inserted when schema objects align with a defined fragment structure. It simplifies form creation, improves reusability of fragments, and ensures consistency across data-integrated forms.
+
+* **Custom Form Title in Document of Record**
   
-### Early Access Features in AEM Forms {#forms-new-early-access-features}
+  Authors can now define a [custom form title in the Document of Record](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record) by editing Custom Form Title. The custom title appears in the PDF header, the PDF's document properties, and as the initial view title when the PDF is opened, ensuring clear identification and consistent branding.
 
-The AEM Forms Early Access Program program offers a unique opportunity to you to get exclusive access to cutting-edge innovations, and help shape their development.
+* **Enhanced Error Handling for Restricted File Types**
+  
+  [Error handling for restricted file types](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab) is now supported, which blocks unsupported file uploads. When users attempt to submit a file by changing its type to an unsupported format, the form throws an error during submission.
 
-This release notes lists the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
-#### Adobe Experience Platform (AEP) Integration with Forms
+<!--
+### Pre-release features in AEM Forms {#forms-new-pre-release-features}
 
-* [Integration of AEM Forms with Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): The AEM Forms to Adobe Experience Platform Connector enables seamless integration between Adaptive Forms and Adobe Experience Platform. This feature allows form data to be mapped to XDM schemas and submitted directly to AEP in real time. It streamlines data capture for personalization and activation use cases across Adobe Experience Cloud solutions.
+**Enhancements in Rule Editor**
+
+* The `validate` / `reset` method in the function list now supports validation at the panel, field, and form levels.
+* Client-side custom function parsing now supports ES10+ JavaScript features and static imports.
+* The button to download Document of Record (DoR) is now available as an out-of-the-box (OOTB) option in the rule editor.
+* Rules now support the use of dynamic variables.
+* Custom event-based rules are now supported.
+* Repeatable panel rules are now executed based on context, rather than only on the last panel instance.
+* Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
+* Form-specific custom function scripts are now supported for Adaptive Forms in Edge Delivery Services.
+
+### New Early Access Features in AEM Forms {#forms-new-early-access-features}
+
+The AEM Forms Early Access Program offers a unique opportunity for you to get exclusive access to cutting-edge innovations and help shape their development.
+
+These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
+
+
+**Forms Optimization opportunities**
+
+Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469472/) 
+
+Key optimization opportunities include:
+
+* Increasing visibility for forms with low views
+* Improving completion rates for forms with low conversions
+* Addressing accessibility compliance issues
+* Streamlining navigation to enhance user experience
+
+With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. --> 
+
+**Rule Editor for Interactive Communications Editor** 
+
+Build dynamic, data-driven actions directly within your documents using an intuitive, point-and-click interface. Easily define conditional logic, automate workflows, and personalize content without writing code.
+
+**AEM Forms Scaffolder CLI for Custom Components**
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+
+Accelerate your AEM Forms Edge Delivery Services development with this CLI tool. Instantly generate the code and wiring needed to kickstart custom component development — no boilerplate, no hassle.
+
+**API Integration Tool for Dynamic Form Data**
+
+The API Integration Tool enables form authors to create dynamic, intelligent forms that automatically fetch and populate data from external REST APIs based on user interactions. This no-code integration capability transforms static forms into responsive data collection interfaces.
   
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### Node View for Permissions Management {#node-view}
+
+AEM introduces Node view Permissions Management. The main functionality remains the same as the classic UI, but is more user-friendly and efficient. See the [dedicated article](/help/security/touch-ui-principal-view.md) for further information.
 
 ### Updated Deprecation Process {#updated-deprecation-process}
 
@@ -97,6 +201,7 @@ Expand the list below to view the deprecated APIs and OSGi configurations that m
   <summary>Expand to see the deprecations</summary>
 
 Java APIs:
+
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
 * `org.eclipse.jetty`
@@ -123,7 +228,7 @@ OSGi properties:
 
 ### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-The **Java 11 runtime** is now deprecated, and most environments have already been upgraded to the more performant **Java 21 runtime**.
+The **Java 11 runtime*- is now deprecated, and most environments have already been upgraded to the more performant **Java 21 runtime**.
 
 If your environment could not be upgraded due to unsupported dependencies (see [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), you should have received an email from Adobe with specific next steps. Please ensure all required updates are completed by **August 28, 2025**, so your environment can be upgraded without disruption.
 
@@ -142,18 +247,18 @@ Please review and update any downstream processes that rely on custom logging be
 
 ### Default Purging of Older Versions and Audit Logs {#mt-defaults}
 
-Currently, content versions and audit logs have their associated *purge maintenance tasks* disabled by default and thus no data is removed unless explicitly configured. 
+Currently, content versions and audit logs have their associated *purge maintenance tasks- disabled by default and thus no data is removed unless explicitly configured. 
 
-However, to optimize repository performance, starting in **early July 2025**, purging will be enabled by default, following these guidelines:
+However, to optimize repository performance, purging will be enabled by default at a future announced date, following these guidelines:
 
 #### Content Versions {#mt-content}
 
-* **New environments** (created after an upcoming date (to be communicated later)
-  * Versions older than **30 days** will periodically be deleted.
+* **New environments*- (created after an upcoming date (to be communicated later)
+  * Versions older than **30 days*- will periodically be deleted.
   * The most recent five versions within the last 30 days are retained, along with the most recent version and the current version, regardless of their age.
 
-* **Existing environments** (created before this upcoming date):
-  * Versions older than **7 years** will periodically be deleted.
+* **Existing environments*- (created before this upcoming date):
+  * Versions older than **7 years*- will periodically be deleted.
   * All versions within the past 7 years are retained.
   * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
 
@@ -161,12 +266,12 @@ However, to optimize repository performance, starting in **early July 2025**, pu
 
 #### Audit Log {#mt-auditlogs}
 
-* **New environments** (created after an upcoming date, which will be communicated separately):
-  * Replication, DAM, and page audit logs older than **7 days** will periodically be deleted.
+* **New environments*- (created after an upcoming date, which will be communicated separately):
+  * Replication, DAM, and page audit logs older than **7 days*- will periodically be deleted.
   * All events are logged by default.
 
-* **Existing environments** (created before this upcoming date):
-  * Replication, DAM, and page audit logs older than **7 years** will periodically be deleted.
+* **Existing environments*- (created before this upcoming date):
+  * Replication, DAM, and page audit logs older than **7 years*- will periodically be deleted.
   * All events are logged by default.
   * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
 
@@ -185,6 +290,7 @@ Common use cases include:
 * Acting as middleware between the CDN and your origin
 * Reformatting responses from third-party APIs (and perhaps aggregating multiple APIs responses) before delivering them to the browser
 * Composing and serving server-rendered HTML at the edge using content stitched from various backends
+* Exposing an MCP server for LLMs like ChatGPT and Claude to access custom tools
 
 We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
 
@@ -192,13 +298,19 @@ We have a limited number of opportunities available for either AEM Publish Deliv
 
 The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
 
-Now in a beta, deploy a config pipeline for features including CDN origin selectors, response and request transformations, and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
+Now in a beta, deploy a config pipeline for features including CDN origin selectors, response and request transformations, CDN log forwarding and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
+
+### Snapshots for RDEs (Alpha Program) {#rde-snapshot-beta}
+
+In alpha, Rapid Development Environments (RDEs) now support a feature to take a snapshot of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
+
+Please email [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) if there's interest in providing feedback on this feature.
 
 ### AEM Log-Forwarding to More Destinations (Beta Program) {#log-forwarding-beta}
 
 While logs can be downloaded from Cloud Manager, many organizations find it beneficial to stream those logs to a preferred logging destination. AEM already supports AEM and CDN log forwarding to Azure Blob Storage, Datadog, HTTPS, Elasticsearch (and OpenSearch), and Splunk. This feature is configured in a self-serve manner, and deployed using the Config Pipeline.
 
-Now in beta, you can forward AEM logs to Amazon S3, Sumo Logic, and your own New Relic account (not the Adobe-provided account). Note that AEM logs (including Apache/Dispatcher) are supported for these logging destinations, but not CDN logs. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) for access.
+Now in beta, you can forward AEM logs to Amazon S3, Sumo Logic, Dynatrace, and your own New Relic account (not the Adobe-provided account). Note that AEM logs (including Apache/Dispatcher) are supported for these logging destinations, but not CDN logs. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) for access.
 
 Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md).
 
