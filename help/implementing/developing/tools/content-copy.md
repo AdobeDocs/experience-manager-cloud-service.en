@@ -127,6 +127,7 @@ After a content set is created, you can use it to copy content. Follow these ste
      * Production
      * Staging
      * Development / RDE
+   * By default, Cross-Program Content Copy is disabled. However, upon customer request, it can be enabled, which will make an additional **Destination Program** input field available.
 
 1. If necessary, you can also elect to **Include Access Control Lists** in your copy process.
 
@@ -187,7 +188,6 @@ The content copy tool has the following limitations.
 
 * Content cannot be copied from a lower environment to a higher environment.
 * Content can only be copied from and to authoring services.
-* Cross-program content copy is not possible.
 * Running concurrent content copy operations on the same environment is not possible.
 * Up to 50 paths can be specified per content set. There is no limitation on excluded paths.
 * Do not use the content copy tool as a cloning or mirroring tool because it cannot track moved or deleted content on the source.
