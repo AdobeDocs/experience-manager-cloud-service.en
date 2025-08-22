@@ -6,7 +6,6 @@ hide: yes
 index: no
 hidefromtoc: yes
 role: Admin, Architect, Developer
-exl-id: b8f64082-a23f-4919-ad66-042faad77d30
 ---
 
 # Getting Started with Forms Experience Builder
@@ -41,13 +40,13 @@ Before using Forms Experience Builder, ensure [AEM Forms is enabled for your env
 
 * **For Edge Delivery Services (EDS):**
  
-   * [Setup environment for Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-   * [Create a new form using the Edge Delivery Forms template](/help/edge/docs/forms/universal-editor/create-forms.md)
+  * [Setup environment for Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+  * [Create a new form using the Edge Delivery Forms template](/help/edge/docs/forms/universal-editor/create-forms.md)
    
 * **For Core Component based forms:**
 
-   * On your Adobe Experience Manager instance, got to Forms > Forms & Documents
-   * [Create a new page using the Core Components Template](/help/forms/creating-adaptive-form-core-components.md)
+  * On your Adobe Experience Manager instance, got to Forms > Forms & Documents
+  * [Create a new page using the Core Components Template](/help/forms/creating-adaptive-form-core-components.md)
 
 ## Quick Start
 
@@ -92,11 +91,10 @@ Try this simple conversation to get started:
 * **Ask for help**: Type `/help` followed by your question
 * **Iterate**: Make one change at a time for best results
 
-## Core Features
 
-### Two Ways to Create Forms
+## Ways to start creating a Form
 
-#### 1. Create from Scratch
+### 1. Start with natural language prompts
 
 Describe your form requirements in natural language, and the Forms Experience Builder generates the complete form structure:
 
@@ -106,17 +104,17 @@ Describe your form requirements in natural language, and the Forms Experience Bu
 * "Build a customer feedback form with ratings, comments, and product categories"
 * "I need a multi-step registration form for a conference with payment processing"
 
-#### 2. Import and Convert
+### 2. Import and Convert
 
 Transform existing forms and documents into modern, interactive experiences:
 
 **Supported Sources:**
 
-* **PDF Forms**: Upload static PDFs → Interactive digital forms with validation
-* **Screenshots/Images**: Photo of paper forms → Functional digital versions  
-* **HTML Forms**: Basic web forms → Enhanced AEM Forms with advanced features
-* **XFA Forms**: Legacy Adobe forms → Modern responsive forms
-* **URLs**: Existing web forms → Native AEM Forms with improved UX
+* **PDF Forms**: Upload static PDFs to convert these to interactive digital forms with validations. 
+* **Screenshots or Images**: Upload photo of paper forms to generate functional digital versions 
+* **HTML Forms**: Import and convert basic web forms to enhanced AEM Forms with advanced features
+* **XFA Forms**: Comvert legacy XFA-based forms to modern responsive forms
+* **URLs**: Convert existing web forms to native AEM Forms with improved UX
 
 **How to Import:**
 
