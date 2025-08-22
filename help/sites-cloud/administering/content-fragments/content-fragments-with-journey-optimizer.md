@@ -8,7 +8,7 @@ exl-id: 4090ee41-80f1-4389-8961-e4af891f01ff
 ---
 # Content Fragments with Adobe Journey Optimizer {#content-fragments-with-journey-optimizer}
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/get-started) helps you deliver connected, contextual, and personalized experiences to your customers. By integrating Adobe Experience Manager (AEM) as a Cloud Service with Adobe Journey Optimizer (AJO), you can reuse AEM content in your AJO inbound channels, and your AJO outbound channels, including web, SMS, and email. 
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/get-started) helps you deliver connected, contextual, and personalized experiences to your customers. By integrating Adobe Experience Manager (AEM) as a Cloud Service with Adobe Journey Optimizer (AJO), you can reuse AEM content in your AJO inbound channels, and your AJO outbound channels; including web, SMS, email, and others. 
 
 For example, you can:
 
@@ -24,14 +24,14 @@ For details start with the AJO documentation:
 
 ## Dispatcher Configuration {#dispatcher-configuration}
 
-To allow the AEM management APIs to be publicly accessible, you need to configure the Dispatcher:
+To allow AJO to access the AEM Content Fragments through the API, you need to configure the Dispatcher:
 
 * In `dispatcher/src/conf.dispatcher.d/filters/filters.any`:
 
 * Add:
 
   ```xml
-  # Allow Content Fragments OpenAPI requests, required for integration with AJO 
+  # Allow Content Fragments API requests, required for integration with AJO 
   /200 {/type "allow" /url "/adobe/sites/cf/*" }
   ```
 
