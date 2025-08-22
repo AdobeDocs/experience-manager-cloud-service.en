@@ -133,7 +133,11 @@ The main/right panel (table view) of the console provides a range of information
 
   * Information only
 
-  * Selecting the icon for a specific fragment opens a dialog with detailed information about workflows (past and current) for the fragment.
+  * Select the icon for a specific fragment: 
+
+    ![Content Fragments console - Workflows icon](assets/cf-managing-console-workflows-icon.png)
+
+    To open a dialog with detailed information about workflows (past and current) for the fragment.:
 
     ![Content Fragments console - Workflows dialog](assets/cf-managing-console-workflows-dialog.png)
 
