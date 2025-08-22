@@ -205,14 +205,15 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 For detailed CORS configuration, refer to the [CORS Configuration Guide](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
 
+<!--
 #### 4. CDN Redirect Rules
 
 Configure your Edge Delivery CDN to route submissions:
 
 - Route requests from `/adobe/forms/af/submit/...` to your AEM Publish instance
-- Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)
+- Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)-->
 
-#### 5. Form Configuration
+#### 4. Form Configuration
 
 1. Create form in Universal Editor
 2. Configure submit action to target AEM Forms action
