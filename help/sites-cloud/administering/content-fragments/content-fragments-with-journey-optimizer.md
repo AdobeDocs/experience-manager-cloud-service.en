@@ -22,6 +22,19 @@ For details start with the AJO documentation:
 * [Using Content Fragments in AJO](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html#integrations)
 * [Integration AJO Offers with Content Fragment](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-representations#urls)
 
+## Dispatcher Configuration {#dispatcher-configuration}
+
+To allow the AEM management APIs to be publicly accessible, you need to configure the Dispatcher:
+
+* In `dispatcher/src/conf.dispatcher.d/filters/filters.any`:
+
+* Add:
+
+  ```xml
+  # Allow Content Fragments OpenAPI requests, required for integration with AJO 
+  /200 {/type "allow" /url "/adobe/sites/cf/*" }
+  ```
+
 ## Further Information {#further-information}
 
 For further information see:
