@@ -47,13 +47,13 @@ As part of the onboarding process for Interactive Communication (IC) Enterprise 
 
 Onboarding Steps:
 
-* Send an email to the Adobe EA support team with your Environment ID and Organization ID.
+1. Send an email to the Adobe EA support team with your Environment ID and Organization ID.
 
-* Enable Interactive Communication (IC) for your environment with assistance from Adobe.
+1. Enable Interactive Communication (IC) for your environment with assistance from Adobe.
 
-* Create a user account in the enabled environment.
+1. Create a user account in the enabled environment.
 
-* Access the environment to start creating Interactive Communications.
+1. Access the environment to start creating Interactive Communications.
 
 ## Where to Find IC Documentation, Samples, and Tutorials
 
