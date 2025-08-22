@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 hide: yes
 hidefromtoc: yes
 index: no
-
+exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
 ---
 # AI Assistant in AEM {#aem-home}
 
