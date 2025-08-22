@@ -2,8 +2,11 @@
 title: Create an Interactive Communication Fragment
 description: Create Interactive Communication Fragments in AEM Forms to build modular, reusable content blocks that ensure consistency, save time, and support personalized, data-driven communications.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
-feature: Adaptive Forms, Interactive Communication
+feature: Interactive Communication
 role: User, Developer, Author, Admin
+hide: yes
+index: no
+hidefromtoc: yes
 ---
 
 # Create an Interactive Communication Fragment
@@ -12,7 +15,7 @@ An Interactive Communication Fragment allows users to create reusable, modular c
 
 ## Prerequisite
 
-User must be part of forms-users group
+* [Ensure that the author is a member of the forms-users group](/help/forms/setup-forms-cloud-service.md#configure-users)
 
 ## Create an Interactive Communication Fragment
 
@@ -36,3 +39,8 @@ To create an interactive communication fragment, perform the following steps:
     ![Find IC Docu](/help/forms/interactive-communication/assets/frgmntui.png)
 
 By creating Interactive Communication Fragments, you ensure design consistency, save time, and streamline the process of building dynamic, personalized communications.
+
+## Next Steps
+
+[Create an interactive communication](/help/forms/interactive-communication/create-interactive-communication-document.md)
+[Create an interactive communication Template](/help/forms/interactive-communication/interactive-communication-template.md)

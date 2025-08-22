@@ -893,6 +893,10 @@ user-guide-title: AEM as a Cloud Service
     + [Adaptive forms keywords](/help/forms/adaptive-forms-keywords.md)
     + [Previewing a form](/help/forms/previewing-forms.md)
   + Interactive Communication {#interactive-communocation}
+    + [Introduction to interactive communication editor](/help/forms/interactive-communication/Introduction%20to%20Interactive%20Communication%20Editor.md)
+    + [Create an interactive communication](/help/forms/interactive-communication/create-interactive-communication-document.md)
+    + [Create an interactive communication template](/help/forms/interactive-communication/interactive-communication-template.md)
+    + [Create an interactive communication fragment](/help/forms/interactive-communication//create-interactive-communication-fragment.md)
     + [Introduction to interactive communication](/help/forms/introduction-to-interactive-communication.md)
     + [Create your first Interactive Communication](/help/forms/create-your-first-communication.md)
     + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
