@@ -6,8 +6,8 @@ hide: yes
 index: no
 hidefromtoc: yes
 role: Admin, Architect, Developer
-exl-id: 92357836-1f56-44b1-9934-f9e8dd990e58
 ---
+
 # Introduction to Forms Experience Builder
 
 >[!IMPORTANT]
@@ -169,11 +169,9 @@ The Forms Experience Builder follows a simple, conversational approach:
 Transform your existing forms into powerful digital experiences with AI-powered conversion.
 
 
-### 📄 PDF to Digital
+#### Transform PDF Forms to Digital Forms
 
-**From static documents to interactive forms**
-
-Transform PDF forms with 50+ fields into dynamic digital experiences with automated calculations and mobile-responsive design.
+Transform PDF forms with multiple fields into dynamic digital experiences with automated calculations and mobile-responsive design.
 
 **Key benefits:**
 
@@ -182,17 +180,10 @@ Transform PDF forms with 50+ fields into dynamic digital experiences with automa
 - Mobile-responsive layout optimization
 - 95% reduction in processing errors
 
-**Best for:** Tax forms, government applications, complex business documents
 
-**Time savings:** 2-3 hours → 15 minutes per form
+#### Modernization Legacy XFA-based forms 
 
-
-
-### 🏛️ Legacy XFA Modernization  
-
-**Breathe new life into outdated forms**
-
-Convert complex XFA applications into modern multi-step wizards with real-time validation and accessibility compliance.
+You can convert complex XFA applications into modern multi-step wizards with real-time validation and accessibility compliance.
 
 **Key benefits:**
 
@@ -201,37 +192,21 @@ Convert complex XFA applications into modern multi-step wizards with real-time v
 - Government database integration
 - Full WCAG 2.1 accessibility compliance
 
-**Best for:** Government permits, enterprise applications, compliance forms
 
-**Impact:** 70% faster completion, 90% fewer errors
+#### Convert Screenshot of Form to a Digital Form
 
-
-
-
-### 📱 Screenshot to Digital
-
-**Turn any paper form into a digital experience**
-
-Upload an image of any paper form and watch AI extract fields, optimize layout, and create integration-ready digital forms.
+You can turn any paper form into a digital experience. AEM Forms automatically optimizes layout, and creates integration-ready digital forms from a screenshot.
 
 **Key benefits:**
 
-- Intelligent field type detection (99%+ accuracy)
+- Intelligent field type detection
 - Optimized responsive layout generation
 - Enhanced validation beyond original paper
 - Integration-ready architecture
 
-**Best for:** Paper applications, handwritten forms, legacy documents
+#### Import and enhance existing web forms
 
-**Processing time:** 2 hours → 5 minutes per form
-
-
-
-### 🌐 HTML Enhancement
-
-**Supercharge your existing web forms**
-
-Add advanced validation, conditional logic, and multi-channel submission to basic HTML forms without breaking existing functionality.
+You can import your existing webform and add advanced validation, conditional logic, and multi-channel submission to your forms without breaking existing functionality.
 
 **Key benefits:**
 
@@ -239,11 +214,6 @@ Add advanced validation, conditional logic, and multi-channel submission to basi
 - Conditional field behaviors and workflows
 - Multi-channel submission options
 - Built-in analytics and performance tracking
-
-**Best for:** Contact forms, registration forms, simple web applications
-
-**Conversion improvement:** +40% with enhanced user experience
-
 
 ## Forms Experience Builder vs Traditional Development
 
@@ -294,3 +264,4 @@ The Forms Experience Builder is currently available as part of the Early Access 
 > Access to the Forms Experience Builder is limited to approved participants in the Early Access program. Adobe will review your request and provide further instructions for onboarding if you are eligible.
 
 For more information about the Early Access program and its features, see the [AEM Forms Early Access documentation](/help/forms/early-access-ea-features.md).
+

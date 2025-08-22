@@ -6,8 +6,9 @@ hide: yes
 index: no
 hidefromtoc: yes
 role: Admin, Architect, Developer
-exl-id: 333d42e0-625f-432e-a61b-5d49bf08765a
+exl-id: c8f64082-a23f-4919-ad66-042faad77d31
 ---
+
 # Forms Experience Builder - Prompt Library
 
 Collection of reusable prompt patterns and examples optimized for Forms Experience Builder. This streamlined library focuses on the two core creation methods: Create from Scratch and Import & Convert, with enhanced support for LLM-powered smart fields and brand consistency.
@@ -132,9 +133,9 @@ Include a file upload field for @profilePicture with size limit of 5MB
 
 ## Form Creation & Management
 
-**When to use:** When you need to create new forms or modify existing ones. 
+**When to use:** When you need to create new forms or modify existing ones.
 
-**How to use:** Choose one of two approaches: Create from Scratch or Import & Convert (see [Getting Started Guide](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)).
+**How to use:** Choose one of two approaches: Create from Scratch or Import & Convert (see [Getting Started Guide](forms-ai-assistant-getting-started.md#two-ways-to-create-forms)).
 
 **Example Prompt - Simple Form Creation:**
 
@@ -511,7 +512,7 @@ Configure **database integration** to save form submissions as records. Create n
 
 **When to use:** When you have existing forms, documents, or designs to transform into modern AEM forms.
 
-**How to use:** Upload your source file and describe the conversion requirements (see [Import Guide](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)).
+**How to use:** Upload your source file and describe the conversion requirements (see [Import Guide](forms-ai-assistant-getting-started.md#2-import-and-convert)).
 
 **Example Prompt - PDF Form Conversion:**
 
