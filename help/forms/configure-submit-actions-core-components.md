@@ -7,7 +7,7 @@ exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
 ---
 
-# Adaptive Form Submit Action {#configuring-the-submit-action}
+# Submit Actions Supported in Adaptive Forms based on Core Components 
 
 <span class="preview"> Adobe recommends using Core Components to [add Adaptive Forms to an AEM Sites Page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) or to [create standalone Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md). </span>
 
@@ -17,28 +17,54 @@ role: User, Developer
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html)                  |
 | AEM as a Cloud Service (Foundation Components)    | [Click here](/help/forms/configuring-submit-actions.md)        |
 | AEM as a Cloud Service (Core Components)    | This article         |
+| AEM as a Cloud Service (Edge Delivery Services) | [Click here](/help/forms/configure-submit-action-eds-forms.md) |
 
-A Submit Action lets you choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. Forms as a Cloud Service, for Adaptive Forms based on Core Components, offers an array of pre-built Submit Actions. These out-of-the-box submit actions empower you to: 
+A Submit Action lets you choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. The Adaptive Forms based on Core Component supports various [out-of-the-box submit actions](#submit-actions-supported-by-adaptive-forms-based-on-core-components). 
 
-* Effortlessly send form data via email.
-* Initiate Microsoft&reg; Power Automate flows or AEM Workflows while transmitting the data.
-* Directly transmit the form data to Microsoft&reg; SharePoint Server, Microsoft&reg; Azure Blob Storage, or Microsoft&reg; OneDrive.
-* Seamlessly send the data to a configured data source using the Form Data Model (FDM).
-* Conveniently submit the data to a REST endpoint.
+<!--You can also configure different actions for an Adaptive Form submissions.
 
-You can [extend the default Submit Actions](custom-submit-action-form.md). You can also customize the Submit Actions for organizational-specific requirements.
+* **Redirect URL/Path** - This option allows user to configure a page for each form, to which the form users are redirected after submitting an Adaptive Form. 
+* **Show Message** - This option allows users to add a message that is displayed when the Adaptive Form is successfully submitted. The predefined text is included in the dialog box and it can be modified by the user. -->
 
-To define a Submit action for an Adaptive, use the Configure Dialog of an **Adaptive Form Container** component. The configure dialog of a **Adaptive Form Container** component includes:
+## Submit Actions for Forms based on Core Components
+
+The following Submit Actions are supported by Adaptive Forms based on Core Components:
+
+* [Send email](/help/forms/configure-submit-action-send-email.md)
+* [Invoke a Power Automate flow](/help/forms/forms-microsoft-power-automate-integration.md)
+* [Submit to SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [Invoke a Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [Submit using Form Data Model (FDM)](/help/forms/integrate-adaptive-form-with-fdm.md)
+* [Submit to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+* [Submit to REST endpoint](/help/forms/configure-submit-action-restpoint.md)
+* [Submit to OneDrive](/help/forms/configure-submit-action-onedrive.md)
+* [Invoke an AEM Workflow](/help/forms/configure-submit-action-workflow.md)
+* [Submit to Marketo enagage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+* [Submit to Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md) 
+
+You can also submit an Adaptive Form based on Core Components to other storage configurations:
+
+* [Connect Adaptive Form to Salesforce application](/help/forms/aem-forms-salesforce-integration.md)
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+
+Additionally, you can [customize the default Submit Actions](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md) to align with specific organizational requirements.
+
+
+### Configure a Submit Action for an Adaptive Form based on Core Components
+
+<!--To define a Submit action for an Adaptive Form, use the Configure Dialog of an **Adaptive Form Container** component. The configure dialog of a **Adaptive Form Container** component includes:
 
 * Basic Tab
 * Form Data Model Tab
 * Submission Tab
+  ![AEM Forms Submit action](/help/forms/assets/aem-forms-submit-action.png)
+-->
 
-You can define the Form Container properties using the Configure Dialog. To learn more about the Configure Dialog of a Form Container component, [click here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html).
+You can define the Form Container properties using the Submission tab of the Configure Dialog. To learn more about the Configure Dialog of a Form Container component, [click here](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-container.html). 
 
-## Select and configure a Submit Action for an Adaptive Form {#select-and-configure-submit-action}
+![Click the Wrench icon to open Adaptive Form Container dialog box to configure a submit action](/help/forms/assets/adaptive-forms-submit-message.png)
 
-To select and configure a Submit Action for your form:
+<!--To select and configure a Submit Action for your form:
 
 1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
 1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 
@@ -47,33 +73,8 @@ To select and configure a Submit Action for your form:
 
     ![Click the Wrench icon to open Adaptive Form Container dialog box to configure a submit action](/help/forms/assets/adaptive-forms-submit-message.png)
 
-1. Select and configure a **[!UICONTROL Submit action]**, based on your requirements. 
-
-You can also configure different actions for an Adaptive Form submissions.
-* **Redirect URL/Path** - This option allows user to configure a page for each form, to which the form users are redirected after submitting an Adaptive Form. 
-* **Show Message** - This option allows users to add a message that is displayed when the Adaptive Form is successfully submitted. The predefined text is included in the dialog box and it can be modified by the user. 
-
-For detailed information about the following Submit Actions, see:
-
-* [Send email](/help/forms/configure-submit-action-send-email.md)
-* [Invoke a Power Automate flow](/help/forms/forms-microsoft-power-automate-integration.md)
-* [Submit to SharePoint](/help/forms/configure-submit-action-sharepoint.md)
-* [Invoke a Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Submit using Form Data Model (FDM)](/help/forms/using-form-data-model.md)
-* [Submit to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
-* [Submit to REST endpoint](/help/forms/configure-submit-action-restpoint.md)
-* [Submit to OneDrive](/help/forms/configure-submit-action-onedrive.md)
-* [Invoke an AEM Workflow](/help/forms/configure-submit-action-workflow.md)
-* [Submit to Marketo enagage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
-
-You can also submit an Adaptive Form to other storage configurations:
-
-* [Connect Adaptive Form to Salesforce application](/help/forms/aem-forms-salesforce-integration.md)
-* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
-* [Connect an Adaptive Form to Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
-
-You can [customize the default Submit Actions](custom-submit-action-form.md). Additionally, you can customize the Submit Actions to align with specific organizational requirements.
-    
+1. Select and configure a **[!UICONTROL Submit action]**, based on your requirements.
+-->
 
 <!--
 ## Send Email {#send-email}
@@ -81,7 +82,7 @@ You can [customize the default Submit Actions](custom-submit-action-form.md). Ad
 To send an email to one or more recipients upon successful submission of the form, you can use the **[!UICONTROL Send Email]** Submit Action. 
 
 Refer to [configure the send email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md) to learn how to set up an Adaptive Form to send an email upon successful submission.
-[!NOTE]
+>[!NOTE]
 >
 >Send PDF via Email Submit Action is applicable only to Adaptive Forms that use XFA template as form model. 
 
@@ -205,7 +206,6 @@ If end-user bypass those validations and submit the forms, the server again perf
 >[!NOTE]
 >
 >Server-side validation validates the form model. You are recommended to create a separate client library for validations and not mix it with other things like HTML styling and DOM manipulation in the same client library.
--->
 
 ## Error handling on Submit Action {#error-handling-on-submit-action}
 
@@ -213,10 +213,7 @@ As a part of AEM security and hardening guidelines, configure custom error pages
 
 When you prefill a form data model (FDM), or schema based Adaptive Form with XML or JSON data complaint to a schema that is data does not contain `<afData>`, `<afBoundData>`, and `</afUnboundData>` tags, then the data of unbounded fields of the Adaptive Form is lost. The schema can be an XML schema, JSON schema, or a Form Data Model (FDM). Unbounded fields are Adaptive Form fields without the `bindref` property.
 
-<!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
-
-
-<!--
+For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). 
 ## See next
 
 * [Create style or themes for your forms](using-themes-in-core-components.md)
@@ -227,5 +224,5 @@ When you prefill a form data model (FDM), or schema based Adaptive Form with XML
 
 ## See Also {#see-also}
 
-{{see-also}}
+{{af-submit-action}}
 

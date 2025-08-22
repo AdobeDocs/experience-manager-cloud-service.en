@@ -13,8 +13,8 @@ For example, consider a form used to collect information about a person's work e
 
 By the end of this article, you learn to:
 
-* [Create a repeatable section in a form](#add-repeatable-sections-to-a-form)
-* [Set minimum or maximum number of repetitions in a form](#set-minimum-or-maximum-number-of-repetitions-for-a-repeatable-section)
+- [Create a repeatable section in a form](#add-repeatable-sections-to-a-form)
+- [Set minimum or maximum number of repetitions in a form](#set-minimum-or-maximum-number-of-repetitions-for-a-repeatable-section)
 
 ## Create a repeatable section
 
@@ -52,9 +52,9 @@ In form design, it's beneficial to set minimum and maximum repetitions for repea
 
 1. For a field of `type` `fieldset` and `repeatable` property set to `true`:
     
-    * set the `min` property to specify the minimum number of times the section can be repeated.
+    - set the `min` property to specify the minimum number of times the section can be repeated.
 
-    * set the `max` property to specify the maximum number of times the section can be repeated.
+    - set the `max` property to specify the maximum number of times the section can be repeated.
 
     ![Set the min and max property to specify the number of times the section can be repeated](/help/edge/assets/repeatable-section-set-min-max.png)
 
@@ -62,59 +62,4 @@ In form design, it's beneficial to set minimum and maximum repetitions for repea
 
     On adding a repeatable section, users find an intuitive **Delete** icon, making it easier to remove repeatable sections. Once added, these sections cannot be decreased to fewer instances than specified by the `min` property. This ensures adherence to the minimum requirement set for the form's completion.
 
-<!--
 
-For example, consider a form used to collect information from users applying for a loan. . You may have a repeatable section for capturing details of each co-applicant. The repeatable section would typically contain fields such as co-co-applicant
-
-The form allows users to provide personal information, including details of the co-applicants. Users can enter details for co-applicants, with this section being repeatable.
-
-![Repeatable sections in forms](/help/forms/assets/eds-repeatable.png)
-
-## Prerequisites
-
-The [Adaptive Forms Block is enabled](/help/edge/docs/forms/create-forms.md) for your Edge Delivery Services project. 
-
-## Add a repeatable section to a form 
-
-Let's take an example of a loan application form. The form enables users to submit personal information. You can include co-applicant details using repeatable sections, with the option to add a minimum and maximum of three co-applicant sections.
-
-"_You can use a Microsoft Excel file on your SharePoint Site or Google Sheet file on Google Drive to develop a form. Examples in this document are based on a [Microsoft Excel file on your SharePoint Site](https://www.aem.live/docs/setup-customer-SharePoint)._" 
-
-
-To add repeatable sections in Edge Delivery:
-
-1. [Author a form using Microsoft Excel](#author-form)
-2. [Preview and publish the form](#preview-form)
-
-### Author a form using Microsoft Excel {#author-form}
-
-1. Go to your Edge Deliver project folder on Microsoft SharePoint or Google Workspace and open your spreadsheet. For example, open an a spreadsheet named `loan-application.xlsx`.
-
-1. Add a new columns labeled `Repeatable` to the sheet contaning your form fields. By default, the `shared-default` sheet contains the form fields.  
-
-1. Add new columns labeled as `Repeatable`, `Min`, and `Max` in your Microsoft Excel file.
-1. Specify the value for the `Repeatable` column as `True` for the fieldset that you want to make repeatable.
-1. Specify the values for the `Min` and `Max` columns. The `Min` value represents the minimum number of occurrences for which the panel repeats, while the `Max` value represents the maximum number of occurrences for which the panel repeats.
-1. Save your Microsoft Excel file.
-     
->[!NOTE]
->
-> Here is the [Loan application](/help/forms/assets/loan-application.xlsx) excel sheet for your reference. 
-
-### Preview/Publish the form using your Edge Delivery Service
-
-1. Open or create new document file in a Microsft SharePoint Site to embed the Excel sheet  in it using a `Form Block`. For example, open the `index` file and add a `Form Block`.
-2. Open the command prompt, navigate to your AEM Edge Delivery project directory on your local machine, and execute the command as `aem up`.
-
-The form is accessible at `https://localhost:3000`, where clicking the `Add` button adds new repeatable section for entering co-applicant details. You can also delete the repeatable section by clicking the `Delete` button. 
-
->[!NOTE]
->
-> If you encounter a "Page Not Found" error while accessing your form at localhost, add the directory name of the Microsoft SharePoint Site in front of the URL where your form is located. For example, `http://localhost:3000/<dir-name>/`
-
--->
-
-
-## See also
-
-{{see-more-forms-eds}}

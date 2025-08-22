@@ -11,7 +11,7 @@ exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
 
 The Visual Rule Editor in an Adaptive Form supports the **Invoke Service** feature, which allows you to select a service from the list of Form Data Models (FDM) configured for your instance. You can map form fields directly to the input parameters of the service. To map form fields to the output parameters, use the event payload option for the specified Form Data Model service. Additionally, the Visual rule editor allows you to create rules for success and failure handlers for **Invoke Service** operations based on its output responses. Success handlers manage the successful execution of the **Invoke Service** operation, while failure handlers address any errors that occur.
 
-### Advantages of using the Invoke Service in the form's rule editor
+## Advantages of using the Invoke Service in the form's rule editor
 
 Here are few advantages of using Invoke Service operation in the rule editor of an Adaotive Form:
 

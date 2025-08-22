@@ -264,6 +264,15 @@ At times unexpected intermittent issues could lend themselves to failed ingestio
 
 An ingestion that was created with a running extraction as its source migration set waits patiently until that extraction succeeds, and at that point starts normally. If the extraction fails or is stopped, the ingestion and its indexing job will not begin but is rescinded. In this case, check the extraction to determine why it failed, remedy the problem and start extracting again. Once the fixed extraction is running, a new ingestion can be scheduled. 
 
+### Waiting Ingestion Failed to Start {#waiting-ingestion-not-started}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_waiting_ingestion_not_started"
+>title="Waiting Ingestion Not Started"
+>abstract="The ingestion failed to start after waiting for an extraction to complete."
+
+An ingestion that was created with a running extraction as its source migration set waits until that extraction succeeds, and at that point the ingestion attempts to start normally. If the ingestion fails to start it is marked as failed. Possible reasons for not starting are: an IP Allow List is configured on the target author environment; the target  environment is unavailable for some other reason.  In this case, check why the ingestion failed to start, remedy the problem, and start the ingestion again (there is no need to re-run the extraction).
+
 ### Deleted Asset not present after re-running ingestion
 
 In general, modifying the cloud environment data in between ingestions is not recommended. 
