@@ -131,7 +131,11 @@ The main/right panel (table view) of the console provides a range of information
 
 * **Workflows**
 
-  Selecting the item opens a dialog with detailed information about past and currently running workflows for the selected fragment.
+  * Information only
+
+  * Selecting the icon for a specific fragment opens a dialog with detailed information about workflows (past and current) for the fragment.
+
+    ![Content Fragments console - Workflows dialog](assets/cf-managing-console-workflows-dialog.png)
 
 ## Actions {#actions}
 
