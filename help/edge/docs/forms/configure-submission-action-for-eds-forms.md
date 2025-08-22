@@ -220,7 +220,7 @@ Configure your Edge Delivery CDN to route submissions:
 4. Publish form to Edge Delivery site
 
 +++
-
+<!--
 +++ Form Embedding
 
 Embed forms created in one location into different web pages or sites.
@@ -267,7 +267,7 @@ Configure Cross-Origin Resource Sharing on the form source:
 
 ![Embedded Form Architecture](/help/forms/assets/eds-embedded-form.png)
 
-+++
++++-->
 
 +++ Common Issues
 
