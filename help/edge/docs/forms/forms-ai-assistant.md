@@ -6,8 +6,8 @@ hide: yes
 index: no
 hidefromtoc: yes
 role: Admin, Architect, Developer
+exl-id: a8d64082-a23f-4919-ad66-042faad77d29
 ---
-
 # Getting started with AI Assistant for AEM Forms (Forms Experience Builder)
 
 >[!NOTE]
