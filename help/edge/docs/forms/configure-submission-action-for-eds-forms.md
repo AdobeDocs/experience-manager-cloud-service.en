@@ -92,18 +92,18 @@ Submit form data directly to your AEM as a Cloud Service Publish instance for co
 
 ### Configuration Requirements
 
-### 1. Update AEM Instance URL in Edge Delivery
+#### 1. Update AEM Instance URL in Edge Delivery
 
 Update the AEM Cloud Service instance URL in the `constant.js` file in the `../form` block under `submitBaseUrl`. You can configure the URL based on your environment:
 
-* **For Cloud Service instance**
+**For Cloud Service instance**
 
    ```js
 
    export const submitBaseUrl = '<aem-author-instance-URL>';
    ```
 
-* **For local development**
+**For local development**
 
    ```js
    export const submitBaseUrl = 'http://localhost:<port-number>';
@@ -170,11 +170,11 @@ Configure the Referrer Filter to allow your specific Edge Delivery site domains:
 
 3. Deploy the configuration through Cloud Manager
 
-### 3. CORS (Cross-Origin Resource Sharing) Issues
+#### 3. CORS (Cross-Origin Resource Sharing) Issues
 
 Configure CORS settings in AEM to allow requests from your specific Edge Delivery site domains:
 
-* **Developer Localhost**
+**Developer Localhost**
 
 ```apache
 
@@ -182,7 +182,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 ```
 
-* **Edge Delivery Sites - Add each site domain individually**
+**Edge Delivery Sites - Add each site domain individually**
 
 ```apache
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc--adobe\.aem\.live$)#" CORSTrusted=true
@@ -190,7 +190,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 ```
 
-* **Legacy Franklin domains (if still in use)**
+**Legacy Franklin domains (if still in use)**
 
 ```apache
 
