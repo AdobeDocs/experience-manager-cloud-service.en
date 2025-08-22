@@ -1,16 +1,19 @@
 ---
-title: Introduction to Adobe Interactive Communication Editor
-description: Discover Adobe Interactive Communication Editor in AEM Forms. Learn key features, onboarding steps, and real-world use cases to create dynamic, personalized communications.
+title: Introduction to Interactive Communication Editor
+description: Discover Interactive Communication Editor in AEM Forms. Learn key features, onboarding steps, and real-world use cases to create dynamic, personalized communications.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
-feature: Adaptive Forms, Interactive Communication
+feature: Interactive Communication
 role: User, Developer, Author, Admin
+hide: yes
+index: no
+hidefromtoc: yes
 ---
 
-# Introduction to Adobe Interactive Communication Editor
+# Introduction to Interactive Communication Editor
 
-## What is Adobe Interactive Communication Editor?
+## What is Interactive Communication Editor?
 
-Adobe Interactive Communication (IC) Editor is an intuitive visual design environment within Adobe Experience Manager Forms. It enables organizations to create highly personalized, data-integrated communications in print format using a single authoring experience. These communications are often used for customer correspondence such as billing statements, policy documents, welcome kits, and investment summaries.
+Interactive Communication (IC) Editor is an intuitive visual design environment within Adobe Experience Manager Forms. It enables organizations to create highly personalized, data-integrated communications in print format using a single authoring experience. These communications are often used for customer correspondence such as billing statements, policy documents, welcome kits, and investment summaries.
 
 You can integrate components such as text, images, charts, tables, and barcodes, while binding each element to structured data sources. This dynamic binding ensures that communications are automatically tailored for every recipient.
 
@@ -34,27 +37,24 @@ Interactive Communication (IC) Editor is designed for efficiency, usability, and
 | **Feature**                          | **Key Capabilities**                                                                 |
 |--------------------------------------|---------------------------------------------------------------------------------------|
 | **WYSIWYG Editor**         | - Pixel perfection for accurate rendering <br> - Font styling controls <br> - Flexible layout for professional design |
-| **Layout Control**                   | - Positioning (absolute and flowed) <br> - Easy drag-and-drop functionality           |
-| **Out Of The Box Components** | - Access to text, images, tables, charts, and barcodes <br> - Ready-to-use components for faster design |
-| **Data Binding**                     | - Directly link components to data sources (Form Data Models) <br> - Automatically prefill fields for personalized communication |
+| **Layout Control**                   | - Positioning (absolute and flowed) <br> - Easy drag-and-drop functionality <br> - Use master pages to define consistent layouts          |
+| **Components** | - Access to newly introduced components, including tables, charts, and barcodes <br> - Ready-to-use components for faster design |
+| **Data Binding**                     | - Directly link components to data sources <br> - Automatically prefill fields for personalized communication |
 | **Rule Editor** | - Configure dynamic validations <br> - Add calculations and conditional logic for interactivity |
 | **Fragment Library**               | - Create modular building blocks (headers, footers, disclaimers, icons) <br> - Maintain consistency across multiple communications |
-| **Template Master PagesSupport** | - Use master pages to define consistent layouts <br> - Ensure uniform branding and structure across communications |
+| **Templates** | - Ensure uniform branding and structure across communications |
 
-## Onboarding and Environment Setup for Interactive Communication (Enterprise Access) 
+## Onboarding 
 
-As part of the onboarding process for Interactive Communication (IC) Enterprise Access (EA), user need to request enablement of IC for their environment and configure appropriate user access. Once the environment is enabled and the necessary permissions are assigned, users can start creating and managing Interactive Communications.
+The Interactive Communication (IC) capability is available through the Early Access (EA) program. To request access, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official email ID with your Environment ID and Organization ID. Once Adobe confirms your enrollment, follow the [Onboard to the Service](/help/forms/setup-forms-cloud-service.md) documentation to enable Interactive Communication in your AEM Forms environment.
 
-Onboarding Steps:
+## Next Steps
 
-1. Send an email to the Adobe EA support team with your Environment ID and Organization ID.
+[Create an interactive communication](/help/forms/interactive-communication/create-interactive-communication-document.md)
+[Create an interactive communication Template](/help/forms/interactive-communication/interactive-communication-template.md)
+[Create an interactive communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
 
-1. Enable Interactive Communication (IC) for your environment with assistance from Adobe.
-
-1. Create a user account in the enabled environment.
-
-1. Access the environment to start creating Interactive Communications.
-
+<!-- 
 ## Where to Find IC Documentation, Samples, and Tutorials
 
 Whether you're just getting started or looking to build complex communications, Adobe offers extensive learning resources:
@@ -62,8 +62,10 @@ Whether you're just getting started or looking to build complex communications, 
 
 * Official Documentation:
 
-Create your first interactive communication
+[Create your first interactive communication]()
 AEM Forms Interactive Communication Guide
 
 * Tutorials & Videos:
 Visit Adobe Experience League and explore the "Forms" section for step-by-step videos and use-case-based tutorials.
+-->
+

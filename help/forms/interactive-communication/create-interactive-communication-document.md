@@ -2,8 +2,11 @@
 title: Create an Interactive Communication
 description: Create personalized, data-driven communications. Explore key features, onboarding steps, and real-world use cases with guides and tutorials.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
-feature: Adaptive Forms, Interactive Communication
+feature: Interactive Communication
 role: User, Developer, Author, Admin
+hide: yes
+index: no
+hidefromtoc: yes
 ---
 
 # Create an Interactive Communication
@@ -18,7 +21,7 @@ Manually producing these documents can be time-consuming and often results in in
 
 ## Prerequisite
 
-User must be part of forms-users group
+* [Ensure that the author is a member of the forms-users group](/help/forms/setup-forms-cloud-service.md#configure-users)
 
 ## Create an Interactive Communication
 
@@ -75,3 +78,8 @@ Ideal for statements, invoices, or notices where structure remains constant, but
 +++
 
 Start building Interactive Communications to streamline your workflows and deliver impactful, user-specific experiences.
+
+## Next Steps
+
+[Create an interactive communication Template](/help/forms/interactive-communication/interactive-communication-template.md)
+[Create an interactive communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)

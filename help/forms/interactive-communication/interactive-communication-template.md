@@ -2,8 +2,11 @@
 title: Create an Interactive Communication Template
 description: Create Interactive Communication Templates in AEM Forms to define reusable layouts, ensure brand consistency, and streamline the creation of personalized, data-driven communications.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
-feature: Adaptive Forms, Interactive Communication
+feature: Interactive Communication
 role: User, Developer, Author, Admin
+hide: yes
+index: no
+hidefromtoc: yes
 ---
 
 # Create an Interactive Communication Template
@@ -12,9 +15,9 @@ Interactive Communication Templates in AEM allow users to define reusable layout
 
 ## Prerequisites
 
-* User must be part of forms-users, template-authors group.
+* [Ensure that the author is a member of the forms-users group and template-authors group.](/help/forms/setup-forms-cloud-service.md#configure-users)
 
-* AEM Archetype version 55 or later should be available. 
+* Ensure that [AEM Archetype version 55](https://github.com/adobe/aem-project-archetype) or later is installed.
 
 ## Create an Interactive Communication Template
 
@@ -60,3 +63,7 @@ To create an Interactive Communication Fragment, perform the following steps:
 
 By following the above steps, you can successfully create an Interactive Communication Template. Once enabled, these templates can be reused to build consistent, personalized communication documents efficiently.
 
+## Next Steps
+
+[Create an interactive communication](/help/forms/interactive-communication/create-interactive-communication-document.md)
+[Create an interactive communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
