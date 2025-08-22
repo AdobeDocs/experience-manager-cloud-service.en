@@ -94,7 +94,7 @@ Submit form data directly to your AEM as a Cloud Service Publish instance for co
 
 #### 1. Update AEM Instance URL in Edge Delivery
 
-Update the AEM Cloud Service instance URL in the `constant.js` file in the `../form` block under `submitBaseUrl`. You can configure the URL based on your environment:
+Update the AEM Cloud Service instance URL in the `constant.js` file in the `form` block under `submitBaseUrl`. You can configure the URL based on your environment:
 
 **For Cloud Service instance**
 
