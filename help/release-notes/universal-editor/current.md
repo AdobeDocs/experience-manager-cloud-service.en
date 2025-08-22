@@ -19,6 +19,8 @@ These are the release notes for the 28 August 2025 release of the Universal Edit
 * New features for [RTE early adopters](#new-rte)
   * Link title is now available in the link dialog.
   * Unlinking is now available.
+  * List items now support inline formatting and links.
+  * Scrollable area was fixed.
 
 ## Early Adoption Features {#early-adopter}
 
