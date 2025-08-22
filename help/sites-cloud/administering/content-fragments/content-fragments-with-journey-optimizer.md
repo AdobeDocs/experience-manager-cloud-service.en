@@ -24,7 +24,7 @@ For details start with the AJO documentation:
 
 ## Dispatcher Configuration {#dispatcher-configuration}
 
-To allow AJO to access the AEM Content Fragments through the API, you need to configure the Dispatcher:
+To allow AJO to access the AEM Content Fragments through the [Content Fragment Management API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/), you need to configure the Dispatcher:
 
 * In `dispatcher/src/conf.dispatcher.d/filters/filters.any`:
 
