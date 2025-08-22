@@ -24,42 +24,39 @@ To create an Interactive Communication Fragment, perform the following steps:
 
 1. Navigate to **Tools**
 
-![Find IC Docu](/help/forms/interactive-communication/assets/aem.png)
+    ![Find IC Docu](/help/forms/interactive-communication/assets/aem.png)
 
 1. Go to **Tools > General > Templates**.
 
-![Find IC Docu](/help/forms/interactive-communication/assets/template.png)
+    ![Find IC Docu](/help/forms/interactive-communication/assets/template.png)
 
 1. Create or Choose a Folder
 
-Create a new folder or choose an existing one where you want to create the Interactive Communication Template.
+    Create a new folder or choose an existing one where you want to create the Interactive Communication Template.
 
-![Find IC Docu](/help/forms/interactive-communication/assets/choosefolder.png)
+    ![Find IC Docu](/help/forms/interactive-communication/assets/choosefolder.png)
 
 1. Create a New Template, Click **Create** and select Interactive Communication Generic Template.
 
-![Find IC Docu](/help/forms/interactive-communication/assets/create1.png)
+    ![Find IC Docu](/help/forms/interactive-communication/assets/create1.png)
 
-![Find IC Docu](/help/forms/interactive-communication/assets/choose.png)
+    ![Find IC Docu](/help/forms/interactive-communication/assets/choose.png)
 
-1. Enter the Template, such as:
+1. Enter the **Template**, such as:
 
     * Title
     * Name
     * Description (Optional)
 
-![Find IC Docu](/help/forms/interactive-communication/assets/create2.png)
+    ![Find IC Docu](/help/forms/interactive-communication/assets/create2.png)
 
 1. Click the **Create** Button, Interactive Communication template created successfully.
 
-![Find IC Docu](/help/forms/interactive-communication/assets/enabled.png)
+    ![Find IC Docu](/help/forms/interactive-communication/assets/enabled.png)
 
-* Enable the Template
-This action allows the template to be used for creating Interactive Communications.
+1. Enable the **Template** , this action allows the user to use template for creating Interactive Communications.
 
 ![Find IC Docu](/help/forms/interactive-communication/assets/enable.png)
 
-This action allows the template to be used for creating Interactive Communications.
-
-By following these steps, you can successfully create an Interactive Communication Template in AEM. Once enabled, these templates can be reused to build consistent, personalized communication documents efficiently.
+By following the above steps, you can successfully create an Interactive Communication Template. Once enabled, these templates can be reused to build consistent, personalized communication documents efficiently.
 
