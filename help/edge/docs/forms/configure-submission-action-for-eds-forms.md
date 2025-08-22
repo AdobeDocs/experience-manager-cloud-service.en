@@ -170,6 +170,8 @@ Configure the Referrer Filter to allow your specific Edge Delivery site domains:
 
 3. Deploy the configuration through Cloud Manager
 
+For detailed OSGi Referrer Filter configuration, refer to the [Referrer Filter](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) Guide.
+
 #### 3. CORS (Cross-Origin Resource Sharing) Issues
 
 Configure CORS settings in AEM to allow requests from your specific Edge Delivery site domains:
@@ -204,6 +206,9 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 >Replace `main--abc--adobe.aem.live` and `main--abc1--adobe.aem.live` with your actual site domains. Each site hosted from the same repository requires a separate CORS configuration entry.
 
 For detailed CORS configuration, refer to the [CORS Configuration Guide](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
+
+
+To enable CORS for your local development environment, refer to [Understand Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) article.
 
 <!--
 #### 4. CDN Redirect Rules
