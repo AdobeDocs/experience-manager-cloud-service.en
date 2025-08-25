@@ -3,7 +3,7 @@ title: Create an Interactive Communication
 description: Create personalized, data-driven communications. Explore key features, onboarding steps, and real-world use cases with guides and tutorials.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
-role: User, Developer, Author, Admin
+role: User, Developer, Admin
 hide: yes
 index: no
 hidefromtoc: yes

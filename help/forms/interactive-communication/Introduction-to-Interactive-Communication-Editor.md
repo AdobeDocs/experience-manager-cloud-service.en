@@ -3,7 +3,7 @@ title: Introduction to Interactive Communication Editor
 description: Discover Interactive Communication Editor in AEM Forms. Learn key features, onboarding steps, and real-world use cases to create dynamic, personalized communications.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
-role: User, Developer, Author, Admin
+role: User, Developer, Admin
 hide: yes
 index: no
 hidefromtoc: yes
