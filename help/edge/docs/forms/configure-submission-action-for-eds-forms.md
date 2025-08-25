@@ -109,31 +109,6 @@ Update the AEM Cloud Service instance URL in the `constant.js` file in the `form
    export const submitBaseUrl = 'http://localhost:<port-number>';
 
    ```
-   
-<!--
-#### 2. AEM Dispatcher Configuration
-
-Configure Dispatcher on your AEM Publish instance:
-
-- **No Redirects**: Ensure Dispatcher rules do not redirect form submission paths
-
-Update Dispatcher configuration to allow form submission requests:
-
-1. Ensure POST requests to form submission endpoints are allowed
-2. Add appropriate filter rules for Edge Delivery domains
-3. Verify that the submission servlet path is not blocked
-
-Example Dispatcher filter configuration:
-
-```apache
-/filter {
-  # Allow POST requests to form submission servlet
-  /0100 { /type "allow" /method "POST" /url "/content/forms/af/*" }
-  /0101 { /type "allow" /method "POST" /url "/adobe/forms/af/submit/*" }
-  /0102 { /type "allow" /method "POST" /url "/content/forms/portal/submit/adaptiveform" }
-}
-```
--->
 
 #### 2. OSGi Referrer Filter
 
