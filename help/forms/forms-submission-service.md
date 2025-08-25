@@ -366,7 +366,7 @@ Postman provides a user-friendly interface for testing API submissions.
    - `[organization]` → Your GitHub organization/username
 
 **Request Configuration:**
-   
+
 ```json
 
 POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id

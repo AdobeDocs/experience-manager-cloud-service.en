@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2025.07.31 Release Notes
-description: These are the release notes for the 2025.07.31 release of the Universal Editor.
+title: Universal Editor 2025.08.22 Release Notes
+description: These are the release notes for the 2025.08.22 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.07.31 Release Notes {#release-notes}
+# Universal Editor 2025.08.22 Release Notes {#release-notes}
 
-These are the release notes for the 31 July 2025 release of the Universal Editor.
+These are the release notes for the 22 August 2025 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -16,15 +16,11 @@ These are the release notes for the 31 July 2025 release of the Universal Editor
 
 ## What's New {#what-is-new}
 
-* [The authentication header toolbar option](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings) remains behind a feature toggle as introduced in [release 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)
-  * However it is now enabled by default.
 * New features for [RTE early adopters](#new-rte)
-  * Dark mode support was added.
-  * Text alignment support was added.
-    * Disabled by default and only available for headless projects
-  * Indentation support was added.
-    * Disabled by default and only available for headless projects
-  * Breaks (`<br>`) are now inserted on shift+enter.
+  * Link title is now available in the link dialog.
+  * Unlinking is now available.
+  * List items now support inline formatting and links.
+  * Scrollable area was fixed.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -43,10 +39,7 @@ Undo and redo is now available to Universal Editor content authors.
 
 ## Other Improvements {#other-improvements}
 
-* Fixes for the early adopter RTE
-  * Pressing enter now creates a new list item (`<li>`) when within a list.
-* Videos now properly update when using remote DAM.
-* Service support added for 6.5 LTS.
+* [The undo/redo early adopter feature](#undo-redo) no longer triggers a page reload when a component is added via a undo or redo operation.
 
 ## Deprecations {#deprecations}
 
