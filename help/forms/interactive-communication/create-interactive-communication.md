@@ -7,8 +7,8 @@ role: User, Developer, Admin
 hide: yes
 index: no
 hidefromtoc: yes
+exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
 ---
-
 # Create an Interactive Communication
 
 Interactive communication enables you to create, manage, and deliver personalized and interactive communications, including customer service, billing, onboarding documents, offer letters, account updates, and more. It is designed to support any scenario where dynamic, user-specific content enhances the communication experience across industries.

@@ -7,8 +7,8 @@ role: User, Developer, Admin
 hide: yes
 index: no
 hidefromtoc: yes
+exl-id: 50709c68-8666-47da-8788-fad793d870e6
 ---
-
 # Introduction to Interactive Communication Editor
 
 ## What is Interactive Communication Editor?
@@ -68,4 +68,3 @@ AEM Forms Interactive Communication Guide
 * Tutorials & Videos:
 Visit Adobe Experience League and explore the "Forms" section for step-by-step videos and use-case-based tutorials.
 -->
-
