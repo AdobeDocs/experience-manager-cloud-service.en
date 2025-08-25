@@ -100,7 +100,7 @@ Update the AEM Cloud Service instance URL in the `constant.js` file in the `form
 
    ```js
 
-   export const submitBaseUrl = '<aem-author-instance-URL>';
+   export const submitBaseUrl = '<aem-publish-instance-URL>';
    ```
 
 **For local development**
