@@ -4,7 +4,6 @@ description: Learn how to set up and configure the AI Assistant using the Admin 
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Beta" type="Positive"
 hide: yes
 hidefromtoc: yes
 index: no
@@ -13,6 +12,8 @@ exl-id: cc80a36b-2fd2-41cc-8cb7-6c25e8e89a4e
 # Configure AI Assistant in AEM {#aem-ai-asst-admin-setup}
 
 <!-- An Administrator must configure access, permissions, and settings before users in their organization can use the features in AI Assistant in AEM. -->
+
+<!-- badge: label="Beta" type="Positive" -->
 
 To use the AI Assistant in AEM (Adobe Experience Manager), your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the AI Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
 
@@ -189,6 +190,6 @@ Have a user from the assigned group do the following:
 
 ## See also 
 
-* [AI Assistant in AEM](/help/implementing/cloud-manager/aem-ai-assistant.md)
+* [AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
 * [Adobe Experience Platform Access Control](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
 * [Cloud Manager Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md)
