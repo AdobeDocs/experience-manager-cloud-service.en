@@ -3,7 +3,7 @@ title: Create an Interactive Communication Fragment
 description: Create Interactive Communication Fragments in AEM Forms to build modular, reusable content blocks that ensure consistency, save time, and support personalized, data-driven communications.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
-role: User, Developer, Author, Admin
+role: User, Developer, Admin
 hide: yes
 index: no
 hidefromtoc: yes

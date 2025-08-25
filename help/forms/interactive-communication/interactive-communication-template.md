@@ -3,7 +3,7 @@ title: Create an Interactive Communication Template
 description: Create Interactive Communication Templates in AEM Forms to define reusable layouts, ensure brand consistency, and streamline the creation of personalized, data-driven communications.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
-role: User, Developer, Author, Admin
+role: User, Developer, Admin
 hide: yes
 index: no
 hidefromtoc: yes
