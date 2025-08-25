@@ -51,7 +51,7 @@ The Interactive Communication (IC) capability is available through the Early Acc
 ## Next Steps
 
 [Create an interactive communication](/help/forms/interactive-communication/create-interactive-communication.md)
-[Create an interactive communication Template](/help/forms/interactive-communication/interactive-communication-template.md)
+[Create an interactive communication Template](/help/forms/interactive-communication/create-interactive-communication-template.md)
 [Create an interactive communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
 
 <!-- 
