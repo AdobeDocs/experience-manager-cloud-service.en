@@ -214,6 +214,10 @@ Enter `102` in the `Pet ID` text box, and the **Submit** button is hidden.
 
 ![Output](/help/forms/assets/output4.png)  
 
+>[!NOTE]
+>
+> You can also [integrate API directly in the Rule Editor interface](/help/forms/api-integration-in-rule-editor.md) without using a predefined Form Data Model. 
+
 ## Frequently asked questions
 
 **Q: What happens if I have created a rule using the Invoke Service and then upgrade to the latest version of the core components?**
