@@ -68,7 +68,7 @@ Similarly, to approve multiple assets simultaneously within a folder in Assets v
 1. Click **[!UICONTROL Save]**.
 
 
-## How can I secure asset delivery and search for the Dynamic Media OpenAPIs? {#secure-asset-delivery}
+## How can I secure asset delivery and search for Dynamic Media with OpenAPIs? {#secure-asset-delivery}
 
 Central asset governance in Experience Manager allows the DAM Administrators or Brand Managers to manage access to assets. They can restrict the access by configuring roles or by setting activation and deactivation time for approved assets on the authoring side, specifically on the AEM as a Cloud Service author instance.
 
@@ -107,7 +107,7 @@ The following are some of the key differences between Dynamic Media with OpenAPI
 | Assets marked as Expired on Assets as a Cloud Service repository are not anymore available to downstream applications.| No inherent asset expiry. An asset remains public until it is deleted from AEM as a Cloud Service repository.|
 | Does not support video smart crop capabilities.| Supports video smart crop capabilities. |
 | Dynamic video encodes, that ensure best encodes are served based on the input video. No setup is required for native video delivery.| Standard 3 encodes irrespective of input video (can impact video delivery performance). You need to manually set up different encodes for different video bit rates. |
-|  Difficult to guess asset UID based URLs (enables URL obfuscation), but SEO optimized. | URL obfuscation only available for URL query parameters. Assets IDs (asset names) in URLs are recognizable. |
+|  Enables secure, obfuscated URLs using asset UIDs without compromising SEO. | URL obfuscation only available for URL query parameters. Assets IDs (asset names) in URLs are recognizable. |
 
 
 ## How Dynamic Media with OpenAPI capabilities addresses the limitations of the Connected Assets feature? {#dynamic-media-openapi-addresses-connected-assets-limitations}
