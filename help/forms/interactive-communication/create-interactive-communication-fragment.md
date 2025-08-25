@@ -42,5 +42,5 @@ By creating Interactive Communication Fragments, you ensure design consistency, 
 
 ## Next Steps
 
-[Create an interactive communication](/help/forms/interactive-communication/create-interactive-communication-document.md)
-[Create an interactive communication Template](/help/forms/interactive-communication/interactive-communication-template.md)
+[Create an interactive communication](/help/forms/interactive-communication/create-interactive-communication.md)
+[Create an interactive communication Template](/help/forms/interactive-communication/create-interactive-communication-template.md)
