@@ -39,15 +39,13 @@ To grant users access to the AI Assistant in AEM, your Adobe Admin must configur
 
 AI Assistant requests in AEM are authenticated through Adobe Identity Management Services (IMS). For details, see the [Adobe Identity Management Services overview](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
 
->[!NOTE]
-> 
->Customer organizations must accept additional legal terms to enable AI Assistant. Contact your Adobe account representative for details.
-
 **To get access to AI Assistant in AEM:**
 
-1. [Customers must sign the Gen AI rider with Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1). 
+1. Customers must have an additional agreement in place to access most AI-powered and agentic capabilities in Adobe Experience Manager. Contact your Adobe representative for details.
 
-    The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more.
+<!-- OLD STEP 1 [Customers must sign the Gen AI rider with Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1). 
+
+    The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more. -->
 
 1. The AEM Admin configures the AI Assistant for use in their organization. See [Configure the AI Assistant in AEM](/help/implementing/cloud-manager/aem-ai-assistant-admin.md).
 
@@ -143,7 +141,11 @@ You can reset the AI Assistant in AEM and start a new conversation when you want
 
     ![AI Assistant icon on the toolbar](/help/implementing/cloud-manager/assets/ai-assistant-icon.png)
 
-1. In the **AI Assistant** panel text box near the bottom, type your question, then press `Enter` or click ![Send icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
+1. In the **AI Assistant** panel text box near the bottom, type your question or prompt, then press `Enter` or click ![Send icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
+
+    >[!NOTE]
+    >
+    >Personal data should not be included in your inputs, as it is unnecessary for using this tool.
 
     ![Text box at bottom of the AI Assistant panel](/help/implementing/cloud-manager/assets/ai-assistant-prompt-text-box.png)
 
@@ -163,7 +165,7 @@ AI Assistant in AEM includes a discoverability feature to help you explore suppo
     *Panel showing prompt categories in AI Assistant.*
 
 1. Select a category to view a list of related prompts.  
-1. Select a prompt to see examples of the types of questions the AEM AI Assistant can answer.
+1. Select a prompt to see examples of the types of questions the AI Assistant can answer.
 
 1. To hide the prompt discovery panel, click ![Learn icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg) again.
 

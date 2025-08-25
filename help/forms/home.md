@@ -22,7 +22,7 @@ Adobe [!DNL Experience Manager Forms as a Cloud Service] offers a cloud-native, 
 
 The service is always current, always available, and always learning. Organizations can use [!DNL AEM Forms] as a Cloud Service and get all these features in the cloud without requiring any local infrastructure. The service also frees organizations from complex upgrade cycles as it is always up to date with the latest features.
 
-Adobe [!DNL Experience Manager Forms as a Cloud Service] is a customer-centric solution to support every step of the customer journey: 
+Adobe [!DNL Experience Manager Forms as a Cloud Service] is a customer-centric solution to support every step of the customer journey.
 
 ## Digitize and streamline enrollment and onboarding experience 
 
@@ -94,6 +94,10 @@ Connect forms to data sources and gain insights into form performance:
 | Adobe Integrations | Connect your forms with other Adobe solutions: <ul><li><a href="/help/forms/submit-adaptive-form-to-workfront-fusion.md">Connect to Adobe Workfront Fusion</a> and submit data to Workfront scenarios</li><li><a href="/help/forms/integrate-form-to-marketo-engage.md">Connect to Adobe Marketo Engage</a> and <a href="/help/forms/submit-adaptive-form-to-marketo-engage.md">submit data to Marketo</a></li></ul> |
 | Microsoft Integrations | Connect your forms with Microsoft services: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en">Connect to Microsoft&reg; Dynamics 365</a></li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=en">Connect to Microsoft&reg; Azure Blob Storage</a> and <a href="/help/forms/configure-submit-action-azure-blob-storage.md">submit data to Azure Blob Storage</a></li><li><a href="/help/forms/connect-forms-to-sharepoint-document-library.md">Connect to Microsoft&reg; SharePoint Document Library</a> and <a href="/help/forms/configure-submit-action-sharepoint.md">submit data to SharePoint</a></li><li><a href="/help/forms/configure-submit-action-onedrive.md">Connect to Microsoft&reg; OneDrive</a> and submit data to OneDrive</li><li><a href="/help/forms/forms-microsoft-power-automate-integration.md">Connect to Microsoft&reg; Power Automate</a> and trigger flows on form submission</li><li><a href="/help/forms/ms-dynamics-odata-configuration.md">Connect to Microsoft&reg; Dynamics OData</a></li></ul> |
 | Other Data Sources | Connect to additional data sources and endpoints: <ul><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=en">Connect to an RDBMS or Rest endpoint</a></li><li><a href="/help/forms/aem-forms-salesforce-integration.md">Connect to Salesforce</a> and submit data to Salesforce</li><li><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#submit-to-rest-endpoint">Submit to REST endpoint</a></li></ul> |
+
+## AI Assistant in AEM
+
+For customers who have [completed pre-requisite criteria](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), the AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
 
 >[!MORELIKETHIS]
 >
