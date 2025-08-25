@@ -900,3 +900,7 @@ Users with access to the Admin view can also access the Assets view. Assets View
 DAM librarians, developers, and super-users may continue to use the Admin view or switch between the user interfaces, as needed. You can select the experience that works best for your role. 
 
 For information on how to access the Assets view and some of the simplifications that it offers over Admin view, see [Introduction to Assets view](/help/assets/assets-view-introduction.md).
+
+## AI Assistant in AEM
+
+For customers who have [completed pre-requisite criteria](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), the AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
