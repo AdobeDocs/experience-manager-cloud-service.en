@@ -81,5 +81,5 @@ Start building Interactive Communications to streamline your workflows and deliv
 
 ## Next Steps
 
-[Create an interactive communication Template](/help/forms/interactive-communication/interactive-communication-template.md)
+[Create an interactive communication Template](/help/forms/interactive-communication/create-interactive-communication-template.md)
 [Create an interactive communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
