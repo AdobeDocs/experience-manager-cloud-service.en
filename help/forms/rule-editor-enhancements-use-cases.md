@@ -115,26 +115,25 @@ This approach enables dynamic, real-time calculations without adding extra field
 
 The enhanced rule editor supports custom event handling using the **Dispatch Event** and **On Trigger Event** functions. These functions allow different parts of the form to communicate by emitting and listening to custom events, enabling cleaner, modular logic without tightly coupling actions to specific fields.
 
-**Scenario**: A job application form is integrated with an external HR system that performs background verification. Once the check is complete, the system updates the form with the **Background Verification Complete!** message. The form must dynamically adjust what the applicant sees based on this result.
+**Scenario**: A login form is built using a reusable login fragment that contains **Enter Username** and **Enter Password** fields. When a user provides valid credentials, the form validates the input and initiates the **Get OTP** process. After the user enters a valid OTP, they are redirected to the appropriate page.
 
-Instead of binding logic directly to the field receiving the status, the form uses a custom event-based approach to improve modularity and maintainability.
+Instead of binding logic directly to the fields, the form uses an event-based approach with **Dispatch Event** and **On Trigger Event** to improve modularity and maintainability.
 
 **Implementation using Dispatch Event and On Trigger Event**
 
-When the background check status is updated, a rule uses **Dispatch Event** to emit a custom event as **bgvmsg** along with the status outcome. A separate rule listens for this event using **On Trigger Event**.
+The login fragment is added to the form, containing predefined fields for Username and Password. A rule is configured on the **Get OTP** button to display the **Validation Panel**, which includes the input field for entering and validating the OTP.
 
-The screenshots below display the rules applied to the "Is Background Verification Complete?" radio button and the "bgvmsg" text field.
+![Get OTP Rule](/help/forms/assets/get-otp-rule.png)
 
-![dispatch event](/help/forms/assets/dispatch-event-rule.png)
+In the **Validation Panel**, a rule is configured on the Validate button. API integration is used to validate the OTP entered in the **Enter OTP** field. If validation is successful, a **Dispatch Event** named **LoggedIn** is triggered with the event payload containing the API response.
 
-![on trigger event](/help/forms/assets/trigger-event-rule.png)
+![In trigger event rule](/help/forms/assets/trigger-event-rule.png)
 
-When the event is detected, it checks the status and updates the form accordingly. For example:
+At the form level, a rule is configured to listen for the **LoggedIn** event. When this event is triggered, the rule displays the redirect message and takes the user to the dashboard page.
 
-* If the background check is passed, the form displays a confirmation message.
-* If additional documents are needed, the form displays a section asking the applicant to upload the required information, along with an alert message.
+![dispatch event rule](/help/forms/assets/dispatch-event-rule.png)
 
-![Dispatch event output](/help/forms/assets/dispatch-trigger-output.png)
+When the user submits the form with correct credentials and a valid OTP, the login is successful, and the user is automatically redirected to their dashboard.
 
 Support for custom events allowing developers to create and trigger custom events that can be used as conditions in rule editor.
 
