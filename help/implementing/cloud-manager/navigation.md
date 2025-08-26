@@ -11,6 +11,7 @@ role: Admin, Architect, Developer
 
 Learn how the Cloud Manager UI is organized and how to navigate to manage your programs and environments.
 
+
 The Cloud manage UI is primarily composed of two graphical interfaces:
 
 * [The My Programs console](#my-programs-console) is where you can view and manage all of your programs.
@@ -19,6 +20,12 @@ The Cloud manage UI is primarily composed of two graphical interfaces:
 >[!TIP]
 >
 >Also check out the [onboarding documentation journey](/help/journey-onboarding/overview.md) for a complete overview of how to get up-and-running with AEM as a Cloud Service using Cloud Manager.
+
+
+## AI Assistant in AEM
+
+For customers who have [completed pre-requisite criteria](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), the AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+
 
 ## My Programs Console {#my-programs-console}
 
