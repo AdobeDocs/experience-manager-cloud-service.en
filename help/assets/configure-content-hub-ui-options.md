@@ -118,6 +118,20 @@ Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), ava
 The filters enabled on the Configuration User Interface display on the Search page:
 ![Search on Content Hub](assets/content-hub-filters1.png)
 
+#### Bulk Search {#bulk-search-configuration}
+
+To enable search of multiple assets at once in [!DNL Content Hub], execute the steps below:
+
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Filters]**.
+
+1. Click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available filter.
+
+1. Enable **[!UICONTROL Bulk Search]** toggle. The default delimiters list `[ , | \t | \r\n | \r | \n ]` are displayed automatically. Moreover, you can also add additional delimiters. To to this, specify delimiters in the input box separated by a `pipe symbol (|)`.
+
+   ![Bulk Search Configuration](assets/bulk-search-configuration.png)
+
+1. Click **[!UICONTROL Confirm]** to save the changes.
+
 ### Asset details {#configure-asset-details-content-hub}
 
 You can also configure the asset properties that display for each asset, such as file name, title, format, size, and so on. To do so, execute the following steps:
@@ -306,3 +320,4 @@ Enable the following setting on the Configurations user interface to allow Conte
 -->
 
 Learn more about [sharing assets in the [!DNL Content Hub]](share-assets-content-hub.md).
+
