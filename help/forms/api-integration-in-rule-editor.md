@@ -9,6 +9,8 @@ keywords: integrating API in rule editor, invoke service enhancements
 
 # Integrating API in Rule Editor
 
+<span>Integrating API in Rule Editor is under Early Adopter Program. You can write to `aem-forms-ea@adobe.com` from your official email id to join the early adopter program and request access to the capability.</span>
+
 The Visual Rule Editor in Adaptive Forms supports direct API integration without creating a Form Data Model. You can connect to an API endpoint by either entering the API URL (in JSON format) or importing the configuration through a cURL command. Once integrated, the **Invoke Service** action can be used to call the API.
 
 Form fields can be mapped directly to the input parameters defined in the API configuration. Similarly, output parameters can be mapped to form fields using the **event payload** option for the corresponding API response.
@@ -75,7 +77,7 @@ The screenshot below displays the API integration configuration window:
 6. Destination Country (Drop-down)  
 7. Intended Date of Arrival (Date)  
 
-Instead of maintaining a static list of countries, the form dynamically fetches country information (continent, capital, ISO Alpha codes, etc.) using the **displaycountryname API**:
+Instead of maintaining a static list of countries, the form dynamically fetches country information (continent, capital, ISO Alpha codes, etc.) using the **getcountryname API**:
 
 `https://secure.geonames.org/countryInfoJSON?username=aemforms`
 
@@ -87,7 +89,7 @@ You can integrate an API without creating a Form Data Model by clicking the **Cr
 
 ![Create API Integration](/help/forms/assets/create-api-integration.png)
 
-An API service named **displaycountryname** is configured under **API Integration Configuration** in the Rule Editor:
+An API service named **getcountryname** is configured under **API Integration Configuration** in the Rule Editor:
 
 ![API rest Endpoint Configuration](/help/forms/assets/api-restendpoint.png)
 
@@ -108,6 +110,85 @@ For example, when the user opens **Country of Citizenship**, the list of countri
 ![API integration Output](/help/forms/assets/api-integration-output.png)
 
 Similarly, **Country of Passport Issuance** and **Destination Country** use the same API call, ensuring consistent and up-to-date data across all three fields.
+
+## Implementing Retry Mechanism for API Failures
+
+When an API request fails, it's often useful to retry the request before reporting an error to the user. You can implement a polling and retry mechanism by writing custom code in the **function.js** file. 
+
+The following example demonstrates how to handle API failures with up to two retry attempts and exponential backoff between retries:
+
+``` javascript
+
+/**
+ * Handles request retries with up to 2 retry attempts
+ * @param {function} requestFn - The request function to execute
+ * @return {Promise} A promise that resolves with the response or rejects after all retries
+ */
+function retryHandler(requestFn) {
+    const MAX_RETRIES = 2;
+    
+    /**
+     * Attempts the request with retry metadata
+     * @param {number} retryCount - Current retry attempt count
+     * @return {Promise} The request promise
+     */
+    function attemptRequest(retryCount = 0) {
+        // Include retry metadata if this is a retry
+        const requestOptions = retryCount > 0 ? {
+            headers: {
+                'X-Retry': 'true',
+                'X-Retry-Count': retryCount.toString(),
+                'X-Retry-Time': new Date().toISOString()
+            },
+            body: {
+                retry: true,
+                retryCount: retryCount,
+                timestamp: Date.now()
+            }
+        } : undefined;
+
+        return requestFn(requestOptions)
+            .then(function(response) {
+                if (response && response.status >= 400) {
+                    console.warn('Request failed with status ' + response.status);
+                    throw new Error('Request failed with status ' + response.status);
+                }
+                return response;
+            })
+            .catch(function(error) {
+                console.warn('Request attempt ' + (retryCount + 1) + ' failed:', error.message);
+                
+                // Retry if max attempts not reached
+                if (retryCount < MAX_RETRIES) {
+                    console.log('Retrying request, attempt ' + (retryCount + 2) + ' of ' + (MAX_RETRIES + 1));
+                    
+                    // Exponential backoff delay: 1s, 2s, 4s...
+                    const delay = Math.pow(2, retryCount) * 1000;
+                    
+                    return new Promise(function(resolve) {
+                        setTimeout(resolve, delay);
+                    }).then(function() {
+                        return attemptRequest(retryCount + 1);
+                    });
+                } else {
+                    // All retries exhausted
+                    console.error('All retry attempts failed. Final error:', error.message);
+                    throw new Error('Request failed after ' + (MAX_RETRIES + 1) + ' attempts: ' + error.message);
+                }
+            });
+    }
+    
+    // Start the first attempt
+    return attemptRequest(0);
+}
+
+```
+
+In the above code, the **retryHandler** function manages API requests with automatic retries in case of failure. It takes a request function (requestFn) and attempts the request up to two times, adding metadata for each retry.
+
+>[!NOTE]
+>
+> For detailed steps on how to add custom functions, refer to the [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md) article.
 
 ## Frequently Asked Questions
 
