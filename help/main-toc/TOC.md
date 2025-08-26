@@ -1212,8 +1212,7 @@ user-guide-title: AEM as a Cloud Service
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
   + Use Cloud Manager {#using-cloud-manager}
     + [Navigation](/help/implementing/cloud-manager/navigation.md)
-    + [Experience Hub](/help/implementing/cloud-manager/experience-hub.md)
-    + Programs {#programs}
+    + [Experience Hub](/help/experience-hub.md) {#programs}
       + [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
       + [Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
       + [Create Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
