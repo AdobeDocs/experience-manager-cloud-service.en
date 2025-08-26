@@ -144,13 +144,13 @@ The default filters include file format, approved by, date approved, expired and
 
 ## Bulk search {#bulk-search}
 
-Bulk search of assets allows you to look up multiple assets simultaneously by entering a list of identifiers (such as names, file formats, colors, tags, and more). Instead of searching assets one by one, [!DNL Content Hub] Bulk Search makes it faster to discover the assets you need. With this capability, you can enter multiple values for any filter property—separated by a delimiter (for example, multiple SKU IDs)—and instantly retrieve all matching assets with a single search.
+Bulk Search of assets allows you to look up multiple assets simultaneously by entering a list of identifiers (such as names, file formats, colors, tags, and more). Instead of searching assets one by one, [!DNL Content Hub] Bulk Search makes it faster to discover the assets you need. With this capability, you can enter multiple values for any filter property—separated by a delimiter (for example, multiple SKU IDs)—and instantly retrieve all matching assets with a single search.
 
 To search for multiple assets at once, enter multiple values in a single query by separating them with delimiters ` [ , | \t | \r | \n | \r\n ]`. You can also add more delimiters depending upon your use case. See [Configure Bulk Search](configure-content-hub-ui-options.md#bulk-search-configuration).
 
 To perform Bulk Search in the [!DNL Content Hub], execute the following steps:
 
-1. Once Bulk Search is [configured](configure-content-hub-ui-options.md#bulk-search-configuration), you can see Bulk Search toggle on the [!DNL Content Hub] filters pane. You can enable or disable it as per the requirement.
+1. Once Bulk Search is [configured](configure-content-hub-ui-options.md#bulk-search-configuration), you can see Bulk Search toggle on the [!DNL Content Hub] filters pane which you configured. You can enable or disable it as per the requirement.
 
 1. Add a search query containing delimiters that are specified in the configuration.
 
