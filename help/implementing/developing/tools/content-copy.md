@@ -190,7 +190,7 @@ The content copy tool has the following limitations.
 
 * Content Copy tool supports two flow modes:
    1. Top-Down Flow – Content can be copied from higher environments to lower environments (e.g., Production → Stage, Stage → Development/RDE).
-   2. Forward Flow (new feature) – Content can also be copied from a lower non-production environment to a higher non-production environment (e.g., Development → Stage, RDE → Stage). Production environments are never valid destinations for Forward Flow. This feature is available only upon explicit request and remains enabled until explicitly requested to be disabled.
+   2. Forward Flow (new feature) – Content can also be copied from a lower non-production environment to a higher non-production environment (e.g., Development → Stage, RDE → Stage). This feature is available only upon explicit request and remains enabled until explicitly requested to be disabled. Production environments are never valid destinations for Forward Flow. 
 * Content can only be copied from and to authoring services.
 * Running concurrent content copy operations on the same environment is not possible.
 * Up to 50 paths can be specified per content set. There is no limitation on excluded paths.
