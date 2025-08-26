@@ -4,9 +4,6 @@ description: Use AI Assistant to help you find answers, and troubleshoot for the
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-hide: no
-hidefromtoc: no
-index: yes
 exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
 ---
 # AI Assistant in AEM {#about-ai-assistant-in-aem}
