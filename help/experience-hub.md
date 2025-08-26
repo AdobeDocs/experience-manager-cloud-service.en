@@ -5,8 +5,6 @@ landing-page-description: Learn about the Adobe Experience Hub, a centralized st
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-hide: yes
-hidefromtoc: yes
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
 ---
 # About Experience Hub {#aem-experience-hub}
