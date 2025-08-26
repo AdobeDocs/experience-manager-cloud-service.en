@@ -120,7 +120,7 @@ The filters enabled on the Configuration User Interface display on the Search pa
 
 #### Bulk Search {#bulk-search-configuration}
 
-To enable search of multiple assets at once in [!DNL Content Hub], execute the steps below:
+To enable searching multiple assets at once in [!DNL Content Hub], execute the steps below:
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Filters]**.
 
@@ -130,7 +130,7 @@ To enable search of multiple assets at once in [!DNL Content Hub], execute the s
 
    ![Bulk Search Configuration](assets/bulk-search-configuration.png)
 
-1. Click **[!UICONTROL Confirm]** to save the changes.
+1. Click **[!UICONTROL Confirm]** to save the changes. See [Bulk Search in Content Hub](search-assets-content-hub#bulk-search) in action.
 
 ### Asset details {#configure-asset-details-content-hub}
 
