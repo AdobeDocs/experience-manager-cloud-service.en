@@ -1,18 +1,16 @@
 ---
-title: Configure the AI Assistant in AEM
+title: Configure AI Assistant in AEM
 description: Learn how to set up and configure the AI Assistant using the Admin Console in Adobe Experience Manager.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Beta" type="Positive"
-hide: yes
-index: no
-hidefromtoc: yes
-exl-id: a7f3dc14-29f7-473a-9870-d52393e6fa6e
+exl-id: cc80a36b-2fd2-41cc-8cb7-6c25e8e89a4e
 ---
-# Configure the AI Assistant in AEM {#aem-ai-asst-admin-setup}
+# Configure AI Assistant in AEM {#aem-ai-asst-admin-setup}
 
 <!-- An Administrator must configure access, permissions, and settings before users in their organization can use the features in AI Assistant in AEM. -->
+
+<!-- badge: label="Beta" type="Positive" -->
 
 To use the AI Assistant in AEM (Adobe Experience Manager), your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the AI Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
 
@@ -32,7 +30,7 @@ The configuration process of the AI Assistant in AEM consists of the following s
 
 Before you begin, be sure you have met the following prerequisites:
 
-* You must have Product Administrator rights at a minimum in the Adobe Admin Console.
+* You must have product administrator rights at a minimum in the Adobe Admin Console.
 * You have an understanding of your organization's user management structure.
 
 **Configuration considerations**
@@ -189,8 +187,6 @@ Have a user from the assigned group do the following:
 
 ## See also 
 
-* [AI Assistant in AEM](/help/implementing/cloud-manager/aem-ai-assistant.md)
+* [AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
 * [Adobe Experience Platform Access Control](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
 * [Cloud Manager Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md)
-
-

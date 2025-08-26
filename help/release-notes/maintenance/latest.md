@@ -27,7 +27,7 @@ None.
 * GRANITE-60183: Apache commons-fileupload 1.6.0.
 * GRANITE-60306: Apache commons-lang to 3.18.0.
 * GRANITE-60637: Apache commons-codec to 1.19.0.
-* GRANITE-60645: Apache commons-ui 2.20.0.
+* GRANITE-60645: Apache commons-io 2.20.0.
 * GRANITE-60663: Apache commons-text 1.14.0.
 * GRANITE-60714: Mongo Java Driver 5.2.
 * GRANITE-60778: Filevault 4.0.0.
