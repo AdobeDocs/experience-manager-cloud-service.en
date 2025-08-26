@@ -368,8 +368,9 @@ Your local development environment is ready.
 
 Enabling Adaptive Forms Core Components on AEM Forms as a Cloud Service, lets you start creating, publishing, and delivering Core Components based Adaptive Forms and Headless Forms using your AEM Forms Cloud Service instances to multiple channels. You require Adaptive Forms Core Components enabled environment to use Headless Adaptive Forms.
 
-For instructions, see [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
-
+>[!NOTE]
+>
+> Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
 
 ## Upgrade your local development environment {#upgrade-your-local-development-environment}
 
