@@ -148,9 +148,9 @@ Note that the above assumes you have different content variants to serve, but if
 Metadata
 
 Experiment    Hero Test
-Experiment Variants	2
+Experiment Variants    2
 
-This will create just 2 variants, without touching the content, and you'll be able to target those based on the experiment-hero-test and variant-control/variant-challenger-1/variant-challenger-2 CSS classes that will be set on the <body> element.
+This will create just 2 variants, without touching the content, and you'll be able to target those based on the experiment-hero-test and variant-control/variant-challenger-1/variant-challenger-2 CSS classes that will be set on the `<body>` element.
 
 #### Browser based audience experiment {#browser-based}
 
