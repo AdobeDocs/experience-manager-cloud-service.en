@@ -944,6 +944,10 @@ user-guide-title: AEM as a Cloud Service
     + [Scripting support for HTML5 forms](/help/forms/scripting-support.md)
     + [Form set in AEM Forms](/help/forms/formset-in-aem-forms.md)
   + Interactive Communication {#interactive-communocation}
+    + [Introduction to interactive communication editor](/help/forms/interactive-communication/Introduction-to-Interactive-Communication-Editor.md)
+    + [Create an interactive communication](/help/forms/interactive-communication/create-interactive-communication.md)
+    + [Create an interactive communication template](/help/forms/interactive-communication/create-interactive-communication-template.md)
+    + [Create an interactive communication fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
     + [Introduction to interactive communication](/help/forms/introduction-to-interactive-communication.md)
     + [Create your first Interactive Communication](/help/forms/create-your-first-communication.md)
     + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
@@ -1197,8 +1201,6 @@ user-guide-title: AEM as a Cloud Service
   + [Generative AI in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
   + [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
   + [Generate Variations](/help/generative-ai/generate-variations.md)
-  + [Assistant (Limited Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
-  + [Configure the AI Assistant in AEM](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
   + [AI Assistant for AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
   + [Getting started with AI Assistant for AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
   + [Getting started with AI Assistant for AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
@@ -1209,7 +1211,6 @@ user-guide-title: AEM as a Cloud Service
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
   + Use Cloud Manager {#using-cloud-manager}
     + [Navigation](/help/implementing/cloud-manager/navigation.md)
-    + [AEM Launchpad](/help/implementing/cloud-manager/aem-home.md)
     + [Experience Hub](/help/implementing/cloud-manager/experience-hub.md)
     + Programs {#programs}
       + [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
