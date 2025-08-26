@@ -8,7 +8,7 @@ exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
 ---
 # Rule Editor Enhancements and Use Cases
 
-<span class="preview"> These are pre-release features available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>.
+<span class="preview"> These are pre-release features available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. These enhancements are also applicable for Edge Delivery Services Forms.
 
 This article introduces the latest enhancements to the rule editor in Adaptive Forms. These updates are designed to help you define form behavior more easily, without writing custom code, and to create more dynamic, responsive, and personalized form experiences.
 
@@ -71,7 +71,6 @@ A **Download** button is added to form using the Rule Editor, a rule is configur
 The screenshot below displays the rule applied to the **Download** button:
 
 ![Download Button rule](/help/forms/assets/download-button-rule.png)
-
 >[!NOTE]
 >
 > The **Input** field allows the user to specify the file name for a downloadable document. This is an optional parameter.
@@ -108,6 +107,11 @@ Later, when the **Total Shipment Cost** is calculated, the **Get Variable Value*
 
 The **Total Shipment Cost** field dynamically updates to reflect both the product cost and shipping charge as the user changes the country or quantity.
 ![output](/help/forms/assets/getsetvalue-output.png)
+
+>[!NOTE]
+>
+> You can also add **Get Variable value** function in the When condition.
+> ![Get Variable Value function in When condition](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
 This approach enables dynamic, real-time calculations without adding extra fields to the form, keeping the structure clean and user-friendly.
 
@@ -185,3 +189,7 @@ If the **utm_source** parameter value equals "google", a custom message as "Hell
 This allows marketers to deliver relevant content to users based on the campaign that brought them to the form without requiring manual field input or custom scripting.
 
 These enhancements significantly expand the capabilities of the Adaptive Forms Rule Editor, providing developers with powerful tools to create more dynamic, interactive, and intelligent forms. Each enhancement addresses specific business needs while maintaining the ease-of-use that makes the Rule Editor accessible to both technical and non-technical users.
+
+## Additional resources
+
+{{see-also-rule-editor}}

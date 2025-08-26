@@ -946,7 +946,6 @@ user-guide-title: AEM as a Cloud Service
   + Interactive Communication {#interactive-communocation}
     + [Introduction to interactive communication](/help/forms/introduction-to-interactive-communication.md)
     + [Create your first Interactive Communication](/help/forms/create-your-first-communication.md)
-    + [Generate AFP Output Using the AEM Forms API](/help/forms/document-generation-afp-api.md)
     + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
   + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
@@ -959,6 +958,7 @@ user-guide-title: AEM as a Cloud Service
     + [Introduction to Communications APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
     + [Communications APIs - Synchronous processing](/help/forms/aem-forms-cloud-service-communications.md)
     + [Communications APIs - Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+    + [Generate AFP Output Using the AEM Forms API](/help/forms/document-generation-afp-api.md)
     + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
     + [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
     + [Changing Page Zero content in Designer](/help/forms/changing-page-zero-content-designer.md)
@@ -981,6 +981,7 @@ user-guide-title: AEM as a Cloud Service
     + [Dispatcher and CDN caching](/help/forms/troubleshooting-caching-performance.md)
     + [Restarting AEM SDK](/help/forms/restart-aem-sdk.md)
     + [Resolving Forms creation failures](/help/forms/form-creation-failing.md)
+    + [502 Error Page in Custom Submit Action](/help/forms/custom-submit-action-troubleshooting.md)
 + Screens {#screens-as-cloud-service}
   + Overview to Screens as a Cloud Service {#overview}
     + [Introduction](/help/screens-cloud/introduction/introduction.md)

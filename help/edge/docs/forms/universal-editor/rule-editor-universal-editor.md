@@ -543,6 +543,7 @@ Figure: Selecting and configuring custom functions in the Rule Editor interface
 The Universal Editor's Rule Editor supports static imports, enabling you to organize reusable logic across multiple files and forms. Instead of keeping all custom functions in a single file (/blocks/form/functions.js), you can import functions from other modules. 
 For example: Importing Functions from an External File
 Consider the following folder structure:
+
 ```
       form
       ┣ commonLib
@@ -576,9 +577,13 @@ export { getFullName, days};
 
 You can create different sets of functions in separate files or folders and export them as required:
  
-* If you want certain functions to be available only in specific forms, you can provide the path to the functions file in the form configuration.
+- If you want certain functions to be available only in specific forms, you can provide the path to the functions file in the form configuration.
 
-* If the textbox for the path is left blank, the Rule Editor defaults to loading functions from `/blocks/form/functions.js`
+- If the textbox for the path is left blank, the Rule Editor defaults to loading functions from `/blocks/form/functions.js`
+
+![Custom Function in UE](/help/forms/assets/custom-function-in-ue.png){width=50%}
+
+In the screenshot above, the path of the custom function is added in the Custom Function Path textbox. The custom functions for this form are loaded from the specified file (`cc_function.js`). 
 
 This allows flexibility by sharing functions across multiple forms or keeping them isolated per form.
 
