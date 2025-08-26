@@ -96,7 +96,7 @@ The following restrictions apply.
 In addition, be aware of how the full-stack pipeline behaves if you choose to introduce a [web tier config pipeline](#web-tier-config-pipelines).
 
 * The full-stack pipeline for an environment ignores the Dispatcher configuration if the corresponding web tier config pipeline exists.  
-* If the corresponding web tier config pipeline for the environment does not exist, the user can configure the full-stack pipeline include or ignore the Dispatcher configuration.
+* If the corresponding web tier config pipeline for the environment does not exist, the user can configure the full-stack pipeline to include or ignore the Dispatcher configuration.
 
 Full-stack pipelines can be code quality pipelines or deployment.
 
