@@ -154,12 +154,10 @@ AEM introduces Permissions Management for Users and Groups. The main functionali
 
 ### Upcoming Java API Deprecations {#java-api-deprecation}
 
-Several deprecated APIs are targeting removal on August 31st and thus should no longer be referenced. In early September, Action Center notifications will be sent if API usage is detected, and after September 25th, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, the list of soon-to-be-removed APIs is listed below:
+Several deprecated APIs are targeting removal on August 31st and thus should no longer be referenced. In early September, Action Center notifications will be sent if API usage is detected, and after September 25th, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, the list of APIs is listed below:
 
 <details>
-  <summary>Expand to see the deprecations</summary>
-
-Java APIs:
+  <summary>Expand to see the Java API deprecations</summary>
 
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
@@ -190,7 +188,7 @@ OSGi properties:
 
 ### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-The **Java 11 runtime*- is now deprecated, and most environments have already been upgraded to the more performant **Java 21 runtime**.
+The **Java 11 runtime* is now deprecated, and most environments have already been upgraded to the more performant **Java 21 runtime**.
 
 If your environment could not be upgraded due to unsupported dependencies (see [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), you should have received an email from Adobe with specific next steps. Please ensure all required updates are completed by **October 1st, 2025**, so your environment can be upgraded without disruption.
 
