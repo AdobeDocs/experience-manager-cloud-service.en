@@ -24,13 +24,13 @@ For sites running on Adobe Experience Manager, there is the "out of the box" **e
 * It is deeply integrated into the AEM delivery system, does not slow down your site and is resilient to changes in code and content.
 * It allows the testing of simple content changes as well as experiments covering design, functionality, and code.
 
-### Before you start {#before-start}
+## Before you start {#before-start}
 
 The experimentation plug-in is used within the context of [Edge Delivery Services](/help/edge/overview.md) so you will need a Github account, a content repository like SharePoint or Google Drive, and also you will need the [AEM Sidekick](https://www.aem.live/docs/sidekick). See also the [Getting Started – Universal Editor Developer Tutorial page](https://www.aem.live/developer/tutorial) and [Getting Started – Developer Tutorial](https://www.aem.live/developer/tutorial).
 
 After you have everything set up, **please watch this video** titled [Instant experimentation](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) for a short demonstration on how the experimentation plug-in works.
 
-### Frequently used terms {#frequently-used-terms}
+## Frequently used terms {#frequently-used-terms}
 
 Before following the rest of the guide to set up your first experiment, there are a few frequently used terms that you should be familiar with:
 
@@ -39,7 +39,7 @@ Before following the rest of the guide to set up your first experiment, there ar
 * **Variants**: control and challenger are all variants of an experiment.
 * **Significance**: Evaluating if your challenger is really better than the control. Calculating statistical significance allows you to rule out luck and concentrate on the results that have a real effect.
 
-### Experiment variants and general workflow {#experiment-variants-workflow}
+## Experiment variants and general workflow {#experiment-variants-workflow}
 
 Generally speaking, when setting up an experiment you will use a pre-existing page as the control page. You will then create a challenger page that will replace the control page for some of your visitors. In the challenger page, you can test different things like content variants, different page layouts, call-to-action (CTA) and so on. You can configure these experiment variants by adding metadata parameters in the control page (see below).
 
