@@ -9,12 +9,16 @@ role: Admin, Architect, Developer
 
 # Introduction to custom domain names {#introduction}
 
+<!-- Alexandru: contextual help links are broken, temporarily comminting this out until they,re fixed.
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_domains"
 >title="Manage Custom Domain Names"
 >abstract="Cloud Manager's UI lets you add a custom domain to identify your site with a unique, branded name in a self-service manner."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name" text="Adding a Custom Domain Name"
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/managing-custom-domain-names" text="View & Update Custom Domain Name"
+
+-->
 
 Adobe Experience Manager as a Cloud Service is provisioned with a default domain name, ending in `*.adobeaemcloud.com`. Using Cloud Manager's UI you can add a custom domain to identify your site with a unique, branded name in a self-service manner. The default `*.adobeaemcloud.com` domain name remains, even after you associate custom domain names to your website.
 

@@ -7,12 +7,16 @@ role: Admin
 ---
 # Post Go-Live {#post-go-live}
 
+<!-- Alexandru: contextual help links are broken, temporarily comminting this out until they,re fixed.
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="Troubleshooting AEM"
 >abstract="Review best practices for continuous development and management of logs. Learn about tools like Developer Console and CRXDE Lite to help with troubleshooting issues with AEM."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Accessing and Managing Logs"
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
+
+-->
 
 This journey is the last part, so you learn how to monitor for issues and improve performance after the migration is complete. Ensure the clean-up of temporary files, review best practices for continuous development, and manage logs.
 
