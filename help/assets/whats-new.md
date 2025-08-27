@@ -18,7 +18,13 @@ The following video demonstrates Content Hub key capabilities:
 
 ## Release Date {#release-date}
 
-The release date of Content Hub feature release (2025.7.0) is August 07, 2025 (same as that of AEM as a Cloud Service release). The next feature release (2025.8.0) is planned for August 28, 2025.
+The release date of Content Hub feature release (2025.8.0) is August 28, 2025 (same as that of AEM as a Cloud Service release). The next feature release (2025.8.0) is planned for September 25, 2025.
+
+## August release features {#august-release-features}
+
+**Bulk Search via Filter Properties**
+
+Content Hub now makes it faster to discover the assets you need. With the new Bulk Search capability, you can enter multiple values for any filter property—separated by a delimiter (for example, multiple SKU IDs)—and instantly retrieve all matching assets using a single search.
 
 ## July release features {#july-release-features}
 
