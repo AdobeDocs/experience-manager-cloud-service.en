@@ -269,7 +269,7 @@ user-guide-title: AEM as a Cloud Service
   + [Best Practices for Sling Service User Mapping and Service User Definition](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
   + [Customer Managed Keys for Adobe as a Cloud Service](/help/security/customer-managed-keys.md)
 + Experience Hub {#experience-hub}
-  + [About Experience Hub](help/experience-hub.md)
+  + [About Experience Hub](/help/experience-hub.md)
 + Onboarding {#onboarding}
   + [Start Here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
   + Onboarding Journey {#journey}
