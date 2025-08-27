@@ -42,9 +42,9 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### New features in Experience Manager Sites {#enhancements-sites}
 
-* You can now copy content fragments with referenced fragments (children) in one operation. This allows re-using existing content fragment structures for creating new content.
 * In Content Fragments Admin UI you can now view the workflow status for content fragments, with detailed information about past and currently running workflows for a selected fragment.
-* Renaming or moving a live copy source page will now trigger re-publishing a correspondingly renamed or moved live copy page. 
+* The performance for opening content fragments in the new content fragment editor has been increased by 25% in common scenarios by opening fragments via UUID instead of by path.
+*  When copying content fragments with referenced fragments, copies of the referenced fragments are now stored in the same location as the parent fragment copy. 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
