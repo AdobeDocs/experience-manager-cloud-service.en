@@ -48,51 +48,25 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Add shapes to Dynamic Media templates**
+**Import SVG Assets from AEM into Adobe Express**
 
-You can now [add shape layers to Dynamic Media templates](/help/assets/dynamic-media/dynamic-media-templates.md#add-shapes-to-the-canvas) in Experience Manager Assets. Similar to image and text layers, shape layers support parameters for real-time updates via the template URL. You can also include call-to-action (CTA) links to shapes in your templates.
-
-![Add shpaes to Dynamic Media templates](/help/assets/assets/enable-uniform-radius-shape.png)
-
-**AI-generated metadata enhancements**
-
-AEM Assets now enables you to [configure the display of asset titles in Card view or List view](/help/assets/smart-tags.md#configure-ai-generated-titles) on the Asset Browse page. You can choose to display the asset title defined by you, title generated using AI, or use AI-generated title only if there is no existing title for the asset. 
-
-![Configure AI-generated titles](/help/assets/assets/configure-title-ai-generated.png)
-
-You can now also choose to disable AI-generated metadata at the folder level. 
+Adobe Express users with AEM entitlements can now import SVG assets directly from AEM into Express using the native integration. This enhancement streamlines workflows by removing the need to download SVGs and reupload them using the Express User Interface.
 
 ### New Features in Content Hub {#new-features-content-hub}
 
-**Enhanced branding flexibility in Content Hub**
+**Bulk Search via Filter properties**
 
-Building on existing personalization features, Content Hub now allows admins to further tailor their deployment by adding custom logo images. Support for the TIFF file format has also been added for both banner and logo images, enabling greater design flexibility.
-
-**Smarter sharing with titled links**
-
-You can now add a title when generating a shared link—whether from the asset details view or after selecting one or more assets. This helps recipients easily identify the purpose of each link, especially when receiving multiple shared assets.
-
-![private and public link](/help/assets/assets/shared-link-for-assets.png)
-
-**Improved filter navigation**
-
-Content Hub now includes a **Show All** option within filters, allowing users to view all available facets along with asset counts from the current limitation of viewing only upto ten facets. Enhanced search and sort capabilities within each filter make it easier to discover and manage assets more efficiently.
-
-### AEM Desktop App release 3.0.0 {#desktop-app-release-3.0.0}
-
-Enjoy automated upload of new files and folders, enhanced file operations, smarter asset discovery, and seamless integration with AEM—making content management faster, clearer, and more intuitive.
-
-For the complete list of features, see [Desktop App Release Notes](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
+Content Hub now makes it faster to discover the assets you need. With the new Bulk Search capability, you can enter multiple values for any filter property—separated by a delimiter (for example, multiple SKU IDs)—and instantly retrieve all matching assets using a single search.
 
 ### New Features in Dynamic Media with OpenAPI capabilities {#new-features-dynamic-media-with-openapi}
 
-**Preview assets before publishing**
+**SEO friendly DM with OpenAPI URLs**
 
-[!DNL Dynamic Media with OpenAPI capabilities] now allows to preview assets directly within [!DNL AEM Sites] author pages before making them publicly available. Share preview pages with stakeholders to gather feedback on visual quality and contextual fit. During the review cycle, you can create and manage multiple asset versions before finalizing them for publication.
+Create Vanity URLs for asset delivery in DM with OpenAPI, replacing long system-generated UUIDs with short, readable identifiers. This makes links SEO friendly and better aligned with your brand or campaigns. Vanity URLs resolve automatically to the original asset UUID at runtime without disrupting existing workflows.
 
-**Enhanced Smart Imaging for OpenAPI image requests**
-
-All OpenAPI image requests now fully leverage Smart Imaging with auto-promotion and fallback logic. This enhancement optimizes images based on device and network conditions, delivering faster page loads and reduced bandwidth usage—while maintaining visual quality.
+>[!NOTE]
+> 
+>This feature is now available as a Limited Availability feature. You can [Submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
