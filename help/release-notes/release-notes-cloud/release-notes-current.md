@@ -152,15 +152,9 @@ The API Integration Tool enables form authors to create dynamic, intelligent for
 
 AEM introduces Permissions Management for Users and Groups. The main functionality remains the same as the classic UI, but is more user-friendly and efficient. See the [dedicated article](/help/security/touch-ui-principal-view.md) for further information.
 
-### Updated Deprecation Process {#updated-deprecation-process}
+### Upcoming Java API Deprecations {#java-api-deprecation}
 
-Adobe regularly reviews features, libraries, APIs, and configurations to ensure they meet standards for performance, security, and value. When capabilities no longer meet these standards, they are marked for deprecation and usage must stop by a specified removal date. Leading up to this date, Adobe will remind customers with email notifications, and actions that need to be taken in Cloud Manager before proceeding with or deploying new builds. Failure to take the necessary action may result in an inability to upgrade to new versions of AEM leading to potential impacts around security, performance, reliability, and availability.
-
-See the [deprecation article](/help/release-notes/deprecated-removed-features.md) for further information.
-
-#### Deprecated Java APIs and OSGi configuration nearing removal dates {#deprecated-near-removals}
-
-Expand the list below to view the deprecated APIs and OSGi configurations that must no longer be used. For full details—including removal timelines—refer to the deprecation article.
+Several deprecated APIs are targeting removal on August 31st and thus should no longer be referenced. In early September, Action Center notifications will be sent if API usage is detected, and after September 25th, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, the list of soon-to-be-removed APIs is listed below (click to expand) expanded below:
 
 <details>
   <summary>Expand to see the deprecations</summary>
@@ -183,13 +177,16 @@ Java APIs:
 * `org.bson`
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
+</details>
 
+<!--
 OSGi properties:
 
 * `org.apache.sling.commons.log.LogManager` (all properties)
 * `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
- 
-</details>
+* 
+
+-->
 
 ### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
