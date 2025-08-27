@@ -943,7 +943,7 @@ user-guide-title: AEM as a Cloud Service
     + [Debugging HTML5 forms](/help/forms/debug.md)
     + [Scripting support for HTML5 forms](/help/forms/scripting-support.md)
     + [Form set in AEM Forms](/help/forms/formset-in-aem-forms.md)
-  + Interactive Communication {#interactive-communocation}
+  + Interactive Communication {#interactive-communication}
     + [Introduction to interactive communication editor](/help/forms/interactive-communication/Introduction-to-Interactive-Communication-Editor.md)
     + [Create an interactive communication](/help/forms/interactive-communication/create-interactive-communication.md)
     + [Create an interactive communication template](/help/forms/interactive-communication/create-interactive-communication-template.md)
