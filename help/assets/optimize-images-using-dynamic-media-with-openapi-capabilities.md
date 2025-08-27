@@ -1,6 +1,6 @@
 ---
 title: Optimize images using Dynamic Media with OpenAPI Capabilities
-description: Learn how to optimize images on the fly before public delivery using the image optimization capabilities of Dynamic Media with OpenAPI Capbilities
+description: Learn how to optimize images on the fly before public delivery using the image optimization capabilities of Dynamic Media with OpenAPI Capabilities
 role: Admin, user 
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 ---
@@ -50,15 +50,16 @@ The rendition is delivered to the user and cached at the CDN for fast subsequent
 ## Smart Imaging{use-smart-imaging-using-dynamic-media-with-openapi-capabilities}
 
 [Smart imaging](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) automatically optimizes the image delivery to provide the best balance of visual quality, image size, and response time. This results in faster page loads, reduced bandwidth usage, and a consistently high-quality experience across devices and network conditions. Smart imaging includes the following capabilities:
-* [Auto Format Conversion](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=auto-format&t=request): Images are automatically converted to modern, web-optimized formats (such as AVIF or WebP) based on browser capabilities and customer entitlements irrespective of requested format. These formats provide better compression, thus making images smaller and faster to deliver and load. Learn more about [File format's impact on image delivery and rendering performance](https://web.dev/learn/performance/image-performance#file_formats).
+* [Auto Format Conversion](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=auto-format&t=request): Images are automatically converted to modern, web-optimized formats (such as AVIF or WebP) based on browser capabilities and customer entitlements, irrespective of the requested format. These formats provide better compression, thus making images smaller and faster to deliver and load. Learn more about [File format's impact on image delivery and rendering performance](https://web.dev/learn/performance/image-performance#file_formats).
 To disable, set the `auto-format` query parameter to `false`.
-The default recommendation of format from DMOpenAPI end is AVIF. AVIF handles all the browser capabilities and offers restrictions implicitly.
+The default recommendation of format from DM with OpenAPI end is AVIF. AVIF handles all the browser capabilities and offers restrictions implicitly.
 The query parameter controls the behaviour of browser format conversion for Smart Imaging capabilities. When` auto-format` is `true`, the requested format is ignored and a web-optimized format(AVIF or WEBP) based on image-characteristics, browser capabilities, and [license-entitlement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate) is selected automatically.
-When auto-format is true (enabled), the system auto-optimizes and delivers AVIF if supported (and licensed), otherwise WEBP. JPEG is delivered only when the browser doesn't support avif or webp and the image doesn't have an alpha channel (transparency).
+When auto-format is true (enabled), the system auto-optimizes and delivers AVIF if supported (and licensed), otherwise WEBP. JPEG is delivered only when the browser doesn't support AVIF or WEBP and the image doesn't have an alpha channel (transparency).
 * **Automatic Quality Adjustment**: Image quality-factor is automatically applied based on the client's network conditions, ensuring faster image delivery and loading under all conditions.
 The quality parameter sets a fixed compression level for the output image, with values ranging from 1 to 100. A higher value results in better visual quality but a larger file size, while a lower value reduces file size and image quality. For example, setting quality=85 ensures the image is always delivered at 85 quality, regardless of network conditions. Learn more about the [quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request). 
 The max-quality parameter, on the other hand, enables adaptive delivery based on the client's network conditions. It defines the maximum allowed quality (1–100), but the actual delivered quality may be reduced below this value if the network is slow, ensuring faster load times. For instance, if max-quality=85 is specified, images are delivered at 85 quality on fast networks but at a lower quality on slower networks to optimize performance. Learn more about the [max-quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
-For **Prime customers**, only the quality parameter is supported. The max-quality parameter is ignored. If quality is not specified, a default value of 80 is applied.
+
+  For **Prime customers**, only the quality parameter is supported. The max-quality parameter is ignored. If quality is not specified, a default value of 80 is applied.
 
   For **Ultimate customers**:
   * If both quality and max-quality are specified, quality takes precedence.
