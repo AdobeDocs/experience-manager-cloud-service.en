@@ -63,7 +63,7 @@ Create Vanity URLs for asset delivery in DM with OpenAPI, replacing long system-
 
 >[!NOTE]
 >
->This feature is now available as a Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>This feature will be available as a Limited Availability feature on September 10. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
