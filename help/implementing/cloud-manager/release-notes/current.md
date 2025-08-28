@@ -25,7 +25,7 @@ The next planned release is Thursday, September 4, 2025.
 
     Beginning August 19, 2025 Adobe begins a phased rollout of the new Experience Hub to all Adobe Experience Manager users. 
     
-    Experience Hub is a unified starting point that delivers personalized, contextual experiences to help users achieve goals faster. The rollout concludes by August 26, 2025 making it available to all users. The new Experience Hub is accessible directly at [experience.adobe.com](https://experience.adobe.com/). To learn more, see [Adobe Experience Hub](/help/implementing/cloud-manager/experience-hub.md).
+    Experience Hub is a unified starting point that delivers personalized, contextual experiences to help users achieve goals faster. The rollout concludes by August 26, 2025 making it available to all users. The new Experience Hub is accessible directly at [experience.adobe.com](https://experience.adobe.com/). To learn more, see [Experience Hub](/help/experience-hub.md).
 
 * **Edge Delivery Services license can be included in a HIPAA program in a self-service manner** 
 
