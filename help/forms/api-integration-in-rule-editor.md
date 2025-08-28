@@ -17,6 +17,10 @@ Form fields can be mapped directly to the input parameters defined in the API co
 
 Additionally, the Visual Rule Editor lets you define **success** and **failure handlers** when invoking a service. Success handlers specify the actions to be executed after a successful API call, while failure handlers define how the form should respond when an error occurs.
 
+>[!NOTE]
+>
+> API integration in Rule Editor is also applicable to Edge Delivery Services Forms.
+
 ## Comparison: API Integration Methods
 
 | Aspect                         | API Integration with Form Data Model (FDM)                     | Direct API Integration (via *Create API Integration*) |
