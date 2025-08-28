@@ -84,7 +84,7 @@ You can configure the metadata fields that display to the users while uploading 
 
 1. Click **[!UICONTROL Save]** to apply the changes.
 
-Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available property, to edit the labels, make these fields mandatory or non-mandatory to users while uploading assets using the **[!UICONTROL Required field]** toggle, or click the Delete icon to delete any metadata property. 
+Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg) available next to each available property, to edit the labels, make these fields mandatory or non-mandatory to users while uploading assets using the **[!UICONTROL Required field]** toggle, or click the Delete icon to delete any metadata property. 
 
 Click the **[!UICONTROL Auto-approval]** toggle if you need all assets that you add to the Experience Manager Assets repository to be auto-approved so that they are available in Content Hub immediately. Else, DAM authors or administrators need to manually approve the assets to make them available on Content Hub. The toggle is set to Off state by default.
 
@@ -117,6 +117,20 @@ Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), ava
 
 The filters enabled on the Configuration User Interface display on the Search page:
 ![Search on Content Hub](assets/content-hub-filters1.png)
+
+#### Bulk Search {#bulk-search-configuration}
+
+To enable searching multiple assets at once in [!DNL Content Hub], execute the steps below:
+
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Filters]**.
+
+1. Click ![Edit icon](assets/do-not-localize/edit_icon.svg)available next to each available filter.
+
+1. Enable **[!UICONTROL Bulk Search]** toggle. The default delimiters `[ , | \t | \r\n | \r | \n ]` are displayed automatically. Moreover, you can also add additional delimiters. To to this, specify delimiters in the input box separated by a `pipe symbol (|)`.
+
+   ![Bulk Search Configuration](assets/bulk-search-configuration.png)
+
+1. Click **[!UICONTROL Confirm]** to save the changes. See [Bulk Search in Content Hub](search-assets-content-hub.md#bulk-search) in action.
 
 ### Asset details {#configure-asset-details-content-hub}
 
@@ -306,3 +320,4 @@ Enable the following setting on the Configurations user interface to allow Conte
 -->
 
 Learn more about [sharing assets in the [!DNL Content Hub]](share-assets-content-hub.md).
+
