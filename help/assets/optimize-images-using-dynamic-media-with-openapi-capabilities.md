@@ -50,7 +50,7 @@ The rendition is delivered to the user and cached at the CDN for fast subsequent
 
 1. Navigate to your Sites authoring page. 
 1. Execute the steps in [Access remote assets in AEM Page Editor](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) section to use the Asset Selector panel for selecting an asset.
-1. Scroll down in the asset selector panel to select the preset for the selected asset.
+1. In the asset selector panel, scroll down to **[!UICONTROL  Preset type]**, and specify `Preset=Preset Name` in the **[!UICONTROL Image Modifiers]** field.
 
 ## Smart Imaging{use-smart-imaging-using-dynamic-media-with-openapi-capabilities}
 
