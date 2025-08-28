@@ -124,9 +124,9 @@ To enable searching multiple assets at once in [!DNL Content Hub], execute the s
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Filters]**.
 
-1. Click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available filter.
+1. Click ![Edit icon](assets/do-not-localize/edit_icon.svg)available next to each available filter.
 
-1. Enable **[!UICONTROL Bulk Search]** toggle. The default delimiters list `[ , | \t | \r\n | \r | \n ]` are displayed automatically. Moreover, you can also add additional delimiters. To to this, specify delimiters in the input box separated by a `pipe symbol (|)`.
+1. Enable **[!UICONTROL Bulk Search]** toggle. The default delimiters `[ , | \t | \r\n | \r | \n ]` are displayed automatically. Moreover, you can also add additional delimiters. To to this, specify delimiters in the input box separated by a `pipe symbol (|)`.
 
    ![Bulk Search Configuration](assets/bulk-search-configuration.png)
 
