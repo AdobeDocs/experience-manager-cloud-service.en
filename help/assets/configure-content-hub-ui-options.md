@@ -130,7 +130,7 @@ To enable searching multiple assets at once in [!DNL Content Hub], execute the s
 
    ![Bulk Search Configuration](assets/bulk-search-configuration.png)
 
-1. Click **[!UICONTROL Confirm]** to save the changes. See [Bulk Search in Content Hub](search-assets-content-hub#bulk-search) in action.
+1. Click **[!UICONTROL Confirm]** to save the changes. See [Bulk Search in Content Hub](search-assets-content-hub.md#bulk-search) in action.
 
 ### Asset details {#configure-asset-details-content-hub}
 
