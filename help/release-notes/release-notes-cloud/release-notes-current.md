@@ -22,7 +22,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.8.0) is August 28, 2025. The next feature release (2025.9.0) is planned for September 25, 2025.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.7.0) is August 7, 2025. The next feature release (2025.8.0) is planned for August 28, 2025.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -42,81 +42,90 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### New features in Experience Manager Sites {#enhancements-sites}
 
+* You can now copy content fragments with referenced fragments (children) in one operation. This allows re-using existing content fragment structures for creating new content.
 * In Content Fragments Admin UI you can now view the workflow status for content fragments, with detailed information about past and currently running workflows for a selected fragment.
-* The performance for opening content fragments in the new content fragment editor has been increased by 25% in common scenarios by opening fragments via UUID instead of by path.
-*  When copying content fragments with referenced fragments, copies of the referenced fragments are now stored in the same location as the parent fragment copy. 
+* Renaming or moving a live copy source page will now trigger re-publishing a correspondingly renamed or moved live copy page. 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Import SVG Assets from AEM into Adobe Express**
+**Add shapes to Dynamic Media templates**
 
-Adobe Express users with AEM entitlements can now import SVG assets directly from AEM into Express using the native integration. This enhancement streamlines workflows by removing the need to download SVGs and reupload them using the Express User Interface.
+You can now [add shape layers to Dynamic Media templates](/help/assets/dynamic-media/dynamic-media-templates.md#add-shapes-to-the-canvas) in Experience Manager Assets. Similar to image and text layers, shape layers support parameters for real-time updates via the template URL. You can also include call-to-action (CTA) links to shapes in your templates.
+
+![Add shpaes to Dynamic Media templates](/help/assets/assets/enable-uniform-radius-shape.png)
+
+**AI-generated metadata enhancements**
+
+AEM Assets now enables you to [configure the display of asset titles in Card view or List view](/help/assets/smart-tags.md#configure-ai-generated-titles) on the Asset Browse page. You can choose to display the asset title defined by you, title generated using AI, or use AI-generated title only if there is no existing title for the asset. 
+
+![Configure AI-generated titles](/help/assets/assets/configure-title-ai-generated.png)
+
+You can now also choose to disable AI-generated metadata at the folder level. 
 
 ### New Features in Content Hub {#new-features-content-hub}
 
-**Bulk Search via Filter properties**
+**Enhanced branding flexibility in Content Hub**
 
-Content Hub now makes it faster to discover the assets you need. With the new Bulk Search capability, you can enter multiple values for any filter property—separated by a delimiter (for example, multiple SKU IDs)—and instantly retrieve all matching assets using a single search.
+Building on existing personalization features, Content Hub now allows admins to further tailor their deployment by adding custom logo images. Support for the TIFF file format has also been added for both banner and logo images, enabling greater design flexibility.
+
+**Smarter sharing with titled links**
+
+You can now add a title when generating a shared link—whether from the asset details view or after selecting one or more assets. This helps recipients easily identify the purpose of each link, especially when receiving multiple shared assets.
+
+![private and public link](/help/assets/assets/shared-link-for-assets.png)
+
+**Improved filter navigation**
+
+Content Hub now includes a **Show All** option within filters, allowing users to view all available facets along with asset counts from the current limitation of viewing only upto ten facets. Enhanced search and sort capabilities within each filter make it easier to discover and manage assets more efficiently.
+
+### AEM Desktop App release 3.0.0 {#desktop-app-release-3.0.0}
+
+Enjoy automated upload of new files and folders, enhanced file operations, smarter asset discovery, and seamless integration with AEM—making content management faster, clearer, and more intuitive.
+
+For the complete list of features, see [Desktop App Release Notes](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes).
 
 ### New Features in Dynamic Media with OpenAPI capabilities {#new-features-dynamic-media-with-openapi}
 
-**SEO friendly DM with OpenAPI URLs**
+**Preview assets before publishing**
 
-Create Vanity URLs for asset delivery in DM with OpenAPI, replacing long system-generated UUIDs with short, readable identifiers. This makes links SEO friendly and better aligned with your brand or campaigns. Vanity URLs resolve automatically to the original asset UUID at runtime without disrupting existing workflows.
+[!DNL Dynamic Media with OpenAPI capabilities] now allows to preview assets directly within [!DNL AEM Sites] author pages before making them publicly available. Share preview pages with stakeholders to gather feedback on visual quality and contextual fit. During the review cycle, you can create and manage multiple asset versions before finalizing them for publication.
 
->[!NOTE]
-> 
->This feature is now available as a Limited Availability feature. You can [Submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+**Enhanced Smart Imaging for OpenAPI image requests**
+
+All OpenAPI image requests now fully leverage Smart Imaging with auto-promotion and fallback logic. This enhancement optimizes images based on device and network conditions, delivering faster page loads and reduced bandwidth usage—while maintaining visual quality.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### New features in AEM Forms {#forms-new-features}
 
-**Universal Editor for Adaptive Forms and Form Fragments**
+* **Date & Time Input Component**: A Date & Time component is now available, enabling users to select both date and time using a calendar and clock interface, or by manually entering values in a supported format.
+* [Enhanced Error Handling for File Uploads](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): The File Attachment component now automatically validates the uploaded file type against the allowed list. If a user uploads a file in an unsupported format, the form displays an error during submission. The component also checks the file content to validate its type, enhancing the overall security of the form.
+* **Specified Error Response for Custom Submit Action**: When a custom submit action encounters an unhandled error, error code 502 is returned. This helps identify that the issue is related to the custom submit action, making debugging easier.
+* [Excluding Hidden Fields from Document of Record](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings): A new property has been added to allow exclusion of hidden fields from the Document of Record. By default, this option is not selected and applies to all form fields.
+  
+### Pre-Release features in AEM Forms 
 
- The [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) now supports the creation of both Adaptive Forms and reusable Form Fragments. Authors can visually build forms, configure submit actions, and add reCAPTCHA validation, all in a simplified, WYSIWYG authoring environment. This capability accelerates form creation, enhances consistency, and improves protection against spam and automated abuse.
+* [Generate and Sync AFP Renditions](/help/forms/document-generation-afp-api.md): You can now use the AEM Forms Communication API to convert an XDP file to AFP format. AFP is a high-performance format widely used in large-scale enterprise printing.
+* **Enhancements in Rule Editor**
+  * **Validate and Reset Functions Enhancements**: The validate and reset methods now support execution at the panel, field, and form levels. Previously, they were only supported at the form level.
+  * **Modern JavaScript Support**: Support for ECMAScript 2019 and later features has been added for custom functions, allowing you to write more efficient, modular, and reusable code
+  * **Download DoR Option in Rule Editor**: A function to download the Document of Record (DoR) has been added as an out-of-the-box (OOTB) option in the Rule Editor.
+    ![Document-of-Record](/help/forms/assets/document-of-record-rn.gif)
+  * **Dynamic Variables in Rule Editor**: You can now use dynamic (temporary) variables in the Rule Editor for greater flexibility in defining conditions and actions. Hidden fields are no longer required to store temporary values.
+  * **Custom Event-Based Rules in Rule Editor**: You can now define custom events and trigger rules based on those events.
+  * **Context-Aware Repeatable Panel Rules**: In repeatable panels, rules are now executed based on context, instead of being applied only to the last panel instance.
+  * **Rules Triggered by Parameters**: The Rule Editor now supports rule execution based on query parameters, UTM parameters, or browser parameters.
+  * **Form-Specific Custom Functions**: Edge Delivery Services Forms now support form-specific custom function scripts, providing greater flexibility in managing reusable logic.
+  * **Static Imports for Custom Functions**: The Rule Editor in Universal Editor now supports static imports, allowing developers to organize, share, and reuse functions across multiple forms.
 
-  ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} 
+### Early Adopter features in AEM Forms
 
-
-**Forms Submission Service for Edge Delivery Services Forms**
-
-The see [Forms Submission Service](/help/forms/forms-submission-service.md). allows you to seamlessly store data from Adaptive Form submissions directly into popular spreadsheet platforms such as Google Sheets, Microsoft OneDrive, or SharePoint. This integration streamlines data management by enabling direct submission of form data to your chosen spreadsheet, eliminating manual data transfer and reducing errors.
-
-Key benefits include:
-
-* **Direct integration:** Configure your forms to submit data directly to a specified spreadsheet.
-* **Custom data mapping:** Map form fields to corresponding spreadsheet columns for organized storage.
-* **Access control:** Leverage existing spreadsheet permissions to manage who can access or modify submitted data.
-
-**Generate and sync AFP renditions from Adaptive Forms**
-
-The [AFP Output Sync API](/help/forms/document-generation-afp-api.md) enables administrators and users to generate AFP (Advanced Function Presentation) output from Adaptive Forms and synchronize the output with external systems or storage locations. AFP is a high-performance document format optimized for printing, often used in large-scale enterprise environments.
-
-<!-- ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
-
-**Enhancements in Rule Editor**
-
-* The `validate` method in the function list now supports validation at the panel, field, and form levels.
-* Client-side custom function parsing now supports ES10+ JavaScript features and static imports.
-* The button to download Document of Record (DoR) is now available as an out-of-the-box (OOTB) option in the rule editor.
-* Rules now support the use of dynamic variables.
-* Custom event-based rules are now supported.
-* Repeatable panel rules are now executed based on context, rather than only on the last panel instance.
-* Rules can now be triggered based on query parameters, UTM parameters, and browser parameters.
-* Form-specific custom function scripts are now supported for Adaptive Forms in Edge Delivery Services.
-
- --> 
-
-### New Early Access Features in AEM Forms {#forms-new-early-access-features}
-
-The AEM Forms Early Access Program offers a unique opportunity for you to get exclusive access to cutting-edge innovations and help shape their development.
-
-These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
-
-
-<!-- **Forms Optimization opportunities**
+* **Scribble Signature Component**: You can now use the Scribble Signature component to help users add their signatures to a form, such as in an agreement form. The component allows users to draw their signature directly within the form using a mouse, stylus, or touchscreen.
+* **Direct API Integration in Rule Editor**: Adaptive Forms now support direct API integration in the Visual Rule Editor without requiring a Form Data Model. Authors can configure APIs using a URL or cURL import, map input/output parameters, and secure calls with authentication.
+ 
+<!--
+**Forms Optimization opportunities**
 
 Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
 
@@ -131,33 +140,27 @@ Key optimization opportunities include:
 
 With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. --> 
 
-**Rule Editor for Interactive Communications Editor** 
-
-Build dynamic, data-driven actions directly within your documents using an intuitive, point-and-click interface. Easily define conditional logic, automate workflows, and personalize content without writing code.
-
-**AEM Forms Scaffolder CLI for Custom Components**
-
->[!VIDEO](https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
-
-Accelerate your AEM Forms Edge Delivery Services development with this CLI tool. Instantly generate the code and wiring needed to kickstart custom component development — no boilerplate, no hassle.
-
-**API Integration Tool for Dynamic Form Data**
-
-The API Integration Tool enables form authors to create dynamic, intelligent forms that automatically fetch and populate data from external REST APIs based on user interactions. This no-code integration capability transforms static forms into responsive data collection interfaces.
-
   
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Principal View for Permissions Management {#principal-view}
+### Node View for Permissions Management {#node-view}
 
-AEM introduces Permissions Management for Users and Groups. The main functionality remains the same as the classic UI, but is more user-friendly and efficient. See the [dedicated article](/help/security/touch-ui-principal-view.md) for further information.
+AEM introduces Node view Permissions Management. The main functionality remains the same as the classic UI, but is more user-friendly and efficient. See the [dedicated article](/help/security/touch-ui-principal-view.md) for further information.
 
-### Upcoming Java API Deprecations {#java-api-deprecation}
+### Updated Deprecation Process {#updated-deprecation-process}
 
-Several deprecated APIs are targeting removal on August 31st and thus should no longer be referenced. In early September, Action Center notifications will be sent if API usage is detected, and after September 25th, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, the list of APIs is listed below:
+Adobe regularly reviews features, libraries, APIs, and configurations to ensure they meet standards for performance, security, and value. When capabilities no longer meet these standards, they are marked for deprecation and usage must stop by a specified removal date. Leading up to this date, Adobe will remind customers with email notifications, and actions that need to be taken in Cloud Manager before proceeding with or deploying new builds. Failure to take the necessary action may result in an inability to upgrade to new versions of AEM leading to potential impacts around security, performance, reliability, and availability.
+
+See the [deprecation article](/help/release-notes/deprecated-removed-features.md) for further information.
+
+#### Deprecated Java APIs and OSGi configuration nearing removal dates {#deprecated-near-removals}
+
+Expand the list below to view the deprecated APIs and OSGi configurations that must no longer be used. For full details—including removal timelines—refer to the deprecation article.
 
 <details>
-  <summary>Expand to see the Java API deprecations</summary>
+  <summary>Expand to see the deprecations</summary>
+
+Java APIs:
 
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
@@ -175,22 +178,19 @@ Several deprecated APIs are targeting removal on August 31st and thus should no 
 * `org.bson`
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
-</details>
 
-<!--
 OSGi properties:
 
 * `org.apache.sling.commons.log.LogManager` (all properties)
 * `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
-* 
-
--->
+ 
+</details>
 
 ### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-The **Java 11 runtime* is now deprecated, and most environments have already been upgraded to the more performant **Java 21 runtime**.
+The **Java 11 runtime*- is now deprecated, and most environments have already been upgraded to the more performant **Java 21 runtime**.
 
-If your environment could not be upgraded due to unsupported dependencies (see [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), you should have received an email from Adobe with specific next steps. Please ensure all required updates are completed by **October 1st, 2025**, so your environment can be upgraded without disruption.
+If your environment could not be upgraded due to unsupported dependencies (see [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), you should have received an email from Adobe with specific next steps. Please ensure all required updates are completed by **August 28, 2025**, so your environment can be upgraded without disruption.
 
 Note: The runtime version is separate from your code's build version. While we recommend building with Java 21, Java 11 builds are still supported for now. A separate deprecation notice for Java 11 builds will be shared in the future.
 
@@ -198,7 +198,7 @@ Note: The runtime version is separate from your code's build version. While we r
 
 As noted in the April release notes, AEM Java logs must follow a standard format to ensure reliable monitoring across all customer environments. Custom log configurations—such as changes to log formatting, output files, or default log levels—are no longer supported. Logs must remain directed to the default files, and default log levels for AEM product code must be preserved. See full details in the [Logging article](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Starting on **September 25th**, any unsupported custom logging overrides will be ignored. Based on our analysis, most customers will not be impacted and Adobe has contacted customers whose current configuration may be affected.
+Starting in **late August**, any unsupported custom logging overrides will be ignored. Based on our analysis, most customers will not be impacted and Adobe has contacted customers whose current configuration may be affected.
 
 Please review and update any downstream processes that rely on custom logging behavior. For example:
 
