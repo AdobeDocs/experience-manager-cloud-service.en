@@ -33,7 +33,7 @@ The Adobe Experience Manager user interface works with the following client plat
 
 * [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md)
-* [Document-based authoring](/help/edge/docs/authoring.md) using the [Sidekick](/help/edge/docs/sidekick.md)
+* [Document-based authoring](https://www.aem.live/docs/aem-authoring) using the [Sidekick](https://www.aem.live/docs/sidekick)
 
 All browsers are tested with the default set of plug-ins and add-ons.
 
@@ -58,4 +58,4 @@ All browsers are tested with the default set of plug-ins and add-ons.
 
 Browser support for websites rendered by AEM depends on the implementation of AEM page templates, blocks, design, and component output. Therefore your developers who implement your project are ultimately in control of your site's compatibility.
 
-The AEM [project boilerplate,](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md#create-github-project) [Core Components,](/help/implementing/developing/components/overview.md#aem-core-components) and [WKND sample site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) are all compatible with all modern browsers.
+The AEM [project boilerplate,](https://www.aem.live/developer/ue-tutorial#create-github-project) [Core Components,](/help/implementing/developing/components/overview.md#aem-core-components) and [WKND sample site](/help/implementing/developing/introduction/develop-wknd-tutorial.md) are all compatible with all modern browsers.

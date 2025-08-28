@@ -359,5 +359,5 @@ https://<branch>--<repo>--<owner>.aem.live/content/forms/af/
 
 ```
 https://main--my-forms--company.aem.live/content/forms/af/
-contact-form
+contact-us-form
 ```

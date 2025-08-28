@@ -1,11 +1,12 @@
 ---
-title: "How to prefill Adaptive Form fields"
-description: "Use existing data to prefill fields of an Adaptive Form. Users can prefill basic information in a form by logging in with their social profiles."
+title: How to prefill Adaptive Form fields
+description: Use existing data to prefill fields of an Adaptive Form. Users can prefill basic information in a form by logging in with their social profiles.
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: prefill adaptive form, adaptive forms edge delivery services, adaptive form autofill
+exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
 ---
 # Configuring Prefill Service in Adaptive Forms using Edge Delivery Services
 
@@ -243,7 +244,7 @@ Ensure these extensions are enabled in Universal Editor:
 3. Choose **Preview as HTML**
 4. Test prefilling by appending parameters to the URL:
 
-   https://your-preview-url.com?<bindreferencefield>=<value>
+   https://your-preview-url.com?`<bindreferencefield>`=`<value>`
 
    **Example:**
 
@@ -420,17 +421,19 @@ Check that all fields have correct `bindRef` values that match your FDM exactly.
 
 +++
 
++++Can I use multiple prefill services in one form?
+
+You can configure one primary prefill service per form. However, you can combine different data sources within a single Form Data Model to achieve similar functionality.
+
++++
+
 +++How do I handle authentication for prefill services?
 
 Authentication depends on your data source configuration. For FDM-based prefilling, configure authentication in your data source settings. For draft prefilling, users typically need to be logged in to access their saved drafts.
 
 +++
 
-+++Can I use multiple prefill services in one form?
 
-You can configure one primary prefill service per form. However, you can combine different data sources within a single Form Data Model to achieve similar functionality.
-
-+++
 
 ## Related Topics
 

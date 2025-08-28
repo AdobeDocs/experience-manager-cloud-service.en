@@ -3,6 +3,7 @@ title: How to integrate Form Data Model (FDM) for a form with Adaptive Form?
 description: Learn to create forms based on a form data model(FDM). Generate and edit sample data for data model objects in the FDM.
 feature: Edge Delivery Services, Adaptive Forms, Form Data Model
 role: Admin, User
+exl-id: f08fb365-8750-4b81-9877-c382e7aebba0
 ---
 # Integrate forms with Form Data Model
 

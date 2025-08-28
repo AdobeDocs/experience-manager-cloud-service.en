@@ -10,13 +10,11 @@ exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 
 # Navigate the Universal Editor Interface for AEM Forms
 
-The [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) provides a visual interface for creating AEM Forms with Edge Delivery Services. This guide helps you understand the interface to build forms efficiently.
+The [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) provides a visual interface for creating AEM Forms with Edge Delivery Services. It offers a **What You See Is What You Get (WYSIWYG)** experience that displays exactly how your forms will appear to users. 
 
 ![Universal Editor Interface Overview](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-## Overview
-
-The Universal Editor offers a **What You See Is What You Get (WYSIWYG)** experience that displays exactly how your forms will appear to users. Whether you're new to form building or an experienced developer, this guide will help you:
+This guide helps you understand the interface to build forms efficiently. Whether you're new to form building or an experienced developer, this guide will help you:
 
 **Learn Essential Skills:**
 
@@ -31,6 +29,8 @@ The Universal Editor offers a **What You See Is What You Get (WYSIWYG)** experie
 - Build forms from concept to publication
 - Test and preview forms across devices
 - Collaborate with team members on form projects
+
+
 
 ## Getting Started Quickly
 
@@ -501,19 +501,19 @@ Master these shortcuts to build forms faster and more efficiently:
 - **Plan before building** - Sketch your form structure before starting
 - **Keep it simple** - Avoid overwhelming users with too many fields
 
-### **Performance Optimization**
-
-- **Minimize components** - Use only necessary form fields
-- **Optimize images** - Compress any images used in forms
-- **Test on mobile** - Ensure good performance on slower mobile connections
-- **Validate early** - Set up proper validation to prevent submission errors
-
 ### **User Experience**
 
 - **Test frequently** - Use Preview Mode after every major change
 - **Think like users** - Consider the complete form-filling experience  
 - **Provide clear labels** - Make field purposes obvious to users
 - **Add helpful text** - Use help text for complex fields
+
+### **Performance Optimization**
+
+- **Minimize components** - Use only necessary form fields
+- **Optimize images** - Compress any images used in forms
+- **Test on mobile** - Ensure good performance on slower mobile connections
+- **Validate early** - Set up proper validation to prevent submission errors
 
 ## Next Steps
 

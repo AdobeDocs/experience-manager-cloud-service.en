@@ -21,6 +21,12 @@ The next planned release is Thursday, September 4, 2025.
 
 ## What's new {#what-is-new}
 
+* **Adobe Experience Hub coming soon**
+
+    Beginning August 19, 2025 Adobe begins a phased rollout of the new Experience Hub to all Adobe Experience Manager users. 
+    
+    Experience Hub is a unified starting point that delivers personalized, contextual experiences to help users achieve goals faster. The rollout concludes by August 26, 2025 making it available to all users. The new Experience Hub is accessible directly at [experience.adobe.com](https://experience.adobe.com/). To learn more, see [Experience Hub](/help/experience-hub.md).
+
 * **Edge Delivery Services license can be included in a HIPAA program in a self-service manner** 
 
     Organizations with healthcare or sensitive data requirements can now use Edge Delivery Services in a self-service manner, enabling HIPAA compliance to meet strict regulatory standards. <!-- CMGR-70016 -->
@@ -85,7 +91,12 @@ See [Add a Specialized Testing Environment](/help/implementing/cloud-manager/spe
 
 ![Add environment dialog box with Specialized Testing Environment radio button selected](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
 
-If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID.
+>[!NOTE]
+>
+>Adobe has closed beta access requests for Specialized Testing Environments, having reached a sufficient number of participants. The feature is now in preparation for general availability.
+
+<!--
+If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID. -->
 
 
 ### Bring Your Own Git (BYOG) {#gitlab-bitbucket-azure-vsts}
@@ -123,7 +134,6 @@ See [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage
 
 <!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
 
-
 ### Add Edge Delivery Config Pipeline {#add-eds-pipeline}
 
 Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Config Pipelines** to manage settings such as traffic filtering rules and Web Application Firewall (WAF) configurations, where applicable. See [Supported Configurations](/help/operations/config-pipeline.md#configurations).
@@ -146,7 +156,7 @@ Config Pipelines are now supported for sites built with Edge Delivery Services, 
 
 See [Add Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
 
-<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID. -->
+If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID.
 
 
 ## Bug fixes

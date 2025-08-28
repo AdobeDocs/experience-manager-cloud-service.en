@@ -498,12 +498,12 @@ The supported fieldTypes for forms are:
 - number-input
 - date-input
 - panel
-- checkbox
-- drop-down
-- radio-group
 - plain-text
 - file-input
 - email
 - image
 - button
+- checkbox
+- drop-down
+- radio-group
 

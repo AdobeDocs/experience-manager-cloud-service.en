@@ -167,11 +167,13 @@ Absolutely. The Universal Editor supports seamless data binding with backend sys
 **Q: Is it possible to customize the form components?**
 Yes, the Universal Editor allows developers to create custom components tailored to specific organizational needs. Additionally, you can extend the functionality of the editor through UI extensions and custom workflows.
 
+**Q: What kind of analytics can I get from the forms?**
+The Universal Editor includes built-in analytics and tracking tools to monitor user interactions, form submission rates, and conversion metrics. These insights help optimize your forms for better performance.
+
 **Q: How does the Universal Editor handle accessibility?**
 The Universal Editor is designed with strict adherence to accessibility standards, including WCAG (Web Content Accessibility Guidelines). This ensures that the forms are usable by individuals with disabilities, providing an inclusive experience.
 
-**Q: What kind of analytics can I get from the forms?**
-The Universal Editor includes built-in analytics and tracking tools to monitor user interactions, form submission rates, and conversion metrics. These insights help optimize your forms for better performance.
+
 
 
 
