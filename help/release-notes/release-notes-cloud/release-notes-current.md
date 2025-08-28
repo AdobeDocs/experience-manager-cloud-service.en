@@ -38,6 +38,14 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 -->
 
+## Experience Hub {#experience-hub}
+
+The [Experience Hub](/help/experience-hub.md) is your centralized starting point for accessing all AEM capabilities. It is personalized based on your user persona and the licenses available to you, enabling each user to accomplish their outcomes efficiently.
+
+## AI Assistant in AEM {#AI-assistant}
+
+The [AI Assistant](/help/implementing/cloud-manager/ai-assistant-in-aem.md) for AEM offers a conversational interface designed to get you instant answers to your AEM product-related questions (*available to all users*) and automate support ticket creation (*available to Support Admins*). It is directly embedded in AEM and accessible from AEM Experience Hub, Cloud Manager, and Author UI.
+
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### New features in Experience Manager Sites {#enhancements-sites}
