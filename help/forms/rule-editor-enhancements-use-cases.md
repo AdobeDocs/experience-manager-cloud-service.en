@@ -71,6 +71,7 @@ A **Download** button is added to form using the Rule Editor, a rule is configur
 The screenshot below displays the rule applied to the **Download** button:
 
 ![Download Button rule](/help/forms/assets/download-button-rule.png)
+
 >[!NOTE]
 >
 > The **Input** field allows the user to specify the file name for a downloadable document. This is an optional parameter.
@@ -81,7 +82,7 @@ If the form is configured for DoR generation, this function generates and downlo
 
 ## Support for Dynamic Variables in Rules
 
-The enhanced rule editor now supports the creation and use of dynamic (temporary) variables. These variables can be set and retrieved throughout the form's lifecycle using the built-in **Set Variable Value** and **Get Variable Value** functions.
+The enhanced rule editor supports the creation and use of dynamic (temporary) variables. These variables can be set and retrieved throughout the form's lifecycle using the built-in **Set Variable Value** and **Get Variable Value** functions.
 These variables:
 
 * Are not submitted with the form data.
