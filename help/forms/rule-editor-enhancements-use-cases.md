@@ -12,7 +12,7 @@ exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
 
 This article introduces the latest enhancements to the rule editor in Adaptive Forms. These updates are designed to help you define form behavior more easily, without writing custom code, and to create more dynamic, responsive, and personalized form experiences.
 
-The table below lists recent enhancements to the rule editor in Adaptive Forms, along with a brief description and the key advantages of each feature.:
+The table below lists recent enhancements to the rule editor in Adaptive Forms, along with a brief description and the key advantages of each feature:
 
 | Enhancement    | Description     | Advantages|
 |---|----|---|
@@ -22,6 +22,10 @@ The table below lists recent enhancements to the rule editor in Adaptive Forms, 
 | **Custom event-based rules**                     | Define rules that respond to custom events beyond the standard triggers.                              | - Supports advanced use cases <br> - Greater control over when and how rules are executed <br> - Enhances interactivity |
 | **Context-aware repeatable panel execution**     | Rules now execute in the correct context for each repeated panel, instead of only the last instance.  | - Accurate rule application for each repeat instance <br> - Reduces errors in dynamic sections <br> - Improves user experience with repeated content |
 | **Support for query string, UTM, and browser parameters** | Create rules that adapt form behavior based on URL parameters or browser-specific values.        | - Enables personalization based on source or environment <br> - Useful for marketing or tracking-specific flows <br> - No need for extra scripting or customization |
+
+>[!NOTE]
+>
+> The enhancements to the Rule Editor are also applicable to Edge Delivery Sevices Forms.
 
 Let's now explore each method in detail with specific use cases to help you understand how these features can be used to deliver a personalized experience for users
  
