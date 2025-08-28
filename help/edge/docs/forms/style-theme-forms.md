@@ -502,7 +502,7 @@ This selector targets any fieldset with the class radio-group-wrapper. This woul
 ```
 
 - The fieldset element acts as the panel container with the class panel-wrapper and additional classes for styling based on the panel name (field-login).
-- The legend element (<legend>) serves as the panel title with the text "Login Information" and the class field-label. The data-visible="false" attribute can be used with JavaScript to control the visibility of the title.
+- The legend element (`<legend>`) serves as the panel title with the text "Login Information" and the class field-label. The data-visible="false" attribute can be used with JavaScript to control the visibility of the title.
 - Inside the fieldset, multiple .{Type}-wrapper elements (.text-wrapper and .password-wrapper in this case) represent individual form fields within the panel.
 - Each wrapper contains a label, input field, and description, similar to the previous examples.
 
@@ -672,14 +672,13 @@ The selector styles all panels that can be repeated, ensuring a consistent look 
 - Targeting Individual Fields within a Panel:
 
 ```CSS
-
 /* Target all form field wrappers within a repeatable panel */
 .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
   /* Add your styles here (e.g., margin) */
   margin-bottom: 10px;
 }
-
 ```
+
 This selector styles all field wrappers within a repeatable panel, maintaining consistent spacing between fields.
 
 - Targeting Specific Fields (within a Panel):
@@ -691,9 +690,6 @@ This selector styles all field wrappers within a repeatable panel, maintaining c
 }
 
 /* Target all
-
-
-
 ```
 
 +++

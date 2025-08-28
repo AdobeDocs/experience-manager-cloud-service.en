@@ -33,7 +33,7 @@ By the end you will be able to pick the right authoring method, understand submi
 
 ## Authoring Methods in Detail
 
-###  Universal Editor 
+### Universal Editor 
 
 Universal Editor is a visual, drag-and-drop authoring tool for marketers and designers that combines speed with enterprise-grade power:
 

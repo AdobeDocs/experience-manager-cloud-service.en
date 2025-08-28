@@ -4,12 +4,12 @@ description: Learn how to add an Edge Delivery pipeline to build and deploy your
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" 
+badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 hide: no
 index: no
 hidefromtoc: no
+exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
 ---
-
 # Add an Edge Delivery pipeline {#configure-production-pipeline}
 
 Learn how to configure Edge Delivery pipelines to build and deploy your code to production environments. A production pipeline deploys code first to the stage environment. On approval, it deploys the same code to the production environment.

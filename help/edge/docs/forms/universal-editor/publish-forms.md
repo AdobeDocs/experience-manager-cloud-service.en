@@ -4,7 +4,7 @@ description: Learn how to publish, configure, and access Adaptive Forms using Ed
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
-keywords: [publish forms, Edge Delivery Services, form configuration, CORS, referrer filter]
+keywords: publish forms, Edge Delivery Services, form configuration, CORS, referrer filter
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 ---
 # Publish Adaptive Forms with Edge Delivery Services
@@ -278,7 +278,8 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 
 - [Configure form submission actions](/help/edge/docs/forms/universal-editor/submit-action.md)
 - [Style and theme your forms](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-- [Add reCAPTCHA protection](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 - [Create responsive form layouts](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+- [Add reCAPTCHA protection](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+
 
 

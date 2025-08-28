@@ -5,8 +5,6 @@ keywords: Forms Submission Service, Edge Delivery Services forms, spreadsheet in
 feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner, Intermediate
-hide: yes
-hidefromtoc: yes
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
 ---
 # Forms Submission Service for Edge Delivery Services
@@ -144,8 +142,6 @@ Before configuring either method, ensure your AEM project foundation is ready:
 
 +++
 
-+++
-
 ## Manual Configuration
 
 ![Workflow for forms submission service](/help/forms/assets/forms-submission-service-workflow.png)
@@ -232,8 +228,10 @@ Grant the Adobe Forms Submission Service access to your spreadsheet.
 
 1. **Click the Share button** in the top-right corner of your spreadsheet
 2. **Add the Adobe service account:**
+
    - Email: `forms@adobe.com`
    - Permission level: **Editor** (required for data writing)
+
 3. **Send the sharing invitation**
 4. **Copy the spreadsheet link** for the next step
 
@@ -276,7 +274,7 @@ Link your form definition to the submission spreadsheet.
 3. **Paste the copied spreadsheet link** into the **Action** column for the Submit field
 4. **Save the changes** to your form definition
 
-    ![Link a spreadsheet](/help/forms/assets/form-submission-sheet-linking.png)
+   ![Link a spreadsheet](/help/forms/assets/form-submission-sheet-linking.png)
 
 *Example: Connecting the submit action to your data collection spreadsheet*
 
@@ -370,6 +368,7 @@ Postman provides a user-friendly interface for testing API submissions.
 **Request Configuration:**
 
 ```json
+
 POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
 Headers:

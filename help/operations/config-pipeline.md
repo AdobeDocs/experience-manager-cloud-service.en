@@ -56,7 +56,7 @@ As noted earlier, configuration for RDEs is deployed using [command line tooling
 
 Each configuration file begins with properties resembling the following example snippet:
 
- ```yaml
+```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:

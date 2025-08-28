@@ -43,7 +43,7 @@ The deprecation means that the following SDKs are now in feature freeze.
 
 The most suitable replacement for the SPA Editor depends on your projects needs.
 
-* **[The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md)** is the best direct replacement for the SPA Editor.
+* **[The Universal Editor](https://www.aem.live/docs/aem-authoring)** is the best direct replacement for the SPA Editor.
   * The Universal Editor is also a visual editor and was designed specifically for decoupled implementations, incorporating all of Adobe's experience from the SPA Editor.
   * The Universal Editor has also been [released for AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (with release 2024.11.05 of AEM 6.5) and therefore supports AMS and on-prem use-cases in addition to Cloud Services.
 * **[The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md)** is an alternative for those who prefer a form-based editor.

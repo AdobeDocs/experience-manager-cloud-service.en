@@ -1,290 +1,244 @@
 ---
-
-title: "How to Configure a Redirect Page or Thank you message"
-description: "Learn how users can be displayed a thank you message or redirected to a webpage that form authors can configure while creating the form."
+title: How to Configure a Redirect Page or Thank you message
+description: Learn how users can be displayed a thank you message or redirected to a webpage that form authors can configure while creating the form.
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
+exl-id: cacd7b0a-aad0-4b5d-a6a0-e4bac4cb196d
 ---
-
 # Configure Thank You Messages and Redirect URLs
 
-Form fragments are reusable components that eliminate repetitive development work and ensure consistency across your organization's forms. Instead of recreating common sections like contact information, address details, or consent agreements for every form, you can build these elements once as fragments and reuse them across multiple forms.
+Post-submission experiences significantly impact user satisfaction and form completion rates. Adobe's Universal Editor provides comprehensive options for configuring what users see after submitting forms, whether through personalized thank you messages or strategic redirects to specific pages.
 
-**What you'll accomplish in this article:**
-
-- Understand the business value and technical capabilities of form fragments
-- Create reusable form fragments using Universal Editor
-- Integrate fragments into existing forms with proper configuration
-- Manage fragment lifecycle and maintain consistency across forms
-
-**Business benefits:**
-
-- **Reduced development time**: Build common form sections once, reuse everywhere
-- **Improved consistency**: Standardized layouts and content across all forms
-- **Simplified maintenance**: Update a fragment once to reflect changes across all forms that use it
-- **Enhanced compliance**: Ensure regulatory sections remain consistent and up-to-date
-
-Form fragments in Edge Delivery Services support advanced capabilities including nested fragments, multiple instances within a single form, and seamless integration with data sources.
-
-## Understanding Form Fragments
-
-Form fragments in Edge Delivery Services provide powerful capabilities for modular form development:
-
-**Core capabilities:**
-
-- **Consistency management**: Fragments maintain identical layouts and content across multiple forms. With a "change once, reflect everywhere" approach, updates to a fragment automatically apply to all forms in Preview mode.
-- **Multiple usage**: Add the same fragment multiple times within a single form, each with independent data binding to different data sources or schema elements.
-- **Nested structures**: Create complex hierarchies by embedding fragments within other fragments for sophisticated form architectures.
-
-**Technical requirements:**
-
-- **GitHub URL consistency**: Both the fragment and any form using it must specify the same GitHub repository URL
-- **Standalone editing**: Fragments can only be modified in their standalone form; changes cannot be made within the host form
-
-**Publication behavior:**
-
->[!IMPORTANT]
->
->In Preview mode, fragment changes reflect immediately across all forms. In Publish mode, you must republish both the fragment and any forms that use it to see updates.
-
->[!CAUTION]
->
->Avoid recursive fragment references (nesting a fragment within itself) as this causes rendering errors and unexpected behavior.
+This article provides detailed guidance on implementing both thank you messages and redirect URLs, including technical considerations, best practices, and user experience guidelines to maximize the effectiveness of your form submissions.
 
 ## Prerequisites
 
-**Technical setup requirements:**
+Before configuring post-submission experiences, ensure you have:
 
-- [GitHub repository configured](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template) with connection established between your AEM environment and GitHub repository
-- [Latest Adaptive Forms block](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project) added to your GitHub repository (for existing Edge Delivery Services projects)
-- AEM Forms Author instance with Edge Delivery Services template available
-- Access to your AEM Forms as a Cloud Service author instance URL and GitHub repository URL
+**Technical setup:**
 
-**Required knowledge and permissions:**
+- Access to Universal Editor with appropriate permissions
+- An existing Adaptive Form created in Universal Editor
+- Understanding of your organization's redirect URL requirements
 
-- Basic understanding of form design concepts and component hierarchy
-- Familiarity with Universal Editor interface and form creation workflows
-- Author-level permissions in AEM Forms to create and manage form assets
-- Understanding of your organization's form standards and reusable component requirements 
+**Planning considerations:**
 
-## Working with Edge Delivery Services Form Fragments
+- **Message strategy**: Define the tone, length, and specific information to include in thank you messages
+- **Redirect strategy**: Identify target pages and ensure they're optimized for post-form completion experiences
+- **Analytics integration**: Plan how to track user interactions with thank you messages or redirect destinations
 
-You can create Edge Delivery Services Form Fragments in the Universal Editor and add the created fragments to Edge Delivery Services forms. You can perform the following actions with Edge Delivery Services Form Fragments:
+## Configure Thank You Messages
 
-- [Creating form fragments](#creating-form-fragments)
-- [Adding form fragments to a form](#adding-form-fragments-to-a-form)
-- [Managing form fragments](#managing-form-fragments)
+Thank you messages provide immediate acknowledgment of successful form submission and can include personalized content, next steps, or important information relevant to the user's submission.
 
-+++ Creating form fragments
+### When to Use Thank You Messages
 
-To create a form fragment in Universal Editor, perform the following steps:
+Thank you messages work best when:
 
-1. Log in to your AEM Forms as a Cloud Service author instance.
-1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
-1. Click **Create &gt; Adaptive Form Fragment**.
+- **Simple acknowledgment**: Users need confirmation without additional navigation requirements
+- **Instructional content**: You need to provide specific next steps or important information
+- **Brand consistency**: The message can be crafted to align with your organization's communication style
+- **Single-page experience**: Users should remain on the current page for workflow continuity
 
-   ![Create fragment](/help/edge/docs/forms/universal-editor/assets/create-fragment.png)
+### Implementation Steps
 
-   The **Create Adaptive Form Fragment** wizard appears.
-1. Select the Edge Delivery Services  based template from the **Select Template** tab and click **[!UICONTROL Next]**.
-   ![Select Edge Delivery Services template](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
+**1. Access form properties**
 
-1. Specify title, name, description and tags for the fragment. Ensure that you specify a unique name for the fragment. If another fragment exists with the same name, the fragment fails to create. 
-1. Specify the **GitHub URL**. For example, if your GitHub repository is named `edsforms`, it is located under the account `wkndforms`, the URL is `https://github.com/wkndforms/edsforms`.
+Open your Adaptive Form in Universal Editor and click the **Edit Form Properties** icon in the toolbar. This opens the comprehensive form properties dialog.
 
-    ![basic properties](/help/edge/docs/forms/universal-editor/assets/fragment-basic-properties.png)
+**2. Navigate to thank you configuration**
 
-1. (Optional) Click to open the **Form Model** tab, and from the **Select From** drop-down menu, select one of the following models for the fragment:
+In the Form Properties dialog, select the **Thank You** tab to access post-submission configuration options.
 
-   ![Displays model type in the Form Model tab](/help/edge/docs/forms/universal-editor/assets/select-fdm-for-fragment.png)
+**3. Configure message display**
 
-    - **Form Data Model (FDM)**: Integrate data model objects and services from data sources into your fragment. Choose Form Data Model (FDM) if your form requires reading and writing data from multiple sources.
+Select **Show Message** from the available options. This activates the message content editor with rich text capabilities.
 
-    - **JSON Schema**: Integrate your form with a backend system by associating a JSON schema that defines the data structure. It allows you to add dynamic content using the schema elements. 
-    - **None**: Specifies to create the fragment from scratch without using any form model.
+**4. Create your message content**
 
-    >[!NOTE]
-    >
-    > To learn how to integrate forms or fragments with a Form Data Model (FDM) in the Universal Editor to use diverse backend data sources, see [Integrate forms with Form Data Model in Universal Editor](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md).
+In the **Message content** field, craft your thank you message using the rich text editor. The editor supports:
 
-1. (Optional) Specify the **Publish Date** or **Unpublish Date** for the fragment in the **Advanced** tab.
+- **Text formatting**: Bold, italic, underline, and color options
+- **Lists**: Bulleted and numbered lists for organizing information
+- **Links**: Direct links to relevant resources or next steps
+- **Full-screen editing**: Click the expand icon for a larger editing workspace
 
-    ![Advanced tab](/help/edge/docs/forms/universal-editor/assets/advanced-properties-fragment.png)
-1. Click **Create** to generate the fragment. A success dialog appears with editing options.
+### Technical Considerations
 
-    ![Edit fragment](/help/edge/docs/forms/universal-editor/assets/edit-fragment.png)
+**Message display behavior:**
 
-1. Click **Edit** to open the fragment in Universal Editor with the default template applied.
+- Messages appear in a modal overlay immediately after form submission
+- Content supports HTML formatting and maintains responsive design
+- Messages can be dismissed by users or configured with auto-close timers
 
-    ![Fragment in Universal Editor for authoring](/help/edge/docs/forms/universal-editor/assets/fragment-in-ue.png)
+**Content guidelines:**
 
-1. **Design your fragment content**: Add form components (text fields, dropdowns, checkboxes) to build the reusable section. For detailed component guidance, see [Getting Started with Edge Delivery Services for AEM Forms using Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg).
+- Keep messages concise while providing necessary information
+- Include clear next steps when appropriate
+- Consider including reference numbers or confirmation details
+- Ensure mobile-friendly formatting
 
-1. **Configure component properties**: Set field names, validation rules, and default values as needed for your use case.
+### Example Implementation
 
-1. **Save and preview**: Save your fragment and use the Preview mode to verify the layout and functionality.
+        Thank you for your submission!
 
-    ![Screenshot of a completed contact details form fragment in the Universal Editor, showing fields for name, phone, email, and address that can be reused across multiple forms](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+        Your application has been received and assigned reference number #REF-2024-001234.
 
-**Validation checkpoint:**
+        **What happens next:**
+        - You will receive a confirmation email within 15 minutes
+        - Our team will review your submission within 2 business days
+        - We will contact you directly if additional information is needed
 
-- Fragment loads without errors in Universal Editor
-- All form components render correctly
-- Field properties and validation rules work as expected
-- Fragment is saved and available in the Forms & Documents console
+        **Need assistance?** Contact our support team at support@example.com 
 
-Once your fragment is complete, you can [integrate it into any Edge Delivery Services form](#adding-form-fragments-to-a-form).
+## Configure Redirect URLs
 
-+++
+Redirect URLs automatically navigate users to specific pages after form submission, enabling seamless integration with existing workflows or directing users to relevant content.
 
+### When to Use Redirect URLs
 
-+++ Adding form fragments to a form
+Redirect URLs are optimal for:
 
-This example demonstrates creating an `Employee Details` form that uses the `Contact Details` fragment for both employee and supervisor information sections. This approach ensures consistent data collection while reducing development effort.
+- **Workflow integration**: Directing users to dashboards, account pages, or next steps in a process
+- **Content delivery**: Showcasing relevant products, services, or information based on form responses
+- **Analytics tracking**: Directing to pages with specific tracking implementations
+- **Multi-step processes**: Moving users to the next phase of complex workflows
 
-To integrate a form fragment into your form:
+### Implementation Steps
 
-1. Open the form in edit mode.
-1. Add the Form Fragment component to the form.
-1. Open the Content browser, and navigate to the **[!UICONTROL Adaptive Form]** component in the **Content tree**.
-1. Navigate to the section, where you intend to add a fragment. For example, navigate to the **Employee Details** panel. 
+**1. Access form properties**
 
-    ![Navigate to section](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
+Open your Adaptive Form in Universal Editor and click the **Edit Form Properties** icon to open the form configuration dialog.
 
-1. Click the **[!UICONTROL Add]** icon and add the **[!UICONTROL Form Fragment]** component from the **Adaptive Form Components** list. 
-    ![Add Form Fragment](/help/edge/docs/forms/universal-editor/assets/add-fragment.png)
+**2. Navigate to thank you configuration**
 
-    When you select the **[!UICONTROL Form Fragment]** component, the fragment gets added to your form. You can configure the properties of the added fragment by opening its **Properties**. For example, hide the title of the fragment from its **Properties**.
+Select the **Thank You** tab in the Form Properties dialog to access redirect configuration options.
 
-    ![Configuring properties of fragment](/help/edge/docs/forms/universal-editor/assets/fragment-properties.png)
+**3. Enable redirect functionality**
 
-1. Select the **Fragment reference** in the **Basic** tab. All the fragments available for your form, depending on the model of the form, appear.
-   
-    For example, navigate to `/content/forms/af` and select the `Contact Details` fragment.
+Choose **Redirect to URL** from the available post-submission options.
 
-    ![Select Fragment](/help/edge/docs/forms/universal-editor/assets/select-fragment.png)
+**4. Configure destination URL**
 
-1. Click **[!UICONTROL Select]**.
+Enter your target URL in the provided field. The system supports multiple URL formats for flexible implementation.
 
-    The form fragment is added by reference to the form and remains synchronized with the standalone form fragment.
+### URL Configuration Options
 
-    ![Screenshot showing the contact details fragment successfully integrated into an employee form within the Universal Editor, demonstrating how fragments maintain their structure when reused](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+**Absolute URLs**
 
-    You can preview the form to see how the form appears in the **Preview** mode.
+Complete web addresses including protocol and domain:
 
-    ![Preview](/help/edge/docs/forms/universal-editor/assets/preview-form-with-fragment.png)
+        https://www.example.com/thank-you
+        https://dashboard.example.com/user/profile
 
-    Similarly, you can repeat Steps 3 to 7 to insert the `Contact Details` fragment for the `Supervisor Details` panel.
+**Relative Paths**
 
-    ![Employee Details form](/help/edge/docs/forms/universal-editor/assets/employee-detail-form-with-fragments.png)
+Paths relative to your current domain:
 
-+++
+        /thank-you
+        /dashboard/user-profile
+        ../confirmation-page.html
 
+**AEM Sites Page References**
 
+References to other pages within your AEM Sites implementation:
 
-+++ Managing form fragments
+        /content/mysite/en/thank-you
+        /content/mysite/en/next-steps
 
-You can perform several operations on form fragments using the AEM Forms user interface.
+### Technical Considerations
 
-1. Log in to your AEM Forms as a Cloud Service author instance.
-1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+**Redirect behavior:**
 
-1. Select a form fragment and the toolbar displays the following operations you can perform on the selected fragment.
+- Redirects occur immediately after successful form submission
+- Browser history includes the redirect for proper back-button functionality
+- Redirect timing can be configured with optional delays
 
-    ![Manage fragment](/help/edge/docs/forms/universal-editor/assets/manage-fragment.png)
+**URL validation:**
 
-    <table>
-    <tbody>
-    <tr>
-   <td><p><strong>Operation</strong></p> </td>
-   <td><p><strong>Description</strong></p> </td>
-    </tr>
-    <tr>
-   <td><p>Edit</p> </td>
-   <td><p>Opens the form fragment in edit mode.<br /> <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>Properties</p> </td>
-   <td><p>Provides options to modify the properties of the form fragment.<br /> <br /> </p> </td>
-    </tr>
-    <td><p>Copy</p> </td>
-   <td><p> Provides options to copy the form fragment and paste it at the desired location. <br /> <br /> </p> </td>
-    </tr>
-   <tr>
-   <td><p>Preview</p> </td>
-   <td><p>Provides options to preview the fragment as HTML or perform a custom preview by merging data from an XML file with the fragment. <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>Download</p> </td>
-   <td><p>Downloads the selected fragment.<br /> <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>Start Review/Manage Review</p> </td>
-   <td><p>Allows initiating and managing a review of the selected fragment.<br /> <br /> </p> </td>
-    </tr>
-    <!--<tr>
-   <td><p>Add Dictionary</p> </td>
-   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
-    </tr>-->
-    <tr>
-   <td><p>Publish / Unpublish</p> </td>
-   <td><p>Publishes / unpublishes the selected fragment.<br /> <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>Delete</p> </td>
-   <td><p>Deletes the selected fragment.<br /> <br /> </p> </td>
-    </tr>
-    <tr>
-   <td><p>Compare</p> </td>
-   <td><p>Compares two different form fragments for previewing purposes.<br /> <br /> </p> </td>
-    </tr>
-    </tbody>
-    </table>
+- System validates URL format before allowing configuration
+- Relative URLs are resolved against the current domain
+- External URLs require proper CORS configuration if needed
 
-+++ 
+## Best Practices and Recommendations
 
-## Best Practices
+### User Experience Guidelines
 
-**Fragment design and naming:**
+**Message optimization:**
 
-- **Use descriptive, unique names**: Choose names that clearly indicate the fragment's purpose (e.g., "contact-details-with-validation" rather than "fragment1")
-- **Plan for reusability**: Design fragments to be context-independent so they work across different form types
-- **Keep fragments focused**: Create single-purpose fragments rather than complex, multi-function components
+- **Clarity first**: Ensure users immediately understand their submission was successful
+- **Value addition**: Provide information that helps users with next steps
+- **Consistent branding**: Maintain your organization's voice and visual style
+- **Mobile consideration**: Test messages on various screen sizes
 
-**Development workflow:**
+**Redirect optimization:**
 
-- **Test fragments independently**: Verify fragment functionality before integrating into forms
-- **Maintain consistent GitHub URLs**: Ensure the same repository URL is used across all related fragments and forms
-- **Document fragment purpose**: Include clear descriptions and tags to help team members understand when to use each fragment
+- **Page optimization**: Ensure redirect destinations are optimized for post-form visitors
+- **Loading performance**: Verify redirect pages load quickly to maintain user experience
+- **Content relevance**: Make sure redirect content is relevant to the form context
 
-**Publication and maintenance:**
+### Security Considerations
 
-- **Coordinate publication**: When updating fragments, plan to republish all dependent forms simultaneously
-- **Version control**: Use meaningful commit messages when updating fragments to track changes over time
-- **Monitor dependencies**: Keep track of which forms use each fragment to assess update impact
+**URL validation:**
 
->[!TIP]
->
->Fragment styles, scripts, and expressions are preserved when embedded, so design with this inheritance in mind.
+- Implement proper validation for redirect URLs to prevent malicious redirects
+- Consider whitelist approaches for allowed redirect domains
+- Monitor redirect patterns for unusual activity
 
-## Summary
+**Content security:**
 
-You have successfully learned how to leverage form fragments in Edge Delivery Services to improve development efficiency and maintain consistency across your organization's forms. 
+- Sanitize thank you message content to prevent script injection
+- Implement proper content security policies for rich text content
+- Regular security reviews of redirect destinations
 
-**Key accomplishments:**
+### Analytics and Tracking
 
-- **Understanding**: Grasped the business value and technical capabilities of form fragments
-- **Creation**: Built reusable form fragments using Universal Editor with proper configuration
-- **Integration**: Added fragments to forms with correct reference setup and property configuration  
-- **Management**: Explored fragment lifecycle operations and maintenance workflows
+**Implementation considerations:**
 
-**Next steps:**
+- **Goal tracking**: Set up analytics goals for both thank you message views and redirect completions
+- **User journey mapping**: Track how users interact with post-submission experiences
+- **Conversion optimization**: A/B test different thank you messages and redirect destinations
 
-- Create a library of commonly used fragments for your organization
-- Establish naming conventions and governance policies for fragment usage
-- Explore advanced integration with [Form Data Models](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) for dynamic data-driven fragments
-- Implement fragment-based form templates for consistent user experiences
+**Measurement strategies:**
 
-Your forms now benefit from modular, maintainable architecture that scales efficiently across projects while ensuring consistent user experiences.
+- Monitor time spent on thank you messages before dismissal
+- Track click-through rates for links within thank you messages
+- Analyze user behavior on redirect destination pages
 
+## Validation Checkpoints
+
+After configuring your post-submission experience:
+
+**Configuration verification:**
+
+- Form properties correctly show selected thank you option
+- Message content displays properly in preview mode
+- Redirect URLs are properly formatted and accessible
+- All links within messages function correctly
+
+**User experience testing:**
+
+- Submit test forms to verify proper thank you message display
+- Test redirect functionality across different browsers
+- Verify mobile responsiveness of thank you messages
+- Confirm redirect destinations load properly
+
+**Analytics setup:**
+
+- Tracking codes properly implemented for thank you messages
+- Redirect destination tracking configured
+- Goal completion events properly firing
+
+## Next Steps
+
+After successfully configuring your post-submission experience:
+
+- **Monitor performance**: Review analytics to understand user engagement with thank you messages or redirect pages
+- **Iterate and improve**: Use user feedback and data insights to refine your post-submission strategy
+- **Scale implementation**: Apply successful patterns across other forms in your organization
+
+**Related documentation:**
+
+- [Form submission configuration guide](submit-action.md)
+- [User experience best practices](responsive-layout.md)
