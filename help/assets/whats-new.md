@@ -18,7 +18,7 @@ The following video demonstrates Content Hub key capabilities:
 
 ## Release Date {#release-date}
 
-The release date of Content Hub feature release (2025.8.0) is August 28, 2025 (same as that of AEM as a Cloud Service release). The next feature release (2025.8.0) is planned for September 25, 2025.
+The release date of Content Hub feature release (2025.8.0) is August 28, 2025 (same as that of AEM as a Cloud Service release). The next feature release (2025.9.0) is planned for September 25, 2025.
 
 ## August release features {#august-release-features}
 
