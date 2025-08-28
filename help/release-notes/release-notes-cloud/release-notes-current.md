@@ -22,7 +22,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.7.0) is August 7, 2025. The next feature release (2025.8.0) is planned for August 28, 2025.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.8.0) is August 28, 2025. The next feature release (2025.9.0) is planned for September 25, 2025.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -42,9 +42,10 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### New features in Experience Manager Sites {#enhancements-sites}
 
-* You can now copy content fragments with referenced fragments (children) in one operation. This allows re-using existing content fragment structures for creating new content.
 * In Content Fragments Admin UI you can now view the workflow status for content fragments, with detailed information about past and currently running workflows for a selected fragment.
-* Renaming or moving a live copy source page will now trigger re-publishing a correspondingly renamed or moved live copy page. 
+* The performance for opening content fragments in the new content fragment editor has been increased by 25% in common scenarios by opening fragments via UUID instead of by path.
+* When copying content fragments with referenced fragments, copies of the referenced fragments are now stored in the same location as the parent fragment copy. 
+* You can now configure a custom workspace in the folder settings, to export the content fragments to the configured workspace in Adobe Target.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -53,7 +54,6 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 **Bulk Search via Filter properties**
 
 Content Hub now makes it faster to discover the assets you need. With the new Bulk Search capability, you can enter multiple values for any filter property—separated by a delimiter (for example, multiple SKU IDs)—and instantly retrieve all matching assets using a single search.
-
 
 ### New Features in Dynamic Media with OpenAPI capabilities {#new-features-dynamic-media-with-openapi}
 
@@ -64,7 +64,6 @@ Create Vanity URLs for asset delivery in DM with OpenAPI, replacing long system-
 >[!NOTE]
 >
 >This feature will be available as a Limited Availability feature on September 10. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
-
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -111,24 +110,16 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
   
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Node View for Permissions Management {#node-view}
+### Principal View for Permissions Management {#principal-view}
 
-AEM introduces Node view Permissions Management. The main functionality remains the same as the classic UI, but is more user-friendly and efficient. See the [dedicated article](/help/security/touch-ui-principal-view.md) for further information.
+AEM introduces Permissions Management for Users and Groups. The main functionality remains the same as the classic UI, but is more user-friendly and efficient. See the [dedicated article](/help/security/touch-ui-principal-view.md) for further information.
 
-### Updated Deprecation Process {#updated-deprecation-process}
+### Upcoming Java API Deprecations {#java-api-deprecation}
 
-Adobe regularly reviews features, libraries, APIs, and configurations to ensure they meet standards for performance, security, and value. When capabilities no longer meet these standards, they are marked for deprecation and usage must stop by a specified removal date. Leading up to this date, Adobe will remind customers with email notifications, and actions that need to be taken in Cloud Manager before proceeding with or deploying new builds. Failure to take the necessary action may result in an inability to upgrade to new versions of AEM leading to potential impacts around security, performance, reliability, and availability.
-
-See the [deprecation article](/help/release-notes/deprecated-removed-features.md) for further information.
-
-#### Deprecated Java APIs and OSGi configuration nearing removal dates {#deprecated-near-removals}
-
-Expand the list below to view the deprecated APIs and OSGi configurations that must no longer be used. For full details—including removal timelines—refer to the deprecation article.
+Several deprecated APIs are targeting removal on August 31st and thus should no longer be referenced. In early September, Action Center notifications will be sent if API usage is detected, and after September 25th, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, the list of APIs is listed below:
 
 <details>
-  <summary>Expand to see the deprecations</summary>
-
-Java APIs:
+  <summary>Expand to see the Java API deprecations</summary>
 
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
@@ -146,19 +137,22 @@ Java APIs:
 * `org.bson`
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
+</details>
 
+<!--
 OSGi properties:
 
 * `org.apache.sling.commons.log.LogManager` (all properties)
 * `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
- 
-</details>
+* 
+
+-->
 
 ### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-The **Java 11 runtime*- is now deprecated, and most environments have already been upgraded to the more performant **Java 21 runtime**.
+The **Java 11 runtime* is now deprecated, and most environments have already been upgraded to the more performant **Java 21 runtime**.
 
-If your environment could not be upgraded due to unsupported dependencies (see [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), you should have received an email from Adobe with specific next steps. Please ensure all required updates are completed by **August 28, 2025**, so your environment can be upgraded without disruption.
+If your environment could not be upgraded due to unsupported dependencies (see [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), you should have received an email from Adobe with specific next steps. Please ensure all required updates are completed by **October 1st, 2025**, so your environment can be upgraded without disruption.
 
 Note: The runtime version is separate from your code's build version. While we recommend building with Java 21, Java 11 builds are still supported for now. A separate deprecation notice for Java 11 builds will be shared in the future.
 
@@ -166,7 +160,7 @@ Note: The runtime version is separate from your code's build version. While we r
 
 As noted in the April release notes, AEM Java logs must follow a standard format to ensure reliable monitoring across all customer environments. Custom log configurations—such as changes to log formatting, output files, or default log levels—are no longer supported. Logs must remain directed to the default files, and default log levels for AEM product code must be preserved. See full details in the [Logging article](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Starting in **late August**, any unsupported custom logging overrides will be ignored. Based on our analysis, most customers will not be impacted and Adobe has contacted customers whose current configuration may be affected.
+Starting on **September 25th**, any unsupported custom logging overrides will be ignored. Based on our analysis, most customers will not be impacted and Adobe has contacted customers whose current configuration may be affected.
 
 Please review and update any downstream processes that rely on custom logging behavior. For example:
 
