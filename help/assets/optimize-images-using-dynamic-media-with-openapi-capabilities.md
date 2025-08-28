@@ -52,7 +52,7 @@ The rendition is delivered to the user and cached at the CDN for fast subsequent
 1. Execute the steps in [Access remote assets in AEM Page Editor](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) section to use the Asset Selector panel for selecting an asset.
 1. In the asset selector panel, scroll down to **[!UICONTROL  Preset type]**, and specify `Preset=Preset Name` in the **[!UICONTROL Image Modifiers]** field.
 
-## Smart Imaging{use-smart-imaging-using-dynamic-media-with-openapi-capabilities}
+## Smart Imaging{#use-smart-imaging-using-dynamic-media-with-openapi-capabilities}
 
 [Smart imaging](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) automatically optimizes the image delivery to provide the best balance of visual quality, image size, and response time. This results in faster page loads, reduced bandwidth usage, and a consistently high-quality experience across devices and network conditions. Smart imaging includes the following capabilities:
 * [Auto Format Conversion](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=auto-format&t=request): Images are automatically converted to modern, web-optimized formats (such as AVIF or WebP) based on browser capabilities and customer entitlements, irrespective of the requested format. These formats provide better compression, thus making images smaller and faster to deliver and load. Learn more about [File format's impact on image delivery and rendering performance](https://web.dev/learn/performance/image-performance#file_formats).
