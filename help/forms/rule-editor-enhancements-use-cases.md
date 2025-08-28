@@ -142,7 +142,7 @@ At the form level, a rule is configured to listen for the **LoggedIn** event. Wh
 
 ![dispatch event rule](/help/forms/assets/dispatch-event-rule.png)
 
-When the user submits the form with correct credentials and a valid OTP, the login is successful, and the user is automatically redirected to their dashboard.
+When the user submits the form with correct credentials and a valid OTP, the login is successful, and the user is redirected to their dashboard.
 
 Support for custom events allowing developers to create and trigger custom events that can be used as conditions in rule editor.
 
