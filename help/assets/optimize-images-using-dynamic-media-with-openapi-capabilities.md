@@ -64,7 +64,7 @@ When auto-format is true (enabled), the system auto-optimizes and delivers AVIF 
 The quality parameter sets a fixed compression level for the output image, with values ranging from 1 to 100. A higher value results in better visual quality but a larger file size, while a lower value reduces file size and image quality. For example, setting quality=85 ensures the image is always delivered at 85 quality, regardless of network conditions. Learn more about the [quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request). 
 The max-quality parameter, on the other hand, enables adaptive delivery based on the client's network conditions. It defines the maximum allowed quality (1–100), but the actual delivered quality may be reduced below this value if the network is slow, ensuring faster load times. For instance, if max-quality=85 is specified, images are delivered at 85 quality on fast networks but at a lower quality on slower networks to optimize performance. Learn more about the [max-quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
 
-  For **Prime customers**, only the quality parameter is supported. The max-quality parameter is ignored. If quality is not specified, a default value of 80 is applied.
+  For **Prime customers**, only the quality parameter is supported. If quality is not specified, a default value of 80 is applied.
 
   For **Ultimate customers**:
   * If both quality and max-quality are specified, quality takes precedence.
