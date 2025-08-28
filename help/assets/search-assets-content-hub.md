@@ -150,11 +150,11 @@ To search for multiple assets at once, enter multiple values in a single query b
 
 To perform Bulk Search in the [!DNL Content Hub], execute the following steps:
 
-1. Once Bulk Search is [configured](configure-content-hub-ui-options.md#bulk-search-configuration), you can see Bulk Search toggle on the [!DNL Content Hub] filters pane which you configured. You can enable or disable it as per the requirement.
+1. Once Bulk Search is [configured](configure-content-hub-ui-options.md#bulk-search-configuration), you can see Bulk Search toggle on the [!DNL Content Hub] filter properties which you configured. You can enable or disable it as per the requirement.
 
 1. Add a search query containing delimiters that are specified in the configuration.
 
-In the example below, a bulk search is performed for various types of assets, including PNG, JPEG, XML, and TJPG."
+In the example below, a bulk search is performed for various types of assets, including `PNG`, `JPEG`, `XML`, and `TJPG`.
 
   ![Bulk Search UI](assets/bulk-search-ui.png)
 
