@@ -154,6 +154,8 @@ To perform Bulk Search in the [!DNL Content Hub], execute the following steps:
 
 1. Add a search query containing delimiters that are specified in the configuration.
 
+In the example below, a bulk search is performed for various types of assets, including PNG, JPEG, XML, and TJPG."
+
   ![Bulk Search UI](assets/bulk-search-ui.png)
 
 ## Do more with search {#do-more-with-search}
