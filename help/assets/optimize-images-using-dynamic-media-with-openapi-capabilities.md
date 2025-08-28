@@ -17,7 +17,7 @@ See the [Dynamic Media Image Profiles](https://experienceleague.adobe.com/en/doc
 
 The [!DNL Smart Crop] parameter expects that named-smartcrop-profiles exist and have been applied to the asset. See [Smart Crop profiles](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=smartcrop&t=request) to learn more about the [!DNL Smart Crop] parameter and how named [!DNL Smart Crop] profiles are applied.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 > You can create [!DNL Smart Crop] renditions only in the Admin view. 
 
