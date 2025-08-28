@@ -175,12 +175,12 @@ However, to optimize repository performance, purging will be enabled by default 
 
 #### Content Versions {#mt-content}
 
-* **New environments*- (created after an upcoming date (to be communicated later)
-  * Versions older than **30 days*- will periodically be deleted.
+* **New environments** (created after an upcoming date (to be communicated later)
+  * Versions older than **30 days** will periodically be deleted.
   * The most recent five versions within the last 30 days are retained, along with the most recent version and the current version, regardless of their age.
 
-* **Existing environments*- (created before this upcoming date):
-  * Versions older than **7 years*- will periodically be deleted.
+* **Existing environments** (created before this upcoming date):
+  * Versions older than **7 years** will periodically be deleted.
   * All versions within the past 7 years are retained.
   * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
 
@@ -188,12 +188,12 @@ However, to optimize repository performance, purging will be enabled by default 
 
 #### Audit Log {#mt-auditlogs}
 
-* **New environments*- (created after an upcoming date, which will be communicated separately):
-  * Replication, DAM, and page audit logs older than **7 days*- will periodically be deleted.
+* **New environments** (created after an upcoming date, which will be communicated separately):
+  * Replication, DAM, and page audit logs older than **7 days** will periodically be deleted.
   * All events are logged by default.
 
-* **Existing environments*- (created before this upcoming date):
-  * Replication, DAM, and page audit logs older than **7 years*- will periodically be deleted.
+* **Existing environments** (created before this upcoming date):
+  * Replication, DAM, and page audit logs older than **7 years** will periodically be deleted.
   * All events are logged by default.
   * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
 
