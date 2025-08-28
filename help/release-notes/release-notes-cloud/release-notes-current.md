@@ -110,10 +110,6 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
   
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Principal View for Permissions Management {#principal-view}
-
-AEM introduces Permissions Management for Users and Groups. The main functionality remains the same as the classic UI, but is more user-friendly and efficient. See the [dedicated article](/help/security/touch-ui-principal-view.md) for further information.
-
 ### Upcoming Java API Deprecations {#java-api-deprecation}
 
 Several deprecated APIs are targeting removal on August 31st and thus should no longer be referenced. In early September, Action Center notifications will be sent if API usage is detected, and after September 25th, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, the list of APIs is listed below:
@@ -167,41 +163,7 @@ Please review and update any downstream processes that rely on custom logging be
 * If your log forwarding system expects a custom log format, you may need to adjust your ingestion rules.
 * If you've previously reduced log verbosity by changing log levels, please note that reverting to default levels may increase log volume.
 
-### Default Purging of Older Versions and Audit Logs {#mt-defaults}
-
-Currently, content versions and audit logs have their associated *purge maintenance tasks- disabled by default and thus no data is removed unless explicitly configured. 
-
-However, to optimize repository performance, purging will be enabled by default at a future announced date, following these guidelines:
-
-#### Content Versions {#mt-content}
-
-* **New environments** (created after an upcoming date (to be communicated later)
-  * Versions older than **30 days** will periodically be deleted.
-  * The most recent five versions within the last 30 days are retained, along with the most recent version and the current version, regardless of their age.
-
-* **Existing environments** (created before this upcoming date):
-  * Versions older than **7 years** will periodically be deleted.
-  * All versions within the past 7 years are retained.
-  * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
-
-* You may modify these defaults through YAML configuration, deployed using the config pipeline.
-
-#### Audit Log {#mt-auditlogs}
-
-* **New environments** (created after an upcoming date, which will be communicated separately):
-  * Replication, DAM, and page audit logs older than **7 days** will periodically be deleted.
-  * All events are logged by default.
-
-* **Existing environments** (created before this upcoming date):
-  * Replication, DAM, and page audit logs older than **7 years** will periodically be deleted.
-  * All events are logged by default.
-  * This high default threshold prevents unintended removal of recent data. However, it is recommended to configure lower values to optimize repository performance.
-
-* You may modify these defaults through YAML configuration, deployed using the config pipeline.
-
-For more details, see the [Maintenance Tasks article](/help/operations/maintenance.md#defaults).
-
-### Edge Computing (Alpha Program) {#edge-computing}
+### Edge Computing (Beta Program) {#edge-computing}
 
 Edge computing allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
 
