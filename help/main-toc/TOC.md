@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2025 {#2025}
+      + [Release Notes for 2025.7.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-7-0.md) 
       + [Release Notes for 2025.6.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-6-0.md) 
       + [Release Notes for 2025.5.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md) 
       + [Release Notes for 2025.4.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-4-0.md) 
@@ -846,6 +847,7 @@ user-guide-title: AEM as a Cloud Service
           + [Using asynchronous functions in an Adaptive Form](/help/forms/using-async-funct-in-rule-editor.md)
           + [Invoke Service enhancements in the Visual Rule Editor for forms based on Core Components](/help/forms/invoke-service-enhancements-rule-editor.md)
           + [Rule Editor Enhancements](/help/forms/rule-editor-enhancements-use-cases.md)
+          + [API Integration in Rule Editor](/help/forms/api-integration-in-rule-editor.md)
         + Introduction to Custom Functions for Adaptive Forms based on Core Components{#create-and-use-custom-function-core-component}
           + [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md)
           + [Create and use a Custom Function for an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md)
@@ -952,7 +954,6 @@ user-guide-title: AEM as a Cloud Service
     + [Create an interactive communication fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
     + [Introduction to interactive communication](/help/forms/introduction-to-interactive-communication.md)
     + [Create your first Interactive Communication](/help/forms/create-your-first-communication.md)
-    + [Generate AFP Output Using the AEM Forms API](/help/forms/document-generation-afp-api.md)
     + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
   + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
@@ -965,6 +966,7 @@ user-guide-title: AEM as a Cloud Service
     + [Introduction to Communications APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
     + [Communications APIs - Synchronous processing](/help/forms/aem-forms-cloud-service-communications.md)
     + [Communications APIs - Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+    + [Generate AFP Output Using the AEM Forms API](/help/forms/document-generation-afp-api.md)
     + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
     + [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
     + [Changing Page Zero content in Designer](/help/forms/changing-page-zero-content-designer.md)
@@ -987,6 +989,7 @@ user-guide-title: AEM as a Cloud Service
     + [Dispatcher and CDN caching](/help/forms/troubleshooting-caching-performance.md)
     + [Restarting AEM SDK](/help/forms/restart-aem-sdk.md)
     + [Resolving Forms creation failures](/help/forms/form-creation-failing.md)
+    + [502 Error Page in Custom Submit Action](/help/forms/custom-submit-action-troubleshooting.md)
 + Screens {#screens-as-cloud-service}
   + Overview to Screens as a Cloud Service {#overview}
     + [Introduction](/help/screens-cloud/introduction/introduction.md)
