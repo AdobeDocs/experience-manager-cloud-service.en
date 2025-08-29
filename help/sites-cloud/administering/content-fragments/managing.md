@@ -129,6 +129,18 @@ The main/right panel (table view) of the console provides a range of information
 
     ![Content Fragments console - Language dialog](assets/cf-managing-console-languages-dialog.png)
 
+* **Workflows**
+
+  * Information only
+
+  * Select the icon for a specific fragment: 
+
+    ![Content Fragments console - Workflows icon](assets/cf-managing-console-workflows-icon.png)
+
+    To open a dialog with detailed information about workflows (past and current) for the fragment.:
+
+    ![Content Fragments console - Workflows dialog](assets/cf-managing-console-workflows-dialog.png)
+
 ## Actions {#actions}
 
 Within the console there is a range of actions that you can use, either directly, or after selecting a specific fragment:
@@ -240,6 +252,7 @@ To open your fragment for editing:
 
 ## Copy a Content Fragment {#copy-a-content-fragment}
 
+<!--
 **Copy** creates a copy of the selected fragment at its location.
 
 * In the **Copy** action you can select whether to **Copy with children** (referenced fragments). This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
@@ -282,10 +295,10 @@ FolderC
     | 
     |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
 ```
+-->
 
 <!-- CQDOC-22785 - will replace above text -->
 
-<!--
 **Copy** creates a copy of the selected fragment at its location.
 
 * In the **Copy** action you can select whether to **Copy also referenced content fragments**. This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
@@ -382,7 +395,6 @@ FolderC
    |___./Copy_of_FragmentB (referenced by FragmentA)
    Copy_of_FragmentB
 ```
--->
 
 ## View and Manage Tags {#manage-tags}
 
