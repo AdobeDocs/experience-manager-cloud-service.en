@@ -85,6 +85,7 @@ AVIF and WEBP formats provide better compression, making images smaller and fast
     * ***WEBP***: used if AVIF is not supported or licensed.
     * ***JPEG***: delivered only when AVIF and WEBP are unsupported, and the image has no alpha channel (transparency).
   </br>
+  
   * **Auto demotion:** Disable the default auto-format conversion by setting the `auto-format` query parameter to `false`. This delivers the image in the requested format.
   </br>
 
