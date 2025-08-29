@@ -87,7 +87,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
    
 1. **The `/.rum` path is blocked on my site, how should I fix?**
 
-   The `/.rum` path is required for Operational Telemetry collection to work. If you use a CDN in front of Adobe's AEM as a Cloud Service, ensure that the `/.rum` path forwards to the same AEM origin as your other AEM content. And, ensure that it is not adjusted in any way.
+   The `/.rum` path is required for Operational Telemetry collection to work. If you use a CDN in front of Adobe's AEM as a Cloud Service, ensure that the `/.rum` path forwards to the same AEM origin as your other AEM content. And, ensure that it is not adjusted in any way. Alternatively, you can change the host to be used for Operational Telemetry to `rum.hlx.page` by [setting an environment variable in Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables) named `AEM_OPTEL_EXTERNAL` to the value `true`. If you want to change back to same domain requests at a later point, simply remove that environment variable again.
    
 1. **Does Operational Telemetry collection count toward content requests for contractual purposes?**
 
@@ -97,4 +97,4 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    Adobe recommends using the Operational Telemetry due to its significant benefits and that it will allow Adobe to help you optimize your digital experiences by improving website performance. The service is designed to be seamless and has no impact on your website's performance.
 
-   Opting out may mean missing out a chance to improve traffic engagement on your website. However, if you encounter any issues, contact Adobe Support.
+   Opting out may mean missing out a chance to improve traffic engagement on your website. However, if you encounter any issues, you can disable Operational Telemetry by [setting an environment variable in Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables) named `AEM_OPTEL_DISABLED` to the value `true`. If you want to enable Operational Telemetry again at a later point, simply remove that environment variable again.
