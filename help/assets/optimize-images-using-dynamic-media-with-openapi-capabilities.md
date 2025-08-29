@@ -68,51 +68,47 @@ Execute the following steps to use image presets in your authoring page:
 
 ## Smart Imaging{#use-smart-imaging-using-dynamic-media-with-openapi-capabilities}
 
-[Smart imaging](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) automatically optimizes the image delivery to provide the best balance of visual quality, image size, and response time. This results in faster page loads, reduced bandwidth usage, and a consistently high-quality experience across devices and network conditions. [!DNL Smart Imaging] includes the following capabilities:
+When you use [!DNL Dynamic Media with OpenAPI capabilities] for image delivery, images are automatically optimized through [Smart imaging](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/). Optimized delivery ensures images load faster, maintain maximum visual quality, and have minimal file size. This results in the fastest page loads and consistently high visual quality across devices and networks, while consuming minimal bandwidth, making your website faster and more responsive.
 
-* [Auto Format Conversion](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=auto-format&t=request): [!DNL Dynamic Media with OpenAPI] converts images to modern, web-optimized formats including AVIF or WEBP automatically based on browser capabilities and [license-entitlement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate), irrespective of the requested format. AVIF and WEBP formats provide better compression, making images smaller and faster to deliver and load.
-[!DNL DM with OpenAPI] uses AVIF as the default format. AVIF handles all the browser capabilities. 
+[!DNL Smart Imaging] includes the following capabilities:
+
+* [Auto Format Conversion](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=auto-format&t=request)
+[!DNL Dynamic Media with OpenAPI] automatically converts images to modern, web-optimized formats such as AVIF or WEBP. The conversion depends on the browser's capabilities and [license-entitlement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate), regardless of the requested format.
+AVIF and WEBP formats provide better compression, making images smaller and faster to deliver and load. AVIF is used as the default format as it handles all the browser capabilities. 
 [!DNL Dynamic Media with OpenAPI] uses the `auto-format` query parameter to control the behaviour of browser for coverting an image to various formats.
 
-**Auto promotion:** By default the `auto-format` query parameter is set to `true`. When `auto-format` is `true`, the requested format is ignored and a web-optimized format(AVIF or WEBP) based on image-characteristics, browser capabilities, and [license-entitlement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate) is selected automatically. 
 
-When auto-format is true (enabled), the system auto-optimizes and delivers AVIF if supported (and licensed), otherwise delivers WEBP. JPEG is delivered only when the browser doesn't support AVIF or WEBP and the image doesn't have an alpha channel (transparency).
+  * **Auto promotion:**  By default, the `auto-format` query parameter is set to `true`. When `auto-format` is enabled (true), the system ignores the requested format and automatically selects a web-optimized format (AVIF or WEBP) based on image characteristics, browser capabilities, and [license-entitlement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate).
 
-**Auto demotion:** The user can disable the default setting for auto format conversion and set the `auto-format` query parameter to `false`.
+    When `auto-format` is enabled, the system delivers the image format in the following sequence:
+    * ***AVIF***: delivered if the browser supports it and the license allows it.
+    * ***WEBP***: used if AVIF is not supported or licensed.
+    * ***JPEG***: delivered only when AVIF and WEBP are unsupported, and the image has no alpha channel (transparency).
+  </br>
+  * **Auto demotion:** Disable the default auto-format conversion by setting the `auto-format` query parameter to `false`. This delivers the image in the requested format.
+  </br>
 
-</br>
+* **Network bandwidth optimisation**
+Images are automatically optimized based on the client's network conditions to ensure faster delivery and smooth loading. The `quality` and `max-quality` parameters control image compression levels, with values ranging from 1 to 100.
 
-* **Automatic Quality Adjustment**: Image quality-factor is automatically applied based on the client's network conditions, ensuring faster image delivery and loading under all conditions.
+  * **Quality parameter**: Following are the key aspects of quality parameter:
+    * Delivers the best possible image quality, regardless of load time.
+    * Prioritizes image quality over loading speed.
+    * Uses a fixed compression level between 1 to 100 for the output image.
+    * Learn more about the [quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
+    </br>
+  * **Max-quality parameter**: Balances image quality and load time based on the client's network speed. Following are the key aspects of max-quality parameter: 
 
-  * **Quality parameter**: The quality parameter ensures the best image quality, regardless of load time, on the client's current network speed.
-  The quality parameter sets a fixed compression level for the output image, with values ranging from 1 to 100. 
-  Learn more about the [quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
+    * ***Prioritizes load time***: Reduces image quality when the network is slow to speed up delivery.
+    * ***Maintains best quality***: Even when reduced, the image quality is still the highest possible between 1 to 100 for the client's current network speed.
+    * Learn more about the [max-quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
 
-  * **Max-quality parameter**: The max-quality parameter enables faster image delivery while ensuring the best possible quality based on the client's current network speed. It has the following key properties:
-    * ***Prioritizes load time***: It reduces image quality when the network is slow to load images faster.
-    * ***Maintains best quality***: Even when reduced, the image quality is still the highest allowed between 1–100 for that network speed.
-    
-    Learn more about the [max-quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
-
-  The following summarizes both the parameters:
+Following are the key behaviors of the `quality` and `max-quality `parameters:
 
   * If both [!DNL quality] and [!DNL max-quality] are specified, [!DNL quality] takes precedence.
-  * If only [!DNL quality] is specified, the quality is delivered regardless of load time for an existing network speed.
-  * If only [!DNL max-quality] is specified, the output quality dynamically adjusts based on network conditions, capped at the [!DNL max-quality] value.
-  * If neither is specified, the system applies dynamic optimization with a default max-quality of 85.
-
----
-
-
-
-
-
-A higher value results in better visual quality but a larger file size, while a lower value reduces file size and image quality. For example, setting quality=85 ensures that the image is always delivered at 85 quality, regardless of network conditions. Learn more about the [quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request). 
-The max-quality parameter, on the other hand, enables adaptive delivery based on the client's network conditions. It defines the maximum allowed quality (1–100), but the actual delivered quality may be reduced below this value if the network is slow, ensuring faster load times. For instance, if max-quality=85 is specified, images are delivered at 85 quality on fast networks but at a lower quality on slower networks to optimize performance. Learn more about the [max-quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
-  
-  * If both [!DNL quality] and [!DNL max-quality] are specified, [!DNL quality] takes precedence.
-  * If only [!DNL quality] is specified, that value is used.
-  * If only [!DNL max-quality] is specified, the output quality dynamically adjusts based on network conditions, capped at the [!DNL max-quality] value.
+  * If only [!DNL quality] is specified, the quality is delivered regardless of load time based on network speed.
+  * If only [!DNL max-quality] is specified, the image quality adjusts automatically based on network conditions, delivering the best possible quality up to the specified [!DNL max-quality] value.
   * If neither is specified, the system applies dynamic optimization with a default max-quality of 85.
 
 
+ 
