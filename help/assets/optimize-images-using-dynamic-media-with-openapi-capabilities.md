@@ -45,9 +45,10 @@ See [managing Image Presets](https://experienceleague.adobe.com/en/docs/experien
 
 After creating the [!DNL Image Presets], you can use them for the following workflows:
 
-* **[Use presets in image delivery URL to create its renditions on-the-fly before delivering it to the end user](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/linking-urls-to-yourwebapplication)**  
-Presets make your delivery URLs shorter and easier to use.  Each preset name serves as a unique identifier in the delivery URL. Instead of adding multiple modifiers to an asset's delivery URL, reference the preset name to generate its rendition instantly. [Learn to appply Dynamic Media Image Presets to your image](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets).
-The following example compares a URL with a preset to a URL without a preset.
+* **[Use presets in image delivery URL to create its renditions on-the-fly before delivering it to the end user](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/linking-urls-to-yourwebapplication)** 
+
+  Presets make your delivery URLs shorter and easier to use.  Each preset name serves as a unique identifier in the delivery URL. Instead of adding multiple modifiers to an asset's delivery URL, reference the preset name to generate its rendition instantly. [Learn to appply Dynamic Media Image Presets to your image](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets).
+  The following example compares a URL with a preset to a URL without a preset.
 
   **URL without a preset (long URL)**:
 
@@ -59,12 +60,13 @@ The following example compares a URL with a preset to a URL without a preset.
 The preset thumbnail bundles the same image modifier settings.
     </br>
 * **Use presets during authoring in AEM Sites**
-Authors can select [!DNL Image Presets] during page editing in [!DNL AEM Sites] authoring page when [!DNL Dynamic Media] support is enabled. 
-Execute the following steps to use image presets in your authoring page:
+
+  Authors can select [!DNL Image Presets] during page editing in [!DNL AEM Sites] authoring page when [!DNL Dynamic Media] support is enabled. 
+  Execute the following steps to use image presets in your authoring page:
   1. Navigate to your Sites authoring page. 
   1. Execute the steps in [Access remote assets in AEM Page Editor](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) section to use the [!DNL Asset Selector] panel for selecting an asset.
   1. In the [!DNL asset selector] panel, scroll down to **[!UICONTROL  Preset type]**, and specify `Preset=Preset Name` in the **[!UICONTROL Image Modifiers]** field.
-![preset](/help/assets/assets/preset-in-asset-selector-panel.png)
+  ![preset](/help/assets/assets/preset-in-asset-selector-panel.png)
 
 ## Smart Imaging{#use-smart-imaging-using-dynamic-media-with-openapi-capabilities}
 
@@ -74,9 +76,9 @@ When you use [!DNL Dynamic Media with OpenAPI capabilities] for image delivery, 
 
 * [Auto Format Conversion](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=auto-format&t=request)
 
-[!DNL Dynamic Media with OpenAPI] automatically converts images to modern, web-optimized formats such as AVIF or WEBP. The conversion depends on the browser's capabilities and [license-entitlement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate), regardless of the requested format.
-AVIF and WEBP formats provide better compression, making images smaller and faster to deliver and load. AVIF is used as the default format as it handles all the browser capabilities. 
-[!DNL Dynamic Media with OpenAPI] uses the `auto-format` query parameter to control the behaviour of browser for coverting an image to various formats.
+  [!DNL Dynamic Media with OpenAPI] automatically converts images to modern, web-optimized formats such as AVIF or WEBP. The conversion depends on the browser's capabilities and [license-entitlement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate), regardless of the requested format.
+  AVIF and WEBP formats provide better compression, making images smaller and faster to deliver and load. AVIF is used as the default format as it handles all the browser capabilities. 
+  [!DNL Dynamic Media with OpenAPI] uses the `auto-format` query parameter to control the behaviour of browser for coverting an image to various formats.
 
 
   * **Auto promotion:**  By default, the `auto-format` query parameter is set to `true`. When `auto-format` is enabled (true), the system ignores the requested format and automatically selects a web-optimized format (AVIF or WEBP) based on image characteristics, browser capabilities, and [license-entitlement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate).
@@ -92,7 +94,7 @@ AVIF and WEBP formats provide better compression, making images smaller and fast
 
 * **Network bandwidth optimisation**
 
-Images are automatically optimized based on the client's network conditions to ensure faster delivery and smooth loading. The `quality` and `max-quality` parameters automatically adjusts the quality by controlling the image compression levels, with values ranging from 1 to 100.
+  Images are automatically optimized based on the client's network conditions to ensure faster delivery and smooth loading. The `quality` and `max-quality` parameters automatically adjusts the quality by controlling the image compression levels, with values ranging from 1 to 100.
 
   * **Quality parameter**: Following are the key aspects of quality parameter:
     * Delivers the best possible image quality, regardless of load time.
