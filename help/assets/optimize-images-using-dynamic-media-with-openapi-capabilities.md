@@ -73,6 +73,7 @@ When you use [!DNL Dynamic Media with OpenAPI capabilities] for image delivery, 
 [!DNL Smart Imaging] includes auto format conversion and network bandwidth optimisation for optimized image delivery. See the following to learn more about these capabilities:
 
 * [Auto Format Conversion](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=auto-format&t=request)
+
 [!DNL Dynamic Media with OpenAPI] automatically converts images to modern, web-optimized formats such as AVIF or WEBP. The conversion depends on the browser's capabilities and [license-entitlement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate), regardless of the requested format.
 AVIF and WEBP formats provide better compression, making images smaller and faster to deliver and load. AVIF is used as the default format as it handles all the browser capabilities. 
 [!DNL Dynamic Media with OpenAPI] uses the `auto-format` query parameter to control the behaviour of browser for coverting an image to various formats.
@@ -90,6 +91,7 @@ AVIF and WEBP formats provide better compression, making images smaller and fast
   </br>
 
 * **Network bandwidth optimisation**
+
 Images are automatically optimized based on the client's network conditions to ensure faster delivery and smooth loading. The `quality` and `max-quality` parameters automatically adjusts the quality by controlling the image compression levels, with values ranging from 1 to 100.
 
   * **Quality parameter**: Following are the key aspects of quality parameter:
