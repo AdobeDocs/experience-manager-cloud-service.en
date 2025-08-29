@@ -11,7 +11,7 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 
 ## Smart Crop{#smart-crop-using-dynamic-media-with-openapi-capabilities}
 
-[!DNL Smart Crop] is a dynamic sizing capability of [!DNL Dynamic Media] (DM), also available in [DM with OpenAPIs for Ultimate users](/help/assets/dynamic-media/dm-prime-ultimate.md). [!DNL Smart Crop] is an advanced image processing technique that uses AI-powered content-aware cropping to intelligently crop images for various screen sizes while preserving the visual context in cropped versions. The AI analyses the image to identify the focal point or intended point of interest, and then automatically crops the image to retain the focal point in all the cropped versions. [!DNL Smart Crop], a key element of responsive design, provides a cost-effective and time-efficient way to crop images. 
+[!DNL Smart Crop] is a dynamic sizing capability of [[!DNL Dynamic Media with OpenAPI capabilities]](/help/assets/dynamic-media/dm-prime-ultimate.md). [!DNL Smart Crop] is an advanced image processing technique that uses AI-powered content-aware cropping to intelligently crop images for various screen sizes while preserving the visual context in cropped versions. The AI analyses the image to identify the focal point or intended point of interest, and then automatically crops the image to retain the focal point in all the cropped versions. [!DNL Smart Crop], a key element of responsive design, provides a cost-effective and time-efficient way to crop images. 
 
 See the [Dynamic Media Image Profiles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles) article to learn how to [create Smart Crop renditions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#creating-image-profiles) in [!DNL Admin View], [apply them to folders](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#applying-an-image-profile-to-folders), or [edit renditions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#editing-the-smart-crop-or-smart-swatch-of-a-single-image) already applied to an image or a folder. Learn to create a [!DNL Smart Crop] step by step in this [video](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
@@ -23,36 +23,47 @@ The [!DNL Smart Crop] parameter expects that named-smartcrop-profiles exist and 
 
 ## Image presets{#image-presets-using-dynamic-media-with-openapi-capabilities}
 
-Transform images on the fly using [!DNL Image Presets] in [!DNL Dynamic Media (DM)]. [!DNL Image preset] capability is also available in [DM with OpenAPIs for Ultimate users](/help/assets/dynamic-media/dm-prime-ultimate.md). An [image preset](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=preset&t=request) is a predefined set of sizing and formatting rules for an output image.
-[!DNL Dynamic Media with OpenAPI capabilities] uses preset names to transform an image on the fly and generate its rendition instantly. When you request an image through a [!DNL Dynamic Media with OpenAPI] delivery URL that includes a preset parameter, [!DNL DM with OpenAPI] applies the preset's transformations, creates the rendition on demand, and delivers it to the user.
-You can apply a single preset to multiple images through their [!DNL Dynamic Media with OpenAPI] delivery URLs. This ensures consistent formatting across assets without manually editing each one.
+Transform images on the fly using [!DNL Image Presets] capability in [[!DNL Dynamic Media with OpenAPI capabilities]](/help/assets/dynamic-media/dm-prime-ultimate.md). An [image preset](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=preset&t=request) is a predefined set of sizing and formatting rules for an output image.
 
-[!DNL Image Presets] provide several advantages for managing and delivering images in [!DNL Dynamic Media with OpenAPI]. Some of the key benefits include the following:
-* Simplifies image delivery by replacing long image-serving instructions in URLs with a single preset, ensuring shorter URLs, easier management, and consistent delivery across websites, mobile apps, emails, and other channels.
-* Saves time and storage by eliminating the need for multiple static renditions. A single high-resolution master file generates renditions dynamically, reducing effort and storage use.
-* Ensures consistency by applying the same formatting rules, such as sizing, sharpening, and quality, across all images for a uniform, brand-specific presentation across all channels.
-* Scales easily by applying a preset to large sets of assets at once, avoiding manual edits and maintaining a consistent appearance.
-* Centralizes management so that updating a preset's parameters automatically updates every image using that preset, without modifying individual assets or web code.
-* Improves efficiency and performance with dynamic renditions cached by the CDN, resulting in faster loading and optimized performance across devices and networks.
-* Supports responsive design by automatically adapting images for different screen sizes or container dimensions, delivering optimized experiences across devices.
-* Enhances creative flexibility by enabling quick experimentation with styles, effects, or adjustments (such as brightness, contrast, or saturation) without manual changes each time.
+[!DNL Dynamic Media with OpenAPI capabilities] uses preset names to transform an image on the fly and generate its rendition instantly. When you request an image through a [!DNL Dynamic Media with OpenAPI] delivery URL that includes a preset parameter, [!DNL DM with OpenAPI] applies the preset's transformations, creates the rendition on demand, and delivers it to the user.
+
+You can apply a single preset to multiple images through their [!DNL Dynamic Media with OpenAPI] delivery URLs. This ensures consistent formatting across assets without manually editing each one.
 
 See [managing Image Presets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets) article to learn [how to create image presets in Admin View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-image-presets), and [how to create responsive image presets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-a-responsive-image-preset) that automatically adapt assets to fit different screen sizes.
 
-### Use Image presets{#use-image-presets-using-dynamic-media-with-openapi-capabilities} 
+### Benefits of using Image presets{#benefits-of-image-presets}
+
+[!DNL Image Presets] provide several advantages for managing and delivering images in [!DNL Dynamic Media with OpenAPI]. Some of the key benefits include the following:
+
+* Presets make URLs shorter. Instead of adding multiple image modifiers that make the delivery URL longer, use a single preset. Shorter URLs are easier to manage and ensure consistent image delivery across websites, mobile apps, emails, and other channels.
+* Image presets create just-in-time renditions from a source image file. This on-demand rendition generation capability eliminates the need to create and store multiple static renditions of the same file, saving both time and storage.
+* Apply a single preset to a large set of assets at once, avoiding manual edits to each asset individually, ensuring consistent formatting, and enabling scalability.
+* When you update a preset's parameters, all images using that preset are updated automatically. This streamlines management by centralizing updates without the need to modify individual assets or web code.
+* Improves efficiency and performance with dynamic renditions cached by the CDN, resulting in faster loading and optimized performance across devices and networks.
+
+### Use Image presets{#use-image-presets-using-dynamic-media-with-openapi-capabilities}
 
 After creating the [!DNL Image Presets], you can use them for the following workflows:
 
-[Use presets in image delivery URL to create its renditions on-the-fly before delivering it to the end user](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/linking-urls-to-yourwebapplication):  Each preset name serves as a unique identifier. When an image is requested via its [!DNL Dynamic Media with OpenAPI] delivery URL with an [!DNL Image Preset], [!DNL DM with OpenAPI] generates the rendition instantly by applying sizing, formatting, sharpening, or color adjustments as defined in the preset. The system then delivers this formatted image dynamically and caches it via CDN for future fast retrieval. This eliminates the need for pre-generated files and enables responsive, optimised delivery across devices. See [Apply Dynamic Media Image Presets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets) article to learn how to generate on-the-fly image renditions via URL using the predefined presets. Instead of using a long query string in the asset URL for creating a rendition type, reference the preset name for that rendition in the URL to make the URL shorter, easier and simpler to generate the rendition. For example, instead of using long image modifier, such as in this URL: `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:393d5579-5be2-49a5-ac5f-8fed72bfb614/as/AdobeStock_63266433.avif?width=400&height=300&fit=crop&qlt=85&op_sharpen=1`, for dynamically modifying the image, you can use the preset thumbnail in the URL: `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:393d5579-5be2-49a5-ac5f-8fed72bfb614/as/AdobeStock_63266433.avif?req=img&preset=thumbnail`. The preset thumbnail bundles the same image modifier settings. 
-The rendition is delivered to the user and cached at the CDN for fast subsequent requests for all future requests.
+* **[Use presets in image delivery URL to create its renditions on-the-fly before delivering it to the end user](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/linking-urls-to-yourwebapplication)**:  
+Presets make your delivery URLs shorter and easier to use.  Each preset name serves as a unique identifier in the delivery URL. Instead of adding multiple modifiers to an asset's delivery URL, reference the preset name to generate its rendition instantly.
+The following example compares a URL with a preset to a URL without a preset.
 
-**Use presets during authoring in AEM Sites**: Authors can select [!DNL Image Presets] during page editing in [!DNL AEM Sites] authoring page when [!DNL Dynamic Media] support is enabled. Execute the following steps to use image presets in your authoring page:
+  **URL without a preset (long URL)**:
 
-1. Navigate to your Sites authoring page. 
-1. Execute the steps in [Access remote assets in AEM Page Editor](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) section to use the [!DNL Asset Selector] panel for selecting an asset.
-1. In the [!DNL asset selector] panel, scroll down to **[!UICONTROL  Preset type]**, and specify `Preset=Preset Name` in the **[!UICONTROL Image Modifiers]** field.
+  `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:393d5579-5be2-49a5-ac5f-8fed72bfb614/as/AdobeStock_63266433.avif?width=400&height=300&fit=crop&qualit=85&sharpen=true`
 
-   ![preset](/help/assets/assets/preset-in-asset-selector-panel.png)
+  **URL with a preset (short URL)**: 
+
+  `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:393d5579-5be2-49a5-ac5f-8fed72bfb614/as/AdobeStock_63266433.avif?preset=thumbnail`
+The preset thumbnail bundles the same image modifier settings. [Learn to appply Dynamic Media Image Presets to your image](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets).
+
+* **Use presets during authoring in AEM Sites**: Authors can select [!DNL Image Presets] during page editing in [!DNL AEM Sites] authoring page when [!DNL Dynamic Media] support is enabled. 
+Execute the following steps to use image presets in your authoring page:
+  1. Navigate to your Sites authoring page. 
+  1. Execute the steps in [Access remote assets in AEM Page Editor](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) section to use the [!DNL Asset Selector] panel for selecting an asset.
+  1. In the [!DNL asset selector] panel, scroll down to **[!UICONTROL  Preset type]**, and specify `Preset=Preset Name` in the **[!UICONTROL Image Modifiers]** field.
+![preset](/help/assets/assets/preset-in-asset-selector-panel.png)
 
 ## Smart Imaging{#use-smart-imaging-using-dynamic-media-with-openapi-capabilities}
 
