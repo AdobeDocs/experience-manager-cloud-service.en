@@ -16,7 +16,7 @@ These are the release notes for the 4 September 2025 release of the Universal Ed
 
 ## What's New {#what-is-new}
 
-* New features for [RTE early adopters](#new-rte)
+* Copy and paste is available for [early adopters](#copy-paste)
 
 ## Early Adoption Features {#early-adopter}
 
@@ -33,9 +33,14 @@ Undo and redo is now available to Universal Editor content authors.
 * This includes edits done in context, edits done via the Properties panel, as well as adding (or duplicating), moving, and deleting blocks.
 * Undo and redo is limited to the current browser session.
 
+### Copy/Paste {#copy-paste}
+
+Copy and pasting of components within the same page is now available to content authors.
+
 ## Other Improvements {#other-improvements}
 
-
+* The styling of the editor toolbar has been updated to align better with the upcoming new RTE.
+* The filters in the asset picker dialog have been restored.
 
 ## Deprecations {#deprecations}
 
