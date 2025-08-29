@@ -57,7 +57,7 @@ The following example compares a URL with a preset to a URL without a preset.
 
   `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:393d5579-5be2-49a5-ac5f-8fed72bfb614/as/AdobeStock_63266433.avif?preset=thumbnail`
 The preset thumbnail bundles the same image modifier settings.
-</br>
+    </br>
 * **Use presets during authoring in AEM Sites**
 Authors can select [!DNL Image Presets] during page editing in [!DNL AEM Sites] authoring page when [!DNL Dynamic Media] support is enabled. 
 Execute the following steps to use image presets in your authoring page:
