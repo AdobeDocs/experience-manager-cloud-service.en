@@ -4,8 +4,8 @@ description: Learn how to identify and resolve 502 error pages that occur when u
 feature: Adaptive Forms, Core Components
 role: Developer
 level: Intermediate
+exl-id: a7469926-7059-4aca-90ff-2554d14c3944
 ---
-
 # Troubleshooting: 502 Error Page in Custom Submit Action  
 
 When working with Adaptive Forms (Core Components), you may encounter a **502 error page HTML** after submitting a form that uses a custom submit action.  
