@@ -75,6 +75,8 @@ Create Vanity URLs for asset delivery in DM with OpenAPI, replacing long system-
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
+### New features in AEM Forms {#forms-new-features}
+
 * [Date & Time Input Component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component): A Date & Time component is now available, enabling users to select both date and time using a calendar and clock interface, or by manually entering values in a supported format.
 * [Enhanced Error Handling for File Uploads](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): The File Attachment component now automatically validates the uploaded file type against the allowed list. If a user uploads a file in an unsupported format, the form displays an error during submission. The component also checks the file content to validate its type, enhancing the overall security of the form.
 * [Specified Error Response for Custom Submit Action](/help/forms/custom-submit-action-troubleshooting.md): When a custom submit action encounters an unhandled error, error code 502 is returned. This helps identify that the issue is related to the custom submit action, making debugging easier.
