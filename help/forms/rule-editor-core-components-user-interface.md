@@ -225,6 +225,17 @@ You can write a combined rule to control visibility of the Spouse Salary field a
 
 +++
 
+### Handling Broken Rules
+
+Rules may sometimes break if a referenced field is moved or deleted. When this happens, the Rule Editor marks the affected rule with a red dot indicator.
+
+* When a field is moved (for example, from one panel to another), the associated rule may break. In this case, open the rule and save it again. The rule is automatically restored.
+
+* When a field is deleted, the rule cannot be repaired.
+
+   To understand the issue, hover over the rule status in the Rule Editor to view the error message.
+
+   ![Broken Rules](/help/forms/assets/rule-editor-broken-rules.png)
 
 <!-- ### Using code editor {#using-code-editor}
 
