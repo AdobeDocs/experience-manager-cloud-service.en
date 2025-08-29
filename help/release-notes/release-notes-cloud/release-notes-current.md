@@ -22,7 +22,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.8.0) is August 28, 2025. The next feature release (2025.9.0) is planned for September 25, 2025.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.9.0) is September 25, 2025. The next feature release (2025.10.0) is planned for October 30, 2025.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -37,14 +37,6 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 >[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
-
-## Experience Hub {#experience-hub}
-
-The [Experience Hub](/help/experience-hub.md) is your centralized starting point for accessing all AEM capabilities. It is personalized based on your user persona and the licenses available to you, enabling each user to accomplish their outcomes efficiently.
-
-## AI Assistant in AEM {#AI-assistant}
-
-The [AI Assistant](/help/implementing/cloud-manager/ai-assistant-in-aem.md) for AEM offers a conversational interface designed to get you instant answers to your AEM product-related questions (*available to all users*) and automate support ticket creation (*available to Support Admins*). It is directly embedded in AEM and accessible from AEM Experience Hub, Cloud Manager, and Author UI.
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
