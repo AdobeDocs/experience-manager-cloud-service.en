@@ -5,8 +5,8 @@ feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 keywords: integrating API in rule editor, invoke service enhancements
+exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
 ---
-
 # Integrating API in Rule Editor
 
 <span>Integrating API in Rule Editor is under Early Adopter Program. You can write to `aem-forms-ea@adobe.com` from your official email id to join the early adopter program and request access to the capability.</span>
