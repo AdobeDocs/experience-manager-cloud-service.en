@@ -75,30 +75,30 @@ Create Vanity URLs for asset delivery in DM with OpenAPI, replacing long system-
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* **Date & Time Input Component**: A Date & Time component is now available, enabling users to select both date and time using a calendar and clock interface, or by manually entering values in a supported format.
+* [Date & Time Input Component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component): A Date & Time component is now available, enabling users to select both date and time using a calendar and clock interface, or by manually entering values in a supported format.
 * [Enhanced Error Handling for File Uploads](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab): The File Attachment component now automatically validates the uploaded file type against the allowed list. If a user uploads a file in an unsupported format, the form displays an error during submission. The component also checks the file content to validate its type, enhancing the overall security of the form.
-* **Specified Error Response for Custom Submit Action**: When a custom submit action encounters an unhandled error, error code 502 is returned. This helps identify that the issue is related to the custom submit action, making debugging easier.
+* [Specified Error Response for Custom Submit Action](/help/forms/custom-submit-action-troubleshooting.md): When a custom submit action encounters an unhandled error, error code 502 is returned. This helps identify that the issue is related to the custom submit action, making debugging easier.
 * [Excluding Hidden Fields from Document of Record](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings): A new property has been added to allow exclusion of hidden fields from the Document of Record. By default, this option is not selected and applies to all form fields.
   
 ### Pre-Release features in AEM Forms 
 
 * [Generate and Sync AFP Renditions](/help/forms/document-generation-afp-api.md): You can now use the AEM Forms Communication API to convert an XDP file to AFP format. AFP is a high-performance format widely used in large-scale enterprise printing.
 * **Enhancements in Rule Editor**
-  * **Validate and Reset Functions Enhancements**: The validate and reset methods now support execution at the panel, field, and form levels. Previously, they were only supported at the form level.
-  * **Modern JavaScript Support**: Support for ECMAScript 2019 and later features has been added for custom functions, allowing you to write more efficient, modular, and reusable code
-  * **Download DoR Option in Rule Editor**: A function to download the Document of Record (DoR) has been added as an out-of-the-box (OOTB) option in the Rule Editor.
+  * [Validate Method in Function List](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list): The validate and reset methods now support execution at the panel, field, and form levels. Previously, they were only supported at the form level.
+  * [Modern JavaScript Support](/help/forms/rule-editor-core-components-difference-tables.md): Support for ECMAScript 2019 and later features has been added for custom functions, allowing you to write more efficient, modular, and reusable code
+  * [Download DoR Option in Rule Editor](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor): A function to download the Document of Record (DoR) has been added as an out-of-the-box (OOTB) option in the Rule Editor.
     ![Document-of-Record](/help/forms/assets/document-of-record-rn.gif)
-  * **Dynamic Variables in Rule Editor**: You can now use dynamic (temporary) variables in the Rule Editor for greater flexibility in defining conditions and actions. Hidden fields are no longer required to store temporary values.
-  * **Custom Event-Based Rules in Rule Editor**: You can now define custom events and trigger rules based on those events.
-  * **Context-Aware Repeatable Panel Rules**: In repeatable panels, rules are now executed based on context, instead of being applied only to the last panel instance.
-  * **Rules Triggered by Parameters**: The Rule Editor now supports rule execution based on query parameters, UTM parameters, or browser parameters.
-  * **Form-Specific Custom Functions**: Edge Delivery Services Forms now support form-specific custom function scripts, providing greater flexibility in managing reusable logic.
-  * **Static Imports for Custom Functions**: The Rule Editor in Universal Editor now supports static imports, allowing developers to organize, share, and reuse functions across multiple forms.
+  * [Dynamic Variables in Rule Editor](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules): You can now use dynamic (temporary) variables in the Rule Editor for greater flexibility in defining conditions and actions. Hidden fields are no longer required to store temporary values.
+  * [Custom Event Based Rules Support](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support): You can now define custom events and trigger rules based on those events.
+  * [Context-Aware Repeatable Panel Rules](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels): In repeatable panels, rules are now executed based on context, instead of being applied only to the last panel instance.
+  * [Rules Triggered by Parameters](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms): The Rule Editor now supports rule execution based on query parameters, UTM parameters, or browser parameters.
+  * [Form-Specific Custom Functions](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms): Edge Delivery Services Forms now support form-specific custom function scripts, providing greater flexibility in managing reusable logic.
+  * [Static Imports for Custom Functions](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions): The Rule Editor in Universal Editor now supports static imports, allowing developers to organize, share, and reuse functions across multiple forms.
 
 ### Early Adopter features in AEM Forms
 
-* **Scribble Signature Component**: You can now use the Scribble Signature component to help users add their signatures to a form, such as in an agreement form. The component allows users to draw their signature directly within the form using a mouse, stylus, or touchscreen.
-* **Direct API Integration in Rule Editor**: Adaptive Forms now support direct API integration in the Visual Rule Editor without requiring a Form Data Model. Authors can configure APIs using a URL or cURL import, map input/output parameters, and secure calls with authentication.
+* [Scribble Signature Component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature): You can now use the Scribble Signature component to help users add their signatures to a form, such as in an agreement form. The component allows users to draw their signature directly within the form using a mouse, stylus, or touchscreen.
+* [Direct API Integration in Rule Editor](/help/forms/api-integration-in-rule-editor.md): Adaptive Forms now support direct API integration in the Visual Rule Editor without requiring a Form Data Model. Authors can configure APIs using a URL or cURL import, map input/output parameters, and secure calls with authentication.
  
 <!--
 **Forms Optimization opportunities**
