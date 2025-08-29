@@ -126,7 +126,7 @@ The default client-side library (clientlibs) JavaScript compilation now targets 
 
 ### Upcoming Java API Deprecations {#java-api-deprecation}
 
-Several deprecated APIs are targeting removal on August 31st and thus should no longer be referenced. In early September, Action Center notifications will be sent if API usage is detected, and after September 25th, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
+Several deprecated APIs are targeting removal on August 31st and thus should no longer be referenced. In early September, Actions Center notifications will be sent if API usage is detected, and after September 25th, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
 <details>
   <summary>Expand to see the Java API deprecations</summary>
