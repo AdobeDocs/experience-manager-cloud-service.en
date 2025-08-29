@@ -70,7 +70,7 @@ Execute the following steps to use image presets in your authoring page:
 
 When you use [!DNL Dynamic Media with OpenAPI capabilities] for image delivery, images are automatically optimized through [Smart imaging](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/). Optimized delivery ensures images load faster, maintain maximum visual quality, and have minimal file size. This results in the fastest page loads and consistently high visual quality across devices and networks, while consuming minimal bandwidth, making your website faster and more responsive.
 
-[!DNL Smart Imaging] includes the following capabilities:
+[!DNL Smart Imaging] includes auto format conversion and network bandwidth optimisation for optimized image delivery. See the following to learn more about these capabilities:
 
 * [Auto Format Conversion](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=auto-format&t=request)
 [!DNL Dynamic Media with OpenAPI] automatically converts images to modern, web-optimized formats such as AVIF or WEBP. The conversion depends on the browser's capabilities and [license-entitlement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate), regardless of the requested format.
@@ -85,12 +85,12 @@ AVIF and WEBP formats provide better compression, making images smaller and fast
     * ***WEBP***: used if AVIF is not supported or licensed.
     * ***JPEG***: delivered only when AVIF and WEBP are unsupported, and the image has no alpha channel (transparency).
   </br>
-  
+
   * **Auto demotion:** Disable the default auto-format conversion by setting the `auto-format` query parameter to `false`. This delivers the image in the requested format.
   </br>
 
 * **Network bandwidth optimisation**
-Images are automatically optimized based on the client's network conditions to ensure faster delivery and smooth loading. The `quality` and `max-quality` parameters control image compression levels, with values ranging from 1 to 100.
+Images are automatically optimized based on the client's network conditions to ensure faster delivery and smooth loading. The `quality` and `max-quality` parameters automatically adjusts the quality by controlling the image compression levels, with values ranging from 1 to 100.
 
   * **Quality parameter**: Following are the key aspects of quality parameter:
     * Delivers the best possible image quality, regardless of load time.
