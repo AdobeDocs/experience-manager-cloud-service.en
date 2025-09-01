@@ -358,6 +358,10 @@ The content structure typically contains the following primary components:
 
 * **assets:** This node contains additional information used for form authoring. For example, form model details, localization details, and so on.
 
+## AI Assistant in AEM
+
+For customers who have [completed pre-requisite criteria](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), the AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+
 ## See Also {#see-also}
 
 {{see-also}}
