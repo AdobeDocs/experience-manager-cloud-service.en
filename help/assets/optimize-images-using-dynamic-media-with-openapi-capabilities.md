@@ -78,7 +78,7 @@ When you use [!DNL Dynamic Media with OpenAPI capabilities] for image delivery, 
 * [Auto format conversion](#auto-format-conversion)
 * [Network bandwidth optimisation](#network-bandwidth-optimisation) 
 
-### Auto Format Conversion{auto-format-conversion}
+### Auto format conversion{#auto-format-conversion}
 
 [!DNL Dynamic Media with OpenAPI] [automatically converts images to modern, web-optimized formats such as AVIF or WEBP](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=auto-format&t=request). The conversion depends on the browser's capabilities and [license-entitlement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate), regardless of the requested format.
 AVIF and WEBP formats provide better compression, making images smaller and faster to deliver and load. AVIF is used as the default format as it handles all the browser capabilities. 
