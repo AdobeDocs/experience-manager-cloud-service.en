@@ -7,17 +7,9 @@ role: User, Developer, Admin
 hide: yes
 index: no
 hidefromtoc: yes
+exl-id: 50709c68-8666-47da-8788-fad793d870e6
 ---
-
 # Introduction to Interactive Communication Editor
-
->[!NOTE]
->
-> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
-
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
 
 ## What is Interactive Communication Editor?
 
@@ -76,4 +68,3 @@ AEM Forms Interactive Communication Guide
 * Tutorials & Videos:
 Visit Adobe Experience League and explore the "Forms" section for step-by-step videos and use-case-based tutorials.
 -->
-
