@@ -59,6 +59,8 @@ For more information about the new and enhanced features and issues fixed in the
 ### Known Issues {#known-issues-21994}
 
 * Apache HTTPD version 2.4.65 introduces changes that may affect certain configurations due to new restrictions implemented as part of security fixes. These fixes address vulnerabilities by ensuring that directives such as `RequestHeader set`, `edit`, and `edit_r` used to modify the Content-Type header are now correctly limited to request headers. This change prevents unintended modifications to response headers, particularly for static content.
+* Apache HTTPD version 2.4.65 introduced changes in mod_proxy when using ProxyRemote connections. If you are experiencing issues, please set the disablereuse flag to On.
+  ```ProxyPass "/example" "http://backend.example.com" disablereuse=on```
 
 ### Deprecated Features and APIs {#deprecated-21994}
 
