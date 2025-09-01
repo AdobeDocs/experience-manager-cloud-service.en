@@ -262,7 +262,14 @@ The below diagram depicts the steps to create a custom submit action for an Adap
 
     >[!NOTE]
     >
-    > To view error logs in the AEM as a Cloud Service environment, you can use Splunk. 
+    > * To view error logs in the AEM as a Cloud Service environment, you can use Splunk.
+    > * If a custom submit action service encounters an unhandled error, AEM as a Cloud Service returns a 502 error page HTML. 
+
+
+## FAQ
+
+**Q: Why does my Adaptive Form show a 5.x.x error page after submission?**
+The custom submit action service failed with an unhandled error. AEM Cloud Service then returns its default error page.
 
 <!--
 ## Best practices
