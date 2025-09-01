@@ -82,20 +82,17 @@ When you use [!DNL Dynamic Media with OpenAPI capabilities] for image delivery, 
 
 [!DNL Dynamic Media with OpenAPI] [automatically converts images to modern, web-optimized formats such as AVIF or WEBP](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=auto-format&t=request). The conversion depends on the browser's capabilities and [license-entitlement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate), regardless of the requested format.
 AVIF and WEBP formats provide better compression, making images smaller and faster to deliver and load. AVIF is used as the default format as it handles all the browser capabilities. 
-[!DNL Dynamic Media with OpenAPI] uses the `auto-format` query parameter to control the behaviour of browser for coverting an image to various formats. Auto format conversion includes [auto promotion](#auto-promotion) and [auto demotion](#auto-demotion).
+[!DNL Dynamic Media with OpenAPI] uses the `auto-format` query parameter to control the behaviour of browser for coverting an image to various formats for optimized delivery. Auto format conversion includes **auto promotion** and **auto demotion**. When the system promotes a web-optimized format (AVIF or WEBP) over JPEG or PNG for delivery, it is called auto-promotion.
 
-#### Auto promotion{#auto-promotion}
+By default, the `auto-format` query parameter is set to `true`. When `auto-format` is enabled (true), the system ignores the requested format and automatically selects a web-optimized format (AVIF or WEBP) based on image characteristics, browser capabilities, and [license-entitlement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate). 
 
-By default, the `auto-format` query parameter is set to `true`. When `auto-format` is enabled (true), the system ignores the requested format and automatically selects a web-optimized format (AVIF or WEBP) based on image characteristics, browser capabilities, and [license-entitlement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate).
+When `auto-format` is true, the system delivers the image format in the following sequence:
+* ***AVIF***: AVIF is delivered if the browser supports it and the license allows it. This is called as auto promotion.
+* ***WEBP***: WEBP is delivered if AVIF is not supported or licensed. This is also auto promotion.
+* ***JPEG***: JPEG is delivered only when AVIF and WEBP are unsupported, and the image has no alpha channel (transparency). This is called as auto demotion.
+* ***PNG***: PNG is delivered when the browser does not support modern formats and the image has alpha channel (transparency). This is also called auto demotion.
 
-When `auto-format` is enabled, the system delivers the image format in the following sequence:
-* ***AVIF***: AVIF is delivered if the browser supports it and the license allows it.
-* ***WEBP***: WEBP is delivered if AVIF is not supported or licensed.
-* ***JPEG***: JPEG is delivered only when AVIF and WEBP are unsupported, and the image has no alpha channel (transparency).
-
-#### Auto demotion{#auto-demotion}
-
-Disable the default auto-format conversion by setting the `auto-format` query parameter to `false`. This delivers the image in the requested format.
+Disable `auto-format` by setting the query parameter to `false`, then specify the required format to get the image delivered in that format.
 
 ### Network bandwidth optimisation{#network-bandwidth-optimisation}
 
