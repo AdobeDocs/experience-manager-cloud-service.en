@@ -1,7 +1,7 @@
 ---
 title: Optimize images using Dynamic Media with OpenAPI Capabilities
 description: Learn how to optimize images on the fly before public delivery using the image optimization capabilities of Dynamic Media with OpenAPI Capabilities
-role: Admin, user 
+role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 ---
 
