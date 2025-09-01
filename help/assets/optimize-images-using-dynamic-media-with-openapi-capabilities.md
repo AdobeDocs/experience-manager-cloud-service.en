@@ -112,8 +112,8 @@ Following are the key aspects of quality parameter:
 
 Max-quality balances image quality and load time based on the client's network speed. Following are the key aspects of max-quality parameter: 
 
-* ***Prioritizes load time***: Reduces image quality when the network is slow to speed up delivery.
-* ***Maintains best quality***: Even when reduced, the image quality is still the highest possible between 1 to 100 for the client's current network speed. Learn more about the [max-quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
+* ***Prioritizes load time***: Max-quality reduces image quality when the network is slow to speed up delivery.
+* ***Maintains best quality***: Even when image quality is reduced, the quality is still the highest possible between 1 to 100 for the client's current network speed. Learn more about the [max-quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
 
 See the following key behaviors of `quality` and `max-quality `parameters:
 
