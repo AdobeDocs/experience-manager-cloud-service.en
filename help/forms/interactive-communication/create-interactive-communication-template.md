@@ -7,7 +7,6 @@ role: User, Developer, Admin
 hide: yes
 index: no
 hidefromtoc: yes
----
 
 # Create an Interactive Communication Template
 

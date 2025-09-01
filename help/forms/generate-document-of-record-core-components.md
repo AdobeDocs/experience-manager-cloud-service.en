@@ -409,6 +409,7 @@ Setting of the Document of Record component are available under its properties. 
 * **Display panel as table:** Setting the property displays panel as table in Document of Record if panel has less than 6 fields in it. Applicable for panel only.
 * **Exclude title from Document of Record:** Setting the property excludes title of the panel/table from Document of Record. Applicable for panel and table only.
 * **Exclude description from Document of Record:** Setting the property excludes description of the panel/table from Document of Record. Applicable for panel and table only.
+* **Exclude hidden fields from Document of Record**: Selecting this property excludes hidden fields from the Document of Record. It applies to all form fields. By default, the **Exclude hidden fields from Document of Record** option is not selected.
 
 **Form level settings**
 
