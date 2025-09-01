@@ -11,6 +11,14 @@ hidefromtoc: yes
 
 # Create an Interactive Communication Fragment
 
+>[!NOTE]
+>
+> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
+
+>[!IMPORTANT]
+>
+> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
+
 An Interactive Communication Fragment allows users to create reusable, modular content blocks such as headers, footers, or standard disclaimers that can be used across multiple communication documents. These fragments help maintain consistency, reduce repetitive work, and accelerate the design process when building personalized, data-integrated communications.
 
 ## Prerequisite
