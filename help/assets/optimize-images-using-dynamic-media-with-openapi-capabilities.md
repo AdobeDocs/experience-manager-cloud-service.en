@@ -58,7 +58,7 @@ The following example compares a URL with a preset to a URL without a preset.
 
 **URL with a preset (short URL)**: 
 
-  `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:393d5579-5be2-49a5-ac5f-8fed72bfb614/as/AdobeStock_63266433.avif?preset=thumbnail`
+  `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:393d5579-5be2-49a5-ac5f-8fed72bfb614/as/AdobeStock_63266433.avif?preset=thumbnail`.
 The preset thumbnail bundles the same image modifier settings.
 
 #### Use presets during authoring in AEM Sites{#use-presets-during-authoring-in-aem-sites}
