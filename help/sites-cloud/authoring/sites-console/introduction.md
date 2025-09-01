@@ -257,3 +257,8 @@ In addition, it offers the ability to create page-related actions.
 ## Templates
 
 You can easily see which template the page is based on when selecting the page in either [**Column view**](/help/sites-cloud/authoring/basic-handling.md#column-view) or [**List view**](/help/sites-cloud/authoring/basic-handling.md#list-view).
+
+## AI Assistant in AEM
+
+For customers who have [completed pre-requisite criteria](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), the AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+
