@@ -89,9 +89,9 @@ AVIF and WEBP formats provide better compression, making images smaller and fast
 By default, the `auto-format` query parameter is set to `true`. When `auto-format` is enabled (true), the system ignores the requested format and automatically selects a web-optimized format (AVIF or WEBP) based on image characteristics, browser capabilities, and [license-entitlement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-prime-ultimate).
 
 When `auto-format` is enabled, the system delivers the image format in the following sequence:
-* ***AVIF***: delivered if the browser supports it and the license allows it.
-* ***WEBP***: used if AVIF is not supported or licensed.
-* ***JPEG***: delivered only when AVIF and WEBP are unsupported, and the image has no alpha channel (transparency).
+* ***AVIF***: AVIF is delivered if the browser supports it and the license allows it.
+* ***WEBP***: WEBP is delivered if AVIF is not supported or licensed.
+* ***JPEG***: JPEG is delivered only when AVIF and WEBP are unsupported, and the image has no alpha channel (transparency).
 
 #### Auto demotion{#auto-demotion}
 
@@ -106,16 +106,14 @@ Images are automatically optimized based on the client's network conditions to e
 Following are the key aspects of quality parameter:
 * Delivers the best possible image quality, regardless of load time.
 * Prioritizes image quality over loading speed.
-* Uses a fixed compression level between 1 to 100 for the output image.
-* Learn more about the [quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
+* Uses a fixed compression level between 1 to 100 for the output image. Learn more about the [quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
 
 #### Max-quality parameter{#max-quality-parameter}
 
 Balances image quality and load time based on the client's network speed. Following are the key aspects of max-quality parameter: 
 
 * ***Prioritizes load time***: Reduces image quality when the network is slow to speed up delivery.
-* ***Maintains best quality***: Even when reduced, the image quality is still the highest possible between 1 to 100 for the client's current network speed.
-* Learn more about the [max-quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
+* ***Maintains best quality***: Even when reduced, the image quality is still the highest possible between 1 to 100 for the client's current network speed. Learn more about the [max-quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
 
 See the following key behaviors of `quality` and `max-quality `parameters:
 
