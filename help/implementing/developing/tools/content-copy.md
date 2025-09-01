@@ -12,7 +12,6 @@ The content copy tool enables users to copy mutable content on-demand from their
 >[!NOTE]
 >While the primary content copy flow is from higher environments to lower environments, an additional capability - **Forward Flow** - allows copying from lower non-production environments to higher non-production environments (for example, Dev → Stage, RDE → Stage). See [Limitations](#limitations) for details, including availability requirements.
 
-
 ## Introduction {#introduction}
 
 Current, real data is valuable for testing, validation, and user-acceptance purposes. The content copy tool lets you copy content from a production AEM as a Cloud Service environment to a staging, development, or [Rapid Development Environment (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) environment for such testing.
