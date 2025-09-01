@@ -120,7 +120,7 @@ See the following key behaviors of `quality` and `max-quality `parameters:
   * If both [!DNL quality] and [!DNL max-quality] are specified, [!DNL quality] takes precedence.
   * If only [!DNL quality] is specified, the quality is delivered regardless of load time based on network speed.
   * If only [!DNL max-quality] is specified, the image quality adjusts automatically based on network conditions, delivering the best possible quality up to the specified [!DNL max-quality] value.
-  * If neither is specified, the system applies dynamic optimization with a default max-quality of 85.
+  * If neither is specified, the system applies dynamic optimization with a default `max-quality` of `85`.
 
 
  
