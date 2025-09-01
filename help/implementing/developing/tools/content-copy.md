@@ -80,8 +80,8 @@ Before any content can be copied, a content set must be defined. After it is def
 
 1. You can edit the specified paths, if necessary.
 
-   1. Click the X next to excluded subpaths so you can delete them.
-   1. Click the ellipsis button next to paths so you can reveal **Edit** and **Delete** options.
+   1. Click the X next to the excluded subpaths so you can delete them.
+   1. Click the ellipsis button next to the paths so you can reveal the **Edit** and **Delete** options.
 
    ![Editing path list](assets/add-content-set-excluded-paths.png)
 
@@ -102,7 +102,7 @@ When editing your content set, you can expand the configured paths to reveal the
 After a content set is created, you can use it to copy content. Follow these steps so you can copy content.
 
 >[!NOTE]
-> Do not use Content Copy on an environment while a [content transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) operation is running on that environment. 
+> Do not use content copy on an environment while a [content transfer](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) operation is running on that environment. 
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 
@@ -129,8 +129,8 @@ After a content set is created, you can use it to copy content. Follow these ste
    * Content can only be copied from a higher environment to a lower environment or between development/RDE environments where the hierarchy of environments is as follows (from highest to lowest):
      * Production
      * Staging
-     * Development / RDE
-   * By default, Cross-Program Content Copy is disabled. However, upon customer request, it can be enabled, which will make an additional **Destination Program** input field available.
+     * Development/RDE
+   * By default, Cross-Program content copy is disabled. However, upon customer request, it can be enabled, which will make an additional **Destination Program** input field available.
 
 1. If necessary, you can also elect to **Include Access Control Lists** in your copy process.
 
@@ -189,11 +189,11 @@ The logs are downloaded to your local machine. If the download does not commence
 
 The content copy tool has the following limitations.
 
-* Content Copy tool supports two flow modes:
+* The content copy tool supports two flow modes:
    1. Top-Down Flow – Content can be copied from higher environments to lower environments (for example Production → Stage, Stage → Development/RDE).
    2. Forward Flow (new feature) – Content can also be copied from a lower non-production environment to a higher non-production environment (for example Development → Stage, RDE → Stage). This feature is available only upon explicit request and remains enabled until explicitly requested to be disabled. Production environments are never valid destinations for Forward Flow. 
 * Content can only be copied from and to authoring services.
-* Running concurrent content copy operations on the same environment is not possible.
+* Running concurrent content copy operations in the same environment is not possible.
 * Up to 50 paths can be specified per content set. There is no limitation on excluded paths.
 * Do not use the content copy tool as a cloning or mirroring tool because it cannot track moved or deleted content on the source.
 * The content copy tool has no versioning capability and cannot automatically detect modified content or created content on the source environment in a content set since the last content copy operation.
