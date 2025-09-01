@@ -440,9 +440,7 @@ Connections to origins are SSL only and use port 443.
 
 ### Proxying custom domain to AEM static tier {#proxy-custom-domain-static}
 
-There are scenarios where origin selectors can be used to route traffic through AEM Publish to AEM Static:
-
-* Some content is delivered by a domain managed by AEM Publish, while other content from the same domain is delivered by AEM Static tier
+Origin selectors can be used to route AEM publish traffic to AEM static content deployed using the [front end pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Use cases include serving static resources on the same domain as the page (e.g., example.com/static) or on an explicitly different domain (e.g., static.example.com).
 
 Here is an example of an origin selector rule that can accomplish this:
 
