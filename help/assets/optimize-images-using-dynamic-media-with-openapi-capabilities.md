@@ -96,21 +96,7 @@ Disable `auto-format` by setting the query parameter to `false`, then specify th
 
 ### Network bandwidth optimisation{#network-bandwidth-optimisation}
 
-Images are automatically optimized based on the client's network conditions to ensure faster delivery and smooth loading. The `quality` and `max-quality` parameters automatically adjusts the quality by controlling the image compression levels, with values ranging from 1 to 100. 
-
-#### Quality parameter{#quality-parameter}
-
-Following are the key aspects of quality parameter:
-* Delivers the best possible image quality, regardless of load time.
-* Prioritizes image quality over loading speed.
-* Uses a fixed compression level between 1 to 100 for the output image. Learn more about the [quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
-
-#### Max-quality parameter{#max-quality-parameter}
-
-Max-quality balances image quality and load time based on the client's network speed. Following are the key aspects of max-quality parameter: 
-
-* ***Prioritizes load time***: Max-quality reduces image quality when the network is slow to speed up delivery.
-* ***Maintains best quality***: Even when image quality is reduced, the quality is still the highest possible between 1 to 100 for the client's current network speed. Learn more about the [max-quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
+Images are automatically optimized based on the client's network conditions to ensure faster delivery and smooth loading. The [Quality](#quality-parameter) and [Max-quality](#max-quality-parameter) parameters automatically adjusts the quality by controlling the image compression levels, with values ranging from 1 to 100. 
 
 See the following key behaviors of `quality` and `max-quality `parameters:
 
@@ -118,6 +104,14 @@ See the following key behaviors of `quality` and `max-quality `parameters:
   * If only [!DNL quality] is specified, the quality is delivered regardless of load time based on network speed.
   * If only [!DNL max-quality] is specified, the image quality adjusts automatically based on network conditions, delivering the best possible quality up to the specified [!DNL max-quality] value.
   * If neither is specified, the system applies dynamic optimization with a default `max-quality` of `85`.
+
+#### Quality parameter{#quality-parameter}
+
+The quality parameter prioritizes image quality over loading speed. It fixes the output image quality to the requested value (between 1 and 100) and ignores network conditions. Learn more about the [quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
+
+#### Max-quality parameter{#max-quality-parameter}
+
+Max-quality balances image quality and load time based on the client's network speed. It prioritizes faster load times by lowering image quality on slower networks, while still delivering the highest possible quality (1–100) for the given network conditions. Learn more about the [max-quality parameter](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=quality&t=request).
 
 
  
