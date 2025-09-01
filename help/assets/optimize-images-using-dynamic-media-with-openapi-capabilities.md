@@ -72,7 +72,7 @@ The preset thumbnail bundles the same image modifier settings.
 
 ## Smart Imaging{#use-smart-imaging-using-dynamic-media-with-openapi-capabilities}
 
-When you use [!DNL Dynamic Media with OpenAPI capabilities] for image delivery, images are automatically optimized through [Smart imaging](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/). Optimized delivery ensures images load faster, maintain maximum visual quality, and have minimal file size. This results in the fastest page loads and consistently high visual quality across devices and networks, while consuming minimal bandwidth, making your website faster and more responsive.
+When you use [!DNL Dynamic Media with OpenAPI capabilities] for image delivery, images are automatically optimized through [Smart imaging](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/). Optimized delivery ensures images load faster, have maximum visual quality, and minimal file size. This results in the fastest page loads and consistently high visual quality across devices and networks, while consuming minimal bandwidth, making your website faster and more responsive.
 
 [!DNL Smart Imaging] includes the following capabilities:
 * [Auto format conversion](#auto-format-conversion)
