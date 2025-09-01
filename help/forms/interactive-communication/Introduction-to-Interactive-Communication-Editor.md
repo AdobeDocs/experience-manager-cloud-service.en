@@ -11,6 +11,14 @@ hidefromtoc: yes
 
 # Introduction to Interactive Communication Editor
 
+>[!NOTE]
+>
+> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
+
+>[!IMPORTANT]
+>
+> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
+
 ## What is Interactive Communication Editor?
 
 Interactive Communication (IC) Editor is an intuitive visual design environment within Adobe Experience Manager Forms. It enables organizations to create highly personalized, data-integrated communications in print format using a single authoring experience. These communications are often used for customer correspondence such as billing statements, policy documents, welcome kits, and investment summaries.
