@@ -40,6 +40,7 @@ In addition to the Dynamic Media Prime features such as AEM Assets integration w
 
    * Secure delivery of assets, 
    * [Smart Crop, Smart Imaging, Image Presets, and additional image modifiers](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
+   * Supports web-optimized format such as AVIF.
 
 * [Dynamic Media solution in AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md), which also includes the following key capabilities: 
    
