@@ -68,7 +68,7 @@ Before you start creating or an Adaptive Form, enable Adaptive Forms Core Compon
 
 ### Enable Adaptive Forms Core Components for your AEM Cloud Service environment
 
-Ensure that the [Adaptive Forms Core Components are enabled for your AEM Forms as a Cloud Service environment](enable-adaptive-forms-core-components.md). 
+Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment. 
 
 ### Add Adaptive Forms Client Libraries to your AEM Sites page or Experience Fragment 
 

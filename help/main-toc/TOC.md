@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2025 {#2025}
+      + [Release Notes for 2025.7.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-7-0.md) 
       + [Release Notes for 2025.6.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-6-0.md) 
       + [Release Notes for 2025.5.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md) 
       + [Release Notes for 2025.4.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-4-0.md) 
@@ -91,6 +92,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2025 {#2025}
+      + [Maintenance Release Notes for 2025.8.0](/help/release-notes/maintenance/2025/2025-8-0.md)
       + [Maintenance Release Notes for 2025.7.0](/help/release-notes/maintenance/2025/2025-7-0.md)
       + [Maintenance Release Notes for 2025.6.0](/help/release-notes/maintenance/2025/2025-6-0.md)
       + [Maintenance Release Notes for 2025.5.0](/help/release-notes/maintenance/2025/2025-5-0.md)
@@ -226,6 +228,8 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Universal Editor {#univeral-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + 2025 {#2025}
+      + [2025.08.14 Release Notes](/help/release-notes/universal-editor/2025/2025-08-14.md)
+      + [2025.07.31 Release Notes](/help/release-notes/universal-editor/2025/2025-07-31.md)
       + [2025.07.09 Release Notes](/help/release-notes/universal-editor/2025/2025-07-09.md)
       + [2025.06.19 Release Notes](/help/release-notes/universal-editor/2025/2025-06-19.md)
       + [2025.05.21 Release Notes](/help/release-notes/universal-editor/2025/2025-05-21.md)
@@ -265,6 +269,8 @@ user-guide-title: AEM as a Cloud Service
   + [Principal View for Permissions Management](/help/security/touch-ui-principal-view.md)
   + [Best Practices for Sling Service User Mapping and Service User Definition](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
   + [Customer Managed Keys for Adobe as a Cloud Service](/help/security/customer-managed-keys.md)
++ Experience Hub {#experience-hub}
+  + [About Experience Hub](/help/experience-hub.md)
 + Onboarding {#onboarding}
   + [Start Here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
   + Onboarding Journey {#journey}
@@ -526,10 +532,10 @@ user-guide-title: AEM as a Cloud Service
     + Micro-Frontend Asset Selector {#asset-selector}
       + [Asset Selector overview](/help/assets/overview-asset-selector.md)
       + Asset Selector integrations {#asset-selector-integration}
-          + [Asset Selector integrations overview](/help/assets/integrate-asset-selector.md)
-          + [Integrate Asset Selector with an Adobe application](/help/assets/integrate-asset-selector-adobe-app.md)
-          + [Integrate Asset Selector with a non-Adobe application](/help/assets/integrate-asset-selector-non-adobe-app.md)
-          + [Integrate Asset Selector for Dynamic Media with OpenAPI capabilities](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+        + [Asset Selector integrations overview](/help/assets/integrate-asset-selector.md)
+        + [Integrate Asset Selector with an Adobe application](/help/assets/integrate-asset-selector-adobe-app.md)
+        + [Integrate Asset Selector with a non-Adobe application](/help/assets/integrate-asset-selector-non-adobe-app.md)
+        + [Integrate Asset Selector for Dynamic Media with OpenAPI capabilities](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
       + [Asset Selector properties](/help/assets/asset-selector-properties.md)
       + [Asset Selector examples](/help/assets/asset-selector-examples.md)
       + [Asset Selector customizations](/help/assets/asset-selector-customization.md)
@@ -662,16 +668,17 @@ user-guide-title: AEM as a Cloud Service
     + [Flash Viewers End-of-Life](/help/assets/dynamic-media/flash-viewers-eol.md)
     + [DHTML Viewers End-of-Life](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
     + Dynamic Media with OpenAPI capabilities {#dynamic-media-open-apis}
-       + [Overview](/help/assets/dynamic-media-open-apis-overview.md)
-       + [Approve assets](/help/assets/approve-assets.md)
-       + [Integration with downstream applications](/help/assets/integrate-dynamic-media-open-apis.md)
-       + [Search assets API](/help/assets/search-assets-api.md)
-       + [Delivery APIs](/help/assets/deliver-assets-apis.md)
-       + [Restrict assets delivery](/help/assets/restrict-assets-delivery.md)
-       + [Integrate remote AEM Assets with AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
-       + [Preview assets](/help/assets/preview-assets.md)
-       + [Frequently asked questions](/help/assets/dynamic-media-open-apis-faqs.md)
-       + [Configure custom domain](/help/assets/configure-custom-domain.md)
+      + [Overview](/help/assets/dynamic-media-open-apis-overview.md)
+      + [Approve assets](/help/assets/approve-assets.md)
+      + [Integration with downstream applications](/help/assets/integrate-dynamic-media-open-apis.md)
+      + [Search assets API](/help/assets/search-assets-api.md)
+      + [Delivery APIs](/help/assets/deliver-assets-apis.md)
+      + [Restrict assets delivery](/help/assets/restrict-assets-delivery.md)
+      + [Integrate remote AEM Assets with AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
+      + [Preview assets](/help/assets/preview-assets.md)
+      + [Frequently asked questions](/help/assets/dynamic-media-open-apis-faqs.md)
+      + [Configure custom domain](/help/assets/configure-custom-domain.md)
+      + [Optimize images](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
   + Working with Assets view {#assets-view}
     + [Introduction](/help/assets/assets-view-introduction.md)
     + [Getting started](/help/assets/get-started-assets-view.md)
@@ -731,11 +738,11 @@ user-guide-title: AEM as a Cloud Service
     + [Configure [!DNL enhanced connector] for [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
     + [Update [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
   + Integration with Adobe Express {#integration-adobe-express}
-      + [Native integration with Adobe Express](/help/assets/native-integration-adobe-express.md)    
+    + [Native integration with Adobe Express](/help/assets/native-integration-adobe-express.md)    
   + Integration with Creative Cloud {#integration-creative-cloud}
-      + [Connect AEM Assets to Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md) 
+    + [Connect AEM Assets to Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md) 
   + Integrate AEM Assets with Edge Delivery Services {#integrate-aem-assets-edge-delivery-services}
-      + [Integrate AEM Assets while authoring content for Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)   
+    + [Integrate AEM Assets while authoring content for Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)   
 + Forms {#forms}
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
@@ -780,29 +787,29 @@ user-guide-title: AEM as a Cloud Service
       + [Use Form Data Model](/help/forms/using-form-data-model.md)
       + [Design XML Schema for an Adaptive Form](/help/forms/adaptive-form-xml-schema-form-model.md)
     + Set Submit Action for an Adaptive Form {#set-submit-action}
-       + [Submit Actions Supported by Adaptive Forms](/help/forms/aem-forms-submit-action.md)
-       + [Configure Submit Action for an Adaptive Form based on Foundation Components](/help/forms/configuring-submit-actions.md)
-       + [Configure Submit Action for an Adaptive Form based on Core Components](/help/forms/configure-submit-actions-core-components.md)
-       + [Configure Submit Action for Edge Delivery Services Forms](/help/forms/configure-submit-action-eds-forms.md)
-       + [Configure the Send Email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md)
-       + [Integrate Adaptive Form with Form Data Model](/help/forms/integrate-adaptive-form-with-fdm.md)
-       + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-       + Connect an Adaptive Form to Microsoft&reg; SharePoint{#connect-to-sharepoint}
-          + [Connect an Adaptive Form to Microsoft&reg; SharePoint](/help/forms/configure-submit-action-sharepoint.md)
-          + [Submit to SharePoint Document Library](/help/forms/connect-forms-to-sharepoint-document-library.md)
-          + [Submit to SharePoint List](/help/forms/connect-forms-to-sharepoint-list.md)
-          + [Configure SharePoint Site with limited access using authorization scope](/help/forms/configure-sharepoint-site-limited-access.md)
-       + [Submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-       + [Submit an Adaptive Form to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
-       + [Configure Submit to REST Endpoint submit action for Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
-       + [Submit an Adaptive Form to Microsoft&reg; OneDrive](/help/forms/configure-submit-action-onedrive.md)
-       + [Integrate AEM Adaptive Form with AEM Workflow](/help/forms/configure-submit-action-workflow.md)
-       + [AEM Forms Integration with Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
-       + Integrate Adaptive Forms with Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage} 
-          + [Integrate Adobe Marketo Engage with AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
-          + [Configure new form to integrate with Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md) 
-          + [Configure Adobe Marketo Engage data source for existing Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
-          + [Configure the submit action to Marketo Engage for existing forms](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+      + [Submit Actions Supported by Adaptive Forms](/help/forms/aem-forms-submit-action.md)
+      + [Configure Submit Action for an Adaptive Form based on Foundation Components](/help/forms/configuring-submit-actions.md)
+      + [Configure Submit Action for an Adaptive Form based on Core Components](/help/forms/configure-submit-actions-core-components.md)
+      + [Configure Submit Action for Edge Delivery Services Forms](/help/forms/configure-submit-action-eds-forms.md)
+      + [Configure the Send Email submit action for an Adaptive Form](/help/forms/configure-submit-action-send-email.md)
+      + [Integrate Adaptive Form with Form Data Model](/help/forms/integrate-adaptive-form-with-fdm.md)
+      + [Integrate an Adaptive Form with Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+      + Connect an Adaptive Form to Microsoft&reg; SharePoint{#connect-to-sharepoint}
+        + [Connect an Adaptive Form to Microsoft&reg; SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+        + [Submit to SharePoint Document Library](/help/forms/connect-forms-to-sharepoint-document-library.md)
+        + [Submit to SharePoint List](/help/forms/connect-forms-to-sharepoint-list.md)
+        + [Configure SharePoint Site with limited access using authorization scope](/help/forms/configure-sharepoint-site-limited-access.md)
+      + [Submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+      + [Submit an Adaptive Form to Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+      + [Configure Submit to REST Endpoint submit action for Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
+      + [Submit an Adaptive Form to Microsoft&reg; OneDrive](/help/forms/configure-submit-action-onedrive.md)
+      + [Integrate AEM Adaptive Form with AEM Workflow](/help/forms/configure-submit-action-workflow.md)
+      + [AEM Forms Integration with Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
+      + Integrate Adaptive Forms with Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage} 
+        + [Integrate Adobe Marketo Engage with AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+        + [Configure new form to integrate with Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md) 
+        + [Configure Adobe Marketo Engage data source for existing Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
+        + [Configure the submit action to Marketo Engage for existing forms](/help/forms/submit-adaptive-form-to-marketo-engage.md)
   + Adaptive Forms {#adaptive-forms-authoring}
     + [Create an Adaptive Form](/help/forms/create-an-adaptive-form.md)
     + [Which Adaptive Forms are best for you?](/help/edge/docs/forms/authoring-a-form.md) 
@@ -841,6 +848,7 @@ user-guide-title: AEM as a Cloud Service
           + [Using asynchronous functions in an Adaptive Form](/help/forms/using-async-funct-in-rule-editor.md)
           + [Invoke Service enhancements in the Visual Rule Editor for forms based on Core Components](/help/forms/invoke-service-enhancements-rule-editor.md)
           + [Rule Editor Enhancements](/help/forms/rule-editor-enhancements-use-cases.md)
+          + [API Integration in Rule Editor](/help/forms/api-integration-in-rule-editor.md)
         + Introduction to Custom Functions for Adaptive Forms based on Core Components{#create-and-use-custom-function-core-component}
           + [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md)
           + [Create and use a Custom Function for an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md)
@@ -940,10 +948,13 @@ user-guide-title: AEM as a Cloud Service
     + [Debugging HTML5 forms](/help/forms/debug.md)
     + [Scripting support for HTML5 forms](/help/forms/scripting-support.md)
     + [Form set in AEM Forms](/help/forms/formset-in-aem-forms.md)
-  + Interactive Communication {#interactive-communocation}
+  + Interactive Communication {#interactive-communication}
+    + [Introduction to interactive communication editor](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
+    + [Create an interactive communication](/help/forms/interactive-communication/create-interactive-communication.md)
+    + [Create an interactive communication template](/help/forms/interactive-communication/create-interactive-communication-template.md)
+    + [Create an interactive communication fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
     + [Introduction to interactive communication](/help/forms/introduction-to-interactive-communication.md)
     + [Create your first Interactive Communication](/help/forms/create-your-first-communication.md)
-    + [Generate AFP Output Using the AEM Forms API](/help/forms/document-generation-afp-api.md)
     + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
   + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
@@ -956,6 +967,7 @@ user-guide-title: AEM as a Cloud Service
     + [Introduction to Communications APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
     + [Communications APIs - Synchronous processing](/help/forms/aem-forms-cloud-service-communications.md)
     + [Communications APIs - Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+    + [Generate AFP Output Using the AEM Forms API](/help/forms/document-generation-afp-api.md)
     + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
     + [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
     + [Changing Page Zero content in Designer](/help/forms/changing-page-zero-content-designer.md)
@@ -978,6 +990,7 @@ user-guide-title: AEM as a Cloud Service
     + [Dispatcher and CDN caching](/help/forms/troubleshooting-caching-performance.md)
     + [Restarting AEM SDK](/help/forms/restart-aem-sdk.md)
     + [Resolving Forms creation failures](/help/forms/form-creation-failing.md)
+    + [502 Error Page in Custom Submit Action](/help/forms/custom-submit-action-troubleshooting.md)
 + Screens {#screens-as-cloud-service}
   + Overview to Screens as a Cloud Service {#overview}
     + [Introduction](/help/screens-cloud/introduction/introduction.md)
@@ -1017,47 +1030,52 @@ user-guide-title: AEM as a Cloud Service
   + [Screens as a Cloud Service FAQs](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
   + [Introduction and overview](/help/commerce-cloud/introduction.md)
-  + [CIF Introduction](/help/commerce-cloud/cif-introduction.md)
-  + [Notable Changes to AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/changes.md)
-  + Commerce Journeys {#journeys}
-    + Content Author Journey {#author}
-      + [AEM Content and Commerce Content Author Journey](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
-      + [Getting Started with CIF Authoring](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
-      + [Manage product catalog pages and template](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
-      + [Building Staged Product Catalog Experiences](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
-      + [Building Product Experiences](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
-  + Integrations {#integrations}
-    + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
-    + [Live Search CIF Component](/help/commerce-cloud/integrating/live-search-plp.md)
-    + [Live Search Popover CIF Component](/help/commerce-cloud/integrating/live-search-popover.md)
-    + [Third-Party Commerce Solution](/help/commerce-cloud/integrating/third-party.md)
-    + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
-  + AEM Storefront {#storefront}
-    + [Getting Started](/help/commerce-cloud/getting-started.md)
-    + Authoring {#authoring}
-      + [Commerce Experiences](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
-      + [Product Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
-      + [Multi-Template Usage](/help/commerce-cloud/authoring/multi-template-usage.md)
-      + [Enrich Product Data with Associated Content](/help/commerce-cloud/authoring/enrich-product-associated-content.md)
-      + [Product Recommendations](/help/commerce-cloud/authoring/product-recommendations.md)
-    + Administering {#administering}
-      + [Multi-Store Setup](/help/commerce-cloud/configuring/multi-store-setup.md)
-      + [Multiple Commerce Systems Setup](/help/commerce-cloud/configuring/multiple-commerce-systems-setup.md)
-      + [Configuring URLs for SEO](/help/commerce-cloud/configuring/advanced-url-configuration.md)
-      + [Caching Options](/help/commerce-cloud/configuring/caching.md)
-      + [Custom HTTP Headers](/help/commerce-cloud/configuring/custom-http-headers.md)
-      + [Shopping Cart and Dispatcher Setup](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
-      + [Component & GraphQL Clear Cache](/help/commerce-cloud/configuring/clear-cache.md)
-    + Developing {#developing}
-      + [Developing with AEM Cloud Service SDK](/help/commerce-cloud/develop.md)
-      + [Styling CIF Components](/help/commerce-cloud/customizing/style-cif-component.md)
-      + [Customizing CIF Components](/help/commerce-cloud/customizing/customize-cif-components.md)
-      + [Using CIF Catalog Pickers](/help/commerce-cloud/customizing/use-cif-pickers.md)
-      + [Custom Attributes to CIF Product Carousel](/help/commerce-cloud/customizing/product-carousel.md)
-      + [JSON-LD Metadata](/help/commerce-cloud/customizing/json-ld.md)
-  + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
-  + [Migration](/help/commerce-cloud/migration.md)
-  + [FAQ](/help/commerce-cloud/faq.md)
+  + Edge Delivery Services Storefront {#edge-storefront}
+    + [Introduction](/help/commerce-cloud/edge-storefront/introduction.md)
+  + Third Party Storefront {#thrid-party-storefront}
+    + [Introduction](/help/commerce-cloud/third-party-storefront/introduction.md)
+  + CIF Storefront {#cif-storefront}
+    + [CIF Introduction](/help/commerce-cloud/cif-storefront/introduction.md)
+    + [Notable Changes to AEM Content and Commerce as a Cloud Service](/help/commerce-cloud/cif-storefront/changes.md)
+    + Commerce Journeys {#journeys}
+      + Content Author Journey {#author}
+        + [AEM Content and Commerce Content Author Journey](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/overview.md)
+        + [Getting Started with CIF Authoring](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/getting-started.md)
+        + [Manage product catalog pages and template](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
+        + [Building Staged Product Catalog Experiences](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
+        + [Building Product Experiences](/help/commerce-cloud/cif-storefront/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
+    + Integrations {#integrations}
+      + [Adobe Commerce](/help/commerce-cloud/cif-storefront/integrating/magento.md)
+      + [Live Search CIF Component](/help/commerce-cloud/cif-storefront/integrating/live-search-plp.md)
+      + [Live Search Popover CIF Component](/help/commerce-cloud/cif-storefront/integrating/live-search-popover.md)
+      + [Third-Party Commerce Solution](/help/commerce-cloud/cif-storefront/integrating/third-party.md)
+      + [Experience Platform](/help/commerce-cloud/cif-storefront/integrating/aep.md)
+    + AEM Storefront {#storefront}
+      + [Getting Started](/help/commerce-cloud/cif-storefront/getting-started.md)
+      + Authoring {#authoring}
+        + [Commerce Experiences](/help/commerce-cloud/cif-storefront/authoring/authoring-commerce-experiences.md)
+        + [Product Cockpit](/help/commerce-cloud/cif-storefront/authoring/product-cockpit.md)
+        + [Multi-Template Usage](/help/commerce-cloud/cif-storefront/authoring/multi-template-usage.md)
+        + [Enrich Product Data with Associated Content](/help/commerce-cloud/cif-storefront/authoring/enrich-product-associated-content.md)
+        + [Product Recommendations](/help/commerce-cloud/cif-storefront/authoring/product-recommendations.md)
+      + Administering {#administering}
+        + [Multi-Store Setup](/help/commerce-cloud/cif-storefront/configuring/multi-store-setup.md)
+        + [Multiple Commerce Systems Setup](/help/commerce-cloud/cif-storefront/configuring/multiple-commerce-systems-setup.md)
+        + [Configuring URLs for SEO](/help/commerce-cloud/cif-storefront/configuring/advanced-url-configuration.md)
+        + [Caching Options](/help/commerce-cloud/cif-storefront/configuring/caching.md)
+        + [Custom HTTP Headers](/help/commerce-cloud/cif-storefront/configuring/custom-http-headers.md)
+        + [Shopping Cart and Dispatcher Setup](/help/commerce-cloud/cif-storefront/configuring/shopping-cart-dispatcher.md)
+        + [Component & GraphQL Clear Cache](/help/commerce-cloud/cif-storefront/configuring/clear-cache.md)
+      + Developing {#developing}
+        + [Developing with AEM Cloud Service SDK](/help/commerce-cloud/cif-storefront/develop.md)
+        + [Styling CIF Components](/help/commerce-cloud/cif-storefront/customizing/style-cif-component.md)
+        + [Customizing CIF Components](/help/commerce-cloud/cif-storefront/customizing/customize-cif-components.md)
+        + [Using CIF Catalog Pickers](/help/commerce-cloud/cif-storefront/customizing/use-cif-pickers.md)
+        + [Custom Attributes to CIF Product Carousel](/help/commerce-cloud/cif-storefront/customizing/product-carousel.md)
+        + [JSON-LD Metadata](/help/commerce-cloud/cif-storefront/customizing/json-ld.md)
+    + [Adobe Commerce PWA Studio](/help/commerce-cloud/cif-storefront/pwa-studio/getting-started.md)
+    + [Migration](/help/commerce-cloud/cif-storefront/migration.md)
+    + [FAQ](/help/commerce-cloud/cif-storefront/faq.md)
 + Edge Delivery Services {#edge-delivery}
   + [Edge Delivery Services Overview](/help/edge/overview.md)
 {#wysiwyg-authoring}
@@ -1098,8 +1116,8 @@ user-guide-title: AEM as a Cloud Service
       + [Protect Your Forms: Adding reCAPTCHA Security](/help/edge/docs/forms/recaptacha-forms.md)
       + [Build Custom Form Components: Developer's Guide](/help/edge/docs/forms/custom-components-forms.md)
       + [Monitor Form Performance: Operational Telemetry Guides](/help/edge/docs/forms/operational-telemetry-for-forms.md) 
-    + [Configure Submission for Edge Delivery Services Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
     + [Form Submission Guide: Using the Forms Submission Service](/help/forms/forms-submission-service.md)
+    + [Configure Submission for Edge Delivery Services Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
     + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)   
   + [Best Practices for creating forms](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
@@ -1181,18 +1199,23 @@ user-guide-title: AEM as a Cloud Service
       + [Authoring Basics for Headless with AEM](/help/journey-headless/author/basics.md)
       + [Learn about using references in Content Fragments](/help/journey-headless/author/references.md)
       + [Learn about defining Metadata and Tagging for Content Fragments](/help/journey-headless/author/metadata-tagging.md)
++ AI Assistant {#ai-assistant}
+  + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
+  + [About AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
 + Generative AI {#generative-ai}
   + [Generative AI in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
   + [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
   + [Generate Variations](/help/generative-ai/generate-variations.md)
-  + [AEM AI Assistant (Limited Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
-  + [AEM Forms AI Assistant (Forms Experience Builder)(Early Adopter)](/help/edge/docs/forms/forms-ai-assistant.md)
+  + [AI Assistant for AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
+  + [Getting started with AI Assistant for AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
+  + [Getting started with AI Assistant for AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
   + [AEM Forms AI Assistant - Prompt Library](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+  + [Forms Experience Builder - Best Practices](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
+  + [Forms Experience Builder - Troubleshooting Guide](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + Implementing {#implementing}
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
   + Use Cloud Manager {#using-cloud-manager}
     + [Navigation](/help/implementing/cloud-manager/navigation.md)
-    + [AEM Launchpad](/help/implementing/cloud-manager/aem-home.md)
     + Programs {#programs}
       + [Programs and Program Types](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
       + [Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
