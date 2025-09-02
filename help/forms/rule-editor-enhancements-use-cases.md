@@ -4,17 +4,15 @@ description: This article explores various use cases for the rule editor in an A
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-hide: yes
-hidefromtoc: yes
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
 ---
 # Rule Editor Enhancements and Use Cases
 
-<span class="preview"> These are pre-release features available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>.
+<span class="preview"> These are pre-release features available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. These enhancements are also applicable for Edge Delivery Services Forms.
 
 This article introduces the latest enhancements to the rule editor in Adaptive Forms. These updates are designed to help you define form behavior more easily, without writing custom code, and to create more dynamic, responsive, and personalized form experiences.
 
-The table below lists recent enhancements to the rule editor in Adaptive Forms, along with a brief description and the key advantages of each feature.:
+The table below lists recent enhancements to the rule editor in Adaptive Forms, along with a brief description and the key advantages of each feature:
 
 | Enhancement    | Description     | Advantages|
 |---|----|---|
@@ -24,6 +22,10 @@ The table below lists recent enhancements to the rule editor in Adaptive Forms, 
 | **Custom event-based rules**                     | Define rules that respond to custom events beyond the standard triggers.                              | - Supports advanced use cases <br> - Greater control over when and how rules are executed <br> - Enhances interactivity |
 | **Context-aware repeatable panel execution**     | Rules now execute in the correct context for each repeated panel, instead of only the last instance.  | - Accurate rule application for each repeat instance <br> - Reduces errors in dynamic sections <br> - Improves user experience with repeated content |
 | **Support for query string, UTM, and browser parameters** | Create rules that adapt form behavior based on URL parameters or browser-specific values.        | - Enables personalization based on source or environment <br> - Useful for marketing or tracking-specific flows <br> - No need for extra scripting or customization |
+
+>[!NOTE]
+>
+> The enhancements to the Rule Editor are also applicable to Edge Delivery Sevices Forms.
 
 Let's now explore each method in detail with specific use cases to help you understand how these features can be used to deliver a personalized experience for users
  
@@ -84,58 +86,68 @@ If the form is configured for DoR generation, this function generates and downlo
 
 ## Support for Dynamic Variables in Rules
 
-The enhanced rule editor now supports the creation and use of dynamic (temporary) variables. These variables can be set and retrieved throughout the form's lifecycle using the built-in **Set Variable Value** and **Get Variable Value** functions.
+The enhanced rule editor supports the creation and use of dynamic (temporary) variables. These variables can be set and retrieved throughout the form's lifecycle using the built-in **Set Variable Value** and **Get Variable Value** functions.
 These variables:
 
 * Are not submitted with the form data.
 * Can hold intermediate or calculated values.
 * Can be used in conditional logic and actions.
 
-**Scenario**: An e-commerce company provides an order form where users can select a product and a preferred shipping method. While product price is captured through a form field, shipping cost is determined dynamically based on the selected method and the country chosen.
+**Scenario**: An online shopping form allows users to select a product, enter quantity, and choose a country for shipping. The product price is a fixed value captured through a form field, while the shipping charge varies dynamically depending on the country selected.
 
-To keep the form structure clean and avoid adding unnecessary hidden fields, the business wants to handle shipping cost as a temporary value that supports real-time calculation of the total amount.
+To avoid cluttering the form with hidden fields, the business decides to store the shipping cost in a temporary variable and use it for real-time calculations.
 
 **Implementation using Set Variable Value and Get Variable Value functions in the Rule Editor**
 
-A rule is configured to set a temporary variable named **extracharge** using the **Set Variable Value** function. The value of this variable depends on the selected country. For example, if the user selects "United States," the value is set to 50. For any other country, it is set to 100.
+>[!VIDEO](https://video.tv.adobe.com/v/3471607/get-set-variable-final-video/?quality=12&learn=on)
+
+A rule is configured on the **Address** fragment using the **Set Variable Value** function to assign a temporary variable named **extracharge**. The value of this variable changes dynamically based on the selected country. For example:
+
+* If the user selects United States, **extracharge** is set to 500.
+* For any other country, **extracharge** is set to 100.
 
 ![Set variable value](/help/forms/assets/setvalue.png)
 
-Later, when calculating the total shipment cost, the **Get Variable Value** function retrieves the **extracharge** value based on the selected country. 
+Later, when the **Total Shipment Cost** is calculated, the **Get Variable Value** function is used to retrieve the value of **extracharge**. This value is added to the **Product Price × Product Quantity** to compute the final payable amount on the button click.
 
 ![Get variable value](/help/forms/assets/getvalue.png)
 
-This value is then added to the product's shipping cost, and the result is displayed in the **Total Shipment Cost** field.
-
+The **Total Shipment Cost** field dynamically updates to reflect both the product cost and shipping charge as the user changes the country or quantity.
 ![output](/help/forms/assets/getsetvalue-output.png)
 
-This approach allows you to calculate and display additional charges dynamically without storing them in a visible field, enabling a clean, responsive, and code-free user experience.
+>[!NOTE]
+>
+> You can also add **Get Variable value** function in the When condition.
+> ![Get Variable Value function in When condition](/help/forms/assets/when-get-variable.png){width=50%,height=50%, align=center}
 
+This approach enables dynamic, real-time calculations without adding extra fields to the form, keeping the structure clean and user-friendly.
 
 ## Custom Event Based Rules Support
 
 The enhanced rule editor supports custom event handling using the **Dispatch Event** and **On Trigger Event** functions. These functions allow different parts of the form to communicate by emitting and listening to custom events, enabling cleaner, modular logic without tightly coupling actions to specific fields.
 
-**Scenario**: A job application form is integrated with an external HR system that performs background verification. Once the check is complete, the system updates the form with the **Background Verification Complete!** message. The form must dynamically adjust what the applicant sees based on this result.
+**Scenario**: A login form is built using a reusable login fragment that contains **Enter Username** and **Enter Password** fields. When a user provides valid credentials, the form validates the input and initiates the **Get OTP** process. After the user enters a valid OTP, they are redirected to the appropriate page.
 
-Instead of binding logic directly to the field receiving the status, the form uses a custom event-based approach to improve modularity and maintainability.
+Instead of binding logic directly to the fields, the form uses an event-based approach with **Dispatch Event** and **On Trigger Event** to improve modularity and maintainability.
 
 **Implementation using Dispatch Event and On Trigger Event**
 
-When the background check status is updated, a rule uses **Dispatch Event** to emit a custom event as **bgvmsg** along with the status outcome. A separate rule listens for this event using **On Trigger Event**.
 
-The screenshots below display the rules applied to the "Is Background Verification Complete?" radio button and the "bgvmsg" text field.
+>[!VIDEO](https://video.tv.adobe.com/v/3471610/dispatch-trigger-final/?quality=12&learn=on)
 
-![dispatch event](/help/forms/assets/dispatch-event-rule.png)
+The login fragment is added to the form, containing predefined fields for Username and Password. A rule is configured on the **Get OTP** button to display the **Validation Panel**, which includes the input field for entering and validating the OTP.
 
-![on trigger event](/help/forms/assets/trigger-event-rule.png)
+![Get OTP Rule](/help/forms/assets/get-otp-rule.png)
 
-When the event is detected, it checks the status and updates the form accordingly. For example:
+In the **Validation Panel**, a rule is configured on the Validate button. API integration is used to validate the OTP entered in the **Enter OTP** field. If validation is successful, a **Dispatch Event** named **LoggedIn** is triggered with the event payload containing the API response.
 
-* If the background check is passed, the form displays a confirmation message.
-* If additional documents are needed, the form displays a section asking the applicant to upload the required information, along with an alert message.
+![In trigger event rule](/help/forms/assets/trigger-event-rule.png)
 
-![Dispatch event output](/help/forms/assets/dispatch-trigger-output.png)
+At the form level, a rule is configured to listen for the **LoggedIn** event. When this event is triggered, the rule displays the redirect message and takes the user to the dashboard page.
+
+![dispatch event rule](/help/forms/assets/dispatch-event-rule.png)
+
+When the user submits the form with correct credentials and a valid OTP, the login is successful, and the user is redirected to their dashboard.
 
 Support for custom events allowing developers to create and trigger custom events that can be used as conditions in rule editor.
 
@@ -187,3 +199,7 @@ If the **utm_source** parameter value equals "google", a custom message as "Hell
 This allows marketers to deliver relevant content to users based on the campaign that brought them to the form without requiring manual field input or custom scripting.
 
 These enhancements significantly expand the capabilities of the Adaptive Forms Rule Editor, providing developers with powerful tools to create more dynamic, interactive, and intelligent forms. Each enhancement addresses specific business needs while maintaining the ease-of-use that makes the Rule Editor accessible to both technical and non-technical users.
+
+## Additional resources
+
+{{see-also-rule-editor}}
