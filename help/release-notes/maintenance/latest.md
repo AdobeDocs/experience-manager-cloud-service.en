@@ -12,13 +12,13 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 22171 {#22171}
 
-Summarized below are the continuous improvements for maintenance release 22171, which was publicly released on August 19, 2025. The previous maintenance release was release 21994.
+Summarized below are the continuous improvements for maintenance release 22171, which was publicly released on September 2, 2025. The previous maintenance release was release 21994.
 
 The 2025.9.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
 ### New Features  {#new-features-22171}
 
-* ASSETS-53136: Vanity ID Support in Dynamic Media with OpenAPI
+* ASSETS-53136: Vanity ID Support in Dynamic Media with OpenAPI.
 
 ### Enhancements {#enhancements-22171}
 
@@ -26,23 +26,21 @@ None.
 
 ### Fixed Issues {#fixed-issues-22171}
 
-* ASSETS-52510: Duplicate filename detection fails for filenames containing Unicode U+202F.
+* ASSETS-52510: Duplicate filename detection fails for filenames containing Unicode `U+202F`.
 * ASSETS-53489: Folder deletion from Assets View UI doesn't unapprove all contained assets.
-* ASSETS-54821: Intermittent “Server error” in Asset Link.
-* ASSETS-55024: Broken image in AEM Assets “Download by Email” template.
+* ASSETS-54821: Intermittent "Server error" in Asset Link.
+* ASSETS-55024: Broken image in AEM Assets "Download by Email" template.
 * ASSETS-55325: Dynamic Media static URLs omit file-extension after asset rename.
 * ASSETS-55334: The Link Share dialogue either flashes briefly and disappears or never appears.
 * ASSETS-55382: Restarted async assets jobs create duplicate destination folder.
-* ASSETS-55472: Manage Publication option “Include only already published pages” ignored.
+* ASSETS-55472: Manage Publication option "Include only already published pages" ignored.
 * SITES-31600: Contexthub js error breaking personalization.
 
 For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
 
 ### Known Issues {#known-issues-22171}
 
-* Apache HTTPD version 2.4.65 introduces changes that may affect certain configurations due to new restrictions implemented as part of security fixes. These fixes address vulnerabilities by ensuring that directives such as `RequestHeader set`, `edit`, and `edit_r` used to modify the Content-Type header are now correctly limited to request headers. This change prevents unintended modifications to response headers, particularly for static content.
-* Apache HTTPD version 2.4.65 introduces changes in mod_proxy when using ProxyRemote connections. If you are experiencing issues, please set the disablereuse flag to On.
-  ```ProxyPass "/example" "http://backend.example.com" disablereuse=on```
+None.
 
 ### Deprecated Features and APIs {#deprecated-22171}
 
