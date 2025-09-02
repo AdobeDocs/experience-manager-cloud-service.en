@@ -92,27 +92,107 @@ Submit form data directly to your AEM as a Cloud Service Publish instance for co
 
 ### Configuration Requirements
 
-#### 1. AEM Dispatcher Configuration
+#### 1. Update AEM Instance URL in Edge Delivery
 
-Configure Dispatcher on your AEM Publish instance:
+Update the AEM Cloud Service instance URL in the `constant.js` file in the `form` block under `submitBaseUrl`. You can configure the URL based on your environment:
 
-- **Allow Submission Paths**: Modify `filters.any` to allow POST requests to `/adobe/forms/af/submit/...`
-- **No Redirects**: Ensure Dispatcher rules do not redirect form submission paths
+**For Cloud Service instance**
+
+   ```js
+
+   export const submitBaseUrl = '<aem-publish-instance-URL>';
+   ```
+
+**For local development**
+
+   ```js
+   export const submitBaseUrl = 'http://localhost:<port-number>';
+
+   ```
 
 #### 2. OSGi Referrer Filter
 
-In AEM OSGi console (`/system/console/configMgr`):
+Configure the Referrer Filter to allow your specific Edge Delivery site domains:
 
-1. Find "Apache Sling Referrer Filter"
-2. Add your Edge Delivery domain to "Allow Hosts" list
-3. Include domains like `https://your-eds-domain.hlx.page`
+1. Create or update the OSGi configuration file: `org.apache.sling.security.impl.ReferrerFilter.cfg.json`
 
-#### 3. CDN Redirect Rules
+2. Add the following configuration with your specific site domains:
+
+    ```json
+    {
+      "allow.empty": false,
+      "allow.hosts": [
+        "main--abc--adobe.aem.live",
+        "main--abc1--adobe.aem.live"
+      ],
+      "allow.hosts.regexp": [
+        "https://.*\\.aem\\.live:443",
+        "https://.*\\.aem\\.page:443",
+        "https://.*\\.hlx\\.page:443",
+        "https://.*\\.hlx\\.live:443"
+      ],
+      "filter.methods": [
+        "POST",
+        "PUT",
+        "DELETE",
+        "COPY",
+        "MOVE"
+      ],
+      "exclude.agents.regexp": [
+        ""
+      ]
+    }
+    ```
+
+3. Deploy the configuration through Cloud Manager
+
+For detailed OSGi Referrer Filter configuration, refer to the [Referrer Filter](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) Guide.
+
+#### 3. CORS (Cross-Origin Resource Sharing) Issues
+
+Configure CORS settings in AEM to allow requests from your specific Edge Delivery site domains:
+
+**Developer Localhost**
+
+```apache
+
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
+
+```
+
+**Edge Delivery Sites - Add each site domain individually**
+
+```apache
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc--adobe\.aem\.live$)#" CORSTrusted=true
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc1--adobe\.aem\.live$)#" CORSTrusted=true
+
+```
+
+**Legacy Franklin domains (if still in use)**
+
+```apache
+
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true  
+SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
+
+```
+
+>[!NOTE]
+>
+>Replace `main--abc--adobe.aem.live` and `main--abc1--adobe.aem.live` with your actual site domains. Each site hosted from the same repository requires a separate CORS configuration entry.
+
+For detailed CORS configuration, refer to the [CORS Configuration Guide](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
+
+
+To enable CORS for your local development environment, refer to [Understand Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) article.
+
+<!--
+#### 4. CDN Redirect Rules
 
 Configure your Edge Delivery CDN to route submissions:
 
 - Route requests from `/adobe/forms/af/submit/...` to your AEM Publish instance
-- Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)
+- Implementation varies by CDN provider (Fastly, Akamai, Cloudflare)-->
 
 #### 4. Form Configuration
 
@@ -122,8 +202,8 @@ Configure your Edge Delivery CDN to route submissions:
 4. Publish form to Edge Delivery site
 
 +++
-
-+++ Form Embedding (Optional)
+<!--
++++ Form Embedding
 
 Embed forms created in one location into different web pages or sites.
 
@@ -169,7 +249,7 @@ Configure Cross-Origin Resource Sharing on the form source:
 
 ![Embedded Form Architecture](/help/forms/assets/eds-embedded-form.png)
 
-+++
++++-->
 
 +++ Common Issues
 
