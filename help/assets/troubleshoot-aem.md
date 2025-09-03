@@ -1,6 +1,8 @@
 ---
 title: Troubleshooting in AEM Assets
 description: Troubleshoot common AEM Assets issues using the article links for key AEM Assets s=areas, such as uploads, metadata, search, delivery, and so on.
+hidefromtoc: yes
+hide: yes
 ---
 
 # Troubleshooting in AEM Assets {#troubleshoot-aem-assets}
