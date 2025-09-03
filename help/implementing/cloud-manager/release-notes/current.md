@@ -21,9 +21,17 @@ The next planned release is Thursday, October 2, 2025.
 
 ## What's new {#what-is-new}
 
-* **Supoort now added for Azure DevOps private repositories** 
+* **Support now added for Azure DevOps private repositories** 
 
     Documentation updates include configuration steps for Bring Your Own Git with Azure DevOps and pull request validation. See [Add External Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+
+* **Config pipelines with private respositories**
+
+    Cloud Manager now supports config pipelines with private repositories across GitHub, Bitbucket, Azure DevOps, and GitLab.
+
+* **Cloud Manager adds ECDSA (Elliptic Curve Digital Signature Algorithm) SSL certificate support**
+
+    Cloud Manager now supports ECDSA certificates. The feature delivers strong security with smaller key sizes, enabling customers to apply lightweight modern cryptography in their CDN configurations. <!-- https://jira.corp.adobe.com/browse/CMGR-62399 -->
 
 * **Adobe Experience Hub now available**
  
@@ -43,6 +51,12 @@ The next planned release is Thursday, October 2, 2025.
 Participate in Cloud Manager's beta programs to get exclusive access to upcoming features before their general release.
 
 The following opportunities are currently available:
+
+### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
+
+Support for [staging-only and production-only pipelines](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md) has been introduced, enabling you to split full-stack production deployment pipelines into smaller, specialized deployments.
+
+If you are interested in testing this new feature and sharing your feedback, send an email to  `Grp-cloudmanager_splitpipelines@adobe.com` from your email address associated with your Adobe ID. 
 
 ### One-click rollback for pipeline deployments {#one-click-rollback} 
 
