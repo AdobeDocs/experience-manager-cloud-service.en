@@ -9,126 +9,219 @@ description:
 
 ## Troubleshoot AEM Sites {#troubleshoot-aem-sites}
 
-+ [(Dynamic Media) Spin Sets stuck in processing state in AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26715)
-+ [Digital Asset Management (DAM) renditions not matching original files in AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26639)
-+ [Smart Crop renditions not generated in AEMaaCS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26873)
-+ [(Dynamic Media) Fix video upload, processing, and rendering issues in AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26533)
-+ [(Asset Link) Adobe Asset Link leaves links in an inaccessible state when using InDesign](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26922)
-+ [Video thumbnail mismatch between Dynamic Media and DAM Card View in AEMaaCS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26677)
-+ [(Dynamic Media) Export assets and metadata from Dynamic Media using API](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26902)
-+ [Asset processing failed for large MP4 files in AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26610)
-+ [(Dynamic Media) Dynamic Media video player not functioning in lower environments](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26871)
-+ [(Dynamic Media with OpenAPI) Activate Restricted Assets Access to Dynamic Media with Open APIs based on IMS User Groups](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26103)
-+ [When a Tiff file with ZIP compression format uploads to AEM Assets, no renditions generate](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23916)
-+ [AEM truncates extracted text from large PDFs after 100K tokens](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26785)
-+ [(Dynamic Media) Changing Dynamic Media URL for DM Assets](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17628)
-+ [Resolving metadata schema visibility issues for non-admin users in AEMaaCS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26655)
-+ [(Dynamic Media) Background color change issue for TIFF image renditions in Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26637)
-+ [AEMaaCS Asset rotation issue makes subsequent rotations invisible](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26528)
-+ [(Brand Portal) Activating Brand Portal using OAuth Server-to-Server credentials](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-22074)
-+ [(Dynamic Media) Resolving broken image issue with Smart Crop in Adobe Experience Manager 6.5 Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26367)
-+ [Increasing single part asset upload limit for Photoshop Firefly API Integration](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26450)
-+ [(Dynamic Media) Resolve Dynamic Media asset name discrepancies across AEM environments for PDF files](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26461)
-+ [Certain images are not showing thumbnail renditions in Adobe Experience Manager (AEM) as a Cloud Service - Asset](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26233)
-+ [(Dynamic Media) Dynamic Media General Settings page doesn't open up](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25294)
-+ [(Dynamic Media) Resolve audio issues in video files with Dynamic Media in AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26197)
-+ [Automatic tagging of newly uploaded assets in AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25925)
-+ [Smart Tags functionality not working after JWT to OAuth migration in AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25889)
-+ [Resolve shared link issues in AEM Managed Services](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25903)
-+ [(Brand Portal) Share Link Download Issue](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25771)
-+ [(Dynamic Media) Asset processing failure in AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25607)
-+ [(Dynamic Media) Asset synchronization failure in Adobe Experience Manager (AEM) Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25885)
-+ [Updating custom thumbnails for video assets in AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25829)
-+ [Image metadata discrepancy in Adobe Experience Manager (AEM) Assets](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25828)
-+ [Drag-and-drop of a folder of assets to AEM Assets Web UI fails](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-21865)
-+ [(Brand Portal) Brand Portal Editors and Viewers cannot see any images](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-20177)
-+ [(Dynamic Media) Resolving asset processing issues in AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25525)
-+ [Text extraction limitations for large PDFs in Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25518)
-+ [(Asset Link) Resolving Adobe Experience Manager (AEM) asset link connection issues in InDesign](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25562)
-+ [(Asset Link) Adobe Asset Link Plug-In Network Error: Server is unreachable](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25506)
-+ [(Dynamic Media) Dynamic media synchronization user recommendations](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25471)
+<table>
+  <tbody>
+  <tr>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27140">Renditions missing in asset download ZIP file in AEM</a> </td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26616">Content fragments not included in AEM Assets license</a> </td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26928">Commenting restricted in Assets View despite read access</a> </td> 
+    </tr>
+    <tr>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26715">(Dynamic Media) Spin Sets stuck in processing state in AEM Dynamic Media</a> </td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26639">Digital Asset Management (DAM) renditions not matching original files in AEM</a> </td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26873">Smart Crop renditions not generated in AEMaaCS</a> </td> 
+    </tr>
+    <tr>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26533">(Dynamic Media) Fix video upload, processing, and rendering issues in AEM</a> </td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26922">(Asset Link) Adobe Asset Link leaves links in an inaccessible state when using InDesign</a> </td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26677">Video thumbnail mismatch between Dynamic Media and DAM Card View in AEMaaCS</a> </td> 
+    </tr>
+    <tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26610">Asset processing failed for large MP4 files in AEM as a Cloud Service</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26871">(Dynamic Media) Dynamic Media video player not functioning in lower environments</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26103">(Dynamic Media with OpenAPI) Activate Restricted Assets Access to Dynamic Media with Open APIs based on IMS User Groups</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23916">When a Tiff file with ZIP compression format uploads to AEM Assets, no renditions generate</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26785">AEM truncates extracted text from large PDFs after 100K tokens</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17628">(Dynamic Media) Changing Dynamic Media URL for DM Assets</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26655">Resolving metadata schema visibility issues for non-admin users in AEMaaCS</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26637">(Dynamic Media) Background color change issue for TIFF image renditions in Dynamic Media</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26528">AEMaaCS Asset rotation issue makes subsequent rotations invisible</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26367">(Dynamic Media) Resolving broken image issue with Smart Crop in Adobe Experience Manager 6.5 Dynamic Media</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26450">Increasing single part asset upload limit for Photoshop Firefly API Integration</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26461">(Dynamic Media) Resolve Dynamic Media asset name discrepancies across AEM environments for PDF files</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26233">Certain images are not showing thumbnail renditions in Adobe Experience Manager (AEM) as a Cloud Service - Asset</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25294">(Dynamic Media) Dynamic Media General Settings page doesn't open up</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26197">(Dynamic Media) Resolve audio issues in video files with Dynamic Media in AEM</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25925">Automatic tagging of newly uploaded assets in AEM as a Cloud Service</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25889">Smart Tags functionality not working after JWT to OAuth migration in AEM</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25903">Resolve shared link issues in AEM Managed Services</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25607">(Dynamic Media) Asset processing failure in AEM Dynamic Media</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25885">(Dynamic Media) Asset synchronization failure in Adobe Experience Manager (AEM) Dynamic Media</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25829">Updating custom thumbnails for video assets in AEM as a Cloud Service</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25828">Image metadata discrepancy in Adobe Experience Manager (AEM) Assets</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-21865">Drag-and-drop of a folder of assets to AEM Assets Web UI fails</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25525">(Dynamic Media) Resolving asset processing issues in AEM as a Cloud Service</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25518">Text extraction limitations for large PDFs in Adobe Experience Manager as a Cloud Service</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25562">(Asset Link) Resolving Adobe Experience Manager (AEM) asset link connection issues in InDesign</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25506">(Asset Link) Adobe Asset Link Plug-In Network Error: Server is unreachable</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25471">(Dynamic Media) Dynamic media synchronization user recommendations</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26902">(Dynamic Media) Export assets and metadata from Dynamic Media using API</a></td>
+  <td></td>
+</tr>
+    
+  </tbody>
+  <table>
 
 
 ## Troubleshoot AEM Assets {#troubleshoot-aem-assets}
 
 
-+ [Renditions missing in asset download ZIP file in AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27140)
-+ [Content fragments not included in AEM Assets license](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26616)
-+ [Commenting restricted in Assets View despite read access](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26928)
-+ [(Dynamic Media) Spin Sets stuck in processing state in AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26715)
-+ [Digital Asset Management (DAM) renditions not matching original files in AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26639)
-+ [Smart Crop renditions not generated in AEMaaCS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26873)
-+ [(Dynamic Media) Fix video upload, processing, and rendering issues in AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26533)
-+ [(Asset Link) Adobe Asset Link leaves links in an inaccessible state when using InDesign](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26922)
-+ [Video thumbnail mismatch between Dynamic Media and DAM Card View in AEMaaCS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26677)
-+ [(Dynamic Media) Export assets and metadata from Dynamic Media using API](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26902)
-+ [Asset processing failed for large MP4 files in AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26610)
-+ [(Dynamic Media) Dynamic Media video player not functioning in lower environments](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26871)
-+ [(Dynamic Media with OpenAPI) Activate Restricted Assets Access to Dynamic Media with Open APIs based on IMS User Groups](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26103)
-+ [When a Tiff file with ZIP compression format uploads to AEM Assets, no renditions generate](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23916)
-+ [AEM truncates extracted text from large PDFs after 100K tokens](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26785)
-+ [(Dynamic Media) Changing Dynamic Media URL for DM Assets](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17628)
-+ [Resolving metadata schema visibility issues for non-admin users in AEMaaCS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26655)
-+ [(Dynamic Media) Background color change issue for TIFF image renditions in Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26637)
-+ [AEMaaCS Asset rotation issue makes subsequent rotations invisible](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26528)
-+ [(Dynamic Media) Resolving broken image issue with Smart Crop in Adobe Experience Manager 6.5 Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26367)
-+ [Increasing single part asset upload limit for Photoshop Firefly API Integration](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26450)
-+ [(Dynamic Media) Resolve Dynamic Media asset name discrepancies across AEM environments for PDF files](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26461)
-+ [Certain images are not showing thumbnail renditions in Adobe Experience Manager (AEM) as a Cloud Service - Asset](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26233)
-+ [(Dynamic Media) Dynamic Media General Settings page doesn't open up](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25294)
-+ [(Dynamic Media) Resolve audio issues in video files with Dynamic Media in AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26197)
-+ [Automatic tagging of newly uploaded assets in AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25925)
-+ [Smart Tags functionality not working after JWT to OAuth migration in AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25889)
-+ [Resolve shared link issues in AEM Managed Services](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25903)
-+ [(Dynamic Media) Asset processing failure in AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25607)
-+ [(Dynamic Media) Asset synchronization failure in Adobe Experience Manager (AEM) Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25885)
-+ [Updating custom thumbnails for video assets in AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25829)
-+ [Image metadata discrepancy in Adobe Experience Manager (AEM) Assets](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25828)
-+ [Drag-and-drop of a folder of assets to AEM Assets Web UI fails](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-21865)
-+ [(Dynamic Media) Resolving asset processing issues in AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25525)
-+ [Text extraction limitations for large PDFs in Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25518)
-+ [(Asset Link) Resolving Adobe Experience Manager (AEM) asset link connection issues in InDesign](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25562)
-+ [(Asset Link) Adobe Asset Link Plug-In Network Error: Server is unreachable](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25506)
-+ [(Dynamic Media) Dynamic media synchronization user recommendations](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25471)
+<table>
+  <tbody>
+  <tr>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27140">Renditions missing in asset download ZIP file in AEM</a> </td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26616">Content fragments not included in AEM Assets license</a> </td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26928">Commenting restricted in Assets View despite read access</a> </td> 
+    </tr>
+    <tr>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26715">(Dynamic Media) Spin Sets stuck in processing state in AEM Dynamic Media</a> </td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26639">Digital Asset Management (DAM) renditions not matching original files in AEM</a> </td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26873">Smart Crop renditions not generated in AEMaaCS</a> </td> 
+    </tr>
+    <tr>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26533">(Dynamic Media) Fix video upload, processing, and rendering issues in AEM</a> </td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26922">(Asset Link) Adobe Asset Link leaves links in an inaccessible state when using InDesign</a> </td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26677">Video thumbnail mismatch between Dynamic Media and DAM Card View in AEMaaCS</a> </td> 
+    </tr>
+    <tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26610">Asset processing failed for large MP4 files in AEM as a Cloud Service</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26871">(Dynamic Media) Dynamic Media video player not functioning in lower environments</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26103">(Dynamic Media with OpenAPI) Activate Restricted Assets Access to Dynamic Media with Open APIs based on IMS User Groups</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23916">When a Tiff file with ZIP compression format uploads to AEM Assets, no renditions generate</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26785">AEM truncates extracted text from large PDFs after 100K tokens</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17628">(Dynamic Media) Changing Dynamic Media URL for DM Assets</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26655">Resolving metadata schema visibility issues for non-admin users in AEMaaCS</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26637">(Dynamic Media) Background color change issue for TIFF image renditions in Dynamic Media</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26528">AEMaaCS Asset rotation issue makes subsequent rotations invisible</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26367">(Dynamic Media) Resolving broken image issue with Smart Crop in Adobe Experience Manager 6.5 Dynamic Media</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26450">Increasing single part asset upload limit for Photoshop Firefly API Integration</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26461">(Dynamic Media) Resolve Dynamic Media asset name discrepancies across AEM environments for PDF files</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26233">Certain images are not showing thumbnail renditions in Adobe Experience Manager (AEM) as a Cloud Service - Asset</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25294">(Dynamic Media) Dynamic Media General Settings page doesn't open up</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26197">(Dynamic Media) Resolve audio issues in video files with Dynamic Media in AEM</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25925">Automatic tagging of newly uploaded assets in AEM as a Cloud Service</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25889">Smart Tags functionality not working after JWT to OAuth migration in AEM</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25903">Resolve shared link issues in AEM Managed Services</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25607">(Dynamic Media) Asset processing failure in AEM Dynamic Media</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25885">(Dynamic Media) Asset synchronization failure in Adobe Experience Manager (AEM) Dynamic Media</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25829">Updating custom thumbnails for video assets in AEM as a Cloud Service</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25828">Image metadata discrepancy in Adobe Experience Manager (AEM) Assets</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-21865">Drag-and-drop of a folder of assets to AEM Assets Web UI fails</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25525">(Dynamic Media) Resolving asset processing issues in AEM as a Cloud Service</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25518">Text extraction limitations for large PDFs in Adobe Experience Manager as a Cloud Service</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25562">(Asset Link) Resolving Adobe Experience Manager (AEM) asset link connection issues in InDesign</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25506">(Asset Link) Adobe Asset Link Plug-In Network Error: Server is unreachable</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25471">(Dynamic Media) Dynamic media synchronization user recommendations</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26902">(Dynamic Media) Export assets and metadata from Dynamic Media using API</a></td>
+  <td></td>
+</tr>
+    
+  </tbody>
+  <table>
+
 
 ## Troubleshoot AEM Forms {#troubleshoot-aem-forms}
 
-+ [(Dynamic Media) Spin Sets stuck in processing state in AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26715)
-+ [Digital Asset Management (DAM) renditions not matching original files in AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26639)
-+ [Smart Crop renditions not generated in AEMaaCS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26873)
-+ [(Dynamic Media) Fix video upload, processing, and rendering issues in AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26533)
-+ [(Asset Link) Adobe Asset Link leaves links in an inaccessible state when using InDesign](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26922)
-+ [Video thumbnail mismatch between Dynamic Media and DAM Card View in AEMaaCS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26677)
-+ [(Dynamic Media) Export assets and metadata from Dynamic Media using API](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26902)
-+ [Asset processing failed for large MP4 files in AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26610)
-+ [(Dynamic Media) Dynamic Media video player not functioning in lower environments](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26871)
-+ [(Dynamic Media with OpenAPI) Activate Restricted Assets Access to Dynamic Media with Open APIs based on IMS User Groups](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26103)
-+ [When a Tiff file with ZIP compression format uploads to AEM Assets, no renditions generate](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23916)
-+ [AEM truncates extracted text from large PDFs after 100K tokens](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26785)
-+ [(Dynamic Media) Changing Dynamic Media URL for DM Assets](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17628)
-+ [Resolving metadata schema visibility issues for non-admin users in AEMaaCS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26655)
-+ [(Dynamic Media) Background color change issue for TIFF image renditions in Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26637)
-+ [AEMaaCS Asset rotation issue makes subsequent rotations invisible](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26528)
-+ [(Brand Portal) Activating Brand Portal using OAuth Server-to-Server credentials](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-22074)
-+ [(Dynamic Media) Resolving broken image issue with Smart Crop in Adobe Experience Manager 6.5 Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26367)
-+ [Increasing single part asset upload limit for Photoshop Firefly API Integration](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26450)
-+ [(Dynamic Media) Resolve Dynamic Media asset name discrepancies across AEM environments for PDF files](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26461)
-+ [Certain images are not showing thumbnail renditions in Adobe Experience Manager (AEM) as a Cloud Service - Asset](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26233)
-+ [(Dynamic Media) Dynamic Media General Settings page doesn't open up](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25294)
-+ [(Dynamic Media) Resolve audio issues in video files with Dynamic Media in AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26197)
-+ [Automatic tagging of newly uploaded assets in AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25925)
-+ [Smart Tags functionality not working after JWT to OAuth migration in AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25889)
-+ [Resolve shared link issues in AEM Managed Services](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25903)
-+ [(Brand Portal) Share Link Download Issue](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25771)
-+ [(Dynamic Media) Asset processing failure in AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25607)
-+ [(Dynamic Media) Asset synchronization failure in Adobe Experience Manager (AEM) Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25885)
-+ [Updating custom thumbnails for video assets in AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25829)
-+ [Image metadata discrepancy in Adobe Experience Manager (AEM) Assets](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25828)
-+ [Drag-and-drop of a folder of assets to AEM Assets Web UI fails](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-21865)
-+ [(Brand Portal) Brand Portal Editors and Viewers cannot see any images](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-20177)
-+ [(Dynamic Media) Resolving asset processing issues in AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25525)
-+ [Text extraction limitations for large PDFs in Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25518)
-+ [(Asset Link) Resolving Adobe Experience Manager (AEM) asset link connection issues in InDesign](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25562)
-+ [(Asset Link) Adobe Asset Link Plug-In Network Error: Server is unreachable](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25506)
-+ [(Dynamic Media) Dynamic media synchronization user recommendations](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25471)
-
+<table>
+  <tbody>
+  <tr>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27140">Renditions missing in asset download ZIP file in AEM</a> </td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26616">Content fragments not included in AEM Assets license</a> </td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26928">Commenting restricted in Assets View despite read access</a> </td> 
+    </tr>
+    <tr>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26715">(Dynamic Media) Spin Sets stuck in processing state in AEM Dynamic Media</a> </td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26639">Digital Asset Management (DAM) renditions not matching original files in AEM</a> </td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26873">Smart Crop renditions not generated in AEMaaCS</a> </td> 
+    </tr>
+    <tr>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26533">(Dynamic Media) Fix video upload, processing, and rendering issues in AEM</a> </td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26922">(Asset Link) Adobe Asset Link leaves links in an inaccessible state when using InDesign</a> </td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26677">Video thumbnail mismatch between Dynamic Media and DAM Card View in AEMaaCS</a> </td> 
+    </tr>
+    <tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26610">Asset processing failed for large MP4 files in AEM as a Cloud Service</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26871">(Dynamic Media) Dynamic Media video player not functioning in lower environments</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26103">(Dynamic Media with OpenAPI) Activate Restricted Assets Access to Dynamic Media with Open APIs based on IMS User Groups</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23916">When a Tiff file with ZIP compression format uploads to AEM Assets, no renditions generate</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26785">AEM truncates extracted text from large PDFs after 100K tokens</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17628">(Dynamic Media) Changing Dynamic Media URL for DM Assets</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26655">Resolving metadata schema visibility issues for non-admin users in AEMaaCS</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26637">(Dynamic Media) Background color change issue for TIFF image renditions in Dynamic Media</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26528">AEMaaCS Asset rotation issue makes subsequent rotations invisible</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26367">(Dynamic Media) Resolving broken image issue with Smart Crop in Adobe Experience Manager 6.5 Dynamic Media</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26450">Increasing single part asset upload limit for Photoshop Firefly API Integration</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26461">(Dynamic Media) Resolve Dynamic Media asset name discrepancies across AEM environments for PDF files</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26233">Certain images are not showing thumbnail renditions in Adobe Experience Manager (AEM) as a Cloud Service - Asset</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25294">(Dynamic Media) Dynamic Media General Settings page doesn't open up</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26197">(Dynamic Media) Resolve audio issues in video files with Dynamic Media in AEM</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25925">Automatic tagging of newly uploaded assets in AEM as a Cloud Service</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25889">Smart Tags functionality not working after JWT to OAuth migration in AEM</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25903">Resolve shared link issues in AEM Managed Services</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25607">(Dynamic Media) Asset processing failure in AEM Dynamic Media</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25885">(Dynamic Media) Asset synchronization failure in Adobe Experience Manager (AEM) Dynamic Media</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25829">Updating custom thumbnails for video assets in AEM as a Cloud Service</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25828">Image metadata discrepancy in Adobe Experience Manager (AEM) Assets</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-21865">Drag-and-drop of a folder of assets to AEM Assets Web UI fails</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25525">(Dynamic Media) Resolving asset processing issues in AEM as a Cloud Service</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25518">Text extraction limitations for large PDFs in Adobe Experience Manager as a Cloud Service</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25562">(Asset Link) Resolving Adobe Experience Manager (AEM) asset link connection issues in InDesign</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25506">(Asset Link) Adobe Asset Link Plug-In Network Error: Server is unreachable</a></td>
+</tr>
+<tr>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25471">(Dynamic Media) Dynamic media synchronization user recommendations</a></td>
+  <td><a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26902">(Dynamic Media) Export assets and metadata from Dynamic Media using API</a></td>
+  <td></td>
+</tr>
