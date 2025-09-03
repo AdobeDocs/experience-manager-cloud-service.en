@@ -63,12 +63,12 @@ The preset thumbnail bundles the same image modifier settings.
 
 #### Use presets during authoring in AEM Sites{#use-presets-during-authoring-in-aem-sites}
 
-  Authors can select [!DNL Image Presets] during page editing in [!DNL AEM Sites] authoring page when [!DNL Dynamic Media] support is enabled. 
-  Execute the following steps to use image presets in your authoring page:
-  1. Navigate to your Sites authoring page. 
-  1. Execute the steps in [Access remote assets in AEM Page Editor](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) section to use the [!DNL Asset Selector] panel for selecting an asset.
-  1. In the [!DNL asset selector] panel, scroll down to **[!UICONTROL  Preset type]**, and specify `Preset=Preset Name` in the **[!UICONTROL Image Modifiers]** field.
-  ![preset](/help/assets/assets/preset-in-asset-selector-panel.png)
+Authors can select [!DNL Image Presets] during page editing in [!DNL AEM Sites] authoring page when [!DNL Dynamic Media] support is enabled. 
+Execute the following steps to use image presets in your authoring page:
+1. Navigate to your Sites authoring page. 
+1. Execute the steps in [Access remote assets in AEM Page Editor](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) section to use the [!DNL Asset Selector] panel for selecting an asset.
+1. In the [!DNL asset selector] panel, scroll down to **[!UICONTROL Preset type]**, and specify `Preset=Preset Name` in the **[!UICONTROL Image Modifiers]** field and click **[!UICONTROL Done]**.
+![preset](/help/assets/assets/preset-in-asset-selector-panel.png)
 
 ## Smart Imaging{#use-smart-imaging-using-dynamic-media-with-openapi-capabilities}
 
