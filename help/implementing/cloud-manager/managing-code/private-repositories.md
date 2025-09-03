@@ -150,6 +150,8 @@ Validated private repositories can be associated with [full-stack and frontend p
 
 ## Limitations {#limitations}
 
+Certain limitations apply when using private repositories with Cloud Manager.
+
 * No Git tag is created and pushed when using private repositories on production full stack pipelines.
 * If the Adobe GitHub app is removed from your GitHub organization, it removes the pull requests validation feature for all repositories.
 * Pipelines using private GitHub Cloud repositories and the "on-commit" build trigger are not started automatically when a new commit is pushed into the selected branch.
