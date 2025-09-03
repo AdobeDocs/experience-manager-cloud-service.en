@@ -22,7 +22,7 @@ Interactive communication enables you to create, manage, and deliver personalize
 
 Imagine you need to send a bank statement, insurance policy, or utility bill to thousands of customers. Each one has the same layout but personalized data. Interactive Communication (IC) makes that possible efficiently.
 
-![Find IC Docu](/help/forms/interactive-communication/assets/Picture1.png)
+![Find IC Docu](/help/forms/interactive-communication/assets/introimg.png)
 
 Manually producing these documents can be time-consuming and often results in inconsistencies, especially when personalization and data integration are required. With the Interactive Communication Editor, users can streamline the process of creating Interactive communication. 
 
