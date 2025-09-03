@@ -1,156 +1,168 @@
 ---
 title: How to integrate Form Data Model (FDM) for a form in Universal Editor?
-description: Learn to create forms based on a form data model(FDM). Generate and edit sample data for data model objects in the FDM.
+description: Learn to create forms for edge delivery services based on a form data model(FDM). Generate and edit sample data for data model objects in the FDM.
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
 ---
-# Integrate forms with Form Data Model in Universal Editor
 
-Integrating forms with a Form Data Model (FDM) in Universal Editor allows you to use diverse backend data sources to create a Form Data Model (FDM). You can use the Form Data Model (FDM) as a schema in various form workflows. Configure the data sources and create a Form Data Model (FDM) based on the data model objects and services available in data sources.
+# Integrate Forms with Form Data Model (FDM)
+
+Connect your forms to backend data sources using FDM to enable data binding, validation, and submission workflows.
+
+## Prerequisites
+
+Complete these steps before integrating FDM with your forms:
+
+1. **[Configure Data Source](/help/forms/configure-data-sources.md)**: Set up backend connections
+2. **[Create Form Data Model](/help/forms/create-form-data-models.md)**: Define data structure and services  
+3. **[Configure Data Model Objects](/help/forms/work-with-form-data-model.md)**: Map data relationships
 
 ## Considerations
 
-* If you do not see the **Data Sources** icon in your Universal Editor interface or **Bind Reference** property in the right property panel, enable the **Data source** extension in the **Extension Manager**.
+If you do not see the **Data Sources** icon in your Universal Editor interface or **Bind Reference** property in the right property panel, enable the **Data source** extension in the **Extension Manager**.
 
-    ![extension manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+![Screenshot of the Universal Editor Extension Manager interface showing available extensions including the Data Sources extension that can be enabled for form integration](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
-    Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable and disable extensions in the Universal Editor.
+Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable and disable extensions in the Universal Editor.
 
-* The prefill service for forms in the Universal Editor is currently not supported.
+## Choose Your Form Type
 
-## Prerequistes
+Universal Editor supports two form creation approaches:
 
-Before configuring your form with the Form Data Model in Universal Editor, ensure you have completed the following steps:
-
-* [Configure Data Source](/help/forms/configure-data-sources.md): Set up the data source to connect your form to backend data.
-* [Create Form Data Model (FDM)](/help/forms/create-form-data-models.md): Build a data model using data objects and services from the configured data source.
-* [Configure Data Model Objects and Services](/help/forms/work-with-form-data-model.md): Map the data model objects and services to ensure smooth data flow between the form and the data source.
-
-## Creating Forms with Form Data Model in Universal Editor
-
-In the Universal Editor, you can create: 
-
-* [Schema-based form](#schema-based-form): A schema-based form uses a data source configured during form creation in the **Data** tab, automatically binding data to form fields.
-* [Non-schema-based form](#non-schema-based-form): A non-schema-based form requires you to manually add a data source and bind each field from the content tree. 
+| Aspect | Schema-Based Form | Non-Schema-Based Form |
+|--------|-------------------|----------------------|
+| **Setup Complexity** | Simple (automatic binding) | Manual (field-by-field binding) |
+| **Use Case** | New forms with defined data structure | Existing forms or flexible requirements |
+| **Data Source** | Required during creation | Can be added later |
+| **Binding** | Automatic field binding | Manual binding per field |
 
 ![Types of Form in Universal Editor](/help/edge/docs/forms/universal-editor/assets/form-types.png){width="50%" align="center" height="50%"}
- 
-These methods give you the flexibility to connect data models with forms based on your needs.
 
-### Schema-Based Form
+## Schema-Based Form
 
-When you create a schema-based form, it is automatically configured with a data source, and the form fields are already linked to the data through data bindings. To create a schema-based form using the Form Creation wizard, perform the following steps:
+Schema-based forms automatically configure data sources and bind form fields to data. This approach is ideal for new forms with well-defined data structures.
 
-1.  Log in to your [!DNL Experience Manager Forms] Author instance.
-1.  Enter your credentials on the Experience Manager login page. After you are logged in, in the upper-left corner, select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
-1.  Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens. In the **Source** tab, select a template:
+### Create Schema-Based Form
 
-     ![Edge Delivery Services template](/help/edge/assets/create-eds-forms.png)
+1. **Access Forms Console**
+   - Log in to your [!DNL Experience Manager Forms] Author instance
+   - Navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**
 
-    When you select a Edge Delivery Services based template, the **[!UICONTROL Create]** button is enabled. You can go to the **[!UICONTROL Data Source]** or **[!UICONTROL Submission]** tabs to select a data source or submit action.
+2. **Start Form Creation**
+   - Select **[!UICONTROL Create]** > **[!UICONTROL Adaptive Forms]**
+   - Choose an Edge Delivery Services template
+   - Click **[!UICONTROL Create]** when enabled
 
-1. In the **Data** tab, you can select one of the following data models:
+   ![Edge Delivery Services template](/help/edge/assets/create-eds-forms.png)
 
-    * **Form Data Model (FDM)**: Integrate data model objects and services from data sources into your form. Choose Form Data Model (FDM) if your form requires reading and writing data from multiple sources.
+3. **Configure Data Model**
+   - Go to the **Data** tab
+   - Select **Form Data Model (FDM)** for multiple data sources or **JSON Schema** for single backend system
+   - Choose your created FDM (e.g., Pet Form Data Model)
 
-    * **JSON Schema**: Integrate your form with a backend system by associating a JSON schema that defines the data structure. It allows you to add dynamic content using the schema elements. 
+   ![Select Form Data Model](/help/edge/docs/forms/universal-editor/assets/select-petstore-form-data-model.png)
 
-        For example, select the created Form Data Model named Pet Form Data Model.
+4. **Complete Form Setup**
+   - Enter **Name** and **Title**
+   - Specify **GitHub URL** (e.g., `https://github.com/wkndforms/edsforms`)
+   - Click **[!UICONTROL Create]**
 
-        ![Select Form Data Model](/help/edge/docs/forms/universal-editor/assets/select-petstore-form-data-model.png)
+   ![Create schema based form](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form.png)
 
+### Verify Schema-Based Form
 
-        By default, all fields of the associated JSON schema or Form Data Model (FDM) are automatically selected and converted into corresponding form components, simplifying the authoring process. The wizard also allows you to selectively choose which fields to include in the form using checkboxes.
+The form opens in Universal Editor with pre-configured data binding:
 
-1. Click **[!UICONTROL Create]** and the **Create Form** wizard appears.
-1. Specify the **Name** and **Title**. 
-1. Specify the **GitHub URL**. For example, if your GitHub repository is named `edsforms`, it is located under the account `wkndforms`,the URL is:
-    `https://github.com/wkndforms/edsforms`
-1. Click **[!UICONTROL Create]**.
+![Screenshot of the Universal Editor showing a schema-based form with pre-populated form fields and the Content Browser displaying available data source elements](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
 
-    ![Create schema based form](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form.png)
+![Automatic Data Binding](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding.png)
 
-    As soon as you click **[!UICONTROL Create]**, the form opens in the Universal editor for authoring. 
+## Non-Schema-Based Form
 
-    ![author the form](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
+Non-schema forms require manual data source configuration and field binding. This approach offers flexibility for existing forms or complex requirements.
 
-    The form is created using the data elements from the associated data source, with the form fields having preconfigured data binding. 
+### Create Non-Schema-Based Form
 
-    ![Automatic Data Binding](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding.png)
+1. **Access Form Properties**
+   - Log in to your [!DNL Experience Manager Forms] Author instance
+   - Navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**
+   - Select your form and click **[!UICONTROL Properties]**
 
-    You can now add and [configure the submit action](/help/edge/docs/forms/universal-editor/submit-action.md) for your form.
+   ![Open form properties](/help/edge/docs/forms/universal-editor/assets/non-schema-based-edit-properties.png)
 
-### Non-Schema-Based Form
+2. **Configure Form Model**
+   - Open the **Form Model** tab
+   - Select **Form Data Model (FDM)** from the **Select From** dropdown
+   - Choose your FDM from the list
 
-When you create a non-schema-based form, no data source is configured. You can edit the form properties later to add a data source and manually configure data bindings for your form fields. Perform the following steps to edit the form properties and add a data source:
+   ![Select Form Model tab](/help/edge/docs/forms/universal-editor/assets/select-form-model.png)
 
-1.  Log in to your [!DNL Experience Manager Forms] Author instance.
-1.  Enter your credentials on the Experience Manager login page. After you are logged in, in the upper-left corner, select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
-1. Select the form for which you want to add data source and click **[!UICONTROL Properties]**.
-    ![Open form properties](/help/edge/docs/forms/universal-editor/assets/non-schema-based-edit-properties.png)
+   ![Select FDM](/help/edge/docs/forms/universal-editor/assets/select-fdm.png)
 
-    The form properties open.
-1. Click to open the **Form Model** tab, and from the **Select From** drop-down menu. You can select one of the following options:
+3. **Confirm Configuration**
+   - Click **OK** in the warning dialog
+   - Click **[!UICONTROL Save & Close]**
 
-    * **Form Data Model (FDM)**: Create the form using a form data model.
-    * **Connector**: Create the form using the Adobe Marketo data source.
-    * **Schema**: Create the form using a JSON schema uploaded to AEM Forms.
-    * **None**: Create the form from scratch without using any form model.
-    
-        For example, select the Form Data Model (FDM) 
+   ![Form  Model Wizard](/help/edge/docs/forms/universal-editor/assets/form-model-wizard.png)
 
-        ![Select Form Model tab](/help/edge/docs/forms/universal-editor/assets/select-form-model.png)
+### Add Data Elements
 
-1. Select the created Form Data Model (FDM) from the drop-down list. For example, select the created Form Data Model named Pet Form Data Model from the drop-down list.
- 
-    ![Select FDM](/help/edge/docs/forms/universal-editor/assets/select-fdm.png)
+1. **Open Form for Editing**
+   - The form opens in Universal Editor
 
-    When you select the Form Data Model (FDM), the warning dialog appears. Click **OK** to close the dialog.
+   ![Non-schema-based form authoring](/help/edge/docs/forms/universal-editor/assets/non-schema-form-authoring.png)
 
-    ![Form  Model Wizard](/help/edge/docs/forms/universal-editor/assets/form-model-wizard.png)
+2. **Access Data Source Elements**
+   - Go to the **[!UICONTROL Datasource]** tab in the **[!UICONTROL Content Browser]**
+   - View available data elements from your FDM
 
-1. Click **[!UICONTROL Save & Close]**.
-1. Open the form for editing. The form opens in the Universal Editor for authoring.
+   ![Form Data Source](/help/edge/docs/forms/universal-editor/assets/non-schema-data-source.png)
 
-    ![Non-schema-based form authoring](/help/edge/docs/forms/universal-editor/assets/non-schema-form-authoring.png)
+3. **Add Elements to Form**
+   - Select data elements and click **[!UICONTROL Add]**
+   - Or drag-drop elements to build your form
 
-    The form elements present in the associated Form Data Model (FDM) are displayed in the **[!UICONTROL Datasource]** tab of the **[!UICONTROL Content Browser]** in the **Properties Panel**. 
+   ![Add data elements](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-element.png)
 
-    ![Form Data Source](/help/edge/docs/forms/universal-editor/assets/non-schema-data-source.png)
+   ![Screenshot showing the Universal Editor with a non-schema form being built by dragging and dropping data elements from the Data Source tab into the form structure](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-1. Select the data elements from the **[!UICONTROL Datasource]** tab and click **[!UICONTROL Add]**.
+### Add Manual Data Binding
 
-    ![Add data elements](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-element.png)
+For existing form fields, add data binding through the **Bind Reference** property:
 
-    You can also drag-drop these elements to build your Adaptive Form. When you click **[!UICONTROL Add]**, the selected elements from the **[!UICONTROL Datasource]** tab are added to your form, and a tick mark appears in front of the added elements.
+1. **Open Field Properties**
+   - Select the form field for binding
+   - Open its properties panel
 
-    ![Build form](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
+2. **Configure Bind Reference**
+   - Go to the **Bind Reference** property
+   - Click the **Browse** icon
 
-You can add data binding to a form field by selecting it from the **Bind Reference** property. For example, let's add a data binding reference to the **Id** text box that is already present in the form. 
-To select the data binding for the form field from the data source tree, perform the following steps:
+   ![Manually add data dinding for a form field](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
 
-1. Open the properties of the form field for which you want to add the data bind reference.
-1. Go to the **Bind Reference** property and click the **Browse** icon.
+3. **Select Data Element**
+   - Choose from the data source tree in the **Select a Bind Reference** wizard
+   - Select the desired data element and click **Select**
 
-    ![Manually add data dinding for a form field](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
+   ![select data bind refernce](/help/edge/docs/forms/universal-editor/assets/select-bind-reference.png)
 
-1. Choose the data binding reference from the data source tree in the **Select a Bind Reference** wizard.
+   ![select data element](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)
 
-    ![select data bind refernce](/help/edge/docs/forms/universal-editor/assets/select-bind-reference.png)
+4. **Verify Binding**
+   - The form field now binds to the data element
+   - The binding appears in the **Bind Reference** property
 
-1. Select the data element from the data source tree that you want to bind to the form field and click **Select**.
+   ![Automatic Data Binding](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding.png)
 
-    ![select data element](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)
+## Verify Integration
 
-    The form field binds to the data element and it appears in the **Bind Reference** property. 
-   
-    ![Automatic Data Binding](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding.png)
+After completing the integration:
 
-    You can also manually edit the **Bind Reference** property for the form field.
+1. **Test data binding**: Verify form fields display correct data
+2. **Validate submissions**: Ensure data saves to configured sources
+3. **Check error handling**: Test with invalid data scenarios
 
-You can now add and [configure the submit action](/help/edge/docs/forms/universal-editor/submit-action.md) for your form.
+## Next Steps
 
-## See also
-
-{{universal-editor-see-also}}
+Configure [submit actions](/help/edge/docs/forms/universal-editor/submit-action.md) to complete your form workflow.

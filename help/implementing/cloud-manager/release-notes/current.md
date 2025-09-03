@@ -1,70 +1,105 @@
 ---
-title: Release Notes for Cloud Manager 2025.6.0
-description: Learn about the release of Cloud Manager 2025.6.0 in Adobe Experience Manager as a Cloud Service.
+title: Release Notes for Cloud Manager 2025.8.0
+description: Learn about the release of Cloud Manager 2025.8.0 in Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 ---
-# Release notes for Cloud Manager 2025.6.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release notes for Cloud Manager 2025.8.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-<!-- https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.03.0+Release -->
+<!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2025.08.0+Release -->
 
-Learn about the release of Cloud Manager 2025.6.0 in AEM (Adobe Experience Manager) as a Cloud Service.
+Learn about the release of Cloud Manager 2025.8.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Release dates {#release-date}
 
-The release date for Cloud Manager 2025.6.0 in AEM as a Cloud Service is Thursday, June 5, 2025. 
+The release date for Cloud Manager 2025.8.0 in AEM as a Cloud Service is Thursday, August 7, 2025. 
 
-The next planned release is Thursday, July 10, 2025.
- 
+The next planned release is Thursday, September 4, 2025.
+
 ## What's new {#what-is-new}
 
-* **License dashboard now includes Edge Delivery Services license**
+* **Adobe Experience Hub coming soon**
 
-    Edge Delivery Services license usage is now displayed in the License dashboard, providing you with clearer visibility into your entitlements and status. <!-- CMGR-67686 -->
+    Beginning August 19, 2025 Adobe begins a phased rollout of the new Experience Hub to all Adobe Experience Manager users. 
+    
+    Experience Hub is a unified starting point that delivers personalized, contextual experiences to help users achieve goals faster. The rollout concludes by August 26, 2025 making it available to all users. The new Experience Hub is accessible directly at [experience.adobe.com](https://experience.adobe.com/). To learn more, see [Experience Hub](/help/experience-hub.md).
 
-    ![License Dashboard](/help/implementing/cloud-manager/assets/license-dashboard.png)
+* **Edge Delivery Services license can be included in a HIPAA program in a self-service manner** 
 
-    See [License dashboard](/help/implementing/cloud-manager/license-dashboard.md).
+    Organizations with healthcare or sensitive data requirements can now use Edge Delivery Services in a self-service manner, enabling HIPAA compliance to meet strict regulatory standards. <!-- CMGR-70016 -->
 
-* **Edge Delivery site configuration updated**
+* **BYOG is now available for Edge Delivery Services**
 
-    Simplified the flow for adding an Edge Delivery site by requesting the **Edge Delivery Origin** instead of the **Repository URL**, making onboarding and setup faster and more intuitive <!-- CMGR-67686 -->
+    Cloud Manager now lets you configure external Git repositories, enabling flexible code-management workflows. <!--(CMGR‑69010, CMGR‑70988) --> It also lets you pull code from a chosen branch directly in the Cloud Manager UI, reducing manual repository tasks. See [Configure Edge Delivery site to use an external Git repository](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md) <!-- (CMGR‑68085)(CMGR-69015) --> <!-- KT: https://wiki.corp.adobe.com/display/DMSArchitecture/%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+with+EDS -->
 
-    ![Add Edge Delivery site dialog box](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-site.png)
+* **Automated provisioning for the new Forms Add‑on**
 
-    See [Add an Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md).
+    Sites-only customers often need a lightweight, low-cost way to build marketing forms. The new AEM Forms Sites Add-On meets that need by adding limited Forms features to a Sites program. It also creates a clear upgrade path to the full AEM Forms offering. <!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
 
-* **Pipeline favorites**
+    The add-on:
+    * Attaches to a Sites program and deploys alongside it&mdash;no separate Forms program or entitlement.
+    * Targets simple marketing-form use cases.
+    * Appears in the **Solutions & Add-ons** list during Production Program creation or Production Program edit, only when the IMS org holds available Forms add-on licenses.
 
-    In this release, Cloud Manager introduces the ability to pin favorite pipelines, allowing you to mark specific pipelines as favorites so they appear at the top of the list on the **Pipelines** page. This enhancement makes frequently accessed pipelines easier to find and run. <!-- CMGR-68293 -->
+        ![Forms add-ons](/help/implementing/cloud-manager/release-notes/assets/forms-add-on.png) *The Forms add-on can be added in the Program only if Forms add-on licenses are available in your IMS org.*
 
-    ![Pipelines marked as favorites](/help/implementing/cloud-manager/release-notes/assets/pipeline-favorites.png) *Two pipelines marked as favorites.*
+        ![Forms add-on in Solutions & Add-Ons when creating a production program](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png) *During Program Creation, you can select the Forms add-on within the Sites solution.* 
 
-    See [Mark pipeline favorites](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites).
+        ![Forms add-on when editing a production program](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *In **Edit Program**, select the Forms add-on for the Sites program, then run the pipeline to activate it in the environments.*
 
+        For more information, see [Create a production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
-## Private beta program {#private-beta-program}
+## Beta programs {#private-beta-program}
 
-Participate in Cloud Manager's private Beta Program to get exclusive access to upcoming features before their general release.
+Participate in Cloud Manager's beta programs to get exclusive access to upcoming features before their general release.
 
-The following private beta opportunities are currently available:
+The following opportunities are currently available:
 
+### One-click rollback for pipeline deployments {#one-click-rollback} 
+
+Quickly revert to a previous deployment if the latest customer source code is not working as expected—no need to rerun the full pipeline or manually revert commits.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
+
+![Restore customer source code from the Environments card](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Environments card above showing the **Restore** > **Previous code deployed** option for a selected environment.* 
+
+![Restore previous code deployed dialog box](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png) 
+*In the **Restore previous code deployed** dialog box, review the currently deployed version and the version you want to restore, then click **Confirm***.
+
+![Restoring activation](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png) 
+*Cloud Manager rolls the environment back to the earlier build, keeps content and configuration intact, and marks the environment **Restoring** until deployment completes.*
+
+![Source code version in use](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *The Environment details view, as seen above, now also shows the active source-code version in use.*
+
+If you are interested in testing this new feature and sharing your feedback, send an email to [restorecode@adobe.com](mailto:restorecode@adobe.com) from your email address associated with your Adobe ID.
+
+See [Restore the Previous Code Deployed in AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
+
+See also [Content Restore in AEM as a Cloud Service](/help/operations/restore.md).
 
 ### Specialized Testing Environment {#specialized-test-environment}
 
-Cloud Manager now supports the addition of a new environment type called **Specialized Testing Environment**. The environment is designed to help teams validate features under near-production conditions before going live. This environment type is distinct from *Production + Stage*, *Development*, or *Rapid Development* environments and offers a focused space for running advanced validation scenarios. 
+Cloud Manager now supports the addition of a new environment type called **Specialized Testing Environment**. The environment is designed to help teams validate features under near-production conditions before going live. This environment type is distinct from *Production + Stage*, *Development*, or *Rapid Development* environments and offers a focused space for running advanced validation scenarios.
+
+**Recent enhancements**
+
+* You can now configure a Specialized Testing Environment on a non-production pipeline through a simpler, more intuitive workflow. The streamlined setup speeds completion and reduces configuration errors.
+* **Copy Content** is now supported in Specialized Testing Environments. You can now run **Copy Content** safely in isolated testing environments that mirror Production. <!-- (CMGR‑68900) -->
 
 See [Add a Specialized Testing Environment](/help/implementing/cloud-manager/specialized-test-environment.md).
 
 ![Add environment dialog box with Specialized Testing Environment radio button selected](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
 
-If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID.
+>[!NOTE]
+>
+>Adobe has closed beta access requests for Specialized Testing Environments, having reached a sufficient number of participants. The feature is now in preparation for general availability.
+
+<!--
+If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID. -->
 
 
-### Bring Your Own Git (BYOG) - now with support for Azure DevOps {#gitlab-bitbucket-azure-vsts}
+### Bring Your Own Git (BYOG) {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -79,8 +114,7 @@ See [Add external repositories in Cloud Manager](/help/implementing/cloud-manage
 
 ![Add Repository dialog box](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png)
 
-If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. 
-
+<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
 
 **Frequently asked questions about BYOG**
 
@@ -88,7 +122,7 @@ If you are interested in testing this new feature and sharing your feedback, sen
 |---|---|
 | *How can a project switch back to the Adobe-managed Git repository if needed?* | Switching back is straightforward. [Update the pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) to point to the Adobe repository and remove the external repository if it is no longer required. |
 | *Is it possible to configure different repositories for different environments (for example, non-production versus production) to allow testing in non-production first?* | Yes, different repositories can be configured for separate environments. For example, the dev or code quality pipeline can point to an external repository while the production pipeline remains connected to the Adobe repository. Make sure that the sync job between the two repositories remains active during this configuration. |
-| *Do existing settings like IP allow lists continue to work?* | Yes, existing IP allow lists continue to work as usual. However, if the external Git repository is protected by a firewall, the necessary [Adobe IP addresses must be added to the allow list](/help/implementing/cloud-manager/ip-allow-lists/introduction.md). |
+| *Do existing settings like `IP Allow` lists continue to work?* | Yes, existing `IP Allow` lists continue to work as usual. However, if the external Git repository is protected by a firewall, the necessary [Adobe IP addresses must be added to the allow list](/help/implementing/cloud-manager/ip-allow-lists/introduction.md). |
 | *Do all GitLab repository URLs work? The repository URL in use follows the format `https://gitlab_dedicated_url.com/path/repo-name.git`, which differs from the example in the documentation.* | Yes, any GitLab repository that supports API V3 or V4 is supported, including self-hosted GitLab URLs like the one described in [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`). |
 
 
@@ -98,24 +132,38 @@ Use **Manage Access Tokens** in Cloud Manager to view, rename, and delete access
 
 See [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
-If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID.
-
+<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
 
 ### Add Edge Delivery Config Pipeline {#add-eds-pipeline}
 
 Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Config Pipelines** to manage settings such as traffic filtering rules and Web Application Firewall (WAF) configurations, where applicable. See [Supported Configurations](/help/operations/config-pipeline.md#configurations).
 
+**Recent enhancement**
+
+* Edge Delivery Services pipelines now display **Configuration** in the **Deployed Code** column, enabling instant identification of configuration-only deployments. <!-- CMGR‑69681 -->
+* Cloud Manager shows **Add Edge Delivery Pipeline** once a program contains at least one Edge Delivery Services site and one mapped domain. Otherwise, the option appears disabled, and a tooltip explains missing requirements. <!-- CMGR‑69680 -->
+* The **Edge Delivery** tab shows a new **Edge Delivery pipelines** widget that lists each pipeline's Name, Status, Repository, and Branch. <!-- (CMGR-69052) -->
+
+    ![Edge Delivery pipeline widget showing pipeline name, status, repository, and branch](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-widget.png)
+
+* The **Filters** panel adds a **Delivery Type** section; includes **Edge delivery** and **Publish delivery** checkboxes. <!-- (CMGR-69682) -->
+
+    ![Filter panel showing new Delivery type of Edge delivery and Publish delivery](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
+
 ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adding an Edge Delivery pipeline from the **Program Overview** page, **Pipelines** card.*
 
 ![Add Edge Delivery pipeline dialog box](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Add Edge Delivery pipeline dialog box.*
+
+See [Add Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
 
 If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID.
 
 
 ## Bug fixes
 
-* Sandbox environments previously marked as `HIBERNATED` no longer remain stuck in that state, allowing pipeline execution or deployment to proceed as expected. <!-- CMGR-67705 -->
-* AEM Cloud Manager now correctly maps Maven build failures caused by 409 errors (conflicts) when fetching customer artifacts to a customer-caused failure. This change improves error messaging by distinguishing between internal errors and issues related to customer environment setup. <!-- CMGR-66673 -->
+* Pipelines now deliver variables only to the active Edge Delivery Services domain configuration, skipping any configuration removed during pipeline recreation. <!-- (CMGR‑70039) -->
+* Pipeline execution now starts reliably; fixed an issue where some pipelines failed to start due to internal resource handling errors. <!-- (CMGR‑58167) -->
+* Content Copy validates Cloud Manager permissions and blocks starts by users lacking Deployment Manager or Administrator rights. <!-- (CMGR‑62097) -->
 
 
 <!-- ## Known issues {#known-issues} -->

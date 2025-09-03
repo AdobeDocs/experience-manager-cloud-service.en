@@ -8,7 +8,7 @@ exl-id: b6ad377f-6697-4bc8-83bb-9e1bbea4cfd6
 ---
 # Rule Editor user interface for Adaptive Forms based on Core Components
 
-The Rule Editor user interface for Adaptive Forms based on Core Components enhances the form creation process within Adobe Experience Manager (AEM). It empowers both business users and developers to implement dynamic behavior and complex logic into forms by writing rules that trigger actions based on predefined conditions, user inputs, and interactions. This feature supports modern JavaScript functionalities, including ES10 features, and offers an intuitive visual editor that simplifies the rule-writing process. 
+The Rule Editor user interface for Adaptive Forms based on Core Components enhances the form creation process within Adobe Experience Manager (AEM). It empowers both business users and developers to implement dynamic behavior and complex logic into forms by writing rules that trigger actions based on predefined conditions, user inputs, and interactions. This feature supports modern JavaScript functionalities up to ES2022 and offers an intuitive visual editor that simplifies the rule-writing process.
 The Rule Editor is instrumental in streamlining the form-filling experience, ensuring both accuracy and efficiency. It allows for the validation or resetting of panels and forms, and the execution of custom functions to compute values of form objects. With its support for nested conditions and the ability to invoke Form Data Model services, the Rule Editor User Interface is a pivotal component for creating responsive, user-friendly, and adaptive forms.
 
 ## Understanding the rule editor user interface {#understanding-the-rule-editor-user-interface}
@@ -88,8 +88,6 @@ The **[!UICONTROL Cancel]** button discards any changes that you made to a rule 
 You can write rules using the visual rule editor <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
 
 Let's first look at how to write rules using a visual editor.
-
-+++
 
 +++ Using visual editor {#using-visual-editor}
 
@@ -227,6 +225,17 @@ You can write a combined rule to control visibility of the Spouse Salary field a
 
 +++
 
+### Handling Broken Rules
+
+Rules may sometimes break if a referenced field is moved or deleted. When this happens, the Rule Editor marks the affected rule with a red dot indicator.
+
+* When a field is moved (for example, from one panel to another), the associated rule may break. In this case, open the rule and save it again. The rule is automatically restored.
+
+* When a field is deleted, the rule cannot be repaired.
+
+   To understand the issue, hover over the rule status in the Rule Editor to view the error message.
+
+   ![Broken Rules](/help/forms/assets/rule-editor-broken-rules.png)
 
 <!-- ### Using code editor {#using-code-editor}
 
@@ -249,7 +258,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 ![javascriptruleeditor](assets/javascriptruleeditor.png)
 -->
 
-#### Custom functions in rule editor {#custom-functions}
+### Custom functions in rule editor {#custom-functions}
 
 Apart from the out-of-the-box functions like *Sum of* that are listed under **Functions Output**, you can also use custom functions in your rule editor. Rule editor supports JavaScript ECMAScript 2019 syntax for scripts and custom functions. For instructions on creating custom functions, refer to the article [Custom Functions in Adaptive Forms](/help/forms/create-and-use-custom-functions.md).
 

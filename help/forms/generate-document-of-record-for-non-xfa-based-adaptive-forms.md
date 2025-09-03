@@ -275,7 +275,6 @@ The following table describes Adaptive Form components and corresponding XFA com
 | Adaptive Form component |Corresponding XFA component |Notes |
 |---|---|---|
 | Image |Image |The TextDraw and Image components, whether bound or unbound, always appear in the Document of Record for an XSD-based Adaptive Form, unless excluded using the Document of Record settings. |
-| Text |Text |
 
 ### Tables {#tables}
 
@@ -341,16 +340,16 @@ To localize the branding information that you enter in the Document of Record ta
 
     1. **Basic Properties**: 
         * **Template**:  If you choose to select a custom template, browse a select an XDP on your [!DNL AEM Forms] server. If you want to use a template that is not already on your [!DNL AEM Forms] server, you should first upload the XDP to your [!DNL AEM Forms] server.
-         * **Accent Color**: The color in which header text and separator lines are rendered in the document or record PDF.
-         * **Font Family**: Font family of the text in the Document of Record PDF.
+        * **Accent Color**: The color in which header text and separator lines are rendered in the document or record PDF.
+        * **Font Family**: Font family of the text in the Document of Record PDF.
 
             >[!NOTE]
             >
             > AEM Forms offers a variety of built-in fonts that seamlessly integrate with PDF files. To see the list of supported fonts, [click here](/help/forms/supported-out-of-the-box-fonts.md).
 
-         * **Include form objects that are not bound to data model**: Setting the property includes unbound fields from Schema based Adaptive Form in Document of Record. 
-         * **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.
-         * **Hide description of panels**: Setting the property excludes description of the panel/table from Document of Record. Applicable for panel and table.
+        * **Include form objects that are not bound to data model**: Setting the property includes unbound fields from Schema based Adaptive Form in Document of Record. 
+        * **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.
+        * **Hide description of panels**: Setting the property excludes description of the panel/table from Document of Record. Applicable for panel and table.
 
          ![Basic Properties](/help/forms/assets/basicpropertiesdor.png)
 
@@ -390,20 +389,26 @@ To localize the branding information that you enter in the Document of Record ta
 
 1. To save the branding changes, select **[!UICONTROL Done]**.
 
+>[!NOTE]
+> 
+> To display a custom form title in your Document of Record, edit the **Custom Form Title** in **Document of Record Properties** > **Master Page Properties**. This custom title:
+> 
+> * Appears in the header of the generated PDF
+> * Appears as the Title in the PDF's document properties
+> * Appears as the Initial View Title when the PDF is opened
+
 ## Document of Record Support in Adaptive Form Editor {#dor-support-in-adaptiveform}
 
 You can configure the [!UICONTROL Document of Record] template directly from the Adaptive Form editor or Adaptive Form template editor. 
 
 Perform the following steps from the author instance of Adaptive Form editor: 
 
-1.  Select the **[!UICONTROL Adaptive Form container (Root)]** component.
+1. Select the **[!UICONTROL Adaptive Form container (Root)]** component.
 1. Click ![Configure Icon](/help/forms/assets/configure-icon.svg) icon to open the **[!UICONTROL Properties]** of the Adaptive Form container.
 1. Open the **[!UICONTROL Document of Record Template]** tab and select from the following options:
    * **[!UICONTROL None]**: When this option is selected no [!UICONTROL Document of Record] template created for your Adaptive Form.
-
-    * **[!UICONTROL Associate Form Template as Document of Record Template]**:When this option is selected, XFA Form is used as a template for Document of Record.
-
-    * **[!UICONTROL Generate Document of Record]**: When this option is selected, the [!UICONTROL Document of Record] template is automatically generated for your Adaptive Form. 
+   * **[!UICONTROL Associate Form Template as Document of Record Template]**:When this option is selected, XFA Form is used as a template for Document of Record.
+   * **[!UICONTROL Generate Document of Record]**: When this option is selected, the [!UICONTROL Document of Record] template is automatically generated for your Adaptive Form. 
     
 1. Select ![Save](/help/forms/assets/check-button.png) to save the properties.
 

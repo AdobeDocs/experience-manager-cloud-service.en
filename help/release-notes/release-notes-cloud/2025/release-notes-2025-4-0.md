@@ -75,19 +75,21 @@ You can now quickly select and compare any version of an asset with its latest v
 
 ![compare versions of asset](/help/assets/assets/version-compare2.png)
 
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Pre-release Features 
 
-* [Universal Editor - Form Fragments](/help/edge/docs/forms/universal-editor/creating-form-fragments.md): The Universal Editor now allows you to create and reuse Form Fragments for Adaptive Forms. These fragments are reusable form sections (e.g., contact details, consent fields) that can be built once and applied across multiple forms. This feature streamlines form creation, ensures consistency, and improves authoring efficiency.
- 
+* [Universal Editor for Adaptive Forms and Form Fragments](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): The Universal Editor now supports the creation of both Adaptive Forms and reusable Form Fragments. Authors can visually build forms, configure submit actions, and add reCAPTCHA validation, all in a simplified, WYSIWYG authoring environment. This capability accelerates form creation, enhances consistency, and improves protection against spam and automated abuse.
+  
 * [SharePoint Document Library - Save Attachments with Original Filenames](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): You now have the option to save form attachments using their original filenames when storing them in a SharePoint Document Library. This enhancement simplifies the identification and management of uploaded files.
 
 * **Rule Editor**:
     * [Binary Condition with Click Event in "When" Clause](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): The Rule Editor now allows combining a button click event (_Is Clicked_) with other conditions within the "When" clause. This enables more precise control over rule execution based on user interaction and other factors. Note: When using multiple conditions, the click event must be the first condition listed.
     * [Validation Conditions for Fields and Panels](/help/forms/rule-editor-core-components-usecases.md): The Rule Editor now includes _IsValid_ and _IsNotValid_ conditions. These allow you to check the validation status of specific fields or entire panels (including layouts like Horizontal Tabs, Vertical Tabs, Accordions, and Wizards), facilitating improved form navigation and user experience based on validation results.
-* **Improved Scope Management for SharePoint Lists**: SharePoint sites now support all managed paths, for example, /sites and /teams. This enhancement enables broader integration across various SharePoint site structures, offering greater flexibility in connecting to organizational content.
-* **Support for Saving Document of Record to SharePoint List**: Forms created using a SharePoint List–based Form Data Model (FDM) can now save the Document of Record (DoR) to SharePoint Lists by configuring the Document of Record Bind Reference field property. This enhancement enables seamless integration of supported form data and documents with SharePoint storage.
+* [Improved Scope Management for SharePoint Lists](/help/forms/connect-forms-to-sharepoint-list.md): SharePoint sites now support all managed paths, for example, /sites and /teams. This enhancement enables broader integration across various SharePoint site structures, offering greater flexibility in connecting to organizational content.
+* [Support for Saving Document of Record to SharePoint List](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): Forms created using a SharePoint List–based Form Data Model (FDM) can now save the Document of Record (DoR) to SharePoint Lists by configuring the Document of Record Bind Reference field property. This enhancement enables seamless integration of supported form data and documents with SharePoint storage.
+* [Auto-Mapping Support for Adaptive Form Fragments](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form): Adaptive Forms now support automatic insertion of matching fragments when schema objects align with a defined fragment structure, streamlining form creation and promoting reuse.
 
 ### Early Access Features in AEM Forms {#forms-new-early-access-features}
 
@@ -97,15 +99,15 @@ This release notes lists the innovations delivered in the current release. For t
 
 #### Adobe Experience Platform (AEP) Integration with Forms
 
-Integration capabilities between Forms and AEP are now available for early adopters.
+* [Integration of AEM Forms with Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): The AEM Forms to Adobe Experience Platform Connector enables seamless integration between Adaptive Forms and Adobe Experience Platform. This feature allows form data to be mapped to XDM schemas and submitted directly to AEP in real time. It streamlines data capture for personalization and activation use cases across Adobe Experience Cloud solutions.
 
 ## CIF Add-on {#cloud-services-cif}
 
 ### Enhancements {#enhancements-cif}
 
 * Adding product variant selection for CIF product reference data type
-* **Experimental**: [JSON+LD in CIF Core Components in PDPs](/help/commerce-cloud/customizing/json-ld.md)
-* **Experimental**: [CIF ability to clear cache](/help/commerce-cloud/configuring/clear-cache.md)
+* **Experimental**: [JSON+LD in CIF Core Components in PDPs](/help/commerce-cloud/cif-storefront/customizing/json-ld.md)
+* **Experimental**: [CIF ability to clear cache](/help/commerce-cloud/cif-storefront/configuring/clear-cache.md)
 
 ### Bug fixes {#bug-fixes-cif}
 
