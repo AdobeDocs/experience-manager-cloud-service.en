@@ -121,6 +121,7 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 # "DV Policy - Not Accepted"
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
+
 +++
 
 +++**Certificate validity

@@ -374,7 +374,13 @@ To localize the branding information that you enter in the Document of Record ta
 
 1. To save the branding changes, select **[!UICONTROL Done]**.
 
-
+>[!NOTE]
+> 
+> To display a custom form title in your Document of Record, edit the **Custom Form Title** in **Document of Record Properties** > **Master Page Properties**. This custom title:
+> 
+> * Appears in the header of the generated PDF
+> * Appears as the Title in the PDF's document properties
+> * Appears as the Initial View Title when the PDF is opened
 
 ## Table and column layouts for panels in Document of Record {#table-and-column-layouts-for-panels-in-document-of-record}
 
@@ -403,6 +409,7 @@ Setting of the Document of Record component are available under its properties. 
 * **Display panel as table:** Setting the property displays panel as table in Document of Record if panel has less than 6 fields in it. Applicable for panel only.
 * **Exclude title from Document of Record:** Setting the property excludes title of the panel/table from Document of Record. Applicable for panel and table only.
 * **Exclude description from Document of Record:** Setting the property excludes description of the panel/table from Document of Record. Applicable for panel and table only.
+* **Exclude hidden fields from Document of Record**: Selecting this property excludes hidden fields from the Document of Record. It applies to all form fields. By default, the **Exclude hidden fields from Document of Record** option is not selected.
 
 **Form level settings**
 

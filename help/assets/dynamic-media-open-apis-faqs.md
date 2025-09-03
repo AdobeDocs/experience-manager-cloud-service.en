@@ -6,13 +6,12 @@ exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 ---
 # Dynamic Media with OpenAPI capabilities frequently asked questions {#new-dynaminc-media-apis-frequently-asked-questions}
 
-+++**Are all assets in Experience Manager Assets as a Cloud Service repository available for search and delivery using Dynamic Media with OpenAPI capabilities?**
+## Are all assets in Experience Manager Assets as a Cloud Service repository available for search and delivery using Dynamic Media with OpenAPI capabilities? {#assets-available-for-search}
 
 No, only [approved and latest version of the assets](/help/assets/approve-assets.md) are available for search and delivery using Dynamic Media with OpenAPI capabilities, ensuring brand consistency across all channels and applications.
 
-+++
 
-+++**How can administrators mark new and existing assets added to a folder as approved?**
+## How can administrators mark new and existing assets added to a folder as approved? {#add-assets-to-folder-as-approved}
 
 The status of an asset in Experience Manager Assets is governed by `jcr:content/metadata/dam:status` property. The values of this property can be:
 
@@ -44,15 +43,12 @@ Similarly, Experience Manager Assets distinguishes the Rejected status in Assets
 ![Rejected assets in Assets view](/help/assets/assets/rejected-assets-admin-view.png)
 
 
-+++
-
-+++**How can you get Adobe IMS (Adobe Identity Management Services) user or group ID to be used to set the roles on assets in Experience Manager Admin view, for securing delivery and search experience?**
+## How can you get Adobe IMS (Adobe Identity Management Services) user or group ID to be used to set the roles on assets in Experience Manager Admin view, for securing delivery and search experience? {#set-roles-secure-delivery-search}
 
 Users requiring access to Experience Manager Author environment are managed as Adobe IMS users in Adobe's Admin Console. For information about what Adobe IMS users are, and how they are accessed and managed in Admin Console, see [Adobe IMS users](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=en).
 
-+++
 
-+++**Can you approve multiple assets simultaneously within a folder?**
+## Can you approve multiple assets simultaneously within a folder? {#approve-multiple-assets-in-folder}
 
 Yes, you can approve multiple assets within a folder simultaneously.
 
@@ -72,9 +68,7 @@ Similarly, to approve multiple assets simultaneously within a folder in Assets v
 1. Click **[!UICONTROL Save]**.
 
 
-+++
-
-+++**How can I secure asset delivery and search for the Dynamic Media OpenAPIs?**
+## How can I secure asset delivery and search for Dynamic Media with OpenAPIs? {#secure-asset-delivery}
 
 Central asset governance in Experience Manager allows the DAM Administrators or Brand Managers to manage access to assets. They can restrict the access by configuring roles or by setting activation and deactivation time for approved assets on the authoring side, specifically on the AEM as a Cloud Service author instance.
 
@@ -82,21 +76,18 @@ End-users searching or utilizing delivery URLs can gain access to restricted ass
 
 For more information, see [Restrict access to assets in Experience Manager](restrict-assets-delivery.md#authoring).
 
-+++
 
-+++**How can you get permissions to edit the approval status of an asset?**
+## How can you get permissions to edit the approval status of an asset? {#permissions-edit-approval-status}
 
 As a DAM user, you might not have permissions to [approve assets](approve-assets.md#approve-assets). To get the permissions to edit the approval status of an asset, the administrators can edit the default or any other metadata schema applied to the asset folder to provide edit permissions to the **[!UICONTROL Review Status]** field. For more information, see [how to disable edit for the Review Status](approve-assets.md#configuration) field.
 
-+++
 
-+++**What is the supported file size for videos?**
+## What is the supported file size for videos? {#supported-file-formats-videos}
 
 Dynamic Media with OpenAPI capabilities supports long form videos. The videos can support upto 50 GB and 2 hours.
 
-+++
 
-+++**How Dynamic Media with OpenAPI capabilities is different from Dynamic Media solution?**
+## How Dynamic Media with OpenAPI capabilities is different from Dynamic Media solution? {#dynamic-media-and-dynamic-media-with-openapi-differences}
 
 Dynamic Media with OpenAPI capabilities and Dynamic Media represent distinct solutions, each offering its specialized delivery capabilities. It is imperative to thoroughly review your specific requirements to determine the most fitting solution that aligns with your needs.
 
@@ -107,20 +98,19 @@ The following are some of the key differences between Dynamic Media with OpenAPI
 | Dynamic Media with OpenAPI capabilities | Dynamic Media |
 |---|---|
 | [Available only with Assets as a Cloud Service](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | Also available with On-premise or Adobe Managed Services with additional configuration and provisioning steps. |
-| [Limited set of supported image modifiers, such as width, height, rotate, flip, quality, and format](/help/assets/deliver-assets-apis.md) | Rich set of available image modifiers |
+| [Rich set of supported image modifiers, such as width, height, rotate, flip, quality, and format](/help/assets/deliver-assets-apis.md) | Rich set of available image modifiers |
 | [Restricted asset delivery based on users, roles, date, and time](/help/assets/restrict-assets-delivery.md) | Assets published to Dynamic Media are accessible to all users |
 | Most developers are familiar with OpenAPI specifications. AEM Assets extensibility becomes really simple by using [Micro-Frontend Asset Selector](/help/assets/overview-asset-selector.md). | SOAP -based APIs, which become a barrier while developing integration customizations. |
 | Any changes made to approved assets in DAM, including version updates and metadata modifications, are automatically reflected in the delivery URLs. With a short Time-to-Live (TTL) value of 10 minutes configured for Dynamic Media with OpenAPI capabilities via CDN, updates become visible across all authoring and published interfaces in under 10 minutes. | Recommended CDN TTL of 10 hours. You can override the TTL value using the cache invalidation action. |
 | Only approved assets are available for asset delivery to downstream applications, enabling on brand approved assets in digital experiences.| Any updates to a Dynamic Media published asset are auto-published without any approval workflow, which does not ensure on brand approved assets in digital experiences.    |
 | Usage reports based on number of assets delivered. This feature will be available soon.| Usage reports are not available. This feature will be available soon. |
 | Assets marked as Expired on Assets as a Cloud Service repository are not anymore available to downstream applications.| No inherent asset expiry. An asset remains public until it is deleted from AEM as a Cloud Service repository.|
-| Does not support image presets and video smart crop capabilities.| Supports image presets and video smart crop capabilities. |
+| Does not support video smart crop capabilities.| Supports video smart crop capabilities. |
 | Dynamic video encodes, that ensure best encodes are served based on the input video. No setup is required for native video delivery.| Standard 3 encodes irrespective of input video (can impact video delivery performance). You need to manually set up different encodes for different video bit rates. |
-|  Difficult to guess asset UID based URLs (enables URL obfuscation), but SEO optimized. | URL obfuscation only available for URL query parameters. Assets IDs (asset names) in URLs are recognizable. |
+|  Enables secure, obfuscated URLs using asset UIDs without compromising SEO. | URL obfuscation only available for URL query parameters. Assets IDs (asset names) in URLs are recognizable. |
 
-+++
 
-+++**How Dynamic Media with OpenAPI capabilities addresses the limitations of the Connected Assets feature?**
+## How Dynamic Media with OpenAPI capabilities addresses the limitations of the Connected Assets feature? {#dynamic-media-openapi-addresses-connected-assets-limitations}
 
 The table below outlines the key differences between the two solutions:
 
@@ -135,4 +125,20 @@ The table below outlines the key differences between the two solutions:
 | Any changes made to approved assets available on remote DAM deployment, including version updates and metadata modifications, are automatically reflected on the Sites instance within a short Time-to-Live (TTL) value of 10 minutes. |  Asset updates on remote DAM deployment are handled via lifecycle events automatically but takes much more time as compared to Dynamic Media with OpenAPI capabilities. |
 | Asset metadata on remote DAM is available on AEM Sites instance as well.  |Asset metadata on remote DAM is not available on AEM Sites instance.  |
 
-+++
+## Some modifiers are marked as Limited Availability. How can I start using them? {#use-limited-availability-modifiers}
+
+To enable the production use of [modifiers in Limited Availability](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) on your account:
+
+1. [Create an Adobe Support case using Admin Console](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+
+1. Mention the following details within the Adobe Support case:
+
+   * IMS Org
+
+   * List of modifiers to be enabled
+
+
+## How do I test experimental modifiers? {#modifiers-not-generally-available}
+
+You can test any modifier, which is not generally available via experimental APIs. For example, </adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>
+Click here to know more on how to use the [experimental APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) and the [complete list of modifiers](https://developer.adobe.com/experience-cloud/experience-manager-apis/).

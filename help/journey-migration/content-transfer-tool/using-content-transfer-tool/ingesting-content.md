@@ -146,7 +146,7 @@ This message indicates that the Cloud Acceleration Manager was unable to reach t
 
 * AEM as a Cloud Service maintains the environment state, and occasionally must restart the migration service for various normal reasons. If that service is restarting, it cannot be reached, but is available eventually.
 * It is possible that another process is being run on the instance. For example, if [AEM Version Updates](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) is applying an update, the system may be busy and the migration service regularly unavailable. Once that process is done, the start of the ingestion can be attempted again. 
-* If an [IP Allowlist has been applied](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) through Cloud Manager, it blocks Cloud Acceleration Manager from reaching the migration service. An IP address cannot be added for ingestions because its address is dynamic. Currently, the only solution is to disable the IP allowlist during the ingestion and indexing process.
+* If an [IP Allowlist has been applied](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) through Cloud Manager, it blocks Cloud Acceleration Manager from reaching the migration service. An IP address cannot be added for ingestions because its address is dynamic. Currently, the only solution is to disable the IP allowlist during the ingestion and indexing process by temporarily adding 0.0.0.0/0 to the allowlist while the ingestion and indexing process is running.
 * There may be other reasons that need investigation. If the ingestion or indexing continues to fail, contact Adobe Customer Care.
 
 ### AEM Version Updates and Ingestions {#aem-version-updates-and-ingestions}
@@ -263,6 +263,15 @@ At times unexpected intermittent issues could lend themselves to failed ingestio
 >abstract="The extraction that the ingestion was waiting for did not finish successfully. The ingestion was rescinded because it could not be executed."
 
 An ingestion that was created with a running extraction as its source migration set waits patiently until that extraction succeeds, and at that point starts normally. If the extraction fails or is stopped, the ingestion and its indexing job will not begin but is rescinded. In this case, check the extraction to determine why it failed, remedy the problem and start extracting again. Once the fixed extraction is running, a new ingestion can be scheduled. 
+
+### Waiting Ingestion Failed to Start {#waiting-ingestion-not-started}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_waiting_ingestion_not_started"
+>title="Waiting Ingestion Not Started"
+>abstract="The ingestion failed to start after waiting for an extraction to complete."
+
+An ingestion that was created with a running extraction as its source migration set waits until that extraction succeeds, and at that point the ingestion attempts to start normally. If the ingestion fails to start it is marked as failed. Possible reasons for not starting are: an IP Allow List is configured on the target author environment; the target  environment is unavailable for some other reason.  In this case, check why the ingestion failed to start, remedy the problem, and start the ingestion again (there is no need to re-run the extraction).
 
 ### Deleted Asset not present after re-running ingestion
 
