@@ -127,7 +127,7 @@ As a best practice, Adobe recommends specifying values in the rest of the fields
         <td> - </td>
     </tr>
     </tbody>
-   </table>
+</table>
 
 ## Limitations {#limitations}
 
