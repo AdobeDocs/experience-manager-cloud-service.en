@@ -151,12 +151,9 @@ See [Add Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pi
 
 If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID.
 
-<!--
-## Bug fixes
+## Bug fixes {#bug-fixes}
 
-* Pipelines now deliver variables only to the active Edge Delivery Services domain configuration, skipping any configuration removed during pipeline recreation. <!-- (CMGR‑70039)
-* Pipeline execution now starts reliably; fixed an issue where some pipelines failed to start due to internal resource handling errors. (CMGR‑58167)
-* Content Copy validates Cloud Manager permissions and blocks starts by users lacking Deployment Manager or Administrator rights. (CMGR‑62097) -->
+There are no significant bug fixes in the September Cloud Manager release.
 
 
 <!-- ## Known issues {#known-issues} -->
