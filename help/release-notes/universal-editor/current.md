@@ -18,6 +18,13 @@ These are the release notes for the 4 September 2025 release of the Universal Ed
 
 * Copy and paste is available for [early adopters](#copy-paste)
 
+### Undo/Redo {#undo-redo}
+
+Undo and redo is now available to Universal Editor content authors.
+
+* This includes edits done in context, edits done via the Properties panel, as well as adding (or duplicating), moving, and deleting blocks.
+* Undo and redo is limited to the current browser session.
+
 ## Early Adoption Features {#early-adopter}
 
 If you are interested in testing these upcoming features and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 
@@ -25,13 +32,6 @@ If you are interested in testing these upcoming features and sharing your feedba
 ### New RTE {#new-rte}
 
 The new ProseMirror RTE, featuring a page picker in the link dialog, is now available in the right panel.
-
-### Undo/Redo {#undo-redo}
-
-Undo and redo is now available to Universal Editor content authors.
-
-* This includes edits done in context, edits done via the Properties panel, as well as adding (or duplicating), moving, and deleting blocks.
-* Undo and redo is limited to the current browser session.
 
 ### Copy/Paste {#copy-paste}
 
