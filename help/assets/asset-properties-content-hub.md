@@ -39,7 +39,7 @@ Before you use, share, or download an asset, you can view it more closely. The p
 * **K:** Close preview screen
 * **L:** Information of an asset which includes title, format, size, resolution, tags, color tags, and smart tags. 
 
-## Supported asset formats {#supported-formats}
+## Supported file formats {#supported-formats}
 
 [!DNL Content Hub] supports all asset types and formats that the underlying [!DNL Assets] repository supports. The following table lists key file formats in [!DNL the Content Hub], which provide additional support for previewing assets visually:
 
