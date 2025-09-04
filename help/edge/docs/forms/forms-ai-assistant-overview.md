@@ -6,54 +6,29 @@ hide: yes
 index: no
 hidefromtoc: yes
 role: Admin, Architect, Developer
-exl-id: 92357836-1f56-44b1-9934-f9e8dd990e58
 ---
+
 # Introduction to Forms Experience Builder
 
 >[!IMPORTANT]
 >
 > **Documentation Subject to Change**: This documentation is currently being tested against the product and is subject to updates and revisions. Features, commands, and examples may change as the Forms Experience Builder continues to evolve during the early-adopter program.
 
-The Forms Experience Builder brings the power of artificial intelligence to Adobe Experience Manager (AEM) Forms. This innovative solution transforms how organizations create, manage, and optimize their digital forms through natural language interactions and intelligent automation.
+The AEM Forms Experience Builder leverages the power of Generative AI to democratize and accelerate the creation and updating of digital form experiences. By enabling intent-based workflows driven through natural language interactions, it empowers users to seamlessly design, modify, and optimize forms with speed and simplicity.
 
-Built on modern web technologies and powered by advanced AI services, the Forms Experience Builder enables both technical and non-technical users to create sophisticated, professional-grade forms through conversational interfaces. Whether you're a business analyst needing a simple registration form or a developer creating complex multi-step workflows, the Forms Experience Builder streamlines the entire form creation process.
+Built on modern web technologies and powered by advanced AI services, the Forms Experience Builder enables both technical and non-technical users to create sophisticated, professional-grade forms through conversational interfaces. This revolutionary approach reduces time to value from days to hours, eliminates technical barriers through interface simplicity, and scales modernization efforts across your entire form ecosystem.
 
-## Conversational Interface
 
-The Forms Experience Builder provides an intuitive chat-based interface that makes form creation as simple as having a conversation:
-
-```
-┌─────────────────────────────────────────────────────────┐
-│ Forms Experience Builder                               │
-├─────────────────────────────────────────────────────────┤
-│                                                         │
-│  👤 User: Create a customer feedback form              │
-│                                                         │
-│  🤖 AI: I'll help you create a feedback form. What    │
-│       type of feedback do you want to collect?         │
-│                                                         │
-│  👤 User: Product reviews with ratings and comments    │
-│                                                         │
-│  🤖 AI: Perfect! I've created a feedback form with:   │
-│       * Product rating (1-5 stars)                     │
-│       * Comment field                                   │
-│       * Customer email (optional)                       │
-│       * Submit to email notification                    │
-│                                                         │
-│  👤 User: Add a field for product category             │
-│                                                         │
-│  🤖 AI: Added a dropdown field with common categories  │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
 
 ## Core Capabilities
 
-### AI-Powered Form Creation
+Forms Experience Builder offers two primary workflows for creating powerful digital forms:
+
+### 1. AI-Powered Form Creation
 
 **Natural Language Form Generation**
 
-Create complete forms from scratch using plain English descriptions. Simply describe your requirements, such as "Create a customer feedback form with rating scales and comment fields," and the Forms Experience Builder generates the appropriate form structure, field types, and validation rules.
+Create complete forms from scratch using plain English descriptions. Simply describe your requirements, such as "Create a customer feedback form with rating scales and comment fields," and the Forms Experience Builder generates the appropriate form structure. You use the experience builder of visual editors to add more fields, validation rules, and submission logic. 
 
 **Dynamic Field Management**
 
@@ -61,27 +36,7 @@ Add, modify, or remove form fields through conversational commands. The AI under
 
 **Layout Optimization**
 
-Update form layouts and configurations through natural language. Request changes like "Make the form more mobile-friendly" or "Reorganize fields in a logical flow," and the Forms Experience Builder applies appropriate styling and layout adjustments.
-
-### Intelligent Import and Conversion
-
-**PDF to Form Conversion**
-
-Transform static PDF documents into interactive, dynamic forms. Upload any PDF document, and the Forms Experience Builder analyzes the structure to create a corresponding digital form with appropriate field types and validation.
-
-**URL to Form Conversion**
-
-Convert existing web forms or pages into AEM Forms. Simply provide a URL, and the Forms Experience Builder extracts form elements and recreates them as native AEM Forms with enhanced functionality.
-
-**Multi-Format File Support**
-
-Handle various file types for form creation, including PDFs, images, screenshots, and existing form templates. The Forms Experience Builder can process and convert these into functional AEM Forms.
-
-### Advanced Form Logic and Integration
-
-**Intelligent Rule Generation**
-
-Create complex form validation and business logic rules through natural language. The Forms Experience Builder can generate sophisticated conditional logic, field dependencies, and validation rules that would typically require extensive coding knowledge.
+Update form layouts and configurations through natural language. Request changes like "Change form layout to wizard layout" and the Forms Experience Builder applies appropriate styling and layout adjustments.
 
 **Comprehensive Submit Action Configuration**
 
@@ -94,126 +49,93 @@ Configure form submissions to integrate with your existing business systems:
 - **Marketing Platforms**: Direct integration with Marketo for lead management
 - **AEM Workflows**: Leverage existing AEM workflow capabilities
 
-**Performance Analytics**
 
-Analyze form conversion performance and user engagement patterns. The Forms Experience Builder provides insights into form effectiveness and suggests optimizations to improve completion rates and user experience.
+### 2. Intelligent Import and Conversion
+
+**Supported Import Formats**
+
+Transform existing forms and documents into interactive digital experiences. The Forms Experience Builder supports:
+
+- **Acroforms**: Interactive PDF forms with existing field structures
+- **XFA PDFs**: Complex XML-based form architectures
+- **Flat PDFs**: Static documents converted to interactive forms
+- **Images and Screenshots**: JPG, PNG formats (check with team for size limitations)
+- **Hand-drawn Forms**: Sketches and paper form photographs
+
+
+**Intelligent Conversion Process**
+
+The uploaded content is analyzed to:
+
+- Detect field types and relationships
+- Preserve layout to extent possible
+- Enhance with modern responsive design
+- Add advanced validation and conditional logic
+- Optimize for accessibility and mobile experience
 
 ## How It Works
 
 The Forms Experience Builder follows a simple, conversational approach:
 
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│  1. Describe    │───▶│  2. AI Creates  │───▶│  3. Refine &    │
-│  Your Form      │    │  Initial Form   │    │  Configure      │
-│  Requirements   │    │                 │    │                 │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-         │                       │                       │
-         │                       │                       │
-         ▼                       ▼                       ▼
-┌─────────────────────────────────────────────────────────────────┐
-│  "Create a loan application form"  →  Form with relevant        │
-│  "Add conditional logic"           →  fields and basic          │
-│  "Connect to CRM system"           →  validation rules          │
-└─────────────────────────────────────────────────────────────────┘
-```
+    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+    │  1. Describe    │───▶│  2. AI Creates  │───▶│  3. Refine &    │
+    │  Your Form      │    │  Initial Form   │    │  Configure      │
+    │  Requirements   │    │                 │    │                 │
+    └─────────────────┘    └─────────────────┘    └─────────────────┘
+             │                       │                       │
+             │                       │                       │
+             ▼                       ▼                       ▼
+    ┌───────────────────────────────────────────────────────────────────────────┐
+    │  "Create a loan application form"  →  Form with relevant                  │
+    │  "Add email field"           →  fields and basic                          │
+    │  "Set value of email filed to @firstname@gmail.com" →  validation rules   │
+    └───────────────────────────────────────────────────────────────────────────┘
 
-## Use Case Examples
+## Example Scenarios
 
-### Loan Application Form 
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Transform PDF Forms to Digital Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Transform PDF Forms to Digital Forms</p>
+                    <p class="is-size-6">Convert Acroforms, XFA PDFs, or flat PDF documents into responsive, interactive digital forms with enhanced functionality.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Modernize Legacy XFA Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Modernize Legacy XFA Forms</p>
+                    <p class="is-size-6">Transform complex XFA applications into modern, accessible digital experiences with improved user workflows.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Convert Screenshots to Digital Forms">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Convert Screenshots to Digital Forms</p>
+                    <p class="is-size-6">Turn images, screenshots, or hand-drawn forms into fully functional digital experiences.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-```
-┌─────────────────────────────────────────────────────────┐
-│ Loan Application - Multi-Step Form                    │
-├─────────────────────────────────────────────────────────┤
-│ Step 1: Personal Information                           │
-│  🏠 Property Type: [Primary] [Investment] [Commercial] │
-│  💰 Loan Amount: [$_______] (triggers different paths) │
-│  📊 Income Verification: [W2] [Self-Employed] [Other]  │
-│                                                         │
-│ Step 2: Financial Details (conditional based on above) │
-│  ↳ If Self-Employed: Show tax returns, profit/loss     │
-│  ↳ If W2: Show employment history, pay stubs           │
-│  ↳ Complex debt-to-income calculations                 │
-│                                                         │
-│ Step 3: Compliance & Review                            │
-│  📋 Regulatory disclosures, digital signatures         │
-│  🔍 Automated eligibility pre-screening                │
-└─────────────────────────────────────────────────────────┘
-```
+<!-- #### Import and Enhance Web Forms
 
-### Insurance Claim Form
-
-```
-┌─────────────────────────────────────────────────────────┐
-│ Insurance Claim - Adaptive Form                        │
-├─────────────────────────────────────────────────────────┤
-│ 🚗 Claim Type: [Auto] [Property] [Health] [Business]   │
-│                                                         │
-│ ↳ Auto Selected: Shows accident details, police report │
-│ ↳ Property: Shows damage assessment, repair estimates  │
-│ ↳ Health: Shows medical provider network, pre-auth     │
-│                                                         │
-│ 📎 Dynamic Document Requirements:                       │
-│   * Photos/videos of damage                            │
-│   * Police reports (auto only)                         │
-│   * Medical records (health only)                      │
-│   * Repair estimates (property only)                   │
-│                                                         │
-│ 🔄 Real-time claim status updates                      │
-└─────────────────────────────────────────────────────────┘
-```
-
-### Migration and Conversion Scenarios
-
-Transform your existing forms into powerful digital experiences with AI-powered conversion.
-
-
-#### Transform PDF Forms to Digital Forms
-
-Transform PDF forms with multiple fields into dynamic digital experiences with automated calculations and mobile-responsive design.
+Import existing HTML forms and enhance them with advanced features while preserving existing functionality.
 
 **Key benefits:**
 
-- Automated tax calculations and field dependencies
-- Digital signatures and e-filing integration
-- Mobile-responsive layout optimization
-- 95% reduction in processing errors
-
-
-#### Modernization Legacy XFA-based forms 
-
-You can convert complex XFA applications into modern multi-step wizards with real-time validation and accessibility compliance.
-
-**Key benefits:**
-
-- Streamlined multi-step wizard interface
-- Real-time validation with contextual help
-- Government database integration
-- Full WCAG 2.1 accessibility compliance
-
-
-#### Convert Screenshot of Form to a Digital Form
-
-You can turn any paper form into a digital experience. AEM Forms automatically optimizes layout, and creates integration-ready digital forms from a screenshot.
-
-**Key benefits:**
-
-- Intelligent field type detection
-- Optimized responsive layout generation
-- Enhanced validation beyond original paper
-- Integration-ready architecture
-
-#### Import and enhance existing web forms
-
-You can import your existing webform and add advanced validation, conditional logic, and multi-channel submission to your forms without breaking existing functionality.
-
-**Key benefits:**
-
-- Advanced validation logic and rules
-- Conditional field behaviors and workflows
+- Advanced validation and business logic
+- Conditional field behaviors
 - Multi-channel submission options
-- Built-in analytics and performance tracking
+- Enhanced user experience design -->
 
 ## Forms Experience Builder vs Traditional Development
 
@@ -222,45 +144,92 @@ You can import your existing webform and add advanced validation, conditional lo
 | **Time to Create** | 2-3 days | 2-3 hours |
 | **Technical Knowledge** | Required | Not required |
 | **Validation Rules** | Manual coding | Natural language |
-| **Mobile Optimization** | Manual CSS/JS | Automatic |
 | **Accessibility** | Manual implementation | Built-in compliance |
-| **Updates** | Code changes required | Natural language |
 
 
 ## Benefits for Organizations
 
-### Democratized Form Creation
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Democratized Form Creation">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Democratized Form Creation</p>
+                    <p class="is-size-6">Empower non-technical users to create sophisticated forms without programming knowledge through natural language conversations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Reduced Time to Value (TTV)">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Reduced Time to Value (TTV)</p>
+                    <p class="is-size-6">Dramatically accelerate form development from days to hours, enabling faster go-to-market for digital initiatives.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Interface Simplicity">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Interface Simplicity</p>
+                    <p class="is-size-6">Eliminate the learning curve with an intuitive conversational interface, reducing training time and increasing adoption.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Scaling Modernization Efforts">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">Scaling Modernization Efforts</p>
+                    <p class="is-size-6">Modernize legacy form portfolios efficiently, preserving business logic and enhancing user experience across your entire form ecosystem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-Empower non-technical users to create sophisticated forms without programming knowledge. Business analysts, subject matter experts, and content creators can directly translate their requirements into functional forms through natural language conversations.
+## Onboarding 
 
-### Reduced Time to Value (TTV)
+The Forms Experience Builder is currently available as part of the Early Access (EA) program. To participate and gain access, you'll need the following information:
 
-Dramatically accelerate form development from days to hours. What previously required extensive development cycles can now be accomplished in a single session through conversational AI, enabling faster go-to-market for digital initiatives.
+### Required Information
 
-### Interface Simplicity
+- **IMS Organization ID**: Your Adobe organization identifier
+- **Program ID**: Your specific program identifier within Adobe Experience Cloud
+- **Project Details**: Timeline, scope, and intended use cases
+- **Official Work Email**: Associated with your organization's Adobe account
 
-Eliminate the learning curve with an intuitive conversational interface. Users can create complex forms using natural language instead of learning technical form building tools, reducing training time and increasing adoption.
 
-### Scaling Modernization Efforts
+### How to Obtain IMS Organization ID and Program ID
 
-Modernize legacy form portfolios efficiently. Convert existing PDF, XFA, and HTML forms to responsive digital experiences while preserving business logic and enhancing user experience across your entire form ecosystem.
+For detailed steps to locate your IMS Organization ID and Program ID, see:
+
+- [Adobe Experience Cloud Organization Setup Guide](/help/onboarding/cloud-manager-introduction.md)
+- [Program and Environment Management](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+
+### Request Access
+
+1. Gather your IMS Organization ID and Program ID using the guides above
+2. Send an email to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) requesting access
+3. Include in your request:
+   - Organization name and IMS Organization ID
+   - Program ID
+   - Project timeline and scope
+   - Intended use cases and business objectives
+
+>[!IMPORTANT]
+>
+> **Limited Availability Program**: Access to Forms Experience Builder is subject to approval from internal stakeholders. Adobe will review your request based on program capacity and alignment with early access criteria. Approval is not guaranteed and depends on current program availability.
+
+For more information about the Early Access program and its features, see the [AEM Forms Early Access documentation](/help/forms/early-access-ea-features.md).
+
 
 ## Getting Started
 
 To get started with the Forms Experience Builder, visit the [Forms Experience Builder documentation](forms-ai-assistant-getting-started.md). You can access the Forms Experience Builder through the AEM Forms Editor or Universal Editor, depending on your preferred workflow.
 
 For organizations aiming to transform their form creation processes, the Forms Experience Builder offers a powerful, intuitive solution that combines the flexibility of conversational AI with the robustness of enterprise-grade form management.
-
-## Onboarding and Early Access
-
-The Forms Experience Builder is currently available as part of the Early Access (EA) program. To participate and gain access, follow these steps:
-
-1. Ensure you are using your official work email address associated with your organization.
-2. Send an email to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) requesting access to the Forms Experience Builder.
-3. Include your organization name and any relevant project details in your request to help expedite the onboarding process.
-
->[!NOTE]
->
-> Access to the Forms Experience Builder is limited to approved participants in the Early Access program. Adobe will review your request and provide further instructions for onboarding if you are eligible.
-
-For more information about the Early Access program and its features, see the [AEM Forms Early Access documentation](/help/forms/early-access-ea-features.md).

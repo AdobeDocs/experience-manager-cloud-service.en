@@ -19,7 +19,7 @@ Additionally, the Visual Rule Editor lets you define **success** and **failure h
 
 >[!NOTE]
 >
-> API integration in Rule Editor is also applicable to Edge Delivery Services Forms.
+> API integration in Rule Editor is also applicable to [Edge Delivery Services Forms authored in Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
 
 ## Comparison: API Integration Methods
 
@@ -70,6 +70,8 @@ The screenshot below displays the API integration configuration window:
   * **Add/Delete**: Add new mappings or remove existing ones.  
 
 ## Use Case: Populating Country Fields in a Visa Application Form
+
+>[!VIDEO](https://video.tv.adobe.com/v/3471606/rule-editor-api-integration/?quality=12&learn=on)
 
 **Scenario**: A government agency provides an online Visa Application Form with the following fields:
 
