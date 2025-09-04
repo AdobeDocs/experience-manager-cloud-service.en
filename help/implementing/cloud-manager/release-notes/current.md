@@ -21,6 +21,12 @@ The next planned release is Thursday, October 2, 2025.
 
 ## What's new {#what-is-new}
 
+* **Manually renew Adobe-managed domain validation certificates**
+
+    You can now manually renew Adobe-managed Domain Validation (DV) certificates from Cloud Manager or the Public API to refresh certificates proactively. <!-- CMGR-68738 -->
+
+    ![SSL certificate renew](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
+
 * **Support now added for Azure DevOps for private repositories** 
 
     Documentation updates include configuration steps for Bring Your Own Git with Azure DevOps and pull request validation. See [Add External Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
