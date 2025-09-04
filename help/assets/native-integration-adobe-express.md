@@ -44,7 +44,10 @@ After incorporating appropriate modifications in the Express canvas, you can sav
 
    ![Save assets in AEM](assets/adobe-express-share.png)
 
-2. From the Storage section in the right pane, select **AEM Assets**. Adobe Express displays the upload dialog.
+2. From the **[!UICONTROL Recommended]** section in the right pane, select **AEM Assets**. Adobe Express displays the upload dialog.
+
+   ![Save assets in AEM](assets/adobe-express-aem.png)
+
 3. Select either **Current Page** or **All Pages**. Specify a name and format for the asset(s) to export. You can export the canvas contents in PNG, JPEG, PDF, MP4, MP4+PNG, or MP4+JPEG formats. The format adjusts automatically based on the asset(s) on the canvas page(s).
 Selecting **Current Page** saves the asset on your current page to your destination folder. If you select **All Pages** and the export format is not PDF, all canvas pages are saved as separate files in a new folder within your destination folder. If the export format is PDF, all canvas pages are saved as a single PDF file in the destination folder.
 
@@ -59,20 +62,12 @@ As a best practice, Adobe recommends specifying values in the rest of the fields
 
 7. Click **[!UICONTROL Upload]** to upload the asset(s) to AEM Assets.
 
-Refer to [Supported file formats](asset-properties-content-hub.md#supported-formats).
-
-[!DNL Content Hub] supports all asset types and formats that the underlying [!DNL Assets] repository supports. The following table lists key file formats in [!DNL the Content Hub], which provide additional support for previewing assets visually:
-
 <table> 
     <tbody>
      <tr>
-      <th><strong>File type</strong></th>
       <th><strong>Supported formats</strong></th>
       <th><strong>Size</strong></th>
      </tr>
-     <tr>
-        <td rowspan="4"> Image </td>
-    </tr>
     </tr>
     <tr>
         <td>[!UICONTROL JPEG]</td>
@@ -87,44 +82,11 @@ Refer to [Supported file formats](asset-properties-content-hub.md#supported-form
         <td> Maximum 250 KB</td>
     </tr>
     <tr>
-        <td rowspan="4"> Video </td>
     </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Quicktime]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
         <td> 3840 X 3840 pixels, Maximum 200 MB</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL MPEG]</td>
-        <td> Maximum 200 MB </td>
-    </tr>
-    <tr>
-        <td rowspan="4"> Document </td>
-    </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL txt] (Plain)</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Doc/Docx]</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL XML]</td>
-        <td> - </td>
-    </tr>
-    <tr>
-        <td rowspan="2"> Print media </td>
-    </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL PDF]</td>
-        <td> - </td>
     </tr>
     </tbody>
 </table>
@@ -133,7 +95,7 @@ Refer to [Supported file formats](asset-properties-content-hub.md#supported-form
 
 1. For importing and exporting, the supported video file type is MP4.
 
-2. For **MP4 video import**, refer to the [supported file formats](asset-properties-content-hub.md#supported-formats). Additionally, videos with transparent backgrounds (alpha channel) are not supported.
+2. For **MP4 video import**, videos with transparent backgrounds (alpha channel) are not supported.
    <!--
    1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
    2. The maximum supported resolution is 3840 X 3840 pixels.
