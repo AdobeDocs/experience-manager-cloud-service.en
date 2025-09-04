@@ -66,13 +66,10 @@ Both models can coexist within the same Cloud Manager program, allowing phased m
 
 ## Prerequisites {#prerequisites}
 
-1. Onboard your site in Cloud Manager
-    – Required for both deployment models. Follow Onboard an AEM Site.
+1. Onboard your site in Cloud Manager – Required for both deployment models. Follow Onboard an AEM Site.
 
-2. Bring Your Own Git (BYOG) (optional)
-    – If you store site code outside Adobe Git, complete BYOG onboarding.
+2. Bring Your Own Git (BYOG) (optional) – If you store site code outside Adobe Git, complete BYOG onboarding.
 
-3. Edge Delivery license
-    – Ensure your program is licensed for Edge Delivery Services.
+3. Edge Delivery license – Ensure your program is licensed for Edge Delivery Services.
 
 

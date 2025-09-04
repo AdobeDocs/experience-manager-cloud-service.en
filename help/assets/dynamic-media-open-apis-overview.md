@@ -24,7 +24,7 @@ Dynamic Media with OpenAPI capabilities provides the following key benefits:
 
 * **Web-optimized delivery**: Digital assets are delivered in web-optimized formats to enhance your digital experiences' Core Web Vitals. This includes support for WebP renditions for images, adaptive streaming through HLS or DASH protocols for videos, and original renditions for documents.
 
-* **Dynamic asset transformation**: Our system allows for on-the-fly image transformation using URL parameters known as image modifiers. [For example, width, height, rotate, flip, quality, crop, format, and smart crop](/help/assets/deliver-assets-apis.md). Transformed renditions are generated dynamically and delivered seamlessly via the CDN.
+* [Dynamic asset transformation](https://developer.adobe.com/experience-cloud/experience-manager-apis): Our system allows for on-the-fly image transformation using URL parameters known as image modifiers. For example, width, height, rotate, flip, quality, crop, format, and smart crop. Transformed renditions are generated dynamically and delivered seamlessly via the CDN.
 
 * **Secure delivery of assets**: Dynamic Media with OpenAPI capabilities provides a mechanism for control over access to your digital assets. You can specify user roles or groups as metadata for to-be-secured assets and set a predefined timeframe during which [only authorized users can access these assets](/help/assets/restrict-assets-delivery.md). The delivery URLs for secured assets do not resolve for unauthorized users during the restricted period.
 
