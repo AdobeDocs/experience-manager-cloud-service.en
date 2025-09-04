@@ -229,6 +229,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Universal Editor {#univeral-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + 2025 {#2025}
+      + [2025.08.22 Release Notes](/help/release-notes/universal-editor/2025/2025-08-22.md)
       + [2025.08.14 Release Notes](/help/release-notes/universal-editor/2025/2025-08-14.md)
       + [2025.07.31 Release Notes](/help/release-notes/universal-editor/2025/2025-07-31.md)
       + [2025.07.09 Release Notes](/help/release-notes/universal-editor/2025/2025-07-09.md)
@@ -528,6 +529,7 @@ user-guide-title: AEM as a Cloud Service
   + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
   + [Enable Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
   + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
+  + [Troubleshoot AEM Assets issues](/help/assets/troubleshoot-aem-assets.md)
   + [Assets Collaborator users](/help/assets/assets-collaborator-users.md)
   + Manage digital assets {#manage}
     + Micro-Frontend Asset Selector {#asset-selector}
