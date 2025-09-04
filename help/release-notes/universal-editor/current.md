@@ -6,7 +6,7 @@ role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.09.22 Release Notes {#release-notes}
+# Universal Editor 2025.09.04 Release Notes {#release-notes}
 
 These are the release notes for the 4 September 2025 release of the Universal Editor.
 
