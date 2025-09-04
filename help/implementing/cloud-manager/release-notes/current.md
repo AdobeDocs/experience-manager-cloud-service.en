@@ -25,7 +25,7 @@ The next planned release is Thursday, October 2, 2025.
 
     Documentation updates include configuration steps for Bring Your Own Git with Azure DevOps and pull request validation. See [Add External Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
-* **Pull request checks for private respositories**
+* **Pull request checks for private repositories**
 
     Cloud Manager now supports config pipelines with private repositories across GitHub, Bitbucket, Azure DevOps, and GitLab. See [Pull Request Checks for Private Repositories](/help/implementing/cloud-manager/managing-code/github-check-config.md).
 
@@ -45,10 +45,10 @@ If you are interested in testing this new feature and sharing your feedback, sen
 Participate in Cloud Manager's beta programs to get exclusive access to upcoming features before their general release.
 
 The following opportunities are currently available:
-
+<!--
 ### Support for Custom Author Domains in Cloud Service
 
-AEM Cloud Service is going to soon support one custom domain per Author environment.
+AEM Cloud Service is going to soon support one custom domain per Author environment.-->
 
 ### One-click rollback for pipeline deployments {#one-click-rollback} 
 
