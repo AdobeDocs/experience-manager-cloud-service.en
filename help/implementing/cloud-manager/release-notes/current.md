@@ -21,29 +21,23 @@ The next planned release is Thursday, October 2, 2025.
 
 ## What's new {#what-is-new}
 
-* **Support now added for Azure DevOps private repositories** 
+* **Support now added for Azure DevOps for private repositories** 
 
     Documentation updates include configuration steps for Bring Your Own Git with Azure DevOps and pull request validation. See [Add External Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
-* **Config pipelines with private respositories**
+* **Pull request checks for private respositories**
 
-    Cloud Manager now supports config pipelines with private repositories across GitHub, Bitbucket, Azure DevOps, and GitLab.
+    Cloud Manager now supports config pipelines with private repositories across GitHub, Bitbucket, Azure DevOps, and GitLab. See [Pull Request Checks for Private Repositories](/help/implementing/cloud-manager/managing-code/github-check-config.md).
 
 * **Cloud Manager adds ECDSA (Elliptic Curve Digital Signature Algorithm) SSL certificate support**
 
     Cloud Manager now supports ECDSA certificates. The feature delivers strong security with smaller key sizes, enabling customers to apply lightweight modern cryptography in their CDN configurations. <!-- https://jira.corp.adobe.com/browse/CMGR-62399 -->
 
-* **Adobe Experience Hub now available**
- 
-    Experience Hub is a unified starting point that delivers personalized, contextual experiences to help users achieve goals faster. The rollout concludes by August 26, 2025 making it available to all users. The new Experience Hub is accessible directly at [experience.adobe.com](https://experience.adobe.com/). To learn more, see [Experience Hub](/help/experience-hub.md).
+### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
 
-* **Edge Delivery Services license can be included in a HIPAA program in a self-service manner** 
+Support for [staging-only and production-only pipelines](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md) has been introduced, enabling you to split full-stack production deployment pipelines into smaller, specialized deployments.
 
-    Organizations with healthcare or sensitive data requirements can now use Edge Delivery Services in a self-service manner, enabling HIPAA compliance to meet strict regulatory standards. <!-- CMGR-70016 -->
-
-* **BYOG is now available for Edge Delivery Services**
-
-    Cloud Manager now lets you configure external Git repositories, enabling flexible code-management workflows. <!--(CMGR‑69010, CMGR‑70988) --> It also lets you pull code from a chosen branch directly in the Cloud Manager UI, reducing manual repository tasks. See [Configure Edge Delivery site to use an external Git repository](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md) <!-- (CMGR‑68085)(CMGR-69015) --> <!-- KT: https://wiki.corp.adobe.com/display/DMSArchitecture/%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+with+EDS -->
+If you are interested in testing this new feature and sharing your feedback, send an email to  `Grp-cloudmanager_splitpipelines@adobe.com` from your email address associated with your Adobe ID. 
 
 
 ## Beta programs {#private-beta-program}
@@ -52,11 +46,9 @@ Participate in Cloud Manager's beta programs to get exclusive access to upcoming
 
 The following opportunities are currently available:
 
-### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
+### Support for Custom Author Domains in Cloud Service
 
-Support for [staging-only and production-only pipelines](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md) has been introduced, enabling you to split full-stack production deployment pipelines into smaller, specialized deployments.
-
-If you are interested in testing this new feature and sharing your feedback, send an email to  `Grp-cloudmanager_splitpipelines@adobe.com` from your email address associated with your Adobe ID. 
+AEM Cloud Service is going to soon support one custom domain per Author environment.
 
 ### One-click rollback for pipeline deployments {#one-click-rollback} 
 
@@ -134,12 +126,13 @@ See [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage
 
 <!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
 
-### Add Edge Delivery Config Pipeline {#add-eds-pipeline}
+### Add Edge Delivery config pipeline {#add-eds-pipeline}
 
 Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Config Pipelines** to manage settings such as traffic filtering rules and Web Application Firewall (WAF) configurations, where applicable. See [Supported Configurations](/help/operations/config-pipeline.md#configurations).
 
 **Recent enhancement**
 
+* Edge Delivery config pipelines now support secrets through Cloud Manager pipeline variables.
 * Edge Delivery Services pipelines now display **Configuration** in the **Deployed Code** column, enabling instant identification of configuration-only deployments. <!-- CMGR‑69681 -->
 * Cloud Manager shows **Add Edge Delivery Pipeline** once a program contains at least one Edge Delivery Services site and one mapped domain. Otherwise, the option appears disabled, and a tooltip explains missing requirements. <!-- CMGR‑69680 -->
 * The **Edge Delivery** tab shows a new **Edge Delivery pipelines** widget that lists each pipeline's Name, Status, Repository, and Branch. <!-- (CMGR-69052) -->
@@ -158,12 +151,12 @@ See [Add Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pi
 
 If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID.
 
-
+<!--
 ## Bug fixes
 
-* Pipelines now deliver variables only to the active Edge Delivery Services domain configuration, skipping any configuration removed during pipeline recreation. <!-- (CMGR‑70039) -->
-* Pipeline execution now starts reliably; fixed an issue where some pipelines failed to start due to internal resource handling errors. <!-- (CMGR‑58167) -->
-* Content Copy validates Cloud Manager permissions and blocks starts by users lacking Deployment Manager or Administrator rights. <!-- (CMGR‑62097) -->
+* Pipelines now deliver variables only to the active Edge Delivery Services domain configuration, skipping any configuration removed during pipeline recreation. <!-- (CMGR‑70039)
+* Pipeline execution now starts reliably; fixed an issue where some pipelines failed to start due to internal resource handling errors. (CMGR‑58167)
+* Content Copy validates Cloud Manager permissions and blocks starts by users lacking Deployment Manager or Administrator rights. (CMGR‑62097) -->
 
 
 <!-- ## Known issues {#known-issues} -->
