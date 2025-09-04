@@ -4,7 +4,7 @@ description: Learn how you can split staging and production deployments using de
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines"
 
 
 ---
@@ -45,11 +45,10 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 
 1. In the **Pipelines** window, click **Add Pipeline**.
 
-   * Select **Add Non-Production Pipeline** to create a stage-only pipeline.
-   * Select **Add Production Only Pipeline** to create a prod-only pipeline.
+   * Select **Add Non-Production Pipeline** to [create a stage-only pipeline](#stage-only).
+   * Select **Add Production Only Pipeline** to [create a prod-only pipeline](#prod-only).
 
-<!-- NEED NEW SCREENSHOT FROM SOMEONE!
-   ![Creating a prod/stage-only pipeline](/help/assets/configure-pipelines/prod-stage-pipelines.png)-->
+![Creating a prod/stage-only pipeline](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-stage-pipeline.png)
 
 >[!NOTE]
 >
@@ -59,36 +58,55 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 >* **Add Production Pipeline** is unavailable if a standard coupled pipeline already exists.
 >* Only one prod-only and one stage-only pipelines are allowed per program.
 
-### Stage-only pipelines {#stage-only}
+### Create a stage-only pipeline {#stage-only}
 
-1. After you select the **Add Non-Production Pipeline** option, the **Add Non-Production Pipeline** dialog box opens.
-1. To create a stage-only pipeline, select the stage environment in the **Eligible Deployment Environments** field for your pipeline.
-1. Complete the remaining fields.
-1. Click **Continue**.
+1. In the **Add Non-Production Pipeline** dialog box, on the **Configuration** tab, select **Deployment Pipeline** field for your pipeline.
+1. In the Non-Productoin Pipeline Name field, enter a free-text name.
+1. Select the desired deployment options, then click **Continue**.
 
-   ![Creating a stage-only pipeline](/help/implementing/cloud-manager/configuring-pipelines/assets/stage-only.png)
+   ![Configuration tab in the Add Non-Production Pipeline dialog box](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-1.png)
 
-1. On the **Stage Testing** tab, define the testing to perform in the staging environment. 
+1. On the **Source Code** tab, select **Full Stack Code**. This option builds and deploys the entire AEM application (back-end, Dispatcher/web tier config, and any front-end modules in the repo).
+
+1. In the **Eligible Deployment Environments** drop-down list, select the **stage** environment as the deployment environment for your pipeline. Selecting stage creates a pipeline dedicated to the stage environment (production promotion happens by way of a separate pipeline).
+
+1. Select your **Repository** and **Git Branch** in the respective drop-down lists, then click **Continue**. 
+
+   ![Source Code tab in the Add Non-Production Pipeline dialog box](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-2.png)
+
+1. On the **Experience Audit** tab, the specified Site URL is the publish URL that Cloud Manager audits for page quality. 
+
+1. In the **Page Path** field, specify which pages you want to audit, then click **![Add icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) Add Page**.
+
+   The Experience Audit analyzes each path you add for performance, accessibility, progressive web apps, best practices, SEO, and other quality checks. You can add multiple paths and remove any by clicking ![Cross size 400 icon](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg).
+
+   ![Experience Audit tab in the Add Non-Production Pipeline dialog box](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-3.png)
+
 1. Click **Save**.
 
-   ![Test parameters for a stage-only pipeline](/help/implementing/cloud-manager/configuring-pipelines/assets/stage-only-test.png)
 
-### Prod-only pipelines {#prod-only}
+### Create a prod-only pipeline {#prod-only}
 
-1. After you click **Add Production Only Pipeline**, its associated dialog box opens.
-1. In the **Pipeline Name** field, type the name you want. The remaining options and functionality of the dialog box work the same as those options found in the standard coupled pipeline creation dialog box. 
-1. In the lower-right corner of the dialog box, click **Save**.
+1. In the **Add Production Only Pipeline** dialog box, in the **Pipeline Name** text field, enter the free-text name of the pipeline.
+1. In the **Pipeline Name** field, type the name you want.
+1. Under **Production Deployment Options**, select **Pause before deploying to Production**.
 
-   ![Creating a production-only pipeline](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-only-pipeline.png)
+   This option inserts a manual approval gate right before the production step. The pipeline stops and waits for an approver (such as a Deployment Manager, or a Business Owner) to Approve or Cancel the production deploy. 
+   
+   Use this for change control or last-minute checks.
 
-## Run prod-only and stage-only pipelines {#running}
+1. Click **Save** to create the production-only pipeline with these options.
 
-Prod-only and stage-only pipelines are run in largely the same way as [all other pipelines are run](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines). See that documentation for details. However, there are two new features of these pipelines.
+   ![Creating a production-only pipeline](/help/implementing/cloud-manager/configuring-pipelines/assets/add-production-only-pipeline.png)
 
-<!-- * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.-->
+## Run stage-only and prod-only pipelines {#running}
+
+You can start the new pipelines [like any other pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines). You can also trigger a production-only pipeline directly from a stage-only pipeline's execution details.
+
+<!-- * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
 Prod-only pipeline run can be triggered directly from the execution details of a [stage-only pipeline](#stage-only-run).
 
-<!--
+
 ### Emergency Mode {#emergency-mode}
 
 When starting production-only and staging-online pipelines, you are prompted to confirm the start and how it starts.
@@ -98,19 +116,25 @@ When starting production-only and staging-online pipelines, you are prompted to 
 
 ![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png) -->
 
-### Stage-only pipelines {#stage-only-run}
+### Run stage-only pipelines {#stage-only-run}
 
-A stage-only pipeline runs in nearly the same way as standard coupled pipelines. However, at the end of the run, after the testing steps, a **Promote Build** button appears. This button lets you start a prod-only pipeline execution using the artifacts that were deployed on stage in the run and deploy them to production.
+In the execution details, a **Promote Build** button appears after the testing steps. Click it to trigger a production-only pipeline that deploys this run's stage artifacts to production. The button shows only on the latest successful stage-only run.
 
-![Stage-only pipeline run](/help/implementing/cloud-manager/configuring-pipelines/assets/stage-only-pipeline-run.png)
+![Stage-only pipeline run](/help/implementing/cloud-manager/configuring-pipelines/assets/stage-only-pipelines-run.png)
 
-Clicking **Promote Build** prompts you to confirm the run of the related stage-only pipeline <!-- either--> normally <!-- or in [emergency mode](#emergency-mode)-->.
+When you click **Promote Build**, if a stage-only pipeline exists, a confirmation dialog box opens to start it. Click **Run**. 
 
-If a prod-only pipeline does not exist, you are prompted to create one.
+![Promote Build - Run Pipeline dialog box](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
 
-### Prod-only pipelines {#prod-only-run}
+If none exists, a setup dialog box prompts you to create one.
 
-For prod-only pipelines, be sure you identify the source artifacts that you want deployed to production. These details are found in the **Artifact Preparation** step. You can navigate to those executions for more details and logs.
+![Promote Build - No valid pipeline dialog box](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-no-valid-pipeline.png)
 
-![Artifact details](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-only-pipeline-run.png)
+
+### Run prod-only pipelines {#prod-only-run}
+
+For a **production-only** pipeline, Cloud Manager displays the source artifacts that are deployed to production. Check the **Artifact Preparation** step for the source execution, then open it to view details and logs.
+
+
+![Artifact details](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-only-pipelines-run.png)
 
