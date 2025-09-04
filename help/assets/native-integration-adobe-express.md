@@ -93,7 +93,7 @@ As a best practice, Adobe recommends specifying values in the rest of the fields
 
 1. For importing and exporting, the supported video file type is MP4.
 
-2. For **MP4 video import**, refer to the [supported file formats](asset-properties-content-hub.md#supported-formats). Additionally, videos with transparent backgrounds (alpha channel) are not supported.
+2. For **MP4 video import**, videos with transparent backgrounds (alpha channel) are not supported.
    <!--
    1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
    2. The maximum supported resolution is 3840 X 3840 pixels.
