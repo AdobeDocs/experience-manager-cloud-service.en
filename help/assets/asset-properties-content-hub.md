@@ -39,7 +39,7 @@ Before you use, share, or download an asset, you can view it more closely. The p
 * **K:** Close preview screen
 * **L:** Information of an asset which includes title, format, size, resolution, tags, color tags, and smart tags. 
 
-## Supported file formats {#supported-formats}
+## Supported asset formats {#supported-formats}
 
 [!DNL Content Hub] supports all asset types and formats that the underlying [!DNL Assets] repository supports. The following table lists key file formats in [!DNL the Content Hub], which provide additional support for previewing assets visually:
 
@@ -48,23 +48,16 @@ Before you use, share, or download an asset, you can view it more closely. The p
      <tr>
       <th><strong>File type</strong></th>
       <th><strong>Supported formats</strong></th>
-      <th><strong>Size</strong></th>
      </tr>
      <tr>
-        <td rowspan="4"> Image </td>
+        <td rowspan="3"> Image </td>
     </tr>
     </tr>
     <tr>
         <td>[!UICONTROL JPEG]</td>
-        <td> 8000 X 8000 pixels, Maximum 40MB</td>
     </tr>
     <tr>
         <td>[!UICONTROL PNG]</td>
-        <td> 8000 X 8000 pixels, Maximum 40MB</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL SVG]</td>
-        <td> Maximum 250 KB</td>
     </tr>
     <tr>
         <td rowspan="4"> Video </td>
@@ -72,15 +65,12 @@ Before you use, share, or download an asset, you can view it more closely. The p
     </tr>
     <tr>
         <td>[!UICONTROL Quicktime]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
-        <td> 3840 X 3840 pixels, Maximum 200 MB</td>
     </tr>
     <tr>
         <td>[!UICONTROL MPEG]</td>
-        <td> Maximum 200 MB </td>
     </tr>
     <tr>
         <td rowspan="4"> Document </td>
@@ -88,15 +78,12 @@ Before you use, share, or download an asset, you can view it more closely. The p
     </tr>
     <tr>
         <td>[!UICONTROL txt] (Plain)</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL Doc/Docx]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td>[!UICONTROL XML]</td>
-        <td> - </td>
     </tr>
     <tr>
         <td rowspan="2"> Print media </td>
@@ -104,7 +91,6 @@ Before you use, share, or download an asset, you can view it more closely. The p
     </tr>
     <tr>
         <td>[!UICONTROL PDF]</td>
-        <td> - </td>
     </tr>
     </tbody>
 </table>
