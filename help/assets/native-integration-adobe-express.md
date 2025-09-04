@@ -17,7 +17,6 @@ AEM Assets integrates natively with Adobe Express, which allows you to directly 
 
 Entitlements to access Adobe Express and at least one environment within AEM Assets. The environment can be any of the repositories within Assets as a Cloud Service or Assets Essentials.
 
-
 ## Use AEM Assets in Adobe Express editor {#use-aem-assets-in-express}
 
 Perform the following steps to start using AEM Assets in Adobe Express editor:
@@ -60,19 +59,88 @@ As a best practice, Adobe recommends specifying values in the rest of the fields
 
 7. Click **[!UICONTROL Upload]** to upload the asset(s) to AEM Assets.
 
+Refer to [Supported file formats](asset-properties-content-hub.md#supported-formats).
+
+[!DNL Content Hub] supports all asset types and formats that the underlying [!DNL Assets] repository supports. The following table lists key file formats in [!DNL the Content Hub], which provide additional support for previewing assets visually:
+
+<table> 
+    <tbody>
+     <tr>
+      <th><strong>File type</strong></th>
+      <th><strong>Supported formats</strong></th>
+      <th><strong>Size</strong></th>
+     </tr>
+     <tr>
+        <td rowspan="4"> Image </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL JPEG]</td>
+        <td> 8000 X 8000 pixels, Maximum 40MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PNG]</td>
+        <td> 8000 X 8000 pixels, Maximum 40MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL SVG]</td>
+        <td> Maximum 250 KB</td>
+    </tr>
+    <tr>
+        <td rowspan="4"> Video </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Quicktime]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MP4]</td>
+        <td> 3840 X 3840 pixels, Maximum 200 MB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MPEG]</td>
+        <td> Maximum 200 MB </td>
+    </tr>
+    <tr>
+        <td rowspan="4"> Document </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL txt] (Plain)</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Doc/Docx]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL XML]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td rowspan="2"> Print media </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PDF]</td>
+        <td> - </td>
+    </tr>
+    </tbody>
+</table>
+
 ## Limitations {#limitations}
 
 1. For importing and exporting, the supported video file type is MP4.
 
-2. For MP4 video import: 
-
+2. For **MP4 video import**, refer to the [supported file formats](asset-properties-content-hub.md#supported-formats). Additionally, videos with transparent backgrounds (alpha channel) are not supported.
+   <!--
    1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
    2. The maximum supported resolution is 3840 X 3840 pixels.
    3. Videos with transparent backgrounds (alpha channel) are not supported.
+   -->
 
-3. For MP4 video export: 
-
-   1. The maximum file size supported is 200 MB. If this limit exceeds, an alert suggests trimming the video to 200 MB or less, or manually uploading it to the AEM Assets destination folder after downloading it.
+3. For **MP4 video export**, the maximum file size supported is 200 MB. If this limit exceeds, an alert suggests trimming the video to 200 MB or less, or manually uploading it to the AEM Assets destination folder after downloading it.
 
    
    
