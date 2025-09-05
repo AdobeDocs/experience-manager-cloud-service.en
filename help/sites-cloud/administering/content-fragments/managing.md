@@ -129,6 +129,18 @@ The main/right panel (table view) of the console provides a range of information
 
     ![Content Fragments console - Language dialog](assets/cf-managing-console-languages-dialog.png)
 
+* **Workflows**
+
+  * Information only
+
+  * Select the icon for a specific fragment: 
+
+    ![Content Fragments console - Workflows icon](assets/cf-managing-console-workflows-icon.png)
+
+    To open a dialog with detailed information about workflows (past and current) for the fragment.:
+
+    ![Content Fragments console - Workflows dialog](assets/cf-managing-console-workflows-dialog.png)
+
 ## Actions {#actions}
 
 Within the console there is a range of actions that you can use, either directly, or after selecting a specific fragment:
