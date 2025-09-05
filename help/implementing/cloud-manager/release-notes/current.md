@@ -35,10 +35,6 @@ The next planned release is Thursday, October 2, 2025.
 
     Cloud Manager now supports config pipelines with private repositories across GitHub, Bitbucket, Azure DevOps, and GitLab. See [Pull Request Checks for Private Repositories](/help/implementing/cloud-manager/managing-code/github-check-config.md).
 
-* **Cloud Manager adds ECDSA (Elliptic Curve Digital Signature Algorithm) SSL certificate support**
-
-    Cloud Manager now supports ECDSA certificates. The feature delivers strong security with smaller key sizes, enabling customers to apply lightweight modern cryptography in their CDN configurations. <!-- https://jira.corp.adobe.com/browse/CMGR-62399 -->
-
 <!--
 ### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
 
