@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2025.08.22 Release Notes
-description: These are the release notes for the 2025.08.22 release of the Universal Editor.
+title: Universal Editor 2025.09.04 Release Notes
+description: These are the release notes for the 2025.09.04 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.08.22 Release Notes {#release-notes}
+# Universal Editor 2025.09.04 Release Notes {#release-notes}
 
-These are the release notes for the 22 August 2025 release of the Universal Editor.
+These are the release notes for the 4 September 2025 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -16,11 +16,14 @@ These are the release notes for the 22 August 2025 release of the Universal Edit
 
 ## What's New {#what-is-new}
 
-* New features for [RTE early adopters](#new-rte)
-  * Link title is now available in the link dialog.
-  * Unlinking is now available.
-  * List items now support inline formatting and links.
-  * Scrollable area was fixed.
+* Copy and paste is available for [early adopters](#copy-paste)
+
+### Undo/Redo {#undo-redo}
+
+Undo and redo is now available to Universal Editor content authors.
+
+* This includes edits done in context, edits done via the Properties panel, as well as adding (or duplicating), moving, and deleting blocks.
+* Undo and redo is limited to the current browser session.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -30,16 +33,14 @@ If you are interested in testing these upcoming features and sharing your feedba
 
 The new ProseMirror RTE, featuring a page picker in the link dialog, is now available in the right panel.
 
-### Undo/Redo {#undo-redo}
+### Copy/Paste {#copy-paste}
 
-Undo and redo is now available to Universal Editor content authors.
-
-* This includes edits done in context, edits done via the Properties panel, as well as adding (or duplicating), moving, and deleting blocks.
-* Undo and redo is limited to the current browser session.
+Copy and pasting of components within the same page is now available to content authors.
 
 ## Other Improvements {#other-improvements}
 
-* [The undo/redo early adopter feature](#undo-redo) no longer triggers a page reload when a component is added via a undo or redo operation.
+* The styling of the editor toolbar has been updated to align better with the upcoming new RTE.
+* The filters in the asset picker dialog have been restored.
 
 ## Deprecations {#deprecations}
 
