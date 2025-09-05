@@ -124,6 +124,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2025 {#2025}
+      + [2025.8.0](/help/implementing/cloud-manager/release-notes/2025/2025-8-0.md)
       + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
       + [2025.6.0](/help/implementing/cloud-manager/release-notes/2025/2025-6-0.md)
       + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
@@ -228,6 +229,7 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Universal Editor {#univeral-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + 2025 {#2025}
+      + [2025.08.22 Release Notes](/help/release-notes/universal-editor/2025/2025-08-22.md)
       + [2025.08.14 Release Notes](/help/release-notes/universal-editor/2025/2025-08-14.md)
       + [2025.07.31 Release Notes](/help/release-notes/universal-editor/2025/2025-07-31.md)
       + [2025.07.09 Release Notes](/help/release-notes/universal-editor/2025/2025-07-09.md)
@@ -527,6 +529,7 @@ user-guide-title: AEM as a Cloud Service
   + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
   + [Enable Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
   + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
+  + [Troubleshoot AEM Assets issues](/help/assets/troubleshoot-aem-assets.md)
   + [Assets Collaborator users](/help/assets/assets-collaborator-users.md)
   + Manage digital assets {#manage}
     + Micro-Frontend Asset Selector {#asset-selector}
@@ -678,6 +681,7 @@ user-guide-title: AEM as a Cloud Service
       + [Preview assets](/help/assets/preview-assets.md)
       + [Frequently asked questions](/help/assets/dynamic-media-open-apis-faqs.md)
       + [Configure custom domain](/help/assets/configure-custom-domain.md)
+      + [Optimize images](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
   + Working with Assets view {#assets-view}
     + [Introduction](/help/assets/assets-view-introduction.md)
     + [Getting started](/help/assets/get-started-assets-view.md)
@@ -1241,13 +1245,14 @@ user-guide-title: AEM as a Cloud Service
       + [Use Git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
       + [Use Multiple Repositories](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
       + [Enterprise Development Team Setup](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-      + [GitHub Check Configuration](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+      + [Pull Request Checks for Private Repositories](/help/implementing/cloud-manager/managing-code/github-check-config.md)
       + [GitHub Check Annotations](/help/implementing/cloud-manager/managing-code/github-annotations.md)
     + [Environment Variables](/help/implementing/cloud-manager/environment-variables.md)
     + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
       + [Introduction to CI-CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
       + [Configure a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
       + [Configure a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+      + [Split Stage and Production Only Pipeline (Beta)](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md)
       + [Configure an Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
       + [Manage Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
       + [Pipeline Variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
