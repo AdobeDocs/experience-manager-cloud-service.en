@@ -36,7 +36,7 @@ Before the team members that you assigned to the **Business Owner** role can acc
 
    Return to the previous step, [Assign Team Members to Cloud Manager Product Profiles](assign-profiles-cloud-manager.md), for details on assigning the **Business Owner** role to the system administrator.
 
-1. Sign into Cloud Manager at [experiece.adobe.com](https://experience.adobe.com/).
+1. Sign into Cloud Manager at [experiece.adobe.com](https://experience.adobe.com).
 1. In the Quick Access grouping, click **Experience Manager**.
 1. In the left side panel, click **Cloud Manager**.
 

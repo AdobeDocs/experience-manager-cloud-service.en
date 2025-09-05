@@ -1,22 +1,22 @@
 ---
-title: GitHub Check Configuration for Private Repositories
+title: Pull Request Checks for Private Repositories
 description: Learn how to control the pipelines that are created automatically to validate each pull request to a private repository.
 exl-id: 3ae3c19e-2621-4073-ae17-32663ccf9e7b
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
-# GitHub check configuration for private repositories {#github-check-config}
+# Pull request checks for private repositories {#github-check-config}
 
 Learn how to control the pipelines that are created automatically to validate each pull request to a private repository.
 
-## Configuration of GitHub checks {#configuration}
+## Configuration of private repository checks {#configuration}
 
 When using [private repositories](private-repositories.md#using), a [full stack code quality pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) is created automatically. This pipeline is started at each pull request update.
 
 You can control these checks by creating a `.cloudmanager/pr_pipelines.yml` configuration file in the default branch of the private repository.
 
 ```yaml
-github:
+pullRequest:
   shouldDeletePreviousComment: false
   shouldSkipCheckAnnotations: false
 pipelines:
