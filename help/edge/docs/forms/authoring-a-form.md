@@ -5,7 +5,8 @@ feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
 hide: yes
-hidefromToC: yes
+index: no
+hidefromtoc: yes
 ---
 # How to Author Forms in Adobe Experience Manager (AEM)?
 
