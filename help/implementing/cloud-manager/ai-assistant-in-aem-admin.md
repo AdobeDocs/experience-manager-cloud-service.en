@@ -129,7 +129,7 @@ You can use an existing AEM user group if it meets AI Assistant access requireme
 
 1. In the **User groups** page for the **AI Assistant in AEM**, click the **Users** tab, then click **Add users**.
 
-    ![The AI Assistant in AEM user groups page, showing the Users tab and the Add users buttion](/help/implementing/cloud-manager/assets/ai-assistant-add-users.png)
+    ![AI Assistant in AEM user groups page, showing the Users tab and the Add users buttion](/help/implementing/cloud-manager/assets/ai-assistant-add-users.png)
 
 1. On the **`Add users to this user group`** page, search for and select users who need access to AI Assistant in AEM.
 
@@ -167,7 +167,7 @@ Reference article: [Manage product profiles for enterprise users](https://helpx.
 1. Near the lower-right corner of the dialog box, click **Apply**.
 1. Near the lower-right corner of the **Assign products and profiles** page, click **Save**.
 
-    ![The AI Assistant product profile shown assigned to AI Assistant in AEM user group](/help/implementing/cloud-manager/assets/ai-assistant-profile-assigned-to-user-group.png)
+    ![AI Assistant product profile shown assigned to AI Assistant in AEM user group](/help/implementing/cloud-manager/assets/ai-assistant-profile-assigned-to-user-group.png)
 
 
 ## Verify the configuration

@@ -8,9 +8,9 @@ exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
 ---
 # AI Assistant in AEM {#about-ai-assistant-in-aem}
 
-The AI Assistant in Adobe Experience Manager (AEM) offers a conversational interface designed to streamline finding answers to your AEM-related queries. It helps you get instant answers to your AEM product-related questions (*available to all users*), and automate support ticket creation (*available to Support Admins*). 
+AI Assistant in Adobe Experience Manager (AEM) offers a conversational interface designed to streamline finding answers to your AEM-related queries. It helps you get instant answers to your AEM product-related questions (*available to all users*), and automate support ticket creation (*available to Support Admins*). 
 
-The AI Assistant supports AEM as a Cloud Service, including the following solutions:
+AI Assistant supports AEM as a Cloud Service, including the following solutions:
 
 * Experience Hub overview page
 * Edge Delivery Services
@@ -62,7 +62,7 @@ The current scope of AI Assistant in AEM focuses on addressing product knowledge
 
 ## Privacy, Security, and Governance{#privacy-security-governance}
  
-The AI Assistant in AEM is designed with a strong emphasis on privacy, security, and governance.
+AI Assistant in AEM is designed with a strong emphasis on privacy, security, and governance.
 
 This article outlines the trust-centered features that you can expect from AI Assistant in AEM:
 
