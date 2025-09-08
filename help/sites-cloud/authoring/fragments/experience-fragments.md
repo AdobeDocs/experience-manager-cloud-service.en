@@ -440,6 +440,16 @@ Publishing your Experience Fragment is basically the same as [publishing a page]
 
 Alternatively you can also [publish to Preview](/help/sites-cloud/authoring/sites-console/previewing-content.md) (again from the Experience Fragments console or editor).
 
+>[!CAUTION]
+>
+>By default, publishing the root folder of Experience Fragments (located directly under `/content/experience-fragments`):
+>
+>* only publishes the container folder itself
+>* does not publish any children
+>* unpublishes any children already published
+>
+>For publication of all Experience Fragments in the folder, each one must be published separately.
+
 ## Exporting Experience Fragments {#exporting-experience-fragments}
 
 By default, Experience Fragments are delivered in the HTML format. This can be used by both AEM and third-party channels alike.
