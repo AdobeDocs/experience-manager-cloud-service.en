@@ -11,6 +11,12 @@ Transform your long asset delivery URLs into short, branded vanity URLs using [!
 
 A vanity URL is a short, clean, and readable version of your complex delivery URL that is easier to remember and share. When your user click your vanity URL, Dynamic Media with OpenAPI automatically redirects to the original asset location. DM with OpenAPI maps your vanity URL to the original asset UUID and handles the redirection at the server level. The content loads instantly, while the user continue to see the vanity URL in their address bar. This redirection process is not visible to the user. The redirection process does not impact existing workflows, and asset delivery continues as usual. You can customize the vanity URL in real time without affecting the asset delivery performance.
 
+
+Assets are stored with a unique UUID-based key in the Blob store. Each asset has a metadata JSON doc with asset UUID as key and the asset path as the value. A generic asset delivery URL includes asset UUIDs. When a user hits the delivery URL containing a UUID, the backend resolves the UUID to fetch asset's metadata from key-value store using the UUID  and serves the asset. 
+
+Asset UUID in the asset delivery URL makes the URL long and complex. Replace these asset UUIDs with vanity IDs to make the URL short and readable. An asset can have multiple vanity iDs. Define the vanity IDs of each asset in your custom metadata field. map vanity IDs to asset UUIDs for asset delivery. This Mapping performas this mapping at ingestion time and resolve them properly at delivery time.
+
+
 The following example compares a generic asset delivery URL with its vanity URL:
 
 **Generic URL (including long system-generated UUID)**
