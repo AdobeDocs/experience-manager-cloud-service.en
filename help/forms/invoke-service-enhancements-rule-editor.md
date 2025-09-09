@@ -7,8 +7,7 @@ level: Beginner, Intermediate
 keywords: invoke service enhancements in VRE, populating drop-down options using invoke service, Set repeatable panel using output of invoke service, Set panel using output of invoke service, Use output parameter of invoke service to validate other field.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
 ---
-# External API Visual Rule Editor for forms based on Core Components
-
+# Integrating External APIs with Visual Rule Editor in Core Component Forms
 
 The Visual Rule Editor in an Adaptive Form supports the **Invoke Service** feature, enabling you to connect to external APIs through Form Data Models (FDM) configured for your instance. You can map form fields directly to the service's input parameters and use the event payload option to map the output parameters. The Visual Rule Editor also lets you define rules for success and failure handlers based on the service's response: success handlers handle successful API calls, while failure handlers manage errors.
 
