@@ -6,7 +6,7 @@ exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
 ---
 # Search Assets in [!DNL Content Hub] {#search-assets}
 
-When you have a large number of assets in your repository, searching for the right asset is time-consuming. [!DNL The Content Hub] search provides you with the capability to look for the approved assets so that you can perform additional actions on them, such as download, share, or create collections. You can utilize various capabilities to narrow down your search results, such as, performing text-based search, using filters, performing tags or smart tags-specific search, searching for a particular file format, and so on.
+When you have a large number of assets in your repository, searching for the right asset is time-consuming. [!DNL The Content Hub] search provides you with the capability to look for the approved assets so that you can perform additional actions on them, such as download, share, or create collections. You can utilize various capabilities to narrow down your search results, such as performing text-based search, using filters, performing tags or smart tags-specific search, searching for a particular file format, and so on.
 
 ## Prerequisites {#prerequisites}
 
@@ -142,6 +142,24 @@ The default filters include file format, approved by, date approved, expired and
 
 -->
 
+## Bulk search {#bulk-search}
+
+Bulk Search of assets allows you to look up multiple assets simultaneously by entering a list of identifiers (such as names, file formats, colors, tags, and more). Instead of searching assets one by one, [!DNL Content Hub] Bulk Search makes it faster to discover the assets you need. With this capability, you can enter multiple values for any filter property—separated by a delimiter (for example, multiple SKU IDs)—and instantly retrieve all matching assets with a single search.
+
+To search for multiple assets at once, enter multiple values in a single query by separating them with delimiters ` [ , | \t | \r | \n | \r\n ]`. You can also add more delimiters depending upon your use case. See [Configure Bulk Search](configure-content-hub-ui-options.md#bulk-search-configuration).
+
+To perform Bulk Search in the [!DNL Content Hub], execute the following steps:
+
+1. Once Bulk Search is [configured](configure-content-hub-ui-options.md#bulk-search-configuration), you can see Bulk Search toggle on the [!DNL Content Hub] filter properties which you configured. You can enable or disable it as per the requirement.
+
+1. Add a search query containing delimiters that are specified in the configuration. The search query should contain a string accompanied by multiple comma-separated values.
+
+  ![Bulk Search UI](assets/bulk-search-ui.png)
+
 ## Do more with search {#do-more-with-search}
 
 [!DNL The Content Hub] is not limited to search, instead it allows you to perform additional actions, such as [download](download-assets-content-hub.md), [share](share-assets-content-hub.md), and [add assets to collection](collections-content-hub.md), right from the search or preview interface. Select the assets on the search results page to view these options.
+
+Learn more about [configuring assets in the [!DNL Content Hub]](configure-content-hub-ui-options.md).
+
+
