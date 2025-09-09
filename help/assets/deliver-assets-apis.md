@@ -28,8 +28,8 @@ The following table illustrates the usage of the various available Delivery APIs
 
 >[!IMPORTANT]
 >
->You can test any modifier, which is not generally available via experimental APIs. For example, </adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>
-Click here to know more on how to use the [experimental APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) and the [complete list of modifiers](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+>You can test any modifier, which is not generally available via experimental APIs. For example, `</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`
+>Click here to know more on how to use the [experimental APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis) and the [complete list of modifiers](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 Dynamic Media with OpenAPI capabilities also supports long form videos. The videos can support upto 50 GB and 2 hours.
 
