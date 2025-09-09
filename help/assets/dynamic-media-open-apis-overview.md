@@ -32,6 +32,13 @@ Dynamic Media with OpenAPI capabilities provides the following key benefits:
 
 ![Dynamic Media Open API data flow diagram](assets/dm-openapi-dfd.png)
 
+For information on the available Dynamic Media offerings and their capabilities, see [Dynamic Media Prime and Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md).
+
+>[!NOTE]
+>
+>DM Prime customers can use basic image modifiers, including rotate, crop, flip, height, width, and quality. Smart Imaging does not support AVIF for DM Prime customers.
+
+
 ## Prerequisites to access Dynamic Media with OpenAPI capabilities {#prerequisites-dynaminc-media-open-apis}
 
 To access Dynamic Media with OpenAPI capabilities, you must have licences for:
