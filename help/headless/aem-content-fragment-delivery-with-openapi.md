@@ -76,6 +76,14 @@ The API allows new requests at a rate of up to 200 requests per second, per envi
 
 Once this limit is exceeded, the API starts sending [429 error](https://www.rfc-editor.org/rfc/rfc6585#section-4) responses. These errors must be handled by any client applications, and failed requests retried following an exponential backoff retry. The HTTP response comes with a specific header, `Retry-After`, that indicates to the client how long they need to wait before before sending the request again.
 
+### Authenticated Requests {#authenticated-requests}
+
+Support for authenticated requests can be implemented with the [AEM CDN Edge key](/help/implementing/dispatcher/cdn-credentials-authentication.md). Using the AEM CDN Edge key allows you to rely on the AEM CDN, and ensure that only specific requests can access the API, based on the provided Edge key header.
+
+>[!NOTE]
+>
+>Authorization based on the repository-specific ACLs is currently not supported.
+
 <!-- 
 ## Limitations {#limitations}
 -->
