@@ -73,6 +73,14 @@ To subscribe to the notification categories:
 
 ## Watch and unwatch folders, assets, or collections {#watch-unwatch-assets}
 
+You can watch and unwatch folders, assets, or collections to stay informed, enabling better collaboration around the assets you are monitoring.
+
+Perform the following steps to watch folders, assets, or collections:
+
+1. Browse the **[!UICONTROL Assets]** or **[!UICONTROL Collections]** under [!UICONTROL Asset Management].
+
+1. Select an asset or folder, then click **[!UICONTROL Watch]** in the toolbar above.
+
 After [subscribing to the notification categories](#subscribe-to-notification-categories), you must subscribe to the content to start receiving notifications.
 
 >[!NOTE]
