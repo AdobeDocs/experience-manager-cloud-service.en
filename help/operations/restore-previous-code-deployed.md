@@ -16,6 +16,8 @@ Use **Restore previous code deployed** to roll an environment back instantly to 
 
 You simply open the selected environment's ![More icon or ellipsis menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) menu and choose **Restore** > **Previous code deployed** to roll back the most recently deployed source code in seconds.
 
+You can restore previous source code on `Development` environments, `Stage` environments, and `Specialized Testng Environments`.
+
 >[!TIP]
 >
 >You can view the active source-code version in use in the environment's details view, under the **General** tab. See [View details of an environment](/help/implementing/cloud-manager/manage-environments.md#viewing-environment).
@@ -24,13 +26,14 @@ You simply open the selected environment's ![More icon or ellipsis menu icon](ht
 
 The **Restore previous code deployed** feature becomes available only when **every** condition below is true:
 
+* Only one restore is allowed per successful pipeline execution; to restore again, complete another successful pipeline run.
 * You hold **Environment Restore Create** permissions. For details on managing permissions, see [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
 * Your organization is enrolled in the beta program and the feature flag is on.
 * The program runs on AEM as a Cloud Service.
-* The chosen environment is a `Development` environment (temporary Beta limit).
 * The last pipeline for that environment finished successfully and ran **fewer than 30 days** ago.
 * The environment status is *Running* and no pipeline is in progress.
 
+Restore The chosen environment is a `Development`, Stage, or Specialized Testing Environment.
 If any check fails, Cloud Manager opens the following dialog box that lists one or more unmet conditions and disables **Confirm**, preventing the restore.
 
 ![Restore previous code deployed failure dialog box](/help/operations/assets/restore-previous-code-deployment-not-allowed.png).
