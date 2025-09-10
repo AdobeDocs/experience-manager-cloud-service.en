@@ -149,6 +149,9 @@ The location bar shows you the address of the page you are editing. Select to en
 
 Select the Undo or Redo buttons to undo or redo the last edit in the editor. Please see the document [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) for more information.
 
+![Undo icon](assets/undo.png)
+![Redo icon](assets/redo.png)
+
 >[!TIP]
 >
 >Use the hot key `Command-Z` or `Shift-Command-Z` to undo or redo, respectively.
