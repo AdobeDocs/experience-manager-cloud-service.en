@@ -17,13 +17,9 @@ These are the release notes for the 4 September 2025 release of the Universal Ed
 ## What's New {#what-is-new}
 
 * Copy and paste is available for [early adopters](#copy-paste)
-
-### Undo/Redo {#undo-redo}
-
-Undo and redo is now available to Universal Editor content authors.
-
-* This includes edits done in context, edits done via the Properties panel, as well as adding (or duplicating), moving, and deleting blocks.
-* Undo and redo is limited to the current browser session.
+* [Undo and redo](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) is now available to content authors.
+  * Undoing and redoing can be performed for edits done in context, edits done via the Properties panel, as well as adding, duplicating, moving, and deleting blocks.
+  * Undo and redo is limited to the current browser session.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -41,8 +37,3 @@ Copy and pasting of components within the same page is now available to content 
 
 * The styling of the editor toolbar has been updated to align better with the upcoming new RTE.
 * The filters in the asset picker dialog have been restored.
-
-## Deprecations {#deprecations}
-
-* The `text-input` and `text-area` components were officially deprecated with [release 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)
-  * In `model-definition.json`, use the text component to create text inputs for the Properties panel.
