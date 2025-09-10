@@ -106,11 +106,16 @@ The **Universal Editor Toolbar** provides key actions for testing and publishing
 
 **For your first form:**
 
-1. **Start building** - Add components using the **Add** button (`a`)
-2. **Configure fields** - Select components and use **Properties Mode** (`d`)
-3. **Test your form** - Use **Preview Mode** (`p`) to interact with your form
-4. **Check mobile view** - Switch to **Responsive Mode** for mobile testing
-5. **Go live** - Click **Publish** when ready
+1. **Add an Adaptive Form component** – Insert the `Adaptive Form` component into a section. 
+2. **Start building** - Add components using the **Add** button (`a`)
+3. **Configure fields** - Select components and use **Properties Mode** (`d`)
+4. **Test your form** - Use **Preview Mode** (`p`) to interact with your form
+5. **Check mobile view** - Switch to **Responsive Mode** for mobile testing
+6. **Go live** - Click **Publish** when ready
+
+>[!NOTE]
+>
+> To learn the detailed steps for creating forms in Universal Editor, see [Create and Publish Adaptive Forms with Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md). 
 
 **Validation Checkpoints:**
 
@@ -212,7 +217,7 @@ The **Universal Editor Toolbar** contains your primary form editing and publishi
 
 #### **AEM Form Properties**
 
-**Purpose:** Configure form-level settings like Form Data Model (FDM) and publication dates  
+**Purpose:** Configure form-level settings like Form Data Model (FDM), configuring submit actions and publication dates  
 **When to use:** Setting up data integrations, scheduling publication
 
 ![Form Properties](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
@@ -258,7 +263,7 @@ The Form Properties panel includes the following sections:
 
 The **Properties Panel** (right side) is your control center for building and configuring forms. It changes based on what you select and provides different tools for different tasks.
 
-![Properties Panel](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
+![Properties Panel](/help/edge/docs/forms/universal-editor/assets/text-properties-ue.png)
 
 ### **Core Form Building Tools**
 
