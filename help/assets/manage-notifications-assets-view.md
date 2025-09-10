@@ -110,7 +110,9 @@ To view your content subscribers, follow these steps:
 
 1. Navigate the folder, asset, or collection and select **[!UICONTROL Details]**.
 
-1. Click ![eye icon](assets/do-not-localize/eye-icon.png) from the right pane to see a list of watchers of the content.
+1. Click eye![eye icon](assets/do-not-localize/eye-icon.png) from the right pane to see a list of watchers of the content.
+
+   Alternatively, Click ![Comment icon](assets/do-not-localize/comment-icon.svg) on the right pane to see content watchers.
 
 ### Unsubscribe to the content {#unsubscribe-to-content}
 
@@ -122,9 +124,7 @@ To unsubscribe:
 
    ![unsubscribe  content](assets/unsubscribe-assets.png)
 
-Or
-
-Browse the folder, asset, or collection under [!UICONTROL Asset Management]. Select the [subscribed asset](#subscribe-to-content) and click **[!UICONTROL Unwatch]**.
+Alternatively, browse the folder, asset, or collection under [!UICONTROL Asset Management]. Select the [subscribed asset](#subscribe-to-content) and click **[!UICONTROL Unwatch]**.
 
 ## View notifications {#view-notifications}
 
