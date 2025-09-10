@@ -174,6 +174,20 @@ The components are reordered in both the content tree and in the editor.
 >
 >Components can only be moved between containers if the target containers [component filter](/help/implementing/universal-editor/filtering.md) allows the selected component.
 
+### Undo and Redo {#undo-redo}
+
+Select the Undo or Redo buttons to undo or redo the last edit in the editor.
+
+![Undo icon](assets/undo.png)
+![Redo icon](assets/redo.png)
+
+* Undoing and redoing can be performed for edits done in context, edits done via the Properties panel, as well as adding, duplicating, moving, and deleting blocks.
+* Undo and redo is limited to the current browser session.
+
+>[!TIP]
+>
+>Use the hot key `Command-Z` or `Shift-Command-Z` to undo or redo, respectively.
+
 ## Previewing Content {#previewing-content}
 
 When you are finished editing content, you often want to navigate it to see how it looks in the content of other pages. In [preview mode](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode) you can click links to navigate your content as a reader would. The content is rendered in the editor as it would be published.
