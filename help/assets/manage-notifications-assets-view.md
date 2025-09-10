@@ -82,7 +82,7 @@ After [subscribing to the notification categories](#subscribe-to-notification-ca
 >* For **[!UICONTROL Requests]** and **[!UICONTROL Assigned to me]** notification categories, you do not need to subscribe to the content after subscribing to the notification categories. Notifications are automatically sent to you for requests created by you and when a task is assigned to you.
 >* Assets view sends notifications only when other users perform actions on the subscribed content. You do not receive notifications for the actions that you perform on the subscribed content.
 
-### To subscribe to the content {#subscribe-to-content}
+### Subscribe to the content {#subscribe-to-content}
 
 Follow these steps to subscribe to folders, assets, or collections:
 
@@ -94,19 +94,25 @@ Follow these steps to subscribe to folders, assets, or collections:
 
 The Assets view will now send notifications for the subscribed categories. You can also select multiple assets, folders, or collections and click **[!UICONTROL Watch]** to save time. However, if you select multiple items and some are already subscribed, the **[!UICONTROL Watch]** option will not be displayed.
 
-### To view subscribed content {#view-subscribed-content}
+### View subscribed content {#view-subscribed-content}
 
 To view your subscribed content, follow these steps:
 
 1. Navigate to **[!UICONTROL Watched Assets]** under [!UICONTROL Asset Management].
 
-1. The Assets view displays a list of subscribed assets, including their name, type, and path.
-
-1. Select an asset, folder, or collection from the list to view its details, location, or to [unsubscribe](#unsubscribe-to-content).
+1. The Assets view displays a list of subscribed assets, including their name, type, and path. Select an asset, folder, or collection from the list to view its details, location, or to [unsubscribe](#unsubscribe-to-content).
 
    ![view subscribed content](assets/view-watched-assets.png)
 
-### To unsubscribe to the content {#unsubscribe-to-content}
+### View content subscribers {#view-content-subscribers}
+
+To view your content subscribers, follow these steps:
+
+1. Navigate the folder, asset, or collection and select **[!UICONTROL Details]**.
+
+1. Click ![eye icon](assets/do-not-localize/eye-icon.png) from the right pane to see a list of watchers of the content.
+
+### Unsubscribe to the content {#unsubscribe-to-content}
 
 To unsubscribe:
 
@@ -115,6 +121,10 @@ To unsubscribe:
 1. Select the asset, folder, or collection you want to unsubscribe from, and click **[!UICONTROL Unwatch]**.
 
    ![unsubscribe  content](assets/unsubscribe-assets.png)
+
+Or
+
+Browse the folder, asset, or collection under [!UICONTROL Asset Management]. Select the [subscribed asset](#subscribe-to-content) and click **[!UICONTROL Unwatch]**.
 
 ## View notifications {#view-notifications}
 
