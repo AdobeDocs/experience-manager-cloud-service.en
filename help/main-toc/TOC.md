@@ -226,7 +226,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)  
   + Release Notes for Generate Variations {#generate-variations}
     + [Current Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)
-  + Release Notes for Universal Editor {#univeral-editor}
+  + Release Notes for Universal Editor {#universal-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + 2025 {#2025}
       + [2025.08.22 Release Notes](/help/release-notes/universal-editor/2025/2025-08-22.md)
@@ -518,6 +518,7 @@ user-guide-title: AEM as a Cloud Service
     + [Exporting Content Fragments to Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
     + [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
     + [Integrating with Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
+    + [Using Content Fragments in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
   + [Operational Telemetry for AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
   + [Overview and what's new](/help/assets/overview.md)
