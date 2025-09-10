@@ -45,7 +45,7 @@ You can edit the text in place by double-clicking or double-tapping the componen
 
 The thin blue outline turns to a heavy blue outline to indicate select and a cursor appears. Make your changes and then press enter/return or select outside of the text box to save your changes.
 
-When you select to select the text component, its details are shown in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). You can also edit the text in the panel.
+When you select the text component, its details are shown in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). You can also edit the text in the panel.
 
 ![Editing text in the properties panel](assets/ue-editing-text-component-rail.png)
 
@@ -166,13 +166,27 @@ The selected component deleted.
 
    ![Reordering components](assets/ue-reordering-components.png)
    
-1. The dragged component turns gray in the content tree, while your insertion point is represented by a blue line. Release the component to place it in its new location.
+1. The dragged component is grayed in the content tree, while your insertion point is represented by a blue line. Release the component to place it in its new location.
 
 The components are reordered in both the content tree and in the editor.
 
 >[!NOTE]
 >
 >Components can only be moved between containers if the target containers [component filter](/help/implementing/universal-editor/filtering.md) allows the selected component.
+
+### Undo and Redo {#undo-redo}
+
+Select the Undo or Redo buttons to undo or redo the last edit in the editor.
+
+![Undo icon](assets/undo.png)
+![Redo icon](assets/redo.png)
+
+* Undoing and redoing can be performed for edits done in context, edits done via the Properties panel, as well as adding, duplicating, moving, and deleting blocks.
+* Undo and redo is limited to the current browser session.
+
+>[!TIP]
+>
+>Use the hot key `Command-Z` or `Shift-Command-Z` to undo or redo, respectively.
 
 ## Previewing Content {#previewing-content}
 
