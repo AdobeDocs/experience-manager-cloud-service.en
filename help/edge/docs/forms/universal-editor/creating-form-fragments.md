@@ -70,9 +70,12 @@ Form fragments in Edge Delivery Services provide powerful capabilities for modul
 
 You can create Edge Delivery Services Form Fragments in the Universal Editor and add the created fragments to Edge Delivery Services forms. You can perform the following actions with Edge Delivery Services Form Fragments:
 
-- [Creating form fragments](#creating-form-fragments)
-- [Adding form fragments to a form](#adding-form-fragments-to-a-form)
-- [Managing form fragments](#managing-form-fragments)
+- [Creating Form Fragments in Universal Editor](#creating-form-fragments-in-universal-editor)
+  - [Understanding Form Fragments](#understanding-form-fragments)
+  - [Prerequisites](#prerequisites)
+  - [Working with Edge Delivery Services Form Fragments](#working-with-edge-delivery-services-form-fragments)
+  - [Best Practices](#best-practices)
+  - [Summary](#summary)
 
 +++ Creating form fragments
 
@@ -168,6 +171,10 @@ To integrate a form fragment into your form:
     The form fragment is added by reference to the form and remains synchronized with the standalone form fragment.
 
     ![Screenshot showing the contact details fragment successfully integrated into an employee form within the Universal Editor, demonstrating how fragments maintain their structure when reused](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+
+    >[!NOTE]
+    >
+    > The **Edit Fragment** button allows users to navigate directly to the form fragment for editing. 
 
     You can preview the form to see how the form appears in the **Preview** mode.
 
@@ -279,10 +286,10 @@ You have successfully learned how to leverage form fragments in Edge Delivery Se
 
 **Next steps:**
 
-- Create a library of commonly used fragments for your organization
-- Establish naming conventions and governance policies for fragment usage
+- Create a library of commonly used fragments for your organization.
+- Establish naming conventions and governance policies for fragment usage.
 - Explore advanced integration with [Form Data Models](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) for dynamic data-driven fragments
-- Implement fragment-based form templates for consistent user experiences
+- Implement fragment-based form templates for consistent user experiences.
 
 Your forms now benefit from modular, maintainable architecture that scales efficiently across projects while ensuring consistent user experiences.
 
