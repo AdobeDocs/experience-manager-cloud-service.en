@@ -7,15 +7,18 @@ level: Beginner, Intermediate
 keywords: invoke service enhancements in VRE, populating drop-down options using invoke service, Set repeatable panel using output of invoke service, Set panel using output of invoke service, Use output parameter of invoke service to validate other field.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
 ---
-# Using Invoke Service in the Visual Rule Editor for forms based on Core Components
+# Integrating External APIs with Visual Rule Editor in Core Component Forms
 
-The Visual Rule Editor in an Adaptive Form supports the **Invoke Service** feature, which allows you to select a service from the list of Form Data Models (FDM) configured for your instance. You can map form fields directly to the input parameters of the service. To map form fields to the output parameters, use the event payload option for the specified Form Data Model service. Additionally, the Visual rule editor allows you to create rules for success and failure handlers for **Invoke Service** operations based on its output responses. Success handlers manage the successful execution of the **Invoke Service** operation, while failure handlers address any errors that occur.
+The Visual Rule Editor in an Adaptive Form supports the **Invoke Service** feature, enabling you to connect to external APIs through Form Data Models (FDM) configured for your instance. You can map form fields directly to the service's input parameters and use the event payload option to map the output parameters. The Visual Rule Editor also lets you define rules for success and failure handlers based on the service's response: success handlers handle successful API calls, while failure handlers manage errors.
+
+This allows you to easily send API requests from your form, process the API responses, and display or use the returned data dynamically within the form. It ensures a seamless integration between your Adaptive Form and external systems or data sources.
+
 
 ## Advantages of using the Invoke Service in the form's rule editor
 
 Here are few advantages of using Invoke Service operation in the rule editor of an Adaotive Form:
 
-* **Streamlined integration**: Visual Rule Editor simplifies the process of integrating external services or APIs into your Adaptive Forms. By using the **Invoke Service**, you can easily connect forms to various data sources and services without the need for complex coding, making form integration more efficient.
+* **Streamlined API integration**: Visual Rule Editor simplifies the process of integrating external services or APIs into your Adaptive Forms. By using the **Invoke Service**, you can easily connect forms to various data sources and services without the need for complex coding, making form integration more efficient.
 
 * **Dynamic response handling**: You can manage success and error responses based on the output responses of the **Invoke Service**, allowing forms to react dynamically to different scenarios. It ensures forms handle various conditions appropriately, improving flexibility and control.
 
