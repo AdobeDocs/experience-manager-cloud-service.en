@@ -1487,7 +1487,7 @@ user-guide-title: AEM as a Cloud Service
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
   + [Maintenance Tasks](/help/operations/maintenance.md)
   + [Restore Content](/help/operations/restore.md)
-  + [Restore Previous Code Deployed (Alpha)](/help/operations/restore-previous-code-deployed.md)
+  + [Restore Previous Code Deployed (Beta)](/help/operations/restore-previous-code-deployed.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Using Config Pipelines](/help/operations/config-pipeline.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
