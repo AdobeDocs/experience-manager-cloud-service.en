@@ -159,13 +159,15 @@ Figure: Rule Editor interface for editing component rules
 ![Rule Editor user Interface](/help/edge/docs/forms/assets/rule-editor-interface.png)
 Figure: Complete Rule Editor interface with numbered components
 
-- **Component title and rule type**: Confirms the selected component and active rule type.
-- **Form Objects and Functions panel**:
-  - Form Objects: hierarchical view of fields and containers for referencing in rules
-  - Functions: built-in math, string, date, and validation helpers
-- **Panel toggle**: Show/hide the objects and functions panel to increase workspace
-- **Visual rule builder**: Drag-and-drop, dropdown-driven rule composer
-- **Controls**: Done (save), Cancel (discard). Always test rules before saving.
+1. **Component title and rule type**: Confirms the selected component and active rule type.
+2. **Form Objects and Functions panel**:
+   
+     - Form Objects: hierarchical view of fields and containers for referencing in rules
+     - Functions: built-in math, string, date, and validation helpers
+
+3. **Panel toggle**: Show/hide the objects and functions panel to increase workspace
+4. **Visual rule builder**: Drag-and-drop, dropdown-driven rule composer
+5. **Controls**: Done (save), Cancel (discard). Always test rules before saving.
 
 +++
 
@@ -296,7 +298,7 @@ You will build a form that:
 
 +++
 
-+++ Step 1: Create the foundation form
++++ Step 1: Create the form
 
 **Objective**: Build the base form with all fields and initial settings.
 
@@ -527,6 +529,9 @@ Figure: Adding custom functions to the functions.js file
 ![Custom Function in Rule Editor](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 Figure: Selecting and configuring custom functions in the Rule Editor interface
 
+>![NOTE]
+>
+> The enhancements to the Rule Editor, including custom event-based rules, support for dynamic variables, and API integration, are also available for Edge Delivery Services Forms. To learn more about these enhancements and how to use them, see the [Rule Editor Enhancements and Use Cases](/help/forms/rule-editor-enhancements-use-cases.md) article. 
 
 **Best practices for function usage**:
 

@@ -66,7 +66,7 @@ You can configure the submit action for forms created in the Universal Editor us
 
 ![Form properties icon](/help/forms/assets/ue-form-properties-icon.png)
 
-![Universal Editor Form Properties](/help/forms/assets/ue-form-properties.png)
+![Form Properties wizard](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
 
 >[!NOTE]
 >
