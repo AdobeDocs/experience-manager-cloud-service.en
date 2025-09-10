@@ -1,5 +1,5 @@
 ---
-title: Rule Editor for Dynamic Forms in Universal Editor
+title: Rule Editor for Edge Delivery Services Forms
 description: Create dynamic, intelligent forms using the Rule Editor in Universal Editor. Add conditional logic, calculations, and interactive behaviors without coding.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
@@ -7,9 +7,9 @@ level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 ---
 
-# Rule Editor for Dynamic Forms in Universal Editor
+# Rule Editor for Edge Delivery Services Forms
 
-The Rule Editor allows authors to turn static forms into responsive, intelligent experiences—without writing code. You can conditionally show fields, perform calculations, validate data, guide users through flows, and integrate business logic that adapts as people type.
+The Rule Editor allows authors to turn static forms into responsive, intelligent experiences without writing code. You can conditionally show fields, perform calculations, validate data, guide users through flows, and integrate business logic that adapts as people type.
 
 ## What you'll learn
 
