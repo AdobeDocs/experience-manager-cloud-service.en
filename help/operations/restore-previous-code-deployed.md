@@ -22,17 +22,16 @@ You simply open the selected environment's ![More icon or ellipsis menu icon](ht
 >
 >![Source code version in use](/help/operations/assets/environments-view-details-sourcecodeversion.png) 
 
-The **Restore previous code deployed** feature becomes available only when **every** condition below is true:
+**Restore previous code deployed** becomes available only when the following conditions are met:
 
 * Only one restore is allowed per successful pipeline execution; to restore again, complete another successful pipeline run.
 * You hold **Environment Restore Create** permissions. For details on managing permissions, see [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
 * Your organization is enrolled in the beta program and the feature flag is on.
 * The program runs on AEM as a Cloud Service.
-* Restore previous source code can be done on a `Development` environment, `Stage` environment, or a `Specialized Testng Environment`.
 * The last pipeline for that environment finished successfully and ran **fewer than 30 days** ago.
 * The environment status is *Running* and no pipeline is in progress.
+* **Restore previous code deployed** can be done on a `Development` environment, `Stage` environment, or a `Specialized Testng Environment`.
 
-Restore The chosen environment is a `Development`, Stage, or Specialized Testing Environment.
 If any check fails, Cloud Manager opens the following dialog box that lists one or more unmet conditions and disables **Confirm**, preventing the restore.
 
 ![Restore previous code deployed failure dialog box](/help/operations/assets/restore-previous-code-deployment-not-allowed.png).
