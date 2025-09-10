@@ -25,7 +25,7 @@ The table below lists recent enhancements to the rule editor in Adaptive Forms, 
 
 >[!NOTE]
 >
-> The enhancements to the Rule Editor are also applicable to Edge Delivery Sevices Forms.
+> The enhancements are also applicable to the [Rule Editor of Edge Delivery Sevices Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md).
 
 Let's now explore each method in detail with specific use cases to help you understand how these features can be used to deliver a personalized experience for users
  
