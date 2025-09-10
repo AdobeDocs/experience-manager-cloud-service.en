@@ -45,7 +45,7 @@ You can edit the text in place by double-clicking or double-tapping the componen
 
 The thin blue outline turns to a heavy blue outline to indicate select and a cursor appears. Make your changes and then press enter/return or select outside of the text box to save your changes.
 
-When you select to select the text component, its details are shown in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). You can also edit the text in the panel.
+When you select the text component, its details are shown in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). You can also edit the text in the panel.
 
 ![Editing text in the properties panel](assets/ue-editing-text-component-rail.png)
 
@@ -166,7 +166,7 @@ The selected component deleted.
 
    ![Reordering components](assets/ue-reordering-components.png)
    
-1. The dragged component turns gray in the content tree, while your insertion point is represented by a blue line. Release the component to place it in its new location.
+1. The dragged component is grayed in the content tree, while your insertion point is represented by a blue line. Release the component to place it in its new location.
 
 The components are reordered in both the content tree and in the editor.
 
