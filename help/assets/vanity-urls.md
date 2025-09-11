@@ -78,7 +78,8 @@ Fulfill the following requirements for creating the vanity ID:
 
 Asset delivery URLs includes asset UUIDs. Assets are stored with a unique UUID-based key in the Blob store. Each asset has a metadata JSON doc with asset UUID as key and the asset path as the value. When user hits the delivery URL, the backend resolves the UUID to fetch asset's metadata from key-value store using the UUID and serves the asset. 
 
-To create vanity URLs, map the `ASSET_DELIVERY_VANITY_ID` variable available in your cloud manager environment with the metadata property in your asset's metadata form that includes the vanity ID. Then replace the UUID in your deliver URL with this vanity ID to create the Vanity URL. This mapping maps the vanity IDs to asset UUIDs for asset delivery. The system maps vanity IDs to asset UUIDs at ingestion time and resolve them properly at delivery time. When your user click your vanity URL(delivery url with vanity id), Dynamic Media with OpenAPI automatically redirects to the original asset location.
+To create vanity URLs, map the `ASSET_DELIVERY_VANITY_ID` variable available in your cloud manager environment with the metadata property in your asset's metadata form that includes the vanity ID. Then replace the UUID in your deliver URL with this vanity ID to create the Vanity URL. This mapping maps the vanity IDs to asset UUIDs for asset delivery. The system maps vanity IDs to asset UUIDs at ingestion time and resolve them properly at delivery time. 
+<!-- When your user click your vanity URL(delivery url with vanity id), Dynamic Media with OpenAPI automatically redirects to the original asset location.-->
 
 Execute the following steps to create vanity URLs:
 
@@ -86,8 +87,11 @@ Execute the following steps to create vanity URLs:
 1. [Edit the metadata form](/help/assets/metadata-assets-view.md#edit-metadata-forms) to add a new metadata field and specify the vanity ID in its value field.
 Alternativey you can also replace the existing value of a metadata property with the required vanity ID. See [metadata scema](/help/assets/metadata-schemas.md) article for more information on metadata forms. Learn the [best practices](#best-practices-for-creating-vanity-IDs) for creating the vanity ID.
 An asset can have multiple vanity IDs.
+[screen shot]
 1. Navigate to the configurations page in your cloud manager environment to add a new `ASSET_DELIVERY_VANITY_ID` variable. Learn to add [environment variables in Cloud Manager](/help/implementing/cloud-manager/environment-variables.md). `ASSET_DELIVERY_VANITY_ID` is the key. In its value field, specify the metadata field containing the vanity ID in `dc:<your metadata propery>` format to map `ASSET_DELIVERY_VANITY_ID` with the metadata property.
+[screen shot]
 1. Save the changes to automatically restart the pods in your program environment. 
+1. [Approve the assets for delivery](/help/assets/manage-organize-assets-view.md#manage-asset-status).
 1. Replace the UUID in DM with OpenAPI delivery URL with the vanity ID to generate the vanity URL for your asset delivery. 
 
    Your standard delivery URl includes, `aaid` and UUID (such as `43341ab1-4086-44d2-b7ce-ee546c35613b`), while your vanity URL includes, `avid` and vanity ID (such as `VanityCheck`)
