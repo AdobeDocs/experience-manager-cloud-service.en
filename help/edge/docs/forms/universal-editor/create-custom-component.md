@@ -440,7 +440,7 @@ Now the custom card component appears, as shown below:
 
 ![Card custom Component](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
 
-## Commit and Push Changes
+### 3. Commit and Push Changes
 
 Once you've implemented the JavaScript and CSS for your custom component and verified it locally, commit and push the changes to your Git repository.
 
@@ -450,7 +450,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 You have successfully created a complex custom card selection component in a few simple steps.
 
-## Manual or Legacy Method to Create Custom Component
++++ ## Manual or Legacy Method to Create Custom Component
 
 The legacy way to do this is to manually follow the steps described below:
 
