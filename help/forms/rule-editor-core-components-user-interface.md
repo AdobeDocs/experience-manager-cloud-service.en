@@ -89,8 +89,6 @@ You can write rules using the visual rule editor <!-- or the code editor. When y
 
 Let's first look at how to write rules using a visual editor.
 
-+++
-
 +++ Using visual editor {#using-visual-editor}
 
 Let's understand how to create a rule in a visual editor using the following example form.
@@ -227,6 +225,17 @@ You can write a combined rule to control visibility of the Spouse Salary field a
 
 +++
 
+### Handling Broken Rules
+
+Rules may sometimes break if a referenced field is moved or deleted. When this happens, the Rule Editor marks the affected rule with a red dot indicator.
+
+* When a field is moved (for example, from one panel to another), the associated rule may break. In this case, open the rule and save it again. The rule is automatically restored.
+
+* When a field is deleted, the rule cannot be repaired.
+
+   To understand the issue, hover over the rule status in the Rule Editor to view the error message.
+
+   ![Broken Rules](/help/forms/assets/rule-editor-broken-rules.png)
 
 <!-- ### Using code editor {#using-code-editor}
 
@@ -249,7 +258,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 ![javascriptruleeditor](assets/javascriptruleeditor.png)
 -->
 
-#### Custom functions in rule editor {#custom-functions}
+### Custom functions in rule editor {#custom-functions}
 
 Apart from the out-of-the-box functions like *Sum of* that are listed under **Functions Output**, you can also use custom functions in your rule editor. Rule editor supports JavaScript ECMAScript 2019 syntax for scripts and custom functions. For instructions on creating custom functions, refer to the article [Custom Functions in Adaptive Forms](/help/forms/create-and-use-custom-functions.md).
 

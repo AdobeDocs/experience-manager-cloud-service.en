@@ -68,12 +68,14 @@ Adobe recommends configuring the rewriter using an overlay. See [Overlays in AEM
 >
 >Experience Fragments can only be used on pages that are based on editable templates.
 
-<!-- >***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
+<!-- 
+***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
 -->
 
 When developing a new template for Experience Fragments, you can follow the standard practices for an editable template.
 
-<!-- When developing a new template for Experience Fragments you can follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
+<!-- 
+When developing a new template for Experience Fragments you can follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
 -->
 
 To create an Experience Fragment template that is detected by the **Create Experience Fragment** wizard, you must follow one of these rule sets:
@@ -93,7 +95,8 @@ To create an Experience Fragment template that is detected by the **Create Exper
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
 -->
 
-<!-- >[!NOTE]
+<!-- 
+>[!NOTE]
 >
 >[Allowed templates](/help/sites-authoring/experience-fragments.md#configuring-allowed-templates) can be configured in the Experience Fragments console.
 -->

@@ -1,43 +1,57 @@
 ---
-title: Release Notes for Cloud Manager 2025.7.0
-description: Learn about the release of Cloud Manager 2025.7.0 in Adobe Experience Manager as a Cloud Service.
+title: Release Notes for Cloud Manager 2025.9.0
+description: Learn about the release of Cloud Manager 2025.9.0 in Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 ---
-# Release notes for Cloud Manager 2025.7.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release notes for Cloud Manager 2025.9.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-<!-- https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.03.0+Release -->
+<!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2025.08.0+Release -->
 
-Learn about the release of Cloud Manager 2025.7.0 in AEM (Adobe Experience Manager) as a Cloud Service.
+Learn about the release of Cloud Manager 2025.9.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Release dates {#release-date}
 
-The release date for Cloud Manager 2025.7.0 in AEM as a Cloud Service is Thursday, July 10, 2025. 
+The release date for Cloud Manager 2025.9.0 in AEM as a Cloud Service is Thursday, September 4, 2025. 
 
-The next planned release is Thursday, August 7, 2025.
- 
+The next planned release is Thursday, October 2, 2025.
+
 ## What's new {#what-is-new}
 
-* **Cloud Manager adds ECDSA (Elliptic Curve Digital Signature Algorithm) SSL certificate support**
+* **Manually renew Adobe-managed domain validation certificates**
 
-    Cloud Manager now supports ECDSA certificates. The feature delivers strong security with smaller key sizes, enabling customers to apply lightweight modern cryptography in their CDN configurations. <!-- https://jira.corp.adobe.com/browse/CMGR-62399 -->
+    You can now manually renew failed Adobe-managed Domain Validation (DV) certificates from Cloud Manager or the Public API to refresh certificates proactively. <!-- CMGR-68738 -->
 
-* **Download Site license-usage report**
+    ![SSL certificate renew](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 
-    On the **Sites usage details** page (In Cloud Manager, click **License**. In the Solutions table, in the **Sites** row, click **View usage details**), customers can now click **Download report** to export its data as a CSV file. This download simplifies analyzing and sharing usage trends. <!-- https://jira.corp.adobe.com/browse/CMGR-42274 -->
+* **Support now added for Azure DevOps (private repositories)** 
 
-    ![Sites usage details page](/help/implementing/cloud-manager/release-notes/assets/sites-license-usage-page.png)
+    Documentation updates include configuration steps for Bring Your Own Git with Azure DevOps and pull request validation. See [Add External Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
-    See [License dashboard](/help/implementing/cloud-manager/license-dashboard.md).
+* **Bring Your Own Git (BYOG) support extended to config pipelines (private repositories)**
 
-## Alpha/Beta programs {#private-beta-program}
+    Cloud Manager now supports config pipelines with private repositories across GitHub, Bitbucket, Azure DevOps, and GitLab. This support accelerates the development cycle further. See [Pull Request Checks for Private Repositories](/help/implementing/cloud-manager/managing-code/github-check-config.md).
 
-Participate in Cloud Manager's alpha and beta programs to get exclusive access to upcoming features before their general release.
+<!--
+### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
+
+Support for [staging-only and production-only pipelines](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md) has been introduced, enabling you to split full-stack production deployment pipelines into smaller, specialized deployments.
+
+If you are interested in testing this new feature and sharing your feedback, send an email to  `Grp-cloudmanager_splitpipelines@adobe.com` from your email address associated with your Adobe ID. -->
+
+
+## Beta programs {#private-beta-program}
+
+Participate in Cloud Manager's beta programs to get exclusive access to upcoming features before their general release.
 
 The following opportunities are currently available:
+<!--
+### Support for Custom Author Domains in Cloud Service
+
+AEM Cloud Service is going to soon support one custom domain per Author environment.-->
 
 ### One-click rollback for pipeline deployments {#one-click-rollback} 
 
@@ -45,14 +59,11 @@ Quickly revert to a previous deployment if the latest customer source code is no
 
 ![Restore customer source code from the Environments card](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Environments card above showing the **Restore** > **Previous code deployed** option for a selected environment.* 
 
-
 ![Restore previous code deployed dialog box](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png) 
 *In the **Restore previous code deployed** dialog box, review the currently deployed version and the version you want to restore, then click **Confirm***.
 
-
 ![Restoring activation](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png) 
 *Cloud Manager rolls the environment back to the earlier build, keeps content and configuration intact, and marks the environment **Restoring** until deployment completes.*
-
 
 ![Source code version in use](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *The Environment details view, as seen above, now also shows the active source-code version in use.*
 
@@ -62,21 +73,28 @@ See [Restore the Previous Code Deployed in AEM as a Cloud Service](/help/operati
 
 See also [Content Restore in AEM as a Cloud Service](/help/operations/restore.md).
 
-
 ### Specialized Testing Environment {#specialized-test-environment}
 
 Cloud Manager now supports the addition of a new environment type called **Specialized Testing Environment**. The environment is designed to help teams validate features under near-production conditions before going live. This environment type is distinct from *Production + Stage*, *Development*, or *Rapid Development* environments and offers a focused space for running advanced validation scenarios.
 
-Recent enhancement: You can now configure specialized testing environments on a non-production pipeline through a simpler, more intuitive workflow. The streamlined setup speeds completion and reduces configuration errors.
+**Recent enhancements**
+
+* You can now configure a Specialized Testing Environment on a non-production pipeline through a simpler, more intuitive workflow. The streamlined setup speeds completion and reduces configuration errors.
+* **Copy Content** is now supported in Specialized Testing Environments. You can now run **Copy Content** safely in isolated testing environments that mirror Production. <!-- (CMGR‑68900) -->
 
 See [Add a Specialized Testing Environment](/help/implementing/cloud-manager/specialized-test-environment.md).
 
 ![Add environment dialog box with Specialized Testing Environment radio button selected](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
 
-If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID.
+>[!NOTE]
+>
+>Adobe has closed beta access requests for Specialized Testing Environments, having reached a sufficient number of participants. The feature is now in preparation for general availability.
+
+<!--
+If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID. -->
 
 
-### Bring Your Own Git (BYOG) - now with support for Azure DevOps {#gitlab-bitbucket-azure-vsts}
+### Bring Your Own Git (BYOG) {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -91,8 +109,7 @@ See [Add external repositories in Cloud Manager](/help/implementing/cloud-manage
 
 ![Add Repository dialog box](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png)
 
-If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. 
-
+<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
 
 **Frequently asked questions about BYOG**
 
@@ -100,7 +117,7 @@ If you are interested in testing this new feature and sharing your feedback, sen
 |---|---|
 | *How can a project switch back to the Adobe-managed Git repository if needed?* | Switching back is straightforward. [Update the pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) to point to the Adobe repository and remove the external repository if it is no longer required. |
 | *Is it possible to configure different repositories for different environments (for example, non-production versus production) to allow testing in non-production first?* | Yes, different repositories can be configured for separate environments. For example, the dev or code quality pipeline can point to an external repository while the production pipeline remains connected to the Adobe repository. Make sure that the sync job between the two repositories remains active during this configuration. |
-| *Do existing settings like IP allow lists continue to work?* | Yes, existing IP allow lists continue to work as usual. However, if the external Git repository is protected by a firewall, the necessary [Adobe IP addresses must be added to the allow list](/help/implementing/cloud-manager/ip-allow-lists/introduction.md). |
+| *Do existing settings like `IP Allow` lists continue to work?* | Yes, existing `IP Allow` lists continue to work as usual. However, if the external Git repository is protected by a firewall, the necessary [Adobe IP addresses must be added to the allow list](/help/implementing/cloud-manager/ip-allow-lists/introduction.md). |
 | *Do all GitLab repository URLs work? The repository URL in use follows the format `https://gitlab_dedicated_url.com/path/repo-name.git`, which differs from the example in the documentation.* | Yes, any GitLab repository that supports API V3 or V4 is supported, including self-hosted GitLab URLs like the one described in [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`). |
 
 
@@ -110,29 +127,36 @@ Use **Manage Access Tokens** in Cloud Manager to view, rename, and delete access
 
 See [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
-If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID.
+<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
 
-
-### Add Edge Delivery Config Pipeline {#add-eds-pipeline}
+### Add Edge Delivery config pipeline {#add-eds-pipeline}
 
 Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Config Pipelines** to manage settings such as traffic filtering rules and Web Application Firewall (WAF) configurations, where applicable. See [Supported Configurations](/help/operations/config-pipeline.md#configurations).
+
+**Recent enhancement**
+
+* Edge Delivery config pipelines now support secrets through Cloud Manager pipeline variables.
+* Edge Delivery Services pipelines now display **Configuration** in the **Deployed Code** column, enabling instant identification of configuration-only deployments. <!-- CMGR‑69681 -->
+* Cloud Manager shows **Add Edge Delivery Pipeline** once a program contains at least one Edge Delivery Services site and one mapped domain. Otherwise, the option appears disabled, and a tooltip explains missing requirements. <!-- CMGR‑69680 -->
+* The **Edge Delivery** tab shows a new **Edge Delivery pipelines** widget that lists each pipeline's Name, Status, Repository, and Branch. <!-- (CMGR-69052) -->
+
+    ![Edge Delivery pipeline widget showing pipeline name, status, repository, and branch](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-widget.png)
+
+* The **Filters** panel adds a **Delivery Type** section; includes **Edge delivery** and **Publish delivery** checkboxes. <!-- (CMGR-69682) -->
+
+    ![Filter panel showing new Delivery type of Edge delivery and Publish delivery](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
 ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adding an Edge Delivery pipeline from the **Program Overview** page, **Pipelines** card.*
 
 ![Add Edge Delivery pipeline dialog box](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Add Edge Delivery pipeline dialog box.*
 
+See [Add Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
+
 If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID.
 
+## Bug fixes {#bug-fixes}
 
-## Bug fixes
-
-* Cloud Manager now updates the release version for all pipelines during environment upgrades, ensuring consistent version tracking across all pipeline types. <!-- CMGR-69043 -->
-* The UI now displays status and detailed error messages when a Domain Validation (DV) SSL certificate fails, helping to understand and resolve certificate issues. <!-- CMGR-68872 -->
-* While editing a domain mapping, the UI now prevents selecting SSL certificates that do not match the chosen domain, reducing misconfigurations and improving reliability during setup. <!-- CMGR-64307 -->
-* In some situations, the certificates were not properly deleted, maintaining the domain is still active. <!-- CMGR-69867 -->
-* Fixed an issue that could block upgrades from *Adobe Assets* to *Adobe Assets Ultimate* in certain cases. Transitions are now smoother and more reliable. <!-- CMGR-69506 -->
-* Resolved an issue where key region fields are automatically set when creating multi-region environments to support downstream services and deployments smoothly. <!-- CMGR-69471 -->
-* Resolved an issue where some configuration pipelines did not stop properly after execution. Now, pipelines are completed successfully and close as expected, improving reliability. <!-- CMGR-69344 -->
+There are no significant bug fixes in the September Cloud Manager release.
 
 
 <!-- ## Known issues {#known-issues} -->

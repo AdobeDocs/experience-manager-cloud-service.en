@@ -129,4 +129,28 @@ The table below outlines the key differences between the two solutions:
 |  | Semantic search |&#10003;|&minus;|
 |  | Localised search and metadata display |&#10003;|&minus;|
 
+## How can I select a repository to view assets only for the selected environment? {#select-repository-multiple-environments}
+
+When you have configured Content Hub for Production and other lower environments for the same Program, you can select the repository and display the assets for the selected environment. Execute the following steps:
+
+1. Click the user icon in the right pane.
+
+1. In the **[!UICONTROL Product Settings]** section, select **[!UICONTROL Select Repository]**.
+
+1. Select the repository from the **[!UICONTROL Repository]** drop-down menu and click **[!UICONTROL OK]** to confirm.
+
+   Content Hub now displays assets for the selected environment.
+
+## How can Content Hub display the thumbnail preview for .ZIP file type? {#thumbnail-preview-zip-file}
+
+To provide a thumbnail preview for fie types such as .ZIP in Content Hub, you can add a rendition named `cq5dam.preview.jpg` or `cq5dam.preview.png` to the root of the path where the .ZIP is available in AEM as a Cloud Service authoring environment.
+
+The image that you add as rendition:
+
+* Can be in JPG, JPEG, or PNG format.
+
+* Must be under 50MB
+
+When available, Content Hub displays the image as the preview thumbnail for .ZIP file on Content Hub.
+
 

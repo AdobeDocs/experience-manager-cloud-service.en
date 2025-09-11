@@ -110,6 +110,8 @@ Interactive Communications on Cloud is a powerful solution for creating, managin
 
 * **Format Flexibility**: Output to PDF, HTML, PCL, PostScript&reg;, and ZPL formats.
 
+* **Rule Editor**: Build dynamic, data-driven actions directly within your documents using an intuitive, point-and-click interface. Easily define conditional logic, automate workflows, and personalize content without writing code.
+
 #### Use Cases:
 
 * Financial institutions generating account statements
@@ -148,6 +150,38 @@ AEM Forms HTML5 Forms enables you to render existing XFA (XML Forms Architecture
 * **Draft saving**: Save an HTML5 form as a draft and resume filling the form at a later stage.
 
 Ready to start? The [Introduction to HTML5 forms](/help/forms/introductionhtml5.md) documentation provides a comprehensive overview and getting started guide for this innovation.
+
+### AEM Forms Scaffolder CLI for Custom Components
+
+Accelerate your AEM Forms Edge Delivery Services development with the AEM Forms CLI tool. This command-line interface enables you to instantly generate the code and wiring needed to kickstart custom component development—no boilerplate, no hassle.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+
+**Key capabilities:**
+
+* **Rapid scaffolding**: Instantly generate the structure and code for new custom components, reducing manual setup time.
+* **Best practices built-in**: The tool follows recommended patterns for AEM Forms Edge Delivery Services, ensuring consistency and maintainability.
+* **Developer productivity**: Focus on building business logic and UI, while the CLI handles repetitive setup tasks.
+* **Seamless integration**: Generated components are ready to use and integrate with your existing AEM Forms projects.
+
+Ready to start? The AEM Forms CLI tool is available under the Early Access program for Forms as a Cloud Service deployments. To request access, email your organization ID and program details to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
+
+### API Integration Tool for Dynamic Form Data
+
+The API Integration Tool enables form authors to create dynamic, intelligent forms that automatically fetch and populate data from external REST APIs based on user interactions. This no-code integration capability transforms static forms into responsive data collection interfaces.
+
+Key capabilities include:
+
+* **Visual Configuration Interface**: Create API integrations through an intuitive, point-and-click interface without custom coding
+* **Real-time Data Population**: Automatically populate form fields based on user in put (e.g., auto-fill city and state when user enters zip code)  
+* **Flexible API Support**: Connect to any publicly accessible REST API with support for GET/POST methods, authentication, and JSON/XML responses
+* **Rule-Based Triggers**: Define when API calls are triggered using the built-in rule engine (e.g., field changes, form events)
+* **Smart Data Mapping**: Configure how API response data maps to specific form fields using Adobe's JSON parsing capabilities
+* **Enhanced User Experience**: Reduce manual data entry, improve data accuracy, and create more engaging form interactions
+
+This tool is particularly useful for scenarios like address auto-completion, dynamic dropdown population, real-time validation against external databases, and creating context-aware form experiences that adapt based on user input.
+
+
 
 ## Additional Early Access Innovations
 
