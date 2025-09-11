@@ -333,6 +333,19 @@ Tapping or clicking the delete button [deletes the component](/help/sites-cloud/
 >
 >Use the hot key `Shift+Backspace` to delete a selected component from a container.
 
+##### Copy and Paste {#copy-paste}
+
+You can copy and paste components that are within [containers.](/help/implementing/universal-editor/field-types.md#container)
+
+![Copy icon](assets/copy.png)
+![Paste icon](assets/paste.png)
+
+>[!TIP]
+>
+>Use the hot key `Command-C` or `Command-V` to copy or paste, respectively.
+
+Please see the document [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) for more information.
+
 #### Additional Buttons {#additional-properties-panel-buttons}
 
 The Universal Editor offers a customizable and extensible authoring experience. If you see additional buttons in the properties panel, your Universal Editor has been extended.
