@@ -7,7 +7,7 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 
 # What are Vanity URLs?{#vanity-urls}
 
-Use [!DNL Dynamic Media OpenAPI capabilities] to transform your long asset delivery URLs into short, branded vanity URLs. Standard asset delivery URLs include system-generated asset UUIDs that make the delivery URL complex, hard to remember and share. Replace these asset UUIDs with vanity identifiers (Vanity IDs) to generate Vanity URL.
+Use [!DNL Dynamic Media OpenAPI capabilities] to transform your long asset delivery URLs into short, branded vanity URLs. Standard asset delivery URLs include system-generated asset UUIDs that make the delivery URL complex, hard to remember and share. Replace these asset UUIDs with vanity identifiers (Vanity IDs) to generate Vanity URL. A vanity URL is a short, clean, and readable version of your complex delivery URL.
 
 See the following URL formats to understand their difference:
 * [Standard delivery URL](#standard-urls)
@@ -17,7 +17,7 @@ Standard delivery URLs use `aaid` followed by a UUID, while vanity URLs use `vid
 
 Use short and simple vanity IDs, to make your delivery URL short, clean, readable, easy-to-remember and share. Use your brand name, product names, and relevant keywords as vanity IDs to boost your brand visibility and user engagement. 
 
-A vanity URL is a short, clean, and readable version of your complex delivery URL. When your user click your vanity URL, Dynamic Media with OpenAPI automatically redirects to the original asset location. 
+When your user click your vanity URL, Dynamic Media with OpenAPI automatically redirects to the original asset location. 
 
 Learn to [create Vanity URLs](#create-vanity-urls).
 
@@ -26,22 +26,24 @@ Learn to [create Vanity URLs](#create-vanity-urls).
 The standard Dynamic Media with OpenAPI asset delivery URL includes a unique system-generated identifier and follows the following format.
 
 ***Format:*** `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:aaid:aem:<asset-uuid>/as/seoname.jpg`
+
 ***Example:*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:43341ab1-4086-44d2-b7ce-ee546c35613b/as/chekc.jpeg`
 
-The standard delivery URL includes `aaid` after `urn:` and a UUID after `urn:aaid:aem:`, where **aaid** stands for *actual asset identifier* followed by a long, complex UUID that uniquely identifies your asset.
+The standard delivery URL includes `aaid` after `urn:` and a UUID after `urn:aaid:aem:`, where **aaid** stands for *actual asset identifier*.
 
-In the above delivery URL `43341ab1-4086-44d2-b7ce-ee546c35613b` is the UUID.
+In the example `43341ab1-4086-44d2-b7ce-ee546c35613b` is the UUID.
 
 ## Vanity URLs{#vanity-url}
 
 The vanity URLs includes a vanity identifier in place of aaset UUID and follows the following format.
 
 ***Format:*** `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:vid:aem:<vanity-id>/<rendition-path>`
+
 ***Example:*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:avid:aem:VanityCheck/as/chekc.jpeg`
 
-The vanity URL includes `vid` after `urn:` and your custom identifier after `urn:avid:aem:`, where **vid** stands for *vanity identifier* followed by your custom identifier.
+The vanity URL includes `vid` after `urn:` and your vanity ID after `urn:avid:aem:`, where **vid** stands for *vanity identifier*.
 
-In the above vanity URL, `VanityCheck` is the vanity ID that replaced the UUID.
+In the above example, `VanityCheck` is the vanity ID that replaced the UUID.
 
 ## Explore key capabilities and benefits{#capabilities-and-benefits-of-vanity-urls}
 
