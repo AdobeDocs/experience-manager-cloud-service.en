@@ -31,9 +31,10 @@ There are a few general guidelines for editing and using both kinds of upload fi
 
 ## Bulk Group Upload {#group-upload}
 
-#### Use case: Groups have been migrated to AEM as a Cloud Service, but those groups are not present in IMS/Admin Console, so they need to be uploaded to IMS via the Admin Console.
+### Use case: Groups have been migrated to AEM as a Cloud Service, but those groups are not present in IMS/Admin Console, so they need to be uploaded to IMS via the Admin Console.
 
 To use the Admin Console's bulk group upload functionality after running a CTT/CAM migration, follow these steps:
+
 1. Download the bulk group file from CAM
 
    1. In CAM, go to **Content Transfer** and select **Ingestion Jobs**.

@@ -15,11 +15,11 @@ The `component-definition.json` file defines the components available to your co
 
 >[!TIP]
 >
->For an overview of the content modeling process, please see the document [Content Modeling for WYSIWYG Authoring with Edge Delivery Services Projects](/help/edge/wysiwyg-authoring/content-modeling.md).
+>For an overview of the content modeling process, please see the document [Content Modeling for WYSIWYG Authoring with Edge Delivery Services Projects.](https://www.aem.live/developer/component-model-definitions)
 
 >[!TIP]
 >
->You do not need to create your own `component-definition.json` file from scratch. The project boilerplate that you use to [bootstrap your project](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) contains a [fully-functioning `component-definition.json` file](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) that you can adapt to your needs.
+>You do not need to create your own `component-definition.json` file from scratch. The project boilerplate that you use to [bootstrap your project](https://www.aem.live/developer/ue-tutorial) contains a [fully-functioning `component-definition.json` file](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) that you can adapt to your needs.
 
 ## Example Component Definition {#example}
 
@@ -88,9 +88,9 @@ The following is a complete, but simple `component-definition.json` as an exampl
 
 `plugins` defines which plugin is responsible for persisting the component. Common plugins include:
 
-* `aem` for AEM as a Cloud Service.
-* `aem5` for AEM 6.5.
-* `xwalk` for AEM as a Cloud Service WYSIWYG authoring.
+* `aem` for [AEM as a Cloud Service.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service)
+* `aem65` for [AEM 6.5.](https://experienceleague.adobe.com/en/docs/experience-manager-65) and [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts)
+* `xwalk` for [Authoring with AEM Sites for Edge Delivery Services.](https://www.aem.live/developer/ue-tutorial)
 
 ## `page` or `cf` {#page-cf}
 

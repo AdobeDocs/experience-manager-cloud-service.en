@@ -18,7 +18,35 @@ The following video demonstrates Content Hub key capabilities:
 
 ## Release Date {#release-date}
 
-The release date of Content Hub feature release (2025.6.0) is June 26, 2025 (same as that of AEM as a Cloud Service release). The next feature release (2025.7.0) is planned for July 31, 2025.
+The release date of Content Hub feature release (2025.8.0) is August 28, 2025 (same as that of AEM as a Cloud Service release). The next feature release (2025.9.0) is planned for September 25, 2025.
+
+## August release features {#august-release-features}
+
+**Bulk Search via Filter Properties**
+
+Content Hub now makes it faster to discover the assets you need. With the new Bulk Search capability, you can enter multiple values for any filter property—separated by a delimiter (for example, multiple SKU IDs)—and instantly retrieve all matching assets using a single search.
+
+[!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
+
+## July release features {#july-release-features}
+
+**Enhanced branding flexibility in Content Hub**
+
+Building on existing personalization features, Content Hub now allows admins to further tailor their deployment by adding custom logo images. Support for the TIFF file format has also been added for both banner and logo images, enabling greater design flexibility.
+
+[!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
+
+**Smarter sharing with titled links**
+
+You can now add a title when generating a shared link—whether from the asset details view or after selecting one or more assets. This helps recipients easily identify the purpose of each link, especially when receiving multiple shared assets.
+
+![private and public link](/help/assets/assets/shared-link-for-assets.png)
+
+[!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
+
+**Improved filter navigation**
+
+Content Hub now includes a **Show All** option within filters, allowing users to view all available facets along with asset counts from the current limitation of viewing only upto ten facets. Enhanced search and sort capabilities within each filter make it easier to discover and manage assets more efficiently.
 
 ## June release features {#june-release-features}
 

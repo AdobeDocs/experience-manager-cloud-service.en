@@ -160,7 +160,7 @@ An AEM tag component type enables an AEM tag picker, which can be used to attach
 
 >[!TIP]
 >
->Please see the document [Managing Taxonomy Data](/help/edge/wysiwyg-authoring/taxonomy.md) for more information about how you can use spreadsheets to manage your taxonomy data for your Edge Delivery Services project.
+>Please see the document [Managing Taxonomy Data](https://www.aem.live/docs/authoring-taxonomy) for more information about how you can use spreadsheets to manage your taxonomy data for your Edge Delivery Services project.
 
 #### AEM Content {#aem-content}
 
