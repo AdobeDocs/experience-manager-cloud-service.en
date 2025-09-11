@@ -88,7 +88,7 @@ Execute the following to set up the vanity ID in your asset's metadata form:
 1. Navigate to the details page of the folder holding your assets for Dynamic Media with OpenAPI delivery.
 1. [Edit that metadata form](/help/assets/metadata-assets-view.md#edit-metadata-forms) by doing one of the following:
    * Add a new metadata field and specify the required vanity ID as the value of that field.
-   * **Update existing field**: Replace an existing metadata property's value with the required vanity ID. Learn the [best practices](#best-practices-for-creating-vanity-IDs) for creating the vanity ID..
+   * **Update existing field**: Replace an existing metadata property's value with the required vanity ID. Learn the [best practices](#best-practices-for-creating-vanity-IDs) for creating the vanity ID.
    
    [Screenshot placeholder]
 
