@@ -70,14 +70,59 @@ Also, consistent use of branded URLs in all communications reinforces brand iden
 
 ## Prerequisites{#prerequisites-for-creating-vanity-id}
 
-To create the vanity URL, ensure you have [approved the assets for public delivery](/help/assets/manage-organize-assets-view.md#manage-asset-status).
+To create the vanity URL, ensure you have already [approved the assets for public delivery](/help/assets/manage-organize-assets-view.md#manage-asset-status).
 
 ## Create Vanity URLs{#create-vanity-urls}
 
 Asset delivery URLs includes asset UUIDs. Assets are stored with a unique UUID-based key in the Blob store. Each asset has a metadata JSON doc with asset UUID as key and the asset path as the value. When user hits the delivery URL, the backend resolves the UUID to fetch asset's metadata from key-value store using the UUID and serves the asset. 
 
-To create vanity URLs, map the `ASSET_DELIVERY_VANITY_ID` variable available in your cloud manager environment with the metadata property in your asset's metadata form that includes the vanity ID. Then replace the UUID in your deliver URL with this vanity ID to create the Vanity URL. This mapping maps the vanity IDs to asset UUIDs for asset delivery. The system maps vanity IDs to asset UUIDs at ingestion time and resolve them properly at delivery time. 
-<!-- When your user click your vanity URL(delivery url with vanity id), Dynamic Media with OpenAPI automatically redirects to the original asset location.-->
+Execute the following steps to create vanity URLs:
+1. [Configure asset metadata](#configure-asset-metadata)
+1. [Create and map Cloud manager environment variable]()
+1. [Approve your assets for delivery](/help/assets/manage-organize-assets-view.md#manage-asset-status)
+1. [Generate Vanity URLs]()
+
+### Configure asset metadata{#configure-asset-metadata}
+
+Execute the following to set up the vanity ID in your asset's metadata form:
+1. Navigate to your asset folder's details page and see the metadata form applied to the folder.
+1. [Edit that metadata form](/help/assets/metadata-assets-view.md#edit-metadata-forms) by doing one of the following:
+   * Add a new metadata field and specify the required vanity ID as the value of that field.
+   * **Update existing field**: Replace an existing metadata property's value with the required vanity ID. Learn more about [metadata schemas](/help/assets/metadata-schemas.md).
+   
+   [Screenshot placeholder]
+
+   Learn the [best practices](#best-practices-for-creating-vanity-IDs) for creating the vanity ID.
+
+   >[!NOTE]
+   >
+   > A single asset can have multiple vanity IDs.
+
+After configuring your vanity ID in the asset metadata, [connect this metadata field to the system's delivery mechanism](#map-cloud-manager-environment-variable).
+
+### Create and map Cloud manager environment variable{#map-cloud-manager-environment-variable}
+
+Execute the following steps to create an environment variable and map it to the metadata field holding the vanity ID:
+
+1. [Navigate to your Cloud Manager environment's configurations page and add a new environment variable with these settings](/help/implementing/cloud-manager/environment-variables.md):
+   * **Key**: `ASSET_DELIVERY_VANITY_ID`
+   * **Value**: Your metadata field in `dc:<your-metadata-property>` format.
+1. Save your changes to restart the pods in your environment automatically.
+[Screenshot placeholder]
+
+### Generate Vanity URLs{generate-vanity-urls}
+
+Make the following replacements to transform your standard delivery URL into vanity URL:
+
+* Replace **UUID** with your **vanity ID**.
+* Replace `aaid` with `avid`.
+
+See the [detailed URL format comparison](#standard-urls) above. Learn how to [copy Dynamic Media with OpenAPI delivery URLs](/help/assets/approve-assets.md#copy-delivery-url-for-approved-assets) for your assets.
+
+
+
+<!--To create vanity URLs, map the `ASSET_DELIVERY_VANITY_ID` variable available in your cloud manager environment with the metadata property in your asset's metadata form that includes the vanity ID. Then replace the UUID in your deliver URL with this vanity ID to create the Vanity URL. This mapping maps the vanity IDs to asset UUIDs for asset delivery. The system maps vanity IDs to asset UUIDs at ingestion time and resolve them properly at delivery time. 
+ When your user click your vanity URL(delivery url with vanity id), Dynamic Media with OpenAPI automatically redirects to the original asset location.
 
 Execute the following steps to create vanity URLs:
 
@@ -95,6 +140,7 @@ An asset can have multiple vanity IDs.
    * Replace `aaid` with `avid`. 
 
 Scroll above to [see the difference](#standard-urls) in both the URLs. Learn to copy the [dmwith open api delivery url]() of your assets.
+-->
 
 When your user click the vanity URL, Dynamic Media with OpenAPI automatically redirects to the original asset location. DM with OpenAPI maps your vanity URL to the original asset UUID and handles the redirection at the server level. The content loads instantly, while the user continue to see the vanity URL in their address bar. This redirection process is not visible to the user. The redirection process does not impact existing workflows, and asset delivery continues as usual. You can customize the vanity URL in real time without affecting the asset delivery performance.
 
