@@ -455,30 +455,30 @@ The legacy way to do this is to manually follow the steps described below:
 7. Register your component as a variant in the form builder and set the variant property or
 `fd:viewType/:type` in the JSON to your component's name, for example, add the `fd:viewType` value from the `definitions[]` as cards to the components array of the object with `id="form`.
 
-  ```
-      {
-    "definitions": [
-      {
-        "title": "Cards",
-        "id": "cards",
-        "plugins": {
-          "xwalk": {
-            "page": {
-              "resourceType": "core/fd/components/form/radiobutton/v1/radiobutton",
-              "template": {
-                "jcr:title": "Cards",
-                "fieldType": "radio-button",
-                "fd:viewType": "cards",
-                "enabled": true,
-                "visible": true
+    ```
+        {
+      "definitions": [
+        {
+          "title": "Cards",
+          "id": "cards",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/fd/components/form/radiobutton/v1/radiobutton",
+                "template": {
+                  "jcr:title": "Cards",
+                  "fieldType": "radio-button",
+                  "fd:viewType": "cards",
+                  "enabled": true,
+                  "visible": true
+                }
               }
             }
           }
         }
-      }
-    ]
-  }
-  ```
+      ]
+    }
+    ```
 
 8. **Update mappings.js**: Add your component's name to the **OOTBComponentDecorators** (for OOTB- style components) or **customComponents** list so it is recognized and loaded by the system.
 
