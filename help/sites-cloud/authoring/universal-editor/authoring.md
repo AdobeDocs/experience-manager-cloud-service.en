@@ -188,6 +188,24 @@ Select the Undo or Redo buttons to undo or redo the last edit in the editor.
 >
 >Use the hot key `Command-Z` or `Shift-Command-Z` to undo or redo, respectively.
 
+### Copy and Paste {#copy-paste}
+
+You can copy and paste components that are within [containers.](/help/implementing/universal-editor/field-types.md#container) This is possible only within the same page.
+
+![Copy icon](assets/copy.png)
+![Paste icon](assets/paste.png)
+
+1. Select a component either within the editor or in the content tree.
+1. The **Copy** icon appears in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) Tap or click it.
+1. The **Paste** icon appears in the properties panel.
+1. Select the component _after_ which you wish to paste the copied component.
+1. Tap or click Paste.
+1. The copied component is pasted _after_ the selected component.
+
+>[!TIP]
+>
+>Use the hot key `Command-C` or `Command-V` to copy or paste, respectively.
+
 ## Previewing Content {#previewing-content}
 
 When you are finished editing content, you often want to navigate it to see how it looks in the content of other pages. In [preview mode](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode) you can click links to navigate your content as a reader would. The content is rendered in the editor as it would be published.
