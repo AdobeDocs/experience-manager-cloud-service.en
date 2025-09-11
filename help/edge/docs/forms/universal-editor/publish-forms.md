@@ -43,7 +43,7 @@ Each phase builds on the previous one to ensure secure, functional deployment.
 1. **Access your form**: Open your Adaptive Form in the Universal Editor
 2. **Start publishing**: Click the **Publish** icon in the toolbar
 
-   ![Click Publish](/help/forms/assets/publish-icon-eds-form.png)
+   ![Click Publish](/help/edge/docs/forms/universal-editor/assets/publish-form-ue.png)
 
 +++
 
@@ -52,12 +52,12 @@ Each phase builds on the previous one to ensure secure, functional deployment.
 
 1. **Review publishing assets**: The system shows all assets being published, including your form
 
-   ![On Click Publish](/help/forms/assets/on-click-publish.png)
+   ![On Click Publish](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-review.png)
 
 2. **Confirm publishing**: Click **Publish** to proceed
 3. **Verify success**: Look for the confirmation message
 
-   ![Publish Success](/help/forms/assets/publish-success.png)
+   ![Publish Success](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-success.png)
 
 +++
 
@@ -66,7 +66,7 @@ Each phase builds on the previous one to ensure secure, functional deployment.
 
 **Check status**: Click the **Publish** icon again to view current status
 
-![Publish Status](/help/forms/assets/publish-status.png)
+![Publish Status](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-validate.png)
 
 **Validation Checkpoint:**
 
@@ -85,7 +85,7 @@ Each phase builds on the previous one to ensure secure, functional deployment.
 2. Click the three-dot menu (⋯) in the upper-right corner
 3. Select **Unpublish**
 
-![Unpublish form](/help/forms/assets/unpublish--form.png)
+![Unpublish form](/help/edge/docs/forms/universal-editor/assets/unpublish-ue.png)
 
 +++
 
