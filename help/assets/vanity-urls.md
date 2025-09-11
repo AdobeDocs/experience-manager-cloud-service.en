@@ -85,20 +85,20 @@ Execute the following steps to create vanity URLs:
 ### Configure asset metadata{#configure-asset-metadata}
 
 Execute the following to set up the vanity ID in your asset's metadata form:
-1. Navigate to your asset folder's details page and see the metadata form applied to the folder.
+1. Navigate to the details page of the folder holding your assets for Dynamic Media with OpenAPI delivery.
 1. [Edit that metadata form](/help/assets/metadata-assets-view.md#edit-metadata-forms) by doing one of the following:
    * Add a new metadata field and specify the required vanity ID as the value of that field.
-   * **Update existing field**: Replace an existing metadata property's value with the required vanity ID. Learn more about [metadata schemas](/help/assets/metadata-schemas.md).
+   * **Update existing field**: Replace an existing metadata property's value with the required vanity ID. Learn the [best practices](#best-practices-for-creating-vanity-IDs) for creating the vanity ID.
    
    [Screenshot placeholder]
 
-   Learn the [best practices](#best-practices-for-creating-vanity-IDs) for creating the vanity ID.
-
+   Learn more about [metadata schemas](/help/assets/metadata-schemas.md).
+   
    >[!NOTE]
    >
    > A single asset can have multiple vanity IDs.
 
-After configuring your vanity ID in the asset metadata, [connect this metadata field to the system's delivery mechanism](#map-cloud-manager-environment-variable).
+After configuring your vanity ID in the asset metadata, [map this metadata field to the system's delivery mechanism](#map-cloud-manager-environment-variable).
 
 ### Create and map Cloud manager environment variable{#map-cloud-manager-environment-variable}
 
@@ -107,8 +107,8 @@ Execute the following steps to create an environment variable and map it to the 
 1. [Navigate to your Cloud Manager environment's configurations page and add a new environment variable with these settings](/help/implementing/cloud-manager/environment-variables.md):
    * **Key**: `ASSET_DELIVERY_VANITY_ID`
    * **Value**: Your metadata field in `dc:<your-metadata-property>` format.
-1. Save your changes to restart the pods in your environment automatically.
-[Screenshot placeholder]
+   [Screenshot placeholder]
+1. Save your changes to restart the pods in your environment.
 
 ### Generate Vanity URLs{generate-vanity-urls}
 
@@ -119,29 +119,6 @@ Make the following replacements to transform your standard delivery URL into van
 
 See the [detailed URL format comparison](#standard-urls) above. Learn how to [copy Dynamic Media with OpenAPI delivery URLs](/help/assets/approve-assets.md#copy-delivery-url-for-approved-assets) for your assets.
 
-
-
-<!--To create vanity URLs, map the `ASSET_DELIVERY_VANITY_ID` variable available in your cloud manager environment with the metadata property in your asset's metadata form that includes the vanity ID. Then replace the UUID in your deliver URL with this vanity ID to create the Vanity URL. This mapping maps the vanity IDs to asset UUIDs for asset delivery. The system maps vanity IDs to asset UUIDs at ingestion time and resolve them properly at delivery time. 
- When your user click your vanity URL(delivery url with vanity id), Dynamic Media with OpenAPI automatically redirects to the original asset location.
-
-Execute the following steps to create vanity URLs:
-
-1. Navigate to the details page of your folder storing the assets that needs to be delivered using DM with OpenAPI capabilities and see the metadata form applied to the folder.
-1. [Edit that metadata form](/help/assets/metadata-assets-view.md#edit-metadata-forms) applied to the asset to add a new metadata field and specify the vanity ID in its value field.
-Alternativey, you can also replace the existing value of a metadata property with the required vanity ID. See [metadata scema](/help/assets/metadata-schemas.md) article for more information on metadata forms. Learn the [best practices](#best-practices-for-creating-vanity-IDs) for creating the vanity ID.
-[screen shot]
-An asset can have multiple vanity IDs.
-1. Navigate to the configurations page in your cloud manager environment to add a new `ASSET_DELIVERY_VANITY_ID` variable. Learn to add [environment variables in Cloud Manager](/help/implementing/cloud-manager/environment-variables.md). `ASSET_DELIVERY_VANITY_ID` is the key. In its value field, specify the metadata field containing the vanity ID in `dc:<your metadata property>` format to map `ASSET_DELIVERY_VANITY_ID` with the metadata property.
-[screen shot]
-1. Save the changes to automatically restart the pods in your program environment. 
-1. [Approve the assets for delivery](/help/assets/manage-organize-assets-view.md#manage-asset-status).
-1. Execute the following editing in the satandard DM with OpenAPI delivery URL, to generate the vanity URL for asset delivery:     
-   * Replace **UUID** with **vanity ID** and 
-   * Replace `aaid` with `avid`. 
-
-Scroll above to [see the difference](#standard-urls) in both the URLs. Learn to copy the [dmwith open api delivery url]() of your assets.
--->
-
 When your user click the vanity URL, Dynamic Media with OpenAPI automatically redirects to the original asset location. DM with OpenAPI maps your vanity URL to the original asset UUID and handles the redirection at the server level. The content loads instantly, while the user continue to see the vanity URL in their address bar. This redirection process is not visible to the user. The redirection process does not impact existing workflows, and asset delivery continues as usual. You can customize the vanity URL in real time without affecting the asset delivery performance.
 
 ### Best Practices for Vanity IDs{#best-practices-for-creating-vanity-IDs}
@@ -149,7 +126,7 @@ When your user click the vanity URL, Dynamic Media with OpenAPI automatically re
 Follow these best practices for creating vanity IDs:
 
 1. Do not use special characters in vanity IDs, such as spaces, slashes, hyphens and more. The system replaces special characters in vanity IDs using a predefined mapping.
-1. Use your brand name, product names, and relevant keywords in to boost your brand visibility and user engagement.
+1. Use your brand name, product names, and relevant keywords in vanity ID to boost your brand visibility and user engagement.
 1. Use short, descriptive words or strings that convey meaning.
 1. Use texts that invite users for clicks.
 
