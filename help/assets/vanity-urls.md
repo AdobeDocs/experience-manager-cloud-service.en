@@ -74,8 +74,6 @@ To create the vanity URL, ensure you have already [approved the assets for publi
 
 ## Create Vanity URLs{#create-vanity-urls}
 
-Asset delivery URLs includes asset UUIDs. Assets are stored with a unique UUID-based key in the Blob store. Each asset has a metadata JSON doc with the asset UUID as the key and the asset path as the value. When user hits the delivery URL, the backend resolves the UUID to fetch the asset's metadata from the key-value store using the UUID and serves the asset. 
-
 Execute the following steps to create vanity URLs:
 1. [Set up asset metadata](#set-up-asset-metadata)
 1. [Create and map Cloud manager environment variable](#map-cloud-manager-environment-variable)
@@ -105,7 +103,7 @@ Execute the following steps to create an environment variable and map it to the 
 1. [Navigate to the configurations page of your Cloud Manager environment](/help/implementing/cloud-manager/environment-variables.md) and do the following:
    1. Add `ASSET_DELIVERY_VANITY_ID` variable. This is the key.
    1. In the value field, map to the metadata property holding the vanity ID. The mapping follows `dc:<your-metadata-property>` format, where the metadata mapping prefix (such as *dc:*) varies as per the metadata configuration property.
-   [Screenshot placeholder]
+   ![ASSET_DELIVERY_VANITY_ID variable](/help/assets/assets/environment-config.png)
 1. Save your changes to restart the pods in your environment.
 
 After this mapping, [approve your assets that require vanity URL for delivery](/help/assets/manage-organize-assets-view.md#manage-asset-status), then [generate vanity urls](#generate-vanity-urls).
@@ -119,7 +117,7 @@ Make the following replacements to transform your standard delivery URL into a v
 
 See the [detailed URL format comparison](#standard-urls) above. Learn how to [copy Dynamic Media with OpenAPI delivery URLs](/help/assets/approve-assets.md#copy-delivery-url-for-approved-assets) for your assets.
 
-When your user clicks the vanity URL, [!DNL Dynamic Media with OpenAPI] automatically maps the vanity ID to the original asset UUID at ingestion time and resolve them properly at delivery time to server the asset to the user. This mapping process executes at server level and does not reflect in the URL and the user continue to see the vanity URL in their address bar. The mapping process does not impact existing workflows, and asset delivery continues as usual. You can customize the vanity URL in real time without affecting the asset delivery performance.
+When your user clicks the vanity URL, [!DNL Dynamic Media with OpenAPI] automatically maps the vanity ID to the original asset UUID at ingestion time and resolves them properly at delivery time to serve the asset to the user without any delay. You can customize the vanity URL in real time without affecting the asset delivery performance.
 
 ### Best Practices for Vanity IDs{#best-practices-for-creating-vanity-IDs}
 
