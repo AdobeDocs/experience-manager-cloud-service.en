@@ -30,7 +30,7 @@ You simply open the selected environment's ![More icon or ellipsis menu icon](ht
 * The program runs on AEM as a Cloud Service.
 * The last pipeline for that environment finished successfully and ran **fewer than 30 days** ago.
 * The environment status is *Running* and no pipeline is in progress.
-* **Restore previous code deployed** can be done on a `Development` environment, `Stage` environment, or a `Specialized Testng Environment`.
+* **Restore previous code deployed** can be done on a `Development` environment, `Stage` environment, or a `Specialized Testing Environment`.
 
 If any check fails, Cloud Manager opens the following dialog box that lists one or more unmet conditions and disables **Confirm**, preventing the restore.
 
