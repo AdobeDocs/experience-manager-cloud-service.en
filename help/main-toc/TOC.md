@@ -124,6 +124,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2025 {#2025}
+      + [2025.8.0](/help/implementing/cloud-manager/release-notes/2025/2025-8-0.md)
       + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
       + [2025.6.0](/help/implementing/cloud-manager/release-notes/2025/2025-6-0.md)
       + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
@@ -225,7 +226,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)  
   + Release Notes for Generate Variations {#generate-variations}
     + [Current Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)
-  + Release Notes for Universal Editor {#univeral-editor}
+  + Release Notes for Universal Editor {#universal-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + 2025 {#2025}
       + [2025.08.22 Release Notes](/help/release-notes/universal-editor/2025/2025-08-22.md)
@@ -517,6 +518,7 @@ user-guide-title: AEM as a Cloud Service
     + [Exporting Content Fragments to Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
     + [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
     + [Integrating with Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
+    + [Using Content Fragments in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
   + [Operational Telemetry for AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
   + [Overview and what's new](/help/assets/overview.md)
@@ -1244,13 +1246,14 @@ user-guide-title: AEM as a Cloud Service
       + [Use Git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
       + [Use Multiple Repositories](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
       + [Enterprise Development Team Setup](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-      + [GitHub Check Configuration](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+      + [Pull Request Checks for Private Repositories](/help/implementing/cloud-manager/managing-code/github-check-config.md)
       + [GitHub Check Annotations](/help/implementing/cloud-manager/managing-code/github-annotations.md)
     + [Environment Variables](/help/implementing/cloud-manager/environment-variables.md)
     + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
       + [Introduction to CI-CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
       + [Configure a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
       + [Configure a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+      + [Split Stage and Production Only Pipeline (Beta)](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md)
       + [Configure an Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
       + [Manage Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
       + [Pipeline Variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
@@ -1484,7 +1487,7 @@ user-guide-title: AEM as a Cloud Service
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
   + [Maintenance Tasks](/help/operations/maintenance.md)
   + [Restore Content](/help/operations/restore.md)
-  + [Restore Previous Code Deployed (Alpha)](/help/operations/restore-previous-code-deployed.md)
+  + [Restore Previous Code Deployed (Beta)](/help/operations/restore-previous-code-deployed.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Using Config Pipelines](/help/operations/config-pipeline.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
