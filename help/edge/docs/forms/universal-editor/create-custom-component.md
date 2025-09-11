@@ -170,6 +170,8 @@ In this section, you'll learn the process of creating a **cards custom component
 
 The first step is to setup the necessary files of the custom component and wire it up to the code in the repository. This process is done automatically by the **AEM Forms Scaffolder CLI**, which makes it quicker to scaffold and wire the necessary files.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3474752)
+
 1. Open the terminal and navigate to the root of your form project.
 2. Run the following commands:
 
