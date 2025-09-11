@@ -13,7 +13,7 @@ See the following URL formats to understand their difference:
 * [Standard delivery URL](#standard-urls)
 * [Vanity URLs](#vanity-url)
 
-Standard delivery URLs use `aaid` followed by a UUID, while vanity URLs use `vid` followed by a custom identifier (vanity identifier).
+Standard delivery URLs use `aaid` followed by a UUID, while vanity URLs use `avid` followed by a custom identifier (vanity identifier).
 
 Use short and simple vanity IDs, to make your delivery URL short, clean, readable, easy-to-remember and share. Use your brand name, product names, and relevant keywords as vanity IDs to boost your brand visibility and user engagement. 
 
@@ -25,7 +25,7 @@ Learn to [create Vanity URLs](#create-vanity-urls).
 
 The standard [!DNL Dynamic Media with OpenAPI] asset delivery URL includes a unique system-generated identifier and follows the following format.
 
-***Format:*** `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:aaid:aem:<asset-uuid>/as/seoname.jpg`
+***Format:*** `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:aaid:aem:<asset-uuid>/as/<seoname>.<format>`
 
 ***Example:*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:43341ab1-4086-44d2-b7ce-ee546c35613b/as/chekc.jpeg`
 
@@ -37,11 +37,11 @@ In the above example, `43341ab1-4086-44d2-b7ce-ee546c35613b` is the UUID.
 
 The vanity URLs includes a vanity identifier in place of asset UUID and follows the following format.
 
-***Format:*** `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:vid:aem:<vanity-id>/<rendition-path>`
+***Format:*** `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/<seoname>.<format>`
 
 ***Example:*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:avid:aem:VanityCheck/as/chekc.jpeg`
 
-The vanity URL includes `vid` after `urn:` and your vanity ID between `urn:avid:aem:` and `/as/seoname.jpg`, where **vid** stands for *vanity identifier*.
+The vanity URL includes `avid` after `urn:` and your vanity ID between `urn:avid:aem:` and `/as/seoname.jpg`, where **avid** stands for *actual vanity identifier*.
 
 In the above example, `VanityCheck` is the vanity ID that replaced the UUID.
 
@@ -79,7 +79,7 @@ Asset delivery URLs includes asset UUIDs. Assets are stored with a unique UUID-b
 Execute the following steps to create vanity URLs:
 1. [Configure asset metadata](#configure-asset-metadata)
 1. [Create and map Cloud manager environment variable](#map-cloud-manager-environment-variable)
-1. [Approve your assets for delivery](/help/assets/manage-organize-assets-view.md#manage-asset-status)
+1. [Approve the assets requiring vanity URL for delivery](/help/assets/manage-organize-assets-view.md#manage-asset-status)
 1. [Generate Vanity URLs](#generate-vanity-urls)
 
 ### Configure asset metadata{#configure-asset-metadata}
@@ -109,6 +109,8 @@ Execute the following steps to create an environment variable and map it to the 
    * **Value**: Your metadata field in `dc:<your-metadata-property>` format.
    [Screenshot placeholder]
 1. Save your changes to restart the pods in your environment.
+
+After this mapping, [approve your assets that require vanity URL for delivery](/help/assets/manage-organize-assets-view.md#manage-asset-status), then [generate vanity urls](#generate-vanity-urls).
 
 ### Generate Vanity URLs{#generate-vanity-urls}
 
