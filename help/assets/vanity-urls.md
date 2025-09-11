@@ -92,9 +92,9 @@ Execute the following to set up the vanity ID in your asset's metadata form:
    ![vanity ID](/help/assets/assets/vanity-id-metadata.png)
    Learn more about [metadata schemas](/help/assets/metadata-schemas.md).
    
-   >[!NOTE]
-   >
-   > A single asset can have multiple vanity IDs. [Contact Adobe support](https://helpx.adobe.com/in/contact.html) and raise a request for generating the required vanity IDs.
+     >[!NOTE]
+     >
+     > A single asset can have multiple vanity IDs. [Contact Adobe support](https://helpx.adobe.com/in/contact.html) and raise a request for generating the required vanity IDs.
 
 After setting up your vanity ID in the asset metadata form, [map this metadata field to the system's delivery mechanism](#map-cloud-manager-environment-variable).
 
