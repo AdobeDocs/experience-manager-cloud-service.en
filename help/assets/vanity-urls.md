@@ -7,7 +7,7 @@ feature: Asset Management, Publishing, Collaboration, Asset Processing
 
 # What are Vanity URLs?{#vanity-urls}
 
-Use [!DNL Dynamic Media OpenAPI capabilities] to transform your long asset delivery URLs into short, branded vanity URLs. Standard asset delivery URLs include system-generated asset UUIDs that make the delivery URL complex, hard to remember and share. Replace these asset UUIDs with vanity identifiers (Vanity IDs) to generate a vanity URL. A vanity URL is a short, clean, and readable version of your complex delivery URL.
+Use [!DNL Dynamic Media OpenAPI capabilities] to transform your long asset delivery URLs into short, branded vanity URLs. Standard asset delivery URLs include system-generated asset UUIDs that make the delivery URL complex, hard to remember and share. Replace these asset UUIDs with simple identifiers (Vanity IDs) to generate a vanity URL. A vanity URL is a short, clean, and readable version of your complex delivery URL.
 
 See the following URL formats to understand their difference:
 * [Standard delivery URL](#standard-urls)
@@ -15,7 +15,7 @@ See the following URL formats to understand their difference:
 
 Standard delivery URLs use `aaid` followed by a UUID, while vanity URLs use `avid` followed by a custom identifier (vanity identifier).
 
-Use short and simple vanity IDs, to make your delivery URL short, clean, readable, easy-to-remember and share. Use your brand name, product names, and relevant keywords as vanity IDs to boost your brand visibility and user engagement. 
+Use short and simple vanity identifiers, to make your delivery URL short, clean, readable, easy-to-remember and share. Use your brand name, product names, and relevant keywords as vanity IDs to boost your brand visibility and user engagement. 
 
 When your user clicks your vanity URL, [!DNL Dynamic Media with OpenAPI] automatically maps to the original asset location at ingestion time and resolve them properly at delivery time to server the asset to the user. 
 
@@ -29,7 +29,7 @@ The standard [!DNL Dynamic Media with OpenAPI] asset delivery URL includes a uni
 
 ***Example:*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:43341ab1-4086-44d2-b7ce-ee546c35613b/as/chekc.jpeg`
 
-The standard delivery URL includes `aaid` after `urn:` and a UUID between `urn:aaid:aem:` and `/as/seoname.jpg`, where **aaid** stands for *actual asset identifier*.
+The standard delivery URL includes `aaid` after `urn:` and a UUID between `urn:aaid:aem:` and `/as/<seoname>.<format>`, where **aaid** stands for *actual asset identifier*.
 
 In the above example, `43341ab1-4086-44d2-b7ce-ee546c35613b` is the UUID.
 
@@ -41,7 +41,7 @@ The vanity URLs includes a vanity identifier in place of asset UUID and follows 
 
 ***Example:*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:avid:aem:VanityCheck/as/chekc.jpeg`
 
-The vanity URL includes `avid` after `urn:` and your vanity ID between `urn:avid:aem:` and `/as/seoname.jpg`, where **avid** stands for *actual vanity identifier*.
+The vanity URL includes `avid` after `urn:` and your vanity ID between `urn:avid:aem:` and `/<seoname>.<format>`, where **avid** stands for *actual vanity identifier*.
 
 In the above example, `VanityCheck` is the vanity ID that replaced the UUID.
 
@@ -106,7 +106,9 @@ Execute the following steps to create an environment variable and map it to the 
    ![ASSET_DELIVERY_VANITY_ID variable](/help/assets/assets/environment-config.png)
 1. Save your changes to restart the pods in your environment.
 
-After this mapping, [approve your assets that require vanity URL for delivery](/help/assets/manage-organize-assets-view.md#manage-asset-status), then [generate vanity urls](#generate-vanity-urls).
+### Approve the assets for delivery{#approve-assets-for-delivery}
+
+After mapping the `ASSET_DELIVERY_VANITY_ID` variable in your Cloud Manager environment to the asset metadata property that holds the vanity ID, [approve your assets that require vanity URL for delivery](/help/assets/manage-organize-assets-view.md#manage-asset-status).
 
 ### Generate Vanity URLs{#generate-vanity-urls}
 
