@@ -31,7 +31,7 @@ The standard Dynamic Media with OpenAPI asset delivery URL includes a unique sys
 
 The standard delivery URL includes `aaid` after `urn:` and a UUID after `urn:aaid:aem:`, where **aaid** stands for *actual asset identifier*.
 
-In the example `43341ab1-4086-44d2-b7ce-ee546c35613b` is the UUID.
+In the above example `43341ab1-4086-44d2-b7ce-ee546c35613b` is the UUID.
 
 ## Vanity URLs{#vanity-url}
 
