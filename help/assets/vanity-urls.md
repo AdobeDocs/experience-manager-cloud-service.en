@@ -70,9 +70,7 @@ Also, consistent use of branded URLs in all communications reinforces brand iden
 
 ## Prerequisites{#prerequisites-for-creating-vanity-id}
 
-Fulfill the following requirements for creating the vanity ID:
-
-1. [Approve assets for delivery](/help/assets/manage-organize-assets-view.md#manage-asset-status).
+To create the vanity URL, ensure you have [approved the assets for public delivery](/help/assets/manage-organize-assets-view.md#manage-asset-status).
 
 ## Create Vanity URLs{#create-vanity-urls}
 
