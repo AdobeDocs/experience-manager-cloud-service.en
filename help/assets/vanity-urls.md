@@ -29,7 +29,7 @@ The standard Dynamic Media with OpenAPI asset delivery URL includes a unique sys
 
 ***Example:*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:43341ab1-4086-44d2-b7ce-ee546c35613b/as/chekc.jpeg`
 
-The standard delivery URL includes `aaid` after `urn:` and a UUID after `urn:aaid:aem:`, where **aaid** stands for *actual asset identifier*.
+The standard delivery URL includes `aaid` after `urn:` and a UUID between `urn:aaid:aem:` and `/as/seoname.jpg`, where **aaid** stands for *actual asset identifier*.
 
 In the above example `43341ab1-4086-44d2-b7ce-ee546c35613b` is the UUID.
 
@@ -41,13 +41,13 @@ The vanity URLs includes a vanity identifier in place of aaset UUID and follows 
 
 ***Example:*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:avid:aem:VanityCheck/as/chekc.jpeg`
 
-The vanity URL includes `vid` after `urn:` and your vanity ID after `urn:avid:aem:`, where **vid** stands for *vanity identifier*.
+The vanity URL includes `vid` after `urn:` and your vanity ID between `urn:avid:aem:` and `/as/seoname.jpg`, where **vid** stands for *vanity identifier*.
 
 In the above example, `VanityCheck` is the vanity ID that replaced the UUID.
 
 ## Explore key capabilities and benefits{#capabilities-and-benefits-of-vanity-urls}
 
-Vanity URLs enable customization of standard asset delivery URLs, providing several advantages and measurable impact. Some of the key capabilities and benefits include the following.
+Using meaningful vanity IDs to customize the standard asset delivery URLs, provides several advantages and measurable impact. Some of the key capabilities and benefits of vanity URLs include the following.
 
 **Key capabilities:**
 
