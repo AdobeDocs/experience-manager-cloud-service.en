@@ -78,9 +78,9 @@ Asset delivery URLs includes asset UUIDs. Assets are stored with a unique UUID-b
 
 Execute the following steps to create vanity URLs:
 1. [Configure asset metadata](#configure-asset-metadata)
-1. [Create and map Cloud manager environment variable]()
+1. [Create and map Cloud manager environment variable](#map-cloud-manager-environment-variable)
 1. [Approve your assets for delivery](/help/assets/manage-organize-assets-view.md#manage-asset-status)
-1. [Generate Vanity URLs]()
+1. [Generate Vanity URLs](#generate-vanity-urls)
 
 ### Configure asset metadata{#configure-asset-metadata}
 
@@ -110,7 +110,7 @@ Execute the following steps to create an environment variable and map it to the 
    [Screenshot placeholder]
 1. Save your changes to restart the pods in your environment.
 
-### Generate Vanity URLs{generate-vanity-urls}
+### Generate Vanity URLs{#generate-vanity-urls}
 
 Make the following replacements to transform your standard delivery URL into vanity URL:
 
