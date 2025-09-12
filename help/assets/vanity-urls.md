@@ -27,7 +27,7 @@ The standard [!DNL Dynamic Media with OpenAPI] asset delivery URL includes a uni
 
 ***Format:*** `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:aaid:aem:<asset-uuid>/as/<seoname>.<format>`
 
-***Example:*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:43341ab1-4086-44d2-b7ce-ee546c35613b/as/chekc.jpeg`
+***Example:*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:43341ab1-4086-44d2-b7ce-ee546c35613b/as/check.jpeg`
 
 The standard delivery URL includes `aaid` after `urn:` and a UUID between `urn:aaid:aem:` and `/as/<seoname>.<format>`, where **aaid** stands for *actual asset identifier*.
 
@@ -39,7 +39,7 @@ The vanity URLs includes a vanity identifier in place of asset UUID and follows 
 
 ***Format:*** `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/<seoname>.<format>`
 
-***Example:*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:avid:aem:VanityCheck/as/chekc.jpeg`
+***Example:*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:avid:aem:VanityCheck/as/check.jpeg`
 
 The vanity URL includes `avid` after `urn:` and your vanity ID between `urn:avid:aem:` and `/<seoname>.<format>`, where **avid** stands for *actual vanity identifier*.
 
