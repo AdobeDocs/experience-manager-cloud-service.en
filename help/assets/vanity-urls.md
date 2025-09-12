@@ -117,7 +117,8 @@ Make the following replacements to transform your standard delivery URL into a v
 * Replace **UUID** with your **vanity ID**.
 * Replace `aaid` with `avid`.
 
-See the [detailed URL format comparison](#standard-urls) above. Learn how to [copy Dynamic Media with OpenAPI delivery URLs](/help/assets/approve-assets.md#copy-delivery-url-for-approved-assets) for your assets.
+See the [URL transformation from standard to vanity URL](#standard-urls) above.
+Learn how to [copy Dynamic Media with OpenAPI delivery URLs](/help/assets/approve-assets.md#copy-delivery-url-for-approved-assets) for your assets.
 
 When your user clicks the vanity URL, [!DNL Dynamic Media with OpenAPI] automatically maps the vanity ID to the original asset UUID at ingestion time and resolves them properly at delivery time to serve the asset to the user without any delay. You can customize the vanity URL in real time without affecting the asset delivery performance.
 
