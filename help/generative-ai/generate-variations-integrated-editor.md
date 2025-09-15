@@ -328,7 +328,7 @@ For further information you can also read:
 
 * [Generate Variations landing page on Experience Cloud](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html)
 
-* [Generative in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
+* [Generative AI in AEM as a Cloud Service](/help/ai-in-aem/overview.md#generative-ai-in-aem)
 
 ## Release History {#release-history}
 
