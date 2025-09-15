@@ -122,9 +122,11 @@ Learn how to [copy Dynamic Media with OpenAPI delivery URLs](/help/assets/approv
 
 When your user clicks the vanity URL, [!DNL Dynamic Media with OpenAPI] automatically maps the vanity ID to the original asset UUID at ingestion time and resolves them properly at delivery time to serve the asset to the user without any delay. You can customize the vanity URL in real time without affecting the asset delivery performance.
 
+Learn how you can further [customize your vanity URL](#customize-vanity-url).
+
 ## Customize vanity URLs{#customize-vanity-url}
 
-You can further customize DNS name and domain path in your vanity URL to get the [benefits mentioned above](#capabilities-and-benefits-of-vanity-urls). Create meaningful customizations to transforms your vanity URL into a unique web-address that is clean, descriptive, branded and intuitive.
+customize the DNS name and domain path in your vanity URL to transforms it into a unique web-address that is clean, descriptive, branded and intuitive and provides the [above-mentioned benefits](#capabilities-and-benefits-of-vanity-urls).
 
 See the following vanity URL and its customizable components:
 
