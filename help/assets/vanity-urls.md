@@ -86,7 +86,7 @@ Execute the following to set up the vanity ID in your asset's metadata form:
 1. Navigate to the details page of the folder holding your assets for [!DNL Dynamic Media with OpenAPI] delivery.
 1. [Edit that metadata form](/help/assets/metadata-assets-view.md#edit-metadata-forms) by doing one of the following:
    * Add a new metadata field and specify the required vanity ID as the value of that field.
-   * **Update existing field**: Replace an existing metadata property's value with the required vanity ID. Learn the [best practices](#best-practices-for-creating-vanity-IDs) for creating the vanity ID.
+   * **Update existing field**: Replace an existing metadata property's value with the required vanity ID. Learn the [best practices](#best-practices) for creating the vanity ID.
    ![vanity ID](/help/assets/assets/vanity-id-metadata.png)
    Learn more about [metadata schemas](/help/assets/metadata-schemas.md).
    
@@ -122,12 +122,116 @@ Learn how to [copy Dynamic Media with OpenAPI delivery URLs](/help/assets/approv
 
 When your user clicks the vanity URL, [!DNL Dynamic Media with OpenAPI] automatically maps the vanity ID to the original asset UUID at ingestion time and resolves them properly at delivery time to serve the asset to the user without any delay. You can customize the vanity URL in real time without affecting the asset delivery performance.
 
-### Best Practices for Vanity IDs{#best-practices-for-creating-vanity-IDs}
+## Customize vanity URLs{#customize-vanity-url}
 
-Follow these best practices for creating vanity IDs:
+You can further customize DNS name and domain path in your vanity URL to get the [benefits mentioned above](#capabilities-and-benefits-of-vanity-urls). Create meaningful customizations to transforms your vanity URL into a unique web-address that is clean, descriptive, branded and intuitive.
+
+See the following vanity URL and its customizable components:
+
+**Vanity URL format:**`https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/<seoname>.<format>`
+
+**Customizable URL Components**
+
+* ***[DNS name (hostname):](#customize-DNS)*** `https://delivery-<tenant>.adobeaemcloud.com` is the server domain that hosts your assets. [Customize DNS to change the hostname](#customize-DNS).
+* ***[Domain path:](#rewrite-cdn-rules)*** `adobe/assets/urn:avid:aem:` is the path structure that identifies asset types and delivery methods. [Rewrite CDN rules](#rewrite-cdn-rules) to modify the domain path.
+
+**Vanity URL format with customized DNS name and domain path:** `https://<custom-dns>` `/` `dam/assets/` `<vanity-id>.<format>`
+
+### Customize DNS{#customize-DNS}
+
+[Raise a request to Adobe support](https://helpx.adobe.com/in/contact.html) for generating the required custom DNS for your delivery tier.
+See [this article](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/configure-custom-domain#:~:text=In%20Adobe%20Cloud%20Manager%2C%20you,the%20allowed%20redirect%20URLs%20list) to configure a custom domain for the publish tier.
+
+### Rewrite CDN rules{#rewrite-cdn-rules}
+
+Execute the following steps to rewrite the CDN rules for delivery:
+
+1. Navigate to your AEM repository to create a YAML configuration file.
+2. Execute the steps in [setup](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) section to configure CDN rules and deploy the configuration through your Cloud Manager configuration pipeline. 
+[Learn more about CDN rewriting rules](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
+
+#### Asset-specific CDN rewriting rules(#asset-specific-cdn-rewriting-rules)
+
+Different asset types require specific CDN rewrite rule. See the following CDN writing rules for various asset types:
+
+```- name: cdn-rewrite-rule
+  when:
+    allOf:
+      - reqProperty: tier
+        equals: delivery
+```
+##### For SVG / GIF / PDF {#svg-gif-pdf}
+
+For asset types including PDF, SVG, GIF and more `/original/as/` is the format at the end of the vanity URL:
+
+```
+    type: transform
+      reqProperty: path
+      op: replace
+      match: ^/dam/assets/([^/]+\.(?:svg|gif|pdf|docx|xlsx))(\?.*)?$
+      replacement: /adobe/assets/urn:avid:aem:\1/original/as/\1\2
+```
+##### For video{#video}
+
+For videos including mp4, mov, and more `/play` is the format at the end of the vanity URL:
+
+``` 
+type: transform
+      reqProperty: path
+      op: replace
+      match: ^/dam/assets/([^/]+\.(?:mp4|mov|avi|mkv))(\?.*)?$
+      replacement: /adobe/assets/urn:avid:aem:\1/play\2
+```
+##### For image{#image}
+
+For all image types excluding svg `/as/` is the format at the end of the vanity URL:
+
+```
+type: transform
+      reqProperty: path
+      op: replace
+      match: ^/dam/assets/([^/]+\.[^/]+)(\?.*)?$
+      replacement: /adobe/assets/urn:avid:aem:\1/as/\1\2
+```
+---
+
+```
+- name: cdn-rewrite-rule
+  when:
+    allOf:
+      - reqProperty: tier
+        equals: delivery
+  actions:
+    # Documents (SVG, GIF, PDF, etc.) → /original/as/
+    - type: transform
+      reqProperty: path
+      op: replace
+      match: ^/dam/assets/([^/]+\.(?:svg|gif|pdf|docx|xlsx))(\?.*)?$
+      replacement: /adobe/assets/urn:avid:aem:\1/original/as/\1\2
+
+    # Videos (MP4, MOV, etc.) → /play
+    - type: transform
+      reqProperty: path
+      op: replace
+      match: ^/dam/assets/([^/]+\.(?:mp4|mov|avi|mkv))(\?.*)?$
+      replacement: /adobe/assets/urn:avid:aem:\1/play\2
+
+    # Images and other formats → /as/
+    - type: transform
+      reqProperty: path
+      op: replace
+      match: ^/dam/assets/([^/]+\.[^/]+)(\?.*)?$
+      replacement: /adobe/assets/urn:avid:aem:\1/as/\1\2
+
+```
+
+## Follow the best practices for creating Vanity URLs{#best-practices}
+
+Follow these best practices for creating vanity IDs, custom DNS and domain names:
 
 1. Do not use special characters in vanity IDs, such as spaces, slashes, hyphens and more. The system replaces special characters in vanity IDs using a predefined mapping.
-1. Use your brand name, product names, and relevant keywords in your vanity ID to boost your brand visibility and user engagement.
+1. Use your brand name, product names, and relevant keywords in your vanity IDs, custom DNS and domain names to boost your brand visibility and user engagement.
 1. Use short, descriptive words or strings that convey meaning.
 1. Use texts that invite users for clicks.
+
 
