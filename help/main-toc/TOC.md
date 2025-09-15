@@ -996,6 +996,21 @@ user-guide-title: AEM as a Cloud Service
     + [Restarting AEM SDK](/help/forms/restart-aem-sdk.md)
     + [Resolving Forms creation failures](/help/forms/form-creation-failing.md)
     + [502 Error Page in Custom Submit Action](/help/forms/custom-submit-action-troubleshooting.md)
++ AI in AEM {#ai-in-aem}
+  * [Overview](/help/ai-in-aem/overview.md)
+  + AI Assistant {#ai-assistant}
+    + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
+    + [About AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
+  + Generative AI {#generative-ai}
+    + [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
+    + [Generate Variations](/help/generative-ai/generate-variations.md)
+  + Forms Experience Builder {#forms-experience-builder}
+    + [AI Assistant for AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
+    + [Getting started with AI Assistant for AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
+    + [Getting started with AI Assistant for AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
+    + [AEM Forms AI Assistant - Prompt Library](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+    + [Forms Experience Builder - Best Practices](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
+    + [Forms Experience Builder - Troubleshooting Guide](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + Screens {#screens-as-cloud-service}
   + Overview to Screens as a Cloud Service {#overview}
     + [Introduction](/help/screens-cloud/introduction/introduction.md)
@@ -1210,19 +1225,6 @@ user-guide-title: AEM as a Cloud Service
       + [Authoring Basics for Headless with AEM](/help/journey-headless/author/basics.md)
       + [Learn about using references in Content Fragments](/help/journey-headless/author/references.md)
       + [Learn about defining Metadata and Tagging for Content Fragments](/help/journey-headless/author/metadata-tagging.md)
-+ AI Assistant {#ai-assistant}
-  + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
-  + [About AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
-+ Generative AI {#generative-ai}
-  + [Generative AI in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
-  + [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
-  + [Generate Variations](/help/generative-ai/generate-variations.md)
-  + [AI Assistant for AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-  + [Getting started with AI Assistant for AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
-  + [Getting started with AI Assistant for AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
-  + [AEM Forms AI Assistant - Prompt Library](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-  + [Forms Experience Builder - Best Practices](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
-  + [Forms Experience Builder - Troubleshooting Guide](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + Implementing {#implementing}
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
   + Use Cloud Manager {#using-cloud-manager}
