@@ -227,7 +227,7 @@ type: transform
 
 ```
 
-## Follow the best practices for creating Vanity URLs{#best-practices}
+## Follow the best practices for creating clean vanity URLs{#best-practices}
 
 Follow these best practices for creating vanity IDs, custom DNS and domain names:
 
