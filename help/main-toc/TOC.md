@@ -997,7 +997,7 @@ user-guide-title: AEM as a Cloud Service
     + [Resolving Forms creation failures](/help/forms/form-creation-failing.md)
     + [502 Error Page in Custom Submit Action](/help/forms/custom-submit-action-troubleshooting.md)
 + AI in AEM {#ai-in-aem}
-  * [Overview](/help/ai-in-aem/overview.md)
+  + [Overview](/help/ai-in-aem/overview.md)
   + AI Assistant {#ai-assistant}
     + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
     + [About AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
