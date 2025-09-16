@@ -1,30 +1,30 @@
 ---
-title: Configure RTE for the Universal Editor
+title: Configuring the RTE for the Universal Editor
 description: Understand how you can configure the rich text editor (RTE) in the Universal Editor.
 feature: Developing
 role: Admin, Architect, Developer
 ---
 
-# Configure RTE for the Universal Editor {#configure-rte}
+# Configuring the RTE for the Universal Editor {#configure-rte}
 
 Understand how you can configure the rich text editor (RTE) in the Universal Editor.
 
 >[!NOTE]
 >
->This documentation applies to the new RTE for the Universal Editor, which is available as an early adopter feature. If you are interested in testing this new feature, please see the release notes for details.
+>This documentation applies to the new RTE for the Universal Editor, which is available as an early adopter feature. If you are interested in testing this new feature, [please see the release notes for details.](/help/release-notes/universal-editor/current.md#new-rte)
 
 ## Overview {#overview}
 
-When editing rich text using the Universal Editor, the Universal Editor provides a rich text editor (RTE) both in place and in the properties panel to allow authors to apply formatting changes to their text.
+The Universal Editor provides a rich text editor (RTE) both in place and in the properties panel to allow authors to apply formatting changes as they edit their text.
 
-This RTE is configurable using [component filters.](/help/implementing/universal-editor/filtering.md) This document describes what configuration options are available.
+This RTE is configurable using [component filters.](/help/implementing/universal-editor/filtering.md) This document describes what configuration options are available along with examples.
 
 ## Configuration Structure {#structure}
 
 RTE configuration consists of two parts:
 
-* `toolbar`: The toolbar configuration controls which editing options are available in the UI and how they're organized.
-* `actions`: The actions configuration allows you to customize the behavior and appearance of individual editing actions.
+* [`toolbar`](#toolbar): The toolbar configuration controls which editing options are available in the UI and how they're organized.
+* [`actions`](#actions): The actions configuration allows you to customize the behavior and appearance of individual editing actions.
 
 These configurations can be defined as part of a [component filter](help/implementing/universal-editor/filtering.md) with the property `rte`.
 
@@ -179,7 +179,7 @@ All other actions support basic customization. The following sections are availa
 
 ## Complete Example {#example}
 
-The following is an example complete configuration.
+The following is an example of a complete configuration.
 
 ```json
 [
@@ -255,7 +255,7 @@ The following is an example complete configuration.
 ]
 ```
 
-## Option Details {#details}
+## Action Option Details {#action-details}
 
 Several options have additional details that are important to keep in mind.
 
