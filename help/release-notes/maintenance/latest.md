@@ -16,11 +16,14 @@ Summarized below are the continuous improvements for maintenance release 22450, 
 
 The 2025.9.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-22450}
+### New Features  {#new-features-22450}
 
 SITES-32595 Workflows that complete with skipped or rejected fragments can now be identified. A new property is available in the workflow API response, listing fragments that were excluded due to being invalid or having invalid references.
 SITES-33642 A new API event is now produced and consumed for modified Content Fragments.
 SITES-33320 It is now possible to search for a Content Fragment Model using its technicalName via the Search API.
+
+### Enhancements {#enhancements-22450}
+
 SITES-34023 The technicalName field has been added to the responses of the Content Fragment Model endpoints for better identification.
 SITES-32766 The Content Asset References in Content Fragment Models now support a wider range of binary file types.
 SITES-33974 Improved OpenAPI documentation making it more accurate and user-friendly.
