@@ -36,6 +36,10 @@ SITES-31539 Edge Delivery with Universal Editor: Add support for Universal Edito
 SITES-20672 Edge Delivery with Universal Editor: Add support for additional bulk metadata spreadsheets in authoring
 SITES-32963 Edge Delivery with Universal Editor: Add new experimentation metadata for optimization target, auto-allocate and self-learning
 SITES-30847 Release Core Components 2.30.0
+SITES-29617 The referencedBy endpoint has been updated to use the ReferenceSearch class, improving its performance and reliability.
+SITES-19308 Enhanced the performance of the page deletion process by optimizing the reference validation step.
+SITES-34293 Implemented lazy loading for templated resources to improve performance.
+SITES-33892 Added a feature toggle to skip reference checks for pseudo pages, which can improve performance.
 
 ### Fixed Issues {#fixed-issues-22450}
 
