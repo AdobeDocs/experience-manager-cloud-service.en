@@ -126,7 +126,7 @@ Learn how you can further [customize your vanity URL](#customize-vanity-url).
 
 ## Customize vanity URLs{#customize-vanity-url}
 
-customize the DNS name and domain path in your vanity URL to transforms it into a unique web-address that is clean, descriptive, branded and intuitive and provides the [above-mentioned benefits](#capabilities-and-benefits-of-vanity-urls).
+customize the DNS name and domain path in your vanity URL to transforms it into a unique web-address that is clean, descriptive, branded, intuitive and provides the [above-mentioned benefits](#capabilities-and-benefits-of-vanity-urls).
 
 See the following vanity URL and its customizable components:
 
@@ -235,5 +235,3 @@ Follow these best practices for creating vanity IDs, custom DNS and domain names
 1. Use your brand name, product names, and relevant keywords in your vanity IDs, custom DNS and domain names to boost your brand visibility and user engagement.
 1. Use short, descriptive words or strings that convey meaning.
 1. Use texts that invite users for clicks.
-
-
