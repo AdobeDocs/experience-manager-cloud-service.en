@@ -49,13 +49,13 @@ In the above example, `VanityCheck` is the vanity ID that replaced the UUID.
 
 Using meaningful vanity IDs to customize the standard asset delivery URLs provides several advantages and measurable impact. Some of the key capabilities and benefits of vanity URLs include the following.
 
-**Key capabilities:**
+### Key capabilities{key-capabilities}
 
 * **URL customization:** Replace long identifiers (asset UUIDs) in the delivery URL with shorter, brand-aligned alternatives to generate a cleaner delivery URL.
 * **Real-time redirection:** Vanity URLs redirect to original asset UUIDs at runtime without disrupting workflows. Users see clean URLs in the address bar while the system handles the technical routing.
 * **Easy link management:** Customize your vanity URLs at any time without affecting asset delivery performance.
 
-**Key benefits:**
+### Key benefits{key-benefits}
 
 * **Enhances user experience:** Clean and shorter vanity URLs are readable, user-friendly, easy to remember and share.
 
@@ -122,26 +122,44 @@ Learn how to [copy Dynamic Media with OpenAPI delivery URLs](/help/assets/approv
 
 When your user clicks the vanity URL, [!DNL Dynamic Media with OpenAPI] automatically maps the vanity ID to the original asset UUID at ingestion time and resolves them properly at delivery time to serve the asset to the user without any delay. You can customize the vanity URL in real time without affecting the asset delivery performance.
 
-Learn how you can further [customize your vanity URL](#customize-vanity-url).
+[Enhance the impact of your vanity URLs using the advanced customization capabilities of AEM Cloud Service.](#scale-using-vanity-url)
 
-## Customize vanity URLs{#customize-vanity-url}
+## Scale using vanity URLs{#scale-using-vanity-url}
 
-customize the DNS name and domain path in your vanity URL to transforms it into a unique web-address that is clean, descriptive, branded, intuitive and provides the [above-mentioned benefits](#capabilities-and-benefits-of-vanity-urls).
+AEM as a Cloud Service enables you to [customize the DNS and domain names](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) within your web address. Use these AEMCS capabilities with your vanity URLs to transforms them into unique web-addresses that is clean, descriptive, branded, intuitive and provide the [above-mentioned benefits](#key-benefits).
 
 See the following vanity URL and its customizable components:
 
-**Vanity URL format:**`https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/<seoname>.<format>`
+**Vanity URL format:**
+<div style="font-family:monospace; white-space:nowrap;">
+  <span style="display:inline-block; text-align:center; vertical-align:top; margin-right:8px;">
+    <code>https://delivery-&lt;tenant&gt;.adobeaemcloud.com</code>
+    <br>⬇<br><a href="#customize-dns">Customize this DNS</a>
+  </span>
+
+  <span style="display:inline-block; text-align:center; vertical-align:top; margin:0 8px;">
+    <code>/</code>&nbsp;<code>adobe/assets/urn:avid:aem:</code>
+    <br>⬇<br><a href="#rewrite-cdn-rules">Customize this CDN</a>
+  </span>
+
+  <span style="display:inline-block; text-align:center; vertical-align:top; margin-left:8px;">
+    <code>&lt;vanity-id&gt;</code>&nbsp;<code>/&lt;seoname&gt;.&lt;format&gt;</code>
+    <br><span style="display:inline-block; position:relative; left:-2.5cm;">⬇</span>
+    <br><span style="display:inline-block; position:relative; left:-2.5cm;"><a href="#create-vanity-urls">Create vanity ID</a></span>
+  </span>
+</div>
+
+**Vanity URL format with customized DNS name and domain path:**
+`https://<custom-dns>` `/` `dam/assets/` `<vanity-id>` `/<seoname>.<format>`
 
 **Customizable URL Components**
 
 * ***[DNS name (hostname):](#customize-DNS)*** `https://delivery-<tenant>.adobeaemcloud.com` is the server domain that hosts your assets. [Customize DNS to change the hostname](#customize-DNS).
 * ***[Domain path:](#rewrite-cdn-rules)*** `adobe/assets/urn:avid:aem:` is the path structure that identifies asset types and delivery methods. [Rewrite CDN rules](#rewrite-cdn-rules) to modify the domain path.
 
-**Vanity URL format with customized DNS name and domain path:** `https://<custom-dns>` `/` `dam/assets/` `<vanity-id>.<format>`
+### Customize DNS{#customize-dns}
 
-### Customize DNS{#customize-DNS}
-
-[Raise a request to Adobe support](https://helpx.adobe.com/in/contact.html) for generating the required custom DNS for your delivery tier. Follow these [best practices](#best-practices) for naming your custom DNS.
+[Raise a request to Adobe support](https://helpx.adobe.com/in/contact.html) for generating the required custom DNS for your delivery tier. Follow these [best practices](#best-practices) for creating custom DNS names.
 See [this article](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/configure-custom-domain#:~:text=In%20Adobe%20Cloud%20Manager%2C%20you,the%20allowed%20redirect%20URLs%20list) to configure a custom domain for the publish tier.
 
 ### Rewrite CDN rules{#rewrite-cdn-rules}
@@ -150,11 +168,10 @@ Execute the following steps to rewrite the CDN rules for delivery:
 
 1. Navigate to your AEM repository to create a YAML configuration file.
 2. Execute the steps in [setup](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup) section to configure CDN rules and deploy the configuration through your Cloud Manager configuration pipeline. 
+Follow these [best practices](#best-practices) for creating your domain path.
 [Learn more about CDN rewriting rules](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations).
 
-#### Asset-specific CDN rewriting rules(#asset-specific-cdn-rewriting-rules)
-
-Different asset types require specific CDN rewrite rule. See the following CDN writing rules for various asset types:
+The following are examples of rewrite rules for appending file names with extensions in vanity URLs. Customize these rewrite rules according to your specific requirements. [Contact Adobe support](https://helpx.adobe.com/in/contact.html) for further assistance:
 
 ```- name: cdn-rewrite-rule
   when:
@@ -163,8 +180,6 @@ Different asset types require specific CDN rewrite rule. See the following CDN w
         equals: delivery
 ```
 ##### For SVG / GIF / PDF {#svg-gif-pdf}
-
-For asset types including PDF, SVG, GIF and more `/original/as/` is the format at the end of the vanity URL:
 
 ```
     type: transform
@@ -175,7 +190,7 @@ For asset types including PDF, SVG, GIF and more `/original/as/` is the format a
 ```
 ##### For video{#video}
 
-For videos including mp4, mov, and more `/play` is the format at the end of the vanity URL:
+For videos including MP4, MOV, AVI and MKV
 
 ``` 
 type: transform
@@ -186,7 +201,7 @@ type: transform
 ```
 ##### For image{#image}
 
-For all image types excluding svg `/as/` is the format at the end of the vanity URL:
+For all image types excluding SVG.
 
 ```
 type: transform
@@ -194,37 +209,6 @@ type: transform
       op: replace
       match: ^/dam/assets/([^/]+\.[^/]+)(\?.*)?$
       replacement: /adobe/assets/urn:avid:aem:\1/as/\1\2
-```
----
-
-```
-- name: cdn-rewrite-rule
-  when:
-    allOf:
-      - reqProperty: tier
-        equals: delivery
-  actions:
-    # Documents (SVG, GIF, PDF, etc.) → /original/as/
-    - type: transform
-      reqProperty: path
-      op: replace
-      match: ^/dam/assets/([^/]+\.(?:svg|gif|pdf|docx|xlsx))(\?.*)?$
-      replacement: /adobe/assets/urn:avid:aem:\1/original/as/\1\2
-
-    # Videos (MP4, MOV, etc.) → /play
-    - type: transform
-      reqProperty: path
-      op: replace
-      match: ^/dam/assets/([^/]+\.(?:mp4|mov|avi|mkv))(\?.*)?$
-      replacement: /adobe/assets/urn:avid:aem:\1/play\2
-
-    # Images and other formats → /as/
-    - type: transform
-      reqProperty: path
-      op: replace
-      match: ^/dam/assets/([^/]+\.[^/]+)(\?.*)?$
-      replacement: /adobe/assets/urn:avid:aem:\1/as/\1\2
-
 ```
 
 ## Follow the best practices for creating clean vanity URLs{#best-practices}
