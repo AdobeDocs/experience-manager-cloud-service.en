@@ -263,7 +263,7 @@ Several options have additional details that are important to keep in mind.
 
 The `wrapInParagraphs` option for lists controls the HTML structure.
 
-#### `wrapInParagraphs: false` (default) {wrapInParagraphs-false}
+#### `wrapInParagraphs: false` (default) {#wrapInParagraphs-false}
 
 ```html
 <ul>
@@ -272,7 +272,7 @@ The `wrapInParagraphs` option for lists controls the HTML structure.
 </ul>
 ```
 
-#### `wrapInParagraphs: true` {wrapInParagraphs-true}
+#### `wrapInParagraphs: true` {#wrapInParagraphs-true}
 
 ```html
 <ul>
