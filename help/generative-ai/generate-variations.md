@@ -2,7 +2,7 @@
 title: Generate Variations
 description: Learn about Generate Variations, accessible from AEM as a Cloud Service and the Sidekick of Edge Delivery Services
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-feature: Generate Variations
+feature: Generate Variations, AI Tools
 role: Admin, Architect, Developer
 ---
 
@@ -484,7 +484,7 @@ For further information you can also read:
 
 * [GenAI Generate Variations on GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services Experimentation](https://www.aem.live/docs/experimentation)
-* [Generative in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
+* [Generative AI in AEM as a Cloud Service](/help/ai-in-aem/overview.md#generative-ai-in-aem)
 
 ## FAQs {#faqs}
 
