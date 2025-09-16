@@ -33,6 +33,7 @@ Generative AI is used throughout AEM:
     >[!NOTE]
     >
     >It is recommended that you access [Generate Variations integrated into AEM editors](/help/generative-ai/generate-variations-integrated-editor.md), as the previous version will be deprecated in the future.
+    
   * [Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)
 
 * [Content Hub Overview](/help/assets/product-overview.md)
