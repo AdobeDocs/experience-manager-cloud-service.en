@@ -10,47 +10,33 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 22171 {#22171}
+## Release 22450 {#22450}
 
-Summarized below are the continuous improvements for maintenance release 22171, which was publicly released on September 2, 2025. The previous maintenance release was release 21994.
+Summarized below are the continuous improvements for maintenance release 22450, which was publicly released on September 16, 2025. The previous maintenance release was release 22171.
 
 The 2025.9.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### New Features  {#new-features-22171}
-
-* ASSETS-53136: Vanity ID Support in Dynamic Media with OpenAPI.
-
-### Enhancements {#enhancements-22171}
+### Enhancements {#enhancements-22450}
 
 None. 
 
-### Fixed Issues {#fixed-issues-22171}
-
-* ASSETS-52510: Duplicate filename detection fails for filenames containing Unicode `U+202F`.
-* ASSETS-53489: Folder deletion from Assets View UI doesn't unapprove all contained assets.
-* ASSETS-54821: Intermittent "Server error" in Asset Link.
-* ASSETS-55024: Broken image in AEM Assets "Download by Email" template.
-* ASSETS-55325: Dynamic Media static URLs omit file-extension after asset rename.
-* ASSETS-55334: The Link Share dialogue either flashes briefly and disappears or never appears.
-* ASSETS-55382: Restarted async assets jobs create duplicate destination folder.
-* ASSETS-55472: Manage Publication option "Include only already published pages" ignored.
-* SITES-31600: Contexthub js error breaking personalization.
-
-For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
-
-### Known Issues {#known-issues-22171}
+### Fixed Issues {#fixed-issues-22450}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-22171}
+### Known Issues {#known-issues-22450}
+
+None.
+
+### Deprecated Features and APIs {#deprecated-22450}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-22171}
+### Security Fixes {#security-22450}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 7 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 18 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-22171}
+### Embedded Technologies {#embedded-tech-22450}
 
 |Technology|Version|Link|
 |---|---|---|
