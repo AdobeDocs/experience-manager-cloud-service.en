@@ -141,7 +141,7 @@ See the following vanity URL and its customizable components:
 
 ### Customize DNS{#customize-DNS}
 
-[Raise a request to Adobe support](https://helpx.adobe.com/in/contact.html) for generating the required custom DNS for your delivery tier.
+[Raise a request to Adobe support](https://helpx.adobe.com/in/contact.html) for generating the required custom DNS for your delivery tier. Follow these [best practices](#best-practices) for naming your custom DNS.
 See [this article](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/configure-custom-domain#:~:text=In%20Adobe%20Cloud%20Manager%2C%20you,the%20allowed%20redirect%20URLs%20list) to configure a custom domain for the publish tier.
 
 ### Rewrite CDN rules{#rewrite-cdn-rules}
