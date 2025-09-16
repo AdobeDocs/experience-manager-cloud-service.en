@@ -18,8 +18,6 @@ The AEM Forms Experience Builder leverages the power of Generative AI to democra
 
 Built on modern web technologies and powered by advanced AI services, the Forms Experience Builder enables both technical and non-technical users to create sophisticated, professional-grade forms through conversational interfaces. This revolutionary approach reduces time to value from days to hours, eliminates technical barriers through interface simplicity, and scales modernization efforts across your entire form ecosystem.
 
-
-
 ## Core Capabilities
 
 Forms Experience Builder offers two primary workflows for creating powerful digital forms:
@@ -48,7 +46,6 @@ Configure form submissions to integrate with your existing business systems:
 - **Workflow Automation**: Connect to Power Automate and Workfront Fusion
 - **Marketing Platforms**: Direct integration with Marketo for lead management
 - **AEM Workflows**: Leverage existing AEM workflow capabilities
-
 
 ### 2. Intelligent Import and Conversion
 
