@@ -3,6 +3,7 @@ title: Quiet hours and Update Free Periods
 description: Learn how to minimize the operational impact of AEM as a Cloud Service Automatic Updates by using Quiet Hours and Update‑Free Periods.
 feature: Deploying
 role: Admin
+badge: label="Limited Availability" type="Positive"
 ---
 # Quiet hours and Update free periods {#quiet-hours-update-free-periods}
 
