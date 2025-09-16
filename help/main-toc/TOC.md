@@ -1464,6 +1464,7 @@ user-guide-title: AEM as a Cloud Service
   + Deploying to AEM as a Cloud Service {#deploying}
     + [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
     + [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md)
+    + [Quiet Hours and Update Free Periods](/help/implementing/deploying/quiet-hours-update-free-periods.md)
     + [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md)
     + [Resource Mapping](/help/implementing/deploying/resource-mapping.md)
   + Author Tier {#author-tier}
