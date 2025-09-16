@@ -399,9 +399,9 @@ To localize the branding information that you enter in the Document of Record ta
 
 ## Document of Record Support in Adaptive Form Editor {#dor-support-in-adaptiveform}
 
-You can configure the [!UICONTROL Document of Record] template directly from the Adaptive Form editor or Adaptive Form template editor. 
+You can configure the [!UICONTROL Document of Record] template directly from the Adaptive Form builder or Adaptive Form template builder. 
 
-Perform the following steps from the author instance of Adaptive Form editor: 
+Perform the following steps from the author instance of Adaptive Form builder: 
 
 1. Select the **[!UICONTROL Adaptive Form container (Root)]** component.
 1. Click ![Configure Icon](/help/forms/assets/configure-icon.svg) icon to open the **[!UICONTROL Properties]** of the Adaptive Form container.

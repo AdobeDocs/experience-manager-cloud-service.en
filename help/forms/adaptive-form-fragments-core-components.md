@@ -61,7 +61,7 @@ You can create an Adaptive Form Fragment from scratch or save a panel in an exis
 
 <!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> In addition, if you selected an XML schema as the form model for your fragment, a new tab displaying the form-model hierarchy appears in the content finder. It lets you drag-and-drop form-model elements onto the fragment. <!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
-Once the Adaptive Form fragment based on a schema or form data model (FDM) is created, form data model (FDM) or schema elements appear in the Data Sources tab of the Content browser in Adaptive Form editor. You can drag-and-drop form-model elements onto the fragment. The added form-model elements are converted to form components while retaining the original properties from the associated schema. 
+Once the Adaptive Form fragment based on a schema or form data model (FDM) is created, form data model (FDM) or schema elements appear in the Data Sources tab of the Content browser in Adaptive Form builder. You can drag-and-drop form-model elements onto the fragment. The added form-model elements are converted to form components while retaining the original properties from the associated schema. 
 
 
 ## Add a fragment to an Adaptive Form {#insert-a-fragment-in-an-adaptive-form}
