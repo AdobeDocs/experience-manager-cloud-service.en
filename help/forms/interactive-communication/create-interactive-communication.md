@@ -4,9 +4,6 @@ description: Create personalized, data-driven communications. Explore key featur
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: yes
-index: no
-hidefromtoc: yes
 ---
 # Create an Interactive Communication
 
