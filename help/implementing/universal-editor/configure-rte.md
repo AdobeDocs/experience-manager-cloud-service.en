@@ -26,7 +26,7 @@ RTE configuration consists of two parts:
 * [`toolbar`](#toolbar): The toolbar configuration controls which editing options are available in the UI and how they're organized.
 * [`actions`](#actions): The actions configuration allows you to customize the behavior and appearance of individual editing actions.
 
-These configurations can be defined as part of a [component filter](help/implementing/universal-editor/filtering.md) with the property `rte`.
+These configurations can be defined as part of a [component filter](/help/implementing/universal-editor/filtering.md) with the property `rte`.
 
 ```json
 [
