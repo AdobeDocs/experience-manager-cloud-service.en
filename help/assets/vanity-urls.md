@@ -49,13 +49,13 @@ In the above example, `VanityCheck` is the vanity ID that replaced the UUID.
 
 Using meaningful vanity IDs to customize the standard asset delivery URLs provides several advantages and measurable impact. Some of the key capabilities and benefits of vanity URLs include the following.
 
-### Key capabilities{key-capabilities}
+### Key capabilities{#key-capabilities}
 
 * **URL customization:** Replace long identifiers (asset UUIDs) in the delivery URL with shorter, brand-aligned alternatives to generate a cleaner delivery URL.
 * **Real-time redirection:** Vanity URLs redirect to original asset UUIDs at runtime without disrupting workflows. Users see clean URLs in the address bar while the system handles the technical routing.
 * **Easy link management:** Customize your vanity URLs at any time without affecting asset delivery performance.
 
-### Key benefits{key-benefits}
+### Key benefits{#key-benefits}
 
 * **Enhances user experience:** Clean and shorter vanity URLs are readable, user-friendly, easy to remember and share.
 
