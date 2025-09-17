@@ -1513,3 +1513,5 @@ user-guide-title: AEM as a Cloud Service
   + Accessibility {#accessibility}
     + [AEM as a Cloud Service and the Web Accessibility Guidelines](/help/compliance/accessibility/web-accessibility.md)
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
++ Troubleshooting {#troubleshooting}
+  + [Troubleshoot AEM Assets and Forms issues](/help/troubleshooting/home.md)
