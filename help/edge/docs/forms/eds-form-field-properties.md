@@ -104,8 +104,6 @@ These attributes are set automatically by the form renderer based on the field's
 
 The following example demonstrates how a number field is rendered with validation constraints and error- handling attributes.
 
-
-
 ```html
 <div class="number-wrapper field-wrapper field-age" data-id="age"
 data-required="true"
