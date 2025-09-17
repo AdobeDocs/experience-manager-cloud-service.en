@@ -94,7 +94,7 @@ Constraints are added as attributes on the input element based on JSON propertie
 | maxOccur     | data-max      | panel |
 | minOccur     | data-min      | panel |
 
-> [!NOTE]
+>[!NOTE]
 >
 > `multiple` is a boolean property. If true, the `multiple` attribute is added.
 
