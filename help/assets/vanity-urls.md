@@ -154,6 +154,7 @@ See the following vanity URL and its customizable components:
 </table>
 
 **Vanity URL format with customized DNS name and domain path:**
+
 `https://<custom-dns>` `/` `dam/assets/` `<vanity-id>` `/<seoname>.<format>`
 
 **Customizable URL Components**
