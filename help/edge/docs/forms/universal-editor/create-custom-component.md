@@ -242,7 +242,7 @@ Now that the form contains the custom component, you can proxy the form and make
 
 Let's add a class **card** to the component for styling and add an image for each radio, use the below code for this.
 
-**Style the Custom Component using decorate function in cards.js**
+**Style the component using card.js**
 
 ```javascript
 import { createOptimizedPicture } from '../../../../scripts/aem.js';
@@ -262,7 +262,7 @@ export default function decorate(element, fieldJson, container, formId) {
 }
 ```
 
-**Add Runtime Behaviour for the Custom Component in cards.css**
+**Add Runtime Behaviour using cards.css**
 
 ```javascript
 .card .radio-wrapper {
@@ -582,7 +582,7 @@ Keep the below points in mind before creating your own custom component:
 
 ## References
 
-- form-field-types: Base HTML structures and properties for all field types. [Click here](/help/edge/docs/forms/eds-form-field-properties) to view detailed form field structures and properties.
+- [form-field-types](/help/edge/docs/forms/eds-form-field-properties): Base HTML structures and properties for all field types.
 
 - **blocks/form/models/form-components**: OOTB and custom component property definitions.
 
