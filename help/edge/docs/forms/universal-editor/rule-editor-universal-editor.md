@@ -1,5 +1,5 @@
 ---
-title: Rule Editor for Dynamic Forms in Universal Editor
+title: Rule Editor for Edge Delivery Services Forms
 description: Create dynamic, intelligent forms using the Rule Editor in Universal Editor. Add conditional logic, calculations, and interactive behaviors without coding.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
@@ -7,9 +7,9 @@ level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 ---
 
-# Rule Editor for Dynamic Forms in Universal Editor
+# Rule Editor for Edge Delivery Services Forms
 
-The Rule Editor allows authors to turn static forms into responsive, intelligent experiences—without writing code. You can conditionally show fields, perform calculations, validate data, guide users through flows, and integrate business logic that adapts as people type.
+The Rule Editor allows authors to turn static forms into responsive, intelligent experiences without writing code. You can conditionally show fields, perform calculations, validate data, guide users through flows, and integrate business logic that adapts as people type.
 
 ## What you'll learn
 
@@ -159,13 +159,15 @@ Figure: Rule Editor interface for editing component rules
 ![Rule Editor user Interface](/help/edge/docs/forms/assets/rule-editor-interface.png)
 Figure: Complete Rule Editor interface with numbered components
 
-- **Component title and rule type**: Confirms the selected component and active rule type.
-- **Form Objects and Functions panel**:
-  - Form Objects: hierarchical view of fields and containers for referencing in rules
-  - Functions: built-in math, string, date, and validation helpers
-- **Panel toggle**: Show/hide the objects and functions panel to increase workspace
-- **Visual rule builder**: Drag-and-drop, dropdown-driven rule composer
-- **Controls**: Done (save), Cancel (discard). Always test rules before saving.
+1. **Component title and rule type**: Confirms the selected component and active rule type.
+2. **Form Objects and Functions panel**:
+   
+     - Form Objects: hierarchical view of fields and containers for referencing in rules
+     - Functions: built-in math, string, date, and validation helpers
+
+3. **Panel toggle**: Show/hide the objects and functions panel to increase workspace
+4. **Visual rule builder**: Drag-and-drop, dropdown-driven rule composer
+5. **Controls**: Done (save), Cancel (discard). Always test rules before saving.
 
 +++
 
@@ -296,7 +298,7 @@ You will build a form that:
 
 +++
 
-+++ Step 1: Create the foundation form
++++ Step 1: Create the form
 
 **Objective**: Build the base form with all fields and initial settings.
 
@@ -527,6 +529,10 @@ Figure: Adding custom functions to the functions.js file
 ![Custom Function in Rule Editor](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 Figure: Selecting and configuring custom functions in the Rule Editor interface
 
+>![NOTE]
+>
+> The enhancements to the Rule Editor, including custom event-based rules, support for dynamic variables, and API integration, are also available for Edge Delivery Services Forms. To learn more about these enhancements and how to use them, see the [Rule Editor Enhancements and Use Cases](/help/forms/rule-editor-enhancements-use-cases.md) article. 
+
 **Best practices for function usage**:
 
 - **Error handling**: Always include fallback behavior for function failures
@@ -535,6 +541,56 @@ Figure: Selecting and configuring custom functions in the Rule Editor interface
 - **Testing**: Create test cases covering normal and edge cases
 
 +++
+
+
+### Static Imports for Custom Functions
+
+The Universal Editor's Rule Editor supports static imports, enabling you to organize reusable logic across multiple files and forms. Instead of keeping all custom functions in a single file (/blocks/form/functions.js), you can import functions from other modules. 
+For example: Importing Functions from an External File
+Consider the following folder structure:
+
+```
+      form
+      ┣ commonLib
+      ┃ ┗ functions.js
+      ┣ rules
+      ┃ ┗ _form.json
+      ┣ form.js
+      ┗ functions.js
+```
+
+You can import functions from `commonLib/functions.js` into your main `functions.js` file as shown below:
+
+```
+`import {days} from './commonLib/functions';
+/**
+ * Get Full Name
+ * @name getFullName Concats first name and last name
+ * @param {string} firstname in String format
+ * @param {string} lastname in String format
+ * @return {string}
+ */
+function getFullName(firstname, lastname) {
+  return `${firstname} ${lastname}`.trim();
+}
+
+// Export multiple functions for use in Rule Editor
+export { getFullName, days};
+```
+
+### Organizing Custom Functions Across Different Forms
+
+You can create different sets of functions in separate files or folders and export them as required:
+ 
+- If you want certain functions to be available only in specific forms, you can provide the path to the functions file in the form configuration.
+
+- If the textbox for the path is left blank, the Rule Editor defaults to loading functions from `/blocks/form/functions.js`
+
+![Custom Function in UE](/help/forms/assets/custom-function-in-ue.png){width=50%}
+
+In the screenshot above, the path of the custom function is added in the Custom Function Path textbox. The custom functions for this form are loaded from the specified file (`cc_function.js`). 
+
+This allows flexibility by sharing functions across multiple forms or keeping them isolated per form.
 
 ## Best practices for rule development
 

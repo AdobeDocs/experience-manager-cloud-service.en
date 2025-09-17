@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2025.08.14 Release Notes
-description: These are the release notes for the 2025.08.14 release of the Universal Editor.
+title: Universal Editor 2025.09.11 Release Notes
+description: These are the release notes for the 2025.09.11 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.08.14 Release Notes {#release-notes}
+# Universal Editor 2025.09.11 Release Notes {#release-notes}
 
-These are the release notes for the 14 August 2025 release of the Universal Editor.
+These are the release notes for the 11 September 2025 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -16,8 +16,9 @@ These are the release notes for the 14 August 2025 release of the Universal Edit
 
 ## What's New {#what-is-new}
 
-* New feature for [RTE early adopters](#new-rte)
-  * A configuration option was added to disable target in the RTE link dialog.
+* [Copy and paste](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) is now available for components within containers on the same page.
+* 6.5 LTS SP1 is now supported.
+* The Universal Editor now supports [multi-site-management inheritance](/help/sites-cloud/authoring/universal-editor/inheritance.md) for Content Fragments including automatically breaking inheritance when a live copy Content Fragment is edited.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -27,20 +28,11 @@ If you are interested in testing these upcoming features and sharing your feedba
 
 The new ProseMirror RTE, featuring a page picker in the link dialog, is now available in the right panel.
 
-### Undo/Redo {#undo-redo}
+### Copy and Paste Across Pages {#copy-paste}
 
-Undo and redo is now available to Universal Editor content authors.
-
-* This includes edits done in context, edits done via the Properties panel, as well as adding (or duplicating), moving, and deleting blocks.
-* Undo and redo is limited to the current browser session.
+Copy and pasting is now possible across pages in addition to within the same page.
 
 ## Other Improvements {#other-improvements}
 
-* An issue with full screen scrolling in the [new RTE](#new-rte) was fixed.
-* The persist behavior when editing conditional fields was corrected.
-* `aem-content-fragment` was enabled to switch between variations.
-
-## Deprecations {#deprecations}
-
-* The `text-input` and `text-area` components were officially deprecated with [release 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)
-  * In `model-definition.json`, use the text component to create text inputs for the Properties panel.
+* Several small performance improvements have been implemented around the Universal Editor works with AEM as a backend system.
+* Content Fragments are now published using Open API, bringing performance improvements and consistency with how the Content Fragment Editor and console publish.

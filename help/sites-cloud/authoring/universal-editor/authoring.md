@@ -45,7 +45,7 @@ You can edit the text in place by double-clicking or double-tapping the componen
 
 The thin blue outline turns to a heavy blue outline to indicate select and a cursor appears. Make your changes and then press enter/return or select outside of the text box to save your changes.
 
-When you select to select the text component, its details are shown in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). You can also edit the text in the panel.
+When you select the text component, its details are shown in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). You can also edit the text in the panel.
 
 ![Editing text in the properties panel](assets/ue-editing-text-component-rail.png)
 
@@ -166,13 +166,45 @@ The selected component deleted.
 
    ![Reordering components](assets/ue-reordering-components.png)
    
-1. The dragged component turns gray in the content tree, while your insertion point is represented by a blue line. Release the component to place it in its new location.
+1. The dragged component is grayed in the content tree, while your insertion point is represented by a blue line. Release the component to place it in its new location.
 
 The components are reordered in both the content tree and in the editor.
 
 >[!NOTE]
 >
 >Components can only be moved between containers if the target containers [component filter](/help/implementing/universal-editor/filtering.md) allows the selected component.
+
+### Undo and Redo {#undo-redo}
+
+Select the Undo or Redo buttons to undo or redo the last edit in the editor.
+
+![Undo icon](assets/undo.png)
+![Redo icon](assets/redo.png)
+
+* Undoing and redoing can be performed for edits done in context, edits done via the Properties panel, as well as adding, duplicating, moving, and deleting blocks.
+* Undo and redo is limited to the current browser session.
+
+>[!TIP]
+>
+>Use the hot key `Command-Z` or `Shift-Command-Z` to undo or redo, respectively.
+
+### Copy and Paste {#copy-paste}
+
+You can copy and paste components that are within [containers.](/help/implementing/universal-editor/field-types.md#container) This is possible only within the same page and if the [target container allows the component to be pasted.](/help/implementing/universal-editor/filtering.md)
+
+![Copy icon](assets/copy.png)
+![Paste icon](assets/paste.png)
+
+1. Select a component either within the editor or in the content tree.
+1. The **Copy** icon appears in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) Tap or click it.
+1. The **Paste** icon appears in the properties panel.
+1. Select the component _after_ which you wish to paste the copied component.
+1. Tap or click Paste.
+1. The copied component is pasted _after_ the selected component.
+
+>[!TIP]
+>
+>Use the hot key `Command-C` or `Command-V` to copy or paste, respectively.
 
 ## Previewing Content {#previewing-content}
 

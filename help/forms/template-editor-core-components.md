@@ -1,12 +1,12 @@
 ---
-title: How to create an Adaptive Form template based on core component?
-description: Create Adaptive Form templates based on core component to define the basic structure and initial content using the Template Editor.
+title: How to build an Adaptive Form template with Core Components?
+description: Build Adaptive Form templates based on core component to define the basic structure and initial content using the Template Editor.
 feature: Adaptive Forms, Core Components
-Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
+Keywords: form builder, build adaptive form template, adaptive form template core components, form template builder, build form template.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
 ---
-# Create an Adaptive Form template based on Core Components {#adaptive-form-templates}
+# Build an Adaptive Form template with Core Components {#adaptive-form-templates}
 
 When you author a form, you add fields and components to define form structure, content, and actions in the editor. You add fields and components in the `guideRootPanel` of the form container. With Template Editor, you can create a template that contains basic structure and initial content that authors can use to create forms.
 
@@ -22,7 +22,7 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## Pre-requisite
 
-**Enable Adaptive Forms Core Components for your environment**:  When you create a program, the Adaptive Forms Core Components already enabled for your environment. If you have a Form as a Cloud Service environment based on [AEM Archetype 39 or earlier](https://github.com/adobe/aem-project-archetype), [Enable Adaptive Forms Core Components for your environment](enable-adaptive-forms-core-components.md). 
+**Enable Adaptive Forms Core Components for your environment**:  When you create a program, the Adaptive Forms Core Components already enabled for your environment.Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
 
 >[!NOTE]
 >
@@ -57,11 +57,11 @@ When you open a template for editing, you can see the following AEM Editor compo
 * **Page toolbar**
   Contains the following options:
 
-    * **Toggle Side Panel**: Lets you show or hide the sidebar.
-    * **Page Information**: Lets you specify information such as the publish/unpublish time, thumbnails, client-side libraries, page policy, and page design client-side library.
+  * **Toggle Side Panel**: Lets you show or hide the sidebar.
+  * **Page Information**: Lets you specify information such as the publish/unpublish time, thumbnails, client-side libraries, page policy, and page design client-side library.
    <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-    * **Mode selector:** Lets you change the mode. You can choose **[!UICONTROL Structure]** mode, **[!UICONTROL Initial Content]**, **[!UICONTROL Layout Control]** mode. Structure mode lets you add and customize the header and footer. Initial Content mode lets you customize the form content.
-    * **Preview:** Lets you preview how the template looks when you publish it. You can use Layer Selector and Preview to toggle editing and preview modes.
+  * **Mode selector:** Lets you change the mode. You can choose **[!UICONTROL Structure]** mode, **[!UICONTROL Initial Content]**, **[!UICONTROL Layout Control]** mode. Structure mode lets you add and customize the header and footer. Initial Content mode lets you customize the form content.
+  * **Preview:** Lets you preview how the template looks when you publish it. You can use Layer Selector and Preview to toggle editing and preview modes.
 * **Sidebar:** Provides the Content, Properties, Assets, and Components browsers.
 * **Component toolbar:** When you select a component, you see a toolbar that lets you customize the component.
 * **Page**: The area where you add content to create the template.
@@ -150,7 +150,7 @@ A form works with its template. When you download an Adaptive Form created using
 
 >[!NOTE]
 >
-> * You can also configure the [!UICONTROL Document of Record] template directly from the Adaptive Form editor or Adaptive Form template editor. For more information, see [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+> * You can also configure the [!UICONTROL Document of Record] template directly from the Adaptive Form builder or Adaptive Form template builder. For more information, see [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
 ## Associate a Form Data Model Schema to a template {#associating-form-data-model-schema-in-template}
 
@@ -289,6 +289,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 ## See Also {#see-also}
 
 {{see-also}}
+
 * [Create style or themes for your forms](using-themes-in-core-components.md)
 * [Create an Adaptive Form (core components)](/help/forms/creating-adaptive-form-core-components.md)
 

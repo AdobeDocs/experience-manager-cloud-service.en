@@ -5,7 +5,7 @@ feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
 ---
-# Open ID Connect Support for AEM as a Cloud Service on Publish Tier
+# Open ID Connect Support for AEM as a Cloud Service on Publish Tier {#open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier}
 
 ## Introduction {#introduction}
 

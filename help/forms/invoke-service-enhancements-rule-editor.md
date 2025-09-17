@@ -7,15 +7,18 @@ level: Beginner, Intermediate
 keywords: invoke service enhancements in VRE, populating drop-down options using invoke service, Set repeatable panel using output of invoke service, Set panel using output of invoke service, Use output parameter of invoke service to validate other field.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
 ---
-# Using Invoke Service in the Visual Rule Editor for forms based on Core Components
+# Integrating External APIs with Visual Rule Editor in Core Component Forms
 
-The Visual Rule Editor in an Adaptive Form supports the **Invoke Service** feature, which allows you to select a service from the list of Form Data Models (FDM) configured for your instance. You can map form fields directly to the input parameters of the service. To map form fields to the output parameters, use the event payload option for the specified Form Data Model service. Additionally, the Visual rule editor allows you to create rules for success and failure handlers for **Invoke Service** operations based on its output responses. Success handlers manage the successful execution of the **Invoke Service** operation, while failure handlers address any errors that occur.
+The Visual Rule Editor in an Adaptive Form supports the **Invoke Service** feature, enabling you to connect to external APIs through Form Data Models (FDM) configured for your instance. You can map form fields directly to the service's input parameters and use the event payload option to map the output parameters. The Visual Rule Editor also lets you define rules for success and failure handlers based on the service's response: success handlers handle successful API calls, while failure handlers manage errors.
+
+This allows you to easily send API requests from your form, process the API responses, and display or use the returned data dynamically within the form. It ensures a seamless integration between your Adaptive Form and external systems or data sources.
+
 
 ## Advantages of using the Invoke Service in the form's rule editor
 
 Here are few advantages of using Invoke Service operation in the rule editor of an Adaotive Form:
 
-* **Streamlined integration**: Visual Rule Editor simplifies the process of integrating external services or APIs into your Adaptive Forms. By using the **Invoke Service**, you can easily connect forms to various data sources and services without the need for complex coding, making form integration more efficient.
+* **Streamlined API integration**: Visual Rule Editor simplifies the process of integrating external services or APIs into your Adaptive Forms. By using the **Invoke Service**, you can easily connect forms to various data sources and services without the need for complex coding, making form integration more efficient.
 
 * **Dynamic response handling**: You can manage success and error responses based on the output responses of the **Invoke Service**, allowing forms to react dynamically to different scenarios. It ensures forms handle various conditions appropriately, improving flexibility and control.
 
@@ -55,7 +58,7 @@ Below are the prerequisites you must satisfy before using **Invoke Service** in 
 
 * Make sure you have configured a data source. For instructions on configuring a data source, [click here](/help/forms/configure-data-sources.md).
 * Create a Form Data Model using the configured data source. For guidance on creating a Form Data Model, [click here](/help/forms/create-form-data-models.md).
-* Ensure that Core Components are enabled for your environment. For detailed instructions on how to enable Core Components for your environment, [click here](/help/forms/enable-adaptive-forms-core-components.md).
+* Ensure that Core Components are enabled for your environment. Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
 
 ## Exploring Invoke Service through different use cases
 
@@ -213,6 +216,10 @@ Create a rule on the `Pet ID` text box to invoke the `getPetById` service. In **
 Enter `102` in the `Pet ID` text box, and the **Submit** button is hidden. 
 
 ![Output](/help/forms/assets/output4.png)  
+
+>[!NOTE]
+>
+> You can also [integrate API directly in the Rule Editor interface](/help/forms/api-integration-in-rule-editor.md) without using a predefined Form Data Model. 
 
 ## Frequently asked questions
 

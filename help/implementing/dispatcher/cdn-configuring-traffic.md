@@ -465,8 +465,9 @@ data:
 
 There are scenarios where origin selectors should be used to route traffic through AEM Publish to AEM Edge Delivery Services:
 
-* Some content is delivered by a domain managed by AEM Publish, while other content from the same domain is delivered by Edge Delivery Services
-* Content delivered by Edge Delivery Services would benefit from rules deployed via config pipeline, including traffic filter rules or request/response transformations
+* Some content is delivered by a domain managed by AEM Publish, while other content from the same domain is delivered by Edge Delivery Services.
+* Content delivered by Edge Delivery Services would benefit from rules deployed via config pipeline, including traffic filter rules or request/response transformations.
+* The Edge Delivery configuration pipeline lets you configure Adobe-managed CDN settings by defining rules such as `trafficFilters`, `originSelectors`, and `redirects`. <!-- https://wiki.corp.adobe.com/pages/editpage.action?pageId=3610084282 -->
 
 Here is an example of an origin selector rule that can accomplish this:
 
@@ -496,7 +497,8 @@ data:
 ```
 
 >[!NOTE]
-> Since the Adobe Managed CDN is used, make sure to configure push invalidation in **managed** mode, by following the Edge Delivery Services [Setup push invalidation documentation](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+>
+>Because the Adobe Managed CDN is used, make sure to configure push invalidation in **managed** mode, by following the Edge Delivery Services [Setup push invalidation documentation](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
 
 
 ## Server-side Redirects {#server-side-redirectors}
