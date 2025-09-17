@@ -1,6 +1,6 @@
 ---
 title: Forms Experience Builder
-description: Craft powerful forms faster using Form Fragments
+description: Introduction to Forms Experience Builder
 feature: Edge Delivery Services
 hide: yes
 index: no
@@ -58,7 +58,6 @@ Transform existing forms and documents into interactive digital experiences. The
 - **Flat PDFs**: Static documents converted to interactive forms
 - **Images and Screenshots**: JPG, PNG formats (check with team for size limitations)
 - **Hand-drawn Forms**: Sketches and paper form photographs
-
 
 **Intelligent Conversion Process**
 
@@ -200,7 +199,6 @@ The Forms Experience Builder is currently available as part of the Early Access 
 - **Project Details**: Timeline, scope, and intended use cases
 - **Official Work Email**: Associated with your organization's Adobe account
 
-
 ### How to Obtain IMS Organization ID and Program ID
 
 For detailed steps to locate your IMS Organization ID and Program ID, see:
@@ -223,7 +221,6 @@ For detailed steps to locate your IMS Organization ID and Program ID, see:
 > **Limited Availability Program**: Access to Forms Experience Builder is subject to approval from internal stakeholders. Adobe will review your request based on program capacity and alignment with early access criteria. Approval is not guaranteed and depends on current program availability.
 
 For more information about the Early Access program and its features, see the [AEM Forms Early Access documentation](/help/forms/early-access-ea-features.md).
-
 
 ## Getting Started
 
