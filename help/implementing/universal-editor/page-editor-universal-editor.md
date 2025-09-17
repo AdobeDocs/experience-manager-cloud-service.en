@@ -57,7 +57,7 @@ Because the feature gap between the two editors is constantly shrinking, be sure
 |Cut/Copy-Paste Block|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned|
 |Apply Styles|[!BADGE Available]{type=Positive}|Styles can be applied to components using [the Style System.](/help/sites-cloud/authoring/page-editor/style-system.md)|[!BADGE Available]{type=Positive}|Styles can be applied using regular component (or Content Fragment) properties. The same Style picker is not available in the Universal Editor, however using a multiselect widget a very similar UX can be achieved.|
 |Apply Layout|[!BADGE Available]{type=Positive}|Sites must implement the [AEM Responsive Grid](/help/implementing/developing/introduction/responsive-design.md) to enable authors to resize components across three predefined breakpoints.|[!BADGE Available]{type=Positive}|Layouts can be applied using regular component (or Content Fragment) properties, however the Responsive Grid is not supported.|
-|Undo-Redo|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned|
+|Undo-Redo|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |Publish (also to preview)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |[Start workflow](/help/sites-cloud/authoring/workflows/overview.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available as an extension|
 |Commenting|[!BADGE Available]{type=Positive}|Using [annotations](/help/sites-cloud/authoring/page-editor/annotations.md)|[!BADGE Unavailable]{type=Negative}|Planned|
@@ -81,7 +81,7 @@ Because the feature gap between the two editors is constantly shrinking, be sure
 The Universal Editor offers many advantages, making it a great solution for new projects.
 
 * **Visual Editing:** Like for the Page Editor, authors can edit content directly within the preview and instantly see how their changes affect the visitor experience.
-* **Future-Proofing:** AEM’s roadmap prioritizes the Universal Editor as visual editor. Adopting it ensures access to the latest innovations and enhancements.
+* **Future-Proofing:** AEM's roadmap prioritizes the Universal Editor as visual editor. Adopting it ensures access to the latest innovations and enhancements.
 * **Simpler Integration:** No AEM-specific SDK is required to use the Universal Editor, reducing tech stack lock-in.
 * **Bring Your Own App:** The Universal Editor supports any web framework or architecture, allowing adoption without requiring complex refactoring.
 * **Extensibility:** The Universal Editor benefits from a robust [extension framework,](/help/implementing/universal-editor/extending.md) including integrations with GenAI, Workfront, and more.

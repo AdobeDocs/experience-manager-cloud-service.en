@@ -28,7 +28,6 @@ Before starting, ensure you have the following:
 
 - AEM as a Cloud Service authoring access
 - Universal Editor access with form editing permissions
-- Enrollment in the early access program for reCAPTCHA features
 
 ### Technical Requirements
 

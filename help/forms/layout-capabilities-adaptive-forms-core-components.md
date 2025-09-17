@@ -26,6 +26,7 @@ Before exploring the various capabilities of a layout, ensure that core componen
 ## Adaptive Forms layout types
 
 Adaptive Form based on Core Components supports the following types of layouts:
+
 * **Panel layout**
 * **Wizard layout**
 * **Vertical layout**
@@ -130,9 +131,9 @@ Let's explore the step-by-step process for inserting a layout and adding compone
 
     Alternatively, you can also [create new Adaptive Form](/help/forms/creating-adaptive-form-core-components.md).
 
-1. Locate the section within the form editor that allows you to add a layout. 
+1. Locate the section within the form builder that allows you to add a layout. 
 
-    ![Form editor](/help/forms/assets/form-editor.png)
+    ![Form builder](/help/forms/assets/form-editor.png)
 1. Click the **Add** icon. The icon is a plus sign (+) that signifies the option to add new components.
 
     ![Insert layout](/help/forms/assets/insert-layout-add-icon.png)
@@ -336,7 +337,7 @@ Perform the following steps to replace the existing layout of a form:
 
 ## Extra Bytes
 
-To drag and drop components into the form editor, perform the following steps:
+To drag and drop components into the form builder, perform the following steps:
 
 1. Locate the section that allows you to add components. 
 1. Navigate to the left panel within your authoring environment and click **Components**.

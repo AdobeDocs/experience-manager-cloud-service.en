@@ -151,7 +151,10 @@ The `fstab.yaml` file connects your GitHub repository to AEM authoring environme
    
    ```yaml
    mountpoints:
-     /: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     /: 
+     url: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     type: "markup" 
+     suffix: ".html" 
    ```
    
    **Replace:**
@@ -178,9 +181,9 @@ The `fstab.yaml` file connects your GitHub repository to AEM authoring environme
 
 **Validation:** Confirm your GitHub repository connection to AEM.
     
-        >[!NOTE]
-        >
->Having build issues? See [Troubleshooting GitHub build issues](#troubleshooting-github-build-issues).
+   >[!NOTE]
+   >
+   > Having build issues? See [Troubleshooting GitHub build issues](#troubleshooting-github-build-issues).
 
 +++
 
@@ -620,13 +623,13 @@ The following sections will guide you through each of these steps in detail, ens
    Your form is now live at:
 
    ```
-   https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/
+   https://<branch>--<repo>--<owner>.aem.live/content/<site-name>/
    ```
    
    **Example URL:**
 
    ```
-   https://main--my-forms-project--mycompany.aem.page/content/my-forms-project/
+   https://main--my-forms-project--mycompany.aem.live/content/my-forms-project/
    ```
 
    ![Live Form Page](/help/edge/docs/forms/assets/publish-index-page.png)

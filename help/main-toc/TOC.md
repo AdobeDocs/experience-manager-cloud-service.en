@@ -92,6 +92,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2025 {#2025}
+      + [Maintenance Release Notes for 2025.9.0](/help/release-notes/maintenance/2025/2025-9-0.md)
       + [Maintenance Release Notes for 2025.8.0](/help/release-notes/maintenance/2025/2025-8-0.md)
       + [Maintenance Release Notes for 2025.7.0](/help/release-notes/maintenance/2025/2025-7-0.md)
       + [Maintenance Release Notes for 2025.6.0](/help/release-notes/maintenance/2025/2025-6-0.md)
@@ -124,6 +125,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2025 {#2025}
+      + [2025.8.0](/help/implementing/cloud-manager/release-notes/2025/2025-8-0.md)
       + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
       + [2025.6.0](/help/implementing/cloud-manager/release-notes/2025/2025-6-0.md)
       + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
@@ -225,9 +227,11 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Workfront for Experience Manager enhanced connector](/help/assets/release-notes-enhanced-connector-workfront.md)  
   + Release Notes for Generate Variations {#generate-variations}
     + [Current Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)
-  + Release Notes for Universal Editor {#univeral-editor}
+  + Release Notes for Universal Editor {#universal-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + 2025 {#2025}
+      + [2025.09.04 Release Notes](/help/release-notes/universal-editor/2025/2025-09-04.md)
+      + [2025.08.22 Release Notes](/help/release-notes/universal-editor/2025/2025-08-22.md)
       + [2025.08.14 Release Notes](/help/release-notes/universal-editor/2025/2025-08-14.md)
       + [2025.07.31 Release Notes](/help/release-notes/universal-editor/2025/2025-07-31.md)
       + [2025.07.09 Release Notes](/help/release-notes/universal-editor/2025/2025-07-09.md)
@@ -516,6 +520,7 @@ user-guide-title: AEM as a Cloud Service
     + [Exporting Content Fragments to Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
     + [Exporting Experience Fragments to Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
     + [Integrating with Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
+    + [Using Content Fragments in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
   + [Operational Telemetry for AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
   + [Overview and what's new](/help/assets/overview.md)
@@ -527,6 +532,7 @@ user-guide-title: AEM as a Cloud Service
   + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
   + [Enable Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
   + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
+  + [Troubleshoot AEM Assets issues](/help/assets/troubleshoot-aem-assets.md)
   + [Assets Collaborator users](/help/assets/assets-collaborator-users.md)
   + Manage digital assets {#manage}
     + Micro-Frontend Asset Selector {#asset-selector}
@@ -991,6 +997,21 @@ user-guide-title: AEM as a Cloud Service
     + [Restarting AEM SDK](/help/forms/restart-aem-sdk.md)
     + [Resolving Forms creation failures](/help/forms/form-creation-failing.md)
     + [502 Error Page in Custom Submit Action](/help/forms/custom-submit-action-troubleshooting.md)
++ AI in AEM {#ai-in-aem}
+  + [Overview](/help/ai-in-aem/overview.md)
+  + AI Assistant {#ai-assistant}
+    + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
+    + [About AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
+  + Generate Variations {#generate-variations}
+    + [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
+    + [Generate Variations](/help/generative-ai/generate-variations.md)
+  + Forms Experience Builder {#forms-experience-builder}
+    + [AI Assistant for AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
+    + [Getting started with AI Assistant for AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
+    + [Getting started with AI Assistant for AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
+    + [AEM Forms AI Assistant - Prompt Library](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+    + [Forms Experience Builder - Best Practices](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
+    + [Forms Experience Builder - Troubleshooting Guide](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + Screens {#screens-as-cloud-service}
   + Overview to Screens as a Cloud Service {#overview}
     + [Introduction](/help/screens-cloud/introduction/introduction.md)
@@ -1081,8 +1102,13 @@ user-guide-title: AEM as a Cloud Service
 {#wysiwyg-authoring}
   + Building Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
+    
     + WYSIWYG Authoring {#universal-editor}
-      + [Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+      + Cascading Drop Down {#cascading-drop-down-list}
+        + [Introduction](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
+        + [Create API Integration](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
+        + [Create Form](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
+        + [Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + [Navigate the Universal Editor Interface for AEM Forms](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
       + [Getting Started with Edge Delivery Services for AEM Forms using Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
       + [Create and Publish Adaptive Forms with Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)
@@ -1097,7 +1123,8 @@ user-guide-title: AEM as a Cloud Service
       + [How to prefill Adaptive Form fields](/help/edge/docs/forms/universal-editor/prefill-form.md)
       + [Publish Adaptive Forms with Edge Delivery Services](/help/edge/docs/forms/universal-editor/publish-forms.md)
       + [Create Custom Components for an EDS Form](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-      + [Troubleshooting 403 Forbidden Errors in Edge Delivery Services Form Submission](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)   
+      + [Troubleshooting 403 Forbidden Errors in Edge Delivery Services Form Submission](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
+      + [Create Salesforce Lead Object using API Integration](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)   
     + Document-based authoring {#getting-started-edge-delivery-services-forms}
       + [Build Your First Form: Quick Start Guide with Google Sheets and Excel](/help/edge/docs/forms/tutorial.md)
       + [How to Create Forms Using Google Sheets or Excel: Step-by-Step Guide](/help/edge/docs/forms/create-forms.md)
@@ -1199,19 +1226,6 @@ user-guide-title: AEM as a Cloud Service
       + [Authoring Basics for Headless with AEM](/help/journey-headless/author/basics.md)
       + [Learn about using references in Content Fragments](/help/journey-headless/author/references.md)
       + [Learn about defining Metadata and Tagging for Content Fragments](/help/journey-headless/author/metadata-tagging.md)
-+ AI Assistant {#ai-assistant}
-  + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
-  + [About AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
-+ Generative AI {#generative-ai}
-  + [Generative AI in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
-  + [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
-  + [Generate Variations](/help/generative-ai/generate-variations.md)
-  + [AI Assistant for AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-  + [Getting started with AI Assistant for AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
-  + [Getting started with AI Assistant for AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
-  + [AEM Forms AI Assistant - Prompt Library](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-  + [Forms Experience Builder - Best Practices](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
-  + [Forms Experience Builder - Troubleshooting Guide](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + Implementing {#implementing}
   + [Implementing Applications for AEM as a Cloud Service](/help/implementing/home.md)
   + Use Cloud Manager {#using-cloud-manager}
@@ -1242,13 +1256,14 @@ user-guide-title: AEM as a Cloud Service
       + [Use Git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
       + [Use Multiple Repositories](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
       + [Enterprise Development Team Setup](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-      + [GitHub Check Configuration](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+      + [Pull Request Checks for Private Repositories](/help/implementing/cloud-manager/managing-code/github-check-config.md)
       + [GitHub Check Annotations](/help/implementing/cloud-manager/managing-code/github-annotations.md)
     + [Environment Variables](/help/implementing/cloud-manager/environment-variables.md)
     + Cloud Manager CI-CD Pipelines {#cicd-pipelines}
       + [Introduction to CI-CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
       + [Configure a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
       + [Configure a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+      + [Split Stage and Production Only Pipeline (Beta)](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md)
       + [Configure an Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
       + [Manage Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
       + [Pipeline Variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
@@ -1482,7 +1497,7 @@ user-guide-title: AEM as a Cloud Service
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
   + [Maintenance Tasks](/help/operations/maintenance.md)
   + [Restore Content](/help/operations/restore.md)
-  + [Restore Previous Code Deployed (Alpha)](/help/operations/restore-previous-code-deployed.md)
+  + [Restore Previous Code Deployed (Beta)](/help/operations/restore-previous-code-deployed.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Using Config Pipelines](/help/operations/config-pipeline.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
@@ -1497,3 +1512,5 @@ user-guide-title: AEM as a Cloud Service
   + Accessibility {#accessibility}
     + [AEM as a Cloud Service and the Web Accessibility Guidelines](/help/compliance/accessibility/web-accessibility.md)
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
++ Troubleshooting {#troubleshooting}
+  + [Troubleshoot AEM Assets and Forms issues](/help/troubleshooting/home.md)

@@ -62,7 +62,7 @@ The result is a `.gitmodules` file similar to the following:
 
 See also the [Git Reference Manual](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for more information on Git submodules.
 
-## Usage notes {#usage-notes}
+## Usage notes for Adobe repositories {#usage-notes-recommendations-adobe-repos}
 
 * The Git URL must be exactly in the syntax described in the previous section.
 * Only submodules at the root of the branch are supported.
@@ -88,4 +88,4 @@ However, after configuring your `pom.xml` file and executing the `git submodule`
 
 * Submodule Git URLs can be in HTTPS or SSH format, but must point to a GitHub.com repository. Adding an Adobe repository submodule to a GitHub aggregator repository or the reverse is not supported.
 * GitHub submodules must be accessible by the Adobe GitHub App.
-* [The limitations of using Git submodules with Adobe-managed repositories](#limitations-recommendations) also apply.
+* [The limitations of using Git submodules with Adobe-managed repositories](#usage-notes-recommendations-adobe-repos) also apply.
