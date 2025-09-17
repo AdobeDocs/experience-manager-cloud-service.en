@@ -13,7 +13,7 @@ exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
 ---
 # Reference Adaptive Form Fragments {#reference-adaptive-form-fragments}
 
-Adaptive Form Fragment is a group of fields, or a panel containing a group of fields that you can use when you create a form. It lets you create a form easily and quickly. You can drag-drop an Adaptive Form Fragment into a form using the assets browser in the sidebar, and you can edit it in the form editor.
+Adaptive Form Fragment is a group of fields, or a panel containing a group of fields that you can use when you create a form. It lets you create a form easily and quickly. You can drag-drop an Adaptive Form Fragment into a form using the assets browser in the sidebar, and you can edit it in the form builder.
 
 For Adaptive Forms authors, reference fragments are provided in the [!DNL AEM Forms] package [!DNL AEM FORMS] REFERENCE FRAGMENTS. It includes the following fragments:
 
