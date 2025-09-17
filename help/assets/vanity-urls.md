@@ -153,7 +153,7 @@ See the following vanity URL and its customizable components:
   </tr>
 </table>
 
-**Vanity URL format with customized DNS name and domain path:**
+**Vanity URL format with customized DNS and CDN names:**
 
 `https://<custom-dns>` `/` `dam/assets/` `<vanity-id>` `/<seoname>.<format>`
 
