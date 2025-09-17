@@ -27,9 +27,9 @@ The standard [!DNL Dynamic Media with OpenAPI] asset delivery URL includes a uni
 
 ***Format:*** `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:aaid:aem:<asset-uuid>/as/<seoname>.<format>`
 
-***Example:*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:43341ab1-4086-44d2-b7ce-ee546c35613b/as/check.jpeg`
+The standard delivery URL includes `aaid` (*actual asset identifier*) after `urn:` and a UUID between `urn:aaid:aem:` and `/as/<seoname>.<format>`.
 
-The standard delivery URL includes `aaid` after `urn:` and a UUID between `urn:aaid:aem:` and `/as/<seoname>.<format>`, where **aaid** stands for *actual asset identifier*.
+***Example:*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:43341ab1-4086-44d2-b7ce-ee546c35613b/as/check.jpeg`
 
 In the above example, `43341ab1-4086-44d2-b7ce-ee546c35613b` is the UUID.
 
@@ -39,9 +39,9 @@ The vanity URLs includes a vanity identifier in place of asset UUID and follows 
 
 ***Format:*** `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/<seoname>.<format>`
 
-***Example:*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:avid:aem:VanityCheck/as/check.jpeg`
+The vanity URL includes `avid` (*actual vanity identifier*) after `urn:` and your vanity ID between `urn:avid:aem:` and `/<seoname>.<format>`.
 
-The vanity URL includes `avid` after `urn:` and your vanity ID between `urn:avid:aem:` and `/<seoname>.<format>`, where **avid** stands for *actual vanity identifier*.
+***Example:*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:avid:aem:VanityCheck/as/check.jpeg`
 
 In the above example, `VanityCheck` is the vanity ID that replaced the UUID.
 
@@ -86,7 +86,7 @@ Execute the following to set up the vanity ID in your asset's metadata form:
 1. Navigate to the details page of the folder holding your assets for [!DNL Dynamic Media with OpenAPI] delivery.
 1. [Edit that metadata form](/help/assets/metadata-assets-view.md#edit-metadata-forms) by doing one of the following:
    * Add a new metadata field and specify the required vanity ID as the value of that field.
-   * **Update existing field**: Replace an existing metadata property's value with the required vanity ID. Learn the [best practices](#best-practices) for creating the vanity ID.
+   * Update existing field by replacing an existing metadata property's value with the required vanity ID. Learn the [best practices](#best-practices) for creating the vanity ID.
    ![vanity ID](/help/assets/assets/vanity-id-metadata.png)
    Learn more about [metadata schemas](/help/assets/metadata-schemas.md).
    
@@ -112,7 +112,7 @@ After mapping the `ASSET_DELIVERY_VANITY_ID` variable in your Cloud Manager envi
 
 ### Generate Vanity URLs{#generate-vanity-urls}
 
-Make the following replacements to transform your standard delivery URL into a vanity URL:
+Make the following replacements in your standard delivery URL to transform it into a vanity URL:
 
 * Replace **UUID** with your **vanity ID**.
 * Replace `aaid` with `avid`.
@@ -126,7 +126,7 @@ When your user clicks the vanity URL, [!DNL Dynamic Media with OpenAPI] automati
 
 ## Scale using vanity URLs{#scale-using-vanity-url}
 
-AEM as a Cloud Service enables you to [customize the DNS and CDN names](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) within your web address. Use these AEMCS capabilities with your vanity URLs to transforms them into unique web-addresses that are clean, descriptive, branded, intuitive and provide the [above-mentioned benefits](#key-benefits).
+AEM as a Cloud Service enables you to [customize the DNS and CDN names](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) within your web addresses. Use these AEMCS capabilities with your vanity URLs to transforms them into unique web-addresses that are clean, descriptive, branded, intuitive and provide the [above-mentioned benefits](#key-benefits).
 
 See the following vanity URL and its customizable components:
 
@@ -164,7 +164,7 @@ See the following vanity URL and its customizable components:
 
 ### Customize DNS{#customize-dns}
 
-[Raise a request to Adobe support](https://helpx.adobe.com/in/contact.html) for generating the required custom DNS for your delivery tier. Follow these [best practices](#best-practices) for creating custom DNS names.
+[Raise a request to Adobe support](https://helpx.adobe.com/in/contact.html) to generate the required custom DNS for your delivery tier. Follow these [best practices](#best-practices) for creating custom DNS names.
 See [this article](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/configure-custom-domain#:~:text=In%20Adobe%20Cloud%20Manager%2C%20you,the%20allowed%20redirect%20URLs%20list) to configure a custom domain for the publish tier.
 
 ### Rewrite CDN rules{#rewrite-cdn-rules}
