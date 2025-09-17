@@ -185,7 +185,7 @@ The following are examples of rewrite rules for appending file names with extens
         equals: delivery
 ```
 
-#### For SVG / GIF / PDF {#svg-gif-pdf}
+#### For SVG, GIF, and PDF {#svg-gif-pdf}
 
 ```
     type: transform
