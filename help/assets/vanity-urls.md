@@ -184,6 +184,7 @@ The following are examples of rewrite rules for appending file names with extens
       - reqProperty: tier
         equals: delivery
 ```
+
 ##### For SVG / GIF / PDF {#svg-gif-pdf}
 
 ```
@@ -193,6 +194,7 @@ The following are examples of rewrite rules for appending file names with extens
       match: ^/dam/assets/([^/]+\.(?:svg|gif|pdf|docx|xlsx))(\?.*)?$
       replacement: /adobe/assets/urn:avid:aem:\1/original/as/\1\2
 ```
+
 ##### For video{#video}
 
 For videos including MP4, MOV, AVI and MKV
@@ -204,6 +206,7 @@ type: transform
       match: ^/dam/assets/([^/]+\.(?:mp4|mov|avi|mkv))(\?.*)?$
       replacement: /adobe/assets/urn:avid:aem:\1/play\2
 ```
+
 ##### For image{#image}
 
 For all image types excluding SVG.
