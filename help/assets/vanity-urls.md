@@ -134,22 +134,27 @@ See the following vanity URL and its customizable components:
 
 `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/<seoname>.<format>`
 
-<table>
-  <tr>
-    <td align="center">
-      <code>https://delivery-&lt;tenant&gt;.adobeaemcloud.com</code><br>↓<br>
-      <a href="#customize-dns">Customize this DNS</a>
+<table style="border-collapse:collapse;">
+  <tr style="vertical-align:top;">
+    <td style="padding:0 0 0 4px; white-space:nowrap;">
+  <div style="text-align:left;"><code>https://delivery-&lt;tenant&gt;.adobeaemcloud.com</code></div>
+  <div style="text-align:center;">↓</div>
+  <div style="text-align:center;"><a href="#customize-dns">Customize this DNS</a></div>
+</td>
+    <td style="padding:0 6px; white-space:nowrap; text-align:left;">/</td>
+    <td style="padding:0 0 0 4px; white-space:nowrap;">
+      <div style="text-align:left;"><code>adobe/assets/urn:avid:aem:</code></div>
+      <div style="text-align:center;">↓</div>
+      <div style="text-align:left;"><a href="#rewrite-cdn-rules">Customize URL with rewrite rules</a></div>
     </td>
-    <td>/</td>
-    <td align="center">
-      <code>adobe/assets/urn:avid:aem:</code><br>↓<br>
-      <a href="#rewrite-cdn-rules">Customize URL with rewrite rules</a>
+    <td style="padding:0 0 0 4px; white-space:nowrap;">
+      <div style="text-align:left;"><code>&lt;vanity-id&gt;</code></div>
+      <div style="text-align:center;">↓</div>
+      <div style="text-align:left;"><a href="#create-vanity-urls">Create vanity ID</a></div>
     </td>
-    <td align="center">
-      <code>&lt;vanity-id&gt;</code><br>↓<br>
-      <a href="#create-vanity-urls">Create vanity ID</a>
+    <td style="padding:0 0 0 4px; white-space:nowrap; text-align:left;">
+      <code>/&lt;seoname&gt;.&lt;format&gt;</code>
     </td>
-    <td><code>/&lt;seoname&gt;.&lt;format&gt;</code></td>
   </tr>
 </table>
 
@@ -165,7 +170,6 @@ See the following vanity URL and its customizable components:
 ### Customize DNS{#customize-dns}
 
 [Raise a request to Adobe support](https://helpx.adobe.com/in/contact.html) to generate the required custom DNS for your delivery tier. Follow these [best practices](#best-practices) for creating custom DNS names.
-See [this article](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/configure-custom-domain#:~:text=In%20Adobe%20Cloud%20Manager%2C%20you,the%20allowed%20redirect%20URLs%20list) to configure a custom domain for the publish tier.
 
 ### Rewrite CDN rules{#rewrite-cdn-rules}
 
@@ -227,3 +231,5 @@ Follow these best practices for creating vanity IDs, custom DNS and domain names
 1. Use your brand name, product names, and relevant keywords in your vanity IDs, custom DNS and domain names to boost your brand visibility and user engagement.
 1. Use short, descriptive words or strings that convey meaning.
 1. Use texts that invite users for clicks.
+
+
