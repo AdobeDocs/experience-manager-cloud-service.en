@@ -143,7 +143,7 @@ See the following vanity URL and its customizable components:
     <td>/</td>
     <td align="center">
       <code>adobe/assets/urn:avid:aem:</code><br>↓<br>
-      <a href="#rewrite-cdn-rules">Customize this CDN</a>
+      <a href="#rewrite-cdn-rules">Customize URL with rewrite rules</a>
     </td>
     <td align="center">
       <code>&lt;vanity-id&gt;</code><br>↓<br>
@@ -160,7 +160,7 @@ See the following vanity URL and its customizable components:
 **Customizable URL Components**
 
 * ***[DNS name (hostname):](#customize-DNS)*** `https://delivery-<tenant>.adobeaemcloud.com` is the server domain that hosts your assets. [Customize DNS to change the hostname](#customize-DNS).
-* ***[CDN name:](#rewrite-cdn-rules)*** `adobe/assets/urn:avid:aem:` is the path structure that identifies asset types and delivery methods. [Rewrite CDN rules](#rewrite-cdn-rules) to modify the domain path.
+* ***[CDN rewrite rules:](#rewrite-cdn-rules)*** `adobe/assets/urn:avid:aem:` is the path structure that identifies asset types and delivery methods. [Rewrite CDN rules](#rewrite-cdn-rules) to modify the domain path.
 
 ### Customize DNS{#customize-dns}
 
