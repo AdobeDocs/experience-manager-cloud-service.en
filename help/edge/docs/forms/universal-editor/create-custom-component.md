@@ -582,7 +582,7 @@ Keep the below points in mind before creating your own custom component:
 
 ## References
 
-- [form-field-types](/help/edge/docs/forms/eds-form-field-properties): Base HTML structures and properties for all field types.
+- [form-field-types](/help/edge/docs/forms/eds-form-field-properties.md): Base HTML structures and properties for all field types.
 
 - **blocks/form/models/form-components**: OOTB and custom component property definitions.
 
