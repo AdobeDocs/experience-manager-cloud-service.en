@@ -18,7 +18,9 @@ It is not a replacement for a content delivery network (CDN), but it integrates 
 >
 >**Want to get hands-on right away?**
 >
->If you want to get hands-on right away, you can start your own Edge Delivery Services project with AEM authoring in less than 30 minutes by [checking out the tutorial on aem.live.](https://www.aem.live/developer/ue-tutorial)
+>If you want to get hands-on with Edge Delivery Services right away, you have two options.
+>* Dig in and set up your own environment in less than 30 minutes by [checking out the tutorial on aem.live.](https://www.aem.live/developer/ue-tutorial)
+>* Skip the setup and [start authoring right away with a pre‑built tutorial environment - fully configured and ready to go.](https://www.aem.live/developer/ue-trial)
 
 
 ## Why Edge Delivery Services? {#why-edge}
