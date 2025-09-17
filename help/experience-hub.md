@@ -3,8 +3,8 @@ title: About Experience Hub
 description: Learn about the Adobe Experience Hub page.
 landing-page-description: Learn about Experience Hub, a centralized starting point for accessing all AEM capabilities.
 solution: Experience Manager
-feature: Authoring, Getting Started, Onboarding, AI Assistant, Workflows, Programs
-feature-set: Experience Cloud,Experience Manager Sites
+feature: Authoring, AI Assistant, Central Interface Components, Getting Started, Onboarding, Programs, Workflows 
+feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
 ---
@@ -45,11 +45,11 @@ The Adobe Experience Manager page has been refreshed with enhanced navigation an
 >
 >The widgets, tools, and artifacts shown depend on the user persona, entitlements, and AEM deployment type (AEM as a Cloud Service or Managed Services 6.5/6.5 LTS).
 
-These solutions are now moved to the main navigation under **Tools** or **Services**. Additionally, new navigation elements provide quick access to key Adobe Experience Manager features specific for the solutions that are enabled such as Assets, Sites, Forms, Content Fragments, Launches and many more.
+These solutions are now moved to the main navigation under **Tools** or **Services**. New navigation elements give quick access to AEM features tied to your enabled solutions. Jump to Assets, Sites, Forms, Content Fragments, Launches, and more.
 
 ![Experience Hub environments](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
 
-These features are available for the primary production environment that you have access to or you can select a specific environment to target in case you have access to multiple AEM instances.
+Use these features in your primary production environment. If you have access to multiple AEM instances, select the environment you want to target.
 
 ![Prod and stage environments](/help/implementing/cloud-manager/assets/experience-hub-prod-stage.png)
 
@@ -61,7 +61,7 @@ Widgets can also be resized and repositioned on the page to suit your needs and 
 
 ![Experience Hub widgets](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
 
-The **Authoring Environments** section displays all AEM environments accessible to you, with specific shortcuts for the solutions and pages available for them also letting you pin specific environments that you want displayed at the top of the list.
+The **Authoring Environments** section lists all AEM environments that you can access and include shortcuts to their solutions and pages. You can pin specific environments to keep them at the top of the list.
 
 The **Recents** section, seen in the image below, lists pages you recently visited in AEM. Depending on your tenant's licensing, the widget may include items such as Program, Pipeline Execution, Assets, Page Editor, and Form Editor.
 
