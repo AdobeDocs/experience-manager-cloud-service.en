@@ -5,6 +5,7 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
+
 # Create an Interactive Communication Fragment
 
 >[!NOTE]
