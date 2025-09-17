@@ -185,7 +185,7 @@ The following are examples of rewrite rules for appending file names with extens
         equals: delivery
 ```
 
-##### For SVG / GIF / PDF {#svg-gif-pdf}
+#### For SVG / GIF / PDF {#svg-gif-pdf}
 
 ```
     type: transform
@@ -195,7 +195,7 @@ The following are examples of rewrite rules for appending file names with extens
       replacement: /adobe/assets/urn:avid:aem:\1/original/as/\1\2
 ```
 
-##### For video{#video}
+#### For video{#video}
 
 For videos including MP4, MOV, AVI and MKV
 
@@ -207,7 +207,7 @@ type: transform
       replacement: /adobe/assets/urn:avid:aem:\1/play\2
 ```
 
-##### For image{#image}
+#### For image{#image}
 
 For all image types, excluding SVG.
 
