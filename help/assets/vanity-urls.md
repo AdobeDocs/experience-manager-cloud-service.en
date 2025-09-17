@@ -126,7 +126,7 @@ When your user clicks the vanity URL, [!DNL Dynamic Media with OpenAPI] automati
 
 ## Scale using vanity URLs{#scale-using-vanity-url}
 
-AEM as a Cloud Service enables you to [customize the DNS and domain names](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) within your web address. Use these AEMCS capabilities with your vanity URLs to transforms them into unique web-addresses that is clean, descriptive, branded, intuitive and provide the [above-mentioned benefits](#key-benefits).
+AEM as a Cloud Service enables you to [customize the DNS and CDN names](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) within your web address. Use these AEMCS capabilities with your vanity URLs to transforms them into unique web-addresses that is clean, descriptive, branded, intuitive and provide the [above-mentioned benefits](#key-benefits).
 
 See the following vanity URL and its customizable components:
 
@@ -160,7 +160,7 @@ See the following vanity URL and its customizable components:
 **Customizable URL Components**
 
 * ***[DNS name (hostname):](#customize-DNS)*** `https://delivery-<tenant>.adobeaemcloud.com` is the server domain that hosts your assets. [Customize DNS to change the hostname](#customize-DNS).
-* ***[Domain path:](#rewrite-cdn-rules)*** `adobe/assets/urn:avid:aem:` is the path structure that identifies asset types and delivery methods. [Rewrite CDN rules](#rewrite-cdn-rules) to modify the domain path.
+* ***[CDN name:](#rewrite-cdn-rules)*** `adobe/assets/urn:avid:aem:` is the path structure that identifies asset types and delivery methods. [Rewrite CDN rules](#rewrite-cdn-rules) to modify the domain path.
 
 ### Customize DNS{#customize-dns}
 
