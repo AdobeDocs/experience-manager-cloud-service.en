@@ -50,7 +50,7 @@ You can create [Adaptive Forms](creating-adaptive-form.md) and Adaptive Form Fra
 
    ![create-af-3](assets/create-af-3.png)
 
-   Once the Adaptive Form or Adaptive Form Fragment based on a Form Data Model (FDM) is created, Form Data Model objects appear in the **[!UICONTROL Data Sources]** tab of the Content browser in Adaptive Form editor.
+   Once the Adaptive Form or Adaptive Form Fragment based on a Form Data Model (FDM) is created, Form Data Model objects appear in the **[!UICONTROL Data Sources]** tab of the Content browser in Adaptive Form builder.
 
    >[!NOTE]
    >
