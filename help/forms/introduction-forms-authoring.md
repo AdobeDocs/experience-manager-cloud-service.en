@@ -1,6 +1,6 @@
 ---
-title: Introduction to authoring Adaptive Forms
-description: AEM Forms provide easy-to-use yet powerful interface for authoring Adaptive Forms. It provides a host of components and tools that you can use to build forms.
+title: Introduction to building Adaptive Forms
+description: AEM Forms provide easy-to-use yet powerful interface for building Adaptive Forms. It provides a host of components and tools that you can use to build forms.
 content-type: reference
 topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,7 +8,7 @@ feature: Adaptive Forms, Foundation Components
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
 ---
-# Adaptive Forms editor {#introduction-to-authoring-adaptive-forms}
+# Adaptive Forms builder {#introduction-to-authoring-adaptive-forms}
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
   >[!NOTE]
   >
-  > You can modify the form model properties from the Adaptive Form editor or Adaptive Form template editor. For more information, see [Edit Form Model properties of an Adaptive Form](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+  > You can modify the form model properties from the Adaptive Form builder or Adaptive Form template builder. For more information, see [Edit Form Model properties of an Adaptive Form](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
 
 To create an Adaptive Form, see [Creating an Adaptive Form](creating-adaptive-form.md).
 
@@ -291,8 +291,8 @@ The page toolbar on the top provides options that let you preview the form, chan
 
   * **Developer**: Lets a developer to:
 
-      * Discover what forms are composed of.
-      * Debug what is happening where and when, which in turn helps to resolve issues.
+    * Discover what forms are composed of.
+    * Debug what is happening where and when, which in turn helps to resolve issues.
 
     * **Design**. Lets you enable or disable custom components, or out-of-the-box components that are not listed in the Sidebar.
 
@@ -347,16 +347,20 @@ The content structure typically contains the following primary components:
 
 * **guideContainer**: The root of an Adaptive Form, which is marked as **[!UICONTROL Start of Adaptive Form]** in the Adaptive Form UI. In this component, you can specify:
 
-    * *Mobile Layout of the Adaptive Form*: Defines the appearance of the form on mobile devices.
-    * *Thank You page*: Defines the page where the user is redirected after submitting the form.
-    * *Submit Action*: Defines how the form is processed on the server once the user submits the form.
-    * *Styling*: Specifies the path to the CSS file used to customize the appearance of the form.
+  * *Mobile Layout of the Adaptive Form*: Defines the appearance of the form on mobile devices.
+  * *Thank You page*: Defines the page where the user is redirected after submitting the form.
+  * *Submit Action*: Defines how the form is processed on the server once the user submits the form.
+  * *Styling*: Specifies the path to the CSS file used to customize the appearance of the form.
 
 * **rootPanel:** The root panel of an Adaptive Form. It can contain subpanels under the items node. Each panel including the root panel can have a layout associated with it. The layout of the panel dictates how the form is laid out. For example, in the Accordion layout, its items are laid out as Accordion steps.
 
 * **toolbar:** An Adaptive Form container has an associated global toolbar, which is global to the form. This toolbar can be added using the **[!UICONTROL Add Toolbar]** action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on.
 
 * **assets:** This node contains additional information used for form authoring. For example, form model details, localization details, and so on.
+
+## AI Assistant in AEM
+
+For customers who have [completed pre-requisite criteria](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), the AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
 
 ## See Also {#see-also}
 

@@ -171,7 +171,7 @@ To create a sign-enabled Adaptive Form:
 
    1. Select the [configuration container](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) created while [integrating [!DNL DocuSign] with [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
-   The configuration container contains the [!DNL DocuSign] Cloud Services configured for your environment. These services are available for selection in Adaptive Form editor.
+   The configuration container contains the [!DNL DocuSign] Cloud Services configured for your environment. These services are available for selection in Adaptive Form builder.
 
 1. In the **[!UICONTROL Form Model]** tab, select one of the following options:
 

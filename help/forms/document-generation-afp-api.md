@@ -95,4 +95,4 @@ You can download the .yaml file and upload it to Postman to check functionality 
 
 You can save the response and open the saved file in AFP reader to view it.
 
-<!-- ![PDF reader](/help/forms/assets/afp-pdf.png) -->
+![Find IC Docu](/help/forms/interactive-communication/assets/introimg.png)
