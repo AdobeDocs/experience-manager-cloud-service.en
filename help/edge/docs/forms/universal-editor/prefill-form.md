@@ -150,6 +150,11 @@ The Universal Editor provides two prefill service options:
    ![Edge Delivery Services template](/help/edge/assets/create-eds-forms.png)
 
 1. Click **Create** to open the **Create Form** wizard
+
+   >![NOTE]
+   >
+   > You can configure the data source from the **Data** tab or later by editing the form properties. 
+
 1. Specify the form details:
 
    - **Name**: Enter a descriptive name for your form
@@ -244,7 +249,7 @@ Ensure these extensions are enabled in Universal Editor:
 3. Choose **Preview as HTML**
 4. Test prefilling by appending parameters to the URL:
 
-   https://your-preview-url.com?`<bindreferencefield>`=`<value>`
+   `https://your-preview-url.com?<bindreferencefield>=<value>`
 
    **Example:**
 

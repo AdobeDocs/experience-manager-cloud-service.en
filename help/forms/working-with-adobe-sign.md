@@ -79,7 +79,7 @@ To create a sign-enabled Adaptive Form:
 
     1. Select the [configuration container](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) created while [integrating [!DNL Adobe Sign] with [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
-      The configuration container contains the [!DNL Adobe Sign] Cloud Services configured for your environment. These services are available for selection in Adaptive Form editor.  
+      The configuration container contains the [!DNL Adobe Sign] Cloud Services configured for your environment. These services are available for selection in Adaptive Form builder.  
 
 1. In the **[!UICONTROL Form Model]** tab, select one of the following options:
 
@@ -118,8 +118,8 @@ To add fields to an Adaptive Form and customize various options related to these
 
    >[!NOTE]
    >
-   >  * Using [!DNL Adobe Sign] block is not mandatory to use [!DNL Adobe Sign] in an Adaptive Form. If you do not use [!DNL Adobe Sign] block and add fields for the recipients, then the default signature field is displayed at the bottom of the signing documents.
-   >  * Use [!DNL Adobe Sign] block only for those Adaptive Forms which automatically generate Document of Record. If you are using a custom XDP for generating Document of Record or a form template based Adaptive Form, [!DNL Adobe Sign] block is not supported.
+   > * Using [!DNL Adobe Sign] block is not mandatory to use [!DNL Adobe Sign] in an Adaptive Form. If you do not use [!DNL Adobe Sign] block and add fields for the recipients, then the default signature field is displayed at the bottom of the signing documents.
+   > * Use [!DNL Adobe Sign] block only for those Adaptive Forms which automatically generate Document of Record. If you are using a custom XDP for generating Document of Record or a form template based Adaptive Form, [!DNL Adobe Sign] block is not supported.
 
 
 1. Select the **[!UICONTROL Adobe Sign Block]** component and select the **[!UICONTROL Edit]** ![Edit](assets/Smock_Edit_18_N.svg) icon. It displays options to add fields and format appearance of a field.
@@ -211,7 +211,7 @@ You can have one or multiple recipients for an Adobe Sign agreement. When you ad
 
    >[!NOTE]
    >
-   >    * By default, the social identity-based authentication provides an option to authenticate using Facebook, Google, and LinkedIn. You can contact [!DNL Adobe Sign] support to enable other social authentication providers.
+   > * By default, the social identity-based authentication provides an option to authenticate using Facebook, Google, and LinkedIn. You can contact [!DNL Adobe Sign] support to enable other social authentication providers.
    >
 
     * **[!DNL Adobe Sign] fields to fill or sign:** Select [!DNL Adobe Sign] fields for the recipient. An Adaptive Form can have multiple [!DNL Adobe Sign] fields. You can choose to enable specific fields for a recipient. The field displays all the available [!DNL Adobe Sign] Blocks. When you select a block, all the fields of the block are selected. You can use the X icon to deselect a field.
