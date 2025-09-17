@@ -126,7 +126,7 @@ When your user clicks the vanity URL, [!DNL Dynamic Media with OpenAPI] automati
 
 ## Scale using vanity URLs{#scale-using-vanity-url}
 
-AEM as a Cloud Service enables you to [customize the DNS and CDN names](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) within your web address. Use these AEMCS capabilities with your vanity URLs to transforms them into unique web-addresses that is clean, descriptive, branded, intuitive and provide the [above-mentioned benefits](#key-benefits).
+AEM as a Cloud Service enables you to [customize the DNS and CDN names](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction) within your web address. Use these AEMCS capabilities with your vanity URLs to transforms them into unique web-addresses that are clean, descriptive, branded, intuitive and provide the [above-mentioned benefits](#key-benefits).
 
 See the following vanity URL and its customizable components:
 
@@ -209,7 +209,7 @@ type: transform
 
 ##### For image{#image}
 
-For all image types excluding SVG.
+For all image types, excluding SVG.
 
 ```
 type: transform
