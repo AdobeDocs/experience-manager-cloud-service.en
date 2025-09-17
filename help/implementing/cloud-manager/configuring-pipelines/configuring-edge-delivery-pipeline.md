@@ -16,13 +16,13 @@ Learn how to configure Edge Delivery pipelines to build and deploy your code to 
 
 A user must have the **[Deployment Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** role to configure production pipelines.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >An Edge Delivery pipeline cannot be configured until the following has happened: 
 >
->* A program is created that contains one Edge Delivery Services site and one mapped domain. Otherwise, the option **Add Edge Delivery Pipeline** appears disabled in the user interface, and a tooltip explains missing requirements.
->* The Git repository has at least one branch.
->* The production and staging environments are created.
+>* A program is created that contains one Edge Delivery Services site and one mapped domain. Otherwise, the option **Add Edge Delivery Pipeline** appears disabled in the user interface, and a tooltip explains missing requirements. See [Create an Edge Delivery site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+>* The Git repository has at least one branch. See [Manage Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
+>* The production and staging environments are created. See [Introduction to CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 <!-- CMGR‑69680 -->
 
@@ -35,7 +35,9 @@ Before you start to deploy your code, configure your pipeline settings from the 
 
 **To add an Edge Delivery pipeline:**
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the organization you want.
+1. Log into Cloud Manager at [experience.adobe.com/experiencemanager](https://my.cloudmanager.adobe.com/), then in the left side panel, click **Cloud Manager**.
+
+1. Select the organization you want.
 
 1. On the **My Programs** page, select the program you want.
 
