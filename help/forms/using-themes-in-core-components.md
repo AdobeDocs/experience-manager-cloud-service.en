@@ -1,7 +1,7 @@
 ---
-title: How can we create and use themes in Adaptive Forms?
+title: How to build and use themes in Adaptive Forms?
 description: You can use themes to style and provide a visual identity to an Adaptive Form using Core Components. You can share a theme across any number of Adaptive Forms.
-keywords: adaptive forms styling Core Components. using theme in Core Components, styling adaptive form, customizing themes
+keywords: form builder themes, adaptive forms styling core components, form theme builder, styling adaptive form, customizing themes, build form themes
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
@@ -159,9 +159,9 @@ To clone a theme, perform the following instructions:
 
 **Considerations while setting the name of the theme**
 
-   * It is mandatory to remove the `@aemforms` from the theme name in `Package.json` file and `Package-lock.json` file. In case, you fail to remove `@aemforms` from your customized theme name, it results in the failure of the frontend pipeline during the theme deployment.
-   * It is recommended to update the theme `version` in `Package.json` file and `Package-lock.json` file to accurately reflect changes and enhancements over time for your theme.
-   * For the important information about the usage, installation instructions, and other relevant details, it is recommended to update the name of the theme in the `ReadMe` file.
+* It is mandatory to remove the `@aemforms` from the theme name in `Package.json` file and `Package-lock.json` file. In case, you fail to remove `@aemforms` from your customized theme name, it results in the failure of the frontend pipeline during the theme deployment.
+* It is recommended to update the theme `version` in `Package.json` file and `Package-lock.json` file to accurately reflect changes and enhancements over time for your theme.
+* For the important information about the usage, installation instructions, and other relevant details, it is recommended to update the name of the theme in the `ReadMe` file.
 
 #### 3. Customize a theme {#customize-the-theme}
 
@@ -447,6 +447,7 @@ Adaptive Form themes are used as part of an Adaptive Form template to define sty
 ## See Also {#see-also}
 
 {{see-also}}
+
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)

@@ -61,4 +61,3 @@ For information on how to enable this extension, [please see the Extension Manag
 
 * To revert inheritance for single components, the **AEM Multi-Site-Management (MSM) Extension** must be enabled.
 * For visual feedback to see which components have their inheritance disabled and which still have it preserved, the **AEM Multi-Site-Management (MSM) Extension** must be enabled.
-* These features are currently limited to components in pages and do not yet apply to [Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md), despite those also having MSM and Launch capabilities.

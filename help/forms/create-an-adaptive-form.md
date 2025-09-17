@@ -1,7 +1,7 @@
 ---
 title: How to create an Adaptive Form?
-description: Learn how to create mobile-responsive Adaptive Forms with our step-by-step tutorial. These forms adapt seamlessly across devices, ensuring a smooth experience.
-keywords: Adaptive Forms, Responsive Forms, HTML5 Forms
+description: Learn to use AEM Forms' form builder to create mobile-responsive adaptive forms. Perfect for form creators and developers who need forms that adapt seamlessly across devices.
+keywords: form builder, form creator, create forms, form maker, adaptive forms, responsive forms, HTML5 forms, build forms, AEM forms
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
@@ -9,14 +9,14 @@ hide: yes
 hidefromtoc: yes
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
 ---
-# Create an Adaptive Form {#creating-an-adaptive-form}
+# Form builder getting started guide {#creating-an-adaptive-form}
 
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html)                  |
 | AEM as a Cloud Service     | This article   |
 
-Adaptive Forms let you create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provides business user-friendly wizard to quickly create Adaptive Forms. The wizard has a quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an Adaptive Form. 
+AEM Forms' form builder lets you create forms that are engaging, responsive, dynamic, and adaptive. Whether you're a form creator building professional forms or need to quickly make responsive forms, AEM Forms provides a user-friendly wizard. The wizard has quick tab navigation to easily select pre-configured templates, styling, fields, and submission options. 
 
 ![Wizard to create an Adaptive Form](/help/release-notes/assets/wizard.png){width="100%" align="center"}
 
@@ -36,9 +36,9 @@ You require the following to create an Adaptive Form:
 
 * **An Adaptive Form template**: A template provides a basic structure and defines appearance (layouts and styles) of an Adaptive Form. It has pre-formatted components containing certain properties and content structure. It also provides the options to define a theme and a submit action. The theme defines the look and feel and submit action defines the action to take on submission of an Adaptive Form. For example, sending the collected data to a data source. The cloud service provides an OOTB template, named blank:
 
-    * The `blank` template is included with every fresh AEM Forms as a Cloud Service program.
-    * You can install the reference package, via Package Manager, to add the `blank` template to your AEM Forms as a Cloud Service program. 
-    * You can also [create an Adaptive Forms template (Core Components)](template-editor.md) from scratch.
+  * The `blank` template is included with every fresh AEM Forms as a Cloud Service program.
+  * You can install the reference package, via Package Manager, to add the `blank` template to your AEM Forms as a Cloud Service program. 
+  * You can also [create an Adaptive Forms template (Core Components)](template-editor.md) from scratch.
 
 * **An Adaptive Form theme**: A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components.  The `Canvas` template is included with every fresh AEM Forms as a Cloud Service program.
     <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
@@ -47,7 +47,7 @@ You require the following to create an Adaptive Form:
 * **Permissions**: Add your users to [!DNL forms-users] group. The members of the [!DNL forms-users] group have permissions to create an Adaptive Form. For detailed list of forms-specific user groups, see [Groups and permissions](forms-groups-privileges-tasks.md).
 
 
-## Create an Adaptive Form {#create-an-adaptive-form-core-components}
+## Create an adaptive form {#create-an-adaptive-form-core-components}
 
 1. Log in to your [!DNL Experience Manager Forms] Author instance. It can be a Cloud instance or a local development instance.
 
@@ -97,7 +97,7 @@ You require the following to create an Adaptive Form:
 Now, you can drag-and-drop the [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#components) or schema elements to build your Adaptive Form.  
 
 
-## Edit Form Model properties of an Adaptive Form {#edit-form-model-core-components-based-adaptive-forms}
+## Edit form model properties of an adaptive form {#edit-form-model-core-components-based-adaptive-forms}
 
 1. Select the Adaptive Form and select ![Page information](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Open Properties]**. The Form Properties page opens. 
 
@@ -115,12 +115,12 @@ You require the following to create an Adaptive Form:
 
 * **An Adaptive Form template**: A template provides a basic structure and defines appearance (layouts and styles) of an Adaptive Form. It has pre-formatted components containing certain properties and content structure. It also provides the options to define a theme and a submit action. The theme defines the look and feel and submit action defines the action to take on submission of an Adaptive Form. For example, sending the collected data to a data source. The cloud service supports two types of templates: 
 
-    * **Editable template**: You can [create a](template-editor.md) or [import an existing editable template](migrate-to-forms-as-a-cloud-service.md). You can also deploy the [latest archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) to get some sample editable templates. 
+  * **Editable template**: You can [create a](template-editor.md) or [import an existing editable template](migrate-to-forms-as-a-cloud-service.md). You can also deploy the [latest archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) to get some sample editable templates. 
 
-    * **Static template**: These are legacy templates and are recommended only for customers migrating from Adobe Managed Services (AMS) and on-premise AEM Forms installations (AEM 6.5 Forms or earlier). These let you continue to use your existing investment in static templates. When you create an Adaptive Form, use an Editable template.
+  * **Static template**: These are legacy templates and are recommended only for customers migrating from Adobe Managed Services (AMS) and on-premise AEM Forms installations (AEM 6.5 Forms or earlier). These let you continue to use your existing investment in static templates. When you create an Adaptive Form, use an Editable template.
 
 
-## Create an Adaptive Form {#create-an-adaptive-form-foundation-components}
+## Create an adaptive form {#create-an-adaptive-form-foundation-components}
 
 1. Access [!DNL Experience Manager Forms] Author instance. It can be a Cloud instance or a local development instance.
 
@@ -192,7 +192,7 @@ To use a Form Data Model for creating an Adaptive Form:
 >
 >You can also change the Form Data Model for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model).
 
-## Create an Adaptive Form based on XML or JSON schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
+## Create an adaptive form based on XML or JSON schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
 XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate a schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available in the Data Model Object tab of the content browser for authoring Adaptive Forms. You can drag-drop the schema elements to build the form.
 
@@ -225,7 +225,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 >
 >You can also change the schema for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model2). -->
 
-## Edit Form Model properties of an Adaptive Form {#edit-form-model-foundation-components}
+## Edit form model properties of an adaptive form {#edit-form-model-foundation-components}
 
 You can change the form model for an Adaptive Form (JSON-based or Form Data Model (FDM)). You cannot change from one form model to another.
 
@@ -237,7 +237,7 @@ You can change the form model for an Adaptive Form (JSON-based or Form Data Mode
 
 1. Select **[!UICONTROL Save]** to save the properties.
 
-You can also modify the form model properties from the Adaptive Form editor or Adaptive Form template editor. 
+You can also modify the form model properties from the Adaptive Form builder or Adaptive Form template builder. 
 
 1. Select the **[!UICONTROL Adaptive Form container (Root)]** component.
 1. Click ![Configure Icon](/help/forms/assets/configure-icon.svg) icon to open the **[!UICONTROL Properties]** of the Adaptive Form container.
@@ -256,7 +256,7 @@ You can also modify the form model properties from the Adaptive Form editor or A
 >[!ENDTABS]
 
 
-## Next Steps
+## Next steps
 
 * [Use Adobe Sign with Forms](working-with-adobe-sign.md)
 * [Use Google reCaptcha in with Forms](captcha-adaptive-forms.md)
