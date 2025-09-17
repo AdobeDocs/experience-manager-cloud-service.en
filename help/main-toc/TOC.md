@@ -682,7 +682,7 @@ user-guide-title: AEM as a Cloud Service
       + [Frequently asked questions](/help/assets/dynamic-media-open-apis-faqs.md)
       + [Configure custom domain](/help/assets/configure-custom-domain.md)
       + [Optimize images](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
-      + [Create vanity URLs](/help/assets/vanity-urls.md)
+      + [Create vanity URLs](/help/assets/vanity-urls.md).
   + Working with Assets view {#assets-view}
     + [Introduction](/help/assets/assets-view-introduction.md)
     + [Getting started](/help/assets/get-started-assets-view.md)
