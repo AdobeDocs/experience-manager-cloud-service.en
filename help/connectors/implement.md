@@ -40,7 +40,7 @@ Experience Manager as a Cloud Service [documentation](../overview/introduction.m
 Community Resources 
 --------------------
 
-In addition to the static documentation above, Adobe and the AEM community offer resources to help bring a connector to market:
+In addition to the static documentation above, Adobe and the AEM community offer resources to help bring a connector to the market:
 
 * The Adobe Community's [AEM Forum](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) is an active site where your peers ask and respond to questions
 * Additional Adobe technical resources are available to certain partner levels. Learn more about the [Adobe Exchange Program](https://partners.adobe.com/technologyprogram/experiencecloud.html).
