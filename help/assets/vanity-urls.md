@@ -137,7 +137,7 @@ See the following vanity URL and its customizable components:
 <table style="border-collapse:collapse;">
   <tr style="vertical-align:top;">
     <td style="padding:0 0 0 4px; white-space:nowrap;">
-  <div style="text-align:left;"><code>https://delivery-&lt;tenant&gt;.adobeaemcloud.com</code></div>
+  <div style="text-align:left;"><code>https://delivery&#8209;&lt;tenant&gt;.adobeaemcloud.com</code></div>
   <div style="text-align:center;">↓</div>
   <div style="text-align:center;"><a href="#customize-dns">Customize this DNS</a></div>
 </td>
