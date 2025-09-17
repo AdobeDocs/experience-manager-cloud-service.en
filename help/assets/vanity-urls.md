@@ -131,23 +131,27 @@ AEM as a Cloud Service enables you to [customize the DNS and domain names](https
 See the following vanity URL and its customizable components:
 
 **Vanity URL format:**
-<div style="font-family:monospace; white-space:nowrap;">
-  <span style="display:inline-block; text-align:center; vertical-align:top; margin-right:8px;">
-    <code>https://delivery-&lt;tenant&gt;.adobeaemcloud.com</code>
-    <br>⬇<br><a href="#customize-dns">Customize this DNS</a>
-  </span>
 
-  <span style="display:inline-block; text-align:center; vertical-align:top; margin:0 8px;">
-    <code>/</code>&nbsp;<code>adobe/assets/urn:avid:aem:</code>
-    <br>⬇<br><a href="#rewrite-cdn-rules">Customize this CDN</a>
-  </span>
+`https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/<seoname>.<format>`
 
-  <span style="display:inline-block; text-align:center; vertical-align:top; margin-left:8px;">
-    <code>&lt;vanity-id&gt;</code>&nbsp;<code>/&lt;seoname&gt;.&lt;format&gt;</code>
-    <br><span style="display:inline-block; position:relative; left:-2.5cm;">⬇</span>
-    <br><span style="display:inline-block; position:relative; left:-2.5cm;"><a href="#create-vanity-urls">Create vanity ID</a></span>
-  </span>
-</div>
+<table>
+  <tr>
+    <td align="center">
+      <code>https://delivery-&lt;tenant&gt;.adobeaemcloud.com</code><br>↓<br>
+      <a href="#customize-dns">Customize this DNS</a>
+    </td>
+    <td>/</td>
+    <td align="center">
+      <code>adobe/assets/urn:avid:aem:</code><br>↓<br>
+      <a href="#rewrite-cdn-rules">Customize this CDN</a>
+    </td>
+    <td align="center">
+      <code>&lt;vanity-id&gt;</code><br>↓<br>
+      <a href="#create-vanity-urls">Create vanity ID</a>
+    </td>
+    <td><code>/&lt;seoname&gt;.&lt;format&gt;</code></td>
+  </tr>
+</table>
 
 **Vanity URL format with customized DNS name and domain path:**
 `https://<custom-dns>` `/` `dam/assets/` `<vanity-id>` `/<seoname>.<format>`
