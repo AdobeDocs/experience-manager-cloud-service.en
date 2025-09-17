@@ -152,9 +152,9 @@ See the following vanity URL and its customizable components:
       <div style="text-align:center;">↓</div>
       <div style="text-align:left;"><a href="#create-vanity-urls">Create vanity ID</a></div>
     </td>
-    <td style="padding:0 0 0 4px; white-space:nowrap; text-align:left;">
-      <code>/&lt;seoname&gt;.&lt;format&gt;</code>
-    </td>
+    <td style="padding:0 0 0 4px; white-space:nowrap; text-align:left; width:1%;">
+  <code>/&lt;seoname&gt;.&lt;format&gt;</code>
+</td>
   </tr>
 </table>
 
@@ -231,5 +231,3 @@ Follow these best practices for creating vanity IDs, custom DNS and domain names
 1. Use your brand name, product names, and relevant keywords in your vanity IDs, custom DNS and domain names to boost your brand visibility and user engagement.
 1. Use short, descriptive words or strings that convey meaning.
 1. Use texts that invite users for clicks.
-
-
