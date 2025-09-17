@@ -134,27 +134,27 @@ See the following vanity URL and its customizable components:
 
 `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/<seoname>.<format>`
 
-<table style="border-collapse:collapse;">
-  <tr style="vertical-align:top;">
-    <td style="padding:0 0 0 4px; white-space:nowrap;">
-  <div style="text-align:left;"><code>https://delivery&#8209;&lt;tenant&gt;.adobeaemcloud.com</code></div>
-  <div style="text-align:center;">↓</div>
-  <div style="text-align:center;"><a href="#customize-dns">Customize this DNS</a></div>
-</td>
-    <td style="padding:0 6px; white-space:nowrap; text-align:left;">/</td>
-    <td style="padding:0 0 0 4px; white-space:nowrap;">
-      <div style="text-align:left;"><code>adobe/assets/urn:avid:aem:</code></div>
-      <div style="text-align:center;">↓</div>
-      <div style="text-align:left;"><a href="#rewrite-cdn-rules">Customize URL with rewrite rules</a></div>
+<table style="border-collapse:collapse; table-layout:auto; width:auto;">
+  <tr valign="top">
+    <td style="padding:0 4px; white-space:nowrap;">
+      <div align="left"><code>https://delivery&#8209;&lt;tenant&gt;.adobeaemcloud.com</code></div>
+      <div align="center">↓</div>
+      <div align="center"><a href="#customize-dns">Customize this DNS</a></div>
     </td>
-    <td style="padding:0 0 0 4px; white-space:nowrap;">
-      <div style="text-align:left;"><code>&lt;vanity-id&gt;</code></div>
-      <div style="text-align:center;">↓</div>
-      <div style="text-align:left;"><a href="#create-vanity-urls">Create vanity ID</a></div>
+    <td style="padding:0 6px; white-space:nowrap;">/</td>
+    <td style="padding:0 4px; white-space:nowrap;">
+      <div align="left"><code>adobe/assets/urn:avid:aem:</code></div>
+      <div align="center">↓</div>
+      <div align="center"><a href="#rewrite-cdn-rules">Customize URL with rewrite rules</a></div>
     </td>
-    <td style="padding:0 0 0 4px; white-space:nowrap; text-align:left; width:1%;">
-  <code>/&lt;seoname&gt;.&lt;format&gt;</code>
-</td>
+    <td style="padding:0 4px; white-space:nowrap;">
+      <div align="left"><code>&lt;vanity-id&gt;</code></div>
+      <div align="center">↓</div>
+      <div align="center"><a href="#create-vanity-urls">Create vanity ID</a></div>
+    </td>
+    <td style="padding:0 4px; white-space:nowrap; width:1%;">
+      <div align="left"><code>/&lt;seoname&gt;.&lt;format&gt;</code></div>
+    </td>
   </tr>
 </table>
 
@@ -231,27 +231,3 @@ Follow these best practices for creating vanity IDs, custom DNS and domain names
 1. Use your brand name, product names, and relevant keywords in your vanity IDs, custom DNS and domain names to boost your brand visibility and user engagement.
 1. Use short, descriptive words or strings that convey meaning.
 1. Use texts that invite users for clicks.
-
-<table style="border-collapse:collapse; table-layout:auto; width:auto;">
-  <tr valign="top">
-    <td style="padding:0 4px; white-space:nowrap;">
-      <div align="left"><code>https://delivery&#8209;&lt;tenant&gt;.adobeaemcloud.com</code></div>
-      <div align="center">↓</div>
-      <div align="center"><a href="#customize-dns">Customize this DNS</a></div>
-    </td>
-    <td style="padding:0 6px; white-space:nowrap;">/</td>
-    <td style="padding:0 4px; white-space:nowrap;">
-      <div align="left"><code>adobe/assets/urn:avid:aem:</code></div>
-      <div align="center">↓</div>
-      <div align="center"><a href="#rewrite-cdn-rules">Customize URL with rewrite rules</a></div>
-    </td>
-    <td style="padding:0 4px; white-space:nowrap;">
-      <div align="left"><code>&lt;vanity-id&gt;</code></div>
-      <div align="center">↓</div>
-      <div align="center"><a href="#create-vanity-urls">Create vanity ID</a></div>
-    </td>
-    <td style="padding:0 4px; white-space:nowrap; width:1%;">
-      <div align="left"><code>/&lt;seoname&gt;.&lt;format&gt;</code></div>
-    </td>
-  </tr>
-</table>
