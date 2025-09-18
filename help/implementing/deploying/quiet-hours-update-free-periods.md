@@ -8,7 +8,7 @@ badge: label="Limited Availability" type="Positive"
 # Quiet hours and Update free periods {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->Currently, the Quiet hours and Update free periods features are available only through the beta program. Please contact either Adobe support or your account manager for access to the beta program.
+>This feature will be available as a **Limited Availability** feature starting with September 29th. Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to have the feature activated on your programs.
 
 The AEM as a Cloud Service [automatic maintenance updates](/help/implementing/deploying/aem-version-updates.md) ensure that your instances stay secure and up to date with the latest maintenance releases. That said, in some cases (like go-live events) you might need to "protect" those critical working hours from any potential disruptions. As such, AEM as a Cloud Service offers the option to set a time frame where automatic updates do not occur for your ongoing programs.
 
@@ -18,6 +18,8 @@ You can configure these time frames by using two scheduling options:
 * **Update free periods** - You can define a 7 day time period where updates will not occur. You can have up to three update free periods within a 12-month time frame.
 
 The update free periods and quiet hours features are configured on a "per program" basis.
+
+Additionally, for information on scheduled AEM as a Cloud Service automatic maintenance periods, please refer to the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) page.
 
 ## Quiet hours {#quiet-hours}
 
@@ -33,7 +35,7 @@ Go to **Activities>Automatic Updates>Update Options**.
 
 ![Configuration](assets/main-config.png)
 
-1. Make sure the **Quiet Hours** option is toggled.
+1. Make sure the **Prevent automatic updates during specific hours** option is toggled.
 2. Click **Edit**.
 3. Set the quiet hours interval in the configuration window.
 
