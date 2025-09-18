@@ -685,6 +685,7 @@ user-guide-title: AEM as a Cloud Service
       + [Frequently asked questions](/help/assets/dynamic-media-open-apis-faqs.md)
       + [Configure custom domain](/help/assets/configure-custom-domain.md)
       + [Optimize images](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
+      + [Create vanity URLs](/help/assets/vanity-urls.md)
   + Working with Assets view {#assets-view}
     + [Introduction](/help/assets/assets-view-introduction.md)
     + [Getting started](/help/assets/get-started-assets-view.md)
@@ -1145,6 +1146,7 @@ user-guide-title: AEM as a Cloud Service
       + [Monitor Form Performance: Operational Telemetry Guides](/help/edge/docs/forms/operational-telemetry-for-forms.md) 
     + [Form Submission Guide: Using the Forms Submission Service](/help/forms/forms-submission-service.md)
     + [Configure Submission for Edge Delivery Services Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+    + [Adaptive Forms Block Field Properties](/help/edge/docs/forms/eds-form-field-properties.md)
     + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)   
   + [Best Practices for creating forms](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
@@ -1513,3 +1515,5 @@ user-guide-title: AEM as a Cloud Service
   + Accessibility {#accessibility}
     + [AEM as a Cloud Service and the Web Accessibility Guidelines](/help/compliance/accessibility/web-accessibility.md)
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
++ Troubleshooting {#troubleshooting}
+  + [Troubleshoot AEM Assets and Forms issues](/help/troubleshooting/home.md)
