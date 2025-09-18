@@ -25,7 +25,7 @@ If you are interested in testing these upcoming features and sharing your feedba
 
 ### New RTE {#new-rte}
 
-The new ProseMirror RTE, featuring a page picker in the link dialog, is now available in the right panel.
+The new ProseMirror RTE, featuring a page picker in the link dialog, is now available in the right panel. [This RTE features flexible configuration options.](/help/implementing/universal-editor/configure-rte.md)
 
 ### Copy and Paste Across Pages {#copy-paste}
 
