@@ -25,7 +25,7 @@ The table below lists recent enhancements to the rule editor in Adaptive Forms, 
 
 >[!NOTE]
 >
-> The enhancements to the Rule Editor are also applicable to Edge Delivery Sevices Forms.
+> The enhancements are also applicable to the [Rule Editor of Edge Delivery Sevices Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md).
 
 Let's now explore each method in detail with specific use cases to help you understand how these features can be used to deliver a personalized experience for users
  
@@ -99,6 +99,8 @@ To avoid cluttering the form with hidden fields, the business decides to store t
 
 **Implementation using Set Variable Value and Get Variable Value functions in the Rule Editor**
 
+>[!VIDEO](https://video.tv.adobe.com/v/3471607/get-set-variable-final-video/?quality=12&learn=on)
+
 A rule is configured on the **Address** fragment using the **Set Variable Value** function to assign a temporary variable named **extracharge**. The value of this variable changes dynamically based on the selected country. For example:
 
 * If the user selects United States, **extracharge** is set to 500.
@@ -129,6 +131,9 @@ The enhanced rule editor supports custom event handling using the **Dispatch Eve
 Instead of binding logic directly to the fields, the form uses an event-based approach with **Dispatch Event** and **On Trigger Event** to improve modularity and maintainability.
 
 **Implementation using Dispatch Event and On Trigger Event**
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3471610/dispatch-trigger-final/?quality=12&learn=on)
 
 The login fragment is added to the form, containing predefined fields for Username and Password. A rule is configured on the **Get OTP** button to display the **Validation Panel**, which includes the input field for entering and validating the OTP.
 

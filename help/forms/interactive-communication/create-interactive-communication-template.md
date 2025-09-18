@@ -4,12 +4,16 @@ description: Create Interactive Communication Templates in AEM Forms to define r
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: yes
-index: no
-hidefromtoc: yes
-exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
 ---
 # Create an Interactive Communication Template
+
+>[!NOTE]
+>
+> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
+
+>[!IMPORTANT]
+>
+> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
 
 Interactive Communication Templates in AEM allow users to define reusable layout structures such as headers, footers, logos, and default styling. These templates serve as a base to create consistent, branded, and efficient communications.
 

@@ -1,7 +1,7 @@
 ---
 title: Generate Variations
 description: Learn about Generate Variations, accessible from various editors within AEM as a Cloud Service
-feature: Generate Variations
+feature: Generate Variations, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 ---
@@ -328,7 +328,7 @@ For further information you can also read:
 
 * [Generate Variations landing page on Experience Cloud](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html)
 
-* [Generative in AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
+* [Generative AI in AEM as a Cloud Service](/help/ai-in-aem/overview.md#generative-ai-in-aem)
 
 ## Release History {#release-history}
 
