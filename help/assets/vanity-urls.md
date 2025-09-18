@@ -5,7 +5,7 @@ role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 ---
 
-# What are Vanity URLs?{#vanity-urls}
+# Use vanity URLs?{#vanity-urls}
 
 Use [!DNL Dynamic Media OpenAPI capabilities] to transform your long asset delivery URLs into short, branded vanity URLs. Standard asset delivery URLs include system-generated asset UUIDs that make the delivery URL complex, hard to remember and share. Replace these asset UUIDs with simple identifiers (Vanity IDs) to generate a vanity URL. A vanity URL is a short, clean, and readable version of your complex delivery URL.
 
@@ -135,27 +135,27 @@ See the following vanity URL and its customizable components:
 `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/<seoname>.<format>`
 
 <table style="border-collapse:collapse; table-layout:auto; width:auto;">
-  <tr valign="top">
-    <td style="padding:0 4px; white-space:nowrap;">
-      <div align="left"><code>https://delivery&#8209;&lt;tenant&gt;.adobeaemcloud.com</code></div>
-      <div align="center">↓</div>
-      <div align="center"><a href="#customize-dns">Customize this DNS</a></div>
-    </td>
-    <td style="padding:0 6px; white-space:nowrap;">/</td>
-    <td style="padding:0 4px; white-space:nowrap;">
-      <div align="left"><code>adobe/assets/urn:avid:aem:</code></div>
-      <div align="center">↓</div>
-      <div align="center"><a href="#rewrite-cdn-rules">Customize URL with rewrite rules</a></div>
-    </td>
-    <td style="padding:0 4px; white-space:nowrap;">
-      <div align="left"><code>&lt;vanity-id&gt;</code></div>
-      <div align="center">↓</div>
-      <div align="center"><a href="#create-vanity-urls">Create vanity ID</a></div>
-    </td>
-    <td style="padding:0 4px; white-space:nowrap; width:1%;">
-      <div align="left"><code>/&lt;seoname&gt;.&lt;format&gt;</code></div>
-    </td>
-  </tr>
+<tr valign="top">
+<td style="padding:0 4px; white-space:nowrap; text-align:center;">
+<div style="text-align:left;"><code>https://delivery&#8209;&lt;tenant&gt;.adobeaemcloud.com</code></div>
+<div style="text-align:center;">↓</div>
+<div style="text-align:center;"><a href="#customize-dns">Customize this DNS</a></div>
+</td>
+<td style="padding:0 6px; white-space:nowrap; text-align:center;">/</td>
+<td style="padding:0 4px; white-space:nowrap; text-align:center;">
+<div style="text-align:left;"><code>adobe/assets/urn:avid:aem:</code></div>
+<div style="text-align:center;">↓</div>
+<div style="text-align:center;"><a href="#rewrite-cdn-rules">Customize URL with rewrite rules</a></div>
+</td>
+<td style="padding:0 4px; white-space:nowrap; text-align:center;">
+<div style="text-align:left;"><code>&lt;vanity-id&gt;</code></div>
+<div style="text-align:center;">↓</div>
+<div style="text-align:center;"><a href="#create-vanity-urls">Create vanity ID</a></div>
+</td>
+<td style="padding:0 4px; white-space:nowrap; text-align:left; width:1%;">
+<code>/&lt;seoname&gt;.&lt;format&gt;</code>
+</td>
+</tr>
 </table>
 
 **Vanity URL format with customized DNS and CDN names:**
