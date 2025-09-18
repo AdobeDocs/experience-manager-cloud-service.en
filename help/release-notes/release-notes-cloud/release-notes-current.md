@@ -167,13 +167,9 @@ Go‑live days, live events, peak sales—these moments can’t break. [Our new 
 >Available as a Limited Availability feature on September 29th.
 >Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to get it activated on your programs.
 
-### JavaScript Compilation Update {#javascript-compilation}
-
-The default client-side library (clientlibs) JavaScript compilation now targets ECMASCRIPT_2018 instead of ECMASCRIPT5. While overridable in the past, this update enables performance improvements, modern JavaScript syntax, and features by default. 
-
 ### Upcoming Java API Deprecations {#java-api-deprecation}
 
-Several deprecated APIs are targeting removal on August 31st and thus should no longer be referenced. In early September, Actions Center notifications will be sent if API usage is detected, and after September 25th, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
+Several deprecated APIs are targeting removal on August 31st and thus should no longer be referenced. Actions Center notifications are being sent if deprecated API usage is detected, and after September 25th, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
 <details>
   <summary>Expand to see the Java API deprecations</summary>
@@ -208,9 +204,9 @@ OSGi properties:
 
 ### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-The *Java 11 runtime* is now deprecated, and most environments have already been upgraded to the more performant **Java 21 runtime**.
+The *Java 11 runtime* is deprecated, and most environments have already been upgraded to the more performant **Java 21 runtime**.
 
-If your environment could not be upgraded due to unsupported dependencies (see [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), you should have received an email from Adobe with specific next steps. Please ensure all required updates are completed by **October 1st, 2025**, so your environment can be upgraded without disruption.
+If your environment could not be upgraded due to unsupported dependencies (see [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), you would have received an email from Adobe with next steps. As described in the email, Adobe upgraded your dev and RDE environments on September 18th and so you can validate that your site and processes work as expected and fix any issues. The upgrade on stage and production environments will proceeed on **October 14th**.
 
 Note: The runtime version is separate from your code's build version. While we recommend building with Java 21, Java 11 builds are still supported for now. A separate deprecation notice for Java 11 builds will be shared in the future.
 
