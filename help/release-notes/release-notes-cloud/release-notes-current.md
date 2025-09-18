@@ -124,6 +124,19 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
   
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
+### New Features in Release Management {#new-features-release-management}
+
+[](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/2025.9.0-release/help/release-notes/release-notes-cloud/release-notes-current.md#new-features-in-release-management)
+
+**Pause Automatic Maintenance Updates**
+
+Go‑live days, live events, peak sales—these moments can’t break. Our new self‑service features stop automatic mainteanance updates when it matters, so your teams stay focused.
+
+- Quiet Hours: Block automatic maintenance during set times each day. Ideal for working hours, nightly runs or morning cutovers.
+- Update‑Free Period: Block automatic maintenance for a full week. Use it for launches, promos, or yearly freezes.
+
+Note : Available as a Limited Availability feature on September 29th.  Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to get it activated on your programs.
+
 ### JavaScript Compilation Update {#javascript-compilation}
 
 The default client-side library (clientlibs) JavaScript compilation now targets ECMASCRIPT_2018 instead of ECMASCRIPT5. While overridable in the past, this update enables performance improvements, modern JavaScript syntax, and features by default. 
