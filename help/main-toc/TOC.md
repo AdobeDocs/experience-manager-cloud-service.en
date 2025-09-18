@@ -1146,6 +1146,7 @@ user-guide-title: AEM as a Cloud Service
       + [Monitor Form Performance: Operational Telemetry Guides](/help/edge/docs/forms/operational-telemetry-for-forms.md) 
     + [Form Submission Guide: Using the Forms Submission Service](/help/forms/forms-submission-service.md)
     + [Configure Submission for Edge Delivery Services Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+    + [Adaptive Forms Block Field Properties](/help/edge/docs/forms/eds-form-field-properties.md)
     + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)   
   + [Best Practices for creating forms](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
