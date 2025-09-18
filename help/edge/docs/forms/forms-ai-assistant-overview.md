@@ -1,6 +1,6 @@
 ---
 title: Forms Experience Builder
-description: Craft powerful forms faster using Form Fragments
+description: Introduction to Forms Experience Builder
 feature: Edge Delivery Services
 hide: yes
 index: no
@@ -17,8 +17,6 @@ role: Admin, Architect, Developer
 The AEM Forms Experience Builder leverages the power of Generative AI to democratize and accelerate the creation and updating of digital form experiences. By enabling intent-based workflows driven through natural language interactions, it empowers users to seamlessly design, modify, and optimize forms with speed and simplicity.
 
 Built on modern web technologies and powered by advanced AI services, the Forms Experience Builder enables both technical and non-technical users to create sophisticated, professional-grade forms through conversational interfaces. This revolutionary approach reduces time to value from days to hours, eliminates technical barriers through interface simplicity, and scales modernization efforts across your entire form ecosystem.
-
-
 
 ## Core Capabilities
 
@@ -49,7 +47,6 @@ Configure form submissions to integrate with your existing business systems:
 - **Marketing Platforms**: Direct integration with Marketo for lead management
 - **AEM Workflows**: Leverage existing AEM workflow capabilities
 
-
 ### 2. Intelligent Import and Conversion
 
 **Supported Import Formats**
@@ -61,7 +58,6 @@ Transform existing forms and documents into interactive digital experiences. The
 - **Flat PDFs**: Static documents converted to interactive forms
 - **Images and Screenshots**: JPG, PNG formats (check with team for size limitations)
 - **Hand-drawn Forms**: Sketches and paper form photographs
-
 
 **Intelligent Conversion Process**
 
@@ -93,6 +89,7 @@ The Forms Experience Builder follows a simple, conversational approach:
 
 ## Example Scenarios
 
+<!--
 <div class="columns">
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Transform PDF Forms to Digital Forms">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
@@ -125,6 +122,7 @@ The Forms Experience Builder follows a simple, conversational approach:
         </div>
     </div>
 </div>
+-->
 
 <!-- #### Import and Enhance Web Forms
 
@@ -149,6 +147,7 @@ Import existing HTML forms and enhance them with advanced features while preserv
 
 ## Benefits for Organizations
 
+<!--
 <div class="columns">
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Democratized Form Creation">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
@@ -191,6 +190,7 @@ Import existing HTML forms and enhance them with advanced features while preserv
         </div>
     </div>
 </div>
+-->
 
 ## Onboarding 
 
@@ -202,7 +202,6 @@ The Forms Experience Builder is currently available as part of the Early Access 
 - **Program ID**: Your specific program identifier within Adobe Experience Cloud
 - **Project Details**: Timeline, scope, and intended use cases
 - **Official Work Email**: Associated with your organization's Adobe account
-
 
 ### How to Obtain IMS Organization ID and Program ID
 
@@ -226,7 +225,6 @@ For detailed steps to locate your IMS Organization ID and Program ID, see:
 > **Limited Availability Program**: Access to Forms Experience Builder is subject to approval from internal stakeholders. Adobe will review your request based on program capacity and alignment with early access criteria. Approval is not guaranteed and depends on current program availability.
 
 For more information about the Early Access program and its features, see the [AEM Forms Early Access documentation](/help/forms/early-access-ea-features.md).
-
 
 ## Getting Started
 
