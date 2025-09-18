@@ -89,6 +89,7 @@ The Forms Experience Builder follows a simple, conversational approach:
 
 ## Example Scenarios
 
+<!--
 <div class="columns">
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Transform PDF Forms to Digital Forms">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
@@ -121,6 +122,7 @@ The Forms Experience Builder follows a simple, conversational approach:
         </div>
     </div>
 </div>
+-->
 
 <!-- #### Import and Enhance Web Forms
 
@@ -145,6 +147,7 @@ Import existing HTML forms and enhance them with advanced features while preserv
 
 ## Benefits for Organizations
 
+<!--
 <div class="columns">
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Democratized Form Creation">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
@@ -187,6 +190,7 @@ Import existing HTML forms and enhance them with advanced features while preserv
         </div>
     </div>
 </div>
+-->
 
 ## Onboarding 
 
