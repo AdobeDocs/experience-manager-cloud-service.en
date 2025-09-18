@@ -105,7 +105,7 @@ Execute the following steps to create an environment variable and map it to the 
 1. [Navigate to the configurations page of your Cloud Manager environment](/help/implementing/cloud-manager/environment-variables.md) and do the following:
    1. Add `ASSET_DELIVERY_VANITY_ID` variable. This is the key.
    1. Use the value field to map to the metadata property that holds the vanity ID. The mapping follows the `dc:<your-metadata-property>` format, where the metadata mapping prefix (such as dc:) varies based on your metadata configuration property.
-   
+   ![ASSET_DELIVERY_VANITY_ID variable](/help/assets/assets/environment-config.png)
 1. Save your changes to restart the pods in your environment.
 
 ### Approve the assets for delivery{#approve-assets-for-delivery}
