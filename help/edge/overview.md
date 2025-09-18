@@ -8,18 +8,19 @@ role: Admin, Architect, Developer
 
 # Edge Delivery Services Overview {#edge-delivery-services}
 
+>[!TIP]
+>
+>**Want to get hands-on right away?**
+>
+>If you want to get hands-on with Edge Delivery Services right away, you have two options.
+>* [Start authoring right away with a pre‑built tutorial environment - fully configured and ready to go.](https://www.aem.live/developer/ue-trial)
+>* Dig in to more of the details and set up your own environment in less than 30 minutes by [checking out the tutorial on aem.live.](https://www.aem.live/developer/ue-tutorial)
+
 ## What is Edge Delivery Services? {#what-is-edge}
 
 Edge Delivery Services is a modern content delivery framework that re-imagines how websites are built and delivered, optimizing for speed, simplicity, and scalability. It is a core part of Adobe Experience Manager and enables faster digital experiences by pushing rendering and delivery closer to the user, at the edge of the network.
 
 It is not a replacement for a content delivery network (CDN), but it integrates seamlessly with your own CDN or the included [Adobe-managed CDN.](/help/implementing/dispatcher/cdn.md)
-
->[!TIP]
->
->**Want to get hands-on right away?**
->
->If you want to get hands-on right away, you can start your own Edge Delivery Services project with AEM authoring in less than 30 minutes by [checking out the tutorial on aem.live.](https://www.aem.live/developer/ue-tutorial)
-
 
 ## Why Edge Delivery Services? {#why-edge}
 
