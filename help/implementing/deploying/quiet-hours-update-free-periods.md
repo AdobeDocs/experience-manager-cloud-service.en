@@ -47,7 +47,7 @@ Once set, your specified start and end hours will apply to every calendar day mo
 
 By using the update free periods feature you can define a 7 day time frame where updates will not occur. Once configured, all maintenance updates will automatically shift to occur outside of the defined time frame. You can have up to three update free periods within a 12-month interval. Additionally, update free periods can be designated up to one year in advance.
 
-Keep in mind when configuring this option that (at least) a one-week time interval between periods is mandatory in order to facilitate automatic updates. As such, this one week time interval is automatically enforced and will be added to the calendar between the update free periods you configured, resulting is some calendar days being unavailable for selection.
+Keep in mind when configuring this option that (at least) a one-week time interval between periods is mandatory in order to facilitate automatic updates. As such, this one week time interval is automatically enforced and will be added to the calendar between the update free periods you configured. This can result in some calendar days being unavailable for selection.
 
 You can define the update free periods **per program**.
 
