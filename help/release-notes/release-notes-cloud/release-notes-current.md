@@ -135,7 +135,10 @@ Go‑live days, live events, peak sales—these moments can’t break. Our new s
 - Quiet Hours: Block automatic maintenance during set times each day. Ideal for working hours, nightly runs or morning cutovers.
 - Update‑Free Period: Block automatic maintenance for a full week. Use it for launches, promos, or yearly freezes.
 
-Note : Available as a Limited Availability feature on September 29th.  Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to get it activated on your programs.
+>[!NOTE]
+>
+>Available as a Limited Availability feature on September 29th.
+>Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to get it activated on your programs.
 
 ### JavaScript Compilation Update {#javascript-compilation}
 
