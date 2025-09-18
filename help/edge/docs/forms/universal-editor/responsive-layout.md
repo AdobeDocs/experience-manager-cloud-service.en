@@ -8,7 +8,7 @@ level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 ---
 
-# Create Responsive Forms with Universal Editor
+# Creating Responsive Forms with Universal Editor – A Complete Guide
 
 The modern web landscape demands forms that function seamlessly across an ever-expanding spectrum of devices and screen sizes. From large desktop monitors to compact smartphone screens, users expect consistent, intuitive experiences regardless of their chosen device. Creating responsive forms is no longer optional—it's a fundamental requirement for delivering professional, accessible, and conversion-optimized digital experiences.
 
@@ -27,6 +27,7 @@ Responsive form creation involves two main activities:
 - Troubleshoot common responsive form issues
 - Optimize forms for mobile performance
 
+<!--
 ## Why Responsive Forms Are Important
 
 **User Experience Impact:**
@@ -40,7 +41,7 @@ Responsive form creation involves two main activities:
 - Higher form completion rates
 - Improved user satisfaction
 - Enhanced accessibility compliance
-- Lower development and maintenance costs
+- Lower development and maintenance costs-->
 
 >[!TIP]
 >
@@ -293,7 +294,7 @@ The Accordion Layout saves space by organizing content into collapsible sections
 
 **Layout and Usability:**
 
-- Utilize two-column layouts for related fields to take advantage of increased screen space.
+- Use two-column layouts for related fields to take advantage of increased screen space.
 - Test form appearance and usability in both portrait and landscape orientations.
 - Design for both touch and mouse input, ensuring all controls are easily accessible.
 - Increase content area size while maintaining clear visual hierarchy and readability.
@@ -310,6 +311,41 @@ The Accordion Layout saves space by organizing content into collapsible sections
 - Offer advanced validation with clear, detailed error messages for complex forms.
 
 +++
+
+## Configure Custom Layouts with Media Query Breakpoints 
+
+When building custom layouts for components in Adaptive Forms using **Universal Editor**, you must define responsive behavior using **CSS media query breakpoints**. This ensures that forms render correctly across different devices and screen sizes.
+
+**Recommended Breakpoints (Based on AEM Core Components)**
+
+| **Device Type** | **Recommended Breakpoint** |
+|-----------------|---------------------------|
+| **Desktop** | `min-width: 1200px` |
+| **Tablet** | `min-width: 768px and max-width: 1199px` |
+| **Mobile** | `max-width: 767px` |
+
+**Key Points**
+
+- Use these breakpoints to control how components resize, stack, or hide on different devices.
+- Follow your organization's responsive design guidelines for a consistent UX.
+- Test layouts on multiple devices and orientations to ensure usability and accessibility.
+
+```css
+
+/* Example: Stack form fields on smaller screens */
+@media (max-width: 767px) {
+  .custom-form-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+```
+
+>[!NOTE]
+>
+> Universal Editor does not provide a UI for defining responsive behavior. All layout customization must be handled through CSS. 
+
+
 
 ## Troubleshooting
 

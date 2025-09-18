@@ -1,11 +1,19 @@
 ---
-title: Generative AI in AEM as a Cloud Service
-description: Learn about Generative AI in Adobe Experience Manager as a Cloud Service
-feature: Generative AI
+title: AI in AEM as a Cloud Service
+description: Learn about AI in Adobe Experience Manager as a Cloud Service
+feature: Generative AI, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
-exl-id: 740d9a5b-bd83-4723-a43e-0ead475c3392
 ---
-# Generative AI in AEM as a Cloud Service {#generative-ai-in-aem-as-a-cloud-service}
+
+# AI in AEM as a Cloud Service {#ai-in-aem-as-a-cloud-service}
+
+AI is an integral part of Adobe Experience Manager as a Cloud Service, being used to support users in finding information, or generate experiences.
+
+## AI Assistant {#ai-assistant}
+
+The [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/ai-assistant-in-aem.md) offers a conversational interface designed to streamline finding answers to your AEM-related queries.
+
+## Generative AI in AEM {#generative-ai-in-aem}
 
 Adobe Generative AI for Adobe Experience Manager (AEM) as a Cloud Service enables brands to create high performance experiences with both copy and image generation all within the editing interface. With generative AI, you can autonomously create content that is:
 
@@ -25,7 +33,7 @@ Generative AI is used throughout AEM:
     >[!NOTE]
     >
     >It is recommended that you access [Generate Variations integrated into AEM editors](/help/generative-ai/generate-variations-integrated-editor.md), as the previous version will be deprecated in the future.
-
+    
   * [Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)
 
 * [Content Hub Overview](/help/assets/product-overview.md)

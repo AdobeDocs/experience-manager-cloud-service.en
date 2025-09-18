@@ -13,9 +13,10 @@ By setting up Cloud Manager to integrate with your private GitHub Cloud (reposit
 >
 >You can also add the following repository types with webhooks:
 >
->* GitHub Enterprise Server (self-hosted version of GitHub) repositories 
->* GitLab (both `gitlab.com` and self-hosted versions of GitLab) repositories 
->* Bitbucket (both `bitbucket.org` and Bitbucket Server, the self-hosted version of BitBucket) repositories 
+>* GitHub Enterprise Server (self-hosted version of GitHub) repositories .
+>* GitLab (both `gitlab.com` and self-hosted versions of GitLab) repositories.
+>* Bitbucket (both `bitbucket.org` and Bitbucket Server, the self-hosted version of BitBucket) repositories. 
+>* Azure DevOps (both [dev.azure.com](http://dev.azure.com) and self-hosted versions of Azure DevOps) repositories.
 >
 >See [Add External Repositories in Cloud Manager - private beta](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
@@ -147,13 +148,13 @@ Validated private repositories can be associated with [full-stack and frontend p
 
 
 
-## Usage notes {#usage-notes}
+## Limitations {#limitations}
 
-* Web tier and config pipelines are not supported with private repositories.
+Certain limitations apply when using private repositories with Cloud Manager.
+
 * No Git tag is created and pushed when using private repositories on production full stack pipelines.
 * If the Adobe GitHub app is removed from your GitHub organization, it removes the pull requests validation feature for all repositories.
 * Pipelines using private GitHub Cloud repositories and the "on-commit" build trigger are not started automatically when a new commit is pushed into the selected branch.
 * [Artifact reuse functionality](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) does not apply to private repositories.
-* You cannot pause the pull request validation using the GitHub check from Cloud Manager.
-If the GitHub repository is validated in Cloud Manager, Cloud Manager always tries to validate the pull requests created for that repository.
-* If the GitHub organization has IP restrictions, create a support case to receive the list of IP addresses to be allowed.
+* You cannot pause the pull request validation using the GitHub check from Cloud Manager. If the GitHub repository is validated in Cloud Manager, Cloud Manager always tries to validate the pull requests created for that repository.
+* If your GitHub organization enforces IP restrictions, open a support case to obtain the list of IP addresses that must be allowed.
