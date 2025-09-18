@@ -92,7 +92,7 @@ Execute the following to set up the vanity ID in your asset's metadata form:
    
      >[!NOTE]
      >
-     > * Use unique vanity IDs for each asset. Always verify that assets sharing the same metadata form have unique vanity IDs for DM with OpenAPI delivery through vanity URLs. If two assets share the same vanity ID, DM with OpenAPI delivers the asset that most recently received that ID, overriding the previous entitlement of the ID.
+     > * Use unique vanity IDs for each asset. Always verify that assets sharing the same metadata form have unique vanity IDs for DM with OpenAPI delivery through vanity URLs. If two assets share the same vanity ID, DM with OpenAPI delivers the asset that most recently received that ID, overriding the previous entitlement of the ID to another asset.
      >
      > * A single asset can have multiple vanity IDs. [Contact Adobe support](https://helpx.adobe.com/in/contact.html) and raise a request for generating the required vanity IDs.
 
