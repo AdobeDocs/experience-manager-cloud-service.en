@@ -4,9 +4,6 @@ description: Create Interactive Communication Templates in AEM Forms to define r
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: yes
-index: no
-hidefromtoc: yes
 ---
 # Create an Interactive Communication Template
 

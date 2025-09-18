@@ -92,6 +92,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2025 {#2025}
+      + [Maintenance Release Notes for 2025.9.0](/help/release-notes/maintenance/2025/2025-9-0.md)
       + [Maintenance Release Notes for 2025.8.0](/help/release-notes/maintenance/2025/2025-8-0.md)
       + [Maintenance Release Notes for 2025.7.0](/help/release-notes/maintenance/2025/2025-7-0.md)
       + [Maintenance Release Notes for 2025.6.0](/help/release-notes/maintenance/2025/2025-6-0.md)
@@ -684,6 +685,7 @@ user-guide-title: AEM as a Cloud Service
       + [Frequently asked questions](/help/assets/dynamic-media-open-apis-faqs.md)
       + [Configure custom domain](/help/assets/configure-custom-domain.md)
       + [Optimize images](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
+      + [Create vanity URLs](/help/assets/vanity-urls.md)
   + Working with Assets view {#assets-view}
     + [Introduction](/help/assets/assets-view-introduction.md)
     + [Getting started](/help/assets/get-started-assets-view.md)
@@ -1144,6 +1146,7 @@ user-guide-title: AEM as a Cloud Service
       + [Monitor Form Performance: Operational Telemetry Guides](/help/edge/docs/forms/operational-telemetry-for-forms.md) 
     + [Form Submission Guide: Using the Forms Submission Service](/help/forms/forms-submission-service.md)
     + [Configure Submission for Edge Delivery Services Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+    + [Adaptive Forms Block Field Properties](/help/edge/docs/forms/eds-form-field-properties.md)
     + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)   
   + [Best Practices for creating forms](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
@@ -1373,17 +1376,18 @@ user-guide-title: AEM as a Cloud Service
       + [Component Definition](/help/implementing/universal-editor/component-definition.md)
       + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
       + [Publishing](/help/implementing/universal-editor/publishing.md)
-      + [SecurBank Sample App](/help/implementing/universal-editor/securbank.md)
       + [Events](/help/implementing/universal-editor/events.md)
       + [Filtering Components](/help/implementing/universal-editor/filtering.md)
+      + [Configuring the RTE](/help/implementing/universal-editor/configure-rte.md)
       + [Customizing](/help/implementing/universal-editor/customizing.md)  
       + [Extending](/help/implementing/universal-editor/extending.md)   
       + [Architecture](/help/implementing/universal-editor/architecture.md)
       + [Authentication](/help/implementing/universal-editor/authentication.md)
+      + [Calls](/help/implementing/universal-editor/calls.md)
       + [Getting Started](/help/implementing/universal-editor/getting-started.md)
       + [Developer Overview](/help/implementing/universal-editor/developer-overview.md)
       + [Local AEM Development](/help/implementing/universal-editor/local-dev.md)
-      + [Calls](/help/implementing/universal-editor/calls.md) 
+      + [SecurBank Sample App](/help/implementing/universal-editor/securbank.md) 
     + [Headless Experience Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
     + Hybrid and SPA Development {#hybrid}
       + [Hybrid and SPA with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
@@ -1512,3 +1516,5 @@ user-guide-title: AEM as a Cloud Service
   + Accessibility {#accessibility}
     + [AEM as a Cloud Service and the Web Accessibility Guidelines](/help/compliance/accessibility/web-accessibility.md)
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
++ Troubleshooting {#troubleshooting}
+  + [Troubleshoot AEM Assets and Forms issues](/help/troubleshooting/home.md)
