@@ -75,6 +75,22 @@ The [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.m
 
 Tap or click **Cancel** or **Done** to discard or save the changes, respectively.
 
+#### Rich Text Formatting Options {#formatting-options}
+
+The rich text editor (RTE) of the Universal Editor allows the author to apply standard text formatting. By default, the following options are available.
+
+* Paragraph (h1, h2, h3, etc.)
+* Bold
+* Italics
+* Underline
+* Superscript
+* Subscript
+* Bulleted list
+* Numbered list
+* Link
+
+The RTE can be configured to hide options or show additional options depending on authors' needs. Please see the document [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more information.
+
 ### Editing Media {#edit-media}
 
 You can view its details in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
