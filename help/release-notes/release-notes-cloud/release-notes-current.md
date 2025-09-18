@@ -126,14 +126,12 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ### New Features in Release Management {#new-features-release-management}
 
-[](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/2025.9.0-release/help/release-notes/release-notes-cloud/release-notes-current.md#new-features-in-release-management)
-
 **Pause Automatic Maintenance Updates**
 
 Go‑live days, live events, peak sales—these moments can’t break. Our new self‑service features stop automatic mainteanance updates when it matters, so your teams stay focused.
 
-- Quiet Hours: Block automatic maintenance during set times each day. Ideal for working hours, nightly runs or morning cutovers.
-- Update‑Free Period: Block automatic maintenance for a full week. Use it for launches, promos, or yearly freezes.
+* Quiet Hours: Block automatic maintenance during set times each day. Ideal for working hours, nightly runs or morning cutovers.
+* Update‑Free Period: Block automatic maintenance for a full week. Use it for launches, promos, or yearly freezes.
 
 >[!NOTE]
 >
