@@ -5,7 +5,7 @@ role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 ---
 
-# Use vanity URLs?{#vanity-urls}
+# Use vanity URLs{#vanity-urls}
 
 Use [!DNL Dynamic Media OpenAPI capabilities] to transform your long asset delivery URLs into short, branded vanity URLs. Standard asset delivery URLs include system-generated asset UUIDs that make the delivery URL complex, hard to remember and share. Replace these asset UUIDs with simple identifiers (Vanity IDs) to generate a vanity URL. A vanity URL is a short, clean, and readable version of your complex delivery URL.
 
@@ -37,7 +37,7 @@ In the above example, `43341ab1-4086-44d2-b7ce-ee546c35613b` is the UUID.
 
 The vanity URLs includes a vanity identifier in place of asset UUID and follows the following format.
 
-***Format:*** `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/<seoname>.<format>`
+***Format:*** `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/as/<seoname>.<format>`
 
 The vanity URL includes `avid` (*actual vanity identifier*) after `urn:` and your vanity ID between `urn:avid:aem:` and `/<seoname>.<format>`.
 
@@ -92,7 +92,9 @@ Execute the following to set up the vanity ID in your asset's metadata form:
    
      >[!NOTE]
      >
-     > A single asset can have multiple vanity IDs. [Contact Adobe support](https://helpx.adobe.com/in/contact.html) and raise a request for generating the required vanity IDs.
+     > * Use unique vanity IDs for each asset. Always verify that assets sharing the same metadata form have unique vanity IDs for DM with OpenAPI delivery through vanity URLs. If two assets share the same vanity ID, DM with OpenAPI delivers the asset that most recently received that ID, overriding the previous entitlement of the ID to another asset.
+     >
+     > * A single asset can have multiple vanity IDs. [Contact Adobe support](https://helpx.adobe.com/in/contact.html) and raise a request for generating the required vanity IDs.
 
 After setting up your vanity ID in the asset metadata form, [map this metadata field to the system's delivery mechanism](#map-cloud-manager-environment-variable).
 
@@ -132,7 +134,7 @@ See the following vanity URL and its customizable components:
 
 **Vanity URL format:**
 
-`https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/<seoname>.<format>`
+`https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/as/<seoname>.<format>`
 
 <table style="border-collapse:collapse; table-layout:auto; width:auto;">
 <tr valign="top">
@@ -153,14 +155,14 @@ See the following vanity URL and its customizable components:
 <div style="text-align:center;"><a href="#create-vanity-urls">Create vanity ID</a></div>
 </td>
 <td style="padding:0 4px; white-space:nowrap; text-align:left; width:1%;">
-<code>/&lt;seoname&gt;.&lt;format&gt;</code>
+<code>/as/&lt;seoname&gt;.&lt;format&gt;</code>
 </td>
 </tr>
 </table>
 
 **Vanity URL format with customized DNS and CDN names:**
 
-`https://<custom-dns>` `/` `dam/assets/` `<vanity-id>` `/<seoname>.<format>`
+`https://<custom-dns>` `/` `dam/assets/` `<vanity-id>` `/as/<seoname>.<format>`
 
 **Customizable URL Components**
 
