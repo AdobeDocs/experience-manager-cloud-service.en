@@ -158,7 +158,7 @@ See the following vanity URL and its customizable components:
 <code>/&lt;seoname&gt;.&lt;format&gt;</code>
 </td>
 </tr>
-</table>
+</table>.
 
 **Vanity URL format with customized DNS and CDN names:**
 
