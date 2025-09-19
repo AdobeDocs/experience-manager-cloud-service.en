@@ -227,7 +227,6 @@ Edge computing allows you to execute JavaScript at the CDN layer, bringing data 
 
 Common use cases include:
 
-* Authenticating users with an identity provider before granting access to content
 * Personalizing content based on geolocation, device type, or user attributes
 * Acting as middleware between the CDN and your origin
 * Reformatting responses from third-party APIs (and perhaps aggregating multiple API responses) before delivering them to the browser
