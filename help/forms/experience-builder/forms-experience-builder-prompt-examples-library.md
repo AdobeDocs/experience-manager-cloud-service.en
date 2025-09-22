@@ -5,9 +5,8 @@ hide: yes
 index: no
 hidefromtoc: yes
 role: Admin, Architect, Developer
-exl-id: c8f64082-a23f-4919-ad66-042faad77d31
+exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
 ---
-
 # Forms Experience Builder - Prompt Library
 
 Collection of reusable prompt patterns and examples optimized for Forms Experience Builder. This streamlined library focuses on the two core creation methods: Create from Scratch and Import & Convert, with enhanced support for LLM-powered smart fields and brand consistency.

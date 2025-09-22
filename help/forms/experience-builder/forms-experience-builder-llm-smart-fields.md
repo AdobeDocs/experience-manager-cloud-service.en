@@ -5,8 +5,8 @@ hide: yes
 index: no
 hidefromtoc: yes
 role: Admin, Architect, Developer
+exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
 ---
-
 # LLM-enhanced smart fields in Forms Experience Builder {#llm-enhanced-smart-fields}
 
 Forms Experience Builder leverages the power of Large Language Models (LLMs) to create intelligent form fields with pre-populated options that draw from comprehensive knowledge bases. This capability eliminates the need to manually research and input extensive data sets, dramatically improving form creation efficiency and accuracy.
@@ -290,4 +290,3 @@ Combine LLM knowledge with your organization's data:
 * [AI-powered form creation](forms-experience-builder-prompt-examples-library.md)
 * [Rule creation and business logic](forms-experience-builder-prompt-examples-library.md#rule-creation--business-logic)
 * [Form submission and integration](form-submission-integration.md)
-
