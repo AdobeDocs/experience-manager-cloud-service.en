@@ -34,7 +34,7 @@ Maximize your benefits from Adobe by accessing and consuming your Edge Delivery 
 
 * [Consume your license on your chosen program](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md), or [update other programs](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md), or both.
 * Take advantage of [API-first](https://developer.adobe.com/experience-cloud/experience-manager-apis/) benefits for performing CRUD (Create, Read, Update, Delete) operations.
-* [Access SLA reporting](/help/implementing/cloud-manager/sla-reporting.md) (*coming soon*)
+* [Access SLA reporting](/help/implementing/cloud-manager/reports/report-sla.md)
 * [Gain access to Adobe support](/help/edge/overview.md#support-ticket) for your registered production programs.
 
 If you have an Edge Delivery Services (EDS) license, you can use an [Adobe managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) for your Edge Delivery site and take advantage of features like self-service CDN management and automatic renewal of DV certificates every three months, unless it is deleted. 

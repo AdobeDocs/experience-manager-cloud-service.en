@@ -100,11 +100,11 @@ A full-stack code pipeline simultaneously deploys back-end and front-end code bu
   
 1. Provide paths to be included in the Experience Audit.
 
-   * See [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration) for details.
+   * See [Experience Audit Testing](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration) for details.
 
 1. Click **Save** to save your pipeline.
 
-When the pipeline runs, paths configured for the Experience Audit are submitted and evaluated based on performance, accessibility, SEO, best practices, and PWA tests. For more details, see [Understanding Experience Audit Results](/help/implementing/cloud-manager/experience-audit-dashboard.md).
+When the pipeline runs, paths configured for the Experience Audit are submitted and evaluated based on performance, accessibility, SEO, best practices, and PWA tests. For more details, see [Understanding Experience Audit Results](/help/implementing/cloud-manager/reports/report-experience-audit.md).
 
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 
