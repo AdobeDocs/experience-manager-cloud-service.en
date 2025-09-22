@@ -28,7 +28,7 @@ As of now, you cannot create Attribute-based access control rules on your own us
 
 Click **Download Spreadsheet** to download and define rules in a spreadsheet. Create an Adobe support ticket and provide the rules defined in the spreadsheet to Adobe.
 
-[!BADGE Download Spreadsheet]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+[!BADGE Download Spreadsheet]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template.xlsx"}
 
 
 Define rules in the spreadsheet using the guidelines defined in this article.
