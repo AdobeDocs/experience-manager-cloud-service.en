@@ -293,7 +293,7 @@ To combine adjacent substrings:
 
 1. Select the text across adjacent substrings.
 2. Click ![merge substring](/help/assets/assets/merge.svg).
-![merge identical substrings](/help/assets/assets/merge-substring.png)
+![merge identical substrings](/help/assets/assets/merge-substrings.png)
 
    >[!NOTE]
    >
