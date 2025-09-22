@@ -5,8 +5,8 @@ hide: yes
 index: no
 hidefromtoc: yes
 role: Admin, Architect, Developer
+exl-id: c4f838bc-a001-48e7-afaa-c2ff9034f5d4
 ---
-
 # Getting started with Forms Experience Builder {#getting-started-forms-experience-builder}
 
 Forms Experience Builder revolutionizes form creation by leveraging AI to transform natural language descriptions into fully functional digital forms. This guide will help you create your first form and understand the core concepts that make Forms Experience Builder powerful.
