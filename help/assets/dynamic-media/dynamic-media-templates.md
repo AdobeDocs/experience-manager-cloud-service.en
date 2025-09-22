@@ -171,7 +171,7 @@ Execute these steps to add text layers to the canvas:
 
 See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) to reposition, resize, rotate or delete the layer. Format your text to the required font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **[!UICONTROL Text]** section of the panel. The **[!UICONTROL Font Family]** field displays [!UICONTROL Adobe Sans F2] default font, the reprocessed existing fonts and the newly uploaded and published fonts. See point 5 in the [Before you begin](#prerequisites-for-dynamic-media-wysiwyg-template) section above for more information.
 
-[Apply formatting to substrings to style and control specific parts of text independently.](#substring-parameterisation)
+[Apply formatting to substrings to style and control specific parts of text independently.](#apply-formatting-to-substring)
 
 #### Apply formatting to substring{#apply-formatting-to-substring}
 
@@ -183,7 +183,7 @@ Execute the following steps to apply formatting to substrings in a text layer:
    * **Font Properties**: Change font family, color, and size using the respective panel options.
    ![format-substring](/help/assets/assets/format-substring.png)
 
-[Add parameters to substrings to format them dynamically using the template's delivery URL](#substring-formatting-parameter).
+[Add parameters to substrings to format them dynamically using the template's delivery URL](#substring-parameterisation).
 
 ### Add shapes to the canvas {#add-shapes-to-the-canvas}
 
@@ -274,7 +274,7 @@ Include the following parameters to edit the text, its font, color and size from
 
 ##### Parameterize substrings{#substring-parameterisation}
 
-In the **[!UICONTROL Parameters]** panel, scroll to the **[!UICONTROL Substring Parameters]** section. This section includes a **substring selector** that displays all substrings with different formatting available within the selected text layer from the canavs. Select a substring in the substring selector to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
+In the **[!UICONTROL Parameters]** panel, scroll to the **[!UICONTROL Substring Parameters]** section. This section includes a **substring selector** that displays all substrings with different formatting available within the selected text layer from the canvas. Select a substring in the substring selector to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
 
 Use the substring selector to [split substrings](#split-substring) to parameterize individual parts or [merge substrings](#merge-substring) to apply uniform parameters.
 
