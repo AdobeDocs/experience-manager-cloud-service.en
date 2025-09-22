@@ -274,7 +274,7 @@ Include the following parameters to edit the text, its font, color and size from
 
 ##### Parameterize substrings{#substring-parameterisation}
 
-In the **[!UICONTROL Parameters]** panel, scroll to the **[!UICONTROL Substring Parameters]** section. This section displays a **substring selector** box that displays all substrings within the selected text layer that have different formatting. The substring selector allows you to select a substring to parameterize it, split it, or select adjacent substrings to merge them.
+In the **[!UICONTROL Parameters]** panel, scroll to the **[!UICONTROL Substring Parameters]** section. This section displays a **substring selector** box that displays all substrings available within the selected text layer that have different formatting. The substring selector allows you to select a substring to parameterize it, split it, or select adjacent substrings to merge them.
 
 Select a substring to [parameterize its text, font family, font size, and color](#text-formatting-parameters). You can [split substrings](#split-substring) to parameterize its individual parts or [merge substrings](#merge-substring) to apply uniform parameters.
 
