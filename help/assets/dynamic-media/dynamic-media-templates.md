@@ -181,6 +181,7 @@ Execute the following steps to apply formatting to substrings in a text layer:
 2. Apply formatting using the [properties panel](#properties-panel). Following are the available formatting options:
    * **Font Style**: Bold, italic, underline, subscript, and superscript using the **[!UICONTROL Font Style]** option.
    * **Font Properties**: Change font family, color, and size using the respective panel options.
+   ![format-substring](/help/assets/assets/format-substring.png)
 
 [Add parameters to substrings to format them dynamically using the template's delivery URL](#substring-formatting-parameter).
 
