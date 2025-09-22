@@ -50,7 +50,7 @@ Experience Audit is available by default for production pipelines. It can be opt
 
 1. To use Experience Audit when adding or editing a non-production pipeline, select the **Experience Audit** checkbox. You can find this option on the **Source Code** tab.
 
-   ![Enabling Experience Audit](assets/experience-audit-enable.jpg)
+   ![Enabling Experience Audit](/help/implementing/cloud-manager/reports/assets/experience-audit-enable.jpg)
 
    * Necessary only for non-production pipelines.
    * The **Experience Audit** tab appears when the checkbox is selected.
@@ -60,11 +60,11 @@ Experience Audit is available by default for production pipelines. It can be opt
    * Page paths must start with `/` and are relative to your site.
    * For example, if your site is `wknd.site` and would like to include `https://wknd.site/us/en/about-us.html` in the Experience Audit, enter the path `/us/en/about-us.html`.
 
-   ![Defining a path for the Experience Audit](assets/experience-audit-add-page.png)
+   ![Defining a path for the Experience Audit](/help/implementing/cloud-manager/reports/assets/experience-audit-add-page.png)
 
 1. Click **Add Page** and the path is auto-completed with the address of your environment and added to the table of paths.
 
-   ![Saving path to the table](assets/experience-audit-page-added.png)
+   ![Saving path to the table](/help/implementing/cloud-manager/reports/assets/experience-audit-page-added.png)
 
 1. Continue to add paths as necessary by repeating the previous two steps.
 
@@ -77,7 +77,7 @@ Experience Audit is available by default for production pipelines. It can be opt
 
 The results of the Experience Audit are presented in the **Stage testing** phase of the production pipeline through the [production pipeline execution page](/help/implementing/cloud-manager/deploy-code.md).
 
-![Dashboard in the pipeline](assets/experience-audit-dashboard.png)
+![Dashboard in the pipeline](/help/implementing/cloud-manager/reports/assets/experience-audit-dashboard.png)
 
 Experience Audit provides the median Google Lighthouse scores for the [configured pages](#configuration) and the difference in score to the previous scan.
 
@@ -100,7 +100,7 @@ You can access the full audit results by clicking the **Reports** tab in the Clo
 
 Click **View slowest pages** to open the **Slowest 5 pages** dialog box. The five lowest-performing pages that you [configured to audit](#configuration) are shown.
 
-![Slowest five](assets/experience-audit-slowest-five.png)
+![Slowest five](/help/implementing/cloud-manager/reports/assets/experience-audit-slowest-five.png)
 
 Cloud Manager breaks down the scores by **Performance**, **Accessibility**, **Best Practices**, and **SEO**, showing the deviation of each metric from the previous audit.
 
@@ -118,7 +118,7 @@ You can view the full Experience Audit report by doing the following:
 
 The **Reports** tab of Cloud Manager is opened, showing the **Experience Audit**.
 
-![Experience Audit reports](assets/experience-audit-reports.png)
+![Experience Audit reports](/help/implementing/cloud-manager/reports/assets/experience-audit-reports.png)
 
 The report is split into two areas:
 
@@ -131,35 +131,35 @@ By default, the selected view for **Page scores &mdash; trend** is **median scor
 
 You can choose to view the trends for specific Lighthouse categories by clicking the category name in the legend.
 
-![Trend Selectable](assets/experience-audit-trend-selectable.png)
+![Trend Selectable](/help/implementing/cloud-manager/reports/assets/experience-audit-trend-selectable.png)
 
 Use the **Select** drop-down at the top of the chart to select page-specific details, and the **View** and **Trigger** drop-downs at the bottom to choose different time frames and the trigger type, respectively.
 
 The **View** drop-down offers the possibility to select a preset time frame, or a custom interval for a more specific view.
 
-![Trend View](assets/experience-audit-trend-view.png)
+![Trend View](/help/implementing/cloud-manager/reports/assets/experience-audit-trend-view.png)
 
 When moving the mouse over the chart, a tooltip displays the values for the Google Lighthouse categories at specific points in time.
 
-![Trend details](assets/experience-audit-trend-details.png)
+![Trend details](/help/implementing/cloud-manager/reports/assets/experience-audit-trend-details.png)
 
 If you click on the chart at a point in time, a pop-up opens with detail of that scan. Click the **open experience audit scan** to load that scan results into the **[Experience Audit scan results](#scan-results)** section.
 
-![Select different scan](assets/experience-audit-open-scan.png)
+![Select different scan](/help/implementing/cloud-manager/reports/assets/experience-audit-open-scan.png)
 
 #### Experience Audit scan results {#scan-results}
 
 The **Experience Audit scan results** section gives details of scores on all scanned pages. Use the **Prev** and **Next** buttons to page through the results and choose on how many the display should paginate.
 
-![Scanned pages](assets/experience-audit-scanned-pages.png)
+![Scanned pages](/help/implementing/cloud-manager/reports/assets/experience-audit-scanned-pages.png)
 
 Click the link of a particular page updates the **Select** filter of the [**Page scores &mdash; trend** section](#trend) and shows the **Raw reports** tab gives you scores for every audit of the page. Click the report date in the **Lighthouse Report** column to retrieve a JSON file of the raw data.
 
-![Raw report](assets/experience-audit-raw-reports.png)
+![Raw report](/help/implementing/cloud-manager/reports/assets/experience-audit-raw-reports.png)
 
 A new tab opens in your browser, directing you to `https://googlechrome.github.io/lighthouse/viewer/`. It automatically loads a signed URL containing the Lighthouse raw JSON report for the selected page, allowing for detailed inspection.
 
-![Viewing raw report](assets/experience-audit-view-raw-report.png)
+![Viewing raw report](/help/implementing/cloud-manager/reports/assets/experience-audit-view-raw-report.png)
 
 ## On-demand scan audit reports {#on-demand}
 
@@ -167,11 +167,11 @@ Besides being run during pipeline execution, Experience Audit reports can also b
 
 To run an on-demand scan, navigate to the **Reports** tab to see the complete audit report and then click the **Run scan** button. 
 
-![On-demand scanning](assets/experience-audit-on-demand.png)
+![On-demand scanning](/help/implementing/cloud-manager/reports/assets/experience-audit-on-demand.png)
 
 The **Run scan** button becomes unavailable and is badged with a clock icon when an on-demand scan is already running.
 
-![On-demand scan running](assets/experience-audit-on-demand-running.png)
+![On-demand scan running](/help/implementing/cloud-manager/reports/assets/experience-audit-on-demand-running.png)
 
 On-demand scans trigger an Experience Audit for the latest 25 [configured pages](#configuration) and typically finish in a few minutes.
 
@@ -179,7 +179,7 @@ Upon completion, the scores chart is automatically updated, and you can inspect 
 
 You can filter the scores chart based on the trigger type by using the **Trigger** selector. 
 
-![Trigger filter](assets/experience-audit-on-demand-trigger.png)
+![Trigger filter](/help/implementing/cloud-manager/reports/assets/experience-audit-on-demand-trigger.png)
 
 >[!NOTE]
 >
@@ -191,11 +191,11 @@ If [pages you configured](#configuration) to be audited were not available or th
 
 The pipeline shows an expandable error section to view the relative URL paths it could not access.
 
-![Issues encountered by Experience Audit](assets/experience-audit-issues.png)
+![Issues encountered by Experience Audit](/help/implementing/cloud-manager/reports/assets/experience-audit-issues.png)
 
 If viewing the full report, details are shown in the **[Experience Audit scan results](#results)** section, which is also expandable.
 
-![Full report issues](assets/experience-audit-issues-report.png)
+![Full report issues](/help/implementing/cloud-manager/reports/assets/experience-audit-issues-report.png)
 
 Some reasons that the pages might not be available are that:
 
