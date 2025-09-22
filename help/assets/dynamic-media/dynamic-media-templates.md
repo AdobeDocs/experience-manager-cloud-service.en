@@ -171,7 +171,7 @@ Execute these steps to add text layers to the canvas:
 
 See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) to reposition, resize, rotate or delete the layer. Format your text to the required font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **[!UICONTROL Text]** section of the panel. The **[!UICONTROL Font Family]** field displays [!UICONTROL Adobe Sans F2] default font, the reprocessed existing fonts and the newly uploaded and published fonts. See point 5 in the [Before you begin](#prerequisites-for-dynamic-media-wysiwyg-template) section above for more information.
 
-[Apply formatting to substrings to style and control specific parts of text independently.](#apply-formatting-to-substring)
+[Apply formatting to substrings to style and control specific parts of text independently.](#substring-parameterisation)
 
 #### Apply formatting to substring{#apply-formatting-to-substring}
 
@@ -273,7 +273,7 @@ Include the following parameters to edit the text, its font, color and size from
 
 ##### Parameterize substrings{#substring-parameterisation}
 
-In the **[!UICONTROL Parameters]** panel, scroll to the **[!UICONTROL Substring Parameters]** section. Select a substring to parameterize it. You can [split substrings](#split-substring) to parameterize its individual parts or [merge substrings](#merge-substring) to apply uniform parameters.
+In the **[!UICONTROL Parameters]** panel, scroll to the **[!UICONTROL Substring Parameters]** section. Select a substring to [parameterize its text, font family, font size, and color](#text-formatting-parameters). You can [split substrings](#split-substring) to parameterize its individual parts or [merge substrings](#merge-substring) to apply uniform parameters.
 
 ###### Split substring{#split-substring}
 
