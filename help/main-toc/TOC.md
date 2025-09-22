@@ -1109,11 +1109,7 @@ user-guide-title: AEM as a Cloud Service
     + [Overview](/help/edge/docs/forms/overview.md)
     
     + WYSIWYG Authoring {#universal-editor}
-      + Cascading Drop Down {#cascading-drop-down-list}
-        + [Introduction](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
-        + [Create API Integration](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
-        + [Create Form](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
-        + [Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+      + [Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + [Navigate the Universal Editor Interface for AEM Forms](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
       + [Getting Started with Edge Delivery Services for AEM Forms using Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
       + [Create and Publish Adaptive Forms with Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)
@@ -1129,7 +1125,11 @@ user-guide-title: AEM as a Cloud Service
       + [Publish Adaptive Forms with Edge Delivery Services](/help/edge/docs/forms/universal-editor/publish-forms.md)
       + [Create Custom Components for an EDS Form](/help/edge/docs/forms/universal-editor/create-custom-component.md)
       + [Troubleshooting 403 Forbidden Errors in Edge Delivery Services Form Submission](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
-      + [Create Salesforce Lead Object using API Integration](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)   
+      + [Create Salesforce Lead Object using API Integration](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)  
+      + Cascading Drop Down {#cascading-drop-down-list}
+        + [Introduction](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
+        + [Create API Integration](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
+        + [Create Form](/help/edge/docs/forms/cascading-drop-down-list/create-form.md) 
     + Document-based authoring {#getting-started-edge-delivery-services-forms}
       + [Build Your First Form: Quick Start Guide with Google Sheets and Excel](/help/edge/docs/forms/tutorial.md)
       + [How to Create Forms Using Google Sheets or Excel: Step-by-Step Guide](/help/edge/docs/forms/create-forms.md)
