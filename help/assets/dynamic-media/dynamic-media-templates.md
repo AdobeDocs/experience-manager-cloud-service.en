@@ -274,30 +274,32 @@ Include the following parameters to edit the text, its font, color and size from
 
 ##### Parameterize substrings{#substring-parameterisation}
 
-In the **[!UICONTROL Parameters]** panel, scroll to the **[!UICONTROL Substring Parameters]** section. This section includes a **substring selector** box that displays all substrings available within the selected text layer that have different formatting. The substring selector allows you to select a substring to parameterize it, split it, or select adjacent substrings to merge them.
+In the **[!UICONTROL Parameters]** panel, scroll to the **[!UICONTROL Substring Parameters]** section. This section includes a **substring selector** that displays all substrings with different formatting available within the selected text layer from the canavs. Select a substring in the substring selector to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
 
-Select a substring to [parameterize its text, font family, font size, and color](#text-formatting-parameters). You can [split substrings](#split-substring) to parameterize its individual parts or [merge substrings](#merge-substring) to apply uniform parameters.
+Use the substring selector to [split substrings](#split-substring) to parameterize individual parts or [merge substrings](#merge-substring) to apply uniform parameters.
 
 ###### Split substring{#split-substring}
 
 To split a substring into separate parts:
 
-1. Select the text within the substring to split.
+1. In the substring selector, select the text within the substring to split.
 2. Click ![split substring](/help/assets/assets/unmerge.svg).
 3. Select each new substring to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
+
 ![split substring](/help/assets/assets/split-substring.png)
 
 ###### Merge substring{#merge-substring}
 
 To combine adjacent substrings:
 
-1. Select the text across adjacent substrings.
+1. In the substring selector, select text across adjacent substrings.
 2. Click ![merge substring](/help/assets/assets/merge.svg).
+
 ![merge identical substrings](/help/assets/assets/merge-substrings.png)
 
-   >[!NOTE]
-   >
-   > Only substrings with identical formatting can be merged.
+>[!NOTE]
+>
+>Only substrings with identical formatting can be merged.
 
 ### Group layers to control their visibility simultaneously{#group-layers}
 
@@ -417,68 +419,3 @@ Watch this step by step video to learn how to add a CTA link to a template layer
 
 1. Explore [[!DNL Dynamic Media] and its capabilities](/help/assets/dynamic-media/dynamic-media.md)
 1. Explore [[!DNL Dynamic Media] with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)
-
-
----
-
-
-
-
-**Recommended options:**
-1. **Substring list** - Simple and descriptive
-2. **Substring selector** - Indicates its interactive purpose
-3. **Substring overview** - Shows it provides a summary view
-4. **Formatted substrings panel** - Descriptive of its contents
-
-**More technical options:**
-5. **Substring inventory** - Catalog-like reference
-6. **Substring browser** - Browsable collection
-7. **Substring viewer** - Display-focused name
-
-**Most user-friendly:**
-"Substring list" or "Substring selector" would work best for public documentation as they're:
-- Clear and intuitive
-- Action-oriented (especially "selector")
-- Consistent with common UI terminology
-
-I'd recommend **"Substring list"** as it's the most straightforward and universally understood term.
-
-
-Based on your description, a **substring selector** would:
-
-**Primary functions:**
-1. **Display** all substrings on the canvas that have different formatting
-2. **Allow selection** of individual substrings for editing/parameterization
-3. **Provide visual overview** of all formatted text segments in one place
-
-**Typical user actions:**
-- Click on a substring in the selector to select it on the canvas
-- View which parts of text have unique formatting
-- Navigate between different formatted text segments
-- Access parameterization options for each substring
-
-**Benefits:**
-- Saves time hunting for formatted text on the canvas
-- Shows formatting hierarchy at a glance
-- Provides centralized access to all text segments
-- Makes it easier to manage complex text layouts
-
-So the "selector" part refers to its ability to let users **choose/select** which substring they want to work with, while also serving as a **visual index** of all the differently formatted text pieces.
-
-Would "Substring picker" or "Substring chooser" be clearer alternatives, or does "selector" work well for your documentation?
-
-The parameters panel Displays a **substring selector** box. The box includes all the substrings within the selected text layer from the canvas that have different formatting. The substring selector box allows to select a substring to paramerize it, split it , and select adjecent substrings to merge. 
-
-
-
-
-"The parameters panel displays a **substring selector** box that includes all substrings within the selected text layer that have different formatting. The substring selector allows you to select a substring to parameterize it, split it, or select adjacent substrings to merge them."
-
-**Changes made:**
-- Fixed "Displays" to "displays" (consistent capitalization)
-- Removed "from the canvas" (redundant - text layers are understood to be on canvas)
-- Fixed "paramerize" to "parameterize" (spelling)
-- Fixed "adjecent" to "adjacent" (spelling)
-- Added "you to" for clarity and consistency with technical writing
-- Added "them" at the end for grammatical completeness
-- Improved sentence flow and readability
