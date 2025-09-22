@@ -106,7 +106,7 @@ On the Health Assessment page, review the **Past Assessments** section for the f
 * Download a PDF for any assessment.
 * Sort by date, issue count, or environment.
 
-![Review past assessments](//help/implementing/cloud-manager/reports/assets/ha-past-assessments.png)
+![Review past assessments](/help/implementing/cloud-manager/reports/assets/ha-past-assessments.png)
 
 * To the right of the **Past Assessment** heading, click ![Chevron down or drop-down menu to selected a different environment](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) to sort past assessments by date.
 * To the far right of an assessment, click ![Ellipsis icon or More icon](https://spectrum.adobe.com/static/icons/ui_18/More.svg), then click **View details** or **Download**.
