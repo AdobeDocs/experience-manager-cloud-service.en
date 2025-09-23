@@ -42,10 +42,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### New features in Experience Manager Sites {#enhancements-sites}
 
-* In Content Fragments Admin UI you can now view the workflow status for content fragments, with detailed information about past and currently running workflows for a selected fragment.
-* The performance for opening content fragments in the new content fragment editor has been increased by 25% in common scenarios by opening fragments via UUID instead of by path.
-* When copying content fragments with referenced fragments, copies of the referenced fragments are now stored in the same location as the parent fragment copy. 
-* You can now configure a custom workspace in the folder settings, to export the content fragments to the configured workspace in Adobe Target.
+* The Content Model Editor for AEM Content Fragments has been modernized to align with other React Spectrum–based interfaces in AEM. Its user interface implementation and extensibility model are now consistent with the Content Fragment Editor and Universal Editor. In addition, conditional validation and the ability to show or hide fragment field values have been enhanced. The new Model Editor is default when opened from the new Content Model Admin UI. Opening a content model in Touch UI opens the Touch UI editor but offers to try out the new editor. 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
