@@ -29,11 +29,14 @@ The following 3-minute, 39-second video delivers a step-by-step walkthrough of A
 
 ## Get access to AI Assistant in AEM{#get-access}
 
-Users must have permission to use AI Assistant in AEM for product knowledge, letting you ask product-related questions in AI Assistant chat. This permission must be enabled.
+To get access to AI Assistant in AEM, customers must have the following:
 
-Users must also have permission to open support tickets, which requires the **Support Admin** role.
+* Permission to use AI Assistant in AEM for Product Knowledge. This permission lets you ask product-related questions in AI Assistant chat. This permission must be enabled.
+* Permission to open support tickets, which requires the **Support Admin** role.
 
-AI Assistant requests in AEM are authenticated through Adobe Identity Management Services (IMS). For details, see the [Adobe Identity Management Services overview](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
+>[!NOTE]
+>
+>AI Assistant requests in AEM are authenticated through Adobe Identity Management Services (IMS). For details, see the [Adobe Identity Management Services overview](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
 
 **To get access to AI Assistant in AEM:**
 
@@ -41,7 +44,7 @@ AI Assistant requests in AEM are authenticated through Adobe Identity Management
 
 1. To use AI Assistant in AEM, permission to access Product Knowledge through the AI Assistant is mandatory. This permission is turned ON by default.
 
-    Your Admin controls who can access Product Knowledge. They must contact Adobe to enable user-level access control. When it is enabled, your Admin can grant user-level access by having them follow the steps in [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md).
+    If you want to control who can access Product Knowledge, send an email to [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) from your email address associated with your Adobe ID. Adobe can enable user-level access control. When it is enabled, your Admin can grant user-level access by following the steps in [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md).
 
 ## Scope {#scope}
 
