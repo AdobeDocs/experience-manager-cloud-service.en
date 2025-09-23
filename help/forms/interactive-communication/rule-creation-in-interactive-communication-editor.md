@@ -1,6 +1,6 @@
 ---
-title: Create an Interactive Communication Fragment
-description: Create Interactive Communication Fragments in AEM Forms to build modular, reusable content blocks that ensure consistency, save time, and support personalized, data-driven communications.
+title: Rule Creation in Interactive Communication Editor
+description: Rule Creation in Interactive Communication Editor allows authors to define dynamic behaviors that make communications interactive and intelligent.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
