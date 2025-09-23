@@ -143,7 +143,8 @@ Key optimization opportunities include:
 * Addressing accessibility compliance issues
 * Streamlining navigation to enhance user experience
 
-With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. --> 
+With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. 
+--> 
   
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -155,8 +156,7 @@ The default client-side library (clientlibs) JavaScript compilation now targets 
 
 Several deprecated APIs are targeting removal on August 31st and thus should no longer be referenced. In early September, Actions Center notifications will be sent if API usage is detected, and after September 25th, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
-<details>
-  <summary>Expand to see the Java API deprecations</summary>
++++ Expand to see the Java API deprecations
 
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
@@ -175,7 +175,7 @@ Several deprecated APIs are targeting removal on August 31st and thus should no 
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
 
-</details>
++++
 
 <!--
 OSGi properties:

@@ -339,4 +339,4 @@ Help us improve the AI Assistant:
 
 ## Related Resources
 
-[AEM Forms AI Assistant - Prompt Library](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+[AEM Forms AI Assistant - Prompt Library](help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
