@@ -44,7 +44,7 @@ See also [Health Assessment patterns](#ha-patterns) for rule definitions and rem
 
         ![Selecting Health Assessment from the ellipsis menu on the Environments page](/help/implementing/cloud-manager/reports/assets/ha-environments-page.png) 
 
-## Run a new report for a selected environment {#run-report}
+## Generate a new assessment for a selected environment {#run-report}
 
 1. [Access the Health Assessment page](#access-health-assessment).
 1. In the upper-right corner of the **Health Assessment** page, confirm the target environment that you are about to assess.
@@ -56,6 +56,8 @@ See also [Health Assessment patterns](#ha-patterns) for rule definitions and rem
     ![Click the Generate new assessment button on the Health Assessment page](/help/implementing/cloud-manager/reports/assets/ha-run-report.png)
 
     While an assessment runs for the selected environment, **Run Report** stays disabled until it finishes.
+
+    ![Assessment report in the middle of running](/help/implementing/cloud-manager/reports/assets/ha-running-report.png)
 
     When the assessment is complete, the report appears on the **Health Assessment** page, in the **Latest Assessment** section.
 
