@@ -8,8 +8,8 @@ feature: Adaptive Forms, Release Information
 hide: yes
 hidefromtoc: yes
 index: no
+exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
 ---
-
 # AEM Forms as a Cloud Service {#aem-forms-platform}
 
 Build, integrate, and optimize digital forms with modular components. AEM Forms provides independent products that work together or standalone to create powerful form experiences for any business need.
