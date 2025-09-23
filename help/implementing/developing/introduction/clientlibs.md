@@ -282,7 +282,7 @@ The pluggable preprocessors allow for flexible usage including:
 
 >[!NOTE]
 >
->By default, AEM uses the GCC Compressor for minifying Javascript.
+>By default, AEM uses the GCC Compressor for minifying Javascript and for transpiling any code to `ECMASCRIPT_2018`.
 
 >[!CAUTION]
 >
