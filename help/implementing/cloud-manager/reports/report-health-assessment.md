@@ -17,7 +17,7 @@ The health assessment service does the following:
 * Analyzes content structures, such as blueprints, live copies, and customer configurations.
 * Detects outdated dependencies, including AEM SDK and third-party libraries.
 * Flags code quality issues, such as incorrect annotations and inefficient patterns.
-* Delivers actionable guidance in dashboards (for example, OASIS).
+* Delivers actionable guidance in dashboards (for example, Action Center).
 * Drives proactive remediation to improve system performance.
 
 Each run lists issues by severity, links to guidance and recommended fixes, and supports a PDF export of the assessment report. You can use the **Latest Assessment** view for the current state and **Past Assessments** to compare runs.
@@ -44,18 +44,18 @@ See also [Health Assessment patterns](#ha-patterns) for rule definitions and rem
 
         ![Selecting Health Assessment from the ellipsis menu on the Environments page](/help/implementing/cloud-manager/reports/assets/ha-environments-page.png) 
 
-## Generate a new assessment for a selected environment {#generate-new-assessment}
+## Run a new report for a selected environment {#run-report}
 
 1. [Access the Health Assessment page](#access-health-assessment).
 1. In the upper-right corner of the **Health Assessment** page, confirm the target environment that you are about to assess.
 
     If the environment is incorrect, click ![Chevron down or drop-down menu to selected a different environment](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) to choose the correct environment from the list.
 
-1. Click **Generate new assessment**.
+1. Click **Run Report**.
 
-    ![Click the Generate new assessment button on the Health Assessment page](/help/implementing/cloud-manager/reports/assets/ha-generate-new-assessment.png)
+    ![Click the Generate new assessment button on the Health Assessment page](/help/implementing/cloud-manager/reports/assets/ha-run-report.png)
 
-    While an assessment runs for the selected environment, **Generate Assessment** stays disabled until it finishes.
+    While an assessment runs for the selected environment, **Run Report** stays disabled until it finishes.
 
     When the assessment is complete, the report appears on the **Health Assessment** page, in the **Latest Assessment** section.
 
