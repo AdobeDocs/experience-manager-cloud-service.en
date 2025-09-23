@@ -1,10 +1,10 @@
 ---
 title: Create API Integration
-description: Create 2 API Integration against two Geonames API. 
+description: Create 2 API Integration against two Geonames API.
 feature: Edge Delivery Services
 role: User
+exl-id: 6dd6efbd-d6b3-4891-a56b-ced94d6b2471
 ---
-
 # Create API Integration
 
 In this tutorial, 2 API integrations are created
