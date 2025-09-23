@@ -8,7 +8,7 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 hide: yes
 hidefromtoc: yes
 index: no
-
+exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
 ---
 # Split stage-only and production-only pipelines {#stage-prod-only}
 
@@ -139,4 +139,3 @@ For a **production-only** pipeline, Cloud Manager displays the source artifacts 
 
 
 ![Artifact details](/help/implementing/cloud-manager/configuring-pipelines/assets/prod-only-pipelines-run.png)
-

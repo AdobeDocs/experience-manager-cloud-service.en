@@ -35,10 +35,6 @@ Configuration of an external repository in Cloud Manager consists of the followi
 
 ## Add an external repository {#add-ext-repo}
 
->[!NOTE]
->
->External repositories cannot be linked to Configuration pipelines.
-
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
 * Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
 
