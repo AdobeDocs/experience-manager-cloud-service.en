@@ -62,7 +62,7 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 
 ### Create a stage-only pipeline {#stage-only}
 
-1. In the **Add Non-Production Pipeline** dialog box, on the **Configuration** tab, select **Deployment Pipeline** field for your pipeline.
+1. In the **Add Non-Production Pipeline** dialog box, on the **Configuration** tab, select the **Deployment Pipeline** field for your pipeline.
 1. In the Non-Productoin Pipeline Name field, enter a free-text name.
 1. Select the desired deployment options, then click **Continue**.
 
@@ -76,11 +76,11 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 
    ![Source Code tab in the Add Non-Production Pipeline dialog box](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-2.png)
 
-1. On the **Experience Audit** tab, the specified Site URL is the publish URL that Cloud Manager audits for page quality. 
+1. On the **Experience Audit** tab, the specified Site URL is the published URL that Cloud Manager audits for page quality. 
 
 1. In the **Page Path** field, specify which pages you want to audit, then click **![Add icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) Add Page**.
 
-   The Experience Audit analyzes each path you add for performance, accessibility, progressive web apps, best practices, SEO, and other quality checks. You can add multiple paths and remove any by clicking ![Cross size 400 icon](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg).
+   The Experience Audit analyzes each path that you add for performance, accessibility, progressive web apps, best practices, SEO, and other quality checks. You can add multiple paths and remove any by clicking ![Cross size 400 icon](https://spectrum.adobe.com/static/icons/ui_18/CrossSize400.svg).
 
    ![Experience Audit tab in the Add Non-Production Pipeline dialog box](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-3.png)
 
@@ -89,13 +89,13 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 
 ### Create a prod-only pipeline {#prod-only}
 
-1. In the **Add Production Only Pipeline** dialog box, in the **Pipeline Name** text field, enter the free-text name of the pipeline.
+1. In the dialog box **Add Production Only Pipeline**, in the **Pipeline Name** text field, enter the free-text name of the pipeline.
 1. In the **Pipeline Name** field, type the name you want.
 1. Under **Production Deployment Options**, select **Pause before deploying to Production**.
 
    This option inserts a manual approval gate right before the production step. The pipeline stops and waits for an approver (such as a Deployment Manager, or a Business Owner) to Approve or Cancel the production deploy. 
    
-   Use this for change control or last-minute checks.
+   Use for change control or last-minute checks.
 
 1. Click **Save** to create the production-only pipeline with these options.
 
@@ -124,7 +124,7 @@ In the execution details, a **Promote Build** button appears after the testing s
 
 ![Stage-only pipeline run](/help/implementing/cloud-manager/configuring-pipelines/assets/stage-only-pipelines-run.png)
 
-When you click **Promote Build**, if a stage-only pipeline exists, a confirmation dialog box opens to start it. Click **Run**. 
+When you click **Promote Build**, a dialog box opens for you to confirm the run of the related production-only pipeline. Click **Run** to start it. 
 
 ![Promote Build - Run Pipeline dialog box](/help/implementing/cloud-manager/configuring-pipelines/assets/promote-build-run.png)
 
