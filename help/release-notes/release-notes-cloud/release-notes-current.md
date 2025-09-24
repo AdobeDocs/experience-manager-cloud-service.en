@@ -62,6 +62,8 @@ Create Vanity URLs for asset delivery in DM with OpenAPI, replacing long system-
 >
 >This feature is available as a Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
+<!--
+
 ### New Features in Content Hub {#new-features-content-hub}
 
 **Mark Collections as Favourites**
@@ -75,6 +77,8 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 >[!NOTE]
 >
 >These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
+-->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -155,7 +159,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 **Pause Automatic Maintenance Updates**
 
-Go‑live days, live events, peak sales—these moments can’t break. [Our new self‑service features](/help/implementing/deploying/quiet-hours-update-free-periods.md) stop automatic mainteanance updates when it matters, so your teams stay focused.
+Go‑live days, live events, peak sales—these moments can't break. [Our new self‑service features](/help/implementing/deploying/quiet-hours-update-free-periods.md) stop automatic mainteanance updates when it matters, so your teams stay focused.
 
 * Quiet Hours: Block automatic maintenance during set times each day. Ideal for working hours, nightly runs or morning cutovers.
 * Update‑Free Period: Block automatic maintenance for a full week. Use it for launches, promos, or yearly freezes.
