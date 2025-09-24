@@ -53,7 +53,7 @@ Use these features in your primary production environment. If you have access to
 
 ![Prod and stage environments](/help/implementing/cloud-manager/assets/experience-hub-prod-stage.png)
 
-Serving as the central hub for Adobe Experience Manager, the Experience Hub page expands to feature additional widgets and actions tailored to each user role. Fully customizable, the page lets you choose the optimal layout for your screen. Widgets can be filtered so that only selected ones appear on the main page, ensuring a personalized experience. 
+Serving as the central hub for Adobe Experience Manager, the Experience Hub page expands to feature additional widgets and actions tailored to each user role (preset). Fully customizable, the page lets you choose the optimal layout for your screen. Widgets can be filtered so that only selected ones appear on the main page, ensuring a personalized experience. 
 
 ![Experience Hub customized](/help/implementing/cloud-manager/assets/experience-hub-custom.png)
 
