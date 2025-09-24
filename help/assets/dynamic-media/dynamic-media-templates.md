@@ -290,7 +290,7 @@ To parameterize part of a substring, detach it to create a separate substring fo
 
 ###### Merge substring{#merge-substring}
 
-Merging substrings removes their existing individual parameters (if parameterised before) and enables you to apply consistent parameters across the entire newly formed substring.
+Merging substrings removes their existing individual parameters and enables you to apply consistent parameters across the entire newly formed substring.
 Execute the following steps to merge two adjacent substrings to apply uniform parameters to the resulting substring:
 
 1. In the substring selector, select text across two adjacent substrings.
