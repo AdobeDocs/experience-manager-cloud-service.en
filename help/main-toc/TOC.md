@@ -833,6 +833,7 @@ user-guide-title: AEM as a Cloud Service
         + [Create an Adaptive Form template based on Core Components](/help/forms/template-editor-core-components.md)
         + [Create an Adaptive Form (Core Components) based on XFA Form templates](/help/forms/create-adaptive-form-using-xfa-templates.md)
         + [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
+        + [Supported HTML markup tags in Document of Record](/help/forms/html-markup-tags-support-in-document-of-record.md)
         + [Use machine translation or human translation to translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
         + [Configuring redirect page or thank you message](/help/forms/configure-redirect-page-or-thank-you-message.md)
         + [Create forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md)
