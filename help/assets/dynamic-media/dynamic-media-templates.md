@@ -178,12 +178,12 @@ See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) t
 You can format specific parts of a string, including substrings and individual letters or groups of letters within substrings. Execute the following steps to format specific parts of a string:
 
 1. Select complete texts in the string or specific portions of the text.
-1. Apply formatting to the selected text or text's portion using the [properties panel](#properties-panel). The following formatting options are applicable to substrings and their parts:
+1. Apply formatting to the selection using the [properties panel](#properties-panel). The following formatting options are applicable to substrings and their parts:
    * **Font Style**: Bold, italic, underline, subscript, and superscript using the **[!UICONTROL Font Style]** option.
    * **Font Properties**: Change font family, color, and size using the respective panel options.
    ![format-substring](/help/assets/assets/format-substring.png)
 
-[Add parameters to substrings to format them dynamically using the template's delivery URL](#substring-parameterisation).
+[Each formatted string part displays as a substring in the substring selector, available within the parameters panel. Add parameters to these formatted parts to format them dynamically using the template's delivery URL](#substring-parameterisation).
 
 ### Add shapes to the canvas {#add-shapes-to-the-canvas}
 
