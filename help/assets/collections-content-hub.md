@@ -19,8 +19,8 @@ A collection refers to a set of assets that can be shared among users. A collect
 * **Download**: Download the assets.
 * **Remove**: Remove specific assets from a collection. 
 * **Delete**: Delete the entire collection. 
-* **Pin/Unpin**:
-* **Favorite**:
+* **Pin/Unpin**: Pin or unpin collection.
+* **Favorite**: Mark collection as favorite.
 
 It helps users to easily access and manage the diverse assets available within [!DNL Content Hub].
 
@@ -165,15 +165,17 @@ Content Hub Administrators can pin collections in Content Hub for quick access. 
 
 1. Browse the Collections which you want to pin or unpin.
 
-1. Click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select [!UICONTROL Pin to quick access]. A confirmation box appears.
+1. Click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Pin to quick access]**. A confirmation box appears.
+
+![pin collection](assets/pin-collection.png)
 
 1. Click **[!UICONTROL Pin]** to confirm.
 
-![pin or unpin collection](assets/confirm-pin-collection.png)
+![Confirm pin collection](assets/confirm-pin-collection.png)
 
-The pinned Collections appear on the top for quick access.
+The pinned Collections appear on the top for quick access. Alternatively, to unpin the collection, click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Unpin]**.
 
-![pin or unpin folder](assets/pinned-collections.png)
+![View pinned collections](assets/pinned-collections.png)
  
 ## Mark Collections as Favourites {#favorite-collection}
 
