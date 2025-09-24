@@ -14,7 +14,7 @@ Experience Hub introduces a centralized starting point for managing content, ass
 
 Watch a quick tour of the reimagined AEM Experience Hub workspace (2 minutes, 19 seconds).
 
->[!VIDEO](https://video.tv.adobe.com/v/3470957?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -53,7 +53,7 @@ Use these features in your primary production environment. If you have access to
 
 ![Prod and stage environments](/help/implementing/cloud-manager/assets/experience-hub-prod-stage.png)
 
-Serving as the central hub for Adobe Experience Manager, the Experience Hub page expands to feature additional widgets and actions tailored to each user role. Fully customizable, the page lets you choose the optimal layout for your screen. Widgets can be filtered so that only selected ones appear on the main page, ensuring a personalized experience. 
+Serving as the central hub for Adobe Experience Manager, the Experience Hub page expands to feature additional widgets and actions tailored to each user role (preset). Fully customizable, the page lets you choose the optimal layout for your screen. Widgets can be filtered so that only selected ones appear on the main page, ensuring a personalized experience. 
 
 ![Experience Hub customized](/help/implementing/cloud-manager/assets/experience-hub-custom.png)
 
