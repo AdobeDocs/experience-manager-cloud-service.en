@@ -283,7 +283,7 @@ Use the substring selector to [split substrings](#split-substring) to parameteri
 To parameterize part of a substring, pull it out to make it a separate substring for individual selection and parameterization.
 Execute the following steps to split a substring into separate substrings:
 
-1. In the substring selector, select the text within a substring.
+1. In the substring selector, select the text within a substring  to separate it.
 1. Click ![split substring](/help/assets/assets/unmerge.svg) to pull it out and make it a separate substring in the **substring selector**. 
 
 ![split substring](/help/assets/assets/split-a-substring.png)
