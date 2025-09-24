@@ -3,9 +3,8 @@ title: Supported HTML markup tags in Document of Record
 description: Reference guide for HTML markup tags now supported in Document of Record generation, including rendering behavior and accessibility considerations
 feature: Adaptive Forms
 role: Developer, User
+exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
 ---
-
-
 # Supported HTML markup tags in Document of Record
 
 ## What this reference covers?
@@ -145,4 +144,3 @@ These tags are not supported and will not render properly:
 - [Creating accessible PDFs](https://www.adobe.com/accessibility/pdf.html)
 - [Rich text best practices in forms](/help/forms/creating-accessible-adaptive-forms.md)
 - [Document structure for accessibility](/help/forms/creating-accessible-adaptive-forms.md)
-
