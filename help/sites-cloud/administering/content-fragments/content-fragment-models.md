@@ -34,22 +34,37 @@ The Content Fragment Model effectively defines the structure of the resulting Co
 
 1. Open the required model for **Edit**; use either the quick action, or select the model and then the action from the toolbar.
 
-   Once open the model editor shows:
-
-    * left: fields already defined
-    * right: **Data Types** available for creating fields (and **Properties** for use once fields have been created)
-
-   >[!NOTE]
-   >
-   >When a field is defined as **Required**, the **Label** indicated in the left pane is marked with an asterix (**&#42;**).
 
    ![Properties](assets/cf-cfmodels-empty-model.png)
 
+   Once open the model editor shows:
+
+   * top: 
+     * **Home** icon
+     * option to toggle between the original and new editor
+     * **Cancel**
+     * **Save**
+
+   * left: **Data Types** available for creating fields
+
+   * middle: fields already defined together with the **Add** option
+
+   * right: using the icons at the far right you can select between:
+
+     * **Properties**: define and view properties for the selected field
+     * **Model details**: show the **Enabled** status, **Model Title**, **Tags**, **Description** and **Preview URL**
+
 1. **To Add a Field**
 
-   * Drag a required data type to the required location for a field:
+   * Either:
 
-     ![Drag data type to create field](assets/cf-cfmodels-create-field.png)
+     * Drag a data type from the left panel to the required location for a field in the middle panel.
+     * Select the **+** icon by a data type to quickly add it to the bottom of the field list.
+     * Select **Add** in the middle panel and then the required data type from the resulting drop down list to add a field to the bottom of the list.
+
+     >[!NOTE]
+     >
+     >**Tab placeholder** fields must always appear above existing fields.
 
    * Once a field has been added to the model, the right panel shows the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. 
 
@@ -66,15 +81,17 @@ The Content Fragment Model effectively defines the structure of the resulting Co
 
      ![Field properties](assets/cf-cfmodels-field-properties.png)
 
+     >[!NOTE]
+     >
+     >When a field is defined as **Required**, the **Label** indicated in the middle pane is marked with an asterix (**&#42;**).
+
 1. **To Remove a Field**
 
-   Select the required field, then select the trash-can icon. You are asked to confirm the action.
+   Select the trash-can icon by the appropriate field in the middle panel.
 
    ![Remove](assets/cf-cfmodels-remove-icon.png)
 
-1. Add all required fields, and define the related properties, as required. For example:
-
-   ![Save](assets/cf-cfmodels-save.png)
+1. Add all required fields, and define the related properties, as required. 
 
 1. Select **Save** to persist the definition.
 
