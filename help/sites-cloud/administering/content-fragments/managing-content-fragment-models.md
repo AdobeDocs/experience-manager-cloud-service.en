@@ -311,7 +311,6 @@ The Content Fragment Models allowed for a folder are resolved as follows:
 * If the inheritance chain does not deliver a result, then look at the **Cloud Services** configuration for that folder (also first directly and then via inheritance).
 * If none of the above deliver any results, then there are no allowed models for that folder.
 
-<!--
 ## Deleting a Content Fragment Model {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
@@ -326,8 +325,7 @@ To delete a Content Fragment model:
 
    >[!NOTE]
    >
-   >If the model is referenced a warning is given, so that you can take appropriate action.
--->
+   >If the model is referenced, a warning is given so that you can take appropriate action.
 
 ## Publishing a Content Fragment Model {#publishing-a-content-fragment-model}
 
@@ -346,7 +344,6 @@ To publish a Content Fragment Model:
 
 1. The workflow to publish the selected models and their references will be started. The published status is then shown in the console. 
 
-<!--
 ## Unpublishing a Content Fragment Model {#unpublishing-a-content-fragment-model}
 
 Content Fragment Models can be unpublished if they are not referenced by any fragments.
@@ -354,17 +351,18 @@ Content Fragment Models can be unpublished if they are not referenced by any fra
 To unpublish a Content Fragment Model:
 
 1. Navigate to, and select your Content Fragment Model.
-1. Select **Unpublish** from the toolbar.
    The published status is indicated in the console. 
 
-If you try to unpublish a model that is currently used by one or more fragments, then an error warning is shown. For example: 
+1. Select **Unpublish** from the toolbar.
 
-![Content Fragment Model error message when unpublishing a model that is in use](assets/cf-cfmodels-unpublish-error.png)
+1. In the Unpublish dialog select the **Destination**:
 
-The message suggests that you check the [References](/help/sites-cloud/authoring/basic-handling.md#references) panel to investigate further:
+   * **Publish service**
+   * **Preview service**
 
-![Content Fragment Model in References](assets/cf-cfmodels-references.png)
--->
+1. The workflow to unpublish the selected models and their references will be started. The unpublished status is then shown in the console. 
+
+If you try to unpublish a model that is currently used by one or more fragments, then an error warning is shown. The message suggests that you check the [References](/help/sites-cloud/authoring/basic-handling.md#references) panel to investigate further:
 
 ## Locked Content Fragment Models {#locked-content-fragment-models}
 
