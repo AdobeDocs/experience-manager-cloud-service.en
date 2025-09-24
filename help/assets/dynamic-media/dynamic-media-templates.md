@@ -274,19 +274,20 @@ Include the following parameters to edit the text, its font, color and size from
 
 ##### Parameterize substrings{#substring-parameterisation}
 
-In the **[!UICONTROL Parameters]** panel, scroll to the **[!UICONTROL Substring Parameters]** section. This section includes a **substring selector** that displays all substrings with different formatting available within the selected text layer from the canvas. Select a substring in the substring selector to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
+In the **[!UICONTROL Parameters]** panel, scroll to the **[!UICONTROL Substring Parameters]** section. This section includes a **substring selector** that displays all substrings with different formatting available within the selected text layer. Select a substring in the substring selector to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
 
 Use the substring selector to [split substrings](#split-substring) to parameterize its individual parts or [merge substrings](#merge-substring) to apply uniform parameters.
 
 ###### Split substring{#split-substring}
 
-To parameterize part of a substring, detach it to create a separate substring for individual selection and parameterization. Execute the following steps to split a substring into separate parts:
+To parameterize part of a substring, separate it to create a separate substring for individual selection and parameterization.
+Execute the following steps to split a substring into separate substrings:
 
 1. In the substring selector, select the text within the substring to split.
 1. Click ![split substring](/help/assets/assets/unmerge.svg) to separate it from the original substring.
-1. Select the required substring to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
 
 ![split substring](/help/assets/assets/split-a-substring.png)
+You can select the required substring to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
 
 ###### Merge substring{#merge-substring}
 
@@ -296,7 +297,7 @@ Execute the following steps to merge two adjacent substrings to apply uniform pa
 1. In the substring selector, select text across two adjacent substrings.
 1. Click ![merge substring](/help/assets/assets/merge.svg) to merge the substrings.
 ![merge identical substrings](/help/assets/assets/merge-two-substrings.png)
-1. Apply uniform parameters to the newly formed substring.
+You can apply uniform parameters to the newly formed substring.
    >[!NOTE]
    >
    >Only substrings with identical formatting can be merged.
