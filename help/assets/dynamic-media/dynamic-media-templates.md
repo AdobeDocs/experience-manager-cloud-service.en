@@ -177,8 +177,8 @@ See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) t
 
 Execute the following steps to apply formatting to substrings in a text layer:
 
-1. Select the substring to format.
-2. Apply formatting using the [properties panel](#properties-panel). Following are the available formatting options:
+1. Select text within the substring or select the entire substring to format.
+2. Apply formatting using the [properties panel](#properties-panel). The following formatting options are applicable to substrings:
    * **Font Style**: Bold, italic, underline, subscript, and superscript using the **[!UICONTROL Font Style]** option.
    * **Font Properties**: Change font family, color, and size using the respective panel options.
    ![format-substring](/help/assets/assets/format-substring.png)
@@ -276,30 +276,30 @@ Include the following parameters to edit the text, its font, color and size from
 
 In the **[!UICONTROL Parameters]** panel, scroll to the **[!UICONTROL Substring Parameters]** section. This section includes a **substring selector** that displays all substrings with different formatting available within the selected text layer from the canvas. Select a substring in the substring selector to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
 
-Use the substring selector to [split substrings](#split-substring) to parameterize individual parts or [merge substrings](#merge-substring) to apply uniform parameters.
+Use the substring selector to [split substrings](#split-substring) to parameterize its individual parts or [merge substrings](#merge-substring) to apply uniform parameters.
 
 ###### Split substring{#split-substring}
 
-To split a substring into separate parts:
+To parameterize part of a substring, detach it to create a separate substring for individual selection and parameterization. Execute the following steps to split a substring into separate parts:
 
 1. In the substring selector, select the text within the substring to split.
-2. Click ![split substring](/help/assets/assets/unmerge.svg).
-3. Select each new substring to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
+1. Click ![split substring](/help/assets/assets/unmerge.svg) to separate it from the original substring.
+1. Select the required substring to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
 
-![split substring](/help/assets/assets/split-substring.png)
+![split substring](/help/assets/assets/split-a-substring.png)
 
 ###### Merge substring{#merge-substring}
 
-To combine adjacent substrings:
+Merging substrings removes their existing individual parameters (if parameterised before) and enables you to apply consistent parameters across the entire newly formed substring.
+Execute the following steps to merge two adjacent substrings to apply uniform parameters to the resulting substring:
 
-1. In the substring selector, select text across adjacent substrings.
-2. Click ![merge substring](/help/assets/assets/merge.svg).
-
-![merge identical substrings](/help/assets/assets/merge-substrings.png)
-
->[!NOTE]
->
->Only substrings with identical formatting can be merged.
+1. In the substring selector, select text across two adjacent substrings.
+1. Click ![merge substring](/help/assets/assets/merge.svg) to merge the substrings.
+![merge identical substrings](/help/assets/assets/merge-two-substrings.png)
+1. Apply uniform parameters to the newly formed substring.
+   >[!NOTE]
+   >
+   >Only substrings with identical formatting can be merged.
 
 ### Group layers to control their visibility simultaneously{#group-layers}
 
