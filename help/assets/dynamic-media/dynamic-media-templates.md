@@ -173,12 +173,12 @@ See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) t
 
 [Apply formatting to substrings to style and control specific parts of text independently.](#apply-formatting-to-substring)
 
-#### Apply formatting to substring{#apply-formatting-to-substring}
+#### Apply formatting to selective text{#apply-formatting-to-substring}
 
-Execute the following steps to apply formatting to substrings in a text layer:
+You can format specific parts of a string, including substrings and individual letters or groups of letters within substrings. Execute the following steps to format specific parts of a string:
 
-1. Select text within the substring or select the entire substring to format.
-2. Apply formatting using the [properties panel](#properties-panel). The following formatting options are applicable to substrings:
+1. Select complete texts in the string or specific portions of the text.
+1. Apply formatting to the selected text or text's portion using the [properties panel](#properties-panel). The following formatting options are applicable to substrings and their parts:
    * **Font Style**: Bold, italic, underline, subscript, and superscript using the **[!UICONTROL Font Style]** option.
    * **Font Properties**: Change font family, color, and size using the respective panel options.
    ![format-substring](/help/assets/assets/format-substring.png)
