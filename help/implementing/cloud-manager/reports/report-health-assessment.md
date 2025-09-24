@@ -1,15 +1,15 @@
 ---
 title: Health Assessment for Production and Stage Environments
-description: Learn how to use Cloud Manager's Health Assessment to scan AEM environments, run and review assessments, view issue details, export PDFs, and manage past runs.
+description: Learn how to use Cloud Manager's Health Assessment to scan AEM environments, run and review reports, view issue details, export PDFs, and manage past runs.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 
 ---
 
-# Health assessment {#about-health-assessment}
+# Health Assessment {#about-health-assessment}
 
-Health assessment is an automated, non-intrusive scan for Production and Stage environments in Cloud Manager within AEM as a Cloud Service. It evaluates content, code, and configurations to find anti-patterns and departures from best practices, improving security and performance.
+Health Assessment is an automated, non-intrusive scan for Production and Stage environments in Cloud Manager within AEM as a Cloud Service. It evaluates content, code, and configurations to find anti-patterns and departures from best practices, improving security and performance.
 
 The health assessment service does the following:
 
@@ -20,7 +20,7 @@ The health assessment service does the following:
 * Delivers actionable guidance in dashboards (for example, Action Center).
 * Drives proactive remediation to improve system performance.
 
-Each run lists issues by severity, links to guidance and recommended fixes, and supports a PDF export of the assessment report. You can use the **Latest Assessment** view for the current state and **Past Assessments** to compare runs.
+Each run lists issues by severity, links to guidance and recommended fixes, and supports a PDF export of the report. You can use the **Latest Report** view for the current state and **Past Reports** to compare runs.
 
 See also [Health Assessment patterns](#ha-patterns) for rule definitions and remediation details.
 
@@ -33,7 +33,7 @@ See also [Health Assessment patterns](#ha-patterns) for rule definitions and rem
 
     ![Selecting an organization in Cloud Manager](/help/implementing/cloud-manager/reports/assets/ha-org.png)
 
-1. On the **My Programs** console, click the program for which you want to view its health assessment. 
+1. On the **My Programs** console, click the program for which you want to view its report. 
 
 1. Do either one of the following:
     * In the **Environments** card, to the right of an environment name, click ![Ellipsis icon or More icon](https://spectrum.adobe.com/static/icons/ui_18/More.svg), then choose **Health Assessment** from the menu.
@@ -44,7 +44,7 @@ See also [Health Assessment patterns](#ha-patterns) for rule definitions and rem
 
         ![Selecting Health Assessment from the ellipsis menu on the Environments page](/help/implementing/cloud-manager/reports/assets/ha-environments-page.png) 
 
-## Generate a new assessment for a selected environment {#run-report}
+## Run a new report for a selected environment {#run-report}
 
 1. [Access the Health Assessment page](#access-health-assessment).
 1. In the upper-right corner of the **Health Assessment** page, confirm the target environment that you are about to assess.
@@ -53,29 +53,29 @@ See also [Health Assessment patterns](#ha-patterns) for rule definitions and rem
 
 1. Click **Run Report**.
 
-    ![Click the Generate new assessment button on the Health Assessment page](/help/implementing/cloud-manager/reports/assets/ha-run-report.png)
+    ![Click the Generate new report button on the Health Assessment page](/help/implementing/cloud-manager/reports/assets/ha-run-report.png)
 
-    While an assessment runs for the selected environment, **Run Report** stays disabled until it finishes.
+    While a report runs for the selected environment, **Run Report** stays disabled until it finishes.
 
-    ![Assessment report in the middle of running](/help/implementing/cloud-manager/reports/assets/ha-running-report.png)
+    ![Report in the middle of running](/help/implementing/cloud-manager/reports/assets/ha-running-report.png)
 
-    When the assessment is complete, the report appears on the **Health Assessment** page, in the **Latest Assessment** section.
+    When the report is complete, the report appears on the **Health Assessment** page, in the **Latest Report** section.
 
-## View the latest assessment {#view-latest-assessment}
+## View the latest report {#view-latest-report}
 
-* On the **Health Assessment** page, review the **Latest Assessment** section for the following information:
+* On the **Health Assessment** page, review the **Latest report** section for the following information:
 
     * Results from the most recent run.
     * Run date and time.
     * Total issue count.
     * Highlights of top critical issues.
-    * Actions: **[View details](#view-assessment-details)** or **[Download PDF](#download-pdf-assessment)** of all issues.
+    * Actions: **[View details](#view-report-details)** or **[Download PDF](#download-pdf-report)** of all issues.
 
-    ![The Latest Assessment page following the generation of a new assessment for a selected environment](/help/implementing/cloud-manager/reports/assets/ha-latest-assessment-page.png)
+    ![The Latest Assessment page following the generation of a new report for a selected environment](/help/implementing/cloud-manager/reports/assets/ha-latest-report-page.png)
 
-### View the latest assessment details {#view-assessment-details}
+### View the latest report details {#view-report-details}
 
-* On the **Health Assessment** page, to the right of the **Latest Assessment** title, click ![Ellipsis icon or More icon](https://spectrum.adobe.com/static/icons/ui_18/More.svg), then click **View details** or **Download**.
+* On the **Health Assessment** page, to the right of the **Latest Report** title, click ![Ellipsis icon or More icon](https://spectrum.adobe.com/static/icons/ui_18/More.svg), then click **View details** or **Download**.
 
     The **View details** option shows you the following:
     
@@ -90,33 +90,33 @@ See also [Health Assessment patterns](#ha-patterns) for rule definitions and rem
         ![Download PDF of individual issue reports](/help/implementing/cloud-manager/reports/assets/ha-details-page-doc-links.png)
 
 
-### Download PDF of entire assessment {#download-pdf-assessment}
+### Download PDF of entire report {#download-pdf-report}
 
-* Near the upper-right corner of the assessment page, click **Download**.
+* Near the upper-right corner of the report page, click **Download**.
 
-    A ZIP file is generated that contains PDFs for all issues detected in that assessment.
+    A ZIP file is generated that contains PDFs for all issues detected in that report.
 
-    ![Download PDF of all issues found in an assessment](/help/implementing/cloud-manager/reports/assets/ha-download-pdf.png)
+    ![Download PDF of all issues found in a report](/help/implementing/cloud-manager/reports/assets/ha-download-pdf.png)
 
 
-## Review past assessments {#review-past-assessments}
+## Review past reports {#review-past-reports}
 
-On the Health Assessment page, review the **Past Assessments** section for the following information:
+On the **Health Assessment** page, review the **Past Reports** section for the following information:
 
-* View details of any prior assessment.
+* View details of any prior report.
 * View each run's date.
-* Download a PDF for any assessment.
+* Download a PDF for any report.
 * Sort by date, issue count, or environment.
 
-![Review past assessments](/help/implementing/cloud-manager/reports/assets/ha-past-assessments.png)
+![Review past reports](/help/implementing/cloud-manager/reports/assets/ha-past-reports.png)
 
-* To the right of the **Past Assessment** heading, click ![Chevron down or drop-down menu to selected a different environment](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) to sort past assessments by date.
-* To the far right of an assessment, click ![Ellipsis icon or More icon](https://spectrum.adobe.com/static/icons/ui_18/More.svg), then click **View details** or **Download**.
+* To the right of the **Past Reports** heading, click ![Chevron down or drop-down menu to selected a different environment](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) to sort past reports by date.
+* To the far right of a report, click ![Ellipsis icon or More icon](https://spectrum.adobe.com/static/icons/ui_18/More.svg), then click **View details** or **Download**.
 
 
 ## Health Assessment patterns {#ha-patterns}
 
-The following is the full list of anti-patterns and issues that health assessment detects in AEM as a Cloud Service. The table groups items into three types: Content Analysis, Code Analysis, and Cloud Service Optimizer anti-patterns, with an explanation for each.
+The following is the full list of anti-patterns and issues that Health Assessment detects in AEM as a Cloud Service. The table groups items into three types: Content Analysis, Code Analysis, and Cloud Service Optimizer anti-patterns, with an explanation for each.
 
 | Pattern name | Category | Type | Description | Impact | Auto-fixed? |
 | --- | --- | --- | --- | --- | --- |
