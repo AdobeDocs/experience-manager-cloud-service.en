@@ -274,17 +274,17 @@ Include the following parameters to edit the text, its font, color and size from
 
 ##### Parameterize substrings{#substring-parameterisation}
 
-In the **[!UICONTROL Parameters]** panel, scroll to the **[!UICONTROL Substring Parameters]** section. This section includes a **substring selector** that displays all substrings with different formatting available within the selected text layer. Select a substring in the substring selector to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
+In the **[!UICONTROL Parameters]** panel, scroll to the **[!UICONTROL Substring Parameters]** section. This section includes a **substring selector** that displays the parts of the selected text layer (string) that have different formatting. Each formatted string part displays as a substring in the selector. Select a substring to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
 
 Use the substring selector to [split substrings](#split-substring) to parameterize its individual parts or [merge substrings](#merge-substring) to apply uniform parameters.
 
 ###### Split substring{#split-substring}
 
-To parameterize part of a substring, separate it to create a separate substring for individual selection and parameterization.
+To parameterize part of a substring, pull it out to make it a separate substring for individual selection and parameterization.
 Execute the following steps to split a substring into separate substrings:
 
-1. In the substring selector, select the text within the substring to split.
-1. Click ![split substring](/help/assets/assets/unmerge.svg) to separate it from the original substring.
+1. In the substring selector, select the text within a substring.
+1. Click ![split substring](/help/assets/assets/unmerge.svg) to pull it out and make it a separate substring in the **substring selector**. 
 
 ![split substring](/help/assets/assets/split-a-substring.png)
 You can select the required substring to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
