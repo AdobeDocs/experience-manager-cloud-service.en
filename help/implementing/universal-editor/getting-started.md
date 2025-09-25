@@ -63,8 +63,6 @@ data-aue-resource="urn:<referenceName>:<resource>"
 ### Example Connection {#example}
 
 ```html
-<meta name="urn:adobe:aue:system:<referenceName>" content="<protocol>:<url>">
-
 <html>
 <head>
     <meta name="urn:adobe:aue:system:aemconnection" content="aem:https://localhost:4502">
