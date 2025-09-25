@@ -48,8 +48,8 @@ Here you can see that there are three main areas:
 
 * The top toolbar
   * Provides standard AEM functionality
-  * Also shows your IMS organization
-  * Provides various [actions](#actions-unselected)
+  * Shows your IMS organization
+  * Provides various [actions](#actions-unselected), which can [change when you select one, or more, models ](#actions-selected-content-fragment-models) 
 * The left panel
   * Shows the [paths to all configurations](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) listed as folders
   * Here you can hide, or reveal, the folder tree
@@ -91,20 +91,29 @@ The main/right panel (table view) of the console provides a range of information
 * **Status**
   * Information only.
   * Can be used for [Fast Filtering](#fast-filtering)
-* **Modified**
+* **Replication Status**
   * Information only.
+  * Can be used for [Fast Filtering](#fast-filtering).
+* **Preview**
+  * Information only.
+* **Modified At**
+  * Information only.
+  * Can be used for [Fast Filtering](#fast-filtering).
 * **Modified By**
   * Information only.
   * Can be used for [Fast Filtering](#fast-filtering).
 * **Tags**
   * Information only.
-  * Shows all tags related to the model.
+  * Opens a dialog showing all tags related to the model.
   * Can be used for [Fast Filtering](#fast-filtering).
 * **Published At**
   * Information only.
+  * Can be used for [Fast Filtering](#fast-filtering).
 * **Published By**
   * Information only.
   * Can be used for [Fast Filtering](#fast-filtering).
+* **Used By**
+  * Opens a dialog listing the Content Fragments that are based on the model. The list provides links to allow you to directly open fragments.
 
 ## Model Properties {#model-properties}
 
@@ -163,8 +172,9 @@ Certain actions are available from the console - after selecting a folder, but w
 Selecting a specific model opens a toolbar focused on the actions available for that model. You can also select multiple models - the actions available will be adjusted accordingly.
 
 * **[Edit](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)** to define your Content Fragment Model. 
-* **Publish** to either the [Publish](/help/implementing/cloud-manager/manage-environments.md#environment-types) or [Preview](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) tiers.
+* **[Publish](#publishing-a-content-fragment-model)** and **[Unpublish](#unpublishing-a-content-fragment-model)** to either the [Publish](/help/implementing/cloud-manager/manage-environments.md#environment-types) or [Preview](/help/implementing/cloud-manager/manage-environments.md#access-preview-service) tiers.
 * **Lock**/**Unlock** to control whether a user is allowed to modify the Model.
+* **Copy** your model.
 * **[Enable](#enabling-a-content-fragment-model)**/**[Disable](#disabling-a-content-fragment-model)** to control whether a user is allowed to create Content Fragments based on this model.
 
 Selecting a single model also shows the [model properties](#properties) in the right panel. 
@@ -405,7 +415,7 @@ You can manage **Locked** models from either the console, or the model editor:
     If you select **Unlock** a warning is shown, and you must confirm the **Unlock** action.
 
     You can then open the model for editing.
-    
+
   * You can also **Lock** the model afterwards.
   * Republishing the model immediately returns it to **Locked** (READ-ONLY) mode.
 
