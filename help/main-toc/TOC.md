@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2025 {#2025}
+      + [Release Notes for 2025.8.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-8-0.md) 
       + [Release Notes for 2025.7.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-7-0.md) 
       + [Release Notes for 2025.6.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-6-0.md) 
       + [Release Notes for 2025.5.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md) 
@@ -753,6 +754,8 @@ user-guide-title: AEM as a Cloud Service
 + Forms {#forms}
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
+    + [Introduction2](/help/forms/home2.md)
+    + [Introduction3](/help/forms/home3.md)
     + [Top Adobe Experience Manager Forms innovations](/help/forms/latest-innovations.md)
     + [Early Access (EA) capabilities](/help/forms/early-access-ea-features.md)
     + [Notable changes](/help/forms/notable-changes.md)
@@ -831,6 +834,7 @@ user-guide-title: AEM as a Cloud Service
         + [Create an Adaptive Form template based on Core Components](/help/forms/template-editor-core-components.md)
         + [Create an Adaptive Form (Core Components) based on XFA Form templates](/help/forms/create-adaptive-form-using-xfa-templates.md)
         + [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
+        + [Supported HTML markup tags in Document of Record](/help/forms/html-markup-tags-support-in-document-of-record.md)
         + [Use machine translation or human translation to translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
         + [Configuring redirect page or thank you message](/help/forms/configure-redirect-page-or-thank-you-message.md)
         + [Create forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md)
@@ -1109,11 +1113,7 @@ user-guide-title: AEM as a Cloud Service
     + [Overview](/help/edge/docs/forms/overview.md)
     
     + WYSIWYG Authoring {#universal-editor}
-      + Cascading Drop Down {#cascading-drop-down-list}
-        + [Introduction](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
-        + [Create API Integration](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
-        + [Create Form](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
-        + [Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+      + [Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + [Navigate the Universal Editor Interface for AEM Forms](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
       + [Getting Started with Edge Delivery Services for AEM Forms using Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
       + [Create and Publish Adaptive Forms with Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)
@@ -1129,7 +1129,11 @@ user-guide-title: AEM as a Cloud Service
       + [Publish Adaptive Forms with Edge Delivery Services](/help/edge/docs/forms/universal-editor/publish-forms.md)
       + [Create Custom Components for an EDS Form](/help/edge/docs/forms/universal-editor/create-custom-component.md)
       + [Troubleshooting 403 Forbidden Errors in Edge Delivery Services Form Submission](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
-      + [Create Salesforce Lead Object using API Integration](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)   
+      + [Create Salesforce Lead Object using API Integration](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)  
+      + Cascading Drop Down {#cascading-drop-down-list}
+        + [Introduction](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
+        + [Create API Integration](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
+        + [Create Form](/help/edge/docs/forms/cascading-drop-down-list/create-form.md) 
     + Document-based authoring {#getting-started-edge-delivery-services-forms}
       + [Build Your First Form: Quick Start Guide with Google Sheets and Excel](/help/edge/docs/forms/tutorial.md)
       + [How to Create Forms Using Google Sheets or Excel: Step-by-Step Guide](/help/edge/docs/forms/create-forms.md)
