@@ -169,6 +169,13 @@ Go‑live days, live events, peak sales—these moments can't break. [Our new se
 >Available as a Limited Availability feature on September 25th.
 >Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to get it activated on your programs.
 
+### New Release of AEM Developer Tools for Eclipse {#aem-develeper-tools-for-eclipse}
+
+Version 1.4.0 of the AEM Developer Tools for Eclipse has been released. This version adds support for Eclipse IDE 2022-12 or newer and has been validated with the current version (2025-09). The tooling now works with modern versions of the AEM Project Archetype and incorporates improvements from the Sling IDE Tooling 1.3.0.
+
+Install from the [Eclipse Marketplace](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse) and see the [AEM Developer Tools page](https://eclipse.adobe.com) for more details.
+
+
 ### Upcoming Java API Deprecations {#java-api-deprecation}
 
 Several deprecated APIs were marked for removal on August 31st and thus should no longer be referenced. You will receive Actions Center notifications if deprecated API usage is detected in your code, and after October 9th, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
