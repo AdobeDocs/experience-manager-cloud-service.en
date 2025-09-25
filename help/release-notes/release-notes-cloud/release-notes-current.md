@@ -211,7 +211,6 @@ If your environment could not be upgraded due to unsupported dependencies (see t
 
 Note: The runtime version is separate from your code’s build version. While we recommend building with Java 21, Java 11 builds are still accepted for now. A separate deprecation notice for Java 11 builds will be shared in the future.
 
-
 ### Enforcement of AEM Java Logs Configuration Policy {#logconfig-policy}
 
 As noted in the April release notes, AEM Java logs must follow a standard format to ensure reliable monitoring across all customer environments. Custom log configurations—such as changes to log formatting, output files, or default log levels—are no longer supported. Logs must remain directed to the default files, and default log levels for AEM product code must be preserved. See full details in the [Logging article](/help/implementing/developing/introduction/logging.md#configuration-loggers).
@@ -245,11 +244,14 @@ If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-
 
 Separately from Edge Delivery Services, note that earlier this year we released a feature to configure Open ID Connect [for AEM Cloud Service publish tier projects](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md) to secure AEM pages.
 
+<!--
 ### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
 
 The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
 
 Now in beta, youcan deploy a config pipeline for features including CDN origin selectors, response and request transformations, CDN log forwarding and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
+
+-->
 
 ### Snapshots for RDEs (Alpha Program) {#rde-snapshot-program}
 
