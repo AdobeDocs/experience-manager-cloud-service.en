@@ -175,7 +175,6 @@ Version 1.4.0 of the AEM Developer Tools for Eclipse has been released. This ver
 
 Install from the [Eclipse Marketplace](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse) and see the [AEM Developer Tools page](https://eclipse.adobe.com) for more details.
 
-
 ### Upcoming Java API Deprecations {#java-api-deprecation}
 
 Several deprecated APIs were marked for removal on August 31st and thus should no longer be referenced. You will receive Actions Center notifications if deprecated API usage is detected in your code, and after October 9th, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
@@ -275,6 +274,11 @@ While logs can be downloaded from Cloud Manager, many organizations find it bene
 Now in beta, you can forward AEM logs to Amazon S3, Sumo Logic, Dynatrace, and your own New Relic account (not the Adobe-provided account). Note that AEM logs (including Apache/Dispatcher) are supported for these logging destinations, but not CDN logs. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) for access.
 
 Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md).
+
+### Expanded Application Performance Monitoring (APM) (Alpha program) {#apm-alpha}
+
+For observability, AEM Cloud Service currently supports Adobe-provided [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) and customer-managed [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). As we explore support for additional APM options, please email us at [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) with your preferred vendor or technology, along with use cases.
+
 
 ## [!DNL Experience Manager] Guides {#guides}
 
