@@ -170,9 +170,9 @@ See [Generate Variations - Integrated in AEM Editors](/help/generative-ai/genera
 
 To delete a Variation of your Content Fragment:
 
-    >[!NOTE]
-    >
-    >You cannot delete **Main**.
+>[!NOTE]
+>
+>You cannot delete **Main**.
 
 1. Select the Variation.
 

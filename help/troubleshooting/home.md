@@ -3,8 +3,8 @@ title: Troubleshooting in AEM Assets and Forms
 description: Troubleshoot common AEM Assets and Forms issues using the article links for key areas, such as uploads, metadata, search, delivery, form creation, submission, and integration.
 hidefromtoc: yes
 hide: yes
+exl-id: 73ff9249-6f5a-46c1-87fe-7cb50b000927
 ---
-
 # Troubleshoot AEM Assets and Forms issues {#troubleshoot-aem-assets-forms}
 
 AEM as a Cloud Service offers comprehensive solutions for Digital Asset Management through AEM Assets and powerful form creation capabilities through AEM Forms. Both services provide cloud-native, PaaS solutions with next-generation smart capabilities, such as AI/ML, all within a system that is always current, always available, and always learning.
@@ -222,6 +222,3 @@ AEM Forms as a Cloud Service provides powerful form creation and management capa
   </tr>
   </tbody>
 </table>
-
-
-
