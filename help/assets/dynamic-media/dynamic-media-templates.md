@@ -173,11 +173,11 @@ See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) t
 
 [Apply formatting to substrings to style and control specific parts of text independently.](#apply-formatting-to-substring)
 
-#### Apply formatting to selective text{#apply-formatting-to-substring}
+#### Format selective text{#apply-formatting-to-substring}
 
-You can format specific parts of a string, including substrings and individual letters or groups of letters within substrings. Execute the following steps to format specific parts of a string:
+Execute the following steps to format specific parts of a string:
 
-1. Select complete texts in the string or specific portions of the text.
+1. Select one or more characters in the string to format.
 1. Apply formatting to the selection using the [properties panel](#properties-panel). The following formatting options are applicable to substrings and their parts:
    * **Font Style**: Bold, italic, underline, subscript, and superscript using the **[!UICONTROL Font Style]** option.
    * **Font Properties**: Change font family, color, and size using the respective panel options.
@@ -274,8 +274,7 @@ Include the following parameters to edit the text, its font, color and size from
 
 ##### Parameterize substrings{#substring-parameterisation}
 
-In the **[!UICONTROL Parameters]** panel, scroll to the **[!UICONTROL Substring Parameters]** section. This section includes a **substring selector** that displays the parts of the selected text layer (string) that have different formatting. Each formatted string part displays as a substring in the selector. Select a substring to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
-
+In the **[!UICONTROL Parameters]** panel, scroll to the **[!UICONTROL Substring Parameters]** section. This section includes a **substring selector** that displays the complete string (selected text layer) with consistent formatting or its formatted parts as separate substrings. Select a substring to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
 Use the substring selector to [split substrings](#split-substring) to parameterize its individual parts or [merge substrings](#merge-substring) to apply uniform parameters.
 
 ###### Split substring{#split-substring}
@@ -283,18 +282,17 @@ Use the substring selector to [split substrings](#split-substring) to parameteri
 To parameterize part of a substring, pull it out to make it a separate substring for individual selection and parameterization.
 Execute the following steps to split a substring into separate substrings:
 
-1. In the substring selector, select the text within a substring  to separate it.
-1. Click ![split substring](/help/assets/assets/unmerge.svg) to pull it out and make it a separate substring in the **substring selector**. 
-
+1. In the substring selector, select the characters within a substring  to separate it.
+1. Click ![split substring](/help/assets/assets/unmerge.svg) to pull it out and make it a separate substring within the **substring selector**. 
 ![split substring](/help/assets/assets/split-a-substring.png)
 You can select the required substring to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
 
 ###### Merge substring{#merge-substring}
 
-Merging substrings removes their existing individual parameters and enables you to apply consistent parameters across the entire newly formed substring.
+Merging substrings removes their existing individual parameters and enables you to apply consistent parameters across the newly formed substring.
 Execute the following steps to merge two adjacent substrings to apply uniform parameters to the resulting substring:
 
-1. In the substring selector, select text across two adjacent substrings.
+1. In the substring selector, select characters across two adjacent substrings with same formatting.
 1. Click ![merge substring](/help/assets/assets/merge.svg) to merge the substrings.
 ![merge identical substrings](/help/assets/assets/merge-two-substrings.png)
 You can apply uniform parameters to the newly formed substring.
