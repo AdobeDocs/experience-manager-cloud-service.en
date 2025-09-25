@@ -23,6 +23,14 @@ To use Content Fragment Models you:
 >
 >Content Fragments and Content Fragment Models are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** console, though Content Fragments can still be managed from the **Assets** console, and Content Fragment Models from the **Tools** console. This section covers management from the **Assets** and **Tools** consoles.
 
+>[!NOTE]
+>
+>If a model was created with the [new model editor](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) you should always use that editor for the model.
+>
+>If you then open the model with this (original) model editor, you will see the message:
+>
+>* "This model has a custom UI Schema configured. The order of fields displayed in this UI may not match the UI Schema. To view the fields aligned with the UI Schema, you need to switch to the new Content Fragment Editor."
+
 ## Creating a Content Fragment Model {#creating-a-content-fragment-model}
 
 1. Navigate to **Tools**, **General**, then open **Content Fragment Models**.

@@ -18,6 +18,14 @@ This page covers how to define your content fragment model, using the dedicated 
 >
 >For further details see [AEM GraphQL API for use with Content Fragments - Limitations](/help/headless/graphql-api/content-fragments.md#limitations)
 
+>[!NOTE]
+>
+>If you create a model with this new editor you should always use this editor for that model.
+>
+>If you then open the model with the [original model editor](/help/assets/content-fragments/content-fragments-models.md), you will see the message:
+>
+>* "This model has a custom UI Schema configured. The order of fields displayed in this UI may not match the UI Schema. To view the fields aligned with the UI Schema, you need to switch to the new Content Fragment Editor."
+
 ## Defining your Content Fragment Model {#defining-your-content-fragment-model}
 
 The Content Fragment Model effectively defines the structure of the resulting Content Fragments using a selection of **[Data Types](#data-types)**. Using the model editor you can add instances of the data types, then configure them to create the required fields:
@@ -139,12 +147,16 @@ A selection of data types is available for defining your model:
     * Create new instances of the field 
   * The reference specifies the path to the referenced resource
     * In the editor, the reference specifies the path to the referenced resource; for example `/content/dam/path/to/resource` 
+    <!--
     * Internally the reference is held as a universally unique ID (UUID) that references the resource
     * You do not need to know the UUID; in the fragment editor you can browse to the required fragment.
-  
+    -->
+
+  <!--
   >[!NOTE]
   >
   >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+  -->
 
 * **Content Reference**
   * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
@@ -152,12 +164,16 @@ A selection of data types is available for defining your model:
   * The field can be configured to allow fragment authors to create new instances of the field 
   * The reference specifies the path to the referenced resource
     * In the editor, the reference specifies the path to the referenced resource; ; for example `/content/dam/path/to/resource`  
+    <!--
     * Internally the reference is held as a universally unique ID (UUID) that references the resource
     * You do not need to know the UUID; in the fragment editor you can browse to the required asset resource
+    -->
 
+  <!--
   >[!NOTE]
   >
   >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+  -->
 
 * **JSON Object**
   * Allows the Content Fragment author to enter JSON syntax into the corresponding elements of a fragment. 
@@ -276,9 +292,11 @@ Content Fragments can form nested content, using either of the following data ty
     >This method is of particular interest when you are using [Headless Content Delivery using Content Fragments with GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
   * Can be configured for one or multiple references (in the resulting fragment).
 
+<!--
 >[!NOTE]
 >
 >See [Upgrade your Content Fragments for UUID References](/help/headless/graphql-api/uuid-reference-upgrade.md) for further information about Content/Fragment Reference and Content/Fragment Reference (UUID), and upgrading to the UUID-based data types.
+-->
 
 >[!NOTE]
 >
