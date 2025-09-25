@@ -32,7 +32,7 @@ The Content Fragment Model effectively defines the structure of the resulting Co
    >
    >You can also open a model directly after [creating it](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
 
-1. Open the required model for **Edit**; use either the quick action, or select the model and then the action from the toolbar.
+1. Open the required model for **Edit**; use either one of the quick action links, or select the model and then the action from the toolbar.
 
 
    ![Properties](assets/cf-cfmodels-empty-model.png)
@@ -59,14 +59,15 @@ The Content Fragment Model effectively defines the structure of the resulting Co
    * Either:
 
      * Drag a data type from the left panel to the required location for a field in the middle panel.
-     * Select the **+** icon by a data type to quickly add it to the bottom of the field list.
+     * Select the **+** icon by a Data Type to add it to the bottom of the field list.
      * Select **Add** in the middle panel and then the required data type from the resulting drop down list to add a field to the bottom of the list.
 
      >[!NOTE]
      >
      >**Tab placeholder** fields must always appear above existing fields.
 
-   * Once a field has been added to the model, the right panel shows the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. 
+   * Once a field has been added to the model (and is selected), the right panel shows the **Properties** that can be defined for that particular data type. Here you can define what is required for the specific
+    field. 
 
      * Many properties are self-explanatory, for additional details see [Properties (Data Types)](#properties).
      * Typing a **Field Label** auto-completes the **Property Name**  - if empty, and it can be manually updated afterwards.
@@ -87,7 +88,7 @@ The Content Fragment Model effectively defines the structure of the resulting Co
 
 1. **To Remove a Field**
 
-   Select the trash-can icon by the appropriate field in the middle panel.
+   Select the trash-can icon for the appropriate field in the middle panel.
 
    ![Remove](assets/cf-cfmodels-remove-icon.png)
 
@@ -164,7 +165,7 @@ A selection of data types is available for defining your model:
     * The JSON is passed through, and output as JSON in GraphQL.
     * Includes JSON syntax-highlighting, auto-complete, and error-highlighting in the Content Fragment editor.
 
-* **Tab Placeholder**
+* **Tab placeholder**
   * Allows the introduction of tabs for use when editing the Content Fragment content.
     * These are shown as dividers in the model editor, separating sections of the list of content data types. Each instance represents the start of a new tab.
     * In the fragment editor each instance appears as a tab.
@@ -172,6 +173,8 @@ A selection of data types is available for defining your model:
     >[!NOTE]
     >
     >This data type is purely used for formatting, it is ignored by the AEM GraphQL schema.
+    >
+    >**Tab placeholder** fields must always appear above existing fields.
 
 ## Properties (Data Types) {#properties}
 
@@ -260,16 +263,12 @@ Content Fragments can form nested content, using either of the following data ty
 
 * [Content Reference](#content-reference)
   * Provides a simple reference to other content; of any type.
-  * Provided by the data types:
-    * **Content Reference** - path based
-    * **Content Reference (UUID)** - UUID based
+  * Provided by the **Content Reference** data type
   * Can be configured for one or multiple references (in the resulting fragment).
 
 * [Fragment Reference](#fragment-reference-nested-fragments) (Nested Fragments)
   * References other fragments, dependent on the specific models specified.
-  * Provided by the data types:
-    * **Fragment Reference** - path based
-    * **Fragment Reference (UUID)** - UUID based
+  * Provided by the **Fragment Reference** data type
   * Allows you to include/retrieve structured data.
   
     >[!NOTE]
@@ -299,7 +298,7 @@ Content Fragments can form nested content, using either of the following data ty
 
 ### Content Reference {#content-reference}
 
-The **Content Reference** and **Content Reference (UUID)** data types allow you to render content from another source; for example, image, page or Experience Fragment.
+The **Content Reference** data type allows you to render content from another source; for example, image, page or Experience Fragment.
 
 In addition to standard properties you can specify:
 
@@ -326,7 +325,7 @@ In addition to standard properties you can specify:
 
 ### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
 
-The **Fragment Reference** and **Fragment Reference (UUID)** data types can reference one, or more, Content Fragments. This feature is of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
+The **Fragment Reference** data type can reference one, or more, Content Fragments. This feature is of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
 
 For example:
 
