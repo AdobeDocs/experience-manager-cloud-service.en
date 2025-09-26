@@ -74,6 +74,8 @@ The Content Fragment Model effectively defines the structure of the resulting Co
      >
      >**Tab placeholder** fields must always appear above existing fields.
 
+     You can reposition a field using the box of dots at the left of the field box.
+
    * Once a field has been added to the model (and is selected), the right panel shows the **Properties** that can be defined for that particular data type. Here you can define what is required for the specific
     field. 
 
