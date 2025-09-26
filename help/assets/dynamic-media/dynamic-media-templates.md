@@ -171,14 +171,14 @@ Execute these steps to add text layers to the canvas:
 
 See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) to reposition, resize, rotate or delete the layer. Format your text to the required font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **[!UICONTROL Text]** section of the panel. The **[!UICONTROL Font Family]** field displays [!UICONTROL Adobe Sans F2] default font, the reprocessed existing fonts and the newly uploaded and published fonts. See point 5 in the [Before you begin](#prerequisites-for-dynamic-media-wysiwyg-template) section above for more information.
 
-[Apply formatting to substrings to style and control specific parts of text independently.](#apply-formatting-to-substring)
+[Format specific parts of text](#apply-formatting-to-substring) and [parameterize them to control them independently](#substring-parameterisation).
 
 #### Format selective text{#apply-formatting-to-substring}
 
 Execute the following steps to format specific parts of a string:
 
 1. Select one or more characters in the string to format.
-1. Apply formatting to the selection using the [properties panel](#properties-panel). The following formatting options are applicable to substrings and their parts:
+1. Format the selection using the [properties panel](#properties-panel). The following formatting options are applicable to substrings and their parts:
    * **Font Style**: Bold, italic, underline, subscript, and superscript using the **[!UICONTROL Font Style]** option.
    * **Font Properties**: Change font family, color, and size using the respective panel options.
    ![format-substring](/help/assets/assets/format-substring.png)
@@ -279,11 +279,10 @@ Use the substring selector to [split substrings](#split-substring) to parameteri
 
 ###### Split substring{#split-substring}
 
-To parameterize part of a substring, pull it out to make it a separate substring for individual selection and parameterization.
-Execute the following steps to split a substring into separate substrings:
+To parameterize a specific part of a substring, pull out the part to make it a separate substring for individual selection and parameterization. Execute the following steps to split a substring into separate substrings:
 
 1. In the substring selector, select the characters within a substring  to separate it.
-1. Click ![split substring](/help/assets/assets/unmerge.svg) to pull it out and make it a separate substring within the **substring selector**. 
+1. Click ![split substring](/help/assets/assets/unmerge.svg) to pull out the selection and make it a separate substring within the **substring selector**. 
 ![split substring](/help/assets/assets/split-a-substring.png)
 You can select the required substring to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
 

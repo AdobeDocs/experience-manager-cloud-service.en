@@ -16,12 +16,12 @@ The table below lists recent enhancements to the rule editor in Adaptive Forms, 
 
 | Enhancement    | Description     | Advantages|
 |---|----|---|
-| **Validation using the `validate()` method**     | Available in the function list to validate individual fields, panels, or the entire form.            | - Granular validation at panel, field, or form level  <br> - Better user experience with targeted error messaging <br> - Prevents progression with incomplete data <br> - Reduces form submission errors |
-| **Download DOR**                                 | Out-of-the-box function available in the rule editor to download the Document of Record (DoR).        | - No custom development required for downloading DoR <br> - Consistent download experience across forms |
-| **Dynamic variables**                            | Create rules using variables that change based on user input or other conditions.                     | - Enables flexible rule conditions <br> - Reduces need for duplicate logic <br> - Eliminates requirement to create hidden fields  |
-| **Custom event-based rules**                     | Define rules that respond to custom events beyond the standard triggers.                              | - Supports advanced use cases <br> - Greater control over when and how rules are executed <br> - Enhances interactivity |
-| **Context-aware repeatable panel execution**     | Rules now execute in the correct context for each repeated panel, instead of only the last instance.  | - Accurate rule application for each repeat instance <br> - Reduces errors in dynamic sections <br> - Improves user experience with repeated content |
-| **Support for query string, UTM, and browser parameters** | Create rules that adapt form behavior based on URL parameters or browser-specific values.        | - Enables personalization based on source or environment <br> - Useful for marketing or tracking-specific flows <br> - No need for extra scripting or customization |
+| [Validation using the validate() method](#validate-method-in-function-list)     | Available in the function list to validate individual fields, panels, or the entire form.            | - Granular validation at panel, field, or form level  <br> - Better user experience with targeted error messaging <br> - Prevents progression with incomplete data <br> - Reduces form submission errors |
+| [Download Dcocument of Record](#download-document-of-record)                                 | Out-of-the-box function available in the rule editor to download the Document of Record (DoR).        | - No custom development required for downloading DoR <br> - Consistent download experience across forms |
+| [Dynamic variables](#support-for-dynamic-variables-in-rules)                            | Create rules using variables that change based on user input or other conditions.                     | - Enables flexible rule conditions <br> - Reduces need for duplicate logic <br> - Eliminates requirement to create hidden fields  |
+| [Custom event-based rules](#custom-event-based-rules-support)                     | Define rules that respond to custom events beyond the standard triggers.                              | - Supports advanced use cases <br> - Greater control over when and how rules are executed <br> - Enhances interactivity |
+| [Context-aware repeatable panel execution](#context-based-rule-execution-for-repeatable-panels)     | Rules now execute in the correct context for each repeated panel, instead of only the last instance.  | - Accurate rule application for each repeat instance <br> - Reduces errors in dynamic sections <br> - Improves user experience with repeated content |
+| [Support for query string, UTM, and browser parameters](#url-and-browser-parameter-based-rules-in-adaptive-forms) | Create rules that adapt form behavior based on URL parameters or browser-specific values.        | - Enables personalization based on source or environment <br> - Useful for marketing or tracking-specific flows <br> - No need for extra scripting or customization |
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ In the above rule, the **Next** button checks whether the fields in the **Person
 >
 >You can use the **validate()** method on forms, fragments, or individual fields. When a fragment is included in a form, both the form and the fragment appear as options in the validation context. In this case, the fragment refers to the fields within it, while the form refers to the parent form where the fragment is embedded.
 
-## DownloadDor as OOTB fuction in Rule Editor
+## Download Document of Record
 
 Using the  **DownloadDor()** out-of-the-box (OOTB) function in the Rule Editor, allows user to download the Document of Record , if the form is configured to generate Document of Recored. 
 
