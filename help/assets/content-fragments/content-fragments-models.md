@@ -69,6 +69,7 @@ The content fragment model effectively defines the structure of the resulting co
 
     * left: fields already defined
     * right: **Data Types** available for creating fields (and **Properties** for use once fields have been created)
+    * top: an option to try the [new editor](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
 
    >[!NOTE]
    >

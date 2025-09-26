@@ -49,7 +49,7 @@ The Content Fragment Model effectively defines the structure of the resulting Co
 
    * top: 
      * **Home** icon
-     * option to toggle between the original and new editor
+     * option to toggle between the [original](/help/assets/content-fragments/content-fragments-models.md) and new editor
      * **Cancel**
      * **Save**
 
