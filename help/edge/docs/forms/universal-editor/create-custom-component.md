@@ -114,12 +114,14 @@ The **decorate** function is the entry point for your custom component. It initi
 #### Function Signature:
 
 ```javascript
-export default function decorate(element, fieldJson, container, formId) {
-// element: The HTML structure of the OOTB component you are extending
-// fieldJson: The JSON field definition (all authorable properties)
-// container: The parent element (fieldset or form)
-// formId: The id of the form
-// ... your logic here ...
+export default function decorate(element, fieldJson, container, formId) 
+{
+  // element: The HTML structure of the OOTB component you are extending
+  // fieldJson: The JSON field definition (all authorable properties)
+  // container: The parent element (fieldset or form)
+  // formId: The id of the form
+
+  // ... your logic here ...
 }
 ```
 
@@ -135,18 +137,20 @@ The **subscribe** function enables your component to react to changes in field v
 
 ### Function Signature:
 
-```JavaScript
+```javascript
 import { subscribe } from '../../rules/index.js';
-
 export default function decorate(fieldDiv, fieldJson, container, formId) {
-// Access custom properties defined in the JSON
-const { initialText, finalText, time } = fieldJson?.properties;
-// ... setup logic ...
-subscribe(fieldDiv, formId, (_fieldDiv, fieldModel) => { fieldModel.subscribe(() => {
-// React to custom event (e.g., resetCardOption)
-// ... logic ...
-}, 'resetCardOption');
-});
+  // Access custom properties defined in the JSON
+  const { initialText, finalText, time } = fieldJson?.properties;
+
+  // ... setup logic ...
+
+  subscribe(fieldDiv, formId, (_fieldDiv, fieldModel) => {
+    fieldModel.subscribe(() => {
+      // React to custom event (e.g., resetCardOption)
+      // ... logic ...
+    }, 'resetCardOption');
+  });
 }
 ```
 
@@ -238,36 +242,45 @@ Now that the form contains the custom component, you can proxy the form and make
 
 Let's add a class **card** to the component for styling and add an image for each radio, use the below code for this.
 
-**Style the Custom Component using decorate function in cards.js**
+**Style the component using card.js**
 
 ```javascript
-
 import { createOptimizedPicture } from '../../../../scripts/aem.js';
 
-export default function decorate(element, fieldJson, container, formId) { element.classList.add('card');
-element.querySelectorAll('.radio-wrapper').forEach((radioWrapper) => { const image = createOptimizedPicture('https://main--afb--
-jalagari.hlx.live/lab/images/card.png', 'card-image'); radioWrapper.appendChild(image);
-});
-return element;
+export default function decorate(element, fieldJson, container, formId) {
+  element.classList.add('card');
+
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper) => {
+    const image = createOptimizedPicture(
+      'https://main--afb--jalagari.hlx.live/lab/images/card.png',
+      'card-image'
+    );
+    radioWrapper.appendChild(image);
+  });
+
+  return element;
 }
 ```
 
-**Add Runtime Behaviour for the Custom Component in cards.css**
+**Add Runtime Behaviour using cards.css**
 
 ```javascript
-.card .radio-wrapper { min-width: 320px;
-/* or whatever width fits your design */ max-width: 340px;
-background: #fff;
-border-radius: 16px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-flex: 0 0 auto;
-scroll-snap-align: start; padding: 24px 16px;
-margin-bottom: 0;
-position: relative;
-transition: box-shadow 0.2s; display: flex;
-align-items: flex-start; gap: 12px;
+.card .radio-wrapper {
+  min-width: 320px; /* or whatever width fits your design */
+  max-width: 340px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  padding: 24px 16px;
+  margin-bottom: 0;
+  position: relative;
+  transition: box-shadow 0.2s;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
 }
-
 ```
 
 Now, the cards component appears like this:
@@ -285,65 +298,49 @@ When API is called it sets the field Model and must listen to the changes and ac
 Let's convert the view code in previous step to a function and call this inside the subscribe function in `cards.js` as shown below:
 
 ```javascript
+import { createOptimizedPicture } from '../../../../scripts/aem.js';
+import { subscribe } from '../../rules/index.js';
 
-import { createOptimizedPicture } from '../../../../scripts/aem.js';  
+function createCard(element, enums) {
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {
+    if (enums[index]?.name) {
+      let label = radioWrapper.querySelector('label');
 
-import { subscribe } from '../../rules/index.js';  
-function createCard(element, enums) {  
+      if (!label) {
+        label = document.createElement('label');
+        radioWrapper.appendChild(label);
+      }
 
-  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {  
+      label.textContent = enums[index]?.name;
+    }
 
-    if (enums[index]?.name) {  
+    const image = createOptimizedPicture(
+      enums[index]?.image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png',
+      'card-image'
+    );
 
-      let label = radioWrapper.querySelector('label');  
+    radioWrapper.appendChild(image);
+  });
+}
 
-      if (!label) {  
+export default function decorate(element, fieldJson, container, formId) {
+  element.classList.add('card');
+  createCard(element, fieldJson.enum);
 
-        label = document.createElement('label');  
+  subscribe(element, formId, (fieldDiv, fieldModel) => {
+    fieldModel.subscribe((e) => {
+      const { payload } = e;
 
-        radioWrapper.appendChild(label);  
+      payload?.changes?.forEach((change) => {
+        if (change?.propertyName === 'enum') {
+          createCard(element, change.currentValue);
+        }
+      });
+    });
+  });
 
-      }  
-
-      label.textContent = enums[index]?.name;  
-
-    }  
-
-    const image = createOptimizedPicture(enums[index].image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png', 'card-image');  
-
-   radioWrapper.appendChild(image);  
-
-  });  
-
-}  
-export default function decorate(element, fieldJson, container, formId) {  
-
-    element.classList.add('card');  
-
-    createCard(element, fieldJson.enum);  
-
-    subscribe(element, formId, (fieldDiv, fieldModel) => {  
-
-        fieldModel.subscribe((e) => {  
-
-            const { payload } = e;  
-
-            payload?.changes?.forEach((change) => {  
-
-                if (change?.propertyName === 'enum') {  
-
-                    createCard(element, change.currentValue);  
-
-                }  
-
-            });  
-
-        });  
-
-    });  
-    return element;  
-
-} 
+  return element;
+}
 ```
 
 **Use Subscribe Function to Listen the Event Changes in cards.js**
@@ -359,88 +356,65 @@ To sync the view changes to field Model, you must set the value of selected card
 **Using Field Model API in cards.js**
 
 ```javascript
- 
+import { createOptimizedPicture } from '../../../../scripts/aem.js';
+import { subscribe } from '../../rules/index.js';
 
-import { createOptimizedPicture } from '../../../../scripts/aem.js';  
+function createCard(element, enums) {
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {
+    if (enums[index]?.name) {
+      let label = radioWrapper.querySelector('label');
 
-import { subscribe } from '../../rules/index.js';  
+      if (!label) {
+        label = document.createElement('label');
+        radioWrapper.appendChild(label);
+      }
 
-  
+      label.textContent = enums[index]?.name;
+    }
 
-  
+    // Attach index to input element for later reference
+    radioWrapper.querySelector('input').dataset.index = index;
 
-function createCard(element, enums) {  
+    const image = createOptimizedPicture(
+      enums[index]?.image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png',
+      'card-image'
+    );
 
-  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {  
+    radioWrapper.appendChild(image);
+  });
+}
 
-    if (enums[index]?.name) {  
+export default function decorate(element, fieldJson, container, formId) {
+  element.classList.add('card');
+  createCard(element, fieldJson.enum);
 
-      let label = radioWrapper.querySelector('label');  
+  subscribe(element, formId, (fieldDiv, fieldModel) => {
+    fieldModel.subscribe((e) => {
+      const { payload } = e;
 
-      if (!label) {  
+      payload?.changes?.forEach((change) => {
+        if (change?.propertyName === 'enum') {
+          createCard(element, change.currentValue);
+        }
+      });
+    });
 
-        label = document.createElement('label');  
+    element.addEventListener('change', (e) => {
+      e.stopPropagation();
+      const value = fieldModel.enum?.[parseInt(e.target.dataset.index, 10)];
+      fieldModel.value = value.name;
+    });
+  });
 
-        radioWrapper.appendChild(label);  
-
-      }  
-
-      label.textContent = enums[index]?.name;  
-
-    }  
-
-    radioWrapper.querySelector('input').dataset.index = index;  
-
-    const image = createOptimizedPicture(enums[index].image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png', 'card-image');  
-
-   radioWrapper.appendChild(image);  
-
-  });  
-
-}  
-export default function decorate(element, fieldJson, container, formId) {  
-
-    element.classList.add('card');  
-    createCard(element, fieldJson.enum);  
-
-    subscribe(element, formId, (fieldDiv, fieldModel) => {  
-
-        fieldModel.subscribe((e) => {  
-
-            const { payload } = e;  
-
-            payload?.changes?.forEach((change) => {  
-
-                if (change?.propertyName === 'enum') {  
-
-                    createCard(element, change.currentValue);  
-
-                }  
-
-            });  
-
-        });  
-        element.addEventListener('change', (e) => {  
-
-            e.stopPropagation();  
-
-            const value = fieldModel.enum?.[parseInt(e.target.dataset.index, 10)];  
-
-            fieldModel.value = value.name;  
-
-        });  
-
-    });  
-
-    return element;  
-} 
+  return element;
+}
 ```
 
 Now the custom card component appears, as shown below:
 
 ![Card custom Component](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
 
-## Commit and Push Changes
+### 3. Commit and Push Changes
 
 Once you've implemented the JavaScript and CSS for your custom component and verified it locally, commit and push the changes to your Git repository.
 
@@ -450,7 +424,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 You have successfully created a complex custom card selection component in a few simple steps.
 
-## Manual or Legacy Method to Create Custom Component
++++ **Manual or Legacy Method to Create Custom Component**
 
 The legacy way to do this is to manually follow the steps described below:
 
@@ -481,23 +455,29 @@ The legacy way to do this is to manually follow the steps described below:
 7. Register your component as a variant in the form builder and set the variant property or
 `fd:viewType/:type` in the JSON to your component's name, for example, add the `fd:viewType` value from the `definitions[]` as cards to the components array of the object with `id="form`.
 
-    ```javascript
-    {
-    "definitions": [
-    {
-    "title": "Cards",
-    "id": "cards", "plugins": {
-    "xwalk": {
-    "page": {
-    "resourceType":
-    "core/fd/components/form/radiobutton/v1/radiobutton", "template": {
-    "jcr:title": "Cards",
-    "fieldType": "radio-button", "fd:viewType": "cards",
-    "enabled": true, "visible": true}
+    ```
+        {
+      "definitions": [
+        {
+          "title": "Cards",
+          "id": "cards",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/fd/components/form/radiobutton/v1/radiobutton",
+                "template": {
+                  "jcr:title": "Cards",
+                  "fieldType": "radio-button",
+                  "fd:viewType": "cards",
+                  "enabled": true,
+                  "visible": true
+                }
+              }
+            }
+          }
+        }
+      ]
     }
-    } }
-    }
-    ]}
     ```
 
 8. **Update mappings.js**: Add your component's name to the **OOTBComponentDecorators** (for OOTB- style components) or **customComponents** list so it is recognized and loaded by the system.
@@ -534,6 +514,8 @@ The legacy way to do this is to manually follow the steps described below:
 
 Now, you can add the custom component to your form.
 
++++
+
 ## Create a Composite Component
 
 A composite component is created by combining multiple components.
@@ -546,82 +528,44 @@ For example, a Terms and Conditions composite component consists of a parent pan
 This composition structure is defined as a template inside the respective component's JSON file. The following example shows how to define a template for a Terms and Conditions component:
 
 ```javascript
-{ 
-
-  "definitions": [ 
-
-    { 
-
-      "title": "Terms and conditions", 
-
-      "id": "tnc", 
-
-      "plugins": { 
-
-        "xwalk": { 
-
-          "page": { 
-
-            "resourceType": "core/fd/components/form/termsandconditions/v1/termsandconditions", 
-
-            "template": { 
-
-              "jcr:title": "Terms and conditions", 
-
-              "fieldType": "panel", 
-
-              "fd:viewType": "tnc", 
-
-              "text": { 
-
-                "value": "Text related to the terms and conditions come here.", 
-
-                "sling:resourceType": "core/fd/components/form/text/v1/text", 
-
-                "fieldType": "plain-text", 
-
-                "textIsRich": true 
-
-              }, 
-
-              "approvalcheckbox": { 
-
-                "name": "approvalcheckbox", 
-
-                "jcr:title": "I agree to the terms & conditions.", 
-
-                "sling:resourceType": "core/fd/components/form/checkbox/v1/checkbox", 
-
-                "fieldType": "checkbox", 
-
-                "required": true, 
-
-                "type": "string", 
-
-                "enum": [ 
-
-                  "true" 
-
-                ] 
-
-              } 
-
-            } 
-
-          } 
-
-        } 
-
-      } 
-
-    } 
-
-  ], 
-
-  ... 
-
-} 
-
+{
+  "definitions": [
+    {
+      "title": "Terms and conditions",
+      "id": "tnc",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/fd/components/form/termsandconditions/v1/termsandconditions",
+            "template": {
+              "jcr:title": "Terms and conditions",
+              "fieldType": "panel",
+              "fd:viewType": "tnc",
+              "text": {
+                "value": "Text related to the terms and conditions come here.",
+                "sling:resourceType": "core/fd/components/form/text/v1/text",
+                "fieldType": "plain-text",
+                "textIsRich": true
+              },
+              "approvalcheckbox": {
+                "name": "approvalcheckbox",
+                "jcr:title": "I agree to the terms & conditions.",
+                "sling:resourceType": "core/fd/components/form/checkbox/v1/checkbox",
+                "fieldType": "checkbox",
+                "required": true,
+                "type": "string",
+                "enum": [
+                  "true"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  ...
+}
 ```
  
 ## Best Practices
@@ -638,7 +582,7 @@ Keep the below points in mind before creating your own custom component:
 
 ## References
 
-- form-field-types: Base HTML structures and properties for all field types. [Click here](/help/edge/docs/forms/eds-form-field-properties) to view detailed form field structures and properties.
+- [form-field-types](/help/edge/docs/forms/eds-form-field-properties.md): Base HTML structures and properties for all field types.
 
 - **blocks/form/models/form-components**: OOTB and custom component property definitions.
 

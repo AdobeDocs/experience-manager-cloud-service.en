@@ -75,6 +75,22 @@ The [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.m
 
 Tap or click **Cancel** or **Done** to discard or save the changes, respectively.
 
+#### Rich Text Formatting Options {#formatting-options}
+
+The rich text editor (RTE) of the Universal Editor allows the author to apply standard text formatting. By default, the following options are available.
+
+* Paragraph (h1, h2, h3, etc.)
+* Bold
+* Italics
+* Underline
+* Superscript
+* Subscript
+* Bulleted list
+* Numbered list
+* Link
+
+The RTE can be configured to hide options or show additional options depending on authors' needs. Please see the document [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more information.
+
 ### Editing Media {#edit-media}
 
 You can view its details in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
@@ -187,6 +203,24 @@ Select the Undo or Redo buttons to undo or redo the last edit in the editor.
 >[!TIP]
 >
 >Use the hot key `Command-Z` or `Shift-Command-Z` to undo or redo, respectively.
+
+### Copy and Paste {#copy-paste}
+
+You can copy and paste components that are within [containers.](/help/implementing/universal-editor/field-types.md#container) This is possible only within the same page and if the [target container allows the component to be pasted.](/help/implementing/universal-editor/filtering.md)
+
+![Copy icon](assets/copy.png)
+![Paste icon](assets/paste.png)
+
+1. Select a component either within the editor or in the content tree.
+1. The **Copy** icon appears in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) Tap or click it.
+1. The **Paste** icon appears in the properties panel.
+1. Select the component _after_ which you wish to paste the copied component.
+1. Tap or click Paste.
+1. The copied component is pasted _after_ the selected component.
+
+>[!TIP]
+>
+>Use the hot key `Command-C` or `Command-V` to copy or paste, respectively.
 
 ## Previewing Content {#previewing-content}
 

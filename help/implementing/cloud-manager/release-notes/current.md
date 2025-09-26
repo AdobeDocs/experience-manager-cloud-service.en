@@ -23,7 +23,7 @@ The next planned release is Thursday, October 2, 2025.
 
 * **Manually renew Adobe-managed domain validation certificates**
 
-    You can now manually renew Adobe-managed Domain Validation (DV) certificates from Cloud Manager or the Public API to refresh certificates proactively. <!-- CMGR-68738 -->
+    You can now manually renew failed Adobe-managed Domain Validation (DV) certificates from Cloud Manager or the Public API to refresh certificates proactively. <!-- CMGR-68738 -->
 
     ![SSL certificate renew](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 

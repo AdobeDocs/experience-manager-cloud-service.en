@@ -1,14 +1,12 @@
 ---
 title: Forms Experience Builder - Prompt Library
 description: Collection of proven prompt patterns and examples for building forms with AI assistance across Forms Management UI, Adaptive Forms Editor, and Universal Editor.
-feature: Edge Delivery Services
 hide: yes
 index: no
 hidefromtoc: yes
 role: Admin, Architect, Developer
-exl-id: c8f64082-a23f-4919-ad66-042faad77d31
+exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
 ---
-
 # Forms Experience Builder - Prompt Library
 
 Collection of reusable prompt patterns and examples optimized for Forms Experience Builder. This streamlined library focuses on the two core creation methods: Create from Scratch and Import & Convert, with enhanced support for LLM-powered smart fields and brand consistency.
@@ -23,7 +21,7 @@ Collection of reusable prompt patterns and examples optimized for Forms Experien
 
 ## Using This Prompt Library
 
-This library provides reusable prompt patterns for common form-building scenarios. For comprehensive best practices, see the [Forms Experience Builder Getting Started Guide](forms-ai-assistant-getting-started.md#best-practices).
+This library provides reusable prompt patterns for common form-building scenarios. For comprehensive best practices, see the [Forms Experience Builder Getting Started Guide](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
 
 ### Quick Tips for This Library
 
@@ -40,26 +38,6 @@ This library provides reusable prompt patterns for common form-building scenario
 - **Style Guidelines** - Define consistent field styling, button designs, and spacing standards that Forms Experience Builder can apply
 - **Component Library** - Work with your development team to prepare reusable form components that match your brand identity
 - **Visual Assets** - Prepare logos, icons, and background elements for form integration
-
-<!-- **Example Brand Application Prompt:**
-
-    Apply our financial services brand template with:
-    - Corporate blue (#003366) and silver (#C0C0C0) color scheme
-    - Open Sans font family for all text
-    - 16px minimum font size for accessibility
-    - Consistent 24px spacing between sections
-    - Corporate logo in header with proper sizing
-    - Professional button styling with hover effects
-
->[!NOTE]
->
->**Custom Components**: Check with your development team about using organization-specific components and their compatibility with Forms Experience Builder before implementing custom brand elements.
-
->[!NOTE]
->
-> This prompt library has been updated to reflect the streamlined Forms Experience Builder capabilities. Some advanced integration and testing features shown in examples may require additional configuration.
-
--->
 
 
 ## Incremental Development Examples
@@ -114,7 +92,7 @@ These examples show how to build forms step-by-step, starting simple and adding 
 
 **When to use:** When you need to create new forms or modify existing ones.
 
-**How to use:** Choose one of two approaches: Create from Scratch or Import & Convert (see [Getting Started Guide](forms-ai-assistant-getting-started.md#two-ways-to-create-forms)).
+**How to use:** Choose one of two approaches: Create from Scratch or Import & Convert (see [Getting Started Guide](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
 
 **Example Prompt - Simple Form Creation:**
 
@@ -413,261 +391,7 @@ These examples show how to build forms step-by-step, starting simple and adding 
 
     Configure **database integration** to save form submissions as records. Create new folder for each submission with uploaded documents
 
-<!-- ## Import & Convert Existing Forms
 
-**When to use:** When you have existing forms, documents, or designs to transform into modern AEM forms.
-
-**How to use:** Upload your source file and describe the conversion requirements (see [Import Guide](forms-ai-assistant-getting-started.md#2-import-and-convert)).
-
-
-**Design Import Prompts:**
-
-    Import this **design mockup** and convert it into an adaptive form. Maintain the exact visual design but add proper validation and mobile responsiveness
-
-    Analyze this **image of a paper form** and recreate it digitally. Improve the layout for better mobile experience while keeping all mandatory fields
-
-    Convert this **existing HTML form** to AEM adaptive form format. Preserve all functionality but add AEM-specific features like rules and themes
-
-## Mobile Optimization & Responsiveness
-
-**When to use:** When forms need to work seamlessly across all device types and screen sizes.
-
-**How to use:** Start with basic mobile optimization, then enhance with advanced features. Emphasize mobile-first approach and specify breakpoint behaviors incrementally.
-
-**Example Prompt - Start with Basic Mobile Optimization:**
-
-    Make @contactForm mobile-friendly with:
-    
-    **Basic Mobile Layout:**
-    - Single column layout for all form sections
-    - Larger touch targets for buttons and inputs
-    - Responsive design that works on phones and tablets
-
-**Then Add Advanced Mobile Features:**
-
-    Enhance @contactForm mobile experience with:
-    - Sticky submit button at bottom of screen
-    - Touch-friendly date pickers
-    - Swipe gestures for multi-step navigation
-
-**Example Prompt - Comprehensive Mobile-First Optimization:**
-
-    Optimize this form for **mobile-first responsive design**:
-    
-    **Mobile Layout (320px - 768px):**
-    - Single column layout for all form sections
-    - Larger touch targets (minimum 44px height)
-    - Simplified navigation with collapsible sections
-    - Sticky submit button at bottom of screen
-    - Auto-zoom disabled on input focus
-    
-    **Tablet Layout (768px - 1024px):**
-    - Two-column layout for shorter fields (name, email)
-    - Single column for complex fields (address, comments)
-    - Side navigation for multi-step forms
-    - Optimized for both portrait and landscape
-    
-    **Desktop Layout (1024px+):**
-    - Multi-column layouts where appropriate
-    - Horizontal form sections for related fields
-    - Sidebar navigation for long forms
-    - Hover states and advanced interactions
-
-**Mobile-Specific Prompts:**
-
-    Make this form **touch-friendly** with larger buttons and simplified navigation for mobile users
-
-    Optimize form for **tablet users** with appropriate field sizes and navigation patterns
-
-    Add **swipe gestures** for multi-step form navigation on mobile devices
-
-## Accessibility & Compliance
-
-**When to use:** When forms need to meet accessibility standards (WCAG) or compliance requirements.
-
-**How to use:** Specify the required compliance level and any specific accessibility features needed.
-
-**Example Prompt - Basic Accessibility:**
-
-    Make @contactForm accessible with:
-    
-    **Basic Accessibility:**
-    - Proper ARIA labels for all form fields
-    - Keyboard navigation support
-    - High contrast color scheme
-    - Screen reader compatibility
-    - Focus indicators for all interactive elements
-
-**Example Prompt - Advanced Accessibility:**
-
-    Implement comprehensive accessibility for @applicationForm:
-    
-    **WCAG 2.1 AA Compliance:**
-    
-    - Semantic HTML structure with proper headings
-    - ARIA landmarks and roles for navigation
-    - Color contrast ratio of at least 4.5:1
-    - Keyboard-only navigation support
-    - Screen reader announcements for dynamic content
-    
-    **Form-Specific Accessibility:**
-    
-    - Error messages announced to screen readers
-    - Field validation with clear error descriptions
-    - Progress indicators for multi-step forms
-    - Skip navigation links for keyboard users
-    - Alternative text for all images and icons
-    
-    **User Experience:**
-    
-    - Clear focus indicators on all interactive elements
-    - Logical tab order through form fields
-    - Descriptive link text and button labels
-    - Help text available for complex fields
-    - Timeout warnings for session expiration
-
-**Accessibility-Specific Prompts:**
-
-    Add **screen reader support** to this form with proper ARIA labels and announcements
-
-    Implement **keyboard navigation** for all form interactions and navigation elements
-
-    Ensure **color contrast** meets WCAG AA standards for all text and interactive elements  
-
-## Performance Optimization
-
-**When to use:** When forms need to load quickly and perform well under various conditions.
-
-**How to use:** Specify performance requirements and optimization strategies.
-
-**Example Prompt - Basic Performance:**
-
-    
-Optimize @contactForm for performance:
-
-**Loading Optimization:**
-
-- Lazy load non-critical form sections
-- Minimize initial bundle size
-- Optimize images and assets
-- Enable caching for static resources
-    
-
-**Example Prompt - Advanced Performance:**
-
-    
-Implement comprehensive performance optimization for @applicationForm:
-
-**Loading Performance:**
-
-- Progressive loading of form sections
-- Optimize images with WebP format
-- Minimize JavaScript bundle size
-- Enable gzip compression for all assets
-
-**Runtime Performance:**
-
-- Debounce validation calls to reduce API requests
-- Optimize conditional logic execution
-- Cache frequently used data
-- Implement virtual scrolling for long lists
-
-**User Experience:**
-
-- Show loading indicators for async operations
-- Provide offline capability for form data
-- Auto-save form progress every 30 seconds
-- Optimize form submission with retry logic
-
-**Monitoring:**
-
-- Track form load times and user interactions
-- Monitor validation performance
-- Measure submission success rates
-- Alert on performance degradation
-    
-
-**Performance-Specific Prompts:**
-
-    
-Optimize form **loading speed** by implementing progressive loading and asset optimization
-    
-
-    
-Add **auto-save functionality** to prevent data loss during form completion
-    
-
-    
-Implement **offline support** so users can complete forms without internet connection
-    
-
-## Testing & Quality Assurance
-
-**When to use:** When forms need comprehensive testing to ensure reliability and user satisfaction.
-
-**How to use:** Specify testing scenarios, validation requirements, and quality metrics.
-
-**Example Prompt - Basic Testing:**
-
-    
-Add comprehensive testing for @contactForm:
-
-**Functional Testing:**
-
-- Test all form field validations
-- Verify submit functionality works correctly
-- Test error handling and user feedback
-- Validate conditional logic and rules
-    
-
-**Example Prompt - Advanced Testing:**
-
-    
-Implement comprehensive testing strategy for @applicationForm:
-
-**Functional Testing:**
-
-- Unit tests for all validation rules
-- Integration tests for submit actions
-- End-to-end testing for complete user flows
-- Cross-browser compatibility testing
-
-**User Experience Testing:**
-
-- Usability testing with target user groups
-- Accessibility testing with screen readers
-- Mobile device testing on various screen sizes
-- Performance testing under load conditions
-
-**Quality Assurance:**
-
-- Automated testing for regression prevention
-- Manual testing for edge cases and scenarios
-- Security testing for data protection
-- Compliance testing for regulatory requirements
-
-**Monitoring:**
-
-- Track form completion rates and abandonment
-- Monitor error rates and user feedback
-- Measure performance metrics and load times
-- Analyze user behavior and interaction patterns
-    
-
-**Testing-Specific Prompts:**
-
-    
-Add **automated testing** for all form validations and submit functionality
-    
-
-    
-Implement **user acceptance testing** scenarios for complete form workflows
-    
-
-    
-Set up **performance monitoring** to track form load times and user interactions
-    
--->
 
 ## Command Reference
 
@@ -759,6 +483,6 @@ Use `@fieldName` syntax to reference existing fields in your prompts:
 
 ### Validation Checklist
 
-For comprehensive best practices and validation guidelines, see the [Forms Experience Builder Getting Started Guide](forms-ai-assistant-getting-started.md#best-practices).
+For comprehensive best practices and validation guidelines, see the [Forms Experience Builder Getting Started Guide](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
 
 *This prompt library is continuously updated based on user feedback and new Forms Experience Builder capabilities. For the latest features and examples, check the [AEM Forms documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html).*

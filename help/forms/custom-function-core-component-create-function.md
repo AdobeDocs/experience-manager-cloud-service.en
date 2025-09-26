@@ -23,6 +23,8 @@ This article guides you through the steps of creating custom functions for Adapt
   * Default parameters
   * Rest parameters 
 
+* The latest ECMAScript features are available as Early Access (EA), while up to ECMAScript 2019 is supported in general availability.
+  
 ## Prerequisites to create a custom function
 
 Before you begin adding a custom function to your Adaptive Forms, ensure you have the following:
@@ -139,10 +141,10 @@ Add the following to the added client library folder:
 
 1. Navigate to the `/ui.apps/src/main/content/META-INF/vault/filter.xml` file in your [AEMaaCS project directory].
 
-1. Open the file and add the following line at the end:
+2. Open the file and add the following line at the end:
 
     `<filter root="/apps/experience-league" />`
-1. Save the file.
+3. Save the file.
 
 ![custom fuction filter xml](/help/forms/assets/custom-function-filterxml.png)
 
