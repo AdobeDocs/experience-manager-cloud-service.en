@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2025.09.04 Release Notes
-description: These are the release notes for the 2025.09.04 release of the Universal Editor.
+title: Universal Editor 2025.09.25 Release Notes
+description: These are the release notes for the 2025.09.25 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.09.04 Release Notes {#release-notes}
+# Universal Editor 2025.09.25 Release Notes {#release-notes}
 
-These are the release notes for the 4 September 2025 release of the Universal Editor.
+These are the release notes for the 25 September 2025 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -16,10 +16,8 @@ These are the release notes for the 4 September 2025 release of the Universal Ed
 
 ## What's New {#what-is-new}
 
-* Copy and paste is available for [early adopters](#copy-paste)
-* [Undo and redo](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) is now available to content authors.
-  * Undoing and redoing can be performed for edits done in context, edits done via the Properties panel, as well as adding, duplicating, moving, and deleting blocks.
-  * Undo and redo is limited to the current browser session.
+* [The copy and paste feature](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) can now be [disabled using a meta tag.](/help/implementing/universal-editor/customizing.md#copy-paste)
+* [When using the Universal Editor in hosted AEM environments (AMS),](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) the Universal Editor will now use the AEM-hosted universal-editor-service and no longer rely on a local AMS installation, ensuring that you always have the latest Universal Editor service automatically.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -27,13 +25,13 @@ If you are interested in testing these upcoming features and sharing your feedba
 
 ### New RTE {#new-rte}
 
-The new ProseMirror RTE, featuring a page picker in the link dialog, is now available in the right panel.
+The new ProseMirror RTE, featuring a page picker in the link dialog, is now available in the right panel. [This RTE features flexible configuration options.](/help/implementing/universal-editor/configure-rte.md)
 
-### Copy/Paste {#copy-paste}
+### Copy and Paste Across Pages {#copy-paste}
 
-Copy and pasting of components within the same page is now available to content authors.
+Copy and pasting is now possible across pages in addition to within the same page.
 
 ## Other Improvements {#other-improvements}
 
-* The styling of the editor toolbar has been updated to align better with the upcoming new RTE.
-* The filters in the asset picker dialog have been restored.
+* The properties rail has been fixed when using it with Document Authoring.
+* A problem editing multi fields of a Content Fragment when using MSM has been fixed.

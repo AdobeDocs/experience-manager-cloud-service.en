@@ -421,6 +421,8 @@ Explained in the table below is the available action.
 |-----------|--------------------------|-------------|
 |**selectOrigin** |originName|Name of one of the defined origins.|
 |     |skipCache (optional, default is false)| Flag whether to use caching for requests matching this rule. By default, responses will be cached according to the response caching header (e.g., Cache-Control or Expires) |
+|**selectAemOrigin** |originName|Name of one of the predefined AEM origins (supported value: `static`).|
+|     |skipCache (optional, default is false)| Flag whether to use caching for requests matching this rule. By default, responses will be cached according to the response caching header (e.g., Cache-Control or Expires) |
 
 **Origins**
 
@@ -436,6 +438,29 @@ Connections to origins are SSL only and use port 443.
 | **forwardAuthorization** (optional, default is false) |If set to true then the "Authorization" header from the client request will be passed to the backend, otherwise the Authorization header is removed.|
 | **timeout** (optional, in seconds, default is 60) |Number of seconds the CDN should wait for a backend server to deliver the first byte of an HTTP response body. This value is also used as a between bytes timeout to the backend server.|
 
+### Proxying custom domain to AEM static tier {#proxy-custom-domain-static}
+
+Origin selectors can be used to route AEM publish traffic to AEM static content deployed using the [front end pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Use cases include serving static resources on the same domain as the page (e.g., example.com/static) or on an explicitly different domain (e.g., static.example.com).
+
+Here is an example of an origin selector rule that can accomplish this:
+
+```
+kind: CDN
+version: '1'
+metadata:
+  envTypes: ["dev"]
+data:
+  originSelectors:
+    rules:
+      - name: select-aem-static-origin
+        when:
+          reqProperty: domain
+          equals: static.example.com
+        action:
+          type: selectAemOrigin
+          originName: static
+```
+
 ### Proxying to Edge Delivery Services {#proxying-to-edge-delivery}
 
 There are scenarios where origin selectors should be used to route traffic through AEM Publish to AEM Edge Delivery Services:
@@ -449,6 +474,8 @@ Here is an example of an origin selector rule that can accomplish this:
 ```
 kind: CDN
 version: '1'
+metadata:
+  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
