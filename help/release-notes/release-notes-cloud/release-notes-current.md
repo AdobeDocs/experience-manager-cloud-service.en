@@ -84,43 +84,23 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 ### New features in Experience Manager Forms {#new-features-forms}
 
-**Date & Time Input Component**
+**Invoke Form Data Model Workflow Step for SharePoint List Attachments**
 
-A [Date & Time component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) is now available, enabling users to select both date and time using a calendar and clock interface, or by manually entering values in a supported format.
-
-**Enhanced Error Handling for File Uploads**
-
-The [File Attachment component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) now automatically validates the uploaded file type against the allowed list. If a user uploads a file in an unsupported format, the form displays an error during submission. The component also checks the file content to validate its type, enhancing the overall security of the form.
-
-**Specified Error Response for Custom Submit Action**
-
-When a [custom submit action](/help/forms/custom-submit-action-troubleshooting.md) encounters an unhandled error, the system returns error code 502. This helps identify that the issue is related to the custom submit action, making debugging easier.
-
-**Excluding Hidden Fields from Document of Record**
-
-A new property allows exclusion of hidden fields from the [Document of Record](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings). By default, this option is not selected and applies to all form fields.
-
-  
+The Invoke Form Data Model workflow step now supports handling workflow-side metadata for Base64-encoded attachment arrays in SharePoint List–based Form Data Models. With this enhancement, the workflow step can pass, store, and retrieve metadata such as file name, MIME type, and custom properties for each attachment. This capability enables more comprehensive data management and facilitates seamless downstream integration. For details, see [Enhanced support in Invoke Form Data Model workflow step for SharePoint List attachments](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step).
+ 
 ### Pre-Release features in AEM Forms 
 
-**Generate and Sync AFP Renditions**
+**Rule Editor Enhancements**
 
-You can now use the [AEM Forms Communication API](/help/forms/document-generation-afp-api.md) to convert an XDP file to AFP format. AFP is a high-performance format widely used in large-scale enterprise printing.
+The Rule Editor now supports enhanced navigation and allows use of function and mathematical expressions in input parameters.
 
-**Enhancements in Rule Editor**
+**Enhanced Navigation with Event Payload Support**
+ 
+The `Navigate To` action in the Invoke Service handlers now supports `EVENT_PAYLOAD`, enabling form authors to configure follow-up actions based on event responses. This enhancement offers greater flexibility in designing post-submission workflows, ensuring smoother transitions and more personalized user experiences. For more information, see [Enhanced Navigation with Event Payload Support](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
 
-* [Validate Method in Function List](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list): The validate and reset methods now support execution at the panel, field, and form levels. Previously, they were only supported at the form level.
-* [Modern JavaScript Support](/help/forms/rule-editor-core-components-difference-tables.md): Support for ECMAScript 2019 and later features has been added for custom functions, allowing you to write more efficient, modular, and reusable code.
-* [Download DoR Option in Rule Editor](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor): A function to download the Document of Record (DoR) has been added as an out-of-the-box (OOTB) option in the Rule Editor.
-
-  ![Document-of-Record](/help/forms/assets/document-of-record-rn.gif)
-
-* [Dynamic Variables in Rule Editor](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules): You can now use dynamic (temporary) variables in the Rule Editor for greater flexibility in defining conditions and actions. Hidden fields are no longer required to store temporary values.
-* [Custom Event Based Rules Support](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support): You can now define custom events and trigger rules based on those events.
-* [Context-Aware Repeatable Panel Rules](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels): In repeatable panels, rules are now executed based on context, instead of being applied only to the last panel instance.
-* [Rules Triggered by Parameters](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms): The Rule Editor now supports rule execution based on query parameters, UTM parameters, or browser parameters.
-* [Form-Specific Custom Functions](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms): Edge Delivery Services Forms now support form-specific custom function scripts, providing greater flexibility in managing reusable logic.
-* [Static Imports for Custom Functions](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions): The Rule Editor in Universal Editor now supports static imports, allowing developers to organize, share, and reuse functions across multiple forms.
+**Function and Mathematical Expression Support in Input Parameters**
+ 
+Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
 
 ### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 
@@ -128,14 +108,18 @@ The AEM Forms Early Access Program offers a unique opportunity for you to get ex
 
 These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
-**Scribble Signature Component**
+**PDF Preview in Interactive Communication Editor**
 
-You can now use the [Scribble Signature component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) to help users add their signatures to a form, such as in an agreement form. The component allows users to draw their signature directly within the form using a mouse, stylus, or touchscreen.
+Users can preview Interactive Communications PDFs without data, with local JSON data files, or with data from a data model, enabling flexible data-driven testing. For more information, see [PDF Preview in Interactive Communication Editor](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
 
-**Direct API Integration in Rule Editor**
+**Support of Custom Fonts in Interactive Communication**
 
-Adaptive Forms now support [direct API integration](/help/forms/api-integration-in-rule-editor.md) in the Visual Rule Editor without requiring a Form Data Model. Authors can configure APIs using a URL or cURL import, map input/output parameters, and secure calls with authentication.
- 
+The Custom Fonts feature allows users to embed custom or organization-approved fonts in the Interactive Communications, ensuring consistent and branded PDF rendering across devices and platforms. For more information, see [Support of Custom Fonts in Interactive Communication](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
+
+**Import and Export Interactive Communications**
+
+This feature enables migration and reuse of Interactive Communications across different environments. You can now export an Interactive Communication along with its associated fragments and data models from one environment and import it into another. For more information, see [Import and Export Interactive Communications](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
+
 <!--
 **Forms Optimization opportunities**
 
@@ -217,7 +201,7 @@ If your environment could not be upgraded due to unsupported dependencies (see t
 
 >[!NOTE]
 >
->The runtime version is separate from your code’s build version. While we recommend building with Java 21, Java 11 builds are still accepted for now. A separate deprecation notice for Java 11 builds will be shared in the future.
+>The runtime version is separate from your code's build version. While we recommend building with Java 21, Java 11 builds are still accepted for now. A separate deprecation notice for Java 11 builds will be shared in the future.
 
 ### Enforcement of AEM Java Logs Configuration Policy {#logconfig-policy}
 
