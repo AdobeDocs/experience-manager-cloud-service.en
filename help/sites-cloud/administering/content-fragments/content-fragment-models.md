@@ -74,7 +74,7 @@ The Content Fragment Model effectively defines the structure of the resulting Co
      >
      >**Tab placeholder** fields must always appear above existing fields.
 
-   * You can reposition a field using the formation of six dots at the left of the field box:
+   * You can reposition a field using the formation of dots at the left of the field box:
 
      ![Move field](assets/cf-cfmodels-move-field-icon.png)
 
