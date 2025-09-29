@@ -234,8 +234,6 @@ Edge Authentication lets you restrict access to Edge Delivery Services pages to 
 
 If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case and any questions you may have.
 
-Separately from Edge Delivery Services, note that earlier this year we released a feature to configure Open ID Connect [for AEM Cloud Service publish tier projects](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md) to secure AEM pages.
-
 <!--
 ### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
 
