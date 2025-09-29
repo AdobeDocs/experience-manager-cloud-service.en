@@ -5,6 +5,7 @@ feature: Adaptive Forms
 role: Developer, User
 exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
 ---
+
 # Supported HTML markup tags in Document of Record
 
 ## What this reference covers?
@@ -125,22 +126,10 @@ These tags are not supported and will not render properly:
 <p>Einstein's equation: E=mc<sup>2</sup></p>
 ```
 
-## Related information
+## Related Content
 
-### AEM Forms documentation
 
 - [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 - [Generate Document of Record for Core Components](/help/forms/generate-document-of-record-core-components.md)
 - [Document of Record template customization](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
 
-### Technical references
-
-- [XFA Specification - XHTML and CSS Attributes](https://www.adobe.com/devnet/acrobat/pdfs/XFA-3_3.pdf) (Page 1187)
-- [PDF Accessibility Standards](https://www.w3.org/TR/WCAG21/)
-- [Core Accessibility API Mappings](https://www.w3.org/TR/core-aam-1.2/#role-map-superscript)
-
-### Best practices guides
-
-- [Creating accessible PDFs](https://www.adobe.com/accessibility/pdf.html)
-- [Rich text best practices in forms](/help/forms/creating-accessible-adaptive-forms.md)
-- [Document structure for accessibility](/help/forms/creating-accessible-adaptive-forms.md)
