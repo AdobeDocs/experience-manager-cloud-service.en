@@ -57,14 +57,15 @@ The 2025.10.0 feature activation will provide the full feature set for this main
 * SITES-22059: Fixes JS error in PDF Viewer components  Unlocalized "File preview not available" string in Core Components site > PDF Viewer
 * SKYOPS-118793: Reverting back vanity urls changes
 * SITES-30879: AEM: Unlocalized strings in Sites > Page Editor > Search component
-
-### Known Issues {#known-issues-22758}
-
 * GRANITE-59704: Fixed htmllibmanager.debug causes edit mode to fail
 * GRANITE-61042: Integrate FELIX-6796 (ServiceTracker NPE fix) into AEM Felix Web Console bundle
 * GRANITE-61165: Workspace.copy() throwing RepositoryException
 * GRANITE-61875 : Updated ui.commons to 5.10.50
 * SITES-34277: Fix blocking error in translations workflows for pages
+
+### Known Issues {#known-issues-22758}
+
+None.
 
 ### Deprecated Features and APIs {#deprecated-22758}
 
