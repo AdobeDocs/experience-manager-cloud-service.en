@@ -30,7 +30,13 @@ You simply open the selected environment's ![More icon or ellipsis menu icon](ht
 * The program runs on AEM as a Cloud Service.
 * The last pipeline for that environment finished successfully and ran **fewer than 30 days** ago.
 * The environment status is *Running* and no pipeline is in progress.
-* **Restore previous code deployed** can be done on a `Development` environment, `Stage` environment, or a `Specialized Testing Environment`.
+
+**Restore previous code deployed** works in `Production` environment, in addition to `Development` environment, `Stage` environment, and `Specialized Testing Environment`. After you confirm, Cloud Manager starts the restore and sends a push notification at start and on successful completion. 
+
+>[!IMPORTANT]
+>
+>Adobe highly recommends validating the procedure in `Stage` *before* using it in `Production` to reduce risk and ensure stability.
+
 
 If any check fails, Cloud Manager opens the following dialog box that lists one or more unmet conditions and disables **Confirm**, preventing the restore.
 

@@ -21,12 +21,30 @@ The next planned release is Thursday, November 6, 2025.
 
 ## What's new {#what-is-new}
 
-* Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Config Pipelines** to manage settings such as traffic filtering rules and Web Application Firewall (WAF) configurations, where applicable. See [Supported Configurations](/help/operations/config-pipeline.md#configurations). 
+* **Config Pipeline support**
+
+    Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Config Pipelines** to manage settings such as traffic filtering rules and Web Application Firewall (WAF) configurations, where applicable. See [Supported Configurations](/help/operations/config-pipeline.md#configurations). 
 
     Edge Delivery config pipelines also support secrets through Cloud Manager pipeline variables.
 
     See [Add Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
 
+* **AEM Cloud Health Assessment Service**
+
+    Adobe introduces the AEM Cloud Health Assessment Service, an automated, non-invasive checkup tool that keeps your AEM as a Cloud Service environment optimized, secure, and aligned with best practices.
+
+    This service does the following:
+
+    * Scans environments to surface performance bottlenecks, inefficiencies, and potential risks.
+    * Analyzes content structures (blueprints, live copies) and custom configurations.
+    * Identifies outdated dependencies (AEM SDK, third-party libraries).
+    * Flags code quality issues (improper annotations, inefficient patterns).
+    * Delivers actionable guidance through dashboards such as **Action Center**.
+    * Supports proactive optimization through early issue detection and remediation.
+
+    Teams can continuously monitor and improve their AEM environments for smoother performance, stronger security, and long-term maintainability. 
+    
+    See [Health Assessment for Production and Stage Environments](/help/implementing/cloud-manager/reports/report-health-assessment.md).
 
 
 
@@ -56,6 +74,26 @@ The following opportunities are currently available:
 ### Support for Custom Author Domains in Cloud Service
 
 AEM Cloud Service is going to soon support one custom domain per Author environment.-->
+
+### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
+
+[Experience Hub](/help/experience-hub.md) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
+
+![Diagram of Experience Hub extensibility and customization workflow](/help/implementing/cloud-manager/release-notes/assets/experience-hub-extensibility-customization.png)
+
+Embed custom experiences in Experience Hub to extend and personalize your organization's dashboard. In addition to Adobe's built-in widgets, add your own using the [UI Extensibility](https://developer.adobe.com/uix/docs/) framework. Build JavaScript-based UI apps and surface them to your users to meet business-specific requirements and workflows. 
+
+Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) with your Adobe OrgID and a short description of the customization you intend to create.
+
+### Faster builds with module caching {#quick-build-cm-pipelines}
+
+A new build model compiles only changed modules (rather than the entire repo) using module-level caching to shorten build times. It applies to code-quality, full-stack, and stage-only pipelines.
+
+Interested? Email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe OrgID and Program ID. 
+
+You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).
+
+
 
 ### One-click rollback for pipeline deployments {#one-click-rollback} 
 
