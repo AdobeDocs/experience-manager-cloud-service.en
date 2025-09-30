@@ -18,53 +18,53 @@ The 2025.10.0 feature activation will provide the full feature set for this main
 
 ### Enhancements {#enhancements-22758}
 
-ASSETS-56227: Rename adobe-countdown-timer modifier
-CNTBF-493: Bump content-backflow bundle version to 2.0.28
-CQ-4361110:  Granite translations
-CQ-4361112:  Latest AEM translations
-GRANITE-56026: Improve permissions API status code responses
-GRANITE-56970: Upgrade crypto bundles
-GRANITE-61015: Added 'org.apache.commons.io.channels' package in public exported list
-GRANITE-61167: Felix log has been updated to latest OSGI spec
-GRANITE-61167: Update felix dependencies
-GRANITE-61169: Improve the check for protected strings
-GRANITE-61278: Update org.apache.commons:commons-email to version 1.6.0
-GRANITE-61278: Update org.apache.sling:org.apache.sling.commons.log.webconsole to version 1.0.2
-GRANITE-61278: Update org.apache.commons:commons-compress to version1.28.0
-GRANITE-61278: Update org.apache.commons:commons-exec to version 1.5.0
-GRANITE-61278: Update org.apache.sling.installer.provider.file to version 1.3.4
-GRANITE-61278: Update org.apache.sling:org.apache.sling.installer.provider.jcr to version 3.3.0
-GRANITE-61327: Adjust toggle name for Sling Resource Resolver fallback
-GRANITE-61622: Update sling dependencies
-GRANITE-61663: Add com.adobe.granite.repository.indexdefs-1.0.2 to quickstart
-GRANITE-61811: Add com.adobe.granite.repository-2.0.0 to quickstart
-GRANITE-62026: Update CS Quickstart: latest public release of Oak (1.86.0)
-SITES-32014: Listen for external events too to update service regs
-SITES-33206: KonMari 2025 tools allow for "soft deprecation" of AEM modules
-SITES-34277: Fix blocking error in translations workflows for pages
-SKYOPS-105553: Re-adding experimentation  it was missed the inclusion last time
-SKYOPS-108706: Upgraded release toggles bundle to latest version (etag caching)
-SKYOPS-114210: Updating to latest version of aem.pss.service bundle
-SKYOPS-115287: Update AEM-CS SDK clientlib compiler defaults to match transform job settings
-SKYOPS-115792: Update CS Quickstart: Sling ResourceResolver 1.12.11-T20250827104939-c451842
-SKYOPS-116171: Update to Sling ResourceResolver 1.12.12
-Released dispatcher-publish 2.0.258
+* ASSETS-56227: Rename adobe-countdown-timer modifier
+* CNTBF-493: Bump content-backflow bundle version to 2.0.28
+* CQ-4361110:  Granite translations
+* CQ-4361112:  Latest AEM translations
+* GRANITE-56026: Improve permissions API status code responses
+* GRANITE-56970: Upgrade crypto bundles
+* GRANITE-61015: Added 'org.apache.commons.io.channels' package in public exported list
+* GRANITE-61167: Felix log has been updated to latest OSGI spec
+* GRANITE-61167: Update felix dependencies
+* GRANITE-61169: Improve the check for protected strings
+* GRANITE-61278: Update org.apache.commons:commons-email to version 1.6.0
+* GRANITE-61278: Update org.apache.sling:org.apache.sling.commons.log.webconsole to version 1.0.2
+* GRANITE-61278: Update org.apache.commons:commons-compress to version1.28.0
+* GRANITE-61278: Update org.apache.commons:commons-exec to version 1.5.0
+* GRANITE-61278: Update org.apache.sling.installer.provider.file to version 1.3.4
+* GRANITE-61278: Update org.apache.sling:org.apache.sling.installer.provider.jcr to version 3.3.0
+* GRANITE-61327: Adjust toggle name for Sling Resource Resolver fallback
+* GRANITE-61622: Update sling dependencies
+* GRANITE-61663: Add com.adobe.granite.repository.indexdefs-1.0.2 to quickstart
+* GRANITE-61811: Add com.adobe.granite.repository-2.0.0 to quickstart
+* GRANITE-62026: Update CS Quickstart: latest public release of Oak (1.86.0)
+* SITES-32014: Listen for external events too to update service regs
+* SITES-33206: KonMari 2025 tools allow for "soft deprecation" of AEM modules
+* SITES-34277: Fix blocking error in translations workflows for pages
+* SKYOPS-105553: Re-adding experimentation  it was missed the inclusion last time
+* SKYOPS-108706: Upgraded release toggles bundle to latest version (etag caching)
+* SKYOPS-114210: Updating to latest version of aem.pss.service bundle
+* SKYOPS-115287: Update AEM-CS SDK clientlib compiler defaults to match transform job settings
+* SKYOPS-115792: Update CS Quickstart: Sling ResourceResolver 1.12.11-T20250827104939-c451842
+* SKYOPS-116171: Update to Sling ResourceResolver 1.12.12
+* Released dispatcher-publish 2.0.258
 
 ### Fixed Issues {#fixed-issues-22758}
 
-GRANITE-61875: Fix triggers “invalid expression evaluation” – Authors cannot save Content Fragments & assets fail to download
-GRANITE-62115: Upgrade com.adobe.granite.crypto
-SITES-22059: Fixes JS error in PDF Viewer components  Unlocalized "File preview not available" string in Core Components site > PDF Viewer
-SKYOPS-118793: Reverting back vanity urls changes
-SITES-30879: AEM: Unlocalized strings in Sites > Page Editor > Search component
+* GRANITE-61875: Fix triggers “invalid expression evaluation” – Authors cannot save Content Fragments & assets fail to download
+* GRANITE-62115: Upgrade com.adobe.granite.crypto
+* SITES-22059: Fixes JS error in PDF Viewer components  Unlocalized "File preview not available" string in Core Components site > PDF Viewer
+* SKYOPS-118793: Reverting back vanity urls changes
+* SITES-30879: AEM: Unlocalized strings in Sites > Page Editor > Search component
 
 ### Known Issues {#known-issues-22758}
 
-GRANITE-59704: Fixed htmllibmanager.debug causes edit mode to fail
-GRANITE-61042: Integrate FELIX-6796 (ServiceTracker NPE fix) into AEM Felix Web Console bundle
-GRANITE-61165: Workspace.copy() throwing RepositoryException
-GRANITE-61875 : Updated ui.commons to 5.10.50
-SITES-34277: Fix blocking error in translations workflows for pages
+* GRANITE-59704: Fixed htmllibmanager.debug causes edit mode to fail
+* GRANITE-61042: Integrate FELIX-6796 (ServiceTracker NPE fix) into AEM Felix Web Console bundle
+* GRANITE-61165: Workspace.copy() throwing RepositoryException
+* GRANITE-61875 : Updated ui.commons to 5.10.50
+* SITES-34277: Fix blocking error in translations workflows for pages
 
 ### Deprecated Features and APIs {#deprecated-22758}
 
