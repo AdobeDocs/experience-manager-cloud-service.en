@@ -96,7 +96,7 @@ Build forms using the authoring approach that best fits your needs and technical
 | **What it does:** Design personalized communications that combine static content with dynamic data for print and digital channels. |
 | **When to use:** Customer statements, invoices, notices, personalized communications, document-heavy workflows. |
 | 📄 Visual document design 📄 Dynamic data integration 📄 Multi-channel output 📄 Personalization |
-| [Get started with Interactive Communications →](/help/forms/introduction-to-interactive-communication.md) |
+| [Get started with Interactive Communications →](/help/forms/interactive-communication/create-interactive-communication.md) |
 
 ## 🔗 Data & Integration {#data-integration}
 
@@ -298,7 +298,7 @@ Choose your starting point based on your immediate needs and technical requireme
 
 **For XFA modernization:** Start with [HTML5 Forms](/help/forms/introductionhtml5.md)
 
-**For document communications:** Start with [Interactive Communications](/help/forms/introduction-to-interactive-communication.md)
+**For document communications:** Start with [Interactive Communications](/help/forms/interactive-communication/create-interactive-communication.md)
 
 ### Data Integration Quick Start {#integration-start}
 
