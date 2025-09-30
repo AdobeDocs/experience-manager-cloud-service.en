@@ -21,19 +21,23 @@ The next planned release is Thursday, November 6, 2025.
 
 ## What's new {#what-is-new}
 
-* **Manually renew Adobe-managed domain validation certificates**
+* Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Config Pipelines** to manage settings such as traffic filtering rules and Web Application Firewall (WAF) configurations, where applicable. See [Supported Configurations](/help/operations/config-pipeline.md#configurations). 
 
-    You can now manually renew failed Adobe-managed Domain Validation (DV) certificates from Cloud Manager or the Public API to refresh certificates proactively. <!-- CMGR-68738 -->
+    Edge Delivery config pipelines also support secrets through Cloud Manager pipeline variables.
 
-    ![SSL certificate renew](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
+    See [Add Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
 
-* **Support now added for Azure DevOps (private repositories)** 
 
-    Documentation updates include configuration steps for Bring Your Own Git with Azure DevOps and pull request validation. See [Add External Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
-* **Bring Your Own Git (BYOG) support extended to config pipelines (private repositories)**
 
-    Cloud Manager now supports config pipelines with private repositories across GitHub, Bitbucket, Azure DevOps, and GitLab. This support accelerates the development cycle further. See [Pull Request Checks for Private Repositories](/help/implementing/cloud-manager/managing-code/github-check-config.md).
+
+
+
+
+
+
+
+
 
 <!--
 ### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
@@ -129,30 +133,6 @@ See [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage
 
 <!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
 
-### Add Edge Delivery config pipeline {#add-eds-pipeline}
-
-Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Config Pipelines** to manage settings such as traffic filtering rules and Web Application Firewall (WAF) configurations, where applicable. See [Supported Configurations](/help/operations/config-pipeline.md#configurations).
-
-**Recent enhancement**
-
-* Edge Delivery config pipelines now support secrets through Cloud Manager pipeline variables.
-* Edge Delivery Services pipelines now display **Configuration** in the **Deployed Code** column, enabling instant identification of configuration-only deployments. <!-- CMGR‑69681 -->
-* Cloud Manager shows **Add Edge Delivery Pipeline** once a program contains at least one Edge Delivery Services site and one mapped domain. Otherwise, the option appears disabled, and a tooltip explains missing requirements. <!-- CMGR‑69680 -->
-* The **Edge Delivery** tab shows a new **Edge Delivery pipelines** widget that lists each pipeline's Name, Status, Repository, and Branch. <!-- (CMGR-69052) -->
-
-    ![Edge Delivery pipeline widget showing pipeline name, status, repository, and branch](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-widget.png)
-
-* The **Filters** panel adds a **Delivery Type** section; includes **Edge delivery** and **Publish delivery** checkboxes. <!-- (CMGR-69682) -->
-
-    ![Filter panel showing new Delivery type of Edge delivery and Publish delivery](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
-
-![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adding an Edge Delivery pipeline from the **Program Overview** page, **Pipelines** card.*
-
-![Add Edge Delivery pipeline dialog box](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Add Edge Delivery pipeline dialog box.*
-
-See [Add Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
-
-If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID.
 
 ## Bug fixes {#bug-fixes}
 
