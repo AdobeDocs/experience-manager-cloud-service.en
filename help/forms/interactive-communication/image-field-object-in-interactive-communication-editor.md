@@ -1,12 +1,12 @@
 ---
-title: Create an Interactive Communication Fragment
-description: Create Interactive Communication Fragments in AEM Forms to build modular, reusable content blocks that ensure consistency, save time, and support personalized, data-driven communications.
+title: Image Field Object in Interactive Communication Editor 
+description: Image Field Object in Interactive Communication Editor  in AEM Forms to allows authors to insert images into a communication layout.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Image Field Object in IC Editor 
+# Image Field Object in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -22,6 +22,7 @@ The Image Field component in the Interactive Communication editor allows authors
 
 Supporting common formats like **JPEG** and **PNG**, this component offers flexible configuration options to define how the image is displayed, stored, and styled. Authors can also **assign a name or label** to the image field, enhancing layout clarity and organization. 
 
+![Find IC Docu](/help/forms/interactive-communication/assets/imagefield.png)
 
 ## 2. Properties 
 

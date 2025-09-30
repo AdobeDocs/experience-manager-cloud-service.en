@@ -1,12 +1,12 @@
 ---
-title: Create an Interactive Communication Fragment
-description: Create Interactive Communication Fragments in AEM Forms to build modular, reusable content blocks that ensure consistency, save time, and support personalized, data-driven communications.
+title: Table Object in Interactive Communication Editor
+description: Table Object in Interactive Communication Editor in AEM Forms enables authors to insert customizable tables into communication templates with ease.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Table Object in IC Editor 
+# Table Object in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -21,6 +21,8 @@ role: User, Developer, Admin
 The Table Object in the Interactive Communication (IC) editor enables authors to insert customizable tables into communication templates with ease. This object supports tabular data representation for use cases such as summaries, item listings, structured input, or comparison layouts. 
 
 Authors can drag and drop the table component into the canvas, configure the number of rows and columns, and choose options like including header and footer rows, or setting the layout direction. Tables can be defined as default templates for consistency across multiple communications. 
+
+![Find IC Docu](/help/forms/interactive-communication/assets/table.png)
 
 ## 2. Properties 
 

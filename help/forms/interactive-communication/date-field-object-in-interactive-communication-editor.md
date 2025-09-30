@@ -1,12 +1,12 @@
 ---
-title: Create an Interactive Communication Fragment
-description: Create Interactive Communication Fragments in AEM Forms to build modular, reusable content blocks that ensure consistency, save time, and support personalized, data-driven communications.
+title: Date Field Object in Interactive Communication Editor 
+description: Date Field Object in Interactive Communication Editor in AEM Forms enables authors to insert a calendar-based date selection field into a document.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Date Field Object in IC Editor 
+# Date Field Object in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -21,6 +21,8 @@ role: User, Developer, Admin
 The **Date Field** component in the Interactive Communication (IC) editor enables authors to insert a calendar-based date selection field into a document. This allows users to easily pick a date from a date picker or enter it manually in a predefined format. 
 
 Ideal for capturing birthdates, appointment schedules, application dates, or policy start/end dates, the Date Field improves accuracy and reduces input errors. It supports formatting, styling, and data binding for seamless integration with data models and backend systems. 
+
+![Find IC Docu](/help/forms/interactive-communication/assets/date.png)
 
 ## 2. Properties 
 

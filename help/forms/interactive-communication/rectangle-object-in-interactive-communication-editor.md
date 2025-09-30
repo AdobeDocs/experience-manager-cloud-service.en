@@ -1,12 +1,12 @@
 ---
-title: Create an Interactive Communication Fragment
-description: Create Interactive Communication Fragments in AEM Forms to build modular, reusable content blocks that ensure consistency, save time, and support personalized, data-driven communications.
+title: Rectangle Object in Interactive Communication Editor 
+description: Rectangle Object in Interactive Communication Editor in AEM Forms allows authors to add shaped graphical elements that serve as layout dividers, visual accents, or content containers.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Rectangle Object in IC Editor 
+# Rectangle Object in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -20,6 +20,8 @@ role: User, Developer, Admin
 
 The Rectangle component in the Interactive Communication (IC) editor allows authors to add shaped graphical elements that serve as layout dividers, visual accents, or content containers. Rectangles enhance visual hierarchy and guide user attention in structured communication layouts. 
 This object is not tied to data but is instrumental in improving design clarity, grouping related fields, and enhancing overall presentation. 
+
+![Find IC Docu](/help/forms/interactive-communication/assets/rectangle.png)
 
 ## 2. Properties 
 

@@ -1,12 +1,12 @@
 ---
-title: Create an Interactive Communication Fragment
-description: Create Interactive Communication Fragments in AEM Forms to build modular, reusable content blocks that ensure consistency, save time, and support personalized, data-driven communications.
+title: Date/Time Field Object in Interactive Communication Editor 
+description: Date/Time Field Object in Interactive Communication Editor  in AEM Forms to enables authors to insert fields where users can select or enter date and/or time values.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Date/Time Field Object in IC Editor 
+# Date/Time Field Object in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -21,6 +21,8 @@ role: User, Developer, Admin
 The **Date/Time Field** component in the Interactive Communication (IC) editor enables authors to insert fields where users can select or enter date and/or time values. This component is commonly used for capturing information like date of birth, appointment schedules, booking slots, or document issue/expiry dates. 
 
 The field supports various formatting options (e.g., DD/MM/YYYY, 24-hour or 12-hour formats), validation constraints, and customization of appearance to match the communication design. It enhances user experience by reducing manual input errors and promoting consistency in data collection. 
+
+![Find IC Docu](/help/forms/interactive-communication/assets/datetime.png)
 
 ## 2. Properties 
 

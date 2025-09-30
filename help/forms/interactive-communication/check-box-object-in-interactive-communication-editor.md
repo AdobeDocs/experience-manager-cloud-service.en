@@ -1,12 +1,12 @@
 ---
-title: Create an Interactive Communication Fragment
-description: Create Interactive Communication Fragments in AEM Forms to build modular, reusable content blocks that ensure consistency, save time, and support personalized, data-driven communications.
+title: Check Box Object in Interactive Communication Editor 
+description: Check Box Object in Interactive Communication Editor in AEM Forms allows users to make single or multiple binary selections (yes/no, true/false).
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Check Box Object in IC Editor 
+# Check Box Object in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -21,6 +21,8 @@ role: User, Developer, Admin
 The Check Box component in the Interactive Communication (IC) editor allows users to make single or multiple binary selections (yes/no, true/false). Commonly used for terms & conditions, preferences, consent fields, and opt-ins, it provides a quick way to capture boolean input within a communication form. 
 
 The Check Box supports flexible styling, data binding options, and visibility rules, making it a lightweight but powerful tool in designing interactive, user-friendly forms. 
+
+![Find IC Docu](/help/forms/interactive-communication/assets/checkbox.png)
 
 ## 2. Properties 
 
