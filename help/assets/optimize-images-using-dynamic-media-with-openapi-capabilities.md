@@ -3,8 +3,8 @@ title: Optimize images using Dynamic Media with OpenAPI Capabilities
 description: Learn how to optimize images on the fly before public delivery using the image optimization capabilities of Dynamic Media with OpenAPI Capabilities
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
+exl-id: 7822732b-e2b9-4b35-b92b-cb7b31d84489
 ---
-
 # Optimize images using Dynamic Media with OpenAPI Capabilities{#Optimize-images-using-Dynamic-Media-with-OpenAPI-Capabilities}
  
 [!DNL Dynamic Media with OpenAPI capabilities] offers image optimization capabilities such as [!DNL Smart Crop], [!DNL Image Presets], and [!DNL Smart Imaging]. These capabilities help deliver high-quality, responsive images that load fast across different devices and networks.
