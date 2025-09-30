@@ -165,7 +165,7 @@ You can also discard the forms by clicking on the ellipsis (...) that appears in
 
 >[!NOTE]
 >
-> The Submissions list in the Forms Portal displays only Foundation-based form submissions.
+> In the Forms Portal, the Drafts & Submissions component supports only submissions from Foundation-based forms.
 
 ## Next Steps
 
