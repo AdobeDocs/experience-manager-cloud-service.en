@@ -30,13 +30,17 @@ Before you start to deploy your code, configure your pipeline settings from the 
 
 ## Add a new production pipeline {#adding-production-pipeline}
 
-Once you have set up your program and have at least one environment using the [!UICONTROL Cloud Manager] UI, you are ready to add a production pipeline by following these steps.
+After you have set up your program and have at least one environment using the [!UICONTROL Cloud Manager] UI, you are ready to add a production pipeline by following these steps.
 
 >[!TIP]
 >
 >Before you configure a front-end pipeline, see the [AEM Quick Site Creation Journey](/help/journey-sites/quick-site/overview.md) for an end-to-end guide through the easy-to-use AEM Quick Site Creation tool. This journey can help you streamline the front-end development of your AEM Site, letting you customize your site quickly with no AEM back-end knowledge.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization
+1. Sign into Cloud Manager at [experiece.adobe.com](https://experience.adobe.com).
+1. In the **Quick access** section, click **Experience Manager**.
+1. In the left side panel, click **Cloud Manager**.
+1. Select an organization that you want.
+1. On the **My Programs** console, click a program. 
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
@@ -115,7 +119,8 @@ A targeted deployment deploys code only for selected parts of your AEM applicati
 * **Config** - Configure settings for various features in your AEM environment.
   * See [Using Config Pipelines](/help/operations/config-pipeline.md) for a list of supported configurations, which includes log forwarding, purge-related maintenance tasks, and various CDN configurations, and to manage them in your repository so they are deployed properly.
   * When running a targeted deployment pipeline, configurations are deployed, provided they were saved to the environment, repository, and branch defined in the pipeline.
-  * At any time, there can only be one config pipeline per environment. 
+  * At any time, there can only be one config pipeline per environment.
+* **Configure Edge Delivery Services config pipeline** - Edge Delivery Configuration Pipelines do not have separate development, staging, and production environments. Unlike AEM as a Cloud Service environments, where changes progress through development, stage, and production tiers, the configuration deployed through an Edge Delivery Configuration Pipeline is applied directly to all domains registered in Cloud Manager for Edge Delivery Sites. To learn more, see [Add an Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md). 
 * **Front End Code** - Configure JavaScript and CSS for the front end of your AEM application.
   * With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
   * See the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of to get the full potential out of this process.

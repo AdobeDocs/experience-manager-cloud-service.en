@@ -4,13 +4,14 @@ description: Learn how to add an Edge Delivery pipeline to build and deploy your
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 hide: no
 index: no
 hidefromtoc: no
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
 ---
 # Add an Edge Delivery pipeline {#configure-production-pipeline}
+
+<!--badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" -->
 
 Learn how to configure Edge Delivery pipelines to build and deploy your code to production environments. A production pipeline deploys code first to the stage environment. On approval, it deploys the same code to the production environment.
 
@@ -26,7 +27,6 @@ A user must have the **[Deployment Manager](/help/onboarding/cloud-manager-intro
 
 <!-- CMGR‑69680 -->
 
-
 Before you start to deploy your code, configure your pipeline settings from the [!UICONTROL Cloud Manager].
 
 >[!NOTE]
@@ -35,11 +35,11 @@ Before you start to deploy your code, configure your pipeline settings from the 
 
 **To add an Edge Delivery pipeline:**
 
-1. Log into Cloud Manager at [experience.adobe.com/experiencemanager](https://my.cloudmanager.adobe.com/), then in the left side panel, click **Cloud Manager**.
-
-1. Select the organization you want.
-
-1. On the **My Programs** page, select the program you want.
+1. Sign into Cloud Manager at [experiece.adobe.com](https://experience.adobe.com).
+1. In the **Quick access** section, click **Experience Manager**.
+1. In the left side panel, click **Cloud Manager**.
+1. Select an organization that you want.
+1. On the **My Programs** console, click a program. 
 
    ![My programs page in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/assets/my-programs.png)
 
@@ -52,12 +52,24 @@ Before you start to deploy your code, configure your pipeline settings from the 
 
          ![The Pipelines card on the Program Overview page](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinescard-add-ed-pipeline.png)
 
+         >[!TIP]
+         >
+         >Beside using the **Pipeline** card as seen in the screenshot above, you can also manage your pipeline from the **Pipelines** page.
+         >
+         >![Edge Delivery pipeline widget showing pipeline name, status, repository, and branch](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-widget.png)
+
    * **Add an Edge Delivery pipeline from the Pipelines page**
 
       1. In the left rail, under **Program**, click **![Workflow icon or Pipelines icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) Pipelines**.
       1. On the Pipelines page, near the upper-right corner, click **Add Pipeline** > **Add Edge Delivery Pipeline**.
 
          ![The Pipelines page with the Add Pipeline button](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinespage-add-ed-pipeline.png)
+
+         >[!TIP]
+         >
+         >Near the upper-left corner of the page, you can click **Filters**, then under the **Delivery type** section, select **Edge delivery** checkbox to filter the list to only Edge Delivery pipelines (that is, pipelines that use Edge Delivery Services). <!-- (CMGR-69682) -->
+         >
+         >![Filter panel showing new Delivery type of Edge delivery and Publish delivery](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
 1. In the **Add Edge Delivery Pipeline** dialog box, in the **Pipeline Name** text field, type a descriptive pipeline label.
 
@@ -78,7 +90,7 @@ Before you start to deploy your code, configure your pipeline settings from the 
 
       See also [Add and Manage Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
-   * **Git Branch** - Use the drop-down list to select a specific branch within the chosen repository. If necessary, click ![Recycle icon or Refresh icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) to reload the Git branch drop-down list after recent pushes
+   * **Git Branch** - Use the drop-down list to select a specific branch within the chosen repository. If necessary, click ![Recycle icon or Refresh icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) to reload the Git branch drop-down list after recent pushes.
    * **Code Location** - Defines the folder path inside the repository where pipeline-ready code starts ( `/` equals the repository root). 
    
    ![Config pipeline](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-sourcecode.png)
@@ -86,3 +98,9 @@ Before you start to deploy your code, configure your pipeline settings from the 
 1. Click **Save**.
 
 You can now [manage your pipeline](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page or from the **Pipelines** page.
+
+
+   ![Edge Delivery pipeline widget showing pipeline name, status, repository, and branch](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-widget.png)
+
+
+
