@@ -243,6 +243,14 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 -->
 
+### Canary Production Deployments to Test Code Before Accepting Live Traffic (Beta Program) {#canary-beta}
+
+Validate a production build with internal-only test traffic before exposing it to end users. Ship to production, route only canary traffic (using a special header), monitor behavior, then either promote to live traffic or roll back—without impacting customers.
+
+Deploy your code releases to production, but restrict it to only internal test traffic before deciding whether to accept live traffic versus rolling back. 
+
+Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) to request access and share feedback.
+
 ### Snapshots for RDEs (Alpha Program) {#rde-snapshot-program}
 
 In alpha, Rapid Development Environments (RDEs) now support a feature to take a snapshot of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
