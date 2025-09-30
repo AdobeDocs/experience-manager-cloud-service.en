@@ -9,7 +9,11 @@ role: Admin, Developer
 
 The modernized OpenAPI implementation of the Content Fragment Management API allows developers to programmatically perform Create, Read, Update, and Delete operations on AEM Author to manage Content Fragment Models and Content Fragments that are stored in AEM. These APIs support a number of use-cases.
 
-The existing usage of [Assets HTTP API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) for Content Fragments should be migrated to the new Content Fragment Management OpenAPI. For full documentation see [Content Fragment Management API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
+For full documentation see [Content Fragment Management API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/).
+
+>[!NOTE]
+>
+>The existing usage of [Assets HTTP API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) for Content Fragments should be migrated to the new Content Fragment Management OpenAPI. 
 
 >[!NOTE]
 >

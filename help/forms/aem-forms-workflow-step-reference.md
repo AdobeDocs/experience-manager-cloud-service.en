@@ -356,8 +356,13 @@ The Invoke Form Data Model (FDM) Service step has the below listed fields to fac
   * **[!UICONTROL Retrieve from Workflow Metadata]**: Use the option when the value to use is saved in a workflow metadata property. For example, emailAddress.
 
   * **[!UICONTROL Relative to Payload]**: Use the option to retrieve the file attachment saved at a path relative to the payload. Select the option and specify either the folder name which includes the file attachment or specify the file attachment name in the text box.
-  
-    For example, if the Relative to Payload folder in the CRX repository includes a file attachment at the `attachment\attachment-folder` location, specify `attachment\attachment-folder` in the text box after selecting the **[!UICONTROL Relative to Payload]** option.
+    
+    >[!NOTE]
+    >
+    > The **Invoke Form Data Model** workflow step supports workflow side metadata for Base64 encoded attachment arrays in [SharePoint List based Form Data Models](/help/forms/connect-forms-to-sharepoint-list.md) and lets workflows pass, store, and retrieve metadata such as file name, MIME type, or custom properties for the attachments.
+    > ![SP List Attachments](/help/edge/docs/forms/assets/workflow-sp-list.png)
+    >
+    > The Relative to Payload folder includes a file attachment at the `attachment` location, specify `attachment` in the text box after selecting the **[!UICONTROL Relative to Payload]** option.
 
   * **[!UICONTROL JSON Dot Notation]**: Use the option when the value to use is in a JSON file. For example, insurance.customerDetails.emailAddress. The JSON Dot Notation option is available only if Map input fields from the input JSON option are selected.
   * **[!UICONTROL Map input fields from input JSON]**: Specify the path of a JSON file to obtain the input value of some service arguments from the JSON file. The path of the JSON file can be relative to the payload, an absolute path, or you can select an input JSON document using a variable of JSON or Form Data Model (FDM) type.

@@ -1,9 +1,9 @@
 ---
 title: Mastering Adaptive Forms Block Field Properties
-description: Craft powerful forms faster using spreadsheets & Adaptive Forms Block Field Properties! This guide lists all the properties supported by EDS Forms Block. 
+description: Craft powerful forms faster using spreadsheets & Adaptive Forms Block Field Properties! This guide lists all the properties supported by EDS Forms Block.
 feature: Edge Delivery Services
+exl-id: e86ccc36-bda0-4e9d-8d65-ae7cb3fa79b7
 ---
-
 # Adaptive Forms Block Field Properties
 
 This document summarizes how JSON schema maps to rendered HTML in `blocks/form/form.js`, focusing on how fields are identified and rendered, common patterns, and field-specific differences.
@@ -94,7 +94,7 @@ Constraints are added as attributes on the input element based on JSON propertie
 | maxOccur     | data-max      | panel |
 | minOccur     | data-min      | panel |
 
-> [!NOTE]
+>[!NOTE]
 >
 > `multiple` is a boolean property. If true, the `multiple` attribute is added.
 
@@ -103,8 +103,6 @@ These attributes are set automatically by the form renderer based on the field's
 ## Example: HTML Structure with Constraints
 
 The following example demonstrates how a number field is rendered with validation constraints and error- handling attributes.
-
-
 
 ```html
 <div class="number-wrapper field-wrapper field-age" data-id="age"
@@ -393,4 +391,3 @@ This table details all the properties you can use to customize your Adaptive For
 | **Options** | Comma-separated list for dropdown menus | `"Option 1, Option 2, Option 3"` |
 | **Checked** | Default-selected radio button/checkbox | `true`, `false` |
 | **Fieldset** | Group fields together | Fieldset name (e.g., `"Personal Information"`) |-->
-
