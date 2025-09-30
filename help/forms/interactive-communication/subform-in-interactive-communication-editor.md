@@ -4,6 +4,9 @@ description: Subform in Interactive Communication Editor manage layouts, control
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+hide: yes
+index: no
+hidefromtoc: yes
 ---
 
 # Subform in Interactive Communication Editor
