@@ -981,7 +981,6 @@ user-guide-title: AEM as a Cloud Service
     + [Barcode Object in Interactive Communication Editor](/help/forms/interactive-communication/barcode-object-in-interactive-communication-editor.md)
     + [Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/data-binding-in-interactive-communication-editor.md)
     + [Rule Creation in Interactive Communication Editor](/help/forms/interactive-communication/rule-creation-in-interactive-communication-editor.md)
-    + [Create your first Interactive Communication](/help/forms/create-your-first-communication.md)
     + [Import and Export Interactive Communication](/help/forms/interactive-communication/import-and-export-interactive-communications.md)
     + [Add Custom Fonts to Interactive Communication Editor](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)
     + [PDF Preview in Interactive Communication Editor](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)
