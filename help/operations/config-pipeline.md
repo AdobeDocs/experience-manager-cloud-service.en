@@ -13,7 +13,9 @@ Learn how you can use config pipelines to deploy different configurations in AEM
 
 A Cloud Manager config pipeline deploys configurations files (created in YAML format) to a target environment. A number of features in AEM as a Cloud Service can be configured in this way, including log forwarding, purge-related maintenance tasks, and several CDN features.
 
-Config pipelines can be deployed via Cloud Manager to dev, stage, and production environment types. The configuration files can be deployed to Rapid Development Environments (RDEs) using [command line tooling](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
+For non-Edge Delivery Services Projects, config pipelines can be deployed via Cloud Manager to dev, stage, and production environment types. The configuration files can be deployed to Rapid Development Environments (RDEs) using [command line tooling](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
+
+Config pipelines can also be deployed via Cloud Manager for Edge Delivery Projects.
 
 This following sections of this document give an overview of important information regarding how config pipelines can be used and how configurations for them should be structured. It describes general concepts shared across either all or a subset of the features supported by config pipelines.
 
@@ -22,26 +24,27 @@ This following sections of this document give an overview of important informati
 * [Common Syntax](#common-syntax) - Syntax shared across configurations
 * [Folder Structure](#folder-structure) - Describes the structure config pipelines expect for the configurations
 * [Secret environment variables](#secret-env-vars) - Examples of using environment variables to not disclose secrets in your configurations
+* [Secret pipeline variables](#secret-pipeline-vars) - Examples of using environment variables to not disclose secrets in your configurations fore Edge Delivery Services projects
 
 ## Supported Configurations {#configurations}
 
 The following table offers a comprehensive list of such configurations with links to dedicated documentation describing its distinct configuration syntax and other information.
 
-| Type   | YAML `kind` Value | Description  |
-|---|---|---|
-| [Traffic Filter Rules, including WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | Declare rules to block malicious traffic |
-| [Request Transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)  | `CDN` | Declare rules to transform the shape of the traffic request |
-| [Response Transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations)  | `CDN` | Declare rules to transform the shape of the response for a given request |
-| [Server-side Redirects](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors)  | `CDN` | Declare 301/302-style server-side redirects |
-| [Origin Selectors](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors)  | `CDN` | Declare rules to route traffic to different backends, including non-Adobe applications |
-| [CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Override the default error page if AEM origin cannot be reached, referencing the location of self-hosted static content in the configuration file  |
-| [CDN Purge](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Declare the Purge API keys used to purge the CDN |
-| [Customer-managed CDN HTTP token](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | Declare the value of the X-AEM-Edge-Key needed to call the Adobe CDN from a Customer CDN |
-| [Basic authentication](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Declare the usernames and passwords for a basic auth dialog protecting certain URLs. |
-| [Version Purge Maintenance Task](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimize the AEM repository by declaring rules around when content versions should be purged |
-| [Audit log Purge Maintenance Task](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimize the AEM audit log for increased performance by declaring rules around when logs should be purged |
-| [Log forwarding](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configure the endpoints and credentials for forwarding logs to various destinations, including Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk |
-| [Registering a Client ID](/help/implementing/developing/open-api-based-apis.md) | `API` | Scope Adobe Developer Console API projects to a specific AEM environments by registering the client ID. This is needed for usage of OpenAPI-based APIs that require authentication |
+| Type   | YAML `kind` Value | Description  | Publish Delivery | Edge Delivery |
+|---|---|---|---|---|
+| [Traffic Filter Rules, including WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | Declare rules to block malicious traffic | X | X |
+| [Request Transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)  | `CDN` | Declare rules to transform the shape of the traffic request | X | X |
+| [Response Transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations)  | `CDN` | Declare rules to transform the shape of the response for a given request | X | X |
+| [Server-side Redirects](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors)  | `CDN` | Declare 301/302-style server-side redirects | X | X |
+| [Origin Selectors](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors)  | `CDN` | Declare rules to route traffic to different backends, including non-Adobe applications | X | X |
+| [CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md) | `CDN` | Override the default error page if AEM origin cannot be reached, referencing the location of self-hosted static content in the configuration file  | X |  |
+| [CDN Purge](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) | `CDN` | Declare the Purge API keys used to purge the CDN | X |  |
+| [Customer-managed CDN HTTP token](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value) | `CDN` | Declare the value of the X-AEM-Edge-Key needed to call the Adobe CDN from a Customer CDN | X |  |
+| [Basic authentication](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | Declare the usernames and passwords for a basic auth dialog protecting certain URLs. | X | X |
+| [Version Purge Maintenance Task](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimize the AEM repository by declaring rules around when content versions should be purged | X |  |
+| [Audit log Purge Maintenance Task](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimize the AEM audit log for increased performance by declaring rules around when logs should be purged | X |  |
+| [Log forwarding](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configure the endpoints and credentials for forwarding logs to various destinations, including Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk | X | X |
+| [Registering a Client ID](/help/implementing/developing/open-api-based-apis.md) | `API` | Scope Adobe Developer Console API projects to a specific AEM environments by registering the client ID. This is needed for usage of OpenAPI-based APIs that require authentication | X |  |
 
 ## Creating and Managing Config Pipelines {#creating-and-managing}
 
@@ -115,7 +118,7 @@ Use this structure when the same configuration is sufficient for all environment
      envTypes: ["dev", "stage", "prod"]
 ```
 
-Using secret-type environment variables, it is possible for [secret properties](#secret-env-vars) to vary per environment, as illustrated by the `${{SPLUNK_TOKEN}}` reference
+Using secret-type environment (or pipeline) variables, it is possible for [secret properties](#secret-env-vars) to vary per environment, as illustrated by the `${{SPLUNK_TOKEN}}` reference
 
 ```yaml
 kind: "LogForwarding"
@@ -170,9 +173,23 @@ The file structure will resemble the following:
 
 A variation of this approach is to maintain a separate branch per environment.
 
+### Edge Delivery Services {#yamls-for-eds}
+
+Edge Delivery Services has the concept of sites rather than environments. Thus, deploy a simple file structure like:
+
+```text
+/config
+  cdn.yaml
+  logForwarding.yaml
+```
+
+If a rule needs to differ per site, use the *when* syntax to distinguish the rules from each other.
+
 ## Secret Environment Variables {#secret-env-vars}
 
 So that sensitive information need not be stored in source control, configuration files support Cloud Manager environment variables of type **secret**. For some configurations, including log forwarding, secret environment variables are mandatory for certain properties.
+
+Note that secret environment variables are used for Publish Delivery projects; see the Secret Pipeline Variables section for Edge Delivery Services projects.
 
 The snippet below is an example of how the secret environment variable `${{SPLUNK_TOKEN}}` is used in the configuration.
 
@@ -191,3 +208,13 @@ The snippet below is an example of how the secret environment variable `${{SPLUN
    ```
 
 Please see the document [Cloud Manager Environment Variables](/help/implementing/cloud-manager/environment-variables.md) for details on how to use environment variables.
+
+## Secret Pipeline Variables {#secret-pipeline-vars}
+
+For Edge Delivery Services Projects, use Cloud Manager pipeline variables of type **secret** so sensitive information need not be stored in source control. The *Step Applied* select box should use the **deploy** option. 
+
+The syntax is identical to the snippet shown in the previous section.
+
+Please see the document [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines
+/pipeline-variables.md) for details on how to use pipeline variables.
+
