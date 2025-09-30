@@ -6,6 +6,7 @@ feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
 ---
+
 # Create an Interactive Communication Template
 
 >[!NOTE]
