@@ -1,12 +1,12 @@
 ---
-title: Create an Interactive Communication Fragment
-description: Create Interactive Communication Fragments in AEM Forms to build modular, reusable content blocks that ensure consistency, save time, and support personalized, data-driven communications.
+title: Barcode Object in Interactive Communication Editor
+description: Barcode Object in Interactive Communication Editor in AEM Forms enables authors to visually represent encoded data within communication templates.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Barcode Object in IC Editor 
+# Barcode Object in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -21,6 +21,8 @@ role: User, Developer, Admin
 The Barcode object in the Interactive Communication editor enables authors to visually represent encoded data within communication templates. This is particularly useful for applications that involve tracking, identification, billing, or automation. With support for various barcode standards like Code 128, QR, and more, this component offers flexible styling, positioning, and data binding options to suit a wide range of business needs. 
 
 Whether you're creating customer invoices, shipping labels, or membership cards, the Barcode object simplifies the process by embedding machine-readable data directly into your document. 
+
+![Find IC Docu](/help/forms/interactive-communication/assets/barcode.png)
 
 ## 2. Properties 
 

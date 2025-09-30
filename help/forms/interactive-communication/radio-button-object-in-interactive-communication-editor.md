@@ -1,12 +1,12 @@
 ---
-title: Create an Interactive Communication Fragment
-description: Create Interactive Communication Fragments in AEM Forms to build modular, reusable content blocks that ensure consistency, save time, and support personalized, data-driven communications.
+title: Radio Button Object in Interactive Communication Editor
+description: Radio Button Object in Interactive Communication Editor in AEM Forms allows authors to present a set of mutually exclusive choices to users—meaning only one option can be selected at a time.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Radio Button Object in IC Editor 
+# Radio Button Object in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -20,6 +20,8 @@ role: User, Developer, Admin
 
 The **Radio Button** component in the Interactive Communication (IC) editor allows authors to present a set of mutually exclusive choices to users—meaning only one option can be selected at a time. This makes it ideal for use cases like Yes/No questions, gender selection, rating levels, or predefined categorical responses. 
 Radio buttons are intuitive, easy to configure, and can be bound to back-end data models for seamless data capture and integration. 
+
+![Find IC Docu](/help/forms/interactive-communication/assets/radio.png)
 
 ## 2. Properties 
 

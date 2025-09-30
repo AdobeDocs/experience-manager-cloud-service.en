@@ -1,12 +1,12 @@
 ---
-title: Create an Interactive Communication Fragment
-description: Create Interactive Communication Fragments in AEM Forms to build modular, reusable content blocks that ensure consistency, save time, and support personalized, data-driven communications.
+title: Numeric Field Object in Interactive Communication Editor 
+description: Numeric Field Object in Interactive Communication Editor in AEM Forms to nables authors to collect numerical input from users in a controlled format.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Numeric Field Object in IC Editor 
+# Numeric Field Object in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -19,6 +19,8 @@ role: User, Developer, Admin
 ## 1. Introduction 
 
 The Numeric Field component in the Interactive Communication (IC) editor enables authors to collect numerical input from users in a controlled format. Whether capturing phone numbers, PIN codes, policy IDs, or financial figures, this field ensures that only numeric values are accepted. The component also supports styling, formatting, validation, and data binding, making it essential for structured communications. 
+
+![Find IC Doc](/help/forms/interactive-communication/assets/numericfield.png)
 
 ## 2. Properties 
 

@@ -1,12 +1,12 @@
 ---
-title: Create an Interactive Communication Fragment
-description: Create Interactive Communication Fragments in AEM Forms to build modular, reusable content blocks that ensure consistency, save time, and support personalized, data-driven communications.
+title: Text Box Object in Interactive Communication Editor 
+description: Text Box Object in Interactive Communication Editor in AEM Forms allows authors to input and display text content within a communication.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Text Box Object in IC Editor 
+# Text Box Object in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ The **Text Box** object in the Interactive Communication Editor allows authors t
 
 The Text Box supports **data binding**, enabling authors to combine static and dynamic content seamlessly, for example: ***"User's name: @name"***, where @name is a bound data field that dynamically populates when the document is saved as a PDF. Additionally, it supports rich text formatting and flexible positioning for precise layout control. 
 
-![Find IC Doc](/help/forms/interactive-communication/assets/introimg.png)
+![Find IC Doc](/help/forms/interactive-communication/assets/textbox.png)
 
 ## 2. Properties 
 

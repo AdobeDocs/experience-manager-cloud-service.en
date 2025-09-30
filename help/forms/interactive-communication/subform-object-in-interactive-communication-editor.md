@@ -1,12 +1,12 @@
 ---
-title: Create an Interactive Communication Fragment
-description: Create Interactive Communication Fragments in AEM Forms to build modular, reusable content blocks that ensure consistency, save time, and support personalized, data-driven communications.
+title: Subform Object in Interactive Communication Editor
+description: Subform Object in Interactive Communication Editor in AEM Forms allows you to organize multiple form elements in a flexible and structured way.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Subform Object in IC Editor 
+# Subform Object in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -21,6 +21,8 @@ role: User, Developer, Admin
 The **Subform** component in the Interactive Communication (IC) editor acts as a dynamic layout container that allows you to organize multiple form elements in a flexible and structured way. It is commonly used to group related fields, create repeating sections, or define nested data structures for improved user experience and data binding. 
 
 Subforms can be configured to flow in different layouts, such as top-to-bottom or left-to-right, making them ideal for complex form designs and reusable sections. 
+
+![Find IC Docu](/help/forms/interactive-communication/assets/subform.png)
 
 ## 2. Properties 
 

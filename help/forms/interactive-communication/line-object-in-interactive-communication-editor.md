@@ -1,12 +1,12 @@
 ---
-title: Create an Interactive Communication Fragment
-description: Create Interactive Communication Fragments in AEM Forms to build modular, reusable content blocks that ensure consistency, save time, and support personalized, data-driven communications.
+title: Line Object in Interactive Communication Editor 
+description: Line Object in Interactive Communication Editor in AEM Forms allows authors to insert horizontal or vertical lines within a communication layout.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Line Object in IC Editor 
+# Line Object in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -19,6 +19,8 @@ role: User, Developer, Admin
 ## 1. Introduction 
 
 The Line Object in the Interactive Communication (IC) editor allows authors to insert horizontal or vertical lines within a communication layout. These lines help in visually segmenting content, enhancing readability, or emphasizing form structure. With customizable styles such as solid lines or underlines and flexible positioning, the Line Object can be used for both functional and aesthetic purposes in form design. 
+
+![Find IC Docu](/help/forms/interactive-communication/assets/line.png)
 
 ## 2. Properties 
 
