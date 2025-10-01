@@ -18,11 +18,33 @@ The 2025.10.0 feature activation will provide the full feature set for this main
 
 ### Enhancements {#enhancements-22758}
 
-None.
+* ASSETS-56227: Rename adobe-countdown-timer modifier
+* CNTBF-493: Bump content-backflow bundle version to 2.0.28
+* CQ-4361110:  Granite translations
+* CQ-4361112:  Latest AEM translations
+* GRANITE-56026: Improve permissions API status code responses
+* GRANITE-61015: Added 'org.apache.commons.io.channels' package to the public exported list
+* GRANITE-61167: Felix log has been updated to the latest OSGI spec
+* GRANITE-61167: Update felix dependencies
+* GRANITE-61169: Improve the check for protected strings
+* GRANITE-61622: Update sling dependencies
+* GRANITE-61663: Add com.adobe.granite.repository.indexdefs-1.0.2 to quickstart
+* GRANITE-61811: Add com.adobe.granite.repository-2.0.0 to quickstart
+* SITES-32014: Listen for external events to update service registrations
+* SITES-34277: Fix blocking error in translations workflows for pages
+* SKYOPS-108706: Upgraded release toggles bundle to latest version (etag caching)
+* SKYOPS-114210: Updating to latest version of aem.pss.service bundle
+* SKYOPS-116171: Update to Sling ResourceResolver 1.12.12
+* SKYOPS-119811: Released dispatcher-publish 2.0.258
 
 ### Fixed Issues {#fixed-issues-22758}
 
-None.
+* GRANITE-61875: Fix triggers for "invalid expression evaluation" – Authors cannot save Content Fragments & assets fail to download
+* SITES-22059: Fix JS error in PDF Viewer components. Unlocalized "File preview not available" string in Core Components site > PDF Viewer
+* GRANITE-59704: Fix htmllibmanager.debug causing edit mode to fail
+* GRANITE-61042: Integrate FELIX-6796 (ServiceTracker NPE fix) into AEM Felix Web Console bundle
+* GRANITE-61165: Workspace.copy() throwing RepositoryException
+* GRANITE-61875: Update ui.commons to 5.10.50
 
 ### Known Issues {#known-issues-22758}
 
@@ -40,7 +62,7 @@ AEM as a Cloud Service is dedicated to optimizing your platform's security and p
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM Oak | 1.86.0|[Oak API 1.86.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.86/index.html)| 
+|AEM Oak | 1.86.0|[Oak 1.86.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.86/index.html)| 
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |Apache HTTP Server| 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES)|
