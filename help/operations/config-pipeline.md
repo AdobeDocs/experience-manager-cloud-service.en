@@ -234,6 +234,5 @@ For Edge Delivery Services Projects, use Cloud Manager pipeline variables of typ
 
 The syntax is identical to the snippet shown in the previous section.
 
-Please see the document [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines
-/pipeline-variables.md) for details on how to use pipeline variables.
+Please see the document [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) for details on how to use pipeline variables.
 
