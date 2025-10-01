@@ -21,14 +21,6 @@ The next planned release is Thursday, November 6, 2025.
 
 ## What's new {#what-is-new}
 
-* **Config Pipeline support**
-
-    Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Config Pipelines** to manage settings such as traffic filtering rules and Web Application Firewall (WAF) configurations, where applicable. See [Supported Configurations](/help/operations/config-pipeline.md#configurations). 
-
-    Edge Delivery config pipelines also support secrets through Cloud Manager pipeline variables.
-
-    See [Add Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
-
 * **AEM Cloud Health Assessment Service**
 
     Adobe introduces the AEM Cloud Health Assessment Service, an automated, non-invasive checkup tool that keeps your AEM as a Cloud Service environment optimized, secure, and aligned with best practices.
@@ -46,16 +38,35 @@ The next planned release is Thursday, November 6, 2025.
     
     See [Health Assessment for Production and Stage Environments](/help/implementing/cloud-manager/reports/report-health-assessment.md).
 
+* **Config Pipeline support**
 
+    Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Config Pipelines** to manage settings such as traffic filtering rules and Web Application Firewall (WAF) configurations, where applicable. See [Supported Configurations](/help/operations/config-pipeline.md#configurations). 
 
+    Edge Delivery config pipelines also support secrets through Cloud Manager pipeline variables.
 
+    See [Add Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
 
+* **Domain Mapping-CDN setup dialog box streamlined**
 
+    Cloud Manager has simplified the **Map Domain to CDN** flow to reduce confusion and speed configuration. The dialog box now emphasizes **Adobe managed CDN** (with a "Recommended" badge). 
 
+    ![Map Domain to CDN dialog box with Adobe managed CDN radio button selected](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-adobe-managed-cdn.png). 
 
+    See [Add a domain mapping](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md).
+    
+    The dialog box also presents a single, concise checklist for the **Other CDN provider** card, focusing on instructional content with the following: 
+    
+    * Point your CDN origin to `publish-p<PROGRAM_ID>-e<ENV_ID>.adobeaemcloud.com`.
+    * Set **Host/SNI** to forward the original host.
+    * Add `X-AEM-Edge-Key` (after deploying the key in Cloud Manager).
+    * Set `X-Forwarded-Host` to your customer-facing domain.
+    * Clear other `X-Forwarded-*` headers before reaching AEM.
 
-
-
+    ![Map Domain to CDN dialog box with Other CDN provider radio button selected](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-other-cdn-provider.png)
+    
+    <!-- (no redundant `Origin` field or "Learn more" clutter) -->The accompanying footer provides two helpful links: sample configurations for major CDNs and a link to full documentation. A single confirmation button&ndash;I've Configured My CDN&ndash;completes the flow.
+   
+    See [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN).
 
 <!--
 ### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
