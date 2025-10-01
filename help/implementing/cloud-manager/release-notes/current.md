@@ -185,7 +185,7 @@ See [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage
 
 ## Bug fixes {#bug-fixes}
 
-There are no significant bug fixes in the September Cloud Manager release.
+There are no significant bug fixes in the October Cloud Manager release.
 
 
 <!-- ## Known issues {#known-issues} -->
