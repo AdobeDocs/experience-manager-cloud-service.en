@@ -171,6 +171,20 @@ Execute these steps to add text layers to the canvas:
 
 See the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer) to reposition, resize, rotate or delete the layer. Format your text to the required font, size, color, style, alignment (in the layer) by changing their values in the respective fields under the **[!UICONTROL Text]** section of the panel. The **[!UICONTROL Font Family]** field displays [!UICONTROL Adobe Sans F2] default font, the reprocessed existing fonts and the newly uploaded and published fonts. See point 5 in the [Before you begin](#prerequisites-for-dynamic-media-wysiwyg-template) section above for more information.
 
+[Format specific parts of text](#apply-formatting-to-substring) and [parameterize them to control them independently](#substring-parameterisation).
+
+#### Format selective text{#apply-formatting-to-substring}
+
+Execute the following steps to format specific parts of a string:
+
+1. Select one or more characters in the string to format.
+1. Format the selection using the [properties panel](#properties-panel). The following formatting options are applicable to substrings and their parts:
+   * **Font Style**: Bold, italic, underline, subscript, and superscript using the **[!UICONTROL Font Style]** option.
+   * **Font Properties**: Change font family, color, and size using the respective panel options.
+   ![format-substring](/help/assets/assets/format-substring.png)
+
+[Each formatted string part displays as a substring in the substring selector, available within the parameters panel. Add parameters to these formatted parts to format them dynamically using the template's delivery URL](#substring-parameterisation).
+
 ### Add shapes to the canvas {#add-shapes-to-the-canvas}
 
 Execute these steps to add shapes to the canvas:
@@ -234,23 +248,56 @@ To switch between the Parameter panel of an image and text layer, select the lay
 
 The parameterised properties can be included as URL parameters in the template URL to edit the template in real time using the URL. 
 
-**Image parameters:**
+##### Layer parameters{#layer-parameters}
+
+The following are layer parameters that apply to both image and text layers.
 
 **[!UICONTROL X]:** Include to move the layer horizontally along its centerline, parallel to the X-axis of the template plane, by changing the parameter's value in the URL.
 **[!UICONTROL Y]:** Include to move the layer vertically along its centerline, parallel to the Y-axis of the template plane, by changing the parameter's value in the URL. 
 **[!UICONTROL Width]:** Include to adjust the layer's width by changing the parameter's value in the URL.
 **[!UICONTROL Height]:** Include to adjust the layer's height by changing the parameter's value in the URL.
 **[!UICONTROL Hide]:** Include to hide or show the layer in the template using 0 (show) and 1 (hide).
-**[!UICONTROL Source]:** Include to replace the layer's image with a new image by changing the image path in the parameter's value in the URL.
 
-**Text formatting parameters:**
+##### Image parameter{#image-parameter}
 
-Include the below parameters to edit the text, its font, color and size from the URL by updating the parameter values in the URL.
+Include **[!UICONTROL Source]** parameter to replace the layer's image with a new image by changing the image path in the parameter's value in the URL.
+![image source parameter](/help/assets/assets/image-parameter.png)
+
+##### Text formatting parameters{#text-formatting-parameters}
+
+Include the following parameters to edit the text, its font, color and size from the delivery URL by updating the parameter values in the URL:
 
 **[!UICONTROL Text]:** Include to update text from the URL.
 **[!UICONTROL Font Family]:** Include to update the text's font from the URL.
 **[!UICONTROL Font Size]:** Include to update the text's font size from the URL.
 **[!UICONTROL Text color]:** Include to update the text's font color from the URL.
+
+##### Parameterize substrings{#substring-parameterisation}
+
+In the **[!UICONTROL Parameters]** panel, scroll to the **[!UICONTROL Substring Parameters]** section. This section includes a **substring selector** that displays the complete string (selected text layer) with consistent formatting or its formatted parts as separate substrings. Select a substring to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
+Use the substring selector to [split substrings](#split-substring) to parameterize its individual parts or [merge substrings](#merge-substring) to apply uniform parameters.
+
+###### Split substring{#split-substring}
+
+To parameterize a specific part of a substring, pull out the part to make it a separate substring for individual selection and parameterization. Execute the following steps to split a substring into separate substrings:
+
+1. In the substring selector, select the characters within a substring  to separate it.
+1. Click ![split substring](/help/assets/assets/unmerge.svg) to pull out the selection and make it a separate substring within the **substring selector**. 
+![split substring](/help/assets/assets/split-a-substring.png)
+You can select the required substring to [parameterize its text, font family, font size, and color](#text-formatting-parameters).
+
+###### Merge substring{#merge-substring}
+
+Merging substrings removes their existing individual parameters and enables you to apply consistent parameters across the newly formed substring.
+Execute the following steps to merge two adjacent substrings to apply uniform parameters to the resulting substring:
+
+1. In the substring selector, select characters across two adjacent substrings with same formatting.
+1. Click ![merge substring](/help/assets/assets/merge.svg) to merge the substrings.
+![merge identical substrings](/help/assets/assets/merge-two-substrings.png)
+You can apply uniform parameters to the newly formed substring.
+   >[!NOTE]
+   >
+   >Only substrings with identical formatting can be merged.
 
 ### Group layers to control their visibility simultaneously{#group-layers}
 
