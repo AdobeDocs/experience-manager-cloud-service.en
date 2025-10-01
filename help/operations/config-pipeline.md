@@ -13,14 +13,14 @@ Learn how you can use config pipelines to deploy different configurations in AEM
 
 A Cloud Manager config pipeline deploys configurations files (created in YAML format) to a target environment. A number of features in AEM as a Cloud Service can be configured in this way, including log forwarding, purge-related maintenance tasks, and several CDN features.
 
-For non-Edge Delivery Services Projects, config pipelines can be deployed via Cloud Manager to dev, stage, and production environment types. The configuration files can be deployed to Rapid Development Environments (RDEs) using [command line tooling](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
+For **Publish Delivery** Projects, config pipelines can be deployed via Cloud Manager to dev, stage, and production environment types. The configuration files can be deployed to Rapid Development Environments (RDEs) using [command line tooling](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
 
-Config pipelines can also be deployed via Cloud Manager for Edge Delivery Projects.
+Config pipelines can also be deployed via Cloud Manager for **Edge Delivery** Projects.
 
 This following sections of this document give an overview of important information regarding how config pipelines can be used and how configurations for them should be structured. It describes general concepts shared across either all or a subset of the features supported by config pipelines.
 
 * [Supported Configurations](#configurations) - A list of configurations that can be deployed with config pipelines
-* [Creating and Managing Config Pipelines](#creating-and-managing) - How to create a config pipeline.
+* [Creating and Managing Config Pipelines](#creating-and-managing) - How to create a config pipeline
 * [Common Syntax](#common-syntax) - Syntax shared across configurations
 * [Folder Structure](#folder-structure) - Describes the structure config pipelines expect for the configurations
 * [Secret environment variables](#secret-env-vars) - Examples of using environment variables to not disclose secrets in your configurations
@@ -48,12 +48,9 @@ The following table offers a comprehensive list of such configurations with link
 
 ## Creating and Managing Config Pipelines {#creating-and-managing}
 
-For information on how to create and configure pipelines, see [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
+For information on how to create and configure **Publish Delivery** config pipelines, see [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). When creating a config pipeline in Cloud Manager, be sure to select a **Targeted Deployment** rather than **Full Stack Code** when configuring the pipeline. As noted earlier, configuration for RDEs is deployed using [command line tooling](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) rather than a pipeline.
 
-When creating a config pipeline in Cloud Manager, be sure to select a **Targeted Deployment** rather than **Full Stack Code** when configuring the pipeline.
-
-As noted earlier, configuration for RDEs is deployed using [command line tooling](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) rather than a pipeline.
-
+For information on how to create and configure **Edge Delivery** config pipelines, see the [Add an Edge Delivery pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) article.
 
 ## Common Syntax {#common-syntax}
 
@@ -70,7 +67,7 @@ Each configuration file begins with properties resembling the following example 
 |---|---|---|
 |  `kind` | A string that determines which type of configuration, such as log forwarding, traffic filter rules, or request transformations | Required, no default |
 |  `version` | A string representing the schema version | Required, no default |
-|  `envTypes` | This array of strings is a child property of the `metadata` node. Possible values are dev, stage, prod, or any combination, and it determines for which environment types the configuration will be processed. For example, if the array only includes `dev`, the configuration will not be loaded on stage or prod environments, even if the configuration is deployed there. | All environment types (dev, stage, prod)|
+|  `envTypes` | This array of strings is a child property of the `metadata` node. For **Publish Delivery**, possible values are dev, stage, prod, or any combination, and it determines for which environment types the configuration will be processed. For example, if the array only includes `dev`, the configuration will not be loaded on stage or prod environments, even if the configuration is deployed there. For **Edge Delivery**, only a value of `prod` should be used | All environment types, which is (dev, stage, prod) for Publish Delivery or just prod for Edge Delivery |
 
 You can use the `yq` utility to validate locally the YAML formatting of your configuration file (for example, `yq cdn.yaml`).
 
