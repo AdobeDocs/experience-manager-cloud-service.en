@@ -113,7 +113,7 @@ See [Use config pipelines](/help/operations/config-pipeline.md) for a comprehens
 
 >[!NOTE]
 >
->Edge Delivery Configuration Pipelines do not have separate development, staging, and production environments. Unlike AEM as a Cloud Service environments, where changes progress through development, stage, and production tiers, the configuration deployed through an Edge Delivery Configuration Pipeline is applied directly to all domains registered in Cloud Manager for Edge Delivery Sites. To learn more, see [Add an Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
+>Edge Delivery Configuration Pipelines do not have separate development, staging, and production environments. In AEM as a Cloud Service, changes move through development, stage, and production tiers. In contrast, an Edge Delivery Configuration Pipeline applies its configuration directly to all Edge Delivery Sites domains registered in Cloud Manager. To learn more, see [Add an Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
 
 
 ### Configure config Pipelines {#configure-config-deployment}
