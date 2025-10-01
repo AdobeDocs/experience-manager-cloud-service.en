@@ -204,6 +204,8 @@ data:
       action: block
 ```
 
+If including the *envTypes* metadata field, only the value **prod** should be used (omitting the envTypes metadata field is also fine). For the *tier* reqProperty, only the value **publish** should be used.  
+
 ## Secret Environment Variables {#secret-env-vars}
 
 So that sensitive information need not be stored in source control, configuration files support Cloud Manager environment variables of type **secret**. For some configurations, including log forwarding, secret environment variables are mandatory for certain properties.
