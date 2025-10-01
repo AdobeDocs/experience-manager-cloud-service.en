@@ -112,6 +112,11 @@ Interactive Communications on Cloud is a powerful solution for creating, managin
 
 * **Rule Editor**: Build dynamic, data-driven actions directly within your documents using an intuitive, point-and-click interface. Easily define conditional logic, automate workflows, and personalize content without writing code.
 
+* **PDF Preview:** Preview Interactive Communication with no data, local JSON files, or data models for flexible, data-driven testing.
+* **Custom Fonts:** Embed custom or organization-approved fonts to ensure consistent, branded PDF rendering across devices.
+* **Import and Export:** Seamlessly migrate and reuse Interactive Communication with their fragments and data models across environments.
+
+
 #### Use Cases:
 
 * Financial institutions generating account statements
@@ -155,7 +160,7 @@ Ready to start? The [Introduction to HTML5 forms](/help/forms/introductionhtml5.
 
 Accelerate your AEM Forms Edge Delivery Services development with the AEM Forms CLI tool. This command-line interface enables you to instantly generate the code and wiring needed to kickstart custom component development—no boilerplate, no hassle.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+>[!VIDEO](<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
 **Key capabilities:**
 
@@ -277,6 +282,10 @@ Storing PDFs in Azure Blob Storage allows for centralized management of document
 * **Improved Security**: By leveraging Azure's built-in security features, such as encryption at rest and role-based access control (RBAC), sensitive documents remain protected during storage.
 
 * **Customizable Storage Paths**: The ability to define custom directory paths ensures generated PDFs are stored in organized and application-specific locations, improving file management.
+
+### Enhancements in Visual Rule Editor 
+
+* The Visual Rule Editor in Adaptive Forms now supports [direct API integration without requiring a Form Data Model](/help/forms/api-integration-in-rule-editor.md). You can connect to an API endpoint by entering its JSON URL or by importing the configuration using a cURL command. After integration, the API can be invoked using the `Invoke Service` action.
 
 ## See also
 
