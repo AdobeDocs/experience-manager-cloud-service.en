@@ -175,7 +175,9 @@ A variation of this approach is to maintain a separate branch per environment.
 
 ### Edge Delivery Services {#yamls-for-eds}
 
-Edge Delivery Services has the concept of sites rather than environments. Thus, deploy a simple file structure like:
+Edge Delivery config pipelines do not have separate development, staging, and production environments. Unlike Publish Delivery environments, where changes progress through dev, stage, and prod tiers, the configuration deployed through an Edge Delivery config pipeline is applied directly to all domains registered in Cloud Manager for Edge Delivery Sites.
+
+Thus, deploy a simple file structure like:
 
 ```text
 /config
@@ -183,7 +185,7 @@ Edge Delivery Services has the concept of sites rather than environments. Thus, 
   logForwarding.yaml
 ```
 
-If a rule needs to differ per site, use the *when* syntax to distinguish the rules from each other.
+If a rule needs to differ per Edge Delivery Site, use the *when* syntax to distinguish the rules from each other.
 
 ## Secret Environment Variables {#secret-env-vars}
 
