@@ -89,7 +89,7 @@ Implement [conditional logic](/help/forms/rule-editor-core-components.md), progr
 Render XFA-based forms as [HTML5 forms](/help/forms/introductionhtml5.md) for mobile devices and legacy browsers. HTML5 Forms provide native mobile experience without plugins while maintaining form logic and validation from original XDP templates.
 
 **Interactive Communications**
-Create document-centric communications like statements, invoices, and notices using a visual editor. [Interactive Communications](/help/forms/introduction-to-interactive-communication.md) combine static content with dynamic data to generate personalized communications across print and digital channels.
+Create document-centric communications like statements, invoices, and notices using a visual editor. [Interactive Communications](/help/forms/interactive-communication/create-interactive-communication.md) combine static content with dynamic data to generate personalized communications across print and digital channels.
 
 ### Govern: Review and Compliance {#govern}
 
@@ -243,7 +243,7 @@ For complex requirements involving multiple systems, document generation, and ap
 **Document Services & Communications:**
 
 1. **[Implement Communication APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)** for automated document generation
-2. **[Create Interactive Communications](/help/forms/introduction-to-interactive-communication.md)** for personalized statements and notices
+2. **[Create Interactive Communications](/help/forms/interactive-communication/create-interactive-communication.md)** for personalized statements and notices
 3. **[Set up Forms Portal](/help/forms/configure-forms-portal.md)** for centralized form management
 
 ### Enterprise Deployment: Scale and Governance {#enterprise-deployment}
