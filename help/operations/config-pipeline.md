@@ -185,7 +185,24 @@ Thus, deploy a simple file structure like:
   logForwarding.yaml
 ```
 
-If a rule needs to differ per Edge Delivery Site, use the *when* syntax to distinguish the rules from each other.
+If a rule needs to differ per Edge Delivery Site, use the *when* syntax to distinguish the rules from each other. For example, notice that the domain matches dev.example.com in the snippet below, which can be distinguished from the domain www.example.com.
+
+```
+kind: "CDN"
+version: "1"
+data:
+  trafficFilters:
+    rules:
+    # Block simple path
+    - name: block-path
+      when:
+        allOf:
+          - reqProperty: domain
+            equals: "dev.example.com"
+          - reqProperty: path
+            equals: '/block/me'
+      action: block
+```
 
 ## Secret Environment Variables {#secret-env-vars}
 
