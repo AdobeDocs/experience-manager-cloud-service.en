@@ -136,7 +136,7 @@ Now, when the Adaptive Form is submitted an updated  Document of Record of recor
 
 Keep in mind the following considerations and limitations when working on Document of Record for Adaptive Forms.
 
-* Document of Record templates do not support rich text. Therefore, any rich text in the static Adaptive Form or in the information filled in by the user appears as plain text in the Document of Record.
+* **Rich text support**: Document of Record supports HTML markup tags in rich text fields. For complete details on supported tags and accessibility considerations, see [Supported HTML markup tags in Document of Record](html-markup-tags-support-in-document-of-record.md).
 * Document fragments in an Adaptive Form do not appear in the Document of Record. However, Adaptive Form Fragments are supported.
 * Content binding in Document of Record generated for XML Schema based Adaptive Form is not supported.
 * Localized version of Document of Record is created on demand for a locale when the user requests the rendering of the Document of Record. Localization of Document of Record occurs along with localization of Adaptive Form. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
@@ -399,9 +399,9 @@ To localize the branding information that you enter in the Document of Record ta
 
 ## Document of Record Support in Adaptive Form Editor {#dor-support-in-adaptiveform}
 
-You can configure the [!UICONTROL Document of Record] template directly from the Adaptive Form builder or Adaptive Form template builder. 
+You can configure the [!UICONTROL Document of Record] template directly from the Adaptive Form editor or Adaptive Form template editor. 
 
-Perform the following steps from the author instance of Adaptive Form builder: 
+Perform the following steps from the author instance of Adaptive Form editor: 
 
 1. Select the **[!UICONTROL Adaptive Form container (Root)]** component.
 1. Click ![Configure Icon](/help/forms/assets/configure-icon.svg) icon to open the **[!UICONTROL Properties]** of the Adaptive Form container.
