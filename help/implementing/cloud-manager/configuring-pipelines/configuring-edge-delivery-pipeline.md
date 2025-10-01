@@ -21,7 +21,7 @@ A user must have the **[Deployment Manager](/help/onboarding/cloud-manager-intro
 >
 >An Edge Delivery pipeline cannot be configured until the following has happened: 
 >
->* A program is created that contains one Edge Delivery Services site and one mapped domain. Otherwise, the option **Add Edge Delivery Pipeline** appears disabled in the user interface, and a tooltip explains missing requirements. See [Create an Edge Delivery site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+>* A program is created that contains one Edge Delivery Services site and one mapped domain. Otherwise, the option called **Add Edge Delivery Pipeline** appears disabled in the user interface, and a tooltip explains missing requirements. See [Create an Edge Delivery site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
 >* The Git repository has at least one branch. See [Manage Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
 >* The production and staging environments are created. See [Introduction to CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
@@ -67,7 +67,7 @@ Before you start to deploy your code, configure your pipeline settings from the 
 
          >[!TIP]
          >
-         >Near the upper-left corner of the page, you can click **Filters**, then under the **Delivery type** section, select **Edge delivery** checkbox to filter the list to only Edge Delivery pipelines (that is, pipelines that use Edge Delivery Services). <!-- (CMGR-69682) -->
+         >Near the upper-left corner, click **Filters**, then under the **Delivery type** section, select the **Edge delivery** checkbox to filter the list to only Edge Delivery pipelines (that is, pipelines that use Edge Delivery Services). <!-- (CMGR-69682) -->
          >
          >![Filter panel showing new Delivery type of Edge delivery and Publish delivery](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
@@ -75,7 +75,7 @@ Before you start to deploy your code, configure your pipeline settings from the 
 
    ![Add Edge Delivery Pipeline dialog box](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-configuration.png)
 
-1. Select the pipeline **Deployment Trigger** option you want.
+1. Select the pipeline **Deployment Trigger** option that you want.
 
    * **Manual** - You start the deployment.
    * **On Git Changes** - Git commits start the deployment automatically. With this option, you can still start the pipeline manually, if necessary.
@@ -97,7 +97,7 @@ Before you start to deploy your code, configure your pipeline settings from the 
 
 1. Click **Save**.
 
-You can now [manage your pipeline](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page or from the **Pipelines** page.
+You can now [manage your pipeline](managing-pipelines.md) from the **Pipelines** card on the **Program Overview** page, or from the **Pipelines** page.
 
 
    ![Edge Delivery pipeline widget showing pipeline name, status, repository, and branch](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-widget.png)
