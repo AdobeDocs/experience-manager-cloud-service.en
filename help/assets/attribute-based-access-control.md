@@ -33,9 +33,13 @@ Click **Download Spreadsheet** to download and define rules in a spreadsheet. Cr
 
 Define rules in the spreadsheet using the guidelines defined in this article.
 
+<!-->
+
 >[!IMPORTANT]
 >
 > After defining the rules, navigate to the **Validation Errors** tab of the spreadsheet and click **Run ABAC Validations**. **All validations passed** message confirms that you can provide the defined rules to Adobe.
+
+-->
 
 ## Example Attribute-based Access Control use case {#example-metadata-based-rules}
 
