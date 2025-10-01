@@ -35,7 +35,7 @@ The 2025.10.0 feature activation will provide the full feature set for this main
 * SKYOPS-108706: Upgraded release toggles bundle to latest version (etag caching)
 * SKYOPS-114210: Updating to latest version of aem.pss.service bundle
 * SKYOPS-116171: Update to Sling ResourceResolver 1.12.12
-* Released dispatcher-publish 2.0.258
+* SKYOPS-119811: Released dispatcher-publish 2.0.258
 
 ### Fixed Issues {#fixed-issues-22758}
 
