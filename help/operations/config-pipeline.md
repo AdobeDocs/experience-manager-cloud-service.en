@@ -175,7 +175,7 @@ A variation of this approach is to maintain a separate branch per environment.
 
 ### Edge Delivery Services {#yamls-for-eds}
 
-Edge Delivery config pipelines do not have separate development, staging, and production environments. Unlike Publish Delivery environments, where changes progress through dev, stage, and prod tiers, the configuration deployed through an Edge Delivery config pipeline is applied directly to all domains registered in Cloud Manager for Edge Delivery Sites.
+Edge Delivery config pipelines do not have separate development, staging, and production environments. Unlike Publish Delivery environments, where changes progress through dev, stage, and prod tiers, the configuration deployed through an Edge Delivery config pipeline is applied directly to all domain mappings registered in Cloud Manager with an Edge Delivery Site.
 
 Thus, deploy a simple file structure like:
 
