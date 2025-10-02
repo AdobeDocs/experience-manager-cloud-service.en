@@ -13,7 +13,9 @@ exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
 
 <!--badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" -->
 
-Learn how to configure Edge Delivery pipelines to build and deploy your code to production environments. A production pipeline deploys code first to the stage environment. On approval, it deploys the same code to the production environment.
+Learn how to configure Edge Delivery pipelines to build and deploy your code to production environments. Edge Delivery pipelines let you configure features including log forwarding and the Adobe-Managed CDN.
+
+For a list of supported configuration, see [Use config pipelines - supported configurations](/help/operations/config-pipeline.md#configurations).
 
 A user must have the **[Deployment Manager](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)** role to configure production pipelines.
 
@@ -35,7 +37,7 @@ Before you start to deploy your code, configure your pipeline settings from the 
 
 **To add an Edge Delivery pipeline:**
 
-1. Sign into Cloud Manager at [experiece.adobe.com](https://experience.adobe.com).
+1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
 1. In the **Quick access** section, click **Experience Manager**.
 1. In the left side panel, click **Cloud Manager**.
 1. Select an organization that you want.

@@ -1,11 +1,11 @@
 ---
-title: Using Config Pipelines
+title: Use Config Pipelines
 description: Learn how you can use config pipelines to deploy different configurations in AEM as a Cloud Service such as log forwarding settings, purge-related maintenance tasks, and various CDN configurations.
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
 ---
-# Using Config Pipelines {#config-pipelines}
+# Use config pipelines {#config-pipelines}
 
 Learn how you can use config pipelines to deploy different configurations in AEM as a Cloud Service such as log forwarding settings, purge-related maintenance tasks, and various CDN configurations.
 
@@ -21,9 +21,9 @@ This following sections of this document give an overview of important informati
 * [Creating and Managing Config Pipelines](#creating-and-managing) - How to create a config pipeline.
 * [Common Syntax](#common-syntax) - Syntax shared across configurations
 * [Folder Structure](#folder-structure) - Describes the structure config pipelines expect for the configurations
-* [Secret environment variables](#secret-env-vars) - Examples of using environment variables to not disclose secrets in your configurations
+* [Secret environment variables](#secret-env-vars) - Examples of using environment variables not to disclose secrets in your configurations
 
-## Supported Configurations {#configurations}
+## Supported configurations {#configurations}
 
 The following table offers a comprehensive list of such configurations with links to dedicated documentation describing its distinct configuration syntax and other information.
 
@@ -41,9 +41,9 @@ The following table offers a comprehensive list of such configurations with link
 | [Version Purge Maintenance Task](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimize the AEM repository by declaring rules around when content versions should be purged |
 | [Audit log Purge Maintenance Task](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimize the AEM audit log for increased performance by declaring rules around when logs should be purged |
 | [Log forwarding](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configure the endpoints and credentials for forwarding logs to various destinations, including Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk |
-| [Registering a Client ID](/help/implementing/developing/open-api-based-apis.md) | `API` | Scope Adobe Developer Console API projects to a specific AEM environments by registering the client ID. This is needed for usage of OpenAPI-based APIs that require authentication |
+| [Registering a Client ID](/help/implementing/developing/open-api-based-apis.md) | `API` | Scope Adobe Developer Console API projects to a specific AEM environments by registering the client ID. Needed for usage of OpenAPI-based APIs that require authentication |
 
-## Creating and Managing Config Pipelines {#creating-and-managing}
+## Create and manage config pipelines {#creating-and-managing}
 
 For information on how to create and configure pipelines, see [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
@@ -52,7 +52,7 @@ When creating a config pipeline in Cloud Manager, be sure to select a **Targeted
 As noted earlier, configuration for RDEs is deployed using [command line tooling](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) rather than a pipeline.
 
 
-## Common Syntax {#common-syntax}
+## Common syntax {#common-syntax}
 
 Each configuration file begins with properties resembling the following example snippet:
 
@@ -67,11 +67,11 @@ Each configuration file begins with properties resembling the following example 
 |---|---|---|
 |  `kind` | A string that determines which type of configuration, such as log forwarding, traffic filter rules, or request transformations | Required, no default |
 |  `version` | A string representing the schema version | Required, no default |
-|  `envTypes` | This array of strings is a child property of the `metadata` node. Possible values are dev, stage, prod, or any combination, and it determines for which environment types the configuration will be processed. For example, if the array only includes `dev`, the configuration will not be loaded on stage or prod environments, even if the configuration is deployed there. | All environment types (dev, stage, prod)|
+|  `envTypes` | This array of strings is a child property of the `metadata` node. Possible values are dev, stage, prod, or any combination, and it determines for which environment types the configuration is processed. For example, if the array only includes `dev`, the configuration is not loaded on stage or prod environments, even if the configuration is deployed there. | All environment types (dev, stage, prod)|
 
 You can use the `yq` utility to validate locally the YAML formatting of your configuration file (for example, `yq cdn.yaml`).
 
-## Folder Structure {#folder-structure}
+## Folder structure {#folder-structure}
 
 A folder named `/config` or similar should be at the top of the tree, with one more YAML files somewhere in a tree below it.
 
@@ -82,7 +82,7 @@ For example:
   cdn.yaml
 ```
 
-or
+Or
 
 ```text
 /config
@@ -92,13 +92,13 @@ or
 
 The folder names and filenames below `/config` are arbitrary. The YAML file, however, must include a valid [`kind` property value](#configurations).
 
-Typically, configurations are deployed to all environments. If all the property values are identical for each environment, a single YAML file will suffice. However, it is common for property values to differ between environments, for example while testing a lower environment.
+Typically, configurations are deployed to all environments. If all the property values are identical for each environment, a single YAML file is sufficient. However, it is common for property values to differ between environments, for example while testing a lower environment.
 
 The following sections illustrate some strategies for structuring your files.
 
-### A Single Config File for All Environments {#single-file}
+### A single config file for all environments {#single-file}
 
-The file structure will resemble the following:
+The file structure resembles the following:
 
 ```text
 /config
@@ -131,9 +131,9 @@ data:
       index: "AEMaaCS"
 ```
 
-### A Separate File Per Environment Type {#file-per-env}
+### A separate file per environment type {#file-per-env}
 
-The file structure will resemble the following:
+The file structure resembles the following:
 
 ```text
 /config
@@ -145,16 +145,15 @@ The file structure will resemble the following:
   logForwarding-prod.yaml
 ```
 
-Use this structure when there may be differences in property values. In the files, one would expect the `envTypes` array value to correspond with the suffix, for example 
-`cdn-dev.yaml` and `logForwarding-dev.yaml` with a value of `["dev"]`, `cdn-stage.yaml` and `logForwarding-stage.yaml` with a value of `["stage"]`, and so on.
+Use this structure when there may be differences in property values. In the files, one would expect the `envTypes` array value to correspond with the suffix. For example,`cdn-dev.yaml` and `logForwarding-dev.yaml` with a value of `["dev"]`, `cdn-stage.yaml` and `logForwarding-stage.yaml` with a value of `["stage"]`, and so on.
 
-### A Folder Per Environment {#folder-per-env}
+### A folder per environment {#folder-per-env}
 
 In this strategy, there is a separate `config` folder per environment, with a separate pipeline declared in Cloud Manager for each.
 
 This approach is particularly useful if you have multiple dev environments, where each has unique property values.
 
-The file structure will resemble the following:
+The file structure resembles the following:
 
 ```text
 /config/dev1
@@ -170,11 +169,11 @@ The file structure will resemble the following:
 
 A variation of this approach is to maintain a separate branch per environment.
 
-## Secret Environment Variables {#secret-env-vars}
+## Secret environment variables {#secret-env-vars}
 
 So that sensitive information need not be stored in source control, configuration files support Cloud Manager environment variables of type **secret**. For some configurations, including log forwarding, secret environment variables are mandatory for certain properties.
 
-The snippet below is an example of how the secret environment variable `${{SPLUNK_TOKEN}}` is used in the configuration.
+The following snippet is an example of how the secret environment variable `${{SPLUNK_TOKEN}}` is used in the configuration.
 
    ```
    kind: "LogForwarding"
@@ -190,4 +189,4 @@ The snippet below is an example of how the secret environment variable `${{SPLUN
          index: "AEMaaCS"
    ```
 
-Please see the document [Cloud Manager Environment Variables](/help/implementing/cloud-manager/environment-variables.md) for details on how to use environment variables.
+For details on how to use environment variables, see [Cloud Manager Environment Variables](/help/implementing/cloud-manager/environment-variables.md).
