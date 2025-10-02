@@ -31,7 +31,7 @@ The next planned release is Thursday, November 6, 2025.
     * Analyzes content structures (blueprints, live copies) and custom configurations.
     * Identifies outdated dependencies (AEM SDK, third-party libraries).
     * Flags code quality issues (improper annotations, inefficient patterns).
-    * Delivers actionable guidance through dashboards such as **Action Center**.
+    * Delivers actionable guidance through dashboards such as **Actions Center**.
     * Supports proactive optimization through early issue detection and remediation.
 
     Teams can continuously monitor and improve their AEM environments for smoother performance, stronger security, and long-term maintainability. 
@@ -40,7 +40,7 @@ The next planned release is Thursday, November 6, 2025.
 
 * **Config Pipeline support**
 
-    Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Config Pipelines** to manage settings such as traffic filtering rules and Web Application Firewall (WAF) configurations, where applicable. See [Supported Configurations](/help/operations/config-pipeline.md#configurations). 
+    Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Config Pipelines** to manage settings such as CDN configuration, including traffic filter rules and origin selectors. See [Supported Configurations](/help/operations/config-pipeline.md#configurations). 
 
     Edge Delivery config pipelines also support secrets through Cloud Manager pipeline variables.
 
