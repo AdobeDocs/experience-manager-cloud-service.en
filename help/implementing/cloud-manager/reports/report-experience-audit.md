@@ -36,7 +36,7 @@ Experience Audit is available for Cloud Manager:
 
 See the [Configuration section](#configuration) for more information on how to configure the audit for the optional environments.
 
-Audits are run as part of the pipeline. Audits can also be [run on-demand](#on-demand) outside of pipelines.
+Audits are run as part of the pipeline. Audits can also be [run On-demand](#on-demand) outside of pipelines.
 
 ## Configuration {#configuration}
 
@@ -133,7 +133,7 @@ You can choose to view the trends for specific Lighthouse categories by clicking
 
 ![Trend Selectable](/help/implementing/cloud-manager/reports/assets/experience-audit-trend-selectable.png)
 
-Use the **Select** drop-down at the top of the chart to select page-specific details, and the **View** and **Trigger** drop-downs at the bottom to choose different time frames and the trigger type, respectively.
+Use the drop-down **Select** at the top of the chart to select page-specific details, and the **View** and **Trigger** drop-downs at the bottom to choose different time frames and the trigger type, respectively.
 
 The **View** drop-down offers the possibility to select a preset time frame, or a custom interval for a more specific view.
 
@@ -153,23 +153,23 @@ The **Experience Audit scan results** section gives details of scores on all sca
 
 ![Scanned pages](/help/implementing/cloud-manager/reports/assets/experience-audit-scanned-pages.png)
 
-Click the link of a particular page updates the **Select** filter of the [**Page scores &mdash; trend** section](#trend) and shows the **Raw reports** tab gives you scores for every audit of the page. Click the report date in the **Lighthouse Report** column to retrieve a JSON file of the raw data.
+Click the link of a particular page updates the filter **Select** of the [**Page scores &mdash; trend** section](#trend) and shows the **Raw reports** tab that gives you scores for every audit of the page. Click the report date in the **Lighthouse Report** column to retrieve a JSON file of the raw data.
 
 ![Raw report](/help/implementing/cloud-manager/reports/assets/experience-audit-raw-reports.png)
 
-A new tab opens in your browser, directing you to `https://googlechrome.github.io/lighthouse/viewer/`. It automatically loads a signed URL containing the Lighthouse raw JSON report for the selected page, allowing for detailed inspection.
+A new tab that opens in your browser, directs you to `https://googlechrome.github.io/lighthouse/viewer/`. It automatically loads a signed URL containing the Lighthouse raw JSON report for the selected page, allowing for detailed inspection.
 
 ![Viewing raw report](/help/implementing/cloud-manager/reports/assets/experience-audit-view-raw-report.png)
 
 ## On-demand scan audit reports {#on-demand}
 
-Besides being run during pipeline execution, Experience Audit reports can also be generated on-demand. This option is a good solution to scan your pages quickly, without having to run a pipeline.
+Besides being run during pipeline execution, Experience Audit reports can also be generated On-demand. This option is a good solution to scan your pages quickly, without having to run a pipeline.
 
-To run an on-demand scan, navigate to the **Reports** tab to see the complete audit report and then click the **Run scan** button. 
+To run an On-demand scan, navigate to the **Reports** tab so that you can see the complete audit report, and then click the **Run scan** button. 
 
 ![On-demand scanning](/help/implementing/cloud-manager/reports/assets/experience-audit-on-demand.png)
 
-The **Run scan** button becomes unavailable and is badged with a clock icon when an on-demand scan is already running.
+The **Run scan** button becomes unavailable and is badged with a clock icon when an On-demand scan is already running.
 
 ![On-demand scan running](/help/implementing/cloud-manager/reports/assets/experience-audit-on-demand-running.png)
 
@@ -183,7 +183,7 @@ You can filter the scores chart based on the trigger type by using the **Trigger
 
 >[!NOTE]
 >
->An on-demand scan can be started only if the environment is not deleted and there are no other pending scans on the same environment.
+>An On-demand scan can be started only if the environment is not deleted and there are no other pending scans on the same environment.
 
 ## Experience Audit encounters issues {#issues}
 
@@ -214,4 +214,4 @@ The following details provide additional information on how the Experience Audit
 
 * The audit scans the origin (`.com`) domain from the [configured Experience Audit page paths](#configuration) of the publisher to simulate real user experiences, helping you make better decisions about managing and optimizing your websites.
 * In production full-stack pipelines, the staging environment is scanned. To ensure that the audit provides relevant details during auditing, the staging environment's content should be as close as possible to the production environment.
-* The pages displayed in the **Select** drop-down in the [**Page scores &mdash; trend** section](#trend) are all known pages that the Experience Audit scanned in the past.
+* The pages displayed in the drop-down **Select** in the [**Page scores &mdash; trend** section](#trend) are all known pages that the Experience Audit scanned in the past.
