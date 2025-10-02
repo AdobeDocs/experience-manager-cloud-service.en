@@ -12,7 +12,7 @@ role: Admin, Architect, Developer
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="Functional Testing"
->abstract="Learn about the three different types of functional testing built into the AEM as a Cloud Service deployment process to ensure the quality and reliability of your code."
+>abstract="Learn about the three different types of functional testing built into the AEM as a Cloud Service deployment process. The testing ensures the quality and reliability of your code."
 
 Discover the quality gates available in the [AEM as a Cloud Service deployment process](/help/implementing/cloud-manager/deploy-code.md) and the various types of built-in functional testing. Learn how you can contribute and optimize their use within the framework of a comprehensive testing strategy.
 

@@ -21,8 +21,8 @@ The line graph of a selected year includes data points for each month from Janua
 | --- | --- | --- |
 | Author Tier Actual | Light green | The measured uptime of the production Author Tier factoring incidents caused by Adobe or Adobe's vendors. |
 | Author Tier Contract  | Dark blue | The SLA defined in your contract with Adobe for the Author Tier. |
-| Publish Tier Actual | Orange | The measured uptime of the production Publish Tier, factoring incidents caused by Adobe or Adobe's vendors. |
-| Publish Tier Contract | Red | The SLA defined in your contract with Adobe for the Publish Tier. |
+| Publish Tier Actual | Orange | The measured uptime of the production Publishing Tier, factoring incidents caused by Adobe or Adobe's vendors. |
+| Publish Tier Contract | Red | The SLA defined in your contract with Adobe for the Publishing Tier. |
 
 **To view an SLA report:**
 
@@ -41,7 +41,7 @@ The line graph of a selected year includes data points for each month from Janua
 1. (Optional) Do any of the following:
 
     * Roll your cursor over a data point in the line graph to show the specific values for that point.
-    * Below the line graph's year, click the Download icon to save a PNG image file of the line graph.
+    * Below the line graph's year, click the icon **Download** to save a PNG image file of the line graph.
     * Click a metric name to see just that metric's data. Or, press `Shift` on the keyboard while selecting or deselecting one or more metric names.  
 
 ## Event analysis {#event-analysis}

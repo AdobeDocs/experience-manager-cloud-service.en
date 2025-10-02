@@ -1,6 +1,6 @@
 ---
 title: Health Assessment for Production and Stage Environments
-description: Learn how to use Cloud Manager's Health Assessment to scan AEM environments, run and review reports, view issue details, export PDFs, and manage past runs.
+description: Learn how to use Cloud Manager's Health Assessment. You can scan AEM environments, run and review reports, view issue details, export PDFs, and manage past runs.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
