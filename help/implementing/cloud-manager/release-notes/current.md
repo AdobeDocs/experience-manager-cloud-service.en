@@ -31,7 +31,7 @@ The next planned release is Thursday, November 6, 2025.
     * Analyzes content structures (blueprints, live copies) and custom configurations.
     * Identifies outdated dependencies (AEM SDK, third-party libraries).
     * Flags code quality issues (improper annotations, inefficient patterns).
-    * Delivers actionable guidance through dashboards such as **Action Center**.
+    * Delivers actionable guidance through dashboards such as **Actions Center**.
     * Supports proactive optimization through early issue detection and remediation.
 
     Teams can continuously monitor and improve their AEM environments for smoother performance, stronger security, and long-term maintainability. 
