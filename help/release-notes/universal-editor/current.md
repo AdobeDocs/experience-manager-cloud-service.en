@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2025.09.25 Release Notes
-description: These are the release notes for the 2025.09.25 release of the Universal Editor.
+title: Universal Editor 2025.10.02 Release Notes
+description: These are the release notes for the 2025.10.02 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.09.25 Release Notes {#release-notes}
+# Universal Editor 2025.10.02 Release Notes {#release-notes}
 
-These are the release notes for the 25 September 2025 release of the Universal Editor.
+These are the release notes for the 2 October 2025 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -16,8 +16,7 @@ These are the release notes for the 25 September 2025 release of the Universal E
 
 ## What's New {#what-is-new}
 
-* [The copy and paste feature](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) can now be [disabled using a meta tag.](/help/implementing/universal-editor/customizing.md#copy-paste)
-* [When using the Universal Editor in hosted AEM environments (AMS),](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) the Universal Editor will now use the AEM-hosted universal-editor-service and no longer rely on a local AMS installation, ensuring that you always have the latest Universal Editor service automatically.
+* A button has been added to switch between preview and production environments.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -33,5 +32,4 @@ Copy and pasting is now possible across pages in addition to within the same pag
 
 ## Other Improvements {#other-improvements}
 
-* The properties rail has been fixed when using it with Document Authoring.
-* A problem editing multi fields of a Content Fragment when using MSM has been fixed.
+* The location bar and its text have been better aligned in the UI.
