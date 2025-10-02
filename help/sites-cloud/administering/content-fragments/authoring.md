@@ -38,7 +38,7 @@ When you first open the Content Fragment Editor, you see four main areas:
 * top toolbar: for key information, and actions
   * a link to the Content Fragment Console (Home icon)
   * information about the model, and folder
-  * links to [Preview (if the Default Preview URL Pattern is configured for the model)](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)
+  * links to [Preview](#preview-content-fragment); if the Default Preview URL Pattern is configured for the model
   * [Publish](#publish-content-fragment), and [Unpublish](#unpublish-content-fragment) actions
   * an option to show all **Parent References** (link icon)
   * the fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, and last saved information
