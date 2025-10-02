@@ -25,9 +25,9 @@ The 2025.10.0 feature activation will provide the full feature set for this main
 * GRANITE-56026: Improve permissions API status code responses.
 * GRANITE-61015: Added `org.apache.commons.io.channels` package to the public exported list.
 * GRANITE-61167: Felix log has been updated to the latest OSGI spec.
-* GRANITE-61167: Update felix dependencies.
+* GRANITE-61167: Update a number of Apache Felix dependencies.
 * GRANITE-61169: Improve the check for protected strings.
-* GRANITE-61622: Update sling dependencies.
+* GRANITE-61622: Update a number of Apache Sling dependencies.
 * GRANITE-61663: Add `com.adobe.granite.repository.indexdefs-1.0.2` to quickstart.
 * GRANITE-61811: Add `com.adobe.granite.repository-2.0.0` to quickstart.
 * SITES-32014: Listen for external events to update service registrations.
