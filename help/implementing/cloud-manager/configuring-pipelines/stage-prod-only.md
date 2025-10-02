@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines"
-hide: yes
-hidefromtoc: yes
-index: no
+hide: no
+hidefromtoc: no
+index: yes
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
 ---
 # Split stage-only and production-only pipelines {#stage-prod-only}
