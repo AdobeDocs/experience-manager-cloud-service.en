@@ -225,6 +225,12 @@ You can write a combined rule to control visibility of the Spouse Salary field a
 
 +++
 
+### Function and Mathematical Expression Support in Input Parameters
+
+Input parameters now support both function outputs, for example, concat, trim, and join, as well as mathematical expressions. This enhancement enables form authors to pass dynamically computed values directly, streamlining rule configurations, reducing the need for additional fields, and making forms more adaptable to complex logic and calculation-driven scenarios.
+
+![Function call and Mathematical Expression support](/help/forms/assets/mathematical-function-support.png)
+
 ### Handling Broken Rules
 
 Rules may sometimes break if a referenced field is moved or deleted. When this happens, the Rule Editor marks the affected rule with a red dot indicator.

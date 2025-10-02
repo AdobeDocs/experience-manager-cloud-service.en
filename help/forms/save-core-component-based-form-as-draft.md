@@ -163,6 +163,10 @@ When **[!UICONTROL Select Type]** is selected as **Submitted Forms** in the [con
 
 You can also discard the forms by clicking on the ellipsis (...) that appears in the bottom-right corner of the form.
 
+>[!NOTE]
+>
+> In the Forms Portal, the Drafts & Submissions component supports only submissions from Foundation-based forms.
+
 ## Next Steps
 
 In the next article, let us learn [how to add references to forms on the Sites page using the Link Forms Portal component](/help/forms/add-form-link-to-aem-sites-page.md).
