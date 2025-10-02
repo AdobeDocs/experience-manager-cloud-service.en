@@ -3,11 +3,11 @@ title: Create Vanity URLs using Dynamic Media with OpenAPI Capabilities
 description: Use Dynamic Media OpenAPI capabilities to transform your long asset delivery URLs into short, branded vanity URLs. A vanity URL is a short, clean, easy-to-remember and readable version of your complex delivery URL. You can include your brand name, product names, and relevant keywords in the vanity URL to boost your brand visibility and user engagement
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
+exl-id: 596136e9-7c2a-43a1-8091-2d8b6226b695
 ---
-
 # Use vanity URLs{#vanity-urls}
 
-Use [!DNL Dynamic Media OpenAPI capabilities] to transform your long asset delivery URLs into short, branded vanity URLs. Standard asset delivery URLs include system-generated asset UUIDs that make the delivery URL complex, hard to remember and share. Replace these asset UUIDs with simple identifiers (Vanity IDs) to generate a vanity URL. A vanity URL is a short, clean, and readable version of your complex delivery URL.
+Use [!DNL Dynamic Media with OpenAPI capabilities] to transform your long asset delivery URLs into short, branded vanity URLs. Standard asset delivery URLs include system-generated asset UUIDs that make the delivery URL complex, hard to remember and share. Replace these asset UUIDs with simple identifiers (Vanity IDs) to generate a vanity URL. A vanity URL is a short, clean, and readable version of your complex delivery URL.
 
 See the following URL formats to understand their difference:
 * [Standard delivery URL](#standard-urls)
@@ -15,7 +15,7 @@ See the following URL formats to understand their difference:
 
 Standard delivery URLs use `aaid` followed by a UUID, while vanity URLs use `avid` followed by a custom identifier (vanity identifier).
 
-Use short and simple vanity identifiers, to make your delivery URL short, clean, readable, easy-to-remember and share. Use your brand name, product names, and relevant keywords as vanity IDs to boost your brand visibility and user engagement. 
+Use short and simple vanity identifiers, to make your vanity URL short, clean, readable, easy-to-remember and share. Use your brand name, product names, and relevant keywords as vanity IDs to boost your brand visibility and user engagement. 
 
 When your user clicks your vanity URL, [!DNL Dynamic Media with OpenAPI] automatically maps to the original asset location at ingestion time and resolve them properly at delivery time to server the asset to the user. 
 
@@ -104,7 +104,7 @@ Execute the following steps to create an environment variable and map it to the 
 
 1. [Navigate to the configurations page of your Cloud Manager environment](/help/implementing/cloud-manager/environment-variables.md) and do the following:
    1. Add `ASSET_DELIVERY_VANITY_ID` variable. This is the key.
-   1. Use the value field to map to the metadata property that holds the vanity ID. The mapping follows the `dc:<your-metadata-property>` format, where the metadata mapping prefix (such as dc:) varies based on your metadata configuration property.
+   1. Use the value field to map to the asset metadata property that holds the vanity ID. The mapping follows the `dc:<your-metadata-property>` format, where the metadata mapping prefix (such as dc:) varies based on your asset metadata configuration property.
    ![ASSET_DELIVERY_VANITY_ID variable](/help/assets/assets/environment-config.png)
 1. Save your changes to restart the pods in your environment.
 
@@ -124,7 +124,7 @@ Learn how to [copy Dynamic Media with OpenAPI delivery URLs](/help/assets/approv
 
 When your user clicks the vanity URL, [!DNL Dynamic Media with OpenAPI] automatically maps the vanity ID to the original asset UUID at ingestion time and resolves them properly at delivery time to serve the asset to the user without any delay. You can customize the vanity URL in real time without affecting the asset delivery performance.
 
-[Enhance the impact of your vanity URLs using the advanced customization capabilities of AEM Cloud Service.](#scale-using-vanity-url)
+[Use the advanced customization capabilities of AEM Cloud Service with your vanity URL to enhance its impact](#scale-using-vanity-url).
 
 ## Scale using vanity URLs{#scale-using-vanity-url}
 
@@ -227,9 +227,9 @@ type: transform
 
 ## Follow the best practices for creating clean vanity URLs{#best-practices}
 
-Follow these best practices for creating vanity IDs, custom DNS and domain names:
+Follow these best practices for creating [vanity IDs](#create-vanity-urls), [custom DNS](#customize-dns) and [CDN names](#rewrite-cdn-rules):
 
 1. Do not use special characters in vanity IDs, such as spaces, slashes, hyphens and more. The system replaces special characters in vanity IDs using a predefined mapping.
-1. Use your brand name, product names, and relevant keywords in your vanity IDs, custom DNS and domain names to boost your brand visibility and user engagement.
+1. Use your brand name, product names, and relevant keywords in your [vanity IDs](#create-vanity-urls), [custom DNS](#customize-dns) and [CDN names](#rewrite-cdn-rules) to boost your brand visibility and user engagement.
 1. Use short, descriptive words or strings that convey meaning.
 1. Use texts that invite users for clicks.

@@ -22,7 +22,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.8.0) is August 28, 2025. The next feature release (2025.9.0) is planned for September 25, 2025.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.9.0) is September 25, 2025. The next feature release (2025.10.0) is planned for October 30, 2025.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -38,30 +38,19 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 -->
 
-## Experience Hub {#experience-hub}
-
-The [Experience Hub](/help/experience-hub.md) is your centralized starting point for accessing all AEM capabilities. It is personalized based on your user persona and the licenses available to you, enabling each user to accomplish their outcomes efficiently.
-
-## AI Assistant in AEM {#AI-assistant}
-
-The [AI Assistant](/help/implementing/cloud-manager/ai-assistant-in-aem.md) for AEM offers a conversational interface designed to get you instant answers to your AEM product-related questions (*available to all users*) and automate support ticket creation (*available to Support Admins*). It is directly embedded in AEM and accessible from AEM Experience Hub, Cloud Manager, and Author UI.
-
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### New features in Experience Manager Sites {#enhancements-sites}
+### New features in Experience Manager Sites Prerelease {#prerelease-sites}
 
-* In Content Fragments Admin UI you can now view the workflow status for content fragments, with detailed information about past and currently running workflows for a selected fragment.
-* The performance for opening content fragments in the new content fragment editor has been increased by 25% in common scenarios by opening fragments via UUID instead of by path.
-* When copying content fragments with referenced fragments, copies of the referenced fragments are now stored in the same location as the parent fragment copy. 
-* You can now configure a custom workspace in the folder settings, to export the content fragments to the configured workspace in Adobe Target.
+The Content Model Editor for AEM Content Fragments has been modernized to align with other React Spectrum–based interfaces in AEM. Its user interface implementation and extensibility model are now consistent with the Content Fragment Editor and Universal Editor. The new Model Editor is now default when opened from the new Content Model Admin UI. Opening a content model in Touch UI opens the Touch UI editor and offers to try out the new editor. 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### New Features in Content Hub {#new-features-content-hub}
+### New Features in Assets view {#new-features-assets-view}
 
-**Bulk Search via Filter properties**
+**Enhanced Text Formatting with Substrings in Dynamic Media Templates**
 
-Content Hub now makes it faster to discover the assets you need. With the new Bulk Search capability, you can enter multiple values for any filter property—separated by a delimiter (for example, multiple SKU IDs)—and instantly retrieve all matching assets using a single search.
+You can now apply formatting to substrings within Dynamic Media template text layers. A selected word or phrase is treated as a separate layer, allowing you to adjust its font, font size, color, and more. The substring layer is parameterized so you can update it in real-time using the template's delivery URL
 
 ### New Features in Dynamic Media with OpenAPI capabilities {#new-features-dynamic-media-with-openapi}
 
@@ -71,49 +60,47 @@ Create Vanity URLs for asset delivery in DM with OpenAPI, replacing long system-
 
 >[!NOTE]
 >
->This feature will be available as a Limited Availability feature on September 10. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>This feature is available as a Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
+<!--
+
+### New Features in Content Hub {#new-features-content-hub}
+
+**Mark Collections as Favourites**
+
+You can now mark collections as Favorites in Content Hub, making it easier to organize and retrieve them. Once added, your favourite collections are conveniently available from the **Favourites** tab on the Content Hub home page.
+
+**Pin collections for quick access**
+
+Content Hub Administrators can now pin collections in Content Hub for quick access. Pinned collections are displayed in a dedicated **Pinned** section on the Collections home page, making it easier to keep important collections within reach.
+
+>[!NOTE]
+>
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
+-->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### New features in Experience Manager Forms {#new-features-forms}
 
-**Date & Time Input Component**
+**Invoke Form Data Model Workflow Step for SharePoint List Attachments**
 
-A [Date & Time component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component) is now available, enabling users to select both date and time using a calendar and clock interface, or by manually entering values in a supported format.
-
-**Enhanced Error Handling for File Uploads**
-
-The [File Attachment component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab) now automatically validates the uploaded file type against the allowed list. If a user uploads a file in an unsupported format, the form displays an error during submission. The component also checks the file content to validate its type, enhancing the overall security of the form.
-
-**Specified Error Response for Custom Submit Action**
-
-When a [custom submit action](/help/forms/custom-submit-action-troubleshooting.md) encounters an unhandled error, the system returns error code 502. This helps identify that the issue is related to the custom submit action, making debugging easier.
-
-**Excluding Hidden Fields from Document of Record**
-
-A new property allows exclusion of hidden fields from the [Document of Record](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings). By default, this option is not selected and applies to all form fields.
-
-  
+The Invoke Form Data Model workflow step now supports handling workflow-side metadata for Base64-encoded attachment arrays in SharePoint List–based Form Data Models. With this enhancement, the workflow step can pass, store, and retrieve metadata such as file name, MIME type, and custom properties for each attachment. This capability enables more comprehensive data management and facilitates seamless downstream integration. For details, see [Enhanced support in Invoke Form Data Model workflow step for SharePoint List attachments](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step).
+ 
 ### Pre-Release features in AEM Forms 
 
-**Generate and Sync AFP Renditions**
+**Rule Editor Enhancements**
 
-You can now use the [AEM Forms Communication API](/help/forms/document-generation-afp-api.md) to convert an XDP file to AFP format. AFP is a high-performance format widely used in large-scale enterprise printing.
+The Rule Editor now supports enhanced navigation and allows use of function and mathematical expressions in input parameters.
 
-**Enhancements in Rule Editor**
+**Enhanced Navigation with Event Payload Support**
+ 
+The `Navigate To` action in the Invoke Service handlers now supports `EVENT_PAYLOAD`, enabling form authors to configure follow-up actions based on event responses. This enhancement offers greater flexibility in designing post-submission workflows, ensuring smoother transitions and more personalized user experiences. For more information, see [Enhanced Navigation with Event Payload Support](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
 
-* [Validate Method in Function List](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list): The validate and reset methods now support execution at the panel, field, and form levels. Previously, they were only supported at the form level.
-* [Modern JavaScript Support](/help/forms/rule-editor-core-components-difference-tables.md): Support for ECMAScript 2019 and later features has been added for custom functions, allowing you to write more efficient, modular, and reusable code.
-* [Download DoR Option in Rule Editor](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor): A function to download the Document of Record (DoR) has been added as an out-of-the-box (OOTB) option in the Rule Editor.
-
-  ![Document-of-Record](/help/forms/assets/document-of-record-rn.gif)
-
-* [Dynamic Variables in Rule Editor](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules): You can now use dynamic (temporary) variables in the Rule Editor for greater flexibility in defining conditions and actions. Hidden fields are no longer required to store temporary values.
-* [Custom Event Based Rules Support](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support): You can now define custom events and trigger rules based on those events.
-* [Context-Aware Repeatable Panel Rules](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels): In repeatable panels, rules are now executed based on context, instead of being applied only to the last panel instance.
-* [Rules Triggered by Parameters](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms): The Rule Editor now supports rule execution based on query parameters, UTM parameters, or browser parameters.
-* [Form-Specific Custom Functions](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms): Edge Delivery Services Forms now support form-specific custom function scripts, providing greater flexibility in managing reusable logic.
-* [Static Imports for Custom Functions](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions): The Rule Editor in Universal Editor now supports static imports, allowing developers to organize, share, and reuse functions across multiple forms.
+**Function and Mathematical Expression Support in Input Parameters**
+ 
+Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
 
 ### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 
@@ -121,14 +108,18 @@ The AEM Forms Early Access Program offers a unique opportunity for you to get ex
 
 These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
-**Scribble Signature Component**
+**PDF Preview in Interactive Communication Editor**
 
-You can now use the [Scribble Signature component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature) to help users add their signatures to a form, such as in an agreement form. The component allows users to draw their signature directly within the form using a mouse, stylus, or touchscreen.
+Users can preview Interactive Communications PDFs without data, with local JSON data files, or with data from a data model, enabling flexible data-driven testing. For more information, see [PDF Preview in Interactive Communication Editor](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
 
-**Direct API Integration in Rule Editor**
+**Support of Custom Fonts in Interactive Communication**
 
-Adaptive Forms now support [direct API integration](/help/forms/api-integration-in-rule-editor.md) in the Visual Rule Editor without requiring a Form Data Model. Authors can configure APIs using a URL or cURL import, map input/output parameters, and secure calls with authentication.
- 
+The Custom Fonts feature allows users to embed custom or organization-approved fonts in the Interactive Communications, ensuring consistent and branded PDF rendering across devices and platforms. For more information, see [Support of Custom Fonts in Interactive Communication](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
+
+**Import and Export Interactive Communications**
+
+This feature enables migration and reuse of Interactive Communications across different environments. You can now export an Interactive Communication along with its associated fragments and data models from one environment and import it into another. For more information, see [Import and Export Interactive Communications](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
+
 <!--
 **Forms Optimization opportunities**
 
@@ -143,20 +134,36 @@ Key optimization opportunities include:
 * Addressing accessibility compliance issues
 * Streamlining navigation to enhance user experience
 
-With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. --> 
+With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. 
+--> 
   
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### JavaScript Compilation Update {#javascript-compilation}
+### New Features in Release Management {#new-features-release-management}
 
-The default client-side library (clientlibs) JavaScript compilation now targets ECMASCRIPT_2018 instead of ECMASCRIPT5. While overridable in the past, this update enables performance improvements, modern JavaScript syntax, and features by default. 
+**Pause Automatic Maintenance Updates**
+
+Go‑live days, live events, peak sales—these moments can't break. [Our new self‑service features](/help/implementing/deploying/quiet-hours-update-free-periods.md) stop automatic mainteanance updates when it matters, so your teams stay focused.
+
+* Quiet Hours: Block automatic maintenance during set times each day. Ideal for working hours, nightly runs or morning cutovers.
+* Update‑Free Period: Block automatic maintenance for a full week. Use it for launches, promos, or yearly freezes.
+
+>[!NOTE]
+>
+>Available as a Limited Availability feature on September 25th.
+>Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to get it activated on your programs.
+
+### New Release of AEM Developer Tools for Eclipse {#aem-develeper-tools-for-eclipse}
+
+Version 1.4.0 of the AEM Developer Tools for Eclipse has been released. This version adds support for Eclipse IDE 2022-12 or newer and has been validated with the current version (2025-09). The tooling now works with modern versions of the AEM Project Archetype and incorporates improvements from the Sling IDE Tooling 1.3.0.
+
+Install from the [Eclipse Marketplace](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse) and see the [AEM Developer Tools page](https://eclipse.adobe.com) for more details.
 
 ### Upcoming Java API Deprecations {#java-api-deprecation}
 
-Several deprecated APIs are targeting removal on August 31st and thus should no longer be referenced. In early September, Actions Center notifications will be sent if API usage is detected, and after September 25th, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
+Several deprecated APIs were marked for removal on August 31st and thus should no longer be referenced. You will receive Actions Center notifications if deprecated API usage is detected in your code, and after Nov 13th, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
-<details>
-  <summary>Expand to see the Java API deprecations</summary>
++++ Expand to see the Java API deprecations
 
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
@@ -175,7 +182,7 @@ Several deprecated APIs are targeting removal on August 31st and thus should no 
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
 
-</details>
++++
 
 <!--
 OSGi properties:
@@ -188,17 +195,19 @@ OSGi properties:
 
 ### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-The *Java 11 runtime* is now deprecated, and most environments have already been upgraded to the more performant **Java 21 runtime**.
+The *Java 11 runtime* is deprecated, and most environments have already been upgraded to the higher-performance **Java 21 runtime**.
 
-If your environment could not be upgraded due to unsupported dependencies (see [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), you should have received an email from Adobe with specific next steps. Please ensure all required updates are completed by **October 1st, 2025**, so your environment can be upgraded without disruption.
+If your environment could not be upgraded due to unsupported dependencies (see the [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), you should have received an email from Adobe with next steps. As described there, Adobe upgraded your **Dev** and **RDE** environments on **September 18, 2025** so you can validate your site and processes and address any issues. Upgrades for **Stage** and **Production** will proceed on **October 14, 2025**.
 
-Note: The runtime version is separate from your code's build version. While we recommend building with Java 21, Java 11 builds are still supported for now. A separate deprecation notice for Java 11 builds will be shared in the future.
+>[!NOTE]
+>
+>The runtime version is separate from your code's build version. While we recommend building with Java 21, Java 11 builds are still accepted for now. A separate deprecation notice for Java 11 builds will be shared in the future.
 
 ### Enforcement of AEM Java Logs Configuration Policy {#logconfig-policy}
 
 As noted in the April release notes, AEM Java logs must follow a standard format to ensure reliable monitoring across all customer environments. Custom log configurations—such as changes to log formatting, output files, or default log levels—are no longer supported. Logs must remain directed to the default files, and default log levels for AEM product code must be preserved. See full details in the [Logging article](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Starting on **September 25th**, any unsupported custom logging overrides will be ignored. Based on our analysis, most customers will not be impacted and Adobe has contacted customers whose current configuration may be affected.
+Starting on **October 30th**, any unsupported custom logging overrides will be ignored. Based on our analysis, most customers will not be impacted and Adobe has contacted customers whose current configuration may be affected.
 
 Please review and update any downstream processes that rely on custom logging behavior. For example:
 
@@ -211,7 +220,6 @@ Edge computing allows you to execute JavaScript at the CDN layer, bringing data 
 
 Common use cases include:
 
-* Authenticating users with an identity provider before granting access to content
 * Personalizing content based on geolocation, device type, or user attributes
 * Acting as middleware between the CDN and your origin
 * Reformatting responses from third-party APIs (and perhaps aggregating multiple API responses) before delivering them to the browser
@@ -220,11 +228,28 @@ Common use cases include:
 
 We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
 
+### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
+
+Edge Authentication lets you restrict access to Edge Delivery Services pages to only those who have authenticated with your identity provider (IdP). This is achieved by deploying an OpenID Connect (OIDC) configuration YAML file.
+
+If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case and any questions you may have.
+
+<!--
 ### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
 
 The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
 
 Now in beta, youcan deploy a config pipeline for features including CDN origin selectors, response and request transformations, CDN log forwarding and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
+
+-->
+
+### Canary Production Deployments to Test Code Before Accepting Live Traffic (Beta Program) {#canary-beta}
+
+Validate a production build with internal-only test traffic before exposing it to end users. Ship to production, route only canary traffic (using a special header), monitor behavior, then either promote to live traffic or roll back—without impacting customers.
+
+Deploy your code releases to production, but restrict it to only internal test traffic before deciding whether to accept live traffic versus rolling back. 
+
+Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) to request access and share feedback.
 
 ### Snapshots for RDEs (Alpha Program) {#rde-snapshot-program}
 
@@ -239,6 +264,11 @@ While logs can be downloaded from Cloud Manager, many organizations find it bene
 Now in beta, you can forward AEM logs to Amazon S3, Sumo Logic, Dynatrace, and your own New Relic account (not the Adobe-provided account). Note that AEM logs (including Apache/Dispatcher) are supported for these logging destinations, but not CDN logs. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) for access.
 
 Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md).
+
+### Expanded Application Performance Monitoring (APM) (Alpha program) {#apm-alpha}
+
+For observability, AEM Cloud Service currently supports Adobe-provided [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) and customer-managed [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). As we explore support for additional APM options, please email us at [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) with your preferred vendor or technology, along with use cases.
+
 
 ## [!DNL Experience Manager] Guides {#guides}
 
