@@ -7,9 +7,9 @@ solution: Experience Manager Sites
 ---
 # Previewing Content Fragments {#previewing-content-fragments}
 
-Previewing your Content Fragments can be used for both headless delivery and page authoring.
+Content Fragments can be used for both headless delivery and page authoring. As the fragments are solely content, without formatting, reviewing them can be more challenging. So multiple methods of previewing your fragments, in a variety of scenarios, are provided.
 
-There are several methods available for Content Fragments. The console and editor described in this section have been developed for headless content delivery (though they can be used for all scenarios).
+There are several methods available for Content Fragments, accessible from the Console Fragments console and editor. The console and editor described in this section have been developed for headless content delivery (though they can be used for all scenarios).
 
 You can preview your fragment:
 
