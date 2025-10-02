@@ -19,12 +19,12 @@ Config pipelines can also be deployed through Cloud Manager for **Edge Delivery*
 
 This following sections of this document give an overview of important information regarding how config pipelines can be used and how configurations for them should be structured. It describes general concepts shared across either all or a subset of the features supported by config pipelines.
 
-* [Supported Configurations](#configurations) - A list of configurations that can be deployed with config pipelines
-* [Creating and Managing Config Pipelines](#creating-and-managing) - How to create a config pipeline
-* [Common Syntax](#common-syntax) - Syntax shared across configurations
-* [Folder Structure](#folder-structure) - Describes the structure config pipelines expect for the configurations
-* [Secret environment variables](#secret-env-vars) - Examples of using environment variables to not disclose secrets in your configurations
-* [Secret pipeline variables](#secret-pipeline-vars) - Examples of using environment variables to not disclose secrets in your configurations fore Edge Delivery Services projects
+* [Supported Configurations](#configurations) - A list of configurations that can be deployed with config pipelines.
+* [Create and manage config pipelines](#creating-and-managing) - How to create a config pipeline
+* [Common syntax](#common-syntax) - Syntax shared across configurations.
+* [Folder structure](#folder-structure) - Describes the structure config pipelines expect for the configurations.
+* [Secret environment variables](#secret-env-vars) - Examples of using environment variables not to disclose secrets in your configurations.
+* [Secret pipeline variables](#secret-pipeline-vars) - Examples of using environment variables not to disclose secrets in your configurations fore Edge Delivery Services projects.
 
 ## Supported configurations {#configurations}
 
@@ -44,13 +44,13 @@ The following table offers a comprehensive list of such configurations with link
 | [Version Purge Maintenance Task](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimize the AEM repository by declaring rules around when content versions should be purged | X |  |
 | [Audit log Purge Maintenance Task](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | Optimize the AEM audit log for increased performance by declaring rules around when logs should be purged | X |  |
 | [Log forwarding](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | Configure the endpoints and credentials for forwarding logs to various destinations, including Azure Blob Storage, Datadog, HTTPS, Elasticsearch, Splunk | X | X |
-| [Registering a Client ID](/help/implementing/developing/open-api-based-apis.md) | `API` | Scope Adobe Developer Console API projects to a specific AEM environments by registering the client ID. This is needed for usage of OpenAPI-based APIs that require authentication | X |  |
+| [Registering a Client ID](/help/implementing/developing/open-api-based-apis.md) | `API` | Scope Adobe Developer Console API projects to a specific AEM environment by registering the client ID. Needed for usage of OpenAPI-based APIs that require authentication | X |  |
 
 ## Create and manage config pipelines {#creating-and-managing}
 
 For information on how to create and configure **Publish Delivery** config pipelines, see [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). When creating a config pipeline in Cloud Manager, be sure to select a **Targeted Deployment** rather than **Full Stack Code** when configuring the pipeline. As noted earlier, configuration for RDEs is deployed using [command line tooling](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline) rather than a pipeline.
 
-For information on how to create and configure **Edge Delivery** config pipelines, see the [Add an Edge Delivery pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) article.
+For information on how to create and configure **Edge Delivery** config pipelines, see the [Add an Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) article.
 
 ## Common syntax {#common-syntax}
 
@@ -67,7 +67,7 @@ Each configuration file begins with properties resembling the following example 
 |---|---|---|
 |  `kind` | A string that determines which type of configuration, such as log forwarding, traffic filter rules, or request transformations | Required, no default |
 |  `version` | A string representing the schema version | Required, no default |
-| `envTypes` | This array of strings is a child property of the `metadata` node. For **Publish Delivery**, possible values are dev, stage, prod, or any combination, and it determines for which environment types the configuration will be processed. For example, if the array only includes `dev`, the configuration will not be loaded on stage or prod environments, even if the configuration is deployed there. For **Edge Delivery**, only a value of `prod` should be used | All environment types, which is (dev, stage, prod) for Publish Delivery or just prod for Edge Delivery |
+| `envTypes` | This array of strings is a child property of the `metadata` node. For **Publish Delivery**, possible values are dev, stage, prod, or any combination, and it determines for which environment types the configuration is processed. For example, if the array only includes `dev`, the configuration is not loaded on stage or prod environments, even if the configuration is deployed there. For **Edge Delivery**, only a value of `prod` should be used. | All environment types, which is (dev, stage, prod) for Publish Delivery or just prod for Edge Delivery. |
 
 You can use the `yq` utility to validate locally the YAML formatting of your configuration file (for example, `yq cdn.yaml`).
 
@@ -171,7 +171,8 @@ A variation of this approach is to maintain a separate branch per environment.
 
 ### Edge Delivery Services {#yamls-for-eds}
 
-Edge Delivery config pipelines do not have separate development, staging, and production environments. Unlike Publish Delivery environments, where changes progress through dev, stage, and prod tiers, the configuration deployed through an Edge Delivery config pipeline is applied directly to all domain mappings registered in Cloud Manager with an Edge Delivery Site.
+Edge Delivery config pipelines do not have separate development, staging, and production environments. In Publish Delivery environments, changes progress through dev, stage, and prod tiers. By contrast, an Edge Delivery config pipeline applies configuration directly to all domain mappings registered in Cloud Manager for an Edge Delivery site.
+
 
 Thus, deploy a simple file structure like:
 
@@ -181,7 +182,7 @@ Thus, deploy a simple file structure like:
   logForwarding.yaml
 ```
 
-If a rule needs to differ per Edge Delivery Site, use the *when* syntax to distinguish the rules from each other. For example, notice that the domain matches dev.example.com in the snippet below, which can be distinguished from the domain www.example.com.
+If a rule needs to differ per Edge Delivery site, use the syntax *when* to distinguish the rules from each other. For example, notice that the domain matches dev.example.com in the snippet below, which can be distinguished from the domain www.example.com.
 
 ```
 kind: "CDN"
@@ -224,12 +225,12 @@ The following snippet is an example of how the secret environment variable `${{S
          index: "AEMaaCS"
    ```
 
-Please see the document [Cloud Manager Environment Variables](/help/implementing/cloud-manager/environment-variables.md) for details on how to use environment variables.
+For details on how to use environment variables, see [Cloud Manager Environment Variables](/help/implementing/cloud-manager/environment-variables.md).
 
-## Secret Pipeline Variables {#secret-pipeline-vars}
+## Secret pipeline variables {#secret-pipeline-vars}
 
 For Edge Delivery Services Projects, use Cloud Manager pipeline variables of type **secret** so sensitive information need not be stored in source control. The *Step Applied* select box should use the **deploy** option. 
 
 The syntax is identical to the snippet shown in the previous section.
 
-Please see the document [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) for details on how to use pipeline variables.
+For details on how to use pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).
