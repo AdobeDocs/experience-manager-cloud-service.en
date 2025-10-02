@@ -126,20 +126,7 @@ When you select a specific model, the properties of that model are shown (as def
 * **Title**
 * **Tags**
 * **Description**
-* **Preview URL pattern**
-
-  Content Fragment Models allow authors to **Preview** their content in an external frontend application. Once the **Preview Service** is configured, add the URL for the frontend application.
-
-  The preview URL should follow this pattern:
-  &nbsp;&nbsp;&nbsp;&nbsp;`https://<preview_url>?param=${expression}`
-
-  Available expressions are:
-
-  * `${contentFragment.path}`
-  * `${contentFragment.model.path}`
-  * `${contentFragment.model.name}`
-  * `${contentFragment.variation}`
-  * `${contentFragment.id}`
+* **[Preview URL pattern](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)**
 
 <!-- CHECK: currently under FT -->
 <!--
