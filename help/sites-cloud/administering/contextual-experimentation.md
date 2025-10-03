@@ -49,7 +49,7 @@ The [Operational Telemetry service](/help/sites-cloud/administering/operational-
 
 ### Experiment Identifier {#experiment-identifier}
 
-Before you start, every experiment should have its own identifier for tracking and analytics purposes. A good starting point is to come up with a good, unique identifier for your experiment which will be the “Experiment ID”. Experiments are often numbered linearly or correlated to their Issue ID in an issue tracker or management system. Experiment IDs often use a prefix for the project, for example: OPT-0134, EXP0004 or CCX0076.
+Before you start, every experiment should have its own identifier for tracking and analytics purposes. A good starting point is to come up with a good, unique identifier for your experiment which will be the “Experiment ID”. Experiments are often numbered linearly or correlated to their Issue ID in an issue tracker or management system. Experiment IDs often use a prefix for the project, for example: `OPT-0134`, `EXP0004` or `CCX0076`.
 
 ### Create your Challenger Page {#create-challenger-page}
 
