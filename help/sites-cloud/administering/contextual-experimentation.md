@@ -1,10 +1,9 @@
 ---
 title: Contextual Experimentation in AEM as a Cloud Service
-description: Learn how to use the experimentation plugin  to add a experimentation capabilities to your sites.
+description: Learn how to use the experimentation plugin to add experimentation capabilities to your site.
 feature: Administering
 role: Admin
 ---
-
 # Overview {#overview}
 
 >[!NOTE]
@@ -108,7 +107,7 @@ Presented below are several use case examples for experiment variants. Generally
 
 #### Full Page Experiment {#full-page}
 
-You use a full page experiment to test between two variants of the same page. This is a full page variant of an a/b test where you have a control and a challenger page. You will replace the whole content of the "original" control page in the challenger variant with a different type of content. Keep in mind that by default the customer traffic is split evenly (50/50), but you can create custom splits if you like. 
+You use a full page experiment to test between two variants of the same page. This is a full page variant of an a/b test where you have a control and a challenger page. You will replace the whole content of the "original" control page in the challenger variant with a different type of content. Keep in mind that by default the customer traffic is split evenly (50/50), but you can create custom splits if you like.
 
 <!--The metadata on the control page should look like this:
 
