@@ -111,7 +111,7 @@ Tapping or clicking the account icon opens a menu with your user settings. These
 
 ![Environment switcher](assets/environment-switcher.png)
 
-For the Universal Editor, [if you have preview service available,](/help/sites-cloud/authoring/sites-console/previewing-content.md) you also have an option to switch between your production and preview environments under the heading **Product Settings**.
+For the Universal Editor, under the heading **Product Settings**, there is an option to switch between the current production version of the Universal Editor and the upcoming preview version.
 
 ### The Universal Editor Toolbar {#universal-editor-toolbar}
 

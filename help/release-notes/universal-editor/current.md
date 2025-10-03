@@ -16,7 +16,7 @@ These are the release notes for the 2 October 2025 release of the Universal Edit
 
 ## What's New {#what-is-new}
 
-* [An option has been added](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) to the **Account** menu in the Experience Manager header toolbar to switch between preview and production environments.
+* [An option has been added](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) to the **Account** menu in the Experience Manager header toolbar to switch between the current production version of the Universal Editor and the upcoming preview version.
 
 ## Early Adoption Features {#early-adopter}
 
