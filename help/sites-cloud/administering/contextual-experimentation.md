@@ -58,15 +58,15 @@ By convention, it is recommended to create a folder with a lowercase experiment 
 
 Your experiments folder should look something like this:
 
-![experiments-folder](/assets/experiments-folder.png)
+![experiments-folder](/help/sites-cloud/administering/assets/experiments-folder.png)
 
 Once the folder is created, put a copy of your control page into that folder, and apply the changes on the page that you would like to test as part of your experiment variant (see video above). As an example let’s assume we have the following page on the website that we want to run an experiment on:
 
-![control-page](/assets/control-page.png)
+![control-page](/help/sites-cloud/administering/assets/control-page.png)
 
 Your copy of the challenger placed in the `experiments/<experiment-id>` folder might look like this:
 
-![challenger-page](/assets/challenger-page.png)
+![challenger-page](/help/sites-cloud/administering/assets/challenger-page.png)
 
 Preview and publish the challenger page using the sidekick and when you are done authoring the challenger page. The URL of the published challenger will be used in the next section - configuring the experiment.
 
@@ -82,7 +82,7 @@ There are two metadata rows that need to be added for an experiment variant.
 
 See the example below:
 
-![metadata-page](/assets/metadata-page.png)
+![metadata-page](/help/sites-cloud/administering/assets/metadata-page.png)
 
 For each experiment, the traffic is split between all the variants (control and challengers) and is automatically set to an even distribution. As such, if you have one challenger, there will automatically be an even 50/50 split between control and the challenger. If you have two challengers, you will automatically see a third of the traffic allocated to control and each challenger and so on.
 
@@ -92,7 +92,7 @@ You can override the traffic split by configuring the metadata. For more informa
 
 As soon as you are ready to preview and stage your experiment, click Preview from the side-kick in the upper left side. Whenever you are previewing a page that has a running experiment, you will see the experimentation overlay in your `.aem.page` preview environment. The experimentation overlay lets you switch between the experiment variants and also provides traffic data.
 
-<!--- ![experimentation-overlay](/assets/experimentation-overlay.png)
+<!--- ![experimentation-overlay](/help/sites-cloud/administering/assets/experimentation-overlay.png)
 
 By using the experimentation overlay, authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.-->
 
