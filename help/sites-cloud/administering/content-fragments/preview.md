@@ -21,6 +21,8 @@ You can preview your fragment:
 * with a HTML template, using **[Preview]()** from the Content Fragments console
 -->
 
+Of course, you can also view your fragment in the [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md).
+
 >[!IMPORTANT]
 >
 >Content Fragments can be accessed from two consoles: **Content Fragments** and **Assets**.
@@ -61,7 +63,7 @@ When the URL has been defined, the **[Preview](/help/sites-cloud/administering/c
 
 ## Preview Instance {#preview-instance}
 
-You can **Publish**, and **Unpublish**, your fragment to your Preview instance (as well as to your Publish instance).
+You can **Publish**, and **Unpublish**, your fragment to your **[Preview Service](/help/headless/deployment/architecture.md)** (as well as to your Publish instance).
 
 You can publish your fragment from either the editor, or the console. 
 
