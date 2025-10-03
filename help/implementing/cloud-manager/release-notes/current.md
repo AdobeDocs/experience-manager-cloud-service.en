@@ -31,7 +31,7 @@ The next planned release is Thursday, November 6, 2025.
     * Analyzes content structures (blueprints, live copies) and custom configurations.
     * Identifies outdated dependencies (AEM SDK, third-party libraries).
     * Flags code quality issues (improper annotations, inefficient patterns).
-    * Delivers actionable guidance through dashboards such as **Action Center**.
+    * Delivers actionable guidance through dashboards such as **Actions Center**.
     * Supports proactive optimization through early issue detection and remediation.
 
     Teams can continuously monitor and improve their AEM environments for smoother performance, stronger security, and long-term maintainability. 
@@ -40,7 +40,7 @@ The next planned release is Thursday, November 6, 2025.
 
 * **Config Pipeline support**
 
-    Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Config Pipelines** to manage settings such as traffic filtering rules and Web Application Firewall (WAF) configurations, where applicable. See [Supported Configurations](/help/operations/config-pipeline.md#configurations). 
+    Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Config Pipelines** to manage settings such as CDN configuration, including traffic filter rules and origin selectors. See [Supported Configurations](/help/operations/config-pipeline.md#configurations). 
 
     Edge Delivery config pipelines also support secrets through Cloud Manager pipeline variables.
 
@@ -100,7 +100,7 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 
 A new build model compiles only changed modules (rather than the entire repo) using module-level caching to shorten build times. It applies to code-quality, full-stack, and stage-only pipelines.
 
-Interested? Email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe OrgID and Program ID. 
+Interested? Email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe OrgID and Program ID.
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
 
