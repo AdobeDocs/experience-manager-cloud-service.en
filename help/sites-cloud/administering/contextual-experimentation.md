@@ -8,7 +8,7 @@ role: Admin
 # Overview {#overview}
 
 >[!NOTE]
->Currently, the contextual experimentation feature is available only through the beta program. Please contact either Adobe support or your account manager for access to the beta program. (EDS??)
+>Currently, the contextual experimentation feature is available only through the beta program. Please contact either Adobe support or your account manager for access to the beta program.
 
 Experimentation is the practice of testing your site’s design, functionality and code in order to improve performance and make your site more effective and streamlined. This is achieved by changing either content or functionality, comparing the results with a prior version and picking the improvements that have measurable effects.
 
@@ -184,11 +184,9 @@ Please keep in mind that the names above are only for illustration purposes. You
 
 Presented below are several other aspects you should consider when using context experimentation.
 
-### Engagement versus Conversion {#engagement-conversion}
+### Conversion {#conversion}
 
-Experiments can be set-up to address conversion (tracks clickable elements on your page) or engagement (tracks time on page and/or scrolling activity).
-
-All experiments must be defined for the following:
+Experiments are set up to address conversion (tracks clickable elements on your page). All experiments must be defined for the following:
 
 * Experiment type
 * What experience block the experiment will apply to
@@ -206,7 +204,9 @@ You can do this by using either of the following two methods:
 
 ## Developer and Technical Resources {#dev-resources}
 
-Adobe Experience Manager uses Operational Telemetry to gather operations data that is strictly necessary to discover and fix functional and performance issues on Adobe Experience Manager-powered sites. Operational Telemetry data can be used to diagnose performance issues. Operational Telemetry preserves the privacy of visitors through sampling LINK TBD (only a small portion of all page views will be monitored).
+Adobe Experience Manager uses [Operational Telemetry](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md
+
+) to gather operations data that is strictly necessary to discover and fix functional and performance issues on Adobe Experience Manager-powered sites. Operational Telemetry data can be used to diagnose performance issues. Operational Telemetry preserves the privacy of visitors through sampling (only a small portion of all page views will be monitored).
 
 ### Privacy {#privacy-experimentation}
 
@@ -217,4 +217,12 @@ It is not permitted to add any personal data into the Operational Telemetry data
 
 ### FAQ {#faq}
 
-TBD
+Presented below, is a list of frequently asked questions:
+
+Q: Can I adjust the split ratio between the variants of my experiment, for instance 10% on control and 90% on the challenger?
+
+Yes, the split ratio can be con figured via [metadata](#configure-experiment).
+
+Q: Can I experiment on both text and images?
+
+Yes, the variant can be a completely different page, so you can even test layout changes.
