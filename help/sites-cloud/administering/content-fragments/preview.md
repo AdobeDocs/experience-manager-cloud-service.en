@@ -21,6 +21,8 @@ You can preview your fragment:
 * with a HTML template, using **[Preview]()** from the Content Fragments console
 -->
 
+Of course, you can also view your fragment in the [Content Fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md).
+
 >[!IMPORTANT]
 >
 >Content Fragments can be accessed from two consoles: **Content Fragments** and **Assets**.
