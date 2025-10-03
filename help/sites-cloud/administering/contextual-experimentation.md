@@ -4,7 +4,7 @@ description: Learn how to use the experimentation plugin to add experimentation 
 feature: Administering
 role: Admin
 ---
-# Overview {#overview}
+# Contextual Experimentation in AEM as a Cloud Service {#contextual-experimentation}
 
 >[!NOTE]
 >Currently, the contextual experimentation feature is available only through the beta program. Please contact either Adobe support or your account manager for access to the beta program.
@@ -49,7 +49,7 @@ The [Operational Telemetry service](/help/sites-cloud/administering/operational-
 
 ### Experiment Identifier {#experiment-identifier}
 
-Before you start, every experiment should have its own identifier for tracking and analytics purposes. A good starting point is to come up with a good, unique identifier for your experiment which will be the “Experiment ID”. Experiments are often numbered linearly or correlated to their Issue ID in an issue tracker or management system. Experiment IDs often use a prefix for the project, for example: OPT-0134, EXP0004 or CCX0076.
+Before you start, every experiment should have its own identifier for tracking and analytics purposes. A good starting point is to come up with a good, unique identifier for your experiment which will be the “Experiment ID”. Experiments are often numbered linearly or correlated to their Issue ID in an issue tracker or management system. Experiment IDs often use a prefix for the project, for example: `OPT-0134`, `EXP0004` or `CCX0076`.
 
 ### Create your Challenger Page {#create-challenger-page}
 
@@ -85,7 +85,7 @@ See the example below:
 
 For each experiment, the traffic is split between all the variants (control and challengers) and is automatically set to an even distribution. As such, if you have one challenger, there will automatically be an even 50/50 split between control and the challenger. If you have two challengers, you will automatically see a third of the traffic allocated to control and each challenger and so on.
 
-You can override the traffic split by configuring the metadata. For more information on how you can customize the metadata used in your experiments, see the following [page](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring)
+You can override the traffic split by configuring the metadata. For more information on how you can customize the metadata used in your experiments, see the following [page](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring).
 
 ### Preview and Stage your Experiment Variants {#preview-stage-experiment}
 
