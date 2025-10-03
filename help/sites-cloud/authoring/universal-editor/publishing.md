@@ -25,7 +25,7 @@ When you as a content author are ready to publish your content, you simply need 
 
 1. In the Universal Editor, tap or click [the **Publish** icon in the Universal Editor's tool bar.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
 1. If you have a [preview service](/help/sites-cloud/authoring/sites-console/previewing-content.md) available, you can choose where you publish your content, either to **[Preview](/help/sites-cloud/authoring/sites-console/previewing-content.md)** (if available) or **Publish**.
-1. The **Items** section lists the content that is included in the publication including:
+1. The **Items** section lists the content that is included in the publication. Tap or click **View** to show the details including:
    * **New** items that have not yet been published.
    * **Modified** content that has been published, but modified since the last publication.
    * **Published** content that has been published and not modified since that publication.
@@ -37,6 +37,10 @@ When you as a content author are ready to publish your content, you simply need 
    Tap or click the back arrow next to the **Items** heading to return to the overview.
 
 1. Tap or click **Publish** to publish or **Cancel** to abort.
+
+>[!TIP]
+>
+>If you publish to your preview environment, [you can use the option in the **Account** menu](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) in the Experience Manager header toolbar to switch between preview and production environments.
 
 >[!NOTE]
 >

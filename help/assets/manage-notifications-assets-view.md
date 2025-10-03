@@ -73,6 +73,8 @@ To subscribe to the notification categories:
 
 ## Watch and unwatch folders, assets, or collections {#watch-unwatch-assets}
 
+You can watch and unwatch folders, assets, or collections to stay informed, enabling better collaboration around the assets you are monitoring.
+
 After [subscribing to the notification categories](#subscribe-to-notification-categories), you must subscribe to the content to start receiving notifications.
 
 >[!NOTE]
@@ -80,15 +82,49 @@ After [subscribing to the notification categories](#subscribe-to-notification-ca
 >* For **[!UICONTROL Requests]** and **[!UICONTROL Assigned to me]** notification categories, you do not need to subscribe to the content after subscribing to the notification categories. Notifications are automatically sent to you for requests created by you and when a task is assigned to you.
 >* Assets view sends notifications only when other users perform actions on the subscribed content. You do not receive notifications for the actions that you perform on the subscribed content.
 
-To subscribe to the content, select the folder, asset, or collection that you need to subscribe to and click **[!UICONTROL Watch]**.
+### Subscribe to the content {#subscribe-to-content}
 
-Assets view displays a success message. You can click **[!UICONTROL Go to notification preferences]** available on the success message to edit your [subscription to notification categories](#subscribe-to-notification-categories).
+Follow these steps to subscribe to folders, assets, or collections:
 
-![Notifications in Assets view](assets/watch-assets.png)
+1. Browse the folder, asset, or collection you want to subscribe to, and click **[!UICONTROL Watch]**.
 
-Assets view now sends notifications for the subscribed categories. You can also select multiple assets, folders, or collections and click **[!UICONTROL Watch]** to save time. However, if you select multiple entities out of which some of them have already been subscribed, then the **[!UICONTROL Watch]** option does not display.
+1. The Assets view displays a success message. You can click **[!UICONTROL Go to notification preferences]** in the success message to edit your [subscription to notification categories](#subscribe-to-notification-categories).
 
-Similarly, to unsubscribe, select the asset, folder, or collection that you have subscribed for and click **[!UICONTROL Unwatch]**.
+   ![Notifications in Assets view](assets/watch-assets.png)
+
+The Assets view will now send notifications for the subscribed categories. You can also select multiple assets, folders, or collections and click **[!UICONTROL Watch]** to save time. However, if you select multiple items and some are already subscribed, the **[!UICONTROL Watch]** option will not be displayed.
+
+### View subscribed content {#view-subscribed-content}
+
+To view your subscribed content, follow these steps:
+
+1. Navigate to **[!UICONTROL Watched Assets]** under [!UICONTROL Asset Management].
+
+1. The Assets view displays a list of subscribed assets, including their name, type, and path. Select an asset, folder, or collection from the list to view its details, location, or to [unsubscribe](#unsubscribe-to-content).
+
+   ![view subscribed content](assets/view-watched-assets.png)
+
+### View content subscribers {#view-content-subscribers}
+
+To view your content subscribers, follow these steps:
+
+1. Navigate the folder, asset, or collection and select **[!UICONTROL Details]**.
+
+1. Click eye![eye icon](assets/do-not-localize/eye-icon.png) from the right pane to see a list of watchers of the content.
+
+   Alternatively, Click ![Comment icon](assets/do-not-localize/comment-icon.svg) on the right pane to see content watchers.
+
+### Unsubscribe to the content {#unsubscribe-to-content}
+
+To unsubscribe:
+
+1. Go to **[!UICONTROL Watched Assets]** under [!UICONTROL Asset Management].
+
+1. Select the asset, folder, or collection you want to unsubscribe from, and click **[!UICONTROL Unwatch]**.
+
+   ![unsubscribe  content](assets/unsubscribe-assets.png)
+
+Alternatively, browse the folder, asset, or collection under [!UICONTROL Asset Management]. Select the [subscribed asset](#subscribe-to-content) and click **[!UICONTROL Unwatch]**.
 
 ## View notifications {#view-notifications}
 

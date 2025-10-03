@@ -16,7 +16,11 @@ exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 
 1. Be sure you have first created your program with an Edge Delivery Services license before you onboard an Edge Delivery site in Cloud Manager.
     See [Create a production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
-1. Log into Cloud Manager at [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) and select the appropriate program.
+1. Sign into Cloud Manager at [experiece.adobe.com](https://experience.adobe.com).
+1. In the **Quick access** section, click **Experience Manager**.
+1. In the left side panel, click **Cloud Manager**.
+1. Select an organization that you want.
+1. On the **My Programs** console, click a program. 
 1. Do one of the following:
 
     * From the **Program Overview** page, click the **Edge Delivery** tab. Then, near the lower-right corner of the page, click **Add Edge Delivery site**.
@@ -25,7 +29,7 @@ exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 
     * In the upper-left corner of the page, click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to reveal the left side menu.
     Under the **Services** heading, click ![Web page icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
-    Near the upper-right corner of the page, click **Add site**.
+    Near the upper-right corner of the page, click ![Link icon or Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Link_18_N.svg) **Add Edge Delivery site**.
 
         ![Add Edge Delivery site from the Edge Delivery Sites button](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Cloud Manager Tests Overview
-description: Get an overview of the three types of tests that Cloud Manager automatically runs to ensure quality of your custom code.
+description: Get an overview of the three types of tests that Cloud Manager automatically runs to ensure the quality of your custom code.
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -19,11 +19,11 @@ There are three categories of tests supported by Cloud Manager for Cloud Service
 
 1. [Functional Testing](/help/implementing/cloud-manager/functional-testing.md)
 
-   * Functional testing is a part of the stage testing phase of a [production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) and optionally part of testing phase of a [non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+   * Functional testing runs during the stage testing phase of a [production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md). It can also run, optionally, during the testing phase of a [non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
-1. [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-dashboard.md)
+1. [Experience Audit Testing](/help/implementing/cloud-manager/reports/report-experience-audit.md)
 
-   * Experience audit testing is enabled in all Cloud Manager production pipelines andcannot be skipped.
+   * Experience audit testing is enabled in all Cloud Manager production pipelines and cannot be skipped.
 
 These tests can be:
 

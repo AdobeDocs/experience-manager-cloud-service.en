@@ -208,7 +208,7 @@ Each program has numerous options and data associated with it. These options and
 * ![Bell icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) [Activity](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - The history of pipeline runs of the program
 * ![Workflow icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) [Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - All pipelines configured for the program
 * ![Folder icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) [Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - All repositories configured for the program
-* ![Graph pie icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [Reports](/help/implementing/cloud-manager/sla-reporting.md) - Metrics such as SLA data
+* ![Graph pie icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [Reports](/help/implementing/cloud-manager/reports/report-sla.md) - Metrics such as SLA data
 
 **Services**
 
@@ -217,7 +217,7 @@ Each program has numerous options and data associated with it. These options and
 * ![Settings icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [Domain Settings](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Manage custom domain names for the program
 * ![Lock closed icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - Manage SSL certificates for the program
 * ![Social network icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [Domain Mappings](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Manage Domain Mappings 
-* ![Task list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Define allow lists for certain IP addresses
+* ![Task list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [`IP Allow Lists`](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Define allow lists for certain IP addresses
 * ![Box icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [Content Sets](/help/implementing/developing/tools/content-copy.md) - Sets of content created for copy purposes
 * ![History icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [Copy Content Activity](/help/implementing/developing/tools/content-copy.md) - Content copy activities
 * ![Channel icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Channel_18_N.svg) [Network Infrastructures](/help/security/configuring-advanced-networking.md) - Manage advanced networking options for the program

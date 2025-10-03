@@ -7,15 +7,18 @@ level: Beginner, Intermediate
 keywords: invoke service enhancements in VRE, populating drop-down options using invoke service, Set repeatable panel using output of invoke service, Set panel using output of invoke service, Use output parameter of invoke service to validate other field.
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
 ---
-# Using Invoke Service in the Visual Rule Editor for forms based on Core Components
+# Integrating External APIs with Visual Rule Editor in Core Component Forms
 
-The Visual Rule Editor in an Adaptive Form supports the **Invoke Service** feature, which allows you to select a service from the list of Form Data Models (FDM) configured for your instance. You can map form fields directly to the input parameters of the service. To map form fields to the output parameters, use the event payload option for the specified Form Data Model service. Additionally, the Visual rule editor allows you to create rules for success and failure handlers for **Invoke Service** operations based on its output responses. Success handlers manage the successful execution of the **Invoke Service** operation, while failure handlers address any errors that occur.
+The Visual Rule Editor in an Adaptive Form supports the **Invoke Service** feature, enabling you to connect to external APIs through Form Data Models (FDM) configured for your instance. You can map form fields directly to the service's input parameters and use the event payload option to map the output parameters. The Visual Rule Editor also lets you define rules for success and failure handlers based on the service's response: success handlers handle successful API calls, while failure handlers manage errors.
+
+This allows you to easily send API requests from your form, process the API responses, and display or use the returned data dynamically within the form. It ensures a seamless integration between your Adaptive Form and external systems or data sources.
+
 
 ## Advantages of using the Invoke Service in the form's rule editor
 
 Here are few advantages of using Invoke Service operation in the rule editor of an Adaotive Form:
 
-* **Streamlined integration**: Visual Rule Editor simplifies the process of integrating external services or APIs into your Adaptive Forms. By using the **Invoke Service**, you can easily connect forms to various data sources and services without the need for complex coding, making form integration more efficient.
+* **Streamlined API integration**: Visual Rule Editor simplifies the process of integrating external services or APIs into your Adaptive Forms. By using the **Invoke Service**, you can easily connect forms to various data sources and services without the need for complex coding, making form integration more efficient.
 
 * **Dynamic response handling**: You can manage success and error responses based on the output responses of the **Invoke Service**, allowing forms to react dynamically to different scenarios. It ensures forms handle various conditions appropriately, improving flexibility and control.
 
@@ -33,7 +36,7 @@ Visual rule editor allows you to create rules for success and failure handlers f
 
 To add success or failure handler, click **[!UICONTROL Add Success Handler]** or **[!UICONTROL Add Failure Handler]**, respectively. 
 
-When you click **[!UICONTROL Add Success Handler]**, the **[!UICONTROL Invoke Service Success Handler]** rule editor appears, allowing you to specify rules or logic to manage the **Invoke Service** output response when the operation is successful. You can specify rules even without defining conditions; however, you can add conditions for the success handler by clicking the **[!UICONTROL Add Condition]** option. 
+When you click **[!UICONTROL Add Success Handler]**, the **[!UICONTROL Invoke Service Success Handler]** rule editor appears, allowing you to specify rules or logic to manage the **Invoke Service** output response when the operation is successful. You can specify rules even without defining conditions; however, you can add conditions for the success handler by clicking the **[!UICONTROL Add Condition]** option.  
 
 ![Invoke service success hadler](/help/forms/assets/invoke-service-success-handler.png)
 
@@ -69,6 +72,7 @@ The table below describes a few scenarios in which the **Invoke Service** can be
 | **Set repeatable panel using output of Invoke Service**  | Configures a repeatable panel by using data from the Invoke Service output, allowing for dynamic panels. [Click here](#use-case-2-set-repeatable-panel-using-output-of-invoke-service), to see the implementation.   |
 | **Set panel using output of Invoke Service**             | Sets the content or visibility of a panel using specific values from the Invoke Service output. [Click here](#use-case-3-set-panel-using-output-of-invoke-service), to see the implementation.          |
 | **Use output parameter of Invoke Service to validate other fields** | Uses specific output parameters from the Invoke Service to validate the form fields. [Click here](#use-case-4-use-output-parameter-of-invoke-service-to-validate-other-fields), to see the implementation.  |
+| **Use Event Payload in Navigate To Action in Invoke Service** | Uses the event payload to handle success and failure responses and to pass data to the Navigate To action during navigation. [Click here](#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service) to see the implementation. |
 
 Create a `Get Information` form that retrieves values based on the input entered in the `Pet ID` text box. The screenshot below shows the form used in these use cases:
 
@@ -134,7 +138,6 @@ Let's post the following JSON using the [addPet](https://petstore.swagger.io/#/p
     }
 
 ```
-
 
 Rules and logic are implemented using the **Invoke Service** action in the rule editor on the `Pet ID` textbox to demonstrate the mentioned use cases.  
 
@@ -204,7 +207,7 @@ This use case demonstrates how to use the output of an **Invoke Service** to dyn
 
 #### Implementation  
 
-Create a rule on the `Pet ID` text box to invoke the `getPetById` service. In **[!UICONTROL Add Failure Handler]**, add a failure handler response. Hide the **Submit** button if an incorrect `Pet ID` is entered.  
+Create a rule on the `Pet ID` text box to invoke the `getPetById` service. In **[!UICONTROL Add Failure Handler]**, add a failure handler response. Hide the **Submit** button if an incorrect `Pet ID` is entered. 
 
 ![Failure Handler](/help/forms/assets/create-rule-failure-handler.png)  
 
@@ -214,9 +217,38 @@ Enter `102` in the `Pet ID` text box, and the **Submit** button is hidden.
 
 ![Output](/help/forms/assets/output4.png)  
 
+### Use Case 5: Use Event Payload in Navigate To Action in Invoke Service
+
+This use case demonstrates how to configure a rule on the **Submit** button that calls an **Invoke Service** and then redirects the user to another page using the **Navigate To** action.
+
+#### Implementation
+
+Create a rule on the **Submit** button to invoke the `redirect-api` API service. This service is responsible for redirecting the user to the **Contact Us** form.
+
+You can directly integrate an API as the `redirect-api` API service into your Rule Editor using the JSON data provided below:
+
+```json
+{
+  "id": "1",
+  "path": "/content/dam/formsanddocuments/contact-detail/jcr:content?wcmmode=disabled"
+}
+```
+
 >[!NOTE]
 >
-> You can also [integrate API directly in the Rule Editor interface](/help/forms/api-integration-in-rule-editor.md) without using a predefined Form Data Model. 
+> To learn how to integrate API directly in the Rule Editor interface, [click here](/help/forms/api-integration-in-rule-editor.md) without using a predefined Form Data Model. 
+
+In **[!UICONTROL Add Success Handler]**, configure the **Navigate To** action to redirect the user to the **Contact Us** page using the `Event Payload` parameter. Here, the user can submit their contact details.
+
+![Event Payload](/help/edge/docs/forms/assets/navigate-to-eventpayload.png)
+
+Optionally, configure a failure handler to display an error message if the service call fails.
+
+#### Output
+
+When the **Submit** button is clicked, the `redirect-api` API service is invoked. Upon success, the user is redirected to the **Contact Us** page.
+
+![Event payload Output](/help/forms/assets/output5.gif)
 
 ## Frequently asked questions
 

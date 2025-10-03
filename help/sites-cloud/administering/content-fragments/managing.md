@@ -427,7 +427,7 @@ You can publish your Content Fragments to:
 
 * the **[Publish Service](/help/headless/deployment/architecture.md)** - for full, public access
 
-* the **[Preview Service](/help/headless/deployment/architecture.md)** - to preview the content prior to full availability
+* the **[Preview Service](/help/headless/deployment/architecture.md)** - to [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) the content prior to full availability
 
   >[!CAUTION]
   >
