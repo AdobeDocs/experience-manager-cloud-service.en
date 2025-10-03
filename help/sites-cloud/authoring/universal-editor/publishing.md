@@ -38,10 +38,6 @@ When you as a content author are ready to publish your content, you simply need 
 
 1. Tap or click **Publish** to publish or **Cancel** to abort.
 
->[!TIP]
->
->If you publish to your preview environment, [you can use the option in the **Account** menu](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) in the Experience Manager header toolbar to switch between preview and production environments.
-
 >[!NOTE]
 >
 >The option to publish to preview [can be disabled](/help/implementing/universal-editor/customizing.md#publish-preview) and thus might not appear in your editor.
