@@ -126,6 +126,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2025 {#2025}
+      + [2025.9.0](/help/implementing/cloud-manager/release-notes/2025/2025-9-0.md)
       + [2025.8.0](/help/implementing/cloud-manager/release-notes/2025/2025-8-0.md)
       + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
       + [2025.6.0](/help/implementing/cloud-manager/release-notes/2025/2025-6-0.md)
@@ -464,6 +465,7 @@ user-guide-title: AEM as a Cloud Service
       + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
       + [Delete Considerations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
       + [Analyzing Structure](/help/sites-cloud/administering/content-fragments/analysis.md)
+      + [Previewing Fragments](/help/sites-cloud/administering/content-fragments/preview.md)
       + [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
       + [Assets in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
       + [Content Fragments with Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
@@ -1307,10 +1309,13 @@ user-guide-title: AEM as a Cloud Service
         + [Functional Testing Overview](/help/implementing/cloud-manager/functional-testing.md)
         + [Java Functional Testing](/help/implementing/cloud-manager/java-functional-testing.md)
         + [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
-      + [Experience Audit Dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md)
     + [Access and Manage Logs](/help/implementing/cloud-manager/manage-logs.md)
     + [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md)
-    + [SLA Reporting](/help/implementing/cloud-manager/sla-reporting.md)
+    + Reports {#reports}
+      + [SLA](/help/implementing/cloud-manager/reports/report-sla.md)
+      + [Visual Comparison](/help/implementing/cloud-manager/reports/report-visual-comparison.md)
+      + [Health Assessment](/help/implementing/cloud-manager/reports/report-health-assessment.md)
+      + [Experience Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md)
     + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
     + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
     + [Notifications](/help/implementing/cloud-manager/notifications.md)
