@@ -22,14 +22,21 @@ You simply open the selected environment's ![More icon or ellipsis menu icon](ht
 >
 >![Source code version in use](/help/operations/assets/environments-view-details-sourcecodeversion.png) 
 
-The **Restore previous code deployed** feature becomes available only when **every** condition below is true:
+**Restore previous code deployed** becomes available only when the following conditions are met:
 
+* Only one restore is allowed per successful pipeline execution; to restore again, complete another successful pipeline run.
 * You hold **Environment Restore Create** permissions. For details on managing permissions, see [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
 * Your organization is enrolled in the beta program and the feature flag is on.
 * The program runs on AEM as a Cloud Service.
-* The chosen environment is a `Development` environment (temporary Beta limit).
 * The last pipeline for that environment finished successfully and ran **fewer than 30 days** ago.
 * The environment status is *Running* and no pipeline is in progress.
+
+**Restore previous code deployed** works in `Production` environment, in addition to `Development` environment, `Stage` environment, and `Specialized Testing Environment`. After you confirm, Cloud Manager starts the restore and sends a push notification at start and on successful completion. 
+
+>[!IMPORTANT]
+>
+>Adobe highly recommends validating the procedure in `Stage` *before* using it in `Production` to reduce risk and ensure stability.
+
 
 If any check fails, Cloud Manager opens the following dialog box that lists one or more unmet conditions and disables **Confirm**, preventing the restore.
 

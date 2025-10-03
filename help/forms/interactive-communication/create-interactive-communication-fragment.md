@@ -4,10 +4,9 @@ description: Create Interactive Communication Fragments in AEM Forms to build mo
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: yes
-index: no
-hidefromtoc: yes
+exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
 ---
+
 # Create an Interactive Communication Fragment
 
 >[!NOTE]

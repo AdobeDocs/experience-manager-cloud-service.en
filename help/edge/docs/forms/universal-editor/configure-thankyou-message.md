@@ -47,13 +47,19 @@ Thank you messages work best when:
 
 Open your Adaptive Form in Universal Editor and click the **Edit Form Properties** icon in the toolbar. This opens the comprehensive form properties dialog.
 
+![Form properties icon](/help/forms/assets/ue-form-properties-icon.png)
+
 **2. Navigate to thank you configuration**
 
 In the Form Properties dialog, select the **Thank You** tab to access post-submission configuration options.
 
+![Universal Editor Form Properties](/help/forms/assets/ue-form-properties.png)
+
 **3. Configure message display**
 
-Select **Show Message** from the available options. This activates the message content editor with rich text capabilities.
+Select **Show Message** from the available options. 
+
+![thankyou](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 **4. Create your message content**
 
@@ -111,13 +117,19 @@ Redirect URLs are optimal for:
 
 Open your Adaptive Form in Universal Editor and click the **Edit Form Properties** icon to open the form configuration dialog.
 
+![Form properties icon](/help/forms/assets/ue-form-properties-icon.png)
+
 **2. Navigate to thank you configuration**
 
 Select the **Thank You** tab in the Form Properties dialog to access redirect configuration options.
 
+![Universal Editor Form Properties](/help/forms/assets/ue-form-properties.png)
+
 **3. Enable redirect functionality**
 
 Choose **Redirect to URL** from the available post-submission options.
+
+![redirect](/help/edge/docs/forms/universal-editor/assets/redirect-ue.png)
 
 **4. Configure destination URL**
 

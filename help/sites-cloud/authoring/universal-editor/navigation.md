@@ -83,15 +83,9 @@ This displays the organization you are currently signed into. Select to switch t
 
 ![Organization indicator](assets/organization.png)
 
-#### Solutions {#solutions}
+#### Help Center {#help}
 
-Tapping or clicking the solutions switcher lets you quickly jump to other Experience Cloud solutions.
-
-![Solutions switcher](assets/solutions.png)
-
-#### Help {#help}
-
-The help icon provides quick access to learning and support resources.
+The help center icon provides quick access to learning and support resources.
 
 ![Help](assets/help.png)
 
@@ -101,11 +95,23 @@ This icon is badged with the number of currently assigned incomplete [notificati
 
 ![Notifications](assets/notifications.png)
 
-#### User Properties {#user-properties}
+#### Apps {#solutions}
 
-Select the icon representing your user to access your user settings. If you do not have a user picture configured, an icon is randomly assigned.
+Tapping or clicking the app switcher lets you quickly jump to other Experience Cloud solutions.
+
+![App switcher](assets/solutions.png)
+
+#### Account {#user-properties}
+
+Select the icon representing your user to access your account settings. If you do not have a user picture configured, an icon is randomly assigned.
 
 ![User properties](assets/user-properties.png)
+
+Tapping or clicking the account icon opens a menu with your user settings. These settings apply to Cloud Manager in general and its features are detailed [in that documentation.](/help/implementing/cloud-manager/navigation.md)
+
+![Environment switcher](assets/environment-switcher.png)
+
+For the Universal Editor, [if you have preview service available,](/help/sites-cloud/authoring/sites-console/previewing-content.md) you also have an option to switch between your production and preview environments under the heading **Product Settings**.
 
 ### The Universal Editor Toolbar {#universal-editor-toolbar}
 
@@ -129,6 +135,8 @@ On the start page you can enter the URL of the site you want to edit with the Un
 >
 >Any page that you want to edit with the Universal Editor must be [instrumented to support he Universal Editor](/help/implementing/universal-editor/getting-started.md).
 
+A **Quick Links** section provides you with help resources and a **Recents** section provides links to pages you recently opened with the Universal Editor.
+
 #### Location Bar {#location-bar}
 
 The location bar shows you the address of the page you are editing. Select to enter the address of another page to edit.
@@ -143,21 +151,32 @@ The location bar shows you the address of the page you are editing. Select to en
 >
 >Any page that you want to edit with the Universal Editor must be [instrumented to support he Universal Editor](/help/implementing/universal-editor/getting-started.md).
 
-#### Authentication Header Settings {#authentication-settings}
+#### Undo and Redo {#undo-redo}
 
-Select the authentication header settings icon if you need to [set a custom authentication header for local development purposes](/help/implementing/universal-editor/developer-overview.md#auth-header).
+Select the Undo or Redo buttons to undo or redo the last edit in the editor. Please see the document [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) for more information.
+
+![Undo icon](assets/undo.png)
+![Redo icon](assets/redo.png)
+
+>[!TIP]
+>
+>Use the hot key `Command-Z` or `Shift-Command-Z` to undo or redo, respectively.
+
+#### Authentication Headers {#authentication-settings}
+
+Select the authentication headers icon if you need to [set a custom authentication header for local development purposes](/help/implementing/universal-editor/developer-overview.md#auth-header).
 
 ![Authentication header settings button](assets/authentication-header-settings.png)
 
-#### Emulator Settings {#emulator}
+#### Responsive Mode {#emulator}
 
-Select the emulation icon to define how the Universal Editor renders the page.
+Select the responsive mode icon to define how the Universal Editor renders the page.
 
-![Emulator icon](assets/emulator.png)
+![Responsive mode icon](assets/emulator.png)
 
-Tapping or clicking the emulation icon reveals the options.
+Tapping or clicking the responsive mode icon reveals the options.
 
-![Emulation options](assets/emulation-options.png)
+![Responsive mode options](assets/emulation-options.png)
 
 By default the editor opens in desktop layout where the height and width are automatically defined by the browser.
 
@@ -167,7 +186,7 @@ You can also chose to emulate a mobile device and within the Universal Editor:
 * Define the width and height
 * Change the orientation
 
-#### Preview Mode {#preview-mode}
+#### Preview {#preview-mode}
 
 In preview mode, the page rendered in the editor as it would be seen on your published service. This allows the content author to navigate the content by clicking links, and so on.
 
@@ -319,6 +338,19 @@ Tapping or clicking the delete button [deletes the component](/help/sites-cloud/
 >[!TIP]
 >
 >Use the hot key `Shift+Backspace` to delete a selected component from a container.
+
+##### Copy and Paste {#copy-paste}
+
+You can copy and paste components that are within [containers.](/help/implementing/universal-editor/field-types.md#container)
+
+![Copy icon](assets/copy.png)
+![Paste icon](assets/paste.png)
+
+>[!TIP]
+>
+>Use the hot key `Command-C` or `Command-V` to copy or paste, respectively.
+
+Please see the document [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) for more information.
 
 #### Additional Buttons {#additional-properties-panel-buttons}
 

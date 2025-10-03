@@ -38,7 +38,7 @@ When you first open the Content Fragment Editor, you see four main areas:
 * top toolbar: for key information, and actions
   * a link to the Content Fragment Console (Home icon)
   * information about the model, and folder
-  * links to [Preview (if the Default Preview URL Pattern is configured for the model)](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)
+  * links to [Preview](#preview-content-fragment); if the Default Preview URL Pattern is configured for the model
   * [Publish](#publish-content-fragment), and [Unpublish](#unpublish-content-fragment) actions
   * an option to show all **Parent References** (link icon)
   * the fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, and last saved information
@@ -170,9 +170,9 @@ See [Generate Variations - Integrated in AEM Editors](/help/generative-ai/genera
 
 To delete a Variation of your Content Fragment:
 
-    >[!NOTE]
-    >
-    >You cannot delete **Main**.
+>[!NOTE]
+>
+>You cannot delete **Main**.
 
 1. Select the Variation.
 
@@ -491,14 +491,7 @@ To enable you to collaborate in-product and in-context, the **Comments** tab in 
 
 ## Preview your Fragment {#preview-content-fragment}
 
-The Content Fragment editor provides authors with the option to preview their edits in an external frontend application. 
-
-To use this feature, you first need to:
-
-* Work with your IT team to set up the external frontend application that will render the Content Fragment by consuming its JSON output. 
-* When the external frontend application is set up, the **Default Preview URL Pattern** must be defined as a [property of the appropriate Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties).
-
-When the URL has been defined, the **Preview** button is active. You can select this button to launch the external application (in a separate tab) to render the Content Fragment. 
+The Content Fragment editor provides authors with the option to preview their edits in an external frontend application. This requires that the **[Default Preview URL Pattern](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)** is defined, to activate the **Preview** button in the top toolbar of the editor. You can select this button to launch the external application (in a separate tab) to render the Content Fragment. 
 
 ## Publish your Fragment {#publish-content-fragment}
 

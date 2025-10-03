@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2025.09.04 Release Notes
-description: These are the release notes for the 2025.09.04 release of the Universal Editor.
+title: Universal Editor 2025.10.02 Release Notes
+description: These are the release notes for the 2025.10.02 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.09.04 Release Notes {#release-notes}
+# Universal Editor 2025.10.02 Release Notes {#release-notes}
 
-These are the release notes for the 4 September 2025 release of the Universal Editor.
+These are the release notes for the 2 October 2025 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -16,14 +16,7 @@ These are the release notes for the 4 September 2025 release of the Universal Ed
 
 ## What's New {#what-is-new}
 
-* Copy and paste is available for [early adopters](#copy-paste)
-
-### Undo/Redo {#undo-redo}
-
-Undo and redo is now available to Universal Editor content authors.
-
-* This includes edits done in context, edits done via the Properties panel, as well as adding (or duplicating), moving, and deleting blocks.
-* Undo and redo is limited to the current browser session.
+* [An option has been added](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) to the **Account** menu in the Experience Manager header toolbar to switch between preview and production environments.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -31,18 +24,12 @@ If you are interested in testing these upcoming features and sharing your feedba
 
 ### New RTE {#new-rte}
 
-The new ProseMirror RTE, featuring a page picker in the link dialog, is now available in the right panel.
+The new ProseMirror RTE, featuring a page picker in the link dialog, is now available in the right panel. [This RTE features flexible configuration options.](/help/implementing/universal-editor/configure-rte.md)
 
-### Copy/Paste {#copy-paste}
+### Copy and Paste Across Pages {#copy-paste}
 
-Copy and pasting of components within the same page is now available to content authors.
+Copy and pasting is now possible across pages in addition to within the same page.
 
 ## Other Improvements {#other-improvements}
 
-* The styling of the editor toolbar has been updated to align better with the upcoming new RTE.
-* The filters in the asset picker dialog have been restored.
-
-## Deprecations {#deprecations}
-
-* The `text-input` and `text-area` components were officially deprecated with [release 2025.07.09.](/help/release-notes/universal-editor/2025/2025-07-09.md)
-  * In `model-definition.json`, use the text component to create text inputs for the Properties panel.
+* The location bar and its text have been better aligned in the UI.

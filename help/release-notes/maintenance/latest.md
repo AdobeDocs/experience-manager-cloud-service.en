@@ -10,53 +10,61 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 22171 {#22171}
+## Release 22758 {#22758}
 
-Summarized below are the continuous improvements for maintenance release 22171, which was publicly released on September 2, 2025. The previous maintenance release was release 21994.
+Summarized below are the continuous improvements for maintenance release 22758, which was publicly released on October 1, 2025. The previous maintenance release was release 22450.
 
-The 2025.9.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+The 2025.10.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### New Features  {#new-features-22171}
+### Enhancements {#enhancements-22758}
 
-* ASSETS-53136: Vanity ID Support in Dynamic Media with OpenAPI.
+* ASSETS-56227: Rename adobe-countdown-timer modifier.
+* CNTBF-493: Bump content-backflow bundle version to 2.0.28.
+* CQ-4361110: Granite translations.
+* CQ-4361112: Latest AEM translations.
+* GRANITE-56026: Improve permissions API status code responses.
+* GRANITE-61015: Added `org.apache.commons.io.channels` package to the public exported list.
+* GRANITE-61167: Felix log has been updated to the latest OSGI spec.
+* GRANITE-61167: Update a number of Apache Felix dependencies.
+* GRANITE-61169: Improve the check for protected strings.
+* GRANITE-61622: Update a number of Apache Sling dependencies.
+* GRANITE-61663: Add `com.adobe.granite.repository.indexdefs-1.0.2` to quickstart.
+* GRANITE-61811: Add `com.adobe.granite.repository-2.0.0` to quickstart.
+* SITES-32014: Listen for external events to update service registrations.
+* SITES-34277: Fix blocking error in translations workflows for pages.
+* SKYOPS-108706: Upgraded release toggles bundle to latest version (etag caching).
+* SKYOPS-114210: Updating to latest version of aem.pss.service bundle.
+* SKYOPS-116171: Update to Sling ResourceResolver 1.12.12.
+* SKYOPS-119811: Released dispatcher-publish 2.0.258.
 
-### Enhancements {#enhancements-22171}
+### Fixed Issues {#fixed-issues-22758}
 
-None. 
+* GRANITE-61875: Fix triggers for "invalid expression evaluation" – Authors cannot save Content Fragments & assets fail to download.
+* SITES-22059: Fix JS error in PDF Viewer components. Unlocalized "File preview not available" string in Core Components site > PDF Viewer.
+* GRANITE-59704: Fix htmllibmanager.debug causing edit mode to fail.
+* GRANITE-61042: Integrate FELIX-6796 (ServiceTracker NPE fix) into AEM Felix Web Console bundle.
+* GRANITE-61165: Workspace.copy() throwing RepositoryException.
+* GRANITE-61875: Update ui.commons to 5.10.50.
 
-### Fixed Issues {#fixed-issues-22171}
-
-* ASSETS-52510: Duplicate filename detection fails for filenames containing Unicode `U+202F`.
-* ASSETS-53489: Folder deletion from Assets View UI doesn't unapprove all contained assets.
-* ASSETS-54821: Intermittent "Server error" in Asset Link.
-* ASSETS-55024: Broken image in AEM Assets "Download by Email" template.
-* ASSETS-55325: Dynamic Media static URLs omit file-extension after asset rename.
-* ASSETS-55334: The Link Share dialogue either flashes briefly and disappears or never appears.
-* ASSETS-55382: Restarted async assets jobs create duplicate destination folder.
-* ASSETS-55472: Manage Publication option "Include only already published pages" ignored.
-* SITES-31600: Contexthub js error breaking personalization.
-
-For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
-
-### Known Issues {#known-issues-22171}
+### Known Issues {#known-issues-22758}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-22171}
+### Deprecated Features and APIs {#deprecated-22758}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-22171}
+### Security Fixes {#security-22758}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 7 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 13 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-22171}
+### Embedded Technologies {#embedded-tech-22758}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM Oak | 1.84.0|[Oak API 1.84.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.84/index.html)| 
+|AEM Oak | 1.86.0|[Oak 1.86.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.86/index.html)| 
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |Apache HTTP Server| 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES)|
-|AEM Core Components| 2.29.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|AEM Core Components| 2.30.1|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
 |Node.js|14 (default)|[Supported Node.js versions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions)|

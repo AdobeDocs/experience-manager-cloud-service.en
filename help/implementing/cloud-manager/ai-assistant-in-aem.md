@@ -2,8 +2,8 @@
 title: AI Assistant in AEM
 description: Use AI Assistant to help you find answers, and troubleshoot for the solutions that are available in Adobe Experience Manager.
 solution: Experience Manager
-feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+feature: Authoring, AI Assistant, AI Tools
+role: Admin, Architect, Developer, User
 exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
 ---
 # AI Assistant in AEM {#about-ai-assistant-in-aem}
@@ -23,38 +23,32 @@ AI Assistant supports AEM as a Cloud Service, including the following solutions:
 
 It is directly embedded in AEM and accessible from AEM Experience Hub, Cloud Manager, and Author UI.
 
-The following 3-minute, 39-second video delivers a step-by-step walkthrough of AI Assistant in AEM.
+The following 3 minute, 25 second video delivers a step-by-step walkthrough of AI Assistant in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on) 
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops) 
 
 ## Get access to AI Assistant in AEM{#get-access}
 
-To grant users access to AI Assistant in AEM, your Adobe Admin must configure the following custom permissions for the profiles that require access in the **Adobe Admin Console**:
+To get access to AI Assistant in AEM, customers must have the following:
 
-* **AI Assistant access** - Permission to use AI Assistant in AEM for product knowledge, allowing users to ask product-related questions in AI Assistant chat. This permission must be enabled.
-* **Support access** - Users must also have permission to open support tickets, which requires the **Support Admin** role.
+* Permission to use AI Assistant in AEM for Product Knowledge. This permission lets you ask product-related questions in AI Assistant chat. This permission must be enabled.
+* Permission to open support tickets, which requires the **Support Admin** role.
 
-AI Assistant requests in AEM are authenticated through Adobe Identity Management Services (IMS). For details, see the [Adobe Identity Management Services overview](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
+>[!NOTE]
+>
+>AI Assistant requests in AEM are authenticated through Adobe Identity Management Services (IMS). For details, see the [Adobe Identity Management Services overview](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
 
 **To get access to AI Assistant in AEM:**
 
 1. Customers must have an additional agreement in place to access most AI-powered and agentic capabilities in Adobe Experience Manager. Contact your Adobe representative for details.
 
-<!-- OLD STEP 1 [Customers must sign the Gen AI rider with Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1). 
+1. To use AI Assistant in AEM, permission to access Product Knowledge through the AI Assistant is mandatory. This permission is turned ON by default.
 
-    The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more. -->
-
-1. The AEM Admin configures AI Assistant for use in their organization. See [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md).
-
-<!--
->[!IMPORTANT]
->Be sure you have reviewed and submitted the user agreement so Adobe can enable AI Assistant feature for you to test out and participate in the private beta program.
->
->For any questions, send an email to [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) from your email address associated with your Adobe ID. --> 
+    If you want to control who can access Product Knowledge, send an email to [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) from your email address associated with your Adobe ID. Adobe can enable user-level access control. When it is enabled, your Admin can grant user-level access by following the steps in [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md).
 
 ## Scope {#scope}
 
-The current scope of AI Assistant in AEM focuses on addressing product knowledge questions for AEMr as a Cloud Service. This scope includes comprehensive support for key areas. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
+The current scope of AI Assistant in AEM focuses on addressing product knowledge questions for AEM as a Cloud Service. This scope includes comprehensive support for key areas. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
 
 * **Surfaces**: Available across AEM Experience Hub, Author UI, Cloud Manager.
 * **Capabilities**: Product‑knowledge and first-stop for troubleshooting and guidance, automated creation of support tickets and lookup.

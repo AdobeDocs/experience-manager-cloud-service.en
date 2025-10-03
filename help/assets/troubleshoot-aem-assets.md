@@ -3,8 +3,8 @@ title: Troubleshooting in AEM Assets
 description: Troubleshoot common AEM Assets issues using the article links for key AEM Assets s=areas, such as uploads, metadata, search, delivery, and so on.
 hidefromtoc: yes
 hide: yes
+exl-id: bcc0d481-4be4-4486-974b-89f89431c864
 ---
-
 # Troubleshoot AEM Assets issues {#troubleshoot-aem-assets}
 
 AEM Assets as a Cloud Service offers a cloud-native, PaaS solution for businesses not only to perform their Digital Asset Management and Dynamic Media operations, but also use next-generation smart capabilities, such as AI/ML. All from within a system that is always current, always available, and always learning.
@@ -81,5 +81,3 @@ However, issues may arise that affects asset uploads, metadata, search, or deliv
     
   </tbody>
   <table>
-
-
