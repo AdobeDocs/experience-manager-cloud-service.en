@@ -528,6 +528,7 @@ user-guide-title: AEM as a Cloud Service
     + [Integrating with Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
     + [Using Content Fragments in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
   + [Operational Telemetry for AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
+  + [Contextual Experimentation](/help/sites-cloud/administering/contextual-experimentation.md)
 + Assets {#assets}
   + [Overview and what's new](/help/assets/overview.md)
   + [Notable Changes to [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
