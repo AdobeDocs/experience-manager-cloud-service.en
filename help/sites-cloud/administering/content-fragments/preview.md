@@ -63,7 +63,7 @@ When the URL has been defined, the **[Preview](/help/sites-cloud/administering/c
 
 ## Preview Instance {#preview-instance}
 
-You can **Publish**, and **Unpublish**, your fragment to your Preview instance (as well as to your Publish instance).
+You can **Publish**, and **Unpublish**, your fragment to your **[Preview Service](/help/headless/deployment/architecture.md)** (as well as to your Publish instance).
 
 You can publish your fragment from either the editor, or the console. 
 
