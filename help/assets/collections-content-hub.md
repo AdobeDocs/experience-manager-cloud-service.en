@@ -167,29 +167,29 @@ Content Hub Administrators can pin collections in Content Hub for quick access. 
 
 1. Click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Pin to quick access]**. A confirmation box appears.
 
-![pin collection](assets/pin-collection.png)
+    ![pin collection](assets/pin-collection.png)
 
 1. Click **[!UICONTROL Pin]** to confirm.
 
-![Confirm pin collection](assets/confirm-pin-collection.png)
+    ![Confirm pin collection](assets/confirm-pin-collection.png)
 
-The pinned Collections appear on the top for quick access. Alternatively, to unpin the collection, click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Unpin]**.
+    The pinned Collections appear on the top for quick access. Alternatively, to unpin the collection, click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Unpin]**.
 
-![View pinned collections](assets/pinned-collections.png)
+    ![View pinned collections](assets/pinned-collections.png)
  
 ## Mark Collections as Favourites {#favorite-collection}
 
-You can mark collections as Favorites in Content Hub, making it easier to organize and retrieve them. Once added, your favourite collections are conveniently available from the Favourites tab on the Content Hub home page. Additionally, you can search assets within Favorite Collections by using various sorting and date options. To mark collections as Favorites, follow these steps:
+You can mark collections as Favorites in Content Hub, making it easier to organize and retrieve them. Once added, your favourite collections are conveniently available from the Favourites tab on the Content Hub home page. Additionally, you can search assets within Favorite Collections. To mark collections as Favorites, follow these steps:
 
 1. Browse the Collections which you want to pin or unpin.
 
 1. Click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Add to Favorites]** to mark collection as Favorite.
 
-![Mark Collections as Favourites](assets/mark-favorite-collection.png)
+    ![Mark Collections as Favourites](assets/mark-favorite-collection.png)
 
-Collections marked as Favorites now appears under **[!UICONTROL My Favorites]** tab. Alternatively, you can remove the Collections from **[!UICONTROL My Favorites]**. To do this, click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Remove from Favorites]**.
+    Collections marked as Favorites now appears under **[!UICONTROL My Favorites]** tab. Alternatively, you can remove the Collections from **[!UICONTROL My Favorites]**. To do this, click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Remove from Favorites]**.
 
-![Remove Collection as Favourites](assets/remove-favorite-collection.png)
+    ![Remove Collection as Favourites](assets/remove-favorite-collection.png)
 
 >[!NOTE]
 >
