@@ -12,6 +12,10 @@ These are the release notes for the 2 October 2025 release of the Universal Edit
 
 >[!TIP]
 >
+>If you wish to test **upcoming** Universal Editor features before they are released, please see the [Universal Editor Preview Release Notes.](/help/release-notes/universal-editor/preview.md)
+
+>[!TIP]
+>
 >For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## What's New {#what-is-new}
