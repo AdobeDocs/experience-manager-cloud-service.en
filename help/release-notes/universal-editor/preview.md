@@ -24,4 +24,4 @@ These **preview** release notes are provided as a convenience so you know what c
 * An issue was resolved where where users couldn't reselect an Experience Fragment
 * Deleting a component or block in a Live Copy no longer cancels parent inheritance.
 * Editing page properties via page metadata on Live Copies no longer cancels full page inheritance.
-* A minor regression hotkeys regression was resolved.
+* A minor regression with hotkeys was resolved.
