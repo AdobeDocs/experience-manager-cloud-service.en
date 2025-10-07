@@ -10,55 +10,42 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 22758 {#22758}
+## Release X {#X}
 
-Summarized below are the continuous improvements for maintenance release 22758, which was publicly released on October 1, 2025. The previous maintenance release was release 22450.
+Summarized below are the continuous improvements for maintenance release X, which was publicly released on October 14, 2025. The previous maintenance release was release 22758.
 
 The 2025.10.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-22758}
-
-* ASSETS-56227: Rename adobe-countdown-timer modifier.
-* CNTBF-493: Bump content-backflow bundle version to 2.0.28.
-* CQ-4361110: Granite translations.
-* CQ-4361112: Latest AEM translations.
-* GRANITE-56026: Improve permissions API status code responses.
-* GRANITE-61015: Added `org.apache.commons.io.channels` package to the public exported list.
-* GRANITE-61167: Felix log has been updated to the latest OSGI spec.
-* GRANITE-61167: Update a number of Apache Felix dependencies.
-* GRANITE-61169: Improve the check for protected strings.
-* GRANITE-61622: Update a number of Apache Sling dependencies.
-* GRANITE-61663: Add `com.adobe.granite.repository.indexdefs-1.0.2` to quickstart.
-* GRANITE-61811: Add `com.adobe.granite.repository-2.0.0` to quickstart.
-* SITES-32014: Listen for external events to update service registrations.
-* SITES-34277: Fix blocking error in translations workflows for pages.
-* SKYOPS-108706: Upgraded release toggles bundle to latest version (etag caching).
-* SKYOPS-114210: Updating to latest version of aem.pss.service bundle.
-* SKYOPS-116171: Update to Sling ResourceResolver 1.12.12.
-* SKYOPS-119811: Released dispatcher-publish 2.0.258.
-
-### Fixed Issues {#fixed-issues-22758}
-
-* GRANITE-61875: Fix triggers for "invalid expression evaluation" – Authors cannot save Content Fragments & assets fail to download.
-* SITES-22059: Fix JS error in PDF Viewer components. Unlocalized "File preview not available" string in Core Components site > PDF Viewer.
-* GRANITE-59704: Fix htmllibmanager.debug causing edit mode to fail.
-* GRANITE-61042: Integrate FELIX-6796 (ServiceTracker NPE fix) into AEM Felix Web Console bundle.
-* GRANITE-61165: Workspace.copy() throwing RepositoryException.
-* GRANITE-61875: Update ui.commons to 5.10.50.
-
-### Known Issues {#known-issues-22758}
+### Enhancements {#enhancements-X}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-22758}
+### Fixed Issues {#fixed-issues-X}
+
+None.
+
+#### AEM Guides {#guides-X}
+
+* GUIDES-31421: When multiple DITA maps or topics are open and one of the topics is closed, the **>>** button which showcases all the open tabs gets overlapped with the remaining open tabs on the Tab bar.
+* GUIDES-33229: When generating PDFs, the filtering rules in a DITAVAL file are ignored if any property name contains a period.
+* GUIDES-33720: When zooming in the screen of Translation UI, the Send for Translation button moves under the ellipsis and becomes enabled even without any asset being selected.
+* GUIDES-33590: When a reviewer completes a review task or initiator updates review task without entering comments, the notification email sent displays the most recent previous comment.
+
+For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
+
+### Known Issues {#known-issues-X}
+
+None.
+
+### Deprecated Features and APIs {#deprecated-X}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-22758}
+### Security Fixes {#security-X}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 13 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses X identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-22758}
+### Embedded Technologies {#embedded-tech-X}
 
 |Technology|Version|Link|
 |---|---|---|
