@@ -150,7 +150,7 @@ The following `openssl` commands can be used to convert non-PEM certificates.
 
 ## Limitation on number of installed SSL certificates {#limitations}
 
-At any given time, Cloud Manager supports up to 50 installed certificates. These certificates can be associated with one or more environments across your program and also include any expired certificates.
+At any given time, Cloud Manager supports up to 70 installed certificates. These certificates can be associated with one or more environments across your program and also include any expired certificates.
 
 If you have reached the limit, review your certificates and consider deleting any expired certificates. Or, group multiple domains in the same certificate since a certificate can cover multiple domains (up to 100 SANs).
 
