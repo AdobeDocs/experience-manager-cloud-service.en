@@ -27,7 +27,7 @@ Perform the following steps to start using AEM Assets in Adobe Express editor:
 
 3. Click **[!UICONTROL Assets]** available in the left navigation pane. Adobe Express  displays the list of repositories that you are entitled to access along with the list of assets and folders available at the root-level.
 
-4. Browse or search assets in your repository to drag & drop onto the canvas. You can filter assets using various available filters, such as file type, MIME type, and dimensions.
+4. Browse or search assets in your repository to drag & drop onto the canvas. You can filter assets using various available filters, such as file type, MIME type, and dimensions. You can also upload a PSD file type upto 16 MP.
 
    >[!NOTE]
    >
@@ -35,6 +35,21 @@ Perform the following steps to start using AEM Assets in Adobe Express editor:
 
    ![Include assets from Assets add-on](assets/adobe-express-native-integration.png)
 
+### Replace image using AEM upload {#replace-image-using-aem-upload}
+
+Additionally, you can replace the added images using **[!UICONTROL AEM Upload]**. To do this, execute the following steps:
+
+1. Browse or search assets and drag & drop onto the canvas.
+
+1. Select the image which you want to replace. Click **[!UICONTROL Replace]** and select **[!UICONTROL AEM Replace]** among various other options.
+
+    ![AEM Replace](assets/aem-replace.png)
+
+1. **[!UICONTROL AEM Upload]** panel opens in the left navigation pane. Adobe Express  displays the list of repositories that you are entitled to access along with the list of assets and folders available at the root-level. Select assets that you want to replace and click **[!UICONTROL Replace]**.
+
+    >[!NOTE]
+    >
+    > For now, you cannot use SVG file types.
 
 ## Save Adobe Express projects in AEM Assets {#save-express-projects-in-assets}
 
@@ -71,18 +86,15 @@ As a best practice, Adobe recommends specifying values in the rest of the fields
     </tr>
     <tr>
         <td>[!UICONTROL JPEG]</td>
-        <td> 8000 X 8000 pixels, Maximum 40MB</td>
+        <td> 65MP (For example, 8K x 8K or 16K x 4K) </td>
     </tr>
     <tr>
         <td>[!UICONTROL PNG]</td>
-        <td> 8000 X 8000 pixels, Maximum 40MB</td>
+        <td> 65MP (For example, 8K x 8K or 16K x 4K) </td>
     </tr>
     <tr>
         <td>[!UICONTROL SVG]</td>
         <td> Maximum 250 KB</td>
-    </tr>
-    <tr>
-    </tr>
     </tr>
     <tr>
         <td>[!UICONTROL MP4]</td>
