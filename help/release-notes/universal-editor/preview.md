@@ -21,4 +21,3 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Improvements {#other-improvements}
 
-* 
