@@ -26,22 +26,24 @@ It offers several features that make AEM development easier:
 
 Before using the AEM Developer Tools, you need to:
 
-* Download and install [Eclipse IDE for Enterprise Java Developers](https://www.eclipse.org/downloads/packages/).
-* Configure your eclipse installation to ensure that you have at least 1 GB of heap memory by editing your `eclipse.ini` configuration file as described in the [Eclipse FAQ.](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
+* Download and install [Eclipse IDE for Enterprise Java and Web Developers.](https://www.eclipse.org/downloads/packages/)
+  * Version 1.4.0 of the AEM Developer Tools for Eclipse is compatible with Eclipse 2022-12 (4.26) or newer and requires Java 17 or newer to run.
+* Configure your Eclipse installation to ensure that you have at least 1 GB of heap memory by editing your `eclipse.ini` configuration file as described in the [Eclipse FAQ.](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
 
 >[!NOTE]
 >
->On macOS, you need to right-click **Eclipse.app**, and then select **Show Package Contents** to find your `eclipse.ini`**.**
+>On macOS, you need to right-click **Eclipse.app**, and then select **Show Package Contents** to find your `eclipse.ini`.
 
 ## How to Install the AEM Developer Tools for Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-When you have fulfilled the [requirements](#requirements) above, you can install the plugin as follows:
+When you have fulfilled the [requirements](#requirements) above, you can install the developer tools plugin as follows:
 
-1. Open the [AEM Developer Tools Web Site](https://eclipse.adobe.com/). 
+1. Open the [AEM Developer Tools Web Site.](https://eclipse.adobe.com/)
 
 1. Copy the **Installation Link**.
 
-   * Alternatively you can download an archive instead of using the installation link. This method allows offline installation but you do not receive miss automatic update notifications this way.
+   * Alternatively you can download an archive instead of using the installation link.
+   * This method allows offline installation but you do not receive automatic update notifications.
 
 1. In Eclipse, open the **Help** menu.
 1. Click **Install New Software**.
@@ -59,9 +61,9 @@ When you have fulfilled the [requirements](#requirements) above, you can install
 
 ## The AEM Perspective {#the-aem-perspective}
 
-In Eclipse, a Perspective determines the actions and views available within a window and enables task-oriented interaction with resources in Eclipse. For more details about Perspective, see the [Eclipse documentation](https://help.eclipse.org/latest/index.jsp).
+In Eclipse, a **Perspective** determines the actions and views available within a window and enables task-oriented interaction with resources in Eclipse. For more details about perspectives, see the [Eclipse documentation.](https://help.eclipse.org/latest/index.jsp).
 
-_Experience Manager Development Tools for Eclipse_ provide an AEM Perspective that offers you full control over your AEM Projects and instances. To open the AEM Perspective:
+The _Experience Manager Development Tools for Eclipse_ provide an AEM perspective that offers you full control over your AEM projects and instances. To open the AEM perspective:
 
 1. From the Eclipse menu bar, select **Window** &gt; **Perspective** &gt; **Open Perspective** &gt; **Other**.
 1. Select **AEM** in the dialog and click **Open**.
@@ -70,7 +72,7 @@ _Experience Manager Development Tools for Eclipse_ provide an AEM Perspective th
 
 ## Sample Multi-Module Project {#sample-multi-module-project}
 
-The _Experience Manager Developer Tools for Eclipse_ comes with a sample, multi-module project that helps you quickly get up to speed with a project setup in Eclipse. It also serves as a best-practice guide to several AEM features. [Learn more about the Project Archetype](https://github.com/adobe/aem-project-archetype).
+The _Experience Manager Developer Tools for Eclipse_ come with a sample multi-module project that helps you quickly get up to speed with a project setup in Eclipse. It also serves as a best-practice guide to several AEM features, leveraging the [AEM Project Archetype.](https://github.com/adobe/aem-project-archetype)
 
 Follow these steps to create the sample project:
 
@@ -82,9 +84,9 @@ Follow these steps to create the sample project:
 
    >[!NOTE]
    >
-   >This step might take a moment because m2eclipse must scan the archetype catalogs.
+   >This step might take a moment because [m2eclipse](https://eclipse.dev/m2e/) must scan the archetype catalogs.
 
-1. `com.adobe.aem : aem-project-archetype : <highest-number>` should be automatically selected in the **Archetype** drop-down. Select another, previous version if desired. Click **Next**.
+1. `com.adobe.aem : aem-project-archetype : <highest-number>` should be automatically selected in the **Archetype** drop-down. Select a previous version if desired. Click **Next**.
 
    ![Select archetype version](assets/select-archetype.png)
 
@@ -197,11 +199,11 @@ Use the **New Project** feature to create the basic project structure.
 
 1. Make sure to save all your changes. You can now synchronize that new content to your AEM instance.
 
-1. In the Servers panel, make sure that your connection is started, and if not start it.
+1. In the **Servers** panel, make sure that your connection is started, and if, not start it.
 
 1. Click the **Clean and Publish** icon.
 
-Once done, you should have your package running on your instance, and on save, any change automatically gets synchronized to the instance.
+Once done, your package should be running on your instance. On save, any change automatically gets synchronized to the instance.
 
 If you want to re-build a package out of your project, right-click the `PROJECT.ui.apps` or `PROJECT.ui.content` and choose **Run As** &gt; **Maven Install**.
 
@@ -223,11 +225,11 @@ Eclipse downloads the required dependencies. This may take a moment.
 
 ## More information {#more-information}
 
-The official Apache Sling IDE tooling for Eclipse website provides you with useful information:
+The official Apache Sling IDE tooling for Eclipse website provides useful additional information:
 
 * The [**Apache Sling IDE tooling for Eclipse** User Guide](https://sling.apache.org/documentation/development/ide-tooling.html) guides you through the overall concepts, server integration, and deployment capabilities supported by the AEM Development Tools.
-* The [Troubleshooting section](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)
-* The [Known issues list](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues)
+* [Troubleshooting Apache Sling IDE tooling](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)
+* [Known issues list](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues)
 
 The following official [Eclipse](https://www.eclipse.org/) documentation can help to set up your environment:
 
