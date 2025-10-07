@@ -27,7 +27,7 @@ Perform the following steps to start using AEM Assets in Adobe Express editor:
 
 3. Click **[!UICONTROL Assets]** available in the left navigation pane. Adobe Express  displays the list of repositories that you are entitled to access along with the list of assets and folders available at the root-level.
 
-4. Browse or search assets in your repository to drag & drop onto the canvas. You can filter assets using various available filters, such as file type, MIME type, and dimensions. You can also upload a PSD file type upto 16 MP.
+4. Browse or search for assets in your repository, then drag and drop them onto the canvas. Alternatively, click on the assets to place them onto the canvas. You can also filter assets by various criteria, such as file type, MIME type, and dimensions.
 
    >[!NOTE]
    >
@@ -41,7 +41,7 @@ Additionally, you can replace the added images using **[!UICONTROL AEM Upload]**
 
 1. Browse or search assets and drag & drop onto the canvas.
 
-1. Select the image which you want to replace. Click **[!UICONTROL Replace]** and select **[!UICONTROL AEM Replace]** among various other options.
+1. Select the image which you want to replace. Click **[!UICONTROL Replace]** and select **[!UICONTROL AEM Assets]** among various other options.
 
     ![AEM Replace](assets/aem-replace.png)
 
