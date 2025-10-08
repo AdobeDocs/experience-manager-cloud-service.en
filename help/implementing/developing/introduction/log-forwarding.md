@@ -564,7 +564,7 @@ You will need to copy the last section of the URL (without the preceeding `/`) a
   ```
 
 >[!NOTE]
->CDN Log support for SumoLogic is planned for H1 2026. Please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
+>CDN Log support for SumoLogic is planned for the future. Please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
 >
 > You will require a Sumo Logic Enterprise subscription to take advantage of the "index" field functionality.  Non-Enterprise subscriptions will have their logs routed to the `sumologic_default` partition as standard.  See the [Sumo Logic Partitioning Documentation](https://help.sumologic.com/docs/search/optimize-search-partitions/) for more information.
 
