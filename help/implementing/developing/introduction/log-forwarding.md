@@ -80,7 +80,7 @@ Customers with a license with a logging vendor or who host a logging product can
 
 >[!NOTE]
 >
-> For upcoming CDN Log Technologies planned for H1 2026 please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
+> For upcoming CDN Log Technologies planned for the future, please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
 
 Log forwarding is configured in a self-service manner by declaring a configuration in Git, and can be deployed via Cloud Manager config pipelines to dev, stage, and production environment types. The configuration file can be deployed to Rapid Development Environments (RDEs) using command line tooling.
 
