@@ -73,7 +73,7 @@ Customers with a license with a logging vendor or who host a logging product can
       <td>Sumo Logic</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td style="background-color: #ffb3b3;">H1 2026</td>
+      <td style="background-color: #ffb3b3;">Future</td>
     </tr>
   </tbody>
 </table>
