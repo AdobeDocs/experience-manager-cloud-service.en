@@ -486,7 +486,7 @@ Log Forwarding to New Relic leverages the New Relic HTTPS API for ingestion.  Cu
 >
 >Log forwarding to New Relic is only available to customer owned New Relic accounts.
 >
->CDN Log support for New Relic Log API is planned for H1 2026. Please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
+>CDN Log support for New Relic Log API is planned for the future. Please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
 >
 >New Relic provides region specific endpoints based on where your New Relic account is provisioned.  See [New Relic documentation](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) for further information.
 
