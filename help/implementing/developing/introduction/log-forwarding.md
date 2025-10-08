@@ -282,7 +282,7 @@ The IAM policy should allow the user to use `s3:putObject`.  For example:
 See [AWS Bucket Policy Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) for more information on how to implement.
 
 >[!NOTE]
->CDN Log support for AWS S3 is planned for H1 2026. Please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
+>CDN Log support for AWS S3 is planned for the future. Please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
 
 ### Azure Blob Storage {#azureblob}
 
