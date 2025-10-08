@@ -1,12 +1,12 @@
 ---
-title: Barcode Object in Interactive Communication Editor
-description: Barcode Object in Interactive Communication Editor in AEM Forms enables authors to visually represent encoded data within communication templates.
+title: Barcode Component in Interactive Communication Editor
+description: Barcode Component in Interactive Communication Editor in AEM Forms enables authors to visually represent encoded data within communication templates.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Barcode Object in Interactive Communication Editor 
+# Barcode Component in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -18,19 +18,19 @@ role: User, Developer, Admin
 
 ## 1. Introduction 
 
-The Barcode object in the Interactive Communication editor enables authors to visually represent encoded data within communication templates. This is particularly useful for applications that involve tracking, identification, billing, or automation. With support for various barcode standards like Code 128, QR, and more, this component offers flexible styling, positioning, and data binding options to suit a wide range of business needs. 
+The Barcode component in the Interactive Communication editor enables authors to visually represent encoded data within communication templates. This is particularly useful for applications that involve tracking, identification, billing, or automation. With support for various barcode standards like Code 128, QR, and more, this component offers flexible styling, positioning, and data binding options to suit a wide range of business needs. 
 
-Whether you're creating customer invoices, shipping labels, or membership cards, the Barcode object simplifies the process by embedding machine-readable data directly into your document. 
+Whether you're creating customer invoices, shipping labels, or membership cards, the Barcode component simplifies the process by embedding machine-readable data directly into your document. 
 
 ![Find IC Docu](/help/forms/interactive-communication/assets/barcode.png)
 
 ## 2. Properties 
 
-The Barcode object comes with a comprehensive set of configurable options to control its behavior and appearance: 
+The Barcode component comes with a comprehensive set of configurable options to control its behavior and appearance: 
 
 2.1 Basic Field 
 
-**Name:** A unique identifier for the barcode. It's used to reference the object in data models and rule sets. 
+**Name:** A unique identifier for the barcode. It's used to reference the component in data models and rule sets. 
 
 **Location:** Specifies where the barcode text is displayed relative to the barcode symbol. 
 
@@ -126,7 +126,7 @@ Data Binding: Connects the barcode to a backend data model (XML or JSON). This e
 
 ## 3. Usage 
 
-The Barcode object is particularly helpful when automating processes that rely on scanned data. It can be added to communication templates such as: 
+The Barcode component is particularly helpful when automating processes that rely on scanned data. It can be added to communication templates such as: 
 
 - Invoices (for customer reference and quick scan payments) 
 
@@ -150,4 +150,4 @@ Authors can embed the barcode in layout containers and style it according to the
 
 - Maintain adequate margins to prevent clipping when printed. 
 
-The Barcode object in the Interactive Communication editor empowers document creators to bridge the gap between digital and physical systems. When implemented effectively, it enhances automation, improves user convenience, and supports seamless integration with scanning devices and workflows. 
+The Barcode component in the Interactive Communication editor empowers document creators to bridge the gap between digital and physical systems. When implemented effectively, it enhances automation, improves user convenience, and supports seamless integration with scanning devices and workflows. 
