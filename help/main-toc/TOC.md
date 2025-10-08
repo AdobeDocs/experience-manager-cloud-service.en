@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2025 {#2025}
+      + [Release Notes for 2025.8.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-8-0.md) 
       + [Release Notes for 2025.7.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-7-0.md) 
       + [Release Notes for 2025.6.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-6-0.md) 
       + [Release Notes for 2025.5.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md) 
@@ -685,6 +686,7 @@ user-guide-title: AEM as a Cloud Service
       + [Frequently asked questions](/help/assets/dynamic-media-open-apis-faqs.md)
       + [Configure custom domain](/help/assets/configure-custom-domain.md)
       + [Optimize images](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
+      + [Create vanity URLs](/help/assets/vanity-urls.md)
   + Working with Assets view {#assets-view}
     + [Introduction](/help/assets/assets-view-introduction.md)
     + [Getting started](/help/assets/get-started-assets-view.md)
@@ -752,6 +754,8 @@ user-guide-title: AEM as a Cloud Service
 + Forms {#forms}
   + Overview {#forms-overview}
     + [Introduction](/help/forms/home.md)
+    + [Introduction2](/help/forms/home2.md)
+    + [Introduction3](/help/forms/home3.md)
     + [Top Adobe Experience Manager Forms innovations](/help/forms/latest-innovations.md)
     + [Early Access (EA) capabilities](/help/forms/early-access-ea-features.md)
     + [Notable changes](/help/forms/notable-changes.md)
@@ -830,6 +834,7 @@ user-guide-title: AEM as a Cloud Service
         + [Create an Adaptive Form template based on Core Components](/help/forms/template-editor-core-components.md)
         + [Create an Adaptive Form (Core Components) based on XFA Form templates](/help/forms/create-adaptive-form-using-xfa-templates.md)
         + [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
+        + [Supported HTML markup tags in Document of Record](/help/forms/html-markup-tags-support-in-document-of-record.md)
         + [Use machine translation or human translation to translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
         + [Configuring redirect page or thank you message](/help/forms/configure-redirect-page-or-thank-you-message.md)
         + [Create forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md)
@@ -963,22 +968,25 @@ user-guide-title: AEM as a Cloud Service
       + [Introduction to Interactive Communication](/help/forms/introduction-to-interactive-communication.md)
       + [Create your First Interactive Communication](/help/forms/create-your-first-communication.md)
     + Component {#component}
-      + [Text Box Component in Interactive Communication Editor](/help/forms/interactive-communication/text-box-object-in-interactive-communication-editor.md)
-      + [Image Component in Interactive Communication Editor](/help/forms/interactive-communication/image-object-in-interactive-communication-editor.md)
-      + [Image Field Component in Interactive Communication Editor](/help/forms/interactive-communication/image-field-object-in-interactive-communication-editor.md)
+      + [Text Box Component in Interactive Communication Editor](/help/forms/interactive-communication/text-box-component-in-interactive-communication-editor.md)
+      + [Image Component in Interactive Communication Editor](/help/forms/interactive-communication/image-component-in-interactive-communication-editor.md)
+      + [Image Field Component in Interactive Communication Editor](/help/forms/interactive-communication/image-field-component-in-interactive-communication-editor.md)
       + [Text Field Component in Interactive Communication Editor](/help/forms/interactive-communication/text-field-in-interactive-communication-editor.md)
-      + [Numeric Field Component in Interactive Communication Editor](/help/forms/interactive-communication/numeric-field-object-in-interactive-communication-editor.md)
-      + [Date/Time Field Component in Interactive Communication Editor](/help/forms/interactive-communication/date-time-field-object-in-interactive-communication-editor.md)
-      + [Date Field Component in Interactive Communication Editor](/help/forms/interactive-communication/date-field-object-in-interactive-communication-editor.md)
-      + [Check Box Component in Interactive Communication Editor](/help/forms/interactive-communication/check-box-object-in-interactive-communication-editor.md)
-      + [Radio Button Component in Interactive Communication Editor](/help/forms/interactive-communication/radio-button-object-in-interactive-communication-editor.md)
-      + [Subform Component in Interactive Communication Editor](/help/forms/interactive-communication/subform-object-in-interactive-communication-editor.md)
-      + [Rectangle Component in Interactive Communication Editor](/help/forms/interactive-communication/rectangle-object-in-interactive-communication-editor.md)
-      + [Table Component in Interactive Communication Editor](/help/forms/interactive-communication/table-object-in-interactive-communication-editor.md)
-      + [Line Component in Interactive Communication Editor](/help/forms/interactive-communication/line-object-in-interactive-communication-editor.md)
-      + [Barcode Component in Interactive Communication Editor](/help/forms/interactive-communication/barcode-object-in-interactive-communication-editor.md)
+      + [Numeric Field Component in Interactive Communication Editor](/help/forms/interactive-communication/numeric-field-component-in-interactive-communication-editor.md)
+      + [Date/Time Field Component in Interactive Communication Editor](/help/forms/interactive-communication/date-time-field-component-in-interactive-communication-editor.md)
+      + [Date Field Component in Interactive Communication Editor](/help/forms/interactive-communication/date-field-component-in-interactive-communication-editor.md)
+      + [Check Box Component in Interactive Communication Editor](/help/forms/interactive-communication/check-box-component-in-interactive-communication-editor.md)
+      + [Radio Button Component in Interactive Communication Editor](/help/forms/interactive-communication/radio-button-component-in-interactive-communication-editor.md)
+      + [Subform Component in Interactive Communication Editor](/help/forms/interactive-communication/subform-component-in-interactive-communication-editor.md)
+      + [Rectangle Component in Interactive Communication Editor](/help/forms/interactive-communication/rectangle-component-in-interactive-communication-editor.md)
+      + [Table Component in Interactive Communication Editor](/help/forms/interactive-communication/table-component-in-interactive-communication-editor.md)
+      + [Line Component in Interactive Communication Editor](/help/forms/interactive-communication/line-component-in-interactive-communication-editor.md)
+      + [Barcode Component in Interactive Communication Editor](/help/forms/interactive-communication/barcode-component-in-interactive-communication-editor.md)
     + [Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/data-binding-in-interactive-communication-editor.md)
     + [Rule Creation in Interactive Communication Editor](/help/forms/interactive-communication/rule-creation-in-interactive-communication-editor.md)
+    + [Import and Export Interactive Communication](/help/forms/interactive-communication/import-and-export-interactive-communications.md)
+    + [Add Custom Fonts to Interactive Communication Editor](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)
+    + [PDF Preview in Interactive Communication Editor](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)
     + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
   + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
@@ -1024,12 +1032,16 @@ user-guide-title: AEM as a Cloud Service
     + [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
     + [Generate Variations](/help/generative-ai/generate-variations.md)
   + Forms Experience Builder {#forms-experience-builder}
-    + [AI Assistant for AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-    + [Getting started with AI Assistant for AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md)
-    + [Getting started with AI Assistant for AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
-    + [AEM Forms AI Assistant - Prompt Library](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-    + [Forms Experience Builder - Best Practices](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
-    + [Forms Experience Builder - Troubleshooting Guide](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
+    + [Forms Experience Builder - Overview](/help/forms/experience-builder/product-overview.md)
+    + [Getting started with Forms Experience Builder](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
+    + [Deploy and configure Forms Experience Builder](/help/forms/experience-builder/deploy-forms-experience-builder.md)
+    + How to {#forms-experience-builder-how-to}
+      + [How to convert an image to a form?](/help/forms/experience-builder/intelligent-import-conversion.md)
+      + [How to configure form submissions and integrations?](/help/forms/experience-builder/form-submission-integration.md)
+      + [How to create LLM-enhanced smart fields in Forms Experience Builder? ](/help/forms/experience-builder/forms-experience-builder-llm-smart-fields.md)
+      + [How to start a new thread conversation in forms experience builder?](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
+    + [Prompt Library](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
+    + [Frequently asked questions (FAQ)](/help/forms/experience-builder/forms-experience-builder-frequently-asked-questions.md)
 + Screens {#screens-as-cloud-service}
   + Overview to Screens as a Cloud Service {#overview}
     + [Introduction](/help/screens-cloud/introduction/introduction.md)
@@ -1122,11 +1134,7 @@ user-guide-title: AEM as a Cloud Service
     + [Overview](/help/edge/docs/forms/overview.md)
     
     + WYSIWYG Authoring {#universal-editor}
-      + Cascading Drop Down {#cascading-drop-down-list}
-        + [Introduction](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
-        + [Create API Integration](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
-        + [Create Form](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
-        + [Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+      + [Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + [Navigate the Universal Editor Interface for AEM Forms](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
       + [Getting Started with Edge Delivery Services for AEM Forms using Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
       + [Create and Publish Adaptive Forms with Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md)
@@ -1142,7 +1150,11 @@ user-guide-title: AEM as a Cloud Service
       + [Publish Adaptive Forms with Edge Delivery Services](/help/edge/docs/forms/universal-editor/publish-forms.md)
       + [Create Custom Components for an EDS Form](/help/edge/docs/forms/universal-editor/create-custom-component.md)
       + [Troubleshooting 403 Forbidden Errors in Edge Delivery Services Form Submission](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
-      + [Create Salesforce Lead Object using API Integration](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)   
+      + [Create Salesforce Lead Object using API Integration](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)  
+      + Cascading Drop Down {#cascading-drop-down-list}
+        + [Introduction](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
+        + [Create API Integration](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
+        + [Create Form](/help/edge/docs/forms/cascading-drop-down-list/create-form.md) 
     + Document-based authoring {#getting-started-edge-delivery-services-forms}
       + [Build Your First Form: Quick Start Guide with Google Sheets and Excel](/help/edge/docs/forms/tutorial.md)
       + [How to Create Forms Using Google Sheets or Excel: Step-by-Step Guide](/help/edge/docs/forms/create-forms.md)
@@ -1163,6 +1175,7 @@ user-guide-title: AEM as a Cloud Service
       + [Monitor Form Performance: Operational Telemetry Guides](/help/edge/docs/forms/operational-telemetry-for-forms.md) 
     + [Form Submission Guide: Using the Forms Submission Service](/help/forms/forms-submission-service.md)
     + [Configure Submission for Edge Delivery Services Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+    + [Adaptive Forms Block Field Properties](/help/edge/docs/forms/eds-form-field-properties.md)
     + [FAQ](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)   
   + [Best Practices for creating forms](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
@@ -1392,17 +1405,18 @@ user-guide-title: AEM as a Cloud Service
       + [Component Definition](/help/implementing/universal-editor/component-definition.md)
       + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
       + [Publishing](/help/implementing/universal-editor/publishing.md)
-      + [SecurBank Sample App](/help/implementing/universal-editor/securbank.md)
       + [Events](/help/implementing/universal-editor/events.md)
       + [Filtering Components](/help/implementing/universal-editor/filtering.md)
+      + [Configuring the RTE](/help/implementing/universal-editor/configure-rte.md)
       + [Customizing](/help/implementing/universal-editor/customizing.md)  
       + [Extending](/help/implementing/universal-editor/extending.md)   
       + [Architecture](/help/implementing/universal-editor/architecture.md)
       + [Authentication](/help/implementing/universal-editor/authentication.md)
+      + [Calls](/help/implementing/universal-editor/calls.md)
       + [Getting Started](/help/implementing/universal-editor/getting-started.md)
       + [Developer Overview](/help/implementing/universal-editor/developer-overview.md)
       + [Local AEM Development](/help/implementing/universal-editor/local-dev.md)
-      + [Calls](/help/implementing/universal-editor/calls.md) 
+      + [SecurBank Sample App](/help/implementing/universal-editor/securbank.md) 
     + [Headless Experience Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
     + Hybrid and SPA Development {#hybrid}
       + [Hybrid and SPA with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
@@ -1483,6 +1497,7 @@ user-guide-title: AEM as a Cloud Service
   + Deploying to AEM as a Cloud Service {#deploying}
     + [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
     + [AEM Version Updates](/help/implementing/deploying/aem-version-updates.md)
+    + [Quiet Hours and Update Free Periods](/help/implementing/deploying/quiet-hours-update-free-periods.md)
     + [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md)
     + [Resource Mapping](/help/implementing/deploying/resource-mapping.md)
   + Author Tier {#author-tier}

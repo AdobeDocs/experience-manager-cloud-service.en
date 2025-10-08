@@ -99,7 +99,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    Opting out may mean missing out a chance to improve traffic engagement on your website. However, if you encounter any issues, you can disable Operational Telemetry by [setting an environment variable in Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables) named `AEM_OPTEL_DISABLED` to the value `true`. If you want to enable Operational Telemetry again at a later point, simply remove that environment variable again.
 
-1. **Can I use a Content Security Policy with a nonce?
+1. **Can I use a Content Security Policy with a Nonce?**
 
    The support for Operational Telemetry contains an experimental feature to support a Content Security Policy with a nonce. This feature can be enabled by [setting an environment variable in Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables) named `AEM_OPTEL_NONCE` to the value `true`. If you want to disable this again at a later point, simply remove that environment variable again.
 

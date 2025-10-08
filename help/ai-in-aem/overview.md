@@ -3,8 +3,8 @@ title: AI in AEM as a Cloud Service
 description: Learn about AI in Adobe Experience Manager as a Cloud Service
 feature: Generative AI, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
+exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
 ---
-
 # AI in AEM as a Cloud Service {#ai-in-aem-as-a-cloud-service}
 
 AI is an integral part of Adobe Experience Manager as a Cloud Service, being used to support users in finding information, or generate experiences.
