@@ -1,12 +1,12 @@
 ---
-title: Rectangle Object in Interactive Communication Editor 
-description: Rectangle Object in Interactive Communication Editor in AEM Forms allows authors to add shaped graphical elements that serve as layout dividers, visual accents, or content containers.
+title: Rectangle Component in Interactive Communication Editor 
+description: Rectangle Component in Interactive Communication Editor in AEM Forms allows authors to add shaped graphical elements that serve as layout dividers, visual accents, or content containers.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Rectangle Object in Interactive Communication Editor 
+# Rectangle Component in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -19,13 +19,13 @@ role: User, Developer, Admin
 ## 1. Introduction 
 
 The Rectangle component in the Interactive Communication (IC) editor allows authors to add shaped graphical elements that serve as layout dividers, visual accents, or content containers. Rectangles enhance visual hierarchy and guide user attention in structured communication layouts. 
-This object is not tied to data but is instrumental in improving design clarity, grouping related fields, and enhancing overall presentation. 
+This component is not tied to data but is instrumental in improving design clarity, grouping related fields, and enhancing overall presentation. 
 
 ![Find IC Docu](/help/forms/interactive-communication/assets/rectangle.png)
 
 ## 2. Properties 
 
-The Rectangle object includes several customizable properties: 
+The Rectangle component includes several customizable properties: 
 
 2.1. Name 
 
@@ -81,7 +81,7 @@ Defines spacing around the rectangle component to separate it from other UI elem
 
 ## 3. Usage 
 
-The Rectangle object is typically used for layout and styling purposes rather than content input. Common use cases include: 
+The Rectangle component is typically used for layout and styling purposes rather than content input. Common use cases include: 
 
 - Creating visual separation between sections 
 
@@ -105,6 +105,6 @@ Rectangles can be combined with other layout elements like subforms or container
 
 - Hide rectangles if they are only needed for design purposes during editing but not required in the final output. 
 
-The Rectangle object is a non-interactive yet powerful tool in the IC Editor. When styled and positioned effectively, it enhances layout precision, visual flow, and user experience without adding complexity to data binding or interactivity. 
+The Rectangle component is a non-interactive yet powerful tool in the IC Editor. When styled and positioned effectively, it enhances layout precision, visual flow, and user experience without adding complexity to data binding or interactivity. 
 
  
