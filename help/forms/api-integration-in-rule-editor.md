@@ -11,15 +11,15 @@ exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
 
 <span>Integrating API in Rule Editor is under Early Adopter Program. You can write to `aem-forms-ea@adobe.com` from your official email id to join the early adopter program and request access to the capability.</span>
 
+>[!NOTE]
+>
+> The Visual Rule Editor supports API integration in Adaptive Forms based on Core Components and [Edge Delivery Services Forms authored in Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
+
 The Visual Rule Editor in Adaptive Forms supports direct API integration without creating a Form Data Model. You can connect to an API endpoint by either entering the API URL (in JSON format) or importing the configuration through a cURL command. Once integrated, the **Invoke Service** action can be used to call the API.
 
 Form fields can be mapped directly to the input parameters defined in the API configuration. Similarly, output parameters can be mapped to form fields using the **event payload** option for the corresponding API response.
 
 Additionally, the Visual Rule Editor lets you define **success** and **failure handlers** when invoking a service. Success handlers specify the actions to be executed after a successful API call, while failure handlers define how the form should respond when an error occurs.
-
->[!NOTE]
->
-> API integration in Rule Editor is also applicable to [Edge Delivery Services Forms authored in Universal Editor](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md).
 
 ## Comparison: API Integration Methods
 
