@@ -1,12 +1,12 @@
 ---
-title: Subform Object in Interactive Communication Editor
-description: Subform Object in Interactive Communication Editor in AEM Forms allows you to organize multiple form elements in a flexible and structured way.
+title: Subform Component in Interactive Communication Editor
+description: Subform Component in Interactive Communication Editor in AEM Forms allows you to organize multiple form elements in a flexible and structured way.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Subform Object in Interactive Communication Editor 
+# Subform Component in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -103,6 +103,6 @@ Subforms can also be used as containers for drag-and-drop design alignment in bo
 
 - Apply conditional visibility rules to optimize user experience in complex forms. 
 
-The **Subform** object in the Interactive Communication editor provides a powerful way to structure and control complex form layouts. Whether organizing input fields, managing dynamic content, or enabling modular design, subforms enhance both usability and maintainability across document templates. 
+The **Subform** component in the Interactive Communication editor provides a powerful way to structure and control complex form layouts. Whether organizing input fields, managing dynamic content, or enabling modular design, subforms enhance both usability and maintainability across document templates. 
 
  
