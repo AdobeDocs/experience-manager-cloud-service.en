@@ -971,7 +971,7 @@ user-guide-title: AEM as a Cloud Service
       + [Text Box Component in Interactive Communication Editor](/help/forms/interactive-communication/text-box-component-in-interactive-communication-editor.md)
       + [Image Component in Interactive Communication Editor](/help/forms/interactive-communication/image-component-in-interactive-communication-editor.md)
       + [Image Field Component in Interactive Communication Editor](/help/forms/interactive-communication/image-field-component-in-interactive-communication-editor.md)
-      + [Text Field Component in Interactive Communication Editor](/help/forms/interactive-communication/text-field-in-interactive-communication-editor.md)
+      + [Text Field Component in Interactive Communication Editor](/help/forms/interactive-communication/text-field-component-in-interactive-communication-editor.md)
       + [Numeric Field Component in Interactive Communication Editor](/help/forms/interactive-communication/numeric-field-component-in-interactive-communication-editor.md)
       + [Date/Time Field Component in Interactive Communication Editor](/help/forms/interactive-communication/date-time-field-component-in-interactive-communication-editor.md)
       + [Date Field Component in Interactive Communication Editor](/help/forms/interactive-communication/date-field-component-in-interactive-communication-editor.md)
