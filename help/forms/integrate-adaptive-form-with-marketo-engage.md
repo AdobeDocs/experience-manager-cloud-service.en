@@ -16,12 +16,6 @@ After creating the cloud service configuration to integrate Marketo Engage with 
 
 You can connect Marketo Engage to an Adaptive Form using the form wizard, which simplifies the configuration process by guiding you through each step. It includes selecting templates, styles, and data fields, as well as setting up data mapping to ensure your form is ready to communicate with Marketo Engage once created. Using the form wizard, you can also configure the Adaptive Form to submit data directly to Adobe Marketo Engage upon submission.
 
-## Consideration for configuring the Marketo Engage data source for forms
-
-Consideration while configuring Marketo Engage data source for forms are:
-
-* It is not possible to connect Edge Delivery Services Forms with Marketo Engage.
-
 ## Prerequisite to connect Marketo Engage with forms
 
 Prerequisite to connect Marketo Engage with forms:

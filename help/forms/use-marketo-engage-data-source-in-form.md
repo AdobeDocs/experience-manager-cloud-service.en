@@ -16,12 +16,6 @@ After creating the cloud service configuration to integrate Marketo Engage with 
 
 Configuring data integration enables users to connect to various data sources or schemas. Integrating with the Marketo Engage data source and using it across different forms facilitates operations on that data. To explore the supported out-of-the-box data sources for an Adaptive Form, refer to the [Configure Data Sources](/help/forms/configure-data-sources.md) article.
 
-## Consideration for configuring the Marketo Engage data source for forms
-
-Consideration while configuring Marketo Engage data source for forms are:
-
-* It is not possible to connect Edge Delivery Services Forms with Marketo Engage.
-
 ## Prerequisite to use Marketo Engage data source for forms
 
 Prerequisite to use Marketo Engage data source with forms:
