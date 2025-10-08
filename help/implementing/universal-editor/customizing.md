@@ -50,6 +50,14 @@ Certain authoring workflow might need to limit the ability of the content author
 <meta name="urn:adobe:aue:config:disable" content="duplicate"/>
 ```
 
+## Disabling Copy and Paste {#copy-paste}
+
+Certain authoring workflow might need to limit the ability of the content author to copy and paste components. You can disable the [copy and paste icons](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) by adding the following metadata.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="copy"/>
+```
+
 ## Changing Your Endpoint {#custom-endpoint}
 
 If you would like not to use the Universal Editor Service, which is hosted by Adobe, but your own hosted version, you can set this in a meta tag. Please see the document [Getting Started with the Universal Editor in AEM](/help/implementing/universal-editor/getting-started.md##configuration-settings) for details.
