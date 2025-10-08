@@ -510,7 +510,7 @@ The "Ingest Logs" scope attribute is required for the Token.
   ```
 
 >[!NOTE]
->CDN Log support for Dynatrace Log API is planned for H1 2026. Please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
+>CDN Log support for Dynatrace Log API is planned for the future. Please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
 
 ### Splunk {#splunk}
 
