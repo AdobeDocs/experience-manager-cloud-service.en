@@ -107,6 +107,12 @@ Select the icon representing your user to access your account settings. If you d
 
 ![User properties](assets/user-properties.png)
 
+Tapping or clicking the account icon opens a menu with your user settings. These settings apply to Cloud Manager in general and its features are detailed [in that documentation.](/help/implementing/cloud-manager/navigation.md)
+
+![Environment switcher](assets/environment-switcher.png)
+
+For the Universal Editor, under the heading **Product Settings**, there is an option to switch between the current production version of the Universal Editor and the upcoming preview version.
+
 ### The Universal Editor Toolbar {#universal-editor-toolbar}
 
 The Universal Editor toolbar is always present at the top of the screen just below [the Experience Cloud header](#experience-cloud-header). It gives you quick access to navigate to another page to edit and to publish the current page.

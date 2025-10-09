@@ -111,6 +111,11 @@ Using a config pipeline, you can deploy settings quickly for log forwarding, pur
 
 See [Use config pipelines](/help/operations/config-pipeline.md) for a comprehensive list of supported features and to learn how to manage the configurations in your repository so they are deployed properly.
 
+>[!NOTE]
+>
+>Edge Delivery Configuration Pipelines do not have separate development, staging, and production environments. In AEM as a Cloud Service, changes move through development, stage, and production tiers. In contrast, an Edge Delivery Configuration Pipeline applies its configuration directly to all Edge Delivery Sites domains registered in Cloud Manager. To learn more, see [Add an Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
+
+
 ### Configure config Pipelines {#configure-config-deployment}
 
 See [Add a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment).

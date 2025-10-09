@@ -10,89 +10,61 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 22450 {#22450}
+## Release 22758 {#22758}
 
-Summarized below are the continuous improvements for maintenance release 22450, which was publicly released on September 16, 2025. The previous maintenance release was release 22171.
+Summarized below are the continuous improvements for maintenance release 22758, which was publicly released on October 1, 2025. The previous maintenance release was release 22450.
 
-The 2025.9.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+The 2025.10.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### New Features {#new-features-22450}
+### Enhancements {#enhancements-22758}
 
-* SITES-32595: Workflows that complete with skipped or rejected fragments can now be identified. A new property is available in the workflow API response, listing fragments that were excluded due to being invalid or having invalid references.
-* SITES-33642: A new API event is now produced and consumed for modified Content Fragments.
-* SITES-33320: It is now possible to search for a Content Fragment Model using its `technicalName`via the Search API.
+* ASSETS-56227: Rename adobe-countdown-timer modifier.
+* CNTBF-493: Bump content-backflow bundle version to 2.0.28.
+* CQ-4361110: Granite translations.
+* CQ-4361112: Latest AEM translations.
+* GRANITE-56026: Improve permissions API status code responses.
+* GRANITE-61015: Added `org.apache.commons.io.channels` package to the public exported list.
+* GRANITE-61167: Felix log has been updated to the latest OSGI spec.
+* GRANITE-61167: Update a number of Apache Felix dependencies.
+* GRANITE-61169: Improve the check for protected strings.
+* GRANITE-61622: Update a number of Apache Sling dependencies.
+* GRANITE-61663: Add `com.adobe.granite.repository.indexdefs-1.0.2` to quickstart.
+* GRANITE-61811: Add `com.adobe.granite.repository-2.0.0` to quickstart.
+* SITES-32014: Listen for external events to update service registrations.
+* SITES-34277: Fix blocking error in translations workflows for pages.
+* SKYOPS-108706: Upgraded release toggles bundle to latest version (etag caching).
+* SKYOPS-114210: Updating to latest version of aem.pss.service bundle.
+* SKYOPS-116171: Update to Sling ResourceResolver 1.12.12.
+* SKYOPS-119811: Released dispatcher-publish 2.0.258.
 
-### Enhancements {#enhancements-22450}
+### Fixed Issues {#fixed-issues-22758}
 
-* SITES-34023: The `technicalName` field has been added to the responses of the Content Fragment Model endpoints for better identification.
-* SITES-32766: The Content Asset References in Content Fragment Models now support a wider range of binary file types.
-* SITES-33974: Improved OpenAPI documentation making it more accurate and user-friendly.
-* SITES-9173: Cache `ContentPolicyStatus`.
-* SITES-9290: Improve caching of `TouchEditContext`.
-* SITES-33355: Open new CF Editor on "View payload" in workflow console.
-* SITES-33356: Open new CF Editor on Create CF → Open in TouchUI Admin UI.
-* SITES-32952: Inconsistent handling of default values for CFM fields when using delivery API.
-* SITES-31539: Edge Delivery with Universal Editor: Add support for Universal Editor configuration meta tags in `head.html`.
-* SITES-20672: Edge Delivery with Universal Editor: Add support for additional bulk metadata spreadsheets in authoring.
-* SITES-32963: Edge Delivery with Universal Editor: Add new experimentation metadata for optimization target, auto-allocate and self-learning.
-* SITES-30847: Release Core Components 2.30.0.
-* SITES-29617: The referencedBy endpoint has been updated to use the ReferenceSearch class, improving its performance and reliability.
-* SITES-19308: Enhanced the performance of the page deletion process by optimizing the reference validation step.
-* SITES-34293: Implemented lazy loading for templated resources to improve performance.
-* SITES-33892: Added a feature toggle to skip reference checks for pseudo pages, which can improve performance.
+* GRANITE-61875: Fix triggers for "invalid expression evaluation" – Authors cannot save Content Fragments & assets fail to download.
+* SITES-22059: Fix JS error in PDF Viewer components. Unlocalized "File preview not available" string in Core Components site > PDF Viewer.
+* GRANITE-59704: Fix htmllibmanager.debug causing edit mode to fail.
+* GRANITE-61042: Integrate FELIX-6796 (ServiceTracker NPE fix) into AEM Felix Web Console bundle.
+* GRANITE-61165: Workspace.copy() throwing RepositoryException.
+* GRANITE-61875: Update ui.commons to 5.10.50.
 
-### Fixed Issues {#fixed-issues-22450}
-
-* CQ-4360550: Fixed Unexpected Disappearance of Language Copy After Reverting Page Move in AEM Cloud Service.
-* SITES-25232: Set Date and Exit Timewarp links do not have a visible focus indicator.
-* SITES-25258: Focus is not managed with Delete Annotation modal dialog.
-* SITES-25305: The Demographic toolbar does not receive focus in a logical orde.
-* SITES-25366: Loading state of teaser modal is not announced by the screen reader.
-* SITES-34276: Edge Delivery with Universal Editor: fix automatically created CORS policy not applied on publish-tier.
-* SITES-34811: Edge Delivery with Universal Editor: fix hlx selector not being added to links to spreadsheets in authoring.
-* SITES-31669: Unlocalized strings "This page redirects to" in Tools > Sites > Launches.
-* SITES-30879: Unlocalized strings in Sites > Page Editor > Search component.
-* SITES-30959: Unlocalized strings in Page Editor > Image component.
-* SITES-21743: Unlocalized "Please select a document to display." string in Page Editor > PDF Viewer
-* SITES-19785: Strings is unlocalized in Core Components site > Tabs.
-* SITES-22059: Unlocalized "File preview not available" string in Core Components site > PDF Viewer.
-* SITES-33360: Unlocalized "Error during operation. Provided path is not a launch" string in Launches > Edit.
-* SITES-32975: Unlocalized date format in Headless UI > Launches > Compare Launch to Source.
-* SITES-32973: Hardcoded strings in Headless UI > Launches > Rebase.
-* SITES-13540: Unlocalized strings in Launches > Promotion.
-* SITES-13085: Unlocalized error strings in Sites > Launch creation page.
-* SITES-21499: Unlocalized string is Sites > Launches > Edit.
-* SITES-14961: Truncation of date field in Sites >Properties > Blueprint > Rollout dialog.
-* SITES-33764: Launch filters (Source Path / Workflow-created Launches) not working.
-* SITES-33884: "Promote current page and sub pages" unintentionally promotes out-of-scope pages.
-* SITES-33611: Live copy overview not working for high volume markets.
-* SITES-34331: 503 Timeout When Loading Rollout Overlay for Non-Admin Users.
-* SITES-34403: `NullPointerException` in `GraphqlClientImpl deactivate()` during shutdown.
-* SITES-33817: Resolved synchronization problems between the UI Schema and the JCR model to ensure consistency.
-* SITES-31141: Content references which are not represented by path are now correctly returned in the API response.
-* SITES-34080: The Content Fragment creation process is now more robust and will not fail if no fields are provided to the request.
-* SITES-30773: The regular expression for finding words using "Find and Replace" has been improved to correctly match UTF-8 characters.
-* SITES-33742: Resolved a bug that prevented the successful moving of a Content Fragment when using the workflow API.
-
-### Known Issues {#known-issues-22450}
+### Known Issues {#known-issues-22758}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-22450}
+### Deprecated Features and APIs {#deprecated-22758}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-22450}
+### Security Fixes {#security-22758}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 18 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 13 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-22450}
+### Embedded Technologies {#embedded-tech-22758}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM Oak | 1.84.0|[Oak API 1.84.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.84/index.html)| 
+|AEM Oak | 1.86.0|[Oak 1.86.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.86/index.html)| 
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |Apache HTTP Server| 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES)|
-|AEM Core Components| 2.29.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|AEM Core Components| 2.30.1|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
 |Node.js|14 (default)|[Supported Node.js versions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions)|
