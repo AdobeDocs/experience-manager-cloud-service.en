@@ -161,7 +161,7 @@ Only administrators and creator can delete a collection. To delete a collection,
 
 ## Pin or Unpin collection {#pin-unpin-collection}
 
-Content Hub Administrators can pin collections in Content Hub for quick access. Pinned collections are displayed in a dedicated Pinned section on the Collections home page, making it easier to keep important collections within reach. For the quick access, you can pin or unpin a collection by executing the steps below:
+Content Hub Administrators can pin collections in Content Hub for quick access. Pinned collections are displayed in a dedicated Pinned section on the Collections home page, making it easier to keep important collections within reach. For quick access, you can pin or unpin a collection by executing the steps below:
 
 1. Browse the Collections which you want to pin or unpin.
 
@@ -181,13 +181,13 @@ Content Hub Administrators can pin collections in Content Hub for quick access. 
 
 You can mark Collections as Favorite in Content Hub, making it easier to organize and retrieve them. Once added, your favorite collections are conveniently available from the Favorites tab on the Content Hub home page. Additionally, you can search assets within Favorite Collections. To mark collections as Favorites, follow these steps:
 
-1. Browse the Collections which you want to pin or unpin.
+1. Browse the Collections you want to mark as Favorites.
 
 1. Click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Add to Favorites]** to mark collection as Favorite.
 
     ![Mark Collections as Favorite](assets/mark-favorite-collection.png)
 
-    Collections marked as Favorite now appears under **[!UICONTROL My Favorites]** tab. Alternatively, you can remove the Collections from **[!UICONTROL My Favorites]**. To do this, click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Remove from Favorites]**.
+    Collections marked as Favorite now display under **[!UICONTROL My Favorites]** tab. Alternatively, you can remove the Collections from **[!UICONTROL My Favorites]**. To do this, click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Remove from Favorites]**.
 
     ![Remove Collection as Favorite](assets/remove-favorite-collection.png)
 
