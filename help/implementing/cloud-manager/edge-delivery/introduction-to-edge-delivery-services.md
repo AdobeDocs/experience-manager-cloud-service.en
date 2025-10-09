@@ -34,10 +34,10 @@ Maximize your benefits from Adobe by accessing and consuming your Edge Delivery 
 
 * [Consume your license on your chosen program](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md), or [update other programs](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md), or both.
 * Take advantage of [API-first](https://developer.adobe.com/experience-cloud/experience-manager-apis/) benefits for performing CRUD (Create, Read, Update, Delete) operations.
-* [Access SLA reporting](/help/implementing/cloud-manager/sla-reporting.md) (*coming soon*)
+* [Access SLA reporting](/help/implementing/cloud-manager/reports/report-sla.md)
 * [Gain access to Adobe support](/help/edge/overview.md#support-ticket) for your registered production programs.
 
-If you have an Edge Delivery Services (EDS) license, you can use an [Adobe managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) for your Edge Delivery site and take advantage of features like self-service CDN management and automatic renewal of DV certificates every three months, unless it is deleted. 
+If you have an Edge Delivery Services (EDS) license, you can use an [Adobe-managed CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) for your Edge Delivery site. Doing so enables self-service CDN management and DV certificates that renew automatically every three months unless you delete the certificate.
 
 Alternatively, if you choose to use your CDN (that is, a non-Adobe-managed CDN), regardless of your Edge Delivery Services licensing, you must configure it on the `aem.live` platform. See [BYO CDN Setup](https://www.aem.live/docs/byo-cdn-setup). 
 
@@ -73,7 +73,7 @@ The **Edge Delivery to-do list** in Cloud Manager is an onboarding task checklis
 | --- | --- | --- |
 | 1 | Join the product collaboration channel | Clicking **Submit request now** submits a request to Adobe to create a channel for your company. If the channel already exists, you are forwarded to your company's channel. |
 | 2 | Complete prerequisites | See [View Getting Started tutorial](https://www.aem.live/developer/tutorial). |
-| 3 | Add Edge Delivery Site OR <br>Create site now | See [Add an Edge Delivery site](#eds-add-site).<br>See [Create an Edge Delivery site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). |
+| 3 | Add Edge Delivery Site OR <br>Create a site now | See [Add an Edge Delivery site](#eds-add-site).<br>See [Create an Edge Delivery site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). |
 | 4 | Configure an Edge Delivery site to use an external Git repository | See [Configure an Edge Delivery site to use an external Git repository](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md). |
 | 5 | Add domain | See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 6 | Add SSL certificate | See [Add SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |

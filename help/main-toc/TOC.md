@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2025 {#2025}
+      + [Release Notes for 2025.8.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-8-0.md) 
       + [Release Notes for 2025.7.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-7-0.md) 
       + [Release Notes for 2025.6.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-6-0.md) 
       + [Release Notes for 2025.5.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md) 
@@ -125,6 +126,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2025 {#2025}
+      + [2025.9.0](/help/implementing/cloud-manager/release-notes/2025/2025-9-0.md)
       + [2025.8.0](/help/implementing/cloud-manager/release-notes/2025/2025-8-0.md)
       + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
       + [2025.6.0](/help/implementing/cloud-manager/release-notes/2025/2025-6-0.md)
@@ -229,7 +231,11 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Generate Variations](/help/generative-ai/release-notes-generate-variations.md)
   + Release Notes for Universal Editor {#universal-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
+    + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2025 {#2025}
+      + [2025.09.25 Release Notes](/help/release-notes/universal-editor/2025/2025-09-25.md)
+      + [2025.09.18 Release Notes](/help/release-notes/universal-editor/2025/2025-09-18.md)
+      + [2025.09.11 Release Notes](/help/release-notes/universal-editor/2025/2025-09-11.md)
       + [2025.09.04 Release Notes](/help/release-notes/universal-editor/2025/2025-09-04.md)
       + [2025.08.22 Release Notes](/help/release-notes/universal-editor/2025/2025-08-22.md)
       + [2025.08.14 Release Notes](/help/release-notes/universal-editor/2025/2025-08-14.md)
@@ -460,6 +466,7 @@ user-guide-title: AEM as a Cloud Service
       + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
       + [Delete Considerations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
       + [Analyzing Structure](/help/sites-cloud/administering/content-fragments/analysis.md)
+      + [Previewing Fragments](/help/sites-cloud/administering/content-fragments/preview.md)
       + [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
       + [Assets in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
       + [Content Fragments with Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
@@ -522,6 +529,7 @@ user-guide-title: AEM as a Cloud Service
     + [Integrating with Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
     + [Using Content Fragments in Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
   + [Operational Telemetry for AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
+  + [Contextual Experimentation](/help/sites-cloud/administering/contextual-experimentation.md)
 + Assets {#assets}
   + [Overview and what's new](/help/assets/overview.md)
   + [Notable Changes to [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
@@ -959,12 +967,33 @@ user-guide-title: AEM as a Cloud Service
     + [Scripting support for HTML5 forms](/help/forms/scripting-support.md)
     + [Form set in AEM Forms](/help/forms/formset-in-aem-forms.md)
   + Interactive Communication {#interactive-communication}
-    + [Introduction to interactive communication editor](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
-    + [Create an interactive communication](/help/forms/interactive-communication/create-interactive-communication.md)
-    + [Create an interactive communication template](/help/forms/interactive-communication/create-interactive-communication-template.md)
-    + [Create an interactive communication fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
-    + [Introduction to interactive communication](/help/forms/introduction-to-interactive-communication.md)
-    + [Create your first Interactive Communication](/help/forms/create-your-first-communication.md)
+    + Overview {#overview}
+      + [Introduction to Interactive Communication editor](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
+      + [Create an Interactive Communication](/help/forms/interactive-communication/create-interactive-communication.md)
+      + [Create an Interactive Communication Template](/help/forms/interactive-communication/create-interactive-communication-template.md)
+      + [Create an Interactive Communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+      + [Introduction to Interactive Communication](/help/forms/introduction-to-interactive-communication.md)
+      + [Create your First Interactive Communication](/help/forms/create-your-first-communication.md)
+    + Component {#component}
+      + [Text Box Component in Interactive Communication Editor](/help/forms/interactive-communication/text-box-component-in-interactive-communication-editor.md)
+      + [Image Component in Interactive Communication Editor](/help/forms/interactive-communication/image-component-in-interactive-communication-editor.md)
+      + [Image Field Component in Interactive Communication Editor](/help/forms/interactive-communication/image-field-component-in-interactive-communication-editor.md)
+      + [Text Field Component in Interactive Communication Editor](/help/forms/interactive-communication/text-field-component-in-interactive-communication-editor.md)
+      + [Numeric Field Component in Interactive Communication Editor](/help/forms/interactive-communication/numeric-field-component-in-interactive-communication-editor.md)
+      + [Date/Time Field Component in Interactive Communication Editor](/help/forms/interactive-communication/date-time-field-component-in-interactive-communication-editor.md)
+      + [Date Field Component in Interactive Communication Editor](/help/forms/interactive-communication/date-field-component-in-interactive-communication-editor.md)
+      + [Check Box Component in Interactive Communication Editor](/help/forms/interactive-communication/check-box-component-in-interactive-communication-editor.md)
+      + [Radio Button Component in Interactive Communication Editor](/help/forms/interactive-communication/radio-button-component-in-interactive-communication-editor.md)
+      + [Subform Component in Interactive Communication Editor](/help/forms/interactive-communication/subform-component-in-interactive-communication-editor.md)
+      + [Rectangle Component in Interactive Communication Editor](/help/forms/interactive-communication/rectangle-component-in-interactive-communication-editor.md)
+      + [Table Component in Interactive Communication Editor](/help/forms/interactive-communication/table-component-in-interactive-communication-editor.md)
+      + [Line Component in Interactive Communication Editor](/help/forms/interactive-communication/line-component-in-interactive-communication-editor.md)
+      + [Barcode Component in Interactive Communication Editor](/help/forms/interactive-communication/barcode-component-in-interactive-communication-editor.md)
+    + [Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/data-binding-in-interactive-communication-editor.md)
+    + [Rule Creation in Interactive Communication Editor](/help/forms/interactive-communication/rule-creation-in-interactive-communication-editor.md)
+    + [Import and Export Interactive Communication](/help/forms/interactive-communication/import-and-export-interactive-communications.md)
+    + [Add Custom Fonts to Interactive Communication Editor](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)
+    + [PDF Preview in Interactive Communication Editor](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)
     + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
   + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
@@ -1175,6 +1204,7 @@ user-guide-title: AEM as a Cloud Service
     + Authoring{#authoring}
       + [Authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
       + [Markdown editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+    + [Previewing Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
     + [Structure Tree](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
     + [JSON Preview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
   + Content Fragment Selector {#content-fragment-selector}
@@ -1285,10 +1315,13 @@ user-guide-title: AEM as a Cloud Service
         + [Functional Testing Overview](/help/implementing/cloud-manager/functional-testing.md)
         + [Java Functional Testing](/help/implementing/cloud-manager/java-functional-testing.md)
         + [UI Testing](/help/implementing/cloud-manager/ui-testing.md)
-      + [Experience Audit Dashboard](/help/implementing/cloud-manager/experience-audit-dashboard.md)
     + [Access and Manage Logs](/help/implementing/cloud-manager/manage-logs.md)
     + [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md)
-    + [SLA Reporting](/help/implementing/cloud-manager/sla-reporting.md)
+    + Reports {#reports}
+      + [SLA](/help/implementing/cloud-manager/reports/report-sla.md)
+      + [Visual Comparison](/help/implementing/cloud-manager/reports/report-visual-comparison.md)
+      + [Health Assessment](/help/implementing/cloud-manager/reports/report-health-assessment.md)
+      + [Experience Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md)
     + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
     + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
     + [Notifications](/help/implementing/cloud-manager/notifications.md)

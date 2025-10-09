@@ -1,14 +1,18 @@
 ---
-title: Universal Editor 2025.09.18 Release Notes
-description: These are the release notes for the 2025.09.18 release of the Universal Editor.
+title: Universal Editor 2025.10.02 Release Notes
+description: These are the release notes for the 2025.10.02 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.09.18 Release Notes {#release-notes}
+# Universal Editor 2025.10.02 Release Notes {#release-notes}
 
-These are the release notes for the 18 September 2025 release of the Universal Editor.
+These are the release notes for the 2 October 2025 release of the Universal Editor.
+
+>[!TIP]
+>
+>If you wish to test **upcoming** Universal Editor features before they are released, please see the [Universal Editor Preview Release Notes.](/help/release-notes/universal-editor/preview.md)
 
 >[!TIP]
 >
@@ -16,8 +20,7 @@ These are the release notes for the 18 September 2025 release of the Universal E
 
 ## What's New {#what-is-new}
 
-* [universal-editor-service.adobe.io](http://universal-editor-service.adobe.io/) is now used as the service endpoint for AMS instead of having to host the service locally.
-* Composite multi-fields are now supported when using AEM authoring.
+* [An option has been added](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties) to the **Account** menu in the Experience Manager header toolbar to switch between the current production version of the Universal Editor and the upcoming preview version.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -27,11 +30,6 @@ If you are interested in testing these upcoming features and sharing your feedba
 
 The new ProseMirror RTE, featuring a page picker in the link dialog, is now available in the right panel. [This RTE features flexible configuration options.](/help/implementing/universal-editor/configure-rte.md)
 
-### Copy and Paste Across Pages {#copy-paste}
-
-Copy and pasting is now possible across pages in addition to within the same page.
-
 ## Other Improvements {#other-improvements}
 
-* Several small performance improvements have been implemented around the Universal Editor works with AEM as a backend system.
-* Content Fragments are now published using Open API, bringing performance improvements and consistency with how the Content Fragment Editor and console publish.
+* The location bar and its text have been better aligned in the UI.

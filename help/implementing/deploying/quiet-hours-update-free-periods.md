@@ -9,7 +9,10 @@ exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
 # Quiet hours and Update free periods {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->This feature will be available as a **Limited Availability** feature starting with September 29th. Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to have the feature activated on your programs.
+>This feature will be available as a **Limited Availability** feature starting with September 25th. Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to have the feature activated on your programs.
+
+>[!WARNING]
+>You can use the Quiet hours and Update Free Periods features only after you are onboarded into [Automatic Maintenance Updates](/help/implementing/deploying/aem-version-updates.md).
 
 The AEM as a Cloud Service [automatic maintenance updates](/help/implementing/deploying/aem-version-updates.md) ensure that your instances stay secure and up to date with the latest maintenance releases. That said, in some cases (like go-live events) you might need to "protect" those critical working hours from any potential disruptions. As such, AEM as a Cloud Service offers the option to set a time frame where automatic updates do not occur for your ongoing programs.
 
