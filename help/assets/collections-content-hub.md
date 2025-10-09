@@ -187,11 +187,11 @@ You can mark Collections as Favorite in Content Hub, making it easier to organiz
 
     ![Mark Collections as Favorite](assets/mark-favorite-collection.png)
 
-    Collections marked as Favorites now appears under **[!UICONTROL My Favorites]** tab. Alternatively, you can remove the Collections from **[!UICONTROL My Favorites]**. To do this, click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Remove from Favorites]**.
+    Collections marked as Favorite now appears under **[!UICONTROL My Favorites]** tab. Alternatively, you can remove the Collections from **[!UICONTROL My Favorites]**. To do this, click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Remove from Favorites]**.
 
     ![Remove Collection as Favorite](assets/remove-favorite-collection.png)
 
 >[!NOTE]
 >
->[Pin or Unpin collection](#pin-unpin-collection) and [Mark Collections as Favorites](#favorite-collection) are a limited availability features. You can create and submit an Adobe Customer Support case to enable them for your deployment.
+>[Pin or Unpin collection](#pin-unpin-collection) and [Mark Collections as Favorites](#favorite-collection) are limited availability features. You can [create and submit](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) an Adobe Customer Support case to enable them for your deployment.
 
