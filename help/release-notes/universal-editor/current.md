@@ -18,6 +18,10 @@ These are the release notes for the 9 October 2025 release of the Universal Edit
 >
 >For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
+## What's New {#what-is-new}
+
+* [Copy and paste of components](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) is now possible between containers with filters configured.
+
 ## Early Adoption Features {#early-adopter}
 
 If you are interested in testing these upcoming features and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 
