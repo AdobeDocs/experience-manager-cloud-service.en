@@ -36,7 +36,7 @@ You can choose to [create a new collection](#create-new-collection) or [add asse
 
 Execute the steps below to control access while creating collections:
 
-1. Go to **[!DNL Collections]** tab and click **[!UICONTROL Create Collection]**. New Collection window appears.
+1. Go to **[!DNL Collections]** tab and click **[!UICONTROL Create Collection]**. A new Collection window appears.
 
 1. Add **[!UICONTROL Title]** and **[!UICONTROL Description]** for the collection.
 
@@ -169,7 +169,7 @@ Content Hub Administrators can pin collections in Content Hub for quick access. 
 
     ![pin collection](assets/pin-collection.png)
 
-1. Click **[!UICONTROL Pin]** to confirm.
+1. Click **[!UICONTROL Pin]** to confirm. The warning message appears when you pin a private collection.
 
     ![Confirm pin collection](assets/confirm-pin-collection.png)
 
@@ -177,19 +177,19 @@ Content Hub Administrators can pin collections in Content Hub for quick access. 
 
     ![View pinned collections](assets/pinned-collections.png)
  
-## Mark Collections as Favourites {#favorite-collection}
+## Mark Collections as Favorite {#favorite-collection}
 
-You can mark collections as Favorites in Content Hub, making it easier to organize and retrieve them. Once added, your favourite collections are conveniently available from the Favourites tab on the Content Hub home page. Additionally, you can search assets within Favorite Collections. To mark collections as Favorites, follow these steps:
+You can mark Collections as Favorite in Content Hub, making it easier to organize and retrieve them. Once added, your favourite collections are conveniently available from the Favourites tab on the Content Hub home page. Additionally, you can search assets within Favorite Collections. To mark collections as Favorites, follow these steps:
 
 1. Browse the Collections which you want to pin or unpin.
 
 1. Click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Add to Favorites]** to mark collection as Favorite.
 
-    ![Mark Collections as Favourites](assets/mark-favorite-collection.png)
+    ![Mark Collections as Favourite](assets/mark-favorite-collection.png)
 
     Collections marked as Favorites now appears under **[!UICONTROL My Favorites]** tab. Alternatively, you can remove the Collections from **[!UICONTROL My Favorites]**. To do this, click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Remove from Favorites]**.
 
-    ![Remove Collection as Favourites](assets/remove-favorite-collection.png)
+    ![Remove Collection as Favourite](assets/remove-favorite-collection.png)
 
 >[!NOTE]
 >
