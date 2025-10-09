@@ -179,19 +179,19 @@ Content Hub Administrators can pin collections in Content Hub for quick access. 
  
 ## Mark Collections as Favorite {#favorite-collection}
 
-You can mark Collections as Favorite in Content Hub, making it easier to organize and retrieve them. Once added, your favourite collections are conveniently available from the Favourites tab on the Content Hub home page. Additionally, you can search assets within Favorite Collections. To mark collections as Favorites, follow these steps:
+You can mark Collections as Favorite in Content Hub, making it easier to organize and retrieve them. Once added, your favorite collections are conveniently available from the Favorites tab on the Content Hub home page. Additionally, you can search assets within Favorite Collections. To mark collections as Favorites, follow these steps:
 
 1. Browse the Collections which you want to pin or unpin.
 
 1. Click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Add to Favorites]** to mark collection as Favorite.
 
-    ![Mark Collections as Favourite](assets/mark-favorite-collection.png)
+    ![Mark Collections as Favorite](assets/mark-favorite-collection.png)
 
     Collections marked as Favorites now appears under **[!UICONTROL My Favorites]** tab. Alternatively, you can remove the Collections from **[!UICONTROL My Favorites]**. To do this, click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Remove from Favorites]**.
 
-    ![Remove Collection as Favourite](assets/remove-favorite-collection.png)
+    ![Remove Collection as Favorite](assets/remove-favorite-collection.png)
 
 >[!NOTE]
 >
->[Pin or Unpin collection](#pin-unpin-collection) and [Mark Collections as Favourites](#favorite-collection) are a limited availability features. You can create and submit an Adobe Customer Support case to enable them for your deployment.
+>[Pin or Unpin collection](#pin-unpin-collection) and [Mark Collections as Favorites](#favorite-collection) are a limited availability features. You can create and submit an Adobe Customer Support case to enable them for your deployment.
 
