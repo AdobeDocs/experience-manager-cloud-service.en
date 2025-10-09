@@ -19,6 +19,8 @@ A collection refers to a set of assets that can be shared among users. A collect
 * **Download**: Download the assets.
 * **Remove**: Remove specific assets from a collection. 
 * **Delete**: Delete the entire collection. 
+* **Pin/Unpin**: Pin or unpin collection.
+* **Favorite**: Mark collection as favorite.
 
 It helps users to easily access and manage the diverse assets available within [!DNL Content Hub].
 
@@ -34,7 +36,7 @@ You can choose to [create a new collection](#create-new-collection) or [add asse
 
 Execute the steps below to control access while creating collections:
 
-1. Go to **[!DNL Collections]** tab and click **[!UICONTROL Create Collection]**. New Collection window appears.
+1. Go to **[!DNL Collections]** tab and click **[!UICONTROL Create Collection]**. A new Collection window appears.
 
 1. Add **[!UICONTROL Title]** and **[!UICONTROL Description]** for the collection.
 
@@ -157,5 +159,39 @@ The selected assets are successfully removed from the collection.
 
 Only administrators and creator can delete a collection. To delete a collection, navigate to the **[!UICONTROL Collections]** tab and click the collection that you need to delete. Click ![delete icon](assets/delete-icon.svg) icon to delete the collection.
 
+## Pin or Unpin collection {#pin-unpin-collection}
 
+Content Hub Administrators can pin collections in Content Hub for quick access. Pinned collections are displayed in a dedicated Pinned section on the Collections home page, making it easier to keep important collections within reach. For the quick access, you can pin or unpin a collection by executing the steps below:
+
+1. Browse the Collections which you want to pin or unpin.
+
+1. Click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Pin to quick access]**. A confirmation box appears.
+
+    ![pin collection](assets/pin-collection.png)
+
+1. Click **[!UICONTROL Pin]** to confirm. The warning message appears when you pin a private collection.
+
+    ![Confirm pin collection](assets/confirm-pin-collection.png)
+
+    The pinned Collections appear on the top for quick access. Alternatively, to unpin the collection, click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Unpin]**.
+
+    ![View pinned collections](assets/pinned-collections.png)
  
+## Mark Collections as Favorite {#favorite-collection}
+
+You can mark Collections as Favorite in Content Hub, making it easier to organize and retrieve them. Once added, your favorite collections are conveniently available from the Favorites tab on the Content Hub home page. Additionally, you can search assets within Favorite Collections. To mark collections as Favorites, follow these steps:
+
+1. Browse the Collections which you want to pin or unpin.
+
+1. Click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Add to Favorites]** to mark collection as Favorite.
+
+    ![Mark Collections as Favorite](assets/mark-favorite-collection.png)
+
+    Collections marked as Favorites now appears under **[!UICONTROL My Favorites]** tab. Alternatively, you can remove the Collections from **[!UICONTROL My Favorites]**. To do this, click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Remove from Favorites]**.
+
+    ![Remove Collection as Favorite](assets/remove-favorite-collection.png)
+
+>[!NOTE]
+>
+>[Pin or Unpin collection](#pin-unpin-collection) and [Mark Collections as Favorites](#favorite-collection) are a limited availability features. You can create and submit an Adobe Customer Support case to enable them for your deployment.
+
