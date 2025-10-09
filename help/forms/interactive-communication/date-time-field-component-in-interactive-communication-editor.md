@@ -1,12 +1,12 @@
 ---
-title: Date/Time Field Object in Interactive Communication Editor 
-description: Date/Time Field Object in Interactive Communication Editor  in AEM Forms to enables authors to insert fields where users can select or enter date and/or time values.
+title: Date/Time Field  in Interactive Communication Editor 
+description: Date/Time Field Component in Interactive Communication Editor  in AEM Forms to enables authors to insert fields where users can select or enter date and/or time values.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Date/Time Field Object in Interactive Communication Editor 
+# Date/Time Field Component in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ The field supports various formatting options (e.g., DD/MM/YYYY, 24-hour or 12-h
 
 ## 2. Properties 
 
-The Date/Time Field object includes several configurable properties: 
+The Date/Time Field component includes several configurable properties: 
 
 2.1. Basic Field 
 
@@ -134,4 +134,5 @@ Authors can combine the field with layout containers, validations, or conditiona
 
 - Bind the field to a valid schema path to ensure proper data capture and processing. 
 
-The Date/Time Field object in the Interactive Communication editor is a powerful and user-friendly component that streamlines time-based input. With the right configuration of styling, data handling, and layout controls, it enables clean, reliable, and intuitive form experiences for both users and backend systems. 
+The Date/Time Field component in the Interactive Communication editor is a powerful and user-friendly component that streamlines time-based input. With the right configuration of styling, data handling, and layout controls, it enables clean, reliable, and intuitive form experiences for both users and backend systems. 
+

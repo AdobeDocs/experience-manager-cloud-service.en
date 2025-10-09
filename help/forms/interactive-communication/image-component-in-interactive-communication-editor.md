@@ -1,12 +1,12 @@
 ---
-title: Image Object in Interactive Communication Editor
-description: Create Interactive Communication Fragments in AEM Forms to allows authors to enhance communication layouts by inserting static images.
+title: Image Component in Interactive Communication Editor
+description: Image Component in Interactive Communication Editor in AEM Forms to allows authors to enhance communication layouts by inserting static images.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Image Object in Interactive Communication Editor 
+# Image Component in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -18,13 +18,13 @@ role: User, Developer, Admin
 
 ## 1. Introduction 
 
-The Image object in the Interactive Communication Editor allows authors to enhance communication layouts by inserting static images. This component is essential for creating visually appealing layouts and incorporating branding elements such as logos or visual icons. Authors can place it in both Master Pages and Design View to ensure a consistent appearance across various output formats such as PDF. 
+The Image component in the Interactive Communication Editor allows authors to enhance communication layouts by inserting static images. This component is essential for creating visually appealing layouts and incorporating branding elements such as logos or visual icons. Authors can place it in both Master Pages and Design View to ensure a consistent appearance across various output formats such as PDF. 
 
 ![Find IC Docu](/help/forms/interactive-communication/assets/image.png)
 
 ## 2.Properties 
 
-The Image object provides several properties to help configure its look, feel, and behavior. 
+The Image component provides several properties to help configure its look, feel, and behavior. 
 
 2.1. Image Description 
 
@@ -62,7 +62,7 @@ Appearance: Defines the visual style of the image field, choose presets like bor
 
 2.5. Presence 
 
-Description: Determines visibility of the image object at runtime. 
+Description: Determines visibility of the image component at runtime. 
 
 - Options: 
 
@@ -72,7 +72,7 @@ Description: Determines visibility of the image object at runtime.
 
 ## 3.Usage 
 
-The Image object is ideal for: 
+The Image component is ideal for: 
 
 - Inserting logos in document headers 
 
@@ -90,4 +90,4 @@ The Image object is ideal for:
 
 - Set the image to show or hide conditionally if it's not always needed. 
 
-The Image object in AEM Interactive Communication plays a vital role in creating branded, personalized, and visually effective communications. With configurable properties, it enhances the user experience while maintaining design consistency across different formats. 
+The Image component in AEM Interactive Communication plays a vital role in creating branded, personalized, and visually effective communications. With configurable properties, it enhances the user experience while maintaining design consistency across different formats. 
