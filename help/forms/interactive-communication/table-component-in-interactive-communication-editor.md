@@ -1,12 +1,12 @@
 ---
-title: Table Object in Interactive Communication Editor
-description: Table Object in Interactive Communication Editor in AEM Forms enables authors to insert customizable tables into communication templates with ease.
+title: Table Component in Interactive Communication Editor
+description: Table Component in Interactive Communication Editor in AEM Forms enables authors to insert customizable tables into communication templates with ease.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Table Object in Interactive Communication Editor 
+# Table Component in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -18,7 +18,7 @@ role: User, Developer, Admin
 
 ## 1. Introduction 
 
-The Table Object in the Interactive Communication (IC) editor enables authors to insert customizable tables into communication templates with ease. This object supports tabular data representation for use cases such as summaries, item listings, structured input, or comparison layouts. 
+The Table Component in the Interactive Communication (IC) editor enables authors to insert customizable tables into communication templates with ease. This component supports tabular data representation for use cases such as summaries, item listings, structured input, or comparison layouts. 
 
 Authors can drag and drop the table component into the canvas, configure the number of rows and columns, and choose options like including header and footer rows, or setting the layout direction. Tables can be defined as default templates for consistency across multiple communications. 
 
@@ -26,7 +26,7 @@ Authors can drag and drop the table component into the canvas, configure the num
 
 ## 2. Properties 
 
-The Table Object includes several configurable properties to help authors customize the behavior and appearance of the table: 
+The Table Component includes several configurable properties to help authors customize the behavior and appearance of the table: 
 
 
 2.1 Basic Field 
@@ -85,7 +85,7 @@ The Table Object includes several configurable properties to help authors custom
 
 ## 3. Usage 
 
-The Table Object is ideal for displaying structured or repetitive information. Typical use cases include: 
+The Table Component is ideal for displaying structured or repetitive information. Typical use cases include: 
 
 - Invoices and bills with item rows 
 
@@ -111,6 +111,6 @@ Authors can configure the number of rows and columns, apply conditional visibili
 
 - Use default templates to standardize tabular content across documents. 
 
-The Table Object in the IC editor is a flexible, data-friendly component designed to support structured content in your communications. With customizable layout options, styling features, and powerful data binding, it empowers authors to present information clearly and effectively. 
+The Table Component in the IC editor is a flexible, data-friendly component designed to support structured content in your communications. With customizable layout options, styling features, and powerful data binding, it empowers authors to present information clearly and effectively. 
 
  
