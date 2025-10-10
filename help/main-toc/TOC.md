@@ -233,6 +233,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2025 {#2025}
+      + [2025.10.02 Release Notes](/help/release-notes/universal-editor/2025/2025-10-02.md)
       + [2025.09.25 Release Notes](/help/release-notes/universal-editor/2025/2025-09-25.md)
       + [2025.09.18 Release Notes](/help/release-notes/universal-editor/2025/2025-09-18.md)
       + [2025.09.11 Release Notes](/help/release-notes/universal-editor/2025/2025-09-11.md)
@@ -1302,7 +1303,7 @@ user-guide-title: AEM as a Cloud Service
       + [Introduction to CI-CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
       + [Configure a Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
       + [Configure a Non-Production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-      + [Split Stage and Production Only Pipeline (Beta)](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md)
+      + [Split Stage and Production Only Pipeline](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md)
       + [Configure an Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
       + [Manage Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
       + [Pipeline Variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
