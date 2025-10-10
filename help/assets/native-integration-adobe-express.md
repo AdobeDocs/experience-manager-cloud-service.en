@@ -45,11 +45,11 @@ Additionally, you can replace the added images using **[!UICONTROL AEM Upload]**
 
     ![AEM Replace](assets/aem-replace.png)
 
-1. **[!UICONTROL AEM Upload]** panel opens in the left navigation pane. Adobe Express  displays the list of repositories that you are entitled to access along with the list of assets and folders available at the root-level. Select assets that you want to replace and click **[!UICONTROL Replace]**.
+1. **[!UICONTROL AEM Upload]** panel opens in the left navigation pane. Adobe Express  displays the list of repositories that you are entitled to access along with the list of assets and folders available at the root-level. Select an asset from there to preview the replacement on the canvas, then click **[!UICONTROL Replace]** to confirm. 
 
     >[!NOTE]
     >
-    > For now, you cannot use SVG file types.
+    > SVG file types are not supported.
 
 ## Save Adobe Express projects in AEM Assets {#save-express-projects-in-assets}
 
