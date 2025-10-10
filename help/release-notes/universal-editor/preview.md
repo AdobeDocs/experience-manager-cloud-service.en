@@ -21,9 +21,8 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming New Features {#what-is-new}
 
-* Multi-field support for updates is introduced.
+* TBD
 
 ## Upcoming Improvements {#other-improvements}
 
-* The host in `AemContentFragmentReference` is now sanitized.
-* Logic was added for SSL vs. no-SSL dispatcher configurations.
+* TBD
