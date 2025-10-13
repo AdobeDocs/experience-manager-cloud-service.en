@@ -61,7 +61,7 @@ AEM as a Cloud Service is dedicated to optimizing your platform's security and p
 
 ### Change Notice
 * This release contains the following new product index versions:
-** damAssetLucene-12
+* **damAssetLucene-13**
 
 ### Embedded Technologies {#embedded-tech-22943}
 
