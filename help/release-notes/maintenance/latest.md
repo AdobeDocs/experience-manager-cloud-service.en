@@ -24,14 +24,10 @@ The 2025.10.0 feature activation will provide the full feature set for this main
 * SITES-30452: Content API improvements for ASO on the /content/definition endpoint
 * ASSETS-56905: Support connection to Indesign via proxy
 * ASSETS-48286: Add CAI properties to Algolia for GenStudio
-* ASSETS-49770: Include group-administration-service to assetquarantine service
-* GRANITE-62198: Adding support-helper 0.1.8
 * ASSETS-48653: Apply the invisible watermark in the preprocessing phase
-* ASSETS-55573: Restricted /content/dam/quarantine access to VIP customers only
 * ASSETS-55874: Migrating image preset from scene7 to DMWithOpenapi
   
 ### Fixed Issues {#fixed-issues-22943}
-* SKYOPS-119946: fix typo to allow the RDE bundle to use loginAdministrative
 * ASSETS-56301: Fixed selective metadata export to include PredictedTags in CSV
 * SITES-33611: Fixed Live Copy Overview issue for high-volume markets
 * ASSETS-55543: Refactored async processing logic into a reusable bundle
@@ -42,7 +38,7 @@ The 2025.10.0 feature activation will provide the full feature set for this main
 * SITES-24074: Fixed hidden mobile navigation receiving focus during keyboard tab navigation
 
 #### AEM Guides {#guides-22943}
-* GUIDES-35227: Further updates to damAssetLucene-13
+* GUIDES-35227: Add new Guides properties to Assets fulltext index
 
 For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
 
