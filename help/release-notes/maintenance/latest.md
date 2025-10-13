@@ -42,11 +42,6 @@ The 2025.10.0 feature activation will provide the full feature set for this main
 * SITES-24074: Fixed hidden mobile navigation receiving focus during keyboard tab navigation
 
 #### AEM Guides {#guides-22943}
-
-* GUIDES-31421: When multiple DITA maps or topics are open and one of the topics is closed, the **>>** button which showcases all the open tabs gets overlapped with the remaining open tabs on the Tab bar.
-* GUIDES-33229: When generating PDFs, the filtering rules in a DITAVAL file are ignored if any property name contains a period.
-* GUIDES-33720: When zooming in the screen of Translation UI, the Send for Translation button moves under the ellipsis and becomes enabled even without any asset being selected.
-* GUIDES-33590: When a reviewer completes a review task or initiator updates review task without entering comments, the notification email sent displays the most recent previous comment.
 * GUIDES-35227: Further updates to damAssetLucene-13
 
 For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
