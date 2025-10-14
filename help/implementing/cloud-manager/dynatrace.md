@@ -10,7 +10,7 @@ role: Admin, Architect, Developer
 
 Adobe provides the ability to use Dynatrace to monitor AEM as a Cloud Service as a part of enterprise deployment, identify the cause of any potential issues, and take action to remediate them as needed. 
 
-With Dynatrace, you can get seamless observability for all your AEM applications. Dynatrace provides comprehensive visibility into the end-user experience by automatically detecting your AEM applications and visualizing their dependencies from the website to the container to the cloud service. Intertwined with end-to-end traces across every tier and Real Use Monitoring, take your AEM content-led experiences to the next level without gaps or blind spots. If any anomalies arise, Dynatrace diagnoses them in realtime, with the Davis AI engine, and pinpoints the root cause down to the broken code before your customers are affected, thereby minimizing the mean time to repair.
+With Dynatrace, you can get seamless observability for all your AEM applications. Dynatrace discovers your AEM apps and shows their paths, from website to container to the cloud service, to reveal the user experience. Intertwined with end-to-end traces across every tier and Real Use Monitoring, take your AEM content-led experiences to the next level without gaps or blind spots. If anomalies arise, Dynatrace diagnoses them in real time, with the Davis AI engine. It pinpoints the root cause down to the broken code before your customers are affected, minimizing the mean time to repair.
 
 To learn more about Dynatrace, see the [Adobe AEM Cloud Service integration](https://www.dynatrace.com/hub/detail/adobe-experience-manager-1/).
 
@@ -25,16 +25,16 @@ The details required for connectivity requests are described below:
 | **Field**  | **Description**  |
 |---|---|
 | [!DNL Dynatrace Environment URL]  | Your Dynatrace environment URL.<br><br>For Dynatrace SaaS customers, the format is `https://<your-environment-id>.live.dynatrace.com`.<br><br>For Dynatrace Managed customers, the format is `https://<your-managed-url>/e/<environmentId>`  |
-| [!DNL Dynatrace Environment ID]  | Your Dynatrace environment ID. See [How do I get my Dynatrace Connection Details?](#how-do-i-get-my-dynatrace-connection-details) for how to get this. |
-| [!DNL Dynatrace Environment Token]  | Your Dynatrace environment token. See [How do I get my Dynatrace Connection Details?](#how-do-i-get-my-dynatrace-connection-details) for how to get this.<br><br>This should be considered a secret, so use appropriate security practices. For example, password protect it in a website such as **zerobin.net**, which the customer support ticket can reference, along with the password.  |
-| [!DNL Dynatrace API access token]  | The API access token of your Dynatrace environment. See [Create a Dynatrace API access token](#create-dynatrace-access-token) for how to create this.<br><br>This should be considered a secret so use appropriate security practices. For example, password protect it in a website such as **zerobin.net**, which the customer support ticket can reference, along with the password.<br>  |
-| [!DNL Dynatrace ActiveGate Port] | Your Dynatrace ActiveGate port that the AEM integration should connect to.<br><br>Note: This is only required for Dynatrace Managed.  |
+| [!DNL Dynatrace Environment ID]  | Your Dynatrace environment ID. See [How do I get my Dynatrace Connection Details?](#how-do-i-get-my-dynatrace-connection-details) for how to get it. |
+| [!DNL Dynatrace Environment Token]  | Your Dynatrace environment token. See [How do I get my Dynatrace Connection Details?](#how-do-i-get-my-dynatrace-connection-details) for how to get it.<br><br>This token should be considered a secret, so use appropriate security practices. For example, password protect it in a website such as **zerobin.net**, which the customer support ticket can reference, along with the password.  |
+| [!DNL Dynatrace API access token]  | The API access token of your Dynatrace environment. See [Create a Dynatrace API access token](#create-dynatrace-access-token) for how to create it.<br><br>This token should be considered a secret so use appropriate security practices. For example, password protect it in a website such as **zerobin.net**, which the customer support ticket can reference, along with the password.<br>  |
+| [!DNL Dynatrace ActiveGate Port] | Your Dynatrace ActiveGate port that the AEM integration should connect to.<br><br>This port is only required for Dynatrace Managed.  |
 | [!DNL Dynatrace ActiveGate Network Zone] | Your [Dynatrace ActiveGate network zone](https://docs.dynatrace.com/docs/manage/network-zones) to route AEM monitoring data efficiently across data centers and network regions.<br><br>Note: A Dynatrace ActiveGate network zone is optional.  |
-| [!DNL AEM Environment ID(s)]  | The AEM environment ID(s) for Dynatrace to monitor. |
+| [!DNL AEM Environment IDs]  | The AEM environment ID or IDs for Dynatrace to monitor. |
 
 >[!NOTE]
 >
->Once Dynatrace is integrated, data will no longer flow to other APM tools such as New Relic, if it was previously enabled.
+>Once Dynatrace is integrated, data no longer flows to other APM tools such as New Relic, if it was previously enabled.
 
 ## FAQ {#faq}
 
@@ -72,8 +72,8 @@ To learn more about Dynatrace licensing, see the [Dynatrace Platform Subscriptio
 
 ### Create a Dynatrace API access token {#create-dynatrace-access-token}
 
-1. Login to your Dynatrace environment.
-1. Go to **[!DNL Access tokens]** and select **[!DNL Generate new token]**.
+1. Log in to your Dynatrace environment.
+1. Go to **[!DNL Access tokens]**, and then click the option **[!DNL Generate new token]**.
 1. Define a [!DNL token name].
 1. Set the token scope to **[!DNL PaaS integration - Installer download]**.
 1. Select **[!DNL Generate token]**.
