@@ -79,13 +79,11 @@ When the **[!UICONTROL When form covers entire width of a page]** option is sele
 
 ![When form covers entire width of a page option is selected and adaptive form with core components are used](/help/forms/assets/overlaycorecomponent.gif)
 
-#### Add Adaptive Forms Client Libraries to your AEM Sites page
-
 Add the **Customheaderlibs** and **Customfooterlibs** client libraries to your AEM Sites page using the deployment pipeline. To add the client libraries:
 
   1. Access and clone your [AEM Cloud Service Git Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html).
-  1. Open the AEM Cloud Service Git Repository folder in a plan text editor. For example, Microsoft&reg; Visual Code.
-  1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` file and add the following code to the file:
+  2. Open the AEM Cloud Service Git Repository folder in a plan text editor. For example, Microsoft&reg; Visual Code.
+  3. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` file and add the following code to the file:
 
       ```
           //Customheaderlibs.html
@@ -94,7 +92,7 @@ Add the **Customheaderlibs** and **Customfooterlibs** client libraries to your A
           </sly> 
       ```
 
-  1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` file and add the following code to the file:
+  4. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` file and add the following code to the file:
 
       ```
           //customfooterlibs.html
@@ -103,7 +101,7 @@ Add the **Customheaderlibs** and **Customfooterlibs** client libraries to your A
           </sly> 
       ```
 
-  1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` file and add the following code to the file:
+  5. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` file and add the following code to the file:
 
       ```
           //Customheaderlibs.html
@@ -112,7 +110,7 @@ Add the **Customheaderlibs** and **Customfooterlibs** client libraries to your A
           </sly> 
       ```
 
-  1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` file and add the following code to the file:
+  6. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` file and add the following code to the file:
 
       ```
           //customfooterlibs.html
@@ -121,7 +119,7 @@ Add the **Customheaderlibs** and **Customfooterlibs** client libraries to your A
           </sly> 
       ```
 
-  1. [Run the deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) to deploy the client libraries to your AEM as a Cloud Service environment. 
+  7. [Run the deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) to deploy the client libraries to your AEM as a Cloud Service environment. 
 
 Depending on your Site structure and authoring needs, you can also include the Core Components runtime and custom function client libraries in different ways:
 
