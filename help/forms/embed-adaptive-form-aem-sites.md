@@ -79,6 +79,7 @@ When the **[!UICONTROL When form covers entire width of a page]** option is sele
 
 ![When form covers entire width of a page option is selected and adaptive form with core components are used](/help/forms/assets/overlaycorecomponent.gif)
 
+#### Add Adaptive Forms Client Libraries to your AEM Sites page
 
 Add the **Customheaderlibs** and **Customfooterlibs** client libraries to your AEM Sites page using the deployment pipeline. To add the client libraries:
 
@@ -121,6 +122,38 @@ Add the **Customheaderlibs** and **Customfooterlibs** client libraries to your A
       ```
 
   1. [Run the deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) to deploy the client libraries to your AEM as a Cloud Service environment. 
+
+Depending on your Site structure and authoring needs, you can also include the Core Components runtime and custom function client libraries in different ways:
+
+**Case 1: Using Separate Page Components**
+
+If you plan to use different page components for:
+
+* Regular Site pages, 
+* Site pages that embed or directly author Core Component–based forms,
+
+Then, it is recommended to directly include the following in the `customheaderlibs`:
+
+* `core.forms.components.runtime.all` client library
+* `custom function client library`
+
+>[!NOTE]
+>
+> Hardcode the custom function client library only if it is common across all forms. If it differs by form type, include it through template page policies as needed.
+
+**Case 2: Using the Same Page Component**
+
+If you want to use the same page component for both:
+
+* Regular site pages, and
+* Site pages containing Core Component–based forms,
+
+Then create two separate templates for:
+
+* Regular Site pages
+* Site pages that include forms
+
+Include the `core.forms.components.runtime.all` and custom function client libraries in the page policy of the template used for creating pages with forms.
  
 ### Enable Adaptive Forms – Embed(v2) for your AEM Sites page or Experience Fragment 
 
