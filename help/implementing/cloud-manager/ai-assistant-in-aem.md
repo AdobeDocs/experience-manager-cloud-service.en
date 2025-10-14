@@ -23,9 +23,9 @@ AI Assistant supports AEM as a Cloud Service, including the following solutions:
 
 It is directly embedded in AEM and accessible from AEM Experience Hub, Cloud Manager, and Author UI.
 
-The following 3-minute, 39-second video delivers a step-by-step walkthrough of AI Assistant in AEM.
+The following 3 minute, 25 second video delivers a step-by-step walkthrough of AI Assistant in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on) 
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops) 
 
 ## Get access to AI Assistant in AEM{#get-access}
 

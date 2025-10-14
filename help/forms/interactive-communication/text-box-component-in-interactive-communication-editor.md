@@ -1,12 +1,12 @@
 ---
-title: Text Box Object in Interactive Communication Editor 
-description: Text Box Object in Interactive Communication Editor in AEM Forms allows authors to input and display text content within a communication.
+title: Text Box Component in Interactive Communication Editor 
+description: Text Box Component in Interactive Communication Editor in AEM Forms allows authors to input and display text content within a communication.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Text Box Object in Interactive Communication Editor 
+# Text Box Component in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -18,7 +18,7 @@ role: User, Developer, Admin
 
 ## 1. Introduction 
 
-The **Text Box** object in the Interactive Communication Editor allows authors to input and display text content within a communication. It is one of the most fundamental and widely used components, commonly used to collect names, comments, feedback, or custom data when designing interactive communications or communication fragments.  
+The **Text Box** component in the Interactive Communication Editor allows authors to input and display text content within a communication. It is one of the most fundamental and widely used components, commonly used to collect names, comments, feedback, or custom data when designing interactive communications or communication fragments.  
 
 The Text Box supports **data binding**, enabling authors to combine static and dynamic content seamlessly, for example: ***"User's name: @name"***, where @name is a bound data field that dynamically populates when the document is saved as a PDF. Additionally, it supports rich text formatting and flexible positioning for precise layout control. 
 
@@ -26,7 +26,7 @@ The Text Box supports **data binding**, enabling authors to combine static and d
 
 ## 2. Properties 
 
-The text box object provides a wide set of properties to help configure its look, feel, and behavior. 
+The text box component provides a wide set of properties to help configure its look, feel, and behavior. 
 
 2.1 Typography 
 
@@ -90,7 +90,7 @@ The Text Box is used for:
 
 - Embedding inside fragments for repeated use across documents. 
 
-Authors can drag the Text Box from the Object Library into the Design View, or master view and configure its behavior using the Properties Panel. 
+Authors can drag the Text Box from the component Library into the Design View, or master view and configure its behavior using the Properties Panel. 
 
 ## 4. Best Practices 
 
