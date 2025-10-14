@@ -112,6 +112,7 @@ As mentioned in the above section [Variances of Cloud Service content requests](
 ### Traffic filter rules to manage content requests {#traffic-filter-rules-to-manage-crs}
 
 * A common bot pattern is to use an empty user agent.  You will need to review your implementation and traffic patterns to see if the empty user agent is useful or not.  If you would like to block this traffic, the recommended [syntax](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) is:
+
 ```
 trafficFilters:
   rules:
@@ -122,4 +123,5 @@ trafficFilters:
           - { reqHeader: user-agent, equals: '' }
       action: block
 ```
+
 * Some bots hit a site very heavily one day and vanish the next.  This can frustrate any attempts to block a specific IP address or user agent.  One generic approach is to introduce a [rate limit rule](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Review the [examples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) and craft a rule that matches your tolerance for a rapid rate of requests.  Review the [Condition Structure](/help/security/traffic-filter-rules-including-waf.md#condition-structure) syntax for any exceptions you may wish to allow to a generic rate limit.
