@@ -1,12 +1,12 @@
 ---
-title: Radio Button Object in Interactive Communication Editor
-description: Radio Button Object in Interactive Communication Editor in AEM Forms allows authors to present a set of mutually exclusive choices to users—meaning only one option can be selected at a time.
+title: Radio Button Component in Interactive Communication Editor
+description: Radio Button Component in Interactive Communication Editor in AEM Forms allows authors to present a set of mutually exclusive choices to users—meaning only one option can be selected at a time.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Radio Button Object in Interactive Communication Editor 
+# Radio Button Component in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ Radio buttons are intuitive, easy to configure, and can be bound to back-end dat
 
 ## 2. Properties 
 
-The Radio Button object includes several configurable properties: 
+The Radio Button component includes several configurable properties: 
 
 2.1. Basic Field 
 
@@ -61,7 +61,7 @@ Define spacing around the text box:
 
 2.4. Presence 
 
-- **Description:** Determines the visibility of the radio button object at runtime. 
+- **Description:** Determines the visibility of the radio button component at runtime. 
 
 - **Options:** 
 
@@ -111,6 +111,6 @@ Authors can group related radio buttons together and position them inside layout
 
 - Apply consistent spacing and alignment for better visual clarity, especially in mobile-friendly layouts. 
 
-The Radio Button object in the Interactive Communication editor is a fundamental input component that offers clean, structured decision-making for end users. When configured with clear labels, thoughtful spacing, and data binding, it ensures reliable data collection and a smoother user experience for forms, surveys, and onboarding workflows. 
+The Radio Button component in the Interactive Communication editor is a fundamental input component that offers clean, structured decision-making for end users. When configured with clear labels, thoughtful spacing, and data binding, it ensures reliable data collection and a smoother user experience for forms, surveys, and onboarding workflows. 
 
  

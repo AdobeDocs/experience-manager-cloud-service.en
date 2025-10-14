@@ -1,12 +1,12 @@
 ---
-title: Line Object in Interactive Communication Editor 
-description: Line Object in Interactive Communication Editor in AEM Forms allows authors to insert horizontal or vertical lines within a communication layout.
+title: Line Component in Interactive Communication Editor 
+description: Line Component in Interactive Communication Editor in AEM Forms allows authors to insert horizontal or vertical lines within a communication layout.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Line Object in Interactive Communication Editor 
+# Line Component in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -18,17 +18,17 @@ role: User, Developer, Admin
 
 ## 1. Introduction 
 
-The Line Object in the Interactive Communication (IC) editor allows authors to insert horizontal or vertical lines within a communication layout. These lines help in visually segmenting content, enhancing readability, or emphasizing form structure. With customizable styles such as solid lines or underlines and flexible positioning, the Line Object can be used for both functional and aesthetic purposes in form design. 
+The Line Component in the Interactive Communication (IC) editor allows authors to insert horizontal or vertical lines within a communication layout. These lines help in visually segmenting content, enhancing readability, or emphasizing form structure. With customizable styles such as solid lines or underlines and flexible positioning, the Line Component can be used for both functional and aesthetic purposes in form design. 
 
 ![Find IC Docu](/help/forms/interactive-communication/assets/line.png)
 
 ## 2. Properties 
 
-The Line Object comes with a range of configurable properties to define its identity, appearance, placement, and visibility within the document. 
+The Line Component comes with a range of configurable properties to define its identity, appearance, placement, and visibility within the document. 
 
 2.1. Basic Field 
 
-- **Name:** A unique identifier used internally to reference the line object in data models, rules, or scripting. 
+- **Name:** A unique identifier used internally to reference the line component in data models, rules, or scripting. 
 
 - **Appearance Type:** Select how the line appears within the form. 
 
@@ -50,7 +50,7 @@ The Line Object comes with a range of configurable properties to define its iden
 
 2.3. Margin 
 
-- **Description:** Adds padding or spacing around the line object to control layout density. 
+- **Description:** Adds padding or spacing around the line component to control layout density. 
 
 - **Options:** 
 
@@ -76,7 +76,7 @@ The Line Object comes with a range of configurable properties to define its iden
 
 2.5. Presence 
 
-- **Description:** Controls the visibility of the line object during runtime. 
+- **Description:** Controls the visibility of the line component during runtime. 
 
 - **Options:** 
 
@@ -86,7 +86,7 @@ The Line Object comes with a range of configurable properties to define its iden
 
 ## 3. Usage 
 
-The Line Object is often used to: 
+The Line component is often used to: 
 
 - Visually divide sections in a long form 
 
@@ -106,6 +106,6 @@ The Line Object is often used to:
 
 - Hide unnecessary lines to avoid distraction while preserving layout spacing. 
 
-The Line Object in the Interactive Communication editor is a simple yet powerful design element. When used strategically, it enhances the visual structure of communication documents, helping users better navigate content and ensuring a cleaner, more polished layout. 
+The Line component in the Interactive Communication editor is a simple yet powerful design element. When used strategically, it enhances the visual structure of communication documents, helping users better navigate content and ensuring a cleaner, more polished layout. 
 
  

@@ -1,12 +1,12 @@
 ---
-title: Image Field Object in Interactive Communication Editor 
-description: Image Field Object in Interactive Communication Editor  in AEM Forms to allows authors to insert images into a communication layout.
+title: Image Field Component in Interactive Communication Editor 
+description: Image Field Component in Interactive Communication Editor  in AEM Forms to allows authors to insert images into a communication layout.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 ---
 
-# Image Field Object in Interactive Communication Editor 
+# Image Field Component in Interactive Communication Editor 
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ Supporting common formats like **JPEG** and **PNG**, this component offers flexi
 
 ## 2. Properties 
 
-The Image Field object includes several configurable properties: 
+The Image Field component includes several configurable properties: 
 
 2.1. Basic Field 
 
@@ -64,7 +64,7 @@ Appearance: Defines the visual style of the image field, choose presets like bor
 
 2.5. Presence 
 
-Determines visibility of the image object at runtime. 
+Determines visibility of the image component at runtime. 
 
 - Visible 
 
@@ -104,7 +104,7 @@ Authors can place the field within subforms or layout containers for alignment a
 
 - Bind the field to a meaningful schema path if integration with back-end  
 
-The Image Field object in interactive communication editor is a versatile component that enhances form interactivity by enabling visual content uploads. When designed with styling, validation, and data binding, it supports a seamless user experience and efficient data capture for image-based submissions. 
+The Image Field component in interactive communication editor is a versatile component that enhances form interactivity by enabling visual content uploads. When designed with styling, validation, and data binding, it supports a seamless user experience and efficient data capture for image-based submissions. 
 
  
 
