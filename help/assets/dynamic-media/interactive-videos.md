@@ -96,7 +96,6 @@ Interactive video steps:
 >
 >* You want to add interactivity to your video by triggering to Quick views.
 >* Your Experience Manager setup doesn't use an eCommerce integration framework. It does not pull product data from IBM&reg; WebSphere&reg; Commerce, Elastic Path, SAP Hybris, or Intershop.
- <!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 >
 >If your implementation of Experience Manager uses eCommerce, you can skip this task and proceed to the next task.
 
