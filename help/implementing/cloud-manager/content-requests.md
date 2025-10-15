@@ -59,7 +59,7 @@ See the [License Dashboard](/help/implementing/cloud-manager/license-dashboard.m
 
 ## Server-side collection rules {#serverside-collection}
 
-AEM as a Cloud Service applies server-side rules to count content requests. These rules include logic to exclude well-known bots (such as search engine crawlers) and non-user traffic like monitoring services that regularly ping the site.
+AEM as a Cloud Service applies server-side collection rules to count content requests. These rules exclude well-known bots (such as search engine crawlers) and a set of monitoring services that regularly ping the site. Other synthetic or monitoring-type traffic not on this exclusion list is counted as billable content requests.
 
 The following tables list the types of included and excluded content requests, with brief descriptions of each.
 
