@@ -63,9 +63,9 @@ Content Hub now makes it faster to discover the assets you need. With the new Bu
 
 ### New Features in Dynamic Media with OpenAPI capabilities {#new-features-dynamic-media-with-openapi}
 
-**SEO friendly DM with OpenAPI URLs**
+**Branded and Readable Asset Delivery URLs**
 
-Create Vanity URLs for asset delivery in DM with OpenAPI, replacing long system-generated UUIDs with short, readable identifiers. This makes links SEO friendly and better aligned with your brand or campaigns. Vanity URLs resolve automatically to the original asset UUID at runtime without disrupting existing workflows.
+Make Dynamic Media with OpenAPI URLs more human-readable by leveraging Vanity URLs in Dynamic Media with OpenAPI. Vanity URLs allow replacing long, system-generated, hard to memorize UUIDs in asset delivery URLs with short, brand-controlled identifiers. This makes Vanity URLs shorter, easier to read and share, and allow for better alignment with your brand or campaigns. Vanity URLs resolve automatically to the original asset UUID at runtime without disrupting existing workflows.
 
 >[!NOTE]
 >

@@ -7,7 +7,7 @@ role: Admin
 
 # Universal Editor Preview Release Notes {#preview}
 
-These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 16 October 2025.
+These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 23 October 2025.
 
 These **preview** release notes are provided as a convenience so you know what changes to the Universal Editor are upcoming and you can test them by [switching to your preview environment.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -21,9 +21,12 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming New Features {#what-is-new}
 
-* Multi-field support for updates is introduced.
+* Copy and paste across browser tabs is now supported.
+* You can now disable the unpublish button with a meta tag.
 
 ## Upcoming Improvements {#other-improvements}
 
-* The host in `AemContentFragmentReference` is now sanitized.
-* Logic was added for SSL vs. no-SSL dispatcher configurations.
+* The structure tree has been improved.
+* Linked images are now supported.
+* Improvements were made to undo/redo operations.
+
