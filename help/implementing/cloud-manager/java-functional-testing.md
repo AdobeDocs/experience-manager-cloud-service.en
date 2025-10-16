@@ -101,7 +101,7 @@ See [`aem-testing-clients` GitHub repo](https://github.com/adobe/aem-testing-cli
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU                  | 0.5   | Amount of CPU-time reserved per test execution                     |
 | Memory               | 0.5 Gi | Amount of memory allocated to the test, value in gibibytes        |
-| Timeout              | 30 m   | The time limit after which the test is stopped.                |
+| Timeout              | 30 m   | The time limit after which the test stops.                |
 | Recommended Duration | 15 m   | Adobe recommends writing the tests not to take longer than this time. |
 
 >[!NOTE]
