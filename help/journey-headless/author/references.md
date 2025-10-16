@@ -84,10 +84,6 @@ There are two sorts:
 * **Fragment Reference (UUID)**
   * In the editor, the reference specifies the path to the referenced resource; internally the reference is held as a universally unique ID (UUID) that references the resource 
 
-<!--
-![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
---> 
-
 ### How to author nested fragments {#author-nested-fragment}
 
 Authoring Fragment References is fairly straightforward (though usually the field will not be labelled as **Fragment Reference**). You can either type in the reference directly, or (more likely) select the folder icon to open a browser that lets you navigate and select the fragment you need. 
