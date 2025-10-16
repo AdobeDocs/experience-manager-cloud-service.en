@@ -75,16 +75,15 @@ The content architect works early in the project to define this structure. As th
 
 Because the Content Models define the structure of your content, you need to know which fields of your models must be translated. Generally you work with the content architect to define this. To browse the fields of your content models, follow the steps below.
 
-1. Navigate to **Tools** &gt; **General** &gt; **Content Fragment Models**.
+1. Navigate to the Content Fragments console, and select the tab for Content Fragment Models.
 1. Content Fragment Models are generally stored in a folder structure. Select the folder for your project.
-1. The models are listed. Select the model to see the details.
-![Content Fragment Models](assets/content-fragment-models.png)
+1. The models are listed. Select the model and open the editor.
 1. The **Content Fragment Model Editor** opens.
-   1. The left column contains the fields of the model. This column interests us.
-   1. The right column contains the fields that can be added to the model. This column we can ignore.
-![Content Fragment Model Editor](assets/content-fragment-model-editor.png)
-1. Select one of the fields of the model. AEM marks it and the details of that field are shown in the right column.
-![Content Fragment Model Editor detail](assets/content-fragment-model-editor-detail.png)
+   ![Content Fragment Model Editor](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
+   1. The left panel lists the possible Data Types.
+   1. The right panel shows the properties appropriate to the selected field.
+   * The middle panel holds the fields you have created, and defined - or will.
+1. Select one of the fields of the model. AEM marks it and the details of that field are shown in the right panel.
 1. The content architect enables the **Translatable** field on every Content Model field that must be translated.
 
 >[!TIP]
