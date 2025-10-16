@@ -26,7 +26,7 @@ The endpoint is the path used to access GraphQL for AEM. These endpoints need to
 
 #### Details {#details-graphql-endpoint-creation}
 
-[Manage GraphQL endpoints in AEM ](/help/headless/graphql-api/graphql-endpoint.md)
+[Manage GraphQL endpoints in AEM](/help/headless/graphql-api/graphql-endpoint.md)
 
 #### Environments {#environments-graphql-endpoint-creation}
 
