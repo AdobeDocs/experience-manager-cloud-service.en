@@ -7,13 +7,13 @@ role: Admin, Developer
 ---
 # Headless Setup {#introduction}
 
-Below is a simple path for creating, managing, and delivering experiences using AEM as a Cloud Service in five steps for users who are already familiar with AEM and headless technology. Each guide builds on the previous, so it is recommended to explore them thoroughly and in order.
+Below is a simple path for creating, managing, and delivering experiences using AEM as a Cloud Service in five steps for users who are already familiar with AEM and headless technology (so they cross-reference the detailed documentation). Each guide builds on the previous, so it is recommended to explore them thoroughly and in order. 
 
-1. [Creating a Configuration](create-configuration.md)
-1. [Creating a Content Fragment Model](create-content-model.md)
-1. [Creating an Assets Folder](create-assets-folder.md)
-1. [Creating a Content Fragment](create-content-fragment.md)
-1. [Create an API Request](create-api-request.md)
+1. [Create a Configuration](/help/headless/setup/create-configuration.md)
+1. [Create a Content Fragment Model](/help/headless/setup/create-content-model.md)
+1. [Create an Assets Folder](/help/headless/setup/create-assets-folder.md)
+1. [Create a Content Fragment](/help/headless/setup/create-content-fragment.md)
+1. [Create an API Request](/help/headless/setup/create-api-request.md)
 
 >[!TIP]
 >
