@@ -21,6 +21,10 @@ The next planned release is Thursday, November 6, 2025.
 
 ## What's new {#what-is-new}
 
+* **Dedicated stage-only and production-only deployment pipelines**
+
+    Cloud Manager now offers dedicated stage-only and production-only deployment pipelines, providing greater flexibility for managing deployments to staging and production environments independently. See [Split Stage-Only and Production-Only Pipelines](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md).
+
 * **AEM Cloud Health Assessment Service**
 
     Adobe introduces the AEM Cloud Health Assessment Service, an automated, non-invasive checkup tool that keeps your AEM as a Cloud Service environment optimized, secure, and aligned with best practices.

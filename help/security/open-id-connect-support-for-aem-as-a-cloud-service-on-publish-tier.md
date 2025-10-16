@@ -77,7 +77,7 @@ First, we need to configure the OIDC connection. Multiple OIDC connections can b
 
 Now, configure the OIDC authentication handler. Multiple OIDC connections can be configured. Each has to have a different name. If they share the same [OAK External Identity Provider](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html), they can share users.
 
-1. Create the configuration file. For this example, we'll use `org.apache.sling.auth.oauth_client.impl.OidcConnectionImpl~azure.cfg.json`. The `azure` suffix must be a unique identifier. See an example of the configuration file below:
+1. Create the configuration file. For this example, we'll use `org.apache.sling.auth.oauth_client.impl.OidcAuthenticationHandler~azure.cfg.json`. The `azure` suffix must be a unique identifier. See an example of the configuration file below:
 
    ```
    {
