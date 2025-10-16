@@ -101,7 +101,7 @@ To enable Content Hub for lower environments:
 
 1. [Enable Content Hub for Experience Manager Assets using Cloud Manager](#enable-content-hub).
 
-1. Click the program card to view the list of available enviroments (Production, Development, or Stage).
+1. Click the program card to view the list of available environments (Production, Development, or Stage).
 
 1. Click the environment that you need to enable. The **[!UICONTROL Content Hub]** section displays `Content Hub is available for activation`.
 
@@ -264,4 +264,4 @@ Existing Assets as a Cloud Service customers have 250 Content Hub Limited users 
 
 1. If the users need to access the Content Hub Configuration User Interface, add them to the `AEM Administrators` product profile. For more information, see [Onboard Content Hub administrator](#onboard-content-hub-administrator).
 
-If the users do not get appropriate privileges even after adding them to the relevant product profiles, Contact your Adobe representative.
+If the users do not get appropriate privileges even after adding them to the relevant product profiles, contact your Adobe representative.
