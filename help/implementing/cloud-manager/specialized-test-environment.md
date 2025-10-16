@@ -29,7 +29,7 @@ DevXL is built to mirror the size, scalability, and configurations of a typical 
 | Content Restore | Same as the Development environment. |
 | Access Logs | Same as the Development environment. |
 | Developer Console | Same as the Development environment. |
-| IP Allow List | Same as the Development environment. |
+| `IP Allow List` | Same as the Development environment. |
 | Networking | Same as the Development environment (Services, Domain name, SSL certificates, Advanced network). |
 
 See also [Manage Environments](/help/implementing/cloud-manager/manage-environments.md)
