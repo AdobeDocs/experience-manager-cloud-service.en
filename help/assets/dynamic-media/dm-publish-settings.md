@@ -163,7 +163,7 @@ If desired, create a staging environment rather than making assets publicly avai
 
 Most corporations run their Internet behind a firewall. Access to the Internet is possible through certain routes and typically through a limited range of public IP addresses.
 
-From your corporate network, you can figure out your public IP address using websites like [https://www.whatismyip.com](https://www.whatismyip.com/) or request this information from your corporate IT organization.
+From your corporate network, you can discover your public IP address using various websites or request this information from your corporate IT organization.
 
 With Secure Testing, Adobe Dynamic Media establishes a dedicated Image Server for staging environments or internal applications. Any request to this server checks the origin IP address. If the incoming request is not within the approved list of IP addresses, a failure response is returned. The Adobe Dynamic Media Company Administrator configures the approved list of IP addresses for their company's Secure Testing environment.
 
