@@ -10,58 +10,33 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 22943 {#22943}
+## Release X {#X}
 
-Summarized below are the continuous improvements for maintenance release 22943, which was publicly released on October 14, 2025. The previous maintenance release was release 22758.
+Summarized below are the continuous improvements for maintenance release X, which was publicly released on October 28, 2025. The previous maintenance release was release 22943.
 
-The 2025.10.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+The 2025.11.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-22943}
+### Enhancements {#enhancements-X}
 
-* ASSETS-57809: Index definition update for damAssetLucene-13.
-* ASSETS-36521: Improved DM Reupload Workflow to Ensure Consistent Post-Processing.
-* ASSETS-56400: Added new OOTB Zoom PNG rendition for assets with transparency.
-* ASSETS-55326: Enabled AI metadata folder config view through HTTP events.
-* ASSETS-56905: Support connection to Indesign via proxy.
-* ASSETS-48286: Add CAI properties to Algolia for GenStudio.
-* ASSETS-48653: Apply the invisible watermark in the preprocessing phase.
-* ASSETS-55874: Migrating image preset from scene7 to DMWithOpenapi.
-* SITES-30452: Content API improvements for ASO on the /content/definition endpoint.
+None.
   
-### Fixed Issues {#fixed-issues-22943}
+### Fixed Issues {#fixed-issues-X}
 
-* ASSETS-56301: Fixed selective metadata export to include PredictedTags in CSV.
-* ASSETS-55543: Refactored async processing logic into a reusable bundle.
-* ASSETS-54789: Fixed NPE in ACLPermissionsValidator when DM ACL is enabled.
-* ASSETS-55888: Fixed malware rendition appearing in the UI renditions panel.
-* GRANITE-62236: Fixed keyword localization issue in saved searches for smart collections.
-* GRANITE-61875: Fixed “invalid expression evaluation” hotfix issue preventing saving Content Fragments and asset downloads.
-* SITES-24074: Fixed hidden mobile navigation receiving focus during keyboard tab navigation.
-* SITES-33611: Fixed Live Copy Overview issue for high-volume markets.
+None.
 
-#### AEM Guides {#guides-22943}
+### Known Issues {#known-issues-X}
 
-* GUIDES-31421: When multiple DITA maps or topics are open and one of the topics is closed, the **>>** button which showcases all the open tabs gets overlapped with the remaining open tabs on the Tab bar.
-* GUIDES-33229: When generating PDFs, the filtering rules in a DITAVAL file are ignored if any property name contains a period.
-* GUIDES-33720: When zooming in the screen of Translation UI, the Send for Translation button moves under the ellipsis and becomes enabled even without any asset being selected.
-* GUIDES-33590: When a reviewer completes a review task or initiator updates review task without entering comments, the notification email sent displays the most recent previous comment.
+None.
 
-For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
-
-### Deprecated Features and APIs {#deprecated-22943}
+### Deprecated Features and APIs {#deprecated-X}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-22943}
+### Security Fixes {#security-X}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 14 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses X identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Change Notice
-
-* This release contains the following new product index versions:
-* **damAssetLucene-13**
-
-### Embedded Technologies {#embedded-tech-22943}
+### Embedded Technologies {#embedded-tech-X}
 
 |Technology|Version|Link|
 |---|---|---|
