@@ -26,12 +26,32 @@ The **Publish** button can therefore be suppressed entirely in an app by adding 
 
 ## Disabling Publishing to Preview {#publish-preview}
 
-Certain authoring workflows might preclude the publication to the [preview service](/help/sites-cloud/authoring/sites-console/previewing-content.md) (if available).
+Certain authoring workflows might preclude the publication to the [preview service](/help/sites-cloud/authoring/sites-console/previewing-content.md) (if available). 
 
 The **Preview** option in the publish window can therefore be suppressed entirely in an app by adding the following metadata.
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+```
+
+## Disabling  Publishing to Live {#publish-live}
+
+Certain authoring workflows might preclude the publication to the live service. 
+
+The **Live** option in the publish window can therefore be suppressed entirely in an app by adding the following metadata.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="publish-live"/>
+```
+
+## Disabling Unpublishing {#unpublish}
+
+Certain authoring workflows require an approval process before content is unpublished. In such situations, the option to unpublish should not be available to any authors.
+
+The **Unpublish** button can therefore be suppressed entirely in an app by adding the following metadata.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="unpublish"/>
 ```
 
 ## Disabling Open Page {#open-page}

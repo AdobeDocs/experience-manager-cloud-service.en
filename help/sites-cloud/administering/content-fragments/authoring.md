@@ -62,7 +62,7 @@ When you first open the Content Fragment Editor, you see four main areas:
 
   >[!NOTE]
   >
-  >Depending on definitions in the underlying model, fields can be subject to certain types of [Validation](/help/assets/content-fragments/content-fragments-models.md#validation).
+  >Depending on definitions in the underlying model, fields can be subject to certain types of [Validation](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#validation).
 
 ![Content Fragment Editor - Overview](assets/cf-authoring-overview.png)
 
