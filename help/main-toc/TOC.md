@@ -234,7 +234,8 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2025 {#2025}
-      + [2025.10.02 Release Notes](/help/release-notes/universal-editor/2025/2025-10-02.md)
+      + [2025.10.09 Release Notes](/help/release-notes/universal-editor/2025/2025-10-02.md)
+      + [2025.10.02 Release Notes](/help/release-notes/universal-editor/2025/2025-10-09.md)
       + [2025.09.25 Release Notes](/help/release-notes/universal-editor/2025/2025-09-25.md)
       + [2025.09.18 Release Notes](/help/release-notes/universal-editor/2025/2025-09-18.md)
       + [2025.09.11 Release Notes](/help/release-notes/universal-editor/2025/2025-09-11.md)
@@ -1208,7 +1209,6 @@ user-guide-title: AEM as a Cloud Service
       + [Markdown editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
     + [Previewing Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
     + [Structure Tree](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
-    + [JSON Preview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
   + Content Fragment Selector {#content-fragment-selector}
     + [Micro-Frontend Content Fragment Selector - Overview](/help/headless/content-fragment-selector/overview.md)
     + [Content Fragment Selector - Related Properties](/help/headless/content-fragment-selector/properties.md)
