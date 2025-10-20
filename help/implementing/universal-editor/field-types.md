@@ -88,8 +88,7 @@ A field object has the following type definition.
 |`name`|`string`|Property [or path](#nesting) where the data shall be persisted|Yes|
 |`label`|`FieldLabel`|Label of the field|Yes|
 |`description`|`FieldDescription`|Description of the field|No|
-|`placeholder`|`string`|Placeholder for the field|No|
-|`value`|`FieldValue`|This is a default value, which serves as placeholder. No content updates are driven by this value. It is just a representation in the UI.|No|
+|`value`|`FieldValue`|This is a default value, which serves as a placeholder. No content updates are driven by this value. It is just a representation in the UI.|No|
 |`valueType`|`ValueType`|Standard validation, can be `string`, `string[]`, `number`, `date`, `boolean`|No|
 |`required`|`boolean`|Is the field required|No|
 |`readOnly`|`boolean`|Is the field read only|No|
