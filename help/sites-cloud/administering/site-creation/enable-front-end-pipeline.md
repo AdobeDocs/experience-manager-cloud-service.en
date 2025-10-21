@@ -5,6 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
+recommendations: display, noCatalog
 ---
 
 # Enabling the Front-End Pipeline {#enable-front-end-pipeline}
@@ -70,9 +71,9 @@ The Front-End Pipeline can be used with [Cloud Manager's custom domains feature,
 
 ### Static Front-End Files {#static-files}
 
-Static front-end assets deployed via the Front-End Pipeline will, by default, be served from Adobe’s predefined static domain.
+Static front-end assets deployed via the Front-End Pipeline will, by default, be served from Adobe's predefined static domain.
 
-If you require a custom domain for front-end assets, you can install a custom domain on the publish tier and configure the Dispatcher to route specific paths (such as `/static/`) to Adobe’s static hosting location. This method requires updating your [Dispatcher rules](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher) to properly forward and cache requests for static assets.
+If you require a custom domain for front-end assets, you can install a custom domain on the publish tier and configure the Dispatcher to route specific paths (such as `/static/`) to Adobe's static hosting location. This method requires updating your [Dispatcher rules](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher) to properly forward and cache requests for static assets.
 
 Once you configure your custom domain and dispatcher, you can configure AEM to serve your front-end assets from the static domain.
 
@@ -91,7 +92,7 @@ If you wish to use Cloud Manager's custom domains feature for your site along wi
    * This value can also be manually overridden as required.
 1. Verify your setup.
    1. After deployment, check that pages are correctly referencing theme artifacts from the custom domain.
-   1. Open your browser’s developer tools and inspect the `theme.css` and `theme.js` file paths to confirm they are loaded from the correct domain.
+   1. Open your browser's developer tools and inspect the `theme.css` and `theme.js` file paths to confirm they are loaded from the correct domain.
 
 Pages for the site then reference theme artifacts from that updated URL. The dispatcher then routes requests for those resources to the static domain.
 
@@ -99,7 +100,7 @@ Pages for the site then reference theme artifacts from that updated URL. The dis
 
 If you need to develop and test front-end assets locally before deploying via the Front-End Pipeline, consider the following approaches:
 
-* Use the [Site Theme Builder’s Proxy Mode](https://github.com/adobe/aem-site-theme-builder?tab=readme-ov-file#proxy) to override theme artifacts locally for testing.
+* Use the [Site Theme Builder's Proxy Mode](https://github.com/adobe/aem-site-theme-builder?tab=readme-ov-file#proxy) to override theme artifacts locally for testing.
 * Manually serve your theme files from a local development server and update the `prefixPath` in `HtmlPageItemsConfig` to match the local server address.
 * Ensure browser caching is disabled during testing to see live updates.
 
