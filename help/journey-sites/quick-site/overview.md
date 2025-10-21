@@ -5,7 +5,7 @@ exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-recommendations: display, noCatalog
+recommendations: noDisplay, noCatalog
 ---
 
 # AEM Quick Site Creation Journey {#quick-site-creation-journey}
