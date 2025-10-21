@@ -5,7 +5,9 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
+recommendations: display, noCatalog
 ---
+
 # Set up Your Pipeline {#set-up-your-pipeline}
 
 {{traditional-aem}}
