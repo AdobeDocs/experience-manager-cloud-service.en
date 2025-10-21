@@ -5,6 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
+recommendations: display, noCatalog
 ---
 
 # Using the Site panel to Manage Your Site Theme {#site-panel}
