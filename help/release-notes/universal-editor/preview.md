@@ -22,6 +22,8 @@ These **preview** release notes are provided as a convenience so you know what c
 ## Upcoming New Features {#what-is-new}
 
 * Copy and paste across browser tabs is now supported.
+  * Limited to between tabs that are open at the same time.
+  * Copying content and then opening a new tab is not supported.
 * You can now disable the unpublish button with a meta tag.
 
 ## Upcoming Improvements {#other-improvements}
