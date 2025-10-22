@@ -57,6 +57,8 @@ A service is labeled *HIPAA-ready* or *not HIPAA-ready* based on the outcome of 
 
 ## AEM as a Cloud Service Compliance Listings {#aem-as-a-cloud-service-compliance-listings}
 
+Individual services within AEM as a Cloud have differing compliance ratings. See the following table.
+
 |Product/Capability |Service |HIPAA-ready? |Statements |
 |--- |--- |--- |--- |
 |AEM Sites |Universal Editor |Not necessary |"Included in our HIPAA-ready service" |
