@@ -69,7 +69,7 @@ Make Dynamic Media with OpenAPI URLs more human-readable by leveraging Vanity UR
 
 >[!NOTE]
 >
->This feature will be available as a Limited Availability feature on September 10. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>This feature is available as a Limited Availability feature. See [this article](/help/assets/vanity-urls.md) to get started.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
