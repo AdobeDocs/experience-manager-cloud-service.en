@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-recommendations: display, noCatalog
+recommendations: noDisplay, noCatalog
 ---
 
 # Enabling the Front-End Pipeline {#enable-front-end-pipeline}
