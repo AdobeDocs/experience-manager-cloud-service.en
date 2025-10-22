@@ -4,7 +4,7 @@ description: The front-end pipeline enhances developer independence and accelera
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-recommendations: display, noCatalog
+recommendations: noDisplay, noCatalog
 ---
 
 # Develop Sites with the front-end pipeline {#developing-site-with-front-end-pipeline}
