@@ -19,7 +19,7 @@ role: Admin, Architect, Developer, Leader
 >* [HIPAA and Adobe Products and Services](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html) in the Adobe Trust Center
 >* [Adobe's Privacy Center](https://www.adobe.com/privacy.html)
 
-For Adobe Experience Manager (AEM) as a Cloud Service, Adobe is providing documentation to help you understand HIPPA readiness. It can help you become compliant with these regulations. 
+For Adobe Experience Manager (AEM) as a Cloud Service, Adobe is providing documentation to help you understand HIPAA readiness. It can help you become compliant with these regulations. 
 
 ## Health Insurance Portability and Accountability Act (HIPAA) {#health-insurance-portability-and-accountability-act-hipaa}
 
@@ -37,10 +37,9 @@ The HIPAA Privacy and Security Rules require that a Covered Entity obtain writte
 
 For more information, see [HIPAA and Adobe Products and Services](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html) in the Adobe Trust Center.
 
-## HIPAA terminology {#hipaa-terminology}
+## HIPAA assessment - terminology {#hipaa-assessment-terminology}
 
-A service is labeled *HIPAA-ready* or *not HIPAA-ready* based on the outcome of its HIPAA assessment. However, some services did not require a HIPAA assessment; for example, the Universal Editor. 
-
+A service is labeled *HIPAA-ready* or *not HIPAA-ready* based on the outcome of its HIPAA assessment. Some services did not require a HIPAA assessment; for example, the Universal Editor. 
 
 |HIPAA-ready? | Can be integrated with HIPAA-ready services | Can be included in the SKU: Extended Security for Healthcare | Statements about HIPAA [2] | Why? |
 |--- |--- |--- |--- |--- |
@@ -55,7 +54,7 @@ A service is labeled *HIPAA-ready* or *not HIPAA-ready* based on the outcome of 
 >
 >Only Product Legal and Privacy Legal make the decision to label a service either HIPAA-ready, not HIPAA-ready, or "Not necessary".
 
-## AEM as a Cloud Service Compliance Listings {#aem-as-a-cloud-service-compliance-listings}
+## Compliance of services in AEM as a Cloud Service {#compliance-of-services-in-aem-as-a-cloud-service}
 
 Individual services within AEM as a Cloud have differing compliance ratings. See the following table.
 
