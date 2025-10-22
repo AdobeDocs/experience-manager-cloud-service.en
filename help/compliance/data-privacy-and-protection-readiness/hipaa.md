@@ -4,13 +4,20 @@ description: Learn about Experience Manager as a Cloud Service Sites support for
 feature: Compliance
 role: Admin, Architect, Developer, Leader
 ---
-# HIPAA readiness for Adobe Experience Manager as a Cloud Service {#hipaa-readiness-for-adobe-experience-manager-as-a-cloud-service
+# HIPAA readiness for Adobe Experience Manager as a Cloud Service {#hipaa-readiness-for-adobe-experience-manager-as-a-cloud-service}
 
 >[!WARNING]
 >
 >The contents of this document do not constitute legal advice and are not meant as a substitute for legal advice. 
 >
 >Consult your company's legal department for advice concerning HIPAA regulations. 
+
+>[!NOTE]
+>
+>For more information about Adobe's response to privacy issues, and what this means for you as an Adobe customer, see:
+>
+>* [HIPAA and Adobe Products and Services](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html) in the Adobe Trust Center
+>* [Adobe's Privacy Center](https://www.adobe.com/privacy.html)
 
 ## Health Insurance Portability and Accountability Act (HIPAA) {#health-insurance-portability-and-accountability-act-hipaa}
 
