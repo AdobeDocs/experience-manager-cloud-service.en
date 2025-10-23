@@ -50,17 +50,31 @@ The Content Model Editor for AEM Content Fragments has been modernized to align 
 
 **Enhanced Text Formatting with Substrings in Dynamic Media Templates**
 
-You can now apply formatting to substrings within Dynamic Media template text layers. A selected word or phrase is treated as a separate layer, allowing you to adjust its font, font size, color, and more. The substring layer is parameterized so you can update it in real-time using the template's delivery URL
+You can now apply formatting to substrings within Dynamic Media template text layers. A selected word or phrase is treated as a separate layer, allowing you to adjust its font, font size, color, and more. The substring layer is parameterized so you can update it in real-time using the template's delivery URL.
+
+### New Features in Content Hub {#new-features-content-hub}
+
+**Mark Collections as Favourites**
+
+You can now mark collections as Favorites in Content Hub, making it easier to organize and retrieve them. Once added, your favourite collections are conveniently available from the **[!UICONTROL Favourites]** tab on the Content Hub home page.
+
+**Pin collections for quick access**
+
+Content Hub Administrators can now pin collections in Content Hub for quick access. Pinned collections are displayed in a dedicated **[!UICONTROL Pined]** section on the Collections home page, making it easier to keep important collections within reach.
+
+>[!IMPORTANT]
+>
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 ### New Features in Dynamic Media with OpenAPI capabilities {#new-features-dynamic-media-with-openapi}
 
-**SEO friendly DM with OpenAPI URLs**
+**Branded and Readable Asset Delivery URLs**
 
-Create Vanity URLs for asset delivery in DM with OpenAPI, replacing long system-generated UUIDs with short, readable identifiers. This makes links SEO friendly and better aligned with your brand or campaigns. Vanity URLs resolve automatically to the original asset UUID at runtime without disrupting existing workflows.
+Make Dynamic Media with OpenAPI URLs more human-readable by leveraging Vanity URLs in Dynamic Media with OpenAPI. Vanity URLs allow replacing long, system-generated, hard to memorize UUIDs in asset delivery URLs with short, brand-controlled identifiers. This makes Vanity URLs shorter, easier to read and share, and allow for better alignment with your brand or campaigns. Vanity URLs resolve automatically to the original asset UUID at runtime without disrupting existing workflows.
 
 >[!NOTE]
 >
->This feature is available as a Limited Availability feature. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>This feature is available as a Limited Availability feature. See [this article](/help/assets/vanity-urls.md) to get started.
 
 <!--
 
