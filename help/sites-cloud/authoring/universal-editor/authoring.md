@@ -206,7 +206,7 @@ Select the Undo or Redo buttons to undo or redo the last edit in the editor.
 
 ### Copy and Paste {#copy-paste}
 
-You can copy and paste components that are within [containers](/help/implementing/universal-editor/field-types.md#container) This is possible only if the target container has no [filters configured](/help/implementing/universal-editor/filtering.md) or has filters that allow the component to be pasted.
+You can copy and paste components that are within [containers.](/help/implementing/universal-editor/field-types.md#container) This is possible only if the target container has no [filters configured](/help/implementing/universal-editor/filtering.md) or has filters that allow the component to be pasted.
 
 Copy and paste can be on the same browser tab or between browser tabs, provided the tabs are already open. You can not copy an item and then open a new browser tab to paste it.
 

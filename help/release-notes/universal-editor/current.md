@@ -35,4 +35,6 @@ The new ProseMirror RTE, featuring a page picker in the link dialog, is now avai
 
 ## Other Improvements {#other-improvements}
 
-* 
+* The structure tree has been improved.
+* Linked images are now supported.
+* Improvements were made to undo/redo operations.
