@@ -57,16 +57,10 @@ You can then use the Navigation Panel to access key areas of AEM. For Content Fr
 
 The Navigation Panel can be opened by selecting the Adobe icon at the top left, followed by the small compass icon.
 
-<!--
-The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
-
-![Navigation panel](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
---> 
-
 >[!NOTE]
 >Although Content Fragments are a feature of AEM **Sites**, they are saved as **Assets**. This is a technical detail that should not affect you, but might be useful to know.
 
-Within the console you can select folders in the left panel to navigate to your Content Fragment. You can also filter and/or search.
+Within the Content Fragments console you can select folders in the left panel to navigate to your Content Fragment. You can also filter and/or search.
 
 ![Content Fragments console](/help/sites-cloud/administering/content-fragments/assets/cf-managing-console-filter.png)
 
@@ -74,20 +68,18 @@ Within the console you can select folders in the left panel to navigate to your 
 
 In the **Content Fragments** console a range of actions are available for your content fragments from the toolbar:
 
-<!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
-
 * **Open in Assets**
 * **Create**
 * The **Referenced By** column also provides a direct link to show all parent references of that fragment; including referencing Content Fragments, Experience Fragments and pages.
 * Hovering over the folder name will show the JCR path.
 
-After selection of your fragment all appropriate actions are available:
-
-<!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
+After selection of your fragment further actions are available (as appropriate):
 
 * **Open**
 * **Publish** (and **Unpublish**)
+* **Manage Tags**
 * **Copy**
+* **Replace**
 * **Move**
 * **Rename**
 * **Delete**
@@ -95,26 +87,6 @@ After selection of your fragment all appropriate actions are available:
 >[!NOTE]
 >
 >Actions such as Publish, Unpublish, Delete, Move, Rename, Copy, trigger an asynchronous job. The progress of that job can be monitored via the AEM Async Jobs UI.
-
-<!--
-The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
-
-The Quick Actions are available for a single resource, see **Basel** in the example below:
-
-![Quick Actions](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
-
-The Actions Toolbar provides access to the full range of actions - applicable for the current scenario. The actions available can change; for example, dependent on your location, or whether you have selected multiple resources:
-
-![Action Toolbar](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
-
-You can select the format for viewing your resources with the View Selector:
-
-![View Selector](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
-
-You can view additional information about items using the Rail Selector. This also gives access to additional actions.
-
-![Left Rail](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
---> 
 
 ## Authoring Content Fragments {#authoring-content-fragments}
 
