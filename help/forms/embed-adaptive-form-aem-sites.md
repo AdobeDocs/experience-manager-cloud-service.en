@@ -137,7 +137,7 @@ Include the runtime client libraries or custom function libraries in the page po
 4. Click the **[!UICONTROL Add]** button in the **[!UICONTROL Properties]** tab to add new custom function libraries or the runtime libraries. 
 5. Click **[Done]**.
 
->[!VIDEO]()
+>[!VIDEO](https://video.tv.adobe.com/v/3476178?quality=12&learn=on)
 
 ### Enable Adaptive Forms – Embed(v2) for your AEM Sites page or Experience Fragment 
 
