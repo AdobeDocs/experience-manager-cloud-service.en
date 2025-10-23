@@ -13,6 +13,11 @@ RDEs let developers swiftly deploy and review changes, minimizing the amount of 
 
 Once the changes have been tested in an RDE, they can be deployed to a regular Cloud Development environment through the Cloud Manager pipeline.
 
+Dev environments and Rapid Dev environments should be limited to development, error analysis, and functional tests, and are not designed to process high workloads, nor large amounts of content.
+
+>[!NOTE]
+> Rapid Development environments should be limited to development, error analysis, and functional tests, and are not designed to process high workloads, nor large amounts of content.
+
 >[!NOTE]
 > Get in touch with the RDE developers on Adobe's [Discord channel](https://discord.com/channels/1131492224371277874/1245304281184079872). Feel free to ask any questions or give feedback regarding RDE topics.
 
