@@ -58,16 +58,7 @@ Although you can go directly to a particular part of the journey, many concepts 
 
 ## What's Next {#what-is-next}
 
-You are now ready to get started on your Adobe Headless journey. We encourage you to continue on to the next part of the journey and read the article [Authoring for AEM Headless as a Cloud Service - An Introduction](introduction.md).
-
-<!--
-### Choose Your Own Adventure {#choose-your-path}
-
-However, Adobe wants you to succeed as you get started with your AEM Headless project, regardless of your learning style. So, consider these two options.
-
-* If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey as recommended by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
-* If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
--->
+You are now ready to get started on your Adobe Headless journey. We encourage you to continue on to the next part of the journey and read the article [Authoring for AEM Headless as a Cloud Service - An Introduction](/help/journey-headless/author/introduction.md).
 
 ## Additional Resources {#additional-resources}
 

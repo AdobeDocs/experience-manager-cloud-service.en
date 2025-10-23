@@ -85,7 +85,7 @@ The **Security** tab provides the options to activate **HIPAA**, or **WAF-DDOS P
 
 Adobe HIPAA Compliant and WAF-DDOS (Web Application Firewall - Distributed Denial of Service) facilitates cloud-based security as part of a multi-layered approach for protecting against vulnerabilities.
 
-   * **HIPAA** - This option enables Adobe's HIPPA-ready solution implementation.
+   * **HIPAA** - This option enables Adobe's HIPAA-ready solution implementation.
      * [Learn more](https://www.adobe.com/trust/compliance/hipaa-ready.html) about Adobe's HIPAA ready solution implementation.
      * HIPAA cannot be enabled or disabled after program creation.
    * **WAF-DDOS Protection** - This option enables the Web Application Firewall by way of rules to protect your application.
