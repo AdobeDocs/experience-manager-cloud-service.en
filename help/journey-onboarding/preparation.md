@@ -1,11 +1,11 @@
 ---
-title: Onboarding Preparation
+title: Onboard Preparation
 description: Before the onboarding process begins, there are a number or preparatory steps that the system administrator must understand before logging into the system.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 feature: Onboarding
 role: Admin, User, Developer
 ---
-# Onboarding Preparation {#onboarding-preparation}
+# Onboard preparation {#onboarding-preparation}
 
 Now that you know what is in store for you in the onboarding process by having read the article [AEM as a Cloud Service Onboarding Journey Introduction](overview.md), you are likely ready to jump in. However, before the onboarding process begins, there are a number or preparatory steps that the system administrator must understand before logging into the system.
 
@@ -31,25 +31,25 @@ This video summarizes the onboarding process laid out in this journey and is int
 
 -->
 
-## Your Contract {#contract}
+## Your contract {#contract}
 
 Onboarding onto AEM as a Cloud Service starts with a signed contract between your organization and Adobe. The reason is because the contract specifies several important agreements between Adobe and your organization such as:
 
 * Which solutions and add-ons your organization can use.
 * The number and types of environments you can access
 * The start date of your service.
-* Your premier support level (if applicable).
+* Your Premier Support level (if applicable).
 * Your contacts for onboarding.
 
 If you are not aware of these details, contact the contracting team within your organization.
 
-Once the contract is signed, Adobe provisions your environments, a welcome email is sent to the onboarding contacts defined in the contract, and an onboarding call is organized by Adobe. This generally happens a couple days after contract close unless a future service start date is arranged.
+Once the contract is signed, Adobe provisions your environments, a welcome email is sent to the onboarding contacts defined in the contract, and Adobe organizes an onboarding call. This workflow generally happens a couple days after contract close unless a future service start date is arranged.
 
-## System Provisioning {#provisioning}
+## System provisioning {#provisioning}
 
-After the contract is signed, all the AEM cloud environments covered by the contract are automatically provisioned by Adobe. These environments will likewise be linked to your programs in Cloud Manager (more on this topic later in the journey). These AEM cloud environments are included in every AEM as a Cloud Service subscription, and are usually comprised of at least one production environment, one staging environment, and optionally one or more development or test environments.
+After the contract is signed, all the AEM cloud environments covered by the contract, Adobe automatically provisions them. These environments are likewise linked to your programs in Cloud Manager (more on this topic later in the journey). Each subscription includes AEM cloud environments: at least one production, one staging, and optional development or test.
 
-## Onboarding Call {#onboarding-call}
+## Onboard call {#onboarding-call}
 
 At the completion of the contract, the Adobe onboarding team schedules a call with representatives from your organization to discuss how to get started.
 
@@ -59,26 +59,26 @@ Attendees from your organization should include:
 * Tech practitioners
 * Your implementation partner
 
-Adobe is represented by:
+Adobe provides:
 
-* Onboarding specialist
-* Your technical account manager (as applicable)
-* Your named customer success engineer (as applicable)
-* Additional subject matter experts as required
+* An onboarding specialist.
+* Your technical account manager (as applicable).
+* Your named customer success engineer (as applicable).
+* Additional subject matter experts as necessary.
 
 The goal of the call is to give you the opportunity to ask questions, learn about the support process, and possibly see the product for the first time.
 
-## Welcome Email {#welcome-email}
+## Welcome email {#welcome-email}
 
-Upon completion of the environment provisioning process, the system administrator defined in the contract receives a welcome email with the confirmation they have been granted access to the Adobe Experience Cloud. If you are reading this documentation journey, that person is likely you!
+Upon completion of the environment provisioning process, the system administrator defined in the contract receives a welcome email with the confirmation that they have been granted access to the Adobe Experience Cloud. If you are reading this documentation journey, that person is likely you!
 
-The email contains detailed information on how to get started with the Experience Cloud services and the Cloud Manager self-service portal. Also, the email contains important information such as where to go for support resources, forums, FAQs, and much more. In the list of resources provided in the email, you will also get details on how to access your AEM cloud environments.
+The email contains detailed information on how to get started with the Experience Cloud services and the Cloud Manager self-service portal. Also, the email contains important information such as where to go for support resources, forums, FAQs, and much more. In the list of resources provided in the email, you also get details on how to access your AEM cloud environments.
 
 >[!TIP]
 >
 >If you received the welcome email and are not the system administrator, inform Adobe during the welcome call. Alternatively you can continue on this journey and in the next steps learn how to designate another colleague as a system administrator yourself.
 
-## What's Next {#whats-next}
+## What's next {#whats-next}
 
 You should now have a basic understanding of:
 
@@ -87,4 +87,4 @@ You should now have a basic understanding of:
 * How that contract affects the onboarding process.
 * How to prepare for your onboarding call.
 
-Now that you are familiar with these preparation steps, you are almost ready to sign in to the system yourself. But first you need a brief overview of how AEM as a Cloud Service is structured from a system administrator's point of view and get to know some important terminology. Continue to the next part of the journey, [AEM as a Cloud Service Terminology](terminology.md).
+Now that you are familiar with these preparation steps, you are almost ready to sign in to the system yourself. Start with a brief tour of AEM as a Cloud Service from a system administrator's perspective. Next, learn the essential terminology. Continue to the next part of the journey, [AEM as a Cloud Service Terminology](terminology.md).
