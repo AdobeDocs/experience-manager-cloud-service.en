@@ -20,7 +20,7 @@ To download one or more assets and their renditions, execute the following steps
    1. Select ![download](/help/assets/assets/download-icon.svg) available on the asset card to preview the asset and its available renditions.
    1. Select the available renditions and click the **[!UICONTROL Download]** option in the dialog box to download the selected renditions as a ZIP file. If the dialog box displays an asset license (for licensed asset), accept the licensing terms and conditions and click **[!UICONTROL Download]**. 
 ![download an asset](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
-    Alternatively, click the asset thumbnail and select ![download](/help/assets/assets/download-icon.svg) to select and view the available renditions on the dialog box before downloading them.
+    Alternatively, click the asset thumbnail and then click ![download](/help/assets/assets/download-icon.svg) to select and view the available renditions on the dialog box before downloading them.
 
 * To download multiple assets and their renditions:
    1. Select the assets, click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** and review the list of selected assets in the **[!UICONTROL Download assets]** dialog box. Click ![unselect](/help/assets/assets/Close.svg) next to an asset to unselect it from the list. 
