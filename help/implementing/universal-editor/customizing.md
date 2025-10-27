@@ -33,7 +33,7 @@ The following are the supported values for `content`, i.e. the features that can
 |`publish`|Disable all [publishing](/help/sites-cloud/authoring/universal-editor/publishing.md) functionality, i.e. the [publish button](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) and [unpublish button](/help/sites-cloud/authoring/universal-editor/navigation.md#ellipsis)|
 |`publish-live`|Disable live [publishing](/help/sites-cloud/authoring/universal-editor/publishing.md)|
 |`publish-preview`|Disable preview publishing (if the [preview service](/help/sites-cloud/authoring/sites-console/previewing-content.md) is available)|
-|`unpublish`|Disable the [unpublish button](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) ([Preview feature](/help/release-notes/universal-editor/preview.md))|
+|`unpublish`|Disable the [unpublish button](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content)|
 |`copy`|Disables the [copy and paste buttons](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)|
 |`duplicate`|Disables the [duplicate button](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)|
 |`header-open-page`|Disables the [open page button](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page)|
