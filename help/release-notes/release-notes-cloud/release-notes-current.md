@@ -221,7 +221,7 @@ Adobe upgraded **Stage** and **Production** environments to the higher-performan
 
 >[!NOTE]
 >
->It is recommended to switch to a **Java build version** of 17 or 21 (preferred). Expect Java 11 builds a deprecation notice in the future. See the *build time requirements* section of [this article](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
+> To take advantage of the latest performance optimizations and language enhancements, it is recommended to build with Java 17 or Java 21  (preferred). Building with Java 8 and Java 11 remains supported for now but will be deprecated in an upcoming release. A separate communication will be issued prior to deprecation. See the *build time requirements* section of [this article](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 >
 
 ### Enforcement of AEM Java Logs Configuration Policy {#logconfig-policy}
