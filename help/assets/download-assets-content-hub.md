@@ -25,7 +25,7 @@ To download one or more assets and their renditions, execute the following steps
 * To download multiple assets and their renditions:
    1. Select the assets, click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** and review the list of selected assets in the **[!UICONTROL Download assets]** dialog box. Click ![unselect](/help/assets/assets/Close.svg) next to an asset to unselect it from the list. 
    1. Select one or more renditions to download them as a ZIP file. Selecting **[!UICONTROL Smart Crop]** and **[!UICONTROL Static Renditions]** downloads all available static and smart crop renditions of each selected asset.
-   1. Unselect **[!UICONTROL Create a separate folder for each asset]** to download the selected assets and their renditions as a flat hierarchy within a folder in the zip file. By default, [!DNL Content Hub] downloads the selected assets and their renditions in separate folders within a zip file.
+   1. Optional: Unselect **[!UICONTROL Create a separate folder for each asset]** to download the selected assets and their renditions as a flat hierarchy within a folder in the zip file. By default, [!DNL Content Hub] downloads the selected assets and their renditions in separate folders within a zip file.
   
       >[!NOTE]
       >
