@@ -25,11 +25,13 @@ To download one or more assets and their renditions, execute the following steps
 * To download multiple assets and their renditions:
    1. Select the assets, click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** and review the list of selected assets in the **[!UICONTROL Download assets]** dialog box. Click ![unselect](/help/assets/assets/Close.svg) next to an asset to unselect it from the list. 
    1. Select one or more renditions to download them as a ZIP file. Selecting **[!UICONTROL Smart Crop]** and **[!UICONTROL Static Renditions]** downloads all available static and smart crop renditions of each selected asset.
-   1. Unselect **[!UICONTROL Create a separate folder for each asset]** to download the selected assets and their renditions as a flat hierarchy within a folder in the zip file. By default [!DNL Content Hub] downloads the selected assets and their renditions in separate folders within a zip file.
+   1. Unselect **[!UICONTROL Create a separate folder for each asset]** to download the selected assets and their renditions as a flat hierarchy within a folder in the zip file. By default, [!DNL Content Hub] downloads the selected assets and their renditions in separate folders within a zip file.
   
       >[!NOTE]
       >
-      > Content Hub saves this selection (**[!UICONTROL Create a separate folder for each asset]**) as your preference and retains it for future downloads. 
+      > * Content Hub saves this selection (**[!UICONTROL Create a separate folder for each asset]**) as your preference and retains it for future downloads.
+      > * Public users can download the assets and their renditions in separate folders within the zip file. **[!UICONTROL Create a separate folder for each asset]** selection is available only for authorized [!DNL Content Hub] users. 
+
    1. Click **[!UICONTROL Download]** to download your selected assets and their renditions. 
 ![download multiple assets](/help/assets/assets/bulk-asset-download-content-hub.png)
 
@@ -127,7 +129,7 @@ The dialog box that displays depends on whether the download list includes expir
    
 ## Types of renditions {#types-of-renditions} 
 
-Asset renditions are different representations of an asset's original file. These can include thumbnails, optimized versions for web or mobile, watermarked or DRM-protected files, or even dynamic elements like smart crops. They do not need to match the original file type, instead, they serve to represent the asset in various use cases.
+Asset renditions are different representations of an asset's original file. These renditions can include thumbnails, optimized versions for web or mobile, watermarked or DRM-protected files, or even dynamic elements like smart crops. They do not need to match the original file type, instead, they serve to represent the asset in various use cases.
 
 Learn more about [view and manage renditions in [!DNL Experience Manager Assets]](/help/assets/renditions.md).
 
