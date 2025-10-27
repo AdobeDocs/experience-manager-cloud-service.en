@@ -29,7 +29,7 @@ To download one or more assets and their renditions, execute the following steps
   
       >[!NOTE]
       >
-      > * Content Hub saves this selection (**[!UICONTROL Create a separate folder for each asset]**) as your preference and retains it for future downloads.
+      > * Content Hub saves your selection (**[!UICONTROL Create a separate folder for each asset]**) as your preference and retains it for future downloads.
       > * Public users can download the assets and their renditions in separate folders within the zip file. **[!UICONTROL Create a separate folder for each asset]** selection is available only for authorized [!DNL Content Hub] users. 
 
    1. Click **[!UICONTROL Download]** to download your selected assets and their renditions. 
