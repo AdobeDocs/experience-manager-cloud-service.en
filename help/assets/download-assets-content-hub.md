@@ -31,7 +31,7 @@ To download one or more assets and their renditions, execute the following steps
       >
       > Content Hub saves this selection (**[!UICONTROL Create a separate folder for each asset]**) as your preference and retains it for future downloads. 
    1. Click **[!UICONTROL Download]** to download your selected assets and their renditions. 
-![download multiple assets](/help/assets/assets/download-multiple-assets-CH.png)
+![download multiple assets](/help/assets/assets/bulk-asset-download-content-hub.png)
 
 You can continue using [!DNL Content Hub] while the download is in progress. Content Hub does not interrupt your workflow during the download process.
 ![download multiple assets](/help/assets/assets/download-assets-notification-ch.png)
