@@ -16,13 +16,13 @@ See the [types of renditions available in Content Hub](#types-of-renditions).
 
 To download one or more assets and their renditions, execute the following steps: 
 
-* To download a single asset:
+* To download a single asset and its renditions:
    1. Select ![download](/help/assets/assets/download-icon.svg) available on the asset card to preview the asset and its available renditions.
    1. Select the available renditions and click the **[!UICONTROL Download]** option in the dialog box to download the selected renditions as a ZIP file. If the dialog box displays an asset license (for licensed asset), accept the licensing terms and conditions and click **[!UICONTROL Download]**. 
 ![download an asset](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
     Alternatively, click the asset thumbnail and select ![download](/help/assets/assets/download-icon.svg) to select and view the available renditions on the dialog box before downloading them.
 
-* To download multiple assets:
+* To download multiple assets and their renditions:
    1. Select the assets, click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** and review the list of selected assets in the **[!UICONTROL Download assets]** dialog box. Click ![unselect](/help/assets/assets/Close.svg) next to an asset to unselect it from the list. 
    1. Select one or more renditions to download them as a ZIP file. Selecting **[!UICONTROL Smart Crop]** and **[!UICONTROL Static Renditions]** downloads all available static and smart crop renditions of each selected asset.
    1. Unselect **[!UICONTROL Create a separate folder for each asset]** to download the selected assets and their renditions as a flat hierarchy within a folder in the zip file. By default [!DNL Content Hub] downloads the selected assets and their renditions in separate folders within the zip file.
