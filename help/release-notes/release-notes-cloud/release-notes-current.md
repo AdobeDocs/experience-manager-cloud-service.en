@@ -167,11 +167,19 @@ Go‑live days, live events, peak sales—these moments can't break. [Our new se
 >Available as a Limited Availability feature on September 25th.
 >Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to get it activated on your programs.
 
-### New Release of AEM Developer Tools for Eclipse {#aem-develeper-tools-for-eclipse}
+### AEM Log-Forwarding to More Destinations {#log-forwarding}
 
-Version 1.4.0 of the AEM Developer Tools for Eclipse has been released. This version adds support for Eclipse IDE 2022-12 or newer and has been validated with the current version (2025-09). The tooling now works with modern versions of the AEM Project Archetype and incorporates improvements from the Sling IDE Tooling 1.3.0.
+It is now possible to forward AEM logs to Amazon S3, Sumo Logic, Dynatrace, and your own New Relic account (not the Adobe-provided account). Note that AEM logs (including Apache/Dispatcher) are supported for these logging destinations, but not CDN logs.
 
-Install from the [Eclipse Marketplace](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse) and see the [AEM Developer Tools page](https://eclipse.adobe.com) for more details.
+See the full set of [supported log forwarding destinations](/help/implementing/developing/introduction/log-forwarding.md).
+
+### Config Pipeline for Edge Delivery Services {#config-pipeline-eds}
+
+Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just AEM Author and AEM publish delivery. You can use Config Pipelines to manage settings such as CDN configuration, including traffic filter rules and origin selectors. See [Supported Configurations](/help/operations/config-pipeline.md#configurations). 
+
+Edge Delivery config pipelines also support secrets through Cloud Manager pipeline variables.
+
+See [Add Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
 
 ### Upcoming Java API Deprecations {#java-api-deprecation}
 
@@ -209,13 +217,12 @@ OSGi properties:
 
 ### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-The *Java 11 runtime* is deprecated, and most environments have already been upgraded to the higher-performance **Java 21 runtime**.
-
-If your environment could not be upgraded due to unsupported dependencies (see the [Java 21 runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)), you should have received an email from Adobe with next steps. As described there, Adobe upgraded your **Dev** and **RDE** environments on **September 18, 2025** so you can validate your site and processes and address any issues. Upgrades for **Stage** and **Production** will proceed on **October 14, 2025**.
+Adobe upgraded **Stage** and **Production** environments to the higher-performance **Java 21 runtime** on October 14th, 2025.
 
 >[!NOTE]
 >
->The runtime version is separate from your code's build version. While we recommend building with Java 21, Java 11 builds are still accepted for now. A separate deprecation notice for Java 11 builds will be shared in the future.
+>It is recommended to switch to a **Java build version** of 17 or 21 (preferred). Expect Java 11 builds a deprecation notice in the future. See the *build time requirements* section of [this article](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
+>
 
 ### Enforcement of AEM Java Logs Configuration Policy {#logconfig-policy}
 
@@ -271,18 +278,9 @@ In alpha, Rapid Development Environments (RDEs) now support a feature to take a 
 
 Please email [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) if there's interest in providing feedback on this feature.
 
-### AEM Log-Forwarding to More Destinations (Beta Program) {#log-forwarding-beta}
-
-While logs can be downloaded from Cloud Manager, many organizations find it beneficial to stream those logs to a preferred logging destination. AEM already supports AEM and CDN log forwarding to Azure Blob Storage, Datadog, HTTPS, Elasticsearch (and OpenSearch), and Splunk. This feature is configured in a self-serve manner, and deployed using the Config Pipeline.
-
-Now in beta, you can forward AEM logs to Amazon S3, Sumo Logic, Dynatrace, and your own New Relic account (not the Adobe-provided account). Note that AEM logs (including Apache/Dispatcher) are supported for these logging destinations, but not CDN logs. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) for access.
-
-Learn more in the [log forwarding documentation](/help/implementing/developing/introduction/log-forwarding.md).
-
 ### Expanded Application Performance Monitoring (APM) (Alpha program) {#apm-alpha}
 
 For observability, AEM Cloud Service currently supports Adobe-provided [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) and customer-managed [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). As we explore support for additional APM options, please email us at [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) with your preferred vendor or technology, along with use cases.
-
 
 ## [!DNL Experience Manager] Guides {#guides}
 
