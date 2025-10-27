@@ -1,6 +1,6 @@
 ---
 title: Download assets from Content Hub
-description: Learn how to download single or multiple assets and their renditions from the Content Hub portal.
+description: Learn how to download one or more assets and their renditions from the Content Hub portal.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
 ---
