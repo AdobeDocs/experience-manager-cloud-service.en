@@ -1,6 +1,6 @@
 ---
-title: Template Lock in Interactive Communication Editor
-description: Template Lock in Interactive Communication Editor manage layouts, control object positioning, and define how content flows across pages.
+title: Content Overflow Handling in Interactive Communication Editor
+description: Content Overflow Handling in Interactive Communication Editor enhances how text behaves within Flowed and Positioned layouts.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
