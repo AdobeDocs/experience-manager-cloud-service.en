@@ -217,7 +217,7 @@ OSGi properties:
 
 ### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-Adobe upgraded **Stage** and **Production** environments to the higher-performance **Java 21 runtime** on October 14th, 2025.
+Adobe upgraded **Stage** and **Production** environments to the higher-performance **Java 21 runtime** on October 14th, 2025. Starting late January, neither the AEM Cloud Service SDK nor any cloud environments will work with Java 11 runtime.
 
 >[!NOTE]
 >
