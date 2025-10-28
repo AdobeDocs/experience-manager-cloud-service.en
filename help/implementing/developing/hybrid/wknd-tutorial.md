@@ -5,6 +5,7 @@ exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
 feature: Developing
 role: Admin, Architect, Developer
 index: no
+recommendations: noDisplay, noCatalog
 ---
 
 # WKND SPA Project {#wknd-spa-project}

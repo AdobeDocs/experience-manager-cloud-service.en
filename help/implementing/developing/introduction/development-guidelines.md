@@ -213,7 +213,7 @@ For Production programs, access to the AEM as a Cloud Service Developer Console 
 
 ### Performance Monitoring {#performance-monitoring}
 
-Adobe monitors application performance and takes measures to address if deterioration is observed. At this time, application metricscannot be obeserved.
+Adobe monitors application performance and takes measures to address if deterioration is observed. Currently, application metrics cannot be observed.
 
 ## Sending Email {#sending-email}
 
