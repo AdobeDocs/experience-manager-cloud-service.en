@@ -1,6 +1,6 @@
 ---
-title: Template Lock in Interactive Communication Editor
-description: Template Lock in Interactive Communication Editor manage layouts, control object positioning, and define how content flows across pages.
+title: Dynamic Page Numbering in Interactive Communication Editor
+description: Dynamic Page Numbering in Interactive Communication Editor allows authors to automatically display page numbers in their PDF output.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
