@@ -60,9 +60,8 @@ Individual services within AEM as a Cloud have differing compliance ratings. See
 
 |Product/Capability |Service |HIPAA-ready? |Statements |
 |--- |--- |--- |--- |
-|AEM Sites |Universal Editor |Not necessary |"Included in our HIPAA-ready service" |
+|AEM Sites |AEM Publish/Universal Editor |Not necessary |"Included in our HIPAA-ready service" |
 |AEM Sites |Edge Delivery Services |Yes |"A HIPAA-ready service" |
-|AEM Sites |AEM Sites using AEM Publish | | |
 |AEM Sites Optimizer |Sites Optimizer |Not necessary |"Included in our HIPAA-ready service" |
 |AEM Assets |Content Hub |Not necessary |"Included in our HIPAA-ready service" |
 |AEM Assets |Brand Portal | | |
