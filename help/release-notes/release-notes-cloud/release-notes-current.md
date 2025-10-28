@@ -272,6 +272,16 @@ Deploy your code releases to production, but restrict it to only internal test t
 
 Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) to request access and share feedback.
 
+
+### AI Answers - Smarter, Context-Aware Responses for AEM Sites (Beta Program) {#ai-answers-beta}
+
+AI Answers introduces a new way for your visitors to interact with your content. Powered by Retrieval-Augmented Generation (RAG) technology, it uses your AEM-managed data to deliver accurate, brand-consistent answers directly within your digital experiences. 
+
+As part of this beta, you can safely explore AI Answers in your AEM Cloud Service environment. This approach lets you validate performance, accuracy, and overall experience before making it available to your live audience. Once validated, you can promote your AI Answers experience to full production.
+
+To request beta access or share your feedback, please contact [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
+
+
 ### Snapshots for RDEs (Alpha Program) {#rde-snapshot-program}
 
 In alpha, Rapid Development Environments (RDEs) now support a feature to take a snapshot of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
