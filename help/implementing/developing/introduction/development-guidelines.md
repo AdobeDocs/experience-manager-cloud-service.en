@@ -39,7 +39,7 @@ Similarly, with everything that is asynchronously happening, like acting on obse
 
 ## Background Tasks and Long Running Jobs {#background-tasks-and-long-running-jobs}
 
-Code executed as a background task must assume that the instance it is running in can be brought down at any time. Therefore, the code must be resilient, and most importantly, resumable. That means that if the code gets re-executed, it should not start from the beginning again but rather close to where it left off. While this is not a new requirement for this kind of code, in AEM as a Cloud Service it is more likely that an instance take-down is going to occur.
+Code executed as a background task must assume that the instance it is running in can be brought down at any time. Therefore, the code must be resilient, and most importantly, resumable. That means that if the code gets re-executed, it should not start from the beginning again but rather close to where it left off. While this is not a new requirement for this kind of code, in AEM as a Cloud Service it is more likely that an instance takedown is going to occur.
 
 To minimize the trouble, long-running jobs should be avoided if possible, and they should be resumable at a minimum. For executing such jobs, use Sling Jobs, which have an at-least-once guarantee and hence if they get interrupted will get re-executed as soon as possible. But they should probably not start from the beginning again. For scheduling such jobs, it is best to use the [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) scheduler as this again ensures the at-least-once execution.
 
@@ -105,7 +105,7 @@ As an example, changing an index definition on a large content repository on a D
 
 For local development, log entries are written to local files in the `/crx-quickstart/logs` folder.
 
-In Cloud environments, developers can download logs through Cloud Manager or use a command-line tool to tail the logs. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+In Cloud environments, developers can download logs through Cloud Manager or use a command line tool to tail the logs. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Setting the Log Level**
 
