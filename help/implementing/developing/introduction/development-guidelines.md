@@ -17,11 +17,11 @@ This document presents guidelines for developing on AEM as a Cloud Service and a
 
 ## Code Must Be Cluster-Aware {#cluster-aware}
 
-Code running in AEM as a Cloud Service must be aware of the fact that it is always running in a cluster. This means that there is always more than one instance running. The code must be resilient especially as an instance might be stopped at any point in time.
+Code running in AEM as a Cloud Service must be aware of the fact that it is always running in a cluster. This means that there is always more than one instance running. The code must be resilient, especially as an instance might be stopped at any point in time.
 
-During the update of AEM as a Cloud Service, there are instances with old and new code running in parallel. Therefore, old code must not break with content created by new code and new code must be able to deal with old content.
+During the update of AEM as a Cloud Service, there are instances with old and new code running in parallel. Therefore, old code must not break with content created by new code, and new code must be able to deal with old content.
 
-If there is the need to identify the primary in the cluster, the Apache Sling Discovery API can be used to detect it.
+If there is a need to identify the primary in the cluster, the Apache Sling Discovery API can be used to detect it.
 
 ## State in Memory {#state-in-memory}
 
@@ -29,29 +29,29 @@ State must not be kept in memory but persisted in the repository. Otherwise, thi
 
 ## State on the Filesystem {#state-on-the-filesystem}
 
-Do not use the instance's file system in AEM as a Cloud Service. The disk is ephemeral and is disposed when instances are recycled. Limited use of the filesystem for temporary storage relating to the processing of single requests is possible, but should not be abused for huge files. This is because it may have a negative impact on the resource usage quota and run into disk limitations.
+Do not use the instance's file system in AEM as a Cloud Service. The disk is ephemeral and is disposed of when instances are recycled. Limited use of the filesystem for temporary storage relating to the processing of single requests is possible, but should not be abused for huge files. This is because it may have a negative impact on the resource usage quota and run into disk limitations.
 
-As an example where file system usage is not supported, the Publish tier should ensure that any data that must be persisted is shipped off to an external service for longer term storage.
+As an example where file system usage is not supported, the Publish tier should ensure that any data that must be persisted is shipped off to an external service for longer-term storage.
 
 ## Observation {#observation}
 
-Similar, with everything that is asynchronously happening like acting on observation events, it cannot be guaranteed to be executed locally and therefore must be used with care. This is true for both JCR events and Sling resource events. At the time a change is happening, the instance may be taken down and be replaced by a different instance. Other instances in the topology that are active at that time are able to react to that event. In this case however, this will not be a local event and there might even be no active leader in case of an ongoing leader election when the event is issued.
+Similarly, with everything that is asynchronously happening, like acting on observation events, it cannot be guaranteed to be executed locally and therefore must be used with care. This is true for both JCR events and Sling resource events. At the time a change is happening, the instance may be taken down and replaced by a different instance. Other instances in the topology that are active at that time are able to react to that event. In this case, however, this will not be a local event and there might even be no active leader in case of an ongoing leader election when the event is issued.
 
 ## Background Tasks and Long Running Jobs {#background-tasks-and-long-running-jobs}
 
-Code executed as a background tasks must assume that the instance it is running in can be brought down at any time. Therefore the code must be resilient, and most importantly resumable. That means that if the code gets re-executed it should not start from the beginning again but rather close to from where it left off. While this is not a new requirement for this kind of code, in AEM as a Cloud Service it is more likely that an instance take down is going to occur.
+Code executed as a background task must assume that the instance it is running in can be brought down at any time. Therefore, the code must be resilient, and most importantly, resumable. That means that if the code gets re-executed, it should not start from the beginning again but rather close to where it left off. While this is not a new requirement for this kind of code, in AEM as a Cloud Service it is more likely that an instance take-down is going to occur.
 
-To minimize the trouble, long running jobs should be avoided if possible, and they should be resumable at a minimum. For executing such jobs, use Sling Jobs, which have an at-least-once guarantee and hence if they get interrupted will get re-executed as soon as possible. But they should probably not start from the beginning again. For scheduling such jobs, it is best to use the [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) scheduler as this again ensures the at-least-once execution.
+To minimize the trouble, long-running jobs should be avoided if possible, and they should be resumable at a minimum. For executing such jobs, use Sling Jobs, which have an at-least-once guarantee and hence if they get interrupted will get re-executed as soon as possible. But they should probably not start from the beginning again. For scheduling such jobs, it is best to use the [Sling Jobs](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) scheduler as this again ensures the at-least-once execution.
 
-Do not use the Sling Commons Scheduler for scheduling as execution cannot be guaranteed. It is just more likely that it is scheduled.
+Do not use the Sling Commons Scheduler for scheduling, as execution cannot be guaranteed. It is just more likely that it is scheduled.
 
-Similarly, with everything that is asynchronously happening, like acting on observation events, (being it JCR events or Sling resource events), can't be guaranteed to be executed and therefore must be used with care. This is already true for AEM deployments in the present.
+Similarly, with everything that is asynchronously happening, like acting on observation events (being it JCR events or Sling resource events), can't be guaranteed to be executed and therefore must be used with care. This is already true for AEM deployments in the present.
 
 ## Outgoing HTTP Connections {#outgoing-http-connections}
 
-It is strongly recommended that any outgoing HTTP connections set reasonable connect and read timeouts; suggested values are 1 second for the connection timeout and 5 seconds for read timeout. The exact numbers must be determined based on the performance of the backend system handling these requests.
+It is strongly recommended that any outgoing HTTP connections set reasonable connect and read timeouts; suggested values are 1 second for the connection timeout and 5 seconds for the read timeout. The exact numbers must be determined based on the performance of the backend system handling these requests.
 
-For code that does not apply these timeouts, AEM instances running on AEM as a Cloud Service will enforce a global timeouts. These timeout values are 10 seconds for connect calls and 60 seconds for read calls for connections.
+For code that does not apply these timeouts, AEM instances running on AEM as a Cloud Service will enforce a global timeout. These timeout values are 10 seconds for connect calls and 60 seconds for read calls for connections.
 
 Adobe recommends the use of the provided [Apache HttpComponents Client 4.x library](https://hc.apache.org/httpcomponents-client-ga/) for making HTTP connections.
 
@@ -75,7 +75,7 @@ AEM as a Cloud Service only supports the Touch UI for third-party customer code.
 
 Native binaries and libraries must not be deployed to or installed in cloud environments.
 
-In addition, code should not attempt to download native binaries or native java extensions (for example, JNI) at runtime.
+In addition, code should not attempt to download native binaries or native Java extensions (for example, JNI) at runtime.
 
 ## No Streaming Binaries through AEM as a Cloud Service {#no-streaming-binaries}
 
@@ -97,19 +97,19 @@ Production environments are sized higher to ensure stable operation, while Stage
 
 Dev environments and Rapid Dev environments should be limited to development, error analysis, and functional tests, and are not designed to process high workloads, nor large amounts of content.
 
-As an example, changing an index definition on a large content repository on a Dev environment can result in re-indexing resulting in too much processing. Tests that require substantial content should be run on Stage environments.
+As an example, changing an index definition on a large content repository on a Dev environment can result in re-indexing, resulting in too much processing. Tests that require substantial content should be run on Stage environments.
 
 ## Monitoring and Debugging {#monitoring-and-debugging}
 
 ### Logs {#logs}
 
-For local development, logs entries are written to local files in the `/crx-quickstart/logs` folder.
+For local development, log entries are written to local files in the `/crx-quickstart/logs` folder.
 
-On Cloud environments, developers can download logs through Cloud Manager or use a command line tool to tail the logs. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+In Cloud environments, developers can download logs through Cloud Manager or use a command-line tool to tail the logs. <!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **Setting the Log Level**
 
-To change the log levels for Cloud environments, the Sling Logging OSGI configuration should be modified, followed by a full redeployment. Because this is not instantaneous, be cautious about enabling verbose logs on production environments which receive lots of traffic. In the future, it is possible that there are mechanisms to more quickly change the log level.
+To change the log levels for Cloud environments, the Sling Logging OSGI configuration should be modified, followed by a full redeployment. Because this is not instantaneous, be cautious about enabling verbose logs on production environments that receive lots of traffic. In the future, it is possible that there are mechanisms to more quickly change the log level.
 
 >[!NOTE]
 >
@@ -144,7 +144,7 @@ Discrete log levels can be set for the different AEM environments using run mode
 |  Stage | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN |
 |  Production | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERROR |
 
-A line in the debug file usually starts with DEBUG, and then provides the log level, the installer action and the log message. For example:
+A line in the debug file usually starts with DEBUG, and then provides the log level, the installer action, and the log message. For example:
 
 ```text
 DEBUG 3 WebApp Panel: WebApp successfully deployed
@@ -160,7 +160,7 @@ The log levels are as follows:
 
 ### Thread Dumps {#thread-dumps}
 
-Thread dumps on Cloud environments are collected on an ongoing basis, but cannot be downloaded in a self-serve manner at this time. In the meanwhile, contact AEM support if thread dumps are needed for debugging an issue, specifying the exact time window.
+Thread dumps on Cloud environments are collected on an ongoing basis, but cannot be downloaded in a self-serve manner at this time. In the meantime, contact AEM support if thread dumps are needed for debugging an issue, specifying the exact time window.
 
 ## CRX/DE Lite and AEM as a Cloud Service Developer Console {#crxde-lite-and-developer-console}
 
@@ -168,7 +168,7 @@ Thread dumps on Cloud environments are collected on an ongoing basis, but cannot
 
 For local development, Developers have full access to CRXDE Lite (`/crx/de`)  and the AEM Web Console (`/system/console`).
 
-On local development (using the SDK), `/apps` and `/libs` can be written to directly, which is different from Cloud environments where those top level folders are immutable.
+On local development (using the SDK), `/apps` and `/libs` can be written to directly, which is different from Cloud environments, where those top-level folders are immutable.
 
 ### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
@@ -179,11 +179,11 @@ On local development (using the SDK), `/apps` and `/libs` can be written to dire
 >[!NOTE]
 >Some customers will have the option to try out a revamped experience for the AEM Cloud Service Developer Console. See [this article](/help/implementing/developing/introduction/aem-developer-console.md) for more information.
 
-Customers can access CRXDE lite on the author tier's development environment but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime so attempting to do so will result in errors.
+Customers can access CRXDE lite on the author tier's development environment, but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime so attempting to do so will result in errors.
 
-Instead, the Repository Browser can be launched from the AEM as a Cloud Service Developer Console, providing a read-only view into the repository for all environments on author, publish, and preview tiers. For more information see the [Repository Browser](/help/implementing/developing/tools/repository-browser.md).
+Instead, the Repository Browser can be launched from the AEM as a Cloud Service Developer Console, providing a read-only view into the repository for all environments on author, publish, and preview tiers. For more information, see the [Repository Browser](/help/implementing/developing/tools/repository-browser.md).
 
-A set of tools for debugging AEM as a Cloud Service developer environments are available in the AEM as a Cloud Service Developer Console for RDE, dev, stage, and production environments. The url can be determined by adjusting the Author or Publish service urls as follows:
+A set of tools for debugging AEM as a Cloud Service developer environments is available in the AEM as a Cloud Service Developer Console for RDE, dev, stage, and production environments. The URL can be determined by adjusting the Author or Publish service URLs as follows:
 
 `https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -193,9 +193,9 @@ As a shortcut, the following Cloud Manager CLI command can be used to launch the
 
 See [Release Information](/help/release-notes/home.md) for more information.
 
-Developers can generate status information, and resolve various resources.
+Developers can generate status information and resolve various resources.
 
-As illustrated below, available statuses information include the state of bundles, components, OSGI configurations, oak indexes, OSGI services, and Sling jobs.
+As illustrated below, available statuses information includes the state of bundles, components, OSGI configurations, oak indexes, OSGI services, and Sling jobs.
 
 ![Dev Console 1](/help/implementing/developing/introduction/assets/devconsole1.png)
 
@@ -213,7 +213,7 @@ For Production programs, access to the AEM as a Cloud Service Developer Console 
 
 ### Performance Monitoring {#performance-monitoring}
 
-Adobe monitors application performance and takes measures to address if deterioration is observed. Currently, application metrics cannot be observed.
+Adobe monitors application performance and takes measures to address any deterioration if it is observed. Currently, application metrics cannot be observed.
 
 ## Sending Email {#sending-email}
 
@@ -227,13 +227,13 @@ The sections below describe how to request, configure, and send email.
 
 By default, ports used to send email are disabled. To activate a port, configure [advanced networking](/help/security/configuring-advanced-networking.md), making sure to set for each needed environment the `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` endpoint's port forwarding rules, which maps the intended port (for example, 465 or 587) to a proxy port.
 
-It is recommended to configure advanced networking with a `kind` parameter set to `flexiblePortEgress` since Adobe can optimize performance of flexible port egress traffic. If a unique egress IP address is necessary, choose a `kind` parameter of `dedicatedEgressIp`. If you have already configured VPN for other reasons, you can use the unique IP address provided by that advanced networking variation as well.
+It is recommended to configure advanced networking with a `kind` parameter set to `flexiblePortEgress` since Adobe can optimize the performance of flexible port egress traffic. If a unique egress IP address is necessary, choose a `kind` parameter of `dedicatedEgressIp`. If you have already configured VPN for other reasons, you can use the unique IP address provided by that advanced networking variation as well.
 
-You must send email through a mail server rather than directly to email clients. Otherwise, the emails may be blocked.
+You must send an email through a mail server rather than directly to email clients. Otherwise, the emails may be blocked.
 
 ### Sending Emails {#sending-emails}
 
-The [Day CQ Mail Service OSGI service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) should be used and emails must be sent to the mail server indicated in the support request rather than directly to recipients.
+The [Day CQ Mail Service OSGI service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) should be used, and emails must be sent to the mail server indicated in the support request rather than directly to recipients.
 
 ### Configuration {#email-configuration}
 
@@ -244,7 +244,7 @@ See the [AEM 6.5 documentation](https://experienceleague.adobe.com/docs/experien
 * The SMTP server host name should be set to $[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * The SMTP server port should be set to the value of the original proxy port set in the portForwards parameter used in the API call when configuring up advanced networking. For example, 30465 (rather than 465)
 
-The SMTP server port should be set as the `portDest` value set in the portForwards parameter used in the API call when configuring advanced networking and the `portOrig` value should be a meaningful value that is within the required range of 30000 - 30999. For example, if the SMTP server port is 465, port 30465 should be used as the `portOrig` value.
+The SMTP server port should be set as the `portDest` value set in the portForwards parameter used in the API call when configuring advanced networking, and the `portOrig` value should be a meaningful value that is within the required range of 30000 - 30999. For example, if the SMTP server port is 465, port 30465 should be used as the `portOrig` value.
 
 In this case, and assuming SSL needs to be enabled, in the configuration of the **Day CQ Mail Service OSGI** service:
 
@@ -283,7 +283,7 @@ The SMTP server host should be set to that of your mail server.
 
 ## Avoid Large Multi-Value Properties {#avoid-large-mvps}
 
-The Oak content repository that underlies AEM as a Cloud Service is not intended to be used with an excessive number of multi-value properties (MVPs). A rule-of-thumb is to keep MVPs below 1000. However actual performance depends on many factors.
+The Oak content repository that underlies AEM as a Cloud Service is not intended to be used with an excessive number of multi-value properties (MVPs). A rule-of-thumb is to keep MVPs below 1000. However, actual performance depends on many factors.
 
 Warnings are logged by default after exceeding 1000. They are similar to the following.
 
