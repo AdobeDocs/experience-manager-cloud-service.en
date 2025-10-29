@@ -69,6 +69,7 @@ Individual services within AEM as a Cloud have differing compliance ratings. See
 |AEM Forms |Authentication Facade Service |Yes |"A HIPAA-ready service" |
 |AEM Forms |PDF Utility Service |Yes |"A HIPAA-ready service" |
 |LLM Optimizer |LLM Optimizer |Not necessary |"Included in our HIPAA-ready service" |
+|AEM Guides |Guides | | |
 |AEM CIF |Commerce Integration Framework | | |
 |AEM Cloud Manager |Cloud Manager |Yes |"A HIPAA-ready service" |
 |AEM Cloud Foundation |Release Orchestrator |Yes |"A HIPAA-ready service" |
@@ -76,3 +77,24 @@ Individual services within AEM as a Cloud have differing compliance ratings. See
 |AEM Cloud Foundation |Release Validator |Yes |"A HIPAA-ready service" |
 |AEM Cloud Foundation |Software Distribution |Not necessary |"Included in our HIPAA-ready service" |
 
+## Environments {#environments}
+
+HIPAA-ready does not apply to RDE, Dev, or Stage environments. 
+
+RDE, Dev, and Stage environments should not contain PHI. It is accepted best practice to use dummy data for development and testing purposes. 
+
+|Product/Capability |RDE |Dev |Stage |Prod |
+|--- |--- |--- |--- |--- |
+|AEM Sites |No |No |No |Yes |
+|AEM Assets |No |No |No |Yes |
+|AEM Forms |No |No |No |Yes |
+|Cloud Manager |No |No |No |Yes |
+|Content Hub |No |No |No |Yes |
+|Dynamic Media with OpenAPI |No |No |No |Yes |
+|Dynamic Media (Scene7)/Brand Portal |No |No |No |No |
+|Asset Share/Assets Essentials |No |No |No |No |
+|Release Orchestrator |No |No |No |No |
+
+## Setup {#setup}
+
+For details about actions required see [Create Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).

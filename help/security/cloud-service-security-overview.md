@@ -13,3 +13,7 @@ role: Admin
 AEM as a Cloud Service's proactive approach to security and stringent procedures help protect the security of the AEM as a Cloud Service solution and customer confidential data. The security of digital experience is continuously monitored to stay ahead of malicious activities and help ensure the security of customer's data. 
 
 See [Adobe Experience Manager Cloud Service Security](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-cloud-service-security-overview.pdf) white paper for an in-depth overview of AEM as a Cloud Service Security.
+
+>[!NOTE]
+>
+>See also [HIPAA readiness for Adobe Experience Manager as a Cloud Service ](/help/compliance/hipaa.md) for the documentation that Adobe is providing to help you understand HIPAA readiness, and become compliant with these regulations. 
