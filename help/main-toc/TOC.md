@@ -1552,6 +1552,7 @@ user-guide-title: AEM as a Cloud Service
   + [Link Checker](/help/operations/link-checker.md)  
 + Compliance {#compliance}
   + [Compliance in AEM as a Cloud Service](/help/compliance/home.md)
+  + [HIPAA readiness](/help/compliance/hipaa.md)
   + Data Privacy and Protection Readiness {#data-privacy}
     + [AEM Readiness for Data Protection and Data Privacy Regulations](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
     + [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
