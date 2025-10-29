@@ -68,18 +68,20 @@ Individual services within AEM as a Cloud have differing compliance ratings. See
 |AEM Assets |Dynamic Media Scene 7 |No |"Not HIPAA-ready" |
 |AEM Forms |Authentication Facade Service |Yes |"A HIPAA-ready service" |
 |AEM Forms |PDF Utility Service |Yes |"A HIPAA-ready service" |
-|LLM Optimizer |LLM Optimizer |Not necessary |"Included in our HIPAA-ready service" |
-|AEM Guides |Guides | | |
 |AEM CIF |Commerce Integration Framework | | |
 |AEM Cloud Manager |Cloud Manager |Yes |"A HIPAA-ready service" |
 |AEM Cloud Foundation |Release Orchestrator |Yes |"A HIPAA-ready service" |
 |AEM Cloud Foundation |Release Toggles |Yes |"A HIPAA-ready service" |
 |AEM Cloud Foundation |Release Validator |Yes |"A HIPAA-ready service" |
 |AEM Cloud Foundation |Software Distribution |Not necessary |"Included in our HIPAA-ready service" |
+| | | | |
+|AEM Guides |Guides | | |
+| | | | |
+|LLM Optimizer |LLM Optimizer |Not necessary |"Included in our HIPAA-ready service" |
 
 ## Environments {#environments}
 
-HIPAA-ready does not apply to RDE, Dev, or Stage environments. 
+HIPAA-ready does not apply to RDE (Rapid Development Environment), Dev, or Stage environments. 
 
 RDE, Dev, and Stage environments should not contain PHI. It is accepted best practice to use dummy data for development and testing purposes. 
 
