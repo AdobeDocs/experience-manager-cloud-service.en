@@ -1,6 +1,6 @@
 ---
 title: HIPAA readiness for Adobe Experience Manager as a Cloud Service
-description: Learn about Experience Manager as a Cloud Service Sites support for the HIPAA Regulations, and how to comply when implementing a new AEM as a Cloud Service project.
+description: Learn about Experience Manager as a Cloud Service support for the HIPAA Regulations, and how to comply when implementing a new AEM as a Cloud Service project.
 feature: Compliance
 role: Admin, Architect, Developer, Leader
 ---
@@ -81,14 +81,14 @@ Individual services within AEM as a Cloud have differing compliance ratings. See
 
 ## Environments {#environments}
 
-HIPAA-ready does not apply to RDE (Rapid Development Environment), Dev, or Stage environments, as these environments should not contain PHI. 
+*HIPAA-ready* does not apply to RDE (Rapid Development Environment), Dev, or Stage environments, as these environments should not contain PHI. 
 
 It is accepted best practice to:
 
 * use dummy data for development and testing purposes
 * only access PHI from production environments
 
-The following table shows where the environment types are supported HIPAA-ready.
+The following table shows where the environment types are supported as HIPAA-ready.
 
 |Product/Capability |RDE |Dev |Stage |Prod |
 |--- |--- |--- |--- |--- |
@@ -104,4 +104,4 @@ The following table shows where the environment types are supported HIPAA-ready.
 
 ## Setup {#setup}
 
-When you [Create Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md), the [Security tab provides the options to activate HIPAA protection](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
+When you [Create Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md), the [Security tab provides the options to activate HIPAA protection](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security).
