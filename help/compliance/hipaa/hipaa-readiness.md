@@ -81,9 +81,14 @@ Individual services within AEM as a Cloud have differing compliance ratings. See
 
 ## Environments {#environments}
 
-HIPAA-ready does not apply to RDE (Rapid Development Environment), Dev, or Stage environments. 
+HIPAA-ready does not apply to RDE (Rapid Development Environment), Dev, or Stage environments, as these environments should not contain PHI. 
 
-RDE, Dev, and Stage environments should not contain PHI. It is accepted best practice to use dummy data for development and testing purposes. 
+It is accepted best practice to:
+
+* use dummy data for development and testing purposes
+* only access PHI from production environments
+
+The following table shows where the environment types are supported HIPAA-ready.
 
 |Product/Capability |RDE |Dev |Stage |Prod |
 |--- |--- |--- |--- |--- |
