@@ -1,6 +1,6 @@
 ---
 title: Support XDP Editing in Interactive Communication Editor
-description: Support XDP Editing in Interactive Communication Editor allows you to organize multiple form elements in a flexible and structured way.
+description: Support XDP Editing in Interactive Communication Editor allows existing xdps to be edited inside the Interactive Communication Editor.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
