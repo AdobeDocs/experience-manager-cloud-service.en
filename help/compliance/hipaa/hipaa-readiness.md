@@ -99,4 +99,4 @@ RDE, Dev, and Stage environments should not contain PHI. It is accepted best pra
 
 ## Setup {#setup}
 
-For details about actions required see [Create Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
+When you [Create Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md), the [Security tab provides the options to activate HIPAA protection](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#security)
