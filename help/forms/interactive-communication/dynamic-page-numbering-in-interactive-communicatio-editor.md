@@ -26,7 +26,7 @@ The Dynamic Page Numbering feature in Interactive Communication (IC) allows auth
 ## Key Capabilities
 
 - **Master Page Configuration:**
-Page numbering can be enabled at the master page level. Once activated, it automatically applies to all associated design pages linked to that master page.
+Page numbering can be enabled at the master page level. The component can be placed anywhere on the canvas after being dropped and customized freely, as it supports all properties available in the text component.
 
 - **Automatic Placement:**
 A page numbering component appears at the bottom center of each page with the format:

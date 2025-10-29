@@ -1,6 +1,6 @@
 ---
 title: Template Lock in Interactive Communication Editor
-description: Template Lock in Interactive Communication Editor manage layouts, control object positioning, and define how content flows across pages.
+description: Template Lock in Interactive Communication Editor provides the ability to the template authors to lock the layout or content for the document authors.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
@@ -27,7 +27,7 @@ When applied, locked components appear visually distinct and cannot be modified 
 
 ## 2. Lock Types
 
-Template authors can apply two types of locks to components within an Interactive Communication template:
+Template authors can apply Content and Layout Locks, individually or together to control content and layout changes in Interactive Communication templates:
 
 ### 2.1 Content Lock
 
