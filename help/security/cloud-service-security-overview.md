@@ -16,4 +16,4 @@ See [Adobe Experience Manager Cloud Service Security](https://www.adobe.com/cont
 
 >[!NOTE]
 >
->See also [HIPAA readiness for Adobe Experience Manager as a Cloud Service ](/help/compliance/hipaa.md) for the documentation that Adobe is providing to help you understand HIPAA readiness, and become compliant with these regulations. 
+>See also [HIPAA readiness for Adobe Experience Manager as a Cloud Service ](/help/compliance/hipaa/hipaa-readiness.md) for the documentation that Adobe is providing to help you understand HIPAA readiness, and become compliant with these regulations. 
