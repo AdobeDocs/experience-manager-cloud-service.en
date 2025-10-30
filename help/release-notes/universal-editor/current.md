@@ -22,7 +22,6 @@ These are the release notes for the 30 October 2025 release of the Universal Edi
 
 * [The new RTE](#new-rte) can now insert images.
   * This feature is disabled OOtB and needs to be explicitly enabled via a [filter definition.](/help/implementing/universal-editor/configure-rte.md#toolbar)
-* New `/configuration` endpoint
 
 ## Early Adoption Features {#early-adopter}
 
