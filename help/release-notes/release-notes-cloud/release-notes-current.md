@@ -40,9 +40,11 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### New features in Experience Manager Sites Prerelease {#prerelease-sites}
+### New features in Experience Manager Sites {#sites}
 
-The Content Model Editor for AEM Content Fragments has been modernized to align with other React Spectrum–based interfaces in AEM. Its user interface implementation and extensibility model are now consistent with the Content Fragment Editor and Universal Editor. The new Model Editor is now default when opened from the new Content Model Admin UI. Opening a content model in Touch UI opens the Touch UI editor and offers to try out the new editor. 
+* The [Content Model Editor for AEM Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) has been modernized to align with other React Spectrum–based interfaces in AEM. Its user interface implementation and extensibility model are now consistent with the Content Fragment Editor and Universal Editor. The new Model Editor is now default when opened from the new Content Model Admin UI. Opening a content model in Touch UI opens the Touch UI editor and offers to try out the new editor.
+  
+* [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md): The Launches tab of the Content Fragments console allows you to create launches, list all existing launches, see key properties, and take actions on them.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
