@@ -29,7 +29,7 @@ It ensures smooth content continuity for flowed layouts and provides visual aler
 ### Flowed Layout
 
 - **New Option:**
-Adds a property allow page breaks within content to control overflow behavior.
+Adds a property **allow page breaks** within content to control overflow behavior. This option is visible only when the parent subform is set to Flowed and it's **Allow page breaks** property is enabled.
 
 - **Automatic Page Continuation:**
 When content exceeds the available space, a new page is automatically created, and editing continues seamlessly.
@@ -47,6 +47,10 @@ A red border appears at the bottom of the container to indicate overflow.
 
 - **Manual Adjustment:**
 Authors manually resize the container to fit additional content.
+
+>[!NOTE]
+>
+> This feature requires the entire parent hierarchy (such as subforms) to be set to Flowed. If any parent subform in the hierarchy is Positioned, the **Allow page breaks** within content option will not work as expected.
 
 ## Benefits
 
