@@ -84,7 +84,7 @@ See the following table for compliance ratings, together with the [Additional Re
 
 ### Additional Requirements {#additional-requirements}
 
-Items listed as **Included in our HIPAA-ready service** require the purchase of **Extended Security for Healthcare**. 
+[Services listed](#compliance-of-services-in-aem-as-a-cloud-service) as HIPAA-ready (also referred to as a HIPAA-ready service) require the purchase of Extended Security for Healthcare. 
 
 When Extended Security for Healthcare is purchased, there is the requirement that:
 
@@ -92,6 +92,10 @@ When Extended Security for Healthcare is purchased, there is the requirement tha
 * and Extended Security for Healthcare has been purchased for *each* product; this requires sufficient Cloud Manager Credits.
 
 If the requirements are fulfilled, Extended Security for Healthcare can be applied upon AEM program creation; see [Setup](#setup) for details. 
+
+>[!NOTE]
+>
+>For more details on provisioning, and pricing, reach out to your sales representative.
 
 ## Environments {#environments}
 
