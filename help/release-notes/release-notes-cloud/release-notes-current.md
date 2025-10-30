@@ -44,15 +44,6 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 The Content Model Editor for AEM Content Fragments has been modernized to align with other React Spectrum–based interfaces in AEM. Its user interface implementation and extensibility model are now consistent with the Content Fragment Editor and Universal Editor. The new Model Editor is now default when opened from the new Content Model Admin UI. Opening a content model in Touch UI opens the Touch UI editor and offers to try out the new editor. 
 
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
-
-### New Features in Content Hub {#new-features-content-hub}
-
-**Enhancements In Content Hub download experience**
-
-Content Hub now supports downloading multiple asset renditions in a flat hierarchy, eliminating the need to navigate through multiple folders. User preferences for download behavior are now retained for a consistent experience across sessions. The new asset download experience streamlines asset management and improves efficiency by making downloaded files easier to locate and organize.
-
-
 <!--
 
 ### New Features in Content Hub {#new-features-content-hub}
