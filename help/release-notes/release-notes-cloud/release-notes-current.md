@@ -75,11 +75,11 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 ### New features in Experience Manager Forms {#new-features-forms}
 
-**Invoke Form Data Model Workflow Step for SharePoint List Attachments**
+**Universal Editor for Adaptive Forms and Form Fragments**
 
-The Invoke Form Data Model workflow step now supports handling workflow-side metadata for Base64-encoded attachment arrays in SharePoint List–based Form Data Models. With this enhancement, the workflow step can pass, store, and retrieve metadata such as file name, MIME type, and custom properties for each attachment. This capability enables more comprehensive data management and facilitates seamless downstream integration. For details, see [Enhanced support in Invoke Form Data Model workflow step for SharePoint List attachments](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step).
+The Universal Editor now delivers a unified authoring experience for creating Adaptive Forms and reusable Form Fragments. Authors can visually design forms, configure submit actions, and integrate reCAPTCHA validation within an intuitive WYSIWYG environment. 
  
-### Pre-Release features in AEM Forms 
+<!-- ### Pre-Release features in AEM Forms 
 
 **Rule Editor Enhancements**
 
@@ -91,7 +91,7 @@ The `Navigate To` action in the Invoke Service handlers now supports `EVENT_PAYL
 
 **Function and Mathematical Expression Support in Input Parameters**
  
-Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
+Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters). --> 
 
 ### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 
@@ -99,17 +99,23 @@ The AEM Forms Early Access Program offers a unique opportunity for you to get ex
 
 These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
 
-**PDF Preview in Interactive Communication Editor**
+#### Interactive Communication Enhancements 
+ 
+##### Template Locking 
 
-Users can preview Interactive Communications PDFs without data, with local JSON data files, or with data from a data model, enabling flexible data-driven testing. For more information, see [PDF Preview in Interactive Communication Editor](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
+Lock content and layout elements within templates to maintain brand integrity and prevent unauthorised modifications. This ensures design consistency across all communications. 
 
-**Support of Custom Fonts in Interactive Communication**
+##### Content Overflow Support 
 
-The Custom Fonts feature allows users to embed custom or organization-approved fonts in the Interactive Communications, ensuring consistent and branded PDF rendering across devices and platforms. For more information, see [Support of Custom Fonts in Interactive Communication](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
+Introducing the "Allow page breaks within content" option for flowed layouts. This enhancement enables smooth multi-page editing and better text management for complex documents. 
 
-**Import and Export Interactive Communications**
+##### XDP File Editing 
 
-This feature enables migration and reuse of Interactive Communications across different environments. You can now export an Interactive Communication along with its associated fragments and data models from one environment and import it into another. For more information, see [Import and Export Interactive Communications](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
+The Interactive Communication editor now supports XDP editing, including fragment integration. You can now edit XDP files in a browser instead of Forms Designer that runs only on Microsoft Windows desktop. 
+
+##### Dynamic Page Numbering 
+
+Automatically display "Page # of ##" on master pages for clear, consistent pagination across multi-page documents. 
 
 <!--
 **Forms Optimization opportunities**
