@@ -41,43 +41,54 @@ For more information, see [HIPAA and Adobe Products and Services](https://www.ad
 
 A service is labeled *HIPAA-ready* or *not HIPAA-ready* based on the outcome of its HIPAA assessment. Some services did not require a HIPAA assessment; for example, the Universal Editor. 
 
-|HIPAA-ready? | Can be integrated with HIPAA-ready services | Can be included in the SKU: Extended Security for Healthcare | Statements about HIPAA [2] | Why? |
+|HIPAA-ready? | Statements about HIPAA [1] | Why? | Can be integrated with HIPAA-ready services | Can be included in the SKU: Extended Security for Healthcare |
 |--- |--- |--- |--- |--- |
-|**Yes**, HIPAA-ready |Yes |Yes |"A HIPAA-ready service" |Handles consumer-level data, **and** processes, transmits, and/or stores ePHI. |
-|**Not necessary** to conduct a HIPAA assessment |Yes |Yes |"Included in our HIPAA-ready service" [1] |Not a service that handles consumer-level data. Just customer-level data. |
-|**No**, not HIPAA-ready |No |No |"Not HIPAA-ready" |Has not conducted a HIPAA assessment internally or externally to determine HIPAA scope. |
+|**Yes**, HIPAA-ready |A HIPAA-ready service |Handles consumer-level data, **and** processes, transmits, and/or stores ePHI. |Yes |Yes |
+|**Not necessary** to conduct a HIPAA assessment |Included in our HIPAA-ready service [2] |Not a service that handles consumer-level data. Just customer-level data. |Yes |Yes |
+|**No**, not HIPAA-ready |Not HIPAA-ready |Has not conducted a HIPAA assessment internally or externally to determine HIPAA scope. |No |No |
 
 >[!NOTE]
 >
->[1]: Applies only to decisions made at the time the PLA/PIA was completed for the documented use case.
->[2]: These are approved baseline statements. Marketing, contracts, Trust Center and other official customer-facing documents may contain different language.
+>[1]: These are approved baseline statements. Marketing, contracts, Trust Center and other official customer-facing documents may contain different language.
+>[2]: Applies only to decisions made at the time the Product Legal Assessment (PLA) and Privacy Impact Assessment (PIA) were completed for the documented use case.
 >
 >Only Product Legal and Privacy Legal make the decision to label a service either HIPAA-ready, not HIPAA-ready, or "Not necessary".
 
 ## Compliance of services in AEM as a Cloud Service {#compliance-of-services-in-aem-as-a-cloud-service}
 
-Individual services within AEM as a Cloud have differing compliance ratings. See the following table.
+Individual services within AEM as a Cloud have individual compliance ratings, based on the [assessment ratings](#hipaa-assessment-terminology). See the following table.
 
-|Product/Capability |Service |HIPAA-ready? |Statements |
-|--- |--- |--- |--- |
-|AEM Sites |AEM Publish/Universal Editor |Not necessary |"Included in our HIPAA-ready service" |
-|AEM Sites |Edge Delivery Services |Yes |"A HIPAA-ready service" |
-|AEM Sites Optimizer |Sites Optimizer |Not necessary |"Included in our HIPAA-ready service" |
-|AEM Assets |Content Hub |Not necessary |"Included in our HIPAA-ready service" |
-|AEM Assets |Brand Portal | | |
-|AEM Assets |Dynamic Media Scene 7 |No |"Not HIPAA-ready" |
-|AEM Forms |Authentication Facade Service |Yes |"A HIPAA-ready service" |
-|AEM Forms |PDF Utility Service |Yes |"A HIPAA-ready service" |
-|AEM CIF |Commerce Integration Framework | | |
-|AEM Cloud Manager |Cloud Manager |Yes |"A HIPAA-ready service" |
-|AEM Cloud Foundation |Release Orchestrator |Yes |"A HIPAA-ready service" |
-|AEM Cloud Foundation |Release Toggles |Yes |"A HIPAA-ready service" |
-|AEM Cloud Foundation |Release Validator |Yes |"A HIPAA-ready service" |
-|AEM Cloud Foundation |Software Distribution |Not necessary |"Included in our HIPAA-ready service" |
-| | | | |
-|AEM Guides |Guides | | |
-| | | | |
-|LLM Optimizer |LLM Optimizer |Not necessary |"Included in our HIPAA-ready service" |
+|Product/Capability |Service |Statements |
+|--- |--- |--- |
+|AEM Sites |AEM Publish/Universal Editor |Included in our HIPAA-ready service |
+|AEM Sites |Edge Delivery Services |A HIPAA-ready service |
+|AEM Sites Optimizer |Sites Optimizer |Included in our HIPAA-ready service |
+|AEM Assets |Content Hub |Included in our HIPAA-ready service |
+|AEM Assets |Brand Portal | |
+|AEM Assets |Dynamic Media Scene 7 |Not HIPAA-ready |
+|AEM Forms |Authentication Facade Service |A HIPAA-ready service |
+|AEM Forms |PDF Utility Service |A HIPAA-ready service |
+|AEM CIF |Commerce Integration Framework | |
+|AEM Cloud Manager |Cloud Manager |A HIPAA-ready service |
+|AEM Cloud Foundation |Release Orchestrator |A HIPAA-ready service |
+|AEM Cloud Foundation |Release Toggles |A HIPAA-ready service |
+|AEM Cloud Foundation |Release Validator |A HIPAA-ready service |
+|AEM Cloud Foundation |Software Distribution |Included in our HIPAA-ready service |
+| | | |
+|AEM Guides |Guides | |
+| | | |
+|LLM Optimizer |LLM Optimizer |Included in our HIPAA-ready service |
+
+>[!NOTE]
+>
+>Items listed as **Included in our HIPAA-ready service** require the purchase of **Extended Security for Healthcare**. 
+>
+>When Extended Security for Healthcare is purchased, there is the requirement that:
+>
+>* the products selected for that program are HIPAA-ready (as listed in the table) 
+>* and Extended Security for Healthcare has been purchased for *each* product; this requires sufficient Cloud Manager Credits
+>
+>If the requirements are fulfilled, Extended Security for Healthcare can be applied upon AEM program creation; see [Setup](#setup) for details. 
 
 ## Environments {#environments}
 
