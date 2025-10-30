@@ -999,6 +999,10 @@ user-guide-title: AEM as a Cloud Service
     + [Import and Export Interactive Communication](/help/forms/interactive-communication/import-and-export-interactive-communications.md)
     + [Add Custom Fonts to Interactive Communication Editor](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)
     + [PDF Preview in Interactive Communication Editor](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)
+    + [Template Lock in Interactive Communication Editor](/help/forms/interactive-communication/template-lock-in-interactive-communication-editor.md)
+    + [Dynamic Page Numbering in Interactive Communication Editor](/help/forms/interactive-communication/dynamic-page-numbering-in-interactive-communicatio-editor.md)
+    + [Content Overflow Handling in Interactive Communication Editor](/help/forms/interactive-communication/content-overflow-handling-in-interactive-communication-editor.md)
+    + [Support XDP Editing in Interactive Communication Editor](/help/forms/interactive-communication/support-xdp-editing-in-interactive-communication-editor.md)
     + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
   + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
