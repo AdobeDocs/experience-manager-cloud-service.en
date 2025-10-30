@@ -21,8 +21,7 @@ hidefromtoc: yes
 
 ## Introduction
 
-The Content Overflow Handling feature in the Interactive Communication Editor enhances how text behaves within Flowed and Positioned layouts.
-It ensures smooth content continuity for flowed layouts and provides visual alerts for positioned layouts, giving authors better control and flexibility when designing communications.
+The Content Overflow Handling feature in the Interactive Communication Editor enhances how text behaves within Flowed and Positioned layouts. It ensures smooth content continuity for flowed layouts and provides visual alerts for positioned layouts, giving authors better control and flexibility when designing communications.
 
 ## Key Capabilities
 
