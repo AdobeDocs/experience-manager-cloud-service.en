@@ -97,6 +97,7 @@ After the fragments have been created, you can:
 * [Analyze](/help/sites-cloud/administering/content-fragments/analysis.md)  the structure of your Content Fragment, using the editor
 * [Access your fragments with GraphQL, for headless delivery to your applications](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 * [Integrate and use your Content Fragments in Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md) 
+* Create, and manage, [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * [Or use your fragments for page authoring](/help/sites-cloud/authoring/fragments/content-fragments.md)
 
 >[!NOTE]
