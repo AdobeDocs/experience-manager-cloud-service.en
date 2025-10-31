@@ -116,6 +116,17 @@ Interactive Communications on Cloud is a powerful solution for creating, managin
 * **Custom Fonts:** Embed custom or organization-approved fonts to ensure consistent, branded PDF rendering across devices.
 * **Import and Export:** Seamlessly migrate and reuse Interactive Communication with their fragments and data models across environments.
 
+* **Template Locking**: Lock content and layout elements within templates to maintain brand integrity and prevent unauthorised modifications. 
+
+* **Content Overflow**: "Allow page breaks within content" option for flowed layouts for smooth multi-page editing and better text management for complex documents. 
+
+* **XDP File Editing**: You can now edit XDP files in a browser instead of Forms Designer that runs only on Microsoft Windows desktop. 
+
+##### Dynamic Page Numbering 
+
+Automatically display "Page # of ##" on master pages for clear, consistent pagination across multi-page documents. 
+
+
 
 #### Use Cases:
 
