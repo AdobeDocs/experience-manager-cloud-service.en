@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2025 {#2025}
+      + [Release Notes for 2025.9.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-9-0.md) 
       + [Release Notes for 2025.8.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-8-0.md) 
       + [Release Notes for 2025.7.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-7-0.md) 
       + [Release Notes for 2025.6.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-6-0.md) 
@@ -234,6 +235,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2025 {#2025}
+      + [2025.10.24 Release Notes](/help/release-notes/universal-editor/2025/2025-10-24.md)
       + [2025.10.16 Release Notes](/help/release-notes/universal-editor/2025/2025-10-16.md)
       + [2025.10.09 Release Notes](/help/release-notes/universal-editor/2025/2025-10-09.md)
       + [2025.10.02 Release Notes](/help/release-notes/universal-editor/2025/2025-10-02.md)
@@ -998,6 +1000,10 @@ user-guide-title: AEM as a Cloud Service
     + [Import and Export Interactive Communication](/help/forms/interactive-communication/import-and-export-interactive-communications.md)
     + [Add Custom Fonts to Interactive Communication Editor](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)
     + [PDF Preview in Interactive Communication Editor](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)
+    + [Template Lock in Interactive Communication Editor](/help/forms/interactive-communication/template-lock-in-interactive-communication-editor.md)
+    + [Dynamic Page Numbering in Interactive Communication Editor](/help/forms/interactive-communication/dynamic-page-numbering-in-interactive-communicatio-editor.md)
+    + [Content Overflow Handling in Interactive Communication Editor](/help/forms/interactive-communication/content-overflow-handling-in-interactive-communication-editor.md)
+    + [Support XDP Editing in Interactive Communication Editor](/help/forms/interactive-communication/support-xdp-editing-in-interactive-communication-editor.md)
     + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
   + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
