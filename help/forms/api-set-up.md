@@ -737,7 +737,7 @@ generatePDF();
 ##### Step 6: Run the Application
 
 ```bash
-$ node src/index.js
+node src/index.js
 ```
 
 ![run application](/help/forms/assets/api-7.png)
