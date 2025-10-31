@@ -4,9 +4,6 @@ description: Content Overflow Handling in Interactive Communication Editor enhan
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: yes
-index: no
-hidefromtoc: yes
 ---
 
 # Content Overflow Handling in Interactive Communication Editor
