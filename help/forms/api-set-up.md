@@ -51,45 +51,6 @@ Make sure you have the required access rights and permissions before you start c
 - **Text editor or IDE** for editing configuration files (VS Code, IntelliJ, etc.)
 - **Postman** or similar tool for API testing 
 
-## High-Level Setup Process
-
-For the AEM Forms Communications APIs complete setup involves the following major steps:
-
-```
-┌──────────────────────────────────────────────────────────────────┐
-│                   COMPLETE SETUP WORKFLOW                         │
-└──────────────────────────────────────────────────────────────────┘
-
-Step 1: Update AEM instance
-   ├─> Log into Cloud Manager
-   ├─> Navigate to the Program Overview
-   ├─> Locate environment details
-
-Step 2: Git Repository Access
-   ├─> Locate the Repository Section
-   ├─> Get the Repository URL from Cloud Manager
-   ├─> Clone repository to local machine
-
-Step 3: Environment and Endpoint Access
-   ├─> Log into Cloud Manager
-   ├─> Locate environment details
-   ├─> Note Author/Publish URLs
-
-Step 4: API Access Configuration
-   ├─> Create Adobe Developer Console Project
-   ├─> Add AEM Forms Communications API
-   ├─> Configure OAuth Server-to-Server
-   ├─> Generate credentials (Client ID, Bearer token)
-   ├─> Create api.yaml configuration file 
-   ├─> Commit and push the changes to Git
-   ├─> Deploy using Configuration pipeline
-   └─> Validate deployment
-
-Step 5: API Testing
-   ├─> Test with Swagger UI
-   └─> Make API calls programmatically
-```
-
 >[!NOTE] 
 >
 > This is a one-time per environment process that must be completed before proceeding with AEM Forms Communications APIs setup.
@@ -618,6 +579,8 @@ cd demo-nodejs-generate-pdf
 npm init -y
 ```
 
+![Create new node js project](/help/forms/assets/api-1.png)
+
 ##### Step 2: Install Required Dependencies
 
 Install the **node-fetch**, **dotenv**, and **form-data** libraries to make HTTP requests, read environment variables, and handle form data respectively.
@@ -628,6 +591,8 @@ npm install dotenv
 npm install form-data
 ```
 
+![install npm dependencies](/help/forms/assets/api-2.png)
+
 ##### Step 3: Update package.json
 
 1. Open the cmd/terminal and run the command:
@@ -635,6 +600,8 @@ npm install form-data
     ```bash
     code .
     ```
+
+    ![open project in editor](/help/forms/assets/api-3.png)
 
     It opens the project in the code editor. 
 
@@ -651,23 +618,24 @@ npm install form-data
     
     ```
 
+    ![update package file](/help/forms/assets/api-4.png)
+
 ##### Step 4: Create a .env File
 
 1. Create .env file at the root level of an project
 2. Add the following configuration and replace the placeholders with the actual values from the ADC Project's OAuth Server-to-Server credential.
 
     ```bash
-
     CLIENT_ID=<ADC Project OAuth Server-to-Server credential ClientID>
     CLIENT_SECRET=<ADC Project OAuth Server-to-Server credential Client Secret>
     SCOPES=<ADC Project OAuth Server-to-Server credential Scopes>
-
     ```
+
+    ![create env file](/help/forms/assets/api-5.png)
 
     >[!NOTE]
     >
-    > You can copy the CLIENT_ID, CLIENT_SECRET and SCOPES from the Adobe Developer Console project.
-
+    > You can copy the `CLIENT_ID`, `CLIENT_SECRET` and `SCOPES` from the Adobe Developer Console project.
 
 ##### Step 5: Create src/index.js
 
@@ -764,24 +732,21 @@ generatePDF();
 
 ```
 
+![create index.js](/help/forms/assets/api-6.png)
+
 ##### Step 6: Run the Application
 
 ```bash
 $ node src/index.js
 ```
 
+![run application](/help/forms/assets/api-7.png)
 
+The PDF is created in the `demo-nodejs-generate-pdf` folder. Navigate to the folder to find the generated file named `generatedForm.pdf`. 
 
+![view craeted pdf](/help/forms/assets/api-8.png)
 
-
-
-
-
-
-
-
-
-
+You can open the PDF to view it.
 
 ## Best Practices
 
