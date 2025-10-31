@@ -296,7 +296,11 @@ Storing PDFs in Azure Blob Storage allows for centralized management of document
 
 ### Enhancements in Visual Rule Editor 
 
-* The Visual Rule Editor in Adaptive Forms now supports [direct API integration without requiring a Form Data Model](/help/forms/api-integration-in-rule-editor.md). You can connect to an API endpoint by entering its JSON URL or by importing the configuration using a cURL command. After integration, the API can be invoked using the `Invoke Service` action.
+* [Direct API integration](/help/forms/api-integration-in-rule-editor.md): The Visual Rule Editor in Adaptive Forms now supports direct API integration without requiring a Form Data Model. You can connect to an API endpoint by entering its JSON URL or by importing the configuration using a cURL command. After integration, the API can be invoked using the `Invoke Service` action.
+
+* [Enhanced Navigation with Event Payload Support](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service): The **Navigate To** action in the Invoke Service handlers supports `EVENT_PAYLOAD`, allowing form authors to configure follow-up actions based on event responses. 
+  
+* [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters): Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly.
 
 ## See also
 
