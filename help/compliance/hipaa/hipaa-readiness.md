@@ -44,7 +44,7 @@ A service is labeled *HIPAA-ready* or *not HIPAA-ready* based on the outcome of 
 |HIPAA-ready? | Statements about HIPAA [1] | Why? | Can be integrated with other AEM HIPAA-ready services | Can be included in the SKU: Extended Security for Healthcare |
 |--- |--- |--- |--- |--- |
 |**Yes**, HIPAA-ready |A HIPAA-ready service |Handles consumer-level data, **and** processes, transmits, and/or stores ePHI. |Yes |Yes |
-|**Not necessary** to conduct a HIPAA assessment |Included in our HIPAA-ready service [2] |Not a service that handles consumer-level data. Just customer-level data. |Yes |Yes |
+|**Not necessary** to conduct a HIPAA assessment |Included in our HIPAA-ready service [2] |Not a service that handles consumer-level data, which may contain PHI. Just customer-level data.<br><br>So not impacted, and covered by default. |Yes |Yes |
 |**No**, not HIPAA-ready |Not HIPAA-ready |Adobe has not conducted a HIPAA assessment internally or externally to determine HIPAA scope.<br><br>This may be due to various reasons. If you need more information, contact your Sales representative. |No |No |
 
 >[!NOTE]
