@@ -711,6 +711,7 @@ user-guide-title: AEM as a Cloud Service
     + [Search and discover assets](/help/assets/search-assets-view.md)
     + [Custom search filters](/help/assets/custom-search-filters.md)
     + [Asset management tasks](/help/assets/manage-organize-assets-view.md)
+    + [AI generated metadata](/help/assets/ai-generated-metadata-assets-view.md)
     + [Edit images](/help/assets/edit-images-assets-view.md)
     + [Edit videos](/help/assets/edit-videos-assets-view.md)
     + [View and manage renditions](/help/assets/renditions.md)
