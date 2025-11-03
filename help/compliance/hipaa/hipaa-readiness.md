@@ -41,7 +41,7 @@ For more information, see [HIPAA and Adobe Products and Services](https://www.ad
 
 A service is labeled *HIPAA-ready* or *not HIPAA-ready* based on the outcome of its HIPAA assessment. Some services did not require a HIPAA assessment; for example, the Universal Editor. 
 
-|HIPAA-ready? | Statements about HIPAA [1] | Why? | Can be integrated with HIPAA-ready services | Can be included in the SKU: Extended Security for Healthcare |
+|HIPAA-ready? | Statements about HIPAA [1] | Why? | Can be integrated with other AEM HIPAA-ready services | Can be included in the SKU: Extended Security for Healthcare |
 |--- |--- |--- |--- |--- |
 |**Yes**, HIPAA-ready |A HIPAA-ready service |Handles consumer-level data, **and** processes, transmits, and/or stores ePHI. |Yes |Yes |
 |**Not necessary** to conduct a HIPAA assessment |Included in our HIPAA-ready service [2] |Not a service that handles consumer-level data. Just customer-level data. |Yes |Yes |
@@ -67,18 +67,18 @@ See the following table for compliance ratings, together with the [Additional Re
 |AEM Sites |Edge Delivery Services |A HIPAA-ready service |
 |AEM Sites Optimizer |Sites Optimizer |Included in our HIPAA-ready service |
 |AEM Assets |Content Hub |Included in our HIPAA-ready service |
-|AEM Assets |Brand Portal | |
+|AEM Assets |Brand Portal |Not HIPAA-ready |
 |AEM Assets |Dynamic Media Scene 7 |Not HIPAA-ready |
 |AEM Forms |Authentication Facade Service |A HIPAA-ready service |
 |AEM Forms |PDF Utility Service |A HIPAA-ready service |
-|AEM CIF |Commerce Integration Framework | |
+|AEM CIF |Commerce Integration Framework |Not HIPAA-ready |
 |AEM Cloud Manager |Cloud Manager |A HIPAA-ready service |
 |AEM Cloud Foundation |Release Orchestrator |A HIPAA-ready service |
 |AEM Cloud Foundation |Release Toggles |A HIPAA-ready service |
 |AEM Cloud Foundation |Release Validator |A HIPAA-ready service |
 |AEM Cloud Foundation |Software Distribution |Included in our HIPAA-ready service |
 | | | |
-|AEM Guides |Guides | |
+|AEM Guides |Guides |Not HIPAA-ready |
 | | | |
 |LLM Optimizer |LLM Optimizer |Included in our HIPAA-ready service |
 
@@ -89,7 +89,8 @@ See the following table for compliance ratings, together with the [Additional Re
 When Extended Security for Healthcare is purchased, there is the requirement that:
 
 * the products selected for that program are HIPAA-ready (as listed in the table), 
-* and Extended Security for Healthcare has been purchased for *each* product; this requires sufficient Cloud Manager Credits.
+* Extended Security for Healthcare has been purchased for *each* product; this ensures sufficient Cloud Manager Credits,
+* Extended Security for Healthcare is applied at the time of program creation.
 
 If the requirements are fulfilled, Extended Security for Healthcare can be applied upon AEM program creation; see [Setup](#setup) for details. 
 
@@ -104,10 +105,11 @@ If the requirements are fulfilled, Extended Security for Healthcare can be appli
 It is accepted best practice to:
 
 * use dummy data for development and testing purposes
-* only access PHI from production environments
+* only process PHI from production environments
 
 The following table shows where the environment types are supported as HIPAA-ready.
 
+<!--
 |Product/Capability |RDE |Dev |Stage |Prod |
 |--- |--- |--- |--- |--- |
 |AEM Sites |No |No |No |Yes |
@@ -119,6 +121,11 @@ The following table shows where the environment types are supported as HIPAA-rea
 |Dynamic Media (Scene7)/Brand Portal |No |No |No |No |
 |Asset Share/Assets Essentials |No |No |No |No |
 |Release Orchestrator |No |No |No |No |
+-->
+
+| |RDE |Dev |Stage |Prod |
+|--- |--- |--- |--- |--- |
+|Environment Type |No |No |No |Yes |
 
 ## Setup {#setup}
 
