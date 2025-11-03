@@ -12,9 +12,9 @@ hide: yes
 
 Learn what agents are available in AEM to accelerate your content creation and automatically orchestrate changes.
 
-## Agents {#agents}
+## Jobs {#experience-product-agent-jobs}
 
-Here are the agents that are available to you.
+Here are the jobs that are available to you.
 
 * [Content Updater](/help/ai-in-aem/agents/content-updater.md)
 * [Site Migrator](/help/ai-in-aem/agents/site-migrator.md)
