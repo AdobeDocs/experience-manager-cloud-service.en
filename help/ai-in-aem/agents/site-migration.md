@@ -1,6 +1,6 @@
 ---
-title: Site Migrator Product Agent
-description: Learn what the site migrator agent is and what it can do for you.
+title: Site Migration job
+description: Learn what the site migration job is and what it can do for you.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hidefromtoc: yes
@@ -8,9 +8,9 @@ index: no
 hide: yes
 ---
 
-# Site Migrator Product Agent {#site-migrator-agent}
+# Site Migration job {#site-migration-job}
 
-Learn what the site migrator agent is and what it can do for you.
+Learn what the site migration job is and what it can do for you.
 
 ## Overview {#overview}
 
