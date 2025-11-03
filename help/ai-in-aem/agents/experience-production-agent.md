@@ -16,9 +16,14 @@ Experience Production Agent automates high effort and high-volume tasks. Empower
 
 The agent provides the following jobs
 
-* [Content Update:](/help/ai-in-aem/agents/content-update.md) Update existing content across the CMS — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description as well as PDFs or screenshots.
-* [Form Creation:](/help/ai-in-aem/agents/form-creation.md) Generate new forms and communication documents from scratch or modernize legacy assets by importing PDF and XDP Forms, or images — all without dependency on development or IT teams. The agent accelerates form production while ensuring brand and compliance standards are maintained.
-* [Site Migration:](/help/ai-in-aem/agents/site-migration.md) Seamlessly migrate non-AEM sites into AEM (Experience Delivery Services) environments, ensuring they are performant, compliant, and agent-ready. The agent streamlines setup and transformation, reducing manual effort and time to value.
+### [Content Update:](/help/ai-in-aem/agents/content-update.md)
+Update existing content across the CMS — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description as well as PDFs or screenshots.
+
+### [Form Creation:](/help/ai-in-aem/agents/form-creation.md)
+Generate new forms and communication documents from scratch or modernize legacy assets by importing PDF and XDP Forms, or images — all without dependency on development or IT teams. The agent accelerates form production while ensuring brand and compliance standards are maintained.
+
+### [Site Migration:](/help/ai-in-aem/agents/site-migration.md)
+Seamlessly migrate non-AEM sites into AEM (Experience Delivery Services) environments, ensuring they are performant, compliant, and agent-ready. The agent streamlines setup and transformation, reducing manual effort and time to value.
 
 The agent should be able to work with other agent skills, examples include:
 
