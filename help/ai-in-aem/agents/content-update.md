@@ -8,7 +8,7 @@ index: no
 hide: yes
 ---
 
-# Content Update job {#content-updater-job}
+# Content Update job {#content-update-job}
 
 Learn what the Content Update job is and what it can do for you.
 
