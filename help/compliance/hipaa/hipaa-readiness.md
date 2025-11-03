@@ -45,7 +45,7 @@ A service is labeled *HIPAA-ready* or *not HIPAA-ready* based on the outcome of 
 |--- |--- |--- |--- |--- |
 |**Yes**, HIPAA-ready |A HIPAA-ready service |Handles consumer-level data, **and** processes, transmits, and/or stores ePHI. |Yes |Yes |
 |**Not necessary** to conduct a HIPAA assessment |Included in our HIPAA-ready service [2] |Not a service that handles consumer-level data. Just customer-level data. |Yes |Yes |
-|**No**, not HIPAA-ready |Not HIPAA-ready |Has not conducted a HIPAA assessment internally or externally to determine HIPAA scope. |No |No |
+|**No**, not HIPAA-ready |Not HIPAA-ready |Adobe has not conducted a HIPAA assessment internally or externally to determine HIPAA scope.<br><br>This may be due to various reasons. If you need more information, contact your Sales representative. |No |No |
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ A service is labeled *HIPAA-ready* or *not HIPAA-ready* based on the outcome of 
 >
 >[2]: Applies only to decisions made at the time the Product Legal Assessment (PLA) and Privacy Impact Assessment (PIA) were completed for the documented use case.
 >
->Only Product Legal and Privacy Legal make the decision to label a service either HIPAA-ready, not HIPAA-ready, or "Not necessary".
+>Only Product Legal and Privacy Legal make the decision to label a service either HIPAA-ready, not HIPAA-ready, or Not necessary.
 
 ## Compliance of services in AEM as a Cloud Service {#compliance-of-services-in-aem-as-a-cloud-service}
 
@@ -107,21 +107,7 @@ It is accepted best practice to:
 * use dummy data for development and testing purposes
 * only process PHI from production environments
 
-The following table shows where the environment types are supported as HIPAA-ready.
-
-<!--
-|Product/Capability |RDE |Dev |Stage |Prod |
-|--- |--- |--- |--- |--- |
-|AEM Sites |No |No |No |Yes |
-|AEM Assets |No |No |No |Yes |
-|AEM Forms |No |No |No |Yes |
-|Cloud Manager |No |No |No |Yes |
-|Content Hub |No |No |No |Yes |
-|Dynamic Media with OpenAPI |No |No |No |Yes |
-|Dynamic Media (Scene7)/Brand Portal |No |No |No |No |
-|Asset Share/Assets Essentials |No |No |No |No |
-|Release Orchestrator |No |No |No |No |
--->
+The following table shows where the environment types can be supported as HIPAA-ready.
 
 | |RDE |Dev |Stage |Prod |
 |--- |--- |--- |--- |--- |
