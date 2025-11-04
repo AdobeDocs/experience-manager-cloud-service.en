@@ -6,6 +6,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 ---
+
 # Java&trade; Functional Testing
 
 Learn how to write Java&trade; functional tests for AEM as a Cloud Service
@@ -96,7 +97,6 @@ See [`aem-testing-clients` GitHub repo](https://github.com/adobe/aem-testing-cli
 
 1. The containerized infrastructure that is scoped for functional testing is limited by the following boundaries:
 
-
 | Type                 | Value | Description                                                        |
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU                  | 0.5   | Amount of CPU-time reserved per test execution                     |
@@ -147,8 +147,6 @@ The system properties are as follows.
 | `sling.it.instance.adminUser.2`     | Set to publish admin user.                         | `admin`                 | 
 | `sling.it.instance.adminPassword.2` | Set to publish admin password.                     |                         | 
 
-
-
 #### Running All Tests Using Maven {#using-maven}
 
 1. Open a shell and navigate to the `it.tests` folder in your repository.
@@ -164,4 +162,3 @@ mvn verify -Plocal \
     -Dit.publish.user=<user> \
     -Dit.publish.password=<password>
 ```
-
