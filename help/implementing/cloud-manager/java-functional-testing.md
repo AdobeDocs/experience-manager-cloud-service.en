@@ -104,10 +104,6 @@ See [`aem-testing-clients` GitHub repo](https://github.com/adobe/aem-testing-cli
 | Timeout              | 30 m   | The time limit after which the test stops.                |
 | Recommended Duration | 15 m   | Adobe recommends writing the tests not to take longer than this time. |
 
->[!NOTE]
->
-> Should you need more resources, create a Customer Care case, and describe your use-case. Adobe's team reviews your request and provides appropriate assistance.
-
 #### Dependencies
 
 * aem-cloud-testing-clients:
