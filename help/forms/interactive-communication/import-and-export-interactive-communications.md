@@ -4,9 +4,6 @@ description: Import and Export Interactive Communication enables users to seamle
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: yes
-index: no
-hidefromtoc: yes
 ---
 
 # Import and Export Interactive Communication
