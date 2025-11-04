@@ -4,9 +4,6 @@ description: PDF Preview in Interactive Communication Editor with Different Data
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: yes
-index: no
-hidefromtoc: yes
 ---
 
 # PDF Preview in Interactive Communication Editor

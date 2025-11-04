@@ -4,9 +4,6 @@ description: Dynamic Page Numbering in Interactive Communication Editor allows a
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: yes
-index: no
-hidefromtoc: yes
 ---
 
 # Dynamic Page Numbering in Interactive Communication Editor
