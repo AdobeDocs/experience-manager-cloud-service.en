@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2025.10.09 Release Notes
-description: These are the release notes for the 2025.10.09 release of the Universal Editor.
+title: Universal Editor 2025.10.30 Release Notes
+description: These are the release notes for the 2025.10.30 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.10.09 Release Notes {#release-notes}
+# Universal Editor 2025.10.30 Release Notes {#release-notes}
 
-These are the release notes for the 9 October 2025 release of the Universal Editor.
+These are the release notes for the 30 October 2025 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,7 +20,8 @@ These are the release notes for the 9 October 2025 release of the Universal Edit
 
 ## What's New {#what-is-new}
 
-* [Copy and paste of components](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) is now possible between containers with filters configured.
+* [The new RTE](#new-rte) can now insert images.
+  * This feature is disabled OOtB and needs to be explicitly enabled via a [filter definition.](/help/implementing/universal-editor/configure-rte.md#toolbar)
 
 ## Early Adoption Features {#early-adopter}
 
@@ -32,7 +33,10 @@ The new ProseMirror RTE, featuring a page picker in the link dialog, is now avai
 
 ## Other Improvements {#other-improvements}
 
-* An issue was resolved where where users couldn't reselect an Experience Fragment
-* Deleting a component or block in a Live Copy no longer cancels parent inheritance.
-* Editing page properties via page metadata on Live Copies no longer cancels full page inheritance.
-* A minor regression with hotkeys was resolved.
+* Update event is now informed if action was undo.
+* `No results` string now depends on browser locale in Universal Editor tags.
+* Fixed extra line break in Universal Editor's publish button.
+* Cleanup was made to patch API.
+* Select content button is now visible in Safari.
+* RPM build was fixed.
+* CORS update to avoid updating text edited text again after saving.
