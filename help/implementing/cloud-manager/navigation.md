@@ -52,20 +52,16 @@ The My Programs console provides an overview of all programs to which you have a
 
 There are two toolbars on top of each other. 
 
-#### Cloud Manager header {#cloud-manager-header}
+#### Experience Platform top navigation bar {#cloud-manager-header}
 
-The first is the Cloud Manager header, which is persistent as you navigate Cloud Manager. It is an anchor that gives you access to settings and information that apply across Cloud Manager programs.
+The first is the Experience Platform top navigation bar, which is persistent as you navigate Cloud Manager. It is an anchor that gives you access to settings and information that apply across Cloud Manager programs.
 
-![The Experience Cloud header](assets/experience-cloud-header.png)
+![Experience Platform top navigation bar](assets/experience-cloud-header.png)
 
-1. Click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (show or hide side menu) to give you access to a variety of tabs that can take you to specific parts of an individual program. Or, you can switch between the [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md) and the **[My Programs](#my-programs-console)** console depending on the context.
-1. Click the Adobe Cloud Manager button takes you back to the My Programs console of Cloud Manager no matter where you are in Cloud Manager.
-1. Click **Feedback** to provide feedback to Adobe about Cloud Manager.
-1. Click the organization selector displays the organization that you are currently signed into (in this example, Foundation Internal). Click to switch to another organization if your Adobe ID is associated with multiple.
-1. Click ![Apps icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) (Solutions switcher) to jump quickly to other Experience Cloud solutions.
-1. Click ![Help icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Help_18_N.svg) to give you quick access to learning and support resources.
-1. Click ![Bell icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([Notifications](/help/implementing/cloud-manager/notifications.md)) to see notifications and announcements, among other things.
-1. Click the icon representing user access to your user settings. If you do not have a user picture configured, an icon is randomly assigned.
+* The ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (show or hide side menu) gives you access to a variety of tabs that can take you to specific parts of an individual program. Or, you can switch between the [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md) and the **[My Programs](#my-programs-console)** console depending on the context.
+* The ![Bell icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([Notifications](/help/implementing/cloud-manager/notifications.md)) gives you access to notifications and announcements, among other things.
+
+For further details on the Experience Platform top navigation bar, please see the [Adobe Experience Platform UI guide.](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Program toolbar {#program-toolbar}
 
