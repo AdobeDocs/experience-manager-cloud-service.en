@@ -41,7 +41,7 @@ Smart Tags are implemented in AEM Assets using the following workflow:
 
 1. Create or upload an asset in AEM. Out of the box tags are generated for image, video, and text based Assets.
 
-1. If you find that specific tags are not generated, then you can train your image-type tags accordingly. Refer to [Smart Tags training](#smart-tags-training.md).
+1. If you find that specific tags are not generated, then you can train your image-type tags accordingly. Refer to [Smart Tags training](/help/assets/smart-tags-training.md).
 
 ## Supported file formats for Smart Tags {#supported-file-formats}
 
@@ -250,7 +250,7 @@ These models are not always perfect at identifying tags. The current version of 
 
 +++**How may I know that tagging needs training?**
   
-  Refer to [Determining the requirement of Smart Tags training](#smart-tags-training.md#smart-tag-training-requirement).
+  Refer to [Determining the requirement of Smart Tags training](/help/assets/smart-tags-training.md#smart-tag-training-requirement).
 
 +++
 
