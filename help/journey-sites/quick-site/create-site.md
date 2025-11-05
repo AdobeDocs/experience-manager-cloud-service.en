@@ -5,7 +5,9 @@ exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
+recommendations: noDisplay, noCatalog
 ---
+
 # Create Site from Template {#create-site-from-template}
 
 {{traditional-aem}}

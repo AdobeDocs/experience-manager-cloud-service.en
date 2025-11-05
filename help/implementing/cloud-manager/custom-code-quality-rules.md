@@ -229,7 +229,7 @@ public void orDoThis(Session session) throws Exception {
 * **Severity**: Major
 * **Since**: Version 2018.4.0
 
-As described in the [Sling documentation](https://sling.apache.org/documentation/the-sling-engine/servlets.html), bindings servlets by paths are discouraged. Path-bound servlets cannot use standard JCR access controls and, as a result, require additional security rigor. Rather than using path-bound servlets, it is recommended to create nodes in the repository and register servlets by resource type.
+As described in the [`Sling` documentation](https://sling.apache.org/documentation/the-sling-engine/servlets.html), bindings servlets by paths are discouraged. Path-bound servlets cannot use standard JCR access controls and, as a result, require additional security rigor. Rather than using path-bound servlets, it is recommended to create nodes in the repository and register servlets by resource type.
 
 #### Non-compliant code {#non-compliant-code-5}
 
@@ -477,7 +477,7 @@ public void doThis() {
 * **Severity**: Minor
 * **Since**: Version 2018.4.0
 
-Paths starting with `/libs` and `/apps` should generally not be hardcoded. These paths are usually stored relative to the Sling search path, which defaults to `/libs,/apps`. Using the absolute path may introduce subtle defects that would only appear later in the project lifecycle.
+Paths starting with `/libs` and `/apps` should generally not be hardcoded. These paths are usually stored relative to the `Sling` search path, which defaults to `/libs,/apps`. Using the absolute path may introduce subtle defects that would only appear later in the project lifecycle.
 
 #### Non-compliant code {#non-compliant-code-13}
 
@@ -502,9 +502,9 @@ public void doThis(Resource resource) {
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
-Do not use the Sling Scheduler for tasks that require a guaranteed execution. Sling Scheduled Jobs guarantee execution and better suited for both clustered and non-clustered environments. 
+Do not use the `Sling` Scheduler for tasks that require a guaranteed execution. Sling Scheduled Jobs guarantee execution and better suited for both clustered and non-clustered environments. 
 
-See [Apache Sling Eventing and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) to learn more about how Sling Jobs are handled in clustered environments.
+See [`Apache Sling` Eventing and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) to learn more about how Sling Jobs are handled in clustered environments.
 
 ### Do not use Experience Manager deprecated APIs {#sonarqube-aem-deprecated}
 
@@ -526,9 +526,9 @@ However, there are cases where an API is deprecated in the context of Experience
 * **Severity**: Minor
 * **Since**: Version 2023.11
 
-The Apache Sling project discourages the use of the `@Inject` annotation in the context of Sling Models, as it can lead to bad performance when combined with the `DefaultInjectionStrategy.OPTIONAL` (either at field or class level). Instead, more specific injections (like the `@ValueMapValue` or `@OsgiInjector` annotations) should be used.
+The `Apache Sling` project discourages the use of the `@Inject` annotation in the context of Sling Models, as it can lead to bad performance when combined with the `DefaultInjectionStrategy.OPTIONAL` (either at field or class level). Instead, more specific injections (like the `@ValueMapValue` or `@OsgiInjector` annotations) should be used.
 
-Check the [Apache Sling documentation](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) for more information about the recommended annotations and why this recommendation was made in the first place.
+Check the [`Apache Sling` documentation](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) for more information about the recommended annotations and why this recommendation was made in the first place.
 
 
 ### Reuse instances of a HTTPClient {#sonarqube-reuse-httpclient}

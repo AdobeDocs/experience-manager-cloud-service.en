@@ -1,11 +1,11 @@
 ---
-title: Creating a Configuration - Headless Setup
+title: Create a Configuration - Headless Setup
 description: Create a configuration as a first step to getting started with headless in AEM as a Cloud Service.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 ---
-# Creating a Configuration - Headless Setup {#creating-configuration}
+# Create a Configuration - Headless Setup {#create-configuration}
 
 As a first step to getting started with headless in AEM as a Cloud Service, you need to create a configuration.
 
@@ -21,21 +21,7 @@ If you are familiar with [page templates in a full-stack AEM implementation](/he
 
 An administrator would only need to create a configuration once, or very seldomly when a new workspace is required for organizing your Content Models. For the purposes of this getting started guide, we only need to create one configuration.
 
-1. Log into AEM as a Cloud Service and from the main menu select **Tools &gt; General &gt; Configuration Browser**.
-1. Provide a **Title** and a **Name** for your configuration.
-   * The **Title** should be descriptive.
-   * The **Name** becomes the node name in the repository.
-      * It is automatically generated based on the title and adjusted according to [AEM naming conventions](/help/implementing/developing/introduction/naming-conventions.md).
-      * It can be adjusted if necessary.
-1. Check the following options:
-   * **Content Fragment Models**
-   * **GraphQL Persisted Queries**
-
-   ![Create Configuration](../assets/create-configuration.png)
-
-1. Select **Create**
-
-You can create multiple configurations if necessary. Configurations can also be nested.
+For step-by-step details see [Enable Content Fragment Functionality in the Configuration Browser](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser).
 
 >[!NOTE]
 >
