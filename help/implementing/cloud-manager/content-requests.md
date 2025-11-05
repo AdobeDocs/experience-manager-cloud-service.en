@@ -59,7 +59,7 @@ See the [License Dashboard](/help/implementing/cloud-manager/license-dashboard.m
 
 ## Server-side collection rules {#serverside-collection}
 
-AEM as a Cloud Service applies server-side rules to count content requests. These rules include logic to exclude well-known bots (such as search engine crawlers) and non-user traffic like monitoring services that regularly ping the site.
+AEM as a Cloud Service applies server-side collection rules to count content requests. These rules exclude well-known bots (such as search engine crawlers) and a set of monitoring services that regularly ping the site. Other synthetic or monitoring-type traffic not on this exclusion list is counted as billable content requests.
 
 The following tables list the types of included and excluded content requests, with brief descriptions of each.
 
@@ -95,4 +95,33 @@ Agent: skyline-service-warmup/1.*|
 | Exclude Commerce Integration Framework calls | Excluded | Requests made to AEM that gets forwarded to the Commerce Integration Framework&mdash;the URL starts with `/api/graphql`&mdash;to avoid double counting, they are not billable for Cloud Service.|
 | Exclude `manifest.json` | Excluded | Manifest is not an API call. It is here to provide information on how to install web sites on a desktop or mobile phone. Adobe should not count JSON request to `/etc.clientlibs/*/manifest.json`|
 | Exclude `favicon.ico` | Excluded | Although the returned content should not be HTML or JSON, certain scenarios like SAML authentication flows have been observed to return favicons as HTML. As a result, favicons are explicitly excluded from the count.|
-| Experience Fragment (XF) – Same-domain reuse | Excluded | Requests made to XF paths (such as `/content/experience-fragments/...`) from pages hosted on the same domain (as identified by the Referrer header matching the request host).<br><br> Example: A homepage on `aem.customer.com` pulling in an XF for a banner or card from the same domain.<br><br>&bull; URL matches /content/experience-fragments/...<br>&bull; Referrer domain matches `request_x_forwarded_host`<br><br>**Note:** If the Experience Fragment path is customized (for example using `/XFrags/...` or any path outside of `/content/experience-fragments/`), the request is not excluded and may be counted. This outcome is true even if it is same-domain. Adobe recommends using Adobe's standard XF path structure to ensure that the exclusion logic applies correctly.|
+| Experience Fragment (XF) – Same-domain reuse | Excluded | Requests made to XF paths (such as `/content/experience-fragments/...`) from pages hosted on the same domain (as identified by the Referer header matching the request host).<br><br> Example: A homepage on `aem.customer.com` pulling in an XF for a banner or card from the same domain.<br><br>&bull; URL matches /content/experience-fragments/...<br>&bull; Referer domain matches `request_x_forwarded_host`<br><br>**Note:** If the Experience Fragment path is customized (for example using `/XFrags/...` or any path outside of `/content/experience-fragments/`), the request will not be excluded and may be counted, even if it's same-domain. We recommend using Adobe’s standard XF path structure to ensure exclusion logic applies correctly.|
+
+## Managing content requests {#managing-content-requests}
+
+As mentioned in the above section [Variances of Cloud Service content requests](#content-requests-variances), content requests can be higher than expected due to a number of reasons, with a common thread being traffic hitting the CDN.  It is to your advantage as an AEM customer to monitor and manage your content requests to fit within your license budget.  Managing content requests is generally a combination of implementation techniques and [traffic filter rules](/help/security/traffic-filter-rules-including-waf.md).
+ 
+### Implementation techniques to manage content requests {#implementation-techniques-to-manage-crs}
+
+* Ensure that any Page Not Found responses are delivered with an HTTP status 404.  If they are returned with a status 200, they will count toward content requests.
+* Route health check or monitoring tools to the /systems/probes/health URL or use the HEAD method instead of GET to avoid incurring content requests.
+* Balance your needs for freshness of content with AEM license cost for any custom search crawler you have integrated with your site.  An overly aggressive crawler may consume a lot of content requests.
+* Handle any redirects as server-side (status 301 or 302) rather than client-side (status 200 with javascript redirect) to avoid two separate content requests.
+* Combine or reduce API calls, which are JSON responses from AEM that may be loaded to render the page.
+
+### Traffic filter rules to manage content requests {#traffic-filter-rules-to-manage-crs}
+
+* A common bot pattern is to use an empty user agent.  You will need to review your implementation and traffic patterns to see if the empty user agent is useful or not.  If you would like to block this traffic, the recommended [syntax](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) is:
+
+```
+trafficFilters:
+  rules:
+    - name: block-missing-user-agent
+      when:
+        anyOf:
+          - { reqHeader: user-agent, exists: false }
+          - { reqHeader: user-agent, equals: '' }
+      action: block
+```
+
+* Some bots hit a site very heavily one day and vanish the next.  This can frustrate any attempts to block a specific IP address or user agent.  One generic approach is to introduce a [rate limit rule](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Review the [examples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) and craft a rule that matches your tolerance for a rapid rate of requests.  Review the [Condition Structure](/help/security/traffic-filter-rules-including-waf.md#condition-structure) syntax for any exceptions you may wish to allow to a generic rate limit.
