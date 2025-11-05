@@ -13,7 +13,9 @@ Congratulations on choosing AEM as a Cloud Service! This document is your starti
 
 ## Introduction {#introduction}
 
-Adobe Experience Manager is a powerful suite of composable content services that rapidly deliver highly impactful, personalized experiences across any channel, unlocking content from all for all. **Edge Delivery Services** is the latest innovation in Adobe Experience Manager that enables extreme content velocity and delivers exceptional experiences. Learn how to get started with Edge Delivery Services, by consulting [Edge Delivery Services Overview](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview). To understand how to use Edge Delivery Services, see the [Developer Tutorial](https://www.aem.live/developer/tutorial) page.
+Adobe Experience Manager (AEM) provides flexibility across both content delivery and authoring approaches, empowering teams to choose the best model for their needs.
+
+Use [Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) for rapid, iterative authoring and high content velocity, or use the traditional Publish delivery service for a robust enterprise publishing model. Either approach lets organizations deliver exceptional digital experiences in the way that fits them best. To get started with Edge Delivery Services, explore the [Edge Delivery Services Overview](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview), and to learn more about modern authoring options, see the [Authoring Guide](https://www.aem.live/docs/authoring-guide).
 
 Onboarding is the process during which a designated system administrator sets up AEM as a Cloud Service for your organization. This process includes the initial provisioning of cloud resources and assigning users to roles based on their job responsibilities. As a result, each member is able to log on and access their resource on AEM as a Cloud Service.
 
