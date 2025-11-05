@@ -73,10 +73,10 @@ When this occurs, the required endpoints can be defined manually by specifying t
 In this configuration mode, the `baseUrl` property must not be set.
  
    ```
-  "authorizationEndpoint": "https://idp-url/oauth2/v1/authorize",
-  "tokenEndpoint": "https://idp-url/oauth2/v1/token",
-  "jwkSetURL":"https://idp-url/oauth2/v1/keys",
-  "issuer": "https://idp-url"
+   "authorizationEndpoint": "https://idp-url/oauth2/v1/authorize",
+   "tokenEndpoint": "https://idp-url/oauth2/v1/token",
+   "jwkSetURL":"https://idp-url/oauth2/v1/keys",
+   "issuer": "https://idp-url"
    ```
 
 1. Configure the its properties as follows:
@@ -155,6 +155,7 @@ Create a file named `org.apache.jackrabbit.oak.spi.security.authentication.exter
   "handler.name":"azure"
 }
 ```
+
 During development, expiration times can be reduced to a lower value (for example: 1s) to speed up testing of user and group synchronization in oak.
 Below some of the most relevant attributes to be configured in DefaultSyncHandler. Remark that Dynamic Group Memberhsip should always be enabled in Cloud Services.
 
@@ -190,7 +191,7 @@ Finally, you need to configure the External Login Module.
 
 The user is authenticated by an ID Token, and additional attributes are fetched in the `userInfo` endpoint defined for the IdP. If additional non-standard operations must be performed, a custom implementation of the [UserInfoProcessor](https://github.com/apache/sling-org-apache-sling-auth-oauth-client/blob/master/src/main/java/org/apache/sling/auth/oauth_client/impl/SlingUserInfoProcessorImpl.java) is the default implementation from Sling. 
 
-### Configure ACL for external groups {configure-acl-for-external-groups}
+### Configure ACL for external groups {#configure-acl-for-external-groups}
 
 When users are authenticated through OIDC, their group memberships are typically synchronized from the external identity provider.
 These external groups are created dynamically in the AEM repository but are not automatically associated with any access control entries.
@@ -201,14 +202,14 @@ Two primary approaches are available.
 ### Option 1 — Local Groups
 
 The external group can be added as a member of a local group that already has the required ACLs.
-- The external group must exist in the repository, which occurs automatically when a user belonging to that group logs in for the first time.
-- This option is generally preferred when Closed User Groups (CUGs) are in use, as the local group exists on both author and publish environments.
+* The external group must exist in the repository, which occurs automatically when a user belonging to that group logs in for the first time.
+* This option is generally preferred when Closed User Groups (CUGs) are in use, as the local group exists on both author and publish environments.
 
 ### Option 2 — Direct ACLs on External Groups via RepoInit 
 
 ACLs can be applied directly to external groups using RepoInit scripts.
-- This approach is more efficient and is preferred when CUGs are not used.
-- The following example shows a RepoInit configuration that assigns read permissions to an external group. The option `ignoreMissingPrincipal` allows the creation of the ACL even if the group does not yet exist in the repository:
+* This approach is more efficient and is preferred when CUGs are not used.
+* The following example shows a RepoInit configuration that assigns read permissions to an external group. The option `ignoreMissingPrincipal` allows the creation of the ACL even if the group does not yet exist in the repository:
     
     ```
     {
@@ -217,6 +218,7 @@ ACLs can be applied directly to external groups using RepoInit scripts.
       ]
     }    
     ```
+
 >[!NOTE]
 >The AEM Permissions UI can be used to inspect the ACLs assigned to group principals
 
@@ -353,5 +355,5 @@ When AEM is already configured with a SAML Authentication Handler, and users are
 1. After login from users, the old users created by the saml authentication handler can be deleted.
 
 >[!NOTE]
- >Once the SAML Authentication Handler is disabled and the OIDC Authentication Handler is enabled, if [data synchronization](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) is not enabled, existing sessions become invalid. Users will be required to authenticate again, which results in the creation of new OIDC user nodes in the repository.
+>Once the SAML Authentication Handler is disabled and the OIDC Authentication Handler is enabled, if [data synchronization](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization) is not enabled, existing sessions become invalid. Users will be required to authenticate again, which results in the creation of new OIDC user nodes in the repository.
 
