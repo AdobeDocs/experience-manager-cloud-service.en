@@ -212,7 +212,7 @@ Then the Content Fragments Models can be created and the structure defined. This
 
 Once created you can edit your model. For example:
 
-![Content Fragment Model](assets/cfm-model.png)
+![Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
 >[!NOTE]
 >
@@ -249,12 +249,6 @@ After selecting the appropriate model, a Content Fragment is opened for editing 
 >See Additional Resources - Working with Content Fragments.
 
 ## Getting Started with some Examples {#getting-started-examples}
-
-<!--
-tbc...
-...and/or see the structures covered for the GraphQL samples...
-...will those (ever) be delivered as an official sample package?
--->
 
 For a basic structure as sample, see The Sample Content Fragment Structure.
 

@@ -4,7 +4,9 @@ description: Learn how the Quick Site Creation tool uses site templates, themes,
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
 feature: Developing
 role: Admin, Architect, Developer
+recommendations: noDisplay, noCatalog
 ---
+
 # Quick Site Creation and Front-End Customization {#quick-site-creation}
 
 {{traditional-aem}}

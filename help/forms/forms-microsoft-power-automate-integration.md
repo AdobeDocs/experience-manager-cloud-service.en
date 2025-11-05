@@ -9,6 +9,11 @@ role: Admin, User, Developer
 
 # Connect an Adaptive Form with Microsoft&reg; Power Automate {#connect-adaptive-form-with-power-automate}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration)                  |
+| AEM as a Cloud Service     | This article            |
+
 <span class="preview"> If you're on GovCloud and need to connect to a GCC (Government Cloud Computing) tenant, send an email from your official address to aem-forms-ea@adobe.com to request access through the Early Adopter Program. </span>
 
 You can configure an Adaptive Form to run a Microsoft&reg; Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for processing. It helps you build custom data capture experience while harnessing the power of Microsoft&reg; Power Automate to build business logics around captured data and automate customer workflows. 
