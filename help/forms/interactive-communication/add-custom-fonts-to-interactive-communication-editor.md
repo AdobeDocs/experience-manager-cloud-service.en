@@ -4,9 +4,6 @@ description: Add Custom Fonts in Interactive Communication Editor to enable the 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: yes
-index: no
-hidefromtoc: yes
 ---
 
 # Add Custom Fonts to Interactive Communication Editor
