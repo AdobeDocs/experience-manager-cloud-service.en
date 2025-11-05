@@ -23,11 +23,6 @@ This document helps you understand the AEM headless publication pipeline and the
 * Secure and Scale your application before Launch
 * Monitor Performance and Debug Issues
 
-<!-- Alexandru: this is a bit redundant, to review again later
-
-## Prepare your AEM Headless Application for Go-Live {#prepare-your-aem-headless-application-for-golive}
-
--->
 To get your AEM headless application ready for launch, follow the best practices outlined below.
 
 ## Secure and Scale your Headless Application Before Launch {#secure-and-scale-before-launch}

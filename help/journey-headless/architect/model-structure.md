@@ -19,21 +19,6 @@ This article builds on these principles so that you understand how to create you
 * **Audience**: Beginner
 * **Objective**: the concepts and mechanics of modeling content for your Headless CMS using Content Fragments Models.
 
-<!-- which persona does this? -->
-<!-- and who allows the configuration on the folders? -->
-
-<!--
-## Enabling Content Fragment Models {#enabling-content-fragment-models}
-
-At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools > General > Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
-
-![Define configuration](/help/sites-cloud/administering/content-fragments/assets/cfm-conf-01.png)
-
->[!NOTE]
->
->See Additional Resources - Content Fragments in the Configuration Browser
--->
-
 ## Creating Content Fragment Models {#creating-content-fragment-models}
 
 Then the Content Fragments Models can be created and the structure defined.
@@ -50,39 +35,25 @@ Then the Content Fragments Models can be created and the structure defined.
 
 1. Use **Create** to save the empty model, or **Create and open**.
 
-<!--
-Then the Content Fragments Models can be created and the structure defined. This can be done under **Tools** > **General** > **Content Fragment Models**. 
-
-![Content Fragment Models in Tools](assets/cfm-tools.png)
-
-After selecting this you navigate to the location for your model and select **Create**. Here you can enter various key details.
-
-The option **Enable model** is activated by default. This means that your model is available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
-
-![Create Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
-
-Confirm with **Create** and you can then **Open** your model to start defining the structure.
--->
-
 ## Defining Content Fragment Models {#defining-content-fragment-models}
 
-When you first open a new model you see - a large blank space to the left, and a long list of **Data Types** at the right:
+When you first open a new model you see - a large (fairly) blank space in the middle, a long list of **Data Types** at the left, and **Properties** (empty at the start, as they are for the selected field) at the right:
 
-![Empty Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
+![Empty Model](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-empty-model.png)
 
 So - what's to be done?
 
-You can drag instances of the **Data Types** onto the left space - you are already defining your model!
+You can either:
 
-![Defining fields](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png) 
+* Drag a data type from the left panel to the required location for a field in the middle panel.
+* Select the + icon by a Data Type to add it to the bottom of the field list.
+* Select Add in the middle panel and then the required data type from the resulting drop down list to add a field to the bottom of the list.
+
+You are already defining your model!
 
 After you add a data type you are required to define the **Properties** for that field. These properties depend on the type being used. For example:
 
-![Data Properties](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png) 
-
-You can add as many fields as you need. For example:
-
-![Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-07.png)
+![Data Properties](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
 ### Your Content Authors {#your-content-authors}
 

@@ -403,6 +403,8 @@ data:
           type: selectOrigin
           originName: example-com
           # skipCache: true
+          # headers:
+          #   Authorization: ${{AUTH_TOKEN}}
     origins:
       - name: example-com
         domain: www.example.com
@@ -417,12 +419,14 @@ data:
 
 Explained in the table below is the available action.
 
-| Name      | Properties               | Meaning     |
-|-----------|--------------------------|-------------|
-|**selectOrigin** |originName|Name of one of the defined origins.|
-|     |skipCache (optional, default is false)| Flag whether to use caching for requests matching this rule. By default, responses will be cached according to the response caching header (e.g., Cache-Control or Expires) |
-|**selectAemOrigin** |originName|Name of one of the predefined AEM origins (supported value: `static`).|
-|     |skipCache (optional, default is false)| Flag whether to use caching for requests matching this rule. By default, responses will be cached according to the response caching header (e.g., Cache-Control or Expires) |
+| Name                | Properties                                 | Meaning                                                                                                                                                                                             |
+|---------------------|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **selectOrigin**    | originName                             | Name of one of the defined origins.                                                                                                                                                                 |
+|                     | skipCache (optional, default is false) | Flag whether to use caching for requests matching this rule. By default, responses will be cached according to the response caching header (e.g., Cache-Control or Expires)                         |
+|                     | headers (optional, default is `{}`)    | Key-value pairs containing additional HTTP headers to be sent to the selected backend when the rule is triggered. With keys corresponding to header names and values corresponding to header values |
+| **selectAemOrigin** | originName                             | Name of one of the predefined AEM origins (supported value: `static`).                                                                                                                              |
+|                     | skipCache (optional, default is false) | Flag whether to use caching for requests matching this rule. By default, responses will be cached according to the response caching header (e.g., Cache-Control or Expires)                         |
+|                     | headers (optional, default is `{}`)    | Key-value pairs containing additional HTTP headers to be sent to the selected backend when the rule is triggered. With keys corresponding to header names and values corresponding to header values |
 
 **Origins**
 

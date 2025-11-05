@@ -50,7 +50,11 @@ Generative AI is used throughout AEM:
 
 ## Further Information {#further-information}
 
+There are many resources available, including:
+
 * [Adobe AI Overview](https://www.adobe.com/ai/overview.html)
+
+* [Responsible AI at Adobe](https://www.adobe.com/trust/responsible-ai.html)
 
 * [Generative AI in Experience Cloud products](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
 
