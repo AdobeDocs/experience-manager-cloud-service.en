@@ -79,12 +79,13 @@ When the **[!UICONTROL When form covers entire width of a page]** option is sele
 
 ![When form covers entire width of a page option is selected and adaptive form with core components are used](/help/forms/assets/overlaycorecomponent.gif)
 
+**Case 1: Using Separate Sites Page Components**
 
 Add the **Customheaderlibs** and **Customfooterlibs** client libraries to your AEM Sites page using the deployment pipeline. To add the client libraries:
 
   1. Access and clone your [AEM Cloud Service Git Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html).
-  1. Open the AEM Cloud Service Git Repository folder in a plan text editor. For example, Microsoft&reg; Visual Code.
-  1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` file and add the following code to the file:
+  2. Open the AEM Cloud Service Git Repository folder in a plan text editor. For example, Microsoft&reg; Visual Code.
+  3. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html` file and add the following code to the file:
 
       ```
           //Customheaderlibs.html
@@ -93,7 +94,7 @@ Add the **Customheaderlibs** and **Customfooterlibs** client libraries to your A
           </sly> 
       ```
 
-  1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` file and add the following code to the file:
+  4. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customfooterlibs.html` file and add the following code to the file:
 
       ```
           //customfooterlibs.html
@@ -102,7 +103,7 @@ Add the **Customheaderlibs** and **Customfooterlibs** client libraries to your A
           </sly> 
       ```
 
-  1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` file and add the following code to the file:
+  5. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customheaderlibs.html` file and add the following code to the file:
 
       ```
           //Customheaderlibs.html
@@ -111,7 +112,7 @@ Add the **Customheaderlibs** and **Customfooterlibs** client libraries to your A
           </sly> 
       ```
 
-  1. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` file and add the following code to the file:
+  6. Open the `ui.apps\src\main\content\jcr_root\apps\[your-project]\components\xfpage\customfooterlibs.html` file and add the following code to the file:
 
       ```
           //customfooterlibs.html
@@ -120,8 +121,24 @@ Add the **Customheaderlibs** and **Customfooterlibs** client libraries to your A
           </sly> 
       ```
 
-  1. [Run the deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) to deploy the client libraries to your AEM as a Cloud Service environment. 
- 
+  7. [Run the deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) to deploy the client libraries to your AEM as a Cloud Service environment. 
+
+>[!NOTE]
+>
+> Hardcode the custom function client library only when it is required for all forms. For libraries that differ based on form type, add them through template page policies, as explained in the next section.
+
+**Case 2: Using the Same Sites Page Component**
+
+Include the runtime client libraries or custom function libraries in the page policy of the template used for creating pages with forms. 
+
+1. Open the AEM Sites page or Experience Fragment for editing. To open the page for editing, select the page, and click **[!UICONTROL Edit]**.
+2. Open the template of your Sites or Experience Fragment page. To open the template, go to the **[!UICONTROL Page Information]** ![Page Information](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Edit Template]**. It opens the corresponding template in template editor.
+3. Go to the **[!UICONTROL Page Information]** ![Page Information](/help/forms/assets/Smock_Properties_18_N.svg) section of the template and select the **[!UICONTROL Page Policy]** option. This opens the properties of the AEM Sites template, where you can define custom functions or runtime client libraries.
+4. Click the **[!UICONTROL Add]** button in the **[!UICONTROL Properties]** tab to add new custom function libraries or the runtime libraries. 
+5. Click **[Done]**.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476178?quality=12&learn=on)
+
 ### Enable Adaptive Forms – Embed(v2) for your AEM Sites page or Experience Fragment 
 
 To enable **[!UICONTROL Adaptive Forms – Embed(v2)]** component in template's policy, perform the following steps:
