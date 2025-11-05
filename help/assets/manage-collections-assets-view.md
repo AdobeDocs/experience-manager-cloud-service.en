@@ -32,6 +32,8 @@ You can perform the following tasks to manage and use collections:
 
 * [Remove assets from a collection](#remove-assets-from-collection)
 
+* [Search within collections](#search-collection)
+
 * [Create a Smart Collection](#create-smart-collection)
 
 * [Edit a Smart Collection](#edit-smart-collection)
@@ -87,6 +89,14 @@ To remove assets from a collection:
 1. Click the collection and select items that you need to remove from the collection.
 
 1. Click **[!UICONTROL Remove]**.
+
+## Search within collections {#search-collection}
+
+You can search within a collection to easily find relevant assets. To do this, go to **[!DNL Collections]** and use the search bar to enter a keyword.
+
+![Search collection](assets/search-collection.png)
+
+See more [search assets](search-assets-view.md) and [filter search results](search-assets-view.md#refine-search-results).
 
 ## Manage a Smart Collection {#manage-smart-collection}
 
