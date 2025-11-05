@@ -27,11 +27,11 @@ To search assets:
 
 ## Filter the search results {#refine-search-results}
 
+You can refine search results to find relevant assets by applying multiple filters.These filters, configured by an admin, are based on files, folders, and collections. See [Customize Search Filters](/help/using/custom-search-filters.md).
+
+![Search filters](assets/filters-panel.gif)
+
 You can filter the search results based on the following parameters.
-
-![Search filters](assets/filters1.png)
-
-*Figure: Filter searched assets based on various parameters.*
 
 * Asset Status: Filter the search results using an `Approved`, `Rejected`, or `No Status` asset status.
 
