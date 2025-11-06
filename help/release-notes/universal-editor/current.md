@@ -18,8 +18,6 @@ These are the release notes for the 6 November 2025 release of the Universal Edi
 >
 >For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
-## What's New {#what-is-new}
-
 ## Early Adoption Features {#early-adopter}
 
 If you are interested in testing these upcoming features and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 
@@ -30,3 +28,9 @@ The new ProseMirror RTE, featuring a page picker in the link dialog, is now avai
 
 ## Other Improvements {#other-improvements}
 
+* A navigation problem was fixed when a user edits the location bar in the editor the browser such that those changes are properly reflected and the editor and/or app now navigates to requested URL.
+* Field model resolution was corrected and the editor uses model from component if present.
+* The componentId is now included on the /add action.
+* The ability to delete some metadata properties that previously were not possible to remove was fixed.
+* Raw fetch is now conditionally done for xwalk when not set by the AEM plugin.
+* Content fragment MSM handling with RTE has been corrected.
