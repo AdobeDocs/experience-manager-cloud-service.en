@@ -1,6 +1,7 @@
 ---
 breadcrumb-name: Documentation
-child-repos: release-notes, id-service, core-services, marketo-measure, deliverability-learn, dynamic-media-developer-resources, dynamic-media-classic, journeys
+child-repos: release-notes, id-service, core-services, marketo-measure, deliverability-learn, 
+dynamic-media-developer-resources, dynamic-media-classic, journeys
 title: Adobe Enterprise Documentation
 description: Get up and running quickly, build on existing knowledge, and become an expert with your Adobe software by reading Adobe Enterprise Documentation. Access our guides, tutorials, playlists, and release notes for Adobe Enterprise solutions across Experience Cloud, Experience Platform, Document Cloud, and Creative Cloud for enterprise.
 type: Documentation

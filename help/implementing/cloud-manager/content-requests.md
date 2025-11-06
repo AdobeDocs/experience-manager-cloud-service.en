@@ -4,7 +4,7 @@ description: If you have purchased content request licenses from Adobe, learn ab
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Understand Cloud Service content requests
 
@@ -89,7 +89,7 @@ See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.
 | Traffic from DDOS attacks | Excluded | DDOS protection. AEM does auto-detect some of the DDOS attacks and blocks them. DDOS attacks if detected are not billable. |
 | AEM as a Cloud Service New Relic Monitoring | Excluded | AEM as a Cloud Service global monitoring. |
 | URL for customers to monitor their Cloud Service program | Excluded | Adobe recommends that you use the URL to monitor the availability or health check externally.<br><br>`/system/probes/health`|
-| AEM as a Cloud Service Pod Warm-up Service | Excluded | 
+| AEM as a Cloud Service Pod Warm-up Service | Excluded |
 Agent: skyline-service-warmup/1.*|
 | Well-known search engines, social networks, and HTTP libraries (tagged by Fastly) | Excluded | Well-known services visiting the site regularly to refresh their search index or service:<br><br>Examples:<br>&bull; AddSearchBot<br>&bull; AhrefsBot<br>&bull; Applebot<br>&bull; Ask Jeeves Corporate Spider<br>&bull; Bingbot<br>&bull; BingPreview<br>&bull; BLEXBot<br>&bull; BuiltWith<br>&bull; Bytespider<br>&bull; CrawlerKengo<br>&bull; Facebookexternalhit<br>&bull; Google AdsBot<br>&bull; Google AdsBot Mobile<br>&bull; Googlebot<br>&bull; Googlebot Mobile<br>&bull; lmspider<br>&bull; LucidWorks<br>&bull; `MJ12bot`<br>&bull; Pinterest<br>&bull; SemrushBot<br>&bull; SiteImprove<br>&bull; StashBot<br>&bull; StatusCake<br>&bull; YandexBot<br>&bull; ContentKing<br>&bull; Claudebot|
 | Exclude Commerce Integration Framework calls | Excluded | Requests made to AEM that gets forwarded to the Commerce Integration Framework&mdash;the URL starts with `/api/graphql`&mdash;to avoid double counting, they are not billable for Cloud Service.|

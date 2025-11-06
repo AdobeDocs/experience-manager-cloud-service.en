@@ -4,7 +4,7 @@ description: Learn how to apply and unapply IP Allow Lists to Cloud Manager envi
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Apply and unapply IP Allow Lists {#apply-allow-list}

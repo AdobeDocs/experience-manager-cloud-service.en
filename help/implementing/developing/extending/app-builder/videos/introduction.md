@@ -4,7 +4,7 @@ description: Learn the basics of App Builder from its business value to its arch
 version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
-role: Developer, Architect
+role: Developer
 level: Beginner
 kt: 9452, 9464, 9465, 9466
 thumbnail: 339158.jpg

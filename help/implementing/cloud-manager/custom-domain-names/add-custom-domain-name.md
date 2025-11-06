@@ -4,7 +4,7 @@ description: Learn how to add a custom domain name using Domain Settings in Clou
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Add a custom domain name {#adding-custom-domain-name}
