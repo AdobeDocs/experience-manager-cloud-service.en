@@ -4,7 +4,7 @@ description: Learn how to publish, and run an App Builder application.
 version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
-role: Developer, Architect
+role: Developer
 level: Beginner
 kt: 9462
 thumbnail: 339251.jpg

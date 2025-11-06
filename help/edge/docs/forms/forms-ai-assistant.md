@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: yes
 index: no
 hidefromtoc: yes
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Getting started with AI Assistant for AEM Forms (Forms Experience Builder)
@@ -339,4 +339,4 @@ Help us improve the AI Assistant:
 
 ## Related Resources
 
-[AEM Forms AI Assistant - Prompt Library](help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
+[AEM Forms AI Assistant - Prompt Library](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)

@@ -108,6 +108,7 @@ This capability lets you define a default activation schedule for a channel, and
    ![image](/help/screens-cloud/assets/display/Assignments3.png)
 
 This tile displays the following information:
+
 * Default priority of the channel in the display.
 * Activation start and end dates when the channel is scheduled to play.
 * Synthetic view of the recurrence (Hourly/Daily/Weekly/Monthly/Yearly and name given to that recurrence).

@@ -293,8 +293,11 @@ Execute the following steps to merge two adjacent substrings to apply uniform pa
 
 1. In the substring selector, select characters across two adjacent substrings with same formatting.
 1. Click ![merge substring](/help/assets/assets/merge.svg) to merge the substrings.
-![merge identical substrings](/help/assets/assets/merge-two-substrings.png)
-You can apply uniform parameters to the newly formed substring.
+
+   ![merge identical substrings](/help/assets/assets/merge-two-substrings.png)
+
+   You can apply uniform parameters to the newly formed substring.
+
    >[!NOTE]
    >
    >Only substrings with identical formatting can be merged.

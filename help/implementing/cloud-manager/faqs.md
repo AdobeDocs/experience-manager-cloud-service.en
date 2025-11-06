@@ -4,7 +4,7 @@ description: Find answers to the most frequently asked questions about Cloud Man
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Cloud Manager FAQs {#cloud-manager-faqs}

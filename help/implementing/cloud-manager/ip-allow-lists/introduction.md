@@ -4,7 +4,7 @@ description: Learn how IP Allow Lists can limit from which addresses users can a
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Introduction to IP Allow Lists {#introduction}

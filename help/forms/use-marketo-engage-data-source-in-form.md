@@ -103,8 +103,10 @@ The form is now configured with the data source from the connected Marketo Engag
 **Q: What happens when you change the connector of the form?**  
     **A:** If you change the connector of the form, the existing bindings become invalid.
 
-**Q: What are the three operations available in the Invoke Service of the Rule Editor for forms integrated with Marketo Engage?**  
-    **A:** The three out-of-the-box operations available in the **Invoke Service** for forms integrated with Marketo Engage are:
+**Q: What are the three operations available in the Invoke Service of the Rule Editor for forms integrated with Marketo Engage?**
+
+**A:** The three out-of-the-box operations available in the **Invoke Service** for forms integrated with Marketo Engage are:
+
 * Sync Lead
 * Get Lead by ID
 * Get Lead by Filter Type
