@@ -16,7 +16,7 @@ Learn what the Experience Production Agent's Site Migration Job is and what it c
 
 It is magic.
 
-![How the magic works](assets/magic-1.gif)
+![How the magic works](/help/ai-in-aem/agents/assets/magic-1.gif)
 
 Here are some super-cool reasons to use this agent.
 

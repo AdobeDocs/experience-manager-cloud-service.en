@@ -1047,8 +1047,8 @@ user-guide-title: AEM as a Cloud Service
   + [Overview](/help/ai-in-aem/overview.md)
   + [AEM Business Agents](/help/ai-in-aem/agents/oveview.md)
     + Experience Production Agents {#experience-production-agents}
-      + [Overview](/help/ai-in-aem/agents/experience-production/oveview.md)
-      + [Content Updater](/help/ai-in-aem/agents/experience-production/content-updater-job.md)
+      + [Overview](/help/ai-in-aem/agents/experience-production/overview.md)
+      + [Content Updater](/help/ai-in-aem/agents/experience-production/content-update-job.md)
       + [Site Migrator](/help/ai-in-aem/agents/experience-production/site-migration-job.md)
       + [Form Creation Job](/help/ai-in-aem/agents/experience-production/form-creation-job.md)
   + AI Assistant {#ai-assistant}
