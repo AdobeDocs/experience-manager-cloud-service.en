@@ -1,6 +1,6 @@
 ---
 title: Form Creation job
-description: Learn what the From Creation job is and what it can do for you.
+description: Learn what the Experience Production Agent's Form Creation job is and what it can do for you.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hidefromtoc: yes
@@ -8,9 +8,9 @@ index: no
 hide: yes
 ---
 
-# Form Creation - Experience Production Agent {#form-creation-job}
+# Form Creation Job {#form-creation-job}
 
-Learn what the Form Creation job is and what it can do for you.
+Learn what the Experience Production Agent's Form Creation job is and what it can do for you.
 
 ## Overview {#overview}
 

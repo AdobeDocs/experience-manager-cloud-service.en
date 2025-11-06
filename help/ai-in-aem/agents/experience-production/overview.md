@@ -8,11 +8,11 @@ index: no
 hide: yes
 ---
 
-# Experience Production Agent Overview {#experience-product-agent-overview}
+# Experience Production Agent Overview {#experience-production-agent}
 
 Experience Production Agent automates high effort and high-volume tasks. Empowering teams and turning manual, weeks-long processes into fast, AI-assisted workflows that keep every experience current and consistent helping the business achieve their goals.
 
-## Jobs {#experience-product-agent-jobs}
+## Jobs {#jobs}
 
 The agent provides the following jobs
 
@@ -30,13 +30,13 @@ The [Site Migration](/help/ai-in-aem/agents/experience-production/site-migration
 
 The agent should be able to work with other agent skills, examples include:
 
-## Use with other agents {#experience-product-use-other-agents}
+## Use with other agents {#use-with-other-agents}
 
 * Get source assets from the Experience Advisory Agent
 
-## Personas {#experience-product-agent-personas}
+## Personas {#personas}
 
-### Content Authors
+### Content Authors {#content-authors}
 
 Content Authors are responsible for creating, editing, and publishing digital content using AEM's authoring interface. They focus on maintaining content accuracy, brand voice, and consistency across channels.
 Primary Goals:
@@ -45,7 +45,7 @@ Primary Goals:
 * Manage media and assets effectively.
 * Ensure content aligns with marketing and brand standards.
 
-### Form Authors
+### Form Author {#form-authors}
 
 Form Authors design, configure, and maintain interactive and adaptive forms in AEM Forms to collect user data and enable digital self-service experiences.
 
@@ -55,7 +55,7 @@ Form Authors design, configure, and maintain interactive and adaptive forms in A
 * Ensure forms are accessible, responsive, and compliant.
 * Integrate forms with back-end systems or workflows for data handling.
 
-### Marketing / Business Stakeholders
+### Marketing / Business Stakeholders {#stakeholders}
 
 Marketing and Business Stakeholders define campaign goals, messaging strategies, and KPIs. They use AEM for content insights, personalization, and governance oversight rather than hands-on authoring.
 
@@ -65,7 +65,7 @@ Marketing and Business Stakeholders define campaign goals, messaging strategies,
 * Ensure brand and compliance standards are met.
 * Measure content effectiveness and campaign impact.
 
-### Developers
+### Developers {#developers}
 
 Developers extend and customize AEM's capabilities to meet organizational needs. They work on back-end (OSGi, Sling, JCR) and front-end (HTL, JS, CSS) layers to implement new components, templates, and integrations.
 

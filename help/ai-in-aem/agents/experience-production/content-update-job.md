@@ -1,6 +1,6 @@
 ---
 title: Content Update job
-description: Learn what the content migrator job is and what it can do for you.
+description: Learn what the Experience Production Agent's Content Update job is and what it can do for you.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hidefromtoc: yes
@@ -8,9 +8,9 @@ index: no
 hide: yes
 ---
 
-# Content Update - Experience Production Agent {#content-update-job}
+# Content Update Job {#content-update-job}
 
-Learn what the Content Update job is and what it can do for you.
+Learn what the Experience Production Agent's Content Update job is and what it can do for you.
 
 ## Overview {#overview}
 
