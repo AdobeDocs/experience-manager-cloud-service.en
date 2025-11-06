@@ -45,7 +45,7 @@ Define rules in the spreadsheet using the guidelines defined in this article.
 
 To support a large-scale marketing rollout, various team members across regions and brands need access to digital assets. Each persona has a specific scope based on region and brand. ABAC enforces these rules automatically via asset metadata. The following table illustrates the different type of personas for this use case and the rules that are applied:
 
-| Persona      | Role   | Role Description | Group ID | ABAC Rule | 
+| Persona      | Role   | Role Description | Group ID | ABAC Rule |
 |---------------------|----------------|-----------------|------------|------------|
 | John  | EMEA Marketing Lead | Oversees marketing execution across all brands in EMEA. Needs access to approved assets for all brands intended for EMEA markets. | group-emea-marketing | region = "EMEA" |
 | Mike  | APAC Marketing Lead | Oversees marketing execution across all brands in APAC. Needs access to approved assets for all brands intended for APAC markets. | group-apac-marketing | region = "APAC" |

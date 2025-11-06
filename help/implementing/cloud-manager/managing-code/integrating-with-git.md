@@ -4,7 +4,7 @@ description: Learn how to use Cloud Manager's git repositories and how to integr
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Use Git with Cloud Manager {#git-integration}
 
