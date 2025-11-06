@@ -1046,9 +1046,10 @@ user-guide-title: AEM as a Cloud Service
 + AI in AEM {#ai-in-aem}
   + [Overview](/help/ai-in-aem/overview.md)
   + Experience Product Agents {#experience-product-agents}
-    + [Overview](/help/ai-in-aem/agents/oveview.md)
-    + [Content Updater](/help/ai-in-aem/agents/content-updater.md)
-    + [Site Migrator](/help/ai-in-aem/agents/site-migrator.md)
+    + [Overview](/help/ai-in-aem/agents/experience-production/oveview.md)
+    + [Content Updater](/help/ai-in-aem/agents/experience-production/content-updater-job.md)
+    + [Site Migrator](/help/ai-in-aem/agents/experience-production/site-migration-job.md)
+    + [Form Creation Job](/help/ai-in-aem/agents/experience-production/form-creation-job.md)
   + AI Assistant {#ai-assistant}
     + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
     + [About AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)

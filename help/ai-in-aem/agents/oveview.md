@@ -11,4 +11,4 @@ hide: yes
 # AEM Business Agents Overview {#business-agents-overview}
 
 ## Experience Production Agent
-The [Experience Product Agent](/help/ai-in-aem/agents/experience-production-agent.md) automates high effort and high-volume tasks. Empowering teams and turning manual, weeks-long processes into fast, AI-assisted workflows that keep every experience current and consistent helping the business achieve their goals.
+The [Experience Product Agent](/help/ai-in-aem/agents/experience-production/overview.md) automates high effort and high-volume tasks. Empowering teams and turning manual, weeks-long processes into fast, AI-assisted workflows that keep every experience current and consistent helping the business achieve their goals.
