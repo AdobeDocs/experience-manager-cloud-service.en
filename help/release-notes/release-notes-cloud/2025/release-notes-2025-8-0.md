@@ -143,6 +143,7 @@ Several deprecated APIs are targeting removal on August 31st and thus should no 
 * `org.bson`
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
+
 </details>
 
 <!--

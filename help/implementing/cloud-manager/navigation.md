@@ -4,7 +4,7 @@ description: Learn how the Cloud Manager UI is organized and how to navigate to 
 exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Navigate the Cloud Manager UI {#navigation}

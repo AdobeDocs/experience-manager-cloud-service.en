@@ -4,7 +4,7 @@ description: Understand how Cloud Manager evaluates content delivery network (CD
 exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # CDN Performance dashboard {#cdn-performance}
 
