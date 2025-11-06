@@ -21,8 +21,12 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming New Features {#what-is-new}
 
-* TBD
+* The contextual menu in the panel header and right-rail have been improved.
+* json schemas are now delivered for validation.
+* Developer AEM login is now a core part of the Universal Editor and the extension is no longer needed. 
 
 ## Upcoming Improvements {#other-improvements}
 
-* TBD
+* How the structure tree auto-expands by default has been adjusted.
+* A specific width for the for the contextual menu was added.
+* Failures of the Universal Editor Service due to certain `null` values was fixed.

@@ -28,9 +28,12 @@ The new ProseMirror RTE, featuring a page picker in the link dialog, is now avai
 
 ## Other Improvements {#other-improvements}
 
+* `og:title` metadata fields can now be deleted properly.
 * A navigation problem was fixed when a user edits the location bar in the editor the browser such that those changes are properly reflected and the editor and/or app now navigates to requested URL.
 * Field model resolution was corrected and the editor uses model from component if present.
 * The componentId is now included on the /add action.
 * The ability to delete some metadata properties that previously were not possible to remove was fixed.
 * Raw fetch is now conditionally done for xwalk when not set by the AEM plugin.
 * Content fragment MSM handling with RTE has been corrected.
+* Image highlighting in a picture is now supported.
+
