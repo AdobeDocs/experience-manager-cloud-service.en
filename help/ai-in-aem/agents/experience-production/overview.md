@@ -16,18 +16,22 @@ Experience Production Agent automates high effort and high-volume tasks. Empower
 
 The agent provides the following jobs
 
-### Content Update
+### Content Update {#content-update}
+
 The [Content Update](/help/ai-in-aem/agents/experience-production/content-update-job.md) updates existing content across the CMS — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description as well as PDFs or screenshots.
 
-### Form Creation
+### Form Creation {#form-creation}
+
 The [Form Creation](/help/ai-in-aem/agents/experience-production/form-creation-job.md) generates new forms and communication documents from scratch or modernize legacy assets by importing PDF and XDP Forms, or images — all without dependency on development or IT teams. The agent accelerates form production while ensuring brand and compliance standards are maintained.
 
-### Site Migration
+### Site Migration {#site-migration}
+
 The [Site Migration](/help/ai-in-aem/agents/experience-production/site-migration-job.md) seamlessly migrate non-AEM sites into AEM (Experience Delivery Services) environments, ensuring they are performant, compliant, and agent-ready. The agent streamlines setup and transformation, reducing manual effort and time to value.
 
 The agent should be able to work with other agent skills, examples include:
 
 ## Use with other agents {#experience-product-use-other-agents}
+
 * Get source assets from the Experience Advisory Agent
 
 ## Personas {#experience-product-agent-personas}
@@ -37,9 +41,9 @@ The agent should be able to work with other agent skills, examples include:
 Content Authors are responsible for creating, editing, and publishing digital content using AEM's authoring interface. They focus on maintaining content accuracy, brand voice, and consistency across channels.
 Primary Goals:
 
-*    Quickly build and update pages using predefined components and templates.
-*    Manage media and assets effectively.
-*    Ensure content aligns with marketing and brand standards.
+* Quickly build and update pages using predefined components and templates.
+* Manage media and assets effectively.
+* Ensure content aligns with marketing and brand standards.
 
 ### Form Authors
 
@@ -47,9 +51,9 @@ Form Authors design, configure, and maintain interactive and adaptive forms in A
 
 **Primary Goals**
 
-*    Build and manage adaptive forms without heavy coding.
-*    Ensure forms are accessible, responsive, and compliant.
-*    Integrate forms with back-end systems or workflows for data handling.
+* Build and manage adaptive forms without heavy coding.
+* Ensure forms are accessible, responsive, and compliant.
+* Integrate forms with back-end systems or workflows for data handling.
 
 ### Marketing / Business Stakeholders
 
@@ -57,9 +61,9 @@ Marketing and Business Stakeholders define campaign goals, messaging strategies,
 
 **Primary Goals**
 
-*    Deliver consistent, personalized experiences across channels.
-*    Ensure brand and compliance standards are met.
-*    Measure content effectiveness and campaign impact.
+* Deliver consistent, personalized experiences across channels.
+* Ensure brand and compliance standards are met.
+* Measure content effectiveness and campaign impact.
 
 ### Developers
 
@@ -67,7 +71,6 @@ Developers extend and customize AEM's capabilities to meet organizational needs.
 
 **Primary Goals**
 
-*    Build and maintain scalable, performant AEM implementations.
-*    Enable authors with flexible, reusable components.
-*    Integrate AEM with other systems (CRM, commerce, analytics
-
+* Build and maintain scalable, performant AEM implementations.
+* Enable authors with flexible, reusable components.
+* Integrate AEM with other systems (CRM, commerce, analytics
