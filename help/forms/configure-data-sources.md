@@ -18,7 +18,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 
 [!DNL Experience Manager Forms] Data Integration lets you configure and connect to disparate data sources. The following types are supported out-of-the-box:
 
-* Relational databases - MySQL, [!DNL Microsoft® SQL Server], [!DNL IBM® DB2®], postgreSQL, and [!DNL Oracle RDBMS] 
+* Relational databases - MySQL, [!DNL Microsoft&reg; SQL Server], [!DNL IBM&reg; DB2&reg;], postgreSQL, and [!DNL Oracle RDBMS] 
 * RESTful web services  
 * SOAP-based web services
 * OData services (Version 4.0)
@@ -33,6 +33,7 @@ Data integration supports OAuth2.0([Authorization Code](https://oauth.net/2/gran
 ### Prerequisites
 
 Before configuring relational databases using [!DNL Experience Manager] Web Console Configuration, it is mandatory to:
+
 * [Enable advanced networking through the cloud manager API](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html), as ports are disabled by default.  
 * [Add JDBC driver dependencies in Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
 
@@ -52,7 +53,7 @@ You can configure relational databases using [!DNL Experience Manager] Web Conso
     * JDBC connection URI
     * Username and password to establish connection with the JDBC driver
     * Specify a SQL SELECT query in the **[!UICONTROL Validation Query]** field to validate connections from the pool. The query must return at least one row. Based on your database, specify one of the following:
-      * SELECT 1 (MySQL and MS® SQL) 
+      * SELECT 1 (MySQL and MS&reg; SQL) 
       * SELECT 1 from dual (Oracle)
     * Name of the data source
 
@@ -167,6 +168,7 @@ RESTful web services can be described using [Swagger specifications](https://swa
 1. Select **[!UICONTROL Create]** to create the cloud configuration for the RESTful service.
 
 Some of the operations not supported by RESTful services Open API Specification version 3.0  are:
+
 * Callbacks
 * oneof/anyof
 * Remote reference
@@ -289,7 +291,7 @@ An OData service is identified by its service root URL. To configure an OData se
 >[!NOTE]
 >
 > Form data model (FDM) supports [OData version 4](https://www.odata.org/documentation/).
->For a step-by-step guide to configure [!DNL Microsoft®&reg; Dynamics 365], online or on-premises, see [[!DNL Microsoft&reg; Dynamics] OData Configuration](ms-dynamics-odata-configuration.md).
+>For a step-by-step guide to configure [!DNL Microsoft&reg;&reg; Dynamics 365], online or on-premises, see [[!DNL Microsoft&reg; Dynamics] OData Configuration](ms-dynamics-odata-configuration.md).
 
 1. Go to **[!UICONTROL Tools > Cloud Services > Data Sources]**. Select to select the folder where you want to create a cloud configuration.
 
@@ -305,24 +307,24 @@ An OData service is identified by its service root URL. To configure an OData se
 
    >[!NOTE]
    >
-   >Select the OAuth 2.0 authentication type to connect with [!DNL Microsoft®&reg; Dynamics] services using the OData endpoint as the service root.
+   >Select the OAuth 2.0 authentication type to connect with [!DNL Microsoft&reg;&reg; Dynamics] services using the OData endpoint as the service root.
 
 1. Select **[!UICONTROL Create]** to create the cloud configuration for the OData service.
 
 <!--
-## Configure Microsoft® SharePoint List {#config-sharepoint-list}
+## Configure Microsoft&reg; SharePoint List {#config-sharepoint-list}
 
 <span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
-To save data in a tabular form use, Microsoft® SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
+To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 
-1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.   
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft&reg; SharePoint]**.   
 1. Select a **Configuration Container**. The configuration is stored in the selected Configuration Container. 
 1. Click **[!UICONTROL Create]** > **[!UICONTROL SharePoint List]** from the drop-down list. The SharePoint configuration wizard appears.  
 1. Specify the **[!UICONTROL Title]**, **[!UICONTROL Client ID]**, **[!UICONTROL Client Secret]** and **[!UICONTROL OAuth URL]**. For information on how to retrieve Client ID, Client Secret, Tenant ID for OAuth URL, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
     * You can retrieve the `Client ID` and `Client Secret` of your app from the Microsoft&reg; Azure portal.
     * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
-    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft® Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
+    * Add the API permissions `offline_access` and `Sites.Manage.All` in the **Microsoft&reg; Graph** tab to provide read/write permissions. Add `AllSites.Manage` permission in the **Sharepoint** tab to interact remotely with SharePoint data.
     * Use OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
 
       >[!NOTE]
@@ -331,7 +333,7 @@ To save data in a tabular form use, Microsoft® SharePoint List. To configure a 
 
 1. Click **[!UICONTROL Connect]**. On a successful connection, the `Connection Successful` message appears.
 1. Select **[!UICONTROL SharePoint Site]** and **[!UICONTROL SharePoint List]** from the drop-down list.
-1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft® SharePointList.
+1. Select **[!UICONTROL Create]** to create the cloud configuration for the Microsoft&reg; SharePointList.
 
 -->
 

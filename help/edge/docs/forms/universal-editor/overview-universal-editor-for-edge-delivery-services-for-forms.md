@@ -2,7 +2,7 @@
 title: Universal Editor for Edge Delivery Services for Forms 
 description: Use Universal Editor for Edge Delivery Services for Forms to create Adaptive Forms.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
 ---
 

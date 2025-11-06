@@ -7,6 +7,11 @@ role: Admin,User
 
 # Enhancing content discovery with AI-Generated metadata {#ai-smart-tags}
 
+| UIs | Article link |
+| -------- | ---------------------------- |
+| Assets View  |    [Click here](/help/assets/ai-generated-metadata-assets-view.md)                  |
+| Admin View     | This article         |
+
 Instead of relying on manual input, AI automatically assigns descriptive tags to digital assets. These AI-generated tags enhance metadata quality, making the assets easier to search, categorize, and recommend. This approach not only improves efficiency by eliminating manual tagging but also ensures consistency and scalability across large volumes of digital content. For example, if the asset is an image, AI can identify objects, scenes, emotions, or even brand logos within it and generate relevant tags such as "sunset," "beach," "vacation," or "smiling." AI-generated content can enhance the search for assets by leveraging both semantic and lexical search techniques. See more [Search Assets](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
   ![Enhanced smart tags](assets/enhanced-smart-tags1.png)

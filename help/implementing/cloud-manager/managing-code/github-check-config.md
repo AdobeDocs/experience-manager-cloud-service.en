@@ -3,7 +3,7 @@ title: Pull Request Checks for Private Repositories
 description: Learn how to control the pipelines that are created automatically to validate each pull request to a private repository.
 exl-id: 3ae3c19e-2621-4073-ae17-32663ccf9e7b
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Pull request checks for private repositories {#github-check-config}
 

@@ -47,6 +47,7 @@ To know which groups each user should belong to, you can make use of the User Re
 Creation of an Assets Collection or Private Folder also automatically creates some groups to manage access to that Assets content.  These groups are migrated if they are mentioned on the migrated content, but they are not configured to link to IMS groups directly; in AEM they remain "local groups", and they cannot be managed via IMS.
 
 Since these groups are not in IMS, the bulk upload tool cannot be used to create users as their direct members.  IMS users which are also in AEM can be added to these groups individually, but doing this in bulk requires an extra step.  Here is one way this can be done:
+
 * Create a new group or groups in Admin Console/IMS for access to collections/private folders and configure them for AEM.
 * Log in as a member of the group(s) so the group(s) are created in AEM.
 * For the migrated collections or private folders, use the Assets UI to add the new group as editor/owner/viewer.

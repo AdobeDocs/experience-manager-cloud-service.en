@@ -5,7 +5,7 @@ index: yes
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Cloud Manager CI/CD Pipelines {#intro-cicd}

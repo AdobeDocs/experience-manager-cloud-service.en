@@ -4,7 +4,7 @@ description: Cloud Manager's UI lets you add a custom domain to identify your si
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Introduction to custom domain names {#introduction}
