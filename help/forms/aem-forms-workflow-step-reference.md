@@ -171,6 +171,7 @@ The convert to PDF/A step has the following properties:
 **[!UICONTROL Input Document]**: The input document can be relative to the payload, have an absolute path, can be provided as a payload or stored in a variable of Document data type.
 
 **[!UICONTROL Conversion Options]**: Using this property, the settings for converting PDF documents to PDF/A documents are specified. Various options available under this tab are:
+
 * **[!UICONTROL Compliance]**: Specifies the standard to which the output PDF/A document must comply. It supports different PDF standards such as PDF/A-1b, PDF/A-2b, or PDF/A-3b.
 * **[!UICONTROL Result Level]**: Specifies the result level as PassFail, Summary, or Detailed, for the conversion output.
 * **[!UICONTROL Color Space]**: Specifies the predefined color space as S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED or SWOP, that can be used for output PDF/A files. 
@@ -249,11 +250,13 @@ Document Description XML (DDX) is a declarative markup language whose elements r
 Invoke DDX step has the following properties: 
 
 **[!UICONTROL Input Documents]**: Used to set properties of an input document. Various options available under this tab are:
+
 * **[!UICONTROL Specify DDX Using]**: Specifies the input document relative to the payload, have an absolute path, can be provided as payload, or stored in a variable of Document data type.
 * **[!UICONTROL Create Map from Payload]**: Add all the documents under the payload folder to Input Document's Map for the invoke API in Assembler. The node name for each document is used as a key in the map.
 * **[!UICONTROL Input Document's Map]**: Option is used to add multiple entries using the **[!UICONTROL ADD]** button. Each entry represents the document's key in the map and the document's source.
 
 **[!UICONTROL Environment Options]**: This option is used to set processing settings for invoke API. Various options available under this tab are:
+
 * **[!UICONTROL Validate Only]**: Checks the validity of the input DDX document.
 * **[!UICONTROL Fail on Error]**: Boolean value to indicate whether the invoke API service fails, if there is an error or not. By default, its value is set to False.
 * **[!UICONTROL First Bates Number]**: Specifies the number, which is self-incrementing. This self-incrementing number is displayed on each consecutive page automatically.  
@@ -264,6 +267,7 @@ Invoke DDX step has the following properties:
 >Environment options are kept in sync with HTTP APIs.
 
 **[!UICONTROL Output Documents]**: Specifies the location to save the output file. Various options available under this tab are:
+
 * **[!UICONTROL Save Output in Payload]**: Saves output documents under the payload folder, or overwrites the payload, in case, the payload is a file.
 * **[!UICONTROL Output Document's Map]**: Specifies the location to save each document file explicitly, by adding one entry per document. Each entry represents the document and the location, where to save it. If there are multiple output documents, this option is used.   
 
@@ -534,7 +538,7 @@ The Generate Printed Output step has the following properties:
   * **[!UICONTROL IPL 400 DPI]**: Use IPL 400 DPI. The ipl400.xdc file is used.
   * **[!UICONTROL TPCL 600 DPI]**: Use TPCL 600 DPI. The tpcl600.xdc file is used.
   * **[!UICONTROL PostScript Plain]**: Use the option to specify a plain text XDC file for PostScript.
-   * **[!UICONTROL DPL300DPI]**: Use DPL 300 DPI. The dpl300.xdc is used.
+  * **[!UICONTROL DPL300DPI]**: Use DPL 300 DPI. The dpl300.xdc is used.
   * **[!UICONTROL DPL400DPI]**: Use DPL 400 DPI. The dpl400.xdc is used.
   * **[!UICONTROL DPL600DPI]**: Use DPL 600 DPI. The dpl600.xdc is used.
   * **[!UICONTROL HP_PCL_5e]**: Use the option to support multiple Canon devices. 

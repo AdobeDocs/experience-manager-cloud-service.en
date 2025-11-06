@@ -237,9 +237,11 @@ You can perform various editing tasks on Image Sets such as the following:
     * To reorder assets, drag an image to a new location (select the reorder icon to move items).
     * To sort items in ascending or descending order, click the column heading.
     * To add an asset or update an existing asset, click the **[!UICONTROL Add Asset]**. Navigate to an asset, select it, then select **[!UICONTROL Select]** near the upper-right corner of the page.
-        >[!NOTE]
-        >
-        >If you delete the image that Experience Manager uses for the thumbnail by replacing it with another image, the original asset still displays.
+
+      >[!NOTE]
+      >
+      >If you delete the image that Experience Manager uses for the thumbnail by replacing it with another image, the original asset still displays.
+      
     * To delete an asset, select it and select **[!UICONTROL Delete Asset]**.
     * To apply a preset, near the upper-right corner of the page, select **[!UICONTROL Preset]**, then select a viewer preset.
     * To add or change a thumbnail, select the thumbnail icon next to the right of the asset. Navigate to the new thumbnail or swatch asset, select it, then select **[!UICONTROL Select]**.

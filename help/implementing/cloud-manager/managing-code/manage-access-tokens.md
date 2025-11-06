@@ -2,7 +2,7 @@
 title: Manage Access Tokens of External Repositories in Cloud Manager
 description: Learn how to view, edit, and delete access tokens used for Bring Your Own Git in AEM Cloud Manager.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
 ---
 # Manage access tokens for external repositories {#manage-access-tokens}

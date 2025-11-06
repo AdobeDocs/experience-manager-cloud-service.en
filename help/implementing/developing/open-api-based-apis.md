@@ -2,7 +2,7 @@
 title: OpenAPI-Based APIs
 description: Learn about AEM as a Cloud Service support for OpenAPI-based APIs
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 4aeafba9-8f9e-4ecb-9e37-8d048b0474cc
 ---
 # OpenAPI-Based APIs {#openapi-based-apis}

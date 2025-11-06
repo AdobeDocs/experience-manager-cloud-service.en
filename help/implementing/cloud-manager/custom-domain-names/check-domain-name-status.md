@@ -4,7 +4,7 @@ description: Learn how to verify that Cloud Manager has successfully confirmed y
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Check domain name status {#check-status}

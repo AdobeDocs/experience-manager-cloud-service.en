@@ -4,7 +4,7 @@ description: Learn about various asset management and editing methods
 contentOwner: AG
 mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
-role: User, Architect, Admin
+role: User, Developer, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 ---
 # Manage assets {#manage-assets}
@@ -53,10 +53,10 @@ To extract the ZIP files, perform the following steps:
 
    ![zip extraction](assets/zip-extraction.png)
 
->[!NOTE]
->
->* The maximum supported ZIP file size is 15 GB.
->* You can extract a maximum of three ZIP files at one time. 
+   >[!NOTE]
+   >
+   >* The maximum supported ZIP file size is 15 GB.
+   >* You can extract a maximum of three ZIP files at one time. 
 
 ## Preview assets {#previewing-assets}
 
@@ -64,7 +64,6 @@ To preview an asset, follow these steps.
 
 1. From the Assets user interface, navigate to the location of the asset you want to preview.
 1. Select the desired asset to open it.
-
 1. In the preview mode, zoom options are available for [supported Image types](/help/assets/file-format-support.md) (with interactive editing).
 
    To zoom into an asset, select `+` (or select the magnifying glass on the asset). To zoom out, select `-`. When you zoom in, you can look closely at any area of the image by panning. The reset zoom arrow brings you back to the original view.
@@ -74,7 +73,6 @@ To preview an asset, follow these steps.
 ## Edit properties {#editing-properties}
 
 1. Navigate to the location of the asset whose metadata you want to edit.
-
 1. Select the asset, and select **[!UICONTROL Properties]** from the toolbar to view asset properties. Alternatively, choose the **[!UICONTROL Properties]** quick action on the asset card.
 
    ![properties_quickaction](assets/properties_quickaction.png)
@@ -91,7 +89,7 @@ To preview an asset, follow these steps.
 
 1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. The deactivation date should be later than the activation date for an asset. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the Assets web interface or through the HTTP API.
 
-   <!--![chlimage_1-218](assets/chlimage_1-218.png)
+   <!--![chlimage_1-218](assets/chlimage_1-218.png)-->
 
 1. In the **[!UICONTROL Tags]** field, select one or more tags. To add a custom tag, type the name of the tag in the box and select the `Enter` key. The new tag is saved in [!DNL Experience Manager].
 
@@ -99,10 +97,9 @@ To preview an asset, follow these steps.
 
    >[!NOTE]
    >
-   > To create tags, you must have write permission at `/content/cq:tags/default` path in the CRX repository.
+   >To create tags, you must have write permission at `/content/cq:tags/default` path in the CRX repository.
 
 1. Select **[!UICONTROL Save & Close]**.
-
 1. Navigate to the Assets user interface. The edited metadata properties, including title, description, and tags are displayed on the asset card in Card view and under relevant columns in the List view.
 
 <!-- TBD: Uncomment after verification for Dec release.

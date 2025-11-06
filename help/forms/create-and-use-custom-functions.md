@@ -25,6 +25,7 @@ AEM Forms supports custom functions, allowing users to define JavaScript functio
 ## Uses of custom functions {#uses-of-custom-function}
 
 Advantages of using custom functions in Adaptive Forms are:
+
 * **Processing of data**: Custom functions help process data entered into the forms fields.
 * **Validation of data**: Custom functions enable you to perform custom checks on form inputs and provide specified error messages.
 * **Dynamic behavior**: Custom functions allow you to control the dynamic behavior of your forms based on specific conditions. For example, you can show/hide fields, modify field values, or adjust form logic dynamically.

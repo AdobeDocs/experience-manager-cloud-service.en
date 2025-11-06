@@ -4,7 +4,7 @@ description: Discover how Experience Audit validates your deployment process, en
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Experience Audit dashboard {#experience-audit-dashboard}

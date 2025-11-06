@@ -4,7 +4,7 @@ description: Learn how to determine whether your DNS settings are properly resol
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Check DNS record status {#check-dns-record-status}
