@@ -1,5 +1,5 @@
 ---
-title: Experience Product Agent Overview
+title: Experience Production Agent Overview
 description: Learn what agents are available in AEM to accelerate your content creation and automatically orchestrate changes.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
@@ -8,7 +8,7 @@ index: no
 hide: yes
 ---
 
-# Experience Product Agent Overview {#experience-product-agent-overview}
+# Experience Production Agent Overview {#experience-product-agent-overview}
 
 Experience Production Agent automates high effort and high-volume tasks. Empowering teams and turning manual, weeks-long processes into fast, AI-assisted workflows that keep every experience current and consistent helping the business achieve their goals.
 
