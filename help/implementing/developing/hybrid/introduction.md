@@ -3,7 +3,7 @@ title: SPA Introduction and Walkthrough
 description: This article introduces the concepts of a SPA and walks through using a basic SPA application for authoring, showing how it relates to the underlying AEM SPA Editor.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: no
 ---
 
@@ -88,10 +88,12 @@ By rendering on the client side, page elements react faster, and interactions wi
 >[!TIP]
 >
 >For technical details on how SPAs work in AEM, see the articles:
+>
 >* [Getting Started with SPAs in AEM Using React](getting-started-react.md)
 >* [Getting Started with SPAs in AEM Using Angular](getting-started-angular.md)
 >
 >For a closer look at the design, architecture, and technical workflow of the SPA Editor, see the article:
+>
 >* [SPA Editor Overview](editor-overview.md).
 
 ## Content Editing Experience with SPA {#content-editing-experience-with-spa}

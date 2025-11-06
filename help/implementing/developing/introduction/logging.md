@@ -3,7 +3,7 @@ title: Logging for AEM as a Cloud Service
 description: Learn how to use Logging for AEM as a Cloud Service to configure global parameters for the central logging service, specific settings for the individual services or how to request data logging.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Logging for AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
@@ -152,6 +152,7 @@ Configure java logging for custom Java packages via OSGi configurations for the 
 Changing other LogManager OSGi configuration properties may result in availability issues in AEM as a Cloud Service.
 
 As noted in a previous section, to ensure effective monitoring of customer environments:
+
 * The log level of AEM's default log configuration (Apache Sling Logging Configuration) must not be modified from its default value of "INFO".
 * It is acceptable to set the log levels to DEBUG for individual packages of product code (using instances of the "Apache Sling Logging Logger configuration" OSGi configuration factory), but use it sparingly to prevent performance degradation and restore back to INFO when it is no longer needed.
 * It is acceptable to adjust log levels for customer-developed code.
@@ -159,8 +160,10 @@ As noted in a previous section, to ensure effective monitoring of customer envir
 * Log output must remain directed to the default file "logs/error.log".
 
 To that end, changes must not be made to the following OSGi properties:
+
 * **Apache Sling Log Configuration** (PID: `org.apache.sling.commons.log.LogManager`) — *all properties*
 * **Apache Sling Logging Logger Configuration** (Factory PID: `org.apache.sling.commons.log.LogManager.factory.config`):
+
   * `org.apache.sling.commons.log.file`
   * `org.apache.sling.commons.log.pattern`
 

@@ -2,7 +2,7 @@
 title: Add an Edge Delivery Site to Cloud Manager
 description: Learn how to add an Edge Delivery site to your production program or sandbox program.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 ---
 # Add an Edge Delivery site to Cloud Manager {#adding}
