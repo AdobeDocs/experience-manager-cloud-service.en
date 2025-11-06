@@ -216,6 +216,7 @@ A value of "\N" in an column for an individual finding indicates that no data wa
 The BPA provides an HTTP interface that may be used as an alternative to its user interface within AEM. The interface supports both HEAD and GET commands. It may be used to generate the BPA report and return it in one of three formats: JSON, CSV, and tab-separated values (TSV).
 
 The following URLs are available for HTTP access, where `<host>` is the hostname, and port if necessary, of the server on which the BPA is installed:
+
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` for JSON format
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv` for CSV format
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` for TSV format

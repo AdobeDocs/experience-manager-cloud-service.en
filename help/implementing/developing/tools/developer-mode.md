@@ -5,7 +5,7 @@ description: Developer mode opens a side panel with several tabs that provide a 
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Developer Mode {#developer-mode}
 
@@ -25,8 +25,7 @@ These help a developer to:
 >
 >Developer mode:
 >
->* Is not available on mobile devices or small windows on desktop (due to space restrictions).
->  * This occurs when the width is less than 1024px.  
+>* Is not available on mobile devices or small windows on desktop (due to space restrictions). This occurs when the width is less than 1024px.  
 >* Is only available to users who are members of the `administrators` group.
 
 ## Opening Developer Mode {#opening-developer-mode}

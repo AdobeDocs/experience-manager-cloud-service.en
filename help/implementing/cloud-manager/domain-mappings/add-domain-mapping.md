@@ -3,7 +3,7 @@ title: Add a Domain Mapping
 description: Learn about how to add a domain mapping for an Edge Delivery site or a Cloud Manager environment.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
 ---
 
