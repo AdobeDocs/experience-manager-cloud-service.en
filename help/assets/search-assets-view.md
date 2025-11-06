@@ -27,7 +27,7 @@ To search assets:
 
 ## Filter the search results {#refine-search-results}
 
-You can refine search results to find relevant assets by applying multiple filters.These filters, configured by an admin, are based on files, folders, and collections. See [Customize Search Filters](/help/using/custom-search-filters.md).
+You can refine search results to find relevant assets by applying multiple filters.These filters, configured by an admin, are based on files, folders, and collections. See [Customize Search Filters](custom-search-filters.md).
 
 ![Search filters](assets/filters-panel.gif)
 
