@@ -4,7 +4,7 @@ description: Learn how to use Cloud Manager to view, update, replace, and delete
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Manage custom domain names {#managing-custom-domain-names}
