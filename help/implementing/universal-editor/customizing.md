@@ -3,7 +3,7 @@ title: Customizing the Universal Editor
 description: Learn about the different options to customize the Universal Editor to support the needs of your content authors.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Customizing the Universal Editor {#customizing}

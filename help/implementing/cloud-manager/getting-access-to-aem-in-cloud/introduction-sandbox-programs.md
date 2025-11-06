@@ -4,7 +4,7 @@ description: Learn what sandbox programs are and how they differ from production
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Introduction to sandbox programs {#sandbox-programs}

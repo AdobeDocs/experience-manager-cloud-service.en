@@ -4,7 +4,7 @@ description: Learn the basics of creating your first AI-powered form with Forms 
 hide: yes
 index: no
 hidefromtoc: yes
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: c4f838bc-a001-48e7-afaa-c2ff9034f5d4
 ---
 # Getting started with Forms Experience Builder {#getting-started-forms-experience-builder}

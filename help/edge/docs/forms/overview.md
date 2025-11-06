@@ -3,7 +3,7 @@ title: Edge Delivery Services for AEM Forms Overview
 description: Create and deliver high-performing forms on Adobe Experience Manager Edge Delivery Services, with an emphasis on the Universal Editor authoring approach.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Edge Delivery Services for AEM Forms
