@@ -545,7 +545,7 @@ The below video shows the finished component and how it can be added to a Sequen
 
 ## Finished Code {#finished-code}
 
-Below is the finished code from the tutorial. The **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** and **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip** are the compiled AEM packages. The **SRC-screens-weretail-run-0.0.1.zip **is the uncompiled source code that can be deployed using Maven.
+Below is the finished code from the tutorial. The **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip** and **screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip** are the compiled AEM packages. The **SRC-screens-weretail-run-0.0.1.zip** is the uncompiled source code that can be deployed using Maven.
 
 [Get File](/help/screens-cloud/developing/assets/screens-weretail-runuiapps-001-snapshot.zip)
 

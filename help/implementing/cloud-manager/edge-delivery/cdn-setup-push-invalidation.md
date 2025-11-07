@@ -3,7 +3,7 @@ title: Setup Push Invalidation for an Edge Delivery site
 description: Discover how to configure push invalidation for an Edge Delivery site to ensure efficient content updates and caching control.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
 ---
 # Setup push invalidation 

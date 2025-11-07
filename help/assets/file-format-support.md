@@ -238,7 +238,7 @@ The document formats supported for asset management features are as follows.
 | PNG | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | [Image](/help/assets/dynamic-media/image-sets.md), [Mixed Media](/help/assets/dynamic-media/mixed-media-sets.md), and [Spin](/help/assets/dynamic-media/spin-sets.md) |
 | PSD &Dagger; | &#10003;| &minus; | &minus; | &minus; | &minus; | &minus; |
 | TIFF | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | [Image](/help/assets/dynamic-media/image-sets.md), [Mixed Media](/help/assets/dynamic-media/mixed-media-sets.md), and [Spin](/help/assets/dynamic-media/spin-sets.md) |
-| WEBP | &minus; | &minus; | &minus; | &#10003; | &minus; | &minus; | 
+| WEBP | &minus; | &minus; | &minus; | &#10003; | &minus; | &minus; |
 
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 

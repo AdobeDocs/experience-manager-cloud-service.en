@@ -14,6 +14,7 @@ role: User, Developer
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is a program commonly used in online transactions to distinguish between humans and automated programs or bots. It poses a challenge and evaluates user response to determine if it's a human or a bot interacting with the site. It prevents the user to proceed if the test fails and helps make online transactions secure by keeping bots from posting spam or malicious purposes.
 
 AEM Forms as a Cloud Service supports the following CAPTCHA solutions: 
+
 * [hCaptcha](#integrate-aem-forms-environment-with-hcaptcha-captcha) 
 * [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
 * [hCaptcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)  

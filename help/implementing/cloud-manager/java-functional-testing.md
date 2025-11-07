@@ -4,8 +4,9 @@ description: Learn how to write Java &trade; functional tests for AEM as a Cloud
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
+
 # Java&trade; Functional Testing
 
 Learn how to write Java&trade; functional tests for AEM as a Cloud Service
@@ -96,17 +97,12 @@ See [`aem-testing-clients` GitHub repo](https://github.com/adobe/aem-testing-cli
 
 1. The containerized infrastructure that is scoped for functional testing is limited by the following boundaries:
 
-
 | Type                 | Value | Description                                                        |
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU                  | 0.5   | Amount of CPU-time reserved per test execution                     |
 | Memory               | 0.5 Gi | Amount of memory allocated to the test, value in gibibytes        |
 | Timeout              | 30 m   | The time limit after which the test stops.                |
 | Recommended Duration | 15 m   | Adobe recommends writing the tests not to take longer than this time. |
-
->[!NOTE]
->
-> Should you need more resources, create a Customer Care case, and describe your use-case. Adobe's team reviews your request and provides appropriate assistance.
 
 #### Dependencies
 
@@ -142,16 +138,14 @@ The system properties are as follows.
 | Property                            | Description                                                      | Example                 |
 |-------------------------------------|------------------------------------------------------------------|-------------------------|
 | `sling.it.instances`                | Number of instances, to match cloud service should be set to `2`. | `2`                     |
-| `sling.it.instance.url.1`           | Set to author URL.                                  | `http://localhost:4502` | 
-| `sling.it.instance.runmode.1`       | Run mode of the first instance. Set to `author`.         | `author`                | 
-| `sling.it.instance.adminUser.1`     | Set to author admin user.                          | `admin`                 | 
-| `sling.it.instance.adminPassword.1` | Set to author admin password.                      |                         | 
+| `sling.it.instance.url.1`           | Set to author URL.                                  | `http://localhost:4502` |
+| `sling.it.instance.runmode.1`       | Run mode of the first instance. Set to `author`.         | `author`                |
+| `sling.it.instance.adminUser.1`     | Set to author admin user.                          | `admin`                 |
+| `sling.it.instance.adminPassword.1` | Set to author admin password.                      |                         |
 | `sling.it.instance.url.2`           | set to publish URL.                                 | `http://localhost:4503` |
-| `sling.it.instance.runmode.2`       | Run mode of the second instance. Set to `publish`.       | `publish`            | 
-| `sling.it.instance.adminUser.2`     | Set to publish admin user.                         | `admin`                 | 
-| `sling.it.instance.adminPassword.2` | Set to publish admin password.                     |                         | 
-
-
+| `sling.it.instance.runmode.2`       | Run mode of the second instance. Set to `publish`.       | `publish`            |
+| `sling.it.instance.adminUser.2`     | Set to publish admin user.                         | `admin`                 |
+| `sling.it.instance.adminPassword.2` | Set to publish admin password.                     |                         |
 
 #### Running All Tests Using Maven {#using-maven}
 
@@ -168,4 +162,3 @@ mvn verify -Plocal \
     -Dit.publish.user=<user> \
     -Dit.publish.password=<password>
 ```
-

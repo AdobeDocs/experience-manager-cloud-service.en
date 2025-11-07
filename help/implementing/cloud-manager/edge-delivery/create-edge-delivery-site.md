@@ -2,7 +2,7 @@
 title: Create your First Edge Delivery Site with One Click
 description: Learn how to create an Edge Delivery site quickly in Cloud Manager with the click of a button.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
 ---
 # Create your first Edge Delivery site with one click{#about-one-click-edge-delivery-site}

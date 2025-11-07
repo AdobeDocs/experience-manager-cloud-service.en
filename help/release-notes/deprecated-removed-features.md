@@ -458,14 +458,14 @@ Properties for the following OSGi component PIDs cannot be modified, therefore t
 | **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | all |
 | **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | all |
 | **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | all |
-| **`org.apache.sling.feature.apiregions.impl`** | all | 
+| **`org.apache.sling.feature.apiregions.impl`** | all |
 | **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | all |
 | **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | all |
-| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | all | 
-| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | all | 
-| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | all | 
-| **`org.apache.sling.feature.apiregions.factory`** | all | 
-| **`com.adobe.granite.toggle.monitor.systemproperty`** | all | 
+| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | all |
+| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | all |
+| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | all |
+| **`org.apache.sling.feature.apiregions.factory`** | all |
+| **`com.adobe.granite.toggle.monitor.systemproperty`** | all |
 
 
 ### Future enforced OSGi property restrictions {#future-restrictions-osgi-properties}
@@ -486,7 +486,7 @@ In the future, Adobe will enforce the following OSGi properties restrictions. Fo
 |   |  `oauth.flow` |   |  boolean |   |
 |  `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` |  Yes | string  | either "INFO", "DEBUG" or "TRACE"  |
 |   |  `org.apache.sling.commons.log.names` |   | array of strings  |   |
-|   |  `org.apache.sling.commons.log.additiv` |   | boolean  |   | 
+|   |  `org.apache.sling.commons.log.additiv` |   | boolean  |   |
 |  `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` |  No | string[]  |   |
 |   | `externalizer.encodedpath` |  No | boolean |   |
 |   | `externalizer.host` |  No | string |   |

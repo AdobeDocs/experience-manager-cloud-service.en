@@ -22,7 +22,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.10.0) is October 30, 2025. The next feature release (2025.10.0) is planned for November 20, 2025.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.10.0) is October 30, 2025. The next feature release (2025.11.0) is planned for November 20, 2025.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -42,10 +42,10 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### New features in Experience Manager Sites {#new-sites}
 
+* [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md): Content authors can now create and schedule future variations of structured content using Launches for Content Fragments. The new Content Fragment console allows creating, editing, managing, and scheduling Content Fragment Launches as branches for future content that can be synchronized with the source branch. A new Diff View provides a clear overview of all content changes before committing a Launch for future publication.
+
 * The [Content Model Editor for AEM Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) has been modernized to align with other React Spectrum–based interfaces in AEM. Its user interface implementation and extensibility model are now consistent with the Content Fragment Editor and Universal Editor. The new Model Editor is now default when opened from the new Content Model Admin UI. Opening a content model in Touch UI opens the Touch UI editor and offers to try out the new editor.
   
-* [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md): The Launches tab of the Content Fragments console allows you to create launches, list all existing launches, see key properties, and take actions on them.
-
 <!--
 
 ### New Features in Content Hub {#new-features-content-hub}
