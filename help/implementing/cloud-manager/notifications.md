@@ -4,7 +4,7 @@ description: Learn how to receive information about pipeline deployments using t
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Notifications {#notifications}
