@@ -38,7 +38,7 @@ Customize search filters AEM Assets can only be mapped to entries in your Search
 
 You can use the following actions on a configured filters form:
 
-* **[!UICONTROL Customize]:** Click to add or modify the form. You can drop filter elements from the [custom filters](#available-custom-filters) on the canvas. You can drag and dropt the component to reorder if needed.
+* **[!UICONTROL Customize]:** Click to add or modify the form. You can drop filter elements from the [custom filters](#available-custom-filters) on the canvas or reorder if needed.
 
 * **[!UICONTROL Preview]:** Click to review the changes.
 
