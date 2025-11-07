@@ -21,15 +21,8 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming New Features {#what-is-new}
 
-* Insert image for new RTE
-* New `/configuration` endpoint
+* TBD
 
 ## Upcoming Improvements {#other-improvements}
 
-* Update event is now informed if action was undo.
-* `No results` string now depends on browser locale in Universal Editor tags.
-* Fixed extra line break in Universal Editor's publish button.
-* Cleanup was made to patch API.
-* Select content button is now visible in Safari.
-* RPM build was fixed.
-* CORS update to avoid updating text edited text again after saving.
+* TBD
