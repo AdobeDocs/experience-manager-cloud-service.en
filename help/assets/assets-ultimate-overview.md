@@ -85,13 +85,13 @@ The following table summarizes the available AEM Assets user types, the privileg
 
 | User Role    | Limited users | Collaborator users  | Power users | Administrators |
 |---------------|----------|----------|-------------------------|---|
-| **Capabilities**|
+| **Capabilities**|||||
 | Access brand approved assets on the Content Hub portal |&#10003; | &#10003;|   &#10003;  |&#10003;|
 | Create and edit assets using built-in Adobe Express and Firefly    | &minus; |  &#10003; | &#10003;   |&#10003;|
 | Integration of assets within your organization with Adobe and non-Adobe applications     |  &minus; |   &#10003; |     &#10003;   | &#10003;|
 | Access all AEM Assets capabilities, such as, managing assets, metadata and the overall governance and automation        | &minus; | &minus; |    &#10003;   |&#10003;|
 | Manage permissions on content in AEM Assets author environment        | &minus; | &minus; |    &minus;   |&#10003;|
-| **User needs to be in these product profiles (Admin Console)**|
+| **User needs to be in these product profiles (Admin Console)**|||||
 | AEM > Delivery instance > AEM Assets Limited Users | &#10003;  | &#10003;  |   &#10003;     |&#10003;|
 | AEM > Production Author instance > AEM Assets Collaborator Users         | &minus; | &#10003; |   &minus;    |&minus;|
 | AEM > Production Author instance > AEM Assets Power Users |  &minus; | &minus; | &#10003;  |&minus;|

@@ -32,12 +32,12 @@ The following table summarizes the available Content Hub user types, the privile
 
 | User Role    | Content Hub users | Content Hub users with rights to add assets  | Content Hub users with rights to remix assets | Content Hub administrators |
 |---------------|----------|----------|-------------------------|---|
-| **Capabilities**|
+| **Capabilities**|||||
 | Access brand approved assets on the Content Hub portal |&#10003; | &#10003;|   &#10003;  |&#10003;|
 | Upload assets from Content Hub portal    | &minus; | &#10003; | &#10003;   |&#10003;|
 | Use Adobe Express integration to edit images     |  &minus; |  &minus; |     &#10003;   |&minus;|
 | Access the Content Hub configuration UI        | &minus; | &minus; |   &minus;   |&#10003;|
-| **User needs to be in these product profiles (Admin Console)**|
+| **User needs to be in these product profiles (Admin Console)**|||||
 | AEM > Delivery instance > AEM Assets Limited Users | &#10003;  | &#10003;  |   &#10003;     |&#10003;|
 | AEM > Production Author instance > AEM Users         | &minus; | &#10003; |   &#10003;    |&minus;|
 | AEM > Production Author instance > AEM Administrators |  &minus; | &minus; | &minus;  |&#10003;|
