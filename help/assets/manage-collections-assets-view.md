@@ -92,11 +92,29 @@ To remove assets from a collection:
 
 ## Search within collections {#search-collection}
 
-You can search within a collection to easily find relevant assets. To do this, go to **[!DNL Collections]** and use the search bar to enter a keyword.
+You can search within a collection to easily find relevant assets. To do this, execute the following steps:
+
+* Navigate to **[!DNL Collections]**. In the search bar, enter a keyword to locate the desired collection. The search bar displays the location of the selected collection. 
+
+* To refine your search results, open **[!DNL Filters]** and ensure that **[!DNL Collections]** is selected under **[!DNL Asset Type]**.
+
+* In the **[!DNL Collection Visibility]** dropdown, choose one of the following options:
+   
+   * **[!DNL All]:** Displays all collections, regardless of visibility.
+   * **[!DNL Public Collection]:** Shows only collections that are visible to all users.
+   * **[!DNL Private Collection]:** Shows only collections that are restricted or visible to specific users or groups.
+
+* In the [!DNL Collection Type] dropdown, choose one of the following options:
+
+   * **[!DNL All]:** Displays both regular and smart collections.
+   * **[!DNL Collection]:** Shows manually created collections where assets are added individually.
+   * **[!DNL Smart Collection]:** Shows collections that automatically include assets that are saved under [Smart Collections](#manage-smart-collection).
+
+* The **[!DNL Created Date]** dropdown enables you to filter collections based on when they were created. You can specify a date range to find recently created or older collections.
 
 ![Search collection](assets/search-collection.png)
 
-See more [search assets](search-assets-view.md) and [filter search results](search-assets-view.md#refine-search-results).
+For more information, see [search assets](search-assets-view.md), [filter search results](search-assets-view.md#refine-search-results), or [manage saved searches](search-assets-view.md##saved-search).
 
 ## Manage a Smart Collection {#manage-smart-collection}
 
