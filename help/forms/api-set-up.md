@@ -1,13 +1,13 @@
 ---
-title: How do set up Interactive Communications APIs?
-description: Set up development environment for Interactive Communications APIs for Adobe Experience Manager Forms as a Cloud Service
+title: How do set up Interactive Communications Synchronous APIs?
+description: Set up development environment for Interactive Communications Synchronous APIs for Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
 ---
 
-# AEM Forms Communications APIs - Complete Guide
+# AEM Forms as a Cloud Service Communications Synchronous APIs Processing
 
-This guide provides comprehensive instructions for setting up and using AEM Forms Communications APIs. 
+This guide provides comprehensive instructions for setting up and using AEM Forms Communications Synchronous APIs. 
 
 Learn how to configure your AEM as a Cloud Service environment, enable API access, and invoke communications APIs using the OAuth Server-to-Server authentication.
 
@@ -230,22 +230,26 @@ You can add different AEM Forms Communications APIs depending on your requiremen
 
     ![Select Authentication method](/help/forms/assets/adc-add-authentication-method.png)
 
-
 **B. For Forms Runtime APIs**
 
 1. **Click Add API**
    - In your project, click the **Add API** button
+
+    ![Add api](/help/forms/assets/adc-add-api.png)
 
 2. **Select AEM Forms Delivery and Runtime API**
    - In the _Add API_ dialog, filter by **Experience Cloud**
    - Select **"AEM Forms Delivery and Runtime API"**
    - Click **Next**
 
+    ![Add runtime API](/help/forms/assets/add-runtime-api.png)
+
+
 3. **Authentication Method**
-   - Select the authentication method as per your requirement:
-     - OAuth Server-to-Server 
-     - OAuth Web App
-     - OAuth Single Page App (SPA)
+   - Select **OAuth Server-to-Server** authentication method.
+
+    
+    ![Select Authentication method](/help/forms/assets/add-authentication-for-runtime-apis.png)
 
 #### 4.3 Add Product Profile
 
@@ -511,13 +515,13 @@ In this, example let us generate an PDF using the Document Services APIs using t
 
 #### A. Using Swagger UI for API Testing
 
-Swagger UI provides an interactive interface for testing APIs without writing code.Use the **Try it** feature to invoke and test the generate PDF API.
+Swagger UI provides an interactive interface for testing APIs without writing code.Use the **Try it** feature to invoke and test the [generate PDF](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) Document Service API.
 
 1. Navigate to API Documentation
    - Forms API: [Forms API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
    - Document Services: [Document Services API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
     Open the [Document Services APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document) documentation in your browser.  
-2. Expand the **Document Generation** section and select **Generates a fillable PDF form from an XDP or PDF template, optionally with data merging**.  
+2. Expand the **Document Generation** section and select [Generates a fillable PDF form from an XDP or PDF template, optionally with data merging](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm).  
 3. In the right pane, click **Try it**.
 
     ![Swagger testing for API](/help/forms/assets/api-doc-generation.png)
@@ -540,7 +544,7 @@ Swagger UI provides an interactive interface for testing APIs without writing co
     - If the response code is `400`, it means the request parameters are invalid or malformed. 
     - If the response code is `500`, it means there is an internal server error.
 
-    In this case, the response code is `200`, it means that the PDF is generated sucessfully:
+    In this case, the response code is `200`, it means that the PDF is generated successfully:
 
     ![Review Response](/help/forms/assets/api-success.png)
 
@@ -746,26 +750,7 @@ The PDF is created in the `demo-nodejs-generate-pdf` folder. Navigate to the fol
 
 ![view craeted pdf](/help/forms/assets/api-8.png)
 
-You can open the PDF to view it.
-
-## Best Practices
-
-### Error Handling
-
-- Always check response status codes
-- Implement proper error handling in your code
-- Log API responses for debugging
-
-### Security
-
-- Never expose client secrets in client-side code
-- Rotate credentials periodically
-
-### Performance
-
-- Implement caching where appropriate
-- Handle rate limits
-- Use batch operations when available
+You can open the [generated PDF](/help/forms/assets/create-pdf.png) to view it.
 
 ## Troubleshooting
 
