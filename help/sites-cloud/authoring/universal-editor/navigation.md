@@ -55,7 +55,7 @@ Once the app is instrumented to work with the Universal Editor, the Universal Ed
 
 The UI is divided into these main areas.
 
-* [The Experience Cloud header](#experience-cloud-header)
+* [The Experience Platform Top Navigation Bar](#experience-cloud-header)
 * [The Universal Editor toolbar](#universal-editor-toolbar)
 * [The editor](#editor)
 * [The properties panel](#properties-rail)
