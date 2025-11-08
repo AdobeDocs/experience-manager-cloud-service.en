@@ -31,7 +31,7 @@ The next planned release is Thursday, December 4, 2025.
 * **Programs list** - showing the AEM Cloud Manager programs in your organisation with quick access into the Cloud Manager details page. https://jira.corp.adobe.com/browse/HOME-595
 * **AEM Guides** - Quick action and Shortcut for the Authoring Environments that have AEM Guides add-ons enabled https://jira.corp.adobe.com/browse/HOME-624
 
-## What's new - Cloud Manager {@cloud-manager-whats-new}
+## What's new - Cloud Manager {#cloud-manager-whats-new}
 
 * **Dedicated stage-only and production-only deployment pipelines**
 
