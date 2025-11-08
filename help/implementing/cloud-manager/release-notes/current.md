@@ -19,22 +19,19 @@ The release date for Cloud Manager 2025.11.0 in AEM as a Cloud Service is Thursd
 
 The next planned release is Thursday, December 4, 2025.
 
-## What's new {#what-is-new}
+## What's new - Experience Hub {#experience-hub-whats-new}
 
-### Experience Hub {#experience-hub-whats-new}
-
-* **Simplified access to Experience Hub** - user role selection was removed and a guide added for **Preset** selection drop-down list.
+* **Simplified access to Experience Hub** - user role selection was removed and a guide added for a **Preset** selection drop-down list.
 
     * Content Author - 
-    * Asset Librarian,
-    * Admin&IT) https://jira.corp.adobe.com/browse/HOME-580
+    * Asset Librarian - 
+    * Admin & IT -  https://jira.corp.adobe.com/browse/HOME-580
 * **Announcements** and **Product updates** - you can switch and iterate between the available announcements, but also dismiss them https://jira.corp.adobe.com/browse/HOME-513 https://jira.corp.adobe.com/browse/HOME-550 https://jira.corp.adobe.com/browse/HOME-543 https://jira.corp.adobe.com/browse/HOME-542
 * **Recents** - added support for additional pages and resources, including page editor, assets, programs and pipeline execution details, security pages https://jira.corp.adobe.com/browse/HOME-577
 * **Programs list** - showing the AEM Cloud Manager programs in your organisation with quick access into the Cloud Manager details page. https://jira.corp.adobe.com/browse/HOME-595
 * **AEM Guides** - Quick action and Shortcut for the Authoring Environments that have AEM Guides add-ons enabled https://jira.corp.adobe.com/browse/HOME-624
 
-
-### Cloud Manager {@cloud-manager-whats-new}
+## What's new - Cloud Manager {@cloud-manager-whats-new}
 
 * **Dedicated stage-only and production-only deployment pipelines**
 
