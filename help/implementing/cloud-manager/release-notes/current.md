@@ -21,6 +21,21 @@ The next planned release is Thursday, December 4, 2025.
 
 ## What's new {#what-is-new}
 
+### Experience Hub {#experience-hub-whats-new}
+
+* **Simplified access to Experience Hub** - user role selection was removed and a guide added for **Preset** selection drop-down list.
+
+    * Content Author - 
+    * Asset Librarian,
+    * Admin&IT) https://jira.corp.adobe.com/browse/HOME-580
+* **Announcements** and **Product updates** - you can switch and iterate between the available announcements, but also dismiss them https://jira.corp.adobe.com/browse/HOME-513 https://jira.corp.adobe.com/browse/HOME-550 https://jira.corp.adobe.com/browse/HOME-543 https://jira.corp.adobe.com/browse/HOME-542
+* **Recents** - added support for additional pages and resources, including page editor, assets, programs and pipeline execution details, security pages https://jira.corp.adobe.com/browse/HOME-577
+* **Programs list** - showing the AEM Cloud Manager programs in your organisation with quick access into the Cloud Manager details page. https://jira.corp.adobe.com/browse/HOME-595
+* **AEM Guides** - Quick action and Shortcut for the Authoring Environments that have AEM Guides add-ons enabled https://jira.corp.adobe.com/browse/HOME-624
+
+
+### Cloud Manager {@cloud-manager-whats-new}
+
 * **Dedicated stage-only and production-only deployment pipelines**
 
     Cloud Manager now offers dedicated stage-only and production-only deployment pipelines, providing greater flexibility for managing deployments to staging and production environments independently. See [Split Stage-Only and Production-Only Pipelines](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md).
@@ -120,7 +135,7 @@ Interested? Email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild
 
 
 
-### One-click rollback for pipeline deployments {#one-click-rollback} 
+### One-click rollback for pipeline deployments {#one-click-rollback} OUT OF BETA; NOW GA
 
 Quickly revert to a previous deployment if the latest customer source code is not working as expected—no need to rerun the full pipeline or manually revert commits.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
