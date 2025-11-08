@@ -3,14 +3,15 @@ title: Restore the Previous Source Code Deployed
 description: Learn how to restore an environment to its last successful build &ndash; no pipeline run required.
 feature: Operations
 role: Admin
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
 ---
 # Restore the previous source code deployed in AEM as a Cloud Service {#restore-previous-code-deployed}
 
+<!-- BETA BADGE REMOVED FOR NOVEMBER 2025 CM RELEASE badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+
 >[!NOTE]
 >
->The feature described in this article is only available through the beta program. To sign up for the beta, see [One-click rollback for pipeline deployments](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>The feature described in this article is only available through the beta program. To sign up for the beta, see [One-click rollback for pipeline deployments](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback). -->
 
 Use **Restore previous code deployed** to roll an environment back instantly to its last successful build—no pipeline run required.
 
@@ -26,7 +27,7 @@ You simply open the selected environment's ![More icon or ellipsis menu icon](ht
 
 * Only one restore is allowed per successful pipeline execution; to restore again, complete another successful pipeline run.
 * You hold **Environment Restore Create** permissions. For details on managing permissions, see [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
-* Your organization is enrolled in the beta program and the feature flag is on.
+* The feature flag guarding this feature is enabled (on).
 * The program runs on AEM as a Cloud Service.
 * The last pipeline for that environment finished successfully and ran **fewer than 30 days** ago.
 * The environment status is *Running* and no pipeline is in progress.
