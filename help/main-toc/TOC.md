@@ -236,6 +236,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2025 {#2025}
+      + [2025.10.30 Release Notes](/help/release-notes/universal-editor/2025/2025-10-30.md)
       + [2025.10.24 Release Notes](/help/release-notes/universal-editor/2025/2025-10-24.md)
       + [2025.10.16 Release Notes](/help/release-notes/universal-editor/2025/2025-10-16.md)
       + [2025.10.09 Release Notes](/help/release-notes/universal-editor/2025/2025-10-09.md)
@@ -1150,10 +1151,8 @@ user-guide-title: AEM as a Cloud Service
     + [FAQ](/help/commerce-cloud/cif-storefront/faq.md)
 + Edge Delivery Services {#edge-delivery}
   + [Edge Delivery Services Overview](/help/edge/overview.md)
-{#wysiwyg-authoring}
   + Building Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
-    
     + WYSIWYG Authoring {#universal-editor}
       + [Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + [Navigate the Universal Editor Interface for AEM Forms](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
