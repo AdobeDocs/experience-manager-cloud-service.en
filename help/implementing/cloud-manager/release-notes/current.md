@@ -131,8 +131,9 @@ Interested? Email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
 
 
+### One-click rollback for pipeline deployments {#one-click-rollback} 
 
-### One-click rollback for pipeline deployments {#one-click-rollback} OUT OF BETA; NOW GA
+<!-- AS OF NOVEMBER 10, 2024 OUT OF BETA; NOW GA -->
 
 Quickly revert to a previous deployment if the latest customer source code is not working as expected—no need to rerun the full pipeline or manually revert commits.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
