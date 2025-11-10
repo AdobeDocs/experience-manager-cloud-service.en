@@ -98,18 +98,21 @@ Now, configure the properties of the **Drafts and Submissions** component accord
 ## Configure properties of the Drafts & Submissions Component 
 
 You can configure the properties of the **Drafts & Submissions**:
+
 1. Select the **Drafts & Submissions** component.
 1. Click the ![Configure icon](assets/configure_icon.png) and the dialog box appears. 
 1. In the **[!UICONTROL Drafts and Submissions]** dialog, specify the following:
+
    * **Title** To identify a component in a Sites page and by default, the title appears on top of the component.
    * **Select Type**: To indicate the form listing as draft or submitted forms. If you choose **Draft Forms**, the forms saved as drafts are displayed. Alternatively, selecting **Submitted Forms** shows the forms submitted by logged-in users.
-   *  **Layout**: To display list draft forms or submitted forms in the card or list format.
+   * **Layout**: To display list draft forms or submitted forms in the card or list format.
  
     ![Draft and Submission Component proeprties](/help/forms/assets/save-form-as-draft-dns-properties.png)
 
 ## Configure forms to save as drafts
 
 You can configure Adaptive Forms in the following two ways to save them as drafts for later use:
+
 * [User action](#user-action)
 * [Auto-save](#auto-save)
 

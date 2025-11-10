@@ -151,7 +151,7 @@ The Universal Editor provides two prefill service options:
 
 1. Click **Create** to open the **Create Form** wizard
 
-   >![NOTE]
+   >[!NOTE]
    >
    > You can configure the data source from the **Data** tab or later by editing the form properties. 
 

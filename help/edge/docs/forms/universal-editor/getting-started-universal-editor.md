@@ -2,7 +2,7 @@
 title: Getting Started with Edge Delivery Services for AEM Forms using Universal Editor
 description: Learn how to create and publish high-performance forms using Edge Delivery Services with Universal Editor's WYSIWYG authoring.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 ---

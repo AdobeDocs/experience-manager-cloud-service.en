@@ -163,6 +163,7 @@ For more information about configuring services in form data model (FDM), see [[
 For more information about configuring services in form data model (FDM), see [[!DNL Experience Manager Forms] Data Integration](data-integration.md).
 
 The **[!UICONTROL Set Property]** rule type lets you set the value of a property of the specified object based on a condition action. You can set the property to one of the following:
+
 * visible (Boolean)
 * label.value (String)
 * label.visible (Boolean)

@@ -4,7 +4,7 @@ description: Learn how to access and manage logs to aid your development process
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Accessing and Managing Logs {#manage-logs} 

@@ -3,7 +3,7 @@ title: Getting Started with Edge Delivery Services for AEM Forms - Developer Tut
 description: This tutorial helps get you up-and-running with a new Adobe Experience Manager Forms (AEM) project. In ten to twenty minutes, you will have created your own forms.
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Getting Started - Developer Tutorial 
 
