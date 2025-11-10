@@ -55,11 +55,11 @@ A service is labeled *HIPAA-ready* or *not HIPAA-ready* based on the outcome of 
 >
 >Only Product Legal and Privacy Legal make the decision to label a service either HIPAA-ready, not HIPAA-ready, or Not necessary.
 
-## Compliance of services in AEM as a Cloud Service {#compliance-of-services-in-aem-as-a-cloud-service}
+## HIPAA-readiness of services in AEM as a Cloud Service {#hipaa-readiness-of-services-in-aem-as-a-cloud-service}
 
-Individual services within AEM as a Cloud have individual compliance ratings, based on the [assessment ratings](#hipaa-assessment-terminology). 
+Individual services within AEM as a Cloud have individual HIPAA-readiness ratings, based on the [assessment ratings](#hipaa-assessment-terminology). 
 
-See the following table for compliance ratings, together with the [Additional Requirements](#additional-requirements).
+See the following table for HIPAA-readiness ratings, together with the [Additional Requirements](#additional-requirements).
 
 |Product/Capability |Service |Statements |
 |--- |--- |--- |
@@ -84,7 +84,7 @@ See the following table for compliance ratings, together with the [Additional Re
 
 ### Additional Requirements {#additional-requirements}
 
-[Services listed](#compliance-of-services-in-aem-as-a-cloud-service) as HIPAA-ready (also referred to as a HIPAA-ready service) require the purchase of Extended Security for Healthcare. 
+[Services listed](#hipaa-readiness-of-services-in-aem-as-a-cloud-service) as HIPAA-ready (also referred to as a HIPAA-ready service) require the purchase of Extended Security for Healthcare. 
 
 When Extended Security for Healthcare is purchased, there is the requirement that:
 
