@@ -275,7 +275,9 @@ When using variables in your queries there are a few best practices that should 
     However this setting currently only works on the `vhost` level, so if you already have Dispatcher configurations to rewrite URLs (e.g. when using shortened URLs) you might need a separate `vhost` for persisted query URLs.
 
   * Send `/` or `\` characters unencoded.
+
     When calling the persisted query URL ensure that all `/` or `\` characters remain unencoded in the value of persisted query variables.
+
     >[!NOTE]
     >
     >This option is only recommended for when the `DispatcherNoCanonURL` solution cannot be implemented for any reason.
@@ -293,7 +295,7 @@ By default AEM will invalidate cache based on a Time To Live (TTL) definition. T
 |Cache Type |[HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control) |cURL |OSGi Configuration |Cloud Manager |
 |--- |--- |--- |--- |--- |
 |Browser |`max-age` |`cache-control : max-age` |`cacheControlMaxAge` |`graphqlCacheControl` |
-|CDN |`s-maxage` |`surrogate-control : max-age` |`surrogateControlMaxAge` |`graphqlSurrogateControl` |60 |
+|CDN |`s-maxage` |`surrogate-control : max-age` |`surrogateControlMaxAge` |`graphqlSurrogateControl` \|60 |
 |CDN |`stale-while-revalidate` |`surrogate-control : stale-while-revalidate `|`surrogateControlStaleWhileRevalidate` |`graphqlStaleWhileRevalidate` |
 |CDN |`stale-if-error` |`surrogate-control : stale-if-error` |`surrogateControlStaleIfError` |`graphqlStaleIfError` |
 
@@ -367,7 +369,7 @@ The `cache-control` can be set at the creation time (PUT) or later on (for examp
 
 [Cloud Manager Environment Variables](/help/implementing/cloud-manager/environment-variables.md) can be defined with Cloud Manager to define the required values:
 
-| Name | Value | Service Applied | Type | 
+| Name | Value | Service Applied | Type |
 |--- |--- |--- |--- |
 |`graphqlStaleIfError` |86400 | *as appropriate* | *as appropriate* |
 |`graphqlSurrogateControl` |600 | *as appropriate* | *as appropriate* |

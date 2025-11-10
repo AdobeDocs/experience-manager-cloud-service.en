@@ -4,7 +4,7 @@ description: Learn how to use Cloud Manager to create your own sandbox program f
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Create sandbox programs {#create-sandbox-program}
 
