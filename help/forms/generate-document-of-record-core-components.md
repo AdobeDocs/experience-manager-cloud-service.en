@@ -256,7 +256,7 @@ The following table describes Adaptive Form components and corresponding XFA com
 | Adaptive Form component |Corresponding XFA component |Notes |
 |---|---|---|
 | Image |Image |The TextDraw and Image components, whether bound or unbound, always appear in the Document of Record for an XSD-based Adaptive Form, unless excluded using the Document of Record settings. |
-| Text |Text |
+| Text |Text ||
 
 ### Tables {#tables}
 

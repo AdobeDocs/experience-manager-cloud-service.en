@@ -454,7 +454,7 @@ Properties for the following OSGi component PIDs cannot be modified, therefore t
 
 | **OSGI component ID**| **Unmodifiable Properties** |
 |---|---|
-| **`com.day.cq.auth.impl.cug.CugSupportImpl`** |
+| **`com.day.cq.auth.impl.cug.CugSupportImpl`** ||
 | **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | all |
 | **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | all |
 | **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | all |
