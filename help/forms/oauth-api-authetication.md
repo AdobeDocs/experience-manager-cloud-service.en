@@ -3,6 +3,9 @@ title: How to set up OAuth Server-to-Server Authentication?
 description: Learn how to configure OAuth Server-to-Server authentication for Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
+hide: yes
+hidefromToC: yes
+index: no
 ---
 
 # OAuth Server-to-Server Authentication -Recommended
@@ -60,7 +63,7 @@ Follow the steps below which shows you how to generate an access token from the 
         > ![Add API to existing Project](/help/forms/assets/add-api-existing-project.png)
         > To add API and authentication method, perform the same steps as explained below for your existing project.
 
-3. Add different AEM Forms Communications APIs depending on your requirements.
+4. Add different AEM Forms Communications APIs depending on your requirements.
 
     **A. For Document Services APIs**
 
@@ -160,9 +163,9 @@ Follow the steps below which shows you how to generate an access token from the 
 
     **Required Credentials:**
 
-      - Client ID
-      - Client Secret
-      - Scopes (typically: `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`)
+      * Client ID
+      * Client Secret
+      * Scopes (typically: `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`)
 
     **Token Endpoint:**
     

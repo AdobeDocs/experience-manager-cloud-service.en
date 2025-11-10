@@ -3,6 +3,9 @@ title: AEM Forms Communications APIs - Overview
 description: Overview of AEM Forms Communications APIs including authentication methods and complete API reference
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
+hide: yes
+hidefromToC: yes
+index: no
 ---
 
 # AEM Forms Communications APIs - Overview
@@ -190,3 +193,12 @@ Learn how to set environment for Synchronous (On-Demand) and Asynchronous (Batch
     </div>
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
+
+>[!MORELIKETHIS]
+>
+>* [Introduction to AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Communication Processing - Synchronous APIs](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Communication Processing - Batch APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Communication Processing - On-Demand APIs](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

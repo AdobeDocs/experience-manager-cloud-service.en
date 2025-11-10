@@ -3,6 +3,9 @@ title: How do set up Interactive Communications Synchronous APIs?
 description: Set up development environment for Interactive Communications Synchronous APIs for Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
+hide: yes
+hidefromToC: yes
+index: no
 ---
 
 # AEM Forms as a Cloud Service Communications Synchronous APIs Processing
@@ -819,3 +822,6 @@ You can open the [generated PDF](/help/forms/assets/create-pdf.png) to view it.
 - Malformed or incorrect Client ID in the configuration  
 
 
+## Related Articles
+
+To learn how to set up environment for Batch (Asynchronous APIs), see [AEM Forms as a Cloud Service Communications Batch Processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).
