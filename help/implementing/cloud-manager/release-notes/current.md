@@ -21,75 +21,41 @@ The next planned release is Thursday, December 4, 2025.
 
 ## What's new - Experience Hub {#experience-hub-whats-new}
 
-* **Simplified access to Experience Hub** - user role selection was removed and a guide added for a **Preset** selection drop-down list.
+* **Simplified access to Experience Hub**
 
-    * Content Author - 
-    * Asset Librarian - 
-    * Admin & IT -  https://jira.corp.adobe.com/browse/HOME-580
-* **Announcements** and **Product updates** - you can switch and iterate between the available announcements, but also dismiss them https://jira.corp.adobe.com/browse/HOME-513 https://jira.corp.adobe.com/browse/HOME-550 https://jira.corp.adobe.com/browse/HOME-543 https://jira.corp.adobe.com/browse/HOME-542
-* **Recents** - added support for additional pages and resources, including page editor, assets, programs and pipeline execution details, security pages https://jira.corp.adobe.com/browse/HOME-577
-* **Programs list** - showing the AEM Cloud Manager programs in your organisation with quick access into the Cloud Manager details page. https://jira.corp.adobe.com/browse/HOME-595
-* **AEM Guides** - Quick action and Shortcut for the Authoring Environments that have AEM Guides add-ons enabled https://jira.corp.adobe.com/browse/HOME-624
+    User role selection was removed and a guide added for **Preset** selection (Content Author, Asset Librarian, Admin & IT).
+
+* **Announcements** and **Product updates**
+
+    You can switch and iterate between the available announcements, but also dismiss them.
+
+* **Recents**
+
+    Added support for additional pages and resources, including page editor, assets, programs, and pipeline execution details, security pages.
+
+* **Programs list**
+
+    Showing the AEM Cloud Manager programs in your organization with quick access into the Cloud Manager details page.
+
+* **AEM Guides**
+
+    Quick action and Shortcut for the Authoring Environments that have AEM Guides add-ons enabled.
 
 ## What's new - Cloud Manager {#cloud-manager-whats-new}
 
-* **Dedicated stage-only and production-only deployment pipelines**
+* **One-click rollback for pipeline deployments**
 
-    Cloud Manager now offers dedicated stage-only and production-only deployment pipelines, providing greater flexibility for managing deployments to staging and production environments independently. See [Split Stage-Only and Production-Only Pipelines](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md).
+    Quickly revert to a previous deployment if the latest customer source code is not working as expected. There is no need to rerun the full pipeline or manually revert commits. <!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-* **AEM Cloud Health Assessment Service**
+    See [Restore the Previous Code Deployed in AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
 
-    Adobe introduces the AEM Cloud Health Assessment Service, an automated, non-invasive checkup tool that keeps your AEM as a Cloud Service environment optimized, secure, and aligned with best practices.
+    See also [Content Restore in AEM as a Cloud Service](/help/operations/restore.md).
 
-    This service does the following:
+* **Self-serve WAF setup for Edge Delivery Services**
 
-    * Scans environments to surface performance bottlenecks, inefficiencies, and potential risks.
-    * Analyzes content structures (blueprints, live copies) and custom configurations.
-    * Identifies outdated dependencies (AEM SDK, third-party libraries).
-    * Flags code quality issues (improper annotations, inefficient patterns).
-    * Delivers actionable guidance through dashboards such as **Actions Center**.
-    * Supports proactive optimization through early issue detection and remediation.
+    When you create an Edge Delivery Services program in Cloud Manager, you can enable the Web Application Firewall (WAF). This setting shields your site from malicious traffic and DDoS attacks immediately, reducing manual setup work.
 
-    Teams can continuously monitor and improve their AEM environments for smoother performance, stronger security, and long-term maintainability. 
-    
-    See [Health Assessment for Production and Stage Environments](/help/implementing/cloud-manager/reports/report-health-assessment.md).
-
-* **Config Pipeline support**
-
-    Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just Cloud Service environments. You can use **Config Pipelines** to manage settings such as CDN configuration, including traffic filter rules and origin selectors. See [Supported Configurations](/help/operations/config-pipeline.md#configurations). 
-
-    Edge Delivery config pipelines also support secrets through Cloud Manager pipeline variables.
-
-    See [Add Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
-
-* **Domain Mapping-CDN setup dialog box streamlined**
-
-    Cloud Manager has simplified the **Map Domain to CDN** flow to reduce confusion and speed configuration. The dialog box now emphasizes **Adobe managed CDN** (with a "Recommended" badge). 
-
-    ![Map Domain to CDN dialog box with Adobe managed CDN radio button selected](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-adobe-managed-cdn.png). 
-
-    See [Add a domain mapping](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md).
-    
-    The dialog box also presents a single, concise checklist for the **Other CDN provider** card, focusing on instructional content with the following: 
-    
-    * Point your CDN origin to `publish-p<PROGRAM_ID>-e<ENV_ID>.adobeaemcloud.com`.
-    * Set **Host/SNI** to forward the original host.
-    * Add `X-AEM-Edge-Key` (after deploying the key in Cloud Manager).
-    * Set `X-Forwarded-Host` to your customer-facing domain.
-    * Clear other `X-Forwarded-*` headers before reaching AEM.
-
-    ![Map Domain to CDN dialog box with Other CDN provider radio button selected](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-other-cdn-provider.png)
-    
-    <!-- (no redundant `Origin` field or "Learn more" clutter) -->The accompanying footer provides two helpful links: sample configurations for major CDNs and a link to full documentation. A single confirmation button&ndash;I've Configured My CDN&ndash;completes the flow.
-   
-    See [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN).
-
-<!--
-### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
-
-Support for [staging-only and production-only pipelines](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md) has been introduced, enabling you to split full-stack production deployment pipelines into smaller, specialized deployments.
-
-If you are interested in testing this new feature and sharing your feedback, send an email to  `Grp-cloudmanager_splitpipelines@adobe.com` from your email address associated with your Adobe ID. -->
+    See [Create your First Edge Delivery Site with One Click](help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md).
 
 
 ## Beta programs {#private-beta-program}
@@ -130,36 +96,13 @@ Interested? Email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
 
-
-### One-click rollback for pipeline deployments {#one-click-rollback} 
-
-<!-- AS OF NOVEMBER 10, 2024 OUT OF BETA; NOW GA -->
-
-Quickly revert to a previous deployment if the latest customer source code is not working as expected—no need to rerun the full pipeline or manually revert commits.<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
-
-![Restore customer source code from the Environments card](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *Environments card above showing the **Restore** > **Previous code deployed** option for a selected environment.* 
-
-![Restore previous code deployed dialog box](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png) 
-*In the **Restore previous code deployed** dialog box, review the currently deployed version and the version you want to restore, then click **Confirm***.
-
-![Restoring activation](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png) 
-*Cloud Manager rolls the environment back to the earlier build, keeps content and configuration intact, and marks the environment **Restoring** until deployment completes.*
-
-![Source code version in use](/help/implementing/cloud-manager/release-notes/assets/environments-view-details-sourcecodeversion.png) *The Environment details view, as seen above, now also shows the active source-code version in use.*
-
-If you are interested in testing this new feature and sharing your feedback, send an email to [restorecode@adobe.com](mailto:restorecode@adobe.com) from your email address associated with your Adobe ID.
-
-See [Restore the Previous Code Deployed in AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
-
-See also [Content Restore in AEM as a Cloud Service](/help/operations/restore.md).
-
 ### Specialized Testing Environment {#specialized-test-environment}
 
 Cloud Manager now supports the addition of a new environment type called **Specialized Testing Environment**. The environment is designed to help teams validate features under near-production conditions before going live. This environment type is distinct from *Production + Stage*, *Development*, or *Rapid Development* environments and offers a focused space for running advanced validation scenarios.
 
 **Recent enhancements**
 
-* You can now configure a Specialized Testing Environment on a non-production pipeline through a simpler, more intuitive workflow. The streamlined setup speeds completion and reduces configuration errors.
+* You can now configure a Specialized Testing Environment on a Non-Production Pipeline through a simpler, more intuitive workflow. The streamlined setup speeds completion and reduces configuration errors.
 * **Copy Content** is now supported in Specialized Testing Environments. You can now run **Copy Content** safely in isolated testing environments that mirror Production. <!-- (CMGR‑68900) -->
 
 See [Add a Specialized Testing Environment](/help/implementing/cloud-manager/specialized-test-environment.md).
@@ -212,7 +155,7 @@ See [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage
 
 ## Bug fixes {#bug-fixes}
 
-There are no significant bug fixes in the October Cloud Manager release.
+There are no significant bug fixes in the November 2025 Cloud Manager release.
 
 
 <!-- ## Known issues {#known-issues} -->
