@@ -4,7 +4,7 @@ description: Use assets available on a remote [!DNL Adobe Experience Manager Ass
 contentOwner: AK
 mini-toc-levels: 2
 feature: Asset Management, Connected Assets, Asset Distribution
-role: Admin, User, Architect
+role: Admin, User, Developer
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 ---
 

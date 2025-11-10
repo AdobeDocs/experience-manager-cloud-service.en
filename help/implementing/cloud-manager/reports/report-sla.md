@@ -4,7 +4,7 @@ description: Learn how to see the performance of your production AEM environment
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # SLA reports {#sla-reporting} 

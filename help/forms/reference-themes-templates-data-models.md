@@ -23,7 +23,7 @@ The themes, templates, and form data model (FDM) included the reference content 
 
 
 |Themes | Templates | Form Data Model (FDM) |
----------|----------|---------
+|---------|----------|---------|
 | Canvas 3.0 |Basic | Microsoft Dynamics 365 |
 | Tranquil   |Blank | Salesforce |
 | Urbane |   |  |

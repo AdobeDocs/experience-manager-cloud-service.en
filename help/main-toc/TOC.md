@@ -235,6 +235,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2025 {#2025}
+      + [2025.10.30 Release Notes](/help/release-notes/universal-editor/2025/2025-10-30.md)
       + [2025.10.24 Release Notes](/help/release-notes/universal-editor/2025/2025-10-24.md)
       + [2025.10.16 Release Notes](/help/release-notes/universal-editor/2025/2025-10-16.md)
       + [2025.10.09 Release Notes](/help/release-notes/universal-editor/2025/2025-10-09.md)
@@ -572,6 +573,8 @@ user-guide-title: AEM as a Cloud Service
     + [Manage publication](/help/assets/manage-publication.md)
     + [Preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
     + [Smart tags for images](/help/assets/smart-tags.md)
+    + [Smart Tags Training](/help/assets/smart-tags-training.md)
+    + [Enhance content discovery with AI generated metadata](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md)
     + [Smart tags for videos](/help/assets/smart-tags-for-videos.md)
     + [How to organize assets](/help/assets/organize-assets.md)
     + [Use [!DNL Adobe Stock] assets](/help/assets/aem-assets-adobe-stock.md)
@@ -711,6 +714,7 @@ user-guide-title: AEM as a Cloud Service
     + [Search and discover assets](/help/assets/search-assets-view.md)
     + [Custom search filters](/help/assets/custom-search-filters.md)
     + [Asset management tasks](/help/assets/manage-organize-assets-view.md)
+    + [AI generated metadata](/help/assets/ai-generated-metadata-assets-view.md)
     + [Edit images](/help/assets/edit-images-assets-view.md)
     + [Edit videos](/help/assets/edit-videos-assets-view.md)
     + [View and manage renditions](/help/assets/renditions.md)
@@ -1146,10 +1150,8 @@ user-guide-title: AEM as a Cloud Service
     + [FAQ](/help/commerce-cloud/cif-storefront/faq.md)
 + Edge Delivery Services {#edge-delivery}
   + [Edge Delivery Services Overview](/help/edge/overview.md)
-{#wysiwyg-authoring}
   + Building Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
-    
     + WYSIWYG Authoring {#universal-editor}
       + [Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + [Navigate the Universal Editor Interface for AEM Forms](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)

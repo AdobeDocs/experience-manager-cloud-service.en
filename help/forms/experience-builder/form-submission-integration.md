@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: yes
 index: no
 hidefromtoc: yes
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: c772556b-dab6-4fa8-b728-1fe52c6596a4
 ---
 # Form submission and integration
@@ -310,6 +310,7 @@ For integration issues:
 - Contact your system administrator for technical assistance
 - Consult API documentation for external services
 
+<!-- 
 ## Related articles
 
 - [Forms Experience Builder Overview](product-overview.md)
@@ -317,3 +318,7 @@ For integration issues:
 - [Deploy and configure Forms Experience Builder](deploy-forms-experience-builder.md)
 - [Intelligent import and conversion](intelligent-import-conversion.md)
 - [Frequently asked questions](forms-experience-builder-frequently-asked-questions.md)
+
+-->
+
+

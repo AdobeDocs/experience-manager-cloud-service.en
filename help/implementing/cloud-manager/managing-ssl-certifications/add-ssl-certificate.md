@@ -4,7 +4,7 @@ description: Learn how to add your own SSL certificate or and Adobe managed DV (
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Add an SSL certificate {#add-ssl-cert}

@@ -256,7 +256,7 @@ The following table describes Adaptive Form components and corresponding XFA com
 | Adaptive Form component |Corresponding XFA component |Notes |
 |---|---|---|
 | Image |Image |The TextDraw and Image components, whether bound or unbound, always appear in the Document of Record for an XSD-based Adaptive Form, unless excluded using the Document of Record settings. |
-| Text |Text |
+| Text |Text ||
 
 ### Tables {#tables}
 
@@ -323,54 +323,56 @@ To localize the branding information that you enter in the Document of Record ta
 
     1. **Basic Properties**: 
         * **Template**:  If you want to select a custom template, browse and select an XDP on your [!DNL AEM Forms] server. If you want to use a template that is not available on your [!DNL AEM Forms] server, you should first upload the XDP to your [!DNL AEM Forms] server.
-         * **Accent Color**: The color in which header text and separator lines are rendered in the document of record PDF.
-         * **Font Family**: Font family of the text in the Document of Record PDF.
+        * **Accent Color**: The color in which header text and separator lines are rendered in the document of record PDF.
+        * **Font Family**: Font family of the text in the Document of Record PDF.
 
-            >[!NOTE]
-            >
-            > AEM Forms offers a variety of built-in fonts that seamlessly integrate with PDF files. To see the list of supported fonts, [click here](/help/forms/supported-out-of-the-box-fonts.md).
+          >[!NOTE]
+          >
+          > AEM Forms offers a variety of built-in fonts that seamlessly integrate with PDF files. To see the list of supported fonts, [click here](/help/forms/supported-out-of-the-box-fonts.md).
 
-          * **Include form objects that are not bound to data model**: Setting the property includes unbound fields from Schema based Adaptive Form in the Document of Record.
+        * **Include form objects that are not bound to data model**: Setting the property includes unbound fields from Schema based Adaptive Form in the Document of Record.
 
           <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
 
-         * **Hide description of panels**: Setting the property excludes description of the panel/table from the Document of Record. Applicable for panel and table.
+        * **Hide description of panels**: Setting the property excludes description of the panel/table from the Document of Record. Applicable for panel and table.
 
-         
+        
 
     1. **Form Field Properties**: 
-        * **For Check Box and Radio Button components, show only the selected values**: Setting the property displays only selected values of check box and radio button in [!UICONTROL Document of Record].
-        * **Separator for multiple value(s)**: You can choose any separator such as comma or line break to display multiple values.
-        * **Options Alignment**: You can select the desired alignment (Horizontal, Vertical, Same as adaptive Form) to set the alignment for the fields such as check box or radio button to be displayed on [!UICONTROL Document of Record]. By default, the vertical alignment is set for the fields in [!UICONTROL Document of Record]. Setting the properties from the [!UICONTROL Form Field Properties] of DoR overwrites the properties set in the [!UICONTROL Item Alignment] for the fields on an Adaptive Form. In case, you select [!UICONTROL Same as Aaptive form] option, the alignment as configured in an Adaptive Form author instance is used for [!UICONTROL Document of Record] fields.  
-        * **Number of options for horizontal alignment**:You can set the number of options to be displayed on the Document of Record for the horizontal alignment. 
+ 
+       * **For Check Box and Radio Button components, show only the selected values**: Setting the property displays only selected values of check box and radio button in [!UICONTROL Document of Record].
+       * **Separator for multiple value(s)**: You can choose any separator such as comma or line break to display multiple values.
+       * **Options Alignment**: You can select the desired alignment (Horizontal, Vertical, Same as adaptive Form) to set the alignment for the fields such as check box or radio button to be displayed on [!UICONTROL Document of Record]. By default, the vertical alignment is set for the fields in [!UICONTROL Document of Record]. Setting the properties from the [!UICONTROL Form Field Properties] of DoR overwrites the properties set in the [!UICONTROL Item Alignment] for the fields on an Adaptive Form. In case, you select [!UICONTROL Same as Aaptive form] option, the alignment as configured in an Adaptive Form author instance is used for [!UICONTROL Document of Record] fields.  
+       * **Number of options for horizontal alignment**:You can set the number of options to be displayed on the Document of Record for the horizontal alignment. 
         
       
 
     1. **Master Page Properties**:
-        * **Logo Image**: You can either choose to use the logo image from the Adaptive Form, choose one from DAM, or upload one from your computer.
-        * **Form Title**: Title of the DoR.
-        * **Header Text**: Text that appears at the header section of the Document of Record.
-        * **Disclaimer Label**: Label of disclaimer.
-        * **Disclaimer**: Text which specifies the scope of rights and obligations on the Document of Record.
-        * **Disclaimer Text**: Text of disclaimer.
+ 
+       * **Logo Image**: You can either choose to use the logo image from the Adaptive Form, choose one from DAM, or upload one from your computer.
+       * **Form Title**: Title of the DoR.
+       * **Header Text**: Text that appears at the header section of the Document of Record.
+       * **Disclaimer Label**: Label of disclaimer.
+       * **Disclaimer**: Text which specifies the scope of rights and obligations on the Document of Record.
+       * **Disclaimer Text**: Text of disclaimer.
 
-        ![Master Page Properties](/help/forms/assets/dorpropertiesimg.png)
+       ![Master Page Properties](/help/forms/assets/dorpropertiesimg.png)
   
-   >[!NOTE]
-   >
-   >If you are using an Adaptive Form template created with a version of Designer prior to 6.3, for Accent Color and Font Family properties to work, ensure that the following is present in your Adaptive Form template under the root subform:
+       >[!NOTE]
+       >
+       >If you are using an Adaptive Form template created with a version of Designer prior to 6.3, for Accent Color and Font Family properties to work, ensure that the following is present in your Adaptive Form template under the root subform:
 
-   ```xml
-   <proto>
-   <font typeface="Arial"/>
-   <fill>
-   <color value="4,166,203"/>
-   </fill>
-   <edge>
-   <color value="4,166,203"/>
-   </edge>
-   </proto>
-   ```
+       ```xml
+       <proto>
+       <font typeface="Arial"/>
+       <fill>
+       <color value="4,166,203"/>
+       </fill>
+       <edge>
+       <color value="4,166,203"/>
+       </edge>
+       </proto>
+       ```
 
 1. To save the branding changes, select **[!UICONTROL Done]**.
 

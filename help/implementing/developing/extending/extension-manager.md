@@ -2,7 +2,7 @@
 title: Learn about the Extension Manager in Adobe Experience Manager as a Cloud Service
 description: The Extension Manager in AEM enables developers and practitioners to enhance the functionality of AEM using extensions built with the App Builder.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 8bc58d13-3c0f-4b09-a95a-f745114ceda1
 ---
 # Extensions and the Extension Manager {#extensions-and-the-extension-manager}

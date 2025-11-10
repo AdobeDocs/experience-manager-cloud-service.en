@@ -3,7 +3,7 @@ title: Add an Adobe Repository in Cloud Manager
 description: Learn how to add an Adobe-managed repository in Cloud Manager.
 exl-id: 6c32c4ae-f48d-4440-bfc2-cdc1a3d59599
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Add an Adobe repository in Cloud Manager {#adobe-repositories}
 

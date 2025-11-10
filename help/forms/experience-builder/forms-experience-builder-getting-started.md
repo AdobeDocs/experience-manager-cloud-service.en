@@ -4,7 +4,7 @@ description: Learn the basics of creating your first AI-powered form with Forms 
 hide: yes
 index: no
 hidefromtoc: yes
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: c4f838bc-a001-48e7-afaa-c2ff9034f5d4
 ---
 # Getting started with Forms Experience Builder {#getting-started-forms-experience-builder}
@@ -59,7 +59,6 @@ Build forms using natural language descriptions of your requirements.
     - Product rating (1-5 stars)
     - Comment field for detailed feedback
     - Customer email (optional)
-    - Submit to email notification
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473104)
 
@@ -164,7 +163,6 @@ Describe what you want in plain English:
     - Add a section for company information
     - Create a dropdown for department selection
     - Include a file upload for resume
-    - Set up email notifications when form is submitted
 
 ### Build incrementally {#build-incrementally}
 
@@ -188,7 +186,6 @@ Start simple and add complexity gradually:
     - Email (required, validated)
     - Subject dropdown (General, Support, Sales, Partnership)
     - Message (required, multi-line)
-    - Submit button
 
 **Customer feedback form:**
 
@@ -196,7 +193,6 @@ Start simple and add complexity gradually:
     - Product rating (1-5 stars)
     - Comment field for detailed feedback
     - Customer email (optional)
-    - Submit to email notification
 
 ### Registration and onboarding forms {#registration-onboarding-forms}
 
@@ -269,6 +265,8 @@ Before deploying any form:
     Add file type validation: only PDF, DOC, DOCX allowed for @resume
     Add file size limit: maximum 5MB for @resume
 
+<!-- 
+
 ## Next steps {#next-steps}
 
 Now that you understand the basics, explore these advanced topics:
@@ -278,12 +276,18 @@ Now that you understand the basics, explore these advanced topics:
 * **[Intelligent import and conversion](intelligent-import-conversion.md)** - Transform existing documents into forms
 * **[Form submission and integration](form-submission-integration.md)** - Connect forms to your business systems
 
+--> 
+
 
 ## Related articles
 
 * [Forms Experience Builder Overview](product-overview.md)
+
+<!-- 
 * [LLM-enhanced smart fields](forms-experience-builder-llm-smart-fields.md)
 * [AI-powered form creation](forms-experience-builder-prompt-examples-library.md)
 * [Intelligent import and conversion](intelligent-import-conversion.md)
 * [Form submission and integration](form-submission-integration.md)
 * [Frequently asked questions](forms-experience-builder-frequently-asked-questions.md)
+
+--> 
