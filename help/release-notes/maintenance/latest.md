@@ -46,6 +46,18 @@ The 2025.11.0 feature activation will provide the full feature set for this main
 * SITES-26158: Edge Delivery with Universal Editor - Add support for table markup in blocks and columns (early access).
 * SITES-27949: Edge Delivery with Universal Editor - Make path mapping optional.
   
+* SITES-35811: Use new index in Content Fragments queries
+* CQ-4361363:  Latest AEM and Granite translations
+* SITES-33206: Update KonMari bundle to 0.0.10
+* SKYOPS-120857: Update filevault to 4.1.4
+* GRANITE-62169: Update commons-lang to 3.19.0
+* SKYOPS-118390: Update JCR Resource to 3.3.6
+* GRANITE-62394: Updated joda-time to 2.12.7
+* GRANITE-36205: Update Oak release to 1.88.0
+* AEMSRE-2896: Disallow the customization of Logging configuration
+* GRANITE-62020: Improve retry policy on RepositoryServiceHttpClient
+* SKYOPS-121082: Update versions of org.apache.sling.discovery.standalone, org.apache.sling.jcr.packageinit and org.apache.sling.commons.fsclassloader sling bundles
+
 ### Fixed Issues {#fixed-issues-23282}
 
 * CQ-4361144: Fixed the skipping of  Content Fragments from Translation Jobs.
@@ -72,6 +84,14 @@ The 2025.11.0 feature activation will provide the full feature set for this main
 * SITES-35333: Edge Delivery with Universal Editor - fix asset rendition selection for images in page metadata.
 * SITES-35549: Edge Delivery with Universal Editor - fix double-encoded html entities in page metadata.
 
+* ASSETS-58926: Fix video change thumbnail feature in DM
+* GRANITE-61318 : Fix an issue where the page creation wizard only highlights mandatory fields in basic tab
+* GRANITE-60514: Fix an issue where stopped scheduled publications during full-stack pipeline run
+* CQ-4360747: Fix an issue where Repeatable Translation Jobs create empty payloads & trigger too often
+* GRANITE-61019: Fix issue with GC on first run after AEM restart
+* ASSETS-58623: Fix npe in omnisearch when config exists
+* GRANITE-60456 - Fix issue when administrator open any user's property page
+
 #### AEM Guides {#guides-23282}
 
 * GUIDES-33597: If an empty `prop` element with no attributes or values is added to a DITAVAL file, then additional `prop` elements cannot be added.
@@ -92,7 +112,21 @@ Deprecated and removed features and APIs in AEM as a Cloud Service are detailed 
 
 ### Security Fixes {#security-23282}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 18 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 30 identified vulnerabilities, reinforcing our commitment to robust system protection.
+
+Security: (TODO: Delete before merge)
+GRANITE-62404 : [VULN-32280] Stored XSS injected at "Configuration Folder Name" and triggered at Templates Component Policy
+GRANITE-61684 JWTAuthenticationHandler login failure when IMS user is changing email address
+CQ-4361221
+GRANITE-62115 - Upgrade com.adobe.granite.crypto
+GRANITE-61420 : Fix XSS violations: GRANITE-61420, GRANITE-61424, GRA… 
+GRANITE-61591
+CQ-4361004-and-GRANITE-61417:
+GRANITE-60087
+GRANITE-60456: Update granite security content package
+CQ-4360564: Sanitising project path to prevent XSS injection
+CQ-4360577: Sanitising path to prevent Cross site scripting attacks
+NPR-42974, CQ-4361221, NPR-43121, NPR-43056
 
 ### Embedded Technologies {#embedded-tech-23282}
 
