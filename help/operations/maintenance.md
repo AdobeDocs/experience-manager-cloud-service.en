@@ -71,7 +71,7 @@ The following table illustrates the maintenance tasks that are available.
     <td>Customer</td>
     <td>
     <p>Must be done in git. Override the out-of-the-box Maintenance window configuration node under <code>/libs</code> by creating properties under the folder <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> or <code>granite_monthly</code>. See the Maintenance Window table below for additional configuration details.</p>
-    <p>Enable the maintenance task by adding another node under the node above (name it <code>granite_WorkflowPurgeTask</code>) with the appropriate properties. Configure the OSGI properties see <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances">AEM 6.5 Maintenance Task documentation</a>.</p>
+    <p>Enable the maintenance task by adding another node under the node above (name it <code>granite_WorkflowPurgeTask</code>) with the appropriate properties. Configure the OSGI properties, see <a href="/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances">Regular Purging of Workflow Instances</a>.</p>
   </td>
   </tr>
   <tr>

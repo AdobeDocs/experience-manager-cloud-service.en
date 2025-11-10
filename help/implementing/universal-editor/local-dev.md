@@ -3,7 +3,7 @@ title: Running Your Own Universal Editor Service
 description: Learn how you can run your own Universal Editor Service either for local development or as part of your own infrastructure.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Running Your Own Universal Editor Service {#local-ue-service}
