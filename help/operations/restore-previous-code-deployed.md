@@ -36,7 +36,7 @@ You simply open the selected environment's ![More icon or ellipsis menu icon](ht
 
 >[!IMPORTANT]
 >
->Adobe highly recommends validating the procedure in `Stage` *before* using it in `Production` to reduce risk and ensure stability.
+>For first-time use, Adobe highly recommends validating the procedure in `Stage` *before* using it in `Production` to reduce risk and ensure stability.
 
 
 If any check fails, Cloud Manager opens the following dialog box that lists one or more unmet conditions and disables **Confirm**, preventing the restore.
@@ -76,3 +76,8 @@ If you just want to restore data, which has been lost, damaged, or accidentally 
 1. Cloud Manager rolls the environment back to the earlier build, keeps content and configuration intact, and marks the environment **Restoring** on the Environments page until deployment completes.
 
     ![Restoring activation](/help/operations/assets/restore-previous-code-deployed-restoring.png)
+
+1. Near the upper-right corner of page, click ![Bell icon or Notifications icon ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **Notifications** to find out when your restore starts and ends.
+
+    ![Restore previous code notifications when starting restore and when restore is completed](/help/operations/assets/restore-previous-code-notifications.png) 
+    *Notifications for a restore previous code job.*
