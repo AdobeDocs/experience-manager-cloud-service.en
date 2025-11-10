@@ -4,7 +4,7 @@ description: Learn how to create intelligent form fields with pre-populated opti
 hide: yes
 index: no
 hidefromtoc: yes
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
 ---
 # LLM-enhanced smart fields in Forms Experience Builder {#llm-enhanced-smart-fields}

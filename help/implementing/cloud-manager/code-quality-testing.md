@@ -4,7 +4,7 @@ description: Learn how code quality testing of pipelines works and how it can im
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Code Quality testing {#code-quality-testing}
 

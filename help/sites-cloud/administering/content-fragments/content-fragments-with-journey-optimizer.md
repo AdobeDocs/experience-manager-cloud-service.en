@@ -2,7 +2,7 @@
 title: Using Content Fragments with Adobe Journey Optimizer
 description: Learn how Content Fragments can be integrated and used with Adobe Journey Optimizer.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
 exl-id: 4090ee41-80f1-4389-8961-e4af891f01ff
 ---

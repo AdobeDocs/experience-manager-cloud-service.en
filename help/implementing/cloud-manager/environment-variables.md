@@ -4,7 +4,7 @@ description: Standard environment variables can be configured and managed throug
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Environment variables in Cloud Manager {#environment-variables}
@@ -129,7 +129,7 @@ See also the [official Maven documentation](https://maven.apache.org/settings.ht
 
 Environment variables can be used in several places as follows:
 
-| Where environment variables can be used | Description | 
+| Where environment variables can be used | Description |
 | --- | --- |
 | Author, Preview, and Publish  | Both regular environment variables and secrets can be used in the authoring, preview, and publishing environments. |
 | Dispatcher | Only regular environment variables can be used with [the Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher).<ul><li>Secrets cannot be used.</li><li>Environment variables cannot be used in `IfDefine` directives.</li><li>Validate your use of environment variables with the [Dispatcher locally](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) before deploying.</li></ul> |
