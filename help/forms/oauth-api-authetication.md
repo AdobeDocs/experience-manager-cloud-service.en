@@ -86,22 +86,22 @@ Follow the steps below which shows you how to generate an access token from the 
     **B. For Adaptive Forms Runtime APIs**
 
    1. **Click Add API**
-      - In your project, click the **Add API** button
+        In your project, click the **Add API** button
 
         ![Add api](/help/forms/assets/adc-add-api.png)
 
-   2. **Select AEM Forms Delivery and Runtime API**
+   1. **Select AEM Forms Delivery and Runtime API**
       1. In the _Add API_ dialog, filter by **Experience Cloud**
       2. Select **"AEM Forms Delivery and Runtime API"**
       3. Click **Next**
 
-   3. **Authentication Method**
-      - Select **OAuth Server-to-Server** authentication method.
+   2. **Authentication Method**
+        Select **OAuth Server-to-Server** authentication method.
 
     
         ![Select Authentication method](/help/forms/assets/adc-add-authentication-method.png)
 
-5. **Add Product Profile**:
+1. **Add Product Profile**:
 
    1. Select the appropriate **Product Profile** based on required access level:
    
@@ -117,7 +117,7 @@ Follow the steps below which shows you how to generate an access token from the 
 
         ![Select Project Configuration](/help/forms/assets/adc-add-product-profile.png)
 
-6. Generate and Save Credentials
+2. Generate and Save Credentials
 
    1. Navigate to your project in Adobe Developer Console
    2. Click on **OAuth Server-to-Server** credential
@@ -137,7 +137,7 @@ Follow the steps below which shows you how to generate an access token from the 
         Scopes: AdobeID,openid,read_organizations
         ```
 
-7. Access Token Generation
+3. Access Token Generation
 
     **A. For Testing**
 
