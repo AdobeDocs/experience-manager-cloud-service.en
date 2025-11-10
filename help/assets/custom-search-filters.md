@@ -20,9 +20,9 @@ Customize search filters AEM Assets can only be mapped to entries in your Search
 
 1. In the **[!UICONTROL Filters]** section, you can configure the following:
 
-   * **[!UICONTROL Files]:** Configuring files involve file types, file formats, status of assets, file size, image dimensions, date created, and date modified.
-   * **[!UICONTROL Folders]:** Configuring folders involve date created, date discarded, and discarded by.
-   * **[!UICONTROL Collections]:** Configuring collections involve collection visibility, collection type, and date created.
+   * **[!UICONTROL Files]:** Configuring files involve file types, file formats, status of assets, file size, image dimensions, date created, date modified, and so on.
+   * **[!UICONTROL Folders]:** Configuring folders involve date created, date discarded, discarded by, and so on.
+   * **[!UICONTROL Collections]:** Configuring collections involve collection visibility, collection type, date created, and so on.
 
 1. You can preview the default **[!UICONTROL Preset Filters]** form available for File, Folder, or Collections. Whereas, you cannot customize or delete this pre-existing form. Alternatively, to create a customized filters form, click **[!UICONTROL Add new form]**.
 
@@ -31,8 +31,6 @@ Customize search filters AEM Assets can only be mapped to entries in your Search
     >Only one customized filter form can be created per category (File, Folder, or Collection).
 
 1. Click **[!UICONTROL Save]** to save the changes.
-
-    >[!VIDEO](https://video.tv.adobe.com/v/3443080)
 
 ## Actions on a Configured Form {#Actions-on-configured-form}
 
@@ -423,6 +421,7 @@ Each filter element is associated with a set of properties. AEM Assets customize
     </tr>
 </table>
 
+>[!VIDEO](https://video.tv.adobe.com/v/3443080)
 
 ## Delete a filter element {#delete-a-filter-element}
 
