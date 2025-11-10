@@ -100,9 +100,9 @@ If the requirements are fulfilled, Extended Security for Healthcare can be appli
 
 ## Environments {#environments}
 
-*HIPAA-ready* does not apply to RDE (Rapid Development Environment), Dev, or Stage environments, as these environments should not contain PHI. 
+*HIPAA-ready* does not apply to RDE (Rapid Development Environment), Dev, or Stage environments, as PHI is not allowed on these environments. 
 
-It is accepted best practice to:
+This means that you must:
 
 * use dummy data for development and testing purposes
 * only process PHI from production environments
