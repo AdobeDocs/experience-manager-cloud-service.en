@@ -1013,9 +1013,13 @@ user-guide-title: AEM as a Cloud Service
     + [Manage Forms applications and tasks in AEM Inbox](/help/forms/manage-applications-inbox.md)
     + [Use the Out of Office option](/help/forms/configure-out-of-office-settings.md)
   + Communications APIs {#using-communications}
+    + [Overview of Communications APIs](/help/forms/aem-forms-communication-api-overview.md)
     + [Introduction to Communications APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+    + [Authentication-OAuth Server-to-Server](/help/forms/oauth-api-authetication.md)
+    + [Authentication JWT(JSON Web Token)](/help/forms/jwt-api-authentication.md)
     + [Communications APIs - Synchronous processing](/help/forms/aem-forms-cloud-service-communications.md)
     + [Communications APIs - Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+    + [Communications APIs - On-Demand processing](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
     + [Generate AFP Output Using the AEM Forms API](/help/forms/document-generation-afp-api.md)
     + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
     + [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
