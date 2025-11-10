@@ -27,7 +27,7 @@ Interactive Communication Templates in AEM allow users to define reusable layout
 
 ## Create an Interactive Communication Template
 
-To create an Interactive Communication Fragment, perform the following steps:
+To create an Interactive Communication Template, perform the following steps:
 
 1. Open your **Adobe Experience Manager (AEM) Forms as a Cloud Service instance**.
 
