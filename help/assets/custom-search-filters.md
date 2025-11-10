@@ -12,18 +12,41 @@ See more about [search](search-assets-view.md).
 
 Customize search filters AEM Assets can only be mapped to entries in your Searchable Property Index. Ensure that any custom metadata is included before configuring your custom filter experience. [!DNL Assets view] helps customizing search filters to streamline the search process. To customize the AEM Assets custom search filters, execute the following steps:
 
-1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
-1. Go to the **[!UICONTROL Search]** tab. Click **[!UICONTROL Customize]** to configure your search form. 
+1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]** > **[!UICONTROL Search]**.
+
+    <!--1. Go to the **[!UICONTROL Search]** tab. Click **[!UICONTROL Customize]** to configure your search form.-->
 
     ![custom search filter settings](assets/custom-search-filter.png)
 
-1. The [!UICONTROL Configure Filters] form appears. Ensure that you are in Edit mode so that you can make modifications in the template. You can switch to [!UICONTROL Preview mode] to see the preview of an existing search form.
-1. Drop filter elements from the [custom filters](#available-custom-filters) on the canvas. You can drag and dropt the component to reorder if needed.
+1. In the **[!UICONTROL Filters]** section, you can configure the following:
 
-    >[!VIDEO](https://video.tv.adobe.com/v/3443080)
+   * **[!UICONTROL Files]:** Configuring files involve file types, file formats, status of assets, file size, image dimensions, date created, date modified, and so on.
+   * **[!UICONTROL Folders]:** Configuring folders involve date created, date discarded, discarded by, and so on.
+   * **[!UICONTROL Collections]:** Configuring collections involve collection visibility, collection type, date created, and so on.
 
-1. Click **[!UICONTROL Preview mode]** to review the changes.
-1. Click **[!UICONTROL Confirm]** to save.
+1. You can preview the default **[!UICONTROL Preset Filters]** form available for File, Folder, or Collections. Whereas, you cannot customize or delete this pre-existing form. Alternatively, to create a customized filters form, click **[!UICONTROL Add new form]**.
+
+    >[!NOTE]
+    >
+    >Only one customized filter form can be created per category (File, Folder, or Collection).
+
+1. Click **[!UICONTROL Save]** to save the changes.
+
+## Actions on a Configured Form {#Actions-on-configured-form}
+
+You can use the following actions on a configured filters form:
+
+* **[!UICONTROL Customize]:** Click to add or modify the form. You can drop filter elements from the [custom filters](#available-custom-filters) on the canvas or reorder if needed.
+
+* **[!UICONTROL Preview]:** Click to review the changes.
+
+* **[!UICONTROL Set as default]:** Click to set the selected form as your default.
+
+* **[!UICONTROL Delete a form]:** Click more options ![more options](assets/do-not-localize/more-icon.svg) and select **[!UICONTROL Delete a form]** to delete the selected filters form.
+
+* **[!UICONTROL Edit form labels]:** Click more options ![more options](assets/do-not-localize/more-icon.svg) and add new label and description to your customized filters form.
+
+    ![edit form labels](assets/edit-form-labels.png)
 
 ## Available custom filters {#available-custom-filters} 
 
@@ -398,6 +421,7 @@ Each filter element is associated with a set of properties. AEM Assets customize
     </tr>
 </table>
 
+>[!VIDEO](https://video.tv.adobe.com/v/3443080)
 
 ## Delete a filter element {#delete-a-filter-element}
 
