@@ -7,7 +7,7 @@ role: Admin
 
 # Universal Editor Preview Release Notes {#preview}
 
-These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 6 November 2025.
+These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 13 November 2025.
 
 These **preview** release notes are provided as a convenience so you know what changes to the Universal Editor are upcoming and you can test them by [switching to your preview environment.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -19,11 +19,14 @@ These **preview** release notes are provided as a convenience so you know what c
 >
 >The content of the actual release as well as the release date are subject to change.
 
+## Upcoming New Features {#what-is-new}
+
+* The contextual menu in the panel header and right-rail have been improved.
+* json schemas are now delivered for validation.
+* Developer AEM login is now a core part of the Universal Editor and the extension is no longer needed. 
+
 ## Upcoming Improvements {#other-improvements}
 
-* A navigation problem was fixed when a user edits the location bar in the editor the browser such that those changes are properly reflected and the editor and/or app now navigates to requested URL.
-* Field model resolution was corrected and the editor uses model from component if present.
-* The componentId is now included on the /add action.
-* The ability to delete some metadata properties that previously were not possible to remove was fixed.
-* Raw fetch is now conditionally done for xwalk when not set by the AEM plugin.
-* Content fragment MSM handling with RTE has been corrected.
+* How the structure tree auto-expands by default has been adjusted.
+* A specific width for the for the contextual menu was added.
+* Failures of the Universal Editor Service due to certain `null` values was fixed.
