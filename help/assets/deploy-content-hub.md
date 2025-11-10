@@ -32,12 +32,12 @@ The following table summarizes the available Content Hub user types, the privile
 
 | User Role    | Content Hub users | Content Hub users with rights to add assets  | Content Hub users with rights to remix assets | Content Hub administrators |
 |---------------|----------|----------|-------------------------|---|
-| **Capabilities**|
+| **Capabilities**|||||
 | Access brand approved assets on the Content Hub portal |&#10003; | &#10003;|   &#10003;  |&#10003;|
 | Upload assets from Content Hub portal    | &minus; | &#10003; | &#10003;   |&#10003;|
 | Use Adobe Express integration to edit images     |  &minus; |  &minus; |     &#10003;   |&minus;|
 | Access the Content Hub configuration UI        | &minus; | &minus; |   &minus;   |&#10003;|
-| **User needs to be in these product profiles (Admin Console)**|
+| **User needs to be in these product profiles (Admin Console)**|||||
 | AEM > Delivery instance > AEM Assets Limited Users | &#10003;  | &#10003;  |   &#10003;     |&#10003;|
 | AEM > Production Author instance > AEM Users         | &minus; | &#10003; |   &#10003;    |&minus;|
 | AEM > Production Author instance > AEM Administrators |  &minus; | &minus; | &minus;  |&#10003;|
@@ -76,14 +76,42 @@ To enable Content Hub for Experience Manager Assets:
 
 1. Click **[!UICONTROL Update]**.
 
-Content Hub is now enabled for Experience Manager Assets as a Cloud Service. After enabling Content Hub on a Production environment, you cannot disable it in a self-service manner.
+Content Hub is now enabled for Experience Manager Assets as a Cloud Service. After enabling Content Hub on a Production environment, you cannot disable it in a self-service manner. 
 
 >[!NOTE]
 >
->You can access and use Content Hub with up to 250 Content Hub users. Please contact your Adobe representative if you have additional questions. 
+>You can access and use Content Hub with up to 250 Content Hub Limited users for Assets Ultimate and 50 Content Hub users for Assets Prime. Contact your Adobe representative if you have additional questions. 
 
 
 If you are new to Experience Manager Assets, click **[!UICONTROL Add Program]** and then provide program details (Program Name, set up for Production) and click **[!UICONTROL Continue]**. You can then select **[!UICONTROL Assets]** and **[!UICONTROL Content Hub]** in the **[!UICONTROL Solutions & Add-ons]** tab.
+
+### Enable Content Hub for lower environments {#enable-content-hub-lower-environments}
+
+The following Content Hub credits are available to you based on the AEM Assets license:
+
+* Assets Ultimate: 3 Content Hub credits
+
+* Assets Prime: 1 Content Hub credit
+
+* Existing Assets as a Cloud service customers: 1 Content Hub credit
+
+You utilize one credit to enable Content Hub on each environment, such as, Production, Development, or Stage.
+
+To enable Content Hub for lower environments:
+
+1. [Enable Content Hub for Experience Manager Assets using Cloud Manager](#enable-content-hub).
+
+1. Click the program card to view the list of available environments (Production, Development, or Stage).
+
+1. Click the environment that you need to enable. The **[!UICONTROL Content Hub]** section displays `Content Hub is available for activation`.
+
+    ![Enable Content Hub for lower environments](assets/enable-content-hub-lower-environments.png)
+
+1. Click **[!UICONTROL Click to activate]**. Click **[!UICONTROL Activate]** again to confirm.
+
+   Content Hub is enabled for the selected environment.
+
+
 
 ### Content Hub instance and product profile on Admin Console{#content-hub-instance-product-profile}
 
@@ -223,3 +251,17 @@ To configure Experience Manager Assets users:
    >[!NOTE]
    >
    > You do not need to be added to the [Content Hub product profile](#onboard-content-hub-users) for the Experience Manager Assets users.
+
+## Enable Content Hub for existing Assets as a Cloud Service customers {#enable-content-hub-exisitng-cs-customers}
+
+Existing Assets as a Cloud Service customers have 250 Content Hub Limited users included in the license. Execute the following steps to enable Content Hub:
+
+1. [Enable Content Hub for Experience Manager Assets using Cloud Manager](#enable-content-hub).
+
+1. [Onboard Content Hub Limited users](#onboard-content-hub-users). These users can access assets available on the portal but cannot add any new assets or modify existing assets.
+
+1. If the users need to add assets to the Content Hub portal, add them to the `AEM Users` product profile. For more information, see [Onboard Content Hub users with rights to add assets](#onboard-content-hub-users-add-assets).
+
+1. If the users need to access the Content Hub Configuration User Interface, add them to the `AEM Administrators` product profile. For more information, see [Onboard Content Hub administrator](#onboard-content-hub-administrator).
+
+If the users do not get appropriate privileges even after adding them to the relevant product profiles, contact your Adobe representative.

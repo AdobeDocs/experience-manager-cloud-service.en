@@ -769,7 +769,7 @@ You can observe the lifecycle status of any caption or audio track file uploaded
 | Processed | After processing is complete, the caption or audio track file, or the original audio track associated with the primary video, appear in a "Processed" state. You can preview caption and audio track files that appear as "Processed" *before* you publish the video live. |
 | Published | A "Published" state represents a similar state as "Published" for a primary video. Assets are published when the primary video is published and are available on the public Dynamic Media URL. |
 | Failed | A "Failed" state means that processing of a caption or audio track file did not complete. Delete the caption or audio track file and upload again. |
-| Unpublished | When a published primary video is unpublished explicitly, any caption or audio track files that you added to the video, are also unpublished. |   
+| Unpublished | When a published primary video is unpublished explicitly, any caption or audio track files that you added to the video, are also unpublished. |
 
 
 ### Set the default audio for a video that has multiple audio tracks
@@ -880,7 +880,7 @@ The original audio track extracted from a primary video file cannot be downloade
     | Create a separate folder for each asset | Create a folder for each caption file or audio track file that you selected for download. |
     | Email | Use your default email program to send the .zip file to a specified email address. |
     | Assets | Specifies the number of files that you are downloading and the combined total size of all selected files. Deselecting this option dims (turns off) the **[!UICONTROL Download]** button, preventing you from downloading any file. |
-    | Renditions | A rendition refers to an alternative version or a preview of the original file, usually a smaller or lower-resolution version. If it is shown as 0 B, it likely means that no alternate version is available or it is too small to register a size. | 
+    | Renditions | A rendition refers to an alternative version or a preview of the original file, usually a smaller or lower-resolution version. If it is shown as 0 B, it likely means that no alternate version is available or it is too small to register a size. |
 
 1. Select **[!UICONTROL Download]**.
 1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
@@ -1558,7 +1558,7 @@ With multiple caption and audio track capability in Dynamic Media, you can easil
 
 Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
 
-| Type | Use case | 
+| Type | Use case |
 | --- | --- |
 | Captions | Multiple language support<br>Descriptive text for accessibility |
 | Audio tracks | Multiple language support<br>Commentary tracks<br>Descriptive audio |

@@ -195,13 +195,13 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
         Ensure that the content between `"objId": "",` and `"url"` matches the JSON response. The recommended method to do this is to copy from any Event Subscription that has an `objId` and then delete the number.
 
      1. Note the event subscription ID.
-
      1. Delete the wrong event subscription. Make a Delete API call to `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
 
         `200` as the response code signifies successful deletion of wrong event subscriptions.
-    >[!NOTE]
-    >
-    >If you have already deleted the wrong event subscriptions before executing the steps mentioned in this procedure, you can skip the last step of this procedure.
+
+        >[!NOTE]
+        >
+        >If you have already deleted the wrong event subscriptions before executing the steps mentioned in this procedure, you can skip the last step of this procedure.
 
 ### October 2022 release {#october-2022-release}
 
