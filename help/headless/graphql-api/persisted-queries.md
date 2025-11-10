@@ -295,7 +295,7 @@ By default AEM will invalidate cache based on a Time To Live (TTL) definition. T
 |Cache Type |[HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control) |cURL |OSGi Configuration |Cloud Manager |
 |--- |--- |--- |--- |--- |
 |Browser |`max-age` |`cache-control : max-age` |`cacheControlMaxAge` |`graphqlCacheControl` |
-|CDN |`s-maxage` |`surrogate-control : max-age` |`surrogateControlMaxAge` |`graphqlSurrogateControl` |60 |
+|CDN |`s-maxage` |`surrogate-control : max-age` |`surrogateControlMaxAge` |`graphqlSurrogateControl` \|60 |
 |CDN |`stale-while-revalidate` |`surrogate-control : stale-while-revalidate `|`surrogateControlStaleWhileRevalidate` |`graphqlStaleWhileRevalidate` |
 |CDN |`stale-if-error` |`surrogate-control : stale-if-error` |`surrogateControlStaleIfError` |`graphqlStaleIfError` |
 
