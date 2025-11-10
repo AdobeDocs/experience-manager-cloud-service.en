@@ -17,6 +17,8 @@ Use **Restore previous code deployed** to roll an environment back instantly to 
 
 You simply open the selected environment's ![More icon or ellipsis menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) menu and choose **Restore** > **Previous code deployed** to roll back the most recently deployed source code in seconds.
 
+See also [Restore Content in AEM as a Cloud Service](/help/operations/restore.md).
+
 >[!TIP]
 >
 >You can view the active source-code version in use in the environment's details view, under the **General** tab. See [View details of an environment](/help/implementing/cloud-manager/manage-environments.md#viewing-environment).
