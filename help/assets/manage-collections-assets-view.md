@@ -112,7 +112,7 @@ You can search within a collection to easily find relevant assets. To do this, e
 
 * The **[!DNL Created Date]** dropdown enables you to filter collections based on when they were created. You can specify a date range to find recently created or older collections.
 
-![Search collection](assets/search-collection.png)
+   ![Search collection](assets/search-collection.png)
 
 For more information, see [search assets](search-assets-view.md), [filter search results](search-assets-view.md#refine-search-results), or [manage saved searches](search-assets-view.md##saved-search).
 
