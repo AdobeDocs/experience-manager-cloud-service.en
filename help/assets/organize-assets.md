@@ -94,7 +94,7 @@ For more information, see the following articles:
 
 * [Edit asset metadata](meta-edit.md)
 * [Smart Tags in Assets](smart-tags.md)
-* [Add tags predicate to the search panel](/help/assets/search-facets.md/#adding-a-tags-predicate)
+* [Add tags predicate to the search panel](/help/assets/search-facets.md#adding-a-tags-predicate)
 
 ## Organize as collections {#organize-as-collections}
 

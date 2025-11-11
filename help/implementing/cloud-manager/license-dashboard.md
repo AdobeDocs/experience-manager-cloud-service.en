@@ -4,7 +4,7 @@ description: Cloud Manager provides a dashboard for easy viewing of AEMaaCS prod
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # License dashboard {#license-dashboard}

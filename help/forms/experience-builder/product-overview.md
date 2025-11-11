@@ -5,34 +5,47 @@ feature: Edge Delivery Services
 hide: yes
 index: no
 hidefromtoc: yes
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 183e999c-9896-49a2-b29b-7c77da380df9
 ---
 # Overview
 
 The AEM Forms Experience Builder leverages Generative AI to accelerate the creation of digital forms through natural language. This powerful tool enables both technical and non-technical users to design, modify, and optimize professional-grade forms using a simple, conversational interface.
 
-This revolutionary approach democratizes form creation, dramatically reduces time-to-value from days to hours, and scales modernization efforts across your entire form ecosystem.
+Forms Experience Builder enables rapid form creation through conversational AI while empowering non-technical users to create sophisticated forms without coding knowledge. You can design complex layouts, implement validation rules, and configure submission actions through simple conversational commands.
+
+## Core capabilities
+
+Forms Experience Builder offers two primary workflows for creating powerful digital forms:
+
+### AI-powered form creation
+
+**Natural Language Form Generation**
+
+Create complete forms from scratch using plain English descriptions. Simply describe your requirements, such as "Create a customer feedback form with rating scales and comment fields," and the Forms Experience Builder generates the appropriate form structure. You use the experience builder of visual editors to add more fields, validation rules, and submission logic. 
+
+**Dynamic Field Management**
+
+Add, modify, or remove form fields through conversational commands. The AI understands context and can intelligently suggest field types, validation rules, and user interface improvements based on your requirements.
+
+**Layout Optimization**
+
+Update form layouts and configurations through natural language. Request changes like "Change form layout to wizard layout" and the Forms Experience Builder applies appropriate styling and layout adjustments.
+
+### Intelligent import and conversion
+
+Transform existing documents into interactive digital experiences. The Forms Experience Builder supports various formats, analyzing uploaded content to detect field types, preserve layouts, and enhance forms with responsive design and advanced logic. Supported formats include:
+
+- **Acroforms**: Interactive PDF forms with existing field structures
+- **XFA PDFs**: Complex XML-based form architectures
+- **Flat PDFs**: Static documents converted to interactive forms
+- **Images and Screenshots**: JPG, PNG formats
+- **Hand-drawn Forms**: Sketches and paper form photographs
+
 
 ## Forms Experience Builder demo {#forms-experience-builder-demo}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463164/)
-
-## Why Forms Experience Builder?
-
-Forms Experience Builder offers the following key benefits:
-
-**Create forms using natural language descriptions**
-
-AEM Forms serves as a single source of truth and Forms Experience Builder enables rapid form creation through conversational AI, dramatically reducing development time from days to hours.
-
-**Intelligent import and conversion capabilities**
-
-Transform existing documents into interactive digital experiences. The Forms Experience Builder supports various formats, analyzing uploaded content to detect field types, preserve layouts, and enhance forms with responsive design and advanced logic.
-
-**Empower non-technical users to create professional forms**
-
-Forms Experience Builder allows you to create sophisticated forms without coding knowledge. You can design complex layouts, implement validation rules, and configure submission actions through simple conversational commands.
 
 ## Onboarding & pre-requisites 
 
@@ -145,24 +158,9 @@ Experience Builder requires AEM Forms as a Cloud Service production author envir
 </td>
 </table> -->
 
-## Core capabilities
 
-Forms Experience Builder offers two primary workflows for creating powerful digital forms:
 
-### AI-powered form creation
-
-**Natural Language Form Generation**
-
-Create complete forms from scratch using plain English descriptions. Simply describe your requirements, such as "Create a customer feedback form with rating scales and comment fields," and the Forms Experience Builder generates the appropriate form structure. You use the experience builder of visual editors to add more fields, validation rules, and submission logic. 
-
-**Dynamic Field Management**
-
-Add, modify, or remove form fields through conversational commands. The AI understands context and can intelligently suggest field types, validation rules, and user interface improvements based on your requirements.
-
-**Layout Optimization**
-
-Update form layouts and configurations through natural language. Request changes like "Change form layout to wizard layout" and the Forms Experience Builder applies appropriate styling and layout adjustments.
-
+<!--
 **Comprehensive Submit Action Configuration**
 
 Configure form submissions to integrate with your existing business systems:
@@ -173,28 +171,8 @@ Configure form submissions to integrate with your existing business systems:
 - **Workflow Automation**: Connect to Power Automate and Workfront Fusion
 - **Marketing Platforms**: Direct integration with Marketo for lead management
 - **AEM Workflows**: Leverage existing AEM workflow capabilities
+-->
 
-
-### Intelligent import and conversion
-
-Transform existing documents into interactive digital experiences. The Forms Experience Builder supports various formats, analyzing uploaded content to detect field types, preserve layouts, and enhance forms with responsive design and advanced logic. Supported formats include:
-
-- **Acroforms**: Interactive PDF forms with existing field structures
-- **XFA PDFs**: Complex XML-based form architectures
-- **Flat PDFs**: Static documents converted to interactive forms
-- **Images and Screenshots**: JPG, PNG formats
-- **Hand-drawn Forms**: Sketches and paper form photographs
-
-
-
-## Forms Experience Builder vs traditional development
-
-| Aspect | Traditional Form Creation | Forms Experience Builder |
-|--------|---------------------------|----------------------|
-| **Time to Create** | 2-3 days | 2-3 hours |
-| **Technical Knowledge** | Required | Not required |
-| **Validation Rules** | Manual coding | Natural language |
-| **Accessibility** | Manual implementation | Built-in compliance |
 
 ## Start exploring
 
@@ -208,7 +186,7 @@ Here are a few ways you can start exploring the Forms Experience Builder:
 
 - **Integrate with your systems**: Configure form submissions to connect with your existing business workflows, whether it's sending data to a REST API, creating a new lead in your CRM, or saving documents to cloud storage. [Learn more](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md#data-integration--submission).
 
-## Onboarding
+<!-- ## Onboarding
 
 The Forms Experience Builder is currently available through an Early Access Program. To request access, follow these steps:
 
@@ -227,3 +205,5 @@ The Forms Experience Builder is currently available through an Early Access Prog
 ## Getting started
 
 To get started with the Forms Experience Builder, visit the [Forms Experience Builder documentation](/help/forms/experience-builder/forms-experience-builder-getting-started.md).
+
+--> 

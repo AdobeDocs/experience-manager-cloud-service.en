@@ -4,7 +4,7 @@ description: In this optional continuation of the AEM Headless Developer Journey
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # How to Create Single Page Applications (SPAs) with AEM {#create-spa}
 

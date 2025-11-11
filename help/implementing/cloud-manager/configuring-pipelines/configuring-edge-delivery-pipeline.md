@@ -3,7 +3,7 @@ title: Add an Edge Delivery Pipeline
 description: Learn how to add an Edge Delivery pipeline to build and deploy your code to production environments.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: no
 index: no
 hidefromtoc: no

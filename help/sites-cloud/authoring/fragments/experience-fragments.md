@@ -40,6 +40,7 @@ You can use Experience Fragments:
 >[!NOTE]
 >
 >**[Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md)** and **Experience Fragments** are different features within AEM:
+>
 >* **Content Fragments** are editorial content, with definition and structure, but without additional visual design and/or layout. They can be used to access structured data, including texts, numbers, and dates, amongst others. 
 >* **Experience Fragments** are fully laid out content; a fragment of a web page.
 >
@@ -73,8 +74,8 @@ Experience Fragments should be used:
 ## Organizing your Experience Fragments {#organizing-your-experience-fragments}
 
 It is recommended to:
-* use folders to organize your Experience Fragments, 
 
+* use folders to organize your Experience Fragments, 
 * [configure the allowed templates on these folders](#configure-allowed-templates-folder).
 
 Creating folders lets you:
