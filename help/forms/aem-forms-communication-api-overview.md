@@ -4,7 +4,7 @@ description: Overview of AEM Forms Communications APIs including authentication 
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
 hide: yes
-hidefromToC: yes
+hidefromtoc: yes
 index: no
 ---
 
