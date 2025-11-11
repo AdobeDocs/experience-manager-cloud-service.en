@@ -12,7 +12,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 23320 {#23320}
 
-Summarized below are the continuous improvements for maintenance release 23320, which was publicly released on November 11, 2025. The previous maintenance release was release 22943.
+Summarized below are the continuous improvements for maintenance release 23320, which was publicly released on November 12, 2025. The previous maintenance release was release 22943.
 
 The 2025.11.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
@@ -22,6 +22,7 @@ The 2025.11.0 feature activation will provide the full feature set for this main
 
 ### Enhancements {#enhancements-23320}
 
+* CQ-4361363: Latest AEM and Granite translations.
 * FORMS-21594: Enable Locking of Interactive Communications Template Content & Layout for Content Authors.
 * FORMS-20385: Support XDP Editing in Interactive Communications Editor.
 * FORMS-10883: Support for JSON with XHTML namespace tags in DoR generation to ensure accurate rendering of rich-text data submitted via APIs.
@@ -30,6 +31,10 @@ The 2025.11.0 feature activation will provide the full feature set for this main
 * FORMS-22050: Support for dynamic page numbering in Interactive Communications Editor.
 * FORMS-21606: Public OSGi Render SPIs for Interactive Communications.
 * FORMS-21613: Transaction reporting and performance logging for Render Interactive Communications SPIs.
+* GRANITE-62394: Updated joda-time to 2.12.7.
+* GRANITE-36205: Update Oak release to 1.88.0.
+* GRANITE-62020: Improve retry policy on `RepositoryServiceHttpClient`.
+* GRANITE-62169: Update commons-lang to 3.19.0.
 * SITES-35092: Content Fragments - New mixin and upgrade procedure for semantic search.
 * SITES-32319: Delivery OpenAPI - Support page references.
 * SITES-20123: GraphQL: Support superscript elements in JSON response.
@@ -45,20 +50,22 @@ The 2025.11.0 feature activation will provide the full feature set for this main
 * SITES-25893: Edge Delivery with Universal Editor - Add support for strong and emphasize to text rendering in blocks.
 * SITES-26158: Edge Delivery with Universal Editor - Add support for table markup in blocks and columns (early access).
 * SITES-27949: Edge Delivery with Universal Editor - Make path mapping optional.
-* SITES-35811: Use new index in Content Fragments queries
-* CQ-4361363: Latest AEM and Granite translations
-* SKYOPS-120857: Update filevault to 4.1.4
-* GRANITE-62169: Update commons-lang to 3.19.0
-* SKYOPS-118390: Update JCR Resource to 3.3.6
-* GRANITE-62394: Updated joda-time to 2.12.7
-* GRANITE-36205: Update Oak release to 1.88.0
-* GRANITE-62020: Improve retry policy on RepositoryServiceHttpClient
-* SKYOPS-121082: Update versions of org.apache.sling.discovery.standalone, org.apache.sling.jcr.packageinit and org.apache.sling.commons.fsclassloader sling bundles
+* SITES-35811: Use new index in Content Fragments queries.
+* SKYOPS-120857: Update filevault to 4.1.4.
+* SKYOPS-118390: Update JCR Resource to 3.3.6.
+* SKYOPS-121082: Update versions of `org.apache.sling.discovery.standalone`, `org.apache.sling.jcr.packageinit` and `org.apache.sling.commons.fsclassloader` sling bundles.
 
 ### Fixed Issues {#fixed-issues-23320}
 
+* ASSETS-58926: Fix video change thumbnail feature in DM.
+* ASSETS-58623: Fix npe in omnisearch when config exists.
 * CQ-4361144: Fixed the skipping of  Content Fragments from Translation Jobs.
 * CQ-4355446: Fixed the unlocalised string in Translation project occurring on Cancel translation job dialog.
+* CQ-4360747: Fix an issue where Repeatable Translation Jobs create empty payloads & trigger too often.
+* GRANITE-61318: Fix an issue where the page creation wizard only highlights mandatory fields in basic tab.
+* GRANITE-60514: Fix an issue where stopped scheduled publications during full-stack pipeline run.
+* GRANITE-61019: Fix issue with GC on first run after AEM restart.
+* GRANITE-60456: Fix issue when administrator open any user's property page.
 * SITES-34555: GraphQL - QueryValidationError after deployments.
 * SITES-35077: Content Fragments - Unpublish fails for fragments with parentheses due to incorrect URL-encoding.
 * SITES-35374: Content Fragments - Edited Content Fragment Disappears After Navigating Back.
@@ -80,13 +87,6 @@ The 2025.11.0 feature activation will provide the full feature set for this main
 * SITES-34324: Edge Delivery with Universal Editor - fix rendering of links with a tel: protocol.
 * SITES-35333: Edge Delivery with Universal Editor - fix asset rendition selection for images in page metadata.
 * SITES-35549: Edge Delivery with Universal Editor - fix double-encoded html entities in page metadata.
-* ASSETS-58926: Fix video change thumbnail feature in DM
-* GRANITE-61318: Fix an issue where the page creation wizard only highlights mandatory fields in basic tab
-* GRANITE-60514: Fix an issue where stopped scheduled publications during full-stack pipeline run
-* CQ-4360747: Fix an issue where Repeatable Translation Jobs create empty payloads & trigger too often
-* GRANITE-61019: Fix issue with GC on first run after AEM restart
-* ASSETS-58623: Fix npe in omnisearch when config exists
-* GRANITE-60456: Fix issue when administrator open any user's property page
 
 #### AEM Guides {#guides-23320}
 
@@ -108,7 +108,7 @@ Deprecated and removed features and APIs in AEM as a Cloud Service are detailed 
 
 ### Security Fixes {#security-23320}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 30 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 31 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
 ### Embedded Technologies {#embedded-tech-23320}
 
