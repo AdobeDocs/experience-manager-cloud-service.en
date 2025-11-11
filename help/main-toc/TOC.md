@@ -1032,7 +1032,7 @@ user-guide-title: AEM as a Cloud Service
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
     + [List of supported fonts in PDF documents](/help/forms/supported-out-of-the-box-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
-  + Transaction Reports {#using-communications}
+  + Transaction Reports {#transaction-reports}
     + [Transaction Reports Billable APIs ](/help/forms/transaction-reports-billable-apis.md)
     + [Record a transaction for a custom implementation](/help/forms/record-transaction-custom-implementation.md)
   + Value Realization Dashboard  {#vr-dashboard}
