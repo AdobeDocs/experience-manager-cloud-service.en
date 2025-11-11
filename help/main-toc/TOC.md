@@ -1065,8 +1065,6 @@ user-guide-title: AEM as a Cloud Service
       + [Overview](/help/ai-in-aem/agents/development/overview.md)
     + Governance Agent {#governance}
       + [Overview](/help/ai-in-aem/agents/governance/overview.md)
-    + Production Agent {#production}
-      + [Overview](/help/ai-in-aem/agents/production/overview.md)
     + Market Intelligence Agent {#market-intelligence}
       + [Overview](/help/ai-in-aem/agents/market-intelligence/overview.md)
     + Site Optimization Agent {#site-optimization}
