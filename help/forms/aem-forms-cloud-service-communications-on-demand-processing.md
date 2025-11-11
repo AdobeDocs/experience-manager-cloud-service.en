@@ -116,7 +116,7 @@ Clone the Cloud Manager Git Repository to manage your API configuration files.
         ![Clonning the Git Repository](/help/forms/assets/repo-clone.png)
 
 
-### Git Repository Integration Options
+**Git Repository Integration Options**
 
 Adobe Cloud Manager supports both repository options:
 
