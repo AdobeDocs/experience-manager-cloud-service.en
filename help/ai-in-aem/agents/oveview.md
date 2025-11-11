@@ -9,25 +9,25 @@ role: Admin, Architect, Developer
 
 These business agents are available in AEM to accelerate your content creation and automatically orchestrate changes.
 
-## Experience Production Agent {#experience-production-agent}
+## Production Agent {#production-agent}
 
-The [Experience Production Agent](/help/ai-in-aem/agents/experience-production/overview.md) automates high effort and high-volume tasks. Empowering teams and turning manual, weeks-long processes into fast, AI-assisted workflows that keep every experience current and consistent helping the business achieve their goals.
+The [Production Agent](/help/ai-in-aem/agents/production/overview.md) automates high effort and high-volume tasks. Empowering teams and turning manual, weeks-long processes into fast, AI-assisted workflows that keep every experience current and consistent helping the business achieve their goals.
 
 ## Content Optimization Agent {#content-optimization-agent}
 
 The [Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/overview.md) is ...
 
-## Experience Advisory Agent {#experience-advisory-agent}
+## Discovery Agent {#discovery-agent}
 
-The [Experience Advisory Agent](/help/ai-in-aem/agents/experience-advisory/overview.md) is ...
+The [Discovery Agent](/help/ai-in-aem/agents/discovery/overview.md) is ...
 
-## Experience Development Agent {#experience-development-agent}
+## Development Agent {#development-agent}
 
-The [Experience Development Agent](/help/ai-in-aem/agents/experience-development/overview.md) is ...
+The [Development Agent](/help/ai-in-aem/agents/development/overview.md) is ...
 
-## Experience Governance Agent {#experience-governance-agent}
+## Governance Agent {#governance-agent}
 
-The [Experience Governance Agent](/help/ai-in-aem/agents/experience-governance/overview.md) is ...
+The [Governance Agent](/help/ai-in-aem/agents/governance/overview.md) is ...
 
 ## Market Intelligence Agent {#market-intelligence-agent}
 

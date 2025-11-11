@@ -1,11 +1,11 @@
 ---
-title: Content Optimization Agent Overview
+title: Development Agent Overview
 description: Learn what ...
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 ---
 
-# Content Optimization Agent Overview {#content-optimization-agent}
+# Development Agent Overview {#development-agent}
 
 Learn what ...
 
