@@ -1050,7 +1050,7 @@ user-guide-title: AEM as a Cloud Service
     + [502 Error Page in Custom Submit Action](/help/forms/custom-submit-action-troubleshooting.md)
 + AI in AEM {#ai-in-aem}
   + [Overview](/help/ai-in-aem/overview.md)
-  + AEM Business Agents {#aem-business-agents}
+  + AEM Business Agents {#business-agents}
     + [Overview](/help/ai-in-aem/agents/oveview.md)
     + Production Agent {#production}
       + [Overview](/help/ai-in-aem/agents/production/overview.md)
@@ -1063,10 +1063,10 @@ user-guide-title: AEM as a Cloud Service
       + [Overview](/help/ai-in-aem/agents/discovery/overview.md)
     + Development Agent {#development}
       + [Overview](/help/ai-in-aem/agents/development/overview.md)
-    + Experience Governance Agent {#experience-governance}
-      + [Overview](/help/ai-in-aem/agents/experience-governance/overview.md)
-    + Experience Production Agent {#experience-production}
-      + [Overview](/help/ai-in-aem/agents/experience-production/overview.md)
+    + Governance Agent {#governance}
+      + [Overview](/help/ai-in-aem/agents/governance/overview.md)
+    + Production Agent {#production}
+      + [Overview](/help/ai-in-aem/agents/production/overview.md)
     + Market Intelligence Agent {#market-intelligence}
       + [Overview](/help/ai-in-aem/agents/market-intelligence/overview.md)
     + Site Optimization Agent {#site-optimization}
