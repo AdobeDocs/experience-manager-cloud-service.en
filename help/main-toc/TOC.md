@@ -1058,9 +1058,9 @@ user-guide-title: AEM as a Cloud Service
       + [Site Migrator](/help/ai-in-aem/agents/production/site-migration-job.md)
       + [Form Creation Job](/help/ai-in-aem/agents/production/form-creation-job.md)
     + Content Optimization Agent {#content-optimization}
-      + [Overview](/help/ai-in-aem/agents/content-optimization/overview.md)
+      + [Using Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/using-content-optimization-agent.md)
     + Discovery Agent {#discovery}
-      + [Overview](/help/ai-in-aem/agents/discovery/overview.md)
+      + [Using Discovery Agent](/help/ai-in-aem/agents/discovery/using-discovery-agent.md)
     + Development Agent {#development}
       + [Overview](/help/ai-in-aem/agents/development/overview.md)
     + Governance Agent {#governance}
