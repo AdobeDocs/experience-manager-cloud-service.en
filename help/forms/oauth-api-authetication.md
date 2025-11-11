@@ -4,7 +4,7 @@ description: Learn how to configure OAuth Server-to-Server authentication for Ad
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
 hide: yes
-hidefromToC: yes
+hidefromtoc: yes
 index: no
 ---
 
