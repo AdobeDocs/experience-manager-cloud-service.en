@@ -3,9 +3,6 @@ title: Business Agents Overview
 description: Learn what business agents are available in AEM to accelerate your content creation and automatically orchestrate changes.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hidefromtoc: yes
-index: no
-hide: yes
 ---
 
 # AEM Business Agents Overview {#business-agents-overview}

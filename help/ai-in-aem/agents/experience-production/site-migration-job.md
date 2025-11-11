@@ -3,9 +3,6 @@ title: Site Migration job
 description: Learn what the Experience Production Agent's Site Migration Job is and what it can do for you.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hidefromtoc: yes
-index: no
-hide: yes
 ---
 
 # Site Migration job {#site-migration-job}

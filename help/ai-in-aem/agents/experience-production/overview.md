@@ -3,9 +3,6 @@ title: Experience Production Agent Overview
 description: Learn what agents are available in AEM to accelerate your content creation and automatically orchestrate changes.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hidefromtoc: yes
-index: no
-hide: yes
 ---
 
 # Experience Production Agent Overview {#experience-production-agent}
