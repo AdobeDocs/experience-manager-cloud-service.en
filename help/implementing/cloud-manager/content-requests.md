@@ -103,7 +103,7 @@ As mentioned in the above section [Variances of Cloud Service content requests](
 ### Implementation techniques to manage content requests {#implementation-techniques-to-manage-crs}
 
 * Ensure that any Page Not Found responses are delivered with an HTTP status 404.  If they are returned with a status 200, they will count toward content requests.
-* Route health check or monitoring tools to the /systems/probes/health URL or use the HEAD method instead of GET to avoid incurring content requests.
+* Route health check or monitoring tools to the /system/probes/health URL or use the HEAD method instead of GET to avoid incurring content requests.
 * Balance your needs for freshness of content with AEM license cost for any custom search crawler you have integrated with your site.  An overly aggressive crawler may consume a lot of content requests.
 * Handle any redirects as server-side (status 301 or 302) rather than client-side (status 200 with javascript redirect) to avoid two separate content requests.
 * Combine or reduce API calls, which are JSON responses from AEM that may be loaded to render the page.
