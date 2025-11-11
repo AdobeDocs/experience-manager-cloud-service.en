@@ -13,7 +13,7 @@ Learn what the Experience Production Agent's Form Creation job is and what it ca
 
 It is magic.
 
-![How the magic works](/help/ai-in-aem/agents/experience-production/assets/magic-1.gif)
+![How the magic works](/help/ai-in-aem/agents/production/assets/magic-1.gif)
 
 Here are some super-cool reasons to use this agent.
 
