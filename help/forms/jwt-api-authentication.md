@@ -4,7 +4,7 @@ description: Learn how to configure JWT (JSON Web Token) authentication for Adob
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
 hide: yes
-hidefromToC: yes
+hidefromtoc: yes
 index: no
 ---
 

@@ -4,7 +4,7 @@ description: Set up development environment for Interactive Communications Synch
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
 hide: yes
-hidefromToC: yes
+hidefromtoc: yes
 index: no
 ---
 
