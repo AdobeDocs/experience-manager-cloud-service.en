@@ -1052,17 +1052,17 @@ user-guide-title: AEM as a Cloud Service
   + [Overview](/help/ai-in-aem/overview.md)
   + AEM Business Agents {#aem-business-agents}
     + [Overview](/help/ai-in-aem/agents/oveview.md)
-    + Experience Production Agent {#experience-production}
-      + [Overview](/help/ai-in-aem/agents/experience-production/overview.md)
-      + [Content Updater](/help/ai-in-aem/agents/experience-production/content-update-job.md)
-      + [Site Migrator](/help/ai-in-aem/agents/experience-production/site-migration-job.md)
-      + [Form Creation Job](/help/ai-in-aem/agents/experience-production/form-creation-job.md)
+    + Production Agent {#production}
+      + [Overview](/help/ai-in-aem/agents/production/overview.md)
+      + [Content Updater](/help/ai-in-aem/agents/production/content-update-job.md)
+      + [Site Migrator](/help/ai-in-aem/agents/production/site-migration-job.md)
+      + [Form Creation Job](/help/ai-in-aem/agents/production/form-creation-job.md)
     + Content Optimization Agent {#content-optimization}
       + [Overview](/help/ai-in-aem/agents/content-optimization/overview.md)
-    + Experience Advisory Agent {#experience-advisory}
-      + [Overview](/help/ai-in-aem/agents/experience-advisory/overview.md)
-    + Experience Development Agent {#experience-development}
-      + [Overview](/help/ai-in-aem/agents/experience-development/overview.md)
+    + Discovery Agent {#discovery}
+      + [Overview](/help/ai-in-aem/agents/discovery/overview.md)
+    + Development Agent {#development}
+      + [Overview](/help/ai-in-aem/agents/development/overview.md)
     + Experience Governance Agent {#experience-governance}
       + [Overview](/help/ai-in-aem/agents/experience-governance/overview.md)
     + Experience Production Agent {#experience-production}
