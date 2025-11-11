@@ -40,6 +40,7 @@ Create an application in [Microsoft Azure portal](https://portal.azure.com/#home
 ![SharePoint Selected Site](/help/forms/assets/sharepoint-selected-site.png)
 
 For information on how to retrieve `Client ID`, `Client Secret` and `Tenant ID` for `OAuth URL`, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+
 * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
 * Add the `offline_access` and `Sites.Selected` permissions scope in Microsoft's Graph API to provide restricted access to Sites.
 * For OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
@@ -85,6 +86,7 @@ Now, you can use this [SharePoint Sites configuration for the submit action in a
 ## Extra Bytes
 
 To retrieve the value of the `SharePoint Site ID`:
+
 1. Go to the [Microsoft Graph Explorer APIs](https://developer.microsoft.com/en-us/graph/graph-explorer).
 1. In the left pane, under the `SharePoint Sites` APIs, click `Search for a SharePoint site by keyword`.
 1. Replace the placeholder `contoso` with the actual name of your SharePoint Site to fetch the corresponding Site ID.

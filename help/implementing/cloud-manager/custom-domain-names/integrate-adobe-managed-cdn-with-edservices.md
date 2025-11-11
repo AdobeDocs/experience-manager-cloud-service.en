@@ -3,7 +3,7 @@ title: Integrate Edge Delivery Services with Adobe Managed CDN in Cloud Manager
 description: 
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: yes
 hidefromtoc: yes
 
@@ -42,7 +42,7 @@ Edge Delivery Services can be set up using one of the following two options. Eac
 |  | Deployment option | Key doc | Capability | Best for |
 | --- | --- | --- | --- | --- |
 | Option 1 | *With* an existing AEM as a Cloud Service (AEMaaCS) environment | [Set up a proxy from an existing environment](https://www.aem.live/docs/byo-cdn-adobe-managed#option-1-setup-a-proxy-from-an-existing-environment) | Config Pipeline is generally available for AEMaaCS environments | Teams that already run Sites in Cloud Manager and want a quick, low-risk performance boost. |
-| Option 2 | *Without* an existing AEMaaCS environment; known as a standalone "Edge environment." | [Setup an Edge Delivery site without an existing environment](https://www.aem.live/docs/byo-cdn-adobe-managed#option-2-setup-an-edge-delivery-site-without-an-existing-environment)  | Config Pipeline is currently available only for Edge environments through the limited Beta program.<br>See [Add Edge Delivery Config Pipeline](help/implementing/cloud-manager/release-notes/current.md##add-eds-pipeline). | New builds or migrations that want to embrace the full Edge Delivery architecture and granular routing. | 
+| Option 2 | *Without* an existing AEMaaCS environment; known as a standalone "Edge environment." | [Setup an Edge Delivery site without an existing environment](https://www.aem.live/docs/byo-cdn-adobe-managed#option-2-setup-an-edge-delivery-site-without-an-existing-environment)  | Config Pipeline is currently available only for Edge environments through the limited Beta program.<br>See [Add Edge Delivery Config Pipeline](/help/implementing/cloud-manager/release-notes/current.md#add-eds-pipeline). | New builds or migrations that want to embrace the full Edge Delivery architecture and granular routing. |
 
 <!-- Ultimately this URL above will need to be updated on GA -->
 

@@ -4,7 +4,7 @@ description: Learn how to manage multiple Git repositories when working with Clo
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Use multiple repositories {#working-with-multiple-source-git-repos} 
 

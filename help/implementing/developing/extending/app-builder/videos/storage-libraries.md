@@ -4,7 +4,7 @@ description: Learn about state and file storage libraries for App Builder applic
 version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
-role: Developer, Architect
+role: Developer
 level: Beginner
 kt: 9457,9479,9480
 thumbnail: 339238.jpg

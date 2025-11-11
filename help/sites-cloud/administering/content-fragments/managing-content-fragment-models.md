@@ -2,7 +2,7 @@
 title: Managing Content Fragment Models
 description: Learn how to manage Content Fragment Models; these serve as a foundation for your Content Fragments in AEM, allowing you to create structured content for use in headless delivery, or page authoring.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
 ---
