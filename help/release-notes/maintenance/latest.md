@@ -47,13 +47,11 @@ The 2025.11.0 feature activation will provide the full feature set for this main
 * SITES-27949: Edge Delivery with Universal Editor - Make path mapping optional.
 * SITES-35811: Use new index in Content Fragments queries
 * CQ-4361363: Latest AEM and Granite translations
-* SITES-33206: Update KonMari bundle to 0.0.10
 * SKYOPS-120857: Update filevault to 4.1.4
 * GRANITE-62169: Update commons-lang to 3.19.0
 * SKYOPS-118390: Update JCR Resource to 3.3.6
 * GRANITE-62394: Updated joda-time to 2.12.7
 * GRANITE-36205: Update Oak release to 1.88.0
-* AEMSRE-2896: Disallow the customization of Logging configuration
 * GRANITE-62020: Improve retry policy on RepositoryServiceHttpClient
 * SKYOPS-121082: Update versions of org.apache.sling.discovery.standalone, org.apache.sling.jcr.packageinit and org.apache.sling.commons.fsclassloader sling bundles
 
