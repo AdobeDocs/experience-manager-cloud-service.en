@@ -1,6 +1,6 @@
 ---
-title: Rule Creation in Interactive Communication Editor
-description: Rule Creation in Interactive Communication Editor allows authors to define dynamic behaviors that make communications interactive and intelligent.
+title: Create Rules in Interactive Communication Editor
+description: Create Rules in Interactive Communication Editor allows authors to define dynamic behaviors that make communications interactive and intelligent.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
@@ -9,7 +9,7 @@ index: no
 hidefromtoc: yes
 ---
 
-# Rule Creation in Interactive Communication Editor
+# Create Rules in Interactive Communication Editor
 
 >[!NOTE]
 >
