@@ -55,7 +55,7 @@ The next planned release is Thursday, December 4, 2025.
 
     When you create an Edge Delivery Services program in Cloud Manager, you can enable the Web Application Firewall (WAF). This setting shields your site from malicious traffic and DDoS attacks immediately, reducing manual setup work.
 
-    See [Create your First Edge Delivery Site with One Click](help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md).
+    See [Create your First Edge Delivery Site with One Click](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md).
 
 
 ## Beta programs {#private-beta-program}
