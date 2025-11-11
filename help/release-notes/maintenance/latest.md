@@ -10,9 +10,9 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 23282 {#23282}
+## Release 23320 {#23320}
 
-Summarized below are the continuous improvements for maintenance release 23282, which was publicly released on November 11, 2025. The previous maintenance release was release 22943.
+Summarized below are the continuous improvements for maintenance release 23320, which was publicly released on November 11, 2025. The previous maintenance release was release 22943.
 
 The 2025.11.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
@@ -20,7 +20,7 @@ The 2025.11.0 feature activation will provide the full feature set for this main
 >
 >Release 23122 has been made private on November 3rd.
 
-### Enhancements {#enhancements-23282}
+### Enhancements {#enhancements-23320}
 
 * FORMS-21594: Enable Locking of Interactive Communications Template Content & Layout for Content Authors.
 * FORMS-20385: Support XDP Editing in Interactive Communications Editor.
@@ -45,9 +45,8 @@ The 2025.11.0 feature activation will provide the full feature set for this main
 * SITES-25893: Edge Delivery with Universal Editor - Add support for strong and emphasize to text rendering in blocks.
 * SITES-26158: Edge Delivery with Universal Editor - Add support for table markup in blocks and columns (early access).
 * SITES-27949: Edge Delivery with Universal Editor - Make path mapping optional.
-  
 * SITES-35811: Use new index in Content Fragments queries
-* CQ-4361363:  Latest AEM and Granite translations
+* CQ-4361363: Latest AEM and Granite translations
 * SITES-33206: Update KonMari bundle to 0.0.10
 * SKYOPS-120857: Update filevault to 4.1.4
 * GRANITE-62169: Update commons-lang to 3.19.0
@@ -58,7 +57,7 @@ The 2025.11.0 feature activation will provide the full feature set for this main
 * GRANITE-62020: Improve retry policy on RepositoryServiceHttpClient
 * SKYOPS-121082: Update versions of org.apache.sling.discovery.standalone, org.apache.sling.jcr.packageinit and org.apache.sling.commons.fsclassloader sling bundles
 
-### Fixed Issues {#fixed-issues-23282}
+### Fixed Issues {#fixed-issues-23320}
 
 * CQ-4361144: Fixed the skipping of  Content Fragments from Translation Jobs.
 * CQ-4355446: Fixed the unlocalised string in Translation project occurring on Cancel translation job dialog.
@@ -83,16 +82,15 @@ The 2025.11.0 feature activation will provide the full feature set for this main
 * SITES-34324: Edge Delivery with Universal Editor - fix rendering of links with a tel: protocol.
 * SITES-35333: Edge Delivery with Universal Editor - fix asset rendition selection for images in page metadata.
 * SITES-35549: Edge Delivery with Universal Editor - fix double-encoded html entities in page metadata.
-
 * ASSETS-58926: Fix video change thumbnail feature in DM
-* GRANITE-61318 : Fix an issue where the page creation wizard only highlights mandatory fields in basic tab
+* GRANITE-61318: Fix an issue where the page creation wizard only highlights mandatory fields in basic tab
 * GRANITE-60514: Fix an issue where stopped scheduled publications during full-stack pipeline run
 * CQ-4360747: Fix an issue where Repeatable Translation Jobs create empty payloads & trigger too often
 * GRANITE-61019: Fix issue with GC on first run after AEM restart
 * ASSETS-58623: Fix npe in omnisearch when config exists
-* GRANITE-60456 - Fix issue when administrator open any user's property page
+* GRANITE-60456: Fix issue when administrator open any user's property page
 
-#### AEM Guides {#guides-23282}
+#### AEM Guides {#guides-23320}
 
 * GUIDES-33597: If an empty `prop` element with no attributes or values is added to a DITAVAL file, then additional `prop` elements cannot be added.
 * GUIDES-33693: When you re-upload an edited image through the Experience Manager Guides UI, the image's original rendition gets updated but the associated DITA content continues to display the previous version of the image.
@@ -102,33 +100,19 @@ The 2025.11.0 feature activation will provide the full feature set for this main
 For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
 
 
-### Known Issues {#known-issues-23282}
+### Known Issues {#known-issues-23320}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-23282}
+### Deprecated Features and APIs {#deprecated-23320}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-23282}
+### Security Fixes {#security-23320}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 30 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-Security: (TODO: Delete before merge)
-GRANITE-62404 : [VULN-32280] Stored XSS injected at "Configuration Folder Name" and triggered at Templates Component Policy
-GRANITE-61684 JWTAuthenticationHandler login failure when IMS user is changing email address
-CQ-4361221
-GRANITE-62115 - Upgrade com.adobe.granite.crypto
-GRANITE-61420 : Fix XSS violations: GRANITE-61420, GRANITE-61424, GRA… 
-GRANITE-61591
-CQ-4361004-and-GRANITE-61417:
-GRANITE-60087
-GRANITE-60456: Update granite security content package
-CQ-4360564: Sanitising project path to prevent XSS injection
-CQ-4360577: Sanitising path to prevent Cross site scripting attacks
-NPR-42974, CQ-4361221, NPR-43121, NPR-43056
-
-### Embedded Technologies {#embedded-tech-23282}
+### Embedded Technologies {#embedded-tech-23320}
 
 |Technology|Version|Link|
 |---|---|---|
