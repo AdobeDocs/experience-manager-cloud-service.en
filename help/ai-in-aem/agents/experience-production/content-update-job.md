@@ -3,9 +3,6 @@ title: Content Update job
 description: Learn what the Experience Production Agent's Content Update job is and what it can do for you.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hidefromtoc: yes
-index: no
-hide: yes
 ---
 
 # Content Update Job {#content-update-job}
