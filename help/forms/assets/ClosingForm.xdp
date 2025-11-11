@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.0.20130303.1.892433" APIVersion="3.6.13061.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2014-12-03T10:29:26Z" uuid="61700529-6854-493e-a6ec-2d8f17cd270e">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0static?>
+   <?formServer allowRenderCaching 0?>
+   <?formServer formModel both?>
+   <subform name="batch" layout="tb" locale="en_CA">
+      <pageSet>
+         <pageArea name="Page1" id="Page1">
+            <contentArea x="0.25in" y="0.25in" w="8in" h="10.5in"/>
+            <medium stock="letter" short="8.5in" long="11in"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform w="203.2mm" h="10.5in">
+         <draw name="Image1" w="66.675mm" h="31.75mm">
+            <value>
+               <image contentType="image/PNG">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
+6JxKY2hRCgAAAABJRU5ErkJggg==</image>
+            </value>
+            <ui>
+               <imageEdit/>
+            </ui>
+            <desc>
+               <text name="embeddedHref">..\..\..\..\..\..\..\..\Performance-LC8\Sizing\Output\greenfield.PNG</text>
+            </desc>
+         </draw>
+         <draw name="Text1" y="19.05mm" x="76.2mm" w="114.9mm" h="9.525mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Residential Closing Package</text>
+            </value>
+            <font size="24pt" typeface="Myriad Pro"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para hAlign="center"/>
+            <?renderCache.bounds 322867 24166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 27 Residential Closing Package 0 23917 19417 0 0 0 "Myriad Pro" 0 0 24000 ISO-8859-1?></draw>
+         <draw name="Text2" x="161.925mm" w="39.127mm" h="5.2331mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Form RK76474/3836-2003</text>
+            </value>
+            <font size="8pt" typeface="Myriad Pro"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para hAlign="right"/>
+            <?renderCache.bounds 108077 12000 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 22 Form RK76474/3836-2003 0 23032 7417 0 0 0 "Myriad Pro" 0 0 8000 ISO-8859-1?></draw>
+         <draw name="Line1" y="31.75mm" x="76.2mm" w="114.3mm" h="0in">
+            <value>
+               <line slope="/"/>
+            </value>
+         </draw>
+         <subform name="customer" x="3.175mm" y="38.1mm" w="114.3mm" h="76.2mm">
+            <margin leftInset="1mm" rightInset="1mm" topInset="1mm" bottomInset="1mm"/>
+            <field name="name1" w="107.95mm" h="9mm" x="2.175mm" y="11.7mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <?templateDesigner StyleID aped1?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="0.01in">
+                  <para vAlign="middle"/>
+               </caption>
+               <bind match="dataRef" ref="name1"/>
+            </field>
+            <field name="name2" x="2.175mm" w="107.95mm" h="9mm" y="20.225mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <?templateDesigner StyleID aped1?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="0.01in">
+                  <para vAlign="middle"/>
+               </caption>
+               <bind match="dataRef" ref="name2"/>
+            </field>
+            <field name="address1" x="2.175mm" w="107.95mm" h="9mm" y="43.45mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <?templateDesigner StyleID aped1?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="0.01in">
+                  <para vAlign="middle"/>
+               </caption>
+               <bind match="dataRef" ref="address1"/>
+            </field>
+            <field name="address2" y="52.975mm" w="107.95mm" h="9mm" x="2.175mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <?templateDesigner StyleID aped1?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="0.01in">
+                  <para vAlign="middle"/>
+               </caption>
+               <bind match="dataRef" ref="address2"/>
+            </field>
+            <field name="address3" y="62.5mm" x="2.175mm" w="107.95mm" h="9mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <?templateDesigner StyleID aped1?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="0.01in">
+                  <para vAlign="middle"/>
+               </caption>
+               <bind match="dataRef" ref="address3"/>
+            </field>
+            <bind match="dataRef" ref="closing_package[*].customer"/>
+            <draw name="Text5" y="2.175mm" x="2.175mm" w="15.875mm" h="5.2331mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Buyer(s)</text>
+               </value>
+               <font size="12pt" typeface="Myriad Pro"/>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <?renderCache.bounds 42166 12000 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 8 Buyer(s) 0 1417 10417 0 0 0 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+            <draw name="Text5" y="33.925mm" x="2.175mm" w="30.442mm" h="5.2331mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Subject Property</text>
+               </value>
+               <font size="12pt" typeface="Myriad Pro"/>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <?renderCache.bounds 83458 12000 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 16 Subject Property 0 1417 10417 0 0 0 "Myriad Pro" 0 0 12000 ISO-8859-1?></draw>
+            <?templateDesigner expand 1?></subform>
+         <field name="cls_trans_id" x="95.25mm" w="62mm" h="9mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden">
+                     <?templateDesigner StyleID aped0?></border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle"/>
+            </caption>
+            <bind match="dataRef" ref="closing_package[*].cls_trans_id"/>
+         </field>
+         <subform name="cls_officer" x="120.65mm" y="38.1mm" w="71.933mm" h="43.275mm">
+            <margin leftInset="1mm" rightInset="1mm" topInset="1mm" bottomInset="1mm"/>
+            <field name="name" w="62mm" h="6.35mm" x="2.175mm" y="9.525mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="0.01in">
+                  <para vAlign="middle"/>
+               </caption>
+               <bind match="dataRef" ref="name"/>
+            </field>
+            <bind match="dataRef" ref="closing_package[*].cls_officer"/>
+            <field name="telephone" y="15.875mm" x="2.175mm" w="62mm" h="6.35mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="17.46mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text>Telephone</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="telephone"/>
+            </field>
+            <draw name="Text3" y="3.175mm" x="2.175mm" w="64.5mm" h="6.35mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Your Closing Officer is</text>
+               </value>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <?renderCache.bounds 180001 15166 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 23 Your Closing Officer is 0 1417 8917 0 0 0 "Myriad Pro" 0 0 10000 ISO-8859-1?></draw>
+            <draw name="Text4" y="25.4mm" x="2.175mm" w="2.542639in" h="15.875mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>You may contact your closing officer at any time if you have questions or need to supply information needed in closing.</text>
+               </value>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <?renderCache.bounds 180236 42166 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 44 You may contact your closing officer at any  0 1417 8917 0 0 0 "Myriad Pro" 0 0 10000 ISO-8859-1?>
+               <?renderCache.textRun 38 time if you have questions or need to  0 1417 20917 0 0 0 "Myriad Pro" 0 0 10000 ISO-8859-1?>
+               <?renderCache.textRun 37 supply information needed in closing. 0 1417 32917 0 0 0 "Myriad Pro" 0 0 10000 ISO-8859-1?></draw>
+            <?templateDesigner expand 1?></subform>
+         <draw name="Text6" y="127mm" x="6.35mm" w="92.075mm" h="133.35mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>1. Considérant que la reconnaissance de la dignité inhérente à tous les membres de la famille humaine et de leurs droits égaux et inaliénables constitue le fonde-ment de la liberté, de la justice et de la paix dans le monde,</p><p><br/>2. Considérant que la méconnaissance et le mépris des droits de l'homme ont conduit à des actes de barbarie qui révoltent la conscience de l'humanité et que l'avènement d'un monde où les êtres humains seront libres de parler et de croire, libérés de la terreur et de la misère, a été proclamé comme la plus haute aspira-tion de l'homme,</p><p><br/>3. Considérant qu'il est essentiel que les droits de l'homme soient protégés par un régime de droit pour que l'homme ne soit pas contraint, en suprême recours, à la révolte contre la tyrannie et l'oppression,</p><p><br/>a. Considérant qu'il est essentiel d'encourager le développement de relations ami-cales entre nations,<br/>Considérant que dans la Charte les peuples des Nations Unies ont proclamé à nouveau leur foi dans les droits</p><p><span style="xfa-spacerun:yes"> </span></p><p>b. fondamentaux de l'homme, dans la dignité et la valeur de la personne humaine, dans l'égalité des droits des hommes et des femmes, et qu'ils se sont déclarés résolus à favoriser le progrès social et à instau-rer de meilleures conditions de vie dans une liberté plus grande,</p><p><span style="xfa-spacerun:yes"> </span></p><p>4 Considérant que les Etats Membres se sont engagés à assurer, en coopération avec l'Organisation des Nations Unies, le respect universel et effectif des droits de l'homme et des</p></body>
+               </exData>
+            </value>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para hAlign="justify"/>
+         </draw>
+         <draw name="Text6" y="117.475mm" x="107.95mm" w="3.75in" h="146.05mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p><span style="xfa-spacerun:yes"> </span>libertés fondamentales,</p><p><span style="xfa-spacerun:yes"> </span></p><p><span style="xfa-spacerun:yes"> </span>5. Chacun peut se prévaloir de tous les droits et de toutes les libertés proclamés dans la présente Déclaration, sans distinction aucune, notamment de race, de couleur, de sexe, de langue, de religion, d'opinion politique ou de toute autre opinion, d'origine nationale ou sociale, de fortune, de naissance ou de toute autre situation.</p><p><br/>a. De plus, il ne sera fait aucune distinction fondée sur le statut politique, juridique ou international du pays ou du territoire dont une personne est ressortissante, que ce pays ou territoire soit indépendant, sous tutelle, non autonome ou soumis à une limitation quelconque de souveraineté.</p><p><span style="xfa-spacerun:yes"> </span></p><p>(1) Toute personne a droit à l'éducation. L'éducation doit être gratuite, au moins en ce qui concerne l'enseignement élémentaire et fondamental. L'enseigne-ment élémentaire est obligatoire. L'enseignement technique et professionnel doit être généralisé; l'accès aux études supérieures doit être ouvert en pleine égalité à tous en fonction de leur mérite.<br/>(2) L'éducation doit viser au plein épanouissement de la personnalité humaine et au renforcement du respect des droits de l'homme et des libertés fondamen-tales. Elle doit favoriser la compréhension, la tolérance et l'amitié entre tou-tes les nations et tous les groupes raciaux ou religieux, ainsi que le dévelop-pement des activités des Nations Unies pour le maintien de la paix.<br/>(3) Les parents ont, par priorité, le droit de choisir le genre d'éducation à donner à leurs enfants.</p><p>(4) Toute personne a le droit de prendre part librement à la vie culturelle de la communauté, de jouir des arts et de participer au progrès scientifique et aux bienfaits qui en résultent<br/>(5)Chacun a droit à la protection des intérêts moraux et<span style="xfa-spacerun:yes"> </span></p></body>
+               </exData>
+            </value>
+            <font typeface="Myriad Pro" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para hAlign="justify" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+         </draw>
+         <draw name="Text7" y="117.475mm" x="6.35mm" w="92.075mm" h="6.35mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Terms and Conditions</text>
+            </value>
+            <font size="14pt" typeface="Myriad Pro"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para hAlign="center"/>
+            <?renderCache.bounds 258166 15166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 20 Terms and Conditions 0 66612 11917 0 0 0 "Myriad Pro" 0 0 14000 ISO-8859-1?></draw>
+         <draw name="Text8" y="6.35mm" x="181.29mm" w="19.762mm" h="5.2331mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Page 1 of 2</text>
+            </value>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para hAlign="right"/>
+            <?renderCache.bounds 53184 12000 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 11 Page 1 of 2 0 8832 8917 0 0 0 "Myriad Pro" 0 0 10000 ISO-8859-1?></draw>
+         <?templateDesigner expand 1?></subform>
+      <subform w="203.2mm" h="10.5in">
+         <breakBefore targetType="pageArea" startNew="1"/>
+         <draw name="Text2" x="161.925mm" w="39.127mm" h="5.2331mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Form RK76474/3837-2003</text>
+            </value>
+            <font size="8pt" typeface="Myriad Pro"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para hAlign="right"/>
+            <?renderCache.bounds 108077 12000 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 22 Form RK76474/3837-2003 0 23032 7417 0 0 0 "Myriad Pro" 0 0 8000 ISO-8859-1?></draw>
+         <field name="cls_trans_id" x="95.25mm" w="62mm" h="9mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden">
+                     <?templateDesigner StyleID aped0?></border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="0.01in">
+               <para vAlign="middle"/>
+            </caption>
+            <bind match="dataRef" ref="closing_package[*].cls_trans_id"/>
+         </field>
+         <draw name="Text1" y="3.175mm" x="44.45mm" w="44.45mm" h="11.865mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>Residential</p><p>Closing Package</p></body>
+               </exData>
+            </value>
+            <font size="14pt" typeface="Myriad Pro"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <?renderCache.bounds 123166 30799 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 12 Residential  0 1417 11917 0 0 0 "Myriad Pro" 0 0 14000 ISO-8859-1?>
+            <?renderCache.textRun 15 Closing Package 0 1417 28717 0 0 0 "Myriad Pro" 0 0 14000 ISO-8859-1?></draw>
+         <draw name="Image1" w="34.925mm" h="15.875mm">
+            <value>
+               <image contentType="image/PNG">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
+6JxKY2hRCgAAAABJRU5ErkJggg==</image>
+            </value>
+            <ui>
+               <imageEdit/>
+            </ui>
+            <desc>
+               <text name="embeddedHref">..\..\..\..\..\..\..\..\Performance-LC8\Sizing\Output\greenfield.PNG</text>
+            </desc>
+         </draw>
+         <draw name="Line2" y="19.05mm" w="200.025mm" h="0in">
+            <value>
+               <line slope="/"/>
+            </value>
+         </draw>
+         <draw name="Text8" y="6.35mm" x="180.975mm" w="19.762mm" h="5.2331mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>Page 2 of 2</text>
+            </value>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para hAlign="right"/>
+            <?renderCache.bounds 53184 12000 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 11 Page 2 of 2 0 8832 8917 0 0 0 "Myriad Pro" 0 0 10000 ISO-8859-1?></draw>
+         <subform name="customer" x="95.25mm" y="187.33mm" w="107.95mm" h="76.2mm">
+            <margin leftInset="1mm" rightInset="1mm" topInset="1mm" bottomInset="1mm"/>
+            <field name="name1" w="95.25mm" h="9mm" x="8.525mm" y="2.17mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="0.01in">
+                  <para vAlign="middle"/>
+               </caption>
+               <bind match="dataRef" ref="name1"/>
+            </field>
+            <field name="name2" x="8.525mm" w="95.25mm" h="9mm" y="11.695mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="0.01in">
+                  <para vAlign="middle"/>
+               </caption>
+               <bind match="dataRef" ref="name2"/>
+            </field>
+            <bind match="dataRef" ref="closing_package[*].customer"/>
+            <draw name="Text9" y="5.345mm" x="2.175mm" w="6.482mm" h="5.2331mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>We,</text>
+               </value>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <?renderCache.bounds 15540 12000 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 3 We, 0 1417 8917 0 0 0 "Myriad Pro" 0 0 10000 ISO-8859-1?></draw>
+            <draw name="Text10" y="21.225mm" x="2.175mm" w="104.775mm" h="19.045mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>testify that we have read and understood all of the terms and conditions set forth in this agreement.  We agree that a qualified representative was available to answer all questions and that we have had the opportunity to review this agreement with legal council.</text>
+               </value>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <para hAlign="justify"/>
+            </draw>
+            <draw name="Text9" y="14.87mm" x="2.175mm" w="6.648mm" h="5.2331mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>and</text>
+               </value>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <?renderCache.bounds 16011 12000 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 3 and 0 1417 8917 0 0 0 "Myriad Pro" 0 0 10000 ISO-8859-1?></draw>
+            <draw name="Line3" y="68.845mm" x="5.35mm" w="101.6mm" h="0in">
+               <value>
+                  <line slope="/"/>
+               </value>
+            </draw>
+            <draw name="Line3" y="52.97mm" x="5.35mm" w="101.6mm" h="0in">
+               <value>
+                  <line slope="/"/>
+               </value>
+            </draw>
+            <draw name="Text11" y="46.625mm" x="68.85mm" w="29.2864mm" h="5.2331mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Date:</text>
+               </value>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <?renderCache.bounds 80183 12000 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 5 Date: 0 1417 8917 0 0 0 "Myriad Pro" 0 0 10000 ISO-8859-1?></draw>
+            <draw name="Text11" y="62.5mm" x="68.85mm" w="29.2864mm" h="5.2331mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Date:</text>
+               </value>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <?renderCache.bounds 80183 12000 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 5 Date: 0 1417 8917 0 0 0 "Myriad Pro" 0 0 10000 ISO-8859-1?></draw>
+            <draw name="Text13" y="46.62mm" x="2.175mm" w="9.525mm" h="8.408mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>X</text>
+               </value>
+               <font size="14pt" typeface="Myriad Pro" weight="bold"/>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <?renderCache.bounds 24166 21000 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 1 X 0 1417 11917 0 0 0 "Myriad Pro" 1 0 14000 ISO-8859-1?></draw>
+            <draw name="Text13" y="62.495mm" x="2.175mm" w="9.525mm" h="8.408mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>X</text>
+               </value>
+               <font size="14pt" typeface="Myriad Pro" weight="bold"/>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <?renderCache.bounds 24166 21000 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 1 X 0 1417 11917 0 0 0 "Myriad Pro" 1 0 14000 ISO-8859-1?></draw>
+            <?templateDesigner expand 1?></subform>
+         <draw name="Text12" y="22.225mm" w="95.25mm" h="9.625in">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>Da die Anerkennung der angeborenen Würde und der gleichen und unveräußerlichen Rechte aller Mitglieder der Gemeinschaft der Menschen die Grundlage von Freiheit, Gerechtigkeit und Frieden in der Welt bildet,</p><p><br/>da die Nichtanerkennung und Verachtung der Menschenrechte zu Akten der Barbarei geführt haben, die das Gewissen der Menschheit mit Empörung erfüllen, und da verkündet worden ist, daß einer Welt, in der die Menschen Rede- und Glaubensfreiheit und Freiheit von Furcht und Not genießen, das höchste Streben des Menschen gilt,</p><p><br/>da es notwendig ist, die Menschenrechte durch die Herrschaft des Rechtes zu schützen, damit der Mensch nicht gezwungen wird, als letztes Mittel zum Aufstand gegen Tyrannei und Unterdrückung zu greifen,</p><p><br/>da es notwendig ist, die Entwicklung freundschaftlicher Beziehungen zwischen den Nationen zu fördern,<br/>da die Völker der Vereinten Nationen in der Charta ihren Glauben an die grundlegenden Menschenrechte, an die Würde und den Wert der menschlichen Person und an die Gleichberechtigung von Mann und Frau erneut bekräftigt und beschlossen haben, den sozialen Forschritt und bessere Lebensbedingungen in größerer Freiheit zu fördern,<br/>da die Mitgliedstaaten sich verpflichtet haben, in Zusammenarbeit mit den Vereinten Nationen auf die allgemeine Achtung und Einhaltung der Menschenrechte und Grundfreiheiten hinzuwirken,</p><p><br/>da ein gemeinsames Verständnis dieser Rechte und Freiheiten von größter Wichtigkeit für die volle Erfüllung dieser Verpflichtung ist,</p><p><br/>verkündet die Generalversammlung diese Allgemeine Erklärung der Menschenrechte als das von allen Völkern und Nationen zu erreichende gemeinsame Ideal, damit jeder einzelne und alle Organe der Gesellschaft sich diese Erklärung stets gegenwärtig halten und sich bemühen, durch Unterricht und Erziehung die Achtung vor diesen Rechten und Freiheiten zu fördern und durch fortschreitende nationale und internationale Maßnahmen ihre allgemeine und tatsächliche Anerkennung und Einhaltung durch die Bevölkerung der Mitgliedstaaten selbst wie auch durch die Bevölkerung der ihrer Hoheitsgewalt unterstehenden Gebiete zu gewährleisten.</p><p><span style="xfa-spacerun:yes"> </span></p><p>Artikel 1</p><p><br/>Alle Menschen sind frei und gleich an Würde und Rechten geboren. Sie sind mit Vernunft und Gewissen begabt und sollen einander im Geist der Brüderlichkeit begegnen.</p><p><span style="xfa-spacerun:yes"> </span></p><p>Artikel 2</p><p><br/>werden. Jeder hat Anspruch auf rechtlichen Schutz gegen solche Eingriffe oder Beeinträchtigungen.</p></body>
+               </exData>
+            </value>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para hAlign="justify"/>
+         </draw>
+         <draw name="Text12" y="22.225mm" x="101.6mm" w="4in" h="165.394mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>Alle Menschen sind vor dem Gesetz gleich und haben ohne Unterschied Anspruch auf gleichen Schutz durch das Gesetz. Alle haben Anspruch auf gleichen Schutz gegen jede Diskriminierung, die gegen diese Erklärung verstößt, und gegen jede Aufhetzung zu einer derartigen Diskriminierung.</p><p><span style="xfa-spacerun:yes"> </span></p><p>Artikel 8</p><p><span style="xfa-spacerun:yes"> </span></p><p>Jeder hat Anspruch auf einen wirksamen Rechtsbehelf bei den zuständigen innerstaatlichen Gerichten gegen Handlungen, durch die seine ihm nach der Verfassung oder nach dem Gesetz zustehenen Grundrechte verletzt werden.</p><p><span style="xfa-spacerun:yes"> </span></p><p>Artikel 9</p><p><span style="xfa-spacerun:yes"> </span></p><p>Niemand darf willkürlich festgenommen, in Haft gehalten oder des Landes verwiesen werden.</p><p><span style="xfa-spacerun:yes"> </span></p><p>Artikel 10</p><p><span style="xfa-spacerun:yes"> </span></p><p>Jeder hat bei der Feststellung seiner Rechte und Pflichten sowie bei einer gegen ihn erhobenen strafrechtlichen Beschuldigung in voller Gleichheit Anspruch auf ein gerechtes und öffentliches Verfahren vor einem unabhängigen und unparteiischen Gericht.</p><p><span style="xfa-spacerun:yes"> </span></p><p>Artikel 11</p><p><span style="xfa-spacerun:yes"> </span></p><p>1.<span style="xfa-tab-count:1">         </span>Jeder, der wegen einer strafbaren Handlung beschuldigt wird, hat das Recht, als unschuldig zu gelten, solange seine Schuld nicht in einem öffentlichen Verfahren, in dem er alle für seine Verteidigung notwendigen Garantien gehabt hat, gemäß dem Gesetz nachgewiesen ist.</p><p><span style="xfa-spacerun:yes"> </span></p><p>2.<span style="xfa-tab-count:1">         </span>Niemand darf wegen einer Handlung oder Unterlassung verurteilt werden, die zur Zeit ihrer Begehung nach innerstaatlichem oder internationalem Recht nicht strafbar war. Ebenso darf keine schwerere Strafe als die zum Zeitpunkt der Begehung der strafbaren Handlung angedrohte Strafe verhängt werden.</p></body>
+               </exData>
+            </value>
+            <font typeface="Myriad Pro" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para hAlign="justify" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+         </draw>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">8.1.1.2188.1.406459.359820</text>
+      </desc>
+      <?templateDesigner Hyphenation excludeInitialCap:1, excludeAllCaps:1, wordCharCnt:7, remainCharCnt:3, pushCharCnt:3?>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Myriad Pro" 0 0 ISO-8859-1 4 316 88 00010009000A000D000E000F0010001100120013001400150016001700180019001A001B001C00220023002400250026002700280029002A002B002C002D002E002F00300031003300340035003600370038003A003B00420043004400450046004700480049004A004B004C004D004E004F0050005100520053005400550056005700580059005A005B0068009500CA00CB00CF00D000D200DA00E000E1 (),-./0123456789:;ABCDEFGHIJKLMNOPRSTUVWYZabcdefghijklmnopqrstuvwxyz'ßäàéêèöüù?>
+      <?renderCache.subset "Myriad Pro" 1 0 ISO-8859-1 4 4 1 0039X?></subform>
+   <?templateDesigner Grid show:1, snap:1, units:0, color:ff8080, origin:(0,0), interval:(125000,125000)?>
+   <?templateDesigner SaveTaggedPDF 0?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 0?>
+   <?templateDesigner SavePDFWithLog 0?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/2.4/?>
+   <?templateDesigner Zoom 75?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner DefaultLanguage FormCalc?>
+   <?templateDesigner DefaultRunAt client?>
+   <?acrobat JavaScript strictScoping?>
+   <?PDFPrintOptions embedViewerPrefs 0?>
+   <?PDFPrintOptions embedPrintOnFormOpen 0?>
+   <?PDFPrintOptions scalingPrefs 0?>
+   <?PDFPrintOptions enforceScalingPrefs 0?>
+   <?PDFPrintOptions paperSource 0?>
+   <?PDFPrintOptions duplexMode 0?>
+   <?templateDesigner DefaultPreviewType print?>
+   <?templateDesigner DefaultPreviewPagination simplex?>
+   <?templateDesigner XDPPreviewFormat 19?>
+   <?templateDesigner DefaultPreviewDataFileName .\sample_batch.xml?>
+   <?templateDesigner DefaultCaptionFontSettings face:Myriad Pro;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Myriad Pro;size:10;weight:normal;style:normal?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo>
+            <embed>0</embed>
+         </fontInfo>
+         <tagged>0</tagged>
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <cache>
+         <macroCache/>
+      </cache>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+      <output/>
+   </present>
+   <?originalXFAVersion http://www.xfa.org/schema/xci/2.8/?></config>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="batch">
+      <batch>
+         <closing_package dd:maxOccur="-1">
+            <cls_trans_id/>
+            <cls_officer>
+               <name/>
+               <telephone/>
+            </cls_officer>
+            <customer>
+               <name1/>
+               <name2/>
+               <address1/>
+               <address2/>
+               <address3/>
+            </customer>
+         </closing_package>
+      </batch>
+   </dd:dataDescription>
+</xfa:datasets>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xmlConnection name="DataConnection" dataDescription="batch">
+      <uri>.\sample_batch.xml</uri>
+   </xmlConnection>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-connection-set/2.1/?></connectionSet>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="en_CA" desc="English (Canada)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">D-MMM-YY</datePattern>
+         <datePattern name="short">DD/MM/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">CAD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+   </locale>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-locale-set/2.1/?></localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2.1-c041 52.337767, 2008/04/13-15:41:00        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" rdf:about="">
+         <xmp:MetadataDate>2014-12-03T10:29:26Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description xmlns:pdf="http://ns.adobe.com/pdf/1.3/" rdf:about="">
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmpMM:DocumentID>uuid:61700529-6854-493e-a6ec-2d8f17cd270e</xmpMM:DocumentID>
+         <xmpMM:InstanceID>uuid:90c21c9f-5419-46da-a420-5615fd8a077f</xmpMM:InstanceID>
+      </rdf:Description>
+      <rdf:Description xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:about="">
+         <dc:format>application/pdf</dc:format>
+      </rdf:Description>
+      <rdf:Description xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>8.1.1.2188.1.406459.359820</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+<xfdf xmlns="http://ns.adobe.com/xfdf/" xml:space="preserve">
+   <annots/>
+</xfdf></xdp:xdp>
