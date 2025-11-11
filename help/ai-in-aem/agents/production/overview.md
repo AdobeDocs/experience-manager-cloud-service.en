@@ -15,15 +15,15 @@ The agent provides the following jobs
 
 ### Content Update {#content-update}
 
-The [Content Update](/help/ai-in-aem/agents/experience-production/content-update-job.md) updates existing content across the CMS — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description as well as PDFs or screenshots.
+The [Content Update](/help/ai-in-aem/agents/production/content-update-job.md) updates existing content across the CMS — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description as well as PDFs or screenshots.
 
 ### Form Creation {#form-creation}
 
-The [Form Creation](/help/ai-in-aem/agents/experience-production/form-creation-job.md) generates new forms and communication documents from scratch or modernize legacy assets by importing PDF and XDP Forms, or images — all without dependency on development or IT teams. The agent accelerates form production while ensuring brand and compliance standards are maintained.
+The [Form Creation](/help/ai-in-aem/agents/production/form-creation-job.md) generates new forms and communication documents from scratch or modernize legacy assets by importing PDF and XDP Forms, or images — all without dependency on development or IT teams. The agent accelerates form production while ensuring brand and compliance standards are maintained.
 
 ### Site Migration {#site-migration}
 
-The [Site Migration](/help/ai-in-aem/agents/experience-production/site-migration-job.md) seamlessly migrate non-AEM sites into AEM (Experience Delivery Services) environments, ensuring they are performant, compliant, and agent-ready. The agent streamlines setup and transformation, reducing manual effort and time to value.
+The [Site Migration](/help/ai-in-aem/agents/production/site-migration-job.md) seamlessly migrate non-AEM sites into AEM (Experience Delivery Services) environments, ensuring they are performant, compliant, and agent-ready. The agent streamlines setup and transformation, reducing manual effort and time to value.
 
 The agent should be able to work with other agent skills, examples include:
 
