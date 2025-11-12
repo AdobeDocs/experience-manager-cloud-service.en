@@ -1054,9 +1054,9 @@ user-guide-title: AEM as a Cloud Service
     + [Overview](/help/ai-in-aem/agents/oveview.md)
     + Production Agent {#production}
       + [Overview](/help/ai-in-aem/agents/production/overview.md)
-      + [Content Updater](/help/ai-in-aem/agents/production/content-update-job.md)
-      + [Site Migrator](/help/ai-in-aem/agents/production/site-migration-job.md)
-      + [Form Creation Job](/help/ai-in-aem/agents/production/form-creation-job.md)
+      + [Content Update Skill](/help/ai-in-aem/agents/production/content-update.md)
+      + [Site Migration Skill](/help/ai-in-aem/agents/production/site-migration.md)
+      + [Form Creation Skill](/help/ai-in-aem/agents/production/form-creation.md)
     + Content Optimization Agent {#content-optimization}
       + [Using Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/using.md)
     + Discovery Agent {#discovery}

@@ -1,13 +1,13 @@
 ---
-title: Site Migration job
-description: Learn what the Experience Production Agent's Site Migration Job is and what it can do for you.
+title: Site Migration Skill
+description: Learn what the Experience Production Agent's site migration skill is and what it can do for you.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 ---
 
-# Site Migration job {#site-migration-job}
+# Site Migration Skill {#site-migration}
 
-Learn what the Experience Production Agent's Site Migration Job is and what it can do for you.
+Learn what the Experience Production Agent's site migration skill is and what it can do for you.
 
 ## Overview {#overview}
 
