@@ -7,13 +7,12 @@ role: Admin, Architect, Developer
 
 # Development Agent Overview {#development-agent}
 
-Learn what ...
+The Development Agent empowers technical roles — developers and administrators — by streamlining the creation, debugging, deployment, and optimization of code. 
 
 ## Jobs {#jobs}
 
-The agent provides the following jobs.
+The agent provides the following jobs:
 
-It works like magic.
+### Cloud Manager Pipeline Troubleshooting  {#cloudmanager-troubleshooting}
 
-![How it works](assets/magic-1.gif)
-![How it works](assets/magic-2.gif)
+The [Cloud Manager Pipeline Troubleshooting](/help/ai-in-aem/agents/development/pipeline-troubleshooting.md) retrieves pipeline status; for failures, it identifes the reason for a failing code step and suggests fixes.
