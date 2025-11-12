@@ -15,11 +15,11 @@ The [Production Agent](/help/ai-in-aem/agents/production/overview.md) automates 
 
 ## Content Optimization Agent {#content-optimization-agent}
 
-The [Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/overview.md) is ...
+The [Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/using.md) is ...
 
 ## Discovery Agent {#discovery-agent}
 
-The [Discovery Agent](/help/ai-in-aem/agents/discovery/overview.md) is ...
+The [Discovery Agent](/help/ai-in-aem/agents/discovery/using.md) is ...
 
 ## Development Agent {#development-agent}
 
