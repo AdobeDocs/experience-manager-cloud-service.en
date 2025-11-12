@@ -72,7 +72,7 @@ Follow the steps below which shows you how to generate an access token from the 
 
 4. Access Token Generation
 
-    Generate tokens programmatically using Adobe IMS API:
+    Generate tokens programmatically using cURL command:
 
     **Required Credentials:**
 
@@ -86,7 +86,7 @@ Follow the steps below which shows you how to generate an access token from the 
     https://ims-na1.adobelogin.com/ims/token/v3
     ```
 
-    **Sample Request (curl):**
+    **Sample Request (cURL):**
 
     ```bash
     curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
@@ -106,6 +106,11 @@ Follow the steps below which shows you how to generate an access token from the 
     "expires_in": 86399
     }
     ```
+
+
+>[!NOTE]
+>
+> To learn more about service credentials and how to generate an access token using the Adobe IMS API, [click here](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
 
 You can now use the generated access token to make API call for development, stage, or production environments.
 
