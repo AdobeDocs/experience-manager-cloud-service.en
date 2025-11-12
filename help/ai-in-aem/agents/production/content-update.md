@@ -1,13 +1,13 @@
 ---
-title: Content Update job
-description: Learn what the Experience Production Agent's Content Update job is and what it can do for you.
+title: Content Update Skill
+description: Learn what the Experience Production Agent's content update skill is and what it can do for you.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 ---
 
-# Content Update Job {#content-update-job}
+# Content Update Skill {#content-update}
 
-Learn what the Experience Production Agent's Content Update job is and what it can do for you.
+Learn what the Experience Production Agent's content update skill is and what it can do for you.
 
 ## Overview {#overview}
 
