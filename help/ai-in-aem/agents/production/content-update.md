@@ -54,13 +54,16 @@ There are two essential details needed in the **Description** field of your tick
    * Natural Language in the ticket description
      * for example "Change the headline from X to Y"
    * Annotated PDF attached
+     * for example, create a PDF of your page and add annotations detailing what you want changed
    * Comments in attached PDF
+     * for example, create a PDF of your page and add comments detailing what you want changed
    * Annotated screenshot attached
+     * for example, take a screenshot of part of your page and add annotations detailing what you want changed
    * Microsoft Word file attached, containing natural language changes
 
 ### Invoke the agent from your ticket {#invoke-the-agent-from-your-ticket}
 
-To use, mention the agent with the `@` symbol; for example:
+To use the agent, add a comment to your ticket. In the comment mention the agent with the `@` symbol, together with the command it should execute; for example:
 
 * `@aemagent@adobe.com process`
 
@@ -72,6 +75,12 @@ Currently, the agent understands the commands:
 * `feedback` - apply feedback to a generation
   * for example: "update headline to I love AEM!"
 * `reprocess` - reprocess the original request
+
+### How the agent interacts {#how-the-agent-interacts}
+
+After you issue the command to the agent, it will respond with a comment confirming that it has started.
+
+Once it has completed the task the agent will respond with another comment containing details of the actions taken. The content updates made by the agent are non-destructive - this means that they are made to a preview instance. The comment contains links to the updates are given so that you can review and publish as required, or assign the Jira to whoever will be responsible.
 
 The following image shows an example Jira that triggers the Content Update skill:
 
