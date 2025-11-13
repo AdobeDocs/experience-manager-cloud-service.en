@@ -15,7 +15,7 @@ The content update skill transforms the details that you provide into content up
 
 ## Capabilities {#capabilities}
 
-You can access the Content Updater from:
+You can access the content update skill from:
 
 * [Jira](#jira)
 * AI Assistant <!-- add link to doc section, or remove -->
@@ -82,6 +82,6 @@ After you issue the command to the agent, it will respond with a comment confirm
 
 Once it has completed the task the agent will respond with another comment containing details of the actions taken. The content updates made by the agent are non-destructive - this means that they are made to a preview instance. The comment contains links to the updates are given so that you can review and publish as required, or assign the Jira to whoever will be responsible.
 
-The following image shows an example Jira that triggers the Content Update skill:
+The following image shows an example Jira that triggers the content update skill:
 
-![Example Jira using the Content Update skill of the Experience Production Agent](assets/content-update-jira-example.png)
+![Example Jira using the content update skill of the Experience Production Agent](assets/content-update-jira-example.png)
