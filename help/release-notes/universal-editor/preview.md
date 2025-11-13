@@ -21,8 +21,11 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming New Features {#what-is-new}
 
-* TBD
+* Toasts have been migrated to a new UI.
 
 ## Upcoming Improvements {#other-improvements}
 
-* TBD
+* The handling of RTE values has been simplified.
+* A rare toolbar race condition was resolved.
+* Unused feature toggles were removed.
+* Dependencies were updated.

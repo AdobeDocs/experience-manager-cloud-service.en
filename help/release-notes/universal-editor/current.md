@@ -20,9 +20,11 @@ These are the release notes for the 13 November 2025 release of the Universal Ed
 
 ## What's New {#what-is-new}
 
-* The contextual menus in the panel header and right-rail have been improved.
+* Contextual actions have been moved into a dropdown menus.
 * json schemas are now delivered for validation.
-* Developer AEM login is now a core part of the Universal Editor and the extension is no longer needed. 
+* [Local developer login](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) is now a core part of the Universal Editor and the extension is no longer needed.
+* The right rail was migrated to a new UI.
+* Items in the content tree now auto-expand.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -34,6 +36,5 @@ The new ProseMirror RTE, featuring a page picker in the link dialog, is now avai
 
 ## Other Improvements {#other-improvements}
 
-* How the structure tree auto-expands by default has been adjusted.
 * A specific width for the for the contextual menu was added.
 * Failures of the Universal Editor Service due to certain `null` values was fixed.
