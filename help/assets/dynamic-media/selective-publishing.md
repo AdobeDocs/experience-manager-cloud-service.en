@@ -115,7 +115,7 @@ See [Create a Dynamic Media configuration](#configuring-dynamic-media-cloud-serv
 
     | Schedule | Description |
     | --- | --- |
-    | **[!UICONTROL Now]** | Select to publish the assets immediately. | 
+    | **[!UICONTROL Now]** | Select to publish the assets immediately. |
     | **[!UICONTROL Later]** | Select to publish the assets on a particular date and time. |
  
 1. In the upper-right corner of the **[!UICONTROL Manage Publication]** page, select **[!UICONTROL Next]**.
@@ -179,7 +179,7 @@ You can use **[!UICONTROL Quick Publish]** for simple asset activation cases. **
 1. Select one of the following options from the **[!UICONTROL Quick Publish]** menu list.
 
     | Quick Publish option | What it does |
-    | --- | --- | 
+    | --- | --- |
     | Publish to Experience Manager | Publishes the selected assets immediately to Experience Manager. |
     | Publish to Brand Portal | Publishes the selected assets immediately to **[!UICONTROL Brand Portal]**.<br>This option is only available if your Experience Manager Assets instance has **[!UICONTROL Brand Portal]** already configured. |
     | Publish to Dynamic Media | Publishes the selected assets immediately to Dynamic Media.<br>An asset must be synched up to Dynamic Media already. If necessary, ensure that **[!UICONTROL Sync mode]** in a folder's properties is already set to **[!UICONTROL Sync everything in this folder subtree to Dynamic Media]**. |
@@ -218,7 +218,7 @@ Optionally, you can use these check boxes with the **[!UICONTROL Publish]** sear
     | Unpublish | Immediately or Upon Activation | Unpublished from Experience Manager and Dynamic Media. |
     | Unpublish | Selective Publish | Unpublished from Experience Manager only. |
     | Publish to Dynamic Media | Immediately or Upon Activation | Not published to Experience Manager, or Dynamic Media, or both. |
-    | Publish to Dynamic Media | Selective Publish | Published to Dynamic Media only. | 
+    | Publish to Dynamic Media | Selective Publish | Published to Dynamic Media only. |
     | Unpublish from Dynamic Media | Immediately or Upon Activation | Not unpublished from Experience Manager, or Dynamic Media, or both. |
     | Unpublish from Dynamic Media | Selective Publish | Unpublished from Dynamic Media only. |
 
@@ -226,7 +226,7 @@ Optionally, you can use these check boxes with the **[!UICONTROL Publish]** sear
 
     | Selected schedule | What happens |
     | --- | --- |
-    | Now | The selected action is performed immediately. | 
+    | Now | The selected action is performed immediately. |
     | Later | The selected action is run on the selected particular date and time. |
 
 1. In the upper-right corner of the **[!UICONTROL Manage Publication - Options]** page, select **[!UICONTROL Next]**.
