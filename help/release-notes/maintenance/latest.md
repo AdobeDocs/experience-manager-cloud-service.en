@@ -18,7 +18,7 @@ The 2025.11.0 feature activation will provide the full feature set for this main
 
 >[!NOTE]
 >
->Releases 23320 and 23122 have been made private.
+>Releases 23320 and 23122 have been made private. 
 
 ### Enhancements {#enhancements-23385}
 
@@ -82,6 +82,7 @@ The 2025.11.0 feature activation will provide the full feature set for this main
 * SITES-35409: Fixed a bug that prevented the republishing of adjusted fragments when moving a page.
 * SITES-15757: Fixed a bug that prevented the republishing of adjusted pages when moving a page.
 * SITES-34638: Fixed a bug where properties from grandparent pages would not be included when creating new versions.
+* SITES-35226: Fixed a regression that caused the asset selector in page editor to fail loading under certain circumstances.
 * SITES-35071: CSV export returns unfiltered results when omnisearch uses quoted phrase.
 * SITES-32182: Edge Delivery with Universal Editor - fix encoding issues with URLs containing already encoded request parameters.
 * SITES-34324: Edge Delivery with Universal Editor - fix rendering of links with a tel: protocol.
