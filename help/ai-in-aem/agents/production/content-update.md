@@ -7,24 +7,30 @@ role: Admin, Architect, Developer
 
 # Content Update Skill {#content-update}
 
-The Content Update Skill of the Experience Production Agent automates content production to accelerate everyday tasks for the CMS. 
+The content update skill of the Experience Production Agent automates content production to accelerate everyday tasks for Adobe Experience Manager (AEM) as a Cloud Service. 
 
 ## Overview {#overview}
+
+The content update skill transforms the details that you provide into content updates on your page. You supply the URL of a page that needs updating, together with details of what needs updating, and the agent skill completes your task.
+
+## Capabilities {#capabilities}
 
 You can access the Content Updater from:
 
 * [Jira](#jira)
-* AI Assistant
+* AI Assistant <!-- add link to doc section, or remove -->
 
-## What the skill does {#what-the-skill-does}
+## Limitations {#limitations}
+
+<!-- to be completed or removed -->
 
 ## Jira {#jira}
 
-Using the Content Update skill with Jira allows you to create a ticket with simple instructions that automate your edits.
+Using the content update skill with Jira allows you to create a ticket with simple instructions that automate your edits.
 
-## Activation {#activation}
+### Activation {#activation}
 
-To activate and gain access to the Content Update skill for use with Jira you need to email Adobe at `aemagent@adobe.com`.
+To activate and gain access to the content update skill for use with Jira you need to email Adobe.
 
 To speed up the process it helps to provide the following information:
 
@@ -33,35 +39,32 @@ To speed up the process it helps to provide the following information:
 * the secret code you generated during the setup of your webhook
 * the email addresses of new users to be registered 
 
-## Use {#use}
-
-There are several steps for using the agent with Jira:
-
-* [Create a Jira ticket with your requirements](#create-a-ticket)
-* [Invoke the agent to realize your request](#invoke-the-agent)
-
 ### Create a ticket {#create-a-ticket}
 
-Create a ticket. There are two essential details needed in a ticket:
+Create a Jira ticket. 
+
+There are two essential details needed in the **Description** field of your ticket:
 
 1. The public facing URL of the page you need to edit.
 
 1. The changes needed. 
 
-   Currently we support the following range of formats to describe changes needed:
+   Currently the skill supports the following range of formats to describe your changes:
 
    * Natural Language in the ticket description
      * for example "Change the headline from X to Y"
-   * Annotated PDF 
-   * Comments in PDF
-   * Annotated screenshot
-   * Word file attached with natural language changes
+   * Annotated PDF attached
+   * Comments in attached PDF
+   * Annotated screenshot attached
+   * Microsoft Word file attached, containing natural language changes
 
-### Invoke the agent {#invoke-the-agent}
+### Invoke the agent from your ticket {#invoke-the-agent-from-your-ticket}
 
-To use the agent, mention the agent with the `@` symbol. 
+To use, mention the agent with the `@` symbol; for example:
 
-Currently, there are only certain commands the agent understands:
+* `@aemagent@adobe.com process`
+
+Currently, the agent understands the commands:
 
 * `process` - process the request
 * `cancel` - cancel a processing request
@@ -70,6 +73,6 @@ Currently, there are only certain commands the agent understands:
   * for example: "update headline to I love AEM!"
 * `reprocess` - reprocess the original request
 
-The following image shows an example Jira that uses the Content Update skill:
+The following image shows an example Jira that triggers the Content Update skill:
 
 ![Example Jira using the Content Update skill of the Experience Production Agent](assets/content-update-jira-example.png)
