@@ -43,7 +43,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 * [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md): Content authors can now create and schedule future variations of structured content using Launches for Content Fragments. The new Content Fragment console allows creating, editing, managing, and scheduling Content Fragment Launches as branches for future content that can be synchronized with the source branch. A new Diff View provides a clear overview of all content changes before committing a Launch for future publication.
 
 * The [Content Model Editor for AEM Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) has been modernized to align with other React Spectrum–based interfaces in AEM. Its user interface implementation and extensibility model are now consistent with the Content Fragment Editor and Universal Editor. The new Model Editor is now default when opened from the new Content Model Admin UI. Opening a content model in Touch UI opens the Touch UI editor and offers to try out the new editor.
-
+  
 <!--
 
 ### New Features in Content Hub {#new-features-content-hub}
@@ -68,7 +68,19 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 **Universal Editor for Adaptive Forms and Form Fragments**
 
-The Universal Editor now delivers a unified authoring experience for creating Adaptive Forms and reusable Form Fragments. Authors can visually design forms, configure submit actions, and integrate reCAPTCHA validation within an intuitive WYSIWYG environment. 
+The Universal Editor now delivers a unified authoring experience for creating Adaptive Forms and reusable Form Fragments. Authors can visually design forms within an intuitive WYSIWYG environment, leveraging powerful extensions and comprehensive submission capabilities. The editor integrates reCAPTCHA validation for enhanced security, provides pre-fill services to reduce manual input, and supports responsive design across all devices. 
+
+**Available Extensions:**
+
+* **Rule Editor**: The visual rule editor enables form authors to add dynamic behavior to form fields without coding, supporting event-driven rules, instant validation, and error handling.
+* **Form Properties**: A wizard to help users configure submit actions, pre-fill service, thank you message, and other forms-related behaviors directly within the editor.
+* **Form Data Source and Bind Reference**: The data source extension enables form authors to add components associated with a data model directly into an Adaptive Form and select a Bind Reference from a tree selection for all components.
+
+**Supported Submit Actions:**
+
+The Universal Editor supports a comprehensive range of submission workflows, including Custom Submit Action, Submit to Microsoft SharePoint, Submit to Microsoft OneDrive, Submit to Azure Blob Storage, Submit to REST endpoint, Invoke an AEM Workflow, Invoke a Power Automate flow, Submit to Marketo Engage, Submit to Adobe Experience Platform (AEP), Submit to Spreadsheet, Submit using Form Data Model (FDM), Submit to Workfront Fusion, and Send Email.
+
+For complete details, see the [Universal Editor for Edge Delivery Services for Forms documentation](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md). For information on configuring submit actions, see [Adaptive Form Submit Action](/help/edge/docs/forms/universal-editor/submit-action.md). 
  
 <!-- ### Pre-Release features in AEM Forms 
 
@@ -139,7 +151,7 @@ Go‑live days, live events, peak sales—these moments can't break. [Our new se
 >[!NOTE]
 >
 >Available as a Limited Availability feature on September 25th.
->Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to get it activated on your programs.
+>Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to get it activated on your programs.
 
 ### AEM Log-Forwarding to More Destinations {#log-forwarding}
 
@@ -251,9 +263,9 @@ Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-
 
 AI Answers introduces a new way for your visitors to interact with your content. Powered by Retrieval-Augmented Generation (RAG) technology, it uses your AEM-managed data to deliver accurate, brand-consistent answers directly within your digital experiences. 
 
-As part of this beta, you can safely explore AI Answers in your AEM Cloud Service environment. This approach lets you validate performance, accuracy, and overall experience before making it available to your live audience. Once validated, you can promote your AI Answers experience to full production.
+We are preparing to launch the AI Answers Beta Program and are now inviting customers to register their interest. Because the beta will have very limited capacity, early sign-ups will receive priority consideration. Participating in the beta will allow you to explore AI Answers in your AEM Cloud Service environment, validate performance and accuracy, and help shape the future experience before it becomes generally available.
 
-To request beta access or share your feedback, please contact [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
+To request participation or receive updates, please contact [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
 
 
 ### Snapshots for RDEs (Alpha Program) {#rde-snapshot-program}
