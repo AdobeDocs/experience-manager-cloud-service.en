@@ -78,10 +78,16 @@ Currently, the agent understands the commands:
 
 ### How the agent interacts {#how-the-agent-interacts}
 
-After you issue the command to the agent, it will respond with a comment confirming that it has started.
+After you issue a command to the agent, it responds with comments in the Jira. The comments detail the agent's progress, and actions taken.
 
-Once it has completed the task the agent will respond with another comment containing details of the actions taken. The content updates made by the agent are non-destructive - this means that they are made to a preview instance. The comment contains links to the updates are given so that you can review and publish as required, or assign the Jira to whoever will be responsible.
+In the case of a `process` command to trigger updates, the responses might follow the sequence:
 
-The following image shows an example Jira that triggers the content update skill:
+* The initial comment confirms that the agent has started.
 
-![Example Jira using the content update skill of the Experience Production Agent](assets/content-update-jira-example.png)
+* Once the task is completed. the agent responds with another comment containing details of the actions taken. 
+  * The content updates made by the agent are non-destructive - this means that they are made to a preview instance. 
+  * The comment contains links to the updates, so that you can review and publish as required, or assign the Jira to whoever will be responsible.
+
+* The following image shows an example Jira that triggers the `process`command for the content update skill:
+
+  ![Example Jira using the content update skill of the Experience Production Agent](assets/content-update-jira-example.png)
