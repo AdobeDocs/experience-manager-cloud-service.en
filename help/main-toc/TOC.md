@@ -128,6 +128,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2025 {#2025}
+      + [2025.10.0](/help/implementing/cloud-manager/release-notes/2025/2025-10-0.md)
       + [2025.9.0](/help/implementing/cloud-manager/release-notes/2025/2025-9-0.md)
       + [2025.8.0](/help/implementing/cloud-manager/release-notes/2025/2025-8-0.md)
       + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
@@ -1557,7 +1558,7 @@ user-guide-title: AEM as a Cloud Service
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
   + [Maintenance Tasks](/help/operations/maintenance.md)
   + [Restore Content](/help/operations/restore.md)
-  + [Restore Previous Code Deployed (Beta)](/help/operations/restore-previous-code-deployed.md)
+  + [Restore Previous Code Deployed](/help/operations/restore-previous-code-deployed.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Using Config Pipelines](/help/operations/config-pipeline.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)
