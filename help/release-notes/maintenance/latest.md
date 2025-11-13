@@ -100,7 +100,7 @@ For more information about the new and enhanced features and issues fixed in the
 
 ### Known Issues {#known-issues-23320}
 
-None.
+* FORMS-22633: `PrefillDataXML` being set as null cause internal submit to fail.
 
 ### Deprecated Features and APIs {#deprecated-23320}
 
