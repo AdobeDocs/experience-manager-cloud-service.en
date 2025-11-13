@@ -123,7 +123,8 @@ To edit images using [!DNL Adobe Express] embedded editor, follow the steps belo
 #### Limitations {#limitations}
 
 * You can only modify images of `JPEG` and `PNG` format types.
-* The asset size must be less than 40 MB.
+* The asset size must be less than 80 MB for desktop devices and 40 MB for mobile devices.
+* Supported width and height range is between 50 to 8000 pixels.
 * You can save an image in `PDF`, `JPEG`, or `PNG` formats.
 
 <!--
