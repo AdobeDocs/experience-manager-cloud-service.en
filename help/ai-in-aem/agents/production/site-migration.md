@@ -13,7 +13,7 @@ The site migration skill onboards websites into Edge Delivery Services with the 
 
 The site migration skill transforms an existing site or design into an Edge Delivery Services project. A migration using the skill has the following components.
 
-* **Sources**: An existing website (any CMS, including AEM 6.5, Managed Services, or Cloud Service), a design system, or design mocks (for example, Figma)
+* **Sources**: An existing website (any CMS, including AEM Publish), a design system, or design mocks (for example, Figma)
 * **Outputs**: A production-ready Edge Delivery Services repository with blocks and styles applied
 * **Targets**: All Edge Delivery Services platforms and authoring methods are supported as targets
 * **Operating model**: Delivered by Adobe Forward Deployed Engineers who operate the agent and guide the migration to ensure quality and governance
