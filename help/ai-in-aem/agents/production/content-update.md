@@ -1,7 +1,7 @@
 ---
 title: Content Update Skill
 description: Learn what the Experience Production Agent's content update skill is and what it can do for you.
-feature: Edge Delivery Services
+feature: Edge Delivery Services, Agentic AI
 role: Admin, Architect, Developer
 ---
 
