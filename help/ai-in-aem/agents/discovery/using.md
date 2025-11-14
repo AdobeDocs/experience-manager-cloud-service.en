@@ -1,7 +1,7 @@
 ---
 title: Discovery Agent Overview
 description: Learn what ...
-feature: Edge Delivery Services
+feature: Edge Delivery Services, Agentic AI
 role: Admin, Architect, Developer
 ---
 

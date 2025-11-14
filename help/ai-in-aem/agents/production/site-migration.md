@@ -1,7 +1,7 @@
 ---
 title: Site Migration Skill
 description: The site migration skill onboards websites into Edge Delivery Services with the help of AI and Adobe Forward Deployed Engineers (FDEs).
-feature: Edge Delivery Services
+feature: Edge Delivery Services, Agentic AI
 role: Admin, Architect, Developer
 ---
 
