@@ -1,7 +1,7 @@
 ---
 title: Development Agent Overview
 description: Learn about AEM's Development agent
-feature: Edge Delivery Services
+feature: Edge Delivery Services, Agentic AI
 role: Admin, Architect, Developer
 ---
 
