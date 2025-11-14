@@ -316,7 +316,7 @@ Generate access tokens manually in Adobe Developer Console:
 
 **B. For Production**
 
-Generate tokens programmatically using Adobe IMS API:
+Generate tokens programmatically using cURL command:
 
 **Required Credentials:**
 
