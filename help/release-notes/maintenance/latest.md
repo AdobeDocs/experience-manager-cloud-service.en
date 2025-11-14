@@ -10,17 +10,17 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 23320 {#23320}
+## Release 23385 {#23385}
 
-Summarized below are the continuous improvements for maintenance release 23320, which was publicly released on November 12, 2025. The previous maintenance release was release 22943.
+Summarized below are the continuous improvements for maintenance release 23385, which was publicly released on November 13, 2025. The previous maintenance release was release 22943.
 
 The 2025.11.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
 >[!NOTE]
 >
->Release 23122 has been made private on November 3rd.
+>Releases 23320 and 23122 have been made private. 
 
-### Enhancements {#enhancements-23320}
+### Enhancements {#enhancements-23385}
 
 * CQ-4361363: Latest AEM and Granite translations.
 * FORMS-21594: Enable Locking of Interactive Communications Template Content & Layout for Content Authors.
@@ -55,7 +55,7 @@ The 2025.11.0 feature activation will provide the full feature set for this main
 * SKYOPS-118390: Update JCR Resource to 3.3.6.
 * SKYOPS-121082: Update versions of `org.apache.sling.discovery.standalone`, `org.apache.sling.jcr.packageinit` and `org.apache.sling.commons.fsclassloader` sling bundles.
 
-### Fixed Issues {#fixed-issues-23320}
+### Fixed Issues {#fixed-issues-23385}
 
 * ASSETS-58926: Fix video change thumbnail feature in DM.
 * ASSETS-58623: Fix npe in omnisearch when config exists.
@@ -82,13 +82,14 @@ The 2025.11.0 feature activation will provide the full feature set for this main
 * SITES-35409: Fixed a bug that prevented the republishing of adjusted fragments when moving a page.
 * SITES-15757: Fixed a bug that prevented the republishing of adjusted pages when moving a page.
 * SITES-34638: Fixed a bug where properties from grandparent pages would not be included when creating new versions.
+* SITES-35226: Fixed a regression that caused the asset selector in page editor to fail loading under certain circumstances.
 * SITES-35071: CSV export returns unfiltered results when omnisearch uses quoted phrase.
 * SITES-32182: Edge Delivery with Universal Editor - fix encoding issues with URLs containing already encoded request parameters.
 * SITES-34324: Edge Delivery with Universal Editor - fix rendering of links with a tel: protocol.
 * SITES-35333: Edge Delivery with Universal Editor - fix asset rendition selection for images in page metadata.
 * SITES-35549: Edge Delivery with Universal Editor - fix double-encoded html entities in page metadata.
 
-#### AEM Guides {#guides-23320}
+#### AEM Guides {#guides-23385}
 
 * GUIDES-33597: If an empty `prop` element with no attributes or values is added to a DITAVAL file, then additional `prop` elements cannot be added.
 * GUIDES-33693: When you re-upload an edited image through the Experience Manager Guides UI, the image's original rendition gets updated but the associated DITA content continues to display the previous version of the image.
@@ -98,19 +99,19 @@ The 2025.11.0 feature activation will provide the full feature set for this main
 For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
 
 
-### Known Issues {#known-issues-23320}
+### Known Issues {#known-issues-23385}
 
-None.
+* FORMS-22633: Form submissions may fail when custom code relying on the GuideBridge APIs (`getData` or `getDataXML`) is being used. If you experience this issue, please contact Adobe Support for assistance.
 
-### Deprecated Features and APIs {#deprecated-23320}
+### Deprecated Features and APIs {#deprecated-23385}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-23320}
+### Security Fixes {#security-23385}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 31 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-23320}
+### Embedded Technologies {#embedded-tech-23385}
 
 |Technology|Version|Link|
 |---|---|---|
