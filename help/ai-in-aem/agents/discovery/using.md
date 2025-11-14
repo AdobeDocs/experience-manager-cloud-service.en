@@ -50,7 +50,7 @@ The Discovery Agent provides the following skills:
   Discovery Agent allows Channel Marketers to efficiently find relevant assets to create cohesive, multi-channel experiences.
 
 
-## How to access Dicsovery Agent? {#access-discovery-agent}
+## How to access Discovery Agent? {#access-discovery-agent}
 
 Link to the uber docs or:
 
@@ -100,7 +100,7 @@ Link to the uber docs or:
 
 List the best pracrices
 
-## Limitations {#limitations-dsicovery-agent}
+## Limitations {#limitations-discovery-agent}
 
 List the limitations
 
