@@ -7,9 +7,8 @@ role: Admin, Architect, Developer
 
 # Discovery Agent {#discovery-agent}
 
-The Discovery Agent allows you to retrieve content from Adobe Experience Manager through simple, conversational prompts. It intelligently searches across Assets, Content Fragments, and Adaptive Forms to deliver relevant materials such as images, videos, PDF documents, articles, and form templates. Using natural language, you can search for content without building complex queries or applying filters in the AEM Assets interface. Based on your prompt, the agent returns curated results along with asset metadata and delivery URLs, ready to be embedded in other applications.
+The Discovery Agent delivers AEM content on demand through natural, conversational prompts for a streamlined, click-free discovery experience. It intelligently searches across Assets, Content Fragments, and Adaptive Forms to deliver relevant materials such as images, videos, PDF documents, articles, and form templates. Using natural language, you can search for content without building complex queries or applying filters in the AEM Assets interface. Based on your prompt, the agent returns curated results along with asset metadata and delivery URLs, ready to be embedded in other applications.
 
-Discovery Agent enables Campaign Managers to quickly identify and reuse trusted, high-performing content for ideation, while Channel Marketers can efficiently find relevant assets to create cohesive, multi-channel experiences.
 
 Some of the key benefits of Discovery Agent include:
 
@@ -21,6 +20,8 @@ Some of the key benefits of Discovery Agent include:
 
 * **Consistent Content Utilization**: Ensures reuse of approved assets and fragments, maintaining brand consistency across channels.
 
+
+
 ## Skills {#skills-discovery-agent}
 
 The Discovery Agent provides the following skills:
@@ -30,14 +31,13 @@ The Discovery Agent provides the following skills:
 * **Natural language content discovery**  
   The Discovery Agent enables users to find relevant assets, content fragments, and adaptive forms within Adobe Experience Manager (AEM) using simple natural language prompts—no complex search queries required.
 
-* **Curated asset delivery**  
-  The Discovery Agent returns curated results with ready-to-use delivery URLs, making it easy to embed assets directly into other applications or digital experiences.
+* **Tag-based asset discovery** 
 
-* **Automated asset variation generation**  
-  The Discovery Agent collaborates with the Content Optimization Agent to automatically generate asset variations optimized for multiple channels, such as Instagram, Facebook, and web experiences.
+   The Discovery Agent can locate assets using specific tags stored in the AEM repository, helping users quickly access content aligned with defined taxonomy or metadata.
 
-* **Asset governance and validation**  
-  The Discovery Agent works with the Governance Agent to verify asset expiry dates, ensuring that only valid and approved assets are used across publishing channels.
+* **Folder-based content discovery:**  
+  The Discovery Agent can identify assets by interpreting natural language prompts that reference folder names in AEM. Users can simply mention the folder in their prompt—without manually navigating through the repository—significantly reducing the number of clicks needed to locate the right content.
+
 
 ## Personas {#personas-discovery-agent}
 
@@ -50,13 +50,24 @@ The Discovery Agent provides the following skills:
   Discovery Agent allows Channel Marketers to efficiently find relevant assets to create cohesive, multi-channel experiences.
 
 
+### DAM Librarians {#dam-librarians}
+
+The DAM Librarians can flag assets that are missing the metadata standards set by the organization, supporting consistent governance and ensuring assets remain complete and ready for use across channels.
+
+### Agencies and Partners {#agencies-partners}
+
+Agencies and Partners can easily find brand-approved assets within Content Hub and reuse them to accelerate creative work while staying aligned with brand standards.
+
+
 ## How to access Discovery Agent? {#access-discovery-agent}
 
 Link to the uber docs or:
 
 * Experience Hub:
 
-* AI Assistant: 
+* AI Assistant:
+
+* MCP endpoint:
 
 
 ## Use cases and sample prompts {#use-cases-prompts}
