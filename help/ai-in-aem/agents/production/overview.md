@@ -1,7 +1,7 @@
 ---
 title: Production Agent Overview
 description: Learn what agents are available in AEM to accelerate your content creation and automatically orchestrate changes.
-feature: Edge Delivery Services
+feature: Edge Delivery Services, Agentic AI
 role: Admin, Architect, Developer
 ---
 

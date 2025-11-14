@@ -1,7 +1,7 @@
 ---
 title: AI in AEM as a Cloud Service
 description: Learn about AI in Adobe Experience Manager as a Cloud Service
-feature: Generative AI, AI Assistant, AI Tools
+feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
 ---
