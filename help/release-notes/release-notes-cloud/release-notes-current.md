@@ -265,9 +265,9 @@ Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-
 
 AI Answers introduces a new way for your visitors to interact with your content. Powered by Retrieval-Augmented Generation (RAG) technology, it uses your AEM-managed data to deliver accurate, brand-consistent answers directly within your digital experiences. 
 
-As part of this beta, you can safely explore AI Answers in your AEM Cloud Service environment. This approach lets you validate performance, accuracy, and overall experience before making it available to your live audience. Once validated, you can promote your AI Answers experience to full production.
+We are preparing to launch the AI Answers Beta Program and are now inviting customers to register their interest. Because the beta will have very limited capacity, early sign-ups will receive priority consideration. Participating in the beta will allow you to explore AI Answers in your AEM Cloud Service environment, validate performance and accuracy, and help shape the future experience before it becomes generally available.
 
-To request beta access or share your feedback, please contact [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
+To request participation or receive updates, please contact [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
 
 
 ### Snapshots for RDEs (Alpha Program) {#rde-snapshot-program}
