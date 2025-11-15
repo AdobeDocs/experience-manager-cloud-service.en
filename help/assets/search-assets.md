@@ -367,6 +367,33 @@ Use double quotations around keywords to find assets that contain the exact phra
 
 *Figure: Use of dash to search for assets not containing an excluded keyword.*
 
+## AI Search {#ai-search}
+
+AI Search is an advanced search capability that understands the meaning and intent behind a user's query rather than relying on exact keyword matches. It uses artificial intelligence (AI) and machine learning to deliver more accurate and context-aware results.
+
+Unlike traditional keyword-based search, which looks for exact terms, AI Search interprets relationships between words, concepts, and user intent. This ensures that users find what they are looking for—even if their query is phrased differently, contains typos, or is in another language.
+
+Some if its key benefits include:
+
+* **Multilingual support**: Search across multiple languages without requiring exact translations. Users can find relevant content regardless of their query language.
+
+* **Handles misspellings**: Interprets typos and spelling errors, ensuring accurate results even with imperfect input.
+
+* **Understands synonyms**: Delivers results for related terms and phrases, so users do not need to guess the right keyword.
+
+* **Context-Aware search**: Recognizes the intent behind a query, not just the exact words.
+
+### Examples for AI Search {#examples-ai-search}
+
+**Example Prompt**: *Woman drinking coffee*
+
+The traditional keyword-based search looks for exact matches of asset metadata, such as `Woman`, `drinking`, `Coffee`, and returns assets that include all these terms in the metadata.
+
+However, AI Search matches similar words such as `Girl`, `Lady` in the case of `Woman` and `Cappuccino` and `Latte` in the case of `Coffee`.
+
+Similarly, you can specify this prompt in Spanish or misspell `Woman` as `Wman` and still get the same results.
+
+
 ## Configuration and administration tasks related to search functionality {#configadmin}
 
 ### Search index configurations {#searchindex}
