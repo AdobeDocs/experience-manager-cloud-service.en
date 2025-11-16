@@ -33,7 +33,7 @@ The Discovery Agent provides the following skills:
 
 * **Tag-based asset discovery** 
 
-   The Discovery Agent can locate assets using specific tags stored in the AEM repository, helping users quickly access content aligned with defined taxonomy or metadata.
+   The Discovery Agent uses natural language prompts to find assets associated with specific tags in the AEM repository, helping users quickly access content organized or not organized as per the organization's taxonomy.
 
 * **Folder-based content discovery:**  
   The Discovery Agent can identify assets by interpreting natural language prompts that reference folder names in AEM. Users can simply mention the folder in their prompt—without manually navigating through the repository—significantly reducing the number of clicks needed to locate the right content.
@@ -72,42 +72,72 @@ Link to the uber docs or:
 
 ## Use cases and sample prompts {#use-cases-prompts}
 
-**Assets**
+### Assets {#discovery-agents-assets}
 
-* Find banner images for Seattle Seahawks 2025 season
-* Find videos featuring Adidas products for social media
+**Tag-based asset discovery** 
+
+   The Discovery Agent uses natural language prompts to find assets associated with specific tags in the AEM repository, helping users quickly access content organized according to their organization's taxonomy.
+
+   Sample prompt:
+   
+   Show images tagged `office` in folder `frescopa`.
+
+**Folder-based content discovery:**  
+  The Discovery Agent can identify assets by interpreting natural language prompts that reference folder names in AEM. Users can simply mention the folder in their prompt—without manually navigating through the repository—significantly reducing the number of clicks needed to locate the right content.
+
+  Sample prompts:
+
+  * Are there any svgs in folder `frescopa`?
+  * Show assets modified after `Nov 1 2025` in folder `frescopa`.
+  * List `lifestyle` images in folder `frescopa`.
+
+**Resolution and format-based asset discovery**
+
+The Discovery Agent can identify assets that meet specific quality requirements, such as file format, background characteristics, or minimum resolutio, allowing users to quickly locate product visuals that are ready for high-quality delivery and reuse across channels.
+
+Sample prompt:
+
+Find product packshots with transparent background (PNG/WebP) at least 2000 px wide.
+
+**Orientation-based content discovery**
+
+The Discovery Agent can filter assets by recognizing visual attribute, such as the presence of people and the orientation of an image. This allows users to quickly narrow down content to the most relevant visuals without manually applying multiple filters in AEM.
+
+Sample prompt:
+   
+Show assets with person in landscape orientation.
+
+### Content Fragments {#discovery-agents-content-fragments}
+
+The Discovery Agent helps users quickly locate the right Content Fragments by interpreting natural language references to campaign names, product brands, publication status, and recent creation activity. It allows teams to surface campaign-ready fragments and view brand-specific content, all without manually browsing through folders or applying multiple filters in AEM.
+
+Sample prompts:
+
+* Show content fragments for creating frescopa offer campaign.
+
+* Show the content fragment for americano beverage.
+
+* Show me all published content fragments for frescopa beverages.
+
+* List all content fragments created in last 2 weeks.
+
+### Forms {#discovery-agents-forms}
 
 
 
-**Content Fragments**
-
-* Show me draft articles about Nike for review
-* Find articles about basketball training techniques
-* Find author bios for sports contributors
+## Search Results {#discovery-agent-search-results}
 
 
-**Forms**
 
-* Find customer registration forms
-* I need forms for employee feedback and surveys
 
-**All capabilities**
 
-* Get content for Nike Air Jordan autumn collection launch including product photos, descriptions, and customer registration forms
 
-* I'm preparing a summer 2025 campaign for Nike women's running shoes targeting millennials. We need vibrant product photos, compelling athlete stories, and registration forms for our loyalty program. The campaign will run across email, social media, and retail displays.
 
-* Find content for Nike Revolution 2025 campaign targeting women athletes for spring season
+## Prompting best Practices {#prompting-best-practices-discovery-agent}
 
-* Show me autumn collection materials for women's sportswear
+* Define tags, folder names, creation dates, publish status, author names in your prompts to filter assets.
 
-* Find everything for Black Friday 2024 sale - need materials for email, social media, and web
-
-* Find content about innovation and athlete performance
-
-* Find Lakers championship celebration content
-
-## Best Practices {#best-practices-discovery-agent}
+* Use brand names, categories (running shoes, electronics), seasons (autumm, spring), events (black friday, product launch), and channels (Web, Email, Print) to further filter content.
 
 List the best pracrices
 
