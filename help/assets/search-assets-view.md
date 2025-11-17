@@ -112,33 +112,29 @@ To remove custom filters:
 
 1. Click **[!UICONTROL Confirm]** to remove the filters from the user interface.
 
-## Semantic Search {#semantic-search}
+## AI Search {#ai-search}
 
-Semantic Search is an advanced search capability that understands the meaning and intent behind a user's query rather than relying on exact keyword matches. It uses artificial intelligence (AI), natural language processing (NLP), and machine learning to deliver more accurate and context-aware results.
+AI Search is an advanced search capability that understands the meaning and intent behind a user's query rather than relying on exact keyword matches. It uses artificial intelligence (AI) and machine learning to deliver more accurate and context-aware results.
 
-Unlike traditional keyword-based search, which looks for exact terms, Semantic Search interprets relationships between words, concepts, and user intent. This ensures that users find what they are looking for—even if their query is phrased differently, contains typos, or is in another language.
+Unlike traditional keyword-based search, which looks for exact terms, AI Search interprets relationships between words, concepts, and user intent. This ensures that users find what they are looking for—even if their query is phrased differently, contains typos, or is in another language.
 
 Some if its key benefits include:
 
 * **Multilingual support**: Search across multiple languages without requiring exact translations. Users can find relevant content regardless of their query language.
 
-* **Handles misspellings**: Automatically corrects or interprets typos and spelling errors, ensuring accurate results even with imperfect input.
+* **Handles misspellings**: Interprets typos and spelling errors, ensuring accurate results even with imperfect input.
 
 * **Understands synonyms**: Delivers results for related terms and phrases, so users do not need to guess the right keyword.
 
-* **Context-Aware search**: Recognizes the intent behind a query, not just the words.
+* **Context-Aware search**: Recognizes the intent behind a query, not just the exact words.
 
->[!IMPORTANT]
->
-> Specify three or more than three words for the Semantic Search to display appropriate results.
-
-### Examples for Semantic Search {#examples-semantic-search}
+### Examples for AI Search {#examples-ai-search}
 
 **Example Prompt**: *Woman drinking coffee*
 
-The traditional keyword-based search looks for exact matches of asset metadata, such as Woman, Coffee, and so on, and returns assets that include these keywords.
+The traditional keyword-based search looks for exact matches of asset metadata, such as `Woman`, `drinking`, `Coffee`, and returns assets that include all these terms in the metadata.
 
-However, Semantic Search looks for similar words such as `Girl`, `Lady` in case of `Woman` and coffee options, such as `Cappuccino` and `Latte` in case of `Coffee`.
+However, AI Search matches similar words such as `Girl`, `Lady` in the case of `Woman` and `Cappuccino` and `Latte` in the case of `Coffee`.
 
 Similarly, you can specify this prompt in Spanish or misspell `Woman` as `Wman` and still get the same results.
 
@@ -274,6 +270,9 @@ You can preview to check the layout and formatting of the search first homepage.
 
    ![Search first homepage preview](/help/assets/assets/search-first-preview.gif)
 
+
+<!--
+
 ## Contextual Search {#contextual-search}
 
 You can also search assets available in the repository by defining text prompts. Experience Manager Assets automatically transforms those text prompts to search filters and displays the search results. You can view and modify automatic filters using the Filters Pane to further narrow down the search results.
@@ -357,6 +356,8 @@ Administrators also have the option to disable Contextual Search for users in yo
 If you need to provide feedback on the Contextual Search feature, click ![Contextual Search icon](assets/do-not-localize/Smock_Help_18_N.svg)  and click the Feedback icon. Select the feedback type, specify the subject and description, and click **[!UICONTROL Submit]**.
 
 ![Contextual Search feedback](assets/contextual-search-feedback.png)
+
+-->
 
 ## Next Steps {#next-steps}
 
