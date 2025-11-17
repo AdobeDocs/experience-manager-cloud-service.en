@@ -46,3 +46,11 @@ The [Market Intelligence Agent](/help/ai-in-aem/agents/market-intelligence/overv
 ## Site Optimization Agent {#site-optimization-agent}
 
 The [Site Optimization Agent](/help/ai-in-aem/agents/site-optimization/overview.md) is ...
+
+## Limitations {#limitations}
+
+Currently the limitations in place are: 
+
+* The agents are only available for AEM as a Cloud Service. 
+  * They are not currently available on AEM On-prem, nor Managed Services.
+  
