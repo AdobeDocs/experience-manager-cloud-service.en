@@ -2,7 +2,7 @@
 title: Authoring Content Fragments
 description: Understand how to author content for your Content Fragments, and create variations of that content according to purpose. Content Fragments provide added flexibility for both headless delivery and page authoring.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
 ---
@@ -62,7 +62,7 @@ When you first open the Content Fragment Editor, you see four main areas:
 
   >[!NOTE]
   >
-  >Depending on definitions in the underlying model, fields can be subject to certain types of [Validation](/help/assets/content-fragments/content-fragments-models.md#validation).
+  >Depending on definitions in the underlying model, fields can be subject to certain types of [Validation](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#validation).
 
 ![Content Fragment Editor - Overview](assets/cf-authoring-overview.png)
 

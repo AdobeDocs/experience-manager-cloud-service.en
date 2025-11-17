@@ -4,7 +4,7 @@ description: Learn how to use Cloud Manager to create your own production progra
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Create production programs {#create-production-program}
@@ -85,7 +85,7 @@ The **Security** tab provides the options to activate **HIPAA**, or **WAF-DDOS P
 
 Adobe HIPAA Compliant and WAF-DDOS (Web Application Firewall - Distributed Denial of Service) facilitates cloud-based security as part of a multi-layered approach for protecting against vulnerabilities.
 
-   * **HIPAA** - This option enables Adobe's HIPPA-ready solution implementation.
+   * **HIPAA** - This option enables Adobe's HIPAA-ready solution implementation.
      * [Learn more](https://www.adobe.com/trust/compliance/hipaa-ready.html) about Adobe's HIPAA ready solution implementation.
      * HIPAA cannot be enabled or disabled after program creation.
    * **WAF-DDOS Protection** - This option enables the Web Application Firewall by way of rules to protect your application.

@@ -4,7 +4,7 @@ description: Learn how to receive information about pipeline deployments using t
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Notifications {#notifications}
@@ -39,11 +39,9 @@ Click the **Mark all as read** option at the bottom of the panel to mark all unr
 
 You can customize how you receive notifications and what notifications you receive.
 
-Click the gear icon at the top of the notifications sidebar.
+Click the gear icon at the top of the notifications sidebar to open the **Experience Cloud preferences** window. From here, you can define your notification subscriptions and how you receive your notifications.
 
 ![Notification settings icon](assets/notifications-configuration.png)
-
-This opens the **Experience Cloud preferences** window, where you can define your notification subscriptions and how you receive your notifications.
 
 ### Subscriptions {#subscriptions}
 
@@ -51,13 +49,13 @@ Subscriptions define for which products you receive notifications and which noti
 
 ![Notification subscriptions](assets/notifications-subscriptions.png)
 
-By default, you will receive all notifications for all products both in the application and via email. Click the chevron next to a product name reveal the detailed options and define the types of notifications you receive for that product. Or check or uncheck the options at the product level to select/deselect all options for the product.
+By default, you receive all notifications for all products both in the application and through email. Click the chevron next to a product name to reveal the detailed options and define the types of notifications you receive for that product. Or check or uncheck the options at the product level to select/deselect all options for the product.
 
 ![Notification subscription customization](assets/notifications-subscriptions-customize.png)
 
 ### Priority {#priority}
 
-Priority alerts are marked with a **HIGH** tag and can be configured to be exclusively received as alerts. In the **Priority** section, you can define which categories qualify as priority notifications.
+Priority alerts are marked with a **HIGH** tag. You can configure them to be exclusively received as alerts. In the **Priority** section, you can define which categories qualify as priority notifications.
 
 ![Notification priority](assets/notifications-priority.png)
 
@@ -87,4 +85,4 @@ By default no emails are sent. You can choose to receive emails as:
 * Daily
 * Weekly
 
-When **Instant notifications** is chosen, emails are sent immediately for every notification. For **Daily digest** and **Weekly digest** you can choose when your daily digest is sent and on which day and when your weekly digest is sent.
+When you choose **Instant notifications**, emails are sent immediately for every notification. For **Daily digest** and **Weekly digest** you can choose when your daily digest is sent and on which day and when your weekly digest is sent.

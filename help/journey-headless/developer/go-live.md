@@ -4,7 +4,7 @@ description: In this part of the AEM Headless Developer Journey, learn how to de
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # How to Go Live with Your Headless Application {#go-live}
 
@@ -23,11 +23,6 @@ This document helps you understand the AEM headless publication pipeline and the
 * Secure and Scale your application before Launch
 * Monitor Performance and Debug Issues
 
-<!-- Alexandru: this is a bit redundant, to review again later
-
-## Prepare your AEM Headless Application for Go-Live {#prepare-your-aem-headless-application-for-golive}
-
--->
 To get your AEM headless application ready for launch, follow the best practices outlined below.
 
 ## Secure and Scale your Headless Application Before Launch {#secure-and-scale-before-launch}

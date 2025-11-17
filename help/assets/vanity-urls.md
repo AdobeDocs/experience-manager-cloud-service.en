@@ -10,6 +10,7 @@ exl-id: 596136e9-7c2a-43a1-8091-2d8b6226b695
 Use [!DNL Dynamic Media with OpenAPI capabilities] to transform your long asset delivery URLs into short, branded vanity URLs. Standard asset delivery URLs include system-generated asset UUIDs that make the delivery URL complex, hard to remember and share. Replace these asset UUIDs with simple identifiers (Vanity IDs) to generate a vanity URL. A vanity URL is a short, clean, and readable version of your complex delivery URL.
 
 See the following URL formats to understand their difference:
+
 * [Standard delivery URL](#standard-urls)
 * [Vanity URLs](#vanity-url)
 
@@ -75,6 +76,7 @@ To create the vanity URL, ensure you have already [approved the assets for publi
 ## Create Vanity URLs{#create-vanity-urls}
 
 Execute the following steps to create vanity URLs:
+
 1. [Set up asset metadata](#set-up-asset-metadata)
 1. [Create and map Cloud manager environment variable](#map-cloud-manager-environment-variable)
 1. [Approve the assets requiring vanity URL for delivery](/help/assets/manage-organize-assets-view.md#manage-asset-status)
@@ -83,18 +85,22 @@ Execute the following steps to create vanity URLs:
 ### Set up asset metadata{#set-up-asset-metadata}
 
 Execute the following to set up the vanity ID in your asset's metadata form:
+
 1. Navigate to the details page of the folder holding your assets for [!DNL Dynamic Media with OpenAPI] delivery.
 1. [Edit that metadata form](/help/assets/metadata-assets-view.md#edit-metadata-forms) by doing one of the following:
+
    * Add a new metadata field and specify the required vanity ID as the value of that field.
    * Update existing field by replacing an existing metadata property's value with the required vanity ID. Learn the [best practices](#best-practices) for creating the vanity ID.
+
    ![vanity ID](/help/assets/assets/vanity-id-metadata.png)
+
    Learn more about [metadata schemas](/help/assets/metadata-schemas.md).
    
-     >[!NOTE]
-     >
-     > * Use unique vanity IDs for each asset. Always verify that assets sharing the same metadata form have unique vanity IDs for DM with OpenAPI delivery through vanity URLs. If two assets share the same vanity ID, DM with OpenAPI delivers the asset that most recently received that ID, overriding the previous entitlement of the ID to another asset.
-     >
-     > * A single asset can have multiple vanity IDs. [Contact Adobe support](https://helpx.adobe.com/in/contact.html) and raise a request for generating the required vanity IDs.
+   >[!NOTE]
+   >
+   > * Use unique vanity IDs for each asset. Always verify that assets sharing the same metadata form have unique vanity IDs for DM with OpenAPI delivery through vanity URLs. If two assets share the same vanity ID, DM with OpenAPI delivers the asset that most recently received that ID, overriding the previous entitlement of the ID to another asset.
+   >
+   > * A single asset can have multiple vanity IDs. [Contact Adobe support](https://helpx.adobe.com/in/contact.html) and raise a request for generating the required vanity IDs.
 
 After setting up your vanity ID in the asset metadata form, [map this metadata field to the system's delivery mechanism](#map-cloud-manager-environment-variable).
 

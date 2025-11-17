@@ -2,10 +2,7 @@
 title: Launches for Content Fragments
 description: Learn how to use Launches for Content Fragments in Adobe Experience Manager as a Cloud Service. Launches enable you to efficiently develop content for a future release, while maintaining your current Content Fragments.
 feature: Content Fragments
-role: User, Developer, Architect
-hide: yes
-hidefromtoc: yes
-index: no
+role: User, Developer
 solution: Experience Manager Sites
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
 ---

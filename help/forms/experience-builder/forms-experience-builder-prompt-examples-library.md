@@ -4,7 +4,7 @@ description: Collection of proven prompt patterns and examples for building form
 hide: yes
 index: no
 hidefromtoc: yes
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
 ---
 # Forms Experience Builder - Prompt Library

@@ -36,18 +36,29 @@ Before the team members that you assigned to the **Business Owner** role can acc
 
    Return to the previous step, [Assign Team Members to Cloud Manager Product Profiles](assign-profiles-cloud-manager.md), for details on assigning the **Business Owner** role to the system administrator.
 
-1. Sign into Cloud Manager at [experiece.adobe.com](https://experience.adobe.com).
+1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
 1. In the Quick Access grouping, click **Experience Manager**.
 1. In the left side panel, click **Cloud Manager**.
 
    ![Cloud Manager on console](/help/journey-onboarding/assets/consol-cloud-manager.png)
 
+A system administrator with the **Business Owner** role must sign in to Cloud Manager first. This initial sign-in enables other users with the **Business Owner** role to create programs; no confirmation appears.
+
+<!--
 By successfully signing in as a system administrator with the **Business Owner** role, you use Cloud Manager for use by the other users with the **Business Owner** role. You do not receive a confirmation or any message. Simply signing in is sufficient.
 
-Until you sign in to Cloud Manager as a system administrator with the **Business Owner** role, other users with the **Business Owner** role cannot create programs in Cloud Manager. This rule is true even if they are assigned the correct roles.
+Until you sign in to Cloud Manager as a system administrator with the **Business Owner** role, other users with the **Business Owner** role cannot create programs in Cloud Manager. This rule is true even if they are assigned the correct roles. -->
 
 ## Navigate to Cloud Manager {#navigate-cloud-manager}
 
+1. Go to [experience.adobe.com/experiencemanager](https://experience.adobe.com/experiencemanager).
+1. In the left side panel, click **Cloud Manager**.
+
+>[!NOTE]
+>
+>Depending on the roles assigned in Cloud Manager and the state of the application, you see different screens while using the Cloud Manager user interface.
+
+<!--
 Users with the **Business Owner** role receive a welcome email with a link to get started. Follow the steps below to navigate to Cloud Manager using this welcome email.
 
 1. From your welcome email, click **Get started**, as shown in the figure below.
@@ -59,7 +70,7 @@ Users with the **Business Owner** role receive a welcome email with a link to ge
    >
    >You can also navigate directly to Cloud Manager's login page from `[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)`. Bookmark this page for future reference.
 
-1. You are directed to Cloud Manager's landing page.
+1. You are directed to Cloud Manager's landing page. -->
 
 <!-- OLD
 Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe Experience Cloud home page using these steps.

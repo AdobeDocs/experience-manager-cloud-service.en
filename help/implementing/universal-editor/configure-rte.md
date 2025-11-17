@@ -2,7 +2,7 @@
 title: Configuring the RTE for the Universal Editor
 description: Understand how you can configure the rich text editor (RTE) in the Universal Editor.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
 ---
 # Configuring the RTE for the Universal Editor {#configure-rte}
@@ -67,7 +67,7 @@ The toolbar configuration controls which editing options are available in the UI
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink"],
+    "insert": ["link", "unlink", "image"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
@@ -152,6 +152,27 @@ Link actions support target attribute control to manage link behavior. The follo
 * `hideTarget`: `true` - Exclude target attribute from links entirely
 
 The `unlink` action only appears when the cursor is positioned within an existing link. It removes the link formatting while preserving the text content.
+
+### Image Actions {#image}
+
+Image actions support picture element wrapping to generate responsive image markup. The following sections are available.
+
+```json
+{
+  "actions": {
+    "image": {
+      "wrapInPicture": false,     // Use <img> tag (default)
+      "shortcut": "Mod-Shift-I",  // Custom keyboard shortcut
+      "label": "Insert Image"     // Custom button label
+    }
+  }
+}
+```
+
+#### Image Configuration Options {#image-options}
+
+* `wrapInPicture`: `false` (default) - Generate simple `<img>` elements
+* `wrapInPicture`: `true` - Wrap images in `<picture>` elements for responsive design
 
 ### Other Actions {#other}
 

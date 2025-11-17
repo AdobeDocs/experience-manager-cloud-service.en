@@ -2,7 +2,7 @@
 title: Defining Content Fragment Models
 description: Learn how Content Fragment Models serve as a foundation for your Content Fragments in AEM, allowing you to create structured content for use in headless delivery, or page authoring.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
 ---
@@ -325,6 +325,7 @@ The **Content Reference** data type allows you to render content from another so
 In addition to standard properties you can specify:
 
 * The **Root Path**, which specifies, or represents, where to store any referenced content
+
   >[!NOTE]
   >
   >This is mandatory if you want to directly upload and reference images in this field when using the Content Fragment editor.
@@ -332,6 +333,7 @@ In addition to standard properties you can specify:
   >See [Reference Images](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) for further details.
 
 * The content types that can be referenced
+
   >[!NOTE]
   >
   >These must include **Image** if you want to directly upload and reference images in this field when using the Content Fragment editor.
@@ -340,6 +342,7 @@ In addition to standard properties you can specify:
 
 * Limitations for file sizes
 * If an image is referenced:
+
   * Show Thumbnail
   * Image restraints of height and width
 

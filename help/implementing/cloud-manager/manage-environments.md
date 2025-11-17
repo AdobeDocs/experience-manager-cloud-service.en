@@ -4,7 +4,7 @@ description: Learn about the types of environments that you can create and how t
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Manage Environments {#managing-environments} 
@@ -146,7 +146,7 @@ If you want to provision [advanced networking](/help/security/configuring-advanc
 
 1. On the Environments page, do one of the following:
 
-   * Click an environment in the list to view its details.
+   * Click on an environment in the list to view its details.
 
    ![Environment details](assets/environ-preview1.png)
 
@@ -334,7 +334,7 @@ To manage IP Allow Lists, navigate to the ![Data icon](https://spectrum.adobe.co
 
 ### Apply an IP Allow List {#apply-ip-allow-list}
 
-Applying an IP Allow List links all defined IP ranges to an author or publish service in the environment.
+Applying an IP Allow List links all defined IP ranges to an author or publishing service in the environment.
 
 >[!TIP]
 >

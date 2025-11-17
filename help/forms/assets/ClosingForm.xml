@@ -1,0 +1,30 @@
+<batch>
+<closing_package>
+   <cls_trans_id>265-3657-636563/J</cls_trans_id>
+   <cls_officer>
+        <name>Martin Q Closer Martin Q Closer</name>
+        <telephone>123 434 2737</telephone>
+   </cls_officer>
+   <customer>
+        <name1>Jethrow Buyer Jethrow Buye Jethrow Buye Jethrow Buyer Jethrow Buye Jethrow Buye</name1>
+        <name2>Edna Buyer</name2>
+        <address1>$ 123 Mockingbird Lane</address1>
+        <address2>Larkbridge Township</address2>
+        <address3>Sunnyfield County</address3>
+   </customer>
+</closing_package>
+<closing_package>
+   <cls_trans_id>$ 265-3657-636563/J</cls_trans_id>
+   <cls_officer>
+        <name>Martin Q Closer</name>
+        <telephone> $ 123 434 2737</telephone>
+   </cls_officer>
+   <customer>
+        <name1>Jethrow Buyer</name1>
+        <name2>Edna Buyer</name2>
+        <address1>123 Mockingbird Lane</address1>
+        <address2>Larkbridge Township</address2>
+        <address3>Sunnyfield County</address3>
+   </customer>
+</closing_package>
+</batch>

@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Translate and localize an Edge Delivery Services for AEM Forms

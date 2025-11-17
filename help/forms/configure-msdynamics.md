@@ -9,6 +9,7 @@ exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
 # Configure Microsoft&reg; Dynamics 365 for AEM Forms 
 
 Adobe Experience Manager Forms Data Integration provides a cloud service configuration to integrate forms with Microsoft Dynamics server. It enables you to create Form Data Model (FDM) based on the entities, attributes, and services defined in Microsoft Dynamics service. The Form Data Model (FDM) can be used to create Adaptive Forms that interact with Microsoft Dynamics server to enable business workflows. For example:
+
 * Query Microsoft Dynamics server for data and prepopulate Adaptive Forms.
 * Write data into Microsoft Dynamics on Adaptive Form submission.
 * Write data in Microsoft Dynamics through custom entities defined in Form Data Model (FDM).
@@ -31,7 +32,7 @@ AEM as a Cloud Service offers various out of the box submit actions for handling
 
 ## Prerequisites
 
-Before integrating [!DNL Microsoft® Dynamics 365] with AEM Forms as a Cloud Service, ensure that you have performed the following steps:
+Before integrating [!DNL Microsoft&reg; Dynamics 365] with AEM Forms as a Cloud Service, ensure that you have performed the following steps:
 
 
 1. **Set up the account in Microsoft Dynamics 365** 
@@ -41,7 +42,9 @@ Before integrating [!DNL Microsoft® Dynamics 365] with AEM Forms as a Cloud Ser
     >[!VIDEO](https://video.tv.adobe.com/v/3444389/)
 
 1. **Create an account in the Power Platform Admin Center**
+
     Create an account in the **Power Platform Admin Center** to: 
+
     * Add Dataverse
     * Enable Microsoft Dynamics 365 aaplications
     
@@ -57,12 +60,12 @@ Before integrating [!DNL Microsoft® Dynamics 365] with AEM Forms as a Cloud Ser
 
     >[!NOTE]
     >
-    > * To create the connected [!DNL Microsoft® Dynamics 365] application, select **Web** as the platform and specify the **Redirect URI** in the following format: `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html`.
-    > * Make sure to save the Client ID (also known as the Application ID) and Client secret for future reference.
+    >* To create the connected [!DNL Microsoft&reg; Dynamics 365] application, select **Web** as the platform and specify the **Redirect URI** in the following format: `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html`.
+    >* Make sure to save the Client ID (also known as the Application ID) and Client secret for future reference.
     
 ## Connect Forms to Microsoft&reg; Dynamics 365
 
-Once you have configured the prerequisites above, you can proceed with integrating Adaptive Forms with Microsoft® Dynamics 365. To send data to Microsoft® Dynamics 365 on form submission, follow the below steps:
+Once you have configured the prerequisites above, you can proceed with integrating Adaptive Forms with Microsoft&reg; Dynamics 365. To send data to Microsoft&reg; Dynamics 365 on form submission, follow the below steps:
 
 [1. Configure cloud service configuration for Microsoft Dynamics](#1-configure-cloud-service-configuration-for-microsoft-dynamics)
 
@@ -143,7 +146,7 @@ Next, you can [configure the Form Data Model (FDM)](/help/forms/work-with-form-d
 * Write submitted form data to [!DNL Microsoft Dynamics] entities
 * You can configure the Form Data Model Submit Action for an Adaptive Form to send data to [!DNL Microsoft Dynamics].
 
-You can then use the [Submit using Form Data Model (FDM)](/help/forms/using-form-data-model.md) option in an **Adaptive Form** to transfer data from your form to the configured [!DNL Microsoft® Dynamics 365].
+You can then use the [Submit using Form Data Model (FDM)](/help/forms/using-form-data-model.md) option in an **Adaptive Form** to transfer data from your form to the configured [!DNL Microsoft&reg; Dynamics 365].
 
 
 >[!MORELIKETHIS]
