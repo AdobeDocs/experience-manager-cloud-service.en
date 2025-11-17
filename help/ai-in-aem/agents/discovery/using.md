@@ -139,11 +139,9 @@ Sample prompts:
 
 * Use brand names, categories (running shoes, electronics), seasons (autumm, spring), events (black friday, product launch), and channels (Web, Email, Print) to further filter content.
 
-List the best pracrices
-
 ## Limitations {#limitations-discovery-agent}
 
-List the limitations
+List the limitations (if any)
 
 
 
