@@ -2,7 +2,7 @@
 title: Managing Content Fragments
 description: Learn how to manage your AEM Content Fragments from the console and editor, to create content as the basis of your headless content, or for page authoring.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
 ---
@@ -57,7 +57,9 @@ Here you can see that there are three main areas:
   * Here you can hide, or reveal, the folder tree
   * You can select a specific branch of the tree
   * This can be resized to show nested folders
-  * As well as Content Fragments, you can view [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) or [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md); you can also compress, or expand, links to the panels
+  * As well as Content Fragments, you can:
+    * View [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) or [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md); you can also compress, or expand, links to the panels
+    * Create, and manage, [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * The main/right panel - from here you can:
   * See the list of all Content Fragments in the selected branch of the tree:
     * Content Fragments from the selected folder, and all child folders will be shown:
@@ -251,53 +253,6 @@ To open your fragment for editing:
    ![Fragment editor](assets/cf-managing-editor.png)
 
 ## Copy a Content Fragment {#copy-a-content-fragment}
-
-<!--
-**Copy** creates a copy of the selected fragment at its location.
-
-* In the **Copy** action you can select whether to **Copy with children** (referenced fragments). This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
-
-  * Creates a copy of the selected Content Fragment at its location.
-  * Creates copies of all fragments that are referenced by the selected fragment; these are copied to the same location as the original referenced fragment.
-
-* The copy of the selected fragment will reference the copies of the referenced fragments.
-
-* A deep copy is made; so if a referenced Content Fragment also references fragments, these are copied as well.
-
-* The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset/image content itself.
-
-So, if we start with:
-
-```xml
-FolderA 
-    FragmentA (inside FolderA)
-    | 
-    |___FolderB/FragmentB (referenced by FragmentA)
-
-FolderB
-   FragmentB
-```
-
-Copying FragmentA to FolderC, would result in:
-
-```xml
-FolderA 
-    FragmentA (inside FolderA)
-    | 
-    |___FolderB/FragmentB (referenced by FragmentA)
-
-FolderB
-    FragmentB
-    Copy_of_FragmentB
-
-FolderC
-    Copy_of_FragmentA
-    | 
-    |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
-```
--->
-
-<!-- CQDOC-22785 - will replace above text -->
 
 **Copy** creates a copy of the selected fragment at its location.
 

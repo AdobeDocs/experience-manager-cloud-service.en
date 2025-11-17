@@ -6,6 +6,7 @@ feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
 ---
+
 # Accessing and Navigating the Universal Editor {#navigating}
 
 Learn the basics of accessing and navigating the Universal Editor.
@@ -54,7 +55,7 @@ Once the app is instrumented to work with the Universal Editor, the Universal Ed
 
 The UI is divided into these main areas.
 
-* [The Experience Cloud header](#experience-cloud-header)
+* [The Experience Platform Top Navigation Bar](#experience-cloud-header)
 * [The Universal Editor toolbar](#universal-editor-toolbar)
 * [The editor](#editor)
 * [The properties panel](#properties-rail)
@@ -65,49 +66,17 @@ The UI is divided into these main areas.
 >
 >The Universal Editor offers a number of [customization options](/help/implementing/universal-editor/customizing.md) and [extension points](/help/implementing/universal-editor/extending.md) that can modify and add to the functionality of the editor. For this reason, you may see different options than the standard ones documented here.
 
-### The Experience Cloud Header {#experience-cloud-header}
+### Experience Platform Top Navigation Bar {#experience-cloud-header}
 
-The Experience Cloud header is always present at the top of the screen. It is an anchor that tells you where you are within Experience Cloud and helps you navigate to other Experience Cloud apps.
+The Experience Platform top navigation bar is always present at the top of the screen. It is an anchor that tells you where you are within Experience Cloud and helps you navigate to other Experience Cloud apps.
 
 ![The Experience Cloud header](assets/experience-cloud-header.png)
 
-#### Experience Manager {#experience-manager}
-
-Select the Adobe Experience Cloud link at the left of the header to navigate to the root of your Experience Manager solution to access tools such as [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md), and [Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
-
-![Global Navigation button](assets/global-navigation.png)
-
-#### Organization {#organization}
-
-This displays the organization you are currently signed into. Select to switch to another organization if your Adobe ID is associated with multiple.
-
-![Organization indicator](assets/organization.png)
-
-#### Help Center {#help}
-
-The help center icon provides quick access to learning and support resources.
-
-![Help](assets/help.png)
-
-#### Notifications {#notifications}
-
-This icon is badged with the number of currently assigned incomplete [notifications](/help/implementing/cloud-manager/notifications.md).
-
-![Notifications](assets/notifications.png)
-
-#### Apps {#solutions}
-
-Tapping or clicking the app switcher lets you quickly jump to other Experience Cloud solutions.
-
-![App switcher](assets/solutions.png)
+For details on the Experience Platform top navigation bar, please see the [Adobe Experience Platform UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### Account {#user-properties}
 
-Select the icon representing your user to access your account settings. If you do not have a user picture configured, an icon is randomly assigned.
-
-![User properties](assets/user-properties.png)
-
-Tapping or clicking the account icon opens a menu with your user settings. These settings apply to Cloud Manager in general and its features are detailed [in that documentation.](/help/implementing/cloud-manager/navigation.md)
+Tapping or clicking the account icon opens a menu with your user settings.
 
 ![Environment switcher](assets/environment-switcher.png)
 
@@ -167,6 +136,12 @@ Select the Undo or Redo buttons to undo or redo the last edit in the editor. Ple
 Select the authentication headers icon if you need to [set a custom authentication header for local development purposes](/help/implementing/universal-editor/developer-overview.md#auth-header).
 
 ![Authentication header settings button](assets/authentication-header-settings.png)
+
+#### Local Developer Login {#local-developer-login}
+
+Select the local developer login icon if you need to easily authenticate to your local AEM SDK [when developing locally.](/help/implementing/universal-editor/local-dev.md)
+
+![Local developer login button](assets/local-developer-login.png)
 
 #### Responsive Mode {#emulator}
 

@@ -6,6 +6,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 ---
+
 # The AEM Page Editor {#editing-page-content}
 
 Once your page is created in the [**Sites** console](/help/sites-cloud/authoring/sites-console/introduction.md), you can edit the content of the page using the AEM page editor, a powerful tool for authoring your content.

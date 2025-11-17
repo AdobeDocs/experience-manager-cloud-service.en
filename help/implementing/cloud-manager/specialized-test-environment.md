@@ -2,7 +2,7 @@
 title: Add a Specialized Testing Environment
 description: Learn how Specialized Testing Environments in Cloud Manager provide a dedicated space to validate features under near-production conditions, ideal for stress testing and advanced pre-deployment checks.
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
 ---
@@ -29,7 +29,7 @@ DevXL is built to mirror the size, scalability, and configurations of a typical 
 | Content Restore | Same as the Development environment. |
 | Access Logs | Same as the Development environment. |
 | Developer Console | Same as the Development environment. |
-| IP Allow List | Same as the Development environment. |
+| `IP Allow List` | Same as the Development environment. |
 | Networking | Same as the Development environment (Services, Domain name, SSL certificates, Advanced network). |
 
 See also [Manage Environments](/help/implementing/cloud-manager/manage-environments.md)

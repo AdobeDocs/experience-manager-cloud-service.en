@@ -4,7 +4,7 @@ description: Learn how to use Cloud Manager to check the status of your SSL cert
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Manage SSL certificates {#managing-ssl-certificates}

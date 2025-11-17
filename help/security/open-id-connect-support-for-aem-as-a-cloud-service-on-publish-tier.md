@@ -77,7 +77,7 @@ First, we need to configure the OIDC connection. Multiple OIDC connections can b
 
 Now, configure the OIDC authentication handler. Multiple OIDC connections can be configured. Each has to have a different name. If they share the same [OAK External Identity Provider](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html), they can share users.
 
-1. Create the configuration file. For this example, we'll use `org.apache.sling.auth.oauth_client.impl.OidcConnectionImpl~azure.cfg.json`. The `azure` suffix must be a unique identifier. See an example of the configuration file below:
+1. Create the configuration file. For this example, we'll use `org.apache.sling.auth.oauth_client.impl.OidcAuthenticationHandler~azure.cfg.json`. The `azure` suffix must be a unique identifier. See an example of the configuration file below:
 
    ```
    {
@@ -150,7 +150,7 @@ Below some of the most relevant attributes to be configured in DefaultSyncHandle
 | `user.dynamicMembership`  | We recommend enabling dynamic group membership  | true  |
 | `user.enforceDynamicMembership`  | We recommend enabling the enforcement of dynamic group membership  | true  |
 | `group.dynamicGroups`  | We recommend enabling dynamic groups  |  true |
-| user.propertyMapping  | The provided implementation of `UserInfoProcessor` synchronizes only few properties. It can be modified and customized.  | <code>"profile/givenName=profile/given_name",</code><br><code>"profile/familyName=profile/family_name",</code><br><code>"rep:fullname=profile/name",</code><br><code>"profile/email=profile/email",</code><br><code>"access_token=access_token",</code><br><code>"refresh_token=refresh_token"</code> ||
+| user.propertyMapping  | The provided implementation of `UserInfoProcessor` synchronizes only few properties. It can be modified and customized.  | <code>"profile/givenName=profile/given_name",</code><br><code>"profile/familyName=profile/family_name",</code><br><code>"rep:fullname=profile/name",</code><br><code>"profile/email=profile/email",</code><br><code>"access_token=access_token",</code><br><code>"refresh_token=refresh_token"</code> |
 | `user.membershipNestingDepth`| Returns the maximum depth of group nesting when membership relations are synced. A value of 0 effectively disables group membership lookup. A value of 1 only adds the direct groups of a user. This value has no effect when syncing individual groups only when syncing a users membership ancestry. | 1|
 
 ### Configure the External Login Module {#configure-the-external-login-module}

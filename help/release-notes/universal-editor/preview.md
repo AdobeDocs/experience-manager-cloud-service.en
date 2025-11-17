@@ -7,7 +7,7 @@ role: Admin
 
 # Universal Editor Preview Release Notes {#preview}
 
-These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 23 October 2025.
+These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 20 November 2025.
 
 These **preview** release notes are provided as a convenience so you know what changes to the Universal Editor are upcoming and you can test them by [switching to your preview environment.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -21,9 +21,11 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming New Features {#what-is-new}
 
-* Multi-field support for updates is introduced.
+* Toasts have been migrated to a new UI.
 
 ## Upcoming Improvements {#other-improvements}
 
-* The host in `AemContentFragmentReference` is now sanitized.
-* Logic was added for SSL vs. no-SSL dispatcher configurations.
+* The handling of RTE values has been simplified.
+* A rare toolbar race condition was resolved.
+* Unused feature toggles were removed.
+* Dependencies were updated.

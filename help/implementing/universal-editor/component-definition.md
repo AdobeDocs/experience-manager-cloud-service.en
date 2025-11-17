@@ -2,7 +2,7 @@
 title: Component Definition
 description: Understand the JSON contract between the component definition and the Universal Editor in detail.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
 ---
 # Component Definition {#component-definition}

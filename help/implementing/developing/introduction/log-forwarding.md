@@ -3,7 +3,7 @@ title: Log Forwarding for AEM as a Cloud Service
 description: Learn about forwarding logs to logging vendors in AEM as a Cloud Service
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Log Forwarding {#log-forwarding}
 
@@ -17,80 +17,70 @@ Customers with a license with a logging vendor or who host a logging product can
   <tbody>
     <tr>
       <th>Log Technnology</th>
-      <th>Private Beta*</th>
       <th>AEM</th>
       <th>Dispatcher</th>
       <th>CDN</th>
     </tr>
     <tr>
       <td>Amazon S3</td>
-      <td style="background-color: #ffb3b3;">Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td style="background-color: #ffb3b3;">No</td>
+      <td style="background-color: #ffb3b3;">Future</td>
     </tr>
     <tr>
       <td>Azure Blob Storage</td>
-      <td>No</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
     </tr>
     <tr>
       <td>DataDog</td>
-      <td>No</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
     </tr>
     <tr>
       <td>Dynatrace</td>
-      <td style="background-color: #ffb3b3;">Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td style="background-color: #ffb3b3;">No</td>
+      <td style="background-color: #ffb3b3;">Future</td>
     </tr>
     <tr>
       <td>ElasticSearch<br>OpenSearch</td>
-      <td>No</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
     </tr>
     <tr>
       <td>HTTPS</td>
-      <td>No</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
     </tr>
     <tr>
       <td>New Relic</td>
-      <td style="background-color: #ffb3b3;">Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td style="background-color: #ffb3b3;">No</td>
+      <td style="background-color: #ffb3b3;">Future</td>
     </tr>
     <tr>
       <td>Splunk</td>
-      <td>No</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
     </tr>
     <tr>
       <td>Sumo Logic</td>
-      <td style="background-color: #ffb3b3;">Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td style="background-color: #ffb3b3;">No</td>
+      <td style="background-color: #ffb3b3;">Future</td>
     </tr>
   </tbody>
 </table>
 
 >[!NOTE]
 >
-> For technologies in Private Beta, please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.  
+> For upcoming CDN Log Technologies planned for the future, please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
 
 Log forwarding is configured in a self-service manner by declaring a configuration in Git, and can be deployed via Cloud Manager config pipelines to dev, stage, and production environment types. The configuration file can be deployed to Rapid Development Environments (RDEs) using command line tooling.
 
@@ -242,6 +232,8 @@ For CDN logs, you can allow-list the IP addresses, as described in [Fastly docum
 >[!NOTE]
 >
 >It is not possible for CDN logs to appear from the same IP address that your AEM logs appear from, this is because logs are sent directly from Fastly and not AEM Cloud Service.
+>
+>For this reason it is not possible to use Log Forwarding with Advanced Networking VPN configurations.
 
 ## Logging Destination Configuration {#logging-destinations}
 
@@ -288,6 +280,9 @@ The IAM policy should allow the user to use `s3:putObject`.  For example:
 ```
 
 See [AWS Bucket Policy Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) for more information on how to implement.
+
+>[!NOTE]
+>CDN Log support for AWS S3 is planned for the future. Please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
 
 ### Azure Blob Storage {#azureblob}
 
@@ -491,7 +486,7 @@ Log Forwarding to New Relic leverages the New Relic HTTPS API for ingestion.  Cu
 >
 >Log forwarding to New Relic is only available to customer owned New Relic accounts.
 >
->Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.
+>CDN Log support for New Relic Log API is planned for the future. Please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
 >
 >New Relic provides region specific endpoints based on where your New Relic account is provisioned.  See [New Relic documentation](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) for further information.
 
@@ -515,8 +510,7 @@ The "Ingest Logs" scope attribute is required for the Token.
   ```
 
 >[!NOTE]
->
-> Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to request access.
+>CDN Log support for Dynatrace Log API is planned for the future. Please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
 
 ### Splunk {#splunk}
 
@@ -570,6 +564,8 @@ You will need to copy the last section of the URL (without the preceeding `/`) a
   ```
 
 >[!NOTE]
+>CDN Log support for SumoLogic is planned for the future. Please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
+>
 > You will require a Sumo Logic Enterprise subscription to take advantage of the "index" field functionality.  Non-Enterprise subscriptions will have their logs routed to the `sumologic_default` partition as standard.  See the [Sumo Logic Partitioning Documentation](https://help.sumologic.com/docs/search/optimize-search-partitions/) for more information.
 
 ## Log Entry Formats {#log-formats}

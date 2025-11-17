@@ -106,6 +106,7 @@ See the section [Queries with large result sets](#queries-with-large-result-sets
 ## Query Performance Tool {#query-performance-tool}
 
 The Query Performance Tool (located at `/libs/granite/operations/content/diagnosistools/queryPerformance.html` and available via the [Developer Console in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)) provides -
+
 * A list of any 'Slow Queries'; currently defined as those reading / scanning more than 5000 rows.
 * A list of 'Popular Queries'
 * The 'Explain Query' tool for understanding how a particular query will be executed by Oak.
@@ -113,6 +114,7 @@ The Query Performance Tool (located at `/libs/granite/operations/content/diagnos
 ![Query Performance Tool](assets/query-performance-tool.png)
 
 The 'Slow Queries' and 'Popular Queries' tables include -
+
 * The query statement itself.
 * Details of the last Thread which executed the query, allowing the page or application feature executing the query to be identified.
 * A 'Read Optimization' score for the query.
@@ -149,6 +151,7 @@ To explain a query, do the following:
 
 After selecting `Explain`, the user is presented with a pop-up describing the result of the query explain (and execution, if selected). 
 This pop-up includes details of -
+
 * The Indexes Used when executing the query (or no index if the query would be executed using [Repository Traversal](#repository-traversal)).
 * The execution time (if `Include Execution Time` checkbox was checked) and count of results read (if `Read first page of results` or `Include Node Count` checkboxes were checked).
 * The execution plan, allowing detailed analysis of how the query is executed - see [Reading the Query Execution Plan](#reading-query-execution-plan) for how to interpret this.
@@ -166,6 +169,7 @@ Consider the following query -
 ```
 
 ...which contains -
+
 * 3 restrictions
   * Nodetype (`dam:Asset`)
   * Path (descendants of `/content/dam`)
@@ -185,6 +189,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +j
 ```
 
 This section of the plan states that - 
+
 * An index is used to execute this query -
   * In this case the Lucene index `/oak:index/damAssetLucene-9` will be used, so the remaining information is in Lucene Query Syntax.
 * All 3 restrictions are handled by the index -
@@ -206,6 +211,7 @@ Considering a different query -
 ```
 
 ...which contains -
+
 * 3 restrictions
   * Nodetype (`dam:Asset`)
   * Path (descendants of `/content/dam`)
@@ -225,6 +231,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 ```
 
 This section of the plan states that - 
+
 * Only 2 (of the 3) restrictions are handled by the index -
     * The nodetype restriction
       * implicit, because `damAssetLucene-9` only indexes nodes of type dam:Asset.
@@ -315,7 +322,7 @@ This can occur for several reasons -
 1. The executor of the query is attempting to iterate a large result set.
    * This situation might happen for several reasons, as listed below:
    
-| Cause    | Mitigation   | 
+| Cause    | Mitigation   |
 |----------|--------------|
 | The ommission of `p.guessTotal` (or the use of a very large guessTotal) causing QueryBuilder to iterate large numbers of results counting results |Provide `p.guessTotal` with an appropriate value |
 | The use of a large or unbounded limit in Query Builder (ie `p.limit=-1`) |Use an appropriate value for `p.limit` (ideally 1000 or below) |
@@ -324,4 +331,4 @@ This can occur for several reasons -
 | Filtering of large numbers of results due to Access Control |Apply additional indexed property or path restriction to the query to mirror the Access Control |
 | The use of 'offset pagination' with a large offset |Consider using [Keyset Pagination](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)|
 | Iteration of large or unbounded numbers of results |Consider using [Keyset Pagination](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Keyset_Pagination)|
-| Incorrect index chosen |Use Tags in query and index definition to ensure the expected index is used| 
+| Incorrect index chosen |Use Tags in query and index definition to ensure the expected index is used|

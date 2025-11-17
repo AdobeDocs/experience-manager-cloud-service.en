@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2025 {#2025}
+      + [Release Notes for 2025.9.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-9-0.md) 
       + [Release Notes for 2025.8.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-8-0.md) 
       + [Release Notes for 2025.7.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-7-0.md) 
       + [Release Notes for 2025.6.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-6-0.md) 
@@ -93,6 +94,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2025 {#2025}
+      + [Maintenance Release Notes for 2025.10.0](/help/release-notes/maintenance/2025/2025-10-0.md)
       + [Maintenance Release Notes for 2025.9.0](/help/release-notes/maintenance/2025/2025-9-0.md)
       + [Maintenance Release Notes for 2025.8.0](/help/release-notes/maintenance/2025/2025-8-0.md)
       + [Maintenance Release Notes for 2025.7.0](/help/release-notes/maintenance/2025/2025-7-0.md)
@@ -126,6 +128,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2025 {#2025}
+      + [2025.10.0](/help/implementing/cloud-manager/release-notes/2025/2025-10-0.md)
       + [2025.9.0](/help/implementing/cloud-manager/release-notes/2025/2025-9-0.md)
       + [2025.8.0](/help/implementing/cloud-manager/release-notes/2025/2025-8-0.md)
       + [2025.7.0](/help/implementing/cloud-manager/release-notes/2025/2025-7-0.md)
@@ -233,6 +236,11 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2025 {#2025}
+      + [2025.11.06 Release Notes](/help/release-notes/universal-editor/2025/2025-11-06.md)
+      + [2025.10.30 Release Notes](/help/release-notes/universal-editor/2025/2025-10-30.md)
+      + [2025.10.24 Release Notes](/help/release-notes/universal-editor/2025/2025-10-24.md)
+      + [2025.10.16 Release Notes](/help/release-notes/universal-editor/2025/2025-10-16.md)
+      + [2025.10.09 Release Notes](/help/release-notes/universal-editor/2025/2025-10-09.md)
       + [2025.10.02 Release Notes](/help/release-notes/universal-editor/2025/2025-10-02.md)
       + [2025.09.25 Release Notes](/help/release-notes/universal-editor/2025/2025-09-25.md)
       + [2025.09.18 Release Notes](/help/release-notes/universal-editor/2025/2025-09-18.md)
@@ -567,6 +575,8 @@ user-guide-title: AEM as a Cloud Service
     + [Manage publication](/help/assets/manage-publication.md)
     + [Preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
     + [Smart tags for images](/help/assets/smart-tags.md)
+    + [Smart Tags Training](/help/assets/smart-tags-training.md)
+    + [Enhance content discovery with AI generated metadata](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md)
     + [Smart tags for videos](/help/assets/smart-tags-for-videos.md)
     + [How to organize assets](/help/assets/organize-assets.md)
     + [Use [!DNL Adobe Stock] assets](/help/assets/aem-assets-adobe-stock.md)
@@ -706,6 +716,7 @@ user-guide-title: AEM as a Cloud Service
     + [Search and discover assets](/help/assets/search-assets-view.md)
     + [Custom search filters](/help/assets/custom-search-filters.md)
     + [Asset management tasks](/help/assets/manage-organize-assets-view.md)
+    + [AI generated metadata](/help/assets/ai-generated-metadata-assets-view.md)
     + [Edit images](/help/assets/edit-images-assets-view.md)
     + [Edit videos](/help/assets/edit-videos-assets-view.md)
     + [View and manage renditions](/help/assets/renditions.md)
@@ -995,6 +1006,10 @@ user-guide-title: AEM as a Cloud Service
     + [Import and Export Interactive Communication](/help/forms/interactive-communication/import-and-export-interactive-communications.md)
     + [Add Custom Fonts to Interactive Communication Editor](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)
     + [PDF Preview in Interactive Communication Editor](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)
+    + [Template Lock in Interactive Communication Editor](/help/forms/interactive-communication/template-lock-in-interactive-communication-editor.md)
+    + [Dynamic Page Numbering in Interactive Communication Editor](/help/forms/interactive-communication/dynamic-page-numbering-in-interactive-communicatio-editor.md)
+    + [Content Overflow Handling in Interactive Communication Editor](/help/forms/interactive-communication/content-overflow-handling-in-interactive-communication-editor.md)
+    + [Support XDP Editing in Interactive Communication Editor](/help/forms/interactive-communication/support-xdp-editing-in-interactive-communication-editor.md)
     + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
   + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
@@ -1004,9 +1019,13 @@ user-guide-title: AEM as a Cloud Service
     + [Manage Forms applications and tasks in AEM Inbox](/help/forms/manage-applications-inbox.md)
     + [Use the Out of Office option](/help/forms/configure-out-of-office-settings.md)
   + Communications APIs {#using-communications}
+    + [Overview of Communications APIs](/help/forms/aem-forms-communication-api-overview.md)
     + [Introduction to Communications APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+    + [Authentication-OAuth Server-to-Server](/help/forms/oauth-api-authetication.md)
+    + [Authentication JWT(JSON Web Token)](/help/forms/jwt-api-authentication.md)
     + [Communications APIs - Synchronous processing](/help/forms/aem-forms-cloud-service-communications.md)
     + [Communications APIs - Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+    + [Communications APIs - On-Demand processing](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
     + [Generate AFP Output Using the AEM Forms API](/help/forms/document-generation-afp-api.md)
     + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
     + [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
@@ -1014,7 +1033,7 @@ user-guide-title: AEM as a Cloud Service
     + [Using custom fonts in PDF documents](/help/forms/use-custom-fonts.md)
     + [List of supported fonts in PDF documents](/help/forms/supported-out-of-the-box-fonts.md)
     + [Known issues, best practices, and frequently asked questions](/help/forms/communications-known-issues-limitations.md)
-  + Transaction Reports {#using-communications}
+  + Transaction Reports {#transaction-reports}
     + [Transaction Reports Billable APIs ](/help/forms/transaction-reports-billable-apis.md)
     + [Record a transaction for a custom implementation](/help/forms/record-transaction-custom-implementation.md)
   + Value Realization Dashboard  {#vr-dashboard}
@@ -1137,10 +1156,8 @@ user-guide-title: AEM as a Cloud Service
     + [FAQ](/help/commerce-cloud/cif-storefront/faq.md)
 + Edge Delivery Services {#edge-delivery}
   + [Edge Delivery Services Overview](/help/edge/overview.md)
-{#wysiwyg-authoring}
   + Building Forms {#build-forms}
     + [Overview](/help/edge/docs/forms/overview.md)
-    
     + WYSIWYG Authoring {#universal-editor}
       + [Universal Editor for Edge Delivery Services for Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
       + [Navigate the Universal Editor Interface for AEM Forms](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
@@ -1207,7 +1224,6 @@ user-guide-title: AEM as a Cloud Service
       + [Markdown editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
     + [Previewing Fragments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
     + [Structure Tree](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
-    + [JSON Preview](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
   + Content Fragment Selector {#content-fragment-selector}
     + [Micro-Frontend Content Fragment Selector - Overview](/help/headless/content-fragment-selector/overview.md)
     + [Content Fragment Selector - Related Properties](/help/headless/content-fragment-selector/properties.md)
@@ -1542,7 +1558,7 @@ user-guide-title: AEM as a Cloud Service
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
   + [Maintenance Tasks](/help/operations/maintenance.md)
   + [Restore Content](/help/operations/restore.md)
-  + [Restore Previous Code Deployed (Beta)](/help/operations/restore-previous-code-deployed.md)
+  + [Restore Previous Code Deployed](/help/operations/restore-previous-code-deployed.md)
   + [Asynchronous Jobs](/help/operations/asynchronous-jobs.md)
   + [Using Config Pipelines](/help/operations/config-pipeline.md)
   + [Removal of the generic lucene index](/help/operations/removal-generic-lucene-index.md)

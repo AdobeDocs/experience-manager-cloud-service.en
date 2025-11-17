@@ -2,7 +2,7 @@
 title: Previewing Content Fragments
 description: Understand how to preview your Content Fragments by a range of methods.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
 ---
 # Previewing Content Fragments {#previewing-content-fragments}

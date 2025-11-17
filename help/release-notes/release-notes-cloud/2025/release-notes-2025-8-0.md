@@ -63,13 +63,13 @@ Content Hub now makes it faster to discover the assets you need. With the new Bu
 
 ### New Features in Dynamic Media with OpenAPI capabilities {#new-features-dynamic-media-with-openapi}
 
-**SEO friendly DM with OpenAPI URLs**
+**Branded and Readable Asset Delivery URLs**
 
-Create Vanity URLs for asset delivery in DM with OpenAPI, replacing long system-generated UUIDs with short, readable identifiers. This makes links SEO friendly and better aligned with your brand or campaigns. Vanity URLs resolve automatically to the original asset UUID at runtime without disrupting existing workflows.
+Make Dynamic Media with OpenAPI URLs more human-readable by leveraging Vanity URLs in Dynamic Media with OpenAPI. Vanity URLs allow replacing long, system-generated, hard to memorize UUIDs in asset delivery URLs with short, brand-controlled identifiers. This makes Vanity URLs shorter, easier to read and share, and allow for better alignment with your brand or campaigns. Vanity URLs resolve automatically to the original asset UUID at runtime without disrupting existing workflows.
 
 >[!NOTE]
 >
->This feature will be available as a Limited Availability feature on September 10. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>This feature is available as a Limited Availability feature. See [this article](/help/assets/vanity-urls.md) to get started.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -143,6 +143,7 @@ Several deprecated APIs are targeting removal on August 31st and thus should no 
 * `org.bson`
 * `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
+
 </details>
 
 <!--
