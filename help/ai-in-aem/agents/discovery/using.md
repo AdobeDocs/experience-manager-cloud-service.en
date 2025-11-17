@@ -70,7 +70,7 @@ Link to the uber docs or:
 * MCP endpoint:
 
 
-## Use cases and sample prompts {#use-cases-prompts}
+## Common use cases and sample prompts {#use-cases-prompts}
 
 ### Assets {#discovery-agents-assets}
 
@@ -127,7 +127,11 @@ Sample prompts:
 
 ## Search Results {#discovery-agent-search-results}
 
+The Discovery Agent returns the top 20 results for each query, sorted by relevance to ensure that the exact matches appear first. 
 
+Each result includes key asset details such as the asset path, format, title, description, file size, dimensions, creator, last modifier, creation date, modification date, and associated tags. If an asset is in approved state, the results also include its Scene7 URL and Dynamic Media with OpenAPI URL. You can click the asset path to directly navigate to the location within AEM.
+
+You can use these asset details to quickly evaluate if an asset meets the requirements without navigating to each asset to view these details.
 
 
 
@@ -135,9 +139,11 @@ Sample prompts:
 
 ## Prompting best Practices {#prompting-best-practices-discovery-agent}
 
-* Define tags, folder names, creation dates, publish status, author names in your prompts to filter assets.
+Specify concise details in your natural language prompts so that the agent can return accurate and relevant results. The more clearly you describe what you are looking for, the better the agent can refine and narrow the output. For example, you can:
 
-* Use brand names, categories (running shoes, electronics), seasons (autumm, spring), events (black friday, product launch), and channels (Web, Email, Print) to further filter content.
+* Define asset metadata such as tags, folder names, creation dates, publish status, author names in your prompts to filter assets.
+
+* Use your organization-specific metadata, such as categories (running shoes, electronics), seasons (autumm, spring), events (black friday, product launch), and channels (Web, Email, Print) to further filter content.
 
 ## Limitations {#limitations-discovery-agent}
 
