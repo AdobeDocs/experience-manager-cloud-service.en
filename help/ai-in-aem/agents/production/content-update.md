@@ -1,47 +1,35 @@
 ---
 title: Content Update Skill
 description: Learn what the Experience Production Agent's content update skill is and what it can do for you.
-feature: Edge Delivery Services
+feature: Edge Delivery Services, Agentic AI
 role: Admin, Architect, Developer
 ---
 
 # Content Update Skill {#content-update}
 
-The content update skill of the Experience Production Agent automates content production to accelerate everyday tasks for Adobe Experience Manager (AEM) as a Cloud Service. 
+The content update skill of the Experience Production Agent automates content production to accelerate everyday tasks for Adobe Experience Manager (AEM) as a Cloud Service and Edge Delivery Services.
 
 ## Overview {#overview}
 
-The content update skill transforms the details that you provide into content updates on your page. You supply the URL of a page that needs updating, together with details of what needs updating, and the agent skill completes your task.
+The content update skill transforms the details that you provide, either through natural language or visuals, into content updates on your page. You supply the URL of a page that needs updating, together with details of what needs updating, and the agent skill completes your task.
 
 ## Capabilities {#capabilities}
 
 You can access the content update skill from:
 
 * [Jira](#jira)
-* AI Assistant <!-- add link to doc section, or remove -->
 
-## Limitations {#limitations}
-
-<!-- to be completed or removed -->
+<!--
+* AI Assistant
+-->
 
 ## Jira {#jira}
 
-Using the content update skill with Jira allows you to create a ticket with simple instructions that automate your edits.
-
-### Activation {#activation}
-
-To activate and gain access to the content update skill for use with Jira you need to email Adobe.
-
-To speed up the process it helps to provide the following information:
-
-* the name of your application
-* the URL of your Jira Cloud instance 
-* the secret code you generated during the setup of your webhook
-* the email addresses of new users to be registered 
+Using the content update skill with Jira allows you to create a ticket with instructions that automate your edits.
 
 ### Create a ticket {#create-a-ticket}
 
-Create a Jira ticket. 
+Create a Jira ticket (of any type). 
 
 There are two essential details needed in the **Description** field of your ticket:
 
@@ -72,9 +60,13 @@ Currently, the agent understands the commands:
 * `process` - process the request
 * `cancel` - cancel a processing request
 * `retry` - re-process a request
-* `feedback` - apply feedback to a generation
-  * for example: "update headline to I love AEM!"
+* `feedback` - apply feedback to a previous generation
 * `reprocess` - reprocess the original request
+
+<!--
+for feedback, but this is command
+  * for example: "update headline to I love AEM!"
+-->
 
 ### How the agent interacts {#how-the-agent-interacts}
 

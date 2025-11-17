@@ -1,7 +1,7 @@
 ---
 title: Form Creation Skill
 description: Learn what the Experience Production Agent's form creation skill is and what it can do for you.
-feature: Edge Delivery Services
+feature: Edge Delivery Services, Agentic AI
 role: Admin, Architect, Developer
 ---
 

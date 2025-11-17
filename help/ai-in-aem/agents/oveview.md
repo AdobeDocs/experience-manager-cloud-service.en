@@ -1,13 +1,24 @@
 ---
 title: Business Agents Overview
 description: Learn what business agents are available in AEM to accelerate your content creation and automatically orchestrate changes.
-feature: Edge Delivery Services
+feature: Edge Delivery Services, Agentic AI
 role: Admin, Architect, Developer
 ---
 
 # AEM Business Agents Overview {#business-agents-overview}
 
 These business agents are available in AEM to accelerate your content creation and automatically orchestrate changes.
+
+>[!IMPORTANT]
+>
+>The agents are only available on AEM as a Cloud Service. 
+>
+>* They are not currently available for AEM 6.5, nor AEM 6.5 LTS.
+>* They are not available on AEM On-prem, nor Managed Services.
+
+>[!IMPORTANT]
+>
+>To use the agents you will required to enroll.
 
 ## Production Agent {#production-agent}
 
@@ -36,3 +47,12 @@ The [Market Intelligence Agent](/help/ai-in-aem/agents/market-intelligence/overv
 ## Site Optimization Agent {#site-optimization-agent}
 
 The [Site Optimization Agent](/help/ai-in-aem/agents/site-optimization/overview.md) is ...
+
+## Limitations {#limitations}
+
+Currently the limitations in place are: 
+
+* The agents are only available for AEM as a Cloud Service. 
+  * They are not currently available for AEM 6.5, nor AEM 6.5 LTS.
+  * They are not currently available on AEM On-prem, nor Managed Services.
+  
