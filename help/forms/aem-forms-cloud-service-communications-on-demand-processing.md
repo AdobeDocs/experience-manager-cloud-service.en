@@ -181,7 +181,7 @@ Access your AEM Cloud Service environment details to obtain the URLs and identif
 
       - URL: `https://publish-pXXXXX-eYYYYY.adobeaemcloud.com`
       - Bucket: publish-pXXXXX-eYYYYY
-    Example: `https://publish-author-p43162-e177398.adobeaemcloud.com`
+    Example: `https://publish-p43162-e177398.adobeaemcloud.com`
 
 >[!NOTE]
 >
@@ -316,7 +316,7 @@ Generate access tokens manually in Adobe Developer Console:
 
 **B. For Production**
 
-Generate tokens programmatically using Adobe IMS API:
+Generate tokens programmatically using cURL command:
 
 **Required Credentials:**
 

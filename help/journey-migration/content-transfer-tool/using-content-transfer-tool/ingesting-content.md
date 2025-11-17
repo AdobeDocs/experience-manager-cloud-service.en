@@ -256,6 +256,10 @@ At times unexpected intermittent issues could lend themselves to failed ingestio
 * `Mongo server selection error` - This is a rare mongo client-side timeout error that can occur for a number of underlying reasons. A subsequent retry will most likely correct the issue.
 * `Mongo took too long to start` - In extremely rare cases, the local MongoDB used in the ingestion workflow can fail to start. A subsequent retry will most likely correct the issue.
 
+#### AZCopy issues {#azcopy-issues}
+
+* `AZCopy critical failure` - In rare cases, the AZCopy tool used to perform the pre-copy step of the ingestion can fail unexpectedly. A retry of the ingestion should be attempted in this case.
+
 ### Ingestion Rescinded {#ingestion-rescinded}
 
 >[!CONTEXTUALHELP]
