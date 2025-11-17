@@ -7,22 +7,28 @@ role: Admin, Architect, Developer
 
 # Content Update Skill {#content-update}
 
-The content update skill of the Experience Production Agent automates content production to accelerate everyday tasks for Adobe Experience Manager (AEM) as a Cloud Service and Edge Delivery Services
+The content update skill of the Experience Production Agent automates content production to accelerate everyday tasks for Adobe Experience Manager (AEM) as a Cloud Service and Edge Delivery Services.
 
 ## Overview {#overview}
 
-The content update skill transforms the details that you provide either through natural language or visuals into content updates on your page. You supply the URL of a page that needs updating, together with details of what needs updating, and the agent skill completes your task.
+The content update skill transforms the details that you provide, either through natural language or visuals, into content updates on your page. You supply the URL of a page that needs updating, together with details of what needs updating, and the agent skill completes your task.
 
 ## Capabilities {#capabilities}
 
 You can access the content update skill from:
 
 * [Jira](#jira)
-* AI Assistant <!-- add link to doc section, or remove -->
+
+<!--
+* AI Assistant
+-->
 
 ## Limitations {#limitations}
 
-<!-- to be completed or removed -->
+Currently the limitations in place are: 
+
+* Only available on AEM as a Cloud Service. 
+  * Not available on AEM On-prem, nor Managed Services.
 
 ## Jira {#jira}
 
@@ -30,18 +36,39 @@ Using the content update skill with Jira allows you to create a ticket with inst
 
 ### Activation {#activation}
 
-To activate and gain access to the content update skill for use with Jira you need to email Adobe.
+To activate and gain access to the content update skill for use with Jira you need to email Adobe. To get started you can contact:
+
+* `experience-production-agent@adobe.com`
+* or reach out to their account team
 
 To speed up the process it helps to provide the following information:
 
-* the name of your application
-* the URL of your Jira Cloud instance 
-* the secret code you generated during the setup of your webhook
-* the email addresses of new users to be registered 
+* For AEM as a Cloud Service
+  * You need to provide your:
+    * Organization ID
+    * `product_id` 
+    * `profile_id`
+
+  * These values could be found using the following steps:
+    * Your administrator needs to visit https://adminconsole.adobe.com/
+    * Select **Adobe Experience Manager as a Cloud Service**
+    * Select the appropriate AEM instance
+    * Select the profile that allows read and write operations for the content in question
+    * Grab the browser URL
+    * Extract `product_id` and `profile_id` from the URL. 
+      For example, https://adminconsole.adobe.com/products/profiles/users
+
+* Edge Delivery Document Authoring
+  * Provide your Adobe team with the following information:
+    * Relevant domains
+    * Relevant Github information:
+      * Org
+      * Repo
+      * Branch
 
 ### Create a ticket {#create-a-ticket}
 
-Create a Jira ticket. 
+Create a Jira ticket (of any type). 
 
 There are two essential details needed in the **Description** field of your ticket:
 
@@ -72,9 +99,13 @@ Currently, the agent understands the commands:
 * `process` - process the request
 * `cancel` - cancel a processing request
 * `retry` - re-process a request
-* `feedback` - apply feedback to a generation
-  * for example: "update headline to I love AEM!"
+* `feedback` - apply feedback to a previous generation
 * `reprocess` - reprocess the original request
+
+<!--
+for feedback, but this is command
+  * for example: "update headline to I love AEM!"
+-->
 
 ### How the agent interacts {#how-the-agent-interacts}
 
