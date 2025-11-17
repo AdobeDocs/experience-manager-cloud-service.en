@@ -19,7 +19,7 @@ You can access the content update skill from:
 
 * [Jira](#jira)
 
-<!-->
+<!--
 * AI Assistant
 -->
 
