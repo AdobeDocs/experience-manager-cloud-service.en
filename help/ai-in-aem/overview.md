@@ -13,6 +13,18 @@ AI is an integral part of Adobe Experience Manager as a Cloud Service, being use
 
 The [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/ai-assistant-in-aem.md) offers a conversational interface designed to streamline finding answers to your AEM-related queries.
 
+## Agentic AI in AEM {#agentic-ai-in-aem}
+
+AEM provides a range of [business agents](/help/ai-in-aem/agents/oveview.md) enabling you to accelerate your content creation and automatically orchestrate changes:
+
+* [Production Agent](/help/ai-in-aem/agents/production/overview.md) 
+* [Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/using.md)
+* [Discovery Agent](/help/ai-in-aem/agents/discovery/using.md)
+* [Development Agent](/help/ai-in-aem/agents/development/overview.md)
+* [Governance Agent](/help/ai-in-aem/agents/governance/overview.md)
+* [Market Intelligence Agent](/help/ai-in-aem/agents/market-intelligence/overview.md)
+* [Site Optimization Agent](/help/ai-in-aem/agents/site-optimization/overview.md)
+
 ## Generative AI in AEM {#generative-ai-in-aem}
 
 Adobe Generative AI for Adobe Experience Manager (AEM) as a Cloud Service enables brands to create high performance experiences with both copy and image generation all within the editing interface. With generative AI, you can autonomously create content that is:
