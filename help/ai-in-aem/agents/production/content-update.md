@@ -23,6 +23,14 @@ You can access the content update skill from:
 * AI Assistant
 -->
 
+## Personas {#personas}
+
+The skill is focused on simplifying and accelerating tasks for the personas:
+
+* Content Authors
+* Marketing 
+* Digital Product Manager 
+
 ## Limitations {#limitations}
 
 Currently the limitations in place are: 
