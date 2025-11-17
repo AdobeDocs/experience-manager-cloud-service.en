@@ -25,7 +25,7 @@ You can access the content update skill from:
 
 ## Personas {#personas}
 
-The skill is focused on simplifying and accelerating tasks for the personas:
+The skill is primarily focused on simplifying and accelerating tasks for the personas:
 
 * Content Authors
 * Marketing 
