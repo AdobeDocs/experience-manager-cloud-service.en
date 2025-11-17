@@ -1,7 +1,7 @@
 ---
 title: Governance Agent Overview
 description: Learn what AEM's Governance Agent
-feature: Edge Delivery Services
+feature: Edge Delivery Services, Agentic AI
 role: Admin, Architect, Developer
 ---
 
