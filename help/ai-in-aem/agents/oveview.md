@@ -9,6 +9,16 @@ role: Admin, Architect, Developer
 
 These business agents are available in AEM to accelerate your content creation and automatically orchestrate changes.
 
+>[!IMPORTANT]
+>
+>The agents are only available on AEM as a Cloud Service. 
+>
+>They are not available on AEM On-prem, nor Managed Services.
+
+>[!IMPORTANT]
+>
+>To use the agents you will required to enroll.
+
 ## Production Agent {#production-agent}
 
 The [Production Agent](/help/ai-in-aem/agents/production/overview.md) automates high effort and high-volume tasks. Empowering teams and turning manual, weeks-long processes into fast, AI-assisted workflows that keep every experience current and consistent helping the business achieve their goals.
