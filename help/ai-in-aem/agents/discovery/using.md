@@ -127,14 +127,21 @@ Sample prompts:
 
 ## Search Results {#discovery-agent-search-results}
 
+### Assets {#discovery-agent-search-results-assets}
+
 The Discovery Agent returns the top 20 results for each query, sorted by relevance to ensure that the exact matches appear first. 
 
-Each result includes key asset details such as the asset path, format, title, description, file size, dimensions, creator, last modifier, creation date, modification date, and associated tags. If an asset is in approved state, the results also include its Scene7 URL and Dynamic Media with OpenAPI URL. You can click the asset path to directly navigate to the location within AEM.
+Each result includes asset name along with key asset metadata such as the asset path, creator, creation date, title, description, format, last modifier, last modified date, file size, dimensions, Dynamic Media URL, and associated tags. If an asset is in approved state, the results also include Dynamic Media with OpenAPI URL. 
+
+You can click the asset path to seamlessly navigate to the asset location within AEM.
+
+>[!NOTE]
+>
+>The Dynamic Media URL field displays in the search results only if the asset is published and you have a valid Dynamic Media license. Similarly, Dynamic Media with OpenAPI field displays only if you have a valid Dynamic Media license and Dynamic Media wit OpenAPI is enabled for your AEM as a Cloud Service instance.
 
 You can use these asset details to quickly evaluate if an asset meets the requirements without navigating to each asset to view these details.
 
-
-
+### Content Fragments {#discovery-agent-search-results-content-fragments}
 
 
 ## Prompting best Practices {#prompting-best-practices-discovery-agent}
