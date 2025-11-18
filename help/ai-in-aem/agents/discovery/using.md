@@ -142,11 +142,15 @@ Each result includes asset name along with key asset metadata such as the asset 
 
 You can click the asset path to seamlessly navigate to the asset location within AEM.
 
+You can use these asset details to quickly evaluate if an asset meets the requirements without navigating to each asset to view these details.
+
 >[!NOTE]
 >
 >The Dynamic Media URL field displays in the search results only if the asset is published and you have a valid Dynamic Media license. Similarly, Dynamic Media with OpenAPI field displays only if you have a valid Dynamic Media license and Dynamic Media wit OpenAPI is enabled for your AEM as a Cloud Service instance.
 
-You can use these asset details to quickly evaluate if an asset meets the requirements without navigating to each asset to view these details.
+The Discovery Agent combines metadata-driven queries with semantic search to assemble a focused set of likely matches, then uses an LLM to rank them based on user intent. This blended approach delivers accurate, context-aware results without depending entirely on a direct keyword match.
+
+
 
 ### Content Fragments {#discovery-agent-search-results-content-fragments}
 
