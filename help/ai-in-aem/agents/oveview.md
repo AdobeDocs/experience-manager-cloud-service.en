@@ -11,7 +11,7 @@ These business agents are available in AEM to accelerate your content creation a
 
 >[!IMPORTANT]
 >
->The agents are only available on AEM as a Cloud Service. 
+>The agents are only available on AEM as a Cloud Service and Edge Delivery Services. 
 >
 >* They are not currently available for AEM 6.5, nor AEM 6.5 LTS.
 >* They are not available on AEM On-prem, nor Managed Services.
@@ -52,7 +52,7 @@ The [Site Optimization Agent](/help/ai-in-aem/agents/site-optimization/overview.
 
 Currently the limitations in place are: 
 
-* The agents are only available for AEM as a Cloud Service. 
+* The agents are only available for AEM as a Cloud Service and Edge Delivery Services. 
   * They are not currently available for AEM 6.5, nor AEM 6.5 LTS.
   * They are not currently available on AEM On-prem, nor Managed Services.
   
