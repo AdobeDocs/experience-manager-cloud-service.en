@@ -9,6 +9,8 @@ role: Admin, Architect, Developer
 
 The content update skill of the Experience Production Agent automates content production to accelerate everyday tasks for Adobe Experience Manager (AEM) as a Cloud Service and Edge Delivery Services.
 
+The content update skill updates existing content across the CMS, including content fragments, pages, forms and assets. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description, and when used with Jira PDFs and screenshots can provide input too.
+
 ## Overview {#overview}
 
 The content update skill transforms the details that you provide, either through natural language or visuals, into content updates on your page. You supply the URL of a page that needs updating, together with details of what needs updating, and the agent skill completes your task.
