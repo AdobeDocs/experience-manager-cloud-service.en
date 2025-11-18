@@ -132,6 +132,10 @@ Link to the uber docs or:
 
 ## Prompting best Practices {#prompting-best-practices-content-optimization-agent}
 
+* Be explicit about the enhancement you want the Content Oprimization Agent to apply. Clearly state the transformation or adjustment you expect. Precise instructions help the agent produce accurate and predictable results. For example, Instead of `Make it brighter`, specify `Increase brightness by 20%`.
+
+* Provide detailed parameters whenever possible. The more context you give, such as dimensions, format, quality, placement, or color values, the more tailored the output is.
+
 
 
 ## Limitations {#limitations-content-optimization-agent}
