@@ -1056,6 +1056,7 @@ user-guide-title: AEM as a Cloud Service
     + [Overview](/help/ai-in-aem/agents/oveview.md)
     + Production Agent {#production}
       + [Overview](/help/ai-in-aem/agents/production/overview.md)
+      + [Interactive Communication Creation Skill](/help/ai-in-aem/agents/production/interactive-communications-creation.md)
       + [Content Update Skill](/help/ai-in-aem/agents/production/content-update.md)
       + [Site Migration Skill](/help/ai-in-aem/agents/production/site-migration.md)
       + [Form Creation Skill](/help/ai-in-aem/agents/production/form-creation.md)
@@ -1067,10 +1068,6 @@ user-guide-title: AEM as a Cloud Service
       + [Overview](/help/ai-in-aem/agents/development/overview.md)
     + Governance Agent {#governance}
       + [Overview](/help/ai-in-aem/agents/governance/overview.md)
-    + Market Intelligence Agent {#market-intelligence}
-      + [Overview](/help/ai-in-aem/agents/market-intelligence/overview.md)
-    + Site Optimization Agent {#site-optimization}
-      + [Overview](/help/ai-in-aem/agents/site-optimization/overview.md)
   + AI Assistant {#ai-assistant}
     + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
     + [About AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
