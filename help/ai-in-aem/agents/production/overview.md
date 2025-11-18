@@ -11,11 +11,15 @@ The Production Agent automates high effort and high-volume tasks. Empowering tea
 
 ## Jobs {#jobs}
 
-The agent provides the following jobs
+The agent provides the following jobs:
+
+* [Content Update](#content-update)
+* [Form Creation](#form-creation)
+* [Site Migration](#site-migration)
 
 ### Content Update {#content-update}
 
-The [Content Update](/help/ai-in-aem/agents/production/content-update.md) updates existing content across the CMS — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description as well as PDFs or screenshots.
+The [Content Update](/help/ai-in-aem/agents/production/content-update.md) updates existing content across the CMS — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description, and when used with Jira PDFs and screenshots can provide input too.
 
 ### Form Creation {#form-creation}
 
@@ -36,7 +40,8 @@ The agent should be able to work with other agent skills, examples include:
 ### Content Authors {#content-authors}
 
 Content Authors are responsible for creating, editing, and publishing digital content using AEM's authoring interface. They focus on maintaining content accuracy, brand voice, and consistency across channels.
-Primary Goals:
+
+**Primary Goals**
 
 * Quickly build and update pages using predefined components and templates.
 * Manage media and assets effectively.
@@ -77,7 +82,7 @@ Developers extend and customize AEM's capabilities to meet organizational needs.
 To activate and gain access to the Production Agent you need to email Adobe. To get started you can contact:
 
 * `experience-production-agent@adobe.com`
-* or reach out to their account team
+* or reach out to your account team
 
 To speed up the process it helps to provide the following information:
 
