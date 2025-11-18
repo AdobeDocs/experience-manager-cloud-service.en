@@ -69,13 +69,9 @@ Agency Workers can leverage the Content Optimization Agent to produce content va
 
 ## How to access Content Optimization Agent? {#access-content-optimization-agent}
 
-Link to the uber docs or:
+You can access AEM Business Agents via AI Assistant. Log on to experience.adobe.com and you can start interacting with AI Assistant by specifying your prompt in natural language using the `Ask AI Assistant anything` field:
 
-* Experience Hub:
-
-* AI Assistant:
-
-* MCP endpoint:
+![Access Discovery Agent](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
 
 
 ## Common use cases and sample prompts {#use-cases-prompts}
