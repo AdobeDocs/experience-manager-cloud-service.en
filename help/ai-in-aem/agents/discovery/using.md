@@ -87,9 +87,9 @@ Link to the uber docs or:
 
   Sample prompts:
 
-  * Are there any svgs in folder `frescopa`?
-  * Show assets modified after `Nov 1 2025` in folder `frescopa`.
-  * List `lifestyle` images in folder `frescopa`.
+* Are there any svgs in folder `frescopa`?
+* Show assets modified after `Nov 1 2025` in folder `frescopa`.
+* List `lifestyle` images in folder `frescopa`.
 
 **Resolution and format-based asset discovery**
 
@@ -123,6 +123,17 @@ Sample prompts:
 
 ### Forms {#discovery-agents-forms}
 
+The Discovery Agent helps you quickly find adaptive forms using natural language prompts. It searches through form content and metadata to find matches based on keywords from your prompts. This means you can successfully discover relevant forms even if your search terms are not in the form's title or description.
+
+Sample prompts:
+
+* Show me all loan application forms.
+* Find forms to apply for a job.
+* Find contact forms.
+* I'm looking for employee onboarding forms.
+* Show me credit card application forms.
+
+Note: Form discovery currently supports Edge Delivery Services forms only and tag-based search is not available for forms at this time.
 
 
 ## Search Results {#discovery-agent-search-results}
