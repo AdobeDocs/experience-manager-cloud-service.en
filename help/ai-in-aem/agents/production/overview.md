@@ -15,6 +15,7 @@ The agent provides the following jobs:
 
 * [Content Update](#content-update)
 * [Form Creation](#form-creation)
+* [Interactive Communications Creation](#interactive-communications-creation)
 * [Site Migration](#site-migration)
 
 ### Content Update {#content-update}
@@ -23,7 +24,18 @@ The [Content Update](/help/ai-in-aem/agents/production/content-update.md) update
 
 ### Form Creation {#form-creation}
 
-The [Form Creation](/help/ai-in-aem/agents/production/form-creation.md) generates new forms and communication documents from scratch or modernize legacy assets by importing PDF and XDP Forms, or images — all without dependency on development or IT teams. The agent accelerates form production while ensuring brand and compliance standards are maintained.
+The [Form Creation](/help/ai-in-aem/agents/production/form-creation.md) skill enables users to build adaptive forms through natural language interactions without dependency on development or IT teams. This capability accelerates form deployment while maintaining brand consistency and allowing business users to create forms without deep technical knowledge.
+
+
+### Interactive Communications Creation {#interactive-communications-creation}
+
+The [Interactive Communications Creation](/help/ai-in-aem/agents/production/interactive-communications-creation.md) skill empowers business users to produce personalized, data-driven correspondence at scale. From account statements and policy documents to bills and welcome kits, the agent transforms natural language requirements into professional communications.
+
+>[!NOTE]
+>
+>
+> The Interactive Communications Creation capability is currently in alpha release. If you require access to this capability, send a request from your official email address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
+
 
 ### Site Migration {#site-migration}
 
@@ -56,6 +68,16 @@ Form Authors design, configure, and maintain interactive and adaptive forms in A
 * Build and manage adaptive forms without heavy coding.
 * Ensure forms are accessible, responsive, and compliant.
 * Integrate forms with back-end systems or workflows for data handling.
+
+### Interactive Communications Authors {#interactive-communications-authors}
+
+Interactive Communications Authors design and create personalized, data-driven correspondence such as account statements, policy documents, bills, and welcome kits using AEM's Interactive Communications editor.
+
+**Primary Goals**
+
+* Create and maintain professional correspondence with minimal technical expertise.
+* Ensure communications are data-integrated, personalized, and compliant with brand standards.
+* Integrate communications with back-end data sources for dynamic content generation.
 
 ### Marketing / Business Stakeholders {#stakeholders}
 
@@ -93,13 +115,13 @@ To speed up the process it helps to provide the following information:
     * `profile_id`
 
   * These values could be found using the following steps:
-    * Your administrator needs to visit https://adminconsole.adobe.com/
+    * Your administrator needs to visit <https://adminconsole.adobe.com/>
     * Select **Adobe Experience Manager as a Cloud Service**
     * Select the appropriate AEM instance
     * Select the profile that allows read and write operations for the content in question
     * Grab the browser URL
     * Extract `product_id` and `profile_id` from the URL. 
-      For example, https://adminconsole.adobe.com/products/profiles/users
+      For example, <https://adminconsole.adobe.com/products/profiles/users>
 
 * Edge Delivery Document Authoring
   * Provide your Adobe team with the following information:
