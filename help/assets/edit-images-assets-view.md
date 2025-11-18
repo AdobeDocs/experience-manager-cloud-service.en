@@ -108,7 +108,7 @@ To edit images using [!DNL Adobe Express] embedded editor, follow the steps belo
 
  * Supported file type: JPEG or PNG. 
  * Maximum file size supported: 40 MB. 
- * Supported width and height range: Between 50 to 8000 pixels.
+ * Supported width and height range: 65MP (For example, 8K x 8K or 16K x 4K).
  * Reload the page to see the latest saved new asset in the source folder.
 
 ### Create new assets using Adobe Express {#create-new-embedded-editor}
