@@ -19,6 +19,14 @@ Some of the key benefits of Content Optimization include:
 
 * **Seamless collaboration with the Discovery Agent**: Builds upon the assets identified by the Discovery Agent, enabling end-to-end asset retrieval and optimization through natural conversation.
 
+## Prerequisites {#prerequisites-content-optimization-agent}
+
+To generate variations or optimizations for image assets. You must have:
+
+* A valid Dynamic Media license 
+
+* Dynamic Media with OpenAPI enabled on AEM as a Cloud Service environment.
+
 
 ## Skills {#skills-content-optimization-agent}
 
@@ -125,7 +133,7 @@ Link to the uber docs or:
 
 
 
-## Search Results {#content-optimization-agent-search-results}
+## Optimization Results {#content-optimization-agent-results}
 
 
 
