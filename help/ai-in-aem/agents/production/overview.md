@@ -61,7 +61,7 @@ Content Authors are responsible for creating, editing, and publishing digital co
 
 ### Form Author {#form-authors}
 
-Form Authors design, configure, and maintain interactive and adaptive forms in AEM Forms to collect user data and enable digital self-service experiences.
+Form Authors design, configure, and deliver mobile-responsive forms to enable digital enrollment experiences for collecting user data.
 
 **Primary Goals**
 
@@ -71,7 +71,7 @@ Form Authors design, configure, and maintain interactive and adaptive forms in A
 
 ### Interactive Communications Authors {#interactive-communications-authors}
 
-Interactive Communications Authors design and create personalized, data-driven correspondence such as account statements, policy documents, bills, and welcome kits using AEM's Interactive Communications editor.
+Interactive Communications Authors design and create personalized, data-driven correspondence such as account statements, policy documents, bills, and welcome kits.
 
 **Primary Goals**
 
