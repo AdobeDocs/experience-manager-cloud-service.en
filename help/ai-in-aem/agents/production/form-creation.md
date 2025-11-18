@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 
 # Form Creation Skill {#form-creation-skill}
 
-The form creation skill is a capability of the Experience Production Agent that is designed to develop forms using natural language interactions. It enables users to create digital forms without traditional manual processes. This skill eliminates the complexity of form creation by interpreting conversational prompts and automatically generating appropriate form structures, field types, validation rules, and business logic. The skill is surfaced through in AI assistant and Experience Hub.
+The form creation skill is a capability of the Experience Production Agent that is designed to develop forms using natural language interactions. It enables users to create digital forms without traditional manual processes. This skill eliminates the complexity of form creation by interpreting conversational prompts and automatically generating appropriate form structures, field types, validation rules, and business logic. The skill is surfaced through in AI Assistant.
 
 Some of the key benefits of form creation skill include:
 

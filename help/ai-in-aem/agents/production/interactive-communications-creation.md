@@ -9,6 +9,9 @@ role: Admin, Architect, Developer
 
 Interactive Communications are personalized, data-driven documents designed for business correspondence such as account statements, policy documents, bills, welcome kits, and benefit notices. Unlike forms that collect input from users, Interactive Communications generate output documents with dynamic, recipient-specific content.
 
+![Interactive Communication Editor](/help/forms/assets/ic-editor.png)
+
+
 The Interactive Communication creation skill is a capability of the Experience Production Agent that is designed to develop interactive communications using natural language interactions. It enables users to create personalized, data-driven correspondence without traditional manual processes. This skill eliminates the complexity of communication design by interpreting conversational prompts and automatically generating appropriate document structures, layouts, and data bindings. The skill is surfaced through AI Assistant.
 
 Some of the key benefits of Interactive Communication creation skill include:
