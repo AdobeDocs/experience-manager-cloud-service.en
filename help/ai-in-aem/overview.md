@@ -22,8 +22,6 @@ AEM provides a range of [business agents](/help/ai-in-aem/agents/oveview.md) ena
 * [Discovery Agent](/help/ai-in-aem/agents/discovery/using.md)
 * [Development Agent](/help/ai-in-aem/agents/development/overview.md)
 * [Governance Agent](/help/ai-in-aem/agents/governance/overview.md)
-* [Market Intelligence Agent](/help/ai-in-aem/agents/market-intelligence/overview.md)
-* [Site Optimization Agent](/help/ai-in-aem/agents/site-optimization/overview.md)
 
 ## Generative AI in AEM {#generative-ai-in-aem}
 
