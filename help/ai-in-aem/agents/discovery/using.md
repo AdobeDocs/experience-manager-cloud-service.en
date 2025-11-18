@@ -61,13 +61,9 @@ Agencies and Partners can easily find brand-approved assets within Content Hub a
 
 ## How to access Discovery Agent? {#access-discovery-agent}
 
-Link to the uber docs or:
+You can access AEM Business Agents via AI Assistant. Log on to experience.adobe.com and you can start interacting with AI Assistant by specifying your prompt in natural language using the `Ask AI Assistant anything` field:
 
-* Experience Hub:
-
-* AI Assistant:
-
-* MCP endpoint:
+![Access Discovery Agent](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
 
 
 ## Common use cases and sample prompts {#use-cases-prompts}
@@ -138,17 +134,26 @@ Note: Form discovery currently supports Edge Delivery Services forms only and ta
 
 ## Search Results {#discovery-agent-search-results}
 
+### Assets {#discovery-agent-search-results-assets}
+
 The Discovery Agent returns the top 20 results for each query, sorted by relevance to ensure that the exact matches appear first. 
 
-Each result includes key asset details such as the asset path, format, title, description, file size, dimensions, creator, last modifier, creation date, modification date, and associated tags. If an asset is in approved state, the results also include its Scene7 URL and Dynamic Media with OpenAPI URL. You can click the asset path to directly navigate to the location within AEM.
+Each result includes asset name along with key asset metadata such as the asset path, creator, creation date, title, description, format, last modifier, last modified date, file size, dimensions, Dynamic Media URL, and associated tags. If an asset is in approved state, the results also include Dynamic Media with OpenAPI URL. 
+
+You can click the asset path to seamlessly navigate to the asset location within AEM.
+
+>[!NOTE]
+>
+>The Dynamic Media URL field displays in the search results only if the asset is published and you have a valid Dynamic Media license. Similarly, Dynamic Media with OpenAPI field displays only if you have a valid Dynamic Media license and Dynamic Media wit OpenAPI is enabled for your AEM as a Cloud Service instance.
 
 You can use these asset details to quickly evaluate if an asset meets the requirements without navigating to each asset to view these details.
 
+### Content Fragments {#discovery-agent-search-results-content-fragments}
+
+The Discovery Agent returns the top 20 results for Content Fragments. Each result includes Content Fragment name along with key metadata such as Content Fragment path, creator, creation date, description, Content Fragment model Name, Content Fragment model Path, last modifier, and last modified date fields.
 
 
-
-
-## Prompting best Practices {#prompting-best-practices-discovery-agent}
+## Prompting best practices {#prompting-best-practices-discovery-agent}
 
 Specify concise details in your natural language prompts so that the agent can return accurate and relevant results. The more clearly you describe what you are looking for, the better the agent can refine and narrow the output. For example, you can:
 
