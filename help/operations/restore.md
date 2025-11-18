@@ -176,7 +176,7 @@ When the above criteria cannot be met due to technical or infrastructure limitat
   (The reverse—using an EU country as backup for a non-EU primary—may be acceptable if no better same-country option exists.)
 
 - **Avoid certain regions**  
-  Regions with restrictive data policies or heightened regulatory risk (for example China and comparable jurisdictions) should be avoided as backup or failover locations.
+  Regions with restrictive data policies or heightened regulatory risk should be avoided as backup or failover locations.
 
 If customers require clarification or have compliance-driven needs, Adobe recommends reaching out to the Adobe account team or support organization for guidance tailored to their specific scenario.
 
