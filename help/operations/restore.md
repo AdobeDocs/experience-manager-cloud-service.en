@@ -145,16 +145,18 @@ AEM as a Cloud Service mitigates this risk for all AEM production environments. 
 
 AEM Service Reliability Engineering restores staging and production AEM Cloud Service environments from off-site backups during data-region outages.
 
-## Data Region Mapping Principles
+## Data Region Mapping Principles {#data-region-mapping-principles}
 
 Adobe follows a set of internal guidelines to determine data region mappings for **AEM as a Cloud Service**. These guidelines are designed to support operational efficiency, ensure compliance with regional regulatory requirements, and provide a consistent customer experience across global markets.
 
-### Region Mapping Transparency
+### Region Mapping Transparency {#region-mapping-transparency}
+
 Adobe does not publicly disclose detailed region-to-region mapping information.  
 If customers have specific or justified questions regarding regional deployment, data residency, or compliance implications, it is recommended to contact Adobe directly through official support or account channels.
 
-### Core Principles for Data Region Mapping
-When determining a suitable data region mapping, Adobe applies several prioritised criteria:
+### Core Principles for Data Region Mapping {#core-principles}
+
+When determining a suitable data region mapping, Adobe applies several prioritized criteria:
 
 1. **Do not leave the global region**  
    Deployments remain within one of the major global regions: **APAC**, **EMEA**, and **the Americas**.
@@ -165,7 +167,8 @@ When determining a suitable data region mapping, Adobe applies several prioritis
 3. **Do not leave the country**  
    If technically feasible, data stays within the same national borders.
 
-### Handling Exceptions
+### Handling Exceptions {#handling-exceptions}
+
 When the above criteria cannot be met due to technical or infrastructure limitations, Adobe applies additional considerations:
 
 - **Europe-specific guideline**  
@@ -173,11 +176,9 @@ When the above criteria cannot be met due to technical or infrastructure limitat
   (The reverse—using an EU country as backup for a non-EU primary—may be acceptable if no better same-country option exists.)
 
 - **Avoid certain regions**  
-  Regions with restrictive data policies or heightened regulatory risk (e.g., China and comparable jurisdictions) should be avoided as backup or failover locations.
+  Regions with restrictive data policies or heightened regulatory risk (for example China and comparable jurisdictions) should be avoided as backup or failover locations.
 
----
-
-If customers require clarification or have compliance-driven needs, Adobe recommends reaching out to the Adobe account team or support organisation for guidance tailored to their specific scenario.
+If customers require clarification or have compliance-driven needs, Adobe recommends reaching out to the Adobe account team or support organization for guidance tailored to their specific scenario.
 
 ## Limitations {#limitations}
 
