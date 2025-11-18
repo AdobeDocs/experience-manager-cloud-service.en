@@ -165,7 +165,7 @@ When determining a suitable data region mapping, Adobe applies several prioritiz
    Wherever possible, data replication and failover remain on the same continent.
 
 3. **Do not leave the country**  
-   If technically feasible, data stays within the same national borders.
+   If technically feasible, data stay within the same national borders.
 
 ### Handling Exceptions {#handling-exceptions}
 
