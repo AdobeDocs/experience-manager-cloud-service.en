@@ -155,20 +155,6 @@ Go‑live days, live events, peak sales—these moments can't break. [Our new se
 >Available as a Limited Availability feature on September 25th.
 >Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to get it activated on your programs.
 
-### AEM Log-Forwarding to More Destinations {#log-forwarding}
-
-It is now possible to forward AEM logs to Amazon S3, Sumo Logic, Dynatrace, and your own New Relic account (not the Adobe-provided account). Note that AEM logs (including Apache/Dispatcher) are supported for these logging destinations, but not CDN logs.
-
-See the full set of [supported log forwarding destinations](/help/implementing/developing/introduction/log-forwarding.md).
-
-### Config Pipeline for Edge Delivery Services {#config-pipeline-eds}
-
-Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just AEM Author and AEM publish delivery. You can use Config Pipelines to manage settings such as CDN configuration, including traffic filter rules and origin selectors. See [Supported Configurations](/help/operations/config-pipeline.md#configurations). 
-
-Edge Delivery config pipelines also support secrets through Cloud Manager pipeline variables.
-
-See [Add Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
-
 ### Upcoming Java API Deprecations {#java-api-deprecation}
 
 Several deprecated APIs were marked for removal on August 31st and thus should no longer be referenced. You will receive Actions Center notifications if deprecated API usage is detected in your code, and after Nov 13th, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
@@ -216,12 +202,14 @@ Adobe upgraded **Stage** and **Production** environments to the higher-performan
 
 As noted in the April release notes, AEM Java logs must follow a standard format to ensure reliable monitoring across all customer environments. Custom log configurations—such as changes to log formatting, output files, or default log levels—are no longer supported. Logs must remain directed to the default files, and default log levels for AEM product code must be preserved. See full details in the [Logging article](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Starting on **November 20th**, any unsupported custom logging overrides will be ignored. Based on our analysis, most customers will not be impacted and Adobe has contacted customers whose current configuration may be affected.
+Starting on **December 10th**, any unsupported custom logging overrides will be ignored. Based on our analysis, most customers will not be impacted and Adobe has contacted customers whose current configuration may be affected.
 
 Please review and update any downstream processes that rely on custom logging behavior. For example:
 
 * If your log forwarding system expects a custom log format, you may need to adjust your ingestion rules.
 * If you've previously reduced log verbosity by changing log levels, please note that reverting to default levels may increase log volume.
+
+## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adoptor}
 
 ### Edge Computing (Beta Program) {#edge-computing}
 
@@ -269,6 +257,11 @@ We are preparing to launch the AI Answers Beta Program and are now inviting cust
 
 To request participation or receive updates, please contact [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
 
+### Accelerate AEM Development with AI (Alpha Program)  {#ai-dev-alpha}
+
+AEM Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. We’re gathering real-world experiences to help shape future Adobe-supported AI capabilities.
+
+Share what’s working for your team—and what you’d like Adobe to provide—by emailing [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
 ### Snapshots for RDEs (Alpha Program) {#rde-snapshot-program}
 
