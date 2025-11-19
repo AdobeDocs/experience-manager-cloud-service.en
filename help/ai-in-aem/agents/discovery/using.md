@@ -1,8 +1,6 @@
 ---
 title: Discovery Agent Overview
-description: Learn what ...
-feature: Edge Delivery Services, Agentic AI
-role: Admin, Architect, Developer
+description: Learn how to use Discovery Agent to deliver AEM content on demand through natural, conversational prompts for a streamlined, click-free discovery experience
 ---
 
 # Discovery Agent {#discovery-agent}
