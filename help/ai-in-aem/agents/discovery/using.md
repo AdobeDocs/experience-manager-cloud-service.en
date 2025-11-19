@@ -68,7 +68,7 @@ For information on the MCP endpoint to access Discovery Agent, contact Adobe Sup
 
 ## Common use cases and sample prompts {#use-cases-prompts}
 
-### Assets {#discovery-agents-assets}
+### Assets {#discovery-agent-use-cases-assets}
 
 **Tag-based asset discovery** 
 
@@ -103,7 +103,7 @@ Sample prompt:
    
 Show assets with person in landscape orientation.
 
-### Content Fragments {#discovery-agents-content-fragments}
+### Content Fragments {#discovery-agent-use-cases-content-fragments}
 
 The Discovery Agent helps users quickly locate the right Content Fragments by interpreting natural language references to campaign names, product brands, publication status, and recent creation activity. It allows teams to surface campaign-ready fragments and view brand-specific content, all without manually browsing through folders or applying multiple filters in AEM.
 
@@ -117,7 +117,7 @@ Sample prompts:
 
 * List all content fragments created in last 2 weeks.
 
-### Forms {#discovery-agents-forms}
+### Forms {#discovery-agent-use-cases-forms}
 
 The Discovery Agent helps you quickly find adaptive forms using natural language prompts. It searches through form content and metadata to find matches based on keywords from your prompts. This means you can successfully discover relevant forms even if your search terms are not in the form's title or description.
 
