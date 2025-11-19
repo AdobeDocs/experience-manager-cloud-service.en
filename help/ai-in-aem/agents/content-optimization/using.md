@@ -116,14 +116,14 @@ You can access AEM Business Agents via AI Assistant. Log on to experience.adobe.
 
 ## Optimization Results {#content-optimization-agent-results}
 
-
+Capture the user experience for images, videos, and PDFs along with the screenshots.
 
 
 ## Prompting best Practices {#prompting-best-practices-content-optimization-agent}
 
 The following are some of the prompting best practices:
 
-* Be explicit about the enhancement you want the Content Oprimization Agent to apply. Clearly state the transformation or adjustment you expect. Precise instructions help the agent produce accurate and predictable results. For example, Instead of `Make it good quality`, specify `Create a JPEG image with 90% quality`.
+* Be explicit about the enhancement you want the Content Optimization Agent to apply. Clearly state the transformation or adjustment you expect. Precise instructions help the agent produce accurate and predictable results. For example, Instead of `Make it good quality`, specify `Create a JPEG image with 90% quality`.
 
 * Provide detailed parameters whenever possible. The more context you give, such as dimensions, format, quality, placement, or color values, the more tailored the output is.
 
