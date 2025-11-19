@@ -40,16 +40,6 @@ The [Development Agent](/help/ai-in-aem/agents/development/overview.md) is ...
 
 The [Governance Agent](/help/ai-in-aem/agents/governance/overview.md) is ...
 
-<!--
-## Market Intelligence Agent {#market-intelligence-agent}
-
-The [Market Intelligence Agent](/help/ai-in-aem/agents/market-intelligence/overview.md) is ...
-
-## Site Optimization Agent {#site-optimization-agent}
-
-The [Site Optimization Agent](/help/ai-in-aem/agents/site-optimization/overview.md) is ...
--->
-
 ## Limitations {#limitations}
 
 Currently the limitations in place are: 
