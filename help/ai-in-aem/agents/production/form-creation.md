@@ -27,29 +27,23 @@ Based on these selections, the form creation skill automatically generates the a
 
 ### Simple prompts {#sample-prompts}
 
-* *Create an empty adaptive form*
+* *Create an empty form*
 * *Create a form for feedback collection with name, email, and message fields*
 * *Create a customer feedback form with product rating (1-5 stars), comment field, and optional email*
 * *Build a contact form with name, email, subject dropdown, and message fields*
 * *Create a registration form with personal information, account preferences, and terms acceptance*
 * *Create a credit card application form using the fsi theme and blank template*
-* Generate forms using predefined boilerplates from GitHub repositories, ensuring consistency and best practices across your organization.
 * *Create a form using the boilerplate at <https://github.com/adobe-rnd/aem-forms-boilerplate>*
-
 
 ## Next Steps {#refine-with-forms-experience-builder}
 
-After creating your initial form structure using AI Assistant or Experience Hub, you can use Forms Experience Builder to refine and enhance your form:
+After creating your initial form structure using AI Assistant, you can use Forms Experience Builder to:
 
-* **Incremental field building**: Add or modify individual fields, adjust field types, and configure field properties through the visual editor.
+* **Update forms**: Add or modify fields, adjust field types, edit layouts, and update styling as needed through the visual editor.
 
-* **Conditional logic and validations**: Create show/hide rules, set up field dependencies, and define validation rules for data quality.
+* **Add business logic**: Create conditional logic, show/hide rules, field dependencies, and define validation rules.
 
-* **Ongoing form updates**: Edit and update form structures, layouts, and styling as your requirements evolve.
-
-* **Submit actions configuration**: Set up where form data goes after submission, configure email notifications, integrate with workflows, or connect to external systems.
-
-* **Advanced customization**: Fine-tune form behavior, add calculations, configure prefill options, and optimize user experience.
+* **Configure submission**: Configure where form data is submitted, including setting up email notifications, integrations with workflows, or connections to external systems.
 
 For more information, see [Forms Experience Builder documentation](/help/forms/experience-builder/product-overview.md).
 
