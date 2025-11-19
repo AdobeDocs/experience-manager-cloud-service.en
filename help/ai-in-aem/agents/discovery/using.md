@@ -12,7 +12,7 @@ The Discovery Agent delivers AEM content on demand through natural, conversation
 
 Some of the key benefits of Discovery Agent include:
 
-* **Unified Content Discovery**: Access all types of AEM content, such as images, videos, PDF documents, articles, forms from a single conversational interface.
+* **Unified Content Discovery**: Access all types of AEM content, such as images, videos, PDF documents, articles, and forms from a single conversational interface.
 
 * **Faster Campaign Planning**: Quickly gather visuals and forms for marketing campaigns across Emails, Web, and Social channels.
 
@@ -36,7 +36,7 @@ The Discovery Agent provides the following skills:
    The Discovery Agent uses natural language prompts to find assets associated with specific tags in the AEM repository, helping users quickly access content organized or not organized as per the organization's taxonomy.
 
 * **Folder-based content discovery:**  
-  The Discovery Agent can identify assets by interpreting natural language prompts that reference folder names in AEM. Users can simply mention the folder in their prompt—without manually navigating through the repository—significantly reducing the number of clicks needed to locate the right content.
+  The Discovery Agent can identify assets by interpreting natural language prompts that reference folder names in AEM. Users can simply mention the folder in their prompt, without manually navigating through the repository, significantly reducing the number of clicks needed to locate the right content.
 
 
 ## Personas {#personas-discovery-agent}
@@ -61,9 +61,11 @@ Agencies and Partners can easily find brand-approved assets within Content Hub a
 
 ## How to access Discovery Agent? {#access-discovery-agent}
 
-You can access AEM Business Agents via AI Assistant. Log on to experience.adobe.com and you can start interacting with AI Assistant by specifying your prompt in natural language using the `Ask AI Assistant anything` field:
+You can access AEM Business Agents via AI Assistant. Log on to experience.adobe.com and you can start interacting with AI Assistant by specifying your prompt in natural language using the search box:
 
 ![Access Discovery Agent](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
+
+For information on the MCP endpoint to access Discovery Agent, contact Adobe Support.
 
 
 ## Common use cases and sample prompts {#use-cases-prompts}
@@ -76,20 +78,20 @@ You can access AEM Business Agents via AI Assistant. Log on to experience.adobe.
 
    Sample prompt:
    
-   Show images tagged `office` in folder `frescopa`.
+   Show images tagged `office` in folder `WKND`.
 
 **Folder-based content discovery:**  
-  The Discovery Agent can identify assets by interpreting natural language prompts that reference folder names in AEM. Users can simply mention the folder in their prompt—without manually navigating through the repository—significantly reducing the number of clicks needed to locate the right content.
+  The Discovery Agent can identify assets by interpreting natural language prompts that reference folder names in AEM. Users can simply mention the folder in their prompt, without manually navigating through the repository, significantly reducing the number of clicks needed to locate the right content.
 
   Sample prompts:
 
-* Are there any svgs in folder `frescopa`?
-* Show assets modified after `Nov 1 2025` in folder `frescopa`.
-* List `lifestyle` images in folder `frescopa`.
+* Are there any svgs in folder `WKND`?
+* Show assets modified after `Nov 1 2025` in folder `WKND`.
+* List `lifestyle` images in folder `WKND`.
 
 **Resolution and format-based asset discovery**
 
-The Discovery Agent can identify assets that meet specific quality requirements, such as file format, background characteristics, or minimum resolutio, allowing users to quickly locate product visuals that are ready for high-quality delivery and reuse across channels.
+The Discovery Agent can identify assets that meet specific quality requirements, such as file format, background characteristics, or minimum resolution, allowing users to quickly locate product visuals that are ready for high-quality delivery and reuse across channels.
 
 Sample prompt:
 
@@ -109,11 +111,11 @@ The Discovery Agent helps users quickly locate the right Content Fragments by in
 
 Sample prompts:
 
-* Show content fragments for creating frescopa offer campaign.
+* Show content fragments for creating WKND offer campaign.
 
 * Show the content fragment for americano beverage.
 
-* Show me all published content fragments for frescopa beverages.
+* Show me all published content fragments for WKND beverages.
 
 * List all content fragments created in last 2 weeks.
 
@@ -136,25 +138,35 @@ Note: Form discovery currently supports Edge Delivery Services forms only and ta
 
 ### Assets {#discovery-agent-search-results-assets}
 
-The Discovery Agent returns the top 20 results for each query, sorted by relevance to ensure that the exact matches appear first. 
+The Discovery Agent returns the top 20 results for each query, sorted by relevance to ensure that the exact matches appear first. The Agent combines metadata-driven queries with semantic search to assemble a focused set of likely matches, then uses an LLM to rank them based on user intent. This blended approach delivers accurate, context-aware results without depending entirely on a direct keyword match.
 
-Each result includes asset name along with key asset metadata such as the asset path, creator, creation date, title, description, format, last modifier, last modified date, file size, dimensions, Dynamic Media URL, and associated tags. If an asset is in approved state, the results also include Dynamic Media with OpenAPI URL. 
+Each result includes asset name along with key asset metadata such as the asset path, creator, creation date, title, description, format, last modifier, last modified date, file size, dimensions, [Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md), and associated tags. If an asset is in approved state, the results also include [Dynamic Media with OpenAPI URL](/help/assets/dynamic-media-open-apis-overview.md). 
 
 You can click the asset path to seamlessly navigate to the asset location within AEM.
+
+Screenshot to be replaced. Placeholder for now.
+
+![Access Discovery Agent](/help/ai-in-aem/agents/discovery/assets/search-results-discovery-agent.png)
 
 You can use these asset details to quickly evaluate if an asset meets the requirements without navigating to each asset to view these details.
 
 >[!NOTE]
 >
->The Dynamic Media URL field displays in the search results only if the asset is published and you have a valid Dynamic Media license. Similarly, Dynamic Media with OpenAPI field displays only if you have a valid Dynamic Media license and Dynamic Media wit OpenAPI is enabled for your AEM as a Cloud Service instance.
+>The [Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md) field displays in the search results only if the asset is published and you have a valid Dynamic Media license. Similarly, [Dynamic Media with OpenAPI URL](/help/assets/dynamic-media-open-apis-overview.md) field displays only if you have a valid Dynamic Media license and Dynamic Media with OpenAPI is enabled for your AEM as a Cloud Service instance.
 
-The Discovery Agent combines metadata-driven queries with semantic search to assemble a focused set of likely matches, then uses an LLM to rank them based on user intent. This blended approach delivers accurate, context-aware results without depending entirely on a direct keyword match.
+
 
 
 
 ### Content Fragments {#discovery-agent-search-results-content-fragments}
 
-The Discovery Agent returns the top 20 results for Content Fragments. Each result includes Content Fragment name along with key metadata such as Content Fragment path, creator, creation date, description, Content Fragment model Name, Content Fragment model Path, last modifier, and last modified date fields.
+The Discovery Agent returns the top 20 results for Content Fragments. Each result includes Content Fragment name along with key metadata fields such as Content Fragment path, creator, creation date, Content Fragment model Name, Content Fragment model Path, tags, variations, last modifier, and last modified date fields.
+
+Need to add search details here.
+
+Screenshot to be added. Placeholder for now.
+
+You can click the asset path to seamlessly navigate to the asset location within AEM.
 
 
 ## Prompting best practices {#prompting-best-practices-discovery-agent}
@@ -163,12 +175,7 @@ Specify concise details in your natural language prompts so that the agent can r
 
 * Define asset metadata such as tags, folder names, creation dates, publish status, author names in your prompts to filter assets.
 
-* Use your organization-specific metadata, such as categories (running shoes, electronics), seasons (autumm, spring), events (black friday, product launch), and channels (Web, Email, Print) to further filter content.
-
-## Limitations {#limitations-discovery-agent}
-
-List the limitations (if any)
-
+* Use your organization-specific metadata, such as categories (running shoes, electronics), seasons (autumn, spring), events (black Friday, product launch), and channels (Web, Email, Print) to further filter content.
 
 
 
