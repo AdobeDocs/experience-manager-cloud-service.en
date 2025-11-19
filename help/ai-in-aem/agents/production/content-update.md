@@ -21,6 +21,7 @@ You can access the content update skill from:
 
 * [Jira](#jira)
 
+<!--
 * [AI Assistant](#ai-assistant)
 
 ## AI Assistant {#ai-assistant}
@@ -42,6 +43,7 @@ To initiate content updates you can give a wide range of natural language prompt
 >[!NOTE]
 >
 >File uploads can be used when interacting using [Jira](#jira), but are not supported with AI Assistant.
+-->
 
 ## Jira {#jira}
 
@@ -99,8 +101,10 @@ In the case of a `process` command to trigger updates, the responses might follo
 
   ![Example Jira using the content update skill of the Experience Production Agent](assets/content-update-jira-example.png)
 
+<!--
 ## Limitations {#limitations}
 
 Currently the limitations for the Content Updater are:
 
 * File uploads can be used when interacting with [Jira](#jira), but are not supported when interacting with the [AI Assistant](#ai-assistant).
+-->
