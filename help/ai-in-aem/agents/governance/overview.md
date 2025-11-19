@@ -32,7 +32,7 @@ and batch mode in Experience Hub, making it ideal for AI-generated content, site
 * *Check if `https://www.website/homepage` follows brand guidelines*
 * *Show me my brand guidelines*
 
-### Permission and Digital Rights Manangement {#permission-and-digital-rights-management}
+### Permission and Digital Rights Management {#permission-and-digital-rights-management}
 
 #### Permission Management in Content Hub {#permission-management-in-content-hub}
 
