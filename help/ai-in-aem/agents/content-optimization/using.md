@@ -1,8 +1,6 @@
 ---
-title: Content Optimization Agent Overview
-description: Learn what ...
-feature: Edge Delivery Services, Agentic AI
-role: Admin, Architect, Developer
+title: Content Optimization Agent
+description: Learn how to use the Content Optimization Agent to transform how users refine and adapt assets by applying natural language instructions to create channel-ready variations.
 ---
 
 # Content Optimization Agent {#content-optimization-agent}
