@@ -22,7 +22,25 @@ You can access the content update skill from:
 * [Jira](#jira)
 
 <!--
-* AI Assistant
+* [AI Assistant](#ai-assistant)
+
+## AI Assistant {#ai-assistant}
+
+You can access AEM Business Agents via the AI Assistant. 
+
+Open the AI Assistant from experience.adobe.com, then start interacting by specifying your prompt in natural language using the `Ask AI Assistant anything` field:
+
+![Access Discovery Agent](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
+
+### Sample Prompts {#sample-prompts}
+
+>[!NOTE]
+>
+>File uploads can be used when interacting with [Jira](#jira), but are not supported with AI Assistant.
+
+* Change your headlines
+
+  * Change the headline from X to Y
 -->
 
 ## Jira {#jira}
@@ -64,11 +82,6 @@ Currently, the agent understands the commands:
 * `retry` - re-process a request
 * `feedback` - apply feedback to a previous generation
 * `reprocess` - reprocess the original request
-
-<!--
-for feedback, but this is command
-  * for example: "update headline to I love AEM!"
--->
 
 ### How the agent interacts {#how-the-agent-interacts}
 
