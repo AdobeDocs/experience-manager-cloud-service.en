@@ -37,7 +37,7 @@ To initiate content updates you can give a wide range of natural language prompt
 
 * Change your headlines
 
-  * On <your-URL> change the headline from <X> to <Y>
+  * On your-URL change the headline from X to Y
 
 >[!NOTE]
 >
