@@ -154,5 +154,7 @@ With the [Universal Editor Service running locally](#running-ue) and your [conte
 
 1. Open your browser to `https://localhost:8000/ping`.
 1. Direct your browser to accept [your self-signed certificate](#ue-https).
-1. Once the self-signed certificate is trusted, you can edit the page using your local Universal Editor Service.
+1. Once the self-signed certificate is trusted, the page is loaded using your local Universal Editor Service.
+1. Click the [Local Developer Login](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) in the toolbar and authenticate to your local AEM instance.
 
+You can now edit pages on your local AEM test instance using your local Universal Editor Service.
