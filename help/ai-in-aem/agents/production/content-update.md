@@ -21,7 +21,6 @@ You can access the content update skill from:
 
 * [Jira](#jira)
 
-<!--
 * [AI Assistant](#ai-assistant)
 
 ## AI Assistant {#ai-assistant}
@@ -34,14 +33,15 @@ Open the AI Assistant from experience.adobe.com, then start interacting by speci
 
 ### Sample Prompts {#sample-prompts}
 
->[!NOTE]
->
->File uploads can be used when interacting with [Jira](#jira), but are not supported with AI Assistant.
+To initiate content updates you can give a wide range of natural language prompts. You also need to specify the public facing URL of the page you want to update:
 
 * Change your headlines
 
-  * Change the headline from X to Y
--->
+  * On <your-URL> change the headline from <X> to <Y>
+
+>[!NOTE]
+>
+>File uploads can be used when interacting using [Jira](#jira), but are not supported with AI Assistant.
 
 ## Jira {#jira}
 
@@ -98,3 +98,9 @@ In the case of a `process` command to trigger updates, the responses might follo
 * The following image shows an example Jira that triggers the `process`command for the content update skill:
 
   ![Example Jira using the content update skill of the Experience Production Agent](assets/content-update-jira-example.png)
+
+## Limitations {#limitations}
+
+Currently the limitations for the Content Updater are:
+
+* File uploads can be used when interacting with [Jira](#jira), but are not supported when interacting with the [AI Assistant](#ai-assistant).
