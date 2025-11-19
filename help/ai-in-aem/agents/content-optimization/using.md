@@ -40,31 +40,21 @@ The Content Optimization Agent provides the following skills:
 
    The Content Optimization Agent creates optimized variants as dynamic URLs tailored for different channels and format types.
 
-* **Optimizes image and video content**
+* **Optimizes image content**
 
-   The Content Optimization Agent applies enhancements such as format conversion, resolution adjustments, cropping, and sharpening to improve asset quality.
+   The Content Optimization Agent applies enhancements such as format conversion, resolution adjustments, cropping, and sharpening to improve image quality.
 
-* **Creates variants from layered or structured sources**
+* **Multi-variant asset optimization**
 
-   The Content Optimization Agent builds visual versions from layered assets such as Dynamic Media templates, PSD files, Adobe Express projects, or text-based compositions.
+   The Content Optimization Agent can generate multiple optimized image variations from the assets returned by the Discovery Agent using a single natural language prompt, enabling users to produce channel-ready renditions quickly and efficiently.
 
 
 
 ## Personas {#personas-content-optimization-agent}
 
+Channel Marketers, the key persona for Content Optimization Agent, can select the right high-resolution source content and request optimized formats tailored to their channels and audience segments.
 
-### Channel Marketers {#channel-marketers}
-
-  Channel Marketers can use the Content Optimization Agent to select the right high-resolution source content and request optimized formats tailored to their channels and audience segments.
-
-
-### Regional Marketers {#regional-marketers}
-
-Regional Marketers can use the Content Optimization Agent to adapt global content for local markets, adjusting formats, layouts, and visual details to reflect regional languages, cultural expectations, and regulatory needs. They can review generated variants, request refinements, and collaborate easily with local and central teams.
-
-### Agency Workers {#agency-workers}
-
-Agency Workers can leverage the Content Optimization Agent to produce content variations on behalf of marketing teams, generating channel-specific or localized output format types efficiently. They can quickly create, refine, and deliver high-quality variants that align with brand and campaign requirements.
+Regional Marketers and Agency Workers can also use the Content Optimization Agent to quickly generate channel-ready image variations that support faster, more consistent content production.
 
 
 ## How to access Content Optimization Agent? {#access-content-optimization-agent}
@@ -126,9 +116,6 @@ You can access AEM Business Agents via AI Assistant. Log on to experience.adobe.
    Overlay the image with `30%` discount graphics over the promotional banner, placing it `100px` from the bottom and the right edge.
 
 
-
-
-
 ## Optimization Results {#content-optimization-agent-results}
 
 
@@ -136,16 +123,11 @@ You can access AEM Business Agents via AI Assistant. Log on to experience.adobe.
 
 ## Prompting best Practices {#prompting-best-practices-content-optimization-agent}
 
-* Be explicit about the enhancement you want the Content Oprimization Agent to apply. Clearly state the transformation or adjustment you expect. Precise instructions help the agent produce accurate and predictable results. For example, Instead of `Make it brighter`, specify `Increase brightness by 20%`.
+The following are some of the prompting best practices:
+
+* Be explicit about the enhancement you want the Content Oprimization Agent to apply. Clearly state the transformation or adjustment you expect. Precise instructions help the agent produce accurate and predictable results. For example, Instead of `Make it good quality`, specify `Create a JPEG image with 90% quality`.
 
 * Provide detailed parameters whenever possible. The more context you give, such as dimensions, format, quality, placement, or color values, the more tailored the output is.
-
-
-
-## Limitations {#limitations-content-optimization-agent}
-
-List the limitations (if any)
-
 
 
 
