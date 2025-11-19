@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 
 The Development Agent empowers technical roles — developers and administrators — by streamlining the creation, debugging, deployment, and optimization of code. 
 
-The agent currently fulfills the job of retrieving the pipeline statuses and troubleshooting a failing build step by suggesting fixes, saving time when debugging AEM as a Cloud Services deployments to dev, stage, and production environments.
+The agent currently fulfills the job of retrieving the pipeline statuses and troubleshooting a failing build step by suggesting fixes, saving time when debugging AEM as a Cloud Services deployments to dev, stage, and production environments. It examines build logs and correlates it with code in order to recommend a fix that can be manually applied. Note that AI can make mistakes and thus suggested fixes should be reviewed.
 
 <!-- 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
@@ -36,4 +36,6 @@ This should result in an analysis of the failed pipeline with suggestions to fix
 ## Out of Scope Features {#out-of-scope-features}
 
 Pipeline troubleshooting operates on the Full-Stack pipeline's build step. For other pipeline types and steps, debug failures by downloading and inspecting the logs.
+
+Pipeline troubleshooting is not supported for programs using byogit.
 
