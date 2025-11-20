@@ -1,6 +1,8 @@
 ---
 title: Content Optimization Agent
 description: Learn how to use the Content Optimization Agent to transform how users refine and adapt assets by applying natural language instructions to create channel-ready variations.
+feature: Edge Delivery Services, Agentic AI
+role: User, Admin, Architect, Developer
 ---
 
 # Content Optimization Agent {#content-optimization-agent}
@@ -16,6 +18,12 @@ Some of the key benefits of Content Optimization include:
 * **Creative enhancement at scale**: Applies visual adjustments and enhancements, such as background changes or graphic overlays, to support high-volume creative workflows without slowing teams down.
 
 * **[Seamless collaboration with the Discovery Agent](/help/ai-in-aem/agents/discovery/using.md)**: Builds upon the assets identified by the Discovery Agent, enabling end-to-end asset retrieval and optimization through natural conversation.
+
+>[!IMPORTANT]
+>
+>AI-generated responses may be inaccurate or misleading. Be sure you double-check suggested fixes and responses. 
+>
+>See also [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html). 
 
 ## Prerequisites {#prerequisites-content-optimization-agent}
 
@@ -48,8 +56,6 @@ The Content Optimization Agent provides the following skills:
 
    The Content Optimization Agent can generate multiple optimized image variations from the assets returned by the Discovery Agent using a single natural language prompt, enabling users to produce channel-ready renditions quickly and efficiently.
 
-
-
 ## Personas {#personas-content-optimization-agent}
 
 Channel Marketers, the key persona for Content Optimization Agent, can select the right high-resolution source content and request optimized formats tailored to their channels and audience segments.
@@ -62,7 +68,6 @@ Regional Marketers and Agency Workers can also use the Content Optimization Agen
 You can access AEM Business Agents via AI Assistant. Log on to experience.adobe.com and you can start interacting with AI Assistant by specifying your prompt in natural language using the `Ask AI Assistant anything` field:
 
 ![Access Discovery Agent](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
-
 
 ## Common use cases and sample prompts {#use-cases-prompts}
 
@@ -157,6 +162,3 @@ The following are some of the prompting best practices:
 * Provide detailed parameters whenever possible. The more context you give, such as dimensions, format, quality, placement, or color values, the more tailored the output is.
 
 -->
-
-
-
