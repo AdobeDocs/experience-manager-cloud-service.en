@@ -1,6 +1,6 @@
 ---
 title: Development Agent Overview
-description: Learn about AEM's Development Agent.
+description: Learn how the Development Agent in AEM analyzes failed pipelines in Cloud Manager and build logs to suggest code fixes and speed up debugging.
 feature: Edge Delivery Services, Agentic AI
 role: Admin, Architect, Developer
 ---
