@@ -1,6 +1,6 @@
 ---
 title: Production Agent Overview
-description: Learn what agents are available in AEM to accelerate your content creation and automatically orchestrate changes.
+description: Learn how the Experience Production Agent in AEM helps you accelerate your content creation and automatically orchestrate changes.
 feature: Edge Delivery Services, Agentic AI
 role: Admin, Architect, Developer
 ---
