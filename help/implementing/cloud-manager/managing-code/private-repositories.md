@@ -3,7 +3,7 @@ title: Add a private GitHub Repository in Cloud Manager
 description: Learn how to set up Cloud Manager to work with your own private GitHub repositories.
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Add a private GitHub Cloud repository in Cloud Manager {#private-repositories}
 
@@ -65,7 +65,7 @@ Configuration of a private GitHub Cloud repository in Cloud Manager consists of 
 
     | Field | Description |
     | --- | --- |
-    | Repository Name | An expressive name for your new repository. | 
+    | Repository Name | An expressive name for your new repository. |
     | Repository URL | The URL of the private repository, which must end in `.git`.<br>For example, *`https://github.com/org-name/repo-name.git`* (URL path is for illustration purposes only).  |
     | Description (optional) | A detailed description of the repository. |
 

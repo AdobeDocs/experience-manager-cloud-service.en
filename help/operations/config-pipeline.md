@@ -57,21 +57,32 @@ For information on how to create and configure **Edge Delivery** config pipeline
 Each configuration file begins with properties resembling the following example snippet:
 
 ```yaml
-   kind: "LogForwarding"
+   kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
+   metadata: ...
+   data: ...
 ```
 
 | Property  | Description  | Default  |
 |---|---|---|
 |  `kind` | A string that determines which type of configuration, such as log forwarding, traffic filter rules, or request transformations | Required, no default |
 |  `version` | A string representing the schema version | Required, no default |
-| `envTypes` | This array of strings is a child property of the `metadata` node. For **Publish Delivery**, possible values are dev, stage, prod, or any combination, and it determines for which environment types the configuration is processed. For example, if the array only includes `dev`, the configuration is not loaded on stage or prod environments, even if the configuration is deployed there. For **Edge Delivery**, only a value of `prod` should be used. | All environment types, which is (dev, stage, prod) for Publish Delivery or just prod for Edge Delivery. |
+| `metadata` | (Optional) This contains an array of strings  `envTypes` that determines for which environment types the configuration is processed. For **Publish Delivery** possible values are  `dev`,  `stage` and `prod`. For **Edge Delivery**, only a value of `prod` should be used. For example, if the array only includes `dev`, the configuration is not loaded on stage or prod environments, even if the configuration is deployed there. | All environment types, which is (dev, stage, prod) for Publish Delivery or just prod for Edge Delivery. |
 
 You can use the `yq` utility to validate locally the YAML formatting of your configuration file (for example, `yq cdn.yaml`).
 
-## Folder structure {#folder-structure}
+## Publish Delivery {#yamls-for-aem}
+
+**Publish Delivery** configurations will be deployed to a target environment. When targeting multiple environments one can organize the different files in different ways. For example, if the array only includes `dev`, the configuration is not loaded on stage or prod environments, even if the configuration is deployed there.
+
+```yaml
+   kind: "CDN"
+   version: "1"
+   metadata:
+    envType: ["dev"]
+```
+
+### Folder structure {#folder-structure}
 
 A folder named `/config` or similar should be at the top of the tree, with one more YAML files somewhere in a tree below it.
 
@@ -109,7 +120,7 @@ The file structure resembles the following:
 Use this structure when the same configuration is sufficient for all environments and for all types of configuration (CDN, log forwarding, and so on). In this scenario, the `envTypes` array property would include all environment types.
 
 ```yaml
-   kind: "cdn"
+   kind: "CDN"
    version: "1"
    metadata:
      envTypes: ["dev", "stage", "prod"]
@@ -169,7 +180,7 @@ The file structure resembles the following:
 
 A variation of this approach is to maintain a separate branch per environment.
 
-### Edge Delivery Services {#yamls-for-eds}
+## Edge Delivery Services {#yamls-for-eds}
 
 Edge Delivery config pipelines do not have separate development, staging, and production environments. In Publish Delivery environments, changes progress through dev, stage, and prod tiers. By contrast, an Edge Delivery config pipeline applies configuration directly to all domain mappings registered in Cloud Manager for an Edge Delivery site.
 
@@ -182,7 +193,7 @@ Thus, deploy a simple file structure like:
   logForwarding.yaml
 ```
 
-If a rule needs to differ per Edge Delivery site, use the syntax *when* to distinguish the rules from each other. For example, notice that the domain matches dev.example.com in the snippet below, which can be distinguished from the domain www.example.com.
+If a rule needs to differ per Edge Delivery site, use the syntax *when* to distinguish the rules from each other. For example, notice that the domain matches dev.example.com in the snippet below, which can be distinguished from the domain `www.example.com`.
 
 ```
 kind: "CDN"
@@ -214,8 +225,6 @@ The following snippet is an example of how the secret environment variable `${{S
    ```
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      splunk:
        default:

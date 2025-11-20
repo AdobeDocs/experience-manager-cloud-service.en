@@ -20,6 +20,35 @@ role: User, Developer, Admin
 
 The Content Overflow Handling feature in the Interactive Communication Editor enhances how text behaves within Flowed and Positioned layouts. It ensures smooth content continuity for flowed layouts and provides visual alerts for positioned layouts, giving authors better control and flexibility when designing communications.
 
+![Find IC Doc](/help/forms/interactive-communication/assets/content-overflow.png)
+
+## How to Use Content Overflow Handling in Interactive Communication Editor
+
+1. Open the Interactive Communication Editor
+Open your communication in the IC Editor to begin editing the layout and content.
+
+1. Select the Layout Type
+Choose the desired layout for your subform, Flowed or Positioned based on how you want content to behave.
+
+1. For Flowed Layouts
+
+    1. Ensure the parent subform hierarchy is set to Flowed.
+
+    1. In the Properties panel, enable the Allow page breaks within content option (visible only if the parent subform's "Allow page breaks" is enabled).
+
+    1. Add or paste text, when content exceeds one page, it automatically continues on the next page.
+
+1. For Positioned Layouts
+
+    1. Add or edit text within a fixed container.
+
+    1. If the content exceeds the container height, a red border appears at the bottom to indicate overflow.
+
+    1. Manually resize the container to accommodate the extra content.
+
+1. Preview the Communication
+Use the PDF Preview option to verify how the content flows or overflows across pages for both layout types.
+
 ## Key Capabilities
 
 ### Flowed Layout
