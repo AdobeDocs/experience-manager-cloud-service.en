@@ -16,6 +16,12 @@ Key capabilities include:
 
 By combining these features, the Governance Agent reduces risk and enables fast, secure, and on-brand delivery at scale.
 
+>[!IMPORTANT]
+>
+>AI-generated responses may be inaccurate or misleading. Be sure you double-check suggested fixes and responses. 
+>
+>See also [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html). 
+
 ## Skills in AEM Governance Agent {#skills-in-aem-governance-agent}
 
 ### Brand Governance {#brand-governance}
