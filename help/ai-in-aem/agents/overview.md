@@ -2,7 +2,7 @@
 title: Business Agents Overview
 description: Learn about the business agents available in AEM to accelerate your content creation and automatically orchestrate changes.
 feature: Edge Delivery Services, Agentic AI
-role: Admin, Architect, Developer
+role: User, Admin, Architect, Developer
 ---
 
 # AEM Business Agents Overview {#business-agents-overview}

@@ -2,7 +2,7 @@
 title: Communication creation skill
 description: Learn about the Experience Production Agent's Communication creation skill and how to use natural language to create interactive communications.
 feature: Edge Delivery Services, Agentic AI
-role: Admin, Architect, Developer
+role: User, Admin, Architect, Developer
 ---
 
 # Communication creation skill {#ic-creation-skill}
