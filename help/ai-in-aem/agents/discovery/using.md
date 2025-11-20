@@ -89,11 +89,11 @@ For information on the MCP endpoint to access Discovery Agent, contact Adobe Sup
 
 **Resolution and format-based asset discovery**
 
-The Discovery Agent can identify assets that meet specific quality requirements, such as file format, background characteristics, or minimum resolution, allowing users to quickly locate product visuals that are ready for high-quality delivery and reuse across channels.
+The Discovery Agent can identify assets that meet specific quality requirements, such as file format or minimum resolution, allowing users to quickly locate product visuals that are ready for high-quality delivery and reuse across channels.
 
 Sample prompt:
 
-Find product packshots with transparent background (PNG/WebP) at least 2000 px wide.
+Find product packaging PNG images at least 2000 px wide.
 
 **Orientation-based content discovery**
 
