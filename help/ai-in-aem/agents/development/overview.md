@@ -13,7 +13,9 @@ Currently, the agent can retrieve pipeline statuses and help you troubleshoot fa
 
 >[!NOTE]
 >
->AI-generated responses may be inaccurate or misleading. Be sure you double-check suggested fixes and responses.
+>AI-generated responses may be inaccurate or misleading. Be sure you double-check suggested fixes and responses. 
+>
+>See also [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html). 
 
 <!-- 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
@@ -56,7 +58,7 @@ You access the Development Agent through the AI Assistant found in user interfac
 1. In the **AI Assistant** panel text box near the bottom, type your question or prompt, then press `Enter` or click ![Send icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
 
     For example:
-    *In the "eda-org-01-no-access" program, analyze the failure to the "no-access" pipelne and troubleshoot.*
+    *In the "eda-org-01-no-access" program, analyze the failure to the "no-access" pipeline and troubleshoot.*
 
     The prompt results in the following response.
 
@@ -73,8 +75,8 @@ The Development Agent's pipeline troubleshooting job requires either the Cloud M
 
 | Prompt | Result |
 | --- | --- |
-| *List my failed pipelines for program Main Program.* | While results may vary, this prompt should output a table of failed pipelines, with a followup suggestion to reference a specific pipeline to analyze. |
-| *Analyze my failed pipeline called "Dev Pipeline".* | This prompt should result in an analysis of the failed pipeline with suggestions to fix. |
+| *List my failed pipelines for program Main Program.* | While results may vary, this prompt should output a table of failed pipelines, with a follow-up suggestion to reference a specific pipeline to analyze. |
+| *Analyze my failed pipeline called "Dev Pipeline."* | This prompt should result in an analysis of the failed pipeline with suggestions to fix. |
 
 ## Out-of-scope features {#out-of-scope-features}
 
