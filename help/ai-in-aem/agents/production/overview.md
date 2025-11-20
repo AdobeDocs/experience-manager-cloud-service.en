@@ -1,17 +1,17 @@
 ---
 title: Production Agent Overview
-description: Learn what agents are available in AEM to accelerate your content creation and automatically orchestrate changes.
+description: Learn what skills are available to the AEM production agent to accelerate your content creation and automatically orchestrate changes.
 feature: Edge Delivery Services, Agentic AI
 role: Admin, Architect, Developer
 ---
 
 # Production Agent Overview {#production-agent}
 
-The Production Agent automates high effort and high-volume tasks. Empowering teams and turning manual, weeks-long processes into fast, AI-assisted workflows that keep every experience current and consistent helping the business achieve their goals.
+The production agent automates high-effort and high-volume tasks. Empowering teams and turning manual, weeks-long processes into fast, AI-assisted workflows that keep every experience current and consistent helping the business achieve their goals.
 
 ## Jobs {#jobs}
 
-The agent provides the following jobs:
+The production agent provides the following jobs:
 
 * [Content Update](#content-update)
 * [Form Creation](#form-creation)
@@ -20,28 +20,23 @@ The agent provides the following jobs:
 
 ### Content Update {#content-update}
 
-The [Content Update](/help/ai-in-aem/agents/production/content-update.md) updates existing content across the CMS — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description, and when used with Jira PDFs and screenshots can provide input too.
+The [content update](/help/ai-in-aem/agents/production/content-update.md) skill updates existing content across the CMS — including content fragments, pages, forms, and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description. When used with Jira, PDFs and screenshots can provide input too.
 
 ### Form Creation {#form-creation}
 
-The [Form Creation](/help/ai-in-aem/agents/production/form-creation.md) skill enables users to build adaptive forms through natural language interactions without dependency on development or IT teams. This capability accelerates form deployment while maintaining brand consistency and allowing business users to create forms without deep technical knowledge.
-
+The [form creation](/help/ai-in-aem/agents/production/form-creation.md) skill enables users to build adaptive forms through natural language interactions without dependency on development or IT teams. This capability accelerates form deployment while maintaining brand consistency and allowing business users to create forms without deep technical knowledge.
 
 ### Interactive Communications Creation {#interactive-communications-creation}
 
-The [Interactive Communications Creation](/help/ai-in-aem/agents/production/interactive-communications-creation.md) skill empowers business users to produce personalized, data-driven correspondence at scale. From account statements and policy documents to bills and welcome kits, the agent transforms natural language requirements into professional communications.
+The [interactive communications creation](/help/ai-in-aem/agents/production/interactive-communications-creation.md) skill empowers business users to produce personalized, data-driven correspondence at scale. From account statements and policy documents to bills and welcome kits, the agent transforms natural language requirements into professional communications.
 
 >[!NOTE]
 >
->
-> The Interactive Communications Creation capability is currently in alpha release. If you require access to this capability, send a request from your official email address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
-
+> The Interactive Communications Creation capability is currently in alpha release. If you require access to this capability, send a request from your official email address to [aem-forms-ea@adobe.com.](mailto:aem-forms-ea@adobe.com)
 
 ### Site Migration {#site-migration}
 
-The [Site Migration](/help/ai-in-aem/agents/production/site-migration.md) seamlessly migrate non-AEM sites into AEM (Experience Delivery Services) environments, ensuring they are performant, compliant, and agent-ready. The agent streamlines setup and transformation, reducing manual effort and time to value.
-
-The agent should be able to work with other agent skills, examples include:
+The [site migration](/help/ai-in-aem/agents/production/site-migration.md) skill seamlessly migrates non-AEM sites into AEM environments, ensuring they are performant, compliant, and agent-ready. The agent streamlines setup and transformation, reducing manual effort and time to value.
 
 ## Use with other agents {#use-with-other-agents}
 
@@ -97,5 +92,4 @@ Developers extend and customize AEM's capabilities to meet organizational needs.
 
 * Build and maintain scalable, performant AEM implementations.
 * Enable authors with flexible, reusable components.
-* Integrate AEM with other systems (CRM, commerce, analytics
-
+* Integrate AEM with other systems (CRM, commerce, analytics)
