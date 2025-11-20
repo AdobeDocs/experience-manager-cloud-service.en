@@ -31,6 +31,7 @@ Open the AI Assistant from experience.adobe.com, then start interacting by speci
 
 ![Access Discovery Agent](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
 
+<!--
 ### Sample Prompts {#sample-prompts}
 
 To initiate content updates you can give a wide range of natural language prompts. You also need to specify the public facing URL of the page you want to update:
@@ -38,6 +39,7 @@ To initiate content updates you can give a wide range of natural language prompt
 * Change your headlines
 
   * On your-URL change the headline from X to Y
+-->
 
 >[!NOTE]
 >
