@@ -100,6 +100,9 @@ As a best practice, Adobe recommends specifying values in the rest of the fields
         <td>[!UICONTROL MP4]</td>
         <td> 3840 X 3840 pixels, Maximum 200 MB</td>
     </tr>
+    <tr>
+      <td colspan="2"> <i> The asset size must be less than 80 MB for desktop devices and 40 MB for mobile devices. </i></td>
+   </tr>
     </tbody>
 </table>
 
