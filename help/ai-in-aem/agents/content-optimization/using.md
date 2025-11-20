@@ -15,7 +15,7 @@ Some of the key benefits of Content Optimization include:
 
 * **Creative enhancement at scale**: Applies visual adjustments and enhancements, such as background changes or graphic overlays, to support high-volume creative workflows without slowing teams down.
 
-* **Seamless collaboration with the Discovery Agent**: Builds upon the assets identified by the Discovery Agent, enabling end-to-end asset retrieval and optimization through natural conversation.
+* **[Seamless collaboration with the Discovery Agent](/help/ai-in-aem/agents/discovery/using.md)**: Builds upon the assets identified by the Discovery Agent, enabling end-to-end asset retrieval and optimization through natural conversation.
 
 ## Prerequisites {#prerequisites-content-optimization-agent}
 
@@ -64,6 +64,8 @@ You can access AEM Business Agents via AI Assistant. Log on to experience.adobe.
 
 ## Common use cases and sample prompts {#use-cases-prompts}
 
+Use Content Optimization prompts by searching for the right assets through the [Discovery Agent](/help/ai-in-aem/agents/discovery/using.md). Once the relevant images are surfaced, users can generate optimized or channel-specific variants for one or multiple assets directly from the search results. This workflow ensures high-quality inputs and consistently better optimization outcomes.
+
 * **High-resolution rendition creation**
 
    The agent can generate new renditions of an asset at a specified resolution and quality level, making it easy to prepare channel-ready variations without manual editing.
@@ -73,6 +75,14 @@ You can access AEM Business Agents via AI Assistant. Log on to experience.adobe.
 
    Create a `2000px` rendition as `JPEG` with `80%` quality.
 
+   Search for the right asset using the [Discovery agent](/help/ai-in-aem/agents/discovery/using.md) and then use the following prompts in case of multiple search results:
+
+   For the 3rd search result, create a `2000px` rendition as `JPEG` with `80%` quality.
+
+   OR
+
+   For `Asset ID`, generate a 2000px rendition as `JPEG` with `80%` quality
+
 * **Image enhancement**
 
    The agent can apply visual improvements—such as sharpening—to ensure assets look crisp and well-defined before being used across campaigns.
@@ -80,6 +90,7 @@ You can access AEM Business Agents via AI Assistant. Log on to experience.adobe.
    Sample prompt:
 
    Sharpen the image.
+
 
 * **Background color adjustments**
 
@@ -111,12 +122,24 @@ You can access AEM Business Agents via AI Assistant. Log on to experience.adobe.
 
    Sample Prompt:
 
-   Overlay the image with `30%` discount graphics over the promotional banner, placing it `100px` from the bottom and the right edge.
+   Overlay the image with `30%` discount graphics over the promotional banner, placing it `100px` from the center.
+
+   >[!NOTE]
+   >
+   >Overlay positions might not be accurate.
 
 
 ## Optimization Results {#content-optimization-agent-results}
 
-Capture the user experience for images, videos, and PDFs along with the screenshots.
+When you specify an optimization prompt, the Content Optimization Agent returns the enhanced asset along with convenient access options based on the asset type:
+
+* **Images**: The response includes a thumbnail preview and options to open the Dynamic Media URL or download the optimized image.
+
+* **PDF documents**: The response includes a thumbnail preview and options to open the Dynamic Media URL or download the optimized file.
+
+* **Videos**: The response provides options to open the Dynamic Media URL or download the optimized video.
+
+These results make it easy to review the optimized output and immediately use it across downstream channels or workflows.
 
 
 ## Prompting best Practices {#prompting-best-practices-content-optimization-agent}

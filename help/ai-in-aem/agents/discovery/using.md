@@ -142,8 +142,6 @@ Each result includes asset name along with key asset metadata such as the asset 
 
 You can click the asset path to seamlessly navigate to the asset location within AEM.
 
-Screenshot to be replaced. Placeholder for now.
-
 ![Access Discovery Agent](/help/ai-in-aem/agents/discovery/assets/search-results-discovery-agent.png)
 
 You can use these asset details to quickly evaluate if an asset meets the requirements without navigating to each asset to view these details.
@@ -159,10 +157,6 @@ You can use these asset details to quickly evaluate if an asset meets the requir
 ### Content Fragments {#discovery-agent-search-results-content-fragments}
 
 The Discovery Agent returns the top 20 results for Content Fragments. Each result includes Content Fragment name along with key metadata fields such as Content Fragment path, creator, creation date, Content Fragment model Name, Content Fragment model Path, tags, variations, last modifier, and last modified date fields.
-
-Need to add search details here.
-
-Screenshot to be added. Placeholder for now.
 
 You can click the asset path to seamlessly navigate to the asset location within AEM.
 
