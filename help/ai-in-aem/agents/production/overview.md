@@ -18,6 +18,12 @@ The agent provides the following jobs:
 * [Communications Creation](#communications-creation)
 * [Site Migration](#site-migration)
 
+>[!IMPORTANT]
+>
+>AI-generated responses may be inaccurate or misleading. Be sure you double-check suggested fixes and responses. 
+>
+>See also [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html). 
+
 ### Content Update {#content-update}
 
 The [Content Update](/help/ai-in-aem/agents/production/content-update.md) updates existing content across the CMS — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description, and when used with Jira PDFs and screenshots can provide input too.
