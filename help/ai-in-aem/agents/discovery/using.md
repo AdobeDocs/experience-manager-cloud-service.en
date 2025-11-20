@@ -142,7 +142,7 @@ Each result includes asset name along with key asset metadata such as the asset 
 
 You can click the asset path to seamlessly navigate to the asset location within AEM.
 
-![Access Discovery Agent](/help/ai-in-aem/agents/discovery/assets/search-results-discovery-agent.png)
+![Search assets using Discovery Agent](/help/ai-in-aem/agents/discovery/assets/search-results-discovery-agent.png)
 
 You can use these asset details to quickly evaluate if an asset meets the requirements without navigating to each asset to view these details.
 
@@ -151,14 +151,13 @@ You can use these asset details to quickly evaluate if an asset meets the requir
 >The [Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md) field displays in the search results only if the asset is published and you have a valid Dynamic Media license. Similarly, [Dynamic Media with OpenAPI URL](/help/assets/dynamic-media-open-apis-overview.md) field displays only if you have a valid Dynamic Media license and Dynamic Media with OpenAPI is enabled for your AEM as a Cloud Service instance.
 
 
-
-
-
 ### Content Fragments {#discovery-agent-search-results-content-fragments}
 
-The Discovery Agent returns the top 20 results for Content Fragments. Each result includes Content Fragment name along with key metadata fields such as Content Fragment path, creator, creation date, Content Fragment model Name, Content Fragment model Path, tags, variations, last modifier, and last modified date fields.
+The Discovery Agent provides full-text search capabilities for Content Fragments, returning the top 20 results that best match the specified prompt.. Each result includes Content Fragment name along with key metadata fields such as Content Fragment path, creator, creation date, variations, last modifier, and last modified date fields.
 
-You can click the asset path to seamlessly navigate to the asset location within AEM.
+![Search Content Fragments using Discovery Agent](/help/ai-in-aem/agents/discovery/assets/search-content-fragments-discovery-agent.png)
+
+You can click the Content Fragment path to seamlessly navigate to the Content Fragment location within AEM.
 
 
 ## Prompting best practices {#prompting-best-practices-discovery-agent}
