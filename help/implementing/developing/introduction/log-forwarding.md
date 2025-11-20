@@ -105,8 +105,6 @@ This article is organized in the following way:
    ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      splunk:
        default:
@@ -130,8 +128,6 @@ It is possible to set different values between CDN logs and AEM logs (including 
    ```yaml
       kind: "LogForwarding"
       version: "1"
-      metadata:
-        envTypes: ["dev"]
       data:
         splunk:
           default:
@@ -150,8 +146,6 @@ It is possible to set different values between CDN logs and AEM logs (including 
    ```yaml
       kind: "LogForwarding"
       version: "1"
-      metadata:
-        envTypes: ["dev"]
       data:
         splunk:
           default:
@@ -213,8 +207,6 @@ The example below shows how to configure logging on a standard HTTPS port with A
    ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      splunk:
        default:
@@ -249,9 +241,7 @@ Log Forwarding to Amazon S3 supports AEM and Dispatcher logs, CDN logs are not y
 
   ```yaml
   kind: "LogForwarding"
-  version: "1.0"
-  metadata:
-    envTypes: ["dev"]
+  version: "1"
   data:
     awsS3:
       default:
@@ -289,8 +279,6 @@ See [AWS Bucket Policy Documentation](https://docs.aws.amazon.com/AmazonS3/lates
    ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      azureBlob:
        default:
@@ -361,8 +349,6 @@ See the log entry formats under [Logging for AEM as a Cloud Service](/help/imple
    ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      datadog:
        default:
@@ -389,8 +375,6 @@ See the log entry formats under [Logging for AEM as a Cloud Service](/help/imple
    ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      elasticsearch:
        default:
@@ -425,8 +409,6 @@ ctx._index = sourceType + "_" + envType + "_" + date;
    ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      https:
        default:
@@ -472,8 +454,6 @@ Log Forwarding to New Relic leverages the New Relic HTTPS API for ingestion.  Cu
   ```yaml
     kind: "LogForwarding"
     version: "1"
-    metadata:
-      envTypes: ["dev"]
     data:
       newRelic:
         default:
@@ -499,8 +479,6 @@ The "Ingest Logs" scope attribute is required for the Token.
   ```yaml
     kind: "LogForwarding"
     version: "1"
-    metadata:
-      envTypes: ["dev"]
     data:
       dynatrace:
         default:
@@ -517,8 +495,6 @@ The "Ingest Logs" scope attribute is required for the Token.
    ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      splunk:
        default:
@@ -552,8 +528,6 @@ You will need to copy the last section of the URL (without the preceeding `/`) a
   ```yaml
   kind: "LogForwarding"
   version: "1"
-  metadata:
-    envTypes: ["dev"]
   data:
     sumoLogic:
       default:
