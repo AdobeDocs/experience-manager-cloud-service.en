@@ -1,31 +1,27 @@
 ---
-title: Interactive Communication creation skill
-description: Learn about the Experience Production Agent's Interactive Communication creation skill and how to use natural language to create interactive communications.
+title: Communication creation skill
+description: Learn about the Experience Production Agent's Communication creation skill and how to use natural language to create interactive communications.
 feature: Edge Delivery Services, Agentic AI
 role: Admin, Architect, Developer
 ---
 
-# Interactive Communication Creation Skill {#ic-creation-skill}
+# Communication creation skill {#ic-creation-skill}
 
 Interactive Communications are personalized, data-driven documents designed for business correspondence such as account statements, policy documents, bills, welcome kits, and benefit notices. Unlike forms that collect input from users, Interactive Communications generate output documents with dynamic, recipient-specific content.
 
-![Interactive Communication Editor](/help/forms/assets/ic-editor.png)
+The Communication creation skill is a capability of the Experience Production Agent that is designed to develop interactive communications using natural language interactions. It enables users to create personalized, data-driven correspondence without traditional manual processes. This skill eliminates the complexity of communication design by interpreting conversational prompts and automatically generating appropriate document structures, layouts, and data bindings. The skill is surfaced through AI assistant and Experience Hub.
 
-
-The Interactive Communication creation skill is a capability of the Experience Production Agent that is designed to develop interactive communications using natural language interactions. It enables users to create personalized, data-driven correspondence without traditional manual processes. This skill eliminates the complexity of communication design by interpreting conversational prompts and automatically generating appropriate document structures, layouts, and data bindings. The skill is surfaced through AI Assistant.
-
-Some of the key benefits of Interactive Communication creation skill include:
+Some of the key benefits of Communication creation skill include:
 
 * **Accelerated communication development**: Create communications quickly using simple natural language commands, eliminating the need for learning traditional product interfaces.
-* **Consistent and on-brand correspondence**: Create communications that follow your organization's branding, templates, and style guidelines by using approved templates.
+* **Consistent and on-brand correspondence**: Create communications that follow your organization's branding, templates, and style guidelines by using approved templates and styles.
 * **Lower technical barrier**: Allows business users to create communications easily, without needing advanced technical or deep product expertise.
 
 ## Use cases and sample prompts {#use-cases-prompts}
 
-The Interactive Communication creation skill allows you to create on-brand correspondence by submitting your requirements in plain language.
+The Communication creation skill allows you to create on-brand correspondence by submitting your requirements in plain language.
 
-You are prompted to specify your template, indicate your preferred path to save the communication, and provide any data source details. Based on these selections, the Interactive Communication creation skill automatically generates the appropriate document.
-
+You are prompted to specify your template, indicate your preferred path to save the communication, and provide any data source details. Based on these selections, the Communication creation skill automatically generates the appropriate document.
 
 ### Sample prompts {#sample-prompts}
 
@@ -44,7 +40,7 @@ You are prompted to specify your template, indicate your preferred path to save 
 
 ## Next Steps {#refine-with-ic-editor}
 
-After creating your initial communication structure using AI Assistant, you can use the Interactive Communications Editor to refine and enhance your document:
+After creating your initial communication structure using AI Assistant or Experience Hub, you can use the Interactive Communications Editor to refine and enhance your document:
 
 * **Incremental component building**: Add or modify individual components such as text, images, charts, tables, and barcodes through the visual editor.
 
@@ -59,3 +55,4 @@ After creating your initial communication structure using AI Assistant, you can 
 * **Multi-channel output**: Configure both print and web channel versions, ensuring optimal presentation across delivery formats.
 
 For more information, see [Interactive Communications documentation](/help/forms/introduction-to-interactive-communication.md).
+
