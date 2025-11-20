@@ -5,7 +5,7 @@ description: Learn how to use the Content Optimization Agent to transform how us
 
 # Content Optimization Agent {#content-optimization-agent}
 
-The Content Optimization Agent transforms how users refine and adapt assets by applying natural language instructions to create channel-ready variations. Whether generating new renditions, adjusting visual properties, changing backgrounds, or preparing assets for specific digital channels, the agent interprets user intent and performs complex editing tasks automatically. It works seamlessly with the Discovery Agent, taking the assets it finds and producing optimized variations that meet brand, channel, and campaign requirements without manual design effort.
+The Content Optimization Agent transforms how users refine and adapt assets by applying natural language instructions to create channel-ready variations. Whether generating new renditions, adjusting visual properties, changing backgrounds, or preparing assets for specific digital channels, the agent interprets user intent and performs complex editing tasks automatically. It works seamlessly with the Discovery Agent, taking the assets it finds and producing optimized variations using core [Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md) that meet brand, channel, and campaign requirements without manual design effort.
 
 Some of the key benefits of Content Optimization include:
 
@@ -24,6 +24,8 @@ To generate variations or optimizations for image assets. You must have:
 * A valid Dynamic Media license 
 
 * Dynamic Media with OpenAPI enabled on AEM as a Cloud Service environment.
+
+* The assets in [approved state](/help/assets/manage-organize-assets-view.md#manage-asset-status) in your AEM as a Cloud Service environment.
 
 
 ## Skills {#skills-content-optimization-agent}
@@ -64,7 +66,7 @@ You can access AEM Business Agents via AI Assistant. Log on to experience.adobe.
 
 ## Common use cases and sample prompts {#use-cases-prompts}
 
-Use Content Optimization prompts by searching for the right assets through the [Discovery Agent](/help/ai-in-aem/agents/discovery/using.md). Once the relevant images are surfaced, users can generate optimized or channel-specific variants for one or multiple assets directly from the search results. This workflow ensures high-quality inputs and consistently better optimization outcomes.
+Use Content Optimization prompts by searching for the right assets through the [Discovery Agent](/help/ai-in-aem/agents/discovery/using.md). Once the relevant images are surfaced, users can generate optimized or channel-specific variants for one or multiple assets directly from the search results. This workflow ensures high-quality inputs and consistently better optimization outcomes. [See the complete list of available optimizations](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/).
 
 * **High-resolution rendition creation**
 
@@ -139,7 +141,11 @@ When you specify an optimization prompt, the Content Optimization Agent returns 
 
 * **Videos**: The response provides options to open the Dynamic Media URL or download the optimized video.
 
+![Content Optimization results](/help/ai-in-aem/agents/content-optimization/assets/download-content-optimization.png)
+
 These results make it easy to review the optimized output and immediately use it across downstream channels or workflows.
+
+<!--
 
 
 ## Prompting best Practices {#prompting-best-practices-content-optimization-agent}
@@ -149,6 +155,8 @@ The following are some of the prompting best practices:
 * Be explicit about the enhancement you want the Content Optimization Agent to apply. Clearly state the transformation or adjustment you expect. Precise instructions help the agent produce accurate and predictable results. For example, Instead of `Make it good quality`, specify `Create a JPEG image with 90% quality`.
 
 * Provide detailed parameters whenever possible. The more context you give, such as dimensions, format, quality, placement, or color values, the more tailored the output is.
+
+-->
 
 
 
