@@ -1,12 +1,13 @@
 ---
 title: Discovery Agent Overview
-description: Learn how to use Discovery Agent to deliver AEM content on demand through natural, conversational prompts for a streamlined, click-free discovery experience
+description: Learn how to use the Discovery Agent to deliver relevant AEM content on demand through natural, conversational prompts for a streamlined, click-free discovery experience.
+feature: Edge Delivery Services, Agentic AI
+role: User, Admin, Architect, Developer
 ---
 
 # Discovery Agent {#discovery-agent}
 
 The Discovery Agent delivers AEM content on demand through natural, conversational prompts for a streamlined, click-free discovery experience. It intelligently searches across Assets, Content Fragments, and Adaptive Forms to deliver relevant materials such as images, videos, PDF documents, articles, and form templates. Using natural language, you can search for content without building complex queries or applying filters in the AEM Assets interface. Based on your prompt, the agent returns curated results along with asset metadata and delivery URLs, ready to be embedded in other applications.
-
 
 Some of the key benefits of Discovery Agent include:
 
@@ -18,13 +19,15 @@ Some of the key benefits of Discovery Agent include:
 
 * **Consistent Content Utilization**: Ensures reuse of approved assets and fragments, maintaining brand consistency across channels.
 
-
+>[!IMPORTANT]
+>
+>AI-generated responses may be inaccurate or misleading. Be sure you double-check suggested fixes and responses. 
+>
+>See also [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html). 
 
 ## Skills {#skills-discovery-agent}
 
 The Discovery Agent provides the following skills:
-
-
 
 * **Natural language content discovery**  
   The Discovery Agent enables users to find relevant assets, content fragments, and adaptive forms within Adobe Experience Manager (AEM) using simple natural language prompts—no complex search queries required.
@@ -36,7 +39,6 @@ The Discovery Agent provides the following skills:
 * **Folder-based content discovery:**  
   The Discovery Agent can identify assets by interpreting natural language prompts that reference folder names in AEM. Users can simply mention the folder in their prompt, without manually navigating through the repository, significantly reducing the number of clicks needed to locate the right content.
 
-
 ## Personas {#personas-discovery-agent}
 
 ### Campaign Managers {#campaign-managers}
@@ -47,7 +49,6 @@ The Discovery Agent provides the following skills:
 
   Discovery Agent allows Channel Marketers to efficiently find relevant assets to create cohesive, multi-channel experiences.
 
-
 ### DAM Librarians {#dam-librarians}
 
 The DAM Librarians can flag assets that are missing the metadata standards set by the organization, supporting consistent governance and ensuring assets remain complete and ready for use across channels.
@@ -56,7 +57,6 @@ The DAM Librarians can flag assets that are missing the metadata standards set b
 
 Agencies and Partners can easily find brand-approved assets within Content Hub and reuse them to accelerate creative work while staying aligned with brand standards.
 
-
 ## How to access Discovery Agent? {#access-discovery-agent}
 
 You can access AEM Business Agents via AI Assistant. Log on to experience.adobe.com and you can start interacting with AI Assistant by specifying your prompt in natural language using the search box:
@@ -64,7 +64,6 @@ You can access AEM Business Agents via AI Assistant. Log on to experience.adobe.
 ![Access Discovery Agent](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
 
 For information on the MCP endpoint to access Discovery Agent, contact Adobe Support.
-
 
 ## Common use cases and sample prompts {#use-cases-prompts}
 
@@ -75,7 +74,7 @@ For information on the MCP endpoint to access Discovery Agent, contact Adobe Sup
    The Discovery Agent uses natural language prompts to find assets associated with specific tags in the AEM repository, helping users quickly access content organized according to their organization's taxonomy.
 
    Sample prompt:
-   
+
    Show images tagged `office` in folder `WKND`.
 
 **Folder-based content discovery:**  
@@ -131,7 +130,6 @@ Sample prompts:
 
 Note: Form discovery currently supports Edge Delivery Services forms only and tag-based search is not available for forms at this time.
 
-
 ## Search Results {#discovery-agent-search-results}
 
 ### Assets {#discovery-agent-search-results-assets}
@@ -150,7 +148,6 @@ You can use these asset details to quickly evaluate if an asset meets the requir
 >
 >The [Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md) field displays in the search results only if the asset is published and you have a valid Dynamic Media license. Similarly, [Dynamic Media with OpenAPI URL](/help/assets/dynamic-media-open-apis-overview.md) field displays only if you have a valid Dynamic Media license and Dynamic Media with OpenAPI is enabled for your AEM as a Cloud Service instance.
 
-
 ### Content Fragments {#discovery-agent-search-results-content-fragments}
 
 The Discovery Agent provides full-text search capabilities for Content Fragments, returning the top 20 results that best match the specified prompt.. Each result includes Content Fragment name along with key metadata fields such as Content Fragment path, creator, creation date, variations, last modifier, and last modified date fields.
@@ -159,7 +156,6 @@ The Discovery Agent provides full-text search capabilities for Content Fragments
 
 You can click the Content Fragment path to seamlessly navigate to the Content Fragment location within AEM.
 
-
 ## Prompting best practices {#prompting-best-practices-discovery-agent}
 
 Specify concise details in your natural language prompts so that the agent can return accurate and relevant results. The more clearly you describe what you are looking for, the better the agent can refine and narrow the output. For example, you can:
@@ -167,6 +163,4 @@ Specify concise details in your natural language prompts so that the agent can r
 * Define asset metadata such as tags, folder names, creation dates, publish status, author names in your prompts to filter assets.
 
 * Use your organization-specific metadata, such as categories (running shoes, electronics), seasons (autumn, spring), events (black Friday, product launch), and channels (Web, Email, Print) to further filter content.
-
-
 
