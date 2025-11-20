@@ -21,8 +21,11 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming New Features {#what-is-new}
 
-* TBD
+* A contextual menu is now available on the structured tree on right-click.
+* A hotkey was added to duplicate components.
 
 ## Upcoming Improvements {#other-improvements}
 
-* TBD
+* An issue with the RTE not saving properly on canvas was resolved.
+* Content picker folder tree clipping was fixed.
+* `componentId` is now provided during add action.
