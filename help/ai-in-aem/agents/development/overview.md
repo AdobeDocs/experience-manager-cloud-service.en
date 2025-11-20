@@ -11,7 +11,7 @@ The Development Agent helps AEM developers and administrators create, debug, dep
 
 Currently, the agent can retrieve pipeline statuses and help you troubleshoot failing build steps by suggesting fixes, saving time when debugging AEM as a Cloud Service deployments to development, stage, and production environments. It examines build logs and related code to recommend a fix that you can apply manually. 
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >AI-generated responses may be inaccurate or misleading. Be sure you double-check suggested fixes and responses. 
 >
