@@ -20,9 +20,9 @@ These business agents are available in Adobe Experience Manager (AEM) as a Cloud
 >
 >To use the agents you will required to enroll.
 
-## Production Agent {#production-agent}
+## Experience Production Agent {#experience-production-agent}
 
-The [Production Agent](/help/ai-in-aem/agents/production/overview.md) automates high effort and high-volume tasks. Empowering teams and turning manual, weeks-long processes into fast, AI-assisted workflows that keep every experience current and consistent helping the business achieve their goals.
+The [Experience Production Agent](/help/ai-in-aem/agents/production/overview.md) automates high effort and high-volume tasks. Empowering teams and turning manual, weeks-long processes into fast, AI-assisted workflows that keep every experience current and consistent helping the business achieve their goals.
 
 ## Content Optimization Agent {#content-optimization-agent}
 
