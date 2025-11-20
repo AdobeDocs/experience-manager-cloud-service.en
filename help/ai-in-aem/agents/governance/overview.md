@@ -1,6 +1,6 @@
 ---
 title: Governance Agent Overview
-description: Learn what AEM's Governance Agent
+description: Learn how the AEM Governance Agent safeguards brand integrity and compliance across AEM
 feature: Edge Delivery Services, Agentic AI
 role: Admin, Architect, Developer
 ---
@@ -20,8 +20,7 @@ By combining these features, the Governance Agent reduces risk and enables fast,
 
 ### Brand Governance {#brand-governance}
 
-The governance agent can validate content against brand guidelines to ensure consistency across all digital experiences. It uses pre-ingested brand rules, such as tone, claims, logo usage, typography, and imagery. It operates in real-time within the chat, editors 
-and batch mode in Experience Hub, making it ideal for AI-generated content, site migrations, and brief-based site creation. 
+The governance agent can validate content against brand guidelines to ensure consistency across all digital experiences. It uses pre-ingested brand rules, such as tone, claims, logo usage, typography, and imagery. It operates in real-time within the chat, editors and batch mode in Experience Hub, making it ideal for AI-generated content, site migrations, and brief-based site creation. 
 
 ![Brand Governance Overview](/help/ai-in-aem/agents/governance/assets/brand-governance.png)
 
@@ -52,7 +51,7 @@ In Content Hub, the governance agent ensures that only the right people access t
 
 Using the agent, you can manage your Assets digital rights across your content ecosystem. It controls permissions and usage rights at a granular level, ensuring that assets are accessed and used only within defined compliance boundaries. This delivers peace of mind, protecting intellectual property, reducing regulatory risk, and maintaining brand integrity. By automating rights enforcement, teams can collaborate securely and confidently, accelerating content distribution without compromising security or compliance.
 
-![DRM Management Oveerview](/help/ai-in-aem/agents/governance/assets/drm-management.png)
+![DRM Management Overview](/help/ai-in-aem/agents/governance/assets/drm-management.png)
 
 **Prompt Examples:**
 
@@ -61,5 +60,4 @@ Using the agent, you can manage your Assets digital rights across your content e
 * *Which assets recently expired?*
 * *Find me assets without an expiry date*
 * *Show me all assets in /content/dam/products that are about to expire in the next 14 days*
-
 
