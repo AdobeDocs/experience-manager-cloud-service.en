@@ -42,9 +42,9 @@ In Content Hub, the governance agent ensures that only the right people access t
 
 **Prompt Examples:**
 
-* *Show all current Content Hub ABAC rules.*
+* *Show all existing Content Hub ABAC rules.*
 * *Create a rule that gives the "Marketing" group access to all assets.* 
-* *Give Sales access to assets where marketing:segment equals EMEA.*
+* *Give the Sales group access to assets where marketing:segment equals EMEA.*
 * *Delete all the rules which gives access to external-agency*
 * *What is ABAC in Content Hub and what can you help me do?*
 
