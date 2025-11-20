@@ -99,34 +99,3 @@ Developers extend and customize AEM's capabilities to meet organizational needs.
 * Enable authors with flexible, reusable components.
 * Integrate AEM with other systems (CRM, commerce, analytics
 
-## Activation {#activation}
-
-To activate and gain access to the Production Agent you need to email Adobe. To get started you can contact:
-
-* `experience-production-agent@adobe.com`
-* or reach out to your account team
-
-To speed up the process it helps to provide the following information:
-
-* For AEM as a Cloud Service
-  * You need to provide your:
-    * Organization ID
-    * `product_id` 
-    * `profile_id`
-
-  * These values could be found using the following steps:
-    * Your administrator needs to visit <https://adminconsole.adobe.com/>
-    * Select **Adobe Experience Manager as a Cloud Service**
-    * Select the appropriate AEM instance
-    * Select the profile that allows read and write operations for the content in question
-    * Grab the browser URL
-    * Extract `product_id` and `profile_id` from the URL. 
-      For example, <https://adminconsole.adobe.com/products/profiles/users>
-
-* Edge Delivery Document Authoring
-  * Provide your Adobe team with the following information:
-    * Relevant domains
-    * Relevant Github information:
-      * Org
-      * Repo
-      * Branch
