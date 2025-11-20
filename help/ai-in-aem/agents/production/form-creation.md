@@ -2,7 +2,7 @@
 title: Form creation skill
 description: Learn about the Experience Production Agent's form creation skill and how to use natural language to create forms from scratch.
 feature: Edge Delivery Services, Agentic AI
-role: Admin, Architect, Developer
+role: User, Admin, Architect, Developer
 ---
 
 # Form Creation Skill {#form-creation-skill}

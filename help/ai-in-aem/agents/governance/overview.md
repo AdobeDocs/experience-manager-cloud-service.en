@@ -2,7 +2,7 @@
 title: Governance Agent Overview
 description: Learn how the AEM Governance Agent safeguards brand integrity and compliance across AEM
 feature: Edge Delivery Services, Agentic AI
-role: Admin, Architect, Developer
+role: User, Admin, Architect, Developer
 ---
 
 # Governance Agent Overview {#governance-agent}
