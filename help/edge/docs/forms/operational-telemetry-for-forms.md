@@ -4,7 +4,7 @@ description: Operational Telemetry for Edge Delivery Services for AEM Forms as a
 feature: Edge Delivery Services
 hide: yes
 hidefromtoc: yes
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 ---
 # Operational Telemetry for Edge Delivery Services for AEM Forms as a Cloud Service

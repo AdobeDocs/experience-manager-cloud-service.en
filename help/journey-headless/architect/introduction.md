@@ -4,7 +4,7 @@ description: An introduction to using the features of Adobe Experience Manager a
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Content Modeling for AEM as a Headless CMS - An Introduction {#architect-headless-introduction}
 

@@ -53,6 +53,7 @@ When you submit the form, the data is saved in the specified Microsoft&reg; Shar
 >[!NOTE]
 >
 > In Microsoft&reg; SharePoint List, the following column types are not supported:
+>
 > * image column
 > * metadata column
 > * person column

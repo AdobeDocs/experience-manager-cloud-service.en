@@ -14,6 +14,7 @@ exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
 As an Adobe Experience Manager (AEM) Forms administrator, you can publish forms from your author instance to Experience Manager Forms. You also have the option to schedule the publication of a form or folder for a later date or time. Once published, users can access and fill out the forms.
 
 In Experience Manager Forms, you can publish a form using one of the following methods:
+
 * [Publish option](#publish-forms-using-the-publish-option) 
 * [Manage Publication option](#publish-forms-using-the-manage-publication-option)
 

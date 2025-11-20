@@ -2,7 +2,7 @@
 title: Rule Editor for Edge Delivery Services Forms
 description: Create dynamic, intelligent forms using the Rule Editor in Universal Editor. Add conditional logic, calculations, and interactive behaviors without coding.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 ---
@@ -529,7 +529,7 @@ Figure: Adding custom functions to the functions.js file
 ![Custom Function in Rule Editor](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 Figure: Selecting and configuring custom functions in the Rule Editor interface
 
->![NOTE]
+>[!NOTE]
 >
 > The enhancements to the Rule Editor, including custom event-based rules, support for dynamic variables, and API integration, are also available for Edge Delivery Services Forms. To learn more about these enhancements and how to use them, see the [Rule Editor Enhancements and Use Cases](/help/forms/rule-editor-enhancements-use-cases.md) article. 
 

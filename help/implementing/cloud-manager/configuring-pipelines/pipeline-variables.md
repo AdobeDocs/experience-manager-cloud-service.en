@@ -4,7 +4,7 @@ description: Learn how you can use pipeline variables in Cloud Manager to manage
 exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Pipeline variables in Cloud Manager {#configuring-pipeline-variables}
 

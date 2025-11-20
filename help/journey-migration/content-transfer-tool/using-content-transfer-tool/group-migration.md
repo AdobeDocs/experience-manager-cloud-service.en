@@ -59,12 +59,14 @@ With this setting disabled, groups will not be migrated, and there will be no Pr
 ## Principal Migration Report and User Report {#principal-migration-report}
 
 When groups are included during migration (the default), a Principal Migration Report is saved which outlines what happens to each group during the migration.  To download this report after a successful ingestion:
+
 * In CAM, go to Content Transfer and select Ingestion Jobs.
 * Click the ellipsis (...) on the line of the Ingestion in question, and choose "View principal summary".
 * On the dialog that appears, select select "Principal Migration Report" from the dropdown list under "Download a file..." and click the Download button.
 * Save the resulting CSV file.
 
 Some of the information recorded per group is:
+
 * If migrated, the path to the first ACL or CUG that caused the group to be migrated.
 * Whether the group was previously migrated; if the current ingestion was a non-wipe ingestion, some groups may have been migrated during a previous ingestion.
 * Whether the group is a built-in group; these groups are not migrated because they are always on the target AEMaaCS environment.

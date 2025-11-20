@@ -6,7 +6,7 @@ version: Experience Manager as a Cloud Service
 activity: setup
 feature: Commerce Integration Framework
 topic: Commerce
-role: Architect, Developer
+role: Developer, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg

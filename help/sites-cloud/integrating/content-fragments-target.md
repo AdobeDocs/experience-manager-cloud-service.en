@@ -124,18 +124,18 @@ You can now select the new configuration for editing.
 
    ![config-target-settings-dialog](assets/config-target-settings-dialog.png)
 
-   <!-- Can this still occur?
+<!-- 
+Can this still occur?
 
-   >[!NOTE]
-   >
-   >When configuring A4T with AEM, you may see a Configuration reference missing entry. To be able to select the analytics framework, do the following:
-   >
-   >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
-   >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
-   >1. Set the property **disable** to **false**.
-   >1. Select **Save All**.
-
-   -->
+>[!NOTE]
+>
+>When configuring A4T with AEM, you may see a Configuration reference missing entry. To be able to select the analytics framework, do the following:
+>
+>1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
+>1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
+>1. Set the property **disable** to **false**.
+>1. Select **Save All**.
+-->
 
 1. In the **Adobe Target Settings** dialog, provide values for these properties.
 
@@ -151,9 +151,9 @@ You can now select the new configuration for editing.
 
    * **A4T Analytics Cloud Configuration**: Select the Analytics cloud configuration that is used for target activity goals and metrics. You need this if you are using Adobe Analytics as the reporting source when targeting content.
 
-     <!-- Is this needed?
-     If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
-     -->
+<!-- Is this needed?
+If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
+-->
 
    * **Use accurate targeting:** By default this check box is selected. If selected, the cloud service configuration will wait for the context to load before loading content. See note that follows.
 
@@ -188,7 +188,7 @@ You can now select the new configuration for editing.
      >
      >Accurate targeting means that the cloud service configuration waits for the context to load before loading content. As a result, in terms of performance, accurate targeting may create a few millisecond delay before loading content.
      >
-     >Accurate targeting is always enabled on the author instance. However, on the publish instance you can opt to turn accurate targeting off globally by clearing the check mark next to Accurate Targeting in the cloud service configuration (**http://localhost:4502/etc/cloudservices.html**). You can also still turn accurate targeting on and off for individual components regardless of your setting in the cloud service configuration.
+     >Accurate targeting is always enabled on the author instance. However, on the publish instance you can opt to turn accurate targeting off globally by clearing the check mark next to Accurate Targeting in the cloud service configuration (**`http://localhost:4502/etc/cloudservices.html`**). You can also still turn accurate targeting on and off for individual components regardless of your setting in the cloud service configuration.
      >
      >If you have ***already*** created targeted components and you change this setting, your changes do not affect those components. You must make any changes to those component directly.
 

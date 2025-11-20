@@ -5,7 +5,7 @@ index: yes
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Add a production pipeline {#configure-production-pipeline}

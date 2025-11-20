@@ -58,7 +58,7 @@ To connect AEM Forms to your Microsoft&reg; OneDrive Storage:
     >[!NOTE]
     >
     >* By default, `forms-ootb-storage-adaptive-forms-submission` is present at OneDrive Container. 
-    > * Create a folder as `forms-ootb-storage-adaptive-forms-submission`, if not already present by clicking **Create Folder**.
+    >* Create a folder as `forms-ootb-storage-adaptive-forms-submission`, if not already present by clicking **Create Folder**.
 
 Now, you can use this OneDrive storage configuration for the submit action in an Adaptive Form. 
 

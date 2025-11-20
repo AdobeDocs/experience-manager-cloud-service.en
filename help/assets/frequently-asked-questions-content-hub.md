@@ -23,7 +23,7 @@ Enabling Content Hub on a production program deploys it a part of production inf
 
 If you do not want to provide Content Hub to your users once it is deployed, do not assign any users to the Content Hub product profile in Admin Console. See [Deploy Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile) for details.
 
-## How can I evaluate Content Hub in my organization given it is only available for production programs / production authoring environments? {#how-can-i-evaluate-content-hub}
+## How can I evaluate Content Hub in my organization ? {#how-can-i-evaluate-content-hub}
 
 Content Hub is a feature that Adobe provides and maintains and it does not have any custom code that would require typical validation via dev/stage/production. Additionally, access to the feature for users is fully controlled by the administrator, so you can evaluate it without exposing it to all users. 
 
@@ -37,8 +37,6 @@ It is possible to evaluate Content Hub without impacting your users/production c
 * After the evaluation is completed, AEM Users in author instance can remove approval from test assets, approve production assets for Content Hub, and then Admin Console administrator can add all users who need access to Content Hub and approved content. Congratulations, your Content Hub is live now.
 
 There is an early access program to Content Hub on Sandbox programs and their author production environments. For more information, see [Introduction to Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). To learn more about the early access program, reach out to your Adobe account team. 
-
-Content Hub is not yet available for non-production environments (stage & dev). Expected availability for stage/dev environments for Assets Ultimate is March 2025.
 
 ## Why do not I see any assets after logging on to Content Hub? {#no-assets-in-content-hub}
 

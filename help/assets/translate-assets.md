@@ -126,9 +126,11 @@ If you use this option, the translation workflow runs for assets that you add to
 1. Select **[!UICONTROL Create & Translate]** at the bottom.
 1. From the **[!UICONTROL Target Languages]** list, select the languages for which you want to create a folder structure.
 1. From the **[!UICONTROL Project]** list, select **[!UICONTROL Add to existing translation project]** to run the translation workflow on the folder.
+
    >[!NOTE]
    >
    >If you choose the **[!UICONTROL Add to existing translation project]** option, your translation project is added to a pre-existing project only if your project settings exactly match the settings of the pre-existing project. Otherwise, a new project is created.
+
 1. From the **[!UICONTROL Existing translation project]** list, select a project to add the asset for translation.
 1. Select **[!UICONTROL Create]**. The assets to be translated are added to the target folder. The updated folder is listed under the **[!UICONTROL Language Copies]** section.
 1. Navigate to the Projects console, and open the existing translation project you added to.

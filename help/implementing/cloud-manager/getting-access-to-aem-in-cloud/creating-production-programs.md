@@ -4,7 +4,7 @@ description: Learn how to use Cloud Manager to create your own production progra
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Create production programs {#create-production-program}

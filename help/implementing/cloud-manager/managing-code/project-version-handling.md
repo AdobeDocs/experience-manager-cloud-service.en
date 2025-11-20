@@ -4,7 +4,7 @@ description: For staging and production deployments of AEM as a Cloud Service, C
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Maven Project Version Handling {#maven-project-version-handling} 
@@ -24,8 +24,8 @@ If the original version does meet these criteria, then the generated version is 
 | Version | Version in `pom.xml` | Comment |
 |---|---|---|
 | `1.0.0` |  `1.0.0.2019_0926_121356_0000020490` |  Properly formed original version |
-| `1.0.0-SNAPSHOT` | `2019.926.121356.0000020490` | Snapshot version, overwritten | 
-| `1` | `2019.926.121356.0000020490` |  Incomplete version, overwritten | 
+| `1.0.0-SNAPSHOT` | `2019.926.121356.0000020490` | Snapshot version, overwritten |
+| `1` | `2019.926.121356.0000020490` |  Incomplete version, overwritten |
 
 >[!NOTE]
 >

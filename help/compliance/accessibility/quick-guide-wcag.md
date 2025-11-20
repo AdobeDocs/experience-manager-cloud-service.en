@@ -3,7 +3,7 @@ title: A Quick Guide to WCAG 2.1
 description: A Quick Guide to the Web Content Accessibility Guidelines (WCAG) version 2.1.
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
 feature: Compliance
-role: Admin, Architect, Developer, Leader
+role: Admin, Developer, Leader
 ---
 # A Quick Guide to WCAG 2.1 {#quick-guide-to-wcag}
 
@@ -60,8 +60,8 @@ WCAG 2.1 consists of four key principles for accessible design, sometimes referr
 1. **Robust**: is the web content available in the intended way across a suitably wide range of browsing environments, including legacy and emerging browsing environments?
 
 To elaborate:
-* Each **principle** consists of one or more **guidelines**.
 
+* Each **principle** consists of one or more **guidelines**.
 * Guidelines are worded as instructions, which are either positive (Do this...) or negative (Do not do this...).
 * Guidelines are numbered 1.1 to 4.1, where the first number corresponds to the parent principle.
 * Each guideline consists of one or more **success criteria**.
@@ -79,6 +79,7 @@ While WCAG 2.1 itself is a stable document, and will not change, most of these s
 ### WCAG 2.1 Resources {#wcag-resources}
 
 This list is not intended to be exhaustive, it provides an introduction to the resources available:
+
 * [An outline of all WCAG related documents](https://www.w3.org/WAI/standards-guidelines/wcag/)
 * [A summary of the different documents](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 * [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)

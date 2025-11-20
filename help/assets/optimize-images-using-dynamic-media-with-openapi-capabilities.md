@@ -71,6 +71,7 @@ The preset thumbnail bundles the same image modifier settings.
 
 Authors can select [!DNL Image Presets] during page editing in [!DNL AEM Sites] authoring page when [!DNL Dynamic Media] support is enabled. 
 Execute the following steps to use image presets in your authoring page:
+
 1. Navigate to your Sites authoring page. 
 1. Execute the steps in [Access remote assets in AEM Page Editor](/help/assets/integrate-remote-approved-assets-with-sites.md#access-remote-assets-in-aem-page-editor) section to use the [!DNL Asset Selector] panel for selecting an asset.
 1. In the [!DNL asset selector] panel, scroll down to **[!UICONTROL Preset type]**, and specify `Preset=Preset Name` in the **[!UICONTROL Image Modifiers]** field and click **[!UICONTROL Done]**.
@@ -108,7 +109,7 @@ Disable `auto-format` by setting the query parameter to `false`, then specify th
 
 Images are automatically optimized based on the client's network conditions to ensure faster delivery and smooth loading. The [Quality](#quality-parameter) and [Max-quality](#max-quality-parameter) parameters automatically adjusts the quality by controlling the image compression levels, with values ranging from 1 to 100. 
 
-See the following key behaviors of `quality` and `max-quality `parameters:
+See the following key behaviors of `quality` and `max-quality` parameters:
 
 * If both [!DNL quality] and [!DNL max-quality] are specified, [!DNL quality] takes precedence.
 * If only [!DNL quality] is specified, the quality is delivered regardless of load time based on network speed.

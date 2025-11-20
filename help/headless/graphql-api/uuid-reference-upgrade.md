@@ -115,7 +115,7 @@ The content upgrade can be managed using the endpoint: `/libs/dam/cfm/maintenanc
 | interval | `10`| Interval in seconds, after which the next segment of Content Fragments, or models is upgraded. |
 | mode | `replicate`, `noReplicate`| <ul><li>`replicate`: replicates the same job on all AEM Publish instances</li><li>`noReplicate`: only runs the job on AEM Author instances</li></ul> |
 | dryRun | `true`, `false`| <ul><li>`false`: simulate the content upgrade, without saving any content changes</li><li>`true`: perform the content upgrade, and save content changes</li></ul> |
-| **Response details** | **Value** | | 
+| **Response details** | **Value** | |
 | jobId | `UUID`| The ID of the job that executes the content upgrade.<ul><li>This ID is required in any subsequent calls related to this execution.</li><li>If the `mode` value is set to `replicate`, execution on AEM Publish instances also need to be under the same `jobId`.</li></ul> |
 | parameters | The content upgrade parameters | These include the initial parameters provided to start the content upgrade, and some internal defaults. |
 
@@ -180,7 +180,7 @@ Content-Length: 386
 | **Request parameters** | **Value** | |
 | action | status | |
 | jobId | `<UUID>` | The `jobId` that was returned from the call to start the content upgrade. |
-| **Response details** | **Value** | | 
+| **Response details** | **Value** | |
 | status | JSON values | Contains the detailed status of the content upgrade:<ul><li>Updated after every interval (seconds).</li><li>`uuidUpgradeService` execution has two phases:<ol><li>phase-0 to upgrade content fragment models</li><li>phase-1 to upgrade content fragments</li></ol></li><li>In each phase, statistics are updated after every interval.</li><li>"jobStatus": "COMPLETED" marks the upgrade as successfully completed.</li><li>Other status values are self-explanatory.</li></ul> |
 
 ### Example Content Upgrade Status Request {#example-content-upgrade-status-request}
@@ -297,7 +297,7 @@ com.adobe.cq.dam.cfm.impl.servicing.PhaseChainProcessor Phase phase-x, processed
 | **Request parameters** | **Value** | |
 | action | abort | |
 | jobId | `<UUID>` | The `jobId` that was returned from the call to start the content upgrade. |
-| **Response details** | **Value** | | 
+| **Response details** | **Value** | |
 | status | JSON values | Contains the detailed status of the content upgrade:<ul><li>The status to note is "jobStatus": "ABORTED".<br>After an abort action, any pending segments of data will not be processed.</li><li>If the jobStatus is "COMPLETED" before an abort, the call does not have any effect.</li></ul> |
 
 ### Example Abort a Content upgrade Request {#example-abort-content-upgrade-request}

@@ -62,7 +62,7 @@ You can configure a CDN error page to replace the default, unbranded page. This 
 
 Setting TTL using the HTTP Cache-Control header is an effective approach to balance content delivery performance and content freshness. However, in scenarios where it is critical to serve updated content immediately, it may be beneficial to purge the CDN cache directly.
 
-Read about [configuring a purge API token](/help/implementing/dispatcher/cdn-credentials-authentication.md/#purge-API-token) and [purging cached CDN content](/help/implementing/dispatcher/cdn-cache-purge.md).
+Read about [configuring a purge API token](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) and [purging cached CDN content](/help/implementing/dispatcher/cdn-cache-purge.md).
 
 ### Basic authentication at the CDN {#basic-auth}
 

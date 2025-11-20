@@ -175,3 +175,4 @@ The API reference documentation provides detailed information about all the para
 >* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Communication Processing - Synchronous APIs](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Communication Processing - Batch APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Communication Processing - On-Demand APIs](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

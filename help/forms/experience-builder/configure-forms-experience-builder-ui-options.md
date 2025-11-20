@@ -4,7 +4,7 @@ description: Learn how to configure and customize the Forms Experience Builder i
 hide: yes
 index: no
 hidefromtoc: yes
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: d481e705-62bf-47f7-a832-1a005ec5ec59
 ---
 # Configure Forms Experience Builder UI options

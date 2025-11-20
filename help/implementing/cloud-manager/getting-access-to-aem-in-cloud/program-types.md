@@ -4,7 +4,7 @@ description: Learn about the hierarchy of Cloud Manager and how the different ty
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Programs and program types {#understanding-programs} 

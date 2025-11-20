@@ -3,7 +3,7 @@ title: Add a Domain Mapping
 description: Learn about how to add a domain mapping for an Edge Delivery site or a Cloud Manager environment.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
 ---
 
@@ -35,7 +35,7 @@ See also [Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed).
    | CDN type | Configuration details |
    | --- | --- |
    | Adobe managed CDN (Recommended)| Under **Configuration details**, do the following:<br>a. In the **Domain** drop-down list, select the domain name that you want to use.<br>No verified domains available in the drop-down list? See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).<br>b.<!-- In the **SSL certificate** drop-down list, select a certificate that you want to use.<br>No SSL certificates available in the drop-down list? See [Add an SSL certificate](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).--> |
-   | Other CDN provider | Select this option if you are using your own CDN provider and not the Adobe managed CDN that is available to you.<br>Under **Configuration details**, in the **Domain** drop-down list, select the domain name that you want to use.<br>No verified domains available in the drop-down list? See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). | 
+   | Other CDN provider | Select this option if you are using your own CDN provider and not the Adobe managed CDN that is available to you.<br>Under **Configuration details**, in the **Domain** drop-down list, select the domain name that you want to use.<br>No verified domains available in the drop-down list? See [Add a custom domain name](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 
    ![Map Domain to CDN dialog box with Adobe managed CDN radio button selected](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-adobe-managed-cdn.png)
 

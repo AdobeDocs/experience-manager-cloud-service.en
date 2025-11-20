@@ -22,6 +22,8 @@ The Template Lock feature in the Interactive Communication (IC) Editor allows te
 
 When applied, locked components appear visually distinct and cannot be modified by downstream authors or contributors, depending on the lock type set. This feature helps maintain brand standards, data integrity, and layout uniformity across all derived communications.
 
+![Find IC Doc](/help/forms/interactive-communication/assets/template-lock.png)
+
 ## 2. Lock Types
 
 Template authors can apply Content and Layout Locks, individually or together to control content and layout changes in Interactive Communication templates:
@@ -50,15 +52,29 @@ When applied, authors cannot:
 
 - Resize the element's width or height
 
-## 3. Behavior in Derived Communications
+## 3. How to Use Template Lock in Interactive Communication Editor
 
-- When a communication is created from a locked template, the locked elements appear as read-only in the IC Editor for communication authors.
+Follow the below steps to apply Content or Layout Locks in your Interactive Communication (IC) template:
 
-- Components with content lock cannot have their inner properties or bindings changed.
+1. Open Your Template
+ Open or create a Template, follow the guide [Create an Interactive Communication Template](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
-- Components with layout lock cannot be moved or resized.
+1. Select the Component
+Click the component (text box, image, or subform) you want to restrict.
 
-This allows template creators to maintain control over design and structure while enabling other users to focus on variable content and data-driven customization.
+1. Access Lock Options
+In the Properties panel, go to the Locking section.
+
+1. Apply Locks
+
+    1. Content Lock: Prevents text, style, and data edits.
+
+    1. Layout Lock: Restricts movement and resizing.
+
+    1. You can enable both for full protection.
+
+1. Save and Verify
+Save the template and create a new IC based on it to confirm that locked elements cannot be modified.
 
 ## 4. Best Practices
 

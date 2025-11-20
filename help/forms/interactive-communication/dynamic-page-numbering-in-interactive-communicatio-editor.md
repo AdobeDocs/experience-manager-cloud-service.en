@@ -20,6 +20,25 @@ role: User, Developer, Admin
 
 The Dynamic Page Numbering feature in Interactive Communication (IC) allows authors to automatically display page numbers in their PDF output. Page numbering can be enabled at the master page level, ensuring consistent numbering across all associated design pages. This helps maintain clear page tracking and a professional layout throughout multipage communications.
 
+![Find IC Doc](/help/forms/interactive-communication/assets/dynamic-page.png)
+
+## How to Use Dynamic Page Numbering in Interactive Communication Editor
+
+1. Open the Interactive Communication Editor
+Open your Interactive Communication project in the IC Editor.
+
+1. Go to Master Page
+    Page numbering can be enabled only in the Master Page. Navigate to the master page of your communication.
+
+1. Enable Page Numbering
+    In the Properties panel, turn on the Enable Page Number toggle. This automatically adds page numbers to all associated pages.
+
+1. Customize Placement
+ The Page Number component can be placed anywhere on the canvas after being dropped and customized freely using standard text properties.
+
+1. Preview in PDF
+ Page numbers appear only during PDF preview, displaying dynamic numbering on every page.
+
 ## Key Capabilities
 
 - **Master Page Configuration:**

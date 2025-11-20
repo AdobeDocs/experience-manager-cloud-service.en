@@ -4,7 +4,7 @@ description: Learn about the New Relic One application performance monitoring (A
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # New Relic One {#user-access}

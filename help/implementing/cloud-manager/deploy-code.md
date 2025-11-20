@@ -4,7 +4,7 @@ description: Learn how to deploy your code using Cloud Manager pipelines in AEM 
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Deploy your code {#deploy-your-code} 

@@ -4,7 +4,7 @@ description: Learn how the environments of a sandbox program automatically enter
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Hibernate and De-Hibernate Sandbox Environments {#hibernating-introduction}

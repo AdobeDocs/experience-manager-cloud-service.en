@@ -764,6 +764,7 @@ The solution in GraphQL means you can:
 >[!NOTE]
 >
 >A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>
 >* `_dynamicUrl` : a DAM asset
 >* `_dmS7Url` : a Dynamic Media asset
 > 
@@ -778,13 +779,17 @@ The structure and syntax is:
 * `format`: an enumeration with all supported formats by its extension: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL or WEBPLY
 * `seoName`: a string that is used as file name instead of the node name
 * `crop`: a frame sub structure, if width or height is omitted then the height or width is used as the same value
+
   * `xOrigin`: the x origin of the frame and is mandatory
   * `yOrigin`: the y origin of the frame and is mandatory
   * `width`: the width of the frame
   * `height`: the height of the frame
+
 * `size`: a dimension sub structure, if width or height is omitted then the height or width is used as the same value
+
   * `width`: the width of the dimension
   * `height`: the height of the dimension
+
 * `rotation`: an enumeration of all supported rotations: R90, R180, R270
 * `flip`: an enumeration of HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
 * `quality`: an integer from 1&ndash;100 notating the percentage of the image quality
@@ -974,6 +979,7 @@ The solution in GraphQL means you can:
 ### Sample query for Dynamic Media asset delivery by URL - Image Reference{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 The following is a sample query:
+
 * for multiple Content Fragments of type `team` and `person`, returning an `ImageRef`
 
 ```graphql
@@ -1001,6 +1007,7 @@ query allTeams {
 ### Sample query for Dynamic Media asset delivery by URL - Multiple References{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
 
 The following is a sample query:
+
 * for multiple Content Fragments of type `team` and `person`, returning an `ImageRef`, `MultimediaRef` and `DocumentRef`:
 
 ```graphql
@@ -1203,10 +1210,11 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
   * See [Sample Query for multiple Content Fragments, and their Variations, of a given Model](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
 
   >[!CAUTION]
+  >
   >The filter `includeVariations` and the system-generated field `_variation` cannot be used together in the same query definition.
 
 * If you want to use a logical OR:
-  * use ` _logOp: OR`
+  * use `_logOp: OR`
   * See [Sample Query - All Persons that have a name of "Jobs" or "Smith"](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
 
 * Logical AND also exists, but is (often) implicit

@@ -81,6 +81,7 @@ Create a `Get Information` form that retrieves values based on the input entered
 **Form Fields**
 
 Add the following fields to the form:  
+
 * **Enter Pet ID**: Textbox  
 * **Select Photo URLs**: Dropdown  
 * **Tags**: Panel  
@@ -96,7 +97,8 @@ Add the following fields to the form:
 
 **Configuring panels**  
 
-Set the panels as repetitive with the following constraints:  
+Set the panels as repetitive with the following constraints:
+
 * Minimum value: 1  
 * Maximum value: 4  
 

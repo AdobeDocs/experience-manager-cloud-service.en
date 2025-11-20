@@ -2,7 +2,7 @@
 title: Configure Submit Actions for AEM Forms with Edge Delivery Services
 description: Learn how to configure submit actions in AEM Forms using Edge Delivery Services. Choose between Forms Submission Service and AEM Publish Submit Action to handle form data securely and efficiently.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
 ---
 # Configure Submit Actions for AEM Forms

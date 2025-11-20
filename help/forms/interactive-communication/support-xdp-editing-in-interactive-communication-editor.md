@@ -20,6 +20,20 @@ role: User, Developer, Admin
 
 The Interactive Communication (IC) Editor now offers seamless **support for editing XDP (XML Data Package) files** within the authoring environment. This enhancement empowers authors to manage, modify, and maintain XDP templates effortlessly, without relying on external tools. With this capability, users can upload, view, and edit XDP files directly in the IC Editor, enabling a unified and efficient design-to-delivery workflow.
 
+## How to Use Support XDP Editing in Interactive Communication Editor
+
+![Find IC Doc](/help/forms/interactive-communication/assets/support-xdp.png)
+
+1. Navigate to **Forms > Forms & Documents**.
+
+1. Upload your .xdp file using the **Create > File Upload** option.
+
+1. Open the XDP in **Interactive Communication Editor**.
+
+1. Make necessary **design or data-binding** changes.
+
+1. Save your changes, updates are automatically reflected in the source XDP file.
+
 ## Key Capabilities
 
 - **Upload and Manage XDP Files:**
@@ -40,18 +54,6 @@ If a fragment is missing, the editor displays a **warning message** indicating t
 - **Fragment Reuse in Editor:**
 All existing XDP fragments appear in the **Fragments Panel** of the IC Editor.
 Authors can **drag and drop** these fragments directly onto the canvas. The references are preserved, ensuring that updates to fragments propagate across all XDPs using them.
-
-## Usage Example
-
-1. Navigate to **Forms > Forms & Documents**.
-
-1. Upload your .xdp file using the **Create > File Upload** option.
-
-1. Open the XDP in **Interactive Communication Editor**.
-
-1. Make necessary **design or data-binding** changes.
-
-1. Save your changes, updates are automatically reflected in the source XDP file.
 
 ## Benefits
 

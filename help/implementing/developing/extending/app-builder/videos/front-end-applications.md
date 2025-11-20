@@ -4,7 +4,7 @@ description: Learn how to build front-end App Builder applications.
 version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
-role: Developer, Architect
+role: Developer
 level: Beginner
 kt: 9459,9483
 thumbnail: 339244.jpg

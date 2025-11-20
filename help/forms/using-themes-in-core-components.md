@@ -201,7 +201,7 @@ You can also change the font, color, size, and other CSS properties of a specifi
 
    ![Edit Textbox CSS](/help/forms/assets/edit_color_textbox.png)
    
-   >![NOTE]
+   >[!NOTE]
    >
    > When a style is defined both at the theme and component level, the style defined at the component level takes priority. 
 
@@ -335,8 +335,8 @@ You require a repository to deploy the theme. Log in to your [AEM Cloud Manager 
    
    >[!NOTE]
    > 
-   > * You can use single repository for multiple themes. 
-   > * To deploy different themes, you have to create separate front-end pipelines. 
+   >* You can use single repository for multiple themes. 
+   >* To deploy different themes, you have to create separate front-end pipelines. 
    >* For example, you can use same repository, as `custom-canvas-theme-repo`, for Canvas theme, WKND theme, and EASEL theme. However, to deploy the themes, you need to create separate front-end pipelines. Future customizations for a specific theme are deployed using the corresponding front-end pipeline.
 
 ##### 5.2. Push the changes to the repository {#committing-the-changes}

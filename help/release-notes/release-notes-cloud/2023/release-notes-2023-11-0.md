@@ -121,6 +121,7 @@ Read about [Traffic Filter Rules](/help/security/traffic-filter-rules-including-
 ### Domain Mapping Early Adopter Program {#cdn-config-early-adopter}
 
 In addition to the recently released [Traffic Filter Rules (including WAF)](/help/security/traffic-filter-rules-including-waf.md), there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. We'd love to hear about your use cases, including:
+
 * 301/302 client-side redirects
 * proxying requests at the edge to arbitrary origins
 * URL transformations

@@ -55,7 +55,7 @@ Once the app is instrumented to work with the Universal Editor, the Universal Ed
 
 The UI is divided into these main areas.
 
-* [The Experience Cloud header](#experience-cloud-header)
+* [The Experience Platform Top Navigation Bar](#experience-cloud-header)
 * [The Universal Editor toolbar](#universal-editor-toolbar)
 * [The editor](#editor)
 * [The properties panel](#properties-rail)
@@ -136,6 +136,12 @@ Select the Undo or Redo buttons to undo or redo the last edit in the editor. Ple
 Select the authentication headers icon if you need to [set a custom authentication header for local development purposes](/help/implementing/universal-editor/developer-overview.md#auth-header).
 
 ![Authentication header settings button](assets/authentication-header-settings.png)
+
+#### Local Developer Login {#local-developer-login}
+
+Select the local developer login icon if you need to easily authenticate to your local AEM SDK [when developing locally.](/help/implementing/universal-editor/local-dev.md)
+
+![Local developer login button](assets/local-developer-login.png)
 
 #### Responsive Mode {#emulator}
 

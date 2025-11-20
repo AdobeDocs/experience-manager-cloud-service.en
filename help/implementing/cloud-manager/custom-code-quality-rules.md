@@ -4,7 +4,7 @@ description: Learn about Cloud Manager's custom code quality rules, based on Ado
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Custom code quality rules {#custom-code-quality-rules} 
 

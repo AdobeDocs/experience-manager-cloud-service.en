@@ -3,7 +3,7 @@ title: Edge Delivery Services Overview
 description: Understand how AEM as a Cloud Service can benefit from the performance and perfect Lighthouse scores offered by Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Edge Delivery Services Overview {#edge-delivery-services}
@@ -13,6 +13,7 @@ role: Admin, Architect, Developer
 >**Want to get hands-on right away?**
 >
 >If you want to get hands-on with Edge Delivery Services right away, you have two options.
+>
 >* [Start authoring right away with a pre‑built tutorial environment - fully configured and ready to go.](https://www.aem.live/developer/ue-trial)
 >* Dig in to more of the details and set up your own environment in less than 30 minutes by [checking out the tutorial on aem.live.](https://www.aem.live/developer/ue-tutorial)
 

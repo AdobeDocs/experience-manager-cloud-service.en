@@ -3,7 +3,7 @@ title: Split Stage-Only and Production-Only Pipelines
 description: Learn how you can split staging and production deployments using dedicated pipelines.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: no
 hidefromtoc: no
 index: yes

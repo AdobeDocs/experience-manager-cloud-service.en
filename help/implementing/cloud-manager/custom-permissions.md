@@ -4,7 +4,7 @@ description: Learn how you can use custom permissions to create custom permissio
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Custom Permissions {#custom-permissions}
@@ -160,7 +160,7 @@ The following terms are used in creating and managing custom permissions and pre
 | --- | --- |
 | Predefined Permissions | Predefined roles like **Business Owner** and **Deployment Manager** to govern various features of Cloud Manager. For details on pre-defined roles, see [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md). |
 | Custom Permissions | Cloud Manager features let users create permission profiles to define roles to govern the supported features of Cloud Manager. |
-| Product Profile | Created in the Admin Console to manage configurable permissions that are applicable to users who are part of the permission profile. | 
+| Product Profile | Created in the Admin Console to manage configurable permissions that are applicable to users who are part of the permission profile. |
 | Configurable Permission | Cloud Manager permissions that you can configure in the permission profile. |
 | Permission Item | A program, environment, or pipeline resource on which a permission can be applied. |
 

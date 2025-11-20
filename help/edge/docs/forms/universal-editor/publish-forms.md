@@ -2,7 +2,7 @@
 title: Publish Adaptive Forms with Edge Delivery Services
 description: Learn how to publish, configure, and access Adaptive Forms using Edge Delivery Services for production use.
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 keywords: publish forms, Edge Delivery Services, form configuration, CORS, referrer filter
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
