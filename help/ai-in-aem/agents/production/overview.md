@@ -38,7 +38,6 @@ The [Communication Creation](/help/ai-in-aem/agents/production/communications-cr
 
 >[!NOTE]
 >
->
 > The Communications Creation skill is currently in alpha. If you would like to participate, please send a request from your official email address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
 
 ### Site Migration {#site-migration}
