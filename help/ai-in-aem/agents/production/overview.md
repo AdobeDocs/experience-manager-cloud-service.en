@@ -32,7 +32,6 @@ The [Content Update](/help/ai-in-aem/agents/production/content-update.md) update
 
 The [Form Creation](/help/ai-in-aem/agents/production/form-creation.md) skill enables users to build adaptive forms through natural language prompts without dependency on development or IT teams. This capability accelerates form development while maintaining brand consistency and allowing business users to create forms without deep technical product knowledge.
 
-
 ### Communication Creation {#communications-creation}
 
 The [Communication Creation](/help/ai-in-aem/agents/production/communications-creation.md) skill empowers business users to produce personalized, data-driven correspondence at scale. From account statements and policy documents to bills and welcome kits, the agent transforms natural language requirements into professional communications.
@@ -41,7 +40,6 @@ The [Communication Creation](/help/ai-in-aem/agents/production/communications-cr
 >
 >
 > The Communications Creation skill is currently in alpha. If you would like to participate, please send a request from your official email address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
-
 
 ### Site Migration {#site-migration}
 
