@@ -20,7 +20,7 @@ simple natural language commands, eliminating the need for learning traditional 
 
 * **Create a new form with plain text prompt**: You can create a form by submitting your requirements in plain language. The agent automatically generates appropriate form structure, field types, and on-brand experiences based on your natural language description and specified template. This capability accelerates form creation while ensuring brand and compliance standards are maintained.
 
-* **Import a PDF or image and convert it into form**: You can import and transform existing image or PDF documents into forms. The agent analyzes uploaded content to detect field types, preserve layouts, and enhance forms with responsive design and validation logic while ensuring brand and compliance standards are maintained. Supported formats include PDF documents, images (JPG, PNG), and hand-drawn form photographs.
+* **Import a PDF document and convert it into form**: You can import and transform existing PDF documents into forms. The agent analyzes uploaded content to detect field types, preserve layouts, and enhance forms with responsive design and validation logic while ensuring brand and compliance standards are maintained.
 
     When you use any of the above capabilities, you are prompted to choose the type of form to create, specify either a Core Components based adaptive forms template or an Edge Delivery Services based adaptive forms template and indicate your preferred path to save the form. If you are creating a form based on Edge Delivery Services, you can also specify the GitHub URL of your repository.
 
@@ -34,7 +34,7 @@ simple natural language commands, eliminating the need for learning traditional 
 * *Create a credit card application form by importing the PDF file available at 'https://[aem-author-url]/path/to/pdf/file*
 * *Create a feedback form using the boilerplate at '<https://github.com/wkndforms/wesecure>'*
 
-## Next Steps {#refine-with-forms-experience-builder}
+## Refine your form {#refine-with-forms-experience-builder}
 
 After creating your initial form structure using AI Assistant, you can use the Forms Experience Builder to:
 
