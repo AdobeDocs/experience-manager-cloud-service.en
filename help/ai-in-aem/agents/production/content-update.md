@@ -103,7 +103,7 @@ In the case of a `process` command to trigger updates, the responses might follo
 
 ### Activation {#activation}
 
-To activate and gain access to the Production Agent with Jira you need to email Adobe. To get started you can contact:
+To activate and gain access to the Experience Production Agent with Jira you need to email Adobe. To get started you can contact:
 
 * `experience-production-agent@adobe.com`
 * or reach out to your account team
