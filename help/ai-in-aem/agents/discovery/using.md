@@ -134,7 +134,7 @@ Note: Form discovery currently supports Edge Delivery Services forms only and ta
 
 ### Assets {#discovery-agent-search-results-assets}
 
-The Discovery Agent returns the top 20 results for each query, sorted by relevance to ensure that the exact matches appear first. The Agent combines metadata-driven queries with semantic search to assemble a focused set of likely matches, then uses an LLM to rank them based on user intent. This blended approach delivers accurate, context-aware results without depending entirely on a direct keyword match.
+The Discovery Agent returns the top results for each query, sorted by relevance to ensure that the exact matches appear first. The Agent combines metadata-driven queries with semantic search to assemble a focused set of likely matches, then uses an LLM to rank them based on user intent. This blended approach delivers accurate, context-aware results without depending entirely on a direct keyword match.
 
 Each result includes asset name along with key asset metadata such as the asset path, creator, creation date, title, description, format, last modifier, last modified date, file size, dimensions, [Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md), and associated tags. If an asset is in approved state, the results also include [Dynamic Media with OpenAPI URL](/help/assets/dynamic-media-open-apis-overview.md). 
 
@@ -150,7 +150,7 @@ You can use these asset details to quickly evaluate if an asset meets the requir
 
 ### Content Fragments {#discovery-agent-search-results-content-fragments}
 
-The Discovery Agent provides full-text search capabilities for Content Fragments, returning the top 20 results that best match the specified prompt. Each result includes Content Fragment name along with key metadata fields such as Content Fragment path, creator, creation date, variations, last modifier, and last modified date fields.
+The Discovery Agent provides full-text search capabilities for Content Fragments, returning the top results that best match the specified prompt. Each result includes Content Fragment name along with key metadata fields such as Content Fragment path, creator, creation date, variations, last modifier, and last modified date fields.
 
 ![Search Content Fragments using Discovery Agent](/help/ai-in-aem/agents/discovery/assets/search-content-fragments-discovery-agent.png)
 
