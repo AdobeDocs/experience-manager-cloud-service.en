@@ -38,23 +38,9 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 -->
 
-<!--
+## AEM Business Agents {#aem-business-agents}
 
-### New Features in Content Hub {#new-features-content-hub}
-
-**Mark Collections as Favourites**
-
-You can now mark collections as Favorites in Content Hub, making it easier to organize and retrieve them. Once added, your favourite collections are conveniently available from the **Favourites** tab on the Content Hub home page.
-
-**Pin collections for quick access**
-
-Content Hub Administrators can now pin collections in Content Hub for quick access. Pinned collections are displayed in a dedicated **Pinned** section on the Collections home page, making it easier to keep important collections within reach.
-
->[!NOTE]
->
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
-
--->
+AEM provides a range of business agents enabling you to accelerate your content creation and automatically orchestrate changes. For more information, see [AEM Business Agents Overview](/help/ai-in-aem/agents/overview.md).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
