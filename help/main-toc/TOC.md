@@ -1056,7 +1056,7 @@ user-guide-title: AEM as a Cloud Service
   + [Overview](/help/ai-in-aem/overview.md)
   + AEM Business Agents {#business-agents}
     + [Overview](/help/ai-in-aem/agents/overview.md)
-    + Production Agent {#production}
+    + Experience Production Agent {#production}
       + [Overview](/help/ai-in-aem/agents/production/overview.md)
       + [Interactive Communication Creation Skill](/help/ai-in-aem/agents/production/communications-creation.md)
       + [Content Update Skill](/help/ai-in-aem/agents/production/content-update.md)
