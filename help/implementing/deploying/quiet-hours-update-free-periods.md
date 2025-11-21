@@ -21,7 +21,7 @@ You can configure these time frames by using two scheduling options:
 * **Quiet hours** - You can define a daily time interval (up to 8 hours) where updates will not occur.
 * **Update free periods** - You can define a 7 day time period where updates will not occur. You can have up to three update free periods within a 12-month time frame.
 
-The update free periods and quiet hours features are configured on a "per program" basis.
+The update free periods and quiet hours features are configured on a "per program" basis. Keep in mind that only users with the "user role" of **Business Owner** and **Deployment Manager** can view and use these features.  
 
 Additionally, for information on scheduled AEM as a Cloud Service automatic maintenance periods, please refer to the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) page.
 
@@ -70,3 +70,13 @@ Go to **Activities>Automatic Updates>Update Options**.
 ![Update Free Periods Configuration](assets/update-free-periods.png)
 
 An **Active** icon will be displayed near the currently active update free period and a **Complete** icon near the completed update free periods.
+
+## Planned Maintenance Exclusion Periods {#planned-maintenance}
+
+Adobe has a number of planned maintenance exclusion periods. These periods are defined by Adobe to minimize risks around critical events, and usually occur two or three times per year. You can view the exact schedule for maintenance exclusion periods on the [Maintenance Release Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) page.
+
+To help you configure your update-free periods accurately, the maintenance exclusion periods are also displayed in the Quiet Hours and Update Free Periods user interface.
+
+![Planned Maintenance Exclusion Periods](assets/planned-maintenance.png)
+
+Please note that you cannot create an update free period during the exclusion periods.
