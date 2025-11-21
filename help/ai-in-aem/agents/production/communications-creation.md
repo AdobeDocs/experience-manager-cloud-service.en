@@ -5,7 +5,7 @@ feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 ---
 
-# Communication creation skill {#ic-creation-skill}
+# Communication Creation skill {#ic-creation-skill}
 
 Interactive Communications are personalized, data-driven documents designed for business correspondence such as account statements, policy documents, bills, welcome kits, and benefit notices. Unlike forms that collect input from users, Interactive Communications generate output documents with dynamic, recipient-specific content.
 
@@ -19,45 +19,44 @@ Some of the key benefits of Communication creation skill include:
 
 ## Capabilities {#capabilities}
 
-* **Create personalized communications with plain text prompt**: You can create communication documents for print (in PDF format) by submitting your requirements in plain language. The agent automatically generates appropriate document structures, layouts, and data bindings based on your natural language description.
+<!-- * **Create personalized communications with plain text prompt**: You can create communication documents for print (in PDF format) by submitting your requirements in plain language. The agent automatically generates appropriate document structures, layouts, and data bindings based on your natural language description. -->
 
 * **Create from templates**: You can use approved organizational templates to ensure brand consistency and compliance standards. The agent leverages your existing templates and style guidelines to create on-brand correspondence that meets regulatory requirements.
 
-* **Import and convert existing documents into interactive communications**: You can import and transform existing documents into interactive communications. The agent analyzes uploaded content to detect fields, preserve layouts, and create data-driven correspondence with dynamic content capabilities. Supported formats include PDFs, XDP files, images (JPG, PNG), and hand-drawn templates.
+* **Import and convert existing image and documents into interactive communications**: You can import and transform existing documents into interactive communications. The agent analyzes uploaded content to detect fields, preserve layouts, and create data-driven correspondence with dynamic content capabilities. Supported formats include PDFs, images (JPG, PNG), and hand-drawn templates.
 
 
 ## Sample prompts {#sample-prompts}
 
-* *Create a bank account statement with transaction history table and balance chart*
-* *Generate an investment portfolio summary with performance graphs and asset breakdown*
-* *Create a loan statement with payment schedule and remaining balance*
-* *Create an insurance policy document with coverage details and premium breakdown*
-* *Generate a claim summary with status timeline and payment information*
-* *Create a policy renewal notice with updated terms and pricing comparison chart*
-* *Create a utility bill with usage chart, payment details, and billing history*
-* *Generate a service notification with account summary and action items*
-* *Create a yearly usage report with monthly consumption graph and cost analysis*
-* *Create an employment offer letter with compensation details and benefits summary*
-* *Generate an employee onboarding document with company policies and required forms*
-* *Create a citizen notice with official information and response instructions*
+* *Create a communication for a loan statement using the template at https://[aem-author-url]/path/to/pdf/file*
+* *Create a communication from PDF at https://[aem-author-url]/path/to/pdf/file*
+* *Create a communication from image file at https://[aem-author-url]/path/to/image/file*
+* Create a letter using PDF file at https://[aem-author-url]/path/to/pdf/file
 
-## Next Steps {#refine-with-ic-editor}
+## Refine your communication {#refine-with-ic-editor}
 
-After creating your initial communication structure using AI Assistant or Experience Hub, you can use the Interactive Communications Editor to refine and enhance your document:
+After creating your initial communication structure using AI Assistant, you can use the Interactive Communications Editor to refine and enhance your document. In Interactive Communications Editor, you can provide prompts in natural language to:
 
-* **Edit fields using natural language prompts**: You can effortlessly add, update, and remove fields and their properties within documents using prompts. The agent interprets your instructions and makes the appropriate modifications to document structure and field configurations.
+* **Add fields and content**: Add new fields, text blocks, images, charts, tables, and other components to your communication documents using natural language prompts. The agent interprets your instructions and inserts the appropriate elements with proper structure and formatting.
 
-* **Incremental component building**: Add or modify individual components such as text, images, charts, tables, and barcodes through the visual editor.
+* **Edit fields and content**: Modify existing fields and content within your communication documents through conversational commands. Update field properties, change text content, adjust data bindings, and refine component configurations.
 
-* **Dynamic data binding**: Configure data sources, set up field mappings, and bind components to back-end data for personalization.
+* **Remove fields and content**: Delete unwanted fields, components, or sections from your communication documents using natural language instructions. The agent removes the specified elements while maintaining document structure and layout integrity.
 
-* **Layout and design refinement**: Adjust positioning, formatting, styling, and master pages to achieve pixel-perfect correspondence.
+* **Style fields and content**: Apply formatting and styling to fields and content through natural language prompts. Adjust fonts, colors, alignment, spacing, and other visual properties to match your brand guidelines and design requirements.
 
-* **Fragment creation and management**: Create reusable document fragments such as headers, footers, disclaimers, and signature blocks for consistency.
+### Sample prompts for refining communications {#sample-prompts-refining}
 
-* **Rule and logic creation**: Define conditional content, set up business rules, and configure validations through the rule editor.
+* *Generate a Vehicle Insurance Claim Settlement letter*
+* *Make the disclaimer text italic*
+* *Change the font size of the disclaimer text to 12*
+* *Update the font color of the disclaimer text to red*
+* *Update the background color of the header and footer text boxes to light gray*
+* *Add a new disclaimer panel with signature and confirmation fields*
+* *Remove the confirmation text field*
+* *Add a payment details table with three columns*
+* *Update the alignment of the policy number field to center*
+* *Change the line spacing of the terms and conditions section to 1.5*
 
-* **Multi-channel output**: Configure both print and web channel versions, ensuring optimal presentation across delivery formats.
-
-For more information, see [Interactive Communications documentation](/help/forms/introduction-to-interactive-communication.md).
+For more information on capabilties of Interactive Communication editor, see [Interactive Communications documentation](/help/forms/introduction-to-interactive-communication.md).
 
