@@ -18,7 +18,7 @@ These business agents are available in Adobe Experience Manager (AEM) as a Cloud
 
 >[!IMPORTANT]
 >
->To use the agents you will required to enroll.
+>To use the agents you will be required to enroll.
 
 ## Experience Production Agent {#experience-production-agent}
 
