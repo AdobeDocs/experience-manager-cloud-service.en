@@ -150,7 +150,7 @@ You can use these asset details to quickly evaluate if an asset meets the requir
 
 ### Content Fragments {#discovery-agent-search-results-content-fragments}
 
-The Discovery Agent provides full-text search capabilities for Content Fragments, returning the top 20 results that best match the specified prompt.. Each result includes Content Fragment name along with key metadata fields such as Content Fragment path, creator, creation date, variations, last modifier, and last modified date fields.
+The Discovery Agent provides full-text search capabilities for Content Fragments, returning the top 20 results that best match the specified prompt. Each result includes Content Fragment name along with key metadata fields such as Content Fragment path, creator, creation date, variations, last modifier, and last modified date fields.
 
 ![Search Content Fragments using Discovery Agent](/help/ai-in-aem/agents/discovery/assets/search-content-fragments-discovery-agent.png)
 
