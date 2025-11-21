@@ -9,7 +9,7 @@ role: User, Admin, Architect, Developer
 
 Interactive Communications are personalized, data-driven documents designed for business correspondence such as account statements, policy documents, bills, welcome kits, and benefit notices. Unlike forms that collect input from users, Interactive Communications generate output documents with dynamic, recipient-specific content.
 
-The Communication creation skill is a capability of the Experience Production Agent that is designed to develop interactive communications using natural language interactions. It enables users to create personalized, data-driven correspondence without traditional manual processes. This skill eliminates the complexity of communication design by interpreting conversational prompts and automatically generating appropriate document structures, layouts, and data bindings. The skill is surfaced through AI assistant and Experience Hub.
+The Communication creation skill is a capability of the Experience Production Agent that is designed to develop interactive communications using natural language prompts. This skill automatically generates personalized, data-driven correspondence for print (in PDF format). The skill is surfaced through AI Assistant.
 
 Some of the key benefits of Communication creation skill include:
 
@@ -17,13 +17,16 @@ Some of the key benefits of Communication creation skill include:
 * **Consistent and on-brand correspondence**: Create communications that follow your organization's branding, templates, and style guidelines by using approved templates and styles.
 * **Lower technical barrier**: Allows business users to create communications easily, without needing advanced technical or deep product expertise.
 
-## Use cases and sample prompts {#use-cases-prompts}
+## Capabilities {#capabilities}
 
-The Communication creation skill allows you to create on-brand correspondence by submitting your requirements in plain language.
+* **Create personalized communications with plain text prompt**: You can create communication documents for print (in PDF format) by submitting your requirements in plain language. The agent automatically generates appropriate document structures, layouts, and data bindings based on your natural language description.
 
-You are prompted to specify your template, indicate your preferred path to save the communication, and provide any data source details. Based on these selections, the Communication creation skill automatically generates the appropriate document.
+* **Create from templates**: You can use approved organizational templates to ensure brand consistency and compliance standards. The agent leverages your existing templates and style guidelines to create on-brand correspondence that meets regulatory requirements.
 
-### Sample prompts {#sample-prompts}
+* **Import and convert existing documents into interactive communications**: You can import and transform existing documents into interactive communications. The agent analyzes uploaded content to detect fields, preserve layouts, and create data-driven correspondence with dynamic content capabilities. Supported formats include PDFs, XDP files, images (JPG, PNG), and hand-drawn templates.
+
+
+## Sample prompts {#sample-prompts}
 
 * *Create a bank account statement with transaction history table and balance chart*
 * *Generate an investment portfolio summary with performance graphs and asset breakdown*
@@ -41,6 +44,8 @@ You are prompted to specify your template, indicate your preferred path to save 
 ## Next Steps {#refine-with-ic-editor}
 
 After creating your initial communication structure using AI Assistant or Experience Hub, you can use the Interactive Communications Editor to refine and enhance your document:
+
+* **Edit fields using natural language prompts**: You can effortlessly add, update, and remove fields and their properties within documents using prompts. The agent interprets your instructions and makes the appropriate modifications to document structure and field configurations.
 
 * **Incremental component building**: Add or modify individual components such as text, images, charts, tables, and barcodes through the visual editor.
 
