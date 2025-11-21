@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2025.11.06 Release Notes
-description: These are the release notes for the 2025.11.06 release of the Universal Editor.
+title: Universal Editor 2025.11.20 Release Notes
+description: These are the release notes for the 2025.11.20 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.11.06 Release Notes {#release-notes}
+# Universal Editor 2025.11.20 Release Notes {#release-notes}
 
-These are the release notes for the 6 November 2025 release of the Universal Editor.
+These are the release notes for the 20 November 2025 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -17,6 +17,10 @@ These are the release notes for the 6 November 2025 release of the Universal Edi
 >[!TIP]
 >
 >For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
+## What's New {#what-is-new}
+
+* Toasts have been migrated to a new UI.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -28,12 +32,7 @@ The new ProseMirror RTE, featuring a page picker in the link dialog, is now avai
 
 ## Other Improvements {#other-improvements}
 
-* `og:title` metadata fields can now be deleted properly.
-* A navigation problem was fixed when a user edits the location bar in the editor the browser such that those changes are properly reflected and the editor and/or app now navigates to requested URL.
-* Field model resolution was corrected and the editor uses model from component if present.
-* The componentId is now included on the /add action.
-* The ability to delete some metadata properties that previously were not possible to remove was fixed.
-* Raw fetch is now conditionally done for xwalk when not set by the AEM plugin.
-* Content fragment MSM handling with RTE has been corrected.
-* Image highlighting in a picture is now supported.
-
+* The handling of RTE values has been simplified.
+* A rare toolbar race condition was resolved.
+* Unused feature toggles were removed.
+* Dependencies were updated.

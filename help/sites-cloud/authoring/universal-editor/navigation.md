@@ -137,6 +137,12 @@ Select the authentication headers icon if you need to [set a custom authenticati
 
 ![Authentication header settings button](assets/authentication-header-settings.png)
 
+#### Local Developer Login {#local-developer-login}
+
+Select the local developer login icon if you need to easily authenticate to your local AEM SDK [when developing locally.](/help/implementing/universal-editor/local-dev.md)
+
+![Local developer login button](assets/local-developer-login.png)
+
 #### Responsive Mode {#emulator}
 
 Select the responsive mode icon to define how the Universal Editor renders the page.

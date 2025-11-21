@@ -10,11 +10,13 @@ role: Admin
 
 You can restore your AEM as a Cloud Service content from backup using Cloud Manager.
 
-## Overview {#overview}
+
 
 Cloud Manager's self-service restore process copies data from Adobe system backups and restores it to its original environment. A restore is performed to return data, which has been lost, damaged, or accidentally deleted, to its original condition.
 
-The restore process only affects content, leaving your code and version of AEM unchanged. You can initiate a restore operation of individual environments at any time. (If you need to restore previously deployed source code in an easy and fast manner, without the need to start a new pipeline execution, you can use [Restore the Previous Code Deployed](/help/operations/restore-previous-code-deployed.md)). 
+The restore process only affects content, leaving your code and version of AEM unchanged. You can initiate a restore operation of individual environments at any time. 
+
+If you need to restore previously deployed source code in an easy and fast manner, without the need to start a new pipeline execution, you can use [Restore the Previous Code Deployed](/help/operations/restore-previous-code-deployed.md). 
 
 Cloud Manager provides two types of backups from which you may restore content.
 
@@ -142,6 +144,41 @@ Regular backups cover the risk of accidental deletions or technical failures wit
 AEM as a Cloud Service mitigates this risk for all AEM production environments. That is, it continuously copies all AEM content to a remote region. This process makes the content available for recovery for three months. This capability is known as an offsite backup.
 
 AEM Service Reliability Engineering restores staging and production AEM Cloud Service environments from off-site backups during data-region outages.
+
+## Data Region Mapping Principles {#data-region-mapping-principles}
+
+Adobe follows a set of internal guidelines to determine data region mappings for **AEM as a Cloud Service**. These guidelines are designed to support operational efficiency, ensure compliance with regional regulatory requirements, and provide a consistent customer experience across global markets.
+
+### Region Mapping Transparency {#region-mapping-transparency}
+
+Adobe does not publicly disclose detailed region-to-region mapping information.  
+If customers have specific or justified questions regarding regional deployment, data residency, or compliance implications, it is recommended to contact Adobe directly through official support or account channels.
+
+### Core Principles for Data Region Mapping {#core-principles}
+
+When determining a suitable data region mapping, Adobe applies several prioritized criteria:
+
+1. **Do not leave the global region**  
+   Deployments remain within one of the major global regions: **APAC**, **EMEA**, and **the Americas**.
+
+2. **Do not leave the continent**  
+   Wherever possible, data replication and failover remain on the same continent.
+
+3. **Do not leave the country**  
+   If technically feasible, data stay within the same national borders.
+
+### Handling Exceptions {#handling-exceptions}
+
+When the above criteria cannot be met due to technical or infrastructure limitations, Adobe applies additional considerations:
+
+* **Europe-specific guideline**  
+  Backup or secondary regions should not be located in non-EU countries.  
+  (The reverse—using an EU country as backup for a non-EU primary—may be acceptable if no better same-country option exists.)
+
+* **Avoid certain regions**  
+  Regions with restrictive data policies or heightened regulatory risk should be avoided as backup or failover locations.
+
+If customers require clarification or have compliance-driven needs, Adobe recommends reaching out to the Adobe account team or support organization for guidance tailored to their specific scenario.
 
 ## Limitations {#limitations}
 
