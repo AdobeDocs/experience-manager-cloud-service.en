@@ -7,6 +7,10 @@ role: User, Admin, Architect, Developer
 
 # Communication Creation skill {#ic-creation-skill}
 
+>[!NOTE]
+>
+> The Communications Creation skill is currently in alpha. If you would like to participate, please send a request from your official email address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
+
 Interactive Communications are personalized, data-driven documents designed for business correspondence such as account statements, policy documents, bills, welcome kits, and benefit notices. Unlike forms that collect input from users, Interactive Communications generate output documents with dynamic, recipient-specific content.
 
 The Communication creation skill is a capability of the Experience Production Agent that is designed to develop interactive communications using natural language prompts. This skill automatically generates personalized, data-driven correspondence for print (in PDF format). The skill is surfaced through AI Assistant.
@@ -33,7 +37,9 @@ Some of the key benefits of Communication creation skill include:
 * *Create a communication from image file at https://[aem-author-url]/path/to/image/file*
 * Create a letter using PDF file at https://[aem-author-url]/path/to/pdf/file
 
+
 ## Refine your communication {#refine-with-ic-editor}
+
 
 After creating your initial communication structure using AI Assistant, you can use the Interactive Communications Editor to refine and enhance your document. In Interactive Communications Editor, you can provide prompts in natural language to:
 
@@ -59,4 +65,3 @@ After creating your initial communication structure using AI Assistant, you can 
 * *Change the line spacing of the terms and conditions section to 1.5*
 
 For more information on capabilties of Interactive Communication editor, see [Interactive Communications documentation](/help/forms/introduction-to-interactive-communication.md).
-
