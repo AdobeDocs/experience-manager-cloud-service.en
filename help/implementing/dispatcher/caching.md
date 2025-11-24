@@ -261,8 +261,6 @@ For example, to stop removing marketing params at CDN level one should deploy `r
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev", "stage", "prod"]
 data:
   requestTransformations:
     removeMarketingParams: false

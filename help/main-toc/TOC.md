@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2025 {#2025}
+      + [Release Notes for 2025.10.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-10-0.md) 
       + [Release Notes for 2025.9.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-9-0.md) 
       + [Release Notes for 2025.8.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-8-0.md) 
       + [Release Notes for 2025.7.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-7-0.md) 
@@ -236,6 +237,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2025 {#2025}
+      + [2025.11.13 Release Notes](/help/release-notes/universal-editor/2025/2025-11-13.md)
       + [2025.11.06 Release Notes](/help/release-notes/universal-editor/2025/2025-11-06.md)
       + [2025.10.30 Release Notes](/help/release-notes/universal-editor/2025/2025-10-30.md)
       + [2025.10.24 Release Notes](/help/release-notes/universal-editor/2025/2025-10-24.md)
@@ -1052,6 +1054,22 @@ user-guide-title: AEM as a Cloud Service
     + [502 Error Page in Custom Submit Action](/help/forms/custom-submit-action-troubleshooting.md)
 + AI in AEM {#ai-in-aem}
   + [Overview](/help/ai-in-aem/overview.md)
+  + AEM Business Agents {#business-agents}
+    + [Overview](/help/ai-in-aem/agents/overview.md)
+    + Experience Production Agent {#production}
+      + [Overview](/help/ai-in-aem/agents/production/overview.md)
+      + [Interactive Communication Creation Skill](/help/ai-in-aem/agents/production/communications-creation.md)
+      + [Content Update Skill](/help/ai-in-aem/agents/production/content-update.md)
+      + [Site Migration Skill](/help/ai-in-aem/agents/production/site-migration.md)
+      + [Form Creation Skill](/help/ai-in-aem/agents/production/form-creation.md)
+    + Content Optimization Agent {#content-optimization}
+      + [Using Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/using.md)
+    + Discovery Agent {#discovery}
+      + [Using Discovery Agent](/help/ai-in-aem/agents/discovery/using.md)
+    + Development Agent {#development}
+      + [Overview](/help/ai-in-aem/agents/development/overview.md)
+    + Governance Agent {#governance}
+      + [Overview](/help/ai-in-aem/agents/governance/overview.md)
   + AI Assistant {#ai-assistant}
     + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
     + [About AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
