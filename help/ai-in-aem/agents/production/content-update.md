@@ -103,9 +103,9 @@ In the case of a `process` command to trigger updates, the responses might follo
 
   ![Example Jira using the content update skill of the Experience Production Agent](assets/content-update-jira-example.png)
 
-### Activation {#activation}
+## Activation {#activation}
 
-To activate and gain access to the Experience Production Agent with Jira you need to email Adobe. To get started you can contact:
+To activate and gain access to the Experience Production Agent you need to contact Adobe. To get started you can contact:
 
 * `experience-production-agent@adobe.com`
 * or reach out to your account team
