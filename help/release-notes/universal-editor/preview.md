@@ -21,6 +21,7 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming New Features {#what-is-new}
 
+* Authorization headers have been disabled in favor of the [local developer login.](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
 * A contextual menu is now available on the structured tree on right-click.
 * A hotkey was added to duplicate components.
 
