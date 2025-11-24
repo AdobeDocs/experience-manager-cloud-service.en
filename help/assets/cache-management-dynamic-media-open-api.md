@@ -6,6 +6,7 @@ role: User
 ---
 # Cache Management in Dynamic Media Open API {#cache-management-dynamic-media-open-apis}
 
+<<<<<<< Updated upstream
 Asset delivery responses are cached at multiple layers to ensure optimal performance and fast content delivery. This document outlines the caching strategy and how you can manage cache behavior for your assets.
 
 ## 1. Adobe CDN Layer Caching
@@ -62,6 +63,9 @@ responseTransformations:
 | External Layers (BYOCDN/Browsers) | 10-minute default max-age | Configurable via CDN rules |
 ---
 For additional assistance or questions about cache management, please contact Adobe Support.
+=======
+
+>>>>>>> Stashed changes
 
 >[!MORELIKETHIS]
 >
