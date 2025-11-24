@@ -38,8 +38,6 @@ Before you can configure traffic at the CDN you need to do the following:
     ```
     kind: "CDN"
     version: "1"
-    metadata:
-      envTypes: ["dev"]
     ```
 
 1. Place the file somewhere under a top level folder named *config* or similar, as described under [Config Pipeline](/help/operations/config-pipeline.md#folder-structure).
@@ -74,8 +72,6 @@ Configuration example:
 
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev", "stage", "prod"]
 data:
   requestTransformations:
     removeMarketingParams: true
@@ -222,8 +218,6 @@ Configuration example:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["prod", "dev"]
 data:
   requestTransformations:
     rules:
@@ -308,8 +302,6 @@ Configuration example:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["prod", "dev"]
 data:
   responseTransformations:
     rules:
@@ -392,8 +384,6 @@ Configuration example:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -451,8 +441,6 @@ Here is an example of an origin selector rule that can accomplish this:
 ```
 kind: CDN
 version: '1'
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -478,8 +466,6 @@ Here is an example of an origin selector rule that can accomplish this:
 ```
 kind: CDN
 version: '1'
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -519,8 +505,6 @@ Configuration example:
 
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   redirects:
     rules:
