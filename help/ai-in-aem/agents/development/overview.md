@@ -1,7 +1,7 @@
 ---
 title: Development Agent Overview
 description: Learn how the Development Agent in AEM analyzes failed pipelines in Cloud Manager and build logs to suggest code fixes and speed up debugging.
-feature: Agentic AI
+feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
 
 ---
@@ -76,8 +76,8 @@ The Development Agent's pipeline troubleshooting job requires either the Cloud M
 
 | Prompt | Result |
 | --- | --- |
-| *List my failed pipelines for program Main Program.* | While results may vary, this prompt should output a table of failed pipelines, with a follow-up suggestion to reference a specific pipeline to analyze. |
-| *Analyze my failed pipeline called "Dev Pipeline."* | This prompt should result in an analysis of the failed pipeline with suggestions to fix. |
+| *List my failed pipelines for program Main Program.* | While results may vary, this prompt outputs a table of failed pipelines, with a follow-up suggestion to reference a specific pipeline to analyze. |
+| *Analyze my failed pipeline called "Dev Pipeline."* | This prompt results in an analysis of the failed pipeline with suggestions to fix. |
 
 ## Out-of-scope features {#out-of-scope-features}
 
