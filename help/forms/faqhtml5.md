@@ -6,10 +6,7 @@ description: Frequently Asked Questions (FAQ) about layout, scripting support, a
 
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: hTML5_forms
-
-docset: aem65
+topic-tags: hTML5_formss
 feature: HTML5 Forms,Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms

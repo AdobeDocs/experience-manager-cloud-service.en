@@ -2,7 +2,6 @@
 title: Right-to-left languages in HTML5 forms
 description: HTML5 forms can be displayed or filled in right-to-left languages, such as Hebrew.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: b8465471-0458-42d6-8209-8ba90f41154a
 feature: HTML5 Forms,Mobile Forms
