@@ -62,10 +62,9 @@ Channel Marketers, the key persona for Content Optimization Agent, can select th
 
 Regional Marketers and Agency Workers can also use the Content Optimization Agent to quickly generate channel-ready image variations that support faster, more consistent content production.
 
-
 ## How to access Content Optimization Agent? {#access-content-optimization-agent}
 
-You can access AEM Business Agents via AI Assistant. Log on to experience.adobe.com and you can start interacting with AI Assistant by specifying your prompt in natural language using the `Ask AI Assistant anything` field:
+You can access the Agents in AEM via the AI Assistant. Log on to experience.adobe.com and you can start interacting with AI Assistant by specifying your prompt in natural language using the `Ask AI Assistant anything` field:
 
 ![Access Discovery Agent](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
 

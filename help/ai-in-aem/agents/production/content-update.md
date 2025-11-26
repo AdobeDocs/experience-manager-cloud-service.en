@@ -25,7 +25,7 @@ You can access the content update skill from:
 
 ## AI Assistant {#ai-assistant}
 
-You can access AEM Business Agents via the AI Assistant. 
+You can access the Agents in AEM via the AI Assistant. 
 
 Open the AI Assistant from experience.adobe.com, then start interacting by specifying your prompt in natural language using the `Ask AI Assistant anything` field:
 

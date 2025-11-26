@@ -1054,7 +1054,7 @@ user-guide-title: AEM as a Cloud Service
     + [502 Error Page in Custom Submit Action](/help/forms/custom-submit-action-troubleshooting.md)
 + AI in AEM {#ai-in-aem}
   + [Overview](/help/ai-in-aem/overview.md)
-  + AEM Business Agents {#business-agents}
+  + Agents in AEM {#business-agents}
     + [Overview](/help/ai-in-aem/agents/overview.md)
     + Experience Production Agent {#production}
       + [Overview](/help/ai-in-aem/agents/production/overview.md)
