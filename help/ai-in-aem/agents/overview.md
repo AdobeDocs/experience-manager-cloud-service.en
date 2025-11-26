@@ -1,13 +1,13 @@
 ---
-title: Business Agents Overview
-description: Learn about the business agents available in AEM to accelerate your content creation and automatically orchestrate changes.
+title: Overview of Agents in AEM
+description: Learn about the Agents available in AEM to accelerate your content creation and automatically orchestrate changes.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 ---
 
-# AEM Business Agents Overview {#business-agents-overview}
+# Overview of Agents in AEM {#overview-of-agents-in-aem}
 
-These business agents are available in Adobe Experience Manager (AEM) as a Cloud Service to accelerate your content creation and automatically orchestrate changes.
+These agents are available in Adobe Experience Manager (AEM) as a Cloud Service to accelerate your content creation and automatically orchestrate changes.
 
 >[!IMPORTANT]
 >
