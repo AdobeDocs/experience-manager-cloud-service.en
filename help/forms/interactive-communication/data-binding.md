@@ -25,23 +25,25 @@ Data Binding in the Interactive Communication Editor connects on-canvas fields w
 
 Beyond simply connecting values, Data Binding in IC supports visual mapping, prefill, and synchronization, enabling authors to design faster while staying aligned with backend systems and data models.
 
+![Find IC Doc](/help/forms/interactive-communication/assets/data-binding1.png)
+
 ## 2. Properties
 
 2.1 Managing Data Connections (FDM)
 
-- **Selecting the FDM:** Choose the appropriate Form Data Model (e.g., customers, accounts, or policies). This establishes the authoritative schema for fields, arrays, and objects used in the communication.
+- **Select the FDM:** Choose the appropriate Form Data Model (e.g., customers, accounts, or policies). This establishes the authoritative schema for fields, arrays, and objects used in the communication.
 
-- **Creating Data Bindings:** Once bindings are enabled, each field can be associated with FDM paths, minimizing errors and ensuring consistent integration.
+- **Create Data Binding:** Once bindings are enabled, each field can be associated with FDM paths, minimizing errors and ensuring consistent integration.
 
-- **Binding Fields to Data Models:** Point fields to specific nodes (e.g., customer.name, policy.holder.id) to drive rendering with live data and to support validations or conditional logic.
+- **Binding Fields to Data Model:** Point fields to specific nodes (e.g., customer.name, policy.holder.id) to drive rendering with live data and to support validations or conditional logic.
 
-2.2 Creating Data Bindings
+2.2 Creating Data Binding
 
 - **Visual Mapping:** Drag-and-drop mapping between fields and FDM nodes helps non-technical users avoid mistakes.
 
 - **Field Association:** Define the target path, data type (text, number, date, boolean, image), and optional formatters (e.g., date mask, currency).
 
-- **Binding Preview:** Test bindings with sample data sets to validate formatting and correctness before publishing.
+- **Bind Preview:** Test bindings with sample data sets to validate formatting and correctness before publishing.
 
 2.3 Binding Fields to Data Models
 
@@ -86,3 +88,4 @@ Authors typically select the FDM early in the project, visually map fields durin
 - **Secure sensitive data:** Apply masking, encryption, and least-privilege access for PII or payment details.
 
 By configuring Data Binding carefully, authors create a reliable bridge between design and data—accelerating communication authoring, ensuring accuracy, and delivering highly personalized experiences at scale.
+

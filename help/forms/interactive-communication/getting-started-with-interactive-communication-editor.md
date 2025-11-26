@@ -40,7 +40,7 @@ Access to IC Editor features is governed by [user roles within AEM](https://expe
 1. Log in to your **AEM Forms as a Cloud Service** instance.
 2. Navigate to **Forms > Interactive Communications**.
 3. Click **Create** → **Interactive Communication**.
-4. Choose a **Template**, configure data sources, and click **Edit** to open the **Interactive Communication Editor**.
+4. Choose a **Template**, configure data sources, and click **Create** to open the **Interactive Communication Editor**.
 
 The editor provides a unified environment to design, preview, and manage both print and web versions of communications.
 

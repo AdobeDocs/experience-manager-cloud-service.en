@@ -9,7 +9,7 @@ index: no
 hidefromtoc: yes
 ---
 
-# Create Rules in Interactive Communication Editor
+# Rule Editor in Interactive Communication Editor
 
 >[!NOTE]
 >
@@ -21,9 +21,11 @@ hidefromtoc: yes
 
 ## 1. Introduction
 
-Rule Creation in the Interactive Communication Editor allows authors to define dynamic behaviors that make communications interactive and intelligent. Rules control how fields behave, display, or calculate based on user actions or underlying data, ensuring each communication is personalized and context-aware.
+Rule Editor in the Interactive Communication Editor allows authors to define dynamic behaviors that make communications interactive and intelligent. Rules control how fields behave, display, or calculate based on user actions or underlying data, ensuring each communication is personalized and context-aware.
 
 From simple visibility settings to complex conditional logic, rules empower authors to deliver experiences that adapt in real time—enhancing usability, accuracy, and engagement.
+
+![Find IC Doc](/help/forms/interactive-communication/assets/rule-creation.png)
 
 ## 2. Properties
 
@@ -43,9 +45,11 @@ From simple visibility settings to complex conditional logic, rules empower auth
 
 - **Conditional Actions:** Define triggers that respond to user input or data values, such as enabling/disabling fields, showing messages, or branching to different sections.
 
+![Find IC Doc](/help/forms/interactive-communication/assets/rule-creation1.png)
+
 ## 3. Usage
 
-Rule Creation is widely used to ensure forms and communications are responsive and context-driven:
+Rule Editor is widely used to ensure forms and communications are responsive and context-driven:
 
 - **Dynamic Display:** Hide or reveal sections based on customer type or selected options.
 
