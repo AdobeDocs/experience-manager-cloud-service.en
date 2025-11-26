@@ -61,7 +61,7 @@ The first is the Experience Platform top navigation bar, which is persistent as 
 * The ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (show or hide side menu) gives you access to a variety of tabs that can take you to specific parts of an individual program. Or, you can switch between the [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md) and the **[My Programs](#my-programs-console)** console depending on the context.
 * The ![Bell icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([Notifications](/help/implementing/cloud-manager/notifications.md)) gives you access to notifications and announcements, among other things.
 
-For further details on the Experience Platform top navigation bar, please see the [Adobe Experience Platform UI guide.](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+For more details on the Experience Platform top navigation bar, see the [Adobe Experience Platform UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar).
 
 #### Program toolbar {#program-toolbar}
 
