@@ -130,6 +130,12 @@ From the editor you can:
 
 ### Create a Variation {#create-variation}
 
+>[!NOTE]
+>
+>Variations add processing time to a Content Fragment, on the author environment and upon delivery too. It is recommended to keep the number of variations to a manageable minimum. 
+>
+>A best practice is to not exceed ten variations per Content Fragment.
+
 To create a Variation of your Content Fragment:
 
 1. In the left panel, select the **plus sign** (**Create variation**) that is to the right of **Variations**.
