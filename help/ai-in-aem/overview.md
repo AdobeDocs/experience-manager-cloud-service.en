@@ -1,34 +1,45 @@
 ---
 title: AI in AEM as a Cloud Service
 description: Learn about AI in Adobe Experience Manager as a Cloud Service
-feature: Generative AI, AI Assistant, AI Tools
+feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
 ---
+
 # AI in AEM as a Cloud Service {#ai-in-aem-as-a-cloud-service}
 
-AI is an integral part of Adobe Experience Manager as a Cloud Service, being used to support users in finding information, or generate experiences.
+Artificial Intelligence (AI) is an integral part of Adobe Experience Manager as a Cloud Service, supporting users finding information or generating experiences.
 
 ## AI Assistant {#ai-assistant}
 
 The [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/ai-assistant-in-aem.md) offers a conversational interface designed to streamline finding answers to your AEM-related queries.
 
+## Agentic AI in AEM {#agentic-ai-in-aem}
+
+AEM provides a range of [agents](/help/ai-in-aem/agents/overview.md) to accelerate your content creation and automatically orchestrate changes:
+
+* [Experience Production Agent](/help/ai-in-aem/agents/production/overview.md) 
+* [Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/using.md)
+* [Discovery Agent](/help/ai-in-aem/agents/discovery/using.md)
+* [Development Agent](/help/ai-in-aem/agents/development/overview.md)
+* [Governance Agent](/help/ai-in-aem/agents/governance/overview.md)
+
 ## Generative AI in AEM {#generative-ai-in-aem}
 
 Adobe Generative AI for Adobe Experience Manager (AEM) as a Cloud Service enables brands to create high performance experiences with both copy and image generation all within the editing interface. With generative AI, you can autonomously create content that is:
 
-* Brand aware - Create content that incorporates brand tone of voice, style guidelines and other specific requirements.
-* Personalized by audience - Leverage granular content performance insights to tailor content for any persona across all channels.
-* Region specific - Go beyond translation and adapt your content based on regional preferences and behavior patterns.
-* Continually optimized - Run experiments to determine which variations perform best and use insights to improve future AI-generated content.
+* **Brand aware** - Create content that incorporates brand tone of voice, style guidelines, and other specific requirements.
+* **Personalized by audience** - Leverage granular content performance insights to tailor content for any persona across all channels.
+* **Region specific** - Go beyond translation and adapt your content based on regional preferences and behavior patterns.
+* **Continually optimized** - Run experiments to determine which variations perform best and use insights to improve future AI-generated content.
 
 Generative AI is used throughout AEM:
 
 * [Generate Variations - Integrated in AEM Editors](/help/generative-ai/generate-variations-integrated-editor.md)
 
-  Generate Variations uses generative Artificial Intelligence (AI) to create content variations based on your input. After creating variations, you can use the content on your website, and also measure their success using the Experimentation functionality of Edge Delivery Services.
+  Generate Variations uses generative AI to create content variations based on your input. After creating variations, you can use the content on your website and also measure their success using the Experimentation functionality of Edge Delivery Services.
 
-  * And the previous version [Generate Variations](/help/generative-ai/generate-variations.md)
+  * [The previous version Generate Variations](/help/generative-ai/generate-variations.md) outside of the editor remains available.
 
     >[!NOTE]
     >
