@@ -59,7 +59,7 @@ Agencies and Partners can easily find brand-approved assets within Content Hub a
 
 ## How to access Discovery Agent? {#access-discovery-agent}
 
-You can access AEM Business Agents via AI Assistant. Log on to experience.adobe.com and you can start interacting with AI Assistant by specifying your prompt in natural language using the search box:
+You can access the Agents in AEM via the AI Assistant. Log on to experience.adobe.com and you can start interacting with AI Assistant by specifying your prompt in natural language using the search box:
 
 ![Access Discovery Agent](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
 
