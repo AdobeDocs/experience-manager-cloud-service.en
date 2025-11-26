@@ -17,7 +17,7 @@ Some of the key benefits of Content Optimization include:
 
 * **Creative enhancement at scale**: Applies visual adjustments and enhancements, such as background changes or graphic overlays, to support high-volume creative workflows without slowing teams down.
 
-* **[Seamless collaboration with the Discovery Agent](/help/ai-in-aem/agents/discovery/using.md)**: Builds upon the assets identified by the Discovery Agent, enabling end-to-end asset retrieval and optimization through natural conversation.
+* **[Seamless collaboration with the Discovery Agent](/help/ai-in-aem/agents/discovery/overview.md)**: Builds upon the assets identified by the Discovery Agent, enabling end-to-end asset retrieval and optimization through natural conversation.
 
 >[!IMPORTANT]
 >
@@ -70,7 +70,7 @@ You can access the Agents in AEM via the AI Assistant. Log on to experience.adob
 
 ## Common use cases and sample prompts {#use-cases-prompts}
 
-Use Content Optimization prompts by searching for the right assets through the [Discovery Agent](/help/ai-in-aem/agents/discovery/using.md). Once the relevant images are surfaced, users can generate optimized or channel-specific variants for one or multiple assets directly from the search results. This workflow ensures high-quality inputs and consistently better optimization outcomes. [See the complete list of available optimizations](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/).
+Use Content Optimization prompts by searching for the right assets through the [Discovery Agent](/help/ai-in-aem/agents/discovery/overview.md). Once the relevant images are surfaced, users can generate optimized or channel-specific variants for one or multiple assets directly from the search results. This workflow ensures high-quality inputs and consistently better optimization outcomes. [See the complete list of available optimizations](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/).
 
 * **High-resolution rendition creation**
 
@@ -81,7 +81,7 @@ Use Content Optimization prompts by searching for the right assets through the [
 
    Create a `2000px` rendition as `JPEG` with `80%` quality.
 
-   Search for the right asset using the [Discovery agent](/help/ai-in-aem/agents/discovery/using.md) and then use the following prompts in case of multiple search results:
+   Search for the right asset using the [Discovery agent](/help/ai-in-aem/agents/discovery/overview.md) and then use the following prompts in case of multiple search results:
 
    For the 3rd search result, create a `2000px` rendition as `JPEG` with `80%` quality.
 
