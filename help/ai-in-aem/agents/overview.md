@@ -26,11 +26,11 @@ The [Experience Production Agent](/help/ai-in-aem/agents/production/overview.md)
 
 ## Content Optimization Agent {#content-optimization-agent}
 
-The [Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/using.md) transforms how users refine and adapt assets by applying natural language instructions to create channel-ready variations. The agent interprets user intent and performs complex editing tasks automatically to perform tasks including generating new renditions, adjusting visual properties, changing backgrounds, or preparing assets for specific digital channels.
+The [Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/overview.md) transforms how users refine and adapt assets by applying natural language instructions to create channel-ready variations. The agent interprets user intent and performs complex editing tasks automatically to perform tasks including generating new renditions, adjusting visual properties, changing backgrounds, or preparing assets for specific digital channels.
 
 ## Discovery Agent {#discovery-agent}
 
-The [Discovery Agent](/help/ai-in-aem/agents/discovery/using.md) delivers AEM content for a streamlined, click-free discovery experience. It intelligently searches across Assets, Content Fragments, and Adaptive Forms to deliver relevant materials such as images, videos, PDF documents, articles, and form templates. 
+The [Discovery Agent](/help/ai-in-aem/agents/discovery/overview.md) delivers AEM content for a streamlined, click-free discovery experience. It intelligently searches across Assets, Content Fragments, and Adaptive Forms to deliver relevant materials such as images, videos, PDF documents, articles, and form templates. 
 
 ## Development Agent {#development-agent}
 
