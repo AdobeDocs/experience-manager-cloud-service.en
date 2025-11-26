@@ -158,7 +158,7 @@ If you have reached the limit, review your certificates and consider deleting an
 
 ### Let's Encrypt rate limits for Adobe-managed DV certificates
 
-Adobe-managed DV certificates rely on Let's Encrypt. In addition to the Cloud Manager limit on installed certificates, Let's Encrypt enforces its own rate limits. One key limit is **New Certificates per Exact Set of Identifiers**: up to 5 certificates can be issued for the very same set of hostnames within any 7-day period. If this limit is reached, Cloud Manager shows the corresponding Let's Encrypt error and cannot create more certificates for that hostname set until the rate-limit window is reset. For the latest values and other related limits, see the [Let's Encrypt rate-limits documentation](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
+Adobe-managed DV certificates rely on Let's Encrypt. In addition to the Cloud Manager limit on installed certificates, Let's Encrypt enforces its own rate limits. One key limit is **New Certificates per Exact Set of Identifiers**: up to 5 certificates can be issued for the very same set of hostnames within any 7-day period. If this limit is reached, Cloud Manager shows an error and cannot create more certificates for that hostname set until the rate-limit window is reset. For the latest values and other related limits, see the [Let's Encrypt rate-limits documentation](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
 
 ## Learn more {#learn-more}
 
