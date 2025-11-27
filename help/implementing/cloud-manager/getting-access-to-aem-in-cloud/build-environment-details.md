@@ -14,7 +14,7 @@ Learn about Cloud Manager's build environment and how it builds and tests your c
 
 >[!TIP]
 >
->This document covers Cloud Manager's build environment for developing your AEM as a Cloud Service project. For details on client platforms supported by AEM as a Cloud Service for content authoring, please see the document [Supported Client Platforms.](/help/overview/supported-platforms.md)
+>This document covers Cloud Manager's build environment for developing your AEM as a Cloud Service project. For details on client platforms supported by AEM as a Cloud Service for content authoring, see [Supported Client Platforms](/help/overview/supported-platforms.md).
 
 ## Build environment details {#build-environment-details}
 

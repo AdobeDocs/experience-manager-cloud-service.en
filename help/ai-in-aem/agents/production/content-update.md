@@ -25,21 +25,23 @@ You can access the content update skill from:
 
 ## AI Assistant {#ai-assistant}
 
-You can access AEM Business Agents via the AI Assistant. 
+You can access the Agents in AEM via the AI Assistant. 
 
 Open the AI Assistant from experience.adobe.com, then start interacting by specifying your prompt in natural language using the `Ask AI Assistant anything` field:
 
 ![Access Discovery Agent](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
 
-<!--
 ### Sample Prompts {#sample-prompts}
 
-To initiate content updates you can give a wide range of natural language prompts. You also need to specify the public facing URL of the page you want to update:
+To initiate content updates you can give a wide range of natural language prompts. You also need to specify the public facing URL of the page you want to update. For example:
 
-* Change your headlines
+* modify the following page https://www.your-url.com/sale Update the main hero heading to "Black Friday Mega Sale - Up to 70% Off", Change the countdown timer to show "Ends in 48 Hours", Remove  "Sign up for updates", Change all "Shop Now" buttons to "Grab the Deal""
 
-  * On your-URL change the headline from X to Y
--->
+* https://www.your-url.com/laptops/your-laptop-model Update banner copy to "Save 300 USD Today Only", Update pricing from 1,299 USD to 999 USD,  Remove financing option banner
+
+* https://www.your-url.com/your-sneaker Update stock status from "Low Stock" to "Back in Stock - Limited Quantities", Change the size selector to highlight available sizes in green, Remove the "Coming Soon" badge
+
+* https://www.your-url.com/your-sneaker Update the product images to show new colorways
 
 >[!NOTE]
 >
@@ -101,9 +103,9 @@ In the case of a `process` command to trigger updates, the responses might follo
 
   ![Example Jira using the content update skill of the Experience Production Agent](assets/content-update-jira-example.png)
 
-### Activation {#activation}
+## Activation {#activation}
 
-To activate and gain access to the Production Agent with Jira you need to email Adobe. To get started you can contact:
+To activate and gain access to the Experience Production Agent you need to contact Adobe. To get started you can contact:
 
 * `experience-production-agent@adobe.com`
 * or reach out to your account team

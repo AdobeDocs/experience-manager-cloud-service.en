@@ -1,14 +1,14 @@
 ---
-title: Experience Development Agent Overview
-description: Learn how the Experience Development Agent in AEM analyzes failed pipelines in Cloud Manager and build logs to suggest code fixes and speed up debugging.
-feature: Edge Delivery Services, Agentic AI
+title: Development Agent Overview
+description: Learn how the Development Agent in AEM analyzes failed pipelines in Cloud Manager and build logs to suggest code fixes and speed up debugging.
+feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
 
 ---
 
-# Experience Development Agent overview {#development-agent-overview}
+# Development Agent overview {#development-agent-overview}
 
-The Experience Development Agent helps AEM developers and administrators create, debug, deploy, and optimize code more efficiently.
+The Development Agent helps AEM developers and administrators create, debug, deploy, and optimize code more efficiently.
 
 Currently, the agent can retrieve pipeline statuses and help you troubleshoot failing build steps by suggesting fixes, saving time when debugging AEM as a Cloud Service deployments to development, stage, and production environments. It examines build logs and related code to recommend a fix that you can apply manually. 
 
@@ -22,11 +22,11 @@ Currently, the agent can retrieve pipeline statuses and help you troubleshoot fa
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
 
-## Access the Experience Development Agent through Cloud Manager {#how-to-access-the-agent}
+## Access the Development Agent through Cloud Manager {#how-to-access-the-agent}
 
-You access the Experience Development Agent through the AI Assistant found in user interfaces including Cloud Manager or Experience Hub.
+You access the Development Agent through the AI Assistant found in user interfaces including Cloud Manager or Experience Hub.
 
-**To access the Experience Development Agent through Cloud Manager:**
+**To access the Development Agent through Cloud Manager:**
 
 1. To get started, click [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) to open its home page.
 
@@ -68,7 +68,7 @@ You access the Experience Development Agent through the AI Assistant found in us
 
 ## Permissions {#permissions}
 
-The Experience Development Agent's pipeline troubleshooting job requires either the Cloud Manager - Developer role or the Cloud Manager - Program Manager role.
+The Development Agent's pipeline troubleshooting job requires either the Cloud Manager - Developer role or the Cloud Manager - Program Manager role.
 
 
 
@@ -76,8 +76,8 @@ The Experience Development Agent's pipeline troubleshooting job requires either 
 
 | Prompt | Result |
 | --- | --- |
-| *List my failed pipelines for program Main Program.* | While results may vary, this prompt should output a table of failed pipelines, with a follow-up suggestion to reference a specific pipeline to analyze. |
-| *Analyze my failed pipeline called "Dev Pipeline."* | This prompt should result in an analysis of the failed pipeline with suggestions to fix. |
+| *List my failed pipelines for program Main Program.* | While results may vary, this prompt outputs a table of failed pipelines, with a follow-up suggestion to reference a specific pipeline to analyze. |
+| *Analyze my failed pipeline called "Dev Pipeline."* | This prompt results in an analysis of the failed pipeline with suggestions to fix. |
 
 ## Out-of-scope features {#out-of-scope-features}
 
