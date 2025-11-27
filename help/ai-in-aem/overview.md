@@ -19,8 +19,8 @@ The [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/
 AEM provides a range of [agents](/help/ai-in-aem/agents/overview.md) to accelerate your content creation and automatically orchestrate changes:
 
 * [Experience Production Agent](/help/ai-in-aem/agents/production/overview.md) 
-* [Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/using.md)
-* [Discovery Agent](/help/ai-in-aem/agents/discovery/using.md)
+* [Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/overview.md)
+* [Discovery Agent](/help/ai-in-aem/agents/discovery/overview.md)
 * [Development Agent](/help/ai-in-aem/agents/development/overview.md)
 * [Governance Agent](/help/ai-in-aem/agents/governance/overview.md)
 
