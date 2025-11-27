@@ -2,15 +2,8 @@
 title: HTML5 forms service proxy
 
 description: HTML5 forms Service Proxy is a configuration to register a proxy for the submission service. To configure Service Proxy, specify the URL of submission service through request parameter submissionServiceProxy.
-
-
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-
-
-docset: aem65
-
 feature: HTML5 Forms,Mobile Forms
 exl-id: 8f9b10ae-1600-49c2-a061-153a2a89c67e
 solution: Experience Manager, Experience Manager Forms
@@ -136,4 +129,4 @@ The submit service proxy selects a topology if the submiturl is present in the r
 * If AEM servers post the data, proxy service acts as a pass-through. It sends the request to the /bin/xfaforms/submitaction end point and sends the response to the XFA runtime.
 * If proxy posts the data, the proxy service passes all the parameters except submitUrl to the */bin/xfaforms/submitaction* end point and receives xml bytes in response stream. Then, the proxy service posts the data xml bytes to the submitUrl for processing.
 
-* Before sending data (POST request) to a server, HTML5 forms verify connectivity and availability of the server. To verify connectivity and availability, HTML forms send an empty head request to the server. If the server is available, HTML5 form sends data (POST request) to the server. If the server is not available, an error message, *Could’t connect to the server,* is displayed. The advance detection prevents users from the hassle of refilling the form. The proxy servlet handles head request and does not throw exception.
+* Before sending data (POST request) to a server, HTML5 forms verify connectivity and availability of the server. To verify connectivity and availability, HTML forms send an empty head request to the server. If the server is available, HTML5 form sends data (POST request) to the server. If the server is not available, an error message, *Could't connect to the server,* is displayed. The advance detection prevents users from the hassle of refilling the form. The proxy servlet handles head request and does not throw exception.
