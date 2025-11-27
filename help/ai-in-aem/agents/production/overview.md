@@ -49,3 +49,10 @@ The agent should be able to work with other agent skills, examples include:
 ## Use with other agents {#use-with-other-agents}
 
 * Get source assets from the Experience Advisory Agent
+
+## Activation {#activation}
+
+To activate and gain access to the Experience Production Agent you need to contact Adobe. To get started you can contact:
+
+* `experience-production-agent@adobe.com`
+* or reach out to your account team

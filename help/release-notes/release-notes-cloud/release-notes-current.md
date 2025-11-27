@@ -38,9 +38,9 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 -->
 
-## AEM Business Agents {#aem-business-agents}
+## Agents in AEM {#agents-in-aem}
 
-AEM provides a range of business agents enabling you to accelerate your content creation and automatically orchestrate changes. For more information, see [AEM Business Agents Overview](/help/ai-in-aem/agents/overview.md).
+AEM provides a range of agents enabling you to accelerate your content creation and automatically orchestrate changes. For more information, see [Overview of Agents in AEM](/help/ai-in-aem/agents/overview.md).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

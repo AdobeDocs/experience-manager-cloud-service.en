@@ -5,11 +5,15 @@ feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 ---
 
-# Communication creation skill {#ic-creation-skill}
+# Communication Creation skill {#ic-creation-skill}
+
+>[!NOTE]
+>
+> The Communications Creation skill is currently in alpha. If you would like to participate, please send a request from your official email address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
 
 Interactive Communications are personalized, data-driven documents designed for business correspondence such as account statements, policy documents, bills, welcome kits, and benefit notices. Unlike forms that collect input from users, Interactive Communications generate output documents with dynamic, recipient-specific content.
 
-The Communication creation skill is a capability of the Experience Production Agent that is designed to develop interactive communications using natural language interactions. It enables users to create personalized, data-driven correspondence without traditional manual processes. This skill eliminates the complexity of communication design by interpreting conversational prompts and automatically generating appropriate document structures, layouts, and data bindings. The skill is surfaced through AI assistant and Experience Hub.
+The Communication creation skill is a capability of the Experience Production Agent that is designed to develop interactive communications using natural language prompts. This skill automatically generates personalized, data-driven correspondence for print (in PDF format). The skill is surfaced through AI Assistant.
 
 Some of the key benefits of Communication creation skill include:
 
@@ -17,42 +21,83 @@ Some of the key benefits of Communication creation skill include:
 * **Consistent and on-brand correspondence**: Create communications that follow your organization's branding, templates, and style guidelines by using approved templates and styles.
 * **Lower technical barrier**: Allows business users to create communications easily, without needing advanced technical or deep product expertise.
 
-## Use cases and sample prompts {#use-cases-prompts}
+## Capabilities {#capabilities}
 
-The Communication creation skill allows you to create on-brand correspondence by submitting your requirements in plain language.
+<!-- * **Create personalized communications with plain text prompt**: You can create communication documents for print (in PDF format) by submitting your requirements in plain language. The agent automatically generates appropriate document structures, layouts, and data bindings based on your natural language description. -->
 
-You are prompted to specify your template, indicate your preferred path to save the communication, and provide any data source details. Based on these selections, the Communication creation skill automatically generates the appropriate document.
+* **Create from templates**: You can use approved organizational templates to ensure brand consistency and compliance standards. The agent leverages your existing templates and style guidelines to create on-brand correspondence that meets regulatory requirements.
 
-### Sample prompts {#sample-prompts}
+* **Import and convert existing image and documents into interactive communications**: You can import and transform existing documents into interactive communications. The agent analyzes uploaded content to detect fields, preserve layouts, and create data-driven correspondence with dynamic content capabilities. Supported formats include PDFs, images (JPG, PNG), and hand-drawn templates.
 
-* *Create a bank account statement with transaction history table and balance chart*
-* *Generate an investment portfolio summary with performance graphs and asset breakdown*
-* *Create a loan statement with payment schedule and remaining balance*
-* *Create an insurance policy document with coverage details and premium breakdown*
-* *Generate a claim summary with status timeline and payment information*
-* *Create a policy renewal notice with updated terms and pricing comparison chart*
-* *Create a utility bill with usage chart, payment details, and billing history*
-* *Generate a service notification with account summary and action items*
-* *Create a yearly usage report with monthly consumption graph and cost analysis*
-* *Create an employment offer letter with compensation details and benefits summary*
-* *Generate an employee onboarding document with company policies and required forms*
-* *Create a citizen notice with official information and response instructions*
 
-## Next Steps {#refine-with-ic-editor}
+## Sample prompts {#sample-prompts}
 
-After creating your initial communication structure using AI Assistant or Experience Hub, you can use the Interactive Communications Editor to refine and enhance your document:
+* *Create a communication for a loan statement using the template at https://[aem-author-url]/path/to/pdf/file*
+* *Create a communication from PDF at https://[aem-author-url]/path/to/pdf/file*
+* *Create a communication from image file at https://[aem-author-url]/path/to/image/file*
+* Create a letter using PDF file at https://[aem-author-url]/path/to/pdf/file
 
-* **Incremental component building**: Add or modify individual components such as text, images, charts, tables, and barcodes through the visual editor.
 
-* **Dynamic data binding**: Configure data sources, set up field mappings, and bind components to back-end data for personalization.
+## Refine your communication {#refine-with-ic-editor}
 
-* **Layout and design refinement**: Adjust positioning, formatting, styling, and master pages to achieve pixel-perfect correspondence.
 
-* **Fragment creation and management**: Create reusable document fragments such as headers, footers, disclaimers, and signature blocks for consistency.
+After creating your initial communication structure using AI Assistant, you can use the Interactive Communications Editor to refine and enhance your document. In Interactive Communications Editor, you can provide prompts in natural language to:
 
-* **Rule and logic creation**: Define conditional content, set up business rules, and configure validations through the rule editor.
+* **Add fields and content**: Add new fields, text blocks, images, charts, tables, and other components to your communication documents using natural language prompts. The agent interprets your instructions and inserts the appropriate elements with proper structure and formatting.
 
-* **Multi-channel output**: Configure both print and web channel versions, ensuring optimal presentation across delivery formats.
+* **Edit fields and content**: Modify existing fields and content within your communication documents through conversational commands. Update field properties, change text content, adjust data bindings, and refine component configurations.
 
-For more information, see [Interactive Communications documentation](/help/forms/introduction-to-interactive-communication.md).
+* **Remove fields and content**: Delete unwanted fields, components, or sections from your communication documents using natural language instructions. The agent removes the specified elements while maintaining document structure and layout integrity.
+
+* **Style fields and content**: Apply formatting and styling to fields and content through natural language prompts. Adjust fonts, colors, alignment, spacing, and other visual properties to match your brand guidelines and design requirements.
+
+### Sample prompts for refining communications {#sample-prompts-refining}
+
+* *Generate a Vehicle Insurance Claim Settlement letter*
+* *Make the disclaimer text italic*
+* *Change the font size of the disclaimer text to 12*
+* *Update the font color of the disclaimer text to red*
+* *Update the background color of the header and footer text boxes to light gray*
+* *Add a new disclaimer panel with signature and confirmation fields*
+* *Remove the confirmation text field*
+* *Add a payment details table with three columns*
+* *Update the alignment of the policy number field to center*
+* *Change the line spacing of the terms and conditions section to 1.5*
+
+For more information on capabilties of Interactive Communication editor, see [Interactive Communications documentation](/help/forms/introduction-to-interactive-communication.md).
+
+## Activation {#activation}
+
+To enable the Experience Production Agent for your organization, activation must be initiated through Adobe. Begin the process by reaching out via:
+
+* Email: `experience-production-agent@adobe.com`
+* Or, contact your designated Adobe account team.
+
+For an efficient onboarding experience, prepare and provide the following details:
+
+For **AEM as a Cloud Service**, share the following identifiers:
+
+* Organization ID
+* `product_id`
+* `profile_id`
+
+Your AEM administrator can locate these by:
+
+1. Navigating to <https://adminconsole.adobe.com/>
+1. Selecting **Adobe Experience Manager as a Cloud Service**
+1. Choosing the appropriate AEM instance in your environment
+1. Selecting a profile with read/write permissions for relevant content
+1. Copying the full browser URL from this page
+1. Extracting the `product_id` and `profile_id` values from the URL  
+       (e.g., a URL such as `https://adminconsole.adobe.com/products/profiles/users` contains these parameters).
+
+For **Edge Delivery Document Authoring**, supply your Adobe team with:
+
+* Domains for your Edge Delivery Services environment
+* Corresponding GitHub details:
+  * Organization (Org)
+  * Repository (Repo)
+  * Branch
+
+Providing complete and accurate information expedites the activation process and ensures timely provisioning of the Experience Production Agent.
 

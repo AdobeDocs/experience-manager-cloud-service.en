@@ -140,6 +140,19 @@ Similarly, you can specify this prompt in Spanish or misspell `Woman` as `Wman` 
 
 ![Semantic Search in Assets view](assets/semantic-search.png)
 
+### Enable or disable AI search in Assets view {#enable-disable-ai-search}
+
+Execute the following steps to enable or disable AI Search:
+
+1. Navigate to **[!UICONTROL Settings]** >> **[!UICONTROL General Settings]** and select the **[!UICONTROL Search]** tab.
+
+1. In the **[!UICONTROL Search]** section, select **[!UICONTROL AI Search]** to enable AI Search or **[!UICONTROL Keyword]** to disable it.
+
+   ![Semantic Search in Assets view](/help/assets/assets/enable-disable-ai-search.png)
+
+1. Click **[!UICONTROL Save]**.
+
+
 ## Search assets using [!DNL Adobe Firefly] {#search-firefly}
 
 You can search for an asset that is not available in any of the asset folders by utilizing the [!DNL Adobe Firefly] asset search feature within [!DNL Experience Manager Assets]. This allows you to efficiently generate assets in real-time that are not stored in the asset folders.

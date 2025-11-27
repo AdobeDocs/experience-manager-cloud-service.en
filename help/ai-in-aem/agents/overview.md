@@ -1,13 +1,13 @@
 ---
-title: Business Agents Overview
-description: Learn about the business agents available in AEM to accelerate your content creation and automatically orchestrate changes.
+title: Overview of Agents in AEM
+description: Learn about the Agents available in AEM to accelerate your content creation and automatically orchestrate changes.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 ---
 
-# AEM Business Agents Overview {#business-agents-overview}
+# Overview of Agents in AEM {#overview-of-agents-in-aem}
 
-These business agents are available in Adobe Experience Manager (AEM) as a Cloud Service to accelerate your content creation and automatically orchestrate changes.
+These agents are available in Adobe Experience Manager (AEM) as a Cloud Service to accelerate your content creation and automatically orchestrate changes.
 
 >[!IMPORTANT]
 >
@@ -18,7 +18,7 @@ These business agents are available in Adobe Experience Manager (AEM) as a Cloud
 
 >[!IMPORTANT]
 >
->To use the agents you will required to enroll.
+>To use the agents you will be required to enroll.
 
 ## Experience Production Agent {#experience-production-agent}
 
@@ -26,11 +26,11 @@ The [Experience Production Agent](/help/ai-in-aem/agents/production/overview.md)
 
 ## Content Optimization Agent {#content-optimization-agent}
 
-The [Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/using.md) transforms how users refine and adapt assets by applying natural language instructions to create channel-ready variations. The agent interprets user intent and performs complex editing tasks automatically to perform tasks including generating new renditions, adjusting visual properties, changing backgrounds, or preparing assets for specific digital channels.
+The [Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/overview.md) transforms how users refine and adapt assets by applying natural language instructions to create channel-ready variations. The agent interprets user intent and performs complex editing tasks automatically to perform tasks including generating new renditions, adjusting visual properties, changing backgrounds, or preparing assets for specific digital channels.
 
 ## Discovery Agent {#discovery-agent}
 
-The [Discovery Agent](/help/ai-in-aem/agents/discovery/using.md) delivers AEM content for a streamlined, click-free discovery experience. It intelligently searches across Assets, Content Fragments, and Adaptive Forms to deliver relevant materials such as images, videos, PDF documents, articles, and form templates. 
+The [Discovery Agent](/help/ai-in-aem/agents/discovery/overview.md) delivers AEM content for a streamlined, click-free discovery experience. It intelligently searches across Assets, Content Fragments, and Adaptive Forms to deliver relevant materials such as images, videos, PDF documents, articles, and form templates. 
 
 ## Development Agent {#development-agent}
 
