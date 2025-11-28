@@ -37,7 +37,7 @@ For a newly created program, a New Relic One sub-account is created for you. How
 
 >[!NOTE]
 >
->A user in the **Business Owner** or **Deployment Manager** role must be logged in to manage the New Relic One sub-account.
+>A user in the **Business Owner** role must be logged in to manage the New Relic One sub-account.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
