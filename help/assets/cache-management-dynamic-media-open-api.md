@@ -8,13 +8,19 @@ role: User
 
 Effective cache management is essential for delivering high-performance, scalable, and up-to-date digital assets. In Dynamic Media Open APIs, cache management defines how content is stored, refreshed, and delivered across the various layers of the delivery pipeline. Asset delivery responses are cached at multiple layers to ensure optimal performance and fast content delivery.
 
+Prolonged caching in Dynamic Media Open APIs consists of three types of caching:
+
+1. [CDN Layer Caching](#cdn-layer-caching)
+2. [Active Cache Invalidation](#active-cache-invalidation)
+3. [External Cache Control (BYOCDN & Browser Caching)](#byocdn-browser-caching)
+
 ## 1. CDN Layer Caching {#cdn-layer-caching}
 
 Asset delivery responses are cached at Adobe's CDN layers for an extended period to maximize performance and minimize load on the origin. This caching is fully managed by Adobe to ensure a consistently high-quality experience for end users. The cache duration is intentionally optimized for performance and cannot be customized by users to maintain reliability and efficient content delivery across all customers.
 
 All delivery URLs are cached at the edge (Fastly) for an extended duration to ensure optimal performance. The cached delivery objects include static renditions, videos, original image binaries, and dynamically transformed images such as resized or reformatted assets generated through URL parameters. The CDN is designed to serve these assets directly from the cache without revalidating them, unless an explicit purge is performed.
 
-## 2. Active Cache Invalidation {#active-cache}
+## 2. Active Cache Invalidation {#active-cache-invalidation}
 
 Whenever an asset is updated, deleted, or modified (any metadata changes), the CDN automatically invalidates every associated delivery URL. This applies to URLs that use vanity IDs or aliases, along with any URLs that include transformation parameters, such as width, format, or quality. This event-driven invalidation ensures that your users always receive the most current version of your assets without manual intervention.
 
