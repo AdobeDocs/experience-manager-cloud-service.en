@@ -22,11 +22,11 @@ Whenever an asset is updated, deleted, or modified (any metadata changes), the C
 
 When there is a need to manually purge cached content, you can do so using AEM's cache invalidation capabilities. For detailed instructions on how to purge specific cache URLs, refer to [AEM Dispatcher Cache Invalidation](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/page-invalidate).
 
-## 3. External Cache Control (BYOCDN & Browser Caching) {#bycdn-browser-caching}
+## 3. External Cache Control (BYOCDN & Browser Caching) {#byocdn-browser-caching}
 
 Asset delivery responses include a `Cache-Control` header with a default `max-age` of **10 minutes** for downstream caching layers. This applies to custom *Bring-Your-Own-CDN (BYOCDN) configurations*, *end-user browsers*, and any *intermediate caching proxies*, ensuring consistent cache control across the entire delivery path.
 
-### Customizing Cache Control Headers
+### Customizing Cache Control Headers {#customizing-cache-control-headers}
 
 If you need to modify the cache control behavior for your specific use case, you can configure custom CDN rules to adjust response headers. This allows you to set different cache durations based on your requirements. Refer to [AEM Custom CDN Rules for Response Headers](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic).
 
@@ -65,7 +65,7 @@ The cache purge triggers automatically in the following circumstances:
 
 +++ **How long does it take for the cache to refresh after updating an asset?**
 
-The overall time is *<60 seconds*.
+Any time the asset changes, the cache refreshes usually in *less than 60 seconds*.
 
 +++
 
@@ -83,18 +83,12 @@ The following mechanisms can be followed:
 
 +++ **What all asset types are supported for long lived caching?**
 
-The long lived caching is applicable to all types of assets in the Dynamic Media Open API, regardless of the asset type or format.
+The prolonged caching with event driven active cache invalidation is applicable to all types of assets in the Dynamic Media Open API, regardless of the asset type or format.
 
 +++
-
-+++ **Can I opt-out of long-lived caching for my repository?**
-
-You can contact [Adobe Support](https://helpx.adobe.com/in/contact.html) to add your repository in the denylist.
-
-+++
-
 
 
 >[!MORELIKETHIS]
 >
 >- [Integrate Asset Selector with various applications](/help/assets/integrate-asset-selector.md)
+>- [Vanity URLs](/help/assets/vanity-urls.md)
