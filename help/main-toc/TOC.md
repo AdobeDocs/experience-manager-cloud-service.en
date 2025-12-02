@@ -732,7 +732,9 @@ user-guide-title: AEM as a Cloud Service
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
     + [AEM Assets View UI Extensibility](/help/assets/aem-assets-view-ui-extensibility.md)
 
-    + [Manage reports](/help/assets/manage-reports-assets-view.md)
+>[!CAUTION]
+>
+>    + [Manage reports](/help/assets/manage-reports-assets-view.md)
   + Content Hub {#content-hub}
     + [Overview](/help/assets/product-overview.md)
     + [What's new in Content Hub](/help/assets/whats-new.md)
@@ -1008,7 +1010,7 @@ user-guide-title: AEM as a Cloud Service
       + [Generate PDF Preview](/help/forms/interactive-communication/pdf-preview.md)
       + [Enable Template Lock](/help/forms/interactive-communication/template-lock.md)
       + [Implement Dynamic Page Numbering](/help/forms/interactive-communication/dynamic-page.md)
-      + [Manage Content Overflow Handling](/help/forms/interactive-communication/content-overflow.md)
+      + [Handle Content Overflow](/help/forms/interactive-communication/content-overflow.md)
       + [Support XDP Editing](/help/forms/interactive-communication/support-xdp.md)
     + Associate UI {#associateui}  
       + [Associate UI in Interactive  Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
@@ -1573,3 +1575,4 @@ user-guide-title: AEM as a Cloud Service
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 + Troubleshooting {#troubleshooting}
   + [Troubleshoot AEM Assets and Forms issues](/help/troubleshooting/home.md)
+
