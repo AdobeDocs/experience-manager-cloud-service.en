@@ -23,7 +23,7 @@ hidefromtoc: yes
 
 Rule Editor in the Interactive Communication Editor allows authors to define dynamic behaviors that make communications interactive and intelligent. Rules control how fields behave, display, or calculate based on user actions or underlying data, ensuring each communication is personalized and context-aware.
 
-From simple visibility settings to complex conditional logic, rules empower authors to deliver experiences that adapt in real time—enhancing usability, accuracy, and engagement.
+From simple visibility settings to complex conditional logic, rules empower authors to deliver experiences that adapt in real time, enhancing usability, accuracy, and engagement.
 
 ![Find IC Doc](/help/forms/interactive-communication/assets/rule-creation.png)
 
@@ -37,9 +37,9 @@ From simple visibility settings to complex conditional logic, rules empower auth
 
 - **Default Values:** Predefine values in fields (e.g., today's date, customer name from data model) to save time and improve accuracy.
 
-2.2 Calculations, Validations, and Rule Editor
+2.2 Implement Calculations, Validations, and Rule Logic
 
-- **Field Logic:** Automate calculations and field relationships, such as totaling invoice amounts or auto-populating dependent fields.
+- **Field Logic:** Automate calculations and field relationships, such as calculating invoice amounts or auto-populating dependent fields.
 
 - **Custom Rules:** Create advanced logic using the Rule Editor for complex scenarios like eligibility checks or tier-based pricing.
 
