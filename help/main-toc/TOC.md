@@ -977,8 +977,9 @@ user-guide-title: AEM as a Cloud Service
     + [Scripting support for HTML5 forms](/help/forms/scripting-support.md)
     + [Form set in AEM Forms](/help/forms/formset-in-aem-forms.md)
   + Interactive Communication {#interactive-communication}
-    + Overview {#overview}
-      + [Introduction to Interactive Communication editor](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
+    + Understanding Interactive Communication {#overview}
+      + [Introduction](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
+      + [Getting Started](/help/forms/interactive-communication/getting-started-with-interactive-communication-editor.md)
       + [Create an Interactive Communication](/help/forms/interactive-communication/create-interactive-communication.md)
       + [Create an Interactive Communication Template](/help/forms/interactive-communication/create-interactive-communication-template.md)
       + [Create an Interactive Communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
@@ -999,15 +1000,18 @@ user-guide-title: AEM as a Cloud Service
       + [Table](/help/forms/interactive-communication//table.md)
       + [Line](/help/forms/interactive-communication/line.md)
       + [Barcode](/help/forms/interactive-communication/barcode.md)
-    + [Data Binding](/help/forms/interactive-communication/data-binding.md)
-    + [Rule Editor](/help/forms/interactive-communication/rule-editor.md)
-    + [Import and Export](/help/forms/interactive-communication/import-and-export.md)
-    + [Add Custom Fonts](/help/forms/interactive-communication/add-custom-fonts.md)
-    + [PDF Preview](/help/forms/interactive-communication/pdf-preview.md)
-    + [Template Lock](/help/forms/interactive-communication/template-lock.md)
-    + [Dynamic Page Numbering](/help/forms/interactive-communication/dynamic-page.md)
-    + [Content Overflow Handling](/help/forms/interactive-communication/content-overflow.md)
-    + [Support XDP Editing](/help/forms/interactive-communication/support-xdp.md)
+    + How To {#howto}  
+      + [Configure Data Binding](/help/forms/interactive-communication/data-binding.md)
+      + [Use the Rule Editor](/help/forms/interactive-communication/rule-editor.md)
+      + [Import and Export the Interactive Communication](/help/forms/interactive-communication/import-and-export.md)
+      + [Add Custom Fonts](/help/forms/interactive-communication/add-custom-fonts.md)
+      + [Generate PDF Preview](/help/forms/interactive-communication/pdf-preview.md)
+      + [Enable Template Lock](/help/forms/interactive-communication/template-lock.md)
+      + [Implement Dynamic Page Numbering](/help/forms/interactive-communication/dynamic-page.md)
+      + [Manage Content Overflow Handling](/help/forms/interactive-communication/content-overflow.md)
+      + [Support XDP Editing](/help/forms/interactive-communication/support-xdp.md)
+    + Associate UI {#associateui}  
+      + [Associate UI in Interactive  Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
     + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
   + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)

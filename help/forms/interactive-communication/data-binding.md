@@ -21,7 +21,7 @@ hidefromtoc: yes
 
 ## 1. Introduction
 
-Data Binding in the Interactive Communication Editor connects on-canvas fields with a governed data layer so that communications render with real, contextual information. By linking components to a Form Data Model (FDM) or global payload, authors can ensure accuracy, reduce manual work, and deliver dynamic, personalized experiences.
+Data Binding in the Interactive Communication Editor connects on-canvas fields with a governed data layer so that communications render with real, contextual information. By linking components to a Form Data Model (FDM), authors can ensure accuracy, reduce manual work, and deliver dynamic, personalized experiences.
 
 Beyond simply connecting values, Data Binding in IC supports visual mapping, prefill, and synchronization, enabling authors to design faster while staying aligned with backend systems and data models.
 
@@ -44,14 +44,6 @@ Beyond simply connecting values, Data Binding in IC supports visual mapping, pre
 - **Field Association:** Define the target path, data type (text, number, date, boolean, image), and optional formatters (e.g., date mask, currency).
 
 - **Bind Preview:** Test bindings with sample data sets to validate formatting and correctness before publishing.
-
-2.3 Binding Fields to Data Models
-
-- **Field Mapping:** Link text, image, or repeated structures (tables/lists) with the correct FDM nodes. Collections can use iteration sources and template rows.
-
-- **Data Sync:** Choose one-way (UI populated from the model) or two-way (user inputs saved back into the model).
-
-- **Prefill:** Use default values from the model or expressions to simplify data entry and improve accuracy.
 
 ## 3. Usage
 
