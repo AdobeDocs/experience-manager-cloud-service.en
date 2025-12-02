@@ -65,3 +65,13 @@ After creating your initial communication structure using AI Assistant, you can 
 * *Change the line spacing of the terms and conditions section to 1.5*
 
 For more information on capabilties of Interactive Communication editor, see [Interactive Communications documentation](/help/forms/introduction-to-interactive-communication.md).
+
+## Activation {#activation}
+
+To enable the Experience Production Agent for your organization, activation must be initiated through Adobe. Begin the process by reaching out via:
+
+* Email: `experience-production-agent@adobe.com`
+* Or, contact your designated Adobe account team.
+
+When reaching out, be sure to provide your AEM as a Cloud Service Organization ID.
+
