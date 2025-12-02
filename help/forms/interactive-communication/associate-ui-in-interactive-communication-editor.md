@@ -1,134 +1,109 @@
+---
+title: Associate UI in Interactive Communication Editor
+description: Discover associate UI in Interactive Communication Editor by enabling customer-facing agent to generate personalized, compliant communications.
+products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
+feature: Interactive Communication
+role: User, Developer, Admin
+exl-id: 50709c68-8666-47da-8788-fad793d870e6
+---
 
 # Associate UI in Interactive Communication Editor
 
-The **Associate UI** is a purpose-built interface for field associates, service agents, and other customer-facing teams who interact with customers either in person or virtually. It empowers them to generate personalized, compliant communications—such as notices, letters, and service updates—during real-time customer interactions.
+>[!NOTE]
+>
+> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
-Built on top of **Interactive Communications (IC)**, the Associate UI provides a simplified and controlled environment where only the necessary fields are exposed for data entry, ensuring accuracy, compliance, and ease of use.
+>[!IMPORTANT]
+>
+> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
 
-## Overview of the Associate UI
+The **Associate UI** is a specialized, simplified interface built on top of **Interactive Communications (IC)** technology. It is designed for customer-facing professionals, such as field associates, service agents, and frontline staff to generate personalized, compliant, and accurate communications in real time during live interactions.
 
-The Associate UI offers a clean, intuitive workspace where associates can:
+This streamlined environment hides the complexities of full authoring tools, exposing only essential, controlled fields required for data entry. This ensures speed, minimizes compliance risks, and supports high-volume service workflows.
 
-* Select and use published Interactive Communications.
-* Fill in fields on the **left panel**.
-* View a real-time preview of the communication on the **right panel**.
-* Generate and send notices instantly, ensuring consistency and compliance.
+## Key Capabilities of the Associate UI
 
-This interface limits unnecessary editing options, reduces errors, and supports associates in high-volume service scenarios.
+![Find IC Doc](/help/forms/interactive-communication/assets/associate-ui-preview.png)
 
-## User Personas in the Associate UI
+The Associate UI provides a clean, two-panel workspace that enables fast and secure communication generation:
 
-The Associate UI operates around **three primary user personas**, each with distinct responsibilities:
+### Left Panel: Data Entry
 
-### Administrator
+- Associates enter or confirm customer-specific information.
+- Validations, helper texts, and mandatory fields guide accurate input.
 
-Administrators manage the overall setup, permissions, and backend configurations required for the Associate UI.
+### Right Panel: Real-Time Preview
 
-**Key Responsibilities:**
+- Displays an instant preview of the final document.
+- Automatically updates as the associate fills in data.
 
-* Assign and manage user permissions for associate UI access.
-* Create and manage user groups such as **forms-associates**.
-* Configure backend systems including:
+### Instant Document Generation
 
-  * Form Data Models (FDM)
-  * Customer data retrieval services
-  * Output services (PDF generation, email)
-* Ensure secure, compliant access aligned with organizational rules.
-* Maintain performance, integration, and security for all related systems.
+- Generate, download, print, or email the finalized communication using pre-approved channels.
 
-### Author / IC Designer
+## User Personas and Responsibilities
 
-Authors design, configure, and prepare the Interactive Communication to be used by associates.
+The Associate UI is driven by three core roles, each with distinct responsibilities:
 
-**Key Responsibilities:**
+### 1. **Administrator**
 
-* Design IC templates, fragments, and layouts.
-* Configure Form Data Models (FDM) and map fields correctly.
-* Determine which fields should be **editable**, **mandatory**, or **read-only** for associates.
-* Apply data validations to ensure correct and regulated data entry.
-* Enable the Associate UI for each IC and assign field-level access.
-* Publish the IC and provide the **published IC link** to associates.
-* Ensure that the IC output (PDF, email, print) meets compliance, branding, accessibility, and regulatory requirements.
+Responsible for system setup, governance, backend integrations, and user access.
 
-### Business Associate (End User)
+| Responsibility | Focus |
+|---------------|-------|
+| System Configuration | Sets up Form Data Models (FDM), output services, and core infrastructure. |
+| Governance & Security | Manages user permissions and ensures system compliance. |
+| Integration Management | Maintains backend integrations and live customer data connections. |
 
-The associate uses the published IC through the Associate UI to generate and deliver real-time communications.
+### 2. **Author / Content Designer**
 
-**Key Responsibilities:**
+Designs and manages the Interactive Communication templates used within the Associate UI.
 
-* Open the link to the published IC provided by the author.
-* Enter or confirm customer-specific data in the left panel.
-* View a live preview of the document on the right panel.
-* Generate, download, or send notices to customers via approved channels (email/print).
-* Ensure accuracy of customer information during the interaction.
+| Responsibility | Focus |
+|---------------|-------|
+| IC Authoring & Design | Creates layout, branding, and compliant document structure. |
+| Field Configuration | Maps data fields; defines Editable, Mandatory, and Read-Only fields. |
+| Publishing & Enablement | Publishes the IC and shares the link for associate access. |
 
-## Enabling the Associate UI for an Interactive Communication
+### 3. **Business Associate (End User)**
 
-To make an IC available within the Associate UI, the following steps must be performed:
+Uses the published IC to assist customers and generate compliant communications.
 
-### Step 1: Create and Publish the Interactive Communication
+| Responsibility | Focus |
+|---------------|-------|
+| Data Confirmation | Fills or validates customer data via the left entry panel. |
+| Preview & Validation | Ensures accuracy using the real-time preview panel. |
+| Delivery | Generates the PDF/email and sends it via approved channels. |
 
-The author designs and configures the IC, including:
+## Dynamic Use Cases
 
-* Layout, components, and fragments
-* Data bindings and validations
-* Prefill logic and data model connectivity
-* Output configurations
+The Associate UI supports instant, personalized document generation—crucial for industries with real-time servicing needs.
 
-After review, the author publishes the IC.
+| Industry | Example Use Cases |
+|----------|-------------------|
+| **Financial Services** | Generate real-time loan confirmation letters or risk-profile summaries. |
+| **Insurance** | Produce instant Proof-of-Insurance cards or claim disposition summaries. |
+| **Healthcare** | Create patient treatment plan summaries with calculated copay and schedules. |
+| **Human Resources** | Generate personalized job offer letters with dynamic salary and benefits info. |
 
-### Step 2: Enable Associate UI Access
+## Enabling the Associate UI Workflow
 
-In the IC settings, the author must:
+Making an IC accessible in the Associate UI requires collaboration across personas:
 
-* Enable the *Associate UI* for the communication.
-* Choose which fields are:
+### 1. Template Finalization
 
-  * Editable
-  * Mandatory
-  * Read-only
-* Define the allowed communication modes (PDF, email, print).
+- Authors design, configure, and publish the IC.
+- Ensure compliance, branding, data bindings, and integrations are set.
 
-### Step 3: Assign User Permissions
+### 2. Access Definition
 
-Administrators assign permissions to the **forms-associates** group.
+- Administrators assign user permissions.
+- Authors specify editable fields and allowed output channels (PDF, Email, Print).
 
-Permissions define:
+### 3. Real-Time Delivery
 
-* Which IC templates associates can view and access.
-* Whether they can generate/download/send communications.
-* Any restricted fields or data elements.
+- Business Associates open the IC link, authenticate, enter required details, and generate the final communication.
 
-### Step 4: Provide the Published IC Link to Associates
 
-Authors share the published IC URL with associates.
-
-When associates open the link:
-
-* The **left panel** displays fields they can fill.
-* The **right panel** displays a real-time preview of the communication.
-
-This ensures a seamless fill-and-preview workflow.
-
-### Step 5: Enable in Business Portal (Optional)
-
-Organizations can embed the published IC in their business portals by using the generated **HTML file**, allowing associates easy access within their existing systems.
-
-## Authoring Best Practices
-
-* Keep only essential fields editable.
-* Provide clear labels, instructions, and validation messages.
-* Use conditional sections to reduce clutter.
-* Apply correct data bindings and prefill configurations.
-* Ensure accessibility and compliance for all components.
-* Protect legal texts and disclaimers from being edited.
-
-## Administrative Best Practices
-
-* Maintain accurate user group membership (e.g., **forms-associates**).
-* Validate backend integrations and data availability.
-* Monitor audit logs for traceability.
-* Test email/print channels periodically.
-
-The Associate UI in the Interactive Communication Editor bridges the gap between IC authoring and real-time customer engagement. By coordinating the roles of admins, authors, and associates and ensuring the right permissions, data models, and workflows. The Associate UI enables organizations to deliver fast, accurate, and compliant communications directly during customer interactions.
-
+The **Associate UI** bridges the gap between structured content authoring and real-time customer engagement.  
+By combining intuitive design, robust backend configuration, and strict compliance controls, organizations can deliver **fast, accurate, and personalized communications** at scale.
