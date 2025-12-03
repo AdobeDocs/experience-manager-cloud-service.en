@@ -26,7 +26,7 @@ It is good practice to have a domain name for your site that is memorable for yo
 
 >[!IMPORTANT]
 >
-> Default domains under adobeaemcloud.com should not be used to serve content that it is important for SEO purposes. The adobeaemcloud.com domains and subdomains are not indexable by search engines as they are serving a [default robots.txt](https://cdn.adobeaemcloud.com/robots.txt) that prevents crawling and indexing. You should use your own custom domain to serve a custom robots.txt.
+> Default domains under adobeaemcloud.com **should not be used** to serve content that is important for SEO purposes. The adobeaemcloud.com domains and subdomains are not indexable by search engines since they serve a [default robots.txt](https://cdn.adobeaemcloud.com/robots.txt) that prevents crawling and indexing. Instead, use your own custom domain to serve a custom robots.txt.
 
 You can buy a domain name from a domain name registrar, a company or organization managing and selling domain names. Domain name registrars manage domain names on DNS servers.
 
