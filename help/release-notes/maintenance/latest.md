@@ -12,7 +12,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 23482 {#23482}
 
-Summarized below are the continuous improvements for maintenance release 23482, which was publicly released on December 4, 2025. The previous maintenance release was release 23385.
+Summarized below are the continuous improvements for maintenance release 23482, which was publicly released on December 3, 2025. The previous maintenance release was release 23385.
 
 The 2025.12.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
