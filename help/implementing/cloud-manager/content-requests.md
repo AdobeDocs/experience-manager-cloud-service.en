@@ -107,6 +107,7 @@ As mentioned in the above section [Variances of Cloud Service content requests](
 * Balance your needs for freshness of content with AEM license cost for any custom search crawler you have integrated with your site.  An overly aggressive crawler may consume a lot of content requests.
 * Handle any redirects as server-side (status 301 or 302) rather than client-side (status 200 with javascript redirect) to avoid two separate content requests.
 * Combine or reduce API calls, which are JSON responses from AEM that may be loaded to render the page.
+* Ensure that the browser's user agent is correctly passed to AEM in order to leverage the "well-known search engine" content request exclusion rule described above.  Sometimes the originating user agent is lost with certain headless implementations or CDN configurations which can prevent the exclusion and lead to higher content requests than if the user agent were passed through.
 
 ### Traffic filter rules to manage content requests {#traffic-filter-rules-to-manage-crs}
 
