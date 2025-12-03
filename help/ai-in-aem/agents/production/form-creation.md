@@ -48,6 +48,17 @@ After creating your initial form structure using AI Assistant, you can use the F
 
 For more information, see [Forms Experience Builder documentation](/help/forms/experience-builder/product-overview.md).
 
+
+## Activation {#activation}
+
+To enable the Experience Production Agent for your organization, activation must be initiated through Adobe. Begin the process by reaching out via:
+
+* Email: `experience-production-agent@adobe.com`
+* Or, contact your designated Adobe account team.
+
+When reaching out, be sure to provide your AEM as a Cloud Service Organization ID.
+
+
 <!-- 
 #### Import and convert {#import-and-convert}
 
