@@ -22,7 +22,7 @@ The 2025.12.0 feature activation will provide the full feature set for this main
 * ASSETS-49770: Add Quarantine notifications for malware scan results.
 * ASSETS-54079: Apply custom metadataform for quarantine folder.
 * ASSETS-54083: Create scheduled quarantine cleanup mechanism.
-* ASSETS-54278: Remove the dam:avScanTime property from assets.
+* ASSETS-54278: Remove the `dam:avScanTime` property from assets.
 * ASSETS-57284: Restrict file uploads to Quarantine folder (disable drag & drop).
 * ASSETS-57428: Hide quarantine folder in Assets View UI.
 * ASSETS-57626: Improve retry behavior for async assets jobs.
@@ -33,7 +33,7 @@ The 2025.12.0 feature activation will provide the full feature set for this main
 * ASSETS-59966: Rename Malware Administrators group to Quarantine Administrators.
 * ASSETS-60166: Use VideoViewer.js instead of iframe-based URLs.
 * GRANITE-61378: Permissions debugging tool - ListPrincipals API.
-* GRANITE-63235: Query to identify Sites using cq:conf property, support detection of old pages/versions.
+* GRANITE-63235: Query to identify Sites using `cq:conf` property, support detection of old pages/versions.
 * SITES-30452: Content API with ASO - Title & Description Suggestions, XWalk support, JSON Patch operations, IMS Service Principal Binding.
 
 ### Fixed Issues {#fixed-issues-23482}
