@@ -24,10 +24,6 @@ These are the release notes for the 4 December 2025 release of the Universal Edi
 * A contextual menu is now available on the [structured tree on right-click.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
 * A hotkey was added to [duplicate components.](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)
 
-## Early Adoption Features {#early-adopter}
-
-If you are interested in testing these upcoming features and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 
-
 ### New RTE {#new-rte}
 
 The new ProseMirror RTE, featuring a page picker in the link dialog, is now available in the right panel. [This RTE features flexible configuration options.](/help/implementing/universal-editor/configure-rte.md)
