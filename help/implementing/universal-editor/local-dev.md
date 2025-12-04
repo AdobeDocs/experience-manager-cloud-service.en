@@ -12,7 +12,7 @@ Learn how you can run your own Universal Editor Service either for local develop
 
 >[!NOTE]
 >
->Local Universal Editor Services are not required or supported for projects using AEM authoring with Edge Delivery Services.
+>Local Universal Editor Services are not required for projects using AEM authoring with Edge Delivery Services.
 
 ## Overview {#overview}
 

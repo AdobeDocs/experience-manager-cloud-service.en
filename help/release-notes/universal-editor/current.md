@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2025.11.13 Release Notes
-description: These are the release notes for the 2025.11.13 release of the Universal Editor.
+title: Universal Editor 2025.11.20 Release Notes
+description: These are the release notes for the 2025.11.20 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.11.13 Release Notes {#release-notes}
+# Universal Editor 2025.11.20 Release Notes {#release-notes}
 
-These are the release notes for the 13 November 2025 release of the Universal Editor.
+These are the release notes for the 20 November 2025 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,11 +20,7 @@ These are the release notes for the 13 November 2025 release of the Universal Ed
 
 ## What's New {#what-is-new}
 
-* Contextual actions have been moved into a dropdown menus.
-* json schemas are now delivered for validation.
-* [Local developer login](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) is now a core part of the Universal Editor and the extension is no longer needed.
-* The right rail was migrated to a new UI.
-* Items in the content tree now auto-expand.
+* Toasts have been migrated to a new UI.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -36,5 +32,7 @@ The new ProseMirror RTE, featuring a page picker in the link dialog, is now avai
 
 ## Other Improvements {#other-improvements}
 
-* A specific width for the for the contextual menu was added.
-* Failures of the Universal Editor Service due to certain `null` values was fixed.
+* The handling of RTE values has been simplified.
+* A rare toolbar race condition was resolved.
+* Unused feature toggles were removed.
+* Dependencies were updated.
