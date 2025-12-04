@@ -156,6 +156,13 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 
 This process allows verification of details such as the host values, edge authentication configuration, and the x-forwarded-host header value. It also identifies whether an edge key is set and which key is used if a match exists.
 
+>[!NOTE]
+>
+>You can use a Rapid Development Environment (RDE) to deploy, and test, your configuration:
+>
+>* [Rapid Development Environments](/help/implementing/developing/introduction/rapid-development-environments.md)
+>* [How to use Rapid Development Environment](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+
 ### Sample CDN Vendor Configurations {#sample-configurations}
 
 Presented below are several configuration examples from several leading CDN vendors.
