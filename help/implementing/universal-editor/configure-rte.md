@@ -268,10 +268,7 @@ The following is an example of a complete configuration.
           "label": "Main Heading"
         }
       }
-    },
-    "components": [
-      "richtext"
-    ]
+    }
   }
 ]
 ```

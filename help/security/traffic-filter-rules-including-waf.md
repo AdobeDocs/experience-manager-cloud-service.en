@@ -76,8 +76,6 @@ The following is a high-level recommended end-to-end process for coming up with 
    ```
    kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      trafficFilters:
        rules:
@@ -114,8 +112,6 @@ Here's an example of a set of traffic filter rules, which also includes a WAF ru
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -296,8 +292,6 @@ This rule blocks requests coming from **IP 192.168.1.1**:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
@@ -314,8 +308,6 @@ This rule blocks request on path `/helloworld` on publish with a User-Agent that
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -336,8 +328,6 @@ This rule blocks requests on publish that contain the query parameter `foo`, but
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -361,8 +351,6 @@ This rule blocks requests to path `/block-me` on publish, and blocks every reque
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -387,8 +375,6 @@ This rule blocks access to OFAC countries:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -443,8 +429,6 @@ This rule blocks a client for 5 milliseconds when it exceeds an average of 60 re
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -469,8 +453,6 @@ Block requests on path /critical/resource for 60 seconds when it exceeds an aver
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -506,8 +488,6 @@ The alert property can be applied to the action node for all action types (allow
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -532,8 +512,6 @@ This alert is enabled by default, but it can be disabled using the *defaultTraff
    ```
    kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      trafficFilters:
       defaultTrafficAlerts: false
@@ -572,8 +550,6 @@ The example below shows a sample `cdn.yaml` and two CDN log entries:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -674,8 +650,6 @@ Start with these rules:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev", "stage", "prod"]
 data:
   trafficFilters:
     rules:

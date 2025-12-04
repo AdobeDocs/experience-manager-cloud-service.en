@@ -3,7 +3,6 @@ title: Scripting support for HTML5 forms
 description: JavaScript, FormCalc properties, and other methods that are supported in HTML5 Forms.
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 feature: HTML5 Forms,Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f

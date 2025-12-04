@@ -65,8 +65,6 @@ For further debugging information and common errors, please check [Common Errors
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   authentication:
     authenticators:
@@ -171,8 +169,6 @@ The syntax is described below:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   authentication:
     authenticators:
@@ -225,8 +221,6 @@ The syntax is as follows:
 
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   authentication:
     authenticators:
