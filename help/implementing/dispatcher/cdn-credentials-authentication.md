@@ -34,7 +34,7 @@ data:
     ...
 ```
 
-Here are some guidelines to keep in mind when working with secrets
+Here are some guidelines to keep in mind when working with secrets:
 
 * Environment secrets must de deployed as a [Cloud Manager secret-type environment variable](/help/operations/config-pipeline.md#secret-env-vars). For the Service Applied field, select All.
 * Secret references are not interpolated inside strings (eg. `"Token ${{AUTH_TOKEN}}"` will not work)
