@@ -16,7 +16,7 @@ The Adobe-provided CDN has several features and services, some of which rely on 
 
 Each of these, including the configuration syntax, is described in its own section below. 
 
-Environment or Pipeline (deploy phase) secrets can be referenced with `${{..}}` synthax and can be used wherever a literal value can be used, in conditions or setters. 
+Environment or Pipeline (deploy step) secrets can be referenced with `${{..}}` syntax and can be used wherever a literal value can be used, in conditions or setters. 
 
 ```
 kind: "CDN"
