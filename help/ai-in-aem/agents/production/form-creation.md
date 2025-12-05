@@ -56,33 +56,8 @@ To enable the Experience Production Agent for your organization, activation must
 * Email: `experience-production-agent@adobe.com`
 * Or, contact your designated Adobe account team.
 
-For an efficient onboarding experience, prepare and provide the following details:
+When reaching out, be sure to provide your AEM as a Cloud Service Organization ID.
 
-For **AEM as a Cloud Service**, share the following identifiers:
-
-* Organization ID
-* `product_id`
-* `profile_id`
-
-Your AEM administrator can locate these by:
-
-1. Navigating to <https://adminconsole.adobe.com/>
-1. Selecting **Adobe Experience Manager as a Cloud Service**
-1. Choosing the appropriate AEM instance in your environment
-1. Selecting a profile with read/write permissions for relevant content
-1. Copying the full browser URL from this page
-1. Extracting the `product_id` and `profile_id` values from the URL  
-       (e.g., a URL such as `https://adminconsole.adobe.com/products/profiles/users` contains these parameters).
-
-For **Edge Delivery Document Authoring**, supply your Adobe team with:
-
-* Domains for your Edge Delivery Services environment
-* Corresponding GitHub details:
-  * Organization (Org)
-  * Repository (Repo)
-  * Branch
-
-Providing complete and accurate information expedites the activation process and ensures timely provisioning of the Experience Production Agent.
 
 <!-- 
 #### Import and convert {#import-and-convert}
