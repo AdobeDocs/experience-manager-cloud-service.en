@@ -23,7 +23,7 @@ The **Associate UI** is a specialized, simplified interface built on top of Inte
 
 The Associate UI provides a clean, two-panel workspace that enables fast and secure communication generation:
 
-### Left Panel: Data Entry
+## Left Panel: Data Entry
 
 - Associates enter or confirm customer-specific information.
 - Validations, helper texts, and mandatory fields guide accurate input.
