@@ -4,7 +4,6 @@ description: Discover associate UI in Interactive Communication Editor by enabli
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-exl-id: 50709c68-8666-47da-8788-fad793d870e6
 ---
 
 # Associate UI in Interactive Communication Editor
