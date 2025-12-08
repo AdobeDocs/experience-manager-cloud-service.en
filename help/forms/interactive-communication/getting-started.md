@@ -33,7 +33,7 @@ Access to IC Editor features is governed by [user roles within AEM](https://expe
 
 >[!NOTE]
 >
-> Ensure users are part of the appropriate AEM groups (e.g., `forms-users`, `template-authors`) to access corresponding features.
+> Ensure users are part of the appropriate AEM groups (e.g., `forms-user`, `fdm-author`, `template-authors`) to access corresponding features.
 
 ## Access the IC Editor
 

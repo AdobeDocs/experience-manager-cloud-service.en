@@ -982,9 +982,9 @@ user-guide-title: AEM as a Cloud Service
     + Understanding Interactive Communication {#overview}
       + [Introduction](/help/forms/interactive-communication/introduction-to-interactive-communication-editor.md)
       + [Getting Started](/help/forms/interactive-communication/getting-started-with-interactive-communication-editor.md)
-      + [Create an Interactive Communication](/help/forms/interactive-communication/create-interactive-communication.md)
-      + [Create an Interactive Communication Template](/help/forms/interactive-communication/create-interactive-communication-template.md)
-      + [Create an Interactive Communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+      + [Create Interactive Communication](/help/forms/interactive-communication/create-interactive-communication.md)
+      + [Create Interactive Communication Template](/help/forms/interactive-communication/create-interactive-communication-template.md)
+      + [Create Interactive Communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
       + [Introduction to Interactive Communication](/help/forms/introduction-to-interactive-communication.md)
       + [Create your First Interactive Communication](/help/forms/create-your-first-communication.md)
     + Component {#component}
