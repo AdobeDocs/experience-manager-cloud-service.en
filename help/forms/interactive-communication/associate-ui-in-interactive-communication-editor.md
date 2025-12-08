@@ -17,15 +17,7 @@ exl-id: 50709c68-8666-47da-8788-fad793d870e6
 >
 > **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
 
-The **Associate UI** is a specialized, simplified interface built on top of **Interactive Communications (IC)** editor. It is designed for customer-facing professionals, such as field associates and service agents to generate personalized, compliant, and accurate communications in real time during live interactions.
-
-This streamlined environment hides the complexities of full authoring tools, exposing only essential, controlled fields required for data entry. This ensures speed, minimizes compliance risks, and supports high-volume service workflows.
-
->[!NOTE]
->
-> The user must be part of the **forms-associates** group.
-
-## Key Capabilities of the Associate UI
+The **Associate UI** is a specialized, simplified interface built on top of Interactive Communications (IC) editor. It is designed for customer-facing professionals, such as field associates and service agents to generate personalized, compliant, and accurate communications in real time during live interactions.
 
 ![Find IC Doc](/help/forms/interactive-communication/assets/associate-ui-preview.png)
 
@@ -43,7 +35,7 @@ The Associate UI provides a clean, two-panel workspace that enables fast and sec
 
 ### Instant Document Generation
 
-- Generate, download, or email the finalized communication using pre-approved channels.
+- Generate or download the finalized communication.
 
 ## User Personas and Responsibilities
 
@@ -55,13 +47,13 @@ Responsible for system setup, governance, backend integrations, and user access.
 
 | Responsibility | Focus |
 |---------------|-------|
-| System Configuration | Sets up Form Data Models (FDM), output services, and core infrastructure. |
+| System Configuration | Sets up core infrastructure, user groups, Form Data Models (FDM), output . |
 | Governance & Security | Manages user permissions and ensures system compliance. |
 | Integration Management | Maintains backend integrations and live customer data connections. |
 
 ### 2. Author
 
-Designs and manages the Interactive Communication using Associate UI. 
+Designs and manages the Interactive Communication using Associate UI. ß
 
 | Responsibility | Focus |
 |---------------|-------|
@@ -69,9 +61,10 @@ Designs and manages the Interactive Communication using Associate UI.
 | Field Configuration | Maps data fields, defines Editable, Mandatory, and Read-Only fields. |
 | Publishing & Enablement | Publishes the IC and shares the link for associate access. |
 
-### 3. Associate (End User)
+### 3. Associate 
 
-Uses the published Interactive Communication to assist customers and generate compliant communications.
+Uses the Associate UI to assist customers, update information and generate compliant communications.
+
 
 | Responsibility | Focus |
 |---------------|-------|
@@ -79,20 +72,29 @@ Uses the published Interactive Communication to assist customers and generate co
 | Preview & Validation | Ensures accuracy using the real-time preview panel. |
 | Delivery | Generates the PDF/email and sends it via approved channels. |
 
+>[!NOTE]
+>
+> Associate must be part of the **forms-associates** group.
+
 ## Dynamic Use Cases
 
 The Associate UI supports instant, personalized document generation, crucial for industries with real-time servicing needs.
 
 | Industry | Example Use Cases |
 |----------|-------------------|
-| **Financial Services** | Generate real-time loan confirmation letters or risk-profile summaries. |
+| **Financial Services** | Generate real-time loan confirmation letters, risk-profile summaries, account creation. |
 | **Insurance** | Produce instant Proof-of-Insurance cards or claim disposition summaries. |
 | **Healthcare** | Create patient treatment plan summaries with calculated copay and schedules. |
-| **Human Resources** | Generate personalized job offer letters with dynamic salary and benefits info. |
+| **Public Sector** | Generate police verification reports, citizen service receipts, grievance acknowledgment letters, and case update summaries on-the-spot. |
+| **Government** | Create application status summaries, service approval letters, and real-time communication for welfare scheme enrollments. |
 
 ## Enabling the Associate UI Workflow
 
-Follow the steps below to configure and publish an Interactive Communication (IC) for Associate UI access:
+Author can ollow the steps below to configure and publish an Interactive Communication (IC) for Associate UI access:
+
+>[!NOTE]
+>
+> Supported components for associate.
 
 ### Create the IC
 
@@ -100,12 +102,14 @@ Design and configure the Interactive Communication, ensuring branding, data bind
 
 ### Enable the Associate UI
 
-From the top action bar, enable the Associate UI option to make the IC available for associate-driven workflows.
+From the top action bar, enable the Associate UI option to make the IC available for associate-driven.
+
+### Enable the Associate UI in component
 
 ### Configure Editable Fields
 
 In the required fields section, enable the fields that associates can edit.
-Set validations, conditions, and field-level rules to ensure accurate and controlled data input.
+Set validations to ensure accurate and controlled data input.
 
 ### Publish the IC
 
@@ -113,7 +117,7 @@ After finalizing all configurations, publish the Interactive Communication for s
 
 ### Share the Published IC with Associates
 
-Provide the published IC link to the Associate Agent, allowing them to authenticate, enter customer-specific information, and generate the final communication with valid inputs.
+Provide the published IC link to the Associate, allowing them to authenticate, enter customer-specific information, and generate the final communication with valid inputs.
 
 The **Associate UI** bridges the gap between structured content authoring and real-time customer engagement.  
 By combining intuitive design, robust backend configuration, and strict compliance controls, organizations can deliver **fast, accurate, and personalized communications** at scale.
