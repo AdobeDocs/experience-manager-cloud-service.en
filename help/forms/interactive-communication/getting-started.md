@@ -4,7 +4,6 @@ description: Interactive Communication allows organizations to design and delive
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-exl-id: 50709c68-8666-47da-8788-fad793d870e6
 ---
 
 # Getting Started with Interactive Communication (IC) Editor

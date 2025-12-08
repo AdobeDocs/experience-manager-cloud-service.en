@@ -20,7 +20,7 @@ role: User, Developer, Admin
 
 The Image component in the Interactive Communication Editor allows authors to enhance communication layouts by inserting static images. This component is essential for creating visually appealing layouts and incorporating branding elements such as logos or visual icons. Authors can place it in both Master Pages and Design View to ensure a consistent appearance across various output formats such as PDF. 
 
-![Find IC Docu](/help/forms/interactive-communication/assets/image.png)
+![Find IC Docu](/help/forms/interactive-communication/assets/image.1.png)
 
 ## 2.Properties 
 
