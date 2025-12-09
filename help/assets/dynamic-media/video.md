@@ -880,7 +880,7 @@ The original audio track extracted from a primary video file cannot be downloade
     | Create a separate folder for each asset | Create a folder for each caption file or audio track file that you selected for download. |
     | Email | Use your default email program to send the .zip file to a specified email address. |
     | Assets | Specifies the number of files that you are downloading and the combined total size of all selected files. Deselecting this option dims (turns off) the **[!UICONTROL Download]** button, preventing you from downloading any file. |
-    | Renditions | A rendition refers to an alternative version or a preview of the original file, usually a smaller or lower-resolution version. If it is shown as 0 B, it likely means that no alternate version is available or it is too small to register a size. | 
+    | Renditions | A rendition refers to an alternative version or a preview of the original file, usually a smaller or lower-resolution version. If it is shown as 0 B, it likely means that no alternate version is available or it is too small to register a size. |
 
 1. Select **[!UICONTROL Download]**.
 1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).

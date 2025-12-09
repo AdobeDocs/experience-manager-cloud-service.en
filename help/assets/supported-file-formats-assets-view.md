@@ -49,10 +49,12 @@ The various file types have different degrees of support for the use cases and f
 
 ## Search, use, and edit assets {#support-to-search-use-edit}
 
+<!--writer - please check RAW files row below. There was an extra column, so I deleted a duplicate section. I think I did it right. -->
+
 | Asset type    | [Download](/help/assets/manage-organize-assets-view.md#download) | Drag and drop | [Image editor](/help/assets/edit-images-assets-view.md) | [Search](/help/assets/search-assets-view.md)   | [Smart Tags](/help/assets/metadata-assets-view.md#tags) | [Rename](/help/assets/manage-organize-assets-view.md)   | [Versions](/help/assets/manage-organize-assets-view.md#versions-of-assets) |
 |---------------|----------|---------------|--------------|----------|------------|----------|----------|
 | Raster images | &#10003; | &#10003;      | &#10003;     | &#10003; | &#10003;   | &#10003; | &#10003; |
-| RAW files     | &#10003; | &#10003; | &minus; |  &#10003;   | &#10003; | &#10003;          | &#10003;   | &#10003;        |
+| RAW files     | &#10003; | &#10003;      |  &#10003;    | &#10003; | &#10003;   | &#10003; | &#10003; |
 | Folders       | &#10003; | &#10003;      | &minus;      | &#10003; | &minus;    | &#10003; | &#10003;  |
 | Videos        | &#10003; | &#10003;      | &minus;      | &#10003; | &#10003;   | &#10003; | &#10003;  |
 | CC Libraries  | &minus;  | &minus;       | &minus;      | &minus;  | &minus;    | &#10003; | &#10003;  |

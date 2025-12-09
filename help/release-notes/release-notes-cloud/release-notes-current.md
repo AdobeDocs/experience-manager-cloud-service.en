@@ -22,7 +22,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.10.0) is October 30, 2025. The next feature release (2025.11.0) is planned for November 20, 2025.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.11.0) is November 20, 2025. The next feature release (2025.12.0) is planned for December 11, 2025.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -38,52 +38,12 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 -->
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+## Agents in AEM {#agents-in-aem}
 
-### New features in Experience Manager Sites {#new-sites}
-
-* [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md): Content authors can now create and schedule future variations of structured content using Launches for Content Fragments. The new Content Fragment console allows creating, editing, managing, and scheduling Content Fragment Launches as branches for future content that can be synchronized with the source branch. A new Diff View provides a clear overview of all content changes before committing a Launch for future publication.
-
-* The [Content Model Editor for AEM Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) has been modernized to align with other React Spectrum–based interfaces in AEM. Its user interface implementation and extensibility model are now consistent with the Content Fragment Editor and Universal Editor. The new Model Editor is now default when opened from the new Content Model Admin UI. Opening a content model in Touch UI opens the Touch UI editor and offers to try out the new editor.
-  
-<!--
-
-### New Features in Content Hub {#new-features-content-hub}
-
-**Mark Collections as Favourites**
-
-You can now mark collections as Favorites in Content Hub, making it easier to organize and retrieve them. Once added, your favourite collections are conveniently available from the **Favourites** tab on the Content Hub home page.
-
-**Pin collections for quick access**
-
-Content Hub Administrators can now pin collections in Content Hub for quick access. Pinned collections are displayed in a dedicated **Pinned** section on the Collections home page, making it easier to keep important collections within reach.
-
->[!NOTE]
->
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
-
--->
+AEM provides a range of agents enabling you to accelerate your content creation and automatically orchestrate changes. For more information, see [Overview of Agents in AEM](/help/ai-in-aem/agents/overview.md).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### New features in Experience Manager Forms {#new-features-forms}
-
-**Universal Editor for Adaptive Forms and Form Fragments**
-
-The Universal Editor now delivers a unified authoring experience for creating Adaptive Forms and reusable Form Fragments. Authors can visually design forms within an intuitive WYSIWYG environment, leveraging powerful extensions and comprehensive submission capabilities. The editor integrates reCAPTCHA validation for enhanced security, provides pre-fill services to reduce manual input, and supports responsive design across all devices. 
-
-**Available Extensions:**
-
-* **Rule Editor**: The visual rule editor enables form authors to add dynamic behavior to form fields without coding, supporting event-driven rules, instant validation, and error handling.
-* **Form Properties**: A wizard to help users configure submit actions, pre-fill service, thank you message, and other forms-related behaviors directly within the editor.
-* **Form Data Source and Bind Reference**: The data source extension enables form authors to add components associated with a data model directly into an Adaptive Form and select a Bind Reference from a tree selection for all components.
-
-**Supported Submit Actions:**
-
-The Universal Editor supports a comprehensive range of submission workflows, including Custom Submit Action, Submit to Microsoft SharePoint, Submit to Microsoft OneDrive, Submit to Azure Blob Storage, Submit to REST endpoint, Invoke an AEM Workflow, Invoke a Power Automate flow, Submit to Marketo Engage, Submit to Adobe Experience Platform (AEP), Submit to Spreadsheet, Submit using Form Data Model (FDM), Submit to Workfront Fusion, and Send Email.
-
-For complete details, see the [Universal Editor for Edge Delivery Services for Forms documentation](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md). For information on configuring submit actions, see [Adaptive Form Submit Action](/help/edge/docs/forms/universal-editor/submit-action.md). 
- 
 <!-- ### Pre-Release features in AEM Forms 
 
 **Rule Editor Enhancements**
@@ -141,37 +101,11 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
   
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### New Features in Release Management {#new-features-release-management}
+### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
 
-**Pause Automatic Maintenance Updates**
+#### Upcoming Java API Deprecations {#java-api-deprecation}
 
-Go‑live days, live events, peak sales—these moments can't break. [Our new self‑service features](/help/implementing/deploying/quiet-hours-update-free-periods.md) stop automatic mainteanance updates when it matters, so your teams stay focused.
-
-* Quiet Hours: Block automatic maintenance during set times each day. Ideal for working hours, nightly runs or morning cutovers.
-* Update‑Free Period: Block automatic maintenance for a full week. Use it for launches, promos, or yearly freezes.
-
->[!NOTE]
->
->Available as a Limited Availability feature on September 25th.
->Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to get it activated on your programs.
-
-### AEM Log-Forwarding to More Destinations {#log-forwarding}
-
-It is now possible to forward AEM logs to Amazon S3, Sumo Logic, Dynatrace, and your own New Relic account (not the Adobe-provided account). Note that AEM logs (including Apache/Dispatcher) are supported for these logging destinations, but not CDN logs.
-
-See the full set of [supported log forwarding destinations](/help/implementing/developing/introduction/log-forwarding.md).
-
-### Config Pipeline for Edge Delivery Services {#config-pipeline-eds}
-
-Config Pipelines are now supported for sites built with Edge Delivery Services, expanding this capability beyond just AEM Author and AEM publish delivery. You can use Config Pipelines to manage settings such as CDN configuration, including traffic filter rules and origin selectors. See [Supported Configurations](/help/operations/config-pipeline.md#configurations). 
-
-Edge Delivery config pipelines also support secrets through Cloud Manager pipeline variables.
-
-See [Add Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
-
-### Upcoming Java API Deprecations {#java-api-deprecation}
-
-Several deprecated APIs were marked for removal on August 31st and thus should no longer be referenced. You will receive Actions Center notifications if deprecated API usage is detected in your code, and after Nov 13th, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
+Several deprecated APIs were marked for removal on August 31st and thus should no longer be referenced. You will receive Actions Center notifications if deprecated API usage is detected in your code, and after Dec 3rd, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
 +++ Expand to see the Java API deprecations
 
@@ -203,27 +137,42 @@ OSGi properties:
 
 -->
 
-### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
+#### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-Adobe upgraded **Stage** and **Production** environments to the higher-performance **Java 21 runtime** on October 14th, 2025. Starting late January, neither the AEM Cloud Service SDK nor any cloud environments will work with Java 11 runtime.
+Adobe upgraded **Stage** and **Production** environments to the higher-performance **Java 21 runtime** on October 14th, 2025. Starting **late January**, neither the AEM Cloud Service SDK nor any cloud environments will work with Java 11 runtime.
 
 >[!NOTE]
 >
 > To take advantage of the latest performance optimizations and language enhancements, it is recommended to build with Java 17 or Java 21  (preferred). Building with Java 8 and Java 11 remains supported for now but will be deprecated in an upcoming release. A separate communication will be issued prior to deprecation. See the *build time requirements* section of [this article](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 >
 
-### Enforcement of AEM Java Logs Configuration Policy {#logconfig-policy}
+#### Enforcement of AEM Java Logs Configuration Policy {#logconfig-policy}
 
 As noted in the April release notes, AEM Java logs must follow a standard format to ensure reliable monitoring across all customer environments. Custom log configurations—such as changes to log formatting, output files, or default log levels—are no longer supported. Logs must remain directed to the default files, and default log levels for AEM product code must be preserved. See full details in the [Logging article](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Starting on **November 20th**, any unsupported custom logging overrides will be ignored. Based on our analysis, most customers will not be impacted and Adobe has contacted customers whose current configuration may be affected.
+Starting on **December 10th**, any unsupported custom logging overrides will be ignored. Based on our analysis, most customers will not be impacted and Adobe has contacted customers whose current configuration may be affected.
 
 Please review and update any downstream processes that rely on custom logging behavior. For example:
 
 * If your log forwarding system expects a custom log format, you may need to adjust your ingestion rules.
 * If you've previously reduced log verbosity by changing log levels, please note that reverting to default levels may increase log volume.
 
-### Edge Computing (Beta Program) {#edge-computing}
+### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
+
+#### Pause Automatic Maintenance Updates {#pause-updates}
+
+Go‑live days, live events, peak sales—these moments can't break. [Our new self‑service features](/help/implementing/deploying/quiet-hours-update-free-periods.md) stop automatic mainteanance updates when it matters, so your teams stay focused.
+
+* Quiet Hours: Block automatic maintenance during set times each day. Ideal for working hours, nightly runs or morning cutovers.
+* Update‑Free Period: Block automatic maintenance for a full week. Use it for launches, promos, or yearly freezes.
+
+>[!NOTE]
+>
+>Available as a Limited Availability feature on September 25th.
+>Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to get it activated on your programs.
+>
+
+#### Edge Computing (Beta Program) {#edge-computing}
 
 Edge computing allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
 
@@ -237,14 +186,14 @@ Common use cases include:
 
 We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
 
-### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
+#### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
 
 Edge Authentication lets you restrict access to Edge Delivery Services pages to only those who have authenticated with your identity provider (IdP). This is achieved by deploying an OpenID Connect (OIDC) configuration YAML file.
 
 If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case and any questions you may have.
 
 <!--
-### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
+#### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
 
 The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
 
@@ -252,7 +201,7 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 -->
 
-### Canary Production Deployments to Test Code Before Accepting Live Traffic (Beta Program) {#canary-beta}
+#### Canary Production Deployments to Test Code Before Accepting Live Traffic (Beta Program) {#canary-beta}
 
 Validate a production build with internal-only test traffic before exposing it to end users. Ship to production, route only canary traffic (using a special header), monitor behavior, then either promote to live traffic or roll back—without impacting customers.
 
@@ -261,22 +210,27 @@ Deploy your code releases to production, but restrict it to only internal test t
 Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) to request access and share feedback.
 
 
-### AI Answers - Smarter, Context-Aware Responses for AEM Sites (Beta Program) {#ai-answers-beta}
+#### AI Answers - Smarter, Context-Aware Responses for AEM Sites (Beta Program) {#ai-answers-beta}
 
 AI Answers introduces a new way for your visitors to interact with your content. Powered by Retrieval-Augmented Generation (RAG) technology, it uses your AEM-managed data to deliver accurate, brand-consistent answers directly within your digital experiences. 
 
-As part of this beta, you can safely explore AI Answers in your AEM Cloud Service environment. This approach lets you validate performance, accuracy, and overall experience before making it available to your live audience. Once validated, you can promote your AI Answers experience to full production.
+We are preparing to launch the AI Answers Beta Program and are now inviting customers to register their interest. Because the beta will have very limited capacity, early sign-ups will receive priority consideration. Participating in the beta will allow you to explore AI Answers in your AEM Cloud Service environment, validate performance and accuracy, and help shape the future experience before it becomes generally available.
 
-To request beta access or share your feedback, please contact [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
+To request participation or receive updates, please contact [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
 
+#### Accelerate AEM Development with AI (Alpha Program)  {#ai-dev-alpha}
 
-### Snapshots for RDEs (Alpha Program) {#rde-snapshot-program}
+AEM Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. We’re gathering real-world experiences to help shape future Adobe-supported AI capabilities.
+
+Share what’s working for your team—and what you’d like Adobe to provide—by emailing [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
+
+#### Snapshots for RDEs (Alpha Program) {#rde-snapshot-program}
 
 In alpha, Rapid Development Environments (RDEs) now support a feature to take a snapshot of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
 
 Please email [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) if there's interest in providing feedback on this feature.
 
-### Expanded Application Performance Monitoring (APM) (Alpha program) {#apm-alpha}
+#### Expanded Application Performance Monitoring (APM) (Alpha program) {#apm-alpha}
 
 For observability, AEM Cloud Service currently supports Adobe-provided [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) and customer-managed [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). As we explore support for additional APM options, please email us at [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) with your preferred vendor or technology, along with use cases.
 

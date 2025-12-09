@@ -89,13 +89,12 @@ See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.
 | Traffic from DDOS attacks | Excluded | DDOS protection. AEM does auto-detect some of the DDOS attacks and blocks them. DDOS attacks if detected are not billable. |
 | AEM as a Cloud Service New Relic Monitoring | Excluded | AEM as a Cloud Service global monitoring. |
 | URL for customers to monitor their Cloud Service program | Excluded | Adobe recommends that you use the URL to monitor the availability or health check externally.<br><br>`/system/probes/health`|
-| AEM as a Cloud Service Pod Warm-up Service | Excluded |
-Agent: skyline-service-warmup/1.*|
+| AEM as a Cloud Service Pod Warm-up Service | Excluded | Agent: skyline-service-warmup/1.*|
 | Well-known search engines, social networks, and HTTP libraries (tagged by Fastly) | Excluded | Well-known services visiting the site regularly to refresh their search index or service:<br><br>Examples:<br>&bull; AddSearchBot<br>&bull; AhrefsBot<br>&bull; Applebot<br>&bull; Ask Jeeves Corporate Spider<br>&bull; Bingbot<br>&bull; BingPreview<br>&bull; BLEXBot<br>&bull; BuiltWith<br>&bull; Bytespider<br>&bull; CrawlerKengo<br>&bull; Facebookexternalhit<br>&bull; Google AdsBot<br>&bull; Google AdsBot Mobile<br>&bull; Googlebot<br>&bull; Googlebot Mobile<br>&bull; lmspider<br>&bull; LucidWorks<br>&bull; `MJ12bot`<br>&bull; Pinterest<br>&bull; SemrushBot<br>&bull; SiteImprove<br>&bull; StashBot<br>&bull; StatusCake<br>&bull; YandexBot<br>&bull; ContentKing<br>&bull; Claudebot|
 | Exclude Commerce Integration Framework calls | Excluded | Requests made to AEM that gets forwarded to the Commerce Integration Framework&mdash;the URL starts with `/api/graphql`&mdash;to avoid double counting, they are not billable for Cloud Service.|
 | Exclude `manifest.json` | Excluded | Manifest is not an API call. It is here to provide information on how to install web sites on a desktop or mobile phone. Adobe should not count JSON request to `/etc.clientlibs/*/manifest.json`|
 | Exclude `favicon.ico` | Excluded | Although the returned content should not be HTML or JSON, certain scenarios like SAML authentication flows have been observed to return favicons as HTML. As a result, favicons are explicitly excluded from the count.|
-| Experience Fragment (XF) – Same-domain reuse | Excluded | Requests made to XF paths (such as `/content/experience-fragments/...`) from pages hosted on the same domain (as identified by the Referer header matching the request host).<br><br> Example: A homepage on `aem.customer.com` pulling in an XF for a banner or card from the same domain.<br><br>&bull; URL matches /content/experience-fragments/...<br>&bull; Referer domain matches `request_x_forwarded_host`<br><br>**Note:** If the Experience Fragment path is customized (for example using `/XFrags/...` or any path outside of `/content/experience-fragments/`), the request will not be excluded and may be counted, even if it's same-domain. We recommend using Adobe’s standard XF path structure to ensure exclusion logic applies correctly.|
+| Experience Fragment (XF) – Same-domain reuse | Excluded | Requests made to XF paths (such as `/content/experience-fragments/...`) from pages hosted on the same domain (as identified by the Referer header matching the request host).<br><br> Example: A homepage on `aem.customer.com` pulling in an XF for a banner or card from the same domain.<br><br>&bull; URL matches /content/experience-fragments/...<br>&bull; Referer domain matches `request_x_forwarded_host`<br><br>**Note:** If the Experience Fragment path is customized (for example using `/XFrags/...` or any path outside of `/content/experience-fragments/`), the request will not be excluded and may be counted, even if it's same-domain. We recommend using Adobe's standard XF path structure to ensure exclusion logic applies correctly.|
 
 ## Managing content requests {#managing-content-requests}
 
@@ -104,10 +103,11 @@ As mentioned in the above section [Variances of Cloud Service content requests](
 ### Implementation techniques to manage content requests {#implementation-techniques-to-manage-crs}
 
 * Ensure that any Page Not Found responses are delivered with an HTTP status 404.  If they are returned with a status 200, they will count toward content requests.
-* Route health check or monitoring tools to the /systems/probes/health URL or use the HEAD method instead of GET to avoid incurring content requests.
+* Route health check or monitoring tools to the /system/probes/health URL or use the HEAD method instead of GET to avoid incurring content requests.
 * Balance your needs for freshness of content with AEM license cost for any custom search crawler you have integrated with your site.  An overly aggressive crawler may consume a lot of content requests.
 * Handle any redirects as server-side (status 301 or 302) rather than client-side (status 200 with javascript redirect) to avoid two separate content requests.
 * Combine or reduce API calls, which are JSON responses from AEM that may be loaded to render the page.
+* Ensure that the browser's user agent is correctly passed to AEM in order to leverage the "well-known search engine" content request exclusion rule described above.  Sometimes the originating user agent is lost with certain headless implementations or CDN configurations which can prevent the exclusion and lead to higher content requests than if the user agent were passed through.
 
 ### Traffic filter rules to manage content requests {#traffic-filter-rules-to-manage-crs}
 

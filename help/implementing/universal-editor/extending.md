@@ -22,7 +22,6 @@ As an Adobe Experience Cloud service, the Universal Editor's UI can be extended 
 * **[AEM Site Admin Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)**: Open the Sites Console to the location of the page in the Universal Editor
 * **[AEM Page Lock Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**: View and change the page lock status from the Universal Editor
 * **[AEM Workflows Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**: Start workflows on the page and page content from the Universal Editor
-* **[AEM Universal Editor Dev Login Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**: Easily authenticate to your local AEM SDK when developing locally
 * **[Generate Variations](/help/generative-ai/generate-variations-integrated-editor.md)**: Use generative artificial intelligence (AI) to create variations for your content directly in the properties panel.
 * **[AEM Product Picker for Universal Editor](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**: Integrate Adobe Commerce data by selecting or removing product data from the editor.
 * **[Universal Editor Content Drafts](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**: Create, edit, and manage multiple drafts of content.
