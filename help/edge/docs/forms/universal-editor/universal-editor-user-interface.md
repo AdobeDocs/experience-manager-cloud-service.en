@@ -241,8 +241,6 @@ The Form Properties panel includes the following sections:
 
 >[!IMPORTANT]
 >
-> **Early Access Feature:** Rule Editor requires special access. Contact [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) to enable this feature.
->
 > **Learn More:** See [Rule Editor Guide](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) for detailed instructions.
 
 #### **Authentication Header Settings**
