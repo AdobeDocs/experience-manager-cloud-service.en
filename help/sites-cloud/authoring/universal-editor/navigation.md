@@ -131,11 +131,11 @@ Select the Undo or Redo buttons to undo or redo the last edit in the editor. Ple
 >
 >Use the hot key `Command-Z` or `Shift-Command-Z` to undo or redo, respectively.
 
-#### Authentication Headers {#authentication-settings}
+#### Local Developer Login {#local-developer-login}
 
-Select the authentication headers icon if you need to [set a custom authentication header for local development purposes](/help/implementing/universal-editor/developer-overview.md#auth-header).
+Select the local developer login icon if you need to easily authenticate to your local AEM SDK [when developing locally.](/help/implementing/universal-editor/local-dev.md)
 
-![Authentication header settings button](assets/authentication-header-settings.png)
+![Local developer login button](assets/local-developer-login.png)
 
 #### Responsive Mode {#emulator}
 
@@ -253,6 +253,7 @@ In content tree mode, the panel shows the hierarchy of the page content.
 
 * When selecting an item in the content tree, the editor scrolls to that content and selects it.
 * When double-clicking an item in the content tree, the editor scrolls to that content and selects it and also opens the associated properties in [properties mode.](#properties-mode)
+* When right-clicking an item in the tree, a context menu will open with appropriate actions for the item.
 
 ![Content tree](assets/content-tree.png)
 
@@ -295,6 +296,10 @@ If you select a component within a container component either in the content tre
 ![Duplicate icon](assets/duplicate.png)
 
 Tapping or clicking the duplicate button [duplicates the selected component](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components).
+
+>[!TIP]
+>
+>Use the hot key `Command+d` to delete a selected component from a container.
 
 ##### Delete {#delete}
 

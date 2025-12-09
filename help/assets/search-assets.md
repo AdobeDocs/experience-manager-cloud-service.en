@@ -367,44 +367,50 @@ Use double quotations around keywords to find assets that contain the exact phra
 
 *Figure: Use of dash to search for assets not containing an excluded keyword.*
 
+## AI Search {#ai-search}
+
+AI Search is an advanced search capability that understands the meaning and intent behind a user's query rather than relying on exact keyword matches. It uses artificial intelligence (AI) and machine learning to deliver more accurate and context-aware results.
+
+Unlike traditional keyword-based search, which looks for exact terms, AI Search interprets relationships between words, concepts, and user intent. This ensures that users find what they are looking for—even if their query is phrased differently, contains typos, or is in another language.
+
+Some if its key benefits include:
+
+* **Multilingual support**: Search across multiple languages without requiring exact translations. Users can find relevant content regardless of their query language.
+
+* **Handles misspellings**: Interprets typos and spelling errors, ensuring accurate results even with imperfect input.
+
+* **Understands synonyms**: Delivers results for related terms and phrases, so users do not need to guess the right keyword.
+
+* **Context-Aware search**: Recognizes the intent behind a query, not just the exact words.
+
+### Examples for AI Search {#examples-ai-search}
+
+**Example Prompt**: *Woman drinking coffee*
+
+The traditional keyword-based search looks for exact matches of asset metadata, such as `Woman`, `drinking`, `Coffee`, and returns assets that include all these terms in the metadata.
+
+However, AI Search matches similar words such as `Girl`, `Lady` in the case of `Woman` and `Cappuccino` and `Latte` in the case of `Coffee`.
+
+Similarly, you can specify this prompt in Spanish or misspell `Woman` as `Wman` and still get the same results.
+
+
+### Enable or disable AI search in Admin view {#enable-disable-ai-search}
+
+Execute the following steps to enable or disable AI Search in Admin view:
+
+1. Navigate to **[!UICONTROL Tools]** >> **[!UICONTROL Assets]** >> **[!UICONTROL Assets Configurations]** >> **[!UICONTROL Assets Omnisearch Configuration]**.
+
+1. In the **[!UICONTROL Search]** section, select **[!UICONTROL AI Search]** to enable AI Search or **[!UICONTROL Keyword]** to disable it.
+
+   ![Enable or disable AI Search](/help/assets/assets/enable-ai-search-admin-view.png)
+
+1. Click **[!UICONTROL Save]**.
+
 ## Configuration and administration tasks related to search functionality {#configadmin}
 
 ### Search index configurations {#searchindex}
 
 Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
-
-### Visual or similarity search {#configvisualsearch}
-
-Visual search uses Smart Tags. After configuring smart tagging functionality, follow these steps.
-
-1. In [!DNL Experience Manager] CRXDE, in `/oak:index/lucene` node, add the following properties and values and save the changes.
-
-    * `costPerEntry` property of type `Double` with the value `10`.
-
-    * `costPerExecution` property of type `Double` with the value `2`.
-
-    * `refresh` property of type `Boolean` with the value `true`.
-
-   This configuration allows searches from the appropriate index.
-
-1. To create Lucene index, in CRXDE, at `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, create node named `imageFeatures` of type `nt-unstructured`. In `imageFeatures` node,
-
-    * Add `name` property of type `String` with the value `jcr:content/metadata/imageFeatures/haystack0`.
-
-    * Add `nodeScopeIndex` property of type `Boolean` with the value of `true`.
-
-    * Add `propertyIndex` property of type `Boolean` with the value of `true`.
-
-    * Add `useInSimilarity` property of type `Boolean` with the value `true`.
-
-   Save the changes.
-
-1. Access `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` and add `similarityTags` property of type `Boolean` with the value of `true`.
-1. Apply Smart Tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
-1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
-1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save the changes.
-
-For related information, see [understand smart tags in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html) and [how to manage smart tags](/help/assets/smart-tags.md).
 
 ### Mandatory metadata {#mandatorymetadata}
 

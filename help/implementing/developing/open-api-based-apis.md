@@ -53,8 +53,6 @@ Client IDs scope the APIs in an Adobe Developer Console project to specific AEM 
    ```
    kind: "API"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      allowedClientIDs:
        author:

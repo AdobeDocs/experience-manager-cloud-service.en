@@ -148,11 +148,17 @@ The following `openssl` commands can be used to convert non-PEM certificates.
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
-## Limitation on number of installed SSL certificates {#limitations}
+## Limitations {#limitations}
+
+### Number of installed SSL certificates {#number-installed-ssl-certs}
 
 At any given time, Cloud Manager supports up to 70 installed certificates. These certificates can be associated with one or more environments across your program and also include any expired certificates.
 
 If you have reached the limit, review your certificates and consider deleting any expired certificates. Or, group multiple domains in the same certificate since a certificate can cover multiple domains (up to 100 SANs).
+
+### Let's Encrypt rate limits for Adobe-managed DV certificates
+
+Adobe-managed DV certificates rely on Let's Encrypt. In addition to the Cloud Manager limit on installed certificates, Let's Encrypt enforces its own rate limits. One key limit is **New Certificates per Exact Set of Identifiers**: up to 5 certificates can be issued for the very same set of hostnames within any 7-day period. If this limit is reached, Cloud Manager shows an error and cannot create more certificates for that hostname set until the rate-limit window is reset. For the latest values and other related limits, see the [Let's Encrypt rate-limits documentation](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
 
 ## Learn more {#learn-more}
 
