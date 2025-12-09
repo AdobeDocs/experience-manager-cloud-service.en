@@ -1010,7 +1010,6 @@ user-guide-title: AEM as a Cloud Service
       + [Barcode](/help/forms/interactive-communication/barcode.md)
     + How To {#howto}  
       + [Configure Data Binding](/help/forms/interactive-communication/configure-data-binding.md)
-      + [Use the Rule Editor](/help/forms/interactive-communication/use-the-rule-editor.md)
       + [Import and Export the Interactive Communication](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md)
       + [Add Custom Fonts](/help/forms/interactive-communication/add-custom-fonts.md)
       + [Generate PDF Preview](/help/forms/interactive-communication/generate-pdf-preview.md)
