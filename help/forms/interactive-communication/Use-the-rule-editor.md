@@ -4,9 +4,6 @@ description: Create Rules in Interactive Communication Editor allows authors to 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: yes
-index: no
-hidefromtoc: yes
 ---
 
 # Rule Editor in Interactive Communication Editor
