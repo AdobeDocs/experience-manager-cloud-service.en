@@ -77,10 +77,6 @@ To set approval target:
 
    For more information on the available options, see [Default Approval Target and publish destinations for approved assets](#default-approval-target-options-publish-destinations).
 
-   >[!NOTE]
-   >
-   >Setting an approval target is a limited availability feature. You can get it enabled or disabled by creating a support ticket. If you have Dynamic Media with OpenAPI enabled, it is enabled by default.
-
    ![Approval status](/help/assets/assets/approval-status-delivery.png)
 
 1. Specify other asset properties and click **[!UICONTROL Save]**.

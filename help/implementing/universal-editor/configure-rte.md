@@ -9,10 +9,6 @@ exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
 
 Understand how you can configure the rich text editor (RTE) in the Universal Editor.
 
->[!NOTE]
->
->This documentation applies to the new RTE for the Universal Editor, which is available as an early adopter feature. If you are interested in testing this new feature, [please see the release notes for details.](/help/release-notes/universal-editor/current.md#new-rte)
-
 ## Overview {#overview}
 
 The Universal Editor provides a rich text editor (RTE) both in place and in the properties panel to allow authors to apply formatting changes as they edit their text.

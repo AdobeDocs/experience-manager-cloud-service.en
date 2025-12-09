@@ -10,108 +10,60 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 23385 {#23385}
+## Release 23482 {#23482}
 
-Summarized below are the continuous improvements for maintenance release 23385, which was publicly released on November 13, 2025. The previous maintenance release was release 22943.
+Summarized below are the continuous improvements for maintenance release 23482, which was publicly released on December 3, 2025. The previous maintenance release was release 23385.
 
-The 2025.11.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
-
->[!NOTE]
->
->Releases 23320 and 23122 have been made private. 
-
-### Enhancements {#enhancements-23385}
-
-* CQ-4361363: Latest AEM and Granite translations.
-* FORMS-21594: Enable Locking of Interactive Communications Template Content & Layout for Content Authors.
-* FORMS-20385: Support XDP Editing in Interactive Communications Editor.
-* FORMS-10883: Support for JSON with XHTML namespace tags in DoR generation to ensure accurate rendering of rich-text data submitted via APIs.
-* FORMS-21751: Canvas Features - Text Overflow, UI for Page Break.
-* FORMS-22049: Interactive Communications Editor - Migration to Spectrum 2.
-* FORMS-22050: Support for dynamic page numbering in Interactive Communications Editor.
-* FORMS-21606: Public OSGi Render SPIs for Interactive Communications.
-* FORMS-21613: Transaction reporting and performance logging for Render Interactive Communications SPIs.
-* GRANITE-62394: Updated joda-time to 2.12.7.
-* GRANITE-36205: Update Oak release to 1.88.0.
-* GRANITE-62020: Improve retry policy on `RepositoryServiceHttpClient`.
-* GRANITE-62169: Update commons-lang to 3.19.0.
-* SITES-35092: Content Fragments - New mixin and upgrade procedure for semantic search.
-* SITES-32319: Delivery OpenAPI - Support page references.
-* SITES-20123: GraphQL: Support superscript elements in JSON response.
-* SITES-34744: New "card" property in the Content Fragment response which contains data which can be used for rendering a thumbnail.
-* SITES-34571: Allow enumeration fields to be empty.
-* SITES-34812: Added capability to retrieve a Content Fragment without its references, by using the "references" parameter with the value "none".
-* SITES-35176: Checking out a content fragment via Touch UI now prevents the editing of the content fragment in the new editor by other users.
-* SITES-30371: Added support for uuid based reference fields.
-* SITES-19309: retrieve a maximum of 150 references when opening the move page wizard.
-* SITES-32515: Edge Delivery with Universal Editor - Add support for multi-fields and composite multi-fields (early access).
-* SITES-33784: Edge Delivery with Universal Editor - Add support for ld-json in page metadata.
-* SITES-34832: Edge Delivery with Universal Editor - Add public path of a page to page info servlet response.
-* SITES-25893: Edge Delivery with Universal Editor - Add support for strong and emphasize to text rendering in blocks.
-* SITES-26158: Edge Delivery with Universal Editor - Add support for table markup in blocks and columns (early access).
-* SITES-27949: Edge Delivery with Universal Editor - Make path mapping optional.
-* SITES-35811: Use new index in Content Fragments queries.
-* SKYOPS-120857: Update filevault to 4.1.4.
-* SKYOPS-118390: Update JCR Resource to 3.3.6.
-* SKYOPS-121082: Update versions of `org.apache.sling.discovery.standalone`, `org.apache.sling.jcr.packageinit` and `org.apache.sling.commons.fsclassloader` sling bundles.
-
-### Fixed Issues {#fixed-issues-23385}
-
-* ASSETS-58926: Fix video change thumbnail feature in DM.
-* ASSETS-58623: Fix npe in omnisearch when config exists.
-* CQ-4361144: Fixed the skipping of  Content Fragments from Translation Jobs.
-* CQ-4355446: Fixed the unlocalised string in Translation project occurring on Cancel translation job dialog.
-* CQ-4360747: Fix an issue where Repeatable Translation Jobs create empty payloads & trigger too often.
-* GRANITE-61318: Fix an issue where the page creation wizard only highlights mandatory fields in basic tab.
-* GRANITE-60514: Fix an issue where stopped scheduled publications during full-stack pipeline run.
-* GRANITE-61019: Fix issue with GC on first run after AEM restart.
-* GRANITE-60456: Fix issue when administrator open any user's property page.
-* SITES-34555: GraphQL - QueryValidationError after deployments.
-* SITES-35077: Content Fragments - Unpublish fails for fragments with parentheses due to incorrect URL-encoding.
-* SITES-35374: Content Fragments - Edited Content Fragment Disappears After Navigating Back.
-* SITES-36130: NPE in `EditorRestrictionsStatusImpl`.
-* SITES-35810: NullPointerException in Launches blocks publishEdgeDeliverySubscriber queue.
-* SITES-34368: AEM CIF generates 12 GraphQL aliases – exceeds Magento 2.4.6-P12 limit of 10.
-* SITES-36193: CCS connector fixes.
-* SITES-35169: Resolved issue that would cause incorrect pagination when invalid fragment resources were returned by the search.
-* SITES-34574: Fixed an issue where in some cases the cursor would not be returned by the  Content Fragment Search API.
-* SITES-35520: Fixed an issue that caused ClassCastException or timeouts when attempting to publish content.
-* SITES-35210: Fixed a NullPointerException that would occur when attempting to publish a broken fragment with empty references filter.
-* SITES-35933: Fixed a bug that would result in empty "Request for Activation" workflows being triggered after the content fragment was published.
-* SITES-35925: Fixed a bug related to patching Content Fragment Models which would delete the "translatable" and "showThumbnail" properties from the model.
-* SITES-35409: Fixed a bug that prevented the republishing of adjusted fragments when moving a page.
-* SITES-15757: Fixed a bug that prevented the republishing of adjusted pages when moving a page.
-* SITES-34638: Fixed a bug where properties from grandparent pages would not be included when creating new versions.
-* SITES-35226: Fixed a regression that caused the asset selector in page editor to fail loading under certain circumstances.
-* SITES-35071: CSV export returns unfiltered results when omnisearch uses quoted phrase.
-* SITES-32182: Edge Delivery with Universal Editor - fix encoding issues with URLs containing already encoded request parameters.
-* SITES-34324: Edge Delivery with Universal Editor - fix rendering of links with a tel: protocol.
-* SITES-35333: Edge Delivery with Universal Editor - fix asset rendition selection for images in page metadata.
-* SITES-35549: Edge Delivery with Universal Editor - fix double-encoded html entities in page metadata.
-
-#### AEM Guides {#guides-23385}
-
-* GUIDES-33597: If an empty `prop` element with no attributes or values is added to a DITAVAL file, then additional `prop` elements cannot be added.
-* GUIDES-33693: When you re-upload an edited image through the Experience Manager Guides UI, the image's original rendition gets updated but the associated DITA content continues to display the previous version of the image.
-* GUIDES-35607: Error logs that are generated while uploading an asset via the Assets UI or creating a new file from the Editor interface, incorrectly use the term `predecessor` instead of `successor` in the log message.
-* GUIDES-37649: When publishing a DITA map using baseline on AEM Sites (with legacy component mapping), the map elements with the attribute `processing-role = resource-only` are also getting published.
-
-For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
+The 2025.12.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
 
-### Known Issues {#known-issues-23385}
+### Enhancements {#enhancements-23482}
 
-* FORMS-22633: Form submissions may fail when custom code relying on the GuideBridge APIs (`getData` or `getDataXML`) is being used. If you experience this issue, please contact Adobe Support for assistance.
+* ASSETS-49770: Add Quarantine notifications for malware scan results.
+* ASSETS-54079: Apply custom metadataform for quarantine folder.
+* ASSETS-54083: Create scheduled quarantine cleanup mechanism.
+* ASSETS-54278: Remove the `dam:avScanTime` property from assets.
+* ASSETS-57284: Restrict file uploads to Quarantine folder (disable drag & drop).
+* ASSETS-57428: Hide quarantine folder in Assets View UI.
+* ASSETS-57626: Improve retry behavior for async assets jobs.
+* ASSETS-57879: Add merge option for async move/copy assets jobs.
+* ASSETS-58099: Add config to disable enhanced smart tags for entire environment.
+* ASSETS-58136: Implement pagination feedback in Search OpenAPI.
+* ASSETS-59402: Add async job endpoints for folder delete API: export packages to internal region.
+* ASSETS-59966: Rename Malware Administrators group to Quarantine Administrators.
+* ASSETS-60166: Use VideoViewer.js instead of iframe-based URLs.
+* GRANITE-61378: Permissions debugging tool - ListPrincipals API.
+* GRANITE-63235: Query to identify Sites using `cq:conf` property, support detection of old pages/versions.
+* SITES-30452: Content API with ASO - Title & Description Suggestions, XWalk support, JSON Patch operations, IMS Service Principal Binding.
 
-### Deprecated Features and APIs {#deprecated-23385}
+### Fixed Issues {#fixed-issues-23482}
+
+* ASSETS-57430: Fix Assets View upload skipping preprocessing: export `repoapi.preprocessing` package, update RAPI to latest.
+* ASSETS-58190: Reduce unnecessarily high guess total in Collections UI.
+* ASSETS-58866: Fix Asset title/description/ID returned in OpenAPI responses.
+* ASSETS-58868: Fix pagination when sort fields missing on assets.
+* ASSETS-58920: Fix bulk assets import skipping preprocessing.
+* ASSETS-59168: Fix scan start/end time showing incorrect timezone.
+* ASSETS-59702: Fix event ordering when asset status set to No Status.
+* ASSETS-59830: Re-queue async jobs stopped during pod termination.
+* ASSETS-49757: Fixes for Malware Detection scan events.
+* GRANITE-61019: Fix `gcMonitor` not notified on first run after AEM restart.
+* GRANITE-62717: Fix `JSafe` password handling with non-ASCII characters.
+* SITES-34331: Fix 503 timeout loading Rollout Overlay for non-admin users (`cqLiveSyncCancelled index`).
+
+### Known Issues {#known-issues-23482}
+
+None.
+
+### Deprecated Features and APIs {#deprecated-23482}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-23385}
+### Security Fixes {#security-23482}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 31 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 4 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-23385}
+### Embedded Technologies {#embedded-tech-23482}
 
 |Technology|Version|Link|
 |---|---|---|
@@ -121,3 +73,4 @@ AEM as a Cloud Service is dedicated to optimizing your platform's security and p
 |Apache HTTP Server| 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES)|
 |AEM Core Components| 2.30.2|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
 |Node.js|14 (default)|[Supported Node.js versions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions)|
+
