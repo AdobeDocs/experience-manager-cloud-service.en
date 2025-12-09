@@ -111,15 +111,15 @@ These release notes list the innovations delivered in the current release. For t
 
 * **PDF Preview in Interactive Communication Editor**
 
-    Users can preview Interactive Communications PDFs without data, with local JSON data files, or with data from a data model, enabling flexible data-driven testing. For more information, see [PDF Preview in Interactive Communication Editor](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md).
+    Users can preview Interactive Communications PDFs without data, with local JSON data files, or with data from a data model, enabling flexible data-driven testing. For more information, see [PDF Preview in Interactive Communication Editor](/help/forms/interactive-communication/generate-pdf-preview.md).
 
 * **Support of Custom Fonts in Interactive Communication**
 
-    The Custom Fonts feature allows users to embed custom or organization-approved fonts in the Interactive Communications, ensuring consistent and branded PDF rendering across devices and platforms. For more information, see [Support of Custom Fonts in Interactive Communication](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md).
+    The Custom Fonts feature allows users to embed custom or organization-approved fonts in the Interactive Communications, ensuring consistent and branded PDF rendering across devices and platforms. For more information, see [Support of Custom Fonts in Interactive Communication](/help/forms/interactive-communication/add-custom-fonts.md).
 
 * **Import and Export Interactive Communications**
 
-    This feature enables migration and reuse of Interactive Communications across different environments. You can now export an Interactive Communication along with its associated fragments and data models from one environment and import it into another. For more information, see [Import and Export Interactive Communications](/help/forms/interactive-communication/import-and-export-interactive-communications.md).
+    This feature enables migration and reuse of Interactive Communications across different environments. You can now export an Interactive Communication along with its associated fragments and data models from one environment and import it into another. For more information, see [Import and Export Interactive Communications](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md).
 
 * **Rule Editor Enhancements**
 
