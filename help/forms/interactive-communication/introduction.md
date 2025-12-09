@@ -23,7 +23,7 @@ Interactive Communication (IC) Editor is an intuitive visual design environment 
 
 You can integrate components such as text, images, charts, tables, and barcodes, while binding each element to structured data sources. This dynamic binding ensures that communications are automatically tailored for every recipient.
 
-![Find IC Doc](/help/forms/interactive-communication/assets/introimg.png)
+![Find IC Doc](/help/forms/interactive-communication/assets/introduction.png)
 
 ## Purpose and Use Cases
 
