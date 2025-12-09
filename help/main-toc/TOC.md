@@ -738,9 +738,7 @@ user-guide-title: AEM as a Cloud Service
     + [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
     + [AEM Assets View UI Extensibility](/help/assets/aem-assets-view-ui-extensibility.md)
 
->[!CAUTION]
->
->    + [Manage reports](/help/assets/manage-reports-assets-view.md)
+    + [Manage reports](/help/assets/manage-reports-assets-view.md)
   + Content Hub {#content-hub}
     + [Overview](/help/assets/product-overview.md)
     + [What's new in Content Hub](/help/assets/whats-new.md)
@@ -984,50 +982,50 @@ user-guide-title: AEM as a Cloud Service
     + [Debugging HTML5 forms](/help/forms/debug.md)
     + [Scripting support for HTML5 forms](/help/forms/scripting-support.md)
     + [Form set in AEM Forms](/help/forms/formset-in-aem-forms.md)
-  + Interactive Communication {#interactive-communication}
-    + Understanding Interactive Communication {#overview}
-      + [Introduction](/help/forms/interactive-communication/introduction.md)
-      + [Getting Started](/help/forms/interactive-communication/getting-started.md)
-      + [Create Interactive Communication](/help/forms/interactive-communication/create-interactive-communication.md)
-      + [Create Interactive Communication Template](/help/forms/interactive-communication/create-interactive-communication-template.md)
-      + [Create Interactive Communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
-      + [Introduction to Interactive Communication](/help/forms/introduction-to-interactive-communication.md)
-      + [Create your First Interactive Communication](/help/forms/create-your-first-communication.md)
-    + Component {#component}
-      + [Text Box](/help/forms/interactive-communication/text-box.md)
-      + [Image](/help/forms/interactive-communication/image.md)
-      + [Image Field](/help/forms/interactive-communication/image-field.md)
-      + [Text Field](/help/forms/interactive-communication/text-field.md)
-      + [Numeric Field](/help/forms/interactive-communication/numeric-field.md)
-      + [Date/Time Field](/help/forms/interactive-communication/date-time-field.md)
-      + [Date Field](/help/forms/interactive-communication/date-field.md)
-      + [Check Box](/help/forms/interactive-communication/check-box.md)
-      + [Radio Button](/help/forms/interactive-communication/radio-button.md)
-      + [Subform](/help/forms/interactive-communication/subform.md)
-      + [Rectangle](/help/forms/interactive-communication/rectangle.md)
-      + [Table](/help/forms/interactive-communication//table.md)
-      + [Line](/help/forms/interactive-communication/line.md)
-      + [Barcode](/help/forms/interactive-communication/barcode.md)
-    + How To {#howto}  
-      + [Configure Data Binding](/help/forms/interactive-communication/configure-data-binding.md)
-      + [Import and Export the Interactive Communication](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md)
-      + [Add Custom Fonts](/help/forms/interactive-communication/add-custom-fonts.md)
-      + [Generate PDF Preview](/help/forms/interactive-communication/generate-pdf-preview.md)
-      + [Enable Template Lock](/help/forms/interactive-communication/enable-template-lock.md)
-      + [Implement Dynamic Page Numbering](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
-      + [Handle Content Overflow](/help/forms/interactive-communication/handle-content-overflow.md)
-      + [Support XDP Editing](/help/forms/interactive-communication/support-xdp-editing.md)
-    + Associate UI {#associateui}  
-      + [Associate UI in Interactive  Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
-    + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
-  + Forms Centric Workflows {#create-form-centric-workflows}
++ Interactive Communication {#interactive-communication}
+   + Understanding Interactive Communication {#overview}
+     + [Introduction](/help/forms/interactive-communication/introduction.md)
+     + [Getting Started](/help/forms/interactive-communication/getting-started.md)
+     + [Create Interactive Communication](/help/forms/interactive-communication/create-interactive-communication.md)
+     + [Create Interactive Communication Template](/help/forms/interactive-communication/create-interactive-communication-template.md)
+     + [Create Interactive Communication Fragment](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
+     + [Introduction to Interactive Communication](/help/forms/introduction-to-interactive-communication.md)
+     + [Create your First Interactive Communication](/help/forms/create-your-first-communication.md)
+   + Component {#component}
+     + [Text Box](/help/forms/interactive-communication/text-box.md)
+     + [Image](/help/forms/interactive-communication/image.md)
+     + [Image Field](/help/forms/interactive-communication/image-field.md)
+     + [Text Field](/help/forms/interactive-communication/text-field.md)
+     + [Numeric Field](/help/forms/interactive-communication/numeric-field.md)
+     + [Date/Time Field](/help/forms/interactive-communication/date-time-field.md)
+     + [Date Field](/help/forms/interactive-communication/date-field.md)
+     + [Check Box](/help/forms/interactive-communication/check-box.md)
+     + [Radio Button](/help/forms/interactive-communication/radio-button.md)
+     + [Subform](/help/forms/interactive-communication/subform.md)
+     + [Rectangle](/help/forms/interactive-communication/rectangle.md)
+     + [Table](/help/forms/interactive-communication//table.md)
+     + [Line](/help/forms/interactive-communication/line.md)
+     + [Barcode](/help/forms/interactive-communication/barcode.md)
+   + How To {#howto} 
+     + [Configure Data Binding](/help/forms/interactive-communication/configure-data-binding.md)
+     + [Import and Export the Interactive Communication](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md)
+     + [Add Custom Fonts](/help/forms/interactive-communication/add-custom-fonts.md)
+     + [Generate PDF Preview](/help/forms/interactive-communication/generate-pdf-preview.md)
+     + [Enable Template Lock](/help/forms/interactive-communication/enable-template-lock.md)
+     + [Implement Dynamic Page Numbering](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
+     + [Handle Content Overflow](/help/forms/interactive-communication/handle-content-overflow.md)
+     + [Support XDP Editing](/help/forms/interactive-communication/support-xdp-editing.md)
+   + Associate UI {#associateui} 
+     + [Associate UI in Interactive  Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
+   + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
++ Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
     + [Use Forms-centric steps in a workflow + step reference](/help/forms/aem-forms-workflow-step-reference.md)
     + [Use variables in a Forms-centric workflow](/help/forms/variable-in-aem-workflows.md)
     + [Dynamic User or Group Selection in AEM Workflow](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
     + [Manage Forms applications and tasks in AEM Inbox](/help/forms/manage-applications-inbox.md)
     + [Use the Out of Office option](/help/forms/configure-out-of-office-settings.md)
-  + Communications APIs {#using-communications}
++ Communications APIs {#using-communications}
     + [Overview of Communications APIs](/help/forms/aem-forms-communication-api-overview.md)
     + [Introduction to Communications APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
     + [Authentication-OAuth Server-to-Server](/help/forms/oauth-api-authetication.md)
@@ -1600,4 +1598,3 @@ user-guide-title: AEM as a Cloud Service
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 + Troubleshooting {#troubleshooting}
   + [Troubleshoot AEM Assets and Forms issues](/help/troubleshooting/home.md)
-
