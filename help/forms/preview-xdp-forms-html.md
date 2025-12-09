@@ -2,13 +2,7 @@
 title: Generate HTML5 preview of an XDP form
 
 description: Preview HTML tab in LiveCycle Designer can be used to preview forms as they appear in a browser.
-
-
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-
-docset: aem65
-
 feature: HTML5 Forms,Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
@@ -119,9 +113,9 @@ Testing your form by using a sample data source ensures that the data and fields
 
 1. Select **File &gt; Form Properties**.
 
-1. Click the **Preview** tab and, in the Data File box, type the full path to your test data file. You can also use the Browse button to navigate to the file.
+2. Click the **Preview** tab and, in the Data File box, type the full path to your test data file. You can also use the Browse button to navigate to the file.
 
-1. Click **OK**. The next time you preview the form in the **Preview HTML** tab, the data values from the sample XML file will appear in the respective objects.
+3. Click **OK**. The next time you preview the form in the **Preview HTML** tab, the data values from the sample XML file will appear in the respective objects.
 
 ## Preview forms in a repository {#html-preview-of-forms-in-forms-manager}
 

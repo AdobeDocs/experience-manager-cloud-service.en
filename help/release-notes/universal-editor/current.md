@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2025.11.20 Release Notes
-description: These are the release notes for the 2025.11.20 release of the Universal Editor.
+title: Universal Editor 2025.12.04 Release Notes
+description: These are the release notes for the 2025.12.04 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.11.20 Release Notes {#release-notes}
+# Universal Editor 2025.12.04 Release Notes {#release-notes}
 
-These are the release notes for the 20 November 2025 release of the Universal Editor.
+These are the release notes for the 4 December 2025 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,11 +20,9 @@ These are the release notes for the 20 November 2025 release of the Universal Ed
 
 ## What's New {#what-is-new}
 
-* Toasts have been migrated to a new UI.
-
-## Early Adoption Features {#early-adopter}
-
-If you are interested in testing these upcoming features and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 
+* Authorization headers have been disabled in favor of the [local developer login.](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
+* A contextual menu is now available on the [structured tree on right-click.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* A hotkey was added to [duplicate components.](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)
 
 ### New RTE {#new-rte}
 
@@ -32,7 +30,6 @@ The new ProseMirror RTE, featuring a page picker in the link dialog, is now avai
 
 ## Other Improvements {#other-improvements}
 
-* The handling of RTE values has been simplified.
-* A rare toolbar race condition was resolved.
-* Unused feature toggles were removed.
-* Dependencies were updated.
+* An issue with the RTE not saving properly on canvas was resolved.
+* Content picker folder tree clipping was fixed.
+* `componentId` is now provided during add action.

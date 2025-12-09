@@ -43,6 +43,8 @@ You can filter the search results based on the following parameters.
 * Custom Filters: [Add custom filters](#custom-filters) to the Assets view user interface. Apply the custom filters in addition to the standard filters to refine your search results.
 
 You can sort the searched assets in increasing or decreasing order of `Name`, `Relevance`, `Size`, `Modified`, and `Created`. The searched assets are sorted based on `Relevance`, by default.
+
+<!--
   
 ## Manage custom filters {#custom-filters}
 
@@ -84,7 +86,7 @@ Assets view provides the following custom filters:
 
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria. You can specify multiple smart tags separated by a comma in the search criteria.
 
-   -->
+   
 
 ### Add custom filters {#add-custom-filters}
 
@@ -111,6 +113,8 @@ To remove custom filters:
 1. On the **[!UICONTROL Custom filters management]** dialog box, deselect the filters that you need to remove from the existing list of filters.
 
 1. Click **[!UICONTROL Confirm]** to remove the filters from the user interface.
+
+-->
 
 ## AI Search {#ai-search}
 
@@ -187,6 +191,8 @@ To generate new assets using [!DNL Adobe Firefly]:
 
 1. Click **Save as new asset** to save the asset(s).
 
+<!--
+
 ### Upload assets {#upload-assets-firefly}
 
 To upload the generated asset to the assets repository:
@@ -194,6 +200,8 @@ To upload the generated asset to the assets repository:
 1. Click **[!UICONTROL Upload]**.
 1. Select the asset folder to which you need to upload the asset and click **[!UICONTROL Select Folder]**.
  ![Upload asset](assets/upload-asset-firefly.jpg)
+
+ -->
 
 ## Saved searches {#saved-search}
 

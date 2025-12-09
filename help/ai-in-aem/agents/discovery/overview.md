@@ -86,13 +86,13 @@ For information on the MCP endpoint to access Discovery Agent, contact Adobe Sup
 * Show assets modified after `Nov 1 2025` in folder `WKND`.
 * List `lifestyle` images in folder `WKND`.
 
-**Resolution and format-based asset discovery**
+**Format-based asset discovery**
 
-The Discovery Agent can identify assets that meet specific quality requirements, such as file format or minimum resolution, allowing users to quickly locate product visuals that are ready for high-quality delivery and reuse across channels.
+The Discovery Agent can identify assets that meet specific quality requirements, such as file format, allowing users to quickly locate product visuals that are ready for high-quality delivery and reuse across channels.
 
 Sample prompt:
 
-Find product packaging PNG images at least 2000 px wide.
+Find product packaging PNG images.
 
 **Orientation-based content discovery**
 

@@ -2,7 +2,6 @@
 title: Screen readers for HTML5 forms
 description: Lists the screen readers supported with HTML5 forms.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: HTML5 Forms,Mobile Forms
