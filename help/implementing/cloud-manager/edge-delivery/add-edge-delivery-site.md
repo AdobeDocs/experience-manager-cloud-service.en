@@ -53,6 +53,12 @@ exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 
 1. Click **Verify**.
 
+    >[!NOTE]
+    >
+    >If your Edge Delivery Services site uses Helix authentication, the verification challenge is not accessible. Temporarily disable authentication, complete site verification, and then turn authentication back on.
+
+
+
 When the repository is verified, its status in the Edge Delivery sites table gets updated. A green circle with a white check mark inside indicates the status.
 
 In the same table, click ![Information about Edge Delivery site icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to view site details. This information includes the verified Repository URL, along with the Preview and Production website URLs.
