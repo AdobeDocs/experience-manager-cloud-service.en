@@ -67,7 +67,7 @@ Configuring MCP for AEM involves two main parts:
 
 1. **A one-time configuration in AEM by an administrator**, allowing specific MCP client applications to access AEM's MCP servers
 1. **Configuration in each MCP client application** so that the application knows how to connect to the AEM MCP servers and perform OAuth login.
-2. **Select the MCP Server** before starting to prompt, so that the MCP client knows to use it. 
+1. **Select the MCP Server** before starting to prompt, so that the MCP client knows to use it. 
 
 ### AEM Configuration {#aem-configuration}
 
