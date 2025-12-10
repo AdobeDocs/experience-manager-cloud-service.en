@@ -105,7 +105,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 #### Upcoming Java API Deprecations {#java-api-deprecation}
 
-Several deprecated APIs were marked for removal on August 31st and thus should no longer be referenced. You will receive Actions Center notifications if deprecated API usage is detected in your code, and after Dec 3rd, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
+Several deprecated APIs were marked for removal on August 31st and thus should no longer be referenced. You will receive Actions Center notifications if deprecated API usage is detected in your code, and after Jan 29th, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
 +++ Expand to see the Java API deprecations
 
@@ -192,15 +192,6 @@ Edge Authentication lets you restrict access to Edge Delivery Services pages to 
 
 If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case and any questions you may have.
 
-<!--
-#### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
-
-The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
-
-Now in beta, youcan deploy a config pipeline for features including CDN origin selectors, response and request transformations, CDN log forwarding and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
-
--->
-
 #### Canary Production Deployments to Test Code Before Accepting Live Traffic (Beta Program) {#canary-beta}
 
 Validate a production build with internal-only test traffic before exposing it to end users. Ship to production, route only canary traffic (using a special header), monitor behavior, then either promote to live traffic or roll back—without impacting customers.
@@ -218,17 +209,17 @@ We are preparing to launch the AI Answers Beta Program and are now inviting cust
 
 To request participation or receive updates, please contact [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
 
-#### Accelerate AEM Development with AI (Alpha Program)  {#ai-dev-alpha}
+#### Snapshots for RDEs (Beta Program) {#rde-snapshot-program}
+
+In beta, Rapid Development Environments (RDEs) now support a feature to take a snapshot of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
+
+Please email [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) if there's interest in using and providing feedback on this feature.
+
+#### Accelerate AEM Development with AI (Alpha Program) {#ai-dev-alpha}
 
 AEM Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. We’re gathering real-world experiences to help shape future Adobe-supported AI capabilities.
 
 Share what’s working for your team—and what you’d like Adobe to provide—by emailing [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
-
-#### Snapshots for RDEs (Alpha Program) {#rde-snapshot-program}
-
-In alpha, Rapid Development Environments (RDEs) now support a feature to take a snapshot of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
-
-Please email [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) if there's interest in providing feedback on this feature.
 
 #### Expanded Application Performance Monitoring (APM) (Alpha program) {#apm-alpha}
 
