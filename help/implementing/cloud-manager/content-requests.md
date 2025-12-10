@@ -70,7 +70,7 @@ The following tables list the types of included and excluded content requests, w
 
 | Request Type | Content Request | Description |
 | --- | --- | --- |
-| HTTP Code 100-299 | Included | Includes successful requests that return full or partial HTML or JSON content.<br>HTTP Code 206: These requests deliver only a portion of the full content. For example, a video or large image. Partial content requests are included when they deliver part of an HTML or JSON response used in rendering page content. |
+| HTTP Code 100-299 | Included | Includes successful requests that return full or partial HTML or JSON content.<br>HTTP Code 206: These requests deliver only a portion of the full content. Partial requests are included when they deliver part of an HTML or JSON response used in rendering page content. |
 | HTTP libraries for automation | Included | Requests made by tools or libraries that retrieve page content. Examples include the following: <br>&bull; Amazon CloudFront<br>&bull; Apache Http Client<br>&bull; Asynchronous HTTP Client<br>&bull; Axios<br>&bull; Azureus<br>&bull; Curl<br>&bull; GitHub Node Fetch<br>&bull; Guzzle<br>&bull; Go-http-client<br>&bull; Headless Chrome<br>&bull; Java&trade; Client<br>&bull; Jersey<br>&bull; Node Oembed<br>&bull; okhttp<br>&bull; Python Requests<br>&bull; Reactor Netty<br>&bull; Wget<br>&bull; WinHTTP<br>&bull; Fast HTTP<br>&bull; GitHub Node Fetch<br>&bull; Reactor Netty|
 | Monitoring and Health Check tools | Included | Requests that are used to monitor the health or availability of pages.<br>See [Types of excluded content requests](#excluded-content-request).<br>Examples include the following:<br>&bull; `Amazon-Route53-Health-Check-Service`<br>&bull; EyeMonIT_bot_version_0.1_[(https://eyemonit.com/)](https://eyemonit.com/)<br>&bull; Investis-Site24x7<br>&bull; Mozilla/5.0+(compatible; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>&bull; ThousandEyes-Dragonfly-x1<br>&bull; OmtrBot/1.0<br>&bull; WebMon/2.0.0 |
 | `<link rel="prefetch">` requests | Included | When customers preload or prefetch content (for example, with `<link rel="prefetch">`), the system counts those server-side requests. Beware that this approach can increase traffic, depending on how many of these pages are prefetched. |
@@ -107,6 +107,7 @@ As mentioned in the above section [Variances of Cloud Service content requests](
 * Balance your needs for freshness of content with AEM license cost for any custom search crawler you have integrated with your site.  An overly aggressive crawler may consume a lot of content requests.
 * Handle any redirects as server-side (status 301 or 302) rather than client-side (status 200 with javascript redirect) to avoid two separate content requests.
 * Combine or reduce API calls, which are JSON responses from AEM that may be loaded to render the page.
+* Ensure that the browser's user agent is correctly passed to AEM in order to leverage the "well-known search engine" content request exclusion rule described above.  Sometimes the originating user agent is lost with certain headless implementations or CDN configurations which can prevent the exclusion and lead to higher content requests than if the user agent were passed through.
 
 ### Traffic filter rules to manage content requests {#traffic-filter-rules-to-manage-crs}
 
