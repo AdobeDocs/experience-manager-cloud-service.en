@@ -1,6 +1,6 @@
 ---
 title: Using MCP with AEM as a Cloud Service
-description: Learn how the Model Context Protocol with AEM as a Cloud Service
+description: Learn how to use the Model Context Protocol with AEM as a Cloud Service
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 ---
@@ -9,7 +9,7 @@ role: User, Admin, Architect, Developer
 
 ## Introduction {#introduction}
 
-Many AEM teams now work in IDEs and chat-based applications such as Cursor, ChatGPT, Anthropic Claude, and Microsoft Copilot Studio. These applications support the Model Context Protocol (MCP), which allows large language models (LLMs) to discover and call back-end tools in a standardized way.
+Many AEM teams now work in IDEs and chat-based applications such as Cursor, ChatGPT, Anthropic Claude, and Microsoft Copilot Studio. These applications support the Model Context Protocol (MCP), which allows applications to expose back-end tools to large language models (LLMs) in a standardized way.
 
 With AEM's MCP integration, different personas can collaborate around the same content:
 
@@ -20,7 +20,7 @@ This article explains what AEM's MCP functionality provides, which MCP applicati
 
 ## Why MCP is Useful for AEM Customers {#why-mcp-is-useful-for-aem-customers}
 
-Modern IDE and chat applications use MCP as a way for an LLM to call tools exposed behind MCP servers. Instead of writing code against low-level API specifications, customers can describe their intent in natural language (*"update the hero banner for this campaign across all pages"*) and let the LLM translate that into the appropriate API calls.
+Modern IDE and chat applications use MCP as a way for an LLM to call tools exposed behind MCP servers. Instead of writing code against low-level API specifications, customers can describe their intent in natural language (*"update the hero banner for this campaign across all pages"*) and let the LLM invoke the appropriate MCP tools, which in turn interact with AEM's APIs.
 
 Key benefits include:
 
@@ -48,7 +48,7 @@ The specific tools exposed by each MCP server may evolve over time. In practice,
 
 *"List all AEM MCP tools available from this server and describe what they do."*
 
-The LLM will use the MCP protocol to retrieve the tool list and schemas.
+The MCP client will use the MCP protocol to retrieve the tool list and schemas, which the LLM can then use.
 
 ## Supported MCP Applications {#supported-mcp-applications}
 
@@ -63,11 +63,11 @@ Each application provides its own configuration experience, but the high-level s
 
 ## Setup Overview {#setup-overview}
 
-Configuring MCP for AEM involves two main parts:
+Configuring MCP for AEM involves three main parts:
 
 1. **A one-time configuration in AEM by an administrator**, allowing specific MCP client applications to access AEM's MCP servers
-1. **Configuration in each MCP client application** so that the application knows how to connect to the AEM MCP servers and perform OAuth login.
-1. **Select the MCP Server** before starting to prompt, so that the MCP client knows to use it. 
+1. **Configuration in each MCP client application** so that the application knows how to connect to the AEM MCP servers and perform OAuth login
+1. **Select the MCP Server** before starting to prompt, so that the MCP client knows to use it.
 
 ### AEM Configuration {#aem-configuration}
 
