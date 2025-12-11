@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2025.12.11 Release Notes
+title: Universal Editor 2025.12.12 Release Notes
 description: These are the release notes for the 2025.12.11 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.12.11 Release Notes {#release-notes}
+# Universal Editor 2025.12.12 Release Notes {#release-notes}
 
-These are the release notes for the 11 December 2025 release of the Universal Editor.
+These are the release notes for the 12 December 2025 release of the Universal Editor.
 
 >[!TIP]
 >
