@@ -98,6 +98,8 @@ The rich text editor (RTE) of the Universal Editor allows the author to apply st
 * Image
 * Remove All Formatting
 
+Existing tables can be edited using the RTE, but new tables can not be created.
+
 The RTE can be configured to hide options or show additional options depending on authors' needs. Please see the document [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more information.
 
 ### Editing Media {#edit-media}
