@@ -15,7 +15,6 @@ To enable AI-generated metadata:
 
 * Minimum required AEM release version is `20626`.
 
-* You must sign a GenAI Rider agreement. For more information, contact your Adobe representative.
   
 ## Using AI-generated metadata {#using-ai-generated-smart-tags}
 
