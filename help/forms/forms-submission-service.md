@@ -561,7 +561,6 @@ Solutions:
 
 **Support Channels:**
 
-- **Early Access Issues:** Email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)
 - **API Documentation:** [Developer Reference](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/)
 - **Community Support:** [Adobe Experience League Community](https://experienceleaguecommunities.adobe.com/)
 
