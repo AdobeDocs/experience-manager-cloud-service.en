@@ -69,11 +69,15 @@ Changes are automatically saved once focus leaves the edited field.
 
 #### The Properties Panel {#properties-rail}
 
-The [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) shows an item for the selected text. Tap the entry to open a dialog presenting a larger canvas to edit the text.
+The [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) shows an entry for the selected rich text component.
+
+![Rich text component in the properties panel](assets/rich-text-properties-panel.png)
+
+Tap the entry to open a dialog presenting a larger canvas to edit the rich text.
 
 ![Rich text editing dialog](assets/rich-text-canvas.png)
 
-Tap or click **Cancel** or **Done** to discard or save the changes, respectively.
+Tap or click **Cancel** or **Done** to discard or save the changes, respectively. You can also press the escape key to save changes and close the dialog.
 
 #### Rich Text Formatting Options {#formatting-options}
 
@@ -86,8 +90,13 @@ The rich text editor (RTE) of the Universal Editor allows the author to apply st
 * Superscript
 * Subscript
 * Bulleted list
-* Numbered list
+  * Use the tab key to indent and shift+tab to outdent
+* Ordered list
+  * Use the tab key to indent and shift+tab to outdent
 * Link
+* Unlink
+* Image
+* Remove All Formatting
 
 The RTE can be configured to hide options or show additional options depending on authors' needs. Please see the document [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more information.
 
@@ -224,7 +233,11 @@ Copy and paste can be on the same browser tab or between browser tabs, provided 
 >
 >Use the hot key `Command-C` or `Command-V` to copy or paste, respectively.
 
+## Context Options {#context-options}
 
+When editing in place, the editor will offer context-relevant options with a right-click such as duplicating, deleting, or copying components.
+
+![Context options menu](assets/context-options-menu.png)
 
 ## Previewing Content {#previewing-content}
 
