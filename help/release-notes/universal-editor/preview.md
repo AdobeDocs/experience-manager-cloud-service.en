@@ -21,8 +21,11 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming New Features {#what-is-new}
 
-* TBD
+* Support for setting and persisting default values of model fields has been added.
+* Data cleanup is now performed correctly on content switch.
+* Canvas without validate feature now accepts all incoming changes in `usePendingUpdates`.
 
 ## Upcoming Improvements {#other-improvements}
 
-* TBD
+* Multiple operations in extensions's update are now supported.
+* Close on click of dev login was fixed.
