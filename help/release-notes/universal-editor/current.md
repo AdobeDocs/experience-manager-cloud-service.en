@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2025.12.04 Release Notes
-description: These are the release notes for the 2025.12.04 release of the Universal Editor.
+title: Universal Editor 2025.12.11 Release Notes
+description: These are the release notes for the 2025.12.11 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.12.04 Release Notes {#release-notes}
+# Universal Editor 2025.12.11 Release Notes {#release-notes}
 
-These are the release notes for the 4 December 2025 release of the Universal Editor.
+These are the release notes for the 11 December 2025 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,16 +20,22 @@ These are the release notes for the 4 December 2025 release of the Universal Edi
 
 ## What's New {#what-is-new}
 
-* Authorization headers have been disabled in favor of the [local developer login.](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
-* A contextual menu is now available on the [structured tree on right-click.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
-* A hotkey was added to [duplicate components.](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)
-
-### New RTE {#new-rte}
-
-The new ProseMirror RTE, featuring a page picker in the link dialog, is now available in the right panel. [This RTE features flexible configuration options.](/help/implementing/universal-editor/configure-rte.md)
+* Support has been added to existing tables in the rich text editor.
+* The tab key has been enabled for nesting lists in the rich text editor.
+* The developer login feature can now be disabled via the meta tag `dev-login`.
+* A right-click in the overlay section now displays a contextual menu.
+* Scoped indentation is now supported in the rich text editor
+* Shallow copy has been implemented for Content Fragments.
 
 ## Other Improvements {#other-improvements}
 
-* An issue with the RTE not saving properly on canvas was resolved.
-* Content picker folder tree clipping was fixed.
-* `componentId` is now provided during add action.
+* The properties rail is now synchronized when multi fields change in-context.
+* The Content Fragment picker now opens as expected on AEM 6.5 instances.
+* The escape key now closes dialogs in the rich text editor.
+* The **Remove component** action is now only available when a component is selected.
+* The correct (old or new) Content Fragment editor is now opened based on the used instance (if the hostname is the AEM as a Cloud Service pattern then use the new editor, else use the legacy editor).
+* Filter validation is added to the duplicate action.
+* Long titles are now truncated in the properties rail.
+* Multi-site manager arrays with more than 10 values are now properly handled.
+* Conflict errors when creating multiple components with same name are now properly handled.
+* Multi-site manager array handling with values >10 was added.
