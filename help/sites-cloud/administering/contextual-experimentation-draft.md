@@ -39,7 +39,7 @@ The experimentation rail is your primary tool to set up experiments. It can be u
 
 ### Setting up the Experimentation Rail with your Edge Delivery Services Project
 
-To access the experimentation capabilites within your Edge Delivery Services Project you will need the [AEM Sidekick]((https://www.aem.live/docs/sidekick) plug-in. To set up the sidekick follow these steps:
+To access the experimentation capabilites within your Edge Delivery Services Project you will need the [AEM Sidekick](https://www.aem.live/docs/sidekick) plug-in. To set up the sidekick follow these steps:
 
 1. Add the [AEM sidekick extension](https://chromewebstore.google.com/search/AEM%20Sidekick?hl=en-US&utm_source=ext_sidebar) and pin it.
 1. Open your project page in preview mode.
