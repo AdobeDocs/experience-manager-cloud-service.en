@@ -25,6 +25,11 @@ These are the release notes for the 11 December 2025 release of the Universal Ed
 * The developer login feature can now be disabled via the [meta tag `dev-login`.](/help/implementing/universal-editor/customizing.md#meta-tags)
 * A right-click in the overlay section now displays a [contextual options menu.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
 * [Scoped indentation](/help/implementing/universal-editor/configure-rte.md#indentation) is now supported in the [rich text editor.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+
+## Early Adoption Features {#early-adopter}
+
+If you are interested in testing the upcoming features listed below and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 
+
 * Shallow copy has been implemented for Content Fragments.
 
 ## Other Improvements {#other-improvements}
