@@ -60,7 +60,7 @@ To set up the experimentation capabilities within your your Xwalk Project and st
 
 ## Experiment variants and general workflow {#experiment-variants-workflow}
 
-Generally speaking, when setting up an experiment you will use a pre-existing page as the control page. By suing the experimentation rail, you will then create a challenger page that will replace the control page for some of your visitors. In the challenger page, you can test different things like content variants, different page layouts, call-to-action (CTA) and so on. In general, You can configure these experiment variants as you see fit (more details below).
+Generally speaking, when setting up an experiment you will use a pre-existing page as the control page. By using the experimentation rail, you will then create a challenger page that will replace the control page for some of your visitors. In the challenger page, you can test different things like content variants, different page layouts, call-to-action (CTA) and so on. In general, You can configure these experiment variants as you see fit (more details below).
 
 The [Operational Telemetry service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) then gathers data, for example, the number of visitors in the control page versus the challenger page. You then use this data to pick the necessary improvements for your site. As long as you stay within the established design language of your website and use the existing block functionality you should be able to set up an experiment variant and send it to production in a matter of minutes.
 
