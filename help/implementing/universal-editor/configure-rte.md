@@ -170,6 +170,44 @@ Image actions support picture element wrapping to generate responsive image mark
 * `wrapInPicture`: `false` (default) - Generate simple `<img>` elements
 * `wrapInPicture`: `true` - Wrap images in `<picture>` elements for responsive design
 
+### Indentation Configuration {#indentation}
+
+Indentation has a feature-level configuration that controls the scope of indentation behavior, plus individual action configs for shortcuts and labels.
+
+```json
+{
+  "actions": {
+    // Feature-level configuration
+    "indentation": {
+      "scope": "all"  // Controls what content can be indented (default: "all")
+    },
+
+    // Individual action configurations
+    "indent": {
+      "shortcut": "Tab",           // Custom keyboard shortcut
+      "label": "Increase Indent"   // Custom button label
+    },
+    "outdent": {
+      "shortcut": "Shift-Tab",     // Custom keyboard shortcut
+      "label": "Decrease Indent"   // Custom button label
+    }
+  }
+}
+```
+
+#### Indentation Scope Options {#indentation-options}
+
+* `scope`: `all` (default) - Indent/outdent applies to all content:
+  * Lists: Nest/unnest list items
+  * Paragraphs and headings: Increase/decrease general indentation level
+* `scope`: `lists` - Indent/outdent only applies to list items:
+  * Lists: Nest/unnest list items
+  * Paragraphs and headings: No indentation (buttons disabled for these)
+
+>[!NOTE]
+>
+>List nesting via Tab/Shift+Tab keys works independently of general indentation settings.
+
 ### Other Actions {#other}
 
 All other actions support basic customization. The following sections are available.
@@ -301,6 +339,35 @@ Use `wrapInParagraphs: true` when you need:
 * Multiple paragraphs per list item
 * Consistent block-level styling
 
+### `wrapInPicture`{#wrapinpicture}
+
+The `wrapInPicture` option for images controls the HTML structure generated for image content.
+
+#### wrapInPicture: false (default) {#wrapinpicture-false}
+
+```html
+<img src="image.jpg" alt="Description" />
+```
+
+#### wrapInPicture: true {#wrapinpicture-true}
+
+```html
+<picture>
+  <img src="image.jpg" alt="Description" />
+</picture>
+```
+
+Use `wrapInPicture: true` when you need:
+
+* Responsive image support with `<source>` elements.
+* Art direction capabilities.
+* Future-proofing for advanced image features.
+* Consistent picture element structure.
+
+>[!NOTE]
+>
+>When `wrapInPicture: true` is enabled, images can be enhanced with additional `<source>` elements for different media queries and formats, making them more flexible for responsive design.
+
 ### Link Target Options {#link-target}
 
 The `hideTarget` option for links controls whether the `target` attribute is included in generated links and whether the dialog for link creation includes a field for target selection.
@@ -312,11 +379,60 @@ The `hideTarget` option for links controls whether the `target` attribute is inc
 <a href="https://example.com" target="_blank">External link</a>
 ```
 
-### `hideTarget: true` {#hideTarget-true}
+#### `hideTarget: true` {#hideTarget-true}
 
 ```html
 <a href="https://example.com">Link text</a>
 ```
+
+### Disabling Links on Images {#disableforimages}
+
+The `disableForImages` option for links controls whether users can create links on images and picture elements. This applies to both inline `<img>` elements and block-level `<picture>` elements.
+
+#### `disableForImages: false` (default) {#disableforimages-false}
+
+Users can select images and wrap them in links.
+
+```html
+<!-- Inline image with link -->
+<a href="https://example.com">
+  <img src="image.jpg" alt="Description" />
+</a>
+
+<!-- Block-level picture with link -->
+<a href="https://example.com">
+  <picture>
+    <img src="image.jpg" alt="Description" />
+  </picture>
+</a>
+```
+
+#### disableForImages: true {#disableforimages-true}
+
+The link button is disabled when an image or picture is selected. Users can only create links on text content.
+
+```html
+<!-- Images remain standalone without links -->
+<img src="image.jpg" alt="Description" />
+
+<picture>
+  <img src="image.jpg" alt="Description" />
+</picture>
+
+<!-- Links work normally on text -->
+<a href="https://example.com">Link text</a>
+```
+
+Use `disableForImages: true` when you want to:
+
+* Maintain visual consistency by preventing linked images.
+* Simplify content structure by separating images from navigation.
+* Enforce content policies that restrict image linking.
+* Reduce accessibility complexity in your content.
+
+>[!NOTE]
+>
+>This setting only affects the ability to create new links on images. It does not remove existing links from images in the content.
 
 ### Tag Options {#tag}
 
