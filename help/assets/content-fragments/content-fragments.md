@@ -346,7 +346,7 @@ Overly complex models lead to overly complex fragments that can make authoring d
 
 ### Rich Text Fields {#rich-text-fields}
 
-Use Rich Text fields with consideration.
+Use Rich Text fields (the **Multi line text** Data Type) with consideration.
 
 Limit the number of Rich Text fields per model. Also the amount of text stored in each fragment, and the amount of HTML formatting. Very large rich-text content can negatively affect system performance.
 
