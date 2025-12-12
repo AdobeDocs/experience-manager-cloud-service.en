@@ -571,6 +571,7 @@ user-guide-title: AEM as a Cloud Service
     + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
     + [Share assets](/help/assets/share-assets.md)
     + [Reprocessing assets](/help/assets/reprocessing.md)
+    + [Malware detection](/help/assets/malware-detection.md)
     + [Monitor activities and DAM tasks](/help/assets/assets-activity-history.md)
     + [Get started using asset microservices](/help/assets/asset-microservices-configure-and-use.md)
     + [Add and upload assets](/help/assets/add-assets.md)
