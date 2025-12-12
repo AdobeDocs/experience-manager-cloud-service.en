@@ -470,7 +470,7 @@ user-guide-title: AEM as a Cloud Service
       + [Registration, Login, and User Profile](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
   + Administering {#administering}
     + Content Fragments {#content-fragments}
-      + [Overview and Concepts](/help/sites-cloud/administering/content-fragments/overview.md)
+      + [Concepts and Best Practices](/help/sites-cloud/administering/content-fragments/overview.md)
       + [Headless Delivery with GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)
       + [Content Fragment Setup](/help/sites-cloud/administering/content-fragments/setup.md)
       + [Managing Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
@@ -572,6 +572,7 @@ user-guide-title: AEM as a Cloud Service
     + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
     + [Share assets](/help/assets/share-assets.md)
     + [Reprocessing assets](/help/assets/reprocessing.md)
+    + [Malware detection](/help/assets/malware-detection.md)
     + [Monitor activities and DAM tasks](/help/assets/assets-activity-history.md)
     + [Get started using asset microservices](/help/assets/asset-microservices-configure-and-use.md)
     + [Add and upload assets](/help/assets/add-assets.md)
