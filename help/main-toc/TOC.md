@@ -1326,7 +1326,7 @@ user-guide-title: AEM as a Cloud Service
       + [Project Setup](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
       + [Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
     + [Manage Environments](/help/implementing/cloud-manager/manage-environments.md)
-    + [Specialized Testing Environments (Beta)](/help/implementing/cloud-manager/specialized-test-environment.md)
+    + [Specialized Testing Environments](/help/implementing/cloud-manager/specialized-test-environment.md)
     + Manage your Code {#managing-code}
       + [Maven Project Version Handling](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
       + [Manage Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
