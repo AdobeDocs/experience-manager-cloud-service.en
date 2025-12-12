@@ -358,6 +358,8 @@ Create as many fragment variations as needed, but no more.
 
 Variations add processing time to a Content Fragment, on the author environment and upon delivery too. It is recommended to keep the number of variations to a manageable minimum. 
 
+A best practice is to not exceed ten variations per Content Fragment.
+
 ### Test Before Production {#test-before-production}
 
 When in doubt, prototype your intended content structures before rolling them out to production. Early proof-of-concepts together with adequate testing, both technical and user acceptance, can help avoid issues later when facing deadlines in production.
