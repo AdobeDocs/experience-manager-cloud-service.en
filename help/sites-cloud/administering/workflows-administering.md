@@ -140,39 +140,14 @@ To configure the service, you can configure the OSGi Configuration Files see [OS
 >Because the service is a factory service, the name of the `sling:OsgiConfig` node requires an identifier suffix, for example:
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
-<table>
- <tbody>
-  <tr>
-   <th>Property Name (Web Console)</th>
-   <th>OSGi Property Name</th>
-   <th>Description</th>
-  </tr>
-  <tr>
-   <td>Job Name</td>
-   <td>scheduledpurge.name</td>
-   <td>A descriptive name for the scheduled purge.</td>
-  </tr>
-  <tr>
-   <td>Workflow Status</td>
-   <td>scheduledpurge.workflowStatus</td>
-   <td><p>The status of the workflow instances to purge. The following values are valid:</p>
-    <ul>
-     <li>COMPLETED: Completed workflow instances are purged.</li>
-     <li>RUNNING: Running workflow instances are purged.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Models To Purge</td>
-   <td>scheduledpurge.modelIds</td>
-   <td><p>The ID of the workflow models to purge. The ID is the path to the model node, for example:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Specify no value to purge instances of all workflow models.</p> <p>To specify multiple models, click the + button in the Web Console. </p> </td>
-  </tr>
-  <tr>
-   <td>Workflow Age</td>
-   <td>scheduledpurge.daysold</td>
-   <td>The age of the workflow instances to purge, in days.</td>
-  </tr>
- </tbody>
-</table>
+| Property Name (Web Console) | OSGi Property Name | Description |
+|--- |--- |--- |
+| Job Name | `scheduledpurge.name` | A descriptive name for the scheduled purge. |
+| Workflow Status | `scheduledpurge.workflowStatus` | The status of the workflow instances to purge. The following values are valid:<br><br>- COMPLETED: Completed workflow instances are purged.<br>- RUNNING: Running workflow instances are purged. |
+| Models To Purge | `scheduledpurge.modelIds` | The ID of the workflow models to purge.<br>The ID is the path to the model node, for example:<br> `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model` <br><br> Specify no value to purge instances of all workflow models.<br>To specify multiple models, click the `+` button in the Web Console. |
+| Workflow Age | `scheduledpurge.daysold` | The age of the workflow instances to purge, in days. |
+| Workflow Payload Package | `scheduledpurge.purgePackagePayload`| Indicates whether the payload package should be purged; `true` or `false`. | 
+
 
 ## Setting the Maximum Size of the Inbox {#setting-the-maximum-size-of-the-inbox}
 

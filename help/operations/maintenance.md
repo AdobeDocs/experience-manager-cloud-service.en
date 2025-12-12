@@ -23,6 +23,8 @@ In previous versions of AEM, you could configure maintenance tasks by using the 
 >
 >Adobe reserves the right to override a customer's maintenance task configuration settings to mitigate issues such as performance degradation.
 
+### Maintenance Tasks {#maintenance-tasks}
+
 The following table illustrates the maintenance tasks that are available.
 
 <table style="table-layout:auto">
@@ -85,6 +87,10 @@ The following table illustrates the maintenance tasks that are available.
   </tbody>
 </table>
 
+### Maintenance Window Configurations {#maintenance-window-configurations}
+
+The following table illustrates the maintenance window configurations that are available.
+
 <table style="table-layout:auto">
  <tbody>
   <tr>
@@ -132,18 +138,17 @@ The following table illustrates the maintenance tasks that are available.
     </tbody>
 </table>
 
-**Locations**:
+### Locations {#locations}
 
 * Daily - /apps/settings/granite/operations/maintenance/granite_daily
 * Weekly - /apps/settings/granite/operations/maintenance/granite_weekly
 * Monthly - /apps/settings/granite/operations/maintenance/granite_monthly
 
-**Code samples**:
+### Code samples {#code-samples}
 
-Code sample 1 (daily)
+**Code sample 1 (daily)**
 
 ```xml
-
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
   xmlns:jcr="http://www.jcp.org/jcr/1.0" 
@@ -156,10 +161,9 @@ Code sample 1 (daily)
  />
 ```
 
-Code sample 2 (weekly)
+**Code sample 2 (weekly)**
 
 ```xml
-
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
    xmlns:jcr="http://www.jcp.org/jcr/1.0"
@@ -172,10 +176,9 @@ Code sample 2 (weekly)
    windowStartTime="14:30"/>
 ```
 
-Code sample 3 (monthly)
+**Code sample 3 (monthly)**
 
 ```xml
-
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
    xmlns:jcr="http://www.jcp.org/jcr/1.0"
@@ -217,56 +220,54 @@ Declare a configuration file and deploy it as described in the following steps.
 > 
 >Similarly, once you deploy the audit log purge node in the configuration file, you must keep it declared and not remove it.
 
-**1** Create a file named `mt.yaml` or similar.
+1. Create a file named `mt.yaml` or similar.
   
-**2** Place the file somewhere under a top level folder named `config` or similar, as described under [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure).
+1. Place the file somewhere under a top level folder named `config` or similar, as described under [Using Config Pipelines](/help/operations/config-pipeline.md#folder-structure).
 
-**3** - Declare properties in the configuration file, which include:
+1. Declare properties in the configuration file, which include:
 
-* a few properties above the data node -- see [Using Config Pipelines](/help/operations/config-pipeline.md#common-syntax) for a description. The `kind` property value should be *MaintenanceTasks* and the version should be set to *1*.
+   * a few properties above the data node -- see [Using Config Pipelines](/help/operations/config-pipeline.md#common-syntax) for a description. The `kind` property value should be *MaintenanceTasks* and the version should be set to *1*.
 
-* a data object with both `versionPurge` and `auditLogPurge` objects.
+   * a data object with both `versionPurge` and `auditLogPurge` objects.
 
-See the definitions and syntax of the `versionPurge` and `auditLogPurge` objects below.
+   See the definitions and syntax of the `versionPurge` and `auditLogPurge` objects below.
 
-Structure the configuration similar to the following example:
+   Structure the configuration similar to the following example:
 
-```
+   ```
+   kind: "MaintenanceTasks"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     versionPurge:
+       maximumVersions: 15
+       maximumAgeDays: 20
+       paths: ["/content"]
+       minimumVersions: 1
+       retainLabelledVersions: false
+     auditLogPurge:
+       rules:
+         - replication:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
+         - pages:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
+         - dam:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
+   ```
 
-kind: "MaintenanceTasks"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  versionPurge:
-    maximumVersions: 15
-    maximumAgeDays: 20
-    paths: ["/content"]
-    minimumVersions: 1
-    retainLabelledVersions: false
-  auditLogPurge:
-    rules:
-      - replication:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
-      - pages:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
-      - dam:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
+   Keep in mind that in order for the configuration to be valid:
 
-```
+   * all properties must be defined. There are no inherited defaults.
+   * the types (integers, strings, booleans, etc) in the property tables below must be respected.
 
-Keep in mind that in order for the configuration to be valid:
-
-* all properties must be defined. There are no inherited defaults.
-* the types (integers, strings, booleans, etc) in the property tables below must be respected.
-
-**4** - Create a config pipeline in Cloud Manager, as described in the [config pipeline article](/help/operations/config-pipeline.md#managing-in-cloud-manager).  
+1. Create a config pipeline in Cloud Manager, as described in the [config pipeline article](/help/operations/config-pipeline.md#managing-in-cloud-manager).  
 
 ### Version Purge {#version-purge}
 
@@ -308,7 +309,6 @@ The columns indicating *default* indicate the default values in the future, when
 | minimumVersions | 1 | 1 | Yes | Integer | The minimum number of versions that are kept regardless of the age. Note that at least 1 version is always kept; its value must be 1 or higher. |
 | retainLabelledVersioned | false | false | Yes | boolean | Determines whether explicitly labelled versions will be excluded from the purge. For better repository optimization, it is recommended to set this value to false. |
 
-
 **Property interactions**
 
 The following examples illustrate how properties interact when combined.
@@ -316,11 +316,9 @@ The following examples illustrate how properties interact when combined.
 Example:
 
 ```
-
 maximumAgeDays = 30
 maximumVersions = 10
 minimumVersions = 2
-
 ```
 
 If there are 11 versions on day 23, the oldest version will be purged next time the purge maintenance task runs, since the `maximumVersions` property is set to 10.
@@ -330,11 +328,9 @@ If there are 5 versions on day 31, only 3 will be purged since the `minimumVersi
 Example:
 
 ```
-
 maximumAgeDays = 30
 maximumVersions = 0
 minimumVersions = 1
-
 ```
 
 No versions newer than 30 days will be purged since the `maximumVersions` property is set to 0.
@@ -369,7 +365,6 @@ Environments that were created before the default purging is enabled will have t
 The allowed properties are listed below. 
 
 The columns indicating *default* indicate the default values in the future, when defaults are applied; *TBD* reflects an environment id that is still not determined.
-
 
 | Properties | future default for envs>TBD  | future default for envs<=TBD  | required   | type    | Values   |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
