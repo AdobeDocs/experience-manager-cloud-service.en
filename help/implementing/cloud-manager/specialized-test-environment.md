@@ -73,6 +73,6 @@ To add or edit an environment, a user must be a member of the **Business Owner**
 
 ## Additional resources {#additional-resources}
 
-* Video: [Understanding environment types in AEM Cloud Manager](hhttps://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
+* Video: [Understanding environment types in AEM Cloud Manager](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
 * [Manage Environments](/help/implementing/cloud-manager/manage-environments.md)
 
