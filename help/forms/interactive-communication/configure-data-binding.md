@@ -4,9 +4,6 @@ description: Create Interactive Communication Fragments in AEM Forms to build mo
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: yes
-index: no
-hidefromtoc: yes
 ---
 
 # Data Binding in Interactive Communication Editor
@@ -21,35 +18,29 @@ hidefromtoc: yes
 
 ## 1. Introduction
 
-Data Binding in the Interactive Communication Editor connects on-canvas fields with a governed data layer so that communications render with real, contextual information. By linking components to a Form Data Model (FDM) or global payload, authors can ensure accuracy, reduce manual work, and deliver dynamic, personalized experiences.
+Data Binding in the Interactive Communication Editor connects on-canvas fields with a governed data layer so that communications render with real, contextual information. By linking components to a Form Data Model (FDM), authors can ensure accuracy, reduce manual work, and deliver dynamic, personalized experiences.
 
 Beyond simply connecting values, Data Binding in IC supports visual mapping, prefill, and synchronization, enabling authors to design faster while staying aligned with backend systems and data models.
+
+![Find IC Doc](/help/forms/interactive-communication/assets/data-binding1.png)
 
 ## 2. Properties
 
 2.1 Managing Data Connections (FDM)
 
-- **Selecting the FDM:** Choose the appropriate Form Data Model (e.g., customers, accounts, or policies). This establishes the authoritative schema for fields, arrays, and objects used in the communication.
+- **Select the FDM:** Choose the appropriate Form Data Model (e.g., customers, accounts, or policies). This establishes the authoritative schema for fields, arrays, and objects used in the communication.
 
-- **Creating Data Bindings:** Once bindings are enabled, each field can be associated with FDM paths, minimizing errors and ensuring consistent integration.
+- **Create Data Binding:** Once bindings are enabled, each field can be associated with FDM paths, minimizing errors and ensuring consistent integration.
 
-- **Binding Fields to Data Models:** Point fields to specific nodes (e.g., customer.name, policy.holder.id) to drive rendering with live data and to support validations or conditional logic.
+- **Binding Fields to Data Model:** Point fields to specific nodes (e.g., customer.name, policy.holder.id) to drive rendering with live data and to support validations or conditional logic.
 
-2.2 Creating Data Bindings
+2.2 Creating Data Binding
 
 - **Visual Mapping:** Drag-and-drop mapping between fields and FDM nodes helps non-technical users avoid mistakes.
 
 - **Field Association:** Define the target path, data type (text, number, date, boolean, image), and optional formatters (e.g., date mask, currency).
 
-- **Binding Preview:** Test bindings with sample data sets to validate formatting and correctness before publishing.
-
-2.3 Binding Fields to Data Models
-
-- **Field Mapping:** Link text, image, or repeated structures (tables/lists) with the correct FDM nodes. Collections can use iteration sources and template rows.
-
-- **Data Sync:** Choose one-way (UI populated from the model) or two-way (user inputs saved back into the model).
-
-- **Prefill:** Use default values from the model or expressions to simplify data entry and improve accuracy.
+- **Bind Preview:** Test bindings with sample data sets to validate formatting and correctness before publishing.
 
 ## 3. Usage
 
@@ -86,3 +77,4 @@ Authors typically select the FDM early in the project, visually map fields durin
 - **Secure sensitive data:** Apply masking, encryption, and least-privilege access for PII or payment details.
 
 By configuring Data Binding carefully, authors create a reliable bridge between design and data—accelerating communication authoring, ensuring accuracy, and delivering highly personalized experiences at scale.
+
