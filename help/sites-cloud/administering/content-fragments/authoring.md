@@ -83,7 +83,7 @@ In the left panel you can see:
 
 * the list of **[Variations](#variations)** that have been created for this fragment:
   * **Main** is the Variation that is present when the Content Fragment is first created, you can add others later
-  * you can use Generate Variations(#generate-variations) to use a prompt based template that Adobe has created for a specific use case.
+  * you can use [Generate Variations](#generate-variations-ai) to use a prompt based template that Adobe has created for a specific use case.
   * you can also [create a Variation](#create-variation)
 * the **Fields** within the fragment, and its variations:
   * the icon indicates the [Data Type](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
