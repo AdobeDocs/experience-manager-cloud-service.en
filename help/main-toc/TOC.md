@@ -1016,6 +1016,7 @@ user-guide-title: AEM as a Cloud Service
      + [Implement Dynamic Page Numbering](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
      + [Handle Content Overflow](/help/forms/interactive-communication/handle-content-overflow.md)
      + [Support XDP Editing](/help/forms/interactive-communication/support-xdp-editing.md)
+     + [Create Versions and Add Comments](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
    + Associate UI {#associateui} 
      + [Associate UI in Interactive  Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
    + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
