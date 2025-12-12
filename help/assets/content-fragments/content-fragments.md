@@ -330,11 +330,11 @@ When modeling structured content in AEM, keep content structures as simple as po
 
 Create as many content models as needed, but no more.
 
-Too many models complicate governance and can slow down GraphQL queries. As with page components, a small set, or low tens, of models is usually sufficient. If you approach the high tens or more, reconsider your modeling strategy.
+Too many models complicate governance and can slow down GraphQL queries. A small set of models, maximum of low tens, is usually sufficient. If you approach the high tens or more, reconsider your modeling strategy.
 
 ### Nesting Models and Fragments (very important) {#nesting-models-and-fragments}
 
-Avoid deep or excessive nesting of content fragments using Content Fragment References that allow fragments to reference other fragments, sometimes across multiple levels. 
+Avoid deep or excessive nesting of content fragments using Content Fragment References, which allow fragments to reference other fragments, sometimes across multiple levels. 
 
 Heavy use of Content Fragment references can significantly impact system performance, UI responsiveness, and GraphQL query execution. Aim to keep nesting to no more than ten levels.
 
