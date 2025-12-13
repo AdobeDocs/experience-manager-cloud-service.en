@@ -24,6 +24,18 @@ AEM Forms as a Cloud Service supports two major use cases: Digital Enrollment an
 
 ![Forms-Communication](assets/forms-cloud-service-architecture-forms-communications.svg)
 
+## Applicability and use cases
+
+### Insurance
+
+## Can AEM Forms handle insurance operations at scale?
+
+Yes. When deployed using recommended architectures on Adobe Managed Services or private cloud, AEM Forms supports high-volume form submissions and enterprise-scale workloads.
+
+## Is AEM Forms secure for insurance data?
+
+Yes. AEM Forms supports secure data transmission, controlled access, and enterprise authentication mechanisms, making it suitable for handling sensitive insurance data.
+
 ## Components
 
 Forms as a Cloud Service comprises multiple components:
