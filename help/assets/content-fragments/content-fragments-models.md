@@ -19,7 +19,7 @@ To use Content Fragment Models you:
 
 >[!NOTE]
 >
->Be aware of the [Best Practices](/help/assets/content-fragments/content-fragments.md) when working with your Content Fragment Models and Content Fragments.
+>Be aware of the [Best Practices](/help/assets/content-fragments/content-fragments.md#best-practices) when working with your Content Fragment Models and Content Fragments.
 
 >[!NOTE]
 >

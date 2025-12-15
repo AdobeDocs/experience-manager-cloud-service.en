@@ -29,7 +29,7 @@ This editor provides:
 
 >[!NOTE]
 >
->Be aware of the [Best Practices](/help/sites-cloud/administering/content-fragments/overview.md) when working with your Content Fragment Models and Content Fragments.
+>Be aware of the [Best Practices](/help/sites-cloud/administering/content-fragments/overview.md#best-practices) when working with your Content Fragment Models and Content Fragments.
 
 >[!WARNING]
 >
