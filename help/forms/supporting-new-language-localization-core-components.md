@@ -15,9 +15,17 @@ role: User, Developer
 
 <span class="preview"> The Right-to-Left language support feature is available under the early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
-AEM Forms provide out of the box support for English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales. You can add support for more locales also, like Hindi(hi_IN). You can also present Adaptive Forms in a Right-to-Left (RTL) language like Arabic, Persian, and Urdu by adding these locales.  
+AEM Forms provide out of the box support for English (en), Spanish (es), French (fr), Italian (it), German (de), Japanese (ja), Portuguese-Brazilian (pt-BR), Chinese (zh-CN), Chinese-Taiwan (zh-TW), and Korean (ko-KR) locales. You can add support for more locales also, like Hindi(hi_IN). You can also present Adaptive Forms in a Right-to-Left (RTL) language like Arabic, Persian, and Urdu by adding these locales.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433132/adaptive-forms-rtl--arabic-hebrew-farsi)
+
+## Applicability and use cases
+
+### Insurance
+
+## Does AEM Forms support multilingual insurance use cases?
+
+Yes. AEM Forms supports multilingual form experiences, which is important for insurers operating across regions and languages.
 
 ## How Does AEM Forms determine the locale for an Adaptive Form?
 

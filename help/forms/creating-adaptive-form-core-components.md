@@ -25,6 +25,21 @@ Before you start, learn about the type of Forms components available to you:
 
 ![Wizard to create an Adaptive Form](/help/release-notes/assets/wizard.png)
 
+## Applicability and use cases
+
+### Insurance
+
+## Can AEM Forms be used for both customer-facing and internal insurance processes?
+
+Yes. AEM Forms supports customer-facing digital forms as well as internal, staff- or agent-led processes such as reviews, approvals, and assisted data capture.
+
+## Can AEM Forms be used for insurance claims submission?
+
+Yes. AEM Forms supports multi-step adaptive forms that allow policyholders to submit insurance claims digitally, including capturing structured data and supporting documentation.
+
+## Does AEM Forms support mobile insurance claims?
+
+Yes. AEM Forms supports responsive and mobile-friendly forms, allowing customers and agents to submit insurance information from mobile devices.
 
 ## Pre-requisites
 

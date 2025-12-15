@@ -1,14 +1,12 @@
 ---
-title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Current release notes for [!DNL Adobe Experience Manager] as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: Release Notes for 2025.11.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Release Notes for 2025.11.0 release of [!DNL Adobe Experience Manager] as a Cloud Service.
 feature: Release Information
 role: Admin
 ---
-# Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# 2025.11.0 Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-The following section outlines the feature release notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
+The following section outlines the feature release notes for the 2025.11.0 version of [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -22,7 +20,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.12.0) is December 11, 2025. The next feature release (2026.1.0) is planned for January 29, 2026.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.11.0) is November 20, 2025. The next feature release (2025.12.0) is planned for December 11, 2025.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -40,7 +38,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ## Agents in AEM {#agents-in-aem}
 
-AEM provides a range of agents enabling you to accelerate your content creation and automatically orchestrate changes. For more information, see [Overview of Agents in AEM](/help/ai-in-aem/agents/overview.md).
+AEM provides a range of agents enabling you to accelerate your content creation and automatically orchestrate changes. For more information, see [Agents Overview](/help/ai-in-aem/agents/overview.md).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -105,7 +103,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 #### Upcoming Java API Deprecations {#java-api-deprecation}
 
-Several deprecated APIs were marked for removal on August 31st and thus should no longer be referenced. You will receive Actions Center notifications if deprecated API usage is detected in your code, and after Jan 29th, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
+Several deprecated APIs were marked for removal on August 31st and thus should no longer be referenced. You will receive Actions Center notifications if deprecated API usage is detected in your code, and after Dec 3rd, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
 +++ Expand to see the Java API deprecations
 
@@ -150,7 +148,7 @@ Adobe upgraded **Stage** and **Production** environments to the higher-performan
 
 As noted in the April release notes, AEM Java logs must follow a standard format to ensure reliable monitoring across all customer environments. Custom log configurations—such as changes to log formatting, output files, or default log levels—are no longer supported. Logs must remain directed to the default files, and default log levels for AEM product code must be preserved. See full details in the [Logging article](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Starting on **January 29th**, any unsupported custom logging overrides will be ignored. Based on our analysis, most customers will not be impacted and Adobe has contacted customers whose current configuration may be affected.
+Starting on **December 10th**, any unsupported custom logging overrides will be ignored. Based on our analysis, most customers will not be impacted and Adobe has contacted customers whose current configuration may be affected.
 
 Please review and update any downstream processes that rely on custom logging behavior. For example:
 
@@ -192,6 +190,15 @@ Edge Authentication lets you restrict access to Edge Delivery Services pages to 
 
 If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case and any questions you may have.
 
+<!--
+#### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
+
+The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
+
+Now in beta, youcan deploy a config pipeline for features including CDN origin selectors, response and request transformations, CDN log forwarding and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
+
+-->
+
 #### Canary Production Deployments to Test Code Before Accepting Live Traffic (Beta Program) {#canary-beta}
 
 Validate a production build with internal-only test traffic before exposing it to end users. Ship to production, route only canary traffic (using a special header), monitor behavior, then either promote to live traffic or roll back—without impacting customers.
@@ -209,17 +216,17 @@ We are preparing to launch the AI Answers Beta Program and are now inviting cust
 
 To request participation or receive updates, please contact [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
 
-#### Snapshots for RDEs (Beta Program) {#rde-snapshot-program}
-
-In beta, Rapid Development Environments (RDEs) now support a feature to take a snapshot of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
-
-Please email [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) if there's interest in using and providing feedback on this feature.
-
-#### Accelerate AEM Development with AI (Alpha Program) {#ai-dev-alpha}
+#### Accelerate AEM Development with AI (Alpha Program)  {#ai-dev-alpha}
 
 AEM Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. We’re gathering real-world experiences to help shape future Adobe-supported AI capabilities.
 
 Share what’s working for your team—and what you’d like Adobe to provide—by emailing [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
+
+#### Snapshots for RDEs (Alpha Program) {#rde-snapshot-program}
+
+In alpha, Rapid Development Environments (RDEs) now support a feature to take a snapshot of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
+
+Please email [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) if there's interest in providing feedback on this feature.
 
 #### Expanded Application Performance Monitoring (APM) (Alpha program) {#apm-alpha}
 
