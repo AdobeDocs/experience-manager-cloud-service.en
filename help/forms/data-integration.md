@@ -40,6 +40,26 @@ Once you have created a form data model (FDM), you can use it to:
 * Invoke data source services/operations using Adaptive Form rules
 * Write submitted Adaptive Form data to data sources
 
+## Applicability and use cases
+
+### Insurance
+
+## Can AEM Forms be used for insurance policy applications?
+
+Yes. AEM Forms can be used to build digital insurance application forms that collect applicant information, validate inputs, and integrate with backend underwriting systems.
+
+## Does AEM Forms support underwriting workflows?
+
+Yes, with workflows and integrations. AEM Forms supports workflow-driven processes and backend integrations that allow application data to flow into underwriting and decisioning systems.
+
+## Can AEM Forms integrate with insurance core systems?
+
+Yes. AEM Forms supports integration using REST and SOAP APIs, allowing it to connect with policy administration systems, claims management systems, and CRMs.
+
+## Can AEM Forms write form data back to insurance systems?
+
+Yes. AEM Forms supports data write-back to backend systems as part of form submission and workflow execution.
+
 ## Get started with data integration {#get-started-with-data-integration}
 
 The first step to implement data integration to send Adaptive Form to a database, is to identify and configure data sources that store information you want to use in Adaptive Forms. Next, you create a Form Data Model (FDM) that uses data model objects, properties, and services from one or more data sources. You can create Adaptive Forms based on a Form Data Model (FDM) where Adaptive Form fields are bound to respective data source properties.

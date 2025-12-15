@@ -36,6 +36,18 @@ Communications APIs provide a comprehensive set of document processing capabilit
 
 The [API reference documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) provides detailed information about all the parameters, authentication methods, and various services provided by APIs. The API reference documentation is also available in the .yaml format. You can download the .yaml and upload it to Postman to check the functionality of the APIs.
 
+## Applicability and use cases
+
+### Insurance
+
+## Can AEM Forms generate insurance policy documents?
+
+Yes. AEM Forms can generate policy-related documents using templates and structured data captured through forms.
+
+## Can AEM Forms handle insurance operations at scale?
+
+Yes. When deployed using recommended architectures on Adobe Managed Services or private cloud, AEM Forms supports high-volume form submissions and enterprise-scale workloads.
+
 ## Document Generation
 
 Communications document generation APIs help to combine a template (XFA or PDF) with customer data (XML) to generate documents in PDF, AFP (Advanced Function Presentation) and Print Formats like PS, PCL, DPL, IPL, and ZPL formats. These APIs use PDF and XFA templates with [XML data](communications-known-issues-limitations.md#form-data) to generate a single document on demand or multiple documents using a batch job.
@@ -197,29 +209,29 @@ These special usage rights capabilities are automatically activated when a right
 
 The various usage rights capabilities for extending PDF Reader services are:
 
-  * **Barcodes Decoding**: To decode barcodes within the PDF document.
+* **Barcodes Decoding**: To decode barcodes within the PDF document.
 
-  * **Comments**: To comment offline on the PDF document.
+* **Comments**: To comment offline on the PDF document.
 
-  * **Comments Online**: To comment online on the PDF document.
+* **Comments Online**: To comment online on the PDF document.
 
-  * **Digital Signature**: To add digital signatures to a PDF document.
+* **Digital Signature**: To add digital signatures to a PDF document.
 
-  * **Dynamic Form Fields**: To add form fields to a PDF document.
+* **Dynamic Form Fields**: To add form fields to a PDF document.
 
-  * **Dynamic Form Pages**: To add form pages to a PDF document.
+* **Dynamic Form Pages**: To add form pages to a PDF document.
 
-  * **Embedded Files**: To embed files within a PDF document.
+* **Embedded Files**: To embed files within a PDF document.
 
-  * **Form Data Import**: To import form data to a PDF document.
+* **Form Data Import**: To import form data to a PDF document.
 
-  * **Form Data Export**: To import form data to a PDF document.
+* **Form Data Export**: To import form data to a PDF document.
 
-  * **Form Fill In**: To fill form fields within a PDF document.
+* **Form Fill In**: To fill form fields within a PDF document.
 
-  * **Online Forms**: To access a web service or database from a PDF document.
+* **Online Forms**: To access a web service or database from a PDF document.
 
-  * **Submit Standalone**: To submit form data offline from a PDF document.
+* **Submit Standalone**: To submit form data offline from a PDF document.
 
 #### Other capabilities
 
