@@ -346,9 +346,15 @@ Overly complex models lead to overly complex fragments that can make authoring d
 
 ### Rich Text Fields {#rich-text-fields}
 
-Use Rich Text fields (the **Multi line text** Data Type) with consideration.
+Use Rich Text fields (the **Multi line text** Data Type) with consideration:
 
-Limit the number of Rich Text fields per model. Also the amount of text stored in each fragment, and the amount of HTML formatting. Very large rich-text content can negatively affect system performance.
+* Fields
+
+  Limit the number of Rich Text fields per model. For performance reasons it is not recommended to have more than ten Rich Text fields in one model. If needed, it is recommended that you use [nested Content Fragments](/help/assets/content-fragments/content-fragments-models.md#using-references-to-form-nested-content).
+
+* Content
+
+  You should also limit the amount of text stored in each fragment, and the amount of HTML formatting. Very large rich-text content can negatively affect system performance.
 
 ### Number of Variations {#number-of-variations}
 
