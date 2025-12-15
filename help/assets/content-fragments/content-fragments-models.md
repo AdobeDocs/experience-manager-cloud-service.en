@@ -127,7 +127,6 @@ A selection of data types is available for defining your model:
   * The field can be configured to allow fragment authors to create new instances of the field  
 
   >[!NOTE]
-  
   >
   >Whether the text area is Rich Text, Plain Text, or Markdown, is defined in the model by the property **Default Type**. 
   >
