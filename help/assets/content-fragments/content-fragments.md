@@ -338,7 +338,7 @@ Avoid deep or excessive nesting of content fragments using Content Fragment Refe
 
 Heavy use of Content Fragment references can significantly impact system performance, UI responsiveness, and GraphQL query execution. Aim to keep nesting to no more than ten levels.
 
-### Number of Data Fields and Types per Model {#number-of-data-fields-and-types-per-model}
+### Number of Data Fields and Types per Model {#number-of-data-fields-and-types-per-model}
 
 Include only the data fields and types a model truly needs. 
 
