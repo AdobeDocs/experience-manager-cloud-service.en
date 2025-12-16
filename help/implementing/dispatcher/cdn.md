@@ -72,7 +72,7 @@ For light authentication use cases including business stakeholders reviewing con
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
->title="Customer CDN (or proxy) points to AEM Managed CDN" 
+>title="Customer CDN (or proxy) points to AEM Managed CDN"
 >abstract="AEM as Cloud Service offers an option for customers to use its existing CDN. For the publish tier, customers can optionally point to it from their own CDN, which they must manage. This scenario is allowed on a case-by-case basis, based on meeting certain pre-requisites including, but not limited to, the customer having a legacy integration with their CDN vendor that is difficult to abandon."
 
 If a customer must use its existing CDN (or any kind of reverse proxy, for example a loadbalancer or a WAF), they can manage it and point it to the AEM-managed CDN, providing the following are satisfied:
@@ -128,7 +128,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 The extra hop between the customer CDN and the AEM CDN is only needed if there is a cache miss. By using the cache optimization strategies described in this article, the addition of a customer CDN should only introduce negligible latency.
 
-This customer CDN configuration is supported for the publish tier, but not in front of the author tier.
+This customer CDN configuration is supported for the publish tier and the preview tier, but not in front of the author tier.
 
 ### Debugging configuration
 
@@ -215,7 +215,7 @@ The AEM managed CDN adds headers to each request with:
 
 >[!NOTE]
 >
->If there is a customer managed CDN, these headers reflect the location of the customer's CDN proxy server rather than the actual client. Customers should manage geolocation headers through their own CDN when using a customer managed CDN.  
+>If there is a customer managed CDN, these headers reflect the location of the customer's CDN proxy server rather than the actual client. Customers should manage geolocation headers through their own CDN when using a customer managed CDN.
 
 The values for the country codes are the Alpha-2 codes described under [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1).
 
