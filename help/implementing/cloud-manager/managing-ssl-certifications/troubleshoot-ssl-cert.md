@@ -124,7 +124,7 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 +++
 
-+++**Certificate validity
++++Certificate validity
 
 ## Certificate validity {#validity}
 
@@ -132,7 +132,7 @@ Cloud Manager expects the SSL certificate to be valid for at least 90 days from 
 
 +++
 
-+++**Wrong SAN certificate is applied to my domain
++++Wrong SAN certificate is applied to my domain
 
 ## Wrong SAN certificate is applied to my domain {#wrong-san-cert}
 
