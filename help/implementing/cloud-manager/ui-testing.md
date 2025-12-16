@@ -7,7 +7,7 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 ---
 
-# UI Testing {#ui-testing}
+# UI testing {#ui-testing}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
@@ -34,7 +34,7 @@ Unlike custom functional tests, which are HTTP tests written in Java, UI tests c
 > 
 >Adobe also provides UI test module examples based on JavaScript with WebdriverIO (see [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) and Java with WebDriver (see [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)). 
 
-## Get Started with UI Tests {#get-started-ui-tests}
+## Get started with UI tests {#get-started-ui-tests}
 
 This section describes the steps required to set up UI tests for execution in Cloud Manager.
 
@@ -56,7 +56,7 @@ This section describes the steps required to set up UI tests for execution in Cl
 
 1. Commit your code into the Cloud Manager repository and execute a Cloud Manager pipeline.
 
-## Building UI Tests {#building-ui-tests}
+## Building UI tests {#building-ui-tests}
 
 A Maven project generates a Docker build context. This Docker build context describes how to create a Docker image containing the UI tests, which Cloud Manager uses to generate a Docker image containing the actual UI tests.
 
@@ -66,7 +66,7 @@ This section describes the steps needed to add a UI tests project to your reposi
 >
 >The [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) can generate a UI Tests project for you, which is compliant to the following description, if you do not have special requirements for the programming language.
 
-### Generate a Docker Build Context {#generate-docker-build-context}
+### Generate a Docker build context {#generate-docker-build-context}
 
 To generate a Docker build context, you need a Maven module that:
 
@@ -153,7 +153,7 @@ Cloud Manager automatically picks up the Docker build-context archive and builds
 
 The build should produce either zero or one archive. If it produces zero archives, the test step passes by default. If the build produces more than one archive, which archive is selected is non-deterministic.
 
-### Customer Opt-In {#customer-opt-in}
+### Customer opt-In {#customer-opt-in}
 
 For Cloud Manager to build and execute your UI tests, you must opt into this feature by adding a file to your repository.
 
@@ -176,11 +176,11 @@ To include a `testing.properties` file in the build artifact, add an `include` s
 [...]
 ```
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >If your project does not include this line, edit the file to opt into UI testing.
 >
->The file may contain a line advising not to edit it. The reason is because it is being introduced into your project before opt-in UI testing was introduced and clients were not intended to edit the file. You can safely ignore the advisement.
+>The file may contain a line that says, *DO NOT MODIFY*." It is simply a legacy warning from older templates/samples and does *not* block you from making the opt-in edits that are required for Cloud Manager UI testing. You can safely ignore the advisement. That is, you may edit `assembly-ui-test-docker-context.xml` and `pom.xml` in *your project* when following the opt-in steps (for example, to include `testing.properties`).
 
 If you are using the samples provided by Adobe:
 
@@ -196,11 +196,11 @@ If you are using the samples provided by Adobe:
 
 * The Cypress and Java Selenium test samples provided by Adobe already have the opt-in flag set.
 
-## Writing UI Tests {#writing-ui-tests}
+## Write UI tests {#writing-ui-tests}
 
 This section describes the conventions that the Docker image containing your UI tests must follow. The Docker image is built out of the Docker build context described in the previous section.
 
-### Environment Variables {#environment-variables}
+### Environment variables {#environment-variables}
 
 The following environment variables are passed to your Docker image at run time, depending on your framework.
 
@@ -236,7 +236,7 @@ Cypress: use the standard function `Cypress.env('VARIABLE_NAME')`
 <!-- BOTH URLs are 404 JavaScript: See the [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) module
 * Java: See the [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class -->
 
-### Generate Test Reports {#generate-test-reports}
+### Generate test reports {#generate-test-reports}
 
 The Docker image must generate test reports in the JUnit XML format and save them in the path specified by the environment variable `REPORTS_PATH`. The JUnit XML format is a widely used format for reporting the results of tests. If the Docker image uses Java and Maven, standard test modules such as [Maven Surefire Plugin](https://maven.apache.org/surefire/maven-surefire-plugin/) and [Maven Failsafe Plugin](https://maven.apache.org/surefire/maven-failsafe-plugin/) can generate such reports out of the box.
 
@@ -267,6 +267,9 @@ If the Docker image is implemented with other programming languages or test runn
 | Timeout              | 30m   | How long the test runs.    |
 | Recommended Duration | 15m   | Adobe recommends keeping tests under this time limit. |
 
+* If the target Author/Publish is protected by IP allowlisting, the pipeline UI test infrastructure must be allowlisted or UI tests can fail with 403 Forbidden.
+  See also [UI test failure in AEMaaCS due to IP Allowlisting](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#) and [Introduction to IP Allowlists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+
 >[!NOTE]
 >
 > Should you need more resources, create a Customer Care case and describe your use-case; Adobe reviews your request and provides appropriate assistance.
@@ -277,7 +280,7 @@ If the Docker image is implemented with other programming languages or test runn
 >
 >This section only applies when Selenium is the chosen test infrastructure.
 
-### Waiting for Selenium to be Ready {#waiting-for-selenium}
+### Wait for Selenium to be ready {#waiting-for-selenium}
 
 Before the tests start, it's the responsibility of the Docker image to ensure that the Selenium server is up and running. Waiting for the Selenium service is a two-steps process.
 
@@ -303,7 +306,7 @@ You can use the helper functions to create screenshots through your tests.
 
 If a test result archive is created during a UI test execution, you can download it from Cloud Manager by clicking the `Download Details` button under the [**Custom UI Testing** step](/help/implementing/cloud-manager/deploy-code.md).
 
-### Upload Files {#upload-files}
+### Upload files {#upload-files}
 
 Tests sometimes must upload files to the application being tested. To keep the deployment of Selenium flexible relative to your tests, it is not possible to upload an asset directly to Selenium. Instead, uploading a file requires the following steps.
 
@@ -434,11 +437,11 @@ if (proxyServer !== '') {
 > An example implementation can be found in the Playwright Sample Test Module on [GitHub](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
 
 
-## Running UI Tests Locally {#run-ui-tests-locally}
+## Run UI tests locally {#run-ui-tests-locally}
 
 Before activating UI tests in a Cloud Manager pipeline, Adobe recommends that you run the UI tests locally against the [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md). Or, run against an actual AEM as a Cloud Service instance.
 
-### Cypress Test Sample {#cypress-sample}
+### Cypress test sample {#cypress-sample}
 
 1. Open a shell and navigate to the `ui.tests/test-module` folder in your repository
 
@@ -474,7 +477,7 @@ Before activating UI tests in a Cloud Manager pipeline, Adobe recommends that yo
 >
 >For details, see the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
 
-### JavaScript WebdriverIO Test Sample {#javascript-sample}
+### JavaScript WebdriverIO test sample {#javascript-sample}
 
 1. Open a shell and navigate to the `ui.tests` folder in your repository.
 
@@ -498,7 +501,7 @@ Before activating UI tests in a Cloud Manager pipeline, Adobe recommends that yo
 >
 >For details, see the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
 
-### Playwright Test Sample {#playwright-sample}
+### Playwright test sample {#playwright-sample}
 
 1. Open a shell and navigate to the `ui.tests` folder in your repository
 
@@ -527,7 +530,7 @@ Before activating UI tests in a Cloud Manager pipeline, Adobe recommends that yo
 >For details, see the [AEM Test Samples repository](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
 
 
-### Java Selenium WebDriver Test Sample {#java-sample}
+### Java Selenium WebDriver test sample {#java-sample}
 
 1. Open a shell and navigate to the `ui.tests/test-module` folder in your repository
 
