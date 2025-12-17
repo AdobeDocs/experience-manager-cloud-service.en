@@ -180,7 +180,7 @@ To include a `testing.properties` file in the build artifact, add an `include` s
 >
 >If your project does not include this line, edit the file to opt into UI testing.
 >
->The file may contain a line that says, *DO NOT MODIFY*." It is simply a legacy warning from older templates/samples and does *not* block you from making the opt-in edits that are required for Cloud Manager UI testing. You can safely ignore the advisement. That is, you may edit `assembly-ui-test-docker-context.xml` and `pom.xml` in *your project* when following the opt-in steps (for example, to include `testing.properties`).
+>The file may contain a line that says, *DO NOT MODIFY*. It is simply a legacy warning from older templates/samples and does *not* block you from making the opt-in edits that are required for Cloud Manager UI testing. You can safely ignore the advisement; you can edit `assembly-ui-test-docker-context.xml` and `pom.xml` in *your project* when following the opt-in steps (for example, to include `testing.properties`).
 
 If you are using the samples provided by Adobe:
 
