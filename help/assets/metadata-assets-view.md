@@ -110,6 +110,10 @@ Once a form is created, it is automatically applied when users upload an asset o
 
 To reuse an existing form to create a new form, select a metadata form, click **[!UICONTROL Copy]** from the toolbar, provide a name, and click **[!UICONTROL Confirm]**. You can edit a metadata form to change it. When you change a form, it is used for assets uploaded after the change. It does not change the existing assets.
 
+>[!IMPORTANT] 
+>
+>The default metadata form also has a **[!UICONTROL Campaign]** tab, which comprises **[!UICONTROL Campaign Name]**, **[!UICONTROL Channels]**, and **[!UICONTROL Region]** multi-value read-only fields. is a limited availability feature. You can get it enabled  by creating a support ticket.
+
 ### Property components {#property-components}
 
 You can customize your metadata form using any of the following property components. Simply drag and drop the component type onto the form in the desired location and modify the component settings. 
