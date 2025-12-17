@@ -29,6 +29,10 @@ To opt in to participate in this program, email [aemagentsteam@adobe.com](mailto
     * Names and Adobe ID's of team members who will actively use agents.
     * List Specific agents that you or your team will want to use. Or simply say "All Agents."
 
+### AEM Foundation
+
+    See [AEM Foundation beta programs](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter).
+
 ### Cloud Manager 
 
     See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes/current.md).
