@@ -112,7 +112,7 @@ To reuse an existing form to create a new form, select a metadata form, click **
 
 >[!IMPORTANT] 
 >
->The default metadata form also has a **[!UICONTROL Campaign]** tab, which comprises **[!UICONTROL Campaign Name]**, **[!UICONTROL Channels]**, and **[!UICONTROL Region]** multi-value read-only fields. is a limited availability feature. You can get it enabled  by creating a support ticket.
+>The default metadata form also has a **[!UICONTROL Campaign]** tab, which comprises **[!UICONTROL Campaign Name]**, **[!UICONTROL Channels]**, and **[!UICONTROL Region]** multi-value read-only fields. It is a limited availability feature. You can get it enabled  by creating a support ticket.
 
 ### Property components {#property-components}
 
