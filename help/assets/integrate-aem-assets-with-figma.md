@@ -45,7 +45,7 @@ Alternatively, access the [[!DNL Adobe Experience Manager (AEM) Assets Connector
 1. Drag and drop the asset to the canvas or select the asset and click **[!UICONTROL Select]** to bring the asset on the canvas.
 
 1. Click ![three dots](/help/assets/assets/three-dots.svg) in the folder path to display all parent and child folders in the current hierarchy. Select a folder to navigate to that location. 
-![three dots](/help/assets/assets/assets-folder-structure.png)
+![three dots](/help/assets/assets/figma-v2-plugin.png)
 
 1. [Optional] Click **[!UICONTROL Check for updates]**. The assets used in the current Figma document are compared to the assets that exist in AEM. Any updates are listed in a separate window. Click **[!UICONTROL Update]** to get the updated asset from AEM into your Figma document. 
 
