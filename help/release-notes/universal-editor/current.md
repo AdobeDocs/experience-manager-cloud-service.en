@@ -20,6 +20,7 @@ These are the release notes for the 18 December 2025 release of the Universal Ed
 
 ## What's New {#what-is-new}
 
+* Support for setting and persisting default values of model fields has been added.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -29,3 +30,6 @@ If you are interested in testing the upcoming features listed below and sharing 
 
 ## Other Improvements {#other-improvements}
 
+* Data cleanup is now performed correctly on content switch.
+* Multiple operations in extensions's update are now supported.
+* Close button for developer login now behaves as expected.
