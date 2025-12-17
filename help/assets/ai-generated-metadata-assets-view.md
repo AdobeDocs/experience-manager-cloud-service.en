@@ -15,7 +15,6 @@ To enable AI-generated metadata:
 
 * Minimum required AEM release version is `20626`.
 
-* You must sign a GenAI Rider agreement. For more information, contact your Adobe representative.
   
 ## Using AI-generated metadata {#using-ai-generated-smart-tags}
 
@@ -38,4 +37,4 @@ To use the enhanced smart tags feature, execute the following steps:
 
 1. [Optional] You may add additional tags or create your own if you feel any relevant tags are missing. To do this, write your tags in the  **[!UICONTROL Generated keywords]** field and click **[!UICONTROL Save]**.
 
-For information on how to disable AI-generated metadata, see [Disable AI-generated metadata](/help/assets/smart-tags.md#disable-ai-generated-metadata).
+For information on how to disable AI-generated metadata, see [Disable AI-generated metadata](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata).

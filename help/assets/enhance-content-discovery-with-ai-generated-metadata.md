@@ -22,15 +22,13 @@ To enable AI-generated metadata:
 
 * Minimum required AEM release version is `20626`.
 
-* You must sign a GenAI Rider agreement. For more information, contact your Adobe representative.
-
 ## Configure AI-generated titles {#configure-ai-generated-titles}
 
 AEM enables you to configure the display of asset titles in Card view or List view on the Asset Browse page. You can choose to display the asset title defined by you, title generated using AI, or use AI-generated title only if there is no existing title for the asset.
 
 To configure AI-generated titles:
 
-1. Navigate to **[!UICONTROL Tools > Assets > Assets Configuration > Smart Tag Enhancement Configuration]**.
+1. Navigate to **[!UICONTROL Tools > Assets > Assets Configurations > Smart Tag Enhancement Configuration]**.
 
 1. Select one of the following options:
 
@@ -65,20 +63,26 @@ To use the enhanced smart tags feature, execute the following steps:
 
 ## Disable AI-generated metadata {#disable-ai-generated-metadata}
 
- You can disable AI-generated metadata at the folder-level. All child folders inherit the properties from the parent folder.
+You can disable AI-generated metadata for your AEM as a Cloud Service environment or you can disable it at a folder-level.
 
-To disable AI-generated metadata at the folder-level:
+To disable AI-generated metadata for AEM as a Cloud Service environment:
 
-1. Navigate to **[!UICONTROL Adobe Experience Manager > Assets > Files]**.
+1. Navigate to **[!UICONTROL Tools > Assets > Assets Configurations > Smart Tag Enhancement Configuration]**.
+
+1. Select **[!UICONTROL Disable Smart Tag Enhancements]**.
+
+1. Click **[!UICONTROL Save]** .
+
+The AI-generated metadata is disabled for the new assets or folders that you upload to AEM Assets. The existing assets or folders that have AI-generated metadata fields already generated still continue to display these fields.
+
+### Disable AI-generated metadata for folders {#disable-ai-generated-metadata-folder-level}
+
+To disable AI-generated metadata at a folder-level:
 
 1. Select the folder and click **[!UICONTROL Properties]**.
 
-1. In the **[!UICONTROL Asset Processing]** tab, navigate to the **[!UICONTROL Smart Tags Enhancements for images]** folder. Select one of the following values from the drop-down list:
+1. Select **[!UICONTROL Asset Processing]** tab.
 
-   * Inherited - The folder inherits the enable or disable options from the parent folder.
+1. In the **[!UICONTROL Smart Tags Enhancements for images]** section, select **[!UICONTROL Disable]** from the drop-down menu.
 
-   * Enable - Enables AI-generated metadata for the selected folder.
-
-   * Disable - Disables AI-generated metadata for the selected folder.
-
-      ![Disable AI-generated metadata](assets/disable-ai-generated-metadata.png)
+1. Click **[!UICONTROL Save & Close]** to disable AI-generated metadata for the selected folder.
