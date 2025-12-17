@@ -21,6 +21,9 @@ The [Content Fragment Editor](#opening-the-fragment-editor) provides various [mo
 * [View the Structure Tree](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [Preview the JSON representation](/help/assets/content-fragments/content-fragments-json-preview.md)
 
+>[!NOTE]
+>
+>Be aware of the [Best Practices](/help/assets/content-fragments/content-fragments.md#best-practices) when working with your Content Fragment Models and Content Fragments.
 
 >[!NOTE]
 >
