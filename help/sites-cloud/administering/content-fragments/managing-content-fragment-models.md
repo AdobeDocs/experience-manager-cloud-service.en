@@ -14,6 +14,10 @@ Content Fragment Models in Adobe Experience Manager (AEM) as a Cloud Service def
 
 >[!NOTE]
 >
+>Be aware of the [Best Practices](/help/sites-cloud/administering/content-fragments/overview.md#best-practices) when working with your Content Fragment Models and Content Fragments.
+
+>[!NOTE]
+>
 >This page covers the section of the console that (only) displays Content Fragment Models. For other panels see:
 >
 >* [Managing Content Fragments](/help/sites-cloud/administering/content-fragments/managing.md) 
