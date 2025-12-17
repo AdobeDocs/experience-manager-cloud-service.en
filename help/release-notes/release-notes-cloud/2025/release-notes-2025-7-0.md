@@ -244,7 +244,7 @@ For more details, see the [Maintenance Tasks article](/help/operations/maintenan
 
 #### Content Versions {#mt-content}
 
-* **New environments** (created after an upcoming date to be communicated later):
+* **New environments** (created after an upcoming date, to be communicated later):
   * Versions older than 30 days will periodically be deleted.
   * The most recent five versions within the last 30 days are retained, along with the most recent version and the current version, regardless of their age.
 
