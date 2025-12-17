@@ -27,6 +27,10 @@ This editor provides:
 * Ability to [view, and open, parent references](#view-parent-references).
 * A hierarchical view of the Content Fragment, and its references, using the [Structure tree](#structure-tree).
 
+>[!NOTE]
+>
+>Be aware of the [Best Practices](/help/sites-cloud/administering/content-fragments/overview.md#best-practices) when working with your Content Fragment Models and Content Fragments.
+
 >[!WARNING]
 >
 >The editor described in this section is *only* available in the [Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md); so *online* Adobe Experience Manager (AEM) as a Cloud Service, not a local instance.
@@ -83,7 +87,7 @@ In the left panel you can see:
 
 * the list of **[Variations](#variations)** that have been created for this fragment:
   * **Main** is the Variation that is present when the Content Fragment is first created, you can add others later
-  * you can use Generate Variations(#generate-variations) to use a prompt based template that Adobe has created for a specific use case.
+  * you can use [Generate Variations](#generate-variations-ai) to use a prompt based template that Adobe has created for a specific use case.
   * you can also [create a Variation](#create-variation)
 * the **Fields** within the fragment, and its variations:
   * the icon indicates the [Data Type](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
@@ -129,12 +133,6 @@ From the editor you can:
 * [Delete a Variation](#delete-variation)
 
 ### Create a Variation {#create-variation}
-
->[!NOTE]
->
->Variations add processing time to a Content Fragment, on the author environment and upon delivery too. It is recommended to keep the number of variations to a manageable minimum. 
->
->A best practice is to not exceed ten variations per Content Fragment.
 
 To create a Variation of your Content Fragment:
 

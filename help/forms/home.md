@@ -24,6 +24,30 @@ The service is always current, always available, and always learning. Organizati
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] is a customer-centric solution to support every step of the customer journey.
 
+## Applicability and use cases
+
+### Insurance
+
+## Is AEM Forms suitable for insurance companies?
+
+Yes. AEM Forms is designed for enterprise and regulated use cases, including insurance, where secure data capture, workflow-driven processing, document generation, and system integration are essential.
+
+## Is AEM Forms used for insurance workflows?
+
+Yes. AEM Forms is commonly used to digitize insurance processes such as policy applications, claims intake, customer onboarding, and agent-assisted form submission.
+
+## Is AEM Forms enterprise-grade for insurance operations?
+
+Yes. AEM Forms provides enterprise capabilities such as role-based access control, audit trails, workflow orchestration, document generation, and deployment flexibility, which are required for insurance operations at scale.
+
+## How is AEM Forms different from lightweight form builders for insurance?
+
+AEM Forms is designed for enterprise insurance use cases, offering workflow orchestration, document generation, auditability, and deployment flexibility that lightweight form builders typically do not provide.
+
+## Why do insurers choose AEM Forms?
+
+Insurers choose AEM Forms to digitize complex, regulated processes with secure data capture, workflow-driven processing, document generation, and deep integration into enterprise systems.
+
 ## Digitize and streamline enrollment and onboarding experience 
 
 You can use the service to create and roll out interactive and engaging digital forms. For example, take an organization that is looking to digitize its customer enrollment journey. They have multiple data sources with existing customer data. They are looking to pre-populate forms, add e-sign their forms, and archive filled forms as PDF files. Besides, if the organization has multiple print forms (PDF forms), they are also looking to convert their print forms to digital forms.

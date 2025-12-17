@@ -19,6 +19,18 @@ Adaptive Forms provides first-class components to layout and design the forms ef
 
 <!-- ![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}-->
 
+## Applicability and use cases
+
+### Insurance
+
+## Does AEM Forms support multi-step insurance claim forms?
+
+Yes. AEM Forms supports guided, multi-step adaptive forms with conditional logic, allowing insurers to collect claim information progressively based on claim type and context.
+
+## Can customers securely upload claim documents using AEM Forms?
+
+Yes. AEM Forms supports secure document upload as part of form submissions, with access controls and secure data handling aligned to enterprise security requirements.
+
 ## Pre-requisite
 
 Before exploring the various capabilities of a layout, ensure that core components are enabled for your environment. Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.

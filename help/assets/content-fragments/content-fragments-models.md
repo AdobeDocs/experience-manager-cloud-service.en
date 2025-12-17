@@ -19,6 +19,10 @@ To use Content Fragment Models you:
 
 >[!NOTE]
 >
+>Be aware of the [Best Practices](/help/assets/content-fragments/content-fragments.md#best-practices) when working with your Content Fragment Models and Content Fragments.
+
+>[!NOTE]
+>
 >Content Fragments are a Sites feature, but are stored as **Assets**. 
 >
 >Content Fragments and Content Fragment Models are now primarily managed with the **[Content Fragments](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)** console, though Content Fragments can still be managed from the **Assets** console, and Content Fragment Models from the **Tools** console. This section covers management from the **Assets** and **Tools** consoles.
