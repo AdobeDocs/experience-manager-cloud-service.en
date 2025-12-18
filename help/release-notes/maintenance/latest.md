@@ -10,14 +10,14 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 23832 {#23832}
+## Release 23862 {#23862}
 
-Summarized below are the continuous improvements for maintenance release 23832, which was publicly released on December 23, 2025. The previous maintenance release was release 23482.
+Summarized below are the continuous improvements for maintenance release 23862, which was publicly released on December 23, 2025. The previous maintenance release was release 23482.
 
 The 2026.1.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
 
-### Enhancements {#enhancements-23832}
+### Enhancements {#enhancements-23862}
 
 * SITES-37199 Annotation Feature triggers repository traversal via unvalidated authorizables.json call causing Performance Degradation
 * SITES-37118 - Commerce Optimizer support in Product Cockpit
@@ -38,12 +38,11 @@ The 2026.1.0 feature activation will provide the full feature set for this maint
 * FORMS-20536 : Expose an option of complete response in eventPayload in rule editor without mapping
 * CQ-4361812: Added support for optional param folderPath in rest api. Description: A new translation project is created by the API, and will be placed within the path specified by the optional "folderPath" parameter, otherwise it defaults to the root project path "/content/projects".
 
-### Fixed Issues {#fixed-issues-23832}
+### Fixed Issues {#fixed-issues-23862}
 
 * SITES-38153 - Fix cf publish reference provider for uuid based references
 * SITES-37594 - Performance improvements for model by tags functionality
 * SITES-37337 - FragmentCreateProcessor: provide additional error details in logs
-* SITES-37510 - GraphQL: Adding "ignoreCase:true" clause prevents the jcr filtering from using "contains" filter
 * SITES-33666 - Unlocalized 'Cannot print fragment's Json' error message in Content Fragment Editor
 * SITES-33675 - Hardcoded 'undefined' string in Content Fragment Editor > Associated Content
 * SITES-30715 - Unlocalized 'General' string in Content Fragment Editor
@@ -82,19 +81,19 @@ The 2026.1.0 feature activation will provide the full feature set for this maint
 * CQ-4360747 : Fixed Repeatable Translation Jobs create empty payloads & trigger too often (NullPointerException in ScheduleRepeatTranslationProject)
 * CQ-4359994: Fixed destinationLanguage field type inconsistency for single and multi-language project
 
-### Known Issues {#known-issues-23832}
+### Known Issues {#known-issues-23862}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-23832}
+### Deprecated Features and APIs {#deprecated-23862}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-23832}
+### Security Fixes {#security-23862}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 23 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-23832}
+### Embedded Technologies {#embedded-tech-23862}
 
 |Technology|Version|Link|
 |---|---|---|
