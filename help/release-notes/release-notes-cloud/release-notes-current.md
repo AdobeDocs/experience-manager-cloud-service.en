@@ -56,6 +56,8 @@ The following sections list active beta programs.
 
 Gain early access to powerful, new AEM agentic capabilities across production, governance, optimization, discovery, and development. Your feedback directly shapes Adobe's roadmap and final features. See [Overview of Agents in AEM](/help/ai-in-aem/agents/overview.md) to learn more.
 
+This program typically lasts 4-6 weeks, but can be tailored to be flexible around your ability to actively participate. 
+
 To opt in to participate in this program, email [aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com) and include the following details to the extent possible:
 
 * Names and Adobe ID's of team members who will actively use agents.
