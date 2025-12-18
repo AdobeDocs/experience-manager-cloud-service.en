@@ -52,7 +52,7 @@ Getting early access to features that Adobe is developing lets customers and par
 **Current beta programs**
 The following sections list active beta programs.
 
-### Agents in AEM (Beta program)
+### Agents in AEM (Beta program) {#agents-in-aem-beta-program}
 
 Gain early access to powerful, new AEM agentic capabilities across production, governance, optimization, discovery, and development. Your feedback directly shapes Adobe's roadmap and final features. See [Overview of Agents in AEM](/help/ai-in-aem/agents/overview.md) to learn more.
 
@@ -61,11 +61,11 @@ To opt in to participate in this program, email [aemagentsteam@adobe.com](mailto
 * Names and Adobe ID's of team members who will actively use agents.
 * List Specific agents that you or your team will want to use. Or simply say "All Agents."
 
-### AEM Foundation (Beta programs)
+### AEM Foundation (Beta programs) {#aem-foundation-beta-programs}
 
 See [AEM Foundation beta programs](#foundation-early-adopter).
 
-### Cloud Manager (Beta programs)
+### Cloud Manager (Beta programs) {#cloud-manager-beta-programs}
 
 See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes/current.md).
 
@@ -200,7 +200,7 @@ Go‑live days, live events, peak sales—these moments can't break. [Our new se
 >Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to get it activated on your programs.
 >
 
-#### Edge Computing (Beta Program) {#edge-computing}
+#### Edge Computing (Beta Program) 
 
 Edge computing allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
 
