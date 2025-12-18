@@ -14,6 +14,7 @@ You can use the following properties to customize how the Content Fragment Selec
 
 | Property | Type | Required | Default | Description |
 |--- |--- |--- |--- |--- |
+| `ref` | FragmentSelectorRef | | | Reference to the `ContentFragmentSelector` instance, allowing access to provided functionality such as `reload`. |
 | `imsToken` | string | No | | IMS token used for authentication. If not provided, the IMS login flow will be initiated. |
 | `repoId` | string | No | | Repository ID used for the Fragment Selector. When provided, the selector automatically connects to the specified repository, and the repository dropdown is hidden. If not provided, the user can select a repository from the list of available repositories they have access to. |
 | `defaultRepoId` | string | No | | Repository ID that will be selected by default when the repository selector is shown. Used only when `repoId` is not provided. If `repoId` is set, the repository selector is hidden, and this value is ignored. |
