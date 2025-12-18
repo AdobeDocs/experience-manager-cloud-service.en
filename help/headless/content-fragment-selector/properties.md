@@ -12,29 +12,6 @@ You can use the following properties to customize how the Content Fragment Selec
 
 ## Content Fragment Selector Properties {#content-fragment-selector-properties}
 
-<!-->
-| Property | Type | Required | Default | Description |
-|--- |--- |--- |--- |--- |
-| `imsToken` | string | No | | IMS token used for authentication.  |
-| `repoId` | string  | No | | Repository ID used for authentication. |
-| `orgId` | string | Yes | | Organization ID used for authentication. |
-| `locale` | string | No | | Locale data. |
-| `env` | Environment | No | | Content Fragment Selector deployment environment. |
-| `filters` | FragmentFilter | No | | Filters to be applied for the list of content fragments. By default, fragments under `/content/dam` will be displayed. Default value: `{ folder: "/content/dam" }` |
-| `isOpen` | boolean | Yes | `false` | Flag to trigger opening or closing the selector. |
-| `onDismiss` | () => void | Yes | | Function to be called when **Dismiss** is selected. |
-| `onSubmit` | ({ contentFragments: `{id: string, path: string}[]`, domainNames: `string[]` }) => void | Yes | | Function to be called when **Select** is used after selecting one or more Content Fragments. <br><br>The function will receive:<br><ul><li> the selected Content Fragments with `id` and `path` fields</li><li>and domain names related to the repository's program id and environment id, which have the status `ready` and the `tier` Publish</li></ul><br>If there are no domain names it will be use the Publish instance as a fallback domain. |
-| `theme` | "light" or "dark" | No | | Theme of the Content Fragment Selector. Default theme is set to the theme of the UnifiedShell environment. |
-| `selectionType` | "single" or "multiple" | No | `single` | Selection type that can be used to restrict selection for the FragmentSelector. |
-| `dialogSize` | "fullscreen" or "fullscreenTakeover" | No | `fullscreen`   | Optional property to control the dialog size. |
-| `waitForImsToken` | boolean | No | `false` | Indicates whether the Content Fragment Selector is rendered in the context of SUSI flow, and needs to wait for the `imsToken` to be ready. |
-| `imsAuthInfo` | ImsAuthInfo | No | | Object containing the IMS authentication information of the logged in user. |
-| `runningInUnifiedShell` | boolean | No | | Indicates whether the Content Fragment Selector is running under UnifiedShell or standalone. |
-| `readonlyFilters` | ResourceReadonlyFiltersField | No | | Readonly filters that can be applied for the list of content - and cannot be removed. |
--->
-
-
-
 | Property | Type | Required | Default | Description |
 |--- |--- |--- |--- |--- |
 | `imsToken` | string | No | | IMS token used for authentication. If not provided, the IMS login flow will be initiated. |
