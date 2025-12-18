@@ -1,0 +1,113 @@
+---
+title: Cascading metadata
+description: This article describes how to define cascading metadata for assets in assets view.
+feature: Metadata
+role: Admin, User
+---
+# Cascading Metadata {#cascading-metadata}
+
+When capturing the metadata information of an asset, users provide information in the various available fields. You can display specific metadata fields or field values that are dependent on the options selected in the other fields. Such conditional display of metadata is called cascading metadata. In other words, you can create a dependency between a particular metadata field/value and one or more fields and/or their values.
+
+Use metadata schemas to define rules for displaying cascading metadata. For example, if your metadata schema includes an asset type field, you can define a pertinent set of fields to be displayed based on the type of asset a user selects.
+
+Here are some use cases for which you can define cascading metadata:
+
+* Where user location is required, display relevant city names based on the user's choice of country and state.
+* Load pertinent brand names in a list based on the user's choice of product category.
+* Toggle the visibility of a particular field based on the value specified in another field. For example, display separate shipping address fields if the user wants the shipment delivered at a different address.
+* Designate a field as mandatory based on the value specified in another field.
+* Change options displayed for a particular field based on the value specified in another field.
+* Set the default metadata value in a particular field based on the value specified in another field.
+
+## Configure cascading metadata in [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
+
+Consider a scenario where you want to display cascading metadata based on the type of asset that is selected. Some examples
+
+* For a video, display applicable fields such as format, codec, duration, and so on.
+* For a Word or PDF document, display fields, such as page count, author, and so on.
+
+Irrespective of the asset type chosen, display the copyright information as a required field.
+
+### Build Metadata Schema Form {#build-metadata-schema-form}
+
+Consider the steps below to create a new Metadata Schema Form: 
+
+1. Select the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
+1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then select **[!UICONTROL Edit]** from the toolbar to edit the schema.
+
+   ![select form](assets/select-form-assets-view.png)
+
+    (Optional) In the metadata schema editor, create a field to conditionalize. Specify a name and property path in the **[!UICONTROL Settings]** tab.
+
+1. To create a tab, select `+` to add a tab.
+
+### Modify an existing Metadata Schema Form {#modify-existing-metadata-schema-form}
+
+Consider the steps below to modify an existing Metadata Schema Form:
+
+1. Go to **[!UICONTROL Settings]** tab to add **[!UICONTROL Field Label]**, **[!UICONTROL Description]**, **[!UICONTROL Class]** and so on for the form fields.
+
+    ![Settings tab](assets/settings-tab-metadata-schema-tab.png)
+
+1. Go to **[!UICONTROL Build Form]** tab, navigate the field that you want to add in the form and drop the elements on your canvas.
+
+1. (Optional) Add the other required fields. For example, format, codec, and duration for the asset type video.
+
+   <!-- Similarly, add dependent fields for other asset types. For example, add fields page count and author for document assets, such as PDF and Word files.-->
+
+   <!--![video_dependent_fields](assets/video_dependent_fields.png)-->
+
+1. To create a dependency between the asset type field and other fields, choose the dependent field and open the **[!UICONTROL Rules]** tab.
+
+   ![select dependent field](assets/select-dependent-field.png)
+
+1. Under **[!UICONTROL Requirement]**, choose the **[!UICONTROL Required, based on new rule]** option.
+1. Select **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value on which to create the dependency. In this case, choose **[!UICONTROL Video]**. Select **[!UICONTROL Done]** to save the changes.
+
+   ![define_rule](assets/define_rule.png)
+
+   >[!NOTE]
+   >
+   >Dropdown with manually predefined values can be used with rules. Dropdown menus with configured JSON path can't be used with rules that use predefined values to apply conditions. If the values are loaded from JSON at runtime, it is not possible to apply a predefined rule.
+
+1. Under **[!UICONTROL Visibility]**, choose the **[!UICONTROL Visible, based on new rule]** option.
+
+1. Select **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value upon which to create the dependency. In this case, choose **[!UICONTROL Video]**. Select **[!UICONTROL Done]** to save the changes.
+
+   ![define_visibilityrule](assets/define_visibilityrule.png)
+
+   >[!CAUTION]
+   >
+   >To reset the values, select anywhere on the interface other than the values. If the values are reset, select the values again.
+
+   >[!NOTE]
+   >
+   >You can apply **[!UICONTROL Requirement]** condition and **[!UICONTROL Visibility]** condition independent of each other.
+
+1. Similarly, create a dependency between the value Video in the Asset Type field and other fields, such as Codec and Duration.
+1. Repeat the steps to create dependency between document assets (PDF and Word) in the [!UICONTROL Asset Type] field and fields such as [!UICONTROL Page Count] and [!UICONTROL Author].
+1. Click **[!UICONTROL Save]**. Apply the metadata schema to a folder.
+
+1. Navigate to the folder to which you applied the Metadata Schema and open the properties page of an asset. Depending upon your choice in the Asset Type field, pertinent cascading metadata fields are displayed.
+
+   ![Cascading metadata for Video asset](assets/video_asset.png)
+   *Figure: Cascading metadata for Video asset*
+
+   ![Cascading metadata for document asset](assets/doc_type_fields.png)
+   *Figure: Cascading metadata for document asset*
+
+**See also**
+
+* [Translate Assets](translate-assets.md)
+* [Assets HTTP API](mac-api-assets.md)
+* [Assets supported file formats](file-format-support.md)
+* [Search assets](search-assets.md)
+* [Connected assets](use-assets-across-connected-assets-instances.md)
+* [Asset reports](asset-reports.md)
+* [Metadata schemas](metadata-schemas.md)
+* [Download assets](download-assets-from-aem.md)
+* [Manage metadata](manage-metadata.md)
+* [Search facets](search-facets.md)
+* [Manage collections](manage-collections.md)
+* [Bulk metadata import](metadata-import-export.md)
+* [Publish Assets to AEM and Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
