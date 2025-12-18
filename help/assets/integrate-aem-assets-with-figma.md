@@ -16,6 +16,12 @@ exl-id: 530561ca-497b-4331-a014-72c561e1ca84
 
 * You must have valid [!DNL AEM Assets] and [!DNL Figma] licenses to integrate [!DNL AEM Assets] with [!DNL Figma].
 
+## Supported file formats {#supported-file-formats-integration-figma}
+
+
+* For importing [!DNL AEM] assets into Figma, the supported formats are image assets (JPEG, PNG), video files (MP4, MOV, WebM), Animated files (GIF), and Vector files (SVG).
+* For exporting designs from [!DNL Figma] to [!DNL AEM Assets], the supported formats are **PNG**, **PDF**, **JPG**, **SVG**.
+
 ## Access [!UICONTROL Adobe Experience Manager (AEM) Assets Connector]{#access-aem-assets-connector}
 
 Execute the following steps to access the [!UICONTROL Adobe Experience Manager (AEM) Assets Connector]:
@@ -39,7 +45,9 @@ Alternatively, access the [[!DNL Adobe Experience Manager (AEM) Assets Connector
 1. Drag and drop the asset to the canvas or select the asset and click **[!UICONTROL Select]** to bring the asset on the canvas.
 
 1. Click ![three dots](/help/assets/assets/three-dots.svg) in the folder path to display all parent and child folders in the current hierarchy. Select a folder to navigate to that location. 
-![three dots](/help/assets/assets/assets-folder-structure.png)
+![three dots](/help/assets/assets/figma-v2-plugin.png)
+
+1. [Optional] Click **[!UICONTROL Check for updates]**. The assets used in the current Figma document are compared to the assets that exist in AEM. Any updates are listed in a separate window. Click **[!UICONTROL Update]** to get the updated asset from AEM into your Figma document. 
 
 Once your Figma design is ready, you can [export the asset to the AEM Assets repository](#export-figma-design-to-aem-assets-folder). 
 
@@ -50,12 +58,7 @@ Once your Figma design is ready, you can [export the asset to the AEM Assets rep
 1. Navigate to the destination folder where you want to save your [!DNL Figma] design. If you are already inside a folder, click More options (![three dots](/help/assets/assets/three-dots.svg)) in the folder path to select a different destination folder.
 1. Optional: Group assets on the canvas to select them as a single unit to upload in your folder.
 1. Click ![file upload](/help/assets/assets/upload-icon.svg) **[!UICONTROL Upload]** to display the **[!UICONTROL Upload Asset]** dialog box. 
-1. In the dialog box, specify a file name, choose a file format, select either **[!UICONTROL Selected Item]** or **[!UICONTROL Page]**, and click **[!UICONTROL Upload]** to upload the selected asset or the entire design to the destination folder.
-![upload figma design](/help/assets/assets/upload-figma-design.png)
+1. In the dialog box, select either **[!UICONTROL Selected Item]** or **[!UICONTROL Page]**, specify a file or page name, define an export configuration and click **[!UICONTROL Upload]** to upload the selected asset or the entire design to the destination folder. 
 
-## Important points to note{#Limitations-of-using-aem-assets-into-figma}
-
-This integration currently has the following limitations:
-
-* For importing [!DNL AEM] assets into Figma, the supported formats are **JPEG**, **PNG**.
-* For exporting designs from [!DNL Figma] to [!DNL AEM Assets], the supported formats are **PNG**, **PDF**, **JPG**, **SVG**.
+   The export configuration comprises the file format, scale, and quality. For example, if you select JPG as the file format, you can also define the image scale and quality. Similarly, if you select PNG as the file format, you can also define the image scale.
+   ![upload figma design](/help/assets/assets/upload-figma-design.png)
