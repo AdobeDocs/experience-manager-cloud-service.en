@@ -58,8 +58,8 @@ Gain early access to powerful, new AEM agentic capabilities across production, g
 
 To opt in to participate in this program, email [aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com) and include the following details to the extent possible:
 
-- Names and Adobe ID's of team members who will actively use agents.
-- List Specific agents that you or your team will want to use. Or simply say "All Agents."
+* Names and Adobe ID's of team members who will actively use agents.
+* List Specific agents that you or your team will want to use. Or simply say "All Agents."
 
 ### AEM Foundation (Beta programs)
 
