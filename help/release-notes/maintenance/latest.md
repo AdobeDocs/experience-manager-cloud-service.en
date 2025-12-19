@@ -38,6 +38,8 @@ The 2026.1.0 feature activation will provide the full feature set for this maint
 * FORMS-20536 : Expose an option of complete response in eventPayload in rule editor without mapping
 * CQ-4361812: Added support for optional param folderPath in rest api. Description: A new translation project is created by the API, and will be placed within the path specified by the optional "folderPath" parameter, otherwise it defaults to the root project path "/content/projects".
 * SITES-36963 - Migrate Audience/Segment Endpoint to Target API v3 for Workspace Support
+* FORMS-21960 - Added support for canvas editing on local for Interactive Communications, similar to forms-spa.
+* FORMS-22001 - Added guidance to reduce high volume of /etc.clientlibs/toggles.json requests in AEM Forms as a Cloud Service.
 
 ### Fixed Issues {#fixed-issues-23862}
 
