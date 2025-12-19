@@ -1,13 +1,13 @@
 ---
 title: Integrate Content Fragment Selector with non-Adobe or third party application
 description: Integrate Content Fragment selector with various Adobe, non-Adobe, and third party applications.
-role: Admin, User
+role: Admin, User, Developer
 ---
-# Integration with a non-Adobe application {#integrate-asset-selector-non-adobe-app}
+# Integration with a non-Adobe application {#integration-with-non-adobe-application}
 
 Content Fragment Selector allows you to integrate using various non-Adobe or third party applications to enable them to work together seamlessly.
 
-## Prerequisites {#prereqs-non-adobe-app} 
+## Prerequisites {#prerequisites} 
 
 Use the following prerequisites if you are integrating Content Fragment Selector with a non-Adobe application:
 
@@ -18,13 +18,13 @@ Use the following prerequisites if you are integrating Content Fragment Selector
 * imsOrg
 * apikey
 
-Content Fragment Selector supports authentication to the [!DNL Experience Manager Assets] repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID` when you are integrating it with a non-Adobe application.
+Content Fragment Selector supports authentication to the Experience Manager Assets repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID` when you are integrating it with a non-Adobe application.
 
-## Configure Content Fragment Selector for a non-Adobe application {#configure-non-adobe-app}
+## Configure Content Fragment Selector for a non-Adobe application {#configure-content-fragment-selector-for-a-non-adobe-application}
 
 To configure Content Fragment Selector for a non-Adobe application, you must first log a support ticket for provisioning followed by the integration steps.
 
-### Logging a support ticket {#log-a-support-ticket}
+### Logging a support ticket {#logging-a-support-ticket}
 
 Steps to log a support ticket via the Admin Console:
 
@@ -32,10 +32,10 @@ Steps to log a support ticket via the Admin Console:
 
 1. In the description, provide the following details:
 
-    * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] URL (Program ID and Environment ID).
+    * Experience Manager Assets as a Cloud Service URL (Program ID and Environment ID).
     * Domain names where the non-Adobe web application is hosted.
 
-## Integration steps {#non-adobe-app-integration-steps}
+## Integration steps {#integration-steps}
 
 Use this example `index.html` file for authentication while integrating Content Fragment Selector with a non-Adobe application.
 
@@ -43,7 +43,7 @@ Access the Content Fragment Selector package using the `Script` Tag, as shown in
 
 *Line 14* to *line 38* of the example describes the IMS flow properties, such as `imsClientId`, `imsScope`, and `redirectURL`. The function requires that you define at least one of the `imsClientId` and `imsScope` properties. If you do not define a value for `redirectURL`, the registered redirect URL for the client ID is used.
 
-As you do not have an `imsToken` generated, use the `registerAssetsSelectorsAuthService` and `renderAssetSelectorWithAuthFlow` functions, as shown in line 40 to line 50 of the example `index.html` file. Use the `registerAssetsSelectorsAuthService` function before `renderAssetSelectorWithAuthFlow` to register the `imsToken` with the Content Fragment Selector. [!DNL Adobe] recommends calling `registerAssetsSelectorsAuthService` when you instantiate the component.
+As you do not have an `imsToken` generated, use the `registerAssetsSelectorsAuthService` and `renderAssetSelectorWithAuthFlow` functions, as shown in line 40 to line 50 of the example `index.html` file. Use the `registerAssetsSelectorsAuthService` function before `renderAssetSelectorWithAuthFlow` to register the `imsToken` with the Content Fragment Selector. Adobe recommends calling `registerAssetsSelectorsAuthService` when you instantiate the component.
 
 Define the authentication and other Assets as a Cloud Service access-related properties in the `const props` section, as shown in *line 54* to *line 60* of the example `index.html` file.
 
@@ -132,13 +132,6 @@ Content Fragment Selector is rendered on the `<div>` container element, as menti
 
 ## Unable to access delivery repository {#unable-to-access-delivery-repository}
 
->[!TIP]
->
->If you have integrated Content Fragment Selector using Sign up Sign In workflow but still unable to access the delivery repository, ensure that browser cookies are cleaned up. Otherwise, you end up getting `invalid_credentials All session cookies are empty` error in the console.
+If you have integrated Content Fragment Selector using Sign up Sign In workflow but still unable to access the delivery repository, ensure that browser cookies have been cleaned. 
 
->[!MORELIKETHIS]
->
->* [Integrate Content Fragment Selector with various applications](/help/assets/integrate-asset-selector.md)
->* [Content Fragment Selector properties](/help/assets/asset-selector-properties.md)
->* [Integrate Content Fragment Selector with Dynamic Media with OpenAPI capabilities](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
->* [Content Fragment Selector customizations](/help/assets/asset-selector-customization.md)
+Otherwise, you may end up seeing the `invalid_credentials All session cookies are empty` error in the console.
