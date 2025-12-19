@@ -18,7 +18,7 @@ You can use the following properties to customize how the Content Fragment Selec
 | `imsToken` | string | No | | IMS token used for authentication. If not provided, the IMS login flow will be initiated. |
 | `repoId` | string | No | | Repository ID used for the Fragment Selector. When provided, the selector automatically connects to the specified repository, and the repository dropdown is hidden. If not provided, the user can select a repository from the list of available repositories they have access to. |
 | `defaultRepoId` | string | No | | Repository ID that will be selected by default when the repository selector is shown. Used only when `repoId` is not provided. If `repoId` is set, the repository selector is hidden, and this value is ignored. |
-| `orgId` | string | No | | Organization ID used for authentication. If not provided, the user can select a repository from different organizations they have access to. If the user doe not have access to any repository or organization, the content will not be loaded. |
+| `orgId` | string | No | | Organization ID used for authentication. If not provided, the user can select a repository from different organizations they have access to. If the user does not have access to any repository or organization, the content will not be loaded. |
 | `locale` | string | No | `en-US` | Locale. |
 | `env` | string | No | | Deployment environment. See the `Env` type for allowed environment names. |
 | `filters` | FragmentFilter | No | `{ folder: "/content/dam" }` | Filters to be applied to the list of content fragments. By default, fragments under `/content/dam` will be displayed. |
