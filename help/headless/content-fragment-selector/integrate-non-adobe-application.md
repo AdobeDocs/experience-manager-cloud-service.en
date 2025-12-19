@@ -11,7 +11,7 @@ Content Fragment Selector allows you to integrate using various non-Adobe or thi
 
 Use the following prerequisites if you are integrating Content Fragment Selector with a non-Adobe application:
 
-* [Communication methods](#communication-methods)
+* [Communication methods](/help/headless/content-fragment-selector/overview.md#prerequisites)
 * imsClientId
 * imsScope
 * redirectUrl
@@ -20,6 +20,7 @@ Use the following prerequisites if you are integrating Content Fragment Selector
 
 Content Fragment Selector supports authentication to the Experience Manager Assets repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID` when you are integrating it with a non-Adobe application.
 
+<!-- check against /help/headless/content-fragment-selector/overview.md#prerequisites
 ### Communication methods {#communication-methods}
 
 You must ensure the following communication methods:
@@ -32,7 +33,7 @@ You must ensure the following communication methods:
 * The IMS login flow is configured and rendered using a popup on the web browser. Therefore, popups should be enabled or allowed on the target browser.
 
 Use the above prerequisites if you require the IMS authentication workflow of Asset Selector. Alternatively, if you are already authenticated with the IMS workflow, you can add the IMS information instead. 
-
+-->
 
 ## Configure Content Fragment Selector for a non-Adobe application {#configure-content-fragment-selector-for-a-non-adobe-application}
 
