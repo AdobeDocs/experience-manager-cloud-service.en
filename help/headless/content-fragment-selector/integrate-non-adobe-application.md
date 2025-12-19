@@ -11,7 +11,7 @@ Content Fragment Selector allows you to integrate using various non-Adobe or thi
 
 Use the following prerequisites if you are integrating Content Fragment Selector with a non-Adobe application:
 
-* [Communication methods](/help/assets/overview-asset-selector.md#prereqs)
+* [Communication methods](#communication-methods)
 * imsClientId
 * imsScope
 * redirectUrl
@@ -19,6 +19,20 @@ Use the following prerequisites if you are integrating Content Fragment Selector
 * apikey
 
 Content Fragment Selector supports authentication to the Experience Manager Assets repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID` when you are integrating it with a non-Adobe application.
+
+### Communication methods {#communication-methods}
+
+You must ensure the following communication methods:
+
+* The host application is running on HTTPS.
+* You cannot run the application on `localhost`. If you want to integrate the Asset Selector on your local machine, you need to create a custom domain for example `[https://<your_campany>.localhost.com:<port_number>]` and add this custom domain in the `redirectUrl list`.
+* You can configure and add clientID into the AEM Cloud Service environment variable with the respective `imsClientId`.
+* The list of IMS scopes needs to be defined in the environment configuration. 
+* The URL of the application is in the IMS client's allowed list of redirect URLs.
+* The IMS login flow is configured and rendered using a popup on the web browser. Therefore, popups should be enabled or allowed on the target browser.
+
+Use the above prerequisites if you require the IMS authentication workflow of Asset Selector. Alternatively, if you are already authenticated with the IMS workflow, you can add the IMS information instead. 
+
 
 ## Configure Content Fragment Selector for a non-Adobe application {#configure-content-fragment-selector-for-a-non-adobe-application}
 
