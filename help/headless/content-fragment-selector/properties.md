@@ -18,14 +18,14 @@ You can use the following properties to customize how the Content Fragment Selec
 | `imsToken` | string | No | | IMS token used for authentication. If not provided, the IMS login flow will be initiated. |
 | `repoId` | string | No | | Repository ID used for the Fragment Selector. When provided, the selector automatically connects to the specified repository, and the repository dropdown is hidden. If not provided, the user can select a repository from the list of available repositories they have access to. |
 | `defaultRepoId` | string | No | | Repository ID that will be selected by default when the repository selector is shown. Used only when `repoId` is not provided. If `repoId` is set, the repository selector is hidden, and this value is ignored. |
-| `orgId` | string | No | | Organization ID used for authentication. If not provided, the user can select a repository from different organizations they have access to. If the user doesn't have access to any repository or organization, the content will not be loaded. |
-| `locale` | string | No | "en-US" | Locale. |
+| `orgId` | string | No | | Organization ID used for authentication. If not provided, the user can select a repository from different organizations they have access to. If the user doe not have access to any repository or organization, the content will not be loaded. |
+| `locale` | string | No | `en-US` | Locale. |
 | `env` | string | No | | Deployment environment. See the `Env` type for allowed environment names. |
 | `filters` | FragmentFilter | No | `{ folder: "/content/dam" }` | Filters to be applied to the list of content fragments. By default, fragments under `/content/dam` will be displayed. |
 | `isOpen` | boolean | No | `false` | Flag to control whether the selector is open or closed. |
 | `noWrap` | boolean | No | `false` | Determines whether the Fragment Selector is rendered without a wrapping dialog. When set to `true`, the Fragment Selector is embedded directly in the parent container. Useful for integrating the selector into custom layouts or workflows. |
 | `onSelectionChange` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | No | | Callback function triggered whenever the selection of content fragments changes. Provides the currently selected fragments, domain name, tenant info, repository ID, and delivery repositories. |
-| `onDismiss` | () => void | No | | Callback function triggered when the dismiss action is performed (e.g., closing the selector). |
+| `onDismiss` | () => void | No | | Callback function triggered when the dismiss action is performed; for example, closing the selector. |
 | `onSubmit` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | No | | Callback function triggered when the user confirms their selection. Receives the selected content fragments, domain name, tenant info, repository ID, and delivery repositories. |
 | `theme` | "light" or "dark" | No | | Theme for the Fragment Selector. By default, it is set to the unifiedShell environment theme. |
 | `selectionType` | "single" or "multiple" | No | `single` | Selection type can be used to restrict selection for the Fragment Selector. |
