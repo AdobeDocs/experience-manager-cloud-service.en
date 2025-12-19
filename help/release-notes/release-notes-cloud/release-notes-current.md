@@ -42,6 +42,24 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 AEM provides a range of agents enabling you to accelerate your content creation and automatically orchestrate changes. For more information, see [Overview of Agents in AEM](/help/ai-in-aem/agents/overview.md).
 
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+
+**New version of Figma Plugin for integration with AEM Assets is available**
+
+* Support for video files (MP4, MOV, WebM), Animated files (GIF), and Vector files (SVG) while importing assets from AEM repository to the Figma document.
+
+* Support for checking if there are any updates to the assets that are used in Figma document as compared to the assets that exist in AEM repository and getting the latest version of assets if there are any updates.
+
+* Support for export configurations while exporting PNG (scale) and JPG (image scale and quality) file formats.
+
+   ![Figma plugin](/help/assets/assets/figma-v2-plugin.png)
+
+**Malware detection for uploaded assets**
+
+AEM Assets now includes automatic malware scanning of uploaded files, ensuring that suspicious assets are quarantined before entering the DAM to protect your repository from threats. Administrators can configure scan settings and quarantine retention policies for streamlined security controls.
+
+
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 <!-- ### Pre-Release features in AEM Forms 
@@ -217,9 +235,9 @@ Please email [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) i
 
 #### Accelerate AEM Development with AI (Alpha Program) {#ai-dev-alpha}
 
-AEM Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. We’re gathering real-world experiences to help shape future Adobe-supported AI capabilities.
+AEM Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. We're gathering real-world experiences to help shape future Adobe-supported AI capabilities.
 
-Share what’s working for your team—and what you’d like Adobe to provide—by emailing [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
+Share what's working for your team—and what you'd like Adobe to provide—by emailing [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
 #### Expanded Application Performance Monitoring (APM) (Alpha program) {#apm-alpha}
 
