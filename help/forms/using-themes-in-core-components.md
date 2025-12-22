@@ -389,7 +389,7 @@ The theme is deployed using the [front-end pipeline](https://experienceleague.ad
 
    >[!NOTE]
    >
-   > To ensure your front-end pipeline do not fail in Cloud Manager, [set the Node.js version to 20](#set-the-nodejs-vesrion-to-20). 
+   > To ensure your front-end pipeline does not fail in Cloud Manager, [set the Node.js version to 20](#set-the-nodejs-vesrion-to-20). 
 
 1. Right-click the created pipeline.
 1. Click **[!UICONTROL Run]** .
