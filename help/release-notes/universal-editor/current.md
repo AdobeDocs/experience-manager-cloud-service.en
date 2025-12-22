@@ -22,7 +22,7 @@ These are the release notes for the 12 December 2025 release of the Universal Ed
 
 * Support has been added to existing tables in the [rich text editor.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 * The tab key has been enabled for nesting lists in the [rich text editor.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* The developer login feature can now be disabled via the [meta tag `dev-login`.](/help/implementing/universal-editor/customizing.md#meta-tags)
+* The developer login feature can now be disabled via the [meta tag `aem-dev-login`.](/help/implementing/universal-editor/customizing.md#meta-tags)
 * A right-click in the overlay section now displays a [contextual options menu.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
 * [Scoped indentation](/help/implementing/universal-editor/configure-rte.md#indentation) is now supported in the [rich text editor.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 

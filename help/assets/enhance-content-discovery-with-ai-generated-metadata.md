@@ -63,7 +63,9 @@ To use the enhanced smart tags feature, execute the following steps:
 
 ## Disable AI-generated metadata {#disable-ai-generated-metadata}
 
-To disable AI-generated metadata:
+You can disable AI-generated metadata for your AEM as a Cloud Service environment or you can disable it at a folder-level.
+
+To disable AI-generated metadata for AEM as a Cloud Service environment:
 
 1. Navigate to **[!UICONTROL Tools > Assets > Assets Configurations > Smart Tag Enhancement Configuration]**.
 
@@ -71,4 +73,16 @@ To disable AI-generated metadata:
 
 1. Click **[!UICONTROL Save]** .
 
-The AI-generated metadata is disabled for the new assets or folders that you upload to AEM Assets. The existing assets or folders that have AI-generated metadata fields already generated still continue to display these fields. 
+The AI-generated metadata is disabled for the new assets or folders that you upload to AEM Assets. The existing assets or folders that have AI-generated metadata fields already generated still continue to display these fields.
+
+### Disable AI-generated metadata for folders {#disable-ai-generated-metadata-folder-level}
+
+To disable AI-generated metadata at a folder-level:
+
+1. Select the folder and click **[!UICONTROL Properties]**.
+
+1. Select **[!UICONTROL Asset Processing]** tab.
+
+1. In the **[!UICONTROL Smart Tags Enhancements for images]** section, select **[!UICONTROL Disable]** from the drop-down menu.
+
+1. Click **[!UICONTROL Save & Close]** to disable AI-generated metadata for the selected folder.
