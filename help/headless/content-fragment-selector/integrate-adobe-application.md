@@ -20,7 +20,7 @@ Use the following prerequisites if you are integrating Content Fragment Selector
 
 The following example demonstrates the usage of Content Fragment Selector when running an Adobe application under Unified Shell or when you already have `imsToken` generated for authentication.
 
-Include the Content Fragment Selector package in your code using the `script` tag, as shown in _lines 6&ndash;15_ of the example below. Once the script is loaded, the `PureJSSelectors` global variable is available for use. Define the Content Fragment Selector [properties](/help/assets/asset-selector-properties.md) as shown in _lines 16&ndash;23_. The `imsOrg` and `imsToken` properties are both required for authentication in Adobe application. The `handleSelection` property is used to handle the selected assets. To render the Content Fragment Selector, call the `renderAssetSelector` function as mentioned in _line 17_. The Content Fragment Selector is displayed in the `<div>` container element, as shown in _lines 21 and 22_.
+Include the Content Fragment Selector package in your code using the `script` tag, as shown in _lines 6&ndash;15_ of the example below. Once the script is loaded, the `PureJSSelectors` global variable is available for use. Define the Content Fragment Selector [properties](/help/headless/content-fragment-selector/properties.md) as shown in _lines 16&ndash;23_. The `imsOrg` and `imsToken` properties are both required for authentication in Adobe application. The `handleSelection` property is used to handle the selected fragments. To render the Content Fragment Selector, call the `renderFragmentSelector` function as mentioned in _line 17_. The Content Fragment Selector is displayed in the `<div>` container element, as shown in _lines 21 and 22_.
 
 By following these steps, you can use Content Fragment Selector with your Adobe application.
 
@@ -28,32 +28,32 @@ By following these steps, you can use Content Fragment Selector with your Adobe 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Asset Selector</title>
-    <script src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
+    <title>Fragment Selector</title>
+    <script src="https://experience.adobe.com/solutions/CQ-fragmentss-selectors/static-fragments/resources/fragments-selectors.js"></script>
     <script>
-        // get the container element in which we want to render the AssetSelector component
-        const container = document.getElementById('asset-selector-container');
+        // get the container element in which we want to render the FragmentSelector component
+        const container = document.getElementById('fragment-selector-container');
         // imsOrg and imsToken are required for authentication in Adobe application
-        const assetSelectorProps = {
+        const fragmentSelectorProps = {
             imsOrg: 'example-ims@AdobeOrg',
             imsToken: "example-imsToken",
             apiKey: "example-apiKey-associated-with-imsOrg",
-            handleSelection: (assets: SelectedAssetType[]) => {},
+            handleSelection: (fragmentss: SelectedFragmentType[]) => {},
         };
-        // Call the `renderAssetSelector` available in PureJSSelectors globals to render AssetSelector
-        PureJSSelectors.renderAssetSelector(container, assetSelectorProps);
+        // Call the `renderFragmentSelector` available in PureJSSelectors globals to render FragmenttSelector
+        PureJSSelectors.renderFragmentSelector(container, fragmentSelectorProps);
     </script>
 </head>
 
 <body>
-    <div id="asset-selector-container" style="height: calc(100vh - 80px); width: calc(100vw - 60px); margin: -20px;">
+    <div id="fragment-selector-container" style="height: calc(100vh - 80px); width: calc(100vw - 60px); margin: -20px;">
     </div>
 </body>
 
 </html>
 ```
 
-<!--For detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).-->
+<!--For detailed example, visit [Fragment Selector Code Example](https://github.com/adobe/aem-fragments-selectors-mfe-examples).-->
 
 ### ImsAuthProps {#imsauthprops}
 
@@ -72,12 +72,12 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 ### ImsAuthService {#imsauthservice}
 
-`ImsAuthService` class handles the authentication flow for the Asset Selector. It is responsible for obtaining an `imsToken` from the Adobe IMS authentication service. The `imsToken` is used to authenticate the user and authorize access to the Adobe Experience Manager as a Cloud Service Assets repository. ImsAuthService uses the `ImsAuthProps` properties to control the authentication flow and register listeners for various authentication events. You can use the convenient [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) function to register the _ImsAuthService_ instance with the Asset Selector. The following functions are available on the `ImsAuthService` class. However, if you are using the _registerAssetsSelectorsAuthService_ function, you do not need to call these functions directly.
+`ImsAuthService` class handles the authentication flow for the Fragment Selector. It is responsible for obtaining an `imsToken` from the Adobe IMS authentication service. The `imsToken` is used to authenticate the user and authorize access to the Adobe Experience Manager as a Cloud Service repository. ImsAuthService uses the `ImsAuthProps` properties to control the authentication flow and register listeners for various authentication events. You can use the convenient [`registerFragmentsSelectorsAuthService`](#purejsselectorsregisterfragmentsselectorsauthservice) function to register the _ImsAuthService_ instance with the Fragment Selector. The following functions are available on the `ImsAuthService` class. However, if you are using the _registerFragmentsSelectorsAuthService_ function, you do not need to call these functions directly.
 
 | Function Name | Description |
 |---|---|
 | `isSignedInUser` | Determines whether the user is currently signed in to the service and returns a boolean value accordingly.|
-| `getImsToken`    | Retrieves the authentication `imsToken` for the currently signed-in user, which can be used to authenticate requests to other services such as generating asset _rendition.|
+| `getImsToken`    | Retrieves the authentication `imsToken` for the currently signed-in user, which can be used to authenticate requests to other services.|
 | `signIn`| Initiates the sign-in process for the user. This function uses the `ImsAuthProps` to show authentication in either a pop-up or a full page reload |
 | `signOut`| Signs the user out of the service, invalidating their authentication token and requiring them to sign in again to access protected resources. Invoking this function will reload the current page.|
 | `refreshToken`| Refreshes the authentication token for the currently signed-in user, preventing it from expiring and ensuring uninterrupted access to protected resources. Returns a new authentication token that can be used for subsequent requests. |
@@ -88,10 +88,10 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 <script>
     const apiToken="<valid IMS token>";
     function handleSelection(selection) {
-    console.log("Selected asset: ", selection);
+    console.log("Selected fragment: ", selection);
     };
-    function renderAssetSelectorInline() {
-    console.log("initializing Asset Selector");
+    function renderFragmentSelectorInline() {
+    console.log("initializing Fragment Selector");
     const props = {
     "repositoryId": "delivery-p64502-e544757.adobeaemcloud.com",
     "apiKey": "ngdm_test_client",
@@ -100,11 +100,11 @@ The `ImsAuthProps` properties define the authentication information and flow tha
     handleSelection,
     hideTreeNav: true
     }
-    const container = document.getElementById('asset-selector-container');
-    PureJSSelectors.renderAssetSelector(container, props);
+    const container = document.getElementById('fragment-selector-container');
+    PureJSSelectors.renderFragmentSelector(container, props);
     }
     $(document).ready(function() {
-    renderAssetSelectorInline();
+    renderFragmentSelectorInline();
     });
 </script>
 ```

@@ -18,7 +18,7 @@ Use the following prerequisites if you are integrating Content Fragment Selector
 * imsOrg
 * apikey
 
-Content Fragment Selector supports authentication to the Experience Manager Assets repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID` when you are integrating it with a non-Adobe application.
+Content Fragment Selector supports authentication to the Experience Manager repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID` when you are integrating it with a non-Adobe application.
 
 <!-- check against /help/headless/content-fragment-selector/overview.md#prerequisites
 ### Communication methods {#communication-methods}
@@ -26,13 +26,13 @@ Content Fragment Selector supports authentication to the Experience Manager Asse
 You must ensure the following communication methods:
 
 * The host application is running on HTTPS.
-* You cannot run the application on `localhost`. If you want to integrate the Asset Selector on your local machine, you need to create a custom domain for example `[https://<your_campany>.localhost.com:<port_number>]` and add this custom domain in the `redirectUrl list`.
+* You cannot run the application on `localhost`. If you want to integrate the Fragment Selector on your local machine, you need to create a custom domain for example `[https://<your_campany>.localhost.com:<port_number>]` and add this custom domain in the `redirectUrl list`.
 * You can configure and add clientID into the AEM Cloud Service environment variable with the respective `imsClientId`.
 * The list of IMS scopes needs to be defined in the environment configuration. 
 * The URL of the application is in the IMS client's allowed list of redirect URLs.
 * The IMS login flow is configured and rendered using a popup on the web browser. Therefore, popups should be enabled or allowed on the target browser.
 
-Use the above prerequisites if you require the IMS authentication workflow of Asset Selector. Alternatively, if you are already authenticated with the IMS workflow, you can add the IMS information instead. 
+Use the above prerequisites if you require the IMS authentication workflow of Fragment Selector. Alternatively, if you are already authenticated with the IMS workflow, you can add the IMS information instead. 
 -->
 
 ## Configure Content Fragment Selector for a non-Adobe application {#configure-content-fragment-selector-for-a-non-adobe-application}
@@ -43,11 +43,11 @@ To configure Content Fragment Selector for a non-Adobe application, you must fir
 
 Steps to log a support ticket via the Admin Console:
 
-1. Add **Content Fragment Selector with AEM Assets** in the title of the ticket.
+1. Add **Content Fragment Selector with AEM Fragments** in the title of the ticket.
 
 1. In the description, provide the following details:
 
-    * Experience Manager Assets as a Cloud Service URL (Program ID and Environment ID).
+    * Experience Manager as a Cloud Service URL (Program ID and Environment ID).
     * Domain names where the non-Adobe web application is hosted.
 
 ## Integration steps {#integration-steps}
@@ -58,9 +58,9 @@ Access the Content Fragment Selector package using the `Script` Tag, as shown in
 
 *Line 14* to *line 38* of the example describes the IMS flow properties, such as `imsClientId`, `imsScope`, and `redirectURL`. The function requires that you define at least one of the `imsClientId` and `imsScope` properties. If you do not define a value for `redirectURL`, the registered redirect URL for the client ID is used.
 
-As you do not have an `imsToken` generated, use the `registerAssetsSelectorsAuthService` and `renderAssetSelectorWithAuthFlow` functions, as shown in line 40 to line 50 of the example `index.html` file. Use the `registerAssetsSelectorsAuthService` function before `renderAssetSelectorWithAuthFlow` to register the `imsToken` with the Content Fragment Selector. Adobe recommends calling `registerAssetsSelectorsAuthService` when you instantiate the component.
+As you do not have an `imsToken` generated, use the `registerFragmentsSelectorsAuthService` and `renderFragmentSelectorWithAuthFlow` functions, as shown in line 40 to line 50 of the example `index.html` file. Use the `registerFragmentsSelectorsAuthService` function before `renderFragmentSelectorWithAuthFlow` to register the `imsToken` with the Content Fragment Selector. Adobe recommends calling `registerFragmentsSelectorsAuthService` when you instantiate the component.
 
-Define the authentication and other Assets as a Cloud Service access-related properties in the `const props` section, as shown in *line 54* to *line 60* of the example `index.html` file.
+Define the authentication and other Fragments as a Cloud Service access-related properties in the `const props` section, as shown in *line 54* to *line 60* of the example `index.html` file.
 
 The `PureJSSelectors` global variable, mentioned in *line 65*, is used to render the Content Fragment Selector in the web browser.
 
@@ -75,8 +75,8 @@ Content Fragment Selector is rendered on the `<div>` container element, as menti
     <meta charset="utf-8">
     <title>Content Fragment Selectors</title>
     <link rel="stylesheet" href="index.css">
-    <script id="asset-selector"
-        src="https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js"></script>
+    <script id="fragment-selector"
+        src="https://experience.adobe.com/solutions/CQ-fragments-selectors/static-fragments/resources/fragments-selectors.js"></script>
     <script>
 
         const imsProps = {
@@ -101,7 +101,7 @@ Content Fragment Selector is rendered on the `<div>` container element, as menti
         }
 
         function load() {
-            const registeredTokenService = PureJSSelectors.registerAssetsSelectorsAuthService(imsProps);
+            const registeredTokenService = PureJSSelectors.registerFragmentsSelectorsAuthService(imsProps);
             imsInstance = registeredTokenService;
         };
 
@@ -110,32 +110,32 @@ Content Fragment Selector is rendered on the `<div>` container element, as menti
         
 
         //function that will render the Content Fragment selector
-        function renderAssetSelectorWithAuthFlowFlow() {
+        function renderFragmentSelectorWithAuthFlowFlow() {
             const otherProps = {
             // any other props supported by Content Fragment selector
             }
-            const assetSelectorProps = {
+            const fragmentSelectorProps = {
                 "imsOrg": "imsorg",
                 ...otherProps
             }
-             // container element on which you want to render the AssetSelector/DestinationSelector component
+             // container element on which you want to render the FragmentSelector/DestinationSelector component
             const container = document.getElementById('content-fragment-selector');
 
-            /// Use the PureJSSelectors in globals to render the AssetSelector/DestinationSelector component
-            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () => {
-                const assetSelectorDialog = document.getElementById('asset-selector-dialog');
-                assetSelectorDialog.showModal();
+            /// Use the PureJSSelectors in globals to render the FragmentSelector/DestinationSelector component
+            PureJSSelectors.renderFragmentSelectorWithAuthFlow(container, fragmentSelectorProps, () => {
+                const fragmentSelectorDialog = document.getElementById('fragment-selector-dialog');
+                fragmentSelectorDialog.showModal();
             });
         }
     </script>
 
 </head>
-<body class="asset-selectors">
+<body class="fragment-selectors">
     <div>
-        <button onclick="renderAssetSelectorWithAuthFlowFlow()">Content Fragment Selector - Select Assets with Ims Flow</button>
+        <button onclick="renderFragmentSelectorWithAuthFlowFlow()">Content Fragment Selector - Select Fragments with Ims Flow</button>
     </div>
-        <dialog id="asset-selector-dialog">
-            <div id="asset-selector" style="height: calc(100vh - 80px); width: calc(100vw - 60px); margin: -20px;">
+        <dialog id="fragment-selector-dialog">
+            <div id="fragment-selector" style="height: calc(100vh - 80px); width: calc(100vw - 60px); margin: -20px;">
             </div>
         </dialog>
     </div>
