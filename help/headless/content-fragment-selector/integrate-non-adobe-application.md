@@ -5,20 +5,20 @@ role: Admin, User, Developer
 ---
 # Integration with a non-Adobe application {#integration-with-non-adobe-application}
 
-Content Fragment Selector allows you to integrate using various non-Adobe or third party applications to enable them to work together seamlessly.
+The Content Fragment Selector allows you to integrate with various non-Adobe or third party applications to enable them to work together seamlessly.
 
 ## Prerequisites {#prerequisites} 
 
 Use the following prerequisites if you are integrating Content Fragment Selector with a non-Adobe application:
 
-* [Communication methods](/help/headless/content-fragment-selector/overview.md#prerequisites)
+* [Prerequisites](/help/headless/content-fragment-selector/overview.md#prerequisites)
 * imsClientId
 * imsScope
 * redirectUrl
 * imsOrg
 * apikey
 
-Content Fragment Selector supports authentication to the Experience Manager repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID` when you are integrating it with a non-Adobe application.
+When you are integrating it with a non-Adobe application, the Content Fragment Selector supports authentication to the Adobe Experience Manager (AEM) as a Cloud Service repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID`.
 
 <!-- check against /help/headless/content-fragment-selector/overview.md#prerequisites
 ### Communication methods {#communication-methods}
@@ -37,7 +37,7 @@ Use the above prerequisites if you require the IMS authentication workflow of Fr
 
 ## Configure Content Fragment Selector for a non-Adobe application {#configure-content-fragment-selector-for-a-non-adobe-application}
 
-To configure Content Fragment Selector for a non-Adobe application, you must first log a support ticket for provisioning followed by the integration steps.
+To configure the Content Fragment Selector for a non-Adobe application, you must first log a support ticket for provisioning before proceeding with the integration steps.
 
 ### Logging a support ticket {#logging-a-support-ticket}
 
@@ -52,19 +52,25 @@ Steps to log a support ticket via the Admin Console:
 
 ## Integration steps {#integration-steps}
 
-Use this example `index.html` file for authentication while integrating Content Fragment Selector with a non-Adobe application.
+Use the following example `index.html` file for authentication when integrating the Content Fragment Selector with a non-Adobe application: 
 
-Access the Content Fragment Selector package using the `Script` Tag, as shown in *line 9* to *line 11* of the example `index.html` file.
+* Access the Content Fragment Selector package using the `Script` tag.
 
-*Line 14* to *line 38* of the example describes the IMS flow properties, such as `imsClientId`, `imsScope`, and `redirectURL`. The function requires that you define at least one of the `imsClientId` and `imsScope` properties. If you do not define a value for `redirectURL`, the registered redirect URL for the client ID is used.
+* Define the IMS flow properties, such as `imsClientId`, `imsScope`, and `redirectURL`. 
 
-As you do not have an `imsToken` generated, use the `registerFragmentsSelectorsAuthService` and `renderFragmentSelectorWithAuthFlow` functions, as shown in line 40 to line 50 of the example `index.html` file. Use the `registerFragmentsSelectorsAuthService` function before `renderFragmentSelectorWithAuthFlow` to register the `imsToken` with the Content Fragment Selector. Adobe recommends calling `registerFragmentsSelectorsAuthService` when you instantiate the component.
+  * The function requires that you define at least one of the `imsClientId` and `imsScope` properties. 
+  * If you do not define a value for `redirectURL`, the registered redirect URL for the client ID is used.
 
-Define the authentication and other Fragments as a Cloud Service access-related properties in the `const props` section, as shown in *line 54* to *line 60* of the example `index.html` file.
+* As the example does not have an `imsToken` generated, use the `registerFragmentsSelectorsAuthService` and `renderFragmentSelectorWithAuthFlow` functions. 
 
-The `PureJSSelectors` global variable, mentioned in *line 65*, is used to render the Content Fragment Selector in the web browser.
+  * Use the `registerFragmentsSelectorsAuthService` function before `renderFragmentSelectorWithAuthFlow` to register the `imsToken` with the Content Fragment Selector. 
+  * Adobe recommends calling `registerFragmentsSelectorsAuthService` when you instantiate the component.
 
-Content Fragment Selector is rendered on the `<div>` container element, as mentioned in *line 74* to *line 81*. The example uses a dialog to display the Content Fragment Selector.
+* Define the authentication and other Fragments as a Cloud Service access-related properties in the `const props` section.
+* The `PureJSSelectors` global variable, is used to render the Content Fragment Selector in the web browser.
+* The Content Fragment Selector is rendered on the `<div>` container element. The example uses a dialog to display the Content Fragment Selector.
+
+**Example `ìndex.html`**
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
@@ -147,6 +153,6 @@ Content Fragment Selector is rendered on the `<div>` container element, as menti
 
 ## Unable to access delivery repository {#unable-to-access-delivery-repository}
 
-If you have integrated Content Fragment Selector using Sign up Sign In workflow but still unable to access the delivery repository, ensure that browser cookies have been cleaned. 
+If you have integrated Content Fragment Selector using the Sign up Sign In workflow but still unable to access the delivery repository, ensure that browser cookies have been cleaned. 
 
 Otherwise, you may end up seeing the `invalid_credentials All session cookies are empty` error in the console.
