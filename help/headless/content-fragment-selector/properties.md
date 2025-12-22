@@ -14,22 +14,28 @@ You can use the following properties to customize how the Content Fragment Selec
 
 | Property | Type | Required | Default | Description |
 |--- |--- |--- |--- |--- |
-| `imsToken` | string | No | | IMS token used for authentication.  |
-| `repoId` | string  | No | | Repository ID used for authentication. |
-| `orgId` | string | Yes | | Organization ID used for authentication. |
-| `locale` | string | No | | Locale data. |
-| `env` | Environment | No | | Content Fragment Selector deployment environment. |
-| `filters` | FragmentFilter | No | | Filters to be applied for the list of content fragments. By default, fragments under `/content/dam` will be displayed. Default value: `{ folder: "/content/dam" }` |
-| `isOpen` | boolean | Yes | `false` | Flag to trigger opening or closing the selector. |
-| `onDismiss` | () => void | Yes | | Function to be called when **Dismiss** is selected. |
-| `onSubmit` | ({ contentFragments: `{id: string, path: string}[]`, domainNames: `string[]` }) => void | Yes | | Function to be called when **Select** is used after selecting one or more Content Fragments. <br><br>The function will receive:<br><ul><li> the selected Content Fragments with `id` and `path` fields</li><li>and domain names related to the repository's program id and environment id, which have the status `ready` and the `tier` Publish</li></ul><br>If there are no domain names it will be use the Publish instance as a fallback domain. |
-| `theme` | "light" or "dark" | No | | Theme of the Content Fragment Selector. Default theme is set to the theme of the UnifiedShell environment. |
-| `selectionType` | "single" or "multiple" | No | `single` | Selection type that can be used to restrict selection for the FragmentSelector. |
-| `dialogSize` | "fullscreen" or "fullscreenTakeover" | No | `fullscreen`   | Optional property to control the dialog size. |
-| `waitForImsToken` | boolean | No | `false` | Indicates whether the Content Fragment Selector is rendered in the context of SUSI flow, and needs to wait for the `imsToken` to be ready. |
-| `imsAuthInfo` | ImsAuthInfo | No | | Object containing the IMS authentication information of the logged in user. |
-| `runningInUnifiedShell` | boolean | No | | Indicates whether the Content Fragment Selector is running under UnifiedShell or standalone. |
-| `readonlyFilters` | ResourceReadonlyFiltersField | No | | Readonly filters that can be applied for the list of content - and cannot be removed. |
+| `ref` | FragmentSelectorRef | | | Reference to the `ContentFragmentSelector` instance, allowing access to provided functionality such as `reload`. |
+| `imsToken` | string | No | | IMS token used for authentication. If not provided, the IMS login flow will be initiated. |
+| `repoId` | string | No | | Repository ID used for the Fragment Selector. When provided, the selector automatically connects to the specified repository, and the repository dropdown is hidden. If not provided, the user can select a repository from the list of available repositories they have access to. |
+| `defaultRepoId` | string | No | | Repository ID that will be selected by default when the repository selector is shown. Used only when `repoId` is not provided. If `repoId` is set, the repository selector is hidden, and this value is ignored. |
+| `orgId` | string | No | | Organization ID used for authentication. If not provided, the user can select a repository from different organizations they have access to. If the user does not have access to any repository or organization, the content will not be loaded. |
+| `locale` | string | No | `en-US` | Locale. |
+| `env` | string | No | | Deployment environment. See the `Env` type for allowed environment names. |
+| `filters` | FragmentFilter | No | `{ folder: "/content/dam" }` | Filters to be applied to the list of content fragments. By default, fragments under `/content/dam` will be displayed. |
+| `isOpen` | boolean | No | `false` | Flag to control whether the selector is open or closed. |
+| `noWrap` | boolean | No | `false` | Determines whether the Fragment Selector is rendered without a wrapping dialog. When set to `true`, the Fragment Selector is embedded directly in the parent container. Useful for integrating the selector into custom layouts or workflows. |
+| `onSelectionChange` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | No | | Callback function triggered whenever the selection of content fragments changes. Provides the currently selected fragments, domain name, tenant info, repository ID, and delivery repositories. |
+| `onDismiss` | () => void | No | | Callback function triggered when the dismiss action is performed; for example, closing the selector. |
+| `onSubmit` | ({ contentFragments: `ContentFragmentSelection`, domainName?: `string`, tenantInfo?: `string`, repoId?: `string`, deliveryRepos?: `DeliveryRepository[]` }) => void | No | | Callback function triggered when the user confirms their selection. Receives the selected content fragments, domain name, tenant info, repository ID, and delivery repositories. |
+| `theme` | "light" or "dark" | No | | Theme for the Fragment Selector. By default, it is set to the unifiedShell environment theme. |
+| `selectionType` | "single" or "multiple" | No | `single` | Selection type can be used to restrict selection for the Fragment Selector. |
+| `dialogSize` | "fullscreen" or "fullscreenTakeover" | No | `fullscreen` | Optional prop to control the dialog size. |
+| `runningInUnifiedShell` | boolean | No | | Whether DestinationSelector is running under UnifiedShell or standalone. |
+| `readonlyFilters` | ResourceReadonlyFiltersField[] | No | | Read-only filters applied to the list of content fragments. These filters cannot be removed by the user. |
+| `selectedFragments` | ContentFragmentIdentifier[] | No | `[]` | Initial selection of content fragments to be pre-selected when the selector opens. |
+| `hipaaEnabled` | boolean | No | `false` | Indicates whether HIPAA compliance is enabled. |
+| `inventoryView` | InventoryViewType | No | `table` | Inventory default view type to be used in the selector. |
+| `inventoryViewToggleEnabled` | boolean | No | `false` | Indicates whether the inventory view toggle is enabled, allowing the user to switch between table and grid views. |
 
 ## ImsAuthProps Properties {#imsauthprops-properties}
 

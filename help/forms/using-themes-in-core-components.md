@@ -387,6 +387,10 @@ The theme is deployed using the [front-end pipeline](https://experienceleague.ad
 
    After the pipeline setup is complete, the call-to-action card is updated.
 
+   >[!NOTE]
+   >
+   > To ensure your front-end pipeline does not fail in Cloud Manager, [set the Node.js version to 20](#set-the-nodejs-vesrion-to-20). 
+
 1. Right-click the created pipeline.
 1. Click **[!UICONTROL Run]** .
     
@@ -413,6 +417,21 @@ Steps to apply a theme to an Adaptive Form are:
 1. Click **Create**.
 
 Adaptive Form themes are used as part of an Adaptive Form template to define styling while creating an Adaptive Form.
+
+## Set the Node.js version to 20
+
+To set the Node.js version to 20 using the pipeline configuration:
+
+1. Go to the **Pipelines** section and locate your front-end pipeline.
+2. On the right side of the pipeline, click the three-dot menu **⋯** and from the dropdown, select **View/Edit variables**.
+3. In the **Variables Configuration** dialog, fill in the fields as follows:
+   * **NAME** - NODE_VERSION
+   * **VALUE** - 20
+   * **STEP APPLIED** - Build
+   * **TYPE** - Variable
+4. Click **Save** to apply the configuration.
+
+![pipeline configuration](/help/forms/assets/pipeline-config.png)
 
 ## Best practices {#best-practices}
 
