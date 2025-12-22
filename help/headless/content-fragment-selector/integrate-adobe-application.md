@@ -5,24 +5,33 @@ role: Admin, User
 ---
 # Integrate Content Fragment Selector with Adobe application {#integrate-content-fragment-selector-with-adobe-application}
 
-The Content Fragment Selector allows you to integrate using various Adobe applications to enable them to work together seamlessly.
+The Content Fragment Selector allows you to integrate with various Adobe applications to enable them to work together seamlessly.
 
 ## Prerequisites {#prerequisites}
 
-Use the following prerequisites if you are integrating Content Fragment Selector with an Adobe application:
+Use the following prerequisites if you are integrating the Content Fragment Selector with an Adobe application:
 
-* [Communication methods](/help/headless/content-fragment-selector/overview.md#prerequisites)
+* [Prerequisites](/help/headless/content-fragment-selector/overview.md#prerequisites)
 * imsOrg
 * imsToken
 * apikey
 
 ## Integrate Content Fragment Selector with an Adobe application {#integrate-content-fragment-selector-with-an-adobe-application}
 
-The following example demonstrates the usage of Content Fragment Selector when running an Adobe application under Unified Shell or when you already have `imsToken` generated for authentication.
+The following example demonstrates the use of the Content Fragment Selector when running an Adobe application under Unified Shell, or when you already have an `imsToken` generated for authentication.
 
-Include the Content Fragment Selector package in your code using the `script` tag, as shown in _lines 6&ndash;15_ of the example below. Once the script is loaded, the `PureJSSelectors` global variable is available for use. Define the Content Fragment Selector [properties](/help/headless/content-fragment-selector/properties.md) as shown in _lines 16&ndash;23_. The `imsOrg` and `imsToken` properties are both required for authentication in Adobe application. The `handleSelection` property is used to handle the selected fragments. To render the Content Fragment Selector, call the `renderFragmentSelector` function as mentioned in _line 17_. The Content Fragment Selector is displayed in the `<div>` container element, as shown in _lines 21 and 22_.
+Include the Content Fragment Selector package in your code using the `script` tag, as shown in the example below. 
 
-By following these steps, you can use Content Fragment Selector with your Adobe application.
+* Once the script is loaded, the `PureJSSelectors` global variable is available for use. 
+* Define the Content Fragment Selector [properties](/help/headless/content-fragment-selector/properties.md):
+
+  * the `imsOrg` and `imsToken` properties are both required for authentication in Adobe application
+  * the `handleSelection` property is used to handle the selected fragments. 
+
+* To render the Content Fragment Selector, call the `renderFragmentSelector` function.
+* The Content Fragment Selector is displayed in the `<div>` container element.
+
+By following such steps, you can use Content Fragment Selector with your Adobe application.
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
@@ -57,7 +66,7 @@ By following these steps, you can use Content Fragment Selector with your Adobe 
 
 ### ImsAuthProps {#imsauthprops}
 
-The `ImsAuthProps` properties define the authentication information and flow that the Content Fragment Selector uses to obtain an `imsToken`. By setting these properties, you can control how the authentication flow should behave and register listeners for various authentication events.
+The `ImsAuthProps` properties define the authentication information and flow that the Content Fragment Selector uses to obtain an `imsToken`. By setting these properties, you can control how the authentication flow behaves and register listeners for various authentication events.
 
 | Property Name | Description|
 |---|---|
@@ -72,7 +81,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 ### ImsAuthService {#imsauthservice}
 
-`ImsAuthService` class handles the authentication flow for the Fragment Selector. It is responsible for obtaining an `imsToken` from the Adobe IMS authentication service. The `imsToken` is used to authenticate the user and authorize access to the Adobe Experience Manager as a Cloud Service repository. ImsAuthService uses the `ImsAuthProps` properties to control the authentication flow and register listeners for various authentication events. You can use the convenient [`registerFragmentsSelectorsAuthService`](#purejsselectorsregisterfragmentsselectorsauthservice) function to register the _ImsAuthService_ instance with the Fragment Selector. The following functions are available on the `ImsAuthService` class. However, if you are using the _registerFragmentsSelectorsAuthService_ function, you do not need to call these functions directly.
+`ImsAuthService` class handles the authentication flow for the Fragment Selector. It is responsible for obtaining an `imsToken` from the Adobe IMS authentication service. The `imsToken` is used to authenticate the user and authorize access to the AEM as a Cloud Service repository. `ImsAuthService` uses the `ImsAuthProps` properties to control the authentication flow and register listeners for various authentication events. You can use the  [`registerFragmentsSelectorsAuthService`](#purejsselectorsregisterfragmentsselectorsauthservice) function to register the `ImsAuthService` instance with the Fragment Selector. The following functions are available on the `ImsAuthService` class. However, if you are using the `registerFragmentsSelectorsAuthService` function, you do not need to call these functions directly.
 
 | Function Name | Description |
 |---|---|
@@ -84,7 +93,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 ### Validation with provided IMS token {#validation-with-provided-ims-token}
 
-```
+```javascript
 <script>
     const apiToken="<valid IMS token>";
     function handleSelection(selection) {
@@ -111,7 +120,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 
 ### Register callbacks to IMS service {#register-callbacks-to-ims-service}
 
-```
+```java
 // object `imsProps` to be defined as below 
 let imsProps = {
     imsClientId: <IMS Client Id>,

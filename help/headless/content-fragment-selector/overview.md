@@ -124,3 +124,4 @@ You can sort fragments in the Content Fragment Selector by various properties. Y
 Content Fragment Selector lets you view the fragment in the:
 
 * **Table View**
+* **Grid View**

@@ -5,7 +5,7 @@ role: Admin, User, Developer
 ---
 # Integrate Content Fragment Selector using Vanilla JS {#integrate-content-fragment-selector-using-vanilla-js}
 
-You can integrate any Adobe or non-Adobe application with Experience Manager as a Cloud repository and select fragments from within the application. 
+You can integrate any Adobe or non-Adobe application with Adobe Experience Manager (AEM) as a Cloud repository and select Content Fragments from within that application. 
 
 The integration is done by importing the Content Fragment Selector package and connecting to the AEM as a Cloud Service using the Vanilla JavaScript library. Edit an `index.html` or any appropriate file within your application to:
 
@@ -13,7 +13,7 @@ The integration is done by importing the Content Fragment Selector package and c
 * Access the AEM as a Cloud Service repository
 * Configure the Content Fragment Selector display properties
 
-You can perform authentication without defining some of the IMS properties, if:
+You can perform authentication without defining some of the IMS properties, if you:
 
-* You are integrating an [!DNL Adobe] application on [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
-* You already have an IMS token generated for authentication.
+* are integrating an Adobe application on [Unified Shell](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell)
+* already have an IMS token generated for authentication
