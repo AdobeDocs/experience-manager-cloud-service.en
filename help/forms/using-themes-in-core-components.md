@@ -389,7 +389,7 @@ The theme is deployed using the [front-end pipeline](https://experienceleague.ad
 
    >[!NOTE]
    >
-   > To ensure your front-end build works correctly in Cloud Manager, [set the Node.js version to 20](#set-the-nodejs-vesrion-to-20). 
+   > To ensure your front-end pipeline do not fail in Cloud Manager, [set the Node.js version to 20](#set-the-nodejs-vesrion-to-20). 
 
 1. Right-click the created pipeline.
 1. Click **[!UICONTROL Run]** .
@@ -422,16 +422,14 @@ Adaptive Form themes are used as part of an Adaptive Form template to define sty
 
 To set the Node.js version to 20 using the pipeline configuration:
 
-1. In Cloud Manager, open your program.
-1. Go to the Pipelines section and locate the front-end pipeline where you want to apply this.
-1. On the right side of the pipeline entry, click the three-dot menu **⋯**.
-1. From the dropdown, select **View/Edit variables**.
-1. In the **Variables Configuration** dialog, fill in the fields as follows:
+1. Go to the **Pipelines** section and locate your front-end pipeline.
+2. On the right side of the pipeline, click the three-dot menu **⋯** and from the dropdown, select **View/Edit variables**.
+3. In the **Variables Configuration** dialog, fill in the fields as follows:
    * **NAME** - NODE_VERSION
    * **VALUE** - 20
    * **STEP APPLIED** - Build
    * **TYPE** - Variable
-1. Click **Save** to apply the configuration.
+4. Click **Save** to apply the configuration.
 
 ![pipeline configuration](/help/forms/assets/pipeline-config.png)
 
