@@ -69,7 +69,7 @@ The 2026.1.0 feature activation will provide the full feature set for this maint
 * SITES-36570: Creating Live Copies fails after chunked Create Live Copy toggle is activated.
 * SITES-36158: Rollout fails with Job failed due to an exception.
 * SITES-35655: New CF Editor shows active inheritance after it was broken.
-* SITES-31425: Unlocalized Error message "Error: {} field is required" displayed in Start workflow in sites.
+* SITES-31425: Unlocalized Error message `Error: {} field is required` displayed in Start workflow in sites.
 * SITES-19802: Tooltips is unlocalized in Core Components site > Table of contents.
 * SITES-36543: Fixed issue that would allow admin to edit checked out content fragments. 
 * SITES-36967: Fixed NullPointerExceptions that occur when attempting to generate thumbnail data for broken content fragments.
