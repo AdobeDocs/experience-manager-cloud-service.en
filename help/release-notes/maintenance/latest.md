@@ -76,7 +76,7 @@ The 2026.1.0 feature activation will provide the full feature set for this maint
 * SITES-37791: Fixed an issue where calling FindAndReplace for strings containing `$` would fail.
 * SITES-37018: Empty Error Popup When Copying Page with Disallowed Template Path.
 * SITES-36243: Edge Delivery with Universal Editor: Fix 404s while publishing of `sling:OrderedFolder`.
-* SITES-37684: Edge Delivery with Universal Editor: Fix performance degradation on environments with many sites.
+* SITES-37684: Edge Delivery with Universal Editor: Fix performance degradation in environments with many sites.
 * SITES-37840: Edge Delivery with Universal Editor: Fix publishing failures due to outdated access token for Edge Delivery.
 * SITES-37933: Edge Delivery with Universal Editor: Fix (un)publishing failures for deleted resources in Launches.
 * SITES-37870: Edge Delivery with Universal Editor: Fix broken rendering of custom page metadata with multi-field support enabled.
@@ -99,7 +99,7 @@ AEM as a Cloud Service is dedicated to optimizing your platform's security and p
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM Oak | 1.88.0|[Oak 1.88.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.88/index.html)|
+|AEM Oak | 1.88.0|[Oak 1.88.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/latest/index.html)|
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |Apache HTTP Server| 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES)|
