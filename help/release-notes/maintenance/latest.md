@@ -64,7 +64,7 @@ The 2026.1.0 feature activation will provide the full feature set for this maint
 * SITES-15091: Strings are unlocalized on text component properties of Experience fragment.
 * SITES-8113: 'Assets' string isn't localized in 'Select Image' dialog for 'Templates' in Tools menu.
 * SITES-37587: Live copy creation still fails in PROD with NPE in RolloutManagerImpl.
-* SITES-37335: Live Copy Page Properties Properties showing error in console related to cq tags.
+* SITES-37335: Live Copy Page Properties showing error in console related to cq tags.
 * SITES-36972: "Rollout" Button Missing in Editable Toolbar.
 * SITES-36570: Creating Live Copies fails after chunked Create Live Copy toggle is activated.
 * SITES-36158: Rollout fails with Job failed due to an exception.
