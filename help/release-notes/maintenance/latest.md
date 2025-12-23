@@ -54,7 +54,7 @@ The 2026.1.0 feature activation will provide the full feature set for this maint
 * SITES-33675: Hardcoded 'undefined' string in Content Fragment Editor > Associated Content.
 * SITES-30715: Unlocalized 'General' string in Content Fragment Editor.
 * SITES-28592: Unlocalized strings in Content Fragment Model editor > 'Model is locked' dialog.
-* SITES-977: Strings “Tags” and “collections” are not localized on edit content fragment page.
+* SITES-977: Strings "Tags" and "collections" are not localized on edit content fragment page.
 * SITES-29699: Unlocalized types of allowed assets in Content Fragment Editor.
 * SITES-25240: Call to Action fields in the Teaser Modal do not have a visible label.
 * SITES-24869: Truncated tooltip in Template Editor > Separator > Policy.
@@ -65,7 +65,7 @@ The 2026.1.0 feature activation will provide the full feature set for this maint
 * SITES-8113: 'Assets' string isn't localized in 'Select Image' dialog for 'Templates' in Tools menu.
 * SITES-37587: Live copy creation still fails in PROD with NPE in RolloutManagerImpl.
 * SITES-37335: Live Copy Page Properties Properties showing error in console related to cq tags.
-* SITES-36972: “Rollout” Button Missing in Editable Toolbar.
+* SITES-36972: "Rollout" Button Missing in Editable Toolbar.
 * SITES-36570: Creating Live Copies fails after chunked Create Live Copy toggle is activated.
 * SITES-36158: Rollout fails with Job failed due to an exception.
 * SITES-35655: New CF Editor shows active inheritance after it was broken.
