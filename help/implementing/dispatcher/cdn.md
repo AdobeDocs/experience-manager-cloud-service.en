@@ -167,17 +167,17 @@ This process allows verification of details such as the host values, edge authen
 
 Presented below are several configuration examples from several leading CDN vendors.
 
-**Akamai**
+#### **Akamai** {#byocdn-akamai}
 
 ![Akamai1](assets/akamai1.png "Akamai")
 ![Akamai2](assets/akamai2.png "Akamai")
 
-**Amazon CloudFront**
+#### **Amazon CloudFront** {#byocdn-cloudfront}
 
 ![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
 ![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
 
-**Cloudflare**
+#### **Cloudflare** {#byocdn-cloudflare}
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
