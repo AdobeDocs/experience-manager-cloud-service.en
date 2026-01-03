@@ -32,14 +32,12 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
 Consider the steps below to create a new Metadata Schema Form: 
 
-1. Select the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
-1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then select **[!UICONTROL Edit]** from the toolbar to edit the schema.
+1. Select the [!DNL Experience Manager] logo, and go to **[!UICONTROL Settings]** > **[!UICONTROL Metadata Forms]**.
+1. Select a schema form and then select **[!UICONTROL Edit]** from the toolbar to edit the schema.
 
    ![select form](assets/select-form-assets-view.png)
 
-    (Optional) In the metadata schema editor, create a field to conditionalize. Specify a name and property path in the **[!UICONTROL Settings]** tab.
-
-1. To create a tab, select `+` to add a tab.
+1. Select `+` to add a new tab.
 
 ### Modify an existing Metadata Schema Form {#modify-existing-metadata-schema-form}
 
@@ -61,10 +59,10 @@ Consider the steps below to modify an existing Metadata Schema Form:
 
    ![select dependent field](assets/select-dependent-field.png)
 
-1. Under **[!UICONTROL Requirement]**, choose the **[!UICONTROL Required, based on new rule]** option.
+1. Under **[!UICONTROL Required]**, choose the **[!UICONTROL Required, based on new rule]** option.
 1. Select **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value on which to create the dependency. In this case, choose **[!UICONTROL Video]**. Select **[!UICONTROL Done]** to save the changes.
 
-   ![define_rule](assets/define_rule.png)
+   ![define rule](assets/define-rule.png)
 
    >[!NOTE]
    >
@@ -73,8 +71,6 @@ Consider the steps below to modify an existing Metadata Schema Form:
 1. Under **[!UICONTROL Visibility]**, choose the **[!UICONTROL Visible, based on new rule]** option.
 
 1. Select **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value upon which to create the dependency. In this case, choose **[!UICONTROL Video]**. Select **[!UICONTROL Done]** to save the changes.
-
-   ![define_visibilityrule](assets/define_visibilityrule.png)
 
    >[!CAUTION]
    >
@@ -85,16 +81,11 @@ Consider the steps below to modify an existing Metadata Schema Form:
    >You can apply **[!UICONTROL Requirement]** condition and **[!UICONTROL Visibility]** condition independent of each other.
 
 1. Similarly, create a dependency between the value Video in the Asset Type field and other fields, such as Codec and Duration.
+
 1. Repeat the steps to create dependency between document assets (PDF and Word) in the [!UICONTROL Asset Type] field and fields such as [!UICONTROL Page Count] and [!UICONTROL Author].
 1. Click **[!UICONTROL Save]**. Apply the metadata schema to a folder.
 
 1. Navigate to the folder to which you applied the Metadata Schema and open the properties page of an asset. Depending upon your choice in the Asset Type field, pertinent cascading metadata fields are displayed.
-
-   ![Cascading metadata for Video asset](assets/video_asset.png)
-   *Figure: Cascading metadata for Video asset*
-
-   ![Cascading metadata for document asset](assets/doc_type_fields.png)
-   *Figure: Cascading metadata for document asset*
 
 **See also**
 
