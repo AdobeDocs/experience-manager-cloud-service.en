@@ -91,7 +91,7 @@ Author can ollow the steps below to configure and publish an Interactive Communi
 
 >[!NOTE]
 >
-> Supported components for associate: Date Field, Numeric field, Text Field.
+> Supported components for associate: Date Field, Numeric field, Text Field, DateTimeField, DateField, Checkbox, Radio Button, Dropdown.
 
 ### Create the IC
 
