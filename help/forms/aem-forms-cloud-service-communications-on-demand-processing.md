@@ -29,7 +29,7 @@ Make sure you have the required access rights and permissions before you start c
 - Adobe Managed Services product context assigned
 - Developer role assigned in the Adobe Admin Console
 - Permission to create projects in the Adobe Developer Console
-
+ 
 >[!NOTE]
 >
 > To learn more about assigning roles and granting access to users, refer to the article [Add users and roles](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles).
