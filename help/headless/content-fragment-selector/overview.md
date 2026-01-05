@@ -65,7 +65,9 @@ Once the Content Fragment Selector is set up and authenticated to use the Conten
 
 ![The Content Fragment Selector](/help/headless/assets/content-fragment-selector-using.png)
 
-* With the **Repository** selector at the top right, you can select the repository you want to use
+* From the top toolbar you can:
+  * Use the **Repository** selector at the top right, to select the repository you want to use
+  * Select the format; list or grid
 * In the far left panel you can:
   * Hide, or show, folders from the selected repository
   * Select a specific folder to show Content Fragments in that folder
