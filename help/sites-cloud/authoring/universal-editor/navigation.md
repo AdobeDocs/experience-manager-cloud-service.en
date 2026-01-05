@@ -219,6 +219,8 @@ The editor occupies most of the window and is where the page specified in [the l
 
 ![Editor](assets/editor.png)
 
+By default, the editor opens so that you can [author content](/help/sites-cloud/authoring/universal-editor/authoring.md) either in-place or using the [properties panel.](#properties-rail)
+
 If the editor is in [preview mode](#preview-mode), the content will be navigable and you can follow links, but you cannot edit the content.
 
 ### Properties Panel {#properties-rail}
