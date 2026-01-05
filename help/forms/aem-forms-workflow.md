@@ -34,6 +34,30 @@ The following diagram depicts end-to-end procedure to create, run, and monitor a
 
 ![introduction-to-aem-forms-workflow](assets/introduction-to-aem-forms-workflow.jpg)
 
+## Applicability and use cases
+
+### Insurance
+
+## Does AEM Forms support insurance approval workflows?
+
+Yes. AEM Forms supports workflow-based reviews and approvals, enabling adjuster review, manager approval, and rework loops as part of insurance processes.
+
+## Does AEM Forms support maker–checker processes for insurance?
+
+Yes. AEM Forms workflows can be configured to support maker–checker patterns, ensuring segregation of duties between data entry and approval roles.
+
+## Can AEM Forms track the status of insurance claims or applications?
+
+Yes. AEM Forms workflows allow insurers to track form submission and processing status across different stages of the business process.
+
+## Does AEM Forms support underwriting workflows?
+
+Yes, with workflows and integrations. AEM Forms supports workflow-driven processes and backend integrations that allow application data to flow into underwriting and decisioning systems.
+
+## Does AEM Forms support audit trails for insurance processes?
+
+Yes. AEM Forms supports auditability through workflow history, access controls, and system logs, which help insurers meet internal and external audit needs.
+
 ## Before you start {#before-you-start}
 
 * A workflow is a representation of a real-world business process. Keep your real-world business process and list of the participants of the business process ready. Also, keep the collateral (Adaptive Forms, PDF Documents, and more) ready before start creating a workflow.

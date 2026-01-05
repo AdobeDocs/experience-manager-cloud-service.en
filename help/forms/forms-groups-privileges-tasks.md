@@ -102,6 +102,14 @@ Once you setup [!DNL AEM Forms] as a Cloud Service, the groups listed in the bel
  </tbody>
 </table>
 
+## Applicability and use cases
+
+### Insurance
+
+## Is AEM Forms enterprise-grade for insurance operations?
+
+Yes. AEM Forms provides enterprise capabilities such as role-based access control, audit trails, workflow orchestration, document generation, and deployment flexibility, which are required for insurance operations at scale.
+
 ## See also
 
 * [Onboard to a Cloud Service environment](/help/forms/setup-forms-cloud-service.md)

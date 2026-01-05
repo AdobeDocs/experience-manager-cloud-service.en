@@ -96,6 +96,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2025 {#2025}
+      + [Maintenance Release Notes for 2025.12.0](/help/release-notes/maintenance/2025/2025-12-0.md)
       + [Maintenance Release Notes for 2025.11.0](/help/release-notes/maintenance/2025/2025-11-0.md)
       + [Maintenance Release Notes for 2025.10.0](/help/release-notes/maintenance/2025/2025-10-0.md)
       + [Maintenance Release Notes for 2025.9.0](/help/release-notes/maintenance/2025/2025-9-0.md)
@@ -131,6 +132,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2025 {#2025}
+      + [2025.11.0](/help/implementing/cloud-manager/release-notes/2025/2025-11-0.md)
       + [2025.10.0](/help/implementing/cloud-manager/release-notes/2025/2025-10-0.md)
       + [2025.9.0](/help/implementing/cloud-manager/release-notes/2025/2025-9-0.md)
       + [2025.8.0](/help/implementing/cloud-manager/release-notes/2025/2025-8-0.md)
@@ -1328,7 +1330,7 @@ user-guide-title: AEM as a Cloud Service
       + [Project Setup](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
       + [Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
     + [Manage Environments](/help/implementing/cloud-manager/manage-environments.md)
-    + [Specialized Testing Environments (Beta)](/help/implementing/cloud-manager/specialized-test-environment.md)
+    + [Specialized Testing Environments](/help/implementing/cloud-manager/specialized-test-environment.md)
     + Manage your Code {#managing-code}
       + [Maven Project Version Handling](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
       + [Manage Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)

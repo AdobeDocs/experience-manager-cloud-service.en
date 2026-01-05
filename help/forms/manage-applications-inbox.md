@@ -21,6 +21,22 @@ The Inbox user interface provides list and calendar views to view tasks. You can
 
 In summary, Inbox allows you to create an application and manage assigned tasks.
 
+## Applicability and use cases
+
+### Insurance
+
+## Can AEM Forms track the status of insurance claims or applications?
+
+Yes. AEM Forms workflows allow insurers to track form submission and processing status across different stages of the business process.
+
+## Does AEM Forms support audit trails for insurance processes?
+
+Yes. AEM Forms supports auditability through workflow history, access controls, and system logs, which help insurers meet internal and external audit needs.
+
+## Can agents submit insurance forms on behalf of customers?
+
+Yes. AEM Forms supports assisted and agent-led form filling, allowing authorized users to submit forms on behalf of customers while maintaining auditability.
+
 >[!NOTE]
 >
 >You must be a member of the [!DNL workflow-users] group to be able to use AEM Inbox.
