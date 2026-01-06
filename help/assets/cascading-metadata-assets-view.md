@@ -54,11 +54,11 @@ Consider the steps below to modify an existing Metadata Schema Form:
 
    For example, if the Asset type is Video, then add the other required fields such as format, codec, and duration. Similarly, add dependent fields for other asset types. For example, add fields page count and author for document assets, such as PDF and Word files.
 
-1. Values are the options provided to a metadata form-user. You can provide the key-value pairs either manually or from a JSON file.
+1. Values are the options provided to a metadata form-user. You can provide the key-value pairs either manually or from a CSV file.
 
     * To specify the values manually, click `+` and specify the option label and value. For example, specify Video, PDF, Word, and Image asset types.
 
-    * To fetch the values from a CSV file dynamically, click **[!UICONTROL import CSV]** and provide the path of the CSV file. [!DNL Experience Manager] fetches the key-value pairs in the real time when the form is presented to the user.
+    * To fetch the values from a CSV file dynamically, click **[!UICONTROL Import CSV]** and provide the path of the CSV file. [!DNL Experience Manager] fetches the key-value pairs in the real time when the form is presented to the user.
 
    Both options are mutually exclusive. You cannot import the options from a CSV file and edit manually.
 
@@ -76,7 +76,7 @@ Consider the steps below to modify an existing Metadata Schema Form:
    >
    >You can apply **[!UICONTROL Requirement]** condition and **[!UICONTROL Visibility]** condition independent of each other.
    
-1. Select **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value on which to create the dependency. In this case, choose **[!UICONTROL Video]**. Select **[!UICONTROL Done]** to save the changes.
+1. Select **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value on which to create the dependency. Select **[!UICONTROL Done]** to save the changes.
 
    ![define rule](assets/define-rule.png)
 
