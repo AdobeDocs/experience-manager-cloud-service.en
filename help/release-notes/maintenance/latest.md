@@ -24,6 +24,16 @@ None.
 
 None.
 
+#### AEM Guides {#guides-X}
+
+* GUIDES-38198 : When updating an inline MathML equation using the Edit MathML option from the context menu, the updated value is not reflected until the page is refreshed.
+* GUIDES-38276: Unable to remove Version labels from Version history panel in Assets UI.
+* GUIDES-36641: When generating AEM Sites output, the map titles containing keywords and topic titles with `<ph>` element are not getting included in the published output.
+* GUIDES-37837: When attempting to save a topic or map, the operation may intermittently fail with a Failed to save file error, particularly during intensive asset processing tasks or translation workflows running in the background.
+* GUIDES-27774: The Broken list report is incorrectly including external links, valid `keyrefs` and keywords that are properly resolved within scope of current map.
+
+For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
+
 ### Known Issues {#known-issues-X}
 
 None.
