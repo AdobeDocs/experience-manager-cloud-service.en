@@ -54,6 +54,16 @@ Consider the steps below to modify an existing Metadata Schema Form:
 
    For example, if the Asset type is Video, then add the other required fields such as format, codec, and duration. Similarly, add dependent fields for other asset types. For example, add fields page count and author for document assets, such as PDF and Word files.
 
+1. Values are the options provided to a metadata form-user. You can provide the key-value pairs either manually or from a JSON file.
+
+    * To specify the values manually, click `+` and specify the option label and value. For example, specify Video, PDF, Word, and Image asset types.
+
+    * To fetch the values from a CSV file dynamically, click **[!UICONTROL import CSV]** and provide the path of the CSV file. [!DNL Experience Manager] fetches the key-value pairs in the real time when the form is presented to the user.
+
+   Both options are mutually exclusive. You cannot import the options from a CSV file and edit manually.
+
+   ![value](assets/value.png)
+
 1. To create a dependency between the asset type field and other fields, choose the dependent field and open the **[!UICONTROL Rules]** tab.
 
    ![select dependent field](assets/select-dependent-field.png)
