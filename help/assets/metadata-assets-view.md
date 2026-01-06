@@ -134,6 +134,9 @@ Below is an overview of each property type and how they are stored.
 | Tags | Add a tag from values stored in Taxonomy Management (mapped to xcm:tags). |
 | Keywords | Add free-form keywords (mapped to dc:subject). |
 | Smart Tags | Add to augment search capabilities by automatically adding metadata tags. |
+| Publish | Adds publish status of the asset. |
+| Link | It stores a web address that points to an online resource, such as a webpage, image, or external reference.  |
+| Rating | It adds a categorical value that indicates the quality of an asset. |
 
 ### Assign metadata form to a folder {#assign-metadata-form-folder}
 
