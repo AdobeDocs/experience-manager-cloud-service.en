@@ -40,9 +40,7 @@ Consider the steps below to create a new Metadata Schema Form:
 
 1. Select `+` to add a new tab.
 
-Watch this video to view the sequence of steps:
-
->[!VIDEO](https://video.tv.adobe.com/v/341275)
+Watch this video to view the sequence of steps, [Setup Metadata Forms](metadata-assets-view.md#metadata-forms).
 
 ### Modify an existing Metadata Schema Form {#modify-existing-metadata-schema-form}
 
