@@ -78,6 +78,26 @@ Once the Content Fragment Selector is set up and authenticated to use the Conten
   * See the view format indicator
   * Show, hide, and specify filters
 
+<!-- CQDOC-23234 - needs a new screenshot -->
+
+![The Content Fragment Selector](/help/headless/assets/content-fragment-selector-unwrapped.png)
+
+* From the top toolbar you can:
+  * Use the **Repository** selector at the top right, to select the repository you want to use
+  * Select the format; list or grid
+* In the far left panel you can:
+  * Hide, or show, folders from the selected repository
+  * Select a specific folder to show Content Fragments in that folder
+* In the main panel you can:
+  * Select Content Fragments
+  * Search for Content Fragments
+  * Sort the current list according to various columns; both ascending or descending
+  * See the view format indicator
+  * Show, hide, and specify filters
+* In the far right panel you can:
+  * View properties
+  * View references
+
 ### Hide/Show panel {#hide-show-panel}
 
 To hide folders in the left navigation, click the **Hide folders** icon. To undo the changes, click the **Hide folders** icon again.
