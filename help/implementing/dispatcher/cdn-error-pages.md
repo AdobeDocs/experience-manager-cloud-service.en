@@ -31,8 +31,6 @@ Configuration example:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   errorPages:
     spa:
@@ -41,6 +39,7 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
+
 See [Using Config Pipelines](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the data node. The kind property value should be *CDN* and the `version` property should be set to *1*.
 
 

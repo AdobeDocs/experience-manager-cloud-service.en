@@ -18,23 +18,13 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 
 [!DNL Experience Manager Forms] Data Integration lets you configure and connect to disparate data sources. The following types are supported out-of-the-box:
 
-| Supported Data Source Types       | Examples                                                                 |
-|----------------------------------|--------------------------------------------------------------------------|
-| Relational databases             | MySQL, [!DNL Microsoft&reg; SQL Server], [!DNL IBM&reg; DB2&reg;], postgreSQL, Azure SQL, [!DNL Oracle RDBMS] |
-| RESTful web services             | Open API Specification version 2.0, Open API Specification version 3.0                         |
-| SOAP-based web services          | Web Services  |
-| OData services  (Version 4)                 |     Microsoft&reg; Dynamics, Microsoft&reg; Azure Blob Storage              |
-| Cloud CRMs                       | SalesForce            |
-
-
-<!--
-* Relational databases - MySQL, [!DNL Microsoft&reg; SQL Server], [!DNL IBM&reg; DB2&reg;], postgreSQL, and [!DNL Oracle RDBMS] 
+* Relational databases - MySQL, [!DNL Microsoft&reg; SQL Server], [!DNL IBM&reg; DB2&reg;], postgreSQL, Azure SQL and [!DNL Oracle RDBMS] 
 * RESTful web services  
 * SOAP-based web services
 * OData services (Version 4.0)
 * Microsoft&reg; Dynamics
 * SalesForce
-* Microsoft&reg; Azure Blob Storage-->
+* Microsoft&reg; Azure Blob Storage
 
 Data integration supports OAuth2.0([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, and API Key authentication types out-of-the-box, and allows implementing custom authentication for accessing web services. While RESTful, SOAP-based, and OData services are configured in [!DNL Experience Manager] as a Cloud Service, JDBC for relational databases and connector for [!DNL Experience Manager] user profile are configured in [!DNL Experience Manager] web console.
 
@@ -247,6 +237,7 @@ RESTful web services can be described using [Swagger specifications](https://swa
 1. Select **[!UICONTROL Create]** to create the cloud configuration for the RESTful service.
 
 Some of the operations not supported by RESTful services Open API Specification version 3.0  are:
+
 * Callbacks
 * oneof/anyof
 * Remote reference

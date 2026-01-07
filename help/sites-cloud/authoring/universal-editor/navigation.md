@@ -6,6 +6,7 @@ feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
 ---
+
 # Accessing and Navigating the Universal Editor {#navigating}
 
 Learn the basics of accessing and navigating the Universal Editor.
@@ -54,7 +55,7 @@ Once the app is instrumented to work with the Universal Editor, the Universal Ed
 
 The UI is divided into these main areas.
 
-* [The Experience Cloud header](#experience-cloud-header)
+* [The Experience Platform Top Navigation Bar](#experience-cloud-header)
 * [The Universal Editor toolbar](#universal-editor-toolbar)
 * [The editor](#editor)
 * [The properties panel](#properties-rail)
@@ -65,47 +66,21 @@ The UI is divided into these main areas.
 >
 >The Universal Editor offers a number of [customization options](/help/implementing/universal-editor/customizing.md) and [extension points](/help/implementing/universal-editor/extending.md) that can modify and add to the functionality of the editor. For this reason, you may see different options than the standard ones documented here.
 
-### The Experience Cloud Header {#experience-cloud-header}
+### Experience Platform Top Navigation Bar {#experience-cloud-header}
 
-The Experience Cloud header is always present at the top of the screen. It is an anchor that tells you where you are within Experience Cloud and helps you navigate to other Experience Cloud apps.
+The Experience Platform top navigation bar is always present at the top of the screen. It is an anchor that tells you where you are within Experience Cloud and helps you navigate to other Experience Cloud apps.
 
 ![The Experience Cloud header](assets/experience-cloud-header.png)
 
-#### Experience Manager {#experience-manager}
+For details on the Experience Platform top navigation bar, please see the [Adobe Experience Platform UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
-Select the Adobe Experience Cloud link at the left of the header to navigate to the root of your Experience Manager solution to access tools such as [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md), and [Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+#### Account {#user-properties}
 
-![Global Navigation button](assets/global-navigation.png)
+Tapping or clicking the account icon opens a menu with your user settings.
 
-#### Organization {#organization}
+![Environment switcher](assets/environment-switcher.png)
 
-This displays the organization you are currently signed into. Select to switch to another organization if your Adobe ID is associated with multiple.
-
-![Organization indicator](assets/organization.png)
-
-#### Solutions {#solutions}
-
-Tapping or clicking the solutions switcher lets you quickly jump to other Experience Cloud solutions.
-
-![Solutions switcher](assets/solutions.png)
-
-#### Help {#help}
-
-The help icon provides quick access to learning and support resources.
-
-![Help](assets/help.png)
-
-#### Notifications {#notifications}
-
-This icon is badged with the number of currently assigned incomplete [notifications](/help/implementing/cloud-manager/notifications.md).
-
-![Notifications](assets/notifications.png)
-
-#### User Properties {#user-properties}
-
-Select the icon representing your user to access your user settings. If you do not have a user picture configured, an icon is randomly assigned.
-
-![User properties](assets/user-properties.png)
+For the Universal Editor, under the heading **Product Settings**, there is an option to switch between the current production version of the Universal Editor and the upcoming preview version.
 
 ### The Universal Editor Toolbar {#universal-editor-toolbar}
 
@@ -129,6 +104,8 @@ On the start page you can enter the URL of the site you want to edit with the Un
 >
 >Any page that you want to edit with the Universal Editor must be [instrumented to support he Universal Editor](/help/implementing/universal-editor/getting-started.md).
 
+A **Quick Links** section provides you with help resources and a **Recents** section provides links to pages you recently opened with the Universal Editor.
+
 #### Location Bar {#location-bar}
 
 The location bar shows you the address of the page you are editing. Select to enter the address of another page to edit.
@@ -143,25 +120,32 @@ The location bar shows you the address of the page you are editing. Select to en
 >
 >Any page that you want to edit with the Universal Editor must be [instrumented to support he Universal Editor](/help/implementing/universal-editor/getting-started.md).
 
-#### Authentication Header Settings {#authentication-settings}
+#### Undo and Redo {#undo-redo}
 
-Select the authentication header settings icon if you need to [set a custom authentication header for local development purposes](/help/implementing/universal-editor/developer-overview.md#auth-header).
+Select the Undo or Redo buttons to undo or redo the last edit in the editor. Please see the document [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo) for more information.
 
-![Authentication header settings button](assets/authentication-header-settings.png)
+![Undo icon](assets/undo.png)
+![Redo icon](assets/redo.png)
 
->[!NOTE]
+>[!TIP]
 >
->This button is hidden by default as it is of limited value in most cases. If you require it, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID.
+>Use the hot key `Command-Z` or `Shift-Command-Z` to undo or redo, respectively.
 
-#### Emulator Settings {#emulator}
+#### Local Developer Login {#local-developer-login}
 
-Select the emulation icon to define how the Universal Editor renders the page.
+Select the local developer login icon if you need to easily authenticate to your local AEM SDK [when developing locally.](/help/implementing/universal-editor/local-dev.md)
 
-![Emulator icon](assets/emulator.png)
+![Local developer login button](assets/local-developer-login.png)
 
-Tapping or clicking the emulation icon reveals the options.
+#### Responsive Mode {#emulator}
 
-![Emulation options](assets/emulation-options.png)
+Select the responsive mode icon to define how the Universal Editor renders the page.
+
+![Responsive mode icon](assets/emulator.png)
+
+Tapping or clicking the responsive mode icon reveals the options.
+
+![Responsive mode options](assets/emulation-options.png)
 
 By default the editor opens in desktop layout where the height and width are automatically defined by the browser.
 
@@ -171,7 +155,7 @@ You can also chose to emulate a mobile device and within the Universal Editor:
 * Define the width and height
 * Change the orientation
 
-#### Preview Mode {#preview-mode}
+#### Preview {#preview-mode}
 
 In preview mode, the page rendered in the editor as it would be seen on your published service. This allows the content author to navigate the content by clicking links, and so on.
 
@@ -235,6 +219,8 @@ The editor occupies most of the window and is where the page specified in [the l
 
 ![Editor](assets/editor.png)
 
+By default, the editor opens so that you can [author content](/help/sites-cloud/authoring/universal-editor/authoring.md) either in-place or using the [properties panel.](#properties-rail)
+
 If the editor is in [preview mode](#preview-mode), the content will be navigable and you can follow links, but you cannot edit the content.
 
 ### Properties Panel {#properties-rail}
@@ -269,6 +255,7 @@ In content tree mode, the panel shows the hierarchy of the page content.
 
 * When selecting an item in the content tree, the editor scrolls to that content and selects it.
 * When double-clicking an item in the content tree, the editor scrolls to that content and selects it and also opens the associated properties in [properties mode.](#properties-mode)
+* When right-clicking an item in the tree, a context menu will open with appropriate actions for the item.
 
 ![Content tree](assets/content-tree.png)
 
@@ -312,6 +299,10 @@ If you select a component within a container component either in the content tre
 
 Tapping or clicking the duplicate button [duplicates the selected component](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components).
 
+>[!TIP]
+>
+>Use the hot key `Command+d` to delete a selected component from a container.
+
 ##### Delete {#delete}
 
 If you select a component within a container component either in the content tree or in the editor, the delete option appears on the properties panel.
@@ -323,6 +314,19 @@ Tapping or clicking the delete button [deletes the component](/help/sites-cloud/
 >[!TIP]
 >
 >Use the hot key `Shift+Backspace` to delete a selected component from a container.
+
+##### Copy and Paste {#copy-paste}
+
+You can copy and paste components that are within [containers.](/help/implementing/universal-editor/field-types.md#container)
+
+![Copy icon](assets/copy.png)
+![Paste icon](assets/paste.png)
+
+>[!TIP]
+>
+>Use the hot key `Command-C` or `Command-V` to copy or paste, respectively.
+
+Please see the document [Authoring Content with the Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) for more information.
 
 #### Additional Buttons {#additional-properties-panel-buttons}
 

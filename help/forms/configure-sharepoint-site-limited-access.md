@@ -1,14 +1,14 @@
 ---
-Title: How to configure a SharePoint Site with limited access using authorization scope?
-Description: Learn how to configure SharePoint Site with limited access using the authorization scope.
+title: How to configure a SharePoint Site with limited access using authorization scope?
+description: Learn how to configure SharePoint Site with limited access using the authorization scope.
 keywords: How to configure SharePoint Site with limited access?, Configure SharePoint with limited access, Using authorization scope to limit access for SharePoint Site.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
 ---
-<span class="preview"> The feature is available under the early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-
 # Configure SharePoint Site with limited access using authorization scope
+
+<span class="preview"> The feature is available under the early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
 The purpose of limited or restricted access is to enhance security management by allowing administrators to control user access to a particular SharePoint Site or a group of SharePoint Sites. The permission level is useful when you need to grant a user or group access to a specific Site without allowing them to view any other non-allowed SharePoint Sites.
 
@@ -40,6 +40,7 @@ Create an application in [Microsoft Azure portal](https://portal.azure.com/#home
 ![SharePoint Selected Site](/help/forms/assets/sharepoint-selected-site.png)
 
 For information on how to retrieve `Client ID`, `Client Secret` and `Tenant ID` for `OAuth URL`, see [Microsoft&reg; Documentation](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+
 * In the Microsoft&reg; Azure portal, add the Redirect URI as `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Replace `[author-instance]` with the URL of your Author instance.
 * Add the `offline_access` and `Sites.Selected` permissions scope in Microsoft's Graph API to provide restricted access to Sites.
 * For OAuth URL: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Replace `<tenant-id>` with the `tenant-id` of your app from the Microsoft&reg; Azure portal.
@@ -85,6 +86,7 @@ Now, you can use this [SharePoint Sites configuration for the submit action in a
 ## Extra Bytes
 
 To retrieve the value of the `SharePoint Site ID`:
+
 1. Go to the [Microsoft Graph Explorer APIs](https://developer.microsoft.com/en-us/graph/graph-explorer).
 1. In the left pane, under the `SharePoint Sites` APIs, click `Search for a SharePoint site by keyword`.
 1. Replace the placeholder `contoso` with the actual name of your SharePoint Site to fetch the corresponding Site ID.

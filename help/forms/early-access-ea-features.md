@@ -110,6 +110,24 @@ Interactive Communications on Cloud is a powerful solution for creating, managin
 
 * **Format Flexibility**: Output to PDF, HTML, PCL, PostScript&reg;, and ZPL formats.
 
+* **Rule Editor**: Build dynamic, data-driven actions directly within your documents using an intuitive, point-and-click interface. Easily define conditional logic, automate workflows, and personalize content without writing code.
+
+* **PDF Preview:** Preview Interactive Communication with no data, local JSON files, or data models for flexible, data-driven testing.
+* **Custom Fonts:** Embed custom or organization-approved fonts to ensure consistent, branded PDF rendering across devices.
+* **Import and Export:** Seamlessly migrate and reuse Interactive Communication with their fragments and data models across environments.
+
+* **Template Locking**: Lock content and layout elements within templates to maintain brand integrity and prevent unauthorised modifications. 
+
+* **Content Overflow**: "Allow page breaks within content" option for flowed layouts for smooth multi-page editing and better text management for complex documents. 
+
+* **XDP File Editing**: You can now edit XDP files in a browser instead of Forms Designer that runs only on Microsoft Windows desktop. 
+
+##### Dynamic Page Numbering 
+
+Automatically display "Page # of ##" on master pages for clear, consistent pagination across multi-page documents. 
+
+
+
 #### Use Cases:
 
 * Financial institutions generating account statements
@@ -148,6 +166,43 @@ AEM Forms HTML5 Forms enables you to render existing XFA (XML Forms Architecture
 * **Draft saving**: Save an HTML5 form as a draft and resume filling the form at a later stage.
 
 Ready to start? The [Introduction to HTML5 forms](/help/forms/introductionhtml5.md) documentation provides a comprehensive overview and getting started guide for this innovation.
+
+### AEM Forms Scaffolder CLI for Custom Components
+
+Accelerate your AEM Forms Edge Delivery Services development with the AEM Forms CLI tool. This command-line interface enables you to instantly generate the code and wiring needed to kickstart custom component development—no boilerplate, no hassle.
+
+<!--
+not sure what's going on with this video link. cleaned up version below
+>[!VIDEO](<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+-->
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470514/)
+
+**Key capabilities:**
+
+* **Rapid scaffolding**: Instantly generate the structure and code for new custom components, reducing manual setup time.
+* **Best practices built-in**: The tool follows recommended patterns for AEM Forms Edge Delivery Services, ensuring consistency and maintainability.
+* **Developer productivity**: Focus on building business logic and UI, while the CLI handles repetitive setup tasks.
+* **Seamless integration**: Generated components are ready to use and integrate with your existing AEM Forms projects.
+
+Ready to start? The AEM Forms CLI tool is available under the Early Access program for Forms as a Cloud Service deployments. To request access, email your organization ID and program details to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official address.
+
+### API Integration Tool for Dynamic Form Data
+
+The API Integration Tool enables form authors to create dynamic, intelligent forms that automatically fetch and populate data from external REST APIs based on user interactions. This no-code integration capability transforms static forms into responsive data collection interfaces.
+
+Key capabilities include:
+
+* **Visual Configuration Interface**: Create API integrations through an intuitive, point-and-click interface without custom coding
+* **Real-time Data Population**: Automatically populate form fields based on user in put (e.g., auto-fill city and state when user enters zip code)  
+* **Flexible API Support**: Connect to any publicly accessible REST API with support for GET/POST methods, authentication, and JSON/XML responses
+* **Rule-Based Triggers**: Define when API calls are triggered using the built-in rule engine (e.g., field changes, form events)
+* **Smart Data Mapping**: Configure how API response data maps to specific form fields using Adobe's JSON parsing capabilities
+* **Enhanced User Experience**: Reduce manual data entry, improve data accuracy, and create more engaging form interactions
+
+This tool is particularly useful for scenarios like address auto-completion, dynamic dropdown population, real-time validation against external databases, and creating context-aware form experiences that adapt based on user input.
+
+
 
 ## Additional Early Access Innovations
 
@@ -243,6 +298,14 @@ Storing PDFs in Azure Blob Storage allows for centralized management of document
 * **Improved Security**: By leveraging Azure's built-in security features, such as encryption at rest and role-based access control (RBAC), sensitive documents remain protected during storage.
 
 * **Customizable Storage Paths**: The ability to define custom directory paths ensures generated PDFs are stored in organized and application-specific locations, improving file management.
+
+### Enhancements in Visual Rule Editor 
+
+* [Direct API integration](/help/forms/api-integration-in-rule-editor.md): The Visual Rule Editor in Adaptive Forms now supports direct API integration without requiring a Form Data Model. You can connect to an API endpoint by entering its JSON URL or by importing the configuration using a cURL command. After integration, the API can be invoked using the `Invoke Service` action.
+
+* [Enhanced Navigation with Event Payload Support](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service): The **Navigate To** action in the Invoke Service handlers supports `EVENT_PAYLOAD`, allowing form authors to configure follow-up actions based on event responses. 
+  
+* [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters): Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly.
 
 ## See also
 

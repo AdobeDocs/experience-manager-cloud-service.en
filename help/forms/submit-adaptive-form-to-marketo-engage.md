@@ -1,9 +1,9 @@
 ---
-Title: How to configure submit action to Marketo Engage for forms?
-Description: Learn how to configure the submit action of Adaptive Form to send data to Marketo Engage.
-Keywords: Submit data to Marketo engage, Configure submit action as Submit to Marketo Engage
-Feature: Adaptive Forms, Form Data Model
-Role: User, Developer
+title: How to configure submit action to Marketo Engage for forms?
+description: Learn how to configure the submit action of Adaptive Form to send data to Marketo Engage.
+keywords: Submit data to Marketo engage, Configure submit action as Submit to Marketo Engage
+feature: Adaptive Forms, Form Data Model
+role: User, Developer
 exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
 ---
 # Configure the submit action to Marketo Engage for existing forms 
@@ -30,18 +30,59 @@ Prerequisite to configure the submit action to Marketo Engage:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442866/submit-action-marketo-engage-marketo-aem-aem-forms-engage)
 
-You can configure the submit action of an Adaptive Form to submit data to Adobe Marketo Engage. To configure the submit action to Marketo Engage, perform the following steps:
+<span> This video is applicable only for Core Components. For UE/Foundation Components, please refer to the article.</span>
+ 
+
+>[!BEGINTABS]
+
+>[!TAB Foundation Component]
+
+You can configure the submit action of an Adaptive Form based on Foundation Components to submit data to Adobe Marketo Engage. To configure the submit action to Marketo Engage, perform the following steps:
+
+1. Log in to your [!DNL Experience Manager Forms] Author instance. 
+1. Open the Adaptive Form for editing and navigate to **[!UICONTROL Submission]** section of the Adaptive Form Container properties and select a submit action as **Submit to Marketo Engage**.
+1. Click **[!UICONTROL Done]**.
+
+![Marketo Submit Action](/help/forms/assets/marketo-engage-submit-action-af.png){width=50%, height=50%}
+
+After configuring the submit action for the Adaptive Form as **Submit to Marketo Engage**, you can send data to Adobe Marketo Engage for processing. The data can be used to analyze and optimize marketing campaigns, automate follow-up emails, and trigger workflows based on form submissions.  
+
+>[!TAB Core Component]
+
+You can configure the submit action of an Adaptive Form based on Core Components to submit data to Adobe Marketo Engage. To configure the submit action to Marketo Engage, perform the following steps:
 
 1. Open the Adaptive Form for editing.
-2. Open the Content Tree and select the **[!UICONTROL Guide Container]**. 
-3. Click the Adaptive Form Container properties ![Adaptive Form Container properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box to configure submit action opens. 
-4. Open the **[!UICONTROL Submission]** tab and select a submit action as **Submit to Marketo Engage**.
-5. Click **[!UICONTROL Done]**.
+1. Open the Content Tree and select the **[!UICONTROL Guide Container]**. 
+1. Click the Adaptive Form Container properties ![Adaptive Form Container properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box to configure submit action opens. 
+1. Open the **[!UICONTROL Submission]** tab and select a submit action as **Submit to Marketo Engage**.
+1. Click **[!UICONTROL Done]**.
 
 ![Marketo Submit Action](/help/forms/assets/marketo-engage-submit-action.png){width=50%, height=50%}
 
-
 After configuring the submit action for the Adaptive Form as **Submit to Marketo Engage**, you can send data to Adobe Marketo Engage for processing. The data can be used to analyze and optimize marketing campaigns, automate follow-up emails, and trigger workflows based on form submissions.  
+
+>[!TAB Universal Editor]
+
+You can configure the submit action of an Adaptive Form authored in Universal Editor to submit data to Adobe Marketo Engage. To configure the submit action to Marketo Engage, perform the following steps:
+
+1. Open the Adaptive Form for editing.
+1. Click the **Edit Form Properties** extension on the editor. 
+    The **Form Properties** dialog appears.
+
+    >[!NOTE]
+    >
+    > * If you do not see the **Edit Form Properties** icon in your Universal Editor interface, enable the **Edit Form Properties** extension in the Extension Manager. 
+    > * Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable or disable extensions in the Universal Editor.
+
+1. Click **Submission** tab and select **[!UICONTROL Submit to Marketo Engage]** submit action.
+
+   ![Marketo Submit Action](/help/forms/assets/marketo-engage-submit-action-ue.png)
+
+1. Click **[!UICONTROL Save & Close]**.
+   
+After configuring the submit action for the Adaptive Form as **Submit to Marketo Engage**, you can send data to Adobe Marketo Engage for processing. The data can be used to analyze and optimize marketing campaigns, automate follow-up emails, and trigger workflows based on form submissions.  
+
+>[!ENDTABS]
 
 ## Frequently asked question (FAQ)
 

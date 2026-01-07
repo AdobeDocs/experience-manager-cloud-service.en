@@ -4,7 +4,7 @@ description: Find answers to the most frequently asked questions about Cloud Man
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Cloud Manager FAQs {#cloud-manager-faqs}
@@ -17,7 +17,7 @@ Yes. Add the `maven-toolchains-plugin` with proper settings for Java&trade; 11.
 
 The process is documented - see [Project Creation Wizard](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
 
-For example, see the [wknd project sample project code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+For example, see the [lWKND project sample project code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
 ## My build fails with an error about maven-scr-plugin after switching from Java&trade; 8 through Java&trade; 11. What can I do? {#build-fails-maven-scr-plugin}
 
@@ -37,13 +37,13 @@ For Cloud Manager builds, the `maven-enforcer-plugin` can fail with this error.
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
 ```
 
-This error is a known issue due to Cloud Manager using a different version of Java&trade; to run the maven command versus compiling code. Simply omit `requireJavaVersion` from your `maven-enforcer-plugin` configurations.
+This error is a known issue due to Cloud Manager using a different version of Java&trade; to run the Maven command versus compiling code. Simply omit `requireJavaVersion` from your `maven-enforcer-plugin` configurations.
 
 ## The code quality check failed and the deployment is stuck. Is there a way to bypass this check? {#deployment-stuck}
 
-Yes. All code quality check failures except for the security rating are non-critical metrics, so they can be bypassed as part of a deployment pipeline by expanding the items in the results UI.
+Yes. All code quality check failures except for the security rating are non-critical metrics. As a result, they can be bypassed as part of a deployment pipeline by expanding the items in the results UI.
 
-A user with [Deployment Manager, Project Manager, or Business Owner](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) role can override the issues, in which case the pipeline proceeds or they can accept the issues, in which case the pipeline stops with a failure.
+A user with a [Deployment Manager, Project Manager, or Business Owner](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) role can override the issues. In such case, the pipeline proceeds or they can accept the issues, in which case the pipeline stops with a failure.
 
 See the documents [Code Quality Testing](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate) and [Configuring Non-Production Pipelines](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines) for more details.
 
@@ -51,11 +51,11 @@ See the documents [Code Quality Testing](/help/implementing/cloud-manager/code-q
 
 Yes. For developer deployments, the git branch `pom.xml` files must contain `-SNAPSHOT` at the end of the `<version>` value.
 
-This value allows subsequent deployment to still be installed when the version did not change. In developer deployments, no automatic version is added or generated for the maven build.
+This value allows subsequent deployment to be installed still when the version did not change. In developer deployments, no automatic version is added or generated for the maven build.
 
 You can also set the version to `-SNAPSHOT` for stage and production builds or deployments. Cloud Manager automatically sets a proper version number and creates a tag for you in git. This tag can be referred to later, if necessary.
 
-For further details about version handling see [Maven Project Version Handling](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+For more details about version handling, see [Maven Project Version Handling](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## How does package and bundle versioning work for stage and production deployments? {#snapshot-version}
 
@@ -88,13 +88,13 @@ The solution is to add a [RepositoryInitializer OSGi configuration](/help/implem
 
 In the previous example error, the package `myapp-base.ui.content-*.zip` includes content under `/conf` and `/var/workflow`. For the deployment to succeed, permissions for the `sling-distribution-importer` under those paths is needed.
 
-Here's an example of an [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) OSGi configuration that adds additional permissions for the `sling-distribution-importer` user. The configuration adds permissions under `/var`. Such a configuration must be added to the application package under `/apps/myapp/config` (where myapp is the folder where your application code is stored).
+Here's an example of an [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) OSGi configuration that adds additional permissions for the `sling-distribution-importer` user. The configuration adds permissions under `/var`. Such a configuration must be added to the application package under `/apps/myapp/config` (where `myapp` is the folder where your application code is stored).
 
 ## My Cloud Manager deployment fails at the deploy step in AEM as a Cloud Service and I already added a RepositoryInitializer OSGi configuration. What else can I do? {#build-failures}
 
 If [adding a RepositoryInitializer OSGi configuration](#cloud-manager-deployment-cloud-service) did not solve the error, it may be due to one of these additional issues.
 
-* The deployment might be failing due to a bad OSGi configuration that breaks an out-of-the box service. 
+* The deployment might be failing due to a bad OSGi configuration that breaks an out-of-the-box service. 
   * Check the logs during deployment so you can see if there are any obvious errors.
 
 * The deployment might fail due to bad Dispatcher or Apache configurations.
@@ -103,7 +103,7 @@ If [adding a RepositoryInitializer OSGi configuration](#cloud-manager-deployment
 
 * The deployment might fail due to some other failure during replication of the content packages (Sling distribution) from author to publish instances. 
   * Follow these steps so you can simulate the issue on a local setup.
-    1. Install an author and publish instance locally using the latest AEM SDK jars.
+    1. Install an Author and a Publish instance locally using the latest AEM SDK jars.
     1. Log on to the author instance.
     1. Go to **Tools** &gt; **Deployment** &gt; **Distribution**.
     1. Distribute the content packages that are part of the code base and see if the queue gets blocked with an error.

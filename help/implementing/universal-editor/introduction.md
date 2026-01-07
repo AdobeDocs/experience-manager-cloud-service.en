@@ -3,7 +3,7 @@ title: Universal Editor Introduction
 description: The Universal Editor is a modern visual authoring tool designed to empower your marketing organization to produce impactful web experiences. 
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Universal Editor Introduction {#introduction}

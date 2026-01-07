@@ -1,14 +1,18 @@
 ---
-title: Universal Editor 2025.07.09 Release Notes
-description: These are the release notes for the 2025.07.09 release of the Universal Editor.
+title: Universal Editor 2025.12.12 Release Notes
+description: These are the release notes for the 2025.12.11 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.07.09 Release Notes {#release-notes}
+# Universal Editor 2025.12.12 Release Notes {#release-notes}
 
-These are the release notes for the 9 July 2025 release of the Universal Editor.
+These are the release notes for the 12 December 2025 release of the Universal Editor.
+
+>[!TIP]
+>
+>If you wish to test **upcoming** Universal Editor features before they are released, please see the [Universal Editor Preview Release Notes.](/help/release-notes/universal-editor/preview.md)
 
 >[!TIP]
 >
@@ -16,35 +20,27 @@ These are the release notes for the 9 July 2025 release of the Universal Editor.
 
 ## What's New {#what-is-new}
 
-* [When clicking the **Add** toolbar button on containers,](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) if only one component type is allowed, it is inserted immediately without requiring selection from the drop-down menu.
-* [The authentication header toolbar option](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings) has been placed behind a feature toggle, as it is not useful in most cases.
-* [Since container nesting is not permitted for multi-fields in the properties panel,](/help/implementing/universal-editor/field-types.md#fields) the rendering routine now filters out nested containers from the field list to prevent invalid nesting.
+* Support has been added to existing tables in the [rich text editor.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* The tab key has been enabled for nesting lists in the [rich text editor.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* The developer login feature can now be disabled via the [meta tag `aem-dev-login`.](/help/implementing/universal-editor/customizing.md#meta-tags)
+* A right-click in the overlay section now displays a [contextual options menu.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
+* [Scoped indentation](/help/implementing/universal-editor/configure-rte.md#indentation) is now supported in the [rich text editor.](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 
 ## Early Adoption Features {#early-adopter}
 
-If you are interested in testing these upcoming features and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 
+If you are interested in testing the upcoming features listed below and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 
 
-### New RTE {#new-rte}
-
-The new ProseMirror RTE, featuring a page picker in the link dialog, is now available in the right panel.
-
-### Undo/Redo {#undo-redo}
-
-Undo and redo is now available to Universal Editor content authors.
-
-* This includes edits done in context, edits done via the Properties panel, as well as adding (or duplicating), moving, and deleting blocks.
-* Undo and redo is limited to the current browser session.
+* Shallow copy has been implemented for Content Fragments.
 
 ## Other Improvements {#other-improvements}
 
-* An issue was fixed where single asset reference removal was not possible when editing via the property rail.
-* An issue was fixed where the Properties panel would load indefinitely because asset references were automatically converted to arrays, causing an infinite loading state.
-    * Asset reference values are now stored as-is, without automatic conversion to arrays.
-* An issue was fixed where the Properties panel did not display fields when a model was defined but contained no content.
-    * This caused an infinite loading state for the Properties panel for empty empty detail responses, like empty Content Fragments.
-* The ESLint configuration has been refactored for compatibility with version 9, including updated rules and plugin support.
-
-## Deprecations {#deprecations}
-
-* The `text-input` component is now officially deprecated.
-    * In `model-definition.json`, use the text component to create text inputs for the Properties panel.
+* The properties rail is now synchronized when multi fields change in-context.
+* The Content Fragment picker now opens as expected on AEM 6.5 instances.
+* The escape key now closes dialogs in the rich text editor.
+* The **Remove component** action is now only available when a component is selected.
+* The correct (old or new) Content Fragment editor is now opened based on the used instance (if the hostname is the AEM as a Cloud Service pattern then use the new editor, else use the legacy editor).
+* Filter validation is added to the duplicate action.
+* Long titles are now truncated in the properties rail.
+* Multi-site manager arrays with more than 10 values are now properly handled.
+* Conflict errors when creating multiple components with same name are now properly handled.
+* Multi-site manager array handling with values >10 was added.

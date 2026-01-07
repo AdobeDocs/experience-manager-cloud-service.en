@@ -1,13 +1,13 @@
 ---
-title: Accessing and Managing Logs
+title: Access and Manage Logs
 description: Learn how to access and manage logs to aid your development process in AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
-# Accessing and Managing Logs {#manage-logs} 
+# Access and manage logs {#manage-logs} 
 
 Learn how to access and manage logs to aid your development process in AEM as a Cloud Service.
 
@@ -15,9 +15,7 @@ You can access a list of available log files for the selected environment using 
 
 Logs are retained for seven days.
 
-## Downloading Logs {#download-logs}
-
-To download logs, do the following:
+## Download logs {#download-logs}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
@@ -33,7 +31,7 @@ To download logs, do the following:
 
    ![Download Logs dialog](assets/download-preview.png)
 
-   In case [Additional Publish Regions](/help/operations/additional-publish-regions.md) are enabled for your environment, you will be able to select each region and download its logs separately, as shown below:
+   In case [Additional Publish Regions](/help/operations/additional-publish-regions.md) are enabled for your environment, you can select each region and download its logs separately, as shown below:
 
    ![Download Logs for additional publish regions](assets/download-publish-region-logs.png)
 
@@ -43,7 +41,7 @@ You can also access your logs from the **Environments** page.
 
 ![Logs from the Environments screen](assets/download-logs.png)
 
-## Logs Via API {#logs-through-api}
+## Logs through the API {#logs-through-api}
 
 In addition to downloading logs through the UI, logs are available through the API and the command-line interface. 
 
@@ -82,7 +80,7 @@ Environment Id Service    Name
 1884           dispatcher httpdaccess
 ```
 
-### Additional Resources {#resources}
+### Additional resources {#resources}
 
 >[!TIP]
 >
@@ -95,5 +93,5 @@ See the following additional resources to learn more about the Cloud Manager API
 
 See the following additional resources to learn more about log files in AEM as a Cloud Service:
 
-* [Cloud 5 AEM Log Files](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
-* [Debugging AEM as a Cloud Service using logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html)
+* [Cloud 5 AEM Log Files](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [Debugging AEM as a Cloud Service using logs](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)

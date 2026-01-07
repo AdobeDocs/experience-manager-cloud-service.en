@@ -1,0 +1,140 @@
+---
+breadcrumb-name: Documentation
+child-repos: release-notes, id-service, core-services, marketo-measure, deliverability-learn, 
+dynamic-media-developer-resources, dynamic-media-classic, journeys
+title: Adobe Enterprise Documentation
+description: Get up and running quickly, build on existing knowledge, and become an expert with your Adobe software by reading Adobe Enterprise Documentation. Access our guides, tutorials, playlists, and release notes for Adobe Enterprise solutions across Experience Cloud, Experience Platform, Document Cloud, and Creative Cloud for enterprise.
+type: Documentation
+exl-id: 8a3ee818-c9b7-11ed-af01-9938a3781b37
+---
+
+# Adobe Enterprise Documentation
+
+Adobe Enterprise Documentation offers more than a collection of user guides. Discover our growing library of product documentation, tutorials, and on-demand events packed with strategies, hints, and best practices for creating awesome digital experiences. Let Experience League help you become an expert with the Adobe enterprise solutions you use the most. 
+
+{descriptions=off}
+
+## Experience Cloud
+
+### Data Insights and Audiences
+
++ [[!DNL Analytics]](analytics.md)
++ [Customer Journey Analytics](customer-journey-analytics.md)
++ [Real-Time Customer Data Platform (all editions)](real-time-customer-data-platform.md)
++ [Audience Manager](audience-manager.md)
++ [Advertising](advertising.md)
++ [Marketo Measure](marketo-measure.md)
++ [Intelligent Services](intelligent-services.md)
++ [Mix Modeler](mix-modeler.md)
+
+### Content and Commerce
+
++ [[!DNL Experience Manager as a Cloud Service]](experience-manager-cloud-service.md)
++ [Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)
++ [Experience Manager 6.5 LTS](experience-manager-65-lts.md)
++ [Experience Manager 6.5](experience-manager-65.md)
++ [Experience Manager &ndash; Older Versions](experience-manager-release-information#/help/using/aem-previous-versions.md)
++ [Experience Manager Assets Essentials](experience-manager-assets-essentials#help)
++ [Commerce (including Magento Open Source)](commerce.md)
+
+### Customer Journeys
+
++ [Journey Optimizer](journey-optimizer.md)
++ [Journey Optimizer B2B Edition](journey-optimizer-b2b.md)
++ [Target](target.md)
++ [Campaign](campaign.md)
++ [Marketo Engage](marketo-engage.md)
+
+### Media and Entertainment
+
++ [[!DNL Adobe Pass]](pass.md)
+
+### Experience Cloud Admin and Central UI
+
++ [User management and product licenses](core-services#/help/interface/administration/admin-console.md)
++ [AI in Experience Cloud products](core-services#/help/interface/features/generative-ai.md)
++ [Organizations](core-services#/help/interface/administration/organizations.md)
++ [Preferences and notifications](core-services#/help/interface/features/account-preferences.md)
++ [Central Interface Components](core-services#interface)
++ [Experience Cloud Identity Service (ECID)](id-service#using)
++ [Experience Cloud Audiences](core-services#/help/interface/services/audiences/overview.md)
++ [Experience Cloud Customer Attributes](core-services#/help/interface/services/customer-attributes/attributes.md)
++ [Experience Cloud Assets](core-services#/help/interface/services/assets/experience-cloud-assets.md)
+
+### Marketing Workflow
+
++ [Workfront](workfront.md)
++ [GenStudio for Performance Marketing](genstudio-for-performance-marketing.md)
+
+<!--
++ [Workfront Tutorials](workfront-learn#tutorials-workfront)
+-->
+
+## Experience Platform
+
+### Experience Platform Documentation
+
++ [Experience Platform](experience-platform.md)
++ [Data Collection](data-collection.md)
++ [Digital Experience Blueprints](blueprints-learn#architecture)
+
+## Document Cloud
+
+### Documentation
+
++ [Acrobat Learn & Support](https://helpx.adobe.com/support/acrobat.html)
++ [Acrobat Sign Learn & Support](https://helpx.adobe.com/support/sign.html)
+
+### Developer
+
++ [Acrobat Services](https://developer.adobe.com/document-services/docs/overview/)
++ [Acrobat Services Tutorials](acrobat-services-learn#tutorials)
+
+### Helpful Resources for Document Cloud
+
++ [Document Cloud Learn & Support](https://helpx.adobe.com/support/document-cloud.html)
++ [Document Cloud Enterprise Tutorials](https://experienceleague.adobe.com/docs/home-tutorials.html#document-cloud-tutorials)
++ [Adobe Status](https://status.adobe.com/)
++ [Admin Guide](https://helpx.adobe.com/enterprise/admin-guide.html)
+
+## Creative Cloud for Enterprise
+
+### Documentation
+
++ [Creative Cloud Learn & Support](https://helpx.adobe.com/support/creative-cloud.html)
+
+### Helpful Resources for Creative Cloud for Enterprise
+
++ [Creative Cloud for Enterprise Tutorials](creative-cloud-enterprise-learn#cce-learning-hub)
++ [Adobe Status](https://status.adobe.com/)
++ [Adobe Developer](https://developer.adobe.com/)
++ [Admin Guide](https://helpx.adobe.com/enterprise/admin-guide.html)
+
+## Additional Resources {#lists-resources}
+
+### Cross-Cloud Resources
+
++ [Experience League Events](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html#events)
++ [Adobe Status](https://status.adobe.com/)
++ [Adobe Developer](https://developer.adobe.com/)
++ [Admin Guide](https://helpx.adobe.com/enterprise/admin-guide.html)
++ [Software Distribution](experience-cloud#software-distribution)
+
+### Enablement and Administration Resources
+
++ [Experience Cloud Administration](core-services#/help/interface/administration/admin-tool-experience-cloud.md)
++ [Adobe Enterprise and Teams: Administration Guide](https://helpx.adobe.com/enterprise/managing/user-guide.html) for all Adobe cloud products
++ [Customer Success: Strategy & thought leadership](customer-success#customer-success)
+
+### Learn and Support Resources
+
++ [Experience Cloud Release Notes](release-notes#experience-cloud)
++ [Tutorials](home-tutorials.md)
++ [Playlists](https://experienceleague.adobe.com/en/playlists)
++ [Certification](certification#program)
++ [Community Forum](https://experienceleaguecommunities.adobe.com)
++ [Support](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)
+
+<!--
++ [Events](events.md)
+-->

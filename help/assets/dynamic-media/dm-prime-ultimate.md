@@ -24,6 +24,10 @@ Some of the other key benefits of Dynamic Media Prime include:
 * Web-optimized image delivery
 * Adaptive video streaming
 
+>[!NOTE]
+>
+>DM Prime customers can use basic image modifiers, including rotate, crop, flip, height, width, and quality. Smart Imaging does not support AVIF for DM Prime customers.
+
 ### Prerequisites {#pre-requisites-dm-prime}
 
 * [AEM Sites as a Cloud Service](/help/sites-cloud/authoring/quick-start.md)
@@ -39,7 +43,7 @@ In addition to the Dynamic Media Prime features such as AEM Assets integration w
 * [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) capabilities advanced features such as:
 
    * Secure delivery of assets, 
-   * [Smart Crop, Smart Imaging, Image Presets, and additional image modifiers](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+   * [Smart Crop, Smart Imaging, Image Presets, and additional image modifiers](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 * [Dynamic Media solution in AEM as a Cloud Service](/help/assets/dynamic-media/dynamic-media.md), which also includes the following key capabilities: 
    

@@ -31,10 +31,6 @@ AEM Assets serves as a single source of truth and all approved assets are automa
 
 Content Hub allows you to create new content with Adobe Express (if you have Adobe Express entitlements). You can edit existing content with easy to use tools, produce on-brand variations with templates and brand elements, and create new content with the latest GenAI capabilities from Adobe Firefly.
 
-**Gain insights on how content is used across teams**
-
-[!DNL Content Hub] provides valuable insights into assets, addressing a common challenge that marketing stakeholders often encounter - asset usage statistics used in marketing campaigns, channels, and different regions. By gaining a clear understanding of the performance and popularity of the assets, it delivers actionable insights essential for enhancing user experience.
-
 ## Prerequisites {#prerequisites-content-hub}
 
 Content Hub requires a production author environment of Experience Manager as a Cloud Service, 2024.6 release or newer (minimum version is 2024.6.16799).

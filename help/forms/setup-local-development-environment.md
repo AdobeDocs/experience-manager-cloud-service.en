@@ -67,7 +67,7 @@ You require the following software to set up a local development environment. Do
 
 |Software   | Description |Download links|
 |---|---|---|
-| Adobe Experience Manager as a Cloud Service SDK | SDK includes [!DNL Adobe Experience Manager] QuickStart and Dispatcher tools| Download the latest SDK from [Software Distribution](#software-distribution)||
+| Adobe Experience Manager as a Cloud Service SDK | SDK includes [!DNL Adobe Experience Manager] QuickStart and Dispatcher tools| Download the latest SDK from [Software Distribution](#software-distribution)|
 | Adobe Experience Manager Forms feature archive (AEM Forms add-on)  | Tools to create, style, and optimize Adaptive Forms and other Adobe Experience Manager Forms features| Download from [Software Distribution](#software-distribution) |
 | (Optional) Adobe Experience Manager Forms reference content  | Tools to create, style, and optimize Adaptive Forms and other Adobe Experience Manager Forms features| Download from [Software Distribution](#software-distribution) |
 | (Optional) Adobe Experience Manager Forms Designer | Tools to create, style, and optimize Adaptive Forms and other Adobe Experience Manager Forms features| Download from [Software Distribution](#software-distribution) |
@@ -260,7 +260,7 @@ You can now use the local development environment to render Document of Record. 
 Use this project to create Adaptive Forms, deploy configuration updates, overlays, create custom Adaptive Form components, test, and custom code on local [!DNL Experience Manager Forms] SDK. After testing locally, you can deploy the project to  [!DNL Experience Manager Forms] as a Cloud Service production and non-production environments. When you deploy the project, the following AEM Forms assets are also deployed:
 
 |Themes | Templates | Form Data Model (FDM) |
----------|----------|---------
+|---------|----------|---------|
 | Canvas 3.0 | Basic | Microsoft&reg; Dynamics 365 |
 | Tranquil   | Blank | Salesforce |
 | Urbane |   |  |
@@ -368,8 +368,9 @@ Your local development environment is ready.
 
 Enabling Adaptive Forms Core Components on AEM Forms as a Cloud Service, lets you start creating, publishing, and delivering Core Components based Adaptive Forms and Headless Forms using your AEM Forms Cloud Service instances to multiple channels. You require Adaptive Forms Core Components enabled environment to use Headless Adaptive Forms.
 
-For instructions, see [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
-
+>[!NOTE]
+>
+> Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
 
 ## Upgrade your local development environment {#upgrade-your-local-development-environment}
 

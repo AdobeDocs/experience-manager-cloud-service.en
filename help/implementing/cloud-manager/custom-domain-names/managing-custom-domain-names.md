@@ -4,7 +4,7 @@ description: Learn how to use Cloud Manager to view, update, replace, and delete
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Manage custom domain names {#managing-custom-domain-names}
@@ -99,6 +99,12 @@ A user with the **Business Owner** or **Deployment Manager** role can use Cloud 
 
 
 ### Delete a custom domain name from a specific environment {#delete-cdn-specific}
+
+>[!WARNING]
+>
+>Remove the domain's DNS records with your DNS provider *before* deleting the domain in Cloud Manager. Abandoned (dangling) DNS entries can be hijacked and pose a security risk.
+
+**To delete a custom domain name from a specific environment:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization and program.
 

@@ -5,7 +5,7 @@ index: yes
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Add a non-production pipeline {#configuring-non-production-pipelines}
@@ -20,8 +20,8 @@ In addition to [production pipelines](#configuring-production-pipelines.md) whic
 
 There are two types of non-production pipelines:
 
-* **Code Quality Pipelines** - These run code quality scans on the code in a git branch and executes the build and code quality steps.
-* **Deployment Pipelines** - In addition to executing the build and code quality steps like the code quality pipelines, these pipelines deploy the code to a non-production environment.
+* **Code Quality Pipelines** - These run code quality scans on the code in a Git branch and executes the build and code quality steps.
+* **Deployment Pipelines** - Besides executing the build and code quality steps like the code quality pipelines, these pipelines deploy the code to a non-production environment.
 
 >[!NOTE]
 >
@@ -31,9 +31,11 @@ There are two types of non-production pipelines:
 
 Once you have set up your program and have at least one environment using the Cloud Manager UI, you are ready to add a non-production pipeline by following these steps.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
-
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
+1. Sign into Cloud Manager at [experiece.adobe.com](https://experience.adobe.com).
+1. In the **Quick access** section, click **Experience Manager**.
+1. In the left side panel, click **Cloud Manager**.
+1. Select an organization that you want.
+1. On the **My Programs** console, click a program. 
 
 1. Access the **Pipelines** card from the Cloud Manager home screen. Click **+Add** and select **Add Non-Production Pipeline**. 
 
@@ -50,8 +52,8 @@ Once you have set up your program and have at least one environment using the Cl
 
    * **Deployment Trigger** - You have the following options when defining the deployment triggers to start the pipeline.
    
-     * **Manual** - Use this option to manually start the pipeline.
-     * **On Git Changes** - This option starts the CI/CD pipeline whenever commits are added to the configured git branch. With this option, you can still start the pipeline manually as required.
+     * **Manual** - Use this option to start the pipeline manually.
+     * **On Git Changes** - This option starts the CI/CD pipeline whenever commits are added to the configured Git branch. With this option, you can still start the pipeline manually as required.
 
 1. If you choose to create a **Deployment Pipeline**, you must also define the **Important Metric Failures Behavior**.
 
@@ -97,7 +99,7 @@ To finish the configuration of the full-stack code non-production pipeline, foll
      * **Product Functional Testing** - Execute [product functional tests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) against the development environment.
      * **Custom Functional Testing** - Execute [custom functional tests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) against the development environment.
      * **Custom UI Testing** - Execute [custom UI tests](/help/implementing/cloud-manager/ui-testing.md) for custom applications.
-     * **Experience Audit** - Execute [Experience Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md)
+     * **Experience Audit** - Execute [Experience Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md)
 
    ![Full-stack pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -109,17 +111,19 @@ The pipeline is saved and you can now [manage your pipelines](managing-pipelines
 
 A targeted deployment deploys code only for selected parts of your AEM application. In such a deployment you can choose to **Include** one of the following types of code:
 
-* **Config** - Configure settings for various features on your AEM environment.
-  * See [Using Config Pipelines](/help/operations/config-pipeline.md) for a list of supported configurations, which includes log forwarding, purge-related maintenance tasks, and various CDN configurations, and to manage them in your repository so they are deployed properly.
-  * When running a targeted deployment pipeline, configurations will be deployed, provided they are saved to environment, repository, and branch you defined in the pipeline.
-  * At any time, there can only be one config pipeline per environment. 
+* **Config** - Configure settings for various features in your AEM environment.
+  * See [Using Config Pipelines](/help/operations/config-pipeline.md) for a list of supported configurations, which include log forwarding, purge-related maintenance tasks, and various CDN configurations, and to manage them in your repository so they are deployed properly.
+  * When running a targeted deployment pipeline, configurations are deployed, provided they are saved to the environment, repository, and branch you defined in the pipeline.
+  * At any time, there can only be one config pipeline per environment.
+* **Configure Edge Delivery Services config pipeline** - Edge Delivery Configuration Pipelines do not have separate development, staging, and production environments. In AEM as a Cloud Service, changes move through development, stage, and production tiers. In contrast, an Edge Delivery Configuration Pipeline applies its configuration directly to all Edge Delivery Sites domains registered in Cloud Manager. To learn more, see [Add an Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).  
 * **Front End Code** - Configure JavaScript and CSS for the front end of your AEM application.
   * With front-end pipelines, more independence is given to front-end developers and the development process can be accelerated.
   * See the document [Developing Sites with the Front-End Pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) for how this process works along with some considerations to be aware of to get the full potential out of this process.
-* **Web Tier Config** - Configure dispatcher properties to store, process, and delivery web pages to the client.
+* **Web Tier Config** - Configure Dispatcher properties to store, process, and delivery web pages to the client.
   * See the document [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) for more details.
   * If a web-tier code pipeline exists for the selected environment, this selection is disabled.
-  * If you have an existing full-stack pipeline deploying to an environment, creating a web tier config pipeline for the same environment will case the existing web tier configuration in the full-stack pipeline to be ignored.
+  * If a full-stack pipeline already deploys to an environment, you can still create a web-tier configuration pipeline for that same environment. When you do, Cloud Manager ignores the web-tier configuration in the full-stack pipeline.
+
 
 >[!NOTE]
 >
@@ -146,13 +150,13 @@ The steps to complete the creation of your non-production, targeted deployment p
    * **Git Branch** - This option defines from which branch in the selected pipeline should retrieve the code.
      * Enter the first few characters of the branch name and the auto-complete feature of this field. It finds the matching branches that you can select.
    * **Code Location** - This option defines the path in the branch of the selected repo from which the pipeline should retrieve the code.
-   * **Pipeline** - For front-end non-production pipelines, you have the option to enable **[Experience Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md)**.
+   * **Pipeline** - For front-end non-production pipelines, you have the option to enable **[Experience Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md)**.
    
    ![Config pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
 1. If you enabled Experience Audit, click **Continue** to advance to the **Experience Audit** tab where you can define the paths that should always be included in the Experience Audit.
 
-   * If you enabled **Experience Audit**, see the document [Experience Audit](/help/implementing/cloud-manager/experience-audit-dashboard.md) for details on how to configure.
+   * If you enabled **Experience Audit**, see the document [Experience Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md) for details on how to configure.
    * If you did not, skip this step.
 
 1. Click **Save** to save the pipeline.
@@ -161,9 +165,9 @@ The pipeline is saved and you can now [manage your pipelines](managing-pipelines
 
 ## Skip Dispatcher packages {#skip-dispatcher-packages}
 
-If you want Dispatcher packages built as part of your pipeline, but do not want them published to build storage, you can disable publishing them, which may reduce pipeline run duration.
+If you want Dispatcher packages built in your pipeline but not uploaded to build storage, disable publishing. Doing so can shorten the pipeline's run time.
 
-The following configuration to disable publishing Dispatcher packages must be added via your project `pom.xml` file. It is based on an environment variable, which serves as a flag you can set in the Cloud Manager build container to define when Dispatcher packages should be ignored.
+The following configuration to disable publishing Dispatcher packages must be added via your project `pom.xml` file. Set an environment variable in the Cloud Manager build container to flag when to ignore Dispatcher packages. The pipeline reads this flag and ignores them accordingly.
 
 ```xml
 <profile>

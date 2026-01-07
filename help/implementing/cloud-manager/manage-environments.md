@@ -4,10 +4,10 @@ description: Learn about the types of environments that you can create and how t
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
-# Manage Environments {#managing-environments} 
+# Manage environments {#managing-environments} 
 
 Learn about the types of environments that you can create and how to create them for your Cloud Manager project.
 
@@ -22,9 +22,11 @@ A user with the requisite permissions can create the following environment types
 | **Rapid Development** | A Rapid Development Environment (RDE) lets developers quickly deploy and review changes. This ability reduces the time needed to test features that have already been validated in a local development environment. See [the rapid development environment documentation](/help/implementing/developing/introduction/rapid-development-environments.md) for details about how to use an RDE. |
 | **Specialized Testing Environment** | Specialized Testing Environments provide a dedicated space to validate features under near-production conditions, ideal for stress testing and advanced pre-deployment checks. See [Add a Specialized Testing Environment](/help/implementing/cloud-manager/specialized-test-environment.md) |
 
+<!-- 
 >[!NOTE]
 >
 >The **Specialized Testing Environment** feature is currently available only through the private beta program. To sign up for the private beta, see [Specialized Testing Environment](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+-->
 
 The capabilities of individual environments depend on the solutions that are enabled in the [program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) of the environment.
 
@@ -146,7 +148,7 @@ If you want to provision [advanced networking](/help/security/configuring-advanc
 
 1. On the Environments page, do one of the following:
 
-   * Click an environment in the list to view its details.
+   * Click on an environment in the list to view its details.
 
    ![Environment details](assets/environ-preview1.png)
 
@@ -334,7 +336,7 @@ To manage IP Allow Lists, navigate to the ![Data icon](https://spectrum.adobe.co
 
 ### Apply an IP Allow List {#apply-ip-allow-list}
 
-Applying an IP Allow List links all defined IP ranges to an author or publish service in the environment.
+Applying an IP Allow List links all defined IP ranges to an author or publishing service in the environment.
 
 >[!TIP]
 >

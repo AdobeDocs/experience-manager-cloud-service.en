@@ -3,7 +3,7 @@ title: Creating Content Fragment Models - Headless Setup
 description: Define the structure of the content you will create and serve using AEM's headless capabilities by using Content Fragment Models.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Creating Content Fragment Models - Headless Setup {#creating-content-fragment-models}
 
@@ -17,47 +17,14 @@ Content Fragment Models define the structure of the data and content that you wi
 
 ## How to Create a Content Fragment Model {#how-to-create-a-content-fragment-model}
 
-An information architect would perform these tasks only sporadically as new models are required. For the purposes of this getting started guide, we only need to create one model.
+An information architect would perform these tasks only sporadically as new models are required. 
 
-1. Log into AEM as a Cloud Service and from the main menu select **Tools**, **General**, **Content Fragment Models**.
-1. Select the folder that was made by creating your configuration.
+The steps required to create a model ready for use are:
 
-   ![The models folder](../assets/models-folder.png)
-1. Select **Create**.
-1. Provide a **Model Title**, **Tags** and **Description**. You can also select/deselect **Enable model** to control whether the model is immediately enabled upon creation.
-
-   ![Create a model](../assets/models-create.png)
-1. In the confirmation window, select **Open** to configure your model.
-
-   ![Confirmation window](../assets/models-confirmation.png)
-1. Using the **Content Fragment Model Editor**, build your Content Fragment Model by dragging and dropping fields from the **Data Types** column.
-
-   ![Drag and drop fields](../assets/models-drag-and-drop.png)
-
-1. Once you place a field, you must configure its properties. The editor will automatically switch to the **Properties** tab for the added field where you can provide the mandatory fields.
-
-   ![Configure properties](../assets/models-configure-properties.png)
-
-1. When you are finished building your model, select **Save**. 
-
-1. The mode of the created model depends on whether you selected **Enable Model** when creating the model:
-   * selected - the new model will already be **Enabled**
-   * not selected - the new model is created in **Draft** mode
-
-1. If not already enabled, the model must be **Enabled** to use it. 
-   1. Select the model you created and then select **Enable**.
-
-      ![Enabling the model](../assets/models-enable.png)
-   1. Confirm enabling the model by tapping or clicking **Enable** in the confirmation dialog.
-
-      ![Enabling confirmation dialog](../assets/models-enabling.png)
-1. The model is now enabled and ready to use.
-
-   ![Model enabled](../assets/models-enabled.png)
-
-The **Content Fragment Model Editor** supports many different data type such as simple text fields, asset references, references to other models, and JSON data.
-
-You can create multiple models. Models can reference other content fragments. Use [configurations](create-configuration.md) to organize your models.
+* [Create a Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)
+* [Enable your Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#enabling-a-content-fragment-model)
+* [Define your Content Fragment Model](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Publish your Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model)
 
 ## Next Steps {#next-steps}
 
@@ -65,4 +32,7 @@ Now that you have defined the structures of your Content Fragments by creating m
 
 >[!TIP]
 >
->For complete details about Content Fragment Models, see the [Content Fragment Models documentation](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
+>For complete details about Content Fragment Models, see:
+>
+>* [Managing Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+>* [Defining Content Fragment Models](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)

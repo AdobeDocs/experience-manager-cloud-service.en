@@ -4,7 +4,7 @@ description: Cloud Manager provides a dashboard for easy viewing of AEMaaCS prod
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # License dashboard {#license-dashboard}
@@ -19,7 +19,7 @@ Cloud Manager provides a dashboard for easy viewing of Adobe Experience Manager 
 
 ## Overview {#overview}
 
-The Cloud Manager License dashboard provides easy access to solution entitlements that are available to you across all of your programs, including what is used and what is available. And, content request consumption metrics trended by month for the Sites solution.
+The Cloud Manager License dashboard provides easy access to solution entitlements that are available to you across all of your programs, including how much is used and how much is available. And, content request consumption metrics trended by month for the Sites solution.
 
 ## Access the License dashboard {#using-dashboard}
 
@@ -60,7 +60,16 @@ Each section summarizes what is available and how it is used, if at all. Current
 <!--
 The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
 
-The **View usage details** button in the License area of Cloud Manager provides a detailed breakdown of your current resource usage. When clicked, it opens a report or dashboard that shows important metrics related to your license. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> This functionality helps you monitor and ensure that you are staying within the limits of your contract while offering insights for better resource planning and optimization. 
+The **View usage details** button in the License area of Cloud Manager provides a detailed breakdown of your current resource usage. When clicked, it opens a report or dashboard that shows important metrics related to your license. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> This functionality helps you monitor and ensure that you are staying within the limits of your contract while offering insights for better resource planning and optimization.
+
+The **View usage details** button is *disabled* (turned off) in the following cases:
+
+* The Solution is not part of your contract and has no credits. The button remains available if credits exist, even if all credits are consumed.
+* No Cloud Manager program is configured for that Solution.
+* A feature flag that governs usage details is disabled. It must be *enabled* (turned on) for your organization before the button becomes available.
+* Usage is explicitly disabled for the Solution. Currently, this situation applies only to Edge Delivery Services.
+
+
 
 ### Sites usage details {#sites-usage-details}
 
