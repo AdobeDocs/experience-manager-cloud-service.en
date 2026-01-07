@@ -3,7 +3,7 @@ title: Publish an Edge Delivery Services for AEM Forms
 description: Publish an Edge Delivery Services for AEM Forms 
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Publish your form and start collecting data
 
@@ -13,9 +13,9 @@ Once you are ready to share your form with your customers for data collection or
 
 ## Pre-requisites
 
-* You have an AEM Project based on [AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [added Adaptive Forms Block to your existing AEM Project](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 
-* Your form is full tested and ready to use. 
-* Your [spreadsheet is configured](/help/edge/docs/forms/submit-forms.md) to accept data.
+- You have an AEM Project based on [AEM Forms boilerplate](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) or [added Adaptive Forms Block to your existing AEM Project](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) 
+- Your form is full tested and ready to use. 
+- Your [spreadsheet is configured](/help/edge/docs/forms/submit-forms.md) to accept data.
 
 
 ## Publish your form  
@@ -43,9 +43,9 @@ Once you are ready to share your form with your customers for data collection or
        
     ```
 
-    * `<branch>` refers to the branch of your GitHub repository. 
-    * `<repository>` denotes your GitHub repository. 
-    * `<owner>` refers to username of your GitHub account that hosts your GitHub repository.
+    - `<branch>` refers to the branch of your GitHub repository. 
+    - `<repository>` denotes your GitHub repository. 
+    - `<owner>` refers to username of your GitHub account that hosts your GitHub repository.
 
     For example, if your project's repository is named "wefinance", it's located under the account "wkndform", and you're using the "main" branch and form as "enquiry", the URL look like the following:
 
@@ -121,6 +121,4 @@ If you encounter an error resembling the following message, it indicates that th
 +++
 
 
-## See also
 
-{{see-more-forms-eds}}

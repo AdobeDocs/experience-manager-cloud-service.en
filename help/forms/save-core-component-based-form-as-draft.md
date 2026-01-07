@@ -16,7 +16,7 @@ Consider a user who begins filling out a form but needs to pause and return late
 
 ## Pre-requisites
 
-* [Enable Adaptive Forms Core Components for your environment](/help/forms/enable-adaptive-forms-core-components.md).
+* Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
 
     After deploying the latest Core Components to your environment, the Forms Portal components become accessible in your authoring environment.
 
@@ -98,18 +98,21 @@ Now, configure the properties of the **Drafts and Submissions** component accord
 ## Configure properties of the Drafts & Submissions Component 
 
 You can configure the properties of the **Drafts & Submissions**:
+
 1. Select the **Drafts & Submissions** component.
 1. Click the ![Configure icon](assets/configure_icon.png) and the dialog box appears. 
 1. In the **[!UICONTROL Drafts and Submissions]** dialog, specify the following:
+
    * **Title** To identify a component in a Sites page and by default, the title appears on top of the component.
    * **Select Type**: To indicate the form listing as draft or submitted forms. If you choose **Draft Forms**, the forms saved as drafts are displayed. Alternatively, selecting **Submitted Forms** shows the forms submitted by logged-in users.
-   *  **Layout**: To display list draft forms or submitted forms in the card or list format.
+   * **Layout**: To display list draft forms or submitted forms in the card or list format.
  
     ![Draft and Submission Component proeprties](/help/forms/assets/save-form-as-draft-dns-properties.png)
 
 ## Configure forms to save as drafts
 
 You can configure Adaptive Forms in the following two ways to save them as drafts for later use:
+
 * [User action](#user-action)
 * [Auto-save](#auto-save)
 
@@ -162,6 +165,10 @@ When **[!UICONTROL Select Type]** is selected as **Submitted Forms** in the [con
 ![Submissions icon](assets/submission-listing.png)
 
 You can also discard the forms by clicking on the ellipsis (...) that appears in the bottom-right corner of the form.
+
+>[!NOTE]
+>
+> In the Forms Portal, the Drafts & Submissions component supports only submissions from Foundation-based forms.
 
 ## Next Steps
 

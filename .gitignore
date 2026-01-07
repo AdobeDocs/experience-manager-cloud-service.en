@@ -9,3 +9,5 @@ desktop.ini
 experience-manager-cloud-service.en.code-workspace
 .idea
 *.iml
+.cursorrules
+.vscode/adobe-markdown.code-snippets

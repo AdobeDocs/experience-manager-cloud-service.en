@@ -1,16 +1,8 @@
 ---
 title: Integrating Form Bridge with custom portal for HTML5 forms
-
 description: You can use the FormBridge API to get or set the values of form fields from the HTML page and submit the form.
-
-
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-
-
-docset: aem65
-
 feature: HTML5 Forms,Mobile Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
 solution: Experience Manager, Experience Manager Forms
@@ -21,7 +13,7 @@ role: Admin, User, Developer
 <span class="preview"> The HTML5 Forms capability is offered as part of Early Access Program. To request access, send an email from your official (work) email ID to aem-forms-ea@adobe.com.
 </span>
 
-FormBridge is a HTML5 forms bridge API that lets you interact with a form. For the FormBridge API reference, see [FormBridge API reference](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis).
+FormBridge is a HTML5 forms bridge API that lets you interact with a form. <!--For the FormBridge API reference, see [FormBridge API reference](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis).-->
 
 You can use the FormBridge API to get or set the values of form fields from the HTML page and submit the form. For example, you can use API to build a wizard-like experience.
 

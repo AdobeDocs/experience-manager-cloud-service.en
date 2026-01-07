@@ -45,7 +45,8 @@ The information in the timeline is updated to indicate the comment was added.
 
 ### Save a Version {#saveversion}
 
-Versioning creates a “snapshot” of a channel at a specific point in time. With versioning, you can perform the following actions:
+Versioning creates a "snapshot" of a channel at a specific point in time. With versioning, you can perform the following actions:
+
 * Create a version of a channel.
 * Restore a channel to a previous version; for example:
   * to undo a change that you made to the page.
@@ -117,7 +118,7 @@ When authoring, you can invoke workflows to take action on your channels; it is 
 When you apply the workflow, you specify the following information:
 
 * The workflow to apply.
-* Optionally, a title that helps identify the workflow instance in a user’s Inbox.
+* Optionally, a title that helps identify the workflow instance in a user's Inbox.
 * The workflow payload.
 
 #### Starting the workflow

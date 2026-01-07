@@ -585,11 +585,11 @@ You can use the Asset Selector properties to customize the way the Asset Selecto
 | *dragOptions.allowList* | boolean | No | | The property is used to allow or deny the dragging of assets that are not selectable. |
 | *aemTierType* | String | No |  | It allows you to select whether you want to show assets from delivery tier, author tier, or both. <br><br> Syntax: `aemTierType:[0]: "author" 1: "delivery"` <br><br> For example, if both `["author","delivery"]` are used, then the repository switcher displays options for both author and delivery. |
 | *handleNavigateToAsset* | Function | No | | It is a Callback function to handle selection of an asset. |
-| *noWrap* | Boolean | No | | The *noWrap* property helps rendering Asset Selector in the side rail panel. If this property is not mentioned, it renders the *Dialog view* by default. | 
+| *noWrap* | Boolean | No | | The *noWrap* property helps rendering Asset Selector in the side rail panel. If this property is not mentioned, it renders the *Dialog view* by default. |
 | *dialogSize* | small, medium, large, fullscreen, or fullscreen takeover | String | Optional | You can control the layout by specifying its size using the given options. |
 | *colorScheme* | Light or dark | No | | This property is used to set the theme of an Asset Selector application. You can choose between light or dark theme. |
 | *filterRepoList* | Function | No |  | You can use `filterRepoList` callback function that calls Experience Manager repository and returns a filtered list of repositories. |
-| *expiryOptions* | Function | | | You can use between the following two properties: **getExpiryStatus** which provides status of an expired asset. The function returns `EXPIRED`, `EXPIRING_SOON` or `NOT_EXPIRED` based on the expiry date of an asset that you provide. See [customize expired assets](#customize-expired-assets). Additionally, you can use **allowSelectionAndDrag** in which the value of the function can either be `true` or `false`. When the value is set to `false`, the expired asset cannot be selected or dragged on the canvas. | 
+| *expiryOptions* | Function | | | You can use between the following two properties: **getExpiryStatus** which provides status of an expired asset. The function returns `EXPIRED`, `EXPIRING_SOON` or `NOT_EXPIRED` based on the expiry date of an asset that you provide. See [customize expired assets](#customize-expired-assets). Additionally, you can use **allowSelectionAndDrag** in which the value of the function can either be `true` or `false`. When the value is set to `false`, the expired asset cannot be selected or dragged on the canvas. |
 | *showToast* | | No | | It allows Asset Selector to show a customized toast message for the expired asset. |
 
 <!--
@@ -838,6 +838,7 @@ expiryOptions:{
     allowSelectionAndDrop: false;
 }
 ```
+
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 
@@ -912,7 +913,7 @@ Use the following code snippet to show toast message for the usage of an expired
 
 Asset Selector allows you to add a tag picker filter. It supports a tag group which combines all the relevant tags to a particular tagging group. Additionally, it allows you to select additional tags corresponding to the asset that you are looking for. Moreover, you can also set the default tag groups under the contextual invocation filter that are mostly used by you so that they are accessible to you on the go.
 
->![NOTE]
+>[!NOTE]
 >
 > * You need to add contextual invocation code snippet to enable tagging filter in the search.
 > * It is mandatory to use name property corresponding to the tag group type `(property=xcm:keywords.id=)`. 

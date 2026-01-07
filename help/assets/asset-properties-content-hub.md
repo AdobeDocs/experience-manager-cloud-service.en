@@ -50,44 +50,50 @@ Before you use, share, or download an asset, you can view it more closely. The p
       <th><strong>Supported formats</strong></th>
      </tr>
      <tr>
-      <td>Image</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL JPEG]</li> 
-            <li>[!UICONTROL PNG]</li> 
-            <li>[!UICONTROL SVG]</li>
-        </ul>
-      </td>
-     </tr>
-     <tr>
-      <td>Video</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL Quicktime]</li>  
-            <li>[!UICONTROL MP4]</li> 
-        </ul>
-      </td>
-     </tr>
-      <tr>
-      <td>Document</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL txt] (Plain)</li>  
-            <li>[!UICONTROL Doc/Docx]</li> 
-            <li>[!UICONTROL XML]</li>
-        </ul>
-      </td>
-     </tr>
-     <tr>
-      <td>Print media</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL PDF]</li>  
-        </ul>
-      </td>
-     </tr>  
+        <td rowspan="3"> Image </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL JPEG]</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PNG]</td>
+    </tr>
+    <tr>
+        <td rowspan="4"> Video </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Quicktime]</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MP4]</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MPEG]</td>
+    </tr>
+    <tr>
+        <td rowspan="4"> Document </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL txt] (Plain)</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Doc/Docx]</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL XML]</td>
+    </tr>
+    <tr>
+        <td rowspan="2"> Print media </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PDF]</td>
+    </tr>
     </tbody>
-   </table>
+</table>
 
 ### Derived properties {#derived-properties}
 

@@ -34,7 +34,11 @@ In AEM Cloud service, operations that traditionally have blocked the UI have bee
 * Move pages
 * Roll-out pages
 
+<!--
 The initiator of such actions can check their status in a new UI at `/mnt/overlay/dam/gui/content/asyncjobs.html`.
+-->
+
+You can view the status of asynchronous jobs from the [Background Operations dashboard](/help/operations/asynchronous-jobs.md).
 
 >[!NOTE]
 >

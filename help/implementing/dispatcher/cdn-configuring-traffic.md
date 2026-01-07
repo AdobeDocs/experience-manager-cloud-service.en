@@ -34,11 +34,10 @@ Before you can configure traffic at the CDN you need to do the following:
 1. Create a file named `cdn.yaml` or similar, referencing the various configuration snippets in the sections below.
 
     All snippets have these common properties, which are described under [Config Pipeline](/help/operations/config-pipeline.md#common-syntax). The `kind` property value should be *CDN* and the `version` property should be set to *1*.
+
     ```
     kind: "CDN"
     version: "1"
-    metadata:
-      envTypes: ["dev"]
     ```
 
 1. Place the file somewhere under a top level folder named *config* or similar, as described under [Config Pipeline](/help/operations/config-pipeline.md#folder-structure).
@@ -73,8 +72,6 @@ Configuration example:
 
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev", "stage", "prod"]
 data:
   requestTransformations:
     removeMarketingParams: true
@@ -221,8 +218,6 @@ Configuration example:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["prod", "dev"]
 data:
   requestTransformations:
     rules:
@@ -275,6 +270,7 @@ responseTransformations:
 ```
 
 Log example:
+
 ```
 {
 "timestamp": "2025-03-26T09:20:01+0000",
@@ -306,8 +302,6 @@ Configuration example:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["prod", "dev"]
 data:
   responseTransformations:
     rules:
@@ -390,8 +384,6 @@ Configuration example:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
@@ -401,6 +393,8 @@ data:
           type: selectOrigin
           originName: example-com
           # skipCache: true
+          # headers:
+          #   Authorization: ${{AUTH_TOKEN}}
     origins:
       - name: example-com
         domain: www.example.com
@@ -415,10 +409,14 @@ data:
 
 Explained in the table below is the available action.
 
-| Name      | Properties               | Meaning     |
-|-----------|--------------------------|-------------|
-|**selectOrigin** |originName|Name of one of the defined origins.|
-|     |skipCache (optional, default is false)| Flag whether to use caching for requests matching this rule. By default, responses will be cached according to the response caching header (e.g., Cache-Control or Expires) |
+| Name                | Properties                                 | Meaning                                                                                                                                                                                             |
+|---------------------|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **selectOrigin**    | originName                             | Name of one of the defined origins.                                                                                                                                                                 |
+|                     | skipCache (optional, default is false) | Flag whether to use caching for requests matching this rule. By default, responses will be cached according to the response caching header (e.g., Cache-Control or Expires)                         |
+|                     | headers (optional, default is `{}`)    | Key-value pairs containing additional HTTP headers to be sent to the selected backend when the rule is triggered. With keys corresponding to header names and values corresponding to header values |
+| **selectAemOrigin** | originName                             | Name of one of the predefined AEM origins (supported value: `static`).                                                                                                                              |
+|                     | skipCache (optional, default is false) | Flag whether to use caching for requests matching this rule. By default, responses will be cached according to the response caching header (e.g., Cache-Control or Expires)                         |
+|                     | headers (optional, default is `{}`)    | Key-value pairs containing additional HTTP headers to be sent to the selected backend when the rule is triggered. With keys corresponding to header names and values corresponding to header values |
 
 **Origins**
 
@@ -434,12 +432,34 @@ Connections to origins are SSL only and use port 443.
 | **forwardAuthorization** (optional, default is false) |If set to true then the "Authorization" header from the client request will be passed to the backend, otherwise the Authorization header is removed.|
 | **timeout** (optional, in seconds, default is 60) |Number of seconds the CDN should wait for a backend server to deliver the first byte of an HTTP response body. This value is also used as a between bytes timeout to the backend server.|
 
+### Proxying custom domain to AEM static tier {#proxy-custom-domain-static}
+
+Origin selectors can be used to route AEM publish traffic to AEM static content deployed using the [front end pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Use cases include serving static resources on the same domain as the page (e.g., example.com/static) or on an explicitly different domain (e.g., static.example.com).
+
+Here is an example of an origin selector rule that can accomplish this:
+
+```
+kind: CDN
+version: '1'
+data:
+  originSelectors:
+    rules:
+      - name: select-aem-static-origin
+        when:
+          reqProperty: domain
+          equals: static.example.com
+        action:
+          type: selectAemOrigin
+          originName: static
+```
+
 ### Proxying to Edge Delivery Services {#proxying-to-edge-delivery}
 
 There are scenarios where origin selectors should be used to route traffic through AEM Publish to AEM Edge Delivery Services:
 
-* Some content is delivered by a domain managed by AEM Publish, while other content from the same domain is delivered by Edge Delivery Services
-* Content delivered by Edge Delivery Services would benefit from rules deployed via config pipeline, including traffic filter rules or request/response transformations
+* Some content is delivered by a domain managed by AEM Publish, while other content from the same domain is delivered by Edge Delivery Services.
+* Content delivered by Edge Delivery Services would benefit from rules deployed via config pipeline, including traffic filter rules or request/response transformations.
+* The Edge Delivery configuration pipeline lets you configure Adobe-managed CDN settings by defining rules such as `trafficFilters`, `originSelectors`, and `redirects`. <!-- https://wiki.corp.adobe.com/pages/editpage.action?pageId=3610084282 -->
 
 Here is an example of an origin selector rule that can accomplish this:
 
@@ -467,7 +487,8 @@ data:
 ```
 
 >[!NOTE]
-> Since the Adobe Managed CDN is used, make sure to configure push invalidation in **managed** mode, by following the Edge Delivery Services [Setup push invalidation documentation](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+>
+>Because the Adobe Managed CDN is used, make sure to configure push invalidation in **managed** mode, by following the Edge Delivery Services [Setup push invalidation documentation](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
 
 
 ## Server-side Redirects {#server-side-redirectors}
@@ -484,8 +505,6 @@ Configuration example:
 
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   redirects:
     rules:

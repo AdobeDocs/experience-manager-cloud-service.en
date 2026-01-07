@@ -16,13 +16,38 @@ The Adobe-provided CDN has several features and services, some of which rely on 
 
 Each of these, including the configuration syntax, is described in its own section below. 
 
-There is a section on how to [rotate keys](#rotating-secrets), which is a good security practice.
+Environment or Pipeline (deploy step) secrets can be referenced with `${{..}}` syntax and can be used wherever a literal value can be used, in conditions or setters. 
 
->[!NOTE]
-> Secrets defined as environment variables should be considered immutable. Instead of changing their value, you should create a new secret with a new name and reference that secret in the configuration. Failing to do so will result in the unreliable update of secrets.
+```
+kind: "CDN"
+version: "1"
+data:
+  originSelectors:
+    rules:
+      - name: select-origin-example
+        when: { reqHeader: "x-auth-header", equals: "${{AUTH_HEADER}}" }
+        action:
+          type: selectOrigin
+          originName: origin-name
+          headers:
+            Authorization: "${{AUTH_HEADER}}"
+    ...
+```
 
->[!WARNING]
->Do not remove the environment variables that are referenced in your CDN configuration. Doing that might cause failures in updating your CDN configuration (for example, updating rules or custom domains and certificates).
+Here are some guidelines to keep in mind when working with secrets:
+
+* Environment secrets must de deployed as a [Cloud Manager secret-type environment variable](/help/operations/config-pipeline.md#secret-env-vars). For the Service Applied field, select All.
+* Secret references are not interpolated inside strings (eg. `"Token ${{AUTH_TOKEN}}"` will not work)
+* A referenced environment secret should not be removed if it is still referenced in the configuration. 
+
+  >[!WARNING]
+  >Do not remove the environment variables that are referenced in your CDN configuration. Doing that might cause failures in updating your CDN configuration (for example, updating rules or custom domains and certificates).
+
+* Secrets should be rotated periodically. There is a section on how to [rotate keys](#rotating-secrets), which is a good security practice.
+
+  >[!NOTE]
+  > Secrets defined as environment variables should be considered immutable. Instead of changing their value, you should create a new secret with a new name and reference that secret in the configuration. Failing to do so will result in the unreliable update of secrets.
+
 
 ## Customer-managed CDN HTTP header value {#CDN-HTTP-value}
 
@@ -40,8 +65,6 @@ For further debugging information and common errors, please check [Common Errors
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   authentication:
     authenticators:
@@ -146,8 +169,6 @@ The syntax is described below:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   authentication:
     authenticators:
@@ -200,8 +221,6 @@ The syntax is as follows:
 
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   authentication:
     authenticators:
@@ -239,6 +258,7 @@ In addition, the syntax includes:
   * action - must specify "authenticate", with the intended authenticator referenced, which is basic-auth for this scenario
 
 >[!NOTE]
+>
 >The passwords must be configured as [secret type Cloud Manager environment variables](/help/operations/config-pipeline.md#secret-env-vars), before the configuration referencing it is deployed.
 
 ## Rotating secrets {#rotating-secrets}
@@ -256,8 +276,10 @@ This use case is exemplified below, by using the example of an edge key, althoug
           type: edge
           edgeKey1: ${{CDN_EDGEKEY_052824}}
     ```
+
 1. When it's time to rotate the key, create a new Cloud Manager secret, for example `${{CDN_EDGEKEY_041425}}`.
 1. In the configuration, reference it from `edgeKey2` and deploy.
+
     ```
     authentication:
       authenticators:
@@ -268,6 +290,7 @@ This use case is exemplified below, by using the example of an edge key, althoug
     ```
 
 1. Once you are sure the old edge key is not used anymore, remove it by removing `edgeKey1` from the configuration.
+
     ```
     authentication:
       authenticators:
@@ -275,6 +298,7 @@ This use case is exemplified below, by using the example of an edge key, althoug
           type: edge
           edgeKey2: ${{CDN_EDGEKEY_041425}}
     ```       
+
 1. Delete the old secret reference (`${{CDN_EDGEKEY_052824}}`) from Cloud Manager and deploy.
 
 1. When ready for the next rotation, follow the same procedure, however this time you will add `edgeKey1` to the configuration, referencing a new Cloud Manager environment secret named, for example, `${{CDN_EDGEKEY_031426}}`.

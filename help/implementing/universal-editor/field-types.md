@@ -3,7 +3,7 @@ title: Model Definitions, Fields, and Component Types
 description: Learn about fields and the component types that the Universal Editor can edit in the properties panel with examples. Understand how you can instrument your own app by creating a model definition and linking to the component.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Model Definitions, Fields, and Component Types {#field-types}
@@ -88,8 +88,7 @@ A field object has the following type definition.
 |`name`|`string`|Property [or path](#nesting) where the data shall be persisted|Yes|
 |`label`|`FieldLabel`|Label of the field|Yes|
 |`description`|`FieldDescription`|Description of the field|No|
-|`placeholder`|`string`|Placeholder for the field|No|
-|`value`|`FieldValue`|Default value|No|
+|`value`|`FieldValue`|This is a default value, which serves as a placeholder. No content updates are driven by this value. It is just a representation in the UI.|No|
 |`valueType`|`ValueType`|Standard validation, can be `string`, `string[]`, `number`, `date`, `boolean`|No|
 |`required`|`boolean`|Is the field required|No|
 |`readOnly`|`boolean`|Is the field read only|No|
@@ -160,7 +159,7 @@ An AEM tag component type enables an AEM tag picker, which can be used to attach
 
 >[!TIP]
 >
->Please see the document [Managing Taxonomy Data](/help/edge/wysiwyg-authoring/taxonomy.md) for more information about how you can use spreadsheets to manage your taxonomy data for your Edge Delivery Services project.
+>Please see the document [Managing Taxonomy Data](https://www.aem.live/docs/authoring-taxonomy) for more information about how you can use spreadsheets to manage your taxonomy data for your Edge Delivery Services project.
 
 #### AEM Content {#aem-content}
 

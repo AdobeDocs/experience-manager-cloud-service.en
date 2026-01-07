@@ -22,7 +22,7 @@ Using the GraphQL API in AEM enables the efficient delivery of Content Fragments
 >
 >GraphQL is currently used in two (separate) scenarios in Adobe Experience Manager (AEM) as a Cloud Service:
 >
->* [AEM Commerce consumes data from a Commerce platform via GraphQL](/help/commerce-cloud/integrating/magento.md).
+>* [AEM Commerce consumes data from a Commerce platform via GraphQL.](/help/commerce-cloud/cif-storefront/integrating/magento.md)
 >* AEM Content Fragments work together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications.
 
 >[!NOTE]
@@ -45,7 +45,7 @@ GraphQL is:
 
   See [Explore GraphQL](https://www.graphql.com).
 
-* *"...a data query language and specification developed internally by Facebook in 2012 before being publicly open sourced in 2015. It provides an alternative to REST-based architectures with the purpose of increasing developer productivity and minimizing amounts of data transferred. GraphQL is used in production by hundreds of organizations of all sizes..."*
+* *"...a data query language and specification developed internally by Facebook in 2012 before being publicly open sourced in 2015. It provides an alternative to REST-based architectures with the purpose of increasing developer productivity and minimizing the amounts of data transferred. GraphQL is used in production by hundreds of organizations of all sizes..."*
   
   See [GraphQL Foundation](https://foundation.graphql.org/).
 
@@ -103,7 +103,7 @@ With GraphQL you can perform queries to return either:
   
 * A **[list of entries](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM provides capabilities to convert queries (both types) to [Persisted Queries, that can be cached](/help/headless/graphql-api/persisted-queries.md) by Dispatcher and the CDN.
+AEM provides capabilities to convert queries (both types) to [Persisted Queries, that can be cached](/help/headless/graphql-api/persisted-queries.md) by the Dispatcher and the CDN.
 
 ### GraphQL Query Best Practices (Dispatcher and CDN) {#graphql-query-best-practices}
 
@@ -163,7 +163,7 @@ Also, the user must have access to a GraphQL endpoint to be able to execute Grap
 
 ## Schema Generation {#schema-generation}
 
-GraphQL is a strongly-typed API, which means that data must be clearly structured and organized by type.
+GraphQL is a strongly typed API, which means that data must be clearly structured and organized by type.
 
 The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating data on a certain instance. To do this, a client must fetch the [Schema](#schema-generation), which contains all the types necessary for a query. 
 
@@ -764,6 +764,7 @@ The solution in GraphQL means you can:
 >[!NOTE]
 >
 >A **Content Reference** can be used for both DAM assets and Dynamic Media assets. Retrieving the appropriate URL uses different parameters:
+>
 >* `_dynamicUrl` : a DAM asset
 >* `_dmS7Url` : a Dynamic Media asset
 > 
@@ -778,13 +779,17 @@ The structure and syntax is:
 * `format`: an enumeration with all supported formats by its extension: GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL or WEBPLY
 * `seoName`: a string that is used as file name instead of the node name
 * `crop`: a frame sub structure, if width or height is omitted then the height or width is used as the same value
+
   * `xOrigin`: the x origin of the frame and is mandatory
   * `yOrigin`: the y origin of the frame and is mandatory
   * `width`: the width of the frame
   * `height`: the height of the frame
+
 * `size`: a dimension sub structure, if width or height is omitted then the height or width is used as the same value
+
   * `width`: the width of the dimension
   * `height`: the height of the dimension
+
 * `rotation`: an enumeration of all supported rotations: R90, R180, R270
 * `flip`: an enumeration of HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
 * `quality`: an integer from 1&ndash;100 notating the percentage of the image quality
@@ -974,6 +979,7 @@ The solution in GraphQL means you can:
 ### Sample query for Dynamic Media asset delivery by URL - Image Reference{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 The following is a sample query:
+
 * for multiple Content Fragments of type `team` and `person`, returning an `ImageRef`
 
 ```graphql
@@ -1001,6 +1007,7 @@ query allTeams {
 ### Sample query for Dynamic Media asset delivery by URL - Multiple References{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
 
 The following is a sample query:
+
 * for multiple Content Fragments of type `team` and `person`, returning an `ImageRef`, `MultimediaRef` and `DocumentRef`:
 
 ```graphql
@@ -1165,7 +1172,7 @@ The current limitations are:
 
   >[!NOTE]
   >
-  >The full URL then needs to be constructed on the client side, based on the [Asset delivery API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat).
+  >The full URL then needs to be constructed on the client side, based on the [Asset delivery API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat).
 
 * Only *Approved* assets will be available for reference from the remote repositories
 * If an asset that is referenced is removed from the remote repository, this will result in a broken Content Fragment Asset reference.
@@ -1203,10 +1210,11 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
   * See [Sample Query for multiple Content Fragments, and their Variations, of a given Model](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
 
   >[!CAUTION]
+  >
   >The filter `includeVariations` and the system-generated field `_variation` cannot be used together in the same query definition.
 
 * If you want to use a logical OR:
-  * use ` _logOp: OR`
+  * use `_logOp: OR`
   * See [Sample Query - All Persons that have a name of "Jobs" or "Smith"](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
 
 * Logical AND also exists, but is (often) implicit

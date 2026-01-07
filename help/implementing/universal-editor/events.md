@@ -3,7 +3,7 @@ title: Universal Editor Events
 description: Learn about the different events that the Universal Editor sends that you can use to react to content or UI changes in your remote app.
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Universal Editor Events {#events}
 
@@ -139,6 +139,7 @@ The payload is the updated value.
 For all the content update events, the requested payload as well as the response payload is passed into the event. E.g., for an update call:
 
 Request Payload:
+
 ```json
 {
   "connections": [
@@ -158,6 +159,7 @@ Request Payload:
 ```
 
 Response Payload
+
 ```json
 {
     "updates": [

@@ -2,7 +2,7 @@
 title: Managing Content Fragments
 description: Learn how to manage your AEM Content Fragments from the console and editor, to create content as the basis of your headless content, or for page authoring.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
 ---
@@ -57,7 +57,9 @@ Here you can see that there are three main areas:
   * Here you can hide, or reveal, the folder tree
   * You can select a specific branch of the tree
   * This can be resized to show nested folders
-  * As well as Content Fragments, you can view [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) or [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md); you can also compress, or expand, links to the panels
+  * As well as Content Fragments, you can:
+    * View [Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) or [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md); you can also compress, or expand, links to the panels
+    * Create, and manage, [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * The main/right panel - from here you can:
   * See the list of all Content Fragments in the selected branch of the tree:
     * Content Fragments from the selected folder, and all child folders will be shown:
@@ -129,6 +131,18 @@ The main/right panel (table view) of the console provides a range of information
 
     ![Content Fragments console - Language dialog](assets/cf-managing-console-languages-dialog.png)
 
+* **Workflows**
+
+  * Information only
+
+  * Select the icon for a specific fragment: 
+
+    ![Content Fragments console - Workflows icon](assets/cf-managing-console-workflows-icon.png)
+
+    To open a dialog with detailed information about workflows (past and current) for the fragment.:
+
+    ![Content Fragments console - Workflows dialog](assets/cf-managing-console-workflows-dialog.png)
+
 ## Actions {#actions}
 
 Within the console there is a range of actions that you can use, either directly, or after selecting a specific fragment:
@@ -162,7 +176,7 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 * **[Open in new Editor](#editing-the-content-of-your-fragment)**
 * **[Publish](#publishing-and-previewing-a-fragment)** (and **[Unpublish](#unpublishing-a-fragment)**)
 * **[Manage Tags](#manage-tags)**
-* **Copy**
+* **[Copy](#copy-a-content-fragment)**
 * **[Replace](#find-and-replace)**
 * **Move**
 * **Rename**
@@ -238,6 +252,105 @@ To open your fragment for editing:
 
    ![Fragment editor](assets/cf-managing-editor.png)
 
+## Copy a Content Fragment {#copy-a-content-fragment}
+
+**Copy** creates a copy of the selected fragment at its location.
+
+* In the **Copy** action you can select whether to **Copy also referenced content fragments**. This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
+
+  * Creates a copy of the selected Content Fragment at its location.
+  * Creates copies of all fragments that are referenced by the selected fragment.
+
+    The [locations that the referenced fragments are copied to](#locations-that-the-referenced-fragments-are-copied-to) depends on the option you select:
+
+    * **Copy to the selected folder**
+      When selected, the referenced fragments are copied to the same location as the original selected fragment. 
+
+    * **Copy to their original locations**
+      The referenced fragments are copied to the same location as the original referenced fragment. This is the default, and will be used when no option is selected.
+
+* The copy of the selected fragment will reference the copies of the referenced fragments.
+
+* A deep copy is made; so if a referenced Content Fragment also references fragments, these are copied as well.
+
+* The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset/image content itself.
+
+### Locations that the referenced fragments are copied to {#locations-that-the-referenced-fragments-are-copied-to}
+
+When copying Content Fragments you can specify where referenced fragments should be copied to with **Copy also referenced content fragments** and the related options:
+
+![Copy fragments](/help/sites-cloud/administering/content-fragments/assets/cf-managing-copy.png)
+
+#### Copy to their original locations {#copy-to-their-original-locations}
+
+When you select **Copy to their original locations**, the referenced fragments are copied to the same location as the original referenced fragment. This is also the default action when no selection is made.
+
+So, if we start with:
+
+```xml
+FolderA 
+    FragmentA (inside FolderA)
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA)
+
+FolderB
+   FragmentB
+```
+
+Copying FragmentA to FolderC, would result in:
+
+```xml
+FolderA 
+    FragmentA (inside FolderA)
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA)
+
+FolderB
+    FragmentB
+    Copy_of_FragmentB
+
+FolderC
+    Copy_of_FragmentA
+    | 
+    |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
+```
+
+#### Copy to the selected folder {#copy-to-the-selected-folder}
+
+When selected, the referenced fragments are copied to the same location as the original selected fragment.
+
+So, if we start with:
+
+```xml
+FolderA 
+    FragmentA (inside FolderA)
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA)
+
+
+FolderB
+   FragmentB
+```
+
+Copying FragmentA to FolderC, would result in:
+
+```xml
+FolderA 
+    FragmentA (inside FolderA) 
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA) 
+
+FolderB 
+    FragmentB
+
+
+FolderC
+   Copy_of_FragmentA
+   | 
+   |___./Copy_of_FragmentB (referenced by FragmentA)
+   Copy_of_FragmentB
+```
+
 ## View and Manage Tags {#manage-tags}
 
 From the Content Fragments console you can view any applied tags in the **Tags** column; after ensuring that [the column is showing](#select-columns-console). 
@@ -269,7 +382,7 @@ You can publish your Content Fragments to:
 
 * the **[Publish Service](/help/headless/deployment/architecture.md)** - for full, public access
 
-* the **[Preview Service](/help/headless/deployment/architecture.md)** - to preview the content prior to full availability
+* the **[Preview Service](/help/headless/deployment/architecture.md)** - to [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) the content prior to full availability
 
   >[!CAUTION]
   >

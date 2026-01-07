@@ -6,10 +6,7 @@ description: Frequently Asked Questions (FAQ) about layout, scripting support, a
 
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: hTML5_forms
-
-docset: aem65
+topic-tags: hTML5_formss
 feature: HTML5 Forms,Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms
@@ -144,7 +141,7 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
    Answer: 
    * When both caption and tool tip are present, the only caption is read. If the caption is not available, then the tool tip is read. You can also specify the precedence for reading in an XDP using form designer
-    * When you hover an element, then tool tip is displayed. If tool-tip is not available speech text is displayed. If speech text is not available, then field name is displayed.
+   * When you hover an element, then tool tip is displayed. If tool-tip is not available speech text is displayed. If speech text is not available, then field name is displayed.
 
 1. When you hover a field, a tool tip is displayed. How to disable it?
 

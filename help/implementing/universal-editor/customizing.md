@@ -3,7 +3,7 @@ title: Customizing the Universal Editor
 description: Learn about the different options to customize the Universal Editor to support the needs of your content authors.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Customizing the Universal Editor {#customizing}
@@ -14,41 +14,30 @@ Learn about the different options to customize the Universal Editor to support t
 >
 >The Universal Editor also offers many [extension points,](/help/implementing/universal-editor/extending.md) allowing you to expand its functionality to meet your project needs.
 
-## Disabling Publishing {#disable-publish}
+## Using Meta Config Tags {#meta-tags}
 
-Certain authoring workflows require content to be reviewed before it is published. In such situations, the option to publish should not be available to any authors.
+Certain authoring workflows might require the use of some features of the Universal Editor and not others. To support such diverse cases, meta tags are available to configure or disable certain features or buttons of the editor.
 
-The **Publish** button can therefore be suppressed entirely in an app by adding the following metadata.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish"/>
-```
-
-## Disabling Publishing to Preview {#publish-preview}
-
-Certain authoring workflows might preclude the publication to the [preview service](/help/sites-cloud/authoring/sites-console/previewing-content.md) (if available).
-
-The **Preview** option in the publish window can therefore be suppressed entirely in an app by adding the following metadata.
+Use this tag in the `<head>` section of the page to disable one or more features:
 
 ```html
-<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+<meta name="urn:adobe:aue:config:disable" content="..." />
 ```
 
-## Disabling Open Page {#open-page}
+If you want to disable multiple features, provide a comma-separated list of values.
 
-The **Open Page** button can be suppressed entirely in an app by adding the following metadata.
+The following are the supported values for `content`, i.e. the features that can be disabled with meta tags.
 
-```html
-<meta name="urn:adobe:aue:config:disable" content="header-open-page" />
-```
-
-## Disabling Duplicate Button {#duplicate-button}
-
-Certain authoring workflow might need to limit the ability of the content author to duplicate components. You can disable the [duplicate icon](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) by adding the following metadata.
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
-```
+|Content Value|Description|
+|---|---|
+|`publish`|Disable all [publishing](/help/sites-cloud/authoring/universal-editor/publishing.md) functionality, i.e. the [publish button](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) and [unpublish button](/help/sites-cloud/authoring/universal-editor/navigation.md#ellipsis)|
+|`publish-live`|Disable live [publishing](/help/sites-cloud/authoring/universal-editor/publishing.md)|
+|`publish-preview`|Disable preview publishing (if the [preview service](/help/sites-cloud/authoring/sites-console/previewing-content.md) is available)|
+|`unpublish`|Disable the [unpublish button](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content)|
+|`copy`|Disables the [copy and paste buttons](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)|
+|`duplicate`|Disables the [duplicate button](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)|
+|`header-open-page`|Disables the [open page button](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page)|
+|`aem-dev-login`|Disables the [developer login button](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)|
 
 ## Changing Your Endpoint {#custom-endpoint}
 

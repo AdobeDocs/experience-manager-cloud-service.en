@@ -13,7 +13,9 @@ Congratulations on choosing AEM as a Cloud Service! This document is your starti
 
 ## Introduction {#introduction}
 
-Adobe Experience Manager is a powerful suite of composable content services that rapidly deliver highly impactful, personalized experiences across any channel, unlocking content from all for all. **Edge Delivery Services** is the latest innovation in Adobe Experience Manager that enables extreme content velocity and delivers exceptional experiences. Learn how to get started with Edge Delivery Services, by consulting [Edge Delivery Services Overview](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview). To understand how to use Edge Delivery Services, see the [Developer Tutorial](https://www.aem.live/developer/tutorial) page.
+Adobe Experience Manager (AEM) provides flexibility across both content delivery and authoring approaches, empowering teams to choose the best model for their needs.
+
+Use [Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) for rapid, iterative authoring and high content velocity, or use the traditional Publish delivery service for a robust enterprise publishing model. Either approach lets organizations deliver exceptional digital experiences in the way that fits them best. To get started with Edge Delivery Services, explore the [Edge Delivery Services Overview](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview), and to learn more about modern authoring options, see the [Authoring Guide](https://www.aem.live/docs/authoring-guide).
 
 Onboarding is the process during which a designated system administrator sets up AEM as a Cloud Service for your organization. This process includes the initial provisioning of cloud resources and assigning users to roles based on their job responsibilities. As a result, each member is able to log on and access their resource on AEM as a Cloud Service.
 
@@ -32,11 +34,17 @@ As a result:
 
 ## Concepts and Goal {#concepts}
 
-Although there may appear to be a lot to learn when getting started with AEM as a Cloud Service, conceptually there are only a few, logical pieces.
+<!-- Although there may appear to be a lot to learn when getting started with AEM as a Cloud Service, conceptually there are only a few, logical pieces.-->
 
-* **The Contract** - You must be familiar with your Adobe contract since it defines aspects of the onboarding process.
-* **Admin Console** - Where users are managed and roles are assigned.
-* **Cloud Manager** - The tool to set up resources such as programs and environments. It is also where you access Git and create pipelines to manage and deploy your custom code.
+The onboarding journey for AEM as a Cloud Service centers on the following core elements:
+
+* **Contract** - Review your Adobe contract to understand the key details of the onboarding process.
+* **Experience Hub** - Use [experience.adobe.com](https://experience.adobe.com/) as your central entry point for AEM capabilities. The Experience Hub adapts to your persona and entitlements so you can work efficiently. From here, navigate to:
+    * **Admin Console** - Manage users and assign roles.
+    * **Cloud Manager** - Set up programs and environments, access Git, and create pipelines to manage and deploy custom code.
+    * **Sites** - Create, manage, and deliver digital experiences. (License-based entitlement)
+    * **Assets** - Organize, store, and distribute your digital assets. (License-based entitlement)
+    * **Forms** - Create and manage adaptive and responsive forms. (License-based entitlement)
 
 These concepts are laid out in detail in this onboarding journey. The goal is that at the end of the journey, you can do the following:
 
@@ -52,12 +60,12 @@ The onboarding journey is written specifically for the **system administrator** 
 
 The system administrator manages all aspects of their organization's AEMaaCS users, from access to permissions. However, the system administrator must interact with other personas along the way.
 
-|Persona|Description|Role in Journey|
-|---|---|---|
-|System administrator|The target of this journey provides initial provisioning of cloud resources and assignment of users to appropriate roles based on their job responsibilities|Manages all aspects of users from access to permissions|
-|Content author|Creates and reviews the content in AEM|Once granted permissions by the system administrator, authors can start their own journey in creating content|
-|Developer|Develops AEM applications that consume content from different sources|Once granted permissions by the system administrator, developers can start their own journey in developing solutions|
-|Deployment manager|Adds or updates an environment, runs pipelines, and deploys code to AEM environment or code-quality.|Once granted permissions by the system administrator, deployment managers can start their own journey managing deployments|
+| Persona | Description | Role in Journey |
+| --- | --- | --- |
+| System administrator | The target of this journey provides initial provisioning of cloud resources and assignment of users to appropriate roles based on their job responsibilities. | The role helps you manage all aspects of users from access to permissions. |
+| Content author | Creates and reviews the content in AEM. | Once granted permissions by the system administrator, authors can start their own journey in creating content. |
+| Developer | Develops AEM applications that consume content from different sources. | Once granted permissions by the system administrator, developers can start their own journey in developing solutions. |
+| Deployment manager | Adds or updates an environment, runs pipelines, and deploys code to AEM environment or code-quality. | Once granted permissions by the system administrator, deployment managers can start their own journey managing deployments. |
 
 This onboarding guide illustrates the complete process of onboarding as a system administrator. The roles of AEM users, developers, and deployment managers are explored briefly as additional, optional parts of the journey.
 
@@ -69,19 +77,20 @@ This onboarding guide illustrates the complete process of onboarding as a system
 
 The following articles describe in details the core onboarding concepts and give you foundational knowledge of AEM as a Cloud Service. Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore, if you are new to onboarding, Adobe recommends that you start at the beginning and progress sequentially.
 
-| |Article|Description|Audience|
-|---|---|---|---|
-|0|Onboarding Journey|This document|System Administrator|
-|1|[Onboarding Preparation](preparation.md)|Before the onboarding process begins, there are a number or preparatory steps that the system administrator must understand before logging into the system.|System Administrator|
-|2|[AEM as a Cloud Service Terminology](terminology.md)|Before you sign into AEMaaCS for the first time, it is helpful to understand some of the terminology of the system and its basic structure.|System Administrator|
-|3|[The Admin Console](admin-console.md)|Learn what the Admin Console is, how to log in, and how to verify your profile as a system administrator.|System Administrator|
-|4|[Assigning Cloud Manager Product Profiles](assign-profiles-cloud-manager.md)|Review Cloud Manager Product Profiles and learn how to assign team members to Cloud Manager Product profiles.|System Administrator|
-|5|[Access Cloud Manager](cloud-manager.md)|Lean how to access Cloud Manager so that you can set up your project resources.|System Administrator|
-|6|[Create a Program](create-program.md)|Learn how to create a program using Cloud Manager.|System Administrator|
-|7|[Create Environments](create-environments.md)|Learn how to create an environment using Cloud Manager.|System Administrator|
-|8|[Assigning AEM Product Profiles](assign-profiles-aem.md)|Learn how System Administrator assigns your team members to product profiles in AEM as a Cloud Service.|System Administrator|
-|9|[Developer and Deployment Manager Tasks](developers.md)|Optional - As a Developer, learn how you can access and manage Cloud Manager Git and how as a Deployment Manager you can set up pipelines and deploy code in Cloud Manager.|Developers and Deployment Managers|
-|10|[AEM User Tasks](aem-users.md)|Optional - As an AEM author, learn how you can access AEM as a Cloud Service instance and get familiar with authoring content for AEM as a Cloud Service.|AEM Users|
+| | Article | Description | Audience |
+| --- | --- | --- | --- |
+| 0 | Onboarding Journey | This document | System Administrator |
+| 1 | [Onboarding Preparation](preparation.md) | Before the onboarding process begins, there are a number or preparatory steps that the system administrator must understand before logging into the system. | System Administrator |
+| 2 | [AEM as a Cloud Service Terminology](terminology.md) | Before you sign into AEMaaCS for the first time, it is helpful to understand some of the terminology of the system and its basic structure. | System Administrator |
+| 3 | [The Admin Console](admin-console.md) | Learn what the Admin Console is, how to log in, and how to verify your profile as a system administrator. | System Administrator |
+| 4 | [Assigning Cloud Manager Product Profiles](assign-profiles-cloud-manager.md) | Review Cloud Manager product profiles and learn how to assign team members to Cloud Manager product profiles. | System Administrator |
+| 5 | [Access Experience Hub](/help/experience-hub.md) | Use Experience Hub which serves as a unified, personalized entry point to the AEM ecosystem. | AEM Users |
+| 6 | [Access Cloud Manager](cloud-manager.md) | Learn how to access Cloud Manager so that you can set up your project resources. | System Administrator |
+| 7 | [Create a Program](create-program.md) | Learn how to create a program using Cloud Manager. | System Administrator |
+| 8 | [Create Environments](create-environments.md) | Learn how to create an environment using Cloud Manager. | System Administrator |
+| 9 | [Assigning AEM Product Profiles](assign-profiles-aem.md) | Learn how the system administrator assigns your team members to product profiles in AEM as a Cloud Service. | System Administrator |
+| 10 | [Developer and Deployment Manager Tasks](developers.md) | Optional - As a Developer, learn how to access and manage Cloud Manager Git. As a Deployment Manager, learn how to set up pipelines and deploy code in Cloud Manager. | Developers and Deployment Managers |
+| 11 | [AEM User Tasks](aem-users.md) | Optional - As an AEM author, learn how you can access AEM as a Cloud Service instance and get familiar with authoring content for AEM as a Cloud Service. | AEM Users |
 
 ## What's next {#what-is-next}
 

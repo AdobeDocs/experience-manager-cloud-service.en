@@ -249,6 +249,7 @@ expiryOptions:{
     allowSelectionAndDrop: false;
 }
 ```
+
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 
@@ -350,7 +351,7 @@ Use the following code snippet to show toast message for the usage of an expired
 
 Asset Selector allows you to add a tag picker filter. It supports a tag group which combines all the relevant tags to a particular tagging group. Additionally, it allows you to select additional tags corresponding to the asset that you are looking for. Moreover, you can also set the default tag groups under the contextual invocation filter that are mostly used by you so that they are accessible to you on the go.
 
->![NOTE]
+>[!NOTE]
 >
 > * You need to add contextual invocation code snippet to enable tagging filter in the search.
 > * It is mandatory to use name property corresponding to the tag group type `(property=xcm:keywords.id=)`. 
