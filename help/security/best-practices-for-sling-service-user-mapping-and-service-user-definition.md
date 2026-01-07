@@ -71,7 +71,7 @@ The sequence for obtaining a service `Session/ResourceResolver` works as follows
 
 1. Get principal names from `ServiceUserMapper` => pre-auth repository login as described below
 1. Retrieve user id from `ServiceUserMapper`
-1. Check for deprecated 1ServiceUserConfiguration` for the current user id
+1. Check for deprecated `1ServiceUserConfiguration` for the current user id
 1. Default Sling service login with the user id (for example, a sequence of `createAdministrativeSession` and impersonate for service user id)
 
 The new mapping with principal names results in the following simplified repository login:

@@ -4,12 +4,13 @@ description: Learn how the Cloud Manager UI is organized and how to navigate to 
 exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Navigate the Cloud Manager UI {#navigation}
 
 Learn how the Cloud Manager UI is organized and how to navigate to manage your programs and environments.
+
 
 The Cloud manage UI is primarily composed of two graphical interfaces:
 
@@ -19,6 +20,12 @@ The Cloud manage UI is primarily composed of two graphical interfaces:
 >[!TIP]
 >
 >Also check out the [onboarding documentation journey](/help/journey-onboarding/overview.md) for a complete overview of how to get up-and-running with AEM as a Cloud Service using Cloud Manager.
+
+
+## AI Assistant in AEM
+
+For customers who have [completed pre-requisite criteria](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access), AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md).
+
 
 ## My Programs Console {#my-programs-console}
 
@@ -45,20 +52,16 @@ The My Programs console provides an overview of all programs to which you have a
 
 There are two toolbars on top of each other. 
 
-#### Cloud Manager header {#cloud-manager-header}
+#### Experience Platform top navigation bar {#cloud-manager-header}
 
-The first is the Cloud Manager header, which is persistent as you navigate Cloud Manager. It is an anchor that gives you access to settings and information that apply across Cloud Manager programs.
+The first is the Experience Platform top navigation bar, which is persistent as you navigate Cloud Manager. It is an anchor that gives you access to settings and information that apply across Cloud Manager programs.
 
-![The Experience Cloud header](assets/experience-cloud-header.png)
+![Experience Platform top navigation bar](assets/experience-cloud-header.png)
 
-1. Click ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (show or hide side menu) to give you access to a variety of tabs that can take you to specific parts of an individual program. Or, you can switch between the [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md) and the **[My Programs](#my-programs-console)** console depending on the context.
-1. Click the Adobe Cloud Manager button takes you back to the My Programs console of Cloud Manager no matter where you are in Cloud Manager.
-1. Click **Feedback** to provide feedback to Adobe about Cloud Manager.
-1. Click the organization selector displays the organization that you are currently signed into (in this example, Foundation Internal). Click to switch to another organization if your Adobe ID is associated with multiple.
-1. Click ![Apps icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) (Solutions switcher) to jump quickly to other Experience Cloud solutions.
-1. Click ![Help icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Help_18_N.svg) to give you quick access to learning and support resources.
-1. Click ![Bell icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([Notifications](/help/implementing/cloud-manager/notifications.md)) to see notifications and announcements, among other things.
-1. Click the icon representing user access to your user settings. If you do not have a user picture configured, an icon is randomly assigned.
+* The ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) (show or hide side menu) gives you access to a variety of tabs that can take you to specific parts of an individual program. Or, you can switch between the [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md) and the **[My Programs](#my-programs-console)** console depending on the context.
+* The ![Bell icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) ([Notifications](/help/implementing/cloud-manager/notifications.md)) gives you access to notifications and announcements, among other things.
+
+For more details on the Experience Platform top navigation bar, see the [Adobe Experience Platform UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar).
 
 #### Program toolbar {#program-toolbar}
 
@@ -201,7 +204,7 @@ Each program has numerous options and data associated with it. These options and
 * ![Bell icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) [Activity](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) - The history of pipeline runs of the program
 * ![Workflow icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) [Pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) - All pipelines configured for the program
 * ![Folder icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) [Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - All repositories configured for the program
-* ![Graph pie icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [Reports](/help/implementing/cloud-manager/sla-reporting.md) - Metrics such as SLA data
+* ![Graph pie icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [Reports](/help/implementing/cloud-manager/reports/report-sla.md) - Metrics such as SLA data
 
 **Services**
 
@@ -210,7 +213,7 @@ Each program has numerous options and data associated with it. These options and
 * ![Settings icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [Domain Settings](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Manage custom domain names for the program
 * ![Lock closed icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [SSL Certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) - Manage SSL certificates for the program
 * ![Social network icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [Domain Mappings](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Manage Domain Mappings 
-* ![Task list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [IP Allow Lists](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Define allow lists for certain IP addresses
+* ![Task list icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [`IP Allow Lists`](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Define allow lists for certain IP addresses
 * ![Box icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [Content Sets](/help/implementing/developing/tools/content-copy.md) - Sets of content created for copy purposes
 * ![History icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [Copy Content Activity](/help/implementing/developing/tools/content-copy.md) - Content copy activities
 * ![Channel icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Channel_18_N.svg) [Network Infrastructures](/help/security/configuring-advanced-networking.md) - Manage advanced networking options for the program

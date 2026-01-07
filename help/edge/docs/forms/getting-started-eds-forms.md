@@ -3,12 +3,14 @@ title: Getting Started with Forms on AEM Edge Delivery Services
 description: Learn how to create and deliver high-performing forms on Adobe Experience Manager Edge Delivery Services, with an emphasis on the Universal Editor authoring approach.
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Getting Started with Forms on AEM Edge Delivery Services
 
+<!--
 <span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
+-->
 
 Adobe Experience Manager (AEM) Edge Delivery Services (EDS) lets you serve blazing-fast, highly scalable web experiences from the edge. This guide explains **how to build and publish forms for those experiences**—with a clear recommendation hierarchy:
 
@@ -31,15 +33,15 @@ By the end you will be able to pick the right authoring method, understand submi
 
 ## Authoring Methods in Detail
 
-###  Universal Editor 
+### Universal Editor 
 
 Universal Editor is a visual, drag-and-drop authoring tool for marketers and designers that combines speed with enterprise-grade power:
 
-* Real-time WYSIWYG editing and device previews.
-* Advanced rules and validation UI—no code required.
-* Direct integration with AEM assets, workflows, and Form Data Model (FDM).
-* Seamless hand-off to developers for custom components in vanilla JS/CSS.
-* Flexible submission targets: start simple with the **Forms Submission Service (FSS)** or switch to **AEM Publish submit actions** as your needs grow.
+- Real-time WYSIWYG editing and device previews.
+- Advanced rules and validation UI—no code required.
+- Direct integration with AEM assets, workflows, and Form Data Model (FDM).
+- Seamless hand-off to developers for custom components in vanilla JS/CSS.
+- Flexible submission targets: start simple with the **Forms Submission Service (FSS)** or switch to **AEM Publish submit actions** as your needs grow.
 
 > **Recommendation**: Start every new form project with Universal Editor unless your team is 100 % document-centric and the form is very basic.
 
@@ -48,10 +50,10 @@ Universal Editor is a visual, drag-and-drop authoring tool for marketers and des
 
 Document-Based Authoring is best suited for creating simple, low-complexity forms using familiar tools such as Microsoft Word, Google Docs, or Google Sheets. This method is ideal for content teams who require a fast and straightforward way to build forms.
 
-* Define form fields within a table (Docs) or as rows (Sheets).
-* Supports basic field validation and Google reCAPTCHA for spam protection.
-* Form submissions are handled exclusively through the Forms Submission Service.
-* Instant publishing—any changes made in the source document are immediately reflected on the site without requiring a deployment pipeline.
+- Define form fields within a table (Docs) or as rows (Sheets).
+- Supports basic field validation and Google reCAPTCHA for spam protection.
+- Form submissions are handled exclusively through the Forms Submission Service.
+- Instant publishing—any changes made in the source document are immediately reflected on the site without requiring a deployment pipeline.
 
 
 ### Embedding Forms in Document Authoring (DA)

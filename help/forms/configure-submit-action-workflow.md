@@ -1,10 +1,9 @@
 ---
-Title: How to integrate AEM workflow with an Adaptive Form?
-Description: Explore the process of automated workflow initiation with AEM Forms Submit Action.
+title: How to integrate AEM workflow with an Adaptive Form?
+description: Explore the process of automated workflow initiation with AEM Forms Submit Action.
 keywords: AEM Workflow, Integrate Adaptive Form with AEM workflow, Invoke AEM workflow Submit Action
 feature: Adaptive Forms, Core Components
 exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
-title: "How to configure a Submit Action for an Adaptive Form?"
 role: User, Developer
 ---
 # Integrate AEM Adaptive Form with AEM Workflow: Streamlining Business Processes
@@ -38,12 +37,43 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 
 ## Integrate AEM Workflow with Adaptive Forms {#steps-to-integrate-workflow-with-af}
 
-To set up automated process with [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) for an Adaptive Form, perform the following steps:
+>[!BEGINTABS]
+
+>[!TAB Foundation Component]
+
+To set up automated process with [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) for an Adaptive Form based on Foundation Components, perform the following steps:
+
+1. Open the Adaptive Form for editing and navigate to **[!UICONTROL Submission]** section of the Adaptive Form Container properties. 
+1. From the **[!UICONTROL Submit Action]** drop-down list, select **Submit Action** as **[!UICONTROL Invoke an AEM workflow]**.
+1. Select workflow model from the **[!UICONTROL Workflow Model]** drop-down list.
+1. Select option from the **[!UICONTROL Store Data file using]** drop-down list. 
+    
+    **Data file**: It contains data submitted to the Adaptive Form. You can use the **[!UICONTROL Data File Path]** option to specify the name of the file and path of file relative to the payload. For example, the `/addresschange/data.xml` path creates a folder named `addresschange` and places it relative to payload. You can also specify only `data.xml` to send only submitted data without creating a folder hierarchy. If the workflow is marked for external data storage, use the variable option and select the variable from the list of variables available for the workflow model. 
+
+    ![invoke-workflow-fc](/help/forms/assets/invoke-workflow-fc.png)
+
+1. Select option from the **[!UICONTROL Store attachments using]** drop-down list. 
+    
+    **Attachments**: You can use the **[!UICONTROL Attachment Path]** option to specify the folder name to store the attachments uploaded to the Adaptive Form. The folder is created relative to the payload. If the workflow is marked for external data storage, use the variable option and select the variable from the list of variables available for the workflow model.
+
+1. Select option from the **[!UICONTROL Documents of record using]** drop-down list. 
+    
+    **Document of Record**: It contains the Document of Record generated for the Adaptive Form. You can use the **[!UICONTROL Document of Record Path]** option to specify the name of the Document of Record file and path of file relative to the payload. For example, the `/addresschange/DoR.pdf` path creates a folder named `addresschange` relative to the payload and places the `DoR.pdf` relative to payload. You can also specify only `DoR.pdf` to save only Document of Record without creating a folder hierarchy. If the workflow is marked for external data storage, use the variable option and select the variable from the list of variables available for the workflow model.
+1. Click **[!UICONTROL Done]**.
+
+    >[!NOTE]
+    >
+    > Learn more about [Forms-centric AEM Workflows - Step Reference to automate business processes](/help/forms/aem-forms-workflow-step-reference.md).  
+
+>[!TAB Core Component]
+
+To set up automated process with [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) for an Adaptive Form based on Core Components, perform the following steps:
 
 1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
 1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 
 1. Click the  **[!UICONTROL Submission]** tab. 
 1. From the **[!UICONTROL Submit Action]** drop-down list, select **[!UICONTROL Invoke an AEM Workflow]** .
+    
     ![Action configuration of Send Email](/help/forms/assets/configure-invoke-aem-workflow.png)
 
 1. Select workflow model from the **[!UICONTROL Workflow Model]** drop-down list.
@@ -60,9 +90,47 @@ To set up automated process with [AEM Workflow](https://experienceleague.adobe.c
     **Document of Record**: It contains the Document of Record generated for the Adaptive Form. You can use the **[!UICONTROL Document of Record Path]** option to specify the name of the Document of Record file and path of file relative to the payload. For example, the `/addresschange/DoR.pdf` path creates a folder named `addresschange` relative to the payload and places the `DoR.pdf` relative to payload. You can also specify only `DoR.pdf` to save only Document of Record without creating a folder hierarchy. If the workflow is marked for external data storage, use the variable option and select the variable from the list of variables available for the workflow model.
 1. Click **[!UICONTROL Done]**.
 
->[!NOTE]
->
-> Learn more about [Forms-centric AEM Workflows - Step Reference to automate business processes](/help/forms/aem-forms-workflow-step-reference.md).  
+    >[!NOTE]
+    >
+    > Learn more about [Forms-centric AEM Workflows - Step Reference to automate business processes](/help/forms/aem-forms-workflow-step-reference.md).
+
+>[!TAB Universal Editor]
+
+To set up automated process with [AEM Workflow](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) for an Adaptive Form authored in Universal Editor, perform the following steps:
+
+1. Open the Adaptive Form for editing.
+1. Click the **Edit Form Properties** extension on the editor. 
+    The **Form Properties** dialog appears.
+
+    >[!NOTE]
+    >
+    > * If you do not see the **Edit Form Properties** icon in your Universal Editor interface, enable the **Edit Form Properties** extension in the Extension Manager. 
+    > * Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable or disable extensions in the Universal Editor.
+    
+1. Click **Submission** tab and select **[!UICONTROL Invoke an AEM Workflow]** submit action.
+
+    
+    ![Action configuration of Send Email](/help/forms/assets/invoke-service-ue.png)
+
+1. Select workflow model from the **[!UICONTROL Workflow Model]** drop-down list.
+1. Select option from the **[!UICONTROL Store Data file using]** drop-down list. 
+    
+    **Data file**: It contains data submitted to the Adaptive Form. You can use the **[!UICONTROL Data File Path]** option to specify the name of the file and path of file relative to the payload. For example, the `/addresschange/data.xml` path creates a folder named `addresschange` and places it relative to payload. You can also specify only `data.xml` to send only submitted data without creating a folder hierarchy. If the workflow is marked for external data storage, use the variable option and select the variable from the list of variables available for the workflow model. 
+    
+1. Select option from the **[!UICONTROL Store attachments using]** drop-down list. 
+    
+    **Attachments**: You can use the **[!UICONTROL Attachment Path]** option to specify the folder name to store the attachments uploaded to the Adaptive Form. The folder is created relative to the payload. If the workflow is marked for external data storage, use the variable option and select the variable from the list of variables available for the workflow model.
+
+1. Select option from the **[!UICONTROL Documents of record using]** drop-down list. 
+    
+    **Document of Record**: It contains the Document of Record generated for the Adaptive Form. You can use the **[!UICONTROL Document of Record Path]** option to specify the name of the Document of Record file and path of file relative to the payload. For example, the `/addresschange/DoR.pdf` path creates a folder named `addresschange` relative to the payload and places the `DoR.pdf` relative to payload. You can also specify only `DoR.pdf` to save only Document of Record without creating a folder hierarchy. If the workflow is marked for external data storage, use the variable option and select the variable from the list of variables available for the workflow model.
+1. Click **[!UICONTROL Done]**.
+
+    >[!NOTE]
+    >
+    > Learn more about [Forms-centric AEM Workflows - Step Reference to automate business processes](/help/forms/aem-forms-workflow-step-reference.md).
+
+>[!ENDTABS]
 
 <!--
 ## Best Practices

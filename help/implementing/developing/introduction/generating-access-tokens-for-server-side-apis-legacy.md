@@ -4,7 +4,7 @@ description: Learn how to facilitate communication between a third-party server 
 hidefromtoc: yes
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Generating Access Tokens for Server-Side APIs (Legacy) {#generating-access-tokens-for-server-side-apis-legacy}
 
@@ -71,14 +71,15 @@ The non-AEM application making calls to AEM should be able to access the credent
 
 Use the credentials to create a JWT token in a call to Adobe's IMS service to retrieve an access token, which is valid for 24 hours.
 
-The AEM CS Service Credentials may be exchanged for an access token using client libraries designed for this purpose. The client libraries are available from [Adobe's public GitHub repository](https://github.com/adobe/aemcs-api-client-lib), which contains more detailed guidance and latest information.
+The AEM CS Service Credentials may be exchanged for an access token using code samples designed for this purpose. Sample code is available from [Adobe's public GitHub repository](https://github.com/adobe/aemcs-api-client-lib), which contains code examples that you can copy and adapt for your own projects. Note that this repository contains sample code for reference and is not maintained as a production-ready library dependency.
 
 ```
 /*jshint node:true */
 "use strict";
 
 const fs = require('fs');
-const exchange = require("@adobe/aemcs-api-client-lib");
+// Sample code adapted from Adobe's GitHub repository
+const exchange = require("./your-local-aemcs-client"); // Copy and adapt the code from the GitHub repository
 
 const jsonfile = "aemcs-service-credentials.json";
 

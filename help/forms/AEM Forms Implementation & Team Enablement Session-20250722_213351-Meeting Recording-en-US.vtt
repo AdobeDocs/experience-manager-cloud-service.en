@@ -1,0 +1,5247 @@
+WEBVTT
+
+c48ca106-15bc-4007-8101-f59606766cad-0
+00:00:10.880 --> 00:00:11.840
+Yeah, over to you.
+
+01196199-5b2e-4fc0-a280-50de7e57d130-0
+00:00:12.480 --> 00:00:13.160
+Thank you, Sir.
+
+8db6ee7c-d581-4b97-8366-dbdc98dfac1b-0
+00:00:13.960 --> 00:00:15.800
+OK, so hi everyone.
+
+45b3511f-d506-4451-ac88-bc22b0333517-0
+00:00:15.800 --> 00:00:20.480
+I'm deep and I'm an engineer in the Adobe
+Forms team.
+
+8a5afb89-83f2-4c09-a542-d5b72b6e5693-0
+00:00:21.080 --> 00:00:25.473
+So in today's demo,
+the agenda is basically to understand
+
+8a5afb89-83f2-4c09-a542-d5b72b6e5693-1
+00:00:25.473 --> 00:00:28.200
+authoring, how you can author forms.
+
+c1f1c97a-ae7a-4b04-ab08-6386c38a9cd5-0
+00:00:28.200 --> 00:00:33.394
+We will use a a few Clark County forms
+that are present on Clark County's live
+
+c1f1c97a-ae7a-4b04-ab08-6386c38a9cd5-1
+00:00:33.394 --> 00:00:36.681
+website and try to demo the authoring
+experience,
+
+c1f1c97a-ae7a-4b04-ab08-6386c38a9cd5-2
+00:00:36.681 --> 00:00:42.139
+how it feels on the forms editor and how
+we can use certain generative AI features
+
+c1f1c97a-ae7a-4b04-ab08-6386c38a9cd5-3
+00:00:42.139 --> 00:00:47.530
+that we have embedded in our forms editor
+to make the authoring experience easier
+
+c1f1c97a-ae7a-4b04-ab08-6386c38a9cd5-4
+00:00:47.530 --> 00:00:48.320
+and simpler.
+
+ade50cd9-c2b8-4434-80e4-1560db421d20-0
+00:00:48.760 --> 00:00:54.427
+So let me share my screen and feel free
+to ask for these in between if there is
+
+ade50cd9-c2b8-4434-80e4-1560db421d20-1
+00:00:54.427 --> 00:00:57.120
+something that you want clarification.
+
+e3da6f1d-fd38-44ce-89df-bb44e805ec30-0
+00:00:58.080 --> 00:01:06.000
+So let me share my screen once and please
+let me know if my screen is visible to
+
+e3da6f1d-fd38-44ce-89df-bb44e805ec30-1
+00:01:06.000 --> 00:01:06.880
+everyone.
+
+189addc5-159f-4cdf-8cc8-5fa78f6096d0-0
+00:01:07.200 --> 00:01:09.280
+Just thumbs up or something and work.
+
+80cdd64f-0b07-4c65-bf22-13eebf0873cb-0
+00:01:09.480 --> 00:01:10.600
+It is, yes, deep.
+
+0c333b48-73d6-4e14-b65f-786cab0ccd4e-0
+00:01:10.600 --> 00:01:10.960
+Thank you.
+
+4d8432fb-7f38-4788-a24b-5388d9a7b1c3-0
+00:01:12.040 --> 00:01:15.400
+OK, so to start with.
+
+1a195424-1d2b-471a-b4f4-aa2cf14db57c-0
+00:01:18.160 --> 00:01:21.423
+OK,
+so this was one form that was present in
+
+1a195424-1d2b-471a-b4f4-aa2cf14db57c-1
+00:01:21.423 --> 00:01:26.644
+Clark County's live website which was
+related to dispute resolution for
+
+1a195424-1d2b-471a-b4f4-aa2cf14db57c-2
+00:01:26.644 --> 00:01:28.240
+children and families.
+
+f273b57f-15a9-4e3f-a998-5b87f5047c36-0
+00:01:28.600 --> 00:01:33.483
+So to start with,
+we will try to author this form using AM
+
+f273b57f-15a9-4e3f-a998-5b87f5047c36-1
+00:01:33.483 --> 00:01:34.560
+forms editor.
+
+67c14d63-b26d-491a-ac16-b70588ff6b25-0
+00:01:34.920 --> 00:01:40.320
+And during the authoring we will
+obviously use generative features.
+
+5466a1e7-74a4-4d9d-b4d0-4203a19cde46-0
+00:01:40.320 --> 00:01:45.739
+And then in between we will go into some
+more deeper concepts related to AM forms
+
+5466a1e7-74a4-4d9d-b4d0-4203a19cde46-1
+00:01:45.739 --> 00:01:46.400
+authoring.
+
+cc45177e-7f83-4f00-bb4c-618b5da5b4ec-0
+00:01:46.800 --> 00:01:51.920
+So to begin with,
+let me show you the forms editor.
+
+724878fc-3485-4f9f-833d-8ae1a9f4587c-0
+00:01:51.920 --> 00:01:58.392
+So I have this live demo folder that is
+already created and inside this I have
+
+724878fc-3485-4f9f-833d-8ae1a9f4587c-1
+00:01:58.392 --> 00:02:03.800
+created 2 empty forms using our S
+delivery templates from before.
+
+5e997a9f-3b67-4043-9149-307195d91fde-0
+00:02:04.120 --> 00:02:06.560
+So let me just open these.
+
+5e0fc9ab-45b7-4784-9f3a-853e480bf9b8-0
+00:02:07.800 --> 00:02:12.000
+So as you can see this is let it just
+load.
+
+79359e91-186b-4d36-b99d-e8e932dd2d29-0
+00:02:18.130 --> 00:02:20.490
+So as you can see this is an empty form.
+
+da76a488-7c35-45e8-8bf7-db69f7f05828-0
+00:02:21.250 --> 00:02:27.130
+In forms terminology we call this the
+forms editor or universal editor.
+
+6719fa64-82fd-4d40-aaad-aae06dd9af21-0
+00:02:27.530 --> 00:02:33.360
+And just to make you people a bit a bit
+familiar with the interface here.
+
+bdfccf34-52c6-444c-a0f1-9468178315e1-0
+00:02:33.680 --> 00:02:37.200
+So here we have you can see three buttons.
+
+fb3ee568-e017-4eed-b830-c35077bdc8a1-0
+00:02:37.560 --> 00:02:42.160
+So the second button that is currently
+like selected.
+
+37021a90-f5db-4475-8a9c-4dba61cfd823-0
+00:02:42.160 --> 00:02:43.360
+This is the content tree.
+
+8167d741-6d80-4b03-ad53-3cf6cc7f3332-0
+00:02:43.520 --> 00:02:47.761
+So as and when you add more and more
+forms component inside this form,
+
+8167d741-6d80-4b03-ad53-3cf6cc7f3332-1
+00:02:47.761 --> 00:02:52.480
+you will see these this particular panel
+getting filled with those components.
+
+1dcb9853-7d5b-4248-beed-665b8a058193-0
+00:02:53.280 --> 00:02:56.120
+The first button that you see it is
+called properties.
+
+21637fc6-6ac3-4b05-8c13-e3e0c78edf25-0
+00:02:56.120 --> 00:02:59.314
+So this is when you select one particular
+component,
+
+21637fc6-6ac3-4b05-8c13-e3e0c78edf25-1
+00:02:59.314 --> 00:03:03.593
+you will see this properties property
+sheet related to that particular
+
+21637fc6-6ac3-4b05-8c13-e3e0c78edf25-2
+00:03:03.593 --> 00:03:04.920
+component in this tab.
+
+96a79b12-cad2-410a-a1da-c41aa0973e8d-0
+00:03:05.440 --> 00:03:09.480
+And this button is named as Forms
+Experience Builder.
+
+07c22ba7-bf3c-472b-ad19-800fd0ac2696-0
+00:03:09.480 --> 00:03:14.352
+So this is where all the generative
+related features are added into and you
+
+07c22ba7-bf3c-472b-ad19-800fd0ac2696-1
+00:03:14.352 --> 00:03:18.840
+can simply go and write your prompts to
+help you with your authoring.
+
+a6a13862-f88a-43ff-9264-b521af6a0680-0
+00:03:19.360 --> 00:03:24.985
+So to begin with,
+let's go to this Forms Experience Builder
+
+a6a13862-f88a-43ff-9264-b521af6a0680-1
+00:03:24.985 --> 00:03:25.360
+tab.
+
+9a14c898-a4c9-4bec-8a3e-0b8ba65b674e-0
+00:03:26.040 --> 00:03:32.212
+And here we will use this particular
+Ombudsman forms image to generate the
+
+9a14c898-a4c9-4bec-8a3e-0b8ba65b674e-1
+00:03:32.212 --> 00:03:33.200
+form for us.
+
+a5e9d3a2-e74c-4450-91b8-fd708dd4b78a-0
+00:03:33.440 --> 00:03:39.728
+So here we have a small attachment icon
+and I have this screenshot already
+
+a5e9d3a2-e74c-4450-91b8-fd708dd4b78a-1
+00:03:39.728 --> 00:03:44.760
+created taken of that particular form on
+my local instance.
+
+1cc8a1b4-4efa-491d-89f5-fab364daa5ea-0
+00:03:44.760 --> 00:03:49.160
+So I'm going to select this PNG.
+
+33d0e808-2104-43c9-8dc3-513b60163585-0
+00:03:51.000 --> 00:03:52.080
+Just get me a second.
+
+84309094-ee9b-4569-b428-8ed34a1c55b2-0
+00:03:52.080 --> 00:03:52.240
+Yeah.
+
+1d33d845-eef7-4bf1-b87e-d550ed974e52-0
+00:03:53.880 --> 00:04:00.051
+So here once that file is added,
+you can see I'll just type/ and you can
+
+1d33d845-eef7-4bf1-b87e-d550ed974e52-1
+00:04:00.051 --> 00:04:05.800
+see we will getting we will be getting
+multiple available commands.
+
+3d34ce6f-0be8-4b41-a176-1f19ebbe2b72-0
+00:04:06.120 --> 00:04:11.605
+So for now we are interested in this add
+form command which actually helps us
+
+3d34ce6f-0be8-4b41-a176-1f19ebbe2b72-1
+00:04:11.605 --> 00:04:14.840
+adding a form using some kind of a
+reference.
+
+5ad18aca-0c59-4803-85cd-35564978ff32-0
+00:04:14.920 --> 00:04:18.720
+In our case the reference is the
+screenshot of the form that I just added.
+
+9c9334a2-bbeb-4466-bd62-4661e9eec93d-0
+00:04:19.080 --> 00:04:28.680
+So I will say add form using the given
+image and I will just type.
+
+924fd622-180c-43b0-b46e-652b28c8c993-0
+00:04:29.000 --> 00:04:30.680
+I will just click on the send button.
+
+4d42ea65-8179-49e8-bf5c-54c8abdaf13c-0
+00:04:30.680 --> 00:04:34.762
+So behind the scenes,
+it's just trying to process the image and
+
+4d42ea65-8179-49e8-bf5c-54c8abdaf13c-1
+00:04:34.762 --> 00:04:39.993
+figure out the corresponding fees that it
+needs to add and the text that it needs
+
+4d42ea65-8179-49e8-bf5c-54c8abdaf13c-2
+00:04:39.993 --> 00:04:40.440
+to add.
+
+011603cf-bfed-4b09-9062-b6455a9fcd4e-0
+00:04:41.400 --> 00:04:44.480
+So we will have to give it,
+I think 1015 seconds.
+
+a1ddd96f-3f4e-4b0f-8e77-c7feb489f001-0
+00:04:44.480 --> 00:04:50.200
+And now this is a preview of the form
+that the generative AI had created.
+
+28829c93-02f1-469a-9dee-2d68b6a50469-0
+00:04:51.080 --> 00:04:54.764
+You have the option of applying it to
+your actual form,
+
+28829c93-02f1-469a-9dee-2d68b6a50469-1
+00:04:54.764 --> 00:04:59.698
+or you can again reiterate and ask it to
+change something if you feel that
+
+28829c93-02f1-469a-9dee-2d68b6a50469-2
+00:04:59.698 --> 00:05:01.079
+something is missing.
+
+b7901b4a-23cd-460e-ab28-63bd0c8d15fb-0
+00:05:01.400 --> 00:05:03.480
+So for now, let's go ahead and apply it.
+
+657077fb-3fbb-44c5-aa62-c66c40f4e461-0
+00:05:09.220 --> 00:05:13.100
+This it says format it successfully and
+it should come here as well.
+
+dbf64198-2527-4db4-8f95-61a41f822e93-0
+00:05:13.580 --> 00:05:19.460
+So let's just compare the two forms that
+that we saw before.
+
+2fb426b5-2ad7-4763-ad0b-7b80acc977e1-0
+00:05:20.440 --> 00:05:21.960
+So a few things.
+
+6de1b211-0448-4e8b-9d4d-e5bf538fd47d-0
+00:05:21.960 --> 00:05:25.487
+So initially the layout that you see
+these images, right,
+
+6de1b211-0448-4e8b-9d4d-e5bf538fd47d-1
+00:05:25.487 --> 00:05:30.292
+the ombudsman image and the Clark County,
+Nevada image that we will have to do
+
+6de1b211-0448-4e8b-9d4d-e5bf538fd47d-2
+00:05:30.292 --> 00:05:30.840
+manually.
+
+4709ac5f-9b5f-468c-b5e8-e5b6b97e56f6-0
+00:05:30.840 --> 00:05:36.325
+Still our generative assistant is not
+intelligent enough to get the images out
+
+4709ac5f-9b5f-468c-b5e8-e5b6b97e56f6-1
+00:05:36.325 --> 00:05:38.200
+of the document As for now.
+
+94ef6cef-9757-49f1-a58b-3144edbd407b-0
+00:05:38.520 --> 00:05:42.978
+But the rest of the things like the
+header component of the complaint form,
+
+94ef6cef-9757-49f1-a58b-3144edbd407b-1
+00:05:42.978 --> 00:05:47.496
+dispute resolution for children families,
+you can see that in the authoring,
+
+94ef6cef-9757-49f1-a58b-3144edbd407b-2
+00:05:47.496 --> 00:05:49.080
+that part is already there.
+
+210e414d-5f42-4fda-91a4-0857ef086435-0
+00:05:49.400 --> 00:05:51.800
+The layouting will have to do manually.
+
+de40940d-9fc3-4dc4-ae60-6cb709bcbf6f-0
+00:05:51.800 --> 00:05:57.035
+Few parts like how you want the fields to
+the width of the fields that you want to
+
+de40940d-9fc3-4dc4-ae60-6cb709bcbf6f-1
+00:05:57.035 --> 00:06:01.072
+be present in the form,
+those are those things we'll have to do
+
+de40940d-9fc3-4dc4-ae60-6cb709bcbf6f-2
+00:06:01.072 --> 00:06:01.640
+manually.
+
+979b9d03-cad8-4b64-88cc-d1b955ebafae-0
+00:06:01.640 --> 00:06:07.015
+But majority of the things should be
+present there using this particular
+
+979b9d03-cad8-4b64-88cc-d1b955ebafae-1
+00:06:07.015 --> 00:06:08.120
+Geneii feature.
+
+07495e7f-bb29-4f35-a62c-dcbed532869a-0
+00:06:08.360 --> 00:06:12.368
+So even if we go ahead and check for
+other components like we have this
+
+07495e7f-bb29-4f35-a62c-dcbed532869a-1
+00:06:12.368 --> 00:06:14.984
+particular description which is in the
+layout,
+
+07495e7f-bb29-4f35-a62c-dcbed532869a-2
+00:06:14.984 --> 00:06:19.159
+you can see that there's a line separator
+that we'll have to add manually.
+
+3295c340-5308-47eb-ac86-8de0f245a4bc-0
+00:06:19.400 --> 00:06:21.120
+But this description is present there.
+
+386982a2-2fa7-470b-bc55-e8193adb9ef2-0
+00:06:21.480 --> 00:06:27.080
+Then we have this entire panel of the
+complainant detail kind of.
+
+4448ffe3-4271-4e11-a767-65fb4f707f01-0
+00:06:27.080 --> 00:06:31.293
+So this is the name of the complainant,
+which has first name, middle name,
+
+4448ffe3-4271-4e11-a767-65fb4f707f01-1
+00:06:31.293 --> 00:06:34.440
+last name, the address fields,
+the contact information.
+
+b81664a4-e62f-49c1-b6fe-d65c5ef0e009-0
+00:06:34.440 --> 00:06:38.988
+So if we go ahead and check here,
+the assistant that was present in the
+
+b81664a4-e62f-49c1-b6fe-d65c5ef0e009-1
+00:06:38.988 --> 00:06:41.957
+form,
+it was able to identify the three fields
+
+b81664a4-e62f-49c1-b6fe-d65c5ef0e009-2
+00:06:41.957 --> 00:06:45.999
+that were present corresponding to the
+name of the complainant.
+
+acf61857-f1a7-4e09-af5c-524fa31ad3a2-0
+00:06:46.280 --> 00:06:50.529
+Similarly for the address fields as well,
+it was able to capture all the four
+
+acf61857-f1a7-4e09-af5c-524fa31ad3a2-1
+00:06:50.529 --> 00:06:52.600
+fields that were present in the image.
+
+e0c77fba-9495-4ecb-8f29-a62b6e4ce910-0
+00:06:52.600 --> 00:06:55.280
+So here also address, city, state,
+zip code.
+
+2f05d48a-8101-4a00-b237-6f5cfecb7ad3-0
+00:06:55.960 --> 00:07:01.532
+After that the phone panel as you can see
+it is also able to correctly identify
+
+2f05d48a-8101-4a00-b237-6f5cfecb7ad3-1
+00:07:01.532 --> 00:07:05.084
+home phone,
+cell phone similar with e-mail address
+
+2f05d48a-8101-4a00-b237-6f5cfecb7ad3-2
+00:07:05.084 --> 00:07:09.960
+and the complainer's relationship to
+involved child or sibling group.
+
+d6a6e62c-7e94-478f-8b00-74dd4e4cb9d6-0
+00:07:10.760 --> 00:07:15.520
+So if you move ahead and there is names.
+
+625cb4aa-fa5c-4bd7-bb09-bb5ea6cfe455-0
+00:07:15.720 --> 00:07:21.856
+So because this was a screenshot and we
+don't have the actual drop down details
+
+625cb4aa-fa5c-4bd7-bb09-bb5ea6cfe455-1
+00:07:21.856 --> 00:07:26.535
+options present here,
+the drop down options will be empty in
+
+625cb4aa-fa5c-4bd7-bb09-bb5ea6cfe455-2
+00:07:26.535 --> 00:07:28.760
+the generated assistant form.
+
+03331231-1f3e-4992-988f-34985db593dc-0
+00:07:28.760 --> 00:07:34.557
+But we can add it manually for now or we
+can add ask the assistant to add it as
+
+03331231-1f3e-4992-988f-34985db593dc-1
+00:07:34.557 --> 00:07:34.920
+well.
+
+1b35e091-a7c9-4b3b-acf7-7b7c44bfd6d3-0
+00:07:35.520 --> 00:07:36.560
+So after that.
+
+ba586057-25b4-4123-b426-85e65d18782f-0
+00:07:37.080 --> 00:07:39.200
+So I think just one more thing to add.
+
+733b67fa-a208-4d3f-ac4c-24db285c42bd-0
+00:07:39.200 --> 00:07:40.960
+I think we have also verified this.
+
+c62534f4-6f0c-43a1-bbeb-b5c094e9f3ec-0
+00:07:41.240 --> 00:07:45.844
+So you can just take a screenshot of the
+drop down and then say that, OK,
+
+c62534f4-6f0c-43a1-bbeb-b5c094e9f3ec-1
+00:07:45.844 --> 00:07:50.760
+these are my drop down values for this
+particular feed and it can go ahead and
+
+c62534f4-6f0c-43a1-bbeb-b5c094e9f3ec-2
+00:07:50.760 --> 00:07:51.320
+generate.
+
+81979064-78db-4e76-902c-8dab9859fe81-0
+00:07:51.320 --> 00:07:54.160
+So instead of manual,
+you can take even do that.
+
+2682f049-1f86-4865-b1dd-524fe68a2b04-0
+00:07:54.400 --> 00:07:57.133
+And even when the initial form was
+created,
+
+2682f049-1f86-4865-b1dd-524fe68a2b04-1
+00:07:57.133 --> 00:08:00.674
+we can take 2 screenshot this and the
+second screenshot,
+
+2682f049-1f86-4865-b1dd-524fe68a2b04-2
+00:08:00.674 --> 00:08:02.600
+we're just enums of this there.
+
+c575a81d-3708-42f1-8a5c-c3c0c84b86ee-0
+00:08:02.600 --> 00:08:07.170
+And you can create a form, say that, OK,
+use my first image to create a form and
+
+c575a81d-3708-42f1-8a5c-c3c0c84b86ee-1
+00:08:07.170 --> 00:08:11.120
+second image is to use the drop down
+values in this particular field.
+
+51d9af2d-e097-49ee-befd-c69768e3408f-0
+00:08:11.480 --> 00:08:16.167
+So it does support all kind of
+capabilities flexibilities if you can do
+
+51d9af2d-e097-49ee-befd-c69768e3408f-1
+00:08:16.167 --> 00:08:19.032
+it,
+it iterate you or it can you do it even
+
+51d9af2d-e097-49ee-befd-c69768e3408f-2
+00:08:19.032 --> 00:08:20.400
+in the 1st 30 itself?
+
+b98ede95-fd66-42b9-8c25-77d5b66a19bd-0
+00:08:21.760 --> 00:08:21.960
+Yep.
+
+d3da99f9-ae8e-4d9c-be62-faf0c47f06e3-0
+00:08:21.960 --> 00:08:25.360
+And just to add here, Thank you, Vijay,
+as opposed, this is also capable.
+
+083a4e0f-d766-4513-898d-1cb9f9ae2095-0
+00:08:25.360 --> 00:08:30.240
+Let's say I would like to display all the
+US states, let's say in U.S.
+
+e003f68f-4e87-40b2-8106-514812e98ec6-0
+00:08:30.240 --> 00:08:35.160
+states in terms of PIN code or whatsoever
+or two double digits, something like that.
+
+5cc9e214-bc90-4ec8-a27e-f2ef50e39749-0
+00:08:35.520 --> 00:08:40.038
+I think it is smart enough if you let's
+say mention put that drop down mentioning
+
+5cc9e214-bc90-4ec8-a27e-f2ef50e39749-1
+00:08:40.038 --> 00:08:43.400
+all the US states,
+it will automatically display everything.
+
+e27d0550-1de9-4c90-84fa-bef1578a30b8-0
+00:08:43.400 --> 00:08:46.400
+I think we did try on contact us a form
+or something like that.
+
+3f593be3-77aa-4ee3-aadf-1ff51d08de8d-0
+00:08:46.440 --> 00:08:48.880
+Yeah, and display everything,
+all of them in one go.
+
+a3455c1f-927d-4910-9f99-137b5a66f8fc-0
+00:08:48.880 --> 00:08:51.000
+It's short itself and put the red option.
+
+b2fd707a-8a38-49e8-8203-0903467f4da8-0
+00:08:51.240 --> 00:08:56.975
+Yeah, just to add here, yes that yes,
+that is something also supported if it is
+
+b2fd707a-8a38-49e8-8203-0903467f4da8-1
+00:08:56.975 --> 00:09:01.348
+very general, yeah,
+it says something you can use the prompt
+
+b2fd707a-8a38-49e8-8203-0903467f4da8-2
+00:09:01.348 --> 00:09:02.280
+and add this.
+
+89aef9d7-5b73-44c7-b23a-54eecbfb0883-0
+00:09:02.560 --> 00:09:05.966
+And since we are already giving some more
+touch point,
+
+89aef9d7-5b73-44c7-b23a-54eecbfb0883-1
+00:09:05.966 --> 00:09:09.557
+I just also the touch point on the
+starting point, right,
+
+89aef9d7-5b73-44c7-b23a-54eecbfb0883-2
+00:09:09.557 --> 00:09:12.840
+The images right now this is something we
+can do it.
+
+7ee59e0e-db83-421a-b907-7fbd15eb53e3-0
+00:09:12.840 --> 00:09:17.751
+But that there is a reason behind of not
+doing it because the best recommendation
+
+7ee59e0e-db83-421a-b907-7fbd15eb53e3-1
+00:09:17.751 --> 00:09:22.362
+is so if you have seen a delivery forms,
+there is always a header and footer
+
+7ee59e0e-db83-421a-b907-7fbd15eb53e3-2
+00:09:22.362 --> 00:09:23.800
+already being redefined.
+
+affc95dc-79c2-4af2-b33d-bed1892223d2-0
+00:09:24.120 --> 00:09:28.229
+So most of the pages or the forms you
+have a standard header and footer
+
+affc95dc-79c2-4af2-b33d-bed1892223d2-1
+00:09:28.229 --> 00:09:28.800
+available.
+
+5a634e31-0c8f-4c11-9bb6-e2b5ce804999-0
+00:09:28.800 --> 00:09:30.360
+So it's only about the body.
+
+2dc3049f-8dd2-48c1-8d28-d507ae040c35-0
+00:09:30.640 --> 00:09:35.720
+So that is the reason we are not even
+trying to get that details and put it.
+
+de1d40ed-a181-495d-a8d2-14bdf5075efe-0
+00:09:36.000 --> 00:09:39.600
+But if there is any such use case,
+please let us know.
+
+0fe5bfe0-c511-4fe4-9c2a-e66f5e384e8a-0
+00:09:39.680 --> 00:09:41.720
+We can work on it and get the images also.
+
+9599bd54-ee98-4cb2-8d55-8cc09b47a613-0
+00:09:43.160 --> 00:09:46.600
+Yeah, sorry for cutting you deep,
+but yeah, I just wanted to place.
+
+5921451a-21a9-4a52-8a59-2f53c267e7db-0
+00:09:47.360 --> 00:09:47.920
+Yeah, you can put it.
+
+2a66023c-0ce3-4210-9824-985e7066f186-0
+00:09:47.920 --> 00:09:48.360
+Yeah, yeah.
+
+f50e7b81-61b8-48c4-b55e-a83346fb84f7-0
+00:09:49.240 --> 00:09:50.120
+Thanks for Jameet.
+
+b7dbb9b5-551d-4e01-82e5-ece053ca1fdd-0
+00:09:50.360 --> 00:09:53.960
+So the next part is pretty interesting
+one.
+
+df62b0ae-4d28-4b23-8eda-aa8d246abf7d-0
+00:09:53.960 --> 00:09:57.213
+As you can see,
+this is more or less a panel where you
+
+df62b0ae-4d28-4b23-8eda-aa8d246abf7d-1
+00:09:57.213 --> 00:10:01.827
+want the number of involved children and
+then you want certain details of the
+
+df62b0ae-4d28-4b23-8eda-aa8d246abf7d-2
+00:10:01.827 --> 00:10:02.360
+children.
+
+917c8397-1e08-44d4-b24c-d0ef13f909f8-0
+00:10:02.640 --> 00:10:08.427
+So because this is a text based form,
+in this form you have this number of
+
+917c8397-1e08-44d4-b24c-d0ef13f909f8-1
+00:10:08.427 --> 00:10:12.440
+fields as it is basically a stuck number
+of fields.
+
+9aa3b359-9987-4988-b3b4-bc50d46c8528-0
+00:10:12.440 --> 00:10:18.338
+So if someone has only one child then
+they don't need to fill this 2 fields and
+
+9aa3b359-9987-4988-b3b4-bc50d46c8528-1
+00:10:18.338 --> 00:10:24.163
+if someone has more than three chairs
+then this form kind of fails the the the
+
+9aa3b359-9987-4988-b3b4-bc50d46c8528-2
+00:10:24.163 --> 00:10:24.680
+intent.
+
+a6c7717e-8859-42b8-9e1c-12715d6c386a-0
+00:10:24.680 --> 00:10:30.165
+So to handle this interactive forms,
+we have concepts concept of a repeatable
+
+a6c7717e-8859-42b8-9e1c-12715d6c386a-1
+00:10:30.165 --> 00:10:35.933
+panel where you can dynamically add more
+and more number of fields or remove more
+
+a6c7717e-8859-42b8-9e1c-12715d6c386a-2
+00:10:35.933 --> 00:10:39.520
+and more number of fields as and when you
+require.
+
+849548de-3d0c-49a7-b92b-655a8cb6f224-0
+00:10:39.520 --> 00:10:41.960
+So just to give you how it works.
+
+6f039bb4-8036-45f5-bc4b-51c38a0ecb60-0
+00:10:42.560 --> 00:10:45.520
+So as you can see this is the panel.
+
+0d3ec81d-e8c8-47bb-867d-d58978ac2bc1-0
+00:10:45.520 --> 00:10:48.243
+So first of all,
+let's just delete this child 2,
+
+0d3ec81d-e8c8-47bb-867d-d58978ac2bc1-1
+00:10:48.243 --> 00:10:50.800
+date of birth 2 and child 3,
+date of birth 3.
+
+37d83f44-f0a3-4b8e-a075-bdbdae3232ef-0
+00:10:51.240 --> 00:10:55.398
+To do that as well,
+we will use the feature of forms generic
+
+37d83f44-f0a3-4b8e-a075-bdbdae3232ef-1
+00:10:55.398 --> 00:10:56.080
+assistant.
+
+5f270308-1aa2-430c-91d7-6d6f35fc00a4-0
+00:10:56.360 --> 00:11:01.608
+Here you can see there is a there is a
+command in the available command section
+
+5f270308-1aa2-430c-91d7-6d6f35fc00a4-1
+00:11:01.608 --> 00:11:02.920
+of delete component.
+
+a6a576dd-5126-46b3-b0a3-3fb8076ec3f3-0
+00:11:03.240 --> 00:11:08.512
+We will use this and then we will add we
+will kind of invoke the actual field that
+
+a6a576dd-5126-46b3-b0a3-3fb8076ec3f3-1
+00:11:08.512 --> 00:11:09.720
+you want to delete.
+
+989676e1-ee20-4dfb-b632-eca9af5f4f93-0
+00:11:09.720 --> 00:11:16.280
+So let's just write child child and we
+will get this child two.
+
+3cb47dd7-8178-4349-97d8-0360c2872f2e-0
+00:11:16.880 --> 00:11:19.160
+We want to delete the child 3 as well.
+
+fbc35e55-044f-48c7-9253-6389febfa42f-0
+00:11:19.960 --> 00:11:26.440
+So child 3 and the two date of births.
+
+17c11098-9fc6-4a51-9115-c65bdcbf87ca-0
+00:11:37.100 --> 00:11:46.340
+So so let's just try to run this command
+and in the meantime, deeps showing it.
+
+c5186bb4-36a3-4a3f-9c18-e8b917e19125-0
+00:11:46.660 --> 00:11:50.340
+This is something a new way of authoring
+which we are showing right now.
+
+d16c909b-bce1-42bb-902c-1c1596fd08a8-0
+00:11:50.620 --> 00:11:54.220
+But you have all this editor is a Viswick
+editor, right?
+
+6c1b2d12-a5f4-43bb-a2ee-afe95872d02a-0
+00:11:54.460 --> 00:11:57.020
+Like you have it directly delete option
+on the right.
+
+f37b7b0b-9b1c-4f40-8aa9-f453293149de-0
+00:11:57.020 --> 00:11:59.603
+If you see,
+you can just select a field and go ahead
+
+f37b7b0b-9b1c-4f40-8aa9-f453293149de-1
+00:11:59.603 --> 00:12:00.140
+and delete.
+
+3f7f1a55-4025-4cbc-91bc-28e8f67fe14a-0
+00:12:00.380 --> 00:12:03.780
+And even adding is something you can do
+it via tool, right?
+
+b4ae4c10-08a9-4b26-8e68-50903daee855-0
+00:12:03.780 --> 00:12:08.737
+So you can just select any panel or a
+container and click on maybe add and add
+
+b4ae4c10-08a9-4b26-8e68-50903daee855-1
+00:12:08.737 --> 00:12:09.240
+a field.
+
+746e97d7-b467-49ce-a913-a65558ca9a90-0
+00:12:09.240 --> 00:12:11.280
+So that is something all possible.
+
+1e98e9ce-e937-4f9f-be4a-e5165f6d98ac-0
+00:12:11.720 --> 00:12:16.613
+But this is more of preemptive of doing a
+new way of authoring where AI assisted,
+
+1e98e9ce-e937-4f9f-be4a-e5165f6d98ac-1
+00:12:16.613 --> 00:12:19.120
+we call it as from the experience builder.
+
+90476035-d9eb-4804-a32a-916c95cc2a07-0
+00:12:19.240 --> 00:12:19.440
+Yeah.
+
+f918ae93-ec53-4f25-90db-8b82f26eb89a-0
+00:12:21.480 --> 00:12:25.960
+So the four fees that you wanted to
+delete are deleted now.
+
+d8fa6052-5268-484e-b420-45b8ce66ee3f-0
+00:12:26.280 --> 00:12:31.362
+Now what we want to do is we want to we
+want the form filler to have the option
+
+d8fa6052-5268-484e-b420-45b8ce66ee3f-1
+00:12:31.362 --> 00:12:36.000
+of dynamically adding or removing the
+number of instances of this panel.
+
+65486054-83b7-4997-a2a9-095c32534cab-0
+00:12:36.440 --> 00:12:39.514
+To do that,
+let's just go back to the content tree
+
+65486054-83b7-4997-a2a9-095c32534cab-1
+00:12:39.514 --> 00:12:40.720
+that we saw earlier.
+
+8d699f04-1439-40fa-9221-f4dde040d6e0-0
+00:12:40.960 --> 00:12:45.800
+So here as you can see previously it was
+because it was an empty template.
+
+12d2df9e-6f36-480b-94fb-9e09c4016f21-0
+00:12:46.400 --> 00:12:48.760
+Previously it was only having main as
+this section.
+
+2bbacbd0-4e01-4a17-8563-bab4493a2a37-0
+00:12:48.760 --> 00:12:53.193
+Now it has this adaptive form which is
+actually the form container and inside
+
+2bbacbd0-4e01-4a17-8563-bab4493a2a37-1
+00:12:53.193 --> 00:12:56.320
+the adaptive form it has all the
+different components.
+
+ab2921c9-894d-41ae-b53d-6a51974b0969-0
+00:12:56.320 --> 00:13:02.400
+So this is the panel which is holding
+this child one and date of birth fields.
+
+5d13a613-1342-4fdc-9607-a003d7b3bc57-0
+00:13:02.400 --> 00:13:07.920
+As you can see what we want is to make
+this panel as repeatable at will.
+
+d66845b4-6a7d-41b2-b121-ecfd2abc45c7-0
+00:13:08.240 --> 00:13:12.920
+So to do that we will have to change
+property of this panel.
+
+d7320b17-60e5-4a3a-b5ec-a236c231ec4f-0
+00:13:13.200 --> 00:13:17.729
+As we saw earlier the properties of a
+particular component is present in this
+
+d7320b17-60e5-4a3a-b5ec-a236c231ec4f-1
+00:13:17.729 --> 00:13:18.600
+properties tab.
+
+5770e3ee-04f1-43c1-bbff-b44ae7e58d4b-0
+00:13:19.320 --> 00:13:24.640
+If we go there you can see that there is
+an option of repeat panel.
+
+fff9a122-757f-44d3-84e9-708e7b0c59e4-0
+00:13:25.000 --> 00:13:29.818
+So this option is present only on the
+panel fields and not the actual component
+
+fff9a122-757f-44d3-84e9-708e7b0c59e4-1
+00:13:29.818 --> 00:13:30.240
+fields.
+
+4b1aec88-4353-42d1-ba4a-0d13fa7edf12-0
+00:13:30.600 --> 00:13:36.378
+So we go and kind of make this drop down
+visible and then you have to check this
+
+4b1aec88-4353-42d1-ba4a-0d13fa7edf12-1
+00:13:36.378 --> 00:13:37.520
+make palpitable.
+
+e8ea905b-7e64-475e-9861-8eb0b472251b-0
+00:13:38.120 --> 00:13:42.741
+So once you do this make panel readable,
+you see that there are multiple other
+
+e8ea905b-7e64-475e-9861-8eb0b472251b-1
+00:13:42.741 --> 00:13:46.076
+options as well,
+the minimum reputations and the maximum
+
+e8ea905b-7e64-475e-9861-8eb0b472251b-2
+00:13:46.076 --> 00:13:46.720
+reputation.
+
+68223e95-a8be-41ed-8723-888e108c13ee-0
+00:13:46.720 --> 00:13:47.480
+So what are these?
+
+43d1e196-f99c-4884-9085-3d667d4ce3c8-0
+00:13:47.480 --> 00:13:50.760
+So let's go back to the actual form.
+
+8565aac3-2f25-4fd4-8629-6da94916cbd7-0
+00:13:51.360 --> 00:13:53.560
+Here we have these three fields.
+
+4ffbb51e-2ae8-46e6-992d-a59cc8d27aa3-0
+00:13:53.840 --> 00:13:58.809
+So what we can do is that if we think
+that there are in majority of the cases
+
+4ffbb51e-2ae8-46e6-992d-a59cc8d27aa3-1
+00:13:58.809 --> 00:14:03.141
+three children is the norm,
+then the minimum repetitions we can set
+
+4ffbb51e-2ae8-46e6-992d-a59cc8d27aa3-2
+00:14:03.141 --> 00:14:06.199
+as one and maximum repetitions we can set
+as 3.
+
+09d5b2e7-742b-483e-9e0f-6df264f697ad-0
+00:14:06.600 --> 00:14:08.240
+So what does this do?
+
+983847f9-3239-46fa-8d46-c198e02d6e66-0
+00:14:08.240 --> 00:14:10.840
+It adds an add button and then delete
+button.
+
+8391091f-57c3-4f19-b299-3e020fccf2ac-0
+00:14:11.240 --> 00:14:14.600
+So it's it the this properties are saved.
+
+b4cb4e33-c9c9-4b62-b163-92883f5677fb-0
+00:14:14.600 --> 00:14:17.940
+Now if we go and check in the preview of
+the form,
+
+b4cb4e33-c9c9-4b62-b163-92883f5677fb-1
+00:14:17.940 --> 00:14:20.560
+so there is an option to preview a form.
+
+5a54ab20-79fb-458d-96c9-917e3067486b-0
+00:14:20.840 --> 00:14:25.736
+What we mean by preview is it's the user
+is the behavior of the form that the form
+
+5a54ab20-79fb-458d-96c9-917e3067486b-1
+00:14:25.736 --> 00:14:26.680
+filler will see.
+
+8cd756be-09a0-4667-a0fd-19472299dd72-0
+00:14:27.000 --> 00:14:30.480
+So we'll go and preview this form and.
+
+26853c45-dc22-477e-9abb-a04f37321800-0
+00:14:38.040 --> 00:14:44.080
+So now these are the this was that panel
+child one and date of birth.
+
+5b228cba-e3f1-4e3c-97ba-3a1833734d7f-0
+00:14:44.520 --> 00:14:49.160
+But if we want if we let's say the form
+filler has maybe 2 Childs.
+
+fa111f88-d698-47c7-aaa1-e59349c4d13e-0
+00:14:49.160 --> 00:14:53.675
+So he will go and click on add button,
+another of another instance of this panel
+
+fa111f88-d698-47c7-aaa1-e59349c4d13e-1
+00:14:53.675 --> 00:14:54.400
+will come up.
+
+3e2930c6-1da5-49c9-83bb-315134789b2e-0
+00:14:55.240 --> 00:14:59.000
+Let's say he has he or she has three
+children,
+
+3e2930c6-1da5-49c9-83bb-315134789b2e-1
+00:14:59.000 --> 00:15:02.760
+then they will go ahead and add another
+panel.
+
+611a3989-608d-4261-ab63-d43914d294d9-0
+00:15:03.320 --> 00:15:06.201
+And if someone adds a wants to remove
+these panels,
+
+611a3989-608d-4261-ab63-d43914d294d9-1
+00:15:06.201 --> 00:15:08.640
+they can just click on this delete
+buttons.
+
+63210a04-4907-4e12-a757-4cf13d790a20-0
+00:15:09.040 --> 00:15:12.189
+And since the minimum number of
+reputations was one,
+
+63210a04-4907-4e12-a757-4cf13d790a20-1
+00:15:12.189 --> 00:15:15.280
+you can't delete this first instance of
+this panel.
+
+5e170119-39c3-4fa6-928f-eee8112f81a1-0
+00:15:15.720 --> 00:15:22.200
+So this is this is related to the
+repeatability of this fields.
+
+06a9d07a-d3df-42e9-8174-7c03dc48bca8-0
+00:15:22.400 --> 00:15:28.300
+Now till now anyone has any queries
+related to what we have discussed or
+
+06a9d07a-d3df-42e9-8174-7c03dc48bca8-1
+00:15:28.300 --> 00:15:34.443
+anything that you guys want me to focus
+on on this this form I think I have
+
+06a9d07a-d3df-42e9-8174-7c03dc48bca8-2
+00:15:34.443 --> 00:15:38.000
+explained this particular UI of the
+editor.
+
+e7a09fb0-b378-4817-8a80-1aa6ebe12a33-0
+00:15:39.040 --> 00:15:42.458
+So one more thing that I would like to
+explain that Vijay was explaining before
+
+e7a09fb0-b378-4817-8a80-1aa6ebe12a33-1
+00:15:42.458 --> 00:15:42.800
+as well.
+
+668c1aab-2213-494b-89f7-aea3dc3fa789-0
+00:15:42.800 --> 00:15:44.480
+This is the adaptive form container.
+
+8e13899c-306e-447d-b3e8-b042550981b7-0
+00:15:44.720 --> 00:15:47.781
+If you want to add some components
+manually,
+
+8e13899c-306e-447d-b3e8-b042550981b7-1
+00:15:47.781 --> 00:15:51.320
+there is a plus button which is which
+shows as add.
+
+901bf758-fbce-4f22-983e-052cfb1df8a7-0
+00:15:51.400 --> 00:15:54.365
+If you click on it,
+you will get all the particular
+
+901bf758-fbce-4f22-983e-052cfb1df8a7-1
+00:15:54.365 --> 00:15:56.760
+components that are used to author a form.
+
+0ab0c0b9-18b3-49ec-9c47-34514f59ac67-0
+00:15:56.760 --> 00:16:01.720
+So you will have this checkbox button,
+e-mail component, text input component.
+
+bc5a7ade-9c3f-424a-bb21-7d3347f979fc-0
+00:16:01.720 --> 00:16:05.147
+So whatever we are seeing here,
+right like date of birth component,
+
+bc5a7ade-9c3f-424a-bb21-7d3347f979fc-1
+00:16:05.147 --> 00:16:07.920
+you can see that there will be a date
+input component.
+
+ef124045-f199-4584-97fc-d8509b73077f-0
+00:16:08.040 --> 00:16:10.640
+So style 1 is a text input component.
+
+8ce6ee7c-31fd-4dce-9742-e8b30dfee92d-0
+00:16:10.640 --> 00:16:15.261
+So all of the components are present here
+that are actually being used by the
+
+8ce6ee7c-31fd-4dce-9742-e8b30dfee92d-1
+00:16:15.261 --> 00:16:16.920
+assistant to build the form.
+
+cf8c1515-435e-4724-8458-5b1871d2f977-0
+00:16:17.080 --> 00:16:18.720
+So you can do that manually as well.
+
+56a46ede-4638-4e7f-be28-8e17ea39fdd3-0
+00:16:19.480 --> 00:16:22.534
+Other than that,
+you can obviously delete any component as
+
+56a46ede-4638-4e7f-be28-8e17ea39fdd3-1
+00:16:22.534 --> 00:16:23.000
+you want.
+
+7cb79471-acef-4b06-a9c3-37d27d3f6e86-0
+00:16:23.080 --> 00:16:26.200
+And here's the forms experience builders
+button.
+
+7003494f-c6ba-4601-95ad-6074a4729184-0
+00:16:26.480 --> 00:16:28.960
+So any queries till now in this
+particular form?
+
+9659f27a-8db0-469d-bfcf-295a7ea97528-0
+00:16:36.120 --> 00:16:38.960
+Hey Deep, just one question for me.
+
+1a8e01bd-42c0-4b5e-9b97-e74252f036a8-0
+00:16:40.520 --> 00:16:43.400
+Is it possible to make the labels dynamic
+as well?
+
+5600d70a-3139-48bd-9507-ec89dcc27ff1-0
+00:16:43.400 --> 00:16:50.720
+So you know in the child's section it has
+the label child 1.
+
+ef3014f4-4b14-4ebc-8c6b-2b3a4c4e7989-0
+00:16:51.200 --> 00:16:54.668
+You know,
+if if we wanted to for whatever reason
+
+ef3014f4-4b14-4ebc-8c6b-2b3a4c4e7989-1
+00:16:54.668 --> 00:16:59.411
+have that like a counter every time you
+add an additional section,
+
+ef3014f4-4b14-4ebc-8c6b-2b3a4c4e7989-2
+00:16:59.411 --> 00:17:01.960
+is there a way to make that dynamic?
+
+546a22c9-c7d4-4307-a76b-bcb5f9a3ea92-0
+00:17:03.080 --> 00:17:03.720
+Yes, Michael.
+
+9385c05e-0f2e-4061-a794-a86334df6198-0
+00:17:04.160 --> 00:17:05.720
+So it's a really nice question.
+
+d3d6c278-ee43-46c2-a8cf-4cbd32afd437-0
+00:17:05.720 --> 00:17:09.585
+And yeah, you can actually,
+there are lots of dynamic support that we
+
+d3d6c278-ee43-46c2-a8cf-4cbd32afd437-1
+00:17:09.585 --> 00:17:13.120
+provide in forms and majorly we provide
+it using a rule editor.
+
+f5897700-15a6-4e39-8006-e38916abfdb8-0
+00:17:13.120 --> 00:17:15.560
+So let me just show you for an example.
+
+52d49ba1-70d7-4926-9cf7-0a7d97bd94be-0
+00:17:16.000 --> 00:17:21.760
+So let's say that we want to whether you
+want you, you want to add something.
+
+96167206-6b72-4d86-9f0a-8ea4968b1e0f-0
+00:17:22.520 --> 00:17:22.840
+Yeah, yeah.
+
+56c04d8f-23c7-4d0b-83ba-a495a268158b-0
+00:17:22.840 --> 00:17:25.400
+I just want to say, yeah, yeah,
+this is something can be done.
+
+6383f46e-dcb2-48d7-88dc-9f8470281f9c-0
+00:17:25.640 --> 00:17:29.800
+Like let's say when you click on add,
+then it has to say child to and for the
+
+6383f46e-dcb2-48d7-88dc-9f8470281f9c-1
+00:17:29.800 --> 00:17:31.720
+third one, it has to be child third.
+
+a6a7f8c9-ab9a-4149-8616-0082ebe09eca-0
+00:17:31.960 --> 00:17:33.400
+That is something always feasible.
+
+ab2e39ea-b96a-4755-88b8-2869e69d6f37-0
+00:17:33.400 --> 00:17:38.135
+I think once we jump into rule editor,
+maybe we can show we have anyway planned
+
+ab2e39ea-b96a-4755-88b8-2869e69d6f37-1
+00:17:38.135 --> 00:17:42.160
+couple of rule editor dynamic behaviors
+and we can cover with that.
+
+530534f0-5dbd-4800-9fd7-13127ddc5852-0
+00:17:42.960 --> 00:17:45.840
+But before even going into the dynamic
+behavior,
+
+530534f0-5dbd-4800-9fd7-13127ddc5852-1
+00:17:45.840 --> 00:17:48.720
+I think maybe I just want to a couple of
+things.
+
+9655f05d-173c-4f00-99a9-93a093335a76-0
+00:17:49.120 --> 00:17:54.211
+So every component which deep was showing
+right has specialized like panel has a
+
+9655f05d-173c-4f00-99a9-93a093335a76-1
+00:17:54.211 --> 00:17:55.720
+repeatable capabilities.
+
+e1efc60f-29cd-4881-b2bc-8ddfaa89b277-0
+00:17:56.680 --> 00:18:00.520
+Similarly we for you to open any of the
+text field or number deep.
+
+110329ec-ea3c-481a-a536-c9d4b5219ee4-0
+00:18:01.280 --> 00:18:05.288
+Let's also show that we do have all kind
+of validations,
+
+110329ec-ea3c-481a-a536-c9d4b5219ee4-1
+00:18:05.288 --> 00:18:07.960
+OK customization capabilities we have.
+
+af587d87-2304-4a48-8c5c-2f2397ded57d-0
+00:18:07.960 --> 00:18:11.464
+So all the validation can be let's say
+make it required,
+
+af587d87-2304-4a48-8c5c-2f2397ded57d-1
+00:18:11.464 --> 00:18:14.600
+what should be the mean value,
+Max value patterns.
+
+cbd8b2c6-0b43-40de-ba64-c6f22d39ae9c-0
+00:18:14.840 --> 00:18:18.342
+So and if some error happens when that
+pattern is not followed,
+
+cbd8b2c6-0b43-40de-ba64-c6f22d39ae9c-1
+00:18:18.342 --> 00:18:22.720
+what should be the error message should
+be configured even in case of required.
+
+b5642ac3-fbce-481c-8f35-f22eb4b5866f-0
+00:18:22.960 --> 00:18:25.760
+So all such capabilities are available.
+
+407ae961-5690-4a64-88fa-fb4efc17b3ad-0
+00:18:26.040 --> 00:18:32.680
+It's up to the author on how deep it has
+to use right and error message.
+
+29395959-1936-49d4-b282-2c4f8b4684cc-0
+00:18:32.880 --> 00:18:37.280
+Something I just want to again touch up
+on is that if author is not writing error
+
+29395959-1936-49d4-b282-2c4f8b4684cc-1
+00:18:37.280 --> 00:18:39.320
+message, there is a system by default.
+
+6aab8b73-aa12-4d43-9894-a49851edc05e-0
+00:18:39.320 --> 00:18:42.767
+Add some of the default message for
+required main length,
+
+6aab8b73-aa12-4d43-9894-a49851edc05e-1
+00:18:42.767 --> 00:18:47.760
+Max length which is mostly typically used
+by common browsers like especially Chrome
+
+6aab8b73-aa12-4d43-9894-a49851edc05e-2
+00:18:47.760 --> 00:18:49.960
+similar to what Chrome's it provides.
+
+f131ce5b-fbff-4439-aaf5-cd21bd79e374-0
+00:18:49.960 --> 00:18:52.320
+So that's what it is, a fall back.
+
+1bba8100-8538-4268-a867-00e42aa1edfb-0
+00:18:52.320 --> 00:18:57.080
+So and every component has different
+variety of validations.
+
+4cd75347-e452-4658-89b6-fdb6ccb29a58-0
+00:18:57.080 --> 00:19:00.472
+For example,
+data has a different min date and Max
+
+4cd75347-e452-4658-89b6-fdb6ccb29a58-1
+00:19:00.472 --> 00:19:03.000
+date, but number it will be different.
+
+90b5aecf-18c7-4f82-a249-62303ea03dcc-0
+00:19:03.760 --> 00:19:03.920
+Yeah.
+
+5d6900a4-6215-4931-89a7-94bca9504473-0
+00:19:06.680 --> 00:19:09.560
+And formatting since we are in it date.
+
+a50fc247-364c-4d8f-a1bb-9104952b82a8-0
+00:19:09.800 --> 00:19:12.240
+So we have also have capabilities of
+formatting.
+
+391e9d3f-1831-4eae-a746-960031572cf1-0
+00:19:12.240 --> 00:19:16.453
+Let's say maybe user is ending some value,
+but once user enter came out of that
+
+391e9d3f-1831-4eae-a746-960031572cf1-1
+00:19:16.453 --> 00:19:19.087
+field,
+we want to show it as like maybe currency,
+
+391e9d3f-1831-4eae-a746-960031572cf1-2
+00:19:19.087 --> 00:19:21.457
+right,
+show dollar value or some currency or
+
+391e9d3f-1831-4eae-a746-960031572cf1-3
+00:19:21.457 --> 00:19:22.880
+money maybe numeric format.
+
+2be15d66-4282-4c0a-a3bc-2d79eaa363f7-0
+00:19:23.080 --> 00:19:25.800
+So we do have support of all this game.
+
+7ace725c-e828-40bd-8fc8-cd5a67875ac1-0
+00:19:26.120 --> 00:19:28.320
+So I'm just don't want to go into all the
+levels.
+
+56a8df90-ec00-43fa-a57b-33713b7b1b9f-0
+00:19:28.320 --> 00:19:30.468
+But yeah,
+this has something you can always
+
+56a8df90-ec00-43fa-a57b-33713b7b1b9f-1
+00:19:30.468 --> 00:19:34.520
+leverage all basic features of the forms
+will be you will be able to see all this.
+
+1d7a9d87-4b6b-48e6-a8ce-2190d1fb567b-0
+00:19:38.240 --> 00:19:41.547
+Yeah, maybe, yeah,
+we can now maybe jump into dynamic
+
+1d7a9d87-4b6b-48e6-a8ce-2190d1fb567b-1
+00:19:41.547 --> 00:19:42.160
+behaviors.
+
+4362c02e-d2ad-4e68-963f-1479b07cfaa2-0
+00:19:43.160 --> 00:19:48.328
+OK, So let me just quick,
+I have planned to show dynamic behaviors
+
+4362c02e-d2ad-4e68-963f-1479b07cfaa2-1
+00:19:48.328 --> 00:19:49.640
+in the next form.
+
+65f163d8-71fc-42ae-8cf9-cbd2b064908e-0
+00:19:50.000 --> 00:19:51.840
+So let me move on to that.
+
+ad8a068d-50b5-4edf-9fc5-694c9d59ea26-0
+00:19:51.880 --> 00:19:55.013
+I think Michael,
+for now related to your question of
+
+ad8a068d-50b5-4edf-9fc5-694c9d59ea26-1
+00:19:55.013 --> 00:19:59.269
+dynamic authoring and those things,
+I think which I explained it really
+
+ad8a068d-50b5-4edf-9fc5-694c9d59ea26-2
+00:19:59.269 --> 00:20:03.466
+nicely related to the presence of
+validation support and dynamic error
+
+ad8a068d-50b5-4edf-9fc5-694c9d59ea26-3
+00:20:03.466 --> 00:20:05.239
+messages that you can provide.
+
+d569a8d2-20ce-4e1c-93c4-2c3ad666e883-0
+00:20:06.160 --> 00:20:11.120
+But yeah, in the next form,
+I will show you how you can use our roles
+
+d569a8d2-20ce-4e1c-93c4-2c3ad666e883-1
+00:20:11.120 --> 00:20:16.080
+editor to do some add some really good
+dynamic features in your form.
+
+7a390ac4-5563-46bd-a806-06424ea6f356-0
+00:20:16.480 --> 00:20:20.240
+So let me move on to then the second form.
+
+98d91489-e56e-4eb3-b52d-e9123d516ecc-0
+00:20:21.360 --> 00:20:25.960
+This is one form that I found of Clark
+County Social Service Complaint form.
+
+664d7536-bb1a-44a7-b156-77658b181ad2-0
+00:20:26.440 --> 00:20:31.492
+So, and it's is the,
+is my screen big enough for everyone to
+
+664d7536-bb1a-44a7-b156-77658b181ad2-1
+00:20:31.492 --> 00:20:33.480
+see this clearly, right?
+
+67c202ad-b404-4e12-a3a6-547ae712d18e-0
+00:20:34.600 --> 00:20:35.400
+Yep, yes.
+
+00e7b798-e5f4-4c8a-a5c3-434a78cc00ea-0
+00:20:35.400 --> 00:20:41.197
+OK, so, so first of all,
+what we'll do is we'll again create this
+
+00e7b798-e5f4-4c8a-a5c3-434a78cc00ea-1
+00:20:41.197 --> 00:20:44.360
+particular form using our assistant.
+
+b95a6a4b-6564-468a-b935-8f3159a6de1e-0
+00:20:44.360 --> 00:20:50.285
+And the dynamic behavior that I want to
+showcase in this particular form is so
+
+b95a6a4b-6564-468a-b935-8f3159a6de1e-1
+00:20:50.285 --> 00:20:52.760
+you can see this in this address.
+
+a24bc1c2-57eb-4eb7-8c88-484ae021ee2c-0
+00:20:52.760 --> 00:20:55.907
+We were discussing this before as well
+right that the city,
+
+a24bc1c2-57eb-4eb7-8c88-484ae021ee2c-1
+00:20:55.907 --> 00:20:59.160
+state and zip code we can auto fill a
+lots of things in this.
+
+227f3f2b-585e-4f3d-a477-1295f4167e65-0
+00:20:59.160 --> 00:21:07.648
+So I found a few public APIs where you
+can fetch the city and state values for a
+
+227f3f2b-585e-4f3d-a477-1295f4167e65-1
+00:21:07.648 --> 00:21:09.640
+particular support.
+
+1c69cd1c-8330-4bea-a74f-a79221f4abd9-0
+00:21:09.720 --> 00:21:14.728
+So what I will do is I will show you guys
+how to create this integration that if
+
+1c69cd1c-8330-4bea-a74f-a79221f4abd9-1
+00:21:14.728 --> 00:21:19.489
+the form filler enters his zip code,
+you can simply auto fetch the state and
+
+1c69cd1c-8330-4bea-a74f-a79221f4abd9-2
+00:21:19.489 --> 00:21:24.312
+city corresponding to the APIs and they
+fill the forms corresponding to those
+
+1c69cd1c-8330-4bea-a74f-a79221f4abd9-3
+00:21:24.312 --> 00:21:27.280
+particular zip code entered by the form
+filler.
+
+88dff69d-6253-4a3a-bc5d-812ce260be82-0
+00:21:27.640 --> 00:21:32.600
+So let's move ahead to creation of the
+form.
+
+f741ace7-353a-488e-8d2a-82beb16f2fa2-0
+00:21:34.920 --> 00:21:39.400
+Let me go to this Cloud County complaint
+form.
+
+55ba4de0-7509-4ea1-a1df-406501c5b48c-0
+00:21:39.400 --> 00:21:42.400
+This is again an empty form that I had
+created beforehand.
+
+a6c22c26-27ea-4536-ac8c-06b8098db567-0
+00:21:42.760 --> 00:21:45.040
+So I'm closing this ombudsman form for
+now.
+
+44e4cd06-0867-45a8-ba2b-79f509ac3d7c-0
+00:21:45.480 --> 00:21:47.680
+We can go back to it if it's required.
+
+bd8675cd-871d-4589-aa5c-7754f200df3e-0
+00:21:48.440 --> 00:21:50.040
+So again, the same UI is opened up.
+
+4f296e50-9a41-4793-bf5b-9d592ea66dce-0
+00:21:50.040 --> 00:21:52.440
+You can see one forms experience builder
+tab.
+
+775e67ce-59e2-4ce1-a828-87145e10372b-0
+00:21:52.440 --> 00:21:56.860
+This is the content tree and this is the
+empty adaptive form that is already
+
+775e67ce-59e2-4ce1-a828-87145e10372b-1
+00:21:56.860 --> 00:21:57.320
+present.
+
+d2c56548-ffdd-4d39-809f-9a7ed003f451-0
+00:21:57.320 --> 00:22:01.400
+So let me go to the forms experience
+builder here.
+
+ae2e318d-7381-453e-98fc-6138aa353641-0
+00:22:01.400 --> 00:22:05.800
+What I want to do is now we have this PDF
+of CCS complaint form.
+
+064ecf71-1817-4674-bf01-3e1b849e1876-0
+00:22:06.120 --> 00:22:12.200
+So previously we used an image to
+generate the form using your system.
+
+53144fe5-16e9-45af-beaf-a421aff1f4e1-0
+00:22:12.560 --> 00:22:19.233
+Now we can simply attach this PDF and
+again on typing this/ you will get the
+
+53144fe5-16e9-45af-beaf-a421aff1f4e1-1
+00:22:19.233 --> 00:22:20.880
+available commands.
+
+5e894cef-0959-4d78-9198-73e02dab46f0-0
+00:22:20.880 --> 00:22:31.280
+So we'll go and select Add form using the
+file, let it generate.
+
+a2d81790-3113-485f-954c-3758f77168f7-0
+00:22:57.760 --> 00:22:59.640
+So in the meantime, it comes up.
+
+1e4d66d0-391e-4b25-ac77-82426fff8359-0
+00:22:59.640 --> 00:23:02.320
+So I want to just touch base on the
+couple of more things.
+
+da9c31d7-9f13-4ab7-802d-3bbef74f0805-0
+00:23:02.360 --> 00:23:03.640
+And yeah, I think it's already there.
+
+e8de5b5c-56c9-463b-8961-77b7aaf04a8a-0
+00:23:03.760 --> 00:23:03.960
+Yeah.
+
+72adc277-3821-459d-81e3-e6c2431df34c-0
+00:23:03.960 --> 00:23:05.200
+So yes, maybe it quit.
+
+263bf06a-0065-4174-8eb8-3f740c65da93-0
+00:23:06.000 --> 00:23:08.801
+OK, So again,
+we have the preview of the form and I
+
+263bf06a-0065-4174-8eb8-3f740c65da93-1
+00:23:08.801 --> 00:23:11.280
+will just go ahead and simply click on
+apply.
+
+4a8e0f6b-991a-47aa-9f59-a7ec556af224-0
+00:23:12.120 --> 00:23:18.332
+So it will apply the changes and in this
+file showcase some manual steps so that
+
+4a8e0f6b-991a-47aa-9f59-a7ec556af224-1
+00:23:18.332 --> 00:23:21.400
+everyone can get the feel of the return.
+
+453fb629-65bc-4f03-a8d1-389609913d8f-0
+00:23:21.400 --> 00:23:24.480
+How you can manually add and delete
+components so.
+
+41cfcea4-3b66-4252-8b23-5947e5bf9921-0
+00:23:32.640 --> 00:23:35.689
+So deep,
+actually there was an active form already
+
+41cfcea4-3b66-4252-8b23-5947e5bf9921-1
+00:23:35.689 --> 00:23:38.440
+available and you,
+you asked create one more.
+
+2415e8b7-39d1-4ab1-840d-8208940bcb7f-0
+00:23:38.440 --> 00:23:42.600
+So maybe there are two forms now in this.
+
+d34ce424-7019-4673-93ce-563562340250-0
+00:23:44.480 --> 00:23:48.112
+OK, yeah,
+maybe just delete all the forms which you
+
+d34ce424-7019-4673-93ce-563562340250-1
+00:23:48.112 --> 00:23:49.440
+already have, yeah.
+
+f224298b-ea07-4955-8d60-803845c1dbb9-0
+00:24:00.480 --> 00:24:16.410
+Let me try to generate it again using the
+same PDF sister CCS complaint from PDF
+
+f224298b-ea07-4955-8d60-803845c1dbb9-1
+00:24:16.410 --> 00:24:19.360
+for using file.
+
+1e355ab7-4234-42ab-9317-84f2c64d7676-0
+00:24:26.090 --> 00:24:29.440
+SO and is it not always necessary?
+
+31253f14-a6d3-4f25-a110-089cc80cfbc1-0
+00:24:29.440 --> 00:24:32.816
+Maybe you already have a form and maybe
+you want to add it,
+
+31253f14-a6d3-4f25-a110-089cc80cfbc1-1
+00:24:32.816 --> 00:24:37.263
+let's say a few more fields and you have
+a screenshot or a Figma or XD already
+
+31253f14-a6d3-4f25-a110-089cc80cfbc1-2
+00:24:37.263 --> 00:24:41.766
+available where you can just take that
+screenshot and you can use the add panel
+
+31253f14-a6d3-4f25-a110-089cc80cfbc1-3
+00:24:41.766 --> 00:24:42.160
+option.
+
+1f4a5226-50c3-4b99-8833-335a251fef08-0
+00:24:42.400 --> 00:24:46.005
+So that like add form,
+there is a add panel where you can say
+
+1f4a5226-50c3-4b99-8833-335a251fef08-1
+00:24:46.005 --> 00:24:49.320
+just add this new panel based on the
+screenshot content.
+
+a24038b9-3d62-4ae1-b911-1241629c6660-0
+00:24:49.320 --> 00:24:51.120
+So it will just go and create it.
+
+e7354add-455c-4a28-8814-9adcb76e219e-0
+00:24:52.040 --> 00:24:54.480
+So that is also even something which we
+have available.
+
+7ba8110b-9cad-471f-b289-d1ae7109991c-0
+00:24:54.480 --> 00:24:54.600
+Sure.
+
+6987c2e9-57a2-4be7-90e4-70f66468ed91-0
+00:24:58.040 --> 00:25:00.720
+So this is the generated form.
+
+d69e76a7-013f-4ade-b365-55fa000a2ad7-0
+00:25:00.720 --> 00:25:03.430
+Now,
+previously we were discussing about how
+
+d69e76a7-013f-4ade-b365-55fa000a2ad7-1
+00:25:03.430 --> 00:25:06.080
+you can manually delete and add
+components.
+
+613156a3-7878-4bbb-93b1-99fcfbf304eb-0
+00:25:06.080 --> 00:25:07.280
+So let me just show you.
+
+0280be30-082c-470b-8a35-e0297bd60506-0
+00:25:09.360 --> 00:25:14.080
+So we will delete these three fields from
+the content tree as well.
+
+6d38f6df-1d19-436b-bb5b-2c9de1494981-0
+00:25:14.080 --> 00:25:14.480
+We'll show.
+
+8dab3ca0-acf2-4ca5-b5d1-9f42c4055344-0
+00:25:14.480 --> 00:25:17.560
+So you can select the fields from the
+editor and delete.
+
+c1226d75-0e73-4474-9708-7b6e4217a2db-0
+00:25:17.560 --> 00:25:21.940
+So right now I'm selecting the state
+field and deleting it from the from
+
+c1226d75-0e73-4474-9708-7b6e4217a2db-1
+00:25:21.940 --> 00:25:26.620
+manually rather than going in the general
+assistant and deleting it from that
+
+c1226d75-0e73-4474-9708-7b6e4217a2db-2
+00:25:26.620 --> 00:25:27.640
+particular place.
+
+c9537a64-40a3-45f2-92d2-866e6c2e1242-0
+00:25:28.080 --> 00:25:31.680
+Or you can select it from the content
+tree and delete it from here.
+
+0d357462-fad1-4154-93a0-edc4cdf176f3-0
+00:25:32.360 --> 00:25:36.080
+So we have deleted support state and city.
+
+b8769629-e305-492b-b8b9-a172f2ba6ea6-0
+00:25:36.080 --> 00:25:41.284
+Let me add them back again manually in
+that flight information or maybe in that
+
+b8769629-e305-492b-b8b9-a172f2ba6ea6-1
+00:25:41.284 --> 00:25:42.520
+active form itself.
+
+663e436f-39d1-414b-b1e0-e0fc85e8390d-0
+00:25:43.160 --> 00:25:45.760
+So these are three text inputs.
+
+fad8436d-6c33-4bba-868d-ef5ef17b31f8-0
+00:25:48.120 --> 00:25:54.219
+So let me add this pre text and push
+quickly and then we will rename them
+
+fad8436d-6c33-4bba-868d-ef5ef17b31f8-1
+00:25:54.219 --> 00:25:56.280
+using the property sheet.
+
+5a21dab3-9513-4b7c-85c9-b5ffa53da2b0-0
+00:25:56.280 --> 00:26:00.880
+So yeah.
+
+1b37fe57-bfe4-4cb0-9310-55c28faffebd-0
+00:26:01.640 --> 00:26:05.840
+And now these are the three text inputs
+that got added.
+
+785acf72-d295-433f-9034-824b30d3e817-0
+00:26:06.280 --> 00:26:10.120
+Let me quickly go to the property sheet
+and rename them.
+
+626f7917-6a65-4408-bb8e-c0758f88daad-0
+00:26:10.640 --> 00:26:13.720
+So here we have this title field.
+
+f6115b66-88a8-407d-91b1-dd7c2cde45ac-0
+00:26:15.040 --> 00:26:22.270
+This is what will show what you will see
+in the form in July and then this is the
+
+f6115b66-88a8-407d-91b1-dd7c2cde45ac-1
+00:26:22.270 --> 00:26:23.240
+name field.
+
+8b0a3366-d208-4225-9a0e-0b706130e185-0
+00:26:23.640 --> 00:26:29.979
+So I can name it anything like zip
+code_name and so now as you can see this
+
+8b0a3366-d208-4225-9a0e-0b706130e185-1
+00:26:29.979 --> 00:26:33.400
+the title field got updated for zip code.
+
+af1b1d45-6006-4aba-89eb-6a726b59305d-0
+00:26:33.400 --> 00:26:36.400
+Similarly, we will do for city and state.
+
+a0ad3a09-5d88-4b18-abd6-233ab3b34e71-0
+00:26:51.360 --> 00:26:51.560
+Yeah.
+
+435b6e74-6476-448d-90f9-a0cfcd1ad88b-0
+00:26:52.080 --> 00:26:57.280
+So previously we were talking about in
+this form we will show the dynamic API
+
+435b6e74-6476-448d-90f9-a0cfcd1ad88b-1
+00:26:57.280 --> 00:26:58.080
+integration.
+
+d69f51c9-4ee6-4ba4-a920-491713fa0a84-0
+00:26:58.440 --> 00:27:02.920
+So the API that I'm going to use is
+provided by zip code base.
+
+a3d2258b-9e63-42df-bf31-d8b1efa3f352-0
+00:27:03.600 --> 00:27:08.451
+You can use any APIs,
+any API that you can access publicly be
+
+a3d2258b-9e63-42df-bf31-d8b1efa3f352-1
+00:27:08.451 --> 00:27:12.520
+behind authentication or an anonymous
+APIs as well.
+
+d1873654-f0f2-4bcb-99a6-be4902742597-0
+00:27:12.520 --> 00:27:14.360
+I'm using the zip code based API.
+
+308119c1-9db2-4a45-8412-1e019dd4be36-0
+00:27:15.200 --> 00:27:17.120
+So what does API do?
+
+9ed87895-32fb-4415-876e-44b014615efe-0
+00:27:17.120 --> 00:27:23.107
+So basically it exposes an API with this
+particular coordinate and whenever you
+
+9ed87895-32fb-4415-876e-44b014615efe-1
+00:27:23.107 --> 00:27:28.720
+call it using some zip code it will
+return you back a particular response.
+
+d7f34e74-e01b-45f4-8067-3cf65e907d63-0
+00:27:28.720 --> 00:27:30.680
+So let me show you exactly what it does.
+
+d704cd12-0557-4c8e-81a3-1e097e6e6f7b-0
+00:27:31.240 --> 00:27:35.760
+So if I just do it on the browser.
+
+39276de2-5d13-4652-ab73-6c077702720c-0
+00:27:36.080 --> 00:27:41.812
+So as you can see I'm providing it a code
+10005 and country as us to restrict the
+
+39276de2-5d13-4652-ab73-6c077702720c-1
+00:27:41.812 --> 00:27:44.120
+zip code search in the US region.
+
+98f7ef73-7700-4af6-91d2-262b070311a0-0
+00:27:44.120 --> 00:27:47.986
+And if I run it,
+so just writing me with the details of
+
+98f7ef73-7700-4af6-91d2-262b070311a0-1
+00:27:47.986 --> 00:27:51.576
+let's say postal code, the country code,
+lat, long,
+
+98f7ef73-7700-4af6-91d2-262b070311a0-2
+00:27:51.576 --> 00:27:55.027
+lat long coordinates of that particular
+zip code,
+
+98f7ef73-7700-4af6-91d2-262b070311a0-3
+00:27:55.027 --> 00:27:58.824
+and then which city actually this zip
+code belongs to,
+
+98f7ef73-7700-4af6-91d2-262b070311a0-4
+00:27:58.824 --> 00:28:02.760
+which state it belongs to,
+which province it belongs to.
+
+15da62c4-556d-4b25-b30d-b4f08a4b2e01-0
+00:28:02.760 --> 00:28:07.611
+So I'm going to integrate this
+particularly in the form and show how
+
+15da62c4-556d-4b25-b30d-b4f08a4b2e01-1
+00:28:07.611 --> 00:28:13.095
+dynamically these two fields can be
+filled once the form filler fills the zip
+
+15da62c4-556d-4b25-b30d-b4f08a4b2e01-2
+00:28:13.095 --> 00:28:14.080
+code property.
+
+f96b7eb5-8880-409b-b65b-4c63ce835cd9-0
+00:28:14.560 --> 00:28:18.388
+So to do that,
+first of all there is let me explain,
+
+f96b7eb5-8880-409b-b65b-4c63ce835cd9-1
+00:28:18.388 --> 00:28:21.640
+let me introduce to the concept of
+rollator.
+
+533770fd-16c8-455e-9836-337b819cbd63-0
+00:28:21.800 --> 00:28:26.856
+So in any field you just click and there
+is a button where you can see a hammer
+
+533770fd-16c8-455e-9836-337b819cbd63-1
+00:28:26.856 --> 00:28:28.120
+button more or less.
+
+28cb6e9d-9760-47a1-98d8-14d6de9414ce-0
+00:28:28.520 --> 00:28:32.000
+And if you hover over it,
+it says rollator if you click on it.
+
+df963db9-ab20-4e6b-9dc6-d8b2f44e6dcc-0
+00:28:32.600 --> 00:28:38.072
+So if you click on it,
+you will get you will see lots of options
+
+df963db9-ab20-4e6b-9dc6-d8b2f44e6dcc-1
+00:28:38.072 --> 00:28:43.040
+and here you will see an option of create
+API integration.
+
+023cf7dd-3e31-4add-9db0-27f0c7da7ee6-0
+00:28:43.320 --> 00:28:47.222
+So wherever you want to integrate with a
+particular API,
+
+023cf7dd-3e31-4add-9db0-27f0c7da7ee6-1
+00:28:47.222 --> 00:28:50.440
+you will have to create a new API
+integration.
+
+c36b51bd-e3cb-4b28-acc6-3f617134a6af-0
+00:28:51.240 --> 00:28:52.760
+So let me go here.
+
+33dd7b09-bbbc-49cf-afbd-969c42c46f38-0
+00:28:53.120 --> 00:29:00.655
+And so I hadn't actually previously
+created an API integration,
+
+33dd7b09-bbbc-49cf-afbd-969c42c46f38-1
+00:29:00.655 --> 00:29:05.600
+but just do one thing, show you from here.
+
+5db12867-79a7-4a91-a650-a790c0d24ce9-0
+00:29:06.040 --> 00:29:13.360
+So I will go to the create button and
+here I will explain this.
+
+640d4d37-b95e-4ba8-b093-ca2915f4d3ab-0
+00:29:13.360 --> 00:29:14.520
+I just want to show.
+
+34513e0a-d539-49d8-93b0-d7c99f005c84-0
+00:29:25.280 --> 00:29:29.128
+So yeah,
+so this is the API integration that I
+
+34513e0a-d539-49d8-93b0-d7c99f005c84-1
+00:29:29.128 --> 00:29:32.240
+have created beforehand for this call.
+
+0fba591b-9756-4911-9517-7a37b4091ad2-0
+00:29:33.920 --> 00:29:37.645
+This was the same interface that we
+received when we clicked on the Create
+
+0fba591b-9756-4911-9517-7a37b4091ad2-1
+00:29:37.645 --> 00:29:38.440
+API integration.
+
+d1bfe126-3b44-433e-af9d-5a5d6759b0e8-0
+00:29:38.440 --> 00:29:42.797
+So what I have done here is I have
+provided the API URL which we need to
+
+d1bfe126-3b44-433e-af9d-5a5d6759b0e8-1
+00:29:42.797 --> 00:29:47.572
+call As you can see in the browser also
+we are calling this particular URL app.
+
+d1bfe126-3b44-433e-af9d-5a5d6759b0e8-2
+00:29:47.572 --> 00:29:50.080
+zipcodebase.com and their search endpoint.
+
+83a133ad-5beb-4c64-8f13-4a6618e54458-0
+00:29:50.440 --> 00:29:52.120
+So I'm using the same API URL.
+
+209f7e21-24aa-47b0-8794-a64a0360fbc7-0
+00:29:52.120 --> 00:29:56.475
+The method that we are calling is GET and
+the content type is basically Jason that
+
+209f7e21-24aa-47b0-8794-a64a0360fbc7-1
+00:29:56.475 --> 00:29:57.840
+you're receiving the data.
+
+968aec9e-b30d-46e4-ae57-7c18a01f1592-0
+00:29:58.840 --> 00:30:02.190
+After that because this is an
+authenticated API,
+
+968aec9e-b30d-46e4-ae57-7c18a01f1592-1
+00:30:02.190 --> 00:30:06.840
+had to share the API key here that it is
+receiving a default value.
+
+ba23f816-9ebe-44f9-92bc-50ece10b8e5f-0
+00:30:07.280 --> 00:30:12.657
+Other than that there are two inputs that
+that that this API integration will
+
+ba23f816-9ebe-44f9-92bc-50ece10b8e5f-1
+00:30:12.657 --> 00:30:13.760
+require from us.
+
+8c9d8992-a7ba-48e8-bc37-9c0b0ea70dd6-0
+00:30:14.200 --> 00:30:16.320
+One is country and the other is codes.
+
+09903757-a35b-449f-93d8-043185c47415-0
+00:30:16.320 --> 00:30:22.515
+Codes is basically the zip code and then
+we have configured the output that this
+
+09903757-a35b-449f-93d8-043185c47415-1
+00:30:22.515 --> 00:30:23.280
+API gives.
+
+fe04393a-ee5b-4f9e-a57f-b0679ff64e49-0
+00:30:23.280 --> 00:30:29.189
+So as we can see this API provides in the
+results are it provides the zip code and
+
+fe04393a-ee5b-4f9e-a57f-b0679ff64e49-1
+00:30:29.189 --> 00:30:33.960
+then it provides the object where you can
+fetch the actual fields.
+
+5721c8ef-9c00-41b2-b658-00c901ed8f4f-0
+00:30:34.440 --> 00:30:38.121
+In Adobe,
+we have an A library named Jason formula
+
+5721c8ef-9c00-41b2-b658-00c901ed8f4f-1
+00:30:38.121 --> 00:30:44.040
+using which we are parsing the output and
+we are mapping these outputs the output
+
+5721c8ef-9c00-41b2-b658-00c901ed8f4f-2
+00:30:44.040 --> 00:30:47.000
+that we're getting in this particular UI.
+
+831f5df4-d94c-4db9-9746-37497c940f8d-0
+00:30:47.400 --> 00:30:51.199
+So for us what we require,
+we want the city field that we're getting
+
+831f5df4-d94c-4db9-9746-37497c940f8d-1
+00:30:51.199 --> 00:30:55.659
+from the results and the state field that
+we're getting from the results of this
+
+831f5df4-d94c-4db9-9746-37497c940f8d-2
+00:30:55.659 --> 00:30:55.879
+API.
+
+5d8a01cb-54c7-4ade-b798-1b894016e99b-0
+00:30:56.400 --> 00:31:00.672
+We have mapped it in the output and now
+while creating the rules we will be able
+
+5d8a01cb-54c7-4ade-b798-1b894016e99b-1
+00:31:00.672 --> 00:31:01.200
+to use it.
+
+454ef13b-d861-4706-8cc7-881b60416b9e-0
+00:31:01.440 --> 00:31:03.640
+So let me show how we can use this.
+
+fbc223e2-68a6-4b25-a940-d78e65c24756-0
+00:31:04.120 --> 00:31:06.600
+So let me first save this paper
+integration.
+
+e8d5c219-7d90-49f2-973e-9e86951cbac2-0
+00:31:08.280 --> 00:31:12.280
+Now let me explain what this rule later
+UI means right now.
+
+823496bd-7398-469f-9ff8-5aeb237792e3-0
+00:31:12.640 --> 00:31:18.740
+So what we want to do is as and when the
+customer or the form filler types the zip
+
+823496bd-7398-469f-9ff8-5aeb237792e3-1
+00:31:18.740 --> 00:31:21.901
+code,
+we want the state and city fields to
+
+823496bd-7398-469f-9ff8-5aeb237792e3-2
+00:31:21.901 --> 00:31:24.400
+basically autofill using this API.
+
+568ec2e8-8f66-43df-acd3-66fc2b7c7ff1-0
+00:31:24.920 --> 00:31:30.495
+So we are creating this rule that when
+our zip code field is changed here you
+
+568ec2e8-8f66-43df-acd3-66fc2b7c7ff1-1
+00:31:30.495 --> 00:31:36.000
+can have multiple options so you can make
+it is equal to a particular field.
+
+f02fc105-d948-42ed-96b8-5409f4973f13-0
+00:31:36.040 --> 00:31:39.360
+So this is basically when this should
+rules execute.
+
+5d6b8572-aa9a-4b76-b9ad-29c1156663d1-0
+00:31:39.680 --> 00:31:45.626
+So right now what we want each time the
+zip code changes we want to make this API
+
+5d6b8572-aa9a-4b76-b9ad-29c1156663d1-1
+00:31:45.626 --> 00:31:50.847
+call from our client and fetch the
+corresponding state and city for the
+
+5d6b8572-aa9a-4b76-b9ad-29c1156663d1-2
+00:31:50.847 --> 00:31:52.079
+changed zip code.
+
+7434ca9e-3e0b-419a-8285-ee13c1db02d2-0
+00:31:52.400 --> 00:31:57.000
+So whenever this zip code changes we want
+to invoke this particular API.
+
+74f2828f-1cf7-4c6a-84bd-bd2ab89fdae5-0
+00:31:57.360 --> 00:32:02.997
+Now in the invoke in the then also you
+will have multiple options to select in
+
+74f2828f-1cf7-4c6a-84bd-bd2ab89fdae5-1
+00:32:02.997 --> 00:32:03.640
+our case.
+
+01f4d390-466d-4ce1-9583-5acf1495f49e-0
+00:32:04.640 --> 00:32:08.600
+So in our case you we are using invoke
+service.
+
+43892121-bce9-4289-9a81-1658024a37eb-0
+00:32:08.840 --> 00:32:12.920
+But I think Michael you are talking about
+how we can dynamically set the label.
+
+56d694ec-d119-42ab-a583-df88a06a2890-0
+00:32:13.160 --> 00:32:16.011
+So if you want to dynamically set the
+label,
+
+56d694ec-d119-42ab-a583-df88a06a2890-1
+00:32:16.011 --> 00:32:21.081
+you can select set property and here you
+will get the label dot value option to
+
+56d694ec-d119-42ab-a583-df88a06a2890-2
+00:32:21.081 --> 00:32:23.680
+change dynamically on a particular event.
+
+f9fe4d30-0737-494d-a9e2-ae850b3abd1e-0
+00:32:24.640 --> 00:32:27.622
+For now,
+let me go back and select the invoke
+
+f9fe4d30-0737-494d-a9e2-ae850b3abd1e-1
+00:32:27.622 --> 00:32:28.400
+service API.
+
+32f73ce5-de45-4b0e-b285-f1ef82773587-0
+00:32:28.680 --> 00:32:34.073
+So we are using the get location details
+API and now we have to fill the input
+
+32f73ce5-de45-4b0e-b285-f1ef82773587-1
+00:32:34.073 --> 00:32:36.600
+values that are required for the API.
+
+58a02827-2abc-4e3f-a5dd-0cb678013955-0
+00:32:37.320 --> 00:32:41.680
+So this country field as we saw,
+we want to restrict this for us.
+
+ef717edc-fbff-44a8-b0e1-e285920e7e81-0
+00:32:41.680 --> 00:32:44.520
+So we'll just go ahead and type string as
+us.
+
+46927c20-ee42-4490-b817-fccb9381753b-0
+00:32:45.320 --> 00:32:49.141
+Then this codes is something that the
+customer is filling in the zip,
+
+46927c20-ee42-4490-b817-fccb9381753b-1
+00:32:49.141 --> 00:32:49.960
+zip code input.
+
+139c9098-714a-4db2-bdfa-07b8f542737b-0
+00:32:49.960 --> 00:32:56.440
+So we will go and select the zip code
+field from the form object drop down.
+
+1401b6a1-abc9-4018-b1c8-23d3c463a973-0
+00:32:56.440 --> 00:33:03.320
+So here we are seeing the zip code_name
+and we select it and in the API KEY again.
+
+f5964bd9-d13c-4046-b6b3-817154a83207-0
+00:33:03.320 --> 00:33:13.996
+This is a static string so I'm Just going
+to enter the string value for for my API
+
+f5964bd9-d13c-4046-b6b3-817154a83207-1
+00:33:13.996 --> 00:33:24.802
+KEY Then once you make this call you have
+to mention that what happens when the API
+
+f5964bd9-d13c-4046-b6b3-817154a83207-2
+00:33:24.802 --> 00:33:25.960
+succeeds.
+
+9f5dd173-c266-4ca5-92aa-b79f5b667031-0
+00:33:26.240 --> 00:33:29.960
+So when we have an success handler and
+and failure handler as well.
+
+6ecb8275-96ce-4f43-9f62-7fc7ad8663dd-0
+00:33:30.240 --> 00:33:33.400
+So right now I will just configure the
+success handler.
+
+1d3b74ac-de4b-45d0-94c9-098528f285e6-0
+00:33:33.840 --> 00:33:39.300
+So here what we want to do is once the
+API succeeds we want to set value of 2
+
+1d3b74ac-de4b-45d0-94c9-098528f285e6-1
+00:33:39.300 --> 00:33:41.400
+fields the city and the state.
+
+9496ac60-f74b-4488-a7df-8e3ca615d8ea-0
+00:33:41.800 --> 00:33:45.880
+So I select the city component and set
+value of City 2.
+
+287ed794-8a4e-41ee-a64f-02448e14b05a-0
+00:33:46.240 --> 00:33:50.720
+So here you will have to go out of the
+form object and select the event payload.
+
+a7fe6296-433a-4a48-9a1d-ebe45e384920-0
+00:33:51.160 --> 00:33:56.102
+So in this drop down you can see all the
+fields that we had configured in the
+
+a7fe6296-433a-4a48-9a1d-ebe45e384920-1
+00:33:56.102 --> 00:33:57.560
+integration output box.
+
+fc909704-3ea3-4c91-a085-c5881366681b-0
+00:33:57.880 --> 00:34:02.635
+So here you have the city field,
+the state field and the postal code field
+
+fc909704-3ea3-4c91-a085-c5881366681b-1
+00:34:02.635 --> 00:34:06.440
+and the country field that we had already
+configured there.
+
+673569a8-7b57-4f3c-94b2-50220d73ce00-0
+00:34:06.760 --> 00:34:10.189
+So for now,
+we want the city to set to the results
+
+673569a8-7b57-4f3c-94b2-50220d73ce00-1
+00:34:10.189 --> 00:34:11.400
+object city field.
+
+4c158a00-ed7c-4798-a262-793e8a41d5f9-0
+00:34:12.000 --> 00:34:17.400
+And we want to add another statement
+where we set the value of state field.
+
+e8c5a99a-d94c-4090-8cd2-c40228751772-0
+00:34:18.040 --> 00:34:21.400
+So here we want to set it to.
+
+2e2a8080-e912-48d5-b4e0-8a76411a8422-0
+00:34:22.160 --> 00:34:24.860
+Again,
+we'll have to go to the event payload and
+
+2e2a8080-e912-48d5-b4e0-8a76411a8422-1
+00:34:24.860 --> 00:34:27.560
+we want to set it to the output of state
+object.
+
+f1a5a132-4978-4366-9106-fee130c6c192-0
+00:34:28.320 --> 00:34:29.960
+Let me click on done.
+
+a9a48898-179e-4bc2-b67c-e3452137c726-0
+00:34:32.800 --> 00:34:35.280
+So now we have this rule prepared.
+
+49e65aa7-24bf-42a8-bd20-93ac389f5793-0
+00:34:35.280 --> 00:34:40.048
+So it basically says that whenever the
+zip code is changed then invoke this
+
+49e65aa7-24bf-42a8-bd20-93ac389f5793-1
+00:34:40.048 --> 00:34:43.122
+service,
+get location details and on the success
+
+49e65aa7-24bf-42a8-bd20-93ac389f5793-2
+00:34:43.122 --> 00:34:47.200
+that we have mentioned how to change this
+city and state fields.
+
+0091c8eb-f19c-4a13-a647-79ad6354f2cc-0
+00:34:47.480 --> 00:34:51.720
+So let me close this and now we can go to
+the preview mode.
+
+39390578-557d-4f71-93cf-785a3181e39e-0
+00:34:51.760 --> 00:34:56.206
+As we have explained before,
+preview mode is basically what the form
+
+39390578-557d-4f71-93cf-785a3181e39e-1
+00:34:56.206 --> 00:34:59.622
+filler sees,
+the experience that the form filler has
+
+39390578-557d-4f71-93cf-785a3181e39e-2
+00:34:59.622 --> 00:35:01.040
+so that the form load.
+
+588f257a-c962-4461-81f1-6f7bb63a9d5a-0
+00:35:02.280 --> 00:35:06.520
+And so we were seeing for 10005.
+
+540ac102-d1a8-4960-a2b8-f0a34a7e3f51-0
+00:35:07.840 --> 00:35:11.800
+Let me just try to type 10005 and click
+outside.
+
+2fa49bff-9e33-409b-bed3-763dacf9f751-0
+00:35:13.040 --> 00:35:17.877
+So as you can see via that rule
+dynamically these two fields got refilled
+
+2fa49bff-9e33-409b-bed3-763dacf9f751-1
+00:35:17.877 --> 00:35:21.080
+and you can try with any other zip code
+as well.
+
+facbbecf-17ea-42a2-b381-11777c463d08-0
+00:35:21.960 --> 00:35:27.800
+So this is more or less the idea related
+to how rule alter works and how.
+
+7c44a0ab-cd08-4a22-a3e4-f0b0c8aad725-0
+00:35:28.840 --> 00:35:32.680
+So this is basically a very advanced use
+case of rule alters.
+
+0f46dd69-ef55-4c71-80a7-3b5f37c97770-0
+00:35:32.680 --> 00:35:36.480
+I will showcase some easier use case as
+well.
+
+521fb78a-f96b-4baa-a875-f1c8dd897615-0
+00:35:36.480 --> 00:35:39.520
+So let me just yeah.
+
+8ac85ca9-2b12-4620-8f10-e95916a35b8f-0
+00:35:39.520 --> 00:35:40.520
+So do you want to add some?
+
+affc027c-9f15-450e-978a-15c88ac8a07a-0
+00:35:40.800 --> 00:35:41.280
+Yeah, yeah.
+
+4a214f68-56b4-419e-a00b-fa72cbc73e13-0
+00:35:41.560 --> 00:35:44.834
+So just before going to the different
+type of rules,
+
+4a214f68-56b4-419e-a00b-fa72cbc73e13-1
+00:35:44.834 --> 00:35:47.800
+some of the things I just wanted to cover
+here.
+
+6414ee34-3448-4a53-bc2d-1b87301111e9-0
+00:35:48.160 --> 00:35:50.800
+This is just a simple one way of API
+integration.
+
+f9d0799e-ff4d-4970-a163-25daf0f027c7-0
+00:35:50.800 --> 00:35:53.640
+But we have lot of out-of-the-box
+connectors.
+
+ef7b1fd9-1cbd-4273-97b9-75398236dc70-0
+00:35:54.040 --> 00:35:57.521
+For example,
+you have any CRM systems like Salesforce
+
+ef7b1fd9-1cbd-4273-97b9-75398236dc70-1
+00:35:57.521 --> 00:36:00.680
+Dynamics or like AAR,
+Adobe Market or Solutions.
+
+dcfa5fcc-aff8-4eaf-b6fe-8144b830cd4b-0
+00:36:01.320 --> 00:36:05.447
+So you can paste the data from that and
+treat the data or you can just sum it
+
+dcfa5fcc-aff8-4eaf-b6fe-8144b830cd4b-1
+00:36:05.447 --> 00:36:06.400
+back to that data.
+
+641d69d3-5aa8-452c-80ee-dd4821517f6f-0
+00:36:06.720 --> 00:36:10.520
+And we also have capabilities with even
+non CRMS.
+
+276b2f2c-4833-4153-b733-a6f93ade054f-0
+00:36:10.640 --> 00:36:14.869
+For example,
+you can have a SQL DB or Azure storage
+
+276b2f2c-4833-4153-b733-a6f93ade054f-1
+00:36:14.869 --> 00:36:15.520
+account.
+
+9d3aea80-c2b7-479f-8230-1243ef56a12d-0
+00:36:15.920 --> 00:36:19.481
+So anything,
+most of the connectors are there and even
+
+9d3aea80-c2b7-479f-8230-1243ef56a12d-1
+00:36:19.481 --> 00:36:21.360
+you can also trigger a flows.
+
+f32dfad9-ba88-4c8e-9a31-8f21ef847ac4-0
+00:36:21.600 --> 00:36:25.192
+Let's say on some event,
+some let's say user click on submit or
+
+f32dfad9-ba88-4c8e-9a31-8f21ef847ac4-1
+00:36:25.192 --> 00:36:28.560
+click process to next step,
+you want to trigger a workflow.
+
+64bd374d-3046-4e9d-990c-e1fe725578d1-0
+00:36:28.920 --> 00:36:33.717
+And that workflow can be a power
+automated workflow or it can be a maybe,
+
+64bd374d-3046-4e9d-990c-e1fe725578d1-1
+00:36:33.717 --> 00:36:34.560
+maybe submit.
+
+b677c807-e251-4893-802f-e2f99c077090-0
+00:36:34.560 --> 00:36:37.640
+You can show the just click on that
+submit options.
+
+252ef811-4b8a-46be-90da-f3e9cb801f45-0
+00:36:37.640 --> 00:36:43.440
+I think it will list all the right edit
+properties on top Wizard wizard.
+
+b668f29b-2c2f-4ede-b3b7-f5276ddbfb80-0
+00:36:43.440 --> 00:36:48.640
+Sorry,
+wizard wizard via wizard not via this.
+
+d7caf279-d104-40a9-91cc-05ac3f0cbc59-0
+00:36:49.040 --> 00:36:53.250
+OK, No,
+there is option on pencil icon on top
+
+d7caf279-d104-40a9-91cc-05ac3f0cbc59-1
+00:36:53.250 --> 00:36:54.440
+right behind.
+
+959fb424-d526-4b1f-aba7-758d0caeecf7-0
+00:36:54.440 --> 00:36:59.126
+Yeah, yeah,
+hopefully the latest one is configured on
+
+959fb424-d526-4b1f-aba7-758d0caeecf7-1
+00:36:59.126 --> 00:36:59.560
+this.
+
+a706097f-173e-4892-ae4f-b995f514169f-0
+00:37:00.280 --> 00:37:00.600
+Yeah.
+
+d2a3b233-48fb-47e4-9d1e-d3e267fd9273-0
+00:37:01.280 --> 00:37:05.000
+So these are the OK,
+I think this is is not latest on this.
+
+bd6ccf5e-575d-4abe-a340-8715b23064b8-0
+00:37:05.000 --> 00:37:08.144
+I think we added the one where the it's
+just previous,
+
+bd6ccf5e-575d-4abe-a340-8715b23064b8-1
+00:37:08.144 --> 00:37:12.146
+but this just give the games up like
+there are variety of submissions
+
+bd6ccf5e-575d-4abe-a340-8715b23064b8-2
+00:37:12.146 --> 00:37:15.576
+available like submit to SharePoint,
+invoke Power Automate,
+
+bd6ccf5e-575d-4abe-a340-8715b23064b8-3
+00:37:15.576 --> 00:37:17.920
+market to am workflow and all this stuff.
+
+9ca59a60-a71b-487f-82fd-82a3a1022ae9-0
+00:37:18.840 --> 00:37:20.520
+So all this can be also done.
+
+a032d9ee-7a9c-4df3-83d6-e04e52a90855-0
+00:37:20.560 --> 00:37:24.440
+I think for one of the forms we are right
+now using power Power Automate.
+
+6cadddf2-fc05-4dc7-a5bf-735e44e683e4-0
+00:37:25.200 --> 00:37:25.680
+Sure, yeah.
+
+15682ebb-f7eb-4cc5-89e1-1e5acae4f954-0
+00:37:27.600 --> 00:37:30.583
+In fact, you know,
+I was just about to say that that
+
+15682ebb-f7eb-4cc5-89e1-1e5acae4f954-1
+00:37:30.583 --> 00:37:33.960
+especially for the calculator,
+we leverage the rule editor.
+
+a915ce1c-15a4-4696-83e2-5b74127a185d-0
+00:37:34.040 --> 00:37:35.120
+I pay as a screenshot.
+
+a3163c6f-583e-429b-99cd-070cd9dff100-0
+00:37:35.200 --> 00:37:36.480
+Thank you Mayas for the thumbs up.
+
+7e77bcbb-3c3c-4d5c-b223-8c78ba845068-0
+00:37:37.000 --> 00:37:40.414
+So it is very,
+very powerful and I just which I just
+
+7e77bcbb-3c3c-4d5c-b223-8c78ba845068-1
+00:37:40.414 --> 00:37:44.343
+mentioned, you know, Mike,
+there are various banks who have,
+
+7e77bcbb-3c3c-4d5c-b223-8c78ba845068-2
+00:37:44.343 --> 00:37:47.499
+you know,
+have a uniforms and there are a ton of
+
+7e77bcbb-3c3c-4d5c-b223-8c78ba845068-3
+00:37:47.499 --> 00:37:50.849
+workflows, you know,
+let's say OTB generation, KYC,
+
+7e77bcbb-3c3c-4d5c-b223-8c78ba845068-4
+00:37:50.849 --> 00:37:51.880
+stuff like that.
+
+f3c76542-5010-4d85-ba1d-7d08adde9094-0
+00:37:52.480 --> 00:37:56.520
+All kind of workflows factors are very
+much possible for with a bumps today.
+
+a92c8cd5-73a7-409f-8481-2746c6325e87-0
+00:37:56.760 --> 00:38:00.870
+So we know you are government definitely
+you may have many other use cases,
+
+a92c8cd5-73a7-409f-8481-2746c6325e87-1
+00:38:00.870 --> 00:38:04.440
+definitely many of the workflows that we
+chime in coming forward.
+
+cd0dd836-7f24-4a96-a549-94853fc73b2b-0
+00:38:04.720 --> 00:38:09.361
+So please feel free to let us know and
+help us and we can be there to you know
+
+cd0dd836-7f24-4a96-a549-94853fc73b2b-1
+00:38:09.361 --> 00:38:10.360
+to help this out.
+
+a7b026d6-d5db-4fc7-bf65-79cfce05b339-0
+00:38:11.320 --> 00:38:13.040
+Thank you open your deep.
+
+18138f61-34d2-4be7-a123-fe48b698c154-0
+00:38:13.880 --> 00:38:14.040
+Yeah.
+
+269597e2-df90-41a4-8a31-befc2e725c26-0
+00:38:14.440 --> 00:38:18.347
+And one last thing,
+I want to just short ways this was a just
+
+269597e2-df90-41a4-8a31-befc2e725c26-1
+00:38:18.347 --> 00:38:23.200
+token based machine even that no need to
+be provided every call like in work
+
+269597e2-df90-41a4-8a31-befc2e725c26-2
+00:38:23.200 --> 00:38:28.179
+service he was providing API token that
+is you can configure it global and say
+
+269597e2-df90-41a4-8a31-befc2e725c26-3
+00:38:28.179 --> 00:38:29.440
+that OK, let it use.
+
+52c06885-24a8-4cd8-b549-929c128b1e50-0
+00:38:29.800 --> 00:38:33.538
+And then we also have different auth
+mechanisms like auth 2.
+
+52c06885-24a8-4cd8-b549-929c128b1e50-1
+00:38:33.538 --> 00:38:36.480
+0 basic authentication like username,
+password.
+
+91da3483-6b80-491e-b094-717f535937b1-0
+00:38:36.960 --> 00:38:40.548
+And if none of this out-of-the-box
+authentications are sufficient,
+
+91da3483-6b80-491e-b094-717f535937b1-1
+00:38:40.548 --> 00:38:43.280
+you can always plug in your custom
+authentication.
+
+59704909-b38f-4092-8aab-5d00f5750c59-0
+00:38:43.280 --> 00:38:50.400
+So all these capabilities are and plug
+able, yeah, dips to you.
+
+636ee4e1-66ba-42be-b39c-e0c6730bbc8c-0
+00:38:50.440 --> 00:38:56.981
+OK, so first of all,
+does anyone from the Clerk Counties team
+
+636ee4e1-66ba-42be-b39c-e0c6730bbc8c-1
+00:38:56.981 --> 00:39:05.000
+has any queries till now from whatever we
+have shown now, this looks great.
+
+2f48963b-6db0-4877-bdde-47909bfa2884-0
+00:39:05.000 --> 00:39:10.469
+Thank you so much for showing the API
+integration because I think that's gonna
+
+2f48963b-6db0-4877-bdde-47909bfa2884-1
+00:39:10.469 --> 00:39:15.800
+be a really powerful tool that we can use
+here for many different use cases.
+
+58c9f0b0-6e4a-471c-825b-ea35ffcb0aa9-0
+00:39:16.960 --> 00:39:20.482
+One question I asked,
+are you so the connectors that you were
+
+58c9f0b0-6e4a-471c-825b-ea35ffcb0aa9-1
+00:39:20.482 --> 00:39:23.720
+showing and you mentioned,
+you know can connect to CRMS.
+
+d7c4e9d2-0526-471e-8112-c66198570729-0
+00:39:23.960 --> 00:39:27.421
+How how can we enable those connectors or
+you know,
+
+d7c4e9d2-0526-471e-8112-c66198570729-1
+00:39:27.421 --> 00:39:32.747
+are there more than just the ones that
+we're seeing on the screen that that can
+
+d7c4e9d2-0526-471e-8112-c66198570729-2
+00:39:32.747 --> 00:39:33.480
+be enabled?
+
+004c6680-75d4-48e5-80e3-3628761e0403-0
+00:39:35.040 --> 00:39:35.440
+Yeah.
+
+50999e48-b4df-4fcb-a905-2ae3b9699ab4-0
+00:39:35.680 --> 00:39:37.200
+So there are lot many.
+
+bee63f8a-934c-4e4f-ab82-6985cb455672-0
+00:39:37.440 --> 00:39:40.160
+So we have few out-of-the-box direct.
+
+631304f4-16d0-4843-8bc3-a8be64cdef90-0
+00:39:40.160 --> 00:39:43.180
+For example,
+if you see submit to SharePoint,
+
+631304f4-16d0-4843-8bc3-a8be64cdef90-1
+00:39:43.180 --> 00:39:44.560
+submit to market too.
+
+fb9aea77-78d5-45f5-81f7-42d1f2b04cb1-0
+00:39:45.080 --> 00:39:49.256
+These are like direct connectors where
+you can just provide your credentials of
+
+fb9aea77-78d5-45f5-81f7-42d1f2b04cb1-1
+00:39:49.256 --> 00:39:50.040
+the SharePoint.
+
+bc1525d3-7cfe-4207-8593-1cd53ad75671-0
+00:39:50.040 --> 00:39:53.360
+So there is another UI,
+we call it as cloud configuration,
+
+bc1525d3-7cfe-4207-8593-1cd53ad75671-1
+00:39:53.360 --> 00:39:57.917
+where you can provide the credentials of
+example SharePoint and then just submit
+
+bc1525d3-7cfe-4207-8593-1cd53ad75671-2
+00:39:57.917 --> 00:40:00.000
+the shape and then it will take care.
+
+6befa153-cc93-4828-b0e8-70a0ada20837-0
+00:40:00.360 --> 00:40:03.200
+But let's say even some of them may not
+be visible here.
+
+26baa1e2-86b7-45b4-ac8d-42136db4ad36-0
+00:40:03.800 --> 00:40:08.040
+For example Dynamics Microsoft Dynamics
+on Salesforce.
+
+f311c8b8-1bcd-4a4e-9494-8bffa30387af-0
+00:40:08.760 --> 00:40:15.040
+So what we have is a route of FDM which
+is also known as Form Data model.
+
+3a099983-111c-4c01-a523-9507eb534e0f-0
+00:40:15.480 --> 00:40:21.779
+So you can just define that Salesforce
+API details and then it will just create
+
+3a099983-111c-4c01-a523-9507eb534e0f-1
+00:40:21.779 --> 00:40:25.480
+a FDM and then you can just submit to the
+FDM.
+
+92196ab4-b587-48bc-af61-85711a05709e-0
+00:40:25.480 --> 00:40:28.480
+But we have already public articles on
+this.
+
+1d038c1c-01fc-4fe3-b267-8218ceddb45d-0
+00:40:28.960 --> 00:40:31.520
+Maybe I can share it on the Teams chat.
+
+105392db-c1d0-460f-bbce-ceb0de45726e-0
+00:40:32.120 --> 00:40:32.880
+Yeah, that'd be great.
+
+a79ce5f2-526a-4076-9155-24374a559a64-0
+00:40:33.640 --> 00:40:35.000
+Yeah, you can go through it.
+
+8bbe26ac-d4bb-457f-9b66-340bfe9a340d-0
+00:40:35.000 --> 00:40:38.528
+But the though the document covers for
+the different UI,
+
+8bbe26ac-d4bb-457f-9b66-340bfe9a340d-1
+00:40:38.528 --> 00:40:43.480
+but all of them will be also applicable
+on this new Edge delivery services too.
+
+a056a65a-f5e7-48ae-bbeb-3f5ff83fd6aa-0
+00:40:45.600 --> 00:40:45.920
+Thank you.
+
+97261a68-e235-4f33-909a-cab023fc8372-0
+00:40:45.920 --> 00:40:46.040
+Yeah.
+
+14d4dc8d-77a8-4ea5-8c9e-6d488b7f613b-0
+00:40:47.520 --> 00:40:54.353
+So just before just to give a few more
+things that we provide out-of-the-box
+
+14d4dc8d-77a8-4ea5-8c9e-6d488b7f613b-1
+00:40:54.353 --> 00:40:56.040
+that can be useful.
+
+62a1cf68-7f79-4a20-bff5-03cf85e663bd-0
+00:40:56.040 --> 00:41:01.000
+So I think Vijay also showed this before,
+but we have the option so that once
+
+62a1cf68-7f79-4a20-bff5-03cf85e663bd-1
+00:41:01.000 --> 00:41:05.706
+initially when your farm lenders,
+you can choose whether you want to hide
+
+62a1cf68-7f79-4a20-bff5-03cf85e663bd-2
+00:41:05.706 --> 00:41:10.922
+the component or you want to disable the
+component or you want to mark it as read
+
+62a1cf68-7f79-4a20-bff5-03cf85e663bd-3
+00:41:10.922 --> 00:41:11.240
+only.
+
+99786785-0a7c-4355-8033-bca6c3a7ec17-0
+00:41:12.520 --> 00:41:15.853
+And then all these properties can also be
+dynamically changed using the rule
+
+99786785-0a7c-4355-8033-bca6c3a7ec17-1
+00:41:15.853 --> 00:41:16.200
+editors.
+
+cf9e239b-4ea8-4d8f-83f0-ce7a5b68f118-0
+00:41:16.200 --> 00:41:24.840
+So as we saw,
+if I can go here the rule later box and
+
+cf9e239b-4ea8-4d8f-83f0-ce7a5b68f118-1
+00:41:24.840 --> 00:41:29.480
+just it would just stop that.
+
+8bdf9d88-f578-4554-a95c-6b6f934f612e-0
+00:41:29.840 --> 00:41:30.040
+Yep.
+
+c32f65b6-06af-405e-ac38-0636c09d7c78-0
+00:41:30.200 --> 00:41:34.360
+So let's say that we have this last name,
+first name and middle name, right?
+
+d48517fa-cac0-4976-af95-296d235e624a-0
+00:41:34.360 --> 00:41:41.857
+So you can basically create a rule
+something like when this client's last
+
+d48517fa-cac0-4976-af95-296d235e624a-1
+00:41:41.857 --> 00:41:46.720
+name is empty,
+then maybe hide the middle name.
+
+549c6363-276f-449f-8a48-15ff29ddbf02-0
+00:41:46.720 --> 00:41:52.037
+Or if this client's last name is equals
+to a particular field, then do a,
+
+549c6363-276f-449f-8a48-15ff29ddbf02-1
+00:41:52.037 --> 00:41:55.342
+let's say,
+not hide but set property for this
+
+549c6363-276f-449f-8a48-15ff29ddbf02-2
+00:41:55.342 --> 00:42:01.305
+another particular field that you want to
+set visible as false for the middle name
+
+549c6363-276f-449f-8a48-15ff29ddbf02-3
+00:42:01.305 --> 00:42:02.240
+or something.
+
+7eb1acaa-a1fd-4fc8-a1ec-f6d5c1492ccc-0
+00:42:02.440 --> 00:42:06.920
+So those kind of dynamism can easily be
+achieved from this rule editor.
+
+0e425d30-82ff-4388-bad8-88ca299ce9a6-0
+00:42:07.920 --> 00:42:12.943
+And yeah,
+that is more or less all that I had
+
+0e425d30-82ff-4388-bad8-88ca299ce9a6-1
+00:42:12.943 --> 00:42:14.800
+planned till now.
+
+921c5add-aaee-43ec-b1be-23b5beba3b76-0
+00:42:14.800 --> 00:42:20.108
+And I would like to hand over the rest of
+the call to Talmis to show more of
+
+921c5add-aaee-43ec-b1be-23b5beba3b76-1
+00:42:20.108 --> 00:42:23.280
+styling and layouting part of the
+components.
+
+9855bcaa-1277-45d3-be87-e5563fffbbf4-0
+00:42:23.520 --> 00:42:25.120
+And Michael, I think you unmuted yourself.
+
+dd443cb1-3722-4992-82d8-e8a4d6cb9bca-0
+00:42:25.120 --> 00:42:26.600
+Do you want to ask him?
+
+a30d2d92-208c-497f-8b9b-53450016a4ec-0
+00:42:27.480 --> 00:42:27.920
+Yeah.
+
+199d94e6-9c1d-4f25-acb5-3ce67bee1c82-0
+00:42:27.920 --> 00:42:32.157
+And and I don't know if maybe it's
+relating to this or maybe relating to the
+
+199d94e6-9c1d-4f25-acb5-3ce67bee1c82-1
+00:42:32.157 --> 00:42:34.799
+layouts,
+but is there a way for us to do like a
+
+199d94e6-9c1d-4f25-acb5-3ce67bee1c82-2
+00:42:34.799 --> 00:42:35.680
+multi step form?
+
+5bbfee65-da60-4527-98ed-ca9920bf4fb2-0
+00:42:35.680 --> 00:42:42.191
+So like we fill out a few few form fields
+and then hit next to even next set of
+
+5bbfee65-da60-4527-98ed-ca9920bf4fb2-1
+00:42:42.191 --> 00:42:42.680
+forms?
+
+8a1f76fa-d9ff-49b9-aba6-7fa593c044cf-0
+00:42:42.680 --> 00:42:43.240
+Yeah, fields.
+
+7c2361c8-65b3-40e4-9a67-6cbffff4d3c7-0
+00:42:43.240 --> 00:42:45.640
+So this is something that I have planned
+to demo, but I forgot.
+
+3b938d35-aaf5-4cf3-9b76-eee6ed4cf84d-0
+00:42:45.640 --> 00:42:45.880
+Sorry.
+
+51f85a0a-1beb-43a0-8b7a-92ba242e9e2b-0
+00:42:46.000 --> 00:42:46.840
+Yeah, thank you.
+
+edbaa9f0-69a2-499b-ada7-f64e1d2b1baa-0
+00:42:47.200 --> 00:42:52.600
+So we have this we have this concept of
+wizard layout in forms.
+
+581ba33b-40b0-43b6-9faf-6263e1d126b7-0
+00:42:52.600 --> 00:42:57.440
+Let me just go to the content tree.
+
+f4fb0bb6-cbf4-4aa2-b803-d5d2518e9da4-0
+00:42:57.440 --> 00:43:02.498
+And so this is so basically whenever you
+have created a panel,
+
+f4fb0bb6-cbf4-4aa2-b803-d5d2518e9da4-1
+00:43:02.498 --> 00:43:08.120
+right now in the all the fields of the
+panel are shown as one by one.
+
+d0c71193-80fc-4f71-9027-a3ceef0440c1-0
+00:43:08.160 --> 00:43:10.600
+You can see all the fields of the panel.
+
+5ee1c59d-a358-4300-9065-b62c35e428eb-0
+00:43:11.120 --> 00:43:14.497
+If we go and change this panel to a
+wizard layout,
+
+5ee1c59d-a358-4300-9065-b62c35e428eb-1
+00:43:14.497 --> 00:43:19.200
+what happens is each and every field
+comes for comes in the next step.
+
+fc831f3f-e1d5-4416-a2de-3244c6c49673-0
+00:43:19.200 --> 00:43:22.586
+Let me go and do this from the experience
+builder,
+
+fc831f3f-e1d5-4416-a2de-3244c6c49673-1
+00:43:22.586 --> 00:43:26.968
+which I'm just afraid that Telmis won't
+have enough time to yeah,
+
+fc831f3f-e1d5-4416-a2de-3244c6c49673-2
+00:43:26.968 --> 00:43:31.550
+I think that should be OK,
+but maybe instead of doing to this panel,
+
+fc831f3f-e1d5-4416-a2de-3244c6c49673-3
+00:43:31.550 --> 00:43:35.800
+maybe you can try for entire form to
+convert into wizard right.
+
+19bcda13-8e78-4b03-9ab8-31f693a8db8c-0
+00:43:35.800 --> 00:43:44.291
+Maybe that will give a good like if you
+see yeah or maybe or wait do whatever you
+
+19bcda13-8e78-4b03-9ab8-31f693a8db8c-1
+00:43:44.291 --> 00:43:45.120
+planned.
+
+40addeed-bec2-484d-9af6-a172b88f095d-0
+00:43:45.120 --> 00:43:55.990
+I think that also we can explain later,
+yeah.
+
+ab390fbf-09f3-4e39-806d-37b9a1b02c3e-0
+00:43:55.990 --> 00:44:09.080
+Or once try just we apply your incident
+information wizard.
+
+6de6082d-c64c-47dc-aab4-68582f13ed75-0
+00:44:17.840 --> 00:44:20.480
+So this incident information thing is a
+panel.
+
+f1adcf63-6be1-4340-9f75-ca51164117fb-0
+00:44:20.480 --> 00:44:26.800
+And now what it's trying to do is it
+wants it wants to convert this particular
+
+f1adcf63-6be1-4340-9f75-ca51164117fb-1
+00:44:26.800 --> 00:44:28.640
+panel to a wizard view.
+
+fee7e163-a256-4980-b0f0-dfa1d2e822d1-0
+00:44:34.760 --> 00:44:37.000
+Just run Yep.
+
+d21e6016-590c-4e40-a2c0-32d8c9829ca1-0
+00:44:37.040 --> 00:44:39.200
+So I think has done that.
+
+b789b055-78d4-4787-a8bd-d77d7be7833d-0
+00:44:39.200 --> 00:44:41.080
+Let me go to the previous step.
+
+b9681f5b-58f5-4d6e-95cf-291ad40bb3ed-0
+00:44:55.420 --> 00:44:56.300
+Can you Scroll down?
+
+dbf46412-4d03-4a6f-b13d-c102c8b9585b-0
+00:44:56.300 --> 00:44:59.900
+I think maybe it's can you Scroll down?
+
+d6a4f294-691e-4163-91c7-e70aede575af-0
+00:44:59.900 --> 00:45:01.780
+I think you that panel is in bottom.
+
+aa2f800a-c0e8-4743-a5ac-8b5322c0f5e2-0
+00:45:01.780 --> 00:45:05.821
+I guess insert which panel you have
+chosen Insert Yeah,
+
+aa2f800a-c0e8-4743-a5ac-8b5322c0f5e2-1
+00:45:05.821 --> 00:45:08.420
+I have chosen this particular panel.
+
+452533a2-a0f4-4c7e-a8ac-e8b41b576121-0
+00:45:08.420 --> 00:45:09.500
+It was working before.
+
+50c573e8-f7cf-4e5b-8a57-d01ce4b7d470-0
+00:45:11.220 --> 00:45:16.360
+Not sure why like like there was this
+bottom, yeah, maybe just retry.
+
+7a223960-f7a8-4bc7-8964-e55e974f8c28-0
+00:45:16.520 --> 00:45:24.000
+So add a new wizard, OK,
+added this in the bottom.
+
+b83c7c33-b9b2-4efd-b717-2df8f933f738-0
+00:45:24.840 --> 00:45:28.320
+So not sure, maybe I think that is OK.
+
+6de1f71b-3bd1-4c79-b682-83965af647a8-0
+00:45:28.320 --> 00:45:32.763
+I think what you can do is just go to
+content tree and just maybe it's better
+
+6de1f71b-3bd1-4c79-b682-83965af647a8-1
+00:45:32.763 --> 00:45:37.264
+to show also from content tree how we can
+move the content from just exit from
+
+6de1f71b-3bd1-4c79-b682-83965af647a8-2
+00:45:37.264 --> 00:45:37.720
+preview.
+
+523623da-d7fe-436d-b080-6622eb3ff46c-0
+00:45:37.920 --> 00:45:38.120
+Yeah.
+
+16b917d4-f12b-41dc-96d6-0954905b9cda-0
+00:45:39.680 --> 00:45:41.480
+So this is like Wizard, right?
+
+52590584-f093-4407-a04a-b17f86fea942-0
+00:45:41.480 --> 00:45:45.080
+Maybe just drag and drop that child info
+panel directly into Wizard.
+
+5931a8e7-a5ef-4469-8453-89eca7ce208b-0
+00:45:45.800 --> 00:45:48.600
+So even that should really do it.
+
+b9e34f72-8ad4-4764-9310-f03568937dbf-0
+00:45:48.840 --> 00:45:49.040
+Yeah.
+
+909a80de-1c48-42fe-8a12-739172b6c79a-0
+00:45:52.360 --> 00:45:55.600
+So Michael, I think your question was now.
+
+fc11c67a-fa00-49a1-8f57-02dfe309a91e-0
+00:45:55.760 --> 00:45:56.040
+Yeah.
+
+f5a6522d-a6cb-477b-a95a-f1882608d84b-0
+00:45:56.040 --> 00:46:00.040
+So maybe drag and drop one more thing,
+one more panel into it.
+
+15155bf9-f98f-4cac-9dad-187e34a132db-0
+00:46:01.600 --> 00:46:04.080
+So we have something called
+out-of-the-box.
+
+bf02a9eb-aeac-4a53-b6a8-374f9c8ac12e-0
+00:46:04.080 --> 00:46:09.411
+We have very limited layout capabilities
+like you can organize into two columns,
+
+bf02a9eb-aeac-4a53-b6a8-374f9c8ac12e-1
+00:46:09.411 --> 00:46:13.360
+3 columns or multiple columns based on on
+particular panel.
+
+de4c243b-c20f-43da-9d31-6d4a982468c3-0
+00:46:13.360 --> 00:46:16.680
+But our entire form or you can also have
+use.
+
+0b891803-e811-4f70-b612-04cd85c55633-0
+00:46:16.680 --> 00:46:18.520
+This is called the result layout.
+
+14039879-7b4e-4cfc-af4a-d0ce79d19217-0
+00:46:18.840 --> 00:46:25.080
+And we also have accordion out-of-the-box
+and but it's not limited.
+
+0fbfedf1-e192-4cb1-ad8c-918207fe8380-0
+00:46:25.400 --> 00:46:29.840
+You can have your own kind of progressive
+way of filling right?
+
+adf71bd6-95d0-4594-981c-9b8cfede56df-0
+00:46:29.840 --> 00:46:34.114
+Maybe just show 1 field at a time or
+group of fields and based on clicking on
+
+adf71bd6-95d0-4594-981c-9b8cfede56df-1
+00:46:34.114 --> 00:46:38.608
+next show or something else so that all
+layouts you can customize this layouts or
+
+adf71bd6-95d0-4594-981c-9b8cfede56df-2
+00:46:38.608 --> 00:46:43.102
+you can just write a rule saying that, OK,
+this are the fields I want to show 1st
+
+adf71bd6-95d0-4594-981c-9b8cfede56df-3
+00:46:43.102 --> 00:46:45.240
+and have a next button specific button.
+
+abe29461-8bc7-488d-9d72-86897d2e8510-0
+00:46:45.240 --> 00:46:47.566
+And I'm writing of this clicking on this
+button,
+
+abe29461-8bc7-488d-9d72-86897d2e8510-1
+00:46:47.566 --> 00:46:49.560
+I want to show other fields and hide this.
+
+4aafa85d-b7d4-425b-8584-14157fb7d03f-0
+00:46:50.160 --> 00:46:54.004
+And we have very,
+very good recommendations of like
+
+4aafa85d-b7d4-425b-8584-14157fb7d03f-1
+00:46:54.004 --> 00:46:58.440
+creating a panels or maybe even create a
+reusable fragment.
+
+fde24155-291d-4fc7-b2fc-0f48c7456a34-0
+00:46:58.440 --> 00:47:02.809
+So something we call have a fragment,
+for example, zip code, city, state,
+
+fde24155-291d-4fc7-b2fc-0f48c7456a34-1
+00:47:02.809 --> 00:47:07.474
+these are the three fields or address
+section is really is being reused across
+
+fde24155-291d-4fc7-b2fc-0f48c7456a34-2
+00:47:07.474 --> 00:47:08.360
+multiple forms.
+
+d4e69c5e-7f2a-4754-b1fc-a92abfc805fd-0
+00:47:08.600 --> 00:47:12.000
+So you don't need to create in across in
+each and every form, right?
+
+cabe31a7-d932-4171-8523-49049be80d2b-0
+00:47:12.000 --> 00:47:16.193
+You can just create it as a fragment and
+then just refer that fragment across
+
+cabe31a7-d932-4171-8523-49049be80d2b-1
+00:47:16.193 --> 00:47:17.000
+multiple forms.
+
+058c6766-d38c-419b-be6b-ae8da6bb6d80-0
+00:47:17.600 --> 00:47:20.280
+So all such capabilities are there.
+
+df6d9ce3-3a1a-4813-a214-8d422ffdf5cd-0
+00:47:20.280 --> 00:47:23.400
+I think it's just we were covering only
+the few.
+
+85dc99f6-7941-4e10-9245-0740ff954747-0
+00:47:23.600 --> 00:47:24.760
+I think this is first call.
+
+ed2b5e1a-639e-430a-aedc-68c7bc1e0aa2-0
+00:47:24.760 --> 00:47:28.480
+So I just want to have it more at basic
+levels as of now.
+
+6f9f07d4-dd1d-4651-b294-e274a41e12c3-0
+00:47:28.880 --> 00:47:34.593
+And yeah, that, yeah, yeah,
+I know we have 9 minutes left and Telmis
+
+6f9f07d4-dd1d-4651-b294-e274a41e12c3-1
+00:47:34.593 --> 00:47:40.970
+has prepared to showcase how can we
+customize the look and feel of this form
+
+6f9f07d4-dd1d-4651-b294-e274a41e12c3-2
+00:47:40.970 --> 00:47:44.199
+and also maybe create a new components.
+
+0c98251e-c3dc-44a7-9c9f-74e33ff96866-0
+00:47:44.520 --> 00:47:48.372
+You have seen some of the components
+which are out-of-the-box provided,
+
+0c98251e-c3dc-44a7-9c9f-74e33ff96866-1
+00:47:48.372 --> 00:47:52.600
+but it's there is always a requirement
+that a different rendition is required.
+
+edb61ef1-3cec-4ec0-bba4-c0c9eb4f6aff-0
+00:47:52.600 --> 00:47:54.040
+That is something Talmis can cover.
+
+aaef9585-ec0a-4cdd-ae90-adc81f23dfed-0
+00:47:54.440 --> 00:47:58.535
+But Michael,
+do we have your IT or development team in
+
+aaef9585-ec0a-4cdd-ae90-adc81f23dfed-1
+00:47:58.535 --> 00:47:59.280
+this call?
+
+01e4593a-91c2-4039-bf49-1edaebeed6de-0
+00:48:01.040 --> 00:48:05.520
+And could you like to continue in this
+call or do you want me to reschedule with
+
+01e4593a-91c2-4039-bf49-1edaebeed6de-1
+00:48:05.520 --> 00:48:06.240
+your IT team?
+
+0428b0b5-0e74-4dd0-9da5-4a53e3f93730-0
+00:48:06.880 --> 00:48:09.560
+No, no,
+here it's gonna be Alpha and myself.
+
+7ee088eb-9738-4c64-8b75-4ee66360a1c8-0
+00:48:10.680 --> 00:48:11.520
+Oh, that's great.
+
+20be0a31-b6de-4f8d-a361-3255baddc7be-0
+00:48:11.600 --> 00:48:16.040
+Yeah, maybe then, Talmis,
+let's see if we can cover it in 8 minutes.
+
+63d812cc-b75d-41a0-91dd-13d9cfe438cc-0
+00:48:16.200 --> 00:48:20.240
+If not,
+let's see how till what extent we can go.
+
+c47e808f-7e5f-4fe6-bd90-f40cb46ffc85-0
+00:48:21.400 --> 00:48:21.760
+Sure.
+
+168c0959-633f-471b-ba96-bb1468c3f3bd-0
+00:48:23.000 --> 00:48:23.160
+Yeah.
+
+ecd6d44a-2921-4bf9-9b18-78aa3b6110b5-0
+00:48:23.160 --> 00:48:24.560
+Let me share my screen.
+
+ece674d6-b1a7-43ac-9ab9-a2fcd4894d16-0
+00:48:25.320 --> 00:48:25.480
+Yeah.
+
+ad127ccc-4eb4-41fb-aede-4d165fad9f95-0
+00:48:25.560 --> 00:48:25.760
+Yeah.
+
+27bf244c-6ddc-4f50-b0ff-cc0a13488061-0
+00:48:28.360 --> 00:48:28.640
+Go ahead.
+
+f620b632-aec4-484a-8933-b72199e83fa0-0
+00:48:28.640 --> 00:48:28.960
+Tell this.
+
+8d8e6134-b653-4bbf-8952-3142b799e47e-0
+00:48:31.000 --> 00:48:31.400
+All right.
+
+95c14eed-9bfb-4fc3-a304-a410d793f09a-0
+00:48:31.400 --> 00:48:33.000
+I hope my screen is visible.
+
+b510fa9b-2902-446b-a0ec-d38b8ef7fe5d-0
+00:48:34.040 --> 00:48:34.840
+Yeah, it's visible.
+
+17086d49-ec70-4604-a00f-cd7df42b19a5-0
+00:48:35.680 --> 00:48:40.128
+So I have my,
+I have my IDE open and this is just the
+
+17086d49-ec70-4604-a00f-cd7df42b19a5-1
+00:48:40.128 --> 00:48:45.400
+repository for Clark County envy that we
+went live with, right?
+
+77e90a88-b614-494b-abe3-2bd4ead94437-0
+00:48:45.400 --> 00:48:49.314
+All the code that that you have for that,
+for all the forms,
+
+77e90a88-b614-494b-abe3-2bd4ead94437-1
+00:48:49.314 --> 00:48:54.320
+all the code of the stylings and the
+JavaScript, all of it resides over here.
+
+cca7e9fc-d636-4478-9f11-17a1833eee7b-0
+00:48:55.120 --> 00:48:59.730
+What I'm going to cover through in in a
+couple of minutes is how can we change
+
+cca7e9fc-d636-4478-9f11-17a1833eee7b-1
+00:48:59.730 --> 00:49:02.474
+the styling of the form that you already
+have,
+
+cca7e9fc-d636-4478-9f11-17a1833eee7b-2
+00:49:02.474 --> 00:49:07.143
+maybe the look and feel of the form and
+also abilities to be able to change the
+
+cca7e9fc-d636-4478-9f11-17a1833eee7b-3
+00:49:07.143 --> 00:49:10.120
+Dom structure of each of these HTML
+fields, right?
+
+0920b283-5ad8-4c8c-99b4-e597ff741b6b-0
+00:49:10.880 --> 00:49:13.160
+That is something the author wouldn't
+have to deal with.
+
+b0376868-a4ea-40d7-b5f5-33362972cc02-0
+00:49:13.160 --> 00:49:17.000
+So this is purely A dev dev persona
+related thing.
+
+b009af90-61b4-4ae5-b2e7-43ba460ebcd4-0
+00:49:17.000 --> 00:49:21.840
+So to start off with,
+there's a lot in this repository.
+
+c0ea6226-1ea1-4bca-a596-fc27840b7d7b-0
+00:49:21.840 --> 00:49:23.520
+I'm just going to focus on a few things.
+
+74e31ebb-4a45-49bb-b6c4-cf05c3582c26-0
+00:49:24.040 --> 00:49:29.115
+We have this particular file called the
+forms dot CSS inside of form instead of
+
+74e31ebb-4a45-49bb-b6c4-cf05c3582c26-1
+00:49:29.115 --> 00:49:29.560
+blocks.
+
+db7e9bcb-ff43-45f9-9967-33d0fc85a686-0
+00:49:30.040 --> 00:49:32.760
+This is where the styles of the entire
+form exist.
+
+35f192df-5fca-4923-bc62-be368fe96147-0
+00:49:33.400 --> 00:49:36.000
+These are all the out-of-the-box styles
+that you can see here.
+
+38709d65-d807-4cb5-a652-9ad2c0081a92-0
+00:49:36.400 --> 00:49:40.513
+And so let's say if you want to customize
+some some styles over here,
+
+38709d65-d807-4cb5-a652-9ad2c0081a92-1
+00:49:40.513 --> 00:49:45.391
+you come into these CSS variables and try
+to change them and then you will be able
+
+38709d65-d807-4cb5-a652-9ad2c0081a92-2
+00:49:45.391 --> 00:49:46.920
+to see the actual changes.
+
+1c45a087-bcb8-4ec4-a1b8-0e1daad09f0c-0
+00:49:47.280 --> 00:49:50.320
+But as you see here, it's a repository,
+right?
+
+eb6ec7ab-b3dd-4d4a-b1e3-c1d74221ced8-0
+00:49:50.480 --> 00:49:52.951
+Every single style inside of here or any,
+any,
+
+eb6ec7ab-b3dd-4d4a-b1e3-c1d74221ced8-1
+00:49:52.951 --> 00:49:56.160
+any code that's present over here is
+inside of a repository.
+
+8272103f-1a55-454d-8646-cb5c25651681-0
+00:49:56.600 --> 00:49:59.079
+And because of the way EDS works,
+you will have,
+
+8272103f-1a55-454d-8646-cb5c25651681-1
+00:49:59.079 --> 00:50:02.520
+you would ideally have to push the code
+for you to see the changes.
+
+6c78cd7c-e834-4993-bf96-a46c36b53c7b-0
+00:50:02.840 --> 00:50:08.841
+But that's not the case for us because we
+have CLI tool that'll help you sort of
+
+6c78cd7c-e834-4993-bf96-a46c36b53c7b-1
+00:50:08.841 --> 00:50:13.880
+you do development locally before you
+actually push it to the code.
+
+a7dc4856-1c61-4bf9-ba04-584f086e3f0c-0
+00:50:13.880 --> 00:50:19.281
+So there is a tool called AEM CLI which
+allows you to proxy this particular URL
+
+a7dc4856-1c61-4bf9-ba04-584f086e3f0c-1
+00:50:19.281 --> 00:50:23.062
+that's already like,
+so let's use this particular form,
+
+a7dc4856-1c61-4bf9-ba04-584f086e3f0c-2
+00:50:23.062 --> 00:50:24.480
+the contractors form.
+
+c4e5980c-06e7-4cf3-b645-a872de81b7a0-0
+00:50:25.160 --> 00:50:29.850
+And then there are already steps,
+steps mentioned in the documentation how
+
+c4e5980c-06e7-4cf3-b645-a872de81b7a0-1
+00:50:29.850 --> 00:50:33.040
+to get the CLI up installed on your local
+machine.
+
+a6317f55-e052-47c7-adc1-2c62a82b22c0-0
+00:50:33.400 --> 00:50:36.920
+But essentially you just am CLI-- URL.
+
+8f38870e-2dcd-47d8-84d3-b0499649b0de-0
+00:50:37.360 --> 00:50:43.235
+And then you just give the URL to the
+form and then it just creates a local
+
+8f38870e-2dcd-47d8-84d3-b0499649b0de-1
+00:50:43.235 --> 00:50:44.240
+host version.
+
+90fe902d-233a-4742-81d1-ca2b3f232178-0
+00:50:44.240 --> 00:50:47.840
+So if I go to local host content,
+the part of the form.
+
+86887a7e-8b4e-4289-8fd2-b7924aa0a59f-0
+00:50:47.840 --> 00:50:50.360
+So if you see here content Cloud Foundry
+forms, contact us.
+
+635d97b6-5dd2-4d3d-96ae-560353eb18a5-0
+00:50:50.800 --> 00:50:54.480
+If I go here and refresh,
+this form should be visible here locally.
+
+f9504585-f9c6-4244-9971-da2c014bcd9d-0
+00:50:54.880 --> 00:50:57.493
+So now whatever changes I do on my local
+editor,
+
+f9504585-f9c6-4244-9971-da2c014bcd9d-1
+00:50:57.493 --> 00:50:59.840
+it will be visible directly in the
+browser.
+
+31cb34d1-75f4-46c6-ac4d-7141ba6cbe18-0
+00:51:00.880 --> 00:51:04.163
+So for example,
+I was talking about some of the colors
+
+31cb34d1-75f4-46c6-ac4d-7141ba6cbe18-1
+00:51:04.163 --> 00:51:04.880
+here, right?
+
+c305dbff-aaa7-42ce-8b71-36a954887a0d-0
+00:51:04.880 --> 00:51:06.000
+Let's say label color.
+
+e2d5ae89-c34d-4edd-830a-132e3e0b3c59-0
+00:51:06.000 --> 00:51:07.880
+I, it's, it's black currently.
+
+50b0f676-5299-48b2-bfc1-ee7accec0b61-0
+00:51:08.240 --> 00:51:12.550
+If I wanted to change it to something
+like a red or a blue,
+
+50b0f676-5299-48b2-bfc1-ee7accec0b61-1
+00:51:12.550 --> 00:51:17.794
+as soon as I change them here,
+you should see the changes for all of the
+
+50b0f676-5299-48b2-bfc1-ee7accec0b61-2
+00:51:17.794 --> 00:51:18.800
+labels, right?
+
+82ccee3e-4c26-40ef-a3d1-50339d4c0282-0
+00:51:21.200 --> 00:51:24.019
+That's for the styling for just the
+colors,
+
+82ccee3e-4c26-40ef-a3d1-50339d4c0282-1
+00:51:24.019 --> 00:51:27.160
+but let's go into a little more specific
+things.
+
+b80290e8-31f8-4ce8-966c-70c74ca697c2-0
+00:51:27.160 --> 00:51:32.326
+So gradually we'll be moving into more
+specifics into how to style put specific
+
+b80290e8-31f8-4ce8-966c-70c74ca697c2-1
+00:51:32.326 --> 00:51:33.360
+form components.
+
+ba62d90d-c79d-42de-ba65-271a56999951-0
+00:51:34.720 --> 00:51:35.840
+Style components.
+
+0952571b-c38b-4b1b-b3a1-b7704b231206-0
+00:51:36.320 --> 00:51:40.747
+You generally need to know the structure
+of the structure in which these fields
+
+0952571b-c38b-4b1b-b3a1-b7704b231206-1
+00:51:40.747 --> 00:51:41.080
+exist.
+
+c42469f0-2396-4649-b647-137fd45a82f0-0
+00:51:41.080 --> 00:51:44.137
+So all,
+all of the out-of-the-box components have
+
+c42469f0-2396-4649-b647-137fd45a82f0-1
+00:51:44.137 --> 00:51:49.090
+a have a predefined HTML Dom structure,
+all of which has already been documented
+
+c42469f0-2396-4649-b647-137fd45a82f0-2
+00:51:49.090 --> 00:51:50.679
+in the documentation page.
+
+8851c2c4-4822-499f-92a4-c56f56173665-0
+00:51:51.160 --> 00:51:55.467
+So if you go to the universality type for
+edge delivery services documentation page,
+
+8851c2c4-4822-499f-92a4-c56f56173665-1
+00:51:55.467 --> 00:51:59.522
+we have documentation for almost all of
+the features we give out-of-the-box for
+
+8851c2c4-4822-499f-92a4-c56f56173665-2
+00:51:59.522 --> 00:52:00.080
+developers.
+
+57d6bb3b-24f8-4a3e-89e5-340b16f71fbf-0
+00:52:00.600 --> 00:52:05.599
+And so if you come to styling,
+we have extensive documentation
+
+57d6bb3b-24f8-4a3e-89e5-340b16f71fbf-1
+00:52:05.599 --> 00:52:10.360
+describing the structure of most of the
+general components.
+
+c23cbd59-38e8-4ff7-8320-f663bdf4f19f-0
+00:52:10.800 --> 00:52:14.185
+So for example, here,
+this is a generic way,
+
+c23cbd59-38e8-4ff7-8320-f663bdf4f19f-1
+00:52:14.185 --> 00:52:20.127
+a generic sort of structure to how all
+most of the components will be there in
+
+c23cbd59-38e8-4ff7-8320-f663bdf4f19f-2
+00:52:20.127 --> 00:52:20.880
+your form.
+
+7b33b40f-61ab-467f-be36-937385ea96cf-0
+00:52:21.240 --> 00:52:24.440
+So all of these are going to be there.
+
+12cf65aa-0210-494b-999c-be5ae8002271-0
+00:52:24.440 --> 00:52:28.060
+So if you see here,
+there is a particular class called field
+
+12cf65aa-0210-494b-999c-be5ae8002271-1
+00:52:28.060 --> 00:52:31.800
+wrapper that'll be present on all the
+fields inside of a form.
+
+30bf2ebc-7a7a-4d4e-b5d0-a3df9be69435-0
+00:52:32.040 --> 00:52:34.680
+So let's use this field wrapper to
+actually style something.
+
+40021357-1c7d-4f3a-93b1-df6c30835aba-0
+00:52:34.680 --> 00:52:39.640
+So let's let's assume that my use case is
+to style every single form component.
+
+69f7510c-c2c0-4a5e-9637-657e18283865-0
+00:52:39.640 --> 00:52:42.675
+I want to, let's say,
+do some add some style to every single
+
+69f7510c-c2c0-4a5e-9637-657e18283865-1
+00:52:42.675 --> 00:52:45.462
+form component,
+regardless of what type of component it
+
+69f7510c-c2c0-4a5e-9637-657e18283865-2
+00:52:45.462 --> 00:52:45.960
+is, right?
+
+a7873e7d-1520-4cd3-af98-94179e76ca70-0
+00:52:47.360 --> 00:52:48.880
+So let's use this field wrapper.
+
+60597b0d-055b-4cfd-87fc-fd72852cda85-0
+00:52:49.240 --> 00:52:54.019
+And there is a particular syntax that you
+need to follow for styles just to be just
+
+60597b0d-055b-4cfd-87fc-fd72852cda85-1
+00:52:54.019 --> 00:52:55.840
+to ensure specificity in in CSS.
+
+01065ab4-d51e-4d16-af27-b544447df544-0
+00:52:56.320 --> 00:52:58.840
+So this is that particular syntax.
+
+0c345fc3-1a9f-4a5d-9519-3e7e8e9e8999-0
+00:52:58.840 --> 00:53:03.663
+So you go into main form form and then
+you type in whatever selector you want to
+
+0c345fc3-1a9f-4a5d-9519-3e7e8e9e8999-1
+00:53:03.663 --> 00:53:04.080
+select.
+
+55db1cc3-c64d-4f3a-bda8-0f25a0fe4d31-0
+00:53:04.080 --> 00:53:07.797
+So let's go and copy this,
+go back to the editor,
+
+55db1cc3-c64d-4f3a-bda8-0f25a0fe4d31-1
+00:53:07.797 --> 00:53:10.400
+and then I'll just paste this here.
+
+c58a5626-fcd2-4d89-89d1-9b657fc6be11-0
+00:53:14.040 --> 00:53:19.494
+And then and then because I was trying to
+style the entire all the all the
+
+c58a5626-fcd2-4d89-89d1-9b657fc6be11-1
+00:53:19.494 --> 00:53:22.840
+components,
+I'm just gonna say field wrapper.
+
+cb378336-95f0-40b7-96b6-bf9f79bb2df4-0
+00:53:24.960 --> 00:53:28.120
+So let me just change this to something
+that's more visible, I believe.
+
+18d997bd-9097-443a-9b72-2da811d59c49-0
+00:53:28.120 --> 00:53:30.440
+So let's just stick to blue.
+
+6ad279cf-9cbe-4fc5-9d08-5601f5b05e4b-0
+00:53:30.440 --> 00:53:34.440
+Essentially what I'm doing is just give a
+border to every single field.
+
+6d531464-1ddf-438b-a1f7-6dea6ddb98a7-0
+00:53:35.400 --> 00:53:38.343
+And if I go back to the form,
+if you see here live,
+
+6d531464-1ddf-438b-a1f7-6dea6ddb98a7-1
+00:53:38.343 --> 00:53:42.135
+you will see that a border is being
+applied to every single field,
+
+6d531464-1ddf-438b-a1f7-6dea6ddb98a7-2
+00:53:42.135 --> 00:53:44.682
+even the text at the top,
+a field over here,
+
+6d531464-1ddf-438b-a1f7-6dea6ddb98a7-3
+00:53:44.682 --> 00:53:48.757
+this is the drop down that you guys have,
+the number, the phone number,
+
+6d531464-1ddf-438b-a1f7-6dea6ddb98a7-4
+00:53:48.757 --> 00:53:52.720
+the last name and the first name,
+the e-mail and all of these things.
+
+9e384613-9f8e-4119-b80b-5af5c44db87c-0
+00:53:54.280 --> 00:53:56.000
+So these are just for all the components.
+
+a1f17a1a-a3e3-4982-a08a-a73ae38307be-0
+00:53:56.000 --> 00:53:58.270
+Now if I want to go to specific
+components,
+
+a1f17a1a-a3e3-4982-a08a-a73ae38307be-1
+00:53:58.270 --> 00:54:00.800
+let's say I want to target only the next
+fields.
+
+c13ba07a-9f65-40a9-8510-c2e42e946aa2-0
+00:54:01.360 --> 00:54:06.433
+If we go back to the documentation,
+there is a particular syntax for all of
+
+c13ba07a-9f65-40a9-8510-c2e42e946aa2-1
+00:54:06.433 --> 00:54:10.840
+the all of the of the classes for all of
+the specific components.
+
+6960294a-0244-455e-a85d-4288216fe643-0
+00:54:10.840 --> 00:54:14.123
+For example,
+the type wrapper will tell you that it
+
+6960294a-0244-455e-a85d-4288216fe643-1
+00:54:14.123 --> 00:54:18.480
+will will target all the classes for a
+particular type of component.
+
+93f3bfd1-7436-4bb4-b432-38bbbc488d05-0
+00:54:18.480 --> 00:54:21.920
+So if I say text wrapper,
+they'll target only the text.
+
+fd51112a-410b-4940-bd10-68871e358219-0
+00:54:21.920 --> 00:54:26.230
+So if I change this here to text and if I
+go back,
+
+fd51112a-410b-4940-bd10-68871e358219-1
+00:54:26.230 --> 00:54:33.077
+I'll see that only the text wrappers have
+been selected here and the styling has
+
+fd51112a-410b-4940-bd10-68871e358219-2
+00:54:33.077 --> 00:54:35.360
+been applied conditionally.
+
+410f0cbf-31fc-46c7-8137-4b805cc61fb7-0
+00:54:36.320 --> 00:54:38.557
+And if I want to now be even more
+specific,
+
+410f0cbf-31fc-46c7-8137-4b805cc61fb7-1
+00:54:38.557 --> 00:54:41.760
+these these styles were applied to all of
+the text components.
+
+9e609bbe-626c-49eb-a310-db9719aee558-0
+00:54:41.760 --> 00:54:45.858
+But I want to be specific in terms of
+specifying that only the first name,
+
+9e609bbe-626c-49eb-a310-db9719aee558-1
+00:54:45.858 --> 00:54:47.880
+for example, has to have the styling.
+
+b4224666-d706-4c32-abb0-0c93cf48396d-0
+00:54:48.160 --> 00:54:52.059
+Then if you go again back to the
+documentation that you have that field-
+
+b4224666-d706-4c32-abb0-0c93cf48396d-1
+00:54:52.059 --> 00:54:56.280
+name of the component that will allow you
+to select that particular component.
+
+8edac392-c99d-4c99-bd22-d54881cbfaa5-0
+00:54:56.280 --> 00:54:59.799
+So if I go,
+I just go into inspect and if I see this
+
+8edac392-c99d-4c99-bd22-d54881cbfaa5-1
+00:54:59.799 --> 00:55:03.120
+particular field,
+it'll have a field- first name.
+
+2e4b7713-b04b-4e88-8c2c-9a3a56d163d9-0
+00:55:03.560 --> 00:55:09.335
+So if I go here,
+if I just change this to field- first
+
+2e4b7713-b04b-4e88-8c2c-9a3a56d163d9-1
+00:55:09.335 --> 00:55:12.800
+name, I believe it's first- name.
+
+8238233f-5a50-4327-964f-6b5b2061be4d-0
+00:55:14.920 --> 00:55:15.480
+And there you go.
+
+0e09cc78-b829-42ce-9f5a-08f9f7a60bd6-0
+00:55:15.480 --> 00:55:17.480
+You will just have the stylings applied
+to the first name.
+
+ae406241-6d7b-4e2e-8a06-f98968970b03-0
+00:55:19.720 --> 00:55:22.401
+So this is all the way from generic at
+the top,
+
+ae406241-6d7b-4e2e-8a06-f98968970b03-1
+00:55:22.401 --> 00:55:26.760
+styling everything to all the way to
+being very specific in terms of styling.
+
+a2e8cb3b-acca-4596-b1d5-a8d9a891631c-0
+00:55:28.480 --> 00:55:29.800
+That's all for styling.
+
+388eff5f-7752-464d-a2ee-4e15994a7e0d-0
+00:55:29.920 --> 00:55:33.320
+I think we will move on to one last thing,
+which is custom components.
+
+51fd67da-f331-4aaf-a51a-c58ed41a413c-0
+00:55:33.760 --> 00:55:38.425
+So you see all of these components over
+here are out-of-the-box components like
+
+51fd67da-f331-4aaf-a51a-c58ed41a413c-1
+00:55:38.425 --> 00:55:41.400
+drop downs and and and all these basic
+components.
+
+63a2a516-31ad-42f5-b491-0b05bc1f8275-0
+00:55:41.400 --> 00:55:45.769
+But let's say you want to create some
+component where you have control over the
+
+63a2a516-31ad-42f5-b491-0b05bc1f8275-1
+00:55:45.769 --> 00:55:47.080
+JavaScript here via CSS.
+
+95ef0211-ae6c-4c65-85c0-bc76c07ee2cb-0
+00:55:47.080 --> 00:55:47.920
+You're just controlling.
+
+029665e4-2e27-42da-8221-fcc7f5b11312-0
+00:55:48.200 --> 00:55:52.028
+You're just using a class,
+adding CSS to and changing the look and
+
+029665e4-2e27-42da-8221-fcc7f5b11312-1
+00:55:52.028 --> 00:55:53.400
+feel of the form, right?
+
+38db2aca-3136-426f-a7ec-d8a49c4f0749-0
+00:55:53.400 --> 00:55:54.200
+Or the component.
+
+cd7f0f8e-a135-46a2-bc9b-7dbc75c65327-0
+00:55:54.440 --> 00:55:56.320
+Let's say you want to add a few things.
+
+11d1c9ae-ea69-4fc1-8b52-8a3011c0330e-0
+00:55:56.320 --> 00:56:00.486
+You want to create extra nodes by the JS
+Dom manipulation methods,
+
+11d1c9ae-ea69-4fc1-8b52-8a3011c0330e-1
+00:56:00.486 --> 00:56:04.280
+and you want to create something which is
+a lot more better.
+
+5772ba14-ebbd-4f0f-a59e-e9db3f89ecaa-0
+00:56:04.280 --> 00:56:07.880
+So let's say you want to create something
+like a range component over here.
+
+bcb7ddc2-77e2-443b-86fb-a1a09dd67d08-0
+00:56:08.400 --> 00:56:11.219
+If you see here,
+this is a component which takes in a
+
+bcb7ddc2-77e2-443b-86fb-a1a09dd67d08-1
+00:56:11.219 --> 00:56:13.360
+value based on wherever this is scrolled.
+
+a03762ad-fe7e-4dcc-bcf2-fa419eac59d1-0
+00:56:13.360 --> 00:56:17.503
+If I open this in preview,
+this is just another way of seeing the
+
+a03762ad-fe7e-4dcc-bcf2-fa419eac59d1-1
+00:56:17.503 --> 00:56:18.320
+preview form.
+
+d259c365-3d3e-4273-822f-ce6eebeb9eb9-0
+00:56:24.440 --> 00:56:27.436
+So if you see the functionality is that
+when I scroll through this,
+
+d259c365-3d3e-4273-822f-ce6eebeb9eb9-1
+00:56:27.436 --> 00:56:30.080
+the number on the top changes and it
+changes based on this.
+
+e131c7af-dc87-43d4-836c-0baf11cdfb40-0
+00:56:30.080 --> 00:56:32.112
+And so when you submit,
+when the user submits,
+
+e131c7af-dc87-43d4-836c-0baf11cdfb40-1
+00:56:32.112 --> 00:56:33.280
+it's just going to send 93.
+
+fc907665-30fa-4fd7-8968-3436d5890b5a-0
+00:56:33.560 --> 00:56:36.323
+So I want to change,
+I want to sort of create this custom
+
+fc907665-30fa-4fd7-8968-3436d5890b5a-1
+00:56:36.323 --> 00:56:36.800
+component.
+
+16048b55-ff98-4533-9402-a1ee67a003b6-0
+00:56:37.200 --> 00:56:42.408
+And so the way we do this is every single
+custom component that you would want to
+
+16048b55-ff98-4533-9402-a1ee67a003b6-1
+00:56:42.408 --> 00:56:47.616
+think of or you'd want to make for your
+use case would be based on top of a or on
+
+16048b55-ff98-4533-9402-a1ee67a003b6-2
+00:56:47.616 --> 00:56:49.840
+top of an out-of-the-box component.
+
+924812fb-605a-44cd-a9f8-f76f62af30c7-0
+00:56:50.200 --> 00:56:53.393
+So you would have to think of an
+out-of-the-box component that we already
+
+924812fb-605a-44cd-a9f8-f76f62af30c7-1
+00:56:53.393 --> 00:56:56.760
+have and then use that to build on top of
+it and to change the Dom structure.
+
+c4ff237d-9399-4e93-9371-1e6ed8617632-0
+00:56:57.160 --> 00:57:00.529
+So in our case,
+because it's a range component and range
+
+c4ff237d-9399-4e93-9371-1e6ed8617632-1
+00:57:00.529 --> 00:57:05.200
+component accepts only a number here I'm
+going to use a number component as my
+
+c4ff237d-9399-4e93-9371-1e6ed8617632-2
+00:57:05.200 --> 00:57:07.920
+base component and then build on top of
+that.
+
+c6e0e991-bff6-4061-904a-b9103e3c2c80-0
+00:57:09.360 --> 00:57:11.800
+So let's go back to the code.
+
+985e79b4-04e4-4d22-822b-5bfe286562e7-0
+00:57:11.800 --> 00:57:14.320
+So this is where I will create that
+component.
+
+bd54ca14-6ccd-4878-bcea-b618deb273ff-0
+00:57:15.440 --> 00:57:20.795
+I'm gonna go into the code and I'm gonna
+show you how easy it is now to create a
+
+bd54ca14-6ccd-4878-bcea-b618deb273ff-1
+00:57:20.795 --> 00:57:21.920
+custom component.
+
+a18a19af-9b7c-42ad-aca2-ce4f80c279b4-0
+00:57:22.440 --> 00:57:26.600
+We have a new CLI tool that allows you to
+create a custom components.
+
+e47bc859-686b-4e61-a6fb-fbfb3ca44ee7-0
+00:57:26.600 --> 00:57:30.960
+So as as soon as you go in and say NPM
+run, this is your repository.
+
+b5e43e54-5114-40ba-bbd4-594675799d3f-0
+00:57:30.960 --> 00:57:35.680
+I'm just gonna say NPM run,
+create custom component.
+
+0f5eb59d-8c51-4a3a-9ce2-1bb274f051a0-0
+00:57:37.160 --> 00:57:41.455
+It'll give you an A CLI tool which allows
+you to just fill in the stuff that you
+
+0f5eb59d-8c51-4a3a-9ce2-1bb274f051a0-1
+00:57:41.455 --> 00:57:41.880
+need to.
+
+407ad4f9-1c2d-4803-aad9-bfc5d17592fc-0
+00:57:41.880 --> 00:57:44.320
+So let's say I'm,
+I'm creating a range components.
+
+0b6e113f-e518-43ec-83a1-69914601a427-0
+00:57:44.320 --> 00:57:49.342
+I'm just gonna call it range and then it
+allows you to dynamically select OK,
+
+0b6e113f-e518-43ec-83a1-69914601a427-1
+00:57:49.342 --> 00:57:53.400
+I just want to build on top of some
+out-of-the-box components.
+
+5f536ffd-fbad-446b-addb-b339a9604bf5-0
+00:57:53.400 --> 00:57:55.200
+So I want to build on top of the number.
+
+c22e31a2-dbf9-4921-b575-89d8b82e3561-0
+00:57:55.200 --> 00:57:58.040
+I'm gonna hit enter and this will give
+you a summary.
+
+b7834417-7ff4-4e4e-bbbd-4c817f686e11-0
+00:57:58.040 --> 00:58:01.280
+This is the range component that you want
+to make base component this number input.
+
+8ae95276-9b03-4c1e-8add-923abfddb73c-0
+00:58:01.280 --> 00:58:02.200
+Do you want to create this?
+
+604b9441-0c4c-45b3-933f-541889343df2-0
+00:58:02.200 --> 00:58:04.680
+I say enter and there you go.
+
+2bf9f400-5c33-42bd-ad92-38e7681ed9aa-0
+00:58:04.680 --> 00:58:09.242
+It'll create automatically the changes
+that you require inside of your
+
+2bf9f400-5c33-42bd-ad92-38e7681ed9aa-1
+00:58:09.242 --> 00:58:14.320
+repository for you to be able to add
+custom component and change those things.
+
+1f4a8af3-2613-432a-b8f1-0f917f88b95a-0
+00:58:14.320 --> 00:58:17.826
+So if you see here this,
+this structure here will tell you where
+
+1f4a8af3-2613-432a-b8f1-0f917f88b95a-1
+00:58:17.826 --> 00:58:22.251
+exactly the files are present for you to
+be able to change and for you be able to
+
+1f4a8af3-2613-432a-b8f1-0f917f88b95a-2
+00:58:22.251 --> 00:58:23.599
+customize your component.
+
+f6bf800e-56dc-44cc-87d0-3dc8ac755a35-0
+00:58:23.600 --> 00:58:26.565
+So if I go into form components and then
+range,
+
+f6bf800e-56dc-44cc-87d0-3dc8ac755a35-1
+00:58:26.565 --> 00:58:29.160
+arrange dot JS is already created for you.
+
+5053fc87-181d-404d-8ae3-b1db6fe07594-0
+00:58:29.560 --> 00:58:33.690
+And if you see here,
+this is the function that you can now
+
+5053fc87-181d-404d-8ae3-b1db6fe07594-1
+00:58:33.690 --> 00:58:36.560
+access to to manipulate the the the HTML.
+
+dbef26ac-dea6-402c-b9c4-244a3398a7f7-0
+00:58:36.560 --> 00:58:40.623
+So field division is what is what is the
+root level division that we saw the field
+
+dbef26ac-dea6-402c-b9c4-244a3398a7f7-1
+00:58:40.623 --> 00:58:43.120
+wrapper, the class field wrapper,
+which was on it.
+
+90fce955-4335-48b8-95d5-49729001f450-0
+00:58:43.360 --> 00:58:44.320
+This is the entire company.
+
+09d6160a-d09a-4c8c-acce-623e12d44495-0
+00:58:44.320 --> 00:58:46.360
+You could come in here and change these
+things.
+
+5de366f1-a61f-425a-953a-9f5b3a744e1b-0
+00:58:46.360 --> 00:58:51.120
+And arrange dot CSS is a file that's
+created for you for CSS and stuff.
+
+edbcbe0a-5824-41a3-bd17-ccee22f5ad79-0
+00:58:51.120 --> 00:58:54.579
+So what I'm going to do is I'm gonna just
+for the sake of time,
+
+edbcbe0a-5824-41a3-bd17-ccee22f5ad79-1
+00:58:54.579 --> 00:58:58.850
+is gonna copy some code that I already
+have and I'm gonna paste it in and then
+
+edbcbe0a-5824-41a3-bd17-ccee22f5ad79-2
+00:58:58.850 --> 00:59:00.040
+show you how it works.
+
+f78ed66d-1e27-4c8a-958c-5609e355dd12-0
+00:59:00.040 --> 00:59:08.159
+Then I have some JavaScript that's
+already doing the logic for creating the
+
+f78ed66d-1e27-4c8a-958c-5609e355dd12-1
+00:59:08.159 --> 00:59:08.480
+JS.
+
+9c8872da-9bc6-465d-b0e5-280299673120-0
+00:59:10.280 --> 00:59:13.698
+And once this is done,
+I just have to push this course and it
+
+9c8872da-9bc6-465d-b0e5-280299673120-1
+00:59:13.698 --> 00:59:14.360
+says status.
+
+73b3eac0-8290-4297-bf88-13cfaa3c7698-0
+00:59:15.600 --> 00:59:17.520
+And if you see, yeah,
+I have the range component.
+
+4729b7ae-491e-427c-9daa-9bd36da815a8-0
+00:59:21.880 --> 00:59:24.920
+I'm gonna say Range component.
+
+ff75aee2-8276-4fad-bd71-a1c78ff5f2e7-0
+00:59:33.920 --> 00:59:37.510
+So as soon as this is pushed,
+I can go into my form and previously if I
+
+ff75aee2-8276-4fad-bd71-a1c78ff5f2e7-1
+00:59:37.510 --> 00:59:41.301
+would have clicked on this add button,
+I would have just the out-of-the-box
+
+ff75aee2-8276-4fad-bd71-a1c78ff5f2e7-2
+00:59:41.301 --> 00:59:41.800
+component.
+
+72ce4f0e-57b1-4d76-a12a-327cf7d6d262-0
+00:59:41.800 --> 00:59:49.746
+Let me now refresh the page and now if I
+click on the add button,
+
+72ce4f0e-57b1-4d76-a12a-327cf7d6d262-1
+00:59:49.746 --> 00:59:58.897
+you will see an an entire new section
+called the custom form components and
+
+72ce4f0e-57b1-4d76-a12a-327cf7d6d262-2
+00:59:58.897 --> 01:00:02.630
+you'll see the range component.
+
+fdb93ba3-9101-43a5-8231-202160cea2cf-0
+01:00:02.630 --> 01:00:03.030
+Here.
+
+0a95e291-f400-476e-9367-f584973f0005-0
+01:00:03.590 --> 01:00:08.280
+I can go ahead and add that range
+component and you'll see that the base
+
+0a95e291-f400-476e-9367-f584973f0005-1
+01:00:08.280 --> 01:00:09.630
+layer has been added.
+
+c9d0b1a0-0180-44b3-814f-fb001a3b6f52-0
+01:00:11.440 --> 01:00:14.000
+But there are some styles that's missing.
+
+3fb63c8f-dc93-4fe5-8f97-e8d3c0c4d0a7-0
+01:00:15.080 --> 01:00:16.800
+I believe I did commit those, right?
+
+a7590034-315a-4bfd-81c7-4811b77c7bfe-0
+01:00:17.920 --> 01:00:19.120
+I didn't save these files.
+
+e33704e7-581f-416f-a577-30ded2c1d334-0
+01:00:19.120 --> 01:00:22.558
+My pattern, see,
+because that has to make you save these
+
+e33704e7-581f-416f-a577-30ded2c1d334-1
+01:00:22.558 --> 01:00:22.920
+files.
+
+424241e9-72bc-43ab-909a-db6d6b30b2f9-0
+01:00:26.480 --> 01:00:29.813
+So I mean,
+this sort of indicates to you that it's
+
+424241e9-72bc-43ab-909a-db6d6b30b2f9-1
+01:00:29.813 --> 01:00:31.840
+built on top of a number input.
+
+f894dc89-9683-4808-b544-1460f26b7d39-0
+01:00:31.840 --> 01:00:35.339
+So if you go into preview mode here,
+it's actually a number input you just put
+
+f894dc89-9683-4808-b544-1460f26b7d39-1
+01:00:35.339 --> 01:00:35.960
+in stuff here.
+
+dab1ac00-e637-493c-9386-c3ef7c1214aa-0
+01:00:36.200 --> 01:00:39.886
+But because I didn't write any JS or CSS,
+this is gonna act like a normal number
+
+dab1ac00-e637-493c-9386-c3ef7c1214aa-1
+01:00:39.886 --> 01:00:40.160
+input.
+
+a167e836-e6db-45e8-8c4e-4a05330945f8-0
+01:00:40.440 --> 01:00:49.800
+Once I come at these and push them,
+fix the JS and CSS range.
+
+321da24f-9184-4d4a-883d-3a5a287cd7cb-0
+01:00:59.160 --> 01:01:01.400
+All right, I believe you'll have to add.
+
+bcf191b0-1d24-4b7c-9edb-8f0ae6df0d21-0
+01:01:01.520 --> 01:01:02.440
+I want to refresh.
+
+85e67ec7-de29-423f-b253-c63b6f333b40-0
+01:01:10.670 --> 01:01:11.150
+There you go.
+
+a56c0cf2-78df-4c8b-9c3c-4395f0a0b661-0
+01:01:11.550 --> 01:01:14.710
+So we see now that the CSS and DJs is
+applied.
+
+5dc081d9-6c0a-470d-9fe9-70f512fe77a7-0
+01:01:14.710 --> 01:01:19.430
+So if I go into preview mode and I change
+this, this should be working fine.
+
+71c29948-9fb6-494c-a583-b4fcf677ddc2-0
+01:01:20.870 --> 01:01:24.505
+And so when you have a submit button,
+the 73 value is what is going to be sent
+
+71c29948-9fb6-494c-a583-b4fcf677ddc2-1
+01:01:24.505 --> 01:01:25.150
+to the server.
+
+6097e6bc-6f00-43aa-afe6-6a6e02a78e77-0
+01:01:25.430 --> 01:01:28.390
+When the user drags it drops,
+the user changes this.
+
+aeeb4666-cf15-4bd4-83a1-04a8e92c6bfe-0
+01:01:29.960 --> 01:01:31.480
+This is all for custom conference.
+
+8f4f67f5-1d54-4d57-b16a-35139f7ae681-0
+01:01:31.480 --> 01:01:32.560
+Any questions so far?
+
+352f2b94-1d16-450e-bd0a-cdcd01774cd6-0
+01:01:32.560 --> 01:01:36.800
+Do you guys have questions upon custom
+conference or styling?
+
+ffa43689-24d8-4a00-bebd-ceb84f060fba-0
+01:01:37.800 --> 01:01:39.480
+So Talbiz, sorry to interrupt.
+
+a29ba3dc-df9b-46de-8990-4822db467ac8-0
+01:01:40.000 --> 01:01:40.680
+This is awesome.
+
+18af9481-ec95-49f3-b781-cdb90c872e9c-0
+01:01:40.720 --> 01:01:44.200
+I think this was not there and we were
+developing for Clock County forms.
+
+643eea91-31b0-4c77-8d55-3a8c66ec38c6-0
+01:01:44.200 --> 01:01:47.503
+So this looks great because I remember,
+you know,
+
+643eea91-31b0-4c77-8d55-3a8c66ec38c6-1
+01:01:47.503 --> 01:01:52.988
+updating those components or Jason files,
+updating the JavaScript, the HTML thing,
+
+643eea91-31b0-4c77-8d55-3a8c66ec38c6-2
+01:01:52.988 --> 01:01:54.640
+and then finally we know.
+
+3fee2615-ba3c-49f6-bd30-339f029651f7-0
+01:01:54.640 --> 01:02:00.040
+So I remember we did develop the tool tip
+kind of a thing for Clark County Forms
+
+3fee2615-ba3c-49f6-bd30-339f029651f7-1
+01:02:00.040 --> 01:02:05.240
+and we used to update the component
+models dot Jason file and then update the
+
+3fee2615-ba3c-49f6-bd30-339f029651f7-2
+01:02:05.240 --> 01:02:10.040
+forms YouTube dot JS, update the CSS,
+and then we'll see the component.
+
+da30cff9-7ab3-4172-adbf-a502ad93ba5f-0
+01:02:10.040 --> 01:02:11.360
+So, but this is awesome for me.
+
+3351de32-d9a8-4ffe-9c57-62f9baefec38-0
+01:02:11.360 --> 01:02:12.200
+Thank you for sharing.
+
+9451e534-9b55-428c-88c5-d9c0fced7cec-0
+01:02:12.240 --> 01:02:13.680
+Yeah, the CLI sort of helps.
+
+880a5597-04fe-407b-89d3-db40941ff2b4-0
+01:02:13.680 --> 01:02:15.400
+Now it'll do everything for you.
+
+1ef5bdb1-2440-42b1-a05b-8d89f222f571-0
+01:02:15.440 --> 01:02:16.600
+So you don't have to do anything.
+
+ad8f8160-832f-47bd-8a87-2b81a6b9e97c-0
+01:02:18.480 --> 01:02:18.840
+All right.
+
+13c15bd1-8405-4e01-b405-361f94204264-0
+01:02:18.840 --> 01:02:19.600
+Any other questions?
+
+4d92154f-bd73-40e7-969e-b242d66f6560-0
+01:02:20.280 --> 01:02:21.080
+Yeah, I have a question.
+
+91fa72c8-ca87-499e-9bda-976b4bcdd85d-0
+01:02:21.080 --> 01:02:24.360
+So once you make the change,
+how do you deploy this one?
+
+3de9d8a7-aff7-4ddc-a931-b8c40a502a66-0
+01:02:24.560 --> 01:02:26.840
+Just a regular Git push it to main branch?
+
+186978e2-ca27-4214-b983-5cd628193a37-0
+01:02:26.840 --> 01:02:31.040
+Or how do you test this out on the dev
+server or state server or prod server?
+
+8f3fa8e4-0a7e-420d-807a-d199ee7142e3-0
+01:02:32.120 --> 01:02:36.200
+So you can create a branch and push it or
+you can push it directly to main.
+
+ac583681-7793-4836-b34d-11b204bd3021-0
+01:02:36.600 --> 01:02:40.111
+The only way if you want to actually view
+this particular chain,
+
+ac583681-7793-4836-b34d-11b204bd3021-1
+01:02:40.111 --> 01:02:42.489
+let's say you pushed it to some dev
+branch,
+
+ac583681-7793-4836-b34d-11b204bd3021-2
+01:02:42.489 --> 01:02:46.919
+you just have to come into UI UE here and
+then just give this parameter called RF
+
+ac583681-7793-4836-b34d-11b204bd3021-3
+01:02:46.919 --> 01:02:51.080
+equals and then the name of your branch
+because I'm sort of demoing it here.
+
+3ff60565-be81-4cf8-99da-6c431b482bb3-0
+01:02:51.080 --> 01:02:55.465
+So I'm just I just demo and that's why if
+you see it in my sort of thing,
+
+3ff60565-be81-4cf8-99da-6c431b482bb3-1
+01:02:55.465 --> 01:02:57.480
+I have my demo branch checked out.
+
+07f2d984-4ede-4e3e-a175-9c5dcb5caa0c-0
+01:02:57.520 --> 01:02:59.800
+But if you're on main,
+you don't have to give that reference.
+
+3762128b-59b2-41d9-88f5-6a5c34096864-0
+01:02:59.800 --> 01:03:03.680
+And so you can directly see as soon as
+you push, all the changes should be here.
+
+518afb3e-a0a3-46e3-b177-382827dd70b6-0
+01:03:04.440 --> 01:03:04.720
+OK.
+
+1a3ed7d0-16ee-4150-975b-8630e5963260-0
+01:03:05.120 --> 01:03:12.187
+And this is not related to AM deployments,
+right, This is just GitHub deployment,
+
+1a3ed7d0-16ee-4150-975b-8630e5963260-1
+01:03:12.187 --> 01:03:13.480
+correct, right.
+
+b108fef2-e148-4c7e-8580-755cd152382b-0
+01:03:13.560 --> 01:03:16.800
+This is not really look at AM deployments.
+
+f87963a0-b540-405d-a92f-d56bab8955a7-0
+01:03:17.560 --> 01:03:18.680
+OK, thank you.
+
+71d591b6-b8a7-4376-9d43-1aef2f19b196-0
+01:03:18.680 --> 01:03:22.160
+Yeah And just to have that best practices
+also in place.
+
+2a271ebb-d0c2-4345-a348-ca29b193f6d6-0
+01:03:22.160 --> 01:03:27.204
+So it is always recommended whenever you
+are working on a new feature or new
+
+2a271ebb-d0c2-4345-a348-ca29b193f6d6-1
+01:03:27.204 --> 01:03:30.480
+capabilities, always go with a new branch,
+right?
+
+effdb7bb-0ab8-4519-942b-ab812eb67602-0
+01:03:30.480 --> 01:03:33.715
+Create a branch,
+make your all changes and then come to
+
+effdb7bb-0ab8-4519-942b-ab812eb67602-1
+01:03:33.715 --> 01:03:38.164
+universal editor and switch to that
+particular branch and see how everything
+
+effdb7bb-0ab8-4519-942b-ab812eb67602-2
+01:03:38.164 --> 01:03:38.800
+is working.
+
+05813d26-3d83-4f82-9bc3-d728bf1cce31-0
+01:03:39.120 --> 01:03:41.040
+Then take it to the main branch.
+
+b12f897e-9f02-411a-b3ee-2f19144b7e17-0
+01:03:41.240 --> 01:03:43.520
+So main is like you are live version.
+
+1b13afe0-c213-444f-a538-67c9a9568a0f-0
+01:03:43.600 --> 01:03:48.744
+So just to ensure there is no impact on
+live like while you're doing deployment
+
+1b13afe0-c213-444f-a538-67c9a9568a0f-1
+01:03:48.744 --> 01:03:53.438
+and just and so conforming, right,
+This is not your cloud pipeline which
+
+1b13afe0-c213-444f-a538-67c9a9568a0f-2
+01:03:53.438 --> 01:03:55.560
+used to round into cloud manager.
+
+0bc3a82d-37d4-4a1f-8c4c-c16c96a1f0ca-0
+01:03:55.560 --> 01:04:00.084
+You have to go and trigger the pipeline
+as soon as you make any changes check in
+
+0bc3a82d-37d4-4a1f-8c4c-c16c96a1f0ca-1
+01:04:00.084 --> 01:04:02.040
+that is ready to readily available.
+
+c57ec050-dd95-4b5f-9f8e-1ce961726eb4-0
+01:04:02.040 --> 01:04:04.000
+So if it is branch,
+it is available in branch.
+
+b2c18895-e6b9-4823-9b71-aec4b564e64e-0
+01:04:04.000 --> 01:04:07.120
+If it is main, it's just ready to go live.
+
+f0425279-4679-400c-a0d3-741f81465e16-0
+01:04:07.120 --> 01:04:09.120
+It's already in production,
+it kind of thing.
+
+6e12562f-ecac-4968-b295-2a42e0974045-0
+01:04:09.520 --> 01:04:12.120
+And even the content works in same
+fashion.
+
+ff39968c-1b94-459c-8b8b-aa87225fef3e-0
+01:04:12.120 --> 01:04:15.576
+So once you click on publish here,
+I think that is something we haven't
+
+ff39968c-1b94-459c-8b8b-aa87225fef3e-1
+01:04:15.576 --> 01:04:15.960
+covered.
+
+bf912dd4-6412-4e81-9a1b-ea8bcc11b146-0
+01:04:15.960 --> 01:04:19.560
+But once you click on publish,
+there is option to take it to either
+
+bf912dd4-6412-4e81-9a1b-ea8bcc11b146-1
+01:04:19.560 --> 01:04:21.360
+directly live or directly preview.
+
+6746192d-dd21-4298-ae44-f792df38ebb1-0
+01:04:21.920 --> 01:04:24.680
+So you have both option and then your
+form will be live.
+
+630f1a2f-a59e-4fe6-bdc7-ef49e045f889-0
+01:04:25.040 --> 01:04:29.135
+But again all this they are demoing in a
+specific folder,
+
+630f1a2f-a59e-4fe6-bdc7-ef49e045f889-1
+01:04:29.135 --> 01:04:33.160
+so it should not come back to your
+existing URLs, right?
+
+8bc17420-b3fc-4c06-9393-3bfac94df47a-0
+01:04:34.160 --> 01:04:46.478
+Yeah,
+yeah I know we we are way over the time
+
+8bc17420-b3fc-4c06-9393-3bfac94df47a-1
+01:04:46.478 --> 01:04:49.960
+by 8 minutes.
+
+7ef52428-f001-4722-92e9-2fba47dc789a-0
+01:04:50.600 --> 01:04:55.776
+But if you have any other questions,
+we can take it or I I just want to spend
+
+7ef52428-f001-4722-92e9-2fba47dc789a-1
+01:04:55.776 --> 01:04:59.560
+on a couple of more minutes on your next
+set of actions.
+
+aab117d5-3472-4c2a-94c4-b10c8f438c7a-0
+01:05:00.080 --> 01:05:02.600
+I know we found some of the PDF forms.
+
+65457449-6c07-47cf-aa35-2a51314f9803-0
+01:05:02.600 --> 01:05:05.120
+I think that is what the past tried to
+demonstrate.
+
+29f93dd1-7579-44f5-a604-1ca29ae07c2f-0
+01:05:05.480 --> 01:05:09.627
+Some of your existing forms which are
+there in PDF form can be converted into
+
+29f93dd1-7579-44f5-a604-1ca29ae07c2f-1
+01:05:09.627 --> 01:05:09.840
+EDS.
+
+c50c635b-1f7b-4fe6-9d8a-b9e5894c8b03-0
+01:05:10.200 --> 01:05:15.723
+But yeah, before going into that,
+any questions you have on this entire
+
+c50c635b-1f7b-4fe6-9d8a-b9e5894c8b03-1
+01:05:15.723 --> 01:05:19.635
+session,
+whether it be altering development or any
+
+c50c635b-1f7b-4fe6-9d8a-b9e5894c8b03-2
+01:05:19.635 --> 01:05:21.400
+other related to forms?
+
+7fac5155-b5fb-4dd6-83a3-9c595d7aaf30-0
+01:05:23.280 --> 01:05:24.880
+No additional questions for me.
+
+0345945f-d0c1-419c-961e-111940a10a3f-0
+01:05:25.920 --> 01:05:32.094
+Thank you for the demo showing you know
+how easy it is to generate forms using
+
+0345945f-d0c1-419c-961e-111940a10a3f-1
+01:05:32.094 --> 01:05:32.720
+the Gen.
+
+6244b5e7-57f1-4080-ab45-da6a1a8fac30-0
+01:05:32.760 --> 01:05:36.600
+AI and also how extensive we can get with
+it as well.
+
+b1cc79dc-9698-4452-b004-3a992dd5cb9e-0
+01:05:36.600 --> 01:05:38.920
+So just thank you for the demo.
+
+b48d10e3-25e2-4216-a6a9-7b6874f9c54c-0
+01:05:40.160 --> 01:05:40.400
+Yeah.
+
+e0b0a3cf-9164-482f-894a-bb6c71ae150d-0
+01:05:40.600 --> 01:05:41.840
+So do you have any plans?
+
+a94f717f-a8f1-4da3-8dbf-a66ecd30881a-0
+01:05:41.920 --> 01:05:44.080
+Like are you planning to move any?
+
+6cbd7f70-908d-4668-bd05-45819f23a361-0
+01:05:44.520 --> 01:05:46.800
+I think 3 of the forms which we have at
+least identified.
+
+013ff943-c33b-4af2-a449-ece9a5dc1200-0
+01:05:46.800 --> 01:05:52.320
+But do you have any more forms which you
+are planning to migrate to EDS forms?
+
+f7be70fb-d616-45a0-a08d-88afe4396773-0
+01:05:52.320 --> 01:05:52.800
+Yeah.
+
+40835811-0cfa-4f62-a75f-8fd023801a01-0
+01:05:52.800 --> 01:05:55.873
+So,
+so we're gonna slowly trickle in once our
+
+40835811-0cfa-4f62-a75f-8fd023801a01-1
+01:05:55.873 --> 01:06:00.550
+team is comfortable enough in generating
+these forms 'cause you, you,
+
+40835811-0cfa-4f62-a75f-8fd023801a01-2
+01:06:00.550 --> 01:06:04.760
+you see on the website how many PDF forms
+we've got out there.
+
+b56897fc-5f05-4ee9-83a8-6821dbf4b826-0
+01:06:05.360 --> 01:06:08.260
+So,
+so eventually our is to empower our
+
+b56897fc-5f05-4ee9-83a8-6821dbf4b826-1
+01:06:08.260 --> 01:06:13.480
+departments to be able to, you know,
+create and manage their own forms.
+
+1e51b7fd-3520-4b7b-9fd8-14f5f03c69dc-0
+01:06:14.760 --> 01:06:17.120
+But you know, that's it's a process.
+
+41baf1df-1966-4561-8f1f-e8b96b9c2c3a-0
+01:06:17.120 --> 01:06:22.013
+So we're kind of hitting some of the
+forms that people are explicitly
+
+41baf1df-1966-4561-8f1f-e8b96b9c2c3a-1
+01:06:22.013 --> 01:06:27.605
+requesting to convert into web forms and
+then eventually come up with a plan to
+
+41baf1df-1966-4561-8f1f-e8b96b9c2c3a-2
+01:06:27.605 --> 01:06:31.520
+see how we can get the organization to to
+move with us.
+
+8ca2ccfb-0e50-47ec-ad64-09f728893fdb-0
+01:06:32.320 --> 01:06:36.004
+OK,
+and can I know how many portal PDF forms
+
+8ca2ccfb-0e50-47ec-ad64-09f728893fdb-1
+01:06:36.004 --> 01:06:37.560
+do you have better?
+
+8ea21da0-1a42-4876-aab2-56a3500039eb-0
+01:06:37.560 --> 01:06:40.320
+Because I could,
+didn't do the crawling thing.
+
+e6519b4b-41fc-4f63-80d5-ccc31c216871-0
+01:06:40.320 --> 01:06:44.640
+But any rough estimation on number of PDF
+forms you have today?
+
+8437117b-7ed2-4958-afe9-147579e74441-0
+01:06:45.280 --> 01:06:47.680
+Maybe, yes.
+
+ee140b64-e102-4240-b780-9e47fccf25d2-0
+01:06:49.720 --> 01:06:54.487
+I don't have a number right now,
+even with the crawler, you know,
+
+ee140b64-e102-4240-b780-9e47fccf25d2-1
+01:06:54.487 --> 01:06:57.160
+some of the PDFs aren't actual forms.
+
+0fd83082-93e6-4c20-98a5-186ab9d1922e-0
+01:06:57.160 --> 01:06:59.960
+So yeah,
+I can't really give you a good number.
+
+4e1c0a17-6139-43ae-a325-57f561fec7d6-0
+01:07:01.200 --> 01:07:06.259
+OK, Maybe just rough estimation,
+like maybe in 10s or hundreds,
+
+4e1c0a17-6139-43ae-a325-57f561fec7d6-1
+01:07:06.259 --> 01:07:07.840
+something like that.
+
+24340fda-8d61-4bd2-aa8e-7317b1a1e37a-0
+01:07:08.080 --> 01:07:14.477
+Definitely hundreds, possibly thousands,
+but definitely hundreds just because we
+
+24340fda-8d61-4bd2-aa8e-7317b1a1e37a-1
+01:07:14.477 --> 01:07:20.953
+have 40 different departments, you know,
+some some departments may have 10 forms,
+
+24340fda-8d61-4bd2-aa8e-7317b1a1e37a-2
+01:07:20.953 --> 01:07:23.559
+some may have 100 different ones.
+
+5ffeb0b4-1e71-4e22-8d87-a6bbcce0e933-0
+01:07:23.560 --> 01:07:29.560
+So it's a little hard to to guesstimate,
+but definitely hundreds.
+
+80285855-0f38-41c6-9388-6026e3ec4656-0
+01:07:31.000 --> 01:07:34.065
+OK,
+so I think just wanted the reason I'm
+
+80285855-0f38-41c6-9388-6026e3ec4656-1
+01:07:34.065 --> 01:07:39.028
+asking is we are currently also
+onboarding VIP Pro customers again,
+
+80285855-0f38-41c6-9388-6026e3ec4656-2
+01:07:39.028 --> 01:07:43.626
+but especially for Chennai,
+right and and already I'm not sure
+
+80285855-0f38-41c6-9388-6026e3ec4656-3
+01:07:43.626 --> 01:07:46.400
+whether me maybe already mentioned it.
+
+cc2bc0d0-54c5-4373-8586-f0d28e6707a2-0
+01:07:46.400 --> 01:07:50.548
+I'm just trying to maybe reiterating all
+of the 24 forms which Live Today 22 were
+
+cc2bc0d0-54c5-4373-8586-f0d28e6707a2-1
+01:07:50.548 --> 01:07:54.595
+built at least for the content creation
+has been done using the same experience
+
+cc2bc0d0-54c5-4373-8586-f0d28e6707a2-2
+01:07:54.595 --> 01:07:56.720
+builder called as a assistant, right, Yes.
+
+ae7c0f67-bc9c-44e1-8d8a-51fb25e9b314-0
+01:07:56.720 --> 01:07:59.000
+So yes, we do very much yeah.
+
+ff8c9735-5078-42fa-a182-e2af98348b7e-0
+01:07:59.000 --> 01:08:02.607
+So we are ready to engage if you have
+this PDFs,
+
+ff8c9735-5078-42fa-a182-e2af98348b7e-1
+01:08:02.607 --> 01:08:07.613
+whether it is a acro form or it is a
+paper PDF or maybe EXFA based,
+
+ff8c9735-5078-42fa-a182-e2af98348b7e-2
+01:08:07.613 --> 01:08:11.000
+Adobe has its own technology EXFA based
+PDFs.
+
+fa294a9c-ba7d-4917-9342-ce313d58425f-0
+01:08:11.440 --> 01:08:16.280
+If you have it and if it is under setting,
+we can help you out.
+
+21973ec6-3a8e-4720-a445-9acf8ff05f5a-0
+01:08:16.880 --> 01:08:21.627
+And if you have any plans maybe now or in
+future, you can just reach out to us,
+
+21973ec6-3a8e-4720-a445-9acf8ff05f5a-1
+01:08:21.627 --> 01:08:22.280
+me or Meet.
+
+d6e51707-19e7-476b-a977-3b5c246fd1d5-0
+01:08:23.120 --> 01:08:27.120
+We are happy to onboard you into VIP
+program for even transforming that PDF.
+
+4b8cf2c6-38a3-47f6-9b83-5fabfdb35301-0
+01:08:27.120 --> 01:08:29.440
+Maybe we'll show it few PDF forms.
+
+7b79caa6-d3e9-49f2-baff-9ebf179dbd3a-0
+01:08:29.440 --> 01:08:31.440
+It will be in similar fashion what deep
+has shown.
+
+a9668f37-57ac-4a39-9017-803ab92b245c-0
+01:08:31.760 --> 01:08:35.016
+But we also planning to have batch like
+maybe bulk PDF,
+
+a9668f37-57ac-4a39-9017-803ab92b245c-1
+01:08:35.016 --> 01:08:38.680
+take the bulk PDFs and migrate all of
+them at together, right?
+
+2b65d6e3-c78e-41c6-8fd9-37d60860b7d3-0
+01:08:39.000 --> 01:08:42.760
+And maybe show what is missing and what
+are things which need to be done manually.
+
+150e10e6-ca82-4d8b-a3da-6acac616c7a0-0
+01:08:43.200 --> 01:08:46.852
+So if you are interested in that and if
+you have again in the VIP program works
+
+150e10e6-ca82-4d8b-a3da-6acac616c7a0-1
+01:08:46.852 --> 01:08:48.040
+in similar fashion, right?
+
+0d708857-61b7-436d-ba57-f52062f28164-0
+01:08:48.360 --> 01:08:50.480
+You have set of like forms.
+
+c1a33c8f-a44f-459b-886b-b7b35206a9ce-0
+01:08:50.480 --> 01:08:54.977
+We have taken this forms we need to take
+live and maybe you can shortlist all the
+
+c1a33c8f-a44f-459b-886b-b7b35206a9ce-1
+01:08:54.977 --> 01:08:57.720
+PDFs and maybe we'll help in some of the
+batches.
+
+a998e776-656d-4ad2-adc8-be43945387e3-0
+01:08:57.720 --> 01:08:58.400
+In batches.
+
+bed82b71-e954-4029-a2dd-b18dbeda1850-0
+01:08:59.120 --> 01:08:59.320
+Sure.
+
+25431cf2-7cff-4a42-871b-df1b95fcc6c3-0
+01:08:59.720 --> 01:09:03.424
+Yeah, let me, I'll,
+I'll bring that up and we'll see if we
+
+25431cf2-7cff-4a42-871b-df1b95fcc6c3-1
+01:09:03.424 --> 01:09:06.564
+can maybe target a, a, a department or,
+you know,
+
+25431cf2-7cff-4a42-871b-df1b95fcc6c3-2
+01:09:06.564 --> 01:09:10.960
+a few departments to to see if we can run
+it through the VIP program.
+
+0ddb85ba-0465-424b-af82-33bc7c2c00d9-0
+01:09:10.960 --> 01:09:11.560
+Mm, hmm.
+
+06a5c6dd-5055-4efc-9fc4-564358864dcc-0
+01:09:12.320 --> 01:09:12.960
+Right, right.
+
+aceeb01e-2a77-4f08-ba20-1de08f0483ba-0
+01:09:13.480 --> 01:09:13.880
+Yeah, yeah.
+
+667e8420-cca1-4270-a6ed-67195fdfb6f4-0
+01:09:14.440 --> 01:09:17.360
+So, so basically, Vijay, you know,
+they do have like 40 plus departments.
+
+06840e42-7b57-4087-adcc-09b5a41a3075-0
+01:09:17.360 --> 01:09:20.920
+So if they can test with any one of the
+department and then move forward.
+
+7a2770eb-8462-4bd3-b03f-fad39d0cd8d4-0
+01:09:20.920 --> 01:09:21.680
+So that would be great.
+
+9b65c6bd-7c2a-4c62-bbf6-2a15e816340f-0
+01:09:22.080 --> 01:09:23.000
+Don't be great, right.
+
+765bcb77-b8c1-4ae9-bfe9-b44cc9fdb1bf-0
+01:09:23.000 --> 01:09:26.067
+Please let us know and yeah,
+we will service those requests to the
+
+765bcb77-b8c1-4ae9-bfe9-b44cc9fdb1bf-1
+01:09:26.067 --> 01:09:27.120
+forms engineering team.
+
+f2982c1a-ccde-408a-863d-742c9c2c9797-0
+01:09:27.120 --> 01:09:27.680
+Definitely.
+
+85809a89-27df-4867-bb38-6218fbf9d542-0
+01:09:27.880 --> 01:09:28.080
+Yeah.
+
+126256f7-a1e9-42fe-a796-a4db16202845-0
+01:09:28.440 --> 01:09:28.880
+Sounds good.
+
+7ea1f660-e550-42ec-876f-30dddaa05ac2-0
+01:09:32.800 --> 01:09:33.080
+All right.
+
+6dc992fc-1498-4186-8b39-6f02080f5c3b-0
+01:09:33.080 --> 01:09:33.320
+OK.
+
+f4ad0f33-8581-4dec-ba40-97603c9aa0f1-0
+01:09:33.920 --> 01:09:34.200
+Yeah.
+
+e6068a01-748f-49e8-8fe3-fb8b651ae130-0
+01:09:34.960 --> 01:09:35.080
+Yep.
+
+48fc4f54-8c12-499e-8b4e-067a790c40b1-0
+01:09:35.680 --> 01:09:36.920
+Thanks so much everyone.
+
+44e1be41-2d5d-4382-ad59-da57ece58a36-0
+01:09:38.160 --> 01:09:41.300
+Keep us posted and looking forward for
+further collaboration towards this
+
+44e1be41-2d5d-4382-ad59-da57ece58a36-1
+01:09:41.300 --> 01:09:41.640
+journey.
+
+fab8886b-3b37-4cf0-8097-363b18f03cd8-0
+01:09:41.640 --> 01:09:42.040
+Thank you.
+
+a602fad8-2c44-43a7-9d13-41e5ca7cb31f-0
+01:09:42.040 --> 01:09:42.800
+Thank you so much for that.
+
+9eef95c6-0b73-4888-be10-a84a2def1161-0
+01:09:42.800 --> 01:09:43.520
+Thank you everyone.
+
+c7b66daf-be17-476e-a58a-9709528276de-0
+01:09:43.520 --> 01:09:44.160
+Appreciate it.
+
+926cc39d-9532-471f-b7a0-943334d9e995-0
+01:09:45.120 --> 01:09:45.440
+Thank you.
+
+d3b5b562-4432-4b2c-90f9-fd491d662a1d-0
+01:09:45.440 --> 01:09:45.520
+Bye.
+
+c3c9c838-b450-4cff-9b46-d578a3faa2a6-0
+01:09:45.920 --> 01:09:46.000
+Bye.
+
+869e1cff-ae07-4d79-91f1-84742124f001-0
+01:09:46.120 --> 01:09:46.440
+Thank you.
+
+2198a8b9-bbea-431d-adb9-8f92e5bba85d-0
+01:09:46.680 --> 01:09:46.760
+Bye.

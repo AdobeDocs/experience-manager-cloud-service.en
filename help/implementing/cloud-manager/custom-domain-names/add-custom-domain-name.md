@@ -4,7 +4,7 @@ description: Learn how to add a custom domain name using Domain Settings in Clou
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Add a custom domain name {#adding-custom-domain-name}
@@ -88,15 +88,20 @@ To configure these settings, determine if a `CNAME` or apex record must be confi
 >
 >For Adobe-managed CDNs, when using DV (Domain Validation) certificates, only sites with ACME validation are permitted.
 
-#### Requirements {#adobe-managed-cert-dv-requirements}
 
-Fulfill these requirements before configuring your DNS records.
+## Configure DNS{#config-dns}
+
+>[!WARNING]
+>
+>The "register before you advertise" principle applies here. That is, configure DNS should only be performed *after* you have added the domain mapping successfully. Doing so ensures that Cloud Manager recognizes and validates that the domain exists in its own configuration before it can respond to requests for it. It also avoids any domain takeover attempts.
+
+Be sure you fulfill the following requirements *before* you configure your DNS records:
 
 * Identify your domain host or registrar if you do not know it already.
 * Be able to edit the DNS records for your organization's domain, or contact the appropriate person who can.
-* You must have already verified your configured custom domain name as described in the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
+* You have already verified your configured custom domain name as described in the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
-#### CNAME record {#adobe-managed-cert-cname-record}
+### CNAME record {#adobe-managed-cert-cname-record}
 
 A canonical name or CNAME record is a type of DNS record that maps an alias name to a true or canonical domain name. CNAME records are typically used to map a subdomain such as `www.example.com` to the domain hosting that subdomain's content. 
 
@@ -106,7 +111,7 @@ Log in to your DNS service provider and create a `CNAME` record to point your cu
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
-#### APEX record {#adobe-managed-cert-apex-record}
+### APEX record {#adobe-managed-cert-apex-record}
 
 An apex domain is a custom domain that does not contain a subdomain, such as `example.com`. An apex domain is configured with an `A`, `ALIAS`, or `ANAME` record through your DNS provider. Apex domains must point to specific IP addresses.
 

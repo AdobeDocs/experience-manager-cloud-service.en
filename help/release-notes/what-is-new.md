@@ -10,6 +10,7 @@ role: Admin
 Adobe Experience Manager (AEM) as a Cloud Service is a cloud-native platform that optimizes marketer and developer workflows for the entire content lifecycle, including web content and digital asset management capabilities. Being cloud-native, it has scalable performance, has a secure infrastructure, receives agile updates to stay up-to-date, and allows for hassle-free deployments and administration.
 
 For an overview of Adobe Experience Manager as a Cloud Service, see:
+
 * the [Introduction to AEM as a Cloud Service](/help/overview/introduction.md)
 * the [Architecture](/help/overview/architecture.md) of Adobe Experience Manager as a Cloud Service
 * An [Overview of AEM as a Cloud Service - What is New and What is Different](/help/overview/what-is-new-and-different.md)

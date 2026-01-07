@@ -29,17 +29,23 @@ Page properties can control many aspects of a page from the page's title and bra
 ### Title &amp; Tags {#title-tags}
 
 * **Title** - Defines the page meta title for SEO purposes as well as the title displayed in the page content (unless overridden)
+
   * The title of the page is shown in various locations in the AEM UI including the **Sites** card/list views in the [Sites Console.](/help/sites-cloud/authoring/sites-console/introduction.md)
   * This is a mandatory field.
+
 * **Tags** - Defines the page meta tags for SEO purposes
+
   * You can add or remove tags from the page by updating the list in the selection box.
-   * Use the drop-down to select from existing tags.
-   * After selecting a tag is it listed below the selection box. You can remove a tag from this list using the x.
+  * Use the drop-down to select from existing tags.
+  * After selecting a tag is it listed below the selection box. You can remove a tag from this list using the x.
   * A completely new tag can be entered by typing the name in an empty selection box.
+
     * The new tag is created when you press enter.
     * The new tag will then be shown with a small star on the right indicating that it is a new tag.
+
   * An x appears when you mouse-over a tag entry in the selection box, which can be used to remove that tag for this page.
   * For more information about tags, see [Using Tag.](/help/sites-cloud/authoring/sites-console/tags.md)
+
 * **Hide in Navigation** - Indicates whether the page is shown or hidden in the page navigation of the resulting site
 
 ### Branding {#branding}
@@ -47,9 +53,13 @@ Page properties can control many aspects of a page from the page's title and bra
 Apply a consistent brand identity across pages by appending a brand slug to each page title. This functionality requires use of the Page Component from release 2.14.0 or later of the [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
 * **Brand Slug** 
+
   * **Override** - Check to define the brand slug on this page.
+
     * The value is inherited by any child pages unless they also have their **Override** values set.
+
   * **Override value** - The text of the brand slug to be appended to the page title.
+
     * The value is appended to the page title after a pipe character such as `Cycling Tuscany | Always ready for the WKND`
 
 ### HTML ID {#html-id}
@@ -59,10 +69,14 @@ Apply a consistent brand identity across pages by appending a brand slug to each
 ### More Titles and Description {#more-titles}
 
 * **Page Title** - A title to be used on the page
+
   * This is typically used by title components.
   * If empty, the **Title** is used.
+
 * **Navigation Title** - You can specify a separate title for use in the navigation (for example, if you want something more concise).
+
   * If empty, the **Page Title** is used.
+
 * **Subtitle** - A subtitle for use on the page
 * **Description** - Your description of the page, its purpose, or any other details you want to add
 

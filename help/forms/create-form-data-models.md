@@ -136,6 +136,3 @@ You now have a Form Data Model (FDM) with data sources added to it. Next, you ca
 For more information, see [Work with form data model](work-with-form-data-model.md).
 
 
->[!MORELIKETHIS]
->
->* [Use Form Data Model(FDM)](/help/forms/using-form-data-model.md)

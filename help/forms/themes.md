@@ -206,9 +206,9 @@ The Theme Editor is divided in two panels:
 
 * **Canvas** - Appears on the right side. It shows a sample Adaptive Form <!--  or interactive communication --> in which all styling changes reflect instantly. You can also select objects directly from the canvas to look up styles associated with them, and to edit these styles. A device resolution ruler on the top governs the Canvas. Selecting a resolution breakpoint from the ruler shows the preview of the sample form <!--  or interactive communication --> for the respective resolution. Canvas is discussed in detail [below](themes.md#using-canvas).
 
-* **Sidebar**- Appears on the left side. It has the following items:
+* **Sidebar*** Appears on the left side. It has the following items:
 
-    * **Selector:** Shows the component selected for styling, and its properties that you can style. The selector represents all the components of a type. If you select a text box component in a theme for styling, all the text boxes in your form <!-- or interactive communication --> inherit the style. Selectors let you select a generic component or a specific component for styling. For example, a field component is a generic component, and a text box is a specific component.
+  * **Selector:** Shows the component selected for styling, and its properties that you can style. The selector represents all the components of a type. If you select a text box component in a theme for styling, all the text boxes in your form <!-- or interactive communication --> inherit the style. Selectors let you select a generic component or a specific component for styling. For example, a field component is a generic component, and a text box is a specific component.
 
       **Styling generic component:**
       A field can be a numeric box field, such as age, or a text box field, such as address.
@@ -221,12 +221,12 @@ The Theme Editor is divided in two panels:
 
       When you customize all the field components with a specific background color, all the fields such as age, name, and address inherit the background color. When you select a numeric box, such as age, and reduce its width, width of all the numeric boxes such as age, number of people in a family is reduced. Width of text boxes is not changed.
 
-    * **State:** Lets you customize styles of an object in a specific state. For example, you can specify appearance of an object when it is in default, focus, disabled, hover, or error state.
-    * **Property Categories:** Styling properties are divided in various categories. For example, Dimension & Position, Text, Background, Border, and Effects. Under each category, you provide styling information. For example, under Background, you can provide Background Color, and Image & Gradient.
+  * **State:** Lets you customize styles of an object in a specific state. For example, you can specify appearance of an object when it is in default, focus, disabled, hover, or error state.
+  * **Property Categories:** Styling properties are divided in various categories. For example, Dimension & Position, Text, Background, Border, and Effects. Under each category, you provide styling information. For example, under Background, you can provide Background Color, and Image & Gradient.
 
-    * **Advanced:** Lets you add custom CSS to an object, which overrides the properties visual controls define if there is an overlap.
+  * **Advanced:** Lets you add custom CSS to an object, which overrides the properties visual controls define if there is an overlap.
 
-    * **View CSS**: Lets you view CSS of the selected component.
+  * **View CSS**: Lets you view CSS of the selected component.
 
   Also, in the Sidebar, at the bottom an arrow is present. When you click the arrow, you get two more options: **Simulate Success** and **Simulate Error.** These options, along with the options described above are discussed in detail [below](themes.md#using-rail).
 
@@ -257,8 +257,8 @@ Out-of-the-box panels include:
 * Wizard
 * Mobile layout
 
-    * Panel titles in header
-    * Without panel titles in header
+  * Panel titles in header
+  * Without panel titles in header
 
 Selectors vary for each layout.
 Styling custom layouts from the Theme Editor involves:
@@ -293,7 +293,7 @@ As you style a component, the styles are cached and listed in the list box. In t
 
 In this example, style for the field label is changed, and when Responsive Panel Description is selected for style, a list entry is added in the asset library. The entry in the asset library can be used to change the style for Responsive Panel Description.
 
-When a style is added in the asset library, it is available for other themes and in the [style mode](inline-style-adaptive-forms.md) of the form editor UI. Similarly, when you use the style mode of the form editor <!-- or interactive communication editor --> UI to style a component, the style is cached and is available in themes.
+When a style is added in the asset library, it is available for other themes and in the [style mode](inline-style-adaptive-forms.md) of the form builder UI. Similarly, when you use the style mode of the form builder <!-- or interactive communication editor --> UI to style a component, the style is cached and is available in themes.
 
 The plus button against the asset library lets you permanently save the style with a name of that you provide. The plus button saves the style even if you do not click the Save button in the sidebar to apply the style to a component. The plus button to save a style for later use is not available in the style mode.
 
@@ -350,10 +350,10 @@ In the Canvas toolbar, you see:
 * **[!UICONTROL Toggle Side Panel]** ![toggle-side-panel](assets/toggle-side-panel.png): Lets you show or hide sidebar.
 * **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png): Provides three options
 
-    * Configure: Provides options to select the preview form <!-- or interactive communication , base clientlib, -->and Adobe Fonts configuration.
-    * View Theme CSS: Generates CSS for the selected theme.
-    * Manage Styles: Provides options to manage text and image styles
-    * Help: Runs an image guided tour of the Theme Editor.
+  * Configure: Provides options to select the preview form <!-- or interactive communication , base clientlib, -->and Adobe Fonts configuration.
+  * View Theme CSS: Generates CSS for the selected theme.
+  * Manage Styles: Provides options to manage text and image styles
+  * Help: Runs an image guided tour of the Theme Editor.
 
 * **[!UICONTROL Emulator]** ![ruler](assets/ruler.png): Emulates the look of your theme for different display sizes. A display size is treated as a breakpoint in the emulator. You can select a breakpoint and specify a style for it. For example, Desktop and Tablet are two breakpoints. You can specify different styles for each breakpoint.
 
@@ -505,7 +505,8 @@ To configure a theme to use the Adobe Fonts configuration, perform the following
 
    Now, you can see that the fonts are added in the font-family property of the theme.
 
-<!-- >
+<!-- 
+
 ### Listing and selecting fonts in theme editor {#listing-and-selecting-fonts-in-theme-editor}
 
 You can use the theme configuration service to add more fonts to the theme editor. Perform the following steps to add fonts:
@@ -515,7 +516,8 @@ You can use the theme configuration service to add more fonts to the theme edito
 
    ![theme-config](assets/theme-config.png)
 
-1. Click +, specify the name of the font, and click **Save**. The font is added and available in theme editor. -->
+1. Click +, specify the name of the font, and click **Save**. The font is added and available in theme editor. 
+-->
 
 #### Selecting fonts in theme editor {#selecting-fonts-in-theme-editor}
 
@@ -665,10 +667,10 @@ You can see the generated CSS using the following options:
 
   Changing container panel layout width is not recommended. When you specify width of a container panel, it becomes static and does not adapt to different displays.
 
-* **When to use form editor or theme editor for working with header and footer**
+* **When to use form builder or theme editor for working with header and footer**
 
   Use theme editor if you want to style header and footer using styling options such as font style, background, and transparency.
-  If you want to provide information such as a logo image, company name in header, and copyright information in the footer, use the form editor options.
+  If you want to provide information such as a logo image, company name in header, and copyright information in the footer, use the form builder options.
 
 
 ## See Also {#see-also}

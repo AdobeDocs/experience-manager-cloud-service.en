@@ -5,7 +5,7 @@ index: yes
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Cloud Manager CI/CD Pipelines {#intro-cicd}
@@ -96,7 +96,7 @@ The following restrictions apply.
 In addition, be aware of how the full-stack pipeline behaves if you choose to introduce a [web tier config pipeline](#web-tier-config-pipelines).
 
 * The full-stack pipeline for an environment ignores the Dispatcher configuration if the corresponding web tier config pipeline exists.  
-* If the corresponding web tier config pipeline for the environment does not exist, the user can configure the full-stack pipeline include or ignore the Dispatcher configuration.
+* If the corresponding web tier config pipeline for the environment does not exist, the user can configure the full-stack pipeline to include or ignore the Dispatcher configuration.
 
 Full-stack pipelines can be code quality pipelines or deployment.
 
@@ -110,6 +110,11 @@ See [Add a non-production pipeline](/help/implementing/cloud-manager/configuring
 Using a config pipeline, you can deploy settings quickly for log forwarding, purge-related maintenance tasks, and various CDN configurations, including traffic filter rules (such as WAF (Web Application Firewall) rules). Additionally, you can manage request and response transformations, origin selectors, client-side redirects, error pages, customer-managed CDN keys, purge API keys, and basic authentication.
 
 See [Use config pipelines](/help/operations/config-pipeline.md) for a comprehensive list of supported features and to learn how to manage the configurations in your repository so they are deployed properly.
+
+>[!NOTE]
+>
+>Edge Delivery Configuration Pipelines do not have separate development, staging, and production environments. In AEM as a Cloud Service, changes move through development, stage, and production tiers. In contrast, an Edge Delivery Configuration Pipeline applies its configuration directly to all Edge Delivery Sites domains registered in Cloud Manager. To learn more, see [Add an Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md).
+
 
 ### Configure config Pipelines {#configure-config-deployment}
 

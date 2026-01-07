@@ -41,7 +41,7 @@ Smart Tags are implemented in AEM Assets using the following workflow:
 
 1. Create or upload an asset in AEM. Out of the box tags are generated for image, video, and text based Assets.
 
-1. If you find that specific tags are not generated, then you can train your image-type tags accordingly. Refer to [Smart Tags training](#smart-tags-training.md).
+1. If you find that specific tags are not generated, then you can train your image-type tags accordingly. Refer to [Smart Tags training](/help/assets/smart-tags-training.md).
 
 ## Supported file formats for Smart Tags {#supported-file-formats}
 
@@ -207,45 +207,6 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 *  Helps your assets to become organized and categorized.
 -->
 
-## Enhancing content discovery with AI-Generated metadata {#ai-smart-tags}
-
-Instead of relying on manual input, AI automatically assigns descriptive tags to digital assets. These AI-generated tags enhance metadata quality, making the assets easier to search, categorize, and recommend. This approach not only improves efficiency by eliminating manual tagging but also ensures consistency and scalability across large volumes of digital content. For example, if the asset is an image, AI can identify objects, scenes, emotions, or even brand logos within it and generate relevant tags such as "sunset," "beach," "vacation," or "smiling." AI-generated content can enhance the search for assets by leveraging both semantic and lexical search techniques. See more [Search Assets](search-assets.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
-
-  ![Enhanced smart tags](assets/enhanced-smart-tags1.png)
-
-### How to enable AI-generated metadata? {#enable-ai-generated-metadata}
-
-To enable AI-generated metadata:
-
-* Minimum required AEM release version is `20626`.
-
-* You must sign a GenAI Rider agreement. For more information, contact your Adobe representative.
-
-  >[!IMPORTANT]
-  >
-  > The AI-generated title of an asset is displayed in the Asset card only when you have not defined the asset title. It does not overwrite the asset title specified by you. 
-
-### Using AI-Generated metadata {#using-ai-generated-smart-tags}
-
-<!--[!NOTE]
->
->The enhanced smart tags capability is available only for the newly uploaded assets.
--->
-
-To use the enhanced smart tags feature, execute the following steps:
-
-1. In the [!DNL Experience Manager] interface, go to the desired folder and click **[!UICONTROL Add Assets]**. <!--Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**.--> The compatible image file formats are `png`, `jpg`, `jpeg`,`psd`, `tiff`, `gif`, `webp`, `crw`, `cr2`, `3fr`, `nef`, `arw`, and `bmp`.
-
-1. Wait until the newly uploaded asset is processed. Once done, go to asset properties.
-
-1. Go to **[!UICONTROL AI-Generated]** tab. If [!DNL Experience Manager] version is incompatible or not updated, then this tab is not visible. The following fields are there:
-
-    * **[!UICONTROL Generated title]:** The title provides a clear and concise headline that captures the core idea of an uploaded asset, making it easy to understand at a glance. When adding an asset, if you provide a title (in `dc:title`), it will be displayed in the assets browse view. If left blank, an AI-generated title will be assigned automatically.
-    * **[!UICONTROL Generated description]:** The description gives a brief yet informative summary of what the asset is about, helping users and search module to quickly grasp its relevance.
-    * **[!UICONTROL Generated keywords]:** The keywords are targeted terms that represent the main themes of an asset, aiding in tagging and content filtering.
-
-1. [Optional] You may add additional tags or create your own if you feel any relevant tags are missing. To do this, write your tags in the  **[!UICONTROL Generated keywords]** field and click **[!UICONTROL Save]**.
-
 ## Limitations and best practices related to Smart Tags {#limitations-best-practices-smart-tags}
 
 These models are not always perfect at identifying tags. The current version of the Smart Tags has the following limitations:
@@ -289,7 +250,7 @@ These models are not always perfect at identifying tags. The current version of 
 
 +++**How may I know that tagging needs training?**
   
-  Refer to [Determining the requirement of Smart Tags training](#smart-tags-training.md#smart-tag-training-requirement).
+  Refer to [Determining the requirement of Smart Tags training](/help/assets/smart-tags-training.md#smart-tag-training-requirement).
 
 +++
 

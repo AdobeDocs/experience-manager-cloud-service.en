@@ -24,7 +24,7 @@ This is achieved using Content Fragments, together with the AEM GraphQL API (a c
 >
 >GraphQL is currently used in two (separate) scenarios in Adobe Experience Manager (AEM) as a Cloud Service:
 >
->* [AEM Commerce consumes data from a commerce platform via GraphQL](/help/commerce-cloud/integrating/magento.md).
+>* [AEM Commerce consumes data from a commerce platform via GraphQL.](/help/commerce-cloud/cif-storefront/integrating/magento.md)
 >* [AEM Content Fragments work together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications](/help/headless/graphql-api/content-fragments.md).
 
 ## Headless CMS {#headless-cms}

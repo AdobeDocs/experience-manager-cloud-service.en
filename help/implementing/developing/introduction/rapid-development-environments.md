@@ -3,7 +3,7 @@ title: Rapid Development Environments
 description: Learn how to use Rapid Development Environments for rapid development iterations in a cloud environment.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Rapid Development Environments {#rapid-development-environments}
 
@@ -12,6 +12,11 @@ To deploy changes, current Cloud Development environments require the use of a p
 RDEs let developers swiftly deploy and review changes, minimizing the amount of time needed to test features that are proven to work in a local development environment.
 
 Once the changes have been tested in an RDE, they can be deployed to a regular Cloud Development environment through the Cloud Manager pipeline.
+
+Dev environments and Rapid Dev environments should be limited to development, error analysis, and functional tests, and are not designed to process high workloads, nor large amounts of content.
+
+>[!NOTE]
+> Rapid Development environments should be limited to development, error analysis, and functional tests, and are not designed to process high workloads, nor large amounts of content.
 
 >[!NOTE]
 > Get in touch with the RDE developers on Adobe's [Discord channel](https://discord.com/channels/1131492224371277874/1245304281184079872). Feel free to ask any questions or give feedback regarding RDE topics.

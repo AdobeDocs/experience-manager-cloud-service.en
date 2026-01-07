@@ -4,7 +4,7 @@ description: Learn about the project creation wizard to help you quickly set up 
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Project Creation Wizard {#project-creation-wizard}
 

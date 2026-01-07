@@ -26,7 +26,7 @@ The metadata import is asynchronous and does not impede the system performance. 
    | ---------------------- | ------- |
    | Batch Size             | Number of assets in a batch for which metadata is to be imported. The default value is 50. Maximum value is 100. |
    | Field Separator        | Default value is `,` (a comma). You can specify any other character. |
-   | Multi value Delimiter  | Separator for metadata values. Default value is `|`. |
+   | Multi value Delimiter  | Separator for metadata values. Default value is `\|`. |
    | Launch Workflows       | False by default. When set to `true` and default settings are in effect for the DAM Metadata WriteBack workflow (that writes metadata to the binary XMP data). Enabling the workflows slows the system down. |
    | Asset Path Column Name | Defines the column name for the CSV file with assets.  |
 

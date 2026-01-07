@@ -7,7 +7,7 @@ exl-id: 37e3ddd9-b20d-4156-b52e-64e36c455184
 ---
 # List forms on the Sites page
 
-Imagine a user visiting the bank’s website in search of an account opening form. The bank uses the Forms Portal component to help users quickly find the form by entering specific keywords or filtering by categories such as 'New Accounts' or 'Personal Banking' and allows users to easily locate the desired form without having to scroll through lengthy lists.
+Imagine a user visiting the bank's website in search of an account opening form. The bank uses the Forms Portal component to help users quickly find the form by entering specific keywords or filtering by categories such as 'New Accounts' or 'Personal Banking' and allows users to easily locate the desired form without having to scroll through lengthy lists.
 
 The **Search & Lister** component of the Forms Portal allows you to display and list forms on a Sites page. Users can configure and present a comprehensive list of forms based on specific criteria to meet organizational requirements. Anonymous users can visit the Sites page to view and browse the available forms. The listed forms can be sorted in ascending or descending order using the **Sort By** drop-down option located in the upper-right corner of the screen.
 
@@ -15,7 +15,7 @@ The **Search & Lister** component of the Forms Portal allows you to display and 
 
 ## Pre-requisite
 
-Before exploring the various capabilities of a Forms Portal component, ensure that Core Components are enabled for your environment. For detailed instructions on how to enable Core Components for your environment, [click here](/help/forms/enable-adaptive-forms-core-components.md).
+Before exploring the various capabilities of a Forms Portal component, ensure that Core Components are enabled for your environment. Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
 
 <!--
 ## Enable Forms Portal components for your existing environment

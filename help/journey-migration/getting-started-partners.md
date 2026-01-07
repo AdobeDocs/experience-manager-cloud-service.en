@@ -65,16 +65,21 @@ Cloud Manager, which was an optional content delivery tool for Managed Services,
 See self-help resources about how to configure and deploy to AEM as a Cloud Service environments.
 
 1. [Configure CM Pipelines](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html)
-      * Production Pipeline
-      * Non-Production & Code Quality Only Pipelines 
-  2. [Deploy Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)
-  3. [Understanding Your Test Results](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html)
-  4. **Accessing Logs**
-      * [via CM UI](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html)
-      * [via Adobe i/o cli](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#debugging)
-  5. [Operations and Maintenance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/home.html)
-     * [Configuring OSGI configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html)
-      * [Backup and Restore](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html)
+
+   * Production Pipeline
+   * Non-Production & Code Quality Only Pipelines 
+
+1. [Deploy Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)
+1. [Understanding Your Test Results](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html)
+1. **Accessing Logs**
+
+   * [via CM UI](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html)
+   * [via Adobe i/o cli](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#debugging)
+
+1. [Operations and Maintenance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/home.html)
+
+   * [Configuring OSGI configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html)
+   * [Backup and Restore](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/backup.html)
 
 >[!TIP]
 > See tutorial on how to [Deploy WKND to Experience Manager Cloud  Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)  
@@ -82,17 +87,20 @@ See self-help resources about how to configure and deploy to AEM as a Cloud Serv
 ### Help and Resources
 
 1. [Debugging tips and tricks](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html#debugging-aem-as-a-cloud-service)
-  2. [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#debugging)
-  3. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) (Only available on local SDK and Experience Manager Cloud Dev environments)
-  4. [Logs and logging](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#debugging)
-      * [CM Logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html#debugging) (build-unit-testing, code-scanning, build-image, deploy)
-      * [Experience Manager Cloud Service Logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#debugging) (aemerror, aemaccess, aemrequest, aemdispatcher, httpderror, httpaccess)
-      * Local SDK Logs (under host:port/crx-quickstart/logs)
+1. [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#debugging)
+1. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) (Only available on local SDK and Experience Manager Cloud Dev environments)
+1. [Logs and logging](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#debugging)
+
+   * [CM Logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html#debugging) (build-unit-testing, code-scanning, build-image, deploy)
+   * [Experience Manager Cloud Service Logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#debugging) (aemerror, aemaccess, aemrequest, aemdispatcher, httpderror, httpaccess)
+   * Local SDK Logs (under host:port/crx-quickstart/logs)
 
 >[!NOTE]
-> For additional help, you may want to :
+>
+> For additional help, you may want to:
+>
 >1. [Contact the Experience Manager Support Team](https://experienceleague.adobe.com/docs/customer-one/using/home.html)
->2. Explore [Experience Manager Communities & Forums](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
+>1. Explore [Experience Manager Communities & Forums](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
 
 <br>
 
@@ -154,7 +162,7 @@ Cloud Manager enables organizations to self-manage Experience Manager in the Clo
 #### Content Migration
 
 1. [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration) : used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance.
-2. [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html#package-manager) : used for importing and exporting of mutable content of the repository.
+1. [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html#package-manager) : used for importing and exporting of mutable content of the repository.
 
 
 #### Refactor/Optimize
@@ -169,14 +177,14 @@ Cloud Manager enables organizations to self-manage Experience Manager in the Clo
 
 #### Deployment/Go-Live
 
-  1. [Deploy to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html) git
-  2. Run customer code through the [Cloud Manager Quality Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)
-  3. [Deploy to Development Environment](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html#debugging)
-  4. [**Migration only**] Content transfer using packages or [Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)(CTT)
-  5. Perform recommended testing cycles (smoke, QA and more)
-  6. Promote to the Cloud Manager Production Pipeline 
-  7. Smoke test validation
-  8. Go-Live 
+1. [Deploy to Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html) git
+2. Run customer code through the [Cloud Manager Quality Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)
+3. [Deploy to Development Environment](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html#debugging)
+4. **Migration only** Content transfer using packages or [Content Transfer Tool](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)(CTT)
+5. Perform recommended testing cycles (smoke, QA and more)
+6. Promote to the Cloud Manager Production Pipeline 
+7. Smoke test validation
+8. Go-Live 
 
 <br>
 
@@ -185,20 +193,24 @@ Cloud Manager enables organizations to self-manage Experience Manager in the Clo
 In the Post Go-live phase, you should ensure clean-up of temporary files, review best practices for continuous development and manage logs.
 
 >[!TIP]
+>
 > Tools are available to troubleshoot AEM as a Cloud Service environment
+>
 >1. [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html)
->2. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html)
->3. [Managing Logs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html)
+>1. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html)
+>1. [Managing Logs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html)
 
 <br>
 
 ### Tools & Resources
   
-| Assessment | Refactoring | Experience Manager Modernization| Content Migration | 
+| Assessment | Refactoring | Experience Manager Modernization| Content Migration |
 |------------|-------------|---------------------------------|-------------------|
-|<ul><li>[Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html)</li></li>| <ul><li>[Unified Experience Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html)</li></ul>      |     <ul><li>[Static templates to editable templates](https://opensource.adobe.com/aem-modernize-tools/pages/structure.html)</li><li>[Design configurations to policies](https://opensource.adobe.com/aem-modernize-tools/pages/policy.html) <li>[Foundation Components to Core Components](https://opensource.adobe.com/aem-modernize-tools/pages/component.html)</li><li>[Classic UI to Touch-Enabled UI](https://opensource.adobe.com/aem-modernize-tools/pages/all-in-one.html)</li></ul>       | <ul><li>[Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html)</li><li>[Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html#contentmanagement)</li></ul> |     
+|<ul><li>[Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html)</li></li>| <ul><li>[Unified Experience Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html)</li></ul>      |     <ul><li>[Static templates to editable templates](https://opensource.adobe.com/aem-modernize-tools/pages/structure.html)</li><li>[Design configurations to policies](https://opensource.adobe.com/aem-modernize-tools/pages/policy.html) <li>[Foundation Components to Core Components](https://opensource.adobe.com/aem-modernize-tools/pages/component.html)</li><li>[Classic UI to Touch-Enabled UI](https://opensource.adobe.com/aem-modernize-tools/pages/all-in-one.html)</li></ul>       | <ul><li>[Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html)</li><li>[Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html#contentmanagement)</li></ul> |
 
 >[!NOTE]
-> For additional help, you may want to :
+>
+> For additional help, you may want to:
+>
 >1. [Contact the Experience Manager Support Team](https://experienceleague.adobe.com/docs/customer-one/using/home.html)
->2. Explore [Experience Manager Communities & Forums](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
+>1. Explore [Experience Manager Communities & Forums](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)

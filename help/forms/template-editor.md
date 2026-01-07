@@ -51,11 +51,11 @@ When you open a template for editing, you can see the following AEM Editor compo
 * **Page toolbar**
   Contains the following options:
 
-    * **Toggle Side Panel**: Lets you show or hide the sidebar.
-    * **Page Information**: Lets you specify information such as the publish/unpublish time, thumbnails, client-side libraries, page policy, and page design client-side library.
+  * **Toggle Side Panel**: Lets you show or hide the sidebar.
+  * **Page Information**: Lets you specify information such as the publish/unpublish time, thumbnails, client-side libraries, page policy, and page design client-side library.
    <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-    * **Mode selector:** Lets you change the mode.You can choose **[!UICONTROL Structure]** mode, **[!UICONTROL Initial Content]**, **[!UICONTROL Layout Control]** mode. Structure mode lets you add and customize the header and footer. Initial Content mode lets you customize the form content.
-    * **Preview:** Lets you preview how the template looks when you publish it. You can use Layer Selector and Preview to toggle editing and preview modes.
+  * **Mode selector:** Lets you change the mode.You can choose **[!UICONTROL Structure]** mode, **[!UICONTROL Initial Content]**, **[!UICONTROL Layout Control]** mode. Structure mode lets you add and customize the header and footer. Initial Content mode lets you customize the form content.
+  * **Preview:** Lets you preview how the template looks when you publish it. You can use Layer Selector and Preview to toggle editing and preview modes.
 * **Sidebar:** Provides the Content, Properties, Assets, and Components browsers.
 * **Component toolbar:** When you select a component, you see a toolbar that lets you customize the component.
 * **Page**: The area where you add content to create the template.
@@ -158,7 +158,7 @@ A form works with its template. When you download an Adaptive Form created using
 
 >[!NOTE]
 >
-> * You can also configure the [!UICONTROL Document of Record] template directly from the Adaptive Form editor or Adaptive Form template editor. For more information, see [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+> * You can also configure the [!UICONTROL Document of Record] template directly from the Adaptive Form builder or Adaptive Form template builder. For more information, see [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
 
 ## Associate a Form Data Model Schema to a template {#associating-form-data-model-schema-in-template}

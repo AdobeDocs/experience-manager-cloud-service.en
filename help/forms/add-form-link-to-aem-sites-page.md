@@ -13,7 +13,7 @@ In the bank website scenario, the **Link** Forms Portal component enhances navig
 
 ## Pre-requisite
 
-Before exploring the various capabilities of a Forms Portal component, ensure that Core Components are enabled for your environment. For detailed instructions on how to enable Core Components for your environment, [click here](/help/forms/enable-adaptive-forms-core-components.md).
+Before exploring the various capabilities of a Forms Portal component, ensure that Core Components are enabled for your environment. Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
 
 After deploying the latest Core Components to your environment, the Forms Portal components become accessible in your authoring environment.
 

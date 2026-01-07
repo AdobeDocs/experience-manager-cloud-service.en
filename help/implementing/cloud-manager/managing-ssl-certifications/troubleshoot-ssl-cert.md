@@ -3,7 +3,7 @@ title: Troubleshoot SSL Certificate Problems
 description: Learn how to troubleshoot SSL certificate problems by identifying common causes so you can maintain secure connections.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 8fb8f708-51a5-46d0-8317-6ce118a70fab
 ---
 # Troubleshoot SSL certificate problems {#certificate-problems}
@@ -121,9 +121,10 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 # "DV Policy - Not Accepted"
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
+
 +++
 
-+++**Certificate validity
++++Certificate validity
 
 ## Certificate validity {#validity}
 
@@ -131,16 +132,16 @@ Cloud Manager expects the SSL certificate to be valid for at least 90 days from 
 
 +++
 
-+++**Wrong SAN certificate is applied to my domain
++++Wrong SAN certificate is applied to my domain
 
 ## Wrong SAN certificate is applied to my domain {#wrong-san-cert}
 
 Let's say that you want to link `dev.yoursite.com` and `stage.yoursite.com` to your non-production environment and `prod.yoursite.com` to your production environment.
 
-In order to configure the CDN for these domains, you need a certificate installed for each, so you install one certificate that covers `*.yoursite.com` for your non-production domains and another that also covers `*.yoursite.com` for your production domains.
+To configure the CDN for these domains, you need a certificate installed for each, so you install one certificate that covers `*.yoursite.com` for your non-production domains and another that also covers `*.yoursite.com` for your production domains.
 
-This configuration is valid. However, when you update one of the certificates, because both certificates cover the same SAN entry, the CDN will install the most recent certificate upon all the applicable domains, which could appear unexpected.
+This configuration is valid. However, when you update one of the certificates, both certificates still cover the same SAN entry. As a result, the CDN installs the most recent certificate on all applicable domains, which may seem unexpected.
 
-Although this may be unexpected this is not an error and is the standard behavior of the underlying CDN. If you have two or more SAN certificates that cover the same SAN domain entry, if that domain is covered by one certificate and the other one is updated, the latter will now be installed for the domain.
+Although this scenario may be unexpected, it is not an error and is the standard behavior of the underlying CDN. If you have two or more SAN certificates that cover the same SAN domain entry, the CDN installs the most recently updated certificate for that domain. This situation happens even when another certificate already covers the same domain entry.
 
 +++

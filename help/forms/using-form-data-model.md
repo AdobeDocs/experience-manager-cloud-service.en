@@ -32,6 +32,22 @@ A Form Data Model (FDM) is an extension of JSON schema that you can use to:
 * [Write submitted Adaptive Form data back into data sources](#write-af)
 * [Invoke services using Adaptive Form rules](#invoke-services)
 
+## Applicability and use cases
+
+### Insurance
+
+## Can AEM Forms integrate with insurance core systems?
+
+Yes. AEM Forms supports integration using REST and SOAP APIs, allowing it to connect with policy administration systems, claims management systems, and CRMs.
+
+## Can AEM Forms write form data back to insurance systems?
+
+Yes. AEM Forms supports data write-back to backend systems as part of form submission and workflow execution.
+
+## Can customers securely upload claim documents using AEM Forms?
+
+Yes. AEM Forms supports secure document upload as part of form submissions, with access controls and secure data handling aligned to enterprise security requirements.
+
 ## Create Adaptive Forms and fragments {#create-af}
 
 You can create [Adaptive Forms](creating-adaptive-form.md) and Adaptive Form Fragments <!-- [Adaptive Form Fragments](adaptive-form-fragments.md) --> based on a form data model (FDM). Do the following to use a Form Data Model (FDM) when creating an Adaptive Form or Adaptive Form Fragment:
@@ -50,7 +66,7 @@ You can create [Adaptive Forms](creating-adaptive-form.md) and Adaptive Form Fra
 
    ![create-af-3](assets/create-af-3.png)
 
-   Once the Adaptive Form or Adaptive Form Fragment based on a Form Data Model (FDM) is created, Form Data Model objects appear in the **[!UICONTROL Data Sources]** tab of the Content browser in Adaptive Form editor.
+   Once the Adaptive Form or Adaptive Form Fragment based on a Form Data Model (FDM) is created, Form Data Model objects appear in the **[!UICONTROL Data Sources]** tab of the Content browser in Adaptive Form builder.
 
    >[!NOTE]
    >

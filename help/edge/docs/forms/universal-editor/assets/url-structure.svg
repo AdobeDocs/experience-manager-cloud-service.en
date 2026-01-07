@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="stagedGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff3cd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffeaa7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="liveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4edda;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a8e6cf;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="white"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+    Edge Delivery Services Form URL Structure
+  </text>
+  
+  <!-- URL Component Legend -->
+  <g id="legend">
+    <rect x="50" y="50" width="700" height="40" rx="5" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+    <text x="400" y="65" text-anchor="middle" fill="#495057" font-family="Arial, sans-serif" font-size="12" font-weight="bold">URL Components:</text>
+    <text x="100" y="80" fill="#007bff" font-family="Arial, sans-serif" font-size="11" font-weight="bold">&lt;branch&gt;</text>
+    <text x="180" y="80" fill="#6f42c1" font-family="Arial, sans-serif" font-size="11" font-weight="bold">&lt;repo&gt;</text>
+    <text x="240" y="80" fill="#e83e8c" font-family="Arial, sans-serif" font-size="11" font-weight="bold">&lt;owner&gt;</text>
+    <text x="320" y="80" fill="#fd7e14" font-family="Arial, sans-serif" font-size="11" font-weight="bold">.aem.page/.live</text>
+    <text x="450" y="80" fill="#20c997" font-family="Arial, sans-serif" font-size="11" font-weight="bold">/content/forms/af/</text>
+    <text x="580" y="80" fill="#6610f2" font-family="Arial, sans-serif" font-size="11" font-weight="bold">&lt;form_name&gt;</text>
+  </g>
+  
+  <!-- Staged Environment -->
+  <g id="staged">
+    <rect x="50" y="120" width="700" height="80" rx="10" fill="url(#stagedGradient)" stroke="#856404" stroke-width="2" filter="url(#shadow)"/>
+    
+    <text x="70" y="140" fill="#856404" font-family="Arial, sans-serif" font-size="14" font-weight="bold">STAGED (Testing)</text>
+    <text x="70" y="155" fill="#856404" font-family="Arial, sans-serif" font-size="11">Latest changes • For preview and testing</text>
+    
+    <!-- URL Breakdown -->
+    <text x="70" y="180" fill="#333" font-family="Arial, sans-serif" font-size="13" font-weight="bold">https://</text>
+    <text x="120" y="180" fill="#007bff" font-family="Arial, sans-serif" font-size="13" font-weight="bold">main</text>
+    <text x="155" y="180" fill="#333" font-family="Arial, sans-serif" font-size="13" font-weight="bold">--</text>
+    <text x="170" y="180" fill="#6f42c1" font-family="Arial, sans-serif" font-size="13" font-weight="bold">forms-project</text>
+    <text x="270" y="180" fill="#333" font-family="Arial, sans-serif" font-size="13" font-weight="bold">--</text>
+    <text x="285" y="180" fill="#e83e8c" font-family="Arial, sans-serif" font-size="13" font-weight="bold">acme-corp</text>
+    <text x="360" y="180" fill="#fd7e14" font-family="Arial, sans-serif" font-size="13" font-weight="bold">.aem.page</text>
+    <text x="430" y="180" fill="#20c997" font-family="Arial, sans-serif" font-size="13" font-weight="bold">/content/forms/af/</text>
+    <text x="570" y="180" fill="#6610f2" font-family="Arial, sans-serif" font-size="13" font-weight="bold">contact-us</text>
+  </g>
+  
+  <!-- Live Environment -->
+  <g id="live">
+    <rect x="50" y="220" width="700" height="80" rx="10" fill="url(#liveGradient)" stroke="#155724" stroke-width="2" filter="url(#shadow)"/>
+    
+    <text x="70" y="240" fill="#155724" font-family="Arial, sans-serif" font-size="14" font-weight="bold">LIVE (Production)</text>
+    <text x="70" y="255" fill="#155724" font-family="Arial, sans-serif" font-size="11">Published content • For end users</text>
+    
+    <!-- URL Breakdown -->
+    <text x="70" y="280" fill="#333" font-family="Arial, sans-serif" font-size="13" font-weight="bold">https://</text>
+    <text x="120" y="280" fill="#007bff" font-family="Arial, sans-serif" font-size="13" font-weight="bold">main</text>
+    <text x="155" y="280" fill="#333" font-family="Arial, sans-serif" font-size="13" font-weight="bold">--</text>
+    <text x="170" y="280" fill="#6f42c1" font-family="Arial, sans-serif" font-size="13" font-weight="bold">forms-project</text>
+    <text x="270" y="280" fill="#333" font-family="Arial, sans-serif" font-size="13" font-weight="bold">--</text>
+    <text x="285" y="280" fill="#e83e8c" font-family="Arial, sans-serif" font-size="13" font-weight="bold">acme-corp</text>
+    <text x="360" y="280" fill="#fd7e14" font-family="Arial, sans-serif" font-size="13" font-weight="bold">.aem.live</text>
+    <text x="430" y="280" fill="#20c997" font-family="Arial, sans-serif" font-size="13" font-weight="bold">/content/forms/af/</text>
+    <text x="570" y="280" fill="#6610f2" font-family="Arial, sans-serif" font-size="13" font-weight="bold">contact-us</text>
+  </g>
+  
+  <!-- Component Explanations -->
+  <g id="explanations">
+    <rect x="50" y="320" width="700" height="70" rx="8" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+    
+    <text x="70" y="340" fill="#333" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Component Details:</text>
+    
+    <text x="70" y="360" fill="#007bff" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Branch:</text>
+    <text x="110" y="360" fill="#555" font-family="Arial, sans-serif" font-size="11">GitHub branch (main, develop, feature-branch)</text>
+    
+    <text x="350" y="360" fill="#6f42c1" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Repository:</text>
+    <text x="415" y="360" fill="#555" font-family="Arial, sans-serif" font-size="11">GitHub repository name</text>
+    
+    <text x="550" y="360" fill="#e83e8c" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Owner:</text>
+    <text x="590" y="360" fill="#555" font-family="Arial, sans-serif" font-size="11">GitHub organization/username</text>
+    
+    <text x="70" y="375" fill="#fd7e14" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Environment:</text>
+    <text x="140" y="375" fill="#555" font-family="Arial, sans-serif" font-size="11">.aem.page (staged) or .aem.live (production)</text>
+    
+    <text x="420" y="375" fill="#6610f2" font-family="Arial, sans-serif" font-size="11" font-weight="bold">Form Name:</text>
+    <text x="485" y="375" fill="#555" font-family="Arial, sans-serif" font-size="11">Form identifier as defined in AEM</text>
+  </g>
+</svg>

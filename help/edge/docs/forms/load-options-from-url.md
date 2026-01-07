@@ -3,7 +3,7 @@ title: Load Dropdown List Options from a URL or another sheet for Edge Delivery 
 description: The dropdown list options are included in a distinct spreadsheet and then imported into the primary spreadsheet via the provided URL.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Options from a URL or another sheet for Edge Delivery Services for AEM Forms as a Cloud Service 
@@ -13,16 +13,16 @@ Forms often include dropdown menus for users to select from predefined options. 
 
 Benefits of loading a dropdown options from a separate spreadsheet are: 
 
-* Simplified Management: Maintain dropdown options in a centralized location for easier updates and additions.
-* Improved Efficiency: Eliminate the need to manually add long option lists within the form definition.
+- Simplified Management: Maintain dropdown options in a centralized location for easier updates and additions.
+- Improved Efficiency: Eliminate the need to manually add long option lists within the form definition.
 
 ![Drop-down options](/help/forms/assets/drop-down-options.png)
 
 
 By the end of this article, you learn to:
 
-* [Define options in a separate spreadsheet ](#define-options)
-* [Add URL to load drop-down list options](#add-url)
+- [Define options in a separate spreadsheet ](#define-options)
+- [Add URL to load drop-down list options](#add-url)
 
 ## Define options in a separate sheet {#define-options}
 
@@ -33,8 +33,8 @@ Defining Options in a Separate Spreadsheet
    1. Add a new sheet. For example, "shared-country".
 1. Define Option Columns:
    Add two columns: "Option" and "Value".
-   * "Option" defines the text displayed in the dropdown menu.
-   * "Value" defines the submitted value when a user selects the option.
+   - "Option" defines the text displayed in the dropdown menu.
+   - "Value" defines the submitted value when a user selects the option.
 
    >[!NOTE]
    >
@@ -78,11 +78,6 @@ After integrating the URL into the form definition to load drop-down list option
 For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch, the below URL displays the `enquiry` form displaying the options saved in the separate sheet:
 
 `https://main--wefinance--wkndform.aem.live/enquiry-form`
-<!--(https://main--wefinance--wkndform.aem.live/enquiry-form) 
--->
 
-## See also
-
-{{see-more-forms-eds}}
 
    

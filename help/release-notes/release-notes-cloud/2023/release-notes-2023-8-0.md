@@ -30,6 +30,7 @@ Have a look at the August 2023 Release Overview video for a summary of the featu
      ![New Content Fragment Editor](/help/release-notes/assets/newCFEditor.png)
 
 The new Content Fragment editor provides the following benefits that are not available in the original editor:
+
 * Auto-saving for improved authoring efficiency and to prevent accidental loss of edits.
 * Hierarchical view of a Content Fragment and its references using the Structure tree for quick navigation within a deeply structured fragment.
      ![Structure Tree in Content Fragment Editor](/help/release-notes/assets/newCFEditor_StructureTree.png)

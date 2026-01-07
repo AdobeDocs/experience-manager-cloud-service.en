@@ -3,7 +3,7 @@ title: Use rules to add dynamic behavior to a form
 description: Edge Delivery Services for AEM Forms are built for peak performance, empowering you to envision the future of streamlined data collection and user engagement. Use rules to add dynamic behavior to your forms. 
 feature: Edge Delivery Services
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Use rules to add dynamic behavior to your forms
 
@@ -15,16 +15,16 @@ This article guides you through how to use various Adaptive Form Block propertie
 
 Rules are like instructions that tell us what to do in different situations. A rule generally has the following constructs:
 
-* Conditions : These specify the circumstances under which the rule applies. Think of them as a question that needs to be answered (yes or no).
+- Conditions : These specify the circumstances under which the rule applies. Think of them as a question that needs to be answered (yes or no).
 
-* Actions: These define what happens when the condition is met (true) or not met (false).
+- Actions: These define what happens when the condition is met (true) or not met (false).
 
 
 For example, to display an email box, when a checkbox is selected: 
 
-* Condition: The "Do you like to subscribe for Magazine & Activities?" checkbox is selected. (Yes or no?). This condition is set in the `Visible` property of the form. 
-* Action (True): The email box is displayed. (What happens if yes). The `Visibility Expression`  use the condition defined for the `visible` property to dynamically show fields. 
-* Action (False): The email box is hidden. (What happens if no). The `Visibility Expression`  use the condition defined for the `Value` to dynamically hide fields. 
+- Condition: The "Do you like to subscribe for Magazine & Activities?" checkbox is selected. (Yes or no?). This condition is set in the `Visible` property of the form. 
+- Action (True): The email box is displayed. (What happens if yes). The `Visibility Expression`  use the condition defined for the `visible` property to dynamically show fields. 
+- Action (False): The email box is hidden. (What happens if no). The `Visibility Expression`  use the condition defined for the `Value` to dynamically hide fields. 
 
 For detailed step-by-step instructions, see the [show/hide email field based on a condition](#example-1-conditional-email-field)
 
@@ -35,8 +35,8 @@ For detailed step-by-step instructions, see the [show/hide email field based on 
 
 Imagine a light switch for your form field. The `Visible` property is like that switch, controlling whether the field is initially visible on the form when it first loads.
 
-* True (like the light switch being "on"): The field is shown on the form.
-* False (like the light switch being "off"): The field is hidden on the form.
+- True (like the light switch being "on"): The field is shown on the form.
+- False (like the light switch being "off"): The field is hidden on the form.
 
 You can use SpreadSheet Formula (including the = tag) to write a formula using spreadsheet-like logic to determine the field's visibility. You can use the values from other fields in your form within this formula. For example, if a user selects "Individual" in a registration type field, you can hide the email field using a formula that checks that value.
 
@@ -67,10 +67,10 @@ Use the `=FORMULATEXT("Address of the corresponding Value property)` to bring th
 
 Here's an analogy to solidify these concepts:
 
-* Visible: Imagine a form like a house. The "Visible" property is like the light switch for each room (field). You decide if the room is initially lit (visible) or dark (hidden) when someone enters the house (opens the form).
-* Visible Expression: This is like a motion sensor light switch. The room (field) might be initially dark (hidden), but a formula (motion sensor) can turn it on (show the field) if someone walks by (changes the value in another field).
-* Value: This is like a pre-set dimmer switch for the light (initial data in the field). Users can then adjust the brightness (modify the value).
-* Value Expression: This is like a fancy calculator built into the price tag on a product in the house (form). The price tag (field) shows the final price based on a formula (for example, adding tax to the base price) that uses other information like the base price (value from another field).
+- Visible: Imagine a form like a house. The "Visible" property is like the light switch for each room (field). You decide if the room is initially lit (visible) or dark (hidden) when someone enters the house (opens the form).
+- Visible Expression: This is like a motion sensor light switch. The room (field) might be initially dark (hidden), but a formula (motion sensor) can turn it on (show the field) if someone walks by (changes the value in another field).
+- Value: This is like a pre-set dimmer switch for the light (initial data in the field). Users can then adjust the brightness (modify the value).
+- Value Expression: This is like a fancy calculator built into the price tag on a product in the house (form). The price tag (field) shows the final price based on a formula (for example, adding tax to the base price) that uses other information like the base price (value from another field).
 
 By combining these properties with [spreadsheet functions](#spreadsheet-functions-for-rules), you can achieve a wide range of dynamic behaviors within your forms.
 
@@ -80,19 +80,19 @@ Adaptive Forms Block supports a variety of spreadsheet functions that can be use
 
 ### Logical Functions
 
-* [NOT()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110): Reverses the logical state (TRUE becomes FALSE and vice versa).
-* [AND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND): Returns TRUE only if all conditions specified are TRUE.
-* [OR()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR): Returns TRUE if at least one of the conditions specified is TRUE.
+- [NOT()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110): Reverses the logical state (TRUE becomes FALSE and vice versa).
+- [AND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND): Returns TRUE only if all conditions specified are TRUE.
+- [OR()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR): Returns TRUE if at least one of the conditions specified is TRUE.
 
 ### Conditional Functions
 
-* [IF()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018446_715980110): Evaluates a condition and returns a specific value if TRUE, and another value if FALSE.
+- [IF()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018446_715980110): Evaluates a condition and returns a specific value if TRUE, and another value if FALSE.
 
 ### Math Functions
 
-* [SUM()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#SUM): Adds values from a specified range of cells.
-* [ROUND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#ROUND): Rounds a number to a specified number of decimal places.
-* [MIN()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#MIN): Returns the smallest value from a specified range of cells.
+- [SUM()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#SUM): Adds values from a specified range of cells.
+- [ROUND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#ROUND): Rounds a number to a specified number of decimal places.
+- [MIN()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#MIN): Returns the smallest value from a specified range of cells.
 
 ## Creating a rule
 
@@ -150,7 +150,7 @@ Here are some examples for the commonly used spreadsheet functions:
 
 **Logical functions:**
 
-* **NOT():** Reverses the logical state (TRUE becomes FALSE and vice versa).
+- **NOT():** Reverses the logical state (TRUE becomes FALSE and vice versa).
 
     Example: Hiding a "Confirm Email" field if the email field is left blank.
     
@@ -164,9 +164,9 @@ Here are some examples for the commonly used spreadsheet functions:
         ![AEM Forms visible expression formula](/help/edge/assets/aem-forms-visible-expression-formula-text.png)
 
 
-* AND(): Returns TRUE only if all conditions specified are TRUE.
+- AND(): Returns TRUE only if all conditions specified are TRUE.
 
-    * Example: Enabling a "submit" button only if all required fields are filled.
+    - Example: Enabling a "submit" button only if all required fields are filled.
 
     1. Set the `Visible` property of the "submit" button to:
 
@@ -204,9 +204,9 @@ Here are some examples for the commonly used spreadsheet functions:
 
         This formula shows the "submit" button (TRUE) only if all fields (name, email, phone) are filled (NOT(()) returns TRUE for each), otherwise it hides the button (AND(multiple FALSES) = FALSE).
 
-* OR(): Returns TRUE if at least one of the conditions specified is TRUE.
+- OR(): Returns TRUE if at least one of the conditions specified is TRUE.
 
-    * Example: Applying a discount if a user enters any of the applicable discount coupon code.
+    - Example: Applying a discount if a user enters any of the applicable discount coupon code.
 
     1. Set the `Visible` property of the "final amount" field to:
 
@@ -237,9 +237,9 @@ Here are some examples for the commonly used spreadsheet functions:
 
 **Text functions:**
 
-* IF(): Evaluates a condition and returns a specific value if TRUE, and another value if FALSE.
+- IF(): Evaluates a condition and returns a specific value if TRUE, and another value if FALSE.
 
-    * Example: Displaying a custom message based on a chosen product category.
+    - Example: Displaying a custom message based on a chosen product category.
 
     1. Set the `Value` property of the `message` field to `Only upto 7 kg check-in lagguage is allowed!`:
 
@@ -280,7 +280,7 @@ Here are some examples for the commonly used spreadsheet functions:
 
 **Math functions:**
 
-* SUM(): Adds values from a specified range of cells.
+- SUM(): Adds values from a specified range of cells.
 
     Example: Calculating the total cost of items in a shopping cart.
 
@@ -289,7 +289,7 @@ Here are some examples for the commonly used spreadsheet functions:
 
     This formula assumes you have separate fields for "price" and "quantity" of each item. It multiplies them and uses SUM() to add up the total cost for all items in the cart.
 
-* ROUND(): Rounds a number to a specified number of decimal places.
+- ROUND(): Rounds a number to a specified number of decimal places.
 
     Example: Rounding a calculated discount amount to two decimal places.
 
@@ -298,7 +298,7 @@ Here are some examples for the commonly used spreadsheet functions:
 
     This formula rounds the discount value to two decimal places.
 
-* MIN(): Returns the smallest value from a specified range of cells.
+- MIN(): Returns the smallest value from a specified range of cells.
 
     Example: Finding the minimum required age for a signup form based on a selected country.
 
@@ -320,9 +320,9 @@ The Out-of-the-Box (OOTB) Adaptive Forms block provides implementations for many
 
 Custom functions reside in the `[Adaptive form block]/functions.js` file. The creation process generally involves the following steps:
 
-* Function Declaration: Define the function name and its parameters (the inputs that it accepts).
-* Logic Implementation: Write the code that outlines the specific calculations or manipulations performed by the function.
-* Function Export: Make the function accessible within your rules by exporting it from the relevant file.
+- Function Declaration: Define the function name and its parameters (the inputs that it accepts).
+- Logic Implementation: Write the code that outlines the specific calculations or manipulations performed by the function.
+- Function Export: Make the function accessible within your rules by exporting it from the relevant file.
 
 ### Example: Year Function
 
@@ -332,9 +332,9 @@ This example demonstrates two custom functions that mimic Microsoft&reg; Excel's
 ```JavaScript
 
 /**
- * Get the current date and time
- * @name now
- * @returns {Date} The current date and time as a Date object
+ - Get the current date and time
+ - @name now
+ - @returns {Date} The current date and time as a Date object
  */
 function now() {
   const today = new Date();
@@ -342,11 +342,11 @@ function now() {
 }
 
 /**
- * Get the year from a Date object
- * @name year
- * @param {Date} date The date object
- * @throws {TypeError} If the input is not a Date object
- * @returns {number} The year as a number
+ - Get the year from a Date object
+ - @name year
+ - @param {Date} date The date object
+ - @throws {TypeError} If the input is not a Date object
+ - @returns {number} The year as a number
  */
 function year(date) {
   let inputDate = new Date(date)

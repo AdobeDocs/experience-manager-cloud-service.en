@@ -10,77 +10,98 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 21706 {#21706}
+## Release 23862 {#23862}
 
-Summarized below are the continuous improvements for maintenance release 21706, which was publicly released on July 24, 2025. The previous maintenance release was release 21570.
+Summarized below are the continuous improvements for maintenance release 23862, which was publicly released on December 23, 2025. The previous maintenance release was release 23482.
 
->[!NOTE]
->
->Release 21644 was made private and replaced by release 21706.
+The 2026.1.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-The 2025.7.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+### Enhancements {#enhancements-23862}
 
-### Enhancements {#enhancements-21706}
+* CQ-4361812: Added support for optional param folderPath in rest api. Description: A new translation project is created by the API, and will be placed within the path specified by the optional `folderPath` parameter, otherwise it defaults to the root project path `/content/projects`.
+* FORMS-21960: Added support for canvas editing on local for Interactive Communications, similar to forms-spa.
+* FORMS-22001: Added guidance to reduce high volume of `/etc.clientlibs/toggles.json` requests in AEM Forms as a Cloud Service.
+* FORMS-22496: Expose Raw ResponseBody in Invoke Service.
+* FORMS-22495: Add placeholder property in SetProperty rule.
+* FORMS-21925: UBS Footnotes Formatting: Display All Footnotes in the Form During Form Load.
+* FORMS-20536: Expose an option of complete response in eventPayload in rule editor without mapping.
+* SITES-37199: Annotation Feature triggers repository traversal via unvalidated `authorizables.json` call causing Performance Degradation.
+* SITES-37118: Commerce Optimizer support in Product Cockpit.
+* SITES-38029: Add logs for tracing MSM push on modify events.
+* SITES-37050: Support for "force unpublish", allowing to unpublish content fragments that are referenced by other published resources.
+* SITES-37142: Added capability to checkin/checkout a content fragment via content fragment PATCH.
+* SITES-37613: In the CF API permissions endpoint return checkin  if the user can checkin a content fragment, or checkout  if the user can checkout a content fragment.
+* SITES-37835: When attempting to create multiple content fragments with the same title, but no provided name, automatically generate a new name instead of failing due to conflict.
+* SITES-36823: Edge Delivery with Universal Editor: Remove the need for reverse mappings for indexes.
+* SITES-34751: Edge Delivery with Universal Editor: Fail for non supported file types and paths out of limits when publishing (Early Access).
+* SITES-37888: Edge Delivery with Universal Editor: Use Alt suffix as synonym for Text for links.
+* SITES-19850: Edge Delivery with Universal Editor: Add support for multiple sheets in spreadsheets.
+* SITES-32490: Edge Delivery with Universal Editor: Add support for data-aue-component and user defined data-aue-label to blocks and default content.
+* SITES-37794: Edge Delivery with Universal Editor: Simplify page creation wizard.
+* SITES-36963: Migrate Audience/Segment Endpoint to Target API v3 for Workspace Support.
 
-* ASSETS-39377: Improve handling of 429s from remote storage in Assets Bulk Importer.
-* ASSETS-46026: Configurable max depth for metadata exporter.
-* ASSETS-49172: Dynamic Media Template assets should inherit Metadata from Folder.
-* ASSETS-50209: Support for substring in DM Templates.
-* ASSETS-52326: AEM Assets configuration page to set Title display preferences for Assets.
-* ASSETS-52805: Add CSV output/download support for Bulk Operation job.
-* ASSETS-52873: Add a new configuration in the folder properties to disable AI processing for that folder.
-* ASSETS-53535: Improved YouTube video upload performance.
-* ASSETS-53612: Control for Hybrid Search in Assets Omnisearch.
-* GRANITE-60183: Update commons-fileupload dependency to 1.6.0.
-* GRANITE-60287: Update QS to Jackrabbit 2.22.1.
-* SITES-30452: Content API with ASO - Title & Description Suggestions.
-* SITES-31677: Custom workspace support AEM Content fragment export to Target.
-* SKYOPS-112741: Remove the `com.adobe.granite.product.support` bundle from the AEM-CS SDK.
+### Fixed Issues {#fixed-issues-23862}
 
-### Fixed Issues {#fixed-issues-21706}
+* CQ-4361831: Fixed issue causing genai_dropdown_span is not defined.
+* CQ-4360895: Fixed Inaccurate translation job status count in project during concurrent updates.
+* CQ-4361599: Fixed skipping of Content Fragments from Translation Jobs after 2025.7 upgrade.
+* CQ-4360747: Fixed Repeatable Translation Jobs create empty payloads & trigger too often (NullPointerException in ScheduleRepeatTranslationProject).
+* CQ-4359994: Fixed destinationLanguage field type inconsistency for single and multi-language project.
+* SITES-38153: Fix cf publish reference provider for uuid based references.
+* SITES-37594: Performance improvements for model by tags functionality.
+* SITES-37337: FragmentCreateProcessor: provide additional error details in logs.
+* SITES-33666: Unlocalized 'Cannot print fragment's Json' error message in Content Fragment Editor.
+* SITES-33675: Hardcoded 'undefined' string in Content Fragment Editor > Associated Content.
+* SITES-30715: Unlocalized 'General' string in Content Fragment Editor.
+* SITES-28592: Unlocalized strings in Content Fragment Model editor > 'Model is locked' dialog.
+* SITES-977: Strings "Tags" and "collections" are not localized on edit content fragment page.
+* SITES-29699: Unlocalized types of allowed assets in Content Fragment Editor.
+* SITES-25240: Call to Action fields in the Teaser Modal do not have a visible label.
+* SITES-24869: Truncated tooltip in Template Editor > Separator > Policy.
+* SITES-19313: Error is unlocalized when drag and drop a component to deleted template in Template Editor.
+* SITES-18103: Unlocalized strings in Page editor > Workflow.
+* SITES-17501: Unlocalized strings in Template Editor > Component Policy editor.
+* SITES-15091: Strings are unlocalized on text component properties of Experience fragment.
+* SITES-8113: 'Assets' string isn't localized in 'Select Image' dialog for 'Templates' in Tools menu.
+* SITES-37587: Live copy creation still fails in PROD with NPE in RolloutManagerImpl.
+* SITES-37335: Live Copy Page Properties showing error in console related to cq tags.
+* SITES-36972: "Rollout" Button Missing in Editable Toolbar.
+* SITES-36570: Creating Live Copies fails after chunked Create Live Copy toggle is activated.
+* SITES-36158: Rollout fails with Job failed due to an exception.
+* SITES-35655: New CF Editor shows active inheritance after it was broken.
+* SITES-31425: Unlocalized Error message `Error: {} field is required` displayed in Start workflow in sites.
+* SITES-19802: Tooltips is unlocalized in Core Components site > Table of contents.
+* SITES-36543: Fixed issue that would allow admin to edit checked out content fragments. 
+* SITES-36967: Fixed NullPointerExceptions that occur when attempting to generate thumbnail data for broken content fragments.
+* SITES-37791: Fixed an issue where calling FindAndReplace for strings containing `$` would fail.
+* SITES-37018: Empty Error Popup When Copying Page with Disallowed Template Path.
+* SITES-36243: Edge Delivery with Universal Editor: Fix 404s while publishing of `sling:OrderedFolder`.
+* SITES-37684: Edge Delivery with Universal Editor: Fix performance degradation in environments with many sites.
+* SITES-37840: Edge Delivery with Universal Editor: Fix publishing failures due to outdated access token for Edge Delivery.
+* SITES-37933: Edge Delivery with Universal Editor: Fix (un)publishing failures for deleted resources in Launches.
+* SITES-37870: Edge Delivery with Universal Editor: Fix broken rendering of custom page metadata with multi-field support enabled.
+* SITES-37349: Edge Delivery with Universal Editor: Render multi-fields with single entries as list with a single list item.
+* SITES-36148: Edge Delivery with Universal Editor: Fix data-aue-label for composite multi-fields.
 
-* ASSETS-12882: UI alignment issues after opening viewer presets.
-* ASSETS-48958: Issue with Asset Sync changing Published Status in Sites local AEM.
-* ASSETS-50856: `dam:processingAttempts` not being reset on completeUpload.
-* ASSETS-51604: Link Share Report CSV Missing “Shared With” Data.
-* ASSETS-51783: Fallback to DM config under `/conf/global` if no config is found using search query.
-* ASSETS-51857: Asset table items not reorderable.
-* ASSETS-52169: New BAT machine rendition erroneously included in asset downloads.
-* ASSETS-52229: Missing Inbox Notifications for Asset Reports in AEM as a Cloud Service.
-* ASSETS-52399: Version bump in com.day.cq.dam.api might break customer code.
-* ASSETS-52780: Asset can be marked for preview even without toggled enabled.
-* ASSETS-52866: Migrated DM videos remain in processing state under folder with DM Sync disabled.
-* ASSETS-53237: Color Profile dropdown blank in Image Preset editor.
-* ASSETS-53240: Asset Report - Disk Usage fails when getting asset rendition size from Dynamic Media.
-* ASSETS-53446: Intermittent YouTube auth token refresh failures due to NPE.
-* ASSETS-53827: ACL validation blocks saving Mixed Media Sets.
-* ASSETS-5403: Dynamicmedia clientlibs used on publish instance should have `allowProxy=true`.
-* ASSETS-54261: Metadata import leaks connections and becomes blocked if the file fails to download.
-* CQ-4359863: Tags search broken for keywords out of order in Content Fragment Editor/Asset editor.
-* CQ-4359958: Make openapi-support compatible with AEM 6.5.22.0 and above.
-* CQ-4360256: Include the servlet context path in the request path for HTTP requests handled via the `/adobe` servlet context.
-* CQ-4360317: Add method for setting the Sunset date header when building responses.
-* GRANITE-60311: AEM SDK Quickstart – NPE on “OSGi Installer Configuration Printer”.
-* GS-15285: Users are shown as deactivated.
-
-### Known Issues {#known-issues-21706}
+### Known Issues {#known-issues-23862}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-21706}
+### Deprecated Features and APIs {#deprecated-23862}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-21706}
+### Security Fixes {#security-23862}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 4 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 23 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-21706}
+### Embedded Technologies {#embedded-tech-23862}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM Oak | 1.80.0|[Oak API 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80/index.html)| 
+|AEM Oak | 1.88.0|[Oak 1.88.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.88.0/index.html)|
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
-|Apache HTTP Server| 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES)|
-|AEM Core Components| 2.29.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|Apache HTTP Server| 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES)|
+|AEM Core Components| 2.30.2|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|Node.js|14 (default)|[Supported Node.js versions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions)|

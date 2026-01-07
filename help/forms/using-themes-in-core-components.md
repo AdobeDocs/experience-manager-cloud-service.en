@@ -1,7 +1,7 @@
 ---
-title: How can we create and use themes in Adaptive Forms?
+title: How to build and use themes in Adaptive Forms?
 description: You can use themes to style and provide a visual identity to an Adaptive Form using Core Components. You can share a theme across any number of Adaptive Forms.
-keywords: adaptive forms styling Core Components. using theme in Core Components, styling adaptive form, customizing themes
+keywords: form builder themes, adaptive forms styling core components, form theme builder, styling adaptive form, customizing themes, build form themes
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
@@ -64,7 +64,7 @@ Customizing a theme refers to the process of modifying, styling and personalizin
 
 ### Set up your environment
 
-* [Enable Adaptive Forms Core Components](/help/forms/enable-adaptive-forms-core-components.md)  for your local development and Cloud Service environment. 
+* Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment. 
 * Configure a [front-end deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html) for your Cloud Service environment. Alternatively, you can configure the pipeline later, giving you the flexibility to prioritize testing and refining the theme before setting up the deployment pipeline.
 
 <!-- 
@@ -159,9 +159,9 @@ To clone a theme, perform the following instructions:
 
 **Considerations while setting the name of the theme**
 
-   * It is mandatory to remove the `@aemforms` from the theme name in `Package.json` file and `Package-lock.json` file. In case, you fail to remove `@aemforms` from your customized theme name, it results in the failure of the frontend pipeline during the theme deployment.
-   * It is recommended to update the theme `version` in `Package.json` file and `Package-lock.json` file to accurately reflect changes and enhancements over time for your theme.
-   * For the important information about the usage, installation instructions, and other relevant details, it is recommended to update the name of the theme in the `ReadMe` file.
+* It is mandatory to remove the `@aemforms` from the theme name in `Package.json` file and `Package-lock.json` file. In case, you fail to remove `@aemforms` from your customized theme name, it results in the failure of the frontend pipeline during the theme deployment.
+* It is recommended to update the theme `version` in `Package.json` file and `Package-lock.json` file to accurately reflect changes and enhancements over time for your theme.
+* For the important information about the usage, installation instructions, and other relevant details, it is recommended to update the name of the theme in the `ReadMe` file.
 
 #### 3. Customize a theme {#customize-the-theme}
 
@@ -201,7 +201,7 @@ You can also change the font, color, size, and other CSS properties of a specifi
 
    ![Edit Textbox CSS](/help/forms/assets/edit_color_textbox.png)
    
-   >![NOTE]
+   >[!NOTE]
    >
    > When a style is defined both at the theme and component level, the style defined at the component level takes priority. 
 
@@ -335,8 +335,8 @@ You require a repository to deploy the theme. Log in to your [AEM Cloud Manager 
    
    >[!NOTE]
    > 
-   > * You can use single repository for multiple themes. 
-   > * To deploy different themes, you have to create separate front-end pipelines. 
+   >* You can use single repository for multiple themes. 
+   >* To deploy different themes, you have to create separate front-end pipelines. 
    >* For example, you can use same repository, as `custom-canvas-theme-repo`, for Canvas theme, WKND theme, and EASEL theme. However, to deploy the themes, you need to create separate front-end pipelines. Future customizations for a specific theme are deployed using the corresponding front-end pipeline.
 
 ##### 5.2. Push the changes to the repository {#committing-the-changes}
@@ -387,6 +387,10 @@ The theme is deployed using the [front-end pipeline](https://experienceleague.ad
 
    After the pipeline setup is complete, the call-to-action card is updated.
 
+   >[!NOTE]
+   >
+   > To ensure your front-end pipeline does not fail in Cloud Manager, [set the Node.js version to 20](#set-the-nodejs-vesrion-to-20). 
+
 1. Right-click the created pipeline.
 1. Click **[!UICONTROL Run]** .
     
@@ -413,6 +417,21 @@ Steps to apply a theme to an Adaptive Form are:
 1. Click **Create**.
 
 Adaptive Form themes are used as part of an Adaptive Form template to define styling while creating an Adaptive Form.
+
+## Set the Node.js version to 20
+
+To set the Node.js version to 20 using the pipeline configuration:
+
+1. Go to the **Pipelines** section and locate your front-end pipeline.
+2. On the right side of the pipeline, click the three-dot menu **⋯** and from the dropdown, select **View/Edit variables**.
+3. In the **Variables Configuration** dialog, fill in the fields as follows:
+   * **NAME** - NODE_VERSION
+   * **VALUE** - 20
+   * **STEP APPLIED** - Build
+   * **TYPE** - Variable
+4. Click **Save** to apply the configuration.
+
+![pipeline configuration](/help/forms/assets/pipeline-config.png)
 
 ## Best practices {#best-practices}
 
@@ -441,19 +460,14 @@ Adaptive Form themes are used as part of an Adaptive Form template to define sty
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
 * [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
-
->[!MORELIKETHIS]
->
->* [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)
-
 -->
 
 
 ## See Also {#see-also}
 
 {{see-also}}
+
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
 * [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
-* [Enable Adaptive Forms Core Components on AEM Forms as a Cloud Service and local development environment](/help/forms/enable-adaptive-forms-core-components.md)

@@ -3,11 +3,16 @@ title: How to integrate an Adaptive Form with Microsoft&reg; Power Automate?
 description: Integrate an Adaptive Form with Microsoft&reg; Power Automate.
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: connect AEM formns to power automate, Power automate automation AEM Forms, Integrate power automate to Adaptive Forms, send data from Adaptive Forms to Power Automate
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
 ---
 
 # Connect an Adaptive Form with Microsoft&reg; Power Automate {#connect-adaptive-form-with-power-automate}
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration)                  |
+| AEM as a Cloud Service     | This article            |
 
 <span class="preview"> If you're on GovCloud and need to connect to a GCC (Government Cloud Computing) tenant, send an email from your official address to aem-forms-ea@adobe.com to request access through the Early Adopter Program. </span>
 
@@ -15,7 +20,7 @@ You can configure an Adaptive Form to run a Microsoft&reg; Power Automate Cloud 
 
 Adaptive Forms editor provides the **Invoke a Microsoft&reg; Power Automate flow** submit action to send adaptive forms data, attachments, and Document Of Record are sent to Power Automate Cloud Flow. 
 
-AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md)  article.
+AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/aem-forms-submit-action.md) article.
 
 
 ## Advantages
@@ -134,12 +139,17 @@ Your Forms as a Cloud Service instance is now connected with Microsoft&reg; Powe
 
 After you [Connect your Forms as a Cloud Service instance with Microsoft&reg; Power Automate](#connect-forms-server-with-power-automate), perform the following action to configure your adaptive form to send captured data to a Microsoft&reg; flow on form submission.
 
+>[!BEGINTABS]
+
+>[!TAB Foundation Component]
+
 1. Log in to your Author instance, select your Adaptive Form and click **[!UICONTROL Properties]**.
 1. In the Configuration Container, browse and select the container created in section [Create Microsoft&reg; Power Automate Dataverse Cloud Configuration](#microsoft-power-automate-dataverse-cloud-configuration), and select **[!UICONTROL Save and Close]**.
 1. Open the Adaptive Form for editing and navigate to **[!UICONTROL Submission]** section of the Adaptive Form Container properties.
 1. In the properties container, for **[!UICONTROL Submit Actions]** select the **[!UICONTROL Invoke a Power Automate flow]** option and select a **[!UICONTROL Power Automate flow]**. Select the required flow and Adaptive Forms data is submitted to it on submission.    
 
      ![Configure Submit Action](assets/submission.png)
+1. Click **[!UICONTROL Done]**.
 
 >[!NOTE]
 >
@@ -206,6 +216,171 @@ After you [Connect your Forms as a Cloud Service instance with Microsoft&reg; Po
         }
 
 ```
+
+>[!TAB Core Component]
+
+1. Log in to your Author instance, select your Adaptive Form and click **[!UICONTROL Properties]**.
+1. In the Configuration Container, browse and select the container created in section [Create Microsoft&reg; Power Automate Dataverse Cloud Configuration](#microsoft-power-automate-dataverse-cloud-configuration), and select **[!UICONTROL Save and Close]**.
+1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
+1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 
+1. Click the  **[!UICONTROL Submission]** tab. 
+1. Select the **[!UICONTROL Invoke a Power Automate flow]** option from the Submit action drop-down list and select a **[!UICONTROL Power Automate flow]**. Select the required flow and Adaptive Forms data is submitted to it on submission.    
+
+     ![Configure Submit Action](/help/forms/assets/power-automate-cc.png)
+1. Click **[!UICONTROL Done]**.
+
+>[!NOTE]
+>
+> Before submitting the Adaptive Form, ensure that the `When an HTTP Request is received` trigger with below JSON Schema is added to your Power Automate flow.  
+
+```
+
+        {
+            "type": "object",
+            "properties": {
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "filename": {
+                                "type": "string"
+                            },
+                            "data": {
+                                "type": "string"
+                            },
+                            "contentType": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "filename",
+                            "data",
+                            "contentType",
+                            "size"
+                        ]
+                    }
+                },
+                "templateId": {
+                    "type": "string"
+                },
+                "templateType": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "document": {
+                    "type": "object",
+                    "properties": {
+                        "filename": {
+                            "type": "string"
+                        },
+                        "data": {
+                            "type": "string"
+                        },
+                        "contentType": {
+                            "type": "string"
+                        },
+                        "size": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
+
+```
+
+>[!TAB Universal Editor]
+
+1. Log in to your Author instance, select your Adaptive Form.
+1. In the Configuration Container, browse and select the container created in section [Create Microsoft&reg; Power Automate Dataverse Cloud Configuration](#microsoft-power-automate-dataverse-cloud-configuration), and select **[!UICONTROL Save and Close]**.
+1. Open the Adaptive Form for editing.
+1. Click the **Edit Form Properties** extension on the editor. 
+    The **Form Properties** dialog appears.
+
+    >[!NOTE]
+    >
+    > * If you do not see the **Edit Form Properties** icon in your Universal Editor interface, enable the **Edit Form Properties** extension in the Extension Manager. 
+    > * Refer to the [Extension Manager Feature Highlights](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) article to learn how to enable or disable extensions in the Universal Editor.
+
+
+1. Click **Submission** tab and select **[!UICONTROL Invoke a Power Automate flow]** Submit action. Select the required flow and Adaptive Forms data is submitted to it on submission.    
+
+     ![Configure Submit Action](/help/forms/assets/power-automate-ue.png)
+1. Click **[!UICONTROL Save&Close]**.
+   
+>[!NOTE]
+>
+> Before submitting the Adaptive Form, ensure that the `When an HTTP Request is received` trigger with below JSON Schema is added to your Power Automate flow.  
+
+```
+
+        {
+            "type": "object",
+            "properties": {
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "filename": {
+                                "type": "string"
+                            },
+                            "data": {
+                                "type": "string"
+                            },
+                            "contentType": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "filename",
+                            "data",
+                            "contentType",
+                            "size"
+                        ]
+                    }
+                },
+                "templateId": {
+                    "type": "string"
+                },
+                "templateType": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "document": {
+                    "type": "object",
+                    "properties": {
+                        "filename": {
+                            "type": "string"
+                        },
+                        "data": {
+                            "type": "string"
+                        },
+                        "contentType": {
+                            "type": "string"
+                        },
+                        "size": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
+
+```
+
+>[!ENDTABS]
 
 <!--
 ## See also

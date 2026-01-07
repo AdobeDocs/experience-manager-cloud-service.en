@@ -2,7 +2,7 @@
 title: Authoring Content Fragments
 description: Understand how to author content for your Content Fragments, and create variations of that content according to purpose. Content Fragments provide added flexibility for both headless delivery and page authoring.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
 ---
@@ -27,6 +27,10 @@ This editor provides:
 * Ability to [view, and open, parent references](#view-parent-references).
 * A hierarchical view of the Content Fragment, and its references, using the [Structure tree](#structure-tree).
 
+>[!NOTE]
+>
+>Be aware of the [Best Practices](/help/sites-cloud/administering/content-fragments/overview.md#best-practices) when working with your Content Fragment Models and Content Fragments.
+
 >[!WARNING]
 >
 >The editor described in this section is *only* available in the [Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md); so *online* Adobe Experience Manager (AEM) as a Cloud Service, not a local instance.
@@ -38,7 +42,7 @@ When you first open the Content Fragment Editor, you see four main areas:
 * top toolbar: for key information, and actions
   * a link to the Content Fragment Console (Home icon)
   * information about the model, and folder
-  * links to [Preview (if the Default Preview URL Pattern is configured for the model)](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)
+  * links to [Preview](#preview-content-fragment); if the Default Preview URL Pattern is configured for the model
   * [Publish](#publish-content-fragment), and [Unpublish](#unpublish-content-fragment) actions
   * an option to show all **Parent References** (link icon)
   * the fragment **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**, and last saved information
@@ -62,7 +66,7 @@ When you first open the Content Fragment Editor, you see four main areas:
 
   >[!NOTE]
   >
-  >Depending on definitions in the underlying model, fields can be subject to certain types of [Validation](/help/assets/content-fragments/content-fragments-models.md#validation).
+  >Depending on definitions in the underlying model, fields can be subject to certain types of [Validation](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#validation).
 
 ![Content Fragment Editor - Overview](assets/cf-authoring-overview.png)
 
@@ -83,7 +87,7 @@ In the left panel you can see:
 
 * the list of **[Variations](#variations)** that have been created for this fragment:
   * **Main** is the Variation that is present when the Content Fragment is first created, you can add others later
-  * you can use Generate Variations(#generate-variations) to use a prompt based template that Adobe has created for a specific use case.
+  * you can use [Generate Variations](#generate-variations-ai) to use a prompt based template that Adobe has created for a specific use case.
   * you can also [create a Variation](#create-variation)
 * the **Fields** within the fragment, and its variations:
   * the icon indicates the [Data Type](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
@@ -170,9 +174,9 @@ See [Generate Variations - Integrated in AEM Editors](/help/generative-ai/genera
 
 To delete a Variation of your Content Fragment:
 
-    >[!NOTE]
-    >
-    >You cannot delete **Main**.
+>[!NOTE]
+>
+>You cannot delete **Main**.
 
 1. Select the Variation.
 
@@ -348,9 +352,9 @@ There are some limitations when referencing remote assets:
 
 * No Asset metadata is exposed via the either Management API or the Delivery API. You have to use the Asset Metadata API to retrieve the asset metadata details:
 
-  * the individual asset metadata: [https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
+  * the individual asset metadata: [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata)
   
-  * get bulk metadata information using the search API (experimental): [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+  * get bulk metadata information using the search API (experimental): [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search)
 
 >[!NOTE]
 >
@@ -491,14 +495,7 @@ To enable you to collaborate in-product and in-context, the **Comments** tab in 
 
 ## Preview your Fragment {#preview-content-fragment}
 
-The Content Fragment editor provides authors with the option to preview their edits in an external frontend application. 
-
-To use this feature, you first need to:
-
-* Work with your IT team to set up the external frontend application that will render the Content Fragment by consuming its JSON output. 
-* When the external frontend application is set up, the **Default Preview URL Pattern** must be defined as a [property of the appropriate Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties).
-
-When the URL has been defined, the **Preview** button is active. You can select this button to launch the external application (in a separate tab) to render the Content Fragment. 
+The Content Fragment editor provides authors with the option to preview their edits in an external frontend application. This requires that the **[Default Preview URL Pattern](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)** is defined, to activate the **Preview** button in the top toolbar of the editor. You can select this button to launch the external application (in a separate tab) to render the Content Fragment. 
 
 ## Publish your Fragment {#publish-content-fragment}
 
