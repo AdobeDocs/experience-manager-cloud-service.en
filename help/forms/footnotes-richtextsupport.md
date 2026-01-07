@@ -7,10 +7,6 @@ role: User, Developer
 ---
 # Footnote Component {#footnotecomponent}
 
->[!NOTE]
->
-> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components.
-
 **[!UICONTROL Footnote]** is the extra bit of information or notes which appear at the end of the page. [!UICONTROL Footnote] comprises the notes that are indicated in your text with numbers as a superscript.
 
 Footnotes are numbered sequentially in the order that they appear on the page. Each footnote has a unique number as a superscript which corresponds to the number which is placed at the bottom of the page. Next to the number appears the supplementary information as a footnote description.
@@ -46,15 +42,16 @@ To add footnote in Adaptive Forms, perform the following steps:
     >* If there are duplicate footnotes, then numeration is same for all the duplicate footnotes. 
 
 1. From the component browser, drag-drop the **[!UICONTROL Footnote Placeholder]** component onto the Adaptive Form.
-    
-    >[!NOTE]
-    >
-    >* At the publish instance, footnotes are displayed at the position where **[!UICONTROL Footnote Placeholder]** component is placed onto the Adaptive Form.  
-    >* When you navigate between different panels, only visible footnotes appear in the **[!UICONTROL Footnote Placeholder]** that are present within the navigated panel.
 
 1. Save the properties.
 
 At runtime, number appears on the text as a superscript and its corresponding description appears in the **[!UICONTROL Footnote]** component at the position where [!UICONTROL Footnote Placeholder] is placed on the Adaptive Form. You can directly navigate to the footnote description by clicking its corresponding number on the [!UICONTROL Footnote].
+
+## Footnote Placeholder behavior in Adaptive Forms
+
+* At the publish instance, footnotes are displayed at the position where **[!UICONTROL Footnote Placeholder]** component is placed onto the Adaptive Form.  
+* Footnotes support line breaks, allowing form authors to format content across multiple lines within the **[!UICONTROL Footnote Placeholder]** component.
+* Footnotes remain visible in the **[!UICONTROL Footnote Placeholder]** at all times, independent of the visibility of the associated panels.
 
 
 ## See Also {#see-also}
