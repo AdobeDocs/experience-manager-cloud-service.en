@@ -4,7 +4,7 @@ description: Learn how to set up and scale your enterprise development team and 
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Enterprise development team setup for AEM as a Cloud Service {#enterprise-setup}
 

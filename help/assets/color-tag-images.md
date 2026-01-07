@@ -21,7 +21,7 @@ The following figure illustrates the sequence of tasks that you perform to confi
 
 |File format |Extension | MIME type |Input Colorspace |Maximum supported source file size |Maximum supported file size resolution|
 |---|---|---|---|---|---|
-| JPEG |.jpg and .jpeg|image/jpeg |sRGB|15 GB |20000 × 20000 pixels | 
+| JPEG |.jpg and .jpeg|image/jpeg |sRGB|15 GB |20000 × 20000 pixels |
 | PNG |.png|image/png |sRGB |15 GB |20000 × 20000 pixels |
 | TIFF |.tif and .tiff|image/tiff |sRGB | 4 GB (limited by format specifications) |20000 × 20000 pixels |
 | PSD |.psd|image/vnd.adobe.photoshop |sRGB|2 GB (limited by format specifications)|20000 × 20000 pixels|

@@ -163,7 +163,7 @@ Configure the Referrer Filter to allow your specific Edge Delivery site domains:
 
 >[!IMPORTANT]
 >
->**Forrepoless setups:** You must add each site domain individually to the `allow.hosts` array. Using only regex patterns may not be sufficient for all scenarios. Include both specific domains and regex patterns for comprehensive coverage.
+>**For repoless setups:** You must add each site domain individually to the `allow.hosts` array. Using only regex patterns may not be sufficient for all scenarios. Include both specific domains and regex patterns for comprehensive coverage.
 
 >[!WARNING]
 >

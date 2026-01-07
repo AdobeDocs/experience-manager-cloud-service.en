@@ -28,20 +28,24 @@ As of now, you cannot create Attribute-based access control rules on your own us
 
 Click **Download Spreadsheet** to download and define rules in a spreadsheet. Create an Adobe support ticket and provide the rules defined in the spreadsheet to Adobe.
 
-[!BADGE Download Spreadsheet]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+[!BADGE Download Spreadsheet]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template.xlsx"}
 
 
 Define rules in the spreadsheet using the guidelines defined in this article.
+
+<!--
 
 >[!IMPORTANT]
 >
 > After defining the rules, navigate to the **Validation Errors** tab of the spreadsheet and click **Run ABAC Validations**. **All validations passed** message confirms that you can provide the defined rules to Adobe.
 
+-->
+
 ## Example Attribute-based Access Control use case {#example-metadata-based-rules}
 
 To support a large-scale marketing rollout, various team members across regions and brands need access to digital assets. Each persona has a specific scope based on region and brand. ABAC enforces these rules automatically via asset metadata. The following table illustrates the different type of personas for this use case and the rules that are applied:
 
-| Persona      | Role   | Role Description | Group ID | ABAC Rule | 
+| Persona      | Role   | Role Description | Group ID | ABAC Rule |
 |---------------------|----------------|-----------------|------------|------------|
 | John  | EMEA Marketing Lead | Oversees marketing execution across all brands in EMEA. Needs access to approved assets for all brands intended for EMEA markets. | group-emea-marketing | region = "EMEA" |
 | Mike  | APAC Marketing Lead | Oversees marketing execution across all brands in APAC. Needs access to approved assets for all brands intended for APAC markets. | group-apac-marketing | region = "APAC" |

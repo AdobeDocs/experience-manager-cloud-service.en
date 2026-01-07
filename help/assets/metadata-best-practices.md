@@ -101,10 +101,12 @@ In enterprise-wide metadata management, consistency is important when naming and
 
 Here are some of the best practices to follow:
 
-   * **Avoid duplicate values:** If you have a collection of images from a marketing campaign, use consistent names and avoid duplicates.<br>
+* **Avoid duplicate values:** If you have a collection of images from a marketing campaign, use consistent names and avoid duplicates.
+
    For instance, instead of using duplicate names like *campaign_image_001* and *campaign_image_002*, implement a systematic naming convention such as *event_promotion* and *product_launch*, ensuring a clear and ordered identification.
 
-   * **Use controlled vocabularies effectively:** Implement controlled vocabularies by employing standardized terms for tags. Learn how to implement [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md) effectively.  <br>
+* **Use controlled vocabularies effectively:** Implement controlled vocabularies by employing standardized terms for tags. Learn how to implement [AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md) effectively.
+
    For example, consistently use terms such as *product_launch* or *event_promotion* when tagging images with themes to maintain systematic sequence.
 
 * **Maintain accuracy and completeness:** To keep metadata consistent, accuracy, completeness, and alignment across various sources are crucial.

@@ -4,7 +4,7 @@ description: Learn about the self-service tools Cloud Manager provides you to in
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Introduction to SSL certificates{#introduction}
@@ -35,7 +35,7 @@ Cloud Manager offers self-service tools to install and manage SSL certificates, 
 | | Model | Description |
 | --- | --- | --- |
 | A | **[Adobe-managed SSL certificate (DV)](#adobe-managed)** | Cloud Manager lets users configure DV (Domain Validation) certificates that are provided by Adobe for quick domain setup.|
-| B | **[Customer-managed SSL certificate (OV/EV)](#customer-managed)** | Cloud Manager offers a platform TLS (Transport Layer Security) service to let you manage OV and EV SSL certificates that you own and private keys from third-party Certificate Authorities, such as *Let's Encrypt*. | 
+| B | **[Customer-managed SSL certificate (OV/EV)](#customer-managed)** | Cloud Manager offers a platform TLS (Transport Layer Security) service to let you manage OV and EV SSL certificates that you own and private keys from third-party Certificate Authorities, such as *Let's Encrypt*. |
 
 Both models offer the following general features for managing your certificates:
 
@@ -148,11 +148,17 @@ The following `openssl` commands can be used to convert non-PEM certificates.
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
-## Limitation on number of installed SSL certificates {#limitations}
+## Limitations {#limitations}
 
-At any given time, Cloud Manager supports up to 50 installed certificates. These certificates can be associated with one or more environments across your program and also include any expired certificates.
+### Number of installed SSL certificates {#number-installed-ssl-certs}
+
+At any given time, Cloud Manager supports up to 70 installed certificates. These certificates can be associated with one or more environments across your program and also include any expired certificates.
 
 If you have reached the limit, review your certificates and consider deleting any expired certificates. Or, group multiple domains in the same certificate since a certificate can cover multiple domains (up to 100 SANs).
+
+### Let's Encrypt rate limits for Adobe-managed DV certificates
+
+Adobe-managed DV certificates rely on Let's Encrypt. In addition to the Cloud Manager limit on installed certificates, Let's Encrypt enforces its own rate limits. One key limit is **New Certificates per Exact Set of Identifiers**: up to 5 certificates can be issued for the very same set of hostnames within any 7-day period. If this limit is reached, Cloud Manager shows an error and cannot create more certificates for that hostname set until the rate-limit window is reset. For the latest values and other related limits, see the [Let's Encrypt rate-limits documentation](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers).
 
 ## Learn more {#learn-more}
 

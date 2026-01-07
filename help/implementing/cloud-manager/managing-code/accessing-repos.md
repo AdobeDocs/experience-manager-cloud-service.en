@@ -4,7 +4,7 @@ description: Learn how to access and manage your Adobe-managed Git repositories 
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Repository access information {#accessing-repos}

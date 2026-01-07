@@ -23,7 +23,7 @@ You can define the overall appearance and style of an Adaptive Form by specifyin
 
 To add inline styles to a component:
 
-1. Open your form in the form editor, and change the mode to styling mode. To change the mode to styling mode, in the page toolbar, select ![canvas-drop-down](assets/Smock_ChevronDown.svg) &gt; **[!UICONTROL Style]**.
+1. Open your form in the form builder, and change the mode to styling mode. To change the mode to styling mode, in the page toolbar, select ![canvas-drop-down](assets/Smock_ChevronDown.svg) &gt; **[!UICONTROL Style]**.
 1. Select a component in the page, and select the edit button ![edit-button](assets/edit.svg). Styling properties open in the sidebar.
 
    You can also select components from the form hierarchy tree in the sidebar. Form hierarchy tree is available as Form Objects in the sidebar.

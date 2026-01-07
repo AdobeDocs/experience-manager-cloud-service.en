@@ -4,7 +4,7 @@ description: Learn how AEM Projects are built with Maven and the standards you m
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Project setup {#project-setup}
 

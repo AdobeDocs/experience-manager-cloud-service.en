@@ -61,7 +61,7 @@ You can create an Adaptive Form Fragment from scratch or save a panel in an exis
 
 <!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> In addition, if you selected an XML schema as the form model for your fragment, a new tab displaying the form-model hierarchy appears in the content finder. It lets you drag-and-drop form-model elements onto the fragment. <!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
-Once the Adaptive Form fragment based on a schema or form data model (FDM) is created, form data model (FDM) or schema elements appear in the Data Sources tab of the Content browser in Adaptive Form editor. You can drag-and-drop form-model elements onto the fragment. The added form-model elements are converted to form components while retaining the original properties from the associated schema. 
+Once the Adaptive Form fragment based on a schema or form data model (FDM) is created, form data model (FDM) or schema elements appear in the Data Sources tab of the Content browser in Adaptive Form builder. You can drag-and-drop form-model elements onto the fragment. The added form-model elements are converted to form components while retaining the original properties from the associated schema. 
 
 
 ## Add a fragment to an Adaptive Form {#insert-a-fragment-in-an-adaptive-form}
@@ -77,9 +77,11 @@ To add an Adaptive Form fragment to an Adaptive Form:
 
      ![select the Adaptive Form Fragments option](/help/forms/assets/adaptive-form-fragment-basic.png)
 
-  <!-- >[!NOTE]
+<!-- 
+   >[!NOTE]
    >
-   >The Adaptive Form fragment is not enabled for authoring from within the Adaptive Form. Moreover, you cannot use an XSD-based fragment in a JSON-based Adaptive Form and the opposite way. -->
+   >The Adaptive Form fragment is not enabled for authoring from within the Adaptive Form. Moreover, you cannot use an XSD-based fragment in a JSON-based Adaptive Form and the opposite way. 
+-->
 
 The Adaptive Form fragment is added by reference to the Adaptive Form and remains in synchronized with the standalone Adaptive Form fragment. This implies that any modifications made to the Adaptive Form fragment are mirrored across all instances where the fragment is incorporated within Adaptive Forms.
 

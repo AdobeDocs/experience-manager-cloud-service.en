@@ -3,7 +3,7 @@ title: Universal Editor Use Cases and Learning Paths
 description: Learn about the main use cases of the Universal Editor and how best to learn about its use and how to implement it on your own projects.
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Universal Editor Use Cases and Learning Paths {#use-cases-learning-paths}
 
@@ -34,9 +34,9 @@ In this way you can benefit from the tools available in the Sites console such a
 
 If this is your use case, as an immediate next step, please see the following documents for a complete overview of how to get up-and-running with the Universal Editor in AEM.
 
-1. [Developer Getting Started Guide for WYSIWYG authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - Get started with your first Universal Editor project in AEM
-1. [Creating Blocks Instrumented for use with the Universal Editor](/help/edge/wysiwyg-authoring/create-block.md) - Learn how to instrument blocks to make your content editable in the Universal Editor
-1. [Content Modeling for WYSIWYG authoring with Edge Delivery Services Projects](/help/edge/wysiwyg-authoring/content-modeling.md) - Learn the details of how blocks are structured to effectively model your content for use with the Universal Editor.
+1. [Developer Getting Started Guide for WYSIWYG authoring with Edge Delivery Services](https://www.aem.live/developer/ue-tutorial) - Get started with your first Universal Editor project in AEM
+1. [Creating Blocks Instrumented for use with the Universal Editor](https://www.aem.live/developer/universal-editor-blocks) - Learn how to instrument blocks to make your content editable in the Universal Editor
+1. [Content Modeling for WYSIWYG authoring with Edge Delivery Services Projects](https://www.aem.live/developer/component-model-definitions) - Learn the details of how blocks are structured to effectively model your content for use with the Universal Editor.
 
 Once you have read those documents, you can return to this page to learn about the headless authoring use case and how the Universal Editor works in general.
 
@@ -59,7 +59,7 @@ The power of the Universal Editor is its ability to author any content in-place,
 The Universal Editor works in the following way.
 
 1. A developer instruments the app or page to use the Universal Editor. This instrumentation tells the editor what content is editable and how to persist it.
-   * If you follow the [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) documentation, your pages are automatically instrumented.
+   * If you follow the [Developer Getting Started Guide for WYSIWYG Authoring with Edge Delivery Services](https://www.aem.live/developer/ue-tutorial) documentation, your pages are automatically instrumented.
    * For headless authoring, your app can be easily instrumented.
 1. The content author load the Universal Editor, which in turn loads your page for editing. Because it is instrumented, it knows which content is editable and how it is to be represented and persisted.
 1. The content author edits the page content in an intuitive WYSIWYG interface, editing in-place.

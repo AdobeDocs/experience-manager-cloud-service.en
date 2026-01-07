@@ -38,6 +38,7 @@ Have a look at the October 2024 Release Overview video for a summary of the feat
 **Modernized Page Events**
 
 The following AEM Sites page events are now available as externally consumable events that are based on the AEM as a Cloud Service Eventing Platform. The events can be processed via Adobe I/O to interact with external processes. 
+
 * Page published
 * Page unpublished
 * Page deleted

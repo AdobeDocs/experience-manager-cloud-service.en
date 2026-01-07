@@ -33,7 +33,6 @@ A [Cloud Manager UI notification](/help/implementing/cloud-manager/notifications
 >
 > Note: Non-Intrusive Maintenance Updates will be progressively enabled for all customers in 2024.
 
-
 ## Type of Updates {#update-types}
 
 There are two types of AEM version updates:

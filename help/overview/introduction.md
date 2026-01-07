@@ -40,6 +40,7 @@ With AEM as a Cloud Service,
 * Marketing Professionals can achieve faster time-to-value. 
 
 >[!NOTE]
+>
 >See [Terminology](terminology.md) for some of the new terms that have been introduced with AEM as a Cloud Service.
 
 ## Value Added as a Cloud Service {#value-added-as-a-cloud-service}

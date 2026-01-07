@@ -1,11 +1,12 @@
 ---
 title: How to manage metadata in Assets view?
 description: Learn how to manage metadata in Assets view. Better metadata management makes an asset more accessible, easier to manage, and complete.
-role: User, Leader, Admin, Architect, Developer
+role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
 ---
+
 # Metadata in Assets View {#metadata}
 
 Metadata means data or description about the data. For example, your images as an asset can contain information about the camera it was clicked with or any copyright information. This information is metadata of the image. Metadata is critical for efficient asset management. Metadata is the collection of all the data available for an asset but it may not necessarily be contained in that asset.
@@ -109,6 +110,10 @@ Once a form is created, it is automatically applied when users upload an asset o
 
 To reuse an existing form to create a new form, select a metadata form, click **[!UICONTROL Copy]** from the toolbar, provide a name, and click **[!UICONTROL Confirm]**. You can edit a metadata form to change it. When you change a form, it is used for assets uploaded after the change. It does not change the existing assets.
 
+>[!IMPORTANT] 
+>
+>The default metadata form also has a **[!UICONTROL Campaign]** tab, which comprises **[!UICONTROL Campaign Name]**, **[!UICONTROL Channels]**, and **[!UICONTROL Region]** multi-value read-only fields. It is a limited availability feature. You can get it enabled  by creating a support ticket.
+
 ### Property components {#property-components}
 
 You can customize your metadata form using any of the following property components. Simply drag and drop the component type onto the form in the desired location and modify the component settings. 
@@ -175,7 +180,6 @@ Follow the steps below to use link component on metadata form:
    * Click ![edit icon](assets/do-not-localize/edit.svg) to edit the URL.
 1. Click **[!UICONTROL Save]** to save the changes.
 
-
 ### Working with Tags component in metadata form {#tag-component-metadata-form}
 
 The root element represents the tree structure of the tags that you can associate with the assets, helping to identify the asset based on the tag assigned to it. Additionally, you can restrict the access of a specific taxonomy while configuring the metadata form in metadata editor.
@@ -208,44 +212,16 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 To view the configured root tags, go to the asset's details page where the mapping between the metadata form and root tags is performed.
 
-## Enhancing content discovery with AI-Generated metadata {#ai-smart-tags}
+## Edit Metadata Forms {#edit-metadata-forms}
 
-Instead of relying on manual input, AI automatically assigns descriptive tags to digital assets. These AI-generated tags enhance metadata quality, making the assets easier to search, categorize, and recommend. This approach not only improves efficiency by eliminating manual tagging but also ensures consistency and scalability across large volumes of digital content. For example, if the asset is an image, AI can identify objects, scenes, emotions, or even brand logos within it and generate relevant tags such as "sunset," "beach," "vacation," or "smiling." AI-generated content can enhance the search for assets by leveraging both semantic and lexical search techniques. See more [Search Assets](search-assets-view.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
+Execute the following steps to edit a metadata form:
 
-![AI Generated metadata](/help/assets/assets/enhanced-smart-tags.png)
-
-### How to enable AI-generated metadata? {#enable-ai-generated-metadata}
-
-To enable AI-generated metadata:
-
-* Minimum required AEM release version is `20626`.
-
-* You must sign a GenAI Rider agreement. For more information, contact your Adobe representative.
-
-  >[!IMPORTANT]
-  >
-  > The AI-generated title of an asset is displayed in the Asset card only when you have not defined the asset title. It does not overwrite the asset title specified by you. 
-
-### Using AI-Generated metadata {#using-ai-generated-smart-tags}
-
-<!--[!NOTE]
->
->The enhanced smart tags capability is available only for the newly uploaded assets.
--->
-
-To use the enhanced smart tags feature, execute the following steps:
-
-1. In the [!DNL Experience Manager] interface, go to the desired folder and click **[!UICONTROL Add Assets]**. <!--Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**.--> The compatible image file formats are `png`, `jpg`, `jpeg`,`psd`, `tiff`, `gif`, `webp`, `crw`, `cr2`, `3fr`, `nef`, `arw`, and `bmp`.
-
-1. Wait until the newly uploaded asset is processed. Once done, go to asset details.
-
-1. Go to **[!UICONTROL AI-Generated]** tab. If [!DNL Experience Manager] version is incompatible or not updated, then this tab is not visible.  The following fields are there:
-
-    * **[!UICONTROL Generated title]:** The title provides a clear and concise headline that captures the core idea of an uploaded asset, making it easy to understand at a glance. When adding an asset, if you provide a title (in `dc:title`), it will be displayed in the assets browse view. If left blank, an AI-generated title will be assigned automatically.
-    * **[!UICONTROL Generated description]:** The description gives a brief yet informative summary of what the asset is about, helping users and search module to quickly grasp its relevance.
-    * **[!UICONTROL Generated keywords]:** The keywords are targeted terms that represent the main themes of an asset, aiding in tagging and content filtering.
-
-1. [Optional] You may add additional tags or create your own if you feel any relevant tags are missing. To do this, write your tags in the  **[!UICONTROL Generated keywords]** field and click **[!UICONTROL Save]**.
+1. Navigate to [!DNL Assets View] homepage and select **[!DNL Metadata Forms]** to view a list a metadata forms.
+1. Select a form and click **[!UICONTROL Edit]** to open the [!DNL Metadata Form Editor] page. This page displays components of the metadata form in the left pane, tabs such as Basic, Advanced, Tags and more in the middle pane and the Settings panel for editing the metadata properties in the right pane.
+1. Open a tab (**[!DNL Basic]**, **[!DNL Advanced]**, or **[!DNL Tags]**).
+1. Select a metadata property to edit its settings in the **[!UICONTROL Settings]** panel. You can update property mappings, rename labels, modify or add property values, and perform more such edits in the **[!UICONTROL Settings]** panel.
+1. Click **[!UICONTROL Preview]** to review the changes to the form before saving those changes.
+1. Click **[!UICONTROL Save]** to apply the changes.
 
 ## Next Steps {#next-steps}
 
@@ -286,4 +262,3 @@ How can one search based strictly on the metadata. Similar to AEM Assets GQL que
 >
 >* [Search assets](search.md).
 -->
-

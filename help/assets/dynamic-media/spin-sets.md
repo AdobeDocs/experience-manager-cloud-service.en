@@ -216,6 +216,7 @@ You can perform various editing tasks on Spin Sets such as the following:
     * To delete an asset, select it and select **[!UICONTROL Delete Asset]**.
     * To apply a preset, select the Preset icon and select a preset.
     * To delete an entire Spin Set, navigate to the Spin Set, select it, and select **[!UICONTROL Delete]**
+    
     >[!NOTE]
     >
     >You can edit the images in a Spin Set by navigating to the set, select **[!UICONTROL Set Members]** in the left rail, and then select the Pencil icon on an individual asset to open the editing window.

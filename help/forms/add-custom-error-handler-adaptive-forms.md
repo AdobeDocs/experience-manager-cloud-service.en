@@ -31,6 +31,7 @@ If the input values meet the validation criteria, the values are submitted to th
 ## Uses of error handlers {#uses-of-error-handler}
 
 Error handlers are used for various purposes. Some of the uses of error handler functions are listed below:
+
 * **Perform validation**:  The error handling starts with validating user inputs against predefined rules or criteria. As users fill out an Adaptive Form, the error handler validates the input to ensure it meets the required format, length, or any other constraints.
 
 * **Provide real-time feedback**: When any error is detected, the error handler displays immediate feedback to the user, such as inline error messages below the corresponding form fields. This feedback helps users to identify and correct errors without having to submit the form and wait for a response.
@@ -96,6 +97,7 @@ With the improvements in features and subsequent updates in the versions of AEM 
 > * Ensure that the **ContentType** header is **application/problem+json**.
 
 Where:
+
 * `type (required)` specifies the type of failure. It can be one of the following values:
     * `SERVER_SIDE_VALIDATION` indicates a failure due to server-side validation.
     * `FORM_SUBMISSION` indicates a failure during form submission
@@ -180,6 +182,7 @@ Using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs
 > * A default error handler is provided to display error messages on fields if the error response is in the standard schema. You can also call the default error handler from the custom error handler function. 
 
 Using Rule Editor, you can:
+
 * [Add default error handler function](#add-default-errror-handler)
 * [Add custom error handler function](#add-custom-error-handler-function)
 
@@ -218,6 +221,7 @@ The custom error handler is a function (Client Library) designed to respond to e
 To understand how to create and use a custom error handler using the [Rule Editor's Invoke service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, let's take an example of Adaptive Form with two fields, **Pet ID** and **Pet Name** and use a custom error handler at the **Pet ID** field to check for various errors returned by the REST endpoint configured to invoke an external service, for example, `200 - OK`,`404 - Not Found`, `400 - Bad Request`.  
 
 To add and use a custom error handler in an Adaptive Form, perform the following steps:
+
 1. [Add custom function for error handler](#1-add-the-custom-function-for-the-error-handler)
 2. [Use the Rule Editor to configure custom error handler](#use-custom-error-handler)
 
@@ -236,7 +240,7 @@ To learn how to add custom functions, click [Create custom functions in an Adapt
 1. Add the below code for custom error handler in the JavaScript file, for example, `function.js`. The file comprises the code for custom error handler.
 Let's add the following code to the JavaScript file to display the response and headers, received from the REST service endpoint, in the browser console.
 
-    ```javascript
+   ```javascript
         /**
         * Custom Error handler
         * @name customErrorHandler Custom Error Handler Function
@@ -250,21 +254,19 @@ Let's add the following code to the JavaScript file to display the response and 
             guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers);
             console.log("Custom Error Handler processing end...");
         }
-    ```
+   ```
 
-    >[!NOTE]
-    >
-    > * To call the default error handler from your custom error handler, the following line of the sample code is used: `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
-    > * In the `.content.xml` file, add the `allowProxy` and `categories` properties to use custom error handler client library in an Adaptive Form. 
-    >
-    >   * `allowProxy = [Boolean]true`
-    >   * `categories= customfunctionsdemo`
-    >       For example, in this case, [custom-errorhandler-name] is provided as `customfunctionsdemo`.
+   >[!NOTE]
+   >
+   > * To call the default error handler from your custom error handler, the following line of the sample code is used: `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+   > * In the `.content.xml` file, add the `allowProxy` and `categories` properties to use custom error handler client library in an Adaptive Form. 
+   >
+   >   * `allowProxy = [Boolean]true`
+   >   * `categories= customfunctionsdemo`
+   >       For example, in this case, [custom-errorhandler-name] is provided as `customfunctionsdemo`.
 
 
 1. Add, commit, and push the changes in the repository.
-
-<!--
 
 <!--
 1. Save the `function.js` file.
@@ -324,96 +326,3 @@ Open the browser console and check the response and header, received from the RE
 
 The custom error handler function is responsible for executing additional actions such as displaying a modal dialog or sending an analytics event, based on the error response. A custom error handler function provides the flexibility to tailor error handling to the specific user requirements. 
 
-<!-- 
-
-## Configure Adaptive Form submission to add custom handlers {#configure-adaptive-form-submission}
-
-If the server validation error message does not display in the standard format, you can enable asynchronous submission and add a custom error handler on Adaptive Form submission to convert the message into a standard format.
-
-### Configure asynchronous Adaptive Form submission {#configure-asynchronous-adaptive-form-submission}
-
-Before adding custom handler, you must configure the adaptive form for asynchronous submission. Execute the following steps:
-
-1. In adaptive form authoring mode, select the Form Container object and select ![adaptive form properties](assets/configure_icon.png) to open its properties.
-1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
-1. Select **[!UICONTROL Revalidate on server]** to validate the input field values on server before submission.
-1. Select the Submit Action:
-
-    * Select **[!UICONTROL Submit using Form Data Model (FDM)]** and select the appropriate data model, if you are using RESTful web service based [form data model (FDM)](work-with-form-data-model.md) as the data source.
-    * Select **[!UICONTROL Submit to REST Service endpoint]** and specify the **[!UICONTROL Redirect URL/Path]**, if you are using RESTful web services as the data source.
-
-    ![adaptive form submission properties](assets/af_submission_properties.png)
-
-1. Select ![Save](assets/save_icon.png) to save the properties.
-
-### Add custom error handler on Adaptive Form submission {#add-custom-error-handler-af-submission}
-
-AEM Forms provides out-of-the-box success and error handlers for form submissions. Handlers are client-side functions that execute based on the server response. When an Adaptive Form is submitted, the data is transmitted to the server for validation, which returns a response to the client with information about the success or error event for the submission. The information is passed as parameters to the relevant handler to execute the function.
-
-Execute the following steps to add custom error handler on Adaptive Form submission:
-
-1. Open an Adaptive Form in authoring mode, select any form object, and select  to open the rule editor.
-1. Select **[!UICONTROL Form]** in the Form Objects tree and select **[!UICONTROL Create]**.
-1. Select **[!UICONTROL Error in Submission]** from the Event drop-down list.
-1. Write a rule to convert custom error structure to the standard error structure and select **[!UICONTROL Done]** to save the rule.
-
-The following is a sample code to convert a custom error structure to the standard error structure:
-
-```javascript
-var data = $event.data;
-var som_map = {
-    "id": "guide[0].guide1[0].guideRootPanel[0].Pet[0].id_1[0]",
-    "name": "guide[0].guide1[0].guideRootPanel[0].Pet[0].name_2[0]",
-    "status": "guide[0].guide1[0].guideRootPanel[0].Pet[0].status[0]"
-};
-
-var errorJson = {};
-errorJson.errors = [];
-
-if (data) {
-    if (data.originMessage) {
-        var errorData;
-        try {
-            errorData = JSON.parse(data.originMessage);
-        } catch (err) {
-            // not in json format
-        }
-
-        if (errorData) {
-            Object.keys (errorData).forEach(function(key) {
-                var som_key = som_map[key];
-                if (som_key) {
-                    var error = {};
-                    error.somExpression = som_key;
-                    error.errorMessage = errorData[key];
-                    errorJson.errors.push(error);
-                }
-            });
-        }
-        window.guideBridge.handleServerValidationError(errorJson);
-    } else {
-        window.guideBridge.handleServerValidationError(data);
-    }
-}
-```
-
-The `var som_map` lists the SOM expression of the Adaptive Form fields that you want to transform into the standard format. You can view the SOM expression of any field in an adaptive form by tapping the field and selecting **[!UICONTROL View SOM Expression]**.
-
-Using this custom error handler, the adaptive form converts the fields listed in `var som_map` to standard error message format. As a result, the validation error messages display at field-level in the adaptive form.
-
- -->
-
-
-## See Also {#see-also}
-
-{{see-also}}
-* [Create and use custom error handlers in Adaptive Forms (Core Components)](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-
-<!--
-
->[!MORELIKETHIS]
->
->* [Create style or themes for your forms](/help/forms/using-themes-in-core-components.md)
->* [Create or add an Adaptive Form to AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
--->

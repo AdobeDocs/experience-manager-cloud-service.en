@@ -21,6 +21,9 @@ The [Content Fragment Editor](#opening-the-fragment-editor) provides various [mo
 * [View the Structure Tree](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [Preview the JSON representation](/help/assets/content-fragments/content-fragments-json-preview.md)
 
+>[!NOTE]
+>
+>Be aware of the [Best Practices](/help/assets/content-fragments/content-fragments.md#best-practices) when working with your Content Fragment Models and Content Fragments.
 
 >[!NOTE]
 >
@@ -130,7 +133,7 @@ Select the fragment to reveal the toolbar with applicable actions:
 
 >[!NOTE]
 >
->Many of these are [standard actions for Assets](/help/assets/manage-digital-assets.md) and/or the [AEM desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+>Many of these are [standard actions for Assets](/help/assets/manage-digital-assets.md) and/or the [AEM desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html).
 
 ## Opening the Fragment Editor {#opening-the-fragment-editor}
 

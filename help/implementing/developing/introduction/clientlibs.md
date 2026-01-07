@@ -3,7 +3,7 @@ title: Using Client-Side Libraries on AEM as a Cloud Service
 description: AEM provides Client-side Library Folders, which allow you to store your client-side code (clientlibs) in the repository, organize it into categories, and define when and how each category of code is to be served to the client
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Using Client-Side Libraries on AEM as a Cloud Service {#using-client-side-libraries}
@@ -282,7 +282,7 @@ The pluggable preprocessors allow for flexible usage including:
 
 >[!NOTE]
 >
->By default, AEM uses the YUI Compressor. See the [YUI Compressor GitHub documentation](https://github.com/yui/yuicompressor/issues) for a list of known issues. Switching to GCC compressor for particular clientlibs may solve some issues observed when using YUI.
+>By default, AEM uses the GCC Compressor for minifying Javascript and for transpiling any code to `ECMASCRIPT_2018`.
 
 >[!CAUTION]
 >
@@ -293,9 +293,8 @@ The pluggable preprocessors allow for flexible usage including:
 You can choose to configure the preprocessors configuration per clientlibrary or system-wide.
 
 * Add the multivalue properties `cssProcessor` and `jsProcessor` on the clientlibrary node
-* Or define the system default configuration via the **HTML Library Manager** OSGi configuration
 
-A preprocessor configuration on the clientlib node takes precedence over the OSGI configuration.
+Defining the system default configuration via the **HTML Library Manager** OSGi configuration is not supported. It will only apply to the local SDK and not to full-stack pipeline executions.
 
 #### Format and Examples {#format-and-examples}
 
@@ -331,7 +330,7 @@ jsProcessor: [
 ```javascript
 failOnWarning (defaults to "false")
 languageIn (defaults to "ECMASCRIPT5")
-languageOut (defaults to "ECMASCRIPT5")
+languageOut (defaults to "ECMASCRIPT_2018" as of release 21994, was previously "ECMASCRIPT5" )
 compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advanced")
 ```
 
@@ -339,11 +338,4 @@ For more details on GCC options, see [GCC documentation](https://developers.goog
 
 #### Set System Default Minifier {#set-system-default-minifier}
 
-YUI is set as the default minifier in AEM. To change this to GCC, follow these steps.
-
-1. Go to Apache Felix Config Manager at (`http://<host>:<port/system/console/configMgr`)
-1. Find and edit the **Adobe Granite HTML Library Manager**.
-1. Enable the **Minify** option (if not already enabled).
-1. Set the value **JS Processor Default Configs** to `min:gcc`.
-   * Options can be passed if separated with a semicolon for example, `min:gcc;obfuscate=true`.
-1. Click **Save** to save the changes.
+Setting the system default minifier is not supported in AEM as a Cloud Service.

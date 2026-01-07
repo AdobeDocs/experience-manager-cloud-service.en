@@ -10,7 +10,7 @@ exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 ## What is Content Hub? {#what-is-content-hub} 
 
 Content Hub is a feature of Adobe Experience Manager Assets as a Cloud Service.
-
+ 
 Content Hub enables broader teams to easily discover relevant, approved assets through an intuitive portal and quickly adapt them to their needs.  In addition, Content Hub provides an ingestion mechanism that allows those users to easily self–serve as they upload assets into the DAM. This directly accommodates the need organizations have for higher content creation velocity, while preserving brand consistency and compliance with appropriate safeguards.
 
 ## Why cannot I enable Content Hub on my Cloud Manager program/environment? {#cannot-enable-content-hub}
@@ -23,7 +23,7 @@ Enabling Content Hub on a production program deploys it a part of production inf
 
 If you do not want to provide Content Hub to your users once it is deployed, do not assign any users to the Content Hub product profile in Admin Console. See [Deploy Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile) for details.
 
-## How can I evaluate Content Hub in my organization given it is only available for production programs / production authoring environments? {#how-can-i-evaluate-content-hub}
+## How can I evaluate Content Hub in my organization ? {#how-can-i-evaluate-content-hub}
 
 Content Hub is a feature that Adobe provides and maintains and it does not have any custom code that would require typical validation via dev/stage/production. Additionally, access to the feature for users is fully controlled by the administrator, so you can evaluate it without exposing it to all users. 
 
@@ -37,8 +37,6 @@ It is possible to evaluate Content Hub without impacting your users/production c
 * After the evaluation is completed, AEM Users in author instance can remove approval from test assets, approve production assets for Content Hub, and then Admin Console administrator can add all users who need access to Content Hub and approved content. Congratulations, your Content Hub is live now.
 
 There is an early access program to Content Hub on Sandbox programs and their author production environments. For more information, see [Introduction to Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). To learn more about the early access program, reach out to your Adobe account team. 
-
-Content Hub is not yet available for non-production environments (stage & dev). Expected availability for stage/dev environments for Assets Ultimate is March 2025.
 
 ## Why do not I see any assets after logging on to Content Hub? {#no-assets-in-content-hub}
 
@@ -128,5 +126,29 @@ The table below outlines the key differences between the two solutions:
 |  | Pinned collections by Admin |&#10003;|&minus;|
 |  | Semantic search |&#10003;|&minus;|
 |  | Localised search and metadata display |&#10003;|&minus;|
+
+## How can I select a repository to view assets only for the selected environment? {#select-repository-multiple-environments}
+
+When you have configured Content Hub for Production and other lower environments for the same Program, you can select the repository and display the assets for the selected environment. Execute the following steps:
+
+1. Click the user icon in the right pane.
+
+1. In the **[!UICONTROL Product Settings]** section, select **[!UICONTROL Select Repository]**.
+
+1. Select the repository from the **[!UICONTROL Repository]** drop-down menu and click **[!UICONTROL OK]** to confirm.
+
+   Content Hub now displays assets for the selected environment.
+
+## How can Content Hub display the thumbnail preview for .ZIP file type? {#thumbnail-preview-zip-file}
+
+To provide a thumbnail preview for fie types such as .ZIP in Content Hub, you can add a rendition named `cq5dam.preview.jpg` or `cq5dam.preview.png` to the root of the path where the .ZIP is available in AEM as a Cloud Service authoring environment.
+
+The image that you add as rendition:
+
+* Can be in JPG, JPEG, or PNG format.
+
+* Must be under 50MB
+
+When available, Content Hub displays the image as the preview thumbnail for .ZIP file on Content Hub.
 
 

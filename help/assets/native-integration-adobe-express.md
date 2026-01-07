@@ -17,7 +17,6 @@ AEM Assets integrates natively with Adobe Express, which allows you to directly 
 
 Entitlements to access Adobe Express and at least one environment within AEM Assets. The environment can be any of the repositories within Assets as a Cloud Service or Assets Essentials.
 
-
 ## Use AEM Assets in Adobe Express editor {#use-aem-assets-in-express}
 
 Perform the following steps to start using AEM Assets in Adobe Express editor:
@@ -28,7 +27,7 @@ Perform the following steps to start using AEM Assets in Adobe Express editor:
 
 3. Click **[!UICONTROL Assets]** available in the left navigation pane. Adobe Express  displays the list of repositories that you are entitled to access along with the list of assets and folders available at the root-level.
 
-4. Browse or search assets in your repository to drag & drop onto the canvas. You can filter assets using various available filters, such as file type, MIME type, and dimensions.
+4. Browse or search for assets in your repository, then drag and drop them onto the canvas. Alternatively, click on the assets to place them onto the canvas. You can also filter assets by various criteria, such as file type, MIME type, and dimensions.
 
    >[!NOTE]
    >
@@ -36,6 +35,21 @@ Perform the following steps to start using AEM Assets in Adobe Express editor:
 
    ![Include assets from Assets add-on](assets/adobe-express-native-integration.png)
 
+### Replace image using AEM upload {#replace-image-using-aem-upload}
+
+Additionally, you can replace the added images using **[!UICONTROL AEM Upload]**. To do this, execute the following steps:
+
+1. Browse or search assets and drag & drop onto the canvas.
+
+1. Select the image which you want to replace. Click **[!UICONTROL Replace]** and select **[!UICONTROL AEM Assets]** among various other options.
+
+    ![AEM Replace](assets/aem-replace.png)
+
+1. **[!UICONTROL AEM Upload]** panel opens in the left navigation pane. Adobe Express  displays the list of repositories that you are entitled to access along with the list of assets and folders available at the root-level. Select an asset from there to preview the replacement on the canvas, then click **[!UICONTROL Replace]** to confirm. 
+
+    >[!NOTE]
+    >
+    > SVG file types are not supported.
 
 ## Save Adobe Express projects in AEM Assets {#save-express-projects-in-assets}
 
@@ -45,7 +59,10 @@ After incorporating appropriate modifications in the Express canvas, you can sav
 
    ![Save assets in AEM](assets/adobe-express-share.png)
 
-2. From the Storage section in the right pane, select **AEM Assets**. Adobe Express displays the upload dialog.
+2. From the **[!UICONTROL Recommended]** section in the right pane, select **AEM Assets**. Adobe Express displays the upload dialog.
+
+   ![Save assets in AEM](assets/adobe-express-aem.png)
+
 3. Select either **Current Page** or **All Pages**. Specify a name and format for the asset(s) to export. You can export the canvas contents in PNG, JPEG, PDF, MP4, MP4+PNG, or MP4+JPEG formats. The format adjusts automatically based on the asset(s) on the canvas page(s).
 Selecting **Current Page** saves the asset on your current page to your destination folder. If you select **All Pages** and the export format is not PDF, all canvas pages are saved as separate files in a new folder within your destination folder. If the export format is PDF, all canvas pages are saved as a single PDF file in the destination folder.
 
@@ -60,19 +77,47 @@ As a best practice, Adobe recommends specifying values in the rest of the fields
 
 7. Click **[!UICONTROL Upload]** to upload the asset(s) to AEM Assets.
 
+<table> 
+    <tbody>
+     <tr>
+      <th><strong>Supported formats</strong></th>
+      <th><strong>Size</strong></th>
+     </tr>
+    </tr>
+    <tr>
+        <td>[!UICONTROL JPEG]</td>
+        <td> 65MP (For example, 8K x 8K or 16K x 4K) </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL PNG]</td>
+        <td> 65MP (For example, 8K x 8K or 16K x 4K) </td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL SVG]</td>
+        <td> Maximum 250 KB</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL MP4]</td>
+        <td> 3840 X 3840 pixels, Maximum 200 MB</td>
+    </tr>
+    <tr>
+      <td colspan="2"> <i> The asset size must be less than 80 MB for desktop devices and 40 MB for mobile devices. </i></td>
+   </tr>
+    </tbody>
+</table>
+
 ## Limitations {#limitations}
 
 1. For importing and exporting, the supported video file type is MP4.
 
-2. For MP4 video import: 
-
+2. For **MP4 video import**, videos with transparent backgrounds (alpha channel) are not supported.
+   <!--
    1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
    2. The maximum supported resolution is 3840 X 3840 pixels.
    3. Videos with transparent backgrounds (alpha channel) are not supported.
+   -->
 
-3. For MP4 video export: 
-
-   1. The maximum file size supported is 200 MB. If this limit exceeds, an alert suggests trimming the video to 200 MB or less, or manually uploading it to the AEM Assets destination folder after downloading it.
+3. For **MP4 video export**, the maximum file size supported is 200 MB. If this limit exceeds, an alert suggests trimming the video to 200 MB or less, or manually uploading it to the AEM Assets destination folder after downloading it.
 
    
    

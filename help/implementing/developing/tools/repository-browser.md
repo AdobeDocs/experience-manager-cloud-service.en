@@ -5,7 +5,7 @@ description: The repository browser provides a read-only view into the repositor
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Repository Browser {#repository-browser}
 
@@ -70,7 +70,9 @@ Also, when you click a folder, the URL is dynamically modified to include the pa
 
 For publish, by default, the Repository Browser only shows public content, therefore certain folders like `/conf` or `/home` are not visible. 
 
-To make those locations visible, do the following.
+To make those locations visible, please use the AEM Administrators Publish Product Profile. For more info, see the [Team and Product Profiles documentation](/help/onboarding/aem-cs-team-product-profiles.md).
+
+<!-- Drafting because of CQDOC-23204
 
 1. Click the three dots next to the environment of your choice and select **Manage Access**
 
@@ -102,6 +104,8 @@ To make those locations visible, do the following.
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
 1. Upon accessing repository browser for a publish instance, all folders are visible, including `/home` and `/conf`.
+
+-->
 
 ### View JCR Properties {#view-jcr-properties}
 

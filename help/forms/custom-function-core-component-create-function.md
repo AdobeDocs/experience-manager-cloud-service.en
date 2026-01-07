@@ -23,6 +23,8 @@ This article guides you through the steps of creating custom functions for Adapt
   * Default parameters
   * Rest parameters 
 
+* The latest ECMAScript features are available as Early Access (EA), while up to ECMAScript 2019 is supported in general availability.
+  
 ## Prerequisites to create a custom function
 
 Before you begin adding a custom function to your Adaptive Forms, ensure you have the following:
@@ -39,6 +41,7 @@ Before you begin adding a custom function to your Adaptive Forms, ensure you hav
 Create a client library to call custom functions in the rule editor. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 
 Steps to create custom functions are:
+
 1. [Create a client library](#create-client-library)
 1. [Add client library to an Adaptive Form](#use-custom-function)
 
@@ -103,6 +106,7 @@ Add the following to the added client library folder:
           #base=js
         function.js
     ```
+
 1. In the `js` folder, add the javascript file as `function.js` which includes the custom functions:
 
    ```javascript
@@ -127,7 +131,8 @@ Add the following to the added client library folder:
     return age;
     }
 
-    ```
+   ```
+
 1. Save the files.
 
  ![custom fuction folder structure](/help/forms/assets/custom-function-added-files.png)
@@ -136,10 +141,10 @@ Add the following to the added client library folder:
 
 1. Navigate to the `/ui.apps/src/main/content/META-INF/vault/filter.xml` file in your [AEMaaCS project directory].
 
-1. Open the file and add the following line at the end:
+2. Open the file and add the following line at the end:
 
     `<filter root="/apps/experience-league" />`
-1. Save the file.
+3. Save the file.
 
 ![custom fuction filter xml](/help/forms/assets/custom-function-filterxml.png)
 
@@ -227,7 +232,7 @@ Let's preview the form to observe how the custom functions are implemented throu
 
 ## Features of Custom Functions
 
-Custom functions in AEM forms offer a robust solution for extending and personalizing the functionality of your forms. You can use th custom functions to meet your organization’s specific needs.
+Custom functions in AEM forms offer a robust solution for extending and personalizing the functionality of your forms. You can use th custom functions to meet your organization's specific needs.
 
 These functions support various capabilities, including working with specific fields, using global fields, and asynchronous operations, as well as incorporating caching mechanisms. This flexibility ensures that forms can adapt to complex requirements and deliver an efficient, tailored user experience. By leveraging these advanced features, you can enhance form interactions and optimize performance, making your AEM forms both more functional and responsive.
 

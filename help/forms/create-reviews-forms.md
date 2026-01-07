@@ -22,16 +22,16 @@ A review is a mechanism that allows one or more reviewers to comment on forms.
 
 ## Setting up a review {#setting-up-a-review}
 
-1.  Navigate to the forms browser and select a form to review.
-1.  If the Form does not have a review in progress, a **Start Review** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icon appears in the Action bar. Click the **Start Review** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icon.
-1.  Enter the following information:
+1. Navigate to the forms browser and select a form to review.
+1. If the Form does not have a review in progress, a **Start Review** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icon appears in the Action bar. Click the **Start Review** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icon.
+1. Enter the following information:
 
     * **Title**: Mandatory, can contain alphanumeric characters, hyphen, and underscore.
     * **Description**: Optional, description of the purpose / content for review.
     * **Deadline**: Optional, the date on which the review ends. When past the deadline the task appears as 'Overdue'.
     * **Reviewer Name**: A minimum of one is mandatory. Use the combo-box to add reviewers, typing a name list of all matching names; select a name and click **Add**. On the next section of the **Reviewers** tab shows the names of all the reviewers.
 
-1.  Click the **Start** to start a review.
+1. Click the **Start** to start a review.
 
     >[!NOTE]
     >
@@ -110,17 +110,3 @@ This section describes what happens on **Review Update/End**:
     1. **All**: The review appears in the Previous Reviews section. No further comments can be added.
 
     ![review complete](assets/review-complete-imgg.png)
-
-
-## See Also {#see-also}
-
-{{see-also}}
-
-
-<!--
-
->[!MORELIKETHIS]
->
->* [Associating submission reviewers with a form](/help/forms/adding-reviewers-form.md)
-
--->

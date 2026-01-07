@@ -3,7 +3,7 @@ title: Configure and use asset microservices
 description: Configure and use the cloud-native asset microservices to process assets at scale.
 contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
-role: Architect, Admin
+role: Developer, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
 ---
 # Use asset microservices and processing profiles {#get-started-using-asset-microservices}
@@ -53,7 +53,7 @@ With the default configuration, only the most basic processing profile is config
 
 ## Standard configuration {#standard-config}
 
-[!DNL Experience Manager] provides capabilities to generate more specific renditions for common formats as per the user's needs. An administrator can create additional [!UICONTROL Processing Profiles] to facilitate such rendition creation. Users then assign one or more of the available profiles to specific folders to get the additional processing done. Say, for example, the additional processing can generate renditions for web, mobile, and tablet. The following video illustrates how to create and apply [!UICONTROL Processing Profiles] and how to access the created renditions.
+[!DNL Experience Manager] provides capabilities to generate more specific renditions for common formats as per the user's needs. An administrator can create additional [!UICONTROL Processing Profiles] to facilitate such rendition creation. Users then assign one or more of the available profiles to specific folders to get the additional processing done. Say, for example, the additional processing can generate renditions for web, mobile, and tablet. [See this video to understand, how to create and apply [!UICONTROL Processing Profiles] and how to access the created renditions](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/content-automation/creative-operations).
 
 * **Rendition width and height**: Rendition width and height specification provide maximum sizes of the generated output image. Asset microservices tries to produce the largest possible rendition, which width and height is not bigger than the specified width and height, respectively. The aspect ratio is preserved, that is the same as the original. An empty value means that asset processing assumes the pixel dimension of the original.
 

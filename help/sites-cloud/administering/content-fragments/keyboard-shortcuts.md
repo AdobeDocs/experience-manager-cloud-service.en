@@ -2,7 +2,7 @@
 title: Keyboard Shortcuts for the Content Fragments Console
 description: Various keyboard shortcuts are available throughout AEM, including a selection for managing Content Fragments.
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: 24eefa31-4081-4b4a-af98-c6299b213cea
 solution: Experience Manager Sites
 ---

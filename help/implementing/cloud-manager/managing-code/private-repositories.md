@@ -3,7 +3,7 @@ title: Add a private GitHub Repository in Cloud Manager
 description: Learn how to set up Cloud Manager to work with your own private GitHub repositories.
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 # Add a private GitHub Cloud repository in Cloud Manager {#private-repositories}
 
@@ -13,9 +13,10 @@ By setting up Cloud Manager to integrate with your private GitHub Cloud (reposit
 >
 >You can also add the following repository types with webhooks:
 >
->* GitHub Enterprise Server (self-hosted version of GitHub) repositories 
->* GitLab (both `gitlab.com` and self-hosted versions of GitLab) repositories 
->* Bitbucket (both `bitbucket.org` and Bitbucket Server, the self-hosted version of BitBucket) repositories 
+>* GitHub Enterprise Server (self-hosted version of GitHub) repositories .
+>* GitLab (both `gitlab.com` and self-hosted versions of GitLab) repositories.
+>* Bitbucket (both `bitbucket.org` and Bitbucket Server, the self-hosted version of BitBucket) repositories. 
+>* Azure DevOps (both [dev.azure.com](http://dev.azure.com) and self-hosted versions of Azure DevOps) repositories.
 >
 >See [Add External Repositories in Cloud Manager - private beta](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
@@ -64,7 +65,7 @@ Configuration of a private GitHub Cloud repository in Cloud Manager consists of 
 
     | Field | Description |
     | --- | --- |
-    | Repository Name | An expressive name for your new repository. | 
+    | Repository Name | An expressive name for your new repository. |
     | Repository URL | The URL of the private repository, which must end in `.git`.<br>For example, *`https://github.com/org-name/repo-name.git`* (URL path is for illustration purposes only).  |
     | Description (optional) | A detailed description of the repository. |
 
@@ -147,12 +148,13 @@ Validated private repositories can be associated with [full-stack and frontend p
 
 
 
-## Usage notes {#usage-notes}
+## Limitations {#limitations}
 
-* Web tier and config pipelines are not supported with private repositories.
+Certain limitations apply when using private repositories with Cloud Manager.
+
 * No Git tag is created and pushed when using private repositories on production full stack pipelines.
 * If the Adobe GitHub app is removed from your GitHub organization, it removes the pull requests validation feature for all repositories.
 * Pipelines using private GitHub Cloud repositories and the "on-commit" build trigger are not started automatically when a new commit is pushed into the selected branch.
 * [Artifact reuse functionality](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) does not apply to private repositories.
-* You cannot pause the pull request validation using the GitHub check from Cloud Manager.
-If the GitHub repository is validated in Cloud Manager, Cloud Manager always tries to validate the pull requests created for that repository.
+* You cannot pause the pull request validation using the GitHub check from Cloud Manager. If the GitHub repository is validated in Cloud Manager, Cloud Manager always tries to validate the pull requests created for that repository.
+* If your GitHub organization enforces IP restrictions, open a support case to obtain the list of IP addresses that must be allowed.

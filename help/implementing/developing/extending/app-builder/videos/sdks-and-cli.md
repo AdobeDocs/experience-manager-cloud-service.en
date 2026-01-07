@@ -4,7 +4,7 @@ description: Learn about the SDKs and CLI used to develop App Builder applicatio
 version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
-role: Developer, Architect
+role: Developer
 level: Beginner
 kt: 9454, 9470
 thumbnail: 339166.jpg

@@ -152,7 +152,7 @@ Let's look closer at the issues Dynamic Media is solving with the one file and s
 | Create and store every asset. | Use a single image file, automatically creating required renditions only at the moment of delivery. |
 | High storage costs. | Eliminates the need to create and store multiple copies of an asset. |
 | Difficulty maintaining chain of custody. | Guarantees delivery of device-optimized and consistent experiences. |
-| No version history. | | 
+| No version history. | |
 | Inconsistent brand experiences across devices. | |
 | Unnecessary cost of duplicate asset creation. | |
 
@@ -173,7 +173,7 @@ Another use case that Dynamic Media solves for is video. Video is complex. It is
 | Difficult to manage and deliver video optimized for various devices. | Use a single video that automatically sizes for all devices. |
 | Videos stall or play in low quality due to user's available bandwidth. | Deliver video through an HTML player that auto-detects available bandwidth and adapts quality to ensure high fidelity and smooth playback. |
 | Unfeasible and time-consuming to manually create all versions of a video just to ensure good display and playback across devices. | Eliminate hours of tedious transcoding work with a simplified workflow. |
-| | Free up time for higher value work. | 
+| | Free up time for higher value work. |
 
 Customers come to Dynamic Media with the following issues that they are hoping to solve:
 

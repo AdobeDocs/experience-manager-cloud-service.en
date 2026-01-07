@@ -16,7 +16,7 @@ Traffic filter rules can be used to block or allow requests at the CDN layer, wh
 
 Many of these traffic filter rules are available to all AEM as a Cloud Service Sites and Forms customers. Referred to as *standard traffic filter rules*, they mainly operate on request properties and request headers, including IP, hostname, path, and user agent. Standard traffic filter rules include rate limit rules to guard against traffic spikes.
 
-A subcategory of traffic filter rules requires either an Enhanced Security license or WAF-DDoS Protection license. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or *WAF rules* for short) and have access to the [WAF Flags](#waf-flags-list) described later in this article.
+A subcategory of traffic filter rules requires either an Extended Security (formerly named WAF-DDoS Protection) or Extended Security for Healthcare (formerly named Enhanced Security) license. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or *WAF rules* for short) and have access to the [WAF Flags](#waf-flags-list) described later in this article.
 
 Traffic filter rules can be deployed via Cloud Manager config pipelines to dev, stage, and production environment types. The configuration file can be deployed to Rapid Development Environments (RDEs) using command line tooling.
 
@@ -76,8 +76,6 @@ The following is a high-level recommended end-to-end process for coming up with 
    ```
    kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      trafficFilters:
        rules:
@@ -107,15 +105,13 @@ The following is a high-level recommended end-to-end process for coming up with 
 
 You can configure *traffic filter rules* to match on patterns such as IPs, user agent, request headers, hostname, geo, and url.
 
-Customers who license the Enhanced Security or WAF-DDoS Protection Security offering can also configure a special category of traffic filter rules called *WAF traffic filter rules* (or *WAF rules* for short) that reference one or more [WAF flags](#waf-flags-list).
+Customers who license the Extended Security (formerly named WAF-DDoS Protection) or Extended Security for Healthcare (formerly named Enhanced Security) offering can also configure a special category of traffic filter rules called *WAF traffic filter rules* (or *WAF rules* for short) that reference one or more [WAF flags](#waf-flags-list).
 
 Here's an example of a set of traffic filter rules, which also includes a WAF rule.
 
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -296,8 +292,6 @@ This rule blocks requests coming from **IP 192.168.1.1**:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
      rules:
@@ -314,8 +308,6 @@ This rule blocks request on path `/helloworld` on publish with a User-Agent that
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -336,8 +328,6 @@ This rule blocks requests on publish that contain the query parameter `foo`, but
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -361,8 +351,6 @@ This rule blocks requests to path `/block-me` on publish, and blocks every reque
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -387,8 +375,6 @@ This rule blocks access to OFAC countries:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -438,13 +424,11 @@ Rate limits are evaluated based on either traffic hitting the edge, traffic hitt
 
 **Example 1**
 
-This rule blocks a client for 5 milliseconds when it exceeds an average of 60 req/sec (per CDN POP) in the last 10 sec:
+This rule blocks a client for 5 minutes when it exceeds an average of 60 req/sec (per CDN POP) in the last 10 sec:
 
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -469,8 +453,6 @@ Block requests on path /critical/resource for 60 seconds when it exceeds an aver
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -506,8 +488,6 @@ The alert property can be applied to the action node for all action types (allow
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -532,8 +512,6 @@ This alert is enabled by default, but it can be disabled using the *defaultTraff
    ```
    kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      trafficFilters:
       defaultTrafficAlerts: false
@@ -572,8 +550,6 @@ The example below shows a sample `cdn.yaml` and two CDN log entries:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   trafficFilters:
     rules:
@@ -660,7 +636,7 @@ Dashboard tooling can be cloned directly from the [AEMCS-CDN-Log-Analysis-Toolin
 
 ## Recommended Starter Rules {#recommended-starter-rules}
 
-Adobe suggests starting with the traffic filter rules below and then refining over time. *Standard rules* are available with a Sites or Forms license, while *WAF rules* require an Enhanced Security or WAF-DDoS Protection license.
+Adobe suggests starting with the traffic filter rules below and then refining over time. *Standard rules* are available with a Sites or Forms license, while *WAF rules* require an Extended Security (formerly named WAF-DDoS Protection) or Extended Security for Healthcare (formerly named Enhanced Security) license.
 
 ### Recommended Standard Rules {#recommended-nonwaf-starter-rules}
 
@@ -674,8 +650,6 @@ Start with these rules:
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev", "stage", "prod"]
 data:
   trafficFilters:
     rules:
@@ -741,8 +715,8 @@ Add the following rules to your existing configuration:
    * After deploying this rule, carefully analyze CDN logs to verify that legitimate requests are not being flagged incorrectly. Once you are confident that no legitimate traffic is impacted, switch to block mode.
 
 >[!NOTE]
-> Our experience indicates that false positives associated with the ATTACK flag are rare. Therefore, it can be a practical strategy to immediately block all suspicious traffic—even if the IP address is not known to be malicious—and subsequently use CDN log analysis to identify and introduce allow rules for legitimate traffic. Each organization should evaluate its own tolerance for risk, weighing the benefits of greater protection against the risk of inadvertently blocking legitimate requests.
 >
+> Our experience indicates that false positives associated with the ATTACK flag are rare. Therefore, it can be a practical strategy to immediately block all suspicious traffic—even if the IP address is not known to be malicious—and subsequently use CDN log analysis to identify and introduce allow rules for legitimate traffic. Each organization should evaluate its own tolerance for risk, weighing the benefits of greater protection against the risk of inadvertently blocking legitimate requests.
 
 ```
     # blocks likely attack traffic, which also comes from suspected IPs
@@ -769,8 +743,7 @@ Add the following rules to your existing configuration:
 
 Prior to July 2025, Adobe recommended the WAF rules listed below, which are still valid and effective in defending against malicious traffic. See the tutorial for considerations around migrating to the new recommended rules.
 
-<details>
-  <summary>Expand to see the legacy recommended WAF rules.</summary>
++++ Expand to see the legacy recommended WAF rules.
 
 ```
     # Enable recommended WAF protections (only works if WAF is licensed enabled for your environment)
@@ -795,7 +768,8 @@ Prior to July 2025, Adobe recommended the WAF rules listed below, which are stil
           - PRIVATEFILE
           - NULLBYTE
 ```
-</details>
+
++++
 
 ## Tutorial {#tutorial}
 
@@ -809,7 +783,3 @@ The tutorials include:
 * Testing your rules using tools to simulate malicious traffic
 * Analyzing results using the Log Analysis Tooling
 * Best practices
-
-
-
-

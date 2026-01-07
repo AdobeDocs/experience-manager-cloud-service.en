@@ -10,8 +10,7 @@ role: Admin
 
 >[!CAUTION]
 >
->* The AEM Content Fragments are exported into the default workspace of Adobe Target.
->* AEM must be integrated with Adobe Target according to the instructions under [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
+>AEM must be integrated with Adobe Target according to the instructions under [Integrating with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 You can export [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md), created in Adobe Experience Manager as a Cloud Service (AEM), to Adobe Target (Target). They can then be used as offers in Target activities, to test and personalize experiences at scale.
 
@@ -64,50 +63,24 @@ Before exporting a fragment you need to add the **Cloud Configuration** for **Ad
 
 * specify the format option(s) to be used for the export
 * select a Target workspace as destination
-* select an externalizer domain for rewriting references in the Content Fragment (optional)
 
-The required options can be selected in **Page Properties** of the required folder, or fragment, or both; the specification is inherited as necessary.
+The required options can be selected in **Properties** of the required folder; the specification is inherited as necessary.
 
 1. Navigate to the **Assets** console.
 
-1. Open **Page Properties** for the appropriate folder or fragment.
+1. Open **Properties** for the appropriate folder.
 
    >[!NOTE]
    >
    >If you add the cloud configuration to the Content Fragment parent folder, the configuration is inherited by all the children.
-   >
-   >If you add the cloud configuration to the Content Fragment itself, the configuration is inherited by all variations.
 
 1. Select the **Cloud Services** tab.
 
-1. Under **Cloud Service Configuration**, select **Adobe Target** from the drop-down list.
+1. Under **Cloud Service Configuration**, select your target configuration from the drop-down list.
 
-   <!-- is this note appropriate? -->
+1. Select your Adobe Target workspace.
 
-   >[!NOTE]
-   >
-   >The JSON format of a Content Fragment offer can be customized. To do this define a customer Content Fragment component and then annotate how to export its properties in the component Sling Model.
-   >
-   >See the core component: [Core Components - Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
-
-1. Under **Adobe Target** select:
-
-   * the appropriate configuration
-   * the required format option
-   * an Adobe Target workspace
-   * if necessary - the externalizer domain
-
-   >[!CAUTION]
-   >
-   >The externalizer domain is optional. 
-   >
-   > An AEM externalizer is configured when you want the exported content to point to a specific *publish* domain. For more details see [Configuring the AEM Link Externalizer](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer).
-   >
-   > Also note that Externalizer Domains are only relevant to the content of the Content Fragment that is sent to Target, and not metadata such as View Offer Content.
-
-   For example, for a folder:
-
-   <!-- need a new screenshot -->
+   For example:
 
    ![Folder - Cloud Services](assets/cf-target-integration-01.png "Folder - Cloud Services")
 
@@ -151,18 +124,18 @@ You can now select the new configuration for editing.
 
    ![config-target-settings-dialog](assets/config-target-settings-dialog.png)
 
-   <!-- Can this still occur?
+<!-- 
+Can this still occur?
 
-   >[!NOTE]
-   >
-   >When configuring A4T with AEM, you may see a Configuration reference missing entry. To be able to select the analytics framework, do the following:
-   >
-   >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
-   >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
-   >1. Set the property **disable** to **false**.
-   >1. Select **Save All**.
-
-   -->
+>[!NOTE]
+>
+>When configuring A4T with AEM, you may see a Configuration reference missing entry. To be able to select the analytics framework, do the following:
+>
+>1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
+>1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
+>1. Set the property **disable** to **false**.
+>1. Select **Save All**.
+-->
 
 1. In the **Adobe Target Settings** dialog, provide values for these properties.
 
@@ -178,9 +151,9 @@ You can now select the new configuration for editing.
 
    * **A4T Analytics Cloud Configuration**: Select the Analytics cloud configuration that is used for target activity goals and metrics. You need this if you are using Adobe Analytics as the reporting source when targeting content.
 
-     <!-- Is this needed?
-     If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
-     -->
+<!-- Is this needed?
+If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
+-->
 
    * **Use accurate targeting:** By default this check box is selected. If selected, the cloud service configuration will wait for the context to load before loading content. See note that follows.
 
@@ -215,7 +188,7 @@ You can now select the new configuration for editing.
      >
      >Accurate targeting means that the cloud service configuration waits for the context to load before loading content. As a result, in terms of performance, accurate targeting may create a few millisecond delay before loading content.
      >
-     >Accurate targeting is always enabled on the author instance. However, on the publish instance you can opt to turn accurate targeting off globally by clearing the check mark next to Accurate Targeting in the cloud service configuration (**http://localhost:4502/etc/cloudservices.html**). You can also still turn accurate targeting on and off for individual components regardless of your setting in the cloud service configuration.
+     >Accurate targeting is always enabled on the author instance. However, on the publish instance you can opt to turn accurate targeting off globally by clearing the check mark next to Accurate Targeting in the cloud service configuration (**`http://localhost:4502/etc/cloudservices.html`**). You can also still turn accurate targeting on and off for individual components regardless of your setting in the cloud service configuration.
      >
      >If you have ***already*** created targeted components and you change this setting, your changes do not affect those components. You must make any changes to those component directly.
 

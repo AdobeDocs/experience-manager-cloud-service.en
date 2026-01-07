@@ -4,7 +4,7 @@ description: Learn how to add your own IP Allow Lists using Cloud Manager.
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Add an IP Allow List {#add-ip-allow-list}
@@ -18,7 +18,9 @@ A user in the **Business Owner** or **Deployment Manager** role can follow these
 
 **To add an IP Allow List:**
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+1. Log into Cloud Manager at [experience.adobe.com](https://experience.adobe.com/experiencemanager/).
+
+1. In the left side menu, click Cloud Manager, then select the appropriate organization.
 
 1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, select the program.
 
@@ -32,7 +34,12 @@ A user in the **Business Owner** or **Deployment Manager** role can follow these
 
 1. In the **Add IP Allow List** dialog box, in the **IP Allow List name** field, enter a name that you want to use to reference the IP Allow List. This name is informational only. Be sure it is descriptive enough to help you identify the list.
 
-1. In the **IP address / CIDR** field, enter an IP or IP CIDR block. Separate multiple blocks with a comma or a tab.
+1. In the **IP address / CIDR** field, enter up to 50 IP addresses or CIDR blocks. You can add them in either of the following ways:
+
+   * One at a time: Type an address, then press `Enter`. Repeat for each additional address.
+   * Multiple at once: Type addresses separated by commas (,) or tabs, then press `Enter` so that each address is recognized individually.
+
+1. After you finish entering the last IP address or CIDR block, press `Enter` to confirm the input. The entry is acknowledged only after you press `Enter`, and the **Save** button becomes active.
 
 1. Click **Save**.
 

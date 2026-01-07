@@ -3,7 +3,7 @@ title: GitHub Check Annotations
 description: Learn how GitHub checks annotate PRs for your private repositories to provide you will helpful feedback.
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # GitHub Check Annotations {#github-annotations}

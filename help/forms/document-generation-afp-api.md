@@ -33,12 +33,13 @@ Generates an AFP (Advanced Function Presentation) file using an XDP template and
 
 ### Authorization
 
-You can either use **BasicAuth** (Admin credentials) for local environments or **BearerAuth** authorization for AEM Cloud instances.
+You can either use **BasicAuth** (Admin credentials) for local environments or **OAuth Server-to-Server** authorization for AEM Cloud instances.
 
 ### Request
 
 **Endpoint:**
-`POST http://<server>:<port>/adobe/forms/document/generate/afp`
+[https://[publish-url].adobeaemcloud.com/adobe/forms/doc/v1/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post
+)
 
 ### Headers
 
@@ -95,4 +96,4 @@ You can download the .yaml file and upload it to Postman to check functionality 
 
 You can save the response and open the saved file in AFP reader to view it.
 
-<!-- ![PDF reader](/help/forms/assets/afp-pdf.png) -->
+![Find IC Docu](/help/forms/interactive-communication/assets/introimg.png)

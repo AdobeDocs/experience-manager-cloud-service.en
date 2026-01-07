@@ -29,6 +29,7 @@ In Adaptive Forms, [!UICONTROL footnote] is used to display the information on h
 ## Footnote in Adaptive Forms {#using-footnote-adaptiveforms}
 
 To add footnote in Adaptive Forms, perform the following steps:
+
 1. Open an Adaptive Form in **Edit** mode.
 1. From the component browser, drag-drop the **[!UICONTROL Text]** component onto the Adaptive Form. 
 1. Select the **[!UICONTROL Text]** component that you added and select ![cmppr](assets/configure-icon.svg) to edit its properties.

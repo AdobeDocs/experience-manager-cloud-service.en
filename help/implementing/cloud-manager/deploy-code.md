@@ -4,7 +4,7 @@ description: Learn how to deploy your code using Cloud Manager pipelines in AEM 
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Deploy your code {#deploy-your-code} 
@@ -77,7 +77,7 @@ The **Stage testing** phase involves the following steps:
 | Product Functional Testing | Cloud Manager pipeline executes tests that run against the stage environment.<br>See also [Product Functional Testing](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing). |
 | Custom Functional Testing | This step in the pipeline is always executed and cannot be skipped. If the build does not produce a test JAR, the test automatically passes.<br>See also [Custom Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing).  |
 | Custom UI Testing | An optional feature that automatically runs UI tests created for custom applications.<br>UI tests are Selenium-based and packaged in a Docker image to offer flexibility in language and frameworks. This approach lets you use Java and Maven, Node and WebDriver.io, or any Selenium-based framework or technology.<br>See also [Custom UI Testing](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing).  |
-| Experience Audit | This step in the pipeline is always executed and cannot be skipped. As a production pipeline is executed, an experience audit step is included after custom functional testing that runs the checks.<ul><li>The pages that are configured are submitted to the service and evaluated.</li><li>The results are informational and show the scores and the change between the current and previous scores.</li><li>This insight is valuable to determine if there is a regression that is introduced with the current deployment.</li></ul>See [Understanding Experience Audit results](/help/implementing/cloud-manager/experience-audit-dashboard.md).</li></ul> |
+| Experience Audit | This step in the pipeline is always executed and cannot be skipped. As a production pipeline is executed, an experience audit step is included after custom functional testing that runs the checks.<ul><li>The pages that are configured are submitted to the service and evaluated.</li><li>The results are informational and show the scores and the change between the current and previous scores.</li><li>This insight is valuable to determine if there is a regression that is introduced with the current deployment.</li></ul>See [Understanding Experience Audit results](/help/implementing/cloud-manager/reports/report-experience-audit.md).</li></ul> |
 
 ![Stage Testing](assets/stage-testing.png)
 

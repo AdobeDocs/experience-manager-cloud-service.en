@@ -11,9 +11,9 @@ In this part of the [onboarding journey](overview.md), you learn how to access C
 
 ## Objective {#objective}
 
-In the previous article in this onboarding journey, [Assigning Team Members to Cloud Manager Product Profiles](assign-profiles-cloud-manager.md), you granted your AEMaaCS team the proper roles. Now learn how to access Cloud Manager so that you can set up your project resources that your team use.
+In the previous article in this onboarding journey, [Assigning Team Members to Cloud Manager Product Profiles](assign-profiles-cloud-manager.md), you granted your AEMaaCS team the proper roles. Now, learn how to access Cloud Manager so that you can set up your project resources that your team intends to use.
 
-Since you completed the previous step in this journey, your team can access Cloud Manager. Cloud Manager is used to create and manage your project resources such as programs and environments.
+Since you completed the previous step in this journey, your team can access Cloud Manager. Cloud Manager is used to create and manage your project resources, such as programs and environments.
 
 After reading this document, you should understand the following:
 
@@ -22,28 +22,43 @@ After reading this document, you should understand the following:
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager is an essential component of AEM as a Cloud Service and serves as the single entry point for your team. It supports customers with enterprise development setups with its purpose-built CI/CD pipelines, which are equipped to ensure thorough testing and highest code quality to deliver exceptional experiences. Cloud Manager provides everything required to get started in a self-service manner including the ability to create your cloud resources and environments.
+Cloud Manager is an essential component of AEM as a Cloud Service and serves as the single entry point for your team. It supports customers with enterprise development setups with its purpose-built CI/CD pipelines, which are equipped to ensure thorough testing and highest code quality to deliver exceptional experiences. Cloud Manager provides everything required to get started in a self-service manner, including the ability to create your cloud resources and environments.
 
-Typically a team member assigned to the **Business Owner** product profile is responsible for adding your cloud resources such as programs and environments. This individual understands the business needs and who completes the initial Cloud Manager setup.
+Typically a team member assigned to the **Business Owner** product profile is responsible for adding your cloud resources, such as programs and environments. This individual understands the business needs and who completes the initial Cloud Manager setup.
 
 For the purposes of this onboarding journey, you, as the system administrator, already assigned yourself to the **Business Owner** product profile and can set up the cloud resources. Depending on actual project requirements, the business owners may or may not be the same as the system administrator.
 
 ## Access Cloud Manager as System Administrator and Business Owner {#access-sysadmin-bo}
 
-Before the team members that you assigned to the **Business Owner** role can access cloud manager and begin creating cloud resources, the system administrator must be assigned the **Business Owner** role. They must also sign into Cloud Manager as you did in the previous step in this onboarding journey.
+Before the team members that you assigned to the **Business Owner** role can access Cloud Manager and begin creating cloud resources, the system administrator must be assigned the **Business Owner** role. They must also sign into Cloud Manager as you did in the previous step in this onboarding journey.
 
 1. Ensure that you, as system administrator, have the **Business Owner** role assigned.
 
-   * Return to the previous step in this journey, [Assign Team Members to Cloud Manager Product Profiles](assign-profiles-cloud-manager.md), for more information about assigning the **Business Owner** role to the system administrator.
+   Return to the previous step, [Assign Team Members to Cloud Manager Product Profiles](assign-profiles-cloud-manager.md), for details on assigning the **Business Owner** role to the system administrator.
 
-1. Sign into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and be presented with the normal landing page.
+1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
+1. In the Quick Access grouping, click **Experience Manager**.
+1. In the left side panel, click **Cloud Manager**.
 
-By successfully signing in as system administrator with the **Business Owner** role, you initialize Cloud Manager for use by the other users with the **Business Owner** role. You do not receive a confirmation or any message. Simply signing in is sufficient.
+   ![Cloud Manager on console](/help/journey-onboarding/assets/consol-cloud-manager.png)
 
-Until you sign in to Cloud Manager as system administrator with the **Business Owner** role, other users with the **Business Owner** role cannot create programs in Cloud Manager. This rule is true even if they are assigned the correct roles.
+A system administrator with the **Business Owner** role must sign in to Cloud Manager first. This initial sign-in enables other users with the **Business Owner** role to create programs; no confirmation appears.
+
+<!--
+By successfully signing in as a system administrator with the **Business Owner** role, you use Cloud Manager for use by the other users with the **Business Owner** role. You do not receive a confirmation or any message. Simply signing in is sufficient.
+
+Until you sign in to Cloud Manager as a system administrator with the **Business Owner** role, other users with the **Business Owner** role cannot create programs in Cloud Manager. This rule is true even if they are assigned the correct roles. -->
 
 ## Navigate to Cloud Manager {#navigate-cloud-manager}
 
+1. Go to [experience.adobe.com/experiencemanager](https://experience.adobe.com/experiencemanager).
+1. In the left side panel, click **Cloud Manager**.
+
+>[!NOTE]
+>
+>Depending on the roles assigned in Cloud Manager and the state of the application, you see different screens while using the Cloud Manager user interface.
+
+<!--
 Users with the **Business Owner** role receive a welcome email with a link to get started. Follow the steps below to navigate to Cloud Manager using this welcome email.
 
 1. From your welcome email, click **Get started**, as shown in the figure below.
@@ -55,9 +70,10 @@ Users with the **Business Owner** role receive a welcome email with a link to ge
    >
    >You can also navigate directly to Cloud Manager's login page from `[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)`. Bookmark this page for future reference.
 
-1. You are directed to Cloud Manager's landing page.
+1. You are directed to Cloud Manager's landing page. -->
 
-Alternatively, you can also navigate to Cloud Manager's **Programs and Products** page from Adobe Experience Cloud home page by following these steps
+<!-- OLD
+Alternatively, you can navigate to Cloud Manager's **Programs and Products** page from the Adobe Experience Cloud home page using these steps.
 
 1. Navigate directly to [Adobe Experience Cloud](https://experience.adobe.com) and login using your Adobe ID.
 
@@ -75,53 +91,53 @@ How you access your programs and products via Cloud Manager is up to you and has
 
 >[!NOTE]
 >
->Depending on the roles assigned in Cloud Manager and the state of the application, you see different screens while using the Cloud Manager user interface.
+>Depending on the roles assigned in Cloud Manager and the state of the application, you see different screens while using the Cloud Manager user interface. -->
 
-## Viewing Programs {#viewing-programs}
+## View programs {#viewing-programs}
 
 After you successfully access Cloud Manager, what you see depends on the state of your programs as detailed in the following sections.
 
-### When No Programs Exist {#no-programs}
+### When no programs exist {#no-programs}
 
 If no programs exist in your organization, then your landing page directs you to create your first program.
 
-![No programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+![No programs](/help/journey-onboarding/assets/cloud-manager-programs-do-not-exist.png)
 
-### When Programs Already Exist {#programs-exist}
+### When programs already exist {#programs-exist}
 
 If programs exist in your organization, then your landing page displays your existing programs and also offers a button to add additional programs.
 
-![Programs exist](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+![Programs exist](/help/journey-onboarding/assets/cloud-manager-programs-exist.png)
 
-### When a Program Exists and You are a System Administrator {#programs-exist-sysadmin}
+### When a program exists and you are a System Administrator {#programs-exist-sysadmin}
 
-If programs exist in your organization and you are a system administrator, then your landing page displays **Manage Access** button along with **Add Program** option.
+If programs exist in your organization and you are a system administrator, then your landing page displays the **Manage Access** button along with the **Add Program** option.
 
-![System administrator view](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+![System administrator view](/help/journey-onboarding/assets/cloud-manager-programs-as-sysadmin.png)
 
-## Verifying Your User Roles {#verify-user-roles}
+## Verify your user roles {#verify-user-roles}
 
-Once you have successfully logged into Cloud Manager, you can verify that you have been assigned the **Business Owner** product profile.
+Once you have successfully logged into Cloud Manager, you can verify that you are assigned the **Business Owner** product profile.
 
-1. Select your profile from the top right of the window.
+1. Near the upper-right corner of the page, click the **Account** icon.
 
-1. To display the roles assigned to your user, select **User Roles**.
+1. Click **User Roles**.
 
-   ![User roles](/help/journey-onboarding/assets/setup-resources6.png)
+   ![User roles](/help/journey-onboarding/assets/cloud-manager-user-roles.png)
 
-1. The dialog should confirm that your user has the **Business Owner** role.
+1. In the **User Roles** dialog box, confirm that your user has the **Business Owner** role.
 
-   ![List of user roles](/help/journey-onboarding/assets/setup-resources7.png)
+   ![List of user roles](/help/journey-onboarding/assets/cloud-manager-user-roles-business-owner.png)
 
-You have successfully logged in to Cloud Manager as a Business Owner! If you are not assigned the **Business Owner** role, contact your system administrator.
+You have successfully logged in to Cloud Manager as a Business Owner. If you are not assigned the **Business Owner** role, contact your system administrator.
 
-## What's Next {#whats-next}
+## What's next {#whats-next}
 
 Now that you can access Cloud Manager as a system administrator, you are ready to create your first program.
 
 Continue your onboarding journey by next reviewing the document [Create a Program](create-program.md) where you learn how to do so.
 
-## Additional Resources {#additional-resources}
+## Additional resources {#additional-resources}
 
 The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
 

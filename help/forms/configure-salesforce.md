@@ -53,6 +53,7 @@ Perform the following steps to configure the [!DNL Salesforce] cloud service:
 A [!DNL Salesforce] Form Data Model (FDM) is available out of the box on the [!DNL AEM Forms] Server after you [set up a development project for Forms based on Experience Manager archetype](setup-local-development-environment.md#forms-cloud-service-local-development-environment).
 
 To access the Form Data Model (FDM):
+
 1. Navigate to **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Data Integrations]**.  
 1. Select the folder name, select the **[!UICONTROL Salesforce Data Model]**, and select the Edit ![Edit](assets/edit.png) icon to view the form data model (FDM).
 

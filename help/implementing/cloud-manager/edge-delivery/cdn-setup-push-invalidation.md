@@ -3,7 +3,7 @@ title: Setup Push Invalidation for an Edge Delivery site
 description: Discover how to configure push invalidation for an Edge Delivery site to ensure efficient content updates and caching control.
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
 ---
 # Setup push invalidation 
@@ -21,6 +21,6 @@ The following configuration properties define the production host's name and the
 | `cdn.prod.host` | `<Production Host>`  | Host name of the production site. For example, `www.example.com`. |
 | `cdn.prod.type` | managed |   |
 
-Once changes are made to the configuration sheet, users must preview and activate them using the [Sidekick tool](/help/edge/docs/sidekick.md) to apply the updates.
+Once changes are made to the configuration sheet, users must preview and activate them using the [Sidekick tool](https://www.aem.live/docs/sidekick) to apply the updates.
 
 See also [About the Edge Delivery to-do list in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list).

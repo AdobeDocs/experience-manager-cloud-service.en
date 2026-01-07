@@ -45,7 +45,7 @@ You can edit the text in place by double-clicking or double-tapping the componen
 
 The thin blue outline turns to a heavy blue outline to indicate select and a cursor appears. Make your changes and then press enter/return or select outside of the text box to save your changes.
 
-When you select to select the text component, its details are shown in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). You can also edit the text in the panel.
+When you select the text component, its details are shown in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). You can also edit the text in the panel.
 
 ![Editing text in the properties panel](assets/ue-editing-text-component-rail.png)
 
@@ -69,11 +69,38 @@ Changes are automatically saved once focus leaves the edited field.
 
 #### The Properties Panel {#properties-rail}
 
-The [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) shows an item for the selected text. Tap the entry to open a dialog presenting a larger canvas to edit the text.
+The [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) shows an entry for the selected rich text component.
+
+![Rich text component in the properties panel](assets/rich-text-properties-panel.png)
+
+Tap the entry to open a dialog presenting a larger canvas to edit the rich text.
 
 ![Rich text editing dialog](assets/rich-text-canvas.png)
 
-Tap or click **Cancel** or **Done** to discard or save the changes, respectively.
+Tap or click **Cancel** or **Done** to discard or save the changes, respectively. You can also press the escape key to save changes and close the dialog.
+
+#### Rich Text Formatting Options {#formatting-options}
+
+The rich text editor (RTE) of the Universal Editor allows the author to apply standard text formatting. By default, the following options are available.
+
+* Paragraph (h1, h2, h3, etc.)
+* Bold
+* Italics
+* Underline
+* Superscript
+* Subscript
+* Bulleted list
+  * Use the tab key to indent and shift+tab to outdent
+* Ordered list
+  * Use the tab key to indent and shift+tab to outdent
+* Link
+* Unlink
+* Image
+* Remove All Formatting
+
+Existing tables can be edited using the RTE, but new tables can not be created.
+
+The RTE can be configured to hide options or show additional options depending on authors' needs. Please see the document [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more information.
 
 ### Editing Media {#edit-media}
 
@@ -166,13 +193,53 @@ The selected component deleted.
 
    ![Reordering components](assets/ue-reordering-components.png)
    
-1. The dragged component turns gray in the content tree, while your insertion point is represented by a blue line. Release the component to place it in its new location.
+1. The dragged component is grayed in the content tree, while your insertion point is represented by a blue line. Release the component to place it in its new location.
 
 The components are reordered in both the content tree and in the editor.
 
 >[!NOTE]
 >
 >Components can only be moved between containers if the target containers [component filter](/help/implementing/universal-editor/filtering.md) allows the selected component.
+
+### Undo and Redo {#undo-redo}
+
+Select the Undo or Redo buttons to undo or redo the last edit in the editor.
+
+![Undo icon](assets/undo.png)
+![Redo icon](assets/redo.png)
+
+* Undoing and redoing can be performed for edits done in context, edits done via the Properties panel, as well as adding, duplicating, moving, and deleting blocks.
+* Undo and redo is limited to the current browser session.
+
+>[!TIP]
+>
+>Use the hot key `Command-Z` or `Shift-Command-Z` to undo or redo, respectively.
+
+### Copy and Paste {#copy-paste}
+
+You can copy and paste components that are within [containers.](/help/implementing/universal-editor/field-types.md#container) This is possible only if the target container has no [filters configured](/help/implementing/universal-editor/filtering.md) or has filters that allow the component to be pasted.
+
+Copy and paste can be on the same browser tab or between browser tabs, provided the tabs are already open. You can not copy an item and then open a new browser tab to paste it.
+
+![Copy icon](assets/copy.png)
+![Paste icon](assets/paste.png)
+
+1. Select a component either within the editor or in the content tree.
+1. The **Copy** icon appears in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) Tap or click it.
+1. The **Paste** icon appears in the properties panel.
+1. Select the component _after_ which you wish to paste the copied component.
+1. Tap or click Paste.
+1. The copied component is pasted _after_ the selected component.
+
+>[!TIP]
+>
+>Use the hot key `Command-C` or `Command-V` to copy or paste, respectively.
+
+## Context Options {#context-options}
+
+When editing in place, the editor will offer context-relevant options with a right-click such as duplicating, deleting, or copying components.
+
+![Context options menu](assets/context-options-menu.png)
 
 ## Previewing Content {#previewing-content}
 

@@ -50,6 +50,7 @@ Understanding SSL/TLS connection problems can sometimes be difficult. To trouble
    ![image](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
 >[!NOTE]
+>
 >This flag is only for debugging SSL issues. Ensure that the flag is disabled before running the extraction, as it may require a large amount of disk space. This could potentially fill the drive capacity and cause the extraction process to fail.
 
 ## Running the Content Transfer Tool {#running-tool}
@@ -95,7 +96,7 @@ The following section applies to the new version of the Content Transfer Tool. F
 
    >[!NOTE]
    >
-   >The name must follow the same conventions of an AEM node so cannot contain any of these characters: `. / : [ ] | * < > ^ ? { } % # `` nor any unusual symbols or emojis.
+   >The name must follow the same conventions of an AEM node so cannot contain any of these characters: `. / : [ ] | * < > ^ ? { } % # ` nor any unusual symbols or emojis.
 
 1. You should now see your migration list in the list view. Select the three dots symbol (**...**) to open the drop-down and select **Copy Extraction key**. You need this key during the Extraction phase. Copy this Extraction key.
 
@@ -142,8 +143,10 @@ To populate the migration set you created in the Cloud Acceleration Manager, ins
       >Starting from CTT Version (3.0.24), new features have been included to the Content Transfer Tool, enhancing the process of including and excluding paths. Previously, paths had to be selected one by one, which was tedious and time-consuming. Now, users can include paths directly from the UI or upload a CSV file according to their preference.  The CSV file must have one path per line, and no commas.
 
    1. **Paths to be included**: Use path browser to select paths which need to be migrated. Path picker accepts input by typing or by selection. Users can select only one option for including paths: either from the UI or by uploading a CSV file.
+
       >[!IMPORTANT]
       >Following paths are restricted while creating a migration set:
+      >
       >* `/apps`
       >* `/libs`
       >* `/home`
@@ -213,7 +216,7 @@ Follow the steps below to run a size check:
  
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/checkSizeAfterFinished.png)
    
- 1. If the **Check Size** results indicate that either there is insufficient disk space, or the migration set exceeds product limits, or both, a **WARNING** status is displayed.
+1. If the **Check Size** results indicate that either there is insufficient disk space, or the migration set exceeds product limits, or both, a **WARNING** status is displayed.
 
 <!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    

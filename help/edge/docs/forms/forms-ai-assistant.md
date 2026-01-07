@@ -3,11 +3,12 @@ title: AI Assistant for AEM Forms (Forms Experience Builder)
 description: Craft powerful forms faster using Form Fragments
 feature: Edge Delivery Services
 hide: yes
+index: no
 hidefromtoc: yes
-role: Admin, Architect, Developer
-exl-id: a8d64082-a23f-4919-ad66-042faad77d29
+role: Admin, Developer
 ---
-# AI Assistant for AEM Forms (Forms Experience Builder)
+
+# Getting started with AI Assistant for AEM Forms (Forms Experience Builder)
 
 >[!NOTE]
 >
@@ -163,6 +164,8 @@ Here are real examples of what you can accomplish with simple, natural language:
 "Update the layout to match the attached wireframe"
 ```
 
+<!-- 
+
 ### Submission and Integration
 
 **Basic submission:**
@@ -180,6 +183,8 @@ Here are real examples of what you can accomplish with simple, natural language:
 "Submit data to our REST API endpoint and trigger the new customer workflow"
 "Email responses to the sales team and add the lead to our marketing automation platform"
 ```
+
+--> 
 
 ## Working with Attachments
 
@@ -274,8 +279,11 @@ Type `/` to see available shortcuts:
 | `/update-field` | Modify field properties | `/update-field @email to be required` |
 | `/create-rule` | Add dynamic behavior | `/create-rule show @spouse if married` |
 | `/create-panel` | Add field containers | `/create-panel Personal Information` |
-| `/configure-submit` | Set up form submission | `/configure-submit to email support` |
 | `/help` | Get assistance | `/help multi-step forms` |
+
+<!-- 
+| `/configure-submit` | Set up form submission | `/configure-submit to email support` |
+--> 
 
 ### Field Reference Syntax
 
@@ -338,4 +346,4 @@ Help us improve the AI Assistant:
 
 ## Related Resources
 
-[AEM Forms AI Assistant - Prompt Library](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+[AEM Forms AI Assistant - Prompt Library](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)

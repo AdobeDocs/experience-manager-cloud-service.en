@@ -1,6 +1,7 @@
 ---
 title: Deprecated and Removed Features
 description: Release notes specific to deprecated and removed features in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
@@ -30,7 +31,7 @@ The functionality in the table below have been announced as deprecated, but have
 | ------------ | ------------------ | ----------- |
 | Sites | [Content Fragment Support in Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | [Content Fragment Delivery with OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>together with<br> [Content Fragments and Content Fragment Models Management OpenAPIs](/help/headless/content-fragment-openapis.md) |
 |Sites|[PWA Features](/help/sites-cloud/authoring/sites-console/enable-pwa.md)|None|
-|Sites|[SPA Editor](/help/implementing/developing/hybrid/introduction.md)|The preferred editors for managing headless content in AEM are:<br>- [The Universal Editor](/help/edge/wysiwyg-authoring/authoring.md) for visual editing.<br>- [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing.|
+|Sites|[SPA Editor](/help/implementing/developing/hybrid/introduction.md)|The preferred editors for managing headless content in AEM are:<br>- [The Universal Editor](https://www.aem.live/docs/aem-authoring) for visual editing.<br>- [The Content Fragment Editor](/help/assets/content-fragments/content-fragments-managing.md) for form-based editing.|
 |[!DNL Sites]|[JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api)|[Java Use API](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api)|
 | [!DNL Sites]       | Experience Fragments properties for **Social Media Status**. | The feature is planned for removal soon. |
 |Sites|[Experience Cloud Setup Automation](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)|None|
@@ -453,18 +454,18 @@ Properties for the following OSGi component PIDs cannot be modified, therefore t
 
 | **OSGI component ID**| **Unmodifiable Properties** |
 |---|---|
-| **`com.day.cq.auth.impl.cug.CugSupportImpl`** |
+| **`com.day.cq.auth.impl.cug.CugSupportImpl`** ||
 | **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | all |
 | **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | all |
 | **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | all |
-| **`org.apache.sling.feature.apiregions.impl`** | all | 
+| **`org.apache.sling.feature.apiregions.impl`** | all |
 | **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | all |
 | **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | all |
-| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | all | 
-| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | all | 
-| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | all | 
-| **`org.apache.sling.feature.apiregions.factory`** | all | 
-| **`com.adobe.granite.toggle.monitor.systemproperty`** | all | 
+| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | all |
+| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | all |
+| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | all |
+| **`org.apache.sling.feature.apiregions.factory`** | all |
+| **`com.adobe.granite.toggle.monitor.systemproperty`** | all |
 
 
 ### Future enforced OSGi property restrictions {#future-restrictions-osgi-properties}
@@ -485,7 +486,7 @@ In the future, Adobe will enforce the following OSGi properties restrictions. Fo
 |   |  `oauth.flow` |   |  boolean |   |
 |  `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` |  Yes | string  | either "INFO", "DEBUG" or "TRACE"  |
 |   |  `org.apache.sling.commons.log.names` |   | array of strings  |   |
-|   |  `org.apache.sling.commons.log.additiv` |   | boolean  |   | 
+|   |  `org.apache.sling.commons.log.additiv` |   | boolean  |   |
 |  `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` |  No | string[]  |   |
 |   | `externalizer.encodedpath` |  No | boolean |   |
 |   | `externalizer.host` |  No | string |   |

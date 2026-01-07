@@ -3,7 +3,7 @@ title: Manage Publication
 description: Publish or unpublish assets to Experience Manager Assets, Dynamic Media, and Brand Portal
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-role: User, Architect, Admin
+role: User, Developer, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
 ---
 # Manage publication in Experience Manager Assets {#manage-publication-in-aem}

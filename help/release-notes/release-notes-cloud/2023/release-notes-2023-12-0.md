@@ -102,6 +102,7 @@ You can now can easily find content by selecting an image and viewing similar im
 ### Domain Mapping Early Adopter Program {#cdn-config-early-adopter}
 
 In addition to the recently released [Traffic Filter Rules](/help/security/traffic-filter-rules-including-waf.md), which includes the optionally licensable Web Application Firewall (WAF) rules, there's an opportunity to use the Configuration Pipeline to declare and deploy other types of CDN configuration. We'd love to hear about your use cases, including:
+
 * 301/302 client-side redirects
 * proxying requests at the edge to arbitrary origins
 * URL transformations

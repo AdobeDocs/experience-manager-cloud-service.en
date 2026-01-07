@@ -4,7 +4,7 @@ description: Learn about the three different types of functional testing built i
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 ---
 
 # Introduction {#functional-testing-introduction}
@@ -12,7 +12,7 @@ role: Admin, Architect, Developer
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="Functional Testing"
->abstract="Learn about the three different types of functional testing built into the AEM as a Cloud Service deployment process to ensure the quality and reliability of your code."
+>abstract="Learn about the three different types of functional testing built into the AEM as a Cloud Service deployment process. The testing ensures the quality and reliability of your code."
 
 Discover the quality gates available in the [AEM as a Cloud Service deployment process](/help/implementing/cloud-manager/deploy-code.md) and the various types of built-in functional testing. Learn how you can contribute and optimize their use within the framework of a comprehensive testing strategy.
 
@@ -105,7 +105,7 @@ The experience audit quality gate is performing [Google Lighthouse](https://deve
 
 This quality gate is provided by AEM out-of-the-box, but is not blocking the deployment pipelines. By default, an audit against the root page (`/`) of the publish instance is performed. You can contribute by configuring up to 25 custom paths that are considered for audits.
 
-See [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-dashboard.md) for more information.
+See [Experience Audit Testing](/help/implementing/cloud-manager/reports/report-experience-audit.md) for more information.
 
 ### Customer validations
 

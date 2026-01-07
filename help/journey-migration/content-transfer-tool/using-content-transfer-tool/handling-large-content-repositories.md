@@ -190,6 +190,9 @@ Any blobs that were copied before the error are skipped automatically by AzCopy 
 >[!TIP]
 >An ingestion can now be scheduled to start automatically immediately after an extraction succeeds. See [Ingesting Content into Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) for more information.
 
+>[!TIP]
+>If the blob transfer with AzCopy progressed for a while but then failed for only some blobs, rerun the extraction with both the PreCopy and Overwrite Staging Container options unchecked. This will migrate only the remaining blobs that were not transferred previously.
+
 #### For File Data Store {#file-data-store-extract}
 
 When AzCopy is running for source file dataStore, you should see messages like these in the logs indicating that folders are getting processed:
