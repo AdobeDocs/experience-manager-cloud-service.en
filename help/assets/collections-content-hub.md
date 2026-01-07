@@ -190,3 +190,4 @@ You can mark Collections as Favorite in Content Hub, making it easier to organiz
     Collections marked as Favorites now display under **[!UICONTROL My Favorites]** tab. Alternatively, you can remove the Collections from **[!UICONTROL My Favorites]**. To do this, click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Remove from Favorites]**.
 
     ![Remove Collection as Favorite](assets/remove-favorite-collection.png)
+
