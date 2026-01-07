@@ -43,6 +43,7 @@ Data integration supports OAuth2.0([Authorization Code](https://oauth.net/2/gran
 ### Prerequisites
 
 Before configuring relational databases using [!DNL Experience Manager] Web Console Configuration, it is mandatory to:
+
 * [Enable advanced networking through the cloud manager API](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html), as ports are disabled by default.  
 * [Add JDBC driver dependencies in Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
 
@@ -100,7 +101,7 @@ You can configure relational databases using [!DNL Experience Manager] Web Conso
 
 > ![NOTE]
 >
-> Replace placeholders like `<application folder>, `<hostname>`, `<database>`, `<your-db-username>`, and `<your-db-password>` with actual values.
+> Replace placeholders like `<application folder>`, `<hostname>`, `<database>`, `<your-db-username>`, and `<your-db-password>` with actual values.
 
 **Step 4: Commit and Push the Changes**
 
