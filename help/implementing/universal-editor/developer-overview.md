@@ -112,7 +112,7 @@ The login token cookie is sent to AEM as a third-party domain. Therefore the sam
 
    ![OSGi property for same-site cookies](assets/dev-cross-origin-osgi.png)
 
-1. Change the property **SameSite attribute for the login-token cookie** to `None`.
+1. Change the property **SameSite attribute for the login-token cookie** to `Partitioned`.
 
 1. Save the changes.
 
