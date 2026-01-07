@@ -40,6 +40,10 @@ Consider the steps below to create a new Metadata Schema Form:
 
 1. Select `+` to add a new tab.
 
+Watch this video to view the sequence of steps:
+
+>[!VIDEO](https://video.tv.adobe.com/v/341275)
+
 ### Modify an existing Metadata Schema Form {#modify-existing-metadata-schema-form}
 
 Consider the steps below to modify an existing Metadata Schema Form:
@@ -76,7 +80,7 @@ Consider the steps below to modify an existing Metadata Schema Form:
    >
    >You can apply **[!UICONTROL Requirement]** condition and **[!UICONTROL Visibility]** condition independent of each other.
    
-1. Select **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value on which to create the dependency. Select **[!UICONTROL Done]** to save the changes.
+1. Select **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value on which to create the dependency. This field displays only drop-down fields as options. Select **[!UICONTROL Done]** to save the changes.
 
    ![define rule](assets/define-rule.png)
 
