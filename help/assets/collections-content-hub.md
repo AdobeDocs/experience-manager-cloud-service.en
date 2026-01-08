@@ -130,7 +130,7 @@ Learn how to [download an asset from the [!DNL Content Hub]](download-assets-con
 
 ## Share assets available within a collection {#share-assets-available-within-collection}
 
-You can also share the assets available within a collection. Ensure to [enable public link sharing in Content Hub](share-assets-content-hub.md
+You can also share the assets available within a collection. Ensure to [enable public link sharing in Content Hub](configure-content-hub-ui-options#configure-collections-content-hub
 ). Navigate to the **[!UICONTROL Collections]** tab. Select the ![share icon](assets/share.svg) icon on the asset card. The share link is copied. You can share the copied link with the recipient. Learn more about [sharing assets in the [!DNL Content Hub]](share-assets-content-hub.md).
 
 Content Hub Collections provides comprehensive governance tools for effective asset management, including customizable sharing permissions and collaboration features. From read-only access to full administrative control, these settings support fine governance over asset distribution. When sharing an asset either individually or as part of a collection, the scope of access is determined by the collection's current access level assigned to the user. Alternatively, you cannot share a private collection.
