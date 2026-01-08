@@ -16,29 +16,28 @@ AEM Forms APIs are structured and accessed through two primary consoles:
 
 * [Adobe Developer Console (ADC)](https://developer.adobe.com/developer-console/) - Adobe Developer Console is the gateway to Adobe APIs, Events, Runtime and App Builder.
   
-* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console provides tools for debugging and inspecting AEM as a Cloud Service environments.
+* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - The AEM Developer Console provides tools for debugging and inspecting AEM as a Cloud Service environments.
 
 Each console provides access to different APIs and services for document processing, generation, conversion, encryption, and communication tasks. The APIs support different [authentication methods](#authentication-methods).
 
 ## Authentication Methods
 
-APIs support multiple authentication methods for secure integration between your applications and Adobe services:
+APIs use different authentication methods depending on the API generation. Older or legacy APIs use JWT authentication through the AEM Developer Console, while newer APIs support OAuth Server-to-Server authentication through Adobe Developer Console.
 
-| Aspect | OAuth Server-to-Server (Recommended)| JWT (JSON Web Token)|
+| Aspect | OAuth Server-to-Server | JWT (JSON Web Token)|
 |-------------|------------------------------------------|---------------------------|
-| Description | Modern and secure method for API access without user interaction. | Older method using signed tokens for access. |
+| Description | Modern, secure authentication designed for service integrations. | Legacy authentication model based on signed tokens. |
 | Setup Location | Adobe Developer Console and AEM Developer Console | AEM Developer Console only |
 | Security | High – uses client credentials and scopes | Moderate – depends on key management |
 | Scalability | Highly scalable for backend integrations | Limited, suited for legacy use |
 | Token Management | Automatic generation and renewal | Manual token signing and rotation |
-| Status | Recommended | Deprecated |
 
 
 >[!NOTE]
 >
 > Click the below links to know more about:-
 > 
-> * [OAuth Server-to-Server (Recommended)](/help/forms/oauth-api-authetication.md)
+> * [OAuth Server-to-Server](/help/forms/oauth-api-authetication.md)
 > * [JWT (JSON Web Token)](/help/forms/jwt-api-authentication.md) 
 
 <!--### Execution Models
@@ -66,7 +65,7 @@ All AEM Forms APIs are divided into two main parts:
 |--------------|----------------------------|--------------------------|
 | Purpose | Handle Adaptive Form delivery and runtime operations | Document generation and manipulation |
 | Use Cases | - Form rendering<br>- Data prefill<br>- Form submissions<br>- Draft management | - PDF generation<br>- Document merging<br>- Batch processing<br>- Print operations |
-| Authorization Method | Supports OAuth Server-to-Server / User authentication methods. | Supports only OAuth Server-to-Server authentication. |
+| Authorization Method | Supports OAuth Server-to-Server / User authentication methods. | Supports server to server authentication, either JWT or OAuth depending on the API. An API cannot support both authnetication methood. |
  
 ### AEM Forms Communications APIs 
 
