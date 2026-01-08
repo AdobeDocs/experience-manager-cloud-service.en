@@ -82,7 +82,7 @@ To add a webhook:
 
 >[!NOTE]
 >
-> Ensure that the Technical Account is a member of the **forms-users** group; otherwise, adding a webhook fails.
+> Ensure that the Technical Account is a member of the **forms-users** group; otherwise, adding a webhook fails. To add the technical account to the forms-users group in AEM, [click here](#add-technical-account-to-the-forms-users-group).
 
 #### Add a connection to a webhook {#add-connection}
 
@@ -191,6 +191,27 @@ To configure submit action of an Adaptive Form authored using Universal Editor:
 1. Click **[!UICONTROL Save&Close]**.
 
 >[!ENDTABS]
+
+## Add technical account to the forms-users group
+
+To add the Technical Account to `forms-users` Group in AEM, perform the following steps:
+
+1. Go to **Tools** > **Security** > **Users**.
+1. In the list of users, locate the technical account email for your organization. For example, let's search for the user as `Workfront-test`.
+1. Click on the user to view the user details.
+1. In the user details, select the **Groups** tab.
+1. Select `forms-users` from the **[!UICONTROL Select Group]** drop-down list.
+1. Click **Save & Close**.
+
+![Add technical account to group](/help/forms/assets/add-technical-account.png)
+
+You can also verify the Group membership for the user:
+
+1. Go to **Tools** > **Security** > **Groups**.
+1. Search for the `forms-users` group.
+1. Open the group and go to the **Members** tab and confirm that the the user appears in the list of group members.
+
+![verify-group](/help/forms/assets/verify-group.png)
 
 ## Best Practices {#best-practices}
 
