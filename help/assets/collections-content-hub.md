@@ -7,7 +7,6 @@ exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
 
 # Manage collections in [!DNL Content Hub] {#manage-collections}
 
-<!-- ![Manage collections](assets/manage-collections.jpg) -->
 ![Manage collections](assets/manage-collection.png)
 
 A collection refers to a set of assets that can be shared among users. A collection can include assets from different locations while maintaining their referential integrity.
