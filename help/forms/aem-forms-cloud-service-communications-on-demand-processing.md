@@ -8,11 +8,9 @@ hidefromtoc: yes
 index: no
 ---
 
-# AEM Forms as a Cloud Service Communications Synchronous APIs Processing
+# Configuring OAuth Server-to-Server Access for AEM Forms Communications Synchronous APIs
 
-This guide provides comprehensive instructions for setting up and using AEM Forms Communications Synchronous APIs. 
-
-Learn how to configure your AEM as a Cloud Service environment, enable API access, and invoke communications APIs using the OAuth Server-to-Server authentication.
+This guide provides instructions for configuring and invoking AEM Forms Communications Synchronous APIs that are accessed through the Adobe Developer Console using OAuth Server-to-Server authentication.
 
 ## Prerequisites
 
@@ -26,7 +24,6 @@ Make sure you have the required access rights and permissions before you start c
 
 - Adobe ID created at [https://account.adobe.com/](https://account.adobe.com/)
 - Adobe ID associated with your organization's email
-- Adobe Managed Services product context assigned
 - Developer role assigned in the Adobe Admin Console
 - Permission to create projects in the Adobe Developer Console
  
@@ -77,7 +74,57 @@ To update the AEM instance:
 
         ![Update Environment](/help/forms/assets/update-env.png)
 
-### Step 2: Clone Git Repository
+### Step 2: Access AEM Cloud Service Environment and AEM Forms Endpoint 
+
+Access your AEM Cloud Service environment details to obtain the URLs and identifiers needed for API configuration. 
+
+1. **Access and View AEM Cloud Service Environment**
+
+    You can view or access the AEM Cloud Service Environment details using either of the two options:
+
+   - **Option 1: From Overview Page**
+     
+     1. On the **Program Overview** page
+     2. Click **"Environments"** in the left side menu.  You can see a list of all environments
+
+        ![View All Environments](/help/forms/assets/all-env.png)
+
+     3. Click on the specific environment name to view details
+
+        ![Option1-Environment Details](/help/forms/assets/option1-env.png)
+
+   - **Option 2: From Environments Section**
+   
+      1. On the Program Overview page
+      2. Locate the **Environments** section
+      3. Click **"Show All"** to view all environments
+      4. Click the **ellipsis menu (...)** next to the environment
+            ![Option1-Environment Details](/help/forms/assets/option2-env-details.png)
+      5. Select **"View Details"**
+
+            ![Option1-Environment Details](/help/forms/assets/option1-env.png)
+
+2. **Find Your AEM Forms Endpoint**
+
+    From the **Environment** details page, note the following details:
+
+    **Author Service URL**
+
+      - URL: `https://author-pXXXXX-eYYYYY.adobeaemcloud.com`
+      - Bucket: author-pXXXXX-eYYYYY
+        Example: `https://author-p43162-e177398.adobeaemcloud.com`
+
+    **Publish Service URL**
+
+      - URL: `https://publish-pXXXXX-eYYYYY.adobeaemcloud.com`
+      - Bucket: publish-pXXXXX-eYYYYY
+    Example: `https://publish-p43162-e177398.adobeaemcloud.com`
+
+>[!NOTE]
+>
+> To see how to access the Access AEM Cloud Service Environment and AEM Forms Endpoint, see [Managing Environments Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
+
+### Step 3: Clone Git Repository
 
 Clone the Cloud Manager Git Repository to manage your API configuration files.
 
@@ -129,63 +176,6 @@ Adobe Cloud Manager supports both repository options:
   - Configure sync with Adobe Cloud Manager
 
 To learn more on how to integrate Adobe Cloud Manager and Adobe Cloud Manager, see [Git Integration Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/git-integration.html).
-
-### Step 3: Access AEM Cloud Service Environment and AEM Forms Endpoint 
-
-Access your AEM Cloud Service environment details to obtain the URLs and identifiers needed for API configuration. 
-
-1. **Log into Adobe Cloud Manager**
-   1. Navigate to [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
-   2. Log in with your Adobe ID
-
-2. **Navigate to the Program Overview**
-    Select your program from the list. You are redirected to the Program Overview page
-
-3. **Access and View AEM Cloud Service Environment**
-
-    You can view or access the AEM Cloud Service Environment details using either of the two options:
-
-   - **Option 1: From Overview Page**
-     
-     1. On the **Program Overview** page
-     2. Click **"Environments"** in the left side menu.  You can see a list of all environments
-
-        ![View All Environments](/help/forms/assets/all-env.png)
-
-     3. Click on the specific environment name to view details
-
-        ![Option1-Environment Details](/help/forms/assets/option1-env.png)
-
-   - **Option 2: From Environments Section**
-   
-      1. On the Program Overview page
-      2. Locate the **Environments** section
-      3. Click **"Show All"** to view all environments
-      4. Click the **ellipsis menu (...)** next to the environment
-            ![Option1-Environment Details](/help/forms/assets/option2-env-details.png)
-      5. Select **"View Details"**
-
-            ![Option1-Environment Details](/help/forms/assets/option1-env.png)
-
-4. **Find Your AEM Forms Endpoint**
-
-    From the **Environment** details page, note the following details:
-
-    **Author Service URL**
-
-      - URL: `https://author-pXXXXX-eYYYYY.adobeaemcloud.com`
-      - Bucket: author-pXXXXX-eYYYYY
-        Example: `https://author-p43162-e177398.adobeaemcloud.com`
-
-    **Publish Service URL**
-
-      - URL: `https://publish-pXXXXX-eYYYYY.adobeaemcloud.com`
-      - Bucket: publish-pXXXXX-eYYYYY
-    Example: `https://publish-p43162-e177398.adobeaemcloud.com`
-
->[!NOTE]
->
-> To see how to access the Access AEM Cloud Service Environment and AEM Forms Endpoint, see [Managing Environments Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
 
 ### Step 4: API Access Configuration
 
@@ -256,19 +246,20 @@ You can add different AEM Forms Communications APIs depending on your requiremen
 
 #### 4.3 Add Product Profile
 
+Product profile provides permissions (or authorization) for credentials to access the AEM resources. Select the appropriate **Product Profile** based on the use case:
+   
+| Use case | What the API needs to do | Product profile to select |
+|---------|-------------|-----|
+| View or read content only | Fetch forms, read content, no changes | AEM Users – author – Program XXX – Environment XXX |
+|Work with  | Create / modify forms, collaborate | AEM Forms Collaborator Users – author – Program XXX – Environment XXX |
+| Administration or configuration | Configure services, manage users, advanced operations | AEM Administrators – author – Program XXX – Environment XXX |
+
+
 Follow these steps to add the Product Profile:
 
-1. Select the appropriate **Product Profile** based on required access level:
-   
-    | Access Type | Product Profile|
-    |------------------|----------------------|
-    | Read-Only Access | `AEM Users - author - Program XXX - Environment XXX` |
-    | Read/Write Access | `AEM Assets Collaborator Users - author - Program XXX - Environment XXX` |
-    | Full Administrative Access | `AEM Administrators - author - Program XXX - Environment XXX` |
+1. Select the **Product Profile** that matches your Author Service URL (`https://author-pXXXXX-eYYYYY.adobeaemcloud.com`). For example: select `https://author-pXXXXX-eYYYYY.adobeaemcloud.com`. 
 
-2. Select the **Product Profile** that matches your Author Service URL (`https://author-pXXXXX-eYYYYY.adobeaemcloud.com`). For example: select `https://author-pXXXXX-eYYYYY.adobeaemcloud.com`. 
-
-3. Click **Save configured API**. The API and Product Profile are added to your project
+2. Click **Save configured API**. The API and Product Profile are added to your project
 
     ![Select Project Configuration](/help/forms/assets/adc-add-product-profile.png)
 

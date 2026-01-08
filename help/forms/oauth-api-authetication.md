@@ -8,16 +8,16 @@ hidefromtoc: yes
 index: no
 ---
 
-# OAuth Server-to-Server Authentication -Recommended
+# OAuth Server-to-Server Authentication 
 
-OAuth Server-to-Server Authentication allows secure, token-based access to AEM Forms Communications APIs without requiring user interaction. This method is ideal for automated systems, backend services, and integrations that need to authenticate programmatically.
+OAuth Server-to-Server Authentication allows secure, token-based access to AEM Forms Communications APIs without requiring user interaction. 
 
 ## Prerequisites
 
 Before you begin, make sure the following prerequisites are met:
 
-* Ensure that you have access to the [Adobe Developer Console](https://developer.adobe.com/console) specific to the environment you use.
-* Assign the System Administrator or Developer role in the Adobe Admin Console to enable access to the Adobe Developer Console.
+* Ensure that you have [access to the Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights) specific to the environment you use.
+* [Assign the System Administrator or Developer role in the Adobe Admin Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions) to enable access to the Adobe Developer Console. 
 
 ## How to Generate an Access Token Using OAuth Server-to-Server Authentication?
 
@@ -63,9 +63,12 @@ Follow the steps below which shows you how to generate an access token from the 
         > ![Add API to existing Project](/help/forms/assets/add-api-existing-project.png)
         > To add API and authentication method, perform the same steps as explained below for your existing project.
 
-4. Add different AEM Forms Communications APIs depending on your requirements.
+4. Add AEM Forms Communications APIs based on what you want to do:
+   
+   * **Document Services APIs**: use when you need to generate, convert, assemble, or secure documents (PDF and related formats).
+   * **Adaptive Forms Runtime APIs** – use when you need to render, submit, or process Adaptive Forms at runtime.
 
-    **A. For Document Services APIs**
+    **A. For Document Services APIs** 
 
    1. Click **Add API** 
 
@@ -103,13 +106,19 @@ Follow the steps below which shows you how to generate an access token from the 
 
 5. **Add Product Profile**:
 
-   1. Select the appropriate **Product Profile** based on required access level:
+Product profile provides permissions (or authorization) for credentials to access the AEM resources.
+
+>![NOTE]
+>
+> Product profiles are tied to a specific AEM instance (program + environment). Always choose the profile that matches your Author URL.
+
+   1. Select the appropriate **Product Profile** based on the use case:
    
-        | Access Type | Product Profile|
-        |------------------|----------------------|
-        | Read-Only Access | `AEM Users - author - Program XXX - Environment XXX` |
-        | Read/Write Access | `AEM Assets Collaborator Users - author - Program XXX - Environment XXX` |
-        | Full Administrative Access | `AEM Administrators - author - Program XXX - Environment XXX` |
+        | Use case | What the API needs to do | Product profile to select |
+        |---------|-------------|-----|
+        | View or read content only | Fetch forms, read content, no changes | AEM Users – author – Program XXX – Environment XXX |
+        |Work with  | Create / modify forms, collaborate | AEM Forms Collaborator Users – author – Program XXX – Environment XXX |
+        | Administration or configuration | Configure services, manage users, advanced operations | AEM Administrators – author – Program XXX – Environment XXX |
 
    2. Select the **Product Profile** that matches your Author Service URL (`https://author-pXXXXX-eYYYYY.adobeaemcloud.com`). For example: select `https://author-pXXXXX-eYYYYY.adobeaemcloud.com`. 
 
@@ -117,7 +126,7 @@ Follow the steps below which shows you how to generate an access token from the 
 
         ![Select Project Configuration](/help/forms/assets/adc-add-product-profile.png)
 
-6. Generate and Save Credentials
+1. Generate and Save Credentials
 
    1. Navigate to your project in Adobe Developer Console
    2. Click on **OAuth Server-to-Server** credential
@@ -137,7 +146,7 @@ Follow the steps below which shows you how to generate an access token from the 
         Scopes: AdobeID,openid,read_organizations
         ```
 
-7. Access Token Generation
+2. Access Token Generation
 
     **A. For Testing**
 
@@ -199,6 +208,29 @@ You can now use the generated access token to make API call for development, sta
 >[!NOTE]
 >
 > To know more about OAuth Server-to-Server implementation to generate access token and make API calls, [click here](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation).
+
+## Best practices: Managing credentials for Development, Staging, and Production
+
+* Always use separate OAuth credentials for Development, Staging, and Production.
+
+* Never reuse the same Client ID / Client Secret across environments.
+
+* Clearly label credentials so the environment is obvious (for example: dev, stage, prod).
+
+* Map each credential to the correct AEM environment URL.
+
+* Store secrets securely and never commit them to source control.
+
+* Use Cloud Manager environment variables or secure vaults for secrets.
+
+* Rotate production secrets regularly and restrict who can access them.
+
+* Test credentials in Dev → Stage → Production, not directly in Production.
+
+* Use environment-specific OSGi configurations (when needed) instead of hard-coding values.
+
+* Audit credentials and access permissions periodically.
+
 
 ## Next Steps
 
