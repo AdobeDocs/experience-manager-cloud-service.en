@@ -51,6 +51,7 @@ The 2026.1.0 feature activation will provide the full feature set for this maint
 * CQ-4361599: Fixed skipping of Content Fragments from Translation Jobs after 2025.7 upgrade.
 * CQ-4360747: Fixed Repeatable Translation Jobs create empty payloads & trigger too often (NullPointerException in ScheduleRepeatTranslationProject).
 * CQ-4359994: Fixed destinationLanguage field type inconsistency for single and multi-language project.
+* FORMS-23557: Rhino update causes `*.js` cannot be correctly instantiated by the Use API.
 * SITES-38153: Fix cf publish reference provider for uuid based references.
 * SITES-37594: Performance improvements for model by tags functionality.
 * SITES-37337: FragmentCreateProcessor: provide additional error details in logs.
