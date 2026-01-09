@@ -20,7 +20,10 @@ These are the release notes for the 15 January 2026 release of the Universal Edi
 
 ## What's New {#what-is-new}
 
-* Support for setting and persisting default values of model fields has been added.
+* Support for setting and persisting [default values of model fields has been added.](/help/implementing/universal-editor/field-types.md)
+  * If no value is set, the Universal Editor will persist whatever is defined as `value` in the model definition.
+  * This ensures that what you see will match what is persisted in the backend.
+  * This is a breaking change.
 
 ## Early Adoption Features {#early-adopter}
 
