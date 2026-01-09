@@ -12,6 +12,10 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 23862 {#23862}
 
+>[!CAUTION]
+>
+> Release 23862 has been made private. A new maintenance release will be provided soon.
+
 Summarized below are the continuous improvements for maintenance release 23862, which was publicly released on December 23, 2025. The previous maintenance release was release 23482.
 
 The 2026.1.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
