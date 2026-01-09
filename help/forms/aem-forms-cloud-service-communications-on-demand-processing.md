@@ -69,46 +69,50 @@ In this, example let us generate an PDF using the Forms Communication APIs using
 
 Access your AEM Cloud Service environment details to obtain the URLs and identifiers needed for API configuration. 
 
-1. **Log into Adobe Cloud Manager**
-   1. Navigate to [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
-   2. Log in with your Adobe ID
+#### 1. Log into Adobe Cloud Manager
+   
+1. Navigate to [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+2. Log in with your Adobe ID
 
-2. **Navigate to the Program Overview**
-   1. Select your program from the list. You are redirected to the **Program Overview** page
+#### 2. Navigate to the Program Overview
+   
+1. Select your program from the list. You are redirected to the **Program Overview** page
 
-3. **Access and View AEM Cloud Service Environment**
+#### 3. Access and View AEM Cloud Service Environment
 
-    You can view or access the AEM Cloud Service Environment details using either of the two options:
+You can view or access the AEM Cloud Service Environment details using either of the two options:
 
-    >[!BEGINTABS]
+>[!BEGINTABS]
 
-    >[!TAB Option 1: From Overview Page]
+>[!TAB Option 1: From Overview Page]
 
-     1. On the **Program Overview** page
-     2. Click **"Environments"** in the left side menu.  You can see a list of all environments
+1. On the **Program Overview** page
+2. Click **"Environments"** in the left side menu.  You can see a list of all environments
 
-        ![View All Environments](/help/forms/assets/all-env.png)
+    ![View All Environments](/help/forms/assets/all-env.png)
 
-     3. Click the specific environment name to view details
+3. Click the specific environment name to view details
 
-        ![Option1-Environment Details](/help/forms/assets/option1-env.png)
+    ![Option1-Environment Details](/help/forms/assets/option1-env.png)
 
-    >[!TAB Option 2: From Environments Section]
+>[!TAB Option 2: From Environments Section]
   
-      1. On the Program Overview page
-      2. Locate the **Environments** section
-      3. Click **"Show All"** to view all environments
-      4. Click the **ellipsis menu (...)** next to the environment
-            ![Option1-Environment Details](/help/forms/assets/option2-env-details.png)
-      5. Select **"View Details"**
+1. On the Program Overview page
+2. Locate the **Environments** section
+3. Click **"Show All"** to view all environments
+4. Click the **ellipsis menu (...)** next to the environment
+   
+    ![Option1-Environment Details](/help/forms/assets/option2-env-details.png)
 
-            ![Option1-Environment Details](/help/forms/assets/option1-env.png)
+5. Select **"View Details"**
 
-    >[!BEGINTABS]
+    ![Option1-Environment Details](/help/forms/assets/option1-env.png)
 
-4. **Find Your AEM Forms Endpoint**
+>[!BEGINTABS]
 
-    From the **Environment** details page, note your AEM URL instance.
+#### 4. Find Your AEM Forms Endpoint
+
+From the **Environment** details page, note your AEM URL instance.
 
 >[!NOTE]
 >
@@ -118,115 +122,117 @@ Access your AEM Cloud Service environment details to obtain the URLs and identif
 
 Clone the Cloud Manager Git Repository to manage your API configuration files.
 
-1. **Locate the Repository Section**
-   1. On the **Program Overview** page, click the **Repositories** tab
-   2. Locate the repository name and click on the ellipsis menu (...)
-   3. Copy the repository URL
+#### 2.1 Locate the Repository Section
 
-        ![Copy Repo URL](/help/forms/assets/copy-repo-url.png)
+1. On the **Program Overview** page, click the **Repositories** tab
+2. Locate the repository name and click on the ellipsis menu (...)
+3. Copy the repository URL
 
-        >[!NOTE]
-        >
-        > The URL format is typically `https://git.cloudmanager.adobe.com/<org>/<program>/`
+    ![Copy Repo URL](/help/forms/assets/copy-repo-url.png)
 
-2. **Clone Using Git Command**
+>[!NOTE]
+>
+> The URL format is typically `https://git.cloudmanager.adobe.com/<org>/<program>/`
 
-    1. Open the command prompt or terminal
-    2. Run the `git clone` command to clone the Git repository.
+#### 2.2 Clone Using Git Command
+
+1. Open the command prompt or terminal
+2. Run the `git clone` command to clone the Git repository.
    
-        ```bash
+    ```bash
 
-        git clone [repository-url]
+    git clone [repository-url]
     
-        ```
+    ```
 
-        >[!NOTE]
-        >
-        > To clone the Git repository use the credentials provided by Adobe Cloud Manager.
+>[!NOTE]
+>
+> To clone the Git repository use the credentials provided by Adobe Cloud Manager.
     
-        For example, to clone your Git Repository, execute the following command:
+For example, to clone your Git Repository, execute the following command:
 
-        ```bash
+```bash
 
-        https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanity-pXXX-ukYYYY/
+https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanity-pXXX-ukYYYY/
 
-        ```
+```
 
-        ![Clonning the Git Repository](/help/forms/assets/repo-clone.png)
+![Clonning the Git Repository](/help/forms/assets/repo-clone.png)
 
 
 To learn more on how to integrate Adobe Cloud Manager and Adobe Cloud Manager, see [Git Integration Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/git-integration.html).
 
 ### Step 3: Adobe Developer Console Project Setup
 
-1. **Access Adobe Developer Console**
-   1. Navigate to [Adobe Developer Console](https://developer.adobe.com/console)
-   2. Log in with your Adobe ID
+#### 3.1 Access Adobe Developer Console
 
-   3. Create New Project or navigate to your existing project
+1. Navigate to [Adobe Developer Console](https://developer.adobe.com/console)
+2. Log in with your Adobe ID
 
-        >[!BEGINTABS]
+3. Create New Project or navigate to your existing project
 
-        >[!TAB To create a new project]
+>[!BEGINTABS]
 
-       1. From the **Quick Start** section, click **Create new project**
-       2. A new project is created with a default name
+>[!TAB To create a new project]
 
-            ![Create ADC Project](/help/forms/assets/adc-home.png)
+1. From the **Quick Start** section, click **Create new project**
+2. A new project is created with a default name
 
-       3. Click **Edit project** in the top right corner
+    ![Create ADC Project](/help/forms/assets/adc-home.png)
 
-            ![Edit Project](/help/forms/assets/adc-edit-project.png)
+3. Click **Edit project** in the top right corner
 
-       4. Provide a meaningful name (e.g., "formsproject")
-       5. Click **Save**
+    ![Edit Project](/help/forms/assets/adc-edit-project.png)
 
-            ![Edit Project Name](/help/forms/assets/adc-edit-projectname.png)
+4. Provide a meaningful name (e.g., "formsproject")
+5. Click **Save**
 
-        >[!TAB To navigate to your existing project]
+    ![Edit Project Name](/help/forms/assets/adc-edit-projectname.png)
 
-       1. Click **All Projects** from the Adobe Developer Console  
+>[!TAB To navigate to your existing project]
 
-            ![Search Projects](/help/forms/assets/search-adc-project.png)
+1. Click **All Projects** from the Adobe Developer Console  
 
-       2. Locate your project and click to open it.
+    ![Search Projects](/help/forms/assets/search-adc-project.png)
 
-            ![Locate Projects](/help/forms/assets/locate-adc-project.png)
+2. Locate your project and click to open it.
 
-        >[!ENDTABS]
+    ![Locate Projects](/help/forms/assets/locate-adc-project.png)
 
-2. **Add Forms Communication APIs**
+>[!ENDTABS]
 
-   1. Click **Add API** 
+#### 3.2 Add Forms Communication APIs
 
-        ![Add api](/help/forms/assets/adc-add-api.png)
+1. Click **Add API** 
 
-   2. In the _Add API_ dialog, filter by **Experience Cloud**
-   3. Select **"Forms Communication APIs"**
+    ![Add api](/help/forms/assets/adc-add-api.png)
 
-        ![Add Forms Communication API](/help/forms/assets/adc-add-forms-api.png)
+2. In the _Add API_ dialog, filter by **Experience Cloud**
+3. Select **"Forms Communication APIs"**
 
-   4. Click **Next**
-   5. Select **OAuth Server-to-Server** authentication method
+    ![Add Forms Communication API](/help/forms/assets/adc-add-forms-api.png)
 
-        ![Select Authentication method](/help/forms/assets/adc-add-authentication-method.png)
-   6. Click **Next**
+4. Click **Next**
+5. Select **OAuth Server-to-Server** authentication method
 
-3. **Add Product Profile**
+    ![Select Authentication method](/help/forms/assets/adc-add-authentication-method.png)
+6. Click **Next**
+
+#### 3.3 Add Product Profile
     
-   1. Select the **Product Profile** that matches your AEM instance URL (`https://Service Type -Environment Type-Program XXX-Environment XXX.adobeaemcloud.com`).  
+1. Select the **Product Profile** that matches your AEM instance URL (`https://Service Type -Environment Type-Program XXX-Environment XXX.adobeaemcloud.com`).  
 
-   2. Click **Save configured API**. The API and Product Profile are added to your project
+2. Click **Save configured API**. The API and Product Profile are added to your project
 
-        ![Select Project Configuration](/help/forms/assets/adc-add-product-profile.png)
+    ![Select Project Configuration](/help/forms/assets/adc-add-product-profile.png)
 
-   3. View the **Credential details** section
+3. View the **Credential details** section
 
-        ![View Credentials](/help/forms/assets/adc-view-credential.png)
+    ![View Credentials](/help/forms/assets/adc-view-credential.png)
 
-    **Record API Credentials**
+**Record API Credentials**
 
-    ```text
+```text
     API Credentials:
     ================
     Client ID: <your_client_id>
@@ -234,63 +240,63 @@ To learn more on how to integrate Adobe Cloud Manager and Adobe Cloud Manager, s
     Technical Account ID: <tech_account_id>
     Organization ID: <org_id>
     Scopes: AdobeID,openid,read_organizations
-    ```
+```
 
-4. **Generate the Access**
+#### 3.4 Generate the Access
 
-    >[!BEGINTABS]
+>[!BEGINTABS]
 
-    >[!TAB For Testing]
+>[!TAB For Testing]
 
-    Generate access tokens manually in Adobe Developer Console:
+Generate access tokens manually in Adobe Developer Console:
 
-    1. Click the **"Generate access token"** button in your project's API section
-    2. Copy the generated access token
+1. Click the **"Generate access token"** button in your project's API section
+2. Copy the generated access token
 
-        ![Generate Access Token](/help/forms/assets/adc-access-token.png)
+    ![Generate Access Token](/help/forms/assets/adc-access-token.png)
     
-        >[!NOTE]
-        >
-        > Access token is valid for only for **24 hours**
+>[!NOTE]
+>
+> Access token is valid for only for **24 hours**
 
-    >[!TAB For Production]
+>[!TAB For Production]
 
-    Generate tokens programmatically using [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API:
+Generate tokens programmatically using [Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API:
 
-    **Required Credentials:**
+**Required Credentials:**
 
-      - Client ID
-      - Client Secret
-      - Scopes (typically: `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`)
+   - Client ID
+   - Client Secret
+   - Scopes (typically: `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`)
 
-    **Token Endpoint:**
+**Token Endpoint:**
     
-    ```
-        https://ims-na1.adobelogin.com/ims/token/v3
-    ```
+```
+    https://ims-na1.adobelogin.com/ims/token/v3
+```
 
-    **Sample Request (curl):**
+**Sample Request (curl):**
 
-    ```bash
+```bash
     curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
     -H 'Content-Type: application/x-www-form-urlencoded' \
     -d 'grant_type=client_credentials' \
     -d 'client_id=<YOUR_CLIENT_ID>' \
     -d 'client_secret=<YOUR_CLIENT_SECRET>' \
     -d 'scope=AdobeID,openid,read_organizations'
-    ```
+```
 
-    **Response:**
+**Response:**
 
-    ```json
+```json
         {
         "access_token": "eyJhbGciOiJSUz...",
         "token_type": "bearer",
         "expires_in": 86399
         }
-    ```
+```
 
-    >[!ENDTABS]
+>[!ENDTABS]
 
 You can now use the generated access token to make API call for development, stage, or production environments.
 
@@ -302,22 +308,22 @@ You can now use the generated access token to make API call for development, sta
 
 To enable your ADC Project's Client ID to communicate with the AEM instance, you must register it using a YAML configuration file and deploy it via a Config Pipeline.
 
-1. **Locate or Create Config Directory**
+#### 4.1 Locate or Create Config Directory
    
-   1. Navigate to the cloned AEM Project repository and locate the `config` folder
-   2. If it doesn't exist, create it at the project root level:
+1. Navigate to the cloned AEM Project repository and locate the `config` folder
+2. If it doesn't exist, create it at the project root level:
    
     ```bash
     mkdir config
     ```
 
-2. Create a new file named `api.yaml` in the `config` directory:
+3. Create a new file named `api.yaml` in the `config` directory:
    
    ```bash
    touch config/api.yaml
    ```
 
-3. Add the following code in the `api.yaml` file:
+4. Add the following code in the `api.yaml` file:
 
     ```yaml
     kind: "API"
@@ -334,7 +340,7 @@ To enable your ADC Project's Client ID to communicate with the AEM instance, you
         - "<your_client_id>"
     ```
 
-    The following explains the configuration parameters:
+The following explains the configuration parameters:
 
    - **kind**: Always set to `"API"` (identifies this as an API configuration)
    - **version**: API version, typically `"1"` or `"1.0"`
@@ -347,13 +353,13 @@ To enable your ADC Project's Client ID to communicate with the AEM instance, you
      - **publish**: Client IDs for publish tier
      - **preview**: Client IDs for preview tier
 
-    For example, add the `allowedClientIDs` as `6bc4589785e246eda29a545d3ca55980` and envTypes as `dev`:
+For example, add the `allowedClientIDs` as `6bc4589785e246eda29a545d3ca55980` and envTypes as `dev`:
 
-    ![Adding Config file](/help/forms/assets/create-api-yaml-file.png)
+![Adding Config file](/help/forms/assets/create-api-yaml-file.png)
 
-4. **Commit and Push Changes**
+#### 4.2 Commit and Push Changes
    
-   1. Navigate to root folder of your clonned repository and execute the below commands:
+1. Navigate to root folder of your clonned repository and execute the below commands:
 
 
     ```bash
@@ -365,50 +371,51 @@ To enable your ADC Project's Client ID to communicate with the AEM instance, you
     ![Push Git Changes](/help/forms/assets/push-yaml-changes-in-git.png)
 
 
-5. **Setup Config Pipeline**
+### Step 5: Setup Config Pipeline
 
-   1. **Locate the Pipelines Card**
-      1. Locate the **Pipelines** card on the Program Overview page
-      2. Click **"Add"** button
+#### 5.1 Locate the Pipelines Card
 
-            ![Add Pipleine](/help/forms/assets/add-pipeline.png)
+1. Locate the **Pipelines** card on the Program Overview page
+2. Click **"Add"** button
+
+    ![Add Pipleine](/help/forms/assets/add-pipeline.png)
    
-   2. **Select Pipeline Type**
+#### 5.2 Select Pipeline Type
 
-        - **For Development Environments**: Select **"Add Non-Production Pipeline"**. Non-production pipelines are for dev and stage environments
+- **For Development Environments**: Select **"Add Non-Production Pipeline"**. Non-production pipelines are for dev and stage environments
 
-        - **For Production Environments**: Select **"Add Production Pipeline"**. Production pipelines require additional approvals
+- **For Production Environments**: Select **"Add Production Pipeline"**. Production pipelines require additional approvals
 
-            >[!NOTE]
-            >
-            > In this case, create a Non-Production Pipeline since a development environment is available.
+>[!NOTE]
+>
+> In this case, create a Non-Production Pipeline since a development environment is available.
 
-   3. **Configure Pipeline - Configuration Tab**
+**1. Configure Pipeline - Configuration Tab**
 
-        In the **Configuration** tab:
+In the **Configuration** tab:
 
-        a. **Pipeline Type**
+a. **Pipeline Type**
          - Select **"Deployment Pipeline"** 
 
-        b. **Pipeline Name**
-         - Provide a descriptive name, For example, name the pipeline as `api-config-pipieline`
+b. **Pipeline Name**
+    - Provide a descriptive name, For example, name the pipeline as `api-config-pipieline`
 
-        c. **Deployment Trigger**
-         - **Manual**: Deploy only when manually triggered (recommended for initial setup)
-         - **On Git Changes**: Auto-deploy when changes are pushed to the branch
+c. **Deployment Trigger**
+    - **Manual**: Deploy only when manually triggered (recommended for initial setup)
+    - **On Git Changes**: Auto-deploy when changes are pushed to the branch
 
-        d. **Important Metric Failures Behavior**
-         - **Ask every time**: Prompt for action on failures (default)
-         - **Fail Immediately**: Automatically fail pipeline on metric failures
-         - **Continue Immediately**: Continue despite failures
+d. **Important Metric Failures Behavior**
+    - **Ask every time**: Prompt for action on failures (default)
+    - **Fail Immediately**: Automatically fail pipeline on metric failures
+    - **Continue Immediately**: Continue despite failures
 
-        e. Click **"Continue"** to proceed to the **Source Code** tab
+e. Click **"Continue"** to proceed to the **Source Code** tab
 
-        ![Config Pipeline](/help/forms/assets/add-config-pipeline.png)
+![Config Pipeline](/help/forms/assets/add-config-pipeline.png)
 
-   4. **Configure Pipeline - Source Code Tab**
+**2. Configure Pipeline - Source Code Tab**
 
-        In the **Source Code** tab:
+In the **Source Code** tab:
 
         a. **Deployment Type**
          - Select **"Targeted deployment"**
@@ -429,7 +436,7 @@ To enable your ADC Project's Client ID to communicate with the AEM instance, you
 
         ![Config Pipeline](/help/forms/assets/confirm-pipeline-1.png)
 
-6. **Deploy Configuration**
+1. **Deploy Configuration**
 
     Now that the pipeline is created, deploy your `api.yaml` configuration:
 

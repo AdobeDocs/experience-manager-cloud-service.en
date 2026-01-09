@@ -30,35 +30,35 @@ Follow the steps below which shows you how to generate an access token from the 
 
 3. Create New Project or navigate to your existing project
 
-    >[!BEGINTABS]
+>[!BEGINTABS]
 
-    >[!TAB To create a new project]
+>[!TAB To create a new project]
 
-    1. From the **Quick Start** section, click **Create new project**
-    2. A new project is created with a default name
+1. From the **Quick Start** section, click **Create new project**
+2. A new project is created with a default name
 
-        ![Create ADC Project](/help/forms/assets/adc-home.png)
+    ![Create ADC Project](/help/forms/assets/adc-home.png)
 
-    3. Click **Edit project** in the top right corner
+3. Click **Edit project** in the top right corner
 
-        ![Edit Project](/help/forms/assets/adc-edit-project.png)
+    ![Edit Project](/help/forms/assets/adc-edit-project.png)
 
-    4. Provide a meaningful name (e.g., "formsproject")
-    5. Click **Save**
+4. Provide a meaningful name (e.g., "formsproject")
+5. Click **Save**
 
-        ![Edit Project Name](/help/forms/assets/adc-edit-projectname.png)
+    ![Edit Project Name](/help/forms/assets/adc-edit-projectname.png)
 
-    >[!TAB To navigate to your existing project]
+>[!TAB To navigate to your existing project]
 
-    1. Click **All Projects** from the Adobe Developer Console  
+1. Click **All Projects** from the Adobe Developer Console  
 
-        ![Search Projects](/help/forms/assets/search-adc-project.png)
+    ![Search Projects](/help/forms/assets/search-adc-project.png)
 
-    2. Locate your project and click to open it.
+2. Locate your project and click to open it.
 
-        ![Locate Projects](/help/forms/assets/locate-adc-project.png)
+    ![Locate Projects](/help/forms/assets/locate-adc-project.png)
 
-    >[!ENDTABS]
+>[!ENDTABS]
 
 ### Add Forms APIs
 
