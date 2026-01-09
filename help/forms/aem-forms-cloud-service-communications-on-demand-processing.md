@@ -69,16 +69,16 @@ In this, example let us generate an PDF using the Forms Communication APIs using
 
 Access your AEM Cloud Service environment details to obtain the URLs and identifiers needed for API configuration. 
 
-#### 1. Log into Adobe Cloud Manager
+#### 1.1 Log into Adobe Cloud Manager
    
 1. Navigate to [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
 2. Log in with your Adobe ID
 
-#### 2. Navigate to the Program Overview
+#### 1.2 Navigate to the Program Overview
    
 1. Select your program from the list. You are redirected to the **Program Overview** page
 
-#### 3. Access and View AEM Cloud Service Environment
+#### 1.3 Access and View AEM Cloud Service Environment
 
 You can view or access the AEM Cloud Service Environment details using either of the two options:
 
@@ -108,7 +108,7 @@ You can view or access the AEM Cloud Service Environment details using either of
 
     ![Option1-Environment Details](/help/forms/assets/option1-env.png)
 
->[!BEGINTABS]
+>[!ENDTABS]
 
 #### 4. Find Your AEM Forms Endpoint
 
@@ -158,7 +158,6 @@ https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanit
 ```
 
 ![Clonning the Git Repository](/help/forms/assets/repo-clone.png)
-
 
 To learn more on how to integrate Adobe Cloud Manager and Adobe Cloud Manager, see [Git Integration Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/git-integration.html).
 
@@ -793,4 +792,3 @@ To update the AEM instance to locate Environment Details:
 ## Related Articles
 
 - To learn how to set up environment for Batch (Asynchronous APIs), see [AEM Forms as a Cloud Service Communications Batch Processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).
-    
