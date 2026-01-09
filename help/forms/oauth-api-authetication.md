@@ -231,6 +231,11 @@ You can now use the generated access token to make API call for development, sta
 
 ## Next Steps
 
+To learn how to set up environment for Synchronous Forms Communication APIs, see [AEM Forms as a Cloud Service Communications Synchronous Processing](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md).
+
+
+## Related Article
+
 Learn how to set environment for Synchronous (On-Demand) and Asynchronous (Batch) Forms Communications APIs:
 
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
