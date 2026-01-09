@@ -10,7 +10,7 @@ index: no
 
 # OAuth Server-to-Server Authentication 
 
-OAuth Server-to-Server Authentication allows secure, token-based access to AEM Forms Communications APIs without requiring user interaction. 
+OAuth Server-to-Server Authentication allows secure, token-based access to AEM Forms Communications APIs without requiring user interaction. OAuth server-to-server authentication is supported by Adobe Developer Console.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ Before you begin, make sure the following prerequisites are met:
 
 ## How to Generate an Access Token Using OAuth Server-to-Server Authentication?
 
-Follow the steps below which shows you how to generate an access token from the Adobe Developer console, and make your first API call through OAuth Server-to-Server Authentication.
+Follow the steps below to generate an access token from the Adobe Developer console, and make your first API call through OAuth Server-to-Server Authentication.
 
 ### Adobe Developer Console Project Setup
 
@@ -62,7 +62,7 @@ Follow the steps below which shows you how to generate an access token from the 
 
 ### Add Forms APIs
 
-Add APIs based on what you want to do:
+Add Forms APIs based on what you want to do:
    
 * **AEM Forms Communications APIs**: use when you need to generate, convert, assemble, or secure documents (PDF and related formats).
 * **Adaptive Forms Runtime APIs** – use when you need to render, submit, or process Adaptive Forms at runtime.
@@ -152,7 +152,7 @@ Product profile provides permissions (or authorization) for credentials to acces
 
 ### Access Token Generation
 
-Generate the Access token either manually or programmatically.
+Generate the Access token either manually or programmatically:
 
 >[!BEGINTABS]
 
@@ -234,7 +234,7 @@ You can now use the generated access token to make API call for development, sta
 To learn how to set up environment for Synchronous Forms Communication APIs, see [AEM Forms as a Cloud Service Communications Synchronous Processing](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md).
 
 
-## Related Article
+## Related Articles
 
 Learn how to set environment for Synchronous (On-Demand) and Asynchronous (Batch) Forms Communications APIs:
 

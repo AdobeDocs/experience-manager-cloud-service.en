@@ -8,9 +8,9 @@ hidefromtoc: yes
 index: no
 ---
 
-# AEM Forms Communications APIs - Overview
+# AEM Forms APIs - Overview
 
-AEM Forms Communications APIs provide a comprehensive suite of cloud-native APIs designed to help businesses automate document workflows. 
+AEM Forms APIs provide a comprehensive suite of cloud-native APIs designed to help businesses automate document workflows. 
 
 AEM Forms APIs are structured and accessed through two primary consoles:
 
@@ -18,11 +18,11 @@ AEM Forms APIs are structured and accessed through two primary consoles:
   
 * [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console provides access to environment-level details, configurations, technical accounts, and service credentials to support operational and integration tasks.
 
-Each console provides access to different APIs and services for document processing, generation, conversion and encryption. Different APIs support different [authentication methods](#authentication-methods).
+Different APIs support different [authentication methods](#authentication-methods).
 
 ## Authentication Methods
 
-Different APIs use different authentication methods based on their release timeline:
+Different Forms APIs use different authentication methods based on their release timeline:
 
 * [OAuth Server-to-Server](/help/forms/oauth-api-authetication.md)
 * [JWT (JSON Web Token) Server-to-Server](/help/forms/jwt-api-authentication.md) 
