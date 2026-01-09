@@ -18,7 +18,7 @@ These agents are available in Adobe Experience Manager (AEM) as a Cloud Service 
 
 >[!IMPORTANT]
 >
->To use the agents you are required to enroll in the Beta program. You can find more information on the AEM Agents Beta Program [here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
+>To use the agents you are required to enroll in the Beta Program. You can find more information on the AEM Agents Beta Program [here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
 
 ## Experience Production Agent {#experience-production-agent}
 
