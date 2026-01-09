@@ -63,7 +63,7 @@ Make sure you have the required access rights and permissions before you start c
 
 AEM Forms Communication APIs are accessed through the Adobe Developer Console using OAuth server-to-server authentication. 
 
-In this, example let us generate an PDF using the Forms Communication APIs using the template and XDP file. The following steps explain how to configure the Forms Communication synchronous APIs to generate PDF.
+Follow the steps explain how to configure the Forms Communication synchronous APIs to generate PDF using the template and XDP file:
 
 ### Step 1: Access AEM Cloud Service Environment and AEM Forms Endpoint 
 
@@ -76,7 +76,9 @@ Access your AEM Cloud Service environment details to obtain the URLs and identif
 
 #### 1.2 Navigate to the Program Overview
    
-1. Select your program from the list. You are redirected to the **Program Overview** page
+Select your program from the list. You are redirected to the **Program Overview** page
+
+![Program Overview Page](/help/forms/assets/program-overview.png)
 
 #### 1.3 Access and View AEM Cloud Service Environment
 
@@ -88,31 +90,27 @@ You can view or access the AEM Cloud Service Environment details using either of
 
 1. On the **Program Overview** page
 2. Click **"Environments"** in the left side menu.  You can see a list of all environments
-
-    ![View All Environments](/help/forms/assets/all-env.png)
-
 3. Click the specific environment name to view details
-
-    ![Option1-Environment Details](/help/forms/assets/option1-env.png)
+   
+    ![View All Environments](/help/forms/assets/all-env.png)
 
 >[!TAB Option 2: From Environments Section]
   
-1. On the Program Overview page
+1. On the **Program Overview** page
 2. Locate the **Environments** section
 3. Click **"Show All"** to view all environments
 4. Click the **ellipsis menu (...)** next to the environment
+5. Select **"View Details"**
    
     ![Option1-Environment Details](/help/forms/assets/option2-env-details.png)
-
-5. Select **"View Details"**
-
-    ![Option1-Environment Details](/help/forms/assets/option1-env.png)
 
 >[!ENDTABS]
 
 #### 4. Find Your AEM Forms Endpoint
 
 From the **Environment** details page, note your AEM URL instance.
+
+![Option1-Environment Details](/help/forms/assets/option1-env.png)
 
 >[!NOTE]
 >
@@ -167,7 +165,6 @@ To learn more on how to integrate Adobe Cloud Manager and Adobe Cloud Manager, s
 
 1. Navigate to [Adobe Developer Console](https://developer.adobe.com/console)
 2. Log in with your Adobe ID
-
 3. Create New Project or navigate to your existing project
 
 >[!BEGINTABS]
@@ -352,8 +349,6 @@ The following explains the configuration parameters:
      - **publish**: Client IDs for publish tier
      - **preview**: Client IDs for preview tier
 
-For example, add the `allowedClientIDs` as `6bc4589785e246eda29a545d3ca55980` and envTypes as `dev`:
-
 ![Adding Config file](/help/forms/assets/create-api-yaml-file.png)
 
 #### 4.2 Commit and Push Changes
@@ -434,7 +429,7 @@ c. **Select Eligible Deployment Environment**
 
 d. **Define Source Code Details**
       
-  - **Repository**: Select the repository containing your `api.yaml` file. For example, select the `AEMFormsInternal-ReleaseSanity-p43162-uk59167` repository.
+  - **Repository**: Select the repository containing your `api.yaml` file. For example, select the `AEMFormsInternal-ReleaseSanity-pXXXXX-ukYYYYY` repository.
   - **Git Branch**: Select your branch. For example, in this case our code is deployed at the `main` branch.
   - **Code Location**: Enter the path to `config` directory. As the`api.yaml` is in `config` folder at root, so enter `/config`
 
@@ -487,7 +482,7 @@ Swagger UI provides an interactive interface for testing APIs without writing co
 
     | **Section** | **Parameter** | **Value** |
     |--------------|---------------|------------|
-    | bucket | AEM instance | AEM instance name without the Adobe domain name (`.adobeaemcloud.com`) For example, use `p43162-e177398` as bucket. |
+    | bucket | AEM instance | AEM instance name without the Adobe domain name (`.adobeaemcloud.com`) For example, use `pXXXXX-eYYYYY` as bucket. |
     | Security | Bearer Token | Use the [access token from the Adobe Developer Console Project's OAuth Server-to-Server credential](/help/forms/oauth-api-authetication.md#how-to-generate-an-access-token-using-oauth-server-to-server-authentication) |
     | Body | template | Upload an XDP  to generate the PDF form. For example, you can use [this XDP](/help/forms/assets/ClosingForm.xdp) to generate a PDF.  |
     | Body | data  | An optional XML file containing the data to be merged with the template to generate a pre-filled PDF form. For example, you can use [this XML](/help/forms/assets/ClosingForm.xml) to generate a PDF.  |
