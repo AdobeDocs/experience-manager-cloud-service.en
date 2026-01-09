@@ -395,19 +395,23 @@ For example, add the `allowedClientIDs` as `6bc4589785e246eda29a545d3ca55980` an
 In the **Configuration** tab:
 
 a. **Pipeline Type**
-         - Select **"Deployment Pipeline"** 
+  
+  - Select **"Deployment Pipeline"** 
 
 b. **Pipeline Name**
-    - Provide a descriptive name, For example, name the pipeline as `api-config-pipieline`
+  
+  - Provide a descriptive name, For example, name the pipeline as `api-config-pipieline`
 
 c. **Deployment Trigger**
-    - **Manual**: Deploy only when manually triggered (recommended for initial setup)
-    - **On Git Changes**: Auto-deploy when changes are pushed to the branch
+  
+  - **Manual**: Deploy only when manually triggered (recommended for initial setup)
+  - **On Git Changes**: Auto-deploy when changes are pushed to the branch
 
 d. **Important Metric Failures Behavior**
-    - **Ask every time**: Prompt for action on failures (default)
-    - **Fail Immediately**: Automatically fail pipeline on metric failures
-    - **Continue Immediately**: Continue despite failures
+    
+  - **Ask every time**: Prompt for action on failures (default)
+  - **Fail Immediately**: Automatically fail pipeline on metric failures
+  - **Continue Immediately**: Continue despite failures
 
 e. Click **"Continue"** to proceed to the **Source Code** tab
 
@@ -417,49 +421,55 @@ e. Click **"Continue"** to proceed to the **Source Code** tab
 
 In the **Source Code** tab:
 
-        a. **Deployment Type**
-         - Select **"Targeted deployment"**
+a. **Deployment Type**
+  
+  - Select **"Targeted deployment"**
 
-        b. **Deployment Options**
-         - Select **"Config"** (deploy configuration files only). It tells Cloud Manager this is a config deployment.
+b. **Deployment Options**
+  
+  - Select **"Config"** (deploy configuration files only). It tells Cloud Manager this is a config deployment.
 
-        c. **Select Eligible Deployment Environment**
-         - Choose the environment where you want to deploy the config. In this case, it is a `dev` environment.
+c. **Select Eligible Deployment Environment**
 
-        d. **Define Source Code Details**
+  - Choose the environment where you want to deploy the config. In this case, it is a `dev` environment.
+
+d. **Define Source Code Details**
       
-         - **Repository**: Select the repository containing your `api.yaml` file. For example, select the `AEMFormsInternal-ReleaseSanity-p43162-uk59167` repository.
-         - **Git Branch**: Select your branch. For example, in this case our code is deployed at the `main` branch.
-         - **Code Location**: Enter the path to `config` directory. As the`api.yaml` is in `config` folder at root, so enter `/config`
+  - **Repository**: Select the repository containing your `api.yaml` file. For example, select the `AEMFormsInternal-ReleaseSanity-p43162-uk59167` repository.
+  - **Git Branch**: Select your branch. For example, in this case our code is deployed at the `main` branch.
+  - **Code Location**: Enter the path to `config` directory. As the`api.yaml` is in `config` folder at root, so enter `/config`
 
-        e. Click **"Save"** to create the pipeline
+e. Click **"Save"** to create the pipeline
 
-        ![Config Pipeline](/help/forms/assets/confirm-pipeline-1.png)
+![Config Pipeline](/help/forms/assets/confirm-pipeline-1.png)
 
-1. **Deploy Configuration**
+### Step 6: Deploy Configuration
 
-    Now that the pipeline is created, deploy your `api.yaml` configuration:
+Now that the pipeline is created, deploy your `api.yaml` configuration:
 
-   1. **From the Pipelines Overview**
-      1. On the Program Overview page, locate the **Pipelines** card
-      2. Navigate to your newly created config pipeline in the list. For example, look for the pipeline name you created (e.g., "api-config-pipeline"). You can see pipeline details including status and last run.
+#### 6.1 From the Pipelines Overview
 
-   2. **Start the Deployment**
-      1. Click the **"Build"** button (or play icon ▶) next to your pipeline
-      2. Confirm the deployment if prompted and the pipeline execution begins
+1. On the Program Overview page, locate the **Pipelines** card
+2. Navigate to your newly created config pipeline in the list. For example, look for the pipeline name you created (e.g., "api-config-pipeline"). You can see pipeline details including status and last run.
 
-        ![run the pipeline](/help/forms/assets/run-config-pipeline.png)
+#### 6.2 Start the Deployment**
+      
+1. Click the **"Build"** button (or play icon ▶) next to your pipeline
+2. Confirm the deployment if prompted and the pipeline execution begins
 
-   3. **Verify Successful Deployment**
-       - Wait for the pipeline to complete.
-         - If it succeeds, the status changes to "Success" (green checkmark ✓).
-         - If it fails, the status changes to "Fail" (red cross ✗). Click **Download logs** to view the error details.
+![run the pipeline](/help/forms/assets/run-config-pipeline.png)
 
-            ![Pipeline success](/help/forms/assets/pipeline-suceess.png)
+#### 6.3 Verify Successful Deployment
 
-        Now, you can start testing the Forms Communications APIs. For testing purposes, you can use the Postman, curl, or any other REST client to invoke the APIs.
+- Wait for the pipeline to complete.
+  - If it succeeds, the status changes to "Success" (green checkmark ✓).
+  - If it fails, the status changes to "Fail" (red cross ✗). Click **Download logs** to view the error details.
 
-### Step 4: API Specifications and Testing
+    ![Pipeline success](/help/forms/assets/pipeline-suceess.png)
+
+Now, you can start testing the Forms Communications APIs. For testing purposes, you can use the Postman, curl, or any other REST client to invoke the APIs.
+
+### Step 7: API Specifications and Testing
 
 Now that your environment is configured, you can start testing the AEM Forms Communication APIs either using Swagger UI or programmatically by developing NodeJS application.
 
