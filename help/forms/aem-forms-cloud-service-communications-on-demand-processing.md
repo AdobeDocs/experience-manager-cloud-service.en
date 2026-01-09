@@ -712,6 +712,7 @@ The PDF is created in the `demo-nodejs-generate-pdf` folder. Navigate to the fol
 
 ![View PDF](/help/forms/assets/create-pdf.png)
 
+>[!ENDTABS]
 
 You can open the [generated PDF](/help/forms/assets/create-pdf.png) to view it.
 
@@ -792,29 +793,4 @@ To update the AEM instance to locate Environment Details:
 ## Related Articles
 
 - To learn how to set up environment for Batch (Asynchronous APIs), see [AEM Forms as a Cloud Service Communications Batch Processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+    
