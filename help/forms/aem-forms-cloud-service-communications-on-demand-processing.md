@@ -259,9 +259,9 @@ To learn more on how to integrate Adobe Cloud Manager and Adobe Cloud Manager, s
 
     **Required Credentials:**
 
-      * Client ID
-      * Client Secret
-      * Scopes (typically: `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`)
+      - Client ID
+      - Client Secret
+      - Scopes (typically: `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`)
 
     **Token Endpoint:**
     
@@ -765,26 +765,16 @@ To update the AEM environment refer to the [Update AEM instance](#update-aem-ins
 
 ## Update AEM instance
 
-To update the AEM instance:
+To update the AEM instance to locate Environment Details:
 
-1. **Log into Adobe Cloud Manager**
-   1. Navigate to [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
-   2. Log in with your Adobe ID
+1. Select the `ellipsis`(...) icon next to the environment name and click **Update**
+2. Click the **Submit** button and run the suggested Fullstack Pipeline.
 
-2. **Navigate to the Program Overview**
-   1. Select your program from the list. You are redirected to the Program Overview page
-
-3. **Locate Environment Details**  
-    1. Select the `ellipsis`(...) icon next to the environment name and click **Update**
-    2. Click the **Submit** button and run the suggested Fullstack Pipeline.
-
-        ![Update Environment](/help/forms/assets/update-env.png)
+    ![Update Environment](/help/forms/assets/update-env.png)
 
 ## Related Articles
 
-To learn how to set up environment for Batch (Asynchronous APIs), see [AEM Forms as a Cloud Service Communications Batch Processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).
-
-
+- To learn how to set up environment for Batch (Asynchronous APIs), see [AEM Forms as a Cloud Service Communications Batch Processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).
 
 
 

@@ -107,7 +107,7 @@ Follow the steps below which shows you how to generate an access token from the 
 
 You can now use the generated access token to make API call for development, stage, or production environments.
 
-## Next Steps
+## Related Article Steps
 
 Learn how to set environment for Synchronous (On-Demand) and Asynchronous (Batch) Forms Communications APIs:
 

@@ -117,7 +117,7 @@ The table below lists all the [AEM Forms Communications APIs](https://developer.
 | [/adobe/document/assure/certify](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#tag/Document-Assurance/paths/~1assure~1certify/post) | Certifies a PDF with a digital certificate.  | Synchronous |  [OAuth](/help/forms/oauth-api-authetication.md) |
 
 
-## Next Steps
+## Related Steps
 
 Learn how to set environment for Synchronous (On-Demand) and Asynchronous (Batch) Forms Communications APIs:
 
