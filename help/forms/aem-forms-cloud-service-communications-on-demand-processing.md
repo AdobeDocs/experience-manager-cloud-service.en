@@ -106,7 +106,7 @@ You can view or access the AEM Cloud Service Environment details using either of
 
 >[!ENDTABS]
 
-#### 4. Find Your AEM Forms Endpoint
+#### 1.4. Find Your AEM Forms Endpoint
 
 From the **Environment** details page, note your AEM URL instance.
 
@@ -367,6 +367,11 @@ The following explains the configuration parameters:
 
 ### Step 5: Setup Config Pipeline
 
+#### 5.1 Log into Adobe Cloud Manager
+
+1. Navigate to [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+2. Log in with your Adobe ID
+
 #### 5.1 Locate the Pipelines Card
 
 1. Locate the **Pipelines** card on the Program Overview page
@@ -439,7 +444,7 @@ e. Click **"Save"** to create the pipeline
 
 ### Step 6: Deploy Configuration
 
-Now that the pipeline is created, deploy your `api.yaml` configuration:
+Now that the pipeline is created, deploy your `api.yaml` configuration
 
 #### 6.1 From the Pipelines Overview
 
