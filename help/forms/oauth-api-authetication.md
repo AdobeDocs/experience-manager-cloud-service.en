@@ -103,7 +103,7 @@ Add Forms APIs based on what you want to do:
 
 >[!ENDTABS]
 
-You canalso  add the API and authentication method to your existing project by clicking **Add to Project** > **API**  
+You can also  add the API and authentication method to your existing project by clicking **Add to Project** > **API**  
 ![Add API to existing Project](/help/forms/assets/add-api-existing-project.png)
 
 ### 3. Add Product Profile
