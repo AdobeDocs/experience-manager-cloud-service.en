@@ -23,7 +23,7 @@ Before you begin, make sure the following prerequisites are met:
 
 Follow the steps below to generate an access token from the Adobe Developer console, and make your first API call through OAuth Server-to-Server Authentication.
 
-### Adobe Developer Console Project Setup
+### 1. Adobe Developer Console Project Setup
 
 1. Navigate to [Adobe Developer Console](https://developer.adobe.com/console)
 2. Log in with your Adobe ID
@@ -60,7 +60,7 @@ Follow the steps below to generate an access token from the Adobe Developer cons
 
 >[!ENDTABS]
 
-### Add Forms APIs
+### 2. Add Forms APIs
 
 Add Forms APIs based on what you want to do:
    
@@ -103,12 +103,12 @@ Add Forms APIs based on what you want to do:
 
 >[!ENDTABS]
 
->[!NOTE]
+>![NOTE]
 >
 > You canalso  add the API and authentication method to your existing project by clicking **Add to Project** > **API**  
 > ![Add API to existing Project](/help/forms/assets/add-api-existing-project.png)
 
-### Add Product Profile
+### 3. Add Product Profile
 
 Product profile provides permissions (or authorization) for credentials to access the AEM resources.
 
@@ -122,7 +122,7 @@ Product profile provides permissions (or authorization) for credentials to acces
 
     * **Environment XXX** – identifies the specific environment ID within that program
 
-    >![NOTE]
+    >[!NOTE]
     >
     > Product profiles are tied to a specific AEM instance (program + environment). Always choose the profile that matches your instance URL.
 
@@ -130,7 +130,7 @@ Product profile provides permissions (or authorization) for credentials to acces
 
     ![Select Project Configuration](/help/forms/assets/adc-add-product-profile.png)
 
-### Generate and Save Credentials
+### 4. Generate and Save Credentials
 
 1. Navigate to your project in Adobe Developer Console
 2. Click **OAuth Server-to-Server** credential
@@ -150,7 +150,7 @@ Product profile provides permissions (or authorization) for credentials to acces
     Scopes: AdobeID,openid,read_organizations
 ```
 
-### Access Token Generation
+### 5. Access Token Generation
 
 Generate the Access token either manually or programmatically:
 
@@ -215,7 +215,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
 
 You can now use the generated access token to make API call for development, stage, or production environments.
 
->[!NOTE]
+>![NOTE]
 >
 > To know more about OAuth Server-to-Server implementation to generate access token and make API calls, [click here](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation).
 
