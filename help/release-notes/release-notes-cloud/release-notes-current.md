@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 ---
-# Current release notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 The following section outlines the feature release notes for the current (latest) version of [!DNL Experience Manager] as a Cloud Service.
 
@@ -20,11 +20,11 @@ The following section outlines the feature release notes for the current (latest
 >
 >To receive a monthly email notification about updates to Experience Cloud release notes, subscribe to the [Adobe Priority Product Update](https://www.adobe.com/subscription/priority-product-update.html).
 
-## Release date {#release-date}
+## Release Date {#release-date}
 
 The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2025.12.0) is December 11, 2025. The next feature release (2026.1.0) is planned for January 29, 2026.
 
-## Maintenance release notes {#maintenance}
+## Maintenance Release Notes {#maintenance}
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
@@ -38,7 +38,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 -->
 
-## AEM beta programs {#aem-beta-programs}
+## AEM Beta Programs {#aem-beta-programs}
 
 Adobe Experience Manager (AEM) beta programs are a way for customers to get access to prerelease features and code, provide feedback, and guide the future of AEM. 
 
@@ -70,6 +70,23 @@ See [AEM Foundation beta programs](#foundation-early-adopter).
 ### Cloud Manager (Beta programs) {#cloud-manager-beta-programs}
 
 See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes/current.md).
+
+
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+
+**New version of Figma Plugin for integration with AEM Assets is available**
+
+* Support for video files (MP4, MOV, WebM), Animated files (GIF), and Vector files (SVG) while importing assets from AEM repository to the Figma document.
+
+* Support for checking if there are any updates to the assets that are used in Figma document as compared to the assets that exist in AEM repository and getting the latest version of assets if there are any updates.
+
+* Support for export configurations while exporting PNG (scale) and JPG (image scale and quality) file formats.
+
+   ![Figma plugin](/help/assets/assets/figma-v2-plugin.png)
+
+**Malware detection for uploaded assets**
+
+AEM Assets now includes automatic malware scanning of uploaded files, ensuring that suspicious assets are quarantined before entering the DAM to protect your repository from threats. Administrators can configure scan settings and quarantine retention policies for streamlined security controls.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -169,7 +186,7 @@ OSGi properties:
 
 #### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-Adobe upgraded **Stage** and **Production** environments to the higher-performance **Java 21 runtime** on October 14th, 2025. Starting **late January**, neither the AEM Cloud Service SDK nor any cloud environments will work with Java 11 runtime.
+Adobe upgraded **Stage** and **Production** environments to the higher-performance **Java 21 runtime** on October 14th, 2025. Starting **February 9th**, neither the AEM Cloud Service SDK nor any cloud environments will work with Java 11 runtime.
 
 >[!NOTE]
 >
