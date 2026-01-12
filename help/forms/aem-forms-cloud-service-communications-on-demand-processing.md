@@ -42,8 +42,8 @@ Make sure you have the required access rights and permissions before you start c
 
 ### Generate Access Token using Adobe Developer Console (ADC)
 
-- Generate access token through the Adobe Developer Console using OAuth Server-to-Server authentication.
-- Retrieve Client ID from the Adobe Developer Console
+* Generate access token through the Adobe Developer Console using OAuth Server-to-Server authentication.
+* Retrieve Client ID from the Adobe Developer Console
 
 >[!NOTE]
 >
