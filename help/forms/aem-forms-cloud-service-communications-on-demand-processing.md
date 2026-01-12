@@ -24,8 +24,8 @@ Make sure you have the required access rights and permissions before you start c
 
 **User and role permissions**
 
-- Developer role assigned in the Adobe Admin Console
-- Permission to create projects in the Adobe Developer Console
+* Developer role assigned in the Adobe Admin Console
+* Permission to create projects in the Adobe Developer Console
  
 >[!NOTE]
 >
@@ -33,8 +33,8 @@ Make sure you have the required access rights and permissions before you start c
 
 **Git Repository Access**
 
-- Access to Cloud Manager Git Repository
-- Git credentials for cloning and pushing changes
+* Access to Cloud Manager Git Repository
+* Git credentials for cloning and pushing changes
 
 >[!NOTE]
 >
@@ -51,11 +51,11 @@ Make sure you have the required access rights and permissions before you start c
 
 ### Development Tools
 
-- **Node.js** for running sample applications
-- Latest version of **Git** 
-- Access to **Terminal/Command line**
-- **Text editor or IDE** for editing configuration files (VS Code, IntelliJ, etc.)
-- **Postman** or similar tool for API testing 
+* **Node.js** for running sample applications
+* Latest version of **Git** 
+* Access to **Terminal/Command line**
+* **Text editor or IDE** for editing configuration files (VS Code, IntelliJ, etc.)
+* **Postman** or similar tool for API testing 
 
 >[!NOTE] 
 >
@@ -263,9 +263,9 @@ Generate tokens programmatically using [Adobe IMS](https://experienceleague.adob
 
 **Required Credentials:**
 
-   - Client ID
-   - Client Secret
-   - Scopes (typically: `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`)
+   * Client ID
+   * Client Secret
+   * Scopes (typically: `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`)
 
 **Token Endpoint:**
     
@@ -340,16 +340,16 @@ To enable your ADC Project's Client ID to communicate with the AEM instance, you
 
 The following explains the configuration parameters:
 
-   - **kind**: Always set to `"API"` (identifies this as an API configuration)
-   - **version**: API version, typically `"1"` or `"1.0"`
-   - **envTypes**: Array of environment types where this config applies
-     - `["dev"]` - Development environments only
-     - `["stage"]` - Staging environments only
-     - `["prod"]` - Production environments only
-   - **allowedClientIDs**: Client IDs allowed to access your AEM instance
-     - **author**: Client IDs for author tier
-     - **publish**: Client IDs for publish tier
-     - **preview**: Client IDs for preview tier
+   * **kind**: Always set to `"API"` (identifies this as an API configuration)
+   * **version**: API version, typically `"1"` or `"1.0"`
+   * **envTypes**: Array of environment types where this config applies
+     * `["dev"]` - Development environments only
+     * `["stage"]` - Staging environments only
+     * `["prod"]` - Production environments only
+   * **allowedClientIDs**: Client IDs allowed to access your AEM instance
+     * **author**: Client IDs for author tier
+     * **publish**: Client IDs for publish tier
+     * **preview**: Client IDs for preview tier
 
 ![Adding Config file](/help/forms/assets/create-api-yaml-file.png)
 
@@ -383,9 +383,9 @@ The following explains the configuration parameters:
    
 #### 5.2 Select Pipeline Type
 
-- **For Development Environments**: Select **"Add Non-Production Pipeline"**. Non-production pipelines are for dev and stage environments
+* **For Development Environments**: Select **"Add Non-Production Pipeline"**. Non-production pipelines are for dev and stage environments
 
-- **For Production Environments**: Select **"Add Production Pipeline"**. Production pipelines require additional approvals
+* **For Production Environments**: Select **"Add Production Pipeline"**. Production pipelines require additional approvals
 
 >[!NOTE]
 >
@@ -397,22 +397,22 @@ In the **Configuration** tab:
 
 a. **Pipeline Type**
   
-  - Select **"Deployment Pipeline"** 
+  * Select **"Deployment Pipeline"** 
 
 b. **Pipeline Name**
   
-  - Provide a descriptive name, For example, name the pipeline as `api-config-pipieline`
+  * Provide a descriptive name, For example, name the pipeline as `api-config-pipieline`
 
 c. **Deployment Trigger**
   
-  - **Manual**: Deploy only when manually triggered (recommended for initial setup)
-  - **On Git Changes**: Auto-deploy when changes are pushed to the branch
+  * **Manual**: Deploy only when manually triggered (recommended for initial setup)
+  * **On Git Changes**: Auto-deploy when changes are pushed to the branch
 
 d. **Important Metric Failures Behavior**
     
-  - **Ask every time**: Prompt for action on failures (default)
-  - **Fail Immediately**: Automatically fail pipeline on metric failures
-  - **Continue Immediately**: Continue despite failures
+  * **Ask every time**: Prompt for action on failures (default)
+  * **Fail Immediately**: Automatically fail pipeline on metric failures
+  * **Continue Immediately**: Continue despite failures
 
 e. Click **"Continue"** to proceed to the **Source Code** tab
 
@@ -424,21 +424,21 @@ In the **Source Code** tab:
 
 a. **Deployment Type**
   
-  - Select **"Targeted deployment"**
+  * Select **"Targeted deployment"**
 
 b. **Deployment Options**
   
-  - Select **"Config"** (deploy configuration files only). It tells Cloud Manager this is a config deployment.
+  * Select **"Config"** (deploy configuration files only). It tells Cloud Manager this is a config deployment.
 
 c. **Select Eligible Deployment Environment**
 
-  - Choose the environment where you want to deploy the config. In this case, it is a `dev` environment.
+  * Choose the environment where you want to deploy the config. In this case, it is a `dev` environment.
 
 d. **Define Source Code Details**
       
-  - **Repository**: Select the repository containing your `api.yaml` file. For example, select the `AEMFormsInternal-ReleaseSanity-pXXXXX-ukYYYYY` repository.
-  - **Git Branch**: Select your branch. For example, in this case our code is deployed at the `main` branch.
-  - **Code Location**: Enter the path to `config` directory. As the`api.yaml` is in `config` folder at root, so enter `/config`
+  * **Repository**: Select the repository containing your `api.yaml` file. For example, select the `AEMFormsInternal-ReleaseSanity-pXXXXX-ukYYYYY` repository.
+  * **Git Branch**: Select your branch. For example, in this case our code is deployed at the `main` branch.
+  * **Code Location**: Enter the path to `config` directory. As the`api.yaml` is in `config` folder at root, so enter `/config`
 
 e. Click **"Save"** to create the pipeline
 
@@ -462,9 +462,9 @@ Now that the pipeline is created, deploy your `api.yaml` configuration
 
 #### 6.3 Verify Successful Deployment
 
-- Wait for the pipeline to complete.
-  - If it succeeds, the status changes to "Success" (green checkmark ✓).
-  - If it fails, the status changes to "Fail" (red cross ✗). Click **Download logs** to view the error details.
+* Wait for the pipeline to complete.
+  * If it succeeds, the status changes to "Success" (green checkmark ✓).
+  * If it fails, the status changes to "Fail" (red cross ✗). Click **Download logs** to view the error details.
 
     ![Pipeline success](/help/forms/assets/pipeline-suceess.png)
 
@@ -500,10 +500,10 @@ Swagger UI provides an interactive interface for testing APIs without writing co
     ![Send API](/help/forms/assets/api-send.png)
 
 6. Check the response in the **Response** tab:
-    - If the response code is `200`, it means the PDF is created successfully. 
-    - If the response code is `400`, it means the request parameters are invalid or malformed. 
-    - If the response code is `500`, it means there is an internal server error.
-    - If the response code is `403`, it means there is an authorization error.
+    * If the response code is `200`, it means the PDF is created successfully. 
+    * If the response code is `400`, it means the request parameters are invalid or malformed. 
+    * If the response code is `500`, it means there is an internal server error.
+    * If the response code is `403`, it means there is an authorization error.
 
     In this case, the response code is `200`, it means that the PDF is generated successfully:
 
@@ -523,11 +523,11 @@ Develop a Node.js application to generate a fillable PDF form from an **XDP** te
 
 **Prerequisites**
 
-- Node.js installed on your system
-- Active AEM as a Cloud Service instance
-- Bearer token for API authentication from Adobe Developer Console
-- Sample XDP File: [ClosingForm.xdp](/help/forms/assets/ClosingForm.xdp)
-- Sample XML File:  [ClosingForm.xml](/help/forms/assets/ClosingForm.xml)
+* Node.js installed on your system
+* Active AEM as a Cloud Service instance
+* Bearer token for API authentication from Adobe Developer Console
+* Sample XDP File: [ClosingForm.xdp](/help/forms/assets/ClosingForm.xdp)
+* Sample XML File:  [ClosingForm.xml](/help/forms/assets/ClosingForm.xml)
 
 To develop the Node.js application, follow the step-by-step-development:
 
@@ -725,57 +725,57 @@ You can open the [generated PDF](/help/forms/assets/create-pdf.png) to view it.
 
 **Symptoms:**
 
-- API requests return `403 Forbidden`
-- Error message: *Unauthorized Access*
+* API requests return `403 Forbidden`
+* Error message: *Unauthorized Access*
 
 **Possible Cause:**
 
-- Client ID not registered in the AEM instance's `api.yaml` configuration    
+* Client ID not registered in the AEM instance's `api.yaml` configuration    
 
 #### Issue 2: 401 Unauthorized Error
 
 **Symptoms:**
 
-- API requests return `401 Unauthorized`
-- Error message: *Invalid or expired token*
+* API requests return `401 Unauthorized`
+* Error message: *Invalid or expired token*
 
 **Possible Causes:**
 
-- Access token expired (valid for 24 hours only)  
-- Incorrect or mismatched Client ID and Client Secret  
+* Access token expired (valid for 24 hours only)  
+* Incorrect or mismatched Client ID and Client Secret  
 
 #### Issue 3: 404 Not Found Error
 
 **Symptoms:**
 
-- API requests return `404 Not Found`
-- Error message: *Resource not found* or *API endpoint not found*
+* API requests return `404 Not Found`
+* Error message: *Resource not found* or *API endpoint not found*
 
 **Possible Cause:**
  
-- Incorrect bucket parameter (does not match AEM instance identifier)  
+* Incorrect bucket parameter (does not match AEM instance identifier)  
 
 #### Issue 4: Pipeline Deployment Fails
 
 **Symptoms:**
 
-- Config Pipeline execution fails
-- Deployment logs show errors related to `api.yaml`
+* Config Pipeline execution fails
+* Deployment logs show errors related to `api.yaml`
 
 **Possible Causes:**
 
-- Invalid YAML syntax (indentation, quoting, or array format issues)  
-- `api.yaml` placed in incorrect directory  
-- Malformed or incorrect Client ID in the configuration  
-- Invalid Client Secret
+* Invalid YAML syntax (indentation, quoting, or array format issues)  
+* `api.yaml` placed in incorrect directory  
+* Malformed or incorrect Client ID in the configuration  
+* Invalid Client Secret
 
 #### Issue 5: Forms Communication APIs fail to execute
 
 **Symptoms:**
 
-- API requests return errors indicating unsupported or unavailable features.
-- PDF generation using XDP and XML does not work.
-- Pipeline deployment completes successfully, but runtime API calls fail.
+* API requests return errors indicating unsupported or unavailable features.
+* PDF generation using XDP and XML does not work.
+* Pipeline deployment completes successfully, but runtime API calls fail.
 
 **Possible Cause:**
 
@@ -793,4 +793,4 @@ To update the AEM instance to locate Environment Details:
 
 ## Related Articles
 
-- To learn how to set up environment for Batch (Asynchronous APIs), see [AEM Forms as a Cloud Service Communications Batch Processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).
+* To learn how to set up environment for Batch (Asynchronous APIs), see [AEM Forms as a Cloud Service Communications Batch Processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).

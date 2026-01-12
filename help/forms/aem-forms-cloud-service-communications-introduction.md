@@ -149,7 +149,8 @@ Document Extraction service provides you with the capability to get the properti
 >![NOTE]
 >
 > Document Extraction APIs support server-to-server authentication using OAuth. To know more about Document Extraction APIs, [click here](/help/forms/aem-forms-communication-api-overview.md#document-extraction-apis).
-> 
+>
+
 ## Document Conversion
 
 ### Convert to and validate PDF/A-compliant documents
