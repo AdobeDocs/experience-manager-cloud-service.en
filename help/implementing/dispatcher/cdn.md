@@ -33,7 +33,7 @@ To prepare for content delivery using AEM's built-in CDN through Cloud Manager's
 * [Introduction to SSL certificates](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
 * [Configure a CDN](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
 
-**Restricting traffic**
+### Restricting traffic {#restricting-traffic}
 
 By default, for an AEM-managed CDN setup, all public traffic can make its way to the publish service, for both production and non-production (development and stage) environments. You can limit traffic to the publish service for a given environment (for example, limiting staging by a range of IP addresses) by way of the Cloud Manager user interface.
 
@@ -68,7 +68,7 @@ Read about [configuring a purge API token](/help/implementing/dispatcher/cdn-cre
 
 For light authentication use cases including business stakeholders reviewing content, protect content by displaying a basic auth dialog requiring a username and password. [Learn more](/help/implementing/dispatcher/cdn-credentials-authentication.md).
 
-## Customer managed CDN points to AEM managed CDN {#point-to-point-CDN}
+## Customer managed CDN points to AEM managed CDN {#point-to-point-cdn}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -100,7 +100,7 @@ Before accepting live traffic, you should validate with Adobe's customer support
 
 After setting the `X-AEM-Edge-Key`, you can test that the request is routed correctly as follows.
 
-In Linux&reg;:
+In Linux:
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
@@ -134,7 +134,7 @@ This customer CDN configuration is supported for the publish tier and the previe
 
 To debug a BYOCDN configuration, use the `x-aem-debug` header with a value of `edge=true`. For example:
 
-In Linux&reg;:
+In Linux:
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
@@ -167,17 +167,17 @@ This process allows verification of details such as the host values, edge authen
 
 Presented below are several configuration examples from several leading CDN vendors.
 
-**Akamai**
+#### Akamai {#byocdn-akamai}
 
 ![Akamai1](assets/akamai1.png "Akamai")
 ![Akamai2](assets/akamai2.png "Akamai")
 
-**Amazon CloudFront**
+#### Amazon CloudFront {#byocdn-cloudfront}
 
 ![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
 ![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
 
-**Cloudflare**
+#### Cloudflare {#byocdn-cloudflare}
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
@@ -186,15 +186,15 @@ Presented below are several configuration examples from several leading CDN vend
 
 The sample configurations provided show the base settings needed. However, a customer configuration may have other impacting rules that remove, edit, or re-arrange the headers needed for AEM as a Cloud Service to serve the traffic. Below are common errors that occur when configuring a customer managed CDN to point to AEM as a Cloud Service.
 
-**Redirection to the publish service endpoint**
+#### Redirection to the publish service endpoint {#redirect-publish}
 
 When a request receives a 403 forbidden response, it means that the request is missing some required headers. A common cause for this is that the CDN is managing both apex and `www` domain traffic, but is not adding the correct header for the `www` domain. This problem can be triaged by checking your AEM as a Cloud Service CDN logs and verifying the needed request headers.
 
-**Error 421 Misdirected redirect**
+#### Error 421 Misdirected redirect {#error-421}
 
 A 421 error with the message `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate` indicates that the HTTP `Host` does not match any hosts listed on the certificate. This issue usually indicates that either `Host` or the SNI setting is wrong. Make sure that both `Host` as well as SNI settings point to the publish-p<PROGRAM_ID>-e.adobeaemcloud.com host.
 
-**Too many redirects Loop**
+#### Too many redirects loop {#redirect-loop}
 
 When a page gets a "Too Many Redirect" loop, some request header is being added at the CDN that matches a redirect that forces it back to itself. As an example:
 
