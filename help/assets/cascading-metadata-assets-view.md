@@ -9,7 +9,7 @@ role: Admin, User
 
 When capturing the metadata information of an asset, users provide information in the various available fields. You can display specific metadata fields or field values that are dependent on the options selected in the other fields. Such conditional display of metadata is called cascading metadata. In other words, you can create a dependency between a particular metadata field/value and one or more fields and/or their values.
 
-Use metadata schemas to define rules for displaying cascading metadata. For example, if your metadata schema includes an asset type field, you can define a pertinent set of fields to be displayed based on the type of asset a user selects.
+Use metadata Forms to define rules for displaying cascading metadata. For example, if your metadata form includes an asset type field, you can define a pertinent set of fields to be displayed based on the type of asset a user selects.
 
 Here are some use cases for which you can define cascading metadata:
 
@@ -29,9 +29,9 @@ Consider a scenario where you want to display cascading metadata based on the ty
 
 Irrespective of the asset type chosen, display the copyright information as a required field. You can use the [pre-defined metadata components](metadata-assets-view.md#property-components) and [assign metadata to a folder](metadata-assets-view.md#assign-metadata-form-folder).
 
-### Build Metadata Schema Form {#build-metadata-schema-form}
+### Build Metadata Forms {#build-metadata-schema-forms}
 
-Consider the steps below to create a new Metadata Schema Form: 
+Consider the steps below to create a new Metadata Form: 
 
 1. Select the [!DNL Experience Manager] logo, and go to **[!UICONTROL Settings]** > **[!UICONTROL Metadata Forms]**.
 1. Select a schema form and then select **[!UICONTROL Edit]** from the toolbar to edit the schema.
@@ -40,17 +40,17 @@ Consider the steps below to create a new Metadata Schema Form:
 
 1. Select `+` to add a new tab.
 
-Watch this video to view the sequence of steps, [Setup Metadata Forms](metadata-assets-view.md#metadata-forms).
+Watch this video to view the sequence of steps, [Setup Metadata Forms](https://video.tv.adobe.com/v/341275).
 
-### Modify an existing Metadata Schema Form {#modify-existing-metadata-schema-form}
+### Modify an existing Metadata Form {#modify-existing-metadata-form}
 
-Consider the steps below to modify an existing Metadata Schema Form:
+Consider the steps below to modify an existing Metadata Form:
 
-1. Open an existing Metadata Schema Form and navigate to the [pre-defined components](metadata-assets-view.md#property-components) that you want to add in the form and drop the elements on your canvas.
+1. Open an existing Metadata Form and navigate to the [pre-defined components](metadata-assets-view.md#property-components) that you want to add in the form and drop the elements on your canvas.
 
     ![Settings tab](assets/settings-tab-metadata-schema-tab.png)
 
-1. Add a Dropdown field for asset type. Specify a name and property path in the Settings.
+1. Add a Dropdown field as options for asset type. Specify a name and property path in the Settings.
 
    ![Drop Down settings](assets/metadata-dropdown.png)
 
@@ -62,9 +62,11 @@ Consider the steps below to modify an existing Metadata Schema Form:
 
     * To fetch the values from a CSV file dynamically, click **[!UICONTROL Import CSV]** and provide the path of the CSV file. [!DNL Experience Manager] fetches the key-value pairs in the real time when the form is presented to the user.
 
-   Both options are mutually exclusive. You cannot import the options from a CSV file and edit manually.
+      Both options are mutually exclusive. You cannot import the options from a CSV file and edit manually.
 
-   ![value](assets/value.png)
+      ![value](assets/value.png)
+   
+   * To fetch the values from a JSON path, click **[!UICONTROL Add through JSON Path]**.
 
 1. To create a dependency between the asset type field and other fields, choose the dependent field and open the **[!UICONTROL Rules]** tab.
 
@@ -80,7 +82,7 @@ Consider the steps below to modify an existing Metadata Schema Form:
    
 1. Select **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value on which to create the dependency. This field displays only drop-down fields as options. Select **[!UICONTROL Done]** to save the changes.
 
-   ![define rule](assets/define-rule.png)
+   <!--![define rule](assets/define-rule.png)-->
 
    You can edit or delete the defined rule.
    
@@ -90,10 +92,16 @@ Consider the steps below to modify an existing Metadata Schema Form:
 
 1. Repeat the steps to create dependency between the other assets such as PDF and Word in the [!UICONTROL Asset Type] field and fields such as [!UICONTROL Page Count] and [!UICONTROL Author].
 
-1. Click **[!UICONTROL Save]**. Apply the metadata schema to a folder.
+1. Click **[!UICONTROL Save]**. Apply the metadata form to a folder.
 
-1. Navigate to the folder to which you applied the Metadata Schema and open the properties page of an asset. Depending upon your choice in the Asset Type field, pertinent cascading metadata fields are displayed.
- 
+1. Navigate to the folder to which you applied the Metadata Form and open the properties page of an asset. Depending upon your choice in the Asset Type field, pertinent cascading metadata fields are displayed.
+
+   ![Cascading Metadata Form Output](assets/cascading-metadata-form-output.png)
+
+>[!NOTE]
+> 
+>To get early access to the Cascading Metadata on your Assets View account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+
 ## Next Steps {#next-steps}
 
 * [Watch a video to manage metadata forms in Assets view](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
