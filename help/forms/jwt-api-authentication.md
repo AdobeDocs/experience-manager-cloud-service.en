@@ -3,9 +3,6 @@ title: How to set up JWT (JSON Web Token) Authentication?
 description: Learn how to configure JWT (JSON Web Token) authentication for Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # JWT (JSON Web Token) Server-to-Server Authentication 
