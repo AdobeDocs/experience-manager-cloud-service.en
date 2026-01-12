@@ -3,18 +3,20 @@ title: How do set up Forms Communications Synchronous APIs?
 description: Set up development environment for Interactive Communications Synchronous APIs for Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
-# Configure OAuth Server-to-Server Access for AEM Forms Communications Synchronous APIs
+# Configure OAuth Server-to-Server Access for AEM Forms Communications APIs
 
 This guide provides instructions for configuring and invoking AEM Forms Communications Synchronous APIs that are accessed through the Adobe Developer Console using OAuth Server-to-Server authentication. 
 
 ## Prerequisites
 
 To set up an environment for running and testing AEM Forms Communications APIs, ensure that you have the following:
+
+### Update AEM as a Cloud Service environment
+
+* [AEM Release 2024.10.18459.20241031T210302Z or later](#update-aem-instance)
+* Update Product Profiles if the environment created before November 2024
 
 ### Access and permissions
 
