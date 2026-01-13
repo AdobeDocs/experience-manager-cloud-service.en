@@ -1035,10 +1035,10 @@ user-guide-title: AEM as a Cloud Service
     + [Manage Forms applications and tasks in AEM Inbox](/help/forms/manage-applications-inbox.md)
     + [Use the Out of Office option](/help/forms/configure-out-of-office-settings.md)
 + Communications APIs {#using-communications}
-    + [Overview of Communications APIs](/help/forms/aem-forms-communication-api-overview.md)
     + [Introduction to Communications APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-    + [Authentication-OAuth Server-to-Server](/help/forms/oauth-api-authetication.md)
-    + [Authentication JWT(JSON Web Token)](/help/forms/jwt-api-authentication.md)
+    + [AEM Forms Communications APIs - Overview](/help/forms/aem-forms-communication-api-overview.md)
+    + [OAuth Server-to-Server Authentication ](/help/forms/oauth-api-authetication.md)
+    + [JWT(JSON Web Token) Server-to-Server Authentication](/help/forms/jwt-api-authentication.md)
     + [Communications APIs - Synchronous processing](/help/forms/aem-forms-cloud-service-communications.md)
     + [Communications APIs - Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
     + [Communications APIs - On-Demand processing](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
