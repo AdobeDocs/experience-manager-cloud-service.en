@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2025 {#2025}
+      + [Release Notes for 2025.11.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-11-0.md) 
       + [Release Notes for 2025.10.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-10-0.md) 
       + [Release Notes for 2025.9.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-9-0.md) 
       + [Release Notes for 2025.8.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-8-0.md) 
@@ -95,6 +96,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2025 {#2025}
+      + [Maintenance Release Notes for 2025.12.0](/help/release-notes/maintenance/2025/2025-12-0.md)
       + [Maintenance Release Notes for 2025.11.0](/help/release-notes/maintenance/2025/2025-11-0.md)
       + [Maintenance Release Notes for 2025.10.0](/help/release-notes/maintenance/2025/2025-10-0.md)
       + [Maintenance Release Notes for 2025.9.0](/help/release-notes/maintenance/2025/2025-9-0.md)
@@ -130,6 +132,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2025 {#2025}
+      + [2025.11.0](/help/implementing/cloud-manager/release-notes/2025/2025-11-0.md)
       + [2025.10.0](/help/implementing/cloud-manager/release-notes/2025/2025-10-0.md)
       + [2025.9.0](/help/implementing/cloud-manager/release-notes/2025/2025-9-0.md)
       + [2025.8.0](/help/implementing/cloud-manager/release-notes/2025/2025-8-0.md)
@@ -238,6 +241,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2025 {#2025}
+      + [2025.12.04 Release Notes](/help/release-notes/universal-editor/2025/2025-12-04.md)
       + [2025.11.20 Release Notes](/help/release-notes/universal-editor/2025/2025-11-20.md)
       + [2025.11.13 Release Notes](/help/release-notes/universal-editor/2025/2025-11-13.md)
       + [2025.11.06 Release Notes](/help/release-notes/universal-editor/2025/2025-11-06.md)
@@ -816,6 +820,7 @@ user-guide-title: AEM as a Cloud Service
       + [Connect Adaptive Form to Salesforce application using OAuth 2.0 client credential flow](/help/forms/aem-forms-salesforce-integration.md)
       + [Configure [!DNL Azure] storage](/help/forms/configure-azure-storage.md)
       + [Configure [!DNL Microsoft Dynamics 365] cloud services](/help/forms/configure-msdynamics.md)
+      + [Connect Adaptive Form to Azure SQL Database](/help/forms/connect-adaptive-form-to-azure-sql.md)
       + [Configure Salesforce cloud services](/help/forms/configure-salesforce.md)
       + [Create Form Data Model](/help/forms/create-form-data-models.md)
       + [Work with Form Data Model](/help/forms/work-with-form-data-model.md)
@@ -1018,6 +1023,8 @@ user-guide-title: AEM as a Cloud Service
      + [Implement Dynamic Page Numbering](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
      + [Handle Content Overflow](/help/forms/interactive-communication/handle-content-overflow.md)
      + [Support XDP Editing](/help/forms/interactive-communication/support-xdp-editing.md)
+     + [Create Versions and Add Comments](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
+     + [Copy and Paste Interactive Communication](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
    + Associate UI {#associateui} 
      + [Associate UI in Interactive  Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
    + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
@@ -1029,10 +1036,10 @@ user-guide-title: AEM as a Cloud Service
     + [Manage Forms applications and tasks in AEM Inbox](/help/forms/manage-applications-inbox.md)
     + [Use the Out of Office option](/help/forms/configure-out-of-office-settings.md)
 + Communications APIs {#using-communications}
-    + [Overview of Communications APIs](/help/forms/aem-forms-communication-api-overview.md)
     + [Introduction to Communications APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-    + [Authentication-OAuth Server-to-Server](/help/forms/oauth-api-authetication.md)
-    + [Authentication JWT(JSON Web Token)](/help/forms/jwt-api-authentication.md)
+    + [AEM Forms Communications APIs - Overview](/help/forms/aem-forms-communication-api-overview.md)
+    + [OAuth Server-to-Server Authentication ](/help/forms/oauth-api-authetication.md)
+    + [JWT(JSON Web Token) Server-to-Server Authentication](/help/forms/jwt-api-authentication.md)
     + [Communications APIs - Synchronous processing](/help/forms/aem-forms-cloud-service-communications.md)
     + [Communications APIs - Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
     + [Communications APIs - On-Demand processing](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
@@ -1325,7 +1332,7 @@ user-guide-title: AEM as a Cloud Service
       + [Project Setup](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
       + [Build Environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
     + [Manage Environments](/help/implementing/cloud-manager/manage-environments.md)
-    + [Specialized Testing Environments (Beta)](/help/implementing/cloud-manager/specialized-test-environment.md)
+    + [Specialized Testing Environments](/help/implementing/cloud-manager/specialized-test-environment.md)
     + Manage your Code {#managing-code}
       + [Maven Project Version Handling](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
       + [Manage Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
