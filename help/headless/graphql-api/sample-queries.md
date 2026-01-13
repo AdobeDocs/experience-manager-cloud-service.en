@@ -368,7 +368,7 @@ Then you can use a query to return details of the `name` and `tags`of all entrie
 
 **Sample Query**
 
-```xml
+```graphql
 query {
   cityList(
     includeVariations: true,
@@ -384,7 +384,7 @@ query {
 
 **Sample Results**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -1656,7 +1656,7 @@ This query interrogates:
 
 **Sample Query**
 
-```xml
+```graphql
 query {
   articleList(
     includeVariations: true  ){
@@ -1683,7 +1683,7 @@ This query interrogates:
 
 **Sample Query**
 
-```xml
+```graphql
 {
   articleList(
     includeVariations: true,
