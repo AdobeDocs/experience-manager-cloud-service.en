@@ -37,6 +37,7 @@ The following are the supported values for `content`, i.e. the features that can
 |`copy`|Disables the [copy and paste buttons](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)|
 |`duplicate`|Disables the [duplicate button](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)|
 |`header-open-page`|Disables the [open page button](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page)|
+|`aem-dev-login`|Disables the [developer login button](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)|
 
 ## Changing Your Endpoint {#custom-endpoint}
 

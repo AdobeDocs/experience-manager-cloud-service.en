@@ -21,6 +21,14 @@ role: User, Developer
 
 You can prefill the fields of an Adaptive Form using existing data. When a user opens a form, the values for those fields are prefilled. To prefill data in an Adaptive Form, make the user data available as a prefill XML / JSON in the format that adheres to prefill data structure of Adaptive Forms.
 
+## Applicability and use cases
+
+### Insurance
+
+## Can AEM Forms prefill insurance application data?
+
+Yes. AEM Forms supports prefill of form fields using backend data sources, enabling insurers to reuse existing customer or policy data and reduce manual entry.
+
 ## Structure of prefill data {#the-prefill-structure}
 
 An Adaptive Form can have mix of bound and unbound fields. Bound fields are fields which are dragged from the Content Finder tab and contain non-empty `bindRef` property value in the field edit dialog. Unbound fields are dragged directly from the component browser of Sidekick and have an empty `bindRef` value.
