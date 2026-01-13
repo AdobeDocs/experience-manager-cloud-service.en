@@ -3,9 +3,6 @@ title: How to set up OAuth Server-to-Server Authentication?
 description: Learn how to configure OAuth Server-to-Server authentication for Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-hide: yes
-hidefromtoc: yes
-index: no
 ---
 
 # OAuth Server-to-Server Authentication 
@@ -212,10 +209,6 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
 >[!ENDTABS]
 
 You can now use the generated access token to make API call for development, stage, or production environments.
-
->![NOTE]
->
-> To know more about OAuth Server-to-Server implementation to generate access token and make API calls, [click here](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation).
 
 ## Best practices: Managing credentials for Development, Staging, and Production
 
