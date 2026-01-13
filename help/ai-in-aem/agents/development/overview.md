@@ -3,7 +3,6 @@ title: Development Agent Overview
 description: Learn how the Development Agent in AEM analyzes failed pipelines in Cloud Manager and build logs to suggest code fixes and speed up debugging.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-
 ---
 
 # Development Agent overview {#development-agent-overview}
@@ -72,8 +71,6 @@ You access the Development Agent through the AI Assistant found in user interfac
 
 The Development Agent's pipeline troubleshooting job requires either the Cloud Manager - Developer role or the Cloud Manager - Program Manager role.
 
-
-
 ## Sample prompts {#sample-prompts}
 
 | Prompt | Result |
@@ -88,4 +85,3 @@ Pipeline troubleshooting operates on the Full-Stack pipeline's build step. For o
 See [Access and Download Logs](/help/implementing/cloud-manager/manage-logs.md).
 
 Pipeline troubleshooting is not supported for programs using BYOGIT (Bring Your Own Git).
-
