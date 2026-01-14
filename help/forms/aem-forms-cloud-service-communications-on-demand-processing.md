@@ -5,7 +5,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
 ---
 
-# Configure OAuth Server-to-Server Access for AEM Forms Communications APIs
+# Invoke AEM Forms Communications APIs using OAuth Server-to-Server Authentication
 
 This guide provides instructions for configuring and invoking AEM Forms Communications Synchronous APIs that are accessed through the Adobe Developer Console using OAuth Server-to-Server authentication. 
 
@@ -791,6 +791,10 @@ To update the AEM instance to locate Environment Details:
 
     ![Update Environment](/help/forms/assets/update-env.png)
 
-## Related Articles
-
-* To learn how to set up environment for Batch (Asynchronous APIs), see [AEM Forms as a Cloud Service Communications Batch Processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md).
+>[!MORELIKETHIS]
+>
+>* [Introduction to AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Communication Processing - Synchronous APIs](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Communication Processing - Batch APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Forms Communications API - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
