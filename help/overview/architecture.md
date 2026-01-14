@@ -135,7 +135,7 @@ There are other adjacent services:
 * The Operational Telemetry service:
   * Is responsible for collecting key metrics from a customer experience (such as page views, core web vitals, conversion events), and responding to associated queries (for example, top page views for a given domain in the last 7 days).
 * The Assets Compute service:
-  * Is responsible for processing uploaded images, videos and documents; for example, PDF and Adobe Photoshop files. Processing can use Adobe Sensei to extract image and video metadata (such as descriptive tags or primary color tones), then generate renditions (such as different sizes or formats), with access to APIs such as the Adobe Photoshop and Adobe Lightroom APIs.
+  * Is responsible for processing uploaded images, videos and documents; for example, PDF and Adobe Photoshop files. Processing can use Adobe AI to extract image and video metadata (such as descriptive tags or primary color tones), then generate renditions (such as different sizes or formats), with access to APIs such as the Adobe Photoshop and Adobe Lightroom APIs.
 * The Identity Management Service (IMS):
   * Is the central place responsible for managing and authenticating users and user groups for a given Adobe Experience Cloud application (for example, the Cloud Manager or the AEM author tier).
   * Is accessed via the Adobe Admin Console.
