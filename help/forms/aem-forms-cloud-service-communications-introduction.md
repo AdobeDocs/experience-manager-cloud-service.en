@@ -292,10 +292,12 @@ After onboarding, to enable Communications capability for your Forms as a Cloud 
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
-## Additional Resources {#see-also}
-
-* [Communication Processing - Synchronous APIs](/help/forms/aem-forms-cloud-service-communications.md)
-* [Communication Processing - Batch APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-* [AEM Forms as a Cloud Service Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
-* [API Reference Documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
-* [Early Adopter Program Features](/help/forms/early-access-ea-features.md)
+>[!MORELIKETHIS]
+>
+>* [Introduction to AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Communication Processing - Synchronous APIs](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Communication Processing - Batch APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Forms Communications API - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+>* [API Reference Documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
+>* [Early Adopter Program Features](/help/forms/early-access-ea-features.md)
