@@ -26,7 +26,7 @@ The following release (2020.11.0) will be on December 1, 2020.
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-* **[!DNL Adobe Sensei] powered video smart tagging**: By applying AI models to analyze video content for object and action-specific tags, DAM users can spend less time adding tags and more time using the exposed, rich information. In turn, you deliver the right experience to customers. See [Smart tag video assets](/help/assets/smart-tags-for-videos.md).
+* **[!DNL Adobe AI] powered video smart tagging**: By applying AI models to analyze video content for object and action-specific tags, DAM users can spend less time adding tags and more time using the exposed, rich information. In turn, you deliver the right experience to customers. See [Smart tag video assets](/help/assets/smart-tags-for-videos.md).
 
 * **Brand Portal enhancements**: The following new features and more are available in [!DNL Brand Portal]. For details, see [[!DNL Brand Portal] release notes](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
 
