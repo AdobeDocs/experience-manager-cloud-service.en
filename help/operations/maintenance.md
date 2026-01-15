@@ -64,7 +64,7 @@ The following table illustrates the maintenance tasks that are available.
     <td>Ad-hoc Task Purge</td>
     <td>Customer</td>
     <td>
-    <p>Must be done in git. Override the out-of-the-box Maintenance window configuration node under <code>/libs</code> by creating properties under the folder <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> or <code>granite_monthly</code>.</p>
+    <p>Must be done in git. Override the out-of-the-box Maintenance window configuration node under <code>/libs</code> by creating properties under the folder <code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> or <code>granite_monthly</code>.</p>
     <p>See the Maintenance Window table below for additional configuration details. Enable the maintenance task by adding another node under the node above. Name it <code>granite_TaskPurgeTask</code>, with attribute <code>sling:resourceType</code> set to <code>granite/operations/components/maintenance/task</code> and attribute <code>granite.maintenance.name</code> set to <code>TaskPurge</code>. Configure the OSGI properties, see <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> for the list of properties.</p>
   </td>
   </tr>
@@ -72,7 +72,7 @@ The following table illustrates the maintenance tasks that are available.
     <td>Workflow Purge</td>
     <td>Customer</td>
     <td>
-    <p>Must be done in git. Override the out-of-the-box Maintenance window configuration node under <code>/libs</code> by creating properties under the folder <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> or <code>granite_monthly</code>. See the Maintenance Window table below for additional configuration details.</p>
+    <p>Must be done in git. Override the out-of-the-box Maintenance window configuration node under <code>/libs</code> by creating properties under the folder <code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> or <code>granite_monthly</code>. See the Maintenance Window table below for additional configuration details.</p>
     <p>Enable the maintenance task by adding another node under the node above (name it <code>granite_WorkflowPurgeTask</code>) with the appropriate properties. Configure the OSGI properties, see <a href="/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances">Regular Purging of Workflow Instances</a>.</p>
   </td>
   </tr>
@@ -80,7 +80,7 @@ The following table illustrates the maintenance tasks that are available.
     <td>Project Purge</td>
     <td>Customer</td>
     <td>
-    <p>Must be done in git. Override the out-of-the-box Maintenance window configuration node under <code>/libs</code> by creating properties under the folder <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> or <code>granite_monthly</code>. See the Maintenance Window table below for additional configuration details.</p>
+    <p>Must be done in git. Override the out-of-the-box Maintenance window configuration node under <code>/libs</code> by creating properties under the folder <code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> or <code>granite_monthly</code>. See the Maintenance Window table below for additional configuration details.</p>
     <p>Enable the maintenance task by adding another node under the node above (name it <code>granite_ProjectPurgeTask</code>) with the appropriate properties. See the list of <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">OSGi Properties</a> for <b>Adobe Projects Purge Configuration</b> .</p>
   </td>
   </tr>
@@ -140,9 +140,9 @@ The following table illustrates the maintenance window configurations that are a
 
 ### Locations {#locations}
 
-* Daily - /apps/settings/granite/operations/maintenance/granite_daily
-* Weekly - /apps/settings/granite/operations/maintenance/granite_weekly
-* Monthly - /apps/settings/granite/operations/maintenance/granite_monthly
+* Daily - /conf/global/settings/granite/operations/maintenance/granite_daily
+* Weekly - /conf/global/settings/granite/operations/maintenance/granite_weekly
+* Monthly - /conf/global/settings/granite/operations/maintenance/granite_monthly
 
 ### Code samples {#code-samples}
 

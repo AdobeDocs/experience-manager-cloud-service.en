@@ -37,7 +37,7 @@ Once Admin configures the metadata form, other fields can be updated manually. Y
 
 ## Smart Tags {#smart-tags}
 
-[!DNL Experience Manager Assets] uses artificial intelligence provided by [Adobe Sensei](https://www.adobe.com/sensei.html) to automatically apply relevant tags to all your uploaded assets. These tags, aptly named Smart Tags, increase the content velocity of your projects by helping you find relevant assets quickly. The smart tags are an example of metadata that is not contained in the image. 
+[!DNL Experience Manager Assets] uses artificial intelligence provided by [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) to automatically apply relevant tags to all your uploaded assets. These tags, aptly named Smart Tags, increase the content velocity of your projects by helping you find relevant assets quickly. The smart tags are an example of metadata that is not contained in the image. 
 
 The smart tags are applied in near real time and are generated based on the contents of the image. When you upload an asset, the user interface displays [!UICONTROL Processing] on the asset thumbnail for some time. Once the processing is complete, you can [view the metadata](#view-metadata) and the smart tags.
 
@@ -49,7 +49,7 @@ Smart tags also contain a confidence score as a percentage. It indicates the con
 
 ## Add or update keywords {#manually-tag}
 
-You may add more tags to your assets, in addition to the Smart Tags that are added automatically using the [!DNL Adobe Sensei] smart service. Open an asset for preview, click [!UICONTROL Tags], and type the desired keywords in the [!UICONTROL Keywords] field. To add the tag, press Return. [!DNL Assets view] indexes the keyword in near real time and your team can soon search the updated assets using the new keywords.
+You may add more tags to your assets, in addition to the Smart Tags that are added automatically using the [!DNL Adobe AI] smart service. Open an asset for preview, click [!UICONTROL Tags], and type the desired keywords in the [!UICONTROL Keywords] field. To add the tag, press Return. [!DNL Assets view] indexes the keyword in near real time and your team can soon search the updated assets using the new keywords.
 
 You can also remove tags from the [!UICONTROL Smart Tags] section that are automatically added by [!DNL Assets view] to all the uploaded assets.
 
@@ -109,6 +109,10 @@ Watch this video to view the sequence of steps:
 Once a form is created, it is automatically applied when users upload an asset of the matching MIME type.
 
 To reuse an existing form to create a new form, select a metadata form, click **[!UICONTROL Copy]** from the toolbar, provide a name, and click **[!UICONTROL Confirm]**. You can edit a metadata form to change it. When you change a form, it is used for assets uploaded after the change. It does not change the existing assets.
+
+>[!IMPORTANT] 
+>
+>The default metadata form also has a **[!UICONTROL Campaign]** tab, which comprises **[!UICONTROL Campaign Name]**, **[!UICONTROL Channels]**, and **[!UICONTROL Region]** multi-value read-only fields. It is a limited availability feature. You can get it enabled  by creating a support ticket.
 
 ### Property components {#property-components}
 

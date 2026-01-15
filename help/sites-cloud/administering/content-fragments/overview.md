@@ -1,12 +1,12 @@
 ---
-title: An Overview of working with Content Fragments
+title: An Overview of the Concepts and Best Practices of Working with Content Fragments
 description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service allow you to create and use structured content; ideal for headless delivery, and page authoring.
 feature: Content Fragments
 role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
 ---
-# An overview of working with Content Fragments {#overview-working-with-content-fragments}
+# Working with Content Fragments - Concepts and Best Practices {#working-with-content-fragments-concepts-and-best-practices}
 
 With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate, and publish page-independent content. They allow you to prepare content ready for use in multiple locations, and over multiple channels, ideal for [headless delivery](/help/headless/what-is-headless.md), and [page authoring](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
@@ -319,3 +319,53 @@ The WKND project includes:
 * Content Fragments (and other content) available under:
 
   * `.../assets.html/content/dam/wknd/en`
+
+## Best Practices {#best-practices}
+
+Content Fragments can be used to form complex structures. Adobe offers recommendations for best practices when defining, and using, both models and fragments.
+
+### Keep it Simple {#keep-it-simple}
+
+When modeling structured content in AEM, keep content structures as simple as possible to ensure strong system performance and streamlined governance.
+
+### Number of Models {#number-of-models}
+
+Create as many content models as needed, but no more.
+
+Too many models complicate governance and can slow down GraphQL queries. A small set of models, maximum of low tens, is usually sufficient. If you approach the high tens or more, reconsider your modeling strategy.
+
+### Nesting Models and Fragments (very important) {#nesting-models-and-fragments}
+
+Avoid deep or excessive nesting of content fragments using Content Fragment References, which allow fragments to reference other fragments, sometimes across multiple levels. 
+
+Heavy use of Content Fragment references can significantly impact system performance, UI responsiveness, and GraphQL query execution. Aim to keep nesting to no more than ten levels.
+
+### Number of Data Fields and Types per Model {#number-of-data-fields-and-types-per-model}
+
+Include only the data fields and types a model truly needs. 
+
+Overly complex models lead to overly complex fragments that can make authoring difficult and reduce editor performance.
+
+### Rich Text Fields {#rich-text-fields}
+
+Use Rich Text fields (the **Multi line text** Data Type) with consideration:
+
+* Fields
+
+  Limit the number of Rich Text fields per model. For performance reasons it is not recommended to have more than ten Rich Text fields in one model. If needed, it is recommended that you use [nested Content Fragments](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#using-references-to-form-nested-content).
+
+* Content
+
+  You should also limit the amount of text stored in each fragment, and the amount of HTML formatting. Very large rich-text content can negatively affect system performance.
+
+### Number of Variations {#number-of-variations}
+
+Create as many fragment variations as needed, but no more.
+
+Variations add processing time to a Content Fragment, on the author environment and upon delivery too. It is recommended to keep the number of variations to a manageable minimum. 
+
+A best practice is to not exceed ten variations per Content Fragment.
+
+### Test Before Production {#test-before-production}
+
+When in doubt, prototype your intended content structures before rolling them out to production. Early proof-of-concepts together with adequate testing, both technical and user acceptance, can help avoid issues later when facing deadlines in production.

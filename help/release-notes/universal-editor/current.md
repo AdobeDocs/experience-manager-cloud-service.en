@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2025.12.04 Release Notes
-description: These are the release notes for the 2025.12.04 release of the Universal Editor.
+title: Universal Editor 2026.01.15 Release Notes
+description: These are the release notes for the 2026.01.15 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2025.12.04 Release Notes {#release-notes}
+# Universal Editor 2026.01.15 Release Notes {#release-notes}
 
-These are the release notes for the 4 December 2025 release of the Universal Editor.
+These are the release notes for the 15 January 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,16 +20,19 @@ These are the release notes for the 4 December 2025 release of the Universal Edi
 
 ## What's New {#what-is-new}
 
-* Authorization headers have been disabled in favor of the [local developer login.](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
-* A contextual menu is now available on the [structured tree on right-click.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
-* A hotkey was added to [duplicate components.](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)
+* Support for setting and persisting [default values of model fields has been added.](/help/implementing/universal-editor/field-types.md)
+  * If no value is set, the Universal Editor will persist whatever is defined as `value` in the model definition.
+  * This ensures that what you see will match what is persisted in the backend.
+  * This is a breaking change.
 
-### New RTE {#new-rte}
+## Early Adoption Features {#early-adopter}
 
-The new ProseMirror RTE, featuring a page picker in the link dialog, is now available in the right panel. [This RTE features flexible configuration options.](/help/implementing/universal-editor/configure-rte.md)
+If you are interested in testing the upcoming features listed below and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 
+
+* Shallow copy has been implemented for Content Fragments.
 
 ## Other Improvements {#other-improvements}
 
-* An issue with the RTE not saving properly on canvas was resolved.
-* Content picker folder tree clipping was fixed.
-* `componentId` is now provided during add action.
+* Data cleanup is now performed correctly on content switch.
+* Multiple operations in extensions's update are now supported.
+* Close button for developer login now behaves as expected.
