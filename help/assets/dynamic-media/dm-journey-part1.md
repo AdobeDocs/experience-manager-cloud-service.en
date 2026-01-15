@@ -195,7 +195,7 @@ Here are several more use cases to consider.
 
 | **Issue** | **Dynamic Media solution** |
 |---|---|
-| Time-consuming and labor intensive to manually draw, measure, and cut images or videos to highlight the focal point and display appropriately across all screen sizes and devices. | Uses Smart Crop in Dynamic Media, an Adobe Sensei AI capability, to automatically detect the focal point in any image or video, and crop to maintain it. |
+| Time-consuming and labor intensive to manually draw, measure, and cut images or videos to highlight the focal point and display appropriately across all screen sizes and devices. | Uses Smart Crop in Dynamic Media, an Adobe AI capability, to automatically detect the focal point in any image or video, and crop to maintain it. |
 | Time lost that could be better spent creating high-impact experiences. | Captures the intended point of interest regardless of screen size. |
 | Single-use assets created for every experience and device. | Eliminates tedious manual tasks and delivers high-quality, fast-loading imagery and video that looks good on any device or screen. |
 
