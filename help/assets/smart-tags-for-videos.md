@@ -1,19 +1,19 @@
 ---
 title: Smart tag your video assets
-description: Experience Manager automatically adds contextual and descriptive Smart Tags to videos using [!DNL Adobe Sensei].
+description: Experience Manager automatically adds contextual and descriptive Smart Tags to videos using [!DNL Adobe AI].
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: 87d0eea2-83a1-4cfa-a4a5-425d0e8abba6
 ---
 # Smart tag your video assets {#video-smart-tags}
 
-The expanding need for new content calls for reduced manual efforts to deliver compelling digital experiences in no time. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] supports auto-tagging of video assets using artificial intelligence. Tagging the videos manually can be time-consuming. However, [!DNL Adobe Sensei] powered video smart tagging feature uses artificial intelligence models to analyze video content and add tags to the video assets. Thereby reducing time for DAM users to deliver rich experiences to their customers. Adobe's machine learning service generates two sets of tags for a video. While, one set corresponds to objects, scenes, and attributes in that video; the other set relates to actions such as drinking, running, and jogging.
+The expanding need for new content calls for reduced manual efforts to deliver compelling digital experiences in no time. [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] supports auto-tagging of video assets using artificial intelligence. Tagging the videos manually can be time-consuming. However, [!DNL Adobe AI] powered video smart tagging feature uses artificial intelligence models to analyze video content and add tags to the video assets. Thereby reducing time for DAM users to deliver rich experiences to their customers. Adobe's machine learning service generates two sets of tags for a video. While, one set corresponds to objects, scenes, and attributes in that video; the other set relates to actions such as drinking, running, and jogging.
 
 Video tagging is enabled by default in [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. However, you can [opt-out of video smart tagging](#opt-out-video-smart-tagging) on a folder. Videos are auto-tagged when you upload new videos or re-process existing ones. [!DNL Experience Manager] also creates the thumbnails and extracts metadata of the video files. The smart tags are displayed in descending order of their [confidence score](#confidence-score-video-tag) in asset [!UICONTROL Properties].
 
 ## Smart tagging videos on upload {#smart-tag-assets-on-ingestion}
 
-When you [upload video assets](add-assets.md#upload-assets) to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], the videos are processed. Once the processing is complete, see the [!UICONTROL Basic] tab of asset [!UICONTROL Properties] page. Smart tags are automatically added to the video under [!UICONTROL Smart Tags]. Asset microservices leverages [!DNL Adobe Sensei] to create these smart tags.
+When you [upload video assets](add-assets.md#upload-assets) to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service], the videos are processed. Once the processing is complete, see the [!UICONTROL Basic] tab of asset [!UICONTROL Properties] page. Smart tags are automatically added to the video under [!UICONTROL Smart Tags]. Asset microservices leverages [!DNL Adobe AI] to create these smart tags.
 
 ![Smart Tags are added to videos and seen in Basic tab of asset Properties](assets/smart-tags-added-to-videos.png)
 
@@ -105,7 +105,7 @@ The default threshold for action and object tags in [!DNL Adobe Experience Manag
 
 To add the confidence score OSGI configuration to the project deployed to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] through [!DNL Cloud Manager]:
 
-* In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, or previously `ui.apps`) the `config.author` OSGi configuration, include a config file named `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` with the following contents:
+* In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, or previously `ui.apps`) the `config.author` OSGi configuration, include a config file named `com.adobe.cq.assetcompute.impl.aisdk.AISdkImpl.cfg.json` with the following contents:
 
 ```json
 {
@@ -120,11 +120,11 @@ To add the confidence score OSGI configuration to the project deployed to [!DNL 
 
 ## Limitations {#video-smart-tagging-limitations}
 
-* You cannot train the service that applies Smart Tags to videos using any specific videos. It works with default [!DNL Adobe Sensei] settings.
+* You cannot train the service that applies Smart Tags to videos using any specific videos. It works with default [!DNL Adobe AI] settings.
 
 * Tagging progress is not displayed.
 
-* Only the videos smaller than 300 MB in file size are auto-tagged. The [!DNL Adobe Sensei] service skips video files that are larger in size.
+* Only the videos smaller than 300 MB in file size are auto-tagged. The [!DNL Adobe AI] service skips video files that are larger in size.
 
 * Only the videos in the file formats and supported codecs mentioned in [Smart Tags](/help/assets/smart-tags.md#smart-tags-supported-file-formats) are tagged.
 
