@@ -29,6 +29,5 @@ These **preview** release notes are provided as a convenience so you know what c
 
 * Leading whitespace in the rich text editor is properly sanitized, helping avoid layout and formatting quirks.
 * Pressing Enter correctly triggers inline editing again, restoring the expected editing behavior.
-* Drag labels no longer cover the entire content.
 * Several browser accessibility issues have been resolved.
 * Keyboard shortcut formatting has been unified, and icons in the command palette have been adjusted for a clearer, more consistent experience.
