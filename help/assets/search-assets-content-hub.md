@@ -134,7 +134,7 @@ The default filters include file format, approved by, date approved, expired and
      </tr>
      <tr>
       <td> Colors </td>
-      <td> Helps you search assets using colors that are automatically identified in an asset using Adobe's Sensei AI capabilities.</td>
+      <td> Helps you search assets using colors that are automatically identified in an asset using Adobe's AI capabilities.</td>
       <td>NA</td>
      </tr>  
     </tbody>
