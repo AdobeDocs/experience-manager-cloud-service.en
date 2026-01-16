@@ -105,7 +105,7 @@ For efficient asset organization that streamlines workflows, use one or more of 
 Organizing assets effectively involves categorizing them into folders, similar to file organization on a computer. Proper naming, structuring subfolders, and file management within these folders are crucial for efficient asset processing. Implementing systematic naming conventions and metadata practices maximizes the utility of your digital asset repository.
 Want to learn more? Go to [Organize assets in folders](/help/assets/organize-assets.md#organize-using-folders).
 * **Organize assets using tags:**
-Tagging assets enhances searchability, collection creation, and search ranking. Adobe Sensei's AI employs a self-learning algorithm for precise tagging, enabling quick asset retrieval. Adobe Sensei also recognizes and assigns relevant tags&ndash;including custom ones&ndash;to assets, simplifying asset management with automatic, descriptive tagging.
+Tagging assets enhances searchability, collection creation, and search ranking. Adobe AI employs a self-learning algorithm for precise tagging, enabling quick asset retrieval. Adobe AI also recognizes and assigns relevant tags&ndash;including custom ones&ndash;to assets, simplifying asset management with automatic, descriptive tagging.
 Want to learn more? Go to [Organize assets using tags](/help/assets/organize-assets.md#use-tags-to-organize-assets).
 * **Organize assets as collections:**
 Dynamic Media along with Experience Manager Assets allows for the efficient creation, editing, and sharing of asset collections among users. You can establish various collection types, including static lists and dynamic, search-based compilations. These collection types can be shared across diverse locations with customizable access and editing rights.
@@ -144,9 +144,9 @@ Want to try it? Go to [Fundamentals of creating image presets to render assets](
 
 **Business case:** *Ensure that the main point of interest of my images or videos remains in focus across devices.*
 
-Smart Crop is a feature in Dynamic Media that uses Adobe Sensei, Adobe's AI and machine learning framework, to automate the cropping of images and videos. It intelligently detects and focuses on the main subject or point of interest in an image or video. This intelligence ensures that the focal point is maintained across various screen sizes on desktop computers and mobile devices.
+Smart Crop is a feature in Dynamic Media that uses Adobe AI, Adobe's AI and machine learning framework, to automate the cropping of images and videos. It intelligently detects and focuses on the main subject or point of interest in an image or video. This intelligence ensures that the focal point is maintained across various screen sizes on desktop computers and mobile devices.
 
-A best practice is to create an Image Profile with Smart Crop. In the profile, you can define various screen sizes and let Adobe Sensei do the rest, ensuring that your images and videos are always optimized for the viewer's device.
+A best practice is to create an Image Profile with Smart Crop. In the profile, you can define various screen sizes and let Adobe AI do the rest, ensuring that your images and videos are always optimized for the viewer's device.
 
 Want to learn more? Watch [Using Smart Crop with AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minutes, 35 seconds) and [Using Dynamic Media Smart Crop for Video](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 minutes, 22 seconds).
 
