@@ -21,7 +21,7 @@ To further enhance asset search, Content Hub allows you to:
 
 * Automatically generate more properties for each asset upon successful upload, such as, file size, format, resolution, and some other properties.
 
-* Use the artificial intelligence provided by [Adobe Sensei](https://www.adobe.com/sensei.html) to automatically apply relevant tags to all your uploaded assets. These tags, aptly named Smart Tags, increase the content velocity of your projects by helping you find relevant assets quickly.
+* Use the artificial intelligence provided by [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) to automatically apply relevant tags to all your uploaded assets. These tags, aptly named Smart Tags, increase the content velocity of your projects by helping you find relevant assets quickly.
 
 Ensure that you only upload your [brand approved assets to the Content Hub](/help/assets/approve-assets.md).
 
