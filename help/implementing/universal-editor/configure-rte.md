@@ -15,6 +15,13 @@ The Universal Editor provides a rich text editor (RTE) both in place and in the 
 
 This RTE is configurable using [component filters.](/help/implementing/universal-editor/filtering.md) This document describes what configuration options are available along with examples.
 
+>[!NOTE]
+>
+>When you start a Universal Editor project, all rich text features that your backend supports (AEM with Edge Delivery or headless implementation) are automatically active.
+>
+>* You can deactivate those options you do not need.
+>* Activating options that are not compatible with your project type is not supported.
+
 ## Configuration Structure {#structure}
 
 RTE configuration consists of two parts:

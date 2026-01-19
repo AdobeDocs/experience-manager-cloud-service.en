@@ -25,7 +25,7 @@ Events include the request's and response's payload and are triggered once the c
 
 ## Content Update Events {#content-events}
 
-### aue:content-add {#content-add}
+### aue&colon;content-add {#content-add}
 
 The `aue:content-add` event is triggered when a new component is added to a container.
 
@@ -47,7 +47,7 @@ The payload is content from the Universal Editor service, with fallback content 
 }
 ```
 
-### aue:content-details {#content-details}
+### aue&colon;content-details {#content-details}
 
 The `aue:content-details` event is triggered when a component is loaded in the properties panel.
 
@@ -64,7 +64,7 @@ The payload is the component's content and optionally its schema.
 }
 ```
 
-### aue:content-move {#content-move}
+### aue&colon;content-move {#content-move}
 
 The `aue:content-move` event is triggered when a component is moved.
 
@@ -83,7 +83,7 @@ The payload is the component, source container, and target container.
 }
 ```
 
-### aue:content-patch {#content-patch}
+### aue&colon;content-patch {#content-patch}
 
 The `aue:content-patch` event is triggered when a component's data is updated in properties panel.
 
@@ -102,7 +102,7 @@ The payload is a JSON patch of the updated properties.
 }
 ```
 
-### aue:content-remove {#content-remove}
+### aue&colon;content-remove {#content-remove}
 
 The `aue:content-remove` event is triggered when a component is removed from a container.
 
@@ -118,7 +118,7 @@ The payload is the item ID of the removed component.
 }
 ```
 
-### aue:content-update {#content-update}
+### aue&colon;content-update {#content-update}
 
 The `aue:content-update` event is triggered when the properties of a component are updated in-context.
 
@@ -174,7 +174,7 @@ Response Payload
 
 ## UI Events {#ui-events}
 
-### aue:ui-preview {#ui-preview}
+### aue&colon;ui-preview {#ui-preview}
 
 The `aue:ui-preview` event is triggered when the editing mode of the page is changed to **Preview**.
 
@@ -186,7 +186,7 @@ The payload is empty for this event.
 }
 ```
 
-### aue:ui-edit {#ui-edit}
+### aue&colon;ui-edit {#ui-edit}
 
 The `aue:ui-edit` event is triggered when the editing mode of the page is changed to **Edit**.
 
@@ -198,7 +198,7 @@ The payload is empty for this event.
 }
 ```
 
-### aue:ui-viewport-change {#ui-viewport-change}
+### aue&colon;ui-viewport-change {#ui-viewport-change}
 
 The `aue:ui-viewport-change` event is triggered when the viewport size is changed.
 
@@ -213,7 +213,7 @@ The payload is the dimensions of the viewport.
 }
 ```
 
-### aue:initialized {#initialized}
+### aue&colon;initialized {#initialized}
 
 The `aue:initialized` event is triggered to let the remote page know that it is successfully loaded in the Universal Editor.
 
@@ -251,4 +251,3 @@ The payload is empty for this event.
 ## Additional Resources {#additional-resources}
 
 * [Universal Editor Calls](/help/implementing/universal-editor/calls.md)
-
