@@ -63,23 +63,6 @@ Use the `ContentFragmentSelector` component. There are several installation opti
 
 Once the Content Fragment Selector is set up and authenticated to use the Content Fragment Selector with your AEM as a Cloud Service application, you can select Content Fragments or perform various other operations to search for your fragments in the repository:
 
-![The Content Fragment Selector](/help/headless/assets/content-fragment-selector-using.png)
-
-* From the top toolbar you can:
-  * Use the **Repository** selector at the top right, to select the repository you want to use
-  * Select the format; list or grid
-* In the far left panel you can:
-  * Hide, or show, folders from the selected repository
-  * Select a specific folder to show Content Fragments in that folder
-* In the main panel you can:
-  * Select Content Fragments
-  * Search for Content Fragments
-  * Sort the current list according to various columns; both ascending or descending
-  * See the view format indicator
-  * Show, hide, and specify filters
-
-<!-- CQDOC-23234 - needs a new screenshot -->
-
 ![The Content Fragment Selector](/help/headless/assets/content-fragment-selector-unwrapped.png)
 
 * From the top toolbar you can:
