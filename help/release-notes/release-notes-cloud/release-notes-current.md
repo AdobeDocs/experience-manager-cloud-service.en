@@ -63,6 +63,8 @@ To opt in to participate in this program, email [aemagentsteam@adobe.com](mailto
 * Names and Adobe ID's of team members who will actively use agents.
 * List Specific agents that you or your team will want to use. Or simply say "All Agents."
 
+Customers selected for participation will be notified directly by Adobe. Participation is subject to eligibility considerations, including customer licensing and limited program capacity. While not all requests can be accommodated initially, additional customers may be considered in future beta waves.
+
 ### AEM Foundation (Beta programs) {#aem-foundation-beta-programs}
 
 See [AEM Foundation beta programs](#foundation-early-adopter).
