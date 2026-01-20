@@ -90,6 +90,10 @@ See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes
 
 AEM Assets now includes automatic malware scanning of uploaded files, ensuring that suspicious assets are quarantined before entering the DAM to protect your repository from threats. Administrators can configure scan settings and quarantine retention policies for streamlined security controls.
 
+**AI-Generated metadata – Eligibility Update**
+
+AI-Generated metadata in AEM Assets no longer requires the GenAI Rider to be signed in order to be enabled. The feature is now available to both customers who have signed the GenAI Rider and customers who have not yet been validated. Customers who have explicitly opted out of GenAI usage will continue to have the feature disabled. To manage the feature enablement at the environment-level, please see [Disable AI-generated metadata](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata). This change will be made for customers on release version 23482 or later.
+
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

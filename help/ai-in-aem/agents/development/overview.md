@@ -23,6 +23,8 @@ Currently, the agent can retrieve pipeline statuses and help you troubleshoot fa
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
 
+Email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) with feedback or requests to access this agent.
+
 ## Access the Development Agent through Cloud Manager {#how-to-access-the-agent}
 
 You access the Development Agent through the AI Assistant found in user interfaces including Cloud Manager or Experience Hub.
@@ -75,13 +77,13 @@ The Development Agent's pipeline troubleshooting job requires either the Cloud M
 
 | Prompt | Result |
 | --- | --- |
+| *Troubleshoot my failed pipeline* | Performs an analysis of why a pipeline failed; if it is unclear which pipeline is being referred to, additional questions will be asked to the user.|
 | *List my failed pipelines for program Main Program.* | While results may vary, this prompt outputs a table of failed pipelines, with a follow-up suggestion to reference a specific pipeline to analyze. |
-| *Analyze my failed pipeline called "Dev Pipeline."* | This prompt results in an analysis of the failed pipeline with suggestions to fix. |
+| *Analyze my failed pipeline called "Dev Pipeline."* | This prompt results in an analysis of the failed pipeline with suggestions to fix. If there are multiple failures, additional questions will be asked of the user. |
+| *Troubleshoot pipeline execution 1234567* | By providing an exact pipeline execution id, a pipeline analysis is performed. |
 
 ## Out-of-scope features {#out-of-scope-features}
 
 Pipeline troubleshooting operates on the Full-Stack pipeline's build step. For other pipeline types and steps, debug failures by downloading and inspecting the logs.
 
 See [Access and Download Logs](/help/implementing/cloud-manager/manage-logs.md).
-
-Pipeline troubleshooting is not supported for programs using BYOGIT (Bring Your Own Git).
