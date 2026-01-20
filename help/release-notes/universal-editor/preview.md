@@ -7,7 +7,7 @@ role: Admin
 
 # Universal Editor Preview Release Notes {#preview}
 
-These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 15 January 2026.
+These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 21 January 2026.
 
 These **preview** release notes are provided as a convenience so you know what changes to the Universal Editor are upcoming and you can test them by [switching to your preview environment.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -21,10 +21,13 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming New Features {#what-is-new}
 
-* Support for setting and persisting default values of model fields has been added.
+* Text blocks in the Content Tree show short text previews.
+* Plain text fields support multi-line text areas.
+* Extensions can use the Toast API to show in-product notifications.
 
 ## Upcoming Improvements {#other-improvements}
 
-* Data cleanup is now performed correctly on content switch.
-* Multiple operations in extensions's update are now supported.
-* Close button for developer login now behaves as expected.
+* Leading whitespace in the rich text editor is properly sanitized, helping avoid layout and formatting quirks.
+* Pressing Enter correctly triggers inline editing again, restoring the expected editing behavior.
+* Several browser accessibility issues have been resolved.
+* Keyboard shortcut formatting has been unified, and icons in the command palette have been adjusted for a clearer, more consistent experience.
