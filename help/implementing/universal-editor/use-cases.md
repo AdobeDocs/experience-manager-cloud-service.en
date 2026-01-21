@@ -73,7 +73,7 @@ For a page or app to be editable by the Universal Editor, it must be properly in
 
 * [Attributes and Types](/help/implementing/universal-editor/attributes-types.md) - In order for an app or page to be editable by the Universal Editor, it must be properly instrumented. This includes including the proper metadata so the editor can edit the content of the app. 
 * [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md) - Once the metadata is present to enable editing of a component, you define what fields and component types they can manipulate in the properties panel of the editor.
-* [Universal Editor Events](/help/implementing/universal-editor/events.md) - You can further customize your app by enhancing the editing experience in your app by consuming events the Universal Editor emits on content or UI interactions.
+* [Universal Editor Events](/help/implementing/universal-editor/events-universal-editor.md) - You can further customize your app by enhancing the editing experience in your app by consuming events the Universal Editor emits on content or UI interactions.
 
 The Universal editor can also be adapted to your project needs.
 
