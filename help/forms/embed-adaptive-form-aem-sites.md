@@ -69,9 +69,9 @@ You can take full advantage of this feature by using the following options:
 
 Before you start embedding a new Adaptive Form or a pre-existing Adaptive Form using **[!UICONTROL Adaptive Forms – Embed(v2)]**, enable **Adaptive Forms Core Components** and add **Adaptive Forms Client Libraries** to your AEM Sites page:
 
-### Enable Adaptive Forms Core Components for your AEM Cloud Service environment
+<!--### Enable Adaptive Forms Core Components for your AEM Cloud Service environment
 
-Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
+Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.-->
 
 ### Add Adaptive Forms Client Libraries to your AEM Sites page or Experience Fragment 
 
