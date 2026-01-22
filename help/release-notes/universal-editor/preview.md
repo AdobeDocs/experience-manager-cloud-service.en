@@ -7,7 +7,7 @@ role: Admin
 
 # Universal Editor Preview Release Notes {#preview}
 
-These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 21 January 2026.
+These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 29 January 2026.
 
 These **preview** release notes are provided as a convenience so you know what changes to the Universal Editor are upcoming and you can test them by [switching to your preview environment.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -21,13 +21,15 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming New Features {#what-is-new}
 
-* Text blocks in the Content Tree show short text previews.
-* Plain text fields support multi-line text areas.
-* Extensions can use the Toast API to show in-product notifications.
+* Remove component method was exposed to `editorActions`.
+* Copy component method was exposed to `editorActions`.
+* Definitions were exposed to extensibility.
+* Move component method was exposed to `editorActions`.
+* Add component method was exposed to `editorActions`.
+* Block details implemented for V2.
 
 ## Upcoming Improvements {#other-improvements}
 
-* Leading whitespace in the rich text editor is properly sanitized, helping avoid layout and formatting quirks.
-* Pressing Enter correctly triggers inline editing again, restoring the expected editing behavior.
-* Several browser accessibility issues have been resolved.
-* Keyboard shortcut formatting has been unified, and icons in the command palette have been adjusted for a clearer, more consistent experience.
+* The `content` extensibility was renamed to `details` to follow API schema.
+* Contextual menu behavior was improved.
+
