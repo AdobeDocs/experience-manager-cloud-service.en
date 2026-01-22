@@ -32,4 +32,4 @@ These **preview** release notes are provided as a convenience so you know what c
 
 * The `content` extensibility was renamed to `details` to follow API schema.
 * Contextual menu behavior was improved.
-
+* Fixed a bug when clicking the badge of an editable item so that the context menu opens properly.
