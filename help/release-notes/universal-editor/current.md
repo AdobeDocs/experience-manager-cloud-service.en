@@ -20,7 +20,11 @@ These are the release notes for the 15 January 2026 release of the Universal Edi
 
 ## What's New {#what-is-new}
 
-*
+* Labels (as short text previews) were added to text blocks in [the Content Tree.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* TextArea is now supported for plain text fields.
+* The config endpoint is now used for UI capabilities.
+* TextArea from Content Fragments is now supported.
+* Toast API is now exposed to extensions.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -30,4 +34,12 @@ If you are interested in testing the upcoming features listed below and sharing 
 
 ## Other Improvements {#other-improvements}
 
-* 
+* A problem with the canvas layout when navigating via location bar was fixed.
+* Leading whitespace wast sanitized in the RTE.
+* Inline editing was restored on enter.
+* Drag label was reverted to not show entire content.
+* Browser accessibility issues were resolved.
+* `selectEditables([])` is now used to unselect all components via extensibility.
+* The metadata table is now created in the right location.
+* Fixed an issue where copied Content Fragment resources were pointing to `/data/undefined`.
+
