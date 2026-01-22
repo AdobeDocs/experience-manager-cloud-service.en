@@ -11,3 +11,10 @@ experience-manager-cloud-service.en.code-workspace
 *.iml
 .cursorrules
 .vscode/adobe-markdown.code-snippets
+.cursor/mcp.json
+.cursor-agents/
+.cursor-agents
+usage-agents.log
+setup-agent.md
+.cursor/
+.vscode/
