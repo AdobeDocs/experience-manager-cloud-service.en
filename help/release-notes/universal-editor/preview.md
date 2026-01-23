@@ -26,7 +26,7 @@ These **preview** release notes are provided as a convenience so you know what c
 * Definitions were exposed to extensibility.
 * Move component method was exposed to `editorActions`.
 * Add component method was exposed to `editorActions`.
-* Block details implemented for V2.
+* Version 2.0 of the Document Authoring API is released.
 
 ## Upcoming Improvements {#other-improvements}
 
