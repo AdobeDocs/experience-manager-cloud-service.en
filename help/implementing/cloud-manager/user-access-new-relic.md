@@ -29,8 +29,6 @@ New Relic One APM for AEM as a Cloud Service has many features.
 
 * Holistic performance optimization by combining key metrics from infrastructure-level monitoring and application (Adobe Experience Manager) monitoring
 
-* AEM as a Cloud Service exposes Java Management Extensions (JMX) MBeans and health checks directly within New Relic Insights, enabling in-depth inspection of application performance and health metrics.
-
 ## Activate your New Relic One sub-account {#activate-sub-account}
 
 For a newly created program, a New Relic One sub-account is created for you. However, you must activate it for it to ingest data. This activation is not automatic. Follow these steps to activate your sub-account.
