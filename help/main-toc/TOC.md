@@ -1490,7 +1490,6 @@ user-guide-title: AEM as a Cloud Service
       + [SPA WKND Tutorial](/help/implementing/developing/hybrid/wknd-tutorial.md)
       + [Getting Started using React](/help/implementing/developing/hybrid/getting-started-react.md)
       + [Getting Started using Angular](/help/implementing/developing/hybrid/getting-started-angular.md)
-      + [SPA Deep Dives](/help/implementing/developing/hybrid/deep-dives-gems.md)
       + [Developing SPAs for AEM](/help/implementing/developing/hybrid/developing.md)
       + [SPA Editor Overview](/help/implementing/developing/hybrid/editor-overview.md)
       + [SPA Blueprint](/help/implementing/developing/hybrid/blueprint.md)
