@@ -19,11 +19,11 @@ To do this, the Universal Editor provides content authors with an intuitive UI t
 
 >[!NOTE]
 >
->This document assumes you are already familiar with how to access and navigate the Universal Editor. If you are not, see [Accessing and Navigating the Universal Editor](/help/sites-cloud/authoring/universal-editor/navigation.md).
+>This document assumes you are already familiar with how to access and navigate the Universal Editor. If you are not, see [Accessing and Navigating the Universal Editor.](/help/sites-cloud/authoring/universal-editor/navigation.md)
 
 >[!TIP]
 >
->For a more detailed introduction to the Universal Editor, see [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md).
+>For a more detailed introduction to the Universal Editor, see [Universal Editor Introduction.](/help/implementing/universal-editor/introduction.md)
 
 ## Editing Content {#editing-content}
 
@@ -33,9 +33,13 @@ Editing content is simple and intuitive. As you mouse over content in the editor
 
 >[!TIP]
 >
->By default, tapping or clicking on content selects it for editing. If you want to navigate your content by following links, switch to [preview mode](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode).
+>By default, tapping or clicking on content selects it for editing. If you want to navigate your content by following links, switch to [preview mode.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-Depending on the content you select, you may have different in-place editing options and you may additional information and options for the content in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
+Depending on the content you select, you may have different in-place editing options and you may additional information and options for the content in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+
+Every piece of editable content is badged with the type of content it is. Depending on the content, you can click this badge for quick access to edit actions.
+
+![Editable badge options](assets/editable-badge.png)
 
 ### Editing Plain Text {#edit-plain-text}
 
@@ -45,7 +49,7 @@ You can edit the text in place by double-clicking or double-tapping the componen
 
 The thin blue outline turns to a heavy blue outline to indicate select and a cursor appears. Make your changes and then press enter/return or select outside of the text box to save your changes.
 
-When you select the text component, its details are shown in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). You can also edit the text in the panel.
+When you select the text component, its details are shown in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) You can also edit the text in the panel.
 
 ![Editing text in the properties panel](assets/ue-editing-text-component-rail.png)
 
@@ -69,11 +73,15 @@ Changes are automatically saved once focus leaves the edited field.
 
 #### The Properties Panel {#properties-rail}
 
-The [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) shows an item for the selected text. Tap the entry to open a dialog presenting a larger canvas to edit the text.
+The [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) shows an entry for the selected rich text component.
+
+![Rich text component in the properties panel](assets/rich-text-properties-panel.png)
+
+Tap the entry to open a dialog presenting a larger canvas to edit the rich text.
 
 ![Rich text editing dialog](assets/rich-text-canvas.png)
 
-Tap or click **Cancel** or **Done** to discard or save the changes, respectively.
+Tap or click **Cancel** or **Done** to discard or save the changes, respectively. You can also press the escape key to save changes and close the dialog.
 
 #### Rich Text Formatting Options {#formatting-options}
 
@@ -86,14 +94,21 @@ The rich text editor (RTE) of the Universal Editor allows the author to apply st
 * Superscript
 * Subscript
 * Bulleted list
-* Numbered list
+  * Use the tab key to indent and shift+tab to outdent
+* Ordered list
+  * Use the tab key to indent and shift+tab to outdent
 * Link
+* Unlink
+* Image
+* Remove All Formatting
+
+Existing tables can be edited using the RTE, but new tables can not be created.
 
 The RTE can be configured to hide options or show additional options depending on authors' needs. Please see the document [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more information.
 
 ### Editing Media {#edit-media}
 
-You can view its details in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
+You can view its details in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Editing media](assets/ue-edit-media.png)
 
@@ -106,7 +121,7 @@ Changes are saved to your content automatically.
 
 ### Editing Content Fragments {#edit-content-fragment}
 
-If you select a [Content Fragment](/help/sites-cloud/administering/content-fragments/overview.md), you can edit its details in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
+If you select a [Content Fragment](/help/sites-cloud/administering/content-fragments/overview.md), you can edit its details in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Editing a Content Fragment](assets/ue-edit-cf.png)
 
@@ -224,13 +239,17 @@ Copy and paste can be on the same browser tab or between browser tabs, provided 
 >
 >Use the hot key `Command-C` or `Command-V` to copy or paste, respectively.
 
+## Context Options {#context-options}
 
+When editing in place, the editor will offer context-relevant options with a right-click such as duplicating, deleting, or copying components.
+
+![Context options menu](assets/context-options-menu.png)
 
 ## Previewing Content {#previewing-content}
 
 When you are finished editing content, you often want to navigate it to see how it looks in the content of other pages. In [preview mode](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode) you can click links to navigate your content as a reader would. The content is rendered in the editor as it would be published.
 
-In preview mode, tapping or clicking on content reacts as it would to a reader of the content. If you want to select the content for editing, toggle out of [preview mode](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode).
+In preview mode, tapping or clicking on content reacts as it would to a reader of the content. If you want to select the content for editing, toggle out of [preview mode.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
 ## Editing Component Inheritance {#inheritance}
 
@@ -240,7 +259,7 @@ Using the Universal Editor, you can cancel inheritance for content by simply upd
 
 If the **AEM Multi-Site-Management (MSM) Extension** is enabled for your program, you have [additional toolbar options](#inheritance-extension) to view and change the inheritance status of an individual component within the Universal Editor.
 
-For more details on how inheritance works using the Universal Editor, see [Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md).
+For more details on how inheritance works using the Universal Editor, see [Content Inheritance in the Universal Editor.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
 
 ## Optional Toolbar Features {#toolbar-options}
 
