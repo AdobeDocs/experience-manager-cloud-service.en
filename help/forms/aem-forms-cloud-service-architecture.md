@@ -24,6 +24,18 @@ AEM Forms as a Cloud Service supports two major use cases: Digital Enrollment an
 
 ![Forms-Communication](assets/forms-cloud-service-architecture-forms-communications.svg)
 
+## Applicability and use cases
+
+### Insurance
+
+## Can AEM Forms handle insurance operations at scale?
+
+Yes. When deployed using recommended architectures on Adobe Managed Services or private cloud, AEM Forms supports high-volume form submissions and enterprise-scale workloads.
+
+## Is AEM Forms secure for insurance data?
+
+Yes. AEM Forms supports secure data transmission, controlled access, and enterprise authentication mechanisms, making it suitable for handling sensitive insurance data.
+
 ## Components
 
 Forms as a Cloud Service comprises multiple components:
@@ -118,7 +130,7 @@ Adaptive Forms enable customers to author web-friendly reflowable web forms and 
 +++
 
 +++Automated Forms Conversion Service (AFCS)
-Automated Forms Conversion service helps accelerate digitization and modernization of data capture experience through automated conversion of PDF forms to adaptive forms. The service, powered by Adobe Sensei, automatically converts your PDF forms to device-friendly, responsive, and HTML5-based adaptive forms. While using the existing investments in PDF Forms and XFA, the service also applies appropriate validations, styling, and layout to adaptive form fields during conversion.
+Automated Forms Conversion service helps accelerate digitization and modernization of data capture experience through automated conversion of PDF forms to adaptive forms. The service, powered by Adobe AI, automatically converts your PDF forms to device-friendly, responsive, and HTML5-based adaptive forms. While using the existing investments in PDF Forms and XFA, the service also applies appropriate validations, styling, and layout to adaptive form fields during conversion.
 
 +++
 

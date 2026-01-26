@@ -1,66 +1,51 @@
 ---
-title: Release Notes for Cloud Manager 2025.11.0
-description: Learn about the release of Cloud Manager 2025.11.0 in Adobe Experience Manager as a Cloud Service.
+title: Release Notes for Cloud Manager 2026.1.0
+description: Learn about the release of Cloud Manager 2026.1.0 in Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 ---
-# Release notes for Cloud Manager 2025.11.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release notes for Cloud Manager 2026.1.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
 <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2025.08.0+Release -->
 
-Learn about the release of Cloud Manager 2025.11.0 in AEM (Adobe Experience Manager) as a Cloud Service.
+Learn about the release of Cloud Manager 2026.1.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Release dates {#release-date}
 
-The release date for Cloud Manager 2025.11.0 in AEM as a Cloud Service is Thursday, November 6, 2025. 
+The release date for Cloud Manager 2026.1.0 in AEM as a Cloud Service is Thursday, January 22, 2026. 
 
-The next planned release is Thursday, December 4, 2025.
-
-## What's new - Experience Hub {#experience-hub-whats-new}
-
-* **Simplified access to Experience Hub**
-
-    User role selection was removed and a guide added for **Preset** selection (Content Author, Asset Librarian, Admin & IT).
-
-* **Announcements** and **Product updates**
-
-    You can switch and iterate between the available announcements, but also dismiss them.
-
-* **Recents**
-
-    Added support for additional pages and resources, including page editor, assets, programs, and pipeline execution details, security pages.
-
-* **Programs list**
-
-    Showing the AEM Cloud Manager programs in your organization with quick access into the Cloud Manager details page.
-
-* **AEM Guides**
-
-    Quick action and Shortcut for the Authoring Environments that have AEM Guides add-ons enabled.
+The next planned release is Thursday, February 5, 2026.
 
 ## What's new - Cloud Manager {#cloud-manager-whats-new}
 
-* **One-click rollback for pipeline deployments**
+* **Configuration pipelines now support managed secrets**
 
-    Quickly revert to a previous deployment if the latest customer source code is not working as expected. There is no need to rerun the full pipeline or manually revert commits. <!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
+    Users can now add and manage secrets directly in Cloud Manager configuration pipelines. These secrets securely override values in the pipeline configuration spec and support flexible, environment-specific deployments.
 
-    See [Restore the Previous Code Deployed in AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
+    ![View/Edit variables option on the drop-down menu for a selected pipeline](/help/implementing/cloud-manager/release-notes/assets/view-edit-variables-option.png) 
+    *View/Edit variables option on the drop-down menu for a selected pipeline.* 
 
-    See also [Content Restore in AEM as a Cloud Service](/help/operations/restore.md).
+    ![Variables Configuration dialog box](/help/implementing/cloud-manager/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*Variables Configuration dialog box.*
 
-* **Self-serve WAF setup for Edge Delivery Services**
+* **Improved stability, performance, and reliability**
 
-    When you create an Edge Delivery Services program in Cloud Manager, you can enable the Web Application Firewall (WAF). This setting shields your site from malicious traffic and DDoS attacks immediately, reducing manual setup work.
+    This release includes optimization and maintenance updates that improved the stability, performance, and reliability of Cloud Manager.
 
-    See [Create your First Edge Delivery Site with One Click](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md).
+
 
 
 ## Beta programs {#private-beta-program}
 
 Participate in Cloud Manager's beta programs to get exclusive access to upcoming features before their general release.
+
+>[!IMPORTANT]
+>
+>Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk.
+
+See also [AEM Beta programs](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
 The following opportunities are currently available:
 <!--
@@ -95,27 +80,6 @@ You control which pipelines use **Smart build**. During the beta, this option ap
 Interested? Email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe OrgID and Program ID.
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
-
-### Specialized Testing Environment {#specialized-test-environment}
-
-Cloud Manager now supports the addition of a new environment type called **Specialized Testing Environment**. The environment is designed to help teams validate features under near-production conditions before going live. This environment type is distinct from *Production + Stage*, *Development*, or *Rapid Development* environments and offers a focused space for running advanced validation scenarios.
-
-**Recent enhancements**
-
-* You can now configure a Specialized Testing Environment on a Non-Production Pipeline through a simpler, more intuitive workflow. The streamlined setup speeds completion and reduces configuration errors.
-* **Copy Content** is now supported in Specialized Testing Environments. You can now run **Copy Content** safely in isolated testing environments that mirror Production. <!-- (CMGR‑68900) -->
-
-See [Add a Specialized Testing Environment](/help/implementing/cloud-manager/specialized-test-environment.md).
-
-![Add environment dialog box with Specialized Testing Environment radio button selected](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
-
->[!NOTE]
->
->Adobe has closed beta access requests for Specialized Testing Environments, having reached a sufficient number of participants. The feature is now in preparation for general availability.
-
-<!--
-If you are interested in testing this new feature and sharing your feedback, send an email to [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) from your email address associated with your Adobe ID. -->
-
 
 ### Bring Your Own Git (BYOG) {#gitlab-bitbucket-azure-vsts}
 
@@ -155,7 +119,7 @@ See [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage
 
 ## Bug fixes {#bug-fixes}
 
-There are no significant bug fixes in the November 2025 Cloud Manager release.
+There are no significant bug fixes in the December 2025 Cloud Manager release.
 
 
 <!-- ## Known issues {#known-issues} -->
