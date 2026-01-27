@@ -694,25 +694,27 @@ Some of the key benefits of Discovery Agent include:
 
 ## **Content Optimization Agent**
 
-# Content Optimization Agent
-
 The **Content Optimization Agent** helps refine and adapt assets using natural language prompts. It can generate new renditions, adjust visuals, change backgrounds, and create channel-ready variations automatically. Works with the Discovery Agent and **Dynamic Media with OpenAPI** for seamless optimization.
 
 ## Key Benefits
+
 * **Effortless asset transformation:** Resize, sharpen, recolor, or mirror images.  
 * **Channel-optimized outputs:** Generate renditions for Instagram, web banners, and other marketing channels.  
 * **Creative enhancements at scale:** Apply background changes or overlays for high-volume workflows.  
 
 ## Access
+
 Via **AI Assistant** in AEM.
 
 ## Sample Prompts
+
 * `Create a 2000px JPEG rendition.`  
 * `Sharpen the image.`  
 * `Change background color to #ff8932.`  
 * `Create a rendition for an Instagram story.`  
 
 ## Limitations
+
 * Some optimizations are not supported for PNG assets.
 
 <table>
