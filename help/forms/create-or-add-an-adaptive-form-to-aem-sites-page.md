@@ -64,11 +64,8 @@ You can take full advantage of this feature by utilizing the following options:
 
 ## Requirements to create or add an Adaptive Form in AEM Sites page or AEM Experience Fragment {#before-you-start-creating-an-adaptive-form}
 
-Before you start creating or an Adaptive Form, enable Adaptive Forms Core Components and add Adaptive Forms Client Libraries to your AEM Sites page:
+Before you start creating or an Adaptive Form add Adaptive Forms Client Libraries to your AEM Sites page:
 
-<!--### Enable Adaptive Forms Core Components for your AEM Cloud Service environment
-
-Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment. -->
 
 ### Add Adaptive Forms Client Libraries to your AEM Sites page or Experience 
 
