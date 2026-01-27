@@ -132,6 +132,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2025 {#2025}
+      + [2025.12.0](/help/implementing/cloud-manager/release-notes/2025/2025-12-0.md)
       + [2025.11.0](/help/implementing/cloud-manager/release-notes/2025/2025-11-0.md)
       + [2025.10.0](/help/implementing/cloud-manager/release-notes/2025/2025-10-0.md)
       + [2025.9.0](/help/implementing/cloud-manager/release-notes/2025/2025-9-0.md)
@@ -240,7 +241,10 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Universal Editor {#universal-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
+    + 2026 {#2026}
+      + [2026.01.15 Release Notes](/help/release-notes/universal-editor/2026/2026-01-15.md)
     + 2025 {#2025}
+      + [2025.12.12 Release Notes](/help/release-notes/universal-editor/2025/2025-12-12.md)
       + [2025.12.04 Release Notes](/help/release-notes/universal-editor/2025/2025-12-04.md)
       + [2025.11.20 Release Notes](/help/release-notes/universal-editor/2025/2025-11-20.md)
       + [2025.11.13 Release Notes](/help/release-notes/universal-editor/2025/2025-11-13.md)
@@ -1036,13 +1040,13 @@ user-guide-title: AEM as a Cloud Service
     + [Use the Out of Office option](/help/forms/configure-out-of-office-settings.md)
 + Communications APIs {#using-communications}
     + [Introduction to Communications APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-    + [AEM Forms Communications APIs - Overview](/help/forms/aem-forms-communication-api-overview.md)
-    + [OAuth Server-to-Server Authentication ](/help/forms/oauth-api-authetication.md)
-    + [JWT(JSON Web Token) Server-to-Server Authentication](/help/forms/jwt-api-authentication.md)
+    + [AEM Forms Communications APIs](/help/forms/aem-forms-communication-api-overview.md)
     + [Communications APIs - Synchronous processing](/help/forms/aem-forms-cloud-service-communications.md)
     + [Communications APIs - Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-    + [Communications APIs - On-Demand processing](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+    + [Forms Communications APIs - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
     + [Generate AFP Output Using the AEM Forms API](/help/forms/document-generation-afp-api.md)
+    + [OAuth Server-to-Server Authentication ](/help/forms/oauth-api-authetication.md)
+    + [JWT(JSON Web Token) Server-to-Server Authentication](/help/forms/jwt-api-authentication.md)
     + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
     + [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
     + [Changing Page Zero content in Designer](/help/forms/changing-page-zero-content-designer.md)
@@ -1465,7 +1469,7 @@ user-guide-title: AEM as a Cloud Service
       + [Component Definition](/help/implementing/universal-editor/component-definition.md)
       + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
       + [Publishing](/help/implementing/universal-editor/publishing.md)
-      + [Events](/help/implementing/universal-editor/events.md)
+      + [Events](/help/implementing/universal-editor/events-universal-editor.md)
       + [Filtering Components](/help/implementing/universal-editor/filtering.md)
       + [Configuring the RTE](/help/implementing/universal-editor/configure-rte.md)
       + [Customizing](/help/implementing/universal-editor/customizing.md)  
@@ -1486,7 +1490,6 @@ user-guide-title: AEM as a Cloud Service
       + [SPA WKND Tutorial](/help/implementing/developing/hybrid/wknd-tutorial.md)
       + [Getting Started using React](/help/implementing/developing/hybrid/getting-started-react.md)
       + [Getting Started using Angular](/help/implementing/developing/hybrid/getting-started-angular.md)
-      + [SPA Deep Dives](/help/implementing/developing/hybrid/deep-dives-gems.md)
       + [Developing SPAs for AEM](/help/implementing/developing/hybrid/developing.md)
       + [SPA Editor Overview](/help/implementing/developing/hybrid/editor-overview.md)
       + [SPA Blueprint](/help/implementing/developing/hybrid/blueprint.md)
