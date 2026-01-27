@@ -123,7 +123,7 @@ Once the folder is created, put a copy of your control page into that folder, an
 
 ![control-page](/help/sites-cloud/administering/assets/control-page.png)
 
-Your copy of the challenger placed in the `experiments/<experiment-id` folder might look like this:
+Your copy of the challenger placed in the experiments/<experiment-id folder might look like this:
 
 ![challenger-page](/help/sites-cloud/administering/assets/challenger-page.png)
 
