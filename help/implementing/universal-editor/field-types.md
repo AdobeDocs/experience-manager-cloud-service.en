@@ -98,6 +98,10 @@ A field object has the following type definition.
 |`validation`|`ValidationType`|Validation rule or rules for the field|No|
 |`raw`|`unknown`|Raw data which can be used by the component|No|
 
+>[!NOTE]
+>
+>The underscore (`_`) is not allowed in field names when using the [`aem` or `xwalk` plugins.](/help/implementing/universal-editor/component-definition.md#plugins)
+
 ### name Field and Nesting {#nesting}
 
 The `name` field can point directly to a property of the current resource, or in the case of components in `cq:Pages`, it can also use a path to a nested property. For example:
