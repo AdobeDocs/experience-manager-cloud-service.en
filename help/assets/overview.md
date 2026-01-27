@@ -758,9 +758,9 @@ The Governance Agent helps ensure compliance, brand consistency, and policy enfo
 
 Some of the key benefits of Governance Agent include:
 
-- **Compliance Monitoring:** Detects policy violations in content.  
-- **Metadata Enforcement:** Ensures assets have required metadata for governance.  
-- **Brand Consistency:** Flags content that does not meet corporate standards.  
+* **Compliance Monitoring:** Detects policy violations in content.  
+* **Metadata Enforcement:** Ensures assets have required metadata for governance.  
+* **Brand Consistency:** Flags content that does not meet corporate standards.  
 
 **Skills:** Policy compliance checks, Metadata validation, Accessibility auditing, Automated alerts for violations  
 **Personas:** DAM Admins, Compliance Officers, Brand Managers  
@@ -768,9 +768,9 @@ Some of the key benefits of Governance Agent include:
 
 **Common Use Cases / Sample Prompts:**  
 
-- Validate metadata for all assets in WKND folder.  
-- Identify assets missing brand guidelines.  
-- Audit published content for accessibility compliance.  
+* Validate metadata for all assets in WKND folder.  
+* Identify assets missing brand guidelines.  
+* Audit published content for accessibility compliance.  
 
 <table>
 <td>
