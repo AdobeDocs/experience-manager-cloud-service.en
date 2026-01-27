@@ -679,7 +679,7 @@ Some of the key benefits of Discovery Agent include:
 
 <td>
    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models">
-   <img alt="Content Fragment Models" src="./assets/content-fragments.jpeg" />
+   <img alt="Content Fragment Models" src="./assets/content-fragment.jpeg" />
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models">
