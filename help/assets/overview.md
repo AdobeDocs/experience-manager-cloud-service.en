@@ -103,7 +103,6 @@ Use these links to access detailed documentation on these asset ingestion tools:
    </p>
 </td>
 
-
 <td>
    <a href="/help/assets/color-tag-images.md">
    <img alt="Add Intelligent color-based tags" src="./assets/color-tags.jpg" />
@@ -370,7 +369,6 @@ You can also maintain asset versions, set asset status, and set asset expiration
    </p>
 </td>
 
-
 <td>
    <a href="/help/assets/my-workspace-assets-view.md">
    <img alt="Mt Workspace" src="./assets/my-workspace.jpeg" />
@@ -451,62 +449,7 @@ You can also maintain asset versions, set asset status, and set asset expiration
 </td>
 </table>
 
->[!TAB Integrations]
 
-## Integration with Adobe and non-Adobe applications {#integration-adobe-non-adode-apps}
-
-AEM Assets can integrate seamlessly with various Adobe and non-Adobe applications. The following is a summarized view of the available integrations:
-
-+++**Integration with Adobe and non-Adobe applications**
-
-* **Dynamic Media with OpenAPI capabilities**: [Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md) offers a comprehensive set of [search](/help/assets/search-assets-api.md) and [delivery](/help/assets/deliver-assets-apis.md) APIs. It allows your developers to integrate the delivery of assets easily with their applications. The applications include Adobe as well as third-party applications. It provides a Micro Frontend assets selector user interface to search and select approved assets. The selector can be effortlessly integrated with any application based on JavaScript frameworks such as React JS, Angular JS, and Vanilla JS.
-
-* **Micro-Frontend Asset Selector**: Micro-Frontend Asset Selector provides a user interface that integrates with the Experience Manager Assets repository so that you can browse or search digital assets available in the repository. You can then use them in your application authoring experience.
-You can integrate Asset Selector with an Adobe or a non-Adobe application.
-
-<table>
-<td>
-   <a href="/help/assets/dynamic-media-open-apis-overview.md">
-   <img alt="Dynamic Media with OpenAPI capabilities overview" src="./assets/dm-openapi-uses.jpeg" />
-   </a>
-   <div>
-      <a href="/help/assets/dynamic-media-open-apis-overview.md">
-      <strong>Dynamic Media with OpenAPI capabilities overview</strong>
-      </a>
-   </div>
-   <p>
-      <em>Learn key benefits and how to get it enabled. </em>
-   </p>
-</td>
-
-
-<td>
-   <a href="/help/assets/restrict-assets-delivery.md">
-   <img alt="Restrict access to assets in Experience Manager" src="./assets/restrict-assets.jpeg" />
-   </a>
-   <div>
-      <a href="/help/assets/restrict-assets-delivery.md">
-      <strong>Restrict access to assets in Experience Manager</strong>
-      </a>
-   </div>
-   <p>
-      <em> Configure roles to restrict access to approved assets.</em>
-   </p>
-</td>
-<td>
-   <a href="/help/assets/overview-asset-selector.md">
-   <img alt="Asset Selector" src="./assets/integration-asset-selector.jpeg" />
-   </a>
-   <div>
-      <a href="/help/assets/overview-asset-selector.md">
-      <strong>Micro-Frontend Asset Selector</strong>
-      </a>
-   </div>
-   <p>
-      <em>Learn how to integrate Micro-Frontend Asset Selector with an Adobe or a non-Adobe application.</em>
-   </p>
-</td>
-</table>
 
 +++
 
@@ -621,6 +564,211 @@ If you already have an [!DNL Edge Delivery Services] website, see [[!DNL AEM Ass
 </table>
 
 +++
+
+# Agents in AEM
+
+AEM as a Cloud Service provides intelligent **Agents** to enhance content management, optimization, and governance. These agents allow users to discover content quickly, optimize campaigns, and ensure compliance across digital assets.
+
+---
+
+## **Discovery Agent**
+
+The Discovery Agent delivers AEM content on demand through natural, conversational prompts for a streamlined, click-free discovery experience. It intelligently searches across **Assets, Content Fragments, and Adaptive Forms** to deliver relevant content such as images, videos, PDFs, articles, and form templates. Using natural language, you can search without building complex queries or applying filters in the AEM Assets interface. Based on your prompt, the agent returns curated results along with asset metadata and delivery URLs, ready to be embedded in other applications.
+
+Some of the key benefits of Discovery Agent include:
+
+- **Unified Content Discovery:** Access all types of AEM content, such as images, videos, PDF documents, articles, and forms from a single conversational interface.
+- **Faster Campaign Planning:** Quickly gather visuals and forms for marketing campaigns across Emails, Web, and Social channels.
+- **Enhanced Productivity:** Reduce time spent browsing repositories or filtering metadata through automated, intent-based search.
+- **Consistent Content Utilization:** Ensures reuse of approved assets and fragments, maintaining brand consistency across channels.
+
+**Skills:** Natural language content discovery, Tag-based asset discovery, Folder-based content discovery, Format & orientation-based asset discovery  
+**Personas:** Campaign Managers, Channel Marketers, DAM Librarians, Agencies & Partners  
+**Access:** Via AI Assistant in AEM  
+
+**Common Use Cases / Sample Prompts:**  
+
+- Show images tagged “office” in folder WKND.  
+- List all published content fragments for WKND beverages.  
+- Find forms to apply for a job.  
+- Show assets with person in landscape orientation.  
+
+<table>
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <img alt="Discovery Agent Overview" src="./assets/discovery-agent-overview.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <strong>Discovery Agent Overview</strong>
+      </a>
+   </div>
+   <p>
+      <em>Overview of Discovery Agent and its key capabilities.</em>
+   </p>
+</td>
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#ai-smart-tags">
+   <img alt="Smart Tags" src="./assets/smart tags.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#ai-smart-tags">
+      <strong>Smart Tags</strong>
+      </a>
+   </div>
+   <p>
+      <em>AI-generated tags to automate asset classification and improve search.</em>
+   </p>
+</td>
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai?lang=en#aem">
+   <img alt="Generative AI for Discovery" src="./assets/generative-ai.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai?lang=en#aem">
+      <strong>Generative AI for Discovery</strong>
+      </a>
+   </div>
+   <p>
+      <em>Enhance content discovery using generative AI capabilities.</em>
+   </p>
+</td>
+</table>
+
+---
+
+## **Content Optimization Agent**
+
+The Content Optimization Agent analyzes content performance across channels and provides recommendations for improving engagement and conversions. It leverages AI and analytics to optimize content dynamically based on audience interactions.
+
+Some of the key benefits of Content Optimization Agent include:
+
+- **Data-driven Optimization:** Makes recommendations to improve content performance.  
+- **Multi-channel Guidance:** Helps optimize content for web, email, and social platforms.  
+- **Performance Insights:** Provides actionable insights on campaigns and content usage.  
+
+**Skills:** Automated content evaluation, Conversion prediction & recommendations, Campaign performance insights  
+**Personas:** Marketing Managers, Digital Strategists, Content Authors  
+**Access:** Via AEM AI Assistant  
+
+**Common Use Cases / Sample Prompts:**  
+
+- Suggest optimized headlines for WKND landing page.  
+- Identify underperforming content fragments in campaign X.  
+- Recommend images with high engagement potential.  
+
+<table>
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <img alt="Content Optimization Overview" src="./assets/content-optimization-agent-overview.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <strong>Content Optimization Overview</strong>
+      </a>
+   </div>
+   <p>
+      <em>Overview of Content Optimization Agent and how it works.</em>
+   </p>
+</td>
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/core-services/interface/features/search">
+   <img alt="Search & Analytics" src="./assets/search.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/core-services/interface/features/search">
+      <strong>Search & Analytics</strong>
+      </a>
+   </div>
+   <p>
+      <em>Analyzing content performance and integration with analytics.</em>
+   </p>
+</td>
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview">
+   <img alt="Optimization Best Practices" src="./assets/optimization.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview">
+      <strong>Optimization Best Practices</strong>
+      </a>
+   </div>
+   <p>
+      <em>Content optimization workflows, tips, and guidelines.</em>
+   </p>
+</td>
+</table>
+
+---
+
+## **Governance Agent**
+
+The Governance Agent helps ensure compliance, brand consistency, and policy enforcement across AEM content. It identifies content that does not meet metadata, accessibility, or corporate guidelines.
+
+Some of the key benefits of Governance Agent include:
+
+- **Compliance Monitoring:** Detects policy violations in content.  
+- **Metadata Enforcement:** Ensures assets have required metadata for governance.  
+- **Brand Consistency:** Flags content that does not meet corporate standards.  
+
+**Skills:** Policy compliance checks, Metadata validation, Accessibility auditing, Automated alerts for violations  
+**Personas:** DAM Admins, Compliance Officers, Brand Managers  
+**Access:** Via AEM AI Assistant  
+
+**Common Use Cases / Sample Prompts:**  
+
+- Validate metadata for all assets in WKND folder.  
+- Identify assets missing brand guidelines.  
+- Audit published content for accessibility compliance.  
+
+<table>
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <img alt="Governance Agent Overview" src="./assets/governance-agent-overview.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <strong>Governance Agent Overview</strong>
+      </a>
+   </div>
+   <p>
+      <em>Overview of Governance Agent and its key functions.</em>
+   </p>
+</td>
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/core-services/interface/features/agentic-ai#existing-apps">
+   <img alt="Policies & Compliance" src="./assets/policies-compilance.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/core-services/interface/features/agentic-ai#existing-apps">
+      <strong>Policies & Compliance</strong>
+      </a>
+   </div>
+   <p>
+      <em>How to manage governance policies and compliance rules.</em>
+   </p>
+</td>
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view">
+   <img alt="Metadata & Best Practices" src="./assets/metadata-management.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view">
+      <strong>Metadata & Best Practices</strong>
+      </a>
+   </div>
+   <p>
+      <em>Enforcing metadata, accessibility, and brand consistency.</em>
+   </p>
+</td>
+</table>
+
+---
+
+### **How to Access Agents in AEM**
+
+Agents are accessible via the **AI Assistant** in AEM Cloud Service. Log in to [experience.adobe.com](https://experience.adobe.com/) and interact with AI Assistant using natural language prompts.
+
 
 >[!TAB Asset Activation]
 
