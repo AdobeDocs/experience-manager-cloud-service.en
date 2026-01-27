@@ -626,18 +626,16 @@ If you already have an [!DNL Edge Delivery Services] website, see [[!DNL AEM Ass
 
 AEM as a Cloud Service provides intelligent **Agents** to enhance content management, optimization, and governance. These agents allow users to discover content quickly, optimize campaigns, and ensure compliance across digital assets.
 
----
-
 ## **Discovery Agent**
 
 The Discovery Agent delivers AEM content on demand through natural, conversational prompts for a streamlined, click-free discovery experience. It intelligently searches across **Assets, Content Fragments, and Adaptive Forms** to deliver relevant content such as images, videos, PDFs, articles, and form templates. Using natural language, you can search without building complex queries or applying filters in the AEM Assets interface. Based on your prompt, the agent returns curated results along with asset metadata and delivery URLs, ready to be embedded in other applications.
 
 Some of the key benefits of Discovery Agent include:
 
-- **Unified Content Discovery:** Access all types of AEM content, such as images, videos, PDF documents, articles, and forms from a single conversational interface.
-- **Faster Campaign Planning:** Quickly gather visuals and forms for marketing campaigns across Emails, Web, and Social channels.
-- **Enhanced Productivity:** Reduce time spent browsing repositories or filtering metadata through automated, intent-based search.
-- **Consistent Content Utilization:** Ensures reuse of approved assets and fragments, maintaining brand consistency across channels.
+* **Unified Content Discovery:** Access all types of AEM content, such as images, videos, PDF documents, articles, and forms from a single conversational interface.
+* **Faster Campaign Planning:** Quickly gather visuals and forms for marketing campaigns across Emails, Web, and Social channels.
+* **Enhanced Productivity:** Reduce time spent browsing repositories or filtering metadata through automated, intent-based search.
+* **Consistent Content Utilization:** Ensures reuse of approved assets and fragments, maintaining brand consistency across channels.
 
 **Skills:** Natural language content discovery, Tag-based asset discovery, Folder-based content discovery, Format & orientation-based asset discovery  
 **Personas:** Campaign Managers, Channel Marketers, DAM Librarians, Agencies & Partners  
@@ -645,10 +643,10 @@ Some of the key benefits of Discovery Agent include:
 
 **Common Use Cases / Sample Prompts:**  
 
-- Show images tagged “office” in folder WKND.  
-- List all published content fragments for WKND beverages.  
-- Find forms to apply for a job.  
-- Show assets with person in landscape orientation.  
+* Show images tagged “office” in folder WKND.  
+* List all published content fragments for WKND beverages.  
+* Find forms to apply for a job.  
+* Show assets with person in landscape orientation.  
 
 <table>
 <td>
@@ -692,17 +690,15 @@ Some of the key benefits of Discovery Agent include:
 </td>
 </table>
 
----
-
 ## **Content Optimization Agent**
 
 The Content Optimization Agent analyzes content performance across channels and provides recommendations for improving engagement and conversions. It leverages AI and analytics to optimize content dynamically based on audience interactions.
 
 Some of the key benefits of Content Optimization Agent include:
 
-- **Data-driven Optimization:** Makes recommendations to improve content performance.  
-- **Multi-channel Guidance:** Helps optimize content for web, email, and social platforms.  
-- **Performance Insights:** Provides actionable insights on campaigns and content usage.  
+* **Data-driven Optimization:** Makes recommendations to improve content performance.  
+* **Multi-channel Guidance:** Helps optimize content for web, email, and social platforms.  
+* **Performance Insights:** Provides actionable insights on campaigns and content usage.  
 
 **Skills:** Automated content evaluation, Conversion prediction & recommendations, Campaign performance insights  
 **Personas:** Marketing Managers, Digital Strategists, Content Authors  
@@ -710,9 +706,9 @@ Some of the key benefits of Content Optimization Agent include:
 
 **Common Use Cases / Sample Prompts:**  
 
-- Suggest optimized headlines for WKND landing page.  
-- Identify underperforming content fragments in campaign X.  
-- Recommend images with high engagement potential.  
+* Suggest optimized headlines for WKND landing page.  
+* Identify underperforming content fragments in campaign X.  
+* Recommend images with high engagement potential.  
 
 <table>
 <td>
@@ -755,8 +751,6 @@ Some of the key benefits of Content Optimization Agent include:
    </p>
 </td>
 </table>
-
----
 
 ## **Governance Agent**
 
@@ -820,12 +814,9 @@ Some of the key benefits of Governance Agent include:
 </td>
 </table>
 
----
-
 ### **How to Access Agents in AEM**
 
 Agents are accessible via the **AI Assistant** in AEM Cloud Service. Log in to [experience.adobe.com](https://experience.adobe.com/) and interact with AI Assistant using natural language prompts.
-
 
 >[!TAB Asset Activation]
 
