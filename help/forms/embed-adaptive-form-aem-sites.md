@@ -67,17 +67,14 @@ You can take full advantage of this feature by using the following options:
 
 ## Requirements to embed an Adaptive Form in AEM Sites page or AEM Experience Fragment {#before-you-start-embedding-an-adaptive-form}
 
-Before you start embedding a new Adaptive Form or a pre-existing Adaptive Form using **[!UICONTROL Adaptive Forms – Embed(v2)]**, enable **Adaptive Forms Core Components** and add **Adaptive Forms Client Libraries** to your AEM Sites page:
+Before you start embedding a new Adaptive Form or a pre-existing Adaptive Form using **[!UICONTROL Adaptive Forms – Embed(v2)]**, add **Adaptive Forms Client Libraries** to your AEM Sites page:
 
-### Enable Adaptive Forms Core Components for your AEM Cloud Service environment
-
-Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
 
 ### Add Adaptive Forms Client Libraries to your AEM Sites page or Experience Fragment 
 
-When the **[!UICONTROL When form covers entire width of a page]** option is selected in the **[!UICONTROL Form Containers]** configure dialog box and Adaptive Forms using Core Components are used, it is necessary to include the client libraries on your corresponding Site's page. 
+When the **[!UICONTROL When form covers entire width of a page]** option is selected in the **[!UICONTROL Form Containers]** configure dialog box and Adaptive Forms are used, it is necessary to include the client libraries on your corresponding Site's page. 
 
-![When form covers entire width of a page option is selected and adaptive form with core components are used](/help/forms/assets/overlaycorecomponent.gif)
+![When form covers entire width of a page option is selected and adaptive form are used](/help/forms/assets/overlaycorecomponent.gif)
 
 **Case 1: Using Separate Sites Page Components**
 
@@ -255,11 +252,11 @@ You can customize the advanced settings of the **[!UICONTROL Adaptive Form - Emb
 
 * **Asset Path**: Browse and select an Adaptive Form to embed. It is auto-populated if you dropped it from the Assets browser.
 * **Post Submission** : Select the action to trigger on form submission. You can choose to show a thank you message or a thank you page.
-    * **Show Thank You Message**: Write a message using the rich text editor to show on form submission. This option is available only when you choose to show a thank you message.
-    * **Show Thank You Page**: Browse and select the page to display on form submission. This option is available only when you choose to show a thank you page.
-    * **Redirect to thank you page**: Enable the option to replace the page containing the embedded Adaptive Form with thank you page. Otherwise, the thank you page replaces the Adaptive Form in the **[!UICONTROL Adaptive Forms - Embed(v2)]** component, without refreshing underlying sites the page. This option is available only when you choose to show a thank you page.
-    * **Thankyou Message**: Brief confirmation or acknowledgment that is displayed on the screen after successfully submitting a form.
-    * **Thankyou Page**:  Browse and select the page to display after successfully submitting a form.
+  * **Show Thank You Message**: Write a message using the rich text editor to show on form submission. This option is available only when you choose to show a thank you message.
+  * **Show Thank You Page**: Browse and select the page to display on form submission. This option is available only when you choose to show a thank you page.
+  * **Redirect to thank you page**: Enable the option to replace the page containing the embedded Adaptive Form with thank you page. Otherwise, the thank you page replaces the Adaptive Form in the **[!UICONTROL Adaptive Forms - Embed(v2)]** component, without refreshing underlying sites the page. This option is available only when you choose to show a thank you page.
+  * **Thankyou Message**: Brief confirmation or acknowledgment that is displayed on the screen after successfully submitting a form.
+  * **Thankyou Page**:  Browse and select the page to display after successfully submitting a form.
 
 * **Use Page Language**: Use local of the AEM Sites page instead locale of Adaptive Form. This option is only applicable for Adaptive Form (Foundation).
 * **Set Focus on Form**: Select to set the focus on the first field of the Adaptive Form. This option is only applicable for Adaptive Form (Foundation).
@@ -272,13 +269,13 @@ You can customize the advanced settings of the **[!UICONTROL Adaptive Form - Emb
 * **Form covers entire width of the frame**: 
 An inline frame (iframe) is an HTML element that loads an Adaptive Form to an AEM Sites page.
 
-    * If the **[!UICONTROL Form covers entire width of the frame]** checkbox is checked, an Adaptive Form occupies the full width of the container in which it is placed. In this case, an iframe is not used to render the form. The layout and design of an Adaptive Form adapt to span the entire width of the container, making it responsive and capable of adjusting to different screen sizes. This option lets you embed multiple Adaptive Forms within an AEM Sites page.
+  * If the **[!UICONTROL Form covers entire width of the frame]** checkbox is checked, an Adaptive Form occupies the full width of the container in which it is placed. In this case, an iframe is not used to render the form. The layout and design of an Adaptive Form adapt to span the entire width of the container, making it responsive and capable of adjusting to different screen sizes. This option lets you embed multiple Adaptive Forms within an AEM Sites page.
 
         >[!NOTE]
         >
         > To embed multiple forms in an AEM Sites page, select **[!UICONTROL Form covers entire width of the frame]** checkbox. 
 
-    * If the **[!UICONTROL Form covers entire width of the frame]** checkbox is not checked, an Adaptive Form does not cover the entire width of the container. Instead, an iframe is used to render the form, which cannot be extended beyond a specific width. This approach is useful when an Adaptive Form has definite boundaries and must coexist with other AEM components next to it within the container. If this option is not checked, it allows only one Adaptive Forms in AEM Sites page to embed without an iframe.
+  * If the **[!UICONTROL Form covers entire width of the frame]** checkbox is not checked, an Adaptive Form does not cover the entire width of the container. Instead, an iframe is used to render the form, which cannot be extended beyond a specific width. This approach is useful when an Adaptive Form has definite boundaries and must coexist with other AEM components next to it within the container. If this option is not checked, it allows only one Adaptive Forms in AEM Sites page to embed without an iframe.
 
         >[!NOTE]
         >
@@ -380,5 +377,5 @@ Do keep the following points in mind when embedding Adaptive Forms in AEM sites 
 
 ## See Also {#see-also}
 
-* [Create Core Component based standalone Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md)
-* [Create Core component based Adaptive Form directly in an AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Create a standalone form](/help/forms/creating-adaptive-form-core-components.md)
+* [Create a form directly in an AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

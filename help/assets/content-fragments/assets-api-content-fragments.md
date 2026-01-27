@@ -81,6 +81,7 @@ It uses the `/api/assets` endpoint and requires the path of the asset to access 
 For example, to access `/content/dam/wknd/en/adventures/cycling-tuscany`, request `/api/assets/wknd/en/adventures/cycling-tuscany.json` 
 
 >[!NOTE]
+>
 >Access over:
 >
 >* `/api/assets` **does not** need the use of the `.model` selector.

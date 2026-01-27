@@ -31,9 +31,6 @@ Yes. AEM Forms supports guided, multi-step adaptive forms with conditional logic
 
 Yes. AEM Forms supports secure document upload as part of form submissions, with access controls and secure data handling aligned to enterprise security requirements.
 
-## Pre-requisite
-
-Before exploring the various capabilities of a layout, ensure that core components are enabled for your environment. Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
 
 ## Adaptive Forms layout types
 

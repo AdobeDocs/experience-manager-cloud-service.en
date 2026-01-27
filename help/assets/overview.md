@@ -80,9 +80,9 @@ Use these links to access detailed documentation on these asset ingestion tools:
 
 >[!TAB AI-Powered features]
 
-**Smart Tags**: Smart Tags use the artificially intelligent framework of Adobe Sensei to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. AEM automatically applies smart tags to uploaded assets, by default.
+**Smart Tags**: Smart Tags use the artificially intelligent framework of Adobe AI to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. AEM automatically applies smart tags to uploaded assets, by default.
 
-**Intelligent Color-based Tagging & Search**: AEM Assets uses Adobe Sensei AI capabilities to distinguish between colors in an image and apply those traits as tags automatically on ingestion. These tags enable an enhanced Search experience, based on image color composition.
+**Intelligent Color-based Tagging & Search**: AEM Assets uses Adobe AI capabilities to distinguish between colors in an image and apply those traits as tags automatically on ingestion. These tags enable an enhanced Search experience, based on image color composition.
 
 **AI-generated metadata**: AEM Assets uses AI to generate metadata automatically, including Title, Description, and Keywords. These AI-generated fields enhance metadata accuracy, making the assets easier to search, categorize, and recommend. This approach not only improves efficiency by eliminating manual tagging but also ensures consistency and scalability across large volumes of digital content.
 
@@ -186,7 +186,7 @@ Use these links to access detailed documentation on these asset ingestion tools:
 
 **Smart Imaging**: Smart Imaging provides even better image asset delivery performance by automatically optimizing an image's format and file size based on a customer's browser capability. It works with your existing image presets and uses intelligence at delivery. This intelligence further reduces image file size based on browser and network connection speed.
 
-**Smart Crop**: An Adobe Sensei AI capability, to detect the focal point automatically in any image or video, and crop to maintain it. It captures the intended point of interest regardless of screen size and hence eliminates tedious manual tasks and delivers high-quality, fast-loading imagery and video that looks good on any device or screen.
+**Smart Crop**: An Adobe AI capability, to detect the focal point automatically in any image or video, and crop to maintain it. It captures the intended point of interest regardless of screen size and hence eliminates tedious manual tasks and delivers high-quality, fast-loading imagery and video that looks good on any device or screen.
 
 **AI-generated video captions**: AI-generated video captions in Adobe Dynamic Media use artificial intelligence to generate captions automatically for video content. This feature is designed to improve accessibility and enhance the user experience by providing accurate captions. Captions are generated from the original audio, any additional audio tracks, or extra captions are provided in the `Captions and Audio` tab on the video properties page. With support for more than 60 languages, captions can be reviewed and previewed before publishing the video.
 <table>
@@ -290,7 +290,7 @@ AEM Assets provides features that help you quickly find the right asset. These f
 </td>
 </table>
 
-**Smart Tags**: Smart Tags use the artificially intelligent framework of Adobe Sensei to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. AEM automatically applies smart tags to uploaded assets, by default.
+**Smart Tags**: Smart Tags use the artificially intelligent framework of Adobe AI to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. AEM automatically applies smart tags to uploaded assets, by default.
 
 **Search assets**: Once you have the right metadata in place, AEM Assets allows you to search using various operators, wildcards, advanced queries, and custom filters.
 
@@ -903,7 +903,7 @@ Dynamic Media offers the following key features:
 
 * **Adaptive video sets**: An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats. You start with your original, primary video, which you upload into the system. Dynamic Media automatically sizes, or transcodes, that video into multiple videos. Then, at the time of delivery, it intelligently determines which video screen, what quality, and what format to use, and delivers it to either the phone, tablet, or desktop computer.
 
-* **Smart Crop**: An Adobe Sensei AI capability, to automatically detect the focal point in any image or video, and crop to maintain it. It captures the intended point of interest regardless of screen size and hence eliminates tedious manual tasks and delivers high-quality, fast-loading imagery and video that looks good on any device or screen.
+* **Smart Crop**: An Adobe AI capability, to automatically detect the focal point in any image or video, and crop to maintain it. It captures the intended point of interest regardless of screen size and hence eliminates tedious manual tasks and delivers high-quality, fast-loading imagery and video that looks good on any device or screen.
 
 * **Dynamic Media templates**: Create real time customizable templates for your banners and flyers using Dynamic Media templates, a WYSIWYG template editor. Publish your Dynamic Media template and use it in downstream applications. A Dynamic Media template includes image and text layers. Add parameters to the image and text layers of the template and use Dynamic Media URLs to reposition and resize the layer and update its content in real-time.
 
