@@ -166,7 +166,7 @@ The Release Date for AEM Screens as a Cloud Service is June 24, 2021.
 * New CIF product and category reference data types for Content Fragments (Incl. product / category picker UI support)
 * New Commerce Content Fragment Core Component
 * Full-text commerce search supported in AEM backend
-* Commerce Core Components support Adobe Commerce Sensei Recs data collection
+* Commerce Core Components support Adobe Commerce AI Recs data collection
 * Improved SEO-friendly URLs for category pages
 * Support for custom HTTP headers per site/config
 

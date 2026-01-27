@@ -162,3 +162,10 @@ Learn how to set environment for Synchronous (On-Demand) and Asynchronous (Batch
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
 
+>[!MORELIKETHIS]
+>
+>* [Introduction to AEM Forms as a Cloud Service Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [AEM Forms as a Cloud Service Architecture for Adaptive Forms and Communication APIs](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Communication Processing - Synchronous APIs](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Communication Processing - Batch APIs](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Forms Communications API - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

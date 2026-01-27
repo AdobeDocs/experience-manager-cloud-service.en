@@ -63,6 +63,8 @@ To opt in to participate in this program, email [aemagentsteam@adobe.com](mailto
 * Names and Adobe ID's of team members who will actively use agents.
 * List Specific agents that you or your team will want to use. Or simply say "All Agents."
 
+Customers selected for participation will be notified directly by Adobe. Participation is subject to eligibility considerations, including customer licensing and limited program capacity. While not all requests can be accommodated initially, additional customers may be considered in future beta waves.
+
 ### AEM Foundation (Beta programs) {#aem-foundation-beta-programs}
 
 See [AEM Foundation beta programs](#foundation-early-adopter).
@@ -87,6 +89,10 @@ See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes
 **Malware detection for uploaded assets**
 
 AEM Assets now includes automatic malware scanning of uploaded files, ensuring that suspicious assets are quarantined before entering the DAM to protect your repository from threats. Administrators can configure scan settings and quarantine retention policies for streamlined security controls.
+
+**AI-Generated metadata – Eligibility Update**
+
+AI-Generated metadata in AEM Assets no longer requires the GenAI Rider to be signed in order to be enabled. The feature is now available to both customers who have signed the GenAI Rider and customers who have not yet been validated. Customers who have explicitly opted out of GenAI usage will continue to have the feature disabled. To manage the feature enablement at the environment-level, please see [Disable AI-generated metadata](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata). This change will be made for customers on release version 23482 or later.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
