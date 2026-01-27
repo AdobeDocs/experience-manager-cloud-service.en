@@ -103,9 +103,9 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
 
-#### Upcoming Java API Deprecations {#java-api-deprecation}
+#### Java API Deprecations {#java-api-deprecation}
 
-Several deprecated APIs were marked for removal on August 31st and thus should no longer be referenced. You will receive Actions Center notifications if deprecated API usage is detected in your code, and after Jan 29th, notices will appear during Cloud Manager builds to reinforce the importance of removing usage. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
+Actions Center notification emails are now sent if deprecated API usage is detected in your code. Starting **Feb 26**, Cloud Manager pipelines deploying code referencing deprecated APIs will be paused and will need to be unpaused to continue. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
 +++ Expand to see the Java API deprecations
 
@@ -148,9 +148,9 @@ Adobe upgraded **Stage** and **Production** environments to the higher-performan
 
 #### Enforcement of AEM Java Logs Configuration Policy {#logconfig-policy}
 
-As noted in the April release notes, AEM Java logs must follow a standard format to ensure reliable monitoring across all customer environments. Custom log configurations—such as changes to log formatting, output files, or default log levels—are no longer supported. Logs must remain directed to the default files, and default log levels for AEM product code must be preserved. See full details in the [Logging article](/help/implementing/developing/introduction/logging.md#configuration-loggers).
+AEM Java logs must follow a standard format to ensure reliable monitoring across all customer environments. Custom log configurations—such as changes to log formatting, output files, or default log levels—are no longer supported. Logs must remain directed to the default files, and default log levels for AEM product code must be preserved. See full details in the [Logging article](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Starting on **January 29th**, any unsupported custom logging overrides will be ignored. Based on our analysis, most customers will not be impacted and Adobe has contacted customers whose current configuration may be affected.
+Any unsupported custom logging overrides are now ignored. Most customers were not impacted and Adobe has contacted customers whose current configuration may be affected.
 
 Please review and update any downstream processes that rely on custom logging behavior. For example:
 
@@ -172,9 +172,9 @@ Go‑live days, live events, peak sales—these moments can't break. [Our new se
 >Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to get it activated on your programs.
 >
 
-#### Edge Computing (Beta Program) {#edge-computing}
+#### AEM Edge Functions (Beta Program) {#edge-functions}
 
-Edge computing allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
+AEM Edge Functions (referred to in earlier release notes as *Edge Computing*) allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
 
 Common use cases include:
 
@@ -200,7 +200,6 @@ Deploy your code releases to production, but restrict it to only internal test t
 
 Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) to request access and share feedback.
 
-
 #### AI Answers - Smarter, Context-Aware Responses for AEM Sites (Beta Program) {#ai-answers-beta}
 
 AI Answers introduces a new way for your visitors to interact with your content. Powered by Retrieval-Augmented Generation (RAG) technology, it uses your AEM-managed data to deliver accurate, brand-consistent answers directly within your digital experiences. 
@@ -213,13 +212,16 @@ To request participation or receive updates, please contact [feedback-ai-answers
 
 In beta, Rapid Development Environments (RDEs) now support a feature to take a snapshot of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
 
-Please email [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) if there's interest in using and providing feedback on this feature.
+Please email [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) if there is interest in using and providing feedback on this feature.
 
-#### Accelerate AEM Development with AI (Alpha Program) {#ai-dev-alpha}
+#### AI tooling for IDEs for AEM Java and Dispatcher Development (Beta Program) {#ai-dev-beta}
 
-AEM Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. We’re gathering real-world experiences to help shape future Adobe-supported AI capabilities.
+Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. Join the beta to:
 
-Share what’s working for your team—and what you’d like Adobe to provide—by emailing [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
+* Share real-world experiences to help shape future Adobe-supported AI capabilities
+* Try out IDE tooling that can be used by AI agents to generate and debug AEM code and dispatcher configuration
+
+Email [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) for more information.
 
 #### Expanded Application Performance Monitoring (APM) (Alpha program) {#apm-alpha}
 
