@@ -20,40 +20,28 @@ For sites running on Adobe Experience Manager, there is the "out of the box" **e
 * It is deeply integrated into the AEM delivery system, does not slow down your site and is resilient to changes in code and content.
 * It allows the testing of simple content changes as well as experiments covering design, functionality, and code.
 
-## Before you start {#before-start}
-
-The experimentation rail is used within the context of [Edge Delivery Services](/help/edge/overview.md) and Universal Editor so you will need a Github account, a content repository like SharePoint or Google Drive, and you will also need the [AEM Sidekick](https://www.aem.live/docs/sidekick) plug-in. See also the [Getting Started – Universal Editor Developer Tutorial page](https://www.aem.live/developer/tutorial) and [Getting Started – Developer Tutorial](https://www.aem.live/developer/tutorial).
-
-## Frequently used terms {#frequently-used-terms}
-
-Before following the rest of the guide to set up your first experiment, there are a few frequently used terms that you should be familiar with:
-
-* **Control**: the experience prior to running the experiment. All experiments try to test and demonstrate an improvement over the control experience.
-* **Challenger**: an experience that is different from the control experience and is "tested" against it or alongside it.
-* **Variants**: control and challenger are all variants of an experiment.
-* **Statistical Significance**: Evaluating if your challenger is really better than the control. Calculating statistical significance allows you to rule out luck and concentrate on the results that have a real effect.
-
 ## Experimentation rail {#experimentation-rail}
 
-The experimentation rail is your primary tool to set up experiments. It can be used with your project either within edge delivery services context or in Universal editor.
+The experimentation rail is your primary tool to set up experiments. It can be used with your project either within edge delivery services context or in Universal editor. The experimentation can be used with either [Edge Delivery Services](/help/edge/overview.md) or Universal Editor. As such, you will need a Github account, a content repository like SharePoint or Google Drive, and you will also need the [AEM Sidekick](https://www.aem.live/docs/sidekick) plug-in. See also the [Getting Started – Universal Editor Developer Tutorial page](https://www.aem.live/developer/tutorial) and [Getting Started – Developer Tutorial](https://www.aem.live/developer/tutorial).
 
 ### Setting up the Experimentation Rail with your Edge Delivery Services Project
 
-To access the experimentation capabilites within your Edge Delivery Services Project you will need the [AEM Sidekick](https://www.aem.live/docs/sidekick) plug-in. To set up the sidekick follow these steps:
+To access the experimentation rail capabilities within your Edge Delivery Services Project you will need the [AEM Sidekick](https://www.aem.live/docs/sidekick) plug-in. To set up the sidekick follow these steps:
 
-1. Add the [AEM sidekick extension](https://chromewebstore.google.com/search/AEM%20Sidekick?hl=en-US&utm_source=ext_sidebar) and pin it.
+1. Add the [AEM sidekick extension](https://chromewebstore.google.com/search/AEM%20Sidekick?hl=en-US&utm_source=ext_sidebar) and pin it in your browser.
 1. Open your project page in preview mode.
 1. Click the AEM Sidekick, and click **Add this project**.
-1. Click the Experimentation tab to open rail.
+1. Click the Experimentation tab to open the experimentation rail.
 
-What is the EDS project is not instrumentalized?.
+**SR** - What if the EDS project is not instrumentalized?.
 
-### Setting up the Experimentation within Universal editor with you xwalk project
+### Setting up the experimentation rail in Universal editor with your xwalk project
 
-To set up the experimentation capabilities within your your Xwalk Project and start creating Experiments, follow these steps:
+To set up the experimentation capabilities within your your Xwalk Project and start creating experiments, follow these steps:
 
-1. Open your project in Universal Editor and check if you see the **A/B** Icon Extension. If it is not visible, confirm whether you have enabled the feature in the extension manager, if not please enable it or request access.
-1. Open your GitHub repository and check if the `plugins/experimention` folder exists. If not, you will need to set up experimentation engine and MFE first **(wiki link)**?.
+1. Open your project in Universal Editor and check if you see the **A/B** Icon Extension. If it is not visible, confirm whether you have enabled the feature in the extension manager, if not please enable it or request access (**SR** - how do we request access).
+1. Open your GitHub repository and check if the `plugins/experimention` folder exists. If not, you will need to set up the experimentation engine and MFE first **( **SR** - wiki link)**.
+1. Point your `fstab.yaml` configuration to your Xwalk config and link it to your AEM author instance.
 1. Open your AEM instance and if you have your Xwalk project ready, open it directly in Universal Editor.
 1. Open the project and the index page where you want to run experiments and click **Edit** on the top bar.
 1. Click the A/B icon to open the experimentation extension.
@@ -67,7 +55,59 @@ The [Operational Telemetry service](/help/sites-cloud/administering/operational-
 >[!NOTE]
 >Keep in mind that the plug-in doesn't use any, nor persists any, end-user data that could lead to their identification. No end-user opt-in nor cookie consent is required when using the default configuration that uses the [Operational Telemetry service in AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md).
 
-### Experiment Identifier {#experiment-identifier}
+### Frequently used terms {#frequently-used-terms}
+
+Before following the rest of the guide to set up your first experiment, there are a few frequently used terms that you should be familiar with:
+
+* **Control**: the experience prior to running the experiment. All experiments try to test and demonstrate an improvement over the control experience.
+* **Challenger**: an experience that is different from the control experience and is "tested" against it or alongside it.
+* **Variants**: control and challenger are all variants of an experiment.
+* **Statistical Significance**: Evaluating if your challenger is really better than the control. Calculating statistical significance allows you to rule out luck and concentrate on the results that have a real effect.
+
+### Creating experiments in Universal editor with your xwalk project
+
+To use the experimentation capabilities in Universal editor with your xwalk project you must first set up the experimentation rail as detailed above (**SR**-maybe link here). After everything is set up, follow these steps.
+
+### Start editing in Universal Editor
+
+Open your AEM instance and if you have your Xwalk project ready, please open it directly in Universal Editor. If you do not have a project ready, create a new boilerplate project from the provided template. You could link either your repository or our sample repository to drive it [https://github.com/sudo-buddy/ue-experimentation](https://github.com/sudo-buddy/ue-experimentation). After the project is set up, open it and the index page where you want to run experiments and click **Edit** on the top bar.
+
+### Launch the A/B Extension
+
+Click the **A/B** icon to open the experimentation extension. On your first use, the interface will be empty. Click **Create New** to start a new experiment.
+
+### Configure the experiment details
+
+Some of the experiment values are already pre-filled, as follows:
+
+**Experiment Type**: A/B test (only type supported for now)
+**Optimizing For**: Conversion (only type supported for now)
+
+You can also rename your experiment to something more descriptive for example, `homepage-head-experiment`.
+
+### Add and Edit Variants
+
+Make sure you understand the concepts of challenger and variant as presented above before continuing. Click **Add New** to create a challenger variant:
+
+* You'll be taken to the challenger page in the same tab — it is initially just a copy of your control.
+* Either edit the page directly in-context or click **Generate Variation** to use AI assistance.
+* After making changes, return to the extension to proceed. (**SR**-more details here).
+
+### Define Other Properties and Save as Draft
+
+In the experimentation rail you can set a start and end date (both optional). If no start date is provided, the test begins once it is published. If no end date is set, the test runs indefinitely. You can also adjust the traffic split, we recommend starting with an even 50/50 split.
+
+After you are done, click **Save** — this will save your experiment as a Draft. Note that the experiment is not active yet. You can return to the overview by clicking **Back to Experiment** or you can stay in the Edit interface to activate experiment.
+
+### Activate the Experiment
+
+Once you are ready, click **Activate** to launch the experiment. The test will begin collecting Operational Telemetry (RUM) data (see more details in the chapters below) **SR** - link.
+
+### Monitor and Promote
+
+After the experiment reaches statistical significance, click **Promote** to make the desired variant your new control.
+
+<!-- ### Experiment Identifier {#experiment-identifier}
 
 Before you start, every experiment should have its own identifier for tracking and analytics purposes. A good starting point is to come up with a good, unique identifier for your experiment which will be the “Experiment ID”. Experiments are often numbered linearly or correlated to their Issue ID in an issue tracker or management system. Experiment IDs often use a prefix for the project, for example: `OPT-0134`, `EXP0004` or `CCX0076`.
 
@@ -115,9 +155,9 @@ As soon as you are ready to preview and stage your experiment, click Preview fro
 
 By using the experimentation overlay, authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.-->
 
-The data collection to measure the effectiveness of each variant is based on the [Operational Telemetry service in AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md).
+<!--- The data collection to measure the effectiveness of each variant is based on the [Operational Telemetry service in AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md). -->
 
-### Send your Experiment Variant to Production {#production-experiment}
+<!--- ### Send your Experiment Variant to Production {#production-experiment}
 
 Select the experiment pages and click Publish from the side-kick to push both the control and the challenger variant(s) live.
 
@@ -127,7 +167,7 @@ Presented below are several use case examples for experiment variants. Generally
 
 #### Full Page Experiment {#full-page}
 
-You use a full page experiment to test between two variants of the same page. This is a full page variant of an a/b test where you have a control and a challenger page. You will replace the whole content of the "original" control page in the challenger variant with a different type of content. Keep in mind that by default the customer traffic is split evenly (50/50), but you can create custom splits if you like.
+You use a full page experiment to test between two variants of the same page. This is a full page variant of an a/b test where you have a control and a challenger page. You will replace the whole content of the "original" control page in the challenger variant with a different type of content. Keep in mind that by default the customer traffic is split evenly (50/50), but you can create custom splits if you like. -->
 
 <!--The metadata on the control page should look like this:
 
@@ -212,7 +252,7 @@ Experiments are set up to address conversion (tracks clickable elements on your 
 * How many variants will the experiment contain
 * What is the composition of each variant
 
-### Make sure Experiment Variants are not indexed {#experiment-not-indexed}
+### Make sure experiment Variants are not indexed {#experiment-not-indexed}
 
 When running experiments, it is usually best practice to exclude the variants from the sitemap and ensure they are not indexed by search engines. This is because the variant page could be seen as duplicate content and negatively impact SEO.
 
