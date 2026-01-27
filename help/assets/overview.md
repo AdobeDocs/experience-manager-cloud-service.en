@@ -449,7 +449,62 @@ You can also maintain asset versions, set asset status, and set asset expiration
 </td>
 </table>
 
+>[!TAB Integrations]
 
+## Integration with Adobe and non-Adobe applications {#integration-adobe-non-adode-apps}
+
+AEM Assets can integrate seamlessly with various Adobe and non-Adobe applications. The following is a summarized view of the available integrations:
+
++++**Integration with Adobe and non-Adobe applications**
+
+* **Dynamic Media with OpenAPI capabilities**: [Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md) offers a comprehensive set of [search](/help/assets/search-assets-api.md) and [delivery](/help/assets/deliver-assets-apis.md) APIs. It allows your developers to integrate the delivery of assets easily with their applications. The applications include Adobe as well as third-party applications. It provides a Micro Frontend assets selector user interface to search and select approved assets. The selector can be effortlessly integrated with any application based on JavaScript frameworks such as React JS, Angular JS, and Vanilla JS.
+
+* **Micro-Frontend Asset Selector**: Micro-Frontend Asset Selector provides a user interface that integrates with the Experience Manager Assets repository so that you can browse or search digital assets available in the repository. You can then use them in your application authoring experience.
+You can integrate Asset Selector with an Adobe or a non-Adobe application.
+
+<table>
+<td>
+   <a href="/help/assets/dynamic-media-open-apis-overview.md">
+   <img alt="Dynamic Media with OpenAPI capabilities overview" src="./assets/dm-openapi-uses.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/dynamic-media-open-apis-overview.md">
+      <strong>Dynamic Media with OpenAPI capabilities overview</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn key benefits and how to get it enabled. </em>
+   </p>
+</td>
+
+
+<td>
+   <a href="/help/assets/restrict-assets-delivery.md">
+   <img alt="Restrict access to assets in Experience Manager" src="./assets/restrict-assets.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/restrict-assets-delivery.md">
+      <strong>Restrict access to assets in Experience Manager</strong>
+      </a>
+   </div>
+   <p>
+      <em> Configure roles to restrict access to approved assets.</em>
+   </p>
+</td>
+<td>
+   <a href="/help/assets/overview-asset-selector.md">
+   <img alt="Asset Selector" src="./assets/integration-asset-selector.jpeg" />
+   </a>
+   <div>
+      <a href="/help/assets/overview-asset-selector.md">
+      <strong>Micro-Frontend Asset Selector</strong>
+      </a>
+   </div>
+   <p>
+      <em>Learn how to integrate Micro-Frontend Asset Selector with an Adobe or a non-Adobe application.</em>
+   </p>
+</td>
+</table>
 
 +++
 
@@ -565,7 +620,9 @@ If you already have an [!DNL Edge Delivery Services] website, see [[!DNL AEM Ass
 
 +++
 
-# Agents in AEM
+>[!TAB Agents in AEM]
+
+## Agents in AEM {#agent-in-aem}
 
 AEM as a Cloud Service provides intelligent **Agents** to enhance content management, optimization, and governance. These agents allow users to discover content quickly, optimize campaigns, and ensure compliance across digital assets.
 
