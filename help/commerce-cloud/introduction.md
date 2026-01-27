@@ -35,7 +35,7 @@ Good fit: Typical storefront experience with Adobe Commerce as a Cloud Service
 
 If you want to integrate your existing commerce solution and boost your catalog performance, Adobe's recommendation is to use [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview) as the modern integration layer. Commerce Optimizer enhances your commerce solution with high-performance SaaS services for catalog and merchandizing. As with Adobe Commerce as a Cloud Service, [Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) works out-of-the-box with it.
 
-Integrations to commercial commerce solutions such as Salesforce Commerce are avaialble. Please talk to your Adobe rep.
+Integrations to commercial commerce solutions such as Salesforce Commerce are available. Please talk to your Adobe rep.
 
 Good fit: Typical storefront experience with an existing commerce solution
 
@@ -43,7 +43,7 @@ Good fit: Typical storefront experience with an existing commerce solution
 
 Adobe also recommends using Edge Delivery Services if you want to build a custom integration. You can either start from scratch or re-use existing JS-framework commerce components (e.g. for the transactional part) in your Edge Delivery storefront. That way, your customers will get a blazing-fast shopping experience which is agentic-friendly, while you can re-use your existing investments to increase TTV. Your starting point is the default [Edge Delivery Boilerplate](https://www.aem.live/developer/tutorial).
 
-Good fit: Low value from the Edge Deliery storefront
+Good fit: Low value from the Edge Delivery storefront
 
 ### Use your own storefront (Headless AEM integration) {#own-storefront}
 
@@ -55,4 +55,4 @@ Adobe's recommendation and reference architecture is to use Edge Delivery Servic
 
 >[!NOTE]
 >
->Existing customers who want to leverage new AEM / Commerce functionality should move their website to Edge Delivery. A common pattern is to start by moving only a subset of pages to Edge Delivery and running Edge Deliery and CIF pages in a side-by-side fashion. It is also possible to replace AEM CIF components with the new [Commerce drop-in components](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/) to leverage new Commerce capabilities.
+>Existing customers who want to leverage new AEM / Commerce functionality should move their website to Edge Delivery. A common pattern is to start by moving only a subset of pages to Edge Delivery and running Edge Delivery and CIF pages in a side-by-side fashion. It is also possible to replace AEM CIF components with the new [Commerce drop-in components](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/) to leverage new Commerce capabilities.
