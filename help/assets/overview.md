@@ -620,9 +620,9 @@ If you already have an [!DNL Edge Delivery Services] website, see [[!DNL AEM Ass
 
 +++
 
->[!TAB Agents in AEM]
+>[!TAB AI Agents in AEM]
 
-## Agents in AEM {#agent-in-aem}
+## AI Agents in AEM {#ai-agents-in-aem}
 
 AEM as a Cloud Service provides intelligent **Agents** to enhance content management, optimization, and governance. These agents allow users to discover content quickly, optimize campaigns, and ensure compliance across digital assets.
 
@@ -659,56 +659,61 @@ Some of the key benefits of Discovery Agent include:
       </a>
    </div>
    <p>
-      <em>Overview of Discovery Agent and its key capabilities.</em>
+      <em>Overview of Discovery Agent and its conversational content discovery capabilities.</em>
    </p>
 </td>
+
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#ai-smart-tags">
-   <img alt="Smart Tags" src="./assets/smart tags.jpeg" />
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/search-assets">
+   <img alt="Search Assets" src="./assets/search.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#ai-smart-tags">
-      <strong>Smart Tags</strong>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/search-assets">
+      <strong>Search Assets</strong>
       </a>
    </div>
    <p>
-      <em>AI-generated tags to automate asset classification and improve search.</em>
+      <em>How assets can be searched and filtered across repositories in AEM.</em>
    </p>
 </td>
+
 <td>
-   <a href="https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai?lang=en#aem">
-   <img alt="Generative AI for Discovery" src="./assets/generative-ai.jpeg" />
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models">
+   <img alt="Content Fragment Models" src="./assets/content-fragments.jpeg" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai?lang=en#aem">
-      <strong>Generative AI for Discovery</strong>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models">
+      <strong>Defining Content Fragment Models</strong>
       </a>
    </div>
    <p>
-      <em>Enhance content discovery using generative AI capabilities.</em>
+      <em>Modeling and managing content fragments discoverable via Discovery Agent.</em>
    </p>
 </td>
 </table>
 
 ## **Content Optimization Agent**
 
-The Content Optimization Agent analyzes content performance across channels and provides recommendations for improving engagement and conversions. It leverages AI and analytics to optimize content dynamically based on audience interactions.
+# Content Optimization Agent
 
-Some of the key benefits of Content Optimization Agent include:
+The **Content Optimization Agent** helps refine and adapt assets using natural language prompts. It can generate new renditions, adjust visuals, change backgrounds, and create channel-ready variations automatically. Works with the Discovery Agent and **Dynamic Media with OpenAPI** for seamless optimization.
 
-* **Data-driven Optimization:** Makes recommendations to improve content performance.  
-* **Multi-channel Guidance:** Helps optimize content for web, email, and social platforms.  
-* **Performance Insights:** Provides actionable insights on campaigns and content usage.  
+## Key Benefits
+* **Effortless asset transformation:** Resize, sharpen, recolor, or mirror images.  
+* **Channel-optimized outputs:** Generate renditions for Instagram, web banners, and other marketing channels.  
+* **Creative enhancements at scale:** Apply background changes or overlays for high-volume workflows.  
 
-**Skills:** Automated content evaluation, Conversion prediction & recommendations, Campaign performance insights  
-**Personas:** Marketing Managers, Digital Strategists, Content Authors  
-**Access:** Via AEM AI Assistant  
+## Access
+Via **AI Assistant** in AEM.
 
-**Common Use Cases / Sample Prompts:**  
+## Sample Prompts
+* `Create a 2000px JPEG rendition.`  
+* `Sharpen the image.`  
+* `Change background color to #ff8932.`  
+* `Create a rendition for an Instagram story.`  
 
-* Suggest optimized headlines for WKND landing page.  
-* Identify underperforming content fragments in campaign X.  
-* Recommend images with high engagement potential.  
+## Limitations
+* Some optimizations are not supported for PNG assets.
 
 <table>
 <td>
@@ -717,37 +722,39 @@ Some of the key benefits of Content Optimization Agent include:
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
-      <strong>Content Optimization Overview</strong>
+      <strong>Content Optimization Agent Overview</strong>
       </a>
    </div>
    <p>
-      <em>Overview of Content Optimization Agent and how it works.</em>
+      <em>Overview of Content Optimization Agent and supported optimization workflows.</em>
    </p>
 </td>
-<td>
-   <a href="https://experienceleague.adobe.com/en/docs/core-services/interface/features/search">
-   <img alt="Search & Analytics" src="./assets/search.jpeg" />
-   </a>
-   <div>
-      <a href="https://experienceleague.adobe.com/en/docs/core-services/interface/features/search">
-      <strong>Search & Analytics</strong>
-      </a>
-   </div>
-   <p>
-      <em>Analyzing content performance and integration with analytics.</em>
-   </p>
-</td>
+
 <td>
    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview">
-   <img alt="Optimization Best Practices" src="./assets/optimization.jpeg" />
+   <img alt="Dynamic Media OpenAPI" src="./assets/optimization.jpeg" />
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview">
-      <strong>Optimization Best Practices</strong>
+      <strong>Dynamic Media with OpenAPI</strong>
       </a>
    </div>
    <p>
-      <em>Content optimization workflows, tips, and guidelines.</em>
+      <em>APIs used for asset renditions, transformations, and delivery.</em>
+   </p>
+</td>
+
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-overview">
+   <img alt="Dynamic Media Overview" src="./assets/dynamic-media.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-overview">
+      <strong>Dynamic Media Overview</strong>
+      </a>
+   </div>
+   <p>
+      <em>Dynamic Media capabilities for optimized, channel-ready asset delivery.</em>
    </p>
 </td>
 </table>
@@ -783,25 +790,13 @@ Some of the key benefits of Governance Agent include:
       </a>
    </div>
    <p>
-      <em>Overview of Governance Agent and its key functions.</em>
+      <em>Overview of Governance Agent for compliance and policy enforcement.</em>
    </p>
 </td>
-<td>
-   <a href="https://experienceleague.adobe.com/en/docs/core-services/interface/features/agentic-ai#existing-apps">
-   <img alt="Policies & Compliance" src="./assets/policies-compilance.jpeg" />
-   </a>
-   <div>
-      <a href="https://experienceleague.adobe.com/en/docs/core-services/interface/features/agentic-ai#existing-apps">
-      <strong>Policies & Compliance</strong>
-      </a>
-   </div>
-   <p>
-      <em>How to manage governance policies and compliance rules.</em>
-   </p>
-</td>
+
 <td>
    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view">
-   <img alt="Metadata & Best Practices" src="./assets/metadata-management.jpeg" />
+   <img alt="Metadata Best Practices" src="./assets/metadata-management.jpeg" />
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view">
@@ -809,7 +804,21 @@ Some of the key benefits of Governance Agent include:
       </a>
    </div>
    <p>
-      <em>Enforcing metadata, accessibility, and brand consistency.</em>
+      <em>Managing metadata requirements to ensure governance and compliance.</em>
+   </p>
+</td>
+
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/accessibility">
+   <img alt="Accessibility in Assets" src="./assets/accessibility.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/accessibility">
+      <strong>Accessibility in Assets</strong>
+      </a>
+   </div>
+   <p>
+      <em>Accessibility standards and best practices for digital assets.</em>
    </p>
 </td>
 </table>
