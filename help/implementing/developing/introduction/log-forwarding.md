@@ -292,8 +292,8 @@ See [AWS Bucket Policy Documentation](https://docs.aws.amazon.com/AmazonS3/lates
 A SAS token should be used for authentication. It should be created from the Shared access signature page, rather than on the Shared access token page, and should be configured with these settings:
 
 * Allowed services: Blob must be selected.
-* Allowed resources: Object must be selected.
-* Allowed permissions: Write, Add, Create must be selected.
+* Allowed resources: Object and container must be selected.
+* Allowed permissions: Read, Write, List, Add, Create must be selected.
 * A valid Start and Expiry date/time.
 
 Here is a screenshot of a sample SAS token configuration:
