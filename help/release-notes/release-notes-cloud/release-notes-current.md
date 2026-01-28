@@ -83,7 +83,7 @@ AEM provides two Content MCP Servers—**read-only** and **read/write**—with t
 
 For example, you can prompt ChatGPT:
 
-*Update the headline of the main section of acme.com from "Welcome everyone!" to "Welcome folks!"*
+*Edit /en/coffee.html in AEM: change the text Frescopa Coffee in the content to something a 20‑year‑old would like.*
 
 Learn more in [Using MCP with AEM Cloud Service](/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md). For questions or feedback, email [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com).
 
