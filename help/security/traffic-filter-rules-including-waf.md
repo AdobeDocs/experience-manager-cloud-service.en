@@ -16,7 +16,7 @@ Traffic filter rules can be used to block or allow requests at the CDN layer, wh
 
 Many of these traffic filter rules are available to all AEM as a Cloud Service Sites and Forms customers. Referred to as *standard traffic filter rules*, they mainly operate on request properties and request headers, including IP, hostname, path, and user agent. Standard traffic filter rules include rate limit rules to guard against traffic spikes.
 
-A subcategory of traffic filter rules requires either an Enhanced Security license or WAF-DDoS Protection license. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or *WAF rules* for short) and have access to the [WAF Flags](#waf-flags-list) described later in this article.
+A subcategory of traffic filter rules requires either an Extended Security (formerly named WAF-DDoS Protection) or Extended Security for Healthcare (formerly named Enhanced Security) license. These powerful rules are known as WAF (Web Application Firewall) traffic filter rules (or *WAF rules* for short) and have access to the [WAF Flags](#waf-flags-list) described later in this article.
 
 Traffic filter rules can be deployed via Cloud Manager config pipelines to dev, stage, and production environment types. The configuration file can be deployed to Rapid Development Environments (RDEs) using command line tooling.
 
@@ -105,7 +105,7 @@ The following is a high-level recommended end-to-end process for coming up with 
 
 You can configure *traffic filter rules* to match on patterns such as IPs, user agent, request headers, hostname, geo, and url.
 
-Customers who license the Enhanced Security or WAF-DDoS Protection Security offering can also configure a special category of traffic filter rules called *WAF traffic filter rules* (or *WAF rules* for short) that reference one or more [WAF flags](#waf-flags-list).
+Customers who license the Extended Security (formerly named WAF-DDoS Protection) or Extended Security for Healthcare (formerly named Enhanced Security) offering can also configure a special category of traffic filter rules called *WAF traffic filter rules* (or *WAF rules* for short) that reference one or more [WAF flags](#waf-flags-list).
 
 Here's an example of a set of traffic filter rules, which also includes a WAF rule.
 
@@ -424,7 +424,7 @@ Rate limits are evaluated based on either traffic hitting the edge, traffic hitt
 
 **Example 1**
 
-This rule blocks a client for 5 milliseconds when it exceeds an average of 60 req/sec (per CDN POP) in the last 10 sec:
+This rule blocks a client for 5 minutes when it exceeds an average of 60 req/sec (per CDN POP) in the last 10 sec:
 
 ```
 kind: "CDN"
@@ -636,7 +636,7 @@ Dashboard tooling can be cloned directly from the [AEMCS-CDN-Log-Analysis-Toolin
 
 ## Recommended Starter Rules {#recommended-starter-rules}
 
-Adobe suggests starting with the traffic filter rules below and then refining over time. *Standard rules* are available with a Sites or Forms license, while *WAF rules* require an Enhanced Security or WAF-DDoS Protection license.
+Adobe suggests starting with the traffic filter rules below and then refining over time. *Standard rules* are available with a Sites or Forms license, while *WAF rules* require an Extended Security (formerly named WAF-DDoS Protection) or Extended Security for Healthcare (formerly named Enhanced Security) license.
 
 ### Recommended Standard Rules {#recommended-nonwaf-starter-rules}
 

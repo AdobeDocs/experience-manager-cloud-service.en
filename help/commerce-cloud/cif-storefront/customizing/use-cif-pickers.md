@@ -78,6 +78,6 @@ Also, standard dialog box field properties like `name`, `fieldLabel`, or `fieldD
 
 >[!CAUTION]
 >
->Starting with CIF Core Components version 2.0.0 the support for `id` was removed and replaced with `uid`. Adobe recommends using `uid` or `urlPath` as category identifier. Adobe continue to support `id` & `idAndUrlPath` only for projects using CIF Core Components version 1.x.
+>Starting with CIF Core Components version 2.0.0 the support for `id` was removed and replaced with `uid`. Adobe recommends using `uid` or `urlPath` as category identifier. Adobe continues to support `id` & `idAndUrlPath` only for projects using CIF Core Components version 1.x.
 
 A full working example of the `cifcategoryfield` can be found in the [CIF Core Components](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml) project.
