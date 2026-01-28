@@ -39,10 +39,10 @@ AEM exposes MCP servers as HTTP endpoints. The endpoints listed below are relati
 
 ### MCP Servers {#mcp-servers}
 
-| **MCP Server** | **Endpoint**  | **Description** |
-|---|---|---|
-| **Content Tools**  | `/content`  | All low-level content operations, including create, read, update, and delete (CRUD) for pages and fragments.  |
-| **Content Tools (read-only)**  | `/content-readonly`  | Read-only content operations (Get, List/Search) for pages, fragments, and assets.  |
+| **MCP Server** | **Endpoint**  | **Description**                                                                                                      |
+|---|---|----------------------------------------------------------------------------------------------------------------------|
+| **Content**  | `/content`  | All low-level content operations, including create, read, update, and delete (CRUD) for pages, fragments and assets. |
+| **Content (read-only)** | `/content-readonly`  | Read-only content operations (Get, List/Search) for pages, fragments, and assets.                                    |
 
 The specific tools exposed by each MCP server may evolve over time. In practice, you can ask your MCP-enabled application to discover tools via a prompt such as:
 
