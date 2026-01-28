@@ -274,6 +274,9 @@ LLM models are continuously improving. Over time, they become smarter at discove
 * **Human oversight is essential**
 Think of the LLM as a knowledgeable assistant that needs supervision. It has broad knowledge and can devise creative solutions, but it benefits from your guidance and review. Verify results, especially for critical operations, and provide feedback when the output does not match your expectations.
 
+* **Be cautious with auto-acknowledging tool executions**
+Some MCP client applications, such as Claude, offer the option to auto-acknowledge tool executions requested by the LLM. While this can be convenient for read-only operations like searching or retrieving content, exercise caution with tools that update or delete content. Review each tool execution request before confirming actions that modify your AEM environment.
+
 ## Limitations {#limitations}
 
 AEM's MCP servers are currently intended to be configured in ChatGPT, Claude, Cursor, and Microsoft Copilot Studio.
