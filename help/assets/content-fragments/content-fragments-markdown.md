@@ -38,7 +38,7 @@ To create a header by placing a hash tag (#) in front of the heading. One hash t
 
 &nbsp;&nbsp;&nbsp;&nbsp;`### This is an H3`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`###### This is a H6`
+&nbsp;&nbsp;&nbsp;&nbsp;`###### This is an H6`
 
 Optionally, you can create a H1 by underlining the text in equal signs and create a H2 by underlining the text in minus signs. For example:
 
@@ -66,7 +66,7 @@ These are examples of inline links:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`This is [an example](https://example.com/ "Title") inline link.`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`This is [an example of an email link](emailto:myaddress@mydomain.info)`
+&nbsp;&nbsp;&nbsp;&nbsp;`This is [an example (non-standard) of an email link](emailto:myaddress@mydomain.info)`
 
 &nbsp;&nbsp;&nbsp;&nbsp;`[This link](https://example.net/) has no title attribute.`
 
@@ -150,7 +150,7 @@ To create an ordered list, add the numbers, followed by a period, before each it
 
 You can add italic or bold styling to your text.
 
-To can add italics as follows:
+You can add italics as follows:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`*single asterisks*`
 
