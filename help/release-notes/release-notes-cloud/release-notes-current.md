@@ -168,7 +168,14 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 #### Java API Deprecations {#java-api-deprecation}
 
-Actions Center notification emails are now sent if deprecated API usage is detected in your code. Starting **Feb 26**, Cloud Manager pipelines deploying code referencing deprecated APIs will be paused and will need to be unpaused to continue. See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
+The deprecated APIs targeting 2/26/2026 removal should no longer be used in code. To prevent deployment blocks, remove API usage before March 26, 2026. Important dates:
+
+* **Starting January 26, 2026**: Actions Center notification emails are sent **weekly per environment** as a reminder to remove usage of these APIs.
+* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed.
+* **March 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
+* **April 30, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
+
+See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
 +++ Expand to see the Java API deprecations
 
