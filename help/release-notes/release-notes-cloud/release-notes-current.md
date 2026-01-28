@@ -73,6 +73,21 @@ See [AEM Foundation beta programs](#foundation-early-adopter).
 
 See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes/current.md).
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Content Tools MCP Server {#Content-MCP}
+
+Modern IDEs and chat applications (for example, ChatGPT) can use the Model Context Protocol (MCP) to let a Large Language Model (LLM) call tools exposed by an MCP server. Instead of writing code against low-level API specifications, you can describe what you want in natural language and have the LLM translate that intent into the appropriate API calls.
+
+AEM provides two Content Tools MCP Servers—**read-only** and **read/write**—with tools for working with **Pages**, **Content Fragments**, and **Assets**. These servers can be used from the following MCP clients: **ChatGPT**, **Claude**, **Cursor**, and **Microsoft Copilot Studio**.
+
+For example, you can prompt ChatGPT:
+
+*Update the headline of the main section of acme.com from "Welcome everyone!" to "Welcome folks!"*
+
+Learn more in [Using MCP with AEM Cloud Service](/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md). For questions or feedback, email [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com).
+
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 **AI Search**
@@ -187,7 +202,7 @@ OSGi properties:
 
 #### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-Adobe upgraded **Stage** and **Production** environments to the higher-performance **Java 21 runtime** on October 14th, 2025. Starting **February 9th**, neither the AEM Cloud Service SDK nor any cloud environments will work with Java 11 runtime.
+Adobe upgraded **Stage** and **Production** environments to the higher-performance **Java 21 runtime** on October 14th, 2025. Starting **February 9th** (gradual rollout through February 11th), neither the AEM Cloud Service SDK nor any cloud environments will work with Java 11 runtime.
 
 >[!NOTE]
 >
