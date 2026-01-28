@@ -75,18 +75,17 @@ See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Content Tools MCP Server {#Content-MCP}
+### Content MCP Server {#content-MCP}
 
-Modern IDEs and chat applications (for example, ChatGPT) can use the Model Context Protocol (MCP) to let a Large Language Model (LLM) call tools exposed by an MCP server. Instead of writing code against low-level API specifications, you can describe what you want in natural language and have the LLM translate that intent into the appropriate API calls.
+Modern IDEs and chat applications (for example, ChatGPT) can use the Model Context Protocol (MCP) to let a large language model (LLM) call tools exposed by an MCP server. Instead of writing code against low-level API specifications, you can describe what you want in natural language and have the LLM translate that intent into the appropriate API calls.
 
-AEM provides two Content Tools MCP Servers—**read-only** and **read/write**—with tools for working with **Pages**, **Content Fragments**, and **Assets**. These servers can be used from the following MCP clients: **ChatGPT**, **Claude**, **Cursor**, and **Microsoft Copilot Studio**.
+AEM provides two Content MCP Servers—**read-only** and **read/write**—with tools for working with **Pages**, **Content Fragments**, and **Assets**. These servers can be used from the following MCP clients: **ChatGPT**, **Claude**, **Cursor**, and **Microsoft Copilot Studio**.
 
 For example, you can prompt ChatGPT:
 
 *Update the headline of the main section of acme.com from "Welcome everyone!" to "Welcome folks!"*
 
 Learn more in [Using MCP with AEM Cloud Service](/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md). For questions or feedback, email [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com).
-
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
