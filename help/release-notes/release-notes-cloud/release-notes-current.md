@@ -42,6 +42,23 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 AEM provides a range of agents enabling you to accelerate your content creation and automatically orchestrate changes. For more information, see [Overview of Agents in AEM](/help/ai-in-aem/agents/overview.md).
 
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+
+**AI Search**
+
+AI Search introduces an intelligent, context-aware search experience that goes beyond traditional keyword matching by understanding the meaning and intent behind user queries. Powered by AI and machine learning, it delivers more accurate results even when queries are phrased differently, contain misspellings, use synonyms, or are submitted in different languages, helping users find relevant content faster with less effort.
+
+For more information, see AI Search in [Assets view](/help/assets/search-assets-view.md#ai-search) and [Admin view](/help/assets/search-assets.md#ai-search).
+
+**Desktop App 3.0.1 release**
+
+[Desktop App 3.0.1 (December 20, 2025)](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes) improves reliability, performance, and stability across key workflows. This release ensures consistent folder naming by fixing sync issues with AEM Author, allows uninterrupted use of the app during active transfers, enhances UI responsiveness through asynchronous processing, optimizes large file transfers with pagination, and resolves stability issues including Author server restarts and crashes during large folder uploads and downloads.
+
+**Adobe Asset Link CEP 2026.01.0**
+
+ [Adobe Asset Link CEP 2026.01.0](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) introduces a new Relink missing links option in InDesign that automatically relinks other missing assets from the same AEM folder. The feature matches assets based on filename, significantly reducing manual effort when restoring broken links.
+
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 <!-- ### Pre-Release features in AEM Forms 
