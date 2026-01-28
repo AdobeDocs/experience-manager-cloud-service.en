@@ -76,6 +76,8 @@ Open your AEM instance and if you have your Xwalk project ready, please open it 
 
 Click the **A/B** icon to open the experimentation extension. On your first use, the interface will be empty. Click **Create New** to start a new experiment.
 
+![a-b](/help/sites-cloud/administering/assets/a-b.png)
+
 ### Configure the experiment details
 
 Some of the experiment values are already pre-filled, as follows:
@@ -85,6 +87,8 @@ Some of the experiment values are already pre-filled, as follows:
 
 You can also rename your experiment to something more descriptive for example, `homepage-head-experiment`.
 
+![Experiment-details](/help/sites-cloud/administering/assets/exp-values.png)
+
 ### Add and Edit Variants
 
 Make sure you understand the concepts of challenger and variant as presented above before continuing. Click **Add New** to create a challenger variant:
@@ -93,19 +97,25 @@ Make sure you understand the concepts of challenger and variant as presented abo
 * Either edit the page directly in-context or click **Generate Variation** to use AI assistance.
 * After making changes, return to the extension to proceed. (**SR**-more details here).
 
+![Control-variant](/help/sites-cloud/administering/assets/control-variant.png)
+
 ### Define Other Properties and Save as Draft
 
 In the experimentation rail you can set a start and end date (both optional). If no start date is provided, the test begins once it is published. If no end date is set, the test runs indefinitely. You can also adjust the traffic split, we recommend starting with an even 50/50 split.
 
 After you are done, click **Save** — this will save your experiment as a Draft. Note that the experiment is not active yet. You can return to the overview by clicking **Back to Experiment** or you can stay in the Edit interface to activate experiment.
 
+![Draft](/help/sites-cloud/administering/assets/draft-save.png)
+
 ### Activate the Experiment
 
 Once you are ready, click **Activate** to launch the experiment. The test will begin collecting Operational Telemetry (RUM) data (see more details in the chapters below) **SR** - link.
 
+![Activate](/help/sites-cloud/administering/assets/activate.png)
+
 ### Monitor and Promote
 
-After the experiment reaches statistical significance, click **Promote** to make the desired variant your new control.
+After the experiment reaches statistical significance, click **Promote** (**SR**-where do you click promote)to make the desired variant your new control.
 
 <!-- ### Experiment Identifier {#experiment-identifier}
 
