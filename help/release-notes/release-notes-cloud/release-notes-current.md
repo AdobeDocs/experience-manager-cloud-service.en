@@ -73,28 +73,6 @@ See [AEM Foundation beta programs](#foundation-early-adopter).
 
 See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes/current.md).
 
-
-## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
-
-**New version of Figma Plugin for integration with AEM Assets is available**
-
-* Support for video files (MP4, MOV, WebM), Animated files (GIF), and Vector files (SVG) while importing assets from AEM repository to the Figma document.
-
-* Support for checking if there are any updates to the assets that are used in Figma document as compared to the assets that exist in AEM repository and getting the latest version of assets if there are any updates.
-
-* Support for export configurations while exporting PNG (scale) and JPG (image scale and quality) file formats.
-
-   ![Figma plugin](/help/assets/assets/figma-v2-plugin.png)
-
-**Malware detection for uploaded assets**
-
-AEM Assets now includes automatic malware scanning of uploaded files, ensuring that suspicious assets are quarantined before entering the DAM to protect your repository from threats. Administrators can configure scan settings and quarantine retention policies for streamlined security controls.
-
-**AI-Generated metadata – Eligibility Update**
-
-AI-Generated metadata in AEM Assets no longer requires the GenAI Rider to be signed in order to be enabled. The feature is now available to both customers who have signed the GenAI Rider and customers who have not yet been validated. Customers who have explicitly opted out of GenAI usage will continue to have the feature disabled. To manage the feature enablement at the environment-level, please see [Disable AI-generated metadata](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata). This change will be made for customers on release version 23482 or later.
-
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 **AI Search**
