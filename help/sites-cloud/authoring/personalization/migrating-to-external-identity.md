@@ -377,8 +377,14 @@ public class MigrationStep1Servlet extends SlingAllMethodsServlet {
         
         // Create external group
         String externalGroupPrincipalName = localGroupId + ";" + idpName;
-        Group externalGroup = createExternalGroup(externalGroupPrincipalName, 
-                                                    localGroupId, idpName);
+        // The function createExternalGroup performs the following steps:
+        // 1. Creates a new external group with the given principal name (format: "<localGroupId>;<idpName>").
+        // 2. Sets the 'rep:externalId' property on the group to mark it as an external group (value: "<localGroupId>;<idpName>").
+        // 3. Sets the 'rep:principalName' property for the group if required.
+        // 4. Assigns any other required group metadata, such as a title or description, if needed.
+        // 5. Persists the new group node in the repository at the appropriate path under /home/groups.
+        // 6. Returns the created Group object so it can be used for further operations, such as membership assignment.
+        Group externalGroup = createExternalGroup(externalGroupPrincipalName, localGroupId, idpName);
         
         // Add external group to local group
         localGroup.addMember(externalGroup);
@@ -558,11 +564,8 @@ curl -X POST "http://localhost:4503/bin/migration/step3?groupPath=/home/groups/c
 Verify the migration:
 
 1. **Check User Properties**:
-   ```bash
-   curl -u admin:admin http://localhost:4503/home/users/u/username.json
-   ```
-   
-   Verify presence of:
+  
+   On user nodes verify presence of:
    - `rep:externalId`: Format should be `userId;idpName`
    - `rep:externalPrincipalNames`: Array of group principals in format `groupId;idpName`
    - `rep:lastSynced`: Timestamp set to far future (approximately 10 years from migration date)
@@ -571,17 +574,14 @@ Verify the migration:
    **Note**: The timestamps are intentionally set to a far future date as a workaround for OAK-12079. This is expected behavior.
 
 2. **Check Group Properties**:
-   ```bash
-   curl -u admin:admin http://localhost:4503/home/groups/g/my-group.json
-   ```
-   
-   Verify presence of:
+      
+   On Group nodes verify presence of:
    - External group member with format `groupId;idpName`
    - No direct user members (only after Step 3)
 
-3. **Test Access Control**: Verify users can access content protected by CUGs/ACLs
+3. **Test User Login**: Verify users can log in and have correct permissions
 
-4. **Test User Login**: Verify users can log in and have correct permissions
+4. **Test Access Control**: Verify users can access content protected by CUGs/ACLs
 
 ## Troubleshooting {#troubleshooting}
 
