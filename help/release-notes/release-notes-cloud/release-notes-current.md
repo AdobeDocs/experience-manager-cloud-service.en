@@ -1,5 +1,5 @@
 ---
-title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service
 description: Current release notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
@@ -38,9 +38,62 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 -->
 
-## Agents in AEM {#agents-in-aem}
+## AEM Beta Programs {#aem-beta-programs}
 
-AEM provides a range of agents enabling you to accelerate your content creation and automatically orchestrate changes. For more information, see [Overview of Agents in AEM](/help/ai-in-aem/agents/overview.md).
+Adobe Experience Manager (AEM) beta programs are a way for customers to get access to prerelease features and code, provide feedback, and guide the future of AEM. 
+
+>[!IMPORTANT]
+>
+>Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk.
+
+**Benefits of participating**
+Getting early access to features that Adobe is developing lets customers and partners provide feedback and shape product development. It also helps them prepare to adopt new capabilities before general availability.
+
+**Current beta programs**
+The following sections list active beta programs.
+
+### Agents in AEM (Beta program) {#agents-in-aem-beta-program}
+
+Gain early access to powerful, new AEM agentic capabilities across production, governance, optimization, discovery, and development. Your feedback directly shapes Adobe's roadmap and final features. See [Overview of Agents in AEM](/help/ai-in-aem/agents/overview.md) to learn more.
+
+This program typically lasts 4-6 weeks, but can be tailored to be flexible around your ability to actively participate. 
+
+To opt in to participate in this program, email [aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com) and include the following details to the extent possible:
+
+* Names and Adobe ID's of team members who will actively use agents.
+* List Specific agents that you or your team will want to use. Or simply say "All Agents."
+
+Customers selected for participation will be notified directly by Adobe. Participation is subject to eligibility considerations, including customer licensing and limited program capacity. While not all requests can be accommodated initially, additional customers may be considered in future beta waves.
+
+### AEM Foundation (Beta programs) {#aem-foundation-beta-programs}
+
+See [AEM Foundation beta programs](#foundation-early-adopter).
+
+### Cloud Manager (Beta programs) {#cloud-manager-beta-programs}
+
+See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes/current.md).
+
+
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+
+**New version of Figma Plugin for integration with AEM Assets is available**
+
+* Support for video files (MP4, MOV, WebM), Animated files (GIF), and Vector files (SVG) while importing assets from AEM repository to the Figma document.
+
+* Support for checking if there are any updates to the assets that are used in Figma document as compared to the assets that exist in AEM repository and getting the latest version of assets if there are any updates.
+
+* Support for export configurations while exporting PNG (scale) and JPG (image scale and quality) file formats.
+
+   ![Figma plugin](/help/assets/assets/figma-v2-plugin.png)
+
+**Malware detection for uploaded assets**
+
+AEM Assets now includes automatic malware scanning of uploaded files, ensuring that suspicious assets are quarantined before entering the DAM to protect your repository from threats. Administrators can configure scan settings and quarantine retention policies for streamlined security controls.
+
+**AI-Generated metadata – Eligibility Update**
+
+AI-Generated metadata in AEM Assets no longer requires the GenAI Rider to be signed in order to be enabled. The feature is now available to both customers who have signed the GenAI Rider and customers who have not yet been validated. Customers who have explicitly opted out of GenAI usage will continue to have the feature disabled. To manage the feature enablement at the environment-level, please see [Disable AI-generated metadata](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata). This change will be made for customers on release version 23482 or later.
+
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -156,7 +209,7 @@ OSGi properties:
 
 #### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
 
-Adobe upgraded **Stage** and **Production** environments to the higher-performance **Java 21 runtime** on October 14th, 2025. Starting **late January**, neither the AEM Cloud Service SDK nor any cloud environments will work with Java 11 runtime.
+Adobe upgraded **Stage** and **Production** environments to the higher-performance **Java 21 runtime** on October 14th, 2025. Starting **February 9th**, neither the AEM Cloud Service SDK nor any cloud environments will work with Java 11 runtime.
 
 >[!NOTE]
 >

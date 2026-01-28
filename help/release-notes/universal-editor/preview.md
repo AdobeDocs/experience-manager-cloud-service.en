@@ -7,7 +7,7 @@ role: Admin
 
 # Universal Editor Preview Release Notes {#preview}
 
-These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 18 December 2025.
+These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 29 January 2026.
 
 These **preview** release notes are provided as a convenience so you know what changes to the Universal Editor are upcoming and you can test them by [switching to your preview environment.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -21,10 +21,15 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming New Features {#what-is-new}
 
-* Support for setting and persisting default values of model fields has been added.
+* Remove component method was exposed to `editorActions`.
+* Copy component method was exposed to `editorActions`.
+* Definitions were exposed to extensibility.
+* Move component method was exposed to `editorActions`.
+* Add component method was exposed to `editorActions`.
+* Version 2.0 of the Document Authoring API is released.
 
 ## Upcoming Improvements {#other-improvements}
 
-* Data cleanup is now performed correctly on content switch.
-* Multiple operations in extensions's update are now supported.
-* Close button for developer login now behaves as expected.
+* The `content` extensibility was renamed to `details` to follow API schema.
+* Contextual menu behavior was improved.
+* Fixed a bug when clicking the badge of an editable item so that the context menu opens properly.

@@ -18,7 +18,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 
 [!DNL Experience Manager Forms] Data Integration lets you configure and connect to disparate data sources. The following types are supported out-of-the-box:
 
-* Relational databases - MySQL, [!DNL Microsoft&reg; SQL Server], [!DNL IBM&reg; DB2&reg;], postgreSQL, and [!DNL Oracle RDBMS] 
+* Relational databases - MySQL, [!DNL Microsoft&reg; SQL Server], [!DNL IBM&reg; DB2&reg;], postgreSQL, Azure SQL and [!DNL Oracle RDBMS] 
 * RESTful web services  
 * SOAP-based web services
 * OData services (Version 4.0)
@@ -42,12 +42,83 @@ Before configuring relational databases using [!DNL Experience Manager] Web Cons
 
 You can configure relational databases using [!DNL Experience Manager] Web Console Configuration. Do the following:
 
+**Step1: Clone AEM as a Cloud Service Git repository**
+
+1. Open the command line and choose a directory to store your AEM as a Cloud Service repository, such as `/cloud-service-repository/`.
+
+2. Run the below command to clone the repository:
+
+    ```
+    git clone https://git.cloudmanager.adobe.com/<organization-name>/<app-id>/
+    ```
+
+   **Where to find this information?**
+
+   For step-by-step instructions on locating these details, refer to the Adobe Experience League article "[Accessing Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)".
+
+   When the command completes successfully, you see a new folder created in your local directory. This folder is named after your application. 
+
+**Step 2: Navigate to the Configuration Folder**
+
+1. Open the repository folder in an editor. 
+
+1. Navigate to the following directory within your `<application folder>` where the OSGi configuration for the JDBC pool should be placed:
+
+   ```bash
+   cd ui.config/src/jcr_root/apps/<application folder>/osgiconfig/config/
+   ```
+
+**Step 3: Create the MySQL Connection Configuration File**
+
+1. Create the file:
+
+      ```bash
+      com.day.commons.datasource.jdbcpool.JdbcPoolService~<application folder>-mysql.cfg.json
+      ```
+
+1. Add the below lines of code:
+
+```json
+{
+  "jdbc.driver.class": "com.mysql.cj.jdbc.Driver",
+  "jdbc.connection.uri": "jdbc:mysql://<hostname>:<port>/<database>?useSSL=false",
+  "jdbc.username": "<your-db-username>",
+  "jdbc.password": "<your-db-password>",
+  "datasource.name": "<application folder>-mysql",
+  "datasource.svc.prop.name": "<application folder>-mysql"
+}
+```
+
+> ![NOTE]
+>
+> Replace placeholders like `<application folder>`, `<hostname>`, `<database>`, `<your-db-username>`, and `<your-db-password>` with actual values.
+
+**Step 4: Commit and Push the Changes**
+
+Open the terminal and run the below commands:
+
+```bash
+git add .
+git commit -m "<commit message>"
+git push 
+```
+
+**Step 5: Deploy the Changes via Cloud Manager Pipeline**
+
+1. Log in to **AEM Cloud Manager**.
+1. Navigate to your project and run the pipeline to deploy the changes.
+
+>[!NOTE]
+>
+> See [SQL connections using JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) for more detailed information.
+
+<!--
 1. Go to [!DNL Experience Manager] web console at `https://server:host/system/console/configMgr`.
-1. Locate **[!UICONTROL Day Commons JDBC Connections Pools]** configuration. Select to open the configuration in edit mode.
+2. Locate **[!UICONTROL Day Commons JDBC Connections Pools]** configuration. Select to open the configuration in edit mode.
 
    ![JDBC Connector Pool](/help/forms/assets/jdbc_connector.png)
 
-1. In the configuration dialog, specify the details for the database you want to configure, such as:
+3. In the configuration dialog, specify the details for the database you want to configure, such as:
 
     * Java&trade; class name for the JDBC driver
     * JDBC connection URI
@@ -65,11 +136,9 @@ You can configure relational databases using [!DNL Experience Manager] Web Conso
       "jdbc.connection.uri": "jdbc:mysql://$[env:AEM_PROXY_HOST;default=proxy.tunnel]:30001/sqldatasourcename"
    ```
 
-   >[!NOTE]
-   >
-   > See [SQL connections using JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html) for more detailed information.
+
     
-1. Select **[!UICONTROL Save]** to save the configuration.
+4. Select **[!UICONTROL Save]** to save the configuration.
 
 Now, you can use the configured relational database with your Form Data Model (FDM). 
 
