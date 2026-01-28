@@ -48,21 +48,30 @@ To set up the experimentation capabilities within your your Xwalk Project and st
 
 ## Experiment variants and general workflow {#experiment-variants-workflow}
 
-Generally speaking, when setting up an experiment you will use a pre-existing page as the control page. By using the experimentation rail, you will then create a challenger page that will replace the control page for some of your visitors. In the challenger page, you can test different things like content variants, different page layouts, call-to-action (CTA) and so on. In general, You can configure these experiment variants as you see fit (more details below).
+Before following the rest of the guide to set up your first experiment, there are a few frequently used terms that you should be familiar with:
 
-The [Operational Telemetry service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) then gathers data, for example, the number of visitors in the control page versus the challenger page. You then use this data to pick the necessary improvements for your site. As long as you stay within the established design language of your website and use the existing block functionality you should be able to set up an experiment variant and send it to production in a matter of minutes.
+* **Control**: the experience prior to running the experiment. All experiments try to test and demonstrate an improvement over the control experience.
+* **Challenger**: an experience that is different from the control experience and is "tested" either against it or alongside it.
+* **Variants**: control and challenger are all variants of an experiment.
+* **Statistical Significance**: Evaluating if your challenger is really better than the control. Calculating statistical significance allows you to rule out luck and concentrate on the results that have a real effect.
+
+Generally speaking, when setting up an experiment you will use a pre-existing page as the control page. By using the experimentation rail, you will then create a challenger page that is initially a copy of the control page. In the challenger page, you can test different things like content variants, different page layouts, call-to-action (CTA) and so on. You can also use AI generated variants, by using the Generate variation functionality in the experimentation rail.
+
+For each experiment, the traffic is initially split 50/50 between control and challenger but you can configure how the traffic is split as needed. After you activate the experiment you will receive data via the Operational Telemetry service.
+
+The [Operational Telemetry service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) gathers data, for example, the number of visitors in the control page versus the challenger page. You then use this data to pick the necessary improvements for your site. As long as you stay within the established design language of your website and use the existing functionality you should be able to set up an experiment variant and send it to production in a matter of minutes.
 
 >[!NOTE]
 >Keep in mind that the plug-in doesn't use any, nor persists any, end-user data that could lead to their identification. No end-user opt-in nor cookie consent is required when using the default configuration that uses the [Operational Telemetry service in AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md).
 
-### Frequently used terms {#frequently-used-terms}
+<!--### Frequently used terms {#frequently-used-terms}
 
 Before following the rest of the guide to set up your first experiment, there are a few frequently used terms that you should be familiar with:
 
 * **Control**: the experience prior to running the experiment. All experiments try to test and demonstrate an improvement over the control experience.
 * **Challenger**: an experience that is different from the control experience and is "tested" against it or alongside it.
 * **Variants**: control and challenger are all variants of an experiment.
-* **Statistical Significance**: Evaluating if your challenger is really better than the control. Calculating statistical significance allows you to rule out luck and concentrate on the results that have a real effect.
+* **Statistical Significance**: Evaluating if your challenger is really better than the control. Calculating statistical significance allows you to rule out luck and concentrate on the results that have a real effect. -->
 
 ### Creating experiments in Universal editor with your xwalk project
 
