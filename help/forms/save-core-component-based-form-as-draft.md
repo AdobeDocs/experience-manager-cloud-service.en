@@ -16,10 +16,6 @@ Consider a user who begins filling out a form but needs to pause and return late
 
 ## Pre-requisites
 
-* Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
-
-    After deploying the latest Core Components to your environment, the Forms Portal components become accessible in your authoring environment.
-
 * [Configure Azure Storage and Unified Storage Connector for Drafts & Submissions Forms Portal component](#configure-azure-storage-and-unified-storage-connector-for-drafts--submissions-forms-portal-component) 
 
 ### Configure Azure Storage and Unified Storage Connector for Drafts & Submissions Forms Portal component
@@ -62,7 +58,7 @@ The **Drafts & Submissions** component needs a storage setup for saving and list
 
 >[!NOTE]
 >
-> If you need to configure a storage option, other than Azure, write to aem-forms-ea@adobe.com from your official email address with your detailed requirements.
+> If you need to configure a storage option, other than Azure, write to <aem-forms-ea@adobe.com> from your official email address with your detailed requirements.
 
 Once you have successfully configured Azure Storage and Unified Storage Connector for storing the drafts and submitted forms, add the **Drafts & Submissions** component on AEM Sites page.
 
