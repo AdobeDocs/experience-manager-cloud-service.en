@@ -71,25 +71,26 @@ Configuring MCP for AEM involves three main parts:
 
 ### AEM Configuration {#aem-configuration}
 
-This step is performed once by an AEM administrator.
+By default, access to AEM's MCP servers is governed by the permissions that individual users have within AEM. When a user authenticates through an MCP client application, the MCP tools enforce the same access rules as manual operations in AEM. A user can only perform actions they are already authorized to perform.
 
-Your AEM administrator must add the client IDs associated with each supported MCP application to an API configuration file (`api.yaml`) and deploy it using the AEM configuration pipeline. This allows the administrator to make a conscious decision about whether members of the organization can access AEM's MCP servers from those applications.
+#### Permitted MCP Client Applications {#permitted-mcp-client-applications}
 
-Find an example `api.yaml` below:
+The following MCP client applications are permitted by default:
 
-```yaml
-kind: "API"
-version: "1"
-data:
-  allowedClientIDs:
-    author:
-      - "aem-oauth-chatgpt"
-      - "aem-oauth-claude"
-      - "aem-oauth-mscopilot"
-      - "aem-oauth-cursor"
-```
+* ChatGPT
+* Claude
+* MS Copilot Studio
+* Cursor
 
-After this configuration is deployed through the AEM configuration pipeline, the listed MCP client applications can request auth tokens and call AEM MCP tools for the author tier.
+#### Restricting MCP Servers {#restricting-mcp-servers}
+
+All MCP servers are allowlisted by default. As an administrator, you have the option to restrict access to specific MCP servers at the organization, program, or environment level. This gives you granular control over which MCP capabilities are available to users within your organization.
+
+#### Managing MCP Client Access {#managing-mcp-client-access}
+
+Administrators can also disable access for specific MCP client applications if your organization's policies require it. If you would like Adobe to enable support for additional MCP client products, send a link to the product website. If you need to allowlist a custom MCP client, reach out as well.
+
+For all MCP server related requests, feel free to contact us at **aemcs-mcp-feedback@adobe.com**
 
 ### MCP Client Application Configuration {#mcp-client-application-configuration}
 
