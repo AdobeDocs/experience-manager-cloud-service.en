@@ -284,3 +284,5 @@ Some MCP client applications, such as Claude, offer the option to auto-acknowled
 ## Limitations {#limitations}
 
 AEM's MCP servers are currently intended to be configured in ChatGPT, Claude, Cursor, and Microsoft Copilot Studio.
+
+If you would like to use a different MCP client application, feel free to reach out at **aemcs-mcp-feedback@adobe.com** to request support for additional clients or to allowlist a custom one.
