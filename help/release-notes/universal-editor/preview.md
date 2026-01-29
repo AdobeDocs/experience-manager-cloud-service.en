@@ -21,6 +21,8 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming New Features {#what-is-new}
 
+* The move action is now available within [the context menu.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
 
 ## Upcoming Improvements {#other-improvements}
 
+* Publish to preview was enabled for AEM 6.5 when using the [`xwalk` plugin.](/help/implementing/universal-editor/component-definition.md#plugins)
