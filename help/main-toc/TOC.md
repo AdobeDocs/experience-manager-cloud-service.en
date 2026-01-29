@@ -1073,6 +1073,7 @@ user-guide-title: AEM as a Cloud Service
     + [502 Error Page in Custom Submit Action](/help/forms/custom-submit-action-troubleshooting.md)
 + AI in AEM {#ai-in-aem}
   + [Overview](/help/ai-in-aem/overview.md)
+  + [Using MCP with AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
   + Agents in AEM {#agents}
     + [Overview](/help/ai-in-aem/agents/overview.md)
     + Experience Production Agent {#production}
