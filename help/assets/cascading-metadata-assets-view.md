@@ -22,7 +22,7 @@ Here are some use cases for which you can define cascading metadata:
 
 ## Configure cascading metadata in [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
-Consider a scenario where you want to display cascading metadata based on the type of asset that is selected. Some examples
+Consider a scenario where you want to display cascading metadata based on the type of asset that is selected. For example-
 
 * For a video, display applicable fields such as format, codec, duration, and so on.
 * For a Word or PDF document, display fields, such as page count, author, and so on.
@@ -33,44 +33,49 @@ Irrespective of the asset type chosen, display the copyright information as a re
 
 Consider the steps below to create a new Metadata Form: 
 
-1. Select the [!DNL Experience Manager] logo, and go to **[!UICONTROL Settings]** > **[!UICONTROL Metadata Forms]**.
-1. Select a schema form and then select **[!UICONTROL Edit]** from the toolbar to edit the schema.
+1. Select the [!DNL Experience Manager] logo, and go to **[!UICONTROL Settings]** > **[!UICONTROL Metadata Forms]** > **[!UICONTROL Create]**.
 
-   ![select form](assets/select-form-assets-view.png)
+1. From the **[!UICONTROL Type]** dropdown, select the appropriate form type: **[!UICONTROL File]**, **[!UICONTROL Folder]**, or **[!UICONTROL Collection]**.
 
-1. Select `+` to add a new tab.
+1. Specify the title of the metadata form in the **[!UICONTROL Name]** field.
+
+1. Alternatively, choose an existing metadata form template from the **[!UICONTROL Choose from existing form template]** dropdown.
+
+1. A blank Metadata Form appears. Click `+` to add a new tab.
+
+   ![select form](assets/new-metadata-form.png)
 
 Watch this video to view the sequence of steps, [Setup Metadata Forms](https://video.tv.adobe.com/v/341275).
 
 ### Modify an existing Metadata Form {#modify-existing-metadata-form}
 
-Consider the steps below to modify an existing Metadata Form:
+To modify an existing metadata form, follow the steps below. An **Asset Type** is used as an example for this explanation.
 
 1. Open an existing Metadata Form and navigate to the [pre-defined components](metadata-assets-view.md#property-components) that you want to add in the form and drop the elements on your canvas.
 
-    ![Settings tab](assets/settings-tab-metadata-schema-tab.png)
+   In accordance with **Asset Type** use case, add a dropdown field to define asset type options. Specify the name and property path in **Settings**, and optionally configure the field as **[!UICONTROL Read-Only]** or **[!UICONTROL Multiple Selections]**.
 
-1. Add a Dropdown field as options for asset type. Specify a name and property path in the Settings.
+1. Provide the key-value options for the dropdown either by entering them manually, specifying a JSON path, or importing a CSV file.
 
-   ![Drop Down settings](assets/metadata-dropdown.png)
+    * To specify the values manually, select **[!UICONTROL Add Manually]** under **[!UICONTROL Choices]** and click `Add` and specify the option label and value. For example, specify Video, PDF, Word, and Image asset types.
 
-   For example, if the Asset type is Video, then add the other required fields such as format, codec, and duration. Similarly, add dependent fields for other asset types. For example, add fields page count and author for document assets, such as PDF and Word files.
-
-1. Values are the options provided to a metadata form-user. You can provide the key-value pairs either manually or from a CSV file.
-
-    * To specify the values manually, click `+` and specify the option label and value. For example, specify Video, PDF, Word, and Image asset types.
-
-    * To fetch the values from a CSV file dynamically, click **[!UICONTROL Import CSV]** and provide the path of the CSV file. [!DNL Experience Manager] fetches the key-value pairs in the real time when the form is presented to the user.
-
-      Both options are mutually exclusive. You cannot import the options from a CSV file and edit manually.
-
-      ![value](assets/value.png)
+      ![Add Manual Choices](assets/add-manual-choices.png)
    
-   * To fetch the values from a JSON path, click **[!UICONTROL Add through JSON Path]**.
+   *  To fetch values from a JSON path, select **[!UICONTROL Add through JSON Path]** and specify the path of the JSON file.
 
-1. To create a dependency between the asset type field and other fields, choose the dependent field and open the **[!UICONTROL Rules]** tab.
+      ![Add Choices through JSON path](assets/add-json-choices.png)
 
-   ![select dependent field](assets/select-dependent-field.png)
+    * To fetch the values from a CSV dynamically, click **[!UICONTROL Import CSV]** and provide the path of the CSV file. [!DNL Experience Manager] fetches the key-value pairs in the real time when the form is presented to the user.
+
+      ![Add Choices through CSV](assets/import-csv-choices.png)
+    
+   >[!NOTE]
+   > 
+   > Both options are mutually exclusive. You cannot import the options from a CSV file and edit manually.
+
+1. To create a dependency between the Asset Type field and other fields, select the dependent field and open the **[!UICONTROL Rules]** tab. Each component supports a specific set of rules. 
+
+   ![rule tab](assets/rule-tab.png)
 
 1. Under **[!UICONTROL Required]**, choose the **[!UICONTROL Required, based on new rule]** option.
 
@@ -80,17 +85,11 @@ Consider the steps below to modify an existing Metadata Form:
    >
    >You can apply **[!UICONTROL Requirement]** condition and **[!UICONTROL Visibility]** condition independent of each other.
    
-1. Select **[!UICONTROL Add Rule]** and choose the **[!UICONTROL Asset Type]** field to create a dependency. Also choose the field value on which to create the dependency. This field displays only drop-down fields as options. Select **[!UICONTROL Done]** to save the changes.
-
-   <!--![define rule](assets/define-rule.png)-->
-
-   You can edit or delete the defined rule.
+1. Select **[!UICONTROL Choices based on rule]** to create a dependency and define rule.
    
    ![rule](assets/rule.png)
 
-1. Similarly, create a dependency between the value in the Asset Type field and other fields.
-
-1. Repeat the steps to create dependency between the other assets such as PDF and Word in the [!UICONTROL Asset Type] field and fields such as [!UICONTROL Page Count] and [!UICONTROL Author].
+1. Similarly, create a dependency between the value in the Asset Type field and other fields. Alternatively, repeat the steps to create dependency between the other assets such as PDF and Word in the [!UICONTROL Asset Type] field and fields such as [!UICONTROL Page Count] and [!UICONTROL Author].
 
 1. Click **[!UICONTROL Save]**. Apply the metadata form to a folder.
 
