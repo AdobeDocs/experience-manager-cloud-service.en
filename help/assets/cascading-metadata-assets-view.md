@@ -53,7 +53,7 @@ To modify an existing metadata form, follow the steps below. An **Asset Type** i
 
 1. Open an existing Metadata Form and navigate to the [pre-defined components](metadata-assets-view.md#property-components) that you want to add in the form and drop the elements on your canvas.
 
-   In accordance with **Asset Type** use case, add a dropdown field to define asset type options. Specify the name and property path in **Settings**, and optionally configure the field as **[!UICONTROL Read-Only]** or **[!UICONTROL Multiple Selections]**.
+   In accordance with the **Asset Type** use case, add a dropdown field to define asset type options. Specify the name and property path in **Settings**, and optionally configure the field as **[!UICONTROL Read-Only]** or **[!UICONTROL Multiple Selections]**.
 
 1. Provide the key-value options for the dropdown either by entering them manually, specifying a JSON path, or importing a CSV file.
 
@@ -83,7 +83,7 @@ To modify an existing metadata form, follow the steps below. An **Asset Type** i
 
    >[!NOTE]
    >
-   >You can apply **[!UICONTROL Requirement]** condition and **[!UICONTROL Visibility]** condition independent of each other.
+   >You can apply the **[!UICONTROL Requirement]** condition and **[!UICONTROL Visibility]** condition independent of each other.
    
 1. Select **[!UICONTROL Choices based on rule]** to create a dependency and define rule.
    
