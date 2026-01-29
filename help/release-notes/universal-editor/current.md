@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.01.22 Release Notes
-description: These are the release notes for the 2026.01.22 release of the Universal Editor.
+title: Universal Editor 2026.01.29 Release Notes
+description: These are the release notes for the 2026.01.29 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.01.22 Release Notes {#release-notes}
+# Universal Editor 2026.01.29 Release Notes {#release-notes}
 
-These are the release notes for the 22 January 2026 release of the Universal Editor.
+These are the release notes for the 29 January 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,11 +20,12 @@ These are the release notes for the 22 January 2026 release of the Universal Edi
 
 ## What's New {#what-is-new}
 
-* Labels (as short text previews) were added to text blocks in [the Content Tree.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
-* TextArea is now supported for plain text fields.
-* The config endpoint is now used for UI capabilities.
-* TextArea from Content Fragments is now supported.
-* Toast API is now exposed to extensions.
+* Remove component method was exposed to `editorActions`.
+* Copy component method was exposed to `editorActions`.
+* Definitions were exposed to extensibility.
+* Move component method was exposed to `editorActions`.
+* Add component method was exposed to `editorActions`.
+* Version 2.0 of the Document Authoring API is released.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -34,12 +35,6 @@ If you are interested in testing the upcoming features listed below and sharing 
 
 ## Other Improvements {#other-improvements}
 
-* A problem with the canvas layout when navigating via location bar was fixed.
-* Leading whitespace wast sanitized in the RTE.
-* Inline editing was restored on enter.
-* Drag label was reverted to not show entire content.
-* Browser accessibility issues were resolved.
-* `selectEditables([])` is now used to unselect all components via extensibility.
-* The metadata table is now created in the right location.
-* Fixed an issue where copied Content Fragment resources were pointing to `/data/undefined`.
-
+* The `content` extensibility was renamed to `details` to follow API schema.
+* Contextual menu behavior was improved.
+* Fixed a bug when clicking the badge of an editable item so that the context menu opens properly.
