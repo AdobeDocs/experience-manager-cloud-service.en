@@ -132,6 +132,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2025 {#2025}
+      + [2025.12.0](/help/implementing/cloud-manager/release-notes/2025/2025-12-0.md)
       + [2025.11.0](/help/implementing/cloud-manager/release-notes/2025/2025-11-0.md)
       + [2025.10.0](/help/implementing/cloud-manager/release-notes/2025/2025-10-0.md)
       + [2025.9.0](/help/implementing/cloud-manager/release-notes/2025/2025-9-0.md)
@@ -240,6 +241,8 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Universal Editor {#universal-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
+    + 2026 {#2026}
+      + [2026.01.15 Release Notes](/help/release-notes/universal-editor/2026/2026-01-15.md)
     + 2025 {#2025}
       + [2025.12.12 Release Notes](/help/release-notes/universal-editor/2025/2025-12-12.md)
       + [2025.12.04 Release Notes](/help/release-notes/universal-editor/2025/2025-12-04.md)
@@ -1487,7 +1490,6 @@ user-guide-title: AEM as a Cloud Service
       + [SPA WKND Tutorial](/help/implementing/developing/hybrid/wknd-tutorial.md)
       + [Getting Started using React](/help/implementing/developing/hybrid/getting-started-react.md)
       + [Getting Started using Angular](/help/implementing/developing/hybrid/getting-started-angular.md)
-      + [SPA Deep Dives](/help/implementing/developing/hybrid/deep-dives-gems.md)
       + [Developing SPAs for AEM](/help/implementing/developing/hybrid/developing.md)
       + [SPA Editor Overview](/help/implementing/developing/hybrid/editor-overview.md)
       + [SPA Blueprint](/help/implementing/developing/hybrid/blueprint.md)

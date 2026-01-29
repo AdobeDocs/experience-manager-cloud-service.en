@@ -10,7 +10,7 @@ role: Admin
 
 ## Overview {#overview}
 
-The CIF add-on extends AEM authoring with commerce-specific capabilities. This enables authors to build and managed commerce-related experiences efficiently by getting access to product data and content without leaving the context.
+The CIF add-on extends AEM authoring with commerce-specific capabilities. This enables authors to build and manage commerce-related experiences efficiently by getting access to product data and content without leaving the context.
 
 ## Pickers {#pickers}
 
