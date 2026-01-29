@@ -161,7 +161,8 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
   
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
+<!-- ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices Features {#foundation-new} -->
+### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
 #### Java API Deprecations {#java-api-deprecation}
 
@@ -217,7 +218,7 @@ Adobe upgraded **Stage** and **Production** environments to the higher-performan
 
 AEM Java logs must follow a standard format to ensure reliable monitoring across all customer environments. Custom log configurations—such as changes to log formatting, output files, or default log levels—are no longer supported. Logs must remain directed to the default files, and default log levels for AEM product code must be preserved. See full details in the [Logging article](/help/implementing/developing/introduction/logging.md#configuration-loggers).
 
-Any unsupported custom logging overrides are now ignored. Most customers were not impacted and Adobe has contacted customers whose current configuration may be affected.
+Any unsupported custom logging overrides *are now ignored*. Most customers were not impacted and Adobe has contacted customers whose current configuration may be affected.
 
 Please review and update any downstream processes that rely on custom logging behavior. For example:
 
