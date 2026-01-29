@@ -18,3 +18,4 @@ usage-agents.log
 setup-agent.md
 .cursor/
 .vscode/
+.gitmodules

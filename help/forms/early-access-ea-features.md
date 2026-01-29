@@ -307,6 +307,8 @@ Storing PDFs in Azure Blob Storage allows for centralized management of document
   
 * [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters): Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly.
 
+* [Retrieve property values from a JSON array](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): Invoke an API with a custom function to extract values from a JSON array and bind them directly to form fields.
+
 ## See also
 
 * [Latest Innovations in AEM Forms](/help/forms/latest-innovations.md)

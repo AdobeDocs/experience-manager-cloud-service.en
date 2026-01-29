@@ -7,7 +7,7 @@ role: Admin
 
 # Universal Editor Preview Release Notes {#preview}
 
-These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 29 January 2026.
+These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 5 February 2026.
 
 These **preview** release notes are provided as a convenience so you know what changes to the Universal Editor are upcoming and you can test them by [switching to your preview environment.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -21,15 +21,8 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming New Features {#what-is-new}
 
-* Remove component method was exposed to `editorActions`.
-* Copy component method was exposed to `editorActions`.
-* Definitions were exposed to extensibility.
-* Move component method was exposed to `editorActions`.
-* Add component method was exposed to `editorActions`.
-* Block details implemented for V2.
+* The move action is now available within [the context menu.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
 
 ## Upcoming Improvements {#other-improvements}
 
-* The `content` extensibility was renamed to `details` to follow API schema.
-* Contextual menu behavior was improved.
-* Fixed a bug when clicking the badge of an editable item so that the context menu opens properly.
+* Publish to preview was enabled for AEM 6.5 when using the [`xwalk` plugin.](/help/implementing/universal-editor/component-definition.md#plugins)

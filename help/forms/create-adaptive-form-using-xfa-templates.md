@@ -25,12 +25,10 @@ Few of the advantages of creating forms based on XFA form templates or XDP files
 
 ## Pre-requisites
 
-You require the following to create an Adaptive Form based on Core Components using XFA form templates or XDP files:
 
-* Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
 * Familiarity with the following areas is recommended:
-    * Creating an adaptive form
-    * XFA (XML Forms Architecture)
+  * Creating an adaptive form
+  * XFA (XML Forms Architecture)
 
 ## How to create an Adaptive Form using an XFA Form templates or XDP files?
 
