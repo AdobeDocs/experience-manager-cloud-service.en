@@ -77,15 +77,13 @@ See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes
 
 ### Content MCP Server {#content-MCP}
 
-Modern IDEs and chat applications (for example, ChatGPT) can use the Model Context Protocol (MCP) to let a large language model (LLM) call tools exposed by an MCP server. Instead of writing code against low-level API specifications, you can describe what you want in natural language and have the LLM translate that intent into the appropriate API calls.
+Chat applications (e.g., ChatGPT) and modern IDEs (e.g., Cursor) can use the Model Context Protocol (MCP) to let a large language model (LLM) call tools exposed by an MCP server. Instead of writing code against low-level API specifications, you can describe what you want in natural language and have the LLM translate that intent into the appropriate API calls. And in some cases, a prompt can be more convenient than navigating a user interface.
+
+For example, you can prompt ChatGPT: *Edit /en/coffee.html in AEM: change the text Frescopa Coffee in the content to something a 20‑year‑old would like.*
 
 AEM provides two Content MCP Servers—**read-only** and **read/write**—with tools for working with **Pages**, **Content Fragments**, and **Assets**. These servers can be used from the following MCP clients: **ChatGPT**, **Claude**, **Cursor**, and **Microsoft Copilot Studio**.
 
-For example, you can prompt ChatGPT:
-
-*Edit /en/coffee.html in AEM: change the text Frescopa Coffee in the content to something a 20‑year‑old would like.*
-
-Learn more in [Using MCP with AEM Cloud Service](/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md). For questions or feedback, email [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com).
+Learn more in [Using MCP with AEM Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md). For questions or feedback, email [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
