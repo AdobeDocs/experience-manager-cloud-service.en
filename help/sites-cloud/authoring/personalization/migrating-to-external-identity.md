@@ -10,7 +10,7 @@ role: Developer, Admin
 
 ## Overview {#overview}
 
-With [Data Synchronization](user-and-group-sync-for-publish-tier.md#data-synchronization) enabled in AEM as a Cloud Service, SAML Authentication Handler can be configured to automatically migrates to external identities with dynamic group membership when it manages user and group creation. If your project uses custom code to create users or groups, be sure to update it to create external users and groups (not local).
+With [Data Synchronization](user-and-group-sync-for-publish-tier.md#data-synchronization) enabled in AEM as a Cloud Service, SAML Authentication Handler can be configured to automatically migrate to external identities with dynamic group membership when it manages user and group creation. If your project uses custom code to create users or groups, be sure to update it to create external users and groups (not local).
 
 This document provides technical guidance for:
 
