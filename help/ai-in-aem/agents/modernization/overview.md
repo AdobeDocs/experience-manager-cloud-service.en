@@ -17,13 +17,13 @@ Learn how the Experience Modernization Agent onboards websites into Edge Deliver
 
 The Experience Modernization Agent unlocks the full value of Edge Delivery Services (including AEM authoring) by making website migrations and ongoing evolution fast and frictionless.
 
-It combines [Site Creation and Migration Skills](#creation-migration) for initial website onboarding and [Block Development Capabilities](#block-development) for continuous experience development (style updates, template refinements, landing page creation). In addition, it offers the [Experience Modernization Console](#console) as a hosted AI-assisted development environment available to you directly. While users can operate the agent directly through that console, developers retain full control over what ships.
+It combines [site creation and migration skills](#creation-migration) for initial website onboarding and [block development capabilities](#block-development) for continuous experience development (style updates, template refinements, landing page creation). In addition, it offers the [Experience Modernization Console](#console) as a hosted AI-assisted development environment available to you directly. While users can operate the agent directly through that console, developers retain full control over what ships.
 
 Additionally, to ensure the success  of complex migrations, Adobe offers the [Agentic Outcome Engineer (AOE) Delivery Model](#delivery-model). This option can be used as an accelerator or as a tactical service to help unblock specific project challenges.
 
 ## Benefits {#benefits}
 
-The Experience Modernization Agent accelerates the time to value for Edge Delivery Services adoption and gives you the agility to adapt your brand's web experience.
+The Experience Modernization Agent accelerates the time to value for [Edge Delivery Services](/help/edge/overview.md) adoption and gives you the agility to adapt your brand's web experience.
 
 * **High velocity**: AI automation handles repetitive migration work (content import, block mapping, design system application), compressing months of effort into weeks
 * **Cost-effective**: Automation handles repetitive work, freeing professional services for high-value tasks like integrations and strategic decisions
@@ -33,7 +33,7 @@ The Experience Modernization Agent accelerates the time to value for Edge Delive
 
 ## Site Creation and Migration Skills {#creation-migration}
 
-The Experience Modernization Agent offers skills for creating new [Edge Delivery Services](/help/edge/overview.md) sites and migrating existing websites. Any new Edge Delivery Services site or migration is encouraged to take advantage of these skills.
+The Experience Modernization Agent offers skills for creating new Edge Delivery Services sites and migrating existing websites. Any new Edge Delivery Services site or migration is encouraged to take advantage of these skills.
 
 * Accelerates website creation and migrations from months to weeks or days, dramatically reducing time-to-value for Edge Delivery Services adoption
 * Transforms websites from any CMS, legacy AEM, or design systems (like Figma) into production-ready Edge Delivery Services projects
@@ -59,11 +59,11 @@ The Experience Modernization Agent provides a hosted AI-assisted development env
 * Rapidly perform day-to-day experience development tasks while previewing them via live AEM preview, and sync content to AEM.
 * Enterprise governance is enforced as developers retain full control over what ships via usual GitHub review and approval process.
 
-The self-service Experience Modernization Console is generally available. Currently, interested users can request access to ensure a smooth onboarding experience.
+The self-service Experience Modernization Console is generally available. Interested users can request access to ensure a smooth onboarding experience.
 
 ## Delivery Model {#delivery-model}
 
-For complex migrations or accelerated outcomes, Adobe offers the Agentic Outcome Engineer (AOE) Delivery Model. This is an optional service where Adobe engineers operate the AI tooling on behalf of customers.
+For complex migrations or accelerated outcomes, Adobe offers the Agentic Outcome Engineer (AOE) delivery model. This is an optional service where Adobe engineers operate the AI tooling on your behalf.
 
 * Adobe AOEs operate the agent alongside you, combining AI automation with expert guidance to deliver production-ready results at scale.
 * This provides a strategic reset option for enterprises facing stalled implementations or legacy modernization challenges.
@@ -91,7 +91,7 @@ The agent does not support the following targets.
   * The skills target Edge Delivery Services only.
 * Headless delivery patterns such as API-only or SPA-based delivery (e.g., Next.js)
 
-The following requirements are not yet covered with dedicated automation skills and require manual effort.
+The following requirements are not yet covered by dedicated automation skills and require manual effort.
 
 * Strict pixel perfection 
   * Only practical design fidelity is automated
