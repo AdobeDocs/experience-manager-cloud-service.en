@@ -161,7 +161,6 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
   
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-<!-- ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices Features {#foundation-new} -->
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
 #### Java API Deprecations {#java-api-deprecation}
