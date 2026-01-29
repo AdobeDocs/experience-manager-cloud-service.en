@@ -208,8 +208,6 @@ The Adobe-hosted MCP servers implement OAuth and are integrated with Adobe's ide
 
 ![MCP Client not permitted error](assets/MCP-Client-not-permitted.png)
 
-![MCP Server not permitted error](assets/MCP-Server-not-permitted.png)
-
 * Once verified, the MCP server issues tokens that the application uses for subsequent tool calls
 * MCP tools respect the user's AEM permissions. A user without permission to modify a content fragment in AEM will not be able to modify it via MCP either.
 
