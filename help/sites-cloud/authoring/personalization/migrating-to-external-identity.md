@@ -131,7 +131,7 @@ Whitelist the service user to bypass protection on external identity properties.
   - `"Warn"`: Logs warnings but allows modifications (useful for development/testing)
   - `"None"`: No protection (not recommended)
 
-* `systemPrincipalNames`: Array of service user names allowed to modify `rep:externalId` and `rep:externalPrincipalNames`. Include all service users that need to manage external identities (e.g., `group-provisioner`, `saml-migration-service`)
+* `systemPrincipalNames`: List of service user names allowed to modify `rep:externalId` and `rep:externalPrincipalNames`. Include all service users that need to manage external identities (e.g., `group-provisioner`, `saml-migration-service`)
 
 >[!IMPORTANT]
 >
