@@ -204,7 +204,13 @@ Below are examples of how this looks in each supported application at a high lev
 The Adobe-hosted MCP servers implement OAuth and are integrated with Adobe's identity system.
 
 * When an MCP client application connects to an AEM MCP server, users see an Adobe login dialog and authenticate with their **Adobe ID**
-* After successful login, the MCP server issues tokens that the application uses for subsequent tool calls
+* After successful login, the system verifies that the MCP client application is permitted in your organization and that the requested MCP server is allowed. If either check fails, an error message is displayed.
+
+![MCP Client not permitted error](assets/MCP-Client-not-permitted.png)
+
+![MCP Server not permitted error](assets/MCP-Server-not-permitted.png)
+
+* Once verified, the MCP server issues tokens that the application uses for subsequent tool calls
 * MCP tools respect the user's AEM permissions. A user without permission to modify a content fragment in AEM will not be able to modify it via MCP either.
 
 This ensures that AI-assisted operations comply with your existing AEM security and governance model.
