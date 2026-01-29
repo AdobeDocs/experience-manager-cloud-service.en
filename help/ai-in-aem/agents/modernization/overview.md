@@ -17,9 +17,9 @@ Learn how the Experience Modernization Agent onboards websites into Edge Deliver
 
 The Experience Modernization Agent unlocks the full value of Edge Delivery Services (including AEM authoring) by making website migrations and ongoing evolution fast and frictionless.
 
-It combines [Site Creation and Migration Skills](#creation-migration) for initial onboarding and [Block Development Capabilities](#block-development) for continuous experience development (style updates, template refinements, landing page creation) with the help of AI. In addition, it offers the [Experience Modernization Console](#console) as a hosted AI-assisted development environment available to you directly.
+It combines [Site Creation and Migration Skills](#creation-migration) for initial website onboarding and [Block Development Capabilities](#block-development) for continuous experience development (style updates, template refinements, landing page creation). In addition, it offers the [Experience Modernization Console](#console) as a hosted AI-assisted development environment available to you directly. While users can operate the agent directly through that console, developers retain full control over what ships.
 
-While users can operate the agent directly, Adobe offers the [Agentic Outcome Engineer (AOE) Delivery Model](#delivery-model) as an optional accelerator for complex migrations or as a strategic reset to unlock stalled projects.
+Additionally, to ensure the success  of complex migrations, Adobe offers the [Agentic Outcome Engineer (AOE) Delivery Model](#delivery-model). This option can be used as an accelerator or as a tactical service to help unblock specific project challenges.
 
 ## Benefits {#benefits}
 
