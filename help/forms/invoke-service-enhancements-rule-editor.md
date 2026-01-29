@@ -306,6 +306,8 @@ The following example represents US sales regions and list of sales representati
 
 ### Custom Function to Extract Property Values
 
+<span class="preview"> This is a early-adopter feature. If you are interested, send a quick email from your work address to mailto:aem-forms-ea@adobe.com to request access to the feature</a>. </span>
+
 Use the following custom function to extract property values from the JSON array.
 
 ```js
