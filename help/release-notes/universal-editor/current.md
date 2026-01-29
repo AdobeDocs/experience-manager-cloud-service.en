@@ -22,9 +22,9 @@ These are the release notes for the 29 January 2026 release of the Universal Edi
 
 * Remove component method was exposed to `editorActions`.
 * Copy component method was exposed to `editorActions`.
-* Definitions were exposed to extensibility.
 * Move component method was exposed to `editorActions`.
 * Add component method was exposed to `editorActions`.
+* Definitions were exposed to [extensibility.](/help/implementing/universal-editor/extending.md)
 * Version 2.0 of the Document Authoring API is released.
 
 ## Early Adoption Features {#early-adopter}
