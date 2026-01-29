@@ -53,7 +53,7 @@ Instead of direct user-to-group relationships stored in the repository, dynamic 
 
 **Benefits:**
 
-* Reduced repository writes (no group membership nodes)
+* Reduced repository writes (no group membership nodes are modified when users are added/removed from groups)
 * Faster synchronization across publish tier nodes
 * Scalable group membership management
 * Compatible with Data Synchronization requirements
