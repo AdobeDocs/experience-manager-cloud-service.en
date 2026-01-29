@@ -28,6 +28,10 @@ Setting up your instance is done:
 * by [enabling functionality in the Configuration Browser](#enable-content-fragment-functionality-configuration-browser)
 * then [applying the configuration to your individual Assets folders](#apply-the-configuration-to-your-folder)
 
+>[!TIP]
+>
+>Content Fragments can be [published to Edge Delivery Services.](https://www.aem.live/developer/content-fragment-overlay)
+
 ## Enable Content Fragment Functionality in the Configuration Browser {#enable-content-fragment-functionality-configuration-browser}
 
 To use the Content Fragment functionality, of Content Fragment Models and GraphQL Persisted Queries, you **must** first enable them via the **Configuration Browser**:
