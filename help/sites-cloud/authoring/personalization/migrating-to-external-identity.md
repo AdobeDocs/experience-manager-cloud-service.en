@@ -112,7 +112,7 @@ Whitelist the service user to bypass protection on external identity properties.
 
 **Configuration File:** `org.apache.jackrabbit.oak.spi.security.authentication.external.impl.principal.ExternalPrincipalConfiguration.cfg.json`
 
-**Location:** `ui.config/src/main/content/jcr_root/apps/yourproject/osgiconfig/config.publish/`
+**Exemplary location:** `ui.config/src/main/content/jcr_root/apps/yourproject/osgiconfig/config.publish/`
 
 ```json
 {
