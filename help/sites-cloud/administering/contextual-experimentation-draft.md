@@ -22,22 +22,22 @@ For sites running on Adobe Experience Manager, there is the "out of the box" **e
 
 ## Experimentation rail {#experimentation-rail}
 
-The experimentation rail is your primary tool to set up experiments. It can be used with your project either within edge delivery services context or in Universal editor. The experimentation can be used with either [Edge Delivery Services](/help/edge/overview.md) or Universal Editor. As such, you will need a Github account, a content repository like SharePoint or Google Drive, and you will also need the [AEM Sidekick](https://www.aem.live/docs/sidekick) plug-in. See also the [Getting Started – Universal Editor Developer Tutorial page](https://www.aem.live/developer/tutorial) and [Getting Started – Developer Tutorial](https://www.aem.live/developer/tutorial).
+The experimentation rail is your primary tool to set up experiments. It can be used with your project either in a [Edge Delivery Services](/help/edge/overview.md) context or in the [Universal Editor](/help/implementing/universal-editor/introduction.md). As such, you will need a Github account, a content repository like SharePoint or Google Drive, and you will also need the [AEM Sidekick](https://www.aem.live/docs/sidekick) plug-in. See also the [Getting Started – Universal Editor Developer Tutorial page](https://www.aem.live/developer/tutorial).
 
-### Setting up the Experimentation Rail with your Edge Delivery Services Project
+### Setting up the experimentation within Edge Delivery Services
 
 To access the experimentation rail capabilities within your Edge Delivery Services Project you will need the [AEM Sidekick](https://www.aem.live/docs/sidekick) plug-in. To set up the sidekick follow these steps:
 
 1. Add the [AEM sidekick extension](https://chromewebstore.google.com/search/AEM%20Sidekick?hl=en-US&utm_source=ext_sidebar) and pin it in your browser.
 1. Open your project page in preview mode.
-1. Click the AEM Sidekick, and click **Add this project**.
+1. On the AEM Sidekick bar, and click the settings icon ![Settings](/help/sites-cloud/administering/assets/settings-1.png)  and select **Add this project**.
 1. Click the Experimentation tab to open the experimentation rail.
 
 **SR** - What if the EDS project is not instrumentalized?.
 
-### Setting up the experimentation rail in Universal editor with your xwalk project
+### Setting up the experimentation in Universal editor with your Xwalk project
 
-To set up the experimentation capabilities within your your Xwalk Project and start creating experiments, follow these steps:
+To set up the experimentation capabilities within your Xwalk Project (cross-walk) and start creating experiments, follow these steps:
 
 1. Open your project in Universal Editor and check if you see the **A/B** Icon Extension. If it is not visible, confirm whether you have enabled the feature in the extension manager, if not please enable it or request access (**SR** - how do we request access).
 1. Open your GitHub repository and check if the `plugins/experimention` folder exists. If not, you will need to set up the experimentation engine and MFE first **( **SR** - wiki link)**.
@@ -125,6 +125,10 @@ Once you are ready, click **Activate** to launch the experiment. The test will b
 ### Monitor and Promote
 
 After the experiment reaches statistical significance, click **Promote** (**SR**-where do you click promote)to make the desired variant your new control.
+
+### Creating experiments by using the Experimentation Rail within Edge Delivery Services
+
+Important add sidekick Using the Experimentation Rail with your Edge Delivery Services Project
 
 <!-- ### Experiment Identifier {#experiment-identifier}
 
