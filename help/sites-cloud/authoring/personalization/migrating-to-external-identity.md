@@ -10,7 +10,17 @@ role: Developer, Admin
 
 ## Overview {#overview}
 
-With [Data Synchronization](user-and-group-sync-for-publish-tier.md#data-synchronization) enabled in AEM as a Cloud Service, SAML Authentication Handler can be configured to automatically migrate to external identities with dynamic group membership when it manages user and group creation. If your project uses custom code to create users or groups, be sure to update it to create external users and groups (not local).
+With [Data Synchronization](user-and-group-sync-for-publish-tier.md#data-synchronization) enabled in AEM as a Cloud Service, SAML Authentication Handler can be configured to automatically migrate to external identities with dynamic group membership when it manages user and group creation. If your project uses custom code to create users or groups, you must update it to create external users and groups (not local users and groups).
+
+### Why External Users and Groups Are Required {#why-external-required}
+
+Migrating from local users and groups to external identities with dynamic group membership is essential for several critical reasons:
+
+**Performance Optimization:**
+- **Reduced Repository Writes**: Traditional local group membership requires writing membership relationships to the repository in a single property of the group node. With dynamic group membership, users have a single `rep:externalPrincipalNames` property containing all group principals, eliminating the need for synchronizing the group node.
+- **Faster Synchronization**: When synchronizing users across publish tier nodes, external users with dynamic group membership require significantly less data transfer and fewer write operations compared to local users with traditional group memberships.
+- **Scalability**: Systems with large numbers of users and groups benefit dramatically from reduced repository overhead. Dynamic group membership scales efficiently even with very large groups.
+
 
 This document provides technical guidance for:
 
@@ -29,6 +39,9 @@ userId;idpName
 ```
 
 For example: `john.doe;saml-idp`
+
+> **Note:**  
+> `idpName` refers to the name of the Oak Identity Provider (Idp) as defined in the Authentication Handler configuration. For SAML integrations, this is the value set for the `idpIdentifier` attribute in the SAML Authentication Handler.  
 
 **Key Properties:**
 
@@ -49,7 +62,7 @@ For example: `content-authors;saml-idp`
 
 ### Dynamic Group Membership {#dynamic-group-membership}
 
-Instead of direct user-to-group relationships stored in the repository, dynamic group membership uses the `rep:externalPrincipalNames` property on the user node. When a user has an external principal name that matches an external group's ID, they become a member of that group automatically.
+Instead of direct user-to-group relationships stored in the repository, dynamic group membership uses the `rep:externalPrincipalNames` property on the user node. When a user has an external principal name that matches an external group's ID, they become a member of that group automatically. More information [here](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html).
 
 **Benefits:**
 
@@ -158,15 +171,7 @@ Map the service user to your application bundle so your code can use it.
 - `group-provisioner` (before `=`): The subservice name you'll use in code
 - `[group-provisioner]` (after `=`): The actual service user ID created in repoinit
 
-**Example with Real Bundle Name:**
 
-```json
-{
-  "user.mapping": [
-    "aem-wintergw2025-project.core:group-provisioner=[group-provisioner]"
-  ]
-}
-```
 
 ### Using the Service User in Code {#using-service-user}
 
@@ -421,54 +426,63 @@ public class MigrationStep2Servlet extends SlingAllMethodsServlet {
                           SlingHttpServletResponse response) {
         String userId = request.getParameter("userId");
         String idpName = request.getParameter("idpName");
-        
-        User user = (User) userManager.getAuthorizable(userId);
-        
-        // Ensure user has rep:externalId
-        Value[] externalIdValues = user.getProperty("rep:externalId");
-        if (externalIdValues == null || externalIdValues.length == 0) {
-            ExternalIdentityRef externalRef = new ExternalIdentityRef(userId, idpName);
-            user.setProperty("rep:externalId", 
-                           valueFactory.createValue(externalRef.getString()));
-        }
-        
-        // Get all group memberships
-        Iterator<Group> groupIterator = user.declaredMemberOf();
-        List<String> principalNames = new ArrayList<>();
-        
-        while (groupIterator.hasNext()) {
-            Group group = groupIterator.next();
-            String groupId = group.getID();
+        // Login as the service user
+        Session serviceSession = repository.loginService("group-provisioner", null);
+
+        try {
+            UserManager userManager = ((JackrabbitSession) serviceSession).getUserManager();
+            User user = (User) userManager.getAuthorizable(userId);
             
-            // Skip system groups
-            if ("everyone".equals(groupId)) {
-                continue;
+            // Ensure user has rep:externalId
+            Value[] externalIdValues = user.getProperty("rep:externalId");
+            if (externalIdValues == null || externalIdValues.length == 0) {
+                ExternalIdentityRef externalRef = new ExternalIdentityRef(userId, idpName);
+                user.setProperty("rep:externalId", 
+                            valueFactory.createValue(externalRef.getString()));
             }
             
-            // Add dynamic group principal
-            String dynamicGroupPrincipal = groupId + ";" + idpName;
-            principalNames.add(dynamicGroupPrincipal);
-        }
-        
-        // Set rep:externalPrincipalNames
-        if (!principalNames.isEmpty()) {
-            Value[] newValues = new Value[principalNames.size()];
-            for (int i = 0; i < principalNames.size(); i++) {
-                newValues[i] = valueFactory.createValue(principalNames.get(i));
+            // Get all group memberships
+            Iterator<Group> groupIterator = user.declaredMemberOf();
+            List<String> principalNames = new ArrayList<>();
+            
+            while (groupIterator.hasNext()) {
+                Group group = groupIterator.next();
+                String groupId = group.getID();
+                
+                // Skip system groups
+                if ("everyone".equals(groupId)) {
+                    continue;
+                }
+                
+                // Add dynamic group principal
+                String dynamicGroupPrincipal = groupId + ";" + idpName;
+                principalNames.add(dynamicGroupPrincipal);
             }
-            user.setProperty("rep:externalPrincipalNames", newValues);
+            
+            // Set rep:externalPrincipalNames
+            if (!principalNames.isEmpty()) {
+                Value[] newValues = new Value[principalNames.size()];
+                for (int i = 0; i < principalNames.size(); i++) {
+                    newValues[i] = valueFactory.createValue(principalNames.get(i));
+                }
+                user.setProperty("rep:externalPrincipalNames", newValues);
+            }
+            
+            // Update timestamps to far future (workaround for OAK-12079)
+            // Set to 10 years in the future to prevent premature cleanup of external group memberships
+            // See: https://issues.apache.org/jira/browse/OAK-12079
+            java.util.Calendar future = java.util.Calendar.getInstance();
+            future.add(java.util.Calendar.YEAR, 10);
+            user.setProperty("rep:lastDynamicSync", valueFactory.createValue(future));
+            user.setProperty("rep:lastSynced", valueFactory.createValue(future));
+        
+        // Perform operations...
+        serviceSession.save();
+    } finally {
+        if (serviceSession != null && serviceSession.isLive()) {
+            serviceSession.logout();
         }
-        
-        // Update timestamps to far future (workaround for OAK-12079)
-        // Set to 10 years in the future to prevent premature cleanup of external group memberships
-        // See: https://issues.apache.org/jira/browse/OAK-12079
-        java.util.Calendar future = java.util.Calendar.getInstance();
-        future.add(java.util.Calendar.YEAR, 10);
-        user.setProperty("rep:lastDynamicSync", valueFactory.createValue(future));
-        user.setProperty("rep:lastSynced", valueFactory.createValue(future));
-        
-        session.save();
-    }
+}    }
 }
 ```
 
