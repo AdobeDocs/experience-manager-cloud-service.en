@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2025 {#2025}
+      + [Release Notes for 2025.12.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-12-0.md) 
       + [Release Notes for 2025.11.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-11-0.md) 
       + [Release Notes for 2025.10.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-10-0.md) 
       + [Release Notes for 2025.9.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-9-0.md) 
@@ -242,6 +243,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.01.22 Release Notes](/help/release-notes/universal-editor/2026/2026-01-22.md)
       + [2026.01.15 Release Notes](/help/release-notes/universal-editor/2026/2026-01-15.md)
     + 2025 {#2025}
       + [2025.12.12 Release Notes](/help/release-notes/universal-editor/2025/2025-12-12.md)
@@ -1072,6 +1074,7 @@ user-guide-title: AEM as a Cloud Service
     + [502 Error Page in Custom Submit Action](/help/forms/custom-submit-action-troubleshooting.md)
 + AI in AEM {#ai-in-aem}
   + [Overview](/help/ai-in-aem/overview.md)
+  + [Using MCP with AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
   + Agents in AEM {#agents}
     + [Overview](/help/ai-in-aem/agents/overview.md)
     + Experience Production Agent {#production}
