@@ -336,6 +336,12 @@ This section lists APIs that have been deprecated and removed. Some APIs referen
 
 This section reflects API removal guidance for various APIs in the tables above.
 
+To identify which deprecated Java APIs your code is using, integrate the [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)  into your Maven project and run it locally. The report lists all detected deprecated API usages and indicates which OSGi bundle is referencing each API.
+
+While you should remediate all deprecated APIs over time, prioritize any APIs listed in the Deprecated API table with a Target Removal date of February 26, 2026 (or earlier). In the AEM Analyser report, these APIs may appear with an effective removal date of 8/31/2025.
+
+After updating your code, verify that no deprecated API usage remains in Cloud Manager by checking the results of the code quality step.
+
 ### Removal of `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
 
 If you are using `org.apache.sling.commons.auth`, or `org.apache.sling.commons.auth.spi`, or both, the usage can be replaced by migrating the code to `org.apache.sling.auth` resp. `org.apache.sling.auth.spi`. If you are using an old version of [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), make sure to update to the latest version.
