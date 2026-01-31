@@ -122,6 +122,8 @@ Interactive Communications on Cloud is a powerful solution for creating, managin
 
 * **XDP File Editing**: You can now edit XDP files in a browser instead of Forms Designer that runs only on Microsoft Windows desktop. 
 
+* **Invoke the Associate UI on a Publish instance**: You can now invoke the Associate UI directly on Publish instances. This capability defines the required configuration, payload structure, and invocation flow, simplifying integration and accelerating deployment across environments.
+
 ##### Dynamic Page Numbering 
 
 Automatically display "Page # of ##" on master pages for clear, consistent pagination across multi-page documents. 
