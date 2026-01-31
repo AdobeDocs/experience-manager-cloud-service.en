@@ -109,43 +109,16 @@ For more information, see AI Search in [Assets view](/help/assets/search-assets-
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-<!-- ### Pre-Release features in AEM Forms 
-
-**Rule Editor Enhancements**
-
-The Rule Editor now supports enhanced navigation and allows use of function and mathematical expressions in input parameters.
-
-**Enhanced Navigation with Event Payload Support**
- 
-The `Navigate To` action in the Invoke Service handlers now supports `EVENT_PAYLOAD`, enabling form authors to configure follow-up actions based on event responses. This enhancement offers greater flexibility in designing post-submission workflows, ensuring smoother transitions and more personalized user experiences. For more information, see [Enhanced Navigation with Event Payload Support](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
-
-**Function and Mathematical Expression Support in Input Parameters**
- 
-Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters). --> 
+* [Enhancements to the Footnote Placeholder in Adaptive Forms (Foundation Components)](/help/forms/footnotes-richtextsupport.md): 
+    * Footnote rendering has been further refined to support multi-line formatting through line breaks, enabling clearer and more expressive presentation of footnote content. 
+    * Footnotes now remain persistently visible within the Footnote Placeholder, irrespective of the visibility of associated panels, ensuring consistent access to critical information.
+     
 
 ### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 
-The AEM Forms Early Access Program offers a unique opportunity for you to get exclusive access to cutting-edge innovations and help shape their development.
+* [Retrieve values from a JSON array](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): Expanded data integration capabilities now enable APIs to be invoked through custom functions to efficiently extract values from JSON arrays and bind them directly to Adaptive Form fields. This enhancement streamlines data consumption, minimizes manual mapping, and supports more dynamic, data-driven form experiences.
 
-These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
-
-#### Interactive Communication Enhancements 
- 
-##### Template Locking 
-
-Lock content and layout elements within templates to maintain brand integrity and prevent unauthorised modifications. This ensures design consistency across all communications. 
-
-##### Content Overflow Support 
-
-Introducing the "Allow page breaks within content" option for flowed layouts. This enhancement enables smooth multi-page editing and better text management for complex documents. 
-
-##### XDP File Editing 
-
-The Interactive Communication editor now supports XDP editing, including fragment integration. You can now edit XDP files in a browser instead of Forms Designer that runs only on Microsoft Windows desktop. 
-
-##### Dynamic Page Numbering 
-
-Automatically display "Page # of ##" on master pages for clear, consistent pagination across multi-page documents. 
+* **Invoke the Associate UI on a Publish instance**: Extended support is now available to invoke the Associate UI directly on Publish instances. This capability defines the required configuration, payload structure, and invocation flow, simplifying integration and accelerating deployment across environments.
 
 <!--
 **Forms Optimization opportunities**
