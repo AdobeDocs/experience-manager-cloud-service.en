@@ -21,6 +21,8 @@ You can import assets from the following data sources:
 * Dropbox
 * OneDrive
 
+>[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on)
+
 ## Prerequisites {#prerequisites}
 
 | Data Source | Prerequisites |
@@ -219,7 +221,3 @@ Click ![More icon](assets/do-not-localize/more-icon.svg) corresponding to the co
 ## Navigate to assets after performing bulk import {#view-assets-after-bulk-import}
 
 To view the Assets target location where the assets are imported after running the Bulk Import job, click ![More icon](assets/do-not-localize/more-icon.svg) corresponding to the configuration name, and then click **[!UICONTROL View Assets]**. 
-
-## Video: Bulk import assets using Assets View
-
->[!VIDEO](https://video.tv.adobe.com/v/3428012)
