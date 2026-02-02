@@ -10,6 +10,10 @@ solution: Experience Manager Sites
 
 With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate, and publish page-independent content. They allow you to prepare content ready for use in multiple locations, and over multiple channels, ideal for [headless delivery](/help/headless/what-is-headless.md), and [page authoring](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
+>[!TIP]
+>
+>Content Fragments can be [published to Edge Delivery Services.](https://www.aem.live/developer/content-fragment-overlay)
+
 >[!IMPORTANT]
 >
 >Many features described in this section are *only* available in the [Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md); so *online* Adobe Experience Manager (AEM) as a Cloud Service, not a local instance.
