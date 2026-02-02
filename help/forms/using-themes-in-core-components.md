@@ -64,7 +64,6 @@ Customizing a theme refers to the process of modifying, styling and personalizin
 
 ### Set up your environment
 
-* Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment. 
 * Configure a [front-end deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html) for your Cloud Service environment. Alternatively, you can configure the pipeline later, giving you the flexibility to prioritize testing and refining the theme before setting up the deployment pipeline.
 
 <!-- 
@@ -451,16 +450,6 @@ To set the Node.js version to 20 using the pipeline configuration:
 
 **Ans:** When customizations are made at both the global level and component level, the customization at the component level takes priority.  
 
-<!--
-
-## See next
-
-* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
-* [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-* [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
-
--->
 
 
 ## See Also {#see-also}
@@ -468,6 +457,6 @@ To set the Node.js version to 20 using the pipeline configuration:
 {{see-also}}
 
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
-* [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+* [Generate Document of Record for Adaptive Forms (Core Components)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
 * [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
