@@ -109,16 +109,20 @@ For more information, see AI Search in [Assets view](/help/assets/search-assets-
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [Enhancements to the Footnote Placeholder in Adaptive Forms (Foundation Components)](/help/forms/footnotes-richtextsupport.md): 
-    * Footnote rendering has been further refined to support multi-line formatting through line breaks, enabling clearer and more expressive presentation of footnote content. 
-    * Footnotes now remain persistently visible within the Footnote Placeholder, irrespective of the visibility of associated panels, ensuring consistent access to critical information.
-     
+**Enhancements to the Footnote Placeholder in Adaptive Forms (Foundation Components)**
+
+* Added [multi-line support with line breaks](/help/forms/footnotes-richtextsupport.md), enabling clearer and more expressive presentation of footnote content.
+* Footnotes now remain persistently visible within the Footnote Placeholder, regardless of the visibility of associated panels, ensuring consistent access to critical information.
 
 ### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 
-* [Retrieve values from a JSON array](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): Expanded data integration capabilities now enable APIs to be invoked through custom functions to efficiently extract values from JSON arrays and bind them directly to Adaptive Form fields. This enhancement streamlines data consumption, minimizes manual mapping, and supports more dynamic, data-driven form experiences.
+**Retrieve values from a JSON array**
 
-* **Invoke the Associate UI on a Publish instance**: Extended support is now available to invoke the Associate UI directly on Publish instances. This capability defines the required configuration, payload structure, and invocation flow, simplifying integration and accelerating deployment across environments.
+Expanded custom function capabilities to [extract values from JSON arrays](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array), received via an API call, and bind them directly to Adaptive Form fields. You can now develop business logic and rules with minimal manual data mapping.
+
+**Run the Associate UI on a Publish instance**
+
+You can now run the [Associate UI](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md) directly on Publish instances. This allows your agents to access the Associate UI and easily personalize communications for your customers.
 
 <!--
 **Forms Optimization opportunities**
