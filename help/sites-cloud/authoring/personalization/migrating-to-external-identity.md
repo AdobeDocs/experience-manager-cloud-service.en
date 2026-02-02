@@ -10,14 +10,14 @@ role: Developer, Admin
 
 ## Overview {#overview}
 
-With [Data Synchronization](user-and-group-sync-for-publish-tier.md#data-synchronization) enabled in AEM as a Cloud Service, SAML Authentication Handler can be configured to automatically migrate to external identities with dynamic group membership when it manages user and group creation. If your project uses custom code to create users or groups, you must update it to create external users and groups (not local users and groups).
+When [Data Synchronization](user-and-group-sync-for-publish-tier.md#data-synchronization) is enabled in AEM as a Cloud Service, SAML Authentication Handler can be configured to automatically migrate to external identities with dynamic group membership when it manages user and group creation. If your project uses custom code to create users or groups, you must update it to create external users and groups (not local users and groups).
 
 ### Why External Users and Groups Are Required {#why-external-required}
 
 Migrating from local users and groups to external identities with dynamic group membership is essential for several critical reasons:
 
 **Performance Optimization:**
-- **Reduced Repository Writes**: Traditional local group membership requires writing membership relationships to the repository in a single property of the group node. With dynamic group membership, users have a single `rep:externalPrincipalNames` property containing all group principals, eliminating the need for synchronizing the group node.
+- **Reduced Repository Writes**: Traditional local group membership requires writing membership relationships to the repository in a single multi valued property of the group node. With dynamic group membership, users have a single `rep:externalPrincipalNames` property containing all group principals, eliminating the need for synchronizing the group node.
 - **Faster Synchronization**: When synchronizing users across publish tier nodes, external users with dynamic group membership require significantly less data transfer and fewer write operations compared to local users with traditional group memberships.
 - **Scalability**: Systems with large numbers of users and groups benefit dramatically from reduced repository overhead. Dynamic group membership scales efficiently even with very large groups.
 
@@ -374,7 +374,10 @@ public class MigrationStep1Servlet extends SlingAllMethodsServlet {
                           SlingHttpServletResponse response) {
         String groupPath = request.getParameter("groupPath");
         String idpName = request.getParameter("idpName");
-        
+
+        // Check if the caller is authorized to run the servlet
+        isAuthorizedCaller(request, response);
+
         // Get local group
         Authorizable localGroupAuth = userManager.getAuthorizableByPath(groupPath);
         Group localGroup = (Group) localGroupAuth;
@@ -426,6 +429,10 @@ public class MigrationStep2Servlet extends SlingAllMethodsServlet {
                           SlingHttpServletResponse response) {
         String userId = request.getParameter("userId");
         String idpName = request.getParameter("idpName");
+        
+        // Check if the caller is authorized to run the servlet
+        isAuthorizedCaller(request, response);
+
         // Login as the service user
         Session serviceSession = repository.loginService("group-provisioner", null);
 
@@ -508,6 +515,10 @@ public class MigrationStep3Servlet extends SlingAllMethodsServlet {
     @Override
     protected void doPost(SlingHttpServletRequest request, 
                           SlingHttpServletResponse response) {
+
+        // Check if the caller is authorized to run the servlet
+        isAuthorizedCaller(request, response);
+
         String groupPath = request.getParameter("groupPath");
         
         Authorizable localGroupAuth = userManager.getAuthorizableByPath(groupPath);
@@ -675,6 +686,72 @@ If migration encounters issues:
 * **Service User Permissions**: Ensure migration servlets use appropriate service users with required permissions. The service user must be configured in the ExternalPrincipal configuration to bypass protection on `rep:externalId` and `rep:externalPrincipalNames` properties
 * **Idempotent Operations**: Design migration code to be safely re-runnable
 * **Validate at Each Step**: Check results after each migration step before proceeding
+
+## Securing Migration Servlets {#securing-migration-servlets}
+
+The migration servlets have elevated privileges to create and modify users and groups. It is critical to restrict access to these endpoints to prevent unauthorized access.
+
+### Recommended Approach: IMS Technical Account Authentication {#ims-technical-account}
+
+The recommended approach is to secure these servlets using Adobe IMS integration, allowing only an authorized technical account to access them.
+
+#### Step 1: Create a Technical Account in AEM Developer Console {#create-ims-integration}
+
+1. Navigate to [Experience Manager](https://experience.adobe.com/) and then Cloud Manager
+2. Select your program, then click on the environment where you want to create the technical account
+3. Click **Developer Console** in the environment's ellipsis menu
+4. In the AEM Developer Console, go to the **Integrations** tab
+5. Click **Create new technical account**
+6. Provide a name for the integration (e.g., "Migration Service Account")
+7. Click **Create**
+8. Note down the following values from the created integration:
+   - **Client ID**
+   - **Client Secret**
+   - **Technical Account ID** (this will be the user ID accessing your servlets - format: `XXXXXXXXXXXXXXXXXXXXXXXX@techacct.adobe.com`)
+
+For detailed instructions, see [Generating Access Tokens for Server-Side APIs documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis).
+
+Sample code to check of the caller is authorized:
+```
+    private boolean isAuthorizedCaller(SlingHttpServletRequest request, 
+                                       SlingHttpServletResponse response) {
+
+        Session session = request.getResourceResolver().adaptTo(Session.class);
+        String callerId = session != null ? session.getUserID() : null;
+               
+        if (!ALLOWED_TECHNICAL_ACCOUNT.equals(callerId)) {
+            LOG.warn("Unauthorized access attempt by user: '{}' (expected: '{}')", callerId,   ALLOWED_TECHNICAL_ACCOUNT);
+            response.setStatus(SlingHttpServletResponse.SC_FORBIDDEN);
+            return false;
+        }
+        
+        return true;
+    }
+
+```
+
+### Defense in Depth: IP-Based Restrictions {#ip-based-restrictions}
+
+As an additional layer of security, you can configure CDN rules to restrict access to migration endpoints by IP address. This is useful when migrations are run from known infrastructure.
+
+>[!NOTE]
+>
+>IP restrictions alone are not sufficient. Always combine with authentication checks as described above.
+
+### Security Checklist {#security-checklist}
+
+Before deploying migration servlets to production:
+
+- [ ] Create IMS integration in AEM Developer Console
+- [ ] Configure servlets to validate the technical account ID
+- [ ] Test authentication flow in development/staging environments
+- [ ] Consider additional IP-based restrictions at CDN level
+- [ ] Plan to disable or remove migration servlets after migration is complete
+- [ ] Audit and log all access to migration endpoints
+
+>[!IMPORTANT]
+>
+>After the migration is complete, consider disabling or removing the migration servlets from your deployment to eliminate any potential security risk.
 
 ## Additional Resources {#additional-resources}
 
