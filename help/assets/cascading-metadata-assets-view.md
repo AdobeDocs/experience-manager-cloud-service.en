@@ -57,7 +57,7 @@ To modify an existing metadata form, follow the steps below. An **Asset Type** i
 
 1. Provide the key-value options for the dropdown either by entering them manually, specifying a JSON path, or importing a CSV file.
 
-    * To specify the values manually, select **[!UICONTROL Add Manually]** under **[!UICONTROL Choices]** and click `Add` and specify the option label and value. For example, specify Video, PDF, Word, and Image asset types.
+    * To specify the values manually, select **[!UICONTROL Add Manually]** under **[!UICONTROL Choices]** and click `Add` and specify the option label and value. For example, specify Video, PDF, and Image asset types.
 
       ![Add Manual Choices](assets/add-manual-choices.png)
    
@@ -71,11 +71,13 @@ To modify an existing metadata form, follow the steps below. An **Asset Type** i
     
    >[!NOTE]
    > 
-   > Both options are mutually exclusive. You cannot import the options from a CSV file and edit manually.
+   >You cannot import the options from a CSV file and edit them manually as both the options are mutually exclusive.
 
-1. To create a dependency between the Asset Type field and other fields, select the dependent field and open the **[!UICONTROL Rules]** tab. Each component supports a specific set of rules. 
+1. To create a dependency between the Asset Type field and other fields, select the dependent field and open the **[!UICONTROL Rules]** tab. Each component supports a specific set of rules. For this use case, Image Asset Type options are used to define the rule logic.
 
-   ![rule tab](assets/rule-tab.png)
+   ![Image Asset Type](assets/image-asset-type.png)
+
+   <!--![rule tab](assets/rule-tab.png)-->
 
 1. Under **[!UICONTROL Required]**, choose the **[!UICONTROL Required, based on new rule]** option.
 
@@ -84,12 +86,14 @@ To modify an existing metadata form, follow the steps below. An **Asset Type** i
    >[!NOTE]
    >
    >You can apply the **[!UICONTROL Requirement]** condition and **[!UICONTROL Visibility]** condition independent of each other.
+
+   ![rule](assets/image-visible-rule.png)
    
 1. Select **[!UICONTROL Choices based on rule]** to create a dependency and define rule.
    
-   ![rule](assets/rule.png)
+   ![rule](assets/image-choices-rule.png)
 
-1. Similarly, create a dependency between the value in the Asset Type field and other fields. Alternatively, repeat the steps to create dependency between the other assets such as PDF and Word in the [!UICONTROL Asset Type] field and fields such as [!UICONTROL Page Count] and [!UICONTROL Author].
+1. Similarly, create a dependency between the value in the Asset Type field and Image fields. Alternatively, repeat the steps to create dependency between the other assets such as PDF and Word in the [!UICONTROL Asset Type] field and fields such as [!UICONTROL Page Count] and [!UICONTROL Author].
 
 1. Click **[!UICONTROL Save]**. Apply the metadata form to a folder.
 
