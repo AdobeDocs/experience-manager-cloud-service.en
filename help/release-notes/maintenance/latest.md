@@ -10,17 +10,17 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 23862 {#23862}
+## Release 23963 {#23963}
 
->[!CAUTION]
->
-> Release 23862 has been made private. A new maintenance release will be provided soon.
-
-Summarized below are the continuous improvements for maintenance release 23862, which was publicly released on December 23, 2025. The previous maintenance release was release 23482.
+Summarized below are the continuous improvements for maintenance release 23963, which was publicly released on January 19, 2026. The previous maintenance release was release 23482.
 
 The 2026.1.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-23862}
+>[!NOTE]
+>
+>Release 23862 has been made private. 
+
+### Enhancements {#enhancements-23963}
 
 * CQ-4361812: Added support for optional param folderPath in rest api. Description: A new translation project is created by the API, and will be placed within the path specified by the optional `folderPath` parameter, otherwise it defaults to the root project path `/content/projects`.
 * FORMS-21960: Added support for canvas editing on local for Interactive Communications, similar to forms-spa.
@@ -44,13 +44,14 @@ The 2026.1.0 feature activation will provide the full feature set for this maint
 * SITES-37794: Edge Delivery with Universal Editor: Simplify page creation wizard.
 * SITES-36963: Migrate Audience/Segment Endpoint to Target API v3 for Workspace Support.
 
-### Fixed Issues {#fixed-issues-23862}
+### Fixed Issues {#fixed-issues-23963}
 
 * CQ-4361831: Fixed issue causing genai_dropdown_span is not defined.
 * CQ-4360895: Fixed Inaccurate translation job status count in project during concurrent updates.
 * CQ-4361599: Fixed skipping of Content Fragments from Translation Jobs after 2025.7 upgrade.
 * CQ-4360747: Fixed Repeatable Translation Jobs create empty payloads & trigger too often (NullPointerException in ScheduleRepeatTranslationProject).
 * CQ-4359994: Fixed destinationLanguage field type inconsistency for single and multi-language project.
+* FORMS-23557: Rhino update causes `*.js` cannot be correctly instantiated by the Use API.
 * SITES-38153: Fix cf publish reference provider for uuid based references.
 * SITES-37594: Performance improvements for model by tags functionality.
 * SITES-37337: FragmentCreateProcessor: provide additional error details in logs.
@@ -87,19 +88,19 @@ The 2026.1.0 feature activation will provide the full feature set for this maint
 * SITES-37349: Edge Delivery with Universal Editor: Render multi-fields with single entries as list with a single list item.
 * SITES-36148: Edge Delivery with Universal Editor: Fix data-aue-label for composite multi-fields.
 
-### Known Issues {#known-issues-23862}
+### Known Issues {#known-issues-23963}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-23862}
+### Deprecated Features and APIs {#deprecated-23963}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-23862}
+### Security Fixes {#security-23963}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 23 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-23862}
+### Embedded Technologies {#embedded-tech-23963}
 
 |Technology|Version|Link|
 |---|---|---|

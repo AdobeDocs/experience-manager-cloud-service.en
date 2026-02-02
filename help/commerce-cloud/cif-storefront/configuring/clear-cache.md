@@ -35,7 +35,7 @@ By default, the clear-cache feature is disabled in CIF configuration. To enable 
    
   * Also, make sure to give the corresponding pattern which suits your product, category and CMS page needs to be added to the above configuration file to remove it from the dispatcher cache.
 
-* To improve the SQL queries performance for finding the corresponding page related with product and category, add the corresponding index in your project (recommended). Fore more information, see [cifCacheInvalidationSupport.](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml)
+* To improve the SQL queries performance for finding the corresponding page related with product and category, add the corresponding index in your project (recommended). For more information, see [cifCacheInvalidationSupport.](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml)
 
 ## Verifying Clear Cache Feature {#verify-clear-cache}
 
