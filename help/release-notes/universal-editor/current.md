@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.01.15 Release Notes
-description: These are the release notes for the 2026.01.15 release of the Universal Editor.
+title: Universal Editor 2026.01.29 Release Notes
+description: These are the release notes for the 2026.01.29 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.01.15 Release Notes {#release-notes}
+# Universal Editor 2026.01.29 Release Notes {#release-notes}
 
-These are the release notes for the 15 January 2026 release of the Universal Editor.
+These are the release notes for the 29 January 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,10 +20,12 @@ These are the release notes for the 15 January 2026 release of the Universal Edi
 
 ## What's New {#what-is-new}
 
-* Support for setting and persisting [default values of model fields has been added.](/help/implementing/universal-editor/field-types.md)
-  * If no value is set, the Universal Editor will persist whatever is defined as `value` in the model definition.
-  * This ensures that what you see will match what is persisted in the backend.
-  * This is a breaking change.
+* Remove component method was exposed to `editorActions`.
+* Copy component method was exposed to `editorActions`.
+* Move component method was exposed to `editorActions`.
+* Add component method was exposed to `editorActions`.
+* Definitions were exposed to [extensibility.](/help/implementing/universal-editor/extending.md)
+* Version 2.0 of the Document Authoring API is released.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -33,6 +35,6 @@ If you are interested in testing the upcoming features listed below and sharing 
 
 ## Other Improvements {#other-improvements}
 
-* Data cleanup is now performed correctly on content switch.
-* Multiple operations in extensions's update are now supported.
-* Close button for developer login now behaves as expected.
+* The `content` extensibility was renamed to `details` to follow API schema.
+* Contextual menu behavior was improved.
+* Fixed a bug when clicking the badge of an editable item so that the context menu opens properly.
