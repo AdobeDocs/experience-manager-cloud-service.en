@@ -113,7 +113,7 @@ For more information, see AI Search in [Assets view](/help/assets/search-assets-
 
 * Added [multi-line support with line breaks](/help/forms/footnotes-richtextsupport.md), enabling clearer and more expressive presentation of footnote content.
 * Footnotes now remain persistently visible within the Footnote Placeholder, regardless of the visibility of associated panels, ensuring consistent access to critical information.
-   ![Footnote Description](/help/forms/assets/footnote-description.png)
+   ![Footnote Description](/help/forms/assets/footnote-description.png){height=50%}
 
 ### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 
