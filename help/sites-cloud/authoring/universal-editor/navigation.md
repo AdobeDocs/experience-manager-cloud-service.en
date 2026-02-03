@@ -80,7 +80,7 @@ Tapping or clicking the account icon opens a menu with your user settings.
 
 ![Environment switcher](assets/environment-switcher.png)
 
-For the Universal Editor, under the heading **Product Settings**, there is an option to switch between the current production version of the Universal Editor and the upcoming preview version.
+For the Universal Editor, under the heading **Product Settings**, use the **Switch to Preview Environment** option to switch between the current production version of the Universal Editor and the upcoming [preview version.](/help/release-notes/universal-editor/preview.md)
 
 ### The Universal Editor Toolbar {#universal-editor-toolbar}
 

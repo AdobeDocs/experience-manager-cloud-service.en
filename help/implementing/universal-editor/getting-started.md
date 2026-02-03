@@ -112,20 +112,25 @@ If you only want to have certain extensions enabled for a page, you can set this
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
 
-## Define for which content paths or `sling:resourceType`s the Universal Editor shall be opened. (Optional) {#content-paths}
+## Define for which content paths or `sling:resourceType`s the Universal Editor shall be opened and how. (Optional) {#content-paths}
 
-If you have an existing AEM project using [the page editor](/help/sites-cloud/authoring/page-editor/introduction.md), when content authors edit pages, the pages are opened automatically with the page editor. You can define which editor AEM should open based on the content paths or the `sling:resourceType`, making the experience seamless for your authors, regardless of which editor is required for the selected content.
+If you have an existing AEM project using [the page editor](/help/sites-cloud/authoring/page-editor/introduction.md), when content authors edit pages, the pages are opened automatically with the page editor. You can define which editor AEM should open based on the content paths or the `sling:resourceType` and how it should be opened, making the experience seamless for your authors, regardless of which editor is required for the selected content.
 
 1. Open the Configuration Manager.
 
    `http://<host>:<port>/system/console/configMgr`
 
-1. Locate **Universal Editor URL Service** in the list and click **Edit the configuration values**.
+1. Locate **`com.day.cq.wcm.core.impl.UniversalEditorURLServiceImpl`** in the list and click **Edit the configuration values**.
 
 1. Define for which content paths or `sling:resourceType`s the Universal Editor shall be opened.
 
-   * In the **Universal Editor Opening Mapping** field, provide the paths for which the Universal Editor is opened.
-   * In the **Sling:resourceTypes which shall be opened by Universal Editor** field, provide a list of resources which are opened directly by the Universal Editor.
+   * In the **`mappings`** field, provide the paths for which the Universal Editor is opened.
+   * In the **`resourcetypes`** field, provide a list of resources which are opened directly by the Universal Editor.
+
+1. Define how the editor should be opened.
+
+   * Check the **`aemdomain`** option to open the editor under your AEM domain such as `https://author-pXX-eYYY.adobeaemcloud.com...`, otherwise it will open under `https://experience.adobe.com...`.
+   * Check the **`editorreleasepreview`** option to automatically open the Universal Editor in the [preview environment,](/help/release-notes/universal-editor/preview.md) otherwise it will open in the current release environment.
 
 1. Click **Save**.
 
