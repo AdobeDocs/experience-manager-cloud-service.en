@@ -28,15 +28,15 @@ The 2026.2.0 feature activation will provide the full feature set for this maint
 * GRANITE-62684: Make client socket timeout configurable through skyline-ops.
 * GRANITE-62702: Replace sling discovery with standalone implementation for online migration.
 * GRANITE-62763: Update Guava deprecation exception list based on ASSETS rotary.
-* GRANITE-62771: Fail QS builds when new deprecated Commons-Lang dependencies are introduced.
+* GRANITE-62771: Fail Quickstart builds when new deprecated Commons-Lang dependencies are introduced.
 * GRANITE-62987: Update Felix webconsole to version 5.0.18.
 * GRANITE-63339: Improve lease mechanism for Azure migration-state blob.
-* GRANITE-63343: Add support for latest version of Sling API bundle in workflow.core.
+* GRANITE-63343: Add support for the latest version of the Sling API bundle in workflow.core.
 * GRANITE-63799: Bump OIDC Authentication Bundle version.
-* GRANITE-63821: Update QS to filevault release fixing JCRVLT-831/JCRVLT-839.
-* GRANITE-63827: Update CS Quickstart to latest public release of Oak (1.90.0).
-* GRANITE-63888: Update QS to Jackrabbit 2.22.3.
-* GRANITE-64030: Add keywords and patterns to allowed list for Expression Language Validator.
+* GRANITE-63821: Update Quickstart to filevault release fixing JCRVLT-831/JCRVLT-839.
+* GRANITE-63827: Update Quickstart to the latest public release of Oak (1.90.0).
+* GRANITE-63888: Update Quickstart to Jackrabbit 2.22.3.
+* GRANITE-64030: Add keywords and patterns to the allowed list for Expression Language Validator.
 * GRANITE-64050: Allow for hidden conf folders to hide external product functionality.
 * SITES-30452: Content API with ASO - Title and Description Suggestions.
 * SITES-38099: Update `testing-model.txt` to use higher version of sanity checks.
@@ -44,7 +44,7 @@ The 2026.2.0 feature activation will provide the full feature set for this maint
 * SKYOPS-108584: Bump FACT tool from 0.6.0 to 0.6.10.
 * SKYOPS-115691: Upgrade CORS filter bundle to add Vary Origin header on preflight requests.
 * SKYOPS-123094: Update Apache HTTP components in Quickstart.
-* SKYOPS-123236: Include rep:cugPolicy in replication package.
+* SKYOPS-123236: Include `rep:cugPolicy` in the replication package.
 * SKYOPS-123240: Update CRXDE dependencies in Quickstart.
 * SKYOPS-123247: Update Sling XSS bundle in Quickstart.
 * SKYOPS-123250: Update Sling security bundle in Quickstart.
@@ -55,8 +55,8 @@ The 2026.2.0 feature activation will provide the full feature set for this maint
 ### Fixed Issues {#fixed-issues-24222}
 
 * FORMS-23687: Fix SSV validation failure when contains rule is used without default value.
-* GRANITE-48472: Localize error when changing password in Edit User Settings tab.
-* GRANITE-50286: Fix layout issue in status column of User Management modal.
+* GRANITE-48472: Localize error when changing password in the Edit User Settings tab.
+* GRANITE-50286: Fix layout issue in the status column of User Management modal.
 * GRANITE-52301: Localize Unable to commit changes to session string in Security Groups.
 * GRANITE-52920: Localize error when creating user in Security Create New User.
 * GRANITE-54654: Localize string in Security Adobe IMS Configurations Check dialog.
@@ -66,13 +66,13 @@ The 2026.2.0 feature activation will provide the full feature set for this maint
 * GRANITE-62824: Fix `NullPointerException` when accessing Groups tab in User Editor.
 * GRANITE-63080: Make import of `org.slf4j.spi` compatible with `slf4j 2.x`.
 * GRANITE-63210: Update distribution core to fix dispatcher invalidation on publish startup.
-* GRANITE-63293: Fix mandatory pathfield losing required asterisk after first authoring.
+* GRANITE-63293: Fix mandatory pathfield losing the required asterisk after first authoring.
 * GRANITE-63360: Fix wrong information shown when multiple paths are selected.
 * SITES-36242: Narrow down GraphQL execute regex to fix dispatcher filter bypass.
-* SKYOPS-84379: Use latest FACT tool for proper feature toggle pickup by RDEs.
+* SKYOPS-84379: Use the latest FACT tool for proper feature toggle pickup by RDEs.
 * SKYOPS-121216: Revert update to Jackson 2.20.0 libraries.
 
-#### AEM Guides {#guides-X}
+#### AEM Guides {#guides-24222}
 
 * GUIDES-38198 : When updating an inline MathML equation using the Edit MathML option from the context menu, the updated value is not reflected until the page is refreshed.
 * GUIDES-38276: Unable to remove Version labels from Version history panel in Assets UI.
