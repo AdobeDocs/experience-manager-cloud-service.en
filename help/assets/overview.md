@@ -648,7 +648,11 @@ Some of the key benefits of Discovery Agent include:
 * Find forms to apply for a job.  
 * Show assets with person in landscape orientation.  
 
+<<<<<<< Updated upstream
 **Content Optimization Agent**
+=======
+## **Content Optimization Agent**
+>>>>>>> Stashed changes
 
 The **Content Optimization Agent** helps refine and adapt assets using natural language prompts. It can generate new renditions, adjust visuals, change backgrounds, and create channel-ready variations automatically. Works with the Discovery Agent and **Dynamic Media with OpenAPI** for seamless optimization.
 
@@ -669,7 +673,11 @@ The **Content Optimization Agent** helps refine and adapt assets using natural l
 
 **Limitations:** Some optimizations are not supported for PNG assets.
 
+<<<<<<< Updated upstream
 **Governance Agent**
+=======
+## **Governance Agent**
+>>>>>>> Stashed changes
 
 The Governance Agent helps ensure compliance, brand consistency, and policy enforcement across AEM content. It identifies content that does not meet metadata, accessibility, or corporate guidelines.
 
@@ -706,7 +714,11 @@ Some of the key benefits of Governance Agent include:
 
 <td>
    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+<<<<<<< Updated upstream
    <img alt="Content Optimization Overview" src="./assets/content-optimization-agent.jpeg" />
+=======
+   <img alt="Content Optimization Overview" src="./assets/content-optimization-agent-overview.jpeg" />
+>>>>>>> Stashed changes
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
