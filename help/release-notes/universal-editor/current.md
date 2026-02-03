@@ -20,12 +20,7 @@ These are the release notes for the 5 February 2026 release of the Universal Edi
 
 ## What's New {#what-is-new}
 
-* Remove component method was exposed to `editorActions`.
-* Copy component method was exposed to `editorActions`.
-* Move component method was exposed to `editorActions`.
-* Add component method was exposed to `editorActions`.
-* Definitions were exposed to [extensibility.](/help/implementing/universal-editor/extending.md)
-* Version 2.0 of the Document Authoring API is released.
+* The move action is now available within [the context menu.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
 
 ## Early Adoption Features {#early-adopter}
 
@@ -35,6 +30,4 @@ If you are interested in testing the upcoming features listed below and sharing 
 
 ## Other Improvements {#other-improvements}
 
-* The `content` extensibility was renamed to `details` to follow API schema.
-* Contextual menu behavior was improved.
-* Fixed a bug when clicking the badge of an editable item so that the context menu opens properly.
+* Publish to preview was enabled for AEM 6.5 when using the [`xwalk` plugin.](/help/implementing/universal-editor/component-definition.md#plugins)
