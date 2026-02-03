@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2025 {#2025}
+      + [Release Notes for 2025.12.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-12-0.md) 
       + [Release Notes for 2025.11.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-11-0.md) 
       + [Release Notes for 2025.10.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-10-0.md) 
       + [Release Notes for 2025.9.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-9-0.md) 
@@ -134,6 +135,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2025 {#2025}
+      + [2025.12.0](/help/implementing/cloud-manager/release-notes/2025/2025-12-0.md)
       + [2025.11.0](/help/implementing/cloud-manager/release-notes/2025/2025-11-0.md)
       + [2025.10.0](/help/implementing/cloud-manager/release-notes/2025/2025-10-0.md)
       + [2025.9.0](/help/implementing/cloud-manager/release-notes/2025/2025-9-0.md)
@@ -242,7 +244,11 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Universal Editor {#universal-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
+    + 2026 {#2026}
+      + [2026.01.22 Release Notes](/help/release-notes/universal-editor/2026/2026-01-22.md)
+      + [2026.01.15 Release Notes](/help/release-notes/universal-editor/2026/2026-01-15.md)
     + 2025 {#2025}
+      + [2025.12.12 Release Notes](/help/release-notes/universal-editor/2025/2025-12-12.md)
       + [2025.12.04 Release Notes](/help/release-notes/universal-editor/2025/2025-12-04.md)
       + [2025.11.20 Release Notes](/help/release-notes/universal-editor/2025/2025-11-20.md)
       + [2025.11.13 Release Notes](/help/release-notes/universal-editor/2025/2025-11-13.md)
@@ -821,6 +827,7 @@ user-guide-title: AEM as a Cloud Service
       + [Connect Adaptive Form to Salesforce application using OAuth 2.0 client credential flow](/help/forms/aem-forms-salesforce-integration.md)
       + [Configure [!DNL Azure] storage](/help/forms/configure-azure-storage.md)
       + [Configure [!DNL Microsoft Dynamics 365] cloud services](/help/forms/configure-msdynamics.md)
+      + [Connect Adaptive Form to Azure SQL Database](/help/forms/connect-adaptive-form-to-azure-sql.md)
       + [Configure Salesforce cloud services](/help/forms/configure-salesforce.md)
       + [Create Form Data Model](/help/forms/create-form-data-models.md)
       + [Work with Form Data Model](/help/forms/work-with-form-data-model.md)
@@ -1036,14 +1043,14 @@ user-guide-title: AEM as a Cloud Service
     + [Manage Forms applications and tasks in AEM Inbox](/help/forms/manage-applications-inbox.md)
     + [Use the Out of Office option](/help/forms/configure-out-of-office-settings.md)
 + Communications APIs {#using-communications}
-    + [Overview of Communications APIs](/help/forms/aem-forms-communication-api-overview.md)
     + [Introduction to Communications APIs](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-    + [Authentication-OAuth Server-to-Server](/help/forms/oauth-api-authetication.md)
-    + [Authentication JWT(JSON Web Token)](/help/forms/jwt-api-authentication.md)
+    + [AEM Forms Communications APIs](/help/forms/aem-forms-communication-api-overview.md)
     + [Communications APIs - Synchronous processing](/help/forms/aem-forms-cloud-service-communications.md)
     + [Communications APIs - Batch processing](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-    + [Communications APIs - On-Demand processing](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+    + [Forms Communications APIs - Tutorial](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
     + [Generate AFP Output Using the AEM Forms API](/help/forms/document-generation-afp-api.md)
+    + [OAuth Server-to-Server Authentication ](/help/forms/oauth-api-authetication.md)
+    + [JWT(JSON Web Token) Server-to-Server Authentication](/help/forms/jwt-api-authentication.md)
     + [Install and configure Forms Designer](/help/forms/installing-configuring-designer.md)
     + [Use Forms Designer to create templates](/help/forms/use-forms-designer.md)
     + [Changing Page Zero content in Designer](/help/forms/changing-page-zero-content-designer.md)
@@ -1069,13 +1076,13 @@ user-guide-title: AEM as a Cloud Service
     + [502 Error Page in Custom Submit Action](/help/forms/custom-submit-action-troubleshooting.md)
 + AI in AEM {#ai-in-aem}
   + [Overview](/help/ai-in-aem/overview.md)
+  + [Using MCP with AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
   + Agents in AEM {#agents}
     + [Overview](/help/ai-in-aem/agents/overview.md)
     + Experience Production Agent {#production}
       + [Overview](/help/ai-in-aem/agents/production/overview.md)
       + [Communication Creation Skill](/help/ai-in-aem/agents/production/communications-creation.md)
       + [Content Update Skill](/help/ai-in-aem/agents/production/content-update.md)
-      + [Site Migration Skill](/help/ai-in-aem/agents/production/site-migration.md)
       + [Form Creation Skill](/help/ai-in-aem/agents/production/form-creation.md)
     + Content Optimization Agent {#content-optimization}
       + [Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/overview.md)
@@ -1085,6 +1092,10 @@ user-guide-title: AEM as a Cloud Service
       + [Overview](/help/ai-in-aem/agents/development/overview.md)
     + Governance Agent {#governance}
       + [Overview](/help/ai-in-aem/agents/governance/overview.md)
+    + Experience Modernization Agent {#modernization}
+      + [Overview](/help/ai-in-aem/agents/modernization/overview.md)
+      + [Getting Started](/help/ai-in-aem/agents/modernization/getting-started.md)
+      + [Modernization Console](/help/ai-in-aem/agents/modernization/console.md)
   + AI Assistant {#ai-assistant}
     + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
     + [About AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
@@ -1466,7 +1477,7 @@ user-guide-title: AEM as a Cloud Service
       + [Component Definition](/help/implementing/universal-editor/component-definition.md)
       + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
       + [Publishing](/help/implementing/universal-editor/publishing.md)
-      + [Events](/help/implementing/universal-editor/events.md)
+      + [Events](/help/implementing/universal-editor/events-universal-editor.md)
       + [Filtering Components](/help/implementing/universal-editor/filtering.md)
       + [Configuring the RTE](/help/implementing/universal-editor/configure-rte.md)
       + [Customizing](/help/implementing/universal-editor/customizing.md)  
@@ -1487,7 +1498,6 @@ user-guide-title: AEM as a Cloud Service
       + [SPA WKND Tutorial](/help/implementing/developing/hybrid/wknd-tutorial.md)
       + [Getting Started using React](/help/implementing/developing/hybrid/getting-started-react.md)
       + [Getting Started using Angular](/help/implementing/developing/hybrid/getting-started-angular.md)
-      + [SPA Deep Dives](/help/implementing/developing/hybrid/deep-dives-gems.md)
       + [Developing SPAs for AEM](/help/implementing/developing/hybrid/developing.md)
       + [SPA Editor Overview](/help/implementing/developing/hybrid/editor-overview.md)
       + [SPA Blueprint](/help/implementing/developing/hybrid/blueprint.md)
