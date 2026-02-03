@@ -30,7 +30,7 @@ Have a look at the [December 2021 Release Overview](https://video.tv.adobe.com/v
 
 ### New features in [!DNL Assets] {#assets-features}
 
-* Dynamic Media Image Smart Crop and Swatch is now powered by latest Sensei services, that generates improved crops and swatches. Also, an enhancement has been launched to generate different crop content, for same aspect ratio but across different resolutions. In addition, any manual edits are preserved on reprocessing, if there is no change in the width and height in the Image Profile.
+* Dynamic Media Image Smart Crop and Swatch is now powered by latest Adobe AI services, that generates improved crops and swatches. Also, an enhancement has been launched to generate different crop content, for same aspect ratio but across different resolutions. In addition, any manual edits are preserved on reprocessing, if there is no change in the width and height in the Image Profile.
 
 ### New features in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 

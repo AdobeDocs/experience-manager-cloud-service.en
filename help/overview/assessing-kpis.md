@@ -1,6 +1,6 @@
 ---
-title: Accessing KPIs
-description: Learn how to access your KPIs and define the reporting process 
+title: Assessing KPIs
+description: Learn how to assess your KPIs and define the reporting process 
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 feature: Release Information
 role: Admin
@@ -23,7 +23,7 @@ In a 2018 study, IDC analyzed the business value several large companies saw whe
 
 To realize the same dramatic gains, your organization must have clear goals for your Experience Manager implementation. And you need to have KPIs that help everyone stay focused on those goals.
 
-## Accessing KPIs 
+## Assessing KPIs 
 
 In assessing your KPIs, make sure that:
 

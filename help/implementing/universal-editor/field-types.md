@@ -88,7 +88,7 @@ A field object has the following type definition.
 |`name`|`string`|Property [or path](#nesting) where the data shall be persisted|Yes|
 |`label`|`FieldLabel`|Label of the field|Yes|
 |`description`|`FieldDescription`|Description of the field|No|
-|`value`|`FieldValue`|This is a default value, which serves as a placeholder. No content updates are driven by this value. It is just a representation in the UI.|No|
+|`value`|`FieldValue`|This is a default value, which serves as a placeholder. If no value is set, the Universal Editor will persist whatever is defined as `value` in the model definition. This ensures that what you see will match what is persisted in the backend.|No|
 |`valueType`|`ValueType`|Standard validation, can be `string`, `string[]`, `number`, `date`, `boolean`|No|
 |`required`|`boolean`|Is the field required|No|
 |`readOnly`|`boolean`|Is the field read only|No|
@@ -97,6 +97,10 @@ A field object has the following type definition.
 |`multi`|`boolean`|Is the field a multi field<br/>Note that container nesting is not permitted for multi-fields in the properties panel|No|
 |`validation`|`ValidationType`|Validation rule or rules for the field|No|
 |`raw`|`unknown`|Raw data which can be used by the component|No|
+
+>[!NOTE]
+>
+>The underscore (`_`) is not allowed in field names when using the [`aem` or `xwalk` plugins.](/help/implementing/universal-editor/component-definition.md#plugins)
 
 ### name Field and Nesting {#nesting}
 
