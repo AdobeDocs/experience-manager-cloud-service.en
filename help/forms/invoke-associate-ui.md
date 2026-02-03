@@ -26,10 +26,96 @@ The below table depicts the various real-world scenarios where Associate UI can 
 Before integrating the Associate UI with your application, ensure you have:
 
 - AEM Forms Cloud Service Publish instance
-- Authentication configured - SAML 2.0 recommended
 - Interactive Communication created and published in AEM
 - Browser with popup support enabled
 - Associate users must be part of the **forms-associates** group
+- Authentication configured - [SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) 
+
+>[!NOTE]
+>
+> For Associate UI, additional SAML configurations are required beyond the standard setup explained in the [SAML 2.0 authentication](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) article. See the [Additional SAML configurations for Associate UI](#additional-saml-configurations-for-associate-ui) section for details.
+
+### Additional SAML configurations for Associate UI
+
+When configuring SAML 2.0 authentication for the Associate UI, you must apply the following specific settings in your OSGi configuration files.
+
+#### SAML Authentication Handler
+
+Create the file `com.adobe.granite.auth.saml.SamlAuthenticationHandler~formsassociate.cfg.json` in `ui.config/src/main/content/jcr_root/apps/<project-name>/osgiconfig/config.publish`:
+
+```json
+{
+  "path": ["/libs/fd/associate"],
+  "serviceProviderEntityId": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com",
+  "assertionConsumerServiceURL": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/saml_login",
+  "idpUrl": "https://login.microsoftonline.com/{azure-tenant-id}/saml2",
+  "idpCertAlias": "{your-certificate-alias}",
+  "idpIdentifier": "https://sts.windows.net/{azure-tenant-id}/",
+  "userIDAttribute": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
+  "createUser": true,
+  "userIntermediatePath": "saml",
+  "synchronizeAttributes": [
+    "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname=profile/givenName",
+    "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname=profile/familyName",
+    "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress=profile/email"
+  ],
+  "addGroupMemberships": true,
+  "defaultGroups": ["forms-associates"],
+  "defaultRedirectUrl": "/libs/fd/associate/ui.html",
+  "idpHttpRedirect": false,
+  "service.ranking": 5002
+}
+```
+
+| Property | Description |
+|----------|-------------|
+| `path` | Must be set to `/libs/fd/associate` for Associate UI |
+| `defaultGroups` | Set to `forms-associates` to automatically assign users to the required group |
+| `defaultRedirectUrl` | Redirects authenticated users to the Associate UI |
+| `idpHttpRedirect` | Must be `false` for SP-initiated flow |
+| `idpCertAlias` | Must match the certificate alias in Trust Store exactly (case-sensitive) |
+
+#### Sling Authenticator
+
+Create the file `org.apache.sling.engine.impl.auth.SlingAuthenticator~formsassociate.cfg.json` in `ui.config/src/main/content/jcr_root/apps/<project-name>/osgiconfig/config.publish`:
+
+```json
+{
+  "sling.auth.requirements": ["+/libs/fd/associate/ui.html"],
+  "sling.auth.anonymous": false
+}
+```
+
+#### Referrer Filter
+
+Update the file `org.apache.sling.security.impl.ReferrerFilter.cfg.json` to allow the identity provider:
+
+```json
+{
+  "allow.hosts": ["login.microsoftonline.com"],
+  "filter.methods": ["POST"]
+}
+```
+
+#### CORS Policy
+
+Create the file `com.adobe.granite.cors.impl.CORSPolicyImpl~formsassociate.cfg.json`:
+
+```json
+{
+  "alloworigin": ["https://login.microsoftonline.com"],
+  "allowedpaths": [".*/saml_login"],
+  "supportedmethods": ["POST"]
+}
+```
+
+#### Dispatcher Filter
+
+Add the following rule to `dispatcher/src/conf.dispatcher.d/filters/filters.any`:
+
+```
+/0190 { /type "allow" /method "POST" /url "*/saml_login" }
+```
 
 ## Invoking Associate UI on Publish instance
 
@@ -64,7 +150,7 @@ const data = {
 
 | Component | Required | Description |
 |-----------|----------|-------------|
-| `id` | Yes | The identifier of the Interactive Communication to load |
+| `id` | Yes | The identifier of the Interactive Communication (IC) to load |
 | `prefill` | No | Contains service configuration for data prefilling |
 | `prefill.serviceName` | No | Name of the Form Data Model service to invoke for prefilling data |
 | `prefill.serviceParams` | No | Key-value pairs passed to the prefill service |
@@ -302,7 +388,7 @@ To observe how the Associate UI appears on the frontend and test your integratio
 1. **IC ID Field**: Enter the Interactive Communication identifier (required)
 2. **Prefill Service**: Specify the Form Data Model service name for prefilling data
 3. **Service Parameters**: Enter JSON object with parameters to pass to the prefill service
-4. **Options**: Enter JSON object with additional configuration options
+4. **Options**: Enter configuration options for PDF
 5. **Launch Button**: Opens the Associate UI in a new window and sends the initialization data
 
 ## Data Payload Examples
@@ -424,6 +510,7 @@ Implement these security measures in your integration:
 
 ## See Also
 
+- [Configure SAML 2.0 Authentication for Associate UI](/help/forms/configure-saml-authentication-for-associate-ui.md)
 - [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [Interactive Communications on Cloud](/help/forms/early-access-ea-features.md#interactive-communications-on-cloud)
 - [Early Access Features](/help/forms/early-access-ea-features.md)
