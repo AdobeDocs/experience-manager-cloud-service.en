@@ -92,7 +92,7 @@ Update the file `org.apache.sling.engine.impl.auth.SlingAuthenticator~saml.cfg.j
 
 If not already present, add the following rules to your `dispatcher/src/conf.dispatcher.d/filters/filters.any` file:
 
-```
+```json
 # Allow Interactive Communications APIs
 /XXXX { /type "allow" /method '(GET|OPTIONS)' /url "/adobe/communications" }
 /XXXX { /type "allow" /method '(GET|POST|OPTIONS)' /url "/adobe/communications/*" }
@@ -141,7 +141,7 @@ const data = {
 | `prefill` | No | Contains service configuration for data prefilling.|
 | `prefill.serviceName` | No | Name of the Form Data Model service to invoke for prefilling data |
 | `prefill.serviceParams` | No | Key-value pairs passed to the prefill service |
-| `options` | No | Additional properties supported by PDF rendering |
+| `options` | No | Additional properties supported for PDF rendering - locale, includeAttachments, embedFonts, makeAccessible|
 
 ### Step 3: Implement the Integration Function
 
@@ -375,7 +375,7 @@ To observe how the Associate UI appears on the frontend and test your integratio
 1. **IC ID Field**: Enter the Interactive Communication identifier (required)
 2. **Prefill Service**: Specify the Form Data Model service name for prefilling data
 3. **Service Parameters**: Enter JSON object with parameters to pass to the prefill service
-4. **Options**: Enter configuration options for PDF, for example, locale, contentRoot, acrobatVersion
+4. **Options**: Enter configuration options for PDF, for example, locale, includeAttachments, embedFonts, makeAccessible
 5. **Launch Button**: Opens the Associate UI in a new window and sends the initialization data
 
 ## Data Payload Examples
@@ -427,9 +427,11 @@ Use this to specify additional rendering options:
     }
   },
   "options": { 
-    "locale": "en",
-    "contentRoot": "/templates/assets",
-    "acrobatVersion": "Acrobat_11"
+      locale: "en_US",
+      includeAttachments: "true",
+      webOptimized: "false",
+      embedFonts: "false",
+      makeAccessible: "false"
   }
 }
 ```
