@@ -93,11 +93,11 @@ Update the file `org.apache.sling.engine.impl.auth.SlingAuthenticator~saml.cfg.j
 If not already present, add the following rules to your `dispatcher/src/conf.dispatcher.d/filters/filters.any` file:
 
 ```json
-# Allow Interactive Communications APIs
-/XXXX { /type "allow" /method '(GET|OPTIONS)' /url "/adobe/communications" }
-/XXXX { /type "allow" /method '(GET|POST|OPTIONS)' /url "/adobe/communications/*" }
-/XXXX { /type "allow" /method "GET" /url "/content/dam/fd:fonts/*" }
-/XXXX { /type "allow" /method '(GET|OPTIONS)' /url "/libs/fd/associate/*" }
+  # Allow Interactive Communications APIs and Associate UI
+  /XXXX { /type "allow" /method '(GET|OPTIONS)' /url "/adobe/communications" }
+  /XXXX { /type "allow" /method '(GET|POST|OPTIONS)' /url "/adobe/communications/*" }
+  /XXXX { /type "allow" /method "GET" /url "/content/dam/fd:fonts/*" }
+  /XXXX { /type "allow" /method '(GET|OPTIONS)' /url "/libs/fd/associate/*" }
 ```
 
 >[!NOTE]
