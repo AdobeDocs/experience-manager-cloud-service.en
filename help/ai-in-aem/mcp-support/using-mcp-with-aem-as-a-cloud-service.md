@@ -16,6 +16,11 @@ With AEM's MCP integration, different personas can collaborate around the same c
 * **Developers** can orchestrate content operations and workflows from their IDE or chat application
 * **Practitioners** and content architects can manage sites, content fragments, and assets with AI assistance while staying within AEM's existing permission model.
 
+>[!IMPORTANT]
+>
+> For scenarios that modify or delete content, practitioners should use the AI Assistant interface rather than invoking MCP tools directly, because the AEM Agents run by AI Assistant include built-in safeguards.
+>
+
 This article explains what AEM's MCP functionality provides, which MCP applications are supported, how to configure it, and how to use it in practice.
 
 ## Why MCP is Useful for AEM Customers {#why-mcp-is-useful-for-aem-customers}
@@ -63,9 +68,8 @@ Each application provides its own configuration experience, but the high-level s
 
 ## Setup Overview {#setup-overview}
 
-Configuring MCP for AEM involves three main parts:
+Configuring MCP for AEM involves two main parts:
 
-1. **A one-time configuration in AEM by an administrator**, allowing specific MCP client applications to access AEM's MCP servers
 1. **Configuration in each MCP client application** so that the application knows how to connect to the AEM MCP servers and perform OAuth login
 1. **Select the MCP Server** before starting to prompt, so that the MCP client knows to use it.
 
