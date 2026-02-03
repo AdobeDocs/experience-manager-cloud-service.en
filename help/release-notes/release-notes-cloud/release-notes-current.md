@@ -77,11 +77,16 @@ See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes
 
 ### Content MCP Server {#content-MCP}
 
-Chat applications (e.g., ChatGPT) and modern IDEs (e.g., Cursor) can use the Model Context Protocol (MCP) to let a large language model (LLM) call tools exposed by an MCP server. Instead of writing code against low-level API specifications, you can describe what you want in natural language and have the LLM translate that intent into the appropriate API calls. And in some cases, a prompt can be more convenient than navigating a user interface.
+AEM Cloud Service now includes **Content MCP Servers**, providing a standardized way for AI-powered experiences to work with AEM content through MCP-compatible tools.
 
-For example, you can prompt ChatGPT: *Edit /en/coffee.html in AEM: change the text Frescopa Coffee in the content to something a 20‑year‑old would like.*
+Developers and power users working in chat apps and agent platforms can connect AEM to custom copilots and automations, so content work becomes part of end-to-end business workflows.
 
-AEM provides two Content MCP Servers—**read-only** and **read/write**—with tools for working with **Pages**, **Content Fragments**, and **Assets**. These servers can be used from the following MCP clients: **ChatGPT**, **Claude**, **Cursor**, and **Microsoft Copilot Studio**.
+AEM provides two servers:
+
+1. **Read-only Content MCP Server** - for retrieving content safely
+1. **Read/Write Content MCP Server** - for making changes to content
+
+These MCP servers include tools for working with **Pages**, **Content Fragments**, and **Assets**, and can be used from the following MCP clients: **ChatGPT**, **Claude**, **Cursor**, and **Microsoft Copilot Studio**.
 
 Learn more in [Using MCP with AEM Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md). For questions or feedback, email [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com).
 
@@ -104,43 +109,21 @@ For more information, see AI Search in [Assets view](/help/assets/search-assets-
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-<!-- ### Pre-Release features in AEM Forms 
+**Enhancements to the Footnote Placeholder in Adaptive Forms (Foundation Components)**
 
-**Rule Editor Enhancements**
-
-The Rule Editor now supports enhanced navigation and allows use of function and mathematical expressions in input parameters.
-
-**Enhanced Navigation with Event Payload Support**
- 
-The `Navigate To` action in the Invoke Service handlers now supports `EVENT_PAYLOAD`, enabling form authors to configure follow-up actions based on event responses. This enhancement offers greater flexibility in designing post-submission workflows, ensuring smoother transitions and more personalized user experiences. For more information, see [Enhanced Navigation with Event Payload Support](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service).
-
-**Function and Mathematical Expression Support in Input Parameters**
- 
-Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters). --> 
+* Added [multi-line support with line breaks](/help/forms/footnotes-richtextsupport.md), enabling clearer and more expressive presentation of footnote content.
+* Footnotes now remain persistently visible within the Footnote Placeholder, regardless of the visibility of associated panels, ensuring consistent access to critical information.
+   ![Footnote Description](/help/forms/assets/footnote-description.png){height=50%}
 
 ### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 
-The AEM Forms Early Access Program offers a unique opportunity for you to get exclusive access to cutting-edge innovations and help shape their development.
+**Retrieve values from a JSON array**
 
-These release notes list the innovations delivered in the current release. For the complete list of innovations available under the Early Access Program, see [AEM Forms Early Access Program documentation](/help/forms/early-access-ea-features.md). 
+Expanded custom function capabilities to [extract values from JSON arrays](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array), received via an API call, and bind them directly to Adaptive Form fields. You can now develop business logic and rules with minimal manual data mapping.
 
-#### Interactive Communication Enhancements 
- 
-##### Template Locking 
+**Run the Associate UI on a Publish instance**
 
-Lock content and layout elements within templates to maintain brand integrity and prevent unauthorised modifications. This ensures design consistency across all communications. 
-
-##### Content Overflow Support 
-
-Introducing the "Allow page breaks within content" option for flowed layouts. This enhancement enables smooth multi-page editing and better text management for complex documents. 
-
-##### XDP File Editing 
-
-The Interactive Communication editor now supports XDP editing, including fragment integration. You can now edit XDP files in a browser instead of Forms Designer that runs only on Microsoft Windows desktop. 
-
-##### Dynamic Page Numbering 
-
-Automatically display "Page # of ##" on master pages for clear, consistent pagination across multi-page documents. 
+You can now run the [Associate UI](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md) directly on Publish instances. This allows your agents to access the Associate UI and easily personalize communications for your customers.
 
 <!--
 **Forms Optimization opportunities**
