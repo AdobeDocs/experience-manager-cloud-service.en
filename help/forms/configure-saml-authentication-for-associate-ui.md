@@ -33,10 +33,6 @@ Before you begin, ensure you have:
 - Git repository access
 - AEM user group `forms-associates` exists
 
-## Understand Single Sign-On
-
-Single sign-on (SSO) is an authentication method that allows users to sign in using one set of credentials to multiple independent software systems. Using SSO means a user doesn't have to sign in to every application they use. For federated single sign-on, Microsoft Entra authenticates the user to the application using their Microsoft Entra account. This method is supported for SAML 2.0 applications.
-
 For more information about SSO options, see [What is single sign-on in Microsoft Entra ID?](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-single-sign-on)
 
 ## Implementation Steps
@@ -78,7 +74,7 @@ For more information about SSO options, see [What is single sign-on in Microsoft
 
 ### Step 3: Configure SAML Authentication Handler
 
-Create the file `com.adobe.granite.auth.saml.SamlAuthenticationHandler~formsassociate.cfg.json` in the following location:
+Create the file `com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg.json` in the following location:
 
 `ui.config/src/main/content/jcr_root/apps/<project-name>/osgiconfig/config.publish`
 
@@ -123,7 +119,7 @@ Create the file `com.adobe.granite.auth.saml.SamlAuthenticationHandler~formsasso
 
 ### Step 4: Configure Sling Authenticator
 
-Create the file `org.apache.sling.engine.impl.auth.SlingAuthenticator~formsassociate.cfg.json` in the following location:
+Create the file `org.apache.sling.engine.impl.auth.SlingAuthenticator~saml.cfg.json` in the following location:
 
 `ui.config/src/main/content/jcr_root/apps/<project-name>/osgiconfig/config.publish`
 
@@ -153,7 +149,7 @@ Update or create the file `org.apache.sling.security.impl.ReferrerFilter.cfg.jso
 
 ### Step 6: Configure CORS Policy
 
-Create the file `com.adobe.granite.cors.impl.CORSPolicyImpl~formsassociate.cfg.json` in the following location:
+Create the file `com.adobe.granite.cors.impl.CORSPolicyImpl~saml.cfg.json` in the following location:
 
 `ui.config/src/main/content/jcr_root/apps/<project-name>/osgiconfig/config.publish`
 
@@ -167,11 +163,19 @@ Create the file `com.adobe.granite.cors.impl.CORSPolicyImpl~formsassociate.cfg.j
 
 ### Step 7: Configure Dispatcher
 
-Add the following rule to `dispatcher/src/conf.dispatcher.d/filters/filters.any`:
+New IC customers must add the rules below to the `filters.any` configuration file in their Git repository to ensure that IC APIs and Associate UI function correctly on the Publish instance.
 
 ```
-/0190 { /type "allow" /method "POST" /url "*/saml_login" }
+# Allow POST for Forms IC Document Services APIs and Associate UI
+/XXXX { /type "allow" /method '(GET|OPTIONS)' /url "/adobe/communications" }
+/XXXX { /type "allow" /method '(GET|POST|OPTIONS)' /url "/adobe/communications/*" }
+/XXXX { /type "allow" /method '(GET|OPTIONS)' /url "/libs/fd/associate/*" }
 ```
+
+>[!NOTE]
+>
+> - Typical path to the `filters.any` file: `<git_repo_root>/dispatcher/src/conf.dispatcher.d/filters/filters.any`
+> - Replace `XXXX` with the next appropriate numerical sequence used in your existing `filters.any` file.
 
 ### Step 8: Deploy and Test
 
