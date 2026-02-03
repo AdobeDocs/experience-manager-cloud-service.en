@@ -73,9 +73,9 @@ We are using a dropdown field named `Image` as an example to categorize files ba
    > 
    >You cannot import the options from a CSV file and edit them manually as both the options are mutually exclusive.
 
-1. To create a dependency between the Asset Type field and other fields, select the dependent field and open the **[!UICONTROL Rules]** tab. Each component supports a specific set of rules. For this use case, Image Asset Type options are used to define the rule logic.
+1. To create a dependency between the Image field and other fields, select the dependent field and open the **[!UICONTROL Rules]** tab. Each component supports a specific set of rules. For this use case, Image Asset Type options are used to define the rule logic.
 
-   ![Image Asset Type Rule](assets/image-asset-type-rule.png)
+   <!--![Image Asset Type Rule](assets/image-asset-type-rule.png)-->
 
    <!--![rule tab](assets/rule-tab.png)-->
 
