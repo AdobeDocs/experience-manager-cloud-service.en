@@ -57,15 +57,15 @@ Create the file `com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg.
     "createUser": true,
     "userIntermediatePath": "saml",
     "synchronizeAttributes": [
-    "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname=profile/givenName",
-    "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname=profile/familyName",
-    "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress=profile/email"
-    ],
-    "addGroupMemberships": true,
-    "defaultGroups": ["forms-associates"],
-    "defaultRedirectUrl": "/libs/fd/associate/ui.html",
-    "idpHttpRedirect": false,
-    "service.ranking": 5002
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname=profile/givenName",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname=profile/familyName",
+      "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress=profile/email"
+      ],
+      "addGroupMemberships": true,
+      "defaultGroups": ["forms-associates"],
+      "defaultRedirectUrl": "/libs/fd/associate/ui.html",
+      "idpHttpRedirect": false,
+      "service.ranking": 5002
   }
 ```
 
