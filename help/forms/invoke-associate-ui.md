@@ -46,27 +46,27 @@ When configuring SAML 2.0 authentication for the Associate UI, you must apply th
 Create the file `com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg.json` in `ui.config/src/main/content/jcr_root/apps/<project-name>/osgiconfig/config.publish`:
 
 ```json
-{
-  "path": ["/libs/fd/associate"],
-  "serviceProviderEntityId": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com",
-  "assertionConsumerServiceURL": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/saml_login",
-  "idpUrl": "https://login.microsoftonline.com/{azure-tenant-id}/saml2",
-  "idpCertAlias": "{your-certificate-alias}",
-  "idpIdentifier": "https://sts.windows.net/{azure-tenant-id}/",
-  "userIDAttribute": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
-  "createUser": true,
-  "userIntermediatePath": "saml",
-  "synchronizeAttributes": [
+  {
+    "path": ["/libs/fd/associate"],
+    "serviceProviderEntityId": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com",
+    "assertionConsumerServiceURL": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/saml_login",
+    "idpUrl": "https://login.microsoftonline.com/{azure-tenant-id}/saml2",
+    "idpCertAlias": "{your-certificate-alias}",
+    "idpIdentifier": "https://sts.windows.net/{azure-tenant-id}/",
+    "userIDAttribute": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
+    "createUser": true,
+    "userIntermediatePath": "saml",
+    "synchronizeAttributes": [
     "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname=profile/givenName",
     "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname=profile/familyName",
     "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress=profile/email"
-  ],
-  "addGroupMemberships": true,
-  "defaultGroups": ["forms-associates"],
-  "defaultRedirectUrl": "/libs/fd/associate/ui.html",
-  "idpHttpRedirect": false,
-  "service.ranking": 5002
-}
+    ],
+    "addGroupMemberships": true,
+    "defaultGroups": ["forms-associates"],
+    "defaultRedirectUrl": "/libs/fd/associate/ui.html",
+    "idpHttpRedirect": false,
+    "service.ranking": 5002
+  }
 ```
 
 | Property | Description |
