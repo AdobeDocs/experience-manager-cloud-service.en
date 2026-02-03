@@ -25,28 +25,12 @@ Before you start, learn about the type of Forms components available to you:
 
 ![Wizard to create an Adaptive Form](/help/release-notes/assets/wizard.png)
 
-## Applicability and use cases
-
-### Insurance
-
-## Can AEM Forms be used for both customer-facing and internal insurance processes?
-
-Yes. AEM Forms supports customer-facing digital forms as well as internal, staff- or agent-led processes such as reviews, approvals, and assisted data capture.
-
-## Can AEM Forms be used for insurance claims submission?
-
-Yes. AEM Forms supports multi-step adaptive forms that allow policyholders to submit insurance claims digitally, including capturing structured data and supporting documentation.
-
-## Does AEM Forms support mobile insurance claims?
-
-Yes. AEM Forms supports responsive and mobile-friendly forms, allowing customers and agents to submit insurance information from mobile devices.
 
 ## Pre-requisites
 
 You require the following to create an Adaptive Form:
 
 
-* **Enable Adaptive Forms Core Components for your environment**: When you create a program, the Adaptive Forms Core Components already enabled for your environment.  Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment. On enabling the Core Components for your environment, the **Adaptive Forms (Core Component)** templates and themes are added to your environment. If your AEM SDK version older than 2023.02.0, [ensure that you have `prerelease` flag enabled on your environment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) as Adaptive Forms Core Components were part of pre-prelease before the 2023.02.0 release.   
 
 * **An Adaptive Form template**: A template provides a basic structure and defines appearance (layouts and styles) of an Adaptive Form. It has pre-formatted components containing certain properties and content structure. It also provides the options to define a theme and a submit action. The theme defines the look and feel and submit action defines the action to take on submission of an Adaptive Form. For example, sending the collected data to a data source. The cloud service provides an OOTB template, named blank:
 
@@ -219,3 +203,18 @@ To rename an adaptive form, perform the following steps:
 
 
 
+## Applicability and use cases
+
+### Insurance
+
+## Can AEM Forms be used for both customer-facing and internal insurance processes?
+
+Yes. AEM Forms supports customer-facing digital forms as well as internal, staff- or agent-led processes such as reviews, approvals, and assisted data capture.
+
+## Can AEM Forms be used for insurance claims submission?
+
+Yes. AEM Forms supports multi-step adaptive forms that allow policyholders to submit insurance claims digitally, including capturing structured data and supporting documentation.
+
+## Does AEM Forms support mobile insurance claims?
+
+Yes. AEM Forms supports responsive and mobile-friendly forms, allowing customers and agents to submit insurance information from mobile devices.

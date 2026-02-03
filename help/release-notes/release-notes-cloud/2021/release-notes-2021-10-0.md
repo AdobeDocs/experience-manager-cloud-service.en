@@ -40,7 +40,7 @@ Have a look at the [October 2021 Release Overview](https://video.tv.adobe.com/v/
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] Image Smart Crop and Swatch is now powered by latest Sensei services, that generates improved crops and swatches. Also, an enhancement has been launched to generate different crop content, for same aspect ratio but across different resolutions. In addition, any manual edits are preserved on reprocessing, if there is no change in the width and height in the Image Profile.
+* [!DNL Dynamic Media] Image Smart Crop and Swatch is now powered by latest AI services, that generates improved crops and swatches. Also, an enhancement has been launched to generate different crop content, for same aspect ratio but across different resolutions. In addition, any manual edits are preserved on reprocessing, if there is no change in the width and height in the Image Profile.
 
 * Smart Tags are automatically applied to the assets using asset microservices, instead of Smart Content Services. The underlying model is updated to improve tagging results and reduce bias. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 

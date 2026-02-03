@@ -13,7 +13,7 @@ Define the structure of the content you will create and serve using AEM's headle
 
 [Now that you have created a configuration](create-configuration.md), you can use it to create Content Fragment Models.
 
-Content Fragment Models define the structure of the data and content that you will create and manage in AEM. They serve as a kind of scaffolding for your content. When choosing to create content, your authors will select from the Content Fragment Models you define, which guides them in creating content.
+Content Fragment Models define the structure of the data and content that you create and manage in AEM. They serve as a kind of scaffolding for your content. When choosing to create content, your authors will select from the Content Fragment Models you define, which guides them in creating content.
 
 ## How to Create a Content Fragment Model {#how-to-create-a-content-fragment-model}
 

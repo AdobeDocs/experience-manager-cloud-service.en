@@ -55,7 +55,7 @@ There are two options to configure the endpoint:
 
 This configuration can be done using a dialog box on the Environment Details page. When viewing this page for a Commerce-enabled program, a button is displayed if the endpoint is not currently configured:
 
-![CM Enviornment Information](/help/commerce-cloud/cif-storefront/assets/commerce-cmui.png)
+![CM Environment Information](/help/commerce-cloud/cif-storefront/assets/commerce-cmui.png)
 
 Clicking this button opens a dialog box:
 
@@ -63,7 +63,7 @@ Clicking this button opens a dialog box:
 
 After the endpoint and optionally an authorization header for staged catalog support is set, the endpoint is displayed on the detail page. Clicking the Edit icon to open the same dialog box where you can edit the endpoint, if necessary.
 
-![CM Enviornment Information](/help/commerce-cloud/cif-storefront/assets/commerce-cmui-done.png)
+![CM Environment Information](/help/commerce-cloud/cif-storefront/assets/commerce-cmui-done.png)
 
 ### By way of Adobe I/O CLI  {#adobe-cli}
 

@@ -64,7 +64,6 @@ Customizing a theme refers to the process of modifying, styling and personalizin
 
 ### Set up your environment
 
-* Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment. 
 * Configure a [front-end deployment pipeline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html) for your Cloud Service environment. Alternatively, you can configure the pipeline later, giving you the flexibility to prioritize testing and refining the theme before setting up the deployment pipeline.
 
 <!-- 
@@ -387,6 +386,10 @@ The theme is deployed using the [front-end pipeline](https://experienceleague.ad
 
    After the pipeline setup is complete, the call-to-action card is updated.
 
+   >[!NOTE]
+   >
+   > To ensure your front-end pipeline does not fail in Cloud Manager, [set the Node.js version to 20](#set-the-nodejs-vesrion-to-20). 
+
 1. Right-click the created pipeline.
 1. Click **[!UICONTROL Run]** .
     
@@ -414,6 +417,21 @@ Steps to apply a theme to an Adaptive Form are:
 
 Adaptive Form themes are used as part of an Adaptive Form template to define styling while creating an Adaptive Form.
 
+## Set the Node.js version to 20
+
+To set the Node.js version to 20 using the pipeline configuration:
+
+1. Go to the **Pipelines** section and locate your front-end pipeline.
+2. On the right side of the pipeline, click the three-dot menu **⋯** and from the dropdown, select **View/Edit variables**.
+3. In the **Variables Configuration** dialog, fill in the fields as follows:
+   * **NAME** - NODE_VERSION
+   * **VALUE** - 20
+   * **STEP APPLIED** - Build
+   * **TYPE** - Variable
+4. Click **Save** to apply the configuration.
+
+![pipeline configuration](/help/forms/assets/pipeline-config.png)
+
 ## Best practices {#best-practices}
 
 * **Avoiding assets from another theme**
@@ -432,16 +450,6 @@ Adaptive Form themes are used as part of an Adaptive Form template to define sty
 
 **Ans:** When customizations are made at both the global level and component level, the customization at the component level takes priority.  
 
-<!--
-
-## See next
-
-* [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
-* [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-* [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
-
--->
 
 
 ## See Also {#see-also}
@@ -449,6 +457,6 @@ Adaptive Form themes are used as part of an Adaptive Form template to define sty
 {{see-also}}
 
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
-* [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+* [Generate Document of Record for Adaptive Forms (Core Components)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
 * [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
