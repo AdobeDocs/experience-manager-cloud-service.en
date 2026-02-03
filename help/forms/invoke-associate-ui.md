@@ -4,6 +4,8 @@ description: Learn how to integrate and invoke the AEM Forms Associate UI on Pub
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+hide: yes
+hidefromtoc: yes
 ---
 
 # Generate Personalized Communications with Associate UI
@@ -41,7 +43,7 @@ When configuring SAML 2.0 authentication for the Associate UI, you must apply th
 
 #### SAML Authentication Handler
 
-Create the file `com.adobe.granite.auth.saml.SamlAuthenticationHandler~formsassociate.cfg.json` in `ui.config/src/main/content/jcr_root/apps/<project-name>/osgiconfig/config.publish`:
+Create the file `com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg.json` in `ui.config/src/main/content/jcr_root/apps/<project-name>/osgiconfig/config.publish`:
 
 ```json
 {
@@ -77,7 +79,7 @@ Create the file `com.adobe.granite.auth.saml.SamlAuthenticationHandler~formsasso
 
 #### Sling Authenticator
 
-Create the file `org.apache.sling.engine.impl.auth.SlingAuthenticator~formsassociate.cfg.json` in `ui.config/src/main/content/jcr_root/apps/<project-name>/osgiconfig/config.publish`:
+Update the file `org.apache.sling.engine.impl.auth.SlingAuthenticator~saml.cfg.json` in `ui.config/src/main/content/jcr_root/apps/<project-name>/osgiconfig/config.publish`:
 
 ```json
 {
@@ -86,36 +88,21 @@ Create the file `org.apache.sling.engine.impl.auth.SlingAuthenticator~formsassoc
 }
 ```
 
-#### Referrer Filter
-
-Update the file `org.apache.sling.security.impl.ReferrerFilter.cfg.json` to allow the identity provider:
-
-```json
-{
-  "allow.hosts": ["login.microsoftonline.com"],
-  "filter.methods": ["POST"]
-}
-```
-
-#### CORS Policy
-
-Create the file `com.adobe.granite.cors.impl.CORSPolicyImpl~formsassociate.cfg.json`:
-
-```json
-{
-  "alloworigin": ["https://login.microsoftonline.com"],
-  "allowedpaths": [".*/saml_login"],
-  "supportedmethods": ["POST"]
-}
-```
-
 #### Dispatcher Filter
 
-Add the following rule to `dispatcher/src/conf.dispatcher.d/filters/filters.any`:
+If not already present, add the following rules to your `dispatcher/src/conf.dispatcher.d/filters/filters.any` file:
 
 ```
-/0190 { /type "allow" /method "POST" /url "*/saml_login" }
+# Allow Interactive Communications APIs
+/XXXX { /type "allow" /method '(GET|OPTIONS)' /url "/adobe/communications" }
+/XXXX { /type "allow" /method '(GET|POST|OPTIONS)' /url "/adobe/communications/*" }
+/XXXX { /type "allow" /method "GET" /url "/content/dam/fd:fonts/*" }
+/XXXX { /type "allow" /method '(GET|OPTIONS)' /url "/libs/fd/associate/*" }
 ```
+
+>[!NOTE]
+>
+> Replace `XXXX` with the appropriate numerical sequence used in your existing `filters.any` file.
 
 ## Invoking Associate UI on Publish instance
 
@@ -151,7 +138,7 @@ const data = {
 | Component | Required | Description |
 |-----------|----------|-------------|
 | `id` | Yes | The identifier of the Interactive Communication (IC) to load |
-| `prefill` | No | Contains service configuration for data prefilling |
+| `prefill` | No | Contains service configuration for data prefilling.|
 | `prefill.serviceName` | No | Name of the Form Data Model service to invoke for prefilling data |
 | `prefill.serviceParams` | No | Key-value pairs passed to the prefill service |
 | `options` | No | Additional properties supported by PDF rendering |
@@ -209,16 +196,16 @@ Call the function with appropriate parameters:
 
 ```javascript
 // Basic invocation with IC ID only
-launchAssociateUI('my-ic-id', '', {}, {});
+launchAssociateUI('12345', '', {}, {});
 
 // With prefill service
-launchAssociateUI('customer-statement', 'CustomerDataService', 
-  { customerId: '12345' }, {});
+launchAssociateUI('12345', 'FdmTestData', 
+  { customerId: '101'}, {});
 
 // With all parameters
-launchAssociateUI('policy-doc', 'PolicyService', 
+launchAssociateUI('12345', 'FdmTestData', 
   { policyNumber: 'POL-123' }, 
-  { mode: 'edit', locale: 'en_US' });
+  { locale: 'en', acrobatVersion: 'Acrobat_11' });
 ```
 
 ## Test Your Integration with a Sample HTML Page
@@ -388,7 +375,7 @@ To observe how the Associate UI appears on the frontend and test your integratio
 1. **IC ID Field**: Enter the Interactive Communication identifier (required)
 2. **Prefill Service**: Specify the Form Data Model service name for prefilling data
 3. **Service Parameters**: Enter JSON object with parameters to pass to the prefill service
-4. **Options**: Enter configuration options for PDF
+4. **Options**: Enter configuration options for PDF, for example, locale, contentRoot, acrobatVersion
 5. **Launch Button**: Opens the Associate UI in a new window and sends the initialization data
 
 ## Data Payload Examples
@@ -399,7 +386,7 @@ Use this when no prefill data is required:
 
 ```json
 {
-  "id": "my-ic",
+  "id": "12345",
   "prefill": { 
     "serviceName": "", 
     "serviceParams": {} 
@@ -414,11 +401,11 @@ Use this to dynamically populate the IC with customer data:
 
 ```json
 {
-  "id": "customer-statement",
+  "id": "12345",
   "prefill": {
-    "serviceName": "CustomerDataService",
+    "serviceName": "FdmTestData",
     "serviceParams": {
-      "customerId": "12345",
+      "customerId": "101",
       "accountNumber": "ACC-98765"
     }
   },
@@ -432,16 +419,17 @@ Use this to specify additional rendering options:
 
 ```json
 {
-  "id": "policy-doc",
+  "id": "12345ß",
   "prefill": {
-    "serviceName": "PolicyService",
+    "serviceName": "FdmTestData",
     "serviceParams": { 
       "policyNumber": "POL-123" 
     }
   },
   "options": { 
-    "mode": "edit", 
-    "locale": "en_US" 
+    "locale": "en",
+    "contentRoot": "/templates/assets",
+    "acrobatVersion": "Acrobat_11"
   }
 }
 ```
@@ -496,21 +484,8 @@ When implementing the Associate UI integration, follow these best practices:
 5. **Testing**: Test the integration with popup blockers enabled to ensure graceful handling
 6. **User Permissions**: Verify users have appropriate access to the forms-associates group
 
-## Security Considerations
-
-Implement these security measures in your integration:
-
-- **Origin Validation**: Use exact origin URLs in production (not `'*'`)
-- **Message Validation**: Always validate `event.data.type` and `event.data.source`
-- **Input Sanitization**: Sanitize all user input before including in payloads
-- **HTTPS Only**: Ensure all communications use HTTPS protocol
-- **Authentication**: Implement robust authentication mechanisms (SAML 2.0 recommended)
-- **Session Management**: Configure appropriate session timeout values
-
-
 ## See Also
 
-- [Configure SAML 2.0 Authentication for Associate UI](/help/forms/configure-saml-authentication-for-associate-ui.md)
 - [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [Interactive Communications on Cloud](/help/forms/early-access-ea-features.md#interactive-communications-on-cloud)
 - [Early Access Features](/help/forms/early-access-ea-features.md)
