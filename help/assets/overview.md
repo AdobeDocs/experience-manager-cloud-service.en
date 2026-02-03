@@ -620,13 +620,13 @@ If you already have an [!DNL Edge Delivery Services] website, see [[!DNL AEM Ass
 
 +++
 
->[!TAB AI Agents in AEM]
+>[!TAB AI Agents]
 
-## AI Agents in AEM {#ai-agents-in-aem}
+## AI Agents {#ai-agents}
 
 AEM as a Cloud Service provides intelligent **Agents** to enhance content management, optimization, and governance. These agents allow users to discover content quickly, optimize campaigns, and ensure compliance across digital assets.
 
-## **Discovery Agent**
+**Discovery Agent**
 
 The Discovery Agent delivers AEM content on demand through natural, conversational prompts for a streamlined, click-free discovery experience. It intelligently searches across **Assets, Content Fragments, and Adaptive Forms** to deliver relevant content such as images, videos, PDFs, articles, and form templates. Using natural language, you can search without building complex queries or applying filters in the AEM Assets interface. Based on your prompt, the agent returns curated results along with asset metadata and delivery URLs, ready to be embedded in other applications.
 
@@ -648,51 +648,7 @@ Some of the key benefits of Discovery Agent include:
 * Find forms to apply for a job.  
 * Show assets with person in landscape orientation.  
 
-<table>
-<td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
-   <img alt="Discovery Agent Overview" src="./assets/discovery-agent-overview.jpeg" />
-   </a>
-   <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
-      <strong>Discovery Agent Overview</strong>
-      </a>
-   </div>
-   <p>
-      <em>Overview of Discovery Agent and its conversational content discovery capabilities.</em>
-   </p>
-</td>
-
-<td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/search-assets">
-   <img alt="Search Assets" src="./assets/search.jpeg" />
-   </a>
-   <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/search-assets">
-      <strong>Search Assets</strong>
-      </a>
-   </div>
-   <p>
-      <em>How assets can be searched and filtered across repositories in AEM.</em>
-   </p>
-</td>
-
-<td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models">
-   <img alt="Content Fragment Models" src="./assets/content-fragment.jpeg" />
-   </a>
-   <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models">
-      <strong>Defining Content Fragment Models</strong>
-      </a>
-   </div>
-   <p>
-      <em>Modeling and managing content fragments discoverable via Discovery Agent.</em>
-   </p>
-</td>
-</table>
-
-## **Content Optimization Agent**
+**Content Optimization Agent**
 
 The **Content Optimization Agent** helps refine and adapt assets using natural language prompts. It can generate new renditions, adjust visuals, change backgrounds, and create channel-ready variations automatically. Works with the Discovery Agent and **Dynamic Media with OpenAPI** for seamless optimization.
 
@@ -713,51 +669,7 @@ The **Content Optimization Agent** helps refine and adapt assets using natural l
 
 **Limitations:** Some optimizations are not supported for PNG assets.
 
-<table>
-<td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
-   <img alt="Content Optimization Overview" src="./assets/content-optimization-agent-overview.jpeg" />
-   </a>
-   <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
-      <strong>Content Optimization Agent Overview</strong>
-      </a>
-   </div>
-   <p>
-      <em>Overview of Content Optimization Agent and supported optimization workflows.</em>
-   </p>
-</td>
-
-<td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview">
-   <img alt="Dynamic Media OpenAPI" src="./assets/optimization.jpeg" />
-   </a>
-   <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview">
-      <strong>Dynamic Media with OpenAPI</strong>
-      </a>
-   </div>
-   <p>
-      <em>APIs used for asset renditions, transformations, and delivery.</em>
-   </p>
-</td>
-
-<td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-overview">
-   <img alt="Dynamic Media Overview" src="./assets/dynamic-media.jpeg" />
-   </a>
-   <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-overview">
-      <strong>Dynamic Media Overview</strong>
-      </a>
-   </div>
-   <p>
-      <em>Dynamic Media capabilities for optimized, channel-ready asset delivery.</em>
-   </p>
-</td>
-</table>
-
-## **Governance Agent**
+**Governance Agent**
 
 The Governance Agent helps ensure compliance, brand consistency, and policy enforcement across AEM content. It identifies content that does not meet metadata, accessibility, or corporate guidelines.
 
@@ -779,6 +691,34 @@ Some of the key benefits of Governance Agent include:
 
 <table>
 <td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <img alt="Discovery Agent Overview" src="./assets/discovery-agent-overview.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <strong>Discovery Agent Overview</strong>
+      </a>
+   </div>
+   <p>
+      <em>Overview of Discovery Agent and its conversational content discovery capabilities.</em>
+   </p>
+</td>
+
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <img alt="Content Optimization Overview" src="./assets/content-optimization-agent.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <strong>Content Optimization Agent Overview</strong>
+      </a>
+   </div>
+   <p>
+      <em>Overview of Content Optimization Agent and supported optimization workflows.</em>
+   </p>
+</td>
+
+<td>
    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
    <img alt="Governance Agent Overview" src="./assets/governance-agent-overview.jpeg" />
    </a>
@@ -789,34 +729,6 @@ Some of the key benefits of Governance Agent include:
    </div>
    <p>
       <em>Overview of Governance Agent for compliance and policy enforcement.</em>
-   </p>
-</td>
-
-<td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view">
-   <img alt="Metadata Best Practices" src="./assets/metadata-management.jpeg" />
-   </a>
-   <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view">
-      <strong>Metadata & Best Practices</strong>
-      </a>
-   </div>
-   <p>
-      <em>Managing metadata requirements to ensure governance and compliance.</em>
-   </p>
-</td>
-
-<td>
-   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/accessibility">
-   <img alt="Accessibility in Assets" src="./assets/accessibility.jpeg" />
-   </a>
-   <div>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/accessibility">
-      <strong>Accessibility in Assets</strong>
-      </a>
-   </div>
-   <p>
-      <em>Accessibility standards and best practices for digital assets.</em>
    </p>
 </td>
 </table>
