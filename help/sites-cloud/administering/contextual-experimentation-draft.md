@@ -24,7 +24,11 @@ For sites running on Adobe Experience Manager, there is the "out of the box" **e
 
 The experimentation rail is your primary tool to set up experiments. It can be used with your project either in a [Edge Delivery Services](/help/edge/overview.md) context or in the [Universal Editor](/help/implementing/universal-editor/introduction.md). As such, you will need a Github account, a content repository like SharePoint or Google Drive, and you will also need the [AEM Sidekick](https://www.aem.live/docs/sidekick) plug-in. See also the [Getting Started – Universal Editor Developer Tutorial page](https://www.aem.live/developer/tutorial).
 
-### Setting up the experimentation within Edge Delivery Services
+## Converting your project to AEM sites as a content source
+
+SR-ADD  info here https://www.aem.live/developer/ue-tutorial
+
+### Setting up the experimentation using AEM Sidekick in Edge Delivery Services
 
 To access the experimentation rail capabilities within your Edge Delivery Services Project you will need the [AEM Sidekick](https://www.aem.live/docs/sidekick) plug-in. To set up the sidekick follow these steps:
 
@@ -126,9 +130,11 @@ Once you are ready, click **Activate** to launch the experiment. The test will b
 
 After the experiment reaches statistical significance, click **Promote** (**SR**-where do you click promote)to make the desired variant your new control.
 
-### Creating experiments by using the Experimentation Rail within Edge Delivery Services
+### Using experimentation with AEM Sidekick in Edge Delivery Services
 
-Important add sidekick Using the Experimentation Rail with your Edge Delivery Services Project
+If you have the AEM sidekick (**SR** - link here) installed you can use the experimentation rail directly in Edge Delivery Services without going through the Universal Editor. The functionality is esentially the same as the A/B test described above, just keep in mind that you need to be **Preview** mode to edit and configure the test. After you finish configuring the test, click **Publish** from the side-kick to push both the control and the challenger variant live and start gathering telemetry data.
+
+
 
 <!-- ### Experiment Identifier {#experiment-identifier}
 
