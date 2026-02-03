@@ -19,23 +19,35 @@ To do this, the Universal Editor provides content authors with an intuitive UI t
 
 >[!NOTE]
 >
->This document assumes you are already familiar with how to access and navigate the Universal Editor. If you are not, see [Accessing and Navigating the Universal Editor](/help/sites-cloud/authoring/universal-editor/navigation.md).
+>This document assumes you are already familiar with how to access and navigate the Universal Editor. If you are not, see [Accessing and Navigating the Universal Editor.](/help/sites-cloud/authoring/universal-editor/navigation.md)
 
 >[!TIP]
 >
->For a more detailed introduction to the Universal Editor, see [Universal Editor Introduction](/help/implementing/universal-editor/introduction.md).
+>For a more detailed introduction to the Universal Editor, see [Universal Editor Introduction.](/help/implementing/universal-editor/introduction.md)
 
 ## Editing Content {#editing-content}
 
-Editing content is simple and intuitive. As you mouse over content in the editor, editable content is highlighted with a thin blue outline.
+Editing content is simple and intuitive. As you mouse over content in the editor, editable content is highlighted with a thin, light blue outline and a badge.
 
-![Editable content is highlighted by a blue box](assets/editable-content.png)
+![Editable content is highlighted by a light blue box](assets/editable-content.png)
+
+Tapping or clicking the highlighted content is selected and the thin, light blue outline becomes a dark blue outline with a badge.
+
+![Selected content is highlighted by a dark blue box](assets/selected-content.png)
 
 >[!TIP]
 >
->By default, tapping or clicking on content selects it for editing. If you want to navigate your content by following links, switch to [preview mode](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode).
+>By default, tapping or clicking on content selects it for editing. If you want to navigate your content by following links, switch to [preview mode.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-Depending on the content you select, you may have different in-place editing options and you may additional information and options for the content in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
+Depending on the content you select, you may have different in-place editing options and additional information and options for the content in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+
+### Context Menu {#context-menu}
+
+Every piece of editable content is badged with the type of content it is. 
+
+You can click this badge for quick access to a context menu with edit actions. Right-clicking a non-selected editable item automatically selects it and also opens the context menu.
+
+![Editable badge options](assets/editable-badge.png)
 
 ### Editing Plain Text {#edit-plain-text}
 
@@ -43,9 +55,9 @@ You can edit the text in place by double-clicking or double-tapping the componen
 
 ![Editing content](assets/editing-content.png)
 
-The thin blue outline turns to a heavy blue outline to indicate select and a cursor appears. Make your changes and then press enter/return or select outside of the text box to save your changes.
+The thin, light blue outline turns to a dark blue outline to indicate selection and a cursor appears. Make your changes and then press enter/return or select outside of the text box to save your changes.
 
-When you select the text component, its details are shown in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail). You can also edit the text in the panel.
+When you select the text component, its details are shown in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) You can also edit the text in the panel.
 
 ![Editing text in the properties panel](assets/ue-editing-text-component-rail.png)
 
@@ -59,9 +71,9 @@ You can edit the text in place by double-clicking or double-tapping the componen
 
 For your convenience, formatting options and details on your text are available in two places.
 
-#### The Context Menu {#context-menu}
+#### The Rich Text Context Menu {#rich-text-context-menu}
 
-The context menu opens above the rich text block and offers basic formatting options in context. Due to space limitations, some options may be hidden behind the ellipsis button.
+A context menu opens above the rich text block and offers basic formatting options in context. Due to space limitations, some options may be hidden behind the ellipsis button.
 
 ![Rich text context menu](assets/rich-text-context-menu.png)
 
@@ -104,7 +116,7 @@ The RTE can be configured to hide options or show additional options depending o
 
 ### Editing Media {#edit-media}
 
-You can view its details in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
+You can view its details in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Editing media](assets/ue-edit-media.png)
 
@@ -117,7 +129,7 @@ Changes are saved to your content automatically.
 
 ### Editing Content Fragments {#edit-content-fragment}
 
-If you select a [Content Fragment](/help/sites-cloud/administering/content-fragments/overview.md), you can edit its details in the [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail).
+If you select a [Content Fragment](/help/sites-cloud/administering/content-fragments/overview.md), you can edit its details in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Editing a Content Fragment](assets/ue-edit-cf.png)
 
@@ -245,7 +257,7 @@ When editing in place, the editor will offer context-relevant options with a rig
 
 When you are finished editing content, you often want to navigate it to see how it looks in the content of other pages. In [preview mode](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode) you can click links to navigate your content as a reader would. The content is rendered in the editor as it would be published.
 
-In preview mode, tapping or clicking on content reacts as it would to a reader of the content. If you want to select the content for editing, toggle out of [preview mode](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode).
+In preview mode, tapping or clicking on content reacts as it would to a reader of the content. If you want to select the content for editing, toggle out of [preview mode.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
 ## Editing Component Inheritance {#inheritance}
 
@@ -255,7 +267,7 @@ Using the Universal Editor, you can cancel inheritance for content by simply upd
 
 If the **AEM Multi-Site-Management (MSM) Extension** is enabled for your program, you have [additional toolbar options](#inheritance-extension) to view and change the inheritance status of an individual component within the Universal Editor.
 
-For more details on how inheritance works using the Universal Editor, see [Content Inheritance in the Universal Editor](/help/sites-cloud/authoring/universal-editor/inheritance.md).
+For more details on how inheritance works using the Universal Editor, see [Content Inheritance in the Universal Editor.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
 
 ## Optional Toolbar Features {#toolbar-options}
 

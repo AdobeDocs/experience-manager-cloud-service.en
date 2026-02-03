@@ -95,19 +95,19 @@ With the improvements in features and subsequent updates in the versions of AEM 
 Where:
 
 * `type (required)` specifies the type of failure. It can be one of the following values:
-    * `SERVER_SIDE_VALIDATION` indicates a failure due to server-side validation.
-    * `FORM_SUBMISSION` indicates a failure during form submission
-    * `SERVICE_INVOCATION` indicates a failure during a third-party service invocation.
-    * `FAILURE` indicates a general failure.
-    * `VALIDATION_ERROR` indicates a failure due to a validation error.
+  * `SERVER_SIDE_VALIDATION` indicates a failure due to server-side validation.
+  * `FORM_SUBMISSION` indicates a failure during form submission
+  * `SERVICE_INVOCATION` indicates a failure during a third-party service invocation.
+  * `FAILURE` indicates a general failure.
+  * `VALIDATION_ERROR` indicates a failure due to a validation error.
 
 * `title (optional)` provides a title or brief description of the failure. 
 * `detail (optional)` provides additional details about the failure if necessary. 
 * `instance (optional)` represents an instance or identifier associated with the failure and helps in tracking or identifying the specific occurrence of the failure.
 * `validationErrors (required)` contains information about validation errors. It includes the following fields:
-    * `fieldname` mentions the qualified fieldname of the fields that failed the validation criteria.
-    * `dataRef` represents the JSON path or XPath of the fields that failed the validation.
-    * `details` contain the validation error message with the erroneous field. 
+  * `fieldname` mentions the qualified fieldname of the fields that failed the validation criteria.
+  * `dataRef` represents the JSON path or XPath of the fields that failed the validation.
+  * `details` contain the validation error message with the erroneous field. 
 * `originCode (optional)` field added by AEM and contains the http status code returned by the external service
 * `originMessage (optional)` field added by AEM and contains the raw error data returned by the external service.
 
@@ -164,8 +164,6 @@ You can view the value of dataRef in the **[!UICONTROL Properties]** window of a
 ## Requirements to add error handler using Rule Editor's Invoke service {#before-you-start-to-add-error-handler}
 
 Before you add an error handler using the Rule Editor's Invoke service:
-
-* Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
 
 * Learn how to [create custom functions](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#write-rules).
 

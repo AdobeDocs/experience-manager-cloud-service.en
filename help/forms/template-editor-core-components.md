@@ -22,11 +22,7 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## Pre-requisite
 
-**Enable Adaptive Forms Core Components for your environment**:  When you create a program, the Adaptive Forms Core Components already enabled for your environment.Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
-
->[!NOTE]
->
-> On deploying the Forms as a Cloud Service environment based on Archetype 45, the **Adaptive Forms (Core Component)** templates and core component-based themes are added to your environment.  
+On deploying the Forms as a Cloud Service environment based on Archetype 45, core component-based themes are added to your environment.  
 
 ## Working with template {#working-with-templates}
 
