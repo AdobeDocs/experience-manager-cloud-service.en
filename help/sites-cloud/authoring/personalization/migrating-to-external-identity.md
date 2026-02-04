@@ -568,14 +568,13 @@ curl -X POST "http://localhost:4503/bin/migration/step3?groupPath=/home/groups/c
 - [ ] Review and update custom code to use external identity model
 - [ ] Test updated code in development environment
 - [ ] Inventory all existing local users and groups to migrate
-- [ ] Plan migration order (groups first, then users)
 - [ ] Test migration process in lower environments
 
 ### Execution Steps {#execution-steps}
 
 1. **Deploy Updated Code**: Deploy custom code changes to create external users/groups
 
-2. **Migrate Groups** (for each local group):
+2. **Create External Groups** (for each local group):
    ```bash
    curl -X POST "http://localhost:4503/bin/migration/step1?groupPath=/home/groups/g/my-group&idpName=saml-idp"
    ```
@@ -610,7 +609,7 @@ Verify the migration:
 
 2. **Check Group Properties**:
       
-   On Group nodes verify presence of:
+   On local group nodes verify presence of:
    - External group member with format `groupId;idpName`
    - No direct user members (only after Step 3)
 
@@ -652,7 +651,7 @@ See [Service User Configuration](#service-user-configuration) for complete setup
 - User has correct external principal names in `rep:externalPrincipalNames` (Step 2)
 - Step 3 cleanup was performed only after Steps 1 and 2 were completed
 
-**Issue: External group memberships are unexpectedly removed (OAK-12079)**
+**Issue: External group memberships are unexpectedly removed after user login (OAK-12079)**
 
 **Problem**: Due to Oak bug [OAK-12079](https://issues.apache.org/jira/browse/OAK-12079), the Oak synchronization mechanism may prematurely clean up external group memberships based on the `rep:lastSynced` and `rep:lastDynamicSync` timestamps.
 
