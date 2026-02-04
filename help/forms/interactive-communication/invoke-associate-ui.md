@@ -403,7 +403,7 @@ Use this to dynamically populate the IC with customer data:
 {
   "id": "12345",
   "prefill": {
-    "serviceName": "FdmTestData",
+    "serviceName": "IC_FDM",
     "serviceParams": {
       "customerId": "101",
       "accountNumber": "ACC-98765"
@@ -419,11 +419,12 @@ Use this to specify additional rendering options:
 
 ```json
 {
-  "id": "12345ß",
+  "id": "12345",
   "prefill": {
-    "serviceName": "FdmTestData",
-    "serviceParams": { 
-      "policyNumber": "POL-123" 
+    "serviceName": "IC_FDM",
+    "serviceParams": {
+      "customerId": "101",
+      "accountNumber": "ACC-98765"
     }
   },
   "options": { 
@@ -475,7 +476,7 @@ Use this to specify additional rendering options:
 - For production: Specify the exact origin URL of your application
 - Ensure the Publish instance CORS settings allow your application domain
 
-## Best Practices
+<!--## Best Practices
 
 When implementing the Associate UI integration, follow these best practices:
 
@@ -484,7 +485,7 @@ When implementing the Associate UI integration, follow these best practices:
 3. **User Experience**: Display a loading indicator while the Associate UI initializes
 4. **Memory Management**: Remove event listeners after initialization to prevent memory leaks
 5. **Testing**: Test the integration with popup blockers enabled to ensure graceful handling
-6. **User Permissions**: Verify users have appropriate access to the forms-associates group
+6. **User Permissions**: Verify users have appropriate access to the forms-associates group-->
 
 ## See Also
 
