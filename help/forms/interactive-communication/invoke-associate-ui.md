@@ -34,8 +34,8 @@ Before integrating the Associate UI with your application, ensure you have:
 
 >[!NOTE]
 >
->* This article demonstrates authentication configuration using SAML 2.0 with [Microsoft Entra ID (Azure AD) as the Identity Provider](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings). 
->* For Associate UI, additional SAML configurations are required beyond the standard setup explained in the [SAML 2.0 authentication](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) article. See the [Additional SAML configurations for Associate UI](#additional-saml-configurations-for-associate-ui) section for details.
+>- This article demonstrates authentication configuration using SAML 2.0 with [Microsoft Entra ID (Azure AD) as the Identity Provider](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings). 
+>- For Associate UI, additional SAML configurations are required beyond the standard setup explained in the [SAML 2.0 authentication](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) article. See the [Additional SAML configurations for Associate UI](#additional-saml-configurations-for-associate-ui) section for details.
 
 ### Additional SAML configurations for Associate UI
 
@@ -49,7 +49,7 @@ Create the file `com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg.
   {
     "path": ["/libs/fd/associate"],
     "serviceProviderEntityId": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com",
-    "assertionConsumerServiceURL": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/saml_login",
+    "assertionConsumerServiceURL": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/saml_login"
     "idpUrl": "https://login.microsoftonline.com/{azure-tenant-id}/saml2",
     "idpCertAlias": "{your-certificate-alias}",
     "idpIdentifier": "https://sts.windows.net/{azure-tenant-id}/",
