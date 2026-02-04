@@ -107,6 +107,10 @@ If not already present, add the following rules to your `dispatcher/src/conf.dis
 
 To invoke the Associate UI from your application, configure the Publish instance URL, prepare the data payload, and use the integration function to launch the Associate UI in a new browser window.
 
+>[!NOTE]
+>
+> For security reasons, parameters such as Interactive Communication ID, prefill service, and service parameters are not passed through the URL. Instead, these parameters are securely passed using a JavaScript function that communicates with the Associate UI via the browser's postMessage API.
+
 ### Step 1: Configure the Publish Instance URL
 
 The Associate UI is accessed via a specific endpoint on your AEM Forms Cloud Service Publish instance:
@@ -198,13 +202,13 @@ Call the function with appropriate parameters:
 launchAssociateUI('12345', '', {}, {});
 
 // With prefill service
-launchAssociateUI('12345', 'FdmTestData', 
+launchAssociateUI('12345', 'IC_FDM', 
   { customerId: '101'}, {});
 
 // With all parameters
-launchAssociateUI('12345', 'FdmTestData', 
-  { policyNumber: 'POL-123' }, 
-  { locale: 'en', acrobatVersion: 'Acrobat_11' });
+launchAssociateUI('12345', 'IC_FDM', 
+  { customerId: "101" }, 
+  { locale: 'en', includeAttachments: "true" });
 ```
 
 ## Test Your Integration with a Sample HTML Page
