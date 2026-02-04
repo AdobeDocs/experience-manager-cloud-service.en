@@ -30,11 +30,12 @@ Before integrating the Associate UI with your application, ensure you have:
 - Interactive Communication created and published
 - Browser with popup support enabled
 - Associate [users must be part of the forms-associates group](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- Authentication configured - [SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) 
+- Authentication configured using any [authentication mechanism supported by AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) (for example, SAML 2.0, OAuth, or custom authentication handlers)
 
 >[!NOTE]
 >
-> For Associate UI, additional SAML configurations are required beyond the standard setup explained in the [SAML 2.0 authentication](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) article. See the [Additional SAML configurations for Associate UI](#additional-saml-configurations-for-associate-ui) section for details.
+> * This article demonstrates authentication configuration using SAML 2.0 with [Microsoft Entra ID (Azure AD) as the Identity Provider](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings). 
+> * For Associate UI, additional SAML configurations are required beyond the standard setup explained in the [SAML 2.0 authentication](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) article. See the [Additional SAML configurations for Associate UI](#additional-saml-configurations-for-associate-ui) section for details.
 
 ### Additional SAML configurations for Associate UI
 
@@ -107,10 +108,6 @@ If not already present, add the following rules to your `dispatcher/src/conf.dis
 
 To invoke the Associate UI from your application, configure the Publish instance URL, prepare the data payload, and use the integration function to launch the Associate UI in a new browser window.
 
->[!NOTE]
->
-> For security reasons, parameters such as Interactive Communication ID, prefill service, and service parameters are not passed through the URL. Instead, these parameters are securely passed using a JavaScript function that communicates with the Associate UI via the browser's postMessage API.
-
 ### Step 1: Configure the Publish Instance URL
 
 The Associate UI is accessed via a specific endpoint on your AEM Forms Cloud Service Publish instance:
@@ -120,6 +117,8 @@ const AEM_URL = 'https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/
 ```
 
 Replace `{program-id}` and `{env-id}` with your actual environment values.
+
+For security reasons, parameters such as Interactive Communication ID, prefill service, and service parameters are not passed through the URL. Instead, these parameters are securely passed using a JavaScript function that communicates with the Associate UI via the browser's postMessage API.
 
 ### Step 2: Prepare the Data Payload
 
