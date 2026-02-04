@@ -73,7 +73,7 @@ Instead of direct user-to-group relationships stored in the repository, dynamic 
 
 ## Service User Configuration {#service-user-configuration}
 
-All operations that create or modify external users and groups should be performed using a **Service User** that is properly configured to bypass the protection on `rep:externalId` and `rep:externalPrincipalNames` properties.
+All operations that create or modify external users and groups should be performed using a **Service User** that is properly configured to bypass the (default) protection on `rep:externalId` and `rep:externalPrincipalNames` properties.
 
 ### Why Service User is Required {#why-service-user-required}
 
@@ -97,7 +97,7 @@ Create the service user with necessary permissions using a repoinit script.
 
 **Configuration File:** `org.apache.sling.jcr.repoinit.RepositoryInitializer~group-provisioner.cfg.json`
 
-**Location:** `ui.config/src/main/content/jcr_root/apps/yourproject/osgiconfig/config.publish/`
+**Exemplary location:** `ui.config/src/main/content/jcr_root/apps/yourproject/osgiconfig/config.publish/`
 
 ```json
 {
