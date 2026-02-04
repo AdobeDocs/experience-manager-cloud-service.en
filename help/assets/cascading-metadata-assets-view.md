@@ -107,7 +107,7 @@ We are using a dropdown field named `Image` as an example to categorize files ba
 
    ![rule](assets/image-choices-rule2.png)
 
-1. Similarly, create a dependency between the value in the Image field and other fields. Alternatively, repeat the steps to create dependency between the other assets such as PDF and Word in the [!UICONTROL Asset Type] field and fields such as [!UICONTROL Page Count] and [!UICONTROL Author].
+1. Similarly, repeat the steps to create dependency between the other assets such as PDF and Word in the [!UICONTROL Asset Type] field and fields such as [!UICONTROL Page Count] and [!UICONTROL Author].
 
 1. Click **[!UICONTROL Save]**. Apply the metadata form to a folder.
 
