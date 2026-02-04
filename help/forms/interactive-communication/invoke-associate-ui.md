@@ -27,10 +27,9 @@ The below table depicts the various real-world scenarios where Associate UI can 
 
 Before integrating the Associate UI with your application, ensure you have:
 
-- AEM Forms Cloud Service Publish instance
-- Interactive Communication created and published in AEM
+- Interactive Communication created and published
 - Browser with popup support enabled
-- Associate users must be part of the **forms-associates** group
+- Associate [users must be part of the forms-associates group](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
 - Authentication configured - [SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) 
 
 >[!NOTE]
@@ -138,10 +137,10 @@ const data = {
 | Component | Required | Description |
 |-----------|----------|-------------|
 | `id` | Yes | The identifier of the Interactive Communication (IC) to load |
-| `prefill` | No | Contains service configuration for data prefilling.|
-| `prefill.serviceName` | No | Name of the Form Data Model service to invoke for prefilling data |
-| `prefill.serviceParams` | No | Key-value pairs passed to the prefill service |
-| `options` | No | Additional properties supported for PDF rendering - locale, includeAttachments, embedFonts, makeAccessible|
+| `prefill` | Optional | Contains service configuration for data prefilling.|
+| `prefill.serviceName` | Optional | Name of the Form Data Model service to invoke for prefilling data |
+| `prefill.serviceParams` | Optional | Key-value pairs passed to the prefill service |
+| `options` | Optional | Additional properties supported for PDF rendering - locale, includeAttachments, embedFonts, makeAccessible|
 
 ### Step 3: Implement the Integration Function
 
