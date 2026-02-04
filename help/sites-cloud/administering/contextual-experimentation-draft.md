@@ -77,9 +77,9 @@ Before following the rest of the guide to set up your first experiment, there ar
 * **Variants**: control and challenger are all variants of an experiment.
 * **Statistical Significance**: Evaluating if your challenger is really better than the control. Calculating statistical significance allows you to rule out luck and concentrate on the results that have a real effect. -->
 
-### Creating experiments in Universal editor with your xwalk project
+### Creating experiments in Universal editor
 
-To use the experimentation capabilities in Universal editor with your xwalk project you must first set up the experimentation rail as detailed above (**SR**-maybe link here). After everything is set up, follow these steps.
+To use the experimentation capabilities in Universal editor you must first set up the experimentation rail as detailed above (**SR**-maybe link here) and make sure you use AEM sites as a content source (add link here). After everything is set up, follow these steps.
 
 ### Start editing in Universal Editor
 
