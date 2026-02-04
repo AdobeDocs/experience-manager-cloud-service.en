@@ -692,7 +692,7 @@ Some of the key benefits of Governance Agent include:
 <table>
 <td>
    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
-   <img alt="Discovery Agent Overview" src="./assets/discovery-agents.png" />
+   <img alt="Discovery Agent Overview" src="./assets/discovery-agent.jpg" />
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
