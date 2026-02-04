@@ -21,6 +21,7 @@ These are the release notes for the 5 February 2026 release of the Universal Edi
 ## What's New {#what-is-new}
 
 * The move action is now available within [the context menu.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
+* The RTE now supports [paste as text.](/help/implementing/universal-editor/configure-rte.md#paste-as-text)
 
 ## Early Adoption Features {#early-adopter}
 
