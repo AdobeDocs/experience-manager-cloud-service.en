@@ -73,7 +73,7 @@ Instead of direct user-to-group relationships stored in the repository, dynamic 
 
 ## Service User Configuration {#service-user-configuration}
 
-All operations that create or modify external users and groups must be performed using a **Service User** that is properly configured to bypass the protection on `rep:externalId` and `rep:externalPrincipalNames` properties.
+All operations that create or modify external users and groups should be performed using a **Service User** that is properly configured to bypass the protection on `rep:externalId` and `rep:externalPrincipalNames` properties.
 
 ### Why Service User is Required {#why-service-user-required}
 
@@ -349,7 +349,8 @@ session.save();
 
 ## Migration Process {#migration-process}
 
-Migrating existing local users and groups to the external identity model involves three main steps:
+Migrating existing local users and groups to the external identity is not required when the custom code was updated before enabling Data Synchronization Services.
+If local users and groups have been already persisted in the repository and the environment is actively used, we suggest to perform a multistep migration like the following, to avoid disruptions or inconsistencies.
 
 >[!IMPORTANT]
 >
@@ -359,9 +360,12 @@ Migrating existing local users and groups to the external identity model involve
 
 For each local group that needs to be migrated:
 
-1. Create a corresponding external group with principal name: `<localGroupId>;<idpName>`
-2. Set the `rep:externalId` property on the external group
+1. Create a corresponding external group with principal name: `<localGroupId>;<idpName>`. Use a naming convention to link external groups with local groups.
+2. Set the `rep:externalId` property on the external group with values: `<localGroupId>;<idpName>`
 3. Add the external group as a member of the original local group
+
+*Validation:*
+* every local group has a corresponding external group. Every external group is member of the corresponding local group
 
 **Example Servlet Endpoint:**
 
@@ -412,7 +416,7 @@ curl -X POST "http://localhost:4503/bin/migration/step1?groupPath=/home/groups/c
 
 For each user that is a member of local groups:
 
-1. Ensure the user has `rep:externalId` (convert to external user if needed)
+1. Ensure the user has `rep:externalId` (convert to external user if needed).
 2. For each group membership, add the corresponding external group principal to `rep:externalPrincipalNames`
 3. Update sync timestamps
 
@@ -499,6 +503,9 @@ public class MigrationStep2Servlet extends SlingAllMethodsServlet {
 curl -X POST "http://localhost:4503/bin/migration/step2?userId=john.doe&idpName=saml-idp"
 ```
 
+*Validation:*
+* Every user has the `rep:externalId` and `rep:externalPrincipalName` attributes with the principalName of every external group. The users are member of the local groups *and* the of the external groups.
+
 ### Step 3: Remove Direct User Memberships {#step-3-cleanup}
 
 After users have dynamic group membership configured:
@@ -546,6 +553,9 @@ public class MigrationStep3Servlet extends SlingAllMethodsServlet {
 ```bash
 curl -X POST "http://localhost:4503/bin/migration/step3?groupPath=/home/groups/c/content-authors"
 ```
+*Validation:*
+* Every local group has only the corresponding external group, or other groups, as member.
+
 
 ## Migration Workflow {#migration-workflow}
 
