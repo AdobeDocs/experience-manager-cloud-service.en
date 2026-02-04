@@ -14,7 +14,7 @@ This article provides an end-to-end workflow to provide Content Hub access to us
 
 See this video to learn how to enable Content Hub for Experience Manager Assets:
 
->[!VIDEO](https://video.tv.adobe.com/v/3469851)
+>[!VIDEO](https://video.tv.adobe.com/v/3472918/?learn=on){transcript=true}
 
 The variations of privileges on Content Hub include:
 
@@ -27,6 +27,10 @@ The variations of privileges on Content Hub include:
 * [Content Hub users with rights to remix assets to new variations](#onboard-content-hub-users-remix-assets): [Adobe Express Integration](/help/assets/edit-images-content-hub.md) (if you have Adobe Express entitlements) in addition to accessing brand approved assets on the Content Hub portal.
 
 * [Experience Manager Assets users](#experience-manager-assets-users): Ability to approve assets on Experience Manager Assets as a Cloud Service to make those assets available on Content Hub.
+
+>[!NOTE]
+>
+>You can access and use Content Hub with up to 250 Content Hub Limited users for Assets Ultimate and 50 Content Hub users for Assets Prime. Contact your Adobe representative if you have additional questions. 
 
 The following table summarizes the available Content Hub user types, the privileges they have, and the product profiles that are required to get those privileges:
 
@@ -77,11 +81,6 @@ To enable Content Hub for Experience Manager Assets:
 1. Click **[!UICONTROL Update]**.
 
 Content Hub is now enabled for Experience Manager Assets as a Cloud Service. After enabling Content Hub on a Production environment, you cannot disable it in a self-service manner. 
-
->[!NOTE]
->
->You can access and use Content Hub with up to 250 Content Hub Limited users for Assets Ultimate and 50 Content Hub users for Assets Prime. Contact your Adobe representative if you have additional questions. 
-
 
 If you are new to Experience Manager Assets, click **[!UICONTROL Add Program]** and then provide program details (Program Name, set up for Production) and click **[!UICONTROL Continue]**. You can then select **[!UICONTROL Assets]** and **[!UICONTROL Content Hub]** in the **[!UICONTROL Solutions & Add-ons]** tab.
 
