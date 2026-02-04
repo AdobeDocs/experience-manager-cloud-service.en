@@ -79,7 +79,13 @@ We are using a dropdown field named `Image` as an example to categorize files ba
 
    <!--![rule tab](assets/rule-tab.png)-->
 
-1. Under **[!UICONTROL Required]**, choose the **[!UICONTROL Required, based on new rule]** option.
+1. Under **[!UICONTROL Required]**, choose the **[!UICONTROL Required based on new rule]** option.
+
+   ![rule](assets/image-required-rule1.png)
+
+   In the current use case, the Asset Type field is required when the image asset format is JPG/JPEG, PNG, GIF, TIFF, or WEBP. Additionally, click ![edit icon](assets/do-not-localize/edit.svg) to redefine the rule or click ![delete icon](assets/do-not-localize/delete.svg) to delete the defined rule.
+
+   ![rule](assets/image-required-rule2.png)
 
 1. Under **[!UICONTROL Visibility]**, choose the **[!UICONTROL Visible, based on new rule]** option.
 
@@ -87,17 +93,25 @@ We are using a dropdown field named `Image` as an example to categorize files ba
    >
    >You can apply the **[!UICONTROL Requirement]** condition and **[!UICONTROL Visibility]** condition independent of each other.
 
-   ![rule](assets/image-visible-rule.png)
+   ![rule](assets/image-visible-rule1.png)
    
+   In the current use case, the Asset Type field is visible when the image asset format is JPG/JPEG, PNG, or GIF. Additionally, click ![edit icon](assets/do-not-localize/edit.svg) to redefine the rule or click ![delete icon](assets/do-not-localize/delete.svg) to delete the defined rule.
+
+   ![rule](assets/image-visible-rule2.png)
+
 1. Select **[!UICONTROL Choices based on rule]** to create a dependency and define rule.
    
-   ![rule](assets/image-choices-rule.png)
+   ![rule](assets/image-choices-rule1.png)
+
+   To configure rule-based choices for the Asset Type dropdown, create a rule and set Image as the dependent field. Then define the display values for each image format by selecting Image for JPG/JPEG, PNG, GIF, and TIFF, and selecting Video for WEBP, ensuring only the intended values are checked for each format to dynamically display relevant options. Additionally, click ![edit icon](assets/do-not-localize/edit.svg) to redefine the rule or click ![delete icon](assets/do-not-localize/delete.svg) to delete the defined rule.
+
+   ![rule](assets/image-choices-rule2.png)
 
 1. Similarly, create a dependency between the value in the Image field and other fields. Alternatively, repeat the steps to create dependency between the other assets such as PDF and Word in the [!UICONTROL Asset Type] field and fields such as [!UICONTROL Page Count] and [!UICONTROL Author].
 
 1. Click **[!UICONTROL Save]**. Apply the metadata form to a folder.
 
-1. Navigate to the folder to which you applied the Metadata Form and open the properties page of an asset. Depending upon your choice in the Image field, pertinent cascading metadata fields are displayed.
+1. Navigate to the folder to which you applied the Metadata Form and open the properties page of an asset. Depending upon your choice in the Asset Type field, pertinent cascading metadata fields are displayed.
 
    ![Cascading Metadata Form Output](assets/cascading-metadata-form-output.png)
 
