@@ -22,6 +22,8 @@ Some of the key benefits of attribute-based access control include:
 
 * Reduces number of duplicates - improves asset integrity. Duplicates are needed in folder based permissions when same assets are shared with different groups.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
+
 ## How to enable Attribute-based access control? {#enable-attribute-based-access-control}
 
 As of now, you cannot create Attribute-based access control rules on your own using the Content Hub User Interface.
