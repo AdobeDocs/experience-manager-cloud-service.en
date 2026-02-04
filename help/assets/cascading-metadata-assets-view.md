@@ -27,6 +27,8 @@ Consider a scenario where you want to display cascading metadata based on the ty
 * For a video, display applicable fields such as format, codec, duration, and so on.
 * For a Word or PDF document, display fields, such as page count, author, and so on.
 
+We are using a dropdown field named `Image` as an example to categorize files based on their image type. The dropdown contains options representing supported image extensions (such as JPG/JPEG, GIF, etc.). To ensure data consistency and prevent unsupported formats from being selected or processed, a validation rule is applied to this field. The rule evaluates the selected dropdown value and enforces constraints that align with the accepted image formats. 
+
 Irrespective of the asset type chosen, display the copyright information as a required field. You can use the [pre-defined metadata components](metadata-assets-view.md#property-components) and [assign metadata to a folder](metadata-assets-view.md#assign-metadata-form-folder).
 
 ### Build Metadata Forms {#build-metadata-schema-forms}
@@ -50,15 +52,15 @@ Consider the steps below to create a new Metadata Form:
    * **C:** Switch to other Metadata Form
    * **D:** Add a new tab
    * **E:** Canvas
-   * **F:** Component settings
-   * **G:** Component tools to add rules
+   * **F:** General settings for the selected component
+   * **G:** Rules tab
    * **H:** Component properties
 
 Watch this video to view the sequence of steps, [Setup Metadata Forms](https://video.tv.adobe.com/v/341275).
 
 ### Modify an existing Metadata Form {#modify-existing-metadata-form}
 
-We are using a dropdown field named `Image` as an example to categorize files based on their image type. The dropdown contains options representing supported image extensions (such as JPG/JPEG, GIF, etc.). To ensure data consistency and prevent unsupported formats from being selected or processed, a validation rule is applied to this field. The rule evaluates the selected dropdown value and enforces constraints that align with the accepted image formats. To modify an existing metadata form, follow the steps below:
+To modify an existing metadata form, follow the steps below:
 
 1. Open an existing Metadata Form and navigate to the [pre-defined components](metadata-assets-view.md#property-components) that you want to add in the form and drop the elements on your canvas.
 
