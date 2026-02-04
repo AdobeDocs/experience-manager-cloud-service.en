@@ -9,7 +9,7 @@ role: User, Admin, Architect, Developer
 
 ## Introduction {#introduction}
 
-Many AEM teams now work in IDEs and chat-based applications such as Cursor, ChatGPT, Anthropic Claude, and Microsoft Copilot Studio. These applications support the Model Context Protocol (MCP), which allows applications to expose back-end tools to large language models (LLMs) in a standardized way.
+Many Adobe Experience Manager (AEM) teams now work in Integrated Development Environments (IDEs) and chat-based applications such as Cursor, ChatGPT, Anthropic Claude, and Microsoft Copilot Studio. These applications support the Model Context Protocol (MCP), which allows applications to expose back-end tools to large language models (LLMs) in a standardized way.
 
 With AEM's MCP integration, different personas can collaborate around the same content:
 
@@ -113,19 +113,19 @@ Below are examples of how this looks in each supported application at a high lev
 
 **ChatGPT**
 
-![Configure ChatGPT Step 1](assets/chatgpt-1.png)
+![Configure ChatGPT - Settings](assets/chatgpt-1.png)
 
-![Configure ChatGPT Step 2](assets/chatgpt-2.png)
+![Configure ChatGPT - Apps & Connectors - Advanced Settings](assets/chatgpt-2.png)
 
-![Configure ChatGPT Step 3](assets/chatgpt-3.png)
+![Configure ChatGPT - Apps & Connectors - Developer mode](assets/chatgpt-3.png)
 
-![Configure ChatGPT Step 4](assets/chatgpt-4.png)
+![Configure ChatGPT - Apps & Connectors - Create app](assets/chatgpt-4.png)
 
-![Configure ChatGPT Step 5](assets/chatgpt-5.png)
+![Configure ChatGPT - Apps & Connectors - New App](assets/chatgpt-5.png)
 
-![Configure ChatGPT Step 6](assets/chatgpt-6.png)
+![Configure ChatGPT - Apps & Connectors - AEM Content MCP Service](assets/chatgpt-6.png)
 
-![Configure ChatGPT Step 7](assets/chatgpt-7.png)
+![Configure ChatGPT - ask AEM Content MCP Service](assets/chatgpt-7.png)
 
 * Add the AEM MCP server URL(s) in the area where MCP connections or tools are configured
 * Trigger the connection and sign in with your Adobe ID when redirected
@@ -135,19 +135,19 @@ Below are examples of how this looks in each supported application at a high lev
 
 **Claude**
 
-![Configure Claude Step 1](assets/claude-1.png)
+![Configure Claude - Settings](assets/claude-1.png)
 
-![Configure Claude Step 2](assets/claude-2.png)
+![Configure Claude - Connectors](assets/claude-2.png)
 
-![Configure Claude Step 3](assets/claude-3.png)
+![Configure Claude - Connectors - Add custom connector](assets/claude-3.png)
 
-![Configure Claude Step 4](assets/claude-4.png)
+![Configure Claude - Connectors - Connect custom connector](assets/claude-4.png)
 
-![Configure Claude Step 5](assets/claude-5.png)
+![Configure Claude - Connectors - Configure custom connector](assets/claude-5.png)
 
-![Configure Claude Step 6](assets/claude-6.png)
+![Configure Claude - Connectors - Custom connector Tool permissions](assets/claude-6.png)
 
-![Configure Claude Step 7](assets/claude-7.png)
+![Configure Claude - ask AEM Content MCP Service](assets/claude-7.png)
 
 * In Claude's MCP configuration, register the AEM MCP server URL(s)
 * Complete the Adobe login flow
@@ -157,15 +157,15 @@ Below are examples of how this looks in each supported application at a high lev
 
 **Cursor**
 
-![Configure Cursor Step 1](assets/cursor-1.png)
+![Configure Cursor - Settings](assets/cursor-1.png)
 
-![Configure Cursor Step 2](assets/cursor-2.png)
+![Configure Cursor - Tools & MCP - Add Custom MCP](assets/cursor-2.png)
 
-![Configure Cursor Step 3](assets/cursor-3.png)
+![Configure Cursor - Add Custom MCP settings](assets/cursor-3.png)
 
-![Configure Cursor Step 4](assets/cursor-4.png)
+![Configure Cursor - Connect](assets/cursor-4.png)
 
-![Configure Cursor Step 5](assets/cursor-5.png)
+![Configure Cursor - ask new service](assets/cursor-5.png)
 
 * In Cursor's MCP settings, create a new MCP server entry with the AEM MCP URL(s)
 * Authenticate with your Adobe ID when prompted
@@ -174,25 +174,25 @@ Below are examples of how this looks in each supported application at a high lev
 
 **Microsoft Copilot Studio**
 
-![Configure Copilot Step 1](assets/copilot-1.png)
+![Configure Copilot - Agents](assets/copilot-1.png)
 
-![Configure Copilot Step 2](assets/copilot-2.png)
+![Configure Copilot - Add tool](assets/copilot-2.png)
 
-![Configure Copilot Step 3](assets/copilot-3.png)
+![Configure Copilot - Add tool - Model Context Protocol](assets/copilot-3.png)
 
-![Configure Copilot Step 4](assets/copilot-4.png)
+![Configure Copilot - Add a Model Context Protocol server (preview)](assets/copilot-4.png)
 
-![Configure Copilot Step 5](assets/copilot-5.png)
+![Configure Copilot - Add tool - Create new connection](assets/copilot-5.png)
 
-![Configure Copilot Step 6](assets/copilot-6.png)
+![Configure Copilot - Add tool - Add and configure](assets/copilot-6.png)
 
-![Configure Copilot Step 7](assets/copilot-7.png)
+![Configure Copilot - Add tool - Configure](assets/copilot-7.png)
 
-![Configure Copilot Step 8](assets/copilot-8.png)
+![Configure Copilot - Test connection](assets/copilot-8.png)
 
-![Configure Copilot Step 9](assets/copilot-9.png)
+![Configure Copilot - Manage Connections](assets/copilot-9.png)
 
-![Configure Copilot Step 10](assets/copilot-10.png)
+![Configure Copilot - Test Agent](assets/copilot-10.png)
 
 * Create a new agent
 * Navigate to the tool section and click **Add tool**
