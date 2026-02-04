@@ -164,3 +164,6 @@ Specify concise details in your natural language prompts so that the agent can r
 
 * Use your organization-specific metadata, such as categories (running shoes, electronics), seasons (autumn, spring), events (black Friday, product launch), and channels (Web, Email, Print) to further filter content.
 
+## Limitations {#limitations-discovery-agent}
+
+Discovery Agent supports dimension-based prompts only for image and SVG format types. For example, `Find images wider than 1080px`.
