@@ -16,13 +16,12 @@ The agent provides the following jobs:
 * [Content Update](#content-update)
 * [Form Creation](#form-creation)
 * [Communications Creation](#communications-creation)
-* [Site Migration](#site-migration)
 
 >[!IMPORTANT]
 >
 >AI-generated responses may be inaccurate or misleading. Be sure you double-check suggested fixes and responses. 
 >
->See also [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html). 
+>See also [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
 ### Content Update {#content-update}
 
@@ -38,15 +37,11 @@ The [Communication Creation](/help/ai-in-aem/agents/production/communications-cr
 
 >[!NOTE]
 >
-> The Communications Creation skill is currently in alpha. If you would like to participate, please send a request from your official email address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com).
-
-### Site Migration {#site-migration}
-
-The [Site Migration](/help/ai-in-aem/agents/production/site-migration.md) seamlessly migrate non-AEM sites into AEM (Experience Delivery Services) environments, ensuring they are performant, compliant, and agent-ready. The agent streamlines setup and transformation, reducing manual effort and time to value.
-
-The agent should be able to work with other agent skills, examples include:
+> The Communications Creation skill is currently in alpha. If you would like to participate, please send a request from your official email address to [aem-forms-ea@adobe.com.](mailto:aem-forms-ea@adobe.com)
 
 ## Use with other agents {#use-with-other-agents}
+
+The agent is able to work with other agent skills, examples include:
 
 * Get source assets from the Experience Advisory Agent
 
