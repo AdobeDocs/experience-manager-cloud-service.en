@@ -41,9 +41,18 @@ Consider the steps below to create a new Metadata Form:
 
 1. Alternatively, choose an existing metadata form template from the **[!UICONTROL Choose from existing form template]** dropdown.
 
-1. A blank Metadata Form appears. Click `+` to add a new tab.
+1. A blank Metadata Form appears. Add a new tab.
 
-   ![select form](assets/new-metadata-form.png)
+   ![Metadata Form UI](assets/metadata-form-ui.png)
+
+   * **A:** Switch between [!UICONTROL Edit] or [!UICONTROL Preview]
+   * **B:** [Components of Metadata Form](metadata-assets-view.md#property-components)
+   * **C:** Switch to other Metadata Form
+   * **D:** Add a new tab
+   * **E:** Canvas
+   * **F:** Component settings
+   * **G:** Component tools to add rules
+   * **H:** Component properties
 
 Watch this video to view the sequence of steps, [Setup Metadata Forms](https://video.tv.adobe.com/v/341275).
 
