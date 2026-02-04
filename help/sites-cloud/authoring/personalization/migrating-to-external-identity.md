@@ -73,7 +73,7 @@ Instead of direct user-to-group relationships stored in the repository, dynamic 
 
 ## Service User Configuration {#service-user-configuration}
 
-All operations that create or modify external users and groups must be performed using a **Service User** that is properly configured to bypass the protection on `rep:externalId` and `rep:externalPrincipalNames` properties.
+All operations that create or modify external users and groups must be performed using a **Service User** that is properly configured to bypass the (default) protection on the `rep:externalId` and `rep:externalPrincipalNames` properties.
 
 ### Why Service User is Required {#why-service-user-required}
 
