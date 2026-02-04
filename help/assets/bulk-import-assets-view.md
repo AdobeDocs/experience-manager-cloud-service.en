@@ -21,7 +21,7 @@ You can import assets from the following data sources:
 * Dropbox
 * OneDrive
 
->[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on){transcript=true}
 
 ## Prerequisites {#prerequisites}
 
