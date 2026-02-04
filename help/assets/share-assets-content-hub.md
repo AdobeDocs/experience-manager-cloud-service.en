@@ -8,6 +8,8 @@ exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
 
 Create a link to selected assets to share them with others easily. As an authorized [!DNL Content Hub] user, select one or more assets available in your [!DNL Content Hub] environment, generate a link, and send it to other private or public users.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
+
 ## Prerequisites {#prerequisites}
 
 [Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can create a link to selected assets and share it with other users. 
