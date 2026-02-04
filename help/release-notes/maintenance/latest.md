@@ -12,9 +12,13 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 24222 {#24222}
 
-Summarized below are the continuous improvements for maintenance release 24222, which was publicly released on February 3, 2026. The previous maintenance release was release 23963.
+Summarized below are the continuous improvements for maintenance release 24222, which was publicly released on February 4, 2026. The previous maintenance release was release 23963.
 
 The 2026.2.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+
+>[!NOTE]
+>
+>Release 24222 has been made private. 
 
 ### Enhancements {#enhancements-24222}
 
@@ -69,6 +73,7 @@ The 2026.2.0 feature activation will provide the full feature set for this maint
 * GRANITE-63293: Fix mandatory pathfield losing the required asterisk after first authoring.
 * GRANITE-63360: Fix wrong information shown when multiple paths are selected.
 * SITES-36242: Narrow down GraphQL execute regex to fix dispatcher filter bypass.
+* SITES-40122: Fix of Edge Delivery integration with content-distribution ImsService.
 * SKYOPS-84379: Use the latest FACT tool for proper feature toggle pickup by RDEs.
 * SKYOPS-121216: Revert update to Jackson 2.20.0 libraries.
 
