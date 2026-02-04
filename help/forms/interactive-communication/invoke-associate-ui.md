@@ -27,15 +27,15 @@ The below table depicts the various real-world scenarios where Associate UI can 
 
 Before integrating the Associate UI with your application, ensure you have:
 
-- AEM Forms Cloud Service Publish instance
-- Interactive Communication created and published in AEM
+- Interactive Communication created and published
 - Browser with popup support enabled
-- Associate users must be part of the **forms-associates** group
-- Authentication configured - [SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) 
+- Associate [users must be part of the forms-associates group](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- Authentication configured using any [authentication mechanism supported by AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication) (for example, SAML 2.0, OAuth, or custom authentication handlers)
 
 >[!NOTE]
 >
-> For Associate UI, additional SAML configurations are required beyond the standard setup explained in the [SAML 2.0 authentication](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) article. See the [Additional SAML configurations for Associate UI](#additional-saml-configurations-for-associate-ui) section for details.
+>- This article demonstrates authentication configuration using SAML 2.0 with [Microsoft Entra ID (Azure AD) as the Identity Provider](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings). 
+>- For Associate UI, additional SAML configurations are required beyond the standard setup explained in the [SAML 2.0 authentication](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) article. See the [Additional SAML configurations for Associate UI](#additional-saml-configurations-for-associate-ui) section for details.
 
 ### Additional SAML configurations for Associate UI
 
@@ -49,7 +49,7 @@ Create the file `com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg.
   {
     "path": ["/libs/fd/associate"],
     "serviceProviderEntityId": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com",
-    "assertionConsumerServiceURL": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/saml_login",
+    "assertionConsumerServiceURL": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/saml_login"
     "idpUrl": "https://login.microsoftonline.com/{azure-tenant-id}/saml2",
     "idpCertAlias": "{your-certificate-alias}",
     "idpIdentifier": "https://sts.windows.net/{azure-tenant-id}/",
@@ -118,6 +118,8 @@ const AEM_URL = 'https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/
 
 Replace `{program-id}` and `{env-id}` with your actual environment values.
 
+For security reasons, parameters such as Interactive Communication ID, prefill service, and service parameters are not passed through the URL. Instead, these parameters are securely passed using a JavaScript function that communicates with the Associate UI via the browser's postMessage API.
+
 ### Step 2: Prepare the Data Payload
 
 Structure your data payload with the following format:
@@ -138,10 +140,10 @@ const data = {
 | Component | Required | Description |
 |-----------|----------|-------------|
 | `id` | Yes | The identifier of the Interactive Communication (IC) to load |
-| `prefill` | No | Contains service configuration for data prefilling.|
-| `prefill.serviceName` | No | Name of the Form Data Model service to invoke for prefilling data |
-| `prefill.serviceParams` | No | Key-value pairs passed to the prefill service |
-| `options` | No | Additional properties supported for PDF rendering - locale, includeAttachments, embedFonts, makeAccessible|
+| `prefill` | Optional | Contains service configuration for data prefilling.|
+| `prefill.serviceName` | Optional | Name of the Form Data Model service to invoke for prefilling data |
+| `prefill.serviceParams` | Optional | Key-value pairs passed to the prefill service |
+| `options` | Optional | Additional properties supported for PDF rendering - locale, includeAttachments, embedFonts, makeAccessible|
 
 ### Step 3: Implement the Integration Function
 
@@ -199,13 +201,13 @@ Call the function with appropriate parameters:
 launchAssociateUI('12345', '', {}, {});
 
 // With prefill service
-launchAssociateUI('12345', 'FdmTestData', 
+launchAssociateUI('12345', 'IC_FDM', 
   { customerId: '101'}, {});
 
 // With all parameters
-launchAssociateUI('12345', 'FdmTestData', 
-  { policyNumber: 'POL-123' }, 
-  { locale: 'en', acrobatVersion: 'Acrobat_11' });
+launchAssociateUI('12345', 'IC_FDM', 
+  { customerId: "101" }, 
+  { locale: 'en', includeAttachments: "true" });
 ```
 
 ## Test Your Integration with a Sample HTML Page
@@ -403,7 +405,7 @@ Use this to dynamically populate the IC with customer data:
 {
   "id": "12345",
   "prefill": {
-    "serviceName": "FdmTestData",
+    "serviceName": "IC_FDM",
     "serviceParams": {
       "customerId": "101",
       "accountNumber": "ACC-98765"
@@ -419,11 +421,12 @@ Use this to specify additional rendering options:
 
 ```json
 {
-  "id": "12345ß",
+  "id": "12345",
   "prefill": {
-    "serviceName": "FdmTestData",
-    "serviceParams": { 
-      "policyNumber": "POL-123" 
+    "serviceName": "IC_FDM",
+    "serviceParams": {
+      "customerId": "101",
+      "accountNumber": "ACC-98765"
     }
   },
   "options": { 
@@ -475,7 +478,7 @@ Use this to specify additional rendering options:
 - For production: Specify the exact origin URL of your application
 - Ensure the Publish instance CORS settings allow your application domain
 
-## Best Practices
+<!--## Best Practices
 
 When implementing the Associate UI integration, follow these best practices:
 
@@ -484,7 +487,7 @@ When implementing the Associate UI integration, follow these best practices:
 3. **User Experience**: Display a loading indicator while the Associate UI initializes
 4. **Memory Management**: Remove event listeners after initialization to prevent memory leaks
 5. **Testing**: Test the integration with popup blockers enabled to ensure graceful handling
-6. **User Permissions**: Verify users have appropriate access to the forms-associates group
+6. **User Permissions**: Verify users have appropriate access to the forms-associates group-->
 
 ## See Also
 
