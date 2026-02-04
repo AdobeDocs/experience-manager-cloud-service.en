@@ -120,7 +120,7 @@ If you have an existing AEM project using [the page editor](/help/sites-cloud/au
 
    `http://<host>:<port>/system/console/configMgr`
 
-1. Locate **`com.day.cq.wcm.core.impl.UniversalEditorURLServiceImpl`** in the list and click **Edit the configuration values**.
+1. Locate **`Universal Editor URL Service`** in the list and click **Edit the configuration values**.
 
 1. Define for which content paths or `sling:resourceType`s the Universal Editor shall be opened.
 
