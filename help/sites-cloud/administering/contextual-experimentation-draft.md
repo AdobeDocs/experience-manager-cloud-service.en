@@ -14,7 +14,7 @@ When done right, it is a powerful pattern to improve conversions, engagement and
 * **Too slow**: many experimentation frameworks slow the site down so much that the potential new conversions can’t make up for the lost traffic and bounces due to slow rendering.
 * **Too complex**: if it takes too much time to set up a new experiment, then fewer experiments will be run.
 
-For sites running on Adobe Experience Manager, there is the "out of the box" **experimentation rail** that allows developers to add an experimentation capability to their sites. Three things make this approach different from other experimentation frameworks:
+For sites running on Adobe Experience Manager, developers have the option to add "out of the box" experimentation capability to their sites. Three things make this approach different from other experimentation frameworks:
 
 * It is easy to set up tests with the tools your authors are already familiar with and no separate login is needed.
 * It is deeply integrated into the AEM delivery system, does not slow down your site and is resilient to changes in code and content.
@@ -22,13 +22,13 @@ For sites running on Adobe Experience Manager, there is the "out of the box" **e
 
 ## Experimentation rail {#experimentation-rail}
 
-The experimentation rail is your primary tool to set up experiments. It can be used with your project either in a [Edge Delivery Services](/help/edge/overview.md) context or in the [Universal Editor](/help/implementing/universal-editor/introduction.md). As such, you will need a Github account, a content repository like SharePoint or Google Drive, and you will also need the [AEM Sidekick](https://www.aem.live/docs/sidekick) plug-in. See also the [Getting Started – Universal Editor Developer Tutorial page](https://www.aem.live/developer/tutorial).
+The experimentation rail is your primary way to set up experiments. It can be used with your project either in an [Edge Delivery Services](/help/edge/overview.md) context or in the [Universal Editor](/help/implementing/universal-editor/introduction.md). As such, you will need a Github account, a content repository like SharePoint or Google Drive, and you will also need the [AEM Sidekick](https://www.aem.live/docs/sidekick) plug-in. If you want to use Universal editor you will also need access to an [AEM as a Cloud Service environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). See also the [Getting Started – Universal Editor Developer Tutorial page](https://www.aem.live/developer/tutorial).
 
-## Converting your project to AEM sites as a content source
+### Converting your project to AEM sites as a content source
 
-SR-ADD  info here https://www.aem.live/developer/ue-tutorial
+If you want to use Universal editor to set up experiments you will also need to convert your project to AEM sites as a content source. See the [Setup AEM Sites as a Content Source](https://www.aem.live/developer/ue-tutorial) page for more details.
 
-### Setting up the experimentation using AEM Sidekick in Edge Delivery Services
+### Setting up the experimentation using by using AEM Sidekick in Edge Delivery Services
 
 To access the experimentation rail capabilities within your Edge Delivery Services Project you will need the [AEM Sidekick](https://www.aem.live/docs/sidekick) plug-in. To set up the sidekick follow these steps:
 
@@ -39,9 +39,9 @@ To access the experimentation rail capabilities within your Edge Delivery Servic
 
 **SR** - What if the EDS project is not instrumentalized?.
 
-### Setting up the experimentation in Universal editor with your Xwalk project
+### Setting up the experimentation in Universal editor
 
-To set up the experimentation capabilities within your Xwalk Project (cross-walk) and start creating experiments, follow these steps:
+To use the experimentation capability in Universal editor, make sure you use AEM sites as a content source (add link here). After you set up AEM sites as a content source, follow these steps:
 
 1. Open your project in Universal Editor and check if you see the **A/B** Icon Extension. If it is not visible, confirm whether you have enabled the feature in the extension manager, if not please enable it or request access (**SR** - how do we request access).
 1. Open your GitHub repository and check if the `plugins/experimention` folder exists. If not, you will need to set up the experimentation engine and MFE first **( **SR** - wiki link)**.
@@ -132,7 +132,7 @@ After the experiment reaches statistical significance, click **Promote** (**SR**
 
 ### Using experimentation with AEM Sidekick in Edge Delivery Services
 
-If you have the AEM sidekick (**SR** - link here) installed you can use the experimentation rail directly in Edge Delivery Services without going through the Universal Editor. The functionality is esentially the same as the A/B test described above, just keep in mind that you need to be **Preview** mode to edit and configure the test. After you finish configuring the test, click **Publish** from the side-kick to push both the control and the challenger variant live and start gathering telemetry data.
+If you have the AEM sidekick (**SR** - link here) installed you can use the experimentation rail directly with your project without using the Universal Editor. The functionality is esentially the same as the A/B test described above, just keep in mind that you need to be **Preview** mode to edit and configure the test. After you finish configuring the test, click **Publish** from the side-kick to push both the control and the challenger variant live and start gathering telemetry data.
 
 
 
