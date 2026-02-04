@@ -7,6 +7,8 @@ exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
 
 Content Hub allows you to create new content with Adobe Express. You can edit existing content with easy to use tools, produce on-brand variations with templates and brand elements, and create new content with the latest GenAI capabilities from Adobe Firefly.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3435003/?learn=on){transcript=true}
+
 ## Prerequisites {#prereqs-edit-image-content-hub}
 
 Entitlements to access Adobe Express and [Content Hub users with rights to remix assets to new variations](/help/assets/deploy-content-hub.md#onboard-content-hub-users-remix-assets) can edit images using Content Hub.
