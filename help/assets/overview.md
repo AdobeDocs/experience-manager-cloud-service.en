@@ -662,10 +662,10 @@ The **Content Optimization Agent** helps refine and adapt assets using natural l
 
 **Sample Prompts:**
 
-* `Create a 2000px JPEG rendition.`  
-* `Sharpen the image.`  
-* `Change background color to #ff8932.`  
-* `Create a rendition for an Instagram story.`  
+* Create a 2000px JPEG rendition.
+* Sharpen the image.
+* Change background color to #ff8932.  
+* Create a rendition for an Instagram story.
 
 **Limitations:** Some optimizations are not supported for PNG assets.
 
