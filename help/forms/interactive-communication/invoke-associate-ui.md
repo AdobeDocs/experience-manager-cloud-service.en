@@ -27,10 +27,9 @@ The below table depicts the various real-world scenarios where Associate UI can 
 
 Before integrating the Associate UI with your application, ensure you have:
 
-- AEM Forms Cloud Service Publish instance
-- Interactive Communication created and published in AEM
+- Interactive Communication created and published
 - Browser with popup support enabled
-- Associate users must be part of the **forms-associates** group
+- Associate [users must be part of the forms-associates group](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
 - Authentication configured - [SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) 
 
 >[!NOTE]
@@ -138,10 +137,10 @@ const data = {
 | Component | Required | Description |
 |-----------|----------|-------------|
 | `id` | Yes | The identifier of the Interactive Communication (IC) to load |
-| `prefill` | No | Contains service configuration for data prefilling.|
-| `prefill.serviceName` | No | Name of the Form Data Model service to invoke for prefilling data |
-| `prefill.serviceParams` | No | Key-value pairs passed to the prefill service |
-| `options` | No | Additional properties supported for PDF rendering - locale, includeAttachments, embedFonts, makeAccessible|
+| `prefill` | Optional | Contains service configuration for data prefilling.|
+| `prefill.serviceName` | Optional | Name of the Form Data Model service to invoke for prefilling data |
+| `prefill.serviceParams` | Optional | Key-value pairs passed to the prefill service |
+| `options` | Optional | Additional properties supported for PDF rendering - locale, includeAttachments, embedFonts, makeAccessible|
 
 ### Step 3: Implement the Integration Function
 
@@ -403,7 +402,7 @@ Use this to dynamically populate the IC with customer data:
 {
   "id": "12345",
   "prefill": {
-    "serviceName": "FdmTestData",
+    "serviceName": "IC_FDM",
     "serviceParams": {
       "customerId": "101",
       "accountNumber": "ACC-98765"
@@ -419,11 +418,12 @@ Use this to specify additional rendering options:
 
 ```json
 {
-  "id": "12345ß",
+  "id": "12345",
   "prefill": {
-    "serviceName": "FdmTestData",
-    "serviceParams": { 
-      "policyNumber": "POL-123" 
+    "serviceName": "IC_FDM",
+    "serviceParams": {
+      "customerId": "101",
+      "accountNumber": "ACC-98765"
     }
   },
   "options": { 
@@ -475,7 +475,7 @@ Use this to specify additional rendering options:
 - For production: Specify the exact origin URL of your application
 - Ensure the Publish instance CORS settings allow your application domain
 
-## Best Practices
+<!--## Best Practices
 
 When implementing the Associate UI integration, follow these best practices:
 
@@ -484,7 +484,7 @@ When implementing the Associate UI integration, follow these best practices:
 3. **User Experience**: Display a loading indicator while the Associate UI initializes
 4. **Memory Management**: Remove event listeners after initialization to prevent memory leaks
 5. **Testing**: Test the integration with popup blockers enabled to ensure graceful handling
-6. **User Permissions**: Verify users have appropriate access to the forms-associates group
+6. **User Permissions**: Verify users have appropriate access to the forms-associates group-->
 
 ## See Also
 
