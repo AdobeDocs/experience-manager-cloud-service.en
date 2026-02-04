@@ -97,7 +97,7 @@ Create the service user with necessary permissions using a repoinit script.
 
 **Configuration File:** `org.apache.sling.jcr.repoinit.RepositoryInitializer~group-provisioner.cfg.json`
 
-**Location:** `ui.config/src/main/content/jcr_root/apps/yourproject/osgiconfig/config.publish/`
+**Exemplary location:** `ui.config/src/main/content/jcr_root/apps/yourproject/osgiconfig/config.publish/`
 
 ```json
 {
