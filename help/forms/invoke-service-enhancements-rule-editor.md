@@ -60,7 +60,6 @@ Below are the prerequisites you must satisfy before using **Invoke Service** in 
 
 * Make sure you have configured a data source. For instructions on configuring a data source, [click here](/help/forms/configure-data-sources.md).
 * Create a Form Data Model using the configured data source. For guidance on creating a Form Data Model, [click here](/help/forms/create-form-data-models.md).
-* Ensure that Core Components are enabled for your environment. Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment.
 
 ## Exploring Invoke Service through different use cases
 
@@ -167,6 +166,10 @@ Enter `101` in the `Pet ID` text box to dynamically populate the dropdown option
 
 ![Result](/help/forms/assets/output1.png)  
 
+> ![NOTE]
+>
+> Dropdown options can also be populated dynamically by invoking a service, parsing the JSON response, and applying custom functions. For more details, see [this section](#retrieve-property-values-from-a-json-array).
+
 ### Use Case 2: Set repeatable panel using output of Invoke Service  
 
 This use case demonstrates how to populate repeatable panels dynamically based on the output of an **Invoke Service**.  
@@ -265,6 +268,123 @@ Optionally, configure a failure handler to display an error message if the servi
 When the **Submit** button is clicked, the `redirect-api` API service is invoked. Upon success, the user is redirected to the **Contact Us** page.
 
 ![Event payload Output](/help/forms/assets/output5.gif)
+
+## Retrieve Property Values from a JSON array
+
+<span class="preview"> This is a early-adopter feature. If you are interested, send a quick email from your work address to mailto:aem-forms-ea@adobe.com to request access to the feature</a>. </span>
+
+Adaptive Forms supports invoking a service, processing JSON responses, and populating form fields dynamically. This section describes how to extract property values from a JSON array and bind them to form fields.
+
+### Sample JSON Response
+
+The following example represents US sales regions and list of sales representatives:
+
+
+```json
+[
+  {
+    "region": "East",
+    "salesPerson": "Emily Carter"
+  },
+  {
+    "region": "South",
+    "salesPerson": "Michael Brown"
+  },
+  {
+    "region": "Midwest",
+    "salesPerson": "Sophia Martinez"
+  },
+  {
+    "region": "Southwest",
+    "salesPerson": "David Johnson"
+  },
+  {
+    "region": "West",
+    "salesPerson": "Linda Walker"
+  }
+]
+```
+
+### Custom Function to Extract Property Values
+
+Use the following custom function to extract property values from the JSON array.
+
+```js
+/**
+ * Returns an array of values for a specific property from an array of objects.
+ *
+ * @name getPropertyValues
+ * @param {Object[]} jsonArray An array of objects
+ * @param {string} propertyName The property whose values should be extracted
+ * @returns {Array} An array containing the values of the specified property
+ *
+ */
+
+function getPropertyValues(jsonArray, propertyName)
+{
+    return jsonArray.map((obj) => obj[propertyName]);
+
+}
+```
+
+The custom function accepts:
+
+* **jsonArray**: JSON array returned from the service
+* **propertyName**: Property to extract value
+
+The custom function returns a simple array of values.
+
+>[!NOTE]
+>
+> For detailed steps on how to add custom functions, refer to the [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md) article.
+
+
+### Use the function in Rule Editor
+
+To retriveve the specific value from the JSON array:
+
+```
+event.payload.invokeServiceResponse.rawPayloadBody
+```
+
+The following example demonstrates how to populate a `Sales Department` form using this response.
+
+For example, let's create a `Sales Department` form which include the `Select Region` and `Select Sales Representative` dropdowns. 
+
+**Step 1: Invoke the service on form initialization**
+
+```
+WHEN
+    Form is initialized
+THEN
+    Invoke Service → salesdeptinfo
+```
+
+>[!NOTE]
+>
+> To learn how to integrate API without creating a Form Data Model in the Visual Rule Editor, [click here](/help/forms/api-integration-in-rule-editor.md).
+
+**Step 2: Populate the Region dropdown**
+
+Add a Success Handler for the service call and configure the following action:
+
+```
+Set enum → Region dropdown
+getPropertyValues(
+    event.payload.invokeServiceResponse.rawPayloadBody,
+    "region"
+)
+```
+
+This rule reads the JSON array, extracts the `region` property values and assigns the values to the `Select Region` dropdown.
+
+Similarly, configure the action for the `Select Sales Representative` dropdown in the Success Handler.
+
+![Event Payload for JSON array](/help/forms/assets/event-payload.png)
+
+When the form loads the JSON data is returned and the custom function extracts property values and the dropdown is populated automatically:
+
+![Event Payload Form](/help/forms/assets/event-payload-form.png)
 
 ## Frequently asked questions
 
