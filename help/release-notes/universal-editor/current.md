@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.01.29 Release Notes
-description: These are the release notes for the 2026.01.29 release of the Universal Editor.
+title: Universal Editor 2026.02.05 Release Notes
+description: These are the release notes for the 2026.02.05 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.01.29 Release Notes {#release-notes}
+# Universal Editor 2026.02.05 Release Notes {#release-notes}
 
-These are the release notes for the 29 January 2026 release of the Universal Editor.
+These are the release notes for the 5 February 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,12 +20,8 @@ These are the release notes for the 29 January 2026 release of the Universal Edi
 
 ## What's New {#what-is-new}
 
-* Remove component method was exposed to `editorActions`.
-* Copy component method was exposed to `editorActions`.
-* Move component method was exposed to `editorActions`.
-* Add component method was exposed to `editorActions`.
-* Definitions were exposed to [extensibility.](/help/implementing/universal-editor/extending.md)
-* Version 2.0 of the Document Authoring API is released.
+* The move action is now available within [the context menu.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
+* The RTE now supports [paste as text.](/help/implementing/universal-editor/configure-rte.md#paste-as-text)
 
 ## Early Adoption Features {#early-adopter}
 
@@ -35,6 +31,4 @@ If you are interested in testing the upcoming features listed below and sharing 
 
 ## Other Improvements {#other-improvements}
 
-* The `content` extensibility was renamed to `details` to follow API schema.
-* Contextual menu behavior was improved.
-* Fixed a bug when clicking the badge of an editable item so that the context menu opens properly.
+* Publish to preview was enabled for AEM 6.5 when using the [`xwalk` plugin.](/help/implementing/universal-editor/component-definition.md#plugins)
