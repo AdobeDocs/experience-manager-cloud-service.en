@@ -18,7 +18,7 @@ Some of the key features of Adobe's Digital Asset Management include:
 
 >[!BEGINTABS]
 
->[!TAB Asset Ingestion]
+>[!TAB Ingestion]
 
 ## Asset ingestion {#asset-ingestion}
 
@@ -233,7 +233,7 @@ Use these links to access detailed documentation on these asset ingestion tools:
 </td>
 </table>
 
->[!TAB Asset Discovery]
+>[!TAB Discovery]
 
 ## Asset discovery {#asset-discovery}
 
@@ -340,7 +340,7 @@ AEM Assets provides features that help you quickly find the right asset. These f
 </td>
 </table>
 
->[!TAB Asset Governance]
+>[!TAB Governance]
 
 ## Asset management and governance {#asset-management-governance}
 
@@ -662,10 +662,10 @@ The **Content Optimization Agent** helps refine and adapt assets using natural l
 
 **Sample Prompts:**
 
-* `Create a 2000px JPEG rendition.`  
-* `Sharpen the image.`  
-* `Change background color to #ff8932.`  
-* `Create a rendition for an Instagram story.`  
+* Create a 2000px JPEG rendition.
+* Sharpen the image.
+* Change background color to #ff8932.  
+* Create a rendition for an Instagram story.
 
 **Limitations:** Some optimizations are not supported for PNG assets.
 
@@ -692,7 +692,7 @@ Some of the key benefits of Governance Agent include:
 <table>
 <td>
    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
-   <img alt="Discovery Agent Overview" src="./assets/discovery-agent-overview.jpeg" />
+   <img alt="Discovery Agent Overview" src="./assets/discovery-agent.jpg" />
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
@@ -737,7 +737,7 @@ Some of the key benefits of Governance Agent include:
 
 Agents are accessible via the **AI Assistant** in AEM Cloud Service. Log in to [experience.adobe.com](https://experience.adobe.com/) and interact with AI Assistant using natural language prompts.
 
->[!TAB Asset Activation]
+>[!TAB Activation]
 
 ## Asset activation {#asset-activation}
 
