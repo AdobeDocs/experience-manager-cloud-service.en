@@ -10,101 +10,113 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 23963 {#23963}
+## Release 24288 {#24288}
 
-Summarized below are the continuous improvements for maintenance release 23963, which was publicly released on January 19, 2026. The previous maintenance release was release 23482.
+Summarized below are the continuous improvements for maintenance release 24288, which was publicly released on February 4, 2026. The previous maintenance release was release 23963.
 
-The 2026.1.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+The 2026.2.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
 >[!NOTE]
 >
->Release 23862 has been made private. 
+>Release 24222 has been made private. 
 
-### Enhancements {#enhancements-23963}
+### Enhancements {#enhancements-24288}
 
-* CQ-4361812: Added support for optional param folderPath in rest api. Description: A new translation project is created by the API, and will be placed within the path specified by the optional `folderPath` parameter, otherwise it defaults to the root project path `/content/projects`.
-* FORMS-21960: Added support for canvas editing on local for Interactive Communications, similar to forms-spa.
-* FORMS-22001: Added guidance to reduce high volume of `/etc.clientlibs/toggles.json` requests in AEM Forms as a Cloud Service.
-* FORMS-22496: Expose Raw ResponseBody in Invoke Service.
-* FORMS-22495: Add placeholder property in SetProperty rule.
-* FORMS-21925: UBS Footnotes Formatting: Display All Footnotes in the Form During Form Load.
-* FORMS-20536: Expose an option of complete response in eventPayload in rule editor without mapping.
-* SITES-37199: Annotation Feature triggers repository traversal via unvalidated `authorizables.json` call causing Performance Degradation.
-* SITES-37118: Commerce Optimizer support in Product Cockpit.
-* SITES-38029: Add logs for tracing MSM push on modify events.
-* SITES-37050: Support for "force unpublish", allowing to unpublish content fragments that are referenced by other published resources.
-* SITES-37142: Added capability to checkin/checkout a content fragment via content fragment PATCH.
-* SITES-37613: In the CF API permissions endpoint return checkin  if the user can checkin a content fragment, or checkout  if the user can checkout a content fragment.
-* SITES-37835: When attempting to create multiple content fragments with the same title, but no provided name, automatically generate a new name instead of failing due to conflict.
-* SITES-36823: Edge Delivery with Universal Editor: Remove the need for reverse mappings for indexes.
-* SITES-34751: Edge Delivery with Universal Editor: Fail for non supported file types and paths out of limits when publishing (Early Access).
-* SITES-37888: Edge Delivery with Universal Editor: Use Alt suffix as synonym for Text for links.
-* SITES-19850: Edge Delivery with Universal Editor: Add support for multiple sheets in spreadsheets.
-* SITES-32490: Edge Delivery with Universal Editor: Add support for data-aue-component and user defined data-aue-label to blocks and default content.
-* SITES-37794: Edge Delivery with Universal Editor: Simplify page creation wizard.
-* SITES-36963: Migrate Audience/Segment Endpoint to Target API v3 for Workspace Support.
+* CNTBF-604: Create new contentbackflow bundle release.
+* CQ-4361592: Add TypeHint support for project creation and update.
+* CQ-4362198: Latest AEM and Granite package translations.
+* GRANITE-36205: Update internal Oak release version to latest.
+* GRANITE-59211: OPTEL: Added nonce support and self-service configuration.
+* GRANITE-62166: Update migration bundle to reuse migration states from migration tool.
+* GRANITE-62598: Remove redundant property exclude from content package filter.
+* GRANITE-62684: Make client socket timeout configurable through skyline-ops.
+* GRANITE-62702: Replace sling discovery with standalone implementation for online migration.
+* GRANITE-62763: Update Guava deprecation exception list based on ASSETS rotary.
+* GRANITE-62771: Fail Quickstart builds when new deprecated Commons-Lang dependencies are introduced.
+* GRANITE-62987: Update Felix webconsole to version 5.0.18.
+* GRANITE-63339: Improve lease mechanism for Azure migration-state blob.
+* GRANITE-63343: Add support for the latest version of the Sling API bundle in workflow.core.
+* GRANITE-63799: Bump OIDC Authentication Bundle version.
+* GRANITE-63821: Update Quickstart to filevault release fixing JCRVLT-831/JCRVLT-839.
+* GRANITE-63827: Update Quickstart to the latest public release of Oak (1.90.0).
+* GRANITE-63888: Update Quickstart to Jackrabbit 2.22.3.
+* GRANITE-64030: Add keywords and patterns to the allowed list for Expression Language Validator.
+* GRANITE-64050: Allow for hidden conf folders to hide external product functionality.
+* SITES-30452: Content API with ASO - Title and Description Suggestions.
+* SITES-38099: Update `testing-model.txt` to use higher version of sanity checks.
+* SKYOPS-43616: Migrate Jenkins credentials to Vault in dispatcher repositories.
+* SKYOPS-108584: Bump FACT tool from 0.6.0 to 0.6.10.
+* SKYOPS-115691: Upgrade CORS filter bundle to add Vary Origin header on preflight requests.
+* SKYOPS-123094: Update Apache HTTP components in Quickstart.
+* SKYOPS-123236: Include `rep:cugPolicy` in the replication package.
+* SKYOPS-123240: Update CRXDE dependencies in Quickstart.
+* SKYOPS-123247: Update Sling XSS bundle in Quickstart.
+* SKYOPS-123250: Update Sling security bundle in Quickstart.
+* SKYOPS-123327: Require Java 21 for the AEM-CS SDK.
+* SKYOPS-125574: Update netcentric AC Tool bundles in Quickstart.
+* SKYOPS-126150: Improve top command for thread dumps generator script.
 
-### Fixed Issues {#fixed-issues-23963}
+### Fixed Issues {#fixed-issues-24288}
 
-* CQ-4361831: Fixed issue causing genai_dropdown_span is not defined.
-* CQ-4360895: Fixed Inaccurate translation job status count in project during concurrent updates.
-* CQ-4361599: Fixed skipping of Content Fragments from Translation Jobs after 2025.7 upgrade.
-* CQ-4360747: Fixed Repeatable Translation Jobs create empty payloads & trigger too often (NullPointerException in ScheduleRepeatTranslationProject).
-* CQ-4359994: Fixed destinationLanguage field type inconsistency for single and multi-language project.
-* FORMS-23557: Rhino update causes `*.js` cannot be correctly instantiated by the Use API.
-* SITES-38153: Fix cf publish reference provider for uuid based references.
-* SITES-37594: Performance improvements for model by tags functionality.
-* SITES-37337: FragmentCreateProcessor: provide additional error details in logs.
-* SITES-33666: Unlocalized 'Cannot print fragment's Json' error message in Content Fragment Editor.
-* SITES-33675: Hardcoded 'undefined' string in Content Fragment Editor > Associated Content.
-* SITES-30715: Unlocalized 'General' string in Content Fragment Editor.
-* SITES-28592: Unlocalized strings in Content Fragment Model editor > 'Model is locked' dialog.
-* SITES-977: Strings "Tags" and "collections" are not localized on edit content fragment page.
-* SITES-29699: Unlocalized types of allowed assets in Content Fragment Editor.
-* SITES-25240: Call to Action fields in the Teaser Modal do not have a visible label.
-* SITES-24869: Truncated tooltip in Template Editor > Separator > Policy.
-* SITES-19313: Error is unlocalized when drag and drop a component to deleted template in Template Editor.
-* SITES-18103: Unlocalized strings in Page editor > Workflow.
-* SITES-17501: Unlocalized strings in Template Editor > Component Policy editor.
-* SITES-15091: Strings are unlocalized on text component properties of Experience fragment.
-* SITES-8113: 'Assets' string isn't localized in 'Select Image' dialog for 'Templates' in Tools menu.
-* SITES-37587: Live copy creation still fails in PROD with NPE in RolloutManagerImpl.
-* SITES-37335: Live Copy Page Properties showing error in console related to cq tags.
-* SITES-36972: "Rollout" Button Missing in Editable Toolbar.
-* SITES-36570: Creating Live Copies fails after chunked Create Live Copy toggle is activated.
-* SITES-36158: Rollout fails with Job failed due to an exception.
-* SITES-35655: New CF Editor shows active inheritance after it was broken.
-* SITES-31425: Unlocalized Error message `Error: {} field is required` displayed in Start workflow in sites.
-* SITES-19802: Tooltips is unlocalized in Core Components site > Table of contents.
-* SITES-36543: Fixed issue that would allow admin to edit checked out content fragments. 
-* SITES-36967: Fixed NullPointerExceptions that occur when attempting to generate thumbnail data for broken content fragments.
-* SITES-37791: Fixed an issue where calling FindAndReplace for strings containing `$` would fail.
-* SITES-37018: Empty Error Popup When Copying Page with Disallowed Template Path.
-* SITES-36243: Edge Delivery with Universal Editor: Fix 404s while publishing of `sling:OrderedFolder`.
-* SITES-37684: Edge Delivery with Universal Editor: Fix performance degradation in environments with many sites.
-* SITES-37840: Edge Delivery with Universal Editor: Fix publishing failures due to outdated access token for Edge Delivery.
-* SITES-37933: Edge Delivery with Universal Editor: Fix (un)publishing failures for deleted resources in Launches.
-* SITES-37870: Edge Delivery with Universal Editor: Fix broken rendering of custom page metadata with multi-field support enabled.
-* SITES-37349: Edge Delivery with Universal Editor: Render multi-fields with single entries as list with a single list item.
-* SITES-36148: Edge Delivery with Universal Editor: Fix data-aue-label for composite multi-fields.
+* FORMS-23687: Fix SSV validation failure when contains rule is used without default value.
+* GRANITE-48472: Localize error when changing password in the Edit User Settings tab.
+* GRANITE-50286: Fix layout issue in the status column of User Management modal.
+* GRANITE-52301: Localize Unable to commit changes to session string in Security Groups.
+* GRANITE-52920: Localize error when creating user in Security Create New User.
+* GRANITE-54654: Localize string in Security Adobe IMS Configurations Check dialog.
+* GRANITE-56371: Fix incorrect data format in Security Trust Store.
+* GRANITE-62717: Upgrade crypto keystore for JSafe password handling with non-ASCII characters.
+* GRANITE-62789: Update messaging-client to support no retries mode on content distribution.
+* GRANITE-62824: Fix `NullPointerException` when accessing Groups tab in User Editor.
+* GRANITE-63080: Make import of `org.slf4j.spi` compatible with `slf4j 2.x`.
+* GRANITE-63210: Update distribution core to fix dispatcher invalidation on publish startup.
+* GRANITE-63293: Fix mandatory pathfield losing the required asterisk after first authoring.
+* GRANITE-63360: Fix wrong information shown when multiple paths are selected.
+* SITES-36242: Narrow down GraphQL execute regex to fix dispatcher filter bypass.
+* SITES-40122: Fix of Edge Delivery integration with content-distribution ImsService.
+* SKYOPS-84379: Use the latest FACT tool for proper feature toggle pickup by RDEs.
+* SKYOPS-121216: Revert update to Jackson 2.20.0 libraries.
 
-### Known Issues {#known-issues-23963}
+#### AEM Guides {#guides-24288}
+
+* GUIDES-38198 : When updating an inline MathML equation using the Edit MathML option from the context menu, the updated value is not reflected until the page is refreshed.
+* GUIDES-38276: Unable to remove Version labels from Version history panel in Assets UI.
+* GUIDES-36641: When generating AEM Sites output, the map titles containing keywords and topic titles with `<ph>` element are not getting included in the published output.
+* GUIDES-37837: When attempting to save a topic or map, the operation may intermittently fail with a Failed to save file error, particularly during intensive asset processing tasks or translation workflows running in the background.
+* GUIDES-27774: The Broken list report is incorrectly including external links, valid `keyrefs` and keywords that are properly resolved within scope of current map.
+
+For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
+
+### Known Issues {#known-issues-24288}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-23963}
+### Deprecated Features and APIs {#deprecated-24288}
+
+* AEMSRE-2896: Fix customized logmanager configuration handling.
+* GRANITE-62802: Remove deprecated `commons-lang` dependency from `granite.auth.saml`.
+* GRANITE-62805: Remove deprecated `commons-lang` dependency from `granite.httpcache.core`.
+* GRANITE-62864: Remove deprecated `commons-lang` dependency from `granite.jobs.async`.
+* GRANITE-62865: Remove deprecated `commons-lang` dependency from `granite.replication.core`.
+* GRANITE-62868: Remove deprecated `commons-lang` dependency from `granite.rest.api`.
+* GRANITE-62895: Remove deprecated `commons-lang` dependency from `translation.connector.msft.core`.
+* GRANITE-63069: Deprecate `com.adobe.granite.httpcache.core`.
+* GRANITE-63179: Remove deprecated `commons-lang` dependency from `cq-workflow-impl`.
+* GRANITE-63180: Remove deprecated `commons.lang` export from `cq-mailer` bundle.
+* SKYOPS-123329: Drop Java 11 support for AEM Ethos deployments and update `commons-lang3`.
+* SKYOPS-124983: Remove deprecated `nashorn.args` from AEM startup scripts.
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-23963}
+### Security Fixes {#security-24288}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 23 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 10 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-23963}
+### Embedded Technologies {#embedded-tech-24288}
 
 |Technology|Version|Link|
 |---|---|---|
-|AEM Oak | 1.88.0|[Oak 1.88.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.88.0/index.html)|
+|AEM Oak | 1.90.0|[Oak 1.90.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.90.0/index.html)|
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |Apache HTTP Server| 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES)|

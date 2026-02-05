@@ -96,6 +96,8 @@ user-guide-title: AEM as a Cloud Service
       + [Release Notes for 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
+    + 2026 {#2026}
+      + [Maintenance Release Notes for 2026.1.0](/help/release-notes/maintenance/2026/2026-1-0.md)
     + 2025 {#2025}
       + [Maintenance Release Notes for 2025.12.0](/help/release-notes/maintenance/2025/2025-12-0.md)
       + [Maintenance Release Notes for 2025.11.0](/help/release-notes/maintenance/2025/2025-11-0.md)
@@ -1032,7 +1034,8 @@ user-guide-title: AEM as a Cloud Service
      + [Create Versions and Add Comments](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
      + [Copy and Paste Interactive Communication](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
    + Associate UI {#associateui} 
-     + [Associate UI in Interactive  Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
+     + [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
+     + [Generate Personalized Communications with Associate UI](/help/forms/interactive-communication/invoke-associate-ui.md)
    + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
 + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
