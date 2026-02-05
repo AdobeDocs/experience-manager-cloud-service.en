@@ -6,29 +6,17 @@ role: User
 ---
 # Cache Management in Dynamic Media with Open APIs {#cache-management-dynamic-media-open-apis}
 
-Effective cache management is essential for delivering high-performance, scalable, and up-to-date digital assets. In Dynamic Media with Open APIs, cache management defines how content is stored, refreshed, and delivered across the various layers of the delivery pipeline. Effective cache management is essential for delivering high-performance, scalable, and up-to-date digital assets. In Dynamic Media with Open APIs, cache management defines how content is stored, refreshed, and delivered across the various layers of the delivery pipeline. Asset delivery responses are cached at multiple layers to ensure optimal performance and fast content delivery.
+Effective cache management is essential for delivering high-performance, scalable, and up-to-date digital assets. In Dynamic Media with Open APIs, cache management defines how content is stored, refreshed, and delivered across the various layers of the delivery pipeline. Asset delivery responses are cached at multiple layers to ensure optimal performance and fast content delivery.
 
-Prolonged caching in Dynamic Media with Open APIs consists of three types of caching:
+Prolonged caching in Dynamic Media with Open APIs consists of [CDN Layer Caching](#cdn-layer-caching) and [External Cache Control (BYOCDN & Browser Caching)](#byocdn-browser-caching).
 
-1. [CDN Layer Caching](#cdn-layer-caching)
-2. [Active Cache Invalidation](#active-cache-invalidation)
-3. [External Cache Control (BYOCDN & Browser Caching)](#byocdn-browser-caching)
-
-## 1. CDN Layer Caching {#cdn-layer-caching}
+## CDN Layer Caching {#cdn-layer-caching}
 
 Asset delivery responses are cached at [Adobe Managed CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn) for an extended period to maximize performance and minimize load on the origin. This caching is fully managed by Adobe to ensure a consistently high-quality experience for end users. The cache duration is intentionally optimized for performance and cannot be customized by users to maintain reliability and efficient content delivery across all customers.
 
 All delivery URLs are cached at the edge (Fastly) for an extended duration to ensure optimal performance. The cached delivery objects include static renditions, videos, original image binaries, and dynamically transformed images such as resized or reformatted assets generated through URL parameters. <!--The CDN is designed to serve these assets directly from the cache without revalidating them, unless an explicit purge is performed.-->
 
-## 2. Active Cache Invalidation {#active-cache-invalidation}
-
-Whenever an asset is updated, deleted, or modified (any metadata changes), Dynamic Media with Open APIs automatically invalidates every associated delivery URL on Adobe Managed CDN. This applies to URLs that use vanity IDs or aliases, along with any URLs that include transformation parameters, such as width, format, or quality. This event-driven invalidation ensures that your users always receive the most current version of your assets without manual intervention.
-
-### Manual Cache Purging {#manual-cache-purging}
-
-When there is a need to manually purge cached content, you can do so using AEM's cache invalidation capabilities. For detailed instructions on how to purge specific cache URLs, refer to [AEM Dispatcher Cache Invalidation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge).
-
-## 3. External Cache Control (BYOCDN & Browser Caching) {#byocdn-browser-caching}
+## External Cache Control (BYOCDN & Browser Caching) {#byocdn-browser-caching}
 
 Asset delivery responses include a `Cache-Control` header with a default `max-age` of **10 minutes** for downstream caching layers. This applies to custom *Bring-Your-Own-CDN (BYOCDN) configurations*, *end-user browsers*, and any *intermediate caching proxies*, ensuring consistent cache control across the entire delivery path.
 
@@ -44,6 +32,8 @@ responseTransformations:
           allOf:
             - reqProperty: path
               like: '/adobe/assets/urn:aaid:aem:*'
+            - reqProperty: tier
+              equals: delivery
         actions:
           - type: set
             respHeader: Cache-Control
@@ -51,6 +41,14 @@ responseTransformations:
 ```
 
 For additional assistance or questions about cache management, please contact [Adobe Support](https://helpx.adobe.com/in/contact.html).
+
+## Active Cache Invalidation {#active-cache-invalidation}
+
+Whenever an asset is updated, deleted, or modified (any metadata changes), Dynamic Media with Open APIs automatically invalidates every associated delivery URL on Adobe Managed CDN. This applies to URLs that use vanity IDs or aliases, along with any URLs that include transformation parameters, such as width, format, or quality. This event-driven invalidation ensures that your users always receive the most current version of your assets without manual intervention.
+
+### Manual Cache Purging {#manual-cache-purging}
+
+When there is a need to manually purge cached content, you can do so using AEM's cache invalidation capabilities. For detailed instructions on how to purge specific cache URLs, refer to [AEM CDN Cache Invalidation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge).
 
 ## Frequently asked questions{#faq-cache-management}
 
