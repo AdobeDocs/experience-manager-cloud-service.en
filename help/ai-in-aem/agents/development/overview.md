@@ -23,7 +23,7 @@ Currently, the agent can retrieve pipeline statuses and help you troubleshoot fa
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
 
-Email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) with feedback or requests to access this agent.
+To access this agent, refer to the [release notes](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) for instructions on how to enroll in the beta program, and be sure to indicate your interest in the Development Agent. You can also email Development Agent–specific feedback to [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com).
 
 ## Access the Development Agent through Cloud Manager {#how-to-access-the-agent}
 
