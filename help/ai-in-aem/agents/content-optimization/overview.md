@@ -3,8 +3,8 @@ title: Content Optimization Agent
 description: Learn how to use the Content Optimization Agent to transform how users refine and adapt assets by applying natural language instructions to create channel-ready variations.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
+exl-id: 896fc25b-7f60-47b8-9264-2ef6b85d954c
 ---
-
 # Content Optimization Agent {#content-optimization-agent}
 
 The Content Optimization Agent transforms how users refine and adapt assets by applying natural language instructions to create channel-ready variations. Whether generating new renditions, adjusting visual properties, changing backgrounds, or preparing assets for specific digital channels, the agent interprets user intent and performs complex editing tasks automatically. It works seamlessly with the Discovery Agent, taking the assets it finds and producing optimized variations using core [Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md) that meet brand, channel, and campaign requirements without manual design effort.
