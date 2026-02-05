@@ -21,8 +21,10 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming New Features {#what-is-new}
 
-* TBD
+* Dynamic Media links are now supported.
 
 ## Upcoming Improvements {#other-improvements}
 
-* TBD
+* A problem with incorrect URLs for videos has been fixed.
+* Creating multiple components with the same name no longer returns a 409.
+* The headless canvas now persists subsequent updates to a field in container.
