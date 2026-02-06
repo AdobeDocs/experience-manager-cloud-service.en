@@ -245,6 +245,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.01.29 Release Notes](/help/release-notes/universal-editor/2026/2026-01-29.md)
       + [2026.01.22 Release Notes](/help/release-notes/universal-editor/2026/2026-01-22.md)
       + [2026.01.15 Release Notes](/help/release-notes/universal-editor/2026/2026-01-15.md)
     + 2025 {#2025}
@@ -722,6 +723,7 @@ user-guide-title: AEM as a Cloud Service
       + [Configure custom domain](/help/assets/configure-custom-domain.md)
       + [Optimize images](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
       + [Create vanity URLs](/help/assets/vanity-urls.md)
+      + [Cache Management](/help/assets/cache-management-dynamic-media-open-api.md)
   + Working with Assets view {#assets-view}
     + [Introduction](/help/assets/assets-view-introduction.md)
     + [Getting started](/help/assets/get-started-assets-view.md)
