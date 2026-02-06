@@ -17,7 +17,7 @@ Adobe regularly reviews features, including APIs and configurations, to ensure t
 
 When a deprecation is announced, the feature will only remain available for a limited period and customers must remove all usage before any specified removal date. Adobe will provide reasonable notice and guidance to support a smooth transition.
 
-During the deprecation time window, Adobe will remind customers of the actions they need to take to transition away from using a feature through email notifications, Actions Center alerts, or reminders in Cloud Manager. 
+During the deprecation time window, Adobe will remind customers of the actions they need to take to transition away from using a feature through email notifications, Actions Center alerts, or reminders in Cloud Manager.
 
 >[!WARNING]
 >
@@ -168,7 +168,7 @@ The APIs in the table below (click to expand to see it) have been announced as d
     <td>AEM as a Cloud Service does not support this internal slf4j API. <a href="#org.slf4j">See removal notes below.</a></td>
     <td>4/11/2022</td>
     <td>2/26/2026</td>
-  </tr> 
+  </tr>
     <tr>
     <td>com.drew.*</td>
     <td>Extracting metadata from images and videos should be done via Asset Compute in Cloud Service, or via Apache POI or Apache Tika.</td>
@@ -197,7 +197,7 @@ The APIs in the table below (click to expand to see it) have been announced as d
     <td>Usage of this API is not supported in AEM as a Cloud Service.</td>
     <td>10/31/2022</td>
     <td>2/26/2026</td>
-  </tr>  
+  </tr>
   <tr>
     <td>org.apache.sling.runmode</td>
     <td></td>
@@ -248,7 +248,7 @@ The APIs in the table below (click to expand to see it) have been announced as d
   </tbody>
 </table>
 </details>
-  
+
 ## Removed APIs {#removed-apis}
 
 This section lists APIs that have been deprecated and removed. Some APIs reference the API Removal Guidance section below.
@@ -341,6 +341,14 @@ To identify which deprecated Java APIs your code is using, integrate the [AEM as
 While you should remediate all deprecated APIs over time, prioritize any APIs listed in the Deprecated API table with a Target Removal date of February 26, 2026 (or earlier). In the AEM Analyser report, these APIs may appear with an effective removal date of 8/31/2025.
 
 After updating your code, verify that no deprecated API usage remains in Cloud Manager by checking the results of the code quality step.
+
+### General Guidelines
+
+If you use a 3rd party library that currently requires Deprecated API, try updating to a newer version of that 3rd party library.
+
+If you are using ACS AEM Commons, use at least version 6.11.0 (latest version is recommended) and make sure that you [include the version for Cloud Service](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) by specifying the classifier `cloud` for the content package.
+
+If the import of a Deprecated API is marked as `optional`, you should still try to remove this. However, such an optional usage will not block deployments. But your deployment might be affected, once the optional import is not satisfied anymore.
 
 ### Removal of `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
 
@@ -441,6 +449,7 @@ Action list:
 
 * Update ACS AEM Commons to latest version (at least 6.11.0)
 * Remove the code using `org.slf4j.event` and `org.slf4j.spi`
+* If you are using the Apache Kafka Client and include the OSGi wrapper bundle from Apache ServiceMix (`org.apache.servicemix.bundles.kafka-clients`), replace it with the [AEM Apache Kafka Client Wrapper](https://repo.maven.apache.org/maven2/com/adobe/aem/osgi/com.adobe.aem.osgi.kafka-clients/4.0.0_1.0/). This is the same version as the one from Apache ServiceMix with just the usage of those two packages removed.
 
 ### Usage of `org.apache.log4j` {#org.apache.log4j}
 
