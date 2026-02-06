@@ -152,8 +152,6 @@ These results make it easy to review the optimized output and immediately use it
 
 ## Limitations {#limitations-content-optimization}
 
-* Content Optimization Agent does not currently support PNG assets.
-
 * Setting background color is not supported.
 
 <!--
