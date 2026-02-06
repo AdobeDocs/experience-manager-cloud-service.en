@@ -3,13 +3,13 @@ title: Universal Editor Preview Release Notes
 description: These are the release notes for the preview release of the Universal Editor.
 feature: Release Information
 role: Admin
+exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
 ---
-
 # Universal Editor Preview Release Notes {#preview}
 
-These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 5 February 2026.
+These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 12 February 2026.
 
-These **preview** release notes are provided as a convenience so you know what changes to the Universal Editor are upcoming and you can test them by [switching to your preview environment.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
+These **preview** release notes are provided as a convenience so you know what changes to the Universal Editor are upcoming and you can test them by [switching to your preview version.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
 >[!TIP]
 >
@@ -21,8 +21,10 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming New Features {#what-is-new}
 
-* The move action is now available within [the context menu.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
+* Dynamic Media links are now supported.
 
 ## Upcoming Improvements {#other-improvements}
 
-* Publish to preview was enabled for AEM 6.5 when using the [`xwalk` plugin.](/help/implementing/universal-editor/component-definition.md#plugins)
+* A problem with incorrect URLs for videos has been fixed.
+* Creating multiple components with the same name no longer returns a 409.
+* The headless canvas now persists subsequent updates to a field in container.
