@@ -1,11 +1,11 @@
 ---
-title: Line Component in Interactive Communication Editor 
+title: Line Component in Interactive Communication Editor
 description: Line Component in Interactive Communication Editor in AEM Forms allows authors to insert horizontal or vertical lines within a communication layout.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+exl-id: 1ff5ac22-d8c8-4109-8334-217dbc239f1f
 ---
-
 # Line Component in Interactive Communication Editor 
 
 >[!NOTE]
@@ -106,6 +106,4 @@ The Line component is often used to:
 
 - Hide unnecessary lines to avoid distraction while preserving layout spacing. 
 
-The Line component in the Interactive Communication editor is a simple yet powerful design element. When used strategically, it enhances the visual structure of communication documents, helping users better navigate content and ensuring a cleaner, more polished layout. 
-
- 
+The Line component in the Interactive Communication editor is a simple yet powerful design element. When used strategically, it enhances the visual structure of communication documents, helping users better navigate content and ensuring a cleaner, more polished layout.
