@@ -40,7 +40,7 @@ responseTransformations:
             value: max-age=300
 ```
 
-For additional assistance or questions about cache management, please contact [Adobe Support](https://helpx.adobe.com/in/contact.html).
+For additional assistance or questions about cache management, contact [Adobe Support](https://helpx.adobe.com/in/contact.html).
 
 ## Active Cache Invalidation {#active-cache-invalidation}
 
@@ -96,7 +96,7 @@ The prolonged caching with event driven active cache invalidation is applicable 
 
 +++ **Can I opt-out of long-lived caching for my repository?**
 
-You can contact [Adobe Support](https://helpx.adobe.com/in/contact.html) explaining the rationale and Adobe will get in touch with you for discussion.
+To opt out of prolonged caching, contact [Adobe Support](https://helpx.adobe.com/in/contact.html) and provide the rationale for your request.
 
 +++
 
