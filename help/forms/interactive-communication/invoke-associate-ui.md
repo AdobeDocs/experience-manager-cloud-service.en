@@ -12,7 +12,7 @@ hidefromtoc: yes
 
 <span> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.</span>
 
-The Associate UI can be directly invoked on Publish instances, enabling customer-facing professionals such as field associates and service agents to generate personalized communications in real-time during customer interactions. 
+This article explains how to integrate the Associate UI with your application, enabling customer-facing professionals such as field associates and service agents to generate personalized Interactive Communications in real-time on Publish instances. 
 
 ## Prerequisites
 
@@ -33,6 +33,8 @@ Before integrating the Associate UI with your application, ensure you have:
 When configuring SAML 2.0 authentication for the Associate UI, you must apply the following specific settings in your OSGi configuration files.
 
 #### SAML Authentication Handler
+
+The SAML Authentication Handler is an OSGi factory configuration that allows multiple SAML configurations for different resource trees. This enables multi-site AEM deployments and allows you to add Associate UI resources to your existing SAML setup.
 
 Create the file `com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg.json` in `ui.config/src/main/content/jcr_root/apps/<project-name>/osgiconfig/config.publish`:
 
@@ -70,6 +72,8 @@ Create the file `com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg.
 
 #### Sling Authenticator
 
+The Sling Authenticator enforces authentication for accessing Associate UI resources on Publish.
+
 Update the file `org.apache.sling.engine.impl.auth.SlingAuthenticator~saml.cfg.json` in `ui.config/src/main/content/jcr_root/apps/<project-name>/osgiconfig/config.publish`:
 
 ```json
@@ -80,6 +84,8 @@ Update the file `org.apache.sling.engine.impl.auth.SlingAuthenticator~saml.cfg.j
 ```
 
 #### Dispatcher Filter
+
+Add the following rules to ensure that Interactive Communications APIs and Associate UI function correctly on the Publish instance.
 
 If not already present, add the following rules to your `dispatcher/src/conf.dispatcher.d/filters/filters.any` file:
 
@@ -334,11 +340,9 @@ function launchAssociateUI(icId, prefillService, prefillParams, options) {
 }
 ```
 
-The function accepts four parameters: the IC ID (required), the prefill service name, prefill service parameters, and additional options. The next section explains how these parameters are structured in the data payload.
+The function accepts four parameters: the IC ID (required), the prefill service name, prefill service parameters, and additional options. These parameters are structured into the data payload as described below.
 
 ### Step 4: Understand the Data Payload Structure
-
-The data payload specifies which Interactive Communication to load and how to prefill it with data.
 
 **Payload Format:**
 
@@ -428,7 +432,7 @@ Now you're ready to launch the Associate UI. Using the sample HTML page:
 
 1. **Enter the IC ID**: In the **IC ID** field, enter the identifier of your published Interactive Communication. This is the only required field.
 
-2. **Configure Prefill Service** (optional): If you want to prefill the IC with dynamic data, enter the Form Data Model service name in the **Prefill Service** field.
+2. **Configure Prefill Service** (optional): If you want to prefill the IC with dynamic data, enter the Form Data Model service name in the **Prefill Service** field. For example, use `FdmTestData` for sample data or `IC-FDM` for test data.
 
 3. **Add Service Parameters** (optional): In the **Service Parameters (JSON)** field, enter a JSON object with the parameters your prefill service requires. For example:
 
