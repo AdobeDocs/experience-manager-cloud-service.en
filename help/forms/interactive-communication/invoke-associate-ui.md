@@ -428,7 +428,7 @@ Use this to specify additional rendering options:
 
 ### Step 5: Enter the IC ID and Launch the Associate UI
 
-Now you're ready to launch the Associate UI. Using the sample HTML page:
+Now you're ready to launch the Associate UI using the sample HTML page:
 
 1. **Enter the IC ID**: In the **IC ID** field, enter the identifier of your published Interactive Communication. This is the only required field.
 
