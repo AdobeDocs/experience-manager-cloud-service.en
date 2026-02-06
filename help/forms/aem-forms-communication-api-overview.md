@@ -3,8 +3,8 @@ title: AEM Forms Communications APIs - Overview
 description: Overview of AEM Forms Communications APIs including authentication methods and complete API reference
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
+exl-id: 1f9fb00c-c284-45c1-a8ba-51a59dbaee3d
 ---
-
 # AEM Forms Communications APIs - Overview
 
 AEM Forms APIs provide a comprehensive suite of cloud-native APIs designed to help businesses automate document workflows. 

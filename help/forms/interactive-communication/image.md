@@ -4,8 +4,8 @@ description: Image Component in Interactive Communication Editor in AEM Forms to
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+exl-id: 247dcd95-9429-4fe9-88fc-c02b93b2f7e0
 ---
-
 # Image Component in Interactive Communication Editor 
 
 >[!NOTE]
@@ -90,4 +90,4 @@ The Image component is ideal for:
 
 - Set the image to show or hide conditionally if it's not always needed. 
 
-The Image component in AEM Interactive Communication plays a vital role in creating branded, personalized, and visually effective communications. With configurable properties, it enhances the user experience while maintaining design consistency across different formats. 
+The Image component in AEM Interactive Communication plays a vital role in creating branded, personalized, and visually effective communications. With configurable properties, it enhances the user experience while maintaining design consistency across different formats.

@@ -2,7 +2,7 @@
 title: Cache Management in Dynamic Media with Open APIs
 description: Cache Management in Dynamic Media with Open APIs
 role: User
-
+exl-id: 203a5291-edb5-4900-8b0a-32e1ebae5395
 ---
 # Cache Management in Dynamic Media with Open APIs {#cache-management-dynamic-media-open-apis}
 
