@@ -6,8 +6,8 @@ feature: Interactive Communication
 role: User, Developer, Admin
 hide: yes
 hidefromtoc: yes
+exl-id: f946ccea-86d0-4086-8208-9583b8206244
 ---
-
 # Integrate Associate UI in Your Application
 
 <span> The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.</span>
