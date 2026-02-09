@@ -4,9 +4,8 @@ description: Learn how to use Cloud Manager's Health Assessment. You can scan AE
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-
+exl-id: 5467a311-727d-4f67-ba43-4b6548431061
 ---
-
 # Health Assessment {#about-health-assessment}
 
 Health Assessment is an automated, non-intrusive scan for Production and Stage environments in Cloud Manager within AEM as a Cloud Service. It evaluates content, code, and configurations to find anti-patterns and departures from best practices, improving security and performance.
@@ -155,6 +154,3 @@ The following is the full list of anti-patterns and issues that Health Assessmen
 | Repository Structure | Patterns related to JCR repository organization and structure. |
 | Dependencies | Patterns related to code dependencies and version management. |
 | Statistics | Patterns that represent usage statistics and metrics. |
-
-
-
