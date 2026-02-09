@@ -421,8 +421,8 @@ curl -X POST "http://localhost:4503/bin/migration/step1?groupPath=/home/groups/c
 For each user that is a member of a local group:
 
 1. Ensure it has `rep:externalId`set (convert to external user if needed).
-2. For each group membership, add the corresponding external group principal to `rep:externalPrincipalNames`
-3. Update sync timestamps.
+1. For each group membership, add the corresponding external group principal to `rep:externalPrincipalNames`
+1. Update sync timestamps.
 
 >[!IMPORTANT]
 >
