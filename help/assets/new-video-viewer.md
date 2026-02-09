@@ -164,18 +164,10 @@ The New Video Viewer emits the following events during playback:
 
 ## Handling events in the parent window {#handling-events}
 
-To receive events from the New Video Viewer, add a message listener in the parent window and validate the message origin.
+The New Video Viewer sends playback-related messages to the parent page during video interactions.
 
-Example logic for handling events in the parent page:
+To handle these events, the parent application must listen for browser message events and validate the message origin before processing the data.
 
-window.addEventListener('message', (event) => {
-  const allowedOriginPattern = /^https:\/\/([a-zA-Z0-9-]+\.)?westpac\.com\.au$/;
-  if (!allowedOriginPattern.test(event.origin)) {
-    return;
-  }
+The event payload includes information such as the event type, playback state, current playback time, and additional metadata. These events can be used to support analytics tracking, custom interactions, or integration with external systems.
 
-  const { type, eventType, eventInfo, currentTime, timestamp } = event.data;
-  if (type === 'videoEvent') {
-    console.log(eventType, eventInfo, currentTime, timestamp);
-  }
-});
+Adobe recommends validating the message origin to ensure that events are processed only from trusted Dynamic Media domains.
