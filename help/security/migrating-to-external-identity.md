@@ -4,6 +4,7 @@ description: Technical guide for migrating local users and groups to an external
 solution: Experience Manager Sites
 feature: Security
 role: Developer, Admin
+exl-id: 1ed23f88-ec82-479f-ba24-a152367bcf27
 ---
 # Migrating to External Identity and Dynamic Group Membership {#migrating-to-external-identity}
 
