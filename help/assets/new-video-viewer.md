@@ -16,19 +16,16 @@ The New Video Viewer is intended for organizations that want a future-ready vide
 
 > **Note:** The New Video Viewer is provided as an additional option and does not automatically replace existing video viewers.
 
----
-
 ## Problem statement {#problem-statement}
 
 Existing video viewers in Dynamic Media support core playback requirements, but they offer limited extensibility and event-level integration for modern use cases.
 
 The New Video Viewer addresses these limitations by:
+
 * Providing a more consistent playback experience.
 * Allowing explicit viewer selection by authors.
 * Emitting structured events for programmatic consumption.
 * Supporting integration with external analytics and systems.
-
----
 
 ## How the New Video Viewer works {#how-it-works}
 
@@ -40,8 +37,6 @@ At a high level, the New Video Viewer works as follows:
 4. During playback, the viewer emits structured events to the parent window.
 5. Optional viewer modifiers control playback behavior.
 
----
-
 ## Key differences {#key-differences}
 
 | Area | Description |
@@ -51,17 +46,14 @@ At a high level, the New Video Viewer works as follows:
 | Extensibility | Emits structured playback events |
 | Integration | Works with existing Dynamic Media workflows |
 
----
-
 ## Use cases {#use-cases}
 
 Common use cases include:
+
 * Delivering a modern video playback experience on Sites pages.
 * Tracking video engagement through playback events.
 * Integrating video playback with external analytics or reporting systems.
 * Customizing playback behavior using viewer modifiers.
-
----
 
 ## Prerequisites {#prerequisites}
 
@@ -75,8 +67,6 @@ Before using the New Video Viewer, ensure the following prerequisites are met:
 
 ![Folder synced with Dynamic Media](assets/folder-syncing-with-dm.jpeg)
 
----
-
 ## Enable or disable the New Video Viewer {#enable-disable}
 
 ### Adobe Experience Manager as a Cloud Service {#aem-cloud}
@@ -85,8 +75,6 @@ The New Video Viewer is available starting with **AEM as a Cloud Service version
 
 * To enable the New Video Viewer, contact your organization’s Adobe Customer Care representative and request that the feature toggle be enabled.
 * To disable the New Video Viewer, contact Adobe Customer Care and request that the feature toggle be turned off.
-
----
 
 ### Adobe Experience Manager 6.5 {#aem-65}
 
@@ -109,8 +97,6 @@ To use the New Video Viewer on AEM 6.5, ensure that you are running **Service Pa
 2. Clear **Enable New Video Viewer**.
 3. Save the configuration.
 
----
-
 ## Preview the New Video Viewer {#preview}
 
 To preview the New Video Viewer from the asset details page:
@@ -120,8 +106,6 @@ To preview the New Video Viewer from the asset details page:
 3. Click **Copy URL** to obtain the preview link.
 
 ![Viewer rail – Video (new)](assets/viewer-rail.jpeg)
-
----
 
 ## Use the New Video Viewer in Sites {#use-in-sites}
 
@@ -134,8 +118,6 @@ The New Video Viewer is available through the existing Dynamic Media component i
 3. Add a video asset to the component.
 
 ![Drag Dynamic Media component](assets/drag-component.jpeg)
-
----
 
 ### Configure the viewer
 
@@ -152,8 +134,6 @@ The New Video Viewer is available through the existing Dynamic Media component i
 
 The video loads on the page using the New Video Viewer.
 
----
-
 ## Viewer modifiers {#viewer-modifiers}
 
 Viewer modifiers allow you to control playback behavior.
@@ -164,8 +144,6 @@ Viewer modifiers allow you to control playback behavior.
 | `muted=true` | Starts playback in a muted state |
 
 Modifiers are specified as query parameters in the **Viewer Modifiers** field.
-
----
 
 ## Supported events {#supported-events}
 
@@ -183,8 +161,6 @@ The New Video Viewer emits the following events during playback:
 | current_time | Periodic playback position |
 | fullscreen | Enter fullscreen |
 | un_fullscreen | Exit fullscreen |
-
----
 
 ## Handling events in the parent window {#handling-events}
 
