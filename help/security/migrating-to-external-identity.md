@@ -781,7 +781,7 @@ Before deploying migration servlets to production:
 
 ## Additional Resources {#additional-resources}
 
-* [User and Group Sync for Publish Tier](user-and-group-sync-for-publish-tier.md)
+* [User and Group Sync for Publish Tier](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 * [SAML 2.0 Authentication Handler](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html)
 * [External Identity Provider](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html)
 * [Dynamic Group Membership](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html)
