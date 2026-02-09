@@ -166,7 +166,8 @@ The New Video Viewer emits the following events during playback:
 
 To receive events from the New Video Viewer, add a message listener in the parent window and validate the message origin.
 
-```javascript
+Example logic for handling events in the parent page:
+
 window.addEventListener('message', (event) => {
   const allowedOriginPattern = /^https:\/\/([a-zA-Z0-9-]+\.)?westpac\.com\.au$/;
   if (!allowedOriginPattern.test(event.origin)) {
