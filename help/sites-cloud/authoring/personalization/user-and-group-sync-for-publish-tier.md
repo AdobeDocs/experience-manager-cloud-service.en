@@ -144,20 +144,22 @@ Unlike other AEM solutions, user and group membership synchronization in AEM as 
 >
 >Test the implementation at scale before enabling data synchronization in the production environment. Depending on the use case and the data persisted, some consistency and latency issues might occur.
 
-### Custom Code and Migration Requirements {#custom-code-migration}
+### Custom Code and Migration Requirements {#custom-code-and-migration-requirements}
 
 The following requirements apply only in cases where custom code is used to create local users or local groups. When Data Synchronization is enabled, such custom code must be updated to create external users and external groups with dynamic group membership.
 
 **Required Steps:**
 
 * **Modifications to custom code**: Any custom logic responsible for creating users or groups must be updated to:
+
   * Create external users by setting the `rep:externalId` property
   * Create external groups by setting the `rep:externalId` property
   * Implement dynamic group membership using the `rep:externalPrincipalNames` property, rather than using direct user-to-group relationships
 
 * **Migration of pre-existing data**: All existing local users and groups are required to be migrated to the external identity model before Data Synchronization is enabled in production environments.
 
-For detailed technical guidance on updating custom implementations and migrating existing users and groups, refer to [Migrating to External Identity and Dynamic Group Membership](migrating-to-external-identity.md).
+For detailed technical guidance on updating custom implementations and migrating existing users and groups, refer to [Migrating to External Identity and Dynamic Group Membership](/help/security/migrating-to-external-identity.md).
+
 ## Cache Considerations {#cache-considerations}
 
 Authenticated HTTP requests can be difficult to cache on both the CDN and Dispatcher since they carry the possibility of user-specific state being transferred as part of the request's response. Inadvertently caching authenticated requests and serving them to other requesting browsers can result in incorrect experiences, or even leaking protected or user data.
