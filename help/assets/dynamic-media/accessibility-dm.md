@@ -1,6 +1,6 @@
 ---
 title: Accessibility in Dynamic Media
-description: Learn how to work with video in Dynamic Media such as best practices for encoding videos, publishing videos to YouTube, and viewing video reports. Also learn how to add closed captioning, captions, or chapter markers to videos.
+description: Learn how to work with video in Dynamic Media such as best practices for encoding videos, and publishing videos to YouTube. Also learn how to add closed captioning, captions, or chapter markers to videos.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
@@ -29,7 +29,7 @@ The focus traversal follows the natural user interface element location on the s
 * In the Interactive Video editor, you can use the `Spacebar` to select an image and add it to a segment. In addition, you can use the `Backspace` key to delete the selected item from the **[!UICONTROL Content]** tab. Also, pressing `Tab` functions as desired to navigate between interactive elements on the page.
 * In the Image Crop/Smart Crop editor, you can do the following:
   * Use arrow keys to crop the frame size, or reposition the image, or both.
-  * The first `Tab` stop highlights the entire image frame. You can then use arrow keys on the keyboard to reposition the frame.
+  * The first `Tab` stop highlights the entire image frame. You can then use the arrow keys on the keyboard to reposition the frame.
   * The next four `Tab` stops are the frame's four corners. When focus is placed on a frame corner, the corner is highlight. Again, you can use arrow keys on the keyboard to move the focused corner.
   See [Editing the smart crop or smart swatch of a single image](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
@@ -49,12 +49,12 @@ Dynamic Media user interface elements work with assistive technologies such as s
 
 All out-of-the-box Dynamic Media viewers components support keyboard accessibility for your customers.
 
-See [Keyboard accessibility and navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) in the Dynamic Media Viewers Reference Guide.
+See [Keyboard accessibility and navigation](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility#) in the Dynamic Media Viewers Reference Guide.
 
 ## Assistive technology support in Dynamic Media viewers {#assistive-technology=support-for-dm-viewers}
 
 All Dynamic Media viewer components support ARIA (Accessible Rich Internet Applications) roles and attributes to improve integration with assistive technologies such as screen readers.
-See the **Assistive technology support** Help topic in any customizing viewer topic in the Dynamic Media Viewers Reference Guide. For example, see [Assistive technology support](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) for the Video viewer, or [Assistive technology support](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) for the Interactive Image viewer.
+See the **Assistive technology support** Help topic in any customizing viewer topic in the Dynamic Media Viewers Reference Guide. For example, see [Assistive technology support](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive#) for the Video viewer, or [Assistive technology support](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive#viewers-for-aem-assets-only) for the Interactive Image viewer.
 
 ## Closed caption support in [!DNL Dynamic Media] {#closed-caption-support}
 
@@ -65,5 +65,5 @@ See [Video in Dynamic Media - Add closed captions to video](/help/assets/dynamic
 
 >[!MORELIKETHIS]
 >
->* [Accessibility for Adobe solutions](https://www.adobe.com/accessibility.html)
+>* [Accessibility for Adobe solutions](https://www.adobe.com/trust/accessibility.html)
 >* [Accessibility in Experience Manager Assets](/help/assets/dynamic-media/accessibility-dm.md)

@@ -1,5 +1,5 @@
 ---
-title: Check and enable Adaptive Forms Core Components on AEM Forms as a Cloud Service
+title: Adaptive Forms Core Components on AEM Forms as a Cloud Service
 description: Learn how to check if Adaptive Forms Core Components are enabled and how to enable them if needed on AEM Forms as a Cloud Service.
 contentOwner: Khushwant Singh
 docset: CloudService
@@ -9,7 +9,7 @@ exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
 hide: yes
 hidefromtoc: yes
 ---
-# Check and Enable Adaptive Forms Core Components {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+# Adaptive Forms Core Components on AEM Forms as a Cloud Service{#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
 | Version | Article link |
 | -------- | ---------------------------- |
@@ -25,9 +25,9 @@ All **AEM Forms as a Cloud Service** environments include native support for cre
 For **AEM 6.5 Forms** and **AEM 6.5 LTS Forms** environments, Adaptive Forms Core Components are not enabled by default. You must use the AEM Archetype to add Adaptive Forms capabilities to your environment.
 
 Follow the relevant guides:
+
 - For AEM 6.5 Forms: [Enable Adaptive Forms Core Components on AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html).
 - For AEM 6.5 LTS Forms: [Enable Adaptive Forms Core Components on AEM 6.5 LTS Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components).
 
 **Note:** If any steps for enabling Adaptive Forms Core Components in older AEM 6.5 environments are unclear or environment-specific prerequisites exist, clarify these requirements prior to attempting enablement.
-
 
