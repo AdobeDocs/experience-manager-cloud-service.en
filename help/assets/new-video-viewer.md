@@ -8,67 +8,197 @@ exl-id:
 
 # New Video Viewer in Dynamic Media {#new-video-viewer-dynamic-media}
 
-## Overview of the New Video Viewer {#overview-new-video-viewer}
+The New Video Viewer for Dynamic Media introduces a modernized video playback experience in Adobe Experience Manager (AEM). It is designed to deliver a consistent and extensible viewing experience across authoring, preview, and Sites usage, while continuing to work with existing Dynamic Media workflows.
 
-## How the New Video Viewer works with Dynamic Media {#how-new-video-viewer-works}
+The viewer is available as a new option and can be explicitly selected by authors wherever supported. In addition to improved playback behavior, the New Video Viewer exposes structured playback events that can be consumed by parent applications. This enables use cases such as analytics tracking, integration with external systems, and custom playback-driven interactions.
 
-## Key differences between legacy and new video viewer {#legacy-vs-new-video-viewer}
+The New Video Viewer is intended for organizations that want a future-ready video experience without disrupting existing implementations.
 
-## Availability and enablement {#availability-enablement}
+> **Note:** The New Video Viewer is provided as an additional option and does not automatically replace existing video viewers.
 
-* Limited Availability status
-* Requesting feature enablement
+---
 
-## Using videos with the New Video Viewer {#using-videos-new-video-viewer}
+## Problem statement {#problem-statement}
 
-## Video delivery flow {#video-delivery-flow}
+Existing video viewers in Dynamic Media support core playback requirements, but they offer limited extensibility and event-level integration for modern use cases.
 
-## Viewer playback behavior {#viewer-playback-behavior}
+The New Video Viewer addresses these limitations by:
+* Providing a more consistent playback experience.
+* Allowing explicit viewer selection by authors.
+* Emitting structured events for programmatic consumption.
+* Supporting integration with external analytics and systems.
 
-* Play and pause
-* Seek and scrub
-* Full-screen playback
-* Autoplay and loop behavior
+---
 
-## Configuration attributes for the New Video Viewer {#configuration-attributes}
+## How the New Video Viewer works {#how-it-works}
 
-### Applying configuration attributes {#applying-configuration-attributes}
+At a high level, the New Video Viewer works as follows:
 
-* Using URL parameters
-* Using JavaScript API
-* Server-side configuration
+1. A video asset is ingested into a folder that is synced with Dynamic Media.
+2. The video can be previewed using the New Video Viewer from the asset details page.
+3. Authors can select the New Video Viewer when using the Dynamic Media component in AEM Sites.
+4. During playback, the viewer emits structured events to the parent window.
+5. Optional viewer modifiers control playback behavior.
 
-### Supported configuration attributes {#supported-configuration-attributes}
+---
 
-## JavaScript API reference {#javascript-api-reference}
+## Key differences {#key-differences}
 
-### VideoViewer class {#videoviewer-class}
+| Area | Description |
+|-----|-------------|
+| Viewer availability | Appears as a new option named **Video (new)** |
+| Author control | Viewer is explicitly selected |
+| Extensibility | Emits structured playback events |
+| Integration | Works with existing Dynamic Media workflows |
 
-### Viewer methods {#viewer-methods}
+---
 
-### Viewer callbacks {#viewer-callbacks}
+## Use cases {#use-cases}
 
-## Events in the New Video Viewer {#events-new-video-viewer}
+Common use cases include:
+* Delivering a modern video playback experience on Sites pages.
+* Tracking video engagement through playback events.
+* Integrating video playback with external analytics or reporting systems.
+* Customizing playback behavior using viewer modifiers.
 
-### Supported viewer events {#supported-viewer-events}
+---
 
-### Event communication using postMessage {#event-communication-postmessage}
+## Prerequisites {#prerequisites}
 
-## Integrating with analytics and external systems {#analytics-integration}
+Before using the New Video Viewer, ensure the following prerequisites are met:
 
-* Adobe Analytics integration
-* Third-party analytics integration
+| Requirement | Description |
+|------------|-------------|
+| Dynamic Media sync | The asset folder must be synced with Dynamic Media |
+| Video profile | A video profile must be applied to the folder |
+| Video asset | A video must be ingested into the folder |
 
-## Customizing the New Video Viewer {#customizing-video-viewer}
+![Folder synced with Dynamic Media](assets/folder-syncing-with-dm.jpeg)
 
-### Styling using CSS {#styling-using-css}
+---
 
-### Responsive behavior and device support {#responsive-behavior}
+## Enable or disable the New Video Viewer {#enable-disable}
 
-## Accessibility support {#accessibility-support}
+### Adobe Experience Manager as a Cloud Service {#aem-cloud}
 
-## Localization support {#localization-support}
+The New Video Viewer is available starting with **AEM as a Cloud Service version 2025.7.0**.
 
-## External video support {#external-video-support}
+* To enable the New Video Viewer, contact your organization’s Adobe Customer Care representative and request that the feature toggle be enabled.
+* To disable the New Video Viewer, contact Adobe Customer Care and request that the feature toggle be turned off.
 
-## Viewer SDK namespace {#viewer-sdk-namespace}
+---
+
+### Adobe Experience Manager 6.5 {#aem-65}
+
+To use the New Video Viewer on AEM 6.5, ensure that you are running **Service Pack 22 or later**.
+
+#### Enable the New Video Viewer
+
+1. Install the appropriate hotfix package:
+   * Service Pack 22: `cq-6.5.0-hotfix-53898-1.2.zip`
+   * Service Pack 23: `cq-6.5.0-hotfix-53898-sp23-1.2.zip`
+2. Open the Felix console.
+3. Locate the OSGi configuration:  
+   `com.day.cq.dam.scene7.impl.featureflags.NewVideoViewerFlag`
+4. Select **Enable New Video Viewer**.
+5. Save the configuration.
+
+#### Disable the New Video Viewer
+
+1. Open the same OSGi configuration in the Felix console.
+2. Clear **Enable New Video Viewer**.
+3. Save the configuration.
+
+---
+
+## Preview the New Video Viewer {#preview}
+
+To preview the New Video Viewer from the asset details page:
+
+1. Open a video asset that meets the prerequisites.
+2. In the Viewer rail, select **Video (new)**.
+3. Click **Copy URL** to obtain the preview link.
+
+![Viewer rail – Video (new)](assets/viewer-rail.jpeg)
+
+---
+
+## Use the New Video Viewer in Sites {#use-in-sites}
+
+The New Video Viewer is available through the existing Dynamic Media component in AEM Sites.
+
+### Add the Dynamic Media component
+
+1. Open the page in the Sites editor.
+2. Drag the **Dynamic Media** component onto the page.
+3. Add a video asset to the component.
+
+![Drag Dynamic Media component](assets/drag-component.jpeg)
+
+---
+
+### Configure the viewer
+
+1. Open the component settings.  
+   ![Open Dynamic Media settings](assets/open-settings.jpeg)
+
+2. From the **Viewer Preset** list, select **Video (new)**.  
+   ![Select Video (new) viewer preset](assets/viewer-preset.jpeg)
+
+3. Add any required viewer modifiers.  
+   ![Viewer modifiers](assets/additional-modifiers.jpeg)
+
+4. Save the configuration.
+
+The video loads on the page using the New Video Viewer.
+
+---
+
+## Viewer modifiers {#viewer-modifiers}
+
+Viewer modifiers allow you to control playback behavior.
+
+| Modifier | Description |
+|--------|-------------|
+| `autoplay=true` | Automatically starts playback |
+| `muted=true` | Starts playback in a muted state |
+
+Modifiers are specified as query parameters in the **Viewer Modifiers** field.
+
+---
+
+## Supported events {#supported-events}
+
+The New Video Viewer emits the following events during playback:
+
+| Event type | Description |
+|-----------|-------------|
+| play | Video starts playing |
+| pause | Video is paused |
+| seek | User seeks within the video |
+| load | Video is loaded |
+| close | Player is closed |
+| metadata | Metadata such as duration |
+| milestone | Playback milestone reached |
+| current_time | Periodic playback position |
+| fullscreen | Enter fullscreen |
+| un_fullscreen | Exit fullscreen |
+
+---
+
+## Handling events in the parent window {#handling-events}
+
+To receive events from the New Video Viewer, add a message listener in the parent window and validate the message origin.
+
+```javascript
+window.addEventListener('message', (event) => {
+  const allowedOriginPattern = /^https:\/\/([a-zA-Z0-9-]+\.)?westpac\.com\.au$/;
+  if (!allowedOriginPattern.test(event.origin)) {
+    return;
+  }
+
+  const { type, eventType, eventInfo, currentTime, timestamp } = event.data;
+  if (type === 'videoEvent') {
+    console.log(eventType, eventInfo, currentTime, timestamp);
+  }
+});
