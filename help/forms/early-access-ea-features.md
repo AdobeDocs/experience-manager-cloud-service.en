@@ -122,6 +122,8 @@ Interactive Communications on Cloud is a powerful solution for creating, managin
 
 * **XDP File Editing**: You can now edit XDP files in a browser instead of Forms Designer that runs only on Microsoft Windows desktop. 
 
+* **Invoke the Associate UI on a Publish instance**: You can now invoke the Associate UI directly on Publish instances. This capability defines the required configuration, payload structure, and invocation flow, simplifying integration and accelerating deployment across environments.
+
 ##### Dynamic Page Numbering 
 
 Automatically display "Page # of ##" on master pages for clear, consistent pagination across multi-page documents. 
@@ -306,6 +308,8 @@ Storing PDFs in Azure Blob Storage allows for centralized management of document
 * [Enhanced Navigation with Event Payload Support](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service): The **Navigate To** action in the Invoke Service handlers supports `EVENT_PAYLOAD`, allowing form authors to configure follow-up actions based on event responses. 
   
 * [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters): Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly.
+
+* [Retrieve property values from a JSON array](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): Invoke an API with a custom function to extract values from a JSON array and bind them directly to form fields.
 
 ## See also
 

@@ -117,6 +117,10 @@ For example, when the user opens **Country of Citizenship**, the list of countri
 
 Similarly, **Country of Passport Issuance** and **Destination Country** use the same API call, ensuring consistent and up-to-date data across all three fields.
 
+>![NOTE]
+>
+> You can [retrieve property values from a JSON array by invoking an API and using a custom function](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). This approach lets you extract values and bind them directly to form fields.
+
 ## Implementing Retry Mechanism for API Failures
 
 When an API request fails, it's often useful to retry the request before reporting an error to the user. You can implement a polling and retry mechanism by writing custom code in the **function.js** file. 
@@ -191,10 +195,6 @@ function retryHandler(requestFn) {
 ```
 
 In the above code, the **retryHandler** function manages API requests with automatic retries in case of failure. It takes a request function (requestFn) and attempts the request up to two times, adding metadata for each retry.
-
->[!NOTE]
->
-> For detailed steps on how to add custom functions, refer to the [Introduction to Custom Functions for Adaptive Forms based on Core Components](/help/forms/create-and-use-custom-functions.md) article.
 
 ## Frequently Asked Questions
 
