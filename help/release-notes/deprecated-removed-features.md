@@ -55,6 +55,7 @@ The functionality in the table below have been announced as deprecated, but have
 | [!DNL Foundation]       | Integrations using credentials generated from Adobe Developer Console projects are gradually losing support for Service Account (JWT) credentials. As of May 1, 2024, new Service Account (JWT) credentials cannot be created in Adobe Developer Console. Existing Service Account (JWT) credentials remain usable for configured integrations until January 1, 2025, after which they stop working, requiring customers to migrate to OAuth Server-to-Server credentials. [Learn more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console).| [Migrate](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) to OAuth Server-to-Server credentials. |
 | [!DNL Foundation]       | Publish Content Tree Workflow and the related Publish Content Tree Workflow Step, which was used for replications of hierarchies of content. | Use [Tree Activation Workflow Step](/help/operations/replication.md#tree-activation), which is more performant. |
 | [!DNL Foundation]       | Using YUI to compress/minify JavaScript client libraries. Adobe does not plan to further update the YUI library.| Adobe recommends customers to switch to Google Closure Compiler (GCC) for their implementation. |
+| [!DNL Foundation]       | Support for com.adobe.granite.oauth.server | Adobe IMS Integration |
 
 ## Removed Functionality {#removed-features}
 
@@ -70,7 +71,6 @@ This section lists functionality that has been removed.
 | [!DNL Foundation]       | Support for Apache Sling datasources (OSGi bundle org.apache.sling.datasource) | N/A | Removed |
 | [!DNL Foundation]       | Support for JST scripting templates (OSGi bundle org.apache.sling.scripting.jst) | N/A | Removed |
 | [!DNL Foundation]       | Support for the Apache Felix Http Whiteboard | OSGi Http Whiteboard | March 2022 |
-| [!DNL Foundation]       | Support for com.adobe.granite.oauth.server | Adobe IMS Integration | March 2023 |
 | [!DNL Foundation]       | Support for org.apache.sling.serviceusermapping feature to [get the service user id](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | N/A | 8/30/24 |
 | [!DNL Foundation]       | Java 11 runtime is deprecated and has been replaced by Adobe with Java 21 runtime. Note that it is acceptable for code to still be built with Java 11 (Java 17 and 21 are the other options) | Java 21 runtime is applied. To ensure compatibility, it is essential to update library versions as outlined in [Runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) | March 5/29/25 |
 
