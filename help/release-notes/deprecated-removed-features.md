@@ -24,14 +24,15 @@ During the deprecation time window, Adobe will remind customers of the actions t
 >In some cases, removal of a feature may be required before deploying a new Cloud Manager build or upgrading to the latest version of AEM as a Cloud Service.
 
 >[!IMPORTANT]
->  Several [deprecated APIs](#aem-apis) are targeting removal on **February 26, 2026**. Please review these key dates and impacts:
 >
-> * **Starting January 26, 2026**: Actions Center notification emails are sent **weekly per environment** as a reminder to remove usage of these APIs.
-> * **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed.
-> * **March 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
-> * **April 30, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
+>Several [deprecated APIs](#aem-apis) are targeting removal on **February 26, 2026**. Please review these key dates and impacts:
 >
-> To prevent deployment blocks, remove API usage before March 26, 2026.
+>* **Starting January 26, 2026**: Actions Center notification emails are sent **weekly per environment** as a reminder to remove usage of these APIs.
+>* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed.
+>* **March 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
+>* **April 30, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
+>
+>To prevent deployment blocks, remove API usage before March 26, 2026.
 
 ## Deprecated Functionality {#deprecated-features}
 
