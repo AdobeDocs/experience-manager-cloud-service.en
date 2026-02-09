@@ -3,8 +3,8 @@ title: Discovery Agent Overview
 description: Learn how to use the Discovery Agent to deliver relevant AEM content on demand through natural, conversational prompts for a streamlined, click-free discovery experience.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
+exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
 ---
-
 # Discovery Agent {#discovery-agent}
 
 The Discovery Agent delivers AEM content on demand through natural, conversational prompts for a streamlined, click-free discovery experience. It intelligently searches across Assets, Content Fragments, and Adaptive Forms to deliver relevant materials such as images, videos, PDF documents, articles, and form templates. Using natural language, you can search for content without building complex queries or applying filters in the AEM Assets interface. Based on your prompt, the agent returns curated results along with asset metadata and delivery URLs, ready to be embedded in other applications.
@@ -164,3 +164,6 @@ Specify concise details in your natural language prompts so that the agent can r
 
 * Use your organization-specific metadata, such as categories (running shoes, electronics), seasons (autumn, spring), events (black Friday, product launch), and channels (Web, Email, Print) to further filter content.
 
+## Limitations {#limitations-discovery-agent}
+
+Discovery Agent supports dimension-based prompts only for image and SVG format types. For example, `Find images wider than 1080px`.

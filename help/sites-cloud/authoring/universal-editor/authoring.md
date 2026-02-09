@@ -27,17 +27,25 @@ To do this, the Universal Editor provides content authors with an intuitive UI t
 
 ## Editing Content {#editing-content}
 
-Editing content is simple and intuitive. As you mouse over content in the editor, editable content is highlighted with a thin blue outline.
+Editing content is simple and intuitive. As you mouse over content in the editor, editable content is highlighted with a thin, light blue outline and a badge.
 
-![Editable content is highlighted by a blue box](assets/editable-content.png)
+![Editable content is highlighted by a light blue box](assets/editable-content.png)
+
+Tapping or clicking the highlighted content is selected and the thin, light blue outline becomes a dark blue outline with a badge.
+
+![Selected content is highlighted by a dark blue box](assets/selected-content.png)
 
 >[!TIP]
 >
 >By default, tapping or clicking on content selects it for editing. If you want to navigate your content by following links, switch to [preview mode.](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-Depending on the content you select, you may have different in-place editing options and you may additional information and options for the content in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Depending on the content you select, you may have different in-place editing options and additional information and options for the content in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
-Every piece of editable content is badged with the type of content it is. Depending on the content, you can click this badge for quick access to edit actions.
+### Context Menu {#context-menu}
+
+Every piece of editable content is badged with the type of content it is. 
+
+You can click this badge for quick access to a context menu with edit actions. Right-clicking a non-selected editable item automatically selects it and also opens the context menu.
 
 ![Editable badge options](assets/editable-badge.png)
 
@@ -47,7 +55,7 @@ You can edit the text in place by double-clicking or double-tapping the componen
 
 ![Editing content](assets/editing-content.png)
 
-The thin blue outline turns to a heavy blue outline to indicate select and a cursor appears. Make your changes and then press enter/return or select outside of the text box to save your changes.
+The thin, light blue outline turns to a dark blue outline to indicate selection and a cursor appears. Make your changes and then press enter/return or select outside of the text box to save your changes.
 
 When you select the text component, its details are shown in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) You can also edit the text in the panel.
 
@@ -63,9 +71,9 @@ You can edit the text in place by double-clicking or double-tapping the componen
 
 For your convenience, formatting options and details on your text are available in two places.
 
-#### The Context Menu {#context-menu}
+#### The Rich Text Context Menu {#rich-text-context-menu}
 
-The context menu opens above the rich text block and offers basic formatting options in context. Due to space limitations, some options may be hidden behind the ellipsis button.
+A context menu opens above the rich text block and offers basic formatting options in context. Due to space limitations, some options may be hidden behind the ellipsis button.
 
 ![Rich text context menu](assets/rich-text-context-menu.png)
 
@@ -188,7 +196,32 @@ The selected component deleted.
 >
 >Use the hot key `Shift+Backspace` to delete the selected component from its container.
 
-### Reordering Components {#reordering-components}
+### Reordering and Moving Components {#reordering-components}
+
+You can move and reorder components using the context menu or the content tree.
+
+#### Move Components with the Context Menu {#move-context-menu}
+
+1. Right-click on a component or click on the selected component's badge to open the [context menu.](#context-menu)
+1. Select the move option desired.
+   * Move to top
+   * Move up
+   * Move down
+   * Move to bottom
+   ![Move options in context menu](assets/move-options-in-conext-menu.png)
+
+The component is moved in both the editor and the content tree.
+
+>[!TIP]
+>
+>Use the hot keys `Command-U` or `Shift-Command-U` to move up or to the top, respectively.
+>Use the hot keys `Command-J` or `Shift-Command-J` to move down or to the bottom, respectively.
+
+>[!NOTE]
+>
+>The context menu options can only move components within their containers. If you wish to move components between containers, [use the content tree.](#reorder-content-tree)
+
+#### Reorder Components with the Content Tree {#reorder-content-tree}
 
 1. If not already in [content tree mode](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), switch to it.
 1. Select a container component in the content tree or in the editor.

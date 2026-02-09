@@ -3,13 +3,13 @@ title: Universal Editor Preview Release Notes
 description: These are the release notes for the preview release of the Universal Editor.
 feature: Release Information
 role: Admin
+exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
 ---
-
 # Universal Editor Preview Release Notes {#preview}
 
-These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 29 January 2026.
+These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 12 February 2026.
 
-These **preview** release notes are provided as a convenience so you know what changes to the Universal Editor are upcoming and you can test them by [switching to your preview environment.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
+These **preview** release notes are provided as a convenience so you know what changes to the Universal Editor are upcoming and you can test them by [switching to your preview version.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
 >[!TIP]
 >
@@ -21,15 +21,10 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming New Features {#what-is-new}
 
-* Remove component method was exposed to `editorActions`.
-* Copy component method was exposed to `editorActions`.
-* Definitions were exposed to extensibility.
-* Move component method was exposed to `editorActions`.
-* Add component method was exposed to `editorActions`.
-* Version 2.0 of the Document Authoring API is released.
+* Dynamic Media links are now supported.
 
 ## Upcoming Improvements {#other-improvements}
 
-* The `content` extensibility was renamed to `details` to follow API schema.
-* Contextual menu behavior was improved.
-* Fixed a bug when clicking the badge of an editable item so that the context menu opens properly.
+* A problem with incorrect URLs for videos has been fixed.
+* Creating multiple components with the same name no longer returns a 409.
+* The headless canvas now persists subsequent updates to a field in container.
