@@ -14,12 +14,12 @@ The following section outlines the technical release notes for the current maint
 
 Summarized below are the continuous improvements for maintenance release X, which was publicly released on February 18, 2026. The previous maintenance release was release 24288.
 
-The 2026.2.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+The 2026.2.0 feature activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
 
 ### Enhancements {#enhancements-X}
 
-None.
+* SITES-40408: GraphQL endpoint returns 404 due to the custom dispatcher rewrite rules.
 
 ### Fixed Issues {#fixed-issues-X}
 
