@@ -135,6 +135,14 @@ Perform the following actions to connect your Forms as a Cloud Service instance 
 
 Your Forms as a Cloud Service instance is now connected with Microsoft&reg; Power Automate. You can now send Adaptive Forms data to a Power Automate flow. 
 
+>[!IMPORTANT]
+>
+>Tokens used for the Microsoft&reg; Power Automate connection expire after 90 days.
+>
+> To keep the integration working, re-authenticate and re-publish both the Microsoft&reg; Power Automate Dataverse and Microsoft&reg; Power Automate Flow Service cloud configurations before or when the token expires, use the steps documented at [Publish both the Microsoft&reg; Power Automate Dataverse and Microsoft&reg; Power Automate Flow Service Cloud Configurations](#publish-microsoft-power-automate-dataverse-cloud-configuration).
+>
+> For details on token lifetime policies, see the [Microsoft Entra documentation on configurable token lifetimes](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens). If the token is not renewed, form submissions to Power Automate may fail.
+
 ## Use the Invoke a Microsoft&reg; Power Automate flow submit action to send data to a Power Automate Flow {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 
 After you [Connect your Forms as a Cloud Service instance with Microsoft&reg; Power Automate](#connect-forms-server-with-power-automate), perform the following action to configure your adaptive form to send captured data to a Microsoft&reg; flow on form submission.
