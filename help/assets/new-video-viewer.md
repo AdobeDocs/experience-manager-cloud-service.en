@@ -14,9 +14,7 @@ The viewer is available as a new option and can be explicitly selected wherever 
 
 The New Video Viewer is intended for organizations that want a future-ready video experience without disrupting existing implementations.
 
-> **Note:** The New Video Viewer is provided as an additional option and does not automatically replace existing video viewers.
-
-> **Note (Limited availability):** The New Video Viewer is available only in selected environments. Availability depends on feature enablement and may vary by account.
+> **Note:** The New Video Viewer is provided as an additional option and does not automatically replace existing video viewers. The New Video Viewer is available only in selected environments. Availability depends on feature enablement and may vary by account.
 
 ## Problem statement {#problem-statement}
 
