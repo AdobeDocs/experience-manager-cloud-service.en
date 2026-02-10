@@ -50,9 +50,9 @@ Adobe Experience Manager (AEM) beta programs are a way for customers to get acce
 Getting early access to features that Adobe is developing lets customers and partners provide feedback and shape product development. It also helps them prepare to adopt new capabilities before general availability.
 
 **Current beta programs**
-The following sections list active beta programs.
+The following sections list active beta and Explorer programs.
 
-### Agents in AEM (Beta program) {#agents-in-aem-beta-program}
+### Agents in AEM (Explorer program) {#agents-in-aem-beta-program}
 
 Gain early access to powerful, new AEM agentic capabilities across production, governance, optimization, discovery, and development. Your feedback directly shapes Adobe's roadmap and final features. See [Overview of Agents in AEM](/help/ai-in-aem/agents/overview.md) to learn more.
 

@@ -1,11 +1,11 @@
 ---
-title: Check Box Component in Interactive Communication Editor 
+title: Check Box Component in Interactive Communication Editor
 description: Check Box Component in Interactive Communication Editor in AEM Forms allows users to make single or multiple binary selections (yes/no, true/false).
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+exl-id: 636e9699-a8db-4cb0-aa9f-0602939006df
 ---
-
 # Check Box Component in Interactive Communication Editor 
 
 >[!NOTE]
@@ -116,6 +116,4 @@ Check boxes can be placed inside layout grids or panels and grouped together for
 
 - Use visibility rules when checkboxes are dependent on prior inputs or conditions. 
 
-The Check Box component in the Interactive Communication editor is a simple yet essential component for binary inputs. With support for styling, conditional presence, and flexible data binding, it plays a key role in enhancing interactivity and user control in smart digital forms. When implemented with thoughtful labels, consistent styling, and meaningful data integration, checkboxes contribute significantly to a smooth and intuitive form experience. 
-
- 
+The Check Box component in the Interactive Communication editor is a simple yet essential component for binary inputs. With support for styling, conditional presence, and flexible data binding, it plays a key role in enhancing interactivity and user control in smart digital forms. When implemented with thoughtful labels, consistent styling, and meaningful data integration, checkboxes contribute significantly to a smooth and intuitive form experience.

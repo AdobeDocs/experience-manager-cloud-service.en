@@ -4,8 +4,8 @@ description: Create Rules in Interactive Communication Editor allows authors to 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+exl-id: 9538ae2e-e0f5-4e85-943e-00fe99a64725
 ---
-
 # Rule Editor in Interactive Communication Editor
 
 
@@ -104,6 +104,3 @@ Rule Editor is widely used to ensure forms and communications are responsive and
 
 
 By configuring rules thoughtfully, authors can build communications that respond intelligently to data and user actions—streamlining processes, reducing errors, and delivering a seamless, personalized experience.
-
-
-

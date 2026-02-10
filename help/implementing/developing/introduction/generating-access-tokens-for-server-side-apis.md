@@ -218,7 +218,6 @@ To achieve this refresh extension, do the following:
 
 * After pressing the button, a set of credentials that includes a new certificate is generated. Install the new credentials on your off-AEM server and ensure that connectivity is as expected, without removing the old credentials.
 * Make sure that the new credentials are used instead of the old ones when generating the access token.
-* Optionally revoke (and then delete) the prior certificate so it can no longer be used to authenticate with AEM as a Cloud Service.
 
 ## Credentials Revocation {#credentials-revocation}
 
@@ -246,3 +245,15 @@ If the private key is compromised, you must create credentials with a new certif
    ![Revoke certificate confirmation](/help/implementing/developing/introduction/assets/s2s-revokecertificateconfirmation.png)
 
 1. Finally, delete the compromised certificate.
+
+### Note on Revocating Individual Certificates {#note-on-recovacting-individual-certificates}
+
+For the JWT handshake (used to retrieve a bearer token) all that needs to be satisfied is that:
+
+1. You have the private key
+1. There are one or more active certificates present under the respective private key in the Developer Console
+1. During the retrieval of the token (JWT handshake), IMS checks that the JWT signature matches with any bound and active (not expired) certificate on record in our system, which you can see in the console.
+
+Adding a new certificate under a PK could make it seem that revoked certificates are still usable. In effect, all certificates under a PK are equivalent. If at one is active, all are considered active.
+
+If you consider this to be a security issue, you should create a separate private key, and revoke all certificates on the old private key.
