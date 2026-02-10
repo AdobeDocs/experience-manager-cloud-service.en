@@ -3,8 +3,8 @@ title: Communication creation skill
 description: Learn about the Experience Production Agent's Communication creation skill and how to use natural language to create interactive communications.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
+exl-id: 49111cdb-e714-4590-8b81-382377083d6e
 ---
-
 # Communication Creation skill {#ic-creation-skill}
 
 >[!NOTE]
@@ -74,4 +74,3 @@ To enable the Experience Production Agent for your organization, activation must
 * Or, contact your designated Adobe account team.
 
 When reaching out, be sure to provide your AEM as a Cloud Service Organization ID.
-

@@ -17,11 +17,22 @@ Adobe regularly reviews features, including APIs and configurations, to ensure t
 
 When a deprecation is announced, the feature will only remain available for a limited period and customers must remove all usage before any specified removal date. Adobe will provide reasonable notice and guidance to support a smooth transition.
 
-During the deprecation time window, Adobe will remind customers of the actions they need to take to transition away from using a feature through email notifications, Actions Center alerts, or reminders in Cloud Manager. 
+During the deprecation time window, Adobe will remind customers of the actions they need to take to transition away from using a feature through email notifications, Actions Center alerts, or reminders in Cloud Manager.
 
 >[!WARNING]
 >
 >In some cases, removal of a feature may be required before deploying a new Cloud Manager build or upgrading to the latest version of AEM as a Cloud Service.
+
+>[!IMPORTANT]
+>
+>Several [deprecated APIs](#aem-apis) are targeting removal on **February 26, 2026**. Please review these key dates and impacts:
+>
+>* **Starting January 26, 2026**: Actions Center notification emails are sent **weekly per environment** as a reminder to remove usage of these APIs.
+>* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed.
+>* **March 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
+>* **April 30, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
+>
+>To prevent deployment blocks, remove API usage before March 26, 2026.
 
 ## Deprecated Functionality {#deprecated-features}
 
@@ -45,6 +56,7 @@ The functionality in the table below have been announced as deprecated, but have
 | [!DNL Foundation]       | Integrations using credentials generated from Adobe Developer Console projects are gradually losing support for Service Account (JWT) credentials. As of May 1, 2024, new Service Account (JWT) credentials cannot be created in Adobe Developer Console. Existing Service Account (JWT) credentials remain usable for configured integrations until January 1, 2025, after which they stop working, requiring customers to migrate to OAuth Server-to-Server credentials. [Learn more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console).| [Migrate](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) to OAuth Server-to-Server credentials. |
 | [!DNL Foundation]       | Publish Content Tree Workflow and the related Publish Content Tree Workflow Step, which was used for replications of hierarchies of content. | Use [Tree Activation Workflow Step](/help/operations/replication.md#tree-activation), which is more performant. |
 | [!DNL Foundation]       | Using YUI to compress/minify JavaScript client libraries. Adobe does not plan to further update the YUI library.| Adobe recommends customers to switch to Google Closure Compiler (GCC) for their implementation. |
+| [!DNL Foundation]       | Support for com.adobe.granite.oauth.server | Adobe IMS Integration |
 
 ## Removed Functionality {#removed-features}
 
@@ -60,13 +72,23 @@ This section lists functionality that has been removed.
 | [!DNL Foundation]       | Support for Apache Sling datasources (OSGi bundle org.apache.sling.datasource) | N/A | Removed |
 | [!DNL Foundation]       | Support for JST scripting templates (OSGi bundle org.apache.sling.scripting.jst) | N/A | Removed |
 | [!DNL Foundation]       | Support for the Apache Felix Http Whiteboard | OSGi Http Whiteboard | March 2022 |
-| [!DNL Foundation]       | Support for com.adobe.granite.oauth.server | Adobe IMS Integration | March 2023 |
 | [!DNL Foundation]       | Support for org.apache.sling.serviceusermapping feature to [get the service user id](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | N/A | 8/30/24 |
 | [!DNL Foundation]       | Java 11 runtime is deprecated and has been replaced by Adobe with Java 21 runtime. Note that it is acceptable for code to still be built with Java 11 (Java 17 and 21 are the other options) | Java 21 runtime is applied. To ensure compatibility, it is essential to update library versions as outlined in [Runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) | March 5/29/25 |
 
 ## Deprecated APIs {#aem-apis}
 
 The APIs in the table below (click to expand to see it) have been announced as deprecated, but have not yet been removed.  Usage of these APIs must cease before the target removal date or you risk issues related to performance, availability, and security. Some APIs reference the API Removal Guidance section below.
+
+>[!IMPORTANT]
+> Several APIs are scheduled for removal on **February 26, 2026**. Please review these key dates and impacts:
+>
+> * **Starting January 26, 2026**: Actions Center notification emails are sent **weekly per environment** as a reminder to remove usage of these APIs.
+> * **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed.
+> * **March 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
+> * **April 30, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
+>
+> To prevent deployment blocks, remove API usage before March 26, 2026.
+
 
 <details>
   <summary>Expand to see the list of deprecated APIs.</summary>
@@ -82,101 +104,101 @@ The APIs in the table below (click to expand to see it) have been announced as d
     <td>org.apache.sling.commons.auth<br>org.apache.sling.commons.auth.spi</td>
     <td>Use Sling's Auth Core/Auth Core SPI interfaces as an alternative. <a href="#org.apache.sling.commons.auth">See removal notes below.</a></td>
     <td>2015</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
 <td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread</td>
     <td>The Eclipse Jetty and Felix Http Jetty packages are no longer supported. <a href="#org.eclipse.jetty">See removal notes below.</a></td>
     <td>5/27/2021</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
  <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
     <td>Usage of this API is not supported in AEM as a Cloud Service. <a href="#com.mongodb">See removal notes below.</a></td>
     <td>5/27/2021</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
    <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
     <td>This API is deprecated as Apache Abdera is a retired project since 2017. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">See removal notes below.</a></td>
     <td>7/29/2021</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
     <td>This API is deprecated as Apache Abdera is a retired project since 2017. <a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">See removal notes below.</a></td>
     <td>4/8/2019</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
     <td>The Apache Felix Http Whiteboard is not supported anymore. Migrate your code to the OSGi Http Whiteboard. <a href="#org.apache.felix.http.whiteboard">See removal notes below.</a></td>
     <td>1/27/2022</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
     <td>This API is deprecated. Migrate your code to the XML APIs provided by the JDK.</td>
     <td>1/27/2022</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
     <td>AEM as a Cloud Service does not support this internal log back API. <a href="#ch.qos.logback">See removal notes below.</a></td>
     <td>1/27/2022</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
     <td>AEM as a Cloud Service does not support this internal log4j API. <a href="#org.slf4j">See removal notes below.</a></td>
     <td>1/27/2022</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
     <td>Apache Log4j 1 has reached its end of life in 2015 and is no longer supported. <a href="#org.apache.log4j">See removal notes below.</a></td>
     <td>1/27/2022</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
     <td>The Google Guava Core Libraries are deprecated in Cloud Service. <a href="#com.google.common">See removal notes below.</a></td>
     <td>5/15/2023</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.slf4j.event</td>
     <td>AEM as a Cloud Service does not support this internal slf4j API. <a href="#org.slf4j">See removal notes below.</a></td>
     <td>4/11/2022</td>
-    <td>8/31/2025</td>
-  </tr> 
+    <td>2/26/2026</td>
+  </tr>
     <tr>
     <td>com.drew.*</td>
     <td>Extracting metadata from images and videos should be done via Asset Compute in Cloud Service, or via Apache POI or Apache Tika.</td>
     <td>9/17/2024</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.blob.*</td>
     <td>This API is internal use only.</td>
     <td>9/23/2024</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.memory</td>
     <td>This API is internal use only.</td>
     <td>9/23/2024</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
 <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
     <td>The Felix web console is not supported in Cloud environments. <a href="#org.apache.felix.webconsole">See removal notes below.</a></td>
     <td>4/30/2021</td>
-    <td>8/31/2025</td>
+    <td>2/26/2026</td>
   </tr>
 <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>Usage of this API is not supported in AEM as a Cloud Service.</td>
     <td>10/31/2022</td>
-    <td>8/31/2025</td>
-  </tr>  
+    <td>2/26/2026</td>
+  </tr>
   <tr>
     <td>org.apache.sling.runmode</td>
     <td></td>
@@ -227,7 +249,7 @@ The APIs in the table below (click to expand to see it) have been announced as d
   </tbody>
 </table>
 </details>
-  
+
 ## Removed APIs {#removed-apis}
 
 This section lists APIs that have been deprecated and removed. Some APIs reference the API Removal Guidance section below.
@@ -314,6 +336,20 @@ This section lists APIs that have been deprecated and removed. Some APIs referen
 ## API Removal Guidance {#api-removal-guidance}
 
 This section reflects API removal guidance for various APIs in the tables above.
+
+To identify which deprecated Java APIs your code is using, integrate the [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)  into your Maven project and run it locally. The report lists all detected deprecated API usages and indicates which OSGi bundle is referencing each API.
+
+While you should remediate all deprecated APIs over time, prioritize any APIs listed in the Deprecated API table with a Target Removal date of February 26, 2026 (or earlier). In the AEM Analyser report, these APIs may appear with an effective removal date of 8/31/2025.
+
+After updating your code, verify that no deprecated API usage remains in Cloud Manager by checking the results of the code quality step.
+
+### General Guidelines
+
+If you use a 3rd party library that currently requires Deprecated API, try updating to a newer version of that 3rd party library.
+
+If you are using ACS AEM Commons, use at least version 6.11.0 (latest version is recommended) and make sure that you [include the version for Cloud Service](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) by specifying the classifier `cloud` for the content package.
+
+If the import of a Deprecated API is marked as `optional`, you should still try to remove this. However, such an optional usage will not block deployments. But your deployment might be affected, once the optional import is not satisfied anymore.
 
 ### Removal of `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
 
@@ -414,6 +450,7 @@ Action list:
 
 * Update ACS AEM Commons to latest version (at least 6.11.0)
 * Remove the code using `org.slf4j.event` and `org.slf4j.spi`
+* If you are using the Apache Kafka Client and include the OSGi wrapper bundle from Apache ServiceMix (`org.apache.servicemix.bundles.kafka-clients`), replace it with the [AEM Apache Kafka Client Wrapper](https://repo.maven.apache.org/maven2/com/adobe/aem/osgi/com.adobe.aem.osgi.kafka-clients/4.0.0_1.0/). This is the same version as the one from Apache ServiceMix with just the usage of those two packages removed.
 
 ### Usage of `org.apache.log4j` {#org.apache.log4j}
 

@@ -98,6 +98,10 @@ A field object has the following type definition.
 |`validation`|`ValidationType`|Validation rule or rules for the field|No|
 |`raw`|`unknown`|Raw data which can be used by the component|No|
 
+>[!NOTE]
+>
+>The underscore (`_`) is not allowed in field names when using the [`aem` or `xwalk` plugins.](/help/implementing/universal-editor/component-definition.md#plugins)
+
 ### name Field and Nesting {#nesting}
 
 The `name` field can point directly to a property of the current resource, or in the case of components in `cq:Pages`, it can also use a path to a nested property. For example:
@@ -128,6 +132,7 @@ The following are the component types that are possible to use for rendering fie
 |[Select](#select)|`select`|
 |[Tab](#tab)|`tab`|
 |[Text](#text)|`text`|
+|[Text Area](#textarea)|`textarea`|
 
 #### AEM Tag {#aem-tag}
 
@@ -896,5 +901,33 @@ Text allows for a single line of text input.  It includes additional validation 
 >[!TAB Screenshot]
 
 ![Screenshot of text component type](assets/component-types/simpletext.png)
+
+>[!ENDTABS]
+
+#### Text Area {#textarea}
+
+Text area allows for multiple lines of text input.
+
+>[!BEGINTABS]
+
+>[!TAB Sample]
+
+```json
+{
+  "id": "longertext",
+  "fields": [
+    {
+      "component": "textarea",
+      "name": "textarea",
+      "label": "Text Area",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
+>[!TAB Screenshot]
+
+![Screenshot of textarea component type](assets/component-types/textarea.png)
 
 >[!ENDTABS]
