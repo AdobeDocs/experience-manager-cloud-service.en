@@ -8,13 +8,15 @@ exl-id:
 
 # New Video Viewer in Dynamic Media {#new-video-viewer-dynamic-media}
 
-The New Video Viewer for Dynamic Media introduces a modernized video playback experience in Adobe Experience Manager (AEM). It is designed to deliver a consistent and extensible viewing experience across authoring, preview, and Sites usage, while continuing to work with existing Dynamic Media workflows.
+The New Video Viewer for Dynamic Media introduces a modernized video playback experience in Adobe Experience Manager (AEM). It is designed to deliver a consistent and extensible viewing experience across authoring, preview, and Sites environments, while continuing to work with existing Dynamic Media workflows.
 
-The viewer is available as a new option and can be explicitly selected by authors wherever supported. In addition to improved playback behavior, the New Video Viewer exposes structured playback events that can be consumed by parent applications. This enables use cases such as analytics tracking, integration with external systems, and custom playback-driven interactions.
+The viewer is available as a new option and can be explicitly selected wherever supported. In addition to improved playback behavior, the New Video Viewer exposes structured playback events that can be consumed by parent applications. This enables use cases such as analytics tracking, integration with external systems, and custom playback-driven interactions.
 
 The New Video Viewer is intended for organizations that want a future-ready video experience without disrupting existing implementations.
 
 > **Note:** The New Video Viewer is provided as an additional option and does not automatically replace existing video viewers.
+
+> **Note (Limited availability):** The New Video Viewer is available only in selected environments. Availability depends on feature enablement and may vary by account.
 
 ## Problem statement {#problem-statement}
 
@@ -23,7 +25,7 @@ Existing video viewers in Dynamic Media support core playback requirements, but 
 The New Video Viewer addresses these limitations by:
 
 * Providing a more consistent playback experience.
-* Allowing explicit viewer selection by authors.
+* Allowing explicit viewer selection.
 * Emitting structured events for programmatic consumption.
 * Supporting integration with external analytics and systems.
 
@@ -33,7 +35,7 @@ At a high level, the New Video Viewer works as follows:
 
 1. A video asset is ingested into a folder that is synced with Dynamic Media.
 2. The video can be previewed using the New Video Viewer from the asset details page.
-3. Authors can select the New Video Viewer when using the Dynamic Media component in AEM Sites.
+3. The New Video Viewer can be selected when using the Dynamic Media component in AEM Sites.
 4. During playback, the viewer emits structured events to the parent window.
 5. Optional viewer modifiers control playback behavior.
 
@@ -42,7 +44,7 @@ At a high level, the New Video Viewer works as follows:
 | Area | Description |
 |-----|-------------|
 | Viewer availability | Appears as a new option named **Video (new)** |
-| Author control | Viewer is explicitly selected |
+| Viewer selection | Viewer is explicitly selected |
 | Extensibility | Emits structured playback events |
 | Integration | Works with existing Dynamic Media workflows |
 
