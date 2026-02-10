@@ -25,6 +25,8 @@ Currently, the agent can retrieve pipeline statuses and help you troubleshoot fa
 
 To access this agent, refer to the [release notes](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) for instructions on how to enroll in the beta program, and be sure to indicate your interest in the Development Agent. You can also email Development Agent–specific feedback to [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com).
 
+[Follow along a tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) to learn how to use the Development Agent to troubleshoot pipeline failures.
+
 ## Access the Development Agent through Cloud Manager {#how-to-access-the-agent}
 
 You access the Development Agent through the AI Assistant found in user interfaces including Cloud Manager or Experience Hub.
