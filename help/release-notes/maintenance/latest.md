@@ -14,7 +14,7 @@ The following section outlines the technical release notes for the current maint
 
 Summarized below are the continuous improvements for maintenance release 24288, which was publicly released on February 4, 2026. The previous maintenance release was release 23963.
 
-The 2026.2.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+The 2026.2.0 feature activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
 >[!NOTE]
 >
