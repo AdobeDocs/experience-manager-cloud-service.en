@@ -73,23 +73,6 @@ See [AEM Foundation beta programs](#foundation-early-adopter).
 
 See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes/current.md).
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### Content MCP Server {#content-MCP}
-
-AEM Cloud Service now includes **Content MCP Servers**, providing a standardized way for AI-powered experiences to work with AEM content through MCP-compatible tools.
-
-Developers and power users working in chat apps and agent platforms can connect AEM to custom copilots and automations, so content work becomes part of end-to-end business workflows.
-
-AEM provides two servers:
-
-1. **Read-only Content MCP Server** - for retrieving content safely
-1. **Read/Write Content MCP Server** - for making changes to content
-
-These MCP servers include tools for working with **Pages**, **Content Fragments**, and **Assets**, and can be used from the following MCP clients: **ChatGPT**, **Claude**, **Cursor**, and **Microsoft Copilot Studio**.
-
-Learn more in [Using MCP with AEM Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md). For questions or feedback, email [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com).
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 **AI Search**
