@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2025 {#2025}
+      + [Release Notes for 2025.12.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-12-0.md) 
       + [Release Notes for 2025.11.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-11-0.md) 
       + [Release Notes for 2025.10.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-10-0.md) 
       + [Release Notes for 2025.9.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-9-0.md) 
@@ -95,6 +96,8 @@ user-guide-title: AEM as a Cloud Service
       + [Release Notes for 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
+    + 2026 {#2026}
+      + [Maintenance Release Notes for 2026.1.0](/help/release-notes/maintenance/2026/2026-1-0.md)
     + 2025 {#2025}
       + [Maintenance Release Notes for 2025.12.0](/help/release-notes/maintenance/2025/2025-12-0.md)
       + [Maintenance Release Notes for 2025.11.0](/help/release-notes/maintenance/2025/2025-11-0.md)
@@ -132,6 +135,7 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2025 {#2025}
+      + [2025.12.0](/help/implementing/cloud-manager/release-notes/2025/2025-12-0.md)
       + [2025.11.0](/help/implementing/cloud-manager/release-notes/2025/2025-11-0.md)
       + [2025.10.0](/help/implementing/cloud-manager/release-notes/2025/2025-10-0.md)
       + [2025.9.0](/help/implementing/cloud-manager/release-notes/2025/2025-9-0.md)
@@ -240,6 +244,10 @@ user-guide-title: AEM as a Cloud Service
   + Release Notes for Universal Editor {#universal-editor}
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
+    + 2026 {#2026}
+      + [2026.01.29 Release Notes](/help/release-notes/universal-editor/2026/2026-01-29.md)
+      + [2026.01.22 Release Notes](/help/release-notes/universal-editor/2026/2026-01-22.md)
+      + [2026.01.15 Release Notes](/help/release-notes/universal-editor/2026/2026-01-15.md)
     + 2025 {#2025}
       + [2025.12.12 Release Notes](/help/release-notes/universal-editor/2025/2025-12-12.md)
       + [2025.12.04 Release Notes](/help/release-notes/universal-editor/2025/2025-12-04.md)
@@ -287,6 +295,7 @@ user-guide-title: AEM as a Cloud Service
   + [Configuring Advanced Networking for AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
   + [IMS Support for AEM as a Cloud Service](/help/security/ims-support.md)
   + [Changes in User Group and Product Profile Synchronization](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
+  + [Migrating to External Identity and Dynamic Group Membership](/help/security/migrating-to-external-identity.md)
   + [Same Site Cookie Support for AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
   + [OAuth2 Support for the mail Service](/help/security/oauth2-support-for-mail-service.md)
   + [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md)
@@ -715,6 +724,7 @@ user-guide-title: AEM as a Cloud Service
       + [Configure custom domain](/help/assets/configure-custom-domain.md)
       + [Optimize images](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
       + [Create vanity URLs](/help/assets/vanity-urls.md)
+      + [Cache Management](/help/assets/cache-management-dynamic-media-open-api.md)
   + Working with Assets view {#assets-view}
     + [Introduction](/help/assets/assets-view-introduction.md)
     + [Getting started](/help/assets/get-started-assets-view.md)
@@ -1026,7 +1036,8 @@ user-guide-title: AEM as a Cloud Service
      + [Create Versions and Add Comments](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
      + [Copy and Paste Interactive Communication](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
    + Associate UI {#associateui} 
-     + [Associate UI in Interactive  Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
+     + [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
+     + [Generate Personalized Communications with Associate UI](/help/forms/interactive-communication/invoke-associate-ui.md)
    + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
 + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
@@ -1069,13 +1080,13 @@ user-guide-title: AEM as a Cloud Service
     + [502 Error Page in Custom Submit Action](/help/forms/custom-submit-action-troubleshooting.md)
 + AI in AEM {#ai-in-aem}
   + [Overview](/help/ai-in-aem/overview.md)
+  + [Using MCP with AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
   + Agents in AEM {#agents}
     + [Overview](/help/ai-in-aem/agents/overview.md)
     + Experience Production Agent {#production}
       + [Overview](/help/ai-in-aem/agents/production/overview.md)
       + [Communication Creation Skill](/help/ai-in-aem/agents/production/communications-creation.md)
       + [Content Update Skill](/help/ai-in-aem/agents/production/content-update.md)
-      + [Site Migration Skill](/help/ai-in-aem/agents/production/site-migration.md)
       + [Form Creation Skill](/help/ai-in-aem/agents/production/form-creation.md)
     + Content Optimization Agent {#content-optimization}
       + [Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/overview.md)
@@ -1085,6 +1096,10 @@ user-guide-title: AEM as a Cloud Service
       + [Overview](/help/ai-in-aem/agents/development/overview.md)
     + Governance Agent {#governance}
       + [Overview](/help/ai-in-aem/agents/governance/overview.md)
+    + Experience Modernization Agent {#modernization}
+      + [Overview](/help/ai-in-aem/agents/modernization/overview.md)
+      + [Getting Started](/help/ai-in-aem/agents/modernization/getting-started.md)
+      + [Modernization Console](/help/ai-in-aem/agents/modernization/console.md)
   + AI Assistant {#ai-assistant}
     + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
     + [About AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
@@ -1487,7 +1502,6 @@ user-guide-title: AEM as a Cloud Service
       + [SPA WKND Tutorial](/help/implementing/developing/hybrid/wknd-tutorial.md)
       + [Getting Started using React](/help/implementing/developing/hybrid/getting-started-react.md)
       + [Getting Started using Angular](/help/implementing/developing/hybrid/getting-started-angular.md)
-      + [SPA Deep Dives](/help/implementing/developing/hybrid/deep-dives-gems.md)
       + [Developing SPAs for AEM](/help/implementing/developing/hybrid/developing.md)
       + [SPA Editor Overview](/help/implementing/developing/hybrid/editor-overview.md)
       + [SPA Blueprint](/help/implementing/developing/hybrid/blueprint.md)

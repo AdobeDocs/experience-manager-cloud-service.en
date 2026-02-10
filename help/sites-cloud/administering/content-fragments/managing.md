@@ -398,6 +398,10 @@ You can publish your Content Fragments to:
 >
 >If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
 
+>[!TIP]
+>
+>Content Fragments can be [published to Edge Delivery Services.](https://www.aem.live/developer/content-fragment-overlay)
+
 ### Publishing {#publishing}
 
 You can publish your Content Fragments using the **Publish** option from either:

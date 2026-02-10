@@ -3,8 +3,8 @@ title: How to set up JWT (JSON Web Token) Authentication?
 description: Learn how to configure JWT (JSON Web Token) authentication for Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
+exl-id: e7747b21-f680-4b3a-bf05-d0fcf0af0999
 ---
-
 # JWT (JSON Web Token) Server-to-Server Authentication 
 
 JWT server-to-server authentication in AEM Forms, particularly for server-side integrations with AEM as a Cloud Service, involves a specific process to securely interact with AEM services. JWT server-to-server authentication is supported by AEM Developer Console.

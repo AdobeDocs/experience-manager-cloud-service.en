@@ -6,7 +6,9 @@ exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
 ---
 # Download assets from Content Hub {#download-assets}
 
-The [!DNL Content Hub] lets you download and share your assets. The [!DNL Content Hub] User Interface displays only approved assets. These assets may include images, videos, or any other digital content. The [!DNL Content Hub] enhances accessibility and adaptability for effective asset distribution.  
+The [!DNL Content Hub] lets you download and share your assets. The [!DNL Content Hub] User Interface displays only approved assets. These assets may include images, videos, or any other digital content. The [!DNL Content Hub] enhances accessibility and adaptability for effective asset distribution.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3433135/?learn=on){transcript=true}
 
 You can download single or multiple assets and their available renditions using [!DNL Content Hub].
 
