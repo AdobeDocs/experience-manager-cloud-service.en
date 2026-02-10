@@ -3,8 +3,8 @@ title: Getting Started with the Experience Modernization Agent
 description: Learn the first steps to quickly become productive with the Experience Modernization Agent using the Experience Modernization Console.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
+exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
 ---
-
 # Getting Started with the Experience Modernization Agent {#getting-started}
 
 Learn the first steps to quickly become productive with the Experience Modernization Agent using the Experience Modernization Console.

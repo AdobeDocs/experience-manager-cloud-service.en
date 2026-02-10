@@ -7,8 +7,8 @@ role: User, Developer, Admin
 hide: yes
 index: no
 hidefromtoc: yes
+exl-id: ca9917c0-d8bb-4381-afab-7ab888d992e8
 ---
-
 # Versioning and Commenting in Interactive Communication Editor
 
 >[!NOTE]

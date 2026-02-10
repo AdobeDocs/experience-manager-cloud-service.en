@@ -10,13 +10,17 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 24222 {#24222}
+## Release 24288 {#24288}
 
-Summarized below are the continuous improvements for maintenance release 24222, which was publicly released on February 3, 2026. The previous maintenance release was release 23963.
+Summarized below are the continuous improvements for maintenance release 24288, which was publicly released on February 4, 2026. The previous maintenance release was release 23963.
 
 The 2026.2.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-24222}
+>[!NOTE]
+>
+>Release 24222 has been made private. 
+
+### Enhancements {#enhancements-24288}
 
 * CNTBF-604: Create new contentbackflow bundle release.
 * CQ-4361592: Add TypeHint support for project creation and update.
@@ -52,7 +56,7 @@ The 2026.2.0 feature activation will provide the full feature set for this maint
 * SKYOPS-125574: Update netcentric AC Tool bundles in Quickstart.
 * SKYOPS-126150: Improve top command for thread dumps generator script.
 
-### Fixed Issues {#fixed-issues-24222}
+### Fixed Issues {#fixed-issues-24288}
 
 * FORMS-23687: Fix SSV validation failure when contains rule is used without default value.
 * GRANITE-48472: Localize error when changing password in the Edit User Settings tab.
@@ -69,10 +73,11 @@ The 2026.2.0 feature activation will provide the full feature set for this maint
 * GRANITE-63293: Fix mandatory pathfield losing the required asterisk after first authoring.
 * GRANITE-63360: Fix wrong information shown when multiple paths are selected.
 * SITES-36242: Narrow down GraphQL execute regex to fix dispatcher filter bypass.
+* SITES-40122: Fix of Edge Delivery integration with content-distribution ImsService.
 * SKYOPS-84379: Use the latest FACT tool for proper feature toggle pickup by RDEs.
 * SKYOPS-121216: Revert update to Jackson 2.20.0 libraries.
 
-#### AEM Guides {#guides-24222}
+#### AEM Guides {#guides-24288}
 
 * GUIDES-38198 : When updating an inline MathML equation using the Edit MathML option from the context menu, the updated value is not reflected until the page is refreshed.
 * GUIDES-38276: Unable to remove Version labels from Version history panel in Assets UI.
@@ -82,11 +87,11 @@ The 2026.2.0 feature activation will provide the full feature set for this maint
 
 For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
 
-### Known Issues {#known-issues-24222}
+### Known Issues {#known-issues-24288}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-24222}
+### Deprecated Features and APIs {#deprecated-24288}
 
 * AEMSRE-2896: Fix customized logmanager configuration handling.
 * GRANITE-62802: Remove deprecated `commons-lang` dependency from `granite.auth.saml`.
@@ -103,11 +108,11 @@ None.
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-24222}
+### Security Fixes {#security-24288}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 10 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-24222}
+### Embedded Technologies {#embedded-tech-24288}
 
 |Technology|Version|Link|
 |---|---|---|
