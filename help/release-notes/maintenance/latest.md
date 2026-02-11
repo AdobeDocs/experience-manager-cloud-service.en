@@ -87,7 +87,7 @@ The 2026.2.0 feature activation provides the full feature set for this maintenan
 
 >[!NOTE]
 >
-> There is also a breaking change to be aware of: [Improved handling for Read only files](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2026-releases/2601-release/whats-new-2026-01-0#improved-handling-for-read-only-files).
+> There is a breaking change in AEM Guides to be aware of: [Improved handling for Read only files](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2026-releases/2601-release/whats-new-2026-01-0#improved-handling-for-read-only-files).
 
 For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
 
