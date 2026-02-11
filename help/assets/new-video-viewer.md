@@ -8,52 +8,41 @@ exl-id:
 
 # New Video Viewer in Dynamic Media {#new-video-viewer-dynamic-media}
 
-The New Video Viewer for Dynamic Media introduces a modernized video playback experience in Adobe Experience Manager (AEM). It is designed to deliver a consistent and extensible viewing experience across authoring, preview, and Sites environments, while continuing to work with existing Dynamic Media workflows.
+The New Video Viewer for Dynamic Media introduces a modernized video playback experience in Adobe Experience Manager (AEM). It delivers a consistent and extensible viewing experience across authoring, preview, and Sites environments, while continuing to work with existing Dynamic Media workflows.
 
-The viewer is available as a new option and can be explicitly selected wherever supported. In addition to improved playback behavior, the New Video Viewer exposes structured playback events that can be consumed by parent applications. This enables use cases such as analytics tracking, integration with external systems, and custom playback-driven interactions.
-
-The New Video Viewer is intended for organizations that want a future-ready video experience without disrupting existing implementations.
-
-> **Note:** The New Video Viewer is provided as an additional option and does not automatically replace existing video viewers. The New Video Viewer is available only in selected environments. Availability depends on feature enablement and may vary by account.
-
-## Problem statement {#problem-statement}
-
-Existing video viewers in Dynamic Media support core playback requirements, but they offer limited extensibility and event-level integration for modern use cases.
+Existing video viewers in Dynamic Media support core playback requirements but offer limited extensibility and event-level integration for modern analytics and integration scenarios.
 
 The New Video Viewer addresses these limitations by:
 
-* Providing a more consistent playback experience.
-* Allowing explicit viewer selection.
-* Emitting structured events for programmatic consumption.
-* Supporting integration with external analytics and systems.
+* Providing a more consistent playback experience  
+* Allowing explicit viewer selection  
+* Emitting structured playback events for programmatic consumption  
+* Supporting integration with external analytics and external systems  
+
+The viewer is available as an additional option and must be explicitly selected where supported. It does not automatically replace existing video viewers.
+
+The New Video Viewer is intended for organizations that want an enhanced and extensible video experience without disrupting existing implementations.
+
+> **Note:** The New Video Viewer is available only in selected environments. Availability depends on feature enablement and may vary by account.
 
 ## How the New Video Viewer works {#how-it-works}
 
-At a high level, the New Video Viewer works as follows:
+The New Video Viewer works as follows:
 
-1. A video asset is ingested into a folder that is synced with Dynamic Media.
-2. The video can be previewed using the New Video Viewer from the asset details page.
-3. The New Video Viewer can be selected when using the Dynamic Media component in AEM Sites.
-4. During playback, the viewer emits structured events to the parent window.
-5. Optional viewer modifiers control playback behavior.
+1. A video asset is ingested into a folder that is synced with Dynamic Media. See [Prerequisites](#prerequisites).
+2. The video can be previewed from the asset details page using **Video (new)**. See [Preview the New Video Viewer](#preview).
+3. The New Video Viewer can be selected in the **Dynamic Media** component when authoring Sites pages. See [Use the New Video Viewer in Sites](#use-in-sites).
+4. During playback, the viewer emits structured events to the parent window. See [Supported Events](#supported-events).
+5. Optional viewer modifiers can be used to control playback behavior. See [Viewer Modifiers](#viewer-modifiers).
 
-## Key differences {#key-differences}
+## Key differences from the existing Video Viewer {#key-differences}
 
 | Area | Description |
-|-----|-------------|
+|------|-------------|
 | Viewer availability | Appears as a new option named **Video (new)** |
-| Viewer selection | Viewer is explicitly selected |
+| Viewer selection | Must be explicitly selected |
 | Extensibility | Emits structured playback events |
-| Integration | Works with existing Dynamic Media workflows |
-
-## Use cases {#use-cases}
-
-Common use cases include:
-
-* Delivering a modern video playback experience on Sites pages.
-* Tracking video engagement through playback events.
-* Integrating video playback with external analytics or reporting systems.
-* Customizing playback behavior using viewer modifiers.
+| Integration | Continues to work with existing Dynamic Media workflows |
 
 ## Prerequisites {#prerequisites}
 
@@ -67,72 +56,52 @@ Before using the New Video Viewer, ensure the following prerequisites are met:
 
 ![Folder synced with Dynamic Media](assets/folder-syncing-with-dm.jpeg)
 
-## Enable or disable the New Video Viewer {#enable-disable}
-
-### Adobe Experience Manager as a Cloud Service {#aem-cloud}
-
 The New Video Viewer is available starting with **AEM as a Cloud Service version 2025.7.0**.
 
-* To enable the New Video Viewer, contact your organization’s Adobe Customer Care representative and request that the feature toggle be enabled.
-* To disable the New Video Viewer, contact Adobe Customer Care and request that the feature toggle be turned off.
+* To enable the New Video Viewer, contact your organization’s Adobe Customer Care representative.  
+* To disable the New Video Viewer, contact Adobe Customer Care.  
 
-### Adobe Experience Manager 6.5 {#aem-65}
-
-To use the New Video Viewer on AEM 6.5, ensure that you are running **Service Pack 22 or later**.
-
-#### Enable the New Video Viewer
-
-1. Install the appropriate hotfix package:
-   * Service Pack 22: `cq-6.5.0-hotfix-53898-1.2.zip`
-   * Service Pack 23: `cq-6.5.0-hotfix-53898-sp23-1.2.zip`
-2. Open the Felix console.
-3. Locate the OSGi configuration:  
-   `com.day.cq.dam.scene7.impl.featureflags.NewVideoViewerFlag`
-4. Select **Enable New Video Viewer**.
-5. Save the configuration.
-
-#### Disable the New Video Viewer
-
-1. Open the same OSGi configuration in the Felix console.
-2. Clear **Enable New Video Viewer**.
-3. Save the configuration.
+> **Note:** The New Video Viewer is **available for a limited set of customers**.
 
 ## Preview the New Video Viewer {#preview}
 
-To preview the New Video Viewer from the asset details page:
+Execute the following steps to preview the New Video Viewer from the asset details page:
 
-1. Open a video asset that meets the prerequisites.
-2. In the Viewer rail, select **Video (new)**.
+1. Open a video asset that meets the prerequisites.  
+2. In the **Viewer rail**, select **Video (new)**.  
 3. Click **Copy URL** to obtain the preview link.
 
 ![Viewer rail – Video (new)](assets/viewer-rail.jpeg)
 
 ## Use the New Video Viewer in Sites {#use-in-sites}
 
-The New Video Viewer is available through the existing Dynamic Media component in AEM Sites.
+The New Video Viewer is available through the existing **Dynamic Media** component in AEM Sites.
 
 ### Add the Dynamic Media component
 
-1. Open the page in the Sites editor.
-2. Drag the **Dynamic Media** component onto the page.
-3. Add a video asset to the component.
+Execute the following steps to add the Dynamic Media component to a page:
+
+1. Open the page in the **Sites editor**.  
+2. Drag the **Dynamic Media** component onto the page.  
+3. Click the asset placeholder in the component and select a video asset to add it.
 
 ![Drag Dynamic Media component](assets/drag-component.jpeg)
 
 ### Configure the viewer
 
-1. Open the component settings.  
+1. Select the **Dynamic Media** component on your page.  
+2. Click the **wrench icon** in the component toolbar to open the **Dynamic Media** settings dialog.  
    ![Open Dynamic Media settings](assets/open-settings.jpeg)
 
-2. From the **Viewer Preset** list, select **Video (new)**.  
+3. In the **Dynamic Media** settings dialog, open the **Viewer Preset** drop-down list and select **Video (new)**.  
    ![Select Video (new) viewer preset](assets/viewer-preset.jpeg)
 
-3. Add any required viewer modifiers.  
+4. Enter any required modifiers in the **Viewer Modifiers** field (e.g., `autoplay=true&muted=true`).  
    ![Viewer modifiers](assets/additional-modifiers.jpeg)
 
-4. Save the configuration.
+5. Click the **checkmark icon** to save the configuration.
 
-The video loads on the page using the New Video Viewer.
+The video will now load on the page using the New Video Viewer.
 
 ## Viewer modifiers {#viewer-modifiers}
 
@@ -164,7 +133,7 @@ The New Video Viewer emits the following events during playback:
 
 ## Handling events in the parent window {#handling-events}
 
-The New Video Viewer sends playback-related messages to the parent page during video interactions.
+The New Video Viewer sends playback-related messages to the parent page during video interactions. 
 
 To handle these events, the parent application must listen for browser message events and validate the message origin before processing the data.
 
