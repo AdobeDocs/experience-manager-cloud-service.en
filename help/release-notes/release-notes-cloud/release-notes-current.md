@@ -127,6 +127,15 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
   
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
+### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
+
+#### Pause Automatic Maintenance Updates {#pause-updates}
+
+Go‑live days, live events, peak sales—these moments can't break. [Our new self‑service features](/help/implementing/deploying/quiet-hours-update-free-periods.md) stop automatic mainteanance updates when it matters, so your teams stay focused.
+
+* Quiet Hours: Block automatic maintenance during set times each day. Ideal for working hours, nightly runs or morning cutovers.
+* Update‑Free Period: Block automatic maintenance for a full week. Use it for launches, promos, or yearly freezes.
+
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
 #### Java API Deprecations {#java-api-deprecation}
@@ -191,19 +200,6 @@ Please review and update any downstream processes that rely on custom logging be
 * If you've previously reduced log verbosity by changing log levels, please note that reverting to default levels may increase log volume.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
-
-#### Pause Automatic Maintenance Updates {#pause-updates}
-
-Go‑live days, live events, peak sales—these moments can't break. [Our new self‑service features](/help/implementing/deploying/quiet-hours-update-free-periods.md) stop automatic mainteanance updates when it matters, so your teams stay focused.
-
-* Quiet Hours: Block automatic maintenance during set times each day. Ideal for working hours, nightly runs or morning cutovers.
-* Update‑Free Period: Block automatic maintenance for a full week. Use it for launches, promos, or yearly freezes.
-
->[!NOTE]
->
->Available as a Limited Availability feature on September 25th.
->Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to get it activated on your programs.
->
 
 #### AEM Edge Functions (Beta Program) {#edge-functions}
 
