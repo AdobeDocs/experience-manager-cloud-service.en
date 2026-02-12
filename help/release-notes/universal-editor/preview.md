@@ -21,8 +21,21 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming New Features {#what-is-new}
 
-* TBD
+* If no label is set, the component title from the component definition is now used.
+* Improvements have been made to the RTE.
+  * Hiding toolbar items in the in context RTE is now supported.
+  * Wrapping text inside tables with paragraphs is now supported.
+  * Unsupported RTE tags are now preserved.
+* `setEditorMode` is now available via extensions.
+* RTE logic is now served from a separate file.
 
 ## Upcoming Improvements {#other-improvements}
 
-* TBD
+* Copy-and-paste functionality between pages has been fixed.
+* `universal-editor-extensibility` has been shifted to `universal-editor`.
+* The number of requests to the extensions endpoint has been reduced.
+* RemoteApp unmounts has been reduced from three to one.
+* RTE endpoints are now served for the in-place editor.
+* Editing nested fields no longer results in overwriting peer entries from those structures.
+* Mandatory RTE fields can no longer be saved as empty.
+* In-place formatting is no longer improperly applied when adding links after formatting.
