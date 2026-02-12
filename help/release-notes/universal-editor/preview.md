@@ -28,6 +28,7 @@ These **preview** release notes are provided as a convenience so you know what c
   * Unsupported RTE tags are now preserved.
 * `setEditorMode` is now available via extensions.
 * RTE logic is now served from a separate file.
+* Tables can now be created as well edited using the RTE.
 
 ## Upcoming Improvements {#other-improvements}
 
