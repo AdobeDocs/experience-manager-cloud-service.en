@@ -4,8 +4,8 @@ description: PDF Preview in Interactive Communication Editor with Different Data
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
 ---
-
 # PDF Preview in Interactive Communication Editor
 
 >[!NOTE]
@@ -63,4 +63,3 @@ Preview Interactive Communications using no data, local data, or sample data fro
 ![Find IC Docu](/help/forms/interactive-communication/assets/datamodel.png)
 
 +++
-
