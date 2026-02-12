@@ -142,7 +142,7 @@ The event payload includes information such as the event type, playback state, c
 
 Adobe recommends validating the message origin to ensure that events are processed only from trusted Dynamic Media domains.
 
-# Video Engagement Report for the New Video Viewer
+## Video Engagement Report for the New Video Viewer
 
 The Video Engagement Report provides analytics metrics for videos played using the New Video Viewer in Dynamic Media. The report delivers aggregated performance data for selected date ranges and supports both daily and monthly reporting.
 
@@ -150,7 +150,7 @@ Reports are generated upon request. Customers must raise a Jira ticket to receiv
 
 The report provides per-video engagement metrics, including views, impressions, watch time, completion rate, and engagement score.
 
-## Supported regions
+### Supported regions
 
 Video engagement reporting is supported in the following regions:
 
@@ -159,21 +159,21 @@ Video engagement reporting is supported in the following regions:
 * APAC (Asia Pacific)
 * Polaris
 
-## Report types
+### Report types
 
-### Daily report
+#### Daily report
 
 * Supports date range filtering.
 * Date format: `YYYY-MM-DD`.
 * Metrics are aggregated across the selected date range.
 
-### Monthly report
+#### Monthly report
 
 * Supports month range filtering.
 * Month format: `YYYY-MM-01`.
 * Metrics are aggregated at the month level.
 
-## Report format
+### Report format
 
 * Reports are delivered in CSV format.
 * Each row represents a single video.
@@ -181,7 +181,7 @@ Video engagement reporting is supported in the following regions:
 * Deleted assets are excluded from the report.
 * Supports filtering by `tenant_name`.
 
-## Report fields
+### Report fields
 
 The Video Engagement Report includes the following fields:
 
@@ -200,7 +200,7 @@ The Video Engagement Report includes the following fields:
 | `engagement_score` | Average watch percentage across all play events. |
 | `tenant_name` | Identifier of the company or tenant associated with the data. |
 
-## Engagement metric calculations
+### Engagement metric calculations
 
 The report includes the following calculated metrics:
 
