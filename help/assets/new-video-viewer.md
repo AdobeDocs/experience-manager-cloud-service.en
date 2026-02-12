@@ -29,11 +29,11 @@ The New Video Viewer is intended for organizations that want an enhanced and ext
 
 The New Video Viewer works as follows:
 
-1. A video asset is ingested into a folder that is synced with Dynamic Media. See [Prerequisites](new-video-viewer.md#prerequisities).
-2. The video can be previewed from the asset details page using **Video (new)**. See [Preview the New Video Viewer](new-video-viewer.md#preview).
-3. The New Video Viewer can be selected in the **Dynamic Media** component when authoring Sites pages. See [Use the New Video Viewer in Sites](new-video-viewer.md#use-in-sites).
-4. During playback, the viewer emits structured events to the parent window. See [Supported Events](new-video-viewer.md#supported-events).
-5. Optional viewer modifiers can be used to control playback behavior. See [Viewer Modifiers](new-video-viewer.md#viewer-modifiers).
+1. A video asset is ingested into a folder that is synced with Dynamic Media.
+2. The video can be previewed from the asset details page using **Video (new)**.
+3. The New Video Viewer can be selected in the **Dynamic Media** component when authoring Sites pages.
+4. During playback, the viewer emits structured events to the parent window.
+5. Optional viewer modifiers can be used to control playback behavior.
 
 ## Key differences from the existing Video Viewer {#key-differences}
 
