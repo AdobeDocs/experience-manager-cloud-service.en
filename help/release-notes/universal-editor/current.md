@@ -21,7 +21,7 @@ These are the release notes for the 12 February 2026 release of the Universal Ed
 ## What's New {#what-is-new}
 
 * Dynamic Media links are now supported.
-* Existing tables can now be edited in the [properties panel.](/help/sites-cloud/authoring/universal-editor/authoring.md#properties-rail)
+* Schema and data type for creating blocks with [Document Authoring](https://docs.da.live/developers/reference/universal-editor) are now available.
 
 ## Early Adoption Features {#early-adopter}
 
