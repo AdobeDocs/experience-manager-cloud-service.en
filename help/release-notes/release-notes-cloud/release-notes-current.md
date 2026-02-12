@@ -218,7 +218,7 @@ Go‑live days, live events, peak sales—these moments can't break. [Our new se
 
 >[!NOTE]
 >
->Available as a Limited Availability feature on September 25th.
+>Available as a ilability feature on September 25th.
 >Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to get it activated on your programs.
 >
 
