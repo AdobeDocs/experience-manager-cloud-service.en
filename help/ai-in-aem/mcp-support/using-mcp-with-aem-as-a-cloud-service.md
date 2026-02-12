@@ -3,8 +3,8 @@ title: Using MCP with AEM as a Cloud Service
 description: Learn how to use the Model Context Protocol with AEM as a Cloud Service
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
+exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
 ---
-
 # Using MCP with AEM as a Cloud Service {#using-mcp-with-aem-as-a-cloud-service}
 
 ## Introduction {#introduction}
@@ -111,7 +111,7 @@ This step is performed by each user (or by an administrator of the MCP client ap
 
 Below are examples of how this looks in each supported application at a high level.
 
-**ChatGPT**
+### ChatGPT {#chatgpt}
 
 ![Configure ChatGPT - Settings](assets/chatgpt-1.png)
 
@@ -133,7 +133,7 @@ Below are examples of how this looks in each supported application at a high lev
 
    *"Using the configured AEM MCP tools, list all sites in our author environment."*
 
-**Claude**
+### Claude {#claude}
 
 ![Configure Claude - Settings](assets/claude-1.png)
 
@@ -155,7 +155,7 @@ Below are examples of how this looks in each supported application at a high lev
 * Ensure the MCP server is selected before starting your conversation
 * Ask Claude to perform AEM-related tasks; Claude will select AEM tools exposed by the MCP server based on your prompt.
 
-**Cursor**
+### Cursor {#cursor}
 
 ![Configure Cursor - Settings](assets/cursor-1.png)
 
@@ -172,7 +172,7 @@ Below are examples of how this looks in each supported application at a high lev
 * Optionally, enable or disable individual tools by clicking on the tool names. All tools are enabled by default.
 * Use Cursor's editor or chat to invoke AEM tools as part of development or content workflows.
 
-**Microsoft Copilot Studio**
+### Microsoft Copilot Studio {#microsoft-copilot-studio}
 
 ![Configure Copilot - Agents](assets/copilot-1.png)
 

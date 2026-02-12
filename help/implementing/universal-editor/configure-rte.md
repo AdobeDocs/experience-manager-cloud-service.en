@@ -215,6 +215,28 @@ Indentation has a feature-level configuration that controls the scope of indenta
 >
 >List nesting via Tab/Shift+Tab keys works independently of general indentation settings.
 
+### Paste as Text {#paste-as-text}
+
+The `paste_text` editor action enables a standard paste-as-plain-text workflow.
+
+* **Default shortcut:** Mod-Shift-v (Cmd+Shift+V on macOS, Ctrl+Shift+V on Windows/Linux)
+* **Behavior:** Pastes from text/plain (source formatting is ignored)
+  * In lists, newlines create new list items.
+
+```json
+{
+  "toolbar": {
+    "editor": ["removeformat", "paste_text"]
+  },
+  "actions": {
+    "paste_text": {
+      "shortcut": "Mod-Shift-v",
+      "label": "Paste as Text"
+    }
+  }
+}
+```
+
 ### Other Actions {#other}
 
 All other actions support basic customization. The following sections are available.
