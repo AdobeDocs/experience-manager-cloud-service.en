@@ -60,7 +60,7 @@ Templates ensure brand consistency and save time for commonly used communication
 
 1. Open AEM Forms as a Cloud Service instance.
 1. Go to **Forms > Forms & Documents**, click **Create > Interactive Communication**.
-1. In the creation form, **select** an enabled template from the dropdown.
+1. In the creation form, **select** an enabled template from the template picker.
 1. Fill out other details like Title, Name, Author, etc.
 1. Click **Create** to design your communication with the selected template structure.
 1. It opens the IC Editor, where you can begin designing your communication.
