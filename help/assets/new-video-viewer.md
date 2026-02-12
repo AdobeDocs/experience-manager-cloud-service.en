@@ -141,3 +141,79 @@ To handle these events, the parent application must listen for browser message e
 The event payload includes information such as the event type, playback state, current playback time, and additional metadata. These events can be used to support analytics tracking, custom interactions, or integration with external systems.
 
 Adobe recommends validating the message origin to ensure that events are processed only from trusted Dynamic Media domains.
+
+# Video Engagement Report for the New Video Viewer
+
+The Video Engagement Report provides analytics metrics for videos played using the New Video Viewer in Dynamic Media. The report delivers aggregated performance data for selected date ranges and supports both daily and monthly reporting.
+
+Reports are generated upon request. Customers must raise a Jira ticket to receive either a scheduled monthly report or an ad-hoc report.
+
+The report provides per-video engagement metrics, including views, impressions, watch time, completion rate, and engagement score.
+
+## Supported regions
+
+Video engagement reporting is supported in the following regions:
+
+* NA (North America)
+* EMEA (Europe, Middle East, Africa)
+* APAC (Asia Pacific)
+* Polaris
+
+## Report types
+
+### Daily report
+
+* Supports date range filtering.
+* Date format: `YYYY-MM-DD`.
+* Metrics are aggregated across the selected date range.
+
+### Monthly report
+
+* Supports month range filtering.
+* Month format: `YYYY-MM-01`.
+* Metrics are aggregated at the month level.
+
+## Report format
+
+* Reports are delivered in CSV format.
+* Each row represents a single video.
+* Metrics are aggregated for the selected reporting period.
+* Deleted assets are excluded from the report.
+* Supports filtering by `tenant_name`.
+
+## Report fields
+
+The Video Engagement Report includes the following fields:
+
+| Field | Description |
+|-------|------------|
+| `video_id` | Unique video identifier. |
+| `video_name` | Name of the video asset. |
+| `video_created_date` | Date the video was created. |
+| `duration_in_seconds` | Duration of the video in seconds. |
+| `video_views` | Total number of video play events during the selected reporting period. |
+| `video_impressions` | Total number of times the video was loaded. |
+| `video_watched_seconds` | Total seconds watched across all play events. |
+| `play_rate` | Percentage calculated as (video_views ÷ video_impressions) × 100. |
+| `avg_time_watched_in_seconds` | Average seconds watched per view (video_watched_seconds ÷ video_views). |
+| `avg_completion_rate` | Percentage of views that reached full video completion. |
+| `engagement_score` | Average watch percentage across all play events. |
+| `tenant_name` | Identifier of the company or tenant associated with the data. |
+
+## Engagement metric calculations
+
+The report includes the following calculated metrics:
+
+* **Play rate**  
+  (video_views ÷ video_impressions) × 100
+
+* **Average time watched (seconds)**  
+  video_watched_seconds ÷ video_views
+
+* **Average completion rate**  
+  Percentage of views that reached the full video duration
+
+* **Engagement score**  
+  Average watch percentage across all play events
+
+Percentage-based values are represented as numeric percentages in the report.
