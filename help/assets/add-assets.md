@@ -121,7 +121,7 @@ To retain the duplicate asset in [!DNL Assets], click **[!UICONTROL Keep]**. To 
 
 To suit specific file-naming conventions for your organization, the [!UICONTROL Upload Assets] dialog lets you specify long names for the files that you upload. The following (space-separated list of) characters are not supported:
 
-* Invalid characters for asset name: `* / : [ \\ ] | # % { } ? & ;=`
+* Invalid characters for asset name: `* / : [ \\ ] | # % { } ? &` or `;=` (a semicolon followed by an equals sign)
 * Invalid characters for asset folder name: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 Examples of invalid filenames:
