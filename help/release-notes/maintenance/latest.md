@@ -23,11 +23,9 @@ The 2026.2.0 feature activation provides the full feature set for this maintenan
 * AEMARCH-269: Expose JavaEE validation APIs for OpenAPI implementations.
 * AEMARCH-276: Provide i18n support through RequestEntity.
 * ASSETS-10995: Set limit on number of assets in download zip.
-* ASSETS-33003: QSBRM quickstart story.
 * ASSETS-50788: Update Search API to use Asset Metadata GET API.
 * ASSETS-50946: Map request body using Metadata GET API to JCR metadata.
 * ASSETS-55866: Avoid submitting new request for same asset until previous processing complete.
-* ASSETS-59053: Feature check APIs.
 * ASSETS-60300: Provide API to retrieve async job context and result.
 * ASSETS-60574: Add support for latest version of Sling API bundle.
 * ASSETS-61049: Continue metadata manager bundle development.
@@ -73,14 +71,12 @@ The 2026.2.0 feature activation provides the full feature set for this maintenan
 * ASSETS-62613: NPE in downloadasset saveas.
 * ASSETS-62656: Omnisearch AI search indicator incorrectly shown for non-Assets searches.
 * ASSETS-62671: Fix MatchQuery startsWith operator.
-* ASSETS-62815: Fix failing IT in SDK.
 * ASSETS-62882: Info icon tooltip breaks when multiple invalid filenames uploaded.
 * GRANITE-55387: Correcting word enclosed in quotes deletes entire word.
 * GRANITE-64101: OOTB indexes converted to ES reverted back to Lucene on restart.
 * GS-24323: Remove /conf/genstudio folder for JPMC.
 * SITES-24530: Touch target of close/remove buttons in search modal not large enough.
 * SITES-31425: Unlocalized error message in start workflow.
-* SITES-38099: Fix failing XF IT test.
 
 ### Known Issues {#known-issues-24441}
 
