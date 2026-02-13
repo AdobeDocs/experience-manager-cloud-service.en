@@ -21,14 +21,14 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming New Features {#what-is-new}
 
-* If no label is set, the component title from the component definition is now used.
 * Improvements have been made to the RTE.
   * Hiding toolbar items in the in context RTE is now supported.
   * Wrapping text inside tables with paragraphs is now supported.
   * Unsupported RTE tags are now preserved.
+  * RTE logic is now served from a separate file.
+  * Tables can now be created as well edited using the RTE.
+* If no label is set, the component title from the component definition is now used.
 * `setEditorMode` is now available via extensions.
-* RTE logic is now served from a separate file.
-* Tables can now be created as well edited using the RTE.
 
 ## Upcoming Improvements {#other-improvements}
 
