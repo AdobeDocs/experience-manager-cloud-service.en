@@ -24,7 +24,7 @@ For sites running on Adobe Experience Manager, developers have the option to add
 
 The experimentation rail is your primary way to set up experiments. It can be used with your project either in an [Edge Delivery Services](/help/edge/overview.md) context or in the [Universal Editor](/help/implementing/universal-editor/introduction.md). As such, you will need a Github account, a content repository like SharePoint or Google Drive, and you will also need the [AEM Sidekick](https://www.aem.live/docs/sidekick) plug-in. If you want to use Universal editor you will also need access to an [AEM as a Cloud Service environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). See also the [Getting Started – Universal Editor Developer Tutorial page](https://www.aem.live/developer/tutorial).
 
-### Setting up the experimentation using by using AEM Sidekick in Edge Delivery Services
+### Setting up experimentation by using AEM Sidekick in Edge Delivery Services
 
 To access the experimentation rail capabilities within your Edge Delivery Services Project you will need the [AEM Sidekick](https://www.aem.live/docs/sidekick) plug-in. To set up the sidekick follow these steps:
 
@@ -33,12 +33,12 @@ To access the experimentation rail capabilities within your Edge Delivery Servic
 1. On the AEM Sidekick bar, and click the settings icon ![Settings](/help/sites-cloud/administering/assets/settings-1.png) and select **Add this project**.
 1. Click the Experimentation tab to open the experimentation rail.
 
-### Setting up the experimentation in Universal editor
+### Setting up experimentation in Universal editor
 
 Before setting up experiments, keep in mind that you will need to use AEM sites as a content source to be able to author in Universal Editor. If needed, you can convert your existing project to AEM sites as a content source by following the tutorial presented in the [Setup AEM Sites as a Content Source](https://www.aem.live/developer/ue-tutorial) page. When you are ready to set up experiments in Universal Editor, follow these steps:
 
 1. Open your project in Universal Editor and check the **A/B** Icon Extension. In case the icon is not visible, confirm whether you have enabled the feature in the extension manager. If it is not enabled please enable it or request access.
-1. Open your GitHub repository and check if the `plugins/experimention` folder exists. If not, you will need to set up the experimentation engine and MFE first (see the link below).
+1. Open your GitHub repository and check if the `plugins/experimention` folder exists. If not, you will need to set up the experimentation engine and MFE first (see the note below).
 1. Point your `fstab.yaml` configuration to your project configuration and link it to your AEM author instance. See also [Connect your code to your content](https://www.aem.live/developer/ue-tutorial#connect-your-code-to-your-content)
 1. Open your AEM instance and if you have your project ready, open it directly in Universal Editor.
 1. Open the project and the index page where you want to run experiments and click **Edit** on the top bar.
@@ -52,7 +52,7 @@ Before setting up experiments, keep in mind that you will need to use AEM sites 
 
 ## Experiment variants and general workflow {#experiment-variants-workflow}
 
-Before following the rest of the guide configure your first experiment, there are a few frequently used terms that you should be familiar with:
+Before following the rest of the guide to configure your first experiment, there are some frequently used terms that you should be familiar with:
 
 * **Control**: the experience prior to running the experiment. All experiments try to test and demonstrate an improvement over the control experience.
 * **Challenger**: an experience that is different from the control experience and is "tested" either against it or alongside it.
@@ -61,7 +61,7 @@ Before following the rest of the guide configure your first experiment, there ar
 
 Generally speaking, when setting up an experiment you will use a pre-existing page as the control page. By using the experimentation rail, you will then create a challenger page that is initially a copy of the control page. In the challenger page, you can test different things like content variants, different page layouts, call-to-action (CTA) and so on. You can also use AI generated variants, by using the **Generate variation** functionality in the experimentation rail.
 
-For each experiment, the traffic is initially split 50/50 between control and challenger but you can configure how the traffic is split as needed. After you activate the experiment you will then receive data via the Operational Telemetry service.
+For each experiment, the traffic is initially split 50/50 between control and challenger but you can configure how the traffic is split as needed. After you activate the experiment you will receive data via the Operational Telemetry service.
 
 The [Operational Telemetry service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) gathers data, for example, the number of visitors in the control page versus the challenger page. You then use this data to pick the necessary improvements for your site. As long as you stay within the established design language of your website and use the existing functionality you should be able to set up an experiment variant and send it to production in a matter of minutes.
 
@@ -83,7 +83,7 @@ To use the experimentation capabilities in Universal editor you must first set u
 
 ### Start editing you project in Universal Editor
 
-Open your AEM instance and if you have your project ready, please open it directly in Universal Editor. If you do not have a project ready and AEM sites set up as a content source, create a new boilerplate project from the provided template. You could link either your repository or our sample repository to drive it [https://github.com/sudo-buddy/ue-experimentation](https://github.com/sudo-buddy/ue-experimentation). See also the [Setup AEM Sites as a Content Source](https://www.aem.live/developer/ue-tutorial) page. After the project is set up, open it and the index page where you want to run experiments and click **Edit** on the top bar.
+Open your AEM instance and if you have your project ready, open it directly in Universal Editor. If you do not have a project ready and AEM sites set up as a content source, create a new boilerplate project from the provided template. You could link either your repository or our sample repository to drive it [https://github.com/sudo-buddy/ue-experimentation](https://github.com/sudo-buddy/ue-experimentation). See also the [Setup AEM Sites as a Content Source](https://www.aem.live/developer/ue-tutorial) page. After the project is set up, open it and the index page where you want to run experiments and click **Edit** on the top bar.
 
 ### Launch the A/B Extension
 
@@ -93,7 +93,7 @@ Click the **A/B** icon to open the experimentation extension. On your first use,
 
 ### Configure the experiment details
 
-Some of the experiment values are already pre-defined, as follows:
+Some of the experiment values are pre-defined, as follows:
 
 **Experiment Type**: A/B test (only type supported for now)
 **Optimizing For**: Conversion (only type supported for now)
@@ -132,7 +132,7 @@ After the experiment reaches statistical significance, click **Promote** to make
 
 ### Using experimentation with AEM Sidekick in Edge Delivery Services
 
-If you have the AEM sidekick installed you can use the experimentation rail directly with your project in Edge Delivery Service without using Universal Editor. The functionality is essentially the same as the A/B test described above, just keep in mind that you need to be **Preview** mode to edit and configure the test. After you finish configuring the test, click **Publish** from the side-kick to push both the control and the challenger variant live and start gathering telemetry data.
+If you have AEM sidekick installed you can use the experimentation rail directly with your project in Edge Delivery Service without using Universal Editor. The functionality is essentially the same as the A/B test described above, just keep in mind that you need to be **Preview** mode to edit and configure the test. After you finish configuring the test, click **Activate** to push both the control and the challenger variant live and start gathering telemetry data.
 
 <!-- ### Experiment Identifier {#experiment-identifier}
 
