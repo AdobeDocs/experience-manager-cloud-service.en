@@ -434,11 +434,11 @@ Now you're ready to launch the Associate UI using the sample HTML page:
 
 1. **Enter the IC ID**: In the **IC ID** field, enter the identifier of your published Interactive Communication. This is the only required field.
 
-2. **Configure Prefill Service**: If you want to prefill the IC with dynamic data, enter the Form Data Model service name in the **Prefill Service** field. For example, use `FdmTestData` for sample data.
+1. **Configure Prefill Service**: If you want to prefill the IC with dynamic data, enter the Form Data Model service name in the **Prefill Service** field. For example, use `FdmTestData` for sample data.
 
-  ![Sample HTML UI](/help/forms/assets/samplehtmlui.png)
+   ![Sample HTML UI](/help/forms/assets/samplehtmlui.png)
 
-3. **Click Launch Associate UI**: Click the **Launch Associate UI** button. A new browser window opens with the Associate UI, pre-loaded with your Interactive Communication.
+1. **Click Launch Associate UI**: Click the **Launch Associate UI** button. A new browser window opens with the Associate UI, pre-loaded with your Interactive Communication.
 
  Enter the data, and the Associate UI will appear as shown below:
 
