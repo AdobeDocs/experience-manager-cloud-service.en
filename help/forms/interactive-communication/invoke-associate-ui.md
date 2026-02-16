@@ -438,13 +438,13 @@ Now you're ready to launch the Associate UI using the sample HTML page:
 
   ![Sample HTML UI](/help/forms/assets/samplehtmlui.png)
 
-  <!--3. **Add Service Parameters**: In the **Service Parameters (JSON)** field, enter a JSON object with the parameters your prefill service requires. For example:
+  <!--**Add Service Parameters**: In the **Service Parameters (JSON)** field, enter a JSON object with the parameters your prefill service requires. For example:
 
    ```json
    {"customerId": "101", "accountNumber": "ACC-98765"}
    ```
 
-  4. **Set PDF Options** (optional): In the **Options (JSON)** field, configure rendering options such as locale, attachments, or accessibility settings.-->
+  **Set PDF Options** (optional): In the **Options (JSON)** field, configure rendering options such as locale, attachments, or accessibility settings.-->
 
 3. **Click Launch Associate UI**: Click the **Launch Associate UI** button. A new browser window opens with the Associate UI, pre-loaded with your Interactive Communication.
 
