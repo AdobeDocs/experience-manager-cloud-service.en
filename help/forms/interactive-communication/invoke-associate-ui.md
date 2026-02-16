@@ -4,8 +4,6 @@ description: Learn how to integrate the AEM Forms Associate UI with your applica
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: yes
-hidefromtoc: yes
 exl-id: f946ccea-86d0-4086-8208-9583b8206244
 ---
 # Integrate Associate UI in Your Application
@@ -109,7 +107,11 @@ This section walks you through launching the Associate UI from your own applicat
 
 To quickly test and understand how the Associate UI integration works, use the following sample HTML page. Copy this code into an HTML file and open it in your browser.
 
-This sample provides a simple form interface where you can enter your Interactive Communication details and launch the Associate UI with a single click.
+>[!NOTE]
+>
+> This sample HTML requires an IC ID and a Prefill service. You can test it using your IC ID and the sample Prefill service “FdmTestData”.”
+
+The HTML sample provides a simple form interface where you can enter your Interactive Communication details and launch the Associate UI with a single click.
 
 ```html
 <!DOCTYPE html>
@@ -432,21 +434,28 @@ Now you're ready to launch the Associate UI using the sample HTML page:
 
 1. **Enter the IC ID**: In the **IC ID** field, enter the identifier of your published Interactive Communication. This is the only required field.
 
-2. **Configure Prefill Service** (optional): If you want to prefill the IC with dynamic data, enter the Form Data Model service name in the **Prefill Service** field. For example, use `FdmTestData` for sample data or `IC-FDM` for test data.
+1. **Configure Prefill Service**: If you want to prefill the IC with dynamic data, enter the Form Data Model service name in the **Prefill Service** field. For example, use `FdmTestData` for sample data.
 
-3. **Add Service Parameters** (optional): In the **Service Parameters (JSON)** field, enter a JSON object with the parameters your prefill service requires. For example:
+   ![Sample HTML UI](/help/forms/assets/samplehtmlui.png)
+
+1. **Click Launch Associate UI**: Click the **Launch Associate UI** button. A new browser window opens with the Associate UI, pre-loaded with your Interactive Communication.
+
+ Enter the data, and the Associate UI will appear as shown below:
+
+  ![Associate UI](/help/forms/assets/associateui.png)
+
+>[!NOTE]
+>
+> If the window doesn't open, check that your browser allows pop-ups for this site.
+
+
+  <!--**Add Service Parameters**: In the **Service Parameters (JSON)** field, enter a JSON object with the parameters your prefill service requires. For example:
 
    ```json
    {"customerId": "101", "accountNumber": "ACC-98765"}
    ```
 
-4. **Set PDF Options** (optional): In the **Options (JSON)** field, configure rendering options such as locale, attachments, or accessibility settings.
-
-5. **Click Launch Associate UI**: Click the **Launch Associate UI** button. A new browser window opens with the Associate UI, pre-loaded with your Interactive Communication.
-
->[!NOTE]
->
-> If the window doesn't open, check that your browser allows pop-ups for this site.
+  **Set PDF Options** (optional): In the **Options (JSON)** field, configure rendering options such as locale, attachments, or accessibility settings.-->
 
 ## Troubleshooting
 
