@@ -108,6 +108,7 @@ The rich text editor (RTE) of the Universal Editor allows the author to apply st
 * Link
 * Unlink
 * Image
+* Paste as Text
 * Remove All Formatting
 
 Existing tables can be edited using the RTE, but new tables can not be created.
