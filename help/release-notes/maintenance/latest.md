@@ -10,14 +10,13 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 24441 {#release-24441}
+## Release 24464 {#release-24464}
 
-Summarized below are the continuous improvements for maintenance release 24441, which was publicly released on February 18, 2026. The previous maintenance release was release 24288.
+Summarized below are the continuous improvements for maintenance release 24464, which was publicly released on February 18, 2026. The previous maintenance release was release 24288.
 
 The 2026.2.0 feature activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-
-### Enhancements {#enhancements-24441}
+### Enhancements {#enhancements-24464}
 
 * AEMARCH-264: Add support for validating conditional requests based on RequestEntity.
 * AEMARCH-269: Expose JavaEE validation APIs for OpenAPI implementations.
@@ -48,7 +47,7 @@ The 2026.2.0 feature activation provides the full feature set for this maintenan
 * SITES-30452: Content API with ASO - title & description suggestions.
 * SITES-34234: Page editor: preserve content tree state.
 
-### Fixed Issues {#fixed-issues-24441}
+### Fixed Issues {#fixed-issues-24464}
 
 * ASSETS-43198: Asset expiration notification emails do not respect user language preference.
 * ASSETS-52061: Unable to navigate back after selecting saved search.
@@ -78,20 +77,19 @@ The 2026.2.0 feature activation provides the full feature set for this maintenan
 * SITES-24530: Touch target of close/remove buttons in search modal not large enough.
 * SITES-31425: Unlocalized error message in start workflow.
 
-### Known Issues {#known-issues-24441}
+### Known Issues {#known-issues-24464}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-24441}
-
+### Deprecated Features and APIs {#deprecated-24464}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-24441}
+### Security Fixes {#security-24464}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 10 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 14 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-24441}
+### Embedded Technologies {#embedded-tech-24464}
 
 |Technology|Version|Link|
 |---|---|---|
@@ -99,5 +97,5 @@ AEM as a Cloud Service is dedicated to optimizing your platform's security and p
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |Apache HTTP Server| 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES)|
-|AEM Core Components| 2.30.2|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|AEM Core Components| 2.30.4|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
 |Node.js|14 (default)|[Supported Node.js versions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions)|
