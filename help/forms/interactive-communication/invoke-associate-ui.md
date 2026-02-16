@@ -4,8 +4,6 @@ description: Learn how to integrate the AEM Forms Associate UI with your applica
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: yes
-hidefromtoc: yes
 exl-id: f946ccea-86d0-4086-8208-9583b8206244
 ---
 # Integrate Associate UI in Your Application
