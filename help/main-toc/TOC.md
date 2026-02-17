@@ -246,6 +246,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.02.05 Release Notes](/help/release-notes/universal-editor/2026/2026-02-05.md)
       + [2026.01.29 Release Notes](/help/release-notes/universal-editor/2026/2026-01-29.md)
       + [2026.01.22 Release Notes](/help/release-notes/universal-editor/2026/2026-01-22.md)
       + [2026.01.15 Release Notes](/help/release-notes/universal-editor/2026/2026-01-15.md)
@@ -1038,7 +1039,7 @@ user-guide-title: AEM as a Cloud Service
      + [Copy and Paste Interactive Communication](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
    + Associate UI {#associateui} 
      + [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
-     + [Generate Personalized Communications with Associate UI](/help/forms/interactive-communication/invoke-associate-ui.md)
+     + [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md)
    + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
 + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
