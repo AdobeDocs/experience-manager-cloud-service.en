@@ -29,6 +29,10 @@ Consider a scenario where you want to display cascading metadata based on the ty
 
 We are using a dropdown field named `Image` as an example to categorize files based on their image type. The dropdown contains options representing supported image extensions (such as JPG/JPEG, GIF, etc.). To ensure data consistency and prevent unsupported formats from being selected or processed, a validation rule is applied to this field. The rule evaluates the selected dropdown value and enforces constraints that align with the accepted image formats. 
 
+>[!IMPORTANT]
+>
+>When adding a rule, you get values only from the available dropdown fields, the single-line text field are not displayed.
+
 Irrespective of the asset type chosen, display the copyright information as a required field. You can use the [pre-defined metadata components](metadata-assets-view.md#property-components) and [assign metadata to a folder](metadata-assets-view.md#assign-metadata-form-folder).
 
 ### Build Metadata Forms {#build-metadata-schema-forms}
@@ -73,6 +77,10 @@ To modify an existing metadata form, follow the steps below:
       ![Image Asset Type](assets/image-asset-type.png)
          
    * To fetch values from a JSON path, select **[!UICONTROL Add through JSON Path]** and specify the path of the JSON file.
+
+      >[!NOTE]
+      >
+      >Ensure to store JSON file in a shared location accessible to all DAM editors and authors.
 
       ![Add Choices through JSON path](assets/add-json-choices.png)
 
