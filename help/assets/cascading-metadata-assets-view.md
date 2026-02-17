@@ -11,10 +11,6 @@ When capturing the metadata information of an asset, users provide information i
 
 Use metadata Forms to define rules for displaying cascading metadata. For example, if your metadata form includes an asset type field, you can define a pertinent set of fields to be displayed based on the type of asset a user selects.
 
->[!IMPORTANT]
->
->The Cascading Metadata feature is available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
-
 Here are some use cases for which you can define cascading metadata:
 
 * Where user location is required, display relevant city names based on the user's choice of country and state.
@@ -23,6 +19,10 @@ Here are some use cases for which you can define cascading metadata:
 * Designate a field as mandatory based on the value specified in another field.
 * Change options displayed for a particular field based on the value specified in another field.
 * Set the default metadata value in a particular field based on the value specified in another field.
+
+>[!IMPORTANT]
+>
+>The Cascading Metadata feature is available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 ## Configure cascading metadata in [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
@@ -102,7 +102,7 @@ To modify an existing metadata form, follow the steps below:
 
    <!--![rule tab](assets/rule-tab.png)-->
 
-1. Under **[!UICONTROL Required]**, choose the **[!UICONTROL Required based on new rule]** option.
+1. Under **[!UICONTROL Required]**, choose the **[!UICONTROL Required based on new rule]** option. Click ![plus icon](assets/do-not-localize/aem_assets_add_icon.png) to add a new rule.
 
    ![rule](assets/image-required-rule1.png)
 
@@ -110,7 +110,7 @@ To modify an existing metadata form, follow the steps below:
 
    ![rule](assets/image-required-rule2.png)
 
-1. Under **[!UICONTROL Visibility]**, choose the **[!UICONTROL Visible, based on new rule]** option.
+1. Under **[!UICONTROL Visibility]**, choose the **[!UICONTROL Visible, based on new rule]** option. Click ![plus icon](assets/do-not-localize/aem_assets_add_icon.png) to add a new rule.
 
    >[!NOTE]
    >
@@ -122,7 +122,7 @@ To modify an existing metadata form, follow the steps below:
 
    ![rule](assets/image-visible-rule2.png)
 
-1. Select **[!UICONTROL Choices based on rule]** to create a dependency and define rule.
+1. Select **[!UICONTROL Choices based on rule]** to create a dependency and define rule. Click ![plus icon](assets/do-not-localize/aem_assets_add_icon.png) to add a new rule.
    
    ![rule](assets/image-choices-rule1.png)
 
