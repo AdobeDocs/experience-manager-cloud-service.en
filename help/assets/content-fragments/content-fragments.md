@@ -15,7 +15,7 @@ Content fragments contain structured content:
 * They are based on a [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md), which predefines a structure for the resulting fragment.
 * The structure can range between:
   * Basic
-    * For example, a single, multi-line text field.
+    * For example, a single, multi line text field.
     * It can be used for preparing straightforward content for use in page authoring.
   * Complex
     * A combination of many fields of varying data types, including text, number, boolean, data, and time, among others.
@@ -97,7 +97,7 @@ They provide the delivery of content to channels that are not traditional AEM we
 
 * Single Page Applications
 * Native Mobile Applications
-* other channels and touch-points external to AEM
+* other channels and touch points external to AEM
 
 Delivery is made in JSON format using the JSON Exporter.
 
@@ -128,13 +128,13 @@ Content fragments are:
 
 * Accessible using the [AEM GraphQL API](/help/headless/graphql-api/content-fragments.md).
 
-Content Fragments are a content structure that:
+Content Fragments are content structures that:
 
 * Do not have layout or design (some text formatting is possible in Rich Text mode).
 * Contain one or more [constituent parts](#constituent-parts-of-a-content-fragment).
 * [Contain, or can be connected to, images](#fragments-with-visual-assets).
-* Is used [in-between content](#in-between-content-when-page-authoring-with-content-fragments) when referenced on a page.
-* They are independent from the delivery mechanism (that is, page, channel).
+* Are used as [in-between content](#in-between-content-when-page-authoring-with-content-fragments) when referenced on a page.
+* Are independent from the delivery mechanism (that is, page, channel).
 
 ### Fragments with Visual Assets {#fragments-with-visual-assets}
 
@@ -179,7 +179,7 @@ The content fragment assets are made up of the following parts (either directly 
 
 * **Fragment Paragraphs**
 
-  * Blocks of text, often multi-line that are delimited as individual entities.
+  * Blocks of text, often multi line that are delimited as individual entities.
 
   * In the [Rich Text](/help/assets/content-fragments/content-fragments-variations.md#rich-text) and [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown) modes, a paragraph can be formatted as a header, in which case it and the following paragraph belong together as one unit.
 
@@ -192,7 +192,7 @@ The content fragment assets are made up of the following parts (either directly 
   * Can be formatted when the [fragment is used/referenced on a page](/help/sites-cloud/authoring/fragments/content-fragments.md). 
   * Can only be added to, deleted from, or moved within, a fragment using the fragment editor. These actions cannot be made in the page editor.
   * Can only be added to, deleted from, or moved within, a fragment using the [Rich Text format in the fragment editor](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
-  * Can only be added to multi-line text elements (any fragment type).
+  * Can only be added to multi line text elements (any fragment type).
   * Are attached to the preceding text (paragraph).
 
     >[!CAUTION]
@@ -240,7 +240,7 @@ The content fragment assets are made up of the following parts (either directly 
 
 * **Variations**
 
-  * Renditions of fragment text that are specific to an editorial purpose; can be related to channel but is not compulsory, can also be for ad-hoc local modifications.
+  * Renditions of fragment text that are specific to an editorial purpose; can be related to a channel, but this is not compulsory; can also be for ad-hoc local modifications.
   * Are created as copies of **Master**, but can then be edited as required. There is content overlap between the variations themselves.
   * Can be defined during fragment authoring.
   * Stored in the fragment, to help avoid scattering of content copies.
@@ -264,24 +264,24 @@ In-between content:
 
 ### Required by Fragments {#required-by-fragments}
 
-To create content fragments, you need:
+To create a content fragment, you need:
 
-* **Content Model**
+* a **Content Fragment Model**
 
-  * Are [enabled using the Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-  * Are [created using Tools](/help/assets/content-fragments/content-fragments-models.md).
+  * Is [enabled using the Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+  * Is [created using Tools](/help/assets/content-fragments/content-fragments-models.md).
   * Required to [create a fragment](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
   * Defines the structure of a fragment (title, content elements, tag definitions).
-  * Content model definitions require a title and one data element; everything else is optional. 
-  * The model can define default content - if applicable. 
-  * Authors cannot change the defined structure when authoring fragment content.
+  * The model definition require a title and one data element; everything else is optional. 
+  * The model can define default content, if applicable. 
+  * Authors cannot change the defined structure when authoring fragment content; though they can open the model editor from the fragment editor.
   * Changes made to a model after dependent content fragments have been created, can impact those content fragments.
 
 To use your Content Fragments for page authoring, you also need:
 
-* **Content Fragment Component**
+* the **Content Fragment Component**
 
-  * Instrumental to deliver the fragment in HTML format, or JSON format, or both.
+  * Instrumental to delivering the fragment in HTML format, or JSON format, or both.
   * Required to [reference the fragment on a page](/help/sites-cloud/authoring/fragments/content-fragments.md).
   * Responsible for layout and delivery of a fragment; that is, channels.
   * Fragments need one or more dedicated components to define the layout and deliver some or all elements/variations and associated content.
@@ -360,9 +360,12 @@ Use Rich Text fields (the **Multi line text** Data Type) with consideration:
 
 Create as many fragment variations as needed, but no more.
 
-Variations add processing time to a Content Fragment, on the author environment and upon delivery too. It is recommended to keep the number of variations to a manageable minimum. 
+Variations add processing time to a Content Fragment, on the author environment and upon delivery too. 
 
-A best practice is to not exceed ten variations per Content Fragment.
+It is recommended that you:
+
+* keep the number of variations to a manageable minimum 
+* do not exceed ten variations per Content Fragment
 
 ### Test Before Production {#test-before-production}
 
