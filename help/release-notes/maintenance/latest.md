@@ -1,14 +1,14 @@
 ---
-title: Maintenance Release Notes
-description: Maintenance Release Notes for commits 24288-24464
-exl-id: 
+title: Current Maintenance Release Notes of [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Current Maintenance Release Notes of [!DNL Adobe Experience Manager] as a Cloud Service.
+exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 ---
 
 # Maintenance Release Notes {#maintenance-release-notes}
 
-The following section outlines the technical release notes for commits 24288 through 24464.
+The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
 ## Release 24464 {#release-24464}
 
