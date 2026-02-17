@@ -2,7 +2,7 @@
 title: Cache Management in Dynamic Media with Open APIs
 description: Cache Management in Dynamic Media with Open APIs
 role: User
-
+exl-id: 203a5291-edb5-4900-8b0a-32e1ebae5395
 ---
 # Cache Management in Dynamic Media with Open APIs {#cache-management-dynamic-media-open-apis}
 
@@ -40,7 +40,7 @@ responseTransformations:
             value: max-age=300
 ```
 
-For additional assistance or questions about cache management, please contact [Adobe Support](https://helpx.adobe.com/in/contact.html).
+For additional assistance or questions about cache management, contact [Adobe Support](https://helpx.adobe.com/in/contact.html).
 
 ## Active Cache Invalidation {#active-cache-invalidation}
 
@@ -96,7 +96,7 @@ The prolonged caching with event driven active cache invalidation is applicable 
 
 +++ **Can I opt-out of long-lived caching for my repository?**
 
-You can contact [Adobe Support](https://helpx.adobe.com/in/contact.html) explaining the rationale and Adobe will get in touch with you for discussion.
+To opt out of prolonged caching, contact [Adobe Support](https://helpx.adobe.com/in/contact.html) and provide the rationale for your request.
 
 +++
 

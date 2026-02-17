@@ -14,7 +14,7 @@ The following section outlines the technical release notes for the current maint
 
 Summarized below are the continuous improvements for maintenance release 24288, which was publicly released on February 4, 2026. The previous maintenance release was release 23963.
 
-The 2026.2.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+The 2026.2.0 feature activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
 >[!NOTE]
 >
@@ -85,11 +85,15 @@ The 2026.2.0 feature activation will provide the full feature set for this maint
 * GUIDES-37837: When attempting to save a topic or map, the operation may intermittently fail with a Failed to save file error, particularly during intensive asset processing tasks or translation workflows running in the background.
 * GUIDES-27774: The Broken list report is incorrectly including external links, valid `keyrefs` and keywords that are properly resolved within scope of current map.
 
+>[!NOTE]
+>
+> There is a breaking change in AEM Guides to be aware of: [Improved handling for Read only files](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2026-releases/2601-release/whats-new-2026-01-0#improved-handling-for-read-only-files).
+
 For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
 
 ### Known Issues {#known-issues-24288}
 
-None.
+* SITES-40408: GraphQL endpoint returns 404 due to the custom dispatcher rewrite rules.
 
 ### Deprecated Features and APIs {#deprecated-24288}
 
