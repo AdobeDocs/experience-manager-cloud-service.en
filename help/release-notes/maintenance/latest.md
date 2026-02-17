@@ -12,7 +12,9 @@ The following section outlines the technical release notes for commits 24288 thr
 
 ## Release 24464 {#release-24464}
 
-Summarized below are the continuous improvements for maintenance release 24464. The previous maintenance release was release 24288.
+Summarized below are the continuous improvements for maintenance release 24464, which was publicly released on February 17, 2026. The previous maintenance release was release 24288.
+
+The 2026.2.0 feature activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
 ### Enhancements {#enhancements-24464}
 
@@ -22,7 +24,7 @@ Summarized below are the continuous improvements for maintenance release 24464. 
 * ASSETS-10995: Set limit on number of assets in download zip.
 * ASSETS-50788: Update Search API to use Asset Metadata GET API.
 * ASSETS-50946: Map request body using Metadata GET API to JCR metadata.
-* ASSETS-55866: Avoid submitting new request for same asset until previous processing complete.
+* ASSETS-55866: Avoid submitting new request for same asset until previous processing is complete.
 * ASSETS-60300: Provide API to retrieve async job context and result.
 * ASSETS-60574: Add support for latest version of Sling API bundle.
 * ASSETS-61049: Continue metadata manager bundle development.
@@ -73,7 +75,7 @@ Summarized below are the continuous improvements for maintenance release 24464. 
 * ASSETS-61730: Redirect to Direct Binary Access should respect asset encoding.
 * ASSETS-62358: Assets report CSV shows corrupted values in content path.
 * ASSETS-62610: Adobe Stock license button disabled in Assets UI.
-* ASSETS-62613: NPE in downloadasset saveas.
+* ASSETS-62613: NPE in `downloadasset`/`saveas`.
 * ASSETS-62656: Omnisearch AI search indicator incorrectly shown for non-Assets searches.
 * GRANITE-55387: Correcting word enclosed in quotes deletes entire word.
 * GRANITE-61240: RCE via stored XSS in lazycontainer.js.
@@ -91,7 +93,7 @@ Deprecated and removed features and APIs in AEM as a Cloud Service are detailed 
 
 ### Security Fixes {#security-24464}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 14 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
 ### Embedded Technologies {#embedded-tech-24464}
 
@@ -101,6 +103,6 @@ AEM as a Cloud Service is dedicated to optimizing your platform's security and p
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |Apache HTTP Server| 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES)|
-|AEM Core Components| 2.30.2|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|AEM Core Components| 2.30.4|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
 |Node.js|14 (default)|[Supported Node.js versions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions)|
 
