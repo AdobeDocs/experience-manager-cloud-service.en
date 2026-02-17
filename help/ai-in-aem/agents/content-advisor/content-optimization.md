@@ -66,7 +66,7 @@ Regional Marketers and Agency Workers can also use the Content Optimization Agen
 
 You can access the Agents in AEM via the AI Assistant. Log on to experience.adobe.com and you can start interacting with AI Assistant by specifying your prompt in natural language using the `Ask AI Assistant anything` field:
 
-![Access Discovery Agent](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
+![Access Discovery Agent](/help/ai-in-aem/agents/content-advisor/assets/access-discovery-agent.png)
 
 ## Common use cases and sample prompts {#use-cases-prompts}
 
@@ -145,7 +145,7 @@ When you specify an optimization prompt, the Content Optimization Agent returns 
 
 * **Videos**: The response provides options to open the Dynamic Media URL or download the optimized video.
 
-![Content Optimization results](/help/ai-in-aem/agents/content-optimization/assets/download-content-optimization.png)
+![Content Optimization results](/help/ai-in-aem/agents/content-advisor/assets/download-content-optimization.png)
 
 These results make it easy to review the optimized output and immediately use it across downstream channels or workflows.
 
