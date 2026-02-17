@@ -30,7 +30,7 @@ The Content Advisor Agent empowers teams to turn manual, long processes into fas
 
 ### Content Optimization Job {#optimization}
 
-[The content optimization job](//help/ai-in-aem/agents/content-advisor/content-optimization.md) personalizes and adapts visuals, images, and videos for different channels, improving engagement and conversion across the experience lifecycle. 
+[The content optimization job](/help/ai-in-aem/agents/content-advisor/content-optimization.md) personalizes and adapts visuals, images, and videos for different channels, improving engagement and conversion across the experience lifecycle. 
 
 ## Use with Other Agents {#other-agents}
 
