@@ -3,8 +3,8 @@ title: Using MCP with AEM as a Cloud Service
 description: Learn how to use the Model Context Protocol with AEM as a Cloud Service
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
+exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
 ---
-
 # Using MCP with AEM as a Cloud Service {#using-mcp-with-aem-as-a-cloud-service}
 
 ## Introduction {#introduction}
