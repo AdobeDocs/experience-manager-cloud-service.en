@@ -75,7 +75,6 @@ Summarized below are the continuous improvements for maintenance release 24464. 
 * ASSETS-62610: Adobe Stock license button disabled in Assets UI.
 * ASSETS-62613: NPE in downloadasset saveas.
 * ASSETS-62656: Omnisearch AI search indicator incorrectly shown for non-Assets searches.
-* ASSETS-62882: Info icon tooltip breaks when multiple invalid filenames uploaded.
 * GRANITE-55387: Correcting word enclosed in quotes deletes entire word.
 * GRANITE-61240: RCE via stored XSS in lazycontainer.js.
 * GRANITE-64101: OOTB indexes converted to ES reverted back to Lucene on restart.
