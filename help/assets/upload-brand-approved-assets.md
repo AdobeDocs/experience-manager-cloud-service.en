@@ -88,7 +88,7 @@ To upload assets from your local file system, click **Add Assets** to open the u
 
 ### How does the asset approval process work in Content Hub? {#asset-approval-content-hub}
 
-If the Auto-approval toggle is enabled, assets uploaded using Content Hub are automatically available. If it is disabled, uploaded assets are placed in the **hydrated-assets** folder in Assets as a Cloud Service, and you need to manually bulk edit their status to **Approved** before to make them display in Content Hub.
+If the Auto-approval toggle is enabled, assets uploaded using Content Hub are automatically available. If it is disabled, uploaded assets are placed in the **hydrated-assets** folder in Assets as a Cloud Service, and you need to manually bulk edit their status to **Approved** to make them display in Content Hub.
 
 ### Can I configure the fields that are mandatory or optional while uploading assets to Content Hub? {#available-fields-while-uploading-assets-to-content-hub}
 
