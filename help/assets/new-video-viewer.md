@@ -23,7 +23,10 @@ The viewer is available as an additional option and requires explicit selection 
 
 The New Video Viewer is intended for organizations that require an enhanced and extensible video experience without disrupting existing implementations.
 
-> **Note:** The New Video Viewer is available only in selected environments. Availability depends on feature enablement and may vary by account.
+> **NOTE**
+>
+> The New Video Viewer is a limited availability feature. You can get it enabled by creating a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+
 
 ## How the New Video Viewer works {#how-it-works}
 
@@ -58,10 +61,6 @@ The New Video Viewer is available starting with **AEM as a Cloud Service version
 
 To enable or disable the New Video Viewer, contact Adobe Customer Care.
 
-> **NOTE**
->
-> The New Video Viewer is a limited availability feature. You can get it enabled by creating a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-
 ## Preview the New Video Viewer {#preview}
 
 Execute the following steps to preview the New Video Viewer from the asset details page:
@@ -70,7 +69,9 @@ Execute the following steps to preview the New Video Viewer from the asset detai
 2. Click the video asset to open the asset details page.
 3. In the left panel, click **Viewers**.
 4. In the **Viewers** panel, select **Video (new)**.
-5. Click **Copy URL** to copy the preview link.
+5. Click **URL** to copy the preview link.
+ ![Copy URL](assets/Copy-url1.jpg)
+
 
 ## Use the New Video Viewer in Sites {#use-in-sites}
 
@@ -93,7 +94,7 @@ Execute the following steps to add a video using the Dynamic Media component:
 Execute the following steps to configure the viewer preset:
 
 1. Select the **Dynamic Media** component on the page.
-2. Click **Settings** in the component toolbar.
+2. Click **Configure** in the component toolbar.
    ![Open Dynamic Media settings](assets/open-settings.jpeg)
 
 3. In the **Dynamic Media settings dialog**, select **Video (new)** from the **Viewer Preset** drop-down list.
@@ -104,7 +105,7 @@ Execute the following steps to configure the viewer preset:
 
 5. Save the changes.
 
-The video will now load on the page using the New Video Viewer.
+The video loads on the page using the New Video Viewer.
 
 ## Viewer modifiers {#viewer-modifiers}
 
@@ -162,15 +163,12 @@ Adobe recommends validating the message origin to ensure that events are process
 
 ## Video Engagement Report for the New Video Viewer {#video-engagement-report}
 
-The Video Engagement Report provides analytics metrics for videos played using the New Video Viewer in Dynamic Media. The report delivers aggregated performance data for selected date ranges and supports both daily and monthly reporting.
+The Video Engagement Report provides analytics metrics for videos played using the New Video Viewer in Dynamic Media. The report delivers aggregated performance data for the specified month and supports monthly reporting.
 
 Reports are generated upon request. To request a report, create a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) and provide the following details:
 
-* Required report type (ad-hoc or scheduled monthly)
-* Reporting date range
-* Delivery email address or contact details where the report should be sent
-
-After the request is submitted, Adobe Customer Support reviews the request and forwards it to the engineering team for report generation. Once the report is generated, Adobe Customer Support delivers the report.
+* Month of report – Specify the month for which the report is required (format: `YYYY-MM-01`).
+* Delivery email address – Email address of the group (recommended) or individual to deliver the report
 
 The report provides per-video engagement metrics, including views, impressions, watch time, completion rate, and engagement score.
 
@@ -182,16 +180,6 @@ Video engagement reporting is supported in the following regions:
 * EMEA (Europe, Middle East, Africa)
 * APAC (Asia Pacific)
 * Polaris
-
-### Report type
-
-The system provides the Monthly report to view aggregated video engagement metrics.
-
-#### Monthly report
-
-* Supports month range filtering.
-* Month format: `YYYY-MM-01`.
-* Metrics are aggregated at the month level.
 
 ### Report format
 
