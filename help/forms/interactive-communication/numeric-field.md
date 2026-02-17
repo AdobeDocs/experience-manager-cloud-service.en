@@ -1,11 +1,11 @@
 ---
-title: Numeric Field Component in Interactive Communication Editor 
+title: Numeric Field Component in Interactive Communication Editor
 description: Numeric Field Component in Interactive Communication Editor in AEM Forms to nables authors to collect numerical input from users in a controlled format.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+exl-id: 1f6bda20-7bce-4cfd-9985-f8b49d6e50e0
 ---
-
 # Numeric Field Component in Interactive Communication Editor 
 
 >[!NOTE]
@@ -124,6 +124,4 @@ Authors can place numeric fields inside layout containers or subforms and apply 
 
 - Keep consistent appearance and typography to match brand guidelines. 
 
-The **Numeric Field** component in the Interactive Communication editor is a precise, reliable tool for digit-based data collection. With robust formatting, visibility controls, and data-binding options, it ensures that numerical inputs are cleanly captured and seamlessly integrated into digital forms. When styled and configured correctly, it significantly enhances form usability and overall data accuracy. 
-
- 
+The **Numeric Field** component in the Interactive Communication editor is a precise, reliable tool for digit-based data collection. With robust formatting, visibility controls, and data-binding options, it ensures that numerical inputs are cleanly captured and seamlessly integrated into digital forms. When styled and configured correctly, it significantly enhances form usability and overall data accuracy.
