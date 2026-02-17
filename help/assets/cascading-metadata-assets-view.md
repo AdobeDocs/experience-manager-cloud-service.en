@@ -5,11 +5,15 @@ feature: Metadata
 role: Admin, User
 ---
 
-# Cascading Metadata {#cascading-metadata}
+# Cascading Metadata Assets View{#cascading-metadata-assets-view}
 
 When capturing the metadata information of an asset, users provide information in the various available fields. You can display specific metadata fields or field values that are dependent on the options selected in the other fields. Such conditional display of metadata is called cascading metadata. In other words, you can create a dependency between a particular metadata field/value and one or more fields and/or their values.
 
 Use metadata Forms to define rules for displaying cascading metadata. For example, if your metadata form includes an asset type field, you can define a pertinent set of fields to be displayed based on the type of asset a user selects.
+
+>[!IMPORTANT]
+>
+>The Cascading Metadata feature is available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 Here are some use cases for which you can define cascading metadata:
 
@@ -31,7 +35,7 @@ We are using a dropdown field named `Image` as an example to categorize files ba
 
 >[!IMPORTANT]
 >
->When adding a rule, you get values only from the available dropdown fields, the single-line text field are not displayed.
+>You can create rules based on dropdown fields only.
 
 Irrespective of the asset type chosen, display the copyright information as a required field. You can use the [pre-defined metadata components](metadata-assets-view.md#property-components) and [assign metadata to a folder](metadata-assets-view.md#assign-metadata-form-folder).
 
