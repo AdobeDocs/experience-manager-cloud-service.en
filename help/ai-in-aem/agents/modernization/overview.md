@@ -12,7 +12,7 @@ Learn how the Experience Modernization Agent onboards websites into Edge Deliver
 
 >[!NOTE]
 >
->The Experience Modernization Agent supersedes the former migration skill of the [Experience Production Agent.](/help/ai-in-aem/agents/production/overview.md)
+>The Experience Modernization Agent supersedes the former migration skill of the [Brand Experience Agent.](/help/ai-in-aem/agents/brand-experience/overview.md)
 
 ## Introduction {#introduction}
 
