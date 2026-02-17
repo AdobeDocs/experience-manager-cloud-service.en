@@ -3,8 +3,8 @@ title: Form creation skill
 description: Learn about the Experience Production Agent's form creation skill and how to use natural language to create forms from scratch.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
+exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
 ---
-
 # Form Creation Skill {#form-creation-skill}
 
 The form creation skill is a capability of the Experience Production Agent that is designed to develop forms using natural language prompts. This skill automatically generates appropriate form structure and  field types. The skill is surfaced through AI Assistant.

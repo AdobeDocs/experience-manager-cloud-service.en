@@ -108,6 +108,7 @@ The rich text editor (RTE) of the Universal Editor allows the author to apply st
 * Link
 * Unlink
 * Image
+* Paste as Text
 * Remove All Formatting
 
 Existing tables can be edited using the RTE, but new tables can not be created.
@@ -196,7 +197,32 @@ The selected component deleted.
 >
 >Use the hot key `Shift+Backspace` to delete the selected component from its container.
 
-### Reordering Components {#reordering-components}
+### Reordering and Moving Components {#reordering-components}
+
+You can move and reorder components using the context menu or the content tree.
+
+#### Move Components with the Context Menu {#move-context-menu}
+
+1. Right-click on a component or click on the selected component's badge to open the [context menu.](#context-menu)
+1. Select the move option desired.
+   * Move to top
+   * Move up
+   * Move down
+   * Move to bottom
+   ![Move options in context menu](assets/move-options-in-conext-menu.png)
+
+The component is moved in both the editor and the content tree.
+
+>[!TIP]
+>
+>Use the hot keys `Command-U` or `Shift-Command-U` to move up or to the top, respectively.
+>Use the hot keys `Command-J` or `Shift-Command-J` to move down or to the bottom, respectively.
+
+>[!NOTE]
+>
+>The context menu options can only move components within their containers. If you wish to move components between containers, [use the content tree.](#reorder-content-tree)
+
+#### Reorder Components with the Content Tree {#reorder-content-tree}
 
 1. If not already in [content tree mode](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), switch to it.
 1. Select a container component in the content tree or in the editor.
