@@ -61,7 +61,7 @@ Agencies and Partners can easily find brand-approved assets within Content Hub a
 
 You can access the Agents in AEM via the AI Assistant. Log on to experience.adobe.com and you can start interacting with AI Assistant by specifying your prompt in natural language using the search box:
 
-![Access Discovery Agent](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
+![Access Discovery Agent](/help/ai-in-aem/agents/content-advisor/assets/access-discovery-agent.png)
 
 For information on the MCP endpoint to access Discovery Agent, contact Adobe Support.
 
@@ -140,7 +140,7 @@ Each result includes asset name along with key asset metadata such as the asset 
 
 You can click the asset path to seamlessly navigate to the asset location within AEM.
 
-![Search assets using Discovery Agent](/help/ai-in-aem/agents/discovery/assets/search-results-discovery-agent.png)
+![Search assets using Discovery Agent](/help/ai-in-aem/agents/content-advisor/assets/search-results-discovery-agent.png)
 
 You can use these asset details to quickly evaluate if an asset meets the requirements without navigating to each asset to view these details.
 
@@ -152,7 +152,7 @@ You can use these asset details to quickly evaluate if an asset meets the requir
 
 The Discovery Agent provides full-text search capabilities for Content Fragments, returning the top results that best match the specified prompt. Each result includes Content Fragment name along with key metadata fields such as Content Fragment path, creator, creation date, variations, last modifier, and last modified date fields.
 
-![Search Content Fragments using Discovery Agent](/help/ai-in-aem/agents/discovery/assets/search-content-fragments-discovery-agent.png)
+![Search Content Fragments using Discovery Agent](/help/ai-in-aem/agents/content-advisor/assets/search-content-fragments-discovery-agent.png)
 
 You can click the Content Fragment path to seamlessly navigate to the Content Fragment location within AEM.
 
