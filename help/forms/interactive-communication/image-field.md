@@ -1,11 +1,11 @@
 ---
-title: Image Field Component in Interactive Communication Editor 
+title: Image Field Component in Interactive Communication Editor
 description: Image Field Component in Interactive Communication Editor  in AEM Forms to allows authors to insert images into a communication layout.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+exl-id: 0af73ae2-fe1d-4763-ad4d-2934691cb9e1
 ---
-
 # Image Field Component in Interactive Communication Editor 
 
 >[!NOTE]
@@ -104,8 +104,4 @@ Authors can place the field within subforms or layout containers for alignment a
 
 - Bind the field to a meaningful schema path if integration with back-end  
 
-The Image Field component in interactive communication editor is a versatile component that enhances form interactivity by enabling visual content uploads. When designed with styling, validation, and data binding, it supports a seamless user experience and efficient data capture for image-based submissions. 
-
- 
-
- 
+The Image Field component in interactive communication editor is a versatile component that enhances form interactivity by enabling visual content uploads. When designed with styling, validation, and data binding, it supports a seamless user experience and efficient data capture for image-based submissions.
