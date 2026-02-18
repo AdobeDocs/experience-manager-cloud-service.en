@@ -1,5 +1,5 @@
 ---
-title: New video Viewer
+title: New Video Viewer
 description: The New Video Viewer in Dynamic Media provides an enhanced video playback experience
   with improved performance, accessibility, and configurability.
 role: User
@@ -57,7 +57,7 @@ Before using the New Video Viewer, ensure the following prerequisites are met:
 | Video profile | A video profile must be applied to the folder. |
 | Video asset | A video must be ingested into the folder. |
 
-The New Video Viewer is available starting with **AEM as a Cloud Service version 2025.7.0**
+The New Video Viewer is available starting with **AEM as a Cloud Service version 2025.7.0**.
 
 To enable or disable the New Video Viewer, contact Adobe Customer Care.
 
@@ -70,8 +70,7 @@ Execute the following steps to preview the New Video Viewer from the asset detai
 3. In the left panel, click **Viewers**.
 4. In the **Viewers** panel, select **Video (new)**.
 5. Click **URL** to copy the preview link.
- ![Copy URL](assets/Copy-url1.jpg)
-
+![Copy URL](assets/Copy-url1.jpg)
 
 ## Use the New Video Viewer in Sites {#use-in-sites}
 
