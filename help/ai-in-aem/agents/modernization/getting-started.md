@@ -3,6 +3,7 @@ title: Getting Started with the Experience Modernization Agent
 description: Learn the first steps to quickly become productive with the Experience Modernization Agent using the Experience Modernization Console.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
+exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
 ---
 
 # Getting Started with the Experience Modernization Agent {#getting-started}
@@ -17,7 +18,7 @@ Learn the first steps to quickly become productive with the Experience Moderniza
 
 1. Select an [Edge Delivery Services](/help/edge/overview.md) repository for use with the Experience Modernization Console.
    * This can be an existing Edge Delivery Services project or you can create a new one following the [developer tutorial](https://www.aem.live/developer/tutorial) using the [boilerplate repository.](https://github.com/adobe/aem-boilerplate)
-1. Ensure that the [AEMY GitHub app](https://github.com/apps/aem-aemy) is installed in the repository.
+1. Ensure that the [AEM Code Connector](https://github.com/apps/aem-code-connector) is installed in the repository.
    * This allows the console to inspect your code.
 1. Ensure that the [AEM Code Sync GitHub app](https://github.com/apps/aem-code-sync) is installed in the repository.
    * This allows Edge Delivery Services to sync your code.
@@ -35,7 +36,7 @@ The console prompts you for a repository when you first sign in.
 ![First sign in screen of the console](assets/first-sign-on.png)
 
 1. Click **Connect repository**.
-1. This opens the AEMY app on a new browser tab. Click **Authorize AEM AEMY**.
+1. This opens the AEM Code Connector app on a new browser tab. Click **Authorize AEM Code Connector**.
 1. Back in the console, select **Owner**, **Repository**, and **Branch selection** and click **Checkout to workspace**.
    ![Connecting to GitHub project](assets/connect-to-github-project.png)
 1. When prompted to **Replace existing workspace**, click **Replace workspace**.

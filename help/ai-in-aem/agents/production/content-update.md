@@ -3,8 +3,8 @@ title: Content Update Skill
 description: Learn what the Experience Production Agent's content update skill is and what it can do for you.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
+exl-id: e2d1dae8-38de-4357-bb14-ad35acb71aee
 ---
-
 # Content Update Skill {#content-update}
 
 The content update skill of the Experience Production Agent automates content production to accelerate everyday tasks for Adobe Experience Manager (AEM) as a Cloud Service and Edge Delivery Services.
