@@ -3,8 +3,8 @@ title: How to customize auto-generated Document of Record template for Adaptive 
 description: Learn how to download, customize, and re-upload the auto-generated Document of Record (DoR) template for Adaptive Forms using Adobe Forms Designer.
 feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer
+exl-id: 2416add3-0b9d-4a8d-a84d-d65c0762d8e8
 ---
-
 # Customize the auto-generated Document of Record template
 
 <span class="preview"> This article applies to both **Core Components** and **Foundation Components** based Adaptive Forms.</span>
@@ -120,4 +120,3 @@ To confirm that the customized template is applied correctly:
 * [Generate Document of Record for Adaptive Forms (Foundation Components)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Base template of a Document of Record](/help/forms/generate-document-of-record-core-components.md#base-template-of-a-document-of-record)
 * [Customize the branding information in Document of Record](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record)
-
