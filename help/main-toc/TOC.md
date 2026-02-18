@@ -756,6 +756,7 @@ user-guide-title: AEM as a Cloud Service
     + [AEM Assets View UI Extensibility](/help/assets/aem-assets-view-ui-extensibility.md)
 
     + [Manage reports](/help/assets/manage-reports-assets-view.md)
+    + [Cascading Metadata Assets View](/help/assets/cascading-metadata-assets-view.md)
   + Content Hub {#content-hub}
     + [Overview](/help/assets/product-overview.md)
     + [What's new in Content Hub](/help/assets/whats-new.md)
