@@ -20,6 +20,8 @@ Some of the key benefits of the content discovery job include:
 
 * **Consistent Content Utilization**: Ensures reuse of approved assets and fragments, maintaining brand consistency across channels.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3479983)
+
 >[!IMPORTANT]
 >
 >AI-generated responses may be inaccurate or misleading. Be sure you double-check suggested fixes and responses. 
