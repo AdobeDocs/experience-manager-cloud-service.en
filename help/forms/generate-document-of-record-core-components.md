@@ -160,12 +160,10 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
   Select the option to create an Adaptive Form without a form model. When the option is selected, the Document of Record is automatically generated for your Adaptive Form.
 
 * **[Associate form template as a Document of Record template](creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)**
-  
   Select the option to use an XFA Form as a template for Document of Record. 
 
 * **[Generate Document of Record](creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)**
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
-  
 
 When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
 
@@ -348,28 +346,24 @@ To localize the branding information that you enter in the Document of Record ta
 
         * **Hide description of panels**: Setting the property excludes description of the panel/table from the Submission PDF. Applicable for panel and table.
 
-        
-
     1. **Form Field Properties**: 
- 
+
        * **For Check Box and Radio Button components, show only the selected values**: Setting the property displays only selected values of check box and radio button in [!UICONTROL Document of Record].
        * **Separator for multiple value(s)**: You can choose any separator such as comma or line break to display multiple values.
        * **Options Alignment**: You can select the desired alignment (Horizontal, Vertical, Same as adaptive Form) to set the alignment for the fields such as check box or radio button to be displayed on [!UICONTROL Document of Record]. By default, the vertical alignment is set for the fields in [!UICONTROL Document of Record]. Setting the properties from the [!UICONTROL Form Field Properties] of DoR overwrites the properties set in the [!UICONTROL Item Alignment] for the fields on an Adaptive Form. In case, you select [!UICONTROL Same as Aaptive form] option, the alignment as configured in an Adaptive Form author instance is used for [!UICONTROL Document of Record] fields.  
        * **Number of options for horizontal alignment**:You can set the number of options to be displayed on the Submission PDF for the horizontal alignment. 
-        
-      
 
     1. **Master Page Properties**:
- 
+
        * **Logo Image**: You can either choose to use the logo image from the Adaptive Form, choose one from DAM, or upload one from your computer.
        * **Form Title**: Title of the DoR.
-* **Header Text**: Text that appears at the header section of the Submission PDF.
-        * **Disclaimer Label**: Label of disclaimer.
-        * **Disclaimer**: Text which specifies the scope of rights and obligations on the Submission PDF.
+       * **Header Text**: Text that appears at the header section of the Submission PDF.
+       * **Disclaimer Label**: Label of disclaimer.
+       * **Disclaimer**: Text which specifies the scope of rights and obligations on the Submission PDF.
        * **Disclaimer Text**: Text of disclaimer.
 
        <!--![Master Page Properties](/help/forms/assets/dorpropertiesimg.png)-->
-  
+
        >[!NOTE]
        >
        >If you are using an Adaptive Form template created with a version of Designer prior to 6.3, for Accent Color and Font Family properties to work, ensure that the following is present in your Adaptive Form template under the root subform:
@@ -438,5 +432,5 @@ Setting of the Document of Record component are available under its properties. 
 
 **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.
 
-!->>
+-->
 
