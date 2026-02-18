@@ -35,7 +35,3 @@ The Content Advisor Agent empowers teams to turn manual, long processes into fas
 ## Use with Other Agents {#other-agents}
 
 The agent is able to work with other agent skills.
-
-## Accessing {#accessing}
-
-All AEM as a Cloud Service customers have access to the Content Advisor Agent via a trial, which you can access in Adobe Experience Manager's Experience Hub. If you don't see the trial, please reach out to your account team.
