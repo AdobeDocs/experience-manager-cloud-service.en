@@ -50,8 +50,11 @@ communications.
 
 The agent is able to work with other agent skills, examples include:
 
-* Get source assets from the Experience Advisory Agent
+* Get source assets from the Content Advisor Agent
 
-## Accessing {#accessing}
+## Activation {#activation}
 
-All AEM as a Cloud Service customers have access to the Brand Experience Agent via a trial, which you can access in Adobe Experience Manager's Experience Hub. If you don't see the trial, please reach out to your account team.
+To activate and gain access to the Brand Experience Agent you need to contact Adobe by either:
+
+* Emailing `experience-production-agent@adobe.com`
+* Or reaching out to your account team
