@@ -33,25 +33,34 @@ The 2026.2.0 feature activation provides the full feature set for this maintenan
 * ASSETS-61854: Send GenStudio solution in activation/deactivation message.
 * ASSETS-61973: Create API in AEM for managing prompts.
 * ASSETS-62182: Asset Compute event handler for c2pa-manifest rendition.
+* ASSETS-62311: Search regression issues.
 * ASSETS-62413: Add support for customModifier field in every layer in JSON.
 * ASSETS-62432: Merge folder delete API PR.
 * ASSETS-62540: Increase ui-touch-optimized version in quickstart.
 * ASSETS-62622: Handle search mode in MatchQuery.
+* ASSETS-62671: Fix MatchQuery startsWith operator.
 * ASSETS-62780: Add feature toggle for folder API.
 * ASSETS-62988: Hide c2pa manifest rendition from showing in renditions tab.
 * ASSETS-63336: Template syncing from AEM to DM should only happen for dam namespaced metadata.
 * ASSETS-63375: Put asset upload experimental OpenAPIs behind feature toggle.
+* ASSETS-63453: Ensure all users can read omnisearch config.
 * GRANITE-63744: Allow connecting async jobs to sling jobs.
 * GRANITE-64567: Automatically disable semantic search for SKU searches.
 * GUIDES-41187: Add headers for Guides usage.
 * SITES-30452: Content API with ASO - title & description suggestions.
+* SITES-33116: Fix path validation.
 * SITES-34234: Page editor: preserve content tree state.
 
 ### Fixed Issues {#fixed-issues-24464}
 
 * ASSETS-43198: Asset expiration notification emails do not respect user language preference.
+* ASSETS-51840: Asset processing improvements.
 * ASSETS-52061: Unable to navigate back after selecting saved search.
+* ASSETS-53155: Asset content improvements.
 * ASSETS-53745: Dynamic Media download flow requires unselecting original asset before choosing web preset.
+* ASSETS-54260: Asset content fixes.
+* ASSETS-54787: Asset content improvements.
+* ASSETS-57391: Asset content updates.
 * ASSETS-59213: cq-dynamicmedia-core depends on deprecated commons-lang library.
 * ASSETS-59214: cq-scene7-imaging depends on deprecated commons-lang library.
 * ASSETS-59546: cq-remotedam-client-core depends on deprecated commons-lang library.
@@ -64,16 +73,13 @@ The 2026.2.0 feature activation provides the full feature set for this maintenan
 * ASSETS-61134: Remove comparisonVersion tags from pom files.
 * ASSETS-61309: Content Fragment move/copy no longer updates internal references.
 * ASSETS-61730: Redirect to Direct Binary Access should respect asset encoding.
-* ASSETS-62311: Search regression issues.
 * ASSETS-62358: Assets report CSV shows corrupted values in content path.
 * ASSETS-62610: Adobe Stock license button disabled in Assets UI.
 * ASSETS-62613: NPE in `downloadasset`/`saveas`.
 * ASSETS-62656: Omnisearch AI search indicator incorrectly shown for non-Assets searches.
-* ASSETS-62671: Fix MatchQuery startsWith operator.
-* ASSETS-62882: Info icon tooltip breaks when multiple invalid filenames uploaded.
 * GRANITE-55387: Correcting word enclosed in quotes deletes entire word.
+* GRANITE-61240: RCE via stored XSS in lazycontainer.js.
 * GRANITE-64101: OOTB indexes converted to ES reverted back to Lucene on restart.
-* GS-24323: Remove `/conf/genstudio` folder for JPMC.
 * SITES-24530: Touch target of close/remove buttons in search modal not large enough.
 * SITES-31425: Unlocalized error message in start workflow.
 
@@ -99,3 +105,4 @@ AEM as a Cloud Service is dedicated to optimizing your platform's security and p
 |Apache HTTP Server| 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES)|
 |AEM Core Components| 2.30.4|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
 |Node.js|14 (default)|[Supported Node.js versions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions)|
+
