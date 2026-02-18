@@ -106,10 +106,14 @@ You can quote text by adding the &gt; symbol before the text. For example:
 
 You can have nested block quotes. For example:
 
-&nbsp;&nbsp;&nbsp;&nbsp;`> This is the first level of quoting.` 
+&nbsp;&nbsp;&nbsp;&nbsp;`> This is the first level of quoting.`
+
 &nbsp;&nbsp;&nbsp;&nbsp;`>`  
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`>> This is a nested blockquote.`  
+
 &nbsp;&nbsp;&nbsp;&nbsp;`>`  
+
 &nbsp;&nbsp;&nbsp;&nbsp;`> Back to the first level.`
 
 ## Lists {#lists}
