@@ -201,6 +201,10 @@ Please review and update any downstream processes that rely on custom logging be
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
 
+#### Cloud Manager MCP Server (Beta Program) {#cm-mcp-server}
+
+TBD
+
 #### AEM Edge Functions (Beta Program) {#edge-functions}
 
 AEM Edge Functions (referred to in earlier release notes as *Edge Computing*) allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
