@@ -368,7 +368,7 @@ To localize the branding information that you enter in the Document of Record ta
         * **Disclaimer**: Text which specifies the scope of rights and obligations on the Submission PDF.
        * **Disclaimer Text**: Text of disclaimer.
 
-       ![Master Page Properties](/help/forms/assets/dorpropertiesimg.png)
+       <!--![Master Page Properties](/help/forms/assets/dorpropertiesimg.png)-->
   
        >[!NOTE]
        >
