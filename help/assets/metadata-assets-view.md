@@ -88,13 +88,15 @@ To create a metadata form, follow these steps:
    ![metadata forms option in left sidebar](assets/metadata-forms-sidebar.png)
 
 1. Click **[!UICONTROL Create]**, in the upper-right area of the user interface.
-1. Provide a name for the form and click **[!UICONTROL Create]**.
+1. Provide a name for the form and click **[!UICONTROL Create]**. 
 1. Provide a name for the tab in **[!UICONTROL Settings]** in the right rail.
 1. From the **[!UICONTROL Components]** available in the left rail, drag the required components on a tab in the form. Drag the components in the desired sequence.
 
    ![metadata forms option in left sidebar](assets/metadata-form-new.png)
 
-   *Figure: Metadata form creation interface with options to add components and option to preview the form.*
+   Understand the [user interface of a Metadata Form](cascading-metadata-assets-view.md#build-metadata-forms).
+
+   <!--*Figure: Metadata form creation interface with options to add components and option to preview the form.*-->
 
 1. For each component, provide a name in the **[!UICONTROL Settings]** in the right rail, provide a mapping with the supported properties.
 1. Optionally, for a component, select **[!UICONTROL Required]** to make the metadata field mandatory and select **[!UICONTROL Read-Only]** to make the field uneditable in the asset [!UICONTROL Details] page.
@@ -134,6 +136,9 @@ Below is an overview of each property type and how they are stored.
 | Tags | Add a tag from values stored in Taxonomy Management (mapped to xcm:tags). |
 | Keywords | Add free-form keywords (mapped to dc:subject). |
 | Smart Tags | Add to augment search capabilities by automatically adding metadata tags. |
+| Publish | Adds publish status of the asset. |
+| Link | It stores a web address that points to an online resource, such as a webpage, image, or external reference.  |
+| Rating | It adds a categorical value that indicates the quality of an asset. |
 
 ### Assign metadata form to a folder {#assign-metadata-form-folder}
 
