@@ -27,3 +27,4 @@ These **preview** release notes are provided as a convenience so you know what c
 * For CORS purposes the correct endpoints are used for stage, preview, and prod.
 * Description was added to all schema fields.
 * Multi-field updates to Content Fragments are now supported for in-context edits.
+* Persistence of data when field is in focus was made more robust.
