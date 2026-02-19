@@ -117,6 +117,10 @@ To use the Accessibility option, follow these steps:
 >* Radio Button and Check-box can have only two options for accessibility namely, Custom Text and Title.
 >* For XFA-based Adaptive Forms, the accessibility option is inherited from the accessibility options set in the XDP. Tool tips from XDP are mapped to the Short Description and Caption are mapped to Title. The other options work as is.
 
+>[!NOTE]
+>
+>Adaptive Forms Core Components support semantic `<fieldset>` and `<legend>` grouping for checkbox groups, radio button groups, and panels. For details, see [Fieldset and legend support for checkbox, radio button, and panel components](#fieldset-legend-accessibility). This capability is available through the [Early Access program](/help/forms/early-access-ea-features.md).
+
 ### 3. Provide text equivalents for images {#provide-text-equivalents-for-images}
 
 Images can help improve comprehension for some users. However, for users using screen readers, images decrease the accessibility of your form. If you choose to use images, provide text descriptions for all images.
@@ -169,6 +173,31 @@ The following keyboard shortcut keys are available for the Date Picker component
 | Perform the action for the caption available between right and left navigation arrows in the calendar |Shift + Up Arrow |
 | Perform the action for right navigation arrow icon ![right-arrow](assets/right-navigation-icon.svg) available in the calendar |Shift + Left Arrow |
 | Perform the action for left navigation arrow icon ![left-arrow](assets/left-navigation-icon.svg) available in the calendar|Shift + Right Arrow |
+
+## Fieldset and legend support for checkbox, radio button, and panel components {#fieldset-legend-accessibility}
+
+<span class="preview"> This feature is available through the Early Access program. To request access, send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
+
+Adaptive Forms Core Components now use semantic `<fieldset>` and `<legend>` HTML elements to improve accessibility for checkbox groups, radio button groups, and panels. These elements enable screen readers to accurately interpret form structure and convey the relationships between group labels and their options.
+
+### Checkbox group
+
+Checkbox components render within a `<fieldset>` element, with the group label wrapped in a `<legend>` as its first child. This structure ensures that screen readers announce the group label before reading individual checkbox options, making it easier for users with assistive technologies to understand the context and purpose of each option.
+
+### Radio button group
+
+Radio button components render within a `<fieldset>` element, with the group label wrapped in a `<legend>` as its first child. Redundant or invalid ARIA attributes are removed, and individual labels are correctly associated with their respective inputs. This ensures that screen readers read each radio button label clearly, along with its group context.
+
+### Panel component
+
+The Panel component includes a **Fieldset** option in its properties. When enabled, the panel renders as a `<fieldset>` at runtime with the panel title as the `<legend>`. Use this option to semantically group related form fields within a panel, so that assistive technologies can convey the panel's purpose and the relationship among its child fields.
+
+To enable the Fieldset option for a panel:
+
+1. Open the Adaptive Form in the editor.
+1. Select the Panel component and select the configure icon.
+1. In the properties sidebar, enable the **Fieldset** option.
+1. Save the form.
 
 ## Use the accessibility tool to find remaining accessibility issues
 
