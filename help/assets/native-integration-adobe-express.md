@@ -15,7 +15,11 @@ AEM Assets integrates natively with Adobe Express, which allows you to directly 
 
 ## Prerequisites {#prerequisites}
 
-Entitlements to access Adobe Express and at least one environment within AEM Assets. The environment can be any of the repositories within Assets as a Cloud Service or Assets Essentials.
+You must ensure the following prerequisites:
+
+* Entitlements to access Adobe Express and at least one environment within AEM Assets. The environment can be any of the repositories within Assets as a Cloud Service or Assets Essentials.
+
+* To access detailed upload and suggested Content Advisor capabilities, ensure that the `GenAI rider` entitlement is enabled.
 
 ## Use AEM Assets in Adobe Express editor {#use-aem-assets-in-express}
 
@@ -27,13 +31,27 @@ Perform the following steps to start using AEM Assets in Adobe Express editor:
 
 3. Click **[!UICONTROL Assets]** available in the left navigation pane. Adobe Express  displays the list of repositories that you are entitled to access along with the list of assets and folders available at the root-level.
 
-4. Browse or search for assets in your repository, then drag and drop them onto the canvas. Alternatively, click on the assets to place them onto the canvas. You can also filter assets by various criteria, such as file type, MIME type, and dimensions.
+4. Browse or search for assets in your repository, then drag and drop them onto the canvas. Alternatively, click on the assets to place them onto the canvas. You can also filter ![filter](assets/do-not-localize/filter.svg) assets by various criteria, such as file type, MIME type, and dimensions.
 
    >[!NOTE]
    >
    >Filter by dimension does not apply to videos.
 
    ![Include assets from Assets add-on](assets/adobe-express-native-integration.png)
+
+5. Under **[!UICONTROL Suggested Content]**, the Content Advisor displays related or similar assets based on the content currently being authored. Using metadata, tags, categories, keywords, or AI-based similarity analysis, it identifies content that closely matches the selected asset in terms of topic, style, format, or intended usage. Use the **[!UICONTROL Show]** or **[!UICONTROL Hide]** toggle to display or collapse the content suggestions. If the suggested assets are not relevant, click the refresh icon ![refresh](assets/do-not-localize/reprocess-assets-icon.png) to regenerate updated recommendations. [Browse Assets in Content Advisor](#browse-assets-content-advisor).
+
+## Browse assets using Content Advisor {#browse-assets-content-advisor}
+    
+Within assets tab, you can access content by browsing [Files and folders](#content-advisor-files-and-folders) or viewing [Collections](#content-advisor-collections).
+
+### Files and Folders tab{#content-advisor-files-and-folders}
+
+Browsing content using Files and Folders allows you navigate your assets in a familiar hierarchical structure, making it easy to locate assets within the repository. To browse assets within files and folders, navigate to the **[!UICONTROL Assets]** tab and select **[!UICONTROL Files & Folders]**. A hierarchical structure is then displayed, allowing you to easily locate and select the desired assets.
+
+### Collections tab{#content-advisor-collections}
+
+Browsing content using Collections allows you to access curated groups of assets within Collections. To browse assets within Collections, navigate to the **[!UICONTROL Assets]** tab and select **[!UICONTROL Collections]**. The interface then displays curated groups of assets, enabling you to browse the content you need.
 
 ### Replace image using AEM upload {#replace-image-using-aem-upload}
 
@@ -53,7 +71,7 @@ Additionally, you can replace the added images using **[!UICONTROL AEM Upload]**
 
 ## Save Adobe Express projects in AEM Assets {#save-express-projects-in-assets}
 
-After incorporating appropriate modifications in the Express canvas, you can save it in the AEM Assets repository.. 
+After incorporating appropriate modifications in the Express canvas, you can save it in the AEM Assets repository.
 
 1. Click **[!UICONTROL Share]** to open the **[!UICONTROL Share]** dialog.
 
@@ -119,5 +137,51 @@ As a best practice, Adobe recommends specifying values in the rest of the fields
 
 3. For **MP4 video export**, the maximum file size supported is 200 MB. If this limit exceeds, an alert suggests trimming the video to 200 MB or less, or manually uploading it to the AEM Assets destination folder after downloading it.
 
-   
-   
+<!--
+## Content Advisor Properties {#content-advisor-props}
+
+You can configure following properties for the content advisor:
+
+* `featureSet` : This property enables the Content Advisor MFE.
+
+    ```
+    featureSet: [
+        ...defaultFeatures, /* to include all default features */
+        'advisor', /* enables Content Advisor features */
+        'content-fragments', /* enables Content Fragments */
+    ],
+    ```
+
+* `rail:true/false` : If marked true, Content Advisor is rendered in a left rail view. If it is marked false, the Content Advisor is rendered in modal view.
+
+## Browse assets using Content Advisor {#browse-assets-content-advisor}
+
+<!--In the Modal View of Content Advisor, you can access both [Assets](#using-assets-tab) and [Content Fragments](#using-content-fragments) within a unified interface.
+
+### Assets tab{#assets-tab}
+
+The **[!UICONTROL Assets]** tab allows you to browse or filter available assets, preview them before selection, and choose appropriate **[!UICONTROL Dynamic Media]** [renditions](renditions.md) or [smart crops](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles) as needed. Assets, folders, and collections are presented together in a single, streamlined experience. The interface also provides contextual recommendations based on the integrated application context, helping you quickly identify relevant content.
+
+Within assets tab, you can access content by browsing [Files and folders](#content-advisor-files-and-folders) or viewing [Collections](#content-advisor-collections).
+
+### Files and Folders tab{#content-advisor-files-and-folders}
+
+Browsing content using Files and Folders allows you navigate your assets in a familiar hierarchical structure, making it easy to locate assets within the repository. To browse assets within files and folders, navigate to the **[!UICONTROL Assets]** tab and select **[!UICONTROL Files & Folders]**. A hierarchical structure is then displayed, allowing you to easily locate and select the desired assets.
+
+![Browse assets using files and folder](assets/browse-assets-content-advisor.png)
+
+### Collections tab{#content-advisor-collections}
+
+Browsing content using Collections allows you to access curated groups of assets within Collections. To browse assets within Collections, navigate to the **[!UICONTROL Assets]** tab and select **[!UICONTROL Collections]**. The interface then displays curated groups of assets, enabling you to browse the content you need.
+
+![Browse assets using Collections](assets/browse-assets-collections.png)
+
+<!--
+### Content Fragments tab{#content-fragments}
+
+The [Content Fragments](/help/assets/content-fragments/content-fragments.md) tab displays structured assets, allowing you to browse, search, and filter fragments efficiently within the same interface. To browse assets using Content Fragments, navigate to the **[!UICONTROL Content Fragments]** tab to access and explore the fragments available in the repository.
+
+![Browse assets using Content Fragments](assets/browse-assets-content-fragment.png)
+-->
+
+
