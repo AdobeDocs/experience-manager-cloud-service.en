@@ -3,6 +3,7 @@ title: Contextual Experimentation in AEM as a Cloud Service
 description: Learn how to use the experimentation plugin to add experimentation capabilities to your site.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
 ---
 # Contextual Experimentation in AEM as a Cloud Service {#contextual-experimentation}
