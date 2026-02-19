@@ -12,10 +12,6 @@ exl-id: d2af7706-2b2a-4a40-a4a4-375b5f2b08fb
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 ## 1. Introduction 
 
 The Rectangle component in the Interactive Communication (IC) editor allows authors to add shaped graphical elements that serve as layout dividers, visual accents, or content containers. Rectangles enhance visual hierarchy and guide user attention in structured communication layouts. 
