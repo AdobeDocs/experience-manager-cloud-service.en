@@ -21,11 +21,11 @@ These are the release notes for the 19 February 2026 release of the Universal Ed
 ## What's New {#what-is-new}
 
 * Improvements have been made to the RTE.
-  * Hiding toolbar items in the in context RTE is now supported.
-  * Wrapping text inside tables with paragraphs is now supported.
+  * [Hiding toolbar items in the in context RTE](/help/implementing/universal-editor/configure-rte.md#common-action-options) is now supported.
+  * [Wrapping text inside tables with paragraphs](/help/implementing/universal-editor/configure-rte.md#table-actions) is now supported.
   * Unsupported RTE tags are now preserved.
   * RTE logic is now served from a separate file.
-  * Tables can now be created as well edited using the RTE.
+  * [Tables can now be created](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) as well edited using the RTE.
 * If no label is set, the component title from the component definition is now used.
 * `setEditorMode` is now available via extensions.
 

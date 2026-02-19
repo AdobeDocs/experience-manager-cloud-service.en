@@ -81,9 +81,29 @@ The toolbar configuration controls which editing options are available in the UI
 }
 ```
 
-## Actions Configuration {#actions}
+## Action Configuration {#action}
 
 The actions configuration allows you to customize the behavior and appearance of individual editing actions. These are the available sections.
+
+### Common Action Options {#common-action-options}
+
+Most actions support the following common options:
+
+* `shortcut?`: string - Overrides the default keyboard shortcut for the action (if any)
+* `label?`: string - Overrides the label used for the action in UI
+* `hideInline?`: boolean - When `true`, hides this action from the in-context (inline) RTE editor toolbar
+
+```json
+{
+  "actions": {
+    "bold": {
+      "label": "Bold",
+      "shortcut": "Mod-B",
+      "hideInline": true
+    }
+  }
+}
+```
 
 ### Format Actions {#format}
 
@@ -128,6 +148,56 @@ List actions support content wrapping to control HTML structure. The following s
   }
 }
 ```
+
+### Table Actions {#table-actions}
+
+Table actions support content wrapping to control HTML structure in table cells:
+
+```json
+{
+  "actions": {
+    "table": {
+      "wrapInParagraphs": false, // <td>content</td> (default)
+      "shortcut": "Mod-Alt-T",   // Custom shortcut
+      "label": "Insert Table"    // Custom label
+    }
+  }
+}
+```
+
+#### Table Configuration Options {#table-configuration-options}
+
+* `wrapInParagraphs`: `false` (default) - Table cells contain unwrapped text content
+* `wrapInParagraphs`: `true` - Table cells wrap content in paragraph tags
+
+Samples:
+
+When `wrapInParagraphs`: `false`:
+
+```html
+<!-- Single line -->
+<td>Cell content</td>
+
+<!-- Multiple paragraphs get <br> separation -->
+<td>Line 1<br />Line 2</td>
+```
+
+When `wrapInParagraphs`: `true`:
+
+```html
+<!-- Single paragraph -->
+<td><p>Cell content</p></td>
+
+<!-- Multiple paragraphs preserved -->
+<td>
+  <p>Line 1</p>
+  <p>Line 2</p>
+</td>
+```
+
+>[!NOTE]
+>
+>When unwrapping paragraphs (`wrapInParagraphs`: `false`), the sanitizer automatically inserts `<br>` tags between multiple paragraphs to preserve visual line breaks. This follows HTML standards and common practice across major rich text editors.
 
 ### Link Actions {#link}
 
