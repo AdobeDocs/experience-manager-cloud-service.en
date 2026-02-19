@@ -1,6 +1,7 @@
 ---
 title: How to manage [!DNL Dynamic Media] templates?
-description: Learn how to create [!DNL Dynamic Media] templates using a WYSIWYG template editor and include multiple images, texts and shapes layers to quickly create banners and flyers and use them in downstream applications.
+description: Learn how to create [!DNL Dynamic Media] templates using a WYSIWYG template editor and include multiple image, text, shape, and countdown timer layers to quickly create banners and flyers and use them in downstream applications.
+
 hide: yes
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
@@ -45,16 +46,17 @@ exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
     </tr>
 </table>
 
-Create real time customizable templates for your banners and flyers using [!DNL Dynamic Media] templates, a WYSIWYG template editor. Publish your [!DNL Dynamic Media] template and use it in downstream applications. A [!DNL Dynamic Media] template includes image and text layers. Add parameters to the image and text layers of the template and use [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) to reposition and resize the layer and update its content in real-time. 
+Create real time customizable templates for your banners and flyers using [!DNL Dynamic Media] templates, a WYSIWYG template editor. Publish your [!DNL Dynamic Media] template and use it in downstream applications. A [!DNL Dynamic Media] template includes image, text, shape, and countdown timer layers. Add parameters to the image, text, shape, and countdown timer layers of the template and use [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) to reposition and resize the layer and update its content in real-time. 
 
 Some of the key features include:
 
-* **[!DNL Dynamic Media] WYSIWYG Template Editor:** Create customizable banners with image and text layers. 
+* **[!DNL Dynamic Media] WYSIWYG Template Editor:** Create customizable banners with image, text, shape, and countdown timer layers.
+
 * **Layer Parameterization:** Define dynamic key-value pairs for layers to enable real-time updates.
 * **[!DNL Dynamic Media] URL Support:** Use [!DNL Dynamic Media] URLs for templates, integrating personalized values from 1st or third party applications.
 * **Layer Visibility Control:** Dynamically hide or show layers as needed.
 * **Smart Text Resizing:** Automatically adjust text size to fit designated areas.
-* **Countdown Timer Layer (Beta):** Add countdown timers to templates and configure their end time, display units (Days, Hours, Mins), suffix, fallback text, and CTA.
+* **Countdown Timer Layer:** Add countdown timers to templates and configure their end time, display units (Days, Hours, Mins), suffix, fallback text, and CTA.
 
 Some of the key benefits of [!DNL Dynamic Media] templates include:
 
@@ -76,10 +78,6 @@ Learn to create a [!DNL Dynamic Media] template step by step in this video.
 ## Before you begin{#prerequisites-for-dynamic-media-wysiwyg-template}
 
 Fulfil the following requirements to create a [!DNL Dynamic Media] template and generate its delivery URL:
-
->[!NOTE]
->
->The Countdown Timer layer is currently available only in Beta environment. This feature may not be visible in all environments.
 
 1. Access to [!DNL Dynamic Media].
 1. On the [!DNL Assets View] homepage, you have a folder in **[!UICONTROL Dynamic Media Assets]** to save your template. [Create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** to replicate that folder in **[!UICONTROL Dynamic Media Assets]**.
@@ -135,7 +133,7 @@ Execute these steps to create a blank canvas:
 
 * ![DM Templates](/help/assets/assets/add-image.svg): Click to add images to the canvas.
 * ![customizable templates](/help/assets/assets/add-text.svg): Click to add texts to the canvas.
-* ![customizable templates](/help/assets/assets/show-layers-list.svg): Click to see the list of all layers (image and text) on the canvas. Every image and text added to the canvas is represented as a separate layer.
+* ![customizable templates](/help/assets/assets/show-layers-list.svg): Click to see the list of all layers (image, text, shape, and countdown timer) on the canvas. Every layer added to the canvas is represented as a separate layer.
 * ![add countdown timer](/help/assets/assets/Smock_Clock_18_N.svg): Click to add a countdown timer layer to the canvas.
 
 **Menu options on the left pane:** Use these options for the following common editor actions.
@@ -205,33 +203,27 @@ Execute these steps to add shapes to the canvas:
 
 ### Add countdown timer to the canvas {#add-countdown-timer-to-the-canvas}
 
-Execute these steps to add a countdown timer to the canvas:
+Execute these steps to add a countdown timer layer to the canvas:
 
-1. Click ![add countdown timer](/help/assets/assets/Smock_Clock_18_N.svg),  to add a countdown timer layer to the canvas and open the [!UICONTROL Properties] panel.
+1. Click ![add countdown timer](/help/assets/assets/Smock_Clock_18_N.svg) to add a countdown timer layer to the canvas. The countdown timer layer is added, and the **[!UICONTROL Properties]** panel opens automatically.
 
-1. Select the countdown timer layer on the canvas to configure its properties.
+2. Select the countdown timer layer to configure its properties.
 
-1. Use the [!UICONTROL Position] section in the Properties panel to reposition, resize, or rotate the countdown timer layer.
+3. Use the **[!UICONTROL Position]** section to reposition, resize, rotate, or hide the countdown timer layer.
 
-1. Use the [!UICONTROL Text] section to specify font family, font size, color, alignment, opacity, and angle for the countdown timer text.
+4. Use the **[!UICONTROL Text]** section to configure the appearance of the countdown timer text, such as font family, font size, text color, alignment, opacity, and rotation.
 
-1. Scroll to the [!UICONTROL Timer] section and specify the [!UICONTROL End Time (Epoch)] to define when the countdown expires.
+5. Scroll to the **[!UICONTROL Timer]** section and configure the countdown timer settings, such as specifying the end time, enabling or disabling time units, defining suffix text, and specifying fallback text.
 
-1. Enable or disable the [!UICONTROL Days], [!UICONTROL Hours], and [!UICONTROL Mins] options to control which time units display in the countdown timer.
-
-1. Specify the [!UICONTROL Suffix] to display additional text after the countdown timer.
-
-1. Specify the [!UICONTROL Fallback Text] to display after the countdown reaches the specified end time.
-
-1. Use the [!UICONTROL CTA] section to associate a hyperlink with the countdown timer layer.
+6. Use the **[!UICONTROL CTA]** section to specify a destination URL and make the countdown timer layer clickable.
 
  ![countdown timer layer properties](/help/assets/assets/countdown-timer.png)
 
-See the [!UICONTROL Properties Panel] to reposition, resize, rotate, delete, or parameterise the countdown timer layer.
+See the [!UICONTROL Properties panel] to reposition, resize, rotate, delete, or parameterise the countdown timer layer.
 
 >[!NOTE]
 >
->The Countdown Timer layer is available only in Beta environment. This feature may not be visible in all environments. Contact your administrator or Adobe support to enable access if it is not available.
+>The Countdown Timer layer is currently available only in Beta environments. This feature may not be available in all environments.
 
 ### Edit or delete a layer {#edit-or-delete-a-layer}
 
@@ -243,7 +235,7 @@ Execute these steps to edit or delete a canvas layer:
 1. Click **[!UICONTROL Edit]** to edit the layer using the [**[!UICONTROL Properties Panel]**](#reposition-resize-delete-a-layer).
 ![rapid banner creation](/help/assets/assets/dm-templates/edit-delete-layer.png)
 
-### Properties Panel{#properties-panel}
+### Properties panel {#properties-panel}
 
 [!UICONTROL Properties] panel includes sections to [reposition](#reposition-resize-delete-a-layer), [resize](#reposition-resize-delete-a-layer) and [rotate](#reposition-resize-delete-a-layer) a layer. It also provides color fill options for [shape layers](#add-shapes-to-the-canvas), [text formatting options](#text-formatting-options-on-properties-panel) for [text layers](#add-text-to-the-canvas), countdown timer configuration options for [countdown timer layers](#add-countdown-timer-to-the-canvas), and an option to [add a [!UICONTROL CTA] link](#add-CTA-in-dynamic-media-templates) to any selected layer.
 
@@ -255,7 +247,7 @@ From the [!UICONTROL Properties] panel of a layer, select another layer on the c
  
 #### Reposition, resize, rotate or delete a layer{#reposition-resize-delete-a-layer}
 
-See these common layer editing actions to edit a text or an image layer:
+See these common layer editing actions to edit an image, text, shape, or countdown timer layer:
 
 * **Reposition the layer:** Drag the layer to move it anywhere on the canvas. This action updates the X and Y values in the properties panel. X and Y are the coordinates of the layer's center on the canvas plane.
 * **Resize the layer:** Select the layer and drag its edge handles to resize it. This action updates the W (width) and H (height) values in the properties panel.
@@ -265,9 +257,25 @@ See these common layer editing actions to edit a text or an image layer:
 #### Text formatting options{#text-formatting-options-on-properties-panel}
 
 Format your text to the required font, size, color, style, alignment (within the layer) by changing their values in the respective fields under the **[!UICONTROL Text]** section on the panel.
-Ensure to include **[!UICONTROL Smart Text Resize]**. [!UICONTROL Smart Text Resize] works on [Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) algorithum to optimally fill text in the text area and prevents text overflow and minimizes extra space at the bottom of the text.
+Ensure to include **[!UICONTROL Smart Text Resize]**. [!UICONTROL Smart Text Resize] works on [Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting) algorithm to optimally fill text in the text area and prevents text overflow and minimizes extra space at the bottom of the text.
 
 ![content creation in no time](/help/assets/assets/smart-text-resize.png)
+
+#### Countdown timer properties {#countdown-timer-properties}
+
+Configure the countdown timer settings using the **[!UICONTROL Timer]** section in the [!UICONTROL Properties] panel. These settings control the countdown timer display, expiration behavior, and optional hyperlink functionality.
+
+Use the following options:
+
+* **Days, Hours, Mins** – Enable or disable specific time units to control which values appear in the countdown timer. When enabled, the selected units display in the countdown timer.
+
+* **Suffix** – Specify additional text displayed after each enabled time unit. For example, you can use suffix values such as "d", "h", or "m", or separators such as ":" to customize the display format.
+
+* **End Time (Epoch)** – Specifies the exact expiration date and time of the countdown timer. The countdown updates dynamically and displays the remaining time until the specified end time.
+
+* **Fallback Text** – Specifies the text displayed after the countdown timer reaches its expiration time. For example, you can display a message such as "Time's up!" or "Offer expired".
+
+To make the countdown timer layer clickable, use the **[!UICONTROL CTA]** section and specify a destination URL.
 
 ### Parameterise layers {#parameterise-a-layer}
 
@@ -309,6 +317,19 @@ Include the following parameters to edit the text, its font, color and size from
 **[!UICONTROL Font Family]:** Include to update the text's font from the URL.
 **[!UICONTROL Font Size]:** Include to update the text's font size from the URL.
 **[!UICONTROL Text color]:** Include to update the text's font color from the URL.
+
+##### Countdown Timer parameters {#countdown-timer-parameters}
+
+For countdown timer layers, the following parameters can be included to dynamically update the timer via URL:
+
+* **[!UICONTROL End Time]**: Include to set the countdown's end time. Use a Unix epoch timestamp or predefined date-time format as the parameter value.  
+* **[!UICONTROL Fallback Text]**: Include to display text after the countdown ends (e.g., "Time's up!").  
+* **Optional timer parameters**:  
+  * `countdown_show_days`, `countdown_show_hours`, `countdown_show_mins` - Set 1/0 to show or hide specific time units.  
+  * `countdown_cta` – Optional CTA link to redirect after countdown completion.
+![timer source parameter](/help/assets/assets/parameters-timer.png)
+
+These parameters allow real-time updates to the countdown timer directly from the template URL.
 
 ##### Parameterize substrings{#substring-parameterisation}
 
