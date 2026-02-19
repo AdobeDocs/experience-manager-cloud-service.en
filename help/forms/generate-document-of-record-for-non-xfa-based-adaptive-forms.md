@@ -527,6 +527,11 @@ An XCI file helps you set various properties of a document. Forms as a Cloud Ser
   1. Specify path of the XCI file and click **[!UICONTROL Save]**.
 
 
+## Frequently Asked Questions {#faq}
+
+**Q: Changes are not appearing in the Submission PDF. How can this be resolved?**
+**Ans:** Open the form in the Adaptive Forms editor, make a minor edit (for example, adjust a field label or reorder a field), and save the form. This regenerates the Submission PDF template and the changes appear in the next generated PDF.
+
 ## See Also {#see-also}
 
 {{see-also}}
