@@ -54,6 +54,7 @@ Some of the key features include:
 * **[!DNL Dynamic Media] URL Support:** Use [!DNL Dynamic Media] URLs for templates, integrating personalized values from 1st or third party applications.
 * **Layer Visibility Control:** Dynamically hide or show layers as needed.
 * **Smart Text Resizing:** Automatically adjust text size to fit designated areas.
+* **Countdown Timer Layer (Beta):** Add countdown timers to templates and configure their end time, display units (Days, Hours, Mins), suffix, fallback text, and CTA.
 
 Some of the key benefits of [!DNL Dynamic Media] templates include:
 
@@ -75,6 +76,10 @@ Learn to create a [!DNL Dynamic Media] template step by step in this video.
 ## Before you begin{#prerequisites-for-dynamic-media-wysiwyg-template}
 
 Fulfil the following requirements to create a [!DNL Dynamic Media] template and generate its delivery URL:
+
+>[!NOTE]
+>
+>The Countdown Timer layer is currently available only in Beta environment. This feature may not be visible in all environments.
 
 1. Access to [!DNL Dynamic Media].
 1. On the [!DNL Assets View] homepage, you have a folder in **[!UICONTROL Dynamic Media Assets]** to save your template. [Create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** to replicate that folder in **[!UICONTROL Dynamic Media Assets]**.
@@ -99,6 +104,7 @@ Execute the following steps to create a [!DNL Dynamic Media] template:
 1. [Add images to the canvas](#add-images-to-the-canvas)
 1. [Add text layers to the canvas](#add-text-to-the-canvas)
 1. [Add shapes to the canvas](#add-shapes-to-the-canvas)
+1. [Add countdown timer to the canvas](#add-countdown-timer-to-the-canvas)
 1. [Edit or delete a layer](#edit-or-delete-a-layer)
 1. [Parameterise layers](#parameterise-a-layer)
 
@@ -130,6 +136,7 @@ Execute these steps to create a blank canvas:
 * ![DM Templates](/help/assets/assets/add-image.svg): Click to add images to the canvas.
 * ![customizable templates](/help/assets/assets/add-text.svg): Click to add texts to the canvas.
 * ![customizable templates](/help/assets/assets/show-layers-list.svg): Click to see the list of all layers (image and text) on the canvas. Every image and text added to the canvas is represented as a separate layer.
+* ![add countdown timer](/help/assets/assets/add-countdown-timer.svg): Click to add a countdown timer layer to the canvas.
 
 **Menu options on the left pane:** Use these options for the following common editor actions.
 
@@ -196,6 +203,36 @@ Execute these steps to add shapes to the canvas:
 1. [Add the **[!UICONTROL Hide]** parameter to the selected layer](#parameterise-a-layer) to show or hide the layer in the template in real time using the template URL. 
 1. Select the layer to [add a [!UICONTROL CTA] link](#add-CTA-in-dynamic-media-templates) to it, allowing users to click the shape as a hyperlink in the live template.
 
+### Add countdown timer to the canvas {#add-countdown-timer-to-the-canvas}
+
+Execute these steps to add a countdown timer to the canvas:
+
+1. Click ![add countdown timer](/help/assets/assets/Smock_Clock_18_N.svg),  to add a countdown timer layer to the canvas and open the [!UICONTROL Properties] panel.
+
+1. Select the countdown timer layer on the canvas to configure its properties.
+
+1. Use the [!UICONTROL Position] section in the Properties panel to reposition, resize, or rotate the countdown timer layer.
+
+1. Use the [!UICONTROL Text] section to specify font family, font size, color, alignment, opacity, and angle for the countdown timer text.
+
+1. Scroll to the [!UICONTROL Timer] section and specify the [!UICONTROL End Time (Epoch)] to define when the countdown expires.
+
+1. Enable or disable the [!UICONTROL Days], [!UICONTROL Hours], and [!UICONTROL Mins] options to control which time units display in the countdown timer.
+
+1. Specify the [!UICONTROL Suffix] to display additional text after the countdown timer.
+
+1. Specify the [!UICONTROL Fallback Text] to display after the countdown reaches the specified end time.
+
+1. Use the [!UICONTROL CTA] section to associate a hyperlink with the countdown timer layer.
+
+ ![countdown timer layer properties](/help/assets/assets/countdown-timer.png)
+
+See the [!UICONTROL Properties Panel] to reposition, resize, rotate, delete, or parameterise the countdown timer layer.
+
+>[!NOTE]
+>
+>The Countdown Timer layer is available only in Beta environment. This feature may not be visible in all environments. Contact your administrator or Adobe support to enable access if it is not available.
+
 ### Edit or delete a layer {#edit-or-delete-a-layer}
 
 Execute these steps to edit or delete a canvas layer:
@@ -208,7 +245,8 @@ Execute these steps to edit or delete a canvas layer:
 
 ### Properties Panel{#properties-panel}
 
-[!UICONTROL Properties] panel includes sections to [reposition](#reposition-resize-delete-a-layer), [resize](#reposition-resize-delete-a-layer) and [rotate](#reposition-resize-delete-a-layer) a layer.  It also provides color fill options for [shape layers](#add-shapes-to-the-canvas), [text formatting options](#text-formatting-options-on-properties-panel) for [text layers](#add-text-to-the-canvas), and an option to [add a [!UICONTROL CTA] link](#add-CTA-in-dynamic-media-templates) to any selected layer.
+[!UICONTROL Properties] panel includes sections to [reposition](#reposition-resize-delete-a-layer), [resize](#reposition-resize-delete-a-layer) and [rotate](#reposition-resize-delete-a-layer) a layer. It also provides color fill options for [shape layers](#add-shapes-to-the-canvas), [text formatting options](#text-formatting-options-on-properties-panel) for [text layers](#add-text-to-the-canvas), countdown timer configuration options for [countdown timer layers](#add-countdown-timer-to-the-canvas), and an option to [add a [!UICONTROL CTA] link](#add-CTA-in-dynamic-media-templates) to any selected layer.
+
 To navigate to a layer's properties panel, click ![rapid content creation](/help/assets/assets/show-layers-list.svg) and select the layer from the list to display its [!UICONTROL Properties] panel. 
 
 ![rapid content creation](/help/assets/assets/properties-panel.png)
@@ -233,7 +271,7 @@ Ensure to include **[!UICONTROL Smart Text Resize]**. [!UICONTROL Smart Text Res
 
 ### Parameterise layers {#parameterise-a-layer}
 
-After creating a template with multiple layers of images, texts and shapes, parameterise the selected layers. When a layer or its property is parameterised, it gets a key-value pair (also called as parameter). This parameter can be included in the template URL to update the layer's position, size or content in real time resulting in template customisation in no time.
+After creating a template with multiple layers of images, texts, shapes, and countdown timers, parameterise the selected layers. When a layer or its property is parameterised, it gets a key-value pair (also called as parameter). This parameter can be included in the template URL to update the layer's position, size or content in real time resulting in template customisation in no time.
 
 To parameterise a layer:
 
