@@ -19,10 +19,11 @@ These **preview** release notes are provided as a convenience so you know what c
 >
 >The content of the actual release as well as the release date are subject to change.
 
-## Upcoming New Features {#what-is-new}
-
-* TBD
-
 ## Upcoming Improvements {#other-improvements}
 
-* TBD
+* Editor no longer defaults content to `{}` before content arrives, preventing data loss in certain situations.
+* Changes are no longer lost when editing in the left panel and then selecting another item in the editor window.
+* Manual css import is no longer required when using `headless-canvas`.
+* For CORS purposes the correct endpoints are used for stage, preview, and prod.
+* Description was added to all schema fields.
+* Multi-field updates to Content Fragments are now supported for in-context edits.
