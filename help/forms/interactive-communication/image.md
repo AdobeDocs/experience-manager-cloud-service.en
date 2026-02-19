@@ -12,10 +12,6 @@ exl-id: 247dcd95-9429-4fe9-88fc-c02b93b2f7e0
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 ## 1. Introduction 
 
 The Image component in the Interactive Communication Editor allows authors to enhance communication layouts by inserting static images. This component is essential for creating visually appealing layouts and incorporating branding elements such as logos or visual icons. Authors can place it in both Master Pages and Design View to ensure a consistent appearance across various output formats such as PDF. 
