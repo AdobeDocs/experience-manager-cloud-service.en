@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
 ---
-# Generate a Submission PDF (formerly Document of Record) for Adaptive Forms (Core Components)
+# Generate a Submission PDF (Document of Record) for Adaptive Forms (Core Components)
 
 ## Overview {#overview}
 
@@ -414,6 +414,11 @@ Setting of the Document of Record component are available under its properties. 
 **Form level settings**
 
 * **Include unbound fields in DoR:** Setting the property includes unbound fields from Schema based Adaptive Form in Submission PDF. By default it is true.
+
+## Frequently Asked Questions {#faq}
+
+**Q: Changes are not appearing in the Submission PDF. How can this be resolved?**
+**Ans:** Open the form in the Adaptive Forms editor, make a minor edit (for example, adjust a field label or reorder a field), and save the form. This regenerates the Submission PDF template and the changes appear in the next generated PDF.
 
 ## See Also {#see-also}
 
