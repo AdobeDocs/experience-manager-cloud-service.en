@@ -413,7 +413,7 @@ Setting of the Document of Record component are available under its properties. 
 
 ## Frequently Asked Questions {#faq}
 
-**Q: Changes are not appearing in the Submission PDF. How can this be resolved?**
+**Q: Changes are not appearing in the Submission PDF.**
 **Ans:** Open the form in the Adaptive Forms editor, make a minor edit (for example, adjust a field label or reorder a field), and save the form. This regenerates the Submission PDF template and the changes appear in the next generated PDF.
 
 ## See Also {#see-also}
