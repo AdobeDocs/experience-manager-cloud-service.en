@@ -136,7 +136,7 @@ Execute these steps to create a blank canvas:
 * ![DM Templates](/help/assets/assets/add-image.svg): Click to add images to the canvas.
 * ![customizable templates](/help/assets/assets/add-text.svg): Click to add texts to the canvas.
 * ![customizable templates](/help/assets/assets/show-layers-list.svg): Click to see the list of all layers (image and text) on the canvas. Every image and text added to the canvas is represented as a separate layer.
-* ![add countdown timer](/help/assets/assets/add-countdown-timer.svg): Click to add a countdown timer layer to the canvas.
+* ![add countdown timer](/help/assets/assets/Smock_Clock_18_N.svg): Click to add a countdown timer layer to the canvas.
 
 **Menu options on the left pane:** Use these options for the following common editor actions.
 
