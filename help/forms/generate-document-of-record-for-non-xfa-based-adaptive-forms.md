@@ -365,8 +365,7 @@ To localize the branding information that you enter in the Document of Record ta
 
         <span class="preview"> This feature is available through the Early Access program. To request access, send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
 
-        The Submission PDF displays human-readable labels for multi-select dropdown components. For example, if a user selects "California" and "New York" from a dropdown, the Submission PDF shows the selected labels instead of the internal values such as `CA` and `NY`.
-        
+        The Submission PDF now displays the selected display labels for multi-select dropdown components instead of internal stored values. For example, if a user selects "California" and "New York" from a dropdown, the Submission PDF shows the selected labels instead of the internal values such as `CA` and `NY`.
 
     3. **Master Page Properties**:
         * **Logo Image**: You can either choose to use the logo image from the Adaptive Form, choose one from DAM, or upload one from your computer.

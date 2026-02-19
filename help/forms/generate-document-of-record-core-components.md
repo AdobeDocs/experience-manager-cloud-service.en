@@ -357,7 +357,7 @@ To localize the branding information that you enter in the Document of Record ta
 
        <span class="preview"> This feature is available through the Early Access program. To request access, send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
 
-       The Submission PDF displays human-readable labels for multi-select dropdown components. For example, if a user selects "California" and "New York" from a dropdown, the Submission PDF shows the selected labels instead of the internal values such as `CA` and `NY`.
+       The Submission PDF now displays the selected display labels for multi-select dropdown components instead of internal stored values. For example, if a user selects "California" and "New York" from a dropdown, the Submission PDF shows the selected labels instead of the internal values such as `CA` and `NY`. Each selected option appears on a separate line instead of as comma-separated values, consistent with the behavior in [Foundation Component-based Adaptive Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
 
     1. **Master Page Properties**:
 
