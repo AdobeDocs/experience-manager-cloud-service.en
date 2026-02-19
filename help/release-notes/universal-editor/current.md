@@ -37,10 +37,6 @@ If you are interested in testing the upcoming features listed below and sharing 
 
 ## Other Improvements {#other-improvements}
 
-* Copy-and-paste functionality between pages has been fixed.
-* `universal-editor-extensibility` has been shifted to `universal-editor`.
-* The number of requests to the extensions endpoint has been reduced.
-* RemoteApp unmounts has been reduced from three to one.
 * RTE endpoints are now served for the in-place editor.
 * Editing nested fields no longer results in overwriting peer entries from those structures.
 * Mandatory RTE fields can no longer be saved as empty.
