@@ -25,6 +25,8 @@ Some of the key benefits of Discovery Agent include:
 >
 >See also [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html). 
 
+>[!VIDEO](https://video.tv.adobe.com/v/3479983)
+
 ## Skills {#skills-discovery-agent}
 
 The Discovery Agent provides the following skills:
