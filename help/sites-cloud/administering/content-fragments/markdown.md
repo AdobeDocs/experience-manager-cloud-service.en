@@ -26,7 +26,7 @@ You can define:
 
 ## Heading Notation {#heading-notation}
 
-To create a header by placing a hash tag (#) in front of the heading. One hash tag (#) indicates an H1, two hash tags (##) for a H2 and so on. You can use up to 6 hash tags. For example:
+To create a header, place a hash symbol (#) in front of the heading. One hash symbol (#) indicates an H1, two hash symbols (##) for a H2 and so on. You can use up to six hash symbols. For example:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`## This is an H2`
 
@@ -104,17 +104,13 @@ You can quote text by adding the &gt; symbol before the text. For example:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`>This is block quotes`  
 
-&nbsp;&nbsp;&nbsp;&nbsp;`>asdhfjlkasdhlf`  
-
-&nbsp;&nbsp;&nbsp;&nbsp;`>asdfahsdlfasdfj`
-
 You can have nested block quotes. For example:
 
-&nbsp;&nbsp;&nbsp;&nbsp;`> This is the first level of quoting.` 
+&nbsp;&nbsp;&nbsp;&nbsp;`> This is the first level of quoting.`
 
 &nbsp;&nbsp;&nbsp;&nbsp;`>`  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`>> This is nested blockquote.`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`>> This is a nested blockquote.`  
 
 &nbsp;&nbsp;&nbsp;&nbsp;`>`  
 
@@ -124,7 +120,7 @@ You can have nested block quotes. For example:
 
 You can create both ordered and unordered lists.
 
-To create an unordered list, use the &ast; symbol before the items in the list. For example:
+To create an unordered list, use the &ast; (asterisk) symbol before the items in the list. For example:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`* item in list`
 
