@@ -356,8 +356,12 @@ To localize the branding information that you enter in the Document of Record ta
        * **Separator for multiple value(s)**: You can choose any separator such as comma or line break to display multiple values.
        * **Options Alignment**: You can select the desired alignment (Horizontal, Vertical, Same as adaptive Form) to set the alignment for the fields such as check box or radio button to be displayed on [!UICONTROL Document of Record]. By default, the vertical alignment is set for the fields in [!UICONTROL Document of Record]. Setting the properties from the [!UICONTROL Form Field Properties] of DoR overwrites the properties set in the [!UICONTROL Item Alignment] for the fields on an Adaptive Form. In case, you select [!UICONTROL Same as Aaptive form] option, the alignment as configured in an Adaptive Form author instance is used for [!UICONTROL Document of Record] fields.  
        * **Number of options for horizontal alignment**:You can set the number of options to be displayed on the Submission PDF for the horizontal alignment. 
-        
-      
+
+       **Display labels for multi-select dropdown**
+
+       <span class="preview"> This feature is available through the Early Access program. To request access, send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
+
+       The Submission PDF displays human-readable labels for multi-select dropdown components. For example, if a user selects "California" and "New York" from a dropdown, the Submission PDF shows the selected labels instead of the internal values such as `CA` and `NY`.
 
     1. **Master Page Properties**:
  
@@ -367,25 +371,7 @@ To localize the branding information that you enter in the Document of Record ta
         * **Disclaimer Label**: Label of disclaimer.
         * **Disclaimer**: Text which specifies the scope of rights and obligations on the Submission PDF.
        * **Disclaimer Text**: Text of disclaimer.
-
-       <!--![Master Page Properties](/help/forms/assets/dorpropertiesimg.png)-->
-  
-       >[!NOTE]
-       >
-       >If you are using an Adaptive Form template created with a version of Designer prior to 6.3, for Accent Color and Font Family properties to work, ensure that the following is present in your Adaptive Form template under the root subform:
-
-       ```xml
-       <proto>
-       <font typeface="Arial"/>
-       <fill>
-       <color value="4,166,203"/>
-       </fill>
-       <edge>
-       <color value="4,166,203"/>
-       </edge>
-       </proto>
-       ```
-
+    
 1. To save the branding changes, select **[!UICONTROL Done]**.
 
 >[!NOTE]
