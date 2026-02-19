@@ -219,7 +219,7 @@ Execute these steps to add a countdown timer layer to the canvas:
 
  ![countdown timer layer properties](/help/assets/assets/countdown-timer.png)
 
-See the [!UICONTROL Properties panel] to reposition, resize, rotate, delete, or parameterise the countdown timer layer.
+See the [**[!UICONTROL Properties Panel]**] to reposition, resize, rotate, delete, or parameterise the countdown timer layer.
 
 >[!NOTE]
 >
@@ -382,8 +382,9 @@ Execute these steps to preview and publish the template and copy the delivery UR
 
 1. On the canvas page, click **[!UICONTROL Preview]**. You can also navigate to **[!UICONTROL Assets View]** **>** **[!UICONTROL Dynamic Media Assets]** **>** find and select your template **>** click **[!UICONTROL Edit Template]** **>** click **[!UICONTROL Preview]**. The preview page displays the template, its parameters (parameterized layers and properties), publish status, and the **[!UICONTROL Publish]** option.
 1. Select parameters from the **[!UICONTROL Template Parameters]** panel to edit their values and instantly update the content, size, position, or text formatting of the corresponding template layer in the preview. For example: 
-   1. Select a text layer and edit its text or 
+   1. Select a text layer and edit its text.
    1. Select an image layer, click ![creating content on the fly](/help/assets/assets/add-image.svg), select an image from the asset selector, and click **[!UICONTROL Refresh]**. 
+   1. Select a countdown timer layer to modify the end time, display units, suffix, fallback text, or CTA
 
    The template updates immediately, displaying the edited text and replacing the previous image with the new one. Additionally, the image parameter value reflects the new image path. Similarly, you can resize a layer by adjusting its values, and the changes are applied to the template in real time. 
 1. Select the **[!UICONTROL Hide]** parameter for [grouped layers](#group-layers) from the list to show or hide them together in the template. 
