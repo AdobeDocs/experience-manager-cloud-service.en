@@ -12,10 +12,6 @@ exl-id: 0af73ae2-fe1d-4763-ad4d-2934691cb9e1
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 ## 1. Introduction 
 
 The Image Field component in the Interactive Communication editor allows authors to insert images into a communication layout. It is ideal for use cases such as photo identification, document verification, or visual validation where displaying an image to the end user is essential. 

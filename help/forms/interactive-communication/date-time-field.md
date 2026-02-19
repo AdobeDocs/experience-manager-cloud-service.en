@@ -12,10 +12,6 @@ exl-id: 7ac93d8c-5454-4789-a7cd-438571a9ff28
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 ## 1. Introduction 
 
 The **Date/Time Field** component in the Interactive Communication (IC) editor enables authors to insert fields where users can select or enter date and/or time values. This component is commonly used for capturing information like date of birth, appointment schedules, booking slots, or document issue/expiry dates. 

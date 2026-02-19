@@ -12,10 +12,6 @@ exl-id: f8cc1dd1-3b55-4cd9-b051-959c88195eb4
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 ## 1. Introduction 
 
 The **Date Field** component in the Interactive Communication (IC) editor enables authors to insert a calendar-based date selection field into a document. This allows users to easily pick a date from a date picker or enter it manually in a predefined format. 

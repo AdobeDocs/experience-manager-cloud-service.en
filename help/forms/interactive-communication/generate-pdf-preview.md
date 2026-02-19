@@ -12,10 +12,6 @@ exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 The PDF preview feature enables users to preview Interactive Communications in three different ways: without data, with local JSON-based data, or with sample data from the configured data model. 
 
 ## Key Benefits
