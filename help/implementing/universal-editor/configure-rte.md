@@ -551,3 +551,20 @@ Shortcuts use the format `Mod-Key`(s) where:
 
 * `Mod` = `Cmd` on Mac, `Ctrl` on Windows/Linux
 * Examples: `Mod-B`, `Mod-Shift-8`, `Mod-Alt-1`
+
+## Unsupported HTML {#unsupported-html}
+
+By default, unknown HTML tags are stripped when parsed by the editor. To preserve them, opt in via the `unsupportedHtml` configuration option:
+
+```javascript
+const rteConfig = {
+  unsupportedHtml: true, // preserve unknown HTML tags (default: false)
+};
+```
+
+|Value|Behavior|
+|---|---|
+|`false` (default)|Unknown HTML tags are dropped during parsing.|
+|`true`|Unknown HTML tags are wrapped in a custom unsupported-block node so content can round-trip safely.|
+
+When enabled, the editor renders unsupported nodes with a `rte-unsupported-block` class. Consumer apps should provide the styling for this class (e.g., border, padding, background). The tag label inside the block uses `rte-unsupported-label`, which can also be customized.
