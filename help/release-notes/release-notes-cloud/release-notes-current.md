@@ -47,7 +47,7 @@ Adobe Experience Manager (AEM) beta programs are a way for customers to get acce
 Getting early access to features that Adobe is developing lets customers and partners provide feedback and shape product development. It also helps them prepare to adopt new capabilities before general availability.
 
 **Current beta programs**
-The following sections list active beta and Explorer programs.
+The following sections list active beta programs.
 
 <!--
 ### Agents in AEM (Explorer program) {#agents-in-aem-beta-program}
