@@ -450,8 +450,9 @@ If you are using `org.slf4j.event` or `org.slf4j.spi`, remove all usage of it. I
 Action list:
 
 * If you are using ACS AEM Commons update to latest version (at least 6.11.0) and make sure to use the `cloud` classifier.
-* Remove the code using `org.slf4j.event` and `org.slf4j.spi`
 * If you are using the Apache Kafka Client and include the OSGi wrapper bundle from Apache ServiceMix (`org.apache.servicemix.bundles.kafka-clients`), replace it with the [AEM Apache Kafka Client Wrapper](https://repo.maven.apache.org/maven2/com/adobe/aem/osgi/com.adobe.aem.osgi.kafka-clients/4.0.0_1.0/). This is the same version as the one from Apache ServiceMix with just the usage of those two packages removed.
+* If you are using `com.adobe.aio.aem:aio-lib-osgi` update to the latest version (at least 2.0.12).
+* Remove the code using `org.slf4j.event` and `org.slf4j.spi`
 
 ### Usage of `org.apache.log4j` {#org.apache.log4j}
 
