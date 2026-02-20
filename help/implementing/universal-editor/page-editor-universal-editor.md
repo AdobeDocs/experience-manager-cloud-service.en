@@ -68,10 +68,11 @@ Because the feature gap between the two editors is constantly shrinking, be sure
 |Device simulation|[!BADGE Available]{type=Positive}|[Configured devices can be simulated,](/help/sites-cloud/administering/responsive-layout.md) but the user cannot manually enter any different screen dimensions to simulate.|[!BADGE Available]{type=Positive}|[Any screen dimensions to simulate can be manually entered,](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator) but default breakpoints can not be configured.|
 |[Page locking](/help/sites-cloud/authoring/sites-console/managing-pages.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Respects lock status set in Sites Console with extension available to lock/unlock pages from the editor|
 |[Page properties](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available from the Site Admin, with extension to also access the properties of pages from the editor|
-|Multi-field properties|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned|
+|Multi-field properties|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |[Remote DAM](/help/assets/dynamic-media-open-apis-overview.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
 |[Page versioning](/help/sites-cloud/authoring/sites-console/page-versions.md)|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}||
-|[TimeWarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) and [Diff View](/help/sites-cloud/authoring/sites-console/page-diff.md)|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned|
+|[Diff View](/help/sites-cloud/authoring/sites-console/page-diff.md)|[!BADGE Available]{type=Positive}||[!BADGE Partially Available]{type=Caution}|Available for Edge Delivery Services use cases, but not headless|
+|[TimeWarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp)|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Planned, versions still available in the Sites Console|
 |View in admin|[!BADGE Available]{type=Positive}||[!BADGE Available]{type=Positive}|Available as an extension for pages|
 |View page status|[!BADGE Available]{type=Positive}||[!BADGE Unavailable]{type=Negative}|Available in the Sites Console|
 |Extensibility|[!BADGE Available]{type=Positive}|As AEM overlays|[!BADGE Available]{type=Positive}|As clearly-defined extension points using the App Builder and very little AEM-specific knowledge|

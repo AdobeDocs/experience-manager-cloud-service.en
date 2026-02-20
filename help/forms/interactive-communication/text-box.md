@@ -12,10 +12,6 @@ exl-id: 6bed824c-b959-4882-a5aa-dbb7fbf2f8a0
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 ## 1. Introduction 
 
 The **Text Box** component in the Interactive Communication Editor allows authors to input and display text content within a communication. It is one of the most fundamental and widely used components, commonly used to collect names, comments, feedback, or custom data when designing interactive communications or communication fragments.  

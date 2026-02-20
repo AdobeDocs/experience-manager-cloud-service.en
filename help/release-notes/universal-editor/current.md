@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.02.05 Release Notes
-description: These are the release notes for the 2026.02.05 release of the Universal Editor.
+title: Universal Editor 2026.02.19 Release Notes
+description: These are the release notes for the 2026.02.19 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.02.05 Release Notes {#release-notes}
+# Universal Editor 2026.02.19 Release Notes {#release-notes}
 
-These are the release notes for the 5 February 2026 release of the Universal Editor.
+These are the release notes for the 19 February 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,8 +20,14 @@ These are the release notes for the 5 February 2026 release of the Universal Edi
 
 ## What's New {#what-is-new}
 
-* The move action is now available within [the context menu.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
-* The RTE now supports [paste as text.](/help/implementing/universal-editor/configure-rte.md#paste-as-text)
+* Improvements have been made to the RTE.
+  * [Hiding toolbar items in the in context RTE](/help/implementing/universal-editor/configure-rte.md#common-action-options) is now supported.
+  * [Wrapping text inside tables with paragraphs](/help/implementing/universal-editor/configure-rte.md#table-actions) is now supported.
+  * [Unsupported HTML tags](/help/implementing/universal-editor/configure-rte.md#unsupported-html) tags can now now be preserved by the RTE.
+  * RTE logic is now served from a separate file.
+  * [Tables can now be created](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) as well edited using the RTE.
+* If no label is set, the component title from the component definition is now used.
+* `setEditorMode` is now available via extensions.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -31,4 +37,7 @@ If you are interested in testing the upcoming features listed below and sharing 
 
 ## Other Improvements {#other-improvements}
 
-* Publish to preview was enabled for AEM 6.5 when using the [`xwalk` plugin.](/help/implementing/universal-editor/component-definition.md#plugins)
+* RTE endpoints are now served for the in-place editor.
+* Editing nested fields no longer results in overwriting peer entries from those structures.
+* Mandatory RTE fields can no longer be saved as empty.
+* In-place formatting is no longer improperly applied when adding links after formatting.

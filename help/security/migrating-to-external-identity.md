@@ -4,6 +4,7 @@ description: Technical guide for migrating local users and groups to an external
 solution: Experience Manager Sites
 feature: Security
 role: Developer, Admin
+exl-id: 1ed23f88-ec82-479f-ba24-a152367bcf27
 ---
 # Migrating to External Identity and Dynamic Group Membership {#migrating-to-external-identity}
 
@@ -570,14 +571,14 @@ curl -X POST "http://localhost:4503/bin/migration/step3?groupPath=/home/groups/c
 
 ### Pre-Migration Checklist {#pre-migration-checklist}
 
-* [ ] **Configure Service User**: Create and configure the service user (for example, `group-provisioner`) with proper permissions
-* [ ] **Verify ExternalPrincipal Configuration**: Ensure the service user is configured to bypass protection on `rep:externalId` and `rep:externalPrincipalNames`
-* [ ] **Test Service User Permissions**: Verify the service user can set external identity properties in development
-* [ ] Identify all custom code that creates users or groups
-* [ ] Review and update custom code to use external identity model
-* [ ] Test updated code in development environment
-* [ ] Inventory all existing local users and groups to migrate
-* [ ] Test migration process in lower environments
+* **Configure Service User**: Create and configure the service user (for example, `group-provisioner`) with proper permissions
+* **Verify ExternalPrincipal Configuration**: Ensure the service user is configured to bypass protection on `rep:externalId` and `rep:externalPrincipalNames`
+* **Test Service User Permissions**: Verify the service user can set external identity properties in development
+* Identify all custom code that creates users or groups
+* Review and update custom code to use external identity model
+* Test updated code in development environment
+* Inventory all existing local users and groups to migrate
+* Test migration process in lower environments
 
 ### Execution Steps {#execution-steps}
 
@@ -768,12 +769,12 @@ As an additional layer of security, you can configure CDN rules to restrict acce
 
 Before deploying migration servlets to production:
 
-* [ ] Create IMS integration in AEM Developer Console
-* [ ] Configure servlets to validate the technical account ID
-* [ ] Test authentication flow in development/staging environments
-* [ ] Consider additional IP-based restrictions at CDN level
-* [ ] Plan to disable or remove migration servlets after migration is complete
-* [ ] Audit and log all access to migration endpoints
+* Create IMS integration in AEM Developer Console
+* Configure servlets to validate the technical account ID
+* Test authentication flow in development/staging environments
+* Consider additional IP-based restrictions at CDN level
+* Plan to disable or remove migration servlets after migration is complete
+* Audit and log all access to migration endpoints
 
 >[!IMPORTANT]
 >

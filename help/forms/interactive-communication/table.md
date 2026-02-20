@@ -12,10 +12,6 @@ exl-id: 7db24153-549a-4c36-8cb5-ab33fda8072a
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 ## 1. Introduction 
 
 The Table Component in the Interactive Communication (IC) editor enables authors to insert customizable tables into communication templates with ease. This component supports tabular data representation for use cases such as summaries, item listings, structured input, or comparison layouts. 
