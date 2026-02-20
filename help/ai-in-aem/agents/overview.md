@@ -16,10 +16,6 @@ These agents are available in Adobe Experience Manager (AEM) as a Cloud Service 
 >* They are not currently available for AEM 6.5, nor AEM 6.5 LTS.
 >* They are not available on AEM On-prem, nor Managed Services.
 
->[!IMPORTANT]
->
->To use the agents you are required to enroll in the Explorer Program. You can find more information on the AEM Agents Explorer Program [here](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs).
-
 ## Experience Production Agent {#experience-production-agent}
 
 The [Experience Production Agent](/help/ai-in-aem/agents/production/overview.md) automates high effort and high-volume tasks. Empowering teams and turning manual, weeks-long processes into fast, AI-assisted workflows that keep every experience current and consistent helping the business achieve their goals.
