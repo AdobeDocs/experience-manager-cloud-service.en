@@ -3,8 +3,8 @@ title: How to set up OAuth Server-to-Server Authentication?
 description: Learn how to configure OAuth Server-to-Server authentication for Adobe Experience Manager Forms as a Cloud Service
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
+exl-id: 24fa5751-c006-4c39-bdc3-b46a4974638e
 ---
-
 # OAuth Server-to-Server Authentication 
 
 OAuth Server-to-Server Authentication allows secure, token-based access to AEM Forms Communications APIs without requiring user interaction. OAuth server-to-server authentication is supported by Adobe Developer Console.

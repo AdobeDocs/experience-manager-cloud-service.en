@@ -4,6 +4,7 @@ description: Understand how to preview your Content Fragments by a range of meth
 feature: Content Fragments
 role: User, Developer
 solution: Experience Manager Sites
+exl-id: 40c02806-76a2-43ed-982c-0410c2125a36
 ---
 # Previewing Content Fragments {#previewing-content-fragments}
 

@@ -116,7 +116,6 @@ After the fragments have been created, you can:
 >* [Page Authoring with Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md).
 >* The [Content Fragment and Content Fragment Model OpenAPIs](/help/headless/content-fragment-openapis.md) are also available.
 
-
 ## Main and Variations {#main-and-variations}
 
 Variations are a significant feature of AEM's Content Fragments. They allow you to create and edit copies of the **Main** content for use on specific channels, and scenarios, making headless content delivery and page authoring even more flexible.
@@ -137,7 +136,7 @@ Variations are a significant feature of AEM's Content Fragments. They allow you 
 
 * **Variations**
 
-  * Renditions of fragment text that are specific to editorial purpose; can be related to channel but is not compulsory, can also be for ad-hoc local modifications.
+  * Renditions of fragment text that are specific to editorial purpose; can be related to a channel, but this is not compulsory; can also be for ad-hoc local modifications.
   * Are created as copies of **Main**, but can then be edited as required; there is often content overlap between the variations themselves.
   * Can be defined during fragment authoring; from the left panel.
   * Stored in the fragment, to help avoid scattering of content copies.
@@ -154,7 +153,7 @@ They provide the delivery of content to channels that are not traditional AEM we
 
 * Single Page Applications
 * Native Mobile Applications
-* other channels and touch-points external to AEM
+* other channels and touch points external to AEM
 
 Delivery is made in JSON format using the JSON Exporter.
 
@@ -187,7 +186,7 @@ Content fragments are:
 
   * The [Content Fragment Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) is available to page authors. It allows them to reference, and deliver, the required Content Fragment in either HTML or JSON format.
 
-Content Fragments are a content structure that:
+Content Fragments are content structures that:
 
 * Are without layout or design (text formatting is possible for text fields).
 * Are independent from the delivery mechanism (such as the page, or channel).
@@ -243,14 +242,14 @@ The Content Fragment assets are made up of the following parts (either directly 
 
 To create Content Fragments you need:
 
-* **Content Model**
+* a **Content Fragment Model**
 
-  * Are [enabled using the Configuration Browser](/help/sites-cloud/administering/content-fragments/setup.md).
-  * Are [created using the Content Fragment Console](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
+  * Is [enabled using the Configuration Browser](/help/sites-cloud/administering/content-fragments/setup.md).
+  * Is [created using the Content Fragment Console](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model).
   * Required to [create a fragment](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments).
   * Defines the structure of a fragment (title, content elements, tag definitions).
   * Content Fragment Model definitions require a title and one data element; everything else is optional. 
-  * The model can define default content - if applicable. 
+  * The model can define default content, if applicable. 
   * Authors cannot change the defined structure when authoring fragment content; though they can open the model editor from the fragment editor.
   * Changes made to a model after dependent Content Fragments have been created, can impact those Content Fragments.
 
@@ -265,7 +264,7 @@ To use your Content Fragments for headless content delivery you also need:
 
 To use your Content Fragments for page authoring you also need:
 
-* A **Content Fragment Component**
+* a **Content Fragment Component**
 
   * Instrumental to delivering the fragment in HTML and/or JSON format.
   * Required to [reference the fragment on a page](/help/sites-cloud/authoring/fragments/content-fragments.md).
@@ -366,9 +365,12 @@ Use Rich Text fields (the **Multi line text** Data Type) with consideration:
 
 Create as many fragment variations as needed, but no more.
 
-Variations add processing time to a Content Fragment, on the author environment and upon delivery too. It is recommended to keep the number of variations to a manageable minimum. 
+Variations add processing time to a Content Fragment, on the author environment and upon delivery too. 
 
-A best practice is to not exceed ten variations per Content Fragment.
+It is recommended that you:
+
+* keep the number of variations to a manageable minimum 
+* do not exceed ten variations per Content Fragment
 
 ### Test Before Production {#test-before-production}
 
