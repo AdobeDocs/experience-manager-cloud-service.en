@@ -95,22 +95,30 @@ Tap or click **Cancel** or **Done** to discard or save the changes, respectively
 
 The rich text editor (RTE) of the Universal Editor allows the author to apply standard text formatting. By default, the following options are available.
 
-* Paragraph (h1, h2, h3, etc.)
-* Bold
-* Italics
-* Underline
-* Superscript
-* Subscript
-* Bulleted list
-  * Use the tab key to indent and shift+tab to outdent
-* Ordered list
-  * Use the tab key to indent and shift+tab to outdent
-* Link
-* Unlink
-* Image
-* Remove All Formatting
-
-Existing tables can be edited using the RTE, but new tables can not be created.
+* **Paragraph Style**
+  * Paragrpha, h1-h6, code
+* **Bold**
+* **Italic**
+* **Underline**
+* **Strikethrough**
+* **Superscript**
+* **Subscript**
+* **Bullet list**
+  * Use the tab key to indent and shift+tab to outdent.
+* **Ordered list**
+  * Use the tab key to indent and shift+tab to outdent.
+* **Link**
+  * Specify a URL or use the Content Browser to select a path within AEM.
+* **Unlink**
+  * Remove link from selected text.
+* **Image**
+  * Specify a URL or use the [asset selector](/help/assets/overview-asset-selector.md#using-asset-selector) to select an asset from AEM.
+* **Table**
+  * Use the drop-down to insert a new table of the selected number of columns and rows or insert and remove new columns/rows.
+* **Paste as Text**
+  * Remove formatting from text on your clipboard before pasting into the Universal Editor.
+* **Remove All Formatting**
+  * Remove all formatting options from the selected text.
 
 The RTE can be configured to hide options or show additional options depending on authors' needs. Please see the document [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more information.
 
@@ -196,7 +204,32 @@ The selected component deleted.
 >
 >Use the hot key `Shift+Backspace` to delete the selected component from its container.
 
-### Reordering Components {#reordering-components}
+### Reordering and Moving Components {#reordering-components}
+
+You can move and reorder components using the context menu or the content tree.
+
+#### Move Components with the Context Menu {#move-context-menu}
+
+1. Right-click on a component or click on the selected component's badge to open the [context menu.](#context-menu)
+1. Select the move option desired.
+   * Move to top
+   * Move up
+   * Move down
+   * Move to bottom
+   ![Move options in context menu](assets/move-options-in-conext-menu.png)
+
+The component is moved in both the editor and the content tree.
+
+>[!TIP]
+>
+>Use the hot keys `Command-U` or `Shift-Command-U` to move up or to the top, respectively.
+>Use the hot keys `Command-J` or `Shift-Command-J` to move down or to the bottom, respectively.
+
+>[!NOTE]
+>
+>The context menu options can only move components within their containers. If you wish to move components between containers, [use the content tree.](#reorder-content-tree)
+
+#### Reorder Components with the Content Tree {#reorder-content-tree}
 
 1. If not already in [content tree mode](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), switch to it.
 1. Select a container component in the content tree or in the editor.

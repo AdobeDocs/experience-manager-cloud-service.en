@@ -3,8 +3,8 @@ title: Discovery Agent Overview
 description: Learn how to use the Discovery Agent to deliver relevant AEM content on demand through natural, conversational prompts for a streamlined, click-free discovery experience.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
+exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
 ---
-
 # Discovery Agent {#discovery-agent}
 
 The Discovery Agent delivers AEM content on demand through natural, conversational prompts for a streamlined, click-free discovery experience. It intelligently searches across Assets, Content Fragments, and Adaptive Forms to deliver relevant materials such as images, videos, PDF documents, articles, and form templates. Using natural language, you can search for content without building complex queries or applying filters in the AEM Assets interface. Based on your prompt, the agent returns curated results along with asset metadata and delivery URLs, ready to be embedded in other applications.
@@ -24,6 +24,8 @@ Some of the key benefits of Discovery Agent include:
 >AI-generated responses may be inaccurate or misleading. Be sure you double-check suggested fixes and responses. 
 >
 >See also [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html). 
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479983)
 
 ## Skills {#skills-discovery-agent}
 

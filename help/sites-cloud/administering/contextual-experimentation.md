@@ -3,6 +3,8 @@ title: Contextual Experimentation in AEM as a Cloud Service
 description: Learn how to use the experimentation plugin to add experimentation capabilities to your site.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
+exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
 ---
 # Contextual Experimentation in AEM as a Cloud Service {#contextual-experimentation}
 
@@ -11,7 +13,7 @@ role: Admin
 
 Experimentation is the practice of testing your site’s design, functionality and code in order to improve performance and make your site more effective and streamlined. This is achieved by changing either content or functionality, comparing the results with a prior version and picking the improvements that have measurable effects.
 
-When done right, it is a powerful pattern to improve conversions, engagement and visitor experience. In general, there are a couple of issues to avoid when looking to adopt the practice:
+When done correctly, it is a powerful pattern to improve conversions, engagement and visitor experience. In general, there are a couple of issues to avoid when looking to adopt the practice:
 
 * **Too little**: most companies are not experimenting enough, and when they do, they experiment with too little traffic to get meaningful results.
 * **Too slow**: many experimentation frameworks slow the site down so much that the potential new conversions can’t make up for the lost traffic and bounces due to slow rendering.

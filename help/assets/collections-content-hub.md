@@ -24,6 +24,8 @@ A collection refers to a set of assets that can be shared among users. A collect
 
 It helps users to easily access and manage the diverse assets available within [!DNL Content Hub].
 
+>[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
+
 ## Prerequisites {#prerequisites}
 
 [Content Hub users](deploy-content-hub.md#onboard-content-hub-users) can perform the actions mentioned in this article.
