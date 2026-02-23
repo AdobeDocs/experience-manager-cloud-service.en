@@ -1101,6 +1101,7 @@ user-guide-title: AEM as a Cloud Service
       + [Overview](/help/ai-in-aem/agents/development/overview.md)
     + Governance Agent {#governance}
       + [Overview](/help/ai-in-aem/agents/governance/overview.md)
+      + [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
     + Experience Modernization Agent {#modernization}
       + [Overview](/help/ai-in-aem/agents/modernization/overview.md)
       + [Getting Started](/help/ai-in-aem/agents/modernization/getting-started.md)
