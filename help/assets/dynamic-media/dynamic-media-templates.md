@@ -53,7 +53,7 @@ Some of the key features include:
 * **[!DNL Dynamic Media] WYSIWYG Template Editor:** Create customizable banners with image, text, shape, and countdown timer layers.
 
 * **Layer Parameterization:** Define dynamic key-value pairs for layers to enable real-time updates.
-* **[!DNL Dynamic Media] URL Support:** Use [!DNL Dynamic Media] URLs for templates, integrating personalized values from 1st or third party applications.
+* **[!DNL Dynamic Media] URL Support:** Use [!DNL Dynamic Media] URLs for templates, integrating personalized values from Adobe and non-Adobe applications.
 * **Layer Visibility Control:** Dynamically hide or show layers as needed.
 * **Smart Text Resizing:** Automatically adjust text size to fit designated areas.
 * **Countdown Timer Layer:** Add countdown timers to templates and configure their end time, display units (Days, Hours, Mins), suffix, fallback text, and CTA.
