@@ -4,17 +4,13 @@ description: Create Interactive Communication Fragments in AEM Forms to build mo
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+exl-id: 81779df9-c101-4c39-a779-651cafc70eb9
 ---
-
 # Data Binding in Interactive Communication Editor
 
 >[!NOTE]
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
-
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
 
 ## 1. Introduction
 
@@ -77,4 +73,3 @@ Authors typically select the FDM early in the project, visually map fields durin
 - **Secure sensitive data:** Apply masking, encryption, and least-privilege access for PII or payment details.
 
 By configuring Data Binding carefully, authors create a reliable bridge between design and data—accelerating communication authoring, ensuring accuracy, and delivering highly personalized experiences at scale.
-

@@ -3,6 +3,7 @@ title: Experience Modernization Console
 description: Reference guide for the Experience Modernization Console interface and capabilities
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
+exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
 ---
 
 # Experience Modernization Console {#console-reference}

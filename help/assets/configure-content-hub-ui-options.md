@@ -29,6 +29,8 @@ Experience Manager Assets enables administrators to configure the options availa
 
 * Any custom links that you need to include on Content Hub in addition to assets, collections, and insights.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops){transcript=true}
+
 ## Prerequisites {#prerequisites-configuration-ui}
 
 [Content Hub administrators](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) can set the configuration options for other users within your organization. 

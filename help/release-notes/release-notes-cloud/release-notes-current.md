@@ -28,15 +28,12 @@ The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] cu
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
-<!-- 
-
 ## Release Video {#release-video}
 
-Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
+Have a look at the January 2026 Release Overview video for a summary of the features added in the 2026.1.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
 
--->
 
 ## AEM Beta Programs {#aem-beta-programs}
 
@@ -52,7 +49,8 @@ Getting early access to features that Adobe is developing lets customers and par
 **Current beta programs**
 The following sections list active beta programs.
 
-### Agents in AEM (Beta program) {#agents-in-aem-beta-program}
+<!--
+### Agents in AEM (Explorer program) {#agents-in-aem-beta-program}
 
 Gain early access to powerful, new AEM agentic capabilities across production, governance, optimization, discovery, and development. Your feedback directly shapes Adobe's roadmap and final features. See [Overview of Agents in AEM](/help/ai-in-aem/agents/overview.md) to learn more.
 
@@ -64,6 +62,7 @@ To opt in to participate in this program, email [aemagentsteam@adobe.com](mailto
 * List Specific agents that you or your team will want to use. Or simply say "All Agents."
 
 Customers selected for participation will be notified directly by Adobe. Participation is subject to eligibility considerations, including customer licensing and limited program capacity. While not all requests can be accommodated initially, additional customers may be considered in future beta waves.
+-->
 
 ### AEM Foundation (Beta programs) {#aem-foundation-beta-programs}
 
@@ -249,14 +248,6 @@ Validate a production build with internal-only test traffic before exposing it t
 Deploy your code releases to production, but restrict it to only internal test traffic before deciding whether to accept live traffic versus rolling back. 
 
 Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) to request access and share feedback.
-
-#### AI Answers - Smarter, Context-Aware Responses for AEM Sites (Beta Program) {#ai-answers-beta}
-
-AI Answers introduces a new way for your visitors to interact with your content. Powered by Retrieval-Augmented Generation (RAG) technology, it uses your AEM-managed data to deliver accurate, brand-consistent answers directly within your digital experiences. 
-
-We are preparing to launch the AI Answers Beta Program and are now inviting customers to register their interest. Because the beta will have very limited capacity, early sign-ups will receive priority consideration. Participating in the beta will allow you to explore AI Answers in your AEM Cloud Service environment, validate performance and accuracy, and help shape the future experience before it becomes generally available.
-
-To request participation or receive updates, please contact [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
 
 #### Snapshots for RDEs (Beta Program) {#rde-snapshot-program}
 

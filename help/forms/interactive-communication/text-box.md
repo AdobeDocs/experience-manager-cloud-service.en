@@ -1,20 +1,16 @@
 ---
-title: Text Box Component in Interactive Communication Editor 
+title: Text Box Component in Interactive Communication Editor
 description: Text Box Component in Interactive Communication Editor in AEM Forms allows authors to input and display text content within a communication.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+exl-id: 6bed824c-b959-4882-a5aa-dbb7fbf2f8a0
 ---
-
 # Text Box Component in Interactive Communication Editor 
 
 >[!NOTE]
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
-
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
 
 ## 1. Introduction 
 
@@ -102,4 +98,4 @@ Authors can drag the Text Box from the component Library into the Design View, o
 
 - Avoid excessive font styles that could hinder readability. 
 
-By configuring the Text Box properties thoughtfully, authors can create interactive, responsive, and user-friendly communication experiences within AEM's Interactive Communication Editor. 
+By configuring the Text Box properties thoughtfully, authors can create interactive, responsive, and user-friendly communication experiences within AEM's Interactive Communication Editor.
