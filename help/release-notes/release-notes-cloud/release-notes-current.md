@@ -28,15 +28,12 @@ The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] cu
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
-<!-- 
-
 ## Release Video {#release-video}
 
-Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
+Have a look at the January 2026 Release Overview video for a summary of the features added in the 2026.1.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
 
--->
 
 ## AEM Beta Programs {#aem-beta-programs}
 
@@ -52,7 +49,8 @@ Getting early access to features that Adobe is developing lets customers and par
 **Current beta programs**
 The following sections list active beta programs.
 
-### Agents in AEM (Beta program) {#agents-in-aem-beta-program}
+<!--
+### Agents in AEM (Explorer program) {#agents-in-aem-beta-program}
 
 Gain early access to powerful, new AEM agentic capabilities across production, governance, optimization, discovery, and development. Your feedback directly shapes Adobe's roadmap and final features. See [Overview of Agents in AEM](/help/ai-in-aem/agents/overview.md) to learn more.
 
@@ -64,6 +62,7 @@ To opt in to participate in this program, email [aemagentsteam@adobe.com](mailto
 * List Specific agents that you or your team will want to use. Or simply say "All Agents."
 
 Customers selected for participation will be notified directly by Adobe. Participation is subject to eligibility considerations, including customer licensing and limited program capacity. While not all requests can be accommodated initially, additional customers may be considered in future beta waves.
+-->
 
 ### AEM Foundation (Beta programs) {#aem-foundation-beta-programs}
 
@@ -109,16 +108,21 @@ For more information, see AI Search in [Assets view](/help/assets/search-assets-
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [Enhancements to the Footnote Placeholder in Adaptive Forms (Foundation Components)](/help/forms/footnotes-richtextsupport.md): 
-    * Footnote rendering has been further refined to support multi-line formatting through line breaks, enabling clearer and more expressive presentation of footnote content. 
-    * Footnotes now remain persistently visible within the Footnote Placeholder, irrespective of the visibility of associated panels, ensuring consistent access to critical information.
-     
+**Enhancements to the Footnote Placeholder in Adaptive Forms (Foundation Components)**
+
+* Added [multi-line support with line breaks](/help/forms/footnotes-richtextsupport.md), enabling clearer and more expressive presentation of footnote content.
+* Footnotes now remain persistently visible within the Footnote Placeholder, regardless of the visibility of associated panels, ensuring consistent access to critical information.
+   ![Footnote Description](/help/forms/assets/footnote-description.png){height=50%}
 
 ### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 
-* [Retrieve values from a JSON array](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): Expanded data integration capabilities now enable APIs to be invoked through custom functions to efficiently extract values from JSON arrays and bind them directly to Adaptive Form fields. This enhancement streamlines data consumption, minimizes manual mapping, and supports more dynamic, data-driven form experiences.
+**Retrieve values from a JSON array**
 
-* **Invoke the Associate UI on a Publish instance**: Extended support is now available to invoke the Associate UI directly on Publish instances. This capability defines the required configuration, payload structure, and invocation flow, simplifying integration and accelerating deployment across environments.
+Expanded custom function capabilities to [extract values from JSON arrays](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array), received via an API call, and bind them directly to Adaptive Form fields. You can now develop business logic and rules with minimal manual data mapping.
+
+**Run the Associate UI on a Publish instance**
+
+You can now run the [Associate UI](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md) directly on Publish instances. This allows your agents to access the Associate UI and easily personalize communications for your customers.
 
 <!--
 **Forms Optimization opportunities**
@@ -244,14 +248,6 @@ Validate a production build with internal-only test traffic before exposing it t
 Deploy your code releases to production, but restrict it to only internal test traffic before deciding whether to accept live traffic versus rolling back. 
 
 Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) to request access and share feedback.
-
-#### AI Answers - Smarter, Context-Aware Responses for AEM Sites (Beta Program) {#ai-answers-beta}
-
-AI Answers introduces a new way for your visitors to interact with your content. Powered by Retrieval-Augmented Generation (RAG) technology, it uses your AEM-managed data to deliver accurate, brand-consistent answers directly within your digital experiences. 
-
-We are preparing to launch the AI Answers Beta Program and are now inviting customers to register their interest. Because the beta will have very limited capacity, early sign-ups will receive priority consideration. Participating in the beta will allow you to explore AI Answers in your AEM Cloud Service environment, validate performance and accuracy, and help shape the future experience before it becomes generally available.
-
-To request participation or receive updates, please contact [feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com).
 
 #### Snapshots for RDEs (Beta Program) {#rde-snapshot-program}
 
