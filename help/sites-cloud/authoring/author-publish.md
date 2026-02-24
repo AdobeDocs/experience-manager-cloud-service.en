@@ -1,6 +1,7 @@
 ---
 title: Authoring and Publishing Concepts
 description: Learn the concepts of authoring in AEM, using the author, preview, and publish environments.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 solution: Experience Manager Sites
 feature: Authoring

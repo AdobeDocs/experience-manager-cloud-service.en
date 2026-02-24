@@ -3,6 +3,7 @@ title: Using the Site Panel to Manage Your Site Theme
 description: Learn the powerful features of the Site panel to help you easily customize and manage your site theme for traditional AEM authoring projects with publish delivery.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
 recommendations: noDisplay, noCatalog

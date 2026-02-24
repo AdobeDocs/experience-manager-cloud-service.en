@@ -1,6 +1,7 @@
 ---
 title: Quick Start Guide to Authoring
 description: Start here for a quick, high-level guide to get you started authoring content using the Sites console.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 solution: Experience Manager Sites
 feature: Authoring
