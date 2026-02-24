@@ -3,6 +3,7 @@ title: An Overview of the Concepts and Best Practices of Working with Content Fr
 description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service allow you to create and use structured content; ideal for headless delivery, and page authoring.
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
 ---

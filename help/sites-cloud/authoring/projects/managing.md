@@ -1,6 +1,7 @@
 ---
 title: Managing Projects
 description: Projects lets you organize your project by grouping resources into one entity which can be accessed and managed in the Projects console
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 solution: Experience Manager Sites
 feature: Authoring

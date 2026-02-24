@@ -1,6 +1,7 @@
 ---
 title: Operational Telemetry for AEM as a Cloud Service
 description: Learn about Operational Telemetry , an automated service that allows to monitor the client-side collection of data.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin

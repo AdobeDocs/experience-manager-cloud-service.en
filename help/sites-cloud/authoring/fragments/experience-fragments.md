@@ -1,6 +1,7 @@
 ---
 title: Experience Fragments
 description: Use Experience Fragments in Adobe Experience Manager as a Cloud Service to make your experiences reusable and flexible.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
