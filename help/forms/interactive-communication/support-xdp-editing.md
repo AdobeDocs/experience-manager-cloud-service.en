@@ -12,10 +12,6 @@ exl-id: 8dd024aa-d0c1-4e8b-b9f2-ad67c20cdd88
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 ## Introduction
 
 The Interactive Communication (IC) Editor now offers seamless **support for editing XDP (XML Data Package) files** within the authoring environment. This enhancement empowers authors to manage, modify, and maintain XDP templates effortlessly, without relying on external tools. With this capability, users can upload, view, and edit XDP files directly in the IC Editor, enabling a unified and efficient design-to-delivery workflow.

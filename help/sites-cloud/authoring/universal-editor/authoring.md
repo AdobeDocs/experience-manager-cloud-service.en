@@ -1,6 +1,7 @@
 ---
 title: Authoring Content with the Universal Editor
 description: Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
@@ -95,23 +96,30 @@ Tap or click **Cancel** or **Done** to discard or save the changes, respectively
 
 The rich text editor (RTE) of the Universal Editor allows the author to apply standard text formatting. By default, the following options are available.
 
-* Paragraph (h1, h2, h3, etc.)
-* Bold
-* Italics
-* Underline
-* Superscript
-* Subscript
-* Bulleted list
-  * Use the tab key to indent and shift+tab to outdent
-* Ordered list
-  * Use the tab key to indent and shift+tab to outdent
-* Link
-* Unlink
-* Image
-* Paste as Text
-* Remove All Formatting
-
-Existing tables can be edited using the RTE, but new tables can not be created.
+* **Paragraph Style**
+  * Paragrpha, h1-h6, code
+* **Bold**
+* **Italic**
+* **Underline**
+* **Strikethrough**
+* **Superscript**
+* **Subscript**
+* **Bullet list**
+  * Use the tab key to indent and shift+tab to outdent.
+* **Ordered list**
+  * Use the tab key to indent and shift+tab to outdent.
+* **Link**
+  * Specify a URL or use the Content Browser to select a path within AEM.
+* **Unlink**
+  * Remove link from selected text.
+* **Image**
+  * Specify a URL or use the [asset selector](/help/assets/overview-asset-selector.md#using-asset-selector) to select an asset from AEM.
+* **Table**
+  * Use the drop-down to insert a new table of the selected number of columns and rows or insert and remove new columns/rows.
+* **Paste as Text**
+  * Remove formatting from text on your clipboard before pasting into the Universal Editor.
+* **Remove All Formatting**
+  * Remove all formatting options from the selected text.
 
 The RTE can be configured to hide options or show additional options depending on authors' needs. Please see the document [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more information.
 
