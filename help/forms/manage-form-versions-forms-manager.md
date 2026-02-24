@@ -45,7 +45,7 @@ When you upload an asset with the same name as an existing asset, Forms Manager 
 
 When an asset with the same name already exists, the upload replaces the existing asset and creates a new version automatically. You can view the created version in the timeline.
 
-![File Upload dialog showing versioned upload](/help/forms/assets/version-on-upload.png)
+![File Upload dialog showing versioned upload](/help/forms/assets/version-upload.png)
 
 ## View version history {#view-version-history}
 
