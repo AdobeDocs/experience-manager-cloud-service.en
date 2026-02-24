@@ -147,7 +147,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 #### Java API Deprecations {#java-api-deprecation}
 
-The deprecated APIs targeting 2/30/2026 removal should no longer be used in code. To prevent deployment blocks, remove API usage before March 30, 2026. Important dates:
+The deprecated APIs targeting 2/26/2026 removal should no longer be used in code. To prevent deployment blocks, remove API usage before March 30, 2026. Important dates:
 
 * **Starting January 26, 2026**: Actions Center notification emails are sent **weekly per environment** as a reminder to remove usage of these APIs.
 * **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed.
