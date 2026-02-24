@@ -1,6 +1,7 @@
 ---
 title: Promoting Launches
 description: You need to promote launch pages to move the content back into the source (production) before publishing.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 solution: Experience Manager Sites
 feature: Authoring, Launches

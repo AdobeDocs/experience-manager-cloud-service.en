@@ -12,10 +12,6 @@ exl-id: b30b3634-0457-4c29-84d3-78f1429b98d1
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 The **Interactive Communication (IC) Editor** in Adobe Experience Manager (AEM) Forms allows organizations to design and deliver personalized, data-driven communications such as statements, invoices, and letters across digital and print channels. This guide provides an overview of how to get started — from onboarding to navigating the IC Editor interface.
 
 

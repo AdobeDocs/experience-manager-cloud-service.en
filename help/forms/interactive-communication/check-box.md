@@ -12,10 +12,6 @@ exl-id: 636e9699-a8db-4cb0-aa9f-0602939006df
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 ## 1. Introduction 
 
 The Check Box component in the Interactive Communication (IC) editor allows users to make single or multiple binary selections (yes/no, true/false). Commonly used for terms & conditions, preferences, consent fields, and opt-ins, it provides a quick way to capture boolean input within a communication form. 

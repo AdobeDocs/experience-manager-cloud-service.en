@@ -1,6 +1,7 @@
 ---
 title: Responsive Layout
 description: AEM lets you realize a responsive layout for your pages by using the Layout Container component.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
