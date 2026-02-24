@@ -166,19 +166,10 @@ The Video Engagement Report provides analytics metrics for videos played using t
 
 Reports are generated upon request. To request a report, create a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) and provide the following details:
 
-* Month of report – Specify the month for which the report is required (format: `YYYY-MM-01`).
+* Month of report – Specify the month for which the report is required (for example, January 2026).
 * Delivery email address – Email address of the group (recommended) or individual to deliver the report
 
 The report provides per-video engagement metrics, including views, impressions, watch time, completion rate, and engagement score.
-
-### Supported regions
-
-Video engagement reporting is supported in the following regions:
-
-* NA (North America)
-* EMEA (Europe, Middle East, Africa)
-* APAC (Asia Pacific)
-* Polaris
 
 ### Report format
 
@@ -204,5 +195,75 @@ The Video Engagement Report includes the following fields:
 | `play_rate` | Percentage of video plays relative to video loads. | (`video_views` ÷ `video_impressions`) × 100 |
 | `avg_time_watched_in_seconds` | Average seconds watched per view. | `video_watched_seconds` ÷ `video_views` |
 | `avg_completion_rate` | Percentage of views that reached full video completion. | (Completed views ÷ `video_views`) × 100 |
-| `engagement_score` | Average watch percentage across all play events. | Average watch percentage across all play events |
+| `engagement_score` | Average watch percentage across all play events. | (Total percentage of video timeline viewed across all sessions ÷ `video_views`) |
 | `tenant_name` | Identifier of the company or tenant associated with the data. | NA |
+
+## Frequently asked questions{#faq-video-engagement}
+
++++**Does autoplay count as a video view?**
+
+If autoplay is enabled, playback starts automatically when the video loads.  
+[To confirm] Whether a view is counted immediately on autoplay or only after a minimum playback duration depends on the engagement tracking logic.
+
++++
+
++++**What qualifies as a completed video view?**
+
+A completed view typically occurs when playback reaches the end of the video.  
+[To confirm] Whether completion requires 100% playback or allows a defined completion threshold.
+
++++
+
++++**If a user watches only part of a video, is it counted as a view?**
+
+Partial playback is generally counted as a view once playback begins.  
+[To confirm] The minimum playback duration required for a view to be counted.
+
++++
+
++++**If a user seeks directly to the end of the video, is it counted as a completed view?**
+
+[To confirm] Whether completion is determined strictly by reaching the end of playback or requires continuous viewing from the beginning.
+
++++
+
++++**Can engagement reports be generated for custom time periods?**
+
+Engagement reports can be generated for specific reporting periods.  
+[To confirm] Whether supported reporting periods include daily, weekly, monthly, and custom date ranges.
+
++++
+
++++**Are engagement reports available in the user interface?**
+
+Currently, reports are generated upon request.  
+[To confirm] Whether self-service report generation is supported or planned.
+
++++
+
++++**Are deleted video assets included in engagement reports?**
+
+Deleted assets are typically excluded from reporting results.  
+[To confirm] Whether historical engagement data for deleted assets remains available.
+
++++
+
++++**Does switching to the New Video Viewer affect engagement reporting?**
+
+The New Video Viewer supports engagement tracking and reporting.  
+[To confirm] Whether reporting applies only to playback using the New Video Viewer or includes playback from existing viewers.
+
++++
+
++++**Does reloading the page count as a new video impression?**
+
+[To confirm] Whether impressions are counted per page load, per playback, or per user session.
+
++++
+
++++**Are engagement metrics available for all Dynamic Media videos?**
+
+Engagement reporting is supported for videos played using the New Video Viewer.  
+[To confirm] Whether reporting applies to both newly ingested and existing video assets.
+
++++
