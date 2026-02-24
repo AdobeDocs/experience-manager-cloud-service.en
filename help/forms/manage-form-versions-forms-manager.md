@@ -3,13 +3,13 @@ title: Manage form versions in Forms Manager
 description: Learn to create and manage versions of Adaptive Forms, form fragments, themes, and other assets in the Forms Manager UI.
 feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer, Admin
-exl-id: manage-form-versions-fm
 ---
-# Manage form versions in Forms Manager
+
+# Manage Form Assets Versions in Forms Manager UI
 
 <span class="preview"> This feature is available through the Early Access program. To request access, send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
 
-Forms Manager now supports versioning for form assets. You can create versions, view version history, and restore earlier versions of your assets from the Forms & Documents console.
+Forms Manager now supports versioning for form assets. You can create versions, view version history, and restore earlier versions of your assets from the Forms Manager UI.
 
 ## Supported asset types {#supported-asset-types}
 
@@ -32,8 +32,10 @@ To create a version of a form asset:
 1. Select the form or asset.
 1. In the left panel, select **[!UICONTROL Timeline]**.
 1. Click **[!UICONTROL Save as Version]** in the timeline toolbar.
+    ![Save as Version](/help/forms/assets/create-version.png)
 1. Enter a **[!UICONTROL Label]** and an optional **[!UICONTROL Comment]** to describe the changes.
 1. Click **[!UICONTROL Create]**.
+    ![Save as Version2](/help/forms/assets/create-version1.png)
 
 The version appears in the timeline panel with its label, comment, and timestamp.
 
@@ -52,6 +54,7 @@ To view the version history of an asset:
 
 1. Select the asset in Forms Manager.
 1. In the left panel, select **[!UICONTROL Timeline]**.
+     ![Version History](/help/forms/assets/version-history.png)
 
 The timeline displays all version entries along with activity events. Each entry shows the label, comment, author, and timestamp.
 
@@ -63,6 +66,7 @@ To restore an asset to an earlier version:
 1. In the left panel, select **[!UICONTROL Timeline]**.
 1. Select the version that you want to restore.
 1. Click **[!UICONTROL Revert to this Version]**.
+    ![Revert Version](/help/forms/assets/revert-version.png)
 
 >[!NOTE]
 >
