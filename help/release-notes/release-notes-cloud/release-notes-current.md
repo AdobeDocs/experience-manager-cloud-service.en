@@ -142,12 +142,12 @@ Go‑live days, live events, peak sales—these moments can't break. [Our new se
 
 #### Java API Deprecations {#java-api-deprecation}
 
-The deprecated APIs targeting 2/26/2026 removal should no longer be used in code. To prevent deployment blocks, remove API usage before March 26, 2026. Important dates:
+The deprecated APIs targeting 2/26/2026 removal should no longer be used in code. To prevent deployment blocks, remove API usage before March 30, 2026. Important dates:
 
 * **Starting January 26, 2026**: Actions Center notification emails are sent **weekly per environment** as a reminder to remove usage of these APIs.
 * **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed.
-* **March 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
-* **April 30, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
+* **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
+* **May 4, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
 
 See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
