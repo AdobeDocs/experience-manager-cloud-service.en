@@ -1,6 +1,7 @@
 ---
 title: Publishing Content with the Universal Editor
 description: Learn how the Universal Editor publishes content and how your apps can handle the published content.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring

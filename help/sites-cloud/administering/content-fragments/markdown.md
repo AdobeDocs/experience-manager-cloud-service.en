@@ -3,6 +3,7 @@ title: Markdown
 description: Understand how the Content Fragment editor uses markdown syntax to allow you to easily create content, for both page authoring and headless delivery.
 feature: Content Fragments
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
 ---
