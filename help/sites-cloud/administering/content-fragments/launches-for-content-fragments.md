@@ -4,6 +4,7 @@ description: Learn how to use Launches for Content Fragments in Adobe Experience
 feature: Content Fragments
 role: User, Developer
 solution: Experience Manager Sites
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
 ---
 # Launches for Content Fragments {#launches-for-content-fragments}

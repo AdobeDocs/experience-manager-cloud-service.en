@@ -12,10 +12,6 @@ exl-id: 1ff5ac22-d8c8-4109-8334-217dbc239f1f
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 ## 1. Introduction 
 
 The Line Component in the Interactive Communication (IC) editor allows authors to insert horizontal or vertical lines within a communication layout. These lines help in visually segmenting content, enhancing readability, or emphasizing form structure. With customizable styles such as solid lines or underlines and flexible positioning, the Line Component can be used for both functional and aesthetic purposes in form design. 

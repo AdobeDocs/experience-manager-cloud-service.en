@@ -29,10 +29,10 @@ During the deprecation time window, Adobe will remind customers of the actions t
 >
 >* **Starting January 26, 2026**: Actions Center notification emails are sent **weekly per environment** as a reminder to remove usage of these APIs.
 >* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed.
->* **March 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
+>* **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
 >* **April 30, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
 >
->To prevent deployment blocks, remove API usage before March 26, 2026.
+>To prevent deployment blocks, remove API usage before March 30, 2026.
 
 ## Deprecated Functionality {#deprecated-features}
 
@@ -84,10 +84,10 @@ The APIs in the table below (click to expand to see it) have been announced as d
 >
 > * **Starting January 26, 2026**: Actions Center notification emails are sent **weekly per environment** as a reminder to remove usage of these APIs.
 > * **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed.
-> * **March 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
-> * **April 30, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
+> * **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
+> * **May 4, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
 >
-> To prevent deployment blocks, remove API usage before March 26, 2026.
+> To prevent deployment blocks, remove API usage before March 30, 2026.
 
 
 <details>
@@ -357,7 +357,7 @@ If you are using `org.apache.sling.commons.auth`, or `org.apache.sling.commons.a
 
 Action list:
 
-* Update ACS AEM Commons to latest version (at least 6.11.0)
+* If you are using ACS AEM Commons update to latest version (at least 6.11.0) and make sure to use the `cloud` classifier.
 * Migrate from `org.apache.sling.commons.auth` and/or `org.apache.sling.commons.auth.spi` to `org.apache.sling.auth` resp. `org.apache.sling.auth.spi`.
 
 ### Removal of `org.apache.felix.webconsole*` {#org.apache.felix.webconsole}
@@ -375,7 +375,7 @@ If you use anything from the package `org.eclipse.jetty` or one of its sub packa
 Action list:
 
 * Replace usage of `org.eclipse.jetty` packages with other third-party libraries/own code or
-* Select the required bundles from this list and add them to your project:
+* Select the required bundles from this list and add them to your project. If you add one, make sure to check the package imports of that bundle as you might need to add others from these list to fulfull those imports. If you want to use version 9.x of these bundles, make sure you deploy exactly the version from below and do not embedd *and* export these packages.
   * `org.eclipse.jetty:jetty-client:9.4.54.v20240208`
   * `org.eclipse.jetty:jetty-http:9.4.54.v20240208`
   * `org.eclipse.jetty:jetty-io:9.4.54.v20240208`
@@ -402,7 +402,8 @@ Remove the usage of Google Guava Core Libraries or include an appropriet version
 
 Action list:
 
-* Update ACS AEM Commons to latest version (at least 6.11.0)
+* If you are using ACS AEM Commons update to latest version (at least 6.11.0) and make sure to use the `cloud` classifier.
+* If you are using `io.wcm:io.wcm.caconfig.extensions` update this to at least version 1.9.2
 * Replace usage of Google Guava Core Library with JDK collections or Apache Commons Collections4
 * If still required, add this bundle to your project (substitute the version with the latest available):
   * `com.google.guava:guava:33.4.8-jre`
@@ -413,7 +414,7 @@ Remove usage of the non maintained Apache Commons libraries and replace them wit
 
 Action list:
 
-* Update ACS AEM Commons to latest version (at least 6.11.0)
+* If you are using ACS AEM Commons update to latest version (at least 6.11.0) and make sure to use the `cloud` classifier.
 * Replace imports of `org.apache.commons.lang*` with `org.apache.commons.lang3`
 * Replace imports of `org.apache.commons.collections*` with `org.apache.commons.collecitons4`
 
@@ -439,7 +440,7 @@ Logback is not supported in Cloud Service, remove all usage of it. If you are us
 
 Action list:
 
-* Update ACS AEM Commons to latest version (at least 6.11.0)
+* If you are using ACS AEM Commons update to latest version (at least 6.11.0) and make sure to use the `cloud` classifier.
 * Remove the code using packages from `ch.qos.logback`
 
 ### Usage of `org.slf4j.event and org.slf4j.spi` {#org.slf4j}
@@ -448,9 +449,10 @@ If you are using `org.slf4j.event` or `org.slf4j.spi`, remove all usage of it. I
 
 Action list:
 
-* Update ACS AEM Commons to latest version (at least 6.11.0)
-* Remove the code using `org.slf4j.event` and `org.slf4j.spi`
+* If you are using ACS AEM Commons update to latest version (at least 6.11.0) and make sure to use the `cloud` classifier.
 * If you are using the Apache Kafka Client and include the OSGi wrapper bundle from Apache ServiceMix (`org.apache.servicemix.bundles.kafka-clients`), replace it with the [AEM Apache Kafka Client Wrapper](https://repo.maven.apache.org/maven2/com/adobe/aem/osgi/com.adobe.aem.osgi.kafka-clients/4.0.0_1.0/). This is the same version as the one from Apache ServiceMix with just the usage of those two packages removed.
+* If you are using `com.adobe.aio.aem:aio-lib-osgi` update to the latest version (at least 2.0.12).
+* Remove the code using `org.slf4j.event` and `org.slf4j.spi`
 
 ### Usage of `org.apache.log4j` {#org.apache.log4j}
 

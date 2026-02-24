@@ -15,10 +15,6 @@ exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 The Copy and Paste feature in the Interactive Communication (IC) editor allows authors to duplicate an existing Interactive Communication and reuse it in a different folder or location. This capability helps teams work efficiently by enabling multiple variations of an IC without modifying the original version.
 
 By creating a copy, authors can safely make changes for different use cases, customers, or business scenarios while preserving the source Interactive Communication.

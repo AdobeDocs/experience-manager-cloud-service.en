@@ -12,10 +12,6 @@ exl-id: fe1608f0-8d93-4b89-9dd9-849339b0a175
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 ## 1. Introduction 
 
 The **Radio Button** component in the Interactive Communication (IC) editor allows authors to present a set of mutually exclusive choices to users—meaning only one option can be selected at a time. This makes it ideal for use cases like Yes/No questions, gender selection, rating levels, or predefined categorical responses. 

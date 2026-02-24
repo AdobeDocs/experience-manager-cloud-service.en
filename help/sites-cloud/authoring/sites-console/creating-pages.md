@@ -1,6 +1,7 @@
 ---
 title: Creating Pages
 description: Learn how to create new pages for your website using the Sites console.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
