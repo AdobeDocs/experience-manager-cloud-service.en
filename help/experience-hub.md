@@ -6,6 +6,7 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, Central Interface Components, Getting Started, Onboarding, Programs, Workflows 
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Developer, User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
 ---
 # About Experience Hub {#aem-experience-hub}

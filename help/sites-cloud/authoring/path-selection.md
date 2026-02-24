@@ -1,6 +1,7 @@
 ---
 title: Path Selection with the Path Browser
 description: Learn how to use the path browser to select resources in AEM.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 8eb52793-b709-4e66-832d-533ef06bc0e1
 solution: Experience Manager Sites
 feature: Authoring
