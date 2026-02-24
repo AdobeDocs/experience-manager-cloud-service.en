@@ -461,7 +461,7 @@ Execute these steps to add a CTA link to a layer:
 
 1. Add the copied embed code to your site's HTML file and run it in your browser to display the template.
 
-Click the CTA element on the template to navigate to the destination page.
+1. Click the CTA element on the template to navigate to the destination page.
 
 Watch this step by step video to learn how to add a CTA link to a template layer.
 
@@ -478,5 +478,5 @@ Watch this step by step video to learn how to add a CTA link to a template layer
 
 ## See also
 
-1. Explore [[!DNL Dynamic Media] and its capabilities](/help/assets/dynamic-media/dynamic-media.md)
-1. Explore [[!DNL Dynamic Media] with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)
+* Explore [[!DNL Dynamic Media] and its capabilities](/help/assets/dynamic-media/dynamic-media.md)
+* Explore [[!DNL Dynamic Media] with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md)
