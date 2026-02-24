@@ -40,4 +40,60 @@ After a brand policy is imported:
 
 To import a brand into the Governance Agent:
 
-1. Create a brand, by giving a name and a main domain
+1. Create a brand, by giving a name and a main domain. You can do this by clicking on the **Governance Context** button on the left hand navigation in your Experience Manager home, then press the **+ Add Brand** button, as shown below:
+
+   ![Adding a new brand](/help/ai-in-aem/agents/governance/assets/add_brand.png)
+
+1. Set the name of the brand and a description in the following window
+
+   ![Naming the brand](/help/ai-in-aem/agents/governance/assets/add_brand_dialogue.png)
+
+1. Once the brand is created, create a main domain in the following window by pressing the **Domains** link on the left:
+
+   ![Configuring a domain for the brand](/help/ai-in-aem/agents/governance/assets/add_domain.png)
+
+1. After you've configured the main domain, you can upload your brand policy document by switching over to the **Policies** tab and pressing the **+ Add Policy** link
+
+   ![Adding a policy](/help/ai-in-aem/agents/governance/assets/add_policy.png)
+
+1. In the next window, select the brand you wish to apply the policy for from the drop-down list of existing brands, then select **Upload PDFs** and select your brand policy document(s) in PDF format
+
+   ![Upload your brand policy document](/help/ai-in-aem/agents/governance/assets/upload_brand_policy_document.png)
+
+   The Governance Agent will parse your brand policy guideline using natural lanuguage, and it will extract the checks obtained from the document and translate them into actual tasks. Once the document is processed, you can view a summary of the import, including the number of checks and the status of the policy, as shown below:
+
+   ![An overview window of the brand policy status](/help/ai-in-aem/agents/governance/assets/policy_status.png)
+
+1. Once your brand is created, and your policy document is uploaded, you can get a detailed per-brand view by going to the **Brands** tab, and clicking on a brand's card. This is the view you'll want to use for creating cagtegories of checks, by pressing the three dots next to an existing category, and selecting **+ Add Category**, as shown in the screenshot below:
+
+   ![Add category](/help/ai-in-aem/agents/governance/assets/add_category.png)
+
+   You can also use this view to create, edit and delete checks, which we will detail in the steps below.
+
+1. For a more granular view of each individual check, you can switch over to the **Checks** tab, and view a list of each individual check extracted from your guideline documents. You can filter checks based check type, brand or status:
+
+   ![See individual brand checks](/help/ai-in-aem/agents/governance/assets/see_brand_checks.png)
+
+   Additionally, you can view additional details on each individual check by clicking the three dots (**...**) to the left of the check, and pressing **View details**. This will open a new window with more information about the check:
+
+   ![View individual check details](/help/ai-in-aem/agents/governance/assets/view_check_details.png)
+
+   You can also delete checks by pressing **Delete** from the same menu location, or edit them by pressing **Edit**:
+
+   ![Editing a check](/help/ai-in-aem/agents/governance/assets/edit_check.png)
+
+1. You can manually add a check by pressing **Add Check** in the upper left corner of the Checks window:
+
+   ![Adding a check](/help/ai-in-aem/agents/governance/assets/add_check.png)
+
+   In the following screen, you can configure details such as:
+
+   * The name of the check
+   * The rule, described in natural language
+   * The category
+   * The scope(s) it applies to
+
+   ![Configuring the check details](/help/ai-in-aem/agents/governance/assets/add_check_window.png)
+
+1. Lastly, for a list of domains and the brands they are associated with, you can press the **Domains** tab. This section will allow you to add, delete or modify domains in your list.
+   
