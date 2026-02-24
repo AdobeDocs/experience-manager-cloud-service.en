@@ -1,6 +1,7 @@
 ---
 title: Organizing Pages
 description: Learn how to organize your website with AEM.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring

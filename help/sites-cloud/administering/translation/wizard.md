@@ -3,6 +3,7 @@ title: Language Copy Wizard
 description: Learn about using the Language Copy Wizard in AEM.
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
 solution: Experience Manager Sites
 ---
