@@ -207,6 +207,13 @@ Please review and update any downstream processes that rely on custom logging be
 
 TBD
 
+#### CS Migration alpha {#cm-mcp-server}
+
+TBD
+
+#### Pipeline troubleshooting support for web tier pipeline beta {#cm-mcp-server}
+
+
 #### AEM Edge Functions (Beta Program) {#edge-functions}
 
 AEM Edge Functions (referred to in earlier release notes as *Edge Computing*) allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
