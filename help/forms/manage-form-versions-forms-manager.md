@@ -41,12 +41,11 @@ The version appears in the timeline panel with its label, comment, and timestamp
 
 ## Version an asset during upload {#version-on-upload}
 
-When you upload a file that already exists in Forms Manager, you are prompted to choose how to handle the duplicate:
+When you upload an asset with the same name as an existing asset, Forms Manager displays a **File Upload** dialog that lists the assets to be updated. The dialog shows the asset name, section, and path.
 
-* **Override**: Replaces the existing file with the uploaded content. The metadata is preserved.
-* **Create Version**: Saves the existing asset as a version before replacing it with the uploaded content.
+When an asset with the same name already exists, the upload replaces the existing asset and creates a new version automatically. You can view the created version in the timeline.
 
-This applies to individual file uploads as well as folder or ZIP uploads. When a folder upload contains assets that match existing paths, you are prompted to choose whether to version all matching assets.
+![File Upload dialog showing versioned upload](/help/forms/assets/version-on-upload.png)
 
 ## View version history {#view-version-history}
 
@@ -70,7 +69,7 @@ To restore an asset to an earlier version:
 
 >[!NOTE]
 >
->For Adaptive Forms that have both a DAM node and a content page, reverting a version restores both components together to ensure consistency.
+>Images cannot be reverted to a previous version. All other asset types, including Adaptive Forms, form fragments, themes, and XDP templates, support version restore.
 
 ## See Also {#see-also}
 
