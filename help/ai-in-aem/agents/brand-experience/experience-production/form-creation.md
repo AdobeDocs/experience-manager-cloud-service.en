@@ -1,42 +1,42 @@
 ---
-title: Form creation skill
-description: Learn about the Experience Production Agent's form creation skill and how to use natural language to create forms from scratch.
+title: Form Creation Job
+description: Learn about the Brand Experience Agent's form creation job and how to use natural language to create forms from scratch.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
 ---
-# Form Creation Skill {#form-creation-skill}
 
-The form creation skill is a capability of the Experience Production Agent that is designed to develop forms using natural language prompts. This skill automatically generates appropriate form structure and  field types. The skill is surfaced through AI Assistant.
+# Form Creation Job {#form-creation-job}
 
-Some of the key benefits of form creation skill include:
+The form creation job is a capability of the [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) that is designed to develop forms using natural language prompts. This job automatically generates appropriate form structure and  field types. The job is surfaced through AI Assistant.
 
-* **Accelerated form development**: Create forms quickly using
-simple natural language commands, eliminating the need for learning traditional product interfaces.
+Some of the key benefits of form creation job include:
+
+* **Accelerated form development**: Create forms quickly using simple natural language commands, eliminating the need for learning traditional product interfaces.
 * **Consistent and on-brand experiences**: Create forms that follow your organization's branding, templates, and style guidelines by using approved templates and styles.
-* **Lower technical barrier**: Allows business users to create forms easily, without needing advanced technical or deep product expertise.
+* **Lower technical barrier**: Allow business users to create forms easily, without needing advanced technical or deep product expertise.
 
-## Capabilities {#capabilitiess}
+## Capabilities {#capabilities}
 
-* **Create a new form with plain text prompt**: You can create a form by submitting your requirements in plain language. The agent automatically generates appropriate form structure, field types, and on-brand experiences based on your natural language description and specified template. This capability accelerates form creation while ensuring brand and compliance standards are maintained.
+* **Create a new form with plain text prompt**: You can create a form by submitting your requirements in plain language. The skill automatically generates appropriate form structure, field types, and on-brand experiences based on your natural language description and specified template. This capability accelerates form creation while ensuring brand and compliance standards are maintained.
 
-* **Import a PDF document and convert it into form**: You can import and transform existing PDF documents into forms. The agent analyzes uploaded content to detect field types, preserve layouts, and enhance forms with responsive design and validation logic while ensuring brand and compliance standards are maintained.
+* **Import a PDF document and convert it into form**: You can import and transform existing PDF documents into forms. The skill analyzes uploaded content to detect field types, preserve layouts, and enhance forms with responsive design and validation logic while ensuring brand and compliance standards are maintained.
 
-    When you use any of the above capabilities, you are prompted to choose the type of form to create, specify either a Core Components based adaptive forms template or an Edge Delivery Services based adaptive forms template and indicate your preferred path to save the form. If you are creating a form based on Edge Delivery Services, you can also specify the GitHub URL of your repository.
+When you use either of these capabilities, you are prompted to choose the type of form to create. Specify either a Core Components-based adaptive forms template or an Edge Delivery Services-based adaptive forms template and indicate your preferred path to save the form. If you are creating a form based on Edge Delivery Services, you can also specify the GitHub URL of your repository.
 
 
-### Sample prompts {#sample-prompts}
+### Sample Prompts {#sample-prompts}
 
 * *Create a form for feedback collection with name, email, and message fields*
 * *Create a customer feedback form with product rating (1-5 stars), comment field, and optional email*
 * *Build a contact form with name, email, subject dropdown, and message fields*
 * *Create a registration form with personal information, account preferences, and terms acceptance*
-* *Create a credit card application form by importing the PDF file available at 'https://[aem-author-url]/path/to/pdf/file*
-* *Create a feedback form using the boilerplate at '<https://github.com/wkndforms/wesecure>'*
+* *Create a credit card application form by importing the PDF file available at `https://[aem-author-url]/path/to/pdf/file`*
+* *Create a feedback form using the boilerplate at `https://github.com/wkndforms/wesecure`*
 
-## Refine your form {#refine-with-forms-experience-builder}
+## Refine your Form {#refine-with-forms-experience-builder}
 
-After creating your initial form structure using AI Assistant, you can use the Forms Experience Builder to:
+After creating your initial form structure using the AI Assistant, you can use the Forms Experience Builder to:
 
 * **Update forms**: Add or modify fields, adjust field types, and update styling as needed through the visual editor.
 
@@ -46,18 +46,17 @@ After creating your initial form structure using AI Assistant, you can use the F
 
 * **Configure submission**: Configure where form data is submitted, including setting up email notifications, integrations with workflows, or connections to external systems.
 
-For more information, see [Forms Experience Builder documentation](/help/forms/experience-builder/product-overview.md).
+For more information, see [Forms Experience Builder documentation.](/help/forms/experience-builder/product-overview.md)
 
 
 ## Activation {#activation}
 
-To enable the Experience Production Agent for your organization, activation must be initiated through Adobe. Begin the process by reaching out via:
+To enable the form creation job for your organization, activation must be initiated through Adobe. Begin the process by reaching out via:
 
 * Email: `experience-production-agent@adobe.com`
 * Or, contact your designated Adobe account team.
 
 When reaching out, be sure to provide your AEM as a Cloud Service Organization ID.
-
 
 <!-- 
 #### Import and convert {#import-and-convert}
