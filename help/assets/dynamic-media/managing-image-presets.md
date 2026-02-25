@@ -62,7 +62,7 @@ Important considerations include the following:
 * Changes to a Processing Profile affect newly uploaded assets. Existing assets must be reprocessed if new renditions are required.
 * Workflow model customization is not supported in AEM as a Cloud Service for rendition generation.
 
-Image presets reference available renditions at delivery time. Ensure the required renditions exist before configuring or using image presets.
+Image presets reference available renditions at delivery time. Ensure that the required renditions exist before configuring or using Image Presets.
 
 **To control which renditions are generated:**
 
