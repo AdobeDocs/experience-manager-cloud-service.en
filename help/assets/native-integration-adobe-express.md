@@ -138,7 +138,7 @@ Click the ![Info icon](assets/info-icon.svg) icon on the asset card and select t
 
 ### Access filters consistent with Assets view {#filters-content-advisor}
 
-Content Advisor provides the same filtering capabilities available in the Assets view, enabling you to refine assets using predefined filters. Same filtering capabilities apply to the filters available for all asset types, such as files, folders, and collections. This ensures a consistent asset discovery experience and helps you efficiently locate relevant assets within Adobe Express.
+Content Advisor provides the same filtering capabilities in Express that are  available in the Assets view, enabling you to refine assets using predefined filters. Same filtering capabilities as available in Assets view also apply to the filters specific to content types, such as files, folders, and collections. This ensures a consistent asset discovery experience and helps you efficiently locate relevant assets within Adobe Express.
 
 ### Access and reuse recent and saved searches {#saved-searches-content-advisor}
 
@@ -154,7 +154,7 @@ To save your frequently used search using Content Advisor:
 
 1. Specify the name of the search and click ![Info icon](assets/do-not-localize/checkmark-icon.svg) to save it. The search displays in the list of items.
 
-To apply the any of the saved search items, click the filters icon, select the search item from the **[!UICONTROL Saved Searches]** drop-down list and click **[!UICONTROL Apply]**.
+To apply any of the saved search items, click the filters icon, select the search item from the **[!UICONTROL Saved Searches]** drop-down list and click **[!UICONTROL Apply]**.
 
 
 ### Search for assets across and within collections {#search-collections-content-advisor}
