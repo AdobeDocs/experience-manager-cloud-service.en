@@ -3,6 +3,7 @@ title: Content Fragments - Setup
 description: Learn how to enable Content Fragment, and GraphQL, functionality for use with AEM headless delivery features and page authoring.
 feature: Content Fragments
 role: Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 3974d698-1e7d-4a5f-a6d5-cbf8d96b4095
 solution: Experience Manager Sites
 ---
@@ -27,6 +28,10 @@ Setting up your instance is done:
 
 * by [enabling functionality in the Configuration Browser](#enable-content-fragment-functionality-configuration-browser)
 * then [applying the configuration to your individual Assets folders](#apply-the-configuration-to-your-folder)
+
+>[!TIP]
+>
+>Content Fragments can be [published to Edge Delivery Services.](https://www.aem.live/developer/content-fragment-overlay)
 
 ## Enable Content Fragment Functionality in the Configuration Browser {#enable-content-fragment-functionality-configuration-browser}
 

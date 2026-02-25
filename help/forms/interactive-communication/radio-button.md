@@ -4,17 +4,13 @@ description: Radio Button Component in Interactive Communication Editor in AEM F
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+exl-id: fe1608f0-8d93-4b89-9dd9-849339b0a175
 ---
-
 # Radio Button Component in Interactive Communication Editor 
 
 >[!NOTE]
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
-
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
 
 ## 1. Introduction 
 
@@ -111,6 +107,4 @@ Authors can group related radio buttons together and position them inside layout
 
 - Apply consistent spacing and alignment for better visual clarity, especially in mobile-friendly layouts. 
 
-The Radio Button component in the Interactive Communication editor is a fundamental input component that offers clean, structured decision-making for end users. When configured with clear labels, thoughtful spacing, and data binding, it ensures reliable data collection and a smoother user experience for forms, surveys, and onboarding workflows. 
-
- 
+The Radio Button component in the Interactive Communication editor is a fundamental input component that offers clean, structured decision-making for end users. When configured with clear labels, thoughtful spacing, and data binding, it ensures reliable data collection and a smoother user experience for forms, surveys, and onboarding workflows.

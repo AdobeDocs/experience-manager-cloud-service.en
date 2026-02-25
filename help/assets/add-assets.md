@@ -7,7 +7,7 @@ exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 ---
 # Add digital assets to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
 
-[!DNL Adobe Experience Manager Assets] accepts many types of digital assets from many sources. It stores the binaries and created renditions, can do asset processing using various workflow and [!DNL Adobe Sensei] services, allows for distribution through many channels across many surfaces.
+[!DNL Adobe Experience Manager Assets] accepts many types of digital assets from many sources. It stores the binaries and created renditions, can do asset processing using various workflow and [!DNL Adobe AI] services, allows for distribution through many channels across many surfaces.
 
 [!DNL Adobe Experience Manager] enriches the binary content of the uploaded digital files with rich metadata, smart tags, renditions, and other Digital Asset Management (DAM) services. You can upload various types of files, such as images, documents, and raw image files, from your local folder or a network drive to [!DNL Experience Manager Assets].
 
@@ -121,8 +121,13 @@ To retain the duplicate asset in [!DNL Assets], click **[!UICONTROL Keep]**. To 
 
 To suit specific file-naming conventions for your organization, the [!UICONTROL Upload Assets] dialog lets you specify long names for the files that you upload. The following (space-separated list of) characters are not supported:
 
-* Invalid characters for asset name: `* / : [ \\ ] | # % { } ? &`
+* Invalid characters for asset name: `* / : [ \\ ] | # % { } ? &` or `;=` (a semicolon followed by an equals sign)
 * Invalid characters for asset folder name: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
+Examples of invalid filenames:
+
+* `JPG_JD_small file ~!)$@;(-_=+^',..jpg`
+* `JPG_JD_small file ~!)$@;=(-_+^',..jpg`
 
 ## Bulk upload assets {#bulk-upload}
 

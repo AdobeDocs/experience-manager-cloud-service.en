@@ -1,6 +1,7 @@
 ---
 title: Components Console
 description: The Components Console lets you browse through all components defined for your instance
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 solution: Experience Manager Sites
 feature: Authoring

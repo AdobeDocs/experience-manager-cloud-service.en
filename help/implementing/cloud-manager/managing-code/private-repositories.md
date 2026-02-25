@@ -16,9 +16,9 @@ By setting up Cloud Manager to integrate with your private GitHub Cloud (reposit
 >* GitHub Enterprise Server (self-hosted version of GitHub) repositories .
 >* GitLab (both `gitlab.com` and self-hosted versions of GitLab) repositories.
 >* Bitbucket (both `bitbucket.org` and Bitbucket Server, the self-hosted version of BitBucket) repositories. 
->* Azure DevOps (both [dev.azure.com](http://dev.azure.com) and self-hosted versions of Azure DevOps) repositories.
+>* Azure DevOps (both [dev.azure.com](https://azure.microsoft.com/en-us/products/devops/?nav=min) and self-hosted versions of Azure DevOps) repositories.
 >
->See [Add External Repositories in Cloud Manager - private beta](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+>See [Add External Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 

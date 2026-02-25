@@ -104,7 +104,7 @@ The API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DN
   * Visual indicator for staged product data in authoring mode for better visibility of upcoming changes
   * New sitemap component for content and commerce pages
 
-* Support for [Adobe Commerce Sensei Product Recommendation, powered by Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront using pre-defined or on-the-fly created recommendations
+* Support for [Adobe Commerce AI Product Recommendation, powered by Adobe AI](https://business.adobe.com/ai/adobe-genai.html) in AEM Storefront using pre-defined or on-the-fly created recommendations
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 

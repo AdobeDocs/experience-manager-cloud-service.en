@@ -1,6 +1,6 @@
 ---
 title: Smart Imaging
-description: Learn how Smart Imaging with Adobe Sensei AI applies each user's unique viewing characteristics to serve the right images optimized for their experience automatically, resulting in better performance and engagement.
+description: Learn how Smart Imaging with Adobe AI applies each user's unique viewing characteristics to serve the right images optimized for their experience automatically, resulting in better performance and engagement.
 contentOwner: Rick Brough
 feature: Asset Management,Renditions,Best Practices
 role: User
@@ -9,12 +9,12 @@ exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 ---
 # Smart Imaging {#smart-imaging}
 
-Learn how Smart Imaging with Adobe Sensei AI applies each user's unique viewing characteristics to serve the right images optimized for their experience automatically, resulting in better performance and engagement.
+Learn how Smart Imaging with Adobe AI applies each user's unique viewing characteristics to serve the right images optimized for their experience automatically, resulting in better performance and engagement.
 
 
 ## About Smart Imaging {#about-smart-imaging}
 
-Smart Imaging technology applies Adobe Sensei AI capabilities and works with existing "image presets." It works to enhance image delivery performance by automatically optimizing image format, size, and quality based on client browser capabilities.
+Smart Imaging technology applies Adobe AI capabilities and works with existing "image presets." It works to enhance image delivery performance by automatically optimizing image format, size, and quality based on client browser capabilities.
 
 And now, get a better Google Core Web Vital score for LCP (Largest Contentful Paint) with improved Smart Imaging, which now comes with both AVIF and WebP support.
 
@@ -123,7 +123,7 @@ DPR and network bandwidth values are based on the detected client-side values of
 
 * Improved Google SEO ranking for web pages that use the latest Smart Imaging.
 * Serves optimized content immediately (at runtime).
-* Uses Adobe Sensei technology to convert according to the quality (`qlt`) specified in the image request.
+* Uses Adobe AI technology to convert according to the quality (`qlt`) specified in the image request.
 * TTL (Time To Live) independent. Previously, a minimum TTL of 12 hours was mandatory for Smart Imaging to work.
 * Previously, both the original and derivative images were cached, and it was a 2-step process to invalidate the cache. In the latest Smart Imaging, only the derivatives get cached, allowing a single-step cache invalidation process.
 * Customers that use custom headers in their ruleset benefit from the latest Smart Imaging, as these headers are not blocked, unlike the previous version of Smart Imaging.

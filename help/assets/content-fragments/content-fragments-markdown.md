@@ -32,13 +32,13 @@ You can define:
 
 ## Heading Notation {#heading-notation}
 
-To create a header by placing a hash tag (#) in front of the heading. One hash tag (#) is used for an H1, two hash tags (##) for a H2 and so on. You can use up to 6 hash tags. For example:
+To create a header, place a hash symbol (#) in front of the heading. One hash symbol (#) is used for an H1, two hash symbols (##) for a H2 and so on. You can use up to six hash symbols. For example:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`## This is an H2`
 
 &nbsp;&nbsp;&nbsp;&nbsp;`### This is an H3`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`###### This is a H6`
+&nbsp;&nbsp;&nbsp;&nbsp;`###### This is an H6`
 
 Optionally, you can create a H1 by underlining the text in equal signs and create a H2 by underlining the text in minus signs. For example:
 
@@ -66,7 +66,7 @@ These are examples of inline links:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`This is [an example](https://example.com/ "Title") inline link.`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`This is [an example of an email link](emailto:myaddress@mydomain.info)`
+&nbsp;&nbsp;&nbsp;&nbsp;`This is [an example (non-standard) of an email link](emailto:myaddress@mydomain.info)`
 
 &nbsp;&nbsp;&nbsp;&nbsp;`[This link](https://example.net/) has no title attribute.`
 
@@ -110,17 +110,13 @@ You can quote text by adding the &gt; symbol before the text. For example:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`>This is block quotes`  
 
-&nbsp;&nbsp;&nbsp;&nbsp;`>asdhfjlkasdhlf`  
-
-&nbsp;&nbsp;&nbsp;&nbsp;`>asdfahsdlfasdfj`
-
 You can have nested block quotes. For example:
 
-&nbsp;&nbsp;&nbsp;&nbsp;`> This is the first level of quoting.` 
+&nbsp;&nbsp;&nbsp;&nbsp;`> This is the first level of quoting.`
 
 &nbsp;&nbsp;&nbsp;&nbsp;`>`  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`>> This is nested blockquote.`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`>> This is a nested blockquote.`  
 
 &nbsp;&nbsp;&nbsp;&nbsp;`>`  
 
@@ -130,7 +126,7 @@ You can have nested block quotes. For example:
 
 You can create both ordered and unordered lists.
 
-To create an unordered list, use the &ast; symbol before the items in the list. For example:
+To create an unordered list, use the &ast; (asterisk) symbol before the items in the list. For example:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`* item in list`
 
@@ -150,7 +146,7 @@ To create an ordered list, add the numbers, followed by a period, before each it
 
 You can add italic or bold styling to your text.
 
-To can add italics as follows:
+You can add italics as follows:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`*single asterisks*`
 

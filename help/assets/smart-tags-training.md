@@ -1,13 +1,13 @@
 ---
-title: Auto-tag assets with [!DNL Adobe Sensei] smart service
+title: Auto-tag assets with [!DNL Adobe AI] smart service
 description: Tag assets with an artificially intelligent service that applies contextual and descriptive business tags.
 feature: Smart Tags,Tagging
 role: Admin,User
+exl-id: 05304c5e-f620-4cca-8cfe-76a6fa2e3f4a
 ---
-
 # Smart Tags Training
 
-Smart tags training allows you to train your tags so that you can specify the particulars if the relevant tags are not there. It uses an artificially intelligent framework of [Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. [!DNL Experience Manager Assets] automatically applies smart tags to uploaded assets, by default. 
+Smart tags training allows you to train your tags so that you can specify the particulars if the relevant tags are not there. It uses an artificially intelligent framework of [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. [!DNL Experience Manager Assets] automatically applies smart tags to uploaded assets, by default. 
 
 ## Determining the requirement of smart tags training {#smart-tag-training-requirement}
 
@@ -160,7 +160,7 @@ To check whether the Smart Tags service is trained on your tags in the training 
 ## Limitations and best practices related to smart tags {#limitations-smart-tags-training}
 
 * To train the model, use the most appropriate images. The training cannot be reverted or training model cannot be removed. Your tagging accuracy depends on the current training, so do it carefully.
-* You cannot train the service that applies Smart Tags to videos using any specific videos. It works with default [!DNL Adobe Sensei] settings.
+* You cannot train the service that applies Smart Tags to videos using any specific videos. It works with default [!DNL Adobe AI] settings.
 
 
 >[!NOTE]
