@@ -48,15 +48,27 @@ To import a brand into the Governance Agent:
 
    ![Naming the brand](/help/ai-in-aem/agents/governance/assets/add_brand_dialogue.png)
 
+1. New brands are created in draft status. Make sure you change your newly created brand to an Active status, by clicking on your brand's card, pressing the edit (pencil) in the top right corner of the screen, set the **Status** to **Active** in the following window, and click **Save Changes**. You need to enable the brands by setting them to Active before being able to use them.
+
+   ![Set the brand's status to Active](/help/ai-in-aem/agents/governance/assets/set_brand_active.png)
+
 1. Once the brand is created, create a main domain in the following window by pressing the **Domains** link on the left:
 
    ![Configuring a domain for the brand](/help/ai-in-aem/agents/governance/assets/add_domain.png)
 
-1. After you've configured the main domain, you can upload your brand policy document by switching over to the **Policies** tab and pressing the **+ Add Policy** link
+   >[!IMPORTANT]
+   >
+   >Just like new brands, new domains are created with a default Draft status. To change this, go to your Brand, click on **Domains**, then edit your domain using the pencil icon and set its status to **Active**. 
 
-   ![Adding a policy](/help/ai-in-aem/agents/governance/assets/add_policy.png)
+1. After you've configured the main domain, you can upload your brand policy document by goint to **Policies** in the upper left corner of the window, and pressing the **+ Add Policy** button.
 
-1. In the next window, select the brand you wish to apply the policy for from the drop-down list of existing brands, then select **Upload PDFs** and select your brand policy document(s) in PDF format
+   ![Adding a policy from the Brand card](/help/ai-in-aem/agents/governance/assets/add_policy_treeview.png)
+
+   >[!NOTE]
+   >
+   >Alternatively, you can also add policies by switching over to the **Policies** tab and pressing the **+ Add Policy** link.
+
+1. In the next window, press on **Upload PDFs** and select your brand policy document(s) in PDF format
 
    ![Upload your brand policy document](/help/ai-in-aem/agents/governance/assets/upload_brand_policy_document.png)
 
@@ -70,7 +82,7 @@ To import a brand into the Governance Agent:
 
    You can also use this view to create, edit and delete checks, which we will detail in the steps below.
 
-1. For a more granular view of each individual check, you can switch over to the **Checks** tab, and view a list of each individual check extracted from your guideline documents. You can filter checks based check type, brand or status:
+1. For a more granular view of each individual check, you can switch over to the **Checks** tab, and view a list of each individual check extracted from your guideline documents. You can filter checks based on brand or status:
 
    ![See individual brand checks](/help/ai-in-aem/agents/governance/assets/see_brand_checks.png)
 
