@@ -213,6 +213,20 @@ Please review and update any downstream processes that rely on custom logging be
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
 
+#### AEM Edge Functions (Beta Program) {#edge-functions}
+
+AEM Edge Functions allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
+
+Common use cases include:
+
+* Personalizing content based on geolocation, device type, or user attributes
+* Acting as middleware between the CDN and your origin
+* Reformatting responses from third-party APIs (and perhaps aggregating multiple API responses) before delivering them to the browser
+* Composing and serving server-rendered HTML at the edge using content stitched from various backends
+* Exposing an MCP server for LLMs like ChatGPT and Claude to access custom tools
+
+We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
+
 #### Cloud Manager MCP Server (Beta Program) {#cm-mcp-server}
 
 Modern IDEs use the Model Context Protocol (MCP) to enable large language models (LLMs) to invoke tools exposed by MCP servers. Instead of integrating directly with low-level API specifications, developers can simply describe their intent in natural language.
@@ -227,25 +241,20 @@ The Development Agent’s [pipeline troubleshooting](/help/ai-in-aem/agents/deve
 
 To request access to the beta, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com). Pre-existing access to Agents in AEM is required.
 
-#### CS Migration alpha {#cm-mcp-server}
+#### IDE AI tooling for AEM Java and Dispatcher Development (Beta Program) {#ai-dev-beta}
 
-TBD
+Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. Join the beta to:
 
+* Share real-world experiences to help shape future Adobe-supported AI capabilities
+* Try out IDE tooling that can be used by AI agents to generate and debug AEM code and dispatcher configuration
 
+Email [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) for more information.
 
-#### AEM Edge Functions (Beta Program) {#edge-functions}
+#### IDE AI tooling for AEM 6.5 to AEM Cloud Service Migration (Alpha Program) {#cm-ide-migration}
 
-AEM Edge Functions allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
+Accelerate your migration from AEM 6.5 to AEM as a Cloud Service (Java stack) by using IDE AI tooling to act on the recommendations of the [Best Practices Analyzer Report](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
-Common use cases include:
-
-* Personalizing content based on geolocation, device type, or user attributes
-* Acting as middleware between the CDN and your origin
-* Reformatting responses from third-party APIs (and perhaps aggregating multiple API responses) before delivering them to the browser
-* Composing and serving server-rendered HTML at the edge using content stitched from various backends
-* Exposing an MCP server for LLMs like ChatGPT and Claude to access custom tools
-
-We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
+Email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) for more information.
 
 #### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
 
@@ -266,15 +275,6 @@ Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-
 In beta, Rapid Development Environments (RDEs) now support a feature to take a snapshot of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
 
 Please email [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) if there is interest in using and providing feedback on this feature.
-
-#### AI tooling for IDEs for AEM Java and Dispatcher Development (Beta Program) {#ai-dev-beta}
-
-Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. Join the beta to:
-
-* Share real-world experiences to help shape future Adobe-supported AI capabilities
-* Try out IDE tooling that can be used by AI agents to generate and debug AEM code and dispatcher configuration
-
-Email [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) for more information.
 
 #### Expanded Application Performance Monitoring (APM) (Alpha program) {#apm-alpha}
 
