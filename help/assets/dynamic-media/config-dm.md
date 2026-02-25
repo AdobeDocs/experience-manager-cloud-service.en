@@ -87,7 +87,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
       If necessary, you can check the spelling of a password you have typed or retyped by selecting the password eye icon to reveal the password. Select the icon again to hide the password.
 
-1. In the **[!UICONTROL Repeat Password]** field, retype the new password, then select **[!UICONTROL Done]**.
+1. In the **[!UICONTROL `Repeat Password`]** field, retype the new password, then select **[!UICONTROL Done]**.
 
    The new password is saved when you select **[!UICONTROL Save]** in the upper-right corner of the **[!UICONTROL Create Dynamic Media Configuration]** page.
 
@@ -124,7 +124,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >This Inbox notification informs you if the configuration was either successful or not.
    > See [Troubleshoot a new Dynamic Media configuration](#troubleshoot-dm-config) and [Your Inbox](/help/sites-cloud/authoring/inbox.md) for more information. 
 
-1. To preview Dynamic Media content securely before it gets published, Experience Manager as a Cloud Service uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to preview content securely. To set up this action in Experience Manager as a Cloud Service, see the [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. To preview Dynamic Media content securely before it gets published, Experience Manager as a Cloud Service uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to preview content securely. To set up this action in Experience Manager as a Cloud Service, see the topic [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
 <!--
     * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
@@ -186,7 +186,7 @@ The changed password is saved when you select **[!UICONTROL Save]** in the upper
 
       The **[!UICONTROL Current Password]** field is intentionally pre-filled and hidden from interaction.
 
-   * In the **[!UICONTROL Repeat Password]** field, retype the new password, then select **[!UICONTROL Done]**.
+   * In the **[!UICONTROL `Repeat Password`]** field, retype the new password, then select **[!UICONTROL Done]**.
 
 1. In the upper-right corner of the **[!UICONTROL Edit Dynamic Media Configuration]** page, select **[!UICONTROL Save]**, then select **[!UICONTROL OK]**.
 
@@ -271,7 +271,7 @@ To configure the default color properties for enabling color correction when req
 
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started), then sign in to your account using credentials provided during provisioning.
 1. Go to **[!UICONTROL Setup > Application Setup]**.
-1. Expand the **[!UICONTROL Publish Setup]** area and select **[!UICONTROL Image Server]**. Set **[!UICONTROL Publish Context]** to **[!UICONTROL Image Serving]** when setting defaults for publish instances.
+1. Expand the **[!UICONTROL `Publish Setup`]** area and select **[!UICONTROL Image Server]**. Set **[!UICONTROL Publish Context]** to **[!UICONTROL Image Serving]** when setting defaults for publish instances.
 1. Scroll to the property that you must change, for example, a property in the **[!UICONTROL Color Management Attributes]** area.
    You can set the following color correction properties:
 
