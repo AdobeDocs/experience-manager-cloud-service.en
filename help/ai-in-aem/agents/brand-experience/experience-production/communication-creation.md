@@ -63,3 +63,7 @@ After creating your initial communication structure using AI Assistant, you can 
 * *Change the line spacing of the terms and conditions section to 1.5*
 
 For more information on capabilities of Interactive Communication editor, see [Interactive Communications documentation.](/help/forms/introduction-to-interactive-communication.md)
+
+## Activation {#activation}
+
+You can explore AEM Agents through the [Playground](https://www.aem.live/developer/aem-playground), or connect with your CSM or TAM to discuss access via the Agentic SKU.
