@@ -1,6 +1,7 @@
 ---
 title: Projects
 description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 solution: Experience Manager Sites
 feature: Authoring

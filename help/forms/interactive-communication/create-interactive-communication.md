@@ -13,10 +13,6 @@ exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 Interactive communication enables you to create, manage, and deliver personalized and interactive communications, including customer service, billing, onboarding documents, offer letters, account updates, and more. It is designed to support any scenario where dynamic, user-specific content enhances the communication experience across industries.
 
 Imagine you need to send a bank statement, insurance policy, or utility bill to thousands of customers. Each one has the same layout but personalized data. Interactive Communication (IC) makes that possible efficiently.
@@ -60,7 +56,7 @@ Templates ensure brand consistency and save time for commonly used communication
 
 1. Open AEM Forms as a Cloud Service instance.
 1. Go to **Forms > Forms & Documents**, click **Create > Interactive Communication**.
-1. In the creation form, **select** an enabled template from the dropdown.
+1. In the creation form, **select** an enabled template from the picker.
 1. Fill out other details like Title, Name, Author, etc.
 1. Click **Create** to design your communication with the selected template structure.
 1. It opens the IC Editor, where you can begin designing your communication.

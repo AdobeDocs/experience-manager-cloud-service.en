@@ -4,17 +4,13 @@ description: Barcode Component in Interactive Communication Editor in AEM Forms 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+exl-id: b44cc569-00a1-4a66-ae25-3d672cf5fc12
 ---
-
 # Barcode Component in Interactive Communication Editor 
 
 >[!NOTE]
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
-
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
 
 ## 1. Introduction 
 
@@ -150,4 +146,4 @@ Authors can embed the barcode in layout containers and style it according to the
 
 - Maintain adequate margins to prevent clipping when printed. 
 
-The Barcode component in the Interactive Communication editor empowers document creators to bridge the gap between digital and physical systems. When implemented effectively, it enhances automation, improves user convenience, and supports seamless integration with scanning devices and workflows. 
+The Barcode component in the Interactive Communication editor empowers document creators to bridge the gap between digital and physical systems. When implemented effectively, it enhances automation, improves user convenience, and supports seamless integration with scanning devices and workflows.

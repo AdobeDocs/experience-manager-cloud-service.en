@@ -1,6 +1,7 @@
 ---
 title: Applying Workflows to Pages
-description: When authoring, you can invoke workflows to act on your pages; it is also possible to apply more than one workflow..
+description: When authoring, you can invoke workflows to act on your pages; it is also possible to apply more than one workflow.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 solution: Experience Manager Sites
 feature: Authoring

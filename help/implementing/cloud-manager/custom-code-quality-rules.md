@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 ---
-# Custom code quality rules {#custom-code-quality-rules} 
+# Custom code quality rules {#custom-code-quality-rules}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
@@ -43,16 +43,16 @@ The methods `Thread.stop()` and `Thread.interrupt()` can produce hard-to-reprodu
 ```java
 public class DontDoThis implements Runnable {
   private Thread thread;
- 
+
   public void start() {
     thread = new Thread(this);
     thread.start();
   }
- 
+
   public void stop() {
     thread.stop();  // UNSAFE!
   }
- 
+
   public void run() {
     while (true) {
         somethingWhichTakesAWhileToDo();
@@ -67,16 +67,16 @@ public class DontDoThis implements Runnable {
 public class DoThis implements Runnable {
   private Thread thread;
   private boolean keepGoing = true;
- 
+
   public void start() {
     thread = new Thread(this);
     thread.start();
   }
- 
+
   public void stop() {
     keepGoing = false;
   }
- 
+
   public void run() {
     while (this.keepGoing) {
         somethingWhichTakesAWhileToDo();
@@ -111,7 +111,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Severity**: Critical
 * **Since**: Version 2018.6.0
 
-When making HTTP requests within an Experience Manager application, it is essential to configure appropriate timeouts to prevent unnecessary thread consumption. 
+When making HTTP requests within an Experience Manager application, it is essential to configure appropriate timeouts to prevent unnecessary thread consumption.
 By default, both the Java&trade; HTTP Client (java.net.HttpUrlConnection) and the widely used Apache HTTP Components client do not impose timeouts, so they must be manually configured. As a best practice, timeouts should be set to 60 seconds or less.
 
 #### Non-compliant code {#non-compliant-code-2}
@@ -119,7 +119,7 @@ By default, both the Java&trade; HTTP Client (java.net.HttpUrlConnection) and th
 ```java
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
- 
+
 public void dontDoThis() {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   HttpClient httpClient = builder.build();
@@ -130,15 +130,15 @@ public void dontDoThis() {
 public void dontDoThisEither() {
   URL url = new URL("http://www.google.com");
   URLConnection urlConnection = url.openConnection();
- 
+
   BufferedReader in = new BufferedReader(new InputStreamReader(
     urlConnection.getInputStream()));
- 
+
   String inputLine;
   while ((inputLine = in.readLine()) != null) {
     logger.info(inputLine);
   }
- 
+
   in.close();
 }
 ```
@@ -148,7 +148,7 @@ public void dontDoThisEither() {
 ```java
 @Reference
 private HttpClientBuilderFactory httpClientBuilderFactory;
- 
+
 public void doThis() {
   HttpClientBuilder builder = httpClientBuilderFactory.newBuilder();
   RequestConfig requestConfig = RequestConfig.custom()
@@ -156,9 +156,9 @@ public void doThis() {
     .setSocketTimeout(5000)
     .build();
   builder.setDefaultRequestConfig(requestConfig);
- 
+
   HttpClient httpClient = builder.build();
-   
+
   // do something with the client
 }
 
@@ -167,15 +167,15 @@ public void orDoThis () {
   URLConnection urlConnection = url.openConnection();
   urlConnection.setConnectTimeout(5000);
   urlConnection.setReadTimeout(5000);
- 
+
   BufferedReader in = new BufferedReader(new InputStreamReader(
     urlConnection.getInputStream()));
- 
+
   String inputLine;
   while ((inputLine = in.readLine()) != null) {
     logger.info(inputLine);
   }
- 
+
   in.close();
 }
 ```
@@ -502,9 +502,20 @@ public void doThis(Resource resource) {
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
-Do not use the `Sling` Scheduler for tasks that require a guaranteed execution. Sling Scheduled Jobs guarantee execution and better suited for both clustered and non-clustered environments. 
+Do not use the `Sling` Scheduler for tasks that require a guaranteed execution. Sling Scheduled Jobs guarantee execution and better suited for both clustered and non-clustered environments.
 
 See [`Apache Sling` Eventing and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) to learn more about how Sling Jobs are handled in clustered environments.
+
+### Do not use Experience Manager deprecated APIs {#sonarqube-aem-api-deprecated}
+
+* **Key**: java:S1874
+* **Type**: `Vulnerability` or `Bug`/Cloud Service Compatibility
+* **Severity**: Info, Minor, or Major
+* **Since**: Version 2026.1.0
+
+The Experience Manager API surface is under constant revision to identify APIs for which usage needs to be stopped. Such API is deprecated and marked with a removal date.
+
+The closer the removal date gets, the higher the severity of violating this rule is. Usage of such API must be replaced with a safe alternative.
 
 ### Do not use Experience Manager deprecated APIs {#sonarqube-aem-deprecated}
 
@@ -513,7 +524,7 @@ See [`Apache Sling` Eventing and Job Handling](https://sling.apache.org/document
 * **Severity**: Minor
 * **Since**: Version 2020.5.0
 
-The Experience Manager API surface is under constant revision to identify APIs for which usage is discouraged and thus considered deprecated. 
+The Experience Manager API surface is under constant revision to identify APIs for which usage is discouraged and thus considered deprecated.
 
 Often, these APIs are deprecated using the standard Java&trade; `@Deprecated` annotation and, as such, as identified by `squid:CallToDeprecatedMethod`.
 
@@ -538,9 +549,9 @@ Check the [`Apache Sling` documentation](https://sling.apache.org/documentation/
 * **Severity**: Minor
 * **Since**: Version 2023.11
 
-AEM applications often reach out to other applications using the HTTP protocol, and the Apache HttpClient is an often used library to achieve this end. But the creation of such an HttpClient object comes with some overhead, so these objects should be reused as much as possible. 
+AEM applications often reach out to other applications using the HTTP protocol, and the Apache HttpClient is an often used library to achieve this end. But the creation of such an HttpClient object comes with some overhead, so these objects should be reused as much as possible.
 
-This rule checks that such an HttpClient object is not private within a method, but global on a class level, so it can be reused. In this case, the HttpClient field should be set in the constructor of the class or the `activate()` method (if this class is an OSGi component/service). 
+This rule checks that such an HttpClient object is not private within a method, but global on a class level, so it can be reused. In this case, the HttpClient field should be set in the constructor of the class or the `activate()` method (if this class is an OSGi component/service).
 
 Check the [Optimization Guide](https://hc.apache.org/httpclient-legacy/performance.html) of the HttpClient for some best practices regarding the use of the HttpClient.
 
@@ -987,7 +998,7 @@ Experience Manager as a Cloud Service prohibits custom search index definitions 
 * **Severity**: Minor
 * **Since**: Version 2021.2.0
 
-Experience Manager as a Cloud Service prohibits custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) from containing a property named `reindex`. Indexing using this property must be updated before migration to Experience Manager as a 
+Experience Manager as a Cloud Service prohibits custom search index definitions (that is, nodes of type `oak:QueryIndexDefinition`) from containing a property named `reindex`. Indexing using this property must be updated before migration to Experience Manager as a
 Cloud Service. See the document [Content Search and Indexing](/help/operations/indexing.md#how-to-use) for more information.
 
 ### Custom DAM asset lucene nodes must not specify `queryPaths` {#oakpal-damAssetLucene-queryPaths}
@@ -1049,7 +1060,7 @@ For custom indexes, configure `includedPaths` and `queryPaths` with identical va
 * **Severity**: Minor
 * **Since**: Version 2023.1.0
 
-When setting the `nodeScopeIndex` property on a "generic" node type like `nt:unstructured` or `nt:base`, you must also specify the `includedPaths` and `queryPaths` properties. 
+When setting the `nodeScopeIndex` property on a "generic" node type like `nt:unstructured` or `nt:base`, you must also specify the `includedPaths` and `queryPaths` properties.
 The node type `nt:base` can be considered "generic," because all node types inherit from it. So, setting a `nodeScopeIndex` on `nt:base` makes it index all nodes in the repository. Similarly, `nt:unstructured` is also considered "generic" as there are many nodes in repositories that are of this type.
 
 #### Non-compliant code {#non-compliant-code-full-text-on-generic-node-type}
@@ -1077,7 +1088,7 @@ The node type `nt:base` can be considered "generic," because all node types inhe
   - evaluatePathRestrictions: true
   - tags: [visualSimilaritySearch]
   - type: lucene
-  - includedPaths: ["/content/dam/"] 
+  - includedPaths: ["/content/dam/"]
   - queryPaths: ["/content/dam/"]
     + indexRules
       - jcr:primaryType: nt:unstructured
@@ -1095,7 +1106,7 @@ The node type `nt:base` can be considered "generic," because all node types inhe
 * **Severity**: Minor
 * **Since**: Version 2023.1.0
 
-Overriding the default value can lead to slow page reads, particularly when more content is added. 
+Overriding the default value can lead to slow page reads, particularly when more content is added.
 
 ### Multiple active versions of the same index {#oakpal-multiple-active-versions}
 
@@ -1152,7 +1163,7 @@ The expected pattern for fully custom index names is: `[prefix].[indexName]-cust
 
 #### Compliant code {#compliant-code-same-property-different-analyzed-values}
 
-Example: 
+Example:
 
 ```text
 + indexRules
@@ -1168,7 +1179,7 @@ Example:
         - analyzed: true
 ```
 
-Example: 
+Example:
 
 ```text
 + indexRules
@@ -1183,7 +1194,7 @@ Example:
         - analyzed: true
 ```
 
-If the analyzed property is not explicitly set, its default value is false. 
+If the analyzed property is not explicitly set, its default value is false.
 
 ### Tags property {#tags-property}
 
