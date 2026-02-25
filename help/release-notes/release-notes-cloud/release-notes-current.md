@@ -138,13 +138,23 @@ Go‑live days, live events, peak sales—these moments can't break. [Our new se
 * Quiet Hours: Block automatic maintenance during set times each day. Ideal for working hours, nightly runs or morning cutovers.
 * Update‑Free Period: Block automatic maintenance for a full week. Use it for launches, promos, or yearly freezes.
 
+#### Code Quality Pipeline Troubleshooting with the Development Agent {#devagent-codequality}
+
+The Development Agent’s pipeline troubleshooting capabilities help developers more efficiently diagnose and resolve issues in AEM as a Cloud Service deployments.
+
+Previously focused on the **Build & Unit Testing** step, pipeline troubleshooting now also supports the **Code Scanning** step in Full Stack Deployment and Code Quality pipelines.
+
+The Code Scanning step evaluates code against quality rules, detects security vulnerabilities, and generates detailed quality reports. If this step fails, you can use the AI Assistant to prompt the Development Agent for a root cause analysis along with recommended remediation guidance.
+
+Learn more about the [Development Agent](/help/ai-in-aem/agents/development/overview.md) and pipeline troubleshooting.
+
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
 #### Java API Deprecations {#java-api-deprecation}
 
 The deprecated APIs targeting 2/26/2026 removal should no longer be used in code. To prevent deployment blocks, remove API usage before March 30, 2026. Important dates:
 
-* **Starting January 26, 2026**: Actions Center notification emails are sent **weekly per environment** as a reminder to remove usage of these APIs.
+* **Starting January 26, 2026**: Actions Center notification emails are being sent as a reminder to remove usage of these APIs.
 * **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed.
 * **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
 * **May 4, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
@@ -205,13 +215,19 @@ Please review and update any downstream processes that rely on custom logging be
 
 #### Cloud Manager MCP Server (Beta Program) {#cm-mcp-server}
 
-TBD
+Modern IDEs use the Model Context Protocol (MCP) to enable large language models (LLMs) to invoke tools exposed by MCP servers. Instead of integrating directly with low-level API specifications, developers can simply describe their intent in natural language.
+
+Now available in beta, the Cloud Manager MCP Server allows you to interact with Cloud Manager APIs directly from your IDE using prompts. Supported scenarios include executing pipelines, checking environment status, and more.
+
+Learn more about [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md). To request access to the Cloud Manager MCP Server beta, email [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com) and include a description of your use case.
+
+#### Development Agent Support for Web Tier Config Pipeline Troubleshooting (Beta Program) {#devagent-webtier}
+
 
 #### CS Migration alpha {#cm-mcp-server}
 
 TBD
 
-#### Pipeline troubleshooting support for web tier pipeline beta {#cm-mcp-server}
 
 
 #### AEM Edge Functions (Beta Program) {#edge-functions}
