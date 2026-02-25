@@ -48,15 +48,9 @@ After creating your initial form structure using the AI Assistant, you can use t
 
 For more information, see [Forms Experience Builder documentation.](/help/forms/experience-builder/product-overview.md)
 
-
 ## Activation {#activation}
 
-To enable the form creation job for your organization, activation must be initiated through Adobe. Begin the process by reaching out via:
-
-* Email: `experience-production-agent@adobe.com`
-* Or, contact your designated Adobe account team.
-
-When reaching out, be sure to provide your AEM as a Cloud Service Organization ID.
+You can explore AEM Agents through the [Playground](https://www.aem.live/developer/aem-playground), or connect with your CSM or TAM to discuss access via the Agentic SKU.
 
 <!-- 
 #### Import and convert {#import-and-convert}

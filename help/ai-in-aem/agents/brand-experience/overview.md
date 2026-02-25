@@ -54,7 +54,5 @@ The agent is able to work with other agent skills, examples include:
 
 ## Activation {#activation}
 
-To activate and gain access to the Brand Experience Agent you need to contact Adobe by either:
+You can explore AEM Agents through the [Playground](https://www.aem.live/developer/aem-playground), or connect with your CSM or TAM to discuss access via the Agentic SKU.
 
-* Emailing `experience-production-agent@adobe.com`
-* Or reaching out to your account team
