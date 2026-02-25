@@ -1,6 +1,7 @@
 ---
 title: Page Properties
 description: Learn about the different properties a page can have and how they control the behavior of the page and how it is managed.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring

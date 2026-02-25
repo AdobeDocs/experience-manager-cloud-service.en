@@ -4,6 +4,7 @@ description: Understand how Edge Delivery Services expands the authoring and pub
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 7747d6f7-18e4-4713-baea-bcfa94f54934
 ---
 # AEM Sites and Edge Delivery Services {#sites-and-edge}
