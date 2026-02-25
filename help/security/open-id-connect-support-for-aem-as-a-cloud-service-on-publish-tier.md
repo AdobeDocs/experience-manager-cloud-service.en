@@ -202,12 +202,14 @@ Two primary approaches are available.
 ### Option 1 — Local Groups
 
 The external group can be added as a member of a local group that already has the required ACLs.
+
 * The external group must exist in the repository, which occurs automatically when a user belonging to that group logs in for the first time.
 * This option is generally preferred when Closed User Groups (CUGs) are in use, as the local group exists on both author and publish environments.
 
 ### Option 2 — Direct ACLs on External Groups via RepoInit 
 
 ACLs can be applied directly to external groups using RepoInit scripts.
+
 * This approach is more efficient and is preferred when CUGs are not used.
 * The following example shows a RepoInit configuration that assigns read permissions to an external group. The option `ignoreMissingPrincipal` allows the creation of the ACL even if the group does not yet exist in the repository:
     
@@ -364,25 +366,28 @@ In this example, after successful authentication, the user will be redirected to
 
 For security reasons, the `redirect` parameter has the following restrictions:
 
-- **Must be a relative path**: The redirect URL must start with `/` (e.g., `/content/mysite/dashboard`)
-- **No cross-site redirects**: Absolute URLs (e.g., `https://external-site.com`) are not allowed
-- **No protocol-relative URLs**: URLs starting with `//` are rejected to prevent protocol-relative redirects
+* **Must be a relative path**: The redirect URL must start with `/` (e.g., `/content/mysite/dashboard`)
+* **No cross-site redirects**: Absolute URLs (e.g., `https://external-site.com`) are not allowed
+* **No protocol-relative URLs**: URLs starting with `//` are rejected to prevent protocol-relative redirects
 
 If an invalid redirect URL is provided, the authentication will fail with an error.
 
 ### Example Use Cases
 
 1. **Welcome page after login**: Redirect users to a personalized welcome page after their first login
+
    ```
    /content/mysite/secure-area?redirect=/content/mysite/welcome
    ```
 
 2. **Dashboard redirect**: Direct users to a specific dashboard after authentication
+
    ```
    /content/mysite/login?redirect=/content/mysite/user/dashboard
    ```
 
 3. **Deep linking**: Allow users to authenticate and then access a specific resource
+
    ```
    /content/mysite/protected?redirect=/content/mysite/protected/specific-document
    ```
