@@ -54,7 +54,7 @@ Image presets define how Dynamic Media delivers images, including sizing, format
 
 ### Rendition generation in AEM as a Cloud Service{#rendition-generation-in-aemaacs}
 
-In AEM as a Cloud Service, renditions are generated using **Asset Microservices**. The DAM Update Asset workflow is not available for customization in Cloud Service.
+In AEM as a Cloud Service, renditions are generated using [Asset Microservices](ttps://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#). The DAM Update Asset workflow is not available for customization in Cloud Service.
 
 Important considerations include the following:
 
