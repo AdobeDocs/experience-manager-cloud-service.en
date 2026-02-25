@@ -13,6 +13,8 @@ exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
 
 [Content Hub users with rights to add assets](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) can add assets to the Content Hub either from local file system or import assets from OneDrive or Dropbox data sources. All assets display at the top-level in Content Hub irrespective of the folder structure available on your local file system or OneDrive and Dropbox data sources to enhance the search capabilities.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
+
 The assets marked as `Approved` in Assets as a Cloud Service are automatically available in Content Hub. For more information, see [Approve assets for Content Hub](/help/assets/approve-assets-content-hub.md).
 
 To further enhance asset search, Content Hub allows you to:
@@ -21,7 +23,7 @@ To further enhance asset search, Content Hub allows you to:
 
 * Automatically generate more properties for each asset upon successful upload, such as, file size, format, resolution, and some other properties.
 
-* Use the artificial intelligence provided by [Adobe Sensei](https://www.adobe.com/sensei.html) to automatically apply relevant tags to all your uploaded assets. These tags, aptly named Smart Tags, increase the content velocity of your projects by helping you find relevant assets quickly.
+* Use the artificial intelligence provided by [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) to automatically apply relevant tags to all your uploaded assets. These tags, aptly named Smart Tags, increase the content velocity of your projects by helping you find relevant assets quickly.
 
 Ensure that you only upload your [brand approved assets to the Content Hub](/help/assets/approve-assets.md).
 

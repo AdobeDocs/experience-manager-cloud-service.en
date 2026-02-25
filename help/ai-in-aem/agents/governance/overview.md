@@ -3,6 +3,7 @@ title: Governance Agent Overview
 description: Learn how the AEM Governance Agent safeguards brand integrity and compliance across AEM
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
+exl-id: 2c73c578-6655-43bf-b03a-cb3eb2284d07
 ---
 
 # Governance Agent Overview {#governance-agent}
@@ -66,4 +67,3 @@ Using the agent, you can manage your Assets digital rights across your content e
 * *Which assets recently expired?*
 * *Find me assets without an expiry date*
 * *Show me all assets in /content/dam/products that are about to expire in the next 14 days*
-

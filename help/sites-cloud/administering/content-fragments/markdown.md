@@ -3,12 +3,13 @@ title: Markdown
 description: Understand how the Content Fragment editor uses markdown syntax to allow you to easily create content, for both page authoring and headless delivery.
 feature: Content Fragments
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
 ---
 # Markdown {#markdown}
 
-When you are [authoring](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) your Content Fragments you may have [Multi line text fields](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) defined with the **Default Type** of **Markdown**. The Content Fragment editor uses *markdown* syntax to allow you to easily write content for both page authoring and headless delivery:
+When you are [authoring](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) Content Fragments you may have [Multi line text fields](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) defined with the **Default Type** of **Markdown**. The Content Fragment editor uses *markdown* syntax to allow you to easily write content for both page authoring and headless delivery:
 
 ![Markdown Multi line text field in the editor](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
@@ -26,7 +27,7 @@ You can define:
 
 ## Heading Notation {#heading-notation}
 
-To create a header by placing a hash tag (#) in front of the heading. One hash tag (#) is used for an H1, two hash tags (##) for a H2 and so on. You can use up to 6 hash tags. For example:
+To create a header, place a hash symbol (#) in front of the heading. One hash symbol (#) indicates an H1, two hash symbols (##) for a H2 and so on. You can use up to six hash symbols. For example:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`## This is an H2`
 
@@ -60,7 +61,7 @@ These are examples of inline links:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`This is [an example](https://example.com/ "Title") inline link.`
 
-&nbsp;&nbsp;&nbsp;&nbsp;`This is [an example of an email link](emailto:myaddress@mydomain.info)`
+&nbsp;&nbsp;&nbsp;&nbsp;`This is [an example (non-standard) of an email link](emailto:myaddress@mydomain.info)`
 
 &nbsp;&nbsp;&nbsp;&nbsp;`[This link](https://example.net/) has no title attribute.`
 
@@ -104,17 +105,13 @@ You can quote text by adding the &gt; symbol before the text. For example:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`>This is block quotes`  
 
-&nbsp;&nbsp;&nbsp;&nbsp;`>asdhfjlkasdhlf`  
-
-&nbsp;&nbsp;&nbsp;&nbsp;`>asdfahsdlfasdfj`
-
 You can have nested block quotes. For example:
 
-&nbsp;&nbsp;&nbsp;&nbsp;`> This is the first level of quoting.` 
+&nbsp;&nbsp;&nbsp;&nbsp;`> This is the first level of quoting.`
 
 &nbsp;&nbsp;&nbsp;&nbsp;`>`  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`>> This is nested blockquote.`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`>> This is a nested blockquote.`  
 
 &nbsp;&nbsp;&nbsp;&nbsp;`>`  
 
@@ -124,7 +121,7 @@ You can have nested block quotes. For example:
 
 You can create both ordered and unordered lists.
 
-To create an unordered list, use the &ast; symbol before the items in the list. For example:
+To create an unordered list, use the &ast; (asterisk) symbol before the items in the list. For example:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`* item in list`
 
@@ -144,7 +141,7 @@ To create an ordered list, add the numbers, followed by a period, before each it
 
 You can add italic or bold styling to your text.
 
-To can add italics as follows:
+You can add italics as follows:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`*single asterisks*`
 
@@ -176,7 +173,7 @@ Code blocks are typically used to illustrate source code. You can create code bl
 
 ## Backslash escapes {#backslash-escapes}
 
-You can use backslash escapes to generate literal characters which have special meaning in formatting syntax. For example, if you wanted to surround a word with literal asterisks (instead of an HTML &lt;em&gt; tag), you can use backslashes before the asterisks, like this:
+You can use backslash escapes to generate literal characters that also have special meaning in formatting syntax. For example, if you want to surround a word with literal asterisks (instead of an HTML &lt;em&gt; tag), you can use backslashes before the asterisks, like this:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`\\*literal asterisks\\*`
 

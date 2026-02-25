@@ -15,6 +15,13 @@ The Universal Editor provides a rich text editor (RTE) both in place and in the 
 
 This RTE is configurable using [component filters.](/help/implementing/universal-editor/filtering.md) This document describes what configuration options are available along with examples.
 
+>[!NOTE]
+>
+>When you start a Universal Editor project, all rich text features that your backend supports (AEM with Edge Delivery or headless implementation) are automatically active.
+>
+>* You can deactivate those options you do not need.
+>* Activating options that are not compatible with your project type is not supported.
+
 ## Configuration Structure {#structure}
 
 RTE configuration consists of two parts:
@@ -74,9 +81,29 @@ The toolbar configuration controls which editing options are available in the UI
 }
 ```
 
-## Actions Configuration {#actions}
+## Action Configuration {#action}
 
 The actions configuration allows you to customize the behavior and appearance of individual editing actions. These are the available sections.
+
+### Common Action Options {#common-action-options}
+
+Most actions support the following common options:
+
+* `shortcut?`: string - Overrides the default keyboard shortcut for the action (if any)
+* `label?`: string - Overrides the label used for the action in UI
+* `hideInline?`: boolean - When `true`, hides this action from the in-context (inline) RTE editor toolbar
+
+```json
+{
+  "actions": {
+    "bold": {
+      "label": "Bold",
+      "shortcut": "Mod-B",
+      "hideInline": true
+    }
+  }
+}
+```
 
 ### Format Actions {#format}
 
@@ -121,6 +148,56 @@ List actions support content wrapping to control HTML structure. The following s
   }
 }
 ```
+
+### Table Actions {#table-actions}
+
+Table actions support content wrapping to control HTML structure in table cells:
+
+```json
+{
+  "actions": {
+    "table": {
+      "wrapInParagraphs": false, // <td>content</td> (default)
+      "shortcut": "Mod-Alt-T",   // Custom shortcut
+      "label": "Insert Table"    // Custom label
+    }
+  }
+}
+```
+
+#### Table Configuration Options {#table-configuration-options}
+
+* `wrapInParagraphs`: `false` (default) - Table cells contain unwrapped text content
+* `wrapInParagraphs`: `true` - Table cells wrap content in paragraph tags
+
+Samples:
+
+When `wrapInParagraphs`: `false`:
+
+```html
+<!-- Single line -->
+<td>Cell content</td>
+
+<!-- Multiple paragraphs get <br> separation -->
+<td>Line 1<br />Line 2</td>
+```
+
+When `wrapInParagraphs`: `true`:
+
+```html
+<!-- Single paragraph -->
+<td><p>Cell content</p></td>
+
+<!-- Multiple paragraphs preserved -->
+<td>
+  <p>Line 1</p>
+  <p>Line 2</p>
+</td>
+```
+
+>[!NOTE]
+>
+>When unwrapping paragraphs (`wrapInParagraphs`: `false`), the sanitizer automatically inserts `<br>` tags between multiple paragraphs to preserve visual line breaks. This follows HTML standards and common practice across major rich text editors.
 
 ### Link Actions {#link}
 
@@ -207,6 +284,28 @@ Indentation has a feature-level configuration that controls the scope of indenta
 >[!NOTE]
 >
 >List nesting via Tab/Shift+Tab keys works independently of general indentation settings.
+
+### Paste as Text {#paste-as-text}
+
+The `paste_text` editor action enables a standard paste-as-plain-text workflow.
+
+* **Default shortcut:** Mod-Shift-v (Cmd+Shift+V on macOS, Ctrl+Shift+V on Windows/Linux)
+* **Behavior:** Pastes from text/plain (source formatting is ignored)
+  * In lists, newlines create new list items.
+
+```json
+{
+  "toolbar": {
+    "editor": ["removeformat", "paste_text"]
+  },
+  "actions": {
+    "paste_text": {
+      "shortcut": "Mod-Shift-v",
+      "label": "Paste as Text"
+    }
+  }
+}
+```
 
 ### Other Actions {#other}
 
@@ -452,3 +551,20 @@ Shortcuts use the format `Mod-Key`(s) where:
 
 * `Mod` = `Cmd` on Mac, `Ctrl` on Windows/Linux
 * Examples: `Mod-B`, `Mod-Shift-8`, `Mod-Alt-1`
+
+## Unsupported HTML {#unsupported-html}
+
+By default, unknown HTML tags are stripped when parsed by the editor. To preserve them, opt in via the `unsupportedHtml` configuration option:
+
+```javascript
+const rteConfig = {
+  unsupportedHtml: true, // preserve unknown HTML tags (default: false)
+};
+```
+
+|Value|Behavior|
+|---|---|
+|`false` (default)|Unknown HTML tags are dropped during parsing.|
+|`true`|Unknown HTML tags are wrapped in a custom unsupported-block node so content can round-trip safely.|
+
+When enabled, the editor renders unsupported nodes with a `rte-unsupported-block` class. Consumer apps should provide the styling for this class (e.g., border, padding, background). The tag label inside the block uses `rte-unsupported-label`, which can also be customized.

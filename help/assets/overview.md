@@ -18,7 +18,7 @@ Some of the key features of Adobe's Digital Asset Management include:
 
 >[!BEGINTABS]
 
->[!TAB Asset Ingestion]
+>[!TAB Ingestion]
 
 ## Asset ingestion {#asset-ingestion}
 
@@ -80,9 +80,9 @@ Use these links to access detailed documentation on these asset ingestion tools:
 
 >[!TAB AI-Powered features]
 
-**Smart Tags**: Smart Tags use the artificially intelligent framework of Adobe Sensei to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. AEM automatically applies smart tags to uploaded assets, by default.
+**Smart Tags**: Smart Tags use the artificially intelligent framework of Adobe AI to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. AEM automatically applies smart tags to uploaded assets, by default.
 
-**Intelligent Color-based Tagging & Search**: AEM Assets uses Adobe Sensei AI capabilities to distinguish between colors in an image and apply those traits as tags automatically on ingestion. These tags enable an enhanced Search experience, based on image color composition.
+**Intelligent Color-based Tagging & Search**: AEM Assets uses Adobe AI capabilities to distinguish between colors in an image and apply those traits as tags automatically on ingestion. These tags enable an enhanced Search experience, based on image color composition.
 
 **AI-generated metadata**: AEM Assets uses AI to generate metadata automatically, including Title, Description, and Keywords. These AI-generated fields enhance metadata accuracy, making the assets easier to search, categorize, and recommend. This approach not only improves efficiency by eliminating manual tagging but also ensures consistency and scalability across large volumes of digital content.
 
@@ -102,7 +102,6 @@ Use these links to access detailed documentation on these asset ingestion tools:
       <em>Learn how to apply smart tags automatically to uploaded assets.</em>
    </p>
 </td>
-
 
 <td>
    <a href="/help/assets/color-tag-images.md">
@@ -187,7 +186,7 @@ Use these links to access detailed documentation on these asset ingestion tools:
 
 **Smart Imaging**: Smart Imaging provides even better image asset delivery performance by automatically optimizing an image's format and file size based on a customer's browser capability. It works with your existing image presets and uses intelligence at delivery. This intelligence further reduces image file size based on browser and network connection speed.
 
-**Smart Crop**: An Adobe Sensei AI capability, to detect the focal point automatically in any image or video, and crop to maintain it. It captures the intended point of interest regardless of screen size and hence eliminates tedious manual tasks and delivers high-quality, fast-loading imagery and video that looks good on any device or screen.
+**Smart Crop**: An Adobe AI capability, to detect the focal point automatically in any image or video, and crop to maintain it. It captures the intended point of interest regardless of screen size and hence eliminates tedious manual tasks and delivers high-quality, fast-loading imagery and video that looks good on any device or screen.
 
 **AI-generated video captions**: AI-generated video captions in Adobe Dynamic Media use artificial intelligence to generate captions automatically for video content. This feature is designed to improve accessibility and enhance the user experience by providing accurate captions. Captions are generated from the original audio, any additional audio tracks, or extra captions are provided in the `Captions and Audio` tab on the video properties page. With support for more than 60 languages, captions can be reviewed and previewed before publishing the video.
 <table>
@@ -234,7 +233,7 @@ Use these links to access detailed documentation on these asset ingestion tools:
 </td>
 </table>
 
->[!TAB Asset Discovery]
+>[!TAB Discovery]
 
 ## Asset discovery {#asset-discovery}
 
@@ -291,7 +290,7 @@ AEM Assets provides features that help you quickly find the right asset. These f
 </td>
 </table>
 
-**Smart Tags**: Smart Tags use the artificially intelligent framework of Adobe Sensei to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. AEM automatically applies smart tags to uploaded assets, by default.
+**Smart Tags**: Smart Tags use the artificially intelligent framework of Adobe AI to train its image recognition algorithm on your tag structure and business taxonomy. This content intelligence is then used to apply relevant tags on a different set of assets. AEM automatically applies smart tags to uploaded assets, by default.
 
 **Search assets**: Once you have the right metadata in place, AEM Assets allows you to search using various operators, wildcards, advanced queries, and custom filters.
 
@@ -341,7 +340,7 @@ AEM Assets provides features that help you quickly find the right asset. These f
 </td>
 </table>
 
->[!TAB Asset Governance]
+>[!TAB Governance]
 
 ## Asset management and governance {#asset-management-governance}
 
@@ -369,7 +368,6 @@ You can also maintain asset versions, set asset status, and set asset expiration
       <em>Learn how to perform some basic as well as advanced asset management tasks.</em>
    </p>
 </td>
-
 
 <td>
    <a href="/help/assets/my-workspace-assets-view.md">
@@ -622,7 +620,124 @@ If you already have an [!DNL Edge Delivery Services] website, see [[!DNL AEM Ass
 
 +++
 
->[!TAB Asset Activation]
+>[!TAB AI Agents]
+
+## AI Agents {#ai-agents}
+
+AEM as a Cloud Service provides intelligent **Agents** to enhance content management, optimization, and governance. These agents allow users to discover content quickly, optimize campaigns, and ensure compliance across digital assets.
+
+**Discovery Agent**
+
+The Discovery Agent delivers AEM content on demand through natural, conversational prompts for a streamlined, click-free discovery experience. It intelligently searches across **Assets, Content Fragments, and Adaptive Forms** to deliver relevant content such as images, videos, PDFs, articles, and form templates. Using natural language, you can search without building complex queries or applying filters in the AEM Assets interface. Based on your prompt, the agent returns curated results along with asset metadata and delivery URLs, ready to be embedded in other applications.
+
+Some of the key benefits of Discovery Agent include:
+
+* **Unified Content Discovery:** Access all types of AEM content, such as images, videos, PDF documents, articles, and forms from a single conversational interface.
+* **Faster Campaign Planning:** Quickly gather visuals and forms for marketing campaigns across Emails, Web, and Social channels.
+* **Enhanced Productivity:** Reduce time spent browsing repositories or filtering metadata through automated, intent-based search.
+* **Consistent Content Utilization:** Ensures reuse of approved assets and fragments, maintaining brand consistency across channels.
+
+**Skills:** Natural language content discovery, Tag-based asset discovery, Folder-based content discovery, Format & orientation-based asset discovery  
+**Personas:** Campaign Managers, Channel Marketers, DAM Librarians, Agencies & Partners  
+**Access:** Via AI Assistant in AEM  
+
+**Common Use Cases / Sample Prompts:**  
+
+* Show images tagged “office” in folder WKND.  
+* List all published content fragments for WKND beverages.  
+* Find forms to apply for a job.  
+* Show assets with person in landscape orientation.  
+
+**Content Optimization Agent**
+
+The **Content Optimization Agent** helps refine and adapt assets using natural language prompts. It can generate new renditions, adjust visuals, change backgrounds, and create channel-ready variations automatically. Works with the Discovery Agent and **Dynamic Media with OpenAPI** for seamless optimization.
+
+**Key Benefits:**
+
+* **Effortless asset transformation:** Resize, sharpen, recolor, or mirror images.  
+* **Channel-optimized outputs:** Generate renditions for Instagram, web banners, and other marketing channels.  
+* **Creative enhancements at scale:** Apply background changes or overlays for high-volume workflows.  
+
+**Access:** Via AI Assistant in AEM.
+
+**Sample Prompts:**
+
+* Create a 2000px JPEG rendition.
+* Sharpen the image.
+* Change background color to #ff8932.  
+* Create a rendition for an Instagram story.
+
+**Limitations:** Some optimizations are not supported for PNG assets.
+
+**Governance Agent**
+
+The Governance Agent helps ensure compliance, brand consistency, and policy enforcement across AEM content. It identifies content that does not meet metadata, accessibility, or corporate guidelines.
+
+Some of the key benefits of Governance Agent include:
+
+* **Compliance Monitoring:** Detects policy violations in content.  
+* **Metadata Enforcement:** Ensures assets have required metadata for governance.  
+* **Brand Consistency:** Flags content that does not meet corporate standards.  
+
+**Skills:** Policy compliance checks, Metadata validation, Accessibility auditing, Automated alerts for violations  
+**Personas:** DAM Admins, Compliance Officers, Brand Managers  
+**Access:** Via AEM AI Assistant  
+
+**Common Use Cases / Sample Prompts:**  
+
+* Validate metadata for all assets in WKND folder.  
+* Identify assets missing brand guidelines.  
+* Audit published content for accessibility compliance.  
+
+<table>
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+   <img alt="Discovery Agent Overview" src="./assets/discovery-agent.jpg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/discovery/overview">
+      <strong>Discovery Agent Overview</strong>
+      </a>
+   </div>
+   <p>
+      <em>Overview of Discovery Agent and its conversational content discovery capabilities.</em>
+   </p>
+</td>
+
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+   <img alt="Content Optimization Overview" src="./assets/content-optimization-agent.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/content-optimization/overview">
+      <strong>Content Optimization Agent Overview</strong>
+      </a>
+   </div>
+   <p>
+      <em>Overview of Content Optimization Agent and supported optimization workflows.</em>
+   </p>
+</td>
+
+<td>
+   <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+   <img alt="Governance Agent Overview" src="./assets/governance-agent-overview.jpeg" />
+   </a>
+   <div>
+      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview">
+      <strong>Governance Agent Overview</strong>
+      </a>
+   </div>
+   <p>
+      <em>Overview of Governance Agent for compliance and policy enforcement.</em>
+   </p>
+</td>
+</table>
+
+### **How to Access Agents in AEM**
+
+Agents are accessible via the **AI Assistant** in AEM Cloud Service. Log in to [experience.adobe.com](https://experience.adobe.com/) and interact with AI Assistant using natural language prompts.
+
+>[!TAB Activation]
 
 ## Asset activation {#asset-activation}
 
@@ -698,7 +813,7 @@ Dynamic Media offers the following key features:
 
 * **Adaptive video sets**: An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats. You start with your original, primary video, which you upload into the system. Dynamic Media automatically sizes, or transcodes, that video into multiple videos. Then, at the time of delivery, it intelligently determines which video screen, what quality, and what format to use, and delivers it to either the phone, tablet, or desktop computer.
 
-* **Smart Crop**: An Adobe Sensei AI capability, to automatically detect the focal point in any image or video, and crop to maintain it. It captures the intended point of interest regardless of screen size and hence eliminates tedious manual tasks and delivers high-quality, fast-loading imagery and video that looks good on any device or screen.
+* **Smart Crop**: An Adobe AI capability, to automatically detect the focal point in any image or video, and crop to maintain it. It captures the intended point of interest regardless of screen size and hence eliminates tedious manual tasks and delivers high-quality, fast-loading imagery and video that looks good on any device or screen.
 
 * **Dynamic Media templates**: Create real time customizable templates for your banners and flyers using Dynamic Media templates, a WYSIWYG template editor. Publish your Dynamic Media template and use it in downstream applications. A Dynamic Media template includes image and text layers. Add parameters to the image and text layers of the template and use Dynamic Media URLs to reposition and resize the layer and update its content in real-time.
 

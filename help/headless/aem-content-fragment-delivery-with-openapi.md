@@ -1,6 +1,6 @@
 ---
 title: AEM Content Fragment Delivery with OpenAPI
-description: Learn about tAEM Content Fragment Delivery with OpenAPI
+description: Learn about AEM Content Fragment Delivery with OpenAPI
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777

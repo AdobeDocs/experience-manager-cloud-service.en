@@ -1,20 +1,16 @@
 ---
-title: Date Field Object in Interactive Communication Editor 
+title: Date Field Object in Interactive Communication Editor
 description: Date Field Object in Interactive Communication Editor in AEM Forms enables authors to insert a calendar-based date selection field into a document.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+exl-id: f8cc1dd1-3b55-4cd9-b051-959c88195eb4
 ---
-
 # Date Field Object in Interactive Communication Editor 
 
 >[!NOTE]
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
-
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
 
 ## 1. Introduction 
 
@@ -132,6 +128,4 @@ Authors can place the Date Field inside layout containers or subforms and config
 
 - Hide non-relevant date fields dynamically using visibility rules. 
 
-The **Date Field** object in the Interactive Communication editor is a powerful tool for capturing time-sensitive data with accuracy and ease. When styled thoughtfully and connected to meaningful data paths, it supports a seamless user experience and efficient processing of time-based entries. 
-
- 
+The **Date Field** object in the Interactive Communication editor is a powerful tool for capturing time-sensitive data with accuracy and ease. When styled thoughtfully and connected to meaningful data paths, it supports a seamless user experience and efficient processing of time-based entries.
