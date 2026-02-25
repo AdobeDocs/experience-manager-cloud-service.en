@@ -5,6 +5,7 @@ feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 2c73c578-6655-43bf-b03a-cb3eb2284d07
 ---
+
 # Governance Agent Overview {#governance-agent}
 
 The **Governance Agent** is a solution designed to safeguard brand integrity and compliance across Adobe Experience Manager. It enforces security, regulatory, and brand policies to ensure every interaction and activation adheres to established standards. The Governance Agent is fully integrated in AI assistant and is designed to operate seamlessly within enterprise environments by leveraging **A2A (Agent-to-Agent)** and **MCP (Model Control Protocol)** tools. These integrations enable the agent to connect with advanced AI orchestrators such as ChatGPT, Claude, and other external AI systems, ensuring flexible and scalable intelligence across platforms.

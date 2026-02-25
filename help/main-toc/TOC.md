@@ -1088,17 +1088,16 @@ user-guide-title: AEM as a Cloud Service
   + [Using MCP with AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
   + Agents in AEM {#agents}
     + [Overview](/help/ai-in-aem/agents/overview.md)
-    + Experience Production Agent {#production}
-      + [Overview](/help/ai-in-aem/agents/production/overview.md)
-      + [Communication Creation Skill](/help/ai-in-aem/agents/production/communications-creation.md)
-      + [Content Update Skill](/help/ai-in-aem/agents/production/content-update.md)
-      + [Form Creation Skill](/help/ai-in-aem/agents/production/form-creation.md)
-    + Content Optimization Agent {#content-optimization}
-      + [Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/overview.md)
-    + Discovery Agent {#discovery}
-      + [Discovery Agent](/help/ai-in-aem/agents/discovery/overview.md)
-    + Development Agent {#development}
-      + [Overview](/help/ai-in-aem/agents/development/overview.md)
+    + Brand Experience Agent {#brand-experience}
+      + [Overview](/help/ai-in-aem/agents/brand-experience/overview.md)
+      + [Content Update Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
+      + [Communication Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
+      + [Form Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
+      + [Development Job](/help/ai-in-aem/agents/brand-experience/development/development.md)
+    + Content Advisor Agent {#content-advisor}
+      + [Overview](/help/ai-in-aem/agents/content-advisor/overview.md)
+      + [Content Discovery Job](/help/ai-in-aem/agents/content-advisor/discovery.md)
+      + [Content Optimization Job](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
     + Governance Agent {#governance}
       + [Overview](/help/ai-in-aem/agents/governance/overview.md)
       + [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
