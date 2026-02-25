@@ -176,8 +176,6 @@ See the [deprecation article](/help/release-notes/deprecated-removed-features.md
 * `org.apache.log4j`
 * `com.google.common`
 * `com.drew`
-* `org.bson`
-* `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
 
 +++
