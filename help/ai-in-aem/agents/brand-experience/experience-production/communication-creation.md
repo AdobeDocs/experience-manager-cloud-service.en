@@ -8,6 +8,8 @@ exl-id: 49111cdb-e714-4590-8b81-382377083d6e
 
 # Communication Creation skill {#ic-creation-skill}
 
+<!-- UNCOMMENT ACTIVATION SECTION AT THE BOTTOM ONCE THIS IS NO LONGER ALPHA -->
+
 >[!NOTE]
 >
 > The communications creation job is currently in alpha. If you would like to participate, please send a request from your official email address to [aem-forms-ea@adobe.com.](mailto:aem-forms-ea@adobe.com)
@@ -63,3 +65,11 @@ After creating your initial communication structure using AI Assistant, you can 
 * *Change the line spacing of the terms and conditions section to 1.5*
 
 For more information on capabilities of Interactive Communication editor, see [Interactive Communications documentation.](/help/forms/introduction-to-interactive-communication.md)
+
+<!-- UNCOMMENT ONCE NO LONGER ALPHA -->
+
+<!--
+## Activation {#activation}
+
+You can explore AEM Agents through the [Playground](https://www.aem.live/developer/aem-playground), or connect with your CSM or TAM to discuss access via the Agentic SKU.
+-->
