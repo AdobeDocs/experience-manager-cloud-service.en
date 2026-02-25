@@ -192,7 +192,7 @@ Selecting **Current Page** saves the asset on your current page to your destinat
 
 4. Click the folder icon under **Destination Folder** to select a location and save the asset(s). 
 
-   ![Save assets in AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
+   ![Save assets in AEM](/help/assets/assets/page-selection-and-destination-folder.png)
 
 5. Optional: You can add campaign metadata for your upload using the **Project or campaign name** field. You can use an existing name or create a new one. You can define multiple Project or Campaign names for your upload. To register the name, simply type the name and hit enter.
 As a best practice, Adobe recommends specifying values in the rest of the fields as well as creating an enhanced search experience for your uploaded assets.
