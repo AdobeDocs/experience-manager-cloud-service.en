@@ -154,6 +154,12 @@ The APIs in the table below (click to expand to see it) have been announced as d
     <td>2/26/2026</td>
   </tr>
   <tr>
+    <td>org.slf4j.event</td>
+    <td>AEM as a Cloud Service does not support this internal slf4j API. <a href="#org.slf4j">See removal notes below.</a></td>
+    <td>4/11/2022</td>
+    <td>2/26/2026</td>
+  </tr>
+  <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
     <td>Apache Log4j 1 has reached its end of life in 2015 and is no longer supported. <a href="#org.apache.log4j">See removal notes below.</a></td>
     <td>1/27/2022</td>
@@ -164,12 +170,6 @@ The APIs in the table below (click to expand to see it) have been announced as d
     <td>5/15/2023</td>
     <td>2/26/2026</td>
   </tr>
-  <tr>
-    <td>org.slf4j.event</td>
-    <td>AEM as a Cloud Service does not support this internal slf4j API. <a href="#org.slf4j">See removal notes below.</a></td>
-    <td>4/11/2022</td>
-    <td>2/26/2026</td>
-  </tr>
     <tr>
     <td>com.drew.*</td>
     <td>Extracting metadata from images and videos should be done via Asset Compute in Cloud Service, or via Apache POI or Apache Tika.</td>
@@ -177,10 +177,10 @@ The APIs in the table below (click to expand to see it) have been announced as d
     <td>2/26/2026</td>
   </tr>
   <tr>
-    <td>org.apache.jackrabbit.oak.plugins.blob.*</td>
+    <td>org.apache.jackrabbit.oak.plugins.blob<br>org.apache.jackrabbit.oak.plugins.blob.datastore</td>
     <td>This API is internal use only.</td>
     <td>9/23/2024</td>
-    <td>2/26/2026</td>
+    <td>TBD</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.memory</td>
@@ -197,7 +197,7 @@ The APIs in the table below (click to expand to see it) have been announced as d
 <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>Usage of this API is not supported in AEM as a Cloud Service.</td>
     <td>10/31/2022</td>
-    <td>2/26/2026</td>
+    <td>TBD</td>
   </tr>
   <tr>
     <td>org.apache.sling.runmode</td>
@@ -241,9 +241,39 @@ The APIs in the table below (click to expand to see it) have been announced as d
     <td>TBD</td>
   </tr>
   <tr>
-    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
+    <td>com.adobe.granite.xss</td>
     <td>Use org.apache.sling.xss instead.</td>
     <td>12/12/2023</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td>com.github.jknack.handlebars<br>com.github.jknack.handlebars.cache<br>com.github.jknack.handlebars.context<br>com.github.jknack.handlebars.helper<br>com.github.jknack.handlebars.io</td>
+    <td>This API is deprecated.</td>
+    <td>07/10/2024</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.mailer.commons</td>
+    <td>This API is deprecated as it depends on commons-lang (which is deprecated since 2021).</td>
+    <td>11/30/2025</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.httpcache.api</td>
+    <td>This API is not supported anymore.</td>
+    <td>01/01/2026</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td>org.apache.jackrabbit.webdav.client.methods</td>
+    <td>Usage of this API is not supported in AEM as a Cloud Service.</td>
+    <td>2/13/2026</td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td>org.osgi.service.http</td>
+    <td>The OSGi Service HTTP API is deprecated, please use the OSGi Servlet Whiteboard instead.</td>
+    <td>5/1/2024</td>
     <td>TBD</td>
   </tr>
   </tbody>
