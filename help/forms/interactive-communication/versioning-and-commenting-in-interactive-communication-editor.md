@@ -15,10 +15,6 @@ exl-id: ca9917c0-d8bb-4381-afab-7ab888d992e8
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 Interactive Communications (IC) allow organizations to create dynamic, data-driven documents for personalized customer communication. To support better collaboration, governance, and controlled publishing workflows, the Interactive Communication Editor provides versioning, reviewing, and commenting capabilities.
 
 These features help authors manage multiple iterations of an IC, capture reviewer feedback, revert to earlier versions, and maintain a clear audit trail throughout the content lifecycle.
