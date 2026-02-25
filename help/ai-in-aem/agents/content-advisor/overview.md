@@ -3,8 +3,8 @@ title: Content Advisor Agent
 description: Learn how the Content Advisor Agent removes the friction from evolving content by absorbing the heavy operational work behind content discovery and optimization, helping teams deliver changes faster and with greater confidence for today's AI era.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
+exl-id: 907c9558-0b59-453c-b710-40b095b19cf5
 ---
-
 # Content Advisor Agent {#content-advisor}
 
 The Content Advisor Agent removes the friction from evolving content by absorbing the heavy operational work behind content discovery and optimization, helping teams deliver changes faster and with greater confidence for today's AI era.
