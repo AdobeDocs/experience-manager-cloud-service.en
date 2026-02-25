@@ -194,7 +194,7 @@ The changed password is saved when you select **[!UICONTROL Save]** in the upper
 
 To customize the configuration and setup of Dynamic Media further, or optimize its performance, you can complete one or more of the following _optional_ tasks:
 
-* [(Optional) Enable ACL permissions in Dynamic Media](#optional-enable-acl)
+<!-- * [(Optional) Enable ACL permissions in Dynamic Media](#optional-enable-acl) -->
 * [(Optional) Setup and configuration of Dynamic Media settings](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [(Optional) Tune the performance of Dynamic Media](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
@@ -388,12 +388,12 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
 
 ### (Optional) Tune the performance of Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-To keep Dynamic Media running smoothly, Adobe recommends the following synchronization performance/scalability fine-tuning tips:
+To keep Dynamic Media running smoothly, Adobe recommends the following synchronization performance/scalability fine-tuning tip:
 
 * [Update the predefined Job parameters for processing of different file formats](#update-job-para).
-* [Update the predefined Granite Workflow Queue (video assets) worker threads](#update-granite-workflow-queue-worker-threads-video)
+<!-- * [Update the predefined Granite Workflow Queue (video assets) worker threads](#update-granite-workflow-queue-worker-threads-video)
 * [Update the predefined Granite Transient Workflow Queue (images and non-video assets) worker threads](#update-granite-transient-workflow-queue-worker-threads-images).
-* [Update the maximum upload connections to the Dynamic Media Classic (Scene7) server](#update-max-s7-upload-connections).
+* [Update the maximum upload connections to the Dynamic Media Classic (Scene7) server](#update-max-s7-upload-connections).-->
 
 #### Update the predefined Job parameters for processing of different file formats {#update-job-para}
 
@@ -417,6 +417,7 @@ To update any of these parameters, see [Editing MIME types for supported formats
 
 See also [Adding MIME types for unsupported formats](#adding-mime-types-for-unsupported-formats).
 
+<!--
 #### Update the predefined Granite Workflow Queue (video assets) worker threads {#update-granite-workflow-queue-worker-threads-video}
 
 The Granite Workflow queue is used for non-transient workflows. In Dynamic Media, it is used to process video with the **[!UICONTROL Dynamic Media Encode Video]** workflow.
@@ -466,14 +467,15 @@ The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asse
 
    You can increase **[!UICONTROL Maximum Parallel Jobs]** to support adequately heavy upload of files to Dynamic Media. The exact value depends on hardware capacity. In certain scenarios, such as an initial migration or a one-time bulk upload, you can use a large value. Be aware, however, that using a large value (such as two times the number of cores) can have negative effects on other concurrent activities. As such, test and adjust the value based on your particular use case.
 
-<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
+   By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic. -->
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic.
 
    ![chlimage_1](assets/chlimage_1.jpeg)
 
 1. Select **[!UICONTROL Save]**.
-
+-->
+<!--
 #### Update the maximum upload connections to the Dynamic Media Classic (Scene7) server {#update-max-s7-upload-connections}
 
 The Dynamic Media Classic (Scene7) Upload Connection setting synchronizes Experience Manager assets to Dynamic Media Classic servers.
@@ -496,6 +498,7 @@ The Dynamic Media Classic (Scene7) Upload Connection setting synchronizes Experi
    ![Adobe Scene7 Upload Service](assets/chlimage_1-2.jpeg)
 
 1. Select **[!UICONTROL Save]**.
+-->
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
