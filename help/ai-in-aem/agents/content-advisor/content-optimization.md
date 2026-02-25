@@ -26,6 +26,8 @@ Some of the key benefits of the content optimization job include:
 >
 >See also [Adobe Experience Cloud Generative AI User Guidelines.](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 
+>[!VIDEO](https://video.tv.adobe.com/v/3480078)
+
 ## Prerequisites {#prerequisites-content-optimization-job}
 
 To generate variations or optimizations for image assets. You must have:
