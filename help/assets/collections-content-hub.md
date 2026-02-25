@@ -4,9 +4,9 @@ description: Learn how to manage collections in Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
 ---
+
 # Manage collections in [!DNL Content Hub] {#manage-collections}
 
-<!-- ![Manage collections](assets/manage-collections.jpg) -->
 ![Manage collections](assets/manage-collection.png)
 
 A collection refers to a set of assets that can be shared among users. A collection can include assets from different locations while maintaining their referential integrity.
@@ -23,6 +23,8 @@ A collection refers to a set of assets that can be shared among users. A collect
 * **Favorite**: Mark collection as favorite.
 
 It helps users to easily access and manage the diverse assets available within [!DNL Content Hub].
+
+>[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
 
 ## Prerequisites {#prerequisites}
 
@@ -130,7 +132,7 @@ Learn how to [download an asset from the [!DNL Content Hub]](download-assets-con
 
 ## Share assets available within a collection {#share-assets-available-within-collection}
 
-You can also share the assets available within a collection. Ensure to [enable public link sharing in Content Hub](configure-content-hub-ui-options.md#enable-public-link-sharing). Navigate to the **[!UICONTROL Collections]** tab. Select the ![share icon](assets/share.svg) icon on the collection card. The share link is copied. You can share the copied link with the recipient. Learn more about [sharing assets in the [!DNL Content Hub]](share-assets-content-hub.md).
+You can also share the assets available within a collection. Ensure to [enable public link sharing in Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub). Navigate to the **[!UICONTROL Collections]** tab. Select the ![share icon](assets/share.svg) icon on the asset card. The share link is copied. You can share the copied link with the recipient. Learn more about [sharing assets in the [!DNL Content Hub]](share-assets-content-hub.md).
 
 Content Hub Collections provides comprehensive governance tools for effective asset management, including customizable sharing permissions and collaboration features. From read-only access to full administrative control, these settings support fine governance over asset distribution. When sharing an asset either individually or as part of a collection, the scope of access is determined by the collection's current access level assigned to the user. Alternatively, you cannot share a private collection.
 
@@ -190,8 +192,3 @@ You can mark Collections as Favorite in Content Hub, making it easier to organiz
     Collections marked as Favorites now display under **[!UICONTROL My Favorites]** tab. Alternatively, you can remove the Collections from **[!UICONTROL My Favorites]**. To do this, click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Remove from Favorites]**.
 
     ![Remove Collection as Favorite](assets/remove-favorite-collection.png)
-
->[!NOTE]
->
->[Pin or Unpin collection](#pin-unpin-collection) and [Mark Collections as Favorites](#favorite-collection) are limited availability features. You can [create and submit](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) an Adobe Customer Support case to enable them for your deployment.
-

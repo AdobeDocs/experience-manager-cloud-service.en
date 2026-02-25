@@ -9,7 +9,7 @@ role: User, Admin
 
 ![Color Tagging Banner](assets/banner-image.png)
 
-Adobe Experience Manager (AEM) Assets uses Adobe Sensei AI capabilities to distinguish between colors in an image and apply those as tags automatically on ingestion. These tags enable an enhanced Search experience, based on image color composition. 
+Adobe Experience Manager (AEM) Assets uses Adobe AI capabilities to distinguish between colors in an image and apply those as tags automatically on ingestion. These tags enable an enhanced Search experience, based on image color composition. 
 
 You can configure the number of colors, within a range of one to 40, that are tagged to an image so that you can search for images based on those colors later. Experience Manager Assets applies the tags based on the color coverage in an image. You can also configure the display format for a color tag.
 
