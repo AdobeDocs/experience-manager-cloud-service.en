@@ -49,11 +49,15 @@ Content Advisor transforms how you discover and use assets in Adobe Express by b
 
 With smart suggestions, access to Dynamic Media renditions, and full visibility into asset metadata, Content Advisor enables you to efficiently locate, evaluate, and use assets from AEM Assets without leaving Adobe Express. This ensures faster content creation, improved asset reuse, and consistent use of approved, brand-compliant assets.
 
+Content Advisor displays the list of files, folders, and collections in List and Grid views. It allows you to add assets in PNG, JPEG, PSD, and PDF formats to the Express canvas. You can also preview the scrollable PDF files by clicking the ![Info icon](assets/info-icon.svg) icon available on the asset card.
+
 ![Content Advisor banner image](assets/content-advisor-banner-image.png)
 
 >[!IMPORTANT]
 > 
 >Ensure that you select an **author** repository from the **Repository** drop-down list. A **delivery** repository does not display Content Advisor features. 
+>
+> In addition, the **delivery** repository does not have assets organized in folders and collections. All assets are displayed at the root level in a flat structure.
 
 ### AI Search for smarter asset discovery {#content-advisor-ai-search}
 
@@ -93,6 +97,7 @@ Click ![Info icon](assets/info-icon.svg) to view asset metadata available in the
    >* Content Advisor displays smart suggestions based on the context and intent of the content available in the text layers or the title in the Express canvas. It does not display results based on the images available in the canvas.
    >* You must sign a GenAI Rider to access this feature within Content Advisor. To sign GenAI rider, contact your Adobe representative.
    >* Minimum required AEM release version to access this feature is `21994`.
+   >* Smart suggestions do not update automatically as you update the canvas. Click the refresh icon on **Suggested Content** panel to view the updated list of suggestions,
    
 
 ### Campaign briefs to discover relevant assets {#campaign-briefs-content-advisor}
@@ -136,13 +141,17 @@ Content Advisor provides access to asset properties defined in AEM Assets, inclu
 
 Click the ![Info icon](assets/info-icon.svg) icon on the asset card and select the  **[!UICONTROL Basic]** tab to view asset metadata. You can also view other asset metadata tabs such as, Product, Campaign, and Tags, consistent with the asset metadata that exist in Assets view.
 
+Content Advisor displays properties (metadata) for files in a read-only view. The properties are not displayed for collections and folders.
+
 ### Access filters consistent with Assets view {#filters-content-advisor}
 
 Content Advisor provides the same filtering capabilities in Express that are  available in the Assets view, enabling you to refine assets using predefined filters. Same filtering capabilities as available in Assets view also apply to the filters specific to content types, such as files, folders, and collections. This ensures a consistent asset discovery experience and helps you efficiently locate relevant assets within Adobe Express.
 
 ### Access and reuse recent and saved searches {#saved-searches-content-advisor}
 
-Content Advisor saves your recent searches and also allows you to save frequently used searches for quick access later. Saved searches created in the Assets view are also available, enabling you to reuse predefined search criteria. This helps you efficiently locate assets using consistent search patterns across AEM Assets and Adobe Express.
+Content Advisor saves your recent searches and also allows you to save frequently used searches for quick access later. Saved searches created in the Assets view are also available, enabling you to reuse predefined search criteria. Saved searches works consistently between Assets view and Content Advisor across browsers and in Incognito mode. This helps you efficiently locate assets using consistent search patterns across AEM Assets and Adobe Express.
+
+The list of recent searches is not consistent between Assets view and Content Advisor. The same user can have different set of recent searches in Assets view and Content Advisor. If you are using Incognito mode to access Content Advisor, the list of recent searches is not available. In addition, recent searches are not shared across different browsers for the same user and are AEM environment-specific.
 
 To save your frequently used search using Content Advisor:
 
