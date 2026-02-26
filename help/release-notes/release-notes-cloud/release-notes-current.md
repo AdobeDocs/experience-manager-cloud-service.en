@@ -85,7 +85,7 @@ See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes
 
 **Attribute-based access control (ABAC) for Dynamic Media with OpenAPI**
 
-Attribute-based access control (ABAC) enables administrators to control access to Dynamic Media with OpenAPI assets using metadata-driven rules. Administrators can define rules for user groups based on asset metadata to determine which assets are visible to specific groups. When an asset's metadata matches the defined conditions, access is granted automatically. This capability helps organizations enforce granular access control, ensuring that users can only view and work with Dynamic Media with OpenAPI assets that are relevant to their role or permissions.
+Attribute-based access control (ABAC) enables administrators to control access to Dynamic Media with OpenAPI assets using metadata-driven rules. Administrators can define rules for user groups based on asset metadata to determine which assets are visible to specific groups. When an asset's metadata matches the defined conditions, access is granted automatically. This capability helps organizations enforce better governance, ensuring that users can only view and work with Dynamic Media with OpenAPI assets that are relevant to their role or permissions.
 
 >[!NOTE]
 >
