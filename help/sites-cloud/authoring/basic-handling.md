@@ -1,6 +1,7 @@
 ---
 title: Basic Handling
 description: Get comfortable with navigating AEM and its basic usage
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 solution: Experience Manager Sites
 feature: Authoring
