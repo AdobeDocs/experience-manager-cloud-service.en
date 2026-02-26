@@ -77,20 +77,19 @@ See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**AI Search**
+**Content Advisor to access AEM Assets in Adobe Express**
 
-AI Search introduces an intelligent, context-aware search experience that goes beyond traditional keyword matching by understanding the meaning and intent behind user queries. Powered by AI and machine learning, it delivers more accurate results even when queries are phrased differently, contain misspellings, use synonyms, or are submitted in different languages, helping users find relevant content faster with less effort.
+[Content Advisor is now available in Adobe Express](/help/assets/native-integration-adobe-express.md), introducing intelligent asset discovery for AEM Assets directly within the Express interface. Content Advisor provides context-aware recommendations based on canvas content and campaign briefs, supports AI-powered search, enables native support for channel-ready on the fly renditions powered by Dynamic Media, and so many other features. Content Advisor transforms how you discover and use approved assets, helping you find the right content faster to streamline your creative workflows.
 
-For more information, see AI Search in [Assets view](/help/assets/search-assets-view.md#ai-search) and [Admin view](/help/assets/search-assets.md#ai-search).
+### New Features in Dynamic Media with OpenAPI {#dynamic-media-openAPI-new-features}
 
-**Desktop App 3.0.1 release**
+**Attribute-based access control (ABAC) for Dynamic Media with OpenAPI**
 
-[Desktop App 3.0.1 (December 20, 2025)](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes) improves reliability, performance, and stability across key workflows. This release ensures consistent folder naming by fixing sync issues with AEM Author, allows uninterrupted use of the app during active transfers, enhances UI responsiveness through asynchronous processing, optimizes large file transfers with pagination, and resolves stability issues including Author server restarts and crashes during large folder uploads and downloads.
+Attribute-based access control (ABAC) enables administrators to control access to Dynamic Media with OpenAPI assets using metadata-driven rules. Administrators can define rules for user groups based on asset metadata to determine which assets are visible to specific groups. When an asset's metadata matches the defined conditions, access is granted automatically. This capability helps organizations enforce granular access control, ensuring that users can only view and work with Dynamic Media with OpenAPI assets that are relevant to their role or permissions.
 
-**Adobe Asset Link CEP 2026.01.0 release**
-
- [Adobe Asset Link CEP 2026.01.0](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) introduces a new Relink missing links option in InDesign that automatically relinks other missing assets from the same AEM folder. The feature matches assets based on filename, significantly reducing manual effort when restoring broken links.
-
+>[!NOTE]
+>
+>Attribute-based access control (ABAC) for Dynamic Media with OpenAPI is a limited availability feature. You can get it enabled by creating a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -140,7 +139,7 @@ Go‑live days, live events, peak sales—these moments can't break. [Our new se
 
 #### Code Quality Pipeline Troubleshooting with the Development Agent {#devagent-codequality}
 
-The Development Agent’s pipeline troubleshooting capabilities help developers more efficiently diagnose and resolve issues in AEM as a Cloud Service deployments.
+The Development Agent's pipeline troubleshooting capabilities help developers more efficiently diagnose and resolve issues in AEM as a Cloud Service deployments.
 
 Previously focused on the **Build & Unit Testing** step, pipeline troubleshooting now also supports the **Code Scanning** step in Full Stack Deployment and Code Quality pipelines.
 
@@ -157,7 +156,7 @@ The deprecated APIs targeting 2/26/2026 removal should no longer be used in code
 * **Starting January 26, 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs.
 * **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
 * **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
-* **May 4, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected,and security risk exposure may increase further.
+* **May 4, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe's standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected,and security risk exposure may increase further.
 
 See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
@@ -235,7 +234,7 @@ Learn more about [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-ae
 
 #### Web Tier Config Pipeline Troubleshooting with the Development Agent (Beta Program) {#devagent-webtier}
 
-The Development Agent’s [pipeline troubleshooting](/help/ai-in-aem/agents/development/overview.md) capabilities help developers efficiently diagnose and resolve issues in AEM as a Cloud Service deployments. In addition to supporting Full Stack pipelines (Deployment and Code Quality), the Development Agent now supports troubleshooting for the **Web Tier Config Pipeline** as part of a beta program.
+The Development Agent's [pipeline troubleshooting](/help/ai-in-aem/agents/development/overview.md) capabilities help developers efficiently diagnose and resolve issues in AEM as a Cloud Service deployments. In addition to supporting Full Stack pipelines (Deployment and Code Quality), the Development Agent now supports troubleshooting for the **Web Tier Config Pipeline** as part of a beta program.
 
 To request access to the beta, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com). Pre-existing access to Agents in AEM is required.
 
