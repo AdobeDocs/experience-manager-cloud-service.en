@@ -7,11 +7,15 @@ role: User
 ---
 # Native integration with Adobe Express {#native-integration-adobe-express}
 
-Adobe Experience Manager (AEM) Assets integrates natively with Adobe Express, allowing you to discover, access, and use assets from your AEM Assets repository directly within the Express interface. 
+Adobe Experience Manager (AEM) Assets integrates natively with Adobe Express, allowing you to discover, access, and use assets from AEM Assets directly within the Express interface using Content Advisor.
 
-With Content Advisor available with this integration, you can receive intelligent, context-aware asset recommendations based on your canvas content or campaign brief, and select channel-ready Dynamic Media renditions optimized for your use case. 
+Content Advisor transforms how you discover and use assets in Adobe Express by bringing intelligent, context-aware asset discovery directly to your creative workflow. Instead of searching for assets by typing keywords, Content Advisor surfaces relevant, approved assets based on your canvas content, campaign brief, and intent, helping you find the right asset faster.
 
-You can also place assets in the Express canvas and save new or edited content back to AEM Assets, ensuring centralized asset management and governance. The integration provides the following key benefits:
+With smart suggestions, access to Dynamic Media renditions, and full visibility into asset metadata, Content Advisor enables you to efficiently locate, evaluate, and use assets from AEM Assets without leaving Adobe Express. This ensures faster content creation, improved asset reuse, and consistent use of approved, brand-compliant assets.
+
+![Content Advisor banner image](assets/content-advisor-banner-image.png)
+
+You can also place assets in the Express canvas and save new or edited content back to AEM Assets, ensuring centralized asset management and governance. Native integration with Adobe Express provides the following key benefits:
 
 * Accelerated content creation with context-aware asset discovery and recommendations.
 
@@ -43,21 +47,41 @@ Perform the following steps to start using AEM Assets in Adobe Express editor:
 
    ![Include assets from Assets add-on](assets/native-express-content-advisor-home.png)
 
-## Intelligent asset discovery with Content Advisor {#intelligent-asset-discovery-content-advisor}    
+## Intelligent asset discovery with Content Advisor {#intelligent-asset-discovery-content-advisor}
 
-Content Advisor transforms how you discover and use assets in Adobe Express by bringing intelligent, context-aware asset discovery directly to your creative workflow. Instead of searching for assets by typing keywords, Content Advisor surfaces relevant, approved assets based on your canvas content, campaign brief, and intent, helping you find the right asset faster.
+Content Advisor helps you discover relevant assets using intelligent, context-aware recommendations based on your canvas content or campaign brief. It also allows you to select channel-ready Dynamic Media renditions optimized for your use case. 
 
-With smart suggestions, access to Dynamic Media renditions, and full visibility into asset metadata, Content Advisor enables you to efficiently locate, evaluate, and use assets from AEM Assets without leaving Adobe Express. This ensures faster content creation, improved asset reuse, and consistent use of approved, brand-compliant assets.
 
-Content Advisor displays the list of files, folders, and collections in List and Grid views. It allows you to add assets in PNG, JPEG, PSD, and PDF formats to the Express canvas. You can also preview the scrollable PDF files by clicking the ![Info icon](assets/info-icon.svg) icon available on the asset card.
+Content Advisor displays the list of files, folders, and collections in List and Grid views. It allows you to add assets in PNG, JPEG, PSD, and PDF formats to the Express canvas. You can also preview the scrollable PDF files or any other format types by clicking the ![Info icon](assets/info-icon.svg) icon available on the asset card.
 
-![Content Advisor banner image](assets/content-advisor-banner-image.png)
+Click the ![Info icon](assets/info-icon.svg) icon to also view asset metadata available in the **[!UICONTROL Basic]** tab or  view Dynamic Media renditions available in the [Dynamic Media](#dynamic-media-renditions-content-advisor) tab. Drag and drop the suggested content onto the canvas. Alternatively, click the asset to place them automatically onto the canvas.
+
+![Asset metadata in Adobe Express](assets/express-native-integration-metadata.png)
+
 
 >[!IMPORTANT]
 > 
 >Ensure that you select an **author** repository from the **Repository** drop-down list. A **delivery** repository does not display Content Advisor features. 
 >
 > In addition, the **delivery** repository does not have assets organized in folders and collections. All assets are displayed at the root level in a flat structure.
+
+Content Advisor provides the following key features:
+
+* [AI Search for smarter asset discovery](#content-advisor-ai-search)
+
+* [Smart suggestions based on context and intent](#smart-suggestions-content-advisor)
+
+* [Campaign briefs to discover relevant assets](#campaign-briefs-content-advisor)
+
+* [Dynamic Media asset renditions available for use](#dynamic-media-renditions-content-advisor)
+
+* [Access asset metadata consistent with Assets view](#asset-metadata-content-advisor)
+
+* [Access filters consistent with Assets view](#filters-content-advisor)
+
+* [Access and reuse recent and saved searches](#saved-searches-content-advisor)
+
+* [Search for assets across and within collections](#search-collections-content-advisor)
 
 ### AI Search for smarter asset discovery {#content-advisor-ai-search}
 
@@ -88,21 +112,16 @@ Some if its key benefits include:
 
    ![Suggested Content Advisor content in Adobe Express](assets/express-native-integration-suggested-content.png)
 
-Click ![Info icon](assets/info-icon.svg) to view asset metadata available in the **[!UICONTROL Basic]** tab or  view Dynamic Media renditions available in the [Dynamic Media](#dynamic-media-renditions-content-advisor) tab. Drag and drop the suggested content onto the canvas. Alternatively, click the asset to place them automatically onto the canvas.
-
-![Asset metadata in Adobe Express](assets/express-native-integration-metadata.png)
-
-   >[!IMPORTANT]
-   > 
-   >* Content Advisor displays smart suggestions based on the context and intent of the content available in the text layers or the title in the Express canvas. It does not display results based on the images available in the canvas.
-   >* You must sign a GenAI Rider to access this feature within Content Advisor. To sign GenAI rider, contact your Adobe representative.
-   >* Minimum required AEM release version to access this feature is `21994`.
-   >* Smart suggestions do not update automatically as you update the canvas. Click the refresh icon on **Suggested Content** panel to view the updated list of suggestions,
-   
+>[!IMPORTANT]
+> 
+>* Content Advisor displays smart suggestions based on the context and intent of the content available in the text layers or the title in the Express canvas. It does not display results based on the images available in the canvas.
+>* You must sign a GenAI Rider to access this feature within Content Advisor. To sign GenAI rider, contact your Adobe representative.
+>* Minimum required AEM release version to access this feature is `21994`.
+>* Smart suggestions do not update automatically as you update the canvas. Click the refresh icon on **Suggested Content** panel to view the updated list of suggestions,
 
 ### Campaign briefs to discover relevant assets {#campaign-briefs-content-advisor}
 
-Content Advisor allows you to upload a campaign brief document to discover relevant assets without manually entering search keywords. Content Advisor analyzes the information in the campaign brief to understand the campaign's intent and recommends relevant assets from your AEM Assets repository.
+Content Advisor allows you to upload a campaign brief document to discover relevant assets without manually entering search keywords. Content Advisor analyzes the information in the campaign brief to understand the campaign's intent and recommends relevant assets available in AEM Assets.
 
   ![Include assets from Assets add-on](assets/upload-brief-native-express.png)
 
@@ -119,7 +138,7 @@ Dynamic Media renditions provide ready-to-use, channel-optimized versions of ass
 
 You can also apply Dynamic Media modifiers to preview adjustments in real-time before placing the rendition on the Express canvas, enabling faster selection of the most appropriate rendition while maintaining asset consistency and quality.
 
-Click the ![Info icon](assets/info-icon.svg) icon on the asset card and select the  **[!UICONTROL Dynamic Media]** tab to view the available renditions for an asset. You can select to view [Dynamic Media Scene7](/help/assets/dynamic-media/dynamic-media.md) renditions or [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) renditions. When you select **[!UICONTROL OpenAPI]** for an asset, the available renditions display only if the asset is approved and published to Dynamic Media with OpenAPI.
+Click the ![Info icon](assets/info-icon.svg) icon on the asset card and select the  **[!UICONTROL Dynamic Media]** tab to view the available renditions for an asset. You can select to view [Dynamic Media Scene7](/help/assets/dynamic-media/dynamic-media.md) renditions or [Dynamic Media with OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) renditions. When you select **[!UICONTROL OpenAPI]** for an asset, the available renditions display only if the asset is approved and available to Dynamic Media with OpenAPI.
 
 ![View Dynamic Media renditions](assets/native-express-dynamic-media.png)
 
@@ -147,6 +166,8 @@ Content Advisor displays properties (metadata) for files in a read-only view. Th
 
 Content Advisor provides the same filtering capabilities in Express that are  available in the Assets view, enabling you to refine assets using predefined filters. Same filtering capabilities as available in Assets view also apply to the filters specific to content types, such as files, folders, and collections. This ensures a consistent asset discovery experience and helps you efficiently locate relevant assets within Adobe Express.
 
+If you do not have filters set up in Assets view via filter schema, Content Advisor displays out-of-the-box filters including File Type, File Format, Asset Status, File Size, Image Width, Image Height, Modified Date, and Created Date.
+
 ### Access and reuse recent and saved searches {#saved-searches-content-advisor}
 
 Content Advisor saves your recent searches and also allows you to save frequently used searches for quick access later. Saved searches created in the Assets view are also available, enabling you to reuse predefined search criteria. Saved searches works consistently between Assets view and Content Advisor across browsers and in Incognito mode. This helps you efficiently locate assets using consistent search patterns across AEM Assets and Adobe Express.
@@ -164,6 +185,8 @@ To save your frequently used search using Content Advisor:
 1. Click the filters icon > **Manage saved searches** > **Create new Saved Search**.
 
 1. Specify the name of the search and click ![Info icon](assets/do-not-localize/checkmark-icon.svg) to save it. The search displays in the list of items.
+
+   ![Saved Searches Content Advisor](assets/native-express-saved-searches.png)
 
 To apply any of the saved search items, click the filters icon, select the search item from the **[!UICONTROL Saved Searches]** drop-down list and click **[!UICONTROL Apply]**.
 
@@ -190,7 +213,7 @@ Additionally, you can replace the added images using **[!UICONTROL AEM Upload]**
 
 ## Save Adobe Express projects in AEM Assets {#save-express-projects-in-assets}
 
-After incorporating appropriate modifications in the Express canvas, you can save it in the AEM Assets repository.
+After incorporating appropriate modifications in the Express canvas, you can save it in AEM Assets.
 
 1. Click **[!UICONTROL Share]** to open the **[!UICONTROL Share]** dialog.
 
