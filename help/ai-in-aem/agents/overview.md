@@ -17,9 +17,15 @@ These agents are available in Adobe Experience Manager (AEM) as a Cloud Service 
 >* They are not currently available for AEM 6.5, nor AEM 6.5 LTS.
 >* They are not available on AEM On-prem, nor Managed Services.
 
->[!IMPORTANT]
->
->To use the agents you are required to enroll in the Explorer Program. You can find more information on the AEM Agents Explorer Program [here.](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
+## Accessing Agents {#accessing-agents}
+
+You have three options to access agents.
+
+1. You may have the option to access AEM Agents through the [Try Before You Buy program,](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) which is rolling out in phases. Your CSM or TAM can help confirm availability for your organization.
+1. Explore AEM agents [through a trial.](https://www.aem.live/developer/aem-playground)
+1. Connect with your CSM or TAM to discuss access via the Agentic SKU if that aligns with your roadmap and evaluation plans.
+
+As new skills become available under early release, we will provide additional opportunities to participate and share feedback. We encourage you to watch [this page](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) for updates.
 
 ## Brand Experience Agent {#brand-experience-agent}
 
