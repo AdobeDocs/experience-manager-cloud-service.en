@@ -15,10 +15,6 @@ hidefromtoc: yes
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 ## 1. Introduction
 
 A Subform in the Interactive Communication Editor is a container object used to group fields, objects, and components into a logical section. It helps manage layouts, control object positioning, and define how content flows across pages. Subforms are essential for creating structured, reusable, and responsive communications, especially when dealing with dynamic or repeated content.

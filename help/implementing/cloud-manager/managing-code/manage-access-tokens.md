@@ -11,15 +11,9 @@ exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
 
 Cloud Manager uses access tokens to manage repositories hosted on external Git platforms. Previously, if a token expired, the associated repository had to be re-onboarded to remain operational.
 
-Now, the **Manage Access Tokens** feature lets you manage tokens more efficiently. You can view, rename, or remove tokens connected to supported external Git providers, including GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
+Now, the **`Manage Access Tokens`** feature lets you manage tokens more efficiently. You can view, rename, or remove tokens connected to supported external Git providers, including GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
 
 See also [Add External Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
-
-<!--
->[!NOTE]
->
->The features described in this article are only available through the private beta program. For more details and to sign up for the private beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
--->
 
 ## View access tokens {#view-access-tokens}
 
@@ -54,4 +48,4 @@ See also [Add External Repositories in Cloud Manager](/help/implementing/cloud-m
  
     The icon is disabled (![Delete outline icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)) for tokens that are currently in use.
 
-1. In the **Delete Access Token** dialog box, click **Delete** to remove the token permanently.
+1. In the **`Delete Access Token`** dialog box, click **Delete** to remove the token permanently.
