@@ -24,3 +24,7 @@ These **preview** release notes are provided as a convenience so you know what c
 
 * A component picker is now available in the in-context menu.
 * A color picker for the RTE is now available.
+
+## Upcoming Improvements {#upcoming-improvements}
+
+* Alignment, text direction, and indentation options are now [enabled by default in the RTE](/help/implementing/universal-editor/configure-rte.md) provided your backend supports them.
