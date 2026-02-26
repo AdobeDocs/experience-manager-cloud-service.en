@@ -20,7 +20,7 @@ These are the release notes for the 26 February 2026 release of the Universal Ed
 
 ## What's New {#what-is-new}
 
-* Descriptions were added to all schema fields to help the developers generate model/filter/component definition files.
+* Descriptions were added to all schema fields to help developers generate model/filter/component definition files.
 * Multi-field updates to Content Fragments are now supported for in-context edits.
 
 
