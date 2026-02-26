@@ -52,7 +52,7 @@ Perform the following steps to start using AEM Assets in Adobe Express editor:
 Content Advisor helps you discover relevant assets using intelligent, context-aware recommendations based on your canvas content or campaign brief. It also allows you to select channel-ready Dynamic Media renditions optimized for your use case. 
 
 
-Content Advisor displays the list of files, folders, and collections in List and Grid views. It allows you to add assets in PNG, JPEG, PSD, and PDF formats to the Express canvas. You can also preview the scrollable PDF files or any other format types by clicking the ![Info icon](assets/info-icon.svg) icon available on the asset card.
+Content Advisor displays the list of files, folders, and collections in List and Grid views. It allows you to add assets in PNG, JPEG, PSD, MP4, SVG and PDF formats to the Express canvas. You can also preview the scrollable PDF files or any other format types by clicking the ![Info icon](assets/info-icon.svg) icon available on the asset card.
 
 Click the ![Info icon](assets/info-icon.svg) icon to also view asset metadata available in the **[!UICONTROL Basic]** tab or  view Dynamic Media renditions available in the [Dynamic Media](#dynamic-media-renditions-content-advisor) tab. Drag and drop the suggested content onto the canvas. Alternatively, click the asset to place them automatically onto the canvas.
 
