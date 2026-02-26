@@ -12,10 +12,6 @@ exl-id: 60809974-1a39-4e69-9aa5-df9936a26362
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 ## 1. Introduction 
 
 The **Subform** component in the Interactive Communication (IC) editor acts as a dynamic layout container that allows you to organize multiple form elements in a flexible and structured way. It is commonly used to group related fields, create repeating sections, or define nested data structures for improved user experience and data binding. 

@@ -9,13 +9,15 @@ exl-id: 1dbaef34-efa3-4287-b7b1-f60db938146d
 
 You can configure your Edge Delivery site to pull code from any private Git repository already onboarded in Cloud Manager.
 
+<!--
 **Supported Git Vendors**
 
 | Support level | Vendors | Notes |
 | --- | --- | --- |
 | General availability | &bull; GitHub Enterprise (self-hosted version)<br>&bull; Bitbucket (Cloud version)<br>&bull; GitLab (Cloud and self-hosted version) | Connect without enablement requests |
 | Alpha program | Azure DevOps (Cloud version) | [Request access](mailto:grp-cloudmanager_byog@adobe.com) |
-| Beta program | Adobe-hosted repository (created in Cloud Manager) |  [Request access](mailto:grp-cloudmanager_byog@adobe.com) |
+| Beta program | Adobe-hosted repository (created in Cloud Manager) | [Request access](mailto:grp-cloudmanager_byog@adobe.com) |
+-->
 
 **To configure an Edge Delivery site to use an external Git repository:**
 

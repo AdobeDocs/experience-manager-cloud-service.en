@@ -47,8 +47,9 @@ Adobe Experience Manager (AEM) beta programs are a way for customers to get acce
 Getting early access to features that Adobe is developing lets customers and partners provide feedback and shape product development. It also helps them prepare to adopt new capabilities before general availability.
 
 **Current beta programs**
-The following sections list active beta and Explorer programs.
+The following sections list active beta programs.
 
+<!--
 ### Agents in AEM (Explorer program) {#agents-in-aem-beta-program}
 
 Gain early access to powerful, new AEM agentic capabilities across production, governance, optimization, discovery, and development. Your feedback directly shapes Adobe's roadmap and final features. See [Overview of Agents in AEM](/help/ai-in-aem/agents/overview.md) to learn more.
@@ -61,6 +62,7 @@ To opt in to participate in this program, email [aemagentsteam@adobe.com](mailto
 * List Specific agents that you or your team will want to use. Or simply say "All Agents."
 
 Customers selected for participation will be notified directly by Adobe. Participation is subject to eligibility considerations, including customer licensing and limited program capacity. While not all requests can be accommodated initially, additional customers may be considered in future beta waves.
+-->
 
 ### AEM Foundation (Beta programs) {#aem-foundation-beta-programs}
 
@@ -145,12 +147,12 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 #### Java API Deprecations {#java-api-deprecation}
 
-The deprecated APIs targeting 2/26/2026 removal should no longer be used in code. To prevent deployment blocks, remove API usage before March 26, 2026. Important dates:
+The deprecated APIs targeting 2/26/2026 removal should no longer be used in code. To prevent deployment blocks, remove API usage before March 30, 2026. Important dates:
 
 * **Starting January 26, 2026**: Actions Center notification emails are sent **weekly per environment** as a reminder to remove usage of these APIs.
 * **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed.
-* **March 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
-* **April 30, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
+* **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
+* **May 4, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
 
 See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 

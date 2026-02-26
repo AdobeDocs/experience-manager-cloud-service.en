@@ -81,42 +81,6 @@ Interested? Email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
 
-### Bring Your Own Git (BYOG) {#gitlab-bitbucket-azure-vsts}
-
-<!-- BOTH CS & AMS -->
-
-Customers can now onboard their Azure DevOps Git repositories into Cloud Manager, with support for both modern Azure DevOps and legacy VSTS (Visual Studio Team Services) repositories.
-
-* For Edge Delivery Services users, the onboarded repository can be used to sync and deploy site code.
-* For AEM as a Cloud Service and Adobe Managed Services (AMS) users, the repository can be linked to both full-stack and frontend pipelines.
-
-Support for additional pipeline types and pull request validation through code quality pipelines is coming soon.
-
-See [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
-
-![Add Repository dialog box](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png)
-
-<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
-
-**Frequently asked questions about BYOG**
-
-| Question | Answer |
-|---|---|
-| *How can a project switch back to the Adobe-managed Git repository if needed?* | Switching back is straightforward. [Update the pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) to point to the Adobe repository and remove the external repository if it is no longer required. |
-| *Is it possible to configure different repositories for different environments (for example, non-production versus production) to allow testing in non-production first?* | Yes, different repositories can be configured for separate environments. For example, the dev or code quality pipeline can point to an external repository while the production pipeline remains connected to the Adobe repository. Make sure that the sync job between the two repositories remains active during this configuration. |
-| *Do existing settings like `IP Allow` lists continue to work?* | Yes, existing `IP Allow` lists continue to work as usual. However, if the external Git repository is protected by a firewall, the necessary [Adobe IP addresses must be added to the allow list](/help/implementing/cloud-manager/ip-allow-lists/introduction.md). |
-| *Do all GitLab repository URLs work? The repository URL in use follows the format `https://gitlab_dedicated_url.com/path/repo-name.git`, which differs from the example in the documentation.* | Yes, any GitLab repository that supports API V3 or V4 is supported, including self-hosted GitLab URLs like the one described in [Add external repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`). |
-
-
-#### Manage Access Tokens{#manage-access-tokens}
-
-Use **Manage Access Tokens** in Cloud Manager to view, rename, and delete access tokens associated with external BYOG repositories, such as GitHub Enterprise, GitLab, Bitbucket, and Azure DevOps.
-
-See [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
-
-<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
-
-
 ## Bug fixes {#bug-fixes}
 
 There are no significant bug fixes in the December 2025 Cloud Manager release.

@@ -8,7 +8,7 @@ role: Admin, Developer
 
 ---
 
-# Build environment {#build-environment} 
+# Build environment {#build-environment}
 
 Learn about Cloud Manager's build environment and how it builds and tests your code.
 
@@ -74,7 +74,7 @@ The Cloud Manager build process uses the Oracle 8 JDK to build projects by defau
 
 #### Set the Maven JDK version {#alternate-maven-jdk-version}
 
-To set the Maven execution JDK, create a file named `.cloudmanager/java-version` in the Git repository branch used by the pipeline. Edit the file so that it contains only the text, `21` or `17`. While Cloud Manager also accepts a value of `8`, this version is no longer supported for AEM Cloud Service projects. Any other value is ignored. When `21` or `17` is specified, Oracle Java 21 or Oracle Java 17 is used. 
+To set the Maven execution JDK, create a file named `.cloudmanager/java-version` in the Git repository branch used by the pipeline. Edit the file so that it contains only the text, `21` or `17`. While Cloud Manager also accepts a value of `8`, this version is no longer supported for AEM Cloud Service projects. Any other value is ignored. When `21` or `17` is specified, Oracle Java 21 or Oracle Java 17 is used.
 
 
 #### Prerequisites for migrating to building with Java 21 or Java 17 {#prereq-for-building}
@@ -93,7 +93,7 @@ Adobe recommends the following deployment strategy:
 
 The following features might not function correctly when deployed on the Java 21 runtime, and Adobe expects to resolve them by early 2025:
 
-* `XLIFF` (XML Localization Interchange File Format) fails when using Human Translation.  
+* `XLIFF` (XML Localization Interchange File Format) fails when using Human Translation.
 * `I18n` (Internationalization) does not properly handle language locales Hebrew (`he`), Indonesian (`in`), and Yiddish (`yi`) due to changes in the Locale constructor in newer Java versions.
 
 #### Runtime requirements {#runtime-requirements}
@@ -129,15 +129,15 @@ The following adjustments are required to allow building the project with Java 2
 AEM Cloud Service customers are recommended to build their projects with Java 21 as early as possible to take advantage of new language features.
 
 * **Minimum version of `bnd-maven-plugin`:**
-Update the usage of `bnd-maven-plugin` to version 6.4.0 to ensure support for newer JVM runtimes. 
+Update the usage of `bnd-maven-plugin` to version 6.4.0 to ensure support for newer JVM runtimes.
 
   Versions 7 or higher are not compatible with Java 11 or lower so an upgrade to that version is not recommended.
 
 * **Minimum version of `aemanalyser-maven-plugin`:**
-Update the usage of `aemanalyser-maven-plugin` to version 1.6.6 or higher to ensure support for newer JVM runtimes.
+Update the usage of `aemanalyser-maven-plugin` to version 1.6.16 or higher to ensure support for newer JVM runtimes.
 
 * **Minimum version of `maven-bundle-plugin`:**
-Update the usage of `maven-bundle-plugin` to version 5.1.5 or higher to ensure support for newer JVM runtimes. 
+Update the usage of `maven-bundle-plugin` to version 5.1.5 or higher to ensure support for newer JVM runtimes.
 
   Versions 6 or higher are not compatible with Java 11 or lower so an upgrade to that version is not recommended.
 
@@ -182,7 +182,7 @@ The `maven-scr-plugin` is not directly compatible with Java 21 or Java 17. Howev
 
 ## Environment variables - standard {#environment-variables}
 
-You may find it necessary to vary the build process based on information about the program or pipeline. 
+You may find it necessary to vary the build process based on information about the program or pipeline.
 
 For instance, if JavaScript minification occurs at build time using a tool like gulp, different minification levels may be preferred for various environments. A development build might use a lighter minification level compared to staging and production.
 

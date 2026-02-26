@@ -1,6 +1,7 @@
 ---
 title: Working with Targeted Content in Multisites
 description: If you need to manage targeted content, such as activities, experiences, and offers between your sites, you can take advantage of AEM's built-in multisite support for targeted content
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
 solution: Experience Manager Sites
 feature: Authoring, Personalization
