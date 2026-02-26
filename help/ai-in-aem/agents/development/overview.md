@@ -17,7 +17,11 @@ Currently, the agent can retrieve pipeline statuses and help you troubleshoot fa
 >
 >AI-generated responses may be inaccurate or misleading. Be sure you double-check suggested fixes and responses. 
 >
->See also [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html). 
+>See also [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+
+>[!NOTE]
+>
+>Pipeline Troubleshooting is limited to Full Stack pipelines (Deployment and Code Quality), but support for **Web Tier Config Pipeline** is now available in beta. To request access, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com). Pre-existing access to Agents in AEM is required.
 
 <!-- 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
@@ -84,6 +88,6 @@ The Development Agent's pipeline troubleshooting job requires either the Cloud M
 
 ## Out-of-scope features {#out-of-scope-features}
 
-Pipeline troubleshooting operates on the Full-Stack pipeline's build step. For other pipeline types and steps, debug failures by downloading and inspecting the logs.
+Pipeline troubleshooting operates on the Build & Unit Testing step and Code Scanning step in Full Stack Deployment and Code Quality pipelines. For other pipeline types and steps, debug failures by downloading and inspecting the logs.
 
 See [Access and Download Logs](/help/implementing/cloud-manager/manage-logs.md).
