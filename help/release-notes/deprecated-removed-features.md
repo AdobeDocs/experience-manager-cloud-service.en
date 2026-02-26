@@ -192,90 +192,90 @@ The APIs in the table below (click to expand to see it) have been announced as d
     <td>org.apache.jackrabbit.oak.plugins.blob<br>org.apache.jackrabbit.oak.plugins.blob.datastore</td>
     <td>This API is internal use only.</td>
     <td>9/23/2024</td>
-    <td>TBD</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>Usage of this API is not supported in AEM as a Cloud Service.</td>
     <td>10/31/2022</td>
-    <td>TBD</td>
-  </tr>
-  <tr>
-    <td>org.apache.sling.runmode</td>
-    <td></td>
-    <td>2015</td>
-    <td>TBD</td>
-  </tr>
-  <tr>
-    <td>org.json</td>
-    <td>The Apache Johnzon implementation of <a href="https://johnzon.apache.org/index.html">javax.json</a> is recommended and should be used. </td>
-    <td>4/30/2021</td>
-    <td>TBD</td>
-  </tr>
-  <tr>
-<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 is in maintenance mode. Commons Lang 3 should be used instead. <a href="#apache.commons">See removal notes below.</a></td>
-    <td>4/30/2021</td>
-    <td>TBD</td>
-  </tr>
-  <tr>
-    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 is in maintenance mode. Commons Collections 4 should be used instead. <a href="#apache.commons">See removal notes below.</a></td>
-    <td>4/30/2021</td>
-    <td>TBD</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
     <td>This API is deprecated. Use Apache Sling's Builders instead.</td>
     <td>10/31/2022</td>
-    <td>TBD</td>
-  </tr>
-  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
-    <td>AEM as a Cloud Service does not support this API.</td>
-    <td>5/15/2023</td>
-    <td>TBD</td>
-  </tr>
-  <tr>
-    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
-    <td>Use org.apache.sling.xss instead.</td>
-    <td>12/12/2023</td>
-    <td>TBD</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.adobe.granite.xss</td>
     <td>Use org.apache.sling.xss instead.</td>
     <td>12/12/2023</td>
-    <td>TBD</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars<br>com.github.jknack.handlebars.cache<br>com.github.jknack.handlebars.context<br>com.github.jknack.handlebars.helper<br>com.github.jknack.handlebars.io</td>
     <td>This API is deprecated.</td>
     <td>07/10/2024</td>
-    <td>TBD</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.day.cq.mailer.commons</td>
     <td>This API is deprecated as it depends on commons-lang (which is deprecated since 2021).</td>
     <td>11/30/2025</td>
-    <td>TBD</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.adobe.granite.httpcache.api</td>
     <td>This API is not supported anymore.</td>
     <td>01/01/2026</td>
-    <td>TBD</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.webdav.client.methods</td>
     <td>Usage of this API is not supported in AEM as a Cloud Service.</td>
     <td>2/13/2026</td>
-    <td>TBD</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
+    <td>Use org.apache.sling.xss instead.</td>
+    <td>12/12/2023</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
+    <td>Commons Lang 2 is in maintenance mode. Commons Lang 3 should be used instead. <a href="#apache.commons">See removal notes below.</a></td>
+    <td>4/30/2021</td>
+    <td>3/31/2027 (Tentative)</td>
+  </tr>
+  <tr>
+    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
+    <td>Commons Collections 3 is in maintenance mode. Commons Collections 4 should be used instead. <a href="#apache.commons">See removal notes below.</a></td>
+    <td>4/30/2021</td>
+    <td>3/31/2027 (Tentative)</td>
+  </tr>
+  <tr>
+    <td>org.json</td>
+    <td>The Apache Johnzon implementation of <a href="https://johnzon.apache.org/index.html">javax.json</a> is recommended and should be used. </td>
+    <td>4/30/2021</td>
+    <td>3/31/2027 (Tentative)</td>
+  </tr>
+  <tr>
+    <td>org.apache.sling.runmode</td>
+    <td></td>
+    <td>2015</td>
+    <td>12/31/2027 (Tentative)</td>
+  </tr>
+  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
+    <td>AEM as a Cloud Service does not support this API.</td>
+    <td>5/15/2023</td>
+    <td>12/31/2027 (Tentative)</td>
   </tr>
   <tr>
     <td>org.osgi.service.http</td>
     <td>The OSGi Service HTTP API is deprecated, please use the OSGi Servlet Whiteboard instead.</td>
     <td>5/1/2024</td>
-    <td>TBD</td>
+    <td>12/31/2027 (Tentative)</td>
   </tr>
   </tbody>
 </table>
