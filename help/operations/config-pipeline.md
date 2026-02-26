@@ -13,9 +13,9 @@ Learn how you can use config pipelines to deploy different configurations in AEM
 
 A Cloud Manager config pipeline deploys configurations files (created in YAML format) to a target environment. A number of features in AEM as a Cloud Service can be configured in this way, including log forwarding, purge-related maintenance tasks, and several CDN features.
 
-For **Publish Delivery** Projects, config pipelines can be deployed via Cloud Manager to dev, stage, and production environment types. The configuration files can be deployed to Rapid Development Environments (RDEs) using [command line tooling](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
+For **Publish Delivery** Projects, config pipelines can be deployed via Cloud Manager to dev, stage, and production environment types. The configuration files can be deployed to Rapid Development Environments (RDEs) using [command line tooling](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline). Use a targeted deployment [**Publish Delivery Pipeline**](/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines#targeted-deployment)  ([Production](/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines#targeted-deployment) or [Non-Production](/implementing/using-cloud-manager/cicd-pipelines/configuring-non-production-pipelines#targeted-deployment)) when you need to configure traffic for a domain attached to a Publish Delivery environment. 
 
-Config pipelines can also be deployed through Cloud Manager for **Edge Delivery** Projects.
+Config pipelines can also be deployed through Cloud Manager for **Edge Delivery** Projects. Use an [**Edge Delivery Pipeline**](/implementing/using-cloud-manager/cicd-pipelines/configuring-edge-delivery-pipeline) when the domain is attached to an **Edge Delivery Site**.
 
 This following sections of this document give an overview of important information regarding how config pipelines can be used and how configurations for them should be structured. It describes general concepts shared across either all or a subset of the features supported by config pipelines.
 
