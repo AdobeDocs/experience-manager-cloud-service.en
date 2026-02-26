@@ -3,6 +3,7 @@ title: Integrating with Adobe Learning Manager
 description: Learn how to integrate Adobe Learning Manager with Adobe Experience Manager sites.
 feature: Integration
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 677c6d5a-0f8d-4012-96f3-e5491d66ef17
 solution: Experience Manager Sites
 ---
