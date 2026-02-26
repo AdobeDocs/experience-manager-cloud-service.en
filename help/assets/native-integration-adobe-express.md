@@ -1,11 +1,11 @@
 ---
-title: AEM Assets native integration with Adobe Express
-description: AEM Assets native integration with Adobe Express allows you to directly access the assets stored in AEM Assets from within the Adobe Express user interface.
+title: Use Content Advisor to access AEM Assets in Adobe Express
+description: AEM Assets native integration with Adobe Express allows you to directly access the assets stored in AEM Assets using Content Advisor from within the Adobe Express user interface.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
 ---
-# Native integration with Adobe Express {#native-integration-adobe-express}
+# Use Content Advisor to access AEM Assets in Adobe Express {#native-integration-adobe-express-using-content-advisor}
 
 Adobe Experience Manager (AEM) Assets integrates natively with Adobe Express, allowing you to discover, access, and use assets from AEM Assets directly within the Express interface using Content Advisor.
 
@@ -170,13 +170,9 @@ If you do not have filters set up in Assets view via filter schema, Content Advi
 
 ### Access and reuse recent and saved searches {#saved-searches-content-advisor}
 
-Content Advisor saves your recent searches and also allows you to save frequently used searches for quick access later. Saved searches created in the Assets view are also available, enabling you to reuse predefined search criteria. Saved searches works consistently between Assets view and Content Advisor across browsers and in Incognito mode. This helps you efficiently locate assets using consistent search patterns across AEM Assets and Adobe Express.
+ Saved searches created in the Assets view are also available, enabling you to reuse predefined search criteria. Saved searches works consistently between Assets view and Content Advisor across browsers and in Incognito mode. This helps you efficiently locate assets using consistent search patterns across AEM Assets and Adobe Express.
 
-The Default Saved Search feature, available in Assets view, is not available yet in Content Advisor.
-
-The list of recent searches is not consistent between Assets view and Content Advisor. The same user can have different set of recent searches in Assets view and Content Advisor. If you are using Incognito mode to access Content Advisor, the list of recent searches is not available. In addition, recent searches are not shared across different browsers for the same user and are AEM environment-specific.
-
-To save your frequently used search using Content Advisor:
+ To save your frequently used search using Content Advisor:
 
 1. Specify a search term (optional), click the filters icon, and select the options based on your requirements to create a search query.
 
@@ -190,6 +186,11 @@ To save your frequently used search using Content Advisor:
 
 To apply any of the saved search items, click the filters icon, select the search item from the **[!UICONTROL Saved Searches]** drop-down list and click **[!UICONTROL Apply]**.
 
+Content Advisor saves your recent searches and also allows you to save frequently used searches for quick access later. The list of recent searches is not consistent between Assets view and Content Advisor. The same user can have different set of recent searches in Assets view and Content Advisor. If you are using Incognito mode to access Content Advisor, the list of recent searches is not available. In addition, recent searches are not shared across different browsers for the same user and are AEM environment-specific.
+
+
+
+The Default Saved Search feature, available in Assets view, is not available yet in Content Advisor.
 
 ### Search for assets across and within collections {#search-collections-content-advisor}
 
