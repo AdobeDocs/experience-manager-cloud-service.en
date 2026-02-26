@@ -25,12 +25,12 @@ During the deprecation time window, Adobe will remind customers of the actions t
 
 >[!IMPORTANT]
 >
->Several [deprecated APIs](#aem-apis) are targeting removal on **February 26, 2026**. Please review these key dates and impacts:
+>Several [deprecated APIs](#aem-apis) will be removed on **May 4, 2026**. Please review these key dates and impacts:
 >
->* **Starting January 26, 2026**: Actions Center notification emails are sent **weekly per environment** as a reminder to remove usage of these APIs.
->* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed.
->* **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
->* **April 30, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
+>* **Starting January 26, 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs.
+>* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
+>* **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
+>* **May 4, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
 >
 >To prevent deployment blocks, remove API usage before March 30, 2026.
 
@@ -80,15 +80,15 @@ This section lists functionality that has been removed.
 The APIs in the table below (click to expand to see it) have been announced as deprecated, but have not yet been removed.  Usage of these APIs must cease before the target removal date or you risk issues related to performance, availability, and security. Some APIs reference the API Removal Guidance section below.
 
 >[!IMPORTANT]
-> Several APIs are scheduled for removal on **February 26, 2026**. Please review these key dates and impacts:
 >
-> * **Starting January 26, 2026**: Actions Center notification emails are sent **weekly per environment** as a reminder to remove usage of these APIs.
-> * **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed.
-> * **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
-> * **May 4, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
+>Several [deprecated APIs](#aem-apis) will be removed on **May 4, 2026**. Please review these key dates and impacts:
 >
-> To prevent deployment blocks, remove API usage before March 30, 2026.
-
+>* **Starting January 26, 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs.
+>* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
+>* **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
+>* **May 4, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
+>
+>To prevent deployment blocks, remove API usage before March 30, 2026.
 
 <details>
   <summary>Expand to see the list of deprecated APIs.</summary>
