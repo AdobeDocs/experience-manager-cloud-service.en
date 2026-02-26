@@ -35,7 +35,4 @@ If you are interested in testing the upcoming features listed below and sharing 
 * Editor no longer defaults content to `{}` before content arrives, preventing data loss in certain situations.
 * Persistence of data when field is in focus was made more robust.
 * Changes are no longer lost in certain situations when editing in the left panel and then selecting another item in the editor window.
-* Manual css import is no longer required when using `headless-canvas`.
-* For CORS purposes the correct endpoints are used for stage, preview, and prod.
-* Description was added to all schema fields.
-* Fixed problem with Open API in the RTE.
+* A persistence problem with RTE fields for Content Fragments when using the OpenAPI endpoints was fixed.
