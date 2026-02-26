@@ -20,10 +20,7 @@ These **preview** release notes are provided as a convenience so you know what c
 >
 >The content of the actual release as well as the release date are subject to change.
 
-## Upcoming New Features {#new-features}
+## Upcoming Features {#upcoming-features}
 
-* TBD
-
-## Upcoming Improvements {#other-improvements}
-
-TBD
+* A component picker is now available in the in-context menu.
+* A color picker for the RTE is now available.
