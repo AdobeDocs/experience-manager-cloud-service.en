@@ -312,7 +312,8 @@ To deploy the theme to your Cloud Service environment using the front-end pipeli
 
 * 5.1 [Create a repository for theme](#create-a-new-theme-repo)
 * 5.2 [Push the changes to the repository](#committing-the-changes)
-* 5.3 [Run the frontend pipeline](#run-a-frontend-pipeline)
+* 5.3 [Set the Node.js version to 20](#53-set-the-nodejs-version-to-20)
+* 5.4 [Run the frontend pipeline](#run-a-frontend-pipeline)
 
 ##### 5.1 Create a repository for theme{#create-a-new-theme-repo}
 
@@ -366,9 +367,23 @@ Now, push the changes to the theme repository of your AEM Forms Cloud Service.
 
    ![Changes committed](/help/forms/assets/cmd_git_push.png)
 
+##### 5.3 Set the Node.js version to 20
+
+To set the Node.js version to 20 using the pipeline configuration:
+
+1. Go to the **Pipelines** section and locate your front-end pipeline.
+2. On the right side of the pipeline, click the three-dot menu **⋯** and from the dropdown, select **View/Edit variables**.
+3. In the **Variables Configuration** dialog, fill in the fields as follows:
+   * **NAME** - NODE_VERSION
+   * **VALUE** - 20
+   * **STEP APPLIED** - Build
+   * **TYPE** - Variable
+4. Click **Save** to apply the configuration.
+
+![pipeline configuration](/help/forms/assets/pipeline-config.png)
 
 
-##### 5.3 Run the frontend pipeline {#run-a-frontend-pipeline}
+##### 5.4 Run the frontend pipeline {#run-a-frontend-pipeline}
 
 The theme is deployed using the [front-end pipeline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). To deploy theme, perform the following steps:
 
@@ -416,21 +431,6 @@ Steps to apply a theme to an Adaptive Form are:
 1. Click **Create**.
 
 Adaptive Form themes are used as part of an Adaptive Form template to define styling while creating an Adaptive Form.
-
-## Set the Node.js version to 20
-
-To set the Node.js version to 20 using the pipeline configuration:
-
-1. Go to the **Pipelines** section and locate your front-end pipeline.
-2. On the right side of the pipeline, click the three-dot menu **⋯** and from the dropdown, select **View/Edit variables**.
-3. In the **Variables Configuration** dialog, fill in the fields as follows:
-   * **NAME** - NODE_VERSION
-   * **VALUE** - 20
-   * **STEP APPLIED** - Build
-   * **TYPE** - Variable
-4. Click **Save** to apply the configuration.
-
-![pipeline configuration](/help/forms/assets/pipeline-config.png)
 
 ## Best practices {#best-practices}
 
