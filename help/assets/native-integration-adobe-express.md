@@ -257,7 +257,7 @@ Adobe Express natively supports the formats available at [Review the minimum ima
 
    >[!NOTE]
    >
-   > The asset size must be less than 80 MB for desktop devices and 40 MB for mobile devices.
+   > The size of image format types such as JPEG and PNG must be less than 80 MB for desktop devices and 40 MB for mobile devices.
    
    
 
