@@ -248,18 +248,20 @@ Adobe Express natively supports the formats available at [Review the minimum ima
 
    | Supported format | Max dimensions / resolution                 | Max file size |
    |------------------|---------------------------------------------|---------------|
-   | JPEG             | 65 MP (for example, 8K × 8K or 16K × 4K)    | —             |
-   | PNG              | 65 MP (for example, 8K × 8K or 16K × 4K)    | —             |
+   | JPEG             | 65 MP (for example, 8K × 8K or 16K × 4K)    | 80 MB Desktop, 40 MB Mobile             |
+   | PNG              | 65 MP (for example, 8K × 8K or 16K × 4K)    | 80 MB Desktop, 40 MB Mobile            |
    | SVG              | —                                           | 250 KB        |
    | MP4              | 3840 × 3840 pixels                          | 200 MB        |
-   | PSD              | 65 MP (for example, 8K × 8K or 16K × 4K)    | —             |
+   | PSD              | 65 MP (for example, 8K × 8K or 16K × 4K)    | 80 MB Desktop, 40 MB Mobile            |
    | PDF              | —                                           | —             |
 
+<!-->
+   
    >[!NOTE]
    >
    > The size of image format types such as JPEG and PNG must be less than 80 MB for desktop devices and 40 MB for mobile devices.
-   
-   
+
+-->   
 
 
 ## Limitations {#limitations}
