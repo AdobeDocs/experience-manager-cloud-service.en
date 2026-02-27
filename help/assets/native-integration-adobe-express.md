@@ -255,14 +255,6 @@ Adobe Express natively supports the formats available at [Review the minimum ima
    | PSD              | 65 MP (for example, 8K × 8K or 16K × 4K)    | 80 MB Desktop, 40 MB Mobile            |
    | PDF              | —                                           | —             |
 
-<!-->
-   
-   >[!NOTE]
-   >
-   > The size of image format types such as JPEG and PNG must be less than 80 MB for desktop devices and 40 MB for mobile devices.
-
--->   
-
 
 ## Limitations {#limitations}
 
