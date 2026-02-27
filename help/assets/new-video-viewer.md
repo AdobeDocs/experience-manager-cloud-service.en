@@ -94,7 +94,7 @@ Execute the following steps to configure the viewer preset:
 
 1. Select the **Dynamic Media** component on the page.
 2. Click **Configure** in the component toolbar.
-   ![Open Dynamic Media settings](assets/open-settings.jpeg)
+   ![Open Dynamic Media settings](assets/configure-asset.png)
 
 3. In the **Dynamic Media settings dialog**, select **Video (new)** from the **Viewer Preset** drop-down list.
    ![Select Video (new) viewer preset](assets/viewer-preset.jpeg)
@@ -198,72 +198,34 @@ The Video Engagement Report includes the following fields:
 | `engagement_score` | Average watch percentage across all play events. | (Total percentage of video timeline viewed across all sessions ÷ `video_views`) |
 | `tenant_name` | Identifier of the company or tenant associated with the data. | NA |
 
-## Frequently asked questions{#faq-video-engagement}
+## Frequently asked questions {#faq-video-engagement}
 
-+++**Does autoplay count as a video view?**
++++If a video is set to autoplay, is it counted as a view automatically, or only after the user watches for a minimum duration?
 
-If autoplay is enabled, playback starts automatically when the video loads.  
-[To confirm] Whether a view is counted immediately on autoplay or only after a minimum playback duration depends on the engagement tracking logic.
-
-+++
-
-+++**What qualifies as a completed video view?**
-
-A completed view typically occurs when playback reaches the end of the video.  
-[To confirm] Whether completion requires 100% playback or allows a defined completion threshold.
+Autoplay is counted as a video view. Playback initiated automatically is recorded as a view.
 
 +++
 
-+++**If a user watches only part of a video, is it counted as a view?**
++++If a user watches only part of a video (for example, the first 2 seconds and the last 2 seconds of a 10-second video), is it counted as a completed view?
 
-Partial playback is generally counted as a view once playback begins.  
-[To confirm] The minimum playback duration required for a view to be counted.
-
-+++
-
-+++**If a user seeks directly to the end of the video, is it counted as a completed view?**
-
-[To confirm] Whether completion is determined strictly by reaching the end of playback or requires continuous viewing from the beginning.
+A view is counted as completed when playback reaches the end of the video timeline, even if portions of the video were skipped.
 
 +++
 
-+++**Can engagement reports be generated for custom time periods?**
++++If a user scrubs backward and re-watches portions of the video, does it increase the video_views count, the engagement_score, or both?
 
-Engagement reports can be generated for specific reporting periods.  
-[To confirm] Whether supported reporting periods include daily, weekly, monthly, and custom date ranges.
-
-+++
-
-+++**Are engagement reports available in the user interface?**
-
-Currently, reports are generated upon request.  
-[To confirm] Whether self-service report generation is supported or planned.
+Re-watching portions of the video does not increase the video_views count. Additional playback contributes to the engagement_score.
 
 +++
 
-+++**Are deleted video assets included in engagement reports?**
++++If the same user watches the same video multiple times without reloading the page, how are video_views and engagement_score calculated?
 
-Deleted assets are typically excluded from reporting results.  
-[To confirm] Whether historical engagement data for deleted assets remains available.
-
-+++
-
-+++**Does switching to the New Video Viewer affect engagement reporting?**
-
-The New Video Viewer supports engagement tracking and reporting.  
-[To confirm] Whether reporting applies only to playback using the New Video Viewer or includes playback from existing viewers.
+Repeated playback without reloading the page does not increase the video_views count. Additional playback contributes to the engagement_score.
 
 +++
 
-+++**Does reloading the page count as a new video impression?**
++++Does pausing and resuming a video affect engagement tracking or completion rate calculation?
 
-[To confirm] Whether impressions are counted per page load, per playback, or per user session.
-
-+++
-
-+++**Are engagement metrics available for all Dynamic Media videos?**
-
-Engagement reporting is supported for videos played using the New Video Viewer.  
-[To confirm] Whether reporting applies to both newly ingested and existing video assets.
+Pausing and resuming playback does not affect engagement tracking or completion rate calculation.
 
 +++
