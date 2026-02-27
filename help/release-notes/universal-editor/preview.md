@@ -22,7 +22,7 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
-* A component picker is now available in the in-context menu.
+* The component picker has a new design.
 * A color picker for the RTE is now available.
 
 ## Upcoming Improvements {#upcoming-improvements}
