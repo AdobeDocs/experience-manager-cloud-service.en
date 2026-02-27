@@ -238,6 +238,12 @@ As a best practice, Adobe recommends specifying values in the rest of the fields
 
 7. Click **[!UICONTROL Upload]** to upload the asset(s) to AEM Assets.
 
+   >[!NOTE]
+   >
+   > If you are saving asset(s) to Content Hub delivery repository, Project or campaign name is a mandatory field. You also do not need to select a destination folder in this case, as it is automatically derived from metadata.
+
+## Supported file formats {#supported-file-formats-import-assets}
+
    <table> 
     <tbody>
      <tr>
@@ -266,6 +272,9 @@ As a best practice, Adobe recommends specifying values in the rest of the fields
    </tr>
     </tbody>
    </table>
+
+   [Review the minimum image requirements](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html) when uploading an image to the Adobe Express editor.
+
 
 ## Limitations {#limitations}
 
