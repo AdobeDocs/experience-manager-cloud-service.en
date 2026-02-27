@@ -78,7 +78,7 @@ You can configure the metadata fields that display to the users while uploading 
 
 1. Click **[!UICONTROL Add metadata]**. 
 
-1. Specify a label for the property, map it to a property using the **[!UICONTROL Metadata]** field, and select the input type for the new asset metadata.
+1. Specify a label for the property, map it to a property using the **[!UICONTROL Metadata]** field, and select the appropriate input type for the new asset metadata. The input type labels are updated to align with Adobe Experience Manager (AEM).
 
 1. Click the **[!UICONTROL Required field]** toggle to make the new metadata field mandatory to specify for users while uploading new assets.
 
@@ -102,12 +102,9 @@ Metadata enabled on the Configuration User Interface display on the asset upload
 Content Hub allows administrators to configure filters that display while searching for assets. Execute the following steps to add a new filter:
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Filters]**.
-
 1. Click **[!UICONTROL Add filters]**. 
-
-1. Specify a label for the filter, map it to a property using the **[!UICONTROL Metadata]** field, and select the input type for the new filter.
+1. Specify a label for the filter, map it to a property using the **[!UICONTROL Metadata]** field, and select the appropriate input type for the new filter. The input type labels are updated to align with Adobe Experience Manager (AEM).
 1. Click **[!UICONTROL Confirm]**. The new filter displays in the list of the existing filters.
-
 1. Click **[!UICONTROL Save]** to apply the changes so that the new filter gets displayed on the Search page while filtering assets.
 
    >[!NOTE]
@@ -141,8 +138,7 @@ You can also configure the asset properties that display for each asset, such as
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Asset details]**.
 
 1. Click **[!UICONTROL Add metadata]**. 
-
-1. Specify a label for the property, map it to a property using the **[!UICONTROL Metadata]** field, and select the input type for the new asset metadata.
+1. Specify a label for the property, map it to a property using the **[!UICONTROL Metadata]** field, and select the appropriate input type for the new asset metadata. The input type labels are updated to align with Adobe Experience Manager (AEM).
 1. Click **[!UICONTROL Confirm]**. The new metadata displays in the list of the existing asset properties.
 
 1. Click **[!UICONTROL Save]** to apply the changes so that the new property gets displayed on the asset details page.
