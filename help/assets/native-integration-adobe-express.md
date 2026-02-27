@@ -244,7 +244,7 @@ As a best practice, Adobe recommends specifying values in the rest of the fields
 
 ## Supported file formats {#supported-file-formats-import-assets}
 
-Adobe Express natively supports the formats available at [Review the minimum image requirements](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). AEM Assets supports the following format types:
+Adobe Express natively supports the formats available at [Review the minimum image requirements](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). However, AEM Assets supports the following format types:
 
    | Supported format | Max dimensions / resolution                 | Max file size |
    |------------------|---------------------------------------------|---------------|
