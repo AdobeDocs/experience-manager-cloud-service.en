@@ -106,6 +106,13 @@ Execute the following steps to configure the viewer preset:
 
 The video loads on the page using the New Video Viewer.
 
+> **Note:** The New Video Viewer does not automatically replace existing videos. Users must manually select **Video (new)** in the **Viewer Preset** when using the Dynamic Media component, or update direct URLs to point to the New Video Viewer where needed.
+
+### Migrating videos using direct URLs
+
+If your videos are accessed via direct URLs instead of the Dynamic Media component, you can switch them to the New Video Viewer by updating the URL. For example: https://s7d1.scene7.com/dmviewers/html5/VideoViewer.html?asset=
+<video-asset>
+
 ## Viewer modifiers {#viewer-modifiers}
 
 Viewer modifiers allow you to control asset loading, playback behavior, streaming format selection, and viewer presentation.
