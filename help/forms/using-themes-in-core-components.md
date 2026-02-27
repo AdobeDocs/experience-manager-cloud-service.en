@@ -312,7 +312,7 @@ To deploy the theme to your Cloud Service environment using the front-end pipeli
 
 * 5.1 [Create a repository for theme](#create-a-new-theme-repo)
 * 5.2 [Push the changes to the repository](#committing-the-changes)
-* 5.3 [Set the Node.js version to 20](#53-set-the-nodejs-version-to-20)
+* 5.3 [Set the Node.js version to 20](#53-set-the-nodejs-version-to-20-set-node)
 * 5.4 [Run the frontend pipeline](#run-a-frontend-pipeline)
 
 ##### 5.1 Create a repository for theme{#create-a-new-theme-repo}
@@ -367,7 +367,7 @@ Now, push the changes to the theme repository of your AEM Forms Cloud Service.
 
    ![Changes committed](/help/forms/assets/cmd_git_push.png)
 
-##### 5.3 Set the Node.js version to 20
+##### 5.3 Set the Node.js version to 20 {#set-node}
 
 To set the Node.js version to 20 using the pipeline configuration:
 
