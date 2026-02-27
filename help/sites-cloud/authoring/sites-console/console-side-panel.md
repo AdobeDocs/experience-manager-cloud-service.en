@@ -1,6 +1,7 @@
 ---
 title: Sites Console Side Panel
 description: Learn how to use the side panel in the AEM sites console to better understand and navigate your content.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring

@@ -1,6 +1,7 @@
 ---
 title: The Sites Console
 description: Learn how to use the Sites console to manage and organize your AEM pages.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring

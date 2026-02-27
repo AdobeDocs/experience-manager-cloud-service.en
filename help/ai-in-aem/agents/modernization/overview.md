@@ -5,13 +5,14 @@ feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
 ---
+
 # Experience Modernization Agent Overview {#experience-modernization-agent}
 
 Learn how the Experience Modernization Agent onboards websites into Edge Delivery Services with the help of AI.
 
 >[!NOTE]
 >
->The Experience Modernization Agent supersedes the former migration skill of the [Experience Production Agent.](/help/ai-in-aem/agents/production/overview.md)
+>The Experience Modernization Agent supersedes the former migration skill of the [Brand Experience Agent.](/help/ai-in-aem/agents/brand-experience/overview.md)
 
 ## Introduction {#introduction}
 
