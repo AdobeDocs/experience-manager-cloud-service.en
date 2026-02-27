@@ -244,36 +244,22 @@ As a best practice, Adobe recommends specifying values in the rest of the fields
 
 ## Supported file formats {#supported-file-formats-import-assets}
 
-   <table> 
-    <tbody>
-     <tr>
-      <th><strong>Supported formats</strong></th>
-      <th><strong>Size</strong></th>
-     </tr>
-    </tr>
-    <tr>
-        <td>[!UICONTROL JPEG]</td>
-        <td> 65MP (For example, 8K x 8K or 16K x 4K) </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL PNG]</td>
-        <td> 65MP (For example, 8K x 8K or 16K x 4K) </td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL SVG]</td>
-        <td> Maximum 250 KB</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL MP4]</td>
-        <td> 3840 X 3840 pixels, Maximum 200 MB</td>
-    </tr>
-    <tr>
-      <td colspan="2"> <i> The asset size must be less than 80 MB for desktop devices and 40 MB for mobile devices. </i></td>
-   </tr>
-    </tbody>
-   </table>
+Adobe Express natively supports the formats available at [Review the minimum image requirements](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html). AEM Assets supports the following format types:
 
-   [Review the minimum image requirements](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html) when uploading an image to the Adobe Express editor.
+   | Supported format | Max dimensions / resolution                 | Max file size |
+   |------------------|---------------------------------------------|---------------|
+   | JPEG             | 65 MP (for example, 8K × 8K or 16K × 4K)    | —             |
+   | PNG              | 65 MP (for example, 8K × 8K or 16K × 4K)    | —             |
+   | SVG              | —                                           | 250 KB        |
+   | MP4              | 3840 × 3840 pixels                          | 200 MB        |
+   | PSD              | 65 MP (for example, 8K × 8K or 16K × 4K)    | —             |
+   | PDF              | —                                           | —             |
+
+   >[!NOTE]
+   >
+   > The asset size must be less than 80 MB for desktop devices and 40 MB for mobile devices.
+   
+   
 
 
 ## Limitations {#limitations}
