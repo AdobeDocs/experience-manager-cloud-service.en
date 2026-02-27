@@ -146,7 +146,7 @@ Previously focused on the **Build & Unit Testing** step, pipeline troubleshootin
 
 The Code Scanning step evaluates code against quality rules, detects security vulnerabilities, and generates detailed quality reports. If this step fails, you can use the AI Assistant to prompt the Development Agent for a root cause analysis along with recommended remediation guidance.
 
-Learn more about the [Development Agent](/help/ai-in-aem/agents/development/overview.md) and pipeline troubleshooting.
+Learn more about the [Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md) and pipeline troubleshooting.
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
@@ -235,7 +235,7 @@ Learn more about [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-ae
 
 #### Web Tier Config Pipeline Troubleshooting with the Development Agent (Beta Program) {#devagent-webtier}
 
-The Development Agent's [pipeline troubleshooting](/help/ai-in-aem/agents/development/overview.md) capabilities help developers efficiently diagnose and resolve issues in AEM as a Cloud Service deployments. In addition to supporting Full Stack pipelines (Deployment and Code Quality), the Development Agent now supports troubleshooting for the **Web Tier Config Pipeline** as part of a beta program.
+The Development Agent's [pipeline troubleshooting](/help/ai-in-aem/agents/brand-experience/development/development.md) capabilities help developers efficiently diagnose and resolve issues in AEM as a Cloud Service deployments. In addition to supporting Full Stack pipelines (Deployment and Code Quality), the Development Agent now supports troubleshooting for the **Web Tier Config Pipeline** as part of a beta program.
 
 To request access to the beta, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com). Pre-existing access to Agents in AEM is required.
 
