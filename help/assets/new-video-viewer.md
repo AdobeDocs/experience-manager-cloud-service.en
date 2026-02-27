@@ -110,8 +110,7 @@ The video loads on the page using the New Video Viewer.
 
 ### Migrating videos using direct URLs
 
-If your videos are accessed via direct URLs instead of the Dynamic Media component, you can switch them to the New Video Viewer by updating the URL. For example: https://s7d1.scene7.com/dmviewers/html5/VideoViewer.html?asset=
-<video-asset>
+If your videos are accessed via direct URLs instead of the Dynamic Media component, you can switch them to the New Video Viewer by updating the URL. For example: `https://s7d1.scene7.com/dmviewers/html5/VideoViewer.html?asset=<video-asset>`
 
 ## Viewer modifiers {#viewer-modifiers}
 
