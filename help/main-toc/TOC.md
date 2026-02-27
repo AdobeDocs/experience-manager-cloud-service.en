@@ -99,6 +99,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2026 {#2026}
+      + [Maintenance Release Notes for 2026.2.0](/help/release-notes/maintenance/2026/2026-2-0.md)
       + [Maintenance Release Notes for 2026.1.0](/help/release-notes/maintenance/2026/2026-1-0.md)
     + 2025 {#2025}
       + [Maintenance Release Notes for 2025.12.0](/help/release-notes/maintenance/2025/2025-12-0.md)
@@ -247,6 +248,9 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.02.19 Release Notes](/help/release-notes/universal-editor/2026/2026-02-19.md)
+      + [2026.02.13 Release Notes](/help/release-notes/universal-editor/2026/2026-02-13.md)
+      + [2026.02.05 Release Notes](/help/release-notes/universal-editor/2026/2026-02-05.md)
       + [2026.01.29 Release Notes](/help/release-notes/universal-editor/2026/2026-01-29.md)
       + [2026.01.22 Release Notes](/help/release-notes/universal-editor/2026/2026-01-22.md)
       + [2026.01.15 Release Notes](/help/release-notes/universal-editor/2026/2026-01-15.md)
@@ -757,6 +761,7 @@ user-guide-title: AEM as a Cloud Service
     + [AEM Assets View UI Extensibility](/help/assets/aem-assets-view-ui-extensibility.md)
 
     + [Manage reports](/help/assets/manage-reports-assets-view.md)
+    + [Cascading Metadata Assets View](/help/assets/cascading-metadata-assets-view.md)
   + Content Hub {#content-hub}
     + [Overview](/help/assets/product-overview.md)
     + [What's new in Content Hub](/help/assets/whats-new.md)
@@ -875,8 +880,9 @@ user-guide-title: AEM as a Cloud Service
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
         + [Create an Adaptive Form template based on Core Components](/help/forms/template-editor-core-components.md)
         + [Create an Adaptive Form (Core Components) based on XFA Form templates](/help/forms/create-adaptive-form-using-xfa-templates.md)
-        + [Generate Document of Record for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
-        + [Supported HTML markup tags in Document of Record](/help/forms/html-markup-tags-support-in-document-of-record.md)
+        + [Generate Submission PDF (formerly Document of Record) for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
+        + [Customize auto-generated Document of Record template](/help/forms/customize-document-of-record-template.md)
+        + [Supported HTML markup tags in Submission PDF](/help/forms/html-markup-tags-support-in-document-of-record.md)
         + [Use machine translation or human translation to translate an Adaptive Form](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
         + [Configuring redirect page or thank you message](/help/forms/configure-redirect-page-or-thank-you-message.md)
         + [Create forms with repeatable sections](/help/forms/create-forms-repeatable-sections.md)
@@ -960,7 +966,7 @@ user-guide-title: AEM as a Cloud Service
         + [Add information from user data to form submission metadata](/help/forms/form-submission-metadata.md)
         + [API to invoke Form Data Model (FDM) service from Adaptive Forms](/help/forms/invoke-form-data-model-services.md)
       + [Prefill Adaptive Form fields](/help/forms/prepopulate-adaptive-form-fields.md)
-      + [Generate Document of Record](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+      + [Generate Submission PDF (formerly Document of Record)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
       + [Add support for new locales to an adaptive form](/help/forms/supporting-new-language-localization.md)
       + Add or improve metadata {#manage-metadata}
         + [Add, remove, or edit metadata of an Adaptive Form](/help/forms/manage-form-metadata.md)
@@ -1039,7 +1045,7 @@ user-guide-title: AEM as a Cloud Service
      + [Copy and Paste Interactive Communication](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
    + Associate UI {#associateui} 
      + [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
-     + [Generate Personalized Communications with Associate UI](/help/forms/interactive-communication/invoke-associate-ui.md)
+     + [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md)
    + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
 + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
@@ -1085,17 +1091,16 @@ user-guide-title: AEM as a Cloud Service
   + [Using MCP with AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
   + Agents in AEM {#agents}
     + [Overview](/help/ai-in-aem/agents/overview.md)
-    + Experience Production Agent {#production}
-      + [Overview](/help/ai-in-aem/agents/production/overview.md)
-      + [Communication Creation Skill](/help/ai-in-aem/agents/production/communications-creation.md)
-      + [Content Update Skill](/help/ai-in-aem/agents/production/content-update.md)
-      + [Form Creation Skill](/help/ai-in-aem/agents/production/form-creation.md)
-    + Content Optimization Agent {#content-optimization}
-      + [Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/overview.md)
-    + Discovery Agent {#discovery}
-      + [Discovery Agent](/help/ai-in-aem/agents/discovery/overview.md)
-    + Development Agent {#development}
-      + [Overview](/help/ai-in-aem/agents/development/overview.md)
+    + Brand Experience Agent {#brand-experience}
+      + [Overview](/help/ai-in-aem/agents/brand-experience/overview.md)
+      + [Content Update Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
+      + [Communication Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
+      + [Form Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
+      + [Development Job](/help/ai-in-aem/agents/brand-experience/development/development.md)
+    + Content Advisor Agent {#content-advisor}
+      + [Overview](/help/ai-in-aem/agents/content-advisor/overview.md)
+      + [Content Discovery Job](/help/ai-in-aem/agents/content-advisor/discovery.md)
+      + [Content Optimization Job](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
     + Governance Agent {#governance}
       + [Overview](/help/ai-in-aem/agents/governance/overview.md)
     + Experience Modernization Agent {#modernization}
@@ -1355,8 +1360,8 @@ user-guide-title: AEM as a Cloud Service
       + [Manage Repositories in Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
       + [Add an Adobe Repository](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
       + [Add a Private Repository](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-      + [Add an External Repository (Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
-      + [Manage Access Tokens of External Repositories (Beta)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+      + [Add an External Repository](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+      + [Manage Access Tokens of External Repositories](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
       + [Access Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
       + [Git Submodule Support](/help/implementing/cloud-manager/managing-code/git-submodules.md)
       + [Use Git with Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)

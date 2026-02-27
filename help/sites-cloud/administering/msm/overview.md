@@ -3,6 +3,7 @@ title: Reusing Content - Multi Site Manager and Live Copy
 description: Get an introduction to reusing content with AEM's powerful Live Copies and the Multi Site Manager features.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
 ---
