@@ -49,6 +49,10 @@ Getting early access to features that Adobe is developing lets customers and par
 **Current beta programs**
 The following sections list active beta programs.
 
+### Agents in AEM {#agents-in-aem}
+
+If you would like to explore the powerful, new AEM agentic capabilities across production, governance, optimization, discovery, and development, [please learn about how you can access them here.](/help/ai-in-aem/agents/overview.md)
+
 <!--
 ### Agents in AEM (Explorer program) {#agents-in-aem-beta-program}
 
