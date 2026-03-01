@@ -29,7 +29,7 @@ During the deprecation time window, Adobe will remind customers of the actions t
 >
 >* **Starting January 26, 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs.
 >* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
->* **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
+>* **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
 >* **May 4, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
 >
 >To prevent deployment blocks, remove API usage before March 30, 2026.
@@ -85,7 +85,7 @@ The APIs in the table below (click to expand to see it) have been announced as d
 >
 >* **Starting January 26, 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs.
 >* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
->* **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
+>* **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
 >* **May 4, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
 >
 >To prevent deployment blocks, remove API usage before March 30, 2026.
@@ -377,6 +377,8 @@ After updating your code, verify that no deprecated API usage remains in Cloud M
 ### General Guidelines
 
 If you use a 3rd party library that currently requires Deprecated API, try updating to a newer version of that 3rd party library.
+
+If you decide to deploy your own version of the Deprecated API, e.g. your own version of Guava, make sure that all your bundles using this API will be wired to your version. If you decide to deploy the same major version as currently included in Cloud Service, no further action is needed. However, if you follow the recommendations and deploy the latest version then you need to adjust your Maven project, include that library as a new dependency before the `aem-sdk-api`. This way your code will be wird to the new version. Once you have made the changes, verify with the [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) that the usage of the Deprecated API is not flagged anymore.
 
 If you are using ACS AEM Commons, use at least version 6.11.0 (latest version is recommended) and make sure that you [include the version for Cloud Service](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) by specifying the classifier `cloud` for the content package.
 
