@@ -189,26 +189,6 @@ OSGi properties:
 
 -->
 
-#### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
-
-Adobe upgraded **Stage** and **Production** environments to the higher-performance **Java 21 runtime** on October 14th, 2025. Starting **February 9th** (gradual rollout through February 11th), neither the AEM Cloud Service SDK nor any cloud environments will work with Java 11 runtime.
-
->[!NOTE]
->
-> To take advantage of the latest performance optimizations and language enhancements, it is recommended to build with Java 17 or Java 21  (preferred). Building with Java 8 and Java 11 remains supported for now but will be deprecated in an upcoming release. A separate communication will be issued prior to deprecation. See the *build time requirements* section of [this article](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
->
-
-#### Enforcement of AEM Java Logs Configuration Policy {#logconfig-policy}
-
-AEM Java logs must follow a standard format to ensure reliable monitoring across all customer environments. Custom log configurations—such as changes to log formatting, output files, or default log levels—are no longer supported. Logs must remain directed to the default files, and default log levels for AEM product code must be preserved. See full details in the [Logging article](/help/implementing/developing/introduction/logging.md#configuration-loggers).
-
-Any unsupported custom logging overrides *are now ignored*. Most customers were not impacted and Adobe has contacted customers whose current configuration may be affected.
-
-Please review and update any downstream processes that rely on custom logging behavior. For example:
-
-* If your log forwarding system expects a custom log format, you may need to adjust your ingestion rules.
-* If you've previously reduced log verbosity by changing log levels, please note that reverting to default levels may increase log volume.
-
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
 
 #### AEM Edge Functions (Beta Program) {#edge-functions}
