@@ -19,7 +19,7 @@ The 2026.3.0 feature activation will provide the full feature set for this maint
 ### Enhancements {#enhancements-24678}
 
 * FORMS-18927: Added support for custom MIME types and file extensions in the AEM Forms File Attachment component, enabling users to attach a wider variety of document types.
-* FORMS-18211, FORMS-22936: Users experienced an accessibility issue where checkboxes were not grouped correctly within a `<fieldset>` element, with the group label not nested in a <legend> as the first child. This affected users with disabilities who rely on screen readers for navigation. Core Components based Adaptive Forms has now introduced fieldset and legend support to provide better accessibility support.
+* FORMS-18211, FORMS-22936: Users experienced an accessibility issue where checkboxes were not grouped correctly within a `<fieldset>` element, with the group label not nested in a `<legend>` as the first child. This affected users with disabilities who rely on screen readers for navigation. Core Components based Adaptive Forms has now introduced fieldset and legend support to provide better accessibility support.
 Added Fieldset option at the panel that enables users to organize and group related fields more effectively within their forms.
 * FORMS-23880: Added Theme Editor support in core components. This enhancement enables users to customize and manage themes more efficiently within the core components, improving their design flexibility and workflow.
 * FORMS-21772: Added versioning support to Forms Management UI. This enhancement enables users to create and retrieve versions for both Core Components based and Foundation Components based Adaptive Forms, Form Fragments, Themes, and Binary Assets, improving asset management and version control.
