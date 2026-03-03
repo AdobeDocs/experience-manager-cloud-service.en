@@ -22,7 +22,7 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2026.1.0) is January 29, 2026. The next feature release (2026.2.0) is planned for February 26, 2026.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2026.1.0) is January 29, 2026. The next feature release (2026.2.0) is planned for March 3, 2026.
 
 ## Maintenance Release Notes {#maintenance}
 
@@ -48,6 +48,10 @@ Getting early access to features that Adobe is developing lets customers and par
 
 **Current beta programs**
 The following sections list active beta programs.
+
+### Agents in AEM {#agents-in-aem}
+
+If you would like to explore the powerful, new AEM agentic capabilities across production, governance, optimization, discovery, and development, [please learn about how you can access them here.](/help/ai-in-aem/agents/overview.md)
 
 <!--
 ### Agents in AEM (Explorer program) {#agents-in-aem-beta-program}
@@ -147,12 +151,12 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 #### Java API Deprecations {#java-api-deprecation}
 
-The deprecated APIs targeting 2/26/2026 removal should no longer be used in code. To prevent deployment blocks, remove API usage before March 26, 2026. Important dates:
+The deprecated APIs targeting 2/26/2026 removal should no longer be used in code. To prevent deployment blocks, remove API usage before March 30, 2026. Important dates:
 
 * **Starting January 26, 2026**: Actions Center notification emails are sent **weekly per environment** as a reminder to remove usage of these APIs.
 * **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed.
-* **March 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
-* **April 30, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
+* **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
+* **May 4, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
 
 See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
