@@ -1,7 +1,7 @@
 ---
 title: Micro-Frontend Content Fragment Selector Properties for Adobe Experience Manager as a Cloud Service
 description: Properties to configure the Micro-Frontend Content Fragment Selector to search, find, and retrieve content fragments from your application.
-role: Admin, User
+role: Admin, User, Developer
 exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
 ---
 # Content Fragment Selector - Related Properties {#content-fragment-selector-related-properties}
