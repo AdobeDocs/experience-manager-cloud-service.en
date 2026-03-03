@@ -92,7 +92,7 @@ Click the **[!UICONTROL Auto-approval]** toggle if you need all assets that you 
 
 Click **[!UICONTROL Save]** after making all modifications to apply the changes.
 
-![Configuration UI upload details on Content Hub](/help/assets/assets/import-new.png)
+![Configuration UI upload details on Content Hub](assets/import-new.png)
 
 Metadata enabled on the Configuration User Interface display on the asset upload page:
 ![Upload metadata on Content Hub](assets/add-assets-for-approval1.png)
