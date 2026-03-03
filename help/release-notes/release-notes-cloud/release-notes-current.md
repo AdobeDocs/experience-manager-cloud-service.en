@@ -30,9 +30,9 @@ You can find the latest maintenance release notes [here](/help/release-notes/mai
 
 ## Release Video {#release-video}
 
-Have a look at the January 2026 Release Overview video for a summary of the features added in the 2026.1.0 release:
+Have a look at the February 2026 Release Overview video for a summary of the features added in the 2026.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480399/?quality=12)
 
 
 ## AEM Beta Programs {#aem-beta-programs}
@@ -206,6 +206,8 @@ Common use cases include:
 We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
 
 #### Cloud Manager MCP Server (Beta Program) {#cm-mcp-server}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
 
 Modern IDEs use the Model Context Protocol (MCP) to enable large language models (LLMs) to invoke tools exposed by MCP servers. Instead of integrating directly with low-level API specifications, developers can simply describe their intent in natural language.
 
