@@ -50,6 +50,15 @@ The 2026.2.0 feature activation provides the full feature set for this maintenan
 * SITES-30452: Content API with ASO - title & description suggestions.
 * SITES-33116: Fix path validation.
 * SITES-34234: Page editor: preserve content tree state.
+* FORMS-18927: Added support for custom MIME types and file extensions in the AEM Forms File Attachment component, enabling users to attach a wider variety of document types.
+* FORMS-18211, FORMS-22936: Users experienced an accessibility issue where checkboxes were not grouped correctly within a <fieldset> element, with the group label not nested in a <legend> as the first child. This affected users with disabilities who rely on screen readers for navigation. Core Components based Adaptive Forms has now introduced fieldset and legend support to = provide better accessibility support.
+Added Fieldset option at the panel that enables users to organize and group related fields more effectively within their forms[SS1.1].
+* (Early Access) FORMS-23880: Added Theme Editor support in core components. This enhancement enables users to customize and manage themes more efficiently within the core components, improving their design flexibility and workflow.[SS3.1]
+* FORMS-21772: Added versioning support to Forms Management UI. This enhancement enables users to create and retrieve versions for both Core Components based and Foundation Components based Adaptive Forms, Form Fragments, Themes, and Binary Assets, improving asset management and version control.[SS4.1]
+* FORMS-23094: Added client-side parsing for Foundation Components based Adaptive Forms, enabling enterprise customers to migrate their forms to the cloud. This enhancement supports EcmaScript 6+ features in the code-editor rules, which were previously unsupported, facilitating a smoother migration process.
+* FORMS-23853: Added support for overriding reCAPTCHA in the sling component. This enhancement enables users to customize reCAPTCHA settings, improving flexibility and security for enterprise customers.
+
+
 
 ### Fixed Issues {#fixed-issues-24464}
 
@@ -82,6 +91,20 @@ The 2026.2.0 feature activation provides the full feature set for this maintenan
 * GRANITE-64101: OOTB indexes converted to ES reverted back to Lucene on restart.
 * SITES-24530: Touch target of close/remove buttons in search modal not large enough.
 * SITES-31425: Unlocalized error message in start workflow.
+* FORMS-23687: Users experienced validation failures when using "contains" in rules without setting a default value or value.
+* FORMS-23741: Users experienced issues where the InvokeDDX and Asset upload steps did not run in cascade, requiring two separate workflow executions. This affected the production environment using AEM as a Cloud Service with the Sites and Forms Add-on.
+* FORMS-23877: Users experienced issues with custom functions not loading at runtime when creating forms directly within Sites pages using an older core component version.
+* FORMS-24038: Users experienced issues with the navigation button when more tabs were added dynamically.
+* FORMS-23721: Fixed an issue where validation patterns configured for text inputs in the Edit Dialog were not persisted. Previously, the pattern value was saved but not retained or displayed in the UI, resulting in confusion for form authors.[SS8.1]
+* FORMS-23456: Users experienced mis-announcements by screen readers on mobile devices  for hidden header rows in a table when using the Table component in Adaptive Forms. A hidden table header was announced out of context, causing confusion for users relying on iOS VoiceOver and Android TalkBack.[SS9.1]
+* FORMS-23454: Users experienced issues with the Date Picker for Core Components based Adaptive Forms. When entering invalid dates, the system would auto-correct to closed possible dates.
+* FORMS-23117: Users experienced hCaptcha not translating correctly in Foundation Components based Adaptive Forms.[SS11.1]
+* FORMS-22634: Users experienced an issue where email attachments were not included when both "Include Attachment" and "Use HTML template" options were used together.
+* FORMS-23288: Users experienced issues with Adaptive Forms embedded in Asset Share Commons modals. The form failed to load correctly when the URL contained ".html" in the mid-path. [SS14.1]
+* FORMS-19198: Users experienced 404 errors when embedding forms using dispatcher rules. The errors occurred for URLs such as /etc.clientlibs/toggles.json, rum library, and analyticsparserconfigparser.json, due to the URL rewriter not being able to rewrite these URLs.
+    
+
+
 
 ### Known Issues {#known-issues-24464}
 
