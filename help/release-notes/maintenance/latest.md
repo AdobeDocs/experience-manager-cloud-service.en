@@ -10,92 +10,109 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 24464 {#release-24464}
+## Release 24678 {#release-24678}
 
-Summarized below are the continuous improvements for maintenance release 24464, which was publicly released on February 18, 2026. The previous maintenance release was release 24288.
+Summarized below are the continuous improvements for maintenance release 24678, which was publicly released on March 4, 2026. The previous maintenance release was release 24464.
 
-The 2026.2.0 feature activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+The 2026.3.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-24464}
+### Enhancements {#enhancements-24678}
 
-* AEMARCH-264: Add support for validating conditional requests based on RequestEntity.
-* AEMARCH-269: Expose JavaEE validation APIs for OpenAPI implementations.
-* AEMARCH-276: Provide i18n support through RequestEntity.
-* ASSETS-10995: Set limit on number of assets in download zip.
-* ASSETS-50788: Update Search API to use Asset Metadata GET API.
-* ASSETS-50946: Map request body using Metadata GET API to JCR metadata.
-* ASSETS-55866: Avoid submitting new request for same asset until previous processing is complete.
-* ASSETS-60300: Provide API to retrieve async job context and result.
-* ASSETS-60574: Add support for latest version of Sling API bundle.
-* ASSETS-61049: Continue metadata manager bundle development.
-* ASSETS-61692: Perform semantic search by default in Search Open API.
-* ASSETS-61696: BAM route and MFE wrapper on assets view.
-* ASSETS-61854: Send GenStudio solution in activation/deactivation message.
-* ASSETS-61973: Create API in AEM for managing prompts.
-* ASSETS-62182: Asset Compute event handler for c2pa-manifest rendition.
-* ASSETS-62311: Search regression issues.
-* ASSETS-62413: Add support for customModifier field in every layer in JSON.
-* ASSETS-62432: Merge folder delete API PR.
-* ASSETS-62540: Increase ui-touch-optimized version in quickstart.
-* ASSETS-62622: Handle search mode in MatchQuery.
-* ASSETS-62671: Fix MatchQuery startsWith operator.
-* ASSETS-62780: Add feature toggle for folder API.
-* ASSETS-62988: Hide c2pa manifest rendition from showing in renditions tab.
-* ASSETS-63336: Template syncing from AEM to DM should only happen for dam namespaced metadata.
-* ASSETS-63375: Put asset upload experimental OpenAPIs behind feature toggle.
-* ASSETS-63453: Ensure all users can read omnisearch config.
-* GRANITE-63744: Allow connecting async jobs to sling jobs.
-* GRANITE-64567: Automatically disable semantic search for SKU searches.
-* GUIDES-41187: Add headers for Guides usage.
-* SITES-30452: Content API with ASO - title & description suggestions.
-* SITES-33116: Fix path validation.
-* SITES-34234: Page editor: preserve content tree state.
+* FORMS-18927: Added support for custom MIME types and file extensions in the AEM Forms File Attachment component, enabling users to attach a wider variety of document types.
+* FORMS-18211, FORMS-22936: Users experienced an accessibility issue where checkboxes were not grouped correctly within a `<fieldset>` element, with the group label not nested in a `<legend>` as the first child. This affected users with disabilities who rely on screen readers for navigation. Core Components based Adaptive Forms has now introduced fieldset and legend support to provide better accessibility support.
+Added Fieldset option at the panel that enables users to organize and group related fields more effectively within their forms.
+* FORMS-23880: Added Theme Editor support in core components. This enhancement enables users to customize and manage themes more efficiently within the core components, improving their design flexibility and workflow.
+* FORMS-21772: Added versioning support to Forms Management UI. This enhancement enables users to create and retrieve versions for both Core Components based and Foundation Components based Adaptive Forms, Form Fragments, Themes, and Binary Assets, improving asset management and version control.
+* FORMS-23094: Added client-side parsing for Foundation Components based Adaptive Forms, enabling enterprise customers to migrate their forms to the cloud. This enhancement supports EcmaScript features in the code-editor rules, which were previously unsupported, facilitating a smoother migration process.
+* FORMS-23853: Added support for overriding reCAPTCHA in the sling component. This enhancement enables users to customize reCAPTCHA settings, improving flexibility and security for enterprise customers.
+* SITES-34936: Edge Delivery with Universal Editor: Add filtering Content Fragments by model for publishing.
+* SITES-36203: Edge Delivery with Universal Editor: Add code toggle to enable multi-field and composite multi-field support.
+* SITES-37037: Edge Delivery with Universal Editor: Improve spreadsheet import to detect delimiter automatically.
+* SITES-37804: Edge Delivery with Universal Editor: Add support for Closed User Group Authoring (Early Access).
+* SITES-38990: Edge Delivery with Universal Editor: Add support for excludes to path mappings.
+* SITES-39171: Edge Delivery with Universal Editor: Add support for `cq:tags` in Blocks and Block Items.
+* SITES-40042: Edge Delivery with Universal Editor: Make Config Service the default for new sites.
+* SITES-37649: GraphQL: Support Multiline text field filtering at JCR level.
+* SITES-37843: GraphQL: Filtering for multivalue fields (collections) is not supported at JCR level.
+* SITES-37540: Replace & replaceAll operations for CF field values (find and replace for a given field name).
+* SITES-37741: Add "card" property in get fragment variation response (card view in Admin UI).
+* SITES-37754: Publish folder via API: tree validation on demand when `validateReferences` is set to true.
+* SITES-37756: Display check-in/check-out status information for a content fragment.
+* SITES-37805: Schema update: MODIFIED fragments cannot be renamed/moved (documentation).
+* SITES-37847: Improved performance for Lent Content ReferenceProvider SQL-2 query (LentContent retrieval).
+* SITES-39255: Update OpenAPI implementation to recent Java API changes for Composite field.
+* SITES-37096: Remove Launches console slowness when orphaned nodes are present.
+* SITES-38117: Find a way to query child launches without performance impact.
+* SITES-38317: Add user who started workflow to metadata (actual user instead of generic when run by service user).
+* SITES-39203: Display user who started workflow (instead of generic user when run by service user).
+* SITES-13083: Localize error strings in Sites > Live Copy creation dialog.
+* SITES-13389: Localize "Created version of ... before promoting launch" string in Sites > Timeline.
+* SITES-16176: Localize strings in Page editor > Image v3 component configure dialog.
+* SITES-35702: Unlocalized "Live Copy Up to Date with Limited Inheritance" string in "Live Copy Overview" tab.
+* SITES-35748: Unlocalized "Enable Product Variant Selection" checkbox label in 'Content Fragment Model Editor'.
+* SITES-35750: Unlocalized "Product SKU(s) separated by `#` character" placeholder in input field in "Content Fragment Model Editor".
+* SITES-37113: Unlocalized "Cancel Inheritance" dialog in "CIF Configurations" tab.
+* SITES-25240: Accessibility fix for teaser modal call to action.
+* SITES-25531: Accessibility fix for color contrast in search modal.
+* SITES-37115: Truncated icons in Vienia demo store.
 
-### Fixed Issues {#fixed-issues-24464}
+### Fixed Issues {#fixed-issues-24678}
 
-* ASSETS-43198: Asset expiration notification emails do not respect user language preference.
-* ASSETS-51840: Asset processing improvements.
-* ASSETS-52061: Unable to navigate back after selecting saved search.
-* ASSETS-53155: Asset content improvements.
-* ASSETS-53745: Dynamic Media download flow requires unselecting original asset before choosing web preset.
-* ASSETS-54260: Asset content fixes.
-* ASSETS-54787: Asset content improvements.
-* ASSETS-57391: Asset content updates.
-* ASSETS-59213: cq-dynamicmedia-core depends on deprecated commons-lang library.
-* ASSETS-59214: cq-scene7-imaging depends on deprecated commons-lang library.
-* ASSETS-59546: cq-remotedam-client-core depends on deprecated commons-lang library.
-* ASSETS-59703: cq-dam-core depends on deprecated commons-lang library.
-* ASSETS-59705: cq-dam-handler depends on deprecated commons-lang library.
-* ASSETS-59707: cq-dam-indesign depends on deprecated commons-lang library.
-* ASSETS-59709: cq-scene7-core depends on deprecated commons-lang library.
-* ASSETS-59929: CSV from metadata export breaks when field has newline character.
-* ASSETS-60241: Async move job fails when renaming folder.
-* ASSETS-61134: Remove comparisonVersion tags from pom files.
-* ASSETS-61309: Content Fragment move/copy no longer updates internal references.
-* ASSETS-61730: Redirect to Direct Binary Access should respect asset encoding.
-* ASSETS-62358: Assets report CSV shows corrupted values in content path.
-* ASSETS-62610: Adobe Stock license button disabled in Assets UI.
-* ASSETS-62613: NPE in `downloadasset`/`saveas`.
-* ASSETS-62656: Omnisearch AI search indicator incorrectly shown for non-Assets searches.
-* GRANITE-55387: Correcting word enclosed in quotes deletes entire word.
-* GRANITE-61240: RCE via stored XSS in lazycontainer.js.
-* GRANITE-64101: OOTB indexes converted to ES reverted back to Lucene on restart.
-* SITES-24530: Touch target of close/remove buttons in search modal not large enough.
-* SITES-31425: Unlocalized error message in start workflow.
-
-### Known Issues {#known-issues-24464}
+* CQ-4361552: Fixed i18n JSON dictionary retaining HTML-escaped unicode in import translations.
+* CQ-4361634: Fixed Experience Fragments not selectable or getting added to Translation Project.
+* CQ-4362072: Fixed AEMaaCS Translation Workflow – DE > ES Step Fails to Add Page to Translation Project.
+*  FORMS-23741: Users experienced issues where the InvokeDDX and Asset upload steps did not run in cascade, requiring two separate workflow executions. This affected the production environment using AEM as a Cloud Service with the Sites and Forms Add-on.
+* FORMS-23877: Users experienced issues with custom functions not loading at runtime when creating forms directly within Sites pages using an older core component version.
+* FORMS-24038: Users experienced issues with the navigation button when more tabs were added dynamically.
+* FORMS-23721: Fixed an issue where validation patterns configured for text inputs in the Edit Dialog were not persisted. Previously, the pattern value was saved but not retained or displayed in the UI, resulting in confusion for form authors.
+* FORMS-23456: Users experienced mis-announcements by screen readers on mobile devices  for hidden header rows in a table when using the Table component in Adaptive Forms. A hidden table header was announced out of context, causing confusion for users relying on iOS VoiceOver and Android TalkBack.
+* FORMS-23454: Users experienced issues with the Date Picker for Core Components based Adaptive Forms. When entering invalid dates, the system would auto-correct to closed possible dates.
+* FORMS-23117: Users experienced hCaptcha not translating correctly in Foundation Components based Adaptive Forms.
+* FORMS-22634: Users experienced an issue where email attachments were not included when both "Include Attachment" and "Use HTML template" options were used together.
+* FORMS-23288: Users experienced issues with Adaptive Forms embedded in Asset Share Commons modals. The form failed to load correctly when the URL contained `.html` in the mid-path.
+* FORMS-19198: Users experienced 404 errors when embedding forms using dispatcher rules. The errors occurred for URLs such as /etc.clientlibs/toggles.json, rum library, and analyticsparserconfigparser.json, due to the URL rewriter not being able to rewrite these URLs.
+* SITES-33799: Edge Delivery with Universal Editor: Fix optimized video rendition not published.
+* SITES-35082: Edge Delivery with Universal Editor: Remove empty paragraphs, leading and trailing line breaks from richtexts.
+* SITES-35524: Edge Delivery with Universal Editor: Fix publishing failures for paths containing non-ASCII special characters.
+* SITES-38647: Edge Delivery with Universal Editor: Fix performance bottlenecks on environments with many sites.
+* SITES-40521: Edge Delivery with Universal Editor: Fix duplicate class names for Blocks and Block Items.
+* SITES-37887: GraphQL: UUID lookups for larger result sets might cause increased response times.
+* SITES-38412: Unable to patch fragments in launch when unique field/slug is existent (unique constraint now excludes CFs in launches).
+* SITES-38606: Validation error when adding variation to CF with fragment reference UUID (hydrate CFs referenced by uuid in variations).
+* SITES-39489: Assets UI showing fragments from cq:discarded folders (soft-deleted CFs removed from Management API responses).
+* SITES-39517: GET CF with composite field containing enumeration fails with 500 error.
+* SITES-40072: Composite fields with tabs return empty placeholder values.
+* SITES-39575: Live Copy save removes `cq:rolloutConfigs` – rollout config lost.
+* SITES-39694: Production Rollouts Failing with NPE.
+* SITES-39761: NavigationItem.getLink() returns null in CIF v2 Navigation component.
+* SITES-40519: MSM rollout fails with NullPointerException when live-copy target resource is null.
+* SITES-17531: Hardcoded "Smart crop preview" string in Page Editor > Image > Smart Crop.
+* SITES-31575: Info tooltip is not fully visible in Page editor > Carousel component > Properties.
+* SITES-34215: Autocomplete JS component raises immediate validation error on required pathfield in dialog tab.
+* SITES-35218: Some AEM core components do not render empty alt tag properly.
+* SITES-37114: Truncated "Enable Catalog UID Support" tooltip in "CIF Configurations" tab.
+* SITES-36138: Query without index detected (incident).
+* SITES-37682: Content type override in `/libs/cq/Page/Page.css.jsp` and `/libs/cq/Page/Page.js.jsp.`
+* SITES-38709: Classic UI Text RTE shows raw HTML after upgrade to 6.5.24.
+* SITES-39630: Nested Content Fragment updates not being reflected in exported Target offers.
+* SITES-39696: On/off time for scheduling activation/deactivation not working.
+* SITES-39824: Exporting Experience Fragments to Adobe Target returns 500 (NPE).
+* SITES-40253: Intermittent 500 Errors on `/bin/cif/invalidate-cache` – Oak Conflicts under `/var/cif/cacheinvalidation`.
+* SITES-40341: Fix base64 inline images in styles tag in `HtmlToJsonConvertorImpl`.
+    
+### Known Issues {#known-issues-24678}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-24464}
+### Deprecated Features and APIs {#deprecated-24678}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-24464}
+### Security Fixes {#security-24678}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 14 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 15 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-24464}
+### Embedded Technologies {#embedded-tech-24678}
 
 |Technology|Version|Link|
 |---|---|---|
