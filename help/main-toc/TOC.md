@@ -1095,9 +1095,9 @@ user-guide-title: AEM as a Cloud Service
     + Brand Experience Agent {#brand-experience}
       + [Overview](/help/ai-in-aem/agents/brand-experience/overview.md)
       + Experience Modernization Agent {#modernization}
-        + [Overview](/help/ai-in-aem/agents/modernization/overview.md)
-        + [Getting Started](/help/ai-in-aem/agents/modernization/getting-started.md)
-        + [Modernization Console](/help/ai-in-aem/agents/modernization/console.md)
+        + [Overview](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
+        + [Getting Started](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+        + [Modernization Console](//help/ai-in-aem/agents/brand-experience/modernization/console.md)
       + Experience Production Agent {#experience-production}
         + [Overview](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)
         + [Content Update Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
