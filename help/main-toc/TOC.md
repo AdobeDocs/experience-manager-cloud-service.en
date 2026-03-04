@@ -26,6 +26,8 @@ user-guide-title: AEM as a Cloud Service
   + [Release Information](/help/release-notes/home.md)
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
+    + 2026 {#2026}
+      +  [Release Notes for 2026.1.0](/help/release-notes/release-notes-cloud/2026/2026-1-0.md)
     + 2025 {#2025}
       + [Release Notes for 2025.12.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-12-0.md) 
       + [Release Notes for 2025.11.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-11-0.md) 
@@ -246,6 +248,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.02.19 Release Notes](/help/release-notes/universal-editor/2026/2026-02-19.md)
       + [2026.02.13 Release Notes](/help/release-notes/universal-editor/2026/2026-02-13.md)
       + [2026.02.05 Release Notes](/help/release-notes/universal-editor/2026/2026-02-05.md)
       + [2026.01.29 Release Notes](/help/release-notes/universal-editor/2026/2026-01-29.md)
@@ -1089,17 +1092,16 @@ user-guide-title: AEM as a Cloud Service
   + [Using MCP with AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
   + Agents in AEM {#agents}
     + [Overview](/help/ai-in-aem/agents/overview.md)
-    + Experience Production Agent {#production}
-      + [Overview](/help/ai-in-aem/agents/production/overview.md)
-      + [Communication Creation Skill](/help/ai-in-aem/agents/production/communications-creation.md)
-      + [Content Update Skill](/help/ai-in-aem/agents/production/content-update.md)
-      + [Form Creation Skill](/help/ai-in-aem/agents/production/form-creation.md)
-    + Content Optimization Agent {#content-optimization}
-      + [Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/overview.md)
-    + Discovery Agent {#discovery}
-      + [Discovery Agent](/help/ai-in-aem/agents/discovery/overview.md)
-    + Development Agent {#development}
-      + [Overview](/help/ai-in-aem/agents/development/overview.md)
+    + Brand Experience Agent {#brand-experience}
+      + [Overview](/help/ai-in-aem/agents/brand-experience/overview.md)
+      + [Content Update Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
+      + [Communication Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
+      + [Form Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
+      + [Development Job](/help/ai-in-aem/agents/brand-experience/development/development.md)
+    + Content Advisor Agent {#content-advisor}
+      + [Overview](/help/ai-in-aem/agents/content-advisor/overview.md)
+      + [Content Discovery Job](/help/ai-in-aem/agents/content-advisor/discovery.md)
+      + [Content Optimization Job](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
     + Governance Agent {#governance}
       + [Overview](/help/ai-in-aem/agents/governance/overview.md)
     + Experience Modernization Agent {#modernization}

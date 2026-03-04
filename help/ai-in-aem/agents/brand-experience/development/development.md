@@ -1,15 +1,16 @@
 ---
-title: Development Agent Overview
-description: Learn how the Development Agent in AEM analyzes failed pipelines in Cloud Manager and build logs to suggest code fixes and speed up debugging.
+title: Development Job Overview
+description: Learn how the development job in AEM analyzes failed pipelines in Cloud Manager and build logs to suggest code fixes and speed up debugging.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
 ---
-# Development Agent overview {#development-agent-overview}
 
-The Development Agent helps AEM developers and administrators create, debug, deploy, and optimize code more efficiently.
+# Development Job Overview {#development-job-overview}
 
-Currently, the agent can retrieve pipeline statuses and help you troubleshoot failing build steps by suggesting fixes, saving time when debugging AEM as a Cloud Service deployments to development, stage, and production environments. It examines build logs and related code to recommend a fix that you can apply manually. 
+[As part of the Brand Experience Agent,](/help/ai-in-aem/agents/brand-experience/overview.md) the development job helps AEM developers and administrators create, debug, deploy, and optimize code more efficiently.
+
+The job can retrieve pipeline statuses and help you troubleshoot failing build steps by suggesting fixes, saving time when debugging AEM as a Cloud Service deployments to development, stage, and production environments. It examines build logs and related code to recommend a fix that you can apply manually. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
@@ -17,21 +18,23 @@ Currently, the agent can retrieve pipeline statuses and help you troubleshoot fa
 >
 >AI-generated responses may be inaccurate or misleading. Be sure you double-check suggested fixes and responses. 
 >
->See also [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html). 
+>See also [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+
+>[!NOTE]
+>
+>Pipeline Troubleshooting is limited to Full Stack pipelines (Deployment and Code Quality), but support for **Web Tier Config Pipeline** is now available in beta. To request access, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com). Pre-existing access to Agents in AEM is required.
 
 <!-- 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
 
-To access this agent, refer to the [release notes](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) for instructions on how to enroll in the beta program, and be sure to indicate your interest in the Development Agent. You can also email Development Agent–specific feedback to [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com).
+To access this job, please refer to the [release notes](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) for instructions on how to enroll in the beta program, being sure to indicate your interest in the development job. You can also email development job–specific feedback to [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
 
 [Follow along a tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) to learn how to use the Development Agent to troubleshoot pipeline failures.
 
-## Access the Development Agent through Cloud Manager {#how-to-access-the-agent}
+## Access the Development Job through Cloud Manager {#how-to-access-the-job}
 
-You access the Development Agent through the AI Assistant found in user interfaces including Cloud Manager or Experience Hub.
-
-**To access the Development Agent through Cloud Manager:**
+You access the development job through the AI Assistant found in user interfaces including Cloud Manager or Experience Hub.
 
 1. To get started, click [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) to open its home page.
 
@@ -49,11 +52,11 @@ You access the Development Agent through the AI Assistant found in user interfac
 
 1. On the **Program Overview** page, in the **Pipelines** card, click a pipeline.
 
-    ![Selected pipeline](/help/ai-in-aem/agents/development/assets/dev-agent-pipeline-select.png)
+    ![Selected pipeline](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-pipeline-select.png)
 
 1. In the **Build and Code Scanning** page, note the failed pipeline.
 
-    ![Pipeline failure as seen in the Build and Code Scanning page](/help/ai-in-aem/agents/development/assets/dev-agent-pipeline-failure.png)
+    ![Pipeline failure as seen in the Build and Code Scanning page](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-pipeline-failure.png)
 
 1. Near the upper-right corner of the AEM user interface (either from Cloud Manager pages or the author instance of the AEM environments), click the **AI Assistant** icon.
 
@@ -68,12 +71,12 @@ You access the Development Agent through the AI Assistant found in user interfac
 
     The prompt results in the following response.
 
-    ![AI Assistant prompt and resulting response](/help/ai-in-aem/agents/development/assets/dev-agent-prompt-response.png)
+    ![AI Assistant prompt and resulting response](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-prompt-response.png)
 
 
 ## Permissions {#permissions}
 
-The Development Agent's pipeline troubleshooting job requires either the Cloud Manager - Developer role or the Cloud Manager - Program Manager role.
+The development job requires either the Cloud Manager - Developer role or the Cloud Manager - Program Manager role.
 
 ## Sample prompts {#sample-prompts}
 
@@ -86,6 +89,6 @@ The Development Agent's pipeline troubleshooting job requires either the Cloud M
 
 ## Out-of-scope features {#out-of-scope-features}
 
-Pipeline troubleshooting operates on the Full-Stack pipeline's build step. For other pipeline types and steps, debug failures by downloading and inspecting the logs.
+Pipeline troubleshooting operates on the Build & Unit Testing step and Code Scanning step in Full Stack Deployment and Code Quality pipelines. For other pipeline types and steps, debug failures by downloading and inspecting the logs.
 
-See [Access and Download Logs](/help/implementing/cloud-manager/manage-logs.md).
+See [Access and Download Logs](/help/implementing/cloud-manager/manage-logs.md) for more information.
