@@ -38,7 +38,9 @@ The governance agent can validate content against brand guidelines to ensure con
 * *Check if `https://www.website/homepage` follows brand guidelines*
 * *Show me my brand guidelines*
 
-The governance agent also includes an AI-powered brand policy import capability that uses AI to transform customers' existing brand guideline documents into structured, enforceable policy checks that automatically govern, validate, and guide compliant content creation. For more information, see [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md).
+>[!NOTE]
+>
+>The governance agent also includes an AI-powered brand policy import capability that uses AI to transform customers' existing brand guideline documents into structured, enforceable policy checks that automatically govern, validate, and guide compliant content creation. For more information, see [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md).
 
 ### Permission and Digital Rights Management {#permission-and-digital-rights-management}
 
