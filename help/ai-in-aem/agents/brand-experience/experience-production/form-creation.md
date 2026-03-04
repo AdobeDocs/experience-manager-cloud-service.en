@@ -8,7 +8,7 @@ exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
 
 # Form Creation Job {#form-creation-job}
 
-The form creation job is a capability of the [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) that is designed to develop forms using natural language prompts. This job automatically generates appropriate form structure and  field types. The job is surfaced through AI Assistant.
+The form creation job is part of the [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) that is designed to develop forms using natural language prompts. This job automatically generates appropriate form structure and  field types. The job is surfaced through AI Assistant.
 
 Some of the key benefits of form creation job include:
 

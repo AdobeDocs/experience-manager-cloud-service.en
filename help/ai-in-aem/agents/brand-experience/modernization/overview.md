@@ -10,13 +10,9 @@ exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
 
 Learn how the Experience Modernization Agent onboards websites into Edge Delivery Services with the help of AI.
 
->[!NOTE]
->
->The Experience Modernization Agent supersedes the former migration skill of the [Brand Experience Agent.](/help/ai-in-aem/agents/brand-experience/overview.md)
-
 ## Introduction {#introduction}
 
-The Experience Modernization Agent unlocks the full value of Edge Delivery Services (including AEM authoring) by making website migrations and ongoing evolution fast and frictionless.
+[As part of the Brand Experience Agent,](/help/ai-in-aem/agents/brand-experience/overview.md) The Experience Modernization Agent unlocks the full value of Edge Delivery Services (including AEM authoring) by making website migrations and ongoing evolution fast and frictionless.
 
 It combines [site creation and migration skills](#creation-migration) for initial website onboarding and [block development capabilities](#block-development) for continuous experience development (style updates, template refinements, landing page creation). In addition, it offers the [Experience Modernization Console](#console) as a hosted AI-assisted development environment available to you directly. While users can operate the agent directly through that console, developers retain full control over what ships.
 
