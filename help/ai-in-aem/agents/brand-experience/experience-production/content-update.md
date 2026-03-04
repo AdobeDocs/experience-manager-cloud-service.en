@@ -63,7 +63,7 @@ Sample prompts include:
 
 * on `<your-publish-URL>` update "Your perfect coffee is four questions away!" to "Your coffee, your way!"
 * on `<your-author-env-URL>` replace the image from "holdingcup.png" to "stairhead.png"
-* on `<your-publish-URL>` change "Take our Coffee Quiz" button to a more engaging version”
+* on `<your-publish-URL>` change "Take our Coffee Quiz" button to a more engaging version"
 * on `<your-author-env-URL>` remove the section "Rewards unclaimed is a Gift missed!"
 
 ## Jira {#jira}
@@ -112,7 +112,7 @@ In the case of a `process` command to trigger updates, the responses might follo
 
 * The following image shows an example Jira that triggers the `process`command for the content update job:
 
-  ![Example Jira using the content update job of the Experience Production Agent](assets/content-update-jira-example.png)
+  ![Example Jira using the content update job of the Brand Experience Agent](assets/content-update-jira-example.png)
 
 ## Activation {#activation}
 
