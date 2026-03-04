@@ -20,7 +20,7 @@ The Experience Modernization Console is a hosted, AI-assisted development enviro
 
 >[!TIP]
 >
->If you are interested in getting started right away with the console, check out the document [Getting Started with the Experience Modernization Agent.](/help/ai-in-aem/agents/modernization/getting-started.md)
+>If you are interested in getting started right away with the console, check out the document [Getting Started with the Experience Modernization Agent.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
 
 ## Capabilities {#capabilities}
 
