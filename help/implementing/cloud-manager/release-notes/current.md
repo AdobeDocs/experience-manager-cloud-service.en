@@ -55,9 +55,7 @@ You can now try an MCP (Model Context Protocol) server that exposes Cloud Manage
 
 This beta is opt-in and intended for evaluation and feedback. If you want early access, sign up to the beta program. Tell us which IDE you plan to use and which Cloud Manager capabilities you want to test. For example, triggering pipelines or reviewing environment details.
 
-
-
-
+See [Use MCP with AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
 
 
 
