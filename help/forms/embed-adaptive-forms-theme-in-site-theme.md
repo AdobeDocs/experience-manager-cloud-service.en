@@ -2,7 +2,7 @@
 title: Embed an Adaptive Forms theme in an AEM Sites theme
 description: Learn how to integrate an Adaptive Forms theme (for example, Canvas) into an AEM Sites theme so that Sites pages and embedded Adaptive Forms share one unified theme and deployment.
 keywords: adaptive forms theme, site theme, AEM Sites theme, forms theme integration, front-end pipeline, theme embedding
-feature: Adaptive Forms, Core Components, AEM Sites
+feature: Adaptive Forms, Core Components
 role: Developer
 exl-id: a1f8c4d2-3e5b-4a2f-9b7e-2d4f6a8c1b0e
 ---
