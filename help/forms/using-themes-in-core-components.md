@@ -49,6 +49,10 @@ Forms as Cloud Service provides, the below listed Adaptive Form styling themes f
 
 You can [customize any of these themes to create new theme](#customize-a-theme-core-components). 
 
+>[!NOTE]
+>
+>If your Adaptive Forms are embedded in AEM Sites pages, you can use a single theme for both the site and the forms by embedding an Adaptive Forms theme into your site theme. See [Embed an Adaptive Forms theme in an AEM Sites theme](/help/forms/embed-adaptive-forms-theme-in-site-theme.md).
+
 ![Workflow of theme customization](/help/forms/assets/workflow-of-customization-of-theme.png)
 
 ## Customize a theme {#customize-a-theme-core-components}
@@ -456,6 +460,7 @@ Adaptive Form themes are used as part of an Adaptive Form template to define sty
 
 {{see-also}}
 
+* [Embed an Adaptive Forms theme in an AEM Sites theme](/help/forms/embed-adaptive-forms-theme-in-site-theme.md)
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
