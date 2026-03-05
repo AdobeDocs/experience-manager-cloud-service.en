@@ -22,7 +22,7 @@ The following example demonstrates the use of the Content Fragment Selector when
 
 Include the Content Fragment Selector package in your code using the `script` tag, as shown in the example below. 
 
-* Once the script is loaded, the `PureJSSelectors` global variable is available for use. 
+* Once the script is loaded, the `PureJSContentFragmentSelectors` global variable is available for use. 
 * Define the Content Fragment Selector [properties](/help/headless/content-fragment-selector/properties.md):
 
   * the `imsOrg` and `imsToken` properties are both required for authentication in Adobe application
@@ -49,8 +49,8 @@ By following such steps, you can use Content Fragment Selector with your Adobe a
             apiKey: "example-apiKey-associated-with-imsOrg",
             handleSelection: (fragmentss: SelectedFragmentType[]) => {},
         };
-        // Call the `renderFragmentSelector` available in PureJSSelectors globals to render FragmenttSelector
-        PureJSSelectors.renderFragmentSelector(container, fragmentSelectorProps);
+        // Call the `renderFragmentSelector` available in PureJSContentFragmentSelectors globals to render FragmenttSelector
+        PureJSContentFragmentSelectors.renderFragmentSelector(container, fragmentSelectorProps);
     </script>
 </head>
 
@@ -72,7 +72,7 @@ For property details see [ImsAuthProps Properties](/help/headless/content-fragme
 
 ### ImsAuthService {#imsauthservice}
 
-`ImsAuthService` class handles the authentication flow for the Fragment Selector. It is responsible for obtaining an `imsToken` from the Adobe IMS authentication service. The `imsToken` is used to authenticate the user and authorize access to the AEM as a Cloud Service repository. `ImsAuthService` uses the `ImsAuthProps` properties to control the authentication flow and register listeners for various authentication events. You can use the  [`registerFragmentsSelectorsAuthService`](#purejsselectorsregisterfragmentsselectorsauthservice) function to register the `ImsAuthService` instance with the Fragment Selector. The following functions are available on the `ImsAuthService` class. However, if you are using the `registerFragmentsSelectorsAuthService` function, you do not need to call these functions directly.
+`ImsAuthService` class handles the authentication flow for the Fragment Selector. It is responsible for obtaining an `imsToken` from the Adobe IMS authentication service. The `imsToken` is used to authenticate the user and authorize access to the AEM as a Cloud Service repository. `ImsAuthService` uses the `ImsAuthProps` properties to control the authentication flow and register listeners for various authentication events. You can use the  `registerFragmentsSelectorsAuthService` function to register the `ImsAuthService` instance with the Fragment Selector. The following functions are available on the `ImsAuthService` class. However, if you are using the `registerFragmentsSelectorsAuthService` function, you do not need to call these functions directly.
 
 For property details see [ImsAuthService Properties](/help/headless/content-fragment-selector/properties.md#imsauthservice-properties)
 
@@ -95,7 +95,7 @@ For property details see [ImsAuthService Properties](/help/headless/content-frag
     hideTreeNav: true
     }
     const container = document.getElementById('fragment-selector-container');
-    PureJSSelectors.renderFragmentSelector(container, props);
+    PureJSContentFragmentSelectors.renderFragmentSelector(container, props);
     }
     $(document).ready(function() {
     renderFragmentSelectorInline();

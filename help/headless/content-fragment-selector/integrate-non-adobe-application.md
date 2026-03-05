@@ -73,80 +73,95 @@ Use the following example `index.html` file for authentication when integrating 
 **Example `ìndex.html`**
 
 ```html {line-numbers="true"}
-<!DOCTYPE html>
-<html>
 
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <title>Content Fragment Selectors</title>
-    <link rel="stylesheet" href="index.css">
-    <script id="fragment-selector"
-        src="https://experience.adobe.com/solutions/CQ-fragments-selectors/static-fragments/resources/fragments-selectors.js"></script>
-    <script>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>testing-cf-mfe-integration-with-3rd-party-app</title>
+        <script
+            id="content-fragments-selector"
+            src="https://experience.adobe.com/solutions/CQ-sites-content-fragment-selector/static-assets/resources/content-fragment-selector.js"
+        ></script>
+        <script>
+            const imsProps = {
+                imsClientId: '<IMS_CLIENT_ID>',
+                imsScope:
+                    'additional_info.projectedProductContext, AdobeID, openid, read_organizations',
+                redirectUrl: window.location.href,
+                onImsServiceInitialized: (service) => {
+                    // invoked when the ims service is initialized and is ready
+                    console.log('onImsServiceInitialized', service);
+                },
+                onAccessTokenReceived: (token) => {
+                    console.log('onAccessTokenReceived', token);
+                },
+                onAccessTokenExpired: () => {
+                    console.log('onAccessTokenError');
+                    // re-trigger sign-in flow
+                },
+                onErrorReceived: (type, msg) => {
+                    console.log('onErrorReceived', type, msg);
+                },
+            };
 
-        const imsProps = {
-            imsClientId: "<obtained from IMS team>",
-            imsScope: "openid, <other scopes>",
-            redirectUrl: window.location.href,
-            modalMode: true, // false to open in a full page reload flow
-            onImsServiceInitialized: (service) => {
-                // invoked when the ims service is initialized and is ready
-                console.log("onImsServiceInitialized", service);
-            },
-            onAccessTokenReceived: (token) => {
-                console.log("onAccessTokenReceived", token);
-            },
-            onAccessTokenExpired: () => {
-                console.log("onAccessTokenError");
-                // re-trigger sign-in flow
-            },
-            onErrorReceived: (type, msg) => {
-                console.log("onErrorReceived", type, msg);
-            },
-        }
-
-        function load() {
-            const registeredTokenService = PureJSSelectors.registerFragmentsSelectorsAuthService(imsProps);
-            imsInstance = registeredTokenService;
-        };
-
-        // initialize the IMS flow before attempting to render the Content Fragment selector
-        load();
-        
-
-        //function that will render the Content Fragment selector
-        function renderFragmentSelectorWithAuthFlowFlow() {
-            const otherProps = {
-            // any other props supported by Content Fragment selector
+            function load() {
+                const registeredTokenService =
+                    PureJSContentFragmentSelectors.registerContentFragmentSelectorAuthService(
+                        imsProps
+                    );
+                imsInstance = registeredTokenService;
             }
-            const fragmentSelectorProps = {
-                "imsOrg": "imsorg",
-                ...otherProps
+
+            // initialize the IMS flow before attempting to render the content fragment selector
+            load();
+
+            // function that will render the content fragment selector
+            function renderContentFragmentSelectorWithAuthFlow() {
+                const contentFragmentSelectorDialog = document.getElementById(
+                    'content-fragment-selector-dialog'
+                );
+
+                const contentFragmentSelectorProps = {
+                    inventoryViewToggleEnabled: true,
+                    isOpen: true,
+                    noWrap: false,
+                    orgId: 'YOUR_ORG_ID@AdobeOrg',
+                    // repoId: "author-p12345-e67890.adobeaemcloud.com", // if wanted to restrict to a specific repo
+                    runningInUnifiedShell: false,
+                    onDismiss: () => contentFragmentSelectorDialog.close(),
+                    onSubmit: ({ contentFragments }) => {
+                        const selectedContentFragment = contentFragments[0];
+                        alert(selectedContentFragment.path);
+                    },
+                };
+                // container element on which you want to render the ContentFragmentSelector component
+                const container = document.getElementById('content-fragment-selector');
+
+                /// Use the PureJSContentFragmentSelectors in globals to render the ContentFragmentSelector component
+                PureJSContentFragmentSelectors.renderContentFragmentSelectorWithAuthFlow(
+                    container,
+                    contentFragmentSelectorProps,
+                    () => contentFragmentSelectorDialog.showModal()
+                );
             }
-             // container element on which you want to render the FragmentSelector/DestinationSelector component
-            const container = document.getElementById('content-fragment-selector');
-
-            /// Use the PureJSSelectors in globals to render the FragmentSelector/DestinationSelector component
-            PureJSSelectors.renderFragmentSelectorWithAuthFlow(container, fragmentSelectorProps, () => {
-                const fragmentSelectorDialog = document.getElementById('fragment-selector-dialog');
-                fragmentSelectorDialog.showModal();
-            });
-        }
-    </script>
-
-</head>
-<body class="fragment-selectors">
-    <div>
-        <button onclick="renderFragmentSelectorWithAuthFlowFlow()">Content Fragment Selector - Select Fragments with Ims Flow</button>
-    </div>
-        <dialog id="fragment-selector-dialog">
-            <div id="fragment-selector" style="height: calc(100vh - 80px); width: calc(100vw - 60px); margin: -20px;">
-            </div>
+        </script>
+    </head>
+    <body>
+        <div>
+            <button onclick="renderContentFragmentSelectorWithAuthFlow()">
+                Content Fragment Selector - Select Content Fragments with Ims Flow
+            </button>
+        </div>
+        <dialog id="content-fragment-selector-dialog">
+            <div
+                id="content-fragment-selector"
+                style="height: calc(100vh - 80px); width: calc(100vw - 60px); margin: -20px"
+            ></div>
         </dialog>
-    </div>
-</body>
-
+    </body>
 </html>
 
 ```
