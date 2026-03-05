@@ -51,7 +51,7 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 | `onImsServiceInitialized` | A callback function that is called when the Adobe IMS authentication service is initialized. This function takes one parameter, `service`, which is an object representing the Adobe IMS service. See [`ImsAuthService`](#imsauthservice-ims-auth-service) for more details. |
 | `onAccessTokenReceived` | A callback function that is called when an `imsToken` is received from the Adobe IMS authentication service. This function takes one parameter, `imsToken`, which is a string representing the access token. |
 | `onAccessTokenExpired` | A callback function that is called when an access token has expired. This function is typically used to trigger a new authentication flow to obtain a new access token. |
-| `onErrorReceived`         | A callback function that is called when an error occurs during authentication. This function takes two parameters: the error type and error message. The error type is a string representing the type of error and the error message is a string representing the error message. |
+| `onErrorReceived` | A callback function that is called when an error occurs during authentication. This function takes two parameters: the error type and error message. The error type is a string representing the type of error and the error message is a string representing the error message. |
 
 ## ImsAuthService Properties {#imsauthservice-properties}
 
@@ -60,7 +60,7 @@ The `ImsAuthService` class handles the authentication flow for the Content Fragm
 | Function Name | Description |
 |--- |--- |
 | `isSignedInUser` | Determines whether the user is currently signed in to the service and returns a boolean value accordingly. |
-| `getImsToken` | Retrieves the authentication `imsToken` for the currently signed-in user, which can be used to authenticate requests to other services such as generating asset rendition.                                                             |
+| `getImsToken` | Retrieves the authentication `imsToken` for the currently signed-in user, which can be used to authenticate requests to other services such as generating asset rendition. |
 | `signIn` | Initiates the sign-in process for the user. This function uses the `ImsAuthProps` to show authentication in either a pop-up or a full page reload. |
 | `signOut` | Signs the user out of the service, invalidating their authentication token and requiring them to sign in again to access protected resources. Invoking this function will reload the current page. |
 | `refreshToken` | Refreshes the authentication token for the currently signed-in user, preventing it from expiring and ensuring uninterrupted access to protected resources. Returns a new authentication token that can be used for subsequent requests. |
