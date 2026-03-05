@@ -32,4 +32,4 @@ If you are interested in testing the upcoming features listed below and sharing 
 ## Other Improvements {#other-improvements}
 
 * Alignment, text direction, and indentation options are now [enabled by default in the RTE](/help/implementing/universal-editor/configure-rte.md) provided your backend supports them.
-* Tabs are now rendered when using Content Fragments with Open API and UI schemata.
+* Tabs are now rendered when using a Content Fragment with Open API and UI schema.
