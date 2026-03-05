@@ -127,7 +127,7 @@ user-guide-title: AEM as a Cloud Service
     + 2023 {#2023}
       + [Maintenance Release Notes for 2023.12.0](/help/release-notes/maintenance/2023/2023-12-0.md) 
       + [Maintenance Release Notes for 2023.11.0](/help/release-notes/maintenance/2023/2023-11-0.md) 
-      + [Maintenance Release Notes for 2023.10.0](/help/release-notes/maintenance/2023/2023-10-0.md) 
+      + [Maintenance Release Notes for 2023.10.0](/help/release-notes/maintenance/2023/2023-10-0.md)
       + [Maintenance Release Notes for 2023.9.0](/help/release-notes/maintenance/2023/2023-9-0.md) 
       + [Maintenance Release Notes for 2023.8.0](/help/release-notes/maintenance/2023/2023-8-0.md) 
       + [Maintenance Release Notes for 2023.7.0](/help/release-notes/maintenance/2023/2023-7-0.md) 
