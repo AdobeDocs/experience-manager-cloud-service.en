@@ -28,6 +28,11 @@ The next planned release is Thursday, April 2, 2026.
 
     See also [Copy content](/help/implementing/developing/tools/content-copy.md#copy-content).
 
+* **Support for UI extensibility in AEM Experience Hub**
+    Support for UI Extensions in [AEM Experience Hub](https://experience.adobe.com/experiencemanager) is now enabled, letting developers extend the interface with custom functionality and widgets built using Adobe App Builder. 
+
+    To learn more, see [AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/).
+
 * **Improved stability, performance, and reliability**
 
     This release includes optimization and maintenance updates that improved the stability, performance, and reliability of Cloud Manager.
@@ -60,16 +65,17 @@ See the tutorial [Cloud Manager MCP Server](https://experienceleague.adobe.com/e
 Interested in the beta? Email [GRP-AEM-CM-MCP-FEEDBACK@adobe.com](mailto:GRP-AEM-CM-MCP-FEEDBACK@adobe.com) with your Adobe OrgID and Program ID.
 
 
-
+<!--
 ### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
 
-[Experience Hub](/help/experience-hub.md) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
+[Experience Hub](/help/experience-hub.md) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI Extensions so they can help you enable them in Experience Hub with minimal effort.
 
 ![Diagram of Experience Hub extensibility and customization workflow](/help/implementing/cloud-manager/release-notes/assets/experience-hub-extensibility-customization.png)
 
 Embed custom experiences in Experience Hub to extend and personalize your organization's dashboard. In addition to Adobe's built-in widgets, add your own using the [UI Extensibility](https://developer.adobe.com/uix/docs/) framework. Build JavaScript-based UI apps and surface them to your users to meet business-specific requirements and workflows. 
 
 Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) with your Adobe OrgID and a short description of the customization you intend to create.
+-->
 
 ### Faster builds with module caching {#quick-build-cm-pipelines}
 
