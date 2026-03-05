@@ -124,6 +124,10 @@ To clone a theme, perform the following instructions:
 
 #### 2. Set name of a theme {#set-name-of-theme}
 
+>[!NOTE]
+>
+>This step applies when you deploy the theme as a **standalone** package via the front-end pipeline (for example, a dedicated Forms theme repo). If you **embed** the Forms theme into your AEM Sites theme instead, you do not need to set a separate theme name or version for the form theme; the site theme name is used. See [Embed an Adaptive Forms theme in an AEM Sites theme](/help/forms/embed-adaptive-forms-theme-in-site-theme.md).
+
 1. Open the theme folder in your IDE. For example, to open the `aem-forms-theme-canvas` folder in Visual Studio Code editor.
    
 1. Navigate to the `aem-forms-theme-canvas` folder.
