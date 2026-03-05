@@ -20,8 +20,8 @@ These are the release notes for the 5 March 2026 release of the Universal Editor
 
 ## What's New {#what-is-new}
 
-* The component picker has a new design.
-* A color picker for the RTE is now available.
+* [The component picker](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) has a new design.
+* [A color picker](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) for the RTE is now available.
 
 ## Early Adoption Features {#early-adopter}
 
