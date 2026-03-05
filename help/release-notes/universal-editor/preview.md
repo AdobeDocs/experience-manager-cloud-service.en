@@ -22,8 +22,4 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
-* TBD
-
-## Upcoming Improvements {#upcoming-improvements}
-
-* TBD
+* An option to add components has been added to the in context menu.
