@@ -129,6 +129,6 @@ If you pushed your code to a branch other than `main`, the preview opened from D
 
 The following documents may be useful as you continue to explore the Experience Modernization Agent and its console.
 
-* [Experience Modernization Console](/help/ai-in-aem/agents/modernization/console.md) - Details on the console, it's views, options, and capabilities
+* [Experience Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md) - Details on the console, it's views, options, and capabilities
 * [Edge Delivery Services developer tutorial](https://www.aem.live/developer/tutorial) - Useful if you are new to AEM and Edge Delivery Services projects
 * [Document Authoring](https://da.live) - Useful if you are new to Document Authoring for content management
