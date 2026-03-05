@@ -1094,15 +1094,15 @@ user-guide-title: AEM as a Cloud Service
     + [Overview](/help/ai-in-aem/agents/overview.md)
     + Brand Experience Agent {#brand-experience}
       + [Overview](/help/ai-in-aem/agents/brand-experience/overview.md)
-      + Experience Modernization Agent {#modernization}
-        + [Overview](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
-        + [Getting Started](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
-        + [Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
       + Experience Production Agent {#experience-production}
         + [Overview](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)
         + [Content Update Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
         + [Communication Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
         + [Form Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
+      + Experience Modernization Agent {#modernization}
+        + [Overview](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
+        + [Getting Started](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+        + [Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
       + [Experience Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md)
     + Content Advisor Agent {#content-advisor}
       + [Overview](/help/ai-in-aem/agents/content-advisor/overview.md)
@@ -1110,6 +1110,7 @@ user-guide-title: AEM as a Cloud Service
       + [Content Optimization Job](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
     + Governance Agent {#governance}
       + [Overview](/help/ai-in-aem/agents/governance/overview.md)
+      + [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
   + AI Assistant {#ai-assistant}
     + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
     + [About AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
