@@ -24,7 +24,7 @@ Before you start, ensure you have:
 
 ## Step 1: Create the adaptive form components folder {#step-1-create-folder}
 
-In your **site theme** repository, create the folder where the Forms theme will live:
+In your site theme repository, create the folder where the Forms theme will live:
 
 ```text
 theme/src/components/adaptiveform/
@@ -101,7 +101,7 @@ In the Forms theme, component SCSS files often reference images with paths like 
 }
 ```
 
-Repeat for every SCSS file under `adaptiveform/` that references images (button, accordion, wizard, container, scribble, and others). A project-wide find/replace in your IDE over `theme/src/components/adaptiveform/` is recommended.
+After the replace, these become `url(../resources/images/...)` and `url('../resources/images/...')` respectively. Repeat for every SCSS file under `adaptiveform/` that references images (button, accordion, wizard, container, scribble, and others). 
 
 ## Step 5: Create the adaptive form entry-point SCSS {#step-5-create-adaptiveform-scss}
 
@@ -176,9 +176,9 @@ In **`theme/src/theme.scss`**, add a single import at the **end** of the file (a
 
 This is the only change required in the existing site theme structure; all form-specific code stays under `src/components/adaptiveform/`.
 
-## Step 7: Build and verify {#step-7-build-and-verify}
+## Step 7: Build and deploy {#step-7-build-and-deploy}
 
-1. **Build the site theme** from the theme root:
+1. Build the site theme from the theme root:
 
    ```bash
    cd theme
@@ -186,26 +186,13 @@ This is the only change required in the existing site theme structure; all form-
    npm run build
    ```
 
-
-2. **Preview locally**:
-
-   ```bash
-   npm run live
-   ```
-
-   >[!NOTE]
-   >
-   >* Run `npm run live` to start a local proxy with hot reload that pulls page content from your AEM instance.
-   >* Verify that embedded form styles (buttons, fields, panels, wizard, icons) look correct on a Sites page with an embedded Adaptive Form **before** you commit and run the front-end pipeline—this avoids failed pipeline runs and keeps your Git history clean.
-   >* Configure `.env` with your AEM URL and proxy port as described in the theme README.
-
-3. **Deploy** via your existing [Front-End Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html). After deployment, the same theme CSS will apply to both site and embedded Adaptive Forms.
+2. Deploy via your existing [Front-End Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html). After deployment, the same theme CSS will apply to both site pages and embedded Adaptive Forms.
 
 ## Troubleshooting {#troubleshooting}
 
 | Issue | What to check |
 |-------|-------------------------------|
-| Build fails: "file not found" for an image | Put all form images in `theme/src/components/adaptiveform/resources/images/`. In every `.scss` under `adaptiveform/`, use `../resources/` (and `url(../resources/`) for image paths, not `./resources/`. |
+| Build fails: "file not found" for an image | Put all form images in `theme/src/components/adaptiveform/resources/images/`. In every `.scss` under `adaptiveform/`, use `../resources/` (and `url(../resources/`) for image paths, not `./resources/`. If your bundler resolves paths from `theme/src/`, put images in `theme/src/resources/images/` and use `resources/images/` (no `../`) in SCSS. |
 | Build fails: "file not found" for `_variables.scss` or `_mixin.scss` | Copy both files from the Forms theme `src/site/` into `theme/src/components/adaptiveform/` (the adaptiveform root), not inside a `site` subfolder. |
 | Build fails: "file not found" for a component (e.g. `_scribble.scss`) | Your Forms theme may not include that component. In `theme/src/components/adaptiveform/_adaptiveform.scss`, remove or comment out the `@import` line for that component. |
 | Form renders but has no styles | Confirm the page uses the client library that includes the built theme CSS, and that `theme.scss` contains the `@import './components/adaptiveform/_adaptiveform.scss';` line and the theme was rebuilt and deployed. |
