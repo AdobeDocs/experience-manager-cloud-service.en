@@ -94,10 +94,10 @@ Tap or click **Cancel** or **Done** to discard or save the changes, respectively
 
 #### Rich Text Formatting Options {#formatting-options}
 
-The rich text editor (RTE) of the Universal Editor allows the author to apply standard text formatting. By default, the following options are available.
+The rich text editor (RTE) of the Universal Editor allows the author to apply standard text formatting. The following options are available.
 
 * **Paragraph Style**
-  * Paragrpha, h1-h6, code
+  * Paragraph, h1-h6, code
 * **Bold**
 * **Italic**
 * **Underline**
@@ -133,7 +133,7 @@ The rich text editor (RTE) of the Universal Editor allows the author to apply st
 * **Remove All Formatting**
   * Remove all formatting options from the selected text.
 
-The RTE can be configured to hide options or show additional options depending on authors' needs. Please see the document [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more information.
+Depending on your back end, the options available by default may vary. The RTE can be configured to hide options or show additional options depending on authors' needs. Please see the document [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more information.
 
 ### Editing Media {#edit-media}
 
