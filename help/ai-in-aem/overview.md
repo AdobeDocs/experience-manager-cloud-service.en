@@ -20,7 +20,6 @@ AEM provides a range of [agents](/help/ai-in-aem/agents/overview.md) to accelera
 
 * [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) 
 * [Content Advisor Agent](/help/ai-in-aem/agents/content-advisor/overview.md)
-* [Experience Modernization Agent](/help/ai-in-aem/agents/modernization/overview.md)
 * [Governance Agent](/help/ai-in-aem/agents/governance/overview.md)
 
 ## Generative AI in AEM {#generative-ai-in-aem}
