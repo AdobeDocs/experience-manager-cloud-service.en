@@ -62,7 +62,7 @@ Added Fieldset option at the panel that enables users to organize and group rela
 * CQ-4361634: Fixed Experience Fragments not selectable or getting added to Translation Project.
 * CQ-4362072: Fixed AEMaaCS Translation Workflow – DE > ES Step Fails to Add Page to Translation Project.
 *  FORMS-23741: Users experienced issues where the InvokeDDX and Asset upload steps did not run in cascade, requiring two separate workflow executions. This affected the production environment using AEM as a Cloud Service with the Sites and Forms Add-on.
-* FORMS-23877: Users experienced issues with custom functions not loading at runtime when creating forms directly within Sites pages using an older core component version.
+* FORMS-23877: Users experienced issues with custom functions not loading at runtime when creating forms directly within Sites pages using an older Core Components version.
 * FORMS-24038: Users experienced issues with the navigation button when more tabs were added dynamically.
 * FORMS-23721: Fixed an issue where validation patterns configured for text inputs in the Edit Dialog were not persisted. Previously, the pattern value was saved but not retained or displayed in the UI, resulting in confusion for form authors.
 * FORMS-23456: Users experienced mis-announcements by screen readers on mobile devices  for hidden header rows in a table when using the Table component in Adaptive Forms. A hidden table header was announced out of context, causing confusion for users relying on iOS VoiceOver and Android TalkBack.
@@ -89,7 +89,7 @@ Added Fieldset option at the panel that enables users to organize and group rela
 * SITES-17531: Hardcoded "Smart crop preview" string in Page Editor > Image > Smart Crop.
 * SITES-31575: Info tooltip is not fully visible in Page editor > Carousel component > Properties.
 * SITES-34215: Autocomplete JS component raises immediate validation error on required pathfield in dialog tab.
-* SITES-35218: Some AEM core components do not render empty alt tag properly.
+* SITES-35218: Some AEM Core Components do not render empty alt tag properly.
 * SITES-37114: Truncated "Enable Catalog UID Support" tooltip in "CIF Configurations" tab.
 * SITES-36138: Query without index detected (incident).
 * SITES-37682: Content type override in `/libs/cq/Page/Page.css.jsp` and `/libs/cq/Page/Page.js.jsp.`
