@@ -119,6 +119,15 @@ The rich text editor (RTE) of the Universal Editor allows the author to apply st
   * Specify a URL or use the [asset selector](/help/assets/overview-asset-selector.md#using-asset-selector) to select an asset from AEM.
 * **Table**
   * Use the drop-down to insert a new table of the selected number of columns and rows or insert and remove new columns/rows.
+* **Alignment**
+  * **Align Left**
+  * **Align Center**
+  * **Align Right**
+  * **Align Justify**
+* **Right to Left**
+* **Left to Right**
+* **Indent**
+* **Outdent**
 * **Paste as Text**
   * Remove formatting from text on your clipboard before pasting into the Universal Editor.
 * **Remove All Formatting**
