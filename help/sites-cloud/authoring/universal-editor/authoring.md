@@ -102,6 +102,9 @@ The rich text editor (RTE) of the Universal Editor allows the author to apply st
 * **Italic**
 * **Underline**
 * **Strikethrough**
+* **Text Color**
+  * Opens a color palette where you can select a color or specify a hex value
+  * Only available in the modal editor, not in-context
 * **Superscript**
 * **Subscript**
 * **Bullet list**
@@ -172,7 +175,13 @@ Depending on the needs of your workflow, you may want to edit the Content Fragme
 
    ![Select add icon](assets/add-icon.png)
 
-1. If more than one component is allowed for the container, select which one you wish to insert from the drop-down. If only one component is allowed, it is inserted automatically.
+1. The component picker dialog opens. 
+   * Use the left column to filter components by category or use the search to filter by name.
+   * Click the component name in the right column to insert it into the container.
+   * If only one component is allowed in the container, it is inserted automatically.
+   * Click outside of the picker to cancel component insertion.
+
+   ![Component picker](assets/component-picker.png)
 
 The component is inserted into the container and can be edited in the editor.
 
