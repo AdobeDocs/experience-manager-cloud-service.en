@@ -1,14 +1,14 @@
 ---
-title: Experience Development Agent Overview
-description: Learn how the Experience Development Agent in AEM analyzes failed pipelines in Cloud Manager and build logs to suggest code fixes and speed up debugging.
+title: Development Agent Overview
+description: Learn how the Development Agent in AEM analyzes failed pipelines in Cloud Manager and build logs to suggest code fixes and speed up debugging.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
 ---
 
-# Experience Development Agent Overview {#development-agent-overview}
+# Development Agent Overview {#development-agent-overview}
 
-[As part of the Brand Experience Agent,](/help/ai-in-aem/agents/brand-experience/overview.md) the Experience Development Agent Overview helps AEM developers and administrators create, debug, deploy, and optimize code more efficiently.
+[As part of the Brand Experience Agent,](/help/ai-in-aem/agents/brand-experience/overview.md) the Development Agent helps AEM developers and administrators create, debug, deploy, and optimize code more efficiently.
 
 The agent can retrieve pipeline statuses and help you troubleshoot failing build steps by suggesting fixes, saving time when debugging AEM as a Cloud Service deployments to development, stage, and production environments. It examines build logs and related code to recommend a fix that you can apply manually. 
 
@@ -28,13 +28,13 @@ The agent can retrieve pipeline statuses and help you troubleshoot failing build
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
 
-To access this agent, please refer to the [release notes](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) for instructions on how to enroll in the beta program, being sure to indicate your interest in the Experience Development Agent Overview. You can also email development agent–specific feedback to [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
+To access this agent, please refer to the [release notes](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) for instructions on how to enroll in the beta program, being sure to indicate your interest in the  Development Agent. You can also email development agent–specific feedback to [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
 
-[Follow along a tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) to learn how to use the Experience Development Agent to troubleshoot pipeline failures.
+[Follow along a tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) to learn how to use the Development Agent to troubleshoot pipeline failures.
 
-## Access the Experience Development Agent Overview through Cloud Manager {#how-to-access-the-agent}
+## Access the Development Agent through Cloud Manager {#how-to-access-the-agent}
 
-You access the Experience Development Agent Overview through the AI Assistant found in user interfaces including Cloud Manager or Experience Hub.
+You access the Development Agent through the AI Assistant found in user interfaces including Cloud Manager or Experience Hub.
 
 1. To get started, click [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) to open its home page.
 
@@ -75,7 +75,7 @@ You access the Experience Development Agent Overview through the AI Assistant fo
 
 ## Permissions {#permissions}
 
-The Experience Development Agent Overview requires either the Cloud Manager - Developer role or the Cloud Manager - Program Manager role.
+The Development Agent requires either the Cloud Manager - Developer role or the Cloud Manager - Program Manager role.
 
 ## Sample prompts {#sample-prompts}
 

@@ -1103,7 +1103,7 @@ user-guide-title: AEM as a Cloud Service
         + [Overview](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
         + [Getting Started](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
         + [Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
-      + [Experience Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md)
+      + [Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md)
     + Content Advisor Agent {#content-advisor}
       + [Overview](/help/ai-in-aem/agents/content-advisor/overview.md)
       + [Content Discovery Agent](/help/ai-in-aem/agents/content-advisor/discovery.md)
