@@ -46,10 +46,6 @@ The [Content Advisor Agent](/help/ai-in-aem/agents/content-advisor/overview.md) 
 
 The agent interprets user intent and performs complex editing tasks automatically including generating new renditions, adjusting visual properties, changing backgrounds, or preparing assets for specific digital channels.
 
-## Experience Modernization Agent {#site-modernization}
-
-The [Experience Modernization Agent](/help/ai-in-aem/agents/modernization/overview.md) unlocks the full value of Edge Delivery Services (including AEM authoring) by making the job of website migrations and ongoing evolution fast and frictionless.
-
 ## Governance Agent {#governance-agent}
 
 The [Governance Agent](/help/ai-in-aem/agents/governance/overview.md) safeguards brand integrity and compliance across AEM. By enforcing security, regulatory, and brand policies the agent performs the necessary jobs to ensure that every interaction and activation adheres to established standards.
