@@ -1106,8 +1106,8 @@ user-guide-title: AEM as a Cloud Service
       + [Experience Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md)
     + Content Advisor Agent {#content-advisor}
       + [Overview](/help/ai-in-aem/agents/content-advisor/overview.md)
-      + [Content Discovery Job](/help/ai-in-aem/agents/content-advisor/discovery.md)
-      + [Content Optimization Job](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
+      + [Content Discovery Agent](/help/ai-in-aem/agents/content-advisor/discovery.md)
+      + [Content Optimization Agent](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
     + Governance Agent {#governance}
       + [Overview](/help/ai-in-aem/agents/governance/overview.md)
       + [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
