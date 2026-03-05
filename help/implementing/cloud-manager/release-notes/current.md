@@ -53,9 +53,11 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 You can now try an MCP (Model Context Protocol) server that exposes Cloud Manager Public APIs as tools for AI-enabled IDEs (such as Cursor). After you connect it, you can use conversational prompts to list and manage programs, pipelines, environments, and repositories, helping you move faster without leaving your editor.
 
-This beta is opt-in and intended for evaluation and feedback. If you want early access, sign up to the beta program. Tell us which IDE you plan to use and which Cloud Manager capabilities you want to test. For example, triggering pipelines or reviewing environment details.
+See the documentation [Use MCP with AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
 
-See [Use MCP with AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
+See the tutorial [Cloud Manager MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-server/cloud-manager#).
+
+Interested in the beta? Email [GRP-AEM-CM-MCP-FEEDBACK@adobe.com](mailto:GRP-AEM-CM-MCP-FEEDBACK@adobe.com) with your Adobe OrgID and Program ID.
 
 
 
