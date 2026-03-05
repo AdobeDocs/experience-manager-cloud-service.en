@@ -251,6 +251,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.02.26 Release Notes](/help/release-notes/universal-editor/2026/2026-02-26.md)
       + [2026.02.19 Release Notes](/help/release-notes/universal-editor/2026/2026-02-19.md)
       + [2026.02.13 Release Notes](/help/release-notes/universal-editor/2026/2026-02-13.md)
       + [2026.02.05 Release Notes](/help/release-notes/universal-editor/2026/2026-02-05.md)
@@ -882,6 +883,7 @@ user-guide-title: AEM as a Cloud Service
         + [Set layout of an Adaptive Form based on Core Components](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
         + [Create an Adaptive Form fragment](/help/forms/adaptive-form-fragments-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
+        + [Embed an Adaptive Forms theme in an AEM Sites theme](/help/forms/embed-adaptive-forms-theme-in-site-theme.md)
         + [Create an Adaptive Form template based on Core Components](/help/forms/template-editor-core-components.md)
         + [Create an Adaptive Form (Core Components) based on XFA Form templates](/help/forms/create-adaptive-form-using-xfa-templates.md)
         + [Generate Submission PDF (formerly Document of Record) for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
@@ -1097,21 +1099,23 @@ user-guide-title: AEM as a Cloud Service
     + [Overview](/help/ai-in-aem/agents/overview.md)
     + Brand Experience Agent {#brand-experience}
       + [Overview](/help/ai-in-aem/agents/brand-experience/overview.md)
-      + [Content Update Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
-      + [Communication Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
-      + [Form Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
-      + [Development Job](/help/ai-in-aem/agents/brand-experience/development/development.md)
+      + Experience Production Agent {#experience-production}
+        + [Overview](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)
+        + [Content Update Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
+        + [Communication Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
+        + [Form Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
+      + Experience Modernization Agent {#modernization}
+        + [Overview](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
+        + [Getting Started](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+        + [Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
+      + [Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md)
     + Content Advisor Agent {#content-advisor}
       + [Overview](/help/ai-in-aem/agents/content-advisor/overview.md)
-      + [Content Discovery Job](/help/ai-in-aem/agents/content-advisor/discovery.md)
-      + [Content Optimization Job](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
-    + Governance Agent {#governance}
+      + [Content Discovery Agent](/help/ai-in-aem/agents/content-advisor/discovery.md)
+      + [Content Optimization Agent](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
+    + Brand Governance Agent {#governance}
       + [Overview](/help/ai-in-aem/agents/governance/overview.md)
       + [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
-    + Experience Modernization Agent {#modernization}
-      + [Overview](/help/ai-in-aem/agents/modernization/overview.md)
-      + [Getting Started](/help/ai-in-aem/agents/modernization/getting-started.md)
-      + [Modernization Console](/help/ai-in-aem/agents/modernization/console.md)
   + AI Assistant {#ai-assistant}
     + [Configure AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
     + [About AI Assistant in AEM](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
