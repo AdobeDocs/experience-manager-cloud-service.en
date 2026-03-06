@@ -92,7 +92,7 @@ Click the **[!UICONTROL Auto-approval]** toggle if you need all assets that you 
 
 Click **[!UICONTROL Save]** after making all modifications to apply the changes.
 
-![Configuration UI upload details on Content Hub](assets/import-new.png)
+![Configuration UI upload details on Content Hub](assets/filter-new.png)
 
 Metadata enabled on the Configuration User Interface display on the asset upload page:
 ![Upload metadata on Content Hub](assets/add-assets-for-approval1.png)
@@ -112,7 +112,7 @@ Content Hub allows administrators to configure filters that display while search
    >The new filter gets displayed on the Search page only if there is at least one asset in the repository matching the filter criteria.
 
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available filter, to edit the labels or click the delete icon to delete any existing filter. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
-![Configuration UI filters on Content Hub](assets/filter-new.png)
+![Configuration UI filters on Content Hub](assets/add-filters.png)
 
 The filters enabled on the Configuration User Interface display on the Search page:
 ![Search on Content Hub](assets/content-hub-filters1.png)
@@ -210,7 +210,7 @@ On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]
 >
 > * The recommended size for **Banner Image** is `height = 200 to 450px` and `width = 1920 to 2560px`.
 > * The recommended size for **Logo Image** is `height = 80 to 120px` and `width = 120 to 200px`.
-> * The **supported MIME types** for both Banner and Logo images are `'JPG', value: 'image/jpeg'`, `'PNG', value: 'image/png'`, `'WEBP', value: 'image/webp'`, `'TIFF', value: 'image/tiff'`, `'SVG', value: 'image/svg+xml'`, `'GIF', value: 'image/gif'`
+> * The **supported MIME types** for both Banner and Logo images are `'JPG', value: 'image/jpeg'`, `'PNG', value: 'image/png'`, `'WEBP', value: 'image/webp'`, `'TIFF', value: 'image/tiff'`, `'SVG', value: 'image/svg+xml'`, `'GIF', value: 'image/gif'`.
 
 #### Add title and body text to your banner and change the text color{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
