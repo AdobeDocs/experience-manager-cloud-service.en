@@ -1,6 +1,7 @@
 ---
 title: Publishing Pages from the Sites Console
 description: Learn how to publish, and unpublish, your pages using the Sites Console.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring

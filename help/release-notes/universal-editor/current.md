@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.02.13 Release Notes
-description: These are the release notes for the 2026.02.13 release of the Universal Editor.
+title: Universal Editor 2026.03.05 Release Notes
+description: These are the release notes for the 2026.03.05 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.02.13 Release Notes {#release-notes}
+# Universal Editor 2026.03.05 Release Notes {#release-notes}
 
-These are the release notes for the 13 February 2026 release of the Universal Editor.
+These are the release notes for the 5 March 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,8 +20,8 @@ These are the release notes for the 13 February 2026 release of the Universal Ed
 
 ## What's New {#what-is-new}
 
-* Dynamic Media links are now supported.
-* Schema and data type for creating blocks with [Document Authoring](https://docs.da.live/developers/reference/universal-editor) are now available.
+* [The component picker](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) has a new design.
+* [A color picker](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) for the RTE is now available.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -31,6 +31,5 @@ If you are interested in testing the upcoming features listed below and sharing 
 
 ## Other Improvements {#other-improvements}
 
-* A problem with incorrect URLs for videos has been fixed.
-* Creating multiple components with the same name no longer returns a 409.
-* The headless canvas now persists subsequent updates to a field in container.
+* Alignment, text direction, and indentation options are now [enabled by default in the RTE](/help/implementing/universal-editor/configure-rte.md) provided your backend supports them.
+* Tabs are now rendered when using a Content Fragment with Open API and UI schema.

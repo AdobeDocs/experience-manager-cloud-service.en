@@ -12,10 +12,6 @@ exl-id: b44cc569-00a1-4a66-ae25-3d672cf5fc12
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 ## 1. Introduction 
 
 The Barcode component in the Interactive Communication editor enables authors to visually represent encoded data within communication templates. This is particularly useful for applications that involve tracking, identification, billing, or automation. With support for various barcode standards like Code 128, QR, and more, this component offers flexible styling, positioning, and data binding options to suit a wide range of business needs. 

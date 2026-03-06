@@ -87,7 +87,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
       If necessary, you can check the spelling of a password you have typed or retyped by selecting the password eye icon to reveal the password. Select the icon again to hide the password.
 
-1. In the **[!UICONTROL Repeat Password]** field, retype the new password, then select **[!UICONTROL Done]**.
+1. In the **[!UICONTROL `Repeat Password`]** field, retype the new password, then select **[!UICONTROL Done]**.
 
    The new password is saved when you select **[!UICONTROL Save]** in the upper-right corner of the **[!UICONTROL Create Dynamic Media Configuration]** page.
 
@@ -124,7 +124,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >This Inbox notification informs you if the configuration was either successful or not.
    > See [Troubleshoot a new Dynamic Media configuration](#troubleshoot-dm-config) and [Your Inbox](/help/sites-cloud/authoring/inbox.md) for more information. 
 
-1. To preview Dynamic Media content securely before it gets published, Experience Manager as a Cloud Service uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to preview content securely. To set up this action in Experience Manager as a Cloud Service, see the [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. To preview Dynamic Media content securely before it gets published, Experience Manager as a Cloud Service uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to preview content securely. To set up this action in Experience Manager as a Cloud Service, see the topic [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
 <!--
     * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
@@ -186,7 +186,7 @@ The changed password is saved when you select **[!UICONTROL Save]** in the upper
 
       The **[!UICONTROL Current Password]** field is intentionally pre-filled and hidden from interaction.
 
-   * In the **[!UICONTROL Repeat Password]** field, retype the new password, then select **[!UICONTROL Done]**.
+   * In the **[!UICONTROL `Repeat Password`]** field, retype the new password, then select **[!UICONTROL Done]**.
 
 1. In the upper-right corner of the **[!UICONTROL Edit Dynamic Media Configuration]** page, select **[!UICONTROL Save]**, then select **[!UICONTROL OK]**.
 
@@ -194,7 +194,7 @@ The changed password is saved when you select **[!UICONTROL Save]** in the upper
 
 To customize the configuration and setup of Dynamic Media further, or optimize its performance, you can complete one or more of the following _optional_ tasks:
 
-* [(Optional) Enable ACL permissions in Dynamic Media](#optional-enable-acl)
+<!-- * [(Optional) Enable ACL permissions in Dynamic Media](#optional-enable-acl) -->
 * [(Optional) Setup and configuration of Dynamic Media settings](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [(Optional) Tune the performance of Dynamic Media](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
@@ -271,7 +271,7 @@ To configure the default color properties for enabling color correction when req
 
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started), then sign in to your account using credentials provided during provisioning.
 1. Go to **[!UICONTROL Setup > Application Setup]**.
-1. Expand the **[!UICONTROL Publish Setup]** area and select **[!UICONTROL Image Server]**. Set **[!UICONTROL Publish Context]** to **[!UICONTROL Image Serving]** when setting defaults for publish instances.
+1. Expand the **[!UICONTROL `Publish Setup`]** area and select **[!UICONTROL Image Server]**. Set **[!UICONTROL Publish Context]** to **[!UICONTROL Image Serving]** when setting defaults for publish instances.
 1. Scroll to the property that you must change, for example, a property in the **[!UICONTROL Color Management Attributes]** area.
    You can set the following color correction properties:
 
@@ -388,12 +388,12 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
 
 ### (Optional) Tune the performance of Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-To keep Dynamic Media running smoothly, Adobe recommends the following synchronization performance/scalability fine-tuning tips:
+To keep Dynamic Media running smoothly, Adobe recommends the following synchronization performance/scalability fine-tuning tip:
 
 * [Update the predefined Job parameters for processing of different file formats](#update-job-para).
-* [Update the predefined Granite Workflow Queue (video assets) worker threads](#update-granite-workflow-queue-worker-threads-video)
+<!-- * [Update the predefined Granite Workflow Queue (video assets) worker threads](#update-granite-workflow-queue-worker-threads-video)
 * [Update the predefined Granite Transient Workflow Queue (images and non-video assets) worker threads](#update-granite-transient-workflow-queue-worker-threads-images).
-* [Update the maximum upload connections to the Dynamic Media Classic (Scene7) server](#update-max-s7-upload-connections).
+* [Update the maximum upload connections to the Dynamic Media Classic (Scene7) server](#update-max-s7-upload-connections).-->
 
 #### Update the predefined Job parameters for processing of different file formats {#update-job-para}
 
@@ -417,6 +417,7 @@ To update any of these parameters, see [Editing MIME types for supported formats
 
 See also [Adding MIME types for unsupported formats](#adding-mime-types-for-unsupported-formats).
 
+<!--
 #### Update the predefined Granite Workflow Queue (video assets) worker threads {#update-granite-workflow-queue-worker-threads-video}
 
 The Granite Workflow queue is used for non-transient workflows. In Dynamic Media, it is used to process video with the **[!UICONTROL Dynamic Media Encode Video]** workflow.
@@ -466,14 +467,15 @@ The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asse
 
    You can increase **[!UICONTROL Maximum Parallel Jobs]** to support adequately heavy upload of files to Dynamic Media. The exact value depends on hardware capacity. In certain scenarios, such as an initial migration or a one-time bulk upload, you can use a large value. Be aware, however, that using a large value (such as two times the number of cores) can have negative effects on other concurrent activities. As such, test and adjust the value based on your particular use case.
 
-<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
+   By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic. -->
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic.
 
    ![chlimage_1](assets/chlimage_1.jpeg)
 
 1. Select **[!UICONTROL Save]**.
-
+-->
+<!--
 #### Update the maximum upload connections to the Dynamic Media Classic (Scene7) server {#update-max-s7-upload-connections}
 
 The Dynamic Media Classic (Scene7) Upload Connection setting synchronizes Experience Manager assets to Dynamic Media Classic servers.
@@ -496,6 +498,7 @@ The Dynamic Media Classic (Scene7) Upload Connection setting synchronizes Experi
    ![Adobe Scene7 Upload Service](assets/chlimage_1-2.jpeg)
 
 1. Select **[!UICONTROL Save]**.
+-->
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
