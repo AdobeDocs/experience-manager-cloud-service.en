@@ -5,6 +5,7 @@ feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
 ---
+
 # Overview of Agents in AEM {#overview-of-agents-in-aem}
 
 These agents are available in Adobe Experience Manager (AEM) as a Cloud Service to accelerate your content creation and automatically orchestrate changes.
@@ -16,36 +17,45 @@ These agents are available in Adobe Experience Manager (AEM) as a Cloud Service 
 >* They are not currently available for AEM 6.5, nor AEM 6.5 LTS.
 >* They are not available on AEM On-prem, nor Managed Services.
 
->[!IMPORTANT]
->
->To use the agents you are required to enroll in the Explorer Program. You can find more information on the AEM Agents Explorer Program [here](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs).
+## Accessing Agents {#accessing-agents}
 
-## Experience Production Agent {#experience-production-agent}
+You have three options to access agents.
 
-The [Experience Production Agent](/help/ai-in-aem/agents/production/overview.md) automates high effort and high-volume tasks. Empowering teams and turning manual, weeks-long processes into fast, AI-assisted workflows that keep every experience current and consistent helping the business achieve their goals.
+1. You may have the option to access AEM Agents through the [Try Before You Buy program,](http://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) which is rolling out in phases. Your CSM or TAM can help confirm availability for your organization.
+1. Explore AEM agents [through a trial.](https://www.aem.live/developer/aem-playground)
+1. Connect with your CSM or TAM to discuss access via the Agentic SKU if that aligns with your roadmap and evaluation plans.
 
-## Content Optimization Agent {#content-optimization-agent}
+As new skills become available under early release, we will provide additional opportunities to participate and share feedback. We encourage you to watch [this page](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs) for updates.
 
-The [Content Optimization Agent](/help/ai-in-aem/agents/content-optimization/overview.md) transforms how users refine and adapt assets by applying natural language instructions to create channel-ready variations. The agent interprets user intent and performs complex editing tasks automatically to perform tasks including generating new renditions, adjusting visual properties, changing backgrounds, or preparing assets for specific digital channels.
+## Brand Experience Agent {#brand-experience-agent}
 
-## Discovery Agent {#discovery-agent}
+The [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) automates high effort and high-volume jobs.
 
-The [Discovery Agent](/help/ai-in-aem/agents/discovery/overview.md) delivers AEM content for a streamlined, click-free discovery experience. It intelligently searches across Assets, Content Fragments, and Adaptive Forms to deliver relevant materials such as images, videos, PDF documents, articles, and form templates. 
+* **Content Update** - Update a page or Content Fragment
+* **Form Creation** - Create a form or import a form
+* **Development Troubleshooting** - Empower technical roles (developers and administrators) to streamline the creation, debugging, deployment, and optimization of code.
 
-## Development Agent {#development-agent}
+The Brand Experience Agent empowers teams to turn manual, weeks-long processes into fast, AI-assisted workflows that keep every experience current and consistent helping the business achieve their goals.
 
-The [Development Agent](/help/ai-in-aem/agents/development/overview.md) empowers the technical roles (developers and administrators), by streamlining the creation, debugging, deployment, and optimization of code.
+## Content Advisor Agent {#content-advisor-agent}
+
+The [Content Advisor Agent](/help/ai-in-aem/agents/content-advisor/overview.md) transforms how users discover, refine, and adapt assets by applying natural language instructions to create channel-ready variations, simplifying the following jobs.
+
+* **Discovery** - Deliver AEM content for a streamlined, click-free discovery experience. Intelligently search across Assets, Content Fragments, and Adaptive Forms to deliver relevant materials such as images, videos, PDF documents, articles, and form templates. 
+* **Content Optimization** - Transform how users refine and adapt assets by applying natural language instructions to create channel-ready variations. Interpret user intent and performs complex editing tasks automatically to perform tasks including generating new renditions, adjusting visual properties, changing backgrounds, or preparing assets for specific digital channels.
+
+The agent interprets user intent and performs complex editing tasks automatically including generating new renditions, adjusting visual properties, changing backgrounds, or preparing assets for specific digital channels.
 
 ## Governance Agent {#governance-agent}
 
-The [Governance Agent](/help/ai-in-aem/agents/governance/overview.md) safeguards brand integrity and compliance across AEM. By enforcing security, regulatory, and brand policies the agent ensures that every interaction and activation adheres to established standards.
+The [Governance Agent](/help/ai-in-aem/agents/governance/overview.md) safeguards brand integrity and compliance across AEM. By enforcing security, regulatory, and brand policies the agent performs the necessary jobs to ensure that every interaction and activation adheres to established standards.
 
 ## Limitations {#limitations}
 
-Currently the limitations in place are: 
+Please be aware of the following general limitations of the AEM agents:
 
 * The agents are only available for AEM as a Cloud Service and Edge Delivery Services. 
-  * They are not currently available for AEM 6.5, nor AEM 6.5 LTS.
-  * They are not currently available on AEM On-prem, nor Managed Services.
+* They are not currently available for AEM 6.5, nor AEM 6.5 LTS.
+* They are not currently available on AEM On-prem, nor Managed Services.
 
 See the individual pages for agent-specific limitations.

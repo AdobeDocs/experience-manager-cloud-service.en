@@ -1,6 +1,7 @@
 ---
 title: Undo and Redo Limitations
 description: Learn about the limitations of the undo and redo options in the AEM page editor.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 87773f47-5116-4966-9ba4-5deedb7c4fa6
 solution: Experience Manager Sites
 feature: Authoring
