@@ -173,5 +173,42 @@ To enable Dynamic renditions:
    > 
    > Dynamic renditions are available only for image assets.
 
+## Frequently asked questions {#faqs-download-assets-content-hub}
+
+### How do I download a single asset or multiple assets from AEM Assets Content Hub?
+
+To download a single asset, click the download icon on the asset card. For multiple assets, select them and click Download in the action bar. Content Hub starts downloading the assets in their original rendition if downloads are enabled by your administrator. If asset renditions are available, you can select specific renditions before downloading.
+
+### Is there any configuration managed by administrator in AEM Assets Content Hub to allow Users to download original assets or enable availability of renditions?
+
+Yes, administrators can enable or disable the **Enable availability of renditions** and **Allow download of original assets** toggles available in **Renditions** tab on the Configuration UI to manage the download of original assets or enable availability of renditions in AEM Assets Content Hub.
+
+### What are asset renditions, and what types are available in AEM Assets Content Hub?
+
+Asset renditions are different representations of the original asset file tailored for various use cases. Types include static renditions (such as thumbnails, web or mobile optimized versions, or high-resolution files for print), custom static renditions, and dynamic renditions (including Smart Crop versions). Static renditions are pre-generated, while dynamic renditions are created in real-time based on request.
+
+### How does Smart Crop work with assets in AEM Assets Content Hub?
+
+Smart Crop is an AI-powered feature that identifies the most important part of an image and intelligently crops around it. This ensures that visuals look great across different screens and formats. Smart Crop renditions are available for image assets if your organization supports dynamic media capabilities.
+
+### How do I enable Dynamic renditions in AEM Assets Content Hub?
+
+To enable Dynamic renditions:
+
+* Ensure Dynamic Media with OpenAPI capabilities is enabled. Approved assets are then available for public delivery.
+
+* Set the asset approval target to Content Hub.
+
+* In the Configuration UI, go to the Renditions tab and enable Enable availability of renditions.
+
+* If newly onboarded to Dynamic Media with OpenAPI, re-save existing image presets from Admin view > Tools > Assets > Image Presets (Edit > Save).
+
+Dynamic renditions are supported only for image assets.
+
+### How do I download asset renditions in Content Hub?
+
+To download renditions, select the asset and click the download action. If renditions are enabled by the administrator, a dialog appears where you can choose which renditions to download. For licensed assets, accept the licensing terms before downloading. For multiple assets, select the assets, choose renditions, and download them as a ZIP file. You can select all available renditions or specific ones like static or dynamic renditions.
+
+
 
 
