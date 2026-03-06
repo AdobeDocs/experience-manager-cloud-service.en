@@ -85,7 +85,7 @@ The **Content view** provides tools for browsing and previewing content. By defa
 
 ### Chat panel {#chat-panel}
 
-The chat panel allows you to view and continue your conversation with the Experience Modernization agent. The chat panel includesthe chat message history and a [prompt input](#prompt-input) for making additional requests of the console.
+The chat panel allows you to view and continue your conversation with the Experience Modernization agent. The chat panel includes the chat message history and a [prompt input](#prompt-input) for making additional requests of the console.
 
 * **Chat actions**
   * **Clear chat**: This resets the conversation and clears the AI's context window. Use this option when starting a new task unrelated to the previous conversation.
