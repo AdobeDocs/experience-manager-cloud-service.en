@@ -22,6 +22,10 @@ Before you start, ensure you have:
 * **Node.js and npm** – to build the site theme (see theme README for supported versions).
 * **Maven** – if you build the full site template package (optional for theme-only work).
 
+>[!NOTE]
+>
+>**Theme name:** When you embed a Forms theme into your site theme and deploy via the front-end pipeline, you **do not need to change any theme name**. The form styles become part of your existing site theme, which is built and deployed with its current name. Changing the theme name (for example in `package.json`) is only required when you deploy a **standalone** Forms theme from a dedicated theme repository; that scenario is described in [Use themes to style Core Components–based Adaptive Forms](/help/forms/using-themes-in-core-components.md).
+
 ## Step 1: Create the adaptive form components folder {#step-1-create-folder}
 
 In your site theme repository, create the folder where the Forms theme will live:
@@ -75,15 +79,19 @@ Do **not** copy the rest of the Forms theme’s `src/site/` folder; only these t
 
 ## Step 4: Fix image paths in SCSS {#step-4-fix-image-paths}
 
-In the Forms theme, component SCSS files often reference images with paths like `./resources/` or `url(resources/`. After moving into `theme/src/components/adaptiveform/<component>/`, those paths must point up one level to `adaptiveform/resources/`.
+In the Forms theme, component SCSS files often reference images with paths like `./resources/` or `url(resources/`. After copying into the site theme, those paths must point to `theme/src/components/adaptiveform/resources/images/`.
+
+The **standard site template theme** uses Parcel, which resolves `url()` paths from `theme/src/`. So when images are in `theme/src/components/adaptiveform/resources/images/`, use the path **`components/adaptiveform/resources/images/`** (relative to `theme/src/`).
 
 **Find and replace** in every `.scss` under `theme/src/components/adaptiveform/`:
 
 | Find | Replace with |
 |------|------------------|
-| `./resources/` | `../resources/` |
-| `url(resources/` | `url(../resources/` |
-| `url('resources/` | `url('../resources/` |
+| `./resources/` | `components/adaptiveform/resources/` |
+| `url(resources/` | `url(components/adaptiveform/resources/` |
+| `url('resources/` | `url('components/adaptiveform/resources/` |
+| `url(../resources/` | `url(components/adaptiveform/resources/` |
+| `url('../resources/` | `url('components/adaptiveform/resources/` |
 
 **Example** – before (Forms theme):
 
@@ -93,15 +101,23 @@ In the Forms theme, component SCSS files often reference images with paths like 
 }
 ```
 
-**After** (site theme):
+**After** (site theme, images in `adaptiveform/resources/images/`):
 
 ```scss
 .cmp-adaptiveform-button__questionmark {
-  background: url(../resources/images/question.svg) center center / cover no-repeat, #969696;
+  background: url(components/adaptiveform/resources/images/question.svg) center center / cover no-repeat, #969696;
 }
 ```
 
-After the replace, these become `url(../resources/images/...)` and `url('../resources/images/...')` respectively. Repeat for every SCSS file under `adaptiveform/` that references images (button, accordion, wizard, container, scribble, and others). 
+**Example** – loading state (e.g. in `container/_container.scss`):
+
+```scss
+.cmp-adaptiveform-container--loading {
+  background: rgb(255, 255, 255) url(components/adaptiveform/resources/images/busy-state.gif) no-repeat fixed center;
+}
+```
+
+Repeat for every SCSS file under `adaptiveform/` that references images (button, accordion, wizard, container, scribble, and others). A project-wide find/replace in your IDE over `theme/src/components/adaptiveform/` is recommended. 
 
 ## Step 5: Create the adaptive form entry-point SCSS {#step-5-create-adaptiveform-scss}
 
@@ -192,7 +208,7 @@ This is the only change required in the existing site theme structure; all form-
 
 | Issue | What to check |
 |-------|-------------------------------|
-| Build fails: "file not found" for an image | Put all form images in `theme/src/components/adaptiveform/resources/images/`. In every `.scss` under `adaptiveform/`, use `../resources/` (and `url(../resources/`) for image paths, not `./resources/`. If your bundler resolves paths from `theme/src/`, put images in `theme/src/resources/images/` and use `resources/images/` (no `../`) in SCSS. |
+| Build fails: "file not found" for an image | Ensure all form images are in `theme/src/components/adaptiveform/resources/images/`. In every `.scss` under `adaptiveform/`, use `url(components/adaptiveform/resources/images/...)` so the path resolves from `theme/src/` (required for the standard site theme build with Parcel). Do not use `../resources/` or `resources/` alone unless your bundler resolves paths per-file; then use the path that matches your image folder. |
 | Build fails: "file not found" for `_variables.scss` or `_mixin.scss` | Copy both files from the Forms theme `src/site/` into `theme/src/components/adaptiveform/` (the adaptiveform root), not inside a `site` subfolder. |
 | Build fails: "file not found" for a component (e.g. `_scribble.scss`) | Your Forms theme may not include that component. In `theme/src/components/adaptiveform/_adaptiveform.scss`, remove or comment out the `@import` line for that component. |
 | Form renders but has no styles | Confirm the page uses the client library that includes the built theme CSS, and that `theme.scss` contains the `@import './components/adaptiveform/_adaptiveform.scss';` line and the theme was rebuilt and deployed. |
