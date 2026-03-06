@@ -1,6 +1,7 @@
 ---
 title: Personalization and Content Targeting
 description: Learn how you can create personalized, targeted content with AEM
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 solution: Experience Manager Sites
 feature: Authoring, Personalization

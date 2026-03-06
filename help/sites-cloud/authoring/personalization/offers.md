@@ -1,6 +1,7 @@
 ---
 title: Creating and Managing Offers (Offers Console)
 description: Use the Offers console to create offers that you can use in activity experiences
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 solution: Experience Manager Sites
 feature: Authoring, Personalization

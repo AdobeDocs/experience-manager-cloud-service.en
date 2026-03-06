@@ -12,10 +12,6 @@ exl-id: f19abed5-34a1-4c26-9e92-e219da798dab
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 ## Introduction
 
 The Content Overflow Handling feature in the Interactive Communication Editor enhances how text behaves within Flowed and Positioned layouts. It ensures smooth content continuity for flowed layouts and provides visual alerts for positioned layouts, giving authors better control and flexibility when designing communications.

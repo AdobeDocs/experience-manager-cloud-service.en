@@ -4,6 +4,7 @@ description: Learn how to edit the properties of a page and change behavior of t
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 8fee7e24-bbaa-4cc4-a047-165c9f2cd973
 ---
 # Editing Page Properties {#page-properties}

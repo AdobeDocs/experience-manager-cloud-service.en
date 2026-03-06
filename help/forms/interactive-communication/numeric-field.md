@@ -12,10 +12,6 @@ exl-id: 1f6bda20-7bce-4cfd-9985-f8b49d6e50e0
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 ## 1. Introduction 
 
 The Numeric Field component in the Interactive Communication (IC) editor enables authors to collect numerical input from users in a controlled format. Whether capturing phone numbers, PIN codes, policy IDs, or financial figures, this field ensures that only numeric values are accepted. The component also supports styling, formatting, validation, and data binding, making it essential for structured communications. 

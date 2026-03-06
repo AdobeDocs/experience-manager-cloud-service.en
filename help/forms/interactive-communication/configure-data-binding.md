@@ -12,10 +12,6 @@ exl-id: 81779df9-c101-4c39-a779-651cafc70eb9
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
 
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
-
 ## 1. Introduction
 
 Data Binding in the Interactive Communication Editor connects on-canvas fields with a governed data layer so that communications render with real, contextual information. By linking components to a Form Data Model (FDM), authors can ensure accuracy, reduce manual work, and deliver dynamic, personalized experiences.
