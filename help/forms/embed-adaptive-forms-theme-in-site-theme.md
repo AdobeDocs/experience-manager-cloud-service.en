@@ -91,7 +91,6 @@ The **standard site template theme** uses Parcel, which resolves `url()` paths f
 | `url(resources/` | `url(components/adaptiveform/resources/` |
 | `url('resources/` | `url('components/adaptiveform/resources/` |
 | `url(../resources/` | `url(components/adaptiveform/resources/` |
-| `url('../resources/` | `url('components/adaptiveform/resources/` |
 
 **Example** – before (Forms theme):
 
