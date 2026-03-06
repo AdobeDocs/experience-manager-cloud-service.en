@@ -130,3 +130,7 @@ Content Fragment Selector lets you view the fragment in the:
 
 * **Table View**
 * **Grid View**
+
+The required view can be selected from the icons in the top toolbar: 
+
+![The Content Fragment Selector - View Type](/help/headless/assets/content-fragment-selector-view-type.png)
