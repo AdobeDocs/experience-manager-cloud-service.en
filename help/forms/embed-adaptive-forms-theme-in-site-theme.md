@@ -56,6 +56,8 @@ Using your **Forms theme** (for example, `aem-forms-theme-canvas`) and your **si
    … (one folder per component)
    ```
 
+   ![add adaptive form components](/help/forms/assets/theme-add-adaptiveform-component.png)
+
 2. **Copy images**  
    Copy the Forms theme images into the site theme:
 
@@ -65,6 +67,8 @@ Using your **Forms theme** (for example, `aem-forms-theme-canvas`) and your **si
    ```
 
    Create `theme/src/components/adaptiveform/resources/images/` if it does not exist, then copy all image assets (for example `question.svg`, `Chevron-Left.svg`, `busy-state.gif`, and so on).
+
+   ![add images](/help/forms/assets/theme-add-images.png)
 
 ## Step 3: Copy variables and mixins {#step-3-copy-variables-and-mixins}
 
@@ -76,6 +80,8 @@ The Forms theme uses shared variables and mixins under `src/site/`. Copy only th
 | `src/site/_mixin.scss`    | `theme/src/components/adaptiveform/_mixin.scss`    |
 
 Do **not** copy the rest of the Forms theme’s `src/site/` folder; only these two files are required for the embedded form styles.
+
+![add variables and mixins](/help/forms/assets/theme-add-mixin-variable.png)
 
 ## Step 4: Fix image paths in SCSS {#step-4-fix-image-paths}
 
@@ -108,13 +114,7 @@ The **standard site template theme** uses Parcel, which resolves `url()` paths f
 }
 ```
 
-**Example** – loading state (e.g. in `container/_container.scss`):
-
-```scss
-.cmp-adaptiveform-container--loading {
-  background: rgb(255, 255, 255) url(components/adaptiveform/resources/images/busy-state.gif) no-repeat fixed center;
-}
-```
+![Change images URL](/help/forms/assets/theme-change-url.png)
 
 Repeat for every SCSS file under `adaptiveform/` that references images (button, accordion, wizard, container, scribble, and others). A project-wide find/replace in your IDE over `theme/src/components/adaptiveform/` is recommended. 
 
@@ -166,6 +166,8 @@ Use the following as the full entry point (matches the standard integration with
 @import './datetime/_datetime.scss';
 ```
 
+![adaptive form scss](/help/forms/assets/theme-adaptive-form-scss.png)
+
 If your Forms theme omits some components (for example, no scribble or captcha), remove or comment out the corresponding `@import` lines to avoid build errors. The list above matches the [Canvas theme](https://github.com/adobe/aem-forms-theme-canvas) structure.
 
 ## Step 6: Import the adaptive form theme in the site theme {#step-6-import-in-theme-scss}
@@ -189,6 +191,8 @@ In **`theme/src/theme.scss`**, add a single import at the **end** of the file (a
 @import './components/adaptiveform/_adaptiveform.scss';
 ```
 
+![add adaptive form scss](/help/forms/assets/theme-add-adaptive-form-scss-theme.png)
+
 This is the only change required in the existing site theme structure; all form-specific code stays under `src/components/adaptiveform/`.
 
 ## Step 7: Build and deploy {#step-7-build-and-deploy}
@@ -200,6 +204,8 @@ This is the only change required in the existing site theme structure; all form-
    npm install
    npm run build
    ```
+
+   ![run build](/help/forms/assets/theme-mpm-run-build.png)
 
 2. Deploy via your existing [Front-End Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines.html). After deployment, the same theme CSS will apply to both site pages and embedded Adaptive Forms.
 
