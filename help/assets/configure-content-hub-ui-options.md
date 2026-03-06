@@ -210,7 +210,7 @@ On the ![Branding](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Branding]
 >
 > * The recommended size for **Banner Image** is `height = 200 to 450px` and `width = 1920 to 2560px`.
 > * The recommended size for **Logo Image** is `height = 80 to 120px` and `width = 120 to 200px`.
-> * The **supported MIME types** for both Banner and Logo images are `'JPG', value: 'image/jpeg'`, `'PNG', value: 'image/png'`, `'WEBP', value: 'image/webp'`, `'TIFF', value: 'image/tiff'`, `'SVG', value: 'image/svg+xml'`, `'GIF', value: 'image/gif'`.
+> * The **supported MIME types** for both Banner and Logo images are `'JPG', value: 'image/jpeg'`, `'PNG', value: 'image/png'`, `'WEBP', value: 'image/webp'`, `'TIFF', value: 'image/tiff'`, `'SVG', value: 'image/svg+xml'`, `'GIF', value: 'image/gif'`
 
 #### Add title and body text to your banner and change the text color{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
