@@ -50,5 +50,3 @@ After defining the license path in the asset's properties, approve the asset and
 ### Who is responsible for managing licensed assets in Content Hub?
 
 Administrators are responsible for editing metadata forms, assigning them to asset folders, and approving both assets and their licenses in Content Hub.
-
-### 
