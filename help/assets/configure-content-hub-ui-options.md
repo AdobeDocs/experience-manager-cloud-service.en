@@ -323,3 +323,59 @@ Enable the following setting on the Configurations user interface to allow Conte
 
 Learn more about [sharing assets in the [!DNL Content Hub]](share-assets-content-hub.md).
 
+## Frequently asked questions {#faqs-content-hub-upload-assets}
+
+### Who can access and configure the AEM Assets Content Hub user interface settings?
+
+Only users with Content Hub administrator rights can access and configure the Content Hub user interface settings. Administrative permissions must be granted via the Adobe Admin Console before accessing the configuration interface.
+
+### What can administrators configure in the AEM Assets Content Hub UI?
+
+Administrators can configure the following setting in AEM Assets Content Hub Configuration User Interface:
+
+* Import metadata fields (including required fields and auto-approval settings)
+
+* Search filters shown on the search page
+
+* Searchable metadata fields used for indexing
+
+* Asset card metadata (up to six fields displayed on cards)
+
+* Asset details view properties
+
+* Branding elements (logo, banner text, colors, banner image)
+
+* Asset visibility rules (including expired asset behavior)
+
+* Rendition and download options
+
+* Custom navigation links (external tabs)
+
+* Collection and sharing settings (public links and permissions)
+
+These settings control both the visual experience and functional behavior of Content Hub for end users.
+
+
+### How can administrators add new metadata fields for asset uploads in AEM Assets Content Hub?
+
+Administrators can add new metadata fields for asset uploads by clicking **Add metadata** in the **Import** tab, specifying the label, mapping it to the appropriate property from the metadata schema, selecting the input type, and deciding if the field is required or optional. After confirming and saving, the new field becomes available to users during asset uploads.
+
+### What is the Auto Approval setting for assets in AEM Assets Content Hub and how does it work?
+
+The Auto Approval setting, when enabled, allows new assets to become immediately available on Content Hub upon upload. By default, this setting is off, requiring AEM authors or administrators to manually approve new assets before they display on the Content Hub portal.
+
+### How do administrators configure filters for asset searches in AEM Assets Content Hub?
+
+Administrators can configure filters for asset searches by clicking **Add filters**, specifying the filter label, mapping it to the appropriate metadata property, selecting the data type, and confirming the addition. Filters become available in the interface once there is at least one asset matching the filter criteria. Changes are applied by clicking **Save**.
+
+### What asset properties can be displayed in the Asset Details view and how are they configured in AEM Assets Content Hub?
+
+Asset properties such as file name, title, format, size, and custom fields such as categories can be displayed in the Asset Details view. Administrators add these properties by clicking **Add metadata**, specifying the label, mapping it to the metadata schema, selecting the data type, confirming, and saving the changes.
+
+### How can administrators customize metadata details shown on asset cards in AEM Assets Content Hub?
+
+Administrators can customize metadata details shown on asset cards by clicking **Add metadata** in the Asset Card settings, specifying the label (for example, file format), mapping it to the appropriate property in the metadata schema, and confirming the addition. Up to six metadata fields can be displayed on asset cards.
+
+### Can administrators customize your AEM Assets Content Hub portal to meet your organization's branding requirements?
+
+Yes. Administrators can personalize the look and feel of AEM Assets Content Hub by editing the title and body text for the main banner, selecting text colors via a color picker or hex code, and setting secondary and primary colors for background, text, and icons.
