@@ -77,6 +77,36 @@ Follow these steps to setup Content Hub for your team:
 
 1. [Provide Content Hub feedback](#provide-content-hub-feedback).
 
+## Frequently asked questions {#faqs-content-hub-overview}
+
+### What is Content Hub? {#what-is-content-hub}
+
+Content Hub is an Adobe Experience Manager as a Cloud Service feature that enables broader teams to easily discover relevant, approved assets through an intuitive portal and quickly adapt them to their needs. It enables distribution of assets at scale and facilitates the creation of on-brand content variants to improve marketing agility.
+
+### What are the prerequisites for accessing Content Hub? {#prerequisites-for-content-hub}
+
+Content Hub requires a production author environment of Experience Manager as a Cloud Service, specifically the 2024.6 release or newer (minimum version 2024.6.16799).
+
+### How does Content Hub improve the search experience for brand-approved assets? {#content-hub-improves-search-experience}
+
+Content Hub presents all approved assets in a flat hierarchy, making it easier to find and share brand-approved assets through an intuitive portal. This setup streamlines the search process and ensures users can efficiently locate the assets they need.
+
+### Who can configure the Content Hub user interface and what aspects are configurable? {#content-hub-configuration}
+
+An administrator can configure the Content Hub user interface, including filters for search, fields for adding or importing assets, asset properties, and banner content for branding. This allows customization based on organizational requirements.
+
+### How does Content Hub empower non-creatives to edit and remix content? {#content-hub-edit-remix-content}
+
+Content Hub enables non-creatives to edit existing content and create new, on-brand variations using easy-to-use tools, templates, and brand elements. If users have Adobe Express entitlements, they can also leverage Adobe Firefly GenAI capabilities for advanced content creation.
+
+### How can users access Content Hub? {#content-hub-access}
+
+Users can access Content Hub via direct links (https://experience.adobe.com/#/assets/contenthub), or by logging into experience.adobe.com and selecting Experience Manager Assets Content Hub from the Quick access section.
+
+### How many Content Hub Limited users are included with AEM Assets? {#content-hub-limited-users-with-aem-assets}
+
+[Assets Ultimate](/help/assets/assets-ultimate-overview.md) and Assets as a Cloud Service each include 250 Content Hub Limited users, while [Assets Prime](/help/assets/assets-prime.md) includes 50 Content Hub Limited users.
+
 
 ## Learn more on key capabilities {#key-capabilities-content-module}
 
