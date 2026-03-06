@@ -96,3 +96,34 @@ This allows you to write simple and expressive rules, such as: ALLOW if region =
 * Capture the business intent of the rule in comment, regardless of whether the condition is correctly written, as the intent helps us validate and correct the logic, if required.
 
 * The license PDF files, which are set for DRM need to be visible to all, so that users are able to see them when they are downloading the asset with license.
+
+## Frequently asked questions {#faqs-attribute-based-access-control-content-hub}
+
+### What is Attribute-based Access Control (ABAC) in AEM Assets Content Hub?
+
+Attribute-based Access Control (ABAC) in AEM Assets Content Hub allows administrators to define metadata-based rules to control the level of access different user groups have to digital assets. Access is determined by whether the asset's metadata matches the conditions specified in the rules, allowing for granular and dynamic management of asset visibility.
+
+### How do administrators define access rules using ABAC in AEM Assets Content Hub?
+
+Administrators define access rules by creating conditions based on asset metadata, such as brand or region, and linking these to specific user group IDs. These rules use logical (AND, OR) and comparison (equals, not equals) operators to specify exactly which assets are visible to which user groups.
+
+### What are the main benefits of using ABAC over traditional folder-based permissions?
+
+ABAC eliminates the dependency on folder structures for permissions, allows administrators to upload assets and assign permissions retroactively, and reduces the number of duplicate assets needed. This improves asset integrity and simplifies permission management, especially when assets need to be shared with multiple groups.
+
+### Can administrators set up ABAC rules directly in the AEM Assets Content Hub interface?
+
+No, as of now, administrators cannot create ABAC rules directly in the Content Hub interface. Instead, they must download a template spreadsheet (download link provided in this article), define their rules there, and submit them to Adobe Support via a support ticket for implementation.
+
+### What types of metadata conditions can be used while setting up ABAC rules in AEM Assets Content Hub?
+
+ABAC rules in AEM Assets Content Hub can use logical operators like AND and OR, and comparison operators such as equals and not equals. Metadata properties used in the rules must be correctly defined and available in the AEM metadata schemas, and can include fields like region, brand, or publishing status.
+
+### Why is AEM Assets Content Hub ABAC particularly useful for organizations with large teams and diverse asset needs?
+
+ABAC is useful for organizations with large teams because it enables granular, rule-based access to assets based on user roles, regions, or brands. It ensures that users only see assets relevant to their responsibilities, without manual permission assignments or excessive duplication of assets.
+
+### How should administrators prepare the ABAC spreadsheet before submitting it to Adobe Support?
+
+Administrators should create user groups in the Adobe Admin Console, note their Group IDs, and clearly define the permissions and conditions for each group in the spreadsheet. They should ensure all metadata properties are correctly mapped to the appropriate schemas, and use the Comments column to clarify the business intent of each rule, making it easier for Adobe to validate and implement the rules.
+
