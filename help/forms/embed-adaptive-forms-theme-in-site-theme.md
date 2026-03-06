@@ -22,10 +22,6 @@ Before you start, ensure you have:
 * **Node.js and npm** – to build the site theme (see theme README for supported versions).
 * **Maven** – if you build the full site template package (optional for theme-only work).
 
->[!NOTE]
->
->**Theme name:** When you embed a Forms theme into your site theme and deploy via the front-end pipeline, you **do not need to change any theme name**. The form styles become part of your existing site theme, which is built and deployed with its current name. Changing the theme name (for example in `package.json`) is only required when you deploy a **standalone** Forms theme from a dedicated theme repository; that scenario is described in [Use themes to style Core Components–based Adaptive Forms](/help/forms/using-themes-in-core-components.md).
-
 ## Step 1: Create the adaptive form components folder {#step-1-create-folder}
 
 In your site theme repository, create the folder where the Forms theme will live:
