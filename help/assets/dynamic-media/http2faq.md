@@ -4,6 +4,7 @@ description: Learn about HTTP2 content delivery and how it improves communicatio
 contentOwner: Rick Brough
 feature: Dynamic Media,Configuration,FAQ
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
 ---
 # HTTP2 Delivery of Content FAQ{#http-delivery-of-content-faq}

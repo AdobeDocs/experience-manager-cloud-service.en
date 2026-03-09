@@ -1,6 +1,7 @@
 ---
 title: Content Fragment Models (Assets - Content Fragments)
 description: Learn how Content Fragment Models serve as a foundation for your headless content in AEM, allowing you to create Content Fragments with structured content.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Developer

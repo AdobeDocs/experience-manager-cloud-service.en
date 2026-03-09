@@ -2,6 +2,7 @@
 title: Share Assets in [!DNL the Content Hub]
 description: Share Assets in [!DNL the Content Hub]
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
 ---
 # Share assets in Content Hub {#search-assets-as-a-link}

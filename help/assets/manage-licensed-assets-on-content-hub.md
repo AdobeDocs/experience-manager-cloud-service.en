@@ -1,6 +1,7 @@
 ---
 title: Manage Licensed Assets on Content Hub
 description: Learn about adding a license field to the asset metadata form, applying the License metadata property to asset folders, and approving assets with licenses for use.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: ac3aad9f-c7b3-47a7-9314-a2f8277f0d3e
 ---
 # Manage Licensed Assets on Content Hub {#manage-licensed-assets-on-content-hub}

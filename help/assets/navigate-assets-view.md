@@ -2,6 +2,7 @@
 title: '[!DNL Assets view] user interface'
 description: Understand user interface of and navigation in [!DNL Assets view].
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 ---

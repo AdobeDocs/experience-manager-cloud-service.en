@@ -3,6 +3,7 @@ title: Enable UI extensibility in [!DNL AEM Assets View]
 description: Learn about the UI Extensibility capability of [!DNL AEM Assets View]. [!DNL AEM Assets View] UI enables adding custom UI components to meet specific business needs.
 feature: App Builder
 role: User, Developer
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
 ---
 # Enable UI extensibility in [!DNL AEM Assets View] {#AEM-Assets-View-UI-Extensibility}

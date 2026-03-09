@@ -4,6 +4,7 @@ description: Learn how to work with image sets in Dynamic Media.
 contentOwner: Rick Brough
 feature: Image Sets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 ---
 # Image Sets {#image-sets}
