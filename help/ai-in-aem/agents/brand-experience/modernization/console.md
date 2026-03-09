@@ -139,7 +139,7 @@ The settings view allows you to manage basic settings of the console.
 
 ![Settings view](assets/settings-view.png)
 
-* **Credentials** allows you to specify a personal access token for Figma so the [console can access design blocks for your project.](/help/ai-in-aem/agents/modernization/prompting-guide.md#figma-block-migration)
+* **Credentials** allows you to specify a personal access token for Figma so the [console can access design blocks for your project.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
   * The token requires the following read-only scopes:
     * `file_content:read`
     * `file_metadata:read`
