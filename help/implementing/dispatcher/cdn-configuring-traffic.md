@@ -432,6 +432,10 @@ Connections to origins are SSL only and use port 443.
 | **forwardAuthorization** (optional, default is false) |If set to true then the "Authorization" header from the client request will be passed to the backend, otherwise the Authorization header is removed.|
 | **timeout** (optional, in seconds, default is 60) |Number of seconds the CDN should wait for a backend server to deliver the first byte of an HTTP response body. This value is also used as a between bytes timeout to the backend server.|
 
+>[!IMPORTANT]
+>
+>The **domain** value must not contain `.adobeaemcloud.com`. You cannot proxy directly to an adobeaemcloud.com domain. This restriction protects against unwanted request loops. To proxy traffic to your AEM as a Cloud Service environment, use a [custom domain](#proxying-to-aemaacs) installed in your AEMaaCS environment as the origin backend instead.
+
 ### Proxying custom domain to AEM static tier {#proxy-custom-domain-static}
 
 Origin selectors can be used to route AEM publish traffic to AEM static content deployed using the [front end pipeline](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md). Use cases include serving static resources on the same domain as the page (e.g., example.com/static) or on an explicitly different domain (e.g., static.example.com).
@@ -489,6 +493,41 @@ data:
 >[!NOTE]
 >
 >Because the Adobe Managed CDN is used, make sure to configure push invalidation in **managed** mode, by following the Edge Delivery Services [Setup push invalidation documentation](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+
+
+### Proxying to AEMaaCS environment {#proxying-to-aemaacs}
+
+You cannot use an `adobeaemcloud.com` domain directly as an origin in your CDN configuration. Doing so is rejected (domain must not contain `.adobeaemcloud.com`) to protect against unwanted request loops. This also applies when routing from a domain installed for an Edge Delivery Site.
+
+If your custom domain (`www.example.com`) is already installed to an AEMaaCS environment, the default routing will route to AEM backend without any CDN rule. Use origin selectors when you need to route cross-environment (for example, from `pXXXX-eYYYY` to `pXXXX-eZZZZ`) or from an Edge Delivery Site to an AEMaaCS environment.
+
+To proxy traffic to your AEM as a Cloud Service environment in those cases (for example, to route specific paths such as `/graphql` to a backend), install a custom domain in your AEMaaCS environment and use that custom domain as the origin in your CDN configuration.
+
+**Example:** If your AEM publish tier is reachable at `publish-pXXXXX-eYYYYY.adobeaemcloud.com`, do not use that domain in `originSelectors`. Instead:
+
+1. Install a custom domain in your AEMaaCS environment (for example, `aem-publish-origin.example.com`) that points to your publish service.
+2. In your CDN config, define an origin with that custom domain and route the desired paths (for example, `/graphql`) to it.
+
+```
+kind: CDN
+version: '1'
+data:
+  originSelectors:
+    rules:
+      - name: graphql-to-aem-publish
+        when:
+          allOf:
+            - reqProperty: domain
+              equals: www.example.com
+            - reqProperty: path
+              like: /graphql*
+        action:
+          type: selectOrigin
+          originName: aem-publish-origin
+    origins:
+      - name: aem-publish-origin
+        domain: aem-publish-origin.example.com
+```
 
 
 ## Server-side Redirects {#server-side-redirectors}
