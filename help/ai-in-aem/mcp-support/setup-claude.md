@@ -3,7 +3,6 @@ title: Setting Up Anthropic Claude with AEM MCP
 description: Learn how to configure Anthropic Claude to connect to AEM MCP servers
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-exl-id: f17ede73-2fb8-48a4-b3ff-194b631726a9
 ---
 # Setting Up Anthropic Claude with AEM MCP {#setup-claude}
 

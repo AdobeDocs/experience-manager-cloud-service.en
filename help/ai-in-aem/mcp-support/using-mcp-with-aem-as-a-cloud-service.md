@@ -52,7 +52,9 @@ AEM exposes MCP servers as HTTP endpoints. The endpoints listed below are relati
 
 The specific tools exposed by each MCP server may evolve over time. In practice, you can ask your MCP-enabled application to discover tools via a prompt such as:
 
-*"List all AEM MCP tools available from this server and describe what they do."*
+```
+"List all AEM MCP tools available from this server and describe what they do."
+```
 
 The MCP client uses the MCP protocol to retrieve the tool list and schemas, which the LLM can then use.
 
@@ -220,7 +222,9 @@ The following examples illustrate how an LLM might chain MCP tools together.
 
 From the user's perspective, these workflows can be initiated with prompts such as:
 
-*"Create a new content fragment for the spring campaign based on our hero banner model and fill in its fields from this brief."*
+```
+"Create a new content fragment for the spring campaign based on our hero banner model and fill in its fields from this brief."
+```
 
 The LLM chooses and coordinates the necessary MCP tools automatically.
 
