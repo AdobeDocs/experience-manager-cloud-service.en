@@ -100,13 +100,13 @@ The preview panel offers up to four modes:
   * **Design mode** (paintbrush icon) to add elements of the page to your prompt for additional context
 * **Document view** (document icon) to view the underlying document authoring content structure, respectively
 * **Markdown view (AEM authoring)** (code icon) to view the underlying markdown content structure
-* **JCR XML view (AEM Sites)** (data icon) to view the resulting JCR XML content structure
+* **JCR XML view (AEM authoring)** (data icon) to view the resulting JCR XML content structure
 
 You can always click the **Refresh preview** icon to update the preview panel.
 
-The **Delete** button removes the selected page from the workspace.
+The **Delete** button removes the selected page from the workspace. Previewed or published content will not be deleted.
 
-The **Errors** button (AEM Sites) opens a modal window to view the errors of the selected page.
+The **Errors** button (AEM authoring) opens a modal window to view the errors on the selected page.
 
 The **Upload content** button opens a modal window to upload files to AEM.
 
@@ -128,7 +128,7 @@ The **Code view** provides tools for browsing code and managing code changes. Th
 
 The preview panel offers two different modes:
 
-* **Workspace files** to browser the code files in the current workspace
+* **Workspace files** to browse the code files in the current workspace
   * Use the **Add to chat** button to add the file to the chat panel for context.
 * **Git Changes** to view the diffs of files changes created by your work on the project
   * Click the `+` icon to stage the changed file
@@ -155,7 +155,7 @@ The settings view allows you to manage basic settings of the console.
 
 ![Settings view](assets/settings-view.png)
 
-* **Project** allows you to view project settings and cusotm ize the library URL.
+* **Project** allows you to view and edit project settings such as cusotmizing the library URL.
 * **Credentials** allows you to specify a personal access token for Figma so the console can access design blocks for your project.
-* **Support** allows you to request help form the AEM support team. 
+* **Support** allows you to request help from the AEM support team. 
 * **Reset workspace** reverts the console to its starting state and all un-pushed or un-uploaded changes will be lost.
