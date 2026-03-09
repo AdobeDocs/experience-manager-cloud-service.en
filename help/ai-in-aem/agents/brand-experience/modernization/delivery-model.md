@@ -76,7 +76,7 @@ Any CMS platform such as WordPress, Drupal, Sitecore, legacy AEM, SharePoint, or
 #### Target Platform {#target-platform}
 
 * **Edge Delivery Services:** All migrations target Edge Delivery Services, Adobe's high-performance web delivery platform.
-* **All authoring options:** Both Document Authoring (Google Docs/SharePoint) and Universal Editor (visual editing) can be targeted in Edge Delivery Services. AOEs configure the appropriate authoring experience based on your needs.
+* **All authoring options:** Both Document Authoring and Universal Editor (visual editing) can be targeted in Edge Delivery Services. AOEs configure the appropriate authoring experience based on your needs.
 
 #### Migration Work Performed {#migration-work}
 
