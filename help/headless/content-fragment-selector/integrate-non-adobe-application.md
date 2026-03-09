@@ -52,7 +52,7 @@ Use the following example `index.html` file for authentication when integrating 
   * Adobe recommends calling `registerFragmentsSelectorsAuthService` when you instantiate the component.
 
 * Define the authentication and other Fragments as a Cloud Service access-related properties in the `const props` section.
-* The `PureJSSelectors` global variable, is used to render the Content Fragment Selector in the web browser.
+* The `PureJSContentFragmentSelectors` global variable, is used to render the Content Fragment Selector in the web browser.
 * The Content Fragment Selector is rendered on the `<div>` container element. The example uses a dialog to display the Content Fragment Selector.
 
 **Example `ìndex.html`**
