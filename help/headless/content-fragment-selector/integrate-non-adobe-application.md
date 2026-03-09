@@ -2,6 +2,7 @@
 title: Integrate Content Fragment Selector with non-Adobe or third party application
 description: Integrate Content Fragment selector with various Adobe, non-Adobe, and third party applications.
 role: Admin, User, Developer
+exl-id: 27b5989a-264c-4f67-8a73-b1033e6c7451
 ---
 # Integration with a non-Adobe application {#integration-with-non-adobe-application}
 
