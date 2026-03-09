@@ -3,9 +3,8 @@ title: Getting Started with the Experience Modernization Agent for AEM Authoring
 description: Learn the specific setup steps required for AEM authoring projects when getting started with the Experience Modernization Agent using the Experience Modernization Console.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-exl-id: a1b2c3d4-e5f6-4789-a012-3456789abcde
+exl-id: 94a5e40b-af4a-42ed-922b-b1ec9bb82e24
 ---
-
 # Getting Started with the Experience Modernization Agent for AEM Authoring Projects {#getting-started-aem-authoring}
 
 For AEM authoring projects using the Universal Editor, preparation of the Experience Modernization Agent differs from the standard Edge Delivery flow. This document covers those setup differences. Once the steps below are complete, follow the main [Getting Started with the Experience Modernization Agent](getting-started.md) guide.
