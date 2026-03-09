@@ -2,6 +2,7 @@
 title: Download assets from Content Hub
 description: Learn how to download one or more assets and their renditions from the Content Hub portal.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
 ---
 # Download assets from Content Hub {#download-assets}
