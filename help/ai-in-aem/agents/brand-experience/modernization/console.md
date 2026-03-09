@@ -128,7 +128,7 @@ The **Code view** provides tools for browsing code and managing code changes. Th
 
 The preview panel offers two different modes:
 
-* **Workspace files** to browser the code files in the current workspace
+* **Workspace files** to browse the code files in the current workspace
   * Use the **Add to chat** button to add the file to the chat panel for context.
 * **Git Changes** to view the diffs of files changes created by your work on the project
   * Click the `+` icon to stage the changed file
