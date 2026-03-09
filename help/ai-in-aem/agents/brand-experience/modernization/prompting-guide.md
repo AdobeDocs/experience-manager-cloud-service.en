@@ -219,7 +219,7 @@ Use this prompt to validate entire migrated pages for full-page visual fidelity 
 
 Use this prompt to migrating a block from Figma design to Edge Delivery Services.
 
-Note that you must set up your Figma details in [the Experience Modernization Console](/help/ai-in-aem/agents/modernization/console.md#) to use this prompt.
+Note that you must set up your Figma details in [the Experience Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md) to use this prompt.
 
 #### Example Prompts {#example-figma}
 
