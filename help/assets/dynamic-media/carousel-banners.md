@@ -4,6 +4,7 @@ description: Learn how to work with Carousel Banners in Dynamic Media.
 contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 ---
 # Carousel Banners{#carousel-banners}

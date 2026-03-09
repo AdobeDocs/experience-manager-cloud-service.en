@@ -1,6 +1,7 @@
 ---
 title: Quick Publish to [!DNL AEM and Dynamic Media]
 description: Quick Publish in [!DNL Assets view] enables you to publish assets to [!DNL AEM and Dynamic Media] simultaneously or separately. You can select assets and folders and choose to publish to [!DNL Dynamic Media] or [!DNL AEM].
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing
 role: User

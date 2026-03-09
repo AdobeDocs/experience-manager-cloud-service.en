@@ -2,6 +2,7 @@
 title: View assets insights in Content Hub
 description: Learn how to view assets insights in [!DNL Content Hub]
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
 ---
 # Assets Insights in [!DNL Content Hub] {#assets-insights}

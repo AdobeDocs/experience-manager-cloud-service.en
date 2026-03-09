@@ -4,6 +4,7 @@ description: This article describes how to display activity logs for assets on t
 contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
 hide: yes
 hidefromtoc: yes

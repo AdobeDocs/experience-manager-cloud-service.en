@@ -3,6 +3,7 @@ title: Markdown (Assets - Content Fragments)
 description: Understand how the Content Fragment editor uses markdown syntax to allow you to easily create headless content.
 feature: Content Fragments
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 solution: Experience Manager Sites
 ---

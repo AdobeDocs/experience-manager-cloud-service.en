@@ -5,6 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 ---
 # Smart Imaging {#smart-imaging}

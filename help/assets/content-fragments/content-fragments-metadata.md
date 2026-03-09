@@ -1,6 +1,7 @@
 ---
 title: Metadata - Fragment Properties (Assets - Content Fragments)
 description: See how you can view and edit the metadata properties for Content Fragments.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
 feature: Content Fragments
 role: User

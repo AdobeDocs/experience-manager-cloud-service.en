@@ -2,6 +2,7 @@
 title: Manage Collections in Content Hub
 description: Learn how to manage collections in Content Hub
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
 ---
 

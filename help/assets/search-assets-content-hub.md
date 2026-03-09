@@ -2,6 +2,7 @@
 title: Search assets in Content Hub
 description: Learn how to search assets in [!DNL Content Hub]
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
 ---
 # Search Assets in [!DNL Content Hub] {#search-assets}
