@@ -1,7 +1,7 @@
 ---
 title: Integrate Content Fragment Selector with an Adobe application
 description: Integrate Content Fragment selector with various Adobe applications.
-role: Admin, User
+role: Admin, User, Developer
 ---
 # Integrate Content Fragment Selector with Adobe application {#integrate-content-fragment-selector-with-adobe-application}
 
@@ -61,8 +61,6 @@ By following such steps, you can use Content Fragment Selector with your Adobe a
 
 </html>
 ```
-
-<!--For detailed example, visit [Fragment Selector Code Example](https://github.com/adobe/aem-fragments-selectors-mfe-examples).-->
 
 ### ImsAuthProps {#imsauthprops}
 
