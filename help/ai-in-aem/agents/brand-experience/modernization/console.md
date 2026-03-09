@@ -155,7 +155,7 @@ The settings view allows you to manage basic settings of the console.
 
 ![Settings view](assets/settings-view.png)
 
-* **Project** allows you to view and edit project settings such as cusotmizing the library URL.
+* **Project** allows you to view and edit project settings such as customizing the library URL.
 * **Credentials** allows you to specify a personal access token for Figma so the console can access design blocks for your project.
 * **Support** allows you to request help from the AEM support team. 
 * **Reset workspace** reverts the console to its starting state and all un-pushed or un-uploaded changes will be lost.
