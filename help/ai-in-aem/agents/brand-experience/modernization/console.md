@@ -104,7 +104,7 @@ The preview panel offers up to four modes:
 
 You can always click the **Refresh preview** icon to update the preview panel.
 
-The **Delete** button removes the selected page from the workspace.
+The **Delete** button removes the selected page from the workspace. Previewed or published content will not be deleted.
 
 The **Errors** button (AEM Sites) opens a modal window to view the errors of the selected page.
 
