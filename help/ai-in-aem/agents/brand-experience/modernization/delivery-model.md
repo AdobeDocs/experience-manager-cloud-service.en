@@ -3,8 +3,8 @@ title: Delivery Model of the Experience Modernization Agent
 description: Learn about Adobe Agentic Outcome Engineers (AOEs) and how they can help you succeed with the Experience Modernization Agent.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
+exl-id: 75f73bb8-4d97-4c8f-b364-374a2a026b19
 ---
-
 # Delivery Model of the Experience Modernization Agent {#delivery-model}
 
 Learn about Adobe Agentic Outcome Engineers (AOEs) and how they can help you succeed with the Experience Modernization Agent.
