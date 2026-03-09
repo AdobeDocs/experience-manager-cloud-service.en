@@ -58,6 +58,11 @@ The Experience Modernization Agent provides a hosted AI-assisted development env
 
 The self-service Experience Modernization Console is generally available. Interested users can request access to ensure a smooth onboarding experience.
 
+Get started with the Experience Modernization Console!
+
+* If you are modernizing your site by targeting Document Authoring, [get started here.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+* If you are modernizing your site by targeting AEM authoring, [get started here.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
+
 ## Delivery Model {#delivery-model}
 
 For complex migrations or accelerated outcomes, Adobe offers the Agentic Outcome Engineer (AOE) delivery model. This is an optional service where Adobe engineers operate the AI tooling on your behalf. For details on this delivery model, please see the document [Delivery Model of the Experience Modernization Agent.](/help/ai-in-aem/agents/brand-experience/modernization/delivery-model.md)
