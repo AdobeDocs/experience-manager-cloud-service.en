@@ -140,8 +140,8 @@ Below are step-by-step guides for each supported application:
 
 #### Chat Applications (Web & Desktop) {#setup-chat-applications}
 
-* [Anthropic Claude](setup-claude.md)
-* [OpenAI ChatGPT](setup-chatgpt.md)
+* [Anthropic Claude](/help/ai-in-aem/mcp-support/setup-claude.md)
+* [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
 
 #### Developer Tools (IDE Extensions, Desktop Apps, CLIs) {#setup-developer-tools}
 
@@ -149,7 +149,7 @@ Below are step-by-step guides for each supported application:
 * Augment Code (CLI, JetBrains, VS Code, Cursor)
 * Augment Indent Desktop App
 * Cline (JetBrains, VS Code, Cursor)
-* [Cursor](setup-cursor.md)
+* [Cursor](/help/ai-in-aem/mcp-support/setup-cursor.md)
 * GitHub Copilot (VS Code)
 * Kiro (Desktop App, CLI)
 * OpenAI Codex (Desktop App)
@@ -158,7 +158,7 @@ Below are step-by-step guides for each supported application:
 
 #### Enterprise Platforms {#setup-enterprise-platforms}
 
-* [Microsoft Copilot Studio](setup-microsoft-copilot-studio.md)
+* [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
 
 ## Authentication {#authentication}
 
