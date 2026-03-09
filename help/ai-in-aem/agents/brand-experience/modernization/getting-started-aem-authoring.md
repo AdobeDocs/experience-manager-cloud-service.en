@@ -8,17 +8,16 @@ exl-id: a1b2c3d4-e5f6-4789-a012-3456789abcde
 
 # Getting Started with the Experience Modernization Agent for AEM Authoring Projects {#getting-started-aem-authoring}
 
-For AEM Authoring projects using the Universal Editor, preparation of the Experience Modernization Agent differs from the standard Edge Delivery flow. This document covers those setup differences. Once the steps below are complete, follow the main [Getting Started with the Experience Modernization Agent](getting-started.md) guide.
+For AEM authoring projects using the Universal Editor, preparation of the Experience Modernization Agent differs from the standard Edge Delivery flow. This document covers those setup differences. Once the steps below are complete, follow the main [Getting Started with the Experience Modernization Agent](getting-started.md) guide.
 
 ## Create Your Edge Delivery Services Project Repo {#create-repo}
 
-1. Use the [`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk) repository as your template (not the standard Edge Delivery boilerplate).
+1. Use the [`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk) repository as your template (not the standard Edge Delivery Services boilerplate).
 1. Follow the [Universal Editor tutorial](https://www.aem.live/developer/ue-tutorial) to set up your repo.
+   * Stop when you are asked to create a site in AEM.
 1. Delete `paths.json` and commit this change to `main`.
-1. Add the [AEM Code Connector](https://github.com/apps/aem-code-connector) app to your repo: [Install AEM Code Connector](https://github.com/apps/aem-code-connector/installations/select_target).
+1. Add the [AEM Code Connector](https://github.com/apps/aem-code-connector/installations/select_target) app to your repo.
    * This allows the console to inspect your code.
-1. Add [AEM Code Sync](https://github.com/apps/aem-code-sync) (separate from the Code Connector app) to your repo: [Install AEM Code Sync](https://github.com/apps/aem-code-sync/installations/select_target).
-   * This allows Edge Delivery Services to sync your code.
 
 ## Create a New Site in AEM {#create-site}
 
@@ -31,9 +30,8 @@ For AEM Authoring projects using the Universal Editor, preparation of the Experi
 1. Click **Create**. 
    * You are redirected to the Sites page.
    * Refresh the page if the new site does not appear immediately.
-1. In your GitHub repository, update `fstab.yaml` so it points to your AEM host, git owner, and git repo.
+1. If you have not already done it when [setting up your repo,](#create-repo) update `fstab.yaml` so it points to your AEM host, git owner, and git repo and commit those changes to `main`.
    * See [Configure content source](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md) for instructions.
-1. Commit these changes to `main` to trigger a deployment.
 
 ## Continue with the Standard Getting Started Steps {#continue}
 
