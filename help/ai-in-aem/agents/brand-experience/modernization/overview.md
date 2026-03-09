@@ -60,7 +60,7 @@ The self-service Experience Modernization Console is generally available. Intere
 
 ## Delivery Model {#delivery-model}
 
-For complex migrations or accelerated outcomes, Adobe offers the Agentic Outcome Engineer (AOE) delivery model. This is an optional service where Adobe engineers operate the AI tooling on your behalf. For details on this delivery model, please see the document [Delivery Model of the Experience Modernization Agent.](/help/ai-in-aem/agents/modernization/delivery-model.md)
+For complex migrations or accelerated outcomes, Adobe offers the Agentic Outcome Engineer (AOE) delivery model. This is an optional service where Adobe engineers operate the AI tooling on your behalf. For details on this delivery model, please see the document [Delivery Model of the Experience Modernization Agent.](/help/ai-in-aem/agents/brand-experience/modernization/delivery-model.md)
 
 If you are interested in the AOE model for your next migration:
 
