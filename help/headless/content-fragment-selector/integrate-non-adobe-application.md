@@ -20,21 +20,6 @@ Use the following prerequisites if you are integrating Content Fragment Selector
 
 When you are integrating it with a non-Adobe application, the Content Fragment Selector supports authentication to the Adobe Experience Manager (AEM) as a Cloud Service repository using Identity Management System (IMS) properties such as `imsScope` or `imsClientID`.
 
-<!-- check against /help/headless/content-fragment-selector/overview.md#prerequisites
-### Communication methods {#communication-methods}
-
-You must ensure the following communication methods:
-
-* The host application is running on HTTPS.
-* You cannot run the application on `localhost`. If you want to integrate the Fragment Selector on your local machine, you need to create a custom domain for example `[https://<your_campany>.localhost.com:<port_number>]` and add this custom domain in the `redirectUrl list`.
-* You can configure and add clientID into the AEM Cloud Service environment variable with the respective `imsClientId`.
-* The list of IMS scopes needs to be defined in the environment configuration. 
-* The URL of the application is in the IMS client's allowed list of redirect URLs.
-* The IMS login flow is configured and rendered using a popup on the web browser. Therefore, popups should be enabled or allowed on the target browser.
-
-Use the above prerequisites if you require the IMS authentication workflow of Fragment Selector. Alternatively, if you are already authenticated with the IMS workflow, you can add the IMS information instead. 
--->
-
 ## Configure Content Fragment Selector for a non-Adobe application {#configure-content-fragment-selector-for-a-non-adobe-application}
 
 To configure the Content Fragment Selector for a non-Adobe application, you must first log a support ticket for provisioning before proceeding with the integration steps.
