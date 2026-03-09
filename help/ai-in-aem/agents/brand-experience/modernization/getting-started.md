@@ -66,6 +66,10 @@ Now that your console can access your code, you are ready to start prompting.
 
 Now you have both the content and styles imported into the console.
 
+>[!TIP]
+>
+>[Check out the prompting guide](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md) for more ideas on how to prompt the agent and what its skills can do.
+
 ## Upload Content {#upload-content}
 
 To upload your content to [Document Authoring](https://da.live):
@@ -130,5 +134,6 @@ If you pushed your code to a branch other than `main`, the preview opened from D
 The following documents may be useful as you continue to explore the Experience Modernization Agent and its console.
 
 * [Experience Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md) - Details on the console, it's views, options, and capabilities
+* [Prompting Guide for Experience Modernization Agent](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md) - Ideas on how to prompt the agent and what its skills can do
 * [Edge Delivery Services developer tutorial](https://www.aem.live/developer/tutorial) - Useful if you are new to AEM and Edge Delivery Services projects
 * [Document Authoring](https://da.live) - Useful if you are new to Document Authoring for content management
