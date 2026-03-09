@@ -134,3 +134,11 @@ Content Fragment Selector lets you view the fragment in the:
 The required view can be selected from the icons in the top toolbar: 
 
 ![The Content Fragment Selector - View Type](/help/headless/assets/content-fragment-selector-view-type.png)
+
+## Integrate the Content Fragment Selector with applications {#integrate-the-content-fragment-selector-with-applications}
+
+You can integrate the Content Fragment Selector with various applications such as:
+
+* [Integrate the Content Fragment Selector with an Adobe application](/help/headless/content-fragment-selector/integrate-adobe-application.md) 
+* [Integrate the Content Fragment Selector with non-Adobe or third party application](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
+* [Integrate the Content Fragment Selector using Vanilla JS](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
