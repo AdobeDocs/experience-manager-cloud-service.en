@@ -2,6 +2,7 @@
 title: Integrate Content Fragment Selector with an Adobe application
 description: Integrate Content Fragment selector with various Adobe applications.
 role: Admin, User, Developer
+exl-id: af7837e2-e213-46a9-837c-a6965c997737
 ---
 # Integrate Content Fragment Selector with Adobe application {#integrate-content-fragment-selector-with-adobe-application}
 
