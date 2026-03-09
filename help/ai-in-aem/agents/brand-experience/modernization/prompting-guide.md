@@ -3,8 +3,8 @@ title: Prompting Guide for Experience Modernization Agent
 description: This guide provides tips for effective prompting of the Experience Modernization Agent and describes what its skills do.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
+exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
 ---
-
 # Prompting Guide for Experience Modernization Agent {#prompting-guide}
 
 The Experience Modernization Agent automatically selects the appropriate skill based on natural-language requests. This guide provides tips for effective prompting and describes what the skills do.
