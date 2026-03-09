@@ -139,5 +139,14 @@ The settings view allows you to manage basic settings of the console.
 
 ![Settings view](assets/settings-view.png)
 
-* **Credentials** allows you to specify a personal access token for Figma so the console can access design blocks for your project.
+* **Credentials** allows you to specify a personal access token for Figma so the [console can access design blocks for your project.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
+  * The token requires the following read-only scopes:
+    * `file_content:read`
+    * `file_metadata:read`
+    * `library_assets:read`
+    * `library_content:read`
+    * `team_library_content:read`
+    * `file_dev_resources:read`
+    * `projects:read`
+  * [See the Figma documentation](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens) for more information about setting up personal access tokens.
 * **Reset workspace** reverts the console to its starting state and all un-pushed or un-uploaded changes will be lost.
