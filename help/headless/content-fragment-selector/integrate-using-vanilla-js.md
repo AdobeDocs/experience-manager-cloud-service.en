@@ -2,6 +2,7 @@
 title: Integrate Content Fragment Selector using Vanilla JS
 description: Integrate Content Fragment selector with various Adobe, non-Adobe, and third party applications.
 role: Admin, User, Developer
+exl-id: 84734f1d-2eb8-4768-9c0b-6cea9baddb0f
 ---
 # Integrate Content Fragment Selector using Vanilla JS {#integrate-content-fragment-selector-using-vanilla-js}
 
