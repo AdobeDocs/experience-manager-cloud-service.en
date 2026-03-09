@@ -1,6 +1,7 @@
 ---
 title: Approve assets for Content Hub
 description: Learn how to approve assets in Assets as a Cloud Service to make them available in Content Hub.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
 ---
 # Approve assets for Content Hub {#approve-assets-content-hub}

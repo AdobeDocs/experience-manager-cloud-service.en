@@ -1,6 +1,7 @@
 ---
 title: Content Hub frequently asked questions (FAQs)
 description: Get responses to some of the most frequently asked questions (FAQs) for Content Hub.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 ---
 # Content Hub frequently asked questions {#content-hub-frequently-asked-questions}

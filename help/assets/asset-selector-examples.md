@@ -2,6 +2,7 @@
 title: Asset Selector for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Examples to use Asset Selector to customize as per requirement.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
 ---
 

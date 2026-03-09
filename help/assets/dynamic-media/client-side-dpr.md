@@ -4,6 +4,7 @@ description: Learn how to use client-side Device Pixel Ratio with Smart Imaging 
 contentOwner: Rick Brough
 feature: Device Pixel Ratio,Smart Imaging
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
 ---
 # About Smart Imaging with client-side Device Pixel Ratio (DPR) {#client-side-dpr}

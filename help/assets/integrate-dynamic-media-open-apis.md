@@ -2,6 +2,7 @@
 title: Integrate AEM Assets with downstream applications
 description: Integrate AEM Assets with downstream applications
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: abd48b5d-2b43-453c-8eb6-31ff509245ca
 ---
 # Integrate AEM Assets with downstream applications {#integrate-dynamic-media-open-apis}

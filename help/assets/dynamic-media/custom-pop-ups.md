@@ -4,6 +4,7 @@ description: Learn about how the default Quickview is used in ecommerce experien
 contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 ---
 # Create custom pop-ups using Quickview {#using-quickviews-to-create-custom-pop-ups}

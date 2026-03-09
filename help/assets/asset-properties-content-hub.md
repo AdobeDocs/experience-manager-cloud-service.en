@@ -2,6 +2,7 @@
 title: Preview asset and its properties in [!DNL the Content Hub]
 description: Learn how to preview assets and properties in [!DNL Content Hub]
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
 ---
 # Preview asset and its properties in Content Hub {#asset-properties}

@@ -2,6 +2,7 @@
 title: Attribute-based access control
 description: Learn how to enable Attribute-based access control to define metadata-based rules to define the level of access to assets available in Content Hub
 role: Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
 ---
 # Attribute-based access control {#attribute-based-access-control}
