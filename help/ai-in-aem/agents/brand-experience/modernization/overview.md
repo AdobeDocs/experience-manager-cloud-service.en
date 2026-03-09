@@ -95,3 +95,7 @@ The following requirements are not covered by dedicated automation skills and re
 * Multisite inheritance (MSM)
 * Custom functionality (e.g. calculators, configurators)
 * Custom business logic
+
+## Next Steps {#next-steps}
+
+Get started by migrating a site using the document [Getting Started with the Experience Modernization Agent.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
