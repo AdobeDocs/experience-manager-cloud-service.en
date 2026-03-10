@@ -204,17 +204,17 @@ A collection in AEM Assets Content Hub refers to a set of assets that can be sha
 
 To create a new collection in AEM Assets Content Hub, go to the Collections tab and click **Create Collection**. In the new Collection window, add a Title and Description, select the access control type under the **Who can access** dropdown list, and click **Create**. You can then add assets to the collection.
 
-### What types of access control are available when creating a collection?
+### What types of access control are available when creating a collection in AEM Assets Content Hub?
 
-There are three access control types: **Private** - Only the creator and administrators can edit and access, **Public** - View only - Everyone can view, but only creator and administrators can edit, and **Public** - View and edit - everyone can access and edit the collection without restrictions.
+There are three access control types in AEM Assets Content Hub: **Private** - Only the creator and administrators can edit and access, **Public** - View only - Everyone can view, but only creator and administrators can edit, and **Public** - View and edit - everyone can access and edit the collection without restrictions.
 
-### Who can perform actions on collections in Content Hub?
+### Who can perform actions on collections in AEM Assets Content Hub?
 
-Content Hub users can perform actions such as creating, viewing, sharing, downloading, removing, deleting, pinning collections, and marking them as favorites. Administrators have additional privileges, such as viewing all access options and deleting collections.
+AEM Assets Content Hub users can perform actions such as creating, viewing, sharing, downloading, removing, deleting, pinning collections, and marking them as favorites. Administrators have additional privileges, such as viewing all access options and deleting collections.
 
 ### How do I add assets to an existing collection in AEM Assets Content Hub?
 
-Select the assets you want to add, click **Add to collection**, and choose the collection from the list. You can also search for collections using the search bar. Click **Add to collection** to confirm the action.
+To add assets to an existing collection in AEM Assets Content Hub, select the assets you want to add, click **Add to collection**, and choose the collection from the list. You can also search for collections using the search bar. Click **Add to collection** to confirm the action.
 
 ### Can collections be filtered and searched in AEM Assets Content Hub?
 
@@ -226,11 +226,11 @@ To download assets from a collection in AEM Assets Content Hub, navigate to the 
 
 ### How can assets be shared from a collection in AEM Assets Content Hub?
 
-Assets can be shared by enabling public link sharing in Content Hub. Select the share icon on the asset card to copy the share link, which can then be sent to recipients. Note that private collections cannot be shared.
+Assets can be shared by enabling public link sharing in AEM Assets Content Hub. Select the share icon on the asset card to copy the share link, which can then be sent to recipients. Note that private collections cannot be shared.
 
 ### Who can remove assets from a collection in AEM Assets Content Hub?
 
-An owner of the collection, an administrator, or a non-admin user with edit rights can remove single or multiple assets from a collection. To remove, select the assets and click **Remove from collection**, and then confirm the removal.
+An owner of the collection, an administrator, or a non-admin user with edit rights can remove single or multiple assets from a collection in AEM Assets Content Hub. To remove, select the assets and click **Remove from collection**, and then confirm the removal.
 
 ### Who is allowed to delete a collection from AEM Assets Content Hub and how is it done?
 
