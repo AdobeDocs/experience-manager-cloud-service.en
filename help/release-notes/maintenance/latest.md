@@ -34,7 +34,7 @@ The 2026.3.0 feature activation will provide the full feature set for this maint
 * SKYOPS-131432: Update Felix SCR to 2.2.14
 * SKYOPS-131907: Update Sling API Region to 1.1.10
 * SKYOPS-131938: Update GSON to 2.13.2
-* SKYOPS-132173: update Apache Commons Codec to 1.21.0
+* SKYOPS-132173: Update Apache Commons Codec to 1.21.0
 * SKYOPS-132182: Update Sling Tenant to 1.1.8
 * SKYOPS-132267: Update org.osgi.service.component to 1.5.1
 * SKYOPS-132272: Update Sling Feature Model to 2.0.4
