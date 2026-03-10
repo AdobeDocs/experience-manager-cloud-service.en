@@ -16,6 +16,10 @@ Learn the first steps to quickly become productive with the Experience Moderniza
 
 ## Prepare an Edge Delivery GitHub Repository {#prepare-repo}
 
+>[!NOTE]
+>
+>Using an AEM Sites and Universal Editor project? Follow [Getting Started for AEM Sites/Universal Editor](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md) setup steps.
+
 1. Select an [Edge Delivery Services](/help/edge/overview.md) repository for use with the Experience Modernization Console.
    * This can be an existing Edge Delivery Services project or you can create a new one following the [developer tutorial](https://www.aem.live/developer/tutorial) using the [boilerplate repository.](https://github.com/adobe/aem-boilerplate)
 1. Ensure that the [AEM Code Connector](https://github.com/apps/aem-code-connector) is installed in the repository.
@@ -66,7 +70,15 @@ Now that your console can access your code, you are ready to start prompting.
 
 Now you have both the content and styles imported into the console.
 
+>[!TIP]
+>
+>[Check out the prompting guide](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md) for more ideas on how to prompt the agent and what its skills can do.
+
 ## Upload Content {#upload-content}
+
+>[!TIP]
+>
+>If you are working on an AEM Sites and Universal Editor project, uploading content to AEM works slightly differently. Refer to [Getting Started with the Experience Modernization Agent for AEM Sites/Universal Editor Projects](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content) for specific upload instructions.
 
 To upload your content to [Document Authoring](https://da.live):
 
@@ -130,5 +142,6 @@ If you pushed your code to a branch other than `main`, the preview opened from D
 The following documents may be useful as you continue to explore the Experience Modernization Agent and its console.
 
 * [Experience Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md) - Details on the console, it's views, options, and capabilities
+* [Prompting Guide for Experience Modernization Agent](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md) - Ideas on how to prompt the agent and what its skills can do
 * [Edge Delivery Services developer tutorial](https://www.aem.live/developer/tutorial) - Useful if you are new to AEM and Edge Delivery Services projects
 * [Document Authoring](https://da.live) - Useful if you are new to Document Authoring for content management

@@ -2,6 +2,7 @@
 title: Upload assets in Asset Selector
 description: Upload assets in Asset Selector MFE using upload feature
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
 ---
 # Upload files and folders to Asset Selector {#upload-files-folders}

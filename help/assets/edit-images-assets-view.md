@@ -2,6 +2,7 @@
 title: Edit images
 description: Edit images using [!DNL Adobe Express] powered options and save updated images as versions.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
 ---

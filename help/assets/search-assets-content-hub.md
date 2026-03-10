@@ -2,6 +2,7 @@
 title: Search assets in Content Hub
 description: Learn how to search assets in [!DNL Content Hub]
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
 ---
 # Search Assets in [!DNL Content Hub] {#search-assets}
@@ -166,11 +167,11 @@ Learn more about [configuring assets in the [!DNL Content Hub]](configure-conten
 
 ### How can I narrow down my search results in AEM Assets Content Hub?
 
-You can narrow down search results in Content Hub by using text-based search, applying various filters (such as file format, approval status, modification date, etc.), searching by tags or smart tags, and using the filters panel. Combining multiple predicates or filter options helps you precisely target the assets you need.
+You can narrow down search results in AEM Assets Content Hub by using text-based search, applying various filters (such as file format, approval status, modification date, etc.), searching by tags or smart tags, and using the filters panel. Combining multiple predicates or filter options helps you precisely target the assets you need.
 
 ### Can I perform a bulk search in AEM Assets Content Hub for multiple assets at once?
 
-Yes, you can perform a Bulk Search in Content Hub by entering multiple values (such as names, file formats, tags) separated by specified delimiters. The Bulk Search feature allows you to quickly find several assets in a single query, making it more efficient than searching assets one by one.
+Yes, you can perform a Bulk Search in AEM Assets Content Hub by entering multiple values (such as names, file formats, tags) separated by specified delimiters. The Bulk Search feature allows you to quickly find several assets in a single query, making it more efficient than searching assets one by one.
 
 
 ### Can administrators customize the filters available in AEM Assets Content Hub search?

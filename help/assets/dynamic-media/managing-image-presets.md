@@ -4,6 +4,7 @@ description: Learn about Image Presets and how to create, modify, and manage the
 contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 ---
 # Manage Image Presets{#managing-image-presets}
