@@ -108,7 +108,7 @@ Attribute-based Access Control (ABAC) in AEM Assets Content Hub allows administr
 
 Administrators define access rules by creating conditions based on asset metadata, such as brand or region, and linking these to specific user group IDs. These rules use logical (AND, OR) and comparison (equals, not equals) operators to specify exactly which assets are visible to which user groups.
 
-### What are the main benefits of using ABAC over traditional folder-based permissions?
+### What are the main benefits of using ABAC over traditional folder-based permissions in AEM Assets Content Hub?
 
 ABAC eliminates the dependency on folder structures for permissions, allows administrators to upload assets and assign permissions retroactively, and reduces the number of duplicate assets needed. This improves asset integrity and simplifies permission management, especially when assets need to be shared with multiple groups.
 
@@ -124,7 +124,7 @@ ABAC rules in AEM Assets Content Hub can use logical operators like AND and OR, 
 
 ABAC is useful for organizations with large teams because it enables granular, rule-based access to assets based on user roles, regions, or brands. It ensures that users only see assets relevant to their responsibilities, without manual permission assignments or excessive duplication of assets.
 
-### How should administrators prepare the ABAC spreadsheet before submitting it to Adobe Support?
+### How should administrators prepare the ABAC spreadsheet for AEM Assets Content Hub before submitting it to Adobe Support?
 
 Administrators should create user groups in the Adobe Admin Console, note their Group IDs, and clearly define the permissions and conditions for each group in the spreadsheet. They should ensure all metadata properties are correctly mapped to the appropriate schemas, and use the Comments column to clarify the business intent of each rule, making it easier for Adobe to validate and implement the rules.
 
