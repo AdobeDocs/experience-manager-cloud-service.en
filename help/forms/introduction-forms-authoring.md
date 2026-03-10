@@ -151,9 +151,12 @@ The sidebar comprises the following browsers:
    <td>Adds a drop-down list - single or multi-select</td>
   </tr>
   <tr>
-   <td>Email</td>
-   <td><p>Adds a field to capture email address. The Email component, by default, validates email addresses using the following regular expression.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
-  </tr>
+  <td>Email</td>
+  <td>
+    <p>Adds a field to capture email address. The Email component, by default, validates email addresses using the following regular expression.</p>
+    <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$</code></p>
+  </td>
+</tr>
   <tr>
    <td>File attachment</td>
    <td><p>Adds a button that allows users to browse and attach supporting documents to a form.</p> <p><strong>Note: </strong>The File Attachment component supports a pre-defined set of file formats in Adaptive Forms enabled for Adobe Sign. For more information, see <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Supported file formats</a>.</p> </td>
