@@ -248,7 +248,7 @@ The sidebar comprises the following browsers:
   </tr>
   <tr>
    <td>Telephone</td>
-   <td><p>Adds a field to capture telephone number. The Telephone component allows authors to configure one of following phone number types. Each type is associated with a default regular expression for validation.</p>
+   <td><p>Adds a field to capture telephone number. The Telephone component allows authors to configure one of following phone number types. Each type is associated with a default regular expression for validation.</p> </td>
     <ul>
      <li>Type International is validated by <code>^[+][0-9]{0,14}$</code>.</li>
      <li>Type USPhoneNumber is validated by <code>{'+1 ('999') '999-9999}</code>.</li>
