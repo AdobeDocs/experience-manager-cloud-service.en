@@ -136,7 +136,7 @@ Each user performs this step, or an administrator of the MCP client application 
 1. Verify discovered tools
    * Once authenticated, the application discovers MCP tools from the server. You can then start prompting the LLM to perform AEM operations.
 
-Below are step-by-step guides for each supported application:
+Below are the supported applications, some of which link to step-by-step guides:
 
 #### Chat Applications (Web & Desktop) {#setup-chat-applications}
 
