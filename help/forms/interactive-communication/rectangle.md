@@ -4,6 +4,7 @@ description: Rectangle Component in Interactive Communication Editor in AEM Form
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: d2af7706-2b2a-4a40-a4a4-375b5f2b08fb
 ---
 # Rectangle Component in Interactive Communication Editor 

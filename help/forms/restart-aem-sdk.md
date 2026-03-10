@@ -3,6 +3,7 @@ title: How to restart AEM SDK?
 description: Best practices to restart AEM SDK
 role: Admin, Developer, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 5fec2a93-1dda-4240-8690-24a6afae5c2b
 ---
 # Restarting the AEM SDK 

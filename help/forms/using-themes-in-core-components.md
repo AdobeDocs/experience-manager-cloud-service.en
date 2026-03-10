@@ -4,6 +4,7 @@ description: You can use themes to style and provide a visual identity to an Ada
 keywords: form builder themes, adaptive forms styling core components, form theme builder, styling adaptive form, customizing themes, build form themes
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 ---
 # Use themes to style Core Components based Adaptive Forms{#themes-for-af-using-core-components}
