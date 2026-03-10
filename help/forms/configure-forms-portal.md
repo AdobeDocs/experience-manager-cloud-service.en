@@ -2,6 +2,7 @@
 title: How to create a Forms Portal on an Experience Manager Sites page?
 description: Learn how to create a Forms Portal and use out-of-the-box Core components on an AEM Sites page.
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 role: User, Developer
 ---

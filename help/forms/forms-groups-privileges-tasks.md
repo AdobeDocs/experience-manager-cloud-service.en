@@ -3,6 +3,7 @@ title: What user groups are available out of the box in AEM Forms as a Cloud Ser
 description: List of out of the box user groups and permissions assigned to each group
 role: Admin, Developer, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
 ---
 # Groups and permissions {#aem-forms-on-osgi-groups-and-privileges}

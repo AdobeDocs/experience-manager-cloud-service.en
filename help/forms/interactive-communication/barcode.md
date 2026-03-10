@@ -4,6 +4,7 @@ description: Barcode Component in Interactive Communication Editor in AEM Forms 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: b44cc569-00a1-4a66-ae25-3d672cf5fc12
 ---
 # Barcode Component in Interactive Communication Editor 

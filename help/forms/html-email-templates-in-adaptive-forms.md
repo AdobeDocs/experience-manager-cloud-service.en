@@ -5,6 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 hide: yes
 hidefromtoc: yes
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 640130c0-e5d2-4af1-8ed9-c3bdde31d958
 ---
 # Email Templates in Adaptive Forms 

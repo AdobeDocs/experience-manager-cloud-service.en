@@ -4,6 +4,7 @@ description: Numeric Field Component in Interactive Communication Editor in AEM 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 1f6bda20-7bce-4cfd-9985-f8b49d6e50e0
 ---
 # Numeric Field Component in Interactive Communication Editor 
