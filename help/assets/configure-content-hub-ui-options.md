@@ -78,7 +78,7 @@ You can configure the metadata fields that display to the users while uploading 
 
 1. Click **[!UICONTROL Add metadata]**. 
 
-1. Specify a label for the property, map it to a property using the **[!UICONTROL Metadata]** field, and select the appropriate input type for the new asset metadata. The input type labels are updated to align with Adobe Experience Manager (AEM). The available input types include Text, Tags, Date, Number, Dropdown, Multi Value Text, Smart Tags, and Smart Color Tags. For certain metadata fields, the input type is automatically assigned and cannot be modified.
+1. Specify a label for the property, map it to a property using the **[!UICONTROL Metadata]** field, and select the appropriate input type for the new asset metadata. The input type labels are updated to align with Adobe Experience Manager (AEM). The available input types include Text, Tags, Date, Number, Dropdown, Multi Value Text, Smart Tags, and Smart Color Tags. For certain metadata fields (xcm:colorDistribution, xcm:machineKeywords), the input type is automatically assigned and cannot be modified.
 
 1. Click the **[!UICONTROL Required field]** toggle to make the new metadata field mandatory to specify for users while uploading new assets.
 
@@ -103,7 +103,7 @@ Content Hub allows administrators to configure filters that display while search
 
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Filters]**.
 1. Click **[!UICONTROL Add filters]**. 
-1. Specify a label for the filter, map it to a property using the **[!UICONTROL Metadata]** field, and select the appropriate input type for the new filter. The input type labels are updated to align with Adobe Experience Manager (AEM). The available input types include Text, Tags, Date, Number, Dropdown, Multi Value Text, Smart Tags, and Smart Color Tags. For certain metadata fields, the input type is automatically assigned and cannot be modified.
+1. Specify a label for the filter, map it to a property using the **[!UICONTROL Metadata]** field, and select the appropriate input type for the new filter. The input type labels are updated to align with Adobe Experience Manager (AEM). The available input types include Text, Tags, Date, Number, Dropdown, Multi Value Text, Smart Tags, and Smart Color Tags. For certain metadata fields (xcm:colorDistribution, xcm:machineKeywords), the input type is automatically assigned and cannot be modified.
 1. Click **[!UICONTROL Confirm]**. The new filter displays in the list of the existing filters.
 1. Click **[!UICONTROL Save]** to apply the changes so that the new filter gets displayed on the Search page while filtering assets.
 
@@ -138,14 +138,14 @@ You can also configure the asset properties that display for each asset, such as
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Asset details]**.
 
 1. Click **[!UICONTROL Add metadata]**. 
-1. Specify a label for the property, map it to a property using the **[!UICONTROL Metadata]** field, and select the appropriate input type for the new asset metadata. The input type labels are updated to align with Adobe Experience Manager (AEM). The available input types include Text, Tags, Date, Number, Dropdown, Multi Value Text, Smart Tags, and Smart Color Tags. For certain metadata fields, the input type is automatically assigned and cannot be modified.
+1. Specify a label for the property, map it to a property using the **[!UICONTROL Metadata]** field, and select the appropriate input type for the new asset metadata. The input type labels are updated to align with Adobe Experience Manager (AEM). The available input types include Text, Tags, Date, Number, Dropdown, Multi Value Text, Smart Tags, and Smart Color Tags. For certain metadata fields (xcm:colorDistribution, xcm:machineKeywords), the input type is automatically assigned and cannot be modified.
 1. Click **[!UICONTROL Confirm]**. The new metadata displays in the list of the existing asset properties.
 
 1. Click **[!UICONTROL Save]** to apply the changes so that the new property gets displayed on the asset details page.
 
 Similarly, you can click ![Edit icon](assets/do-not-localize/edit_icon.svg), available next to each available property, to edit the labels or click the delete icon to delete any existing asset detail. Click **[!UICONTROL Save]** after making all modifications to apply the changes.
 
-   ![Configuration UI asset details on Content Hub](assets/asset-details-new.png)
+   ![Configuration UI asset details on Content Hub](assets/asset-detailsn.png)
 
 The properties enabled on the Configuration User Interface display on the Asset Details page:
 
