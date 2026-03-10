@@ -4,6 +4,7 @@ description: Organize your digital assets, images, files, folders, and so on, us
 contentOwner: AG
 feature: Asset Management, Best Practices
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
 ---
 # Organize your digital assets {#organize-digital-assets}

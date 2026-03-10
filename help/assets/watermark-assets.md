@@ -4,6 +4,7 @@ description: Learn how to add a digital watermark to your assets in AEM. Waterma
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
 ---
 # Watermark your assets {#watermark-assets}

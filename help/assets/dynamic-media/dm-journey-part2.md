@@ -10,6 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 hide: no
 hidefromtoc: no
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
 ---
 # Dynamic Media Journey: The Basics, part II  {#dm-journey-part2}

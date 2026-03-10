@@ -3,6 +3,7 @@ title: Integrate [!DNL AEM Assets] with [!DNL Figma].
 description: Learn to integrate [!DNL AEM Assets] with [!DNL Figma] to access and use your organization's assets within your [!DNL Figma] design workflow.
 hide: no
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
 ---
 
