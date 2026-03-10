@@ -2,6 +2,7 @@
 title: Asset Selector properties for the customization
 description: Use Asset selector to search, find, and retrieve assets' metadata and renditions within your application.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
 ---
 # Asset Selector properties {#asset-selector-properties}

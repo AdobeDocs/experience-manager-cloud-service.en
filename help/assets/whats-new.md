@@ -2,6 +2,7 @@
 title: What's new in Content Hub
 description: Learn more on some of the recenly launched Content Hub capabilities
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
 ---
 # What's new in Content Hub {#whats-new-content-hub}

@@ -4,6 +4,7 @@ description: Process your digital assets using cloud-native and scalable asset p
 contentOwner: AG
 feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
 role: Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
 ---
 # Overview of asset ingestion and processing with asset microservices {#asset-microservices-overview}
