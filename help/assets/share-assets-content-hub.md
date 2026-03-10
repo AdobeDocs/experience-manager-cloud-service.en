@@ -68,7 +68,7 @@ Sharing assets in AEM Assets Content Hub allows authorized users to easily share
 
 ### How do I share assets or collections with others using AEM Assets Content Hub?
 
-To share assets or collections in Content Hub, navigate to the Content Hub homepage, select one or more assets (or go to the Collections tab for collections), and click the Share icon. In the Share dialog, you can preview the assets, remove any if needed, add a title and description, select who can access the link (private or public), set an expiration period, and then click Get Link to generate and copy the shareable URL. The link can then be sent to team members or stakeholders.
+To share assets or collections in AEM Assets Content Hub, navigate to the Content Hub homepage, select one or more assets (or go to the Collections tab for collections), and click the Share icon. In the Share dialog, you can preview the assets, remove any if needed, add a title and description, select who can access the link (private or public), set an expiration period, and then click Get Link to generate and copy the shareable URL. The link can then be sent to team members or stakeholders.
 
 ### What access options are available when sharing assets in AEM Assets Content Hub, and how do they differ?
 
@@ -80,11 +80,11 @@ Yes, administrators can enable or disable the **Enable Public Link** toggle avai
 
 ### Can I set expiration dates for shared asset links in AEM Assets Content Hub, and why is this important?
 
-Yes, you can set expiration dates for both private and public shared links in Content Hub. For public links, you can choose from presets like 24 hours up to one week, while private links allow you to select from presets or set a custom expiration date. Expiration dates are important because once the link expires, it can no longer be used to access or download the assets, which helps maintain the security and control of your content.
+Yes, you can set expiration dates for both private and public shared links in AEM Assets Content Hub. For public links, you can choose from presets like 24 hours up to one week, while private links allow you to select from presets or set a custom expiration date. Expiration dates are important because once the link expires, it can no longer be used to access or download the assets, which helps maintain the security and control of your content.
 
 ### What can recipients do with the shared asset link created using AEM Assets Content Hub, and are there options for downloading different renditions?
 
-Recipients who receive a shared asset link can open it in their browser to preview, select, and download the assets provided. If asset renditions are enabled in Content Hub, recipients can choose which renditions (such as Original or Static) they want to download. The assets and renditions are downloaded as a zip file, and metadata can be viewed by clicking the asset thumbnail. The link remains functional until its set expiration date.
+Recipients who receive a shared asset link can open it in their browser to preview, select, and download the assets provided. If asset renditions are enabled in AEM Assets Content Hub, recipients can choose which renditions (such as Original or Static) they want to download. The assets and renditions are downloaded as a zip file, and metadata can be viewed by clicking the asset thumbnail. The link remains functional until its set expiration date.
 
 
 

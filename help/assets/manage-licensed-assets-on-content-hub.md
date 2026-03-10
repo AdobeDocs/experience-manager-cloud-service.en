@@ -22,21 +22,21 @@ Execute the following steps:
 
 ### What is the purpose of managing licensed assets on AEM Assets Content Hub?
 
-Managing licensed assets on Content Hub allows administrators to ensure that only approved assets with valid licenses are available for use, maintaining compliance and proper metadata tracking within the AEM author environment.
+Managing licensed assets on AEM Assets Content Hub allows administrators to ensure that only approved assets with valid licenses are available for use, maintaining compliance and proper metadata tracking within the AEM author environment.
 
 ### How can I add a license field to asset properties in Experience Manager as a Cloud Service?
 
-You can add a license field to asset properties by editing the metadata form to include a new text field mapped to the `dc:license` property. This field then appears in the asset properties in the AEM Assets author environment.
+In AEM Assets view, You can add a license field to asset properties by editing the metadata form to include a new text field mapped to the `dc:license` property. This field then appears in the asset properties in the AEM Assets author environment.
 
-### How to apply a metadata form to an asset folder to include the license field in asset properties?
+### How to apply a metadata form to an asset folder to include the license field in asset properties in AEM Assets?
 
-Edit the metadata form to include the license field. Apply this metadata form to the desired asset folder to ensure the new settings are incorporated for all assets within that folder.
+In AEM Assets view, Edit the metadata form to include the license field. Apply this metadata form to the desired asset folder to ensure the new settings are incorporated for all assets within that folder.
 
-### How do I specify the license details for an asset?
+### How do I specify the license details for an asset in AEM Assets view?
 
 To specify the license details, select the asset, click **Details** to view its properties, and enter the absolute path of the approved asset license in the license field added to the metadata form.
 
-### What is the required format for the Content Hub absolute path for an asset license?
+### What is the required format for the AEM Assets Content Hub absolute path for an asset license?
 
 The Content Hub absolute path should follow the pattern: /content/dam/(The asset's folder hierarchy within the DAM repository)/(asset_name).(file_extension). For example, `/content/dam/teamA/projects/documents/file1.pdf`.
 
@@ -48,6 +48,6 @@ Approving both the asset and its license ensures that only properly licensed and
 
 After defining the license path in the asset's properties, approve the asset and click Save. This action makes the licensed asset available in AEM Assets Content Hub.
 
-### Who is responsible for managing licensed assets in Content Hub?
+### Who is responsible for managing licensed assets in AEM Assets Content Hub?
 
-Administrators are responsible for editing metadata forms, assigning them to asset folders, and approving both assets and their licenses in Content Hub.
+Administrators are responsible for editing metadata forms, assigning them to asset folders, and approving both assets and their licenses in AEM Assets Content Hub.
