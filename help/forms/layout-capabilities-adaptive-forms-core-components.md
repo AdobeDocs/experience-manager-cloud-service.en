@@ -4,6 +4,7 @@ description: Layout and appearances of Adaptive Forms on various devices are gov
 feature: Adaptive Forms, Core Components
 keywords: Layout of Adaptive Form based on core components, Different layouts for forms, Dynamic Form Layouts AEM, AEM Cloud Service Form Layouts, Form Layout Types in AEM Core Components, Adaptive Form layouts
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
 ---
 # Layout capabilities of Adaptive Forms based on Core Components 

@@ -4,6 +4,7 @@ description: Date/Time Field Component in Interactive Communication Editor  in A
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 7ac93d8c-5454-4789-a7cd-438571a9ff28
 ---
 # Date/Time Field Component in Interactive Communication Editor 

@@ -4,6 +4,7 @@ description: Learn how users can be redirected to a webpage that form authors ca
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: e4dc01d2-7c89-4bd8-af0a-1d2df4676a9a
 ---
 # Configuring redirect page {#configuring-redirect-page}

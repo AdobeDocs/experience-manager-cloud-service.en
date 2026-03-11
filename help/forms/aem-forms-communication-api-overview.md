@@ -3,6 +3,7 @@ title: AEM Forms Communications APIs - Overview
 description: Overview of AEM Forms Communications APIs including authentication methods and complete API reference
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 1f9fb00c-c284-45c1-a8ba-51a59dbaee3d
 ---
 # AEM Forms Communications APIs - Overview

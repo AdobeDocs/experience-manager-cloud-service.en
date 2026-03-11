@@ -4,6 +4,7 @@ description: Support XDP Editing in Interactive Communication Editor allows exis
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 8dd024aa-d0c1-4e8b-b9f2-ad67c20cdd88
 ---
 # Support XDP Editing in Interactive Communication Editor

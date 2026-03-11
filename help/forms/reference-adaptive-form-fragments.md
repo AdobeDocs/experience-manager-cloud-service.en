@@ -9,6 +9,7 @@ feature: Adaptive Forms
 role: User
 hide: yes
 hidefromtoc: yes
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
 ---
 # Reference Adaptive Form Fragments {#reference-adaptive-form-fragments}

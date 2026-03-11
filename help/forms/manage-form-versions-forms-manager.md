@@ -3,6 +3,7 @@ title: Manage form versions in Forms Manager
 description: Learn to create and manage versions of Adaptive Forms, form fragments, themes, and other assets in the Forms Manager UI.
 feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: cd2c6e15-99a6-4b4e-bfd1-8291a2001ebe
 ---
 # Manage Form Assets Versions in Forms Manager UI

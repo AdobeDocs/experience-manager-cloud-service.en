@@ -4,6 +4,7 @@ description: Learn how to integrate an Adaptive Forms theme (for example, Canvas
 keywords: adaptive forms theme, site theme, AEM Sites theme, forms theme integration, front-end pipeline, theme embedding
 feature: Adaptive Forms, Core Components
 role: Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 0607e11c-84d2-42cb-be9f-acd7c328a342
 ---
 # Embed an Adaptive Forms theme in an AEM Sites theme 
