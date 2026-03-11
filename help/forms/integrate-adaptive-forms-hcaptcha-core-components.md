@@ -4,6 +4,7 @@ description: Enhance form security with hCaptcha&reg; service effortlessly. Step
 topic-tags: Adaptive Forms, author
 keywords: hCaptcha&reg; service, Adaptive Forms, CAPTCHA challenge, Bot prevention, Core Components, Form submission security, Form spam prevention
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
 role: User, Developer
 ---
