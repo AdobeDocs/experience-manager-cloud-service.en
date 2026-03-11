@@ -4,6 +4,7 @@ description: Add Custom Fonts in Interactive Communication Editor to enable the 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 0b41fd1a-737f-495f-89da-6cc2e002b424
 ---
 # Add Custom Fonts to Interactive Communication Editor

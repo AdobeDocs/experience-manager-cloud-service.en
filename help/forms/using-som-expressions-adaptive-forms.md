@@ -3,6 +3,7 @@ title: How can we use SOM expressions in Adaptive Forms?
 description: Learn how to extract SOM expressions of a panel in Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 5c30d5ca-12b8-4cc6-aa95-bde562419827
 ---
 # Using SOM expressions in Adaptive Forms{#using-som-expressions-in-adaptive-forms}
