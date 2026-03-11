@@ -1,9 +1,6 @@
 ---
 title: Introduction to building Adaptive Forms
 description: AEM Forms provide easy-to-use yet powerful interface for building Adaptive Forms. It provides a host of components and tools that you can use to build forms.
-content-type: reference
-topic-tags: author, introduction
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
@@ -151,9 +148,9 @@ The sidebar comprises the following browsers:
    <td>Adds a drop-down list - single or multi-select</td>
   </tr>
   <tr>
-  <td>Email</td>
-  <td>Adds a field to capture email address. The Email component, by default, validates email addresses using the following regular expression ```^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$```</td>
-</tr>
+   <td>Email</td>
+   <td><p>Adds a field to capture email address. The Email component, by default, validates email addresses using the following regular expression.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+  </tr>
   <tr>
    <td>File attachment</td>
    <td><p>Adds a button that allows users to browse and attach supporting documents to a form.</p> <p><strong>Note: </strong>The File Attachment component supports a pre-defined set of file formats in Adaptive Forms enabled for Adobe Sign. For more information, see <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Supported file formats</a>.</p> </td>
@@ -248,7 +245,7 @@ The sidebar comprises the following browsers:
   </tr>
   <tr>
    <td>Telephone</td>
-   <td><p>Adds a field to capture telephone number. The Telephone component allows authors to configure one of following phone number types. Each type is associated with a default regular expression for validation.</p></td>
+   <td><p>Adds a field to capture telephone number. The Telephone component allows authors to configure one of following phone number types. Each type is associated with a default regular expression for validation.</p>
     <ul>
      <li>Type International is validated by <code>^[+][0-9]{0,14}$</code>.</li>
      <li>Type USPhoneNumber is validated by <code>{'+1 ('999') '999-9999}</code>.</li>
