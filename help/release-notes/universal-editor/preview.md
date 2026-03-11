@@ -3,13 +3,14 @@ title: Universal Editor Preview Release Notes
 description: These are the release notes for the preview release of the Universal Editor.
 feature: Release Information
 role: Admin
+exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
 ---
 
 # Universal Editor Preview Release Notes {#preview}
 
-These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 5 February 2026.
+These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 12 March 2026.
 
-These **preview** release notes are provided as a convenience so you know what changes to the Universal Editor are upcoming and you can test them by [switching to your preview environment.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
+These **preview** release notes are provided as a convenience so you know what changes to the Universal Editor are upcoming and you can test them by [switching to your preview version.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
 >[!TIP]
 >
@@ -19,10 +20,6 @@ These **preview** release notes are provided as a convenience so you know what c
 >
 >The content of the actual release as well as the release date are subject to change.
 
-## Upcoming New Features {#what-is-new}
+## Upcoming Features {#upcoming-features}
 
-* The move action is now available within [the context menu.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
-
-## Upcoming Improvements {#other-improvements}
-
-* Publish to preview was enabled for AEM 6.5 when using the [`xwalk` plugin.](/help/implementing/universal-editor/component-definition.md#plugins)
+* An option to add components has been added to the in context menu.

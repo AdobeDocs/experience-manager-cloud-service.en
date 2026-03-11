@@ -2,6 +2,7 @@
 title: Search assets in Content Hub
 description: Learn how to search assets in [!DNL Content Hub]
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
 ---
 # Search Assets in [!DNL Content Hub] {#search-assets}
@@ -161,5 +162,20 @@ To perform Bulk Search in the [!DNL Content Hub], execute the following steps:
 [!DNL The Content Hub] is not limited to search, instead it allows you to perform additional actions, such as [download](download-assets-content-hub.md), [share](share-assets-content-hub.md), and [add assets to collection](collections-content-hub.md), right from the search or preview interface. Select the assets on the search results page to view these options.
 
 Learn more about [configuring assets in the [!DNL Content Hub]](configure-content-hub-ui-options.md).
+
+## Frequently asked questions {#faqs-deploy-content-hub}
+
+### How can I narrow down my search results in AEM Assets Content Hub?
+
+You can narrow down search results in AEM Assets Content Hub by using text-based search, applying various filters (such as file format, approval status, modification date, etc.), searching by tags or smart tags, and using the filters panel. Combining multiple predicates or filter options helps you precisely target the assets you need.
+
+### Can I perform a bulk search in AEM Assets Content Hub for multiple assets at once?
+
+Yes, you can perform a Bulk Search in AEM Assets Content Hub by entering multiple values (such as names, file formats, tags) separated by specified delimiters. The Bulk Search feature allows you to quickly find several assets in a single query, making it more efficient than searching assets one by one.
+
+
+### Can administrators customize the filters available in AEM Assets Content Hub search?
+
+Yes, administrators can use the AEM Assets Content Hub Configuration User Interface to configure which filters are available in search interface. While default filters include file format, approval status, expiration date, and more, administrators can tailor these options to fit organizational needs.
 
 

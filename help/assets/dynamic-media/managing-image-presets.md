@@ -4,6 +4,7 @@ description: Learn about Image Presets and how to create, modify, and manage the
 contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 ---
 # Manage Image Presets{#managing-image-presets}
@@ -48,6 +49,31 @@ You manage your Image Presets in Experience Manager by selecting the Experience 
 >
 >The system shows various renditions when you select **[!UICONTROL Renditions]** in an asset's Detail View. You can increase or decrease the number of Image Presets that display. See [Increase the number of image presets that are displayed](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
+## How Image Presets relate to renditions {#how-image-presets-relate-to-renditions}
+
+Image presets define how Dynamic Media delivers images, including sizing, formatting, compression, and other display parameters. Presets do not generate renditions themselves. Instead, they rely on renditions that are created when assets are processed.
+
+### Rendition generation in AEM as a Cloud Service{#rendition-generation-in-aemaacs}
+
+In AEM as a Cloud Service, renditions are generated using [Asset Microservices](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#). The DAM Update Asset workflow is not available for customization in Cloud Service.
+
+Important considerations include the following:
+
+* Renditions are generated at upload time.
+* Changes to a Processing Profile affect newly uploaded assets. Existing assets must be reprocessed if new renditions are required.
+* Workflow model customization is not supported in AEM as a Cloud Service for rendition generation.
+
+Image presets reference available renditions at delivery time. Ensure that the required renditions exist before configuring or using Image Presets.
+
+**To control which renditions are generated:**
+
+1. Create or edit a [Processing Profile](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#).
+2. Configure the required rendition definitions.
+3. Apply the Processing Profile to the appropriate folder.
+
+When assets are uploaded to a folder that has a Processing Profile applied, Asset Microservices automatically generate the defined renditions.
+
+<!--
 ### Adobe Illustrator (AI), PostScript&reg; (EPS), and PDF file formats {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
 If you intend to support the ingestion of AI, EPS, and PDF files so that you can generate dynamic renditions of these file formats, review the following information before you create Image Presets.
@@ -59,7 +85,7 @@ Adobe Illustrator's file format is a variant of PDF. The main differences, in th
 
 The `Create Sub Asset process` component creates the subassets within the overall `DAM Update Asset` workflow. To see this process component within the workflow, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
 
-<!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
+See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file).
 
 You can view the subassets or the pages when you open the asset, select the Content menu, and select **[!UICONTROL Subassets]** or **[!UICONTROL Pages]**. The subassets are real assets. The `Create Sub Asset` workflow component extracts the PDF pages. They are then stored as `page1.pdf`, `page2.pdf`, and so on, below the main asset. After they are stored, the `DAM Update Asset` workflow processes them.
 
@@ -101,15 +127,16 @@ Using the default process arguments, the first page of a PDF/AI document is rast
 
 Max Width and Max Height limit the resolution at which to rasterize. For example, if the maximums are unchanged, and Resolution is set to 300 ppi, a US Letter document is rasterized at 186 ppi. That is, the document is 1581 x 2046 pixels.
 
-The `Rasterize PDF/AI Image Preview Rendition` process component has a maximum defined to ensure that it does not create overly large images in memory. Such large images can overflow the memory provided to the JVM (Java&trade; Virtual Machine). Care must be taken to provide the JVM with enough memory to manage the configured number of parallel workflows, with each having the potential to create an image at the maximum configured size.
+The `Rasterize PDF/AI Image Preview Rendition` process component has a maximum defined to ensure that it does not create overly large images in memory. Such large images can overflow the memory provided to the JVM (Java&trade; Virtual Machine). Care must be taken to provide the JVM with enough memory to manage the configured number of parallel workflows, with each having the potential to create an image at the maximum configured size. -->
 
+<!--
 ### InDesign (INDD) file format {#indesign-indd-file-format}
 
 If you intend to support the ingestion of INDD files so that you can generate dynamic rendition of this file format, review the following information before you create Image Presets.
 
 For InDesign files, sub assets are extracted only if the Adobe InDesign Server is integrated with Experience Manager. Referenced assets are linked based on their metadata. InDesign Server is not required for linking. However, the referenced assets must be present within Experience Manager before the InDesign files are processed for the links to be created between the InDesign files and the referenced assets.
 
-<!-- See [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
+See [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md).
 
 The Media Extraction process component in the `DAM Update Asset` workflow runs several pre-configured Extend Scripts to process InDesign files.
 
@@ -125,7 +152,9 @@ The following scripts are used by Dynamic Media integration:
 | ThumbnailExport.jsx | Yes  | Generates a 300 PPI `thumbnail.jpg` rendition that is optimized and turned into a PTIFF rendition by `Dynamic Media Process Image Assets` process component.  |
 | JPEGPagesExport.jsx | Yes | Generates a 300 PPI JPEG subasset for each page. The JPEG subasset is a real asset stored under the InDesign asset. The `DAM Update Asset` workflow optimizes and converts it into a PTIFF. |
 | PDFPagesExport.jsx | No | Generates a PDF subasset for each page. The PDF subasset gets processed as described earlier. Because the PDF contains a single page only, no subassets are generated. |
+-->
 
+<!--
 ### Configure the image thumbnail size {#configuring-image-thumbnail-size}
 
 You can configure the size of thumbnails by configuring those settings in the **[!UICONTROL DAM Update Asset]** workflow. There are two steps in the workflow where you can configure the thumbnail size of image assets. One (**[!UICONTROL Dynamic Media Process Image Assets]**) is used for dynamic image assets. The other (**[!UICONTROL Process Thumbnails]**) is used for static thumbnail generation or when all other processes fail to generate thumbnails. Regardless, *both* must have the same settings.
@@ -155,8 +184,9 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
    >The values in the thumbnails argument in the **[!UICONTROL Process Thumbnails]** step must match the thumbnails argument in the **[!UICONTROL Dynamic Media Process Image Assets]** step.
 
 1. Select **[!UICONTROL Save]** to save the changes to the workflow.
+-->
 
-### Increase or decrease the number of image presets that are displayed {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+## Increase or decrease the number of image presets that are displayed {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 Image presets you create are available as dynamic renditions when you preview assets. Experience Manager shows various dynamic renditions when viewing an asset from **[!UICONTROL Detail View > Renditions]**. You can increase or decrease the limit of renditions that are displayed.
 
@@ -175,7 +205,7 @@ Image presets you create are available as dynamic renditions when you preview as
 1. In the limit property, change the number to the desired number, for example, `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Select **[!UICONTROL Save All]**.
 
-### Create Image Presets {#creating-image-presets}
+## Create Image Presets {#creating-image-presets}
 
 Create Image Presets so you can apply settings consistently across images when you preview or publish.
 
@@ -208,7 +238,7 @@ See [InDesign (INDD) file format](#indesign-indd-file-format).
 
 1. Select **[!UICONTROL Save]**.
 
-### Creating a responsive Image Preset {#creating-a-responsive-image-preset}
+## Create a responsive Image Preset {#creating-a-responsive-image-preset}
 
 To create a responsive Image Preset, perform the steps in [Create image presets](#creating-image-presets). When entering the height and width in the **[!UICONTROL Edit Image Preset]** window, erase the values and leave them blank.
 
@@ -232,7 +262,7 @@ When you create or edit Image Presets, you have the options described in this se
 
 * **[!UICONTROL Sharpening: Resampling Mode]** - Select **[!UICONTROL Sharp2]**.
 
-#### Basic tab options {#basic-tab-options}
+### Basic tab options {#basic-tab-options}
 
 | Field | Description |
 | --- | --- |
@@ -241,7 +271,7 @@ When you create or edit Image Presets, you have the options described in this se
 | **Format** | Choose a format from the menu.<br>Choosing **JPEG** offers the following other options:<br>&bull; **Quality** - The JPEG quality scale is 1-100. The scale is visible when you drag the slider.<br>&bull; **Enable JPG Chrominance Downsampling** - Because the eye is less sensitive to high-frequency color information than high-frequency luminance, JPEG images divide image information into luminance and color components. When a JPEG image is compressed, the luminance component is left at full resolution, while the color components are downsampled by averaging together groups of pixels. Downsampling reduces the data volume to half or one-third with minimal impact on perceived quality. Downsampling is not applicable to grayscale images. This technique reduces the amount of compression useful for images with high contrast (for example, images with overlaid text).<br><br>Choosing **GIF** or **GIF with alpha** provides these additional **GIF Color Quantization** options:<br>&bull; **Type** - Select **Adaptive** (default), **Web**, or **Macintosh**. If you select **GIF with Alpha**, the Macintosh option is not available.<br>&bull; **Dither** - Select **Diffuse** or **Off**.<br>&bull; **Number of Colors** - Enter a number 2 - 256.<br>&bull; **Color List** - Enter a comma-separated list. For example, for white, gray, and black, enter `000000,888888,ffffff`.<br><br>Choosing **PDF**, **TIFF**, or **TIFF with alpha** provides this additional option:<br>&bull; **Compression** - Select a compression algorithm. Algorithm options for PDF are **None**, **Zip**, and **Jpeg**; for TIFF they are **None**, **LZW**, **Jpeg**, and **Zip**; and for TIFF with Alpha are **None**, **LZW**, and **Zip**.<br><br>Choosing **PNG**, **PNG with Alpha**, or **EPS** provides no additional options. |
 | **Sharpening** | Select **Enable Simple Sharpening** to apply a basic sharpening filter to the image after all scaling takes place. Sharpening can help compensate for blurriness that can result when you display an image at a different size. |
 
-#### Advanced tab options {#advanced-tab-options}
+### Advanced tab options {#advanced-tab-options}
 
 <table>
  <tbody>
@@ -326,7 +356,7 @@ When you create or edit Image Presets, you have the options described in this se
  </tbody>
 </table>
 
-### Define Image Preset options with image modifiers {#defining-image-preset-options-with-image-modifiers}
+## Define Image Preset options with image modifiers {#defining-image-preset-options-with-image-modifiers}
 
 In addition to the options available in the Basic and Advanced tabs, you can define image modifiers to give you more options when defining Image Presets. Image Rendering relies on the Dynamic Media Image Rendering API and is defined in detail in the [HTTP Protocol Reference](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api).
 
@@ -376,7 +406,7 @@ The following are some basic examples of what you can do with image modifiers.
 
   ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
-### Edit image presets {#modifying-image-presets}
+## Edit image presets {#modifying-image-presets}
 
 1. In Experience Manager, select the Experience Manager logo to access the global navigation console, then go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
 
@@ -385,11 +415,11 @@ The following are some basic examples of what you can do with image modifiers.
 1. Select a preset and then select **[!UICONTROL Edit]**. The **[!UICONTROL Edit Image Preset]** window opens.
 1. Make changes and select **[!UICONTROL Save]** to save your changes or **[!UICONTROL Cancel]** to cancel your changes.
 
-### Publish image presets {#publishing-image-presets}
+## Publish image presets {#publishing-image-presets}
 
 Image presets are automatically published for you.
 
-### Delete image presets {#deleting-image-presets}
+## Delete image presets {#deleting-image-presets}
 
 1. In Experience Manager, select the Experience Manager logo to access the global navigation console and select the Tools icon.
 1. Navigate to **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.

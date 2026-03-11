@@ -4,6 +4,7 @@ description: Dynamic Media already comes with a predefined Adaptive Video Encodi
 contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 ---
 # Dynamic Media Video Profiles{#video-profiles}

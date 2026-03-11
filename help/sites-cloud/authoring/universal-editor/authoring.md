@@ -1,6 +1,7 @@
 ---
 title: Authoring Content with the Universal Editor
 description: Learn how easy and intuitive it is for content authors to create content using the Universal Editor.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
@@ -93,26 +94,46 @@ Tap or click **Cancel** or **Done** to discard or save the changes, respectively
 
 #### Rich Text Formatting Options {#formatting-options}
 
-The rich text editor (RTE) of the Universal Editor allows the author to apply standard text formatting. By default, the following options are available.
+The rich text editor (RTE) of the Universal Editor allows the author to apply standard text formatting. The following options are available.
 
-* Paragraph (h1, h2, h3, etc.)
-* Bold
-* Italics
-* Underline
-* Superscript
-* Subscript
-* Bulleted list
-  * Use the tab key to indent and shift+tab to outdent
-* Ordered list
-  * Use the tab key to indent and shift+tab to outdent
-* Link
-* Unlink
-* Image
-* Remove All Formatting
+* **Paragraph Style**
+  * Paragraph, h1-h6, code
+* **Bold**
+* **Italic**
+* **Underline**
+* **Strikethrough**
+* **Text Color**
+  * Opens a color palette where you can select a color or specify a hex value
+  * Only available in the modal editor, not in-context
+* **Superscript**
+* **Subscript**
+* **Bullet list**
+  * Use the tab key to indent and shift+tab to outdent.
+* **Ordered list**
+  * Use the tab key to indent and shift+tab to outdent.
+* **Link**
+  * Specify a URL or use the Content Browser to select a path within AEM.
+* **Unlink**
+  * Remove link from selected text.
+* **Image**
+  * Specify a URL or use the [asset selector](/help/assets/overview-asset-selector.md#using-asset-selector) to select an asset from AEM.
+* **Table**
+  * Use the drop-down to insert a new table of the selected number of columns and rows or insert and remove new columns/rows.
+* **Alignment**
+  * **Align Left**
+  * **Align Center**
+  * **Align Right**
+  * **Align Justify**
+* **Right to Left**
+* **Left to Right**
+* **Indent**
+* **Outdent**
+* **Paste as Text**
+  * Remove formatting from text on your clipboard before pasting into the Universal Editor.
+* **Remove All Formatting**
+  * Remove all formatting options from the selected text.
 
-Existing tables can be edited using the RTE, but new tables can not be created.
-
-The RTE can be configured to hide options or show additional options depending on authors' needs. Please see the document [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more information.
+Depending on your back end, the options available by default may vary. The RTE can be configured to hide options or show additional options depending on authors' needs. Please see the document [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md) for more information.
 
 ### Editing Media {#edit-media}
 
@@ -163,7 +184,13 @@ Depending on the needs of your workflow, you may want to edit the Content Fragme
 
    ![Select add icon](assets/add-icon.png)
 
-1. If more than one component is allowed for the container, select which one you wish to insert from the drop-down. If only one component is allowed, it is inserted automatically.
+1. The component picker dialog opens. 
+   * Use the left column to filter components by category or use the search to filter by name.
+   * Click the component name in the right column to insert it into the container.
+   * If only one component is allowed in the container, it is inserted automatically.
+   * Click outside of the picker to cancel component insertion.
+
+   ![Component picker](assets/component-picker.png)
 
 The component is inserted into the container and can be edited in the editor.
 
@@ -196,7 +223,32 @@ The selected component deleted.
 >
 >Use the hot key `Shift+Backspace` to delete the selected component from its container.
 
-### Reordering Components {#reordering-components}
+### Reordering and Moving Components {#reordering-components}
+
+You can move and reorder components using the context menu or the content tree.
+
+#### Move Components with the Context Menu {#move-context-menu}
+
+1. Right-click on a component or click on the selected component's badge to open the [context menu.](#context-menu)
+1. Select the move option desired.
+   * Move to top
+   * Move up
+   * Move down
+   * Move to bottom
+   ![Move options in context menu](assets/move-options-in-conext-menu.png)
+
+The component is moved in both the editor and the content tree.
+
+>[!TIP]
+>
+>Use the hot keys `Command-U` or `Shift-Command-U` to move up or to the top, respectively.
+>Use the hot keys `Command-J` or `Shift-Command-J` to move down or to the bottom, respectively.
+
+>[!NOTE]
+>
+>The context menu options can only move components within their containers. If you wish to move components between containers, [use the content tree.](#reorder-content-tree)
+
+#### Reorder Components with the Content Tree {#reorder-content-tree}
 
 1. If not already in [content tree mode](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), switch to it.
 1. Select a container component in the content tree or in the editor.

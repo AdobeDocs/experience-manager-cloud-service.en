@@ -1,6 +1,7 @@
 ---
 title: Working with Page Versions
 description: Learn how to create, compare, and restore versions of your pages in AEM.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring

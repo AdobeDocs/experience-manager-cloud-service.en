@@ -4,6 +4,7 @@ description: Learn the basics of accessing and navigating the Universal Editor.
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
 ---
 
@@ -80,7 +81,7 @@ Tapping or clicking the account icon opens a menu with your user settings.
 
 ![Environment switcher](assets/environment-switcher.png)
 
-For the Universal Editor, under the heading **Product Settings**, there is an option to switch between the current production version of the Universal Editor and the upcoming preview version.
+For the Universal Editor, under the heading **Product Settings**, use the **Switch to Preview Environment** option to switch between the current production version of the Universal Editor and the upcoming [preview version.](/help/release-notes/universal-editor/preview.md)
 
 ### The Universal Editor Toolbar {#universal-editor-toolbar}
 
