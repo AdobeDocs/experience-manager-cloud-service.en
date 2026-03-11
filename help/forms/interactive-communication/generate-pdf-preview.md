@@ -4,6 +4,7 @@ description: PDF Preview in Interactive Communication Editor with Different Data
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 17b3fe2b-6a1d-4fe2-9a92-a55a50400824
 ---
 # PDF Preview in Interactive Communication Editor

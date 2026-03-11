@@ -4,6 +4,7 @@ description: Learn how to integrate your Marketo Engage instance with AEM Forms 
 keywords: How to connect a Marketo instance with form? , Connect a form to Marketo, Integrate a form with Marketo Engage, Integrate an Adaptive Form with a Marketo instance.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
 ---
 # Integrate an Adaptive Form with Marketo Engage 
