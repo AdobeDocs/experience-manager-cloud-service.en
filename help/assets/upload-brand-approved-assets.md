@@ -2,6 +2,7 @@
 title: Upload your brand approved assets to [!DNL Content Hub]
 description: Learn how to upload your brand approved assets to Content Hub
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
 ---
 # Upload brand approved assets to Content Hub {#upload-brand-approved-assets-content-hub}
@@ -12,6 +13,8 @@ exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
 >abstract="Add approved assets to Content Hub either from local file system or import assets from OneDrive or Dropbox data sources. All assets display at the top-level in Content Hub irrespective of the folder structure to enhance search capabilities."
 
 [Content Hub users with rights to add assets](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) can add assets to the Content Hub either from local file system or import assets from OneDrive or Dropbox data sources. All assets display at the top-level in Content Hub irrespective of the folder structure available on your local file system or OneDrive and Dropbox data sources to enhance the search capabilities.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
 
 The assets marked as `Approved` in Assets as a Cloud Service are automatically available in Content Hub. For more information, see [Approve assets for Content Hub](/help/assets/approve-assets-content-hub.md).
 
@@ -69,3 +72,30 @@ The display of assets uploaded using Content Hub depends on if you have [enabled
 * If the **[!UICONTROL Auto-approval]** toggle is disabled, the assets that you upload using Content Hub do not display automatically. The assets are available in the `hydrated-assets` folder of your Assets as a Cloud Service environment. Navigate to the folder and [bulk edit](#bulk-approve-assets-content-hub) the status of those assets to `Approved` for those assets to display in Content Hub.
 
 ![Content Hub approval process](/help/assets/assets/content-hub-approval.png)
+
+## Frequently asked questions {#faqs-content-hub-upload-assets}
+
+### What types of assets can I upload to AEM Assets Content Hub and from where? {#asset-types-upload-to-content-hub}
+
+AEM Assets Content Hub users with rights to add assets can upload brand approved assets from their local file system. All uploaded assets, regardless of their original folder structure, are displayed at the top-level in Content Hub to enhance search capabilities.
+
+### How does AEM Assets Content Hub enhance asset search and organization? {#search-content-hub}
+
+AEM Assets Content Hub enhances asset search and organization by allowing users to define key details for each upload, such as campaign name, keywords, channels, timeframe, and region. It also automatically generates additional properties for each asset (such as file size, format, and resolution) and uses Adobe AI to apply Smart Tags, making it easier and faster to find relevant assets.
+
+### How to upload assets from my local file system to AEM Assets Content Hub? {#upload-assets-content-hub}
+
+To upload assets from your local file system to AEM Assets Content Hub, click **Add Assets** to open the upload dialog. You can drag and drop files or folders, or manually browse to select them. You must group your assets under a campaign name, and it is recommended to fill in other fields like keywords, channels, timeframe, and region for better organization. Once ready, click **Upload**, review the details, and confirm to start uploading.
+
+### How does the asset approval process work in AEM Assets Content Hub? {#asset-approval-content-hub}
+
+If the Auto-approval toggle is enabled, assets uploaded using AEM Assets Content Hub are automatically available. If it is disabled, uploaded assets are placed in the **hydrated-assets** folder in Assets as a Cloud Service, and you need to manually bulk edit their status to **Approved** to make them display in Content Hub.
+
+### Can I configure the fields that are mandatory or optional while uploading assets to AEM Assets Content Hub? {#available-fields-while-uploading-assets-to-content-hub}
+
+Administrators can use the Configuration User Interface to define the fields that are mandatory or optional while uploading assets to AEM Assets Content Hub.
+
+### What should I do if my uploaded assets do not display automatically in AEM Assets Content Hub? {#assets-do-not-display-in-content-hub}
+
+If assets do not display automatically in AEM Assets Content Hub, it means the Auto-approval toggle is disabled. The assets are located in the **hydrated-assets** folder of your Assets as a Cloud Service environment. You need to bulk edit their status to **Approved** for them to appear in Content Hub.
+

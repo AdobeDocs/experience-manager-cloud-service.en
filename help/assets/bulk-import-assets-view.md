@@ -1,6 +1,7 @@
 ---
 title: Bulk import assets using Assets view
 description: Learn how to bulk import assets using the new Assets UI (Assets view). It provides administrators with the ability to import large number of assets from a data source to AEM Assets.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
@@ -20,6 +21,8 @@ You can import assets from the following data sources:
 * Google Cloud
 * Dropbox
 * OneDrive
+
+>[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on){transcript=true}
 
 ## Prerequisites {#prerequisites}
 
@@ -219,7 +222,3 @@ Click ![More icon](assets/do-not-localize/more-icon.svg) corresponding to the co
 ## Navigate to assets after performing bulk import {#view-assets-after-bulk-import}
 
 To view the Assets target location where the assets are imported after running the Bulk Import job, click ![More icon](assets/do-not-localize/more-icon.svg) corresponding to the configuration name, and then click **[!UICONTROL View Assets]**. 
-
-## Video: Bulk import assets using Assets View
-
->[!VIDEO](https://video.tv.adobe.com/v/3428012)

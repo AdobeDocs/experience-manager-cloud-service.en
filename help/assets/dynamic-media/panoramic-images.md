@@ -4,6 +4,7 @@ description: Learn how to work with panoramic images in Dynamic Media.
 contentOwner: Rick Brough
 feature: Panoramic Images
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
 ---
 # Panoramic images{#panoramic-images}
