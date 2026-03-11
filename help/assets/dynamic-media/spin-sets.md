@@ -4,6 +4,7 @@ description: Learn how to work with spin sets in Dynamic Media.
 contentOwner: Rick Brough
 feature: Spin Sets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: ed470472-62d9-4684-971b-30df3919c180
 ---
 # Spin Sets{#spin-sets}

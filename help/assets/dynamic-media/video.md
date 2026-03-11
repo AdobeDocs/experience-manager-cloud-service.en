@@ -4,6 +4,7 @@ description: Learn how to work with video in Dynamic Media. Review best practice
 contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 ---
 # Video {#video}

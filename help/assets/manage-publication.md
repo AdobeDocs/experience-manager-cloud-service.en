@@ -4,6 +4,7 @@ description: Publish or unpublish assets to Experience Manager Assets, Dynamic M
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
 ---
 # Manage publication in Experience Manager Assets {#manage-publication-in-aem}

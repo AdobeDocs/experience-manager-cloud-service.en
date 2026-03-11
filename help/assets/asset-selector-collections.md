@@ -2,6 +2,7 @@
 title: Asset Selector Collections
 description: Working with Asset Selector Collections.
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 1687e7d5-eb7e-4eb7-8747-e5dc6afacd5b
 ---
 # Asset Selector Collections {#asset-selector-collections}

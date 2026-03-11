@@ -7,6 +7,7 @@ topic-tags: introduction
 content-type: reference
 feature: 3D Assets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 ---
 # Work with 3D assets in Dynamic Media {#working-with-three-d-assets-dm}
