@@ -86,52 +86,44 @@ You can upload this ZIP later using [Upload a theme](#upload-a-theme) in the sam
 
 When you open a theme in the Theme Editor, you see two main areas:
 
+![Theme Editor](/help/forms/assets/custom-theme-editor.png)
+
 * **Canvas** (right side): Displays a preview of the Adaptive Form linked to the theme. All styling changes reflect here instantly, so you can see the impact of your edits in real time.
 * **Sidebar** (left side): Contains the **Selectors** panel that lists all stylable form components in a tree structure, such as Page, Form, Field, Button, Panel, Image, hCaptcha, and reCaptcha.
 
-![Theme Editor](/help/forms/assets/custom-theme-editor.png)
+### Canvas toolbar {#canvas-toolbar}
 
-### Canvas toolbar and Theme Options {#canvas-toolbar}
-
-The Theme Editor gives you controls in two places: the **toolbar above the canvas** (for view and theme-level actions) and the **bottom of the left sidebar** (for previewing states). Use them in this order as you work.
-
-**1. Toolbar above the canvas**
+![Theme Editor canvas toolbar with Toggle Side Panel, Undo, Redo, Emulator, Edit/Preview, and Theme Options](/help/forms/assets/custom-theme-toolbar-utilities.png)
 
 From left to right, the toolbar provides:
+* **A: Toggle Side Panel**: Show or hide the Selectors sidebar. Use this to maximize the form preview area when you want to focus on the canvas, or show the sidebar again when you need to select or style components.
+* **B: Theme Options** (dropdown): Opens a menu with four options. Click it when you need to change the preview form, view CSS, manage saved styles, or get in-editor help. When you open the Theme Options dropdown, you see:
 
-* **Toggle Side Panel**: Show or hide the Selectors sidebar. Use this to maximize the form preview area when you want to focus on the canvas, or show the sidebar again when you need to select or style components.
-* **Emulator**: Select a device or breakpoint (for example, Desktop, Tablet, or Mobile) to preview the form at that screen size. The form preview resizes to match the selected breakpoint. Any styles you set while a breakpoint is selected apply only to that breakpoint, so you can define responsive styles. For details, see [Styling for different screen sizes](#styling-for-different-screen-sizes).
-* **Undo / Redo**: Revert or reapply your last styling changes. Useful if you try a style and want to step back without losing other edits.
-* **Theme Options** (dropdown): Opens a menu with four options. Click it when you need to change the preview form, view CSS, manage saved styles, or get in-editor help.
+   ![The Theme Options dropdown showing Configure, View Theme CSS, Manage Styles, and Help](/help/forms/assets/custom-theme-configure.png)
 
-   ![Theme Editor canvas toolbar with Toggle Side Panel, Emulator, Undo, Redo, and Theme Options](/help/forms/assets/custom-theme-toolbar-utilities.png)
+   * **[!UICONTROL Configure]**: Switch the form shown in the canvas to a different Adaptive Form. Use this to check how your theme looks on another form without leaving the editor.
+      ![Configure Adaptive Form for theme Preview](/help/forms/assets/custom-theme-switch-af.png)
+   * **[!UICONTROL View Theme CSS]**: Open a dialog with the full compiled CSS for the theme. To see CSS for only the currently selected component, use **[!UICONTROL View CSS]** in the sidebar instead (handy for debugging or copying rules).
+      ![View Final CSS](/help/forms/assets/custom-theme-view-css.png)
+   * **[!UICONTROL Manage Styles]**: Open the dialog to save, name, and reuse text and image styles. Saved styles can be applied to other components; recently used styles may also appear for quick reuse.
+   * **[!UICONTROL Help]**: Start the image-guided tour of the Theme Editor.
+* **C: Undo / Redo**: Revert or reapply your last styling changes. Useful if you try a style and want to step back without losing other edits.
+* **D: Emulator**: Select a device or breakpoint (for example, Desktop, Tablet, or Mobile) to preview the form at that screen size. The form preview resizes to match the selected breakpoint. Any styles you set while a breakpoint is selected apply only to that breakpoint, so you can define responsive styles. For details, see [Styling for different screen sizes](#styling-for-different-screen-sizes).
+* **E: Edit / Preview**: Switch between two modes. **Edit** is the default: you can click components on the canvas to select them and change their styling in the sidebar. **Preview** shows the form as an end user would see it without selection borders, component labels, or the styling sidebar, so you can check how the themed form looks and behaves before publishing.
 
-**2. Theme Options menu (four options)**
-
-When you open the Theme Options dropdown, you see:
-
-![The Theme Options dropdown showing Configure, View Theme CSS, Manage Styles, and Help](/help/forms/assets/custom-theme-configure.png)
-
-* **[!UICONTROL Configure]**: Switch the form shown in the canvas to a different Adaptive Form. Use this to check how your theme looks on another form without leaving the editor.
-   ![Configure Adaptive Form for theme Preview](/help/forms/assets/custom-theme-switch-af.png)
-* **[!UICONTROL View Theme CSS]**: Open a dialog with the full compiled CSS for the theme. To see CSS for only the currently selected component, use **[!UICONTROL View CSS]** in the sidebar instead (handy for debugging or copying rules).
-   ![View Final CSS](/help/forms/assets/custom-theme-view-css.png)
-* **[!UICONTROL Manage Styles]**: Open the dialog to save, name, and reuse text and image styles. Saved styles can be applied to other components; recently used styles may also appear for quick reuse.
-* **[!UICONTROL Help]**: Start the image-guided tour of the Theme Editor.
-
-**3. Bottom of the sidebar: Simulate Error and Simulate Success**
+<!--**3. Bottom of the sidebar: Simulate Error and Simulate Success**
 
 When you style components by state (for example, Error or Success), you can preview that look without submitting the form. In AEM Forms as a Cloud Service, **Simulate Error** and **Simulate Success** are available at the **bottom of the left sidebar**. Scroll down in the sidebar if you don’t see them; they appear when you have a component selected and let you toggle the preview to match the Error or Success state.
 
 * **Simulate Error**: Show the form as if a field failed validation, so you can see your **[!UICONTROL Error]** state styling.
 * **Simulate Success**: Show the form as if validation passed, so you can see your **[!UICONTROL Success]** state styling.
 
-Toggle these on or off as you adjust styles for each state. For more on styling by state, see [Style by component state](#style-by-state).
+Toggle these on or off as you adjust styles for each state. For more on styling by state, see [Style by component state](#style-by-state).-->
 
 ### Style a Component
 
 You can select a component to style in two ways:
-* **From the Canvas**: Click directly on a component in the form preview (for example, a text field, button, or drop-down). The selected element is highlighted with a border, and a component label (for example, "Text Input Widget") appears above it. The styling options for that component appear in the sidebar.
+* **From the Canvas**: Click directly on a component in the form (for example, a text field, button, or drop-down). The selected element is highlighted with a border, and a component label (for example, "Text Input Widget") appears above it. The styling options for that component appear in the sidebar.
 
    ![Edit theme from canvas](/help/forms/assets/custom-theme-field-level.png)
 
@@ -157,7 +149,7 @@ To apply a style:
 
    ![Applying style](/help/forms/assets/custom-theme-applying-style.png)
 
-#### Style by component state {#style-by-state}
+<!--#### Style by component state {#style-by-state}
 
 Components can have different visual states (for example, default, focus, hover, disabled, error, success). You can style each state separately so the form looks correct during user interaction and validation.
 
@@ -168,20 +160,7 @@ Components can have different visual states (for example, default, focus, hover,
 
    ![State dropdown in sidebar for styling Default, Focus, Error, Success, and other states](/help/forms/assets/custom-theme-state-dropdown.png)
 
-The styles you define apply only when the component is in the selected state. For example, if you set a red border and red background for the **[!UICONTROL Error]** state, the field shows that styling when validation fails. If your environment supports it, use **Simulate Error** or **Simulate Success** at the bottom of the sidebar to preview how the component looks in those states without submitting the form.
-
-#### Styling for different screen sizes {#styling-for-different-screen-sizes}
-
-You can define different styles for different device breakpoints (for example, desktop, tablet, mobile) so your theme is responsive.
-
-1. In the canvas toolbar, use the device/emulator icons or the breakpoint selector to choose a breakpoint (for example, Desktop, Tablet, or Mobile).
-1. With that breakpoint selected, use the sidebar to set or adjust styles. The styles apply only for the selected breakpoint.
-1. Switch to another breakpoint and define styles for it as needed.
-1. Click **[!UICONTROL OK]** and save the theme when finished.
-
-   ![Device breakpoint selector and emulator in Theme Editor](/help/forms/assets/custom-theme-breakpoints.png)
-
-The same theme can therefore have different spacing, font sizes, or layout-related styles per breakpoint, matching the [AEM 6.5 Theme Editor behavior](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) for responsive styling.
+The styles you define apply only when the component is in the selected state. For example, if you set a red border and red background for the **[!UICONTROL Error]** state, the field shows that styling when validation fails. If your environment supports it, use **Simulate Error** or **Simulate Success** at the bottom of the sidebar to preview how the component looks in those states without submitting the form.-->
 
 ### Form-level styling {#form-level-styling}
 
@@ -215,6 +194,19 @@ The Textbox widget now displays a green background with purple text, while all o
 >[!NOTE]
 >
 > **Component-level styling always takes priority over form-level styling.** When a style is defined at both levels, the more specific component-level selector overrides the broader form-level selector. This follows standard [CSS specificity rules](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity). For example, if you set a blue background on all Fields (form-level) and a green background on the textbox widget (component-level), the textbox displays a green background.
+
+## Styling for different screen sizes {#styling-for-different-screen-sizes}
+
+You can define different styles for different device sizes so your theme is responsive. The Theme Editor toolbar shows **device options** (for example, iPhone 5, iPad, Desktop, Tablet, Smaller Screen) to preview and style the form at that screen size.
+
+1. In the canvas toolbar, use the **device emulator**: click one of the device labels (for example, **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]**, **[!UICONTROL iPad]**, **[!UICONTROL Smaller Screen]**). A ruler above the form shows the pixel width for the selected device.
+1. With that device selected, use the sidebar to set or adjust styles. The styles apply only for the selected device view.
+1. Switch to another device and define styles for it as needed.
+1. Click **[!UICONTROL OK]** and save the theme when finished.
+
+   ![Device emulator in Theme Editor - ruler and device options (Desktop, Tablet, iPad, Smaller Screen)](/help/forms/assets/custom-theme-emulator.png)
+
+The same theme can therefore have different spacing, font sizes, or layout-related styles per device, matching the [AEM 6.5 Theme Editor behavior](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) for responsive styling.
 
 ## Use advanced CSS overrides {#use-advanced-css-overrides}
 
