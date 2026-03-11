@@ -25,12 +25,12 @@ During the deprecation time window, Adobe will remind customers of the actions t
 
 >[!IMPORTANT]
 >
->Several [deprecated APIs](#aem-apis) are targeting removal on **February 26, 2026**. Please review these key dates and impacts:
+>Several [deprecated APIs](#aem-apis) will be removed on **May 4, 2026**. Please review these key dates and impacts:
 >
->* **Starting January 26, 2026**: Actions Center notification emails are sent **weekly per environment** as a reminder to remove usage of these APIs.
->* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed.
->* **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
->* **April 30, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
+>* **Starting January 26, 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs.
+>* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
+>* **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
+>* **May 4, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
 >
 >To prevent deployment blocks, remove API usage before March 30, 2026.
 
@@ -80,15 +80,15 @@ This section lists functionality that has been removed.
 The APIs in the table below (click to expand to see it) have been announced as deprecated, but have not yet been removed.  Usage of these APIs must cease before the target removal date or you risk issues related to performance, availability, and security. Some APIs reference the API Removal Guidance section below.
 
 >[!IMPORTANT]
-> Several APIs are scheduled for removal on **February 26, 2026**. Please review these key dates and impacts:
 >
-> * **Starting January 26, 2026**: Actions Center notification emails are sent **weekly per environment** as a reminder to remove usage of these APIs.
-> * **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed.
-> * **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
-> * **May 4, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
+>Several [deprecated APIs](#aem-apis) will be removed on **May 4, 2026**. Please review these key dates and impacts:
 >
-> To prevent deployment blocks, remove API usage before March 30, 2026.
-
+>* **Starting January 26, 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs.
+>* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
+>* **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
+>* **May 4, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
+>
+>To prevent deployment blocks, remove API usage before March 30, 2026.
 
 <details>
   <summary>Expand to see the list of deprecated APIs.</summary>
@@ -192,90 +192,90 @@ The APIs in the table below (click to expand to see it) have been announced as d
     <td>org.apache.jackrabbit.oak.plugins.blob<br>org.apache.jackrabbit.oak.plugins.blob.datastore</td>
     <td>This API is internal use only.</td>
     <td>9/23/2024</td>
-    <td>TBD</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>Usage of this API is not supported in AEM as a Cloud Service.</td>
     <td>10/31/2022</td>
-    <td>TBD</td>
-  </tr>
-  <tr>
-    <td>org.apache.sling.runmode</td>
-    <td></td>
-    <td>2015</td>
-    <td>TBD</td>
-  </tr>
-  <tr>
-    <td>org.json</td>
-    <td>The Apache Johnzon implementation of <a href="https://johnzon.apache.org/index.html">javax.json</a> is recommended and should be used. </td>
-    <td>4/30/2021</td>
-    <td>TBD</td>
-  </tr>
-  <tr>
-<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 is in maintenance mode. Commons Lang 3 should be used instead. <a href="#apache.commons">See removal notes below.</a></td>
-    <td>4/30/2021</td>
-    <td>TBD</td>
-  </tr>
-  <tr>
-    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 is in maintenance mode. Commons Collections 4 should be used instead. <a href="#apache.commons">See removal notes below.</a></td>
-    <td>4/30/2021</td>
-    <td>TBD</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
     <td>This API is deprecated. Use Apache Sling's Builders instead.</td>
     <td>10/31/2022</td>
-    <td>TBD</td>
-  </tr>
-  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
-    <td>AEM as a Cloud Service does not support this API.</td>
-    <td>5/15/2023</td>
-    <td>TBD</td>
-  </tr>
-  <tr>
-    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
-    <td>Use org.apache.sling.xss instead.</td>
-    <td>12/12/2023</td>
-    <td>TBD</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.adobe.granite.xss</td>
     <td>Use org.apache.sling.xss instead.</td>
     <td>12/12/2023</td>
-    <td>TBD</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars<br>com.github.jknack.handlebars.cache<br>com.github.jknack.handlebars.context<br>com.github.jknack.handlebars.helper<br>com.github.jknack.handlebars.io</td>
     <td>This API is deprecated.</td>
     <td>07/10/2024</td>
-    <td>TBD</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.day.cq.mailer.commons</td>
     <td>This API is deprecated as it depends on commons-lang (which is deprecated since 2021).</td>
     <td>11/30/2025</td>
-    <td>TBD</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.adobe.granite.httpcache.api</td>
     <td>This API is not supported anymore.</td>
     <td>01/01/2026</td>
-    <td>TBD</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.webdav.client.methods</td>
     <td>Usage of this API is not supported in AEM as a Cloud Service.</td>
     <td>2/13/2026</td>
-    <td>TBD</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
+    <td>Use org.apache.sling.xss instead.</td>
+    <td>12/12/2023</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
+    <td>Commons Lang 2 is in maintenance mode. Commons Lang 3 should be used instead. <a href="#apache.commons">See removal notes below.</a></td>
+    <td>4/30/2021</td>
+    <td>3/31/2027 (Tentative)</td>
+  </tr>
+  <tr>
+    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
+    <td>Commons Collections 3 is in maintenance mode. Commons Collections 4 should be used instead. <a href="#apache.commons">See removal notes below.</a></td>
+    <td>4/30/2021</td>
+    <td>3/31/2027 (Tentative)</td>
+  </tr>
+  <tr>
+    <td>org.json</td>
+    <td>The Apache Johnzon implementation of <a href="https://johnzon.apache.org/index.html">javax.json</a> is recommended and should be used. </td>
+    <td>4/30/2021</td>
+    <td>3/31/2027 (Tentative)</td>
+  </tr>
+  <tr>
+    <td>org.apache.sling.runmode</td>
+    <td></td>
+    <td>2015</td>
+    <td>12/31/2027 (Tentative)</td>
+  </tr>
+  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
+    <td>AEM as a Cloud Service does not support this API.</td>
+    <td>5/15/2023</td>
+    <td>12/31/2027 (Tentative)</td>
   </tr>
   <tr>
     <td>org.osgi.service.http</td>
     <td>The OSGi Service HTTP API is deprecated, please use the OSGi Servlet Whiteboard instead.</td>
     <td>5/1/2024</td>
-    <td>TBD</td>
+    <td>12/31/2027 (Tentative)</td>
   </tr>
   </tbody>
 </table>
@@ -377,6 +377,8 @@ After updating your code, verify that no deprecated API usage remains in Cloud M
 ### General Guidelines
 
 If you use a 3rd party library that currently requires Deprecated API, try updating to a newer version of that 3rd party library.
+
+If you decide to deploy your own version of the Deprecated API, e.g. your own version of Guava, make sure that all your bundles using this API will be wired to your version. If you decide to deploy the same major version as currently included in Cloud Service, no further action is needed. However, if you follow the recommendations and deploy the latest version then you need to adjust your Maven project, include that library as a new dependency before the `aem-sdk-api`. This way your code will be wired to the new version. Once you have made the changes, verify with the [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) that the usage of the Deprecated API is not flagged anymore.
 
 If you are using ACS AEM Commons, use at least version 6.11.0 (latest version is recommended) and make sure that you [include the version for Cloud Service](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) by specifying the classifier `cloud` for the content package.
 

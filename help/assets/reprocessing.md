@@ -2,6 +2,7 @@
 title: Reprocessing digital assets
 description: Learn about various methods of reprocessing digital assets
 contentOwner: KK
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
 feature: Asset Processing
 role: User, Leader, Developer

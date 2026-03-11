@@ -4,6 +4,7 @@ description: Learn how to create Dynamic Media Image Profiles that contain setti
 contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions,Best Practices
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 ---
 # Dynamic Media Image Profiles {#image-profiles}
