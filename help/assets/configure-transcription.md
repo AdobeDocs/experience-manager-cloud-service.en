@@ -8,6 +8,7 @@ contentOwner: Vishabh Gupta
 topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
 ---
 # Configure transcription in [!DNL Experience Manager Assets] {#configure-transcription-service}

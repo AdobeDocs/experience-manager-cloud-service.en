@@ -3,6 +3,7 @@ title: Add your digital assets to [!DNL Adobe Experience Manager].
 description: Add your digital assets to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 ---
 # Add digital assets to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
@@ -121,8 +122,13 @@ To retain the duplicate asset in [!DNL Assets], click **[!UICONTROL Keep]**. To 
 
 To suit specific file-naming conventions for your organization, the [!UICONTROL Upload Assets] dialog lets you specify long names for the files that you upload. The following (space-separated list of) characters are not supported:
 
-* Invalid characters for asset name: `* / : [ \\ ] | # % { } ? &`
+* Invalid characters for asset name: `* / : [ \\ ] | # % { } ? &` or `;=` (a semicolon followed by an equals sign)
 * Invalid characters for asset folder name: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
+Examples of invalid filenames:
+
+* `JPG_JD_small file ~!)$@;(-_=+^',..jpg`
+* `JPG_JD_small file ~!)$@;=(-_+^',..jpg`
 
 ## Bulk upload assets {#bulk-upload}
 

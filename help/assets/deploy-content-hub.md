@@ -2,6 +2,7 @@
 title: Deploy [!DNL Content Hub]
 description: Learn how to deploy and activate Content Hub and provide access to users with different types of privileges (upload assets, Adobe Express users) and how to provide administrator privileges to users.
 role: Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
 ---
 # Deploy Content Hub {#deploy-content-hub}
@@ -14,7 +15,7 @@ This article provides an end-to-end workflow to provide Content Hub access to us
 
 See this video to learn how to enable Content Hub for Experience Manager Assets:
 
->[!VIDEO](https://video.tv.adobe.com/v/3469851)
+>[!VIDEO](https://video.tv.adobe.com/v/3472918/?learn=on){transcript=true}
 
 The variations of privileges on Content Hub include:
 
@@ -27,6 +28,10 @@ The variations of privileges on Content Hub include:
 * [Content Hub users with rights to remix assets to new variations](#onboard-content-hub-users-remix-assets): [Adobe Express Integration](/help/assets/edit-images-content-hub.md) (if you have Adobe Express entitlements) in addition to accessing brand approved assets on the Content Hub portal.
 
 * [Experience Manager Assets users](#experience-manager-assets-users): Ability to approve assets on Experience Manager Assets as a Cloud Service to make those assets available on Content Hub.
+
+>[!NOTE]
+>
+>You can access and use Content Hub with up to 250 Content Hub Limited users for Assets Ultimate and 50 Content Hub users for Assets Prime. Contact your Adobe representative if you have additional questions. 
 
 The following table summarizes the available Content Hub user types, the privileges they have, and the product profiles that are required to get those privileges:
 
@@ -77,11 +82,6 @@ To enable Content Hub for Experience Manager Assets:
 1. Click **[!UICONTROL Update]**.
 
 Content Hub is now enabled for Experience Manager Assets as a Cloud Service. After enabling Content Hub on a Production environment, you cannot disable it in a self-service manner. 
-
->[!NOTE]
->
->You can access and use Content Hub with up to 250 Content Hub Limited users for Assets Ultimate and 50 Content Hub users for Assets Prime. Contact your Adobe representative if you have additional questions. 
-
 
 If you are new to Experience Manager Assets, click **[!UICONTROL Add Program]** and then provide program details (Program Name, set up for Production) and click **[!UICONTROL Continue]**. You can then select **[!UICONTROL Assets]** and **[!UICONTROL Content Hub]** in the **[!UICONTROL Solutions & Add-ons]** tab.
 
@@ -265,3 +265,78 @@ Existing Assets as a Cloud Service customers have 250 Content Hub Limited users 
 1. If the users need to access the Content Hub Configuration User Interface, add them to the `AEM Administrators` product profile. For more information, see [Onboard Content Hub administrator](#onboard-content-hub-administrator).
 
 If the users do not get appropriate privileges even after adding them to the relevant product profiles, contact your Adobe representative.
+
+## Frequently asked questions {#faqs-deploy-content-hub}
+
+### How do users get access to AEM Assets Content Hub and what privileges can be assigned?
+
+Users can be added to AEM Assets Content Hub via the Adobe Admin Console by assigning them to the relevant product profile for Content Hub.
+
+The following privileges are available to the users:
+
+* Content Hub users can access brand approved assets on the Content Hub portal.
+
+* Content Hub administrators have access to the Configuration User Interface on Content Hub in addition to accessing brand-approved assets, uploading assets to Content Hub, and Adobe Express integration to edit images (if you have Adobe Express entitlements). 
+
+* Content Hub users with rights to add assets have ability to upload assets to Content Hub in addition to accessing brand approved assets on the Content Hub portal. 
+
+* Content Hub users with rights to remix assets have access to Adobe Express (if you have Adobe Express entitlements) in addition to accessing brand approved assets on the Content Hub portal.
+
+### What are the different product profiles available for different types of users on AEM Assets Content Hub?
+
+The product profiles are available for different types of users on AEM Assets Content Hub:
+
+* Content Hub users: AEM Assets Limited Users
+
+* Content Hub administrators: AEM Assets Limited Users + AEM Administrators
+
+* Content Hub users with rights to add assets: AEM Assets Limited Users + AEM Users
+
+* Content Hub users with rights to remix assets: AEM Assets Limited Users + AEM Users
+
+### How can administrators enable AEM Assets Content Hub for their organization?
+
+To enable AEM Assets Content Hub for their organization, Administrators must log into Cloud Manager, select (or create) their program, enable Assets and Content Hub under the Solutions and Add-ons tab, and update the program. This creates a Content Hub instance in the Adobe Admin Console where user access can be managed.
+
+### How many Content Hub Limited users are included with AEM Assets? {#content-hub-limited-users-with-aem-assets}
+
+[Assets Ultimate](/help/assets/assets-ultimate-overview.md) and Assets as a Cloud Service each include 250 Content Hub Limited users, while [Assets Prime](/help/assets/assets-prime.md) includes 50 Content Hub Limited users.
+
+### How many Content Hub credits are available with my AEM Assets license?
+
+The number of available Content Hub credits depends on your AEM Assets license:
+
+* Assets Ultimate includes three Content Hub credits.
+
+* Assets Prime includes one Content Hub credit.
+
+* Existing Assets as a Cloud Service customers receive one Content Hub credit.
+
+### How are AEM Assets Content Hub credits used?
+
+One Content Hub credit is consumed for each environment where Content Hub is enabled. For example, enabling Content Hub on Production, Development, and Stage environments requires three credits.
+
+### Can I enable Content Hub on lower environments?
+
+Yes. You can enable AEM Assets Content Hub on lower environments such as Development or Stage, provided you have available Content Hub credits. Each lower environment enabled consumes one credit.
+
+### How can I have the rights to access approved assets on AEM Assets Content Hub?
+
+AEM Assets Content Hub users can access brand approved assets on the Content Hub portal. You must be added to AEM Limited Users product profile to be a Content Hub user.
+
+### How can I have the rights to upload assets on AEM Assets Content Hub?
+
+AEM Assets Content Hub users with rights to add assets have ability to upload assets to Content Hub in addition to accessing brand approved assets on the Content Hub portal. You must be added to AEM Limited Users and AEM Users product profiles to be a Content Hub user with rights to add assets.
+
+### How can I have the rights to access the Configuration User Interface on AEM Assets Content Hub?
+
+AEM Assets Content Hub administrators have access to the Configuration User Interface on Content Hub in addition to accessing brand-approved assets, uploading assets to Content Hub, and Adobe Express integration to edit images (if you have Adobe Express entitlements). You must be added to AEM Limited Users and AEM Administrators product profiles to be a Content Hub administrator.
+
+### How can I have the rights to edit images using Adobe Express on AEM Assets Content Hub?
+
+AEM Assets Content Hub users with rights to remix assets have access to Adobe Express (if you have Adobe Express entitlements) in addition to accessing brand approved assets on the Content Hub portal. You must be added to AEM Limited Users and AEM Users product profiles to be a Content Hub user with rights to remix assets.
+
+
+
+
+

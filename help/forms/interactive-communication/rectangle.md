@@ -1,20 +1,16 @@
 ---
-title: Rectangle Component in Interactive Communication Editor 
+title: Rectangle Component in Interactive Communication Editor
 description: Rectangle Component in Interactive Communication Editor in AEM Forms allows authors to add shaped graphical elements that serve as layout dividers, visual accents, or content containers.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+exl-id: d2af7706-2b2a-4a40-a4a4-375b5f2b08fb
 ---
-
 # Rectangle Component in Interactive Communication Editor 
 
 >[!NOTE]
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
-
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
 
 ## 1. Introduction 
 
@@ -105,6 +101,4 @@ Rectangles can be combined with other layout elements like subforms or container
 
 - Hide rectangles if they are only needed for design purposes during editing but not required in the final output. 
 
-The Rectangle component is a non-interactive yet powerful tool in the IC Editor. When styled and positioned effectively, it enhances layout precision, visual flow, and user experience without adding complexity to data binding or interactivity. 
-
- 
+The Rectangle component is a non-interactive yet powerful tool in the IC Editor. When styled and positioned effectively, it enhances layout precision, visual flow, and user experience without adding complexity to data binding or interactivity.

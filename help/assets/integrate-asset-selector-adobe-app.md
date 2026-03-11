@@ -2,6 +2,7 @@
 title: Integrate Asset Selector with [!DNL Adobe] application
 description: Integrate Asset selector with various Adobe, non-Adobe, and third party applications.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
 ---
 # Integrate Asset Selector with Adobe application {#integrate-asset-selector-with-adobe-app}
