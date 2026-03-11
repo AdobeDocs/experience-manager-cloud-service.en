@@ -10,7 +10,7 @@ exl-id:
 
 The New Video Viewer for Dynamic Media provides a modernized video playback experience in Adobe Experience Manager (AEM). It delivers a consistent and extensible viewing experience across authoring, preview, and Sites environments, while continuing to work with existing Dynamic Media workflows.
 
-Existing video viewers in Dynamic Media support core playback requirements but provide limited extensibility and event-level integration for modern analytics and integration scenarios.
+Existing video viewers in Dynamic Media support core playback requirements but provide limited extensibility and event-level integration for modern analytics and integration scenarios
 
 The New Video Viewer addresses these limitations by:
 
