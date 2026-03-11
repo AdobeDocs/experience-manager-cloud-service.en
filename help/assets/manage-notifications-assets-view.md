@@ -1,6 +1,7 @@
 ---
 title: Manage notifications
 description: Monitor the operations performed on the assets or folders available in the repository using the Assets view notifications.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 1fe6a845-37d5-43c2-bb96-c5b149c238ab
 feature: Assets Essentials
 role: User, Leader

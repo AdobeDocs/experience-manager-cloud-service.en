@@ -3,6 +3,7 @@ title: Cascading metadata
 description: This article describes how to define cascading metadata for assets in assets view.
 feature: Metadata
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
 ---
 # Cascading Metadata Assets View{#cascading-metadata-assets-view}

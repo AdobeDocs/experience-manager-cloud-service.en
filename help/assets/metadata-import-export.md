@@ -4,6 +4,7 @@ description: This article describes how to import and export metadata in bulk.
 contentOwner: AG
 feature: Metadata
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
 ---
 # Import and export asset metadata in bulk {#import-and-export-asset-metadata-in-bulk}

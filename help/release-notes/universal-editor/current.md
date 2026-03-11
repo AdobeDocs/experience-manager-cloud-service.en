@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.02.26 Release Notes
-description: These are the release notes for the 2026.02.26 release of the Universal Editor.
+title: Universal Editor 2026.03.05 Release Notes
+description: These are the release notes for the 2026.03.05 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.02.26 Release Notes {#release-notes}
+# Universal Editor 2026.03.05 Release Notes {#release-notes}
 
-These are the release notes for the 26 February 2026 release of the Universal Editor.
+These are the release notes for the 5 March 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,9 +20,8 @@ These are the release notes for the 26 February 2026 release of the Universal Ed
 
 ## What's New {#what-is-new}
 
-* Descriptions were added to all schema fields to help developers generate model/filter/component definition files.
-* Multi-field updates to Content Fragments are now supported for in-context edits.
-
+* [The component picker](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) has a new design.
+* [A color picker](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) for the RTE is now available.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -32,7 +31,5 @@ If you are interested in testing the upcoming features listed below and sharing 
 
 ## Other Improvements {#other-improvements}
 
-* Editor no longer defaults content to `{}` before content arrives, preventing data loss in certain situations.
-* Persistence of data when field is in focus was made more robust.
-* Changes are no longer lost in certain situations when editing in the left panel and then selecting another item in the editor window.
-* A persistence problem with RTE fields for Content Fragments when using the OpenAPI endpoints was fixed.
+* Alignment, text direction, and indentation options are now [enabled by default in the RTE](/help/implementing/universal-editor/configure-rte.md) provided your backend supports them.
+* Tabs are now rendered when using a Content Fragment with Open API and UI schema.

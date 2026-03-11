@@ -2,6 +2,7 @@
 title: Integrate Asset Selector with non-Adobe or third party application
 description: Integrate Asset selector with various Adobe, non-Adobe, and third party applications.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
 ---
 # Integration with a non-Adobe application {#integrate-asset-selector-non-adobe-app}
