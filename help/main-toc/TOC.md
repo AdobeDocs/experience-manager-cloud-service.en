@@ -876,6 +876,7 @@ user-guide-title: AEM as a Cloud Service
         + [Set layout of an Adaptive Form based on Core Components](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
         + [Create an Adaptive Form fragment](/help/forms/adaptive-form-fragments-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
+        + [Customizing Adaptive Form themes using the Theme Editor](/help/forms/customizing-themes-using-theme-editor.md)
         + [Create an Adaptive Form template based on Core Components](/help/forms/template-editor-core-components.md)
         + [Create an Adaptive Form (Core Components) based on XFA Form templates](/help/forms/create-adaptive-form-using-xfa-templates.md)
         + [Generate Submission PDF (formerly Document of Record) for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
