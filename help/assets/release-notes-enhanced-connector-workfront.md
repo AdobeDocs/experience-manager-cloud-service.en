@@ -203,7 +203,9 @@ The latest version of the [!DNL Workfront for Experience Manager enhanced connec
         >
         >If you have already deleted the wrong event subscriptions before executing the steps mentioned in this procedure, you can skip the last step of this procedure.
 
+
 ### October 2022 release {#october-2022-release}
+
 
 [!DNL Workfront for Experience Manager enhanced connector] version 1.9.4, released on October 07, includes the following updates:
 
