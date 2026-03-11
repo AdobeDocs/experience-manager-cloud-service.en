@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.02.19 Release Notes
-description: These are the release notes for the 2026.02.19 release of the Universal Editor.
+title: Universal Editor 2026.03.05 Release Notes
+description: These are the release notes for the 2026.03.05 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.02.19 Release Notes {#release-notes}
+# Universal Editor 2026.03.05 Release Notes {#release-notes}
 
-These are the release notes for the 19 February 2026 release of the Universal Editor.
+These are the release notes for the 5 March 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,14 +20,8 @@ These are the release notes for the 19 February 2026 release of the Universal Ed
 
 ## What's New {#what-is-new}
 
-* Improvements have been made to the RTE.
-  * [Hiding toolbar items in the in context RTE](/help/implementing/universal-editor/configure-rte.md#common-action-options) is now supported.
-  * [Wrapping text inside tables with paragraphs](/help/implementing/universal-editor/configure-rte.md#table-actions) is now supported.
-  * [Unsupported HTML tags](/help/implementing/universal-editor/configure-rte.md#unsupported-html) tags can now now be preserved by the RTE.
-  * RTE logic is now served from a separate file.
-  * [Tables can now be created](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) as well edited using the RTE.
-* If no label is set, the component title from the component definition is now used.
-* `setEditorMode` is now available via extensions.
+* [The component picker](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) has a new design.
+* [A color picker](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) for the RTE is now available.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -37,7 +31,5 @@ If you are interested in testing the upcoming features listed below and sharing 
 
 ## Other Improvements {#other-improvements}
 
-* RTE endpoints are now served for the in-place editor.
-* Editing nested fields no longer results in overwriting peer entries from those structures.
-* Mandatory RTE fields can no longer be saved as empty.
-* In-place formatting is no longer improperly applied when adding links after formatting.
+* Alignment, text direction, and indentation options are now [enabled by default in the RTE](/help/implementing/universal-editor/configure-rte.md) provided your backend supports them.
+* Tabs are now rendered when using a Content Fragment with Open API and UI schema.

@@ -2,6 +2,7 @@
 title: Dynamic Media with OpenAPI capabilities frequently asked questions
 description: Dynamic Media with OpenAPI capabilities frequently asked questions
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
 ---
 # Dynamic Media with OpenAPI capabilities frequently asked questions {#new-dynaminc-media-apis-frequently-asked-questions}

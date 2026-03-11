@@ -4,6 +4,7 @@ description: Learn how to manage asset expiration states and information for lic
 contentOwner: AG
 feature: Asset Management,DRM
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
 ---
 # Digital Rights Management for digital assets {#digital-rights-management-in-assets}

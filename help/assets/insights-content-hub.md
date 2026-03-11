@@ -2,6 +2,7 @@
 title: View assets insights in Content Hub
 description: Learn how to view assets insights in [!DNL Content Hub]
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
 ---
 # Assets Insights in [!DNL Content Hub] {#assets-insights}
@@ -44,3 +45,25 @@ You can also view:
 * **[!UICONTROL Assets by Campaigns]**: Asset count and respective percentage based on campaigns.
 * **[!UICONTROL Assets by Channels]**: Asset count and respective percentage based on channels used.
 * **[!UICONTROL Assets by Regions]**: Asset count and respective percentage based on regions of asset usage.
+
+## Frequently asked questions {#faqs-assets-insights-content-hub}
+
+### What do we need Assets Insights in AEM Assets Content Hub?
+
+Assets Insights in AEM Assets Content Hub provide valuable data on asset usage statistics across campaigns, channels, and regions, helping marketing stakeholders understand asset performance and popularity for improved user experience.
+
+### Who can access the features described in Assets Insights within AEM Assets Content Hub?
+
+AEM Assets Content Hub users are able to perform the actions and access the features mentioned in the Assets Insights section.
+
+### What asset insights are available in the Insights tab of AEM Assets Content Hub?
+
+You can view the number of assets in the repository, number of collections, Assets uploads by year, month, or day, active users by day or month, and asset classification based on file formats within AEM Assets Content Hub.
+
+### How can I view statistics for uploaded assets in AEM Assets Content Hub?
+
+You can view statistics for uploaded assets and collections in AEM Assets Content Hub by navigating to the Insights tab, where you can track the upload history by year, month, or day.
+
+### Which metrics can I analyze regarding user activity in AEM Assets Content Hub?
+
+You can analyze the number of active users by day or by month, which is visually represented using a line graph within AEM Assets Content Hub.

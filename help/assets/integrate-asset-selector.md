@@ -2,6 +2,7 @@
 title: Integrate Asset Selector using Vanilla JS
 description: Integrate Asset selector with various Adobe, non-Adobe, and third party applications.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
 ---
 # Integrate Asset Selector using Vanilla JS {#integration-using-vanilla-js}

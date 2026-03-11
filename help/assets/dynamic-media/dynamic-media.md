@@ -4,6 +4,7 @@ description: Learn about what Dynamic Media is and you can use Dynamic Media to 
 contentOwner: Rick Brough
 feature: Dynamic Media,Asset Management
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
 ---
 # Work with Dynamic Media {#working-with-dynamic-media}

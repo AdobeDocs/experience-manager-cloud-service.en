@@ -2,6 +2,7 @@
 title: Search best practices for [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Best practices to search, find, and retrieve assets' metadata within your application.
 contentOwner: KK
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
