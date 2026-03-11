@@ -204,7 +204,7 @@ To request access to the beta, email [aem-devagent@adobe.com](mailto:aem-devagen
 >Available as a ilability feature on September 25th.
 >Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to get it activated on your programs.
 >
-=======
+
 #### IDE AI tooling for AEM Java and Dispatcher Development (Beta Program) {#ai-dev-beta}
 
 Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. Join the beta to:
