@@ -4,6 +4,7 @@ description: This article explores various use cases for the rule editor in an A
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
 ---
 # Rule Editor Enhancements and Use Cases

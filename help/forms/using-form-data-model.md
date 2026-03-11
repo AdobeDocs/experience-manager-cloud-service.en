@@ -4,6 +4,7 @@ description: Learn to create Adaptive Forms and Fragments based on a form data m
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
 ---
 # Use Form Data Model (FDM) {#use-form-data-model}

@@ -4,6 +4,7 @@ description: Template Lock in Interactive Communication Editor provides the abil
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 7c7461fe-a5d7-481e-b5f5-27fd5bcde2d0
 ---
 # Template Lock in Interactive Communication Editor

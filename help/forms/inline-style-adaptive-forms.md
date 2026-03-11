@@ -4,6 +4,7 @@ description: Learn to apply custom styles on an Adaptive Form, you can also appl
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
 ---
 # Inline styling of Adaptive Form components {#inline-styling-of-adaptive-form-components}

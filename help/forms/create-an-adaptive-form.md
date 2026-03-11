@@ -7,6 +7,7 @@ role: User, Developer
 level: Beginner
 hide: yes
 hidefromtoc: yes
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
 ---
 # Form builder getting started guide {#creating-an-adaptive-form}
