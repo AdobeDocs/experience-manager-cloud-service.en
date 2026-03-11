@@ -8,6 +8,7 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
 ---
 # Configure Dynamic Media General Settings

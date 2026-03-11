@@ -3,6 +3,7 @@ title: Auto-tag assets with [!DNL Adobe AI] smart service
 description: Tag assets with an artificially intelligent service that applies contextual and descriptive business tags.
 feature: Smart Tags,Tagging
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 ---
 # Smart Tags for AEM Assets {#using-smart-tags}

@@ -1,20 +1,16 @@
 ---
-title: Text Field component in Interactive Communication Editor 
+title: Text Field component in Interactive Communication Editor
 description: Text Field component in Interactive Communication Editor  in AEM Forms to enables authors to display information such as names, addresses, comments, or numeric IDs.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+exl-id: 6bb41cf2-8a9d-499c-979b-b0ee7d092e11
 ---
-
 # Text Field component in Interactive Communication Editor 
 
 >[!NOTE]
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
-
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
 
 ## 1. Introduction 
 
@@ -126,6 +122,4 @@ Authors can place the field in subforms or layout grids for alignment and attach
 
 - Bind directly to the data model whenever possible for simpler maintenance. 
 
-The Text Field component in the IC editor is a versatile building block that streamlines data capture. When configured thoughtfully, with well-chosen typography, clear labels, proper validation, and solid data binding, it delivers a seamless, user-friendly experience and reliable data for downstream processing. 
-
- 
+The Text Field component in the IC editor is a versatile building block that streamlines data capture. When configured thoughtfully, with well-chosen typography, clear labels, proper validation, and solid data binding, it delivers a seamless, user-friendly experience and reliable data for downstream processing.

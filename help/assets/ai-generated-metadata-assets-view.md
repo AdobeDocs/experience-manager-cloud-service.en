@@ -1,8 +1,9 @@
 ---
 title: Enhance content discovery with AI-generated metadata
 description: Learn how to enhance content discovery with AI-generated metadata
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
+exl-id: 51d8500e-8a19-40b3-a222-4c7e27eeb667
 ---
-
 # Enhance content discovery with AI-generated metadata {#ai-smart-tags}
 
 Instead of relying on manual input, AI automatically assigns descriptive tags to digital assets. These AI-generated tags enhance metadata quality, making the assets easier to search, categorize, and recommend. This approach not only improves efficiency by eliminating manual tagging but also ensures consistency and scalability across large volumes of digital content. For example, if the asset is an image, AI can identify objects, scenes, emotions, or even brand logos within it and generate relevant tags such as "sunset," "beach," "vacation," or "smiling." AI-generated content can enhance the search for assets by leveraging both semantic and lexical search techniques. See more [Search Assets](search-assets-view.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->

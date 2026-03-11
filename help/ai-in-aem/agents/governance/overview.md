@@ -3,6 +3,7 @@ title: Governance Agent Overview
 description: Learn how the AEM Governance Agent safeguards brand integrity and compliance across AEM
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
+exl-id: 2c73c578-6655-43bf-b03a-cb3eb2284d07
 ---
 
 # Governance Agent Overview {#governance-agent}
@@ -37,6 +38,10 @@ The governance agent can validate content against brand guidelines to ensure con
 * *Check if `https://www.website/homepage` follows brand guidelines*
 * *Show me my brand guidelines*
 
+>[!NOTE]
+>
+>The governance agent also includes an AI-powered brand policy import capability that uses AI to transform customers' existing brand guideline documents into structured, enforceable policy checks that automatically govern, validate, and guide compliant content creation. For more information, see [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md).
+
 ### Permission and Digital Rights Management {#permission-and-digital-rights-management}
 
 #### Permission Management in Content Hub {#permission-management-in-content-hub}
@@ -66,4 +71,3 @@ Using the agent, you can manage your Assets digital rights across your content e
 * *Which assets recently expired?*
 * *Find me assets without an expiry date*
 * *Show me all assets in /content/dam/products that are about to expire in the next 14 days*
-

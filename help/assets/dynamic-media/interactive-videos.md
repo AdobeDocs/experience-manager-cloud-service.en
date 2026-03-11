@@ -4,6 +4,7 @@ description: Learn how to work with interactive video and shoppable video in Dyn
 contentOwner: Rick Brough
 feature: Interactive Videos
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 ---
 # Interactive videos{#interactive-videos}
