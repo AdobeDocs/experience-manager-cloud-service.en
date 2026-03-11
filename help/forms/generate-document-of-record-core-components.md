@@ -2,6 +2,7 @@
 title: Generate a Submission PDF (formerly Document of Record) for Adaptive Forms
 description: Learn to generate a Submission PDF from form submissions for Adaptive Forms Core Components. Create a PDF of the submitted form for archival or reference.
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
 ---

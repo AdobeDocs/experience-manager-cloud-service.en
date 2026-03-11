@@ -4,6 +4,7 @@ description: Learn how users can be displayed a thank you message or redirected 
 feature: Adaptive Forms, Core Components
 role: User
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 27decf88-a2ab-4b52-b6ae-babb1d3abdaa
 ---
 # Configuring redirect page {#configuring-redirect-page}

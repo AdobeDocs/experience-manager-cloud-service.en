@@ -4,6 +4,7 @@ description: Learn how to configure RESTful web services, SOAP-based web service
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 ---
 

@@ -4,6 +4,7 @@ description: Adaptive Forms rule editor allows you to add dynamic behavior and b
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
 ---
 
