@@ -1051,7 +1051,9 @@ user-guide-title: AEM as a Cloud Service
      + [Copy and Paste Interactive Communication](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
    + Associate UI {#associateui} 
      + [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
+     + [Enable and configure Associate UI for Interactive Communications](/help/forms/interactive-communication/enable-configure-associate-ui.md)
      + [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md)
+     + [Submission workflow for Associate UI — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
    + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
 + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)

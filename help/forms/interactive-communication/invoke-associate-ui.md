@@ -510,5 +510,7 @@ When implementing the Associate UI integration, follow these best practices:
 ## See Also
 
 - [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
+- [Enable and configure Associate UI for Interactive Communications](/help/forms/interactive-communication/enable-configure-associate-ui.md)
+- [Submission workflow for Associate UI — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
 - [Interactive Communications on Cloud](/help/forms/early-access-ea-features.md#interactive-communications-on-cloud)
 - [Early Access Features](/help/forms/early-access-ea-features.md)
