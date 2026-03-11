@@ -162,7 +162,7 @@ The New Video Viewer sends playback-related messages to the parent page during v
 
 To handle these events, the parent application must listen for browser message events and validate the message origin before processing the data.
 
-The event payload includes information such as the event type, playback state, current playback time, and additional metadata. These events can be used to support analytics tracking, custom interactions, or integration with external systems.
+The event payload includes information such as the event type, playback state, current playback time, and additional metadata. These events can be used to support analytics tracking, custom interactions, or integration with external systems
 
 Adobe recommends validating the message origin to ensure that events are processed only from trusted Dynamic Media domains.
 
