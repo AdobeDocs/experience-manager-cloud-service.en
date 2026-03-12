@@ -180,9 +180,15 @@ Depending on the needs of your workflow, you may want to edit the Content Fragme
 
    ![Selecting a component to add to a container](assets/ue-add-component.png)
 
-1. Then select the add icon in the properties panel.
+1. You can then either:
 
-   ![Select add icon](assets/add-icon.png)
+   * Select the **Add** icon in the properties panel.
+
+     ![Select add icon](assets/add-icon.png)
+  
+   * Select the **Add** option in the context menu.
+
+     ![Add from context menu](assets/add-from-context-menu.png)
 
 1. The component picker dialog opens. 
    * Use the left column to filter components by category or use the search to filter by name.
@@ -201,21 +207,28 @@ The component is inserted into the container and can be edited in the editor.
 ### Duplicating Components in Containers {#duplicating-components}
 
 1. Select a component in a container using the [content tree](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) or the editor.
-1. Then select the **Duplicate** icon in the properties panel.
 
-   ![Selecting a component to add to a container](assets/ue-duplicate-component.png)
-1. The component is duplicated and inserted below the selected component.
+1. You can then either:
 
-The component is inserted into the container and can be edited in the editor.
+   * Select the **Duplicate** icon in the properties panel.
+
+     ![Selecting a component to add to a container](assets/ue-duplicate-component.png)
+
+   * Select the **Duplicate** option from the context menu.
+
+     ![Duplicate from context menu](assets/duplicate-from-context-menu.png)
+
+The component is duplicated and inserted below the selected component.
 
 ### Deleting Components from Containers {#deleting-components}
 
-1. Select a container component in the [content tree](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) or in the editor.
-1. Select the chevron icon of the container to expand its contents in the content tree.
-1. Then, in the content tree, select a component within the container.
-1. Select the delete icon in the properties panel.
+1. Select a component in a container in the [content tree](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) or in the editor.
+1. You can then either:
+   * Select the **Delete** icon in the properties panel.
 
-   ![Deleting a component](assets/ue-delete-component.png)
+     ![Deleting a component](assets/ue-delete-component.png)
+   * Select the **Delete** option in the context menu.
+     ![Delete from the context menu](assets/delete-from-context-menu.png)
 
 The selected component deleted.
 
@@ -289,21 +302,23 @@ Copy and paste can be on the same browser tab or between browser tabs, provided 
 ![Paste icon](assets/paste.png)
 
 1. Select a component either within the editor or in the content tree.
-1. The **Copy** icon appears in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) Tap or click it.
-1. The **Paste** icon appears in the properties panel.
+1. You can then either:
+   * Click the **Copy** icon in the [properties panel.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
+     ![Copy from panel](assets/copy-from-panel.png)
+   * Select the **Copy** option in the context menu.
+     ![Copy from context menu](assets/copy-from-context-menu.png)
 1. Select the component _after_ which you wish to paste the copied component.
-1. Tap or click Paste.
-1. The copied component is pasted _after_ the selected component.
+1. You can then either:
+   * Tap or click **Paste** in the properties panel.
+     ![Paste from panel](assets/paste-from-panel.png)
+   * Select **Paste** in the context menu.
+     ![Paste from context menu](assets/paste-from-context-menu.png)
+
+The copied component is pasted _after_ the selected component.
 
 >[!TIP]
 >
 >Use the hot key `Command-C` or `Command-V` to copy or paste, respectively.
-
-## Context Options {#context-options}
-
-When editing in place, the editor will offer context-relevant options with a right-click such as duplicating, deleting, or copying components.
-
-![Context options menu](assets/context-options-menu.png)
 
 ## Previewing Content {#previewing-content}
 
