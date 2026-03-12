@@ -181,8 +181,8 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 * **[Replace](#find-and-replace)**
 * **Move**
 * **Rename**
+* **Check Out** and **Check In**
 * **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
-
 
 >[!NOTE]
 >
