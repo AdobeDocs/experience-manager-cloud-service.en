@@ -4,6 +4,7 @@ description: Experience Cloud Setup Automation helps connect Adobe Analytics to 
 keywords: Enable Adobe Analytics for an Adaptive Form using Experience Cloud Setup Automation, Enable Adobe Analytics in Forms, Adobe Analytics in Adaptive Forms, Forms analytics integration, Forms and Adobe Analytics
 feature: Adaptive Forms
 role: Admin, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
 ---
 # Enable Adobe Analytics for an Adaptive Form using Experience Cloud Setup Automation {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
