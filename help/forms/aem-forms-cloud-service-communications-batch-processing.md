@@ -3,6 +3,7 @@ title: Effortless Bulk PDF Creation - Master the Art with Batch Processing – Y
 description: How to create brand-oriented and personalized communications?
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
 ---
 # AEM Forms as a Cloud Service Communications Batch Processing

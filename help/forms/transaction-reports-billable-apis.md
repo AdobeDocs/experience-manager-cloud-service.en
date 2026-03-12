@@ -2,6 +2,7 @@
 title: Transaction Reports Billable APIs
 description: List of all the APIs that are accounted as transactions
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
 role: Admin, Developer, User
 ---

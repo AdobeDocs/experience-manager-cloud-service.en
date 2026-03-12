@@ -1,6 +1,7 @@
 ---
 title: How can we add variables to AEM Workflow steps?
 description: Learn to create a variable, set a value for the variable, and use it in [!DNL AEM Forms] Workflow steps.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
 feature: Adaptive Forms, Workflow
 role: Admin, User

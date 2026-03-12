@@ -4,6 +4,7 @@ description: Form supports scope objects in custom functions which is passed as 
 keywords: scope objects in custom functions, global objects, field objects.
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 248c75a5-6335-41d2-aa0a-28a20a710f88
 ---
 # Scope object in custom functions

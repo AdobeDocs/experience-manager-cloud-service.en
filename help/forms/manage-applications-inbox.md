@@ -9,6 +9,7 @@ feature: Adaptive Forms
 role: User
 hide: yes
 hidefromtoc: yes
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 92130660-9942-426f-ae2f-4f3300f9735c
 ---
 # Manage Forms applications and tasks in AEM Inbox{#manage-forms-applications-and-tasks-in-aem-inbox}

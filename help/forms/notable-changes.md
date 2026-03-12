@@ -1,6 +1,7 @@
 ---
 title: What are the differences between AEM 6.5 Forms and AEM Cloud Services?
-description: Compare AEM 6.5 Forms and AEM Cloud Services and learn the most prominent changes before upgrading or migrating to Cloud Service.  
+description: Compare AEM 6.5 Forms and AEM Cloud Services and learn the most prominent changes before upgrading or migrating to Cloud Service.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."  
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 role: Admin, Developer, User
 feature: Adaptive Forms
