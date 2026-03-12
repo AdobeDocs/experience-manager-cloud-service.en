@@ -181,7 +181,7 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 * **[Replace](#find-and-replace)**
 * **Move**
 * **Rename**
-* **Check Out** and **Check In**
+* **[Check Out and Check In](#check-out-and-check-in)**
 * **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
 
 >[!NOTE]
@@ -475,6 +475,56 @@ Before replacement, validation criteria are checked and you are informed of any 
 >If you select more than 20 Content Fragments, you will see the message **Unable to find and replace**.
 
 ![Confirm Replace](assets/cf-managing-confirm-replace.png)
+
+## Check Out and Check In {#check-out-and-check-in}
+
+AEM lets you:
+
+* [check out](#check-out-a-content-fragment) a Content Fragment, preventing other users from working on the fragment 
+* [check in](#check-in-a-content-fragment) Content Fragments, allowing other users to resume working with the fragment
+
+When you check out a fragment it is locked (`jcr:lock`). A padlock icon in the **Title** column indicates a locked fragment.
+
+You can edit, publish, unpublish, move, or delete a locked fragment. Other users cannot perform any of these actions on the fragment until you check in the fragment; though they can still change the metadata for the locked fragment.
+
+This functionality helps prevent conflicts when multiple users collaborate on editing fragments.
+
+>[!NOTE]
+>
+>To be able to check out/in a Content Fragment, you must have write access.
+
+>[!CAUTION]
+>
+>It is possible to delete a folder that contains a checked out Content Fragment. 
+>
+>Before deleting a folder, ensure that it does not contain any Content Fragments (or other digital assets) that are checked-out by users.
+
+>[!NOTE]
+>
+>As Content Fragments are stored internally as Assets, this functionality is closely related to [Check-in and check-out files in Experience Manager DAM](/help/assets/check-out-and-submit-assets.md).
+
+### Check Out a Content Fragment {#check-out-a-content-fragment}
+
+To check a fragment out:
+
+1. In the **Content Fragments** console navigate to the location of the Content Fragment.
+1. Select the fragment.
+1. Select **Check Out** from the toolbar.
+1. Confirm the **Check Out** action.
+   A padlock icon in the **Title** column indicates that the fragment is locked and can only be edited by you.
+
+### Check In a Content Fragment {#check-in-a-content-fragment}
+
+To check a fragment in:
+
+1. In the **Content Fragments** console navigate to the location of the Content Fragment.
+1. Select the fragment.
+1. Select **Check In** from the toolbar.
+1. Confirm the **Check In** action.
+
+## Forced Check In {#forced-check-in}
+
+In certain circumstances the user who has checked out a Content Fragments is unavailable to check in the fragment. In such situations an administrator can perform a [Forced Check In](/help/assets/check-out-and-submit-assets.md#forced-check-in).
 
 ## Deleting a Fragment {#deleting-a-fragment}
 
