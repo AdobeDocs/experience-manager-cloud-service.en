@@ -4,6 +4,7 @@ description: Enhance form security with Turnstile service effortlessly. Step-by-
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
 ---
 # Integrate Turnstile CAPTCHA with Adaptive Forms

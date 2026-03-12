@@ -4,6 +4,7 @@ description: Learn how to use Marketo Engage schema in Adaptive Forms.
 keywords: Use Marketo Engage data source in Adaptive Forms, How to connect a Marketo instance data source with form? , Connect a form to Marketo.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
 ---
 # Configure Marketo Engage data source for existing Adaptive Forms

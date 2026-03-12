@@ -137,7 +137,14 @@ After a content set is created, you can use it to copy content.
 1. (Optional) If desired, set the following:
 
    * **Include Access Control Lists** - Select if you want to copy the content's access control permissions along with the content.
-   * **Wipe** - Select to delete the existing content at the destination before starting the import, so you can start from a clean slate and avoid conflicts with pre-existing content. If you leave **Wipe** deselected, Cloud Manager imports the new content on top of the existing destination content. A confirmation prompt appears before the wipe begins, and Cloud Manager logs the wipe action and import details for traceability.
+   * **Wipe** - Select to delete the existing content at the destination before starting the import, so you can start from a clean state and avoid conflicts with pre-existing content. If you leave **Wipe** deselected, Cloud Manager imports the new content on top of the existing destination content. A confirmation prompt appears before the wipe begins, and Cloud Manager logs the wipe action and import details for traceability.
+     ![Copying content](assets/content_copy_wipe-destination.png) 
+     * When choosing the **Wipe destination before import** option and clicking **Copy** a popup will appear with a warning where you have the options to:
+       * **Cancel** (In this case the **Copy Content** flow will not start)
+       * **Confirm** (the **Copy Content** flow will start and the content on the destination will be wiped)
+          ![Copying content](assets/content-copy-wipe-destination-warning.png)
+
+     *  If you don't choose **Wipe destination before import** then the **Copy Content** flow will work as before.
 
 1. Click **Copy**.
 
