@@ -20,7 +20,7 @@ These are the release notes for the 12 March 2026 release of the Universal Edito
 
 ## What's New {#what-is-new}
 
-* components can now be added via the contextual menu of containers.
+* Components can now be added via the contextual menu of containers.
 
 ## Early Adoption Features {#early-adopter}
 
