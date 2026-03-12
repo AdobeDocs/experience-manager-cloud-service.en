@@ -5,6 +5,7 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
 ---
 # AEM Forms Integration with Adobe Experience Platform (AEP) {#aem-forms-aep-integration}

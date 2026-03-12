@@ -1,6 +1,7 @@
 ---
 title: What are considerations, known issues, and best practices in AEM Forms?
 description: Considerations known issues and best practices for AEM Forms Communication APIs.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 feature: Adaptive Forms
 role: Admin, Developer, User

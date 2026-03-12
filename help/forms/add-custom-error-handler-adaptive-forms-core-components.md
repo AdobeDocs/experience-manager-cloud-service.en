@@ -5,6 +5,7 @@ keywords: Add a custom error handler, add a default error handler, add a error h
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
 role: User, Developer
 ---
