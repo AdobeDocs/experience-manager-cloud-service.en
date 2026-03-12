@@ -87,6 +87,9 @@ Here you can see that there are three main areas:
 
 The main/right panel (table view) of the console provides a range of information about your Content Fragments. Some items also provide direct links to further actions and/or information:
 
+* **Title**
+  * A padlock icon indicates that the fragment is [checked out](#check-out-and-check-in) and locked by one user
+  * The information (i) icon provides quick access to additional, fragment specific, information in the right panel. 
 * **Name**
   * Provides a link to open the fragment in the editor.
 * **Model**
