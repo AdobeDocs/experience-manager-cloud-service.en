@@ -4,6 +4,7 @@ description: Seamlessly embed Adaptive Forms in an AEM Sites page or a web page 
 feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
 ---
 # Embed an Adaptive Form to an AEM sites page {#embed-an-adaptive-form-to-aem-sites-page}

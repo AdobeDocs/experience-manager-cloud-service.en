@@ -5,6 +5,7 @@ contentOwner: khsingh
 role: Admin, Developer, User
 feature: Adaptive Forms
 topic: Administration
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 871f294d-f251-4966-a021-39df65b613f0
 ---
 # Known issues and limitations {#known-issues-and-limitations}

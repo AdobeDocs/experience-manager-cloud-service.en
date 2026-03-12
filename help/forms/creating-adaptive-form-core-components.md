@@ -5,6 +5,7 @@ keywords: form builder, core components, create forms, form creator, adaptive fo
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
 ---
 # Form builder: Create forms with core components {#creating-an-adaptive-form-core-components}

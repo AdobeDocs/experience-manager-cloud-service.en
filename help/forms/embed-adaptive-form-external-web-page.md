@@ -4,6 +4,7 @@ description: Learn to embed an Adaptive Forms to a website.
 topic-tags: author
 role: Admin, Developer, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 00b8cd79-bf2d-4001-b2d6-1b020c868008
 ---
 # Embed adaptive form in external web page{#embed-adaptive-form-in-external-web-page}

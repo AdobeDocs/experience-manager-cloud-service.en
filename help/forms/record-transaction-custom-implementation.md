@@ -2,6 +2,7 @@
 title: Record a transaction for custom implementations
 description: Use the TransactionRecorder API to record actions which are not accounted as transactions automatically
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: cb584f78-30af-4a58-be99-843352e8249c
 role: Admin, Developer, User
 ---
