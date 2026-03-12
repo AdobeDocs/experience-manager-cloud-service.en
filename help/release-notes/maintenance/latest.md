@@ -27,8 +27,8 @@ The 2026.3.0 feature activation will provide the full feature set for this maint
 * SITES-39767: Support nonce value via request attribute (CSP)
 * SKYOPS-129301: Set APIs jar javadoc compliance level to 17
 * SKYOPS-132151: Update API Deprecation dates
-* GRANITE-64962: Update to Apache Jackrabbit Oak 1.92.0
-* GRANITE-64963: Update to Apache Jackrabbit Filevault 4.2.0
+* GRANITE-64962: Update Apache Jackrabbit Oak to 1.92.0
+* GRANITE-64963: Update Apache Jackrabbit Filevault to 4.2.0
 * GRANITE-64764: Update Apache Commons Text to version 1.15.0
 * SKYOPS-131412: Update Apache Commons Exec to 1.6.0
 * SKYOPS-131432: Update Felix SCR to 2.2.14
