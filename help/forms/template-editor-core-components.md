@@ -3,6 +3,7 @@ title: How to build an Adaptive Form template with Core Components?
 description: Build Adaptive Form templates based on core component to define the basic structure and initial content using the Template Editor.
 feature: Adaptive Forms, Core Components
 Keywords: form builder, build adaptive form template, adaptive form template core components, form template builder, build form template.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
 ---

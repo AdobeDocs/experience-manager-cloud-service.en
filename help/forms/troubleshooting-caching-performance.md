@@ -4,6 +4,7 @@ description: Troubleshoot caching related issues for AEM Forms as a Cloud Servic
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
 ---
 # Caching performance {#caching-performance}

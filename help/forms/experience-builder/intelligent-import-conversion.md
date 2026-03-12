@@ -5,6 +5,7 @@ hide: yes
 index: no
 hidefromtoc: yes
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 7268c4be-1e4a-4d31-aa76-9076d7ee83ce
 ---
 # Intelligent import and conversion

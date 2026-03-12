@@ -3,6 +3,7 @@ title: Current Early Access features of [!DNL Adobe Experience Manager Forms] as
 description: Current Early Access features of [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user, author
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User

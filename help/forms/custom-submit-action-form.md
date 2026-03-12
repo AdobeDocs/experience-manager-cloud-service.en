@@ -4,6 +4,7 @@ description: Learn how to create a custom Submit Action for an Adaptive Forms to
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
 ---
 # Create a custom Submit Action for Adaptive Forms {#writing-custom-submit-action-for-adaptive-forms}
