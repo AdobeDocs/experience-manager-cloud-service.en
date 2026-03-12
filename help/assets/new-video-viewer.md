@@ -158,7 +158,7 @@ The New Video Viewer emits the following events during playback:
 
 ## Handling events in the parent window {#handling-events}
 
-The New Video Viewer sends playback-related messages to the parent page during video interactions. 
+The New Video Viewer sends playback-related messages to the parent page during video interactions.
 
 To handle these events, the parent application must listen for browser message events and validate the message origin before processing the data.
 
