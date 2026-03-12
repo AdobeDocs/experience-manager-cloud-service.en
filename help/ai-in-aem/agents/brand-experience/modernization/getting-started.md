@@ -8,11 +8,11 @@ exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
 
 # Getting Started with the Experience Modernization Agent {#getting-started}
 
-Learn the first steps to quickly become productive with the Experience Modernization Agent using the Experience Modernization Console.
+Learn the first steps to get started using the Experience Modernization Agent and the Experience Modernization Console.
 
 >[!NOTE]
 >
->If you are interested in using the Experience Modernization Console, you can request access to ensure a smooth onboarding experience.
+>If you are interested in using the Experience Modernization Console, you can request access through your account manager to ensure a smooth onboarding experience.
 
 ## Prepare an Edge Delivery GitHub Repository {#prepare-repo}
 
