@@ -4,6 +4,7 @@ description: Discover AEM Forms to produce business-ready forms, create business
 landing-page-description: Understand how to use forms in AEM as a Cloud Service.
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 ---
 

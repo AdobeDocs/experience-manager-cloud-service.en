@@ -4,6 +4,7 @@ description: Image Field Component in Interactive Communication Editor  in AEM F
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 0af73ae2-fe1d-4763-ad4d-2934691cb9e1
 ---
 # Image Field Component in Interactive Communication Editor 

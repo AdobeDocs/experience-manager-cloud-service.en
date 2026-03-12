@@ -3,6 +3,7 @@ title: What are the latest innovations in Adobe Experience Manager Forms as a Cl
 description: Discover the latest capabilities of [!DNL AEM Forms] as a Cloud Service to create, manage, and publish enterprise-class forms and business processes.
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
 ---
 <!-- # Introduction to [!DNL AEM Forms] as a Cloud Service {#overview}
