@@ -8,6 +8,7 @@ feature: Adaptive Forms, Release Information
 hide: yes
 hidefromtoc: yes
 index: no
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
 ---
 # AEM Forms as a Cloud Service {#aem-forms-platform}

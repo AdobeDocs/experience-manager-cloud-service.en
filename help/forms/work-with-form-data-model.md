@@ -4,6 +4,7 @@ description: Add data model objects, services, create data model objects and chi
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
 ---
 # Work with Form Data Model (FDM) {#work-with-form-data-model}
