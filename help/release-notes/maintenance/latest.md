@@ -24,6 +24,17 @@ None.
 
 None.
 
+#### AEM Guides {#guides-24288}
+
+* GUIDES-38412 : When editing a Schematron `(*.sch)` file and using the find and replace feature, the find and replace panel appears partially off-screen at the bottom, preventing access to its input fields and controls.
+* GUIDES-37806: When the same topic is reused across multiple maps with different conditional presets, publishing the latest map to Salesforce overwrites the topic content, resulting in incorrect data being displayed to users of previously published maps.
+* GUIDES-39394: When an image initially managed as a language‑specific asset with a specific version (for example, under `/en/`) is moved out to a global folder with an updated version and baseline export is performed, the new baseline continues to reference outdated language‑specific versions of that image, leading to a failed baseline export.
+* GUIDES-39054: When creating a dynamic baseline, the Editor sometimes becomes unresponsive due to multiple concurrent API requests, causing all the other operations to halt.
+* GUIDES-37781: When assigning a user to a review task, the dropdown lists all users instead of only those associated with the selected projects, resulting in invalid user options.
+* GUIDES-39385: While opening a Report for a map, there is a delay in the loading of the Filters panel.
+
+For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
+
 ### Known Issues {#known-issues-X}
 
 None.
