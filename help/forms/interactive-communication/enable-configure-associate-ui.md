@@ -23,6 +23,7 @@ Before enabling and configuring the Associate UI, ensure you have:
 - **Author access** to the Interactive Communication editor.
 - An **Interactive Communication** created with the required layout and data bindings.
 - **Associate users** added to the **forms-associates** group (required for associates to access the Associate UI).
+- **Authors** added to the **forms-associates** group (required for authors to access the Associate UI).
 
 When you are ready to integrate the Associate UI with your application and invoke it on the Publish instance, you will also need a browser with popup support enabled and the IC published. See [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md) for full integration prerequisites.
 
