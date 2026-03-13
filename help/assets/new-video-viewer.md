@@ -19,7 +19,7 @@ The New Video Viewer addresses these limitations by:
 * Emitting structured playback events for programmatic consumption  
 * Supporting integration with external analytics and external systems  
 
-The viewer is available as an additional option and requires explicit selection where supported. It does not automatically replace existing video viewers
+The viewer is available as an additional option and requires explicit selection where supported. It does not automatically replace existing video viewers.
 
 The New Video Viewer is intended for organizations that require an enhanced and extensible video experience without disrupting existing implementations.
 
