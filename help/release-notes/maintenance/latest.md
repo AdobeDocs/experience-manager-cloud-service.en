@@ -26,7 +26,6 @@ The 2026.3.0 feature activation will provide the full feature set for this maint
 * GRANITE-64748: OIDC: configurable sling.oauth-request-key Cookie expiry
 * SITES-39767: Support nonce value via request attribute (CSP)
 * SKYOPS-129301: Set APIs jar javadoc compliance level to 17
-* SKYOPS-132151: Update API Deprecation dates
 * GRANITE-64962: Update Apache Jackrabbit Oak to 1.92.0
 * GRANITE-64963: Update Apache Jackrabbit Filevault to 4.2.0
 * GRANITE-64764: Update Apache Commons Text to version 1.15.0
@@ -38,6 +37,7 @@ The 2026.3.0 feature activation will provide the full feature set for this maint
 * SKYOPS-132182: Update Sling Tenant to 1.1.8
 * SKYOPS-132267: Update org.osgi.service.component to 1.5.1
 * SKYOPS-132272: Update Sling Feature Model to 2.0.4
+* SKYOPS-133689: Update Dispatcher to use Apache httpd 2.4.66
 
 
 ### Fixed Issues {#fixed-issues-AAA}
