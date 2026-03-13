@@ -155,11 +155,17 @@ This property lets you enter a vanity URL for this page, which can allow you to 
 
 * **Enable** - Enables use of authentication to access the page
 
->[!NOTE]
->
->Closed user groups for the page are defined on the **[Permissions](#permissions)** tab.
+  >[!NOTE]
+  >
+  >Closed user groups for the page are defined on the **[Permissions](#permissions)** tab.
 
 * **Login Page** - The page to be used for login
+
+  >[!WARNING]
+  >
+  >The login page specified **must not** point to a page that is itself protected by an **Authentication Requirement**. You must make sure the login page is a public, unprotected page. For example, a dedicated page such as `/content/<mysite>/en/login` with no **Authentication Requirement** enabled.
+  >
+  >If the configured login page does have **Enable** checked the authentication requirement on that page may be silently removed on startup, making it publicly accessible. 
 
 ### Export {#export}
 
