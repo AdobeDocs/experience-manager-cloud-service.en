@@ -407,3 +407,9 @@ Use this prompt to troubleshoot problems with blocks, images, CSS, or preview.
   1. Block code
   1. Browser console
 * The agent has the capability to check local previews at `http://localhost:3000`.
+
+<!--
+## Additional Sections {#additional-sections}
+
+@gwalt, is the additional content in the prompting guide wiki ready to be added here?
+-->
