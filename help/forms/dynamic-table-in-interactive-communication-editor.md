@@ -1,114 +1,82 @@
-# Dynamic Tables in Interactive Communication Editor
+# Dynamic Table in Interactive Communication Editor
 
 ## Overview
 
 The Interactive Communication Editor provides a Dynamic Table
 feature that allows authors to create data-driven tables whose content is populated automatically at runtime from structured data sources.
 
-Unlike static tables where rows must be manually created, dynamic tables automatically expand or contract based on the records returned from a bound JSON data model. This makes them useful for scenarios such as billing statements, transaction histories, product lists, or policy schedules.
+Unlike static tables where rows must be manually created, dynamic tables automatically expand or contract based on the records returned from a bound data source. This makes them useful for scenarios such as billing statements, transaction histories, product lists, or policy schedules.
 
-This article explains how to insert and configure a dynamic table, bind it to a JSON data source, manage multi-page table flow, and validate row counts.
-
-## Prerequisites
-
-Before creating a dynamic table, ensure the following:
-
-- An Interactive Communication document is created and opened in
-    the editor.
-- A JSON data model (Form Data Model or sample JSON file) is
-    available and referenced by the communication.
-- The Print or Web channel layout is configured.
-- The layout contains sufficient space to render the expected number
-    of rows.
-
-## Key Capabilities
-
-- **JSON data binding per column:** Bind each table column to a specific field in a JSON array.
-
-- **Flowed content for multi-page layout:** Allows the table to grow dynamically and continue across multiple pages.
-
-- **Allow page break within content:** Enables row-level page splitting when the table reaches the end of a page.
-
-- **Minimum row count validation:** Enforces a lower bound on the number of rows rendered.
-
-- **Maximum row count validation:** Limits the total number of rows rendered from the data source.
-
-- **Initial row count control:** Sets the default number of rows displayed during design-time preview.
+This article explains how to insert and configure a dynamic table with data binding, manage multi-page table flow, and validate row counts.
 
 ## Insert a Dynamic Table
 
-1. Open the **Interactive Communication Editor** and select the
-    required channel (Print or Web).
-2. Select the **editable layout area** where the table should appear.
-3. From the **Components panel**, drag the **Table component** to the
+1. Open the **Interactive Communication Editor**.
+1. From the **Component panel**, drag the **Table component** to the
     canvas.
-4. Specify the **number of columns and initial rows** in the dialog box
-    and click **OK**.
+1. Specify the **number of columns** and **initial rows** in the dialog box, ensure the **header row** is included, and then click OK to create the table.
 
->[!NOTE] 
->
-> Columns can be added or removed later, but defining them
-> correctly during insertion simplifies data binding.
+### Bind Data to the Dynamic Table
 
-## Bind the Table to JSON Data
+Dynamic tables populate rows automatically by binding to a repeatable data source.
 
-To bind the dynamic table to a data source:
+![Find IC Docu](/help/forms/interactive-communication/assets/table-data-binding.png)
 
-1. Select the table and open the **Properties panel**.
-2. Under **Data Binding**, click **Bind to Data Model**.
-3. In the data model browser, locate the **repeatable data array** in the JSON schema.
-4. Select the array node and click **Bind** so the table renders one
-row for each data record.
+To bind data to the table:
 
-### Bind Column Fields
+1. Select the **table** and open the **Properties** panel.
+1. In the **Data Binding** section, click **Use Data Model**.
+1. Select the **file** to bind the data.
 
-1. Select a **body cell** in the table (not the header).
-2. Click the **Bind icon** in the Data Binding section.
-3. Select the corresponding field from the data model.
-4. Repeat the process for each column.
+### Enable Page Flow
 
-## Enable Multi-Page Flow
+Dynamic tables may expand beyond a single page. To allow the table to grow and continue across pages, place it inside a **Flowed Content** container.
 
-Dynamic tables may exceed the space of a single page. To allow the table
-to continue across pages, place it inside a **Flowed Content**
-container.
+![Find IC Docu](/help/forms/interactive-communication/assets/table-data-binding.png)
 
+To enable page flow:
 
+1. Select the **table**.
+1. Open the **Properties** panel.
+1. Set the **Content Type** to **Flowed**.
+1. Preview the communication to confirm the table flows onto the next page when more rows are rendered.
 
-### Configure Flowed Content
+### Allow Page Break Within Table
 
-1. Select the **Table Object**.
-2. In Properties, set Content Type to **Flowed**.
-3. Place or move the table inside this flowed container.
-4. Use **Preview mode** to confirm that the table continues onto the
-    next page.
+![Find IC Docu](/help/forms/interactive-communication/assets/table-data-binding.png)
 
->[!NOTE] 
->
-> If the document contains repeating headers or footers, ensure the flowed area is positioned between them.
-
-## 5. Allow Page Breaks Within the Table
-
-To allow the table itself to split across pages:
+To ensure the table splits properly across pages:
 
 1. Select the **table** in the canvas.
-2. Open the **Properties panel**.
-3. Locate **Allow Page Break Within Content**.
-4. Enable the toggle and save the configuration.
+1. Open the **Properties** panel.
+1. Enable **Allow Page Break Within Content**.
 
-When enabled, the rendering engine automatically inserts a page break
-when the table reaches the bottom of the page. The **table header row is
-repeated** at the top of the next page.
+When enabled, the table automatically breaks at the end of a page and continues on the next page, with the header row repeated.
 
 ### Configure Row Validation
 
-1. Select the table and open **Properties**.
-2. Navigate to **Validation or Row Settings**.
-3. Configure **Minimum Rows**, **Maximum Rows**, and **Initial Rows**.
-4. Save the configuration and preview the communication.
+You can control how many rows the dynamic table can render.
+
+* **Minimum Rows:** Ensures the table renders at least the specified number of rows.
+* **Maximum Rows:** Limits the total rows rendered from the data source.
+* **Initial Rows:** Defines how many rows appear in the editor during design-time preview.
 
 >[!NOTE]
 >
 > Setting **Initial Rows** to around **3--5** provides a more realistic layout preview before runtime data is applied.
+
+## Key Capabilities
+
+* Column data binding: Bind each column to a field in the data model.
+
+* Flowed content: Allows the table to expand and continue across pages.
+
+* Page break support: Enables row-level page breaks within the table.
+
+* Minimum rows: Ensures a minimum number of rows are rendered.
+
+* Maximum rows: Limits the total rows rendered from the data source.
+
+* Initial rows: Defines the default rows shown during design-time preview.
 
 The Dynamic Table feature in the Interactive Communication Editor enables authors to create flexible, data-driven tables without writing custom code. By binding the table to a data array, enabling Flowed Content, allowing page breaks, and configuring row validation, authors can produce structured communications that adapt smoothly to varying volumes of data while maintaining a consistent layout.
