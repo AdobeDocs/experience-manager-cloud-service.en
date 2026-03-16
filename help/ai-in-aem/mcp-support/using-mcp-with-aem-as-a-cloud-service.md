@@ -58,6 +58,8 @@ The specific tools exposed by each MCP server may evolve over time. In practice,
 
 The MCP client uses the MCP protocol to retrieve the tool list and schemas, which the LLM can then use.
 
+Reference the [Content MCP Server Tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server) and [Cloud Manager MCP Server Video](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) for more information about their capabilities and how to use them.
+
 ## Supported MCP Applications {#supported-mcp-applications}
 
 AEM's MCP servers are designed to work with a defined set of MCP-compatible applications. Each application provides its own configuration experience, but the high-level steps are similar.
