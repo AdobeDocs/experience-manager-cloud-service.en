@@ -10,13 +10,13 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release AAA {#release-AAA}
+## Release 24893 {#release-24893}
 
-Summarized below are the continuous improvements for maintenance release AAA, which was publicly released on March 18, 2026. The previous maintenance release was release 24678.
+Summarized below are the continuous improvements for maintenance release 24893, which was publicly released on March 18, 2026. The previous maintenance release was release 24678.
 
 The 2026.3.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-AAA}
+### Enhancements {#enhancements-24893}
 
 * CNTBF-613: Fix Access Denied (JCR-101) - failed to register node types
 * GRANITE-53957: Upgrade Azure SDK V8 to V12 for oak-blob-azure
@@ -40,24 +40,24 @@ The 2026.3.0 feature activation will provide the full feature set for this maint
 * SKYOPS-133689: Update Dispatcher to use Apache httpd 2.4.66
 
 
-### Fixed Issues {#fixed-issues-AAA}
+### Fixed Issues {#fixed-issues-24893}
 
 * GRANITE-64443: workflow.core remove deprecated exports of log4j
 * GRANITE-64543: Permission restrictions response should match API contract
     
-### Known Issues {#known-issues-AAA}
+### Known Issues {#known-issues-24893}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-AAA}
+### Deprecated Features and APIs {#deprecated-24893}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-AAA}
+### Security Fixes {#security-24893}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 15 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-AAA}
+### Embedded Technologies {#embedded-tech-24893}
 
 |Technology|Version|Link|
 |---|---|---|
