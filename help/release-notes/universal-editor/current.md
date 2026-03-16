@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.03.05 Release Notes
-description: These are the release notes for the 2026.03.05 release of the Universal Editor.
+title: Universal Editor 2026.03.12 Release Notes
+description: These are the release notes for the 2026.03.12 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.03.05 Release Notes {#release-notes}
+# Universal Editor 2026.03.12 Release Notes {#release-notes}
 
-These are the release notes for the 5 March 2026 release of the Universal Editor.
+These are the release notes for the 12 March 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,8 +20,7 @@ These are the release notes for the 5 March 2026 release of the Universal Editor
 
 ## What's New {#what-is-new}
 
-* [The component picker](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) has a new design.
-* [A color picker](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) for the RTE is now available.
+* Components can now be added via the [context menu](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) of containers.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -31,5 +30,4 @@ If you are interested in testing the upcoming features listed below and sharing 
 
 ## Other Improvements {#other-improvements}
 
-* Alignment, text direction, and indentation options are now [enabled by default in the RTE](/help/implementing/universal-editor/configure-rte.md) provided your backend supports them.
-* Tabs are now rendered when using a Content Fragment with Open API and UI schema.
+* A problem was fixed where Document Authoring sub-elements didn't obey nthChild rules.

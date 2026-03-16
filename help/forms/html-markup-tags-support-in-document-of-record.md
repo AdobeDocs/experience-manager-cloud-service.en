@@ -3,6 +3,7 @@ title: Supported HTML markup tags in Submission PDF (formerly Document of Record
 description: Reference guide for HTML markup tags supported when generating a Submission PDF (formerly Document of Record), including rendering behavior and accessibility considerations.
 feature: Adaptive Forms
 role: Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
 ---
 

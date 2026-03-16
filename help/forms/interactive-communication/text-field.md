@@ -4,6 +4,7 @@ description: Text Field component in Interactive Communication Editor  in AEM Fo
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 6bb41cf2-8a9d-499c-979b-b0ee7d092e11
 ---
 # Text Field component in Interactive Communication Editor 

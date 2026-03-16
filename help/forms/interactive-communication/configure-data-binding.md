@@ -4,6 +4,7 @@ description: Create Interactive Communication Fragments in AEM Forms to build mo
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 81779df9-c101-4c39-a779-651cafc70eb9
 ---
 # Data Binding in Interactive Communication Editor
