@@ -15,7 +15,7 @@ The AEM as a Cloud Service [automatic maintenance updates](/help/implementing/de
 You can configure these time frames by using two scheduling options:
 
 * **Quiet hours** - You can define a daily time interval (up to 8 hours) where updates will not occur.
-* **Update free periods** - You can define a 7 day time period where updates will not occur. You can have up to three update free periods within a 12-month time frame.
+* **Update free periods** - You can define a 7 day time period where updates will not occur. You can have up to three update free periods within a floating 365-day window.
 
 The update free periods and quiet hours features are configured on a "per program" basis. Keep in mind that only users with the "user role" of **Business Owner** and **Deployment Manager** can view and use these features.  
 
