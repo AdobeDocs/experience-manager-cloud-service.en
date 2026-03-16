@@ -3,6 +3,7 @@ title: How do I add support for new locales to an Adaptive Form based on core co
 description: Learn to add new locales for an Adaptive Form.
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
 ---

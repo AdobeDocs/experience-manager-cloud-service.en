@@ -4,6 +4,7 @@ description: Users can preview form before publishing or activating, to ensure i
 topic-tags: author
 role: Admin, Developer, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 72235277-6c34-4341-9a10-02afa753e7f5
 ---
 # Previewing a form {#previewing-a-form}

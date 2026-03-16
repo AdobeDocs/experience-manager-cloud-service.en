@@ -4,6 +4,7 @@ description: An Adaptive Form provides multiple Submit Actions. A Submit Action 
 keywords: how to select submit action for an adaptive form, connect an adaptive form to sharepoint list, connect an adaptive form to sharepoint document library, connect an adaptive form to form data model (FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 3f8950c3-9022-4e9f-b3ed-723245201e45
 ---
 # Submit Actions for Edge Delivery Services Forms

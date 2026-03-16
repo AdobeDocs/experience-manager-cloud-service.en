@@ -4,6 +4,7 @@ description: Define the position of AEM Forms components, learn to access layout
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 53896a8e-4568-460b-bca7-994baea0c8eb
 ---
 # Use Layout mode to resize components for Adaptive Forms {#use-layout-mode-to-resize-components}

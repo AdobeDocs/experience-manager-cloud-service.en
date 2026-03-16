@@ -5,6 +5,7 @@ hide: yes
 index: no
 hidefromtoc: yes
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
 ---
 # LLM-enhanced smart fields in Forms Experience Builder {#llm-enhanced-smart-fields}

@@ -4,6 +4,7 @@ description: Learn to create a form data model (FDM), and send or retrieve data 
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
 ---
 # Create Form Data Model (FDM) {#create-form-data-model}
