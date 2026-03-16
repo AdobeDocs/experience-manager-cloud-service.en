@@ -6,6 +6,7 @@ keywords: form builder, AEM forms, form creator, create forms, form maker, adapt
 feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: choose-form-builder-guide
 
 ---

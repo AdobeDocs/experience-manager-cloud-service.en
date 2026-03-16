@@ -4,6 +4,7 @@ description: The adaptive Forms rule editor helps the users to write rules that 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: b6ad377f-6697-4bc8-83bb-9e1bbea4cfd6
 ---
 # Rule Editor user interface for Adaptive Forms based on Core Components

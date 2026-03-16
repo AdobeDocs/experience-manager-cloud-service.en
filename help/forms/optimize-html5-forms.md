@@ -5,6 +5,7 @@ content-type: reference
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 14309ebd-8d00-4ca5-b4ab-44d80d97d066
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer

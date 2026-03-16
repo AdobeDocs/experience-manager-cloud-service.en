@@ -1,11 +1,12 @@
 ---
-title: Delivery Model of the Experience Modernization Agent
+title: AOE Delivery of the Experience Modernization Agent
 description: Learn about Adobe Agentic Outcome Engineers (AOEs) and how they can help you succeed with the Experience Modernization Agent.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 75f73bb8-4d97-4c8f-b364-374a2a026b19
 ---
-# Delivery Model of the Experience Modernization Agent {#delivery-model}
+
+# AOE Delivery of the Experience Modernization Agent {#aoe-delivery}
 
 Learn about Adobe Agentic Outcome Engineers (AOEs) and how they can help you succeed with the Experience Modernization Agent.
 
@@ -17,13 +18,13 @@ AOEs are Adobe engineers who operate the Experience Modernization Agent on your 
 * Bridge the talent and execution gap in emerging tech adoption.
 * Provide high-bandwidth feedback loops between customers, engineering, and go-to-market teams.
 
-## AOE-Led Delivery {#aoe-delivery}
+## AOE-Led Delivery {#aoe-led}
 
 According to McKinsey and IDC, migration cost is the top reason enterprises cite for not adopting cloud platforms. Site migrations can be complex with significant variability. Despite available tools, partner costs continue to rise. Because of this, many organizations remain stranded on legacy systems.
 
-The AI-assisted AOE delivery model offers an opportunity to cross this adoption gap by:
+AI-assisted AOE delivery offers an opportunity to cross this adoption gap by:
 
-* **Providing a strategic reset:** The AOE-led model offers a faster, lower-risk path forward for stalled implementations or legacy modernization.
+* **Providing a strategic reset:** AOE-led projects offers a faster, lower-risk path forward for stalled implementations or legacy modernization.
 * **Reducing risk:** Adobe shares responsibility for migration outcomes.
 * **Ensuring quality:** AOEs bring expertise in Edge Delivery Services architecture, migration patterns, and best practices.
 * **Applying governance:** Enterprise compliance requirements are addressed throughout the migration.
@@ -31,7 +32,7 @@ The AI-assisted AOE delivery model offers an opportunity to cross this adoption 
 
 ## Engagement Process {#engagement-process}
 
-The AOE model offers a structured engagement process.
+AOE engagement is a structured process.
 
 ### 1. Scoping {#scoping}
 
@@ -65,7 +66,7 @@ Once the handoff is complete, enjoy the benefits of your Edge Delivery Services 
 
 ## AOE Delivery Scope {#scope}
 
-The AOE delivery model provides a clearly-defined scope that you can rely on. This scope includes both automated skill capabilities and manual AOE work to fill gaps, ensuring complete, production-ready migrations.
+AOE delivery provides a clearly-defined scope that you can rely on. This scope includes both automated skill capabilities and manual AOE work to fill gaps, ensuring complete, production-ready migrations.
 
 ### Source Platforms {#source-platforms}
 
@@ -96,4 +97,4 @@ The resulting system is based on Edge Delivery Sites which  consistently achieve
 
 ## Limitations {#limitations}
 
-The Experience Modernization Agent and its AOE model is not a perfect fit for every project. [Please review the limitations of the agent.](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
+The Experience Modernization Agent and AOE delivery is not a perfect fit for every project. [Please review the limitations of the agent.](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)

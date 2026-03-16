@@ -5,6 +5,7 @@ topic-tags: develop
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
 ---
 # Use [!DNL Adobe Sign] in an Adaptive Form {#using-adobe-sign-in-an-adaptive-form}
