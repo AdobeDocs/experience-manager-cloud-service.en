@@ -3,6 +3,7 @@ title: How to configure Microsoft Dynamics 365 out of the box form data models f
 description: Learn how to integrate Microsoft Dynamics 365 with Adaptive Forms.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
 ---
 
