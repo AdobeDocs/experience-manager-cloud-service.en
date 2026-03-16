@@ -3,7 +3,6 @@ title: New Video Viewer
 description: The New Video Viewer in Dynamic Media provides an enhanced video playback experience
   with improved performance, accessibility, and configurability.
 role: User
-exl-id:
 ---
 
 # New Video Viewer in Dynamic Media {#new-video-viewer-dynamic-media}
