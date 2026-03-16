@@ -22,7 +22,7 @@ The 2026.3.0 feature activation will provide the full feature set for this maint
 * GRANITE-53957: Upgrade Azure SDK V8 to V12 for oak-blob-azure.
 * GRANITE-57035: Use Bouncy Castle as the default security provider.
 * GRANITE-59249: Avoid registering a security provider in the JVM.
-* GRANITE-61564: View Settings on /security/users.html fails to open for admins.
+* GRANITE-61564: View Settings on `/security/users.html` fails to open for admins.
 * GRANITE-64748: OIDC: configurable sling.oauth-request-key Cookie expiry.
 * SITES-39767: Support nonce value via request attribute (CSP).
 * SKYOPS-129301: Set APIs jar javadoc compliance level to 17.
@@ -41,7 +41,7 @@ The 2026.3.0 feature activation will provide the full feature set for this maint
 
 ### Fixed Issues {#fixed-issues-24893}
 
-* GRANITE-64443: workflow.core remove deprecated exports of `log4j`.
+* GRANITE-64443: `workflow.core` remove deprecated exports of `log4j`.
 * GRANITE-64543: Permission restrictions response should match API contract.
 
 #### AEM Guides {#guides-24893}
