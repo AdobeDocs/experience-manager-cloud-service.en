@@ -1,8 +1,8 @@
 ---
 title: New Video Viewer
-description: The New Video Viewer in Dynamic Media provides an enhanced video playback experience with improved performance, accessibility, and configurability.
+description: The New Video Viewer in Dynamic Media provides an enhanced video playback experience
+  with improved performance, accessibility, and configurability.
 role: User
-exl-id: c819c6b3-bb7c-4d0e-b745-62b42f4ecd5f
 ---
 # New Video Viewer in Dynamic Media {#new-video-viewer-dynamic-media}
 
@@ -68,7 +68,7 @@ Execute the following steps to preview the New Video Viewer from the asset detai
 3. In the left panel, click **Viewers**.
 4. In the **Viewers** panel, select **Video (new)**.
 5. Click **URL** to copy the preview link.
-![Copy URL](/help/assets/assets/Copy-url1.jpg)
+![Copy URL](assets/Copy-url1.jpg)
 
 ## Use the New Video Viewer in Sites {#use-in-sites}
 
@@ -84,7 +84,7 @@ Execute the following steps to add a video using the Dynamic Media component:
 4. Click the component to open the asset selector.
 5. Select a video asset.
 
-![Drag Dynamic Media component](/help/assets/assets/drag-component.jpeg)
+![Drag Dynamic Media component](assets/drag-component.jpeg)
 
 ### Configure the viewer
 
@@ -92,13 +92,13 @@ Execute the following steps to configure the viewer preset:
 
 1. Select the **Dynamic Media** component on the page.
 2. Click **Configure** in the component toolbar.
-   ![Open Dynamic Media settings](/help/assets/assets/configure-asset.png)
+   ![Open Dynamic Media settings](assets/configure-asset.png)
 
 3. In the **Dynamic Media settings dialog**, select **Video (new)** from the **Viewer Preset** drop-down list.
-   ![Select Video (new) viewer preset](/help/assets/assets/viewer-preset.jpeg)
+   ![Select Video (new) viewer preset](assets/viewer-preset.jpeg)
 
 4. Enter any required modifiers in the **Viewer Modifiers** field (for example, `autoplay=true&muted=true`).
-   ![Viewer modifiers](/help/assets/assets/additional-modifiers.jpeg)
+   ![Viewer modifiers](assets/additional-modifiers.jpeg)
 
 5. Save the changes.
 
