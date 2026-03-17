@@ -514,7 +514,9 @@ To check a fragment out:
 1. Select the fragment.
 1. Select **Check Out** from the toolbar.
 1. Confirm the **Check Out** action.
-   A padlock icon in the **Title** column indicates that the fragment is locked and can only be edited by you.
+
+   * A padlock icon in the **Title** column indicates that the fragment is locked and can only be edited by you. 
+   * If another user opens the fragment for editing, they see a message stating that they are in read-only mode.
 
 ### Check In a Content Fragment {#check-in-a-content-fragment}
 
@@ -527,7 +529,13 @@ To check a fragment in:
 
 ## Forced Check In {#forced-check-in}
 
-In certain circumstances the user who has checked out a Content Fragments is unavailable to check in the fragment. In such situations an administrator can perform a [Forced Check In](/help/assets/check-out-and-submit-assets.md#forced-check-in).
+It can happen that the user who has checked out a Content Fragment is unavailable to check in the fragment. 
+
+In such situations an administrator can perform the **Check In** operation.
+
+>[!NOTE]
+>
+>See also the Assets [Forced Check In](/help/assets/check-out-and-submit-assets.md#forced-check-in).
 
 ## Deleting a Fragment {#deleting-a-fragment}
 
