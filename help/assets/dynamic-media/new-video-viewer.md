@@ -3,9 +3,7 @@ title: New Video Viewer
 description: The New Video Viewer in Dynamic Media provides an enhanced video playback experience
   with improved performance, accessibility, and configurability.
 role: User
-exl-id:
 ---
-
 # New Video Viewer in Dynamic Media {#new-video-viewer-dynamic-media}
 
 The New Video Viewer for Dynamic Media provides a modernized video playback experience in Adobe Experience Manager (AEM). It delivers a consistent and extensible viewing experience across authoring, preview, and Sites environments, while continuing to work with existing Dynamic Media workflows.
@@ -162,7 +160,7 @@ The New Video Viewer sends playback-related messages to the parent page during v
 
 To handle these events, the parent application must listen for browser message events and validate the message origin before processing the data.
 
-The event payload includes information such as the event type, playback state, current playback time, and additional metadata. These events can be used to support analytics tracking, custom interactions, or integration with external systems
+The event payload includes information such as the event type, playback state, current playback time, and additional metadata. These events can be used to support analytics tracking, custom interactions, or integration with external systems.
 
 Adobe recommends validating the message origin to ensure that events are processed only from trusted Dynamic Media domains.
 

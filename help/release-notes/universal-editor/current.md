@@ -20,7 +20,7 @@ These are the release notes for the 12 March 2026 release of the Universal Edito
 
 ## What's New {#what-is-new}
 
-* Components can now be added via the contextual menu of containers.
+* Components can now be added via the [context menu](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) of containers.
 
 ## Early Adoption Features {#early-adopter}
 
@@ -30,4 +30,4 @@ If you are interested in testing the upcoming features listed below and sharing 
 
 ## Other Improvements {#other-improvements}
 
-* A problem was fixed where DA sub elements didn't obey nthChild rules.
+* A problem was fixed where Document Authoring sub-elements didn't obey nthChild rules.
