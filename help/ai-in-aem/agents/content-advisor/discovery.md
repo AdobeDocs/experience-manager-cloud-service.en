@@ -77,7 +77,7 @@ For information on the MCP endpoint to access content discovery agent, contact A
 
 **Metadata-based asset discovery** 
 
-   The Content Discovery agent uses natural language prompts to find assets based on metadata available for assets in AEM. Users can discover assets using the following metadata properties: Tags, Created by Email ID, Modified by Email ID, Published by Email ID, Created Date, Modified Date, Published Date, MIME type, Asset Type, Status, file format, and multiple metadata filters within a single prompt.
+   The Content Discovery agent uses natural language prompts to find assets based on metadata available for assets in AEM. Users can discover assets using the following metadata properties: Tags, Created by Email ID, Modified by Email ID, Published by Email ID, Created Date, Modified Date, Published Date, MIME type, Asset Type, Status, file format, file size, image width, image height, and multiple metadata filters within a single prompt.
 
    The Content Discovery Agent also searches the custom properties available in metadata schemas for Admin view and metadata forms for Assets view. You can modify your prompts accordingly to search values available within those custom asset properties.
 
@@ -93,7 +93,11 @@ For information on the MCP endpoint to access content discovery agent, contact A
    * **Search based on file format, asset type, asset status and Created by Email ID**: Show videos in `.mp4` format that are approved and `created by <user email ID>`.
    * **Search based on file format, asset type, asset status and  Created Date**: Show images in `.PNG` format that are created after January 1, 2025 and `published by <user email ID>`
    * **Search based on MIME type, Created Date, and Published by Email ID**: Show `image/jpeg` created after `January 1, 2025` and `published by <user email ID>`.
-   * **Search based on file format and custom metadata properties**: Show images in `.JPEG` format that have `Product SKU as <SKU value>`.
+   * **Search based on file format and custom metadata properties**: Show images in `.JPEG` format that have `Product SKU ID as <SKU value>`.
+
+   * **Search for assets with missing metadata**: Show assets created in the last 90 days with `<Name of metadata property including custom properties>` is blank.
+
+   * **Search for assets using file size, image width, and image height**: Show images larger than 5 MB with width greater than 2000 pixels and height greater than 1200 pixels.
 
 
 **Folder-based content discovery:**  
@@ -107,7 +111,7 @@ For information on the MCP endpoint to access content discovery agent, contact A
 
 **Additional questions to enable folder-based content discovery**
 
-When a folder name is included in a prompt, the Content Discovery Agent first checks for a matching folder at the root path `/content/dam/<folder-name>`. 
+When a folder name is included in a prompt (without the full asset path), the Content Discovery Agent first checks for a matching folder at the root path `/content/dam/<folder-name>`. 
 
 If a matching folder is not found at the root-level, the agent suggests alternative folder paths where the specified folder name exists in the repository. This helps users quickly identify the correct location without manually browsing the folder structure.
 
@@ -151,9 +155,19 @@ Sample prompts:
 
 * Show mountain images sorted by name in ascending order (shows the image names starting with letter A first followed by B, and so on).
 
+### AEM Sites pages {#content-discovery-agent-aem-sites-pages}
+
+The Content Discovery agent helps users quickly locate relevant AEM Sites pages by interpreting natural language prompts that reference page topics, campaigns, or other contextual keywords. The agent performs a full-text search based on the keywords in the prompt to identify matching pages in the AEM repository, eliminating the need to manually browse through the Sites structure.
+
+Sample Prompts:
+
+* Find all AEM Sites pages for the summer campaign.
+
+* Find AEM Sites pages with a Coffee theme.
+
 ### Content Fragments {#discovery-agent-use-cases-content-fragments}
 
-The content discovery agent helps users quickly locate the right Content Fragments by interpreting natural language references to campaign names, product brands, publication status, and recent creation activity. It allows teams to surface campaign-ready fragments and view brand-specific content, all without manually browsing through folders or applying multiple filters in AEM.
+The Content Discovery Agent helps users quickly locate the right Content Fragments by interpreting natural language references to campaign names, product brands, publication status, and recent creation activity. It allows teams to surface campaign-ready fragments and view brand-specific content, all without manually browsing through folders or applying multiple filters in AEM.
 
 Sample prompts:
 
@@ -167,7 +181,7 @@ Sample prompts:
 
 ### Forms {#discovery-agent-use-cases-forms}
 
-The content discovery agent helps you quickly find adaptive forms using natural language prompts. It searches through form content and metadata to find matches based on keywords from your prompts. This means you can successfully discover relevant forms even if your search terms are not in the form's title or description.
+The Content Discovery Agent helps you quickly find adaptive forms using natural language prompts. It searches through form content and metadata to find matches based on keywords from your prompts. This means you can successfully discover relevant forms even if your search terms are not in the form's title or description.
 
 Sample prompts:
 
@@ -215,4 +229,8 @@ Specify concise details in your natural language prompts so that the agent can r
 
 ## Limitations {#limitations-discovery-agent}
 
-The content discovery agent supports dimension-based prompts only for image and SVG format types. For example, `Find images wider than 1080px`.
+* The Content Discovery Agent supports dimension-based prompts only for image and SVG format types. For example, `Find images wider than 1080px`.
+
+* Content Hub administrators can access the Content Discovery Agent using the Content Hub portal, however, the results are retrieved only from the AEM author instance. Content Hub Limited users cannot currently get the benefits of the Content Discovery Agent (Coming Soon).
+
+* Find Similar capability works only for images with [Smart Tags enhancements](/help/assets/ai-generated-metadata-assets-view.md).
