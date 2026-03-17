@@ -10,7 +10,7 @@ exl-id: e6cd421a-8791-4fe3-b284-9b3beae996fd
 
 The Brand Experience Agent accelerates the modernization and evolution of digital experiences by automating content updates, site transformation, and technical troubleshooting, enabling brands to continuously improve and adapt at the speed of AI.
 
-## Jobs {#jobs}
+## Agents {#agents}
 
 The Brand Experience Agent delivers its outcomes through the following agents, each specializing in a specific set of jobs:
 
