@@ -23,7 +23,7 @@ The 2026.3.0 feature activation will provide the full feature set for this maint
 * GRANITE-57035: Use Bouncy Castle as the default security provider.
 * GRANITE-59249: Avoid registering a security provider in the JVM.
 * GRANITE-61564: View Settings on `/security/users.html` fails to open for admins.
-* GRANITE-64748: OIDC: configurable sling.oauth-request-key Cookie expiry.
+* GRANITE-64748: OIDC: configurable `sling.oauth-request-key` Cookie expiry.
 * SITES-39767: Support nonce value via request attribute (CSP).
 * SKYOPS-129301: Set APIs jar javadoc compliance level to 17.
 * GRANITE-64962: Update Apache Jackrabbit Oak to 1.92.0.
