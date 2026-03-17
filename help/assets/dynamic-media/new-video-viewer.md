@@ -3,9 +3,7 @@ title: New Video Viewer
 description: The New Video Viewer in Dynamic Media provides an enhanced video playback experience
   with improved performance, accessibility, and configurability.
 role: User
-exl-id:
 ---
-
 # New Video Viewer in Dynamic Media {#new-video-viewer-dynamic-media}
 
 The New Video Viewer for Dynamic Media provides a modernized video playback experience in Adobe Experience Manager (AEM). It delivers a consistent and extensible viewing experience across authoring, preview, and Sites environments, while continuing to work with existing Dynamic Media workflows.
