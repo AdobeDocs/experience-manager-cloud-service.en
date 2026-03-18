@@ -41,8 +41,8 @@ The console prompts you for a repository when you first sign in.
 
 1. Click **Connect repository**.
 1. This opens the AEM Code Connector app on a new browser tab. Click **Authorize AEM Code Connector**.
-1. Back in the console, select **Owner**, **Repository**, and **Branch selection** and click **Checkout to workspace**.
-   ![Connecting to GitHub project](assets/connect-to-github-project.png)
+1. Back in the console, specify the Preview URL of the site. The preview URL can be obtained by previewing any document in the site, or by constructing it from branch, site-name and org. The system will retrieve the associated Github Project automatically, in some cases you may be asked to provide the github coordinates too.
+   ![Connecting to GitHub project](assets/connect-site-and-github.png)
 1. When prompted to **Replace existing workspace**, click **Replace workspace**.
    ![Replace existing workspace](assets/replace-existing-workspace.png)
 
