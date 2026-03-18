@@ -527,7 +527,7 @@ To check a fragment in:
 1. Select **Check In** from the toolbar.
 1. Confirm the **Check In** action.
 
-## Forced Check In {#forced-check-in}
+## Forced (Administrator) Check In {#forced-adminstrator-check-in}
 
 It can happen that the user who has checked out a Content Fragment is unavailable to check in the fragment. 
 
@@ -535,7 +535,7 @@ In such situations an administrator can perform the **Check In** operation.
 
 >[!NOTE]
 >
->See also the Assets [Forced Check In](/help/assets/check-out-and-submit-assets.md#forced-check-in).
+>See also Assets [Forced Check In](/help/assets/check-out-and-submit-assets.md#forced-check-in).
 
 ## Deleting a Fragment {#deleting-a-fragment}
 
