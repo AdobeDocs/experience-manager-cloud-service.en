@@ -92,6 +92,15 @@ Attribute-based access control (ABAC) enables administrators to control access t
 >
 >Attribute-based access control (ABAC) for Dynamic Media with OpenAPI is a limited availability feature. You can get it enabled by creating a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+**Content Fragment Check-Out/-In**
+To improve parity with AEM Touch UI, content fragments can now be checked out and checked back in using the new Content Fragment Admin UI as well. Check-out functionality is unchanged, effectively locking a checked-out content fragment and thereby preventing it from being edited in Content Fragment Editor by other users. Users who own a content fragment and administrators can check the fragment out and back in. Checking a fragment out has no effect on referenced child fragments or assets. 
+
+**Content Fragment Launches Jobs Panel**
+Asynchronous jobs for content fragments launches can now be viewed in the properties panel of the content fragment launches admin UI to observe their status - if a job is still running, has been completed, or was aborted, along with relevant detail information about the job. 
+
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Early Access Features in AEM Forms {#forms-early-access-features}
