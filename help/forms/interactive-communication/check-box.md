@@ -4,6 +4,7 @@ description: Check Box Component in Interactive Communication Editor in AEM Form
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 636e9699-a8db-4cb0-aa9f-0602939006df
 ---
 # Check Box Component in Interactive Communication Editor 

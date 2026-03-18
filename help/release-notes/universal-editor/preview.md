@@ -22,4 +22,13 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
-* An option to add components has been added to the in context menu.
+* The items in the right rail can now be collapsed on the home screen.
+* The assets selector now supports filter definitions.
+* If there are no actions available for the selected item, the context menu no longer shows a chevron to access actions.
+
+## Upcoming Improvements {#upcoming-improvements}
+
+* If there is a model/filter/component definition, it will get refetched when switching from one app to another in the editor.
+* Removing an image no longer leaves empty image tags when using DA as a back end.
+* Classes in blocks are now properly handled when using DA as a back end.
+* Open API now saves remote assets properly as objects.

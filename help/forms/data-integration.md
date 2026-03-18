@@ -3,6 +3,7 @@ title: How to connect a database to [!DNL AEM Forms] as a Cloud Service?
 description: Retrieve and save data to RESTful web services, SOAP-based web services, and OData services from an Adaptive Form or an AEM Workflow.
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
 ---
 # Connect AEM Forms to a database {#aem-forms-data-integration}

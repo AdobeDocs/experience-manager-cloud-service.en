@@ -99,6 +99,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2026 {#2026}
+      + [Maintenance Release Notes for 2026.3.0](/help/release-notes/maintenance/2026/2026-3-0.md)
       + [Maintenance Release Notes for 2026.2.0](/help/release-notes/maintenance/2026/2026-2-0.md)
       + [Maintenance Release Notes for 2026.1.0](/help/release-notes/maintenance/2026/2026-1-0.md)
     + 2025 {#2025}
@@ -251,6 +252,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.03.05 Release Notes](/help/release-notes/universal-editor/2026/2026-03-05.md)
       + [2026.02.26 Release Notes](/help/release-notes/universal-editor/2026/2026-02-26.md)
       + [2026.02.19 Release Notes](/help/release-notes/universal-editor/2026/2026-02-19.md)
       + [2026.02.13 Release Notes](/help/release-notes/universal-editor/2026/2026-02-13.md)
@@ -702,6 +704,7 @@ user-guide-title: AEM as a Cloud Service
     + [Mixed Media Sets](/help/assets/dynamic-media/mixed-media-sets.md)
     + [Spin Sets](/help/assets/dynamic-media/spin-sets.md)
     + [Video in Dynamic Media](/help/assets/dynamic-media/video.md)
+    + [New Video Viewer](/help/assets/dynamic-media/new-video-viewer.md)
     + [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md)
     + [Interactive Images](/help/assets/dynamic-media/interactive-images.md)
     + [Interactive Videos](/help/assets/dynamic-media/interactive-videos.md)
@@ -1094,7 +1097,15 @@ user-guide-title: AEM as a Cloud Service
     + [502 Error Page in Custom Submit Action](/help/forms/custom-submit-action-troubleshooting.md)
 + AI in AEM {#ai-in-aem}
   + [Overview](/help/ai-in-aem/overview.md)
-  + [Using MCP with AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
+  + MCP Support {#mcp-support}
+    + [Using MCP with AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
+    + Chat Applications (Web & Desktop) {#chat-applications}
+      + [Anthropic Claude](/help/ai-in-aem/mcp-support/setup-claude.md)
+      + [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
+    + Developer Tools (IDE Extensions, Desktop Apps, CLIs) {#developer-tools}
+      + [Cursor](/help/ai-in-aem/mcp-support/setup-cursor.md)
+    + Enterprise Platforms {#enterprise-platforms}
+      + [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
   + Agents in AEM {#agents}
     + [Overview](/help/ai-in-aem/agents/overview.md)
     + Brand Experience Agent {#brand-experience}
@@ -1107,7 +1118,10 @@ user-guide-title: AEM as a Cloud Service
       + Experience Modernization Agent {#modernization}
         + [Overview](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
         + [Getting Started](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+        + [Getting Started with AEM authoring projects](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
         + [Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
+        + [Prompting Guide](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
+        + [AOE Delivery](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
       + [Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md)
     + Content Advisor Agent {#content-advisor}
       + [Overview](/help/ai-in-aem/agents/content-advisor/overview.md)
@@ -1291,6 +1305,9 @@ user-guide-title: AEM as a Cloud Service
   + Content Fragment Selector {#content-fragment-selector}
     + [Micro-Frontend Content Fragment Selector - Overview](/help/headless/content-fragment-selector/overview.md)
     + [Content Fragment Selector - Related Properties](/help/headless/content-fragment-selector/properties.md)
+    + [Integrate with an Adobe application](/help/headless/content-fragment-selector/integrate-adobe-application.md) 
+    + [Integrate with non-Adobe or third party application](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
+    + [Integrate Content Fragment Selector using Vanilla JS](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
   + [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md)
   + GraphQL API {#graphql-api}
     + [GraphQL API for Content Fragments](/help/headless/graphql-api/content-fragments.md)

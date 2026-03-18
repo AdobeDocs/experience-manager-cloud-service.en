@@ -5,6 +5,7 @@ keywords: adaptive forms comparison, core components, foundation components, edg
 role: Architect, Developer, Admin
 level: Intermediate
 feature: Adaptive Forms, Core Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: adaptive-forms-comparison
 ---
 

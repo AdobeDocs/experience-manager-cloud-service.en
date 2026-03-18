@@ -5,6 +5,7 @@ contentOwner: AG
 mini-toc-levels: 1
 feature: Collections, Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
 ---
 # Manage collections {#manage-collections}

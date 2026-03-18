@@ -5,6 +5,7 @@ feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 keywords: integrating API in rule editor, invoke service enhancements
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
 ---
 # Integrating API in Rule Editor

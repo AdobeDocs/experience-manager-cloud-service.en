@@ -4,6 +4,7 @@ description: Learn how to create metadata schema for asset folders in [!DNL Expe
 contentOwner: AG
 feature: Metadata
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
 ---
 # Folder Metadata Schema {#folder-metadata-schema}

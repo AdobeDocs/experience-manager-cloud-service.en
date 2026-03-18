@@ -3,6 +3,7 @@ title: How to create and manage reviews in forms?
 description: Use the review mechanism to add reviewers and allow reviewers to comment on a form.
 topic-tags: forms-manager
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
 role: User, Developer
 ---
