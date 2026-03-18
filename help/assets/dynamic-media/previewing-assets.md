@@ -4,6 +4,7 @@ description: Learn how to preview assets in Dynamic Media so you can see how it 
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
 ---
 # Preview assets{#previewing-assets}

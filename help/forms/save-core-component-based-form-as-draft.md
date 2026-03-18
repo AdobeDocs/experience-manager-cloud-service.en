@@ -3,6 +3,7 @@ title: How to save the Core Components based Adaptive Form as a draft and use th
 description: Learn how to save Core Components based Adaptive Form as a draft. Also understand how to use the Drafts and Submissions component to list drafts and submissions for logged-in users?
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 role: User, Developer
 ---
 

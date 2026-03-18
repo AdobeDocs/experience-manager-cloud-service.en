@@ -4,6 +4,7 @@ description: Learn how to apply viewer presets in Dynamic Media.
 contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
 ---
 # Apply Dynamic Media viewer presets {#applying-viewer-presets}

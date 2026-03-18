@@ -4,6 +4,7 @@ description: Learn how to use the responsive code feature to deliver optimized i
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 ---
 # Deliver optimized images for a responsive site {#delivering-optimized-images-for-a-responsive-site}

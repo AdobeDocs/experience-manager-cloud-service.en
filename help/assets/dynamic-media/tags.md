@@ -4,6 +4,7 @@ description: Learn about the Dynamic Media Viewers extension for Experience Plat
 contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
 ---
 # Integrate Dynamic Media Viewers with Adobe Analytics and Experience Platform Tags {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}

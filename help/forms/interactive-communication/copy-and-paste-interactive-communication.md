@@ -7,6 +7,7 @@ role: User, Developer, Admin
 hide: yes
 index: no
 hidefromtoc: yes
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
 ---
 # Copy and Paste in Interactive Communication Editor

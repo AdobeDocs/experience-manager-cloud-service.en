@@ -3,6 +3,7 @@ title: How to customize auto-generated Document of Record template for Adaptive 
 description: Learn how to download, customize, and re-upload the auto-generated Document of Record (DoR) template for Adaptive Forms using Adobe Forms Designer.
 feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 2416add3-0b9d-4a8d-a84d-d65c0762d8e8
 ---
 # Customize the auto-generated Document of Record template

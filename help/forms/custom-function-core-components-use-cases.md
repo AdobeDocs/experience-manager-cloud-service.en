@@ -4,6 +4,7 @@ description: The article outlines various use cases for a custom function in an 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
 ---
 # Examples of developing and using custom function

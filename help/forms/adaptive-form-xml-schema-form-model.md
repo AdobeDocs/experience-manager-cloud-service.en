@@ -4,6 +4,7 @@ description: Learn to create a XML schema for an Adaptive Form and create an Ada
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
 hide: yes
 hidefromtoc: yes
