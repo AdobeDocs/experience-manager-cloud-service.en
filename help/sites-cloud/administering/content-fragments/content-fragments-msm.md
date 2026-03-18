@@ -53,13 +53,29 @@ Propagate modifications from source to Live Copy
 
 ## Cancel, and reinstate, inheritance {#cancel-and-reinstate-inheritance}
 
-For:
+You can cancel, and reinstate, inheritance for:
 
 * fields and variations in the [Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
 * [metadata of related assets](/help/assets/content-fragments/content-fragments-variations.md#canceling-reenabling-inheritance-individual-items)
 * [Suspend and resume the relationship](/help/assets/reuse-assets-using-msm.md#suspend-resume)
 * [Remove the live relationship](/help/assets/reuse-assets-using-msm.md#detach)
 * [Compare MSM for Content Fragments (and Assets) with MSM for Sites](/help/assets/reuse-assets-using-msm.md#comparison)
+
+## Compare MSM for Content Fragments and Sites Pages {#compare-msm-for-content-fragments-and-sites-pages}
+
+In more scenarios, MSM for Content Fragments matches the behavior of MSM for Sites Pages functionality. Some key differences to note are:
+
+* Blueprint in MSM for Sites Pages is called Live Copy source in MSM for Content Fragments.
+* For Sites Pages, you can compare a blueprint and its live copy but it is not possible for Content Fragments to compare a source to its live copy.
+* You cannot edit a live copy in the Content Fragments console.
+* Sites pages usually have children, but Content Fragment do not. The option to include or exclude children is not present when creating live copies of individual assets.
+* Removing the chapters step in the create site wizard is not supported in MSM for Content Fragments.
+* Configuring MSM locks on page properties is not supported in MSM for Content Fragments.
+* For MSM for Content Fragments, use only the **Standard rollout config**. Other rollout configurations are not available for MSM for Content Fragments.
+
+>[!NOTE]
+>
+>Remember that MSM for Content Fragments accessed through the Content Fragments console is based on the Assets functionality; this is because they are stored as Assets (though considered a Sites feature). 
 
 ## Limitations {#limitations}
 
