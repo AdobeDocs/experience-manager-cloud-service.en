@@ -42,7 +42,6 @@ You can deploy secrets used in CDN configuration in two ways:
 
 * **Environment secret variables** – Configured in Cloud Manager as [environment variables](/help/implementing/cloud-manager/environment-variables.md) of type **Secret**  and **Service Applied** set to **All**. These are available as an environment level configuration.
 
-
 **Preferred: Pipeline secret variables.** Use pipeline secret variables when possible, because they are deployed together with your configuration in the same pipeline run. This keeps secrets and configuration in sync and simplifies rollouts.
 
 You cannot mix pipeline secrets with environment secrets for the same configuration. If pipeline secret variables are defined for the deploy step, they are used in preference.
