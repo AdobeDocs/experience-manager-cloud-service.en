@@ -5,10 +5,15 @@ badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
+hide: yes
+hidefromtoc: yes
+index: no
 ---
 # Reuse Content Fragments using MSM {#reuse-content-fragments-using-msm}
 
 Multi Site Manager (MSM), and the Live Copy functionality, enables you to use the same content in multiple locations, while synchronizing with the source content.
+
+<!-- CQDOC-23473 - feature is currently beta so page is hidden, see metadata -->
 
 * With MSM Live Copies you can:
   * Create content once and then
@@ -39,17 +44,42 @@ MSM for Content Fragments, combined with functionality within the Content Fragme
 
 ## Create a Live Copy {#create-a-live-copy}
 
+To create a Live Copy of your Content Fragment:
+
+1. In the Content Fragment console navigate to the location of your fragment.
+1. Select your fragment.
+1. Select **Create Live Copy** from the top toolbar.
+1. In the dialog that opens specify the destination and continue with **Next**.
+1. Specify the properties. You can specify the title, name and whether the Live Copy should exclude children (nested fragments).
+1. Continue with **Next**.
+1. Select whether you want the Live Copy created immediately (**Now**), or at a **Later** date and time.
+1. Confirm with **Create Live Copy**.
+
   >[!CAUTION]
   >
   >If you want to use MSM to create copies of Content Fragments), then any **Unique** constraints should be removed from any Data Types used in the respective [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md).
 
 ## View properties and status {#view-properties-and-status}
 
-View properties and status of source and Live Copy
+To view properties and the status of the source and your Live Copy:
+
+1. In the Content Fragment console navigate to the location of your fragment.
+1. Select your fragment.
+1. Select the Information (i) icon in the **Title** column of your fragment. 
+   The right information panel will open. 
+1. Select the tab for **Live Copy Details**.
 
 ## Propagate modifications {#propagate-modifications}
 
-Propagate modifications from source to Live Copy
+To propagate modifications from the source to your Live Copy.
+
+### Synchronize {#synchronize}
+
+To synchronize: 
+
+### Rollout {#rollout}
+
+To roll out:
 
 ## Cancel, and reinstate, inheritance {#cancel-and-reinstate-inheritance}
 
