@@ -14,6 +14,8 @@ index: no
 Multi Site Manager (MSM), and the Live Copy functionality, enables you to use the same content in multiple locations, while synchronizing with the source content.
 
 <!-- CQDOC-23473 - feature is currently beta so page is hidden, see metadata -->
+<!-- CQDOC-23473 - screenshots -->
+<!-- CQDOC-23473 - only mentioned once in ToC, add entries -->
 
 * With MSM Live Copies you can:
   * Create content once and then
@@ -77,11 +79,21 @@ To propagate modifications from the source to your Live Copy.
 
 To synchronize: 
 
+1. In the Content Fragment console navigate to the location of your fragment.
+1. Select your fragment.
+1. Select **Synchronize** from the toolbar.
+1. Confirm **Synchronize** in the dialog.
+
 ### Rollout {#rollout}
 
 To roll out:
 
-![Rollout icon](/help/sites-cloud/administering/content-fragments/assets/cf-managing-rollout.png)
+1. In the Content Fragment console navigate to the location of your fragment.
+1. Select your fragment.
+1. Select **Rollout** from the toolbar. The wizard will open to guide you through the process.
+1. Select the Live Copies to include in the rollout and **Continue**.
+1. Schedule the rollout for immediately (**Now**) or **Later**.
+1. **Continue** as appropriate.
 
 ## Cancel, and reinstate, inheritance {#cancel-and-reinstate-inheritance}
 
