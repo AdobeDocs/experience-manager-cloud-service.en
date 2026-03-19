@@ -21,7 +21,7 @@ These are the release notes for the 12 March 2026 release of the Universal Edito
 ## What's New {#what-is-new}
 
 * The items in the properties are now collapsed when navigating back to [the home screen.](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
-* The assets selector now supports filter definitions.
+* [The assets selector](/help/implementing/universal-editor/configure-assets-selector.md) now supports [filter definitions.](/help/implementing/universal-editor/filtering.md)
 * If there are no actions available for the selected item, [the context menu](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) no longer shows a chevron to access actions.
 
 ## Early Adoption Features {#early-adopter}
