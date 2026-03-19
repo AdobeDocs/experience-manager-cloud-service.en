@@ -32,11 +32,11 @@ Using MSM for Content Fragments you can:
 
 MSM for Content Fragments, combined with functionality within the Content Fragment Editor, allows you to break, and reinstate inheritance at the field level.
 
->[!CAUTION]
+>[!NOTE]
 >
->MSM for Content Fragments is only available when using Content Fragments via the **Assets** console. 
+>This page covers MSM functionality when using the **Assets** console.
 >
->MSM functionality is *not* available when using the **Content Fragments** console.
+>MSM for Content Fragments is also available when using [the **Content Fragments** console](/help/sites-cloud/administering/content-fragments/content-fragments-msm.md).
 
 ## How To {#how-to}
 
