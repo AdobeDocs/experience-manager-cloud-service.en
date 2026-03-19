@@ -81,15 +81,23 @@ To synchronize:
 
 To roll out:
 
+![Rollout icon](/help/sites-cloud/administering/content-fragments/assets/cf-managing-rollout.png)
+
 ## Cancel, and reinstate, inheritance {#cancel-and-reinstate-inheritance}
 
-You can cancel, and reinstate, inheritance for:
+Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of Multi-Site Management.
 
-* fields and variations in the [Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md#inheritance)
-* [metadata of related assets](/help/assets/content-fragments/content-fragments-variations.md#canceling-reenabling-inheritance-individual-items)
-* [Suspend and resume the relationship](/help/assets/reuse-assets-using-msm.md#suspend-resume)
-* [Remove the live relationship](/help/assets/reuse-assets-using-msm.md#detach)
-* [Compare MSM for Content Fragments (and Assets) with MSM for Sites](/help/assets/reuse-assets-using-msm.md#comparison)
+You can cancel (then re-enable) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
+
+For example:
+
+* Cancel Inheritance
+
+  ![Cancel Inheritance button](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-cancel-inheritance.png)
+
+* Re-enable Inheritance (if inheritance is already canceled)
+
+  ![Re-Enable Inheritance button](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-reenable-inheritance.png)
 
 ## Compare MSM for Content Fragments and Sites Pages {#compare-msm-for-content-fragments-and-sites-pages}
 

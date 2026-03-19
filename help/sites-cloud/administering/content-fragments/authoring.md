@@ -69,7 +69,7 @@ When you first open the Content Fragment Editor, you see four main areas:
   >
   >Depending on definitions in the underlying model, fields can be subject to certain types of [Validation](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#validation).
 
-![Content Fragment Editor - Overview](assets/cf-authoring-overview.png)
+![Content Fragment Editor - Overview](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 ## Navigate the Content Fragment structure {#navigate-structure}
 
@@ -99,13 +99,13 @@ In the left panel you can see:
 
 In various parts of the editor you can see the link icon. This icon can be used to open the item shown; for example, a Content Fragment Model, a Parent Reference, or a fragment that is referenced:
 
-![Content Fragment Editor - Link Icon](assets/cf-authoring-link-icon.png)
+![Content Fragment Editor - Link Icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-link-icon.png)
 
 ### Structure tree {#structure-tree}
 
 Open the **Structure tree** tab from the editor toolbar to show the hierarchical structure of the Content Fragment, and its references. Use the link icons to navigate to the references.
 
-![Content Fragment Editor - Structure tree](assets/cf-authoring-structure-tree.png)
+![Content Fragment Editor - Structure tree](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-structure-tree.png)
 
 >[!NOTE]
 >
@@ -143,11 +143,11 @@ To create a Variation of your Content Fragment:
    >
    >After creating your first variation, existing variations will be listed in the same panel.
 
-   ![Content Fragment Editor - Create your first Variation](assets/cf-authoring-create-variation-01.png)
+   ![Content Fragment Editor - Create your first Variation](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-create-variation-01.png)
 
 1. In the dialog, enter a **Title** for your variation, and a **Description** if wanted:
 
-   ![Content Fragment Editor - Create Variation dialog](assets/cf-authoring-create-variation-02.png)
+   ![Content Fragment Editor - Create Variation dialog](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-create-variation-02.png)
 
 1. **Create** the variation. It appears in the list.
 
@@ -183,7 +183,7 @@ To delete a Variation of your Content Fragment:
 
 1. In the **Variation** panel, select the delete icon (Trash Can):
 
-   ![Content Fragment Editor - Delete Variation icon](assets/cf-authoring-delete-variation.png)
+   ![Content Fragment Editor - Delete Variation icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-delete-variation.png)
 
 1. A dialog opens. Select **Delete** to confirm the action.
 
@@ -197,7 +197,7 @@ To delete a Variation of your Content Fragment:
 
 Fields that are defined as either Plain Text or Markdown have a simple text box, without (on-screen) formatting options:
 
-![Content Fragment Editor - Multi line text - full screen](assets/cf-authoring-multilinetext-plaintext-markdown.png)
+![Content Fragment Editor - Multi line text - full screen](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-plaintext-markdown.png)
 
 ## Edit Multi line text fields - Rich Text {#edit-multi-line-text-fields-rich-text}
 
@@ -223,7 +223,7 @@ For **[Multi line text](/help/sites-cloud/administering/content-fragments/conten
 
 For example:
 
-![Content Fragment Editor - Multi line text - full screen toggle](assets/cf-authoring-multilinetext-fullscreen-toggle.png)
+![Content Fragment Editor - Multi line text - full screen toggle](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-fullscreen-toggle.png)
 
 >[!NOTE]
 >
@@ -235,7 +235,7 @@ The full-screen editor offers the same editing options as when in-flow - but off
 
 For example:
 
-![Content Fragment Editor - Multi line text - full screen](assets/cf-authoring-multilinetext-fullscreen.png)
+![Content Fragment Editor - Multi line text - full screen](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-fullscreen.png)
 
 ### Statistics - Rich Text {#statistics-rich-text}
 
@@ -243,7 +243,7 @@ The action **Statistics** displays a range of information about the text in a Mu
 
 For example:
 
-![Content Fragment Editor - Statistics](assets/cf-authoring-multilinetext-statistics.png)
+![Content Fragment Editor - Statistics](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-statistics.png)
 
 ### Compare and Synchronize - Rich Text {#compare-and-synchronize-rich-text}
 
@@ -272,7 +272,7 @@ This opens the Multi line field in full-screen and:
 
 For example, a scenario where the variation content had been completely rewritten, so a synchronization will replace that new content with the content from **Main**:
 
-![Content Fragment Editor - Compare and Sync](assets/cf-authoring-multilinetext-compare.png)
+![Content Fragment Editor - Compare and Sync](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-multilinetext-compare.png)
 
 ## Manage References {#manage-references}
 
@@ -325,7 +325,7 @@ To reference a local asset, you can either:
 * drag and drop the new asset file directly (for example, from your file system) into the **Content Reference** field
 * use the **Add asset** action, then select either **Browse Assets** or **Upload** to open the appropriate selector for you to use:
 
-  ![Content Fragment Editor - Add asset options](assets/cf-authoring-add-asset-options.png)
+  ![Content Fragment Editor - Add asset options](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-add-asset-options.png)
 
 ##### Reference Remote Assets {#reference-remote-assets}
 
@@ -333,11 +333,11 @@ To reference remote assets:
 
 1. Specify the remote **Repository** when browsing for assets:
 
-   ![Content Fragment Editor - Select Asset from remote](assets/cf-authoring-remote-asset-01.png)
+   ![Content Fragment Editor - Select Asset from remote](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-remote-asset-01.png)
 
 2. After selection the location can be seen in the asset information: 
   
-   ![Content Fragment Editor - Asset from remote repository](assets/cf-authoring-remote-asset-02.png)
+   ![Content Fragment Editor - Asset from remote repository](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-remote-asset-02.png)
 
 ###### Remote Assets - Limitations {#remote-assets-limitations}
 
@@ -384,13 +384,29 @@ Selecting the link icon in the top toolbar opens a list of all parent references
 
 For example:
 
-![Content Fragment Editor - Show References](assets/cf-authoring-show-references-link.png)
+![Content Fragment Editor - Show References](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references-link.png)
 
 A window opens, listing all related references. To open a reference, select the name or title, or the link icon. 
 
 For example:
 
-![Content Fragment Editor - Show References](assets/cf-authoring-show-references.png)
+![Content Fragment Editor - Show References](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references.png)
+
+## Inheritance {#inheritance}
+
+Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/sites-cloud/administering/content-fragments/content-fragments-msm.md).
+
+You can cancel (then re-enable) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
+
+For example:
+
+* Cancel Inheritance
+
+  ![Cancel Inheritance button](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-cancel-inheritance.png)
+
+* Re-enable Inheritance (if inheritance is already canceled)
+
+  ![Re-Enable Inheritance button](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-reenable-inheritance.png)
 
 ## View Properties, and Tags {#view-properties-tags}
 
@@ -399,7 +415,7 @@ In the properties tab of the right panel, properties (metadata) and tags can be 
 * for the **Content Fragment** - if **Main** is currently selected
 * for a specific **Variation**
 
-![Content Fragment Editor - Properties](assets/cf-authoring-properties.png) 
+![Content Fragment Editor - Properties](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-properties.png) 
 
 ### Edit Properties and Tags {#edit-properties-tags}
 
@@ -409,7 +425,7 @@ In the properties tab (right panel) you can also edit:
 * **Description**
 * **Tags**: using the drop-down list, or the selection dialog
 
-  ![Content Fragment Editor - Manage Tags](assets/cf-authoring-edit-tags.png) 
+  ![Content Fragment Editor - Manage Tags](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-edit-tags.png) 
 
 ### Open the Content Fragment Model {#open-content-fragment-model}
 
@@ -417,7 +433,7 @@ When you have **Main** selected, the name of the underlying Content Fragment Mod
 
 For example:
 
-![Content Fragment Editor - open Content Fragment Model](assets/cf-authoring-open-model.png)
+![Content Fragment Editor - open Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-open-model.png)
 
 ## View the Version History {#view-version-history}
 
@@ -427,7 +443,7 @@ In the **Version history** tab of the right panel, details of the current, and p
 >
 >A new version is created when the content fragment is published.
 
-![Content Fragment Editor - Version History Overview](assets/cf-authoring-version-history-overview.png)
+![Content Fragment Editor - Version History Overview](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-overview.png)
 
 ### Compare Version {#compare-version}
 
@@ -439,7 +455,7 @@ To compare a previous version to the current:
 
 1. Select **Compare**. 
 
-![Content Fragment Editor - Version History Compare](assets/cf-authoring-version-history-compare.png)
+![Content Fragment Editor - Version History Compare](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare.png)
 
 This opens up a view that displays differences between the current version of the content, and the selected previous version of the content fragment. From the **Variations with changes** drop-down, you can select to see differences from the Main content and/or content from a Variation. 
 
@@ -448,7 +464,7 @@ Differences are indicated by color:
 * Green: indicates content added (to the current version)
 * Red: indicates content removed (from the current version)
 
-![Content Fragment Editor - Version History Compare Versions](assets/cf-authoring-version-history-compare-versions.png)
+![Content Fragment Editor - Version History Compare Versions](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare-versions.png)
 
 ### Revert to a Version {#revert-version}
 
@@ -460,7 +476,7 @@ To revert to a specific version:
 
 1. Select **Revert**.
 
-![Content Fragment Editor - Version History Revert](assets/cf-authoring-version-history-revert.png)
+![Content Fragment Editor - Version History Revert](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-revert.png)
 
 ## View the Language Copies {#view-language-copies}
 
@@ -468,7 +484,7 @@ In the **Language properties** tab details of any related language copies are sh
 
 For example:
 
-![Content Fragment Editor - open Language Copy](assets/cf-authoring-open-language-copies.png)
+![Content Fragment Editor - open Language Copy](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-open-language-copies.png)
 
 >[!NOTE]
 >
@@ -488,7 +504,7 @@ To enable you to collaborate in-product and in-context, the **Comments** tab in 
 * Edit an existing comment
 * Delete comments
 
-![Content Fragment Editor - Comments tab](assets/cf-authoring-comments.png)
+![Content Fragment Editor - Comments tab](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-comments.png)
 
 >[!NOTE]
 >
