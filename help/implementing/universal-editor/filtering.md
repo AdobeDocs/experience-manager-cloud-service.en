@@ -12,7 +12,7 @@ Learn how you can define filters to limit options available in the editor such a
 
 ## Configuring Filters {#configuring-filters}
 
-When using the Universal Editor, you can restrict the options allowed for certain functionality by defining a filter. A filter is a list of items or actions available to the specific context. For example you can filter the components available to be inserted into a container, you can [filter the options available in the RTE,](/help/implementing/universal-editor/configure-rte.md) and you can [filter the assets available](/help/implementing/universal-editor/configure-assets.md) in the assets selector.
+When using the Universal Editor, you can restrict the options allowed for certain functionality by defining a filter. A filter is a list of items or actions available to the specific context. For example you can filter the components available to be inserted into a container, you can [filter the options available in the RTE,](/help/implementing/universal-editor/configure-rte.md) and you can [filter the assets available](/help/implementing/universal-editor/configure-assets-selector.md) in the assets selector.
 
 The filters must all be defined similarly.
 
@@ -73,6 +73,6 @@ data-aue-filter="container-filter"
 >Learn about other customization and extension options available to the Universal Editor in the documents:
 >
 >* [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md)
->* [Configuring Filters for the Assets Selector](/help/implementing/universal-editor/configure-assets-filter.md)
+>* [Configuring Filters for the Assets Selector](/help/implementing/universal-editor/configure-assets-selector.md)
 >* [Customizing the Universal Editor](/help/implementing/universal-editor/customizing.md)
 >* [Extending the Universal Editor](/help/implementing/universal-editor/extending.md)
