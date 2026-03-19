@@ -73,6 +73,6 @@ data-aue-filter="container-filter"
 >Learn about other customization and extension options available to the Universal Editor in the documents:
 >
 >* [Configuring the RTE for the Universal Editor](/help/implementing/universal-editor/configure-rte.md)
->* [Configuring the RTE for the Universal Editor](//help/implementing/universal-editor/configure-assets.md)
+>* [Configuring Filters for the Assets Selector](/help/implementing/universal-editor/configure-assets-filter.md)
 >* [Customizing the Universal Editor](/help/implementing/universal-editor/customizing.md)
 >* [Extending the Universal Editor](/help/implementing/universal-editor/extending.md)
