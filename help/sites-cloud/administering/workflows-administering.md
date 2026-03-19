@@ -3,6 +3,7 @@ title: Administering Workflow Instances
 description: Learn how to Administer Workflow Instances using the workflow console
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 solution: Experience Manager Sites
 ---

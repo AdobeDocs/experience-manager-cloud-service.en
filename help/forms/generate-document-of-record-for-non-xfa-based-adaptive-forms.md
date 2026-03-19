@@ -1,11 +1,12 @@
 ---
-title: How to generate a document of record (DoR) for AEM Forms?
-description: Learn to generate a template for a Document of Record (DoR) for Adaptive Forms.
+title: Generate a Submission PDF (formerly Document of Record) for AEM Forms
+description: Learn to generate a Submission PDF from form submissions for Adaptive Forms. Create a PDF of the submitted form for archival or reference.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
 ---
-# Generate Document of Record for Adaptive Forms
+# Generate a Submission PDF (formerly Document of Record) for Adaptive Forms
 
 >[!NOTE]
 >
@@ -19,30 +20,30 @@ role: User, Developer
 
 ## Overview {#overview}
 
-When a form is filled or submitted, you can keep a record of the form, in print or in document format. This record is referred as a Document of Record (DoR). It is a print-friendly copy of the submitted form. You can also refer the document of record for the information customers have filled at a later date or use the Document of Record to archive forms and content together in PDF Format.  
+When a form is filled or submitted, you can keep a record of the form, in print or in document format. This record is called a Submission PDF (formerly Document of Record, or DoR). It is a print-friendly PDF of the submitted form. You can also refer to the Submission PDF for the information customers have filled at a later date or use the Submission PDF to archive forms and content together in PDF format.
 
-![Document of Record](assets/document-of-record.png)
+![Submission PDF (formerly Document of Record)](assets/document-of-record.png)
 
-To create a Document of Record, an XFA or Acroform based template is merged with data collected via an adaptive form. You can generate a Document of Record automatically or on-demand.
-The on-demand option lets you specify a custom XFA or Acroform based template to provide a custom appearance to your Document of Record.
+To create a Submission PDF, an XFA or Acroform based template is merged with data collected via an adaptive form. You can generate a Submission PDF automatically or on-demand.
+The on-demand option lets you specify a custom XFA or Acroform based template to provide a custom appearance to your Submission PDF.
 
 You can:
 
-* [Generate an XFA-based Document of Record](#generate-an-XFA-based-document-of-record)
-* [Generate an Acroform-based (Acrobat Form PDF) Document of Record](#generate-an-Acroform-based-document-of-record)
-* [Auto generate a Document of Record](#auto-generate-a-document-of-record)
+* [Generate an XFA-based Submission PDF](#generate-an-XFA-based-document-of-record)
+* [Generate an Acroform-based (Acrobat Form PDF) Submission PDF](#generate-an-Acroform-based-document-of-record)
+* [Auto generate a Submission PDF](#auto-generate-a-document-of-record)
 
 ## Before you start {#components-to-automatically-generate-a-document-of-record}
 
-Before you start learn and ready the assets required for a Document of Record:
+Before you start learn and ready the assets required for a Submission PDF:
 
-**Base template:** An XFA template (XDP file) created in Forms Designer or an Acrobat Form (AcroForm). [Base template](#base-template-of-a-document-of-record) is used to specify styling and branding information for a Document of Record. Upload your XFA template (XDP file) to your AEM Forms instance before
+**Base template:** An XFA template (XDP file) created in Forms Designer or an Acrobat Form (AcroForm). [Base template](#base-template-of-a-document-of-record) is used to specify styling and branding information for a Submission PDF. Upload your XFA template (XDP file) to your AEM Forms instance before
 
-**Adaptive Form:** An Adaptive Form for which the Document of Record is to be generated.
+**Adaptive Form:** An Adaptive Form for which the Submission PDF is to be generated.
 
-## Generate an XFA-based Document of Record {#generate-an-XFA-based-document-of-record}
+## Generate an XFA-based Submission PDF {#generate-an-XFA-based-document-of-record}
 
-Upload your XFA template (XDP file) to your AEM Forms instance. Perform the following steps to configure an Adaptive Form to use XFA template (XDP file) as template for Document of Record:
+Upload your XFA template (XDP file) to your AEM Forms instance. Perform the following steps to configure an Adaptive Form to use XFA template (XDP file) as template for Submission PDF:
 
 1. In Experience Manager author instance, click **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms and Documents].**
 1. Select a form, and click **[!UICONTROL Properties]**.
@@ -51,11 +52,11 @@ Upload your XFA template (XDP file) to your AEM Forms instance. Perform the foll
 1. In the Document of Record Template Configuration section of the Form Model tab, select **Associate Form Template as Document of Record Template**. On selecting this option, all XFA template (XDP files) available on your machine are displayed. Select the appropriate file. Also, ensure same schema (data schema) is used for Adaptive Form and selected XFA template (XDP file).  
 1. Click **[!UICONTROL Done]**
 
-Your Adaptive Form is now configured to use an XDP file as template for Document of Record. The next step is to [bind Adaptive Form components with corresponding template fields](#bind-adaptive-form-components-with-template-fields).
+Your Adaptive Form is now configured to use an XDP file as template for Submission PDF. The next step is to [bind Adaptive Form components with corresponding template fields](#bind-adaptive-form-components-with-template-fields).
 
-## Generate an Acroform-based Document of Record {#generate-an-Acroform-based-document-of-record}
+## Generate an Acroform-based Submission PDF {#generate-an-Acroform-based-document-of-record}
 
-Upload your Adobe Acrobat PDF (Acroform) to your AEM Forms instance. Perform the following steps to configure an Adaptive Form to use Adobe Acrobat PDF (Acroform) as template for Document of Record:
+Upload your Adobe Acrobat PDF (Acroform) to your AEM Forms instance. Perform the following steps to configure an Adaptive Form to use Adobe Acrobat PDF (Acroform) as template for Submission PDF:
 
 1. In Experience Manager author instance, click **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms and Documents].**
 1. Select a form, and click **[!UICONTROL Properties]**.
@@ -64,19 +65,19 @@ Upload your Adobe Acrobat PDF (Acroform) to your AEM Forms instance. Perform the
 1. In the Document of Record Template Configuration section of the Form Model tab, select **Associate Form Template as Document of Record Template**. On selecting this option, all Acrobat PDF (Acroform) available on your machine are displayed. Select the appropriate file.
 1. Click **[!UICONTROL Done]**
 
-Your Adaptive Form is now configured to use an Acroform as template for Document of Record. The next step is to [bind Adaptive Form components with corresponding template fields](#bind-adaptive-form-components-with-template-fields).
+Your Adaptive Form is now configured to use an Acroform as template for Submission PDF. The next step is to [bind Adaptive Form components with corresponding template fields](#bind-adaptive-form-components-with-template-fields).
 
-## Automatically generate a Document of Record {#auto-generate-a-document-of-record}
+## Automatically generate a Submission PDF {#auto-generate-a-document-of-record}
 
-When an Adaptive Form is configured to automatically generate a Document of Record, every time a form is changed, its Document of Record is updated immediately. For example, if a field is removed from an existing adaptive form, the corresponding field is also removed and is not visible in the Document of Record. There are many other advantages of automatically generating Document of Record. :
+When an Adaptive Form is configured to automatically generate a Submission PDF, every time a form is changed, its Submission PDF is updated immediately. For example, if a field is removed from an existing adaptive form, the corresponding field is also removed and is not visible in the Submission PDF. There are many other advantages of automatically generating a Submission PDF:
 
-* Form developers do not have to maintain data bindings manually. Auto-generated Document of Record takes care of data binding related updates.
-* Form developers do not have to manually hide fields which are marked exclude from Document of Record. Auto-generated Document of Record are pre-configured to exclude such fields.
-* Auto-generated Document of Record option saves time required to create a Form template for Document of Record.
-* Auto-generated Document of Record option lets you use different styling and appearances using different base templates. It helps select best style and appearance for Document of Record for your organization. If you do not specify styling, system styles are set as default.
-* Auto-generated Document of Record ensures any change in form is immediately reflected in Document of Record.
+* Form developers do not have to maintain data bindings manually. Auto-generated Submission PDF takes care of data binding related updates.
+* Form developers do not have to manually hide fields which are marked exclude from Submission PDF. Auto-generated Submission PDF are pre-configured to exclude such fields.
+* Auto-generated Submission PDF option saves time required to create a Form template for Submission PDF.
+* Auto-generated Submission PDF option lets you use different styling and appearances using different base templates. It helps select best style and appearance for Submission PDF for your organization. If you do not specify styling, system styles are set as default.
+* Auto-generated Submission PDF ensures any change in form is immediately reflected in Submission PDF.
 
-Perform the following steps to configure an Adaptive Form to automatically generate a Document of Record:
+Perform the following steps to configure an Adaptive Form to automatically generate a Submission PDF:
 
 1. In Experience Manager author instance, click **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms and Documents].**
 1. Select a form, and click **[!UICONTROL Properties]**.
@@ -87,7 +88,7 @@ Perform the following steps to configure an Adaptive Form to automatically gener
 
 ## Bind Adaptive Form components with template fields {#bind-adaptive-form-components-with-template-fields}
 
- Bind Adaptive Form fields with template fields to display captured form data in corresponding Document of Record Field. To bind Adaptive Form components with corresponding document of record template fields:
+ Bind Adaptive Form fields with template fields to display captured form data in corresponding Submission PDF field. To bind Adaptive Form components with corresponding Submission PDF template fields:
 
 1. Open the Adaptive Form, configured to use a custom form template for editing.
 
@@ -104,15 +105,15 @@ Perform the following steps to configure an Adaptive Form to automatically gener
 In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-You can use Send Email, Experience Manager Workflow submit action in conjunction with [Document of Record step, and other submit actions](configuring-submit-actions.md) to receive a Document of Record.  
+You can use Send Email, Experience Manager Workflow submit action in conjunction with [Document of Record step, and other submit actions](configuring-submit-actions.md) to receive a Submission PDF.
 
-## Incremental updates to Document of Record template {#document-of-record-template-incremental-updates}
+## Incremental updates to Submission PDF template {#document-of-record-template-incremental-updates}
 
-Adaptive forms and corresponding document of record templates can evolve over the period of time. You can choose to add, remove, or modify fields to an Adaptive Form or a Document of Record template.
+Adaptive forms and corresponding Submission PDF templates can evolve over the period of time. You can choose to add, remove, or modify fields to an Adaptive Form or a Submission PDF template.
 
-When you change a Document of Record template and upload the changed Document of Record template to AEM Forms, the Adaptive Forms editor automatically detects the changed bindings and informs you about the adaptive form components that require new bindings. It lets you make incremental updates to a Document of Record template.
+When you change a Submission PDF template and upload the changed template to AEM Forms, the Adaptive Forms editor automatically detects the changed bindings and informs you about the adaptive form components that require new bindings. It lets you make incremental updates to a Submission PDF template.
 
-For example, an Organization, *We.Retail*, has an AcroForm-based Document of Record template, *we-retail-invoice.pdf*. The template looks like the following:
+For example, an Organization, *We.Retail*, has an AcroForm-based Submission PDF template, *we-retail-invoice.pdf*. The template looks like the following:
 
 ![Original Template](assets/we-retail-invoice.png)
 
@@ -124,22 +125,22 @@ The developer uploads and applies to the updated template to the adaptive form. 
 
 ![Binding Error](assets/we-retail-binding-error.png)
 
-The form developer binds Adaptive Forms fields with corresponding Document of Record template.
+The form developer binds Adaptive Forms fields with corresponding Submission PDF template.
 
 >[!VIDEO](assets/we-retail-binding.mp4)
 
-Now, when the Adaptive Form is submitted an updated  Document of Record of record is created.
+Now, when the Adaptive Form is submitted an updated Submission PDF is created.
 
 ![Updated-](assets/we-retail-new-invoice-sent-to-customer.png)
 
-## Key considerations when working with Document of Record {#key-considerations-when-working-with-document-of-record}
+## Key considerations when working with Submission PDF {#key-considerations-when-working-with-document-of-record}
 
-Keep in mind the following considerations and limitations when working on Document of Record for Adaptive Forms.
+Keep in mind the following considerations and limitations when working on the Submission PDF for Adaptive Forms.
 
-* **Rich text support**: Document of Record supports HTML markup tags in rich text fields. For complete details on supported tags and accessibility considerations, see [Supported HTML markup tags in Document of Record](html-markup-tags-support-in-document-of-record.md).
-* Document fragments in an Adaptive Form do not appear in the Document of Record. However, Adaptive Form Fragments are supported.
-* Content binding in Document of Record generated for XML Schema based Adaptive Form is not supported.
-* Localized version of Document of Record is created on demand for a locale when the user requests the rendering of the Document of Record. Localization of Document of Record occurs along with localization of Adaptive Form. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
+* **Rich text support**: Submission PDF supports HTML markup tags in rich text fields. For complete details on supported tags and accessibility considerations, see [Supported HTML markup tags in Submission PDF](html-markup-tags-support-in-document-of-record.md).
+* Document fragments in an Adaptive Form do not appear in the Submission PDF. However, Adaptive Form Fragments are supported.
+* Content binding in Submission PDF generated for XML Schema based Adaptive Form is not supported.
+* Localized version of Submission PDF is created on demand for a locale when the user requests the rendering of the Submission PDF. Localization of Submission PDF occurs along with localization of Adaptive Form. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
 
 <!-- ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
 
@@ -160,7 +161,7 @@ When you select a form model, configure Document of Record using options availab
 
 ## Mapping of Adaptive Form elements {#mapping-of-adaptive-form-elements}
 
-The following table describes Adaptive Form components and corresponding XFA components and if those appear in a Document of Record.
+The following table describes Adaptive Form components and corresponding XFA components and if those appear in a Submission PDF.
 
 ### Fields {#fields}
 
@@ -169,7 +170,7 @@ The following table describes Adaptive Form components and corresponding XFA com
   <tr>
    <th>Adaptive Form component</th>
    <th>Corresponding XFA component</th>
-   <th>Included by default in Document of Record Template?</th>
+   <th>Included by default in Submission PDF template?</th>
    <th>Notes</th>
   </tr>
   <tr>
@@ -248,7 +249,7 @@ The following table describes Adaptive Form components and corresponding XFA com
    <td>File Attachment</td>
    <td> </td>
    <td>false</td>
-   <td>Not available in Document of Record template. Only Available in Document of Record through attachments.</td>
+   <td>Not available in Submission PDF template. Only available in Submission PDF through attachments.</td>
   </tr>
  </tbody>
 </table>
@@ -274,23 +275,23 @@ The following table describes Adaptive Form components and corresponding XFA com
 
 | Adaptive Form component |Corresponding XFA component |Notes |
 |---|---|---|
-| Image |Image |The TextDraw and Image components, whether bound or unbound, always appear in the Document of Record for an XSD-based Adaptive Form, unless excluded using the Document of Record settings. |
+| Image |Image |The TextDraw and Image components, whether bound or unbound, always appear in the Submission PDF for an XSD-based Adaptive Form, unless excluded using the Submission PDF settings. |
 
 ### Tables {#tables}
 
-The Adaptive Forms table components such as header, footer, and row map to corresponding XFA components. You can map repeatable panels to tables in Document of Record.
+The Adaptive Forms table components such as header, footer, and row map to corresponding XFA components. You can map repeatable panels to tables in Submission PDF.
 
-## Base template of a Document of Record {#base-template-of-a-document-of-record}
+## Base template of a Submission PDF {#base-template-of-a-document-of-record}
 
-Base template provides styling and appearance information to Document of Record. It lets you customize default appearance of auto generated Document of Record. For example, you can use base template to add your company logo in the header and copyright information in the footer of the Document of Record.
+Base template provides styling and appearance information to Submission PDF. It lets you customize default appearance of auto generated Submission PDF. For example, you can use base template to add your company logo in the header and copyright information in the footer of the Submission PDF.
 
-The master page from base template is used as a master page for Document of Record template. The master page can have information such as page header, page footer, and page number that you can apply to Document of Record. You can apply such information to Document of Record using base template for auto generation of Document of Record. Using base template enables you to change default properties of fields.
+The master page from base template is used as a master page for Submission PDF template. The master page can have information such as page header, page footer, and page number that you can apply to Submission PDF. You can apply such information to Submission PDF using base template for auto generation of Submission PDF. Using base template enables you to change default properties of fields.
 
 Always follow [Base template conventions](#base-template-conventions) when you design base template.
 
 ## Base template conventions {#base-template-conventions}
 
-A base template is used to define header, footer, styling, and appearance for a Document of Record. The header and footer can include information like the company logo and copyright text. The first master page in the base template is copied and used as a master page for the Document of Record, which contains header, footer, page number, or any other information that should appear across all pages in the Document of Record. If you use a base template which does not conform to base template conventions, the first master page from the base template is still used in Document of Record template. It is highly recommended that you design your base template as per its conventions, and use it for auto generation of Document of Record.
+A base template is used to define header, footer, styling, and appearance for a Submission PDF. The header and footer can include information like the company logo and copyright text. The first master page in the base template is copied and used as a master page for the Submission PDF, which contains header, footer, page number, or any other information that should appear across all pages in the Submission PDF. If you use a base template which does not conform to base template conventions, the first master page from the base template is still used in Submission PDF template. It is highly recommended that you design your base template as per its conventions, and use it for auto generation of Submission PDF.
 
 **Master page conventions**
 
@@ -302,9 +303,9 @@ A base template is used to define header, footer, styling, and appearance for a 
 
 **Styling conventions for fields**
 
-* To apply style on the fields in the Document of Record, the base template provides fields located in the `AF_FIELDSSUBFORM` subfrom under the `AF_METATEMPLATE` root subform.
+* To apply style on the fields in the Submission PDF, the base template provides fields located in the `AF_FIELDSSUBFORM` subfrom under the `AF_METATEMPLATE` root subform.
 
-* The properties of these fields are applied to the fields in the Document of Record. These fields should follow the `AF_<name of field in all caps>_XFO` naming convention. For example, the field name for check box should be `AF_CHECKBOX_XFO`.
+* The properties of these fields are applied to the fields in the Submission PDF. These fields should follow the `AF_<name of field in all caps>_XFO` naming convention. For example, the field name for check box should be `AF_CHECKBOX_XFO`.
 
 To create a base template, do the following in Forms Designer.
 
@@ -315,10 +316,10 @@ To create a base template, do the following in Forms Designer.
 1. Select **[!UICONTROL DoR Base Template]**.
 1. Click **[!UICONTROL Next]** and provide the required information.
 
-1. (Optional) Modify the styling and appearance of fields that you want to apply on the fields in the Document of Record.
+1. (Optional) Modify the styling and appearance of fields that you want to apply on the fields in the Submission PDF.
 1. Save the form.
 
-You can now use the saved form as a base template for Document of Record. Do not modify or remove any scripts present in the base template.
+You can now use the saved form as a base template for Submission PDF. Do not modify or remove any scripts present in the base template.
 
 **Modifying base template**
 
@@ -327,29 +328,29 @@ You can now use the saved form as a base template for Document of Record. Do not
 
 Strictly follow above mentioned conventions and instructions to design a base template.
 
-## Customize the branding information in Document of Record {#customize-the-branding-information-in-document-of-record}
+## Customize the branding information in Submission PDF {#customize-the-branding-information-in-document-of-record}
 
-While generating a Document of Record, you can change branding information for the Document of Record on the Document of Record tab. The Document of Record tab includes options such as logo, appearance, layout, header and footer, disclaimer, and whether or not you want to include unselected check box and radio button options.
+While generating a Submission PDF, you can change branding information for the Submission PDF on the Document of Record tab. The Document of Record tab includes options such as logo, appearance, layout, header and footer, disclaimer, and whether or not you want to include unselected check box and radio button options.
 
-To localize the branding information that you enter in the Document of Record tab, ensure that the locale of the browser is set appropriately. To customize the branding information of Document of Record, perform the following steps:
+To localize the branding information that you enter in the Document of Record tab, ensure that the locale of the browser is set appropriately. To customize the branding information of Submission PDF, perform the following steps:
 
-1. Select a panel (root panel) in the Document of Record and then select ![configure](assets/configure.png).
+1. Select a panel (root panel) in the Submission PDF and then select ![configure](assets/configure.png).
 1. Select ![dortab](assets/dortab.png). The Document of Record tab appears.
-1. Select either the default template or a custom template for rendering the Document of Record. If you select the default template, a thumbnail preview of the Document of Record appears below the Template drop-down.
-1. Based on whether you select a default or a custom template, some of the following properties, or all properties, appear in the Document of Record tab. Specify the below mentioned properties to define the appearance of the Document of Record:
+1. Select either the default template or a custom template for rendering the Submission PDF. If you select the default template, a thumbnail preview of the Submission PDF appears below the Template drop-down.
+1. Based on whether you select a default or a custom template, some of the following properties, or all properties, appear in the Document of Record tab. Specify the below mentioned properties to define the appearance of the Submission PDF:
 
     1. **Basic Properties**: 
         * **Template**:  If you choose to select a custom template, browse a select an XDP on your [!DNL AEM Forms] server. If you want to use a template that is not already on your [!DNL AEM Forms] server, you should first upload the XDP to your [!DNL AEM Forms] server.
-        * **Accent Color**: The color in which header text and separator lines are rendered in the document or record PDF.
-        * **Font Family**: Font family of the text in the Document of Record PDF.
+        * **Accent Color**: The color in which header text and separator lines are rendered in the Submission PDF.
+        * **Font Family**: Font family of the text in the Submission PDF.
 
             >[!NOTE]
             >
             > AEM Forms offers a variety of built-in fonts that seamlessly integrate with PDF files. To see the list of supported fonts, [click here](/help/forms/supported-out-of-the-box-fonts.md).
 
-        * **Include form objects that are not bound to data model**: Setting the property includes unbound fields from Schema based Adaptive Form in Document of Record. 
-        * **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.
-        * **Hide description of panels**: Setting the property excludes description of the panel/table from Document of Record. Applicable for panel and table.
+        * **Include form objects that are not bound to data model**: Setting the property includes unbound fields from Schema based Adaptive Form in Submission PDF.
+        * **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Submission PDF.
+        * **Hide description of panels**: Setting the property excludes description of the panel/table from Submission PDF. Applicable for panel and table.
 
          ![Basic Properties](/help/forms/assets/basicpropertiesdor.png)
 
@@ -357,21 +358,28 @@ To localize the branding information that you enter in the Document of Record ta
         * **For Check Box and Radio Button components, show only the selected values**: Setting the property displays only selected values of check box and radio button in [!UICONTROL Document of Record].
         * **Separator for multiple value(s)**: You can choose any separator such as comma or line break to display multiple values.
         * **Options Alignment**: You can select the desired alignment (Horizontal, Vertical, Same as adaptive Form) to set the alignment for the fields such as check box or radio button to be displayed on [!UICONTROL Document of Record]. By default, the vertical alignment is set for the fields in [!UICONTROL Document of Record]. Setting the properties from the [!UICONTROL Form Field Properties] of DoR overwrites the properties set in the [!UICONTROL Item Alignment] for the fields on an Adaptive Form. In case, you select [!UICONTROL Same as Aaptive form] option, the alignment as configured in an Adaptive Form author instance is used for [!UICONTROL Document of Record] fields.  
-        * **Number of options for horizontal alignment**:You can set the number of options to be displayed on the Document of Record for the horizontal alignment. 
-        
+        * **Number of options for horizontal alignment**:You can set the number of options to be displayed on the Submission PDF for the horizontal alignment. 
+
         ![Form Field Properties](/help/forms/assets/formfieldpropertiesdor.png)
+
+        **Display labels for multi-select dropdown**
+
+        <span class="preview"> This feature is available through the Early Access program. To request access, send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
+
+        The Submission PDF now displays the selected display labels for multi-select dropdown components instead of internal stored values. For example, if a user selects "California" and "New York" from a dropdown, the Submission PDF shows the selected labels instead of the internal values such as `CA` and `NY`.
 
     3. **Master Page Properties**:
         * **Logo Image**: You can either choose to use the logo image from the Adaptive Form, choose one from DAM, or upload one from your computer.
         * **Form Title**: Title of the DoR.
-        * **Header Text**: Text that appears at the header section of the Document of Record.
+        * **Header Text**: Text that appears at the header section of the Submission PDF.
         * **Disclaimer Label**: Label of disclaimer.
-        * **Disclaimer**: Text which specifies the scope of rights and obligations on the Document of Record.
+        * **Disclaimer**: Text which specifies the scope of rights and obligations on the Submission PDF.
         * **Disclaimer Text**: Text of disclaimer.
 
         ![Master Page Properties](/help/forms/assets/masterpagepropertiesdor.png)
   
-   >[!NOTE]
+   <!--
+   [!NOTE]
    >
    >If you are using an Adaptive Form template created with a version of Designer prior to 6.3, for Accent Color and Font Family properties to work, ensure that the following is present in your Adaptive Form template under the root subform:
 
@@ -385,13 +393,13 @@ To localize the branding information that you enter in the Document of Record ta
    <color value="4,166,203"/>
    </edge>
    </proto>
-   ```
+   ```-->
 
 1. To save the branding changes, select **[!UICONTROL Done]**.
 
 >[!NOTE]
 > 
-> To display a custom form title in your Document of Record, edit the **Custom Form Title** in **Document of Record Properties** > **Master Page Properties**. This custom title:
+> To display a custom form title in your Submission PDF, edit the **Custom Form Title** in **Document of Record Properties** > **Master Page Properties**. This custom title:
 > 
 > * Appears in the header of the generated PDF
 > * Appears as the Title in the PDF's document properties
@@ -407,7 +415,7 @@ Perform the following steps from the author instance of Adaptive Form editor:
 1. Click ![Configure Icon](/help/forms/assets/configure-icon.svg) icon to open the **[!UICONTROL Properties]** of the Adaptive Form container.
 1. Open the **[!UICONTROL Document of Record Template]** tab and select from the following options:
    * **[!UICONTROL None]**: When this option is selected no [!UICONTROL Document of Record] template created for your Adaptive Form.
-   * **[!UICONTROL Associate Form Template as Document of Record Template]**:When this option is selected, XFA Form is used as a template for Document of Record.
+   * **[!UICONTROL Associate Form Template as Document of Record Template]**:When this option is selected, XFA Form is used as a template for Submission PDF.
    * **[!UICONTROL Generate Document of Record]**: When this option is selected, the [!UICONTROL Document of Record] template is automatically generated for your Adaptive Form. 
     
 1. Select ![Save](/help/forms/assets/check-button.png) to save the properties.
@@ -418,38 +426,38 @@ Perform the following steps from the author instance of Adaptive Form editor:
 >
 >When [!UICONTROL Document of Record] template is created using an Adaptive Form Template editor, then only two options are available under [!UICONTROL Document of Record Template] tab as [!UICONTROL None] and [!UICONTROL Generate Document of Record].
 
-## Table and column layouts for panels in Document of Record {#table-and-column-layouts-for-panels-in-document-of-record}
+## Table and column layouts for panels in Submission PDF {#table-and-column-layouts-for-panels-in-document-of-record}
 
-Your Adaptive Form may be a lengthy one with several form fields. You may not want to save a Document of Record as an exact copy of the Adaptive Form. Now you can choose a table or column layout for saving one or more Adaptive Form panels in the Document of Record PDF.
+Your Adaptive Form may be a lengthy one with several form fields. You may not want to save a Submission PDF as an exact copy of the Adaptive Form. Now you can choose a table or column layout for saving one or more Adaptive Form panels in the Submission PDF.
 
-Before generating a Document of Record, in a panel's settings, select Layout For The Document of Record for that panel as Table or Column. The fields in the panel get organized accordingly in the Document of Record.
+Before generating a Submission PDF, in a panel's settings, select Layout For The Document of Record for that panel as Table or Column. The fields in the panel get organized accordingly in the Submission PDF.
 
-![Fields in a panel rendered in a table layout in the Document of Record](assets/dortablelayout.png)
+![Fields in a panel rendered in a table layout in the Submission PDF](assets/dortablelayout.png)
 
-Fields in a panel rendered in a table layout in the Document of Record
+Fields in a panel rendered in a table layout in the Submission PDF
 
-![Fields in a panel rendered in a column layout in the Document of Record](assets/dorcolumnlayout.png)
+![Fields in a panel rendered in a column layout in the Submission PDF](assets/dorcolumnlayout.png)
 
-Fields in a panel rendered in a column layout in the Document of Record
+Fields in a panel rendered in a column layout in the Submission PDF
 
-## Document of Record settings {#document-of-record-settings}
+## Submission PDF settings {#document-of-record-settings}
 
-Document of Record settings let you choose options you want to include in the Document of Record. For example, a bank accepts name, age, social security number, and phone number in a form. The form generates a bank account number, and branch details. You can choose to display only the name, social security number, bank account, and branch details in Document of Record.
+Submission PDF settings let you choose options you want to include in the Submission PDF. For example, a bank accepts name, age, social security number, and phone number in a form. The form generates a bank account number, and branch details. You can choose to display only the name, social security number, bank account, and branch details in Submission PDF.
 
 Setting of the Document of Record component are available under its properties. To access the properties a component, select the component and click ![cmppr](assets/cmppr.png) in the overlay. The properties are listed in the sidebar, and you can find the following settings in it.
 
 **Field level settings**
 
-* **Exclude From Document of Record**: Setting the property true excludes the field from Document of Record. This is script-able property named `excludeFromDoR`. Its behavior depends on **Exclude fields from DoR if hidden** form level property.
+* **Exclude From Document of Record**: Setting the property true excludes the field from Submission PDF. This is script-able property named `excludeFromDoR`. Its behavior depends on **Exclude fields from DoR if hidden** form level property.
 
-* **Display panel as table:** Setting the property displays panel as table in Document of Record if panel has less than 6 fields in it. Applicable for panel only.
-* **Exclude title from Document of Record:** Setting the property excludes title of the panel/table from Document of Record. Applicable for panel and table only.
-* **Exclude description from Document of Record:** Setting the property excludes description of the panel/table from Document of Record. Applicable for panel and table only.
+* **Display panel as table:** Setting the property displays panel as table in Submission PDF if panel has less than 6 fields in it. Applicable for panel only.
+* **Exclude title from Document of Record:** Setting the property excludes title of the panel/table from Submission PDF. Applicable for panel and table only.
+* **Exclude description from Document of Record:** Setting the property excludes description of the panel/table from Submission PDF. Applicable for panel and table only.
 
 **Form level settings**
 
-* **Include unbound fields in DoR:** Setting the property includes unbound fields from Schema based Adaptive Form in Document of Record. By default it is true.
-* **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.
+* **Include unbound fields in DoR:** Setting the property includes unbound fields from Schema based Adaptive Form in Submission PDF. By default it is true.
+* **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Submission PDF at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Submission PDF.
 
 ## Use a custom XCI file
 
@@ -518,6 +526,11 @@ An XCI file helps you set various properties of a document. Forms as a Cloud Ser
   1. Locate and open the **[!UICONTROL Adaptive Forms and Interactive Communication Web Channel]** configuration.
   1. Specify path of the XCI file and click **[!UICONTROL Save]**.
 
+
+## Frequently Asked Questions {#faq}
+
+**Q: Changes are not appearing in the Submission PDF.**
+**Ans:** Open the form in the Adaptive Forms editor, make a minor edit (for example, adjust a field label or reorder a field), and save the form. This regenerates the Submission PDF template and the changes appear in the next generated PDF.
 
 ## See Also {#see-also}
 

@@ -3,6 +3,7 @@ title: Enhance content discovery with AI-Generated metadata in Admin View
 description: Learn how to enhance content discovery with AI-Generated metadata in Admin View
 feature: Smart Tags,Tagging
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: c76379e3-6bdf-4dba-9d2b-f2120f85052f
 ---
 # Enhancing content discovery with AI-Generated metadata {#ai-smart-tags}

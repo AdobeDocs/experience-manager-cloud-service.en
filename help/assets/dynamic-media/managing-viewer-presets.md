@@ -4,6 +4,7 @@ description: Learn how to create and manage viewer presets in Dynamic Media.
 contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 ---
 # Manage viewer presets{#managing-viewer-presets}

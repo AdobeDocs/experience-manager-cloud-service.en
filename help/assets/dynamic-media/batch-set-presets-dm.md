@@ -4,6 +4,7 @@ description: Learn how to automate image set and spin set creation using batch s
 contentOwner: Rick Brough
 feature: Image Presets,Viewer Presets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 ---
 # About Batch Set Presets {#about-bsp}

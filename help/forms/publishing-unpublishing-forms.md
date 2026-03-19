@@ -8,6 +8,7 @@ feature: Adaptive Forms
 role: User
 hide: yes
 hidefromtoc: yes
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
 ---
 # Publishing and unpublishing forms and documents{#publishing-and-unpublishing-forms-and-documents}

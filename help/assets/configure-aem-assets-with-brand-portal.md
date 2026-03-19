@@ -4,6 +4,7 @@ description: Learn how to configure AEM Assets with Brand Portal. The configurat
 contentOwner: AK
 feature: Brand Portal, Asset Distribution, Configuration
 role: Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 ---
 # Configure Experience Manager Assets with Brand Portal {#configure-aem-assets-with-brand-portal}

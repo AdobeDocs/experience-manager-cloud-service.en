@@ -4,6 +4,7 @@ description: Learn to create a JSON schema for an Adaptive Form and create an Ad
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 ---
 # Design JSON Schema for an Adaptive Form {#creating-adaptive-forms-using-json-schema}

@@ -4,6 +4,7 @@ description: Generate FPO (For Placement Only) renditions of new and existing as
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 869c1c34-6287-4d62-bb7a-aa4df580ac0e
 ---
 # Generate For Placement Only renditions for Adobe InDesign {#fpo-renditions}
