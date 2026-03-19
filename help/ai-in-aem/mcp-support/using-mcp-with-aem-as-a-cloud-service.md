@@ -14,7 +14,7 @@ Many Adobe Experience Manager (AEM) teams now work in Integrated Development Env
 With AEM's MCP integration, different personas can collaborate around the same content:
 
 * **Developers** can orchestrate content operations and workflows from their IDE or chat application
-* **Practitioners** and content architects can manage sites, content fragments, and assets with AI assistance while staying within AEM's existing permission model.
+* **Practitioners** and content architects can manage sites and content fragments, and import assets, with AI assistance while staying within AEM's existing permission model.
 
 >[!IMPORTANT]
 >
@@ -46,8 +46,8 @@ AEM exposes MCP servers as HTTP endpoints. The endpoints listed below are relati
 
 | **MCP Server** | **Endpoint**  | **Description**                                                                                                      |
 |---|---|----------------------------------------------------------------------------------------------------------------------|
-| **Content**  | `/content`  | All low-level content operations, including create, read, update, and delete (CRUD) for pages, fragments and assets. |
-| **Content (read-only)** | `/content-readonly`  | Read-only content operations (Get, List/Search) for pages, fragments, and assets.                                    |
+| **Content**  | `/content`  | Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing. |
+| **Content (read-only)** | `/content-readonly`  | Read-only content operations (Get, List/Search) for pages and content fragments.                                    |
 | **Cloud Manager** | `/cloudmanager`  | Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered. <br><br>*This MCP server is now in **beta**; to request access, email [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com) with a description of your use case.* |
 
 The specific tools exposed by each MCP server may evolve over time. In practice, you can ask your MCP-enabled application to discover tools via a prompt such as:
@@ -171,8 +171,8 @@ Some representative scenarios include:
   * Create new fragments
   * Update existing fragments when campaign messaging changes.
 
-* **Assets management**
-  * Import assets with Status Check
+* **Asset importing**
+  * Import assets with status check
 
 ### Example Workflows {#example-workflows}
 
