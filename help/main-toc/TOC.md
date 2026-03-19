@@ -1518,6 +1518,7 @@ user-guide-title: AEM as a Cloud Service
       + [Events](/help/implementing/universal-editor/events-universal-editor.md)
       + [Filters](/help/implementing/universal-editor/filtering.md)
       + [Configuring the RTE](/help/implementing/universal-editor/configure-rte.md)
+      + [Configuring Assets Selector](/help/implementing/universal-editor/configure-assets-selector.md)
       + [Customizing](/help/implementing/universal-editor/customizing.md)  
       + [Extending](/help/implementing/universal-editor/extending.md)   
       + [Architecture](/help/implementing/universal-editor/architecture.md)
