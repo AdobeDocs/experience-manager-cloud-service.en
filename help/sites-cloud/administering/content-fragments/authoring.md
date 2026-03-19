@@ -392,7 +392,7 @@ For example:
 
 ![Content Fragment Editor - Show References](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references.png)
 
-## Inheritance {#inheritance}
+## Cancel, and reinstate, inheritance {#cancel-and-reinstate-inheritance}
 
 Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/sites-cloud/administering/content-fragments/content-fragments-msm.md).
 
