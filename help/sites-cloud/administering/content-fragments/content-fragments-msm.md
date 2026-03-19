@@ -77,18 +77,18 @@ To propagate modifications from the source to your Live Copy.
 
 ### Synchronize {#synchronize}
 
-To synchronize: 
+To synchronize your content updates from the source to your Live Copy: 
 
-1. In the Content Fragment console navigate to the location of your fragment.
+1. In the Content Fragment console navigate to the location of your fragment source.
 1. Select your fragment.
 1. Select **Synchronize** from the toolbar.
 1. Confirm **Synchronize** in the dialog.
 
 ### Rollout {#rollout}
 
-To roll out:
+To trigger a roll out, which synchronizes the source updates with your Live Copy:
 
-1. In the Content Fragment console navigate to the location of your fragment.
+1. In the Content Fragment console navigate to the location of your fragment Live Copy.
 1. Select your fragment.
 1. Select **Rollout** from the toolbar. The wizard will open to guide you through the process.
 1. Select the Live Copies to include in the rollout and **Continue**.
@@ -113,12 +113,14 @@ For example:
 
 ## Compare MSM for Content Fragments and Sites Pages {#compare-msm-for-content-fragments-and-sites-pages}
 
+<!-- CQDOC-23473 - needs a detailed review -->
+
 In more scenarios, MSM for Content Fragments matches the behavior of MSM for Sites Pages functionality. Some key differences to note are:
 
 * Blueprint in MSM for Sites Pages is called Live Copy source in MSM for Content Fragments.
 * For Sites Pages, you can compare a blueprint and its live copy but it is not possible for Content Fragments to compare a source to its live copy.
 * You cannot edit a live copy in the Content Fragments console.
-* Sites pages usually have children, but Content Fragment do not. The option to include or exclude children is not present when creating live copies of individual assets.
+* Sites pages usually have children, but Content Fragment do not, though they may have referenced fragments. The option to include or exclude children refers to these referenced fragments.
 * Removing the chapters step in the create site wizard is not supported in MSM for Content Fragments.
 * Configuring MSM locks on page properties is not supported in MSM for Content Fragments.
 * For MSM for Content Fragments, use only the **Standard rollout config**. Other rollout configurations are not available for MSM for Content Fragments.
