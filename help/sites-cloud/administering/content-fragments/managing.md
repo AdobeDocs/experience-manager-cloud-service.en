@@ -181,6 +181,10 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 * **[Replace](#find-and-replace)**
 * **Move**
 * **Rename**
+* [Reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/content-fragments-msm.md) actions:
+  * **[Create Live Copy](/help/sites-cloud/administering/content-fragments/content-fragments-msm.md#create-a-live-copy)**
+  * **[Synchronize](/help/sites-cloud/administering/content-fragments/content-fragments-msm.md#synchronize)**
+  * **[Rollout](/help/sites-cloud/administering/content-fragments/content-fragments-msm.md#rollout)**
 * **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
 
 
