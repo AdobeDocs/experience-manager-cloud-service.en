@@ -3,8 +3,9 @@ title: Cascading metadata
 description: This article describes how to define cascading metadata for assets in assets view.
 feature: Metadata
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
+exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
 ---
-
 # Cascading Metadata Assets View{#cascading-metadata-assets-view}
 
 When capturing the metadata information of an asset, users provide information in the various available fields. You can display specific metadata fields or field values that are dependent on the options selected in the other fields. Such conditional display of metadata is called cascading metadata. In other words, you can create a dependency between a particular metadata field/value and one or more fields and/or their values.
@@ -151,4 +152,3 @@ To modify an existing metadata form, follow the steps below:
 * Provide documentation feedback using [!UICONTROL Edit this page] ![edit the page](assets/do-not-localize/edit-page.png) or [!UICONTROL Log an issue] ![create a GitHub issue](assets/do-not-localize/github-issue.png) available on the right sidebar
 
 * Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support)
-

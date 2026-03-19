@@ -2,6 +2,7 @@
 title: Content Credentials integration
 description: Content Credentials, integrated into AEM Assets and featured within the Assets View, can offer context into the history of an asset, including how it was made and who was involved in creating it. Like a nutrition label for digital content, Content Credentials can help increase transparency and build trust with audiences.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 27c25ae0-4477-40c3-85c8-3e0aa725aba7
 ---
 # Content Credentials {#content-credentials}

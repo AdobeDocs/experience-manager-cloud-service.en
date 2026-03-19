@@ -4,6 +4,7 @@ description: Import and Export Interactive Communication enables users to seamle
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 7e328932-070d-4eb3-8176-500ef31581be
 ---
 # Import and Export Interactive Communication
@@ -11,10 +12,6 @@ exl-id: 7e328932-070d-4eb3-8176-500ef31581be
 >[!NOTE]
 >
 > The Interactive Communication capability is available under the early-adopter program. Send an email from your work address to `aem-forms-ea@adobe.com` to request access.
-
->[!IMPORTANT]
->
-> **Documentation Subject to Change**: This prompt library is currently being tested against the product and is subject to updates and revisions. Prompts, examples, and best practices may change as the Forms Experience Builder continues to evolve during the early-adopter program.
 
 Import and export feature in Interactive Communication (IC) enables users to seamlessly migrate, reuse, and manage communications across environments. It allows you to export an Interactive Communication (IC) along with its associated fragments and data models from one environment and import it into another, ensuring consistency and reducing duplication of effort during deployment.
 

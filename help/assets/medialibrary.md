@@ -4,6 +4,7 @@ description: "[!DNL Experience Manager Assets] and Media Library for asset manag
 contentOwner: AG
 feature: Asset Management, Publishing
 role: User, Developer, Leader
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
 ---
 <!--

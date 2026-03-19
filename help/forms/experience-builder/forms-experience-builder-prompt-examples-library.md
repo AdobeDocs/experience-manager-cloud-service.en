@@ -5,6 +5,7 @@ hide: yes
 index: no
 hidefromtoc: yes
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
 ---
 # Forms Experience Builder - Prompt Library

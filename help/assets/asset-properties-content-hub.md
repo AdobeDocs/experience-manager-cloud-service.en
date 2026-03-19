@@ -2,6 +2,7 @@
 title: Preview asset and its properties in [!DNL the Content Hub]
 description: Learn how to preview assets and properties in [!DNL Content Hub]
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
 ---
 # Preview asset and its properties in Content Hub {#asset-properties}
@@ -129,3 +130,27 @@ Administrators can also configure the properties, which are displayed for each a
 The date range allows you to select dates you want to see the assets. You can customize date range by choosing the start and end dates. 
 
 -->
+
+## Frequently asked questions {#faqs-asset-properties-content-hub}
+
+### Why do you preview assets and their properties in AEM Assets Content Hub?
+
+Previewing assets and their properties in AEM Assets Content Hub allows users to closely view asset details, which are essential for efficient asset distribution and management. As digital information grows, simply relying on filenames and thumbnails becomes unscalable. Viewing detailed properties helps categorize assets, makes them more accessible, easier to act on, and ensures the information is complete for all users.
+
+### How can I view and interact with an asset's properties in AEM Assets Content Hub?
+
+To view an asset's properties in AEM Assets Content Hub, navigate to or search for the asset, then click on it to open its properties page. Here, you can zoom in or out on the preview, undo zoom, move to previous or next assets, download the asset, edit it with Adobe Express, add it to a collection, or close the preview. The properties page displays detailed information such as title, format, size, resolution, tags, color tags, and smart tags.
+
+### What are derived properties in AEM Assets Content Hub, and how are they generated?
+
+Derived properties in AEM Assets Content Hub are automatically generated when assets are uploaded and approved. Examples include the asset's size, smart tags, and color tags. Smart tags use Adobe AI's smart content services to automatically recognize and apply relevant tags, enhancing asset discoverability. Color tags are also automatically identified using AI, helping users recognize assets by their prominent colors.
+
+### Can administrators customize which asset properties are visible in AEM Assets Content Hub?
+
+Yes, administrators have the ability to configure which properties are displayed for each asset in the AEM Assets Content Hub. This can be done for both the asset preview user interface and asset cards in search results or collections, ensuring that users see the most relevant information based on the requirements.
+
+### What are the supported file formats for previewing assets in AEM Assets Content Hub?
+
+The supported file formats in AEM Assets Content Hub include JPEG and PNG for images, Quicktime, MP4, and MPEG for videos, TXT, DOC/DOCX, and XML for documents, and PDF for print media.
+
+

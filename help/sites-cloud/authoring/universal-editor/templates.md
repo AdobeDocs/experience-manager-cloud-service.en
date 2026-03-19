@@ -4,6 +4,7 @@ description: Learn how to create templates that can be used to create pages that
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
 ---
 

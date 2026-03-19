@@ -4,6 +4,7 @@ description: Learn how to invalidate your CDN (Content Delivery Network) cached 
 contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
 ---
 # Invalidate the CDN cache by way of Dynamic Media {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}

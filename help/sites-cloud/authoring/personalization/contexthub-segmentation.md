@@ -1,6 +1,7 @@
 ---
 title: Configuring Segmentation with ContextHub
 description: Learn how to configure segmentation using ContextHub.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 solution: Experience Manager Sites
 feature: Authoring, Personalization

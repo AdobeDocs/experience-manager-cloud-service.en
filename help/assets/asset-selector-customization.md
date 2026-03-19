@@ -2,6 +2,7 @@
 title: Customize Asset Selector application
 description: Use functions to customize Asset selector within your application.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
 ---
 # Asset Selector customizations {#asset-selector-customization}

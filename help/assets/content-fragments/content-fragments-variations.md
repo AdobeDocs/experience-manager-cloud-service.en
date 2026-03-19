@@ -1,6 +1,7 @@
 ---
 title: Variations - Authoring Fragment Content (Assets - Content Fragments)
-description: Understand how Content Fragment variations allow you to author content for the fragment, then create variations of that content according to purpose, therefore increasing the flexibility. 
+description: Understand how Content Fragment variations allow you to author content for the fragment, then create variations of that content according to purpose, therefore increasing the flexibility.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)." 
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User

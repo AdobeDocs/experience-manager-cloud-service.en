@@ -5,6 +5,7 @@ contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management, Metadata
 role: User, Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
 ---
 # Manage metadata of your digital assets {#managing-metadata-for-digital-assets}
