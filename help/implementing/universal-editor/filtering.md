@@ -18,7 +18,7 @@ The filters must all be defined similarly.
 
 1. [Add script tag to point to filter definition](#add-tag)
 1. [Define the filter](#define-filter)
-1. [Reference the filter from the affected item](#reference-filter)
+1. [Reference the filter](#reference-filter)
 
 Let's take an example of filtering components per container component. 
 
@@ -58,15 +58,27 @@ Setting the `components` attribute in a filter definition to `null` allows all c
 ]
 ```
 
-## Reference the Filter from the Item {#reference-filter}
+## Reference the Filter {#reference-filter}
 
-To use the filter, you must reference the filter definition.
+To use the filter, you must reference the filter definition. You can do this by:
 
-For our example to filter allowed components per container, you would reference the filter from your container component by adding the property `data-aue-filter`, passing the ID of the filter you defined previously.
+* Referencing the filter from your container component by adding the property `data-aue-filter`, passing the ID of the filter.
 
-```html
-data-aue-filter="container-filter"
-```
+  ```html
+  data-aue-filter="container-filter"
+  ```
+
+* Referencing the filter from your [component definition,](/help/implementing/universal-editor/component-definition.md) passing the ID of the filter.
+
+  ```json
+  {
+     "title":"My Container",
+     "id":"my-container",
+     "model": "my-model",
+     "filter": "container-filter",
+     ...
+  }
+  ```
 
 ## Additional Resources {#additional-resources}
 

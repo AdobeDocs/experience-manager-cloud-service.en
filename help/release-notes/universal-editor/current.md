@@ -24,12 +24,6 @@ These are the release notes for the 19 March 2026 release of the Universal Edito
 * [The assets selector](/help/implementing/universal-editor/configure-assets-selector.md) now supports [filter definitions.](/help/implementing/universal-editor/filtering.md)
 * If there are no actions available for the selected item, [the context menu](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) no longer shows a chevron to access actions.
 
-## Early Adoption Features {#early-adopter}
-
-If you are interested in testing the upcoming features listed below and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 
-
-* Shallow copy has been implemented for Content Fragments.
-
 ## Other Improvements {#other-improvements}
 
 * If there is a model/filter/component definition, it will get refetched when switching from one app to another in the editor.
