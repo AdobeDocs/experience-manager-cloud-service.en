@@ -252,6 +252,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.03.12 Release Notes](/help/release-notes/universal-editor/2026/2026-03-12.md)
       + [2026.03.05 Release Notes](/help/release-notes/universal-editor/2026/2026-03-05.md)
       + [2026.02.26 Release Notes](/help/release-notes/universal-editor/2026/2026-02-26.md)
       + [2026.02.19 Release Notes](/help/release-notes/universal-editor/2026/2026-02-19.md)
@@ -1515,8 +1516,9 @@ user-guide-title: AEM as a Cloud Service
       + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
       + [Publishing](/help/implementing/universal-editor/publishing.md)
       + [Events](/help/implementing/universal-editor/events-universal-editor.md)
-      + [Filtering Components](/help/implementing/universal-editor/filtering.md)
+      + [Filters](/help/implementing/universal-editor/filtering.md)
       + [Configuring the RTE](/help/implementing/universal-editor/configure-rte.md)
+      + [Configuring Assets Selector](/help/implementing/universal-editor/configure-assets-selector.md)
       + [Customizing](/help/implementing/universal-editor/customizing.md)  
       + [Extending](/help/implementing/universal-editor/extending.md)   
       + [Architecture](/help/implementing/universal-editor/architecture.md)
