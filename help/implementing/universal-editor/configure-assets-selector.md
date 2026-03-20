@@ -3,8 +3,8 @@ title: Configuring the Assets Selector for the Universal Editor
 description: Understand how you can configure the assets selector for use with the Universal Editor.
 feature: Developing
 role: Admin, Developer
+exl-id: 0bf7b418-5ecd-454f-ac46-03792268c59c
 ---
-
 # Configuring the Assets Selector for the Universal Editor {#configure-assets-selector}
 
 Understand how you can configure the assets selector for use with the Universal Editor.
