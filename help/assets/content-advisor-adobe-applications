@@ -1,6 +1,6 @@
 ---
 title: Use Content Advisor to access AEM Assets within Adobe applications
-description: Use Content Advisor to discover and access AEM Assets directly within the native Adobe Express integration.
+description: Use Content Advisor to access AEM Assets within Adobe applications
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
@@ -12,7 +12,7 @@ Adobe Experience Manager (AEM) Assets integrates natively with Adobe application
 
 Content Advisor transforms how you discover and use assets in Adobe applications by bringing intelligent, context-aware asset discovery directly to your creative workflow. Instead of searching for assets by typing keywords, Content Advisor surfaces relevant, approved assets based on your canvas content, campaign brief, and intent, helping you find the right asset faster.
 
-With smart suggestions, access to Dynamic Media renditions, and full visibility into asset metadata, Content Advisor enables you to efficiently locate, evaluate, and use assets from AEM Assets without leaving Adobe Express. This ensures faster content creation, improved asset reuse, and consistent use of approved, brand-compliant assets.
+With smart suggestions, access to Dynamic Media renditions, and full visibility into asset metadata, Content Advisor enables you to efficiently locate, evaluate, and use assets from AEM Assets without leaving your host Adobe application interface. This ensures faster content creation, improved asset reuse, and consistent use of approved, brand-compliant assets.
 
 ![Content Advisor banner image](assets/content-advisor-banner-image.png)
 
@@ -127,7 +127,7 @@ Content Advisor displays properties (metadata) for files in a read-only view. Th
 
 ### Access filters consistent with Assets view {#filters-content-advisor}
 
-Content Advisor provides the same filtering capabilities in Express that are  available in the Assets view, enabling you to refine assets using predefined filters. Same filtering capabilities as available in Assets view also apply to the filters specific to content types, such as files, folders, and collections. This ensures a consistent asset discovery experience and helps you efficiently locate relevant assets within your host Adobe application.
+Content Advisor provides the same filtering capabilities within your host Adobe application that are  available in the Assets view, enabling you to refine assets using predefined filters. Same filtering capabilities as available in Assets view also apply to the filters specific to content types, such as files, folders, and collections. This ensures a consistent asset discovery experience and helps you efficiently locate relevant assets within your host Adobe application.
 
 If you do not have filters set up in Assets view via filter schema, Content Advisor displays out-of-the-box filters including File Type, File Format, Asset Status, File Size, Image Width, Image Height, Modified Date, and Created Date.
 
@@ -159,12 +159,14 @@ Content Advisor allows you to search for assets or collections across all collec
 
 ## Content Advisor feature support across Adobe applications {#content-advisor-feature-support-adobe-applications}
 
+The following table illustrates the Content Advisor feature support across Adobe applications.
+
 | Application                          | Supported views        | Support for brief upload for searching Assets | Support for suggested content panel while searching Assets | Support for Dynamic Media panel while searching Assets | Support for searching Content Fragments |
 |--------------------------------------|------------------------|----------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|------------------------------------------|
-| AEM Sites (Document-based authoring) | Rail and Modal view    | N                                            | N                                                         | Y                                                      | N                                        |
-| AEM Sites (Custom UE Picker)                     | Modal view             | N                                            | N                                                         | Y                                                      | N                                        |
-| AEM Sites (DA)                       | Modal view             | Y                                            | Y                                                         | Y                                                      | N                                        |
-| AEM Sites (Content Fragment Editor)              | Modal view             | Y                                            | Y                                                         | Y                                                      |                                          |
-| AEM Sites (Universal Editor)                     | Modal view             | Y                                            | Y                                                         | Y                                                      |                                          |
-| AEM Sites Components                           | Rail and Modal view    | Y                                            |                                                           |                                                        |                                          |
-| AEM Sites Page Editor                          | Rail and Modal view    | Y                                            |                                                           |                                                        |                                          |
+| AEM Sites (Document-based authoring) | Rail and Modal view    | &minus;                                            | &minus;                                                         | &#10003;                                                      | &minus;                                        |
+| AEM Sites (Custom UE Picker)                     | Modal view             | &minus;                                            | &minus;                                                         | &#10003;                                                      | &minus;                                        |
+| AEM Sites (DA)                       | Modal view             | &#10003;                                            | &#10003;                                                         | &#10003;                                                      | &minus;                                        |
+| AEM Sites (Content Fragment Editor)              | Modal view             | &#10003;                                            | &#10003;                                                         | &#10003;                                                      |                                          |
+| AEM Sites (Universal Editor)                     | Modal view             | &#10003;                                            | &#10003;                                                         | &#10003;                                                      |                                          |
+| AEM Sites Components                           | Rail and Modal view    | &#10003;                                            |                                                           |                                                        |                                          |
+| AEM Sites Page Editor                          | Rail and Modal view    | &#10003;                                            |                                                           |                                                        |                                          |
