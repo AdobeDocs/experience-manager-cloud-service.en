@@ -28,7 +28,7 @@ This page provides an overview of reusing content with MSM. The following pages 
 
 <!-- CQDOC-23473 - activate cross-reference when GA -->
 
-[!NOTE]
+>[!NOTE]
 >
 >MSM can also be used for Assets, including Content Fragments. See [Reuse Content Fragments using MSM for Assets](/help/assets/reuse-assets-using-msm.md) (only available through the Assets console).
 
