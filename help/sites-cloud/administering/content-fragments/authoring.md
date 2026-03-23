@@ -392,6 +392,8 @@ For example:
 
 ![Content Fragment Editor - Show References](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references.png)
 
+<!-- CQDOC-23473 - activate cross-reference when GA -->
+<!--
 ## Cancel, and reinstate, inheritance {#cancel-and-reinstate-inheritance}
 
 Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/sites-cloud/administering/content-fragments/content-fragments-msm.md).
@@ -407,6 +409,7 @@ For example:
 * Re-enable Inheritance (if inheritance is already canceled)
 
   ![Re-Enable Inheritance button](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-reenable-inheritance.png)
+-->
 
 ## View Properties, and Tags {#view-properties-tags}
 
@@ -414,6 +417,8 @@ In the properties tab of the right panel, properties (metadata) and tags can be 
 
 * for the **Content Fragment** - if **Main** is currently selected
 * for a specific **Variation**
+
+<!-- CQDOC-23473 - new screenshot? -->
 
 ![Content Fragment Editor - Properties](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-properties.png) 
 
@@ -424,6 +429,8 @@ In the properties tab (right panel) you can also edit:
 * **Title**
 * **Description**
 * **Tags**: using the drop-down list, or the selection dialog
+
+  <!-- CQDOC-23473 - new screenshot? -->
 
   ![Content Fragment Editor - Manage Tags](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-edit-tags.png) 
 
@@ -443,6 +450,8 @@ In the **Version history** tab of the right panel, details of the current, and p
 >
 >A new version is created when the content fragment is published.
 
+<!-- CQDOC-23473 - new screenshot? -->
+
 ![Content Fragment Editor - Version History Overview](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-overview.png)
 
 ### Compare Version {#compare-version}
@@ -455,6 +464,8 @@ To compare a previous version to the current:
 
 1. Select **Compare**. 
 
+<!-- CQDOC-23473 - new screenshot? -->
+
 ![Content Fragment Editor - Version History Compare](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare.png)
 
 This opens up a view that displays differences between the current version of the content, and the selected previous version of the content fragment. From the **Variations with changes** drop-down, you can select to see differences from the Main content and/or content from a Variation. 
@@ -463,6 +474,8 @@ Differences are indicated by color:
 
 * Green: indicates content added (to the current version)
 * Red: indicates content removed (from the current version)
+
+<!-- CQDOC-23473 - new screenshot? -->
 
 ![Content Fragment Editor - Version History Compare Versions](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-compare-versions.png)
 
@@ -476,6 +489,8 @@ To revert to a specific version:
 
 1. Select **Revert**.
 
+<!-- CQDOC-23473 - new screenshot? -->
+
 ![Content Fragment Editor - Version History Revert](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-version-history-revert.png)
 
 ## View the Language Copies {#view-language-copies}
@@ -483,6 +498,8 @@ To revert to a specific version:
 In the **Language properties** tab details of any related language copies are shown. Selecting a link icon, opens the copy in a separate tab.
 
 For example:
+
+<!-- CQDOC-23473 - new screenshot? -->
 
 ![Content Fragment Editor - open Language Copy](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-open-language-copies.png)
 
@@ -503,6 +520,8 @@ To enable you to collaborate in-product and in-context, the **Comments** tab in 
 * Perform a text search through existing comments
 * Edit an existing comment
 * Delete comments
+
+<!-- CQDOC-23473 - new screenshot? -->
 
 ![Content Fragment Editor - Comments tab](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-comments.png)
 

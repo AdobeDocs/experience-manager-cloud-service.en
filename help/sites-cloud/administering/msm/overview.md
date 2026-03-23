@@ -26,12 +26,20 @@ This page provides an overview of reusing content with MSM. The following pages 
 * [MSM Rollout Conflicts](rollout-conflicts.md)
 * [MSM Best Practices](best-practices.md)
 
+<!-- CQDOC-23473 - activate cross-reference when GA -->
+
+[!NOTE]
+>
+>MSM can also be used for Assets, including Content Fragments. See [Reuse Content Fragments using MSM for Assets](/help/assets/reuse-assets-using-msm.md) (only available through the Assets console).
+
+<!--
 >[!NOTE]
 >
 >MSM can also be used for Assets, and Content Fragments. See:
 >
 >* MSM for Content Fragments when using [the **Content Fragments** console](/help/sites-cloud/administering/content-fragments/content-fragments-msm.md)
 >* MSM for Content Fragments when using [the **Assets** console](/help/assets/reuse-assets-using-msm.md) 
+-->
 
 ## Possible Scenarios {#possible-scenarios}
 
