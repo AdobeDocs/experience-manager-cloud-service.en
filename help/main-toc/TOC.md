@@ -1101,12 +1101,13 @@ user-guide-title: AEM as a Cloud Service
   + MCP Support {#mcp-support}
     + [Using MCP with AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
     + Chat Applications (Web & Desktop) {#chat-applications}
-      + [Anthropic Claude](/help/ai-in-aem/mcp-support/setup-claude.md)
-      + [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
+      + [Setting Up Anthropic Claude with AEM MCP](/help/ai-in-aem/mcp-support/setup-claude.md)
+      + [Setting Up OpenAI ChatGPT with AEM MCP](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
     + Developer Tools (IDE Extensions, Desktop Apps, CLIs) {#developer-tools}
-      + [Cursor](/help/ai-in-aem/mcp-support/setup-cursor.md)
+      + [Setting Up Cursor with AEM MCP](/help/ai-in-aem/mcp-support/setup-cursor.md)
     + Enterprise Platforms {#enterprise-platforms}
-      + [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
+      + [Setting Up Microsoft Copilot Studio with AEM MCP](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
+      + [Setting Up JetBrains with GitHub Copilot and AEM MCP](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
   + Agents in AEM {#agents}
     + [Overview](/help/ai-in-aem/agents/overview.md)
     + Brand Experience Agent {#brand-experience}
