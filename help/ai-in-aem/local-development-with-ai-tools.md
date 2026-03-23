@@ -5,13 +5,13 @@ feature: Developing
 role: Developer
 ---
 
+# Local Development with AI Tools {#local-development-with-ai-tools}
+
 >[!IMPORTANT]
 >
 >The features described in this article are **beta**. Getting early access to features that Adobe is developing lets customers and partners provide feedback (by emailing [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) and shape product development. It also helps them prepare to adopt new capabilities before general availability. 
 >
 >Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk. 
-
-# Local Development with AI Tools {#local-development-with-ai-tools}
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ Replace the path and `<version>` with the values shown in the `help` output. If 
 
 Other IDEs can be configured in a similar manner.
 
-### Available Tools {#available-tools}
+### Available Tools {#available-tools-dispatcher}
 
 |Tool|Description|
 |---|---|
