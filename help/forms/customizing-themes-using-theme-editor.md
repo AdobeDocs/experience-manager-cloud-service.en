@@ -16,10 +16,6 @@ The Theme Editor in Adobe Experience Manager (AEM) Forms is a visual interface t
 
 The Theme Editor eliminates the need for a dedicated developer persona for basic form styling. With just a working knowledge of CSS, you can style forms using the visual sidebar or write advanced CSS overrides directly within the editor.
 
->[!NOTE]
->
-> The Theme Editor is applicable **only** for Core Component-based Adaptive Forms. When selecting a form for preview, ensure that you choose a Core Component-based Adaptive Form.
-
 ## Prerequisites {#prerequisites}
 
 * Author-level permissions in Adobe Experience Manager Forms.
@@ -42,7 +38,7 @@ The Theme Editor eliminates the need for a dedicated developer persona for basic
 1. In the **[!UICONTROL Create Theme]** dialog, specify the following details:
    * **[!UICONTROL Title]**: A descriptive title for the theme.
    * **[!UICONTROL Name]**: The node name for the theme.
-   * **[!UICONTROL Adaptive form to preview the theme]**: Select a Core Component-based Adaptive Form to act as the preview canvas for your theme, or click **[!UICONTROL Use default adaptive form]** to use the default form. This form is loaded in the Theme Editor canvas so you can see your styling changes in real time while editing.
+   * **[!UICONTROL Adaptive form to preview the theme]**: For a Core Component theme, select a Core Component-based Adaptive Form. **[!UICONTROL Use default adaptive form]** uses a foundation Adaptive Form, not Core Components. The selected form appears in the Theme Editor canvas for real-time preview while you edit.
    * **[!UICONTROL Description]** *(Optional)*: A brief description of the theme.
    * **[!UICONTROL Configuration Container]** *(Optional)*: The configuration container that holds Adobe Font configuration details.
    * **[!UICONTROL Tags]** *(Optional)*: Tags attached to the theme for identification and search.
