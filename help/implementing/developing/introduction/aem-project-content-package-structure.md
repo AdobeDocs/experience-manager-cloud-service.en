@@ -37,7 +37,7 @@ Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:in
 
 Oak indexes (`/oak:index`) are managed by the AEM as a Cloud Service deployment process. The reason is because the Cloud Manager must wait until any new index is deployed and fully reindexed before switching over to the new code image.
 
-For this reason, although Oak indexes are mutable at run time, they must be deployed as code so that they can be installed before any mutable packages are installed. Therefore `/oak:index` configurations are part of the Code Package and not part of the Content Package [as described below](#recommended-package-structure).
+For this reason, although Oak indexes are mutable at run time, they must be deployed as code so that they can be installed before any mutable packages are installed. Therefore, `/oak:index` configurations are part of the Code Package and not part of the Content Package [as described below](#recommended-package-structure).
 
 >[!TIP]
 >
@@ -287,7 +287,7 @@ To ensure proper installation of the packages, it is recommended inter-package d
 
 The general rule is packages containing mutable content (`ui.content`) should depend on the immutable code (`ui.apps`) that supports the rendering and use of the mutable content.
 
-A notable exception to this general rule is if the immutable code package (`ui.apps` or any other), __only__ contains OSGi bundles. If so, no AEM package should declare a dependency on it. The reason is because immutable code packages that __only__ contain OSGi bundles, are not registered with AEM [Package Manager](/help/implementing/developing/tools/package-manager.md). Therefore, any AEM package that depends on it has an unsatisfied dependency and fail to install.
+A notable exception to this general rule is if the immutable code package (`ui.apps` or any other), __only__ contains OSGi bundles. If so, no AEM package should declare a dependency on it. The reason is because immutable code packages that __only__ contain OSGi bundles, are not registered with AEM [Package Manager](/help/implementing/developing/tools/package-manager.md). Therefore, any AEM package that depends on it has an unsatisfied dependency and will fail to install.
 
 >[!TIP]
 >
@@ -305,7 +305,7 @@ The simple case sets the `ui.content` mutable content package to depend on the `
 
 ### Complex Deployment Package Dependencies {#complex-deploxment-package-dependencies}
 
-Complex deployments expand on the simple case, and set dependencies between the corresponding mutable content and immutable code packages. As required, dependencies can be established between immutable code packages as well.
+Complex deployments expand on the simple case and set dependencies between the corresponding mutable content and immutable code packages. As required, dependencies can be established between immutable code packages as well.
 
 + `all` has no dependencies
   + `common.ui.apps.common` has no dependencies
@@ -316,7 +316,7 @@ Complex deployments expand on the simple case, and set dependencies between the 
 
 ## Local Development and Deployment {#local-development-and-deployment}
 
-The project structures and organization outlined in this article is **fully compatible** local development AEM instances.
+The project structures and organization outlined in this article is **fully compatible** with local development AEM instances.
 
 ## POM XML Snippets {#pom-xml-snippets}
 
@@ -584,7 +584,7 @@ In the `ui.content/pom.xml`, add the following `<dependencies>` directives to th
       <dependencies>
         <!-- Declare the content package dependency in the ui.content/pom.xml on the ui.apps project -->
         <dependency>
-            <groupId${project.groupId}</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>my-app.ui.apps</artifactId>
             <version>${project.version}</version>
         </dependency>
