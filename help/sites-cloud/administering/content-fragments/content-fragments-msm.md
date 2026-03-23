@@ -17,6 +17,15 @@ Multi Site Manager (MSM), and the Live Copy functionality, enables you to use th
 <!-- CQDOC-23473 - screenshots -->
 <!-- CQDOC-23473 - only mentioned once in ToC, add entries -->
 
+
+<!-- CQDOC-23473 - feature is currently beta remove Caution for GA -->
+
+>[!CAUTION]
+>
+>MSM from the Content Fragment console is currently Beta functionality and only available to specific customers.
+>
+>MSM for Content Fragments is also available when using [Content Fragments via the **Assets** console](/help/assets/content-fragments/content-fragments-msm.md). 
+
 * With MSM Live Copies you can:
   * Create content once and then
   * Reuse this content in other areas of the same or other sites, or applications.
