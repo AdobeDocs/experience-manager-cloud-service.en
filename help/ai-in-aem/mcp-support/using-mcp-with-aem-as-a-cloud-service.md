@@ -14,7 +14,7 @@ Many Adobe Experience Manager (AEM) teams now work in Integrated Development Env
 With AEM's MCP integration, different personas can collaborate around the same content:
 
 * **Developers** can orchestrate content operations and workflows from their IDE or chat application
-* **Practitioners** and content architects can manage sites, content fragments, and assets with AI assistance while staying within AEM's existing permission model.
+* **Practitioners** and content architects can manage sites and content fragments, and import assets, with AI assistance while staying within AEM's existing permission model.
 
 >[!IMPORTANT]
 >
@@ -46,8 +46,8 @@ AEM exposes MCP servers as HTTP endpoints. The endpoints listed below are relati
 
 | **MCP Server** | **Endpoint**  | **Description**                                                                                                      |
 |---|---|----------------------------------------------------------------------------------------------------------------------|
-| **Content**  | `/content`  | All low-level content operations, including create, read, update, and delete (CRUD) for pages, fragments and assets. |
-| **Content (read-only)** | `/content-readonly`  | Read-only content operations (Get, List/Search) for pages, fragments, and assets.                                    |
+| **Content**  | `/content`  | Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing. |
+| **Content (read-only)** | `/content-readonly`  | Read-only content operations (Get, List/Search) for pages and content fragments.                                    |
 | **Cloud Manager** | `/cloudmanager`  | Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered. <br><br>*This MCP server is now in **beta**; to request access, email [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com) with a description of your use case.* |
 
 The specific tools exposed by each MCP server may evolve over time. In practice, you can ask your MCP-enabled application to discover tools via a prompt such as:
@@ -93,27 +93,20 @@ Configuring MCP for AEM involves two main parts:
 1. **Configuration in each MCP client application** so that the application knows how to connect to the AEM MCP servers and perform OAuth login
 1. **Select the MCP Server** before starting to prompt, so that the MCP client knows to use it.
 
+Step-by-step guides covering both steps are available for:
+
+* [Anthropic Claude](/help/ai-in-aem/mcp-support/setup-claude.md)
+* [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
+* [Cursor](/help/ai-in-aem/mcp-support/setup-cursor.md)
+* [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
+
 ### AEM Configuration {#aem-configuration}
 
 By default, the permissions that individual users have within AEM govern access to AEM's MCP servers. When a user authenticates through an MCP client application, the MCP tools enforce the same access rules as manual operations in AEM. A user can only perform actions they are already authorized to perform.
 
 #### Permitted MCP Client Applications {#permitted-mcp-client-applications}
 
-The following MCP client applications are permitted by default:
-
-* Anthropic Claude
-* Anthropic Claude Code
-* Augment Code
-* Augment Indent
-* Cline
-* Cursor
-* GitHub Copilot
-* Kiro
-* Microsoft Copilot Studio
-* OpenAI ChatGPT
-* OpenAI Codex
-* OpenAI Codex CLI
-* Windsurf
+All applications listed under [Supported MCP Applications](#supported-mcp-applications) are permitted by default.
 
 #### Restricting MCP Servers {#restricting-mcp-servers}
 
@@ -138,29 +131,7 @@ Each user performs this step, or an administrator of the MCP client application 
 1. Verify discovered tools
    * Once authenticated, the application discovers MCP tools from the server. You can then start prompting the LLM to perform AEM operations.
 
-Below are the supported applications, some of which link to step-by-step guides:
-
-#### Chat Applications (Web & Desktop) {#setup-chat-applications}
-
-* [Anthropic Claude](/help/ai-in-aem/mcp-support/setup-claude.md)
-* [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
-
-#### Developer Tools (IDE Extensions, Desktop Apps, CLIs) {#setup-developer-tools}
-
-* Anthropic Claude Code (CLI, JetBrains, VS Code, Cursor)
-* Augment Code (CLI, JetBrains, VS Code, Cursor)
-* Augment Indent Desktop App
-* Cline (JetBrains, VS Code, Cursor)
-* [Cursor](/help/ai-in-aem/mcp-support/setup-cursor.md)
-* GitHub Copilot (VS Code)
-* Kiro (Desktop App, CLI)
-* OpenAI Codex (Desktop App)
-* OpenAI Codex CLI
-* Windsurf
-
-#### Enterprise Platforms {#setup-enterprise-platforms}
-
-* [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
+Refer to [Supported MCP Applications](#supported-mcp-applications) for the full list of supported applications.
 
 ## Authentication {#authentication}
 
@@ -200,10 +171,8 @@ Some representative scenarios include:
   * Create new fragments
   * Update existing fragments when campaign messaging changes.
 
-* **Assets management**
-  * Import assets
-  * Find existing assets
-  * Publish assets.
+* **Asset importing**
+  * Import assets with status check
 
 ### Example Workflows {#example-workflows}
 
