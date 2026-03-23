@@ -76,7 +76,7 @@ AEM's MCP servers are designed to work with a defined set of MCP-compatible appl
 * Augment Indent Desktop App
 * Cline (JetBrains, VS Code, Cursor)
 * Cursor
-* GitHub Copilot (VS Code)
+* GitHub Copilot (JetBrains, VS Code)
 * Kiro (Desktop App, CLI)
 * OpenAI Codex (Desktop App)
 * OpenAI Codex CLI
@@ -98,6 +98,7 @@ Step-by-step guides covering both steps are available for:
 * [Anthropic Claude](/help/ai-in-aem/mcp-support/setup-claude.md)
 * [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
 * [Cursor](/help/ai-in-aem/mcp-support/setup-cursor.md)
+* [JetBrains with GitHub Copilot](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
 * [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
 
 ### AEM Configuration {#aem-configuration}
