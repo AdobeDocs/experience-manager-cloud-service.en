@@ -1107,7 +1107,7 @@ user-guide-title: AEM as a Cloud Service
       + [Setting Up Cursor with AEM MCP](/help/ai-in-aem/mcp-support/setup-cursor.md)
     + Enterprise Platforms {#enterprise-platforms}
       + [Setting Up Microsoft Copilot Studio with AEM MCP](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
-      + [Setting Up JetBrains with GitHub Copilot and AEM MCP](help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
+      + [Setting Up JetBrains with GitHub Copilot and AEM MCP](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
   + Agents in AEM {#agents}
     + [Overview](/help/ai-in-aem/agents/overview.md)
     + Brand Experience Agent {#brand-experience}
