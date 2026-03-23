@@ -215,6 +215,33 @@ If the sample assets or viewer preset artwork has not synced or published, resta
 1. Make no changes, select **Save**.
    This save action triggers the logic again to create and sync the sample assets, viewer preset CSS, and artwork.
 
+### Issue: Error #2046 when opening Bandwidth & Storage tab {#error-2046-bandwidth-storage}
+
+**How to debug**
+
+- Users encounter Error #2046 when opening the Bandwidth & Storage tab in the Scene7 desktop tool.
+- The issue is caused by an expired digital signing certificate in a cached Adobe AIR framework file.
+- The failure occurs during local certificate re-validation.
+- The issue may affect more users over time as cache re-validation cycles occur.
+
+**Solution**
+
+Clear the local cache to force Adobe AIR to download the updated framework file.
+
+**macOS**
+
+1. Navigate to:
+   `~/Library/Caches/Adobe/Flash Player/AssetCache/<folder>/`
+2. Delete all `.swz` and `.heu` files.
+
+**Windows**
+
+1. Navigate to:
+   `%APPDATA%\Adobe\Flash Player\AssetCache\<folder>\`
+2. Delete all files inside the folder.
+
+1. Restart the application after clearing the cache.
+
 ### Issue: Image Preview is not loading in Viewer presets authoring {#image-preview-not-loading}
 
 **Solution**
