@@ -89,7 +89,9 @@ In the **Add/Edit Pipeline** dialog box, under the **Source Code** tab, a new **
 * **Full Build** — builds all modules in the repository on every run.
 * **Smart Build** — builds only modules that changed since the last commit, which shortens overall build time.
 
-You control which pipelines use **Smart build**. During the beta, this option appears only for **Code Quality** and **Dev Deployment** pipelines.
+You control which pipelines use **Smart build**. During the beta, this option appears only for **Code Quality** and **Dev Full Stack Deployment** pipelines.
+
+See [About using Smart Build in a non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build) and [Add a non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
 
 Interested? Email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe OrgID and Program ID.
 
