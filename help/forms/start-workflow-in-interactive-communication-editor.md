@@ -8,21 +8,51 @@ By using workflows, author can ensure that IC content is reviewed, validated, an
 
 ## Applying a Workflow to an Interactive Communication
 
-![Find IC Docu](/help/forms/interactive-communication/assets/workflow.png)
+You can apply a workflow to an Interactive Communication (IC) in two ways:
 
-Follow these steps to apply a workflow to an IC:
++++ From Forms & Documents Panel
 
-1. Navigate to **AEM Forms > Communications**.
-1. Select the **Interactive Communication** you want to process.
-1. From the toolbar, select **Start Workflow**.
+![Find IC Docu](/help/forms/interactive-communication/assets/workflow-in-ic.png)
+
+Follow these steps to start and apply a workflow:
+
+1. Navigate to **AEM Forms > Forms & Documents**.
+
+1. Select the Interactive Communication (IC) you want to process.
+
+1. From the toolbar, click **Start Workflow**.
+
+1. In the workflow dialog, choose the required **workflow model**.
 
 ![Find IC Docu](/help/forms/interactive-communication/assets/select-workflow.png)
 
-1. Choose the required **workflow model** from the available list.
-1. Provide any required workflow title.
-1. Click **Start** to initiate the workflow.
+1. Update workflow details (such as title, description, or assignee).
 
-Once started, the IC enters the workflow process and assigned users receive their respective work items.
+1. Click **proceed** to initiate the workflow.
+
+The IC is now associated with the selected workflow and will move through the defined workflow steps.
++++
+
++++ From Interactive Communication Editor
+
+![Find IC Docu](/help/forms/interactive-communication/assets/workflow.png)
+
+Follow these steps to apply a workflow from within the IC:
+
+1. Navigate to **AEM Forms > Forms & Document**.
+
+1. Open the required **Interactive Communication** in the editor.
+
+1. From the top toolbar, select **Workflow**.
+
+1. Choose the required **workflow model**.
+
+![Find IC Docu](/help/forms/interactive-communication/assets/select-workflow.png)
+
+1. Provide the necessary details and click **proceed**.
+
+The workflow is applied, and the IC proceeds through the configured workflow stages for review or processing.
++++
 
 ## Key Capabilities
 

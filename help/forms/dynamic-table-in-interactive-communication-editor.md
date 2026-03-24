@@ -20,13 +20,17 @@ This article explains how to insert and configure a dynamic table with data bind
 
 Dynamic tables populate rows automatically by binding to a repeatable data source.
 
-![Find IC Docu](/help/forms/interactive-communication/assets/table-data-binding.png)
+![Find IC Docu](/help/forms/interactive-communication/assets/databinding-in-table.png)
 
 To bind data to the table:
 
-1. Select the **table** and open the **Properties** panel.
-1. In the **Data Binding** section, click **Use Data Model**.
-1. Select the **file** to bind the data.
+1. Select the **table row** from the hierarchy panel.
+
+1. Open the **Data Binding** from the side panel.
+
+1. Ensure the selected data schema is of array type.
+
+1. Drag and drop the array data schema onto the selected table row to bind the data.
 
 ### Enable Page Flow
 
@@ -36,10 +40,13 @@ Dynamic tables may expand beyond a single page. To allow the table to grow and c
 
 To enable page flow:
 
-1. Select the **table**.
-1. Open the **Properties** panel.
-1. Set the **Content Type** to **Flowed**.
-1. Preview the communication to confirm the table flows onto the next page when more rows are rendered.
+1. Select the **parent layout container** of the table.
+
+1. Open the Properties panel and set the Content Type to **Flowed**.
+
+1. Select the table, and ensure it is also configured to support flowed content.
+
+1. Preview the communication to verify that the table continues onto the next page as additional rows are rendered.
 
 ### Allow Page Break Within Table
 
