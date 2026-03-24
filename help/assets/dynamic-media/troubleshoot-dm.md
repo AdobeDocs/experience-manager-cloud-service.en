@@ -219,10 +219,10 @@ If the sample assets or viewer preset artwork has not synced or published, resta
 
 **How to debug**
 
-- Users encounter Error #2046 when opening the Bandwidth & Storage tab in the Scene7 desktop tool.
-- The issue is caused by an expired digital signing certificate in a cached Adobe AIR framework file.
-- The failure occurs during local certificate re-validation.
-- The issue may affect more users over time as cache re-validation cycles occur.
+* Users encounter Error #2046 when opening the Bandwidth & Storage tab in Dynamic Media Classic (Scene7) desktop application.
+* The issue is caused by an expired digital signing certificate in a cached Adobe AIR framework file.
+* The failure occurs during local certificate re-validation.
+* The issue can affect additional users over time based on cache re-validation cycles.
 
 **Solution**
 
@@ -240,7 +240,7 @@ Clear the local cache to force Adobe AIR to download the updated framework file.
    `%APPDATA%\Adobe\Flash Player\AssetCache\<folder>\`
 2. Delete all files inside the folder.
 
-1. Restart the application after clearing the cache.
+Restart the application after clearing the cache.
 
 ### Issue: Image Preview is not loading in Viewer presets authoring {#image-preview-not-loading}
 
