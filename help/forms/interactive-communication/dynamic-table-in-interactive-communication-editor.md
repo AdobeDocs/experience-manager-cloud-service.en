@@ -1,3 +1,13 @@
+---
+title: Create Dynamic Table in Interactive Communication Editor
+description: Create Dynamic Table feature that allows authors to create data-driven tables.
+products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
+feature: Interactive Communication
+role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
+exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
+---
+
 # Create Dynamic Table in Interactive Communication Editor
 
 ## Overview
