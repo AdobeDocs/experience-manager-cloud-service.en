@@ -144,6 +144,8 @@ Invoke the dispatcher skill for any Dispatcher or Apache HTTPD configuration wor
 
 For broad or first-time requests, start with the `workflow-orchestrator` sub-skill. For targeted work, describe the specific concern and the skill routes to the appropriate specialist.
 
+The dispatcher skill handles orchestration and advisory guidance. The Dispatcher MCP server, described below, provides the seven validation and runtime tools the skill uses when it needs local evidence.
+
 ## AEM Quickstart MCP Server {#aem-quickstart-mcp-server}
 
 The Model Context Protocol (MCP) is an open standard that allows AI coding tools to connect to external data sources and services. The AEM Quickstart MCP server is a content package that, once installed in a local AEM SDK instance, exposes runtime data directly to connected AI tools — enabling agents to retrieve logs, diagnose OSGi failures, and inspect request processing without leaving the IDE.
@@ -201,9 +203,11 @@ Any MCP client can connect by pointing to `http://localhost:4502/bin/mcp` with a
 >
 >The value `Basic YWRtaW46YWRtaW4=` is the Base64 encoding of `admin:admin`, the default credential for a local Quickstart. Do not use this with non-local environments.
 
-## Dispatcher MCP Server {#dispatcher-mpc-server}
+## Dispatcher MCP Server {#dispatcher-mcp-server}
 
-The Dispatcher MCP server is embedded in the AEM Dispatcher SDK. It enables AI tools to validate Dispatcher and Apache HTTPD configuration, trace request handling, and inspect cache behavior against a Dispatcher instance running locally in Docker.
+The Dispatcher MCP server is bundled with the AEM Dispatcher SDK. It enables AI tools to validate Dispatcher and Apache HTTPD configuration, trace request handling, and inspect cache behavior against a Dispatcher instance running locally in Docker.
+
+Unlike the dispatcher skill, the Dispatcher MCP server exposes tools only: seven MCP tools and no prompts or resources.
 
 ### Prerequisites {#prerequisites}
 
@@ -232,28 +236,32 @@ chmod +x ./bin/docker_run_mcp.sh
 Expand-Archive aem-sdk-dispatcher-tools-<version>-windows.zip
 ```
 
-Run `./bin/docker_run_mcp.sh help` to confirm the version and retrieve the configuration path. Use `./bin/docker_run_mcp.sh diagnose` to investigate connectivity issues.
+Run `./bin/docker_run_mcp.sh help` to retrieve copy-paste IDE configuration and `./bin/docker_run_mcp.sh version` to confirm the bundled MCP and SDK version. Use `./bin/docker_run_mcp.sh diagnose` to investigate connectivity issues.
 
 ### Configure Cursor {#configure-cursor}
 
-Add the `aem-dispatcher` entry to `~/.cursor/mcp.json`:
+Add an `aem-dispatcher-mcp` entry to `~/.cursor/mcp.json`:
 
 ```json
 {
   "mcpServers": {
-    "aem-dispatcher": {
-      "command": "/absolute/path/to/dispatcher-sdk-<version>/bin/docker_run_mcp.sh",
+    "aem-dispatcher-mcp": {
+      "command": "<path_to_dispatcher_sdk>/bin/docker_run_mcp.sh",
       "env": {
-        "DOCKER_API_VERSION": "1.41"
+        "DOCKER_API_VERSION": "1.43",
+        "AEM_DEPLOYMENT_MODE": "cloud",
+        "MCP_LOG_LEVEL": "trace",
+        "MCP_LOG_FILE": "/tmp/dispatcher-mcp.log",
+        "DISPATCHER_CONFIG_PATH": "<path_to_dispatcher_src>"
       }
     }
   }
 }
 ```
 
-Replace the path and `<version>` with the values shown in the `help` output. If other MCP servers are already configured, add the `aem-dispatcher` entry without replacing them. Restart Cursor after saving.
+Replace `<path_to_dispatcher_sdk>` with the extracted Dispatcher SDK location and `<path_to_dispatcher_src>` with the project's dispatcher `src` directory. Set `DISPATCHER_CONFIG_PATH` to the config root that includes the files where `/docroot` is defined. `MCP_LOG_LEVEL` and `MCP_LOG_FILE` are optional debugging settings. If you see `client version 1.43 is too new`, set `DOCKER_API_VERSION` to `1.41`. If other MCP servers are already configured, add the `aem-dispatcher-mcp` entry without replacing them. Restart Cursor after saving.
 
-Other IDEs can be configured in a similar manner.
+Other IDEs can be configured in a similar manner. The SDK's `docs/DispatcherMCP.md` includes complete examples for Claude Desktop and VS Code.
 
 ### Available Tools {#available-tools-dispatcher}
 
@@ -267,4 +275,4 @@ Other IDEs can be configured in a similar manner.
 |`monitor_metrics`|Reads runtime metrics from Dispatcher and HTTPD logs|
 |`tail_logs`|Tails relevant Dispatcher and HTTPD runtime logs|
 
-Full reference documentation is available in `docs/DispatcherMCP.md` inside the extracted Dispatcher SDK.
+The MCP surface intentionally exposes only these seven tools; prompts and resources remain in the skill layer. Full reference documentation is available in `docs/DispatcherMCP.md` inside the extracted Dispatcher SDK.
