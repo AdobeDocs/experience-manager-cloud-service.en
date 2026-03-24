@@ -1,4 +1,4 @@
-# Dynamic Table in Interactive Communication Editor
+# Create Dynamic Table in Interactive Communication Editor
 
 ## Overview
 
@@ -70,7 +70,7 @@ You can control how many rows the dynamic table can render.
 
 >[!NOTE]
 >
-> Setting **Initial Rows** to around **3--5** provides a more realistic layout preview before runtime data is applied.
+> Setting **Initial Rows** to around **3-5** provides a more realistic layout preview before runtime data is applied.
 
 ## Key Capabilities
 
