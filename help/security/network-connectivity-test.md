@@ -85,19 +85,27 @@ The tool reports several dimensions. Together they describe whether the target i
 
 ### HTTP connectivity {#http-connectivity}
 
-The tool attempts an HTTP/HTTPS-style check on the port (HTTPS first, then HTTP). **Any HTTP status returned by your service** (including redirects, 403, 404, or 5xx) still indicates that a **network path to an HTTP server** responded; the status reflects the application, not Cloud Manager.
+An HTTP/HTTPS request is attempted on **every port**. The tool always tries **HTTPS** first, then falls back to **HTTP**. If neither works, the result is classified into a customer-friendly **error** message (see the table below).
 
-| Situation | Meaning |
+**Success outputs**
+
+| Output | Meaning |
 | --- | --- |
-| HTTPS or HTTP success with a status line | The service spoke HTTP(S) on that port. |
-| Message such as **Not an HTTP/HTTPS service** | The port may be open, but the service is not speaking HTTP(S) (for example, database, SFTP, custom TCP). Use **Port open** and **Reachability** for these services. |
-| **Connection refused** | Nothing is accepting connections on that port. |
-| **Connection timed out** | Often firewall or routing; less often severe latency. |
-| **No IPs resolved for host** | DNS failed; HTTP check cannot run. |
+| `protocol: "https"`, `status_code: 200`, `reason: "200 OK"` | HTTPS connection succeeded. |
+| `protocol: "http"`, `status_code: 301`, `reason: "301 Moved Permanently"` | HTTP connection succeeded; the service is redirecting (typically to HTTPS). This is normal. |
 
->[!TIP]
+**Classified error outputs**
+
+| Error | Note | Meaning |
+| --- | --- | --- |
+| `"Not an HTTP/HTTPS service"` | `"The service appears to be a non-HTTP service (e.g., database, message queue, or custom TCP). Use the port_open and reachability fields to verify connectivity."` | The port is open but the service does not speak HTTP. This is expected for databases, SFTP, custom TCP, and similar services. |
+| `"Connection refused"` | `"The port is not accepting connections. Verify the service is running and listening on this port."` | Nothing is listening on this port. |
+| `"Connection timed out"` | `"The connection timed out. Check firewall rules and network routing."` | A firewall or routing issue is preventing the connection. |
+| `"No IPs resolved for host"` | — | DNS resolution failed; HTTP cannot be tested. |
+
+>[!NOTE]
 >
->For **non-HTTP** services (for example, databases), expect the HTTP section to show an error or “not HTTP” style outcome. Rely on **Port open** and **Reachability** to confirm connectivity.
+>Any HTTP status code from the target service (for example, `200`, `301`, `302`, `403`, `404`, or `500`) is a **success signal** for connectivity—it means the **network path** works. The status code reflects the service’s own response, not overall network health. For non-HTTP services, the tool indicates **Not an HTTP/HTTPS service**; use **Port open** and **Reachability** as the reliable indicators for those services.
 
 ### Reachability {#reachability}
 
