@@ -104,7 +104,7 @@ The tab lets you create and manage cases, chat directly with Adobe customer supp
 
 Now that you have read this document, you should:
 
-* Understand what and Adobe ID is.
+* Understand what an Adobe ID is.
 * Be able to log in to the Admin Console.
 * Understand how to review your privileges as a system administrator using the Admin Console.
 * Know how to contact Adobe support for help.
