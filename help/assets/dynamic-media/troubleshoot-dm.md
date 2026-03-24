@@ -194,7 +194,7 @@ In CRXDE Lite do the following:
 1. Navigate to `<sync-folder>/_CSS/_OOTB` folder within your Dynamic Media sync folder (for example, `/content/dam/_CSS/_OOTB`).
 1. Find the metadata node of the problematic asset (for example, `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`).
 1. Check for the presence of `dam:scene7*` properties. If the asset was successfully synced and published, you see the `dam:scene7FileStatus` set is to **PublishComplete**.
-1. Attempt to request the artwork directly from Dynasmic Media by concatenating the values of the following properties and string literals:
+1. Attempt to request the artwork directly from Dynamic Media by concatenating the values of the following properties and string literals:
 
    * `dam:scene7Domain`
    * `"is/content"`
