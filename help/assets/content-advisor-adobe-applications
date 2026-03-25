@@ -8,29 +8,28 @@ role: User
 ---
 # Use Content Advisor to access AEM Assets in Adobe applications{#content-advisor-aem-assets-adobe-applications}
 
-Adobe Experience Manager (AEM) Assets integrates natively with Adobe applications, such as AEM Sites (document-based authoring, custom UE picker, Content Fragment Editor, Universal Editor, components, and Page Editor), allowing you to discover, access, and use assets from AEM Assets directly within the application interface using Content Advisor.
+AEM Assets delivers a unified content discovery experience across Adobe applications through Content Advisor. Natively integrated with applications such as AEM Sites (Document-Based Authoring, Content Fragment Editor, Universal Editor, and Document Authoring), Content Advisor brings assets and Content Fragments together in a single, intelligent interface. It enables you to effortlessly discover, browse, and reuse the most relevant content, right within your workflow, so you can move faster without breaking context.
 
-Content Advisor transforms how you discover and use assets in Adobe applications by bringing intelligent, context-aware asset discovery directly to your creative workflow. Instead of searching for assets by typing keywords, Content Advisor surfaces relevant, approved assets based on your canvas content, campaign brief, and intent, helping you find the right asset faster.
+Content Advisor brings intelligent, context-aware discovery directly into the authoring experience, helping you quickly find relevant, approved content based on your intent. With features such as smart suggestions, Dynamic Media renditions, and detailed asset insights, it enables you to efficiently evaluate and reuse content without leaving the application interface, accelerating content creation while maintaining brand consistency.
 
-With smart suggestions, access to Dynamic Media renditions, and full visibility into asset metadata, Content Advisor enables you to efficiently locate, evaluate, and use assets from AEM Assets without leaving your host Adobe application interface. This ensures faster content creation, improved asset reuse, and consistent use of approved, brand-compliant assets.
-
-![Content Advisor banner image](assets/content-advisor-banner-image.png)
+![Content Advisor banner image](assets/content-advisor-banner-image-updated.png)
 
 
 ## Prerequisites {#prerequisites}
 
-* Asset Selector version 0.36.0
-* At least one environment within AEM Assets. The environment can be any of the Assets as a Cloud Service repositories.
+* Access to an AEM Assets as a Cloud Service environment.
+
+* Access to an AEM Sites environment where you have authored Content Fragments.
 
 ## Intelligent asset discovery with Content Advisor {#intelligent-asset-discovery-content-advisor}
 
-Content Advisor helps you discover relevant assets using intelligent, context-aware recommendations based on your host Adobe application content or campaign brief. It also allows you to select channel-ready Dynamic Media renditions optimized for your use case. 
+Content Advisor helps you discover relevant content using intelligent, context-aware recommendations based on your host Adobe application content or campaign brief. It also allows you to select channel-ready Dynamic Media renditions optimized for your use case. 
 
 >[!IMPORTANT]
 > 
 >Ensure that you select an **author** repository from the **Repository** drop-down list. A **delivery** repository does not display Content Advisor features. 
 >
-> In addition, the **delivery** repository does not have assets organized in folders and collections. All assets are displayed at the root level in a flat structure.
+> In addition, the **delivery** repository does not have content organized in folders and collections. The content is displayed at the root level in a flat structure.
 
 Content Advisor provides the following key features:
 
@@ -85,6 +84,7 @@ Some if its key benefits include:
 > 
 >* You must sign a GenAI Rider to access this feature within Content Advisor. To sign GenAI rider, contact your Adobe representative.
 >* Minimum required AEM release version to access this feature is `21994`.
+>* Content Advisor displays smart suggestions based on the context and intent of the content available in the text layers or the title within the host Adobe application. It does not display results based on images. See [Content Advisor feature support across Adobe applications](#content-advisor-feature-support-adobe-applications) for the list of supported Adobe applications.
 
 
 ### Campaign briefs to discover relevant assets {#campaign-briefs-content-advisor}
@@ -120,7 +120,7 @@ Click **[!UICONTROL Add Modifiers]**, specify a modifier in the text box, and pr
 
 ### Seamless Integration with Content Fragments {#content-fragments-integration-content-advisor}
 
-Content Advisor provides seamless integration with Content Fragments, enabling you to easily browse and incorporate fragments into supported Adobe applications. Navigate through a list of Content Fragments and select the most relevant content without leaving your current workflow.
+Content Advisor provides seamless integration with Content Fragments, enabling you to easily browse and incorporate fragments into supported Adobe applications. Search through a list of Content Fragments and select the most relevant content without leaving your current workflow.
 
 Each Content Fragment is represented as a card with a live thumbnail preview generated from its content, helping you to quickly identify the right fragment. The card also displays key details such as the title and status (Draft, Modified, or Published). For deeper insights, click the ![Info icon](assets/info-icon.svg) icon to view detailed properties, references to other Content Fragments and available variations, ensuring informed content selection and reuse.
 
@@ -128,7 +128,7 @@ Each Content Fragment is represented as a card with a live thumbnail preview gen
 
 >[!IMPORTANT]
 > 
->* AI Search, Upload brief, and Preview capabilities are not yet supported for Content Fragments in Content Advisor.
+>* AI Search, Smart Suggestions, Upload Campaign Briefs, and Preview capabilities are not yet supported for Content Fragments in Content Advisor.
 
 ### Access asset metadata consistent with Assets view {#asset-metadata-content-advisor}
 
@@ -178,12 +178,10 @@ Content Advisor allows you to search for assets or collections across all collec
 
 The following table illustrates the Content Advisor feature support across Adobe applications.
 
-| Application                          | Supported views        | Support for brief upload for searching Assets | Support for suggested content panel while searching Assets | Support for Dynamic Media panel while searching Assets | Support for searching Content Fragments |
-|--------------------------------------|------------------------|----------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|------------------------------------------|
-| AEM Sites (Document-based authoring) | Rail and Modal view    | &minus;                                            | &minus;                                                         | &#10003;                                                      | &minus;                                        |
-| AEM Sites (Custom UE Picker)                     | Modal view             | &minus;                                            | &minus;                                                         | &#10003;                                                      | &minus;                                        |
-| AEM Sites (DA)                       | Modal view             | &#10003;                                            | &#10003;                                                         | &#10003;                                                      | &minus;                                        |
-| AEM Sites (Content Fragment Editor)              | Modal view             | &#10003;                                            | &#10003;                                                         | &#10003;                                                      |                                          |
-| AEM Sites (Universal Editor)                     | Modal view             | &#10003;                                            | &#10003;                                                         | &#10003;                                                      |                                          |
-| AEM Sites Components                           | Rail and Modal view    | &#10003;                                            |                                                           |                                                        |                                          |
-| AEM Sites Page Editor                          | Rail and Modal view    | &#10003;                                            |                                                           |                                                        |                                          |
+| Application                          | Support for brief upload for searching Assets | Support for suggested content panel while searching Assets | Support for Dynamic Media panel while searching Assets | Support for searching Content Fragments |
+|--------------------------------------|----------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|------------------------------------------|
+| AEM Sites (Document-Based Authoring) |  &minus;                                            | &minus;                                                         | &#10003;                                                      | &minus;                                        |
+| AEM Sites (Document Authoring)                       |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      | &minus;                                        |
+| AEM Sites (Content Fragment Editor)              |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      |  &minus;                                        |
+| AEM Sites (Universal Editor)                     |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      |  &#10003;                                        |
+
