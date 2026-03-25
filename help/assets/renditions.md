@@ -87,13 +87,13 @@ Based on the selected option:
 
 * Renditions displayed correspond to the selected mode (Scene7 or Dynamic Media with OpenAPI).
 * The **Copy URL** and **Download Rendition** actions apply to the selected rendition type.
-![download icon](/help/assets/assets/toggle-op.png)
+![download icon](/help/assets/assets/Toggle-op.png)
 
 ### View Dynamic Media with OpenAPI Capabilities renditions {#view-download-dm-with-openapi-renditions}
 
 1. Select the asset and click **Details**.
 1. Click the Dynamic Media icon available in the right pane. The Dynamic Media panel displays the Base Rendition for all asset types. 
-![download icon](/help/assets/assets/Base-rendition.png)
+![download icon](/help/assets/assets/Base-Rendition.png)
 1. Select **Base Rendition** and click **Copy URL** to copy the delivery URL of the asset or click **Download Rendition** to download the asset.
 
 
