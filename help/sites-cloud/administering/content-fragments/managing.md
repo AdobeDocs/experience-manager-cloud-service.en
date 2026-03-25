@@ -486,7 +486,7 @@ AEM lets you:
 * [check out](#check-out-a-content-fragment) a Content Fragment, preventing other users from working on the fragment 
 * [check in](#check-in-a-content-fragment) Content Fragments, allowing other users to resume working with the fragment
 
-When you check out a fragment it is locked (`jcr:lock`). A padlock icon in the **Title** column indicates a locked fragment.
+When you check out a fragment it is locked (`jcr:lock`). A padlock icon in the **Title** column indicates a locked fragment. Selecting the padlock icon provides details of the account that has checked out the fragment.
 
 You can edit, publish, unpublish, move, or delete a locked fragment. Other users cannot perform any of these actions on the fragment until you check in the fragment; though they can still change the metadata for the locked fragment.
 
