@@ -1,28 +1,27 @@
 ---
 title: Network Connectivity Test
 description: Use the Network Connectivity Test in Cloud Manager to validate Advanced Networking and VPN configuration from your program's egress path before you enable networking on environments.
-exl-id: a8e44102-5631-4f0c-9de2-1c7b4e8f2d91
 feature: Security
 role: Admin
 ---
 
 # Network Connectivity Test {#network-connectivity-test}
 
-The **Network Connectivity Test** is a diagnostic tool in Cloud Manager that helps you confirm that traffic from your program's **Advanced Networking** infrastructure can reach hosts and ports that AEM will use—**before** you enable Advanced Networking on your environments.
+The **Network Connectivity Test** is a Cloud Manager diagnostic tool that lets you validate Advanced Networking and VPN configuration before you enable Advanced Networking on your environments and before you go live. Use it to verify that the hosts and ports AEM must reach, including internal or private endpoints, are reachable over the same connectivity path Advanced Networking will use.
 
-Tests run from the **egress side of your Advanced Networking setup** (not from an AEM pod). That path is the same class of network path AEM relies on when Advanced Networking is in use, which makes the tool especially useful for **VPN** scenarios: you can verify DNS, routing, firewalls, and that a service is listening—early in the rollout.
+The test runs from the **egress proxy infrastructure** that belongs to your program’s Advanced Networking setup, not from an Author or Publish pod. It uses the same outbound network path AEM uses when Advanced Networking is active. That design is especially useful for **VPN** scenarios: you can confirm DNS resolution, network routing, firewall rules, and service availability for private or on-premises systems before you go live.
 
 For background on provisioning VPN, dedicated egress IP, or flexible port egress, see [Configuring Advanced Networking for AEM as a Cloud Service](/help/security/configuring-advanced-networking.md).
 
 >[!IMPORTANT]
 >
->A successful connectivity test proves that the **network path** from Advanced Networking can reach your target. Your **application code** must still be configured to use the Advanced Networking proxy where required (for example, proxy-related environment variables and port forwarding). If code bypasses the proxy, you may not see traffic from the expected egress path even when the test passes.
+>A successful connectivity test proves that the network path from Advanced Networking can reach your target. Your application code must still be configured to use the Advanced Networking proxy where required (for example, proxy-related environment variables and port forwarding). If code bypasses the proxy, you may not see traffic from the expected egress path even when the test passes.
 
-## When to use this tool {#when-to-use}
+## When to Use This Tool {#when-to-use}
 
 * After **Advanced Networking** is created at the **program** level and **before** or while enabling it on **environments**.
-* To validate **VPN** connectivity to customer-managed endpoints (internal hostnames or private IPs).
-* To narrow down **DNS** issues versus **firewall or routing** issues when a service does not respond as expected.
+* To validate **VPN** connectivity to private or on-premises systems you operate (for example, internal hostnames or private IP addresses).
+* To narrow down DNS issues versus firewall or routing issues when a service does not respond as expected.
 
 >[!NOTE]
 >
@@ -30,22 +29,23 @@ For background on provisioning VPN, dedicated egress IP, or flexible port egress
 
 ## Prerequisites {#prerequisites}
 
-* A **non-sandbox** Cloud Manager program.
-* **Advanced Networking** infrastructure already created for the program (see [Configuring Advanced Networking](/help/security/configuring-advanced-networking.md)).
+* A Cloud Manager program.
+* Advanced Networking infrastructure already created for the program (see [Configuring Advanced Networking](/help/security/configuring-advanced-networking.md)).
 
-## Open the Network Connectivity Test {#open-test}
+## How to Run a Test {#how-to-run-a-test}
 
 1. Sign in to Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and open your organization and program.
-1. In the program sidebar, go to **Network Infrastructures** (under **Environments**).
-1. Either:
-   * Select a **network infrastructure** row to open the testing experience, or
-   * Open the **row actions** menu (**…**) and choose **Test**.
+1. Open the **Environments** tab for the program. In the left sidebar, select **Network Infrastructures**.
 
-The **Network Testing** dialog opens.
+1. On the **Network Infrastructures** page, locate your infrastructure in the table. Either select a **row** to open the testing experience, or open the row **actions** menu (![Adobe Spectrum Smock More icon for the horizontal ellipsis row actions menu](assets/ellipsis.svg)) and choose **Test**.
 
-## Run a test {#run-test}
+   ![Cloud Manager program Environments area with the Network Infrastructures table, infrastructure rows, and row actions menu used to start the Network Connectivity Test](assets/network-connectivity-test-cloud-manager-open-test-from-infrastructure-list.png)
 
-### Input fields {#input-fields}
+1. The **Network Testing** dialog opens. Enter **Host** and **Port**, select **Test**, and review DNS resolution, port open, HTTP connectivity, and reachability in the results area. Optional actions such as **Copy to clipboard** and recent test history appear in the dialog. See [Understand the Results](#understand-results) for how to interpret each section.
+
+   ![Cloud Manager Network Connectivity Test dialog with Host and Port fields, Test action, and results for DNS resolution, port open, HTTP connectivity, and reachability](assets/network-connectivity-test-cloud-manager-results-dialog.png)
+
+### Input Fields {#input-fields}
 
 | Field | Description | Examples |
 | --- | --- | --- |
@@ -59,42 +59,40 @@ The **Network Testing** dialog opens.
 1. Optional: Use **Copy to clipboard** to capture the full JSON result (useful for support cases).
 1. Recent tests may be listed for quick re-runs.
 
+## Understanding Results {#understanding-results}
+
+The tool reports several dimensions. Together they describe whether the target is reachable from Advanced Networking and how HTTP-aware checks behaved.
+
+### DNS Resolution {#dns-resolution}
+
+| Result | Meaning |
+| --- | --- |
+| `ips: ["10.0.1.50"]` | DNS resolution succeeded. The hostname resolved to the listed IP address(es) using the resolvers associated with your Advanced Networking configuration. |
+| `error: "DNS resolution error: ..."` | DNS resolution failed. The configured DNS servers could not resolve the hostname (wrong name, resolver not reachable, missing record, and similar causes). |
+
 >[!NOTE]
 >
 >If you enter a **numeric IP** instead of a hostname, DNS resolution is skipped for that value and the IP is used directly.
 
-## Understand the results {#understand-results}
-
-The tool reports several dimensions. Together they describe whether the target is reachable from Advanced Networking and how HTTP-aware checks behaved.
-
-### DNS resolution {#dns-resolution}
+### Port Open {#port-open}
 
 | Result | Meaning |
 | --- | --- |
-| `ips` lists one or more addresses | The hostname resolved successfully using the resolvers associated with your Advanced Networking configuration. |
-| DNS error message | Resolution failed (wrong name, resolver not reachable, missing record, and so on). |
+| `Yes` / true | TCP connection succeeded — the port is open and accepting connections. |
+| `No` / false | the port is closed, filtered by a firewall, or the host is unreachable. |
 
-**Multiple resolvers:** If your infrastructure defines more than one DNS resolver and they disagree, you may see separate results per resolver so you can spot inconsistent DNS.
+### HTTP Connectivity {#http-connectivity}
 
-### Port open {#port-open}
+An HTTP/HTTPS request is attempted on **every port**. The tool always tries **HTTPS** first, then falls back to **HTTP**. If neither works, the result is mapped to a short, readable **error** message (see the table below).
 
-| Result | Meaning |
-| --- | --- |
-| **Yes** / true | A TCP connection to the resolved address on the chosen port succeeded. |
-| **No** / false | TCP did not connect—port closed, filtered, no listener, or routing/firewall blocked the path. |
-
-### HTTP connectivity {#http-connectivity}
-
-An HTTP/HTTPS request is attempted on **every port**. The tool always tries **HTTPS** first, then falls back to **HTTP**. If neither works, the result is classified into a customer-friendly **error** message (see the table below).
-
-**Success outputs**
+**Success Outputs**
 
 | Output | Meaning |
 | --- | --- |
 | `protocol: "https"`, `status_code: 200`, `reason: "200 OK"` | HTTPS connection succeeded. |
 | `protocol: "http"`, `status_code: 301`, `reason: "301 Moved Permanently"` | HTTP connection succeeded; the service is redirecting (typically to HTTPS). This is normal. |
 
-**Classified error outputs**
+**Classified Error Outputs**
 
 | Error | Note | Meaning |
 | --- | --- | --- |
@@ -111,50 +109,240 @@ An HTTP/HTTPS request is attempted on **every port**. The tool always tries **HT
 
 | Result | Meaning |
 | --- | --- |
-| **Reachable** | The host and port are reachable from Advanced Networking for this test. |
-| **Unreachable: Port not accessible** | DNS may have worked, but TCP to the port did not succeed. |
-| **Unreachable: DNS resolution failed** | The hostname could not be resolved with your configuration. |
+| **Reachable** | The target host and port are reachable from the Advanced Networking infrastructure. The network configuration is correct.  |
+| **Unreachable: Port not accessible** | DNS resolved successfully, but TCP to the port did not succeed. This is typically a firewall or a routing issue. |
+| **Unreachable: DNS resolution failed** | The hostname could not be resolved with your configuration. This is an indication of a DNS configuration issue. |
+
+### Multiple DNS Resolvers {#multiple-dns-resolvers}
+
+If your Advanced Networking infrastructure defines **more than one DNS resolver**:
+
+* When **all resolvers return identical results**, you see a **single consolidated** result labeled `default`.
+* When resolvers return **different results**, each resolver’s outcome is shown **separately** (labeled `resolver_1`, `resolver_2`, and so on), **with the resolver IP**, so you can see which DNS server is causing the inconsistency.
 
 ## Troubleshooting {#troubleshooting}
 
-### DNS resolution failed {#dns-failed}
+The following scenarios pair what you are likely to see in the tool with steps to narrow down the cause. For full **Copy to clipboard** JSON that illustrates the same situations, see [Example Outputs](#example-outputs).
 
-1. Confirm the **hostname** (typos and wrong zones are common).
-1. Ensure the **DNS servers** configured for Advanced Networking are reachable from the Advanced Networking address space (for VPN, often via the tunnel).
-1. Remember that resolution uses **your configured resolvers**, not arbitrary public DNS.
-1. For VPN, confirm resolver IPs fall inside **remote networks** that the tunnel actually routes.
+### DNS Resolution Failed {#dns-failed}
 
-### DNS works but the port is not accessible {#dns-ok-port-blocked}
+#### Output
 
-1. On the **target** side, allow traffic from your Advanced Networking **egress** range (and VPN remote CIDRs as applicable).
-1. Confirm the **process is listening** on the host and port you tested.
-1. For VPN, verify the tunnel, routes, and that the target subnet is reachable through the VPN.
-1. Review customer-side **firewall or NSG** rules for the specific port.
+The hostname did not resolve using your Advanced Networking DNS settings, so the tool cannot test the port. In the results view, **DNS resolution** shows an error string, and **Reachability** reports that DNS failed:
 
-### Test shows reachable but AEM does not connect {#reachable-but-aem-fails}
+```
+DNS Resolution: error: "DNS resolution error: ..."
+Reachability: "Unreachable: DNS resolution failed"
+```
 
-1. Ensure **application code** uses the Advanced Networking **proxy** when required (for example, `AEM_PROXY_HOST` and related settings).
-1. Review **port forwarding** at the environment level: `portOrig`, `portDest`, and target host must match how the application connects.
-1. Confirm the host is **not** listed under **`nonProxyHosts`**, which would bypass the proxy for that host.
+#### Recommendations
 
-### HTTP shows an error but port is open {#http-error-port-open}
+1. **Verify the hostname is correct**—check for typos and that you are using the intended **DNS zone** (the wrong zone is a common mistake).
+1. Ensure **your DNS resolvers**—those configured in the network infrastructure—are **reachable from the Advanced Networking CIDR range** (the same address space the tool and AEM use for outbound checks). If you rely on private DNS, those servers must be reachable through the VPN tunnel or within the network address space that routing exposes to Advanced Networking.
+1. **Verify that your configured DNS servers can resolve the hostname** — Advanced Networking uses **only** the resolvers defined in your network infrastructure setup, **not** public DNS (for example, `8.8.8.8`). If your internal DNS has no record for that hostname, resolution fails.
+1. **For VPN setups:** Confirm the DNS server IP addresses lie within the VPN address space (the remote network CIDR the tunnel is built for). Resolvers on a subnet that is not routed through the VPN tunnel are not reachable from Advanced Networking.
 
-* For **non-HTTP** services, this combination is often **expected**; trust **Port open** and **Reachability**.
-* If HTTPS fails but HTTP works, investigate **TLS** configuration or certificate issues on the service.
+### DNS Works but the Port Is Not Accessible {#dns-ok-port-blocked}
 
-### Request timeout {#timeout}
+#### Output
 
-* The check is subject to a **short timeout** (on the order of a few seconds). Slow services or high VPN latency can time out.
-* Retry once to rule out transient issues.
+The tool can resolve the host, but TCP to the port does not succeed. A summary often looks like this:
 
-## Limitations {#limitations}
+```
+DNS Resolution: ips: ["10.0.1.50"]
+Port Open: No
+Reachability: "Unreachable: Port not accessible"
+```
 
-* The test runs from **Advanced Networking egress infrastructure**, not from an AEM author or publish **pod**.
-* It does **not** validate environment-level **port forwarding** rules by themselves—it validates raw reachability from the infrastructure path.
-* It does **not** send custom application payloads; HTTP checks use a basic request suitable for diagnostics.
-* Typical responses complete in a few seconds; longer waits may hit a **timeout**.
+#### Recommendations
 
-## Related information {#related-information}
+1. **Review firewall and allow-list rules on the target service**—incoming traffic from your Advanced Networking infrastructure CIDR range (and egress IP addresses AEM uses) must be permitted. If you use a VPN, include remote network CIDRs as your design requires.
+1. **Verify the service is running** and **listening on the host and port** you entered in the test.
+1. **For VPN setups:** Confirm the tunnel is up, routing reaches the target subnet, and the target address lies in the remote network address space carried over the VPN.
+1. On your infrastructure, review **network security groups (NSGs), security rules, or equivalent** that could block the port between Advanced Networking and the target.
+1. **Confirm the port number**—ensure the process is actually listening on the port you are testing.
+
+### Test Shows Reachable but AEM Does Not Connect {#reachable-but-aem-fails}
+
+#### Output
+
+The connectivity check itself succeeds. A condensed summary often looks like this:
+
+```
+Port Open: Yes
+Reachability: "Reachable"
+```
+
+That outcome means the path from Advanced Networking to the host and port you tested is open. It does not guarantee that AEM application traffic is using that path: when your code runs, service logs may still show no requests from the egress IP you expect.
+
+#### Recommendations
+
+1. **The application code must be configured to use the proxy**. The connectivity test proves the network path works, but AEM must explicitly route requests through the **Advanced Networking proxy** (for example, via the **`AEM_PROXY_HOST`** environment variable). If the code makes direct connections without the proxy, traffic does not go through the Advanced Networking infrastructure.
+1. **Review proxy settings in your HTTP clients** - HTTP clients should use the same proxy configuration (`AEM_PROXY_HOST` and port forwarding where applicable).
+1. **Verify the port forwarding configuration** for Advanced Networking at the **environment** level: in `portForwards`, each entry must map **`portOrig`** to **`portDest`** on the right **target host**. **`portOrig`** is the **port your AEM application code connects to** when it opens the outbound connection through the proxy. **`portDest`** is the **actual port on the target service** where the remote process is listening. The **target host** is the **hostname or address of that service** as used in the forward. All three must match how your application is written to connect.
+1. **Check `nonProxyHosts`**. If the target host is listed there, requests **skip the proxy** for that host and will not follow the Advanced Networking path you validated.
+
+### HTTP Shows an Error but Port Is Open {#http-error-port-open}
+
+#### Output
+
+TCP succeeds, but the HTTP/HTTPS probe still reports a failure. A summary often looks like this:
+
+```
+Port Open: Yes
+HTTP Connectivity: error: "Connection error: ..." or "Both HTTPS and HTTP failed. ..."
+Reachability: "Reachable"
+```
+#### Recommendations
+
+1. **The service may not speak HTTP or HTTPS** — for example, raw TCP, gRPC, or another protocol. The HTTP probe can fail while `Port open: Yes` and `Reachability: Reachable` still confirm that the network path works. Use those fields as the source of truth for non-HTTP services.
+1. **Investigate TLS and certificate configuration**. If HTTPS fails but HTTP succeeds (sometimes indicated by a note such as `HTTPS failed, HTTP succeeded`), the service may have certificate problems or may only offer HTTP on that port.
+
+### Request Timeout {#timeout}
+
+#### Output
+
+```json
+{ "error": "Request timeout" }
+```
+
+#### Recommendations
+
+1. **Allow for service response time**—the check uses a timeout of 5 seconds. Targets that answer slower than that will time out even when they are otherwise healthy.
+1. **Account for network latency**. On VPN connections, high latency or an unhealthy tunnel can push the round trip over the limit; review tunnel status and routing.
+1. **Run the test again**. One-off network glitches can produce a timeout that does not recur.
+
+## Example Outputs {#example-outputs}
+
+### Successful HTTPS Test (e.g., Internal API on Port 443) {#example-output-successful-https}
+
+```json
+{
+  "resolvers": [
+    {
+      "name": "default",
+      "dns_resolution": {
+        "ips": ["10.0.1.50"]
+      },
+      "port_open": true,
+      "http_connectivity": {
+        "protocol": "https",
+        "status_code": 200,
+        "reason": "200 OK"
+      },
+      "reachability": "Reachable"
+    }
+  ]
+}
+```
+
+### Successful Non-HTTP Service Test (e.g., Database on Port 5432) {#example-output-successful-non-http}
+
+```json
+{
+  "resolvers": [
+    {
+      "name": "default",
+      "dns_resolution": {
+        "ips": ["10.0.1.50"]
+      },
+      "port_open": true,
+      "http_connectivity": {
+        "error": "Not an HTTP/HTTPS service",
+        "note": "The service appears to be a non-HTTP service (e.g., database, message queue, or custom TCP). Use the port_open and reachability fields to verify connectivity."
+      },
+      "reachability": "Reachable"
+    }
+  ]
+}
+```
+
+>[!NOTE]
+>
+>The HTTP error is expected for non-HTTP services. **Port Open: true** and **Reachability: Reachable** confirm the network path works.
+
+### DNS Resolution Failure {#example-output-dns-resolution-failure}
+
+```json
+{
+  "resolvers": [
+    {
+      "name": "default",
+      "dns_resolution": {
+        "error": "DNS resolution error: dial udp 10.0.0.2:53: i/o timeout"
+      },
+      "port_open": false,
+      "http_connectivity": {
+        "error": "DNS resolution failed"
+      },
+      "reachability": "Unreachable: DNS resolution failed"
+    }
+  ]
+}
+```
+
+### Port Not Accessible (Firewall / Service Down) {#example-output-port-not-accessible}
+
+```json
+{
+  "resolvers": [
+    {
+      "name": "default",
+      "dns_resolution": {
+        "ips": ["10.0.1.50"]
+      },
+      "port_open": false,
+      "http_connectivity": {
+        "error": "Connection error: dial tcp 10.0.1.50:443: i/o timeout"
+      },
+      "reachability": "Unreachable: Port not accessible"
+    }
+  ]
+}
+```
+
+## Important Notes {#important-notes}
+
+### What This Test Does Not Do {#what-this-test-does-not-do}
+
+* The test does not run from inside an AEM author or publish pod. It runs from **egress proxy infrastructure**. That validates the network layer, not application-level proxy configuration in your code.
+* It does not validate your AEM application’s proxy settings. Even when the result is `Reachable`, AEM code must still be configured to use the proxy.
+* It does not validate environment-level port forwarding configuration by itself. It tests raw connectivity from the infrastructure path.
+* It does not send custom payloads. HTTP tests issue a basic `GET` request to `/`.
+
+### Response Time {#response-time}
+
+* **Typical:** about 2 to 3 seconds.
+* **Maximum:** about five seconds timeout.
+* **All DNS resolvers** and connectivity checks run in parallel.
+
+### HTTP vs Non-HTTP Services {#http-vs-non-http-services}
+
+The tool attempts an HTTP/HTTPS connection on every port. For non-HTTP services (for example, PostgreSQL on port 5432, MySQL on 3306, SFTP on 22, Redis on 6379), the HTTP check can fail with a connection error—this is expected. Rely on `Port open` and `Reachability` to confirm connectivity for those services.
+
+<!-- Alexandru: drafting for now, questions have already been answered in the troubleshooting section making the FAQ section a bit superflulous
+
+## FAQ {#faq}
+
+* **Question:** Why does HTTP connectivity show N/A?
+
+  **Answer:** The tool runs an HTTP-style check on every port. On a non-HTTP service (database, SFTP, custom TCP, and similar), that check is not meaningful, so you may see `N/A` or Not an HTTP/HTTPS service. That is normal. Use `Port open` and `Reachability` for those services.
+
+* **Question:** The test shows **Reachable**, but my AEM code still cannot connect. Why?
+
+  **Answer:** The test only proves the **network path** from Advanced Networking. Your code must still use the **proxy** (`AEM_PROXY_HOST`, port forwarding, and related settings). **Direct** connections—or a host listed in **`nonProxyHosts`**—can bypass that path.
+
+* **Question:** Why does DNS resolution fail for my internal hostname?
+
+  **Answer:** Only the DNS servers configured for **Advanced Networking** are used—not public resolvers such as `8.8.8.8`. You need a correct **DNS record**, **reachable** resolver IPs (often via **VPN**), and a hostname in the right **zone**. Typos and routing gaps are common causes.
+
+* **Question:** What does it mean when resolvers show different results?
+
+  **Answer:** Each configured resolver is checked **separately**. If they **disagree**, you get separate rows (for example `resolver_1`, `resolver_2`) with different IPs or errors. That usually means **inconsistent DNS** between those servers—compare the answers and fix the resolver or path that is wrong.
+
+  -->
+
+## Related Information {#related-information}
 
 * [Configuring Advanced Networking for AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
 * [Advanced networking tutorials on Experience League](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/advanced-networking)
