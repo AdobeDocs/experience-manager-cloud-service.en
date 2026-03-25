@@ -65,7 +65,7 @@ To view or download dynamic renditions of images in Experience Manager Assets, f
 1. Select the rendition to preview and click **Copy URL** to copy the URL of the selected rendition. Click **Download Rendition** to download the renditions of image assets.
 1. Select the Smart Crop rendition to preview and click **Copy URL** to copy the URL of the selected rendition.
 1. Click ![download icon](assets/do-not-localize/download-icon.png) to download all available Smart Crop renditions as a single zip file.
-![download icon](/help/assets/assets/smartcrop-rendition.png)
+![download icon](/help/assets/assets/download-op.png)
 
    >[!NOTE]
    >
@@ -87,12 +87,13 @@ Based on the selected option:
 
 * Renditions displayed correspond to the selected mode (Scene7 or Dynamic Media with OpenAPI).
 * The **Copy URL** and **Download Rendition** actions apply to the selected rendition type.
+![download icon](/help/assets/assets/toggle-op.png)
 
 ### View Dynamic Media with OpenAPI Capabilities renditions {#view-download-dm-with-openapi-renditions}
 
 1. Select the asset and click **Details**.
 1. Click the Dynamic Media icon available in the right pane. The Dynamic Media panel displays the Base Rendition for all asset types. 
-![download icon](/help/assets/assets/dm-with-open-api-copy-url.png)
+![download icon](/help/assets/assets/Base-rendition.png)
 1. Select **Base Rendition** and click **Copy URL** to copy the delivery URL of the asset or click **Download Rendition** to download the asset.
 
 
