@@ -1,6 +1,6 @@
 ---
-title: Use Content Advisor to access AEM Assets within Adobe applications
-description: Use Content Advisor to access AEM Assets within Adobe applications
+title: Use Content Advisor to access AEM within Adobe applications
+description: Content Advisor delivers a unified content discovery experience across Adobe applications and brings intelligent, context-aware discovery directly into the authoring experience.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
@@ -85,7 +85,7 @@ Some if its key benefits include:
 > 
 >* You must sign a GenAI Rider to access this feature within Content Advisor. To sign GenAI rider, contact your Adobe representative.
 >* Minimum required AEM release version to access this feature is `21994`.
->* Content Advisor displays smart suggestions based on the context and intent of the content available in the text layers or the title within the host Adobe application. It does not display results based on images. See [Content Advisor feature support across Adobe applications](#content-advisor-feature-support-adobe-applications) for the list of supported Adobe applications.
+>* Content Advisor displays smart suggestions based on the context and intent of the content available in the text layers or the title within the host Adobe application. It does not display results based on images. See [Content Advisor feature support across Adobe applications](#content-advisor-feature-support-adobe-applications) for the list of supported Adobe applications that support this capability.
 
 
 ### Campaign briefs to discover relevant assets {#campaign-briefs-content-advisor}
