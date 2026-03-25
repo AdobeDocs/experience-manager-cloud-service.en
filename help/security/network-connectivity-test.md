@@ -193,6 +193,7 @@ Port Open: Yes
 HTTP Connectivity: error: "Connection error: ..." or "Both HTTPS and HTTP failed. ..."
 Reachability: "Reachable"
 ```
+
 #### Recommendations
 
 1. **The service may not speak HTTP or HTTPS** — for example, raw TCP, gRPC, or another protocol. The HTTP probe can fail while `Port open: Yes` and `Reachability: Reachable` still confirm that the network path works. Use those fields as the source of truth for non-HTTP services.
