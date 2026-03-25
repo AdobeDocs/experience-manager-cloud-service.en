@@ -88,19 +88,19 @@ Here you can see that there are three main areas:
 The main/right panel (table view) of the console provides a range of information about your Content Fragments. Some items also provide direct links to further actions and/or information:
 
 * **Title**
-  * A padlock icon indicates that the fragment is [checked out](#check-out-and-check-in) and locked by one user
+  * A padlock icon indicates that the fragment is [checked out](#check-out-and-check-in) and locked by one user; selecting the padlock icon shows details of the account that has checked out the fragment.
   * The information (i) icon provides quick access to additional, fragment specific, information in the right panel. 
 * **Name**
   * Provides a link to open the fragment in the editor.
 * **Model**
   * Information only.
-  * Can be used for [Fast Filtering](#fast-filtering)
+  * Can be used for [Fast Filtering](#fast-filtering).
 * **Folder**
   * Provides a link to open the folder in the console.
     Hovering over the folder name will show the JCR path.
 * **Status**
   * Information only.
-  * Can be used for [Fast Filtering](#fast-filtering)
+  * Can be used for [Fast Filtering](#fast-filtering).
 * **Preview**
   * Information only:
     * **In sync**: Content Fragment is in-sync on the **Author** and **Preview** services.
