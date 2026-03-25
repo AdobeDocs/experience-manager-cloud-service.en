@@ -82,3 +82,19 @@ The Content Fragment console provides a **Preview** option for every fragment.
 
 The icon can be selected to open a dialog that represents the fragment based on a HTML template. You can use the default template, or develop and load your own.
 -->
+
+## Preview with Visualization Templates {#preview-with-visualization-templates}
+
+AEM allows you to preview your content fragment using a visual layout based on a template. A standard template is available within AEM, but you can also create and customize your own templates.
+
+To preview your Content Fragment using a visualization template:
+
+1. In the Content Fragment console navigate to the location of your fragment.
+1. Select your fragment.
+1. Select **Preview** from the top toolbar.
+   A dialog will open showing the fragment according to the standard template. 
+
+>[!NOTE]
+>
+>See [Content Fragments - Visualization Templates](/help/implementing/developing/extending/content-fragments-visualization-templates.md) for details about creating and customizing templates.
+
