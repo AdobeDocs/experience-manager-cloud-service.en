@@ -584,19 +584,7 @@ user-guide-title: AEM as a Cloud Service
   + [Troubleshoot AEM Assets issues](/help/assets/troubleshoot-aem-assets.md)
   + [Assets Collaborator users](/help/assets/assets-collaborator-users.md)
   + Manage digital assets {#manage}
-    + Micro-Frontend Asset Selector {#asset-selector}
-      + [Asset Selector overview](/help/assets/overview-asset-selector.md)
-      + Asset Selector integrations {#asset-selector-integration}
-        + [Asset Selector integrations overview](/help/assets/integrate-asset-selector.md)
-        + [Integrate Asset Selector with an Adobe application](/help/assets/integrate-asset-selector-adobe-app.md)
-        + [Integrate Asset Selector with a non-Adobe application](/help/assets/integrate-asset-selector-non-adobe-app.md)
-        + [Integrate Asset Selector for Dynamic Media with OpenAPI capabilities](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-      + [Asset Selector properties](/help/assets/asset-selector-properties.md)
-      + [Asset Selector examples](/help/assets/asset-selector-examples.md)
-      + [Asset Selector customizations](/help/assets/asset-selector-customization.md)
-      + [Asset Selector upload](/help/assets/asset-selector-upload.md)
-      + [Asset Selector collections](/help/assets/asset-selector-collections.md)
-    + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
+    + [Content Advisor to access AEM content in Adobe applications](/help/assets/content-advisor-adobe-applications.md)
     + [Share assets](/help/assets/share-assets.md)
     + [Reprocessing assets](/help/assets/reprocessing.md)
     + [Malware detection](/help/assets/malware-detection.md)
@@ -631,6 +619,19 @@ user-guide-title: AEM as a Cloud Service
     + [Process assets using [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)
     + [Color tags for images](/help/assets/color-tag-images.md)
     + [Manage PDF documents](/help/assets/manage-pdf-documents.md)
+    + Micro-Frontend Asset Selector {#asset-selector}
+      + [Asset Selector overview](/help/assets/overview-asset-selector.md)
+      + Asset Selector integrations {#asset-selector-integration}
+        + [Asset Selector integrations overview](/help/assets/integrate-asset-selector.md)
+        + [Integrate Asset Selector with an Adobe application](/help/assets/integrate-asset-selector-adobe-app.md)
+        + [Integrate Asset Selector with a non-Adobe application](/help/assets/integrate-asset-selector-non-adobe-app.md)
+        + [Integrate Asset Selector for Dynamic Media with OpenAPI capabilities](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+      + [Asset Selector properties](/help/assets/asset-selector-properties.md)
+      + [Asset Selector examples](/help/assets/asset-selector-examples.md)
+      + [Asset Selector customizations](/help/assets/asset-selector-customization.md)
+      + [Asset Selector upload](/help/assets/asset-selector-upload.md)
+      + [Asset Selector collections](/help/assets/asset-selector-collections.md)
+    + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
   + Configure, administer, and extend [!DNL Assets] {#admin}
     + [Detect duplicate assets](/help/assets/detect-duplicate-assets.md)
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
