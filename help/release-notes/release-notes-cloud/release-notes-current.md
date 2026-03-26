@@ -125,6 +125,16 @@ Forms Manager now [supports versioning for Adaptive Forms (Core Components and F
 
 [Simplified Index Management](https://oak-indexing.github.io/oakTools/simplified.html) provides a simpler way to define custom indexes and customize out-of-the-box (OOTB) indexes using one JSON file, without copying full definitions or managing versions manually. Customizations merge with the latest OOTB index, and a new index version is created when needed.
 
+#### Cloud Manager MCP Server {#cm-mcp-server}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
+
+Modern IDEs use the Model Context Protocol (MCP) to enable large language models (LLMs) to invoke tools exposed by MCP servers. Instead of integrating directly with low-level API specifications, developers can simply describe their intent in natural language.
+
+The Cloud Manager MCP Server allows you to interact with Cloud Manager APIs directly from your IDE using prompts. Supported scenarios include executing pipelines, checking environment status, and more.
+
+Learn more about [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
+
 #### Code Quality Pipeline Troubleshooting with the Development Agent {#devagent-codequality}
 
 The Development Agent's pipeline troubleshooting capabilities help developers more efficiently diagnose and resolve issues in AEM as a Cloud Service deployments.
@@ -139,7 +149,7 @@ Learn more about the [Development Agent](/help/ai-in-aem/agents/brand-experience
 
 #### Java API Deprecations {#java-api-deprecation}
 
-The deprecated APIs targeting 2/26/2026 removal should no longer be used in code. To prevent deployment blocks, remove API usage before March 30, 2026. Important dates:
+The deprecated APIs targeting 2/26/2026 removal should no longer be used in code. To prevent deployment blocks, remove API usage before **March 30, 2026**. Important dates:
 
 * **Starting January 26, 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs.
 * **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
@@ -167,15 +177,6 @@ See the [deprecation article](/help/release-notes/deprecated-removed-features.md
 
 +++
 
-<!--
-OSGi properties:
-
-* `org.apache.sling.commons.log.LogManager` (all properties)
-* `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
-* 
-
--->
-
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
 
 #### AEM Edge Functions (Beta Program) {#edge-functions}
@@ -191,16 +192,6 @@ Common use cases include:
 * Exposing an MCP server for LLMs like ChatGPT and Claude to access custom tools
 
 We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
-
-#### Cloud Manager MCP Server (Beta Program) {#cm-mcp-server}
-
->[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
-
-Modern IDEs use the Model Context Protocol (MCP) to enable large language models (LLMs) to invoke tools exposed by MCP servers. Instead of integrating directly with low-level API specifications, developers can simply describe their intent in natural language.
-
-Now available in beta, the Cloud Manager MCP Server allows you to interact with Cloud Manager APIs directly from your IDE using prompts. Supported scenarios include executing pipelines, checking environment status, and more.
-
-Learn more about [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md). To request access to the Cloud Manager MCP Server beta, email [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com) and include a description of your use case.
 
 #### Web Tier Config Pipeline Troubleshooting with the Development Agent (Beta Program) {#devagent-webtier}
 
