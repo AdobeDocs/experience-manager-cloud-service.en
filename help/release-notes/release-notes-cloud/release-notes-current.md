@@ -175,7 +175,7 @@ Java-stack teams are increasingly using AI-assisted development in tools such as
 
 Participate in the public beta (no sign-up necessary) to try out IDE tooling that can be used by coding agents to generate and debug AEM code and dispatcher configuration.
 
-Learn more in the [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md) beta documentation and  email [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) with questions or feedback.
+Learn more in the [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md) beta documentation and email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) with questions or feedback.
 
 #### AEM Edge Functions (Beta Program) {#edge-functions}
 
@@ -201,7 +201,7 @@ To request access to the beta, email [aem-devagent@adobe.com](mailto:aem-devagen
 
 Accelerate your migration from AEM 6.5 to AEM as a Cloud Service (Java stack) by using IDE AI tooling to act on the recommendations of the [Best Practices Analyzer Report](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
-Email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) for more information.
+Email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) for more information.
 
 #### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
 
