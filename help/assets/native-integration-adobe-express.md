@@ -1,6 +1,7 @@
 ---
 title: Use Content Advisor to access AEM Assets in Adobe Express
 description: Use Content Advisor to discover and access AEM Assets directly within the native Adobe Express integration.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User

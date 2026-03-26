@@ -4,6 +4,7 @@ description: Generate, manipulate, and secure documents with AEM Forms Communica
 Keywords: document generation, PDF manipulation, document security, batch processing, document conversion, PDF/A compliance
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 ---
 

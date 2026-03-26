@@ -4,6 +4,7 @@ description: Learn about the XMP (Extensible Metadata Platform) metadata standar
 contentOwner: AG
 feature: Metadata
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
 ---
 # XMP metadata {#xmp-metadata}

@@ -29,13 +29,13 @@ As new skills become available under early release, we will provide additional o
 
 ## Brand Experience Agent {#brand-experience-agent}
 
-The [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) automates high effort and high-volume jobs.
+The [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) automates high effort and high-volume tasks through the following agents, each specializing in a specific set of jobs.
 
-* **Content Update** - Update a page or Content Fragment
-* **Form Creation** - Create a form or import a form
-* **Development Troubleshooting** - Empower technical roles (developers and administrators) to streamline the creation, debugging, deployment, and optimization of code.
+* **[Experience Modernization Agent](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)** - Migrates websites to cloud-ready formats
+* **[Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)** - Reduces time-to-market with content updates, form creation, and communications
+* **[Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md)** - Provides AI-assisted troubleshooting and build automation
 
-The Brand Experience Agent empowers teams to turn manual, weeks-long processes into fast, AI-assisted workflows that keep every experience current and consistent helping the business achieve their goals.
+Through these agents, the Brand Experience Agent absorbs the heavy operational work behind updates and modernization, helping teams deliver changes faster and with greater confidence in today's AI era.
 
 ## Content Advisor Agent {#content-advisor-agent}
 
@@ -45,10 +45,6 @@ The [Content Advisor Agent](/help/ai-in-aem/agents/content-advisor/overview.md) 
 * **Content Optimization** - Transform how users refine and adapt assets by applying natural language instructions to create channel-ready variations. Interpret user intent and performs complex editing tasks automatically to perform tasks including generating new renditions, adjusting visual properties, changing backgrounds, or preparing assets for specific digital channels.
 
 The agent interprets user intent and performs complex editing tasks automatically including generating new renditions, adjusting visual properties, changing backgrounds, or preparing assets for specific digital channels.
-
-## Experience Modernization Agent {#site-modernization}
-
-The [Experience Modernization Agent](/help/ai-in-aem/agents/modernization/overview.md) unlocks the full value of Edge Delivery Services (including AEM authoring) by making the job of website migrations and ongoing evolution fast and frictionless.
 
 ## Governance Agent {#governance-agent}
 

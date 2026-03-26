@@ -4,6 +4,7 @@ description: An Image Profile or a Video Profile is a recipe for what options to
 contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
 ---
 # About Dynamic Media Image Profiles and Video Profiles{#about-dm-image-video-profiles}

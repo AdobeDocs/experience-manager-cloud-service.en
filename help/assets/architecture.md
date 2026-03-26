@@ -4,6 +4,7 @@ description: Architecture of Adobe Experience Manager Assets as a [!DNL Cloud Se
 contentOwner: AG
 feature: Asset Management, Asset Compute Microservices 
 role: Developer
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 0440c6a0-97c7-440e-a96e-629825d34a73
 ---
 # Architecture of Assets as a [!DNL Cloud Service] solution {#assets-architecture}

@@ -4,6 +4,7 @@ description: Use Forms Designer to create XDP and PDF Form templates which serve
 keywords: Installing Designer, Installing Forms designer, Requirements for installing Forms Designer
 feature: Adaptive Forms, Forms Designer
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
 ---
 # Download and Install Forms Designer {#installing-and-configuring-designer}
