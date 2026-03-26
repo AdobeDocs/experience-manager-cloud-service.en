@@ -252,6 +252,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.03.12 Release Notes](/help/release-notes/universal-editor/2026/2026-03-12.md)
       + [2026.03.05 Release Notes](/help/release-notes/universal-editor/2026/2026-03-05.md)
       + [2026.02.26 Release Notes](/help/release-notes/universal-editor/2026/2026-02-26.md)
       + [2026.02.19 Release Notes](/help/release-notes/universal-editor/2026/2026-02-19.md)
@@ -1101,12 +1102,14 @@ user-guide-title: AEM as a Cloud Service
   + MCP Support {#mcp-support}
     + [Using MCP with AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
     + Chat Applications (Web & Desktop) {#chat-applications}
-      + [Anthropic Claude](/help/ai-in-aem/mcp-support/setup-claude.md)
-      + [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
+      + [Setting Up Anthropic Claude with AEM MCP](/help/ai-in-aem/mcp-support/setup-claude.md)
+      + [Setting Up OpenAI ChatGPT with AEM MCP](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
     + Developer Tools (IDE Extensions, Desktop Apps, CLIs) {#developer-tools}
-      + [Cursor](/help/ai-in-aem/mcp-support/setup-cursor.md)
+      + [Setting Up Cursor with AEM MCP](/help/ai-in-aem/mcp-support/setup-cursor.md)
     + Enterprise Platforms {#enterprise-platforms}
-      + [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
+      + [Setting Up Microsoft Copilot Studio with AEM MCP](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
+      + [Setting Up JetBrains with GitHub Copilot and AEM MCP](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
+  + [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md)
   + Agents in AEM {#agents}
     + [Overview](/help/ai-in-aem/agents/overview.md)
     + Brand Experience Agent {#brand-experience}
@@ -1516,8 +1519,9 @@ user-guide-title: AEM as a Cloud Service
       + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
       + [Publishing](/help/implementing/universal-editor/publishing.md)
       + [Events](/help/implementing/universal-editor/events-universal-editor.md)
-      + [Filtering Components](/help/implementing/universal-editor/filtering.md)
+      + [Filters](/help/implementing/universal-editor/filtering.md)
       + [Configuring the RTE](/help/implementing/universal-editor/configure-rte.md)
+      + [Configuring Assets Selector](/help/implementing/universal-editor/configure-assets-selector.md)
       + [Customizing](/help/implementing/universal-editor/customizing.md)  
       + [Extending](/help/implementing/universal-editor/extending.md)   
       + [Architecture](/help/implementing/universal-editor/architecture.md)
