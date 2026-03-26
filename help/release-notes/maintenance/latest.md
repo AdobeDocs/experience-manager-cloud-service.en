@@ -10,11 +10,15 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 24678 {#release-24678}
+## Release 24678 {#24678}
 
 Summarized below are the continuous improvements for maintenance release 24678, which was publicly released on March 4, 2026. The previous maintenance release was release 24464.
 
-The 2026.3.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+The 2026.3.0 feature activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+
+>[!NOTE]
+>
+>Release 24893 has been made private. 
 
 ### Enhancements {#enhancements-24678}
 
@@ -122,4 +126,3 @@ AEM as a Cloud Service is dedicated to optimizing your platform's security and p
 |Apache HTTP Server| 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES)|
 |AEM Core Components| 2.30.4|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
 |Node.js|14 (default)|[Supported Node.js versions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions)|
-

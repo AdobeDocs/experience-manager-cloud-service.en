@@ -2,6 +2,7 @@
 title: Integrate Asset Selector with Dynamic Media open API
 description: Integrate Asset selector with various Adobe, non-Adobe, and third party applications.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
 ---
 # Integration for Dynamic Media with OpenAPI capabilities {#integrate-asset-selector-dynamic-media-open-apis}

@@ -3,6 +3,7 @@ title:  AEM Forms as a Cloud Service supports out-of-the-box fonts for PDF gener
 description:  AEM Forms as a Cloud Service supports out-of-the-box fonts for Document of Record and PDFs.
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 67b07bf6-a45c-4a74-8b24-cb2e26c55bc9
 ---
 # Out of the box (OOTB) supported fonts for PDF generation on Forms as a Cloud Service  {#ootb-supported-fonts-overview}

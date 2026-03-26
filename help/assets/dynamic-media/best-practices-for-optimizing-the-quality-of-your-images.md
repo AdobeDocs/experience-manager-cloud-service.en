@@ -4,6 +4,7 @@ description: Learn best practices that help you optimize the quality of your ima
 contentOwner: Rick Brough
 feature: Asset Management, Best Practices
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
 ---
 # Best practices for optimizing the quality of your images {#best-practices-for-optimizing-the-quality-of-your-images}

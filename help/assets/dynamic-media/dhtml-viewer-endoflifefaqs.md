@@ -4,6 +4,7 @@ description: Effective January 31, 2014, the DHTML viewer Platform is officially
 contentOwner: Rick Brough
 feature: FAQ,Dynamic Media
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: f1595962-6da3-441d-838e-c1140745c088
 ---
 # DHTML Viewer End-of-Life {#dhtml-viewer-end-of-life}

@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.02.26 Release Notes
-description: These are the release notes for the 2026.02.26 release of the Universal Editor.
+title: Universal Editor 2026.03.19 Release Notes
+description: These are the release notes for the 2026.03.19 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.02.26 Release Notes {#release-notes}
+# Universal Editor 2026.03.19 Release Notes {#release-notes}
 
-These are the release notes for the 26 February 2026 release of the Universal Editor.
+These are the release notes for the 19 March 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,19 +20,17 @@ These are the release notes for the 26 February 2026 release of the Universal Ed
 
 ## What's New {#what-is-new}
 
-* Descriptions were added to all schema fields to help developers generate model/filter/component definition files.
-* Multi-field updates to Content Fragments are now supported for in-context edits.
-
-
-## Early Adoption Features {#early-adopter}
-
-If you are interested in testing the upcoming features listed below and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 
-
-* Shallow copy has been implemented for Content Fragments.
+* The items in the properties are now collapsed when navigating back to [the home screen.](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
+* [The assets selector](/help/implementing/universal-editor/configure-assets-selector.md) now supports [filter definitions.](/help/implementing/universal-editor/filtering.md)
+* If there are no actions available for the selected item, [the context menu](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) now shows a message indicating such.
 
 ## Other Improvements {#other-improvements}
 
-* Editor no longer defaults content to `{}` before content arrives, preventing data loss in certain situations.
-* Persistence of data when field is in focus was made more robust.
-* Changes are no longer lost in certain situations when editing in the left panel and then selecting another item in the editor window.
-* A persistence problem with RTE fields for Content Fragments when using the OpenAPI endpoints was fixed.
+* If there is a model/filter/component definition, it will get refetched when switching from one app to another in the editor.
+* Removing an image no longer leaves empty image tags when using DA as a back end.
+* Classes in blocks are now properly handled when using DA as a back end.
+* Open API now saves remote assets properly as objects.
+
+## Breaking Change {#breaking-change}
+
+* All extensions should updated to `@adobe/uix-guest` >= `1.1.7` to improve stability.

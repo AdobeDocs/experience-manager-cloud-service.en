@@ -2,6 +2,7 @@
 title: Approve assets in Experience Manager
 description: Learn how to approve assets in [!DNL Experience Manager].
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
 ---
 # Approve assets in [!DNL Experience Manager]

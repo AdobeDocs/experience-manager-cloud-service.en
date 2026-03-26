@@ -4,6 +4,7 @@ description: Learn how to embed Dynamic Media video or image assets on a web pag
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 ---
 # Embed the Dynamic Media Video, Image viewer, or Dimensional viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
