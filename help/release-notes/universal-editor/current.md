@@ -16,13 +16,13 @@ These are the release notes for the 26 March 2026 release of the Universal Edito
 
 >[!TIP]
 >
->For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
 ## What's New {#what-is-new}
 
-* Document Authoring assets configuration is now exposed through a configuration endpoint.
-* An extension point has been added to the contextual menu.
-* A new custom workflow icon has been added to the Extensibility DynamicIcon system to display a deep/shallow cancellation state in the UI.
+* [Document Authoring assets configuration](https://docs.da.live/administrators/guides/setup-aem-assets#setup-aem-assets) is now exposed through a configuration endpoint.
+* [An extension point](/help/implementing/universal-editor/extending.md#extending-ui) has been added to the contextual menu.
+* A new custom workflow icon has been added to the Extensibility DynamicIcon system to display the deep/shallow cancellation state in the UI.
 
 ## Other Improvements {#other-improvements}
 

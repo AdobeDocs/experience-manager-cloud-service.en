@@ -22,8 +22,8 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
-* 
+* An option to insert special characters is now available in the rich text editor (RTE).
 
 ## Upcoming Improvements {#upcoming-improvements}
 
-* 
+* Tag fields are no longer wrongly returned as multi-fields by the OpenAPI adapter.
