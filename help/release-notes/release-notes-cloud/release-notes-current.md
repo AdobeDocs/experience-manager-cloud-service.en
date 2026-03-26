@@ -80,13 +80,25 @@ See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-**Content Fragment Check-Out/-In**
+### Content Fragment Check-Out/-In {#cf-checkout-in}
 
 To improve parity with AEM Touch UI, content fragments can now be checked out and checked back in using the new Content Fragment Admin UI as well. Check-out functionality is unchanged, effectively locking a checked-out content fragment and thereby preventing it from being edited in Content Fragment Editor by other users. Users who own a content fragment and administrators can check the fragment out and back in. Checking a fragment out has no effect on referenced child fragments or assets. 
 
-**Content Fragment Launches Jobs Panel**
+### Content Fragment Launches Jobs Panel {#cf-launches-jobs}
 
 Asynchronous jobs for content fragments launches can now be viewed in the properties panel of the content fragment launches admin UI to observe their status - if a job is still running, has been completed, or was aborted, along with relevant detail information about the job. 
+
+### Update to RTE of the Content Fragment Editor {#cf-rte-update}
+
+The rich text editor (RTE) of the Content Fragment Editor was migrated away from TinyMCE to TipTap. This change brings with it a number of benefits.
+
+* The Universal Editor and Content Fragment Editor now use the same RTE technology stack.
+  * This means both editors now produce the same HTML.
+  * Extensions can now be reusable.
+  * The same functions and methods are now available using both editors (in headless use cases).
+  * The ultimate goal is that one configuration leads to a unified experience in both editors.
+* The Content Editor now has a new look and feel in the Spectrum 2 style.
+* New functionality is available in the Content Fragment Editor including find and replace and being content advisor ready.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
