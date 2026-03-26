@@ -144,7 +144,7 @@ The Model Context Protocol (MCP) is an open standard that allows AI coding tools
 
 ### Install the Content Package {#install-the-content-package}
 
-Install `com.adobe.aem:com.adobe.aem.mcp-server-contribs-content` (location TBD) into your local Quickstart using Package Manager at `/crx/packmgr`.
+Download the content package from the [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Abeta) and install `com.adobe.aem:com.adobe.aem.mcp-server-contribs-content` into your local Quickstart using Package Manager at `/crx/packmgr`.
 
 **Compatibility:** Validated with AEM SDK `2026.2.24678.20260226T154829Z-260200` and newer.
 
@@ -204,7 +204,7 @@ Unlike the dispatcher skill, the Dispatcher MCP server exposes tools only: seven
 ### Prerequisites {#prerequisites}
 
 - Docker Desktop 4.x or later, installed and running
-- AEM Dispatcher SDK downloaded from the Software Distribution portal
+- AEM Dispatcher SDK downloaded from the [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Abeta)
 
 >[!NOTE]
 >
