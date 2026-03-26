@@ -2,7 +2,6 @@
 title: Use Content Advisor to access AEM content within Adobe applications
 description: Content Advisor delivers a unified content discovery experience across Adobe applications and brings intelligent, context-aware discovery directly into the authoring experience.
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
-exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
 ---
