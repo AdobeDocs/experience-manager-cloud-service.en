@@ -135,16 +135,6 @@ The Cloud Manager MCP Server allows you to interact with Cloud Manager APIs dire
 
 Learn more about [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
 
-#### Code Quality Pipeline Troubleshooting with the Development Agent {#devagent-codequality}
-
-The Development Agent's pipeline troubleshooting capabilities help developers more efficiently diagnose and resolve issues in AEM as a Cloud Service deployments.
-
-Previously focused on the **Build & Unit Testing** step, pipeline troubleshooting now also supports the **Code Scanning** step in Full Stack Deployment and Code Quality pipelines.
-
-The Code Scanning step evaluates code against quality rules, detects security vulnerabilities, and generates detailed quality reports. If this step fails, you can use the AI Assistant to prompt the Development Agent for a root cause analysis along with recommended remediation guidance.
-
-Learn more about the [Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md) and pipeline troubleshooting.
-
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
 #### Java API Deprecations {#java-api-deprecation}
@@ -179,6 +169,14 @@ See the [deprecation article](/help/release-notes/deprecated-removed-features.md
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
 
+#### IDE AI tooling for AEM Java and Dispatcher Development (Public Beta Program) {#ai-dev-beta}
+
+Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. 
+
+Participate in the public beta (no sign-up necessary) to try out IDE tooling that can be used by coding agents to generate and debug AEM code and dispatcher configuration.
+
+Learn more in the [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md) beta documentation and  email [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) with questions or feedback.
+
 #### AEM Edge Functions (Beta Program) {#edge-functions}
 
 AEM Edge Functions allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
@@ -198,15 +196,6 @@ We have a limited number of opportunities available for either AEM Publish Deliv
 The Development Agent's [pipeline troubleshooting](/help/ai-in-aem/agents/brand-experience/development/development.md) capabilities help developers efficiently diagnose and resolve issues in AEM as a Cloud Service deployments. In addition to supporting Full Stack pipelines (Deployment and Code Quality), the Development Agent now supports troubleshooting for the **Web Tier Config Pipeline** as part of a beta program.
 
 To request access to the beta, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com). Pre-existing access to Agents in AEM is required.
-
-#### IDE AI tooling for AEM Java and Dispatcher Development (Beta Program) {#ai-dev-beta}
-
-Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. Join the beta to:
-
-* Share real-world experiences to help shape future Adobe-supported AI capabilities
-* Try out IDE tooling that can be used by AI agents to generate and debug AEM code and dispatcher configuration
-
-Email [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) for more information.
 
 #### IDE AI tooling for AEM 6.5 to AEM Cloud Service Migration (Alpha Program) {#cm-ide-migration}
 
