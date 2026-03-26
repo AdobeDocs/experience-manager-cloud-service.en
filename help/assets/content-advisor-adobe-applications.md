@@ -4,6 +4,7 @@ description: Content Advisor delivers a unified content discovery experience acr
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 feature: Collaboration
 role: User
+exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
 ---
 # Use Content Advisor to access AEM content in Adobe applications{#content-advisor-aem-assets-adobe-applications}
 
@@ -193,4 +194,3 @@ The following table illustrates the Content Advisor feature support across Adobe
 | AEM Sites (Document Authoring)                       |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      | &minus;                                        |
 | AEM Sites (Content Fragment Editor)              |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      |  &minus;                                        |
 | AEM Sites (Universal Editor)                     |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      |  &minus;                                        |
-
