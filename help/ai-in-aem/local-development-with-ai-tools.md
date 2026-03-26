@@ -3,8 +3,8 @@ title: Local Development with AI Tools
 description: Learn how to configure AI coding tools with project context, agent skills, and MCP servers to accelerate AEM as a Cloud Service development.
 feature: Developing
 role: Developer
+exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
 ---
-
 # Local Development with AI Tools {#local-development-with-ai-tools}
 
 >[!IMPORTANT]
