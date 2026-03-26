@@ -103,9 +103,9 @@ The rich text editor (RTE) of the Content Fragment Editor was migrated away from
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Content Advisor for unified AEM content discovery in AEM Sites**
+**Content Advisor to access AEM Assets in AEM Sites**
 
-Content Advisor delivers a unified content discovery experience in AEM Sites, bringing assets and Content Fragments together in a single, intelligent interface. It enables users to effortlessly discover, browse, and reuse the most relevant content directly within their workflow, eliminating the need to switch contexts.
+Content Advisor is now available in AEM Sites, introducing intelligent asset discovery for AEM Assets directly. It enables users to effortlessly discover, browse, and reuse the most relevant assets directly within their workflow, eliminating the need to switch contexts.
 
 Content Advisor provides enhanced intelligent features for assets such as campaign brief based suggestions, contextual suggestions, access to Dynamic Media renditions, and detailed asset metadata.
 
