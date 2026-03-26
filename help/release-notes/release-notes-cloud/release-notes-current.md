@@ -90,19 +90,38 @@ Asynchronous jobs for content fragments launches can now be viewed in the proper
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Content Advisor to access AEM Assets in Adobe Express**
+**Content Advisor for unified AEM content discovery in AEM Sites**
 
-[Content Advisor is now available in Adobe Express](/help/assets/native-integration-adobe-express.md), introducing intelligent asset discovery for AEM Assets directly within the Express interface. Content Advisor provides context-aware recommendations based on canvas content and campaign briefs, supports AI-powered search, enables native support for channel-ready on the fly renditions powered by Dynamic Media, and so many other features. Content Advisor transforms how you discover and use approved assets, helping you find the right content faster to streamline your creative workflows.
+Content Advisor delivers a unified content discovery experience in AEM Sites, bringing assets and Content Fragments together in a single, intelligent interface. It enables users to effortlessly discover, browse, and reuse the most relevant content directly within their workflow, eliminating the need to switch contexts.
 
-### New Features in Dynamic Media with OpenAPI {#dynamic-media-openAPI-new-features}
+Content Advisor provides enhanced intelligent features for assets such as campaign brief based suggestions, contextual suggestions, access to Dynamic Media renditions, and detailed asset metadata.
 
-**Attribute-based access control (ABAC) for Dynamic Media with OpenAPI**
+Coming soon - Content Advisor support for Adobe Workfront and AJO B2C applications.
 
-Attribute-based access control (ABAC) enables administrators to control access to Dynamic Media with OpenAPI assets using metadata-driven rules. Administrators can define rules for user groups based on asset metadata to determine which assets are visible to specific groups. When an asset's metadata matches the defined conditions, access is granted automatically. This capability helps organizations enforce better governance, ensuring that users can only view and work with Dynamic Media with OpenAPI assets that are relevant to their role or permissions.
+### New Features in Dynamic Media {#dynamic-media-new-features}
 
->[!NOTE]
->
->Attribute-based access control (ABAC) for Dynamic Media with OpenAPI is a limited availability feature. You can get it enabled by creating a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+#### Dynamic Media Template Editor updates {#dynamic-media-template-editor-updates}
+
+**Layer Management Enhancements**
+
+* Drag-and-Drop Layer Reordering: Layers can now be reordered directly in the Layers panel by dragging, providing a faster and more intuitive way to organize layer stacking order beyond the existing Bring Forward or Send Backward actions.
+* Copy, Paste & Duplicate: Full support for copying, pasting, and duplicating layers using keyboard shortcuts (Cmd/Ctrl+C, V, D) or the context menu, with support for multi-layer selections.
+* Separate Layer Properties Button: Added dedicated Layer Properties button for easier navigation to layer settings, with double-click support on layers for quick access.
+
+**Text Formatting Features**
+
+* Line Spacing Control: New line spacing slider enables precise control over line height in text layers, with full end-to-end support including undo/redo and template save/load.
+* All Caps Formatting: Text layers now support All Caps formatting option in the Font Style toolbar alongside Bold, Italic, and Underline.
+* Vertical Alignment Options: Added vertical alignment controls for text layers, providing more precise text positioning within text boxes.
+
+**Size & Dimension Controls**
+
+* Aspect Ratio Unlock: Users can now unlock aspect ratio when adjusting size properties, allowing independent width and height adjustments for more flexible layer sizing.
+* Copyfit Lines Configuration: Added support for `copyfitlines` and `copyfitmaxlines` settings in text copyfit properties, providing finer control over text fitting behavior.
+
+**Visual Polish**
+
+* Updated icons for Timer and Shape layers with refined Spectrum 2 (S2) design system icons.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
