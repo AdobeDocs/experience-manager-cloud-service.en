@@ -527,7 +527,7 @@ To check a fragment in:
 1. Select **Check In** from the toolbar.
 1. Confirm the **Check In** action.
 
-## Forced (Administrator) Check In {#forced-adminstrator-check-in}
+### Forced (Administrator) Check In {#forced-adminstrator-check-in}
 
 It can happen that the user who has checked out a Content Fragment is unavailable to check in the fragment. 
 
