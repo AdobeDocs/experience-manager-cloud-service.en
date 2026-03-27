@@ -27,7 +27,8 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2026 {#2026}
-      +  [Release Notes for 2026.1.0](/help/release-notes/release-notes-cloud/2026/2026-1-0.md)
+      + [Release Notes for 2026.2.0](/help/release-notes/release-notes-cloud/2026/2026-2-0.md)
+      + [Release Notes for 2026.1.0](/help/release-notes/release-notes-cloud/2026/2026-1-0.md)
     + 2025 {#2025}
       + [Release Notes for 2025.12.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-12-0.md) 
       + [Release Notes for 2025.11.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-11-0.md) 
@@ -99,6 +100,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2026 {#2026}
+      + [Maintenance Release Notes for 2026.3.0](/help/release-notes/maintenance/2026/2026-3-0.md)
       + [Maintenance Release Notes for 2026.2.0](/help/release-notes/maintenance/2026/2026-2-0.md)
       + [Maintenance Release Notes for 2026.1.0](/help/release-notes/maintenance/2026/2026-1-0.md)
     + 2025 {#2025}
@@ -251,6 +253,9 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.03.19 Release Notes](/help/release-notes/universal-editor/2026/2026-03-19.md)
+      + [2026.03.12 Release Notes](/help/release-notes/universal-editor/2026/2026-03-12.md)
+      + [2026.03.05 Release Notes](/help/release-notes/universal-editor/2026/2026-03-05.md)
       + [2026.02.26 Release Notes](/help/release-notes/universal-editor/2026/2026-02-26.md)
       + [2026.02.19 Release Notes](/help/release-notes/universal-editor/2026/2026-02-19.md)
       + [2026.02.13 Release Notes](/help/release-notes/universal-editor/2026/2026-02-13.md)
@@ -580,19 +585,7 @@ user-guide-title: AEM as a Cloud Service
   + [Troubleshoot AEM Assets issues](/help/assets/troubleshoot-aem-assets.md)
   + [Assets Collaborator users](/help/assets/assets-collaborator-users.md)
   + Manage digital assets {#manage}
-    + Micro-Frontend Asset Selector {#asset-selector}
-      + [Asset Selector overview](/help/assets/overview-asset-selector.md)
-      + Asset Selector integrations {#asset-selector-integration}
-        + [Asset Selector integrations overview](/help/assets/integrate-asset-selector.md)
-        + [Integrate Asset Selector with an Adobe application](/help/assets/integrate-asset-selector-adobe-app.md)
-        + [Integrate Asset Selector with a non-Adobe application](/help/assets/integrate-asset-selector-non-adobe-app.md)
-        + [Integrate Asset Selector for Dynamic Media with OpenAPI capabilities](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-      + [Asset Selector properties](/help/assets/asset-selector-properties.md)
-      + [Asset Selector examples](/help/assets/asset-selector-examples.md)
-      + [Asset Selector customizations](/help/assets/asset-selector-customization.md)
-      + [Asset Selector upload](/help/assets/asset-selector-upload.md)
-      + [Asset Selector collections](/help/assets/asset-selector-collections.md)
-    + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
+    + [Content Advisor to access AEM content in Adobe applications](/help/assets/content-advisor-adobe-applications.md)
     + [Share assets](/help/assets/share-assets.md)
     + [Reprocessing assets](/help/assets/reprocessing.md)
     + [Malware detection](/help/assets/malware-detection.md)
@@ -627,6 +620,19 @@ user-guide-title: AEM as a Cloud Service
     + [Process assets using [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)
     + [Color tags for images](/help/assets/color-tag-images.md)
     + [Manage PDF documents](/help/assets/manage-pdf-documents.md)
+    + Micro-Frontend Asset Selector {#asset-selector}
+      + [Asset Selector overview](/help/assets/overview-asset-selector.md)
+      + Asset Selector integrations {#asset-selector-integration}
+        + [Asset Selector integrations overview](/help/assets/integrate-asset-selector.md)
+        + [Integrate Asset Selector with an Adobe application](/help/assets/integrate-asset-selector-adobe-app.md)
+        + [Integrate Asset Selector with a non-Adobe application](/help/assets/integrate-asset-selector-non-adobe-app.md)
+        + [Integrate Asset Selector for Dynamic Media with OpenAPI capabilities](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+      + [Asset Selector properties](/help/assets/asset-selector-properties.md)
+      + [Asset Selector examples](/help/assets/asset-selector-examples.md)
+      + [Asset Selector customizations](/help/assets/asset-selector-customization.md)
+      + [Asset Selector upload](/help/assets/asset-selector-upload.md)
+      + [Asset Selector collections](/help/assets/asset-selector-collections.md)
+    + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
   + Configure, administer, and extend [!DNL Assets] {#admin}
     + [Detect duplicate assets](/help/assets/detect-duplicate-assets.md)
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
@@ -702,6 +708,7 @@ user-guide-title: AEM as a Cloud Service
     + [Mixed Media Sets](/help/assets/dynamic-media/mixed-media-sets.md)
     + [Spin Sets](/help/assets/dynamic-media/spin-sets.md)
     + [Video in Dynamic Media](/help/assets/dynamic-media/video.md)
+    + [New Video Viewer](/help/assets/dynamic-media/new-video-viewer.md)
     + [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md)
     + [Interactive Images](/help/assets/dynamic-media/interactive-images.md)
     + [Interactive Videos](/help/assets/dynamic-media/interactive-videos.md)
@@ -1099,12 +1106,14 @@ user-guide-title: AEM as a Cloud Service
   + MCP Support {#mcp-support}
     + [Using MCP with AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
     + Chat Applications (Web & Desktop) {#chat-applications}
-      + [Anthropic Claude](/help/ai-in-aem/mcp-support/setup-claude.md)
-      + [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
+      + [Setting Up Anthropic Claude with AEM MCP](/help/ai-in-aem/mcp-support/setup-claude.md)
+      + [Setting Up OpenAI ChatGPT with AEM MCP](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
     + Developer Tools (IDE Extensions, Desktop Apps, CLIs) {#developer-tools}
-      + [Cursor](/help/ai-in-aem/mcp-support/setup-cursor.md)
+      + [Setting Up Cursor with AEM MCP](/help/ai-in-aem/mcp-support/setup-cursor.md)
     + Enterprise Platforms {#enterprise-platforms}
-      + [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
+      + [Setting Up Microsoft Copilot Studio with AEM MCP](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
+      + [Setting Up JetBrains with GitHub Copilot and AEM MCP](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
+  + [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md)
   + Agents in AEM {#agents}
     + [Overview](/help/ai-in-aem/agents/overview.md)
     + Brand Experience Agent {#brand-experience}
@@ -1514,8 +1523,9 @@ user-guide-title: AEM as a Cloud Service
       + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
       + [Publishing](/help/implementing/universal-editor/publishing.md)
       + [Events](/help/implementing/universal-editor/events-universal-editor.md)
-      + [Filtering Components](/help/implementing/universal-editor/filtering.md)
+      + [Filters](/help/implementing/universal-editor/filtering.md)
       + [Configuring the RTE](/help/implementing/universal-editor/configure-rte.md)
+      + [Configuring Assets Selector](/help/implementing/universal-editor/configure-assets-selector.md)
       + [Customizing](/help/implementing/universal-editor/customizing.md)  
       + [Extending](/help/implementing/universal-editor/extending.md)   
       + [Architecture](/help/implementing/universal-editor/architecture.md)
