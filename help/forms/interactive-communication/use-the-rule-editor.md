@@ -4,6 +4,7 @@ description: Create Rules in Interactive Communication Editor allows authors to 
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 9538ae2e-e0f5-4e85-943e-00fe99a64725
 ---
 # Rule Editor in Interactive Communication Editor

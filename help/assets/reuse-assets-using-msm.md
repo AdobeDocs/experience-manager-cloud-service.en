@@ -5,6 +5,7 @@ contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin, Developer
 feature: Asset Management
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
 ---
 # Reuse assets using MSM for [!DNL Assets] {#reuse-assets-using-msm-for-assets}

@@ -5,6 +5,7 @@ feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
 ---
+
 # Configuring the RTE for the Universal Editor {#configure-rte}
 
 Understand how you can configure the rich text editor (RTE) in the Universal Editor.

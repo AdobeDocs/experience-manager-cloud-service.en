@@ -3,6 +3,7 @@ title: Troubleshooting in AEM Assets and Forms
 description: Troubleshoot common AEM Assets and Forms issues using the article links for key areas, such as uploads, metadata, search, delivery, form creation, submission, and integration.
 hidefromtoc: yes
 hide: yes
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 73ff9249-6f5a-46c1-87fe-7cb50b000927
 ---
 # Troubleshoot AEM Assets and Forms issues {#troubleshoot-aem-assets-forms}

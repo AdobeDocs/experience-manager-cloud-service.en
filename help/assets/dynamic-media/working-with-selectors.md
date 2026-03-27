@@ -4,6 +4,7 @@ description: Learn about methods you can use to select assets for interactive im
 contentOwner: Rick Brough
 feature: Selectors,Interactive Images,Interactive Videos,Carousel Banners
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
 ---
 # Work with Selectors in Dynamic Media {#working-with-selectors}

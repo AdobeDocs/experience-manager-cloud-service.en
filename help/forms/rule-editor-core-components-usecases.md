@@ -4,6 +4,7 @@ description: The article outlines various use cases for a rule editor in an Adap
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
 ---
 # Different use cases of Rule Editor

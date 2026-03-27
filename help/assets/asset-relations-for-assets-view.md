@@ -4,6 +4,7 @@ description: Learn how to relate digital assets that share some common attribute
 role: User
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 89149283-bbf2-40d3-9a4c-5b27ff5f944e
 ---
 # Asset relations {#related-assets}
