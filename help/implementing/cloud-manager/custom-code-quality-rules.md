@@ -513,9 +513,11 @@ See [`Apache Sling` Eventing and Job Handling](https://sling.apache.org/document
 * **Severity**: Info, Minor, or Major
 * **Since**: Version 2026.1.0
 
-The Experience Manager API surface is under constant revision to identify APIs for which usage needs to be stopped. Such API is deprecated and marked with a removal date.
+The Experience Manager API surface is under constant revision to identify APIs for which usage needs to be stopped. These APIs are deprecated and marked with a removal date.
 
-The closer the removal date gets, the higher the severity of violating this rule is. Usage of such API must be replaced with a safe alternative.
+The closer the removal date gets, the higher the severity of violating this rule is. Usage of such APIs must be replaced with a safe alternative.
+
+Please reference [this article](/help/release-notes/deprecated-removed-features.md#aem-apis) for guidance on how to remove usage of deprecated APIs.
 
 ### Do not use Experience Manager deprecated APIs {#sonarqube-aem-deprecated}
 

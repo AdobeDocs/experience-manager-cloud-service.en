@@ -4,6 +4,7 @@ description: Use Asset selector to search, find, and retrieve assets' metadata a
 contentOwner: KK
 feature: Selectors
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
 ---
 # Micro-Frontend Asset Selector {#Overview}

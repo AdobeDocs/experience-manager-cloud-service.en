@@ -22,18 +22,19 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2026.1.0) is January 29, 2026. The next feature release (2026.2.0) is planned for February 26, 2026.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2026.3.0) is March 26, 2026. The next feature release (2026.4.0) is planned for April 30, 2026.
 
 ## Maintenance Release Notes {#maintenance}
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
-## Release Video {#release-video}
+<!--  ## Release Video {#release-video}
 
-Have a look at the January 2026 Release Overview video for a summary of the features added in the 2026.1.0 release:
+Have a look at the March 2026 Release Overview video for a summary of the features added in the 2026.3.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3479789/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480399/?quality=12)
 
+-->
 
 ## AEM Beta Programs {#aem-beta-programs}
 
@@ -44,10 +45,16 @@ Adobe Experience Manager (AEM) beta programs are a way for customers to get acce
 >Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk.
 
 **Benefits of participating**
+
 Getting early access to features that Adobe is developing lets customers and partners provide feedback and shape product development. It also helps them prepare to adopt new capabilities before general availability.
 
 **Current beta programs**
+
 The following sections list active beta programs.
+
+### Agents in AEM {#agents-in-aem}
+
+If you would like to explore the powerful, new AEM agentic capabilities across production, governance, optimization, discovery, and development, [please learn about how you can access them here.](/help/ai-in-aem/agents/overview.md)
 
 <!--
 ### Agents in AEM (Explorer program) {#agents-in-aem-beta-program}
@@ -74,85 +81,102 @@ See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Content MCP Server {#content-MCP}
+### Content Fragment Check-Out/-In {#cf-checkout-in}
 
-AEM Cloud Service now includes **Content MCP Servers**, providing a standardized way for AI-powered experiences to work with AEM content through MCP-compatible tools.
+To improve parity with AEM Touch UI, content fragments can now be checked out and checked back in using the new Content Fragment Admin UI as well. Check-out functionality is unchanged, effectively locking a checked-out content fragment and thereby preventing it from being edited in Content Fragment Editor by other users. Users who own a content fragment and administrators can check the fragment out and back in. Checking a fragment out has no effect on referenced child fragments or assets. 
 
-Developers and power users working in chat apps and agent platforms can connect AEM to custom copilots and automations, so content work becomes part of end-to-end business workflows.
+### Content Fragment Launches Jobs Panel {#cf-launches-jobs}
 
-AEM provides two servers:
+Asynchronous jobs for content fragments launches can now be viewed in the properties panel of the content fragment launches admin UI to observe their status - if a job is still running, has been completed, or was aborted, along with relevant detail information about the job. 
 
-1. **Read-only Content MCP Server** - for retrieving content safely
-1. **Read/Write Content MCP Server** - for making changes to content
+### Update to RTE of the Content Fragment Editor {#cf-rte-update}
 
-These MCP servers include tools for working with **Pages**, **Content Fragments**, and **Assets**, and can be used from the following MCP clients: **ChatGPT**, **Claude**, **Cursor**, and **Microsoft Copilot Studio**.
+The rich text editor (RTE) of the Content Fragment Editor was migrated away from TinyMCE to TipTap. This change brings with it a number of benefits.
 
-Learn more in [Using MCP with AEM Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md). For questions or feedback, email [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com).
+* The Universal Editor and Content Fragment Editor now use the same RTE technology stack.
+  * This means both editors now produce the same HTML.
+  * Extensions can now be reusable.
+  * The same functions and methods are now available using both editors (in headless use cases).
+  * The ultimate goal is that one configuration leads to a unified experience in both editors.
+* The Content Editor now has a new look and feel in the Spectrum 2 style.
+* New functionality is available in the Content Fragment Editor including find and replace and being content advisor ready.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**AI Search**
+**Content Advisor in AEM Sites**
 
-AI Search introduces an intelligent, context-aware search experience that goes beyond traditional keyword matching by understanding the meaning and intent behind user queries. Powered by AI and machine learning, it delivers more accurate results even when queries are phrased differently, contain misspellings, use synonyms, or are submitted in different languages, helping users find relevant content faster with less effort.
+Content Advisor is now available in AEM Sites, introducing intelligent asset discovery from AEM Assets directly. It enables users to effortlessly discover, browse, and reuse the most relevant assets directly within their workflow, eliminating the need to switch contexts.
 
-For more information, see AI Search in [Assets view](/help/assets/search-assets-view.md#ai-search) and [Admin view](/help/assets/search-assets.md#ai-search).
+Content Advisor provides intelligent features for assets such as campaign brief based suggestions, contextual suggestions, access to Dynamic Media renditions, and detailed asset metadata.
 
-**Desktop App 3.0.1 release**
+Coming soon - Content Advisor support for Adobe Workfront and AJO B2C applications, including ability to discover Content Fragments
 
-[Desktop App 3.0.1 (December 20, 2025)](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes) improves reliability, performance, and stability across key workflows. This release ensures consistent folder naming by fixing sync issues with AEM Author, allows uninterrupted use of the app during active transfers, enhances UI responsiveness through asynchronous processing, optimizes large file transfers with pagination, and resolves stability issues including Author server restarts and crashes during large folder uploads and downloads.
+### New Features in Dynamic Media {#dynamic-media-new-features}
 
-**Adobe Asset Link CEP 2026.01.0 release**
+#### Dynamic Media Template Editor updates {#dynamic-media-template-editor-updates}
 
- [Adobe Asset Link CEP 2026.01.0](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) introduces a new Relink missing links option in InDesign that automatically relinks other missing assets from the same AEM folder. The feature matches assets based on filename, significantly reducing manual effort when restoring broken links.
+**Layer Management Enhancements**
 
+* Drag-and-Drop Layer Reordering: Layers can now be reordered directly in the Layers panel by dragging, providing a faster and more intuitive way to organize layer stacking order beyond the existing Bring Forward or Send Backward actions.
+* Copy, Paste & Duplicate: Full support for copying, pasting, and duplicating layers using keyboard shortcuts (Cmd/Ctrl+C, V, D) or the context menu, with support for multi-layer selections.
+* Separate Layer Properties Button: Added dedicated Layer Properties button for easier navigation to layer settings, with double-click support on layers for quick access.
+
+**Text Formatting Features**
+
+* Line Spacing Control: New line spacing slider enables precise control over line height in text layers, with full end-to-end support including undo/redo and template save/load.
+* All Caps Formatting: Text layers now support All Caps formatting option in the Font Style toolbar alongside Bold, Italic, and Underline.
+* Vertical Alignment Options: Added vertical alignment controls for text layers, providing more precise text positioning within text boxes.
+
+**Size & Dimension Controls**
+
+* Aspect Ratio Unlock: Users can now unlock aspect ratio when adjusting size properties, allowing independent width and height adjustments for more flexible layer sizing.
+* Copyfit Lines Configuration: Added support for `copyfitlines` and `copyfitmaxlines` settings in text copyfit properties, providing finer control over text fitting behavior.
+
+**Visual Polish**
+
+* Updated icons for Timer and Shape layers with refined Spectrum 2 (S2) design system icons.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-**Enhancements to the Footnote Placeholder in Adaptive Forms (Foundation Components)**
+### Early Access Features in AEM Forms {#forms-early-access-features}
 
-* Added [multi-line support with line breaks](/help/forms/footnotes-richtextsupport.md), enabling clearer and more expressive presentation of footnote content.
-* Footnotes now remain persistently visible within the Footnote Placeholder, regardless of the visibility of associated panels, ensuring consistent access to critical information.
-   ![Footnote Description](/help/forms/assets/footnote-description.png){height=50%}
+**Display labels for multi-select dropdown in Submission PDF**
+Multi-select dropdown components in Adaptive Forms now render their selected display labels in the [generated Submission PDF](/help/forms/generate-document-of-record-core-components.md), ensuring the document accurately reflects what users see on the form.
 
-### New Early Access Features in AEM Forms {#forms-new-early-access-features}
+**Enhanced accessibility for checkbox, radio button, and panel components**
+Adaptive Forms Core Components introduce WCAG 2.2 -compliant semantic markup for [checkbox groups(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [radio button groups(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button), and the [Panel component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). These components leverage `<fieldset>` and `<legend>` HTML elements to establish meaningful relationships between group labels and their options, enabling accurate interpretation by screen readers and other assistive technologies.
 
-**Retrieve values from a JSON array**
-
-Expanded custom function capabilities to [extract values from JSON arrays](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array), received via an API call, and bind them directly to Adaptive Form fields. You can now develop business logic and rules with minimal manual data mapping.
-
-**Run the Associate UI on a Publish instance**
-
-You can now run the [Associate UI](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md) directly on Publish instances. This allows your agents to access the Associate UI and easily personalize communications for your customers.
-
-<!--
-**Forms Optimization opportunities**
-
-Forms Optimization uses AI to analyze your forms and suggest improvements for better performance. It highlights forms with low engagement, flags accessibility issues, and generates AI-powered variations to help increase conversion rates and compliance with WCAG standards.
-
->[!VIDEO](https://video.tv.adobe.com/v/3469472/) 
-
-Key optimization opportunities include:
-
-* Increasing visibility for forms with low views
-* Improving completion rates for forms with low conversions
-* Addressing accessibility compliance issues
-* Streamlining navigation to enhance user experience
-
-With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. 
---> 
+**Versioning support in Forms Manager**
+Forms Manager now [supports versioning for Adaptive Forms (Core Components and Foundation Components)](/help/forms/manage-form-versions-forms-manager.md), form fragments, themes, XDP templates, and binary assets. Create versions, view complete version history, and restore earlier states of your form assets directly from the Forms & Documents console.
   
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+
+### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
+
+#### Simplified Index Management {#simplified-index-management}
+
+[Simplified Index Management](https://oak-indexing.github.io/oakTools/simplified.html) provides a simpler way to define custom indexes and customize out-of-the-box (OOTB) indexes using one JSON file, without copying full definitions or managing versions manually. Customizations merge with the latest OOTB index, and a new index version is created when needed.
+
+#### Cloud Manager MCP Server {#cm-mcp-server}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
+
+Modern IDEs use the Model Context Protocol (MCP) to enable large language models (LLMs) to invoke tools exposed by MCP servers. Instead of integrating directly with low-level API specifications, developers can simply describe their intent in natural language.
+
+The Cloud Manager MCP Server allows you to interact with Cloud Manager APIs directly from your IDE using prompts. Supported scenarios include executing pipelines, checking environment status, and more.
+
+Learn more about [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
 #### Java API Deprecations {#java-api-deprecation}
 
-The deprecated APIs targeting 2/26/2026 removal should no longer be used in code. To prevent deployment blocks, remove API usage before March 26, 2026. Important dates:
+The deprecated APIs targeting 2/26/2026 removal should no longer be used in code. To prevent deployment blocks, remove API usage before **March 30, 2026**. Important dates:
 
-* **Starting January 26, 2026**: Actions Center notification emails are sent **weekly per environment** as a reminder to remove usage of these APIs.
-* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed.
-* **March 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
-* **April 30, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
+* **Starting January 26, 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs.
+* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
+* **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
+* **May 4, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe's standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected,and security risk exposure may increase further.
 
 See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
@@ -171,59 +195,23 @@ See the [deprecation article](/help/release-notes/deprecated-removed-features.md
 * `org.apache.log4j`
 * `com.google.common`
 * `com.drew`
-* `org.bson`
-* `org.apache.jackrabbit.oak.plugins.blob`
 * `org.apache.jackrabbit.oak.plugins.memory`
 
 +++
 
-<!--
-OSGi properties:
-
-* `org.apache.sling.commons.log.LogManager` (all properties)
-* `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
-* 
-
--->
-
-#### Java 11 Runtime Deprecation {#java11-runtime-deprecation}
-
-Adobe upgraded **Stage** and **Production** environments to the higher-performance **Java 21 runtime** on October 14th, 2025. Starting **February 9th** (gradual rollout through February 11th), neither the AEM Cloud Service SDK nor any cloud environments will work with Java 11 runtime.
-
->[!NOTE]
->
-> To take advantage of the latest performance optimizations and language enhancements, it is recommended to build with Java 17 or Java 21  (preferred). Building with Java 8 and Java 11 remains supported for now but will be deprecated in an upcoming release. A separate communication will be issued prior to deprecation. See the *build time requirements* section of [this article](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
->
-
-#### Enforcement of AEM Java Logs Configuration Policy {#logconfig-policy}
-
-AEM Java logs must follow a standard format to ensure reliable monitoring across all customer environments. Custom log configurations—such as changes to log formatting, output files, or default log levels—are no longer supported. Logs must remain directed to the default files, and default log levels for AEM product code must be preserved. See full details in the [Logging article](/help/implementing/developing/introduction/logging.md#configuration-loggers).
-
-Any unsupported custom logging overrides *are now ignored*. Most customers were not impacted and Adobe has contacted customers whose current configuration may be affected.
-
-Please review and update any downstream processes that rely on custom logging behavior. For example:
-
-* If your log forwarding system expects a custom log format, you may need to adjust your ingestion rules.
-* If you've previously reduced log verbosity by changing log levels, please note that reverting to default levels may increase log volume.
-
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
 
-#### Pause Automatic Maintenance Updates {#pause-updates}
+#### IDE AI tooling for AEM Java and Dispatcher Development (Public Beta Program) {#ai-dev-beta}
 
-Go‑live days, live events, peak sales—these moments can't break. [Our new self‑service features](/help/implementing/deploying/quiet-hours-update-free-periods.md) stop automatic mainteanance updates when it matters, so your teams stay focused.
+Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. 
 
-* Quiet Hours: Block automatic maintenance during set times each day. Ideal for working hours, nightly runs or morning cutovers.
-* Update‑Free Period: Block automatic maintenance for a full week. Use it for launches, promos, or yearly freezes.
+Participate in the public beta (no sign-up necessary) to try out IDE tooling that can be used by coding agents to generate and debug AEM code and dispatcher configuration.
 
->[!NOTE]
->
->Available as a Limited Availability feature on September 25th.
->Email [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com) to get it activated on your programs.
->
+Learn more in the [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md) beta documentation and email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) with questions or feedback.
 
 #### AEM Edge Functions (Beta Program) {#edge-functions}
 
-AEM Edge Functions (referred to in earlier release notes as *Edge Computing*) allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
+AEM Edge Functions allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
 
 Common use cases include:
 
@@ -234,6 +222,18 @@ Common use cases include:
 * Exposing an MCP server for LLMs like ChatGPT and Claude to access custom tools
 
 We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
+
+#### Web Tier Config Pipeline Troubleshooting with the Development Agent (Beta Program) {#devagent-webtier}
+
+The Development Agent's [pipeline troubleshooting](/help/ai-in-aem/agents/brand-experience/development/development.md) capabilities help developers efficiently diagnose and resolve issues in AEM as a Cloud Service deployments. In addition to supporting Full Stack pipelines (Deployment and Code Quality), the Development Agent now supports troubleshooting for the **Web Tier Config Pipeline** as part of a beta program.
+
+To request access to the beta, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com). Pre-existing access to Agents in AEM is required.
+
+#### IDE AI tooling for AEM 6.5 to AEM Cloud Service Migration (Alpha Program) {#cm-ide-migration}
+
+Accelerate your migration from AEM 6.5 to AEM as a Cloud Service (Java stack) by using IDE AI tooling to act on the recommendations of the [Best Practices Analyzer Report](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
+
+Email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) for more information.
 
 #### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
 
@@ -254,15 +254,6 @@ Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-
 In beta, Rapid Development Environments (RDEs) now support a feature to take a snapshot of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
 
 Please email [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) if there is interest in using and providing feedback on this feature.
-
-#### AI tooling for IDEs for AEM Java and Dispatcher Development (Beta Program) {#ai-dev-beta}
-
-Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. Join the beta to:
-
-* Share real-world experiences to help shape future Adobe-supported AI capabilities
-* Try out IDE tooling that can be used by AI agents to generate and debug AEM code and dispatcher configuration
-
-Email [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) for more information.
 
 #### Expanded Application Performance Monitoring (APM) (Alpha program) {#apm-alpha}
 

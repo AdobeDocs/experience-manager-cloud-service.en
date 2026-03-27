@@ -3,6 +3,7 @@ title: Create Vanity URLs using Dynamic Media with OpenAPI Capabilities
 description: Use Dynamic Media OpenAPI capabilities to transform your long asset delivery URLs into short, branded vanity URLs. A vanity URL is a short, clean, easy-to-remember and readable version of your complex delivery URL. You can include your brand name, product names, and relevant keywords in the vanity URL to boost your brand visibility and user engagement
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 596136e9-7c2a-43a1-8091-2d8b6226b695
 ---
 # Use vanity URLs{#vanity-urls}

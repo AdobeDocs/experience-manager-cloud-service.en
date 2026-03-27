@@ -4,6 +4,7 @@ description: Line Component in Interactive Communication Editor in AEM Forms all
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 1ff5ac22-d8c8-4109-8334-217dbc239f1f
 ---
 # Line Component in Interactive Communication Editor 

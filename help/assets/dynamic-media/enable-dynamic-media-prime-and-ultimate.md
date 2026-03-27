@@ -3,6 +3,7 @@ title: Enable [!DNL Dynamic Media] Prime and Ultimate
 description: Learn how to enable [!DNL Dynamic Media] Prime and Ultimate offerings.
 feature: Asset Management
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
 ---
 # Enable [!DNL Dynamic Media] Prime and Ultimate {#enable-dynamic-media-prime-and-ultimate}

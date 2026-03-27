@@ -4,6 +4,7 @@ description: Discover Interactive Communication Editor in AEM Forms. Learn key f
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
 ---
 

@@ -4,6 +4,7 @@ description: Learn how to deliver Dynamic Media assets to your web pages through
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 ---
 # Deliver Dynamic Media Assets{#delivering-dynamic-media-assets}

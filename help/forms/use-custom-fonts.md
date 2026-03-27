@@ -1,13 +1,12 @@
 ---
 title: How can we use custom fonts in AEM Forms?
 description: Learn to add custom fonts to a Forms as a Cloud Service environment.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
 feature: Adaptive Forms
 role: Admin, User
 ---
 # Use custom fonts
-
-**Cloud Service Communications documentation is in beta**
 
 You can use Forms as a Cloud Service Communications to combine an XDP template, XDP-based PDF document, or Acrobat Form (AcroForm) with XML data to generate PDF documents. You can also use Communications to combine, rearrange, and augment PDF and XDP documents and obtain information about PDF documents. 
 

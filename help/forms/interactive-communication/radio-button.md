@@ -4,6 +4,7 @@ description: Radio Button Component in Interactive Communication Editor in AEM F
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: fe1608f0-8d93-4b89-9dd9-849339b0a175
 ---
 # Radio Button Component in Interactive Communication Editor 
