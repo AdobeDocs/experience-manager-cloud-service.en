@@ -4,7 +4,7 @@ description: Understand how submission and workflow work for Associate UI, and f
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-exl-id: a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d
+exl-id: 9d8a33e4-e206-48e6-9daf-b15feb9c67a3
 ---
 # Submission workflow for Associate UI
 
