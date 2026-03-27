@@ -65,14 +65,14 @@ After you have set up your program and have at least one environment using the [
 
 1. On the **Source Code** tab, select which type of code the pipeline should process.
 
-   * **[Configure a full stack code pipeline](#full-stack-code)**
+   * **[I am using Full Stack Code](#full-stack-code)**
    * **[Configure a targeted deployment pipeline](#targeted-deployment)**
 
 See [CI/CD Pipelines](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) for more information about the types of pipelines.
 
 The steps to complete the creation of your production pipeline vary depending on the type of source code you selected. Follow the links above to jump to the next section of this document so you can complete the configuration of your pipeline.
 
-### Configure a full stack code pipeline {#full-stack-code}
+### I am using a Full Stack Code {#full-stack-code}
 
 A full-stack code pipeline simultaneously deploys back-end and front-end code builds containing one or more AEM server applications along with HTTPD/Dispatcher configuration.
 
@@ -90,8 +90,14 @@ A full-stack code pipeline simultaneously deploys back-end and front-end code bu
    > 
    >See [Add and Manage Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) to learn how to add and manage repositories in Cloud Manager.
 
-   * **Git Branch** - Defines from which branch the selected pipeline should retrieve the code.
-  Enter the first few characters of the branch name and the auto-complete feature of this field finds the matching branches to help you select.
+   * **Git Branch** - From the drop-down list, choose which branch in the selected repository the pipeline should build from. The default is `main`. The pipeline uses the chosen branch as the source for build and deployment. If necessary, click **Refresh** to update the list of available branches for the selected repository. Use this option if a recently created branch does not appear in the list.
+   * **Build Strategy**
+        * **Full Build** - Builds all modules in the repository every time
+        * BETA **Smart Build** - Builds only modules that have changed since the last commit.<br>Learn more about [using Smart Build in a non-production pipeline](#about-smart-build-non-production-pipeline).
+  
+          >[!IMPORTANT]
+          >
+          >Smart Build is available only for Code Quality pipelines and Dev Full Stack Code deployment pipelines.
    * **Ignore Web Tier Configuration** - When checked, the pipeline does not deploy your web tier configuration.
    * **Pause before deploying to Production** - Pauses the pipeline before deploying to production.
    * **Scheduled** - Lets the user enable the scheduled production deployment.
@@ -112,7 +118,7 @@ When the pipeline runs, paths configured for the Experience Audit are submitted 
 
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 
-### Configure a targeted deployment pipeline {#targeted-deployment}
+### I am using Targeted deployment {#targeted-deployment}
 
 A targeted deployment deploys code only for selected parts of your AEM application. In such a deployment, you can choose to **Include** one of the following types of code:
 
@@ -162,6 +168,80 @@ A targeted deployment deploys code only for selected parts of your AEM applicati
 1. Click **Save**.
 
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
+
+## BETA: About using Smart Build in a production pipeline{#about-smart-build-production-pipeline}
+
+**Smart Build** in Cloud Manager is an optimized build strategy for production pipelines. Smart Build reduces build times by caching modules and rebuilding only those modules that have changed since the last successful run. Unchanged modules are reused from cache, while only modified modules and their dependencies are rebuilt, improving efficiency for iterative development workflows.
+
+>[!NOTE]
+>
+>Interested in this beta? Email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe OrgID and Program ID.
+
+>[!IMPORTANT]
+>
+>The first run after enabling Smart Build behaves like a Full Build because the cache is empty.
+
+Smart Build is recommended when you have the following:
+
+* You are actively developing and committing frequent incremental changes.
+* Your project contains multiple Maven modules.
+* Full builds are taking significant time.
+
+Smart Build is not always ideal when you have the following:
+
+* Your build relies heavily on plugins that perform operations outside Maven's dependency graph.
+* You require full rebuild validation on every execution.
+
+### Understand build performance{#smart-build-performance}
+
+The performance gain from using Smart Build depends on several factors including the following:
+
+* The number of modules in the project.
+* The frequency and scope of code changes.
+* The distribution of dependencies across modules.
+
+Generally, projects with many independent modules can see the greatest improvement.
+
+### Per-module cache opt-out{#smart-build-cache-optout}
+
+Smart Build provides fine-grained control that lets you disable caching for specific modules. This ability is useful when certain modules:
+
+* Use plug-ins, such as `exec-maven-plugin` or `maven-antrun-plugin`.
+* Perform file operations not tracked by Maven dependencies.
+* Cached content produces inconsistent results.
+
+### Disable caching for a module{#smart-build-disable-caching}
+
+You can add the following property to the affected module's `pom.xml`:
+
+```xml
+<properties>
+  <maven.build.cache.enabled>false</maven.build.cache.enabled>
+</properties>
+```
+
+This syntax forces the module to rebuild on every pipeline execution while other modules continue to benefit from caching.
+
+### Limitations and considerations when using Smart Build{#smart-build-limitations}
+
+Keep the following in mind when you use Smart Build:
+
+* Smart Build relies on Maven dependency analysis.
+* Changes outside the dependency graph may not trigger rebuilds.
+* Some plug-ins may not be fully compatible with caching.
+* You can switch back to **Full Build** at any time by editing the production pipeline.
+
+If you encounter unexpected build behavior, consider disabling caching for specific modules or temporarily switching your build strategy to **Full Build**.
+
+### Troubleshooting Smart Build issues{#smart-build-troubleshoot}
+
+   | Issue | Suggested solutions |
+   | --- | --- |
+   | Build results are inconsistent | &bull; Disable caching for affected modules.<br>&bull; Verify plug-in behavior (especially `exec`/`antrun` plug-ins).   |
+   | No performance improvement | &bull; Ensure that multiple runs have occurred (cache warm-up).<br>&bull; Check if most modules are changing frequently.  |
+   | Unexpected artifacts or missing changes | &bull; Review whether changes are outside Maven dependency tracking.<br>&bull; Use **Full Build** for verification. |
+
+See [Add a production pipeline](#adding-production-pipeline) to enable Smart Build.
 
 ## Skip Dispatcher packages {#skip-dispatcher-packages}
 
