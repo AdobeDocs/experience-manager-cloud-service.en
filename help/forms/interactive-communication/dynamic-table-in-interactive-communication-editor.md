@@ -5,8 +5,8 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
+exl-id: 5581a840-dd95-4d60-a001-4a45b207c591
 ---
-
 # Create Dynamic Table in Interactive Communication Editor
 
 ## Overview
