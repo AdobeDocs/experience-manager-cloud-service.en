@@ -37,11 +37,11 @@ For background on provisioning VPN, dedicated egress IP, or flexible port egress
 1. Sign in to Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and open your organization and program.
 1. Open the **Environments** tab for the program. In the left sidebar, select **Network Infrastructures**.
 
-1. On the **Network Infrastructures** page, locate your infrastructure in the table. Either select a **row** to open the testing experience, or open the row **actions** menu (![Adobe Spectrum Smock More icon for the horizontal ellipsis row actions menu](assets/ellipsis.svg)) and choose **Test**.
+1. On the **Network Infrastructures** page, locate your infrastructure in the table. Either select a row to open the testing experience, or open the row actions menu (![Adobe Spectrum Small More icon for the horizontal ellipsis row actions menu](assets/ellipsis.svg)) and choose **Test**.
 
    ![Cloud Manager program Environments area with the Network Infrastructures table, infrastructure rows, and row actions menu used to start the Network Connectivity Test](assets/network-connectivity-test-cloud-manager-open-test-from-infrastructure-list.png)
 
-1. The **Network Testing** dialog opens. Enter **Host** and **Port**, select **Test**, and review DNS resolution, port open, HTTP connectivity, and reachability in the results area. Optional actions such as **Copy to clipboard** and recent test history appear in the dialog. See [Understand the Results](#understand-results) for how to interpret each section.
+1. The **Network Testing** dialog opens. Enter **Host** and **Port**, select **Test**, and review DNS resolution, port open, HTTP connectivity, and reachability in the results area. Optional actions such as **Copy to clipboard** and recent test history appear in the dialog. See [Understanding Results](#understanding-results) for how to interpret each section.
 
    ![Cloud Manager Network Connectivity Test dialog with Host and Port fields, Test action, and results for DNS resolution, port open, HTTP connectivity, and reachability](assets/network-connectivity-test-cloud-manager-results-dialog.png)
 
@@ -79,7 +79,7 @@ The tool reports several dimensions. Together they describe whether the target i
 | Result | Meaning |
 | --- | --- |
 | `Yes` / true | TCP connection succeeded — the port is open and accepting connections. |
-| `No` / false | the port is closed, filtered by a firewall, or the host is unreachable. |
+| `No` / false | The port is closed, filtered by a firewall, or the host is unreachable. |
 
 ### HTTP Connectivity {#http-connectivity}
 
