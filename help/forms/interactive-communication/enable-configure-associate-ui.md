@@ -4,7 +4,7 @@ description: Learn how to enable Associate View and configure workflow for updat
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-exl-id: 7c3e8a2b-5f21-4a1e-9e2d-8a4b6c7d8e9f
+exl-id: 5f8371f9-b4a6-4cae-a9d3-cfd744b66702
 ---
 # Enable and configure Associate UI for Interactive Communications
 
