@@ -5,8 +5,8 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
+exl-id: 56792e7f-d47c-4661-8060-c7021e919126
 ---
-
 # Start Workflow in Interactive Communication Editor
 
 ## Overview
