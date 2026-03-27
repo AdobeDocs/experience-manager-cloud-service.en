@@ -3,8 +3,8 @@ title: Customizing Adaptive Form themes using the Theme Editor
 description: Learn how to use the Theme Editor to create and customize visual themes for Core Component-based Adaptive Forms in Adobe Experience Manager.
 feature: Adaptive Forms, Core Components
 role: User, Developer
+exl-id: 4a541c11-38e9-4dbc-8464-38be6b1ee94d
 ---
-
 # Customizing Form Themes {#customizing-form-themes}
 
 | Version | Article link |
