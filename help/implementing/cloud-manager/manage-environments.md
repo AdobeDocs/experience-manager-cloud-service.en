@@ -102,7 +102,7 @@ The selected regions apply to both production and staging environments.
 
 If you do not specify any additional regions, [you can do so later after the environments are created](#edit-regions).
 
-If you want to provision [advanced networking](/help/security/configuring-advanced-networking.md) for the program, it is recommended that this provisioning is done before adding additional publish regions to the environments by using the Cloud Manager API. Otherwise, the additional publish regions' traffic goes through the primary region's proxy.
+If you want to provision [advanced networking](/help/security/configuring-advanced-networking.md) for the program, it is recommended that this provisioning be done before adding additional publish regions to the environments by using the Cloud Manager API. Otherwise, the additional publish regions' traffic goes through the primary region's proxy.
 
 ### Edit multiple publish regions {#edit-regions}
 
@@ -124,7 +124,7 @@ You can also remove additional publish regions. However, you can only add or onl
 
 Changes made to the production environment apply to both production and staging environments. Changes to multiple publish regions can only be edited in the production environment.
 
-If you want to provision [advanced networking](/help/security/configuring-advanced-networking.md) for the program, it is recommended that this provisioning is done before adding additional publish regions to the environments. Otherwise, the additional publish regions' traffic goes through the primary region's proxy.
+If you want to provision [advanced networking](/help/security/configuring-advanced-networking.md) for the program, it is recommended that this provisioning be done before adding additional publish regions to the environments. Otherwise, the additional publish regions' traffic goes through the primary region's proxy.
 
 ## View details of an environment {#viewing-environment}
 
@@ -298,7 +298,7 @@ Select **Manage Access** from the ellipsis menu of the environment on the **Envi
 
 1. From the **Environment** card, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), then click **Developer Console**. 
 
-A new tab is opened in your browser with the logon page to the **Developer Console**. 
+A new tab is opened in your browser with the login page to the **Developer Console**. 
 
 ![Login to the Developer Console](assets/environ-devconsole.png)
 
