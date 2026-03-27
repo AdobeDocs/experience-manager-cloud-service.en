@@ -105,6 +105,7 @@ After the fragments have been created, you can:
 * [Integrate and use your Content Fragments in Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md) 
 * Create, and manage, [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * [Or use your fragments for page authoring](/help/sites-cloud/authoring/fragments/content-fragments.md)
+* Use a [Visualization Template](/help/sites-cloud/administering/content-fragments/visualization-templates.md) to view, or deliver, a HTML representation of the fragment
 
 >[!NOTE]
 >
