@@ -382,19 +382,27 @@ You can view, and edit, the properties (metadata) of a fragment using the [Prope
 
 ## Publishing and Previewing a Fragment {#publishing-and-previewing-a-fragment}
 
-You can publish your Content Fragments to:
+You can:
 
-* the **[Publish Service](/help/headless/deployment/architecture.md)** - for full, public access
+* Preview your Content Fragments:
 
-* the **[Preview Service](/help/headless/deployment/architecture.md)** - to [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) the content prior to full availability
+  * With [Visualization Templates](/help/sites-cloud/administering/content-fragments/visualization-templates.md)
 
-  >[!CAUTION]
-  >
-  >Publishing Content Fragments to the **Preview Service** is only available from the Content Fragments console; using the **Publish** action.
+  * On the [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) instance 
 
-  >[!NOTE]
-  >
-  >For more details about the Preview environments, see [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+* Publish your Content Fragments to:
+
+  * the **[Publish Service](/help/headless/deployment/architecture.md)** - for full, public access
+
+  * the **[Preview Service](/help/headless/deployment/architecture.md)** - to [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) the content prior to full availability
+
+    >[!CAUTION]
+    >
+    >Publishing Content Fragments to the **Preview Service** is only available from the Content Fragments console; using the **Publish** action.
+
+    >[!NOTE]
+    >
+    >For more details about the Preview environments, see [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 >[!CAUTION]
 >

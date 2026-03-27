@@ -14,6 +14,8 @@ To preview your fragment with a template:
 
 ## Upload your Template {#upload-your-template}
 
+A template is associated with a Content Fragment Model. 
+
 To upload your new HTML template:
 
 ## Download your Template {#download-your-template}
