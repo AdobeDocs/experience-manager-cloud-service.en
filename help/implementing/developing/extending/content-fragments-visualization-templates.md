@@ -6,7 +6,59 @@ role: Admin, Developer
 ---
 # Content Fragments - Visualization Templates {#content-fragments-visualization-templates}
 
-Visualization Templates can be used to preview Content Fragments. 
+Visualization Templates can be used to preview Content Fragments. These HTML templates are developed with Handlebars, 
+
+This page explains how to create custom Handlebars templates for rendering Adobe Experience Manager (AEM) Content Fragments. Templates allow you to control exactly how your content fragments are displayed in preview mode.
+
+## What you will learn {#what-you-will-learn}
+
+In particular, this page covers:
+
+* Handlebars - the necessary basics of the syntax
+* How to access Content Fragment data
+* Working with nested Content Fragments
+* Handling multi-valued fields
+* Creating loops and conditional logic
+* Best practices of template design for Content Fragments
+
+## Prerequisites {#prerequisites}
+
+To understand and work with the technologies covered here you should have:
+
+* Basic understanding of HTML
+* Familiarity with AEM Content Fragments and Content Fragment Models
+* Understanding of your Content Fragment models
+
+## Handlebars - the (very) basics {#handlebars-the-very-basics}
+
+Handlebars is a simple templating language that uses double curly braces (brackets) `{{ }}` to insert dynamic content into HTML.
+
+### Basic Syntax {#basic-syntax}
+
+The basic syntax that you will need is:
+
+```html
+<!-- Output a variable (HTML-escaped) -->
+{{variableName}}
+
+<!-- Output raw HTML (unescaped) -->
+{{{htmlContent}}}
+
+<!-- Comment (not rendered) -->
+{{! This is a comment }}
+```
+
+### Key Concepts {#key-concepts}
+
+| Basic Syntax | Description | When to use |
+|--- |--- |--- |
+| `{{ }}` | Escapes HTML special characters — safe for plain text | Properties, titles, metadata values |
+| `{{! }}` | Handlebars comment — not rendered in output | Template documentation and section labels |
+| `{{{ }}}` | Outputs raw HTML (unescaped) | All field values (they contain pre-rendered HTML) |
+
+>[!IMPORTANT]
+>
+>Use triple braces `{{{ }}}` for all field values since they contain pre-rendered HTML. Using double braces will display raw HTML tags as text.
 
 ## The Generic Template {#the-generic-template}
 
