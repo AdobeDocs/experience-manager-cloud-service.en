@@ -58,7 +58,7 @@ The basic syntax that you will need is:
 
 >[!IMPORTANT]
 >
->Use triple braces `{{{ }}}` for all field values since they contain pre-rendered HTML. Using double braces will display raw HTML tags as text.
+>Use triple braces `{{{ }}}` for all field values as they contain pre-rendered HTML. Using double braces displays raw HTML tags as text.
 
 ## The Generic Template {#the-generic-template}
 
