@@ -386,7 +386,7 @@ You can:
 
 * Preview your Content Fragments:
 
-  * With [Visualization Templates](/help/sites-cloud/administering/content-fragments/visualization-templates.md)
+  * With [Visualization Templates](/help/sites-cloud/administering/content-fragments/preview.md#preview-with-visualization-html-templates)
 
   * On the [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) instance 
 

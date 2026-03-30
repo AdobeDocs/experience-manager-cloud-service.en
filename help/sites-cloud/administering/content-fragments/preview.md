@@ -83,16 +83,20 @@ The Content Fragment console provides a **Preview** option for every fragment.
 The icon can be selected to open a dialog that represents the fragment based on a HTML template. You can use the default template, or develop and load your own.
 -->
 
-## Preview with Visualization Templates {#preview-with-visualization-templates}
+## Preview with Visualization (HTML) Templates {#preview-with-visualization-html-templates}
 
-AEM allows you to preview your content fragment using a visual layout based on a template. A standard template is available within AEM, but you can also create and customize your own templates.
+AEM allows you to preview your content fragment using a visual layout based on an HTML template. A **Generic Template** is available within AEM as a default, but you can also create and customize your own templates.
 
 To preview your Content Fragment using a visualization template:
 
 1. In the Content Fragment console navigate to the location of your fragment.
 1. Select your fragment.
 1. Select **Preview** from the top toolbar.
-   A dialog will open showing the fragment according to the standard template. 
+   A dialog will open showing the fragment according to the assigned HTML template, or the **Generic Template** (default) template. 
+
+For example:
+
+![Preview Fragment with Generic HTML Template](/help/sites-cloud/administering/content-fragments/assets/cf-preview-html-template.png)
 
 >[!NOTE]
 >
