@@ -8,7 +8,7 @@ role: Admin, Developer
 
 Visualization Templates can be used to preview Content Fragments. These HTML templates are developed with Handlebars, 
 
-This page explains how to create custom Handlebars templates for rendering Adobe Experience Manager (AEM) Content Fragments. Templates allow you to control exactly how your content fragments are displayed in preview mode.
+This page explains how to create custom Handlebars templates for rendering Adobe Experience Manager (AEM) Content Fragments. Templates allow you to control exactly how your Content Fragments are displayed in preview mode.
 
 ## What you will learn {#what-you-will-learn}
 
@@ -33,7 +33,7 @@ To understand and work with the technologies covered here you should have:
 
 Handlebars is a simple templating language that uses double curly braces (brackets) `{{ }}` to insert dynamic content into HTML.
 
-### Basic syntax
+### Basic syntax {#basic-syntax}
 
 ```handlebars
 <!-- Output a variable (HTML-escaped) -->
@@ -46,7 +46,7 @@ Handlebars is a simple templating language that uses double curly braces (bracke
 {{! This is a comment }}
 ```
 
-### Key concepts
+### Key concepts {#key-concepts}
 
 | Syntax | Description | When to use |
 |--- |--- |--- |
@@ -58,66 +58,87 @@ Handlebars is a simple templating language that uses double curly braces (bracke
 >
 > Use triple braces (`{{{ }}}`) for field values because values are pre-rendered HTML.
 
-## Template context reference
+## Template context reference {#template-context-reference}
 
-When your template is rendered, it receives a context object containing all the data about your content fragment.
+When your template is rendered, it receives a context object containing all the data about your Content Fragment.
 
-### Main content fragment variables
+### Main Content Fragment {#main-content-fragment}
 
 | Variable | Type | Description |
 |--- |--- |--- |
-| `properties` | Map | Fragment metadata |
+| `properties` | Map | Fragment metadata (see [Properties structure](#properties-structure-main-and-referenced-fragments)) |
 | `fields` | Map | Direct access to field values by name |
 | `allFields` | List | Array of `{name, value}` for iteration |
 | `hasFields` | Boolean | `true` if the fragment has fields |
 
-### Properties structure (main and referenced CFs)
+### Properties structure (Main and referenced fragments) {#properties-structure-main-and-referenced-fragments}
 
-| Property | Type | Description |
-|--- |--- |--- |
-| `id` | String | UUID of fragment |
-| `title` | String | Fragment title |
-| `description` | String | Fragment description |
-| `path` | String | JCR path |
-| `hasDescription` | Boolean | Description availability flag |
-| `createdDate` | String | ISO-8601 created date |
-| `modifiedDate` | String | ISO-8601 modified date |
-| `publishedDate` | String | ISO-8601 published date |
-| `status` | String | Fragment status (for example `DRAFT`) |
-| `model` | Map | Model metadata (id, path, name, technicalName, description) |
-| `validationStatus` | List | Entries like `{property, message}` |
-| `previewReplicationStatus` | String | Preview replication status |
-| `tags` | List | Tag metadata |
-| `fieldTags` | List | Field-level tag metadata |
+The `properties` object has the same shape for the main fragment and for each referenced fragment.
 
-Template access examples:
+| Property | Type | Description | Example |
+|--- |--- |--- |--- |
+| `id` | String | UUID of fragment | |
+| `title` | String | Title of the fragment | Cycling Southern Utah |
+| `description` | String | Description of the fragment | An adventure... |
+| `path` | String | JCR path to the fragment | `/content/dam/...` |
+| `hasDescription` | Boolean | True if description is not blank | `true` |
+| `createdDate` | String | ISO-8601 created date | |
+| `modifiedDate` | String | ISO-8601 modified date | |
+| `publishedDate` | String | ISO-8601 published date | |
+| `status` | String | Content Fragment status | `DRAFT` |
+| `model` | Map | Contains: `id`, `path`, `name`, `technicalName`, `description` | |
+| `validationStatus` | List | Entries like `{property, message}` | |
+| `previewReplicationStatus` | String | Preview replication status | |
+| `tags` | List | Each item: `id`, `title`, `titlePath`, `name`, `path`, `description` | |
+| `fieldTags` | List | Same structure as `tags` | |
 
+Examples: Template access
+
+for field HTML:
 ```handlebars
-{{properties.title}}
-{{properties.description}}
-{{{fields.description}}}
+{{properties.title}}, {{properties.description}}, {{{fields.description}}} 
 ```
 
-### Referenced content fragments
+### Referenced Content Fragments {#referenced-content-fragments}
 
 | Variable | Type | Description |
 |--- |--- |--- |
 | `hasReferencedFragments` | Boolean | `true` when references exist |
 | `referencedFragments` | List | Array of referenced fragment objects |
-| `referencesError` | Boolean | `true` if loading references failed |
-| `referencesErrorMessage` | String | Error details |
+| `referencesError` | Boolean | `true` if an error occurred when loading references |
+| `referencesErrorMessage` | String | Error message when `referencesError` is `true` |
 
-Each referenced fragment object includes:
+### Referenced Fragment Structure {#referenced-fragment-structure}
 
-* `anchorId`
-* `properties`
-* `hasFields`
-* `fields`
-* `allFields`
+Each item in `referencedFragments` contains:
 
-## Basic field access
+| Property | Type | Description |
+|--- |--- |--- |
+| `anchorId` | String | HTML-safe anchor ID (at fragment level; not a CF property) |
+| `properties` | Map | Fragment metadata (same structure as above) |
+| `hasFields` | Boolean | True if the fragment has fields |
+| `fields` | Map | Direct access to fields within this fragment |
+| `allFields` | List | Array of `{name, value}` for iteration |
 
-### Direct field access (recommended)
+Examples: Template access for referenced Content Fragments:
+
+```handlebars
+{{anchorId}}, {{properties.title}}, {{properties.description}}
+```
+
+Or from the fields map: 
+
+```handlebars
+{{{ fields.referenced_cf_field.properties.description }}}
+````
+
+## Basic field access {#basic-field-access}
+
+### Direct field access (recommended) {#direct-field-access-recommended}
+
+Access fields directly by name using the fields map:
+
+<!-- TBC -->
 
 ```handlebars
 <!DOCTYPE html>
@@ -136,7 +157,7 @@ Each referenced fragment object includes:
 </html>
 ```
 
-### Iterate through all fields
+### Iterate through all fields {#iterate-through-all-fields}
 
 ```handlebars
 <table>
@@ -157,9 +178,9 @@ Each referenced fragment object includes:
 </table>
 ```
 
-## Nested content fragments
+## Nested Content Fragments {#nested-content-fragments}
 
-### Single-level nesting
+### Single-level nesting {#single-level-nesting}
 
 ```handlebars
 <p>Name: {{{fields.author.name}}}</p>
@@ -169,7 +190,7 @@ Each referenced fragment object includes:
 
 Pattern: `fields.referenceFieldName.nestedFieldName`
 
-### Multi-level nesting
+### Multi-level nesting {#multi-level-nesting}
 
 ```handlebars
 <p>Organization: {{{fields.author.organization.name}}}</p>
@@ -179,7 +200,7 @@ Pattern: `fields.referenceFieldName.nestedFieldName`
 
 Pattern: `fields.level1.level2.level3.fieldName` (unlimited depth).
 
-### API requirement: hydration
+### API requirement: hydration {#api-requirement-hydration}
 
 To resolve nested references, include hydration in the preview call:
 
@@ -193,9 +214,9 @@ GET /adobe/sites/cf/fragments/{id}/preview?hydration=%7B%22enabled%22%3Atrue%2C%
 | `2` | Main fragment + direct references + their references |
 | `3+` | Continue up to 10 levels |
 
-## Multi-valued fields
+## Multi-valued fields {#multi-valued-fields}
 
-### Multi-valued text fields
+### Multi-valued text fields {#multi-valued-text-fields}
 
 ```handlebars
 {{#each fields.tags}}
@@ -209,7 +230,7 @@ For index access, use dot-bracket syntax:
 {{{fields.tags.[0]}}}
 ```
 
-### Multi-valued content fragment references
+### Multi-valued Content Fragment references {#multi-valued-content-fragment-references}
 
 ```handlebars
 {{#each fields.authors}}
@@ -221,7 +242,7 @@ For index access, use dot-bracket syntax:
 {{/each}}
 ```
 
-### Multi-valued assets
+### Multi-valued assets {#multi-valued-assets}
 
 ```handlebars
 {{#each fields.gallery}}
@@ -229,9 +250,9 @@ For index access, use dot-bracket syntax:
 {{/each}}
 ```
 
-## Loops and iteration
+## Loops and iteration {#loops-and-iteration}
 
-### `each` examples
+### `each` examples {#each-examples}
 
 ```handlebars
 {{#each fields.tags}}
@@ -241,7 +262,7 @@ For index access, use dot-bracket syntax:
 {{/each}}
 ```
 
-### Special loop variables
+### Special loop variables {#special-loop-variables}
 
 ```handlebars
 {{#each fields.items}}
@@ -249,7 +270,7 @@ For index access, use dot-bracket syntax:
 {{/each}}
 ```
 
-## Conditional rendering
+## Conditional rendering {#conditional-rendering}
 
 ```handlebars
 {{#if fields.author}}
@@ -274,7 +295,7 @@ Error handling pattern:
 {{/if}}
 ```
 
-## Built-in Handlebars helpers
+## Built-in Handlebars helpers {#built-in-handlebars-helpers}
 
 | Helper | Description |
 |--- |--- |
@@ -284,14 +305,14 @@ Error handling pattern:
 | `{{#with object}}` | Creates a nested scope |
 | `{{lookup this "key"}}` | Dynamic property lookup |
 
-## Custom template helpers
+## Custom template helpers {#customer-template-helpers}
 
 The system provides custom helpers:
 
 1. `asset` (builds `<img>` with custom attributes)
 1. `text` (builds `<span>` with custom attributes)
 
-### `asset` helper
+### `asset` helper {#asset-helper}
 
 Syntax:
 
@@ -307,7 +328,7 @@ Examples:
 {{{asset fields.thumbnail class="thumb" data-category="product"}}}
 ```
 
-### `text` helper
+### `text` helper {#text-helper}
 
 Syntax:
 
@@ -322,7 +343,7 @@ Examples:
 {{{text fields.price class="price-tag" id="product-price"}}}
 ```
 
-### Attribute validation notes
+### Attribute validation notes {#attribute-validation-notes}
 
 Valid attribute names:
 
@@ -332,7 +353,7 @@ Valid attribute names:
 
 Invalid names are skipped and logged.
 
-## Best practices
+## Best practices {#best-practices}
 
 1. Always use triple braces for field and helper output.
 1. Guard nested references with `#if` checks.
@@ -341,7 +362,7 @@ Invalid names are skipped and logged.
 1. Include fallbacks for missing optional data.
 1. Test with full, partial, empty, and deeply nested data.
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
 | Problem | Symptom | Solution |
 |--- |--- |--- |
@@ -352,9 +373,9 @@ Invalid names are skipped and logged.
 | Empty output | Blank render | Verify block closures and add temporary debug values |
 | Parent value unavailable in nested loop | Undefined parent variable | Use `../` or `../../` scope notation |
 
-## Quick reference
+## Quick reference {#quick-reference}
 
-### Context variables
+### Context variables {#context-variables}
 
 ```handlebars
 {{main_cf_title}}
@@ -367,7 +388,7 @@ Invalid names are skipped and logged.
 {{referencesErrorMessage}}
 ```
 
-### Field access
+### Field access {#field-variables}
 
 ```handlebars
 {{{fields.fieldName}}}
@@ -378,7 +399,7 @@ Invalid names are skipped and logged.
 {{{fields.authors.[0].name}}}
 ```
 
-### Control flow
+### Control flow {#control-flow}
 
 ```handlebars
 {{#if condition}}...{{/if}}
@@ -389,7 +410,7 @@ Invalid names are skipped and logged.
 {{#with object}}...{{/with}}
 ```
 
-### Loop variables
+### Loop variables {#loop-variables}
 
 ```handlebars
 {{@index}}
@@ -401,7 +422,7 @@ Invalid names are skipped and logged.
 {{../parent}}
 ```
 
-### Triple braces requirement
+### Triple braces requirement {#triple-braces-requirement}
 
 Use triple braces for:
 
@@ -417,7 +438,7 @@ Use double braces for:
 * `{{name}}`
 * `{{@index}}`
 
-## Additional resources
+## Additional resources {#additional-resources}
 
 * [Handlebars documentation](https://handlebarsjs.com/)
 * [Handlebars built-in helpers](https://handlebarsjs.com/guide/builtin-helpers.html)
