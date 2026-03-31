@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.03.12 Release Notes
-description: These are the release notes for the 2026.03.12 release of the Universal Editor.
+title: Universal Editor 2026.03.26 Release Notes
+description: These are the release notes for the 2026.03.26 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.03.12 Release Notes {#release-notes}
+# Universal Editor 2026.03.26 Release Notes {#release-notes}
 
-These are the release notes for the 12 March 2026 release of the Universal Editor.
+These are the release notes for the 26 March 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -16,18 +16,14 @@ These are the release notes for the 12 March 2026 release of the Universal Edito
 
 >[!TIP]
 >
->For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
 ## What's New {#what-is-new}
 
-* Components can now be added via the [context menu](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu) of containers.
-
-## Early Adoption Features {#early-adopter}
-
-If you are interested in testing the upcoming features listed below and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 
-
-* Shallow copy has been implemented for Content Fragments.
+* [Document Authoring assets configuration](https://docs.da.live/administrators/guides/setup-aem-assets#setup-aem-assets) is now exposed through a configuration endpoint.
+* [An extension point](/help/implementing/universal-editor/extending.md#extending-ui) has been added to the contextual menu.
+* A new custom workflow icon has been added to the Extensibility DynamicIcon system to display the deep/shallow cancellation state in the UI.
 
 ## Other Improvements {#other-improvements}
 
-* A problem was fixed where Document Authoring sub-elements didn't obey nthChild rules.
+* A problem has been fixed with Document Authoring classes not working with multifields since they expect a string.
