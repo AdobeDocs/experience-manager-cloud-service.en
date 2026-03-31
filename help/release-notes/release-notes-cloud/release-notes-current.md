@@ -22,18 +22,19 @@ The following section outlines the feature release notes for the current (latest
 
 ## Release Date {#release-date}
 
-The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2026.2.0) is March 3, 2026. The next feature release (2026.3.0) is planned for March 26, 2026.
+The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] current feature release (2026.3.0) is March 26, 2026. The next feature release (2026.4.0) is planned for April 30, 2026.
 
 ## Maintenance Release Notes {#maintenance}
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
-## Release Video {#release-video}
+<!--  ## Release Video {#release-video}
 
-Have a look at the February 2026 Release Overview video for a summary of the features added in the 2026.2.0 release:
+Have a look at the March 2026 Release Overview video for a summary of the features added in the 2026.3.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3480399/?quality=12)
 
+-->
 
 ## AEM Beta Programs {#aem-beta-programs}
 
@@ -44,9 +45,11 @@ Adobe Experience Manager (AEM) beta programs are a way for customers to get acce
 >Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk.
 
 **Benefits of participating**
+
 Getting early access to features that Adobe is developing lets customers and partners provide feedback and shape product development. It also helps them prepare to adopt new capabilities before general availability.
 
 **Current beta programs**
+
 The following sections list active beta programs.
 
 ### Agents in AEM {#agents-in-aem}
@@ -76,21 +79,62 @@ See [AEM Foundation beta programs](#foundation-early-adopter).
 
 See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes/current.md).
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Content Fragment Check-Out/-In {#cf-checkout-in}
+
+To improve parity with AEM Touch UI, content fragments can now be checked out and checked back in using the new Content Fragment Admin UI as well. Check-out functionality is unchanged, effectively locking a checked-out content fragment and thereby preventing it from being edited in Content Fragment Editor by other users. Users who own a content fragment and administrators can check the fragment out and back in. Checking a fragment out has no effect on referenced child fragments or assets. 
+
+### Content Fragment Launches Jobs Panel {#cf-launches-jobs}
+
+Asynchronous jobs for content fragments launches can now be viewed in the properties panel of the content fragment launches admin UI to observe their status - if a job is still running, has been completed, or was aborted, along with relevant detail information about the job. 
+
+### Update to RTE of the Content Fragment Editor {#cf-rte-update}
+
+The rich text editor (RTE) of the Content Fragment Editor was migrated away from TinyMCE to TipTap. This change brings with it a number of benefits.
+
+* The Universal Editor and Content Fragment Editor now use the same RTE technology stack.
+  * This means both editors now produce the same HTML.
+  * Extensions can now be reusable.
+  * The same functions and methods are now available using both editors (in headless use cases).
+  * The ultimate goal is that one configuration leads to a unified experience in both editors.
+* The Content Editor now has a new look and feel in the Spectrum 2 style.
+* New functionality is available in the Content Fragment Editor including find and replace and being content advisor ready.
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Content Advisor to access AEM Assets in Adobe Express**
+**Content Advisor in AEM Sites**
 
-[Content Advisor is now available in Adobe Express](/help/assets/native-integration-adobe-express.md), introducing intelligent asset discovery for AEM Assets directly within the Express interface. Content Advisor provides context-aware recommendations based on canvas content and campaign briefs, supports AI-powered search, enables native support for channel-ready on the fly renditions powered by Dynamic Media, and so many other features. Content Advisor transforms how you discover and use approved assets, helping you find the right content faster to streamline your creative workflows.
+Content Advisor is now available in AEM Sites, introducing intelligent asset discovery from AEM Assets directly. It enables users to effortlessly discover, browse, and reuse the most relevant assets directly within their workflow, eliminating the need to switch contexts.
 
-### New Features in Dynamic Media with OpenAPI {#dynamic-media-openAPI-new-features}
+Content Advisor provides intelligent features for assets such as campaign brief based suggestions, contextual suggestions, access to Dynamic Media renditions, and detailed asset metadata.
 
-**Attribute-based access control (ABAC) for Dynamic Media with OpenAPI**
+Coming soon - Content Advisor support for Adobe Workfront and AJO B2C applications, including ability to discover Content Fragments
 
-Attribute-based access control (ABAC) enables administrators to control access to Dynamic Media with OpenAPI assets using metadata-driven rules. Administrators can define rules for user groups based on asset metadata to determine which assets are visible to specific groups. When an asset's metadata matches the defined conditions, access is granted automatically. This capability helps organizations enforce better governance, ensuring that users can only view and work with Dynamic Media with OpenAPI assets that are relevant to their role or permissions.
+### New Features in Dynamic Media {#dynamic-media-new-features}
 
->[!NOTE]
->
->Attribute-based access control (ABAC) for Dynamic Media with OpenAPI is a limited availability feature. You can get it enabled by creating a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+#### Dynamic Media Template Editor updates {#dynamic-media-template-editor-updates}
+
+**Layer Management Enhancements**
+
+* Drag-and-Drop Layer Reordering: Layers can now be reordered directly in the Layers panel by dragging, providing a faster and more intuitive way to organize layer stacking order beyond the existing Bring Forward or Send Backward actions.
+* Copy, Paste & Duplicate: Full support for copying, pasting, and duplicating layers using keyboard shortcuts (Cmd/Ctrl+C, V, D) or the context menu, with support for multi-layer selections.
+* Separate Layer Properties Button: Added dedicated Layer Properties button for easier navigation to layer settings, with double-click support on layers for quick access.
+
+**Text Formatting Features**
+
+* Line Spacing Control: New line spacing slider enables precise control over line height in text layers, with full end-to-end support including undo/redo and template save/load.
+* All Caps Formatting: Text layers now support All Caps formatting option in the Font Style toolbar alongside Bold, Italic, and Underline.
+* Vertical Alignment Options: Added vertical alignment controls for text layers, providing more precise text positioning within text boxes.
+
+**Size & Dimension Controls**
+
+* Aspect Ratio Unlock: Users can now unlock aspect ratio when adjusting size properties, allowing independent width and height adjustments for more flexible layer sizing.
+* Copyfit Lines Configuration: Added support for `copyfitlines` and `copyfitmaxlines` settings in text copyfit properties, providing finer control over text fitting behavior.
+
+**Visual Polish**
+
+* Updated icons for Timer and Shape layers with refined Spectrum 2 (S2) design system icons.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -109,28 +153,25 @@ Forms Manager now [supports versioning for Adaptive Forms (Core Components and F
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
 
-#### Pause Automatic Maintenance Updates {#pause-updates}
+#### Simplified Index Management {#simplified-index-management}
 
-Go‑live days, live events, peak sales—these moments can't break. [Our new self‑service features](/help/implementing/deploying/quiet-hours-update-free-periods.md) stop automatic mainteanance updates when it matters, so your teams stay focused.
+[Simplified Index Management](https://oak-indexing.github.io/oakTools/simplified.html) provides a simpler way to define custom indexes and customize out-of-the-box (OOTB) indexes using one JSON file, without copying full definitions or managing versions manually. Customizations merge with the latest OOTB index, and a new index version is created when needed.
 
-* Quiet Hours: Block automatic maintenance during set times each day. Ideal for working hours, nightly runs or morning cutovers.
-* Update‑Free Period: Block automatic maintenance for a full week. Use it for launches, promos, or yearly freezes.
+#### Cloud Manager MCP Server {#cm-mcp-server}
 
-#### Code Quality Pipeline Troubleshooting with the Development Agent {#devagent-codequality}
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
 
-The Development Agent's pipeline troubleshooting capabilities help developers more efficiently diagnose and resolve issues in AEM as a Cloud Service deployments.
+Modern IDEs use the Model Context Protocol (MCP) to enable large language models (LLMs) to invoke tools exposed by MCP servers. Instead of integrating directly with low-level API specifications, developers can simply describe their intent in natural language.
 
-Previously focused on the **Build & Unit Testing** step, pipeline troubleshooting now also supports the **Code Scanning** step in Full Stack Deployment and Code Quality pipelines.
+The Cloud Manager MCP Server allows you to interact with Cloud Manager APIs directly from your IDE using prompts. Supported scenarios include executing pipelines, checking environment status, and more.
 
-The Code Scanning step evaluates code against quality rules, detects security vulnerabilities, and generates detailed quality reports. If this step fails, you can use the AI Assistant to prompt the Development Agent for a root cause analysis along with recommended remediation guidance.
-
-Learn more about the [Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md) and pipeline troubleshooting.
+Learn more about [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
 #### Java API Deprecations {#java-api-deprecation}
 
-The deprecated APIs targeting 2/26/2026 removal should no longer be used in code. To prevent deployment blocks, remove API usage before March 30, 2026. Important dates:
+The deprecated APIs targeting 2/26/2026 removal should no longer be used in code. To prevent deployment blocks, remove API usage before **March 30, 2026**. Important dates:
 
 * **Starting January 26, 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs.
 * **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
@@ -158,16 +199,15 @@ See the [deprecation article](/help/release-notes/deprecated-removed-features.md
 
 +++
 
-<!--
-OSGi properties:
-
-* `org.apache.sling.commons.log.LogManager` (all properties)
-* `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`, `org.apache.sling.commons.log.pattern`)
-* 
-
--->
-
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
+
+#### IDE AI tooling for AEM Java and Dispatcher Development (Public Beta Program) {#ai-dev-beta}
+
+Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. 
+
+Participate in the public beta (no sign-up necessary) to try out IDE tooling that can be used by coding agents to generate and debug AEM code and dispatcher configuration.
+
+Learn more in the [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md) beta documentation and email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) with questions or feedback.
 
 #### AEM Edge Functions (Beta Program) {#edge-functions}
 
@@ -183,36 +223,17 @@ Common use cases include:
 
 We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
 
-#### Cloud Manager MCP Server (Beta Program) {#cm-mcp-server}
-
->[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
-
-Modern IDEs use the Model Context Protocol (MCP) to enable large language models (LLMs) to invoke tools exposed by MCP servers. Instead of integrating directly with low-level API specifications, developers can simply describe their intent in natural language.
-
-Now available in beta, the Cloud Manager MCP Server allows you to interact with Cloud Manager APIs directly from your IDE using prompts. Supported scenarios include executing pipelines, checking environment status, and more.
-
-Learn more about [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md). To request access to the Cloud Manager MCP Server beta, email [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com) and include a description of your use case.
-
 #### Web Tier Config Pipeline Troubleshooting with the Development Agent (Beta Program) {#devagent-webtier}
 
 The Development Agent's [pipeline troubleshooting](/help/ai-in-aem/agents/brand-experience/development/development.md) capabilities help developers efficiently diagnose and resolve issues in AEM as a Cloud Service deployments. In addition to supporting Full Stack pipelines (Deployment and Code Quality), the Development Agent now supports troubleshooting for the **Web Tier Config Pipeline** as part of a beta program.
 
 To request access to the beta, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com). Pre-existing access to Agents in AEM is required.
 
-#### IDE AI tooling for AEM Java and Dispatcher Development (Beta Program) {#ai-dev-beta}
-
-Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. Join the beta to:
-
-* Share real-world experiences to help shape future Adobe-supported AI capabilities
-* Try out IDE tooling that can be used by AI agents to generate and debug AEM code and dispatcher configuration
-
-Email [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) for more information.
-
 #### IDE AI tooling for AEM 6.5 to AEM Cloud Service Migration (Alpha Program) {#cm-ide-migration}
 
 Accelerate your migration from AEM 6.5 to AEM as a Cloud Service (Java stack) by using IDE AI tooling to act on the recommendations of the [Best Practices Analyzer Report](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
-Email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com) for more information.
+Email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) for more information.
 
 #### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
 
