@@ -63,6 +63,10 @@ Get started with the Experience Modernization Console!
 * If you are modernizing your site by targeting Document Authoring, [get started here.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
 * If you are modernizing your site by targeting AEM authoring, [get started here.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
 
+## Project Documentation Skill {#project-documentation}
+
+Recognizing the time-intensive nature of project handovers, [the project documentation skill](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md) can automatically generate comprehensive documentation once authoring and development work is complete.
+
 ## Agentic Outcome Engineer (AOE) Delivery {#aoe-delivery}
 
 For complex migrations or accelerated outcomes, Adobe offers the Agentic Outcome Engineer (AOE) delivery. This is an optional service where Adobe engineers operate the Experience Modernization Agent on your behalf, combining AI automation with expert guidance to deliver production-ready results at scale. For details on AOE delivery, please see the document [AOE Delivery of the Experience Modernization Agent.](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
