@@ -71,31 +71,20 @@ To view or download dynamic renditions of images in Experience Manager Assets, f
    >
    >These renditions are available only for image assets.
 
-## Base Rendition {#dm-with-openapi-renditions}
-
+## Dynamic Media with OpenAPI capabilities renditions {#dm-with-openapi-renditions}
 ### Before you begin {#prereqs-dm-with-openapi-renditions}
 
 * You must be a licensed AEM Dynamic Media user.
 * Assets must be approved for public use to display Dynamic Media with OpenAPI capabilities renditions. For more information, see [Approve assets in Experience Manager ](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)
 * Dynamic Media with OpenAPI capabilities must be enabled on your AEM as a Cloud Service instance.
 
-### UI toggle between Scene7 and Dynamic Media with OpenAPI
-
-If both Scene7 (Dynamic Media) and Dynamic Media with OpenAPI capabilities are enabled for your repository, a toggle is available in the user interface to switch between the two.
-
-Based on the selected option:
-
-* Renditions displayed correspond to the selected mode (Scene7 or Dynamic Media with OpenAPI).
-* The **Copy URL** and **Download Rendition** actions apply to the selected rendition type.
-![download icon](/help/assets/assets/Toggle-op.png)
-
 ### View Dynamic Media with OpenAPI Capabilities renditions {#view-download-dm-with-openapi-renditions}
 
 1. Select the asset and click **Details**.
-1. Click the Dynamic Media icon available in the right pane. The Dynamic Media panel displays the Base Rendition for all asset types. 
-![download icon](/help/assets/assets/Base-Rendition.png)
+1. Click the Dynamic Media icon available in the right panel. The Dynamic Media panel displays base renditions, dynamic renditions, and Smart Crop renditions for supported asset types, as applicable.
+![download icon](/help/assets/assets/new-new1.png)
 1. Select **Base Rendition** and click **Copy URL** to copy the delivery URL of the asset or click **Download Rendition** to download the asset.
 
+If both Scene7 (Dynamic Media) and Dynamic Media with OpenAPI capabilities are enabled for the repository, a toggle option is available in the user interface to switch between the two. The renditions displayed and the generated URLs update based on the selected configuration.
 
-
-
+![toggle option](/help/assets/assets/new-new2.png)
