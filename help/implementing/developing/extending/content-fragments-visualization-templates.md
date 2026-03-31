@@ -54,7 +54,8 @@ Handlebars is a simple templating language that uses double curly braces (bracke
 | `{{{ }}}` | Outputs raw HTML (unescaped) | Field values and asset output |
 | `{{! }}` | Handlebars-only comment | Template documentation |
 
-> **Important**  
+>[!IMPORTANT]
+>
 > Use triple braces (`{{{ }}}`) for field values because values are pre-rendered HTML.
 
 ## Template context reference
@@ -351,12 +352,6 @@ Invalid names are skipped and logged.
 | Empty output | Blank render | Verify block closures and add temporary debug values |
 | Parent value unavailable in nested loop | Undefined parent variable | Use `../` or `../../` scope notation |
 
-## Additional resources
-
-* [Handlebars documentation](https://handlebarsjs.com/)
-* [Handlebars built-in helpers](https://handlebarsjs.com/guide/builtin-helpers.html)
-* [AEM Content Fragments documentation](/help/sites-cloud/administering/content-fragments/overview.md)
-
 ## Quick reference
 
 ### Context variables
@@ -421,3 +416,10 @@ Use double braces for:
 * `{{hasFields}}`
 * `{{name}}`
 * `{{@index}}`
+
+## Additional resources
+
+* [Handlebars documentation](https://handlebarsjs.com/)
+* [Handlebars built-in helpers](https://handlebarsjs.com/guide/builtin-helpers.html)
+* [AEM Content Fragments documentation](/help/sites-cloud/administering/content-fragments/overview.md)
+
