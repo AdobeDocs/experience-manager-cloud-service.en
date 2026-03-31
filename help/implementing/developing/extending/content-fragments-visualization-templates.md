@@ -95,6 +95,7 @@ The `properties` object has the same shape for the main fragment and for each re
 Examples: Template access
 
 for field HTML:
+
 ```handlebars
 {{properties.title}}, {{properties.description}}, {{{fields.description}}} 
 ```
@@ -130,7 +131,7 @@ Or from the fields map:
 
 ```handlebars
 {{{ fields.referenced_cf_field.properties.description }}}
-````
+```
 
 ## Basic field access {#basic-field-access}
 
