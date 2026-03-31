@@ -106,11 +106,11 @@ Template access examples:
 
 Each referenced fragment object includes:
 
-- `anchorId`
-- `properties`
-- `hasFields`
-- `fields`
-- `allFields`
+* `anchorId`
+* `properties`
+* `hasFields`
+* `fields`
+* `allFields`
 
 ## Basic field access
 
@@ -286,7 +286,7 @@ Error handling pattern:
 The system provides custom helpers:
 
 1. `asset` (builds `<img>` with custom attributes)
-2. `text` (builds `<span>` with custom attributes)
+1. `text` (builds `<span>` with custom attributes)
 
 ### `asset` helper
 
@@ -323,20 +323,20 @@ Examples:
 
 Valid attribute names:
 
-- Start with a letter
-- Can contain letters, digits, hyphens, underscores
-- Case-insensitive
+* Start with a letter
+* Can contain letters, digits, hyphens, underscores
+* Case-insensitive
 
 Invalid names are skipped and logged.
 
 ## Best practices
 
 1. Always use triple braces for field and helper output.
-2. Guard nested references with `#if` checks.
-3. Prefer direct field access (`fields.title`) over generic loops when possible.
-4. Use semantic HTML (`article`, `header`, `main`, `time`, `address`).
-5. Include fallbacks for missing optional data.
-6. Test with full, partial, empty, and deeply nested data.
+1. Guard nested references with `#if` checks.
+1. Prefer direct field access (`fields.title`) over generic loops when possible.
+1. Use semantic HTML (`article`, `header`, `main`, `time`, `address`).
+1. Include fallbacks for missing optional data.
+1. Test with full, partial, empty, and deeply nested data.
 
 ## Troubleshooting
 
@@ -351,9 +351,9 @@ Invalid names are skipped and logged.
 
 ## Additional resources
 
-- [Handlebars documentation](https://handlebarsjs.com/)
-- [Handlebars built-in helpers](https://handlebarsjs.com/guide/builtin-helpers.html)
-- [AEM Content Fragments documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
+* [Handlebars documentation](https://handlebarsjs.com/)
+* [Handlebars built-in helpers](https://handlebarsjs.com/guide/builtin-helpers.html)
+* [AEM Content Fragments documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
 
 ## Quick reference
 
@@ -408,14 +408,14 @@ Invalid names are skipped and logged.
 
 Use triple braces for:
 
-- `{{{fields.description}}}`
-- `{{{fields.heroImage}}}`
-- `{{{asset fields.image class="x"}}}`
-- `{{{text fields.title class="x"}}}`
+* `{{{fields.description}}}`
+* `{{{fields.heroImage}}}`
+* `{{{asset fields.image class="x"}}}`
+* `{{{text fields.title class="x"}}}`
 
 Use double braces for:
 
-- `{{main_cf_title}}`
-- `{{hasFields}}`
-- `{{name}}`
-- `{{@index}}`
+* `{{main_cf_title}}`
+* `{{hasFields}}`
+* `{{name}}`
+* `{{@index}}`
