@@ -33,11 +33,9 @@ To understand and work with the technologies covered here you should have:
 
 Handlebars is a simple templating language that uses double curly braces (brackets) `{{ }}` to insert dynamic content into HTML.
 
-### Basic Syntax {#basic-syntax}
+### Basic syntax
 
-The basic syntax that you will need is:
-
-```html
+```handlebars
 <!-- Output a variable (HTML-escaped) -->
 {{variableName}}
 
@@ -48,103 +46,376 @@ The basic syntax that you will need is:
 {{! This is a comment }}
 ```
 
-### Key Concepts {#key-concepts}
+### Key concepts
 
-| Basic Syntax | Description | When to use |
-|--- |--- |--- |
-| `{{ }}` | Escapes HTML special characters — safe for plain text | Properties, titles, metadata values |
-| `{{! }}` | Handlebars comment — not rendered in output | Template documentation and section labels |
-| `{{{ }}}` | Outputs raw HTML (unescaped) | All field values (they contain pre-rendered HTML) |
+| Syntax | Description | When to use |
+| --- | --- | --- |
+| `{{ }}` | Escapes HTML special characters | Metadata, labels, booleans |
+| `{{{ }}}` | Outputs raw HTML (unescaped) | Field values and asset output |
+| `{{! }}` | Handlebars-only comment | Template documentation |
 
->[!IMPORTANT]
->
->Use triple braces `{{{ }}}` for all field values as they contain pre-rendered HTML. Using double braces displays raw HTML tags as text.
+> **Important**  
+> Use triple braces (`{{{ }}}`) for field values because values are pre-rendered HTML.
 
-## The Generic Template {#the-generic-template}
+## Template context reference
 
-The **Generic Template**:
+### Main content fragment variables
 
-* displays the fields of your fragment in table form; name and content
-* shows the content of referenced fragments in separate tables, with the same format
+| Variable | Type | Description |
+| --- | --- | --- |
+| `properties` | Map | Fragment metadata |
+| `fields` | Map | Direct access to field values by name |
+| `allFields` | List | Array of `{name, value}` for iteration |
+| `hasFields` | Boolean | `true` if the fragment has fields |
 
-![Preview Fragment with Generic HTML Template](/help/sites-cloud/administering/content-fragments/assets/cf-preview-html-template-referenced-fragment.png)
+### Properties structure (main and referenced CFs)
 
-The **Generic Template** has no knowledge of the fragment, it simply loops through all fields, and all referenced fragments to display the contents.
+| Property | Type | Description |
+| --- | --- | --- |
+| `id` | String | UUID of fragment |
+| `title` | String | Fragment title |
+| `description` | String | Fragment description |
+| `path` | String | JCR path |
+| `hasDescription` | Boolean | Description availability flag |
+| `createdDate` | String | ISO-8601 created date |
+| `modifiedDate` | String | ISO-8601 modified date |
+| `publishedDate` | String | ISO-8601 published date |
+| `status` | String | Fragment status (for example `DRAFT`) |
+| `model` | Map | Model metadata (id, path, name, technicalName, description) |
+| `validationStatus` | List | Entries like `{property, message}` |
+| `previewReplicationStatus` | String | Preview replication status |
+| `tags` | List | Tag metadata |
+| `fieldTags` | List | Field-level tag metadata |
 
-```html
+Template access examples:
+
+```handlebars
+{{properties.title}}
+{{properties.description}}
+{{{fields.description}}}
+```
+
+### Referenced content fragments
+
+| Variable | Type | Description |
+| --- | --- | --- |
+| `hasReferencedFragments` | Boolean | `true` when references exist |
+| `referencedFragments` | List | Array of referenced fragment objects |
+| `referencesError` | Boolean | `true` if loading references failed |
+| `referencesErrorMessage` | String | Error details |
+
+Each referenced fragment object includes:
+
+- `anchorId`
+- `properties`
+- `hasFields`
+- `fields`
+- `allFields`
+
+## Basic field access
+
+### Direct field access (recommended)
+
+```handlebars
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>{{main_cf_title}}</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; }
-    table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-    th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-    th { background-color: #f4f4f4; font-weight: bold; }
-    .ref-section { background: #f9f9f9; padding: 20px; margin: 20px 0; border-radius: 8px; }
-  </style>
 </head>
 <body>
-  <header>
-    <h1>{{main_cf_title}}</h1>
-    {{#if hasMainDescription}}<p>{{main_cf_description}}</p>{{/if}}
-    <p><small>Path: {{main_cf_path}}</small></p>
-  </header>
-
-  {{#if hasFields}}
-  <section>
-    <h2>Fields</h2>
-    <table>
-      <thead>
-        <tr><th>Field Name</th><th>Field Value</th></tr>
-      </thead>
-      <tbody>
-        {{#each allFields}}
-        <tr>
-          <td><strong>{{name}}</strong></td>
-          <td>{{{value}}}</td>
-        </tr>
-        {{/each}}
-      </tbody>
-    </table>
-  </section>
-  {{/if}}
-
-  {{#if hasReferencedFragments}}
-  <section class="ref-section">
-    <h2>Referenced Content Fragments</h2>
-    {{#each referencedFragments}}
-    <article id="{{anchorId}}" style="margin-bottom: 30px;">
-      <h3>{{title}}</h3>
-      {{#if hasDescription}}<p>{{description}}</p>{{/if}}
-      <p><small>Path: {{path}}</small></p>
-      {{#if hasFields}}
-      <table>
-        <thead>
-          <tr><th>Field Name</th><th>Field Value</th></tr>
-        </thead>
-        <tbody>
-          {{#each allFields}}
-          <tr>
-            <td><strong>{{name}}</strong></td>
-            <td>{{{value}}}</td>
-          </tr>
-          {{/each}}
-        </tbody>
-      </table>
-      {{/if}}
-    </article>
-    {{/each}}
-  </section>
-  {{/if}}
-
-  {{#if referencesError}}
-  <div style="background: #ffebee; border-left: 4px solid #f44336; padding: 15px; margin: 20px 0;">
-    <strong>Error Loading Referenced Fragments</strong>
-    {{#if referencesErrorMessage}}<p>{{referencesErrorMessage}}</p>{{/if}}
-  </div>
-  {{/if}}
+  <article>
+    <h1>{{{fields.title}}}</h1>
+    <p class="subtitle">{{{fields.subtitle}}}</p>
+    <div class="content">{{{fields.description}}}</div>
+    <div class="image">{{{fields.primaryImage}}}</div>
+  </article>
 </body>
 </html>
 ```
+
+### Iterate through all fields
+
+```handlebars
+<table>
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Field Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each allFields}}
+    <tr>
+      <td>{{name}}</td>
+      <td>{{{value}}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+```
+
+## Nested content fragments
+
+### Single-level nesting
+
+```handlebars
+<p>Name: {{{fields.author.name}}}</p>
+<p>Email: {{{fields.author.email}}}</p>
+<p>Bio: {{{fields.author.bio}}}</p>
+```
+
+Pattern: `fields.referenceFieldName.nestedFieldName`
+
+### Multi-level nesting
+
+```handlebars
+<p>Organization: {{{fields.author.organization.name}}}</p>
+<p>Website: {{{fields.author.organization.website}}}</p>
+<p>City: {{{fields.author.organization.address.city}}}</p>
+```
+
+Pattern: `fields.level1.level2.level3.fieldName` (unlimited depth).
+
+### API requirement: hydration
+
+To resolve nested references, include hydration in the preview call:
+
+```http
+GET /adobe/sites/cf/fragments/{id}/preview?hydration=%7B%22enabled%22%3Atrue%2C%22maxDepth%22%3A2%7D
+```
+
+| `maxDepth` | Loaded data |
+| --- | --- |
+| `1` | Main fragment + direct references |
+| `2` | Main fragment + direct references + their references |
+| `3+` | Continue up to 10 levels |
+
+## Multi-valued fields
+
+### Multi-valued text fields
+
+```handlebars
+{{#each fields.tags}}
+<span class="tag">{{{this}}}</span>
+{{/each}}
+```
+
+For index access, use dot-bracket syntax:
+
+```handlebars
+{{{fields.tags.[0]}}}
+```
+
+### Multi-valued content fragment references
+
+```handlebars
+{{#each fields.authors}}
+<div class="author">
+  <h4>{{{this.name}}}</h4>
+  <p>Email: {{{this.email}}}</p>
+  {{#if this.bio}}<p>{{{this.bio}}}</p>{{/if}}
+</div>
+{{/each}}
+```
+
+### Multi-valued assets
+
+```handlebars
+{{#each fields.gallery}}
+<div class="image">{{{this}}}</div>
+{{/each}}
+```
+
+## Loops and iteration
+
+### `each` examples
+
+```handlebars
+{{#each fields.tags}}
+<span class="tag">{{{this}}}</span>
+{{else}}
+<p>No tags available.</p>
+{{/each}}
+```
+
+### Special loop variables
+
+```handlebars
+{{#each fields.items}}
+  {{@index}}   {{@number}}   {{@first}}   {{@last}}   {{{this}}}
+{{/each}}
+```
+
+## Conditional rendering
+
+```handlebars
+{{#if fields.author}}
+  <p>By {{{fields.author.name}}}</p>
+{{/if}}
+
+{{#unless fields.hideAuthor}}
+  <div class="author">{{{fields.author.name}}}</div>
+{{/unless}}
+```
+
+Error handling pattern:
+
+```handlebars
+{{#if referencesError}}
+<div class="error-message">
+  <strong>Error Loading Referenced Fragments</strong>
+  {{#if referencesErrorMessage}}
+  <p>{{referencesErrorMessage}}</p>
+  {{/if}}
+</div>
+{{/if}}
+```
+
+## Built-in Handlebars helpers
+
+| Helper | Description |
+| --- | --- |
+| `{{#if condition}}` | Renders when condition is truthy |
+| `{{#unless condition}}` | Renders when condition is falsy |
+| `{{#each array}}` | Iterates array/object values |
+| `{{#with object}}` | Creates a nested scope |
+| `{{lookup this "key"}}` | Dynamic property lookup |
+
+## Custom template helpers
+
+The system provides custom helpers:
+
+1. `asset` (builds `<img>` with custom attributes)
+2. `text` (builds `<span>` with custom attributes)
+
+### `asset` helper
+
+Syntax:
+
+```handlebars
+{{{asset fieldValue attribute1="value1" attribute2="value2"}}}
+```
+
+Examples:
+
+```handlebars
+{{{asset fields.heroImage class="hero-image"}}}
+{{{asset fields.logo class="brand-logo" id="main-logo"}}}
+{{{asset fields.thumbnail class="thumb" data-category="product"}}}
+```
+
+### `text` helper
+
+Syntax:
+
+```handlebars
+{{{text fieldValue attribute1="value1" attribute2="value2"}}}
+```
+
+Examples:
+
+```handlebars
+{{{text fields.title class="article-title"}}}
+{{{text fields.price class="price-tag" id="product-price"}}}
+```
+
+### Attribute validation notes
+
+Valid attribute names:
+
+- Start with a letter
+- Can contain letters, digits, hyphens, underscores
+- Case-insensitive
+
+Invalid names are skipped and logged.
+
+## Best practices
+
+1. Always use triple braces for field and helper output.
+2. Guard nested references with `#if` checks.
+3. Prefer direct field access (`fields.title`) over generic loops when possible.
+4. Use semantic HTML (`article`, `header`, `main`, `time`, `address`).
+5. Include fallbacks for missing optional data.
+6. Test with full, partial, empty, and deeply nested data.
+
+## Troubleshooting
+
+| Problem | Symptom | Solution |
+| --- | --- | --- |
+| Field shows HTML tags as text | `<p>...</p>` appears literally | Use triple braces: `{{{fields.description}}}` |
+| Nested field appears empty | `{{{fields.author.name}}}` blank | Enable hydration and verify `maxDepth` and field names |
+| Array index fails | `{{{fields.tags[0]}}}` empty | Use `{{{fields.tags.[0]}}}` |
+| References missing | `hasReferencedFragments` false | Enable `hydration` and check `referencesError` |
+| Empty output | Blank render | Verify block closures and add temporary debug values |
+| Parent value unavailable in nested loop | Undefined parent variable | Use `../` or `../../` scope notation |
+
+## Additional resources
+
+- [Handlebars documentation](https://handlebarsjs.com/)
+- [Handlebars built-in helpers](https://handlebarsjs.com/guide/builtin-helpers.html)
+- [AEM Content Fragments documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
+
+## Quick reference
+
+### Context variables
+
+```handlebars
+{{main_cf_title}}
+{{main_cf_description}}
+{{main_cf_path}}
+{{hasMainDescription}}
+{{hasFields}}
+{{hasReferencedFragments}}
+{{referencesError}}
+{{referencesErrorMessage}}
+```
+
+### Field access
+
+```handlebars
+{{{fields.fieldName}}}
+{{{fields.author.name}}}
+{{{fields.author.org.address.city}}}
+{{{fields.tags.[0]}}}
+{{#each fields.tags}}...{{/each}}
+{{{fields.authors.[0].name}}}
+```
+
+### Control flow
+
+```handlebars
+{{#if condition}}...{{/if}}
+{{#if condition}}...{{else}}...{{/if}}
+{{#unless condition}}...{{/unless}}
+{{#each array}}...{{/each}}
+{{#each array}}...{{else}}...{{/each}}
+{{#with object}}...{{/with}}
+```
+
+### Loop variables
+
+```handlebars
+{{@index}}
+{{@number}}
+{{@first}}
+{{@last}}
+{{@key}}
+{{this}}
+{{../parent}}
+```
+
+### Triple braces requirement
+
+Use triple braces for:
+
+- `{{{fields.description}}}`
+- `{{{fields.heroImage}}}`
+- `{{{asset fields.image class="x"}}}`
+- `{{{text fields.title class="x"}}}`
+
+Use double braces for:
+
+- `{{main_cf_title}}`
+- `{{hasFields}}`
+- `{{name}}`
+- `{{@index}}`
