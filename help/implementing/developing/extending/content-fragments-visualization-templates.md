@@ -49,7 +49,7 @@ Handlebars is a simple templating language that uses double curly braces (bracke
 ### Key concepts
 
 | Syntax | Description | When to use |
-| --- | --- | --- |
+|--- |--- |--- |
 | `{{ }}` | Escapes HTML special characters | Metadata, labels, booleans |
 | `{{{ }}}` | Outputs raw HTML (unescaped) | Field values and asset output |
 | `{{! }}` | Handlebars-only comment | Template documentation |
@@ -59,10 +59,12 @@ Handlebars is a simple templating language that uses double curly braces (bracke
 
 ## Template context reference
 
+When your template is rendered, it receives a context object containing all the data about your content fragment.
+
 ### Main content fragment variables
 
 | Variable | Type | Description |
-| --- | --- | --- |
+|--- |--- |--- |
 | `properties` | Map | Fragment metadata |
 | `fields` | Map | Direct access to field values by name |
 | `allFields` | List | Array of `{name, value}` for iteration |
@@ -71,7 +73,7 @@ Handlebars is a simple templating language that uses double curly braces (bracke
 ### Properties structure (main and referenced CFs)
 
 | Property | Type | Description |
-| --- | --- | --- |
+|--- |--- |--- |
 | `id` | String | UUID of fragment |
 | `title` | String | Fragment title |
 | `description` | String | Fragment description |
@@ -98,7 +100,7 @@ Template access examples:
 ### Referenced content fragments
 
 | Variable | Type | Description |
-| --- | --- | --- |
+|--- |--- |--- |
 | `hasReferencedFragments` | Boolean | `true` when references exist |
 | `referencedFragments` | List | Array of referenced fragment objects |
 | `referencesError` | Boolean | `true` if loading references failed |
@@ -185,7 +187,7 @@ GET /adobe/sites/cf/fragments/{id}/preview?hydration=%7B%22enabled%22%3Atrue%2C%
 ```
 
 | `maxDepth` | Loaded data |
-| --- | --- |
+|--- |--- |
 | `1` | Main fragment + direct references |
 | `2` | Main fragment + direct references + their references |
 | `3+` | Continue up to 10 levels |
@@ -274,7 +276,7 @@ Error handling pattern:
 ## Built-in Handlebars helpers
 
 | Helper | Description |
-| --- | --- |
+|--- |--- |
 | `{{#if condition}}` | Renders when condition is truthy |
 | `{{#unless condition}}` | Renders when condition is falsy |
 | `{{#each array}}` | Iterates array/object values |
@@ -341,7 +343,7 @@ Invalid names are skipped and logged.
 ## Troubleshooting
 
 | Problem | Symptom | Solution |
-| --- | --- | --- |
+|--- |--- |--- |
 | Field shows HTML tags as text | `<p>...</p>` appears literally | Use triple braces: `{{{fields.description}}}` |
 | Nested field appears empty | `{{{fields.author.name}}}` blank | Enable hydration and verify `maxDepth` and field names |
 | Array index fails | `{{{fields.tags[0]}}}` empty | Use `{{{fields.tags.[0]}}}` |
@@ -353,7 +355,7 @@ Invalid names are skipped and logged.
 
 * [Handlebars documentation](https://handlebarsjs.com/)
 * [Handlebars built-in helpers](https://handlebarsjs.com/guide/builtin-helpers.html)
-* [AEM Content Fragments documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
+* [AEM Content Fragments documentation](/help/sites-cloud/administering/content-fragments/overview.md)
 
 ## Quick reference
 
