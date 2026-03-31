@@ -151,9 +151,11 @@ When pushing changes, you must have first staged changes to include in the push.
 
 ## Settings View {#settings-view}
 
-The settings view allows you to manage basic settings of the console.
+The settings view allows you to manage basic settings of the console and is broken up into the following sections.
 
 ![Settings view](assets/settings-view.png)
+
+If you make a change to any value in any section, click **Save** to save those changes to the individual section.
 
 * **Project** allows you to view and edit project settings such as customizing the library URL.
   * **Library URL** - This URL points to a library.json file that defines available blocks, their variations, and example content.
