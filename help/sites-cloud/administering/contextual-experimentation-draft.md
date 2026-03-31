@@ -122,7 +122,7 @@ After you are done, click **Save** — this will save your experiment as a Draft
 
 ### Activate the Experiment
 
-Once you are ready, click **Activate** to launch the experiment. The test will begin collecting Operational Telemetry (RUM) data (see more details in the chapters below).
+Once you are ready, click **Activate** to launch the experiment and publish the experiment page. The test will begin collecting Operational Telemetry (RUM) data (see more details in the chapters below).
 
 ![Activate](/help/sites-cloud/administering/assets/activate.png)
 
