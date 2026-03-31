@@ -118,7 +118,7 @@ In the experimentation rail you can set a start and end date (both optional). If
 
 After you are done, click **Save** — this will save your experiment as a Draft. Note that the experiment is not active yet. You can return to the overview by clicking **Back to Experiment** or you can stay in the Edit interface to activate experiment.
 
-![Draft](/help/sites-cloud/administering/assets/draft-save.png)
+<!--![Draft](/help/sites-cloud/administering/assets/draft-save.png)-->
 
 ### Activate the Experiment
 
