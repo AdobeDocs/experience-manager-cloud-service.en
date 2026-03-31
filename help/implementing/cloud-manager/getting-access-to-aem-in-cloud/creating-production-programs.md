@@ -99,7 +99,7 @@ Depending on what entitlements are available to your organization, you may have 
 
 If you have the necessary entitlements, the **Security** tab is shown as the first tab in the **`Set up for production`** dialog box.
 
-![Security options](/assets/create-production-program-security.png)
+![Security options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security.png)
 
 The **Security** tab provides the options to activate **HIPAA**, or **WAF-DDOS Protection**, or both, for your production program.
 
