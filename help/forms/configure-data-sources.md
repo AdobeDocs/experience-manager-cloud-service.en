@@ -90,7 +90,7 @@ You can configure relational databases using [!DNL Experience Manager] Web Conso
 }
 ```
 
-> ![NOTE]
+>[!NOTE]
 >
 > Replace placeholders like `<application folder>`, `<hostname>`, `<database>`, `<your-db-username>`, and `<your-db-password>` with actual values.
 
