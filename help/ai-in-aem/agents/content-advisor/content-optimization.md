@@ -2,7 +2,7 @@
 title: Content Optimization Agent
 description: Learn how to use the content optimization agent to transform how users refine and adapt assets by applying natural language instructions to create channel-ready variations.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 896fc25b-7f60-47b8-9264-2ef6b85d954c
 ---
 

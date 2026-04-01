@@ -4,7 +4,7 @@ description: In an SPA the page component does not provide the HTML elements of 
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 feature: Developing
 role: Admin, Developer
-index: no
+index: false
 ---
 
 # SPA Page Component {#spa-page-component}

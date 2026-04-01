@@ -6,7 +6,7 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 hide: no
 hidefromtoc: no
-index: yes
+index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
 ---
 # Split stage-only and production-only pipelines {#stage-prod-only}

@@ -3,7 +3,7 @@ title: Forms Experience Builder
 description: Craft powerful forms faster using Form Fragments
 feature: Edge Delivery Services
 hide: yes
-index: no
+index: false
 hidefromtoc: yes
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
