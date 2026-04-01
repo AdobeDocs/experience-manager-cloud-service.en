@@ -573,8 +573,6 @@ Creates a new scope for nested objects to reduce repetitive path prefixes:
 {{/with}}
 ```
 
-<!-- TBC -->
-
 ## Advance Patterns {#advanced-patterns}
 
 ### Accessing Parent Context in Nested Loops {#accessing-parent-context-in-nested-loops}
@@ -940,23 +938,53 @@ GET /adobe/sites/cf/fragments/{id}/preview?hydration=%7B%22enabled%22%3Atrue%2C%
 
 | Problem | Symptom | Solution |
 |--- |--- |--- |
-| Field shows HTML tags as text | `<p>...</p>` appears literally | Use triple braces: `{{{fields.description}}}` |
-| Nested field appears empty | `{{{fields.author.name}}}` blank | Enable hydration and verify `maxDepth` and field names |
-| Array index fails | `{{{fields.tags[0]}}}` empty | Use `{{{fields.tags.[0]}}}` |
-| References missing | `hasReferencedFragments` false | Enable `hydration` and check `referencesError` |
-| Empty output | Blank render | Verify block closures and add temporary debug values |
-| Parent value unavailable in nested loop | Undefined parent variable | Use `../` or `../../` scope notation |
+| Field shows HTML tags as text | `<p>Hello World</p>` displayed literally | Use triple braces: `{{{fields.description}}}` |
+| Nested CF fields are empty or show [object Object] | `{{{fields.author.name}}}` is blank | Enable hydration in the API call; verify field name spelling; check that `maxDepth` is deep enough |
+| Multi-valued field shows only the first item | Array with five items renders only one | Use `{{#each fields.tags}}` to iterate all items |
+| Array index access not working | `{{{fields.tags[0]}}}` renders empty | Use dot-bracket syntax: `{{{fields.tags.[0]}}}` |
+| Referenced fragments not appearing | `hasReferencedFragments` is always false | Enable hydration: `?hydration=%7B%22enabled%22%3Atrue%7D;` also check `{{#if referencesError}}` |
+| Template renders nothing | Empty page or blank output | Check for unclosed `{{#if}}` or `{{#each}}` blocks; add diagnostic output: `<pre>hasFields: {{hasFields}} | title: {{main_cf_title}}</pre>` |
+| Comments appear in the rendered page | HTML comment text visible to end users | Use Handlebars comments `{{! comment }}` instead of HTML `<!-- comment -->` |
+| Conditional always evaluates to true | `{{#if fields.enabled}}´ is always truthy | Note: the string `"false"` is truthy in Handlebars. Only actual `false`, `null`, `undefined`, `0`, `""`, and `[]` are falsy. |
+| Special characters rendering as entities | `&lt;`, `&amp;` shown instead of `<`, `&` | Use triple braces for pre-rendered HTML content: `{{{fields.content}}}` |
+| Cannot access outer loop variable from inner loop | Variable from parent `#each` is undefined | Use `../` for parent scope: `{{{../name}}}`; use `../../` for grandparent |
+] Empty list not showing fallback message | Multi-valued field with zero items shows nothing | Use `{{else}}` inside `{{#each}}`: `{{#each fields.tags}}...{{else}}<p>No tags</p>{{/each}}` |
+
+### Working with Assets {#working-with-assets}
+
+Assets referenced from Content Fragments are pre-rendered as HTML by AEM. Therefore, triple braces are mandatory for all asset references.
+
+| Asset type | Rendered as |
+|--- |--- |
+| Images | `<img src="..." alt="...">` |
+| Videos | `<video>` element |
+| Documents | `<a href="...">` link |
+
+Remember:
+
+* Always use triple braces for asset fields. 
+  Using double braces will escape the generated HTML tag and display it as raw text rather than rendering the image, video, or link.
+
+### Asset field usage {#asset-field-usage}
 
 ```handlebars
+<!-- CORRECT - triple braces render the image -->
+{{{fields.heroImage}}}
+<!-- Output: <img src="path/to/image.jpg" alt="Hero"> -->
 
+<!-- WRONG - double braces escape the tag, showing it as text -->
+{{fields.heroImage}}
+<!-- Output: &lt;img src="path/to/image.jpg" alt="Hero"&gt; -->
 ``` 
 
 ## Custom template helpers {#customer-template-helpers}
 
-The system provides custom helpers:
+The system provides custom Handlebars helpers for generating HTML elements with custom HTML attributes. These helpers give you control over the generated markup, while handling the complexity of extracting source URLs from pre-rendered content.
 
-1. `asset` (builds `<img>` with custom attributes)
-1. `text` (builds `<span>` with custom attributes)
+Available helpers:
+
+1. `asset` - Generates `<img>` tags with custom attributes
+1. `text` - Generates `<span>` tags wrapping text content with custom attributes
 
 ### `asset` helper {#asset-helper}
 
@@ -966,15 +994,78 @@ Syntax:
 {{{asset fieldValue attribute1="value1" attribute2="value2"}}}
 ```
 
-Examples:
+Remember:
+
+* Use triple braces `{{{ }}}` with the asset helper, not double braces!
+
+#### Four basic examples {#four-basic-examples}
 
 ```handlebars
+<!-- Add a CSS class to an image -->
 {{{asset fields.heroImage class="hero-image"}}}
+<!-- Output: <img src="..." alt="..." class="hero-image"> -->
+
+<!-- Add multiple CSS classes -->
+{{{asset fields.productImage class="product-img responsive shadow"}}}
+
+<!-- Add id and class -->
 {{{asset fields.logo class="brand-logo" id="main-logo"}}}
-{{{asset fields.thumbnail class="thumb" data-category="product"}}}
+
+<!-- Add data attributes -->
+{{{asset fields.thumbnail class="thumb" data-category="product" data-id="123"}}}
+```
+
+#### Supported Attributes {#supported-attributes}
+
+You can add any valid HTML attribute:
+
+| Attribute | Example |
+|--- |--- |
+| `class` | `class="my-class another-class"` |
+| `id` | `id="unique-id"` |
+| `alt` | `alt="Custom alt text" (overrides existing alt)` |
+| `data-*` | `data-index="1" data-type="hero"` |
+| `aria-*` | `aria-label="Description" aria-hidden="true"` |
+| `width` | `width="300"` |
+| `height` | `height="200"` |
+| `loading` | `loading="lazy"` |
+| `style` | `style="border-radius: 8px;"` |
+
+#### Override Alt Text {#override-alt-text}
+
+The `alt` attribute from the original image can be overridden:
+
+```handlebars
+{{{asset fields.photo alt="Custom description for accessibility"}}}
+```
+
+#### Complex example {#complex-example}
+
+```handlebars
+<article class="blog-post">
+<header>
+{{{asset fields.featuredImage 
+class="featured-image responsive" 
+id="post-hero"
+loading="lazy"
+data-post-id="12345"}}}
+</header>
+</article>
+```
+
+#### Using with loops {#using-with-loops}
+
+Asset helper in loops:
+
+```handlebars
+{{#each fields.galleryImages}}
+{{{asset this class="gallery-item" data-index=@index}}}
+{{/each}}
 ```
 
 ### `text` helper {#text-helper}
+
+The text helper generates a `<span>` tag wrapping text content with custom CSS classes and HTML attributes. Useful for styling individual text fields.
 
 Syntax:
 
@@ -982,87 +1073,185 @@ Syntax:
 {{{text fieldValue attribute1="value1" attribute2="value2"}}}
 ```
 
-Examples:
+Remember:
+
+* Use triple braces `{{{ }}}` with the text helper, not double braces!
+
+#### Three Basic examples {#three-basic-examples}
 
 ```handlebars
+<!-- Add a CSS class to text -->
 {{{text fields.title class="article-title"}}}
-{{{text fields.price class="price-tag" id="product-price"}}}
+<!-- Output: <span class="article-title">The Title Text</span> -->
+
+<!-- Add multiple attributes -->
+{{{text fields.price class="price-tag" id="product-price" data-currency="USD"}}}
+
+<!-- Style inline text -->
+{{{text fields.highlightedText class="highlighted" style="background: yellow;"}}}
 ```
 
-### Attribute validation notes {#attribute-validation-notes}
+#### Common Use Cases {#common-use-cases}
+
+```handlebars
+<!-- Styling article metadata -->
+<article>
+<header>
+{{{text fields.category class="category-badge"}}}
+<h1>{{{fields.title}}}</h1>
+{{{text fields.author class="byline"}}}
+{{{text fields.publishDate class="date"}}}
+</header>
+</article>
+
+<!-- Creating styled labels -->
+<div class="product-card">
+{{{text fields.productName class="product-name"}}}
+{{{text fields.brand class="brand-label" data-brand-id="abc"}}}
+{{{text fields.price class="price" id="main-price"}}}
+</div>
+
+<!-- Accessibility enhancements -->
+{{{text fields.importantNote class="alert" role="alert" aria-live="polite"}}}
+```
+
+#### With loops {#with-loops}
+
+```handlebars
+{{#each fields.tags}}
+{{{text this class="tag-badge"}}}
+{{/each}}
+```
+
+### Helpers - Attribute validation {#helpers-attribute-validation}
+
+Both helpers validate attribute names before including them in the output.
 
 Valid attribute names:
 
-* Start with a letter
-* Can contain letters, digits, hyphens, underscores
+* Must start with a letter (a-z, A-Z)
+* Can contain letters, digits, hyphens, and underscores
 * Case-insensitive
+* Valid:
+  * `class`, `id`, `data-value`, `aria-label`, `my_attr`, `dataIndex1`
+* Invalid:
+  * `123-attr`, `-class`, `@special`, `$money`
 
-Invalid names are skipped and logged.
+Invalid attribute names are silently skipped with a warning in the logs:
+
+```handlebars
+{{{asset fields.image class="valid" 123-invalid="skipped" id="also-valid"}}}
+<!-- Output: <img src="..." alt="..." class="valid" id="also-valid"> -->
+<!-- 123-invalid is skipped because it starts with a number -->
+```
+
+Remember:
+
+* Check server logs for "Blocked invalid attribute name format" warnings.
+
+## Comparing direct output to helpers {#comparing-direct-output-to-helpers}
+
+When to ise direct output `{{{fields.xxx}}}`:
+
+* You do not need custom styling
+* You want the default output as-is
+* The field contains complex HTML that you do not want to modify
+
+When to use helpers:
+
+* You need to add CSS classes for styling
+* You need to add custom HTML attributes (`data-*`, `aria-*`, and others)
+* You want consistent, controlled HTML structure
+
+Comparison:
+
+```handlebars
+<!-- Direct output - uses whatever HTML the system generates -->
+{{{fields.heroImage}}}
+<!-- Output: <img src="/path/image.jpg" alt="Hero Image"> -->
+
+<!-- With asset helper - full control over attributes -->
+{{{asset fields.heroImage class="hero responsive" id="main-hero" loading="lazy"}}}
+<!-- Output: <img src="/path/image.jpg" alt="Hero Image" class="hero responsive" id="main-hero" loading="lazy"> -->
+```
 
 ## Quick reference {#quick-reference}
 
 ### Context variables {#context-variables}
 
 ```handlebars
-{{main_cf_title}}
-{{main_cf_description}}
-{{main_cf_path}}
-{{hasMainDescription}}
-{{hasFields}}
-{{hasReferencedFragments}}
-{{referencesError}}
-{{referencesErrorMessage}}
+{{main_cf_title}}             <!-- Main fragment title -->
+{{main_cf_description}}       <!-- Main fragment description -->
+{{main_cf_path}}              <!-- Main fragment JCR path -->
+{{hasMainDescription}}        <!-- Boolean -->
+{{hasFields}}                 <!-- Boolean -->
+{{hasReferencedFragments}}    <!-- Boolean -->
+{{referencesError}}           <!-- Boolean -->
+{{referencesErrorMessage}}    <!-- String or null -->
 ```
 
-### Field access {#field-variables}
+### Field access {#field-access}
 
 ```handlebars
-{{{fields.fieldName}}}
-{{{fields.author.name}}}
-{{{fields.author.org.address.city}}}
-{{{fields.tags.[0]}}}
-{{#each fields.tags}}...{{/each}}
-{{{fields.authors.[0].name}}}
+{{{fields.fieldName}}}                    <!-- Direct field -->
+{{{fields.author.name}}}                  <!-- Nested CF field -->
+{{{fields.author.org.address.city}}}      <!-- Multi-level nesting -->
+{{{fields.tags.[0]}}}                     <!-- Array by index -->
+{{#each fields.tags}}...{{/each}}         <!-- Array iteration -->
+{{{fields.authors.[0].name}}}             <!-- Multi-valued CF reference -->
 ```
 
 ### Control flow {#control-flow}
 
 ```handlebars
-{{#if condition}}...{{/if}}
-{{#if condition}}...{{else}}...{{/if}}
-{{#unless condition}}...{{/unless}}
-{{#each array}}...{{/each}}
-{{#each array}}...{{else}}...{{/each}}
-{{#with object}}...{{/with}}
+{{#if condition}}...{{/if}}                <!-- Conditional -->
+{{#if condition}}...{{else}}...{{/if}}    <!-- If/else -->
+{{#unless condition}}...{{/unless}}       <!-- Negative conditional -->
+{{#each array}}...{{/each}}               <!-- Iteration -->
+{{#each array}}...{{else}}...{{/each}}    <!-- Iteration with fallback -->
+{{#with object}}...{{/with}}              <!-- Change scope -->
 ```
 
 ### Loop variables {#loop-variables}
 
 ```handlebars
-{{@index}}
-{{@number}}
-{{@first}}
-{{@last}}
-{{@key}}
-{{this}}
-{{../parent}}
+{{@index}}        <!-- 0-based index -->
+{{@number}}       <!-- 1-based index -->
+{{@first}}        <!-- true for first item -->
+{{@last}}         <!-- true for last item -->
+{{@key}}          <!-- Object property name -->
+{{this}}          <!-- Current item -->
+{{../parent}}     <!-- Access parent scope -->
+```
+
+### Custom template helpers {#custom-template-helpers}
+
+```handlebars
+{{{asset fields.image class="css-class"}}}                  <!-- Image with class -->
+{{{asset fields.image class="c1" id="my-id"}}}            <!-- Image with multiple attrs -->
+{{{asset fields.image alt="Custom alt text"}}}             <!-- Override alt text -->
+{{{asset fields.image loading="lazy" data-x="val"}}}      <!-- Custom attributes -->
+
+{{{text fields.title class="title-class"}}}                <!-- Span with class -->
+{{{text fields.price class="price" id="p1"}}}              <!-- Span with multiple attrs -->
+{{{text this class="item" data-index=@index}}}             <!-- In loops -->
 ```
 
 ### Triple braces requirement {#triple-braces-requirement}
 
-Use triple braces for:
+**Always** use triple braces `{{{ }}}` for:
 
-* `{{{fields.description}}}`
-* `{{{fields.heroImage}}}`
-* `{{{asset fields.image class="x"}}}`
-* `{{{text fields.title class="x"}}}`
+* Field values: `{{{fields.description}}}`
+* Asset fields: `{{{fields.heroImage}}}`
+* Asset helper: `{{{asset fields.image class="x"}}}`
+* Text helper: `{{{text fields.title class="x"}}}`
 
-Use double braces for:
+**Only** use double braces `{{ }} ` for:
 
-* `{{main_cf_title}}`
-* `{{hasFields}}`
-* `{{name}}`
-* `{{@index}}`
+* Metadata: `{{main_cf_title}}`
+* Booleans: `{{hasFields}}`
+* Field names: `{{name}}`
+* Loop variables: `{{@index}}`
 
 ## Additional resources {#additional-resources}
 
