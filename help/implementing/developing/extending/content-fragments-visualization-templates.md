@@ -943,12 +943,12 @@ GET /adobe/sites/cf/fragments/{id}/preview?hydration=%7B%22enabled%22%3Atrue%2C%
 | Multi-valued field shows only the first item | Array with five items renders only one | Use `{{#each fields.tags}}` to iterate all items |
 | Array index access not working | `{{{fields.tags[0]}}}` renders empty | Use dot-bracket syntax: `{{{fields.tags.[0]}}}` |
 | Referenced fragments not appearing | `hasReferencedFragments` is always false | Enable hydration: `?hydration=%7B%22enabled%22%3Atrue%7D;` also check `{{#if referencesError}}` |
-| Template renders nothing | Empty page or blank output | Check for unclosed `{{#if}}` or `{{#each}}` blocks; add diagnostic output: `<pre>hasFields: {{hasFields}} | title: {{main_cf_title}}</pre>` |
+| Template renders nothing | Empty page or blank output | Check for unclosed `{{#if}}` or `{{#each}}` blocks; add diagnostic output: `<pre>hasFields: {{hasFields}}`&#124;`title: {{main_cf_title}}</pre>` |
 | Comments appear in the rendered page | HTML comment text visible to end users | Use Handlebars comments `{{! comment }}` instead of HTML `<!-- comment -->` |
-| Conditional always evaluates to true | `{{#if fields.enabled}}´ is always truthy | Note: the string `"false"` is truthy in Handlebars. Only actual `false`, `null`, `undefined`, `0`, `""`, and `[]` are falsy. |
+| Conditional always evaluates to true | `{{#if fields.enabled}}` is always truthy | Note: the string `"false"` is truthy in Handlebars. Only actual `false`, `null`, `undefined`, `0`, `""`, and `[]` are falsy. |
 | Special characters rendering as entities | `&lt;`, `&amp;` shown instead of `<`, `&` | Use triple braces for pre-rendered HTML content: `{{{fields.content}}}` |
 | Cannot access outer loop variable from inner loop | Variable from parent `#each` is undefined | Use `../` for parent scope: `{{{../name}}}`; use `../../` for grandparent |
-] Empty list not showing fallback message | Multi-valued field with zero items shows nothing | Use `{{else}}` inside `{{#each}}`: `{{#each fields.tags}}...{{else}}<p>No tags</p>{{/each}}` |
+| Empty list not showing fallback message | Multi-valued field with zero items shows nothing | Use `{{else}}` inside `{{#each}}`: `{{#each fields.tags}}...{{else}}<p>No tags</p>{{/each}}` |
 
 ### Working with Assets {#working-with-assets}
 
