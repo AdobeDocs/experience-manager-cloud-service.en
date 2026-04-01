@@ -2,7 +2,7 @@
 title: Content Update Job
 description: Learn what the Brand Experience Agent's content update job is and what it can do for you.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: e2d1dae8-38de-4357-bb14-ad35acb71aee
 ---
 

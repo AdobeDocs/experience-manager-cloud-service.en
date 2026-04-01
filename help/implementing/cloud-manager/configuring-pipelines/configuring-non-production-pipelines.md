@@ -1,7 +1,7 @@
 ---
 title: Add a Non-Production Pipeline
 description: Learn how to add a non-production pipeline to test the quality of your code before deploying to production environments.
-index: yes
+index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing

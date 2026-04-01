@@ -1,7 +1,7 @@
 ---
 title: Introduction to CI/CD Pipelines
 description: Learn about Cloud Manager's CI/CD pipelines and how they can be used to deploy your code efficiently.
-index: yes
+index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing

@@ -4,7 +4,7 @@ description: Forms as a Cloud Service frequently asked questions
 contentOwner: khsingh
 role: User
 feature: Adaptive Forms
-index: no
+index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 ---
