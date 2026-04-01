@@ -321,28 +321,6 @@ Reachability: "Reachable"
 
 The tool attempts an HTTP/HTTPS connection on every port. For non-HTTP services (for example, PostgreSQL on port 5432, MySQL on 3306, SFTP on 22, Redis on 6379), the HTTP check can fail with a connection error—this is expected. Rely on `Port open` and `Reachability` to confirm connectivity for those services.
 
-<!-- Alexandru: drafting for now, questions have already been answered in the troubleshooting section making the FAQ section a bit superflulous
-
-## FAQ {#faq}
-
-* **Question:** Why does HTTP connectivity show N/A?
-
-  **Answer:** The tool runs an HTTP-style check on every port. On a non-HTTP service (database, SFTP, custom TCP, and similar), that check is not meaningful, so you may see `N/A` or Not an HTTP/HTTPS service. That is normal. Use `Port open` and `Reachability` for those services.
-
-* **Question:** The test shows **Reachable**, but my AEM code still cannot connect. Why?
-
-  **Answer:** The test only proves the **network path** from Advanced Networking. Your code must still use the **proxy** (`AEM_PROXY_HOST`, port forwarding, and related settings). **Direct** connections—or a host listed in **`nonProxyHosts`**—can bypass that path.
-
-* **Question:** Why does DNS resolution fail for my internal hostname?
-
-  **Answer:** Only the DNS servers configured for **Advanced Networking** are used—not public resolvers such as `8.8.8.8`. You need a correct **DNS record**, **reachable** resolver IPs (often via **VPN**), and a hostname in the right **zone**. Typos and routing gaps are common causes.
-
-* **Question:** What does it mean when resolvers show different results?
-
-  **Answer:** Each configured resolver is checked **separately**. If they **disagree**, you get separate rows (for example `resolver_1`, `resolver_2`) with different IPs or errors. That usually means **inconsistent DNS** between those servers—compare the answers and fix the resolver or path that is wrong.
-
-  -->
-
 ## Related Information {#related-information}
 
 * [Configuring Advanced Networking for AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
