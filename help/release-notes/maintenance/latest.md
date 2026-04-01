@@ -33,7 +33,7 @@ The 2026.4.0 feature activation provides the full feature set for this maintenan
 * ASSETS-59267: NPE when loading application metadata for delivery payload.
 * ASSETS-59227: Metadata export: unselected properties no longer included due to regex matching.
 * ASSETS-65187: CSV preview in Cloud when column data contains escaped commas.
-* ASSETS-63441: AI Search disabled but still returning excessive results for some users.
+* ASSETS-63441: Ensure all users have permissions to read Assets Omnisearch configuration.
 * SITES-40095: Metadata editor: local content fragment references beyond 10 entries.
 
 ### Known Issues {#known-issues-25194}
