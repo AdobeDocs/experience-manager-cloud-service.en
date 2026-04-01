@@ -471,7 +471,7 @@ The dynamic delivery URL possesses the following syntax:
 
 +++
 
-+++**Ready to pick dynamic delivery URL**
++++ **Ready to pick dynamic delivery URL**
 All the selected assets are carried by `handleSelection` function that acts as a JSON object. For example, `JsonObj`. The dynamic delivery URL is created by combining the below carriers:
 
 | Object | JSON |
@@ -521,6 +521,8 @@ In the above screenshot, the delivery URL of the PDF's original rendition needs 
     The code snippet in the above screenshot is an example of a video asset. It includes renditions links array. The `selection[5]` in the excerpt is the example of image thumbnail which can be used as the placeholder of video thumbnail in the target experience. The `selection[5]` in the renditions' array is for the video player. This serves an HTML, and can be set as `src` of the iframe. It supports adaptive bitrate streaming which is web-optimized delivery of the video. 
     
     In the above example, the video player URL is `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play` 
+
++++
 
 +++**Asset Selector user interface for Dynamic Media with OpenAPI capabilities**
 
