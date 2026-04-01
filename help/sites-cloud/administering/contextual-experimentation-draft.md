@@ -24,6 +24,9 @@ For sites running on Adobe Experience Manager, developers have the option to add
 
 The experimentation rail is your primary way to set up experiments. It can be used with your project either in an [Edge Delivery Services](/help/edge/overview.md) context or in the [Universal Editor](/help/implementing/universal-editor/introduction.md). As such, you will need a Github account, a content repository like SharePoint or Google Drive, and you will also need the [AEM Sidekick](https://www.aem.live/docs/sidekick) plug-in. If you want to use Universal editor you will also need access to an [AEM as a Cloud Service environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). See also the [Getting Started – Universal Editor Developer Tutorial page](https://www.aem.live/developer/tutorial).
 
+>[!WARNING]
+>The experimentation engine is required in order to use the experimentation capability. Please make sure the engine is installed and updated correctly before implementing the steps below. See the following [installation page](https://github.com/adobe/aem-experimentation/tree/v2?tab=readme-ov-file#installation) for more details.
+
 ### Setting up experimentation by using AEM Sidekick in Edge Delivery Services
 
 To access the experimentation rail capabilities within your Edge Delivery Services Project you will need the [AEM Sidekick](https://www.aem.live/docs/sidekick) plug-in. To set up the sidekick follow these steps:
@@ -38,7 +41,7 @@ To access the experimentation rail capabilities within your Edge Delivery Servic
 Before setting up experiments, keep in mind that you will need to use AEM sites as a content source to be able to author in Universal Editor. If needed, you can convert your existing project to AEM sites as a content source by following the tutorial presented in the [Setup AEM Sites as a Content Source](https://www.aem.live/developer/ue-tutorial) page. When you are ready to set up experiments in Universal Editor, follow these steps:
 
 1. Open your project in Universal Editor and check the **A/B** Icon Extension. In case the icon is not visible, confirm whether you have enabled the feature in the extension manager. If it is not enabled please enable it or request access.
-1. Open your GitHub repository and check if the `plugins/experimention` folder exists. If not, you will need to set up the experimentation engine and MFE first (see the note below).
+<!--1. Open your GitHub repository and check if the `plugins/experimention` folder exists. If not, you will need to set up the experimentation engine and MFE first (see the note above).-->
 1. Point your `fstab.yaml` configuration to your project configuration and link it to your AEM author instance. See also [Connect your code to your content](https://www.aem.live/developer/ue-tutorial#connect-your-code-to-your-content)
 1. Open your AEM instance and if you have your project ready, open it directly in Universal Editor.
 1. Open the project and the index page where you want to run experiments and click **Edit** on the top bar.
@@ -128,7 +131,7 @@ Once you are ready, click **Activate** to launch the experiment and publish the 
 
 ### Monitor and Promote
 
-After the experiment reaches statistical significance, click **Promote** to make the desired variant your new control.
+After the experiment reaches statistical significance, click **Promote** to make the desired variant your new control. Keep in mind that you can promote the experiment variant at any point after activation even if it does not reach statistical significance.
 
 ### Using experimentation with AEM Sidekick in Edge Delivery Services
 
@@ -272,12 +275,12 @@ Presented below are several aspects you should consider when using context exper
 
 ### Conversion {#conversion}
 
-Experiments are set up to address conversion (tracks clickable elements on your page). All experiments must be defined for the following:
+Experiments are set up to address conversion (tracks clickable elements on your page). Currently, we support page level experiments with one experiment per page.
 
-* Experiment type.
+<!--> Experiment type.
 * What experience block the experiment will apply to.
 * How many variants will the experiment contain.
-* What is the composition of each variant.
+* What is the composition of each variant.-->
 
 <!--### Make sure experiment Variants are not indexed {#experiment-not-indexed}
 
