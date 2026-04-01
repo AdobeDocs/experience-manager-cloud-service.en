@@ -139,8 +139,6 @@ Or from the fields map:
 
 Access fields directly by name using the fields map:
 
-<!-- TBC -->
-
 ```handlebars
 <!DOCTYPE html>
 <html>
@@ -151,14 +149,26 @@ Access fields directly by name using the fields map:
   <article>
     <h1>{{{fields.title}}}</h1>
     <p class="subtitle">{{{fields.subtitle}}}</p>
-    <div class="content">{{{fields.description}}}</div>
-    <div class="image">{{{fields.primaryImage}}}</div>
+    <div class="content">
+      {{{fields.description}}}
+    </div>
+    <div class="image">
+      {{{fields.primaryImage}}}
+    </div>
   </article>
 </body>
 </html>
 ```
 
+Remember:
+
+* Use triple braces `{{{ }}}` for field values — they contain pre-rendered HTML
+* Field names **must** match your content fragment model **exactly**
+* Missing fields render as empty strings — no errors thrown
+
 ### Iterate through all fields {#iterate-through-all-fields}
+
+Use `allFields` when you do not know the field names in advance:
 
 ```handlebars
 <table>
@@ -179,37 +189,78 @@ Access fields directly by name using the fields map:
 </table>
 ```
 
+Remember:
+
+* `{{name}}` uses double braces (plain text label)
+* `{{{value}}}` uses triple braces (pre-rendered HTML value)
+
 ## Nested Content Fragments {#nested-content-fragments}
+
+When a Content Fragment field references another Content Fragment, you can use dot notation to directly access fields in the referenced fragment.
 
 ### Single-level nesting {#single-level-nesting}
 
 ```handlebars
-<p>Name: {{{fields.author.name}}}</p>
-<p>Email: {{{fields.author.email}}}</p>
-<p>Bio: {{{fields.author.bio}}}</p>
+<article>
+  <h1>{{{fields.title}}}</h1>
+
+  <!-- Access author (a referenced content fragment) -->
+  <div class="author-info">
+    <h3>Author</h3>
+    <p>Name: {{{fields.author.name}}}</p>
+    <p>Email: {{{fields.author.email}}}</p>
+    <p>Bio: {{{fields.author.bio}}}</p>
+  </div>
+
+  <div class="content">
+    {{{fields.content}}}
+  </div>
+</article>
 ```
 
 Pattern: `fields.referenceFieldName.nestedFieldName`
 
 ### Multi-level nesting {#multi-level-nesting}
 
+The system supports unlimited nesting depth:
+
 ```handlebars
-<p>Organization: {{{fields.author.organization.name}}}</p>
-<p>Website: {{{fields.author.organization.website}}}</p>
-<p>City: {{{fields.author.organization.address.city}}}</p>
+<article>
+  <h1>{{{fields.title}}}</h1>
+
+  <div class="author-details">
+    <!-- Level 1: Author -->
+    <p>Author: {{{fields.author.name}}}</p>
+
+    <!-- Level 2: Author's Organization -->
+    <p>Organization: {{{fields.author.organization.name}}}</p>
+    <p>Website: {{{fields.author.organization.website}}}</p>
+
+    <!-- Level 3: Organization's Address -->
+    <p>Located in: {{{fields.author.organization.address.city}}},
+    {{{fields.author.organization.address.country}}}</p>
+  </div>
+
+  <div class="content">
+    {{{fields.content}}}
+  </div>
+</article>
 ```
 
 Pattern: `fields.level1.level2.level3.fieldName` (unlimited depth).
 
-### API requirement: hydration {#api-requirement-hydration}
+### API parameter requirement: hydration {#api-parameter-requirements}
 
-To resolve nested references, include hydration in the preview call:
+To enable nested content fragment access, you must include the `hydration` query parameter in your API call:
+
+To enable Hydration:
 
 ```http
+# Enable hydration with depth=2 for 2 levels of nesting
 GET /adobe/sites/cf/fragments/{id}/preview?hydration=%7B%22enabled%22%3Atrue%2C%22maxDepth%22%3A2%7D
 ```
 
-| `maxDepth` | Loaded data |
+| `maxDepth` | What is loaded |
 |--- |--- |
 | `1` | Main fragment + direct references |
 | `2` | Main fragment + direct references + their references |
@@ -219,43 +270,125 @@ GET /adobe/sites/cf/fragments/{id}/preview?hydration=%7B%22enabled%22%3Atrue%2C%
 
 ### Multi-valued text fields {#multi-valued-text-fields}
 
+Text, [number](#multi-valued-number-fields), date, and other simple fields become arrays when multi-valued:
+
 ```handlebars
-{{#each fields.tags}}
-<span class="tag">{{{this}}}</span>
-{{/each}}
+<article>
+  <h1>{{{fields.title}}}</h1>
+
+  <!-- Access individual items by index (use dot before bracket) -->
+  <div class="tags">
+    <span class="tag">{{{fields.tags.[0]}}}</span>
+    <span class="tag">{{{fields.tags.[1]}}}</span>
+  </div>
+
+  <!-- Better: Iterate through all tags -->
+  <div class="tags">
+    {{#each fields.tags}}
+    <span class="tag">{{{this}}}</span>
+    {{/each}}
+  </div>
+</article>
 ```
 
-For index access, use dot-bracket syntax:
+Remember, when accessing array items by index in Handlebars:
+
+* Use: 
+  * `.[0]` (dot before bracket)
+* Not: 
+  * `[0]`
+
+### Multi-valued number fields {#multi-valued-number-fields}
+
+Numbers are converted to [strings](#multi-valued-text-fields) for rendering:
 
 ```handlebars
-{{{fields.tags.[0]}}}
+<div class="pricing">
+  <h3>Available Prices:</h3>
+  {{#each fields.prices}}
+  <span class="price">${{{this}}}</span>
+  {{/each}}
+</div>
 ```
 
 ### Multi-valued Content Fragment references {#multi-valued-content-fragment-references}
 
+When a field references multiple Content Fragments:
+
 ```handlebars
-{{#each fields.authors}}
-<div class="author">
-  <h4>{{{this.name}}}</h4>
-  <p>Email: {{{this.email}}}</p>
-  {{#if this.bio}}<p>{{{this.bio}}}</p>{{/if}}
+<div class="authors">
+  <h3>Authors:</h3>
+  {{#each fields.authors}}
+  <div class="author">
+    <h4>{{{this.name}}}</h4>
+    <p>Email: {{{this.email}}}</p>
+    {{#if this.bio}}
+    <p class="bio">{{{this.bio}}}</p>
+    {{/if}}
+  </div>
+  {{/each}}
 </div>
-{{/each}}
 ```
 
-### Multi-valued assets {#multi-valued-assets}
+### Multi-valued Asset references {#multi-valued-asset-references}
+
+Asset fields (for example, images and documents) are pre-rendered as HTML. Multi-valued assets become arrays:
 
 ```handlebars
-{{#each fields.gallery}}
-<div class="image">{{{this}}}</div>
+<!-- Single asset -->
+<div class="hero-image">
+  {{{fields.heroImage}}}
+</div>
+
+<!-- Multi-valued: iterate through all images -->
+<div class="gallery">
+  {{#each fields.gallery}}
+  <div class="image">{{{this}}}</div>
+  {{/each}}
+</div>
+```
+
+### Nested multi-valued references {#nested-multi-valued-references}
+
+Multi-valued references can contain multi-valued references at any depth:
+
+```handlebars
+{{#each fields.chapters}}
+<div class="chapter">
+  <h3>Chapter: {{{this.title}}}</h3>
+
+  {{#each this.authors}}
+  <p>Author: {{{this.name}}}</p>
+
+  {{#each this.publications}}
+  <p>Publication: {{{this.title}}}</p>
+  {{/each}}
+  {{/each}}
+</div>
 {{/each}}
 ```
 
 ## Loops and iteration {#loops-and-iteration}
 
-### `each` examples {#each-examples}
+Handlebars provides the `{{#each}}` helper for iterating over arrays and objects.
+
+### Iterating over arrays {#iterating-over-arrays}
 
 ```handlebars
+<!-- Simple array iteration -->
+{{#each fields.tags}}
+<span class="tag">{{{this}}}</span>
+{{/each}}
+
+<!-- Array of objects -->
+{{#each fields.authors}}
+<div class="author">
+  <h4>{{{this.name}}}</h4>
+  <p>{{{this.email}}}</p>
+</div>
+{{/each}}
+
+<!-- With empty-state fallback -->
 {{#each fields.tags}}
 <span class="tag">{{{this}}}</span>
 {{else}}
@@ -263,34 +396,138 @@ For index access, use dot-bracket syntax:
 {{/each}}
 ```
 
-### Special loop variables {#special-loop-variables}
+### Special variables in loops {#special-variables-in-loops}
+
+Inside `{{#each}}` blocks, Handlebars provides special variables:
 
 ```handlebars
 {{#each fields.items}}
-  {{@index}}   {{@number}}   {{@first}}   {{@last}}   {{{this}}}
+<div class="item">
+  <p>Index: {{@index}}</p>     <!-- 0-based index -->
+  <p>Number: {{@number}}</p>   <!-- 1-based index -->
+  <p>First: {{@first}}</p>     <!-- true for first item -->
+  <p>Last: {{@last}}</p>       <!-- true for last item -->
+  <p>Value: {{{this}}}</p>     <!-- current item -->
+</div>
+{{/each}}
+
+<!-- Example: numbered steps with first/last CSS classes -->
+<ul>
+  {{#each fields.steps}}
+  <li class="{{#if @first}}first{{/if}} {{#if @last}}last{{/if}}">
+    Step {{@number}}: {{{this}}}
+  </li>
+  {{/each}}
+</ul>
+```
+
+### Iterating over referenced fragments {#iterating-over-referenced-fragments}
+
+```handlebars
+{{#if hasReferencedFragments}}
+<section class="references">
+  <h2>Related Content</h2>
+  {{#each referencedFragments}}
+  <article id="{{anchorId}}">
+    <h3>{{title}}</h3>
+    {{#if hasDescription}}
+    <p>{{description}}</p>
+    {{/if}}
+    {{#if hasFields}}
+    <ul>
+      {{#each allFields}}
+      <li><strong>{{name}}:</strong> {{{value}}}</li>
+      {{/each}}
+    </ul>
+    {{/if}}
+  </article>
+  {{/each}}
+</section>
+{{/if}}
+```
+
+### Nested loops {#nested-loops}
+
+```handlebars
+{{#each fields.categories}}
+<section class="category">
+  <h2>{{{this.name}}}</h2>
+
+  {{#each this.products}}
+  <article class="product">
+    <h3>{{{this.name}}}</h3>
+    <p>{{{this.description}}}</p>
+  </article>
+  {{/each}}
+</section>
 {{/each}}
 ```
 
 ## Conditional rendering {#conditional-rendering}
 
+Use conditionals to show or hide content based on data availability.
+
+### Basic If/Else {#basic-if-else}
+
 ```handlebars
-{{#if fields.author}}
-  <p>By {{{fields.author.name}}}</p>
+{{#if hasMainDescription}}
+<p class="description">{{main_cf_description}}</p>
+{{else}}
+<p class="no-description">No description available.</p>
 {{/if}}
 
+<!-- Check field existence before rendering -->
+{{#if fields.author}}
+<div class="author">
+  <p>By {{{fields.author.name}}}</p>
+</div>
+{{/if}}
+
+{{#if fields.publishDate}}
+<time>{{{fields.publishDate}}}</time>
+{{/if}}
+```
+
+### Unless (negative conditional) {#unless-negative-conditional}
+
+An `unless` helper:
+
+```handlebars
+<!-- Show author unless explicitly hidden -->
 {{#unless fields.hideAuthor}}
-  <div class="author">{{{fields.author.name}}}</div>
+<div class="author">{{{fields.author.name}}}</div>
 {{/unless}}
 ```
 
-Error handling pattern:
+### Nested Conditionals {#nested-conditials}
+
+```handlebars
+{{#if fields.author}}
+<div class="author">
+  <h3>{{{fields.author.name}}}</h3>
+
+  {{#if fields.author.bio}}
+  <p class="bio">{{{fields.author.bio}}}</p>
+  {{/if}}
+
+  {{#if fields.author.website}}
+  <a href="{{{fields.author.website}}}">Visit Website</a>
+  {{/if}}
+</div>
+{{/if}}
+```
+
+### Error handling {#error-handling}
+
+The error handling pattern:
 
 ```handlebars
 {{#if referencesError}}
 <div class="error-message">
   <strong>Error Loading Referenced Fragments</strong>
+  <p>An error occurred while loading referenced content.</p>
   {{#if referencesErrorMessage}}
-  <p>{{referencesErrorMessage}}</p>
+  <p class="error-details">{{referencesErrorMessage}}</p>
   {{/if}}
 </div>
 {{/if}}
@@ -298,13 +535,421 @@ Error handling pattern:
 
 ## Built-in Handlebars helpers {#built-in-handlebars-helpers}
 
+Handlebars includes several built-in helpers, beyond `{{#if}}` and `{{#each}}`.
+
 | Helper | Description |
 |--- |--- |
-| `{{#if condition}}` | Renders when condition is truthy |
-| `{{#unless condition}}` | Renders when condition is falsy |
-| `{{#each array}}` | Iterates array/object values |
-| `{{#with object}}` | Creates a nested scope |
-| `{{lookup this "key"}}` | Dynamic property lookup |
+| `{{#if condition}}` | Renders content if condition is truthy. Falsy values: `false`, `undefined`, `null`, `0`, `""`, `[]` |
+| `{{#unless condition}}` | Renders content if condition is falsy (inverse of `#if`) |
+| `{{#each array}}` | Repeats content for each item; supports `{{else}}` for empty arrays |
+| `{{#with object}}` | Creates a new scope for a nested object, reducing path repetition |
+| `{{lookup this "key"}}` | Dynamically looks up a property by name |
+
+### With Helper {#with-helper}
+
+Creates a new scope for nested objects to reduce repetitive path prefixes:
+
+```handlebars
+{{#with fields.author}}
+<div class="author">
+  <h3>{{{name}}}</h3>     <!-- same as fields.author.name -->
+  <p>{{{email}}}</p>      <!-- same as fields.author.email -->
+  <p>{{{bio}}}</p>        <!-- same as fields.author.bio -->
+</div>
+{{/with}}
+
+<!-- Useful for deeply nested objects -->
+{{#with fields.author.organization}}
+<div class="organization">
+  <h4>{{{name}}}</h4>
+  <p>{{{website}}}</p>
+  {{#with address}}
+  <address>
+    {{{street}}}<br/>
+    {{{city}}}, {{{country}}}
+  </address>
+  {{/with}}
+</div>
+{{/with}}
+```
+
+<!-- TBC -->
+
+## Advance Patterns {#advanced-patterns}
+
+### Accessing Parent Context in Nested Loops {#accessing-parent-context-in-nested-loops}
+
+Use `../` to access the parent scope from within a nested loop:
+
+```handlebars
+<h1>{{{fields.title}}}</h1>
+
+{{#each fields.chapters}}
+<section class="chapter">
+  <h2>Chapter {{@number}}: {{{this.title}}}</h2>
+
+  {{#each this.sections}}
+  <article>
+    <!-- Access parent chapter via ../ -->
+    <p>Chapter: {{{../title}}}</p>
+
+    <!-- Access root context via ../../ -->
+    <p>Book: {{{../../fields.title}}}</p>
+
+    <h3>{{{this.title}}}</h3>
+    <div>{{{this.content}}}</div>
+  </article>
+  {{/each}}
+</section>
+{{/each}}
+``` 
+
+### Dynamic CSS Classes {#dynamic-css-classes}
+
+```handlebars
+<article class="content-fragment {{#if hasMainDescription}}with-description{{/if}} {{#if hasReferencedFragments}}has-refs{{/if}}">
+  <h1>{{main_cf_title}}</h1>
+</article>
+
+<ul class="tag-list">
+  {{#each fields.tags}}
+  <li class="tag {{#if @first}}first{{/if}} {{#if @last}}last{{/if}}">
+    {{{this}}}
+  </li>
+  {{/each}}
+</ul>
+``` 
+
+### Fallback values {#fallback-values}
+
+```handlebars
+<!-- Show title, falling back to path if title is missing -->
+<h1>
+  {{#if main_cf_title}}
+  {{main_cf_title}}
+  {{else}}
+  {{main_cf_path}}
+  {{/if}}
+</h1>
+``` 
+
+## Complete Examples {#complete-examples}
+
+### Blog post with author
+
+```handlebars
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{main_cf_title}}</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    .author-card { background: #f5f5f5; padding: 20px; border-radius: 8px; }
+    .tags { display: flex; gap: 10px; }
+    .tag { background: #007bff; color: white; padding: 5px 10px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <article>
+    <header>
+      <h1>{{{fields.title}}}</h1>
+      {{#if fields.publishDate}}
+      <time datetime="{{{fields.publishDate}}}">{{{fields.publishDate}}}</time>
+      {{/if}}
+      {{#if fields.tags}}
+      <div class="tags">
+        {{#each fields.tags}}
+        <span class="tag">{{{this}}}</span>
+        {{/each}}
+      </div>
+      {{/if}}
+    </header>
+
+    {{#if fields.heroImage}}
+    <figure>
+      {{{fields.heroImage}}}
+      {{#if fields.imageCaption}}
+      <figcaption>{{{fields.imageCaption}}}</figcaption>
+      {{/if}}
+    </figure>
+    {{/if}}
+
+    <div class="content">
+      {{{fields.content}}}
+    </div>
+
+    {{#if fields.author}}
+    <aside class="author-card">
+      <h3>About the Author</h3>
+      <h4>{{{fields.author.name}}}</h4>
+      {{#if fields.author.profilePicture}}
+      <div class="author-image">{{{fields.author.profilePicture}}}</div>
+      {{/if}}
+      {{#if fields.author.bio}}
+      <p>{{{fields.author.bio}}}</p>
+      {{/if}}
+      {{#if fields.author.email}}
+      <p>Contact: <a href="mailto:{{{fields.author.email}}}">{{{fields.author.email}}}</a></p>
+      {{/if}}
+    </aside>
+    {{/if}}
+  </article>
+</body>
+</html>
+``` 
+
+Required API call:
+
+```http
+GET /adobe/sites/cf/fragments/{id}/preview?hydration=%7B%22enabled%22%3Atrue%2C%22maxDepth%22%3A1%7D
+```
+
+### Product catalog with categories {#product-catalog-with-categories}
+
+```handlebars
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{main_cf_title}} - Product Catalog</title>
+  <style>
+    .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .product { border: 1px solid #ddd; padding: 15px; border-radius: 8px; }
+    .price { color: #28a745; font-size: 1.5em; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>{{main_cf_title}}</h1>
+    {{#if hasMainDescription}}
+    <p>{{main_cf_description}}</p>
+    {{/if}}
+  </header>
+
+  <main>
+    {{#if fields.products}}
+    <div class="product-grid">
+      {{#each fields.products}}
+      <article class="product">
+        {{#if this.image}}{{{this.image}}}{{/if}}
+        <h2>{{{this.name}}}</h2>
+        <p>{{{this.description}}}</p>
+        {{#if this.price}}
+        <div class="price">${{{this.price}}}</div>
+        {{/if}}
+        {{#if this.specifications}}
+        <ul>
+          {{#each this.specifications}}
+          <li>{{{this}}}</li>
+          {{/each}}
+        </ul>
+        {{/if}}
+      </article>
+      {{/each}}
+    </div>
+    {{else}}
+    <p>No products available.</p>
+    {{/if}}
+  </main>
+</body>
+</html>
+``` 
+
+### Generic table view (no prior knowledge of fields) {#generic-table-view-no-prior-knowledge-of-fields}
+
+```handlebars
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{main_cf_title}}</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+    th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+    th { background-color: #f4f4f4; font-weight: bold; }
+    .ref-section { background: #f9f9f9; padding: 20px; margin: 20px 0; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>{{main_cf_title}}</h1>
+    {{#if hasMainDescription}}<p>{{main_cf_description}}</p>{{/if}}
+    <p><small>Path: {{main_cf_path}}</small></p>
+  </header>
+
+  {{#if hasFields}}
+  <section>
+    <h2>Fields</h2>
+    <table>
+      <thead>
+        <tr><th>Field Name</th><th>Field Value</th></tr>
+      </thead>
+      <tbody>
+        {{#each allFields}}
+        <tr>
+          <td><strong>{{name}}</strong></td>
+          <td>{{{value}}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </section>
+  {{/if}}
+
+  {{#if hasReferencedFragments}}
+  <section class="ref-section">
+    <h2>Referenced Content Fragments</h2>
+    {{#each referencedFragments}}
+    <article id="{{anchorId}}" style="margin-bottom: 30px;">
+      <h3>{{title}}</h3>
+      {{#if hasDescription}}<p>{{description}}</p>{{/if}}
+      <p><small>Path: {{path}}</small></p>
+      {{#if hasFields}}
+      <table>
+        <thead>
+          <tr><th>Field Name</th><th>Field Value</th></tr>
+        </thead>
+        <tbody>
+          {{#each allFields}}
+          <tr>
+            <td><strong>{{name}}</strong></td>
+            <td>{{{value}}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+      {{/if}}
+    </article>
+    {{/each}}
+  </section>
+  {{/if}}
+
+  {{#if referencesError}}
+  <div style="background: #ffebee; border-left: 4px solid #f44336; padding: 15px; margin: 20px 0;">
+    <strong>Error Loading Referenced Fragments</strong>
+    {{#if referencesErrorMessage}}<p>{{referencesErrorMessage}}</p>{{/if}}
+  </div>
+  {{/if}}
+</body>
+</html>
+``` 
+
+## Best practices {#best-practices}
+
+1. Always use triple braces for field values. 
+
+   * Field values are pre-rendered HTML. 
+   * Double braces will show raw HTML tags as plain text.
+
+   ```handlebars
+   <!-- CORRECT -->
+   {{{fields.description}}}
+   
+   <!-- WRONG - displays HTML tags as text -->
+   {{fields.description}}
+   ``` 
+
+1. Check for existence before accessing nested fields.
+
+   ```handlebars
+   <!-- GOOD: check before accessing nested fields -->
+   {{#if fields.author}}
+   <p>By {{{fields.author.name}}}</p>
+   {{/if}}
+   
+   <!-- RISKY: may render empty if author is not set -->
+   <p>By {{{fields.author.name}}}</p>
+   ``` 
+
+1. Use direct field access when possible. 
+
+   * It is more readable, and maintainable, than iterating `allFields` and matching by name.
+
+1. Structure templates with section comments.
+
+   ```handlebars
+   {{! ===== HEADER SECTION ===== }}
+   <header>
+     <h1>{{main_cf_title}}</h1>
+   </header>
+
+   {{! ===== MAIN CONTENT ===== }}
+   <main>
+     {{#if hasFields}}
+     <!-- fields rendering -->
+     {{/if}}
+   </main>
+
+   {{! ===== REFERENCES ===== }}
+   {{#if hasReferencedFragments}}
+   <!-- references rendering -->
+   {{/if}}
+   ``` 
+
+1. Handle missing data gracefully with fallbacks.
+
+   ```handlebars
+   {{#if fields.title}}
+   <h1>{{{fields.title}}}</h1>
+   {{else}}
+   <h1>Untitled</h1>
+   {{/if}}
+   ```
+
+1. Always use a proper HTML document structure.
+
+   ```handlebars
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>{{main_cf_title}}</title>
+   </head>
+   <body>
+     <!-- your content here -->
+   </body>
+   </html>
+   ```
+
+1. Test with a variety of content scenarios:
+
+   * All fields fully populated
+   * Optional fields missing
+   * Empty multi-valued fields
+   * Deep nesting (multiple levels)
+   * References that fail to load
+
+1. Use semantic HTML elements:
+
+   * For better accessibility use `<article>`, `<header>`, `<main>`, `<footer>`, `<time>`, `<address>`, or similar.
+
+1. Keep styles in CSS. 
+
+   * Use `<style>` tags or external stylesheets.
+   * Avoid inline styles where possible.
+
+1. Document complex logic:
+
+   * Use Handlebars comments `({{! }})`.
+   * Do not use HTML comments, which appear in rendered output.
+
+## Troubleshooting {#troubleshooting}
+
+| Problem | Symptom | Solution |
+|--- |--- |--- |
+| Field shows HTML tags as text | `<p>...</p>` appears literally | Use triple braces: `{{{fields.description}}}` |
+| Nested field appears empty | `{{{fields.author.name}}}` blank | Enable hydration and verify `maxDepth` and field names |
+| Array index fails | `{{{fields.tags[0]}}}` empty | Use `{{{fields.tags.[0]}}}` |
+| References missing | `hasReferencedFragments` false | Enable `hydration` and check `referencesError` |
+| Empty output | Blank render | Verify block closures and add temporary debug values |
+| Parent value unavailable in nested loop | Undefined parent variable | Use `../` or `../../` scope notation |
+
+```handlebars
+
+``` 
 
 ## Custom template helpers {#customer-template-helpers}
 
@@ -353,26 +998,6 @@ Valid attribute names:
 * Case-insensitive
 
 Invalid names are skipped and logged.
-
-## Best practices {#best-practices}
-
-1. Always use triple braces for field and helper output.
-1. Guard nested references with `#if` checks.
-1. Prefer direct field access (`fields.title`) over generic loops when possible.
-1. Use semantic HTML (`article`, `header`, `main`, `time`, `address`).
-1. Include fallbacks for missing optional data.
-1. Test with full, partial, empty, and deeply nested data.
-
-## Troubleshooting {#troubleshooting}
-
-| Problem | Symptom | Solution |
-|--- |--- |--- |
-| Field shows HTML tags as text | `<p>...</p>` appears literally | Use triple braces: `{{{fields.description}}}` |
-| Nested field appears empty | `{{{fields.author.name}}}` blank | Enable hydration and verify `maxDepth` and field names |
-| Array index fails | `{{{fields.tags[0]}}}` empty | Use `{{{fields.tags.[0]}}}` |
-| References missing | `hasReferencedFragments` false | Enable `hydration` and check `referencesError` |
-| Empty output | Blank render | Verify block closures and add temporary debug values |
-| Parent value unavailable in nested loop | Undefined parent variable | Use `../` or `../../` scope notation |
 
 ## Quick reference {#quick-reference}
 
