@@ -141,7 +141,7 @@ Multiple files must be updated to enable [!DNL Live Search] functionality. Edit 
   ~ limitations under the License.
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   "use strict";
-
+  
   class ProductList {
     constructor() {
       const stateObject = {

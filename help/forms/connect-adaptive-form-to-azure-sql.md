@@ -12,7 +12,7 @@ exl-id: 111accf7-bf34-499c-832e-c001ea68f6d3
 Adaptive Forms in Adobe Experience Manager (AEM) can integrate with external databases to store or retrieve data. 
 This article outlines how to connect an Adaptive Form to an Azure SQL database using JDBC through AEM as a Cloud Service.
 
->![NOTE]
+>[!NOTE]
 > 
 > This guide applies to non-sandbox AEM as a Cloud Service environments with advanced networking enabled.
 
@@ -49,7 +49,7 @@ Integrating Adaptive Forms with Azure SQL offers several benefits:
     * **portDest**: `1433` (default port for Azure SQL) 
     For example: `portOrigin: 30433 → portDest: 1433`
 
-        >![NOTE]
+        >[!NOTE]
         > 
         > You can contact Adobe Cloud Manager support to configure the port forwarding.
 
@@ -111,7 +111,7 @@ Include the [SQL driver dependency](https://central.sonatype.com/artifact/com.mi
         }
     ```
 
-    >![NOTE]
+    >[!NOTE]
     >
     > Replace `jdbc.username` with actual Azure username and `jdbc.password` with the actual secure password.
 
