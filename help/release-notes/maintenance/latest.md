@@ -10,9 +10,9 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release X {#X}
+## Release 25194 {#25194}
 
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on March X, 2026. The previous maintenance release was release 24678.
+Summarized below are the continuous improvements for maintenance release 25194, which was publicly released on April 1, 2026. The previous maintenance release was release 24678.
 
 The 2026.4.0 feature activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
@@ -22,11 +22,20 @@ The 2026.4.0 feature activation provides the full feature set for this maintenan
 
 ### Enhancements {#enhancements-X}
 
-None.
+ASSETS-65127 : Event custom metadata: improved handling of metadata names
+ASSETS-63313 : Auto-create related links for exported assets and parents based on C2PA manifests
+ASSETS-10995 : Limit number of assets in a download zip
 
 ### Fixed Issues {#fixed-issues-X}
 
-None.
+ASSETS-62882 : Admin view: info tooltip breaks when multiple invalid filenames are uploaded
+SITES-40095 : Metadata editor: local content fragment references beyond 10 entries
+ASSETS-63642 : Share link fails to render asset on some dev environments (SLA3)
+ASSETS-59267 : NPE when loading application metadata for delivery payload
+ASSETS-59227 : Metadata export: unselected properties no longer included due to regex matching
+ASSETS-65187 : CSV preview in Cloud when column data contains escaped commas
+ASSETS-63441 : AI Search disabled but still returning excessive results for some users
+
     
 ### Known Issues {#known-issues-X}
 
@@ -38,7 +47,7 @@ Deprecated and removed features and APIs in AEM as a Cloud Service are detailed 
 
 ### Security Fixes {#security-X}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses X identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 9 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
 ### Embedded Technologies {#embedded-tech-X}
 
