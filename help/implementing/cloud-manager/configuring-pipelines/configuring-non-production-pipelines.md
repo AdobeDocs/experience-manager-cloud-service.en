@@ -354,7 +354,7 @@ Add the following configuration to your project `pom.xml` file to disable publis
   <activation>
     <property>
       <name>env.IGNORE_DISPATCHER_PACKAGES</name>
-      <value>!true</value>
+      <value>[!NOTE]rue</value>
     </property>
   </activation>
   <modules>
