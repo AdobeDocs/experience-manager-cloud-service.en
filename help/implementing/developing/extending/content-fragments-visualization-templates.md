@@ -1204,7 +1204,7 @@ Comparison:
 ### Control flow {#control-flow}
 
 ```handlebars
-{{#if condition}}...{{/if}}                <!-- Conditional -->
+{{#if condition}}...{{/if}}               <!-- Conditional -->
 {{#if condition}}...{{else}}...{{/if}}    <!-- If/else -->
 {{#unless condition}}...{{/unless}}       <!-- Negative conditional -->
 {{#each array}}...{{/each}}               <!-- Iteration -->
@@ -1227,14 +1227,14 @@ Comparison:
 ### Custom template helpers {#custom-template-helpers}
 
 ```handlebars
-{{{asset fields.image class="css-class"}}}                  <!-- Image with class -->
+{{{asset fields.image class="css-class"}}}                <!-- Image with class -->
 {{{asset fields.image class="c1" id="my-id"}}}            <!-- Image with multiple attrs -->
-{{{asset fields.image alt="Custom alt text"}}}             <!-- Override alt text -->
+{{{asset fields.image alt="Custom alt text"}}}            <!-- Override alt text -->
 {{{asset fields.image loading="lazy" data-x="val"}}}      <!-- Custom attributes -->
 
-{{{text fields.title class="title-class"}}}                <!-- Span with class -->
-{{{text fields.price class="price" id="p1"}}}              <!-- Span with multiple attrs -->
-{{{text this class="item" data-index=@index}}}             <!-- In loops -->
+{{{text fields.title class="title-class"}}}               <!-- Span with class -->
+{{{text fields.price class="price" id="p1"}}}             <!-- Span with multiple attrs -->
+{{{text this class="item" data-index=@index}}}            <!-- In loops -->
 ```
 
 ### Triple braces requirement {#triple-braces-requirement}
