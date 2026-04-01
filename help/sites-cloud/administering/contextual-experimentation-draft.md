@@ -277,11 +277,6 @@ Presented below are several aspects you should consider when using context exper
 
 Experiments are set up to address conversion (tracks clickable elements on your page). Currently, we support page level experiments with one experiment per page.
 
-<!--> Experiment type.
-* What experience block the experiment will apply to.
-* How many variants will the experiment contain.
-* What is the composition of each variant.-->
-
 <!--### Make sure experiment Variants are not indexed {#experiment-not-indexed}
 
 When running experiments, it is usually best practice to exclude the variants from the sitemap and ensure they are not indexed by search engines. This is because the variant page could be seen as duplicate content and negatively impact SEO.
