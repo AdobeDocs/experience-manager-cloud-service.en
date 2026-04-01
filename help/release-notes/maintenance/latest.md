@@ -20,36 +20,35 @@ The 2026.4.0 feature activation provides the full feature set for this maintenan
 >
 >Release 24893 has been made private. 
 
-### Enhancements {#enhancements-X}
+### Enhancements {#enhancements-25194}
 
-ASSETS-65127 : Event custom metadata: improved handling of metadata names
-ASSETS-63313 : Auto-create related links for exported assets and parents based on C2PA manifests
-ASSETS-10995 : Limit number of assets in a download zip
+* ASSETS-65127: Event custom metadata: improved handling of metadata names.
+* ASSETS-63313: Auto-create related links for exported assets and parents based on C2PA manifests.
+* ASSETS-10995: Limit number of assets in a download zip.
 
-### Fixed Issues {#fixed-issues-X}
+### Fixed Issues {#fixed-issues-25194}
 
-ASSETS-62882 : Admin view: info tooltip breaks when multiple invalid filenames are uploaded
-SITES-40095 : Metadata editor: local content fragment references beyond 10 entries
-ASSETS-63642 : Share link fails to render asset on some dev environments (SLA3)
-ASSETS-59267 : NPE when loading application metadata for delivery payload
-ASSETS-59227 : Metadata export: unselected properties no longer included due to regex matching
-ASSETS-65187 : CSV preview in Cloud when column data contains escaped commas
-ASSETS-63441 : AI Search disabled but still returning excessive results for some users
+* ASSETS-62882: Admin view: info tooltip breaks when multiple invalid filenames are uploaded.
+* ASSETS-63642: Share link fails to render asset on some dev environments (SLA3).
+* ASSETS-59267: NPE when loading application metadata for delivery payload.
+* ASSETS-59227: Metadata export: unselected properties no longer included due to regex matching.
+* ASSETS-65187: CSV preview in Cloud when column data contains escaped commas.
+* ASSETS-63441: AI Search disabled but still returning excessive results for some users.
+* SITES-40095: Metadata editor: local content fragment references beyond 10 entries.
 
-    
-### Known Issues {#known-issues-X}
+### Known Issues {#known-issues-25194}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-X}
+### Deprecated Features and APIs {#deprecated-25194}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-X}
+### Security Fixes {#security-25194}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 9 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-X}
+### Embedded Technologies {#embedded-tech-25194}
 
 |Technology|Version|Link|
 |---|---|---|
