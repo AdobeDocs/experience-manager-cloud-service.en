@@ -86,7 +86,9 @@ The [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.m
 
 ![Rich text component in the properties panel](assets/rich-text-properties-panel.png)
 
-Tap the entry to open a dialog presenting a larger canvas to edit the rich text.
+#### The Modal Editor {#modal-editor}
+
+Tap the entry in [the properties panel](#properties-rail) to open a modal editor which offers a larger canvas to edit the rich text.
 
 ![Rich text editing dialog](assets/rich-text-canvas.png)
 
