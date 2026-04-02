@@ -40,7 +40,7 @@ The next planned release is Thursday, May 7, 2026.
 
     Cloud Manager now lets you run self-serve checks from your environment. These checks verify host and port reachability and confirm DNS resolution using your program's configured network path, including egress. This capability helps you validate advanced networking and resolve integration issues faster without opening support cases or accessing pods. <!-- SKYOPS-23640 -->
 
-    <!-- See [Network Connectivity Test](/help/security/network-connectivity-test.md) -->
+    See [Network Connectivity Test](/help/security/network-connectivity-test.md)
 
 * **Improved stability, performance, and reliability**
 
