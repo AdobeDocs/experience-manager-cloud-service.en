@@ -12,7 +12,8 @@ exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
 ---
 # About configuring a Dynamic Media company alias account {#about-dm-alias-acct}
 
-<!-- hide: yes
+<!--
+ hide: yes
 hidefromtoc: yes 
 -->
 

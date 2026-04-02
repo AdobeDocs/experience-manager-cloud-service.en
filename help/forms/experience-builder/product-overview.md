@@ -67,7 +67,8 @@ Experience Builder requires AEM Forms as a Cloud Service production author envir
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | *Adaptive Forms Editor* | *Universal Editor* |
 
-<!-- >
+<!--
+ >
 
 ## Learn more on key capabilities {#key-capabilities-forms-experience-builder}
 
@@ -157,7 +158,8 @@ Experience Builder requires AEM Forms as a Cloud Service production author envir
       <em>Get responses to common questions about Forms Experience Builder capabilities and usage.</em>
    </p>
 </td>
-</table> -->
+</table>
+-->
 
 
 
@@ -187,7 +189,8 @@ Here are a few ways you can start exploring the Forms Experience Builder:
 
 - **Integrate with your systems**: Configure form submissions to connect with your existing business workflows, whether it's sending data to a REST API, creating a new lead in your CRM, or saving documents to cloud storage. [Learn more](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md#data-integration--submission).
 
-<!-- ## Onboarding
+<!--
+ ## Onboarding
 
 The Forms Experience Builder is currently available through an Early Access Program. To request access, follow these steps:
 

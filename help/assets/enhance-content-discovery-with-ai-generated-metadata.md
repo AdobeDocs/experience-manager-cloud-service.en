@@ -43,7 +43,8 @@ To configure AI-generated titles:
 
 ## Using AI-Generated metadata {#using-ai-generated-smart-tags}
 
-<!--[!NOTE]
+<!--
+[!NOTE]
 >
 >The enhanced smart tags capability is available only for the newly uploaded assets.
 -->

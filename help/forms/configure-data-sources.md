@@ -143,7 +143,8 @@ git push
 
 Now, you can use the configured relational database with your Form Data Model (FDM). 
 
-<!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
+<!--
+ ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
 You can configure [!DNL Experience Manager] user profile using User Profile Connector configuration in [!DNL Experience Manager] Web Console. Do the following:
 
@@ -162,7 +163,8 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
    >
    >The **&#42;** in the above example denotes all nodes under the `profile/empLocation/` node in [!DNL Experience Manager] user profile in CRXDE structure. It means that the Form Data Model (FDM) can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. However, the nodes that contain the specified property must follow a consistent structure.
 
-1. Select **[!UICONTROL Save]** to save the configuration. -->
+1. Select **[!UICONTROL Save]** to save the configuration.
+-->
 
 ## Configure folder for cloud service configurations {#cloud-folder}
 
@@ -407,7 +409,8 @@ To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure
 
 -->
 
-<!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
+<!--
+## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
 When you enable mutual authentication for form data model (FDM), both the data source and [!DNL Experience Manager] Server running Form Data Model (FDM) authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model (FDM) on your [!DNL Experience Manager Forms] environment:
 
@@ -418,7 +421,8 @@ When you enable mutual authentication for form data model (FDM), both the data s
 1. Upload trust certificate to Global Trust Store. To upload the certificate:
    1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Trust Store]**.
    1. Expand the **[!UICONTROL Add Certificate from CER file]** option, select **[!UICONTROL Select Certificate File]**, upload the certificate, and select **[!UICONTROL Submit]**.
-1. Configure [SOAP](#configure-soap-web-services) or [RESTful](#configure-restful-web-services) web services as the data source and select **[!UICONTROL Mutual authentication]** as the authentication type. If you configure multiple self-signed certificates for `fd-cloudservice` user, specify the Key Alias name for the certificate.-->
+1. Configure [SOAP](#configure-soap-web-services) or [RESTful](#configure-restful-web-services) web services as the data source and select **[!UICONTROL Mutual authentication]** as the authentication type. If you configure multiple self-signed certificates for `fd-cloudservice` user, specify the Key Alias name for the certificate.
+-->
 
 ## Next steps {#next-steps}
 

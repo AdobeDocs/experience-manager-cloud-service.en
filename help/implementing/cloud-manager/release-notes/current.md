@@ -52,7 +52,8 @@ The following opportunities are currently available:
 <!--
 ### Support for Custom Author Domains in Cloud Service
 
-AEM Cloud Service is going to soon support one custom domain per Author environment.-->
+AEM Cloud Service is going to soon support one custom domain per Author environment.
+-->
 
 ### Cloud Manager MCP server for AI-powered IDEs{#mcp-server-for-cm}
 
