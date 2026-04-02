@@ -130,6 +130,8 @@ The rich text editor (RTE) of the Universal Editor allows the author to apply st
 * **Outdent**
 * **Paste as Text**
   * Remove formatting from text on your clipboard before pasting into the Universal Editor.
+* **Special Character** 
+  * Insert a special character into your text.
 * **Remove All Formatting**
   * Remove all formatting options from the selected text.
 
