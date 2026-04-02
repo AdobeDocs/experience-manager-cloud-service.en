@@ -6,11 +6,27 @@ role: User, Developer
 ---
 # Visual Content Fragments {#visual-content-fragments}
 
-AEM allows you to preview, and deliver, your Content Fragments using a visual layout based on an HTML template. 
+AEM allows you to preview, and deliver, your Content Fragments using a visual layout based on an HTML template:
+
+* Previewing a fragment visually helps content quality assurance, allowing authors and readers to review content before it is used. 
+
+* Delivering a visual fragment aids omnichannel delivery; such as embedding in email systems or mobile apps.
 
 A **Generic Template** is always available within AEM as a default, but you can also [create and customize your own templates](/help/implementing/developing/extending/content-fragments-visualization-templates.md).
 
-## Preview your Fragment with a Template {#preview-your-template-with-a-template}
+## Create a Template {#create-a-template}
+
+The templates used for previewing and delivering visual Content Fragments are HTML templates developed using Handlebars.
+
+For details on developing your own templates see [Visual Content Fragments - Templates](/help/implementing/developing/extending/content-fragments-visualization-templates.md).
+
+## Upload and Assign your Template {#upload-and-assign-your-template}
+
+A template is associated with a Content Fragment Model so that it can be used with any Content Fragments created from that model.
+
+To upload your new HTML template:
+
+## Preview your fragment with a Template {#preview-your-fragment-with-a-template}
 
 To preview your Content Fragment using a template:
 
@@ -42,17 +58,15 @@ For example, preview with the **Generic Template**:
 
 ![Preview Fragment with Generic HTML Template](/help/sites-cloud/administering/content-fragments/assets/cf-visual-html-template-referenced-fragment.png)
 
-## Upload your Template {#upload-your-template}
+## Deliver your visual fragment {#deliver-your-visual-fragment}
 
-A template is associated with a Content Fragment Model. 
-
-To upload your new HTML template:
+The visual fragment can be delivered by 
 
 ## Download your Template {#download-your-template}
 
-To download your new HTML template:
+To download your new HTML template from AEM:
 
 ## Delete your Template {#delete-your-template}
 
-To delete your new HTML template:
+To delete your new HTML template (from AEM):
 

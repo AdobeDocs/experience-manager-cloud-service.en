@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # Visual Content Fragments - Templates {#visual-content-fragments-templates}
 
-Templates can be used to preview, and deliver, Content Fragments. You can create your own HTML template, upload it into AEM and then assign it for use with specific Content Fragment Models (and therefore, any fragments based on these models).
+In Adobe Experience Manager (AEM) as a Cloud Service HTML templates can be used to preview, and deliver, Content Fragments. You can create your own HTML template, then upload and assign it to specific Content Fragment Models in AEM. Once assigned the template can be used with any Content Fragments based on the model.
 
 These HTML templates are developed with Handlebars.
 
