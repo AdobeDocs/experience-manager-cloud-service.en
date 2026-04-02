@@ -3,8 +3,8 @@ title: Network Connectivity Test
 description: Use the Network Connectivity Test in Cloud Manager to validate Advanced Networking and VPN configuration from your program's egress path before you enable networking on environments.
 feature: Security
 role: Admin
+exl-id: dee0d1bc-46dc-43db-afeb-059ba2532f81
 ---
-
 # Network Connectivity Test {#network-connectivity-test}
 
 The **Network Connectivity Test** is a Cloud Manager diagnostic tool that lets you validate Advanced Networking and VPN configuration before you enable Advanced Networking on your environments and before you go live. Use it to verify that the hosts and ports AEM must reach, including internal or private endpoints, are reachable over the same connectivity path Advanced Networking will use.
