@@ -71,7 +71,7 @@ The toolbar configuration controls which editing options are available in the UI
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink", "image"],
+    "insert": ["link", "unlink", "image", "special_characters"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
@@ -286,6 +286,82 @@ Indentation has a feature-level configuration that controls the scope of indenta
 >
 >List nesting via Tab/Shift+Tab keys works independently of general indentation settings.
 
+### Special Characters {#special-characters}
+
+The `special_characters` insert action opens a character picker popover for inserting special characters (symbols, math operators, currency signs, punctuation, arrows, etc.) at the cursor position.
+
+```json
+{
+  "toolbar": {
+    "insert": ["link", "unlink", "image", "table", "special_characters"],
+    "sections": ["insert"],
+  },
+  "actions": {
+    "special_characters": {
+      "label": "Special Characters"
+    }
+  }
+}
+```
+
+A default set of 44 commonly-used characters is included out-of-the-box. The character list can be customized through two configuration options:
+
+* `appendCharacters` - Add characters to the default set
+* `characters` - Replace the default set entirely
+
+Each character entry has `character` (the Unicode character) and `title` (tooltip / accessible name).
+
+#### Append Characters to Defaults {#append-special-characters}
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "appendCharacters": [
+        { "character": "\u2605", "title": "Black star" },
+        { "character": "\u2764", "title": "Heavy black heart" },
+      ];
+    }
+  }
+}
+```
+
+#### Replace Default Special Characters {#replace-special-characters}
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "characters": [
+        { "character": "\u00A9", "title": "Copyright sign" },
+        { "character": "\u00AE", "title": "Registered sign" },
+        { "character": "\u2122", "title": "Trade mark sign" },
+      ];
+    }
+  }
+}
+```
+
+#### Both Options Together {#both-special-character-options}
+
+This example uses `characters` as the base, then appends additional characters using `appendCharacters`.
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "characters": [
+        { "character": "\u00A9", "title": "Copyright sign" },
+        { "character": "\u00AE", "title": "Registered sign" }
+      ],
+      "appendCharacters": [
+        { "character": "\u2605", "title": "Black star" }
+      ]
+    }
+  }
+}
+```
+
 ### Paste as Text {#paste-as-text}
 
 The `paste_text` editor action enables a standard paste-as-plain-text workflow.
@@ -358,7 +434,9 @@ The following is an example of a complete configuration.
         ],
         "insert": [
           "link",
-          "unlink"
+          "unlink",
+          "image",
+          "special_characters"
         ],
         "sections": [
           "format",
@@ -395,6 +473,17 @@ The following is an example of a complete configuration.
         },
         "unlink": {
           "label": "Remove Link"
+        },
+        // Image actions with picture wrapping
+        "image": {
+          "wrapInPicture": false, // Use <img> tag instead of <picture>
+          "shortcut": "Mod-Shift-I",
+          "label": "Insert Image",
+        },
+        // Special characters with custom additions
+        "special_characters": {
+          "label": "Special Characters",
+          "appendCharacters": [{ "character": "\u2605", "title": "Black star" }],
         },
         // Other actions with basic customization
         "h1": {
