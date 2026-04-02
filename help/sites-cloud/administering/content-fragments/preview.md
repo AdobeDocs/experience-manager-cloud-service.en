@@ -85,27 +85,9 @@ The icon can be selected to open a dialog that represents the fragment based on 
 
 ## Preview with Visualization (HTML) Templates {#preview-with-visualization-html-templates}
 
-AEM allows you to preview your content fragment using a visual layout based on an HTML template. A **Generic Template** is available within AEM as a default, but you can also create and customize your own templates.
+AEM allows you to preview your Content Fragment using a visual layout based on an HTML template. 
 
-To preview your Content Fragment using a template:
+A **Generic Template** is always available within AEM as a default, but you can also [create and customize your own templates](/help/implementing/developing/extending/content-fragments-visualization-templates.md).
 
-1. In the Content Fragment console navigate to the location of your fragment.
-1. Select your fragment.
-1. Select **Preview** from the top toolbar.
-   A dialog will open. 
-   1. If no customized templates are available, then AEM will use the **Generic Template** to display your fragment. The **Generic Template**:
+See [Visual Content Fragments](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md#preview-your-template-with-a-template) for details on how to **Preview** your fragment with HTML templates.
 
-      * displays the fields of your fragment in table form; name and content
-      * shows the content of referenced fragments in separate tables, with the same format
-   1. If customized templates are available, you can select the template you want to use (including the **Generic Template**)
-   1. If configured you can also select the **Preview URL** and the **Publish URL**.
-
-   For example, preview with the **Generic Template**:
-
-   <!-- CQDOC-23232-CF-VTemplates - new screenshot -->
-
-   ![Preview Fragment with Generic HTML Template](/help/sites-cloud/administering/content-fragments/assets/cf-preview-html-template-referenced-fragment.png)
-
->[!NOTE]
->
->See [Content Fragments - Visualization Templates](/help/implementing/developing/extending/content-fragments-visualization-templates.md) for details about creating and customizing templates.

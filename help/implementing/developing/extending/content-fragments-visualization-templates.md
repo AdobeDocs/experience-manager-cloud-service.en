@@ -4,11 +4,17 @@ description: Preview and publish Content Fragments with Visualization Templates.
 feature: Developing, Content Fragments
 role: Admin, Developer
 ---
-# Content Fragments - Visualization Templates {#content-fragments-visualization-templates}
+# Visual Content Fragments - Templates {#visual-content-fragments-templates}
 
-Visualization Templates can be used to preview Content Fragments. These HTML templates are developed with Handlebars, 
+Templates can be used to preview Content Fragments. You can create your own HTML template, upload it into AEM and then assign it for use with specific Content Fragment Models (and therefore, any fragments based on these models).
+
+These HTML templates are developed with Handlebars.
 
 This page explains how to create custom Handlebars templates for rendering Adobe Experience Manager (AEM) Content Fragments. Templates allow you to control exactly how your Content Fragments are displayed in preview mode.
+
+>[!NOTE]
+>
+>See [Visual Content Fragments](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md) for uploading, assigning and using your template in AEM.
 
 ## What you will learn {#what-you-will-learn}
 
@@ -28,6 +34,12 @@ To understand and work with the technologies covered here you should have:
 * Basic understanding of HTML
 * Familiarity with AEM Content Fragments and Content Fragment Models
 * Understanding of your Content Fragment models
+
+## Create a template {#create-a-template}
+
+## Upload a template {#upload-a-template}
+
+## Assign a template {#assign-a-template}
 
 ## Handlebars - the (very) basics {#handlebars-the-very-basics}
 
