@@ -107,14 +107,16 @@ From left to right, the toolbar provides:
 * **D: Emulator**: Select a device or breakpoint (for example, Desktop, Tablet, or Mobile) to preview the form at that screen size. The form preview resizes to match the selected breakpoint. Any styles you set while a breakpoint is selected apply only to that breakpoint, so you can define responsive styles. For details, see [Styling for different screen sizes](#styling-for-different-screen-sizes).
 * **E: Edit / Preview**: Switch between two modes. **Edit** is the default: you can click components on the canvas to select them and change their styling in the sidebar. **Preview** shows the form as an end user would see it without selection borders, component labels, or the styling sidebar, so you can check how the themed form looks and behaves before publishing.
 
-<!--**3. Bottom of the sidebar: Simulate Error and Simulate Success**
+<!--
+**3. Bottom of the sidebar: Simulate Error and Simulate Success**
 
 When you style components by state (for example, Error or Success), you can preview that look without submitting the form. In AEM Forms as a Cloud Service, **Simulate Error** and **Simulate Success** are available at the **bottom of the left sidebar**. Scroll down in the sidebar if you don’t see them; they appear when you have a component selected and let you toggle the preview to match the Error or Success state.
 
 * **Simulate Error**: Show the form as if a field failed validation, so you can see your **[!UICONTROL Error]** state styling.
 * **Simulate Success**: Show the form as if validation passed, so you can see your **[!UICONTROL Success]** state styling.
 
-Toggle these on or off as you adjust styles for each state. For more on styling by state, see [Style by component state](#style-by-state).-->
+Toggle these on or off as you adjust styles for each state. For more on styling by state, see [Style by component state](#style-by-state).
+-->
 
 ### Style a Component
 
@@ -145,7 +147,8 @@ To apply a style:
 
    ![Applying style](/help/forms/assets/custom-theme-applying-style.png)
 
-<!--#### Style by component state {#style-by-state}
+<!--
+#### Style by component state {#style-by-state}
 
 Components can have different visual states (for example, default, focus, hover, disabled, error, success). You can style each state separately so the form looks correct during user interaction and validation.
 
@@ -156,7 +159,8 @@ Components can have different visual states (for example, default, focus, hover,
 
    ![State dropdown in sidebar for styling Default, Focus, Error, Success, and other states](/help/forms/assets/custom-theme-state-dropdown.png)
 
-The styles you define apply only when the component is in the selected state. For example, if you set a red border and red background for the **[!UICONTROL Error]** state, the field shows that styling when validation fails. If your environment supports it, use **Simulate Error** or **Simulate Success** at the bottom of the sidebar to preview how the component looks in those states without submitting the form.-->
+The styles you define apply only when the component is in the selected state. For example, if you set a red border and red background for the **[!UICONTROL Error]** state, the field shows that styling when validation fails. If your environment supports it, use **Simulate Error** or **Simulate Success** at the bottom of the sidebar to preview how the component looks in those states without submitting the form.
+-->
 
 ### Form-level styling {#form-level-styling}
 

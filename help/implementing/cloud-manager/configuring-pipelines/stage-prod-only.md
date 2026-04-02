@@ -11,8 +11,10 @@ exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
 ---
 # Split stage-only and production-only pipelines {#stage-prod-only}
 
-<!-- REMOVED AS PER CQDOC-23086 ON OCTOBER 3, 2025:
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines" -->
+<!--
+ REMOVED AS PER CQDOC-23086 ON OCTOBER 3, 2025:
+badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines"
+-->
 
 You can split staging and production deployments using dedicated pipelines.
 
@@ -107,7 +109,8 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 
 You can start the new pipelines [like any other pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines). You can also trigger a production-only pipeline directly from a stage-only pipeline's execution details.
 
-<!-- * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
+<!--
+ * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
 Prod-only pipeline run can be triggered directly from the execution details of a [stage-only pipeline](#stage-only-run).
 
 
@@ -118,7 +121,8 @@ When starting production-only and staging-online pipelines, you are prompted to 
 * **Normal Mode** is a standard run and includes stage testing steps.
 * **Emergency Mode** skips stage testing steps.
 
-![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png) -->
+![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png)
+-->
 
 ### Run stage-only pipelines {#stage-only-run}
 

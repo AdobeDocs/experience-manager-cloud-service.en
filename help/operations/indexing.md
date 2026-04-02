@@ -76,9 +76,11 @@ For a fully customized index, prepare a new index definition package that contai
 As mentioned in the limitations sections, the `type` of the customised index definition must always be set to `lucene` even if the extracted index definition using Package Manager is of a different type (e.g `elasticsearch`).
 The `async` property must also be changed in case the extracted index definition is set to `elastic-async`. The `async` property must be set to one of the following: `[async]`, `[async,nrt]` or `[fulltext-async]` for the customized index definition.
 
-<!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
+<!--
+ Alexandru: temporarily drafting this statement due to CQDOC-17701
 
-The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`. -->
+The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
+-->
 
 >[!NOTE]
 >
