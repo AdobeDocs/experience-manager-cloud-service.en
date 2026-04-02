@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # Visual Content Fragments - Templates {#visual-content-fragments-templates}
 
-Templates can be used to preview Content Fragments. You can create your own HTML template, upload it into AEM and then assign it for use with specific Content Fragment Models (and therefore, any fragments based on these models).
+Templates can be used to preview, and deliver, Content Fragments. You can create your own HTML template, upload it into AEM and then assign it for use with specific Content Fragment Models (and therefore, any fragments based on these models).
 
 These HTML templates are developed with Handlebars.
 

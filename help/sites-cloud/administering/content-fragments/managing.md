@@ -182,6 +182,7 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 * **[Manage Tags](#manage-tags)**
 * **[Copy](#copy-a-content-fragment)**
 * **[Replace](#find-and-replace)**
+* **[Preview](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md#preview-your-template-with-a-template)**
 * **Move**
 * **Rename**
 * **[Check Out and Check In](#check-out-and-check-in)**

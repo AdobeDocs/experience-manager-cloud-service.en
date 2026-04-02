@@ -19,21 +19,28 @@ To preview your Content Fragment using a template:
 >As the **Generic Template** is always available you can preview your fragment without loading any customized templates.
 
 1. In the Content Fragment console navigate to the location of your fragment.
-1. Select your fragment.
-1. Select **Preview** from the top toolbar.
-   A dialog will open. 
-   1. If no customized templates are available, then AEM will use the **Generic Template** to display your fragment. The **Generic Template**:
+1. Either:
+   * Select your fragment in the console
+   * Open your fragment in the editor
+1. Select **Preview** from the top toolbar of:
 
-      * displays the fields of your fragment in table form; name and content
-      * shows the content of referenced fragments in separate tables, with the same format
-   1. If customized templates are available, you can select the template you want to use (including the **Generic Template**)
-   1. If configured you can also select the **Preview URL** and the **Publish URL**.
+   * the Content Fragment console 
+   * the editor, where you can then select **Template**
 
-   For example, preview with the **Generic Template**:
+In both cases a new model window will open. 
 
-   <!-- CQDOC-23232-CF-VTemplates - new screenshot -->
+1. If no customized templates are available, then AEM will use the **Generic Template** to display your fragment. The **Generic Template**:
 
-   ![Preview Fragment with Generic HTML Template](/help/sites-cloud/administering/content-fragments/assets/cf-visual-html-template-referenced-fragment.png)
+   * displays the fields of your fragment in table form; name and content
+   * shows the content of referenced fragments in separate tables, with the same format
+1. If customized templates are available, you can select the template you want to use (including the **Generic Template**)
+1. If configured you can also select the **Preview URL** and the **Publish URL**.
+
+For example, preview with the **Generic Template**:
+
+<!-- CQDOC-23232-CF-VTemplates - new screenshot -->
+
+![Preview Fragment with Generic HTML Template](/help/sites-cloud/administering/content-fragments/assets/cf-visual-html-template-referenced-fragment.png)
 
 ## Upload your Template {#upload-your-template}
 
