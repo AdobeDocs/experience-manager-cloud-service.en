@@ -979,30 +979,20 @@ You can use the following sample as an example of the format you use to create a
 ```xml {.line-numbers}
 WEBVTT
 Chapter 1
-00:00.000
--->
-01:04.364
+00:00.000 --> 01:04.364
 The bicycle store behind it all.
 Chapter 2
-01:04.364
--->
-02:00.944
+01:04.364 --> 02:00.944
 Creative Cloud.
 Chapter 3
-02:00.944
--->
-03:02.937
+02:00.944 --> 03:02.937
 Ease of management for a working solution.
 Chapter 4
-03:02.937
--->
-03:35.000
+03:02.937 --> 03:35.000
 Cost-efficient access to rapidly evolving technology.
 ```
 
-In the example above, `Chapter 1` is the cue identifier and is optional. The cue time of `00:00:000
--->
-01:04:364` specifies the start time and end time of the chapter, in `00:00:000` format. That last three digits are milliseconds and can be left as `000`, if preferred. The chapter title of `The bicycle store behind it all` is the actual description of the chapter's contents. The cue identifier, the starting cue time, and the chapter title all appear in a pop-up in the video player when a user hovers their mouse pointer over a visual cue point in the timeline.
+In the example above, `Chapter 1` is the cue identifier and is optional. The cue time of `00:00:000 --> 01:04:364` specifies the start time and end time of the chapter, in `00:00:000` format. That last three digits are milliseconds and can be left as `000`, if preferred. The chapter title of `The bicycle store behind it all` is the actual description of the chapter's contents. The cue identifier, the starting cue time, and the chapter title all appear in a pop-up in the video player when a user hovers their mouse pointer over a visual cue point in the timeline.
 
 Because you are using an HTML5 video viewer, ensure that the chapter file you create follows the WebVTT (Web Video Text Tracks) standard. The chapter filename extension is `.vtt`. You can learn more information about the WebVTT captioning standard.
 
