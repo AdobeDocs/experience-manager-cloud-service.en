@@ -26,6 +26,8 @@ A template is associated with a Content Fragment Model so that it can be used wi
 
 To upload your new HTML template:
 
+<!-- CQDOC-23232-CF-VTemplates - needs content -->
+
 ## Preview your fragment with a Template {#preview-your-fragment-with-a-template}
 
 To preview your Content Fragment using a template:
@@ -62,11 +64,17 @@ For example, preview with the **Generic Template**:
 
 The visual fragment can be delivered by 
 
+<!-- CQDOC-23232-CF-VTemplates - needs content -->
+
 ## Download your Template {#download-your-template}
 
 To download your new HTML template from AEM:
 
+<!-- CQDOC-23232-CF-VTemplates - needs content -->
+
 ## Delete your Template {#delete-your-template}
 
 To delete your new HTML template (from AEM):
+
+<!-- CQDOC-23232-CF-VTemplates - needs content -->
 

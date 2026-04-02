@@ -16,6 +16,8 @@ This page explains how to create custom Handlebars templates for rendering Adobe
 >
 >See [Visual Content Fragments](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md) for uploading, assigning and using your template in AEM.
 
+<!-- CQDOC-23232-CF-VTemplates - need a section about the Generic Template? -->
+
 ## What you will learn {#what-you-will-learn}
 
 In particular, this page covers:
@@ -37,9 +39,15 @@ To understand and work with the technologies covered here you should have:
 
 ## Create a template {#create-a-template}
 
+<!-- CQDOC-23232-CF-VTemplates - needs content -->
+
 ## Upload a template {#upload-a-template}
 
+<!-- CQDOC-23232-CF-VTemplates - needs content -->
+
 ## Assign a template {#assign-a-template}
+
+<!-- CQDOC-23232-CF-VTemplates - needs content -->
 
 ## Handlebars - the (very) basics {#handlebars-the-very-basics}
 
