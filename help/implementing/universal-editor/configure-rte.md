@@ -18,7 +18,7 @@ This RTE is configurable using [component filters.](/help/implementing/universal
 
 >[!NOTE]
 >
->When you start a Universal Editor project, all rich text features that your backend supports (AEM with Edge Delivery or headless implementation) are automatically active.
+>When you start a Universal Editor project, all rich text features that your backend supports (AEM with Edge Delivery or headless implementation) are automatically active and available in [the modal editor window of the RTE.](/help/sites-cloud/authoring/universal-editor/authoring.md#modal-editor)
 >
 >* You can deactivate those options you do not need.
 >* Activating options that are not compatible with your project type is not supported.
