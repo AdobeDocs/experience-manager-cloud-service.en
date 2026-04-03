@@ -92,7 +92,7 @@ This method is useful, for example, when your business logic requires fine-tunin
 ### Client-Side libraries (js,css) {#client-side-libraries}
 
 * When using AEM's Client-Side library framework, JavaScript and CSS code is generated in such a way that browsers can cache it indefinitely, since any changes manifest as new files with a unique path. In other words, HTML that references the client libraries are produced as needed so customers can experience new content as it is published. The cache-control is set to "immutable" or 30 days for older browsers who do not respect the "immutable" value.
-* see the section [Client-side libraries and version consistency](#content-consistency) for additional details.
+* see the section [Client-side libraries and version consistency](#content-consistency) for additional details, including [fallback to short-cache clientlib URLs](#clientlib-shortcache-fallback) when cached HTML still references long-cache URLs that are no longer available.
 
 ### Images and any content large enough to be stored in blob storage {#images}
 
@@ -550,14 +550,14 @@ Default clientlib includes on an HTML page look like the following example:
 
 ```
 
-When strict clientlib versioning is enabled, a long-term hash key is added as a selector to the client library. As a result, the clientlib reference look like this:
+When strict clientlib versioning is enabled, a long-term hash key is added as a selector to the client library. As a result, the clientlib reference looks like this:
 
 ```
 <link rel="stylesheet" href="/etc.clientlibs/wkndapp/clientlibs/clientlib-base.lc-7c8c5d228445ff48ab49a8e3c865c562-lc.css" type="text/css">
 
 ```
 
-Strict clientlib versioning is enabled by default in all AEM as a Cloud Service environment.
+Strict clientlib versioning is enabled by default in AEM as a Cloud Service.
 
 To enable strict clientlib versioning in the local SDK Quickstart, do the following:
 
@@ -567,3 +567,19 @@ To enable strict clientlib versioning in the local SDK Quickstart, do the follow
    * In the field labeled **Long term client side cache key**, enter the value of /.*;hash
 1. Save the changes. It is not necessary to save this configuration in source control since AEM as a Cloud Service automatically enables this configuration in dev, stage, and production environments.
 1. Anytime the contents of the client library are changed, a new hash key is generated and the HTML reference is updated.
+
+### Fallback to short-cache URLs when long-cache clientlibs are unavailable {#clientlib-shortcache-fallback}
+
+Intermediary caches (for example, the Adobe CDN or a browser cache) can continue to serve an **older HTML** response for a while after new content is published. That cached HTML can still reference long-cache clientlib URLs (the `lc-` selector pattern) that no longer exist on the publish tier because a deployment replaced those artifacts.
+
+In that situation, AEM as a Cloud Service issues an **HTTP redirect** to a **short-cache** clientlib URL. Short-cache URLs use an `sc-` selector pattern and a time-based segment so the request can resolve to the **latest** version of the client library that is currently available.
+
+```
+<link rel="stylesheet" href="/etc.clientlibs/wkndapp/clientlibs/clientlib-base.sc-7c8c5d228445ff48ab49a8e3c865c562-1756969000-sc.css" type="text/css">
+
+```
+
+Both the **redirect** to the short-cache URL and the **short-cache clientlib response** itself are short lived: responses use a **maximum cache age of 60 seconds** (`max-age=60`). **Downstream caches** (a customer-managed CDN, proxies, or similar) should **not** cache these responses longer than that. Avoid custom cache rules that increase TTLs or treat short-cache clientlib URLs as immutable long-term assets; doing so can strand users on outdated JS or CSS.
+
+This behavior implies that **client libraries must remain backward compatible** with the HTML that might still be served from cache for as long as your HTML is cached. In practice that is rarely an issue when HTML caching uses modest TTLs (including the defaults described [above](#html-text)). If you configure **very long** HTML cache lifetimes, account for the possibility that users may load older markup together with newer JS and CSS delivered through the short-cache fallback.
+
