@@ -25,7 +25,8 @@ AEM Forms provide **[!UICONTROL Adaptive Form Container]** and **[!UICONTROL Ada
 
 ![An example of an Adaptive Form in an AEM Sites page](/help/forms/assets/adaptive-form-in-sites-page.png)
 
-<!-- For information about embedding an Adaptive Form in an external web page, see [Embed Adaptive Form in external web page](/help/forms/using/embed-adaptive-form-external-web-page.md). 
+<!--
+ For information about embedding an Adaptive Form in an external web page, see [Embed Adaptive Form in external web page](/help/forms/using/embed-adaptive-form-external-web-page.md). 
 
 ## Why embed an Adaptive Form in AEM Sites page or AEM Experience Fragment? 
 

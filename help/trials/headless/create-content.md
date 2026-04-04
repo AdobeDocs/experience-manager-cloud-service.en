@@ -2,7 +2,7 @@
 title: Create Headless Content
 description: Use the Content Fragment model that you created previously to create content which can be used for page authoring, or as the basis for your headless content.
 hidefromtoc: yes
-index: no
+index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 feature: Headless
 role: Admin, User, Developer

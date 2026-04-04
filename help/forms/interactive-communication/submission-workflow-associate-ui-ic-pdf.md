@@ -14,7 +14,8 @@ exl-id: 9d8a33e4-e206-48e6-9daf-b15feb9c67a3
 
 This article explains how submission and workflow work when you enable a workflow for the Associate UI. It then walks through how to configure a submission workflow. The walkthrough uses generating a PDF from the Interactive Communication (IC) payload as an example; you can adapt the steps for other workflow types.
 
-<!--## Submission and workflow behavior {#submission-and-workflow-behavior}
+<!--
+## Submission and workflow behavior {#submission-and-workflow-behavior}
 
 When you enable **Configure Workflow for Update** for an Associate UI, submissions from the Associate UI can trigger an AEM workflow. The following explains where workflows run, who uses which environment, and how to plan for data and access.
 
@@ -32,7 +33,8 @@ Authors can open the Associate UI on the Author instance—for example, to test 
 
 ### When an associate submits from the Publish instance
 
-Associates open the Associate UI on the Publish instance, using the integration you set up. When they submit, the submission is sent to the Author instance and the workflow runs on Author. Associates sign in on Publish (for example, via [Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)) and do not need access to Author. To set up how associates open the Associate UI on Publish, see [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md).-->
+Associates open the Associate UI on the Publish instance, using the integration you set up. When they submit, the submission is sent to the Author instance and the workflow runs on Author. Associates sign in on Publish (for example, via [Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)) and do not need access to Author. To set up how associates open the Associate UI on Publish, see [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md).
+-->
 
 ## Configure a submission workflow
 

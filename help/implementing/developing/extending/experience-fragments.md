@@ -124,7 +124,8 @@ One of the use cases for such groups is for embedding content in third-party tou
 
 ### Default Link Rewriting {#default-link-rewriting}
 
-<!--Using the [Export to Target](/help/sites-administering/experience-fragments-target.md) feature, you can:
+<!--
+Using the [Export to Target](/help/sites-administering/experience-fragments-target.md) feature, you can:
 -->
 
 Using the Export to Target feature, you can:
