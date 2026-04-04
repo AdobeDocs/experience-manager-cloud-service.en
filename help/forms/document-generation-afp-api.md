@@ -26,7 +26,8 @@ To support AFP output generation, the following OSGi bundles must be present and
 >[!NOTE]
 >
 > * If any bundle is inactive, resolve dependency issues or reinstall manually.
-> * To enable AFP generation, the `FT_FORMS-17887` toggle configurations must be set in AEM configuration manager.-->
+> * To enable AFP generation, the `FT_FORMS-17887` toggle configurations must be set in AEM configuration manager.
+ -->
 
 ## AFP Generation API
 

@@ -40,11 +40,13 @@ When browsing through assets in a folder, you can use the interface to view asse
 * **Trash**: List the assets deleted from the root **[!UICONTROL Assets]** folder. You can select an asset in the Trash folder to restore it to its original location or permanently delete it. You can specify a keyword or apply filters such as asset status, file type, mime type, image size, asset creation, modification, and expiration dates, as well as filtering by assets discarded by the current user. You can also apply custom filters to search appropriate assets within the Trash folder. For more information on using standard and custom filters, see how to [search assets in Assets view](/help/assets/search-assets-view.md).
 * **Settings**: You can configure various options of Assets view using **Settings**, such as, Metadata forms, Reports, and Taxonomy Management.
 
-<!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
+<!--
+ TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
 * **Libraries**: Access to [!DNL Adobe Creative Cloud Team] (CCT) Libraries view. This view is visible only if the user is entitled to CCT Libraries.
 -->
 
-<!-- TBD: My Work Space shows task inbox and it is not visible on AEM Cloud Demos as of now. It is the source of truth server hence not documenting My Work Space option for now.
+<!--
+ TBD: My Work Space shows task inbox and it is not visible on AEM Cloud Demos as of now. It is the source of truth server hence not documenting My Work Space option for now.
 -->
 
 You can open or collapse the left sidebar to increase the available asset-viewing area.
@@ -80,7 +82,8 @@ You can also preview videos.
 
 If you explicitly preview an asset, then [!DNL Assets view] displays it as a recently viewed asset.
 
-<!-- TBD: Describe the options.
+<!--
+ TBD: Describe the options.
 
 Explicitly previewed assets are displayed as recently viewed assets. Give screenshot of this.
 Other use cases after previewing.

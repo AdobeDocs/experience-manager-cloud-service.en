@@ -72,6 +72,7 @@ You can now deliver sites using Edge Delivery Services while continuing to autho
 For more information, see [Create Edge Delivery site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md#one-click-edge-delivery-site).
 
 * **Flexible publish tier configuration**
+
 Cloud Manager now lets you configure whether a publish tier is required for your program. This flexibility lets you set up environments that better match your chosen delivery architecture.
 
 For more information, see [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
@@ -89,7 +90,8 @@ For more information, see the following:
 
 To join the Beta, email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe OrgID and Program ID.
 
-<!-- OLD
+<!-- 
+OLD
 ### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
 
 [Experience Hub](/help/experience-hub.md) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI Extensions so they can help you enable them in Experience Hub with minimal effort.
@@ -101,7 +103,8 @@ Embed custom experiences in Experience Hub to extend and personalize your organi
 Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) with your Adobe OrgID and a short description of the customization you intend to create.
 -->
 
-<!-- OLD
+<!-- 
+OLD
 ### Support for Custom Author Domains in Cloud Service
 
 AEM Cloud Service is going to soon support one custom domain per Author environment.

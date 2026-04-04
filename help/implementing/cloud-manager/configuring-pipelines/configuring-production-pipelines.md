@@ -1,7 +1,7 @@
 ---
 title: Add a Production Pipeline
 description: Learn how to add a production pipeline to build and deploy your code to production environments.
-index: yes
+index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -255,7 +255,7 @@ The following configuration to disable publishing Dispatcher packages must be ad
   <activation>
     <property>
       <name>env.IGNORE_DISPATCHER_PACKAGES</name>
-      <value>!true</value>
+      <value>[!NOTE]rue</value>
     </property>
   </activation>
   <modules>

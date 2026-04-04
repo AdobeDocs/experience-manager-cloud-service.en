@@ -166,7 +166,7 @@ Table actions support content wrapping to control HTML structure in table cells:
 }
 ```
 
-#### Table Configuration Options {#table-configuration-options}
+#### Table Configuration Options {#table-configuration-options}
 
 * `wrapInParagraphs`: `false` (default) - Table cells contain unwrapped text content
 * `wrapInParagraphs`: `true` - Table cells wrap content in paragraph tags

@@ -15,8 +15,10 @@ You can use the following methods to upload one or more assets or a folder conta
 * Drag assets or folders on the user interface and follow the on-screen instructions.
 * Click **[!UICONTROL Add Assets]** option from the toolbar and add some files to the upload dialog.
 
-<!-- TBD: Update this GIF
-![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif) -->
+<!--
+ TBD: Update this GIF
+![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif)
+-->
 
 You can use any of these methods to upload assets after creating a folder. To create an empty folder, click **[!UICONTROL Create Folder]** from the toolbar. While [!DNL Assets view] offers a powerful, full-text search functionality, you can also use folders to organize your assets better.
 
@@ -79,7 +81,8 @@ If you attempt to upload duplicate assets, the assets are not uploaded until you
 >[!TIP]
 >
 >You can upload assets to the DAM repository directly from within your [!DNL Creative Cloud] desktop applications. 
-<!--TBD
+<!--
+TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
 
