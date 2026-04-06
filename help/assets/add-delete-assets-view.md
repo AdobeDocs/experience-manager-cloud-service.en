@@ -24,7 +24,7 @@ Once you have selected the files, you get a confirmation dialog to add more file
 
 Once all files are queued, click **[!UICONTROL Upload]**.
 
-![Upload files and folders](assets/upload-browse-files-folders.png)
+![Upload files and folders](assets/upload-files.png)
 
 *Figure: Before you upload the selected assets, you can add or remove assets from the queue.*
 
@@ -40,13 +40,13 @@ To track the upload progress, click **[!UICONTROL Upload Progress]** option on t
 
 To view a subset of assets based on the upload progress or status, use the filter in the **[!UICONTROL Upload Progress]** sidebar. The various filters are to display all assets, completed uploads, in-progress uploads, queued assets to be uploaded, paused uploads, duplicate assets, and assets that failed to upload.  
 
-![Filter the upload progress based on status of upload](assets/filter-upload-progress.png)
+![Filter the upload progress based on status of upload](assets/filter-progress.png)
 
 *Figure: Filter the assets that you attempted to upload based on their upload status or upload progress.*
 
 Immediately after the assets are uploaded, [!DNL Assets view] processes the assets to generate thumbnail and process metadata. For many assets, the processing takes some time. If do not see a thumbnail and see a processing message on the placeholder thumbnail, check the folder again after a few minutes. During processing, amongst other things, [!DNL Assets view] generates the renditions, adds smart tags, and indexes the asset details for search.
 
-![Assets are processes upon upload and the tile displays processing](assets/upload-processing.png)
+![Assets are processes upon upload and the tile displays processing](assets/upload-process.png)
 
 *Figure: Uploaded assets display processing on the tile these are processed.*
 
@@ -62,17 +62,17 @@ Immediately after the assets are uploaded, [!DNL Assets view] processes the asse
 
 If upload of a supported asset fails for some reason, click **[!UICONTROL Retry]** from the [!UICONTROL Upload Progress] pane.
 
-![Retry a failed upload](assets/upload-retry.png)
+![Retry a failed upload](assets/upload-failed.png)
 
 *Figure: Retry if a supported file fails to upload for some reason.*
 
 If you attempt to upload duplicate assets, the assets are not uploaded until you explicitly confirm the upload. At first, the duplicate assets are marked as failed uploads. To resolve, you can simply create a version, delete and replace the existing assets, or create a duplicate copy by renaming the asset. You can resolve such failures one asset at a time or do it in bulk for all failed duplicates in one go.
 
-![Manage duplicate assets one at a time](assets/uploads-manage-duplicates.png)
+![Manage duplicate assets one at a time](assets/duplicate-new.png)
 
 *Figure: For duplicate assets that fail to upload by default, resolve the issue one asset at a time.*
 
-![Manage all failed uploads in bulk](assets/upload-progress-manage-failed-uploads.png)
+![Manage all failed uploads in bulk](assets/manage-duplicate.png)
 
 *Figure: For duplicate assets that fail to upload by default, resolve issues for all assets at once.*
 
