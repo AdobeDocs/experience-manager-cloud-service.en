@@ -89,11 +89,11 @@ Users can delete individual assets or folders that are no longer required. To de
 
 * Use the option available on an asset's or a folder's thumbnail.
 
-  ![Options on asset thumbnail to manage an asset](assets/options-on-thumbnail.png)
+  ![Options on asset thumbnail to manage an asset](assets/delete-new.png)
 
   *Figure: Actions for files and folders are available on the asset or folder tile.*
 
-* Select an asset or a folder and click **[!UICONTROL Delete]** ![delete icon](assets/delete-new.png) in the toolbar.
+* Select an asset or a folder and click **[!UICONTROL Delete]** ![delete icon](assets/do-not-localize/delete-icon.png) in the toolbar.
 
 ## Next Steps {#next-steps}
 
