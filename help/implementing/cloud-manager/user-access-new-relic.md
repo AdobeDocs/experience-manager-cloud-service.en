@@ -29,6 +29,8 @@ New Relic One APM for AEM as a Cloud Service has many features.
 
 * Holistic performance optimization by combining key metrics from infrastructure-level monitoring and application (Adobe Experience Manager) monitoring.
 
+* Automatic deployment markers for Cloud Manager pipeline executions, giving teams the ability to correlate deployments with application performance changes directly in New Relic One.
+
 ## Activate your New Relic One sub-account {#activate-sub-account}
 
 For a newly created program, a New Relic One sub-account is created for you. However, you must activate it for it to ingest data. This activation is not automatic. Follow these steps to activate your sub-account.
@@ -134,6 +136,63 @@ If you are asked to verify your email during login to New Relic One, it means th
 If you do not verify your email address, New Relic attempts to log you in with the most recently created user record associated with your email address. To avoid verifying your email during each login, click the **Remember Me** checkbox in the login screen.
 
 For more help, open a support ticket by way of the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+
+## Deployment markers {#deployment-markers}
+
+Cloud Manager automatically sends deployment markers to New Relic One whenever supported pipeline executions are complete. These markers appear as change events in New Relic's **Change Tracking** view, letting your team correlate deployments with shifts in application performance, error rates, and throughput.
+
+See also [Introduction to change tracking](https://docs.newrelic.com/docs/change-tracking/overview/) and [Record and view deployments](https://docs.newrelic.com/docs/apm/apm-ui-pages/events/record-deployments/).
+
+### Supported pipelines {#supported-pipelines}
+
+The following Cloud Manager pipeline types generate deployment markers in New Relic One:
+
+| Pipeline | Description |
+|---|---|
+| **AEM update** | AEM version upgrades. For example, from version {} to version {}. Markers are created when the environment change event completes. |
+| **Full-stack (CI_CD deploy)** | Full-stack pipeline executions. The marker includes the pipeline name and execution ID. |
+| **Web tier config** | Web tier configuration pipeline executions. The marker includes the pipeline name and execution ID. |
+| **Front-end** | Front-end pipeline executions. The marker includes the pipeline name and execution ID. |
+| **Config** | Configuration pipeline executions. The marker includes the pipeline name and execution ID. |
+| **Restore code** | Code restores operations from a specific repository and branch. |
+
+>[!NOTE]
+>
+>Deployment markers are currently supported only for Skyline environments. Pipelines that are out of scope, such as scale-up pipelines and service pack pipelines, do not generate markers.
+
+### View deployment markers in New Relic One {#view-deployment-markers}
+
+After a supported pipeline execution completes, you can view the corresponding deployment marker in New Relic One.
+
+**To view deployment markers in New Relic One:**
+
+1. [Access New Relic One](#accessing-new-relic) by way of Cloud Manager or directly.
+1. Navigate to **APM & Services** and select the application for the relevant environment.
+1. On the application summary page, look for deployment marker indicators on the **Web transactions time** chart. Hover over a marker to see deployment details, including the pipeline name and execution ID.
+1. To view a full list of deployment markers, in the left sidebar, under **Events**, click **Change tracking**. 
+
+   The **Change events** table shows each deployment with its timestamp and version description.
+
+   ![Change tracking option with Change events table showing](/help/implementing/cloud-manager/assets/new-relic/new-relic-change-tracking.png)
+
+1. Click any change event in the table to open a detailed view. 
+
+   ![Deployment attributes panel with the deepLink URL highlighted](/help/implementing/cloud-manager/assets/new-relic/new-relic-deeplink.png) <i>Detailed view of a change event.</i>
+
+   The **Change details** panel on the right shows, among other things, the Entity, Timestamp, Epoch, Category, Deployment ID, and API type. 
+   
+   For each deployment marker that Cloud Manager sends to New Relic One, the **Deployment attributes** panel near the lower right shows the following attributes:
+
+   | Attribute | Description |
+   |---|---|
+   | **version** | A description string that includes the pipeline name, environment tier (Stage/Prod), and execution ID. |
+   | **changelog** | Reserved for future use. |
+   | **commit** | Reserved for future use. |
+   | **deepLink** | Click the URL to link back to the pipeline execution page in Cloud Manager. |
+
+>[!TIP]
+>
+>Use deployment markers alongside New Relic One's performance indicators, such as **Response time** and **Throughput**, to identify whether a particular deployment introduced performance regressions or improvements. You can compare metrics from before and after a deployment directly on the change event detail page.
 
 ## Troubleshoot New Relic One user access {#troubleshooting}
 
