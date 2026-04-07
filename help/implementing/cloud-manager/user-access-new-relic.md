@@ -29,7 +29,7 @@ New Relic One APM for AEM as a Cloud Service has many features.
 
 * Holistic performance optimization by combining key metrics from infrastructure-level monitoring and application (Adobe Experience Manager) monitoring.
 
-* Automatic deployment markers for Cloud Manager pipeline executions, giving teams the ability to correlate deployments with application performance changes directly in New Relic One.
+* Automatic deployment markers for Cloud Manager pipeline executions, AEM upgrades and Code Restore, giving teams the ability to correlate deployments with application performance changes directly in New Relic One.
 
 ## Activate your New Relic One sub-account {#activate-sub-account}
 
