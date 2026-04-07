@@ -37,17 +37,13 @@ To understand and work with the technologies covered here you should have:
 * Familiarity with AEM Content Fragments and Content Fragment Models
 * Understanding of your Content Fragment models
 
-## Create a template {#create-a-template}
+## Using a template in AEM {#using-a-template-in-aem}
 
-<!-- CQDOC-23232-CF-VTemplates - needs content -->
+For details of how to use your template in AEM see:
 
-## Upload a template {#upload-a-template}
-
-<!-- CQDOC-23232-CF-VTemplates - needs content -->
-
-## Assign a template {#assign-a-template}
-
-<!-- CQDOC-23232-CF-VTemplates - needs content -->
+* [Visual Content Fragments - uploading and assigning your templates](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md)
+* [Preview action for a selected fragment - from the console](/help/sites-cloud/administering/content-fragments/managing.md#actions-selected-content-fragment)
+* [Preview your fragment - from the fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md#preview-content-fragment)
 
 ## Handlebars - the (very) basics {#handlebars-the-very-basics}
 

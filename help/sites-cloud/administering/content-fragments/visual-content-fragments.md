@@ -26,7 +26,22 @@ A template is associated with a Content Fragment Model so that it can be used wi
 
 To upload your new HTML template:
 
-<!-- CQDOC-23232-CF-VTemplates - needs content -->
+1. In the Content Fragment console open the tab for **Content Fragment Models**.
+1. Navigate to the location of your fragment model.
+1. Select the information icon (i) for the required model. The right panel will be shown. 
+1. Scroll down to show **HTML Templates**, the **Generic Template** is already listed as it is the default:
+
+   ![Preview Fragment with Generic HTML Template](/help/sites-cloud/administering/content-fragments/assets/cf-visual-html-template-configure-default.png)
+
+1. Select **+** to upload your template from an HTML file (`.html`). A dialog will allow you to **Browse** your local file system and select your template file.
+1. Once uploaded two views of the template are shown for you to review:
+
+   ![Review HTML template on upload](/help/sites-cloud/administering/content-fragments/assets/cf-visual-html-template-upload-review.png)
+1. Select **Next** to continue.
+1. Enter a **Template name** for use in AEM.
+1. Confirm with **Create Template**.
+1. The template will be created in AEM and listed under **HTML Templates**.
+   Once loaded it can be used for [previewing fragments](#preview-your-fragment-with-a-template). You can also **[Download](#download-your-template)** or **[Delete](#download-your-template)** the template.
 
 ## Preview your fragment with a Template {#preview-your-fragment-with-a-template}
 
@@ -56,25 +71,35 @@ In both cases a new model window will open.
 
 For example, preview with the **Generic Template**:
 
-<!-- CQDOC-23232-CF-VTemplates - new screenshot -->
+<!-- CQDOC-23232-CF-VTemplates - new screenshot? -->
 
 ![Preview Fragment with Generic HTML Template](/help/sites-cloud/administering/content-fragments/assets/cf-visual-html-template-referenced-fragment.png)
 
 ## Deliver your visual fragment {#deliver-your-visual-fragment}
 
-The visual fragment can be delivered by 
-
-<!-- CQDOC-23232-CF-VTemplates - needs content -->
+The visual fragment can be delivered by directly accessing the html using either the **Preview URL** or the **Publish URL**.
 
 ## Download your Template {#download-your-template}
 
 To download your new HTML template from AEM:
 
-<!-- CQDOC-23232-CF-VTemplates - needs content -->
+1. In the Content Fragment console open the tab for **Content Fragment Models**.
+1. Navigate to the location of your fragment model.
+1. Select the information icon (i) for the required model. The right panel will be shown. 
+1. Scroll down to show **HTML Templates**.
+1. Select the ellipse by the template you want to download.
+1. Select **Download**.
+1. Specify the file name and location.
+1. Confirm with **Save**.
 
 ## Delete your Template {#delete-your-template}
 
 To delete your new HTML template (from AEM):
 
-<!-- CQDOC-23232-CF-VTemplates - needs content -->
-
+1. In the Content Fragment console open the tab for **Content Fragment Models**.
+1. Navigate to the location of your fragment model.
+1. Select the information icon (i) for the required model. The right panel will be shown. 
+1. Scroll down to show **HTML Templates**.
+1. Select the ellipse by the template you want to download.
+1. Select **Delete**.
+1. In the following dialog confirm the action with **Delete**.

@@ -89,7 +89,7 @@ The main/right panel (table view) of the console provides a range of information
 
 * **Title**
   * A padlock icon indicates that the fragment is [checked out](#check-out-and-check-in) and locked by one user; selecting the padlock icon shows details of the account that has checked out the fragment.
-  * The information (i) icon provides quick access to additional, fragment specific, information in the right panel. 
+  * The information (i) icon provides quick access to additional, fragment specific, information and configuration options in the right panel. 
 * **Name**
   * Provides a link to open the fragment in the editor.
 * **Model**
@@ -182,7 +182,7 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 * **[Manage Tags](#manage-tags)**
 * **[Copy](#copy-a-content-fragment)**
 * **[Replace](#find-and-replace)**
-* **[Preview](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md#preview-your-template-with-a-template)**
+* **[Preview](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md#preview-your-fragment-with-a-template)**
 * **Move**
 * **Rename**
 * **[Check Out and Check In](#check-out-and-check-in)**

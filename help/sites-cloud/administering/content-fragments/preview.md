@@ -49,7 +49,7 @@ See:
 
 * [Unpublishing a fragment](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) for full details.
 
-## Preview in an external Application {#preview-in-an-external-application}
+## Preview in an external application {#preview-in-an-external-application}
 
 The Content Fragment editor provides authors with the option to preview their edits in an external frontend application. 
 
@@ -75,7 +75,7 @@ Available expressions are:
 
 When the URL has been defined, the **[Preview](/help/sites-cloud/administering/content-fragments/authoring.md#preview-content-fragment)** button is active in the top toolbar of the editor. You can select this button to launch the external application (in a separate tab) to render the Content Fragment. 
 
-### Preview a fragment in the external Application {#preview-a-fragment-in-the-external-application}
+### Preview in the external application {#preview-in-the-external-application}
 
 You can preview a Content Fragment in an external application:
 
