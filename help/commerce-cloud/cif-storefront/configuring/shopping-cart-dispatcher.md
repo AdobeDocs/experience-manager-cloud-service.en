@@ -4,7 +4,7 @@ description: Shopping Cart and Dispatcher Setup
 feature: Commerce Integration Framework
 role: Admin
 exl-id: 2ce424a7-6bf4-4482-b5cb-5a7998a294e9
-index: no
+index: false
 ---
 
 # Shopping Cart and Dispatcher Setup

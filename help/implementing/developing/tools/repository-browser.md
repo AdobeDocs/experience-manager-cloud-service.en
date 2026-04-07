@@ -72,7 +72,8 @@ For publish, by default, the Repository Browser only shows public content, there
 
 To make those locations visible, please use the AEM Administrators Publish Product Profile. For more info, see the [Team and Product Profiles documentation](/help/onboarding/aem-cs-team-product-profiles.md).
 
-<!-- Drafting because of CQDOC-23204
+<!--
+ Drafting because of CQDOC-23204
 
 1. Click the three dots next to the environment of your choice and select **Manage Access**
 

@@ -2,7 +2,7 @@
 title: Setting Up Microsoft Copilot Studio with AEM MCP
 description: Learn how to configure Microsoft Copilot Studio to connect to AEM MCP servers
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: c8e96fe6-1a05-47c0-8215-0c28705e5e48
 ---
 # Setting Up Microsoft Copilot Studio with AEM MCP {#setup-microsoft-copilot-studio}
