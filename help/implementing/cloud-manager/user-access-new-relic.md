@@ -147,7 +147,7 @@ See also [Introduction to change tracking](https://docs.newrelic.com/docs/change
 
 The following Cloud Manager pipeline types generate deployment markers in New Relic One:
 
-| Pipeline | Description |
+| Pipeline type | Description |
 |---|---|
 | **AEM update** | AEM version upgrades. For example, from version {} to version {}. Markers are created when the environment change event completes. |
 | **Full-stack (CI_CD deploy)** | Full-stack pipeline executions. The marker includes the pipeline name and execution ID. |
