@@ -37,6 +37,7 @@ To upload your new HTML template:
 1. Once uploaded two views of the template are shown for you to review:
 
    ![Review HTML template on upload](/help/sites-cloud/administering/content-fragments/assets/cf-visual-html-template-upload-review.png)
+
 1. Select **Next** to continue.
 1. Enter a **Template name** for use in AEM.
 1. Confirm with **Create Template**.
