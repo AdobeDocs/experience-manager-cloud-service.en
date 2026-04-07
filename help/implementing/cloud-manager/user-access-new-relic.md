@@ -139,7 +139,7 @@ For more help, open a support ticket by way of the [AEM Support Portal](https://
 
 ## Deployment markers {#deployment-markers}
 
-Cloud Manager automatically sends deployment markers to New Relic One whenever supported pipeline executions are complete. These markers appear as change events in New Relic's **Change Tracking** view, letting your team correlate deployments with shifts in application performance, error rates, and throughput.
+Cloud Manager automatically sends deployment markers to New Relic One whenever supported pipeline executions, AEM upgrades and Code Restore are complete. These markers appear as change events in New Relic's **Change Tracking** view, letting your team correlate deployments with shifts in application performance, error rates, and throughput.
 
 See also [Introduction to change tracking](https://docs.newrelic.com/docs/change-tracking/overview/) and [Record and view deployments](https://docs.newrelic.com/docs/apm/apm-ui-pages/events/record-deployments/).
 
