@@ -16,8 +16,6 @@ This page explains how to create custom Handlebars templates for rendering Adobe
 >
 >See [Visual Content Fragments](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md) for uploading, assigning and using your template in AEM.
 
-<!-- CQDOC-23232-CF-VTemplates - need a section about the Generic Template? -->
-
 ## What you will learn {#what-you-will-learn}
 
 In particular, this page covers:
@@ -28,6 +26,10 @@ In particular, this page covers:
 * Handling multi-valued fields
 * Creating loops and conditional logic
 * Best practices of template design for Content Fragments
+
+Together with:
+
+* References for [how to use your templates in AEM](#using-a-template-in-aem)
 
 ## Prerequisites {#prerequisites}
 

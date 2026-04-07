@@ -72,13 +72,11 @@ In both cases a new model window will open.
 
 For example, preview with the **Generic Template**:
 
-<!-- CQDOC-23232-CF-VTemplates - new screenshot? -->
-
 ![Preview Fragment with Generic HTML Template](/help/sites-cloud/administering/content-fragments/assets/cf-visual-html-template-referenced-fragment.png)
 
 ## Deliver your visual fragment {#deliver-your-visual-fragment}
 
-The visual fragment can be delivered by directly accessing the html using either the **Preview URL** or the **Publish URL**.
+The visual fragment can be delivered by directly accessing the HTML using either the **Preview URL** or the **Publish URL**.
 
 ## Download your Template {#download-your-template}
 
