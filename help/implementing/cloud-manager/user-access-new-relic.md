@@ -29,7 +29,7 @@ New Relic One APM for AEM as a Cloud Service has many features.
 
 * Holistic performance optimization by combining key metrics from infrastructure-level monitoring and application (Adobe Experience Manager) monitoring.
 
-* Automatic change trackers for Cloud Manager pipeline executions, AEM upgrades, and Code Restore operations. These trackers let teams correlate deployments with application performance changes directly in New Relic One.
+* Automatic change trackers for Cloud Manager pipeline executions, AEM upgrades and Code Restore operations. These trackers let teams correlate deployments with application performance changes directly in New Relic One.
 
 ## Activate your New Relic One sub-account {#activate-sub-account}
 
@@ -139,7 +139,7 @@ For more help, open a support ticket by way of the [AEM Support Portal](https://
 
 ## Use change tracker {#change-tracker}
 
-Cloud Manager automatically sends change trackers to New Relic One whenever supported pipeline executions, AEM upgrades, and Code Restore are complete. These trackers appear as change events in New Relic's **Change Tracking** view, letting your team correlate deployments with shifts in application performance, error rates, and throughput.
+Cloud Manager automatically sends change trackers to New Relic One whenever supported pipeline executions, AEM upgrades and Code Restore are complete. These trackers appear as change events in New Relic's **Change Tracking** view, letting your team correlate deployments with shifts in application performance, error rates, and throughput.
 
 <!-- See also [Introduction to change tracking](https://docs.newrelic.com/docs/change-tracking/overview/) and [Record and view deployments](https://docs.newrelic.com/docs/apm/apm-ui-pages/events/record-deployments/). -->
 
@@ -168,7 +168,7 @@ After a supported pipeline execution completes, you can view the corresponding c
 
 1. [Access New Relic One](#accessing-new-relic) by way of Cloud Manager or directly.
 1. Navigate to **APM & Services** and select the application for the relevant environment.
-1. On the application summary page, look for change tracker indicators on the **Web transactions time** chart. Hover over a tracker to see deployment details.
+1. On the application summary page, look for change tracker indicators on the chart. Hover over a tracker to see deployment details.
 
    ![Change tracker indicators on the Web transactions time chart](/help/implementing/cloud-manager/assets/new-relic/new-relic-web-transactions-time.png)
 
@@ -188,7 +188,7 @@ After a supported pipeline execution completes, you can view the corresponding c
 
    | Attribute | Description |
    |---|---|
-   | **version** | A description string that includes the pipeline name, environment tier (Stage/Prod), and execution ID. |
+   | **version** | A description string that includes the pipeline name, and execution ID. |
    | **changelog** | Reserved for future use. |
    | **commit** | Reserved for future use. |
    | **deepLink** | Click the URL to link back to the pipeline execution page in Cloud Manager. |
