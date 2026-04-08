@@ -82,9 +82,9 @@ While the right panel enables you to:
 
   * **Publish Ready**; Enabling this toggle will automatically publish the fragments when the launch is promoted to the source.
 
-* And also define:
+* Define a **Promote Date** and Time: if the [launch is to be automatically promoted](#promote-automatically)
 
-  * A **Promote Date** and Time: if the [launch is to be automatically promoted](#promote-automatically)
+* View, and take further action on, **[Jobs](#jobs-history)** that have been run (**Compare Launch to Source**)
 
 ## Create a Launch {#create-a-launch}
 
@@ -197,7 +197,6 @@ It is recommended that before any Rebase or Promote action you always compare th
        * Source: blue
        * Launch: pink
        * Conflicts: yellow
-   * The [Promote](#promote-a-launch-to-source) and [Rebase](#rebase-a-launch-from-source) actions are available from the top right.
    * **Updates found**: In the upper left, a summary of all updates is displayed. The number of source updates in blue, the number of launch updates in pink, and updates to both (conflicts) in yellow. 
      * The eye icons allow you to show, or hide, the actual content updates for a clearer overview.
    * **Include** sliders allow you to define the Content Fragments to be included in the subsequent Promote or Rebase operation:
@@ -211,7 +210,32 @@ It is recommended that before any Rebase or Promote action you always compare th
    * Fragment content is displayed at field-level (Content Fragment element/datatype-level); with highlights indicating changes. 
    * Select **View** to recompute the differences.
 
+1. The [Promote](#promote-a-launch-to-source) and [Rebase](#rebase-a-launch-from-source) actions are available from the top right.
+
+1. **Back** returns you to the console. If you want to review these specific differences again you can view the **[Jobs](#jobs-history)** entries.
+
    ![Compare Source and Launch](/help/sites-cloud/administering/content-fragments/assets/cf-launches-compare.png)
+
+## Jobs history {#jobs-history}
+
+1. Navigate to the Content Fragments console.
+
+1. Open the **Launches** tab.
+
+1. Select your launch, the information panel will open at the right.
+
+1. In the **Jobs** section you see **launchDifferences** entries for each of the **Compare to Source** jobs that have been run:
+
+   ![Jobs history](/help/sites-cloud/administering/content-fragments/assets/cf-launches-jobs.png)
+
+1. Select:
+
+   * The magnifying glass icon to open full details for a specific job.
+     This returns to you the **[Compare Launch to Source](#compare-launch-to-source)** view, with the available actions.
+   * **View log** to see an overview of details for all jobs. 
+     From here you can also select a specific job and then show the **Results**. This takes you back to the **[Compare Launch to Source](#compare-launch-to-source)** view, with the available actions.
+
+   Both of these actions take you to the appropriate **Compare Launch to Source** job. From here you can **[Rebase](#rebase-a-launch-from-source)** or **[Promote](#promote-a-launch-to-source)** your launch as it was at that point.
 
 ## Rebase a Launch (from Source) {#rebase-a-launch-from-source}
 
