@@ -131,6 +131,10 @@ We strongly recommend using version >= `1.3.2` of the Jackrabbit `filevault-pack
 Most AEM indexes can be configured using Simplified Index Management.
 This provides a simple way to define custom indexes and customize out-of-the-box (OOTB) indexes, using one JSON file.
 
+>[!TIP]
+>
+>There is an online tool that helps configuring AEM indexes: [Oak Indexing Tools](https://oak-indexing.github.io/oakTools/index.html). It has [a section on simplified index management](https://oak-indexing.github.io/oakTools/simplified.html) with a step-by-step guide and additional tools to help converting custom index to this new format.
+
 Limitations: Simplified Index Management is not currently available for indexes that include `/apps`, `/libs`. It can be used for all indexes that have an `includedPaths` property of eg. `/content`. For indexes without an `includedPaths` property, or if the `includedPaths` contains `/apps` or `/libs`, consider changing the query, or, alternatively, use the Legacy Index Configurations mode below.
 
 Simplified Index Management is able to customize existing Out-of-the-box (OOTB) and add fully custom indexes. With Simplified Index Management, there is no need to copy definitions, or to explicitly define versions. Customizations of index definitions are automatically merged with the latest out-of-the-box index, and if needed, a new index version is automatically created whenever it is needed.
