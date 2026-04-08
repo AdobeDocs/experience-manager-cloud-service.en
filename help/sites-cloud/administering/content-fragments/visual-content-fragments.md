@@ -53,9 +53,11 @@ To preview your Content Fragment using a template:
 >As the **Generic Template** is always available you can preview your fragment without loading any customized templates.
 
 1. In the Content Fragment console navigate to the location of your fragment.
+
 1. Either:
-   * Select your fragment in the console
-   * Open your fragment in the editor
+   * select your fragment in the console
+   * open your fragment in the editor
+
 1. Select **Preview** from the top toolbar of:
 
    * the Content Fragment console 
@@ -67,7 +69,9 @@ In both cases a new model window will open.
 
    * displays the fields of your fragment in table form; name and content
    * shows the content of referenced fragments in separate tables, with the same format
-1. If customized templates are available, you can select the template you want to use (including the **Generic Template**)
+
+1. If customized templates are available, you can select the template you want to use (including the **Generic Template**).
+
 1. If configured you can also select the **Preview URL** and the **Publish URL**.
 
 For example, preview with the **Generic Template**:
@@ -78,28 +82,28 @@ For example, preview with the **Generic Template**:
 
 The visual fragment can be delivered to a range of targets by directly accessing the HTML.
 
-### Deliver your visual fragment to the browser {#deliver-your-visual-fragment-to-the-browser}
+### Deliver to the browser {#deliver-to-the-browser}
 
 Copy the **Preview URL** or the **Publish URL** and access this directly from your browser. 
 
 The HTML representation of your fragment is seen.
 
-### Deliver your visual fragment to Edge Delivery Services {#deliver-your-visual-fragment-to-edge-delivery-services}
+### Deliver to Edge Delivery Services {#deliver-to-edge-delivery-services}
 
 You can deliver your visual fragment in an Edge Delivery Service (EDS) page.
 
 1. Navigate to your EDS Project.
-1. Add, or access, a **[Block](https://www.aem.live/developer/block-collection)** of the type [embed](https://sidekick-library--aem-block-collection--adobe.aem.page/tools/sidekick/library.html?plugin=blocks&path=/block-collection/embed&index=0).
+1. Add, or access, a **[Block](https://www.aem.live/developer/block-collection)** of the type **[embed](https://sidekick-library--aem-block-collection--adobe.aem.page/tools/sidekick/library.html?plugin=blocks&path=/block-collection/embed&index=0)**.
 1. Paste the **Publish URL** to the block.
 1. Publish your EDS page. The HTML representation of your fragment is seen.
 
-### Deliver your visual fragment to an AEM page {#deliver-your-visual-fragment-to-ean-AEM-page}
+### Deliver to an AEM page {#deliver-to-an-AEM-page}
 
 You can deliver your visual fragment a Content Fragment component on your AEM page.
 
 When configuring a **Content Fragment** [component on your page](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page):
 
-1. Select **Content Fragment Visualization**
+1. Select **Content Fragment Visualization**.
 1. Select the required **Visualization Template**.
 
    ![Configure Content Fragment component for a visual fragment](/help/sites-cloud/administering/content-fragments/assets/cf-visual-template-aem-page.png)
@@ -107,6 +111,12 @@ When configuring a **Content Fragment** [component on your page](/help/sites-clo
 1. The visual fragment will be shown, and the page can be published.
 
 <!-- CQDOC-23232 - update page authoring for fragments? -->
+
+### Deliver to an external application {#deliver-to-an-external-application}
+
+You can deliver your visual fragment to an external application. 
+
+See [Preview in an external application](/help/sites-cloud/administering/content-fragments/preview.md#preview-in-an-external-application), though the same principles apply with the **Publish URL**.
 
 ## Download your template {#download-your-template}
 
