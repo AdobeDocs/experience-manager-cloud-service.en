@@ -21,11 +21,11 @@ Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 1. SREs are monitoring system health 24/7 and action is taken as early as possible.
 1. Index configuration is changed via deployments. Index definition changes are configured like other content changes.
 1. At a high level on AEM as a Cloud Service, with the introduction of the [rolling deployment model](#index-management-using-rolling-deployments), two sets of indexes exist: one for the old version, and one for the new version.
-1. Customers can see whether the indexing job is complete on the Cloud Manager build page and receives a notification when the new version is ready to take traffic.
+1. Customers can see whether the indexing job is complete on the Cloud Manager build page and receive a notification when the new version is ready to take traffic.
 
 Limitations:
 
-* Currently, index management on AEM as a Cloud Service is only supported for indexes of type `lucene`. This means that all index customisations must be of type `lucene`. The `async` property can only be one of the following: `[async]`, `[async,nrt]` or `[fulltext-async]`.
+* Currently, index management on AEM as a Cloud Service is only supported for indexes of type `lucene`. This means that all index customizations must be of type `lucene`. The `async` property can only be one of the following: `[async]`, `[async,nrt]` or `[fulltext-async]`.
 * Internally, other indexes might be configured and used for queries. For example, queries that are written against the `damAssetLucene` index might, on AEM as a Cloud Service, in fact be executed against an Elasticsearch version of this index. This difference is  not visible to the user. However, certain tools such as the `explain` feature report a different index. For differences between Lucene indexes and Elastic indexes, see [the Elastic documentation in Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Customers do not need to, and cannot, configure Elasticsearch indexes directly.
 * Only standard analyzers are supported (that is, those analyzers that are shipped with the product). Custom analyzers are not supported.
 * Search by similar feature vectors (`useInSimilarity = true`) is not supported.  
@@ -33,7 +33,6 @@ Limitations:
 >[!TIP]
 >
 >For more details on the Oak indexing and queries, including a detailed description of advanced search and indexing features, see the [Apache Oak documentation](https://jackrabbit.apache.org/oak/docs/query/query.html).
-
 
 ## How to Use {#how-to-use}
 
@@ -45,6 +44,173 @@ Index definitions can be categorized into three primary use cases, as follows:
 
 For both points 1 and 2 above, you need to create an index definition as part of your custom code base in the respective Cloud Manager release schedule. For more information, see the [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md) documentation.
 
+If a change in the index configuration is needed, ensure that your configuration conforms to the guidelines provided in the [Project Configuration](#project-configuration) section. Make any necessary adaptations accordingly.
+
+## Project Configuration
+
+We strongly recommend using version >= `1.3.2` of the Jackrabbit `filevault-package-maven-plugin`. The steps to incorporate it into your project are as follows: 
+
+1. If needed, update the version in the top-level `pom.xml`:
+
+    ```xml
+    <plugin>
+        <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>filevault-package-maven-plugin</artifactId>
+            ...
+            <version>1.3.2</version>
+        ...
+    </plugin>
+    ```
+
+2. Add the following to the top-level `pom.xml`:
+
+    ```xml
+    <jackrabbit-packagetype>
+        <options>   
+            <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+        </options>
+    </jackrabbit-packagetype>
+    ```
+
+    Here is a sample of the project's top-level `pom.xml` file with the aforementioned configurations included:
+
+    Filename: `pom.xml`
+
+    ```xml
+    <plugin>
+        <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>filevault-package-maven-plugin</artifactId>
+            ...
+            <version>1.3.2</version>
+            <configuration>
+                ...
+                <validatorsSettings>
+                    <jackrabbit-packagetype>
+                        <options>
+                            <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+                        </options>
+                    </jackrabbit-packagetype>
+                    ...
+                ...
+    </plugin>
+    ```
+
+3. In `ui.apps/pom.xml` and `ui.apps.structure/pom.xml`, it is necessary to enable the `allowIndexDefinitions` and `noIntermediateSaves` options in the `filevault-package-maven-plugin`. Enabling `allowIndexDefinitions` allows for custom index definitions, while `noIntermediateSaves` ensures that the configurations are added atomically. 
+
+    Filenames: `ui.apps/pom.xml` and `ui.apps.structure/pom.xml`
+
+    ```xml
+    <plugin>
+        <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>filevault-package-maven-plugin</artifactId>
+            <configuration>
+                <allowIndexDefinitions>true</allowIndexDefinitions>
+                <properties>
+                    <cloudManagerTarget>none</cloudManagerTarget>
+                    <noIntermediateSaves>true</noIntermediateSaves>
+                </properties>
+        ...
+    </plugin>
+    ```
+
+4. Add a filter for `/oak:index` in `ui.apps.structure/pom.xml`:
+
+    ```xml
+    <filters>
+        ...
+        <filter><root>/oak:index</root></filter>
+    </filters>
+    ```
+
+>[!TIP]
+>
+>For more details on the required package structure for AEM as a Cloud Service, see [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
+
+## Simplified Index Management using the Diff Index
+
+Most AEM indexes can be configured using Simplified Index Management.
+This provides a simple way to define custom indexes and customize out-of-the-box (OOTB) indexes, using one JSON file.
+
+Limitations: Simplified Index Management is not currently available for indexes that include `/apps`, `/libs`. It can be used for all indexes that have an `includedPaths` property of eg. `/content`. For indexes without an `includedPaths` property, or if the `includedPaths` contains `/apps` or `/libs`, consider changing the query, or, alternatively, use the Legacy Index Configurations mode below.
+
+Simplified Index Management is able to customize existing Out-of-the-box (OOTB) and add fully custom indexes. With Simplified Index Management, there is no need to copy definitions, or to explicitly define versions. Customizations of index definitions are automatically merged with the latest out-of-the-box index, and if needed, a new index version is automatically created whenever it is needed.
+
+For most indexes, custom indexes and customizations to existing indexes can be done using a `diff.index`. To configure such an index, use the following step-by-step guide. In this example, we will customize the `damAssetLucene` index, and at the same time introduce a fully custom index. The process is as follows:
+
+1. Create a new folder in the `ui.apps` directory named `ui.apps/src/main/content/jcr_root/_oak_index/diff.index`.
+
+2. Add a configuration file `.content.xml` with the following content: `ui.apps/src/main/content/jcr_root/_oak_index/diff.index/.content.xml`
+
+    ```<?xml version="1.0" encoding="UTF-8"?><jcr:root
+        xmlns:jcr="http://www.jcp.org/jcr/1.0"
+        xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+        jcr:primaryType="nt:unstructured"
+        type="lucene" includedPaths="/same" queryPaths="/same" async="async">
+    <diff.json jcr:primaryType="nt:file"/></jcr:root>
+    ```
+
+3. Add a text file `diff.json` with the following content.
+In this example, we customize the out-of-the-box index `damAssetLucene` to additionally index the property named `test`, and in addition to that, a fully custom index named `acme.testIndex` that indexes the property `testing` in `nt:unstructured` nodes:
+
+    `ui.apps/src/main/content/jcr_root/_oak_index/diff.index/diff.json`
+
+    ```{
+		"damAssetLucene": {
+			"indexRules": {
+				"dam:Asset": {
+					"properties": {
+						"test": {
+							"name": "test",
+							"propertyIndex": true
+						}
+					}
+				}
+			}
+		},
+		"acme.testIndex": {
+            "async": [ "async" ],
+            "compatVersion": 2,
+            "evaluatePathRestrictions": true,
+            "includedPaths": [ "/content" ],
+            "queryPaths": [ "/content" ],
+            "selectionPolicy": "tag",
+            "tags": [ "testing" ],
+            "type": "lucene",
+            "indexRules": {
+                "nt:unstructured": {
+                    "properties": {
+                        "testing": {
+                        "name": "testing",
+                        "propertyIndex": true
+                    }
+                }
+            }
+        }
+	}
+    ```
+
+3. Add an entry to the FileVault filter in `ui.apps/src/main/content/META-INF/vault/filter.xml`:
+
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <workspaceFilter version="1.0">
+        ...
+        <filter root="/oak:index/diff.index"/> 
+    </workspaceFilter>
+    ```
+
+After applying the changes, deploy the new application using Cloud Manager. This deployment initiates two jobs, responsible for adding (and merging if necessary) the index definitions to MongoDB and Azure Segment Store for author and publish, respectively. Prior to the switch, the underlying repositories undergo reindexing with the updated index definitions.
+
+## Legacy Index Configurations
+
+Indexes that can not be configured using Simplified Index Management
+need to use the legacy configuration mode.
+
+The rest of the document only applies for indexes that do not have an `includedPaths` property, or that have a property which covers `/apps`, `/libs`, and `/`. There are some out-of-the-box indexes that do cover these paths, namely:
+
+* `cqPageLucene`: If you need to customize this index, consider migrating your queries to use `cqPageContent` instead, which has an `includedPaths` of `/content`, and a tag.
+* `ntBaseLucene`: Best practise is to avoid changing this index, and instead using a fully custom index with a prefix such as `acme.`, which covers only the required paths. See the section Simplified Index Management for details.
+
 ## Index Names {#index-names}
 
 An index definition can fall into one of the following categories:
@@ -53,7 +219,7 @@ An index definition can fall into one of the following categories:
 
 2. Customization of an OOTB index. To customize an OOTB index, append `-custom-` followed by a number. For example, `/oak:index/damAssetLucene-8-custom-1` is the customization of the OOTB index `/oak:index/damAssetLucene-8`. A customization is typically a copy of the OOTB index, plus additional properties that need to be indexed.
 
-3. Fully custom index: trueou can create an entirely new index from scratch. These indexes also need to end with `-custom-` and a version number. In addition, to avoid naming conflicts, use a prefix in the index name. For instance: `/oak:index/acme.product-1-custom-2`, where `acme.` is the prefix.
+3. Fully custom index: you can create an entirely new index from scratch. These indexes also need to end with `-custom-` and a version number. In addition, to avoid naming conflicts, use a prefix in the index name. For instance: `/oak:index/acme.product-1-custom-2`, where `acme.` is the prefix.
 
 >[!NOTE]
 >
@@ -73,7 +239,7 @@ For a fully customized index, prepare a new index definition package that contai
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
-As mentioned in the limitations sections, the `type` of the customised index definition must always be set to `lucene` even if the extracted index definition using Package Manager is of a different type (e.g `elasticsearch`).
+As mentioned in the limitations sections, the `type` of the customized index definition must always be set to `lucene` even if the extracted index definition using Package Manager is of a different type (e.g. `elasticsearch`).
 The `async` property must also be changed in case the extracted index definition is set to `elastic-async`. The `async` property must be set to one of the following: `[async]`, `[async,nrt]` or `[fulltext-async]` for the customized index definition.
 
 <!--
@@ -162,88 +328,6 @@ To illustrate the deployment of a customized version of the out-of-the-box index
 
 5. Ensure that your configuration conforms to the guidelines provided in the [Project Configuration](#project-configuration) section. Make any necessary adaptations accordingly.
 
-## Project Configuration
-
-We strongly recommend using version >= `1.3.2` of the Jackrabbit `filevault-package-maven-plugin`. The steps to incorporate it into your project are as follows: 
-
-1. Update the version in the top-level `pom.xml`:
-
-    ```xml
-    <plugin>
-        <groupId>org.apache.jackrabbit</groupId>
-            <artifactId>filevault-package-maven-plugin</artifactId>
-            ...
-            <version>1.3.2</version>
-        ...
-    </plugin>
-    ```
-
-2. Add the following to the top-level `pom.xml`:
-
-    ```xml
-    <jackrabbit-packagetype>
-        <options>   
-            <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
-        </options>
-    </jackrabbit-packagetype>
-    ```
-
-    Here is a sample of the project's top-level `pom.xml` file with the aforementioned configurations included:
-
-    Filename: `pom.xml`
-
-    ```xml
-    <plugin>
-        <groupId>org.apache.jackrabbit</groupId>
-            <artifactId>filevault-package-maven-plugin</artifactId>
-            ...
-            <version>1.3.2</version>
-            <configuration>
-                ...
-                <validatorsSettings>
-                    <jackrabbit-packagetype>
-                        <options>
-                            <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
-                        </options>
-                    </jackrabbit-packagetype>
-                    ...
-                ...
-    </plugin>
-    ```
-
-3. In `ui.apps/pom.xml` and `ui.apps.structure/pom.xml`, it is necessary to enable the `allowIndexDefinitions` and `noIntermediateSaves` options in the `filevault-package-maven-plugin`. Enabling `allowIndexDefinitions` allows for custom index definitions, while `noIntermediateSaves` ensures that the configurations are added atomically. 
-
-    Filenames: `ui.apps/pom.xml` and `ui.apps.structure/pom.xml`
-
-    ```xml
-    <plugin>
-        <groupId>org.apache.jackrabbit</groupId>
-            <artifactId>filevault-package-maven-plugin</artifactId>
-            <configuration>
-                <allowIndexDefinitions>true</allowIndexDefinitions>
-                <properties>
-                    <cloudManagerTarget>none</cloudManagerTarget>
-                    <noIntermediateSaves>true</noIntermediateSaves>
-                </properties>
-        ...
-    </plugin>
-    ```
-
-4. Add a filter for `/oak:index` in `ui.apps.structure/pom.xml`:
-
-    ```xml
-    <filters>
-        ...
-        <filter><root>/oak:index</root></filter>
-    </filters>
-    ```
-
-After adding the new index definition, deploy the new application using Cloud Manager. This deployment initiates two jobs, responsible for adding (and merging if necessary) the index definitions to MongoDB and Azure Segment Store for author and publish, respectively. Prior to the switch, the underlying repositories undergo reindexing with the updated index definitions.
-
->[!TIP]
->
->For more details on the required package structure for AEM as a Cloud Service, see [AEM Project Structure](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
-
 ## Index Management using Rolling Deployments {#index-management-using-rolling-deployments}
 
 ### What is Index Management {#what-is-index-management}
@@ -324,7 +408,7 @@ Only built-in analyzers are supported (that is, those analyzers that are shipped
 
 Currently, indexing the contents of `/oak:index` is not supported. 
 
-For best operational performance, indexes should not be excessively large. The total size of all indexes can be used as a guide. If this size increases by more than 100% after custom indexes have been added, and standard indices have been adjusted on a development environment, custom index definitions should be adjusted. AEM as a Cloud Service can prevent the deployment of, or remove indexes that would negatively impact system stability and performance.
+For best operational performance, indexes should not be excessively large. The total size of all indexes can be used as a guide. If this size increases by more than 100% after custom indexes have been added, and standard indexes have been adjusted on a development environment, custom index definitions should be adjusted. AEM as a Cloud Service can prevent the deployment of, or remove indexes that would negatively impact system stability and performance.
 
 ### Adding an Index {#adding-an-index}
 
@@ -354,7 +438,7 @@ The new version of the application uses the following (changed) configuration:
 
 ### Undoing a Change {#undoing-a-change}
 
-Sometimes, it is necessary to undo a modification in an index definition, for example due to an error or because the modification is no longer needed. For instance, if the index definition `damAssetLucene-8-custom-3` contains a mistake, you may want to revert to the previous definition, `damAssetLucene-8-custom-2`. To accomplish this, create a new index named `damAssetLucene-8-custom-4` that is a copy of the prior index, `damAssetLucene-8-custom-2.`
+Sometimes, it is necessary to undo a modification in an index definition, for example due to an error or because the modification is no longer needed. For instance, if the index definition `damAssetLucene-8-custom-3` contains a mistake, you may want to revert to the previous definition, `damAssetLucene-8-custom-2`. To accomplish this, create a new index named `damAssetLucene-8-custom-4` that is a copy of the prior index, `damAssetLucene-8-custom-2`.
 
 ### Removing an Index {#removing-an-index}
 
