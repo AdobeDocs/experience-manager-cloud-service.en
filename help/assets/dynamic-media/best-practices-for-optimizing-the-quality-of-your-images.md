@@ -55,7 +55,8 @@ Essential considerations for working with source images:
 
 By making these careful choices at the source level, you can contribute significantly to the overall quality of your visual content.
 
-<!-- REMOVED TOPIC AS PER CQDOC-21594
+<!--
+ REMOVED TOPIC AS PER CQDOC-21594
 ## Best practices for image format (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * JPG or PNG are the best choices to deliver images in good quality and with manageable size and weight.
@@ -65,7 +66,8 @@ By making these careful choices at the source level, you can contribute signific
 * JPG often compresses photographic images with better fidelity than synthetic images with sharp edges and contrast.
 * If your images contain transparency, use PNG because JPG does not support transparency.
 
-As a best practice for image format, start with the most common setting `&fmt=JPG`. -->
+As a best practice for image format, start with the most common setting `&fmt=JPG`.
+-->
 
 ## Best practices for image size {#best-practices-for-image-size}
 

@@ -2,7 +2,7 @@
 title: Setting Up Cursor with AEM MCP
 description: Learn how to configure Cursor to connect to AEM MCP servers
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: f0897898-cb1d-4af6-859c-f5a1c0ec6168
 ---
 # Setting Up Cursor with AEM MCP {#setup-cursor}

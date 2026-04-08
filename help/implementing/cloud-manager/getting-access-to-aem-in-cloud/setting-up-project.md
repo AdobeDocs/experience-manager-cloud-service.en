@@ -73,7 +73,7 @@ And if you wanted to output a simple message only when the build is run outside 
             <id>notCMBuild</id>
             <activation>
                   <property>
-                        <name>!env.CM_BUILD</name>
+                        <name>[!NOTE]nv.CM_BUILD</name>
                   </property>
             </activation>
             <build>
