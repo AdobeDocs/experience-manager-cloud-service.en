@@ -188,7 +188,7 @@ After a supported pipeline execution completes, you can view the corresponding c
 
    | Attribute | Description |
    |---|---|
-   | **version** | A description string that includes the pipeline name, environment tier (Stage/Prod), and execution ID. |
+   | **version** | A description string that includes the pipeline name, and execution ID. |
    | **changelog** | Reserved for future use. |
    | **commit** | Reserved for future use. |
    | **deepLink** | Click the URL to link back to the pipeline execution page in Cloud Manager. |
