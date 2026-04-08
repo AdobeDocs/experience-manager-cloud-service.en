@@ -129,17 +129,29 @@ We strongly recommend using version >= `1.3.2` of the Jackrabbit `filevault-pack
 ## Simplified Index Management using the Diff Index
 
 Most AEM indexes can be configured using Simplified Index Management.
-This provides a simple way to define custom indexes and customize out-of-the-box (OOTB) indexes, using one JSON file.
+This provides a simple way to customize out-of-the-box (OOTB) indexes, and to define custom indexes, using one JSON file.
 
 >[!TIP]
 >
->There is an online tool that helps configuring AEM indexes: [Oak Indexing Tools](https://oak-indexing.github.io/oakTools/index.html). It has [a section on simplified index management](https://oak-indexing.github.io/oakTools/simplified.html) with a step-by-step guide and additional tools to help converting custom index to this new format.
+>There is an online tool that helps configuring AEM indexes: [Oak Indexing Tools](https://oak-indexing.github.io/oakTools/index.html). 
+It has [a section on Simplified Index Management](https://oak-indexing.github.io/oakTools/simplified.html) 
+with a step-by-step guide and additional tools to help converting custom index to this new format.
 
-Limitations: Simplified Index Management is not currently available for indexes that include `/apps`, `/libs`. It can be used for all indexes that have an `includedPaths` property of eg. `/content`. For indexes without an `includedPaths` property, or if the `includedPaths` contains `/apps` or `/libs`, consider changing the query, or, alternatively, use the Legacy Index Configurations mode below.
+Limitations: Simplified Index Management is not currently available for indexes that include `/apps`, `/libs`. 
+It can be used for all indexes that have an `includedPaths` property of eg. `/content`. 
+For indexes without an `includedPaths` property, or if the `includedPaths` contains `/apps` or `/libs`, 
+consider changing the query, or, alternatively, use the Legacy Index Configurations mode below.
 
-Simplified Index Management is able to customize existing Out-of-the-box (OOTB) and add fully custom indexes. With Simplified Index Management, there is no need to copy definitions, or to explicitly define versions. Customizations of index definitions are automatically merged with the latest out-of-the-box index, and if needed, a new index version is automatically created whenever it is needed.
+Simplified Index Management is able to customize existing Out-of-the-box (OOTB) and add fully custom indexes. 
+With Simplified Index Management, there is no need to copy definitions, or to explicitly define versions. 
+Customizations of index definitions are automatically merged with the latest out-of-the-box index, 
+and if needed, a new index version is automatically created whenever it is needed.
 
-For most indexes, custom indexes and customizations to existing indexes can be done using a `diff.index`. To configure such an index, use the following step-by-step guide. In this example, we will customize the `damAssetLucene` index, and at the same time introduce a fully custom index. The process is as follows:
+For most indexes, custom indexes and customizations to existing indexes can be done using a `diff.index`. 
+To configure such an index, use the following step-by-step guide. 
+In this example, we will customize the `damAssetLucene` index, 
+and at the same time introduce a fully custom index. 
+The process is as follows:
 
 1. Create a new folder in the `ui.apps` directory named `ui.apps/src/main/content/jcr_root/_oak_index/diff.index`.
 
@@ -154,7 +166,9 @@ For most indexes, custom indexes and customizations to existing indexes can be d
     ```
 
 3. Add a text file `diff.json` with the following content.
-In this example, we customize the out-of-the-box index `damAssetLucene` to additionally index the property named `test`, and in addition to that, a fully custom index named `acme.testIndex` that indexes the property `testing` in `nt:unstructured` nodes:
+   In this example, we customize the out-of-the-box index `damAssetLucene` 
+   to additionally index the property named `test`, and in addition to that, 
+   a fully custom index named `acme.testIndex` that indexes the property `testing` in `nt:unstructured` nodes:
 
     `ui.apps/src/main/content/jcr_root/_oak_index/diff.index/diff.json`
 
@@ -203,17 +217,27 @@ In this example, we customize the out-of-the-box index `damAssetLucene` to addit
     </workspaceFilter>
     ```
 
-After applying the changes, deploy the new application using Cloud Manager. This deployment initiates two jobs, responsible for adding (and merging if necessary) the index definitions to MongoDB and Azure Segment Store for author and publish, respectively. Prior to the switch, the underlying repositories undergo reindexing with the updated index definitions.
+After applying the changes, deploy the new application using Cloud Manager. 
+This deployment initiates two jobs, responsible for adding (and merging if necessary) 
+the index definitions for author and publish, respectively. 
+Prior to the switch, the underlying repositories undergo reindexing with the updated index definitions.
 
 ## Legacy Index Configurations
 
 Indexes that can not be configured using Simplified Index Management
 need to use the legacy configuration mode.
 
-The rest of the document only applies for indexes that do not have an `includedPaths` property, or that have a property which covers `/apps`, `/libs`, and `/`. There are some out-of-the-box indexes that do cover these paths, namely:
+The Legacy Index Configuration only applies for indexes that can not have an `includedPaths` property, 
+or that have a property which need to covers `/apps`, `/libs`, or `/`. 
+There are some out-of-the-box indexes that do cover these paths, namely:
 
-* `cqPageLucene`: If you need to customize this index, consider migrating your queries to use `cqPageContent` instead, which has an `includedPaths` of `/content`, and a tag.
-* `ntBaseLucene`: Best practise is to avoid changing this index, and instead using a fully custom index with a prefix such as `acme.`, which covers only the required paths. See the section Simplified Index Management for details.
+* `cqPageLucene`: If you need to customize this index, 
+  consider migrating your queries to use `cqPageContent` instead, 
+  which has an `includedPaths` of `/content`, and a tag.
+* `ntBaseLucene`: Best practise is to avoid changing this index, 
+  and instead using a fully custom index with a prefix such as `acme.`, 
+  which covers only the required paths. 
+  See the section Simplified Index Management for details.
 
 ## Index Names {#index-names}
 
