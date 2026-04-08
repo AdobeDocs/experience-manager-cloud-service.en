@@ -4,6 +4,7 @@ description: Learn how to work with Carousel Banners in Dynamic Media.
 contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 ---
 # Carousel Banners{#carousel-banners}
@@ -42,7 +43,8 @@ To get you up and running quickly:
 
    Start by identifying dynamic variables used by the existing Quick view implementation. Doing so helps you to enter hotspots and image map data properly during the carousel banner creation process in Experience Manager Assets.
 
-<!-- LEAVE; COMMERCE BEING ADDED AGAIN IN THE FUTURE
+<!--
+ LEAVE; COMMERCE BEING ADDED AGAIN IN THE FUTURE
 
    >[!NOTE]
    >
@@ -93,7 +95,8 @@ Start by identifying dynamic variables used by the existing Quick view implement
 
 When you add hotspots or image maps to a banner image, you assign a SKU (Stock Keeping Unit). You can also assign optional extra variables to each hotspot or image map. Such variables are used later to match hotspots or image maps with Quick view content.
 
-<!-- LEAVE; COMMERCE BEING ADDED LATER
+<!--
+ LEAVE; COMMERCE BEING ADDED LATER
 
 >[!NOTE]
 >

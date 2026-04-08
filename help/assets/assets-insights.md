@@ -4,6 +4,7 @@ description: Track user ratings and usage statistics of images that are used in 
 contentOwner: AG
 feature: Asset Insights, Asset Reports
 role: User, Leader
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
 ---
 # Assets Insights {#asset-insights}
@@ -70,7 +71,8 @@ You can view scores of all assets within a folder simultaneously using **[!UICON
 1. Click the **[!UICONTROL Layout]** option from the toolbar, and then choose **[!UICONTROL Insights View]**.
 1. The page displays usage scores for the assets. Compare the ratings of the various assets and draw insights.
 
-<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
+<!--
+ TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
 ## Schedule background job {#scheduling-background-job}
 

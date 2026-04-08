@@ -4,6 +4,7 @@ description: Configure and use the cloud-native asset microservices to process a
 contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
 ---
 # Use asset microservices and processing profiles {#get-started-using-asset-microservices}
@@ -14,7 +15,8 @@ Asset microservices lets you process a [broad range of file types](/help/assets/
 
 Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**. Experience Manager provides a basic default setup and lets administrators add more specific asset processing configuration. Administrators create, maintain, and modify the configurations of post-processing workflows, including optional customization. Customizing the workflows lets developers extend the default offering.
 
-<!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
+<!--
+ Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
@@ -35,7 +37,8 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 |[Custom configuration](#standard-config) | Configured by administrators by way of the user interface. More options are provided for rendition generation by extending the default option. Extend the out-of-the-box option to provide different formats and renditions. | <ul><li>FPO (For Placement Only) rendition. </li> <li>Change file format and resolution of images</li> <li> Conditionally apply to configured file types. </li> </ul> |
 |[Custom profile](#custom-config) | Configured by administrators via user interface to use custom code through custom applications to call [Asset Compute Service](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction). Supports more complex requirements in a cloud-native and scalable method. | See [allowed use cases](#custom-config). |
 
-<!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
+<!--
+ To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
 
 ## Supported file formats {#supported-file-formats}
@@ -48,7 +51,8 @@ Some defaults are pre-configured to ensure that the default renditions required 
 
 With the default configuration, only the most basic processing profile is configured. Such a processing profile is not visible on the user interface and you cannot modify it. It always executes to process uploaded assets. Such a default processing profile ensures that the basic processing required by [!DNL Experience Manager] is completed on all assets.
 
-<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
+<!--
+ ![processing-profiles-standard](assets/processing-profiles-standard.png)
 -->
 
 ## Standard configuration {#standard-config}
@@ -80,14 +84,16 @@ The processing profile can include an FPO (For Placement Only) rendition. See th
 
 1. Click **[!UICONTROL Save]**.
 
-<!-- TBD: Update the video link when a new video is available from Tech Marketing.
+<!--
+ TBD: Update the video link when a new video is available from Tech Marketing.
 
 The following video demonstrates the usefulness and usage of standard profile.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
 -->
 
-<!-- This image was removed per cqdoc-15624, as requested by engineering.
+<!--
+ This image was removed per cqdoc-15624, as requested by engineering.
  ![processing-profiles-list](assets/processing-profiles-list.png) 
  -->
 
@@ -279,7 +285,8 @@ Follow the steps outlined in [apply a workflow model to a folder](#apply-workflo
 >* [How to create custom applications](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application).
 >* [Supported MIME types for various use cases](/help/assets/file-format-support.md).
 
-<!-- TBD: 
+<!--
+ TBD: 
 * How/where can admins check what's already configured and provisioned.
 * How/where to request for new provisioning/purchase.
 -->

@@ -4,6 +4,7 @@ description: Table Component in Interactive Communication Editor in AEM Forms en
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 7db24153-549a-4c36-8cb5-ab33fda8072a
 ---
 # Table Component in Interactive Communication Editor 

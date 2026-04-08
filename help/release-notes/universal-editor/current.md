@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.02.26 Release Notes
-description: These are the release notes for the 2026.02.26 release of the Universal Editor.
+title: Universal Editor 2026.04.02 Release Notes
+description: These are the release notes for the 2026.04.02 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.02.26 Release Notes {#release-notes}
+# Universal Editor 2026.04.02 Release Notes {#release-notes}
 
-These are the release notes for the 26 February 2026 release of the Universal Editor.
+These are the release notes for the 2 April 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -16,23 +16,12 @@ These are the release notes for the 26 February 2026 release of the Universal Ed
 
 >[!TIP]
 >
->For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
 ## What's New {#what-is-new}
 
-* Descriptions were added to all schema fields to help developers generate model/filter/component definition files.
-* Multi-field updates to Content Fragments are now supported for in-context edits.
-
-
-## Early Adoption Features {#early-adopter}
-
-If you are interested in testing the upcoming features listed below and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 
-
-* Shallow copy has been implemented for Content Fragments.
+* [A configurable option](/help/implementing/universal-editor/configure-rte.md#special-characters) to [add special characters](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) has been added to the rich text editor (RTE) toolbar.
 
 ## Other Improvements {#other-improvements}
 
-* Editor no longer defaults content to `{}` before content arrives, preventing data loss in certain situations.
-* Persistence of data when field is in focus was made more robust.
-* Changes are no longer lost in certain situations when editing in the left panel and then selecting another item in the editor window.
-* A persistence problem with RTE fields for Content Fragments when using the OpenAPI endpoints was fixed.
+* Tag fields are no longer wrongly returned as multi-fields by the OpenAPI adapter.

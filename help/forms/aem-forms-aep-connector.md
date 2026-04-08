@@ -5,6 +5,7 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
 ---
 # AEM Forms Integration with Adobe Experience Platform (AEP) {#aem-forms-aep-integration}
@@ -248,7 +249,8 @@ A: Form submissions are subject to your AEP streaming ingestion [quotas and rate
 <!-- 
 >
 **Q: Can form attachments be sent to AEP?**
-A: No, form attachments cannot be directly sent to AEP. You would need to store attachments separately and only send metadata to AEP. -->
+A: No, form attachments cannot be directly sent to AEP. You would need to store attachments separately and only send metadata to AEP.
+-->
 
 ### Implementation Questions {#implementation-questions}
 

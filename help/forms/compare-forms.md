@@ -3,6 +3,7 @@ title: Compare two distinct adaptive forms.
 description: Compare two distinct forms based on the fields, content, and form components.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: ce4ad231-a766-4ab0-8649-20cf16bf54ce
 role: User, Developer, Admin
 ---

@@ -3,6 +3,7 @@ title: AEM Forms Communications APIs - Overview
 description: Overview of AEM Forms Communications APIs including authentication methods and complete API reference
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 1f9fb00c-c284-45c1-a8ba-51a59dbaee3d
 ---
 # AEM Forms Communications APIs - Overview
@@ -29,7 +30,8 @@ Earlier APIs support JWT-based server-to-server authentication, which is configu
 <!--
 >[!NOTE]
 >
-> Adobe is standardizing authentication method across all APIs and is gradually onboarding APIs to the Adobe Developer Console, which supports the OAuth Server-to-Server authentication method.-->
+> Adobe is standardizing authentication method across all APIs and is gradually onboarding APIs to the Adobe Developer Console, which supports the OAuth Server-to-Server authentication method.
+ -->
 
 ## API Classification Overview
 

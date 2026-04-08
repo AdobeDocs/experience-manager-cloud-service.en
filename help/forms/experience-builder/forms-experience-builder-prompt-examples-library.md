@@ -2,9 +2,10 @@
 title: Forms Experience Builder - Prompt Library
 description: Collection of proven prompt patterns and examples for building forms with AI assistance across Forms Management UI, Adaptive Forms Editor, and Universal Editor.
 hide: yes
-index: no
+index: false
 hidefromtoc: yes
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
 ---
 # Forms Experience Builder - Prompt Library

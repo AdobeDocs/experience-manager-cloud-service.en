@@ -28,6 +28,41 @@ If you have licensed Edge Delivery Services as part of Adobe Experience Manager 
 
 Additionally, you can access a unified experience for managing all your AEM properties while ensuring consistency across key workflows. These workflows include domain name management, SSL certificate management, and CDN mappings.
 
+## About Edge Delivery Services with AEM authoring (Beta) {#eds-aem-authoring}
+
+>[!NOTE]
+>
+>The flexible publish tier and AEM authoring crosswalk features described here are in Beta. To join the Beta, email [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) with your Adobe Organization ID and Program ID.
+
+Modern web experiences require high-performance delivery, but many organizations also rely on established AEM authoring workflows, governance, and content reuse patterns. To help your teams modernize delivery without disrupting authoring, Cloud Manager introduces capabilities that let you do the following:
+
+* Deliver experiences using Edge Delivery Services.
+* Continue using AEM Author for content creation.
+* Provision only the infrastructure required for your architecture.
+
+These capabilities let organizations adopt modern delivery incrementally, without sacrificing existing workflows.
+
+### Authoring options for Edge Delivery sites
+
+When you create an Edge Delivery site in Cloud Manager, you can choose your preferred authoring approach:
+
+* Document-based authoring — Author content in Google Drive or SharePoint. No AEM environment is required.
+* AEM authoring — Author content in AEM using the Universal Editor. This method requires an AEM Author environment. With this option, a publish tier is not required when Edge Delivery handles content delivery.
+
+Organizations can choose between these approaches, or use both incrementally, depending on their workflow preferences. See [Create your first Edge Delivery site with one click](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md).
+
+### Flexible publish tier
+
+Cloud Manager lets you configure whether a publish tier is provisioned for your program's environments. Not all architectures require a publish tier as seen in the following table:
+
+| Architecture | Publish Tier |
+| --- | --- |
+| Traditional AEM Sites | Required |
+| Headless / API-first | Required |
+| Edge Delivery Services | Not required |
+
+By enabling the publish tier only when needed, teams can provision environments faster, simplify infrastructure, and reduce unnecessary components. See [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
+
 ## Benefits of using the Adobe recommended path for Edge Delivery Services {#recommended-path-eds}
 
 Maximize your benefits from Adobe by accessing and consuming your Edge Delivery Services license through Cloud Manager. Doing so lets you take advantage of several key benefits.
@@ -53,6 +88,7 @@ An Edge Delivery Services can be added in a number of different ways depending o
 | I want to add an Edge Delivery site to Cloud Manager | See [Add an Edge Delivery site](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md). |
 | I want to create an Edge Delivery site now | See [Create an Edge Delivery site quickly in Cloud Manager with the click of a button](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). |
 | I want to add Edge Delivery Services to a new or existing sandbox program. | See [Create sandbox programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).<br>When you create a sandbox program, Edge Delivery Services is added to the program by default; you do not need to select it.<br>Existing sandbox programs prior to the general availability of Edge Delivery, inherit Edge Delivery Services automatically. |
+| I want to create an Edge Delivery site that uses AEM authoring | See [Create an Edge Delivery site](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md#one-click-edge-delivery-site). When using AEM authoring with Edge Delivery, a publish tier is optional. See [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier). |
 
 >[!NOTE]
 >

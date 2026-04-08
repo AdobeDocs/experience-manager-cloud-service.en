@@ -7,7 +7,8 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
 hide: yes
 hidefromtoc: yes
-index: no
+index: false
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
 ---
 # Introduction to AEM Forms as a Cloud Service {#introduction}

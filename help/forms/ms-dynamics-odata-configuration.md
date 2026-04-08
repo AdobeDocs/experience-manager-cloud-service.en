@@ -4,6 +4,7 @@ description: Learn to create Form Data Model (FDM) based on the entities, attrib
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 hide: yes
 hidefromtoc: yes
@@ -25,9 +26,11 @@ hidefromtoc: yes
 
 <!--[!DNL Experience Manager Forms] add-on package also includes reference OData configuration that you can use to quickly integrate [!DNL Microsoft Dynamics] with [!DNL Experience Manager Forms].-->
 
-<!--When the package is installed, the following entities and services are available on your [!DNL Experience Manager Forms] instance:
+<!--
+When the package is installed, the following entities and services are available on your [!DNL Experience Manager Forms] instance:
 
-* MS Dynamics OData Cloud Service (OData Service)-->
+* MS Dynamics OData Cloud Service (OData Service)
+-->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
 <!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service (OData Service) is available with all run modes. For more information on configuring run modes for an [!DNL Experience Manager] instance, see [Run Modes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes).
@@ -147,7 +150,8 @@ The MS Dynamics OData Cloud Service (OData Service) cloud service is configured 
 
 ## Create Form Data Model (FDM) {#create-form-data-model}
 
-<!--When you install the [!DNL Experience Manager Forms] package, a form data model, **[!DNL Microsoft Dynamics] FDM**, is deployed on your [!DNL Experience Manager] instance. By default, the Form Data Model uses [!DNL Microsoft Dynamics] service configured in the MS Dynamics OData Cloud Service (OData Service) as its data source.
+<!--
+When you install the [!DNL Experience Manager Forms] package, a form data model, **[!DNL Microsoft Dynamics] FDM**, is deployed on your [!DNL Experience Manager] instance. By default, the Form Data Model uses [!DNL Microsoft Dynamics] service configured in the MS Dynamics OData Cloud Service (OData Service) as its data source.
 
 On opening the Form Data Model for the first time, it connects to the configured [!DNL Microsoft Dynamics] service and fetches entities from your [!DNL Microsoft Dynamics] instance. The "contact" and "lead" entities from [!DNL Microsoft Dynamics] are already added in the form data model.
 
@@ -155,7 +159,8 @@ To review the form data model, go to **[!UICONTROL Form Data Model egrations]**.
 
 `https://'[server]:[port]'/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
  Form Data Model 
-![default-fdm-1](assets/default-fdm-1.png)-->
+![default-fdm-1](assets/default-fdm-1.png)
+-->
 
 After configuring MS Dynamics OData cloud service, you can use the service while creating form data model (FDM). For more information, see [Create form data model (FDM)](create-form-data-models.md).
 

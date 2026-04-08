@@ -4,6 +4,7 @@ description: Learn how to work with video in Dynamic Media. Review best practice
 contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 ---
 # Video {#video}
@@ -127,9 +128,11 @@ When managing single video and Adaptive Video Sets, the following are supported:
 
 Adaptive video streaming is supported on various iOS platforms. See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference).
 
-<!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+<!--
+ OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that support this video format at the following [Supported video formats on Windows&reg; Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
+OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that support this video format at the following [Supported video formats on Windows&reg; Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
+-->
 
 * Play back the video using Dynamic Media Video Viewer Presets, including the following:
 
@@ -240,7 +243,8 @@ The following table describes the device, browser, and playback method of videos
  </tbody>
 </table>
 
-<!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
+<!--
+  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
    <td>BlackBerry&reg;</td>
    <td>HLS or DASH</td>
@@ -263,10 +267,12 @@ The **Dynamic Media Encode Video** workflow encodes video if you have enabled Dy
 
 The following are best-practice tips for encoding source video files.
 
-<!-- For advice about video encoding, see the following:
+<!--
+ For advice about video encoding, see the following:
 
 * [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
-* [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en). -->
+* [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en).
+-->
 
 ### Source video files {#source-video-files}
 
@@ -443,7 +449,8 @@ For Video Reports to work correctly, a Report Suite ID is automatically created 
 
 1. In the table that lists the top published videos, select a video name to play the video and also see the video's audience retention (drop-off) report.
 
-<!-- OBSOLETE CONTENT OBSOLETE CONTENT - SDK ONLY AVAILABLE INTERNALLY NOW 
+<!--
+ OBSOLETE CONTENT OBSOLETE CONTENT - SDK ONLY AVAILABLE INTERNALLY NOW 
 ### Viewing video reports based on a video viewer that you created using the Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 If you are using an out-of-box video viewer provided by Dynamic Media, or if you created a custom viewer preset based off of an out-of-box video viewer, then no additional steps are required to view video reports. However, if you have created your own video viewer based off the Dynamic Media HTML5 Viewer SDK, then use the following steps to ensure the your video viewer is sending tracking events to Dynamic Media Video Reports.
@@ -885,7 +892,8 @@ The original audio track extracted from a primary video file cannot be downloade
 1. Select **[!UICONTROL Download]**.
 1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
 
-<!-- ## About AI-generated captions for videos in Dynamic Media
+<!--
+ ## About AI-generated captions for videos in Dynamic Media
 
 AI-powered captions in Dynamic Media are designed to enhance video accessibility and engagement by automatically generating accurate and synchronized subtitles. This technology uses advanced AI algorithms to transcribe spoken content into text, which is then displayed as captions on the video. Here are some key features.
 
@@ -894,7 +902,8 @@ AI-powered captions in Dynamic Media are designed to enhance video accessibility
 * **Enhanced Accessibility:** By providing captions, videos become more accessible to viewers who are deaf or hard of hearing, as well as those who prefer to watch videos with the sound off.
 * **Improved Engagement:** Captions can help retain viewer attention and improve comprehension, especially in noisy environments or when the viewer's native language is different from the video's language.
 
-These features in Dynamic Media make AI-powered video aptions a valuable tool for content creators looking to enhance their video content's accessibility and engagement. -->
+These features in Dynamic Media make AI-powered video aptions a valuable tool for content creators looking to enhance their video content's accessibility and engagement.
+-->
 
 ## Add closed captions to video {#adding-captions-to-video}
 
@@ -1212,7 +1221,8 @@ The API returns null if there are errors. Exceptions are logged in Experience Ma
 * `IOException` gets logged when there is an issue connecting to Dynamic Media. 
 * `UnsupportedOperationException` gets logged when a `manifestType` parameter passed is `ManifestType.DASH`, while the video has not been processed using DASH format. 
 
-<!-- THE REMAINING SECTION IS FOR 6.5 ONLY 
+<!--
+ THE REMAINING SECTION IS FOR 6.5 ONLY 
 
 The following is an example of the above API using servlets written in *HTTPWhiteBoard* specification. Select each tab for the code syntax.
 
@@ -1503,7 +1513,8 @@ You can invoke the servlet in following ways:
 -->
 
 
-<!-- REMOVED THE FOLLOWING TOPIC AS PER EMAIL FROM RIYA MIDHA, WEDNESDAY, MARCH 5, 2025; TOPIC IS OBSOLETE/NO LONGER NEEDED BECAUSE THE FEATURES IT DESCRIBES ARE NOW GA WITHIN THE SOFTWARE
+<!--
+ REMOVED THE FOLLOWING TOPIC AS PER EMAIL FROM RIYA MIDHA, WEDNESDAY, MARCH 5, 2025; TOPIC IS OBSOLETE/NO LONGER NEEDED BECAUSE THE FEATURES IT DESCRIBES ARE NOW GA WITHIN THE SOFTWARE
 
 ## Enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account {#enable-dash}
 
@@ -1545,7 +1556,8 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
     * Create your [video viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) as usual.
     * Create your [video profile](/help/assets/dynamic-media/video-profiles.md) as usual.
-    * [Add multiple captions and audio tracks](#add-msma) to your video. -->
+    * [Add multiple captions and audio tracks](#add-msma) to your video.
+    -->
 
 
 <!-- 
@@ -1610,8 +1622,8 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
     * For captions to be visible on the media player, you must add required details (metadata) about each caption file that you uploaded. Select the pencil icon to the right of a caption file name. In the Edit Caption dialog box, enter the following required details about the file, then select **[!UICONTROL Save]**. Repeat this process for each caption file that you uploaded:
 
 
-    | Caption metadata | Description | 
-    | --- | --- | 
+    | Caption metadata | Description |
+    | --- | --- |
     Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional caption files and audio track files. |
     | Language | Select the language of the caption. |
     | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises and speaker identification. It also includes other relevant details alongside the translation or transcription of dialogue. This functionality makes the content more accessible to individuals who are deaf or hard of hearing. |
@@ -1627,7 +1639,7 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
 
     | Audio Track metadata | Description |
     | --- | --- |
-    | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or caption files.| 
+    | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or caption files.|
     | Language | Select the language of the audio track. |
     | Type | Select the type of audio track that you are using.<br>**Original** - The audio track originally attached to the video and represented as `[Original]` in the label with English language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** - An add-on audio track for a language other than the original.<br>**Audio description** - An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
     | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original]` by default. |
@@ -1644,7 +1656,8 @@ Added captions and captions are supported with WebVTT and Adobe VTT formats. And
 
 1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](/help/assets/dynamic-media/video.md#preview-video-audio-subtitle).
 
-1. Publish the video. See [Publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md). -->
+1. Publish the video. See [Publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+-->
 
 
 

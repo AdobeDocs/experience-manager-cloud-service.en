@@ -53,7 +53,7 @@ An index definition can fall into one of the following categories:
 
 2. Customization of an OOTB index. To customize an OOTB index, append `-custom-` followed by a number. For example, `/oak:index/damAssetLucene-8-custom-1` is the customization of the OOTB index `/oak:index/damAssetLucene-8`. A customization is typically a copy of the OOTB index, plus additional properties that need to be indexed.
 
-3. Fully custom index: You can create an entirely new index from scratch. These indexes also need to end with `-custom-` and a version number. In addition, to avoid naming conflicts, use a prefix in the index name. For instance: `/oak:index/acme.product-1-custom-2`, where `acme.` is the prefix.
+3. Fully custom index: trueou can create an entirely new index from scratch. These indexes also need to end with `-custom-` and a version number. In addition, to avoid naming conflicts, use a prefix in the index name. For instance: `/oak:index/acme.product-1-custom-2`, where `acme.` is the prefix.
 
 >[!NOTE]
 >
@@ -76,9 +76,11 @@ For a fully customized index, prepare a new index definition package that contai
 As mentioned in the limitations sections, the `type` of the customised index definition must always be set to `lucene` even if the extracted index definition using Package Manager is of a different type (e.g `elasticsearch`).
 The `async` property must also be changed in case the extracted index definition is set to `elastic-async`. The `async` property must be set to one of the following: `[async]`, `[async,nrt]` or `[fulltext-async]` for the customized index definition.
 
-<!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
+<!--
+ Alexandru: temporarily drafting this statement due to CQDOC-17701
 
-The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`. -->
+The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
+-->
 
 >[!NOTE]
 >

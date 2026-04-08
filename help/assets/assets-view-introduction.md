@@ -2,6 +2,7 @@
 title: How does Assets view in AEM benefit you?
 description: Learn more about the key benefits of Assets view in AEM. Adobe, using its expertise in empowering marketing and creative professionals, introduces a game-changing new user experience.
 mini-toc-levels: 3
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User

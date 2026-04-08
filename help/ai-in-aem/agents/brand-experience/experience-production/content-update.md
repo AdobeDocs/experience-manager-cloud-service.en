@@ -2,13 +2,13 @@
 title: Content Update Job
 description: Learn what the Brand Experience Agent's content update job is and what it can do for you.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: e2d1dae8-38de-4357-bb14-ad35acb71aee
 ---
 
 # Content Update Job {#content-update}
 
-The content update job of the [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) automates content production to accelerate everyday tasks for Adobe Experience Manager (AEM) as a Cloud Service and Edge Delivery Services. 
+The content update job of the [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) automates content production to accelerate everyday tasks for Adobe Experience Manager (AEM) as a Cloud Service and Edge Delivery Services. 
 
 ## Overview {#overview}
 
