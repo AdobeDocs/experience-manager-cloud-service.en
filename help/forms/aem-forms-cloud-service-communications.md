@@ -31,7 +31,8 @@ A synchronous operation is a process of generating documents in a linear manner.
 <!-- 
 ### Multi-tenant APIs
 
-* Document utility APIs -->
+* Document utility APIs
+-->
 
 
 ### Authenticate a single-tenant API

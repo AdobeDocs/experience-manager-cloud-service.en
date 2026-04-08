@@ -176,7 +176,8 @@ To populate the migration set you created in the Cloud Acceleration Manager, ins
 
 1. Click **Save** after you populate all the fields in the **Create Migration Set** details screen.
 
-<!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
+<!--
+ 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
 
@@ -188,7 +189,8 @@ To populate the migration set you created in the Cloud Acceleration Manager, ins
 
 1. Select a migration set and click **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png) -->
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
+   -->
 
 ### Determining migration set size {#migration-set-size}
 
@@ -218,11 +220,13 @@ Follow the steps below to run a size check:
    
 1. If the **Check Size** results indicate that either there is insufficient disk space, or the migration set exceeds product limits, or both, a **WARNING** status is displayed.
 
-<!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
+<!--
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    
    Below is an example of **Check Size** results with warnings.
  
-   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png) -->
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
+   -->
 
 
 ## What's Next {#whats-next}

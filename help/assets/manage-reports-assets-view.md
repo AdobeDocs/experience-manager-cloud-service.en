@@ -242,10 +242,13 @@ Click **[!UICONTROL Insights]** available in the left navigation pane to view th
 
 * **Uploads**: The number of assets uploaded to the Assets view environment in the last 30 days or 12 months represented using a line graph.
 ![insights-uploads](/help/assets/assets/insights-uplods2.svg)
-<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.
+
+<!--
+* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.
 
 * **Storage usage**: The storage usage, in bytes, for the Assets view environment represented using a bar chart.
 ![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
+-->
 <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
