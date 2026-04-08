@@ -2,9 +2,10 @@
 title: Getting started with Forms Experience Builder
 description: Learn the basics of creating your first AI-powered form with Forms Experience Builder. Step-by-step tutorial with examples and best practices.
 hide: yes
-index: no
+index: false
 hidefromtoc: yes
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: c4f838bc-a001-48e7-afaa-c2ff9034f5d4
 ---
 # Getting started with Forms Experience Builder {#getting-started-forms-experience-builder}

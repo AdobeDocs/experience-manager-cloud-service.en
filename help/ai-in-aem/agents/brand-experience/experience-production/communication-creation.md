@@ -1,12 +1,12 @@
 ---
 title: Communication Creation Job
-description: Learn about the Brand Experience Agents's communication creation job and how to use natural language to create Interactive Communications.
+description: Learn about the Experience Production Agents's communication creation job and how to use natural language to create Interactive Communications.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 49111cdb-e714-4590-8b81-382377083d6e
 ---
 
-# Communication Creation skill {#ic-creation-skill}
+# Communication Creation Job {#ic-creation-skill}
 
 <!-- UNCOMMENT ACTIVATION SECTION AT THE BOTTOM ONCE THIS IS NO LONGER ALPHA -->
 
@@ -16,7 +16,7 @@ exl-id: 49111cdb-e714-4590-8b81-382377083d6e
 
 [Interactive Communications](/help/forms/introduction-to-interactive-communication.md) are personalized, data-driven documents designed for business correspondence such as account statements, policy documents, bills, welcome kits, and benefit notices. Unlike forms that collect input from users, Interactive Communications generate output documents with dynamic, recipient-specific content.
 
-The communication creation job is a capability of the [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) that is designed to develop Interactive Communications using natural language prompts. This job automatically generates personalized, data-driven correspondence for print (in PDF format). The job is surfaced through AI Assistant.
+The communication creation job is part of the [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) that is designed to develop Interactive Communications using natural language prompts. This job automatically generates personalized, data-driven correspondence for print (in PDF format). The job is surfaced through AI Assistant.
 
 Some of the key benefits of communication creation job include:
 

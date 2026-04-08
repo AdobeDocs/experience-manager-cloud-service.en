@@ -2,6 +2,7 @@
 title: How to configure a Submit Action for an Adaptive Form?
 description: An Adaptive Form provides multiple Submit Actions. A Submit Action defines how an Adaptive Form is processed after submission. You can use built-in Submit Actions or create your own.
 feature: Adaptive Forms, Foundation Components, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
 ---
@@ -15,7 +16,8 @@ role: User, Developer
 | AEM as a Cloud Service (Edge Delivery Services) | [Click here](/help/forms/configure-submit-action-eds-forms.md) |
 
 <!--
-**Applies to**: ✔️ Adaptive Form Foundation Components. ❌ [Adaptive Form Core Components](/help/forms/configure-submit-actions-core-components.md). Adobe recommends using Core Components to [add Adaptive Forms to an AEM Sites Page](create-or-add-an-adaptive-form-to-aem-sites-page.md) or to [create standalone Adaptive Forms](creating-adaptive-form-core-components.md).-->
+**Applies to**: ✔️ Adaptive Form Foundation Components. ❌ [Adaptive Form Core Components](/help/forms/configure-submit-actions-core-components.md). Adobe recommends using Core Components to [add Adaptive Forms to an AEM Sites Page](create-or-add-an-adaptive-form-to-aem-sites-page.md) or to [create standalone Adaptive Forms](creating-adaptive-form-core-components.md).
+-->
 
 The [Adaptive Forms based on Foundation Component](/help/forms/creating-adaptive-form.md) supports various [out-of-the-box submit actions](#submit-actions-supported-by-adaptive-forms-based-on-foundation-components). A Submit action is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. 
 
@@ -48,14 +50,16 @@ You can configure a Submit Action in the **[!UICONTROL Submission]** section of 
 
 ![AEM Forms Submit action](/help/forms/assets/submit-form-foundation-component.png)
 
-<!-- [!NOTE]
+<!--
+ [!NOTE]
 >
 >Send PDF via Email Submit Action is applicable only to Adaptive Forms that use XFA template as form model. 
 
 >[!NOTE]
 >
 >Ensure that the [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM folder
->exists. The directory is required to temporarily store attachments. If the directory does not exist, create it. -->
+>exists. The directory is required to temporarily store attachments. If the directory does not exist, create it.
+-->
 
 <!--
 
@@ -132,15 +136,18 @@ You can also include attachments and a Document of Record (DoR) to the email. To
 
 
 
-<!-- ## Send PDF via Email {#send-pdf-via-email}
+<!--
+ ## Send PDF via Email {#send-pdf-via-email}
 
 The **Send PDF via Email** Submit Action sends an email with a PDF containing form data, to one or more recipients on successful submission of the form.
 
 >[!NOTE]
 >
->This Submit Action is available for XFA-based Adaptive Forms and XSD-based adaption forms that have the Document of Record template. -->
+>This Submit Action is available for XFA-based Adaptive Forms and XSD-based adaption forms that have the Document of Record template.
+-->
 
-<!-- ## Invoke a forms workflow {#invoke-a-forms-workflow}
+<!--
+ ## Invoke a forms workflow {#invoke-a-forms-workflow}
 
 The **Submit to Forms workflow** submit option sends a data xml and file attachments (if any) to an existing Adobe LiveCycle or [!DNL AEM Forms] on JEE process.
 
@@ -479,7 +486,8 @@ As a part of AEM security and hardening guidelines, configure custom error pages
 
 When you prefill a form data model (FDM), or schema based Adaptive Form with XML or JSON data complaint to a schema that is data does not contain `<afData>`, `<afBoundData>`, and `</afUnboundData>` tags, then the data of unbounded fields of the Adaptive Form is lost. The schema can be an XML schema, JSON schema, or a Form Data Model (FDM). Unbounded fields are Adaptive Form fields without the `bindref` property.
 
- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
+ For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md).
+ -->
 
 ## See Also {#see-also}
 

@@ -4,6 +4,7 @@ description: Learn about the XMP (Extensible Metadata Platform) metadata standar
 contentOwner: AG
 feature: Metadata
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
 ---
 # XMP metadata {#xmp-metadata}
@@ -108,7 +109,8 @@ To manually apply the workflow to an asset just once, apply [!UICONTROL DAM Meta
 
 To apply the workflow to all the uploaded assets, add the workflow to a post-processing profile.
 
-<!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
+<!--
+ Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
 ### Enable XMP writeback {#enable-xmp-writeback}
 

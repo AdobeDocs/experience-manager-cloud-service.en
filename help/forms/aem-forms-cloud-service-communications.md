@@ -1,6 +1,7 @@
 ---
 title: How to use Forms as a Cloud Service to merge data with XDP and PDF templates or generate output in PCL, ZPL, and PostScript formats?
 description: Automatically merge data with XDP and PDF templates or generate output in PCL, ZPL, and PostScript formats
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 feature: Adaptive Forms,APIs & Integrations
 role: Admin, Developer, User
@@ -30,7 +31,8 @@ A synchronous operation is a process of generating documents in a linear manner.
 <!-- 
 ### Multi-tenant APIs
 
-* Document utility APIs -->
+* Document utility APIs
+-->
 
 
 ### Authenticate a single-tenant API

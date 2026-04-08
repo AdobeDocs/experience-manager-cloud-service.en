@@ -3,9 +3,11 @@ title: What are the latest innovations in Adobe Experience Manager Forms as a Cl
 description: Discover the latest capabilities of [!DNL AEM Forms] as a Cloud Service to create, manage, and publish enterprise-class forms and business processes.
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
 ---
-<!-- # Introduction to [!DNL AEM Forms] as a Cloud Service {#overview}
+<!--
+ # Introduction to [!DNL AEM Forms] as a Cloud Service {#overview}
 
 Adobe Experience Manager Forms as a Cloud Service offers a cloud-native, Platform as a Service (PaaS) solution for businesses to create, manage, publish, and update complex digital forms while integrating submitted data with back-end processes, business rules, and saving data in an external data store. The service is always current, always available, and always learning.
 
@@ -13,7 +15,8 @@ You can use the service to create and rollout  interactive and engaging digital 
 
 The organization can use [!DNL AEM Forms] as a Cloud Service to create digital forms, connect forms to existing data sources, integrate forms with [!DNL Adobe Sign] to add e-signatures to forms, and generate Document of Record (DoR) to archive filled forms as PDF files. The organization can also use the service to convert their existing PDF forms to digital forms. 
 
-An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start using all these features without waiting to buy and set up a local infrastructure. The service also frees the organizations from the cycle of upgrades as it is always up to date and always offers the latest feature.  -->
+An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start using all these features without waiting to buy and set up a local infrastructure. The service also frees the organizations from the cycle of upgrades as it is always up to date and always offers the latest feature.
+-->
 
 
 # Top Adobe Experience Manager Forms innovations {#latest-innovations}

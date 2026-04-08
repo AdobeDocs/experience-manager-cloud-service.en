@@ -4,6 +4,7 @@ description: Download assets from [!DNL Adobe Experience Manager Assets] and ena
 contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 ---
 # Download assets from [!DNL Adobe Experience Manager] {#download-assets-from-aem}

@@ -4,6 +4,7 @@ description: Learn about troubleshooting tips you can try when you work with ima
 contentOwner: Rick Brough
 feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
 ---
 # Troubleshoot Dynamic Media {#troubleshooting-dynamic-media-scene-mode}

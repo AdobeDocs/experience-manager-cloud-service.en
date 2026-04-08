@@ -4,6 +4,7 @@ description: Reserved keywords that you cannot use as identifiers in your Adapti
 topic-tags: author
 role: User, Developer
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 2cd3c322-9c38-42be-9877-a03c9ffc02ae
 ---
 # Adaptive Forms keywords {#adaptive-forms-keywords}

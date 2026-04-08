@@ -5,6 +5,7 @@ mini-toc-levels: 3
 contentOwner: Rick Brough
 feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
 ---
 # Set up Dynamic Media {#setting-up-dynamic-media}
@@ -13,7 +14,8 @@ exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
 
 [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) helps you manage assets by delivering rich visual merchandising and marketing assets on demand, automatically scaled for consumption on web, mobile, and social sites. Using a set of primary source assets, Dynamic Media generates and delivers multiple variations of rich content in real time through its global, scalable, performance-optimized network.
 
-<!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
+<!--
+ OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 >[!NOTE]
 >

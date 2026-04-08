@@ -2,9 +2,10 @@
 title: Configure Forms Experience Builder UI options
 description: Learn how to configure and customize the Forms Experience Builder interface options and settings for optimal user experience.
 hide: yes
-index: no
+index: false
 hidefromtoc: yes
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: d481e705-62bf-47f7-a832-1a005ec5ec59
 ---
 # Configure Forms Experience Builder UI options
