@@ -33,7 +33,6 @@ With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow 
 >* use of the [*original* Content Fragment editor](/help/assets/content-fragments/content-fragments-variations.md),
 >* using [Content Fragments for page-authoring](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
-
 Content fragments contain structured content:
 
 * Each fragment is based on a [Content Fragment Model](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
@@ -53,10 +52,17 @@ Content fragments contain structured content:
     * The reference data types available allow you to nest your content.
     * Tends to be used for headless delivery to your application.
 
-Content Fragments can also be delivered in JSON format, using the Sling Model (JSON) export capabilities of AEM core components. This form of delivery:
+Content Fragments can also be delivered in:
 
-* enables you to use the component to manage which elements of a fragment to deliver
-* allows bulk-delivery; by adding multiple [Content Fragment Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) on the page being used for API delivery
+* JSON format, using the Sling Model (JSON) export capabilities of AEM core components. This form of delivery:
+
+  * enables you to use the component to manage which elements of a fragment to deliver
+  * allows bulk-delivery; by adding multiple [Content Fragment Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) on the page being used for API delivery
+
+* HTML format, using [Visual Content Fragments](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md) rendered with [HTML templates, developed with Handlebars](/help/implementing/developing/extending/content-fragments-visualization-templates.md). This form of delivery:
+
+  * provides a visual representation to help previewing, and reviewing, the content
+  * provides a visual representation for direct, and immediate, use by external channels and applications
 
 The number of communication channels is increasing annually. Typically channels refer to the delivery mechanism, either as the:
 

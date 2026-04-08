@@ -6,7 +6,7 @@ role: User, Developer
 ---
 # Visual Content Fragments {#visual-content-fragments}
 
-AEM allows you to preview, and deliver, your Content Fragments using a visual layout based on an HTML template:
+Content Fragments contain only structured content, without formatting. So AEM allows you to preview, and deliver, your Content Fragments using a visual layout based on an HTML template:
 
 * Previewing a fragment visually helps content quality assurance, allowing authors and readers to review content before it is used. 
 
@@ -76,9 +76,38 @@ For example, preview with the **Generic Template**:
 
 ## Deliver your visual fragment {#deliver-your-visual-fragment}
 
-The visual fragment can be delivered by directly accessing the HTML using either the **Preview URL** or the **Publish URL**.
+The visual fragment can be delivered to a range of targets by directly accessing the HTML.
 
-## Download your Template {#download-your-template}
+### Deliver your visual fragment to the browser {#deliver-your-visual-fragment-to-the-browser}
+
+Copy the **Preview URL** or the **Publish URL** and access this directly from your browser. 
+
+The HTML representation of your fragment is seen.
+
+### Deliver your visual fragment to Edge Delivery Services {#deliver-your-visual-fragment-to-edge-delivery-services}
+
+You can deliver your visual fragment in an Edge Delivery Service (EDS) page.
+
+1. Navigate to your EDS Project.
+1. Add, or access, a **[Block](https://www.aem.live/developer/block-collection)** of the type [embed](https://sidekick-library--aem-block-collection--adobe.aem.page/tools/sidekick/library.html?plugin=blocks&path=/block-collection/embed&index=0).
+1. Paste the **Publish URL** to the block.
+1. Publish your EDS page. The HTML representation of your fragment is seen.
+
+### Deliver your visual fragment to an AEM page {#deliver-your-visual-fragment-to-ean-AEM-page}
+
+You can deliver your visual fragment a Content Fragment component on your AEM page.
+
+When configuring a **Content Fragment** [component on your page](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page):
+
+1. Select **Content Fragment Visualization**
+2. Select the required **Visualization Template**.
+
+   ![Configure Content Fragment component for a visual fragment](/help/sites-cloud/administering/content-fragments/assets/cf-visual-template-aem-page.png)
+1. The visual fragment will be shown, and the page can be published.
+
+<!-- CQDOC-23232 - update page authoring for fragments? -->
+
+## Download your template {#download-your-template}
 
 To download your new HTML template from AEM:
 
@@ -91,7 +120,7 @@ To download your new HTML template from AEM:
 1. Specify the file name and location.
 1. Confirm with **Save**.
 
-## Delete your Template {#delete-your-template}
+## Delete your template {#delete-your-template}
 
 To delete your new HTML template (from AEM):
 
