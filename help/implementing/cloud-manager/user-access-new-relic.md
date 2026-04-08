@@ -172,12 +172,6 @@ After a supported pipeline execution completes, you can view the corresponding c
 
    ![Change tracker indicators on the Web transactions time chart](/help/implementing/cloud-manager/assets/new-relic/new-relic-web-transactions-time.png)
 
-1. To view a full list of change trackers, in the left sidebar, under **Events**, click **Change tracking**. 
-
-   The **Change events** table shows each deployment with its timestamp and version description.
-
-   ![Change tracking option with Change events table showing](/help/implementing/cloud-manager/assets/new-relic/new-relic-change-tracking.png)
-
 1. Click any change event in the table to open a detailed view. 
 
    ![Deployment attributes panel with the deepLink URL highlighted](/help/implementing/cloud-manager/assets/new-relic/new-relic-deeplink.png) <i>Detailed view of a change event.</i>
@@ -192,6 +186,12 @@ After a supported pipeline execution completes, you can view the corresponding c
    | **changelog** | Reserved for future use. |
    | **commit** | Reserved for future use. |
    | **deepLink** | Click the URL to link back to the pipeline execution page in Cloud Manager. |
+
+1. To view a full list of change trackers, in the left sidebar, under **Events**, click **Change tracking**. 
+
+   The **Change events** table shows each deployment with its timestamp and version description.
+
+   ![Change tracking option with Change events table showing](/help/implementing/cloud-manager/assets/new-relic/new-relic-change-tracking.png)
 
 >[!TIP]
 >
