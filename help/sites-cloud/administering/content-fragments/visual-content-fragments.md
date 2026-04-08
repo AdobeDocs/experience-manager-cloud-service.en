@@ -100,9 +100,10 @@ You can deliver your visual fragment a Content Fragment component on your AEM pa
 When configuring a **Content Fragment** [component on your page](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page):
 
 1. Select **Content Fragment Visualization**
-2. Select the required **Visualization Template**.
+1. Select the required **Visualization Template**.
 
    ![Configure Content Fragment component for a visual fragment](/help/sites-cloud/administering/content-fragments/assets/cf-visual-template-aem-page.png)
+
 1. The visual fragment will be shown, and the page can be published.
 
 <!-- CQDOC-23232 - update page authoring for fragments? -->
