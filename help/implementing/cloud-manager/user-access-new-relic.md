@@ -168,7 +168,7 @@ After a supported pipeline execution completes, you can view the corresponding c
 
 1. [Access New Relic One](#accessing-new-relic) by way of Cloud Manager or directly.
 1. Navigate to **APM & Services** and select the application for the relevant environment.
-1. On the application summary page, look for change tracker indicators on the **Web transactions time** chart. Hover over a tracker to see deployment details.
+1. On the application summary page, look for change tracker indicators on the chart. Hover over a tracker to see deployment details.
 
    ![Change tracker indicators on the Web transactions time chart](/help/implementing/cloud-manager/assets/new-relic/new-relic-web-transactions-time.png)
 
