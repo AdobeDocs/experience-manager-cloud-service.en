@@ -173,19 +173,19 @@ The process is as follows:
     `ui.apps/src/main/content/jcr_root/_oak_index/diff.index/diff.json`
 
     ```{
-		"damAssetLucene": {
-			"indexRules": {
-				"dam:Asset": {
-					"properties": {
-						"test": {
-							"name": "test",
-							"propertyIndex": true
-						}
-					}
-				}
-			}
-		},
-		"acme.testIndex": {
+        "damAssetLucene": {
+            "indexRules": {
+                "dam:Asset": {
+                    "properties": {
+                        "test": {
+                            "name": "test",
+                            "propertyIndex": true
+                        }
+                    }
+                }
+            }
+        },
+        "acme.testIndex": {
             "async": [ "async" ],
             "compatVersion": 2,
             "evaluatePathRestrictions": true,
@@ -204,7 +204,7 @@ The process is as follows:
                 }
             }
         }
-	}
+    }
     ```
 
 3. Add an entry to the FileVault filter in `ui.apps/src/main/content/META-INF/vault/filter.xml`:
