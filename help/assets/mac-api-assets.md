@@ -115,7 +115,8 @@ The [!DNL Assets] HTTP API includes the following features:
 >
 >For the ease of readability the following examples omit the complete cURL notations. The notation correlates with [Resty](https://github.com/micha/resty) which is a script wrapper for cURL.
 
-<!-- TBD: The Console Manager is not available now. So how to configure the below? 
+<!--
+ TBD: The Console Manager is not available now. So how to configure the below? 
 
 **Prerequisites**
 

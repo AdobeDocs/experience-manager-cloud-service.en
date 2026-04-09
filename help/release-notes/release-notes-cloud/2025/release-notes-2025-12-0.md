@@ -93,7 +93,8 @@ AI-Generated metadata in AEM Assets no longer requires the GenAI Rider to be sig
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-<!-- ### Pre-Release features in AEM Forms 
+<!--
+ ### Pre-Release features in AEM Forms 
 
 **Rule Editor Enhancements**
 
@@ -105,7 +106,8 @@ The `Navigate To` action in the Invoke Service handlers now supports `EVENT_PAYL
 
 **Function and Mathematical Expression Support in Input Parameters**
  
-Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters). --> 
+Input parameters now support both function calls and mathematical expressions, enabling form authors to pass dynamically computed values directly. This enhancement streamlines rule configurations, eliminates the need for extra fields, and makes forms more adaptable to complex logic and calculation-driven scenarios. For more information, see [Function and Mathematical Expression Support in Input Parameters](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters).
+-->
 
 ### New Early Access Features in AEM Forms {#forms-new-early-access-features}
 

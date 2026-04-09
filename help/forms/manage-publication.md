@@ -137,7 +137,8 @@ By default, publishing a folder to Experience Manager Forms publishes all the as
         Selecting the **[!UICONTROL Include folder contents]** checkbox enables the **[!UICONTROL Include only immediate folder contents]** checkbox for selection.
 
         * If you select both options, all the forms and assets of the selected folder, subfolders (empty), and references are published. The forms and assets of the subfolders are not published.
-        * -->
+        *
+        -->
 
 
 ### Publish or unpublish a form later 
