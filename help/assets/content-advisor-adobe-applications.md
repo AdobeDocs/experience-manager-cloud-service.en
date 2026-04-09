@@ -23,7 +23,7 @@ Content Advisor brings intelligent, context-aware discovery directly into the au
 
 * Access to an AEM Assets as a Cloud Service environment.
 
-* Access to an AEM Sites environment where you have authored Content Fragments.
+* Access to an AEM Sites environment with authored Content Fragments (required only for working with Content Fragments). This is not required for accessing binary assets or AEM Assets.
 
 ## Intelligent asset discovery with Content Advisor {#intelligent-asset-discovery-content-advisor}
 
