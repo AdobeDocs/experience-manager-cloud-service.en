@@ -139,9 +139,6 @@ To modify an existing metadata form, follow the steps below:
 
    ![Cascading Metadata Form Output](assets/cascading-metadata-form-output.png)
 
->[!NOTE]
-> 
->To get early access to the Cascading Metadata on your Assets View account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Next Steps {#next-steps}
 
