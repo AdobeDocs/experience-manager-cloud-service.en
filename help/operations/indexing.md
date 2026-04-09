@@ -133,31 +133,30 @@ This provides a simple way to customize out-of-the-box (OOTB) indexes, and to de
 
 >[!TIP]
 >
->There is an online tool that helps configuring AEM indexes: [Oak Indexing Tools](https://oak-indexing.github.io/oakTools/index.html). 
-It has [a section on Simplified Index Management](https://oak-indexing.github.io/oakTools/simplified.html) 
-with a step-by-step guide and additional tools to help converting custom index to this new format.
+>There is an online tool that helps configuring AEM indexes: [Oak Indexing Tools](https://oak-indexing.github.io/oakTools/index.html). It has [a section on Simplified Index Management](https://oak-indexing.github.io/oakTools/simplified.html) with a step-by-step guide and additional tools to help converting custom index to this new format.
 
-Limitations: Simplified Index Management is not currently available for indexes that include `/apps`, `/libs`. 
-It can be used for all indexes that have an `includedPaths` property of eg. `/content`. 
-For indexes without an `includedPaths` property, or if the `includedPaths` contains `/apps` or `/libs`, 
+Limitations: Simplified Index Management is not currently available for indexes that include `/apps`, `/libs`.
+It can be used for all indexes that have an `includedPaths` property of e.g. `/content`.
+For indexes without an `includedPaths` property, or if the `includedPaths` contains `/apps` or `/libs`,
 consider changing the query, or, alternatively, use the Legacy Index Configurations mode below.
 
-Simplified Index Management is able to customize existing Out-of-the-box (OOTB) and add fully custom indexes. 
-With Simplified Index Management, there is no need to copy definitions, or to explicitly define versions. 
-Customizations of index definitions are automatically merged with the latest out-of-the-box index, 
+Simplified Index Management is able to customize existing out-of-the-box (OOTB) indexes, and add fully custom indexes.
+With Simplified Index Management, there is no need to copy definitions, or to explicitly define versions.
+Customizations of index definitions are automatically merged with the latest out-of-the-box index,
 and if needed, a new index version is automatically created whenever it is needed.
 
-For most indexes, custom indexes and customizations to existing indexes can be done using a `diff.index`. 
-To configure such an index, use the following step-by-step guide. 
-In this example, we will customize the `damAssetLucene` index, 
-and at the same time introduce a fully custom index. 
+For most indexes, custom indexes and customizations to existing indexes can be done using a `diff.index`.
+To configure such an index, use the following step-by-step guide.
+The following example customizes the `damAssetLucene` index,
+and at the same time introduce a fully custom index.
 The process is as follows:
 
 1. Create a new folder in the `ui.apps` directory named `ui.apps/src/main/content/jcr_root/_oak_index/diff.index`.
 
-2. Add a configuration file `.content.xml` with the following content: `ui.apps/src/main/content/jcr_root/_oak_index/diff.index/.content.xml`
+2. Add a configuration file `.content.xml` (this is a required placeholder configuration, not a regular index definition) with the following content: `ui.apps/src/main/content/jcr_root/_oak_index/diff.index/.content.xml`
 
-    ```<?xml version="1.0" encoding="UTF-8"?><jcr:root
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?><jcr:root
         xmlns:jcr="http://www.jcp.org/jcr/1.0"
         xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
         jcr:primaryType="nt:unstructured"
@@ -166,13 +165,14 @@ The process is as follows:
     ```
 
 3. Add a text file `diff.json` with the following content.
-   In this example, we customize the out-of-the-box index `damAssetLucene` 
-   to additionally index the property named `test`, and in addition to that, 
+   In this example, we customize the out-of-the-box index `damAssetLucene`
+   to additionally index the property named `test`, and in addition to that,
    a fully custom index named `acme.testIndex` that indexes the property `testing` in `nt:unstructured` nodes:
 
     `ui.apps/src/main/content/jcr_root/_oak_index/diff.index/diff.json`
 
-    ```{
+    ```json
+    {
         "damAssetLucene": {
             "indexRules": {
                 "dam:Asset": {
@@ -198,8 +198,9 @@ The process is as follows:
                 "nt:unstructured": {
                     "properties": {
                         "testing": {
-                        "name": "testing",
-                        "propertyIndex": true
+                            "name": "testing",
+                            "propertyIndex": true
+                        }
                     }
                 }
             }
@@ -207,7 +208,7 @@ The process is as follows:
     }
     ```
 
-3. Add an entry to the FileVault filter in `ui.apps/src/main/content/META-INF/vault/filter.xml`:
+4. Add an entry to the FileVault filter in `ui.apps/src/main/content/META-INF/vault/filter.xml`:
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -217,25 +218,25 @@ The process is as follows:
     </workspaceFilter>
     ```
 
-After applying the changes, deploy the new application using Cloud Manager. 
-This deployment initiates two jobs, responsible for adding (and merging if necessary) 
-the index definitions for author and publish, respectively. 
+After applying the changes, deploy the new application using Cloud Manager.
+This deployment initiates two jobs, responsible for adding (and merging if necessary)
+the index definitions for author and publish, respectively.
 Prior to the switch, the underlying repositories undergo reindexing with the updated index definitions.
 
 ## Legacy Index Configurations
 
-Indexes that can not be configured using Simplified Index Management
+Indexes that cannot be configured using Simplified Index Management
 need to use the legacy configuration mode.
 
-The Legacy Index Configuration only applies for indexes that can not have an `includedPaths` property, 
-or that have a property which need to covers `/apps`, `/libs`, or `/`. 
+The Legacy Index Configuration only applies for indexes that can not have an `includedPaths` property,
+or that have a property which needs to covers `/apps`, `/libs`, or `/`.
 There are some out-of-the-box indexes that do cover these paths, namely:
 
-* `cqPageLucene`: If you need to customize this index, 
-  consider migrating your queries to use `cqPageContent` instead, 
+* `cqPageLucene`: If you need to customize this index,
+  consider migrating your queries to use `cqPageContent` instead,
   which has an `includedPaths` of `/content`, and a tag.
-* `ntBaseLucene`: Best practise is to avoid changing this index, 
-  and instead using a fully custom index with a prefix such as `acme.`, 
+* `ntBaseLucene`: Best practice is to avoid changing this index,
+  and instead using a fully custom index with a prefix such as `acme.`,
   which covers only the required paths. 
   See the section Simplified Index Management for details.
 
@@ -470,7 +471,7 @@ Sometimes, it is necessary to undo a modification in an index definition, for ex
 
 ### Removing an Index {#removing-an-index}
 
-The following only applies to customizations of out-of-the-box (OOTB) indexes and to fully custom indexes. Note that the original OOTB indexes can not be removed, as they are used by AEM.
+The following only applies to customizations of out-of-the-box (OOTB) indexes and to fully custom indexes. Note that the original OOTB indexes cannot be removed, as they are used by AEM.
 
 To ensure system integrity and stability, index definitions should be treated as immutable once deployed. If you need to remove a custom index or customization, create a new version of that index with a definition that effectively simulates the removal
 (see the examples below).
