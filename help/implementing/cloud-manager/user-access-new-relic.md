@@ -179,7 +179,7 @@ After a supported pipeline execution completes, you can view the corresponding c
 
    ![Change tracker indicators on the Web transactions time chart](/help/implementing/cloud-manager/assets/new-relic/new-relic-web-transactions-time.png)
 
-1. Click any change event in the table to open a detailed view. 
+1. Click any change event in the chart to open a detailed view. 
 
    ![Deployment attributes panel with the deepLink URL highlighted](/help/implementing/cloud-manager/assets/new-relic/new-relic-deeplink.png) <i>Detailed view of a change event.</i>
 
