@@ -219,14 +219,15 @@ If the sample assets or viewer preset artwork has not synced or published, resta
 
 **How to debug**
 
+![Error #2046 displayed in the Bandwidth & Storage tab in Dynamic Media Classic](assets/2046-error.png)
+
 * Users encounter Error #2046 when opening the Bandwidth & Storage tab in Dynamic Media Classic (Scene7) desktop application.
-* The issue is caused by an expired digital signing certificate in a cached Adobe AIR framework file.
+* The issue is caused by an expired digital signing certificate in a cached RSL (Runtime Shared Library) used by the Adobe AIR framework.
 * The failure occurs during local certificate re-validation.
-* The issue can affect additional users over time based on cache re-validation cycles.
 
 **Solution**
 
-Clear the local cache to force Adobe AIR to download the updated framework file.
+Clear the local cache to force Adobe AIR to download the updated RSL (Runtime Shared Library).
 
 **macOS**
 
