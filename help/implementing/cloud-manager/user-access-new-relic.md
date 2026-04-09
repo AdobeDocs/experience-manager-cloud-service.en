@@ -15,7 +15,7 @@ Learn about the New Relic One application performance monitoring (APM) service f
 
 Adobe places a great emphasis on the monitoring, availability, and performance of your application. AEM as a Cloud Service includes access to New Relic One monitoring, giving teams comprehensive visibility into system and environment performance metrics as part of the standard product offering.
 
-This document outlines how to manage access to New Relic One application performance monitoring (APM) features in AEM as a Cloud Service environments. Effective management of these features supports optimal performance and maximizes the benefits of AEM as a Cloud Service.
+This article outlines how to manage access to New Relic One application performance monitoring (APM) features in AEM as a Cloud Service environments. Effective management of these features supports optimal performance and maximizes the benefits of AEM as a Cloud Service.
 
 When a new production program is created, the New Relic One sub-account associated with your AEM as a Cloud Service Program is automatically created. [This sub-account must be activated](#activate-sub-account) to begin ingesting data.
 
@@ -130,7 +130,7 @@ Once you have [activated your New Relic account](#activate-account), you can ope
 
 1. In the new browser tab that opens, sign in to New Relic One.
 
-**To access New Relic One directly:**
+**To open New Relic One directly:**
 
 1. Go to [New Relic's login page](https://login.newrelic.com/login).
 
@@ -150,11 +150,11 @@ Cloud Manager automatically sends change trackers to New Relic One whenever supp
 
 <!-- See also [Introduction to change tracking](https://docs.newrelic.com/docs/change-tracking/overview/) and [Record and view deployments](https://docs.newrelic.com/docs/apm/apm-ui-pages/events/record-deployments/). -->
 
-### Supported pipelines and flows {#supported-pipelines}
+### Supported pipelines and workflows {#supported-pipelines}
 
-The following Cloud Manager pipelines and the last two flow types generate change trackers in New Relic One:
+The following Cloud Manager pipelines and the last two workflow types generate change trackers in New Relic One:
 
-| Pipeline/Flow type | Description |
+| Pipeline/Workflow type | Description |
 |---|---|
 | **Full-stack (CI_CD deploy)** | Full-stack pipeline executions. The trace includes the pipeline name and execution ID. |
 | **Web tier config** | Web tier configuration pipeline executions. The trace includes the pipeline name and execution ID. |
