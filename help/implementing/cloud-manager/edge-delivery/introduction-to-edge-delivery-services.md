@@ -42,7 +42,7 @@ Modern web experiences require high-performance delivery, but many organizations
 
 These capabilities let organizations adopt modern delivery incrementally, without sacrificing existing workflows.
 
-### Authoring options for Edge Delivery sites
+### Authoring options for Edge Delivery sites {#authoring-options-eds}
 
 When you create an Edge Delivery site in Cloud Manager, you can choose your preferred authoring approach:
 
@@ -51,7 +51,7 @@ When you create an Edge Delivery site in Cloud Manager, you can choose your pref
 
 Organizations can choose between these approaches, or use both incrementally, depending on their workflow preferences. See [Create your first Edge Delivery site with one click](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md).
 
-### Flexible publish tier
+### Flexible publish tier {#flexible-publish-tier}
 
 Cloud Manager lets you configure whether a publish tier is provisioned for your program's environments. Not all architectures require a publish tier as seen in the following table:
 
@@ -77,7 +77,7 @@ If you have an Edge Delivery Services (EDS) license, you can use an [Adobe-manag
 Alternatively, if you choose to use your CDN (that is, a non-Adobe-managed CDN), regardless of your Edge Delivery Services licensing, you must configure it on the `aem.live` platform. See [BYO CDN Setup](https://www.aem.live/docs/byo-cdn-setup). 
 
 
-## About adding Edge Delivery Services to a production program or sandbox program
+## About adding Edge Delivery Services to a production program or sandbox program {#about-adding-eds-to-prod-sandbox}
 
 An Edge Delivery Services can be added in a number of different ways depending on how you began your project or when you want to create the site.
 
