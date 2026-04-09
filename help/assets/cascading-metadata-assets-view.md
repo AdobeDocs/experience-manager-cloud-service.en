@@ -21,10 +21,6 @@ Here are some use cases for which you can define cascading metadata:
 * Change options displayed for a particular field based on the value specified in another field.
 * Set the default metadata value in a particular field based on the value specified in another field.
 
->[!IMPORTANT]
->
->The Cascading Metadata feature is available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
-
 ## Configure cascading metadata in [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
 Consider a scenario where you want to display cascading metadata based on the type of asset that is selected. For example-
