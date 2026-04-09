@@ -39,47 +39,54 @@ For a newly created program, a New Relic One sub-account is created for you. How
 >
 >A user in the **Business Owner** role must be logged in to manage the New Relic One sub-account.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+**To activate your New Relic One sub-account:**
 
-1. On the **[My Programs](/help/implementing/cloud-manager/navigation.md#my-programs)** console, click the program for which you want to manage your New Relic One users.
+1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
+   1. In the **Quick access** section, click **Experience Manager**.
+   1. In the left side panel, click **Cloud Manager**.
+1. Select an organization that you want.
+1. On the **My Programs** console, click a program for which you want to manage your New Relic One users.
+1. From the left side menu, under **Services**, click ![Data icon or Environments icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments**.
+1. On the Environments page, near the upper-right corner, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), then click **Activate New Relic**.
 
-1. At the bottom of the **Environments** card on the program overview page, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) and select **Activate New Relic**.
+   ![Activate New Relic](/help/implementing/cloud-manager/assets/new-relic/new-relic-activate.png)
 
-   ![Manage users](assets/newrelic-activate-sub-account.png)
-
-   * You can also access the **Manage users** option. At the top of the **Environments** screen of your program, click ![Smock more icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
-
-1. [Run a pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) for the same environment to successful completion to complete the sub-account activation.
+1. [Run a pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) for the same environment to successful completion to finish the sub-account activation.
 
 When the sub-account is deactivated, there is no data ingestion. 
 
 ## Manage New Relic One users {#manage-users}
 
-Follow these steps to define the users of your New Relic One sub-account associated with your AEM as a Cloud Service Program.
+You can define the users of your New Relic One sub-account associated with your AEM as a Cloud Service Program.
 
 >[!NOTE]
 >
 >A user in the **Business Owner** or **Deployment Manager** role must be logged in to manage New Relic One users.
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+**To manage New Relic One users:**
 
-1. Click the program for which you want to manage your New Relic One users.
+1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
+   1. In the **Quick access** section, click **Experience Manager**.
+   1. In the left side panel, click **Cloud Manager**.
+1. Select an organization that you want.
+1. On the **My Programs** console, click a program for which you want to manage your New Relic One users.
+1. From the left side menu, under **Services**, click ![Data icon or Environments icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments**.
+1. On the Environments page, near the upper-right corner, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), then click **Manage Users**.
 
-1. At the bottom of the **Environments** card on the program overview page, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) and select **Manage users**.
+   ![Manage New Relic users](/help/implementing/cloud-manager/assets/new-relic/new-relic-manage-users.png)
 
-   ![Manage users](assets/newrelic-manage-users.png)
+1. In the **Manage New Relic users** dialog box, do the following:
 
-   * You can also access the **Manage users** option. At the top of the **Environments** screen of your program, click ![Smock more icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
-
-1. In the **Manage New Relic users** dialog box, enter the first and last name of the user you want to add, and click the **Add** button. Repeat this step for all users that you want to add.
+   * Enter the first and last name of the user that you want to add
+   * Enter their associated e-mail address
+   * Click ![Add icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg ) **Add**. Repeat this step for each user that you want to add.
+   * Click ![Delete icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) to remove a user.
 
    ![Add users](assets/newrelic-add-users.png)
 
-1. To remove a New Relic One user, click the delete button at the right end of the row representing the user.
+1. Click **Save**.
 
-1. Click **Save** to create the users.
-
-Once the users are defined, New Relic sends a confirmation email to each user to whom you granted access, so the user can complete the setup process and sign in.
+Once the users are defined, New Relic sends a confirmation email to each one. From there, they can complete the activation process and sign in.
 
 >[!NOTE]
 >
@@ -105,21 +112,21 @@ Once a New Relic One user account is created, as described in [Manage New Relic 
 
 If you do not receive a confirmation email from New Relic, see the [troubleshooting section](#troubshooting).
 
-## Access New Relic One {#accessing-new-relic}
+## Open New Relic One {#accessing-new-relic}
 
-Once you have [activated your New Relic account](#activate-account), you can access New Relic One by way of Cloud Manager or directly.
+Once you have [activated your New Relic account](#activate-account), you can open New Relic One by way of Cloud Manager or directly.
 
-**To access New Relic One by way of Cloud Manager:**
+**To open New Relic One by way of Cloud Manager:**
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
+   1. In the **Quick access** section, click **Experience Manager**.
+   1. In the left side panel, click **Cloud Manager**.
+1. Select an organization that you want.
+1. On the **My Programs** console, click a program for which you want to open New Relic One.
+1. From the left side menu, under **Services**, click ![Data icon or Environments icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Environments**.
+1. On the Environments page, near the upper-right corner, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), then click **Open New Relic**.
 
-1. Click the program for which you want to access New Relic One.
-
-1. At the bottom of the **Environments** card on the program overview page, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) and select **Open New Relic**.
-
-   ![Manage users](assets/newrelic-access.png)
-
-   * You can also access New Relic. At the top of the **Environments** screen of your program, click ![Smock more icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
+   ![Open New Relic](/help/implementing/cloud-manager/assets/new-relic/new-relic-open-new-relic.png)
 
 1. In the new browser tab that opens, sign in to New Relic One.
 
