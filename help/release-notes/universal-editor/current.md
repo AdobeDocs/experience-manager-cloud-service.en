@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.04.02 Release Notes
-description: These are the release notes for the 2026.04.02 release of the Universal Editor.
+title: Universal Editor 2026.04.09 Release Notes
+description: These are the release notes for the 2026.04.09 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.04.02 Release Notes {#release-notes}
+# Universal Editor 2026.04.09 Release Notes {#release-notes}
 
-These are the release notes for the 2 April 2026 release of the Universal Editor.
+These are the release notes for the 9 April 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,8 +20,6 @@ These are the release notes for the 2 April 2026 release of the Universal Editor
 
 ## What's New {#what-is-new}
 
-* [A configurable option](/help/implementing/universal-editor/configure-rte.md#special-characters) to [add special characters](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options) has been added to the rich text editor (RTE) toolbar.
-
-## Other Improvements {#other-improvements}
-
-* Tag fields are no longer wrongly returned as multi-fields by the OpenAPI adapter.
+* [The add image option in the rich text editor (RTE) toolbar](/help/implementing/universal-editor/configure-rte.md#image) is now supported for [projects authoring and persisting content in AEM as a Cloud Service.](https://www.aem.live/docs/aem-authoring)
+* [The properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) is now collapsible when navigating from the editor back to [the home screen.](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
+  * Please reach out to Adobe customer care if you wish to use this feature.
