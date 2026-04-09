@@ -1,6 +1,6 @@
 ---
 title: Visual Content Fragments
-description: Learn how to preview and publish visualized Content Fragments. 
+description: Learn how to preview and publish visual Content Fragments using HTML templates. 
 feature: Content Fragments
 role: User, Developer
 ---

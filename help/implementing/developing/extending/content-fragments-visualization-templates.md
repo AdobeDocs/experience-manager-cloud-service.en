@@ -54,6 +54,8 @@ Handlebars is a simple templating language that uses double curly braces (bracke
 
 ### Basic syntax {#basic-syntax}
 
+An example of basic Handlebars syntax:
+
 ```handlebars
 <!-- Output a variable (HTML-escaped) -->
 {{variableName}}
@@ -66,6 +68,8 @@ Handlebars is a simple templating language that uses double curly braces (bracke
 ```
 
 ### Key concepts {#key-concepts}
+
+The key concepts of Handlebars:
 
 | Syntax | Description | When to use |
 |--- |--- |--- |
@@ -82,6 +86,10 @@ Handlebars is a simple templating language that uses double curly braces (bracke
 When your template is rendered, it receives a context object containing all the data about your Content Fragment.
 
 ### Main Content Fragment {#main-content-fragment}
+
+<!-- CQDOC-23232 confirm terminology -->
+
+The structure of the context object for the main Content Fragment:
 
 | Variable | Type | Description |
 |--- |--- |--- |
@@ -121,6 +129,8 @@ for field HTML:
 
 ### Referenced Content Fragments {#referenced-content-fragments}
 
+The structure of the context object for any referenced fragments:
+
 | Variable | Type | Description |
 |--- |--- |--- |
 | `hasReferencedFragments` | Boolean | `true` when references exist |
@@ -153,6 +163,8 @@ Or from the fields map:
 ```
 
 ## Basic field access {#basic-field-access}
+
+Direct field access is recommended, when necessary you can iterate through all fields.
 
 ### Direct field access (recommended) {#direct-field-access-recommended}
 
@@ -218,6 +230,8 @@ Remember:
 When a Content Fragment field references another Content Fragment, you can use dot notation to directly access fields in the referenced fragment.
 
 ### Single-level nesting {#single-level-nesting}
+
+An example for single-level nesting:
 
 ```handlebars
 <article>
@@ -286,6 +300,8 @@ GET /adobe/sites/cf/fragments/{id}/preview?hydration=%7B%22enabled%22%3Atrue%2C%
 | `3+` | Continue up to 10 levels |
 
 ## Multi-valued fields {#multi-valued-fields}
+
+There are several types of multi-valued fields.
 
 ### Multi-valued text fields {#multi-valued-text-fields}
 
@@ -393,6 +409,8 @@ Handlebars provides the `{{#each}}` helper for iterating over arrays and objects
 
 ### Iterating over arrays {#iterating-over-arrays}
 
+An example of iterating over arrays:
+
 ```handlebars
 <!-- Simple array iteration -->
 {{#each fields.tags}}
@@ -442,6 +460,8 @@ Inside `{{#each}}` blocks, Handlebars provides special variables:
 
 ### Iterating over referenced fragments {#iterating-over-referenced-fragments}
 
+An example of iterating over referenced fragments:
+
 ```handlebars
 {{#if hasReferencedFragments}}
 <section class="references">
@@ -467,6 +487,8 @@ Inside `{{#each}}` blocks, Handlebars provides special variables:
 
 ### Nested loops {#nested-loops}
 
+An example of nested loops:
+
 ```handlebars
 {{#each fields.categories}}
 <section class="category">
@@ -487,6 +509,8 @@ Inside `{{#each}}` blocks, Handlebars provides special variables:
 Use conditionals to show or hide content based on data availability.
 
 ### Basic If/Else {#basic-if-else}
+
+An example of a basic if-else construct:
 
 ```handlebars
 {{#if hasMainDescription}}
@@ -519,6 +543,8 @@ An `unless` helper:
 ```
 
 ### Nested Conditionals {#nested-conditials}
+
+An example of nested conditional:
 
 ```handlebars
 {{#if fields.author}}
@@ -594,6 +620,8 @@ Creates a new scope for nested objects to reduce repetitive path prefixes:
 
 ## Advance Patterns {#advanced-patterns}
 
+Some examples of advanced patterns follow.
+
 ### Accessing Parent Context in Nested Loops {#accessing-parent-context-in-nested-loops}
 
 Use `../` to access the parent scope from within a nested loop:
@@ -623,6 +651,8 @@ Use `../` to access the parent scope from within a nested loop:
 
 ### Dynamic CSS Classes {#dynamic-css-classes}
 
+An example of dynamic CSS classes:
+
 ```handlebars
 <article class="content-fragment {{#if hasMainDescription}}with-description{{/if}} {{#if hasReferencedFragments}}has-refs{{/if}}">
   <h1>{{main_cf_title}}</h1>
@@ -639,6 +669,8 @@ Use `../` to access the parent scope from within a nested loop:
 
 ### Fallback values {#fallback-values}
 
+An example of fallback:
+
 ```handlebars
 <!-- Show title, falling back to path if title is missing -->
 <h1>
@@ -652,7 +684,11 @@ Use `../` to access the parent scope from within a nested loop:
 
 ## Complete Examples {#complete-examples}
 
+Several complete examples are provided for reference.
+
 ### Blog post with author
+
+A blog post with author details:
 
 ```handlebars
 <!DOCTYPE html>
@@ -724,6 +760,8 @@ GET /adobe/sites/cf/fragments/{id}/preview?hydration=%7B%22enabled%22%3Atrue%2C%
 
 ### Product catalog with categories {#product-catalog-with-categories}
 
+A product catalog with categories:
+
 ```handlebars
 <!DOCTYPE html>
 <html lang="en">
@@ -774,6 +812,8 @@ GET /adobe/sites/cf/fragments/{id}/preview?hydration=%7B%22enabled%22%3Atrue%2C%
 ``` 
 
 ### Generic table view (no prior knowledge of fields) {#generic-table-view-no-prior-knowledge-of-fields}
+
+A generic table view, without an inherent knowledge of fields. The is similar to the **Generic Template**:
 
 ```handlebars
 <!DOCTYPE html>
@@ -854,6 +894,8 @@ GET /adobe/sites/cf/fragments/{id}/preview?hydration=%7B%22enabled%22%3Atrue%2C%
 ``` 
 
 ## Best practices {#best-practices}
+
+Best practices include:
 
 1. Always use triple braces for field values. 
 
@@ -955,6 +997,8 @@ GET /adobe/sites/cf/fragments/{id}/preview?hydration=%7B%22enabled%22%3Atrue%2C%
 
 ## Troubleshooting {#troubleshooting}
 
+Some troubleshooting hints include:
+
 | Problem | Symptom | Solution |
 |--- |--- |--- |
 | Field shows HTML tags as text | `<p>Hello World</p>` displayed literally | Use triple braces: `{{{fields.description}}}` |
@@ -985,6 +1029,8 @@ Remember:
   Using double braces will escape the generated HTML tag and display it as raw text rather than rendering the image, video, or link.
 
 ### Asset field usage {#asset-field-usage}
+
+An example of asset field usage:
 
 ```handlebars
 <!-- CORRECT - triple braces render the image -->
@@ -1018,6 +1064,8 @@ Remember:
 * Use triple braces `{{{ }}}` with the asset helper, not double braces!
 
 #### Four basic examples {#four-basic-examples}
+
+Four basic examples are:
 
 ```handlebars
 <!-- Add a CSS class to an image -->
@@ -1060,6 +1108,8 @@ The `alt` attribute from the original image can be overridden:
 
 #### Complex example {#complex-example}
 
+A complex example is:
+
 ```handlebars
 <article class="blog-post">
 <header>
@@ -1098,6 +1148,8 @@ Remember:
 
 #### Three Basic examples {#three-basic-examples}
 
+Three basic examples are:
+
 ```handlebars
 <!-- Add a CSS class to text -->
 {{{text fields.title class="article-title"}}}
@@ -1111,6 +1163,8 @@ Remember:
 ```
 
 #### Common Use Cases {#common-use-cases}
+
+Some common use cases include:
 
 ```handlebars
 <!-- Styling article metadata -->
@@ -1135,6 +1189,8 @@ Remember:
 ```
 
 #### With loops {#with-loops}
+
+A common use case with loops includes:
 
 ```handlebars
 {{#each fields.tags}}
@@ -1196,7 +1252,11 @@ Comparison:
 
 ## Quick reference {#quick-reference}
 
+Some quick reference information is provided for reference.
+
 ### Context variables {#context-variables}
+
+The context variables:
 
 ```handlebars
 {{main_cf_title}}             <!-- Main fragment title -->
@@ -1211,6 +1271,8 @@ Comparison:
 
 ### Field access {#field-access}
 
+How to access fields:
+
 ```handlebars
 {{{fields.fieldName}}}                    <!-- Direct field -->
 {{{fields.author.name}}}                  <!-- Nested CF field -->
@@ -1221,6 +1283,8 @@ Comparison:
 ```
 
 ### Control flow {#control-flow}
+
+The control flow:
 
 ```handlebars
 {{#if condition}}...{{/if}}               <!-- Conditional -->
@@ -1233,6 +1297,8 @@ Comparison:
 
 ### Loop variables {#loop-variables}
 
+The loop variables:
+
 ```handlebars
 {{@index}}        <!-- 0-based index -->
 {{@number}}       <!-- 1-based index -->
@@ -1244,6 +1310,8 @@ Comparison:
 ```
 
 ### Custom template helpers {#custom-template-helpers}
+
+The custom template helpers:
 
 ```handlebars
 {{{asset fields.image class="css-class"}}}                <!-- Image with class -->
@@ -1273,6 +1341,8 @@ Comparison:
 * Loop variables: `{{@index}}`
 
 ## Additional resources {#additional-resources}
+
+Additional resources are available:
 
 * [Handlebars documentation](https://handlebarsjs.com/)
 * [Handlebars built-in helpers](https://handlebarsjs.com/guide/builtin-helpers.html)
