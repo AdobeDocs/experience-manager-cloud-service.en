@@ -2,7 +2,7 @@
 title: Using MCP with AEM as a Cloud Service
 description: Learn how to use the Model Context Protocol with AEM as a Cloud Service
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
 ---
 # Using MCP with AEM as a Cloud Service {#using-mcp-with-aem-as-a-cloud-service}
@@ -46,9 +46,9 @@ AEM exposes MCP servers as HTTP endpoints. The endpoints listed below are relati
 
 | **MCP Server** | **Endpoint**  | **Description**                                                                                                      |
 |---|---|----------------------------------------------------------------------------------------------------------------------|
-| **Content**  | `/content`  | Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing. |
-| **Content (read-only)** | `/content-readonly`  | Read-only content operations (Get, List/Search) for pages and content fragments.                                    |
-| **Cloud Manager** | `/cloudmanager`  | Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered. <br><br>*This MCP server is now in **beta**; to request access, email [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com) with a description of your use case.* |
+| **Content**  | `/content`  | All low-level content operations, including create, read, update, and delete (CRUD) for pages, fragments and assets. |
+| **Content (read-only)** | `/content-readonly`  | Read-only content operations (Get, List/Search) for pages, fragments, and assets.                                    |
+| **Cloud Manager** | `/cloudmanager`  | Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered. |
 
 The specific tools exposed by each MCP server may evolve over time. In practice, you can ask your MCP-enabled application to discover tools via a prompt such as:
 
