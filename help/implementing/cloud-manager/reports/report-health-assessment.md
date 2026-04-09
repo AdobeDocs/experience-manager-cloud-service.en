@@ -25,7 +25,7 @@ See also [Health Assessment patterns](#ha-patterns) for rule definitions and rem
 
 ## Access the Health Assessment page {#access-health-assessment}
 
-1. Sign into Cloud Manager at [experiece.adobe.com](https://experience.adobe.com).
+1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
 1. In the **Quick access** section, click **Experience Manager**.
 1. In the left side panel, click **Cloud Manager**.
 1. Select an organization that you want. The image below is for illustration. Select your own organization name.
