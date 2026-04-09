@@ -22,5 +22,4 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
-* AgentBridge has been introduced for AI Assistant and Universal Editor integration.
-* [The add image option in the rich text editor (RTE) toolbar](/help/implementing/universal-editor/configure-rte.md#image) is now supported for [projects authoring and persisting content in AEM as a Cloud Service.](https://www.aem.live/docs/aem-authoring)
+* An issue was fixed where [the badge of an editable item](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content) was obscuring the item behind it in some situations.
