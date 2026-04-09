@@ -6,11 +6,11 @@ role: Admin, Developer
 ---
 # Visual Content Fragments - Templates {#visual-content-fragments-templates}
 
-In Adobe Experience Manager (AEM) as a Cloud Service HTML templates can be used to preview, and deliver, Content Fragments. You can create your own HTML template, then upload and assign it to specific Content Fragment Models in AEM. Once assigned the template can be used with any Content Fragments based on the model.
+In Adobe Experience Manager (AEM) as a Cloud Service, HTML templates can be used to preview, and deliver, Content Fragments. 
 
-These HTML templates are developed with Handlebars.
+You can create your own HTML template, then upload and assign it to specific Content Fragment Models in AEM. Once assigned the template is available to be used with any Content Fragments based on the model. The HTML template accesses the structured content of a Content Fragment for either a visual preview, or delivery to an external destination; for example, browser, external application and others. The templates allow you to control exactly how your Content Fragments are displayed.
 
-This page explains how to create custom Handlebars templates for rendering Adobe Experience Manager (AEM) Content Fragments. Templates allow you to control exactly how your Content Fragments are displayed in preview mode.
+These HTML templates are developed with Handlebars. This article explains how to create custom Handlebars templates for rendering Content Fragments.
 
 >[!NOTE]
 >
@@ -20,6 +20,7 @@ This page explains how to create custom Handlebars templates for rendering Adobe
 
 In particular, this page covers:
 
+* An overview of how to use your templates in AEM
 * Handlebars - the necessary basics of the syntax
 * How to access Content Fragment data
 * Working with nested Content Fragments
@@ -181,7 +182,7 @@ Access fields directly by name using the fields map:
 Remember:
 
 * Use triple braces `{{{ }}}` for field values — they contain pre-rendered HTML
-* Field names **must** match your content fragment model **exactly**
+* Field names **must** match your Content Fragment Model **exactly**
 * Missing fields render as empty strings — no errors thrown
 
 ### Iterate through all fields {#iterate-through-all-fields}
@@ -222,7 +223,7 @@ When a Content Fragment field references another Content Fragment, you can use d
 <article>
   <h1>{{{fields.title}}}</h1>
 
-  <!-- Access author (a referenced content fragment) -->
+  <!-- Access author (a referenced Content Fragment) -->
   <div class="author-info">
     <h3>Author</h3>
     <p>Name: {{{fields.author.name}}}</p>
@@ -269,7 +270,7 @@ Pattern: `fields.level1.level2.level3.fieldName` (unlimited depth).
 
 ### API parameter requirement: hydration {#api-parameter-requirements}
 
-To enable nested content fragment access, you must include the `hydration` query parameter in your API call:
+To enable nested Content Fragment access, you must include the `hydration` query parameter in your API call:
 
 To enable Hydration:
 
