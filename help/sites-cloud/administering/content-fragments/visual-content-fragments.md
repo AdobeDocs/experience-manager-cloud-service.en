@@ -6,7 +6,7 @@ role: User, Developer
 ---
 # Visual Content Fragments {#visual-content-fragments}
 
-Content Fragments contain only structured content, without formatting. So AEM allows you to preview, and deliver, your Content Fragments using a visual layout based on an HTML template:
+Content Fragments contain only structured content, without formatting. So AEM allows you to directly preview, and deliver, your Content Fragments using a visual layout based on an HTML template:
 
 * Previewing a fragment visually helps content quality assurance, allowing authors and readers to review content before it is used. 
 
@@ -28,7 +28,11 @@ To upload your new HTML template:
 
 1. In the Content Fragment console open the tab for **Content Fragment Models**.
 1. Navigate to the location of your fragment model.
-1. Select the information icon (i) for the required model. The right panel will be shown. 
+1. Select the information icon (i) for the required model:
+
+   ![Content Fragment Console - Information icon](/help/sites-cloud/administering/content-fragments/assets/cfc-information-icon.png)
+
+   The right panel will be shown. 
 1. Scroll down to show **HTML Templates**, the **Generic Template** is already listed as it is the default:
 
    ![Preview Fragment with Generic HTML Template](/help/sites-cloud/administering/content-fragments/assets/cf-visual-html-template-configure-default.png)
@@ -124,7 +128,12 @@ To download your new HTML template from AEM:
 
 1. In the Content Fragment console open the tab for **Content Fragment Models**.
 1. Navigate to the location of your fragment model.
-1. Select the information icon (i) for the required model. The right panel will be shown. 
+1. Select the information icon (i) for the required model:
+
+   ![Content Fragment Console - Information icon](/help/sites-cloud/administering/content-fragments/assets/cfc-information-icon.png)
+
+   The right panel will be shown. 
+
 1. Scroll down to show **HTML Templates**.
 1. Select the ellipse by the template you want to download.
 1. Select **Download**.
@@ -137,7 +146,11 @@ To delete your new HTML template (from AEM):
 
 1. In the Content Fragment console open the tab for **Content Fragment Models**.
 1. Navigate to the location of your fragment model.
-1. Select the information icon (i) for the required model. The right panel will be shown. 
+1. Select the information icon (i) for the required model:
+
+   ![Content Fragment Console - Information icon](/help/sites-cloud/administering/content-fragments/assets/cfc-information-icon.png)
+
+   The right panel will be shown. 
 1. Scroll down to show **HTML Templates**.
 1. Select the ellipse by the template you want to download.
 1. Select **Delete**.
