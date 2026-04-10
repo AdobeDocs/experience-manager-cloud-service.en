@@ -234,10 +234,10 @@ Some out-of-the-box indexes cover these paths:
 
 * `cqPageLucene`: If you need to customize this index,
   consider migrating your queries to use `cqPageContent` instead,
-  which has an `includedPaths` of `/content`, and a tag.
+  which has an `includedPaths` value of `/content` and a tag.
 * `ntBaseLucene`: Best practice is to avoid changing this index,
   and instead using a fully custom index with a prefix such as `acme.`,
-  which covers only the required paths. 
+  which covers only the required paths.
   See the section Simplified Index Management for details.
 
 ## Index Names {#index-names}
