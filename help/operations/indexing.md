@@ -228,9 +228,9 @@ Prior to the switch, the underlying repositories are reindexed using the updated
 Indexes that cannot be configured using Simplified Index Management
 need to use the legacy configuration mode.
 
-The Legacy Index Configuration only applies for indexes that can not have an `includedPaths` property,
-or that have a property which needs to covers `/apps`, `/libs`, or `/`.
-There are some out-of-the-box indexes that do cover these paths, namely:
+The Legacy Index Configuration applies only to indexes that cannot have an `includedPaths` property
+or that have a property which needs to cover `/apps`, `/libs`, or `/`.
+Some out-of-the-box indexes cover these paths:
 
 * `cqPageLucene`: If you need to customize this index,
   consider migrating your queries to use `cqPageContent` instead,
