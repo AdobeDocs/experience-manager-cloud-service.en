@@ -101,6 +101,10 @@ You can deliver your visual fragment in an Edge Delivery Service (EDS) page.
 1. Paste the **Publish URL** to the block.
 1. Publish your EDS page. The HTML representation of your fragment is seen.
 
+>[!NOTE]
+>
+>For full details see [Integration with Edge Delivery Services (Embed Block)](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md#integration-with-edge-services-embed-block)
+
 ### Deliver to an AEM page {#deliver-to-an-AEM-page}
 
 You can deliver your visual fragment a Content Fragment component on your AEM page.
@@ -114,13 +118,20 @@ When configuring a **Content Fragment** [component on your page](/help/sites-clo
 
 1. The visual fragment will be shown, and the page can be published.
 
+>[!NOTE]
+>
+>For full details see [Integration - AEM Sites with Core Components](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md#integration-aem-sites-with-core-components)
+
 <!-- CQDOC-23232 - update page authoring for fragments? -->
 
 ### Deliver to an external application {#deliver-to-an-external-application}
 
 You can deliver your visual fragment to an external application. 
 
-See [Preview in an external application](/help/sites-cloud/administering/content-fragments/preview.md#preview-in-an-external-application), though the same principles apply with the **Publish URL**.
+See:
+
+* [Preview in an external application](/help/sites-cloud/administering/content-fragments/preview.md#preview-in-an-external-application)
+* [Integration with External Sites](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md#integration-with-external-sites)
 
 ## Download your template {#download-your-template}
 
