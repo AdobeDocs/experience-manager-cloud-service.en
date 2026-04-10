@@ -14,7 +14,7 @@ https://publish-p<programId>-e<envId>.adobeaemcloud.com/adobe/experimental/previ
 
 This URL returns a *self-contained HTML document* (including inline CSS and structure) that can be embedded in any web context. 
 
-## Embedding Techniques — Overview {#embedding-techniques-overview}
+## Embedding Techniques — Overview {#embedding-techniques-overview}
 
 There are three distinct approaches for consuming the publish URL on a host page. Each comes with distinct trade-offs around style isolation, layout behavior, accessibility, and complexity.
 
@@ -180,7 +180,7 @@ In Edge Delivery Services, the publish URL is consumed through the **Embed block
    cp -r aem-block-collection/blocks/embed/ your-eds-project/blocks/embed/
    ```
 
-2. Author the embed in the DA editor
+1. Author the embed in the DA editor
 
    In Document Authoring, blocks are represented as tables. To add a CF visualization embed:
 
