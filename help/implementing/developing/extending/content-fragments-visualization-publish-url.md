@@ -6,10 +6,10 @@ role: Admin, Developer
 ---
 # Visual Content Fragments - Using the Publish URL {#visual-content-fragments-using-the-publish-url}
 
-When a Content Fragment is published through the CF Visualization service, the rendered HTML is stored in Azure Blob Storage and made available via the AEM publish tier at a URL with this structure:
+When a Content Fragment is published through the CF Visualization service, the rendered HTML is made available via the AEM publish tier at a URL with this structure:
 
 ```html
-https://publish-p<programId>-e<envId>.adobeaemcloud.com/adobe/experimental/previewtemplates-expires-20260301/contentFragments/<templateId>/<fragmentId>/<variation>.html
+https://publish-p<programId>-e<envId>.adobeaemcloud.com/adobe/stable/previewtemplates/contentFragments/<templateId>/<fragmentId>/<variation>.html
 ```
 
 This URL returns a *self-contained HTML document* (including inline CSS and structure) that can be embedded in any web context. 
@@ -36,6 +36,8 @@ The simplest approach:
 
 1. fetch the publish URL 
 1. inject the HTML into a container element
+
+An example of inline element embedding:
 
 ```html
 <div id="cf-container"></div>
@@ -65,9 +67,11 @@ When to use:
 >
 >Use this technique only when you can tolerate or actively manage these conflicts.
 
-### Iframe {#iframe}
+### iframe {#iframe}
 
 Load the publish URL directly as the `src` of an `<iframe>`. No JavaScript is needed.
+
+An example of iframe embedding:
 
 ```iframe
 <iframe
@@ -80,7 +84,7 @@ Load the publish URL directly as the `src` of an `<iframe>`. No JavaScript is ne
 ></iframe>
 ```
 
-Auto-resizing (optional) 
+You can also automatically resize the iframe (this is optional).
 
 To dynamically size the iframe to its content height (avoiding scrollbars), use a `postMessage` pattern or an appropriate library. 
 
@@ -128,7 +132,6 @@ This provides:
 To define the Custom Element include the following script once per page. All `<cf-visualization>` instances on the page will use this definition:
 
 ```javascript
-
 <script>
   class CfVisualization extends HTMLElement {
     connectedCallback() {
@@ -152,7 +155,6 @@ To define the Custom Element include the following script once per page. All `<c
     customElements.define("cf-visualization", CfVisualization);
   }
 </script>
-
 ```
 
 To use the Custom Element:
@@ -169,7 +171,7 @@ When to use:
 
 ## Integration with Edge Delivery Services (Embed Block) {#integration-with-edge-services-embed-block}
 
-In Edge Delivery Services, the publish URL is consumed through the **Embed block**, which renders it as an `<iframe>`.
+In Edge Delivery Services, the publish URL is consumed through an **[Embed block](https://sidekick-library--aem-block-collection--adobe.aem.page/tools/sidekick/library.html?plugin=blocks&path=/block-collection/embed&index=0)**, which renders it as an `<iframe>`.
 
 1. Ensure the Embed block exists in your project.
 
