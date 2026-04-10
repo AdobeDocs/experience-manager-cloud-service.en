@@ -48,9 +48,9 @@ If a change in the index configuration is needed, ensure that your configuration
 
 ## Project Configuration
 
-We strongly recommend using version >= `1.3.2` of the Jackrabbit `filevault-package-maven-plugin`. The steps to incorporate it into your project are as follows: 
+The steps to incorporate it into your project are as follows: 
 
-1. If needed, update the version in the top-level `pom.xml`:
+1. We strongly recommend using version >= `1.3.2` of the Jackrabbit `filevault-package-maven-plugin`. If needed, update the version in the top-level `pom.xml`:
 
     ```xml
     <plugin>
