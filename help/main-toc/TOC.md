@@ -100,6 +100,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2026 {#2026}
+      + [Maintenance Release Notes for 2026.4.0](/help/release-notes/maintenance/2026/2026-4-0.md)
       + [Maintenance Release Notes for 2026.3.0](/help/release-notes/maintenance/2026/2026-3-0.md)
       + [Maintenance Release Notes for 2026.2.0](/help/release-notes/maintenance/2026/2026-2-0.md)
       + [Maintenance Release Notes for 2026.1.0](/help/release-notes/maintenance/2026/2026-1-0.md)
