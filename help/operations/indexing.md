@@ -164,9 +164,9 @@ The process is as follows:
     <diff.json jcr:primaryType="nt:file"/></jcr:root>
     ```
 
-3. Add a text file `diff.json` with the following content.
+3. Create a text file `diff.json` with the following content.
    In this example, we customize the out-of-the-box index `damAssetLucene`
-   to additionally index the property named `test`, and in addition to that,
+   to additionally index the property named `test`. We also define
    a fully custom index named `acme.testIndex` that indexes the property `testing` in `nt:unstructured` nodes:
 
     `ui.apps/src/main/content/jcr_root/_oak_index/diff.index/diff.json`
