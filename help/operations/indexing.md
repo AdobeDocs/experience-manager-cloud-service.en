@@ -129,7 +129,7 @@ We strongly recommend using version >= `1.3.2` of the Jackrabbit `filevault-pack
 ## Simplified Index Management using the Diff Index
 
 Most AEM indexes can be configured using Simplified Index Management.
-This provides a simple way to customize out-of-the-box (OOTB) indexes, and to define custom indexes, using one JSON file.
+This provides a simple way to customize out-of-the-box (OOTB) indexes and to define custom indexes using one JSON file.
 
 >[!TIP]
 >
