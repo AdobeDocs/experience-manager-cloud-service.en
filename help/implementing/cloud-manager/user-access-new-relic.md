@@ -80,7 +80,7 @@ You can define the users of your New Relic One sub-account associated with your 
    * Enter the first and last name of the user that you want to add
    * Enter their associated e-mail address
    * Click ![Add icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg ) **Add**. Repeat this step for each user that you want to add.
-   * Click ![Delete icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) to remove a user.
+   * Click ![Close icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) to remove a user.
 
    ![Add users](assets/newrelic-add-users.png)
 
