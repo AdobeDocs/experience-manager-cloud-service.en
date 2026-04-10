@@ -219,9 +219,9 @@ The process is as follows:
     ```
 
 After applying the changes, deploy the new application using Cloud Manager.
-This deployment initiates two jobs, responsible for adding (and merging if necessary)
-the index definitions for author and publish, respectively.
-Prior to the switch, the underlying repositories undergo reindexing with the updated index definitions.
+This deployment initiates two jobs that add (and merge, if necessary)
+the index definitions for author and publish.
+Prior to the switch, the underlying repositories are reindexed using the updated index definitions.
 
 ## Legacy Index Configurations
 
