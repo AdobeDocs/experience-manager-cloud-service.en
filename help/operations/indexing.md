@@ -137,18 +137,18 @@ This provides a simple way to customize out-of-the-box (OOTB) indexes and to def
 
 Limitations: Simplified Index Management is not currently available for indexes that include `/apps`, `/libs`.
 It can be used for all indexes that have an `includedPaths` property of e.g. `/content`.
-For indexes without an `includedPaths` property, or if the `includedPaths` contains `/apps` or `/libs`,
-consider changing the query, or, alternatively, use the Legacy Index Configurations mode below.
+For indexes without an `includedPaths` property, or where `includedPaths` contains `/apps` or `/libs`,
+consider changing the query or using the Legacy Index Configurations mode below.
 
-Simplified Index Management is able to customize existing out-of-the-box (OOTB) indexes, and add fully custom indexes.
-With Simplified Index Management, there is no need to copy definitions, or to explicitly define versions.
-Customizations of index definitions are automatically merged with the latest out-of-the-box index,
-and if needed, a new index version is automatically created whenever it is needed.
+Simplified Index Management is able to customize existing out-of-the-box (OOTB) indexes and add fully custom indexes.
+With Simplified Index Management, there is no need to copy definitions or define versions explicitly.
+Index definition customizations are automatically merged with the latest out-of-the-box index,
+and a new index version is created when needed.
 
-For most indexes, custom indexes and customizations to existing indexes can be done using a `diff.index`.
+For most indexes, custom indexes and customizations to existing indexes can be created using a `diff.index` package.
 To configure such an index, use the following step-by-step guide.
-The following example customizes the `damAssetLucene` index,
-and at the same time introduce a fully custom index.
+The following example customizes the `damAssetLucene` index
+and introduces a fully custom index at the same time.
 The process is as follows:
 
 1. Create a new folder in the `ui.apps` directory named `ui.apps/src/main/content/jcr_root/_oak_index/diff.index`.
