@@ -33,8 +33,53 @@ In Adobe Cloud Manager, you may want to rename an Edge Delivery site for several
     In the Edge Delivery site table, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) at the end of a row whose site you want to rename. Click **Rename**.
 
 1. In the **Edit Edge Delivery Site** dialog box, in the **Site Name** text field, enter the new name of the site.
-
 1. Click **Edit**.
+
+
+## Activate the publish tier for an Edge Delivery site (Beta) {#activate-publish-tier-for-eds}
+
+>[!NOTE]
+>
+>The publishing feature described here is in Beta. To join the Beta, email [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) with your Adobe Organization ID and Program ID.
+
+This capability applies only to Edge Delivery sites created with the **AEM Authoring** option in Programs where the flexible publish tier feature is enabled.
+
+If your Edge Delivery site uses AEM authoring, the publish tier is not provisioned by default because Edge Delivery handles content delivery. However, you can activate the publish tier at any time if your site requires it. For example, if you need to support traditional AEM publishing alongside Edge Delivery.
+
+After your Edge Delivery site is created and its status shows **Verified** in Cloud Manager, you can author and publish content using the AEM Universal Editor.
+
+**To access the Universal Editor from Cloud Manager:**
+
+1. On the Edge Delivery tab, in the Edge Delivery sites list, locate your site.
+
+    ![Publishing content from AEM Author to Edge Delivery.](/help/implementing/cloud-manager/edge-delivery/assets/eds-content-source-link.png)
+
+1. Click the **Content Source** link in the site's row. The link opens the AEM Universal Editor page, from which you can create and edit content for your site.-->
+
+**To activate the publish tier for an Edge Delivery Site:**
+
+  1. On the **Program Overview** page, under the **Publish Delivery** tab, in the **Environment** card, click the Information icon.
+
+  1. In the informational pop-up, under **Publish URL**, select **Click to activate** to enable publish tier provisioning in the Cloud Manager user interface. 
+
+      ![Click to activate publish tier provisioning](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/click-to-activate-publish-tier-capabilities.png)
+
+  1. In the Activate Publish tier dialog box, click **Activate**.
+
+      ![Activate Publish tier dialog box](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/activate-publish-tier.png)
+
+      Once activated, the publish tier is provisioned automatically. Alternatively, the publish tier can be provisioned automatically if the author tries to publish content from the AEM user interface directly.
+
+      After the publish tier is activated and provisioned successfully, the **Click to Activate** link becomes dimmed/unavailable.
+
+* **From AEM Author** — In the AEM authoring interface, click **Quick Publish** to publish content directly to your Edge Delivery site. The publish tier is not required for this operation when Edge Delivery handles delivery.
+
+After publishing, preview your content at your site's `.page` URL, or view it live at the `.live` URL.-->
+
+>[!NOTE]
+>
+>Activating the publish tier adds publish infrastructure to your environment. This functionality may affect your program's resource consumption. To configure whether the publish tier is required at the program level, see [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
+
 
 ## Delete an Edge Delivery site {#delete-edge-delivery-site}
 

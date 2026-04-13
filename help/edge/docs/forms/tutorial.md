@@ -66,9 +66,11 @@ The AEM Forms Boilerplate template gets you started quickly with an AEM project 
 
 ### Link your own content source
 
-<!--Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
+<!--
+Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
 
-![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)-->
+![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)
+-->
 
 To copy the sample content to your own content folder and point your GitHub repository to your own content folder:  
 
@@ -273,7 +275,8 @@ Congratulations! You've successfully set up your local development environment a
 ## Add Adaptive Forms Block to your existing AEM project
 
 <!--
->[!VIDEO](https://video.tv.adobe.com/v/3427789)-->
+>[!VIDEO](https://video.tv.adobe.com/v/3427789)
+-->
 
 If you have an existing AEM Project, you can integrate the Adaptive Forms Block into your current project to get started on form creation. 
 

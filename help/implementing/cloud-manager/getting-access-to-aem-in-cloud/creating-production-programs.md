@@ -40,36 +40,56 @@ See [Additional production program options](#options).
    
 1. Click **Continue**.
 
+1. On the **Security** tab, select the security options you want to use. See [Security](#security).
+
+   ![Security tab in Set up for production wizard](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security.png)
+
+1. Click **Continue**.
+
 1. In the **Solutions &amp; Add-ons** list box, select one or more solutions to include in the program.
 
    * If you are not sure if you need one or more programs for the various solutions you have available, select the one most of interest to you. You can activate additional solutions by [editing the program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) later. See the [Introduction to Production Programs document](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) for more program setup recommendations.
-   * It is required that you select at least one solution for program creation. For example, you can choose to select **Edge Delivery Services** for a fully managed CDN solution that optimizes digital experiences. See [About using Edge Delivery Services to deliver your Cloud Manager project](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+   * It is required that you select at least one solution for program creation. For example, you can choose to select **Edge Delivery Services** for a fully managed CDN solution that optimizes digital experiences. See [About using Edge Delivery Services to deliver your Cloud Manager project](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md).
 
-   ![Select solutions](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/add-production-program-with-edge-v2.png)
+   * Click ![Chevron Size 300 icon](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) to the left of a solution name to reveal any optional add-ons. <!-- such as the **Commerce** add-on option under **Sites**. -->
 
+<!--   ![Select add-ons](assets/setup-prod-commerce.png) -->
 
+      >[!NOTE]
+      >
+      >If your program uses Edge Delivery Services for delivery, a publish tier may not be required. With the flexible publish tier feature (Beta), you can configure whether to provision a publish tier on the Solutions & Add-ons tab. See [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
+
+      ![Select solutions](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-solutions.png)
+
+1. Click **Continue**.
+
+1. In the **Delivery type** tab, note that it is pre-filled based on the solutions and add-ons that were chosen in the previous step. If you select **AEM Publish**, you can later provision it on demand.
+
+   ![Delivery Type tab](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-delivery-type.png)
 
 
    <!-- * If you selected the **[Enable Enhanced Security](#security)** option, you can select only as many solutions for which HIPAA entitlements are available. -->
 
-   
+1. Click **Continue**.
 
-   * Click ![Chevron Size 300 icon](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg) to the left of a solution name to reveal any optional add-ons. <!-- such as the **Commerce** add-on option under **Sites**. -->
+1. If you have the necessary entitlements, the **SLA** tab is shown as the second or third tab in the **`Set up for production`** dialog box. See [SLA](#sla).
 
-   ![Select add-ons](assets/setup-prod-commerce.png)
+   ![SLA options](assets/create-production-program-sla.png)
 
-1. When you are done selecting your solutions and add-ons, click **Continue**.
+   Sites and Forms offer a standard 99.9% service level agreement (SLA). 
 
-1. On the **Go-Live Date** tab, enter the date that you plan to have your production program Go Live.
+1. Click **Continue**.
 
-   ![Define planned go-live date](assets/set-up-go-live.png)
+1. On the **Go-Live date** tab, enter the date that you plan to have your production program Go Live.
+
+   ![Define planned go-live date](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-go-live-date.png)
 
    * You can edit this date at any time.
    * The date serves informational purposes and triggers the Go Live widget on the [**Program Overview** page](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview). This functionality provides timely in-product links to AEM as a Cloud Service best practices to support a smooth Go Live experience.
 
 1. Click **Create**. Cloud Manager creates your program and displays it on the landing page for selection.
 
-   ![Cloud manager overview](assets/navigate-cm.png)
+   ![Cloud manager overview](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-my-programs.png)
 
 ## Additional production program options {#options}
 
@@ -79,7 +99,7 @@ Depending on what entitlements are available to your organization, you may have 
 
 If you have the necessary entitlements, the **Security** tab is shown as the first tab in the **`Set up for production`** dialog box.
 
-![Security options](assets/create-production-program-security.png)
+![Security options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-security.png)
 
 The **Security** tab provides the options to activate **HIPAA**, or **WAF-DDOS Protection**, or both, for your production program.
 
@@ -91,6 +111,45 @@ Adobe HIPAA Compliant and WAF-DDOS (Web Application Firewall - Distributed Denia
 * **WAF-DDOS Protection** - This option enables the Web Application Firewall by way of rules to protect your application.
   * Once activated, WAF-DDOS protection can then be configured by setting up a [non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
   * See [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage traffic filter rules in your repository so they are deployed properly.
+
+### Flexible Publish Tier (Beta) {#flexible-publish-tier}
+
+>[!NOTE]
+>
+>The flexible publish tier described here is in Beta. To join the Beta, email [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) with your Adobe Organization ID and Program ID.
+
+If your organization has the flexible publish tier feature enabled, you can configure whether a publish tier is required for your program's environments. This option appears in the **Delivery type** tab of the **Set up for production** dialog box (during [program creation](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)).
+
+![Delivery type tab in the Set up for production wizard](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-production-program-delivery-type.png)
+
+It also appears in the **Edit Program** dialog box (when you [edit a program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)).
+
+![Edit a program dialog box with the Delivery Type options showing](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/edit-program-delivery-type.png)
+
+Not all architectures require a publish tier. The following table shows which architectures require a publish tier and which do not:
+
+| Architecture | Publish Tier |
+| --- | --- |
+| Traditional AEM Sites | Required |
+| Headless / API-first | Required |
+| Edge Delivery Services | Not required |
+
+By enabling the publish tier only when it is needed, teams can do the following:
+
+* Provision environments faster.
+* Simplify infrastructure.
+* Reduce unnecessary components.
+
+**How it works**
+When the flexible publish tier feature is enabled for your organization:
+
+* All new environments in the program are provisioned with the **Author tier only** by default. An informational message displayed in the user interface confirms this behavior.
+* If the user selects **AEM Publish** during the creation of a program, the publish tier is activated and provisioned with *new environments*.
+* The publish tier can also be activated later by editing the program. See [Edit programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+
+>[!NOTE]
+>
+>If your program uses Edge Delivery Services for content delivery and AEM Author for content creation, a publish tier is not required. Content is delivered through Edge Delivery and does not pass through the AEM publish tier. See About Edge Delivery Services with AEM authoring (Beta).
 
 ### SLA {#sla}
 
@@ -113,7 +172,7 @@ In addition to the required entitlements, using the 99.99% SLA for Sites or Form
 * The organization must have 99.99% SLA and additional publish region entitlements available when applying 99.99% SLA to the program.
 * Cloud Manager verifies that an unused [additional publish region](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) entitlement is available before applying 99.99% SLA to the program.
 * When editing a program, if it already contains a production environment with at least one additional publish region, then Cloud Manager checks only for the availability of a 99.99% SLA entitlement.
-* For activation of 99.99% SLA and reporting, the [production/stage environment](/help/implementing/cloud-manager/manage-environments.md#adding-environments) must have been created and at least one additional publish region must have been applied on the production/stage environment.
+* For activation of 99.99% SLA and reporting, the [production / stage environment](/help/implementing/cloud-manager/manage-environments.md#adding-environments) must have been created and at least one additional publish region must have been applied on the production / stage environment.
   * If using [advanced networking](/help/security/configuring-advanced-networking.md), make sure to check the [Adding Multiple Publish Regions to a New Environment](/help/implementing/cloud-manager/manage-environments.md#adding-regions) document for recommendations so that connectivity is maintained if there is regional failure.
 * Your 99.99% SLA program must always include at least one additional publish region. Users are not allowed to delete the last remaining additional publish region from the program.
 * Your 99.99% SLA is supported for production programs that have the Sites or Forms solution enabled.

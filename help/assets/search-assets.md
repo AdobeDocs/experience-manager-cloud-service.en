@@ -223,7 +223,8 @@ You can search assets based on exact values of metadata fields, such as, title, 
 
 The properties `path`, `limit`, `size`, and `orderby` cannot be combined using `OR` operator with any other property.
 
-<!-- TBD: Where are the limit, size, orderby properties defined?
+<!--
+ TBD: Where are the limit, size, orderby properties defined?
 -->
 
 The keyword for a user-generated property is its field label in the property editor in lowercase, with spaces removed.
