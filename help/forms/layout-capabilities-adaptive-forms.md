@@ -21,9 +21,11 @@ role: User, Developer
 
 [!DNL Adobe Experience Manager] lets you create easy-to-use Adaptive Forms that offer dynamic experiences to end users. The form layout controls how items or components are displayed in an Adaptive Form.
 
-<!-- ## Prerequisite knowledge {#prerequisite-knowledge}
+<!--
+ ## Prerequisite knowledge {#prerequisite-knowledge}
 
-Before learning about the different layout capabilities of Adaptive Forms, read [Introduction to authoring forms](introduction-forms-authoring.md) to know more about Adaptive Forms. -->
+Before learning about the different layout capabilities of Adaptive Forms, read [Introduction to authoring forms](introduction-forms-authoring.md) to know more about Adaptive Forms.
+-->
 
 ## Types of layouts {#types-of-layouts}
 
@@ -120,7 +122,8 @@ This layout, as the name suggests, shows only the navigation menu and navigation
 {{see-also}}
 
 
-<!-- ## Toolbar layouts {#toolbar-layouts}
+<!--
+ ## Toolbar layouts {#toolbar-layouts}
 
 A Toolbar Layout controls positioning and display of any action buttons that you add to your Adaptive Forms. The layout can be added at a form level or at a panel level.
 
@@ -150,6 +153,7 @@ For the Mobile layout, you can add action buttons using icons.
 
 ![Mobile fixed layout for toolbar](assets/toolbar_layout_mobile_fixed.png)
 
-Mobile fixed layout for toolbar-->
+Mobile fixed layout for toolbar
+-->
 
 

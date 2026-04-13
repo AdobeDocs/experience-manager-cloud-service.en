@@ -24,8 +24,10 @@ For more information on the AEM as a Cloud Service Mail Service, see [Sending Em
 
 1. Fill in the information according to your requirements, then click **Register**.
 1. Go to the created app, and select **API Permissions**.
-<!-- Alexandru: removing as a result of CQDOC-20609 
-1. Click **Add Permission** > **Graph Permission** > **Delegated Permissions**. -->
+<!--
+ Alexandru: removing as a result of CQDOC-20609 
+1. Click **Add Permission** > **Graph Permission** > **Delegated Permissions**.
+-->
 1. Select the below permissions for your app, then click **Add Permission**:
 
    >[!NOTE]

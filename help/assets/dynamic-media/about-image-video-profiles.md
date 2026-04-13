@@ -49,7 +49,8 @@ See [Adjust the batch size of the reprocess workflow](#adjusting-load).
 >
 >The Migration publish agent must be disabled on the Dynamic Media server so the Reprocess workflow works as expected.
 
-<!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
+<!--
+ LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
 Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Dynamic Media Reprocess workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
 
@@ -117,7 +118,8 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. Close the browser tab that shows the Dynamic Media Reprocess workflow model.
  
-<!-- MAY BE NEEDED IN THE FUTURE
+<!--
+ MAY BE NEEDED IN THE FUTURE
 
 1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
 1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
