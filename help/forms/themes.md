@@ -17,7 +17,7 @@ role: User, Developer, Admin
 | AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html)                  |
 | AEM as a Cloud Service     | This article        |
 
-You can create and apply themes to stylize an Adaptive Form<!-- or an interactive communication-->. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. Theme is managed independently without a reference to an Adaptive Form<!-- or interactive communication -->.
+You can create and apply themes to stylize an Adaptive Form<!-- or an interactive communication-->. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. Theme is managed independently without a reference to an Adaptive Form.
 
 You can download and install [!DNL AEM Forms] reference content package from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal to import reference themes and templates to your environment.
 
@@ -160,7 +160,8 @@ List of meta-properties of a theme (found in properties page of a theme).
    <td>Yes</td>
    <td>A label attached to the theme for identification used to improve searching.</td>
   </tr>
-  <!-- <tr>
+  <!--
+   <tr>
    <td>11.</td>
    <td>References</td>
    <td>Links</td>
@@ -193,19 +194,21 @@ List of meta-properties of a theme (found in properties page of a theme).
      <li>Default value - computed using theme location.</li>
      <li>When this value is changed, the category name is updated on the corresponding clientlib node. Updating Clientlib Category Name in the jsp files is not required because clientlib category name is used by reference.</li>
     </ul> </td>
-  </tr> -->
+  </tr>
+  -->
  </tbody>
 </table>
 
 ## About the Theme Editor {#about-the-theme-editor}
 
-Theme Editor is a business-user and web-designer/developer friendly interface that provides functionalities required to specify the styling of various Adaptive Form <!-- and interactive communication --> elements easily. When you create a theme, it is stored as a separate entity like forms <!--  , interactive communications, letters, document fragments, and data dictionaries-->.
+Theme Editor is a business-user and web-designer/developer friendly interface that provides functionalities required to specify the styling of various Adaptive Form <!-- and interactive communication --> elements easily. When you create a theme, it is stored as a separate entity like forms. 
+<!--  , interactive communications, letters, document fragments, and data dictionaries -->
 
 The Theme Editor lets you customize styles of the components styled in a theme. You can customize how a form <!-- or interactive communication --> looks on a device.
 
 The Theme Editor is divided in two panels:
 
-* **Canvas** - Appears on the right side. It shows a sample Adaptive Form <!--  or interactive communication --> in which all styling changes reflect instantly. You can also select objects directly from the canvas to look up styles associated with them, and to edit these styles. A device resolution ruler on the top governs the Canvas. Selecting a resolution breakpoint from the ruler shows the preview of the sample form <!--  or interactive communication --> for the respective resolution. Canvas is discussed in detail [below](themes.md#using-canvas).
+* **Canvas** - Appears on the right side. It shows a sample Adaptive Form <!--  or interactive communication --> in which all styling changes reflect instantly. You can also select objects directly from the canvas to look up styles associated with them, and to edit these styles. A device resolution ruler on the top governs the Canvas. Selecting a resolution breakpoint from the ruler shows the preview of the sample form for the respective resolution. Canvas is discussed in detail [below](themes.md#using-canvas).
 
 * **Sidebar*** Appears on the left side. It has the following items:
 
@@ -276,7 +279,9 @@ Use Theme Editor breakpoints to define alternate styling for different screen si
 
 >[!NOTE]
 >
->The theme is first created using a form<!-- or interactive communication-->, and then applied on different forms<!-- or interactive communications-->. The breakpoints used in theme creation can be different from the form <!-- or interactive communication --> on which the theme is applied. The CSS media queries are based on the form <!-- or interactive communication --> used in theme creation, and not the form <!-- or interactive communication --> on which the theme is applied.
+>The theme is first created using a form, and then applied on different forms. The breakpoints used in theme creation can be different from the form on which the theme is applied. The CSS media queries are based on the form used in theme creation, and not the form on which the theme is applied.
+
+<!-- ADD: or interactive communication above throughout? -->
 
 ### Styling properties context changes in sidebar on selecting objects {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
 
@@ -344,7 +349,7 @@ Customizing the success state styling of Text Box Widget component in Theme Edit
 
 ### Using Canvas {#using-canvas}
 
-The theme is either created using the out-of-the-box form, or using a form <!-- or interactive communication --> of your choice. The Canvas shows the preview of the form or <!-- interactive communication --> used for creating the theme with customizations specified in theme. The ruler above the form is used for determining the layout according to the size of the display of your device.
+The theme is either created using the out-of-the-box form, or using a form <!-- or interactive communication --> of your choice. The Canvas shows the preview of the form or used for creating the theme with customizations specified in theme. The ruler above the form is used for determining the layout according to the size of the display of your device.
 
 In the Canvas toolbar, you see:
 
@@ -482,7 +487,7 @@ To style components for different breakpoints:
 1. Use sidebar to customize styling of form <!-- or interactive communication --> components in the theme for the selected display size.
 1. Ensure that the customization is saved.
 
-You can style form <!-- or interactive communication --> components for multiple devices. Form <!-- and interactive communication --> components for desktops and mobile devices can have entirely different styles.
+You can style form <!-- or interactive communication --> components for multiple devices. Form components for desktops and mobile devices can have entirely different styles.
 
 ### Using Web Fonts in a theme {#using-web-fonts-in-a-theme}
 
@@ -562,14 +567,16 @@ To apply a theme to an Adaptive Form:
 
 You can also define a theme for an Adaptive Form when you are creating it.
 
-<!-- To apply a theme to an interactive communication:
+<!--
+ To apply a theme to an interactive communication:
 
 1. Open your interactive communication in edit mode. To open a interactive communication in edit mode, select a form and click **Open**.
 1. In the edit mode, select a component, then click ![field-level](assets/field-level.png) &gt;**Document Container**, and then click ![cmppr](assets/cmppr.png).
 
    You can edit properties of your form in the sidebar.
 
-1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png) -->
+1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png)
+-->
 
 ### Change theme of a form at runtime {#change-theme-of-a-form-at-runtime}
 
@@ -636,7 +643,8 @@ You can see the generated CSS using the following options:
 
 * You can face issues with your current theme if an asset is added from another theme, and the other theme is moved or deleted. It is recommended that you avoid browsing and adding assets from other themes.
 
-<!-- * **Using base clientlib, theme editor, and inline styling**
+<!--
+ * **Using base clientlib, theme editor, and inline styling**
 
     * **Base clientlib**:
 
@@ -648,7 +656,8 @@ You can see the generated CSS using the following options:
         1. In the Advanced tab, in the Clientlib Location field, browse, and select the client-library you want to use.
         1. Click **[!UICONTROL Save]**.
 
-      The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor. -->
+      The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor.
+      -->
       You can also create a theme, create copies of it, and then modify the styling provided in the copied themes for similar use-cases.
       See [Getting specific appearance using Themes](#specific-af-appearance) 
 
@@ -660,9 +669,11 @@ You can see the generated CSS using the following options:
 
       You can style components using the Style mode in form <!-- or interactive communication --> multichannel editor when you work with a form. Using style mode to change form component styling overrides the styling specified in the theme. If you want to change styling for certain components of a particular form, see [Inline styling of components](inline-style-adaptive-forms.md).
 
-<!-- * **Using client-side libraries**
+<!--
+ * **Using client-side libraries**
 
-  If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above. -->
+  If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above.
+  -->
 
 * **Changing container panel layout width**
 

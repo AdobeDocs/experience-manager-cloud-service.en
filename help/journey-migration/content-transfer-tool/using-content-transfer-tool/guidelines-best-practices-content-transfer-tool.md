@@ -10,7 +10,8 @@ role: Admin
 
 ## Guidelines and Best Practices {#best-practices}
 
-<!-- Alexandru: hiding for now
+<!--
+ Alexandru: hiding for now
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_guidelines"
