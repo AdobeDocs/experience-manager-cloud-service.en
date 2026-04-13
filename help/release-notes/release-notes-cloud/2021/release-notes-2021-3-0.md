@@ -31,7 +31,8 @@ The following release (2021.4.0) will be on April 29, 2021.
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-<!-- TBD: refine this list of features and enh. for Feb release.
+<!--
+ TBD: refine this list of features and enh. for Feb release.
 
 Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
 
@@ -39,7 +40,8 @@ Indicators for expired, approved, and rejected statuses now available for assets
 
 Ability to select a root path. select if a minimum number of tags is required. 
 
-Add a Boolean or radio widget type to metadata schema setup. -->
+Add a Boolean or radio widget type to metadata schema setup.
+-->
 
 * [!DNL Experience Manager] extends the Connected Assets functionality to support use of [!DNL Dynamic Media] images in the supported core components. See [use Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
 * Experience Manager administrators can schedule bulk asset ingestions at a specific date or time. Also, administrators can schedule recurring ingestions based on date and time. See [bulk asset ingestion](/help/assets/add-assets.md#asset-bulk-ingestor).

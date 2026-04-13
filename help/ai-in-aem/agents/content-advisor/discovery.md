@@ -2,7 +2,7 @@
 title: Content Discovery Agent
 description: Learn how to use the content discovery agent to deliver relevant AEM content on demand through natural, conversational prompts for a streamlined, click-free discovery experience.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
 ---
 

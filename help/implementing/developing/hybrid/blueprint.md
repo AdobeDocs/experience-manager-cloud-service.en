@@ -4,7 +4,7 @@ description: This document describes the general, framework-independent contract
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
 role: Admin, Developer
-index: no
+index: false
 ---
 
 # SPA Blueprint {#spa-blueprint}

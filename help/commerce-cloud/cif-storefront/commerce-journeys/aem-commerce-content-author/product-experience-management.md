@@ -4,7 +4,7 @@ description: Learn how to build product content that can then be used in various
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
 feature: Commerce Integration Framework
 role: Admin
-index: no
+index: false
 ---
 
 # Building Product Experiences {#building-experiences}
