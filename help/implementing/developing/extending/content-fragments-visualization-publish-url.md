@@ -1,12 +1,12 @@
 ---
-title: Visual Content Fragments - using the Publish URL
-description: Use the publish URL for visual Content Fragments.
+title: Visual Content Fragments - deliver with the Publish URL
+description: Use the publish URL to deliver visual Content Fragments.
 feature: Developing, Content Fragments
 role: Admin, Developer
 ---
-# Visual Content Fragments - Using the Publish URL {#visual-content-fragments-using-the-publish-url}
+# Visual Content Fragments - Deliver with the Publish URL {#visual-content-fragments-deliver-with-the-publish-url}
 
-When a Content Fragment is published through the CF Visualization service, the rendered HTML is made available via the AEM publish tier at a URL with this structure:
+When a visual Content Fragment is published through the Content Fragment Visualization service, the rendered HTML is made available via the Adobe Experience Manager (AEM) as a Cloud Service publish tier at a URL with this structure:
 
 ```html
 https://publish-p<programId>-e<envId>.adobeaemcloud.com/adobe/stable/previewtemplates/contentFragments/<templateId>/<fragmentId>/<variation>.html
@@ -65,7 +65,7 @@ When to use:
 >
 >This can cause unintended style overrides in both directions. 
 >
->Use this technique only when you can tolerate or actively manage these conflicts.
+>Only use this technique when you can either tolerate, or actively manage, these conflicts.
 
 ### iframe {#iframe}
 
@@ -117,13 +117,13 @@ Define a reusable `<cf-visualization>` Custom Element that fetches the publish U
 This provides:
 
 * Shadow DOM isolation
-  *The fragment’s markup and styles are encapsulated in a shadow root, preventing collisions with the host page’s CSS cascade.
+  * The fragment’s markup and styles are encapsulated in a shadow root, preventing collisions with the host page’s CSS cascade.
 * Inline layout participation
   * The rendered content participates in the host document’s normal flow, responding to container sizing and flexbox/grid contexts without manual dimension management.
 * Single browsing context
   * No secondary document context is created; the fragment content shares the page’s JavaScript runtime and is fully traversable by assistive technologies.
 * Minimal overhead
-  *A single `fetch` call retrieves the pre-rendered HTML from the publish tier. No client-side rendering framework is required.
+  * A single `fetch` call retrieves the pre-rendered HTML from the publish tier. No client-side rendering framework is required.
 
 >[!IMPORTANT]
 >
@@ -182,9 +182,9 @@ In Edge Delivery Services, the publish URL is consumed through an **[Embed block
    cp -r aem-block-collection/blocks/embed/ your-eds-project/blocks/embed/
    ```
 
-1. Author the embed in the DA editor
+1. Author the embed in the Document Authoring editor
 
-   In Document Authoring, blocks are represented as tables. To add a CF visualization embed:
+   In Document Authoring, blocks are represented as tables. To add a visual Content Fragment embed:
 
    | embed |
    |--- |
@@ -198,7 +198,7 @@ In Edge Delivery Services, the publish URL is consumed through an **[Embed block
 
 ## Integration - AEM Sites with Core Components {#integration-aem-sites-with-core-components}
 
-The Content Fragment Core Component (`core/wcm/components/contentfragment/v1/contentfragment`) has built-in support for Visual Content Fragments rendering using the [Customer Element + Shadow DOM](#custom-element-and-shadow-dom-recommended) technique.
+The Content Fragment Core Component (`core/wcm/components/contentfragment/v1/contentfragment`) has built-in support for rendering Visual Content Fragments using the [Customer Element + Shadow DOM](#custom-element-and-shadow-dom-recommended) technique.
 
 How it works:
 
@@ -214,7 +214,7 @@ How it works:
 
 * Publish mode:
 
-  On the published page (`wcmmode.disabled`), the HTL template renders an inline script that fetches from the publish URL and injects the HTML into a Shadow DOM root.
+  On the published page (`wcmmode.disabled`), the HTML template renders an inline script that fetches from the publish URL and injects the HTML into a Shadow DOM root.
 
   An example Core Component Visual Content Fragment (templates.html):
 
@@ -312,21 +312,18 @@ An example is:
 
 | Concern | Details | 
 |--- |--- |
-| CORS | The CF Visualization service configures CORS on the `/adobe/**` path with configurable allowed origins.<br>The [Inline Element (fetch + innerHTML)](#inline-element-fetch-and-innerhtml) 1 and [Customer Element + Shadow DOM](#custom-element-and-shadow-dom-recommended) techniques (which use `fetch()`) require the host page’s origin to be in the allowed list. <br>The [iFrame](#iframe) technique does not require CORS. | 
+| CORS | The Content Fragment Visualization service configures CORS on the `/adobe/**` path with configurable allowed origins.<br>The [Inline Element (fetch + innerHTML)](#inline-element-fetch-and-innerhtml) 1 and [Customer Element + Shadow DOM](#custom-element-and-shadow-dom-recommended) techniques (which use `fetch()`) require the host page’s origin to be in the allowed list. <br>The [iFrame](#iframe) technique does not require CORS. | 
 | CSP / X-Frame-Options | The service does not set `Content-Security-Policy` or `X-Frame-Options` headers on the published HTML. If your CDN or dispatcher adds these headers, verify that they permit framing (for [iFrame](#iframe)) or `fetch()` access (for inline/shadow DOM) from your host origins. | 
 | Content trust | The published HTML is pre-rendered from authored Content Fragment data using [Handlebars templates](/help/implementing/developing/extending/content-fragments-visualization-templates.md) managed by the service. It does not include user-generated scripts. However, as with any innerHTML injection, ensure you trust the source origin. | 
 
-### Choosing the appropriate technique {#choosing-the-appropriate-technique}
+### Choose the appropriate technique {#choose-the-appropriate-technique}
 
-Decision guide:
+Use the following as a decision guide to help you choose the appropriate techniquie:
 
-* Need zero JavaScript and full isolation? 
-  * Iframe
-* Need layout-flow participation with style isolation? 
-  * Custom Element + Shadow DOM (recommended)
-* Need fastest prototype, same-origin, and CSS conflicts are acceptable? 
-  * Inline Element
-* Embedding in Edge Delivery Services? 
-  * Embed block (iframe under the hood)
-* Embedding in AEM Sites pages? 
-  * Core Component (Shadow DOM, built-in)
+| Scenario | Solution |
+|--- |--- |
+| Need zero JavaScript and full isolation? | Iframe |
+| Need layout-flow participation with style isolation? | Custom Element + Shadow DOM (recommended) |
+| Need fastest prototype, same-origin, and CSS conflicts are acceptable? | Inline Element |
+| Embedding in Edge Delivery Services? | Embed block (iframe under the hood) |
+| Embedding in AEM Sites pages? | Core Component (Shadow DOM, built-in) |
