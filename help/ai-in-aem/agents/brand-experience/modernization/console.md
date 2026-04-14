@@ -151,12 +151,18 @@ When pushing changes, you must have first staged changes to include in the push.
 
 ## Settings View {#settings-view}
 
-The settings view allows you to manage basic settings of the console.
+The settings view allows you to manage basic settings of the console and is broken up into the following sections.
 
 ![Settings view](assets/settings-view.png)
 
+If you make a change to any value in any section, click **Save** to save those changes to the individual section.
+
 * **Project** allows you to view and edit project settings such as customizing the library URL.
-* **Support** allows you to request help from the AEM support team. 
+  * **Library URL** - This URL points to a library.json file that defines available blocks, their variations, and example content.
+  * **Site base URL** - The origin URL of the website being migrated
+* **Agent permissions** - Allow agent to access configuration options
+  * **Allow LLM to access admin.hlx.page on my behalf** - When enabled, the AI assistant can fetch site configurations and metadata from Adobe Experience Manager using your IMS credentials.
+  * **Custom IMS Token** - You can provide a custom IMS token to use instead of your default session token.
 * **Credentials** allows you to specify a personal access token for Figma so the [console can access design blocks for your project.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
   * The token requires the following read-only scopes:
     * `file_content:read`
@@ -167,4 +173,7 @@ The settings view allows you to manage basic settings of the console.
     * `file_dev_resources:read`
     * `projects:read`
   * [See the Figma documentation](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens) for more information about setting up personal access tokens.
-* **Reset workspace** reverts the console to its starting state and all un-pushed or un-uploaded changes will be lost.
+* **Support** summarizes information shared with the Adobe support team when you make a support request.
+  * **Request support** - Click to initiate a request for support from Adobe without leaving the console.
+* **Danger zone** contains settings that can revert your workspace.
+  * **Reset workspace** - Click to reset the workspace to its initial state. This can not be undone.
