@@ -23,68 +23,83 @@ For Adobe Experience Manager (AEM) as a Cloud Service, Adobe is providing docume
 
 ## Health Insurance Portability and Accountability Act (HIPAA) {#health-insurance-portability-and-accountability-act-hipaa}
 
-The Health Insurance Portability and Accountability Act (HIPAA) is the key federal healthcare privacy law in the United States and is enforced by the U.S. Department of Health and Human Services (HHS). 
+### The Health Insurance Portability and Accountability Act (HIPAA) {#the-health-insurance-portability-and-accountability-act-hipaa}
 
-HIPAA applies to Covered Entities (such as healthcare providers, insurers, and clearinghouses) and Business Associates (such as those entities that provide services to covered entities). HIPAA requirements are set across three separate rules: Privacy Rule, Security Rule, and Breach Notification Rule. 
+The HIPAA Privacy, Security, and Breach Notification Rules establish important protections for individually identifiable health information known as Protected Health Information (PHI).
 
-Adobe acts as a Business Associate for certain products, which Adobe classifies as “HIPAA-Ready Services.” Data regulated under HIPAA is referred to as Protected Health Information or PHI. PHI is a subset of health information that:
+Under HIPAA, a covered entity is a healthcare provider, health plan, or a healthcare clearinghouse. A business associate is an entity that provides services to a covered entity that involves access to PHI. The HIPAA Privacy and Security Rules require that a covered entity obtain written assurances from a business associate in the form of a Business Associate Agreement (BAA) requiring the business associate to safeguard the privacy and security of the Covered Entity’s PHI.
 
-1. is created or received by a healthcare provider, health plan, or healthcare clearinghouse, 
-1. relates to the past, present, or future physical or mental health or condition of an individual, the provision of healthcare to an individual, or the past, present, or future payment for the provision of healthcare to an individual, 
-1. identifies the individual or with respect to which there is a reasonable basis to believe that the information can be used to identify the individual. 
+### Providing PHI to Adobe {#providing-phi-to-adobe}
 
-The HIPAA Privacy and Security Rules require that a Covered Entity obtain written assurances from a Business Associate in the form of a Business Associate Agreement, or BAA, requiring the Business Associate to safeguard the privacy and security of the Covered Entityʼs PHI. 
+Adobe acts as a Business Associate for its HIPAA-ready Services, listed under [HIPAA readiness of services in AEM as a Cloud Service](#hipaa-readiness-of-services-in-aem-as-a-cloud-service).
+
+Customers that license any Adobe HIPAA-ready Service to process PHI **must** have the correct license and a signed BAA with Adobe. 
+
+>[!IMPORTANT]
+>
+>Customers are not permitted to create, receive, maintain, or transmit PHI through Adobe products and services that are not designated as a HIPAA-ready Services or without the appropriate license to use a HIPAA-ready Service.
+
+### HIPAA Shared Responsibilities {#hipaa-shared-responsibilities}
+
+Adobe HIPAA-ready Services rely on a shared responsibility security model, requiring the customer and Adobe each to bear distinct responsibilities for maintaining the security of PHI. Under this shared security model, Adobe relies on the customer to use and configure the HIPAA-ready Services consistent with HIPAA.
+
+For more information on executing an Adobe BAA for HIPAA-ready Services, please contact your Adobe sales representative or customer success manager.
+
+>[!IMPORTANT]
+>
+>**Disclaimer**: 
+>
+>The Customer is responsible for their use of Adobe HIPAA-ready Services and for ensuring that the Adobe HIPAA-ready Services meet their compliance requirements.
 
 For more information, see [HIPAA and Adobe Products and Services](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html) in the Adobe Trust Center.
 
-## HIPAA assessment - terminology {#hipaa-assessment-terminology}
+## HIPAA terminology {#hipaa-terminology}
 
-A service is labeled *HIPAA-ready* or *not HIPAA-ready* based on the outcome of its HIPAA assessment. Some services did not require a HIPAA assessment; for example, the Universal Editor. 
+The following table describes how AEM services are categorized for HIPAA usage. 
 
-|HIPAA-ready? | Statements about HIPAA [1] | Why? | Can be integrated with other AEM HIPAA-ready services | Can be included in the SKU: Extended Security for Healthcare |
-|--- |--- |--- |--- |--- |
-|**Yes**, HIPAA-ready |A HIPAA-ready service |Handles consumer-level data, **and** processes, transmits, and/or stores ePHI. |Yes |Yes |
-|**Not necessary** to conduct a HIPAA assessment |Included in our HIPAA-ready service [2] |Not a service that handles consumer-level data, which may contain PHI. Just customer-level data.<br><br>So not impacted, and covered by default. |Yes |Yes |
-|**No**, not HIPAA-ready |Not HIPAA-ready |Adobe has not conducted a HIPAA assessment internally or externally to determine HIPAA scope.<br><br>This may be due to various reasons. If you need more information, contact your Sales representative. |No |No |
+|HIPAA readiness | Description |
+| --- | --- |
+| HIPAA-ready | Designed to process PHI when configured appropriately and used with a BAA. |
+| Not HIPAA-ready | Not designed to process PHI and must not be used in HIPAA-related use. |
 
 >[!NOTE]
 >
->[1]: These are approved baseline statements. Marketing, contracts, Trust Center and other official customer-facing documents may contain different language.
+>HIPAA readiness classifications are based on the intended functionality of each service and may change over time. 
 >
->[2]: Applies only to decisions made at the time the Product Legal Assessment (PLA) and Privacy Impact Assessment (PIA) were completed for the documented use case.
+>Customers should refer to the most current documentation and applicable contractual terms when planning HIPAA-related deployments.
+
+## HIPAA readiness of services in AEM as a Cloud Service {#hipaa-readiness-of-services-in-aem-as-a-cloud-service}
+
+The following table describes which AEM services are HIPAA-ready and which services may be used alongside them. HIPAA-ready services require the purchase of Extended Security for Healthcare, as described under [Additional Requirements](#additional-requirements). 
+
+| Product/Capability | Service(s) | HIPAA readiness |
+| --- | --- | --- |
+| AEM Sites | AEM Sites, AEM Publish, Edge Delivery Services | HIPAA-ready |
+| AEM Sites | Universal Editor | Not HIPAA-ready<br>Can be added to an Extended Security Program when no PHI is introduced. |
+| AEM Sites Optimizer |Sites Optimizer | Not HIPAA-ready<br>Can be added to an Extended Security Program when no PHI is introduced. |
+| AEM Assets | AEM Assets | HIPAA-ready |
+| AEM Assets | Content Hub | Not HIPAA-ready<br>Can be added to an Extended Security Program when no PHI is introduced. |
+| AEM Assets | Brand Portal | Not HIPAA-ready |
+| AEM Assets | Dynamic Media OpenAPI | Not HIPAA-ready<br>Can be added to an Extended Security Program when no PHI is introduced. |
+| AEM Assets | Dynamic Media Scene 7 | Not HIPAA-ready |
+| AEM Forms | AEM Forms,Authentication Facade Service, PDF Utility Service | HIPAA-ready |
+| AEM CIF | Commerce Integration Framework | Not HIPAA-ready |
+| AEM Cloud Manager | AEM Cloud Manager, Release Orchestrator, Release Toggles, Release Validator | HIPAA-ready |
+| AEM Cloud Manager | Software Distribution | Not HIPAA-ready<br>Can be added to an Extended Security Program when no PHI is introduced. |
+| | | |
+| AEM Guides | AEM Guides | Not HIPAA-ready |
+| | | |
+| LLM Optimizer | LLM Optimizer | Not HIPAA-ready<br>Can be added to an Extended Security Program when no PHI is introduced. |
+
+>[!NOTE]
 >
->Only Product Legal and Privacy Legal make the decision to label a service either HIPAA-ready, not HIPAA-ready, or Not necessary.
-
-## HIPAA-readiness of services in AEM as a Cloud Service {#hipaa-readiness-of-services-in-aem-as-a-cloud-service}
-
-Individual services within AEM as a Cloud have individual HIPAA-readiness ratings, based on the [assessment ratings](#hipaa-assessment-terminology). 
-
-See the following table for HIPAA-readiness ratings, together with the [Additional Requirements](#additional-requirements).
-
-|Product/Capability |Service |Statements |
-|--- |--- |--- |
-|AEM Sites |AEM Publish/Universal Editor |Included in our HIPAA-ready service |
-|AEM Sites |Edge Delivery Services |A HIPAA-ready service |
-|AEM Sites Optimizer |Sites Optimizer |Included in our HIPAA-ready service |
-|AEM Assets |Content Hub |Included in our HIPAA-ready service |
-|AEM Assets |Brand Portal |Not HIPAA-ready |
-|AEM Assets |Dynamic Media Scene 7 |Not HIPAA-ready |
-|AEM Forms |Authentication Facade Service |A HIPAA-ready service |
-|AEM Forms |PDF Utility Service |A HIPAA-ready service |
-|AEM CIF |Commerce Integration Framework |Not HIPAA-ready |
-|AEM Cloud Manager |Cloud Manager |A HIPAA-ready service |
-|AEM Cloud Foundation |Release Orchestrator |A HIPAA-ready service |
-|AEM Cloud Foundation |Release Toggles |A HIPAA-ready service |
-|AEM Cloud Foundation |Release Validator |A HIPAA-ready service |
-|AEM Cloud Foundation |Software Distribution |Included in our HIPAA-ready service |
-| | | |
-|AEM Guides |Guides |Not HIPAA-ready |
-| | | |
-|LLM Optimizer |LLM Optimizer |Included in our HIPAA-ready service |
+>For not HIPAA-ready services that are indicated as can be added to an Extended Security program, customers must ensure that PHI is not routed to or stored in these services.
+>
+>Introducing PHI into a service that is not HIPAA-ready may result in non-compliance.
 
 ### Additional Requirements {#additional-requirements}
 
-[Services listed](#hipaa-readiness-of-services-in-aem-as-a-cloud-service) as HIPAA-ready (also referred to as a HIPAA-ready service) require the purchase of Extended Security for Healthcare. 
+[Services listed](#hipaa-readiness-of-services-in-aem-as-a-cloud-service) as HIPAA-ready require the purchase of Extended Security for Healthcare. 
 
 When Extended Security for Healthcare is purchased, there is the requirement that:
 
@@ -109,9 +124,9 @@ This means that you must:
 
 The following table shows where the environment types can be supported as HIPAA-ready.
 
-| |RDE |Dev |Stage |Prod |
-|--- |--- |--- |--- |--- |
-|Environment Type |No |No |No |Yes |
+| | RDE | Dev | Stage | Prod |
+| --- | --- | --- | --- | --- |
+| Environment Type | No | No | No | Yes |
 
 ## Setup {#setup}
 
