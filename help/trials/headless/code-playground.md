@@ -2,7 +2,7 @@
 title: Render Your Content in a Simple App
 description: Explore fetching JSON content from your trial environment with a CodePen example app and the AEM Headless Client for JavaScript.
 hidefromtoc: yes
-index: no
+index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 feature: Headless
 role: Admin, User, Developer

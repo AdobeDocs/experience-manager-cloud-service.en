@@ -132,7 +132,8 @@ On the **Accessibility** tab, values are set for [ARIA accessibility](https://ww
 
    ![Complete the signing process](assets/scribblecomplete.jpg)
 
-The signatures are added to the form and the form control moves to the next panel. -->
+The signatures are added to the form and the form control moves to the next panel.
+-->
 
 ## See Also {#see-also}
 

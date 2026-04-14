@@ -1,7 +1,7 @@
 ---
 title: Manage Pipelines
 description: Learn how to manage your existing pipelines including editing, running, and deleting them.
-index: yes
+index: true
 exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
