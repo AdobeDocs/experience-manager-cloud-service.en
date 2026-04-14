@@ -34,6 +34,7 @@ Ensure the following before using this skill.
 Once the prerequisites are fulfilled, you simply need to ask the agent to create documentation for your project.
 
 1. In the chat ask "Create documentation of this project."
+1. Provide the organization name of the project if the agent asks for it.
 1. The agent will ask which documentation you would like to create. Normally, you would select **All**.
 
    ![Create documentation](assets/select-documentation.png)
@@ -45,6 +46,10 @@ Once the prerequisites are fulfilled, you simply need to ask the agent to create
 You can save the PDF directly to provide to your teams or upload it as part of the rest of the DA content.
 
 ![Admin guide](assets/admin-guide.png)
+
+>[!NOTE]
+>
+>If you are note authorized to access the Edge Delivery Services admin API or the option **Allow LLM to access admin.hlx.page on my behalf** [in the settings of the console.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view) is not enabled, the agent will generate the documentation based on the code base accessible to it.
 
 ## Troubleshooting {#troubleshooting}
 
@@ -68,6 +73,6 @@ The following are common error messages encountered when using the project docum
 
 * **Cause:** Unable to access Edge Delivery Services config service API
 * **Solution:**
-  1. Verify agent permissions are enabled
+  1. Select the option **Allow LLM to access admin.hlx.page on my behalf** [in the settings of the console.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view)
   1. Check your network/VPN connection
   1. Confirm admin access to the project
