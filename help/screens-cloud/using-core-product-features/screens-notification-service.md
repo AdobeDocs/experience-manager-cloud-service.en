@@ -1,7 +1,7 @@
 ---
 title: Screens Notification Service in Screens as a Cloud Service
 description: This page describes how to configure Notification Service in Screens as a Cloud Service.
-index: yes
+index: true
 exl-id: 74215a70-45c8-4b7f-ba30-60c332de07e9
 feature: Developing Screens
 role: Admin, Developer, User

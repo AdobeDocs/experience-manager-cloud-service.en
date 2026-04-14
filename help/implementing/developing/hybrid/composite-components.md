@@ -4,7 +4,7 @@ description: Learn how to create your own composite components, components made 
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Developer
-index: no
+index: false
 ---
 
 # Composite Components in SPAs {#composite-components-in-spas}

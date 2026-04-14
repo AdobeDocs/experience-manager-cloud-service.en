@@ -39,9 +39,11 @@ Includes fields to specify a mailing address. The available fields are street ad
 
 ![Address fragment](assets/address.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/address-1.png)-->
+](assets/address-1.png)
+-->
 
 ## Contact Information {#contact-information}
 
@@ -49,9 +51,11 @@ Includes fields to capture a phone number and email address.
 
 ![Contact information fragment](assets/contact-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/contact-info-1.png)-->
+](assets/contact-info-1.png)
+-->
 
 ## Credit Card Information {#credit-card-information}
 
@@ -64,9 +68,11 @@ Includes fields to capture current employment details like employment status, fi
 
 ![Current Employment fragment](assets/current-emp.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/current-emp-1.png)-->
+](assets/current-emp-1.png)
+-->
 
 ## Dependents Information {#dependents-information}
 
@@ -74,9 +80,11 @@ Includes fields to specify information about one or more dependents, such as the
 
 ![Dependents information fragment](assets/dependents-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/dependents-info-1.png)-->
+](assets/dependents-info-1.png)
+-->
 
 ## Employment History {#employment-history}
 
@@ -84,9 +92,11 @@ Includes fields to capture employment history. It allows adding multiple organiz
 
 ![Employment History fragment](assets/emp-history.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/emp-history-1.png)-->
+](assets/emp-history-1.png)
+-->
 
 ## Income & Expenditure {#income-expenditure}
 
@@ -94,9 +104,11 @@ Includes fields to capture monthly cash flow and expenses. Forms that require us
 
 ![Income & Expenditure fragment](assets/income.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/income-1.png)-->
+](assets/income-1.png)
+-->
 
 ## Name {#name}
 
@@ -104,9 +116,11 @@ Includes fields to specify title, first name, middle name, and last name.
 
 ![Name fragment](assets/name.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/name-1.png)-->
+](assets/name-1.png)
+-->
 
 ## Terms & Conditions {#terms-conditions}
 
@@ -114,9 +128,11 @@ Specifies terms and conditions for users to accept before submitting a form.
 
 ![Terms & Conditions fragment](assets/tnc.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-1.png)-->
+](assets/tnc-1.png)
+-->
 
 ## Terms & Conditions with Scribble {#terms-conditions-with-scribble}
 
@@ -124,6 +140,8 @@ Specifies terms and conditions for users to accept and sign before submitting a 
 
 ![Terms & Conditions with Scribble](assets/tnc-scribble.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-scribble-1.png)-->
+](assets/tnc-scribble-1.png)
+-->

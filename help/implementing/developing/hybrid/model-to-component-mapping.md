@@ -4,7 +4,7 @@ description: This article describes how the dynamic model to component mapping o
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 feature: Developing
 role: Admin, Developer
-index: no
+index: false
 ---
 
 # Dynamic Model to Component Mapping for SPAs {#dynamic-model-to-component-mapping-for-spas}

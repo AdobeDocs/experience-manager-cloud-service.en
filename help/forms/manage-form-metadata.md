@@ -162,8 +162,10 @@ The following is an extensive list of metadata properties supported in [!DNL AEM
     <ul> 
       <li>Form Data Model (FDM)</li>
       <li>Schema: An XML of JSON schema</li>
-     <!-- <li>Form template: A form template is selected from the ones existing in the repository. This value can be updated.</li> 
-     <li>XML schema: An XSD file is uploaded. This value can be updated.</li> -->
+     <!--
+      <li>Form template: A form template is selected from the ones existing in the repository. This value can be updated.</li> 
+     <li>XML schema: An XSD file is uploaded. This value can be updated.</li>
+     -->
      <li>None</li> 
     </ul> 
     <div>
@@ -192,10 +194,12 @@ Assets have existing property values, which can be viewed in read-only mode. Thi
 
 1. The property page that opens displays a schema containing only those metadata properties that hold some value.
 
-   <!-- The properties page has a toolbar containing two action icons:
+   <!--
+    The properties page has a toolbar containing two action icons:
 
     * Edit: ![Edit](assets/Smock_Edit_18_N.svg) Edit the metadata property values
-    * View: ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Navigate to the form details page, which opens the form in the preview mode. -->
+    * View: ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Navigate to the form details page, which opens the form in the preview mode.
+    -->
 
    The content portion is divided in two parts:
 
@@ -206,7 +210,8 @@ Assets have existing property values, which can be viewed in read-only mode. Thi
 
 You can edit the value of existing metadata properties or add new values to an existing metadata property field (for example, when a metadata field is blank).
 
-<!-- ### Update metadata property values {#update-metadata-property-values}
+<!--
+ ### Update metadata property values {#update-metadata-property-values}
 
 1. Follow the steps mentioned in the previous section to open the properties page where existing metadata of the selected form can be viewed.  
 
@@ -223,7 +228,8 @@ You can edit the value of existing metadata properties or add new values to an e
     * Cancel: ![aem6forms_close](assets/aem6forms_close.svg_w24.png) Cancel any changes made to metadata property values so far
     * Done: ![aem6forms_check](assets/aem6forms_check.png) Save all the changes made to metadata property values so far
 
-   Both these actions direct the user back to read-only mode of the properties page containing the updated values.-->
+   Both these actions direct the user back to read-only mode of the properties page containing the updated values.
+   -->
 
 ### Update the form thumbnail {#update-the-form-thumbnail}
 

@@ -167,7 +167,7 @@ Enter `101` in the `Pet ID` text box to dynamically populate the dropdown option
 
 ![Result](/help/forms/assets/output1.png)  
 
-> ![NOTE]
+>[!NOTE]
 >
 > Dropdown options can also be populated dynamically by invoking a service, parsing the JSON response, and applying custom functions. For more details, see [this section](#retrieve-property-values-from-a-json-array).
 

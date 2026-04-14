@@ -38,9 +38,11 @@ For reference, the default OSGi configuration for `com.day.cq.commons.impl.Exter
 
 Do not define or override the `EXTERNALIZER` environment variables (for example, `AEM_EXTERNALIZER_AUTHOR`) in Cloud Manager. Instead, if you need to override the `publish` or `preview` domain values, define and use the `AEM_CDN_DOMAIN_PUBLISH` and `AEM_CDN_DOMAIN_PREVIEW` environment variables. These variables will automatically be assigned to the corresponding fields in the Externalizer configuration during startup.
 
-<!-- Alexandru: hiding this. See CQDOC-23014 for more details
+<!--
+ Alexandru: hiding this. See CQDOC-23014 for more details
 
-To override the `preview` and `publish` values, use Cloud Manager environment variables as described in the article [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and setting the predefined `AEM_CDN_DOMAIN_PUBLISH` and `AEM_CDN_DOMAIN_PREVIEW` variables. -->
+To override the `preview` and `publish` values, use Cloud Manager environment variables as described in the article [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and setting the predefined `AEM_CDN_DOMAIN_PUBLISH` and `AEM_CDN_DOMAIN_PREVIEW` variables.
+-->
 
 ## Configuring the Externalizer Service {#configuring-the-externalizer-service}
 

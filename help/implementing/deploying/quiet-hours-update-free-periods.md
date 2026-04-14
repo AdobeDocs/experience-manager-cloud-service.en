@@ -10,7 +10,7 @@ exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
 >[!NOTE]
 >You can use the Quiet hours and Update Free Periods features only after you are onboarded into [Automatic Maintenance Updates](/help/implementing/deploying/aem-version-updates.md).
 
-The AEM as a Cloud Service [automatic maintenance updates](/help/implementing/deploying/aem-version-updates.md) ensure that your instances stay secure and up to date with the latest maintenance releases. That said, in some cases (like go-live events) you might need to "protect" those critical working hours from any potential disruptions. As such, AEM as a Cloud Service offers the option to set a time frame where automatic updates do not occur for your ongoing programs.
+The AEM as a Cloud Service [automatic maintenance updates](/help/implementing/deploying/aem-version-updates.md) ensure that your instances stay secure and up to date with the latest maintenance releases. That said, in some cases (like go-live events) you might need to "protect" those critical working hours from any potential disruptions. AEM as a Cloud Service offers options to select time periods that pause automatic maintenance updates on your programs. This does not prevent all infrastructure activity, lower-level platform changes outside of maintenance updates may still take place (for example IMS).
 
 You can configure these time frames by using two scheduling options:
 

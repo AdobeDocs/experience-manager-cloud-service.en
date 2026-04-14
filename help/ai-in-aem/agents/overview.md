@@ -2,7 +2,7 @@
 title: Overview of Agents in AEM
 description: Learn about the Agents available in AEM to accelerate your content creation and automatically orchestrate changes.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
 ---
 

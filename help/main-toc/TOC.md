@@ -253,6 +253,8 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.04.02 Release Notes](/help/release-notes/universal-editor/2026/2026-04-02.md)
+      + [2026.03.26 Release Notes](/help/release-notes/universal-editor/2026/2026-03-26.md)
       + [2026.03.19 Release Notes](/help/release-notes/universal-editor/2026/2026-03-19.md)
       + [2026.03.12 Release Notes](/help/release-notes/universal-editor/2026/2026-03-12.md)
       + [2026.03.05 Release Notes](/help/release-notes/universal-editor/2026/2026-03-05.md)
@@ -308,6 +310,7 @@ user-guide-title: AEM as a Cloud Service
 + Security {#security}
   + [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
   + [Configuring Advanced Networking for AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
+  + [Network Connectivity Test](/help/security/network-connectivity-test.md)
   + [IMS Support for AEM as a Cloud Service](/help/security/ims-support.md)
   + [Changes in User Group and Product Profile Synchronization](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
   + [Migrating to External Identity and Dynamic Group Membership](/help/security/migrating-to-external-identity.md)
