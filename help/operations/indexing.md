@@ -14,8 +14,8 @@ With AEM as a Cloud Service, Adobe is moving away from an AEM instance-centric m
 Below is a list of the main changes compared to AEM 6.5 and earlier versions:
 
 1. Users do not have access to the Index Manager of a single AEM instance to debug, configure, or maintain indexing anymore. It is only used for local development and on-prem deployments.
-1. Users do not change indexes on a single AEM instance nor do they have to worry about consistency checks or reindexing anymore.
-1. In general, index changes are initiated before going to production to not circumvent quality gateways in the Cloud Manager CI/CD pipelines and not impact business KPIs in production.
+1. Users do not change indexes on a single AEM instance, nor do they have to worry about consistency checks or reindexing anymore.
+1. In general, index changes are initiated before going to production not to circumvent quality gateways in the Cloud Manager CI/CD pipelines and not impact business KPIs in production.
 1. All related metrics, including search performance in production, are available for customers at runtime to provide the holistic view on the topics of search and indexing.
 1. Customers are able to set up alerts according to their needs.
 1. SREs are monitoring system health 24/7 and action is taken as early as possible.
@@ -133,10 +133,10 @@ This provides a simple way to customize out-of-the-box (OOTB) indexes and to def
 
 >[!TIP]
 >
->There is an online tool that helps configuring AEM indexes: [Oak Indexing Tools](https://oak-indexing.github.io/oakTools/index.html). It has [a section on Simplified Index Management](https://oak-indexing.github.io/oakTools/simplified.html) with a step-by-step guide and additional tools to help converting custom index to this new format.
+>There is an online tool that helps configure AEM indexes: [Oak Indexing Tools](https://oak-indexing.github.io/oakTools/index.html). It has [a section on Simplified Index Management](https://oak-indexing.github.io/oakTools/simplified.html) with a step-by-step guide and additional tools to help converting custom index to this new format.
 
 Limitations: Simplified Index Management is not currently available for indexes that include `/apps`, `/libs`.
-It can be used for all indexes that have an `includedPaths` property of e.g. `/content`.
+It can be used for all indexes that have an `includedPaths` property of for example `/content`.
 For indexes without an `includedPaths` property, or where `includedPaths` contains `/apps` or `/libs`,
 consider changing the query or using the Legacy Index Configurations mode below.
 
@@ -268,7 +268,7 @@ For a fully customized index, prepare a new index definition package that contai
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
-As mentioned in the limitations sections, the `type` of the customized index definition must always be set to `lucene` even if the extracted index definition using Package Manager is of a different type (e.g. `elasticsearch`).
+As mentioned in the limitations sections, the `type` of the customized index definition must always be set to `lucene` even if the extracted index definition using Package Manager is of a different type (for example `elasticsearch`).
 The `async` property must also be changed in case the extracted index definition is set to `elastic-async`. The `async` property must be set to one of the following: `[async]`, `[async,nrt]` or `[fulltext-async]` for the customized index definition.
 
 <!--
@@ -437,7 +437,7 @@ Only built-in analyzers are supported (that is, those analyzers that are shipped
 
 Currently, indexing the contents of `/oak:index` is not supported. 
 
-For best operational performance, indexes should not be excessively large. The total size of all indexes can be used as a guide. If this size increases by more than 100% after custom indexes have been added, and standard indexes have been adjusted on a development environment, custom index definitions should be adjusted. AEM as a Cloud Service can prevent the deployment of, or remove indexes that would negatively impact system stability and performance.
+For best operational performance, indexes should not be excessively large. The total size of all indexes can be used as a guide. If this size increases by more than 100% after custom indexes have been added, and standard indexes have been adjusted in a development environment, custom index definitions should be adjusted. AEM as a Cloud Service can prevent the deployment of, or remove indexes that would negatively impact system stability and performance.
 
 ### Adding an Index {#adding-an-index}
 
