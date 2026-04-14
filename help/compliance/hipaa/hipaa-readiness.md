@@ -75,23 +75,25 @@ The following table describes which AEM services are HIPAA-ready and which servi
 | Product/Capability | Service(s) | HIPAA readiness |
 | --- | --- | --- |
 | AEM Sites | AEM Sites, AEM Publish, Edge Delivery Services | HIPAA-ready |
-| AEM Sites | Universal Editor | Not HIPAA-ready<br>Can be added to an Extended Security Program when no PHI is introduced. |
-| AEM Sites Optimizer |Sites Optimizer | Not HIPAA-ready<br>Can be added to an Extended Security Program when no PHI is introduced. |
+| AEM Sites | Universal Editor | Not HIPAA-ready<br>[1] Can be added to an Extended Security Program when no PHI is introduced. |
+| AEM Sites Optimizer |Sites Optimizer | Not HIPAA-ready<br>[1] Can be added to an Extended Security Program when no PHI is introduced. |
 | AEM Assets | AEM Assets | HIPAA-ready |
-| AEM Assets | Content Hub | Not HIPAA-ready<br>Can be added to an Extended Security Program when no PHI is introduced. |
+| AEM Assets | Content Hub | Not HIPAA-ready<br>[1] Can be added to an Extended Security Program when no PHI is introduced. |
 | AEM Assets | Brand Portal | Not HIPAA-ready |
-| AEM Assets | Dynamic Media OpenAPI | Not HIPAA-ready<br>Can be added to an Extended Security Program when no PHI is introduced. |
+| AEM Assets | Dynamic Media OpenAPI | Not HIPAA-ready<br>[1] Can be added to an Extended Security Program when no PHI is introduced. |
 | AEM Assets | Dynamic Media Scene 7 | Not HIPAA-ready |
 | AEM Forms | AEM Forms, Authentication Facade Service, PDF Utility Service | HIPAA-ready |
 | AEM CIF | Commerce Integration Framework | Not HIPAA-ready |
 | AEM Cloud Manager | AEM Cloud Manager, Release Orchestrator, Release Toggles, Release Validator | HIPAA-ready |
-| AEM Cloud Manager | Software Distribution | Not HIPAA-ready<br>Can be added to an Extended Security Program when no PHI is introduced. |
+| AEM Cloud Manager | Software Distribution | Not HIPAA-ready<br>[1] Can be added to an Extended Security Program when no PHI is introduced. |
 | | | |
 | AEM Guides | AEM Guides | Not HIPAA-ready |
 | | | |
-| LLM Optimizer | LLM Optimizer | Not HIPAA-ready<br>Can be added to an Extended Security Program when no PHI is introduced. |
+| LLM Optimizer | LLM Optimizer | Not HIPAA-ready<br>[1] Can be added to an Extended Security Program when no PHI is introduced. |
 
 >[!NOTE]
+>
+>[1]
 >
 >For not HIPAA-ready services that are indicated as can be added to an Extended Security program, customers must ensure that PHI is not routed to or stored in these services.
 >
