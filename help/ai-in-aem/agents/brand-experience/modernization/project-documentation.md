@@ -49,7 +49,7 @@ You can save the PDF directly to provide to your teams or upload it as part of t
 
 >[!NOTE]
 >
->If you are note authorized to access the Edge Delivery Services admin API or the option **Allow LLM to access admin.hlx.page on my behalf** [in the settings of the console.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view) is not enabled, the agent will generate the documentation based on the code base accessible to it.
+>If you are not authorized to access the Edge Delivery Services admin API or the option **Allow LLM to access admin.hlx.page on my behalf** [in the settings of the console.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view) is not enabled, the agent will generate the documentation based on the code base accessible to it.
 
 ## Troubleshooting {#troubleshooting}
 
