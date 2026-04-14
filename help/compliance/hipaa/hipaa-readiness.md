@@ -49,7 +49,7 @@ For more information on executing an Adobe BAA for HIPAA-ready Services, please 
 >
 >**Disclaimer**: 
 >
->The Customer is responsible for their use of Adobe HIPAA-ready Services and for ensuring that the Adobe HIPAA-ready Services meet their compliance requirements.
+>Customer is responsible for their use of Adobe HIPAA-ready Services and for ensuring that the Adobe HIPAA-ready Services meet their compliance requirements.
 
 For more information, see [HIPAA and Adobe Products and Services](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html) in the Adobe Trust Center.
 
@@ -60,7 +60,7 @@ The following table describes how AEM services are categorized for HIPAA usage.
 |HIPAA readiness | Description |
 | --- | --- |
 | HIPAA-ready | Designed to process PHI when configured appropriately and used with a BAA. |
-| Not HIPAA-ready | Not designed to process PHI and must not be used in HIPAA-related use. |
+| Not HIPAA-ready | Not designed to process PHI and must not be used in HIPAA-related use cases. |
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ The following table describes which AEM services are HIPAA-ready and which servi
 | AEM Assets | Brand Portal | Not HIPAA-ready |
 | AEM Assets | Dynamic Media OpenAPI | Not HIPAA-ready<br>Can be added to an Extended Security Program when no PHI is introduced. |
 | AEM Assets | Dynamic Media Scene 7 | Not HIPAA-ready |
-| AEM Forms | AEM Forms,Authentication Facade Service, PDF Utility Service | HIPAA-ready |
+| AEM Forms | AEM Forms, Authentication Facade Service, PDF Utility Service | HIPAA-ready |
 | AEM CIF | Commerce Integration Framework | Not HIPAA-ready |
 | AEM Cloud Manager | AEM Cloud Manager, Release Orchestrator, Release Toggles, Release Validator | HIPAA-ready |
 | AEM Cloud Manager | Software Distribution | Not HIPAA-ready<br>Can be added to an Extended Security Program when no PHI is introduced. |
