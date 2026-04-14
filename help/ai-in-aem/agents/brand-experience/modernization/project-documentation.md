@@ -11,11 +11,11 @@ Learn how the Experience Modernization Agent's documentation skill can help you 
 
 ## Accelerating Project Handovers {#project-handovers}
 
-[The Experience Modernization Agent](/help/ai-in-aem/agents/brand-experience/modernization/overview.md) can automatically generate comprehensive project documentation guides for AEM Edge Delivery Services projects featuring:
+[The Experience Modernization Agent](/help/ai-in-aem/agents/brand-experience/modernization/overview.md) can automatically generate project documentation guides for AEM Edge Delivery Services projects featuring:
 
-* **Project walkthrough** - Complete setup explanation without manual effort
-* **Module &amp; component organization** - Clear documentation of how everything fits together
-* **Role-based guides** - Targeted content for Authors, Developers, and Admins
+* **Project walkthrough** - Explanation of the project setup, structure, and conventions, generated without manual effort
+* **Module &amp; component organization** - Clear documentation of how blocks, modules, and components are organized and how they relate to each other
+* **Role-based guides** - Targeted documentation for authors, developers, and administrators, so each team member gets exactly what they need
 
 This simplifies project handovers for AEM Edge Delivery Services projects.
 
@@ -45,3 +45,29 @@ Once the prerequisites are fulfilled, you simply need to ask the agent to create
 You can save the PDF directly to provide to your teams or upload it as part of the rest of the DA content.
 
 ![Admin guide](assets/admin-guide.png)
+
+## Troubleshooting {#troubleshooting}
+
+The following are common error messages encountered when using the project documentation skill and how to solve them.
+
+### "Access Denied" or "Unauthorized" {#unauthorized}
+
+* **Cause:** Missing admin permissions or agent permissions not enabled
+* **Solution:**
+  1. Verify you have admin access to the project
+  1. Select the option **Allow LLM to access admin.hlx.page on my behalf** [in the settings of the console.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view)
+
+### "Project Not Found" {#not-found}
+
+* **Cause:** Repository not checked out in workspace
+* **Solution:**
+  1. Check out the project repository
+  1. Ensure you're in the correct workspace
+
+### "Config API Error" {#api-error}
+
+* **Cause:** Unable to access Edge Delivery Services config service API
+* **Solution:**
+  1. Verify agent permissions are enabled
+  1. Check your network/VPN connection
+  1. Confirm admin access to the project
