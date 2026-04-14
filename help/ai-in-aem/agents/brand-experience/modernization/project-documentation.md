@@ -27,8 +27,8 @@ Ensure the following before using this skill.
 * You must have admin permissions for the project for which you're creating documentation.
 * Agent permissions must be allowed in the console.
   * Select the option **Allow LLM to access admin.hlx.page on my behalf** [in the settings of the console.](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view)
-  * If this option is not enabled, the documentation task will fail with a 401 error.
-
+  * If this option is not enabled, the the agent will generate the documentation based on the code base accessible to it.
+  
 ## Creating Project Documentation {#creating-documentation}
 
 Once the prerequisites are fulfilled, you simply need to ask the agent to create documentation for your project.
