@@ -36,6 +36,10 @@ Click **Download Spreadsheet** to download and define rules in a spreadsheet. Cr
 
 Define rules in the spreadsheet using the guidelines defined in this article.
 
+>[!IMPORTANT]
+>
+>You can also set Attribute-based access control rules using the [AEM Governance Agent](/help/ai-in-aem/agents/governance/overview.md#permission-management-in-content-hub).
+
 <!--
 
 >[!IMPORTANT]
