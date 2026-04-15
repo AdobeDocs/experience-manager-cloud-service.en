@@ -80,7 +80,7 @@ You can define the users of your New Relic One sub-account associated with your 
    * Enter the first and last name of the user that you want to add
    * Enter their associated e-mail address
    * Click ![Add icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg ) **Add**. Repeat this step for each user that you want to add.
-   * Click ![Delete icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) to remove a user.
+   * Click ![Close icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) to remove a user.
 
    ![Add users](assets/newrelic-add-users.png)
 
@@ -179,7 +179,7 @@ After a supported pipeline execution completes, you can view the corresponding c
 
    ![Change tracker indicators on the Web transactions time chart](/help/implementing/cloud-manager/assets/new-relic/new-relic-web-transactions-time.png)
 
-1. Click any change event in the table to open a detailed view. 
+1. Click any change event in the chart to open a detailed view. 
 
    ![Deployment attributes panel with the deepLink URL highlighted](/help/implementing/cloud-manager/assets/new-relic/new-relic-deeplink.png) <i>Detailed view of a change event.</i>
 
