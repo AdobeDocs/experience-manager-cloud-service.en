@@ -158,7 +158,7 @@ For example, webhooks allow Cloud Manager to trigger actions based on events suc
 
 * Pull request (PR) creation – Initiates PR validation functionality.
 * Push events – Starts pipelines when the "On Git Commit" trigger is turned on (enabled).
-* Future comment-based actions – Allows workflows, such as direct deployment from a PR, to a Rapid Development Environment (RDE).
+* Future comment-based actions – Allows workflows, such as direct deployment from a PR, to a Rapid Development Environment (RDE). 
 
 Webhook configuration is not required for repositories hosted on `GitHub.com` because Cloud Manager integrates directly through the GitHub app.
 
