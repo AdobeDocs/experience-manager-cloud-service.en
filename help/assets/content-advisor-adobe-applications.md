@@ -8,7 +8,7 @@ exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
 ---
 # Use Content Advisor to access AEM content in Adobe applications{#content-advisor-aem-assets-adobe-applications}
 
-Content Advisor delivers a unified content discovery experience across Adobe applications. Natively integrated with applications such as Adobe Workfront (coming soon), AJO B2C (coming soon), AEM Sites and others, Content Advisor brings content (assets and Content Fragments) together in a single, intelligent interface. It enables you to effortlessly discover, browse, and reuse the most relevant content, right within your workflow, so you can move faster without breaking context.
+Content Advisor delivers a unified content discovery experience across Adobe applications. Natively integrated with applications such as Adobe Workfront, AJO B2C (coming soon), AEM Sites and others, Content Advisor brings content (assets and Content Fragments) together in a single, intelligent interface. It enables you to effortlessly discover, browse, and reuse the most relevant content, right within your workflow, so you can move faster without breaking context.
 
 >[!IMPORTANT]
 > 
@@ -194,3 +194,5 @@ The following table illustrates the Content Advisor feature support across Adobe
 | AEM Sites (Document Authoring)                       |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      | &minus;                                        |
 | AEM Sites (Content Fragment Editor)              |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      |  &minus;                                        |
 | AEM Sites (Universal Editor)                     |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      |  &minus;                                        |
+| Adobe Workfront Workflow                     |  &#10003;                                            | &#10003;                                                         | &minus;                                                      |  &minus;                                        |
+| Adobe Workfront Planning                     |  &#10003;                                            | &minus;                                                         | &minus;                                                      |  &minus;                                        |
