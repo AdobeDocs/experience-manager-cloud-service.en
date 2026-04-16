@@ -2,6 +2,7 @@
 title: Generate a Submission PDF (formerly Document of Record) for AEM Forms
 description: Learn to generate a Submission PDF from form submissions for Adaptive Forms. Create a PDF of the submitted form for archival or reference.
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
 ---
@@ -141,7 +142,8 @@ Keep in mind the following considerations and limitations when working on the Su
 * Content binding in Submission PDF generated for XML Schema based Adaptive Form is not supported.
 * Localized version of Submission PDF is created on demand for a locale when the user requests the rendering of the Submission PDF. Localization of Submission PDF occurs along with localization of Adaptive Form. <!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
 
-<!-- ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
+<!--
+ ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
 
 While creating an adaptive form, in the Form Model tab of Adaptive Form properties, select one the following option: 
 
@@ -156,7 +158,8 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
   
 
-When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
+When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration).
+-->
 
 ## Mapping of Adaptive Form elements {#mapping-of-adaptive-form-elements}
 
@@ -392,7 +395,8 @@ To localize the branding information that you enter in the Document of Record ta
    <color value="4,166,203"/>
    </edge>
    </proto>
-   ```-->
+   ```
+   -->
 
 1. To save the branding changes, select **[!UICONTROL Done]**.
 

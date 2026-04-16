@@ -4,7 +4,7 @@ description: Learn how to work with the Product Cockpit, which provides a unifie
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
 feature: Commerce Integration Framework
 role: Admin
-index: no
+index: false
 ---
 
 # Product Cockpit {#product-cockpit}

@@ -2,6 +2,7 @@
 title: Customize Asset Selector application
 description: Use functions to customize Asset selector within your application.
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
 ---
 # Asset Selector customizations {#asset-selector-customization}
@@ -229,10 +230,12 @@ The syntax of disable selection is as follows:
 
 Asset Selector allows you to control the usage of an expired asset. You can customize the expired asset with an **Expiring soon** badge that can help you know in advance about the assets that are going to expire within 30 days from the current date. Moreover, this can be customized as per the requirement. You can also allow the selection of an expired asset on the canvas or vice versa. The customization of an expired asset can be done using some code snippets in various ways:
 
-<!--{
+<!--
+{
     getExpiryStatus: function, // to control Expired/Expiring soon badges of the asset
     allowSelectionAndDrag: boolean, // set true to allow the selection of expired assets on canvas, set false, otherwise.
-}-->
+}
+-->
 
 ```
 expiryOptions: {
@@ -253,7 +256,8 @@ expiryOptions:{
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 
-![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)-->
+![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)
+-->
 
 ### Setting duration of an expired asset {#set-duration-of-expired-asset}
 

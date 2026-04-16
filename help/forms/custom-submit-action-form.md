@@ -4,6 +4,7 @@ description: Learn how to create a custom Submit Action for an Adaptive Forms to
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
 ---
 # Create a custom Submit Action for Adaptive Forms {#writing-custom-submit-action-for-adaptive-forms}
@@ -95,8 +96,11 @@ A Submit Action is a sling:Folder that includes the following:
 * **post.POST.jsp**: The Submit servlet calls this script with the data that you submit and the additional data in the previous sections. Any mention of running an action in this page implies running the post.POST.jsp script. To register the Submit Action with the Adaptive Forms to display in the Adaptive Form Edit dialog, add these properties to the `sling:Folder`:
 
     * **guideComponentType** of type String and value **fd/af/components/guidesubmittype**
-    * **guideDataModel** of type String that specifies the type of Adaptive Form for which the Submit Action is applicable. <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** is supported for XSD-based Adaptive Forms. **basic** is supported for Adaptive Forms that do not use XDP or XSD. To display the action on multiple types of Adaptive Forms, add the corresponding strings. Separate each string by a comma. For example, to make an action visible on <!--XFA- and -->XSD-based Adaptive Forms, specify the value as <!--**xfa** and--> **xsd**.
-
+    * **guideDataModel** of type String that specifies the type of Adaptive Form for which the Submit Action is applicable. **xsd** is supported for XSD-based Adaptive Forms. **basic** is supported for Adaptive Forms that do not use XDP or XSD. To display the action on multiple types of Adaptive Forms, add the corresponding strings. Separate each string by a comma. For example, to make an action visible on XSD-based Adaptive Forms, specify the value as **xsd**.
+    <!--
+    Replace above?
+    * **guideDataModel** of type String that specifies the type of Adaptive Form for which the Submit Action is applicable. **xfa** is supported for XFA-based Adaptive Forms while **xsd** is supported for XSD-based Adaptive Forms. **basic** is supported for Adaptive Forms that do not use XDP or XSD. To display the action on multiple types of Adaptive Forms, add the corresponding strings. Separate each string by a comma. For example, to make an action visible on XFA- and XSD-based Adaptive Forms, specify the value as <**xfa** and **xsd**.
+    -->
     * **jcr:description** of type String. The value of this property is displayed in the Submit Action list in the Submit Actions Tab of the Adaptive Form Edit dialog. The OOTB actions are present in the CRX repository at the location **/libs/fd/af/components/guidesubmittype**.
 
     * **submitService** of type String. For more information, see [Schedule Adaptive Form submission for custom actions](#schedule-adaptive-form-submission).

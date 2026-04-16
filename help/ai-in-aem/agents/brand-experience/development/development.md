@@ -2,7 +2,7 @@
 title: Development Agent Overview
 description: Learn how the Development Agent in AEM analyzes failed pipelines in Cloud Manager and build logs to suggest code fixes and speed up debugging.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
 ---
 
@@ -30,7 +30,7 @@ The agent can retrieve pipeline statuses and help you troubleshoot failing build
 
 To access this agent, please refer to the [release notes](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs) for instructions on how to enroll in the beta program, being sure to indicate your interest in the  Development Agent. You can also email development agent–specific feedback to [aem-devagent@adobe.com.](mailto:aem-devagent@adobe.com)
 
-[Follow along a tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline) to learn how to use the Development Agent to troubleshoot pipeline failures.
+[Follow along a tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline) to learn how to use the Development Agent to troubleshoot pipeline failures.
 
 ## Access the Development Agent through Cloud Manager {#how-to-access-the-agent}
 

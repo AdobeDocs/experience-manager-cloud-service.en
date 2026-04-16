@@ -1,9 +1,10 @@
 ---
-Title: How to Connect AEM Adaptive Forms with Azure SQL Storage
-Description: Learn how to configure an Azure SQL Database connection in AEM Forms and integrate it with your Adaptive Forms to store or retrieve data efficiently using JDBC.
-Keywords: Azure SQL integration with AEM Forms, Connecting Adaptive Forms to Azure SQL Database, JDBC connection for Azure SQL in AEM Forms, Storing Adaptive Form data in Azure SQL
+title: How to Connect AEM Adaptive Forms with Azure SQL Storage
+description: Learn how to configure an Azure SQL Database connection in AEM Forms and integrate it with your Adaptive Forms to store or retrieve data efficiently using JDBC.
+deywords: Azure SQL integration with AEM Forms, Connecting Adaptive Forms to Azure SQL Database, JDBC connection for Azure SQL in AEM Forms, Storing Adaptive Form data in Azure SQL
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 111accf7-bf34-499c-832e-c001ea68f6d3
 ---
 # Connect an Adaptive Form to Azure SQL Storage
@@ -11,7 +12,7 @@ exl-id: 111accf7-bf34-499c-832e-c001ea68f6d3
 Adaptive Forms in Adobe Experience Manager (AEM) can integrate with external databases to store or retrieve data. 
 This article outlines how to connect an Adaptive Form to an Azure SQL database using JDBC through AEM as a Cloud Service.
 
->![NOTE]
+>[!NOTE]
 > 
 > This guide applies to non-sandbox AEM as a Cloud Service environments with advanced networking enabled.
 
@@ -48,7 +49,7 @@ Integrating Adaptive Forms with Azure SQL offers several benefits:
     * **portDest**: `1433` (default port for Azure SQL) 
     For example: `portOrigin: 30433 → portDest: 1433`
 
-        >![NOTE]
+        >[!NOTE]
         > 
         > You can contact Adobe Cloud Manager support to configure the port forwarding.
 
@@ -110,7 +111,7 @@ Include the [SQL driver dependency](https://central.sonatype.com/artifact/com.mi
         }
     ```
 
-    >![NOTE]
+    >[!NOTE]
     >
     > Replace `jdbc.username` with actual Azure username and `jdbc.password` with the actual secure password.
 

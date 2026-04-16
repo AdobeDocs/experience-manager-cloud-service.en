@@ -3,6 +3,7 @@ title: Cascading metadata
 description: This article describes how to define cascading metadata for assets in assets view.
 feature: Metadata
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
 ---
 # Cascading Metadata Assets View{#cascading-metadata-assets-view}
@@ -19,10 +20,6 @@ Here are some use cases for which you can define cascading metadata:
 * Designate a field as mandatory based on the value specified in another field.
 * Change options displayed for a particular field based on the value specified in another field.
 * Set the default metadata value in a particular field based on the value specified in another field.
-
->[!IMPORTANT]
->
->The Cascading Metadata feature is available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 ## Configure cascading metadata in [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
@@ -138,9 +135,6 @@ To modify an existing metadata form, follow the steps below:
 
    ![Cascading Metadata Form Output](assets/cascading-metadata-form-output.png)
 
->[!NOTE]
-> 
->To get early access to the Cascading Metadata on your Assets View account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Next Steps {#next-steps}
 

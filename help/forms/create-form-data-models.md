@@ -4,6 +4,7 @@ description: Learn to create a form data model (FDM), and send or retrieve data 
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
 ---
 # Create Form Data Model (FDM) {#create-form-data-model}
@@ -20,7 +21,8 @@ exl-id: b17b7441-912c-44c7-a835-809f014a8c86
 
 * **Using preconfigured data sources**: If you have configured data sources as described in [Configure data sources](configure-data-sources.md), you can select them while creating a form data model (FDM). It brings all data model objects, properties, and services from the selected data sources available for use in the form data model (FDM).
 
-* **Without data sources**: If you have not configured data sources for your form data model (FDM), you can still create it without data sources. You can use the Form Data Model(FDM) to author Adaptive Forms <!--and interactive communication--> and test them using sample data. When data sources are available, you can bind the Form Data Model (FDM) with data sources, which automatically reflects in the associated Adaptive Forms<!--and interactive communications-->.
+* **Without data sources**: If you have not configured data sources for your form data model (FDM), you can still create it without data sources. You can use the Form Data Model(FDM) to author Adaptive Forms <!--and interactive communication--> and test them using sample data. When data sources are available, you can bind the Form Data Model (FDM) with data sources, which automatically reflects in the associated Adaptive Forms.
+<!--and interactive communications-->
 
 >[!NOTE]
 >

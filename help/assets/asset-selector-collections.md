@@ -2,6 +2,7 @@
 title: Asset Selector Collections
 description: Working with Asset Selector Collections.
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 1687e7d5-eb7e-4eb7-8747-e5dc6afacd5b
 ---
 # Asset Selector Collections {#asset-selector-collections}
@@ -21,7 +22,8 @@ You can view Collections in Asset Selector in both rail view and modal view.
   ![Collections in rail view](assets/collections-rail-modal-view.png)
 
 <!--
-Additionally, you can [customize](/help/assets/asset-selector-customization.md) the `featureSet` property to enable or disable collections in Asset Selector. See [enable or disable Collections tab](#enable-disable-collections-tab).-->
+Additionally, you can [customize](/help/assets/asset-selector-customization.md) the `featureSet` property to enable or disable collections in Asset Selector. See [enable or disable Collections tab](#enable-disable-collections-tab).
+-->
 
 Moreover, you can also customize the selection of assets under the Collections tab. To do this, you can customize it using `handleSelection`. See [handling selection of Assets using Object Schema](/help/assets/asset-selector-customization.md#handling-selection).
 

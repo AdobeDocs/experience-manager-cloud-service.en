@@ -5,6 +5,7 @@ keywords: Submit an Adaptive Form to Adobe Workfront Fusion, Integration of Adob
 topic-tags: author, developer
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 ---
 # Submit an Adaptive Form to Adobe Workfront Fusion

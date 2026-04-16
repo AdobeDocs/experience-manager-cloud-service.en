@@ -4,6 +4,7 @@ description: This article describes how to import and export metadata in bulk.
 contentOwner: AG
 feature: Metadata
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
 ---
 # Import and export asset metadata in bulk {#import-and-export-asset-metadata-in-bulk}
@@ -37,7 +38,8 @@ The metadata import is asynchronous and does not impede the system performance. 
    * The date format is dependent on the column heading and the format in it. For example, if the date is complaint with format `yyyy-MM-dd'T'HH:mm:ssXXX` then the respective column header must be `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`. 
    * The default date format is `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
 
-<!-- Hidden via cqdoc-17869>
+<!--
+ Hidden via cqdoc-17869>
 
 >[!CAUTION]
 >

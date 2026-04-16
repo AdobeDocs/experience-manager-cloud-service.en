@@ -4,6 +4,7 @@ description: Learn how to configure Dynamic Media in Adobe Experience Manager as
 contentOwner: Rick Brough
 feature: Configuration,Dynamic Media
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 ---
 # About configuring Dynamic Media Cloud Service {#configuring-dynamic-media}
@@ -23,6 +24,10 @@ See also [Configure a Dynamic Media Company alias account](/help/assets/dynamic-
 >Starting with the April 2025 AEM as a Cloud Service release, a technical restriction prevents Dynamic Media (Scene7) from being configured in environments with Enhanced Security. As a result, the **Dynamic Media Configuration** card under **Tools** > **Cloud Services** is no longer visible in these environments.
 >
 >Additionally, customers using AEM 6.5 should be aware that the Dynamic Media (Scene7) stack is not HIPAA-ready.
+
+>[!NOTE]
+>
+>See also [HIPAA readiness for Adobe Experience Manager as a Cloud Service ](/help/compliance/hipaa/hipaa-readiness.md) for the documentation that Adobe provides to help you understand HIPAA readiness, and become compliant with the regulations. 
 
 ## Architecture diagram of Dynamic Media {#architecture-diagram-of-dynamic-media}
 
@@ -47,7 +52,8 @@ With the new architecture, Experience Manager is responsible for primary source 
 >* URL redirect at the CDN level
 >* Akamai ChinaCDN (for optimal delivery in China)
 
-<!-- OBSOLETE CONTENT
+<!--
+ OBSOLETE CONTENT
 
 ## (Optional) Migrating Dynamic Media presets and configurations from 6.3 to 6.5 Zero Downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
@@ -132,7 +138,8 @@ To migrate any custom viewer presets and configurations that you have created fr
     * On the Image Server Publish page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
     * For the Client Address Filter, select **[!UICONTROL Add]**.
     * To enable (turn on) the address, select the check box, then enter the IP address of the Experience Manager Author instance (not Dispatcher IP).
-    * Select **[!UICONTROL Save]**. -->
+    * Select **[!UICONTROL Save]**.
+    -->
 
 You are now finished with the basic configuration; you are ready to use Dynamic Media.
 
@@ -204,7 +211,8 @@ To customize the configuration and setup of Dynamic Media further, or optimize i
 
 -->
 
-<!-- Removed as per CQDOC-20701 - May need to revisit and update. In Adobe Experience Manager (AEM) as a Cloud Service, enabling Access Control List (ACL) permissions for Dynamic Media requires a different approach compared to on-premise versions (which was described below), as direct editing of OSGi configurations via the UI is not supported. Not sure how this is done now. For example, you can manage ACLs using tools like the Netcentric Access Control Tool (AC Tool), which simplifies the specification and deployment of complex ACLs in AEM but I doubt that's the recommended method.
+<!--
+ Removed as per CQDOC-20701 - May need to revisit and update. In Adobe Experience Manager (AEM) as a Cloud Service, enabling Access Control List (ACL) permissions for Dynamic Media requires a different approach compared to on-premise versions (which was described below), as direct editing of OSGi configurations via the UI is not supported. Not sure how this is done now. For example, you can manage ACLs using tools like the Netcentric Access Control Tool (AC Tool), which simplifies the specification and deployment of complex ACLs in AEM but I doubt that's the recommended method.
 
 ### (Optional) Enable Access Control List permissions in Dynamic Media {#optional-enable-acl}
 
@@ -391,9 +399,11 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
 To keep Dynamic Media running smoothly, Adobe recommends the following synchronization performance/scalability fine-tuning tip:
 
 * [Update the predefined Job parameters for processing of different file formats](#update-job-para).
-<!-- * [Update the predefined Granite Workflow Queue (video assets) worker threads](#update-granite-workflow-queue-worker-threads-video)
+<!--
+ * [Update the predefined Granite Workflow Queue (video assets) worker threads](#update-granite-workflow-queue-worker-threads-video)
 * [Update the predefined Granite Transient Workflow Queue (images and non-video assets) worker threads](#update-granite-transient-workflow-queue-worker-threads-images).
-* [Update the maximum upload connections to the Dynamic Media Classic (Scene7) server](#update-max-s7-upload-connections).-->
+* [Update the maximum upload connections to the Dynamic Media Classic (Scene7) server](#update-max-s7-upload-connections).
+-->
 
 #### Update the predefined Job parameters for processing of different file formats {#update-job-para}
 
@@ -500,7 +510,8 @@ The Dynamic Media Classic (Scene7) Upload Connection setting synchronizes Experi
 1. Select **[!UICONTROL Save]**.
 -->
 
-<!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
+<!--
+ NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
 ### (Optional) Filtering assets for replication {#optional-filtering-assets-for-replication}
 

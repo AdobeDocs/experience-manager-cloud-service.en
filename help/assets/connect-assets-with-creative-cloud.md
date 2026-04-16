@@ -1,6 +1,7 @@
 ---
 title: Connect AEM Assets to Creative Cloud
 description: Learn how to configure and connect AEM Assets to Creative Cloud. Connect to a Creative Cloud entitlement that is provisioned to a different IMS organization to easily use the latest Creative Cloud integrations in AEM Assets, including Express and Creative Cloud Libraries.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 880200fe-94b3-49de-802c-34283f7c71bc
 feature: Collaboration
 role: User
@@ -10,6 +11,10 @@ role: User
 Experience Manager Assets has the ability to connect to a Creative Cloud entitlement that is provisioned to a different IMS organization to easily use the latest Creative Cloud integrations in AEM Assets, including Express and Creative Cloud Libraries.
 
 If your Creative Cloud products and AEM Assets are provisioned to separate IMS organizations, you can connect to a different Creative Cloud organization to be able to execute integrated workflows between the two solutions.
+
+>[!IMPORTANT]
+>
+>The Creative Cloud Libraries integration with Assets View will be removed on May 1st, 2026. 
 
 ## Prerequisites {#prerequisites}
 

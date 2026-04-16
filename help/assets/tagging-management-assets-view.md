@@ -1,6 +1,7 @@
 ---
 title: How to manage tags in Assets view?
 description: Learn how to manage tags in Assets view. Tags help you categorize assets that can be browsed and searched more efficiently.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
@@ -192,7 +193,7 @@ Assets view provides the ability to import blocked tags from a data source (CSV)
 1. Choose the CSV file from your device. Click **[!UICONTROL select a file]** to navigate to the file from your device. Alternatively, you can drag and drop the CSV file from your device.
 1. Click **[!UICONTROL Upload]**. The tags from the CSV file are listed in the blocked tags list.
 
-    ![Import blocked tags list](assets/import-blocked-tags.png)
+    ![Import blocked tags list](assets/import-csv-new.png)
 
 In case you want to download a blocked tags template, follow the steps below: 
 

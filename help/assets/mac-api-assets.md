@@ -4,6 +4,7 @@ description: Create, read, update, delete, manage digital assets using HTTP API 
 contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 ---
 # Manage digital assets with the [!DNL Adobe Experience Manager Assets] HTTP API{#assets-http-api}
@@ -114,7 +115,8 @@ The [!DNL Assets] HTTP API includes the following features:
 >
 >For the ease of readability the following examples omit the complete cURL notations. The notation correlates with [Resty](https://github.com/micha/resty) which is a script wrapper for cURL.
 
-<!-- TBD: The Console Manager is not available now. So how to configure the below? 
+<!--
+ TBD: The Console Manager is not available now. So how to configure the below? 
 
 **Prerequisites**
 

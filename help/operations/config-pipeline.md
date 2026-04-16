@@ -13,9 +13,9 @@ Learn how you can use config pipelines to deploy different configurations in AEM
 
 A Cloud Manager config pipeline deploys configurations files (created in YAML format) to a target environment. A number of features in AEM as a Cloud Service can be configured in this way, including log forwarding, purge-related maintenance tasks, and several CDN features.
 
-For **Publish Delivery** Projects, config pipelines can be deployed via Cloud Manager to dev, stage, and production environment types. The configuration files can be deployed to Rapid Development Environments (RDEs) using [command line tooling](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
+For **Publish Delivery** Projects, config pipelines can be deployed via Cloud Manager to dev, stage, and production environment types. The configuration files can be deployed to Rapid Development Environments (RDEs) using [command line tooling](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline). Use a targeted deployment [**Publish Delivery Pipeline**](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) ([Production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) or [Non-Production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)) when you need to configure traffic for a domain attached to a Publish Delivery environment. 
 
-Config pipelines can also be deployed through Cloud Manager for **Edge Delivery** Projects.
+Config pipelines can also be deployed through Cloud Manager for **Edge Delivery** Projects. Use an [**Edge Delivery Pipeline**](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md) when the domain is attached to an **Edge Delivery Site**.
 
 This following sections of this document give an overview of important information regarding how config pipelines can be used and how configurations for them should be structured. It describes general concepts shared across either all or a subset of the features supported by config pipelines.
 
@@ -215,13 +215,11 @@ data:
 
 If including the *envTypes* metadata field, only the value **prod** should be used (omitting the envTypes metadata field is also fine). For the *tier* reqProperty, only the value **publish** should be used.  
 
-## Secret environment variables {#secret-env-vars}
+## Configuration secrets  {#secret-in-configuration}
 
-So that sensitive information need not be stored in source control, configuration files support Cloud Manager environment variables of type **secret**. For some configurations, including log forwarding, secret environment variables are mandatory for certain properties.
+So that sensitive information need not be stored in source control, configuration files support referencing secrets from Config pipeline variables or from Environment variables. For some configurations, including log forwarding, secret variables are mandatory for certain properties. See [Configuring CDN credentials and authentication](/help/implementing/dispatcher/cdn-credentials-authentication.md) for details on using secrets in CDN configuration.
 
-Note that secret environment variables are used for Publish Delivery projects; see the Secret Pipeline Variables section for Edge Delivery Services projects.
-
-The following snippet is an example of how the secret environment variable `${{SPLUNK_TOKEN}}` is used in the configuration.
+The following snippet is an example of how the secret variable `${{SPLUNK_TOKEN}}` is used in the configuration.
 
    ```
    kind: "LogForwarding"
@@ -235,12 +233,22 @@ The following snippet is an example of how the secret environment variable `${{S
          index: "AEMaaCS"
    ```
 
-For details on how to use environment variables, see [Cloud Manager Environment Variables](/help/implementing/cloud-manager/environment-variables.md).
 
-## Secret pipeline variables {#secret-pipeline-vars}
 
-For Edge Delivery Services Projects, use Cloud Manager pipeline variables of type **secret** so sensitive information need not be stored in source control. The *Step Applied* select box should use the **deploy** option. 
+### Secret pipeline variables {#secret-pipeline-vars}
 
-The syntax is identical to the snippet shown in the previous section.
+The **prefered way** is to use Cloud Manager pipeline variables of type **secret** so sensitive information need not be stored in source control. The **Step Applied** select box should use the **deploy** option. 
 
 For details on how to use pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).
+
+
+### Secret environment variables {#secret-env-vars}
+
+Use secret environment variables when you want to have different secret values per environment. 
+
+For details on how to use environment variables, see [Cloud Manager Environment Variables](/help/implementing/cloud-manager/environment-variables.md).
+
+  >[!NOTE]
+  >Using secret environment variables is more cumbersome and involves strict discipline: environment variables are not deployed together with the config pipeline. You must deploy them before running the pipeline, and you must not remove them while the pipeline configuration still references them. This is why pipeline secrets are preferred.
+
+

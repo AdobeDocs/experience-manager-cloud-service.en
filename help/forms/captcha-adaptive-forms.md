@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
 ---
 # Use reCAPTCHA in Adaptive Forms {#using-reCAPTCHA-in-adaptive-forms}
@@ -327,7 +328,8 @@ public interface GuideCaptchaValidator {
 
 `captchaPropertyNodePath` refers to the resource path of the CAPTCHA component in the Sling repository. Use this property to include details specific to the CAPTCHA component. For example, `captchaPropertyNodePath` includes information for the reCAPTCHA cloud configuration configured on the CAPTCHA component. The cloud configuration information provides **[!UICONTROL Site Key]** and **[!UICONTROL Secret Key]** settings for implementing the reCAPTCHA service.
 
-`userResponseToken` refers to the `g_recaptcha_response` that gets generated after solving a CAPTCHA in a form. -->
+`userResponseToken` refers to the `g_recaptcha_response` that gets generated after solving a CAPTCHA in a form.
+-->
 
 ### Edit reCAPTCHA service domain {#reCAPTCHA-service-domain}
 

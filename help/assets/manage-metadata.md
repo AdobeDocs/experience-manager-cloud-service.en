@@ -5,6 +5,7 @@ contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management, Metadata
 role: User, Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
 ---
 # Manage metadata of your digital assets {#managing-metadata-for-digital-assets}
@@ -89,7 +90,8 @@ This metadata type ensures effective asset management, access control, and compl
 
 <!-- Learn more about [metadata best practices](metadata-best-practices.md) to manage your digital assets effectively. -->
 
-<!-- The two basic types of metadata are technical metadata and descriptive metadata.
+<!--
+ The two basic types of metadata are technical metadata and descriptive metadata.
 
 Technical metadata is useful for software applications that are dealing with digital assets and should not be maintained manually. [!DNL Experience Manager Assets] and other software automatically determine technical metadata and the metadata may change when the asset is modified. The available technical metadata of an asset depends largely on the file type of the asset. Some examples of technical metadata are:
 
@@ -100,7 +102,8 @@ Technical metadata is useful for software applications that are dealing with dig
 
 Descriptive metadata is metadata concerned with the application domain, for example, the business that an asset is coming from. Descriptive metadata cannot be determined automatically. It is created manually or semi-automatically. For example, a GPS-enabled camera can automatically track the latitude and longitude and add geotag the image.
 
-The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management. -->
+The cost of manually creating descriptive metadata information is high. So, standards are established to ease the exchange of metadata across software systems and organizations. [!DNL Experience Manager Assets] supports all relevant standards for metadata management.
+-->
 
 ## Metadata and Last Modification {#last-modification}
 
@@ -195,7 +198,8 @@ Assets as a [!DNL Cloud Service] can generate custom metadata for an asset using
 >
 >Only one processing profile can be applied to a folder. To apply multiple processing to assets in a folder, add more options to a single processing profile. For example, a single profile can generate renditions, transcode assets, generate custom metadata, and so on. You can apply MIME type filters for each task so that the appropriate task is triggered for the required file format.
 
-<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
+<!--
+ TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
 ## Configure limit for bulk metadata update {#configlimit}
 

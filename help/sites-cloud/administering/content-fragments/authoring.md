@@ -53,6 +53,8 @@ When you first open the Content Fragment Editor, you see four main areas:
     >
     >The original editor opens in the same tab. It is not recommended to have both editors open at the same time.
 
+  * Any warnings that are valid for the fragment and your account. For example, if you do not have the correct privileges to edit the fragment, or if another user has [checked out](/help/sites-cloud/administering/content-fragments/managing.md#check-out-and-check-in) the fragments you will only have read access.
+
 * left panel: shows the **[Variations](#variations)** for the Content Fragment, and its **Fields**:
   * these links can be used to [navigate the Content Fragment structure](#navigate-structure)
 * right panel: presents tabs [showing the properties (metadata) and tags](#view-properties-tags), information about the [version history](#view-version-history), and information related to any [language copies](#view-language-copies)

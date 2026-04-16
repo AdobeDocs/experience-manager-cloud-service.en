@@ -2,7 +2,7 @@
 title: Content Optimization Agent
 description: Learn how to use the content optimization agent to transform how users refine and adapt assets by applying natural language instructions to create channel-ready variations.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 896fc25b-7f60-47b8-9264-2ef6b85d954c
 ---
 
@@ -72,7 +72,7 @@ You can access the content optimization agent in AEM via the AI Assistant. Log o
 
 ## Common Use Cases and Sample Prompts {#use-cases-prompts}
 
-Use the content optimization agent by searching for the right assets through the [content discovery agent.](/help/ai-in-aem/agents/content-advisor/discovery.md) Once the relevant images are surfaced, users can generate optimized or channel-specific variants for one or multiple assets directly from the search results. This workflow ensures high-quality inputs and consistently better optimization outcomes. [See the complete list of available optimizations](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) for more information.
+Use the content optimization agent by searching for the right assets through the [content discovery agent.](/help/ai-in-aem/agents/content-advisor/discovery.md) Once the relevant images are surfaced, users can generate optimized or channel-specific variants for one or multiple assets directly from the search results. Alternatively, users can generate variants by specifying the asset UUID or asset path in the prompt, without needing to perform a prior search. This workflow ensures high-quality inputs and consistently better optimization outcomes. [See the complete list of available optimizations](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/) for more information.
 
 * **High-resolution rendition creation**
 

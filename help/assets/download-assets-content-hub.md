@@ -2,6 +2,7 @@
 title: Download assets from Content Hub
 description: Learn how to download one or more assets and their renditions from the Content Hub portal.
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
 ---
 # Download assets from Content Hub {#download-assets}
@@ -95,15 +96,19 @@ To download multiple assets and their renditions, execute the following steps:
 
     If any of the selected asset is a licensed asset, click the license of the asset in left pane to see its preview, which enables you to select **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and then click **[!UICONTROL Download]**. The preview of the license displays only if the asset is approved using Assets as a Cloud Service authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
-    <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
+    ![download-multiple-license](/help/assets/assets/download-multiple-license.png)
+-->
     
-<!--1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
+<!--
+1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
 1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The license PDF preview is displayed only if the license is approved in your Assets as a Cloud Service environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets to see their previews.
 1. Optional: Click ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the dialog box.
 1. Select **I have read and accept all the terms and conditions mentioned above.** 
-1. Click **Download** to download the selected assets.-->
+1. Click **Download** to download the selected assets.
+-->
 
-<!---This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the preview of the associated assets to the license in the right. Reviewed licenses are highlighted in light blue.
+<!--
+-This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the preview of the associated assets to the license in the right. Reviewed licenses are highlighted in light blue.
 
 
 The dialog box that displays depends on whether the download list includes expired assets or only non-expired assets. <br/>
@@ -121,13 +126,16 @@ The dialog box that displays depends on whether the download list includes expir
 
 1. Click  ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the download dialog box. 
 
-1. Accept the terms and conditions and then click **Download** to download assets associated with the available licenses in the left pane.-->
+1. Accept the terms and conditions and then click **Download** to download assets associated with the available licenses in the left pane.
+-->
 <!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
 
-<!---
+<!--
+-
 ### Download non-licensed Assets {#download-non-licensed-assets}
 
- To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.-->
+ To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.
+-->
    
 ## Types of renditions {#types-of-renditions} 
 
@@ -172,6 +180,43 @@ To enable Dynamic renditions:
    >[!NOTE]
    > 
    > Dynamic renditions are available only for image assets.
+
+## Frequently asked questions {#faqs-download-assets-content-hub}
+
+### How do I download a single asset or multiple assets from AEM Assets Content Hub?
+
+To download a single asset in AEM Assets Content Hub, click the download icon on the asset card. For multiple assets, select them and click Download in the action bar. Content Hub starts downloading the assets in their original rendition if downloads are enabled by your administrator. If asset renditions are available, you can select specific renditions before downloading.
+
+### Is there any configuration managed by administrator in AEM Assets Content Hub to allow Users to download original assets or enable availability of renditions?
+
+Yes, administrators can enable or disable the **Enable availability of renditions** and **Allow download of original assets** toggles available in **Renditions** tab on the Configuration UI to manage the download of original assets or enable availability of renditions in AEM Assets Content Hub.
+
+### What are asset renditions, and what types are available in AEM Assets Content Hub?
+
+Asset renditions in AEM Assets Content Hub are different representations of the original asset file tailored for various use cases. Types include static renditions (such as thumbnails, web or mobile optimized versions, or high-resolution files for print), custom static renditions, and dynamic renditions (including Smart Crop versions). Static renditions are pre-generated, while dynamic renditions are created in real-time based on request.
+
+### How does Smart Crop work with assets in AEM Assets Content Hub?
+
+Smart Crop in AEM Assets Content Hub is an AI-powered feature that identifies the most important part of an image and intelligently crops around it. This ensures that visuals look great across different screens and formats. Smart Crop renditions are available for image assets if your organization supports dynamic media capabilities.
+
+### How do I enable Dynamic renditions in AEM Assets Content Hub?
+
+To enable Dynamic renditions in AEM Assets Content Hub:
+
+* Ensure Dynamic Media with OpenAPI capabilities is enabled. Approved assets are then available for public delivery.
+
+* Set the asset approval target to Content Hub.
+
+* In the Configuration UI, go to the Renditions tab and enable Enable availability of renditions.
+
+* If newly onboarded to Dynamic Media with OpenAPI, re-save existing image presets from Admin view > Tools > Assets > Image Presets (Edit > Save).
+
+Dynamic renditions are supported only for image assets.
+
+### How do I download asset renditions in AEM Assets Content Hub?
+
+To download renditions in AEM Assets Content Hub, select the asset and click the download action. If renditions are enabled by the administrator, a dialog appears where you can choose which renditions to download. For licensed assets, accept the licensing terms before downloading. For multiple assets, select the assets, choose renditions, and download them as a ZIP file. You can select all available renditions or specific ones like static or dynamic renditions.
+
 
 
 
