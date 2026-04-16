@@ -108,7 +108,7 @@ See also [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/m
 
 After validation, the external repository is ready to use and link to a pipeline.
 
-See also [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+See also [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md). 
 
 >[!TAB Azure DevOps]
 
