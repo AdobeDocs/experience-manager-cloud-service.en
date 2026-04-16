@@ -456,21 +456,23 @@ The format is `jcrPropertyPath=credentialAttributeName`. The left side is where 
 #### Deployment and Testing {#custom-userinfoprocessor-deployment}
 
 1. **Build and deploy** your AEM project containing the custom `UserInfoProcessor`:
+
    ```bash
    mvn clean install -PautoInstallPackage
    ```
 
 2. **Verify registration** in the OSGi console at `/system/console/components`:
-   - Search for your custom processor class name
-   - Verify the component is active and the connection configuration is correct
+   * Search for your custom processor class name
+   * Verify the component is active and the connection configuration is correct
 
 3. **Test authentication flow**:
-   - Access a protected path configured in your `OidcAuthenticationHandler`
-   - After successful authentication, check the user node in CRXDE at `/home/users/<prefix>/<username>`
-   - Verify that custom attributes are synchronized
-   - Check group memberships under `/home/groups`
+   * Access a protected path configured in your `OidcAuthenticationHandler`
+   * After successful authentication, check the user node in CRXDE at `/home/users/<prefix>/<username>`
+   * Verify that custom attributes are synchronized
+   * Check group memberships under `/home/groups`
 
 4. **Enable debug logging** to troubleshoot issues:
+
    ```
    Logger: com.mycompany.aem.auth
    Log Level: DEBUG
