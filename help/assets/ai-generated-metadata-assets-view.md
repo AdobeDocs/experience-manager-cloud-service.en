@@ -19,7 +19,8 @@ To enable AI-generated metadata:
   
 ## Using AI-generated metadata {#using-ai-generated-smart-tags}
 
-<!--[!NOTE]
+<!--
+[!NOTE]
 >
 >The enhanced smart tags capability is available only for the newly uploaded assets.
 -->

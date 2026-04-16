@@ -104,7 +104,7 @@ To create a child property:
 
 1. Select **[!UICONTROL Done]** to save the child property and select **[!UICONTROL Save]** to save the form data model(FDM). The child property is now added to the data model object.
 
-After you have created data model objects and properties, you can continue to create Adaptive Forms <!--and interactive communications--> based on the form data model(FDM). Later, when you have data sources available and configured, you can bind the Form Data Model(FDM) with data sources. The binding automatically gets updated in associated Adaptive Forms <!--and interactive communications-->. For more information about creating Adaptive Forms <!--and interactive communications--> using form data model(FDM), see [Use form data model](using-form-data-model.md).
+After you have created data model objects and properties, you can continue to create Adaptive Forms <!--and interactive communications--> based on the form data model(FDM). Later, when you have data sources available and configured, you can bind the Form Data Model(FDM) with data sources. The binding automatically gets updated in associated Adaptive Forms. For more information about creating Adaptive Forms  using form data model(FDM), see [Use form data model](using-form-data-model.md).
 
 ### Bind data model objects and properties {#bind-data-model-objects-and-properties}
 

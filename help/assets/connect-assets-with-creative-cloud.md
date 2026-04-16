@@ -12,6 +12,10 @@ Experience Manager Assets has the ability to connect to a Creative Cloud entitle
 
 If your Creative Cloud products and AEM Assets are provisioned to separate IMS organizations, you can connect to a different Creative Cloud organization to be able to execute integrated workflows between the two solutions.
 
+>[!IMPORTANT]
+>
+>The Creative Cloud Libraries integration with Assets View will be removed on May 1st, 2026. 
+
 ## Prerequisites {#prerequisites}
 
 * Administrator rights to Experience Manager Assets

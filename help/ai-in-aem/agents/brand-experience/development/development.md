@@ -2,7 +2,7 @@
 title: Development Agent Overview
 description: Learn how the Development Agent in AEM analyzes failed pipelines in Cloud Manager and build logs to suggest code fixes and speed up debugging.
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
 ---
 

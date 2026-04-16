@@ -320,7 +320,8 @@ If you have multiple assets in a live copy folder, initiating actions on each as
 
    *Figure: Easily update many assets in live copy folders from the [!UICONTROL Live Copy Overview] console.*
 
-<!-- TBD: Can MSM be extended using Java APIs in CS?
+<!--
+ TBD: Can MSM be extended using Java APIs in CS?
 
 ## Extend MSM for [!DNL Assets] {#extend-api}
 

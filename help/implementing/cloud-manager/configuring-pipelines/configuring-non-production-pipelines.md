@@ -1,7 +1,7 @@
 ---
 title: Add a Non-Production Pipeline
 description: Learn how to add a non-production pipeline to test the quality of your code before deploying to production environments.
-index: yes
+index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -24,7 +24,7 @@ After you set up a program and create at least one environment in the Cloud Mana
 
 **To add a new non-productoin pipeline:**
 
-1. Sign into Cloud Manager at [experiece.adobe.com](https://experience.adobe.com).
+1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
 1. In the **Quick access** section, click **Experience Manager**.
 1. In the left side panel, click **Cloud Manager**.
 1. Select an organization that you want.
@@ -83,23 +83,23 @@ To finish the configuration of the full-stack code non-production pipeline, do t
       > 
       >See [Adding and Managing Repositories](/help/implementing/cloud-manager/managing-code/managing-repositories.md) so you can learn how to add and manage repositories in Cloud Manager.
 
-   * **Git Branch** - From the drop-down list, choose which branch in the selected repository the pipeline should build from. The default is `main`. The pipeline uses the chosen branch as the source for build and deployment. If necessary, click **Refresh** to update the list of available branches for the selected repository. Use this option if a recently created branch does not appear in the list.
-   * **Build Strategy**
+    * **Git Branch** - From the drop-down list, choose which branch in the selected repository the pipeline should build from. The default is `main`. The pipeline uses the chosen branch as the source for build and deployment. If necessary, click **Refresh** to update the list of available branches for the selected repository. Use this option if a recently created branch does not appear in the list.
+    * **Build Strategy**
       * **Full Build** - Builds all modules in the repository every time
-      * BETA **Smart Build** - Builds only modules that have changed since the last commit.<br>Learn more about [using Smart Build in a non-production pipeline](#about-smart-build).
+      * BETA **Smart Build** - Builds only modules that have changed since the last commit.<br>Learn more about [using Smart Build in a non-production pipeline](#about-smart-build-non-production-pipeline).
 
         >[!IMPORTANT]
         >
         >Smart Build is available only for Code Quality pipelines and Dev Full Stack Code deployment pipelines.
 
-   * **Ignore Web Tier Configuration** check box - When checked, the pipeline does not deploy your web tier configuration.
+    * **Ignore Web Tier Configuration** check box - When checked, the pipeline does not deploy your web tier configuration.
 
 1. In the **Pipeline** section, if your pipeline is a deployment pipeline, you can choose to run a testing phase. Check the options that you want to enable in this phase. If none of the options are selected, the testing phase is not displayed during the pipeline's run.
 
     * **Product Functional Testing** - Run [product functional tests](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) against the development environment.
-     * **Custom Functional Testing** - Run [custom functional tests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) against the development environment.
-     * **Custom UI Testing** - Run [custom UI tests](/help/implementing/cloud-manager/ui-testing.md) for custom applications.
-     * **Experience Audit** - Run [Experience Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md)
+    * **Custom Functional Testing** - Run [custom functional tests](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) against the development environment.
+    * **Custom UI Testing** - Run [custom UI tests](/help/implementing/cloud-manager/ui-testing.md) for custom applications.
+    * **Experience Audit** - Run [Experience Audit](/help/implementing/cloud-manager/reports/report-experience-audit.md)
 
    ![Full-stack pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -174,7 +174,7 @@ The steps to complete the creation of your non-production, targeted deployment p
 The pipeline is saved and you can now [manage your pipelines](managing-pipelines.md) on the **Pipelines** card on the **Program Overview** page.
 
 
-## About using Smart Build in a non-production pipeline{#about-smart-build}
+## About using Smart Build in a non-production pipeline{#about-smart-build-non-production-pipeline}
 
 **Smart Build** in Cloud Manager is an optimized build strategy for non-production pipelines. Smart Build reduces build times by caching modules and rebuilding only those modules that have changed since the last successful run. Unchanged modules are reused from cache, while only modified modules and their dependencies are rebuilt, improving efficiency for iterative development workflows.
 
@@ -188,12 +188,14 @@ Smart Build is currently available only for the following:
 >The first run after enabling Smart Build behaves like a Full Build because the cache is empty.
 
 Smart Build is recommended when you have the following:
+
 * You are actively developing and committing frequent incremental changes.
 * Your project contains multiple Maven modules.
 * Full builds are taking significant time.
 
 Smart Build is not always ideal when you have the following:
-* Your build relies heavily on plugins that perform operations outside Maven’s dependency graph.
+
+* Your build relies heavily on plugins that perform operations outside Maven's dependency graph.
 * You require full rebuild validation on every execution.
 
 ### Understand build performance{#smart-build-performance}
@@ -216,7 +218,7 @@ Smart Build provides fine-grained control that lets you disable caching for spec
 
 ### Disable caching for a module{#smart-build-disable-caching}
 
-You can add the following property to the affected module’s `pom.xml`:
+You can add the following property to the affected module's `pom.xml`:
 
 ```xml
 <properties>
@@ -245,7 +247,7 @@ If you encounter unexpected build behavior, consider disabling caching for speci
    | No performance improvement | &bull; Ensure that multiple runs have occurred (cache warm-up).<br>&bull; Check if most modules are changing frequently.  |
    | Unexpected artifacts or missing changes | &bull; Review whether changes are outside Maven dependency tracking.<br>&bull; Use **Full Build** for verification. |
 
-See [Add a non-production pipeline](#adding-non-production-pipeline) the enable Smart Build.
+See [Add a non-production pipeline](#adding-non-production-pipeline) to enable Smart Build.
 
 
 
@@ -262,7 +264,7 @@ See [Add a non-production pipeline](#adding-non-production-pipeline) the enable 
 
 Once you have set up your program and have at least one environment using the Cloud Manager UI, you are ready to add a non-production pipeline by following these steps.
 
-1. Sign into Cloud Manager at [experiece.adobe.com](https://experience.adobe.com).
+1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
 1. In the **Quick access** section, click **Experience Manager**.
 1. In the left side panel, click **Cloud Manager**.
 1. Select an organization that you want.
@@ -354,7 +356,7 @@ Add the following configuration to your project `pom.xml` file to disable publis
   <activation>
     <property>
       <name>env.IGNORE_DISPATCHER_PACKAGES</name>
-      <value>!true</value>
+      <value>[!NOTE]rue</value>
     </property>
   </activation>
   <modules>
