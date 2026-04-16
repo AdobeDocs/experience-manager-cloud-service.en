@@ -21,3 +21,7 @@ Yes. AEM Forms supports secure data transmission, controlled access, and enterpr
 Yes. AEM Forms supports auditability through workflow history, access controls, and system logs, which help insurers meet internal and external audit needs. 
 
 See [Adobe Experience Manager Cloud Service Security](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-cloud-service-security-overview.pdf) white paper for an in-depth overview of AEM as a Cloud Service Security.
+
+>[!NOTE]
+>
+>See also [HIPAA readiness for Adobe Experience Manager as a Cloud Service ](/help/compliance/hipaa/hipaa-readiness.md) for the documentation that Adobe provides to help you understand HIPAA readiness, and become compliant with the regulations. 

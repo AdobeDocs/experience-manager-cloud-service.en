@@ -25,7 +25,8 @@ Out of the box, AEM provides these templates to choose from when you create a pr
 * Media Project
 * Translation Project
 
-<!-- Hiding product photoshoot via cqdoc-18072 as it is not available in Skyline.
+<!--
+ Hiding product photoshoot via cqdoc-18072 as it is not available in Skyline.
 * Product Photo Shoot Project 
 -->
 

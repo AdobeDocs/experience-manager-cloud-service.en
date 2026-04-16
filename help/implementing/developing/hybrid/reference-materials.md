@@ -4,7 +4,7 @@ description: An overview of the single page application API references and sourc
 exl-id: c1cc2bd8-8ff1-406c-a0ce-0af001d66b53
 feature: Developing
 role: Admin, Developer
-index: no
+index: false
 ---
 
 # SPA Reference Materials {#spa-reference-materials}
