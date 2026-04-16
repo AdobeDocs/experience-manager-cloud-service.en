@@ -4,6 +4,7 @@ description: Learn how to work with mixed media sets in Dynamic Media.
 contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 ---
 # Mixed Media Sets{#mixed-media-sets}

@@ -4,6 +4,7 @@ description: "[!DNL Assets] APIs and developer reference content lets you manage
 contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 ---
 # [!DNL Adobe Experience Manager Assets] developer use cases, APIs, and reference material {#assets-cloud-service-apis}
@@ -488,7 +489,8 @@ The following technical workflow models are either replaced by asset microservic
 * `com.day.cq.dam.core.process.AssetOffloadingProcess`
 * `com.adobe.cq.dam.dm.process.workflow.DMImageProcess`
 
-<!-- Commenting the previous list documented at the time of GA. Replacing it with the updated list via cqdoc-18231.
+<!--
+ Commenting the previous list documented at the time of GA. Replacing it with the updated list via cqdoc-18231.
 
 * `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
 * `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
@@ -524,7 +526,8 @@ The following technical workflow models are either replaced by asset microservic
 * `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
 -->
 
-<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of
+<!--
+ PPTX source: slide in add-assets.md - overview of direct binary upload section of
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 

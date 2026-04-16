@@ -7,6 +7,7 @@ role: User, Developer
 level: Beginner
 hide: yes
 hidefromtoc: yes
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
 ---
 # Form builder getting started guide {#creating-an-adaptive-form}
@@ -41,8 +42,10 @@ You require the following to create an Adaptive Form:
   * You can also [create an Adaptive Forms template (Core Components)](template-editor.md) from scratch.
 
 * **An Adaptive Form theme**: A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components.  The `Canvas` template is included with every fresh AEM Forms as a Cloud Service program.
-    <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
-    * You can also [create an Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. --> 
+    <!--
+     * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
+    * You can also [create an Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program.
+    -->
 
 * **Permissions**: Add your users to [!DNL forms-users] group. The members of the [!DNL forms-users] group have permissions to create an Adaptive Form. For detailed list of forms-specific user groups, see [Groups and permissions](forms-groups-privileges-tasks.md).
 
@@ -176,7 +179,8 @@ You require the following to create an Adaptive Form:
 
    Based on the type of Adaptive Form, the form elements present in the associated <!--XFA form template, XML schema or --> JSON schema or Form Data Model (FDM) are displayed in the **[!UICONTROL Data Model Objects]** tab of the **[!UICONTROL Content Browser]** in the sidebar. You can also drag-drop these elements to build your Adaptive Form.
 
-<!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
+<!--
+ ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
 [Data integration](data-integration.md) lets you integrate multiple data sources and bring their entities and services together to create a form data model. It is an extension of JSON schema. You can use a Form Data Model to create an Adaptive Form. The entities or data model objects configured in a Form Data Model are available as data model objects for form authoring. They are bound to respective data sources and used to prefill a form and write submitted data back to the respective data sources. You can also call services configured in a Form Data Model using Adaptive Form rules.
 
@@ -223,7 +227,8 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 >[!NOTE]
 >
->You can also change the schema for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model2). -->
+>You can also change the schema for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model2).
+-->
 
 ## Edit form model properties of an adaptive form {#edit-form-model-foundation-components}
 

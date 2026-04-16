@@ -5,6 +5,7 @@ keywords: form builder, foundation components, create forms, form creator, adapt
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
 ---
 # Form builder: Create forms with foundation components {#creating-an-adaptive-form}
@@ -44,14 +45,16 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 * **Using a form data model**
   [Data integration](data-integration.md) lets you integrate entities and services from disparate data sources in to a Form Data Model that you can use to create Adaptive Forms. Choose Form Data Model if the Adaptive Form you are creating involves fetching and write data from and to multiple data source.
 
-  <!--  * **Using an XDP Form Template**
+  <!--
+    * **Using an XDP Form Template**
    It is an ideal form model if you have investments in XFA-based or XDP forms. It provides a direct way to convert your XFA-based forms into Adaptive Forms. Any existing XFA rules are retained in the associated Adaptive Forms. The resulting Adaptive Forms support XFA constructs, such as validations, events, properties, and patterns. 
 
 * **Using an XML Schema Definition (XSD) or a JSON Schema**
    XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
 
 * **Using none or without a form model**
-   Adaptive Forms created with this option do not use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
+   Adaptive Forms created with this option do not use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.
+   -->
 
 ## Pre-requisites
 
@@ -125,7 +128,8 @@ You require the following to create an Adaptive Form:
 
    Based on the type of Adaptive Form, the form elements present in the associated <!--XFA form template, XML schema or --> JSON schema or Form Data Model (FDM) are displayed in the **[!UICONTROL Data Model Objects]** tab of the **[!UICONTROL Content Browser]** in the sidebar. You can also drag-drop these elements to build your Adaptive Form.
 
-<!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
+<!--
+ ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
 [Data integration](data-integration.md) lets you integrate multiple data sources and bring their entities and services together to create a form data model. It is an extension of JSON schema. You can use a Form Data Model to create an Adaptive Form. The entities or data model objects configured in a Form Data Model are available as data model objects for form authoring. They are bound to respective data sources and used to prefill a form and write submitted data back to the respective data sources. You can also call services configured in a Form Data Model using Adaptive Form rules.
 
@@ -172,7 +176,8 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 >[!NOTE]
 >
->You can also change the schema for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model). -->
+>You can also change the schema for an Adaptive Form. For detailed steps, see [Edit Form Model properties of an Adaptive Form](#edit-form-model).
+-->
 
 ## Edit form model properties of an adaptive form {#edit-form-model}
 

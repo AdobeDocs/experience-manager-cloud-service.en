@@ -3,6 +3,7 @@ title: How to configure Microsoft Dynamics 365 out of the box form data models f
 description: Learn how to integrate Microsoft Dynamics 365 with Adaptive Forms.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
 ---
 
@@ -28,7 +29,8 @@ AEM as a Cloud Service offers various out of the box submit actions for handling
 
 >[!NOTE]
 >
->Microsoft&reg; Dynamics 365 cloud services and Form Data Model (FDM) are available out of the box only if you set up an [!DNL Experience Manager Forms] as a [!DNL Cloud Service] project based on [AEM Archetype 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) or later.-->
+>Microsoft&reg; Dynamics 365 cloud services and Form Data Model (FDM) are available out of the box only if you set up an [!DNL Experience Manager Forms] as a [!DNL Cloud Service] project based on [AEM Archetype 30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) or later.
+-->
 
 ## Prerequisites
 

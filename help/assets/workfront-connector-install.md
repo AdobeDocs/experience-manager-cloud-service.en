@@ -3,6 +3,7 @@ title: Install [!DNL Workfront for Experience Manager enhanced connector]
 description: Install [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Workfront Integrations and Apps
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
 ---
 # Install [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}

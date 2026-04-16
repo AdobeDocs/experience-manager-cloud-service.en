@@ -4,6 +4,7 @@ description: AEM Forms can render XFA form template to HTML5 format. Form design
 content-type: reference
 topic-tags: hTML5_forms
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer

@@ -4,6 +4,7 @@ description: Metadata schema defines the layout of the properties page and the m
 contentOwner: AG
 feature: Metadata
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
 ---
 # Metadata schemas {#metadata-schemas}
@@ -98,7 +99,8 @@ The **[!UICONTROL Build Form]** tab lists form items that you use in your schema
 | [!UICONTROL Products References] | Add to show the list of products linked with the asset.                             |
 | [!UICONTROL Contextual Metadata] | Add to control the display of other metadata tabs in the properties page of assets. |
 
-<!-- TBD: Ratings are not available in Experience Manager as a Cloud Service. Removed via cqdoc-18089 ticket. 
+<!--
+ TBD: Ratings are not available in Experience Manager as a Cloud Service. Removed via cqdoc-18089 ticket. 
 | [!UICONTROL Asset Rating]        | Add to display options for rating the asset.                                       |
 -->
 

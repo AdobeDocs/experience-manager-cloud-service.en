@@ -2,6 +2,7 @@
 title: Transaction Reports Billable APIs
 description: List of all the APIs that are accounted as transactions
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
 role: Admin, Developer, User
 ---
@@ -204,7 +205,8 @@ Billing APIs does not account for the number of pages, the length of a document 
    <td>Documents Processed</td>
    <td> </td>
   </tr>
-  <!--<tr>
+  <!--
+  <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF</a></td>
    <td>Converts Adobe PDF to supported file types. </td>
    <td>Documents Processed<br /> </td>
@@ -245,7 +247,8 @@ Billing APIs does not account for the number of pages, the length of a document 
    <td>Optimizes PDF to reduce file size by stripping unnecessary metadata without affecting the quality.</td>
    <td>Documents Processed<br /> </td>
    <td> </td>
-  </tr>-->
+  </tr>
+  -->
  </tbody>
 </table>
 
@@ -333,12 +336,14 @@ Billing APIs does not account for the number of pages, the length of a document 
    <td>Documents Processed using Forms Service</td>
    <td> </td>
   </tr>
-  <!--<tr>
+  <!--
+  <tr>
    <td><a href="" target="_blank">render</a></td>
    <td>Invokes the specified render method to generate a document of record using provided parameters.</td>
    <td>Documents Processed using Output Service</td>
    <td> </td>
-  </tr>-->
+  </tr>
+  -->
  </tbody>
 </table>
 

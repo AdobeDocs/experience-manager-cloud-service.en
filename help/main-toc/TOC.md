@@ -27,7 +27,8 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2026 {#2026}
-      +  [Release Notes for 2026.1.0](/help/release-notes/release-notes-cloud/2026/2026-1-0.md)
+      + [Release Notes for 2026.2.0](/help/release-notes/release-notes-cloud/2026/2026-2-0.md)
+      + [Release Notes for 2026.1.0](/help/release-notes/release-notes-cloud/2026/2026-1-0.md)
     + 2025 {#2025}
       + [Release Notes for 2025.12.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-12-0.md) 
       + [Release Notes for 2025.11.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-11-0.md) 
@@ -99,6 +100,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2026 {#2026}
+      + [Maintenance Release Notes for 2026.3.0](/help/release-notes/maintenance/2026/2026-3-0.md)
       + [Maintenance Release Notes for 2026.2.0](/help/release-notes/maintenance/2026/2026-2-0.md)
       + [Maintenance Release Notes for 2026.1.0](/help/release-notes/maintenance/2026/2026-1-0.md)
     + 2025 {#2025}
@@ -127,7 +129,7 @@ user-guide-title: AEM as a Cloud Service
     + 2023 {#2023}
       + [Maintenance Release Notes for 2023.12.0](/help/release-notes/maintenance/2023/2023-12-0.md) 
       + [Maintenance Release Notes for 2023.11.0](/help/release-notes/maintenance/2023/2023-11-0.md) 
-      + [Maintenance Release Notes for 2023.10.0](/help/release-notes/maintenance/2023/2023-10-0.md) 
+      + [Maintenance Release Notes for 2023.10.0](/help/release-notes/maintenance/2023/2023-10-0.md)
       + [Maintenance Release Notes for 2023.9.0](/help/release-notes/maintenance/2023/2023-9-0.md) 
       + [Maintenance Release Notes for 2023.8.0](/help/release-notes/maintenance/2023/2023-8-0.md) 
       + [Maintenance Release Notes for 2023.7.0](/help/release-notes/maintenance/2023/2023-7-0.md) 
@@ -137,6 +139,9 @@ user-guide-title: AEM as a Cloud Service
       + [Maintenance Release Notes for 2023.1.0](/help/release-notes/maintenance/2023/2023-1-0.md)
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
+    + 2026 {#2026}
+      + [2026.2.0](/help/implementing/cloud-manager/release-notes/2026/2026-2-0.md)
+      + [2026.1.0](/help/implementing/cloud-manager/release-notes/2026/2026-1-0.md)
     + 2025 {#2025}
       + [2025.12.0](/help/implementing/cloud-manager/release-notes/2025/2025-12-0.md)
       + [2025.11.0](/help/implementing/cloud-manager/release-notes/2025/2025-11-0.md)
@@ -248,6 +253,12 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.04.02 Release Notes](/help/release-notes/universal-editor/2026/2026-04-02.md)
+      + [2026.03.26 Release Notes](/help/release-notes/universal-editor/2026/2026-03-26.md)
+      + [2026.03.19 Release Notes](/help/release-notes/universal-editor/2026/2026-03-19.md)
+      + [2026.03.12 Release Notes](/help/release-notes/universal-editor/2026/2026-03-12.md)
+      + [2026.03.05 Release Notes](/help/release-notes/universal-editor/2026/2026-03-05.md)
+      + [2026.02.26 Release Notes](/help/release-notes/universal-editor/2026/2026-02-26.md)
       + [2026.02.19 Release Notes](/help/release-notes/universal-editor/2026/2026-02-19.md)
       + [2026.02.13 Release Notes](/help/release-notes/universal-editor/2026/2026-02-13.md)
       + [2026.02.05 Release Notes](/help/release-notes/universal-editor/2026/2026-02-05.md)
@@ -299,6 +310,7 @@ user-guide-title: AEM as a Cloud Service
 + Security {#security}
   + [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
   + [Configuring Advanced Networking for AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
+  + [Network Connectivity Test](/help/security/network-connectivity-test.md)
   + [IMS Support for AEM as a Cloud Service](/help/security/ims-support.md)
   + [Changes in User Group and Product Profile Synchronization](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
   + [Migrating to External Identity and Dynamic Group Membership](/help/security/migrating-to-external-identity.md)
@@ -576,19 +588,7 @@ user-guide-title: AEM as a Cloud Service
   + [Troubleshoot AEM Assets issues](/help/assets/troubleshoot-aem-assets.md)
   + [Assets Collaborator users](/help/assets/assets-collaborator-users.md)
   + Manage digital assets {#manage}
-    + Micro-Frontend Asset Selector {#asset-selector}
-      + [Asset Selector overview](/help/assets/overview-asset-selector.md)
-      + Asset Selector integrations {#asset-selector-integration}
-        + [Asset Selector integrations overview](/help/assets/integrate-asset-selector.md)
-        + [Integrate Asset Selector with an Adobe application](/help/assets/integrate-asset-selector-adobe-app.md)
-        + [Integrate Asset Selector with a non-Adobe application](/help/assets/integrate-asset-selector-non-adobe-app.md)
-        + [Integrate Asset Selector for Dynamic Media with OpenAPI capabilities](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-      + [Asset Selector properties](/help/assets/asset-selector-properties.md)
-      + [Asset Selector examples](/help/assets/asset-selector-examples.md)
-      + [Asset Selector customizations](/help/assets/asset-selector-customization.md)
-      + [Asset Selector upload](/help/assets/asset-selector-upload.md)
-      + [Asset Selector collections](/help/assets/asset-selector-collections.md)
-    + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
+    + [Content Advisor to access AEM content in Adobe applications](/help/assets/content-advisor-adobe-applications.md)
     + [Share assets](/help/assets/share-assets.md)
     + [Reprocessing assets](/help/assets/reprocessing.md)
     + [Malware detection](/help/assets/malware-detection.md)
@@ -623,6 +623,19 @@ user-guide-title: AEM as a Cloud Service
     + [Process assets using [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)
     + [Color tags for images](/help/assets/color-tag-images.md)
     + [Manage PDF documents](/help/assets/manage-pdf-documents.md)
+    + Micro-Frontend Asset Selector {#asset-selector}
+      + [Asset Selector overview](/help/assets/overview-asset-selector.md)
+      + Asset Selector integrations {#asset-selector-integration}
+        + [Asset Selector integrations overview](/help/assets/integrate-asset-selector.md)
+        + [Integrate Asset Selector with an Adobe application](/help/assets/integrate-asset-selector-adobe-app.md)
+        + [Integrate Asset Selector with a non-Adobe application](/help/assets/integrate-asset-selector-non-adobe-app.md)
+        + [Integrate Asset Selector for Dynamic Media with OpenAPI capabilities](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+      + [Asset Selector properties](/help/assets/asset-selector-properties.md)
+      + [Asset Selector examples](/help/assets/asset-selector-examples.md)
+      + [Asset Selector customizations](/help/assets/asset-selector-customization.md)
+      + [Asset Selector upload](/help/assets/asset-selector-upload.md)
+      + [Asset Selector collections](/help/assets/asset-selector-collections.md)
+    + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
   + Configure, administer, and extend [!DNL Assets] {#admin}
     + [Detect duplicate assets](/help/assets/detect-duplicate-assets.md)
     + [Developer docs and APIs references](/help/assets/developer-reference-material-apis.md)
@@ -698,6 +711,7 @@ user-guide-title: AEM as a Cloud Service
     + [Mixed Media Sets](/help/assets/dynamic-media/mixed-media-sets.md)
     + [Spin Sets](/help/assets/dynamic-media/spin-sets.md)
     + [Video in Dynamic Media](/help/assets/dynamic-media/video.md)
+    + [New Video Viewer](/help/assets/dynamic-media/new-video-viewer.md)
     + [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md)
     + [Interactive Images](/help/assets/dynamic-media/interactive-images.md)
     + [Interactive Videos](/help/assets/dynamic-media/interactive-videos.md)
@@ -879,6 +893,8 @@ user-guide-title: AEM as a Cloud Service
         + [Set layout of an Adaptive Form based on Core Components](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
         + [Create an Adaptive Form fragment](/help/forms/adaptive-form-fragments-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
+        + [Customizing Adaptive Form themes using the Theme Editor](/help/forms/customizing-themes-using-theme-editor.md)
+        + [Embed an Adaptive Forms theme in an AEM Sites theme](/help/forms/embed-adaptive-forms-theme-in-site-theme.md)
         + [Create an Adaptive Form template based on Core Components](/help/forms/template-editor-core-components.md)
         + [Create an Adaptive Form (Core Components) based on XFA Form templates](/help/forms/create-adaptive-form-using-xfa-templates.md)
         + [Generate Submission PDF (formerly Document of Record) for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
@@ -1044,9 +1060,13 @@ user-guide-title: AEM as a Cloud Service
      + [Support XDP Editing](/help/forms/interactive-communication/support-xdp-editing.md)
      + [Create Versions and Add Comments](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
      + [Copy and Paste Interactive Communication](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
+     + [Start Workflow in Interactive Communication](/help/forms/interactive-communication/start-workflow-in-interactive-communication-editor.md)
+     + [Create Dynamic Table](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
    + Associate UI {#associateui} 
      + [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
+     + [Enable and configure Associate UI for Interactive Communications](/help/forms/interactive-communication/enable-configure-associate-ui.md)
      + [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md)
+     + [Submission workflow for Associate UI — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
    + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
 + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
@@ -1089,7 +1109,17 @@ user-guide-title: AEM as a Cloud Service
     + [502 Error Page in Custom Submit Action](/help/forms/custom-submit-action-troubleshooting.md)
 + AI in AEM {#ai-in-aem}
   + [Overview](/help/ai-in-aem/overview.md)
-  + [Using MCP with AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
+  + MCP Support {#mcp-support}
+    + [Using MCP with AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
+    + Chat Applications (Web & Desktop) {#chat-applications}
+      + [Setting Up Anthropic Claude with AEM MCP](/help/ai-in-aem/mcp-support/setup-claude.md)
+      + [Setting Up OpenAI ChatGPT with AEM MCP](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
+    + Developer Tools (IDE Extensions, Desktop Apps, CLIs) {#developer-tools}
+      + [Setting Up Cursor with AEM MCP](/help/ai-in-aem/mcp-support/setup-cursor.md)
+    + Enterprise Platforms {#enterprise-platforms}
+      + [Setting Up Microsoft Copilot Studio with AEM MCP](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
+      + [Setting Up JetBrains with GitHub Copilot and AEM MCP](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
+  + [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md)
   + Agents in AEM {#agents}
     + [Overview](/help/ai-in-aem/agents/overview.md)
     + Brand Experience Agent {#brand-experience}
@@ -1102,13 +1132,17 @@ user-guide-title: AEM as a Cloud Service
       + Experience Modernization Agent {#modernization}
         + [Overview](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
         + [Getting Started](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
+        + [Getting Started with AEM authoring projects](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
         + [Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
+        + [Prompting Guide](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
+        + [Project Documentation Skill](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md)
+        + [AOE Delivery](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
       + [Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md)
     + Content Advisor Agent {#content-advisor}
       + [Overview](/help/ai-in-aem/agents/content-advisor/overview.md)
       + [Content Discovery Agent](/help/ai-in-aem/agents/content-advisor/discovery.md)
       + [Content Optimization Agent](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
-    + Governance Agent {#governance}
+    + Brand Governance Agent {#governance}
       + [Overview](/help/ai-in-aem/agents/governance/overview.md)
       + [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
   + AI Assistant {#ai-assistant}
@@ -1286,6 +1320,9 @@ user-guide-title: AEM as a Cloud Service
   + Content Fragment Selector {#content-fragment-selector}
     + [Micro-Frontend Content Fragment Selector - Overview](/help/headless/content-fragment-selector/overview.md)
     + [Content Fragment Selector - Related Properties](/help/headless/content-fragment-selector/properties.md)
+    + [Integrate with an Adobe application](/help/headless/content-fragment-selector/integrate-adobe-application.md) 
+    + [Integrate with non-Adobe or third party application](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
+    + [Integrate Content Fragment Selector using Vanilla JS](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
   + [AEM APIs for Structured Content Delivery and Management](/help/headless/apis-headless-and-content-fragments.md)
   + GraphQL API {#graphql-api}
     + [GraphQL API for Content Fragments](/help/headless/graphql-api/content-fragments.md)
@@ -1493,8 +1530,9 @@ user-guide-title: AEM as a Cloud Service
       + [Model Definitions, Fields, and Component Types](/help/implementing/universal-editor/field-types.md)
       + [Publishing](/help/implementing/universal-editor/publishing.md)
       + [Events](/help/implementing/universal-editor/events-universal-editor.md)
-      + [Filtering Components](/help/implementing/universal-editor/filtering.md)
+      + [Filters](/help/implementing/universal-editor/filtering.md)
       + [Configuring the RTE](/help/implementing/universal-editor/configure-rte.md)
+      + [Configuring Assets Selector](/help/implementing/universal-editor/configure-assets-selector.md)
       + [Customizing](/help/implementing/universal-editor/customizing.md)  
       + [Extending](/help/implementing/universal-editor/extending.md)   
       + [Architecture](/help/implementing/universal-editor/architecture.md)
@@ -1624,6 +1662,8 @@ user-guide-title: AEM as a Cloud Service
   + [Link Checker](/help/operations/link-checker.md)  
 + Compliance {#compliance}
   + [Compliance in AEM as a Cloud Service](/help/compliance/home.md)
+  + HIPAA {#hipaa}
+    + [HIPAA readiness](/help/compliance/hipaa/hipaa-readiness.md)
   + Data Privacy and Protection Readiness {#data-privacy}
     + [AEM Readiness for Data Protection and Data Privacy Regulations](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
     + [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)

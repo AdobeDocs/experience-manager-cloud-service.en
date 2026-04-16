@@ -4,6 +4,7 @@ description: The article outlines various use cases for a rule editor in an Adap
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
 ---
 # Different use cases of Rule Editor
@@ -108,11 +109,13 @@ When the user signifies living at the present residential address for less than 
 
 ![More proof requested](assets/additionalproofrequested.png)
 
-<!-- ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
+<!--
+ ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
 
 In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.1 Forms] feature pack 1, form authors and developers used to write expressions in the Scripts tab of the Edit component dialog to add dynamic behavior to Adaptive Forms. The Scripts tab is now replaced by the rule editor.
 
-Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
+Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor.
+-->
 
 ### Invoke Form Data Model service {#invoke}
 
@@ -140,11 +143,13 @@ When you write a When rule on the radio button to implement this behavior, the r
 
 In the example rule, the statement in the When section is the condition, which when returns True, executes the actions specified in the Then section.
 
-<!-- The rule appears as follows in the code editor.
+<!--
+ The rule appears as follows in the code editor.
 
 ![when-rule-example-code](assets/when-rule-example-code.png) 
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### Using a function output in a rule {#using-a-function-output-in-a-rule}
 

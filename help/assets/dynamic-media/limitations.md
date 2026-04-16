@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
 ---
 # Dynamic Media Limitations
@@ -48,8 +49,10 @@ Dynamic Media does not support the following web browser and operating system co
 
 ## End of support for Secure Socket Layer 2.0 and 3.0 and Transport Layer Security 1.0 and 1.1 {#tls}
 
-<!-- CQDOC-19433 (original ticket)
-and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
+<!--
+ CQDOC-19433 (original ticket)
+and CQDOC-19792 (removed as per this ticket December 5, 2022)
+-->
 
 Effective April 30, 2024, Adobe Dynamic Media is ending support for the following:
 

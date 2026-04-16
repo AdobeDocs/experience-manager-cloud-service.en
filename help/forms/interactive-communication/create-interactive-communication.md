@@ -4,6 +4,7 @@ description: Create personalized, data-driven communications. Explore key featur
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
 ---
 

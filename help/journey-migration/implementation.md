@@ -157,7 +157,8 @@ Gathering data can help you plan the migration activities and associated tasks. 
 * Total amount of time taken for top-up [ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)
 
 
-<!-- Alexandru: hiding this for now
+<!--
+ Alexandru: hiding this for now
 
 One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, because it is added to the overall extraction timeline and it may not be required to run it during top-ups.
 

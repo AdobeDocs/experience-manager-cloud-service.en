@@ -9,7 +9,7 @@ role: Admin, Developer
 
 # Add a custom domain name {#adding-custom-domain-name}
 
-Learn how to add a custom domain name using **Domain Settings** in Cloud Manager.
+You can add a custom domain name using **Domain Settings** in Cloud Manager.
 
 ## Requirements {#requirements}
 
@@ -29,9 +29,13 @@ You can add a custom domain name from the [Domain Settings page](#adding-cdn-set
 
 When adding a custom domain name, the domain is served using the most specific, valid certificate. If multiple certificates have the same domain, then the most recently updated is chosen. Adobe recommends that you manage certificates such that there are no overlapping domains.
 
-The steps for either method described in this document are based on Fastly. If you used a different CDN (Content Delivery Network), configure your domain with the CDN you have chosen to use.
+The steps for either method described in this article are based on Fastly. If you used a different CDN (Content Delivery Network), configure your domain with the CDN you have chosen to use.
 
 ## Add a custom domain name {#adding-custom-domain-name-settings}
+
+See also [Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed) for *Edge Delivery Services*.
+
+**To add a custom domain name:**
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 
@@ -53,9 +57,11 @@ The steps for either method described in this document are based on Fastly. If y
 
 1. Click **Create**.
 
+1. On the **Domain Settings** page, to the right of the domain name, click ![Ellipsis - More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), then click **Verify**.
+
 1. In the **Verify domain** dialog box, in the **What certificate type do you plan on using with this domain?** drop-down list, select one of the following options:
 
-   | Certificate type option | Description |
+   | Certificate type | Description |
    | --- | --- |
    | Adobe managed (DV) SSL certificate | Select this certificate type if you want to use a DV (Domain Validation) certificate. This option is ideal for most cases, providing basic domain validation. Adobe manages and renews the certificate automatically. |
    | Customer managed (OV/EV) SSL certificate | Select this certificate type if you intend to use an EV/OV SSL certificate to secure the domain. This option offers enhanced security with OV (Organization Validation) or EV (Extended Validation). Use if stricter verification, higher trust levels, or custom control over the certificates is required. |
@@ -193,7 +199,8 @@ dig TXT _aemverification.example.com -t txt
 <!--
 ## Next Steps {#next-steps}
 
-Now that you created your TXT entry, you can verify your domain name status. Proceed to the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to continue setting up your custom domain name. -->
+Now that you created your TXT entry, you can verify your domain name status. Proceed to the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to continue setting up your custom domain name.
+-->
 
 
 ><!-- The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS server, thus saving time. -->
