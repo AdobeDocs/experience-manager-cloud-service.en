@@ -617,7 +617,13 @@ A multiselect component type presents multiple items for selection in a drop-dow
 
 #### Number {#number}
 
-A number component type allows for the input of a number. It offers additional validation types.
+A number component type allows for the input of a number. It offers an additional configuration.
+
+|Configuration|Value Type|Description|Required|
+|---|---|---|---|
+|`valueFormat`|`string`|The type of number to store can be `long` (default) or `double`.|No|
+
+It also offers additional validation types.
 
 |Validation Type|Value Type|Description|Required|
 |---|---|---|---|

@@ -182,7 +182,8 @@ To configure submit action based on Swagger Open API specification for Adaptive 
 
 >[!ENDTABS]
 
-<!-- ### Configure submit action based on Service Rest Endpoint {#config-service-endpoint-auth}
+<!--
+ ### Configure submit action based on Service Rest Endpoint {#config-service-endpoint-auth}
 
 
 
@@ -194,7 +195,8 @@ To configure submit action based on Swagger Open API specification for Adaptive 
 6. Specify the REST endpoint URL.
 7. Select the Configuration you have created for your Service Rest Endpoint Authentication Type and the Content Types. To know more about Authentication Type and the Content Types, visit [configure data sources](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
     ![Configuring Rest Endpoint](assets/rest-service-endpoint-config.png)
-8. Click Done. -->
+8. Click Done.
+-->
 
 
 
