@@ -3,6 +3,7 @@ title: HIPAA readiness for Adobe Experience Manager as a Cloud Service
 description: Learn about Experience Manager as a Cloud Service support for the HIPAA Regulations, and how to comply when implementing a new AEM as a Cloud Service project.
 feature: Compliance
 role: Admin, Architect, Developer, Leader
+exl-id: 9928811e-3487-430a-9e2f-04959460c95f
 ---
 # HIPAA readiness for Adobe Experience Manager as a Cloud Service {#hipaa-readiness-for-adobe-experience-manager-as-a-cloud-service}
 
