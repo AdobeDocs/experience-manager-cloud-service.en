@@ -18,6 +18,8 @@ Content Advisor brings intelligent, context-aware discovery directly into the au
 
 ![Content Advisor banner image](assets/content-advisor-banner-image-updated.png)
 
+Adobe Experience Manager (AEM) Assets also integrates natively with Adobe Express, allowing you to discover, access, and use assets from AEM Assets directly within the Express interface using Content Advisor. For more information, see [Use Content Advisor to access AEM Assets in Adobe Express](/help/assets/native-integration-adobe-express.md).
+
 
 ## Prerequisites {#prerequisites}
 
