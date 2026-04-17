@@ -7,12 +7,6 @@ exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
 ---
 # Local Development with AI Tools {#local-development-with-ai-tools}
 
->[!IMPORTANT]
->
->The features described in this article are **beta**. Getting early access to features that Adobe is developing lets customers and partners provide feedback (by emailing [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) and shape product development. It also helps them prepare to adopt new capabilities before general availability. 
->
->Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk. 
-
 >[!NOTE]
 >
 >This article focuses on Local Developmenet with AI tooling for **AEM Java stack development**. For Edge Delivery Services, see [Developing with AI Tools](https://www.aem.live/developer/ai-coding-agents). 
@@ -46,7 +40,7 @@ Four complementary components address this:
 
 Skills are instruction sets that encode multi-step development workflows. When invoked, the AI follows the skill's procedure rather than relying solely on general knowledge, producing consistent, convention-compliant results.
 
-Adobe publishes AEM as a Cloud Service skills in the **[adobe/skills](https://github.com/adobe/skills/tree/beta/skills/aem/cloud-service/skills)** repository on the `beta` branch since this feature is not yet generally available:
+Adobe publishes AEM as a Cloud Service skills in the **[adobe/skills](https://github.com/adobe/skills/tree/main/plugins/aem/cloud-service)** repository:
 
 |Skill|Purpose|
 |---|---|
@@ -197,6 +191,11 @@ Any MCP client can connect by pointing to `http://localhost:4502/bin/mcp` with a
 
 ## Dispatcher MCP Server {#dispatcher-mcp-server}
 
+>[!IMPORTANT]
+>
+>This feature is **beta**. Getting early access to features that Adobe is developing lets customers and partners provide feedback (by emailing [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) and shape product development. It also helps them prepare to adopt new capabilities before general availability. 
+>
+>Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk. 
 The Dispatcher MCP server is bundled with the AEM Dispatcher SDK. It enables AI tools to validate Dispatcher and Apache HTTPD configuration, trace request handling, and inspect cache behavior against a Dispatcher instance running locally in Docker.
 
 Unlike the dispatcher skill, the Dispatcher MCP server exposes tools only: seven MCP tools and no prompts or resources.
