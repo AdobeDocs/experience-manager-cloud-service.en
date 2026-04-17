@@ -711,6 +711,8 @@ For more information about how to use Cloud Manager to manage your environments,
 
 RDEs support taking a snapshot of the current state of code and content, which can be restored at a later time. Snapshots are useful when syncing code that may need to be reverted, or when switching between development of different features. It is also possible to restore only the mutable content from a snapshot as a known starting point for testing.
 
+Each RDE environment has a maximum of seven snapshots. Snapshots that are marked for deletion but are still within the seven-day retention period continue to count toward that limit until they are fully removed. If you reach the limit and need capacity for a new snapshot right away, use forced deletion as described in [Delete a snapshot](#delete-snapshot) instead of a standard delete.
+
 The supported commands are described below. For a full list of flags and options, use `aio aem rde snapshot --help`, or for help on a specific subcommand, use `aio aem rde snapshot <subcommand> --help`.
 
 ### List snapshots {#list-snapshots}
@@ -756,6 +758,12 @@ To mark a snapshot for deletion, run:
 To mark all snapshots as deleted at once, use the `-a` flag:
 
 `aio aem rde snapshot delete -a`
+
+To delete a snapshot immediately (skipping the retention period so it no longer counts toward the environment snapshot limit), add the `-f` flag (or `--force`):
+
+`aio aem rde snapshot delete <name> -f`
+
+Forced deletion cannot be undone with `undelete`. Use `aio aem rde snapshot delete --help` for the full set of options when combining flags (for example, deleting all snapshots with force).
 
 ### Undelete a snapshot {#undelete-snapshot}
 
