@@ -194,9 +194,13 @@ To understand how to use a default error handler using the [Rule Editor's Invoke
 1. Create a condition in the **When** section of the rule. For example, **When[Name of Pet ID field]** is changed. Select is changed from the **Select State** drop-down list.
 1. In the **Then** section, select **[!UICONTROL Invoke Service]** from the **Select Action** drop-down list.
 1. Select a **Post service** and its corresponding data bindings from the **Input** section. For example, to validate **Pet ID**, select a **Post service** as **GET /pet/{petId}** and select **Pet ID** in the **Input** section.
-1. Select the data bindings from the **Output** section. Select **Pet Name** in the **Output** section.
-1. Select **[!UICONTROL Default Error Handler]** from the **Error Handler** section. 
-1. Click **[!UICONTROL Done]**.
+1. Click **[!UICONTROL Add Success Handler]**. The **[!UICONTROL Invoke Service Success Handler]** rule editor opens.
+1. In the **[!UICONTROL Then]** section, add a rule to set the value of **[!UICONTROL Pet Name]** to **`name`** using the eventpayload data.
+1. Click **[!UICONTROL Done]** to close the **[!UICONTROL Invoke Service Success Handler]** editor.
+1. Click **[!UICONTROL Add Failure Handler]**. The **[!UICONTROL Invoke Service Failure Handler]** rule editor opens.
+1. In the **[!UICONTROL Then]** section, select **[!UICONTROL Function Output]** and choose **[!UICONTROL Default Error Handler]**.
+1. Click **[!UICONTROL Done]** to close the **[!UICONTROL Invoke Service Failure Handler]** editor.
+1. Click **[!UICONTROL Done]** to save the rule.
 
  ![add a default error handler for a field validation checks in a form](/help/forms/assets/default-error-handler.png)
 
@@ -305,12 +309,15 @@ To use a custom error handler using the **[!UICONTROL Rule Editor's Invoke Servi
 1. Create a condition in the **When** section of the rule. For example, When **[Name of Pet ID field]** is changed, select **is changed** from the **Select State** drop-down list.
 1. In the **Then** section, select **[!UICONTROL Invoke Service ]** from the **Select Action** drop-down list.
 1. Select a **Post service** and its corresponding data bindings from the **Input** section. For example, to validate **Pet ID**, select a **Post service** as **GET /pet/{petId}** and select **Pet ID** in the **Input** section.
-1. Select the data bindings from the **Output** section. For example, Select **Pet Name** in the **Output** section.
-1. Select **[!UICONTROL Custom Error Handler]** from the **[!UICONTROL Error Handler]** section. 
-1. Click **[!UICONTROL Done]**.
+1. Click **[!UICONTROL Add Success Handler]**. The **[!UICONTROL Invoke Service Success Handler]** rule editor opens.
+1. In the **[!UICONTROL Then]** section, add a rule to set the value of **[!UICONTROL Pet Name]** to **`name`** using the eventpayload data.
+1. Click **[!UICONTROL Done]** to close the **[!UICONTROL Invoke Service Success Handler]** editor.
+1. Click **[!UICONTROL Add Failure Handler]**. The **[!UICONTROL Invoke Service Failure Handler]** rule editor opens.
+1. In the **[!UICONTROL Then]** section, select **[!UICONTROL Function Output]** and choose **[!UICONTROL Custom Error Handler Function]**.
+1. Click **[!UICONTROL Done]** to close the **[!UICONTROL Invoke Service Failure Handler]** editor.
+1. Click **[!UICONTROL Done]** to save the rule.
 
- ![add custom error handler in a form to handle error responses](/help/forms/assets/custom-error-handler.png)s
-
+ ![add custom error handler in a form to handle error responses](/help/forms/assets/custom-error-handler.png)
 
 As a result of this rule, the values you enter for **Pet ID** checks validation for **Pet Name** using external service invoked by REST endpoint. If the validation criteria based on the data source fail, the error messages are displayed at the field level.
 
