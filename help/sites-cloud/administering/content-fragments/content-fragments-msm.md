@@ -86,7 +86,7 @@ To propagate modifications from the source to your Live Copy.
 
 ### Synchronize {#synchronize}
 
-To synchronize your content updates from the source to your Live Copy: 
+To trigger Synchronization that pulls the content updates from your Live Copy to the source: 
 
 1. In the Content Fragment console navigate to the location of your fragment source.
 1. Select your fragment.
@@ -95,7 +95,7 @@ To synchronize your content updates from the source to your Live Copy:
 
 ### Rollout {#rollout}
 
-To trigger a roll out, which synchronizes the source updates with your Live Copy:
+To trigger a Rollout that pushes the source updates to your Live Copy:
 
 1. In the Content Fragment console navigate to the location of your fragment Live Copy.
 1. Select your fragment.
