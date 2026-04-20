@@ -21,7 +21,7 @@ To configure Claude for AEM MCP, follow the steps below:
 >
 >The Claude user interface is subject to change and is not definitive. These instructions are for illustrative purposes.
 
-1. Open the account menu in the lower-left corner of the Claude web app and choose **Settings** to open the Settings area. Your browser may show the destination as the general settings URL.
+1. Open the account menu in the lower-left corner of the Claude web app and choose **Settings** to open the Settings area.
 
    ![Account menu in Claude with Settings selected.](assets/claude-1.png)
 
