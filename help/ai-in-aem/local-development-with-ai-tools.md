@@ -7,12 +7,6 @@ exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
 ---
 # Local Development with AI Tools {#local-development-with-ai-tools}
 
->[!IMPORTANT]
->
->The features described in this article are **beta**. Getting early access to features that Adobe is developing lets customers and partners provide feedback (by emailing [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) and shape product development. It also helps them prepare to adopt new capabilities before general availability. 
->
->Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk. 
-
 >[!NOTE]
 >
 >This article focuses on Local Developmenet with AI tooling for **AEM Java stack development**. For Edge Delivery Services, see [Developing with AI Tools](https://www.aem.live/developer/ai-coding-agents). 
@@ -46,7 +40,7 @@ Four complementary components address this:
 
 Skills are instruction sets that encode multi-step development workflows. When invoked, the AI follows the skill's procedure rather than relying solely on general knowledge, producing consistent, convention-compliant results.
 
-Adobe publishes AEM as a Cloud Service skills in the **[adobe/skills](https://github.com/adobe/skills/tree/beta/skills/aem/cloud-service/skills)** repository on the `beta` branch since this feature is not yet generally available:
+Adobe publishes AEM as a Cloud Service skills in the **[adobe/skills](https://github.com/adobe/skills/tree/main/plugins/aem/cloud-service)** repository:
 
 |Skill|Purpose|
 |---|---|
@@ -63,7 +57,7 @@ Choose the method that matches your AI coding tool. Installing skills once makes
 
 ```bash
 # Add the Adobe Skills marketplace (one-time setup)
-/plugin marketplace add adobe/skills#beta
+/plugin marketplace add adobe/skills
 
 # Install all available skills
 /plugin install aem-cloud-service@adobe-skills
@@ -73,17 +67,17 @@ Choose the method that matches your AI coding tool. Installing skills once makes
 
 ```bash
 # Install all available skills
-npx skills add https://github.com/adobe/skills/tree/beta/skills/aem/cloud-service --all
+npx skills add https://github.com/adobe/skills/tree/main/skills/aem/cloud-service --all
 ```
 
 #### Upskill (GitHub CLI extension) {#upskill-github-cli-extension}
 
 ```bash
 # Install the gh-upskill extension (one-time setup)
-gh extension install trieloff/gh-upskill
+gh extension install ai-ecoverse/gh-upskill
 
 # Install all available skills
-gh upskill adobe/skills --branch beta --path skills/aem/cloud-service --all
+gh upskill adobe/skills --path skills/aem/cloud-service --all
 ```
 
 ### Use the ensure-agents-md Skill {#use-the-ensure-agents-md-skill}
@@ -144,7 +138,7 @@ The Model Context Protocol (MCP) is an open standard that allows AI coding tools
 
 ### Install the Content Package {#install-the-content-package}
 
-Download the content package from the [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Abeta) and install `com.adobe.aem:com.adobe.aem.mcp-server-contribs-content` into your local Quickstart using Package Manager at `/crx/packmgr`.
+Download the content package from the [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3) and install `com.adobe.aem:com.adobe.aem.mcp-server-contribs-content` into your local Quickstart using Package Manager at `/crx/packmgr`.
 
 **Compatibility:** Validated with AEM SDK `2026.2.24678.20260226T154829Z-260200` and newer.
 
@@ -197,6 +191,12 @@ Any MCP client can connect by pointing to `http://localhost:4502/bin/mcp` with a
 
 ## Dispatcher MCP Server {#dispatcher-mcp-server}
 
+>[!IMPORTANT]
+>
+>This feature is **beta**. Getting early access to features that Adobe is developing lets customers and partners provide feedback (by emailing [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) and shape product development. It also helps them prepare to adopt new capabilities before general availability. 
+>
+>Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk. 
+
 The Dispatcher MCP server is bundled with the AEM Dispatcher SDK. It enables AI tools to validate Dispatcher and Apache HTTPD configuration, trace request handling, and inspect cache behavior against a Dispatcher instance running locally in Docker.
 
 Unlike the dispatcher skill, the Dispatcher MCP server exposes tools only: seven MCP tools and no prompts or resources.
@@ -204,7 +204,7 @@ Unlike the dispatcher skill, the Dispatcher MCP server exposes tools only: seven
 ### Prerequisites {#prerequisites}
 
 - Docker Desktop 4.x or later, installed and running
-- AEM Dispatcher SDK downloaded from the [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Abeta)
+- AEM Dispatcher SDK downloaded from the [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3)
 
 >[!NOTE]
 >
