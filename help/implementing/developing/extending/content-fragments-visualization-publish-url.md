@@ -1,6 +1,6 @@
 ---
 title: Visual Content Fragments - deliver with the Publish URL
-description: Use the publish URL to deliver visual Content Fragments.
+description: Use the Publish URL to deliver Visual Content Fragments.
 feature: Developing, Content Fragments
 role: Admin, Developer
 ---
@@ -16,7 +16,7 @@ This URL returns a *self-contained HTML document* (including inline CSS and stru
 
 ## Embedding Techniques — Overview {#embedding-techniques-overview}
 
-There are three distinct approaches for consuming the publish URL on a host page. Each comes with distinct trade-offs around style isolation, layout behavior, accessibility, and complexity.
+There are three distinct approaches for consuming the Publish URL on a host page. Each comes with distinct trade-offs around style isolation, layout behavior, accessibility, and complexity.
 
 | | Inline Element | iframe | Custom Element + Shadow DOM |
 |--- |--- |--- |--- |
@@ -26,7 +26,7 @@ There are three distinct approaches for consuming the publish URL on a host page
 | Accessibility (a11y) | Best — content is in the main DOM tree, fully traversable by screen readers and assistive technology | Moderate — separate browsing context can confuse screen reader navigation; requires `title` attribute | Good — content is within the same document; shadow DOM is traversable by modern assistive technologies |
 | SEO | Poor — content loaded via JS `fetch()` is not indexed by most crawlers | Poor — iframe content is typically not indexed in the parent page context | Poor — same as inline; JS-fetched content is not crawlable |
 | JavaScript runtime | Shared — same window/document context; risk of script collisions if the fragment contains `<script>` tags | Isolated — separate window context; no risk of collision | Shared — same window context but DOM-scoped; scripts inside shadow root execute in the host context |
-| Cross-origin support | Requires CORS headers on the publish URL (the service configures these) | Works natively — iframes load cross-origin content without CORS | Requires CORS headers on the publish URL (same as inline) |
+| Cross-origin support | Requires CORS headers on the Publish URL (the service configures these) | Works natively — iframes load cross-origin content without CORS | Requires CORS headers on the Publish URL (same as inline) |
 | Implementation complexity | Minimal — a few lines of JS | Trivial — zero JS required; pure HTML | Low — ~20 lines of JS for the Custom Element definition, reusable across the page |
 | Best suited for | Prototyping, trusted same-origin content, contexts where layout integration is critical and CSS conflicts are manageable | Quick embedding, sandboxed content, cross-origin scenarios where CORS is unavailable, content that must be fully isolated | Production use — balances isolation, layout participation, and accessibility (recommended for AEM Core Components and external sites) |
 
@@ -34,7 +34,7 @@ There are three distinct approaches for consuming the publish URL on a host page
 
 The simplest approach: 
 
-1. fetch the publish URL 
+1. fetch the Publish URL 
 1. inject the HTML into a container element
 
 An example of inline element embedding:
@@ -61,7 +61,7 @@ When to use:
 >
 >**CSS collision risk** 
 >
->The fragment’s inline styles (including its `<style>` blocks, font-face declarations, and element selectors) will merge into the host page’s cascade. 
+>The fragment’s inline styles (including its `<style>` blocks, font-face declarations, and element selectors) merge into the host page’s cascade. 
 >
 >This can cause unintended style overrides in both directions. 
 >
@@ -69,7 +69,7 @@ When to use:
 
 ### iframe {#iframe}
 
-Load the publish URL directly as the `src` of an `<iframe>`. No JavaScript is needed.
+Load the Publish URL directly as the `src` of an `<iframe>`. No JavaScript is needed.
 
 An example of iframe embedding:
 
@@ -101,7 +101,7 @@ An example of a lightweight approach is:
 >
 >The `onload` auto-resize approach above only works for **same-origin** iframes.
 >
->For **cross-origin** publish URLs, you would need a `postMessage`-based solution or to set a fixed height.
+>For **cross-origin** Publish URLs, you would need a `postMessage`-based solution or to set a fixed height.
 
 When to use:
 
@@ -112,9 +112,9 @@ When to use:
 
 ### Custom Element + Shadow DOM (Recommended) {#custom-element-and-shadow-dom-recommended}
 
-Define a reusable `<cf-visualization>` Custom Element that fetches the publish URL and injects the HTML into an encapsulated Shadow DOM root.
+Define a reusable `<cf-visualization>` Custom Element that fetches the Publish URL and injects the HTML into an encapsulated Shadow DOM root.
 
-This provides:
+This element provides:
 
 * Shadow DOM isolation
   * The fragment’s markup and styles are encapsulated in a shadow root, preventing collisions with the host page’s CSS cascade.
@@ -129,7 +129,7 @@ This provides:
 >
 >This is the recommended approach for production use and is the technique used by AEM Core Components.
 
-To define the Custom Element include the following script once per page. All `<cf-visualization>` instances on the page will use this definition:
+To define the Custom Element, include the following script once per page. All `<cf-visualization>` instances on the page will use this definition:
 
 ```javascript
 <script>
@@ -171,7 +171,7 @@ When to use:
 
 ## Integration with Edge Delivery Services (Embed Block) {#integration-with-edge-services-embed-block}
 
-In Edge Delivery Services, the publish URL is consumed through an **[Embed block](https://sidekick-library--aem-block-collection--adobe.aem.page/tools/sidekick/library.html?plugin=blocks&path=/block-collection/embed&index=0)**, which renders it as an `<iframe>`.
+In Edge Delivery Services, the Publish URL is consumed through an **[Embed block](https://sidekick-library--aem-block-collection--adobe.aem.page/tools/sidekick/library.html?plugin=blocks&path=/block-collection/embed&index=0)**, which renders it as an `<iframe>`.
 
 1. Ensure the Embed block exists in your project.
 
@@ -188,13 +188,13 @@ In Edge Delivery Services, the publish URL is consumed through an **[Embed block
 
    | embed |
    |--- |
-   | (paste the publish URL as a hyperlink) |
+   | (paste the Publish URL as a hyperlink) |
 
-   Alternatively, if your project or Sidekick is configured with the Embed block in its block library, you can insert it via the slash menu and paste the publish URL into the block content.
+   Alternatively, if your project or Sidekick is configured with the Embed block in its block library, you can insert it via the slash menu and paste the Publish URL into the block content.
 
 1. Result
 
-   The Embed block renders the publish URL inside an `<iframe>`. The fragment content loads in full CSS isolation within the EDS page layout.
+   The Embed block renders the Publish URL inside an `<iframe>`. The fragment content loads in full CSS isolation within the EDS page layout.
 
 ## Integration - AEM Sites with Core Components {#integration-aem-sites-with-core-components}
 
@@ -214,7 +214,7 @@ How it works:
 
 * Publish mode:
 
-  On the published page (`wcmmode.disabled`), the HTML template renders an inline script that fetches from the publish URL and injects the HTML into a Shadow DOM root.
+  On the published page (`wcmmode.disabled`), the HTML template renders an inline script that fetches from the Publish URL and injects the HTML into a Shadow DOM root.
 
   An example Core Component Visual Content Fragment (templates.html):
 
@@ -251,7 +251,7 @@ How it works:
 
   Publish URL Format:
 
-  The Sling Model (`ContentFragmentImpl`) builds the publish URL using the following pattern:
+  The Sling Model (`ContentFragmentImpl`) builds the Publish URL using the following pattern:
 
   ```html
   /adobe/experimental/previewtemplates-expires-20260301/contentFragments/{templateId}/{fragmentId}/{variation}.html
@@ -261,7 +261,7 @@ How it works:
 
 ## Integration with External Sites {#integration-with-external-sites}
 
-For non-AEM websites use the [Customer Element + Shadow DOM](#custom-element-and-shadow-dom-recommended) technique. This gives you a clean, declarative integration without framework dependencies.
+For non-AEM websites, use the [Customer Element + Shadow DOM](#custom-element-and-shadow-dom-recommended) technique. This gives you a clean, declarative integration without framework dependencies.
 
 An example is:
 
@@ -313,12 +313,12 @@ An example is:
 | Concern | Details | 
 |--- |--- |
 | CORS | The Content Fragment Visualization service configures CORS on the `/adobe/**` path with configurable allowed origins.<br>The [Inline Element (fetch + innerHTML)](#inline-element-fetch-and-innerhtml) 1 and [Customer Element + Shadow DOM](#custom-element-and-shadow-dom-recommended) techniques (which use `fetch()`) require the host page’s origin to be in the allowed list. <br>The [iFrame](#iframe) technique does not require CORS. | 
-| CSP / X-Frame-Options | The service does not set `Content-Security-Policy` or `X-Frame-Options` headers on the published HTML. If your CDN or dispatcher adds these headers, verify that they permit framing (for [iFrame](#iframe)) or `fetch()` access (for inline/shadow DOM) from your host origins. | 
+| CSP/X-Frame-Options | The service does not set `Content-Security-Policy` or `X-Frame-Options` headers on the published HTML. If your CDN or Dispatcher adds these headers, verify that they permit framing (for [iFrame](#iframe)) or `fetch()` access (for inline/shadow DOM) from your host origins. | 
 | Content trust | The published HTML is pre-rendered from authored Content Fragment data using [Handlebars templates](/help/implementing/developing/extending/content-fragments-visualization-templates.md) managed by the service. It does not include user-generated scripts. However, as with any innerHTML injection, ensure you trust the source origin. | 
 
 ### Choose the appropriate technique {#choose-the-appropriate-technique}
 
-Use the following as a decision guide to help you choose the appropriate techniquie:
+Use the following as a decision guide to help you choose the appropriate technique:
 
 | Scenario | Solution |
 |--- |--- |

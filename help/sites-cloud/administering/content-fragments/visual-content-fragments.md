@@ -1,6 +1,6 @@
 ---
 title: Visual Content Fragments
-description: Learn how to preview and publish visual Content Fragments using HTML templates. 
+description: Learn how to preview and publish Visual Content Fragments using HTML templates. 
 feature: Content Fragments
 role: User, Developer
 ---
@@ -16,7 +16,7 @@ A **Generic Template** is always available within AEM as a default, but you can 
 
 ## Create a Template {#create-a-template}
 
-The templates used for previewing and delivering visual Content Fragments are HTML templates developed using Handlebars.
+The templates used for previewing and delivering Visual Content Fragments are HTML templates developed using Handlebars.
 
 For details on developing your own templates see [Visual Content Fragments - Templates](/help/implementing/developing/extending/content-fragments-visualization-templates.md).
 

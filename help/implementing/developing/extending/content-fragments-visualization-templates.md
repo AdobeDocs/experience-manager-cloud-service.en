@@ -16,7 +16,7 @@ After creating your templates you can then:
 
 * [Use your templates in AEM](#using-a-template-in-aem)
 
-* Use the [Publish URL of your visual Content Fragments](#using-the-publish-url)
+* Use the [Publish URL of your Visual Content Fragments](#using-the-publish-url)
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ For details of how to use your template in AEM see:
 
 ### Using the Publish URL {#using-the-publish-url}
 
-Once you have created visual Content Fragments using the template you can then use the [Publish URL of your visual Content Fragments](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md).
+Once you have created visual Content Fragments using the template you can then use the [Publish URL of your Visual Content Fragments](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md).
 
 ## Handlebars - the (very) basics {#handlebars-the-very-basics}
 
