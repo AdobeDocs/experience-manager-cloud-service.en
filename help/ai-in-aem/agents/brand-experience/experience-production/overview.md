@@ -45,10 +45,3 @@ The [Communication Creation](/help/ai-in-aem/agents/brand-experience/experience-
 The agent is able to work with other agent skills, examples include:
 
 * Get source assets from the Experience Advisory Agent
-
-## Activation {#activation}
-
-To activate and gain access to the Experience Production Agent you need to contact Adobe. To get started you can contact:
-
-* `experience-production-agent@adobe.com`
-* or reach out to your account team
