@@ -21,6 +21,8 @@ Additionally, if the CDN cannot contact its origin, you can write a rule that re
 
 All these rules, declared in a configuration file in source control, are deployed by using the Cloud Manager [config pipeline](/help/operations/config-pipeline.md). Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
 
+For additional YAML examples that combine request transformations, redirects, authentication conditions, and related CDN behaviors, see [CDN configuration snippets for common scenarios](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
+
 ## Order of Evaluation {#order-of-evaluation}
 
 Functionally, the various features mentioned previously are evaluated in the following sequence:
