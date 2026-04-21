@@ -9,7 +9,7 @@ exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
 ---
 # Launches for Content Fragments {#launches-for-content-fragments}
 
-In Adobe Experience Manager (AEM) as a Cloud Service, Launches enable you to efficiently develop content for a future release.
+In Adobe Experience Manager (AEM) as a Cloud Service, a Launch enables you to efficiently develop content for a future release.
 
 A *Launch* is created to allow you to make changes in preparation for future publication, at the same time as maintaining your current content. For Content Fragments this means that you are effectively editing two versions at the same time: content that is currently published, and a version of that content, to be published at a time in the future. Once that time arrives you can replace the content of the original Content Fragments and publish the new versions. 
 
