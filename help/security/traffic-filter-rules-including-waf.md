@@ -466,6 +466,8 @@ data:
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
 
+For more rate limiting examples, including grouping counters by autonomous system (`clientAsName`) instead of individual IP addresses, see [CDN configuration snippets for common scenarios](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
+
 ## CVE Rules {#cve-rules}
 
 If WAF is licensed, Adobe automatically applies blocking rules to protect against many known CVEs (Common Vulnerabilities and Exposures) and new CVEs may be added soon after being discovered. Customers should not and need not configure CVE rules themselves.
