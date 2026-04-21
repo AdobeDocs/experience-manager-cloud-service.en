@@ -559,6 +559,7 @@ user-guide-title: AEM as a Cloud Service
         + [Language Copy Wizard](/help/sites-cloud/administering/translation/wizard.md)
         + [Identifying Content to Translate](/help/sites-cloud/administering/translation/rules.md)
         + [Configuring the Translation Integration Framework](/help/sites-cloud/administering/translation/integration-framework.md)
+        + [Configure AI translation integration](/help/sites-cloud/administering/translation/ai-translation-integration.md)
         + [Connecting to Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md)
         + [Translation Best Practices](/help/sites-cloud/administering/translation/best-practices.md)
     + [Administering Tags](/help/sites-cloud/administering/tags.md)
