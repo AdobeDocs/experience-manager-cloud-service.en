@@ -13,6 +13,7 @@ Automate the translation of page content and assets to create and maintain multi
 
 * **Human translation:** Content is sent to your translation provider and translated by professional translators. When complete, the translated content is returned and imported into AEM. When your translation provider is integrated with AEM, content is automatically sent between AEM and the translation provider.
 * **Machine translation:** The machine translation service immediately translates your content.
+* **Agentic translation (AI translation integration):** Connect AEM to a large language model through Translation Cloud Services and use the same translation projects and workflows as with other providers. You can upload style guides so AEM generates translation rules per locale. See [Configure AI translation integration](ai-translation-integration.md).
 
 >[!TIP]
 >
