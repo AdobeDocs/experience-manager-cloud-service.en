@@ -8,7 +8,7 @@ exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
 ---
 # Use Content Advisor to access AEM content in Adobe applications{#content-advisor-aem-assets-adobe-applications}
 
-Content Advisor delivers a unified content discovery experience across Adobe applications. Natively integrated with applications such as Adobe Workfront (coming soon), AJO B2C (coming soon), AEM Sites and others, Content Advisor brings content (assets and Content Fragments) together in a single, intelligent interface. It enables you to effortlessly discover, browse, and reuse the most relevant content, right within your workflow, so you can move faster without breaking context.
+Content Advisor delivers a unified content discovery experience across Adobe applications. Natively integrated with applications such as Adobe Workfront, AJO B2C (coming soon), AEM Sites and others, Content Advisor brings content (assets and Content Fragments) together in a single, intelligent interface. It enables you to effortlessly discover, browse, and reuse the most relevant content, right within your workflow, so you can move faster without breaking context.
 
 >[!IMPORTANT]
 > 
@@ -18,12 +18,14 @@ Content Advisor brings intelligent, context-aware discovery directly into the au
 
 ![Content Advisor banner image](assets/content-advisor-banner-image-updated.png)
 
+Adobe Experience Manager (AEM) Assets also integrates natively with Adobe Express, allowing you to discover, access, and use assets from AEM Assets directly within the Express interface using Content Advisor. For more information, see [Use Content Advisor to access AEM Assets in Adobe Express](/help/assets/native-integration-adobe-express.md).
+
 
 ## Prerequisites {#prerequisites}
 
 * Access to an AEM Assets as a Cloud Service environment.
 
-* Access to an AEM Sites environment where you have authored Content Fragments.
+* Access to an AEM Sites environment with authored Content Fragments (required only for working with Content Fragments). This is not required for accessing binary assets or AEM Assets.
 
 ## Intelligent asset discovery with Content Advisor {#intelligent-asset-discovery-content-advisor}
 
@@ -190,7 +192,9 @@ The following table illustrates the Content Advisor feature support across Adobe
 
 | Application                          | Support for brief upload for searching Assets | Support for suggested content panel while searching Assets | Support for Dynamic Media panel while searching Assets | Support for searching Content Fragments |
 |--------------------------------------|----------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|------------------------------------------|
-| AEM Sites (Document-Based Authoring) |  &#10003;                                            | &minus;                                                         | &#10003;                                                      | &minus;                                        |
-| AEM Sites (Document Authoring)                       |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      | &minus;                                        |
+| [AEM Sites - Document Authoring](https://www.aem.live/docs/authoring-guide#document-authoring)                      |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      | &minus;                                        |
+| [AEM Sites - Universal Editor](https://www.aem.live/docs/authoring-guide#universal-editor-in-aem-sites)                     |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      |  &minus;                                        |
+| AEM Sites - [GoogleDrive](https://www.aem.live/docs/authoring-guide#google-drive)/[Sharepoint authoring](https://www.aem.live/docs/authoring-guide#microsoft-sharepoint) |  &#10003;                                            | &minus;                                                         | &#10003;                                                      | &minus;                                        |
 | AEM Sites (Content Fragment Editor)              |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      |  &minus;                                        |
-| AEM Sites (Universal Editor)                     |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      |  &minus;                                        |
+| Adobe Workfront Workflow                     |  &#10003;                                            | &#10003;                                                         | &minus;                                                      |  &#10003;                                        |
+| Adobe Workfront Planning                     |  &#10003;                                            | &#10003;                                                         | &minus;                                                      |  &#10003;                                        |

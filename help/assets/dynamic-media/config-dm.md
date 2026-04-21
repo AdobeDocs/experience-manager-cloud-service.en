@@ -25,6 +25,10 @@ See also [Configure a Dynamic Media Company alias account](/help/assets/dynamic-
 >
 >Additionally, customers using AEM 6.5 should be aware that the Dynamic Media (Scene7) stack is not HIPAA-ready.
 
+>[!NOTE]
+>
+>See also [HIPAA readiness for Adobe Experience Manager as a Cloud Service ](/help/compliance/hipaa/hipaa-readiness.md) for the documentation that Adobe provides to help you understand HIPAA readiness, and become compliant with the regulations. 
+
 ## Architecture diagram of Dynamic Media {#architecture-diagram-of-dynamic-media}
 
 The following architecture diagram describes how Dynamic Media works.
