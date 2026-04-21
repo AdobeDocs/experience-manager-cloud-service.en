@@ -40,6 +40,9 @@ To upload your new HTML template:
 1. Select **+** to upload your template from an HTML file (`.html`). A dialog will allow you to **Browse** your local file system and select your template file.
 1. Once uploaded two views of the template are shown for you to review:
 
+   * left: a basic rendering without content
+   * right: the handlebars code
+
    ![Review HTML template on upload](/help/sites-cloud/administering/content-fragments/assets/cf-visual-html-template-upload-review.png)
 
 1. Select **Next** to continue.

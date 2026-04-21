@@ -95,13 +95,14 @@ The key concepts of Handlebars:
 
 ## Template context reference {#template-context-reference}
 
-When your template is rendered, it receives a context object containing all the data about your Content Fragment.
+When your template is rendered, it receives a context object containing all the data about your Content Fragment. This will cover:
 
-### Main Content Fragment {#main-content-fragment}
+* the fragment that you have selected
+* all further fragments referenced from that selected fragment
 
-<!-- CQDOC-23232 confirm terminology -->
+### Content Fragment {#content-fragment}
 
-The structure of the context object for the main Content Fragment:
+The structure of the context object for the (selected) Content Fragment:
 
 | Variable | Type | Description |
 |--- |--- |--- |
@@ -110,9 +111,9 @@ The structure of the context object for the main Content Fragment:
 | `allFields` | List | Array of `{name, value}` for iteration |
 | `hasFields` | Boolean | `true` if the fragment has fields |
 
-### Properties structure (Main and referenced fragments) {#properties-structure-main-and-referenced-fragments}
+### Properties structure {#properties-structure}
 
-The `properties` object has the same shape for the main fragment and for each referenced fragment.
+The `properties` object has the same structure for the selected fragment and for each referenced fragment.
 
 | Property | Type | Description | Example |
 |--- |--- |--- |--- |
@@ -379,7 +380,7 @@ When a field references multiple Content Fragments:
 
 ### Multi-valued Asset references {#multi-valued-asset-references}
 
-Asset fields (for example, images and documents) are pre-rendered as HTML. Multi-valued assets become arrays:
+[Content Reference](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference) fields configured for content types that are assets (for example, images and documents) are pre-rendered as HTML. Multi-valued assets become arrays:
 
 ```handlebars
 <!-- Single asset -->
@@ -912,7 +913,10 @@ Best practices include:
 1. Always use triple braces for field values. 
 
    * Field values are pre-rendered HTML. 
-   * Double braces will show raw HTML tags as plain text.
+
+     >[!NOTE]
+     >
+     >Double braces show raw HTML tags as plain text.
 
    ```handlebars
    <!-- CORRECT -->
@@ -1217,12 +1221,13 @@ Both helpers validate attribute names before including them in the output.
 Valid attribute names:
 
 * Must start with a letter (a-z, A-Z)
-* Can contain letters, digits, hyphens, and underscores
+* Can only contain letters, digits, hyphens, and underscores; see the [Naming Conventions](/help/implementing/developing/introduction/naming-conventions.md)
 * Case-insensitive
-* Valid:
-  * `class`, `id`, `data-value`, `aria-label`, `my_attr`, `dataIndex1`
-* Invalid:
-  * `123-attr`, `-class`, `@special`, `$money`
+* For example:
+  * Valid:
+    * `class`, `id`, `data-value`, `aria-label`, `my_attr`, `dataIndex1`
+  * Invalid:
+    * `123-attr`, `-class`, `@special`, `$money`
 
 Invalid attribute names are silently skipped with a warning in the logs:
 

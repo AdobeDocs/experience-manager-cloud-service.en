@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # Visual Content Fragments - Deliver with the Publish URL {#visual-content-fragments-deliver-with-the-publish-url}
 
-When a visual Content Fragment is published through the Content Fragment Visualization service, the rendered HTML is made available via the Adobe Experience Manager (AEM) as a Cloud Service publish tier at a URL with this structure:
+When a visual Content Fragment is published, the rendered HTML is made available via the Adobe Experience Manager (AEM) as a Cloud Service publish tier at a URL with this structure:
 
 ```html
 https://publish-p<programId>-e<envId>.adobeaemcloud.com/adobe/stable/previewtemplates/contentFragments/<templateId>/<fragmentId>/<variation>.html
@@ -182,7 +182,7 @@ In Edge Delivery Services, the Publish URL is consumed through an **[Embed block
    cp -r aem-block-collection/blocks/embed/ your-eds-project/blocks/embed/
    ```
 
-1. Author the embed in the Document Authoring editor
+1. Author the embed in the Document Authoring editor (in Edge Delivery Services)
 
    In Document Authoring, blocks are represented as tables. To add a visual Content Fragment embed:
 
@@ -214,7 +214,7 @@ How it works:
 
 * Publish mode:
 
-  On the published page (`wcmmode.disabled`), the HTML template renders an inline script that fetches from the Publish URL and injects the HTML into a Shadow DOM root.
+  On the published page (`wcmmode.disabled`), the HTL template renders an inline script that fetches from the Publish URL and injects the HTML into a Shadow DOM root.
 
   An example Core Component Visual Content Fragment (templates.html):
 
