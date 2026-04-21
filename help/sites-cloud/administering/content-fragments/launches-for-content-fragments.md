@@ -19,7 +19,7 @@ A *Launch* is created to allow you to make changes in preparation for future pub
 >
 >For full details see [Launches for Pages](/help/sites-cloud/authoring/launches/overview.md).
 
-You create a *Launch*, then edit and update your Content Fragments in your *Launch*. If changes are made to the *Source* fragments during this phase, you can copy them to the *Launch* with the *Rebase* operation. When ready, *Promote* duplicates the launch content back to the source. You can then activate your source fragments, either manually or automatically (dependent on fields set when creating and editing the launch). You can also specify whether referenced fragments are to be included in this process.
+You create a *Launch*, then edit and update your Content Fragments in your *Launch*. If changes are made to the *Source* fragments during this phase, you can copy the *Source* (including changes) to the *Launch* with the **[Rebase](#rebase-a-launch-from-source)** operation. When ready, *Promote* duplicates the launch content back to the source. You can then activate your source fragments, either manually or automatically (dependent on fields set when creating and editing the launch). You can also specify whether referenced fragments are to be included in this process.
 
 For example, the seasonal product fragments of your online store are updated quarterly so that the featured products align with the current season. To prepare for the next quarterly update, you can create a launch of the appropriate fragments. Throughout the quarter, the following changes are accumulated in the launch copy:
 
@@ -218,6 +218,8 @@ It is recommended that before any Rebase or Promote action you always compare th
 
 ## Jobs history {#jobs-history}
 
+To view details of past **Compare to Source** jobs that have been run:
+
 1. Navigate to the Content Fragments console.
 
 1. Open the **Launches** tab.
@@ -239,7 +241,7 @@ It is recommended that before any Rebase or Promote action you always compare th
 
 ## Rebase a Launch (from Source) {#rebase-a-launch-from-source}
 
-When updates have been made to the source fragments and you want to copy these changes to your launch:
+When updates have been made to the source fragments, you can to copy the source (including changes) to your launch with the **Rebase** action:
 
 1. Navigate to the Content Fragments console.
 
