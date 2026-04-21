@@ -181,7 +181,7 @@ To manage the Content Fragments in your launch, and also edit their content:
 
 ## Compare Launch to Source {#compare-launch-to-source}
 
-It is recommended that before any Rebase or Promote action you always compare the source and launch to confirm the changes and their impact on your content (both actions overwrite the target content):
+It is recommended that before any **[Rebase](#rebase-a-launch-from-source)** or **[Promote](#promote-a-launch-to-source)** action you always compare the source and launch to confirm the changes and their impact on your content (both actions overwrite the target content):
 
 1. Navigate to the Content Fragments console.
 
@@ -241,7 +241,7 @@ To view details of past **Compare to Source** jobs that have been run:
 
 ## Rebase a Launch (from Source) {#rebase-a-launch-from-source}
 
-When updates have been made to the source fragments, you can to copy the source (including changes) to your launch with the **Rebase** action:
+When updates have been made to the source fragments, you can copy the source (including changes) to your launch with the **Rebase** action:
 
 1. Navigate to the Content Fragments console.
 
@@ -255,9 +255,17 @@ When updates have been made to the source fragments, you can to copy the source 
 >
 >You can also **Rebase** a launch from **[Compare Launch to Source](#compare-launch-to-source)**.
 
+>[!NOTE]
+>
+>It is recommended that before any **Rebase** or **Promote** action you always [compare the source and launch](#compare-launch-to-source) to confirm the changes and their impact on your content - as both actions overwrite the target content.
+
 ## Promote a Launch (to Source) {#promote-a-launch-to-source}
 
 When your launch is ready to be published it should be copied to the source. You can either do this in the console, or configure the settings for it to happen automatically at a specific date and time.
+
+>[!NOTE]
+>
+>It is recommended that before any **Rebase** or **Promote** action you always [compare the source and launch](#compare-launch-to-source) to confirm the changes and their impact on your content - as both actions overwrite the target content.
 
 ### Promote Manually {#promote-manually}
 
