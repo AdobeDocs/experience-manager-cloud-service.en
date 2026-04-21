@@ -133,7 +133,6 @@ Instead of binding logic directly to the fields, the form uses an event-based ap
 
 **Implementation using Dispatch Event and On Trigger Event**
 
-
 >[!VIDEO](https://video.tv.adobe.com/v/3471610/dispatch-trigger-final/?quality=12&learn=on)
 
 The login fragment is added to the form, containing predefined fields for Username and Password. A rule is configured on the **Get OTP** button to display the **Validation Panel**, which includes the input field for entering and validating the OTP.
@@ -152,6 +151,10 @@ When the user submits the form with correct credentials and a valid OTP, the log
 
 Support for custom events allowing developers to create and trigger custom events that can be used as conditions in rule editor.
 
+### Simplified grammar for OOTB and custom events
+
+The enhanced rule editor includes a **simplified grammar** for event-based rules that use **Dispatch Event** and **On Trigger Event**. Previously, this grammar applied only to **custom** events; out-of-the-box (OOTB) events were not supported, which often required **When** rules for OOTB triggers and **On Trigger Event** rules for custom events. OOTB events are now supported with the same simplified grammar, enabling a consistent authoring pattern without switching between **When** and **On Trigger Event** based on whether the trigger is OOTB or custom.
+
 ## Context-Based Rule Execution for Repeatable Panels
 
 Adaptive Forms support context-aware rule execution for repeatable panels. This allows rules to apply specifically to the panel instance where the user interacts, rather than affecting all instances or defaulting to the last one.
@@ -169,6 +172,26 @@ The below screenshot displays the rule for the **Number of Product** field insid
 When the quantity is changed, the rule fetches the unit price of the selected product and calculates the total cost for that panel only. 
 
 ![Context aware rule output](/help/forms/assets/context-aware-rule-output.png)
+
+## Combined When conditions with the File Attachment component
+
+The enhanced rule editor supports **When** rules that combine the **File Attachment** component with other conditions using **AND** or **OR** logic. **Add Condition** in the **When** clause can include file attachment state together with checks on other fields or panel validation, so an action runs only when every selected condition is met.
+
+**Scenario**: A pet registration form collects **Pet ID**, **Pet Name**, and **Pet Category**, and includes an **Add Photo** file attachment. The form runs an action, for example, clear or refresh **Add Photo**, when the attachment changes **and** the configured conditions on the other fields (their values) are satisfied.
+
+**Implementation using When conditions with the File Attachment component in the Rule Editor**
+
+A rule is configured on the target object (such as **Add Photo**). The **When** section uses **Add Condition** to combine the file attachment trigger with conditions on one or more other fields, so the action depends on both the attachment and those field values.
+
+The below screenshot displays the **When** condition with multiple conditions and **Add Condition** options:
+
+![When rule with multiple conditions and Add Condition](/help/forms/assets/rule-editor-when-file-attachment-conditions.png)
+
+When the **When** clause evaluates as true for the configured **AND** or **OR** logic, the rule runs the configured action.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3483735/file-attachment/?quality=12&learn=on)
+
+When **Pet ID** contains `101`, the **Add Photo** attachment clears; similarly, when **Pet Name** contains `a`, the attachment clears.
 
 ## URL and Browser Parameter-Based Rules in Adaptive Forms
 
