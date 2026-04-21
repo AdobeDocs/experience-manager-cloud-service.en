@@ -4,7 +4,7 @@ description: Using CIF components to enable [!DNL Live Search] Product Listing P
 exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
-index: no
+index: false
 ---
 
 # [!DNL Live Search] CIF Component {#live-search-cif-component}
@@ -141,7 +141,7 @@ Multiple files must be updated to enable [!DNL Live Search] functionality. Edit 
   ~ limitations under the License.
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
   "use strict";
-
+  
   class ProductList {
     constructor() {
       const stateObject = {

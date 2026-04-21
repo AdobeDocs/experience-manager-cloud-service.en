@@ -253,6 +253,8 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.04.02 Release Notes](/help/release-notes/universal-editor/2026/2026-04-02.md)
+      + [2026.03.26 Release Notes](/help/release-notes/universal-editor/2026/2026-03-26.md)
       + [2026.03.19 Release Notes](/help/release-notes/universal-editor/2026/2026-03-19.md)
       + [2026.03.12 Release Notes](/help/release-notes/universal-editor/2026/2026-03-12.md)
       + [2026.03.05 Release Notes](/help/release-notes/universal-editor/2026/2026-03-05.md)
@@ -308,6 +310,7 @@ user-guide-title: AEM as a Cloud Service
 + Security {#security}
   + [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md)
   + [Configuring Advanced Networking for AEM as a Cloud Service](/help/security/configuring-advanced-networking.md)
+  + [Network Connectivity Test](/help/security/network-connectivity-test.md)
   + [IMS Support for AEM as a Cloud Service](/help/security/ims-support.md)
   + [Changes in User Group and Product Profile Synchronization](/help/security/changes-in-user-group-and-product-profile-synchronization.md)
   + [Migrating to External Identity and Dynamic Group Membership](/help/security/migrating-to-external-identity.md)
@@ -891,6 +894,7 @@ user-guide-title: AEM as a Cloud Service
         + [Set layout of an Adaptive Form based on Core Components](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
         + [Create an Adaptive Form fragment](/help/forms/adaptive-form-fragments-core-components.md)
         + [Create themes for an Adaptive Form - Core Components](/help/forms/using-themes-in-core-components.md)
+        + [Customizing Adaptive Form themes using the Theme Editor](/help/forms/customizing-themes-using-theme-editor.md)
         + [Embed an Adaptive Forms theme in an AEM Sites theme](/help/forms/embed-adaptive-forms-theme-in-site-theme.md)
         + [Create an Adaptive Form template based on Core Components](/help/forms/template-editor-core-components.md)
         + [Create an Adaptive Form (Core Components) based on XFA Form templates](/help/forms/create-adaptive-form-using-xfa-templates.md)
@@ -1057,9 +1061,13 @@ user-guide-title: AEM as a Cloud Service
      + [Support XDP Editing](/help/forms/interactive-communication/support-xdp-editing.md)
      + [Create Versions and Add Comments](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
      + [Copy and Paste Interactive Communication](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
+     + [Start Workflow in Interactive Communication](/help/forms/interactive-communication/start-workflow-in-interactive-communication-editor.md)
+     + [Create Dynamic Table](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)
    + Associate UI {#associateui} 
      + [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
+     + [Enable and configure Associate UI for Interactive Communications](/help/forms/interactive-communication/enable-configure-associate-ui.md)
      + [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md)
+     + [Submission workflow for Associate UI — IC Generate PDF Output](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
    + [Frequently Asked Questions](/help/forms/interactive-communications-faq.md)
 + Forms Centric Workflows {#create-form-centric-workflows}
     + [Introduction to Forms-centric workflow](/help/forms/aem-forms-workflow.md)
@@ -1128,6 +1136,7 @@ user-guide-title: AEM as a Cloud Service
         + [Getting Started with AEM authoring projects](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
         + [Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
         + [Prompting Guide](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
+        + [Project Documentation Skill](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md)
         + [AOE Delivery](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
       + [Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md)
     + Content Advisor Agent {#content-advisor}
@@ -1482,6 +1491,7 @@ user-guide-title: AEM as a Cloud Service
     + [Customizing Site Templates and Themes](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
     + [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md)
     + [Disallow the Serialization of ResourceResolvers via Sling Model Exporter](/help/implementing/developing/disallow-resourceresolver-serialization.md)
+    + [AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md)
     + Full Stack AEM Development {#full-stack}
       + [Getting Started Developing AEM Sites - WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
       + [Structure of the AEM UI](/help/implementing/developing/introduction/ui-structure.md)
@@ -1654,6 +1664,8 @@ user-guide-title: AEM as a Cloud Service
   + [Link Checker](/help/operations/link-checker.md)  
 + Compliance {#compliance}
   + [Compliance in AEM as a Cloud Service](/help/compliance/home.md)
+  + HIPAA {#hipaa}
+    + [HIPAA readiness](/help/compliance/hipaa/hipaa-readiness.md)
   + Data Privacy and Protection Readiness {#data-privacy}
     + [AEM Readiness for Data Protection and Data Privacy Regulations](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
     + [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)

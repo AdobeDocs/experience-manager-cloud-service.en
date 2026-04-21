@@ -2,7 +2,7 @@
 title: Experience Production Agent Overview
 description: Learn how the Experience Production Agent in AEM helps you accelerate your content creation and automatically orchestrate changes.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
 ---
 
@@ -45,10 +45,3 @@ The [Communication Creation](/help/ai-in-aem/agents/brand-experience/experience-
 The agent is able to work with other agent skills, examples include:
 
 * Get source assets from the Experience Advisory Agent
-
-## Activation {#activation}
-
-To activate and gain access to the Experience Production Agent you need to contact Adobe. To get started you can contact:
-
-* `experience-production-agent@adobe.com`
-* or reach out to your account team

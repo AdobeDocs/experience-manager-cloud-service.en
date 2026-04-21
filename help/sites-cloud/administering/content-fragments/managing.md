@@ -303,7 +303,7 @@ So, if we start with:
 ```xml
 FolderA 
     FragmentA (inside FolderA)
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA)
 
 FolderB
@@ -315,7 +315,7 @@ Copying FragmentA to FolderC, would result in:
 ```xml
 FolderA 
     FragmentA (inside FolderA)
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA)
 
 FolderB
@@ -324,7 +324,7 @@ FolderB
 
 FolderC
     Copy_of_FragmentA
-    | 
+    |
     |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
 ```
 
@@ -337,7 +337,7 @@ So, if we start with:
 ```xml
 FolderA 
     FragmentA (inside FolderA)
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA)
 
 
@@ -350,7 +350,7 @@ Copying FragmentA to FolderC, would result in:
 ```xml
 FolderA 
     FragmentA (inside FolderA) 
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA) 
 
 FolderB 
@@ -359,7 +359,7 @@ FolderB
 
 FolderC
    Copy_of_FragmentA
-   | 
+   |
    |___./Copy_of_FragmentB (referenced by FragmentA)
    Copy_of_FragmentB
 ```
@@ -536,7 +536,7 @@ To check a fragment in:
 1. Select **Check In** from the toolbar.
 1. Confirm the **Check In** action.
 
-## Forced (Administrator) Check In {#forced-adminstrator-check-in}
+### Forced (Administrator) Check In {#forced-adminstrator-check-in}
 
 It can happen that the user who has checked out a Content Fragment is unavailable to check in the fragment. 
 
