@@ -58,7 +58,8 @@ Have a look at the [July 2021 Release Overview](https://video.tv.adobe.com/v/335
 
 ### New features available in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
-<!-- TBD: Not sure about GA of these enh. Shall check with the team.
+<!--
+ TBD: Not sure about GA of these enh. Shall check with the team.
 
 * A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
 

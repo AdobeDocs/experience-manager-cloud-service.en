@@ -47,7 +47,7 @@ Follow the steps below to create video renditions in Screens as a Cloud Service 
    >Use the Encoding name that starts with "screens-". Only these video renditions are considered to play the video experience in Screens as a Cloud Service. Enter the bitrate that works your videos (2500 kbps for 720-px video and 5000 kbps for 1080 px).
 
    >[!NOTE]
-   >Multiple video renditions can be added with varying width/height/bitrate to work your videos. All the screens, renditions are downloaded by the Screens devices, even though the device plays only video rendition.
+   >Multiple video renditions can be added with varying width/height/bitrate to work your videos.
 
 1. Click **Save**.
 

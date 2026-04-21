@@ -4,7 +4,7 @@ description: Design Dynamic, Data-Driven Communications with Ease with AEM Forms
 feature: Release Information
 role: Admin
 hide: yes
-index: no
+index: false
 hidefromtoc: yes
 exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
 ---
