@@ -1,12 +1,12 @@
 ---
-title: CDN configuration snippets for common scenarios
+title: CDN Configuration Snippets for Common Scenarios
 description: Copy-ready YAML patterns for the Adobe-managed CDN and customer-managed CDN setups, including edge authentication, redirects, cache variation, traffic shaping, and rate limits.
 feature: Dispatcher
 exl-id: 7c4e2a91-3d8f-41b2-9c0e-8f1a2b3c4d5e
 role: Admin
 ---
 
-# CDN configuration snippets for common scenarios {#cdn-configuration-snippets}
+# CDN Configuration Snippets for Common Scenarios {#cdn-configuration-snippets}
 
 This article collects practical `cdn.yaml` patterns for AEM as a Cloud Service. Use them together with the feature documentation for [CDN traffic rules](/help/implementing/dispatcher/cdn-configuring-traffic.md), [customer-managed CDN credentials](/help/implementing/dispatcher/cdn-credentials-authentication.md), and [traffic filter rules including WAF](/help/security/traffic-filter-rules-including-waf.md). Deploy snippets with a Cloud Manager [config pipeline](/help/operations/config-pipeline.md).
 
@@ -14,15 +14,13 @@ This article collects practical `cdn.yaml` patterns for AEM as a Cloud Service. 
 >
 >Replace host names, paths, IP ranges, keys, and thresholds with values that match your program. Test changes in a non-production environment before promoting them.
 
-## Customer-managed CDN (BYOCDN) {#customer-managed-cdn}
+## Customer Managed CDN {#customer-managed-cdn}
 
-These examples assume you already declared an `edge` authenticator (see [Customer-managed CDN HTTP header value](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)) and reference its name in each rule.
+### Setting Up Edge Authentication for Some Domains Only {#edge-auth-selected-hosts}
 
-### Require `X-AEM-Edge-Key` only for selected hostnames {#edge-auth-selected-hosts}
+Problem: Setup edge authentication for some domains (eg. example.com) but for others (like the default domain allow unrestricted access)
 
-**Goal:** Enforce edge authentication for traffic that presents a specific site hostname in `X-Forwarded-Host`, while leaving other hostnames on the publish tier unchanged (for example, during a gradual rollout or when a hostname bypasses the customer CDN).
-
-**Approach:** Match the first hostname from `X-Forwarded-Host` using the `forwardedDomain` request property, and run the `authenticate` action only when it equals your target hostname.
+Solution: Require X-AEM-Edge-Key authentication only when first domain from X-Forwarded-Host is equal to "example.com".
 
 ```yaml
 kind: "CDN"
@@ -32,26 +30,21 @@ data:
     authenticators:
       - name: edge-auth
         type: edge
-        edgeKey1: ${{CDN_EDGEKEY_PRIMARY}}
-        edgeKey2: ${{CDN_EDGEKEY_SECONDARY}}
+        edgeKey1: ${{CDN_EDGEKEY_1}}
+        edgeKey2: ${{CDN_EDGEKEY_2}}
     rules:
-      - name: edge-auth-selected-host
-        when:
-          allOf:
-            - { reqProperty: tier, equals: "publish" }
-            - { reqProperty: forwardedDomain, equals: "www.example.com" }
+      - name: edge-auth-rule
+        when: { reqProperty: forwardedDomain, equals: "example.com" }
         action:
           type: authenticate
           authenticator: edge-auth
 ```
 
-For safer cutovers, you can temporarily add an extra header or path condition as described under [Migrating safely](/help/implementing/dispatcher/cdn-credentials-authentication.md#migrating-safely).
+### Setting Up Edge Authentication for Requests Not Coming from VPN IPs {#edge-auth-trusted-ips}
 
-### Require `X-AEM-Edge-Key` except for trusted client IP ranges {#edge-auth-trusted-ips}
+Problem: Setup edge authentication for BYOCDN but allow direct access to publish domain only for VPN IPs
 
-**Goal:** Allow designated networks (for example, monitoring tools or a corporate egress range) to reach the Adobe CDN publish hostname without presenting `X-AEM-Edge-Key`, while still requiring the header for the general internet.
-
-**Approach:** Authenticate publish traffic only when the client IP is **not** in your allow list using the `notIn` predicate described in the [Traffic Filter Rules condition structure](/help/security/traffic-filter-rules-including-waf.md#condition-structure).
+Solution: Require X-AEM-Edge-Key authentication only when client IP is not in the list of VPN IPs
 
 ```yaml
 kind: "CDN"
@@ -61,31 +54,62 @@ data:
     authenticators:
       - name: edge-auth
         type: edge
-        edgeKey1: ${{CDN_EDGEKEY_PRIMARY}}
-        edgeKey2: ${{CDN_EDGEKEY_SECONDARY}}
+        edgeKey1: ${{CDN_EDGEKEY_1}}
+        edgeKey2: ${{CDN_EDGEKEY_2}}
     rules:
-      - name: edge-auth-outside-trusted-cidrs
-        when:
-          allOf:
-            - { reqProperty: tier, equals: "publish" }
-            - reqProperty: clientIp
-              notIn:
-                - "203.0.113.0/24"
-                - "198.51.100.14/32"
+      - name: edge-auth-rule
+        when: { reqProperty: clientIp, notIn: ["10.0.0.1", "11.0.0.0/24", "<other VPN IPs>"] }
         action:
           type: authenticate
           authenticator: edge-auth
 ```
 
-Ensure the customer CDN forwards accurate `X-Forwarded-For` values so `clientIp` reflects the real end user, as described in [Customer CDN points to AEM managed CDN](/help/implementing/dispatcher/cdn.md#point-to-point-cdn).
+## Redirects {#redirects}
 
-## Redirects and URL normalization {#redirects}
+### Redirecting from APEX Domain to www {#apex-to-www}
 
-Patterns use [server-side redirects](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).
+```yaml
+redirects:
+  rules:
+    - name: non-www-to-www-redirect
+      when:
+        reqProperty: domain
+        doesNotMatch: '^www\.'
+      action:
+        type: redirect
+        status: 301
+        location:
+          join:
+            format: 'https://www.%s%s'
+            args:
+              - reqProperty: domain
+              - reqProperty: url
+```
 
-### Apex domain to `www` {#apex-to-www}
+### Modifying the Cache Key {#cache-key}
 
-Send visitors from `example.com` to `https://www.example.com`, preserving path and query string:
+There is no direct action to modify the cache but given that the url is part of the CDN cache key the url can be modified (for example by adding a query param).
+
+```yaml
+data:
+  requestTransformations:
+    rules:
+      - name: set-request-different-cache-curl
+        when:
+          allOf:
+            - reqProperty: tier
+              equals: publish
+            - reqHeader: user-agent
+              matches: curl
+        actions:
+          - type: set
+            queryParam: cache
+            value: 'curl'
+```
+
+### Redirecting to a Normalised Path {#trailing-slash}
+
+Redirect www.example.com/path/ to www.example.com/path
 
 ```yaml
 kind: "CDN"
@@ -93,47 +117,27 @@ version: "1"
 data:
   redirects:
     rules:
-      - name: apex-to-www
-        when: { reqProperty: domain, equals: "example.com" }
-        action:
-          type: redirect
-          status: 301
-          location:
-            reqProperty: url
-            transform:
-              - op: replace
-                match: '^https?://example\.com(.*)$'
-                replacement: 'https://www.example.com\1'
-```
-
-### Remove a trailing slash from the path {#trailing-slash}
-
-Normalize `https://www.example.com/path/` to `https://www.example.com/path`:
-
-```yaml
-kind: "CDN"
-version: "1"
-data:
-  redirects:
-    rules:
-      - name: strip-trailing-slash
+      - name: remove-trailing-slash
         when:
-          reqProperty: path
-          matches: '^/.+/$'
+          allOf:
+            - reqProperty: tier
+              equals: publish
+            - reqProperty: domain
+              equals: www.example.com
+            - reqProperty: originalPath
+              matches: ^/(.+)/$
         action:
           type: redirect
           status: 301
           location:
-            reqProperty: url
+            reqProperty: originalPath
             transform:
               - op: replace
-                match: '/$'
-                replacement: ''
+                match: ^/(.+)/$
+                replacement: https://www.example.com/\1
 ```
 
-## Influence caching through the URL {#cache-key}
-
-The CDN cache key includes the URL the edge receives. If you must segment cache entries without changing AEM content, add (or normalize) a query parameter with a [request transformation](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations):
+### Extracting Information from a JSON Cookie {#json-cookie}
 
 ```yaml
 kind: "CDN"
@@ -141,21 +145,21 @@ version: "1"
 data:
   requestTransformations:
     rules:
-      - name: add-cache-variation-param
-        when:
-          reqProperty: path
-          like: /content/experience-fragments/*
+      - name: options-response
+        when: { reqProperty: tier, equals: publish }
         actions:
-          - type: set
-            queryParam: af_segment
-            value: mobile
+        - type: set
+          reqHeader: x-mycookie-info
+          value:
+            reqCookie: mycookie
+            transform: 
+            - 'base64decode'
+            - { op: 'replace', match: '"info":\s*"([^"]*)"', replacement: '\1'} 
 ```
 
-Prefer tuning `Cache-Control` headers from AEM or Dispatcher when possible; use this pattern when a CDN-only variation is required.
+## Cross Origin Setup {#cross-origin}
 
-## Read values from a structured cookie {#json-cookie}
-
-When a cookie stores JSON, copy a field into a request header for logging or downstream use by chaining `set` and `transform` actions on `reqCookie`:
+### Serving OPTIONS Requests from the CDN {#options-from-cdn}
 
 ```yaml
 kind: "CDN"
@@ -163,70 +167,56 @@ version: "1"
 data:
   requestTransformations:
     rules:
-      - name: extract-user-from-session-cookie
+      - name: options-response
         when:
-          reqProperty: path
-          like: /api/*
+          allOf: 
+            - { reqProperty: path, like: /mypathi*  }
+            - { reqProperty: method, equals: "OPTIONS" }
+            - { reqHeader: Origin, equals: "https://example.com" }
         actions:
-          - type: set
-            var: session_json
-            value:
-              reqCookie: session
-          - type: transform
-            var: session_json
-            op: replace
-            match: '^.*"userId"\s*:\s*"([^"]+)".*$'
-            replacement: '\1'
-          - type: set
-            reqHeader: x-user-id-from-cookie
-            value:
-              var: session_json
+          - type: respond
+            status: 200
+            reason: "OK"
+            headers:
+              content-type: 'text/plain'
+              access-control-allow-origin: { reqHeader: Origin }
+              access-control-allow-methods: "*"
+              access-control-allow-headers: "*"
 ```
 
-Validate the regular expression against real cookie values; escape characters as needed.
+## Traffic Filters {#traffic-filters}
 
-## Cross-origin (CORS) traffic {#cross-origin}
+### Rate Limiting ASN {#rate-limit-asn}
 
-Browsers may issue `OPTIONS` preflight requests before cross-origin `POST` or custom-header calls. Typical steps:
+Problem: Rate limiting by IPs can be inefficient in case of a DOS attack that is well distributed (volume per IP might be so low that it is impossible to distingue from legit traffic).
 
-1. Confirm traffic filter rules do not block `OPTIONS` for the affected paths.
-2. Add [response transformations](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) that set `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods`, and related headers when `reqProperty: method` equals `OPTIONS` or when your API responses require CORS headers.
-
-Because AEM often participates in the preflight response body, validate the full browser flow against stage before production rollout. Dispatcher-focused CORS samples are also available for self-hosted publish stacks in [Dispatcher caching and CORS](/help/headless/deployment/dispatcher-caching.md).
-
-## Traffic filters and rate limits {#traffic-filters}
-
-### Rate limit by autonomous system (ASN) {#rate-limit-asn}
-
-Distributed attacks can generate low volumes per IP, which makes per-IP counters less effective. Aggregate instead by autonomous system name using `clientAsName` (see [request properties](/help/security/traffic-filter-rules-including-waf.md#condition-structure)) inside `groupBy`:
+Solution: Rate limit per client as name which is the network name associated to the IP (google has many IPs but a unique ASN). It will help blocking the group of IPs behind the attack. You should also consider if customer is using a VPN as it might block VPN as well.
 
 ```yaml
 kind: "CDN"
 version: "1"
 data:
+  requestTransformations:
+    rules:
+      - name: log-on-request
+        when: "*"
+        actions:
+          - type: set
+            logProperty: client_as_name
+            value:
+              reqProperty: clientAsName
   trafficFilters:
     rules:
-      - name: rate-limit-by-asn
-        when:
-          reqProperty: tier
-          equals: "publish"
-        rateLimit:
-          limit: 400
-          window: 10
-          penalty: 300
-          count: all
-          groupBy:
-            - reqProperty: clientAsName
-        action: block
+    - name: limit-requests-client-as-name
+      when:
+        reqProperty: tier
+        matches: "author|publish"
+      rateLimit:
+        limit: 60
+        window: 10
+        penalty: 300
+        count: all
+        groupBy:
+          - reqProperty: clientAsName
+      action: block
 ```
-
->[!CAUTION]
->
->Many users can share the same autonomous system (for example, a large ISP or a shared corporate egress). Monitor CDN logs after enabling ASN-based limits to ensure legitimate audiences are not affected.
-
-## See also {#see-also}
-
-* [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
-* [Configuring traffic at the CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
-* [CDN credentials and authentication](/help/implementing/dispatcher/cdn-credentials-authentication.md)
-* [Traffic filter rules including WAF](/help/security/traffic-filter-rules-including-waf.md)
