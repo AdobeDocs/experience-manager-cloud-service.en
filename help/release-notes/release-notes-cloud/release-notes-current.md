@@ -195,7 +195,7 @@ Learn more in the [Local Development with AI Tools](/help/ai-in-aem/local-develo
 
 #### AEM Edge Functions (Beta Program) {#edge-functions}
 
-AEM Edge Functions allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
+[AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md) allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
 
 Common use cases include:
 
