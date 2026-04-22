@@ -100,7 +100,7 @@ data:
 
 ```
 
-For more edge authentication patterns (for example, limiting validation to certain `X-Forwarded-Host` values or exempting trusted client IP ranges), see [CDN configuration snippets for common scenarios](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
+For additional code snippets for common scenarios, see the [CDN Configuration Snippets for Common Scenarios](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md) article.
 
 See [Using Config Pipelines](/help/operations/config-pipeline.md#common-syntax) for a description of the properties above the `data` node. The `kind` property value should be *CDN* and the `version` property should be set to `1`.
 

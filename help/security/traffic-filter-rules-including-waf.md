@@ -466,7 +466,7 @@ data:
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
 
-For more rate limiting examples, including grouping counters by autonomous system (`clientAsName`) instead of individual IP addresses, see [CDN configuration snippets for common scenarios](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
+For additional code snippets for advanced scenarios, see the [CDN Configuration Snippets for Common Scenarios](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md) article.
 
 ## CVE Rules {#cve-rules}
 
