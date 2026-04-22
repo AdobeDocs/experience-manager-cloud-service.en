@@ -16,7 +16,7 @@ Multi Site Manager (MSM), and the Live Copy functionality, enables you to use th
 <!-- CQDOC-23473 - feature is currently beta so page is hidden, see metadata -->
 <!-- CQDOC-23473 - screenshots -->
 <!-- CQDOC-23473 - only mentioned once in ToC, add entries -->
-
+<!-- CQDOC-23473 - will work on folders -->
 
 <!-- CQDOC-23473 - feature is currently beta remove Caution for GA -->
 
@@ -54,6 +54,8 @@ MSM for Content Fragments, combined with functionality within the Content Fragme
 >MSM for Content Fragments is also available when using [Content Fragments via the **Assets** console](/help/assets/content-fragments/content-fragments-msm.md). 
 
 ## Create a Live Copy {#create-a-live-copy}
+
+<!-- CQDOC-23473 - exclude children or referenced content fragments? -->
 
 To create a Live Copy of your Content Fragment:
 
