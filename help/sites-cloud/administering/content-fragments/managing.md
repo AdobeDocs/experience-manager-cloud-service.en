@@ -187,12 +187,12 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 * **[Check Out and Check In](#check-out-and-check-in)**
 * **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
 
-<!-- CQDOC-23473 - activate cross-reference when GA -->
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
 <!--
-* [Reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/content-fragments-msm.md) actions:
-  * **[Create Live Copy](/help/sites-cloud/administering/content-fragments/content-fragments-msm.md#create-a-live-copy)**
-  * **[Synchronize](/help/sites-cloud/administering/content-fragments/content-fragments-msm.md#synchronize)**
-  * **[Rollout](/help/sites-cloud/administering/content-fragments/content-fragments-msm.md#rollout)**
+* [Reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md) actions:
+  * **[Create Live Copy](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#create-a-live-copy)**
+  * **[Synchronize](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#synchronize)**
+  * **[Rollout](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#rollout)**
 * **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
 -->
 
