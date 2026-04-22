@@ -12,7 +12,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 25520 {#25520}
 
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on April 23, 2026. The previous maintenance release was release 25194.
+Summarized below are the continuous improvements for maintenance release 25520, which was publicly released on April 23, 2026. The previous maintenance release was release 25194.
 
 The 2026.4.0 feature activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
