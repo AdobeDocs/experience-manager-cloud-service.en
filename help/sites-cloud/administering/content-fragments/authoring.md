@@ -27,6 +27,7 @@ This editor provides:
 * Ability to [view version details](#view-version-history) in the editor. You can also revert to a selected version.
 * Ability to [view, and open, parent references](#view-parent-references).
 * A hierarchical view of the Content Fragment, and its references, using the [Structure tree](#structure-tree).
+* Ability to [cancel, and revert to, inheritance](#cancel-and-revert-to-inheritance), when the fragment is part of a [Live Copy](/help/sites-cloud/administering/content-fragments/content-fragments-msm.md)
 
 >[!NOTE]
 >
