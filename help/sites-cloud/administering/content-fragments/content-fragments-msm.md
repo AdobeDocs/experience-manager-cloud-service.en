@@ -80,6 +80,8 @@ To view properties and the status of the source and your Live Copy:
    The right information panel will open. 
 1. Select the tab for **Live Copy Details**.
 
+   ![Information on a Live Copy](/help/sites-cloud/administering/content-fragments/assets/cf-msm-information.png)
+
 ## Propagate modifications {#propagate-modifications}
 
 To propagate modifications from the source to your Live Copy.
@@ -104,21 +106,15 @@ To trigger a Rollout that pushes the source updates to your Live Copy:
 1. Schedule the rollout for immediately (**Now**) or **Later**.
 1. **Continue** as appropriate.
 
-## Cancel, and reinstate, inheritance {#cancel-and-reinstate-inheritance}
+## Cancel, and revert to, inheritance {#cancel-and-reinstate-inheritance}
 
 Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of Multi-Site Management.
 
-You can cancel (then re-enable) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
+You can cancel (then revert) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
 
-For example:
-
-* Cancel Inheritance
-
-  ![Cancel Inheritance button](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-cancel-inheritance.png)
-
-* Re-enable Inheritance (if inheritance is already canceled)
-
-  ![Re-Enable Inheritance button](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-reenable-inheritance.png)
+>[!NOTE]
+>
+>For more details see [Cancel, and revert to, inheritance in the editor](/help/sites-cloud/administering/content-fragments/authoring.md#cancel-and-revert-to-inheritance).
 
 ## Compare MSM for Content Fragments and Sites Pages {#compare-msm-for-content-fragments-and-sites-pages}
 

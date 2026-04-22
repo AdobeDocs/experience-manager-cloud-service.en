@@ -394,24 +394,21 @@ For example:
 
 ![Content Fragment Editor - Show References](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references.png)
 
-<!-- CQDOC-23473 - activate cross-reference when GA -->
-<!--
-## Cancel, and reinstate, inheritance {#cancel-and-reinstate-inheritance}
+## Cancel, and revert to, inheritance {#cancel-and-revert-to-inheritance}
 
 Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/sites-cloud/administering/content-fragments/content-fragments-msm.md).
 
-You can cancel (then re-enable) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
+You can cancel (then revert to) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
 
 For example:
 
-* Cancel Inheritance
+* Cancel inheritance
 
-  ![Cancel Inheritance button](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-cancel-inheritance.png)
+  ![Cancel inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-cancel-inheritance.png)
 
-* Re-enable Inheritance (if inheritance is already canceled)
+* Revert to inheritance (if inheritance is already canceled)
 
-  ![Re-Enable Inheritance button](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-reenable-inheritance.png)
--->
+  ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
 
 ## View Properties, and Tags {#view-properties-tags}
 
