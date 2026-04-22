@@ -2,7 +2,6 @@
 title: CDN Configuration Snippets for Common Scenarios
 description: Copy-ready YAML patterns for the Adobe-managed CDN and customer-managed CDN setups, including edge authentication, redirects, cache variation, traffic shaping, and rate limits.
 feature: Dispatcher
-exl-id: 7c4e2a91-3d8f-41b2-9c0e-8f1a2b3c4d5e
 role: Admin
 ---
 
@@ -18,9 +17,9 @@ This article collects practical `cdn.yaml` patterns for AEM as a Cloud Service. 
 
 ### Setting Up Edge Authentication for Some Domains Only {#edge-auth-selected-hosts}
 
-Problem: Setup edge authentication for some domains (eg. example.com) but for others (like the default domain allow unrestricted access)
+Problem: On a [customer-managed CDN](/help/implementing/dispatcher/cdn.md#point-to-point-cdn), you must enforce authentication for some customer hostnames while other hostnames that reach publish should stay available without that header (for example during rollout or when only one brand domain sits behind your CDN).
 
-Solution: Require X-AEM-Edge-Key authentication only when first domain from X-Forwarded-Host is equal to "example.com".
+Solution: Require `X-AEM-Edge-Key` authentication only when the first hostname from `X-Forwarded-Host` equals your target hostname (for example `example.com`). The rule uses the `forwardedDomain` request property to perform that match and runs the `authenticate` action against your edge authenticator. Replace hostnames, authenticator names, and key placeholders for your program.
 
 ```yaml
 kind: "CDN"
@@ -88,7 +87,7 @@ redirects:
 
 ### Modifying the Cache Key {#cache-key}
 
-There is no direct action to modify the cache but given that the url is part of the CDN cache key the url can be modified (for example by adding a query param).
+The CDN does not expose a separate “cache key” field. Because the URL participates in caching, you can split cache entries by changing the URL—for example by adding a query parameter through a [request transformation](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations).
 
 ```yaml
 data:
@@ -109,7 +108,7 @@ data:
 
 ### Redirecting to a Normalised Path {#trailing-slash}
 
-Redirect www.example.com/path/ to www.example.com/path
+Send a permanent redirect when a browser requests a trailing slash on publish—for example from `https://www.example.com/path/` to `https://www.example.com/path`.
 
 ```yaml
 kind: "CDN"
@@ -188,9 +187,9 @@ data:
 
 ### Rate Limiting ASN {#rate-limit-asn}
 
-Problem: Rate limiting by IPs can be inefficient in case of a DOS attack that is well distributed (volume per IP might be so low that it is impossible to distingue from legit traffic).
+Problem: Per-IP rate limits can miss a distributed denial-of-service (DDoS) pattern: each address stays below the threshold, so legitimate and abusive traffic look alike at the IP layer.
 
-Solution: Rate limit per client as name which is the network name associated to the IP (google has many IPs but a unique ASN). It will help blocking the group of IPs behind the attack. You should also consider if customer is using a VPN as it might block VPN as well.
+Solution: Count requests by autonomous system name (`clientAsName`) so the limiter aggregates hosts that share the same network name. The snippet writes `clientAsName` to a log property on every request, then applies a rate limit on author and publish grouped by that value. Many users can share one ASN (for example a large ISP or a corporate VPN exit), so tune limits carefully and monitor CDN logs for false positives.
 
 ```yaml
 kind: "CDN"
