@@ -27,7 +27,11 @@ This editor provides:
 * Ability to [view version details](#view-version-history) in the editor. You can also revert to a selected version.
 * Ability to [view, and open, parent references](#view-parent-references).
 * A hierarchical view of the Content Fragment, and its references, using the [Structure tree](#structure-tree).
-* Ability to [cancel, and revert to, inheritance](#cancel-and-revert-to-inheritance), when the fragment is part of a [Live Copy](/help/sites-cloud/administering/content-fragments/content-fragments-msm.md)
+
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+<!--
+* Ability to [cancel, and revert to, inheritance](#cancel-and-revert-to-inheritance), when the fragment is part of a [Live Copy](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
+--> 
 
 >[!NOTE]
 >
@@ -395,9 +399,11 @@ For example:
 
 ![Content Fragment Editor - Show References](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-show-references.png)
 
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+<!--
 ## Cancel, and revert to, inheritance {#cancel-and-revert-to-inheritance}
 
-Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/sites-cloud/administering/content-fragments/content-fragments-msm.md).
+Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of [Multi-Site Management](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md).
 
 You can cancel (then revert to) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
 
@@ -410,6 +416,7 @@ For example:
 * Revert to inheritance (if inheritance is already canceled)
 
   ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
+-->
 
 ## View Properties, and Tags {#view-properties-tags}
 

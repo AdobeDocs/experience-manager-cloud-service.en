@@ -32,7 +32,7 @@ Using MSM for Content Fragments you can:
 
 MSM for Content Fragments, combined with functionality within the Content Fragment Editor, allows you to break, and reinstate inheritance at the field level.
 
-<!-- CQDOC-23473 - activate cross-reference when GA -->
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
 
 >[!CAUTION]
 >
@@ -45,7 +45,7 @@ MSM for Content Fragments, combined with functionality within the Content Fragme
 >
 >This page covers MSM functionality when using the **Assets** console.
 >
->MSM for Content Fragments is also available when using [the **Content Fragments** console](/help/sites-cloud/administering/content-fragments/content-fragments-msm.md).
+>MSM for Content Fragments is also available when using [the **Content Fragments** console](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md).
 -->
 
 ## How To {#how-to}
