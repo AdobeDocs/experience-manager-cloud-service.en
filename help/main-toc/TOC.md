@@ -1636,6 +1636,7 @@ user-guide-title: AEM as a Cloud Service
     + [Validating and Debugging using Dispatcher Tools Legacy](/help/implementing/dispatcher/validation-debug-legacy.md)
     + [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
     + [Configuring Traffic at the CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+    + [CDN Configuration Snippets for Common Scenarios](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)
     + [Pipeline-free URL Redirects](/help/implementing/dispatcher/pipeline-free-url-redirects.md)
     + [Edge Side Includes](/help/implementing/dispatcher/edge-side-includes.md)
     + [Configuring CDN Credentials and Authentication](/help/implementing/dispatcher/cdn-credentials-authentication.md)
