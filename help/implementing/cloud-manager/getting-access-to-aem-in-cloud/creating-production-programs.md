@@ -105,12 +105,12 @@ The **Security** tab provides the options to activate **HIPAA**, or **WAF-DDOS P
 
 Adobe HIPAA Compliant and WAF-DDOS (Web Application Firewall - Distributed Denial of Service) facilitates cloud-based security as part of a multi-layered approach for protecting against vulnerabilities.
 
-   * **HIPAA** - This option enables Adobe's HIPAA-ready solution implementation.
-     * [Learn more](https://www.adobe.com/trust/compliance/hipaa-hds/hipaa-ready.html) about Adobe's HIPAA ready solution implementation.
-     * HIPAA cannot be enabled or disabled after program creation.
-   * **WAF-DDOS Protection** - This option enables the Web Application Firewall by way of rules to protect your application.
-     * Once activated, WAF-DDOS protection can then be configured by setting up a [non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
-     * See [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage traffic filter rules in your repository so they are deployed properly.
+* **HIPAA** - This option enables Adobe's HIPAA-ready solution implementation.
+  * Learn more about [HIPAA readiness for Adobe Experience Manager as a Cloud Service ](/help/compliance/hipaa/hipaa-readiness.md) and [Adobe's HIPAA ready solution implementation](https://www.adobe.com/trust/compliance/hipaa-ready.html).
+  * HIPAA cannot be enabled or disabled after program creation.
+* **WAF-DDOS Protection** - This option enables the Web Application Firewall by way of rules to protect your application.
+  * Once activated, WAF-DDOS protection can then be configured by setting up a [non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+  * See [Traffic Filter Rules including WAF Rules](/help/security/traffic-filter-rules-including-waf.md) to learn how to manage traffic filter rules in your repository so they are deployed properly.
 
 ### Flexible Publish Tier (Beta) {#flexible-publish-tier}
 

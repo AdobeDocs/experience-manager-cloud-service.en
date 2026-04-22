@@ -28,7 +28,7 @@ The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] cu
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
-<## Release Video {#release-video}
+## Release Video {#release-video}
 
 Have a look at the March 2026 Release Overview video for a summary of the features added in the 2026.3.0 release:
 
@@ -209,7 +209,7 @@ Learn more in the [Local Development with AI Tools](/help/ai-in-aem/local-develo
 
 #### AEM Edge Functions (Beta Program) {#edge-functions}
 
-AEM Edge Functions allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
+[AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md) allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
 
 Common use cases include:
 
