@@ -27,11 +27,11 @@ Multi Site Manager (MSM), and the Live Copy functionality, enables you to use th
 >MSM for Content Fragments is also available when using [Content Fragments via the **Assets** console](/help/assets/content-fragments/content-fragments-msm.md). 
 
 * With MSM Live Copies you can:
-  * Create content once and then
-  * Reuse this content in other areas of the same or other sites, or applications.
+  * Create content once 
+  * Reuse this content in other areas of the same site, in other sites, or in applications.
 * MSM then maintains the live relationships between your source content and its Live Copies so that:
   * When you change the source content, the source and Live Copies are synchronized.
-  * You can make adjustments only to the content of the Live Copies by disconnecting the live relationship for individual sub pages and/or components.
+  * You can make adjustments to only the content of the Live Copies by disconnecting the live relationship for individual sub fragments and/or components.
 
 For a detailed overview of MSM concepts see [Reusing Content: Multi Site Manager and Live Copy](/help/sites-cloud/administering/msm/overview.md).
 
@@ -66,9 +66,9 @@ To create a Live Copy of your Content Fragment:
 1. Select whether you want the Live Copy created immediately (**Now**), or at a **Later** date and time.
 1. Confirm with **Create Live Copy**.
 
-  >[!CAUTION]
-  >
-  >If you want to use MSM to create copies of Content Fragments), then any **Unique** constraints should be removed from any Data Types used in the respective [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md).
+   >[!CAUTION]
+   >
+   >If you want to use MSM to create copies of Content Fragments), then any **Unique** constraints should be removed from any Data Types used in the respective [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md).
 
 ## View properties and status {#view-properties-and-status}
 
@@ -84,11 +84,11 @@ To view properties and the status of the source and your Live Copy:
 
 ## Propagate modifications {#propagate-modifications}
 
-To propagate modifications from the source to your Live Copy.
+To propagate modifications between the source and your Live Copy.
 
 ### Synchronize {#synchronize}
 
-To trigger Synchronization that pulls the content updates from your Live Copy to the source: 
+To trigger a Synchronization that pulls the content updates from your Live Copy to the source: 
 
 1. In the Content Fragment console navigate to the location of your fragment source.
 1. Select your fragment.
@@ -120,12 +120,12 @@ You can cancel (then revert) the inheritance. Depending on the context, this can
 
 <!-- CQDOC-23473 - needs a detailed review -->
 
-In more scenarios, MSM for Content Fragments matches the behavior of MSM for Sites Pages functionality. Some key differences to note are:
+In most scenarios, MSM for Content Fragments matches the behavior of MSM for Sites Pages functionality. Some key differences to note are:
 
 * Blueprint in MSM for Sites Pages is called Live Copy source in MSM for Content Fragments.
 * For Sites Pages, you can compare a blueprint and its live copy but it is not possible for Content Fragments to compare a source to its live copy.
 * You cannot edit a live copy in the Content Fragments console.
-* Sites pages usually have children, but Content Fragment do not, though they may have referenced fragments. The option to include or exclude children refers to these referenced fragments.
+* Sites Pages usually have children, but Content Fragment do not, though they may have referenced fragments. The option to include or exclude children refers to these referenced fragments.
 * Removing the chapters step in the create site wizard is not supported in MSM for Content Fragments.
 * Configuring MSM locks on page properties is not supported in MSM for Content Fragments.
 * For MSM for Content Fragments, use only the **Standard rollout config**. Other rollout configurations are not available for MSM for Content Fragments.
