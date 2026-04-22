@@ -54,8 +54,6 @@ You can configure traffic at the CDN in various ways, including:
 
 Use YAML files in Git to configure these features. And, use the Cloud Manager [Config Pipeline](/help/implementing/dispatcher/cdn-configuring-traffic.md) to deploy them.
 
-For copy-ready patterns that address common customer setups (including selective edge authentication and advanced rate limits), see [CDN configuration snippets for common scenarios](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md).
-
 ### Configure CDN error pages {#cdn-error-pages}
 
 You can configure a CDN error page to replace the default, unbranded page. This custom page is displayed in the rare event that AEM is unavailable. For more details, see [Configuring CDN error pages](/help/implementing/dispatcher/cdn-error-pages.md).
