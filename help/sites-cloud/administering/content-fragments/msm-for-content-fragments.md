@@ -7,7 +7,7 @@ role: User
 solution: Experience Manager Sites
 hide: yes
 hidefromtoc: yes
-index: no
+index: false
 ---
 # Reuse Content Fragments using MSM {#reuse-content-fragments-using-msm}
 
