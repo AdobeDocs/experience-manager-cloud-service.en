@@ -8,6 +8,7 @@ solution: Experience Manager Sites
 hide: yes
 hidefromtoc: yes
 index: false
+exl-id: 5039cf92-21ff-4d6c-a684-72eab13b519d
 ---
 # Reuse Content Fragments using MSM {#reuse-content-fragments-using-msm}
 
