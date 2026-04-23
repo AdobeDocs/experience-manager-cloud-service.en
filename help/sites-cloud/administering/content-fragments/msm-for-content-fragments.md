@@ -24,7 +24,7 @@ Multi Site Manager (MSM), and the Live Copy functionality, enables you to use th
 >
 >MSM from the Content Fragment console is currently Beta functionality and only available to specific customers.
 >
->MSM for Content Fragments is also available when using [Content Fragments via the **Assets** console](/help/assets/content-fragments/content-fragments-msm.md). 
+>MSM for Content Fragments is also available when using Content Fragments via the **Assets** console. 
 
 * With MSM Live Copies you can:
   * Create content once 
@@ -33,11 +33,25 @@ Multi Site Manager (MSM), and the Live Copy functionality, enables you to use th
   * When you change the source content, the source and Live Copies are synchronized.
   * You can make adjustments to only the content of the Live Copies by disconnecting the live relationship for individual sub fragments and/or components.
 
+<!-- CQDOC-23473 - feature is currently beta remove Caution for GA -->
+
+For a detailed overview of MSM concepts see Reusing Content: Multi Site Manager and Live Copy.
+
+<!--
 For a detailed overview of MSM concepts see [Reusing Content: Multi Site Manager and Live Copy](/help/sites-cloud/administering/msm/overview.md).
+-->
+
+<!-- CQDOC-23473 - feature is currently beta remove Caution for GA -->
 
 >[!NOTE]
 >
+>Multi Site Manager (MSM) functionality in Adobe Experience Manager enables users to reuse content that is authored once and then reused across multiple web-locations. 
+
+<!--
+>[!NOTE]
+>
 >[Multi Site Manager (MSM)](/help/sites-cloud/administering/msm/overview.md) functionality in Adobe Experience Manager enables users to reuse content that is authored once and then reused across multiple web-locations. 
+-->
 
 Using MSM for Content Fragments you can:
 
@@ -47,11 +61,21 @@ Using MSM for Content Fragments you can:
 
 MSM for Content Fragments, combined with functionality within the Content Fragment Editor, allows you to break, and reinstate inheritance at the field level.
 
+<!-- CQDOC-23473 - feature is currently beta remove Caution for GA -->
+
+>[!NOTE]
+>
+>This page covers MSM functionality when using the **Content Fragments** console.
+>
+>MSM for Content Fragments is also available when using Content Fragments via the **Assets** console. 
+
+<!--
 >[!NOTE]
 >
 >This page covers MSM functionality when using the **Content Fragments** console.
 >
 >MSM for Content Fragments is also available when using [Content Fragments via the **Assets** console](/help/assets/content-fragments/content-fragments-msm.md). 
+-->
 
 ## Create a Live Copy {#create-a-live-copy}
 
@@ -68,9 +92,17 @@ To create a Live Copy of your Content Fragment:
 1. Select whether you want the Live Copy created immediately (**Now**), or at a **Later** date and time.
 1. Confirm with **Create Live Copy**.
 
+   <!-- CQDOC-23473 - feature is currently beta remove Caution for GA -->
+
+   >[!CAUTION]
+   >
+   >If you want to use MSM to create copies of Content Fragments), then any **Unique** constraints should be removed from any Data Types used in the respective Content Fragment Models.
+
+   <!--
    >[!CAUTION]
    >
    >If you want to use MSM to create copies of Content Fragments), then any **Unique** constraints should be removed from any Data Types used in the respective [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md).
+   -->
 
 ## View properties and status {#view-properties-and-status}
 
@@ -114,9 +146,32 @@ Inheritance is the mechanism where content can be automatically pushed from one 
 
 You can cancel (then revert) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
 
+
+<!-- CQDOC-23473 - feature is beta, is in authoring so remove here when GA -->
+
+## Cancel, and revert to, inheritance in the editor {#cancel-and-revert-to-inheritance-in-the-editor}
+
+Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of Multi-Site Management.
+
+You can cancel (then revert to) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
+
+For example:
+
+* Cancel inheritance
+
+  ![Cancel inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-cancel-inheritance.png)
+
+* Revert to inheritance (if inheritance is already canceled)
+
+  ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
+
+<!-- CQDOC-23473 - feature is currently beta reinstate Note for GA -->
+
+<!--
 >[!NOTE]
 >
 >For more details see [Cancel, and revert to, inheritance in the editor](/help/sites-cloud/administering/content-fragments/authoring.md#cancel-and-revert-to-inheritance).
+-->
 
 ## Compare MSM for Content Fragments and Sites Pages {#compare-msm-for-content-fragments-and-sites-pages}
 
