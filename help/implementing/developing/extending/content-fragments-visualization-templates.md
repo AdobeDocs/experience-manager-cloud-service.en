@@ -8,9 +8,9 @@ role: Admin, Developer
 
 In Adobe Experience Manager (AEM) as a Cloud Service, HTML templates can be used to preview, and deliver, Content Fragments. 
 
-You can create your own HTML template, then upload and assign it to specific Content Fragment Models in AEM. Once assigned the template is available to be used with any Content Fragments based on the model. The HTML template accesses the structured content of a Content Fragment for either a visual preview, or delivery to an external destination; for example, browser, external application and others. The templates allow you to control exactly how your Content Fragments are displayed.
+You can create HTML templates in your code editor of choice, then upload and assign them to Content Fragment Models in AEM. HTML templates allow you to control exactly how your Content Fragments are displayed. Once assigned, a template is available to be used with any Content Fragment based on the model, by mapping the HTML template to the Content Model and Fragment with Handlebars.js syntax as content placeholders. Combined into a Visual Content Fragment, this allows visual preview of the fragment, or delivery of the modular  experience in HTML format to any channel; for example, browser, email, mobile application, or others. 
 
-These HTML templates are developed with Handlebars. This article explains how to create custom Handlebars templates for rendering Content Fragments.
+This article explains how to create custom HTML templates with Handlebars syntax for rendering Visual Content Fragments.
 
 After creating your templates you can then:
 
