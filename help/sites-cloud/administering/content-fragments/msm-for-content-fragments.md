@@ -191,7 +191,7 @@ In most scenarios, MSM for Content Fragments matches the behavior of MSM for Sit
 
 >[!NOTE]
 >
->Remember that MSM for Content Fragments accessed through the Content Fragments console is based on the Assets functionality; this is because they are stored as Assets (though considered a Sites feature). 
+>It should be remembered that MSM for Content Fragments accessed through the Content Fragments console is based on the Assets functionality; this is because they are stored as Assets (though considered a Sites feature). 
 
 ## Limitations {#limitations}
 
