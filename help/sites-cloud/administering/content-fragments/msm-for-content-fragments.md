@@ -140,20 +140,13 @@ To trigger a Rollout that pushes the source updates to your Live Copy:
 1. Schedule the rollout for immediately (**Now**) or **Later**.
 1. **Continue** as appropriate.
 
-## Cancel, and revert to, inheritance {#cancel-and-reinstate-inheritance}
-
-Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of Multi-Site Management.
-
-You can cancel (then revert) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
-
-
 <!-- CQDOC-23473 - feature is beta, is in authoring so remove here when GA -->
 
 ## Cancel, and revert to, inheritance in the editor {#cancel-and-revert-to-inheritance-in-the-editor}
 
 Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of Multi-Site Management.
 
-You can cancel (then revert to) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
+You can cancel (then revert to) the inheritance in the Content Fragment editor. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
 
 For example:
 
@@ -166,6 +159,14 @@ For example:
   ![Revert to inheritance icon](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-revert-to-inheritance.png)
 
 <!-- CQDOC-23473 - feature is currently beta reinstate Note for GA -->
+
+<!--
+## Cancel, and revert to, inheritance {#cancel-and-reinstate-inheritance}
+
+Inheritance is the mechanism where content can be automatically pushed from one fragment to another. Inherited fields, and variations, can be the product of Multi-Site Management.
+
+You can cancel (then revert) the inheritance. Depending on the context, this can be available for a variation, or an individual field, if the fragment is part of a live copy.
+-->
 
 <!--
 >[!NOTE]
