@@ -39,7 +39,7 @@ data:
           authenticator: edge-key-auth
 ```
 
-### Setting Up Edge Authentication for Requests Not Coming from VPN IPs {#edge-auth-trusted-ips}
+### Setting Up Edge Key Authentication for Requests Not Coming from VPN IPs {#edge-auth-trusted-ips}
 
 Problem: Setup edge authentication for BYOCDN but allow direct access to publish domain only for VPN IPs
 
