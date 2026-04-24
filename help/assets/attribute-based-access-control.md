@@ -14,7 +14,7 @@ Administrators for an organization define rules for user groups, which are mappe
 
 The rules are based on metadata. If the conditions defined in a rule match the asset metadata, the asset is displayed to the user group. Content Hub scans the asset metadata, including custom metadata, for all assets available within **All Assets** and **Collections** to display the results to user groups.
 
-For example, ALLOW access to user group with Group ID = 1011 when asset metadata matches "Brand = Brand X" AND "Region = EMEA OR Americas". Content Hub displays only those assets to the user group with ID = 1011 where Brand = `Brand X` and Region = `EMEA` or `Americas`.
+For example, ALLOW access to user group with Group ID = 1011 when asset metadata matches "Brand = Brand X" AND "Region = EMEA OR Americas". Content Hub displays only those assets to the user group with ID = 1011 where ''Brand = Brand X'' and ''Region = EMEA or Americas''.
 
 ABAC rules in Content Hub can be configured using the following approaches:
 
@@ -182,18 +182,18 @@ ABAC can also help address the following scenarios:
   * Equals (=): Checks if a user or asset attribute matches a value
   * Not Equals (!=): Checks if a user or asset attribute does not match a value
 
-When asset metadata fields contain arrays, for example multiple regions or tags, `Equals` refers to `contains` logic and `Not Equals` refers to `does not contain` logic.
+When asset metadata fields contain arrays, for example multiple regions or tags, Equals refers to contains logic and Not Equals refers to does not contain logic.
 
-This allows you to write simple and expressive rules, such as `ALLOW if region = emea AND assetType != prototype AND tags != confidential`.
+This allows you to write simple and expressive rules, such as ALLOW if region = emea AND assetType != prototype AND tags != confidential.
 
 ## Guidelines {#guidelines-attribute-based-access-control}
 
 The following guidelines apply to both AI Assistant-based and spreadsheet-based configuration:
 
 * ABAC rules are applicable only for assets approved for Content Hub. For more information, see [Approve Assets for Content Hub](/help/assets/approve-assets-content-hub.md).
-* Do not define DENY rules. Always convert DENY rules into ALLOW rules. For example, `ALLOW if region = <user-region> DENY if assetType = prototype AND confidential = yes` can be converted to `ALLOW if region = <user-region> AND (assetType != prototype OR confidential != yes)`.
+* Do not define DENY rules. Always convert DENY rules into ALLOW rules. For example, ALLOW if region = <user-region> DENY if assetType = prototype AND confidential = yes can be converted to ALLOW if region = <user-region> AND (assetType != prototype OR confidential != yes).
 * ABAC rules are applied to user groups using the IMS Group ID, which is available in the Admin Console.
-* You can set the [Approval Target](/help/assets/approve-assets-content-hub.md#set-approval-target) for assets using AEM as a Cloud Service author environment. ABAC rules are applied to assets approved with Approval Target = `Content Hub`, as Approval Target = `Delivery` is for assets available for `Delivery` + `Content Hub`. Assets marked as Approval Target = `Delivery` are visible to all in Content Hub.
+* You can set the [Approval Target](/help/assets/approve-assets-content-hub.md#set-approval-target) for assets using AEM as a Cloud Service author environment. ABAC rules are applied to assets approved with Approval Target = Content Hub, as Approval Target = Delivery is for assets available for Delivery + Content Hub. Assets marked as Approval Target = Delivery are visible to all in Content Hub.
 * Ensure that the metadata schemas used in ABAC rules are correctly defined and available in AEM. Provide the full path of the metadata schema or schemas in AEM that define properties referenced in ABAC rules. You can optionally create a test folder with sample assets that match the ABAC conditions to help verify rule behavior and evaluate access accurately.
 * Capture the business intent of the rule in comments, even if the condition is correctly written, because the intent helps validate and correct the logic if required.
 * Ensure metadata values used for access rules, such as brand, region, and product, are maintained consistently across assets.
