@@ -32,7 +32,7 @@ data:
         edgeKey1: ${{CDN_EDGEKEY_1}}
         edgeKey2: ${{CDN_EDGEKEY_2}}
     rules:
-      - name: edge-auth-rule
+      - name: edge-key-auth-rule
         when: { reqProperty: forwardedDomain, equals: "example.com" }
         action:
           type: authenticate
