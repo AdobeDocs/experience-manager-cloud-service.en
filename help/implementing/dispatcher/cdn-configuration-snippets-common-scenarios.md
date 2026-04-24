@@ -15,7 +15,7 @@ This article collects practical `cdn.yaml` patterns for AEM as a Cloud Service. 
 
 ## Customer Managed CDN {#customer-managed-cdn}
 
-### Setting Up Edge Authentication for Some Domains Only {#edge-auth-selected-hosts}
+### Setting Up Edge Key Authentication for Some Domains Only {#edge-auth-selected-hosts}
 
 Problem: On a [customer-managed CDN](/help/implementing/dispatcher/cdn.md#point-to-point-cdn), you must enforce authentication for some customer hostnames while other hostnames that reach publish should stay available without that header (for example during rollout or when only one brand domain sits behind your CDN).
 
