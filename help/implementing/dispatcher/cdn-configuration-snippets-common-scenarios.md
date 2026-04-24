@@ -36,7 +36,7 @@ data:
         when: { reqProperty: forwardedDomain, equals: "example.com" }
         action:
           type: authenticate
-          authenticator: edge-auth
+          authenticator: edge-key-auth
 ```
 
 ### Setting Up Edge Authentication for Requests Not Coming from VPN IPs {#edge-auth-trusted-ips}
