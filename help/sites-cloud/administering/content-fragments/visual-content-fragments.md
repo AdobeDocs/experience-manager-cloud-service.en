@@ -12,7 +12,15 @@ Content Fragments contain only structured content, without formatting. So AEM al
 
 * Delivering a visual fragment aids omnichannel delivery; such as embedding in email systems or mobile apps.
 
-A **Generic Template** is always available within AEM as a default, but you can also [create and customize your own templates](/help/implementing/developing/extending/content-fragments-visualization-templates.md).
+The rendered output of an AEM Content Fragment combined with the layout and design of an HTML template is called a *Visual Content Fragment*. 
+
+HTML templates contain layout and design information, enabling the visualization of Content Fragments. The connection between a template and a Content Fragment is established using Handlebars syntax to map HTML tags to data types (fields) defined in the Content Fragment Model. This definition allows content authored in the respective fields of the Content Fragment Editor to be displayed in the appropriate locations within the template. 
+
+You (or your development team) can [create and customize your own HTML templates](/help/implementing/developing/extending/content-fragments-visualization-templates.md), then [upload and attach one, or more, to Content Fragment Models](#upload-and-assign-your-template) so that the corresponding fragments can be rendered into experiences, [previewed](#preview-your-fragment-with-a-template) and [delivered as required](#deliver-your-visual-fragment).
+
+>[!NOTE]
+>
+>A **Generic Template** is always available within AEM as a default, associated with every model. This template enables key/value pairs in structured content to be displayed in a clean, table-style format. 
 
 ## Create a Template {#create-a-template}
 
