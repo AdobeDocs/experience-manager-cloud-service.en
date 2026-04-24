@@ -55,8 +55,6 @@ You can:
 
 This enables administrators to create and manage access rules without relying on support workflows.
 
->[!VIDEO](<ADD-PDF-VIDEO-LINK-HERE>){transcript=true}
-
 ### Before you begin {#before-you-begin-ai-assistant}
 
 Ensure the following before using AI Assistant in Content Hub for ABAC rule configuration:
@@ -102,24 +100,24 @@ After you start using AI Assistant, you can manage ABAC rules conversationally.
 
 **Discover rules**
 
-* `Show all existing Content Hub ABAC rules`
+* Show all existing Content Hub ABAC rules
 
 **Create rules**
 
-* `Create a rule that gives Product Marketing group access to all assets`
-* `Give Sales group access to assets where region equals EMEA`
+* Create a rule that gives Product Marketing group access to all assets
+* Give Sales group access to assets where region equals EMEA
 
 **Update rules**
 
-* `Update rule for EMEA marketing group to include APAC`
+* Update rule for EMEA marketing group to include APAC
 
 **Delete rules**
 
-* `Delete the rule for Product Marketing group`
+* Delete the rule for Product Marketing group
 
 **Explore metadata and groups**
 
-* `Show available groups and metadata properties to set rules`
+* Show available groups and metadata properties to set rules
 
 ## Configure ABAC using Spreadsheet {#configure-abac-spreadsheet}
 
@@ -133,15 +131,7 @@ Define rules in the spreadsheet using the guidelines described in this article.
 
 >[!IMPORTANT]
 >
->You can also set Attribute-based access control rules using the [AEM Governance Agent](/help/ai-in-aem/agents/governance/overview.md#permission-management-in-content-hub).
-
-<!--
-
->[!IMPORTANT]
->
 >After defining the rules, navigate to the **Validation Errors** tab of the spreadsheet and click **Run ABAC Validations**. The **All validations passed** message confirms that you can provide the defined rules to Adobe.
-
--->
 
 ### Steps to configure ABAC rules using Spreadsheet {#steps-spreadsheet}
 
