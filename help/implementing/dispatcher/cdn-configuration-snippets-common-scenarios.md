@@ -56,7 +56,7 @@ data:
         edgeKey1: ${{CDN_EDGEKEY_1}}
         edgeKey2: ${{CDN_EDGEKEY_2}}
     rules:
-      - name: edge-auth-rule
+      - name: edge-key-auth-rule
         when: { reqProperty: clientIp, notIn: ["10.0.0.1", "11.0.0.0/24", "<other VPN IPs>"] }
         action:
           type: authenticate
