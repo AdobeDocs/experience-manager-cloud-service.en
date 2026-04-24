@@ -60,7 +60,7 @@ data:
         when: { reqProperty: clientIp, notIn: ["10.0.0.1", "11.0.0.0/24", "<other VPN IPs>"] }
         action:
           type: authenticate
-          authenticator: edge-auth
+          authenticator: edge-key-auth
 ```
 
 ## Redirects {#redirects}
