@@ -51,7 +51,7 @@ version: "1"
 data:
   authentication:
     authenticators:
-      - name: edge-auth
+      - name: edge-key-auth
         type: edge
         edgeKey1: ${{CDN_EDGEKEY_1}}
         edgeKey2: ${{CDN_EDGEKEY_2}}
