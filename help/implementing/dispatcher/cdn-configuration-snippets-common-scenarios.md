@@ -41,7 +41,7 @@ data:
 
 ### Setting Up Edge Key Authentication for Requests Not Coming from VPN IPs {#edge-auth-trusted-ips}
 
-Problem: Setup edge authentication for BYOCDN but allow direct access to publish domain only for VPN IPs
+Problem: Setup edge key authentication for BYOCDN but allow direct access to publish domain only for VPN IPs
 
 Solution: Require X-AEM-Edge-Key authentication only when client IP is not in the list of VPN IPs
 
