@@ -1572,6 +1572,7 @@ user-guide-title: AEM as a Cloud Service
     + [Content Copy](/help/implementing/developing/tools/content-copy.md)
     + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
     + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
+    + [Web Console](/help/implementing/developing/tools/web-console.md)
     + [Using CRXDE Lite](/help/implementing/developing/tools/crxde.md)
     + [Package Manager](/help/implementing/developing/tools/package-manager.md)
     + [The Link Externalizer](/help/implementing/developing/tools/externalizer.md)
