@@ -191,7 +191,7 @@ This allows you to write simple and expressive rules, such as ALLOW if region = 
 The following guidelines apply to both AI Assistant-based and spreadsheet-based configuration:
 
 * ABAC rules are applicable only for assets approved for Content Hub. For more information, see [Approve Assets for Content Hub](/help/assets/approve-assets-content-hub.md).
-* Do not define DENY rules. Always convert DENY rules into ALLOW rules. For example, ALLOW if region = <user-region> DENY if assetType = prototype AND confidential = yes can be converted to ALLOW if region = <user-region> AND (assetType != prototype OR confidential != yes).
+* Do not define DENY rules. Always convert DENY rules into ALLOW rules. For example, ALLOW if region = user-region DENY if assetType = prototype AND confidential = yes can be converted to ALLOW if region = user-region AND (assetType != prototype OR confidential != yes).
 * ABAC rules are applied to user groups using the IMS Group ID, which is available in the Admin Console.
 * You can set the [Approval Target](/help/assets/approve-assets-content-hub.md#set-approval-target) for assets using AEM as a Cloud Service author environment. ABAC rules are applied to assets approved with Approval Target = Content Hub, as Approval Target = Delivery is for assets available for Delivery + Content Hub. Assets marked as Approval Target = Delivery are visible to all in Content Hub.
 * Ensure that the metadata schemas used in ABAC rules are correctly defined and available in AEM. Provide the full path of the metadata schema or schemas in AEM that define properties referenced in ABAC rules. You can optionally create a test folder with sample assets that match the ABAC conditions to help verify rule behavior and evaluate access accurately.
