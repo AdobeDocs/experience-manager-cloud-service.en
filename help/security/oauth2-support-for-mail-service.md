@@ -15,7 +15,7 @@ You can configure OAuth for multiple email providers. Below are step-by-step ins
 AEM supports two OAuth2-based transport options for Microsoft&reg; 365:
 
 * **SMTP + OAuth2** – Standard path using SMTP with OAuth2 authentication.
-* **Microsoft Graph API** – Alternative transport that sends email via the Microsoft Graph API (`/me/sendMail`) over HTTPS. Use this when your organization has `SMTP AUTH` disabled tenant-wide in Microsoft&reg; 365 (error: `535 5.7.139`), which makes SMTP + OAuth2 unusable.
+* **Microsoft Graph API** – Alternative path that sends mail through Microsoft Graph when your organization does not allow SMTP-based sending (for example, when SMTP AUTH is disabled tenant-wide in Microsoft&reg; 365), which prevents use of SMTP and OAuth2.
 
 For more information on the AEM as a Cloud Service Mail Service, see [Sending Email](/help/implementing/developing/introduction/development-guidelines.md#sending-email).
 
