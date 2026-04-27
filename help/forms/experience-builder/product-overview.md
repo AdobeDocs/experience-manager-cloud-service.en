@@ -50,8 +50,6 @@ Transform existing documents into interactive digital experiences. The Forms Exp
 
 ## Onboarding & pre-requisites 
 
-The Forms Experience Builder is currently available through an Early Access Program. To request access, send an email to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official Email ID. 
-
 Experience Builder requires AEM Forms as a Cloud Service production author environment with [Adaptive Forms Core Components](/help/forms/enable-adaptive-forms-core-components.md).  
 
 ## Access the Forms Experience Builder

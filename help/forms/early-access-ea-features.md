@@ -22,6 +22,8 @@ If you're interested in joining our Early Access program for any Early Access in
 
 ## Early Access Innovations 
 
+<!--
+
 ### AEM Forms AI Assistant (Gen AI)
 
 Generative AI for Adaptive Forms brings a whole new level of power and ease to your forms development processes. With the help of intelligent AI features, you can build better forms faster than ever before. 
@@ -40,8 +42,11 @@ The Generative AI capabilities on offer via AEM Forms AI Assistant are:
 
 * **Configure Submit Action**: Use Generative AI prompts to effortlessly configure a submit action for your form. Choose from a library of pre-built submit actions or from a list of custom submit actions, created and deployed by your own development team.
 
+-->
 
-### AEM Forms Workfront Fusion Connector 
+<!--
+
+### AEM Forms Workfront Fusion Connector
 
 The AEM Forms Workfront Fusion Connector empowers seamless integration between Adobe Experience Manager (AEM) Forms and Adobe Workfront Fusion. Adobe Workfront serves as a work management application, centralizing the entire work lifecycle, while Workfront Fusion acts as the integration platform facilitating connectivity between Workfront and various business applications. 
 
@@ -49,7 +54,9 @@ Using the AEM Forms Workfront Fusion Connector, you can design workflows that ar
 
 Ready to start? The [submit an Adaptive Form to Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md) documentation provides a step-by-step guide to use the innovation.
 
-<!-- <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> -->
+<br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/>
+
+-->
 
 ### Conversational Forms
 
@@ -67,6 +74,8 @@ Here's what more Conversational Forms bring:
 
 
 Conversational Forms are more than just a new look – they're a game-changer for user experience.  Boost engagement, reduce form abandonment, and make interacting with your website a more enjoyable experience for everyone.
+
+<!--
 
 ### AEM Forms to Marketo Connector
 
@@ -86,6 +95,8 @@ Ready to start? The following articles provides detailed instructions to use the
 * [Integrate an Adaptive Form with Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md) 
 * [Configure Marketo Engage ad data source for existing Adaptive Forms](/help/forms/use-marketo-engage-data-source-in-form.md)
 * [Submit an existing Adaptive Form to Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
+
+-->
 
 ### Interactive Communications on Cloud
 
@@ -209,12 +220,17 @@ This tool is particularly useful for scenarios like address auto-completion, dyn
 
 ## Additional Early Access Innovations
 
-### HTML email Templates in Adaptive Forms
+<!--
 
+### HTML email Templates in Adaptive Forms
 
 Adaptive Forms allows you use [HTML email templates](/help/forms/html-email-templates-in-adaptive-forms.md). HTML email templates enable you to send rich, personalized, and visually appealing emails when a form is submitted. These emails can be customized with form data and enhanced using various email tags, such as images and links. With Adaptive Forms, you can either upload a file containing an HTML template or use a plain-text editor to create these templates.
 
 ![HTML email templates](/help/forms/assets/html-email.png)
+
+-->
+
+<!--
 
 ### RESTful Web Services Submit Action
 
@@ -224,6 +240,7 @@ Adaptive Forms can now seamlessly send captured data to authenticated external R
 * Secure Authentication: OAuth 2.0, Basic Auth, API Key, & Custom Authentication
 * Flexible Data Formats: Multi-Part Form Data, JSON, & URL-encoded (Key-Value Pairs)
 
+-->
 
 
 ### Right-to-left (RTL) languages support
@@ -312,9 +329,13 @@ Storing PDFs in Azure Blob Storage allows for centralized management of document
 
 * [Retrieve property values from a JSON array](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array): Invoke an API with a custom function to extract values from a JSON array and bind them directly to form fields.
 
+<!--
+
 ### Versioning support in Forms Manager
 
 Forms Manager now supports versioning for Adaptive Forms (Core Components and Foundation Components), form fragments, themes, XDP templates, and binary assets. You can create versions, view history, and restore earlier states from the Forms & Documents console. See [Manage form versions in Forms Manager](/help/forms/manage-form-versions-forms-manager.md).
+
+-->
 
 ### Improved accessibility for form components
 

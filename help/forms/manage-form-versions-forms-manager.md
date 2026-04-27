@@ -8,8 +8,6 @@ exl-id: cd2c6e15-99a6-4b4e-bfd1-8291a2001ebe
 ---
 # Manage Form Assets Versions in Forms Manager UI
 
-<span class="preview"> This feature is available through the Early Access program. To request access, send an email from your official address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
-
 Forms Manager now supports versioning for form assets. You can create versions, view version history, and restore earlier versions of your assets from the Forms Manager UI.
 
 ## Supported asset types {#supported-asset-types}

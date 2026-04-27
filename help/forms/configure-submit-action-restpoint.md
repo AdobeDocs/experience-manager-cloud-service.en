@@ -9,8 +9,6 @@ exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
 ---
 # Configure an Adaptive Form for REST Endpoint submit action
 
-<span class="preview"> The capability to specify the REST Endpoint using configuration  is an Early Adopter Program and it is applicable to Core Components and Edge Delivery Services Forms only. You can write to `aem-forms-ea@adobe.com` from your official email id to join the early adopter program and request access to the capability. </span>
-
 Use the **[!UICONTROL Submit to REST Endpoint]** action to post the submitted data to a REST URL. The URL can be of an internal (the server on which the form is rendered) or an external server.
 
 AEM as a Cloud Service offers various out of the box submit actions for handling form submissions. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/aem-forms-submit-action.md)  article.
