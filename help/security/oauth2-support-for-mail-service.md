@@ -172,9 +172,7 @@ under `/apps/<my-project>/osgiconfig/config` with the syntax below. The `smtp.ho
 1. For outlook, the `smtp.host` configuration value is `smtp.office365.com`
 1. At runtime, pass in the `refreshToken values` and `clientSecret` secrets using the [Cloud Manager variables API](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) or by using [Cloud Manager to add variables](/help/implementing/cloud-manager/environment-variables.md). The values for the variables `SECRET_SMTP_OAUTH_REFRESH_TOKEN`  and `SECRET_SMTP_OAUTH_CLIENT_SECRET` should be defined.
 
-### Troubleshooting {#troubleshooting}
-
-If the mail service is not working properly, regenerate the `refreshToken`. Use [Generating the Refresh Token](#generating-the-refresh-token) when you use SMTP and OAuth2, or [Generating the Refresh Token](#graph-generating-the-refresh-token) when you use Microsoft Graph. Pass the new value via Cloud Manager API; deployment can take a few minutes.
+If you use SMTP and OAuth2 and mail still does not work, see [Troubleshooting](#troubleshooting).
 
 ## Microsoft Graph API for Microsoft&reg; Outlook {#microsoft-graph-api}
 
@@ -249,4 +247,6 @@ In the cURL token request, replace the scope with:
 
 1. At runtime, pass in the `refreshToken` and `clientSecret` secrets using the [Cloud Manager variables API](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) or by using [Cloud Manager to add variables](/help/implementing/cloud-manager/environment-variables.md). The values for the variables `SECRET_SMTP_OAUTH_REFRESH_TOKEN` and `SECRET_SMTP_OAUTH_CLIENT_SECRET` should be defined.
 
-If mail still fails, see [Troubleshooting](#troubleshooting).
+### Troubleshooting {#troubleshooting}
+
+If the mail service is not working properly, regenerate the `refreshToken`. Use [Generating the Refresh Token](#generating-the-refresh-token) when you use SMTP and OAuth2, or [Generating the Refresh Token](#graph-generating-the-refresh-token) when you use Microsoft Graph. Pass the new value via Cloud Manager API; deployment can take a few minutes.
