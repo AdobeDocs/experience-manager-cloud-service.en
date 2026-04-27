@@ -32,7 +32,6 @@ During the deprecation time window, Adobe will remind customers of the actions t
 >* **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
 >* **May 4, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further. To once again receive Adobe release updates again, a fullstack pipeline must be successfully executed.
 >
->To prevent deployment blocks, remove API usage before May 4, 2026.
 
 ## Deprecated Functionality {#deprecated-features}
 
