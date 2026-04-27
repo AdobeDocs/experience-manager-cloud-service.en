@@ -136,6 +136,11 @@ Coming soon - Content Advisor support for Adobe Workfront and AJO B2C applicatio
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
+### New features in AEM Forms {#forms-new-features}
+
+**Versioning support in Forms Manager**
+Forms Manager now [supports versioning for Adaptive Forms (Core Components and Foundation Components)](/help/forms/manage-form-versions-forms-manager.md), form fragments, themes, XDP templates, and binary assets. Create versions, view complete version history, and restore earlier states of your form assets directly from the Forms & Documents console.
+
 ### Early Access Features in AEM Forms {#forms-early-access-features}
 
 **Display labels for multi-select dropdown in Submission PDF**
