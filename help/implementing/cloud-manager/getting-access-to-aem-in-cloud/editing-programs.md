@@ -16,11 +16,13 @@ From the **Program Overview**, users with the requisite permissions can edit [pr
 * Add Sites solution to an existing program with Assets and conversely.
 * Remove Sites or Assets from an existing program with both Sites and Assets.
 * Add an unused solution entitlement to an existing program or create a new program.
+* Mark production programs for deletion.
 * Delete sandbox programs.
+
 
 ## Permissions {#permissions}
 
-You must have the **Business Owner** role to edit programs, delete sandbox programs, and access the License Dashboard.
+You must have the **Business Owner** role to edit programs, delete sandbox programs, mark production programs for deletion, and access the License Dashboard.
 
 ## Edit a program {#editing}
 
@@ -28,8 +30,10 @@ Anytime a program is edited, including adding or removing a solution or add-on, 
 
 **To edit a program:**
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
-
+1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
+1. In the **Quick access** section, click **Experience Manager**.
+1. In the left side panel, click **Cloud Manager**.
+1. Select the appropriate organization.
 1. On the **[My Programs](#my-programs)** page, click the program that you want to edit to show its details.
 
 1. Click your program's name in the upper-left of the page and select **Edit program**.
@@ -47,6 +51,69 @@ Anytime a program is edited, including adding or removing a solution or add-on, 
 
 1. Click **Update** to save your changes to the program.
 
+## Mark a production program for deletion {#delete-production-program}
+
+Deleting a production program is a two-phase process. A Business Owner marks the program for deletion, which triggers a validation and takedown period. The program is then permanently removed after approximately 30 days.
+
+When a production program is marked for deletion, the following occurs:
+
+* The credit associated with the production program is returned to the customer.
+* All environments belonging to the production program are taken down.
+
+Before deletion is initiated, the system validates whether the production program is eligible for deletion. If the transition fails, the production program moves to a `Failed to mark for deletion` state instead.
+
+>[!NOTE]
+>
+>Sandbox programs are unaffected by this process. To delete a sandbox program, see [Delete a sandbox program](#delete-sandbox-program).
+
+**To mark a production program for deletion:**
+
+1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
+1. In the **Quick access** section, click **Experience Manager**.
+1. In the left side panel, click **Cloud Manager**.
+1. Select the appropriate organization.
+1. On the **My Programs** page, for the production program that you want to mark for deletion, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), then click **Mark for deletion**.
+
+   ![Selecting Delete Program from the drop-down list of a production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*Example production program seen above is for illustration purposes only.*
+
+1. In the **Mark production program for deletion** dialog box, review the warning that lists the resources connected to your program, including production, stage, and development environments.
+
+   ![Delete Production Program dialog box](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete2.png)
+
+1. To confirm, type the program name as displayed in the dialog box, then click **Mark for deletion**.
+
+   After confirmation, the production program shows a **Marking for deletion** status while the process runs.
+
+   ![Marking for deletion status](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete3.png)
+
+   When complete, the production program card updates to **Marked for deletion** with an associated Alert badge.
+
+   ![Marked for deletion status with associated Alert badge](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete4.png)  
+
+1. Click the Alert badge on the production program card to display the scheduled permanent removal date.
+
+   ![Display of the scheduled permanent removal date of the production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete5.png)
+
+   After approximately 30 days, the program is permanently removed and cannot be restored.
+
+### Unmark a production program from deletion {#unmark-from-deletion}
+
+You can restore a production program that has been *marked* for deletion as long as the permanent removal has not yet occurred. 
+
+>[!IMPORTANT]
+>
+>Restoring a production program that was marked for deletion requires that the customer has available credits.
+
+**To unmark a production program from deletion:**
+
+1. On the **My Programs** page, locate the production program card that shows **Marked for deletion**.
+
+1. On the production program card, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), then click **Unmark for deletion**.
+
+   ![Unmarking the scheduled permanent removal date of the production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-unmarkfordelete6.png) 
+
+   The production program is restored and is no longer scheduled for permanent removal.
+
 ## Delete a sandbox program {#delete-sandbox-program}
 
 Deleting a sandbox program removes all environments and pipelines associated with it.
@@ -57,18 +124,17 @@ Deleting a sandbox program removes all environments and pipelines associated wit
 
 **To delete a sandbox program:**
 
-1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
+1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
+1. In the **Quick access** section, click **Experience Manager**.
+1. In the left side panel, click **Cloud Manager**.
+1. Select the appropriate organization.
 
-1. On the **[My Programs](#my-programs)** page, click the program that you want to edit to show its details.
+1. On the **[My Programs](#my-programs)** page, click the sandbox program that you want to edit to show its details.
 
-1. Click your program's name in the upper-left of the page and select **Delete Program**.
+1. Click your sandbox program's name in the upper-left of the page and select **Delete Program**.
 
    ![Delete program option](assets/delete-sandbox1.png)
 
-Alternatively, you can click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) on your program's card from the Cloud Manager overview page and select **Delete Program**.
+Alternatively, you can click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) on your sandbox program's card from the Cloud Manager overview page and select **Delete Program**.
 
-![Delete sandbox from program card](assets/delete-sandbox2.png)
-
->[!NOTE]
->
->Only sandbox programs can be deleted. Production programs cannot be deleted.
+   ![Delete sandbox from program card](assets/delete-sandbox2.png)
