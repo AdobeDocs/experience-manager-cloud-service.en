@@ -172,6 +172,10 @@ under `/apps/<my-project>/osgiconfig/config` with the syntax below. The `smtp.ho
 1. For outlook, the `smtp.host` configuration value is `smtp.office365.com`
 1. At runtime, pass in the `refreshToken values` and `clientSecret` secrets using the [Cloud Manager variables API](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) or by using [Cloud Manager to add variables](/help/implementing/cloud-manager/environment-variables.md). The values for the variables `SECRET_SMTP_OAUTH_REFRESH_TOKEN`  and `SECRET_SMTP_OAUTH_CLIENT_SECRET` should be defined.
 
+### Troubleshooting {#troubleshooting}
+
+If the mail service is not working properly, regenerate the `refreshToken`. Use [Generating the Refresh Token](#generating-the-refresh-token) when you use SMTP and OAuth2, or [Generating the Refresh Token](#graph-generating-the-refresh-token) when you use Microsoft Graph. Pass the new value via Cloud Manager API; deployment can take a few minutes.
+
 ## Microsoft Graph API for Microsoft&reg; Outlook {#microsoft-graph-api}
 
 Follow the same Azure app registration steps as described in [Microsoft Outlook](#microsoft-outlook), with the following difference in step 6 (API Permissions). Use the Microsoft Graph `Mail.Send` delegated permission instead of the Outlook SMTP scope:
@@ -245,6 +249,4 @@ In the cURL token request, replace the scope with:
 
 1. At runtime, pass in the `refreshToken` and `clientSecret` secrets using the [Cloud Manager variables API](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) or by using [Cloud Manager to add variables](/help/implementing/cloud-manager/environment-variables.md). The values for the variables `SECRET_SMTP_OAUTH_REFRESH_TOKEN` and `SECRET_SMTP_OAUTH_CLIENT_SECRET` should be defined.
 
-### Troubleshooting {#graph-troubleshooting}
-
-If the mail service is not working properly, regenerate the `refreshToken` as described above, passing in the new value via Cloud Manager API. It takes a few minutes for the new value to be deployed.
+If mail still fails, see [Troubleshooting](#troubleshooting).
