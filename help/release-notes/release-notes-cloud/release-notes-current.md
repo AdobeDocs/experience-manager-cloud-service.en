@@ -141,13 +141,11 @@ Forms Manager now [supports versioning for Adaptive Forms (Core Components and F
 
 [Simplified Index Management](https://oak-indexing.github.io/oakTools/simplified.html) provides a simpler way to define custom indexes and customize out-of-the-box (OOTB) indexes using one JSON file, without copying full definitions or managing versions manually. Customizations merge with the latest OOTB index, and a new index version is created when needed.
 
-#### Cloud Manager MCP Server {#cm-mcp-server}
-
->[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
+#### Experience Governance MCP Server {#gov-mcp-server}
 
 Modern IDEs use the Model Context Protocol (MCP) to enable large language models (LLMs) to invoke tools exposed by MCP servers. Instead of integrating directly with low-level API specifications, developers can simply describe their intent in natural language.
 
-The Cloud Manager MCP Server allows you to interact with Cloud Manager APIs directly from your IDE using prompts. Supported scenarios include executing pipelines, checking environment status, and more.
+The **Governance MCP Server** allows you to safeguard brand integrity and compliance directly from your chatbot or IDE using prompts.
 
 Learn more about [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
 
@@ -155,12 +153,9 @@ Learn more about [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-ae
 
 #### Java API Deprecations {#java-api-deprecation}
 
-The deprecated APIs targeting 2/26/2026 removal should no longer be used in code. To prevent deployment blocks, remove API usage before **March 30, 2026**. Important dates:
+Since **April 14**, Cloud Manager pipelines that contain code using APIs targeting 2/26/2026 removal **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
 
-* **Starting January 26, 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs.
-* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
-* **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
-* **May 4, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe's standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected,and security risk exposure may increase further.
+Starting **May 4, 2026**, environments still using thse deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe's standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
 
 See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
@@ -213,7 +208,7 @@ The Development Agent's [pipeline troubleshooting](/help/ai-in-aem/agents/brand-
 
 To request access to the beta, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com). Pre-existing access to Agents in AEM is required.
 
-#### IDE AI tooling for AEM 6.5 to AEM Cloud Service Migration (Alpha Program) {#cm-ide-migration}
+#### IDE AI tooling for AEM 6.5 to AEM Cloud Service Migration (Beta Program) {#cm-ide-migration}
 
 Accelerate your migration from AEM 6.5 to AEM as a Cloud Service (Java stack) by using IDE AI tooling to act on the recommendations of the [Best Practices Analyzer Report](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
