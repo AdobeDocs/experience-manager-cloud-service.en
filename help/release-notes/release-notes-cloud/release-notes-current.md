@@ -149,6 +149,15 @@ The **Governance MCP Server** allows you to safeguard brand integrity and compli
 
 Learn more about [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
 
+#### IDE AI tooling for AEM Java and Dispatcher Development (Public Beta Program) {#ai-dev-beta}
+
+Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. 
+
+IDE tooling can be used by coding agents to generate and debug AEM code and dispatcher configuration.
+
+Learn more in the [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md) and feel free to email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) with questions or feedback.
+
+
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
 #### Java API Deprecations {#java-api-deprecation}
@@ -179,14 +188,6 @@ See the [deprecation article](/help/release-notes/deprecated-removed-features.md
 +++
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
-
-#### IDE AI tooling for AEM Java and Dispatcher Development (Public Beta Program) {#ai-dev-beta}
-
-Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. 
-
-Participate in the public beta (no sign-up necessary) to try out IDE tooling that can be used by coding agents to generate and debug AEM code and dispatcher configuration.
-
-Learn more in the [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md) beta documentation and email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) with questions or feedback.
 
 #### AEM Edge Functions (Beta Program) {#edge-functions}
 
