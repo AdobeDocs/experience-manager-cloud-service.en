@@ -164,7 +164,7 @@ Each item in `referencedFragments` contains:
 
 | Property | Type | Description |
 |--- |--- |--- |
-| `anchorId` | String | HTML-safe anchor ID (at fragment level; not a CF property) |
+| `anchorId` | String | HTML-safe anchor ID (at fragment level; not a Content Fragment property) |
 | `properties` | Map | Fragment metadata (same structure as above) |
 | `hasFields` | Boolean | True if the fragment has fields |
 | `fields` | Map | Direct access to fields within this fragment |
@@ -934,7 +934,7 @@ Some troubleshooting hints include:
 | Problem | Symptom | Solution |
 |--- |--- |--- |
 | Field shows HTML tags as text | `<p>Hello World</p>` displayed literally | Use triple braces: `{{{fields.description}}}` |
-| Nested CF fields are empty or show [object Object] | `{{{fields.author.name}}}` is blank | Enable hydration in the API call; verify field name spelling; check that `maxDepth` is deep enough |
+| Nested Content Fragment fields are empty or show [object Object] | `{{{fields.author.name}}}` is blank | Enable hydration in the API call; verify field name spelling; check that `maxDepth` is deep enough |
 | Multi-valued field shows only the first item | Array with five items renders only one | Use `{{#each fields.tags}}` to iterate all items |
 | Array index access not working | `{{{fields.tags[0]}}}` renders empty | Use dot-bracket syntax: `{{{fields.tags.[0]}}}` |
 | Referenced fragments not appearing | `hasReferencedFragments` is always false | Enable hydration: `?hydration=%7B%22enabled%22%3Atrue%7D;` also check `{{#if referencesError}}` |
@@ -1193,12 +1193,11 @@ The context variables:
 
 ```handlebars
 {{properties}}                <!-- Main fragment metadata -->
-{{fields}}                    <!-- Map keyed by field name to rendered values (such as strings, lists, nested maps for CF refs, commerce maps, HTML, and others) -->
+{{fields}}                    <!-- Map keyed by field name to rendered values (such as strings, lists, nested maps for Content Fragment references, commerce maps, HTML, and others) -->
 {{allFields}}                 <!-- List of { name, value } maps (uniform iteration) -->
 {{hasFields}}.                <!-- Boolean -->
 {{hasReferencedFragments}}.   <!-- Boolean -->
 {{referencedFragments}}       <!-- List of referenced-fragment maps -->
-
 ```
 
 ### Field access {#field-access}
@@ -1207,11 +1206,11 @@ How to access fields:
 
 ```handlebars
 {{{fields.fieldName}}}                    <!-- Direct field -->
-{{{fields.author.name}}}                  <!-- Nested CF field -->
+{{{fields.author.name}}}                  <!-- Nested Content Fragment field -->
 {{{fields.author.org.address.city}}}      <!-- Multi-level nesting -->
 {{{fields.tags.[0]}}}                     <!-- Array by index -->
 {{#each fields.tags}}...{{/each}}         <!-- Array iteration -->
-{{{fields.authors.[0].name}}}             <!-- Multi-valued CF reference -->
+{{{fields.authors.[0].name}}}             <!-- Multi-valued Content Fragment reference -->
 ```
 
 ### Control flow {#control-flow}
