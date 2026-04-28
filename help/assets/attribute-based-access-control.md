@@ -18,8 +18,8 @@ For example, ALLOW access to user group with Group ID = 1011 when asset metadata
 
 ABAC rules in Content Hub can be configured using the following approaches:
 
-* **Self-serve** using AI Assistant in Content Hub, powered by AEM Governance Agent
-* **Spreadsheet-based configuration** through Adobe Support
+* **Self-serve configuration** using [AI Assistant in Content Hub](#configure-abac-using-ai-assistant-in-content-hub), powered by AEM Governance Agent  
+* **Spreadsheet-based configuration** through [Adobe Support](#configure-abac-using-spreadsheet)
 
 With AI Assistant in Content Hub, administrators can define and manage ABAC rules using metadata and natural language. This enables faster rule configuration and reduces dependency on manual support workflows.
 
@@ -44,11 +44,12 @@ ABAC rules in Content Hub can be configured using the following approaches:
 * **Spreadsheet-based configuration via Adobe Support**  
   Administrators can define ABAC rules in a spreadsheet and submit them through Adobe Support for configuration.
 
-## Configure ABAC using AI Assistant in Content Hub {#configure-abac-ai-assistant}
+## Configure ABAC using AI Assistant in Content Hub
 
 With AI Assistant in Content Hub, powered by AEM Governance Agent, you can create and manage ABAC rules directly in Content Hub using natural language.
 
 You can:
+* Search for existing rules
 * Create rules
 * Update rules
 * Delete rules
@@ -119,7 +120,7 @@ After you start using AI Assistant, you can manage ABAC rules conversationally.
 
 * Show available groups and metadata properties to set rules
 
-## Configure ABAC using Spreadsheet {#configure-abac-spreadsheet}
+## Configure ABAC using Spreadsheet
 
 If AI Assistant is not enabled for your organization, you can configure ABAC rules using the spreadsheet-based workflow.
 
