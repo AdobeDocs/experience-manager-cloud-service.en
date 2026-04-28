@@ -379,6 +379,8 @@ While you should remediate all deprecated APIs over time, prioritize any APIs li
 
 After updating your code, verify that no deprecated API usage remains in Cloud Manager by checking the results of the code quality step.
 
+If the updates are not made by May 4th, you will no longer receive AEM version updates. To receive Adobe release updates again, the fullstack pipeline must be successfully executed.
+
 ### General Guidelines
 
 If you use a 3rd party library that currently requires Deprecated API, try updating to a newer version of that 3rd party library.
