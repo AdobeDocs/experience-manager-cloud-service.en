@@ -30,7 +30,7 @@ During the deprecation time window, Adobe will remind customers of the actions t
 >* **Starting January 26, 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs, if a pipeline has been recently executed.
 >* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
 >* **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
->* **May 4, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further. To once again receive Adobe release updates again, a fullstack pipeline must be successfully executed.
+>* **May 4, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further. To once again receive Adobe release updates, a fullstack pipeline must be successfully executed; the update will then be applied within a few days.
 >
 
 ## Deprecated Functionality {#deprecated-features}
@@ -379,7 +379,7 @@ While you should remediate all deprecated APIs over time, prioritize any APIs li
 
 After updating your code, verify that no deprecated API usage remains in Cloud Manager by checking the results of the code quality step.
 
-If the updates are not made by May 4th, you will no longer receive AEM version updates. To receive Adobe release updates again, the fullstack pipeline must be successfully executed.
+If the updates are not made by May 4th, you will no longer receive AEM version updates. To receive Adobe release updates again, the fullstack pipeline must be successfully executed; the update will then be applied within a few days.
 
 ### General Guidelines
 
