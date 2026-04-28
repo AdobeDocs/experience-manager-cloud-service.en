@@ -86,7 +86,7 @@ The key concepts of Handlebars:
 | Syntax | Description | When to use |
 |--- |--- |--- |
 | `{{ }}` | Escapes HTML special characters | Metadata, labels, booleans |
-| `{{{ }}}` | Outputs raw HTML (unescaped) | Field values and asset output |
+| `{{{ }}}` | Outputs raw HTML (unescaped) | Rich text and asset output |
 | `{{! }}` | Handlebars-only comment | Template documentation |
 
 >[!IMPORTANT]
@@ -99,6 +99,13 @@ When your template is rendered, it receives a context object containing all the 
 
 * the fragment that you have selected
 * all further fragments referenced from that selected fragment
+
+  >[!NOTE]
+  >
+  >Fragments can be referenced:
+  >
+  >* in the UI: to the default depth of 5
+  >* via the API: the depth is configurable, up to the maximum depth of 10
 
 ### Content Fragment {#content-fragment}
 
@@ -125,19 +132,19 @@ The `properties` object has the same structure for the selected fragment and for
 | `createdDate` | String | ISO-8601 created date | |
 | `modifiedDate` | String | ISO-8601 modified date | |
 | `publishedDate` | String | ISO-8601 published date | |
-| `status` | String | Content Fragment status | `DRAFT` |
+| `status` | String | Replication status for Publish tier | `DRAFT` |
 | `model` | Map | Contains: `id`, `path`, `name`, `technicalName`, `description` | |
 | `validationStatus` | List | Entries like `{property, message}` | |
-| `previewReplicationStatus` | String | Preview replication status | |
-| `tags` | List | Each item: `id`, `title`, `titlePath`, `name`, `path`, `description` | |
-| `fieldTags` | List | Same structure as `tags` | |
+| `previewReplicationStatus` | String | Replication status for Preview tier | |
+| `tags` | List | Fragment level tags. Each item: `id`, `title`, `titlePath`, `name`, `path`, `description` | |
+| `fieldTags` | List | Field level tags. Same structure as `tags`. | |
 
 Examples: Template access
 
-for field HTML:
+For the (selected) Content Fragment:
 
 ```handlebars
-{{properties.title}}, {{properties.description}}, {{{fields.description}}} 
+{{properties.title}}, {{properties.description}}, {{{fields.field_name}}} 
 ```
 
 ### Referenced Content Fragments {#referenced-content-fragments}
@@ -163,16 +170,16 @@ Each item in `referencedFragments` contains:
 | `fields` | Map | Direct access to fields within this fragment |
 | `allFields` | List | Array of `{name, value}` for iteration |
 
-Examples: Template access for referenced Content Fragments:
+Examples: Template access for the first referenced Content Fragment (first item in the 0-indexed list):
 
 ```handlebars
-{{anchorId}}, {{properties.title}}, {{properties.description}}
+{{referencedFragments.[0].anchorId}}, {{referencedFragments.[0].properties.title}}, {{referencedFragments.[0].properties.description}}
 ```
 
 Or from the fields map: 
 
 ```handlebars
-{{{ fields.referenced_cf_field.properties.description }}}
+{{{ fields.referenced_cf_field_name.properties.description }}}
 ```
 
 ## Basic field access {#basic-field-access}
@@ -187,7 +194,7 @@ Access fields directly by name using the fields map:
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{{main_cf_title}}</title>
+  <title>{{properties.title}}</title>
 </head>
 <body>
   <article>
@@ -206,9 +213,9 @@ Access fields directly by name using the fields map:
 
 Remember:
 
-* Use triple braces `{{{ }}}` for field values — they contain pre-rendered HTML
-* Field names **must** match your Content Fragment Model **exactly**
-* Missing fields render as empty strings — no errors thrown
+* Use triple braces `{{{ }}}` for field values if they contain pre-rendered HTML (rich text)
+* Field names (title, subtitle, description, primaryImage) **must** match your Content Fragment Model **exactly**
+* Missing fields are not rendered - no errors are thrown and the Handlebars syntax remains present (and visible) in the rendered HTML Fragment
 
 ### Iterate through all fields {#iterate-through-all-fields}
 
@@ -293,7 +300,7 @@ The system supports unlimited nesting depth:
 </article>
 ```
 
-Pattern: `fields.level1.level2.level3.fieldName` (unlimited depth).
+Pattern: `fields.level1.level2.level3.fieldName` (limited depth; default is 5, can be extended to 10 by using the API)
 
 ### API parameter requirement: hydration {#api-parameter-requirements}
 
@@ -527,7 +534,7 @@ An example of a basic if-else construct:
 
 ```handlebars
 {{#if hasMainDescription}}
-<p class="description">{{main_cf_description}}</p>
+<p class="description">{{properties.description}}</p>
 {{else}}
 <p class="no-description">No description available.</p>
 {{/if}}
@@ -570,22 +577,6 @@ An example of nested conditional:
 
   {{#if fields.author.website}}
   <a href="{{{fields.author.website}}}">Visit Website</a>
-  {{/if}}
-</div>
-{{/if}}
-```
-
-### Error handling {#error-handling}
-
-The error handling pattern:
-
-```handlebars
-{{#if referencesError}}
-<div class="error-message">
-  <strong>Error Loading Referenced Fragments</strong>
-  <p>An error occurred while loading referenced content.</p>
-  {{#if referencesErrorMessage}}
-  <p class="error-details">{{referencesErrorMessage}}</p>
   {{/if}}
 </div>
 {{/if}}
@@ -680,21 +671,6 @@ An example of dynamic CSS classes:
 </ul>
 ``` 
 
-### Fallback values {#fallback-values}
-
-An example of fallback:
-
-```handlebars
-<!-- Show title, falling back to path if title is missing -->
-<h1>
-  {{#if main_cf_title}}
-  {{main_cf_title}}
-  {{else}}
-  {{main_cf_path}}
-  {{/if}}
-</h1>
-``` 
-
 ## Complete Examples {#complete-examples}
 
 Several complete examples are provided for reference.
@@ -771,59 +747,6 @@ Required API call:
 GET /adobe/sites/cf/fragments/{id}/preview?hydration=%7B%22enabled%22%3Atrue%2C%22maxDepth%22%3A1%7D
 ```
 
-### Product catalog with categories {#product-catalog-with-categories}
-
-A product catalog with categories:
-
-```handlebars
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{{main_cf_title}} - Product Catalog</title>
-  <style>
-    .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-    .product { border: 1px solid #ddd; padding: 15px; border-radius: 8px; }
-    .price { color: #28a745; font-size: 1.5em; font-weight: bold; }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>{{main_cf_title}}</h1>
-    {{#if hasMainDescription}}
-    <p>{{main_cf_description}}</p>
-    {{/if}}
-  </header>
-
-  <main>
-    {{#if fields.products}}
-    <div class="product-grid">
-      {{#each fields.products}}
-      <article class="product">
-        {{#if this.image}}{{{this.image}}}{{/if}}
-        <h2>{{{this.name}}}</h2>
-        <p>{{{this.description}}}</p>
-        {{#if this.price}}
-        <div class="price">${{{this.price}}}</div>
-        {{/if}}
-        {{#if this.specifications}}
-        <ul>
-          {{#each this.specifications}}
-          <li>{{{this}}}</li>
-          {{/each}}
-        </ul>
-        {{/if}}
-      </article>
-      {{/each}}
-    </div>
-    {{else}}
-    <p>No products available.</p>
-    {{/if}}
-  </main>
-</body>
-</html>
-``` 
-
 ### Generic table view (no prior knowledge of fields) {#generic-table-view-no-prior-knowledge-of-fields}
 
 A generic table view, without an inherent knowledge of fields. The is similar to the **Generic Template**:
@@ -844,8 +767,8 @@ A generic table view, without an inherent knowledge of fields. The is similar to
 </head>
 <body>
   <header>
-    <h1>{{main_cf_title}}</h1>
-    {{#if hasMainDescription}}<p>{{main_cf_description}}</p>{{/if}}
+    <h1>{{properties.title}}</h1>
+    {{#if properties.description}}<p>{{properties.description}}</p>{{/if}}
     <p><small>Path: {{main_cf_path}}</small></p>
   </header>
 
@@ -895,13 +818,6 @@ A generic table view, without an inherent knowledge of fields. The is similar to
     {{/each}}
   </section>
   {{/if}}
-
-  {{#if referencesError}}
-  <div style="background: #ffebee; border-left: 4px solid #f44336; padding: 15px; margin: 20px 0;">
-    <strong>Error Loading Referenced Fragments</strong>
-    {{#if referencesErrorMessage}}<p>{{referencesErrorMessage}}</p>{{/if}}
-  </div>
-  {{/if}}
 </body>
 </html>
 ``` 
@@ -910,7 +826,7 @@ A generic table view, without an inherent knowledge of fields. The is similar to
 
 Best practices include:
 
-1. Always use triple braces for field values. 
+1. Always use triple braces for field values that contain HTML markup content. 
 
    * Field values are pre-rendered HTML. 
 
@@ -947,7 +863,7 @@ Best practices include:
    ```handlebars
    {{! ===== HEADER SECTION ===== }}
    <header>
-     <h1>{{main_cf_title}}</h1>
+     <h1>{{properties.title}}</h1>
    </header>
 
    {{! ===== MAIN CONTENT ===== }}
@@ -981,7 +897,7 @@ Best practices include:
    <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
-     <title>{{main_cf_title}}</title>
+     <title>{{properties.title}}</title>
    </head>
    <body>
      <!-- your content here -->
@@ -1340,22 +1256,6 @@ The custom template helpers:
 {{{text fields.price class="price" id="p1"}}}             <!-- Span with multiple attrs -->
 {{{text this class="item" data-index=@index}}}            <!-- In loops -->
 ```
-
-### Triple braces requirement {#triple-braces-requirement}
-
-**Always** use triple braces `{{{ }}}` for:
-
-* Field values: `{{{fields.description}}}`
-* Asset fields: `{{{fields.heroImage}}}`
-* Asset helper: `{{{asset fields.image class="x"}}}`
-* Text helper: `{{{text fields.title class="x"}}}`
-
-**Only** use double braces `{{ }} ` for:
-
-* Metadata: `{{main_cf_title}}`
-* Booleans: `{{hasFields}}`
-* Field names: `{{name}}`
-* Loop variables: `{{@index}}`
 
 ## Additional resources {#additional-resources}
 
