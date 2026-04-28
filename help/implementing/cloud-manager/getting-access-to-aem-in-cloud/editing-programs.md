@@ -80,6 +80,14 @@ Before marking for deletion is initiated, the system validates whether the produ
 
    ![Delete Production Program dialog box](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete2.png)
 
+
+   >[!NOTE]
+   >
+   >If the production program has blocking resources, such as environments that are currently updating, the **Mark for deletion** button is disabled. You must wait until all program resources are unlocked before you can mark the program for deletion.
+   >
+   >![The Mark production program for deletion dialog box showing that the program cannot be deleted because it has blocking resources](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete2b.png)
+
+
 1. To confirm, type the program name as displayed in the dialog box, then click **Mark for deletion**.
 
    After confirmation, the production program shows a **Marking for deletion** status while the process runs.
