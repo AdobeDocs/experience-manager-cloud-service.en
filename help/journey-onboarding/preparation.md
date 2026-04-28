@@ -22,7 +22,8 @@ After reading this document, you should understand
 
 Don't worry if you are not familiar with all the terms used on this page. The terms are explained in the next part of the journey.
 
- <!-- REMOVED VIDEO AS PER CQDOC-23130. VIDEO NEEDS TO BE RECREATED/UPDATED
+ <!--
+  REMOVED VIDEO AS PER CQDOC-23130. VIDEO NEEDS TO BE RECREATED/UPDATED
 ## Video {#video}
 
 This video summarizes the onboarding process laid out in this journey and is intended as an option overview. All topics in the video are presented in detail within the journey.

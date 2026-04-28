@@ -2,7 +2,7 @@
 title: Content Discovery Agent
 description: Learn how to use the content discovery agent to deliver relevant AEM content on demand through natural, conversational prompts for a streamlined, click-free discovery experience.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
 ---
 
@@ -93,7 +93,7 @@ For information on the MCP endpoint to access content discovery agent, contact A
    * **Search based on file format, asset type, asset status and Created by Email ID**: Show videos in `.mp4` format that are approved and `created by <user email ID>`.
    * **Search based on file format, asset type, asset status and  Created Date**: Show images in `.PNG` format that are created after January 1, 2025 and `published by <user email ID>`
    * **Search based on MIME type, Created Date, and Published by Email ID**: Show `image/jpeg` created after `January 1, 2025` and `published by <user email ID>`.
-   * **Search based on file format and custom metadata properties**: Show images in `.JPEG` format that have `Product SKU ID as <SKU value>`.
+   * **Search based on file format and custom metadata properties**: Show images in `.JPEG` format that have `Product SKU ID = <SKU value>` (must be in metadata property = value format).
 
    * **Search for assets with missing metadata**: Show assets created in the last 90 days with `<Name of metadata property including custom properties>` is blank.
 
