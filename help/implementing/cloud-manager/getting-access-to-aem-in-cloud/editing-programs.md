@@ -72,7 +72,7 @@ Before marking for deletion is initiated, the system validates whether the produ
 1. In the **Quick access** section, click **Experience Manager**.
 1. In the left side panel, click **Cloud Manager**.
 1. Select the appropriate organization.
-1. On the **My Programs** page, for the production program that you want to mark for deletion, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), then click **Mark for deletion**.
+1. On the **My Programs** page, for the production program that you want to mark for deletion, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg), then click **Delete program**.
 
    ![Selecting Delete Program from the drop-down list of a production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete1.png)*Example production program seen above is for illustration purposes only.*
 
