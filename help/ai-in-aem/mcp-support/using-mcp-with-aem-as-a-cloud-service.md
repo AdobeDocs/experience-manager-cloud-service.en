@@ -2,7 +2,7 @@
 title: Using MCP with AEM as a Cloud Service
 description: Learn how to use the Model Context Protocol with AEM as a Cloud Service
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
 ---
 # Using MCP with AEM as a Cloud Service {#using-mcp-with-aem-as-a-cloud-service}
@@ -14,7 +14,7 @@ Many Adobe Experience Manager (AEM) teams now work in Integrated Development Env
 With AEM's MCP integration, different personas can collaborate around the same content:
 
 * **Developers** can orchestrate content operations and workflows from their IDE or chat application
-* **Practitioners** and content architects can manage sites, content fragments, and assets with AI assistance while staying within AEM's existing permission model.
+* **Practitioners** and content architects can manage sites and content fragments, and import assets, with AI assistance while staying within AEM's existing permission model.
 
 >[!IMPORTANT]
 >
@@ -44,11 +44,12 @@ AEM exposes MCP servers as HTTP endpoints. The endpoints listed below are relati
 
 ### MCP Servers {#mcp-servers}
 
-| **MCP Server** | **Endpoint**  | **Description**                                                                                                      |
-|---|---|----------------------------------------------------------------------------------------------------------------------|
-| **Content**  | `/content`  | All low-level content operations, including create, read, update, and delete (CRUD) for pages, fragments and assets. |
-| **Content (read-only)** | `/content-readonly`  | Read-only content operations (Get, List/Search) for pages, fragments, and assets.                                    |
-| **Cloud Manager** | `/cloudmanager`  | Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered. <br><br>*This MCP server is now in **beta**; to request access, email [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com) with a description of your use case.* |
+| **MCP Server** | **Endpoint**  | **Description**                                                                                                                                                                                                                                                                                                                                     |
+|---|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Content**  | `/content`  | Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing.                                                                                                                                                                                                                                |
+| **Content (read-only)** | `/content-readonly`  | Read-only content operations (Get, List/Search) for pages and content fragments.                                                                                                                                                                                                                                                                    |
+| **Cloud Manager** | `/cloudmanager`  | Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered.                                                                                                                                                                                                                            |
+| **Experience Governance** | `/experience-governance`  | Evaluate content (text, images, pages) against brand governance rules, and list brand configurations and checks.<br/>Customers must signup for the [agents trial or have a paid license](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en) in order to access the Experience Governance MCP.|
 
 The specific tools exposed by each MCP server may evolve over time. In practice, you can ask your MCP-enabled application to discover tools via a prompt such as:
 
@@ -76,7 +77,7 @@ AEM's MCP servers are designed to work with a defined set of MCP-compatible appl
 * Augment Indent Desktop App
 * Cline (JetBrains, VS Code, Cursor)
 * Cursor
-* GitHub Copilot (VS Code)
+* GitHub Copilot (JetBrains, VS Code)
 * Kiro (Desktop App, CLI)
 * OpenAI Codex (Desktop App)
 * OpenAI Codex CLI
@@ -98,6 +99,7 @@ Step-by-step guides covering both steps are available for:
 * [Anthropic Claude](/help/ai-in-aem/mcp-support/setup-claude.md)
 * [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
 * [Cursor](/help/ai-in-aem/mcp-support/setup-cursor.md)
+* [JetBrains with GitHub Copilot](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
 * [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
 
 ### AEM Configuration {#aem-configuration}
@@ -171,8 +173,8 @@ Some representative scenarios include:
   * Create new fragments
   * Update existing fragments when campaign messaging changes.
 
-* **Assets management**
-  * Import assets with Status Check
+* **Asset importing**
+  * Import assets with status check
 
 ### Example Workflows {#example-workflows}
 

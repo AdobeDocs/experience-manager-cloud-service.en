@@ -9,7 +9,7 @@ exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
 ---
 # Launches for Content Fragments {#launches-for-content-fragments}
 
-In Adobe Experience Manager (AEM) as a Cloud Service, Launches enable you to efficiently develop content for a future release.
+In Adobe Experience Manager (AEM) as a Cloud Service, a Launch enables you to efficiently develop content for a future release.
 
 A *Launch* is created to allow you to make changes in preparation for future publication, at the same time as maintaining your current content. For Content Fragments this means that you are effectively editing two versions at the same time: content that is currently published, and a version of that content, to be published at a time in the future. Once that time arrives you can replace the content of the original Content Fragments and publish the new versions. 
 
@@ -19,7 +19,7 @@ A *Launch* is created to allow you to make changes in preparation for future pub
 >
 >For full details see [Launches for Pages](/help/sites-cloud/authoring/launches/overview.md).
 
-You create a *Launch*, then edit and update your Content Fragments in your *Launch*. If changes are made to the *Source* fragments during this phase, you can copy them to the *Launch* with the *Rebase* operation. When ready, *Promote* duplicates the launch content back to the source. You can then activate your source fragments, either manually or automatically (dependent on fields set when creating and editing the launch). You can also specify whether referenced fragments are to be included in this process.
+You create a *Launch*, then edit and update your Content Fragments in your *Launch*. If changes are made to the *Source* fragments during this phase, you can copy the *Source* (including changes) to the *Launch* with the **[Rebase](#rebase-a-launch-from-source)** operation. When ready, *Promote* duplicates the launch content back to the source. You can then activate your source fragments, either manually or automatically (dependent on fields set when creating and editing the launch). You can also specify whether referenced fragments are to be included in this process.
 
 For example, the seasonal product fragments of your online store are updated quarterly so that the featured products align with the current season. To prepare for the next quarterly update, you can create a launch of the appropriate fragments. Throughout the quarter, the following changes are accumulated in the launch copy:
 
@@ -82,9 +82,9 @@ While the right panel enables you to:
 
   * **Publish Ready**; Enabling this toggle will automatically publish the fragments when the launch is promoted to the source.
 
-* And also define:
+* Define a **Promote Date** and Time: if the [launch is to be automatically promoted](#promote-automatically)
 
-  * A **Promote Date** and Time: if the [launch is to be automatically promoted](#promote-automatically)
+* View, and take further action on, **[Jobs](#jobs-history)** that have been run (**Compare Launch to Source**)
 
 ## Create a Launch {#create-a-launch}
 
@@ -181,7 +181,7 @@ To manage the Content Fragments in your launch, and also edit their content:
 
 ## Compare Launch to Source {#compare-launch-to-source}
 
-It is recommended that before any Rebase or Promote action you always compare the source and launch to confirm the changes and their impact on your content (both actions overwrite the target content):
+It is recommended that before any **[Rebase](#rebase-a-launch-from-source)** or **[Promote](#promote-a-launch-to-source)** action you always compare the source and launch to confirm the changes and their impact on your content (both actions overwrite the target content):
 
 1. Navigate to the Content Fragments console.
 
@@ -197,7 +197,6 @@ It is recommended that before any Rebase or Promote action you always compare th
        * Source: blue
        * Launch: pink
        * Conflicts: yellow
-   * The [Promote](#promote-a-launch-to-source) and [Rebase](#rebase-a-launch-from-source) actions are available from the top right.
    * **Updates found**: In the upper left, a summary of all updates is displayed. The number of source updates in blue, the number of launch updates in pink, and updates to both (conflicts) in yellow. 
      * The eye icons allow you to show, or hide, the actual content updates for a clearer overview.
    * **Include** sliders allow you to define the Content Fragments to be included in the subsequent Promote or Rebase operation:
@@ -211,11 +210,38 @@ It is recommended that before any Rebase or Promote action you always compare th
    * Fragment content is displayed at field-level (Content Fragment element/datatype-level); with highlights indicating changes. 
    * Select **View** to recompute the differences.
 
+1. The [Promote](#promote-a-launch-to-source) and [Rebase](#rebase-a-launch-from-source) actions are available from the top right.
+
+1. **Back** returns you to the console. If you want to review these specific differences again you can view the **[Jobs](#jobs-history)** entries.
+
    ![Compare Source and Launch](/help/sites-cloud/administering/content-fragments/assets/cf-launches-compare.png)
+
+## Jobs history {#jobs-history}
+
+To view details of past **Compare to Source** jobs that have been run:
+
+1. Navigate to the Content Fragments console.
+
+1. Open the **Launches** tab.
+
+1. Select your launch, the information panel will open at the right.
+
+1. In the **Jobs** section you see **launchDifferences** entries for each of the **Compare to Source** jobs that have been run:
+
+   ![Jobs history](/help/sites-cloud/administering/content-fragments/assets/cf-launches-jobs.png)
+
+1. Select:
+
+   * The magnifying glass icon to open full details for a specific job.
+     This returns to you the **[Compare Launch to Source](#compare-launch-to-source)** view, with the available actions.
+   * **View log** to see an overview of details for all jobs. 
+     From here you can also select a specific job and then show the **Results**. This takes you back to the **[Compare Launch to Source](#compare-launch-to-source)** view, with the available actions.
+
+   Both of these actions take you to the appropriate **Compare Launch to Source** job. From here you can **[Rebase](#rebase-a-launch-from-source)** or **[Promote](#promote-a-launch-to-source)** your launch as it was at that point.
 
 ## Rebase a Launch (from Source) {#rebase-a-launch-from-source}
 
-When updates have been made to the source fragments and you want to copy these changes to your launch:
+When updates have been made to the source fragments, you can copy the source (including changes) to your launch with the **Rebase** action:
 
 1. Navigate to the Content Fragments console.
 
@@ -229,9 +255,17 @@ When updates have been made to the source fragments and you want to copy these c
 >
 >You can also **Rebase** a launch from **[Compare Launch to Source](#compare-launch-to-source)**.
 
+>[!NOTE]
+>
+>It is recommended that before any **Rebase** or **Promote** action you always [compare the source and launch](#compare-launch-to-source) to confirm the changes and their impact on your content - as both actions overwrite the target content.
+
 ## Promote a Launch (to Source) {#promote-a-launch-to-source}
 
 When your launch is ready to be published it should be copied to the source. You can either do this in the console, or configure the settings for it to happen automatically at a specific date and time.
+
+>[!NOTE]
+>
+>It is recommended that before any **Rebase** or **Promote** action you always [compare the source and launch](#compare-launch-to-source) to confirm the changes and their impact on your content - as both actions overwrite the target content.
 
 ### Promote Manually {#promote-manually}
 

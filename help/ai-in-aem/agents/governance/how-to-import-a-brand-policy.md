@@ -2,7 +2,7 @@
 title: How to Import A Brand Policy
 description: Use the Adobe Governance Agent to Import a Brand Policy
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 8057e82b-36d4-4280-b433-f26cfcfe9fe6
 ---
 # How to Import a Brand Policy {#how-to-import-a-brand-policy}

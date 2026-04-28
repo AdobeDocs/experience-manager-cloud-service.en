@@ -34,9 +34,28 @@ data:
     ...
 ```
 
+## Deploying secrets: Environment variables vs. Pipeline variables {#deploying-secrets}
+
+You can deploy secrets used in CDN configuration in two ways:
+
+* **Pipeline secret variables** – Configured in Cloud Manager as [pipeline variables](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) of type **Secret** with **Step Applied** set to **Deploy**. These are available as config pipeline level configuration..
+
+* **Environment secret variables** – Configured in Cloud Manager as [environment variables](/help/implementing/cloud-manager/environment-variables.md) of type **Secret**  and **Service Applied** set to **All**. These are available as an environment level configuration.
+
+**Preferred: Pipeline secret variables.** Use pipeline secret variables when possible, because they are deployed together with your configuration in the same pipeline run. This keeps secrets and configuration in sync and simplifies rollouts.
+
+You cannot mix pipeline secrets with environment secrets for the same configuration. If pipeline secret variables are defined for the deploy step, they are used in preference.
+
+The following image shows how to configure pipeline secret variables in Cloud Manager:
+
+![Configuring pipeline secret variables](/help/implementing/dispatcher/assets/pipeline-secrets-configuration.png)
+
+For full details on adding, editing, and managing pipeline variables (including secrets), see [Pipeline variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).
+
+## Guidelines for working with secrets {#secrets-guidelines}
+
 Here are some guidelines to keep in mind when working with secrets:
 
-* Environment secrets must de deployed as a [Cloud Manager secret-type environment variable](/help/operations/config-pipeline.md#secret-env-vars). For the Service Applied field, select All.
 * Secret references are not interpolated inside strings (eg. `"Token ${{AUTH_TOKEN}}"` will not work)
 * A referenced environment secret should not be removed if it is still referenced in the configuration. 
 
