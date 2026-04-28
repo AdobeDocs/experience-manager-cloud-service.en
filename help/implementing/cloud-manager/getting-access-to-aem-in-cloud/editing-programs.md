@@ -60,7 +60,7 @@ When a production program is marked for deletion, the following occurs:
 * The credit associated with the production program is returned to the customer.
 * All environments belonging to the production program are taken down.
 
-Before deletion is initiated, the system validates whether the production program is eligible for deletion. If the transition fails, the production program moves to a `Failed to mark for deletion` state instead.
+Before marking for deletion is initiated, the system validates whether the production program is eligible for deletion. If the marking fails, the production program moves to a `Failed to mark for deletion` state instead.
 
 >[!NOTE]
 >
