@@ -112,7 +112,7 @@ You can restore a production program that has been *marked* for deletion as long
 
    ![Unmarking the scheduled permanent removal date of the production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-unmarkfordelete6.png) 
 
-   The production program is restored and is no longer scheduled for permanent removal.
+   The production program will move to unmarking from deletion.
 
 ## Delete a sandbox program {#delete-sandbox-program}
 
