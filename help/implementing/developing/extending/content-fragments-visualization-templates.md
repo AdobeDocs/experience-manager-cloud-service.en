@@ -1192,14 +1192,13 @@ Some quick reference information is provided for reference.
 The context variables:
 
 ```handlebars
-{{main_cf_title}}             <!-- Main fragment title -->
-{{main_cf_description}}       <!-- Main fragment description -->
-{{main_cf_path}}              <!-- Main fragment JCR path -->
-{{hasMainDescription}}        <!-- Boolean -->
-{{hasFields}}                 <!-- Boolean -->
-{{hasReferencedFragments}}    <!-- Boolean -->
-{{referencesError}}           <!-- Boolean -->
-{{referencesErrorMessage}}    <!-- String or null -->
+{{properties}}                <!-- Main fragment metadata -->
+{{fields}}                    <!-- Map keyed by field name to rendered values (such as strings, lists, nested maps for CF refs, commerce maps, HTML, and others) -->
+{{allFields}}                 <!-- List of { name, value } maps (uniform iteration) -->
+{{hasFields}}.                <!-- Boolean -->
+{{hasReferencedFragments}}.   <!-- Boolean -->
+{{referencedFragments}}       <!-- List of referenced-fragment maps -->
+
 ```
 
 ### Field access {#field-access}
