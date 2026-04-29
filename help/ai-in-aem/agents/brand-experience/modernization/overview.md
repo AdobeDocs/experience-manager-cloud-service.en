@@ -2,7 +2,7 @@
 title: Experience Modernization Agent Overview
 description: Learn how the Experience Modernization Agent onboards new websites into Edge Delivery Services with the help of AI.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: c23a6f55-2ba8-4290-b7e8-06cad5de0fc8
 ---
 
@@ -62,6 +62,10 @@ Get started with the Experience Modernization Console!
 
 * If you are modernizing your site by targeting Document Authoring, [get started here.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
 * If you are modernizing your site by targeting AEM authoring, [get started here.](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
+
+## Project Documentation Skill {#project-documentation}
+
+Recognizing the time-intensive nature of project handovers, [the project documentation skill](/help/ai-in-aem/agents/brand-experience/modernization/project-documentation.md) can automatically generate comprehensive documentation once authoring and development work is complete.
 
 ## Agentic Outcome Engineer (AOE) Delivery {#aoe-delivery}
 

@@ -63,10 +63,12 @@ Asset URLs remain unchanged, and the cache control header sent to browsers (and 
 
 The cache purge triggers automatically when an asset is updated, modified, archived, or deleted.
 
-<!--The cache purge triggers automatically in the following circumstances:
+<!--
+The cache purge triggers automatically in the following circumstances:
  
  - when an asset is updated, modified, or archived.
- - when an asset reaches `ready_for_delivery` state after approval.-->
+ - when an asset reaches `ready_for_delivery` state after approval.
+ -->
 
 +++
 

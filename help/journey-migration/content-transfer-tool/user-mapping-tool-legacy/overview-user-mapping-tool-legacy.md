@@ -14,7 +14,8 @@ role: Admin
 >
 >This documentation refers to a deprecated version of the tool. For more information on the latest version, see [Group Migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md).
 
-<!-- Alexandru: drafting this for now
+<!--
+ Alexandru: drafting this for now
 
 NOTE: "LEGACY" for user mapping includes everything before (that is, not including) 2.0.16 of CTT.
 
