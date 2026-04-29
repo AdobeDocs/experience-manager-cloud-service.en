@@ -104,8 +104,8 @@ When your template is rendered, it receives a context object containing all the 
   >
   >Fragments can be referenced:
   >
-  >* in the UI: to the default depth of 5
-  >* via the API: the depth is configurable, up to the maximum depth of 10
+  >* in the UI: to the maximum depth of 5
+  >* when using the API: the depth is configurable, up to the maximum depth of 10
 
 ### Content Fragment {#content-fragment}
 
@@ -300,7 +300,7 @@ The system supports unlimited nesting depth:
 </article>
 ```
 
-Pattern: `fields.level1.level2.level3.fieldName` (limited depth; default is 5, can be extended to 10 by using the API)
+Pattern: `fields.level1.level2.level3.fieldName` (limited depth; default is 5, can be extended to 10 when using the API)
 
 ### API parameter requirement: hydration {#api-parameter-requirements}
 
@@ -659,7 +659,7 @@ An example of dynamic CSS classes:
 
 ```handlebars
 <article class="content-fragment {{#if hasMainDescription}}with-description{{/if}} {{#if hasReferencedFragments}}has-refs{{/if}}">
-  <h1>{{main_cf_title}}</h1>
+  <h1>{{properties.title}}</h1>
 </article>
 
 <ul class="tag-list">
@@ -684,7 +684,7 @@ A blog post with author details:
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{main_cf_title}}</title>
+  <title>{{properties.title}}</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 40px; }
     .author-card { background: #f5f5f5; padding: 20px; border-radius: 8px; }
@@ -756,7 +756,7 @@ A generic table view, without an inherent knowledge of fields. The is similar to
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{main_cf_title}}</title>
+  <title>{{properties.title}}</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 40px; }
     table { width: 100%; border-collapse: collapse; margin: 20px 0; }
@@ -769,7 +769,7 @@ A generic table view, without an inherent knowledge of fields. The is similar to
   <header>
     <h1>{{properties.title}}</h1>
     {{#if properties.description}}<p>{{properties.description}}</p>{{/if}}
-    <p><small>Path: {{main_cf_path}}</small></p>
+    <p><small>Path: {{properties.path}}</small></p>
   </header>
 
   {{#if hasFields}}
@@ -938,7 +938,7 @@ Some troubleshooting hints include:
 | Multi-valued field shows only the first item | Array with five items renders only one | Use `{{#each fields.tags}}` to iterate all items |
 | Array index access not working | `{{{fields.tags[0]}}}` renders empty | Use dot-bracket syntax: `{{{fields.tags.[0]}}}` |
 | Referenced fragments not appearing | `hasReferencedFragments` is always false | Enable hydration: `?hydration=%7B%22enabled%22%3Atrue%7D;` also check `{{#if referencesError}}` |
-| Template renders nothing | Empty page or blank output | Check for unclosed `{{#if}}` or `{{#each}}` blocks; add diagnostic output: `<pre>hasFields: {{hasFields}}`&#124;`title: {{main_cf_title}}</pre>` |
+| Template renders nothing | Empty page or blank output | Check for unclosed `{{#if}}` or `{{#each}}` blocks; add diagnostic output: `<pre>hasFields: {{hasFields}}`&#124;`title: {{properties.title}}</pre>` |
 | Comments appear in the rendered page | HTML comment text visible to end users | Use Handlebars comments `{{! comment }}` instead of HTML `<!-- comment -->` |
 | Conditional always evaluates to true | `{{#if fields.enabled}}` is always truthy | Note: the string `"false"` is truthy in Handlebars. Only actual `false`, `null`, `undefined`, `0`, `""`, and `[]` are falsy. |
 | Special characters rendering as entities | `&lt;`, `&amp;` shown instead of `<`, `&` | Use triple braces for pre-rendered HTML content: `{{{fields.content}}}` |
