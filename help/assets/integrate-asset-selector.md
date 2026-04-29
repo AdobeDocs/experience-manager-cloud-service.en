@@ -20,12 +20,3 @@ You can perform authentication without defining some of the IMS properties, if:
 * You are integrating an [!DNL Adobe] application on [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
 * You already have an IMS token generated for authentication.
 
-## Integrate Asset Selector with various applications {#asset-selector-integration-with-apps}
-
-You can integrate Asset Selector with various applications such as:
-
-* [Integrate Asset Selector with an [!DNL Adobe] application](/help/assets/integrate-asset-selector-adobe-app.md)
-* [Integrate Asset Selector with a non-Adobe application](/help/assets/integrate-asset-selector-non-adobe-app.md)
-* [Integration for Dynamic Media with OpenAPI capabilities](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-
-

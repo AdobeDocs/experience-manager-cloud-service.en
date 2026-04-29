@@ -1,17 +1,17 @@
 ---
-title: Integrate Asset Selector with Dynamic Media open API
-description: Integrate Asset selector with various Adobe, non-Adobe, and third party applications.
+title: Integrate Content Advisor with Dynamic Media open API
+description: Integrate Content Advisor with various Adobe, non-Adobe, and third party applications.
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
 ---
-# Integration for Dynamic Media with OpenAPI capabilities {#integrate-asset-selector-dynamic-media-open-apis}
+# Integration for Dynamic Media with OpenAPI capabilities {#integrate-dynamic-media-open-apis}
 
-Asset Selector allows you to integrate using various Adobe applications to enable them to work together seamlessly.
+Content Advisor allows you to integrate using various Adobe applications to enable them to work together seamlessly.
 
 ## Prerequisites {#prereqs-polaris}
 
-Use the following prerequisites if you are integrating Asset Selector with Dynamic Media with OpenAPI capabilities:
+Use the following prerequisites if you are integrating Content Advisor with Dynamic Media with OpenAPI capabilities:
 
 * [Communication methods](/help/assets/overview-asset-selector.md#prereqs)
 * To access Dynamic Media with OpenAPI capabilities, you must have licenses for:
@@ -21,9 +21,9 @@ Use the following prerequisites if you are integrating Asset Selector with Dynam
 
 ## Integration for Dynamic Media with OpenAPI capabilities {#adobe-app-integration-polaris}
 
-Integration of Asset Selector with Dynamic Media OpenAPI process involves various steps that includes creating a customized dynamic media URL or ready to pick dynamic media URL, etc.
+Integration of Content Advisor with Dynamic Media OpenAPI process involves various steps that includes creating a customized dynamic media URL or ready to pick dynamic media URL, etc.
 
-### Integrate Asset Selector for Dynamic Media with OpenAPI capabilities {#integrate-dynamic-media}
+### Integrate Content Advisor for Dynamic Media with OpenAPI capabilities {#integrate-dynamic-media}
 
 The `rootPath` and `path` properties should not be a part of the Dynamic Media with OpenAPI capabilities. Instead, you can configure the `aemTierType` property. Following is the syntax of configuration:
 
@@ -36,7 +36,7 @@ This configuration allows you to view all the approved assets without folders or
 
 ### Create a Dynamic Delivery URL from approved assets {#create-dynamic-media-url}
 
-Once you set up Asset Selector, a schema of objects is used to create a Dynamic Delivery URL from the selected assets.
+Once you set up Content Advisor, a schema of objects is used to create a Dynamic Delivery URL from the selected assets.
 For example, a schema of one object from an array of objects that is received upon the selection of an asset:
 
 ```
@@ -139,7 +139,7 @@ In the above screenshot, the delivery URL of the PDF's original rendition needs 
 
 ### Configure custom filters {#configure-custom-filters-dynamic-media-open-api}
 
-Asset Selector for Dynamic Media with OpenAPI capabilities allows you to configure custom properties and the filters based on them. The `filterSchema` property is used to configure such properties. The customization can be exposed as `metadata.<metadata bucket>.<property name>.` against which the filters can be configured, where,
+Content Advisor for Dynamic Media with OpenAPI capabilities allows you to configure custom properties and the filters based on them. The `filterSchema` property is used to configure such properties. The customization can be exposed as `metadata.<metadata bucket>.<property name>.` against which the filters can be configured, where,
 
 * `metadata` is the information of an asset
 * `embedded` is the static parameter used for configuration, and
@@ -147,26 +147,7 @@ Asset Selector for Dynamic Media with OpenAPI capabilities allows you to configu
 
 For the configuration, properties that are defined at `jcr:content/metadata/` level are exposed as `metadata.<metadata bucket>.<property name>.` for the filters that you want to configure.
 
-For example, in Asset Selector for Dynamic Media with OpenAPI capabilities, a property on `asset jcr:content/metadata/client_name:market` is converted into `metadata.embedded.client_name:market` for filter configuration.
+For example, in Content Advisor for Dynamic Media with OpenAPI capabilities, a property on `asset jcr:content/metadata/client_name:market` is converted into `metadata.embedded.client_name:market` for filter configuration.
 
 To get the name, a one-time activity must be done. Make a search API call for the asset and get the property name (the bucket, essentially).
-
-### Asset Selector user interface for Dynamic Media with OpenAPI capabilities {#interface-dynamic-media-open-api}
-
-After integration with the Adobe's Micro-Frontend Asset Selector, you can see the assets only structure of all the approved assets available in Experience Manager assets repository. 
-
-![Dynamic Media with OpenAPI capabilities UI](assets/polaris-ui.png)
-
-* **A**: Hide/Show panel
-* **B**: Assets
-* **C**: Sorting
-* **D**: Filters
-* **E**: Search bar
-* **F**: Sorting in ascending or descending order
-* **G**: Cancel Selection
-* **H**: Select single or multiple assets
-
->[!NOTE]
->
->Folders are only supported when connecting to author repository, and not Dynamic Meda with OpenAPI repository.
 

@@ -53,12 +53,6 @@ You must ensure the following communication methods:
 
 Use the above prerequisites if you require the IMS authentication workflow of Asset Selector. Alternatively, if you are already authenticated with the IMS workflow, you can add the IMS information instead. 
 
-**See more**
-
-* [Integrate Asset Selector with an Adobe app](/help/assets/integrate-asset-selector-adobe-app.md)
-* [Integrate Asset Selector with a non-Adobe app](/help/assets/integrate-asset-selector-non-adobe-app.md)
-* [Integrate Asset Selector Dynamic Media Open APIs](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-
 
 >[!IMPORTANT]
 >
@@ -199,8 +193,6 @@ For assets that are approved and have renditions enabled, you see the **Dynamic 
 
 ![Dynamic Media Open API stamp](assets/dm-open-api-stamp.png)
 
-Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI capabilities](integrate-asset-selector-dynamic-media-open-api.md##interface-dynamic-media-open-api).
-
 ##### Add modifiers {#modifiers-dm-media-renditions}
 
 Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
@@ -234,7 +226,7 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
     </td>   
     <td>
         <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="Integrate Asset Selector graphic"><br/>
-        <a href="integrate-asset-selector-dynamic-media-open-api.md">Integrate Asset Selector with Dynamic Media Open APIs</a>
+        <a href="integrate-dynamic-media-open-api.md">Integrate Asset Selector with Dynamic Media Open APIs</a>
         <p>
         <em>Understand how to integrate Asset Selector with Dynamic Media Open APIs.</em>
         </p>
