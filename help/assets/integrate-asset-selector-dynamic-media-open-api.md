@@ -31,7 +31,7 @@ The `rootPath` and `path` properties should not be a part of the Dynamic Media w
 aemTierType:[1: "delivery"]
 ```
 
-This configuration allows you to view all the approved assets without folders or as a flat structure. For more information, navigate to `aemTierType` property under [Asset Selector properties](/help/assets/asset-selector-properties.md).
+This configuration allows you to view all the approved assets without folders or as a flat structure. For more information, navigate to `aemTierType` property under [Content Advisor properties](/help/assets/content-advisor-properties.md).
 
 
 ### Create a Dynamic Delivery URL from approved assets {#create-dynamic-media-url}
@@ -170,8 +170,3 @@ After integration with the Adobe's Micro-Frontend Asset Selector, you can see th
 >
 >Folders are only supported when connecting to author repository, and not Dynamic Meda with OpenAPI repository.
 
->[!MORELIKETHIS]
->
->* [Integrate Asset Selector with various applications](/help/assets/integrate-asset-selector.md)
->* [Asset Selector properties](/help/assets/asset-selector-properties.md)
->* [Asset Selector customizations](/help/assets/asset-selector-customization.md)

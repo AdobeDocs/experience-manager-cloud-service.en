@@ -8,13 +8,13 @@ exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
 
 # Examples to use Asset Selector properties {#usage-examples}
 
-You can define the Asset Selector [properties](/help/assets/asset-selector-properties.md) in the **index.html** file to customize the Asset Selector display within your application.
+You can define the Asset Selector [properties](/help/assets/content-advisor-properties.md) in the **index.html** file to customize the Asset Selector display within your application.
 
 ## Example 1: Asset Selector in rail view
 
    ![rail-view-example](assets/rail-view-example-vanilla.png)
 
-If the value of the AssetSelector `rail` is set to `false` or is not mentioned in the properties, Asset Selector displays in the Modal view by default. The `acvConfig` property allows for some in-depth configurations, like the Drag and Drop. Visit [enable or disable drag and drop](asset-selector-customization.md#enable-disable-drag-and-drop) to understand the usage of `acvConfig` property.
+If the value of the AssetSelector `rail` is set to `false` or is not mentioned in the properties, Asset Selector displays in the Modal view by default. The `acvConfig` property allows for some in-depth configurations, like the Drag and Drop. Visit [enable or disable drag and drop](content-advisor-customization.md#enable-disable-drag-and-drop) to understand the usage of `acvConfig` property.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
@@ -44,11 +44,3 @@ In addition to the faceted search, Assets Selector lets you customize various at
 
 Assets display panel shows the out of the box metadata that can be displayed in the info of the asset. In addition to this, [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application allows configuration of the asset selector by adding custom metadata that is shown in info panel of the asset.
 -->
-
-
->[!MORELIKETHIS]
->
->* [Asset Selector customizations](/help/assets/asset-selector-customization.md)
->* [Asset Selector upload](/help/assets/asset-selector-upload.md)
->* [Asset Selector properties](/help/assets/asset-selector-properties.md)
->* [Integrate Asset Selector with Dynamic Media with OpenAPI capabilities](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

@@ -13,7 +13,7 @@ The Micro Front-end Collections in Asset Selector is available out of the box in
 
 >[!NOTE]
 >
->Ensure that you have permissions to access an [!DNL Experience Manager Assets] [imsOrg](/help/assets/asset-selector-properties.md) and Collections.
+>Ensure that you have permissions to access an [!DNL Experience Manager Assets] [imsOrg](/help/assets/content-advisor-properties.md) and Collections.
 
 The Micro Front-end Collections in Asset Selector is available out of the box in read only mode. It fetches assets and collections directly from the Experience Manager Assets repository that you have access to and inherits the properties of public and private folders from your Experience Manager Assets repository. See more about [creating a public or private collection in Assets view](/help/assets/manage-collections-assets-view.md#create-collection).
 
@@ -40,11 +40,11 @@ You can drag and drop an asset to Collections directly from the [!DNL Assets as 
 >* The drag and drop of an asset is possible only in rail view.
 >* You can drag and drop files only (assets) and not the folders.
 
-On the other hand, you can also [enable or disable drag and drop of assets in the collections](asset-selector-customization.md#enable-disable-drag-and-drop) directly.
+On the other hand, you can also [enable or disable drag and drop of assets in the collections](content-advisor-customization.md#enable-disable-drag-and-drop) directly.
 
 ## Disable selection of asset in Collections {#disable-selection-collection}
 
-Disable selection is used to hide or disable the assets or folders from being selectable. It hides the select checkbox from the card or asset which refrains it from getting selected. See [disable selection](/help/assets/asset-selector-customization.md#disable-selection).
+Disable selection is used to hide or disable the assets or folders from being selectable. It hides the select checkbox from the card or asset which refrains it from getting selected. See [disable selection](/help/assets/content-advisor-customization.md#disable-selection).
 
 ## Enable or disable Collections tab {#enable-disable-collections-tab}
 
@@ -53,8 +53,3 @@ Asset Selector allows you to customize the components as per the requirement and
 * **Enable Collections tab:** To enable collections tab, you need to provide `collections` as value to the array. By default, Collections tab is enabled out of the box for all the users. For example, `featureSet:["collections"]`
 * **Disable Collections tab:** To disable collections tab, you need to provide an empty array as its value. For example, `featureSet:[ ]`
 
->[!MORELIKETHIS]
->
->* [Asset Selector customizations](/help/assets/asset-selector-customization.md)
->* [Integrate Asset Selector with various applications](/help/assets/integrate-asset-selector.md)
->* [Asset Selector properties](/help/assets/asset-selector-properties.md)
