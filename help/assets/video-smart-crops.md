@@ -10,7 +10,7 @@ exl-id: video-smartcrop-dmwoapi
 
 [!DNL Dynamic Media with OpenAPI capabilities] enable you to automatically generate Video Smart Cropped outputs for video assets in [!DNL Adobe Experience Manager (AEM)]. Video Smart Crops analyze video content and dynamically adjust framing to keep the key subject in focus across different aspect ratios and devices.
 
-Video Smart Crops are generated automatically when the feature is enabled and the video asset is approved.
+Video Smart Crops are generated automatically when the feature is enabled and the video asset is approved
 
 ## Before you begin {#prerequisites-for-video-smart-crops}
 
