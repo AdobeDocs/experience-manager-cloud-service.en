@@ -53,7 +53,7 @@ Anytime a program is edited, including adding or removing a solution or add-on, 
 
 ## Mark a production program for deletion {#delete-production-program}
 
-Deleting a production program is a two-phase process. A Business Owner marks the program for deletion, which triggers a validation and takedown period. The program is then permanently removed after approximately 30 days.
+Deleting a production program is a two-phase process. A Business Owner marks the program for deletion, which triggers a validation and takedown period. The program is then permanently removed after the takedown period has elapsed.
 
 When a production program is marked for deletion, the following occurs:
 
@@ -102,7 +102,7 @@ Before marking for deletion is initiated, the system validates whether the produ
 
    ![Display of the scheduled permanent removal date of the production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete5.png)
 
-   After approximately 30 days, the program is permanently removed and cannot be restored.
+   After the takedown period has elapsed, the program is permanently removed and cannot be restored.
 
 ### Unmark a production program from deletion {#unmark-from-deletion}
 
