@@ -157,11 +157,22 @@ The **Governance MCP Server** allows you to safeguard brand integrity and compli
 
 Learn more about [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
 
+#### AEM OIDC on Publish New Features {#aem-oidc-on-publish-new-features}
+
+* Fix: Query parameters from original request are lost after authentication
+* Custom Redirect After Authentication in Oidc Authentication [documentation](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md#custom-redirect-after-authentication)
+
 #### Mail Service support for Microsoft Graph API {#mail-service-graph-api}
 
 AEM's Mail Service now supports Microsoft&reg; Outlook (via Microsoft 365) using the Microsoft Graph API. This is particularly helpful for organizations that do not allow SMTP, which is already supported by the Mail Service. Authentication is via OAuth 2.0. [Learn how to configure](/help/security/oauth2-support-for-mail-service.md#microsoft-graph-api).
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
+
+### IMS Authentication Rich Errors {#ims-auth-rich-errors}
+
+To help troubleshoot IMS integrations, `imsauth` has added support for *rich errors*.
+
+Instead of returning only an HTTP status code, these errors provide additional context to help diagnose and resolve issues that can block authentication and access.
 
 #### Java API Deprecations {#java-api-deprecation}
 
