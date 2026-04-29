@@ -10,10 +10,6 @@ exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
 
 Content Advisor delivers a unified content discovery experience across Adobe and non-Adobe applications. Natively integrated with applications such as Adobe Workfront, AJO B2C (coming soon), AEM Sites and non-Adobe applications, Content Advisor brings content (assets and Content Fragments) together in a single, intelligent interface. It enables you to effortlessly discover, browse, and reuse the most relevant content, right within your workflow, so you can move faster without breaking context.
 
->[!IMPORTANT]
-> 
-> Content Fragment pill is not currently available and will be supported soon for appropriate Adobe applications.
-
 Content Advisor brings intelligent, context-aware discovery directly into the authoring experience, helping you quickly find relevant, approved content based on your intent. With features such as smart suggestions, Dynamic Media renditions, and detailed asset metadata, it enables you to efficiently evaluate and reuse content without leaving the application interface, accelerating content creation while maintaining brand consistency.
 
 ![Content Advisor banner image](assets/content-advisor-banner-image-updated.png)
@@ -192,7 +188,7 @@ The following table illustrates the Content Advisor feature support across Adobe
 
 | Application                          | Support for brief upload for searching Assets | Support for suggested content panel while searching Assets | Support for Dynamic Media panel while searching Assets | Support for searching Content Fragments |
 |--------------------------------------|----------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|------------------------------------------|
-| [Adobe Express](/help/assets/native-integration-adobe-express.md)                      |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      | &#10003;                                        |
+| [Adobe Express](/help/assets/native-integration-adobe-express.md)                      |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      | &minus;                                        |
 | [AEM Sites - Document Authoring](https://www.aem.live/docs/authoring-guide#document-authoring)                      |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      | &minus;                                        |
 | [AEM Sites - Universal Editor](https://www.aem.live/docs/authoring-guide#universal-editor-in-aem-sites)                     |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      |  &minus;                                        |
 | AEM Sites - [GoogleDrive](https://www.aem.live/docs/authoring-guide#google-drive)/[Sharepoint authoring](https://www.aem.live/docs/authoring-guide#microsoft-sharepoint) |  &#10003;                                            | &minus;                                                         | &#10003;                                                      | &minus;                                        |
@@ -202,7 +198,7 @@ The following table illustrates the Content Advisor feature support across Adobe
 
 ## Content Advisor feature support across non-Adobe applications {#content-advisor-feature-support-non-adobe-applications}
 
-Content Advisor is also available for integration with non-Adobe (third-party) applications, extending intelligent asset discovery beyond Adobe applications. The same rich feature set, including AI-powered search, context-aware recommendations, campaign brief–based discovery, access to Dynamic Media renditions, filters, and asset metadata, is supported in third-party integrations.
+Content Advisor is also available for integration with non-Adobe (third-party) applications, extending intelligent asset discovery beyond Adobe applications. The same rich feature set, including AI-powered search, context-aware recommendations, campaign brief–based discovery, access to Dynamic Media renditions, Content Fragment discovery, filters, and asset metadata, is supported in third-party integrations.
 
 This allows you to discover, evaluate, and use approved assets from AEM Assets directly within your external applications while maintaining consistency with the experience available in Adobe Express and other Adobe applications.
 
