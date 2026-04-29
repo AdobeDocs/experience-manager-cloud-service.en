@@ -141,6 +141,14 @@ Forms Manager now [supports versioning for Adaptive Forms (Core Components and F
 
 [Simplified Index Management](https://oak-indexing.github.io/oakTools/simplified.html) provides a simpler way to define custom indexes and customize out-of-the-box (OOTB) indexes using one JSON file, without copying full definitions or managing versions manually. Customizations merge with the latest OOTB index, and a new index version is created when needed.
 
+#### IDE AI tooling for AEM Java and Dispatcher Development {#ai-dev}
+
+Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. 
+
+IDE tooling can be used by coding agents to generate and debug AEM code and dispatcher configuration.
+
+Learn more in the [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md) and feel free to email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) with questions or feedback.
+
 #### Experience Governance MCP Server {#gov-mcp-server}
 
 Modern IDEs use the Model Context Protocol (MCP) to enable large language models (LLMs) to invoke tools exposed by MCP servers. Instead of integrating directly with low-level API specifications, developers can simply describe their intent in natural language.
@@ -149,14 +157,9 @@ The **Governance MCP Server** allows you to safeguard brand integrity and compli
 
 Learn more about [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
 
-#### IDE AI tooling for AEM Java and Dispatcher Development (Public Beta Program) {#ai-dev-beta}
+#### Mail Service support for Microsoft Graph API {#mail-service-graph-api}
 
-Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. 
-
-IDE tooling can be used by coding agents to generate and debug AEM code and dispatcher configuration.
-
-Learn more in the [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md) and feel free to email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) with questions or feedback.
-
+AEM's Mail Service now supports Microsoft&reg; Outlook (via Microsoft 365) using the Microsoft Graph API. This is particularly helpful for organizations that do not allow SMTP, which is already supported by the Mail Service. Authentication is via OAuth 2.0. [Learn how to configure](/help/security/oauth2-support-for-mail-service.md#microsoft-graph-api).
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
