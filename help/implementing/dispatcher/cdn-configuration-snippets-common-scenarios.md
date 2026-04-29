@@ -68,21 +68,24 @@ data:
 ### Redirecting from APEX Domain to www {#apex-to-www}
 
 ```yaml
-redirects:
-  rules:
-    - name: non-www-to-www-redirect
-      when:
-        reqProperty: domain
-        doesNotMatch: '^www\.'
-      action:
-        type: redirect
-        status: 301
-        location:
-          join:
-            format: 'https://www.%s%s'
-            args:
-              - reqProperty: domain
-              - reqProperty: url
+kind: "CDN"
+version: "1"
+data:
+ redirects:
+   rules:
+     - name: non-www-to-www-redirect
+       when:
+         reqProperty: domain
+         doesNotMatch: '^www\.'
+       action:
+         type: redirect
+         status: 301
+         location:
+           join:
+             format: 'https://www.%s%s'
+             args:
+               - reqProperty: domain
+               - reqProperty: url
 ```
 
 ### Modifying the Cache Key {#cache-key}
@@ -90,6 +93,8 @@ redirects:
 The CDN does not expose a separate “cache key” field. Because the URL participates in caching, you can split cache entries by changing the URL—for example by adding a query parameter through a [request transformation](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations).
 
 ```yaml
+kind: "CDN"
+version: "1"
 data:
   requestTransformations:
     rules:
