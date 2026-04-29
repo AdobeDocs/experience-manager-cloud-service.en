@@ -231,13 +231,13 @@ Using the AI Assistant in AEM Author and other interfaces, you can troubleshoot 
 
 Accelerate your migration from AEM 6.5 to AEM as a Cloud Service (Java stack) by using IDE AI tooling to act on the recommendations of the [Best Practices Analyzer Report](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
-Email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) for more information.
+Email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) for more information and to request access to the feature.
 
 #### AI code migration tool for AEM 6.5 to AEM 6.5 LTS Migration (Alpha Program) {#ai-lts-migration-alpha}
 
-AEM 6.5 customers migrating to AEM 6.5 LTS can use AI tooling in Cloud Manager that generates code to reduce the development effort.
+AEM 6.5 customers migrating to AEM 6.5 LTS can use AI tooling in Cloud Manager that generates code to reduce the development effort to the feature.
 
-Email [aem-lts-ai-migration@adobe.com](mailto:aem-lts-ai-migration@adobe.com@adobe.com) for more information.
+Email [aem-lts-ai-migration@adobe.com](mailto:aem-lts-ai-migration@adobe.com@adobe.com) for more information and to request access.
 
 #### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
 
