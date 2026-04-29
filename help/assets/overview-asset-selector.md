@@ -169,7 +169,7 @@ Asset Selector lets you view the asset in four different views:
 
 ### Asset details and metadata {#asset-details-and-metadata}
 
-The Asset Details Page provides a comprehensive view of a specific asset, consolidating all key information in one place. It includes an overview with the name, file format, status, and a brief description, along with a preview or thumbnail for easy visual identification. It also includes metadata of an asset such as creation date, author, size, color scheme, and so on. These attributes help efficient search, filtering, and classification of an asset. The asset details panel is available in both rail and modal view of Asset Selector. In the rail view, it is required to enable and configure `onDrop` property to return an asset. Alternatively, in the modal view, `handleSelection` property returns an asset. See [Asset Selector Properties](asset-selector-properties.md).
+The Asset Details Page provides a comprehensive view of a specific asset, consolidating all key information in one place. It includes an overview with the name, file format, status, and a brief description, along with a preview or thumbnail for easy visual identification. It also includes metadata of an asset such as creation date, author, size, color scheme, and so on. These attributes help efficient search, filtering, and classification of an asset. The asset details panel is available in both rail and modal view of Asset Selector. In the rail view, it is required to enable and configure `onDrop` property to return an asset. Alternatively, in the modal view, `handleSelection` property returns an asset. See [Content Advisor Properties](/help/assets/content-advisor-properties.md).
 
 To view details of an asset and metadata, execute the steps below:
 
@@ -241,7 +241,7 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
      </td>
      <td>
         <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Asset Selector examples graphic"><br/>
-        <a href="asset-selector-properties.md">Asset Selector Properties</a>
+        <a href="content-advisor-properties.md">Asset Selector Properties</a>
         <p>
         <em>Understand the usage of properties in a practical manner. </em>
         </p>
@@ -281,10 +281,3 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
 </tr>
 </table>
 
->[!MORELIKETHIS]
->
->* [Asset Selector customizations](/help/assets/asset-selector-customization.md)
->* [Integrate Asset Selector with various applications](/help/assets/integrate-asset-selector.md)
->* [Asset Selector properties](/help/assets/asset-selector-properties.md)
->* [Integrate Asset Selector with Dynamic Media with OpenAPI capabilities](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
->* [Product Visuals powered by AEM Assets Integration for Commerce](https://experienceleague.adobe.com/en/docs/commerce/product-visuals/overview)
