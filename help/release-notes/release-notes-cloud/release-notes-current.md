@@ -168,7 +168,7 @@ AEM's Mail Service now supports Microsoft&reg; Outlook (via Microsoft 365) using
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
-### IMS Authentication Rich Errors {#ims-auth-rich-errors}
+#### IMS Authentication Rich Errors {#ims-auth-rich-errors}
 
 To help troubleshoot IMS integrations, `imsauth` has added support for *rich errors*.
 
