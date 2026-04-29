@@ -120,7 +120,7 @@ You can access the Permissions Touch UI view by clicking on **Tools - Security -
 
 Once you launch the Permissions view, you can click on **Node View** or **Filtered View** in the upper right corner of the screen depending on your viewing preference.
 
-#### Node View
+#### Node View {#node-view}
 
 In this view, ACLs are presented for each individual Node(path). It provides information on:
 
@@ -130,14 +130,17 @@ Users have the option to add, remove, or update ACLs. When a path is clicked, th
 
 ![Node View](assets/image-2025-2-5_15-26-2.png)
 
-#### Filtered View
+#### Audit View {#audit-view} 
 
-This view allow users to efficiently search for permissions on a specified path and principals. In this view, users can easily determine the type of permissions granted to a group of principals for the selected path.
-Additionally, the Filtered View provides insights into Effective ACLs. It displays the ACLs associated with the parent node of the selected path, considering the selected principal and any common principals.
+This view allows users to efficiently search for applied permissions on a specified path and selected principals. In this view, users can clearly identify the type of permissions granted to one or more principals for the selected path.
 
-![Filter View](assets/FilteredView.png)
+Group membership can optionally be displayed by selecting the dedicated checkbox. When this option is enabled, the permission evaluation will consider all groups of the principal, not only the selected principal.
 
-### The Repository Browser Permissions View {#the-repository-browser-permissions-view}
+Additionally, the Audit View provides insights into effective ACLs. It displays the ACLs associated with the parent node of the selected path, taking into account the selected principal as well as any common principals.
+
+![Filter View](assets/audit-view.png)
+
+### The Repository Browser Permissions and Audit view {#the-repository-browser-permissions-and-audit-view}
 
 The permissions view can also be accessed via the [Repository Browser](/help/implementing/developing/tools/repository-browser.md).
 
@@ -149,7 +152,11 @@ You can access it by:
 
 1. Once in the Repository Browser, click on the **Permissions** tab
 
-   ![Permissions tab](assets/image-2025-2-5_15-29-33.png)
+   ![Permissions tab](/help/security/assets/permissions-tab.png)
+
+1. The audit view allows users efficiently search for applied permissions on a specified path and selected principals. Group membership can optionally be displayed by selecting the dedicated checkbox.
+
+   ![Audit tab](/help/security/assets/audit-tab.png)
 
 **Note**: To view the permissions, administrator rights are required. Follow the steps mentioned [here](/help/implementing/developing/tools/repository-browser.md#navigate-the-hierarchy-navigate-the-hierarchy)  to access the permissions.
 
