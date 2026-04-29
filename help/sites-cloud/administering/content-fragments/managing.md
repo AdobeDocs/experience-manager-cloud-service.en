@@ -187,6 +187,15 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 * **[Check Out and Check In](#check-out-and-check-in)**
 * **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
 
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+<!--
+* [Reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md) actions:
+  * **[Create Live Copy](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#create-a-live-copy)**
+  * **[Synchronize](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#synchronize)**
+  * **[Rollout](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md#rollout)**
+* **[Delete](#deleting-a-fragment)** (only available for unpublished fragments)
+-->
+
 >[!NOTE]
 >
 >Use **Open** to open the selected fragment in the *original* editor.
@@ -294,7 +303,7 @@ So, if we start with:
 ```xml
 FolderA 
     FragmentA (inside FolderA)
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA)
 
 FolderB
@@ -306,7 +315,7 @@ Copying FragmentA to FolderC, would result in:
 ```xml
 FolderA 
     FragmentA (inside FolderA)
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA)
 
 FolderB
@@ -315,7 +324,7 @@ FolderB
 
 FolderC
     Copy_of_FragmentA
-    | 
+    |
     |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
 ```
 
@@ -328,7 +337,7 @@ So, if we start with:
 ```xml
 FolderA 
     FragmentA (inside FolderA)
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA)
 
 
@@ -341,7 +350,7 @@ Copying FragmentA to FolderC, would result in:
 ```xml
 FolderA 
     FragmentA (inside FolderA) 
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA) 
 
 FolderB 
@@ -350,7 +359,7 @@ FolderB
 
 FolderC
    Copy_of_FragmentA
-   | 
+   |
    |___./Copy_of_FragmentB (referenced by FragmentA)
    Copy_of_FragmentB
 ```

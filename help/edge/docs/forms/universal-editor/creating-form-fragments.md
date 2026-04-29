@@ -228,10 +228,12 @@ You can perform several operations on form fragments using the AEM Forms user in
    <td><p>Start Review/Manage Review</p> </td>
    <td><p>Allows initiating and managing a review of the selected fragment.<br /> <br /> </p> </td>
     </tr>
-    <!--<tr>
+    <!--
+    <tr>
    <td><p>Add Dictionary</p> </td>
    <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
-    </tr>-->
+    </tr>
+    -->
     <tr>
    <td><p>Publish / Unpublish</p> </td>
    <td><p>Publishes / unpublishes the selected fragment.<br /> <br /> </p> </td>

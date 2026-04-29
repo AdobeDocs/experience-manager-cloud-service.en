@@ -41,7 +41,8 @@ Responsive form creation involves two main activities:
 - Higher form completion rates
 - Improved user satisfaction
 - Enhanced accessibility compliance
-- Lower development and maintenance costs-->
+- Lower development and maintenance costs
+-->
 
 >[!TIP]
 >

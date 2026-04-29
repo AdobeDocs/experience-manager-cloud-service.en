@@ -118,7 +118,7 @@ For example, when the user opens **Country of Citizenship**, the list of countri
 
 Similarly, **Country of Passport Issuance** and **Destination Country** use the same API call, ensuring consistent and up-to-date data across all three fields.
 
->![NOTE]
+>[!NOTE]
 >
 > You can [retrieve property values from a JSON array by invoking an API and using a custom function](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). This approach lets you extract values and bind them directly to form fields.
 
