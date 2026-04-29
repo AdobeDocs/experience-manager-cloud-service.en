@@ -187,6 +187,6 @@ featureSet: [
 <AssetSelector {...assetSelectorProps} /> 
 ```
 
-In `contentFragmentSelectorProps`, you can mention any of the properties available at [Content Fragment Selector properties](/help/headless/content-fragment-selector/properties.md) article.
+In `contentFragmentSelectorProps`, you can mention any of the properties available at [Content Fragment Selector properties](/help/headless/content-fragment-selector/properties.md).
 
 
