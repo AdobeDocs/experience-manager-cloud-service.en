@@ -74,7 +74,7 @@ You can then update the parameters as required and:
 
 >[!TIP]
 >
->See [OSGi Configuration with the Web Console](/help/sites-deploying/configuring-osgi.md) for further details.
+>See [OSGi Configuration with the Web Console](/help/implementing/deploying/configuring-osgi.md) for further details.
 
 ## Bundles {#bundles}
 
