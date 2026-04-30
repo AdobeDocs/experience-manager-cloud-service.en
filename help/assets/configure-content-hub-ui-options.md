@@ -168,6 +168,10 @@ Similarly, click ![edit](/help/assets/assets/edit-content-hub.svg) that is avail
 
 Administrators can define the metadata fields that are searched when a user specifies a search criteria on Content Hub. Execute the following steps:
 
+>[!CAUTION]
+>
+>It is recommended to carefully select the fields you mark as searchable. Include only those fields that users are likely to search for and that help return meaningful results. Fields such as dates and numbers are better suited for filtering and sorting rather than as searchable content. Marking too many fields as searchable may affect the quality and performance of search results.
+
 1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Add metadata]**.
 
 1. Specify the metadata field and click **[!UICONTROL Confirm]**.
