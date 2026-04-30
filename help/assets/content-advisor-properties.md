@@ -74,9 +74,9 @@ You can use the Content Advisor properties to customize the way the Content Advi
 | *imsOrg*| String | Yes | | Adobe Identity Management System (IMS) ID that is assigned while provisioning [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] for your organization. The `imsOrg` key is required to authenticate whether the organization you are accessing is under Adobe IMS or not. |
 | *imsToken* | String | No | | IMS bearer token used for authentication. `imsToken` is required if you are using an [!DNL Adobe] application for the integration. |
 | *apiKey* | String | No | | API key used for accessing the AEM Discovery service. `apiKey` is required if you are using an [!DNL Adobe] application integration.|
-| *externalBrief* | String | Yes | True| Allows you to upload a campaign brief document to discover relevant assets without manually entering search keywords. Content Advisor analyzes the information in the campaign brief to understand the campaign's intent and recommends relevant assets available in AEM Assets.|
+| *externalBrief* | String | No | | Allows you to upload a campaign brief document to discover relevant assets without manually entering search keywords. Content Advisor analyzes the information in the campaign brief to understand the campaign's intent and recommends relevant assets available in AEM Assets.|
 | *filterSchema* | Array | No | | Model that is used to configure filter properties. This is useful when you want to limit certain filter options in Content Advisor.|
-| *filterForm Props*| Object | No | | Specify the filter properties that you need to use to refine your search. For! example, MIME type JPG, PNG, GIF. |
+| *filterFormProps*| Object | No | | Specify the filter properties that you need to use to refine your search. For! example, MIME type JPG, PNG, GIF. |
 | *selectedAssets* | Array `<Object>` | No       |                 | Specify selected Assets when the Content Advisor is rendered. An array of objects is required that contains an id property of the assets. For example, `[{id: 'urn:234}, {id: 'urn:555'}]` An asset must be available in the current directory. If you need to use a different directory, provide a value for the `path` property as well. |
 | *acvConfig* | Object | No | | Asset Collection View property that contains object containing custom configuration to override defaults. Also, this property is used with `rail` property to enable rail view of assets viewer.|
 | *i18nSymbols*            | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | No       |                 | If the OOTB translations are insufficient for your application's needs, you can expose an interface through which you can pass your own custom-localized values through the `i18nSymbols` prop. Passing a value through this interface overrides the default translations provided and instead use your own. To perform the override, you must pass a valid [Message Descriptor](https://formatjs.io/docs/react-intl/api/#message-descriptor) object to the key of `i18nSymbols` that you want to override. |
@@ -86,20 +86,19 @@ You can use the Content Advisor properties to customize the way the Content Advi
 | *hideTreeNav*| Boolean | No |  | Specifies whether to show or hide assets tree navigation sidebar. It is used in modal view only and hence there is no effect of this property in rail view. |
 | *onDrop* | Function | No | | The on drop functionality is used to drag an asset and release onto a designated drop area. It allows for interactive user interfaces where assets can be moved and processed seamlessly. |
 | *dropOptions* | `{allowList?: Object}` | No | | Configures drop options using 'allowList'.  |
-| *colorScheme* | String | No | | Configure theme (`light` or `dark`) for the Content Advisor. |
-| *Theme* | String | No | Default | Apply theme to the Content Advisor application between `default` and `express`. It also supports `@react-spectrum/theme-express`. |
+| *theme* | String | No | Default | Apply theme to the Content Advisor application between `default` and `express`. It also supports `@react-spectrum/theme-express`. |
 | *handleSelection* | Function | No | | Invoked with array of Asset items when assets are selected and the `Select` button on the modal is clicked. This function is only invoked in modal view. For rail view, use the `handleAssetSelection` or `onDrop` functions. Example: <pre>handleSelection=(assets: Asset[])=> {...}</pre> See [selection of assets](/help/assets/content-advisor-customization.md#selection-of-assets) for details.|
-| *handleAssetSelection*| Function | No | | Invoked with array of items as the assets are being selected or unselected. This is useful when you want to listen for assets as user selects them. Example: <pre>handleSelection=(assets: Asset[])=> {...}</pre> See [selection of assets](/help/assets/content-advisor-customization.md#selection-of-assets) for details. |
+| *handleAssetSelection*| Function | No | | Invoked with array of items as the assets are being selected or unselected. This is useful when you want to listen for assets as user selects them. Example: <pre>handleAssetSelection=(assets: Asset[])=> {...}</pre> See [selection of assets](/help/assets/content-advisor-customization.md#selection-of-assets) for details. |
 | *onClose* | Function | No | | Invoked when `Close` button in modal view is pressed. This is only called in `modal` view and disregarded in `rail` view. |
 | *onFilterSubmit* | Function | No | | Invoked with filter items as user changes different filter criteria. |
 | *selectionType* | String | No | Single | Configuration for `single` or `multiple` selection of assets at a time. |
 | *dragOptions.allowList* | boolean | No | | The property is used to allow or deny the dragging of assets that are not selectable. See [dragOptions Property](/help/assets/content-advisor-customization.md#drag-options-property) |
-| *aemTierType* | String | No |  | It allows you to select whether you want to show assets from delivery tier, author tier, or both. <br><br> Syntax: `aemTierType:[0]: "author" 1: "delivery"` <br><br> For example, if both `["author","delivery"]` are used, then the repository switcher displays options for both author and delivery. |
+| *aemTierType* | String | No |  | It allows you to select whether you want to show assets from delivery tier, author tier, or both. <br><br> Syntax: `aemTierType: "author"  "delivery"` <br><br> For example, if both `["author","delivery"]` are used, then the repository switcher displays options for both author and delivery. |
 | *handleNavigateToAsset* | Function | No | | It is a Callback function to handle selection of an asset. |
-| *noWrap* | Boolean | No | | The *noWrap* property helps rendering Content Advisor in the side rail panel. If this property is not mentioned, it renders the *Dialog view* by default. |
-| *dialogSize* | small, medium, large, fullscreen, or fullscreen takeover | String | Optional | You can control the layout by specifying its size using the given options. |
-| *colorScheme* | Light or dark | No | | This property is used to set the theme of an Content Advisor application. You can choose between light or dark theme. |
-| *filterRepoList* | Function | No |  | You can use `filterRepoList` callback function that calls Experience Manager repository and returns a filtered list of repositories. |
+| *noWrap* | Boolean | No | | The *noWrap* property prevents the Content Advisor from being wrapped in a dialog. If this property is not mentioned, it renders the *Dialog view* by default. |
+| *dialogSize* | S, M, L, fullscreen, fullscreenTakeover | String | Optional | You can control the layout by specifying its size using the given options. |
+| *colorScheme* | String (light, dark) | No | | This property is used to set the theme of an Content Advisor application. You can choose between light or dark theme. |
+| *filterRepoList* | Function | No | | A function that receives the repository list and returns a filtered list. |
 | *expiryOptions* | Function | | | You can use between the following two properties: **getExpiryStatus** which provides status of an expired asset. The function returns `EXPIRED`, `EXPIRING_SOON` or `NOT_EXPIRED` based on the expiry date of an asset that you provide. See [customize expired assets](/help/assets/content-advisor-customization.md#customize-expired-assets). Additionally, you can use **allowSelectionAndDrag** in which the value of the function can either be `true` or `false`. When the value is set to `false`, the expired asset cannot be selected or dragged on the canvas. |
 | *showToast* | | No | | It allows Content Advisor to show a customized toast message for the expired asset. |
 | *uploadConfig* | Object | | | It is an object that contains customized configuration for the upload. See [upload configuration](#content-advisor-customization.md#upload-config) for the usability.|
@@ -112,7 +111,7 @@ You can use the Content Advisor properties to customize the way the Content Advi
 | *uploadConfig* > *onUploadComplete* | Function | No | | It is a callback function which is used to pass the file upload status among succeeded, failed, or duplicate. The syntax is `(uploadStats: UploadStats) => void`. Moreover, this property is nested under `uploadConfig` property. |
 | *uploadConfig* > *onFilesChange* | Function | No | | This property is nested under `uploadConfig` property. It is a callback function which is used to show the behavior of upload when a file is changed. It passes the new array of files pending for upload and the source type of the upload. Source type can be null in case of error. The syntax is `(newFiles: File[], uploadType: UploadType) => void` |
 | *uploadConfig* > *uploadingPlaceholder* | String | | | It is a placeholder image that replaces the metadata form when an upload of the asset is initiated. The syntax is `{ href: string; alt: string; }`, Moreover, this property is nested under `uploadConfig` property. |
-| *featureSet* | Array | String | | The `featureSet:[ ]` property is used to enable or disable a particular functionaly in the Content Advisor application. To enable the component or a feature, you can pass a string value in the array or leave the array empty to disable that component.  For example, you want to enable upload functionality in the Content Advisor, use the syntax `featureSet:[0:"upload"]`. Similarly, you can use `featureSet:[0:"collections"]` to enable collections in the Content Advisor. Addidionally, use `featureSet:[0:"detail-panel"]` to enable [details panel](overview-asset-selector.md#asset-details-and-metadata) of an asset. To use these features together, the syntax is `featureSet:["upload", "collections", "detail-panel"]`.|
+| *featureSet* | Array | String | | The `featureSet:[ ]` property is used to enable or disable a particular functionaly in the Content Advisor application. To enable the component or a feature, you can pass a string value in the array or leave the array empty to disable added features, and just have the base functionality. For example, you want to enable upload functionality in the Content Advisor, use the syntax `featureSet:["upload"]`. Similarly, you can use `featureSet:["content-fragments"]` to enable Content Fragments in the Content Advisor. To use multiple features together, the syntax is featureSet:["upload", "content-fragments"].|
 
 <!--
 | *selectedRendition* | Object | | | This property allows users to define and control which renditions of an asset are displayed when the panel is accessed. This customization enhances user experience by filtering out unnecessary renditions and showcasing only the most relevant renditions. For example, `CopyUrlHref` allows you to use Dynamic Media renditions in your Asset Selector application (delivery URL). |
@@ -155,36 +154,18 @@ The `ImsAuthProps` properties define the authentication information and flow tha
 `contentFragmentSelectorProps` allows you to configure how Content Fragments are accessed and displayed within the Content Advisor. By enabling the content-fragments feature in the `featureSet` and providing the required configuration, you can seamlessly integrate Content Fragment selection alongside assets. This enables users to browse, search, and select Content Fragments within the same unified interface, ensuring a consistent content selection experience across assets and structured content.
 
 ```
-const contentFragmentSelectorProps = {  
+const assetSelectorProps = {
+     featureSet: [
+       'upload',            /* Include upload or other featureSet values to ensure no missing functionality */
+       'content-fragments', /* Content Fragments pill will be shown */
+     ],
+     contentFragmentSelectorProps: {
+       /* Configures the Content Fragments Pill experience */
+       /* ...props @aem-sites/content-fragment-selector MFE supports */
+    }
+}
 
-     ...any props that the @aem-sites/content-fragment-selector MFE supports 
-
-} 
-
-/* If no featureSet is provided, these are the defaults */  
-
-/* Be sure to explicitly include these in the featureSet unless intentionally disabling */ 
-
-const defaultFeatures = ['upload', 'collections', 'detail-panel']  
-
-const assetSelectorProps = {  
-
-featureSet: [  
-        ...defaultFeatures, /* Include defaults to ensure no missing functionality */ 
-
-       'content-fragments', /* Content Fragments pill will be shown */   
-
-     ],  
-
-     contentFragmentSelectorProps: { 
-         
-    } 
- 
-/* Configures the Content Fragments Pill experience */  
-
-}  
-
-<AssetSelector {...assetSelectorProps} /> 
+<AssetSelector {...assetSelectorProps} />
 ```
 
 In `contentFragmentSelectorProps`, you can mention any of the properties available at [Content Fragment Selector properties](/help/headless/content-fragment-selector/properties.md).
