@@ -145,9 +145,12 @@ Forms Manager now [supports versioning for Adaptive Forms (Core Components and F
 
 Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. 
 
-IDE tooling can be used by coding agents to generate and debug AEM code and dispatcher configuration.
+IDE tooling can be used by coding agents to generate and debug AEM code and dispatcher configuration. As one example, see the video walkthrough below to build an AEM component using Agent Skills. 
 
-Learn more in the [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md) and feel free to email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) with questions or feedback.
+Learn more about [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md) and feel free to email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) with questions or feedback.
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3484978/?learn=on&enablevpops)
 
 #### Experience Governance MCP Server {#gov-mcp-server}
 
@@ -158,7 +161,7 @@ Learn more about [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-ae
 #### AEM OIDC on Publish New Features {#aem-oidc-on-publish-new-features}
 
 * Fix: Query parameters from original request are lost after authentication
-* Custom Redirect After Authentication in Oidc Authentication [documentation](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md#custom-redirect-after-authentication)
+* Custom Redirect After Authentication in OICD Authentication [documentation](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md#custom-redirect-after-authentication)
 
 #### Mail Service support for Microsoft Graph API {#mail-service-graph-api}
 
@@ -174,9 +177,11 @@ Instead of returning only an HTTP status code, these errors provide additional c
 
 #### Java API Deprecations {#java-api-deprecation}
 
-Since **April 14**, Cloud Manager pipelines that contain code using APIs targeting 2/26/2026 removal **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
+It is critical to remove usage of deprecated APIs. 
 
-Starting **June 11, 2026**, environments still using thse deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe's standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
+Since **April 14**, Cloud Manager pipelines that contain code using APIs targeting 2/26/2026 removal **fail during the Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
+
+Starting **June 11, 2026**, environments still using these deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe's standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
 
 See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
