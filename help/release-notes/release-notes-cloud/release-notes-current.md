@@ -83,7 +83,7 @@ See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes
 
 ### AI Translation Integration {#ai-translation-integration}
 
-AEM users can now leverage Large Language Models (LLMs) for content translation, delivering human-translation quality at machine translation speed. Similar to traditional third-party translation services, Azure OpenAI can be configured as a translation provider in AEM, with support for additional LLMs planned for future releases. Customers use their own LLM licenses for this capability. Additionally, corporate translation style guides can be uploaded to AEM, enabling the extraction of translation rules to ensure brand and style consistency. See [Configuring AI Translation Integration](/help/sites-cloud/administering/translation/ai-translation-integration.md) for more information.
+AEM users can now leverage Large Language Models (LLMs) for content translation, delivering human-translation quality at machine-translation speed. Similar to traditional third-party translation services, Azure OpenAI can be configured as a translation provider in AEM, with support for additional LLMs planned for future releases. Customers use their own LLM licenses for this capability. Additionally, corporate translation style guides can be uploaded to AEM, enabling the extraction of translation rules to ensure brand and style consistency. See [Configuring AI Translation Integration](/help/sites-cloud/administering/translation/ai-translation-integration.md) for more information.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
