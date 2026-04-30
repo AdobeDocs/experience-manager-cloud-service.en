@@ -7,15 +7,9 @@ exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
 ---
 # Local Development with AI Tools {#local-development-with-ai-tools}
 
->[!IMPORTANT]
->
->The features described in this article are **beta**. Getting early access to features that Adobe is developing lets customers and partners provide feedback (by emailing [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) and shape product development. It also helps them prepare to adopt new capabilities before general availability. 
->
->Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk. 
-
 >[!NOTE]
 >
->This article focuses on Local Developmenet with AI tooling for **AEM Java stack development**. For Edge Delivery Services, see [Developing with AI Tools](https://www.aem.live/developer/ai-coding-agents). 
+>This article focuses on Local Development with AI tooling for **AEM Java stack development**. For Edge Delivery Services, see [Developing with AI Tools](https://www.aem.live/developer/ai-coding-agents). 
 
 AI coding agents (Claude Code, Cursor, GitHub Copilot, and similar tools) have broad knowledge of AEM's underlying technologies (Java, OSGi, Sling, JCR, HTL) but don't necessarily know best practices for generating code and configuration, or how to debug common AEM development issues.
 
@@ -27,6 +21,8 @@ Four complementary components address this:
 |**Agent skills**|Reusable instruction sets for recurring development tasks such as component creation and Dispatcher configuration|
 |**AEM Quickstart Local MCP server**|Exposes live runtime data from a local AEM SDK instance to support troubleshooting|
 |**Dispatcher Local MCP server**|Enables runtime validation and inspection of a local Dispatcher instance|
+
+Review the [AI-assisted development tutorials](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) for additional, hands-on instruction.
 
 >[!NOTE]
 >
@@ -46,7 +42,7 @@ Four complementary components address this:
 
 Skills are instruction sets that encode multi-step development workflows. When invoked, the AI follows the skill's procedure rather than relying solely on general knowledge, producing consistent, convention-compliant results.
 
-Adobe publishes AEM as a Cloud Service skills in the **[adobe/skills](https://github.com/adobe/skills/tree/beta/skills/aem/cloud-service/skills)** repository on the `beta` branch since this feature is not yet generally available:
+Adobe publishes AEM as a Cloud Service skills in the **[adobe/skills](https://github.com/adobe/skills/tree/main/plugins/aem/cloud-service)** repository:
 
 |Skill|Purpose|
 |---|---|
@@ -57,7 +53,7 @@ Adobe publishes AEM as a Cloud Service skills in the **[adobe/skills](https://gi
 
 ### Install Skills {#install-skills}
 
-Choose the method that matches your AI coding tool. Installing skills once makes them available for all projects on that machine.
+Choose the method that matches your AI coding tool. Installing skills once makes them available for all projects on that machine. See the [Set up AEM Agent Skills tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) for a concrete walkthrough.
 
 #### Claude Code {#claude-code}
 
@@ -120,6 +116,8 @@ CTA Link (ctaLink) - Pathfield
 ```
 
 The agent echoes the field specification for confirmation, then generates all component files. Supported patterns include multifield with composite nested items, conditional show/hide logic, Core Component extension via Sling Resource Merger, and JUnit 5 tests using AEM Mocks.
+
+Learn more by following the [Component development using AEM Agent Skills tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
 
 ### Use the Dispatcher Skill {#use-the-dispatcher-skill}
 
@@ -196,6 +194,12 @@ Any MCP client can connect by pointing to `http://localhost:4502/bin/mcp` with a
 >The value `Basic YWRtaW46YWRtaW4=` is the Base64 encoding of `admin:admin`, the default credential for a local Quickstart. Do not use this with non-local environments.
 
 ## Dispatcher MCP Server {#dispatcher-mcp-server}
+
+>[!IMPORTANT]
+>
+>This feature is **beta**. Getting early access to features that Adobe is developing lets customers and partners provide feedback (by emailing [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com)) and shape product development. It also helps them prepare to adopt new capabilities before general availability. 
+>
+>Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk. 
 
 The Dispatcher MCP server is bundled with the AEM Dispatcher SDK. It enables AI tools to validate Dispatcher and Apache HTTPD configuration, trace request handling, and inspect cache behavior against a Dispatcher instance running locally in Docker.
 

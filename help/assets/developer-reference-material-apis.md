@@ -59,6 +59,10 @@ The article contains recommendations, reference materials, and resources for dev
 | Copy folder        |&#10003;|&#10003;|-|&#10003;|-|-|
 | Move folder        |&#10003;|&#10003;|-|&#10003;|-|-|
 
+>[!NOTE]
+>
+> Adobe does not recommend uploading packages of assets as it violates our best-practices around avoiding binary handling in AEM. Uploading assets via JCR packages does not result in processing being triggered on those assets in AEM as a Cloud Service.
+
 ## Asset upload {#asset-upload}
 
 In [!DNL Experience Manager] as a [!DNL Cloud Service], you can directly upload the assets to the cloud storage using HTTP API. The steps to upload a binary file are below. Execute these steps in an external application and not within the [!DNL Experience Manager] JVM.
