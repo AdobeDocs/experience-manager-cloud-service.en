@@ -18,10 +18,6 @@ These are the release notes for the 30 April 2026 release of the Universal Edito
 >
 >For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## What's New {#what-is-new}
-
-* 
-
-## Other Improvements {#other-improvements}
+## Improvements {#other-improvements}
 
 * An issue was fixed where [the badge of an editable item](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content) was obscuring the item behind it in some situations.
