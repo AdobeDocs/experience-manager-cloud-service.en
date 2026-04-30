@@ -13,7 +13,7 @@ Content Advisor allows you to integrate using various Adobe applications to enab
 
 Use the following prerequisites if you are integrating Content Advisor with Dynamic Media with OpenAPI capabilities:
 
-* [Communication methods](/help/assets/overview-asset-selector.md#prereqs)
+* [Communication methods](/help/assets/content-advisor-properties.md#prereqs)
 * To access Dynamic Media with OpenAPI capabilities, you must have licenses for:
     * Assets repository (for example, Experience Manager Assets as a Cloud Service).
     * AEM Dynamic Media.

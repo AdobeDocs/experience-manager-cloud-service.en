@@ -7,7 +7,7 @@ exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
 ---
 # Content Advisor installation and properties {#content-advisor-installation-properties}
 
-Content Advisor allows you to intergrate AEM with non-Adobe (third-party) applications, extending intelligent asset discovery beyond Adobe applications. The same rich feature set, including AI-powered search, context-aware recommendations, campaign brief–based discovery, access to Dynamic Media renditions, filters, and asset metadata, is supported in third-party integrations.
+Content Advisor is also available for integration with non-Adobe (third-party) applications, extending intelligent asset discovery beyond Adobe applications. The same rich feature set, including AI-powered search, context-aware recommendations, campaign brief–based discovery, access to Dynamic Media renditions, Content Fragment discovery, filters, and asset metadata, is supported in third-party integrations.
 
 ## Prerequisites{#prereqs}
 
@@ -169,5 +169,7 @@ const assetSelectorProps = {
 ```
 
 In `contentFragmentSelectorProps`, you can mention any of the properties available at [Content Fragment Selector properties](/help/headless/content-fragment-selector/properties.md).
+
+For information on how to integrate Content Advisor with Angular, React, and JavaScript applications, refer to [Content Advisor integration examples](https://github.com/adobe/aem-assets-selectors-mfe-examples/tree/consolidate-docs-to-experience-league/examples).
 
 
