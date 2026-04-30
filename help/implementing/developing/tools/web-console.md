@@ -1,6 +1,6 @@
 ---
 title: Web console in Adobe Experience Manager
-description: Learn how to use the Adobe Experience Manager (AEM) web console.
+description: Learn how to use the Adobe Experience Manager (AEM) Web Console to manage OSGi settings and bundles for local development.
 content-type: reference
 topic-tags: configuring
 feature: Configuring
@@ -8,45 +8,38 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 ---
 
-# Web Console{#web-console}
+# Web Console {#web-console}
 
-The Web console in Adobe Experience Manager (AEM) is based on the [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix is a community effort to implement the OSGi R4 Service Platform, which includes the OSGi framework and standard services.
+Learn how to use the Adobe Experience Manager (AEM) Web Console to manage OSGi settings and bundles for local development.
 
->[!NOTE]
->
->On the Web console, any descriptions that mention default settings relate to Sling defaults.
->
->AEM has its own defaults and so the defaults set might differ from those documented on the console.
+## Overview {#overview}
 
-The Web console offers a selection of tabs for maintaining the OSGi bundles, including:
+AEM as a Cloud Service treats [configuration and code as immutable at run time.](/help/release-notes/aem-cloud-changes.md#apps-libs-immutable) This means that all configurations must be deployed as you would code in a production environment. For production instances, this ensures that quality gates are passed and offers a level of stability and clarity of your current environment. For development purposes, however, OSGi configuration updates can be needed to test ad-hoc development changes. As part of the AEM as a Cloud Service SDK, the Web Console allows this.
+
+The console can be accessed from `http://<host>:<port>/system/console`
+
+The Web Console offers a selection of screens for maintaining the OSGi bundles, including:
 
 * [Configuration](#configuration): used for configuring the OSGi bundles, and is therefore the underlying mechanism for configuring AEM system parameters
 * [Bundles](#bundles): used for installing bundles
 * [Components](#components): used for controlling the status of components required for AEM
 
-Any changes made are immediately applied to the running system. No restart is required.
+Any changes made are immediately applied to the running development system. No restart is required.
 
-The console can be accessed from `../system/console`; for example:
+On the Web console, any descriptions that mention default settings relate to Sling defaults. AEM has its own defaults and so the defaults set might differ from those documented on the console.
 
-`http://localhost:4502/system/console/components`
-
-## Configuration {#configuration}
-
-The **Configuration** tab is used for configuring the OSGi bundles, and is therefore the underlying mechanism for configuring AEM system parameters.
+The Web Console in Adobe Experience Manager (AEM) is based on the [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix is a community effort to implement the OSGi R4 Service Platform, which includes the OSGi framework and standard services.
 
 >[!NOTE]
 >
->See [OSGi Configuration with the Web Console](/help/sites-deploying/configuring-osgi.md) for further details.
+>The Web Console is only available in the AEM as a Cloud Service SDK for local development purposes. It is not available in production.
 
-The **Configuration** tab can be accessed by either:
+## Configuration {#configuration}
 
-* The drop-down menu:
+The **Configuration** screen is used for configuring OSGi bundles and is therefore the underlying mechanism for configuring AEM system parameters. The **Configuration** tab can be accessed by either:
 
-  **OSGi &gt;**
-
-* The URL; for example:
-
-  `http://localhost:4502/system/console/configMgr`
+* The drop-down menu: **OSGi -&gt; Configuration**
+* URL: `http://<host>:<port>/system/console/configMgr`
 
 A list of configurations is shown:
 
@@ -54,16 +47,10 @@ A list of configurations is shown:
 
 There are two types of configurations available from the drop-down lists on this screen:
 
-* **Configurations**
-  Lets you update the existing configurations. These have a Persistent Identity (PID) and can be either:
-
-    * standard and integral to AEM; these are required, if deleted the values return to the default settings.
-    * instances created from Factory Configurations; these instances are created by the user, deletion removes the instance.
-
-* **Factory Configurations**
-  Lets you create an instance of the required functionality object.
-
-  This is allocated to a Persistent Identity and then listed in the Configurations drop-down list.
+* **Configurations** allow you to update the existing configurations. These have a persistent identity (PID) and can be either:
+    * Standard and integral to AEM - These are required, if deleted the values return to the default settings.
+    * Instances created from factory configurations - These instances are created by the user, deletion removes the instance.
+* **Factory Configurations** allow you to create an instance of the required functionality object. This is allocated to a Persistent Identity and then listed in the Configurations drop-down list.
 
 Selecting any entry from the list displays the parameters related to that configuration:
 
@@ -71,91 +58,55 @@ Selecting any entry from the list displays the parameters related to that config
 
 You can then update the parameters as required and:
 
-* **Save**
+* **Save** to save the changes made.
+  * For a factory configuration, this creates an instance with a persistent identity.
+  * The new instance is then listed under Configurations.
+* **Reset** to reset the parameters shown on the screen to those saved last.
+* **Delete** to delete the current configuration.
+  * If standard, the parameters are returned to the default settings. 
+  * If created from a factory configuration, then the specific instance is deleted.
+* **Unbind** to unbind the current configuration from the bundle.
+* **Cancel** to cancel any current changes.
 
-  Save the changes made.
-
-  For a Factory Configuration, this creates an instance with a Persistent Identity. The new instance is then listed under Configurations.
-
-* **Reset**
-
-  Reset the parameters shown on the screen to those saved last.
-
-* **Delete**
-
-  Delete the current configuration. If standard, the parameters are returned to the default settings. If created from a Factory Configuration, then the specific instance is deleted.
-
-* **Unbind**
-
-  Unbind the current configuration from the bundle.
-
-* **Cancel**
-
-  Cancel any current changes.
+>[!TIP]
+>
+>See [OSGi Configuration with the Web Console](/help/sites-deploying/configuring-osgi.md) for further details.
 
 ## Bundles {#bundles}
 
-The **Bundles** tab is the mechanism for installing the OSGi bundles required for AEM. The tab can be accessed by either of the following methods:
+The **Bundles** screen is used to install OSGi bundles required for AEM. The screen is accessed by either of the following methods:
 
-* The drop-down menu:
-
-  **OSGi &gt;**
-
-* The URL; for example:
-
-  `http://localhost:4502/system/console/bundles`
+* The drop-down menu: **OSGi -&gt; Bundels**
+* URL: `http://<host>:<port>/system/console/bundles`
 
 A list of bundles is shown:
 
 ![Bundles](assets/bundles.png)
 
-Using this tab you can:
+Using this screen you can:
 
-* **Install or Update**
+* **Install or Update** to install a new bundle or update an existing bundle.
+  * You can **Browse** to find the file containing your bundle and specify whether it should **Start** immediately and at which **Start Level**.
+* **Reload** to refresh the list displayed.
+* **Refresh Packages** to check the references of all the packages and refresh, as necessary.
+  * For example, after an update both the old and new version may still be running due to prior references. This option checks and moves all references to the new version, allowing the old version to stop.
+* **Start** to start a bundle according to the start level specified.
+* **Stop** to stop the bundle.
+* **Uninstall** to uninstall the bundle from the system.
 
-  You can **Browse** to find the file containing your bundle and specify whether it should **Start** immediately and at which **Start Level**.
+The list specifies the status of the bundle. clicking the name of a specific bundle with show further information.
 
-* **Reload**
-
-  Refreshes the list displayed.
-
-* **Refresh Packages**
-
-  This checks the references of all the packages and refreshes, as necessary.
-
-  For example, after an update both the old and new version may still be running due to prior references. This option checks and moves all references to the new version, allowing the old version to stop.
-
-* **Start**
-
-  Starts a bundle according to the start level specified.
-
-* **Stop**
-
-  Stops the bundle.
-
-* **Uninstall**
-
-  Uninstalls the bundle from the system.
-
-* **see the status**
-
-  The list specifies the status of the bundle; clicking the name of a specific bundle with show further information.
-
->[!NOTE]
+>[!TIP]
 >
->After **Update**, Adobe recommends that you perform a **Refresh Packages**.
+>After **Update**, Adobe recommends that you click **Refresh Packages**.
 
 ## Components {#components}
 
-The **Components** tab lets you Enable and/or Disable the various components. It can be accessed by either:
+The **Components** screen allows you to enable and disable components. It can be accessed by either:
 
-* The drop-down menu:
+* The drop-down menu: **Main -&gt; Components**
 
-  **Main &gt;**
-
-* The URL; for example:
-
-  `http://localhost:4502/system/console/components`
+* URL: `http://<host>:<port>/system/console/components`
 
 A list of components is shown. Various icons are available to enable you to enable, disable or (where appropriate) open configuration details for a specific component.
 
@@ -167,6 +118,6 @@ Clicking the name of a particular component displays further information on its 
 
 >[!NOTE]
 >
->Enabling, or disabling, a component only applies until AEM/CRX is restarted.
+>Enabling, or disabling, a component only applies until SDK is restarted.
 >
 >The start state is defined within the component descriptor, which is generated during development and stored in the bundle at bundle creation time.
