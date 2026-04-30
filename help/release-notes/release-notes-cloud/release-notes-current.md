@@ -209,12 +209,6 @@ Accelerate your migration from AEM 6.5 to AEM as a Cloud Service (Java stack) by
 
 Email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) for more information and to request access to the feature.
 
-#### AI code migration tool for AEM 6.5 to AEM 6.5 LTS Migration (Alpha Program) {#ai-lts-migration-alpha}
-
-AEM 6.5 customers migrating to AEM 6.5 LTS can use AI tooling in Cloud Manager that generates code to reduce the development effort to the feature.
-
-Email [aem-lts-ai-migration@adobe.com](mailto:aem-lts-ai-migration@adobe.com@adobe.com) for more information and to request access.
-
 #### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
 
 Edge Authentication lets you restrict access to Edge Delivery Services pages to only those who have authenticated with your identity provider (IdP). This is achieved by deploying an OpenID Connect (OIDC) configuration YAML file.
