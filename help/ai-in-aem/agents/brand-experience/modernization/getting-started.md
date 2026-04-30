@@ -2,7 +2,7 @@
 title: Getting Started with the Experience Modernization Agent
 description: Learn the first steps to quickly become productive with the Experience Modernization Agent using the Experience Modernization Console.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 612c211e-43bf-47dc-89a8-9995a960e4d7
 ---
 
@@ -136,6 +136,16 @@ Congratulations! Your migrated content and styles are now live on the AEM previe
 ![Published preview content](assets/published-preview.png)
 
 If you pushed your code to a branch other than `main`, the preview opened from Document Authoring will not show the styles. Change to the branch by updating the URL of the preview and you can see your styles.
+
+## Troubleshooting {#troubleshooting}
+
+### Allowlist IP Addresses {#allowlist-ip-addresses}
+
+If your site is behind a firewall or access restrictions, you can allowlist the following IP addresses so that the backend services can scrape your site:
+
+* `34.228.136.112`
+* `54.90.51.39`
+* `3.224.194.242`
 
 ## Additional Resources {#additional-resources}
 

@@ -33,7 +33,8 @@ Once you setup [!DNL AEM Forms] as a Cloud Service, the groups listed in the bel
      <li>Create themes</li> 
     </ul> </td> 
   </tr>
-  <!-- <tr>
+  <!--
+   <tr>
    <td>[!DNL forms-power-user]</td> 
    <td>
     <ul> 
@@ -52,7 +53,8 @@ Once you setup [!DNL AEM Forms] as a Cloud Service, the groups listed in the bel
      <li>Review submissions</li> 
      <li>Approve or reject submissions</li> 
     </ul> </td> 
-  </tr> -->
+  </tr>
+  -->
   <tr>
    <td>[!DNL template-authors] <sup>[2]</sup></td> 
    <td>
@@ -67,28 +69,35 @@ Once you setup [!DNL AEM Forms] as a Cloud Service, the groups listed in the bel
      <li>Create and modify a form data model</li> 
     </ul> </td> 
   </tr>
-  <!-- <tr>
+  <!--
+   <tr>
    <td>cm-agent-users</td> 
    <td>
     <ul> 
      <li>Access Correspondence Management letters or interactive communications using Agent UI</li> 
     </ul> </td> 
-  </tr> --> 
-  <!-- <tr>
+  </tr>
+  -->
+  <!--
+   <tr>
    <td><p>workflow-editors</p> </td> 
    <td>
-    <ul> -->
+    <ul>
+    -->
     <!-- <li>Create an inbox application</li>  -->
-    <!-- <li>Create a workflow model</li> 
+    <!--
+     <li>Create a workflow model</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td>[!DNL workflow-users]</td> 
    <td>
     <ul> 
-     <li>Use AEM inbox applications<br /> -->
+     <li>Use AEM inbox applications<br />
+     -->
      <!-- 
-     <strong>Note: </strong>You must have cm-agent-users and [!DNL workflow-users] group assignments to access Interactive Communications Agent UI in AEM inbox.</li>  -->
+     <strong>Note: </strong>You must have cm-agent-users and [!DNL workflow-users] group assignments to access Interactive Communications Agent UI in AEM inbox.</li>
+     -->
     </ul> </td> 
   </tr>
   <tr>

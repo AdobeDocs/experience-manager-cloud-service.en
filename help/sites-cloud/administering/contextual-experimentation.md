@@ -93,9 +93,11 @@ You can override the traffic split by configuring the metadata. For more informa
 
 As soon as you are ready to preview and stage your experiment, click Preview from the side-kick in the upper left side. Whenever you are previewing a page that has a running experiment, you will see the experimentation overlay in your `.aem.page` preview environment. The experimentation overlay lets you switch between the experiment variants and also provides traffic data.
 
-<!--- ![experimentation-overlay](/help/sites-cloud/administering/assets/experimentation-overlay.png)
+<!--
+- ![experimentation-overlay](/help/sites-cloud/administering/assets/experimentation-overlay.png)
 
-By using the experimentation overlay, authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.-->
+By using the experimentation overlay, authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.
+-->
 
 The data collection to measure the effectiveness of each variant is based on the [Operational Telemetry service in AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md).
 
@@ -111,7 +113,8 @@ Presented below are several use case examples for experiment variants. Generally
 
 You use a full page experiment to test between two variants of the same page. This is a full page variant of an a/b test where you have a control and a challenger page. You will replace the whole content of the "original" control page in the challenger variant with a different type of content. Keep in mind that by default the customer traffic is split evenly (50/50), but you can create custom splits if you like.
 
-<!--The metadata on the control page should look like this:
+<!--
+The metadata on the control page should look like this:
 
 METADATA SETUP
 
@@ -179,7 +182,8 @@ Audience: Chrome `https://{ref}--{repo}--{org}.hlx.page/page-for-chrome`
 
 After this configuration, the users will be triaged based on the browser they connect with and the appropriate challenger page will be served.
 
-Please keep in mind that the names above are only for illustration purposes. You can define the Audiences parameter and the challenger pages according to your needs, for example: Audience (Firefox) or Audience Firefox.-->
+Please keep in mind that the names above are only for illustration purposes. You can define the Audiences parameter and the challenger pages according to your needs, for example: Audience (Firefox) or Audience Firefox.
+-->
 
 ## Other Considerations {#other-considerations}
 

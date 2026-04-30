@@ -10,113 +10,111 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 24678 {#24678}
+## Release 25520 {#25520}
 
-Summarized below are the continuous improvements for maintenance release 24678, which was publicly released on March 4, 2026. The previous maintenance release was release 24464.
+Summarized below are the continuous improvements for maintenance release 25520, which was publicly released on April 23, 2026. The previous maintenance release was release 25194.
 
-The 2026.3.0 feature activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
+The 2026.4.0 feature activation provides the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
->[!NOTE]
->
->Release 24893 has been made private. 
 
-### Enhancements {#enhancements-24678}
+### Enhancements {#enhancements-25520}
 
-* FORMS-18927: Added support for custom MIME types and file extensions in the AEM Forms File Attachment component, enabling users to attach a wider variety of document types.
-* FORMS-18211, FORMS-22936: Users experienced an accessibility issue where checkboxes were not grouped correctly within a `<fieldset>` element, with the group label not nested in a `<legend>` as the first child. This affected users with disabilities who rely on screen readers for navigation. Core Components based Adaptive Forms has now introduced fieldset and legend support to provide better accessibility support.
-Added Fieldset option at the panel that enables users to organize and group related fields more effectively within their forms.
-* FORMS-23880: Added Theme Editor support in core components. This enhancement enables users to customize and manage themes more efficiently within the core components, improving their design flexibility and workflow.
-* FORMS-21772: Added versioning support to Forms Management UI. This enhancement enables users to create and retrieve versions for both Core Components based and Foundation Components based Adaptive Forms, Form Fragments, Themes, and Binary Assets, improving asset management and version control.
-* FORMS-23094: Added client-side parsing for Foundation Components based Adaptive Forms, enabling enterprise customers to migrate their forms to the cloud. This enhancement supports EcmaScript features in the code-editor rules, which were previously unsupported, facilitating a smoother migration process.
-* FORMS-23853: Added support for overriding reCAPTCHA in the sling component. This enhancement enables users to customize reCAPTCHA settings, improving flexibility and security for enterprise customers.
-* SITES-34936: Edge Delivery with Universal Editor: Add filtering Content Fragments by model for publishing.
-* SITES-36203: Edge Delivery with Universal Editor: Add code toggle to enable multi-field and composite multi-field support.
-* SITES-37037: Edge Delivery with Universal Editor: Improve spreadsheet import to detect delimiter automatically.
-* SITES-37804: Edge Delivery with Universal Editor: Add support for Closed User Group Authoring (Early Access).
-* SITES-38990: Edge Delivery with Universal Editor: Add support for excludes to path mappings.
-* SITES-39171: Edge Delivery with Universal Editor: Add support for `cq:tags` in Blocks and Block Items.
-* SITES-40042: Edge Delivery with Universal Editor: Make Config Service the default for new sites.
-* SITES-37649: GraphQL: Support Multiline text field filtering at JCR level.
-* SITES-37843: GraphQL: Filtering for multivalue fields (collections) is not supported at JCR level.
-* SITES-37540: Replace & replaceAll operations for CF field values (find and replace for a given field name).
-* SITES-37741: Add "card" property in get fragment variation response (card view in Admin UI).
-* SITES-37754: Publish folder via API: tree validation on demand when `validateReferences` is set to true.
-* SITES-37756: Display check-in/check-out status information for a content fragment.
-* SITES-37805: Schema update: MODIFIED fragments cannot be renamed/moved (documentation).
-* SITES-37847: Improved performance for Lent Content ReferenceProvider SQL-2 query (LentContent retrieval).
-* SITES-39255: Update OpenAPI implementation to recent Java API changes for Composite field.
-* SITES-37096: Remove Launches console slowness when orphaned nodes are present.
-* SITES-38117: Find a way to query child launches without performance impact.
-* SITES-38317: Add user who started workflow to metadata (actual user instead of generic when run by service user).
-* SITES-39203: Display user who started workflow (instead of generic user when run by service user).
-* SITES-13083: Localize error strings in Sites > Live Copy creation dialog.
-* SITES-13389: Localize "Created version of ... before promoting launch" string in Sites > Timeline.
-* SITES-16176: Localize strings in Page editor > Image v3 component configure dialog.
-* SITES-35702: Unlocalized "Live Copy Up to Date with Limited Inheritance" string in "Live Copy Overview" tab.
-* SITES-35748: Unlocalized "Enable Product Variant Selection" checkbox label in 'Content Fragment Model Editor'.
-* SITES-35750: Unlocalized "Product SKU(s) separated by `#` character" placeholder in input field in "Content Fragment Model Editor".
-* SITES-37113: Unlocalized "Cancel Inheritance" dialog in "CIF Configurations" tab.
-* SITES-25240: Accessibility fix for teaser modal call to action.
-* SITES-25531: Accessibility fix for color contrast in search modal.
-* SITES-37115: Truncated icons in Vienia demo store.
+* FORMS-24388: Added a local development environment for the Interactive Communication (IC) Editor that enables developers to build and test configurations without relying on shared servers. This enhancement helps enterprise customers iterate faster, reduce environment dependencies, and improve overall development productivity.
+* FORMS-24014: Enhanced the Rule Editor for file attachment components to support combining conditions using "AND" logic—for example, allowing rules like "If the file attachment is changed and the panel is valid, then do this." Previously, it was not possible to use additional conditions with file attachments; this update enables more complex rule definitions to support advanced workflows.
+* FORMS-23571: Enhanced the existing simplified grammar view for trigger event rules by adding support for out-of-the-box (OOTB) events in addition to custom events. Previously, users could only use the simplified grammar for custom events and had to switch between "WHEN" and "ON TRIGGER EVENT" rules to configure OOTB and custom events separately. With this update, both OOTB and custom events can be used in the same simplified grammar, streamlining rule configuration and reducing the need to switch contexts.
+* FORMS-24462: Added support for the Scribble Signature component in React Vanilla components for Headless Adaptive Forms (AF). This enhancement enables users to capture handwritten signatures directly within React-based forms, supporting digital signing workflows and planned go-live timelines for enterprise customers.
+* FORMS-24343: Added optimized handling for `custom:setProperty` in the form model JavaScript Object Notation (JSON), enabling faster processing of dynamic property updates. This enhancement improves performance for complex Adaptive Forms (AF) that rely on frequent runtime changes, resulting in smoother user interactions and reduced load times.
+* FORMS-24358: Added support for using the `items` property in the model JavaScript Object Notation (JSON) structure instead of `:items` and `:itemsOrder`. This enhancement enables developers to work with a cleaner, more intuitive data model that aligns better with common JSON conventions and simplifies integration with external systems.
+* FORMS-24087: Added support for defining rules and events directly on fragment containers in Adaptive Forms (AF). This enhancement enables authors to apply conditional logic and interactions at the container level, improving reuse and reducing the need to duplicate rules across individual fragment fields.
+* FORMS-24440: Added a new "Remove Field" action in the THEN dropdown of the Rule Editor for Interactive Communication editor that enables users to completely remove a selected component from the form when a rule condition is met. This enhancement supports workflows that require dynamically restructuring forms instead of only hiding fields, while still triggering the appropriate `forms_ready` script for consistent behavior.
+* FORMS-23898: Added support for defining variables using `@` notation in the Interactive Communication (IC) Editor, enabling users to configure dynamic tables more intuitively. This enhancement simplifies setup of variable-driven table content and improves clarity when managing dynamic data in the authoring experience.
+* FORMS-23702: Added certificate-based authentication for SharePoint List (SPList) connections that enables more secure, certificate-driven access to SharePoint data. This enhancement helps enterprise customers meet stricter security and compliance requirements while reducing reliance on password-based authentication.
+* FORMS-23800: Added support for overriding reCAPTCHA secret keys in sling configurations, enabling enterprise customers to align with their own security and compliance requirements. This enhancement allows environment-specific secret key management so administrators can safely integrate reCAPTCHA without code changes.
+* SITES-39116: Content Fragment GET endpoint now includes metadata schema information.
+* SITES-41449: New dedicated GET endpoint for retrieving Content Fragment metadata.
+* SITES-39434: Content Fragments and folders can now be linked to metadata schemas for structured metadata management.
+* SITES-39567: Content Fragment metadata is now validated and stored according to the linked metadata schema.
+* SITES-40006: Content Fragments can now be searched and filtered using metadata field values.
+* SITES-41391: Single Content Fragment retrieval API now includes check-in/check-out status information
+* SITES-42214: Improved reliability and performance of Content Fragment move operations
+* SITES-41351: Improved the display format of metadata in Content Fragments for better readability.
+* SITES-42458: Default metadata can now be added without strict schema validation for greater flexibility.
+* SITES-35508: Edge Delivery with Universal Editor: Add support for images in RTE.
+* SITES-37078: Edge Delivery with Universal Editor: Remove Universal Editor instrumentations when pages are read-only.
+* SITES-40206: Edge Delivery with Universal Editor: Add name validation to page creation wizard.
+* SITES-40255: Edge Delivery with Universal Editor: Prevent publishing of spreadsheets as `/config.json`.
+* SITES-40757: Edge Delivery with Universal Editor: Ensure uniqueness of Edge Delivery Configurations in Site Creation wizard.
+* SITES-41134: Edge Delivery with Universal Editor: Fail publishing of file-based configuration.
 
-### Fixed Issues {#fixed-issues-24678}
+### Fixed Issues {#fixed-issues-25520}
 
-* CQ-4361552: Fixed i18n JSON dictionary retaining HTML-escaped unicode in import translations.
-* CQ-4361634: Fixed Experience Fragments not selectable or getting added to Translation Project.
-* CQ-4362072: Fixed AEMaaCS Translation Workflow – DE > ES Step Fails to Add Page to Translation Project.
-*  FORMS-23741: Users experienced issues where the InvokeDDX and Asset upload steps did not run in cascade, requiring two separate workflow executions. This affected the production environment using AEM as a Cloud Service with the Sites and Forms Add-on.
-* FORMS-23877: Users experienced issues with custom functions not loading at runtime when creating forms directly within Sites pages using an older Core Components version.
-* FORMS-24038: Users experienced issues with the navigation button when more tabs were added dynamically.
-* FORMS-23721: Fixed an issue where validation patterns configured for text inputs in the Edit Dialog were not persisted. Previously, the pattern value was saved but not retained or displayed in the UI, resulting in confusion for form authors.
-* FORMS-23456: Users experienced mis-announcements by screen readers on mobile devices  for hidden header rows in a table when using the Table component in Adaptive Forms. A hidden table header was announced out of context, causing confusion for users relying on iOS VoiceOver and Android TalkBack.
-* FORMS-23454: Users experienced issues with the Date Picker for Core Components based Adaptive Forms. When entering invalid dates, the system would auto-correct to closed possible dates.
-* FORMS-23117: Users experienced hCaptcha not translating correctly in Foundation Components based Adaptive Forms.
-* FORMS-22634: Users experienced an issue where email attachments were not included when both "Include Attachment" and "Use HTML template" options were used together.
-* FORMS-23288: Users experienced issues with Adaptive Forms embedded in Asset Share Commons modals. The form failed to load correctly when the URL contained `.html` in the mid-path.
-* FORMS-19198: Users experienced 404 errors when embedding forms using dispatcher rules. The errors occurred for URLs such as /etc.clientlibs/toggles.json, rum library, and analyticsparserconfigparser.json, due to the URL rewriter not being able to rewrite these URLs.
-* SITES-33799: Edge Delivery with Universal Editor: Fix optimized video rendition not published.
-* SITES-35082: Edge Delivery with Universal Editor: Remove empty paragraphs, leading and trailing line breaks from richtexts.
-* SITES-35524: Edge Delivery with Universal Editor: Fix publishing failures for paths containing non-ASCII special characters.
-* SITES-38647: Edge Delivery with Universal Editor: Fix performance bottlenecks on environments with many sites.
-* SITES-40521: Edge Delivery with Universal Editor: Fix duplicate class names for Blocks and Block Items.
-* SITES-37887: GraphQL: UUID lookups for larger result sets might cause increased response times.
-* SITES-38412: Unable to patch fragments in launch when unique field/slug is existent (unique constraint now excludes CFs in launches).
-* SITES-38606: Validation error when adding variation to CF with fragment reference UUID (hydrate CFs referenced by uuid in variations).
-* SITES-39489: Assets UI showing fragments from cq:discarded folders (soft-deleted CFs removed from Management API responses).
-* SITES-39517: GET CF with composite field containing enumeration fails with 500 error.
-* SITES-40072: Composite fields with tabs return empty placeholder values.
-* SITES-39575: Live Copy save removes `cq:rolloutConfigs` – rollout config lost.
-* SITES-39694: Production Rollouts Failing with NPE.
-* SITES-39761: NavigationItem.getLink() returns null in CIF v2 Navigation component.
-* SITES-40519: MSM rollout fails with NullPointerException when live-copy target resource is null.
-* SITES-17531: Hardcoded "Smart crop preview" string in Page Editor > Image > Smart Crop.
-* SITES-31575: Info tooltip is not fully visible in Page editor > Carousel component > Properties.
-* SITES-34215: Autocomplete JS component raises immediate validation error on required pathfield in dialog tab.
-* SITES-35218: Some AEM Core Components do not render empty alt tag properly.
-* SITES-37114: Truncated "Enable Catalog UID Support" tooltip in "CIF Configurations" tab.
-* SITES-36138: Query without index detected (incident).
-* SITES-37682: Content type override in `/libs/cq/Page/Page.css.jsp` and `/libs/cq/Page/Page.js.jsp.`
-* SITES-38709: Classic UI Text RTE shows raw HTML after upgrade to 6.5.24.
-* SITES-39630: Nested Content Fragment updates not being reflected in exported Target offers.
-* SITES-39696: On/off time for scheduling activation/deactivation not working.
-* SITES-39824: Exporting Experience Fragments to Adobe Target returns 500 (NPE).
-* SITES-40253: Intermittent 500 Errors on `/bin/cif/invalidate-cache` – Oak Conflicts under `/var/cif/cacheinvalidation`.
-* SITES-40341: Fix base64 inline images in styles tag in `HtmlToJsonConvertorImpl`.
-    
-### Known Issues {#known-issues-24678}
+* FORMS-24811: Users experienced issues managing form logic rules. When they tried to modify rules that had been created earlier, the rule editor did not allow changes, forcing users to recreate rules from scratch and slowing down form maintenance.
+* FORMS-24720: Users experienced issues when configuring newly created variables in Adaptive Forms (AF). When they added rules to data-bound or unbound variables, the rules did not save as expected, forcing users to recreate their logic and slowing down form authoring workflows.
+* FORMS-24195: Users experienced inconsistent behavior when resetting dropdown fields in Adaptive Forms (AF). When a dropdown had a placeholder configured and the form or component was reset, the field became blank instead of returning to the placeholder value, causing confusion about required selections.
+* FORMS-24718: Users experienced navigation issues in the Interactive Communication (IC) editor when selecting the Home button. Instead of returning to the main Adobe Experience Manager (AEM) interface, the button did not redirect as expected, disrupting users’ workflow when moving between IC editing and the AEM home screen.
+* FORMS-24810: Users experienced intermittent failures when loading the Adaptive User Interface (AUI) for forms on the first attempt. In some sessions, the initial page did not render correctly, forcing users to refresh or retry before they could begin filling out their forms.
+* FORMS-24520: Users experienced missing page numbers in the agent user interface (UI) print preview for forms using the Adaptive User Interface (AUI). When agents opened the print preview, the page number field sometimes appeared empty, making it harder to reference specific pages while reviewing or sharing printed copies.
+* FORMS-24532: Users experienced failures when using Form Data Model (FDM) prefill with SharePoint `/teams` list configurations. Government organizations relying on these lists saw forms load without expected prefilled data, disrupting data collection workflows and increasing manual entry effort.
+* FORMS-24516: Users experienced missing scribble signature data in the Document of Record (DoR) after an SDK upgrade in AEM Forms as a Cloud Service. When forms were signed using the scribble option, the generated DoR did not display the captured signature, causing confusion and incomplete records for enterprise customers.
+* FORMS-18631: Users experienced accessibility issues with grid layouts on desktop, Responsive Web Design (RWD) tablet, and RWD mobile views. When using Chrome on Windows 11 with the NVDA (NonVisual Desktop Access) screen reader, grids were missing appropriate roles and attributes, making it difficult for assistive technologies to interpret and navigate the content correctly.
+* FORMS-24798: Users experienced inconsistent behavior when using `else` conditions in Adaptive Forms (AF) rules within the AEM Forms User Interface (UI). When the primary rule condition was not met, the associated `else` actions did not run, causing form logic and field visibility to behave differently from what authors configured.
+* FORMS-24334: Users experienced prefill failures and JavaScript Object Notation (JSON) merge issues when working with an embedded Adaptive Form (AF) on Adobe Experience Manager (AEM) Forms as a Cloud Service. When loading migrated forms, expected prefilled data did not appear and merged JSON content was incomplete or incorrect. This blocked migration from on-premise AEM 6.5 to AEM Forms as a Cloud Service for impacted environments.
+* FORMS-24441: Users experienced issues with the Document of Record (DoR) template configuration in Adobe Experience Manager (AEM) Forms as a Cloud Service. When they saved a customized DoR template in the rapid development environment, the template reverted to the default version, preventing them from retaining their intended layout and settings.
+* FORMS-24393: Users experienced confusion when older templates continued to appear as “Untitled” instead of showing meaningful names. This made it difficult to distinguish and reuse existing templates during daily authoring work.
+* FORMS-24163: Users experienced issues when previewing Version 2 forms that contained fragments. In preview mode, the form content did not render as expected, preventing users from validating the layout and behavior before publishing.
+* FORMS-24328: Users experienced form submissions not completing when using Invisible reCAPTCHA v2 with the "Validate CAPTCHA on a user action" option. Enterprise customers saw that forms on affected environments did not submit as expected, disrupting contact and request-for-proposal workflows.
+* SITES-42118: Skip rewrite rules for `/graphql/execute.json`.
+* SITES-40095: Fix local reference list in the metadata editor.
+* SITES-42191: Fix GraphQL JSON omits embedded image references when DAM filenames contain spaces / non-ASCII characters.
+* SITES-22336: Unlocalized "Content Fragment Models" string in Assets > Create > Content Fragment.
+* SITES-19796: Unlocalized string "Invalid name provided" is displayed on adding invalid character while creating content fragment under Assets.
+* SITES-42531: Tooltip is unlocalized when lock-in "Content Fragment" in "Assets" page..
+* SITES-42532: Unlocalized "Later" string on publishing CF to AEM in Assets.
+* SITES-39250: Localized characters are incorrectly displayed in link in Assets > Content Fragment Editor.
+* SITES-41117: Unlocalized 'The selected value needs to be a valid Model Type inside `{}` or a global model.' string in Content Fragment Model Editor.
+* SITES-41431: Reduced verbosity of screen reader feedback for the lock button to provide clearer, more concise announcements.
+* SITES-40819: Fixed keyboard focus not returning to the triggering element after an interaction, ensuring a predictable focus order.
+* SITES-40751: Added visible labels on keyboard focus for toolbar items so keyboard users can clearly identify actions.
+* SITES-25524: Corrected the use of aria-pressed on device buttons so assistive technologies receive accurate state information.
+* SITES-25321: Updated text colors to meet minimum contrast requirements and improve readability for low-vision users.
+* SITES-25304: Prevented the collapsed Demographic toolbar from incorrectly receiving focus, maintaining a logical focus sequence.
+* SITES-25292: Clarified screen reader announcements for the rotate device button to better describe its purpose and state.
+* SITES-25290: Added a visible pressed state for the desktop toggle button to make its selection status obvious to users.
+* SITES-25287: Improved ruler measurement context when editing layout, giving screen reader users understandable measurement information.
+* SITES-25284: Fixed truncation of the "iPhone 8 Plus" button label in the unchecked state so the full device name is announced and visible.
+* SITES-25251: Introduced feedback for screen reader users when the "Insert New Component" list is filtered, indicating that results have changed.
+* SITES-25221: Increased the touch target size of the Edit button in the Asset Side Rail to meet minimum target size guidelines.
+* SITES-25220: Added warning/indication that the Edit button in the Assets Left Rail opens a new tab, improving predictability for assistive tech users.
+* SITES-24993: Updated the Editor Canvas header title to use a proper heading role, improving document structure for screen readers.
+* SITES-24954: Corrected the focus order for the emulator button so it follows a natural and logical navigation sequence.
+* SITES-41586: Fix for Copy-Pasting of Content Fragment component inside editor loosing a reference to content fragment.
+* SITES-42195: Fix `CommerceLinksTransformerFactory` not respecting sling mappings on publish instance.
+* SITES-41238: Fix error in ThumbnailServlet causing log flood.
+* SITES-41041: Fix CIF components not rendered in Version Preview / Compare.
+* SITES-40756: Fix Unlocalized date format in Live Copy Overview > Relationship Status.
+* SITES-40219: Fix CatalogPageNotFoundFilter not being called for specific product or category pages.
+* SITES-40218: Fix SpecificPageFilterFactory missing v3 page resource type registration.
+* SITES-40347: Break the inheritance for the title when creating a live copy with a new title set.
+* SITES-41544: Content Fragment ETag calculations now exclude metadata.
+* SITES-42734: Fixed issue where GET metadata endpoint returned empty fields when using the default schema.
+* SITES-37955: Edge Delivery with Universal Editor: Ensure publication prerequisites are checked consistently.
+* SITES-40877: Edge Delivery with Universal Editor: Fix publishing failures for pages containing non-ascii special characters.
+* SITES-42092: Edge Delivery with Universal Editor: Fix deep un-publishing for paths ending in `-s`.
+* SITES-24650: iframe does not have a title.
 
-None.
+### Known Issues {#known-issues-25520}
 
-### Deprecated Features and APIs {#deprecated-24678}
+* SITES-43715: Edge Delivery with Universal Editor: Failing permission validation adds latency to publishing workloads.
+
+### Deprecated Features and APIs {#deprecated-25520}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-24678}
+### Security Fixes {#security-25520}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 15 identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 24 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-24678}
+### Embedded Technologies {#embedded-tech-25520}
 
 |Technology|Version|Link|
 |---|---|---|
