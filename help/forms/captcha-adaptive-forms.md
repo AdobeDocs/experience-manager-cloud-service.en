@@ -345,7 +345,7 @@ Set the **[!UICONTROL af.cloudservices.recaptcha.domain]** property of the **[!U
 
 To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
-## Override reCAPTCHA cloud configuration with OSGi 
+## Override reCAPTCHA cloud configuration with OSGi {#override-recaptcha-osgi}
 
 To use different project IDs, site keys, or secrets per environment, add an OSGi configuration for **[!UICONTROL Apache Sling Context-Aware Configuration Override Provider: OSGi configuration]**. 
 
@@ -386,6 +386,8 @@ To use different project IDs, site keys, or secrets per environment, add an OSGi
      ]
    }
    ```
+
+    ![Recaptcha Override](/help/forms/assets/recaptcha-override.png)
 
 1. Commit and push your changes:
 

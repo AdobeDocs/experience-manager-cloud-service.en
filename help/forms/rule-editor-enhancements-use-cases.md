@@ -22,6 +22,7 @@ The table below lists recent enhancements to the rule editor in Adaptive Forms, 
 | [Dynamic variables](#support-for-dynamic-variables-in-rules)                            | Create rules using variables that change based on user input or other conditions.                     | - Enables flexible rule conditions <br> - Reduces need for duplicate logic <br> - Eliminates requirement to create hidden fields  |
 | [Custom event-based rules](#custom-event-based-rules-support)                     | Define rules that respond to custom events beyond the standard triggers.                              | - Supports advanced use cases <br> - Greater control over when and how rules are executed <br> - Enhances interactivity |
 | [Context-aware repeatable panel execution](#context-based-rule-execution-for-repeatable-panels)     | Rules now execute in the correct context for each repeated panel, instead of only the last instance.  | - Accurate rule application for each repeat instance <br> - Reduces errors in dynamic sections <br> - Improves user experience with repeated content |
+| [Combined When conditions with the File Attachment component](#combined-when-conditions-with-the-file-attachment-component) | Create a When rule for the File Attachment component using Add Condition and AND or OR logic, so the attachment is evaluated together with other validations. | - Actions run only when attachment state and other checks evaluate as intended <br> - Fewer chained rules for upload scenarios <br> - Clearer authoring for forms that require files and validated inputs together |
 | [Support for query string, UTM, and browser parameters](#url-and-browser-parameter-based-rules-in-adaptive-forms) | Create rules that adapt form behavior based on URL parameters or browser-specific values.        | - Enables personalization based on source or environment <br> - Useful for marketing or tracking-specific flows <br> - No need for extra scripting or customization |
 
 >[!NOTE]
@@ -151,7 +152,7 @@ When the user submits the form with correct credentials and a valid OTP, the log
 
 Support for custom events allowing developers to create and trigger custom events that can be used as conditions in rule editor.
 
-### Simplified grammar for OOTB and custom events
+### Simplified grammar for OOTB and custom events {#simplified-grammar-for-ootb-and-custom-events}
 
 The enhanced rule editor includes a **simplified grammar** for event-based rules that use **Dispatch Event** and **On Trigger Event**. Previously, this grammar applied only to **custom** events; out-of-the-box (OOTB) events were not supported, which often required **When** rules for OOTB triggers and **On Trigger Event** rules for custom events. OOTB events are now supported with the same simplified grammar, enabling a consistent authoring pattern without switching between **When** and **On Trigger Event** based on whether the trigger is OOTB or custom.
 
@@ -173,7 +174,7 @@ When the quantity is changed, the rule fetches the unit price of the selected pr
 
 ![Context aware rule output](/help/forms/assets/context-aware-rule-output.png)
 
-## Combined When conditions with the File Attachment component
+## Combined When conditions with the File Attachment component {#combined-when-conditions-with-the-file-attachment-component}
 
 The enhanced rule editor supports **When** rules that combine the **File Attachment** component with other conditions using **AND** or **OR** logic. **Add Condition** in the **When** clause can include file attachment state together with checks on other fields or panel validation, so an action runs only when every selected condition is met.
 
