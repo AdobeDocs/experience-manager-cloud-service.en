@@ -13,10 +13,11 @@ The AEM as a Cloud Service Developer Console includes a set of read-only tools f
 >[!NOTE]
 >
 >This article describes a revamped experience for the AEM Cloud Service Developer Console, which is now in beta.
->* Some users can access via a button at the top of the current Developer Console.
+>
+>* A limited set of users can access the new console via a button at the top of the current Developer Console.
 >* Adobe welcomes any feedback, which you can send to `aemcs-new-devconsole-ui-beta@adobe.com`.
->* For information about the classic AEM Developer Console, see [this article](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).>
->* The AEM as a Cloud Service Developer Console should not be confused with the similarly named [*Adobe Developer Console*](https://developer.adobe.com/developer-console/).
+>* For the documentation about the current AEM Developer Console, please see [this article.](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)
+>* The AEM as a Cloud Service Developer Console should not be confused with the similarly named [*Adobe Developer Console*.](https://developer.adobe.com/developer-console/)
 
 >[!TIP]
 >
