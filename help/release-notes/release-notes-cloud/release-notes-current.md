@@ -145,7 +145,7 @@ Forms Manager now [supports versioning for Adaptive Forms (Core Components and F
 
 Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. 
 
-IDE tooling can be used by coding agents to generate and debug AEM code and dispatcher configuration. As one example, see the video walkthrough below to build an AEM component using Agent Skills. 
+IDE tooling can be used by coding agents to generate and debug AEM code and dispatcher configuration. As one example, the video walkthrough below demonstrates building an AEM component using Agent Skills.  
 
 Learn more about [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md) and feel free to email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) with questions or feedback.
 
@@ -161,7 +161,7 @@ Learn more about [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-ae
 #### AEM OIDC on Publish New Features {#aem-oidc-on-publish-new-features}
 
 * Fix: Query parameters from original request are lost after authentication
-* Custom Redirect After Authentication in OICD Authentication [documentation](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md#custom-redirect-after-authentication)
+* Custom Redirect After Authentication in OIDC Authentication [documentation](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md#custom-redirect-after-authentication)
 
 #### Mail Service support for Microsoft Graph API {#mail-service-graph-api}
 
@@ -181,7 +181,7 @@ It is critical to remove usage of deprecated APIs.
 
 Since **April 14**, Cloud Manager pipelines that contain code using APIs targeting 2/26/2026 removal **fail during the Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.* 
 
-Starting **June 11, 2026**, environments still using these deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe's standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
+Starting **June 11, 2026**, environments still using these deprecated APIs **will not receive critical Adobe release updates** and will not be subject to Adobe's standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
 
 See the [deprecation article](/help/release-notes/deprecated-removed-features.md#aem-apis) for full details, but for convenience, these APIs are listed below:
 
@@ -216,7 +216,7 @@ Common use cases include:
 * Acting as middleware between the CDN and your origin
 * Reformatting responses from third-party APIs (and perhaps aggregating multiple API responses) before delivering them to the browser
 * Composing and serving server-rendered HTML at the edge using content stitched from various backends
-* Exposing an MCP server for LLMs like ChatGPT and Claude to access custom tools
+* Exposing an MCP server for AI Assistants like ChatGPT and Claude to access custom tools
 
 We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
 
@@ -252,13 +252,11 @@ If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-
 
 Validate a production build with internal-only test traffic before exposing it to end users. Ship to production, route only canary traffic (using a special header), monitor behavior, then either promote to live traffic or roll back—without impacting customers.
 
-Deploy your code releases to production, but restrict it to only internal test traffic before deciding whether to accept live traffic versus rolling back. 
-
 Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) to request access and share feedback.
 
 #### Snapshots for RDEs (Beta Program) {#rde-snapshot-program}
 
-In beta, Rapid Development Environments (RDEs) now support a feature [to take a snapshot](help/implementing/developing/introduction/rapid-development-environments.md#snapshots) of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
+In beta, Rapid Development Environments (RDEs) now support a feature [to take a snapshot](/help/implementing/developing/introduction/rapid-development-environments.md#snapshots) of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
 
 Please email [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) if there is interest in using and providing feedback on this feature.
 
