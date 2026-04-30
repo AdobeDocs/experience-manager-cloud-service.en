@@ -137,10 +137,6 @@ Forms Manager now [supports versioning for Adaptive Forms (Core Components and F
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
 
-#### Simplified Index Management {#simplified-index-management}
-
-[Simplified Index Management](https://oak-indexing.github.io/oakTools/simplified.html) provides a simpler way to define custom indexes and customize out-of-the-box (OOTB) indexes using one JSON file, without copying full definitions or managing versions manually. Customizations merge with the latest OOTB index, and a new index version is created when needed.
-
 #### IDE AI tooling for AEM Java and Dispatcher Development {#ai-dev}
 
 Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. 
