@@ -31,4 +31,3 @@ These **preview** release notes are provided as a convenience so you know what c
 
 * Unnecessary type assertions in `assignImageDimensionFields` were removed.
 * And issue was fixed where the server-side handling of the `add` operation iterated the string value, treating it as an object instead of a patch.
-* The aem-tags component is now always returned as multi: false.
