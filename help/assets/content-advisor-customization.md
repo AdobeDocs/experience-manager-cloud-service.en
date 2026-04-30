@@ -24,61 +24,82 @@ You need to define the prerequisites in the **index.html** file or a similar fil
 You can add the following code snippet in `assetSelectorProps` object to customize the filter panel:
 
 ```
-filterSchema: [
-    {
-    header: 'File Type',
-    groupKey: 'TopGroup',
-    fields: [
-    {
-    element: 'checkbox',
-    name: 'type',
-    options: [
-    {
-    label: 'Images',
-    value: '<comma separated mimetypes, without space, that denote all images, for e.g., image/>',
-    },
-    {
-    label: 'Videos',
-    value: '<comma separated mimetypes, without space, that denote all videos for e.g., video/,model/vnd.mts,application/mxf>'
-    }
-    ]
-    }
-    ]
-    },
-    {
-    fields: [
-    {
-    element: 'checkbox',
-    name: 'type',
-    options: [
-    { label: 'JPG', value: 'image/jpeg' },
-    { label: 'PNG', value: 'image/png' },
-    { label: 'TIFF', value: 'image/tiff' },
-    { label: 'GIF', value: 'image/gif' },
-    { label: 'MP4', value: 'video/mp4' }
-    ],
-    columns: 3,
-    },
-    ],
-    header: 'Mime Types',
-    groupKey: 'MimeTypeGroup',
-    },
-    {
-    fields: [
-    {
-    element: 'checkbox',
-    name: 'property=metadata.application.xcm:keywords.value',
-    options: [
-    { label: 'Fruits', value: 'fruits' },
-    { label: 'Vegetables', value: 'vegetables'}
-    ],
-    columns: 3,
-    },
-    ],
-    header: 'Food Category',
-    groupKey: 'FoodCategoryGroup',
-    }
-],
+"filterSchema": [
+   {
+      "header":"File Type",
+      "groupKey":"TopGroup",
+      "fields":[
+         {
+            "element":"checkbox",
+            "name":"type",
+            "options":[
+               {
+                  "label":"Images",
+                  "value":"<comma separated mimetypes, without space, that denote all images, for e.g., image/>"
+               },
+               {
+                  "label":"Videos",
+                  "value":"<comma separated mimetypes, without space, that denote all videos for e.g., video/,model/vnd.mts,application/mxf>"
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "fields":[
+         {
+            "element":"checkbox",
+            "name":"type",
+            "options":[
+               {
+                  "label":"JPG",
+                  "value":"image/jpeg"
+               },
+               {
+                  "label":"PNG",
+                  "value":"image/png"
+               },
+               {
+                  "label":"TIFF",
+                  "value":"image/tiff"
+               },
+               {
+                  "label":"GIF",
+                  "value":"image/gif"
+               },
+               {
+                  "label":"MP4",
+                  "value":"video/mp4"
+               }
+            ],
+            "columns":3
+         }
+      ],
+      "header":"Mime Types",
+      "groupKey":"MimeTypeGroup"
+   },
+   {
+      "fields":[
+         {
+            "element":"checkbox",
+            "name":"property=metadata.application.xcm:keywords.value",
+            "options":[
+               {
+                  "label":"Fruits",
+                  "value":"fruits"
+               },
+               {
+                  "label":"Vegetables",
+                  "value":"vegetables"
+               }
+            ],
+            "columns":3
+         }
+      ],
+      "header":"Food Category",
+      "groupKey":"FoodCategoryGroup"
+   }
+]
 ```
 
 ## Customize information in modal view {#customize-info-in-modal-view}
