@@ -23,7 +23,6 @@ The AEM as a Cloud Service Developer Console includes a set of read-only tools f
 >
 >The Developer Console is read-only. If you are working on local development using the SDK and need to modify OSGi settings or repository content, you can use:
 >
->* [The Web Console](/help/implementing/developing/tools/web-console.md)
 >* [CRXDE Lite](/help/implementing/developing/tools/crxde.md)
 
 <!--
