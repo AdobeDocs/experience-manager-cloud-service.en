@@ -102,9 +102,3 @@ The prolonged caching with event driven active cache invalidation is applicable 
 To opt out of prolonged caching, contact [Adobe Support](https://helpx.adobe.com/in/contact.html) and provide the rationale for your request.
 
 +++
-
-
->[!MORELIKETHIS]
->
->- [Integrate Asset Selector with various applications](/help/assets/integrate-asset-selector.md)
->- [Vanity URLs](/help/assets/vanity-urls.md)

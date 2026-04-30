@@ -460,8 +460,8 @@ AEM Assets can integrate seamlessly with various Adobe and non-Adobe application
 
 * **Dynamic Media with OpenAPI capabilities**: [Dynamic Media with OpenAPI capabilities](/help/assets/dynamic-media-open-apis-overview.md) offers a comprehensive set of [search](/help/assets/search-assets-api.md) and [delivery](/help/assets/deliver-assets-apis.md) APIs. It allows your developers to integrate the delivery of assets easily with their applications. The applications include Adobe as well as third-party applications. It provides a Micro Frontend assets selector user interface to search and select approved assets. The selector can be effortlessly integrated with any application based on JavaScript frameworks such as React JS, Angular JS, and Vanilla JS.
 
-* **Micro-Frontend Asset Selector**: Micro-Frontend Asset Selector provides a user interface that integrates with the Experience Manager Assets repository so that you can browse or search digital assets available in the repository. You can then use them in your application authoring experience.
-You can integrate Asset Selector with an Adobe or a non-Adobe application.
+* **Content Advisor**: Content Advisor provides a user interface that integrates with the Experience Manager Assets repository so that you can browse or search digital assets available in the repository. You can then use them in your application authoring experience.
+You can integrate Content Advisor with an Adobe or a non-Adobe application.
 
 <table>
 <td>
@@ -493,16 +493,16 @@ You can integrate Asset Selector with an Adobe or a non-Adobe application.
    </p>
 </td>
 <td>
-   <a href="/help/assets/overview-asset-selector.md">
-   <img alt="Asset Selector" src="./assets/integration-asset-selector.jpeg" />
+   <a href="/help/assets/integrate-adobe-non-adobe-applications.md">
+   <img alt="Content Advisor" src="./assets/integration-asset-selector.jpeg" />
    </a>
    <div>
-      <a href="/help/assets/overview-asset-selector.md">
-      <strong>Micro-Frontend Asset Selector</strong>
+      <a href="/help/assets/integrate-adobe-non-adobe-applications.md">
+      <strong>Content Advisor</strong>
       </a>
    </div>
    <p>
-      <em>Learn how to integrate Micro-Frontend Asset Selector with an Adobe or a non-Adobe application.</em>
+      <em>Learn how to integrate Content Advisor with an Adobe or a non-Adobe application.</em>
    </p>
 </td>
 </table>
@@ -569,7 +569,7 @@ You can integrate Asset Selector with an Adobe or a non-Adobe application.
 * **Integration with Adobe Journey Optimizer**: Bring marketing and creative workflows together using Adobe Experience Manager Assets. Natively integrated with Adobe Journey Optimizer, access Assets as a Cloud Service to store, manage, discover and distribute digital assets. It provides a single, centralized repository of assets that you can use to populate your messages.
 
 * **Integration with Commerce**: Adobe Experience Manager (AEM) Assets Integration for Commerce combines the robust capabilities of AEM as a Digital Asset Management (DAM) system with Adobe Commerce to enhance eCommerce experiences. These capabilities are delivered by connecting Commerce projects to AEM's powerful asset management environment to provide a seamless, scalable, and efficient way to manage and deliver assets across commerce storefronts.
-* **Integrating AEM Assets with Document-Based Authoring flows for Edge Delivery Services**: When [!DNL AEM Assets] integrates with your Document-Based Authoring tools, such as [!DNL Microsoft Word] or [!DNL Google Docs], it provides an Asset Selector in your authoring tool. Use this Asset Selector to access [!DNL AEM Assets], and insert approved assets into your content.
+* **Integrating AEM Assets with Document-Based Authoring flows for Edge Delivery Services**: When [!DNL AEM Assets] integrates with your Document-Based Authoring tools, such as [!DNL Microsoft Word] or [!DNL Google Docs], it provides Content Advisor in your authoring tool. Use the Content Advisor to access [!DNL AEM Assets], and insert approved assets into your content.
 If you already have an [!DNL Edge Delivery Services] website, see [[!DNL AEM Assets] plugin](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) documentation to learn how to integrate [!DNL AEM Assets] with your existing [!DNL AEM] project.
 
 * **Integrating [!DNL AEM Assets] with [!DNL Universal Editor] based authoring flows for [!DNL Edge Delivery Services]**: Set up the [!DNL Universal Editor] to integrate with [!DNL AEM Assets]. This integration enables you to use [!DNL Dynamic Media with OpenAPI capabilities] to deliver assets.
@@ -644,7 +644,7 @@ Some of the key benefits of Discovery Agent include:
 
 **Common Use Cases / Sample Prompts:**  
 
-* Show images tagged “office” in folder WKND.  
+* Show images tagged "office" in folder WKND.  
 * List all published content fragments for WKND beverages.  
 * Find forms to apply for a job.  
 * Show assets with person in landscape orientation.  
@@ -882,7 +882,7 @@ Dynamic Media with OpenAPI capabilities puts DAM at the core of an agile and eff
 
 Dynamic Media with OpenAPI capabilities offers the following key benefits:
 
-* **Seamless integrations**: Dynamic Media with OpenAPI capabilities offers a comprehensive set of search and delivery APIs. It allows your developers to easily [integrate the delivery of assets with their applications](/help/assets/integrate-dynamic-media-open-apis.md). The applications include Adobe as well as third-party applications. It provides a [Micro Frontend assets selector user interface](/help/assets/overview-asset-selector.md) to search and select approved assets. The selector can be effortlessly integrated with any application based on JavaScript frameworks such as React JS, Angular JS, and Vanilla JS.
+* **Seamless integrations**: Dynamic Media with OpenAPI capabilities offers a comprehensive set of search and delivery APIs. It allows your developers to easily [integrate the delivery of assets with their applications](/help/assets/integrate-dynamic-media-open-apis.md). The applications include Adobe as well as third-party applications. It provides a [Content Advisor user interface](/help/assets/integrate-adobe-non-adobe-applications.md) to search and select approved assets. The selector can be effortlessly integrated with any application based on JavaScript frameworks such as React JS, Angular JS, and Vanilla JS.
 
 * **Centralized management of digital assets**: DAM is the single source of truth for all digital assets. Your digital assets are managed centrally in AEM Assets and delivered to consuming applications by reference using delivery URLs, without copying asset binaries. 
 
