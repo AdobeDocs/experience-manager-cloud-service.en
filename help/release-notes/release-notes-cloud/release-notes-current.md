@@ -258,7 +258,7 @@ Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-
 
 #### Snapshots for RDEs (Beta Program) {#rde-snapshot-program}
 
-In beta, Rapid Development Environments (RDEs) now support a feature to take a snapshot of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
+In beta, Rapid Development Environments (RDEs) now support a feature [to take a snapshot](help/implementing/developing/introduction/rapid-development-environments.md#snapshots) of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
 
 Please email [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) if there is interest in using and providing feedback on this feature.
 
