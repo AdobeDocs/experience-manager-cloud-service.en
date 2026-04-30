@@ -2,7 +2,7 @@
 title: Form Creation Job
 description: Learn about the Brand Experience Agent's form creation job and how to use natural language to create forms from scratch.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
 ---
 

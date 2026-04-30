@@ -26,7 +26,8 @@ For any additional reference information refer - [Get started using Adobe Experi
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
 >title="Adobe Express Integration"
->abstract="Easy and intuitive image-editing tools powered by Adobe Express available directly within AEM Assets to increase content reuse and accelerate content velocity."-->
+>abstract="Easy and intuitive image-editing tools powered by Adobe Express available directly within AEM Assets to increase content reuse and accelerate content velocity."
+-->
 
 ### Edit Image on Assets View using Adobe Express {#edit-image-on-assets-view-using-adobe-express}
 

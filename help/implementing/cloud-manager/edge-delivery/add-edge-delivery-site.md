@@ -14,9 +14,14 @@ exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 
 **To add an Edge Delivery site to Cloud Manager:**
 
-1. Be sure you have first created your program with an Edge Delivery Services license before you onboard an Edge Delivery site in Cloud Manager.
-    See [Create a production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
-1. Sign into Cloud Manager at [experiece.adobe.com](https://experience.adobe.com).
+1. Be sure you have first created your program with an Edge Delivery Services license before you onboard an Edge Delivery site in Cloud Manager. 
+See [Create a production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
+
+    >[!TIP]
+    >
+    >If you want to create a new Edge Delivery site that uses AEM authoring with the Universal Editor, rather than registering an existing site, see [Create your first Edge Delivery site with one click](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). For programs that use Edge Delivery for delivery, a publish tier may not be required. See [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
+
+1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
 1. In the **Quick access** section, click **Experience Manager**.
 1. In the left side panel, click **Cloud Manager**.
 1. Select an organization that you want.
