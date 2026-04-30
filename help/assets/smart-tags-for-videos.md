@@ -3,6 +3,7 @@ title: Smart tag your video assets
 description: Experience Manager automatically adds contextual and descriptive Smart Tags to videos using [!DNL Adobe AI].
 feature: Smart Tags,Tagging
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 87d0eea2-83a1-4cfa-a4a5-425d0e8abba6
 ---
 # Smart tag your video assets {#video-smart-tags}

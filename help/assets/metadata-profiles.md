@@ -4,6 +4,7 @@ description: Know about metadata profiles for assets. Learn how to create a meta
 contentOwner: AG
 feature: Metadata
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 ---
 # Metadata profiles {#metadata-profiles}

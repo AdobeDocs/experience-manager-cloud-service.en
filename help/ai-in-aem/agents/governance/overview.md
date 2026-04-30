@@ -2,9 +2,10 @@
 title: Governance Agent Overview
 description: Learn how the AEM Governance Agent safeguards brand integrity and compliance across AEM
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 2c73c578-6655-43bf-b03a-cb3eb2284d07
 ---
+
 # Governance Agent Overview {#governance-agent}
 
 The **Governance Agent** is a solution designed to safeguard brand integrity and compliance across Adobe Experience Manager. It enforces security, regulatory, and brand policies to ensure every interaction and activation adheres to established standards. The Governance Agent is fully integrated in AI assistant and is designed to operate seamlessly within enterprise environments by leveraging **A2A (Agent-to-Agent)** and **MCP (Model Control Protocol)** tools. These integrations enable the agent to connect with advanced AI orchestrators such as ChatGPT, Claude, and other external AI systems, ensuring flexible and scalable intelligence across platforms.
@@ -36,6 +37,10 @@ The governance agent can validate content against brand guidelines to ensure con
 * *Does this `https://www.website/en.html` follow brand messaging guidelines?*
 * *Check if `https://www.website/homepage` follows brand guidelines*
 * *Show me my brand guidelines*
+
+>[!NOTE]
+>
+>The governance agent also includes an AI-powered brand policy import capability that uses AI to transform customers' existing brand guideline documents into structured, enforceable policy checks that automatically govern, validate, and guide compliant content creation. For more information, see [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md).
 
 ### Permission and Digital Rights Management {#permission-and-digital-rights-management}
 

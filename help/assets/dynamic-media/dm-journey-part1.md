@@ -10,6 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 hide: no
 hidefromtoc: no
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
 ---
 # Dynamic Media Journey: The Basics, Part I {#dm-journey-part1}
@@ -274,7 +275,8 @@ _Dynamic Media Help topics_
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to deliver Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
 * [How to publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-* [Work with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md) -->
+* [Work with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
+-->
 
 _Dynamic Media tutorials_
 

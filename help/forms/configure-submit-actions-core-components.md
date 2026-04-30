@@ -3,6 +3,7 @@ title: How to configure a Submit Action for an Adaptive Form?
 description: An Adaptive Form provides multiple Submit Actions. A Submit Action defines how an Adaptive Form is processed after submission. You can use built-in Submit Actions or create your own
 keywords: how to select submit action for an adpative form, connect an adaptive form to sharepoint list, connect an adaptive form to sharepoint document library, connect an adaptive form to form data model (FDM) 
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 495948e8-30a7-4e7c-952f-c71de15520f0
 role: User, Developer
 ---
@@ -21,10 +22,12 @@ role: User, Developer
 
 A Submit Action lets you choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the **[!UICONTROL Submit]** button on an Adaptive Form. The Adaptive Forms based on Core Component supports various [out-of-the-box submit actions](#submit-actions-supported-by-adaptive-forms-based-on-core-components). 
 
-<!--You can also configure different actions for an Adaptive Form submissions.
+<!--
+You can also configure different actions for an Adaptive Form submissions.
 
 * **Redirect URL/Path** - This option allows user to configure a page for each form, to which the form users are redirected after submitting an Adaptive Form. 
-* **Show Message** - This option allows users to add a message that is displayed when the Adaptive Form is successfully submitted. The predefined text is included in the dialog box and it can be modified by the user. -->
+* **Show Message** - This option allows users to add a message that is displayed when the Adaptive Form is successfully submitted. The predefined text is included in the dialog box and it can be modified by the user.
+-->
 
 ## Submit Actions for Forms based on Core Components
 
@@ -52,7 +55,8 @@ Additionally, you can [customize the default Submit Actions](/help/forms/custom-
 
 ### Configure a Submit Action for an Adaptive Form based on Core Components
 
-<!--To define a Submit action for an Adaptive Form, use the Configure Dialog of an **Adaptive Form Container** component. The configure dialog of a **Adaptive Form Container** component includes:
+<!--
+To define a Submit action for an Adaptive Form, use the Configure Dialog of an **Adaptive Form Container** component. The configure dialog of a **Adaptive Form Container** component includes:
 
 * Basic Tab
 * Form Data Model Tab
@@ -64,7 +68,8 @@ You can define the Form Container properties using the Submission tab of the Con
 
 ![Click the Wrench icon to open Adaptive Form Container dialog box to configure a submit action](/help/forms/assets/adaptive-forms-submit-message.png)
 
-<!--To select and configure a Submit Action for your form:
+<!--
+To select and configure a Submit Action for your form:
 
 1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
 1. Click the Guide Container properties ![Guide properties](/help/forms/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 

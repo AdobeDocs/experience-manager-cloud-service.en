@@ -4,7 +4,7 @@ description: This document describes the recommended steps to upload a standalon
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Developer
-index: no
+index: false
 ---
 
 # Editing an External SPA within AEM {#editing-external-spa-within-aem}

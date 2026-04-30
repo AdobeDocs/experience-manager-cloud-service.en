@@ -2,6 +2,7 @@
 title: Manage Collections in Content Hub
 description: Learn how to manage collections in Content Hub
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
 ---
 
@@ -63,9 +64,11 @@ Execute the steps below to control access while creating collections:
 <!--
 >[!NOTE]
 >
->Collections governance is a limited availability feature. You can get it enabled  by creating a support ticket. Once enabled, you need to [Configure Collections in Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub).-->
+>Collections governance is a limited availability feature. You can get it enabled  by creating a support ticket. Once enabled, you need to [Configure Collections in Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub).
+-->
 
-<!--To create a new collection, navigate to the **[!UICONTROL Collections]** tab and click **[!UICONTROL Create new collection]**. Enter the **[!UICONTROL Title]** and provide an optional **[!UICONTROL Description]** for the assets. Click **[!UICONTROL Create]**.
+<!--
+To create a new collection, navigate to the **[!UICONTROL Collections]** tab and click **[!UICONTROL Create new collection]**. Enter the **[!UICONTROL Title]** and provide an optional **[!UICONTROL Description]** for the assets. Click **[!UICONTROL Create]**.
 ![Create collection](assets/add-assets-collection.jpg)          
 -->
 
@@ -192,3 +195,54 @@ You can mark Collections as Favorite in Content Hub, making it easier to organiz
     Collections marked as Favorites now display under **[!UICONTROL My Favorites]** tab. Alternatively, you can remove the Collections from **[!UICONTROL My Favorites]**. To do this, click **[!UICONTROL More actions]** ![More actions icon](assets/do-not-localize/more-actions.png) and select **[!UICONTROL Remove from Favorites]**.
 
     ![Remove Collection as Favorite](assets/remove-favorite-collection.png)
+
+## Frequently asked questions {#faqs-manage-collections-content-hub}
+
+### What do you refer to as collections in AEM Assets Content Hub?
+
+A collection in AEM Assets Content Hub refers to a set of assets that can be shared among users. Collections can include assets from different locations while maintaining their referential integrity. They create a shared space for users to efficiently access and utilize content.
+
+### How can I create a new collection in AEM Assets Content Hub?
+
+To create a new collection in AEM Assets Content Hub, go to the Collections tab and click **Create Collection**. In the new Collection window, add a Title and Description, select the access control type under the **Who can access** dropdown list, and click **Create**. You can then add assets to the collection.
+
+### What types of access control are available when creating a collection in AEM Assets Content Hub?
+
+There are three access control types in AEM Assets Content Hub: **Private** - Only the creator and administrators can edit and access, **Public** - View only - Everyone can view, but only creator and administrators can edit, and **Public** - View and edit - everyone can access and edit the collection without restrictions.
+
+### Who can perform actions on collections in AEM Assets Content Hub?
+
+AEM Assets Content Hub users can perform actions such as creating, viewing, sharing, downloading, removing, deleting, pinning collections, and marking them as favorites. Administrators have additional privileges, such as viewing all access options and deleting collections.
+
+### How do I add assets to an existing collection in AEM Assets Content Hub?
+
+To add assets to an existing collection in AEM Assets Content Hub, select the assets you want to add, click **Add to collection**, and choose the collection from the list. You can also search for collections using the search bar. Click **Add to collection** to confirm the action.
+
+### Can collections be filtered and searched in AEM Assets Content Hub?
+
+Yes, collections can be filtered and searched in AEM Assets Content Hub by name, access permissions, or creator. Filters include options like **All Collections**, **Only me**, **Anyone can view**, **Anyone can edit**, **Created by anyone**, and **Created by me**.
+
+### How do I download assets from a collection in AEM Assets Content Hub?
+
+To download assets from a collection in AEM Assets Content Hub, navigate to the **Collections** tab and click the download icon on the collection card to download all assets. You can also open the collection, select individual assets, and click **Download** to download them separately.
+
+### How can assets be shared from a collection in AEM Assets Content Hub?
+
+Assets can be shared by enabling public link sharing in AEM Assets Content Hub. Select the share icon on the asset card to copy the share link, which can then be sent to recipients. Note that private collections cannot be shared.
+
+### Who can remove assets from a collection in AEM Assets Content Hub?
+
+An owner of the collection, an administrator, or a non-admin user with edit rights can remove single or multiple assets from a collection in AEM Assets Content Hub. To remove, select the assets and click **Remove from collection**, and then confirm the removal.
+
+### Who is allowed to delete a collection from AEM Assets Content Hub and how is it done?
+
+Only administrators and the creator of a collection can delete it. To delete, navigate to the Collections tab, select the collection, and click the delete icon. The collection is removed from AEM Assets Content Hub.
+
+### What all options can an administrator configure for collections in AEM Assets Content Hub?
+
+Administrator can enable or disable the following options for collections in AEM Assets Content Hub:
+
+* Enable the **View Only Collections** toggle to allow collections that are accessible to everyone but editable only by the creator and administrator.
+
+* Enable the **Public Collections** toggle to allow collections that are both accessible and editable by everyone. If **View Only Collections** and **Public Collections** toggles are disabled, then by default, non-admin users can create only private collections.
+

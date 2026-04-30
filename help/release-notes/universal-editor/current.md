@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.02.05 Release Notes
-description: These are the release notes for the 2026.02.05 release of the Universal Editor.
+title: Universal Editor 2026.04.09 Release Notes
+description: These are the release notes for the 2026.04.09 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.02.05 Release Notes {#release-notes}
+# Universal Editor 2026.04.09 Release Notes {#release-notes}
 
-These are the release notes for the 5 February 2026 release of the Universal Editor.
+These are the release notes for the 9 April 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -16,19 +16,10 @@ These are the release notes for the 5 February 2026 release of the Universal Edi
 
 >[!TIP]
 >
->For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
 ## What's New {#what-is-new}
 
-* The move action is now available within [the context menu.](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
-* The RTE now supports [paste as text.](/help/implementing/universal-editor/configure-rte.md#paste-as-text)
-
-## Early Adoption Features {#early-adopter}
-
-If you are interested in testing the upcoming features listed below and sharing your feedback, please send an email to your Adobe Customer Success Manager from the email address associated with your Adobe ID. 
-
-* Shallow copy has been implemented for Content Fragments.
-
-## Other Improvements {#other-improvements}
-
-* Publish to preview was enabled for AEM 6.5 when using the [`xwalk` plugin.](/help/implementing/universal-editor/component-definition.md#plugins)
+* [The add image option in the rich text editor (RTE) toolbar](/help/implementing/universal-editor/configure-rte.md#image) is now supported for [projects authoring and persisting content in AEM as a Cloud Service.](https://www.aem.live/docs/aem-authoring)
+* [The properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) is now collapsible when navigating from the editor back to [the home screen.](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
+  * Please reach out to Adobe customer care if you wish to use this feature.

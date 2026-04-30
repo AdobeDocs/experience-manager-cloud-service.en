@@ -4,6 +4,7 @@ description: Layout and appearances of Adaptive Forms on various devices are gov
 feature: Adaptive Forms, Core Components
 keywords: Layout of Adaptive Form based on core components, Different layouts for forms, Dynamic Form Layouts AEM, AEM Cloud Service Form Layouts, Form Layout Types in AEM Core Components, Adaptive Form layouts
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
 ---
 # Layout capabilities of Adaptive Forms based on Core Components 
@@ -222,9 +223,11 @@ Similarly, you can hide titles for the other two panels also. Once done, you can
 
 ### 3. Add form components to the panel
 
-<!-- You can employ one of the following method to add form components to the panel:
+<!--
+ You can employ one of the following method to add form components to the panel:
 * [Add components to a layout's panel using the Add icon](#add-components-to-a-layouts-panel-using-the-add-icon)
-* [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel) -->
+* [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel)
+-->
 
 1. Locate the section within the panel that allows you to add components. 
 1. Click the **Add** icon. The icon is a plus sign (+) that signifies the option to add new components.
@@ -270,7 +273,8 @@ Similarly, you can hide titles for the other two panels also. Once done, you can
 You can also [drag-and-drop the components](#extra-bytes) to add the form components to each panel. 
 
 
-<!-- #### Drag and drop components into a layout's panel 
+<!--
+ #### Drag and drop components into a layout's panel 
 
 1. Locate the section within the panel that allows you to add components. 
 2. Navigate to the left panel within your authoring environment and click **Components**.

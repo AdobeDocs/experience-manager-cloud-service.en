@@ -1,6 +1,7 @@
 ---
 title: Managing Content Fragments (Assets - Content Fragments)
 description: Learn how to use the Assets console to manage your AEM Content Fragments, as either the basis of your headless content or for page authoring.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
@@ -218,7 +219,8 @@ Some features in the top toolbar are available from multiple modes:
   * **[Manage Publication](#publishing-and-referencing-a-fragment)**
 
 <!--
-This updates any page references and ensures that the Dispatcher is flushed as required. -->
+This updates any page references and ensures that the Dispatcher is flushed as required.
+-->
 
 ## Save, Close and Versions {#save-close-and-versions}
 

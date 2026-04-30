@@ -1,6 +1,7 @@
 ---
 title: Search
 description: Find your content faster with comprehensive search
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
 solution: Experience Manager Sites
 feature: Authoring

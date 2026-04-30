@@ -4,7 +4,7 @@ description: The RemotePage Component is a custom page component for editing rem
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 feature: Developing
 role: Admin, Developer
-index: no
+index: false
 ---
 
 # The RemotePage Component {#remote-page-component}

@@ -1,6 +1,7 @@
 ---
 title: What are considerations, known issues, and best practices in AEM Forms?
 description: Considerations known issues and best practices for AEM Forms Communication APIs.
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 feature: Adaptive Forms
 role: Admin, Developer, User
@@ -72,8 +73,10 @@ Always ensure that you use the correct XDC file for the printer. For example, av
 
 A form design that is used with the Communications APIs can contain scripts that run on the server. Ensure that a form design does not contain scripts that run on the client. For information about creating form design scripts, see [Designer Help](use-forms-designer.md).
 
-<!-- #### Working with Fonts
- Document Considerations for Working with Fonts>> -->
+<!--
+ #### Working with Fonts
+ Document Considerations for Working with Fonts>>
+ -->
 
 ### Font mapping {#font-mapping}
 
@@ -192,13 +195,15 @@ You can use AEM Forms Output service to combine a template (XFA or PDF) with cus
 
 In comparison to on-premise environment,  the Cloud Service provides additional benefits of auto-scaling and cost effectiveness.
 
-<!--**Where is data processed?**
+<!--
+**Where is data processed?**
 
 **Who has access to data?**
 
 **Is data encrypted?**
 
-**Where is data hosted?** -->
+**Where is data hosted?**
+-->
 
 **Can I run multiple batch operations simultaneously?**
 Yes, you can run multiple batch operations simultaneously. Always use different source and destination folders for every operation to avoid any conflicts.

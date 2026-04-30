@@ -3,9 +3,10 @@ title: Forms Experience Builder - Frequently asked questions
 description: Find answers to common questions about Forms Experience Builder, including setup, usage, troubleshooting, and best practices.
 feature: Edge Delivery Services
 hide: yes
-index: no
+index: false
 hidefromtoc: yes
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: f43c2586-9075-47dc-aa45-5ed2d2979b6d
 ---
 # Forms Experience Builder - Frequently asked questions

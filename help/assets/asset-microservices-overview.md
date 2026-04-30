@@ -4,6 +4,7 @@ description: Process your digital assets using cloud-native and scalable asset p
 contentOwner: AG
 feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
 role: Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
 ---
 # Overview of asset ingestion and processing with asset microservices {#asset-microservices-overview}
@@ -25,7 +26,8 @@ Asset microservices help to avoid the need for third-party rendering tools and m
 
 A high-level architecture diagram depicts the key elements of asset ingestion and processing and flow of assets across the system.
 
-<!-- Proposed DRAFT diagram for asset microservices overview - see section "Asset processing - high-level diagram" in the PPTX deck
+<!--
+ Proposed DRAFT diagram for asset microservices overview - see section "Asset processing - high-level diagram" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
@@ -67,7 +69,8 @@ Post-processing workflows are regular [!DNL Experience Manager] workflow models,
 
 Adobe Experience Manager can be configured to automatically trigger the post-processing workflows after asset processing completes.
 
-<!-- TBD asgupta, Engg: Create some asset-microservices-data-flow-diagram.
+<!--
+ TBD asgupta, Engg: Create some asset-microservices-data-flow-diagram.
 -->
 
 **See also**

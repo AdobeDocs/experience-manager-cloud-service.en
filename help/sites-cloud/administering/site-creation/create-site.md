@@ -3,6 +3,7 @@ title: Creating a Site
 description: Learn how to use AEM to create a site using site templates to define the style and structure of your site.
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 solution: Experience Manager Sites
 ---

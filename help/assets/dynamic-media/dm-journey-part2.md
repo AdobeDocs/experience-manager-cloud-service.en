@@ -10,6 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 hide: no
 hidefromtoc: no
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
 ---
 # Dynamic Media Journey: The Basics, part II  {#dm-journey-part2}
@@ -215,7 +216,8 @@ _Dynamic Media Help topics_
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
 * [How to create Spin sets](/help/assets/dynamic-media/spin-sets.md)
-* [How to create Mixed Media sets](/help/assets/dynamic-media/mixed-media-sets.md) -->
+* [How to create Mixed Media sets](/help/assets/dynamic-media/mixed-media-sets.md)
+-->
 
 _Dynamic Media tutorials_
 

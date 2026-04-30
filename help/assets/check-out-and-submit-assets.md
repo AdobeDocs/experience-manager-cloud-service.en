@@ -4,6 +4,7 @@ description: Learn how to check out assets for editing and check them back in af
 contentOwner: AG
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
 ---
 # Check-in and check-out files in [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}

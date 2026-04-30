@@ -1,6 +1,7 @@
 ---
 title: Reuse Content Fragments using MSM and Live Copies
 description: Learn about using the Live Copy functionality of MSM to use the same, or similar, Content Fragment content in multiple locations, while synchronizing with the source content.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
 feature: Content Fragments
 role: User
@@ -31,11 +32,21 @@ Using MSM for Content Fragments you can:
 
 MSM for Content Fragments, combined with functionality within the Content Fragment Editor, allows you to break, and reinstate inheritance at the field level.
 
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+
 >[!CAUTION]
 >
 >MSM for Content Fragments is only available when using Content Fragments via the **Assets** console. 
 >
 >MSM functionality is *not* available when using the **Content Fragments** console.
+
+<!--
+>[!NOTE]
+>
+>This page covers MSM functionality when using the **Assets** console.
+>
+>MSM for Content Fragments is also available when using [the **Content Fragments** console](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md).
+-->
 
 ## How To {#how-to}
 

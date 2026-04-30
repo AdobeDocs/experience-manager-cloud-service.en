@@ -1,6 +1,7 @@
 ---
 title: Troubleshooting AEM when Authoring
 description: Some issues that you might encounter when using AEM
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: b9c0584d-255e-486d-b829-09e07499ecd2
 solution: Experience Manager Sites
 feature: Authoring

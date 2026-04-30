@@ -3,6 +3,7 @@ title: How to integrate AEM workflow with an Adaptive Form?
 description: Explore the process of automated workflow initiation with AEM Forms Submit Action.
 keywords: AEM Workflow, Integrate Adaptive Form with AEM workflow, Invoke AEM workflow Submit Action
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
 role: User, Developer
 ---
@@ -33,7 +34,8 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 
 * **[!UICONTROL Processing Server User Name]**: Workflow user's username
 
-* **[!UICONTROL Processing Server Password]**: Workflow user's password -->
+* **[!UICONTROL Processing Server Password]**: Workflow user's password
+-->
 
 ## Integrate AEM Workflow with Adaptive Forms {#steps-to-integrate-workflow-with-af}
 
@@ -136,7 +138,8 @@ To set up automated process with [AEM Workflow](https://experienceleague.adobe.c
 ## Best Practices
 
 * When configuring the **[!UICONTROL Invoke an AEM Workflow]** Submit Action, select the appropriate workflow model that aligns with the desired business process.
-* In case, the workflow involves external data storage, be sure to configure the workflow accordingly. It is recommended to set up variables appropriately and in accordance with any external storage requirements. -->
+* In case, the workflow involves external data storage, be sure to configure the workflow accordingly. It is recommended to set up variables appropriately and in accordance with any external storage requirements.
+-->
 
 ## Related Articles
 

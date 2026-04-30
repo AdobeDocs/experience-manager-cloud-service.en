@@ -3,6 +3,7 @@ title: Reusing Content - Multi Site Manager and Live Copy
 description: Get an introduction to reusing content with AEM's powerful Live Copies and the Multi Site Manager features.
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
 ---
@@ -25,9 +26,20 @@ This page provides an overview of reusing content with MSM. The following pages 
 * [MSM Rollout Conflicts](rollout-conflicts.md)
 * [MSM Best Practices](best-practices.md)
 
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+
 >[!NOTE]
 >
 >MSM can also be used for Assets, including Content Fragments. See [Reuse Content Fragments using MSM for Assets](/help/assets/reuse-assets-using-msm.md) (only available through the Assets console).
+
+<!--
+>[!NOTE]
+>
+>MSM can also be used for Assets, and Content Fragments. See:
+>
+>* MSM for Content Fragments when using [the **Content Fragments** console](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
+>* MSM for Content Fragments when using [the **Assets** console](/help/assets/reuse-assets-using-msm.md) 
+-->
 
 ## Possible Scenarios {#possible-scenarios}
 
