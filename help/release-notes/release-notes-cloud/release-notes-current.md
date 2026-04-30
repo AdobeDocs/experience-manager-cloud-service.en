@@ -28,11 +28,13 @@ The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] cu
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
+<!-- 
 ## Release Video {#release-video}
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
+-->
 
 ## AEM Beta Programs {#aem-beta-programs}
 
@@ -81,7 +83,7 @@ See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes
 
 ### AI Translation Integration {#ai-translation-integration}
 
-AEM users can now leverage Large Language Models (LLMs) for content translation, delivering human-translaton quality at machine translation speed. Similar to traditional third-party translation services, Azure OpenAI can be configured as a translation provider in AEM, with support for additional LLMs planned for future releases. Customers use their own LLM licenses for this capability. Additionally, corporate translation style guides can be uploaded to AEM, enabling the extraction of translation rules to ensure brand and style consistency.
+AEM users can now leverage Large Language Models (LLMs) for content translation, delivering human-translaton quality at machine translation speed. Similar to traditional third-party translation services, Azure OpenAI can be configured as a translation provider in AEM, with support for additional LLMs planned for future releases. Customers use their own LLM licenses for this capability. Additionally, corporate translation style guides can be uploaded to AEM, enabling the extraction of translation rules to ensure brand and style consistency. See [Configuring AI Translation Integration](/help/sites-cloud/administering/translation/ai-translation-integration.md) for more information.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
