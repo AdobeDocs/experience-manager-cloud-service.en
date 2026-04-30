@@ -345,6 +345,58 @@ Set the **[!UICONTROL af.cloudservices.recaptcha.domain]** property of the **[!U
 
 To set values of a configuration, [Generate OSGi Configurations using the AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart), and [deploy the configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) to your Cloud Service instance.
 
+## Override reCAPTCHA cloud configuration with OSGi 
+
+To use different project IDs, site keys, or secrets per environment, add an OSGi configuration for **[!UICONTROL Apache Sling Context-Aware Configuration Override Provider: OSGi configuration]**. 
+
+### Add the OSGi override in your project {#override-recaptcha-steps}
+
+1. Clone the Cloud Manager Git repository for your AEM project.
+
+   ```shell
+   git clone <your-cloud-manager-repository-url>
+   ```
+
+1. Open the cloned repository in a text editor.
+
+1. Go to the `ui.config` folder under your application (replace `<your-application-folder>` with the folder name under `/apps` in your project):
+
+   * **For Author:** `ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/config.author`
+   * **For Publish:** `ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/config.publish`
+
+   >[!NOTE]
+   >
+   > Create the `osgiconfig`, `config.author`, and `config.publish` folders, if they are not already present.
+
+1. Create the OSGi override file in both run mode folders, using the same file name in each:
+
+   * **For Author:** in the `config.author` folder, create `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider-integrationTest.cfg.json`.
+   * **For Publish:** in the `config.publish` folder, create `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider-integrationTest.cfg.json`.
+
+1. Paste the following JSON into each file (or adjust author and publish content separately if needed). In every path under `overrides`, replace `<environment-name>` with the name of your reCAPTCHA Enterprise cloud configuration. Use [Sling override syntax](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax).
+
+   ```json
+   {
+     "enabled": true,
+     "description": "recaptchaITOverrideConfig",
+     "overrides": [
+       "cloudconfigs/recaptcha/<environment-name>/projectId=\"$[env:projectId]\"",
+       "cloudconfigs/recaptcha/<environment-name>/secretKey=\"$[secret:secretKey]\"",
+       "cloudconfigs/recaptcha/<environment-name>/siteKey=\"$[env:siteKey]\""
+     ]
+   }
+   ```
+
+1. Commit and push your changes:
+
+   ```shell
+   git add ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/
+   git commit -m "Add reCAPTCHA context-aware configuration OSGi overrides"
+   git push origin <your-branch-name>
+   ```
+
+1. Run the Cloud Manager pipeline that deploys this repository. After deployment, the override supplies `projectId`, `siteKey`, and `secretKey` from the variables and secrets defined for that environment.
+
 ## See Also {#see-also}
 
 {{see-also}}
