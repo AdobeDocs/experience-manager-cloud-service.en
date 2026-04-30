@@ -87,11 +87,11 @@ AEM users can now leverage Large Language Models (LLMs) for content translation,
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Content Advisor now available for non-Adobe applications and Adobe Workfront**
+**Content Advisor now available for Adobe Workfront and non-Adobe applications**
 
-Content Advisor is now available for non-Adobe (third-party) applications and Adobe Workfront, extending intelligent asset discovery beyond Adobe Express and AEM Sites. This release brings the full Content Advisor experience, including AI-powered search, context-aware recommendations, campaign brief–based discovery, access to Dynamic Media renditions, Content Fragment discovery, filters, and asset metadata to external applications and Adobe Workfront workflows.
+Content Advisor is now available for Adobe Workfront and non-Adobe (third-party) applications, extending intelligent asset discovery and content reuse beyond Adobe Express and AEM Sites. This release brings the full Content Advisor experience, including AI-powered search, context-aware recommendations, campaign brief–based discovery, access to Dynamic Media renditions, Content Fragment discovery, filters, and asset metadata to Adobe Workfront workflows and external applications.
 
-You can now discover, evaluate, and use approved assets from AEM Assets directly within your preferred applications, enabling consistent asset usage, improved efficiency, and streamlined content creation across both Adobe and non-Adobe applications.
+You can now discover, evaluate, and reuse approved assets from AEM Assets directly within your preferred applications, enabling consistent asset usage, improved efficiency, and streamlined content creation across both Adobe and non-Adobe applications.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
