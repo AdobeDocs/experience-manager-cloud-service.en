@@ -17,16 +17,34 @@ Follow these steps to connect OpenAI ChatGPT to AEM's MCP servers.
    "Using the configured AEM MCP tools, list all sites in the author environment."
    ```
 
-![The ChatGPT Settings dialog.](assets/chatgpt-1.png)
+>[!NOTE]
+>
+>The OpenAI ChatGPT user interface is subject to change and is not definitive. These instructions are for illustrative purposes.
 
-![The Apps and Connectors Advanced Settings panel in ChatGPT.](assets/chatgpt-2.png)
+1. Open **Settings** so you can reach the area where MCP connections or tools are configured.
 
-![Enabling Developer mode in the Apps and Connectors section.](assets/chatgpt-3.png)
+   ![The ChatGPT Settings dialog.](assets/chatgpt-1.png)
 
-![The dialog for creating a new app in ChatGPT.](assets/chatgpt-4.png)
+1. In **Apps and Connectors**, open **Advanced Settings** to manage connector and MCP-related options.
 
-![The New App configuration form in ChatGPT.](assets/chatgpt-5.png)
+   ![The Apps and Connectors Advanced Settings panel in ChatGPT.](assets/chatgpt-2.png)
 
-![The AEM Content MCP Service listed in Apps and Connectors.](assets/chatgpt-6.png)
+1. Enable **Developer mode** in **Apps and Connectors** so you can add and configure custom apps or connectors.
 
-![Prompting ChatGPT to use the AEM Content MCP Service.](assets/chatgpt-7.png)
+   ![Enabling Developer mode in the Apps and Connectors section.](assets/chatgpt-3.png)
+
+1. Start **Create new app** (or the equivalent control) to add an app entry for your AEM MCP server.
+
+   ![The dialog for creating a new app in ChatGPT.](assets/chatgpt-4.png)
+
+1. Complete the **New App** form—for example, name the app and enter your AEM MCP server URL and any other required fields—then **Save**.
+
+   ![The New App configuration form in ChatGPT.](assets/chatgpt-5.png)
+
+1. Confirm **AEM Content MCP Service** (or your configured app) appears in **Apps and Connectors** so ChatGPT can use it.
+
+   ![The AEM Content MCP Service listed in Apps and Connectors.](assets/chatgpt-6.png)
+
+1. In a chat, write a prompt that tells ChatGPT to use the configured **AEM Tools** (for example, to query author content or sites).
+
+   ![Prompting ChatGPT to use the AEM Content MCP Service.](assets/chatgpt-7.png)
