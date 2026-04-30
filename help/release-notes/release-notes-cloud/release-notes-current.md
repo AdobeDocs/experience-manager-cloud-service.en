@@ -127,6 +127,10 @@ The Experience Governance MCP Server is now generally available (GA). It integra
 
 Learn more about [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) and the [Governance Agent](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
 
+#### Claude Connector {#aem-claude-connector}
+
+Claude users can browse Anthropic’s [Connector marketplace](https://claude.ai/settings/connectors) to 1-click install the [Adobe Experience Manager Connector](/help/ai-in-aem/mcp-support/setup-claude.md#aem-claude-connector). This MCP server exposes a growing set of tools to interact with AEM, including editing content through prompting.
+
 #### AEM OIDC on Publish New Features {#aem-oidc-on-publish-new-features}
 
 * Fix: Query parameters from original request are lost after authentication
