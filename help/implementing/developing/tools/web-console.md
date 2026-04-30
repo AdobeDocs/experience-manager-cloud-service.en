@@ -34,6 +34,10 @@ The Web Console in Adobe Experience Manager (AEM) is based on the [Apache Felix 
 >
 >The Web Console is only available in the AEM as a Cloud Service SDK for local development purposes. It is not available in production.
 
+>[!TIP]
+>
+>To check the status of your OSGi configurations, bundles, and components in a production environment, use the [Developer Console.](/help/implementing/developing/introduction/aem-developer-console.md)
+
 ## Configuration {#configuration}
 
 The **Configuration** screen is used for configuring OSGi bundles and is therefore the underlying mechanism for configuring AEM system parameters. The **Configuration** tab can be accessed by either:
