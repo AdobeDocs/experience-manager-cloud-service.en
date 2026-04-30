@@ -87,38 +87,11 @@ AEM users can now leverage Large Language Models (LLMs) for content translation,
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Content Advisor in AEM Sites**
+**Content Advisor now available for non-Adobe applications and Adobe Workfront**
 
-Content Advisor is now available in AEM Sites, introducing intelligent asset discovery from AEM Assets directly. It enables users to effortlessly discover, browse, and reuse the most relevant assets directly within their workflow, eliminating the need to switch contexts.
+Content Advisor is now available for non-Adobe (third-party) applications and Adobe Workfront, extending intelligent asset discovery beyond Adobe Express and AEM Sites. This release brings the full Content Advisor experience, including AI-powered search, context-aware recommendations, campaign brief–based discovery, access to Dynamic Media renditions, Content Fragment discovery, filters, and asset metadata to external applications and Adobe Workfront workflows.
 
-Content Advisor provides intelligent features for assets such as campaign brief based suggestions, contextual suggestions, access to Dynamic Media renditions, and detailed asset metadata.
-
-Coming soon - Content Advisor support for Adobe Workfront and AJO B2C applications, including ability to discover Content Fragments
-
-### New Features in Dynamic Media {#dynamic-media-new-features}
-
-#### Dynamic Media Template Editor updates {#dynamic-media-template-editor-updates}
-
-**Layer Management Enhancements**
-
-* Drag-and-Drop Layer Reordering: Layers can now be reordered directly in the Layers panel by dragging, providing a faster and more intuitive way to organize layer stacking order beyond the existing Bring Forward or Send Backward actions.
-* Copy, Paste & Duplicate: Full support for copying, pasting, and duplicating layers using keyboard shortcuts (Cmd/Ctrl+C, V, D) or the context menu, with support for multi-layer selections.
-* Separate Layer Properties Button: Added dedicated Layer Properties button for easier navigation to layer settings, with double-click support on layers for quick access.
-
-**Text Formatting Features**
-
-* Line Spacing Control: New line spacing slider enables precise control over line height in text layers, with full end-to-end support including undo/redo and template save/load.
-* All Caps Formatting: Text layers now support All Caps formatting option in the Font Style toolbar alongside Bold, Italic, and Underline.
-* Vertical Alignment Options: Added vertical alignment controls for text layers, providing more precise text positioning within text boxes.
-
-**Size & Dimension Controls**
-
-* Aspect Ratio Unlock: Users can now unlock aspect ratio when adjusting size properties, allowing independent width and height adjustments for more flexible layer sizing.
-* Copyfit Lines Configuration: Added support for `copyfitlines` and `copyfitmaxlines` settings in text copyfit properties, providing finer control over text fitting behavior.
-
-**Visual Polish**
-
-* Updated icons for Timer and Shape layers with refined Spectrum 2 (S2) design system icons.
+You can now discover, evaluate, and use approved assets from AEM Assets directly within your preferred applications, enabling consistent asset usage, improved efficiency, and streamlined content creation across both Adobe and non-Adobe applications.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
