@@ -5,6 +5,7 @@ feature: Developing
 role: Admin, Developer
 exl-id: 4b0fc3e9-b7c4-4c95-bd97-8b24e4d5cb3d
 ---
+
 # AEM as a Cloud Service Developer Console (Beta) {#developer-console}
 
 >[!NOTE]
@@ -14,9 +15,8 @@ exl-id: 4b0fc3e9-b7c4-4c95-bd97-8b24e4d5cb3d
 The AEM as a Cloud Service Developer Console includes a set of tools for debugging in Cloud environments. It can be accessed through a per-environment link in Cloud Manager.
 
 >[!NOTE]
->The AEM as a Cloud Service Developer Console should not be confused with the similarly named [*Adobe Developer Console*](https://developer.adobe.com/developer-console/).
 >
-
+>The AEM as a Cloud Service Developer Console should not be confused with the similarly named [*Adobe Developer Console*](https://developer.adobe.com/developer-console/).
 
 <!--
 There are multiple ways of accessing it:

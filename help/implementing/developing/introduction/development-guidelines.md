@@ -5,6 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Developer
 ---
+
 # AEM as a Cloud Service Development Guidelines {#aem-as-a-cloud-service-development-guidelines}
 
 >[!CONTEXTUALHELP]
@@ -109,7 +110,7 @@ In Cloud environments, developers can download logs through Cloud Manager or use
 
 **Setting the Log Level**
 
-To change the log levels for Cloud environments, the Sling Logging OSGI configuration should be modified, followed by a full redeployment. Because this is not instantaneous, be cautious about enabling verbose logs on production environments that receive lots of traffic. In the future, it is possible that there are mechanisms to more quickly change the log level.
+To change the log levels for Cloud environments, the Sling Logging OSGi configuration should be modified, followed by a full redeployment. Because this is not instantaneous, be cautious about enabling verbose logs on production environments that receive lots of traffic. In the future, it is possible that there are mechanisms to more quickly change the log level.
 
 >[!NOTE]
 >
@@ -166,24 +167,22 @@ Thread dumps on Cloud environments are collected on an ongoing basis, but cannot
 
 ### Local Development {#local-development}
 
-For local development, Developers have full access to CRXDE Lite (`/crx/de`)  and the AEM Web Console (`/system/console`).
+For local development, Developers have full access to [CRXDE Lite](/help/implementing/developing/tools/crxde.md) (`/crx/de`)  and the [Web Console](/help/implementing/developing/tools/web-console.md) (`/system/console`).
 
-On local development (using the SDK), `/apps` and `/libs` can be written to directly, which is different from Cloud environments, where those top-level folders are immutable.
+For local development (using the SDK), `/apps` and `/libs` can be written to directly, which is different from Cloud environments, where those top-level folders are immutable.
 
 ### AEM as a Cloud Service Development tools {#aem-as-a-cloud-service-development-tools}
 
 >[!NOTE]
->The AEM as a Cloud Service Developer Console should not be confused with the similarly named [*Adobe Developer Console*](https://developer.adobe.com/developer-console/).
 >
-
->[!NOTE]
->Some customers will have the option to try out a revamped experience for the AEM Cloud Service Developer Console. See [this article](/help/implementing/developing/introduction/aem-developer-console.md) for more information.
+>* Some customers will have the option to try out a revamped experience for the AEM Cloud Service Developer Console. See [this article](/help/implementing/developing/introduction/aem-developer-console.md) for more information.
+>* The AEM as a Cloud Service Developer Console should not be confused with the similarly named [*Adobe Developer Console*](https://developer.adobe.com/developer-console/).
 
 Customers can access CRXDE lite on the author tier's development environment, but not stage or production. The immutable repository (`/libs`, `/apps`) cannot be written to at runtime so attempting to do so will result in errors.
 
 Instead, the Repository Browser can be launched from the AEM as a Cloud Service Developer Console, providing a read-only view into the repository for all environments on author, publish, and preview tiers. For more information, see the [Repository Browser](/help/implementing/developing/tools/repository-browser.md).
 
-A set of tools for debugging AEM as a Cloud Service developer environments is available in the AEM as a Cloud Service Developer Console for RDE, dev, stage, and production environments. The URL can be determined by adjusting the Author or Publish service URLs as follows:
+A set of tools for debugging AEM as a Cloud Service developer environments is available in the [AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) for RDE, dev, stage, and production environments. The URL can be determined by adjusting the Author or Publish service URLs as follows:
 
 `https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -195,7 +194,7 @@ See [Release Information](/help/release-notes/home.md) for more information.
 
 Developers can generate status information and resolve various resources.
 
-As illustrated below, available statuses information includes the state of bundles, components, OSGI configurations, oak indexes, OSGI services, and Sling jobs.
+As illustrated below, available statuses information includes the state of bundles, components, OSGi configurations, oak indexes, OSGi services, and Sling jobs.
 
 ![Dev Console 1](/help/implementing/developing/introduction/assets/devconsole1.png)
 
@@ -237,9 +236,9 @@ The [Day CQ Mail Service OSGI service](https://experienceleague.adobe.com/docs/e
 
 ### Configuration {#email-configuration}
 
-E-mails in AEM should be sent using the [Day CQ Mail Service OSGi service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
+E-mails in AEM should be sent using the [Day CQ Mail Service OSGI service](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-See the [AEM 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) for details around configuring email settings. For AEM as a Cloud Service, note the following necessary adjustments to the `com.day.cq.mailer.DefaultMailService OSGI` service:
+See the [AEM 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) for details around configuring email settings. For AEM as a Cloud Service, note the following necessary adjustments to the `com.day.cq.mailer.DefaultMailService` OSGi service:
 
 * The SMTP server host name should be set to $[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * The SMTP server port should be set to the value of the original proxy port set in the portForwards parameter used in the API call when configuring up advanced networking. For example, 30465 (rather than 465)
@@ -263,7 +262,7 @@ The Mail Service can optionally be configured with OAuth2 support. For more info
 
 ### Legacy email configuration {#legacy-email-configuration}
 
-Prior to the 2021.9.0 release, email was configured through a customer support request. Note the following necessary adjustments to the `com.day.cq.mailer.DefaultMailService OSGI` service:
+Prior to the 2021.9.0 release, email was configured through a customer support request. Note the following necessary adjustments to the `com.day.cq.mailer.DefaultMailService` OSGi service:
 
 AEM as a Cloud Service requires mail to be sent through port 465. If a mail server does not support port 465, port 587 can be used, as long as the TLS option is enabled.
 
@@ -277,7 +276,7 @@ and if port 587 has been requested:
 * set `smtp.port` to `587`
 * set `smtp.ssl` to `false`
 
-The `smtp.starttls` property will automatically be set by AEM as a Cloud Service at runtime to an appropriate value. Thus, if `smtp.ssl` is set to true, `smtp.startls` is ignored. If `smtp.ssl` is set to false, `smtp.starttls` is set to true. This is regardless of the `smtp.starttls` values set in your OSGI configuration.
+The `smtp.starttls` property will automatically be set by AEM as a Cloud Service at runtime to an appropriate value. Thus, if `smtp.ssl` is set to true, `smtp.startls` is ignored. If `smtp.ssl` is set to false, `smtp.starttls` is set to true. This is regardless of the `smtp.starttls` values set in your OSGi configuration.
 
 The SMTP server host should be set to that of your mail server.
 
