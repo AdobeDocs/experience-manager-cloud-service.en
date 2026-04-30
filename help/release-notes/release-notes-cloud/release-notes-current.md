@@ -220,7 +220,7 @@ Common use cases include:
 
 We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
 
-#### Web Tier Config Pipeline Troubleshooting with the Development Agent (Beta Program) {#devagent-webtier}
+#### Web Tier Config Pipeline Troubleshooting (Beta Program) {#devagent-webtier}
 
 The Development Agent's [pipeline troubleshooting](/help/ai-in-aem/agents/brand-experience/development/development.md) capabilities help developers efficiently diagnose and resolve issues in AEM as a Cloud Service deployments. In addition to supporting Full Stack pipelines (Deployment and Code Quality), the Development Agent now supports troubleshooting for the **Web Tier Config Pipeline** as part of a beta program.
 
