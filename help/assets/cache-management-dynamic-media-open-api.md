@@ -2,6 +2,7 @@
 title: Cache Management in Dynamic Media with Open APIs
 description: Cache Management in Dynamic Media with Open APIs
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 203a5291-edb5-4900-8b0a-32e1ebae5395
 ---
 # Cache Management in Dynamic Media with Open APIs {#cache-management-dynamic-media-open-apis}
@@ -62,10 +63,12 @@ Asset URLs remain unchanged, and the cache control header sent to browsers (and 
 
 The cache purge triggers automatically when an asset is updated, modified, archived, or deleted.
 
-<!--The cache purge triggers automatically in the following circumstances:
+<!--
+The cache purge triggers automatically in the following circumstances:
  
  - when an asset is updated, modified, or archived.
- - when an asset reaches `ready_for_delivery` state after approval.-->
+ - when an asset reaches `ready_for_delivery` state after approval.
+ -->
 
 +++
 

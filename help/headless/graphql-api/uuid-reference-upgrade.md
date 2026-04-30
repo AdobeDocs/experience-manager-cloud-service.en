@@ -307,7 +307,7 @@ com.adobe.cq.dam.cfm.impl.servicing.PhaseChainProcessor Phase phase-x, processed
 ```http
 POST http://localhost:4502/libs/dam/cfm/maintenance.json
 Content-Type: application/json
-Authorization: Basic YWRtaW46YWRtaW4=
+Authorization: Basic yourauthorizationcode
 Accept: application/json
  
 {

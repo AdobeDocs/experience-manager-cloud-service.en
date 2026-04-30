@@ -2,6 +2,7 @@
 title: Get started using [!DNL Assets View]
 description: How to access, login experience of, supported use cases of, and known issues of [!DNL Assets View].
 role: User, Leader
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 51ae6657-f6b5-44b0-a47f-451735ab0d01
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 ---
@@ -17,7 +18,8 @@ Managing your digital assets using [!DNL Assets View] requires only three simple
 
 To use [!DNL Assets View], log in at [https://experience.adobe.com/#/assets](https://experience.adobe.com/#/assets). When logging in, select `Company or School Account`. To receive access, contact your organization's administrator.
 
-<!--In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
+<!--
+In addition, more reference information that can be helpful is [understanding of the user interface](/help/assets/navigate-assets-view.md), [list of use cases](#use-cases), [supported file types](/help/assets/supported-file-formats-assets-view.md), and [known issues](/help/assets/release-notes.md#known-issues).
 -->
 
 ## Access Assets view {#access-assets-view}
@@ -63,7 +65,8 @@ The various digital asset management (DAM) tasks that you can accomplish using [
 * Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General#support)
 
 
-<!--TBD: Merge the below rows in the table when the use cases are documented/available.
+<!--
+TBD: Merge the below rows in the table when the use cases are documented/available.
 
 | How do I delete assets? | <ul> <li>[Delete assets](/help/assets/manage-organize.md)</li> <li>Recover deleted assets</li> <li>Permanently delete assets</li> </ul> |
 | How do I share assets or find shared assets? | <ul> <li>Shared by me</li> <li>Shared with me</li> <li>Share for comments and review</li> <li>Unshare assets</li> </ul> |

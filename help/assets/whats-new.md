@@ -2,6 +2,7 @@
 title: What's new in Content Hub
 description: Learn more on some of the recenly launched Content Hub capabilities
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
 ---
 # What's new in Content Hub {#whats-new-content-hub}
@@ -18,7 +19,18 @@ The following video demonstrates Content Hub key capabilities:
 
 ## Release Date {#release-date}
 
-The release date of Content Hub feature release (2025.10.0) is October 30, 2025 (same as that of AEM as a Cloud Service release). The next feature release (2025.11.0) is planned for November 20, 2025.
+The release date of Content Hub feature release (2026.02.0) is February 26, 2026 (same as that of AEM as a Cloud Service release). The next feature release (2026.03.0) is planned for March 26, 2026.
+
+## February 2026 release features {#february-release-features}
+
+**Permission management in Content Hub using AEM Governance Agent**
+
+In Content Hub, the AEM Governance Agent ensures that only the right people access the right assets at the right time. By applying granular, attribute-based controls and usage rights, it protects sensitive content while enabling secure collaboration. This means reduced compliance risk, stronger brand integrity, and faster workflows, teams can confidently share and reuse assets without worrying about unauthorized access or misuse. This balance of security and flexibility translates into higher operational efficiency and trust across the organization.
+
+![Permission Management Overview](/help/ai-in-aem/agents/governance/assets/permission-management.png)
+
+[!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview#permission-and-digital-rights-management"}
+
 
 ## October release features {#october-release-features}
 
@@ -39,10 +51,6 @@ You can now mark collections as Favorites in Content Hub, making it easier to or
 Content Hub Administrators can now pin collections in Content Hub for quick access. Pinned collections are displayed in a dedicated **[!UICONTROL Pined]** section on the Collections home page, making it easier to keep important collections within reach.
 
 [!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
-
->[!IMPORTANT]
->
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 ## August release features {#august-release-features}
 

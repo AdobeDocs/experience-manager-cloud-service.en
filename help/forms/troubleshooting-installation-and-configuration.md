@@ -4,6 +4,7 @@ description: Troubleshooting installation and configuration of AEM Forms as a Cl
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
 ---
 # Configuration {#installation-and-configuration}
@@ -41,7 +42,8 @@ A missing profile can lead to environment creation failure. Check that the profi
 1. Click **[!UICONTROL New Profile]** in the Products tab.
 1. Specify Name, Display Name, and Description for the profile. Click **[!UICONTROL Done]**. A profile is created.
 
-If the profile exists and issues still persist, contact Adobe Support. -->
+If the profile exists and issues still persist, contact Adobe Support.
+-->
 
 ## Build pipeline fails {#build-pipeline-fails}
 

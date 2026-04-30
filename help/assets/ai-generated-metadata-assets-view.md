@@ -1,6 +1,7 @@
 ---
 title: Enhance content discovery with AI-generated metadata
 description: Learn how to enhance content discovery with AI-generated metadata
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 51d8500e-8a19-40b3-a222-4c7e27eeb667
 ---
 # Enhance content discovery with AI-generated metadata {#ai-smart-tags}
@@ -18,7 +19,8 @@ To enable AI-generated metadata:
   
 ## Using AI-generated metadata {#using-ai-generated-smart-tags}
 
-<!--[!NOTE]
+<!--
+[!NOTE]
 >
 >The enhanced smart tags capability is available only for the newly uploaded assets.
 -->

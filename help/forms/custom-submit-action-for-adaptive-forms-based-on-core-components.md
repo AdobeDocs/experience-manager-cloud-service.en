@@ -4,6 +4,7 @@ description: Learn how to create a custom Submit Action for an Adaptive Forms to
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
 ---
 # Create a custom submit action for Adaptive Forms (Core Components)
@@ -12,7 +13,8 @@ A submit action allows users to select the destination for the data captured fro
 
 You can also create a custom submit action to add functionality not included in the [out-of-the-box options](/help/forms/configure-submit-actions-core-components.md#select-and-configure-a-submit-action-for-an-adaptive-form-select-and-configure-submit-action). For example, integrate the form data with a third-party application or trigger a personalized SMS notification based on user input.
 
-<!-- ![Custom Submit Image](/help/forms/assets/custom-submit-action-hero-image.png)
+<!--
+ ![Custom Submit Image](/help/forms/assets/custom-submit-action-hero-image.png)
 -->
 
 ## Pre-requisites
@@ -166,7 +168,9 @@ The below diagram depicts the steps to create a custom submit action for an Adap
         @Override
         public Map<String, Object> submit(FormSubmitInfo formSubmitInfo) {
         String data = formSubmitInfo.getData();
-        log.info("Using custom submit action service, [data] --> " + data);
+        log.info("Using custom submit action service, [data]
+        -->
+        " + data);
         Map<String, Object> result = new HashMap<>();
         result.put("status", "OK");
         return result;

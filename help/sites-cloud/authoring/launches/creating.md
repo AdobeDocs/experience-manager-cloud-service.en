@@ -1,6 +1,7 @@
 ---
 title: Creating Launches
 description: You can create a launch to enable the updating of a new version of existing web pages for future activation.
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
@@ -78,7 +79,7 @@ You can create a launch from either the Sites or Launches console:
     * **Launch Title**: The name of the Launch. The name should be meaningful for authors.
     * **with existing content**: the original content is used to create the launch.
     * **use a new template to replace the page**: See [Create Launch with New Template](#create-launch-with-new-template) for more details.
-    * **Inherit source page live data**: Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [Live Copy](/help/sites-cloud/administering/msm/overview.md). By default, this option is selected.-->
+    * **Inherit source page live data**: Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [Live Copy](/help/sites-cloud/administering/msm/overview.md). By default, this option is selected.
     * **Launch Date**: The date and time when the launch copy is to be activated (dependent on the **Production Ready** flag; see [Launches - the Order of Events](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
 
    ![Launch properties](/help/sites-cloud/authoring/assets/launches-properties.png)

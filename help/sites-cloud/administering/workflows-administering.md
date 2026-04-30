@@ -3,6 +3,7 @@ title: Administering Workflow Instances
 description: Learn how to Administer Workflow Instances using the workflow console
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 solution: Experience Manager Sites
 ---
@@ -146,7 +147,7 @@ To configure the service, you can configure the OSGi Configuration Files see [OS
 | Workflow Status | `scheduledpurge.workflowStatus` | The status of the workflow instances to purge. The following values are valid:<br><br>- COMPLETED: Completed workflow instances are purged.<br>- RUNNING: Running workflow instances are purged. |
 | Models To Purge | `scheduledpurge.modelIds` | The ID of the workflow models to purge.<br>The ID is the path to the model node, for example:<br> `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model` <br><br> Specify no value to purge instances of all workflow models.<br>To specify multiple models, click the `+` button in the Web Console. |
 | Workflow Age | `scheduledpurge.daysold` | The age of the workflow instances to purge, in days. |
-| Workflow Payload Package | `scheduledpurge.purgePackagePayload`| Indicates whether the payload package should be purged; `true` or `false`. | 
+| Workflow Payload Package | `scheduledpurge.purgePackagePayload`| Indicates whether the payload package should be purged; `true` or `false`. |
 
 
 ## Setting the Maximum Size of the Inbox {#setting-the-maximum-size-of-the-inbox}

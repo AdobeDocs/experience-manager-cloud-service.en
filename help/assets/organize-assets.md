@@ -4,6 +4,7 @@ description: Organize your digital assets, images, files, folders, and so on, us
 contentOwner: AG
 feature: Asset Management, Best Practices
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
 ---
 # Organize your digital assets {#organize-digital-assets}
@@ -17,7 +18,8 @@ All digital assets, metadata, and content of Microsoft&reg; Office and PDF docum
 
 [!DNL Experience Manager Assets] supports multiple ways of organizing content. You can organize them in a hierarchical manner using folders or you can organize them in an unordered, ad-hoc manner, for example, tags. Users can edit tags in the DAM Asset Editor where subassets, renditions, and metadata are displayed.
 
-<!-- Commenting to pull down the existing content before applying changes wrt CQDOC-15930
+<!--
+ Commenting to pull down the existing content before applying changes wrt CQDOC-15930
 ## Create folders {#create-folders}
 
 When organizing a collection of assets, for example, all *Nature* images, you can create folders to keep them together. You can use folders to categorize and organize your assets. [!DNL Assets] does not require you to organize assets in folders to work better.

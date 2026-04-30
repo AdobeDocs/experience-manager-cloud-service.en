@@ -5,6 +5,7 @@ topic-tags: develop
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
 ---
 # Use [!DNL Adobe Sign] in an Adaptive Form {#using-adobe-sign-in-an-adaptive-form}
@@ -291,7 +292,8 @@ After you, add [!DNL Adobe Sign] fields to an Adaptive Form, enable [!DNL Adobe 
 
 ```
 
-<!-- Remove when forms portal goes live
+<!--
+ Remove when forms portal goes live
 >[!NOTE]
 >
 >Data of the Adaptive Form is stored temporarily on Forms Portal. Adobe recommends using [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 

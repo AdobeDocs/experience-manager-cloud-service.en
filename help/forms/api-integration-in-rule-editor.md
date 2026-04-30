@@ -5,6 +5,7 @@ feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 keywords: integrating API in rule editor, invoke service enhancements
+badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
 ---
 # Integrating API in Rule Editor
@@ -117,7 +118,7 @@ For example, when the user opens **Country of Citizenship**, the list of countri
 
 Similarly, **Country of Passport Issuance** and **Destination Country** use the same API call, ensuring consistent and up-to-date data across all three fields.
 
->![NOTE]
+>[!NOTE]
 >
 > You can [retrieve property values from a JSON array by invoking an API and using a custom function](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array). This approach lets you extract values and bind them directly to form fields.
 

@@ -2,6 +2,7 @@
 title: Exporting Content Fragments to Adobe Target
 description: Learn how to export your Content Fragments to Adobe Target, to test and personalize experiences.
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
+badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
@@ -48,7 +49,8 @@ The following action is required:
 
 1. You have to [integrate AEM with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
-<!-- link rewriter - targets in content-fragments-customizing do not exist yet
+<!--
+ link rewriter - targets in content-fragments-customizing do not exist yet
 
 1. Content Fragments are exported from the AEM author instance, so you need to [Configure the AEM Link Externalizer](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Content Fragment are externalized for web delivery.
 
@@ -151,7 +153,8 @@ Can this still occur?
 
    * **A4T Analytics Cloud Configuration**: Select the Analytics cloud configuration that is used for target activity goals and metrics. You need this if you are using Adobe Analytics as the reporting source when targeting content.
 
-<!-- Is this needed?
+<!--
+ Is this needed?
 If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
 -->
 

@@ -1,6 +1,7 @@
 ---
 title: Integrate remote AEM Assets with AEM Sites
 description: Learn how to configure and connect AEM sites  with Approved AEM Assets.
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
 ---
 # Integrate remote AEM Assets with AEM Sites  {#integrate-approved-assets}

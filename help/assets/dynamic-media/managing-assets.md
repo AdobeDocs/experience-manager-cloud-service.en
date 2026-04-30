@@ -4,6 +4,7 @@ description: Learn how to work with and manage Dynamic Media assets by using wor
 contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
 ---
 # Manage Dynamic Media assets {#managing-assets}

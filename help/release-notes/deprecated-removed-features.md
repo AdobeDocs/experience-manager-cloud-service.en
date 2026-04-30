@@ -25,14 +25,13 @@ During the deprecation time window, Adobe will remind customers of the actions t
 
 >[!IMPORTANT]
 >
->Several [deprecated APIs](#aem-apis) are targeting removal on **February 26, 2026**. Please review these key dates and impacts:
+>Several [deprecated APIs](#aem-apis) will be removed on **May 4, 2026**. Please review these key dates and impacts:
 >
->* **Starting January 26, 2026**: Actions Center notification emails are sent **weekly per environment** as a reminder to remove usage of these APIs.
->* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed.
->* **March 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
->* **April 30, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
+>* **Starting January 26, 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs, if a pipeline has been recently executed.
+>* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
+>* **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
+>* **May 4, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further. To once again receive Adobe release updates, a fullstack pipeline must be successfully executed; the update will then be applied within a few days.
 >
->To prevent deployment blocks, remove API usage before March 26, 2026.
 
 ## Deprecated Functionality {#deprecated-features}
 
@@ -80,15 +79,15 @@ This section lists functionality that has been removed.
 The APIs in the table below (click to expand to see it) have been announced as deprecated, but have not yet been removed.  Usage of these APIs must cease before the target removal date or you risk issues related to performance, availability, and security. Some APIs reference the API Removal Guidance section below.
 
 >[!IMPORTANT]
-> Several APIs are scheduled for removal on **February 26, 2026**. Please review these key dates and impacts:
 >
-> * **Starting January 26, 2026**: Actions Center notification emails are sent **weekly per environment** as a reminder to remove usage of these APIs.
-> * **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed.
-> * **March 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step, **blocking deployments** of new code until the usage is removed.
-> * **April 30, 2026**: Environments still using these APIs may **no longer receive critical Adobe release updates**.
+>Several [deprecated APIs](#aem-apis) will be removed on **May 4, 2026**. Please review these key dates and impacts:
 >
-> To prevent deployment blocks, remove API usage before March 26, 2026.
-
+>* **Starting January 26, 2026**: Actions Center notification emails are sent as a reminder to remove usage of these APIs.
+>* **February 26, 2026**: Cloud Manager pipelines that contain code using these APIs will **pause** during the **Code Quality** step. A Deployment Manager, Project Manager, or Business Owner can override the issue to allow the pipeline to proceed. *This may slow your ability to validate and release code changes.*
+>* **March 30, 2026**: Cloud Manager pipelines that contain code using these APIs will **fail** during the **Code Quality** step. Deployments will be blocked until the deprecated API usage is removed. *This may prevent you from releasing time-sensitive updates and could impact your business operations.*
+>* **May 4, 2026**: Environments still using deprecated APIs **will not receive critical Adobe release updates** and are not subject to Adobe’s standard commitments around performance and availability. As a result, you will not receive new features or bug fixes, application stability and uptime may be negatively affected, and security risk exposure may increase further.
+>
+>To prevent deployment blocks, remove API usage before March 30, 2026.
 
 <details>
   <summary>Expand to see the list of deprecated APIs.</summary>
@@ -154,6 +153,12 @@ The APIs in the table below (click to expand to see it) have been announced as d
     <td>2/26/2026</td>
   </tr>
   <tr>
+    <td>org.slf4j.event</td>
+    <td>AEM as a Cloud Service does not support this internal slf4j API. <a href="#org.slf4j">See removal notes below.</a></td>
+    <td>4/11/2022</td>
+    <td>2/26/2026</td>
+  </tr>
+  <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
     <td>Apache Log4j 1 has reached its end of life in 2015 and is no longer supported. <a href="#org.apache.log4j">See removal notes below.</a></td>
     <td>1/27/2022</td>
@@ -164,22 +169,10 @@ The APIs in the table below (click to expand to see it) have been announced as d
     <td>5/15/2023</td>
     <td>2/26/2026</td>
   </tr>
-  <tr>
-    <td>org.slf4j.event</td>
-    <td>AEM as a Cloud Service does not support this internal slf4j API. <a href="#org.slf4j">See removal notes below.</a></td>
-    <td>4/11/2022</td>
-    <td>2/26/2026</td>
-  </tr>
     <tr>
     <td>com.drew.*</td>
     <td>Extracting metadata from images and videos should be done via Asset Compute in Cloud Service, or via Apache POI or Apache Tika.</td>
     <td>9/17/2024</td>
-    <td>2/26/2026</td>
-  </tr>
-  <tr>
-    <td>org.apache.jackrabbit.oak.plugins.blob.*</td>
-    <td>This API is internal use only.</td>
-    <td>9/23/2024</td>
     <td>2/26/2026</td>
   </tr>
   <tr>
@@ -194,57 +187,100 @@ The APIs in the table below (click to expand to see it) have been announced as d
     <td>4/30/2021</td>
     <td>2/26/2026</td>
   </tr>
-<td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
+  <tr>
+    <td>org.apache.jackrabbit.oak.plugins.blob<br>org.apache.jackrabbit.oak.plugins.blob.datastore</td>
+    <td>This API is internal use only.</td>
+    <td>9/23/2024</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+    <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>Usage of this API is not supported in AEM as a Cloud Service.</td>
     <td>10/31/2022</td>
-    <td>2/26/2026</td>
-  </tr>
-  <tr>
-    <td>org.apache.sling.runmode</td>
-    <td></td>
-    <td>2015</td>
-    <td>TBD</td>
-  </tr>
-  <tr>
-    <td>org.json</td>
-    <td>The Apache Johnzon implementation of <a href="https://johnzon.apache.org/index.html">javax.json</a> is recommended and should be used. </td>
-    <td>4/30/2021</td>
-    <td>TBD</td>
-  </tr>
-  <tr>
-<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 is in maintenance mode. Commons Lang 3 should be used instead. <a href="#apache.commons">See removal notes below.</a></td>
-    <td>4/30/2021</td>
-    <td>TBD</td>
-  </tr>
-  <tr>
-    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 is in maintenance mode. Commons Collections 4 should be used instead. <a href="#apache.commons">See removal notes below.</a></td>
-    <td>4/30/2021</td>
-    <td>TBD</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
     <td>This API is deprecated. Use Apache Sling's Builders instead.</td>
     <td>10/31/2022</td>
-    <td>TBD</td>
+    <td>9/30/2026</td>
   </tr>
-  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
-    <td>AEM as a Cloud Service does not support this API.</td>
-    <td>5/15/2023</td>
-    <td>TBD</td>
+  <tr>
+    <td>com.adobe.granite.xss</td>
+    <td>Use org.apache.sling.xss instead.</td>
+    <td>12/12/2023</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+    <td>com.github.jknack.handlebars<br>com.github.jknack.handlebars.cache<br>com.github.jknack.handlebars.context<br>com.github.jknack.handlebars.helper<br>com.github.jknack.handlebars.io</td>
+    <td>This API is deprecated.</td>
+    <td>07/10/2024</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.mailer.commons</td>
+    <td>This API is deprecated as it depends on commons-lang (which is deprecated since 2021).</td>
+    <td>11/30/2025</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.httpcache.api</td>
+    <td>This API is not supported anymore.</td>
+    <td>01/01/2026</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+    <td>org.apache.jackrabbit.webdav.client.methods</td>
+    <td>Usage of this API is not supported in AEM as a Cloud Service.</td>
+    <td>2/13/2026</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
     <td>Use org.apache.sling.xss instead.</td>
     <td>12/12/2023</td>
-    <td>TBD</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
-    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
-    <td>Use org.apache.sling.xss instead.</td>
-    <td>12/12/2023</td>
-    <td>TBD</td>
+    <td>org.apache.tika<br>org.apache.tika.concurrent<br>org.apache.tika.config<br>org.apache.tika.detect<br>org.apache.tika.embedder<br>org.apache.tika.exception<br>org.apache.tika.extractor<br>org.apache.tika.fork<br>org.apache.tika.io<br>org.apache.tika.language<br>org.apache.tika.language.detect<br>org.apache.tika.language.translate<br>org.apache.tika.metadata<br>org.apache.tika.mime<br>org.apache.tika.parser<br>org.apache.tika.parser.apple<br>org.apache.tika.parser.asm<br>org.apache.tika.parser.audio<br>org.apache.tika.parser.captioning<br>org.apache.tika.parser.captioning.tf<br>org.apache.tika.parser.chm<br>org.apache.tika.parser.chm.accessor<br>org.apache.tika.parser.chm.assertion<br>org.apache.tika.parser.chm.core<br>org.apache.tika.parser.chm.exception<br>org.apache.tika.parser.chm.lzx<br>org.apache.tika.parser.code<br>org.apache.tika.parser.crypto<br>org.apache.tika.parser.ctakes<br>org.apache.tika.parser.dbf<br>org.apache.tika.parser.dif<br>org.apache.tika.parser.digest<br>org.apache.tika.parser.dwg<br>org.apache.tika.parser.envi<br>org.apache.tika.parser.epub<br>org.apache.tika.parser.executable<br>org.apache.tika.parser.external<br>org.apache.tika.parser.feed<br>org.apache.tika.parser.font<br>org.apache.tika.parser.gdal<br>org.apache.tika.parser.geo.topic<br>org.apache.tika.parser.geo.topic.gazetteer<br>org.apache.tika.parser.geoinfo<br>org.apache.tika.parser.grib<br>org.apache.tika.parser.hdf<br>org.apache.tika.parser.html<br>org.apache.tika.parser.image<br>org.apache.tika.parser.image.xmp<br>org.apache.tika.parser.iptc<br>org.apache.tika.parser.isatab<br>org.apache.tika.parser.iwork<br>org.apache.tika.parser.iwork.iwana<br>org.apache.tika.parser.jdbc<br>org.apache.tika.parser.journal<br>org.apache.tika.parser.jpeg<br>org.apache.tika.parser.mail<br>org.apache.tika.parser.mat<br>org.apache.tika.parser.mbox<br>org.apache.tika.parser.microsoft<br>org.apache.tika.parser.microsoft.ooxml<br>org.apache.tika.parser.microsoft.ooxml.xslf<br>org.apache.tika.parser.microsoft.ooxml.xwpf<br>org.apache.tika.parser.microsoft.ooxml.xwpf.ml2006<br>org.apache.tika.parser.microsoft.xml<br>org.apache.tika.parser.mp3<br>org.apache.tika.parser.mp4<br>org.apache.tika.parser.ner<br>org.apache.tika.parser.ner.corenlp<br>org.apache.tika.parser.ner.grobid<br>org.apache.tika.parser.ner.mitie<br>org.apache.tika.parser.ner.nltk<br>org.apache.tika.parser.ner.opennlp<br>org.apache.tika.parser.ner.regex<br>org.apache.tika.parser.netcdf<br>org.apache.tika.parser.ocr<br>org.apache.tika.parser.odf<br>org.apache.tika.parser.opendocument<br>org.apache.tika.parser.pdf<br>org.apache.tika.parser.pkg<br>org.apache.tika.parser.pot<br>org.apache.tika.parser.prt<br>org.apache.tika.parser.recognition<br>org.apache.tika.parser.recognition.tf<br>org.apache.tika.parser.rtf<br>org.apache.tika.parser.sentiment<br>org.apache.tika.parser.strings<br>org.apache.tika.parser.txt<br>org.apache.tika.parser.utils<br>org.apache.tika.parser.video<br>org.apache.tika.parser.wordperfect<br>org.apache.tika.parser.xml<br>org.apache.tika.sax<br>org.apache.tika.sax.xpath<br>org.apache.tika.utils<br>org.apache.tika.parser.microsoft.ooxml.xps</td>
+    <td>This version of Apache Tika is outdated and therefore will be removed from Cloud Service. Switch to a newer version of Apache Tika.</td>
+    <td>4/30/2026</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
+    <td>Commons Lang 2 is in maintenance mode. Commons Lang 3 should be used instead. <a href="#apache.commons">See removal notes below.</a></td>
+    <td>4/30/2021</td>
+    <td>3/31/2027 (Tentative)</td>
+  </tr>
+  <tr>
+    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
+    <td>Commons Collections 3 is in maintenance mode. Commons Collections 4 should be used instead. <a href="#apache.commons">See removal notes below.</a></td>
+    <td>4/30/2021</td>
+    <td>3/31/2027 (Tentative)</td>
+  </tr>
+  <tr>
+    <td>org.json</td>
+    <td>The Apache Johnzon implementation of <a href="https://johnzon.apache.org/index.html">javax.json</a> is recommended and should be used. </td>
+    <td>4/30/2021</td>
+    <td>3/31/2027 (Tentative)</td>
+  </tr>
+  <tr>
+    <td>org.apache.sling.runmode</td>
+    <td></td>
+    <td>2015</td>
+    <td>12/31/2027 (Tentative)</td>
+  </tr>
+  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
+    <td>AEM as a Cloud Service does not support this API.</td>
+    <td>5/15/2023</td>
+    <td>12/31/2027 (Tentative)</td>
+  </tr>
+  <tr>
+    <td>org.osgi.service.http</td>
+    <td>The OSGi Service HTTP API is deprecated, please use the OSGi Servlet Whiteboard instead.</td>
+    <td>5/1/2024</td>
+    <td>12/31/2027 (Tentative)</td>
   </tr>
   </tbody>
 </table>
@@ -343,9 +379,13 @@ While you should remediate all deprecated APIs over time, prioritize any APIs li
 
 After updating your code, verify that no deprecated API usage remains in Cloud Manager by checking the results of the code quality step.
 
+If the updates are not made by May 4th, you will no longer receive AEM version updates. To receive Adobe release updates again, the fullstack pipeline must be successfully executed; the update will then be applied within a few days.
+
 ### General Guidelines
 
 If you use a 3rd party library that currently requires Deprecated API, try updating to a newer version of that 3rd party library.
+
+If you decide to deploy your own version of the Deprecated API, e.g. your own version of Guava, make sure that all your bundles using this API will be wired to your version. If you decide to deploy the same major version as currently included in Cloud Service, no further action is needed. However, if you follow the recommendations and deploy the latest version then you need to adjust your Maven project, include that library as a new dependency before the `aem-sdk-api`. This way your code will be wired to the new version. Once you have made the changes, verify with the [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) that the usage of the Deprecated API is not flagged anymore.
 
 If you are using ACS AEM Commons, use at least version 6.11.0 (latest version is recommended) and make sure that you [include the version for Cloud Service](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) by specifying the classifier `cloud` for the content package.
 
@@ -357,7 +397,7 @@ If you are using `org.apache.sling.commons.auth`, or `org.apache.sling.commons.a
 
 Action list:
 
-* Update ACS AEM Commons to latest version (at least 6.11.0)
+* If you are using ACS AEM Commons update to latest version (at least 6.11.0) and make sure to use the `cloud` classifier.
 * Migrate from `org.apache.sling.commons.auth` and/or `org.apache.sling.commons.auth.spi` to `org.apache.sling.auth` resp. `org.apache.sling.auth.spi`.
 
 ### Removal of `org.apache.felix.webconsole*` {#org.apache.felix.webconsole}
@@ -375,7 +415,7 @@ If you use anything from the package `org.eclipse.jetty` or one of its sub packa
 Action list:
 
 * Replace usage of `org.eclipse.jetty` packages with other third-party libraries/own code or
-* Select the required bundles from this list and add them to your project:
+* Select the required bundles from this list and add them to your project. If you add one, make sure to check the package imports of that bundle as you might need to add others from these list to fulfull those imports. If you want to use version 9.x of these bundles, make sure you deploy exactly the version from below and do not embedd *and* export these packages.
   * `org.eclipse.jetty:jetty-client:9.4.54.v20240208`
   * `org.eclipse.jetty:jetty-http:9.4.54.v20240208`
   * `org.eclipse.jetty:jetty-io:9.4.54.v20240208`
@@ -402,7 +442,8 @@ Remove the usage of Google Guava Core Libraries or include an appropriet version
 
 Action list:
 
-* Update ACS AEM Commons to latest version (at least 6.11.0)
+* If you are using ACS AEM Commons update to latest version (at least 6.11.0) and make sure to use the `cloud` classifier.
+* If you are using `io.wcm:io.wcm.caconfig.extensions` update this to at least version 1.9.2
 * Replace usage of Google Guava Core Library with JDK collections or Apache Commons Collections4
 * If still required, add this bundle to your project (substitute the version with the latest available):
   * `com.google.guava:guava:33.4.8-jre`
@@ -413,7 +454,7 @@ Remove usage of the non maintained Apache Commons libraries and replace them wit
 
 Action list:
 
-* Update ACS AEM Commons to latest version (at least 6.11.0)
+* If you are using ACS AEM Commons update to latest version (at least 6.11.0) and make sure to use the `cloud` classifier.
 * Replace imports of `org.apache.commons.lang*` with `org.apache.commons.lang3`
 * Replace imports of `org.apache.commons.collections*` with `org.apache.commons.collecitons4`
 
@@ -439,7 +480,7 @@ Logback is not supported in Cloud Service, remove all usage of it. If you are us
 
 Action list:
 
-* Update ACS AEM Commons to latest version (at least 6.11.0)
+* If you are using ACS AEM Commons update to latest version (at least 6.11.0) and make sure to use the `cloud` classifier.
 * Remove the code using packages from `ch.qos.logback`
 
 ### Usage of `org.slf4j.event and org.slf4j.spi` {#org.slf4j}
@@ -448,9 +489,10 @@ If you are using `org.slf4j.event` or `org.slf4j.spi`, remove all usage of it. I
 
 Action list:
 
-* Update ACS AEM Commons to latest version (at least 6.11.0)
-* Remove the code using `org.slf4j.event` and `org.slf4j.spi`
+* If you are using ACS AEM Commons update to latest version (at least 6.11.0) and make sure to use the `cloud` classifier.
 * If you are using the Apache Kafka Client and include the OSGi wrapper bundle from Apache ServiceMix (`org.apache.servicemix.bundles.kafka-clients`), replace it with the [AEM Apache Kafka Client Wrapper](https://repo.maven.apache.org/maven2/com/adobe/aem/osgi/com.adobe.aem.osgi.kafka-clients/4.0.0_1.0/). This is the same version as the one from Apache ServiceMix with just the usage of those two packages removed.
+* If you are using `com.adobe.aio.aem:aio-lib-osgi` update to the latest version (at least 2.0.12).
+* Remove the code using `org.slf4j.event` and `org.slf4j.spi`
 
 ### Usage of `org.apache.log4j` {#org.apache.log4j}
 

@@ -1,9 +1,11 @@
 ---
 title: Set up Dynamic Media
 description: To set up Dynamic Media, you must configure Dynamic Media and manage image and viewer presets.
+mini-toc-levels: 3
 contentOwner: Rick Brough
 feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
 ---
 # Set up Dynamic Media {#setting-up-dynamic-media}
@@ -12,7 +14,8 @@ exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
 
 [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) helps you manage assets by delivering rich visual merchandising and marketing assets on demand, automatically scaled for consumption on web, mobile, and social sites. Using a set of primary source assets, Dynamic Media generates and delivers multiple variations of rich content in real time through its global, scalable, performance-optimized network.
 
-<!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
+<!--
+ OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 >[!NOTE]
 >
@@ -39,3 +42,21 @@ See also the following topics:
 >**If you are upgrading:**
 >
 >* After you have Adobe [!DNL Experience Manager] up and running, any asset you upload has Dynamic Media automatically enabled (unless it was explicitly disabled by your system administrator). If you are on an upgraded instance of [!DNL Experience Manager] and new to Dynamic Media, you likely must reprocess your assets to make them Dynamic Media-enabled. See [Reprocess assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+
+
+## One-time DNS update required for Dynamic Media certificate renewals {#dns-update-dynamic-media-certificate-renewals}
+
+If your domain uses a CAA (Certification Authority Authorization) DNS record, you must authorize DigiCert to allow continued renewal of TLS/SSL certificates used by Dynamic Media hostnames.
+
+Add the following CAA record at the root (apex) of your domain:
+
+```
+<yourdomain> CAA 0 issue "digicert.com"
+
+```
+
+This is a one-time change.
+
+You can verify whether a CAA record exists using your DNS provider tools or a [CAA lookup utility](https://caatest.co.uk/).
+
+If a CAA record exists and DigiCert is not authorized, certificate renewal fails when the current certificate expires, which can cause downtime for image and video delivery. If no CAA record exists for your domain, no action is required.

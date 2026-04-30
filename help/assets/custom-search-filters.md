@@ -2,6 +2,7 @@
 title: Custom search filters
 description: Learn about customizing search filters form
 role: User, Leader, Developer
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
 ---
 

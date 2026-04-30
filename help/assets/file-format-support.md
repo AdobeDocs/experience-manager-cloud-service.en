@@ -4,6 +4,7 @@ description: File formats and MIME types supported by [!DNL Experience Manager A
 contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 ---
 # [!DNL Assets] supported file formats {#supported-file-formats}

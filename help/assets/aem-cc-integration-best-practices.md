@@ -5,6 +5,7 @@ contentOwner: AG
 mini-toc-levels: 1
 feature: Collaboration, Adobe Asset Link, Desktop App
 role: User, Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 ---
 # Adobe Experience Manager and Creative Cloud integration best practices {#aem-and-creative-cloud-integration-best-practices}
@@ -67,7 +68,8 @@ Deciding on which capability to use
 | Misc - network and access | Requires access from user's desktop to Experience Manager deployment over network | Requires access from user's desktop to Experience Manager deployment over network | Adobe Asset Link does not share network proxy environment. |
 
 
-<!-- Removing this row from table as migration guide is not yet final.
+<!--
+ Removing this row from table as migration guide is not yet final.
 | Misc - Migrate large number of assets | No | No | [Migration Guide](/help/assets/assets-migration-guide.md) |
 -->
 
@@ -97,7 +99,8 @@ To support asset distribution use cases, consider the following options:
 
 ### Considerations when using Experience Manager and Creative Cloud integration {#considerations-when-using-aem-and-creative-cloud-integration}
 
-<!--incomplete and TBD: 
+<!--
+incomplete and TBD: 
 
 * DA2.0 best practices: See troubleshooting.md
 * Stock integration: See ?
