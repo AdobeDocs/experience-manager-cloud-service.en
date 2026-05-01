@@ -5,6 +5,7 @@ feature: Language Copy
 role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 solution: Experience Manager Sites
+exl-id: 55f6caba-eb97-4494-8142-538ce90785cf
 ---
 # Configuring AI Translation Integration {#ai-translation-integration}
 
@@ -65,4 +66,3 @@ Once AI translation is configured and associated with your pages, you [create an
 >[!NOTE]
 >
 >AI translation integration is **not** available from the [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/ai-assistant-in-aem.md) chat UI or from the Experience Production Agent interface. Use the translation workflows and consoles described in this article.
-
