@@ -387,6 +387,10 @@ To use different project IDs, site keys, or secrets per environment, add an OSGi
    }
    ```
 
+   >[!NOTE]
+   >
+   >Add `projectId`, `siteKey`, and `secretKey` as environment variables and secrets in Cloud Manager so they apply to **Author**, **Preview**, and **Publish** (use **Step Applied** in the **Environment Configuration** dialog). See [Environment variables in Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
+
     ![Recaptcha Override](/help/forms/assets/recaptcha-override.png)
 
 1. Commit and push your changes:
