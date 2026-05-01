@@ -9,16 +9,15 @@ role: Admin, Developer
 
 # Edit programs {#editing-programs}
 
-To manage and edit programs, start at the [**My Programs** console](/help/implementing/cloud-manager/navigation.md). The **My Programs** page provides an overview of all programs to which you have access. When selecting an individual program, the **Program Overview** page provides details of the program at a glance. 
+To manage and edit programs, start at the [**My Programs** console](/help/implementing/cloud-manager/navigation.md). The **My Programs** page provides an overview of all programs to which you have access. When selecting an individual program, the **Program Overview** page provides an overview of the details of the program. 
 
-From the **Program Overview**, users with the requisite permissions can edit [production programs created in your organization](creating-production-programs.md) and [sandbox programs created in your organization](creating-sandbox-programs.md). By editing a program, you can:
+From the **Program Overview**, users with the requisite permissions can edit [production programs created in your organization](creating-production-programs.md) and [sandbox programs created in your organization](creating-sandbox-programs.md). By editing a program, you can do the following:
 
 * Add Sites solution to an existing program with Assets and conversely.
 * Remove Sites or Assets from an existing program with both Sites and Assets.
 * Add an unused solution entitlement to an existing program or create a new program.
 * Mark production programs for deletion.
 * Delete sandbox programs.
-
 
 ## Permissions {#permissions}
 
@@ -34,22 +33,21 @@ Anytime a program is edited, including adding or removing a solution or add-on, 
 1. In the **Quick access** section, click **Experience Manager**.
 1. In the left side panel, click **Cloud Manager**.
 1. Select the appropriate organization.
-1. On the **[My Programs](#my-programs)** page, click the program that you want to edit to show its details.
+1. On the **My Programs** page, click the program that you want to edit.
+1. Near the upper-left corner of the page, click the program's name, then select **Edit program**.
 
-1. Click your program's name in the upper-left of the page and select **Edit program**.
+   ![Edit program option on the Program's drop-down menu](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/edit-program.png)
 
-   ![Edit program option](assets/edit-program-overview.png)
+1. In the **Edit Program** dialog box, use the tabs to set the various options you want.
 
-1. The **Edit Program** page opens to the **General** tab.
+   ![General tab](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/edit-program-dialog-box.png)
 
-   ![General tab](assets/edit-program-prod1.png)
-
-1. The options available for editing the program are the same options for program creation.
+   The options available for editing the program are the same options for program creation.
    * You can configure whether a publish tier is provisioned for new environments (Beta). See [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
    * See [Create Production Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) and [Create Sandbox Programs](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) for details on the individual options. 
    * [Additional options](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) may be available for your production program depending on the entitlements of your organization.
 
-1. Click **Update** to save your changes to the program.
+1. Click **Update** to save your changes.
 
 ## Mark a production program for deletion {#delete-production-program}
 
@@ -83,7 +81,7 @@ Before marking for deletion is initiated, the system validates whether the produ
 
    >[!NOTE]
    >
-   >If the production program has blocking resources, such as environments that are currently updating, the **Mark for deletion** button is disabled. You must wait until all program resources are unlocked before you can mark the program for deletion.
+   >If the production program has blocking resources, such as environments that are currently updating, the **Mark for deletion** button is disabled. Wait until all program resources are unlocked before you can mark the program for deletion.
    >
    >![The Mark production program for deletion dialog box showing that the program cannot be deleted because it has blocking resources](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-markfordelete2b.png)
 
@@ -120,7 +118,7 @@ You can restore a production program that has been *marked* for deletion as long
 
    ![Unmarking the scheduled permanent removal date of the production program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/production-program-unmarkfordelete6.png) 
 
-   The production program will move to unmarking from deletion.
+   The production program is unmarked from deletion.
 
 ## Delete a sandbox program {#delete-sandbox-program}
 
