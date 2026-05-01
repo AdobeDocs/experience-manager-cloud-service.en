@@ -9,7 +9,7 @@ exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
 
 >[!NOTE]
 >
->This article focuses on Local Developmenet with AI tooling for **AEM Java stack development**. For Edge Delivery Services, see [Developing with AI Tools](https://www.aem.live/developer/ai-coding-agents). 
+>This article focuses on Local Development with AI tooling for **AEM Java stack development**. For Edge Delivery Services, see [Developing with AI Tools](https://www.aem.live/developer/ai-coding-agents). 
 
 AI coding agents (Claude Code, Cursor, GitHub Copilot, and similar tools) have broad knowledge of AEM's underlying technologies (Java, OSGi, Sling, JCR, HTL) but don't necessarily know best practices for generating code and configuration, or how to debug common AEM development issues.
 
@@ -21,6 +21,8 @@ Four complementary components address this:
 |**Agent skills**|Reusable instruction sets for recurring development tasks such as component creation and Dispatcher configuration|
 |**AEM Quickstart Local MCP server**|Exposes live runtime data from a local AEM SDK instance to support troubleshooting|
 |**Dispatcher Local MCP server**|Enables runtime validation and inspection of a local Dispatcher instance|
+
+Review the [AI-assisted development tutorials](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview) for additional, hands-on instruction.
 
 >[!NOTE]
 >
@@ -51,7 +53,7 @@ Adobe publishes AEM as a Cloud Service skills in the **[adobe/skills](https://gi
 
 ### Install Skills {#install-skills}
 
-Choose the method that matches your AI coding tool. Installing skills once makes them available for all projects on that machine.
+Choose the method that matches your AI coding tool. Installing skills once makes them available for all projects on that machine. See the [Set up AEM Agent Skills tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills) for a concrete walkthrough.
 
 #### Claude Code {#claude-code}
 
@@ -114,6 +116,8 @@ CTA Link (ctaLink) - Pathfield
 ```
 
 The agent echoes the field specification for confirmation, then generates all component files. Supported patterns include multifield with composite nested items, conditional show/hide logic, Core Component extension via Sling Resource Merger, and JUnit 5 tests using AEM Mocks.
+
+Learn more by following the [Component development using AEM Agent Skills tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
 
 ### Use the Dispatcher Skill {#use-the-dispatcher-skill}
 
