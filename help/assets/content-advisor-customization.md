@@ -1,13 +1,13 @@
 ---
-title: Customize Asset Selector application
-description: Use functions to customize Asset selector within your application.
+title: Customize Content Advisor
+description: Use functions to customize Content Advisor within your application.
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
 ---
-# Asset Selector customizations {#asset-selector-customization}
+# Content Advisor customizations {#content-advisor-customization}
  
-Asset Selector allows you to customize various components according to preferences, requirements, or functional needs. You can customize the following components [Micro-Frontend Asset Selector](#overview-asset-selector.md):
+Content Advisor allows you to customize various components according to preferences, requirements, or functional needs. You can customize the following components [Micro-Frontend Content Advisor](#overview-asset-selector.md):
 
 * [Customize filter panel](#customize-filter-panel)
 * [Customize information in modal view](#customize-info-in-modal-view)
@@ -24,61 +24,82 @@ You need to define the prerequisites in the **index.html** file or a similar fil
 You can add the following code snippet in `assetSelectorProps` object to customize the filter panel:
 
 ```
-filterSchema: [
-    {
-    header: 'File Type',
-    groupKey: 'TopGroup',
-    fields: [
-    {
-    element: 'checkbox',
-    name: 'type',
-    options: [
-    {
-    label: 'Images',
-    value: '<comma separated mimetypes, without space, that denote all images, for e.g., image/>',
-    },
-    {
-    label: 'Videos',
-    value: '<comma separated mimetypes, without space, that denote all videos for e.g., video/,model/vnd.mts,application/mxf>'
-    }
-    ]
-    }
-    ]
-    },
-    {
-    fields: [
-    {
-    element: 'checkbox',
-    name: 'type',
-    options: [
-    { label: 'JPG', value: 'image/jpeg' },
-    { label: 'PNG', value: 'image/png' },
-    { label: 'TIFF', value: 'image/tiff' },
-    { label: 'GIF', value: 'image/gif' },
-    { label: 'MP4', value: 'video/mp4' }
-    ],
-    columns: 3,
-    },
-    ],
-    header: 'Mime Types',
-    groupKey: 'MimeTypeGroup',
-    },
-    {
-    fields: [
-    {
-    element: 'checkbox',
-    name: 'property=metadata.application.xcm:keywords.value',
-    options: [
-    { label: 'Fruits', value: 'fruits' },
-    { label: 'Vegetables', value: 'vegetables'}
-    ],
-    columns: 3,
-    },
-    ],
-    header: 'Food Category',
-    groupKey: 'FoodCategoryGroup',
-    }
-],
+"filterSchema": [
+   {
+      "header":"File Type",
+      "groupKey":"TopGroup",
+      "fields":[
+         {
+            "element":"checkbox",
+            "name":"type",
+            "options":[
+               {
+                  "label":"Images",
+                  "value":"<comma separated mimetypes, without space, that denote all images, for e.g., image/>"
+               },
+               {
+                  "label":"Videos",
+                  "value":"<comma separated mimetypes, without space, that denote all videos for e.g., video/,model/vnd.mts,application/mxf>"
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "fields":[
+         {
+            "element":"checkbox",
+            "name":"type",
+            "options":[
+               {
+                  "label":"JPG",
+                  "value":"image/jpeg"
+               },
+               {
+                  "label":"PNG",
+                  "value":"image/png"
+               },
+               {
+                  "label":"TIFF",
+                  "value":"image/tiff"
+               },
+               {
+                  "label":"GIF",
+                  "value":"image/gif"
+               },
+               {
+                  "label":"MP4",
+                  "value":"video/mp4"
+               }
+            ],
+            "columns":3
+         }
+      ],
+      "header":"Mime Types",
+      "groupKey":"MimeTypeGroup"
+   },
+   {
+      "fields":[
+         {
+            "element":"checkbox",
+            "name":"property=metadata.application.xcm:keywords.value",
+            "options":[
+               {
+                  "label":"Fruits",
+                  "value":"fruits"
+               },
+               {
+                  "label":"Vegetables",
+                  "value":"vegetables"
+               }
+            ],
+            "columns":3
+         }
+      ],
+      "header":"Food Category",
+      "groupKey":"FoodCategoryGroup"
+   }
+]
 ```
 
 ## Customize information in modal view {#customize-info-in-modal-view}
@@ -228,7 +249,7 @@ The syntax of disable selection is as follows:
 
 ## Customize expired assets {#customize-expired-assets}
 
-Asset Selector allows you to control the usage of an expired asset. You can customize the expired asset with an **Expiring soon** badge that can help you know in advance about the assets that are going to expire within 30 days from the current date. Moreover, this can be customized as per the requirement. You can also allow the selection of an expired asset on the canvas or vice versa. The customization of an expired asset can be done using some code snippets in various ways:
+Content Advisor allows you to control the usage of an expired asset. You can customize the expired asset with an **Expiring soon** badge that can help you know in advance about the assets that are going to expire within 30 days from the current date. Moreover, this can be customized as per the requirement. You can also allow the selection of an expired asset on the canvas or vice versa. The customization of an expired asset can be done using some code snippets in various ways:
 
 <!--
 {
@@ -245,7 +266,7 @@ expiryOptions: {
 
 ### Selection of an expired asset {#selection-of-expired-asset}
 
-You can customize the usage of an expired asset to make it either selectable or unselectable. You can customize whether you want to allow the drag and drop of an expired asset on the Asset Selector canvas or not. To do this, use the following parameters to make an asset unselectable on the canvas:
+You can customize the usage of an expired asset to make it either selectable or unselectable. You can customize whether you want to allow the drag and drop of an expired asset on the Content Advisor canvas or not. To do this, use the following parameters to make an asset unselectable on the canvas:
 
 ```
 expiryOptions:{
@@ -283,7 +304,7 @@ The following code snippet helps you set **Expiring Soon** badge for the assets 
 };
 ```
 
-<!--In the above code snippet, the `getExpiryStatus` function is used to show the **Expiring soon** badge that have expiration date stored in `customExpirationDate`. Additionally, it sets the expiration date of an asset to five days from the current date. The `millisecondsInDay` helps you set expiry of an asset by specifying the time range in milliseconds. You can replace milliseconds with hours directly or customize function as per the requirement. Whereas, the `getTime()` function returns the number of milliseconds for the mentioned date. See [properties](#asset-selector-properties) to know about `expirationDate` property.--> 
+<!--In the above code snippet, the `getExpiryStatus` function is used to show the **Expiring soon** badge that have expiration date stored in `customExpirationDate`. Additionally, it sets the expiration date of an asset to five days from the current date. The `millisecondsInDay` helps you set expiry of an asset by specifying the time range in milliseconds. You can replace milliseconds with hours directly or customize function as per the requirement. Whereas, the `getTime()` function returns the number of milliseconds for the mentioned date. See [properties](#content-advisor-properties) to know about `expirationDate` property.--> 
 
 Refer to the following example to understand how the property works to fetch the current date and time: 
 
@@ -353,7 +374,7 @@ Use the following code snippet to show toast message for the usage of an expired
 
 ## Contextual invocation filter{#contextual-invocation-filter}
 
-Asset Selector allows you to add a tag picker filter. It supports a tag group which combines all the relevant tags to a particular tagging group. Additionally, it allows you to select additional tags corresponding to the asset that you are looking for. Moreover, you can also set the default tag groups under the contextual invocation filter that are mostly used by you so that they are accessible to you on the go.
+Content Advisor allows you to add a tag picker filter. It supports a tag group which combines all the relevant tags to a particular tagging group. Additionally, it allows you to select additional tags corresponding to the asset that you are looking for. Moreover, you can also set the default tag groups under the contextual invocation filter that are mostly used by you so that they are accessible to you on the go.
 
 >[!NOTE]
 >
@@ -405,9 +426,9 @@ const filterSchema = useMemo ((); => {
 
 ![tag group filter](assets/tag-group.gif)
 
-## Upload in Asset Selector {#upload-in-asset-selector}
+## Upload in Content Advisor {#upload-in-content-advisor}
 
-You can upload files or folders to Asset Selector from your local file system. To upload files using the local file system, you generally need to use an upload  feature provided by a Asset Selector micro front-end application. The `upload` Various code snippets required to invoke upload in asset selector involves:
+You can upload files or folders to Content Advisor from your local file system. To upload files using the local file system, you generally need to use an upload  feature provided by a Content Advisor micro front-end application. The `upload` Various code snippets required to invoke upload in Content Advisor involves:
 
 * [Basic upload form code snippet](#basic-upload)
 * [Upload configuration](#upload-config)
@@ -467,7 +488,7 @@ uploadConfig: {
      }, 
 ```
 
-*More properties include `metadataSchema`, `onMetadataFormChange`, `targetUploadPath`, `hideUploadButton`, `onUploadStart`, `importSettings` `onUploadComplete`, `onFilesChange`, `uploadingPlaceholder`*. See [Asset Selector properties](#asset-selector-properties.md) for more information.
+*More properties include `metadataSchema`, `onMetadataFormChange`, `targetUploadPath`, `hideUploadButton`, `onUploadStart`, `importSettings` `onUploadComplete`, `onFilesChange`, `uploadingPlaceholder`*. See [Content Advisor properties](/help/assets/content-advisor-properties.md) for more information.
 
 ### Upload with metadata {#upload-with-metadata}
 
@@ -638,9 +659,3 @@ dragOptions: {
          }
 ```
 
->[!MORELIKETHIS]
->
->* [Asset Selector properties](/help/assets/asset-selector-properties.md)
->* [Integrate Asset Selector with various applications](/help/assets/integrate-asset-selector.md)
->* [Asset Selector properties](/help/assets/asset-selector-properties.md)
->* [Integrate Asset Selector with Dynamic Media with OpenAPI capabilities](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
