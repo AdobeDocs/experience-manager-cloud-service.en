@@ -104,7 +104,7 @@ The 2026.4.0 feature activation provides the full feature set for this maintenan
 
 ### Known Issues {#known-issues-25520}
 
-None.
+* SITES-43715: Edge Delivery with Universal Editor: Failing permission validation adds latency to publishing workloads.
 
 ### Deprecated Features and APIs {#deprecated-25520}
 
