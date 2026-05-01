@@ -85,6 +85,10 @@ See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes
 
 AEM users can now leverage Large Language Models (LLMs) for content translation, delivering human-translation quality at machine-translation speed. Similar to traditional third-party translation services, Azure OpenAI can be configured as a translation provider in AEM, with support for additional LLMs planned for future releases. Customers use their own LLM licenses for this capability. Additionally, corporate translation style guides can be uploaded to AEM, enabling the extraction of translation rules to ensure brand and style consistency. See [Configuring AI Translation Integration](/help/sites-cloud/administering/translation/ai-translation-integration.md) for more information.
 
+### Content Fragment Editor {#cf-editor}
+
+The new Content Fragment Editor now allows you to preview the JSON representation of a content fragment. This helps validate the content structure independently of rendering and restores parity with the previous Content Fragment Editor in AEM Touch UI for this capability.
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 **Content Advisor now available for Adobe Workfront and non-Adobe applications**
@@ -95,16 +99,18 @@ You can now discover, evaluate, and reuse approved assets from AEM Assets direct
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Early Access Features in AEM Forms {#forms-early-access-features}
+### New Features in AEM Forms
 
-**Display labels for multi-select dropdown in Submission PDF**
-Multi-select dropdown components in Adaptive Forms now render their selected display labels in the [generated Submission PDF](/help/forms/generate-document-of-record-core-components.md), ensuring the document accurately reflects what users see on the form.
+* **Override reCAPTCHA cloud configuration with OSGi**  
+reCAPTCHA Enterprise project IDs, site keys, and secrets that you keep with your source files can resolve to different values on each Cloud Service environment after you [add the Context-Aware Configuration override and deploy through Cloud Manager](/help/forms/captcha-adaptive-forms.md#override-recaptcha-osgi).
 
-**Enhanced accessibility for checkbox, radio button, and panel components**
-Adaptive Forms Core Components introduce WCAG 2.2 -compliant semantic markup for [checkbox groups(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group), [radio button groups(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button), and the [Panel component](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). These components leverage `<fieldset>` and `<legend>` HTML elements to establish meaningful relationships between group labels and their options, enabling accurate interpretation by screen readers and other assistive technologies.
+* **Certificate-based authentication**  
+Adaptive Forms that submit to a Microsoft SharePoint list now support [certificate-based authentication](/help/forms/connect-forms-to-sharepoint-list.md#certificate-based-authentication) alongside OAuth URL authentication. For certificate-based sign-in, register a certificate alias and tenant details in AEM and Microsoft Azure.
 
-**Versioning support in Forms Manager**
-Forms Manager now [supports versioning for Adaptive Forms (Core Components and Foundation Components)](/help/forms/manage-form-versions-forms-manager.md), form fragments, themes, XDP templates, and binary assets. Create versions, view complete version history, and restore earlier states of your form assets directly from the Forms & Documents console.
+* **Rule Editor Enhancements**
+
+  * The Adaptive Forms rule editor now supports the simplified grammar for [Dispatch Event and On Trigger Event rules for out-of-the-box (OOTB) triggers and for custom events](/help/forms/rule-editor-enhancements-use-cases.md#simplified-grammar-for-ootb-and-custom-events), so authors are not limited to grammar on custom triggers only. 
+  * When rules on Adaptive Forms based on Core Components now include the [File Attachment component together with other conditions using AND or OR logic](/help/forms/rule-editor-enhancements-use-cases.md#combined-when-conditions-with-the-file-attachment-component), so the rule runs its actions only when the attachment state and the other checks all evaluate as intended.
   
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
