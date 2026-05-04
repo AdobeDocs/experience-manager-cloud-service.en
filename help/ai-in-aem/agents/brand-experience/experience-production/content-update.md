@@ -123,3 +123,9 @@ You can explore AEM Agents through the [Playground](https://www.aem.live/develop
 Please be aware of the following limitations:
 
 * File uploads can be used when interacting with [Jira](#jira), but are not supported when interacting with the [AI Assistant.](#ai-assistant)
+
+## Additional Resources {#additional-resources}
+
+The following resources may be useful as you continue to explore the Experience Production Agent:
+
+* You can also use the [Experience Production Agent Workbook](https://main--summit-labs--aemsites.aem.page/brand-visibility/l339/) for guided, hands-on instructions.
