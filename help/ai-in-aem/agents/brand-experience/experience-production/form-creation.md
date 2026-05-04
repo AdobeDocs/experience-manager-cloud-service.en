@@ -102,4 +102,4 @@ The form creation skill combines form creation and site integration in a single 
 
 The following resources may be useful as you continue to explore the Experience Production Agent:
 
-* You can also use the [Experience Production Agent Workbook](https://main--summit-labs--aemsites.aem.live/brand-visibility/l339/) for guided, hands-on instructions.
+* You can also use the [Experience Production Agent Workbook](https://bit.ly/4ndjsJ0) for guided, hands-on instructions.
