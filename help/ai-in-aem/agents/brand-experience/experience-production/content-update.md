@@ -14,7 +14,7 @@ The content update job of the [Experience Production Agent](/help/ai-in-aem/agen
 
 The content update job updates existing content, including content fragments, pages, forms and assets. The job can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description, and when used with Jira PDFs and screenshots can provide input too.
 
-The content update job transforms the details that you provide, either through natural language or visuals, into content updates on your page. You supply the URL of a page that needs updating, together with details of what needs updating, and the agent skill completes your task. When used with Adobe Experience Manager (AEM) as a Cloud Service, the job creates a new [launch](/help/sites-cloud/authoring/launches/overview.md) so you can review the updates before applying. When used with Document authoring, the job creates a new [version](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
+The content update job transforms the details that you provide, either through natural language or visuals, into content updates on your page. You supply the URL of a page that needs updating, together with details of what needs updating, and the agent skill completes your task. When used with AEM as a Cloud Service, the job creates a new [launch](/help/sites-cloud/authoring/launches/overview.md) so you can review the updates before applying. When used with Document authoring, the job creates a new [version](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
 
 ## Capabilities {#capabilities}
 
