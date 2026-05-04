@@ -45,3 +45,9 @@ The [Communication Creation](/help/ai-in-aem/agents/brand-experience/experience-
 The agent is able to work with other agent skills, examples include:
 
 * Get source assets from the Experience Advisory Agent
+
+## Additional Resources {#additional-resources}
+
+The following resources may be useful as you continue to explore the Experience Production Agent:
+
+* You can also use the [Experience Production Agent Workbook](https://main--summit-labs--aemsites.aem.page/brand-visibility/l339/) for guided, hands-on instructions.

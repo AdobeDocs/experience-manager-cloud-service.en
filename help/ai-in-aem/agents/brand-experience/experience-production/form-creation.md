@@ -24,7 +24,6 @@ Some of the key benefits of form creation job include:
 
 When you use either of these capabilities, you are prompted to choose the type of form to create. Specify either a Core Components-based adaptive forms template or an Edge Delivery Services-based adaptive forms template and indicate your preferred path to save the form. If you are creating a form based on Edge Delivery Services, you can also specify the GitHub URL of your repository.
 
-
 ### Sample Prompts {#sample-prompts}
 
 * *Create a form for feedback collection with name, email, and message fields*
@@ -98,3 +97,9 @@ The form creation skill combines form creation and site integration in a single 
 * *Create a simple survey form with 5 questions and embed it on the customer portal homepage*
 * *Build an event registration form with name, email, and date selection, then add it to /content/events/conference-2025*
 -->
+
+## Additional Resources {#additional-resources}
+
+The following resources may be useful as you continue to explore the Experience Production Agent:
+
+* You can also use the [Experience Production Agent Workbook](https://main--summit-labs--aemsites.aem.page/brand-visibility/l339/) for guided, hands-on instructions.
