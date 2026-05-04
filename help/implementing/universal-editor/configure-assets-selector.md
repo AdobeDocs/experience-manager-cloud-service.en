@@ -11,7 +11,7 @@ Understand how you can configure the assets selector for use with the Universal 
 
 ## Overview {#overview}
 
-The Universal Editor uses [the assets selector](/help/assets/overview-asset-selector.md#using-asset-selector) to allow authors to browse and select assets for insertion into their content.
+The Universal Editor uses the assets selector to allow authors to browse and select assets for insertion into their content.
 
 The assets selector is configurable within the Universal Editor by using [component filters.](/help/implementing/universal-editor/filtering.md) This document describes what configuration options are available.
 
@@ -87,6 +87,10 @@ The following example contains most options for illustration purposes.
 ]
 ```
 
+<!--
+
 ## Additional Resources {#additional-resources}
 
 For details on the assets selector, please see the document [Micro-Frontend Asset Selector](/help/assets/overview-asset-selector.md#using-asset-selector) in the assets documentation.
+
+-->

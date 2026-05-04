@@ -114,17 +114,47 @@ As mentioned in the above section [Variances of Cloud Service content requests](
 
 ### Traffic filter rules to manage content requests {#traffic-filter-rules-to-manage-crs}
 
-* A common bot pattern is to use an empty user agent.  Review your implementation and traffic patterns to see if the empty user agent is useful or not.  If you would like to block this traffic, the recommended [syntax](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) is:
+To better control your content requests, analyze your CDN traffic before defining filter rules. The [CDN log analysis tooling](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis) helps you get insights into CDN performance and request patterns. First understand where your traffic is coming from and whether unexpected signaling patterns exist (a common bot pattern is to use an empty user agent).
 
+**Things to watch and log:**
+
+* Client countries
+* Client networks (autonomous system / AS)
+* Client IPs
+* User-Agent and bot category
+
+You can use request transformations to add properties to the request log so they appear in CDN logs and dashboards. For example, to log bot name and client network (AS name) for analysis:
+
+```yaml
+requestTransformations:
+  rules:
+    - name: log-on-request
+      when: "*"
+      actions:
+        - type: set
+          logProperty: bot_name
+          value: { reqProperty: botName }
+        - type: set
+          logProperty: cli_network
+          value: { reqProperty: clientAsName }
 ```
+
+After you identify unwanted traffic (by country, network, bot, or other signals), you can block it with traffic filter rules. Example rule that blocks by client country, network, or bot name:
+
+```yaml
 trafficFilters:
   rules:
-    - name: block-missing-user-agent
+    - name: block-bad-client-traffic
       when:
         anyOf:
+          - { reqProperty: clientCountry, equals: "XX" }
+          - { reqProperty: clientAsName, equals: "UnwantedClientNetwork" }
+          - { reqProperty: botName, equals: "UnwantedBot" }
           - { reqHeader: user-agent, exists: false }
           - { reqHeader: user-agent, equals: '' }
       action: block
 ```
+
+Replace the example values with the country code, network or bot name you want to block. See [Traffic filter rules syntax](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) and [Condition structure](/help/security/traffic-filter-rules-including-waf.md#condition-structure) for more options.
 
 * Some bots hit a site very heavily one day and vanish the next. Such functionality can frustrate any attempts to block a specific IP address or user agent.  One generic approach is to introduce a [rate limit rule](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Review the [examples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) and craft a rule that matches your tolerance for a rapid rate of requests.  Review the [Condition Structure](/help/security/traffic-filter-rules-including-waf.md#condition-structure) syntax for any exceptions that you may want to allow to a generic rate limit.

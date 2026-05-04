@@ -15,7 +15,7 @@ Dynamic Media with OpenAPI capabilities puts DAM at the core of an agile and eff
 
 Dynamic Media with OpenAPI capabilities provides the following key benefits:
 
-* **Seamless integrations**: Dynamic Media with OpenAPI capabilities offers a comprehensive set of search and delivery APIs. It allows your developers to easily [integrate delivery of assets with their applications](/help/assets/integrate-dynamic-media-open-apis.md). The applications include Adobe as well as third-party applications. It provides a [Micro Frontend assets selector user interface](/help/assets/overview-asset-selector.md) to search and select approved assets. The selector can be effortlessly integrated with any application based on JavaScript frameworks such as React JS, Angular JS, and Vanilla JS.
+* **Seamless integrations**: Dynamic Media with OpenAPI capabilities offers a comprehensive set of search and delivery APIs. It allows your developers to easily [integrate delivery of assets with their applications](/help/assets/integrate-dynamic-media-open-apis.md). The applications include Adobe as well as third-party applications. It provides a [Content Advisor interface](/help/assets/integrate-adobe-non-adobe-applications.md) to search and select approved assets. The selector can be effortlessly integrated with any application based on JavaScript frameworks such as React JS, Angular JS, and Vanilla JS.
 
 * **Centralized management of digital assets**: DAM is the single source of truth for all digital assets. Your digital assets are managed centrally in AEM Assets and delivered to consuming applications by reference using delivery URLs, without copying asset binaries. 
 
@@ -102,16 +102,16 @@ Once you submit the support ticket, Adobe enables Dynamic Media with OpenAPI cap
       </a>
    </div>
    <p>
-      <em>Integrate your own custom user interface with the Experience Manager Assets repository using the Search and Delivery APIs or use Adobe's Micro-Frontend Asset Selector.</em>
+      <em>Integrate your own custom user interface with the Experience Manager Assets repository using the Search and Delivery APIs or use Adobe's Content Advisor.</em>
    </p>
 </td>
 <td>
-   <a href="/help/assets/overview-asset-selector.md">
-   <img alt="Adobe's Asset Selector" src="./assets/asset-selector-prereqs.png" />
+   <a href="/help/assets/integrate-adobe-non-adobe-applications.md">
+   <img alt="Adobe's Content Advisor" src="./assets/asset-selector-prereqs.png" />
    </a>
    <div>
-      <a href="/help/assets/overview-asset-selector.md">
-      <strong>Adobe's Micro-Frontend Asset Selector</strong>
+      <a href="/help/assets/integrate-adobe-non-adobe-applications.md">
+      <strong>Adobe's Content Advisor</strong>
       </a>
    </div>
    <p>
