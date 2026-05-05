@@ -6,8 +6,8 @@ topic-tags: configuring
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
+exl-id: 3aaa615f-d3bf-4d1a-9dff-b6e271f0e9a6
 ---
-
 # Web Console {#web-console}
 
 Learn how to use the Adobe Experience Manager's (AEM) Web Console to manage OSGi settings and bundles for local development.
