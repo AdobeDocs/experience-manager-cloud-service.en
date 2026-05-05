@@ -11,43 +11,62 @@ The Content Create job of the [Experience Production Agent](/help/ai-in-aem/agen
 
 >[!NOTE]
 >
-> The Content Create job is currently in Limited Availability. If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+>The Content Create job is currently in Limited Availability. If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ## Overview {#overview}
 
-The Content Create job generates copy and structure from your inputs. 
+The Content Create job generates new on-brand pages using natural language along with a marketing brief and AEM template. 
 
-You provide:
+You can access the Content Create job from:
 
-* a [brief](#the-brief); covering goals, audience, topics, target word count, keywords, and similar guidance, 
+* [The AI Assistant](#access-ai-assistant)
+
+Then you provide:
+
 * a [natural-language prompt](#the-prompt): that describes what to create and where the page should live, 
+* a [brief](#the-brief); covering goals, audience, topics, target word count, keywords, and similar guidance, 
 * an [AEM template](#select-a-template): that defines the required layout. 
 
 The agent aligns generation to the template and can add or remove sections to match the brief; for example, when you need a higher or lower word count.
 
-## Capabilities {#capabilities}
+>[!NOTE]
+>
+>This page uses an example, to create a new page based on an attached brief at `https://frescopa.coffee/sustainability/coffee-bean-types`
 
-You can access the content create skill from:
+## Access - AI Assistant {#access-ai-assistant}
 
-* [The AI Assistant](#ai-assistant)
+You can access the job in AEM via the AI Assistant. 
 
-## AI Assistant {#ai-assistant}
+Open the [AI Assistant](/help/implementing/cloud-manager/ai-assistant-in-aem.md)  from the top-right toolbar of [`experience.adobe.com`](https://experience.adobe.com). 
 
-You can access the job in AEM via the AI Assistant. Open the AI Assistant from [`experience.adobe.com`](https://experience.adobe.com). Then use the Assistant in the upper-right area of the interface to run the workflow below.
+## The prompt {#the-prompt}
 
-### The brief {#the-brief}
+In the AI Assistant you need to:
 
-Content create uses a marketing brief or document that describes what the agent should generate. Many brief formats are supported. Effective briefs often specify goals, audience, topics, target word count, and keywords.
+* use natural language to describe what you want done; for example, creating a new page based on your brief
+* identify where the page will be located, using a path or URL within your website
+* upload the brief relevant to your request
 
-### The prompt {#the-prompt}
+  * To attach a file:
 
-In the Assistant, describe in natural language what you want—for example, creating a new page based on your brief—and **identify where the page will be located** (for example, a path or URL under your site).
+    1. Select **+** in the lower-left of the AI Assistant and choose **Attach files**.
+    1. Add your brief file. The prompt area should show the attachment; for example, in the upper-left of the prompt.
 
-Example:
+* submit the prompt using the blue submit icon (blue arrowhead).
 
-* `Create a new page based on the attached brief at https://example.com/your-site/sustainability/coffee-bean-types`
+To specify the prompt:
 
-You also need to **upload the brief** with your request.
+* `create a new page based on the attached at https://frescopa.coffee/sustainability/coffee-bean-types`
+
+  ![Content Create Job - add a prompt](/help/ai-in-aem/agents/brand-experience/experience-production/assets/create-content-example-create-page.png)
+
+## The brief {#the-brief}
+
+The Content Create job uses a marketing brief or document that describes what the agent should generate. The job accepts a wide range of formats for the brief. Effective briefs often specify goals, audience, topics, target word count, and keywords.
+
+To load the brief:
+
+  ![Content Create Job - load a brief](/help/ai-in-aem/agents/brand-experience/experience-production/assets/create-content-example-load-brief.png)
 
 <!--
 >[!NOTE]
@@ -55,34 +74,39 @@ You also need to **upload the brief** with your request.
 > File upload is part of the Limited Availability program and is only available if you are enrolled in the program.
 -->
 
-To attach a file:
+* When you are ready, submit the prompt using the blue submit control.
 
-1. Select **+** in the lower-left of the Assistant and choose **Attach files**.
-1. Add your brief file. The prompt area should show the attachment (for example, in the upper-left of the prompt).
+## Select a template {#select-a-template}
 
-When you are ready, submit the prompt using the blue submit control.
+The template provides the agent with the page structure and layout. Generation conforms to that layout. The agent can add and remove sections as needed, based on the brief; for example, to meet a different word count.
 
-### Select a template {#select-a-template}
+![Content Create Job - specify the template](/help/ai-in-aem/agents/brand-experience/experience-production/assets/create-content-example-select-template.png)
 
-The template tells the agent the page structure and layout. Generation conforms to that layout. The agent may add or remove sections as needed based on the brief (for example, to meet a different word count).
+## Review the plan {#review-the-plan}
 
-### Review the plan {#review-the-plan}
-
-Next, the agent presents a **plan** for what it will do based on your inputs and its analysis of the brief. You can adjust the plan or proceed to start generation.
+Next, the agent presents a plan for the changes it will make, as based on your inputs and its analysis of the brief. You can adjust the plan or proceed with the plan and start generation.
 
 >[!NOTE]
 >
 > If you use the [Governance Agent](/help/ai-in-aem/agents/governance/overview.md), generation can follow your brand guidelines.
 
-### Proceed with generation {#proceed-with-generation}
+![Content Create Job - review the plan](/help/ai-in-aem/agents/brand-experience/experience-production/assets/create-content-example-review-plan.png)
 
-When generation finishes, the agent provides **two links**: a **preview** link and an **edit** link. Use the edit link to open the page in an AEM authoring surface for further refinement.
+## Proceed with generation {#proceed-with-generation}
 
-### Further refinement in authoring {#further-refinement-in-authoring}
+When generation finishes, the agent provides two links: 
+
+* a **preview** link 
+* an **edit** link
+  * Use the edit link to [open the page in an AEM authoring surface](#further-refinement-in-authoring) for further refinement.
+
+![Content Create Job - proceed with generation](/help/ai-in-aem/agents/brand-experience/experience-production/assets/create-content-example-proceed-generation.png)
+
+## Further refinement in authoring {#further-refinement-in-authoring}
 
 After you choose to edit the page in AEM, it opens in your authoring environment (for example, the [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) or the [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md)).
 
-In the **Universal Editor**, the AI Assistant is **context aware**: you can select elements on the canvas and work on them with the Assistant.
+In the Universal Editor, the AI Assistant is *context aware*: you can select elements on the canvas and work on them with the assistant.
 
 <!--
 >[!NOTE]
@@ -90,7 +114,8 @@ In the **Universal Editor**, the AI Assistant is **context aware**: you can sele
 > Support for additional authoring surfaces will expand over time.
 -->
 
-### Edit text with the Assistant {#edit-text-with-the-assistant}
+<!--
+## Edit text with the Assistant {#edit-text-with-the-assistant}
 
 To refine copy from the Assistant while authoring:
 
@@ -103,6 +128,7 @@ Example prompts:
 * `Update to be more engaging for the 30-40 year old age demographic and avid coffee drinker`
 
 Select **Apply changes** (or equivalent) so updates appear on the page.
+-->
 
 ## Activation {#activation}
 
