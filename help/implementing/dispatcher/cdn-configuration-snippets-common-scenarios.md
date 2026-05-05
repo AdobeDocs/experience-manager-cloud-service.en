@@ -3,8 +3,8 @@ title: CDN Configuration Snippets for Common Scenarios
 description: Copy-ready YAML patterns for the Adobe-managed CDN and customer-managed CDN setups, including edge authentication, redirects, cache variation, traffic shaping, and rate limits.
 feature: Dispatcher
 role: Admin
+exl-id: e8e0c816-847a-4e2c-8136-43a583c5780c
 ---
-
 # CDN Configuration Snippets for Common Scenarios {#cdn-configuration-snippets}
 
 This article collects practical `cdn.yaml` patterns for AEM as a Cloud Service. Use them together with the feature documentation for [CDN traffic rules](/help/implementing/dispatcher/cdn-configuring-traffic.md), [customer-managed CDN credentials](/help/implementing/dispatcher/cdn-credentials-authentication.md), and [traffic filter rules including WAF](/help/security/traffic-filter-rules-including-waf.md). Deploy snippets with a Cloud Manager [config pipeline](/help/operations/config-pipeline.md).
