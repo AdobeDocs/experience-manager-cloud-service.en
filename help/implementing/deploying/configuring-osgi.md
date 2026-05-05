@@ -10,23 +10,23 @@ role: Admin
 
 [OSGi](https://www.osgi.org/) is a fundamental element in the technology stack of Adobe Experience Manager (AEM). It is used to control the composite bundles of AEM and its configurations.
 
-OSGi provides the standardized primitives that allow applications to be constructed from small, reusable, and collaborative components. These components can be composed into an application and deployed. This allows easy management of OSGi bundles as they can be stopped, installed, started individually. The interdependencies are handled automatically. Each OSGi Component is contained in one of the various bundles. For more information, see the [OSGi specification](https://help.eclipse.org/latest/index.jsp).
+OSGi provides the standardized primitives that allow applications to be constructed from small, reusable, and collaborative components. These components can be composed into an application and deployed. This allows easy management of OSGi bundles as they can be stopped, installed, started individually. The interdependencies are handled automatically. Each OSGi Component is contained in one of the various bundles. For more information, see the [OSGi specification.](https://help.eclipse.org/latest/index.jsp)
 
 You can manage the configuration settings for OSGi components through configuration files that are part of an AEM code project.
 
 >[!TIP]
 >
->You can use Cloud Manager to configure environment variables. For more information, consult the documentation [here](/help/implementing/cloud-manager/environment-variables.md).
+>You can use Cloud Manager to configure environment variables. For more information, consult the documentation [here.](/help/implementing/cloud-manager/environment-variables.md)
 
 ## OSGi Configuration Files {#osgi-configuration-files}
 
-Configuration changes are defined in the AEM Project's code packages (`ui.config`) as configuration files (`.cfg.json`) under runmode specific config folders:
+Configuration changes are defined in the AEM project's code packages (`ui.config`) as configuration files (`.cfg.json`) under runmode specific config folders:
 
 `/apps/example/config.<runmode>`
 
 The format of OSGi configuration files is JSON-based using the `.cfg.json` format defined by the Apache Sling project.
 
-OSGi configurations target OSGi components via their Persistent Identity (PID), which defaults to the OSGi component's Java&trade; class name. For example, to provide OSGi configuration for an OSGi service implemented by:
+OSGi configurations target OSGi components via their Persistent Identity (PID), which defaults to the OSGi component's Java class name. For example, to provide OSGi configuration for an OSGi service implemented by:
 
 `com.example.workflow.impl.ApprovalWorkflow.java`
 
@@ -42,15 +42,17 @@ following the `cfg.json` OSGi configuration format.
 
 >[!NOTE]
 >
->The OSGi configs are not stored under /apps like typical AEM instances in Cloud they are stored in an external location. Check in Cloud Manager [Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) to view the OSGi configs.
+>In AEM as a Cloud Service, the OSGi configs are not stored under `/apps`. Check in Cloud Manager [Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) to view the OSGi configs.
 
 ## Runmode Resolution {#runmode-resolution}
 
->[!TIP]
->
->AEM 6.x supports custom runmodes, however AEM as a Cloud Service does not. AEM as a Cloud Service support an [exact set of runmodes](./overview.md#runmodes). Any variation in OSGi configurations between AEM as a Cloud Service environments must be handled using [OSGi configuration environment variables](#environment-specific-configuration-values).
+AEM as a Cloud Service supports an [exact set of runmodes.](./overview.md#runmodes) Any variation in OSGi configurations between AEM as a Cloud Service environments must be handled using [OSGi configuration environment variables.](#environment-specific-configuration-values)
 
-Specific OSGi configurations can be targeted to specific AEM instances by using runmodes. To use runmode, create config folders under `/apps/example` (where example is your project name), in the format:
+>[!NOTE]
+>
+>AEM 6.x supports custom runmodes, however AEM as a Cloud Service does not.
+
+Specific OSGi configurations can be targeted to specific AEM instances by using runmodes. To use a runmode, create config folders under `/apps/example` (where example is your project name), in the format:
 
 `/apps/example/config.<author|publish>.<dev|stage|prod>/`
 
@@ -66,7 +68,7 @@ This rule's granularity is at a PID level. This means you cannot define some pro
 >
 >A `config.preview` OSGi configuration folder **cannot** be declared in the same way a `config.publish` can be declared folder. Instead, the preview tier inherits its OSGi configuration from the publish tier's values. 
 
-When developing locally, a runmode startup parameter, `-r`, is used to specify the runmode OSGI configuration.
+When developing locally, a runmode startup parameter, `-r`, is used to specify the runmode OSGi configuration.
 
 ```shell
 $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
@@ -74,7 +76,7 @@ $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
 
 ### Verifying runmodes
 
-AEM as a Cloud Service runmodes are well defined based on the environment type and service. Review the [complete list of available AEM as a Cloud Service runmodes](./overview.md#runmodes).
+AEM as a Cloud Service runmodes are well defined based on the environment type and service. Review the [complete list of available AEM as a Cloud Service runmodes.](./overview.md#runmodes)
 
 OSGi configuration values specified by runmode can be verified by:
 
@@ -85,7 +87,6 @@ OSGi configuration values specified by runmode can be verified by:
 1. Selecting the __Get Status__ button
 
 The resulting view displays all OSGi component configurations for the selected tier(s) with their applicable OSGi configuration values. These values can be cross-referenced with the OSGi configuration values in the AEM project's source code under `/apps/example/osgiconfig/config.<runmode(s)>`.
-
 
 To verify the appropriate OSGi configuration values are applied:
 
@@ -146,9 +147,9 @@ The following guidance addresses when to use non-secret and secret environment-s
 
 Inline configurations values are considered the standard approach, and should be used when possible. Inline configurations provide the benefits of:
 
-* They are maintained, with governance and version history in Git
-* Values are implicitly tied to code deployments
-* They do not require any additional deployment considerations or coordination
+* They are maintained, with governance and version history in Git.
+* Values are implicitly tied to code deployments.
+* They do not require any additional deployment considerations or coordination.
 
 Whenever defining an OSGi configuration value, start with inline values, and only select secret or environment-specific configurations if necessary for the use case.
 
@@ -181,15 +182,11 @@ JSON formatted OSGi configuration files can be written by hand directly in the A
 1. Save your changes to the new `.cfg.json` file
 1. Add and commit your new OSGi configuration file to Git
 
-### Generating OSGi Configurations using the AEM SDK Quickstart {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
+### Generating OSGi Configurations using the Web Console {#generating-osgi-configurations-using-the-web-console}
 
-The AEM SDK Quickstart Jar's AEM Web Console can be used configure OSGi components, and export OSGi configurations as JSON. This is useful for configuring AEM-provided OSGi components whose OSGi properties and their value formats may not be well understood by the developer defining the OSGi configurations in the AEM project. 
+The AEM SDK's [Web Console](/help/implementing/developing/tools/web-console.md) can be used configure OSGi components, and export OSGi configurations as JSON. This is useful for configuring AEM-provided OSGi components whose OSGi properties and their value formats may not be well understood by the developer defining the OSGi configurations in the AEM project. 
 
->[!NOTE] 
->
->The AEM Web Console's Configuration UI does write `.cfg.json` files into the repository. Therefore, be aware of this workflow to avoid potential unexpected behavior during local development, when the AEM Project-defined OSGi configurations may differ from the generated configurations.
-
-1. Log in to the AEM SDK Quickstart Jar's AEM Web console at `https://<host>:<port>/system/console` as the admin user
+1. Log in to the AEM SDK's Web console at `https://<host>:<port>/system/console` as the admin user
 1. Navigate to **OSGi** &gt; **Configuration**
 1. To configure, locate the OSGi component and select its title to edit
    ![OSGi Configuration](./assets/configuring-osgi/configuration.png)
@@ -207,6 +204,9 @@ The AEM SDK Quickstart Jar's AEM Web Console can be used configure OSGi componen
 1. Save your changes to the new `.cfg.json` file.
 1. Add and commit your new OSGi configuration file to Git.
 
+>[!WARNING] 
+>
+>The Web Console's configuration UI writes `.cfg.json` files into the repository. Be aware of this to avoid potential unexpected behavior during local development, when the AEM project-defined OSGi configurations may differ from the generated configurations.
 
 ## OSGi Configuration Property Formats {#osgi-configuration-property-formats}
 
