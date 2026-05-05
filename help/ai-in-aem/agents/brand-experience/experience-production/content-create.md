@@ -9,6 +9,8 @@ role: User, Admin, Developer
 
 The Content Create job of the [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) creates new on-brand pages using natural language, a marketing brief, and an AEM template. It accelerates page production for Adobe Experience Manager (AEM) as a Cloud Service and Edge Delivery Services.
 
+<!-- see Limitations too -->
+
 >[!NOTE]
 >
 >The Content Create job is currently in Limited Availability. If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
@@ -21,11 +23,17 @@ You can access the Content Create job from:
 
 * [The AI Assistant](#access-ai-assistant)
 
-Then you provide:
+To use the Create Content Job:
 
-* a [natural-language prompt](#the-prompt): that describes what to create and where the page should live, 
-* a [brief](#the-brief); covering goals, audience, topics, target word count, keywords, and similar guidance, 
-* an [AEM template](#select-a-template): that defines the required layout. 
+* You provide:
+
+  * a [natural-language prompt](#the-prompt): that describes what to create and where the page should live, 
+  * a [brief](#the-brief); covering goals, audience, topics, target word count, keywords, and similar guidance, 
+
+* You then [Submit](#submit) the prompt and brief
+* Next you specifiy an [AEM template](#select-a-template): that defines the required layout
+* The job will provide a [plan for you to review](#review-the-plan)
+* You can then [proceed with the generation](#proceed-with-generation), and [further refine in authoring if required](#further-refinement-in-authoring)
 
 The agent aligns generation to the template and can add or remove sections to match the brief; for example, when you need a higher or lower word count.
 
@@ -66,7 +74,11 @@ The Content Create job uses a marketing brief or document that describes what th
 
 To load the brief:
 
-  ![Content Create Job - load a brief](/help/ai-in-aem/agents/brand-experience/experience-production/assets/create-content-example-load-brief.png)
+![Content Create Job - load a brief](/help/ai-in-aem/agents/brand-experience/experience-production/assets/create-content-example-load-brief.png)
+
+The loaded brief will be shown in the top-right of the prompt dialog:
+
+![Content Create Job - loaded brief](/help/ai-in-aem/agents/brand-experience/experience-production/assets/create-content-example-loaded-brief.png)
 
 <!--
 >[!NOTE]
@@ -74,11 +86,13 @@ To load the brief:
 > File upload is part of the Limited Availability program and is only available if you are enrolled in the program.
 -->
 
-* When you are ready, submit the prompt using the blue submit control.
+## Submit {#submit}
+
+When you are ready, submit the prompt and the brief using the blue submit control.
 
 ## Select a template {#select-a-template}
 
-The template provides the agent with the page structure and layout. Generation conforms to that layout. The agent can add and remove sections as needed, based on the brief; for example, to meet a different word count.
+The agent will then request that you specify a template. The template provides the agent with the page structure and layout. Generation conforms to that layout. The agent can add and remove sections as needed, based on the brief; for example, to meet a different word count.
 
 ![Content Create Job - specify the template](/help/ai-in-aem/agents/brand-experience/experience-production/assets/create-content-example-select-template.png)
 
@@ -138,7 +152,7 @@ You can explore AEM Agents through the [Playground](https://www.aem.live/develop
 
 Please be aware of the following limitations:
 
-* The capability is in Limited Availability and requires manual onboarding for participation.
+* The capability is in Limited Availability and requires manual onboarding for participation. If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ## Additional Resources {#additional-resources}
 
