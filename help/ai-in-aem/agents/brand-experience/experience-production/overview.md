@@ -50,4 +50,4 @@ The agent is able to work with other agent skills, examples include:
 
 The following resources may be useful as you continue to explore the Experience Production Agent:
 
-* You can also use the [Experience Production Agent Workbook](https://bit.ly/4ndjsJ0) for guided, hands-on instructions.
+* You can also use the [Experience Production Agent Workbook](https://www.adobe.com/go/aem-epa-workbook) for guided, hands-on instructions.
