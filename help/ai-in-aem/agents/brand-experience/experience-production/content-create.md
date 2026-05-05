@@ -11,4 +11,4 @@ The content update job of the [Experience Production Agent](/help/ai-in-aem/agen
 
 >[!NOTE]
 >
-> The content create job is currently in alpha. If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+> The content create job is currently in Limited Availability. If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
