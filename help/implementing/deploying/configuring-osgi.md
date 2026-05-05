@@ -182,15 +182,11 @@ JSON formatted OSGi configuration files can be written by hand directly in the A
 1. Save your changes to the new `.cfg.json` file
 1. Add and commit your new OSGi configuration file to Git
 
-### Generating OSGi Configurations using the AEM SDK Quickstart {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
+### Generating OSGi Configurations using the Web Console {#generating-osgi-configurations-using-the-web-console}
 
-The AEM SDK Quickstart Jar's AEM Web Console can be used configure OSGi components, and export OSGi configurations as JSON. This is useful for configuring AEM-provided OSGi components whose OSGi properties and their value formats may not be well understood by the developer defining the OSGi configurations in the AEM project. 
+The AEM SDK's [Web Console](/help/implementing/developing/tools/web-console.md) can be used configure OSGi components, and export OSGi configurations as JSON. This is useful for configuring AEM-provided OSGi components whose OSGi properties and their value formats may not be well understood by the developer defining the OSGi configurations in the AEM project. 
 
->[!NOTE] 
->
->The AEM Web Console's Configuration UI does write `.cfg.json` files into the repository. Therefore, be aware of this workflow to avoid potential unexpected behavior during local development, when the AEM Project-defined OSGi configurations may differ from the generated configurations.
-
-1. Log in to the AEM SDK Quickstart Jar's AEM Web console at `https://<host>:<port>/system/console` as the admin user
+1. Log in to the AEM SDK's Web console at `https://<host>:<port>/system/console` as the admin user
 1. Navigate to **OSGi** &gt; **Configuration**
 1. To configure, locate the OSGi component and select its title to edit
    ![OSGi Configuration](./assets/configuring-osgi/configuration.png)
@@ -208,6 +204,9 @@ The AEM SDK Quickstart Jar's AEM Web Console can be used configure OSGi componen
 1. Save your changes to the new `.cfg.json` file.
 1. Add and commit your new OSGi configuration file to Git.
 
+>[!WARNING] 
+>
+>The Web Console's configuration UI writes `.cfg.json` files into the repository. Be aware of this to avoid potential unexpected behavior during local development, when the AEM project-defined OSGi configurations may differ from the generated configurations.
 
 ## OSGi Configuration Property Formats {#osgi-configuration-property-formats}
 

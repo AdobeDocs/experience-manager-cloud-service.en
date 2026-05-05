@@ -1,6 +1,6 @@
 ---
-title: Web console in Adobe Experience Manager
-description: Learn how to use the Adobe Experience Manager (AEM) Web Console to manage OSGi settings and bundles for local development.
+title: Web Console
+description: Learn how to use the Adobe Experience Manager's (AEM) Web Console to manage OSGi settings and bundles for local development.
 content-type: reference
 topic-tags: configuring
 feature: Configuring
@@ -10,11 +10,13 @@ role: Admin
 
 # Web Console {#web-console}
 
-Learn how to use the Adobe Experience Manager (AEM) Web Console to manage OSGi settings and bundles for local development.
+Learn how to use the Adobe Experience Manager's (AEM) Web Console to manage OSGi settings and bundles for local development.
 
 ## Overview {#overview}
 
-AEM as a Cloud Service treats [configuration and code as immutable at run time.](/help/release-notes/aem-cloud-changes.md#apps-libs-immutable) This means that all configurations must be deployed as you would code in a production environment. For production instances, this ensures that quality gates are passed and offers a level of stability and clarity of your current environment. For development purposes, however, OSGi configuration updates can be needed to test ad-hoc development changes. As part of the AEM as a Cloud Service SDK, the Web Console allows this.
+AEM as a Cloud Service treats [configuration and code as immutable at run time.](/help/release-notes/aem-cloud-changes.md#apps-libs-immutable) This means that all configurations must be deployed as you would code in a production environment. For production instances, this ensures that quality gates are passed and offers a level of stability and clarity of your current environment.
+
+For development purposes, however, OSGi configuration updates and bundles changes are often needed to test ad-hoc development changes. As part of the AEM as a Cloud Service SDK, the Web Console allows this. See the document [Configuring OSGi for Adobe Experience Manager as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) for more information about OSGi configurations for AEM as a Cloud Service.
 
 The console can be accessed from `http://<host>:<port>/system/console`
 
@@ -26,7 +28,7 @@ The Web Console offers a selection of screens for maintaining the OSGi bundles, 
 
 Any changes made are immediately applied to the running development system. No restart is required.
 
-On the Web console, any descriptions that mention default settings relate to Sling defaults. AEM has its own defaults and so the defaults set might differ from those documented on the console.
+In the Web Console, any descriptions that mention default settings relate to Sling defaults. AEM has its own defaults and so the defaults set might differ from those documented on the console.
 
 The Web Console in Adobe Experience Manager (AEM) is based on the [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix is a community effort to implement the OSGi R4 Service Platform, which includes the OSGi framework and standard services.
 
@@ -125,3 +127,9 @@ Clicking the name of a particular component displays further information on its 
 >Enabling, or disabling, a component only applies until SDK is restarted.
 >
 >The start state is defined within the component descriptor, which is generated during development and stored in the bundle at bundle creation time.
+
+## Generating OSGi Configurations {#generating-osgi-configs}
+
+The Web Console can be used configure OSGi components, and export OSGi configurations as JSON. This is useful for configuring AEM-provided OSGi components whose OSGi properties and their value formats may not be well understood by the developer defining the OSGi configurations in the AEM project.
+
+Please see the document [Configuring OSGi for Adobe Experience Manager as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-web-console) for more information.
