@@ -8,7 +8,7 @@ exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
 
 # Experience Production Agent Overview {#experience-production-agent}
 
-The Experience Production Agent automates high effort and high-volume tasks. It Empowers teams and turns manual, weeks-long processes into fast, AI-assisted workflows that keep every experience current and consistent, helping the business achieve its goals.
+The Experience Production Agent automates high effort and high-volume tasks. It empowers teams and turns manual, weeks-long processes into fast, AI-assisted workflows that keep every experience current and consistent, helping the business achieve its goals.
 
 ## Jobs {#jobs}
 
@@ -45,3 +45,9 @@ The [Communication Creation](/help/ai-in-aem/agents/brand-experience/experience-
 The agent is able to work with other agent skills, examples include:
 
 * Get source assets from the Experience Advisory Agent
+
+## Additional Resources {#additional-resources}
+
+The following resources may be useful as you continue to explore the Experience Production Agent:
+
+* You can also use the [Experience Production Agent Workbook](https://bit.ly/4ndjsJ0) for guided, hands-on instructions.
