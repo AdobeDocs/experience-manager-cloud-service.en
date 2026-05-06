@@ -49,7 +49,7 @@ The **Configuration** screen is used for configuring OSGi bundles and is therefo
 
 A list of configurations is shown:
 
-![configMgr](assets/config-mgr.png)
+![The Configuration screen](assets/configuration.png)
 
 There are two types of configurations available from the drop-down lists on this screen:
 
@@ -120,7 +120,7 @@ A list of components is shown. Various icons are available to enable you to enab
 
 Clicking the name of a particular component displays further information on its status. Here you can also enable, disable, or reload the component.
 
-![Component detail](assets/component-detail.png)
+![Component detail](assets/component-details.png)
 
 >[!NOTE]
 >
