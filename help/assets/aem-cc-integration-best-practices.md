@@ -68,7 +68,8 @@ Deciding on which capability to use
 | Misc - network and access | Requires access from user's desktop to Experience Manager deployment over network | Requires access from user's desktop to Experience Manager deployment over network | Adobe Asset Link does not share network proxy environment. |
 
 
-<!-- Removing this row from table as migration guide is not yet final.
+<!--
+ Removing this row from table as migration guide is not yet final.
 | Misc - Migrate large number of assets | No | No | [Migration Guide](/help/assets/assets-migration-guide.md) |
 -->
 
@@ -98,7 +99,8 @@ To support asset distribution use cases, consider the following options:
 
 ### Considerations when using Experience Manager and Creative Cloud integration {#considerations-when-using-aem-and-creative-cloud-integration}
 
-<!--incomplete and TBD: 
+<!--
+incomplete and TBD: 
 
 * DA2.0 best practices: See troubleshooting.md
 * Stock integration: See ?

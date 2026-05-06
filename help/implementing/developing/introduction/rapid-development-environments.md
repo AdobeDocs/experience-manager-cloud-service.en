@@ -703,6 +703,76 @@ You can also reset the RDE using the ellipsis button directly from the **Environ
 
 For more information about how to use Cloud Manager to manage your environments, see [the Cloud Manager documentation](/help/implementing/cloud-manager/manage-environments.md).
 
+## Snapshots {#snapshots}
+
+>[!NOTE]
+>
+>This feature is in Beta. If you are interested in using this new feature and sharing your feedback, send an email to [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com), describing your use case.
+
+RDEs support taking a snapshot of the current state of code and content, which can be restored at a later time. Snapshots are useful when syncing code that may need to be reverted, or when switching between development of different features. It is also possible to restore only the mutable content from a snapshot as a known starting point for testing.
+
+Note that a snapshot from a specific RDE cannot be restored on another RDE.
+
+Each RDE environment has a maximum of seven snapshots. Snapshots that are marked for deletion but are still within the seven-day retention period continue to count toward that limit until they are fully removed. If you reach the limit and need capacity for a new snapshot right away, use forced deletion as described in [Delete a snapshot](#delete-snapshot) instead of a standard delete.
+
+The supported commands are described below. For a full list of flags and options, use `aio aem rde snapshot --help`, or for help on a specific subcommand, use `aio aem rde snapshot <subcommand> --help`.
+
+### List snapshots {#list-snapshots}
+
+You can list all snapshots in your organization by running:
+
+`aio aem rde snapshot`
+
+This returns a table of available snapshots, which can be sorted using the `-s` flag:
+
+`aio aem rde snapshot -s <column-header>`
+
+Prefix the column header with a minus symbol for reverse sorting. The `--json` global flag is also supported.
+
+### Create a snapshot {#create-snapshot}
+
+To create a snapshot of the current state of the RDE, including both content and deployment, run:
+
+`aio aem rde snapshot create <name>`
+
+Where `<name>` is a unique name for the snapshot within the environment. Optionally, include a brief description with the `-d` flag:
+
+`aio aem rde snapshot create <name> -d "description of the snapshot"`
+
+### Restore a snapshot {#restore-snapshot}
+
+To restore a snapshot to the current RDE, run:
+
+`aio aem rde snapshot restore <name>`
+
+To restore only the mutable content from a snapshot (without restoring the deployment), use the `--only-mutable-content` flag:
+
+`aio aem rde snapshot restore <name> --only-mutable-content`
+
+### Delete a snapshot {#delete-snapshot}
+
+Marking a snapshot for deletion does not remove it immediately. The snapshot is deleted after 7 days, giving you time to undelete it if needed.
+
+To mark a snapshot for deletion, run:
+
+`aio aem rde snapshot delete <name>`
+
+To mark all snapshots as deleted at once, use the `-a` flag:
+
+`aio aem rde snapshot delete -a`
+
+To delete a snapshot immediately (skipping the retention period so it no longer counts toward the environment snapshot limit), add the `-f` flag (or `--force`):
+
+`aio aem rde snapshot delete <name> -f`
+
+Forced deletion cannot be undone with `undelete`. Use `aio aem rde snapshot delete --help` for the full set of options when combining flags (for example, deleting all snapshots with force).
+
+### Undelete a snapshot {#undelete-snapshot}
+
+To cancel a pending deletion and retain a snapshot, run:
+
+`aio aem rde snapshot undelete <name>`
+
 ## Commands that support JSON output {#json-commands}
 
 Most commands support the global ```--json``` flag which suppresses console output and returns valid json to be processed in scripts. Below are some supported commands, with examples of the json output.

@@ -194,7 +194,7 @@ In CRXDE Lite do the following:
 1. Navigate to `<sync-folder>/_CSS/_OOTB` folder within your Dynamic Media sync folder (for example, `/content/dam/_CSS/_OOTB`).
 1. Find the metadata node of the problematic asset (for example, `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`).
 1. Check for the presence of `dam:scene7*` properties. If the asset was successfully synced and published, you see the `dam:scene7FileStatus` set is to **PublishComplete**.
-1. Attempt to request the artwork directly from Dynasmic Media by concatenating the values of the following properties and string literals:
+1. Attempt to request the artwork directly from Dynamic Media by concatenating the values of the following properties and string literals:
 
    * `dam:scene7Domain`
    * `"is/content"`
@@ -214,6 +214,34 @@ If the sample assets or viewer preset artwork has not synced or published, resta
 1. Under Cloud Services, navigate to the Dynamic Media Configuration page, then open the configuration dialog box for your Dynamic Media - S7 configuration.
 1. Make no changes, select **Save**.
    This save action triggers the logic again to create and sync the sample assets, viewer preset CSS, and artwork.
+
+### Issue: Error #2046 when opening Bandwidth & Storage tab {#error-2046-bandwidth-storage}
+
+**How to debug**
+
+![Error #2046 displayed in the Bandwidth & Storage tab in Dynamic Media Classic](assets/2046-error.png)
+
+* Users encounter Error #2046 when opening the Bandwidth & Storage tab in Dynamic Media Classic (Scene7) desktop application.
+* The issue is caused by an expired digital signing certificate in a cached RSL (Runtime Shared Library) used by the Adobe AIR framework.
+* The failure occurs during local certificate re-validation.
+
+**Solution**
+
+Clear the local cache to force Adobe AIR to download the updated RSL (Runtime Shared Library).
+
+**macOS**
+
+1. Navigate to:
+   `~/Library/Caches/Adobe/Flash Player/AssetCache/<folder>/`
+2. Delete all `.swz` and `.heu` files.
+
+**Windows**
+
+1. Navigate to:
+   `%APPDATA%\Adobe\Flash Player\AssetCache\<folder>\`
+2. Delete all files inside the folder.
+
+Restart the application after clearing the cache.
 
 ### Issue: Image Preview is not loading in Viewer presets authoring {#image-preview-not-loading}
 

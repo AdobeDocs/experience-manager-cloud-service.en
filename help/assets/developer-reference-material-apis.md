@@ -59,6 +59,10 @@ The article contains recommendations, reference materials, and resources for dev
 | Copy folder        |&#10003;|&#10003;|-|&#10003;|-|-|
 | Move folder        |&#10003;|&#10003;|-|&#10003;|-|-|
 
+>[!NOTE]
+>
+> Adobe does not recommend uploading packages of assets as it violates our best-practices around avoiding binary handling in AEM. Uploading assets via JCR packages does not result in processing being triggered on those assets in AEM as a Cloud Service.
+
 ## Asset upload {#asset-upload}
 
 In [!DNL Experience Manager] as a [!DNL Cloud Service], you can directly upload the assets to the cloud storage using HTTP API. The steps to upload a binary file are below. Execute these steps in an external application and not within the [!DNL Experience Manager] JVM.
@@ -489,7 +493,8 @@ The following technical workflow models are either replaced by asset microservic
 * `com.day.cq.dam.core.process.AssetOffloadingProcess`
 * `com.adobe.cq.dam.dm.process.workflow.DMImageProcess`
 
-<!-- Commenting the previous list documented at the time of GA. Replacing it with the updated list via cqdoc-18231.
+<!--
+ Commenting the previous list documented at the time of GA. Replacing it with the updated list via cqdoc-18231.
 
 * `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
 * `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
@@ -525,7 +530,8 @@ The following technical workflow models are either replaced by asset microservic
 * `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
 -->
 
-<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of
+<!--
+ PPTX source: slide in add-assets.md - overview of direct binary upload section of
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 

@@ -44,7 +44,8 @@ Have a look at the [October 2021 Release Overview](https://video.tv.adobe.com/v/
 
 * Smart Tags are automatically applied to the assets using asset microservices, instead of Smart Content Services. The underlying model is updated to improve tagging results and reduce bias. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
-<!-- Leave this commented.
+<!--
+ Leave this commented.
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
 
 No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.

@@ -30,7 +30,8 @@ You can also choose to have additional processing done on the uploaded assets. S
 
 ## Upload assets {#upload-assets}
 
-<!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
+<!--
+ #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Select the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
@@ -43,11 +44,13 @@ You can also choose to have additional processing done on the uploaded assets. S
    When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click **[!UICONTROL Play]** option.
 -->
 
-<!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
+<!--
+ #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
+<!--
+ #ENGCHECK assuming this is not relevant? remove after confirming#
    During the upload operation, [!DNL Experience Manager] saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, [!DNL Experience Manager] consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -82,7 +85,8 @@ In addition, the [!DNL Assets] user interface displays the most recent asset tha
 >
 >To upload nested folder hierarchies, see [bulk upload assets](#bulk-upload).
 
-<!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
+<!--
+ #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
 ### Serial uploads {#serialuploads}
 
@@ -397,7 +401,8 @@ Technical details of the upload APIs and protocol, and links to open-source SDK 
 * Bulk import method imports the entire folder structure as it exists on the data source. However, only the non-empty folders are created in [!DNL Experience Manager].
 
 
-<!-- TBD: Link to file name handling in DA docs when it is documented. 
+<!--
+ TBD: Link to file name handling in DA docs when it is documented. 
 -->
 
 **See also**

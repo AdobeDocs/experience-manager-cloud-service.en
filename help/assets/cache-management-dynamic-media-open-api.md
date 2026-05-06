@@ -63,10 +63,12 @@ Asset URLs remain unchanged, and the cache control header sent to browsers (and 
 
 The cache purge triggers automatically when an asset is updated, modified, archived, or deleted.
 
-<!--The cache purge triggers automatically in the following circumstances:
+<!--
+The cache purge triggers automatically in the following circumstances:
  
  - when an asset is updated, modified, or archived.
- - when an asset reaches `ready_for_delivery` state after approval.-->
+ - when an asset reaches `ready_for_delivery` state after approval.
+ -->
 
 +++
 
@@ -100,9 +102,3 @@ The prolonged caching with event driven active cache invalidation is applicable 
 To opt out of prolonged caching, contact [Adobe Support](https://helpx.adobe.com/in/contact.html) and provide the rationale for your request.
 
 +++
-
-
->[!MORELIKETHIS]
->
->- [Integrate Asset Selector with various applications](/help/assets/integrate-asset-selector.md)
->- [Vanity URLs](/help/assets/vanity-urls.md)

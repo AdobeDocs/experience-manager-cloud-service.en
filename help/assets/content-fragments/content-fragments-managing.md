@@ -219,7 +219,8 @@ Some features in the top toolbar are available from multiple modes:
   * **[Manage Publication](#publishing-and-referencing-a-fragment)**
 
 <!--
-This updates any page references and ensures that the Dispatcher is flushed as required. -->
+This updates any page references and ensures that the Dispatcher is flushed as required.
+-->
 
 ## Save, Close and Versions {#save-close-and-versions}
 

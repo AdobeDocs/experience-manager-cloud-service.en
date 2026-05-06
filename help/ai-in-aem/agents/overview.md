@@ -2,7 +2,7 @@
 title: Overview of Agents in AEM
 description: Learn about the Agents available in AEM to accelerate your content creation and automatically orchestrate changes.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: f0b82ecf-0f5c-432f-9944-f99597aacd6a
 ---
 
@@ -29,13 +29,13 @@ As new skills become available under early release, we will provide additional o
 
 ## Brand Experience Agent {#brand-experience-agent}
 
-The [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) automates high effort and high-volume jobs.
+The [Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md) automates high effort and high-volume tasks through the following agents, each specializing in a specific set of jobs.
 
-* **Content Update** - Update a page or Content Fragment
-* **Form Creation** - Create a form or import a form
-* **Development Troubleshooting** - Empower technical roles (developers and administrators) to streamline the creation, debugging, deployment, and optimization of code.
+* **[Experience Modernization Agent](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)** - Migrates websites to cloud-ready formats
+* **[Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)** - Reduces time-to-market with content updates, form creation, and communications
+* **[Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md)** - Provides AI-assisted troubleshooting and build automation
 
-The Brand Experience Agent empowers teams to turn manual, weeks-long processes into fast, AI-assisted workflows that keep every experience current and consistent helping the business achieve their goals.
+Through these agents, the Brand Experience Agent absorbs the heavy operational work behind updates and modernization, helping teams deliver changes faster and with greater confidence in today's AI era.
 
 ## Content Advisor Agent {#content-advisor-agent}
 

@@ -365,7 +365,8 @@ Example:
 For more details, see the implementation in `blocks/form/form.js` and `blocks/form/util.js`.
 
 
-<!--Each form field is represented as a dedicated row in the spreadsheet, analogous to fields in a database table. The column headers act as labels for the various properties supported by the form field block.
+<!--
+Each form field is represented as a dedicated row in the spreadsheet, analogous to fields in a database table. The column headers act as labels for the various properties supported by the form field block.
 
 Think of your form as a table in a spreadsheet, where each line represents a different question or piece of information you want to collect. The table headings tell you what kind of answers you can expect for each section.
 
@@ -390,4 +391,5 @@ This table details all the properties you can use to customize your Adaptive For
 | **Multiple** | Allow multiple file selections | `true`, `false` |
 | **Options** | Comma-separated list for dropdown menus | `"Option 1, Option 2, Option 3"` |
 | **Checked** | Default-selected radio button/checkbox | `true`, `false` |
-| **Fieldset** | Group fields together | Fieldset name (e.g., `"Personal Information"`) |-->
+| **Fieldset** | Group fields together | Fieldset name (e.g., `"Personal Information"`) |
+-->
