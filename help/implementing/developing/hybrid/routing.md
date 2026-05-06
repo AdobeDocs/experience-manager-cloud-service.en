@@ -4,7 +4,7 @@ description: For single page applications in AEM, the app is responsible for the
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 feature: Developing
 role: Admin, Developer
-index: no
+index: false
 ---
 
 # SPA Model Routing{#spa-model-routing}

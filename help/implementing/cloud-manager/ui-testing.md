@@ -233,8 +233,10 @@ The following environment variables are passed to your Docker image at run time,
 The Adobe test samples provide helper functions to access the configuration parameters:
 
 Cypress: use the standard function `Cypress.env('VARIABLE_NAME')`
-<!-- BOTH URLs are 404 JavaScript: See the [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) module
-* Java: See the [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class -->
+<!--
+ BOTH URLs are 404 JavaScript: See the [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) module
+* Java: See the [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
+-->
 
 ### Generate test reports {#generate-test-reports}
 
@@ -300,9 +302,11 @@ The test samples provided by Adobe by default create screenshots for any failed 
 
 You can use the helper functions to create screenshots through your tests.
 
- <!-- BOTH URLS ARE 404
+ <!--
+  BOTH URLS ARE 404
 * JavaScript: [takeScreenshot command](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
-* Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java) -->
+* Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
+-->
 
 If a test result archive is created during a UI test execution, you can download it from Cloud Manager by clicking the `Download Details` button under the [**Custom UI Testing** step](/help/implementing/cloud-manager/deploy-code.md).
 
@@ -316,10 +320,12 @@ Tests sometimes must upload files to the application being tested. To keep the d
    * Equivalent to `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`.
    * Consult the documentation and libraries of the programming language used in the Docker image to know how to perform such an HTTP request.
 
-   <!-- BOTH URLS ARE 404
+   <!--
+    BOTH URLS ARE 404
    * The Adobe test samples provide helper functions for uploading files:
      * JavaScript: See the [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) command.
-     * Java: See the [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) class. -->
+     * Java: See the [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) class.
+     -->
 
 1. If the upload is successful, the request returns a `200 OK` response of type `text/plain`.
    * The content of the response is an opaque file handle.

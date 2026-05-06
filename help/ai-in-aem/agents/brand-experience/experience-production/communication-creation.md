@@ -2,7 +2,7 @@
 title: Communication Creation Job
 description: Learn about the Experience Production Agents's communication creation job and how to use natural language to create Interactive Communications.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 49111cdb-e714-4590-8b81-382377083d6e
 ---
 

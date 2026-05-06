@@ -2,7 +2,7 @@
 title: Getting Started with the Experience Modernization Agent for AEM Authoring Projects
 description: Learn the specific setup steps required for AEM authoring projects when getting started with the Experience Modernization Agent using the Experience Modernization Console.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 94a5e40b-af4a-42ed-922b-b1ec9bb82e24
 ---
 # Getting Started with the Experience Modernization Agent for AEM Authoring Projects {#getting-started-aem-authoring}
@@ -12,6 +12,8 @@ For AEM authoring projects using the Universal Editor, preparation of the Experi
 ## Create Your Edge Delivery Services Project Repo {#create-repo}
 
 1. Use the [`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk) repository as your template (not the standard Edge Delivery Services boilerplate).
+1. Verify that `fstab.yaml` points to your AEM host, git owner, and git repo, and commit any changes to `main` before connecting the GitHub apps.
+   * See [Configure content source](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md) for instructions.
 1. Follow the [Universal Editor tutorial](https://www.aem.live/developer/ue-tutorial) to set up your repo.
    * Stop when you are asked to create a site in AEM.
 1. Delete `paths.json` and commit this change to `main`.
@@ -29,8 +31,6 @@ For AEM authoring projects using the Universal Editor, preparation of the Experi
 1. Click **Create**. 
    * You are redirected to the Sites page.
    * Refresh the page if the new site does not appear immediately.
-1. If you have not already done it when [setting up your repo,](#create-repo) update `fstab.yaml` so it points to your AEM host, git owner, and git repo and commit those changes to `main`.
-   * See [Configure content source](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md) for instructions.
 
 ## Continue with the Standard Getting Started Steps {#continue}
 

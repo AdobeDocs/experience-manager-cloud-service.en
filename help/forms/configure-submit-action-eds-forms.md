@@ -37,19 +37,23 @@ The following submit actions are supported by [Adaptive Forms authored in the Un
 * [Submit to Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)
 * [Submit to Spreadsheet](/help/forms/forms-submission-service.md)
 
-<!--You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
+<!--
+You can also submit an Adaptive Form in the Universal Editor to other storage or CRM integrations:
 
 * [Connect Adaptive Form to Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)-->
+* [Connect an Adaptive Form to Microsoft&reg; Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+-->
 
 You can configure the submit action for forms created in the Universal Editor using the **Submission** tab of the **Edit Form Properties** extension.
 
-<!--**How to Configure Submit Action for Forms authored in Universal Editor?**
+<!--
+**How to Configure Submit Action for Forms authored in Universal Editor?**
 You can configure the submit action for forms created in the Universal Editor using the **Submission** tab of the **Edit Form Properties** extension.
 
 ![Form properties icon](/help/forms/assets/ue-form-properties-icon.png)
 
-![Universal Editor Form Properties](/help/forms/assets/ue-form-properties.png)-->
+![Universal Editor Form Properties](/help/forms/assets/ue-form-properties.png)
+-->
 
 >[!NOTE]
 >

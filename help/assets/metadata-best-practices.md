@@ -6,10 +6,12 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
 ---
-<!-- Keywords to focus on:
+<!--
+ Keywords to focus on:
 metadata best practices
 aem metadata 
-experience manager metadata-->
+experience manager metadata
+-->
 
 # Metadata management and best practices {#metadata-best-practices}
 

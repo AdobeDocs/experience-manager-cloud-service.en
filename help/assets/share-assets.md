@@ -274,7 +274,8 @@ To generate the URL for assets that you want to share with users, use the Link S
     * SMTP password: email server password
 -->
 
-<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
+<!--
+ TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 ### Configure maximum data size {#maxdatasize}
 
 When you download assets from the link shared using the Link Sharing feature, Experience Manager compresses the asset hierarchy from the repository and then returns the asset in a ZIP file. However, in the absence of limits to the amount of data that can be compressed in a ZIP file, huge amounts of data is subjected to compression, which causes out of memory errors in JVM. To secure the system from a potential denial of service attack due to this situation, you can configure the maximum size of the downloaded files. If uncompressed size of the asset exceeds the configured value, asset download requests are rejected. The default value is 100 MB.
@@ -313,7 +314,8 @@ See [how to configure [!DNL Assets] to use it with [!DNL Adobe Asset Link]](http
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
 -->
 
-<!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
+<!--
+ TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->
 
 **See also**

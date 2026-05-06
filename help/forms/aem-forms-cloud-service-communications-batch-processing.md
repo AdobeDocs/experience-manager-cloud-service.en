@@ -16,13 +16,15 @@ Communications provide APIs for on-demand and scheduled document generation. You
 
 * Batch APIs (Asynchronous APIs) are suitable for scheduled high throughput multiple document generation use cases. These APIs generate documents in batches. For example, phone bills, credit card statements, and benefits statements generated every month.
 
-<!-- The following skills are required to create templates and use HTTP APIs: 
+<!--
+ The following skills are required to create templates and use HTTP APIs: 
 
 * Understanding of Adobe Forms Designer or Acrobat Forms to create templates
 
 * Understanding of HTTP APIs and experience of using HTTP APIs
 
-* Basic understanding of Adobe Experience Manager -->
+* Basic understanding of Adobe Experience Manager
+-->
 
 
 ## Batch operations {#batch-operations}

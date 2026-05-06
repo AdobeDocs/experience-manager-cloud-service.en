@@ -109,7 +109,8 @@ To manually apply the workflow to an asset just once, apply [!UICONTROL DAM Meta
 
 To apply the workflow to all the uploaded assets, add the workflow to a post-processing profile.
 
-<!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
+<!--
+ Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
 ### Enable XMP writeback {#enable-xmp-writeback}
 

@@ -34,7 +34,8 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 
 * **[!UICONTROL Processing Server User Name]**: Workflow user's username
 
-* **[!UICONTROL Processing Server Password]**: Workflow user's password -->
+* **[!UICONTROL Processing Server Password]**: Workflow user's password
+-->
 
 ## Integrate AEM Workflow with Adaptive Forms {#steps-to-integrate-workflow-with-af}
 
@@ -137,7 +138,8 @@ To set up automated process with [AEM Workflow](https://experienceleague.adobe.c
 ## Best Practices
 
 * When configuring the **[!UICONTROL Invoke an AEM Workflow]** Submit Action, select the appropriate workflow model that aligns with the desired business process.
-* In case, the workflow involves external data storage, be sure to configure the workflow accordingly. It is recommended to set up variables appropriately and in accordance with any external storage requirements. -->
+* In case, the workflow involves external data storage, be sure to configure the workflow accordingly. It is recommended to set up variables appropriately and in accordance with any external storage requirements.
+-->
 
 ## Related Articles
 

@@ -223,9 +223,11 @@ Similarly, you can hide titles for the other two panels also. Once done, you can
 
 ### 3. Add form components to the panel
 
-<!-- You can employ one of the following method to add form components to the panel:
+<!--
+ You can employ one of the following method to add form components to the panel:
 * [Add components to a layout's panel using the Add icon](#add-components-to-a-layouts-panel-using-the-add-icon)
-* [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel) -->
+* [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel)
+-->
 
 1. Locate the section within the panel that allows you to add components. 
 1. Click the **Add** icon. The icon is a plus sign (+) that signifies the option to add new components.
@@ -271,7 +273,8 @@ Similarly, you can hide titles for the other two panels also. Once done, you can
 You can also [drag-and-drop the components](#extra-bytes) to add the form components to each panel. 
 
 
-<!-- #### Drag and drop components into a layout's panel 
+<!--
+ #### Drag and drop components into a layout's panel 
 
 1. Locate the section within the panel that allows you to add components. 
 2. Navigate to the left panel within your authoring environment and click **Components**.

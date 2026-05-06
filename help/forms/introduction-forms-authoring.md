@@ -54,9 +54,11 @@ When you create or edit an existing Adaptive Form, you use the following UI elem
 * [Component toolbar](#component-toolbar)
 * [Adaptive Form page](#af-page)
 
-<!-- ![Adaptive Form authoring UI](assets/formeditor.png)
+<!--
+ ![Adaptive Form authoring UI](assets/formeditor.png)
 
-**A.** Sidebar **B.** Page toolbar **C.** Adaptive Form page -->
+**A.** Sidebar **B.** Page toolbar **C.** Adaptive Form page
+-->
 
 ### Sidebar {#sidebar}
 
@@ -71,9 +73,11 @@ The Sidebar lets you
 
 **A.** Content browser **B.** Properties browser **C.** Assets browser **D.** Components browser
 
-<!--Click to enlarge
+<!--
+Click to enlarge
 
-](assets/sidebar-comps-1.png) -->
+](assets/sidebar-comps-1.png)
+-->
 
 The sidebar comprises the following browsers:
 

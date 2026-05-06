@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 hide: yes
-index: no
+index: false
 hidefromtoc: yes
 ---
 

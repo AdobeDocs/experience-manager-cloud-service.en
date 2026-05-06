@@ -22,15 +22,19 @@ Configuration of an external repository in Cloud Manager consists of the followi
 
 1. [Add an external repository](#add-external-repo) to a selected program
 1. [Link a validated external repository to a pipeline](#validate-ext-repo)
-    <!-- 1. Provide an access token to the external repository.
-    1. Validate ownership of the private GitHub repository. -->
+    <!--
+     1. Provide an access token to the external repository.
+    1. Validate ownership of the private GitHub repository.
+    -->
 1. [Configure a webhook](#configure-webhook) to an external repository.
 
 
 ## Add an external repository {#add-ext-repo}
 
-<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
-* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+<!--
+ THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
+* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started.
+-->
 
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
@@ -100,11 +104,11 @@ See also [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/m
 | Access token option | Description |
 | --- | --- |
 | **Use existing Access Token** | If you have already provided a repository access token for your organization and have access to multiple repositories, you can select an existing token. Use the **Token Name** drop-down list to choose the token you want to apply to the repository. Otherwise, add a new access token. |
-| **Add new Access Token** |<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a repository access token using the [Bitbucket documentation](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Required permissions for the Bitbucket Personal Access Token (PAT)<br>These permissions allow Cloud Manager to access repository content, manage pull requests, and configure or react to webhook events.<br>When you create the app password in Bitbucket, make sure it includes the following required app password permissions:<ul><li>Repository (read-only)<li>Pull requests (read and write)<li>Webhooks (read and write)</li></li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
+| **Add new Access Token** |<ul><li>In the **Token Name** text field, type a name for the access token you are creating.<li>Create a repository access token using the [Bitbucket documentation](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Required permissions for the Bitbucket Repository Access Token.<br>These permissions allow Cloud Manager to access repository content, manage pull requests, and configure or react to webhook events.<br>When you create the repository access token in Bitbucket, make sure it includes the following required permissions:<ul><li>Repository (read-only)<li>Pull requests (read and write)<li>Webhooks (read and write)</li></li></ul></li></li></ul></ul></ul><ul><li>In the **Access Token** field, paste the token you just created. |
 
 After validation, the external repository is ready to use and link to a pipeline.
 
-See also [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+See also [Manage Access Tokens](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md). 
 
 >[!TAB Azure DevOps]
 
@@ -154,7 +158,7 @@ For example, webhooks allow Cloud Manager to trigger actions based on events suc
 
 * Pull request (PR) creation – Initiates PR validation functionality.
 * Push events – Starts pipelines when the "On Git Commit" trigger is turned on (enabled).
-* Future comment-based actions – Allows workflows, such as direct deployment from a PR, to a Rapid Development Environment (RDE).
+* Future comment-based actions – Allows workflows, such as direct deployment from a PR, to a Rapid Development Environment (RDE). 
 
 Webhook configuration is not required for repositories hosted on `GitHub.com` because Cloud Manager integrates directly through the GitHub app.
 
@@ -185,7 +189,7 @@ For all other external repositories that are onboarded with an access token &nda
     1. Next to the **Webhook Secret** token/key field, click **Generate**, then click ![Copy icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
     Paste the secret in a plain text file. The copied secret is required for your Git vendor's Webhook settings.
 1. Click **Close**. 
-1. Navigate to your Git vendor solution (GitHub Enterpriser, GitLab, Bitbucket, or Azure DevOps).
+1. Navigate to your Git vendor solution (GitHub Enterprise, GitLab, Bitbucket, or Azure DevOps).
 
     All the details on the webhook configuration and the events that are required for each vendor are available in [Add an external repository](#add-ext-repo). Under step 8, see the tabbed table.
 

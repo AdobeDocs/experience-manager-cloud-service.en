@@ -73,7 +73,8 @@ You can select one or more assets or folders or a combination of both, and downl
 ## Asset versioning {#versions-of-assets}
 
 <!-- 
-TBD: query for engineering: How many versions are maintained. What happens when we reach that limit? Are old versions automatically removed? -->
+TBD: query for engineering: How many versions are maintained. What happens when we reach that limit? Are old versions automatically removed?
+-->
 
 [!DNL Assets view] versions the assets when the assets are uploaded again that is updated or are edited. You can view version history, past versions, and can restore a past version of assets as the latest version, that is reverted to a previous version if needed. Asset versions are created in the following scenarios:
 
@@ -111,13 +112,15 @@ To view and compare versions:
 
    ![compare versions of asset](/help/assets/assets/version-compare2.png) 
 
-<!-- old content
+<!--
+ old content
 To view versions, open an asset's preview and click **[!UICONTROL Versions]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png) from the right sidebar. To preview a specific version, select it. To revert to it, click **[!UICONTROL Make Latest]**. 
 -->
 
 Select the latest version and click **[!UICONTROL New Version]** to upload a new copy of the asset from your local file system to create an asset version. 
 
-<!-- old content
+<!--
+ old content
 You can also create versions from the versions timeline. Select the latest version, click **[!UICONTROL New Version]**, and upload a new copy of the asset from your local file system.
 
 ![View versions of an asset](assets/view-asset-versions1.png)

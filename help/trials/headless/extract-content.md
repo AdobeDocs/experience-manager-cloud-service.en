@@ -2,7 +2,7 @@
 title: Extract Content via the GraphQL API
 description: Learn how to use Content Fragments and the GraphQL API as a headless content management system.
 hidefromtoc: yes
-index: no
+index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 feature: Headless
 role: Admin, User, Developer

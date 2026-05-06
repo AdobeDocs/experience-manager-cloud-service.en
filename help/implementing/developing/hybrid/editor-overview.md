@@ -4,7 +4,7 @@ description: This article gives a comprehensive overview of the SPA Editor and h
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 feature: Developing
 role: Admin, Developer
-index: no
+index: false
 ---
 
 # SPA Editor Overview {#spa-editor-overview}

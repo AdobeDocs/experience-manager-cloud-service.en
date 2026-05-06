@@ -86,7 +86,7 @@ The document generation API returns the generated PDF document or AFP document. 
 
 <span class="preview"> Uploading the generated PDFs using document generation API to Azure Blob Storage capability is under [Early Adopter Program](/help/forms/early-access-ea-features.md). You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
->![NOTE]
+>[!NOTE]
 >
 > Document Generation APIs include batch and synchronous output generation endpoints.These APIs support server-to-server authentication using JWT or OAuth, depending on the endpoint. To know more about Document Generation APIs, [click here](/help/forms/aem-forms-communication-api-overview.md#document-generation-apis).
 
@@ -104,7 +104,7 @@ You can use document generation APIs to create separate documents for each recor
 
 Communications document manipulation (Document Transformation) APIs help to combine, rearrange PDF documents. Typically, you create a DDX and submit it to document manipulation APIs to assemble or rearrange a document. The [DDX document](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) provides instructions on how to use the source documents to produce a set of required documents. The DDX reference documentation provides detailed information about all the supported operations.
 
->![NOTE]
+>[!NOTE]
 >
 > Document Manipulation APIs support server-to-server authentication using JWT. To know more about Document Manipulation APIs, [click here](/help/forms/aem-forms-communication-api-overview.md#document-manipulation-apis).
 
@@ -147,7 +147,7 @@ Document Extraction service provides you with the capability to get the properti
 * Extract the usage rights enabled in a PDF document, users retrieve the usage rights enabled or disabled to a PDF document for Adobe Acrobat Reader extensibility.
 * Get the metadata information present in a PDF document, the metadata is information about the document (as distinguished from the contents of the document, such as text and graphics). The Adobe Extensible Metadata Platform (XMP) is a standard for handling document metadata. The XMP Utilities service can retrieve XMP metadata from PDF documents and export XMP metadata into PDF documents.
 
->![NOTE]
+>[!NOTE]
 >
 > Document Extraction APIs support server-to-server authentication using OAuth. To know more about Document Extraction APIs, [click here](/help/forms/aem-forms-communication-api-overview.md#document-extraction-apis).
 >
@@ -164,7 +164,7 @@ Communications document conversion APIs help to Convert a PDF document to PDF/A.
 
 Converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary.
 
->![NOTE]
+>[!NOTE]
 >
 > Document Conversion APIs support server-to-server authentication using OAuth. To know more about Document Conversion APIs, [click here](/help/forms/aem-forms-communication-api-overview.md#document-conversion-apiss).
 
@@ -185,7 +185,7 @@ The Signature APIs let your organization protect the security and privacy of Ado
 
 <span class="preview"> Remove the signature from the specified signature field and delete the specified signature field, from a PDF document are available under the early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
 
->![NOTE]
+>[!NOTE]
 >
 > Document Assurance APIs support server-to-server authentication using OAuth. To know more about Document Assurance APIs, [click here](/help/forms/aem-forms-communication-api-overview.md#document-assurance-apis).
 

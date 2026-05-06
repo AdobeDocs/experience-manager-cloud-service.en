@@ -7,7 +7,8 @@ exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
 ---
 # Add a Specialized Testing Environment{#add-special-test-enviro}
 
-<!-- badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+<!--
+ badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 -->
 
 >[!NOTE]

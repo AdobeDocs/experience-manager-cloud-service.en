@@ -48,10 +48,13 @@ If you would like to explore the possibilities of creating your own extensions, 
 
 [Using Extension Manager in AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), you can enable or disable your extensions on a per-instance basis, access Adobe's first-party extensions including those for the Universal Editor, and much more.
 
-## Extension Points {#extension-points}
+### Extension Points {#extension-points}
 
-In addition to UI extensibility, the Universal Editor offers many other flexible extension points to enable seamless integration of custom business requirements.
+For a full list of extension points available in the Universal Editor UI, see the Adobe Developer documentation [The Universal Editor Extension Points.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/)
+
+## Additional Resources {#additional-resources}
+
+In addition to UI extensibility, the Universal Editor offers other customization options to enable seamless integration of custom business requirements.
 
 * **[Blocks](https://www.aem.live/developer/block-collection)**: In simple JSON format, projects can adjust the blocks and UE features available for content creation.
-* **[Custom User Interface](#extending-ui)**: Extensions can display necessary UI in side-panels or modal dialogs.
 * **[Events](/help/implementing/universal-editor/events-universal-editor.md)**: Extensions receive events about the author's actions and selections on the page to respond appropriately.

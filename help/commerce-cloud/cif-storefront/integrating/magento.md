@@ -5,7 +5,7 @@ thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b
 feature: Commerce Integration Framework
 role: Admin
-index: no
+index: false
 ---
 
 # AEM and Adobe Commerce Integration Using Commerce Integration Framework {#aem-framework}

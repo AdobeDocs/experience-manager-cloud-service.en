@@ -249,7 +249,8 @@ A: Form submissions are subject to your AEP streaming ingestion [quotas and rate
 <!-- 
 >
 **Q: Can form attachments be sent to AEP?**
-A: No, form attachments cannot be directly sent to AEP. You would need to store attachments separately and only send metadata to AEP. -->
+A: No, form attachments cannot be directly sent to AEP. You would need to store attachments separately and only send metadata to AEP.
+-->
 
 ### Implementation Questions {#implementation-questions}
 

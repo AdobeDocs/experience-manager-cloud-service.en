@@ -230,13 +230,15 @@ To add and use a custom error handler in an Adaptive Form, perform the following
 
 To learn how to add custom functions, click [Create custom functions in an Adaptive Form based on Core Components](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function).
 
-<!-- To create a custom error function, perform the following steps:
+<!--
+ To create a custom error function, perform the following steps:
 
 1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git). 
 2. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`
 3. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder` as `clientlibs`.
 4. Create a folder named `js`.
-5. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder. -->
+5. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
+-->
    
 1. Add the below code for custom error handler in the JavaScript file, for example, `function.js`. The file comprises the code for custom error handler.
 Let's add the following code to the JavaScript file to display the response and headers, received from the REST service endpoint, in the browser console.

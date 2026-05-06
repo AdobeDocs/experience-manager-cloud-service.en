@@ -16,7 +16,8 @@ When granting a user access to a specific Adobe solution, you do not necessarily
 
 The Adobe Admin Console has a structured hierarchy of product, product instances, and product profiles where an organization's internal users can be assigned membership, giving them access to the solutions and features that have been licensed. 
 
-<!-- Alexandru: Drafting for now 
+<!--
+ Alexandru: Drafting for now 
 
 Your AEM as a Cloud Service team members are added and assigned to one or more of the following product profiles via the Admin Console during onboarding.
 
@@ -24,7 +25,8 @@ Your AEM as a Cloud Service team members are added and assigned to one or more o
 
 * **AEM Users**: AEM users are the users in your organization who use AEM as a Cloud Service generally to create content. These users need to access AEM to do their tasks. The AEM users product profile is typically assigned to an AEM content author who creates and reviews the content. This content can be of many types such as pages, assets, publications, and so on. The AEM users product profile shown below is assigned to these members.
 
-![Product profiles](/help/onboarding/assets/admin-console-profiles.png) -->
+![Product profiles](/help/onboarding/assets/admin-console-profiles.png)
+-->
 
 ## AEM as a Cloud Service Product Profiles {#aem-product-profiles}
 
@@ -84,8 +86,10 @@ The following table describes a list of the possible Product Profiles below an e
                 <li>If the default service remains selected
                     <ul>
                         <li>users in this product profile will also be members of the "AEM Sites Content Managers - Service" AEM group.</li>
-                      <!--  <li>users in this product profile will have access to AEM Sites Content Management API.</li>
-                        <li>an Adobe Developer Console API OAuth S2S project containing AEM Sites Content Management API can optionally be scoped to this environment.</li>-->
+                      <!--
+                        <li>users in this product profile will have access to AEM Sites Content Management API.</li>
+                        <li>an Adobe Developer Console API OAuth S2S project containing AEM Sites Content Management API can optionally be scoped to this environment.</li>
+                        -->
                     </ul>
                 </li>
             </ul>

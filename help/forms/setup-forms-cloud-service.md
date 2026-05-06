@@ -28,13 +28,15 @@ exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 
 * **End user**: A user interacts with and submits the published form, signs submitted forms, tracks submitted applications through a web portal, and receives personalized communications.
 
-<!-- While onboarding to the service, assign the following AEM groups to [!DNL AEM Forms] as a Cloud Service based on their role:
+<!--
+ While onboarding to the service, assign the following AEM groups to [!DNL AEM Forms] as a Cloud Service based on their role:
 
 | User type | AEM group |
 |---|---|
 | Form Practitioner | forms-users (AEM Forms Users), template-authors, workflow-user, workflow-editors, and fdm-author  |
 | UX Designer| forms-users, template-authors|
-| End-User| <ul> <li>When a user must login to view and submit an Adaptive Form, add such users to forms-users group. </li> <li>When no user authentication is required to access Adaptive Forms, do not assign any group to such users. </li> </ul>| -->
+| End-User| <ul> <li>When a user must login to view and submit an Adaptive Form, add such users to forms-users group. </li> <li>When no user authentication is required to access Adaptive Forms, do not assign any group to such users. </li> </ul>|
+-->
 
 ## Onboard to the service {#onboarding}
 
@@ -87,7 +89,8 @@ For more information about Forms-specific AEM groups and corresponding permissio
 
 [Set up a local development environment](setup-local-development-environment.md). You can use a local development environment to create an Adaptive Form and related assets (Themes, Templates, custom Submit Actions, pre-fill service and more). And, [convert PDF forms to Adaptive Forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html) without logging in to a cloud development environment.
 
-<!-- ### Business unit and end-users {#business-unit-and-end-users}
+<!--
+ ### Business unit and end-users {#business-unit-and-end-users}
 
 | Role| Organization| Description|
 |-----|-------|-----|
@@ -107,9 +110,11 @@ For more information about Forms-specific AEM groups and corresponding permissio
 | Product Owner                    | System Integrator /Partner/Customer | Prioritizes and evaluates scrum team's work for high-quality delivery on time.                                                                                                                                                                       |
 | Scrum Master                     | System Integrator /Partner/Customer | Ensures agile values and processes in place to deliver on defined requirements as per prioritization by PO.                                                                                                                                          |
 | Infrastructure / security expert | System Integrator /Partner/Customer | Provisions and configures best possible infrastructure, security controls and infra processes to address current and projected RASP requirements.                                                                                                    |
-| Technical Architect              | System Integrator /Partner/Customer | Provides best high-level architecture and infrastructure guidance for use-case implementation and address RASP (Reliability, Availability, Scalability, and Performance) and security challenges.                                                    | -->
+| Technical Architect              | System Integrator /Partner/Customer | Provides best high-level architecture and infrastructure guidance for use-case implementation and address RASP (Reliability, Availability, Scalability, and Performance) and security challenges.                                                    |
+-->
 
-<!-- ## Onboard to the service {#onboarding}
+<!--
+ ## Onboard to the service {#onboarding}
 
 [Onboard](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) to the [!DNL Adobe Experience Manager] as a Cloud Service. 
 
@@ -117,9 +122,11 @@ After you onboard the service, configure a [local development environment](setup
 
 Administrators are responsible for managing Adobe software and services for their organization. Administrators grant access to developers in their organization to connect and use your [!DNL AEM Forms] as a Cloud Service program. When an administrator is provisioned for an organization, the administrator receives an email with title 'You now have administrator rights to manage Adobe software and services for your organization'. If you are an administrator, check your mailbox for email with previously mentioned title and proceed to [add users](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#onboarding-users-in-admin-console) by way of IMS and assign [form-specific groups](forms-groups-privileges-tasks.md) to users based on their role.
 
-## Next step {#next-steps} -->
+## Next step {#next-steps}
+-->
 
-<!-- ## Prerequisites {#prerequisites}
+<!--
+ ## Prerequisites {#prerequisites}
 
 If you are new to AEM as a cloud service, contact your Adobe representative to create an organization identifier for your company in the Adobe Identity Management System (IMS). Once Adobe has created an organization for your company, your designated administrator is added as the first member of the organization. The administrator can setup an [!DNL AEM Forms] as a Cloud Service instance. 
 

@@ -31,7 +31,8 @@ Self-Service CDN Management:
 Adobe-managed CDN within EDS enables self-service configuration and management tasks like SSL certificate setup. 
  
 Use Cases:
-EDS with CDN integration is beneficial for various scenarios, including e-commerce storefronts and websites requiring high performance and scalability. -->
+EDS with CDN integration is beneficial for various scenarios, including e-commerce storefronts and websites requiring high performance and scalability.
+-->
 
 ## Edge Delivery Services deployment options in Adobe Managed CDN in Cloud Manager {#deployment-options}
 

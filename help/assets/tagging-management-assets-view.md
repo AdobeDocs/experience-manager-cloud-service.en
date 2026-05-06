@@ -193,7 +193,7 @@ Assets view provides the ability to import blocked tags from a data source (CSV)
 1. Choose the CSV file from your device. Click **[!UICONTROL select a file]** to navigate to the file from your device. Alternatively, you can drag and drop the CSV file from your device.
 1. Click **[!UICONTROL Upload]**. The tags from the CSV file are listed in the blocked tags list.
 
-    ![Import blocked tags list](assets/import-blocked-tags.png)
+    ![Import blocked tags list](assets/import-csv-new.png)
 
 In case you want to download a blocked tags template, follow the steps below: 
 

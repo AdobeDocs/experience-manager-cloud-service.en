@@ -50,7 +50,8 @@ Media Library broadly covers the following use cases:
 * Digital screen experiences created using [!DNL Adobe Experience Manager Screens].
 * [!DNL Assets] HTTP REST APIs for headless operations.
 
-<!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
+<!--
+ TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
 * Static renditions
 
@@ -80,7 +81,8 @@ To use the Media Library functionality, you can use the default [!DNL Experience
 * Activity stream (timeline).
 * Comments and annotations.
 
-<!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+<!--
+ TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
 As per PM, we must avoid stating such a list, as we do not have a list that makes sense in Cloud Service.
 -->

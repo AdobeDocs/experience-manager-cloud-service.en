@@ -52,10 +52,6 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 [!BADGE Dive Deeper into this Feature]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
->[!IMPORTANT]
->
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
-
 ## August release features {#august-release-features}
 
 **Bulk Search via Filter Properties**

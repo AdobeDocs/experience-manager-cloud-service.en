@@ -69,7 +69,8 @@ You can configure the scheduler using the following properties:
 * The maximum number of assets expired in one iteration of the scheduler is the value of the property `asset_expired_limit`.
 * To run the job periodically, set the value of the property `cq.dam.expiry.notification.scheduler.istimebased` as `false` and set the value of the property `cq.dam.expiry.notification.scheduler.period.rule` with time in seconds.
 
-<!-- TBD: Web Console not available in CS.
+<!--
+ TBD: Web Console not available in CS.
 
 1. Open [!DNL Experience Manager] Configuration Manager.
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time-based Scheduler]** is selected, which 

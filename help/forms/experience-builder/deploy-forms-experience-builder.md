@@ -2,7 +2,7 @@
 title: Deploy and configure Forms Experience Builder
 description: Learn how to use the Forms Experience Builder to create and manage forms with progressive disclosure for all user types
 hide: yes
-index: no
+index: false
 hidefromtoc: yes
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."

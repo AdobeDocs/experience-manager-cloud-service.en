@@ -127,7 +127,8 @@ Adobe Experience Manager provides various search filters which you can use to re
 ![Filters panel](assets/filters.png)
 
 You can select single or multiple filters to refine your search in Adobe Experience Manager. 
-<!--The following filters are available out of the box for all the users of Experience Manager:
+<!--
+The following filters are available out of the box for all the users of Experience Manager:
 
 * File Type Search Filters  
 * File Size Search Filters 
@@ -145,7 +146,8 @@ You can select single or multiple filters to refine your search in Adobe Experie
 * Content fragment model 
  -->
 
-<!--**Scenario 5: Search for an Asset named 'classic car' in Black color which has either meta description or a similar asset in Japanese language.**  
+<!--
+**Scenario 5: Search for an Asset named 'classic car' in Black color which has either meta description or a similar asset in Japanese language.**  
  
 To perform a search on such a requirement, type 'classic car' in the search bar.  Navigate to the filters panel and expand the language search filter drop-down. Type "ja-jp", which represents the Japanese language. Expand the 'Asset Color' filter and select black color or add the hexadecimal code for the black color (#000000).
 
@@ -265,7 +267,8 @@ It takes you to the collection of assets with similar color and metadata.
 
 Search facets in Adobe Experience Manager let you search for assets in multiple ways rather than in a single, pre-determined, or taxonomic order. You can customize search facets and add predicates as per your requirement. Read [Search Facets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) for the step-by-step guide about adding a custom predicate.
 
-<!--**Scenario 10: Search assets based on Sku ID**
+<!--
+**Scenario 10: Search assets based on Sku ID**
 to be added later
 -->
 

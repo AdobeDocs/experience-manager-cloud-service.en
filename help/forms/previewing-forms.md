@@ -23,10 +23,12 @@ The following table lists the preview options available for different types of s
    <td><strong>Asset type</strong><br /> </td>
    <td><strong>Available preview options</strong><br /> </td>
   </tr>
-  <!--<tr>
+  <!--
+  <tr>
    <td>Document</td>
    <td>PDF preview</td>
-  </tr>-->
+  </tr>
+  -->
   <tr>
    <td>PDF Form</td>
    <td>PDF preview and Preview with Data<br /> </td>
@@ -35,10 +37,12 @@ The following table lists the preview options available for different types of s
    <td>Adaptive Form</td>
    <td>HTML preview and HTML preview with Data</td>
   </tr>
-  <!--<tr>
+  <!--
+  <tr>
    <td>Form Template</td>
    <td>PDF preview, PDF preview with Data, HTML preview, HTML preview with Data<br /> </td>
-  </tr>-->
+  </tr>
+  -->
  </tbody>
 </table>
 

@@ -86,7 +86,9 @@ The [properties panel](/help/sites-cloud/authoring/universal-editor/navigation.m
 
 ![Rich text component in the properties panel](assets/rich-text-properties-panel.png)
 
-Tap the entry to open a dialog presenting a larger canvas to edit the rich text.
+#### The Modal Editor {#modal-editor}
+
+Tap the entry in [the properties panel](#properties-rail) to open a modal editor which offers a larger canvas to edit the rich text.
 
 ![Rich text editing dialog](assets/rich-text-canvas.png)
 
@@ -116,7 +118,7 @@ The rich text editor (RTE) of the Universal Editor allows the author to apply st
 * **Unlink**
   * Remove link from selected text.
 * **Image**
-  * Specify a URL or use the [asset selector](/help/assets/overview-asset-selector.md#using-asset-selector) to select an asset from AEM.
+  * Specify a URL or use the [Content Advisor](/help/assets/integrate-adobe-non-adobe-applications.md) to select an asset from AEM.
 * **Table**
   * Use the drop-down to insert a new table of the selected number of columns and rows or insert and remove new columns/rows.
 * **Alignment**
@@ -130,6 +132,8 @@ The rich text editor (RTE) of the Universal Editor allows the author to apply st
 * **Outdent**
 * **Paste as Text**
   * Remove formatting from text on your clipboard before pasting into the Universal Editor.
+* **Special Character** 
+  * Insert a special character into your text.
 * **Remove All Formatting**
   * Remove all formatting options from the selected text.
 
@@ -142,7 +146,7 @@ You can view its details in the [properties panel.](/help/sites-cloud/authoring/
 ![Editing media](assets/ue-edit-media.png)
 
 1. Tap or click the preview of the selected image in the properties panel.
-1. The [asset selector](/help/assets/overview-asset-selector.md#using-asset-selector) window opens to allow you to select an asset.
+1. The [Content Advisor](/help/assets/integrate-adobe-non-adobe-applications.md) window opens to allow you to select an asset.
 1. Select to select a new asset.
 1. Select **Select** to return to the properties panel where the asset was replaced.
 

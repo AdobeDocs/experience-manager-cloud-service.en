@@ -203,9 +203,11 @@ The following section describes how to manually configure Experience Manager Ass
 Earlier, Experience Manager Assets as a [!DNL Cloud Service] was manually configured with Brand Portal via Adobe Developer Console, which procures an Adobe Identity Management Services (IMS) account token for authorization of the Brand Portal tenant. It requires configurations in both, Experience Manager Assets and Adobe Developer Console.
 
 <!--1. In Experience Manager Assets, create an IMS account and generate a public key (certificate).-->
-<!--1. Under the project, configure an API using the public key to create a service account connection.
+<!--
+1. Under the project, configure an API using the public key to create a service account connection.
 1. Get the service account credentials and JSON Web Token (JWT) payload information.
-1. In Experience Manager Assets, configure the IMS account using the service account credentials and JWT payload.-->
+1. In Experience Manager Assets, configure the IMS account using the service account credentials and JWT payload.
+-->
 1. In Adobe Developer Console, create a project for your Brand Portal tenant (organization).
 1. In Experience Manager Assets, configure the Brand Portal cloud service using the IMS account and Brand Portal endpoint (organization URL).
 1. Test your configuration by publishing an asset from Experience Manager Assets to Brand Portal.
@@ -230,8 +232,10 @@ Perform the following steps in the specified sequence to configure Experience Ma
 1. [Create a new Adobe IMS Integration using OAuth](#create-ims-account-configuration)
 1. [Configure cloud service](#configure-cloud-service)
 <!--1. [Obtain public certificate](#public-certificate)-->
-<!--1. [Create service account (JWT) connection](#createnewintegration) 
-1. [Configure IMS account](#create-ims-account-configuration)-->
+<!--
+1. [Create service account (JWT) connection](#createnewintegration) 
+1. [Configure IMS account](#create-ims-account-configuration)
+-->
 
 <!--
 ### Create IMS configuration {#create-ims-configuration}
@@ -376,7 +380,8 @@ Ensure that you have performed the following steps:
 * [Create service account (JWT) connection](#createnewintegration)
 -->
 
-<!--1. Open the IMS Configuration and navigate to the **[!UICONTROL Account]** tab. Keep the page open while [obtaining the public certificate](#public-certificate).
+<!--
+1. Open the IMS Configuration and navigate to the **[!UICONTROL Account]** tab. Keep the page open while [obtaining the public certificate](#public-certificate).
 
 1. Specify a **[!UICONTROL Title]** for the IMS account.
 
@@ -385,7 +390,8 @@ Ensure that you have performed the following steps:
 <!--
 1. Complete the configuration based on details from the [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). Click **[!UICONTROL Create]**.
 -->
-   <!--Specify client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
+   <!--
+   Specify client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
 
    The IMS account is configured. 
 
@@ -438,7 +444,7 @@ The egress IPs are as follows:
 |--- |--- |
 | NA | 130.248.160.68, 20.94.203.130  |
 | EMEA | 51.132.146.75, 130.248.244.202, 130.248.244.203, 130.248.244.204, 130.248.244.210, 130.248.244.211, 130.248.244.212  |
-| APAC | 63.140.44.54 |
+| APAC | 172.82.240.74, 172.82.240.75 |
 
 <!--
 ### Test configuration {#test-configuration}

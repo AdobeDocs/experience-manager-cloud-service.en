@@ -225,6 +225,39 @@ The payload is empty for this event.
 }
 ```
 
+### aue&colon;navigate {#navigate}
+
+The Universal Editor CORS library (`@aem-sites/universal-editor-cors`)  dispatches a cancelable `aue:navigate` event before relaying navigation to the Universal Editor shell.
+
+The payload is the URL of the navigation target.
+
+```json
+{
+      details: {
+          href: string;           // URL of the navigation target, modifiable by listeners
+      }
+  }
+```
+
+This event allows page scripts to:
+
+* **Modify** the navigation URL (e.g., append `.html` extension) by changing `event.detail.href`.
+* **Cancel** navigation entirely via `event.preventDefault()`.
+
+Example usage:
+
+```javascript
+// Transform the navigation URL
+document.addEventListener("aue:navigate", (e) => {
+  e.detail.href = e.detail.href + ".html";
+});
+
+// Cancel navigation entirely
+document.addEventListener("aue:navigate", (e) => {
+  e.preventDefault();
+});
+```
+
 ## Fallback Event Listeners {#fallback-listeners}
 
 ### Content Updates {#content-update-fallbacks}

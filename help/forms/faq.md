@@ -4,7 +4,7 @@ description: Forms as a Cloud Service frequently asked questions
 contentOwner: khsingh
 role: User
 feature: Adaptive Forms
-index: no
+index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
 ---
@@ -16,9 +16,11 @@ You can use the Visual Editor to create the rules. The Code Editor is not availa
 * **Can I create an XFA-based Adaptive Form on Cloud Service instances?**
 Yes, you can create an XFA-based Adaptive Form on Cloud Service instance. However, support for XFA-based Adaptive Forms is not available for AEM Forms as a Cloud Service SDK (Local development environment). If you intend to use XFA-based Adaptive Forms with AEM Forms as a Cloud Service SDK, contact Adobe Support with details of your use case and specific requirements.
 
-<!-- * **Can I use an XDP as a Document of Record (DoR) template? Is Forms Designer included in AEM Forms as a Cloud Service license?** 
+<!--
+ * **Can I use an XDP as a Document of Record (DoR) template? Is Forms Designer included in AEM Forms as a Cloud Service license?** 
 
-  Yes, you can use an XDP as a Document of Record template on Cloud Service instances. However, support to use XDP as a Document of Record template is not available for AEM Forms as a Cloud Service SDK (Local development environment). -->
+  Yes, you can use an XDP as a Document of Record template on Cloud Service instances. However, support to use XDP as a Document of Record template is not available for AEM Forms as a Cloud Service SDK (Local development environment).
+  -->
 
 * **Can I migrate content from an On-Premise or [!DNL Adobe-Managed Services] environments to [!DNL Forms] as a Cloud Service environment?**
 Yes, you can migrate your custom code, content, and assets from On-Premise or [!DNL Adobe-Managed Services] environments to [!DNL Forms] as a Cloud Service environment. For detailed instructions, see [Migrate to Forms as a Cloud Service](migrate-to-forms-as-a-cloud-service.md).
@@ -49,8 +51,10 @@ Yes, you can continue using themes created with AEM 6.4 Forms and AEM 6.5 Forms 
 * **Can I produce schema-compliant data?**
 Yes, you can create Adaptive Forms to produce schema-compliant data.
 
-<!-- * **Can I pass custom parameters to the prefill service?**
-Custom parameters are planned for an upcoming release. -->
+<!--
+ * **Can I pass custom parameters to the prefill service?**
+Custom parameters are planned for an upcoming release.
+-->
 
 * **Can I cache secured content?**
 Caching secured content features is disabled, by default. To enable the feature, you can perform the instructions provided at [Caching Secured Content](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html).

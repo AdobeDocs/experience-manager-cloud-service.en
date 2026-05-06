@@ -2,7 +2,7 @@
 title: Edit in Context with the Universal Editor
 description: Explore how you can use the Universal Editor to edit any aspect of your content in place and in context in any implementation.
 hidefromtoc: yes
-index: no
+index: false
 exl-id: a4854a56-9434-4d15-a56a-f1798f27263a
 feature: Headless
 role: Admin, User, Developer

@@ -23,11 +23,13 @@ You can view statistics of the uploaded assets and collections by navigating to 
 
 <!-- You can track the upload history of your assets over the past 30 days or gain a more comprehensive view with data spanning the last 12 months. This feature enables you to evaluate the upload count of assets.  -->
 
-<!-- Go to the **[!UICONTROL [!DNL Insights]]** tab.
+<!--
+ Go to the **[!UICONTROL [!DNL Insights]]** tab.
 
 2. Select the desired time frame to view the statistics; you can opt for either last 30 days or last 12 months.
 
-Data for the selected time frame is displayed, including the upload count for the specified duration. -->
+Data for the selected time frame is displayed, including the upload count for the specified duration.
+-->
 
 ## View detailed statistical analysis{#view-detailed-statistical-analysis}
 

@@ -2,7 +2,7 @@
 title: Adaptive Forms Core Components vs Edge Delivery Services Forms vs Foundation Components
 description: Technical comparison of AEM Forms authoring approaches - Core Components, Edge Delivery Services Forms, and Foundation Components. Architecture, rendering, features, and use cases.
 keywords: adaptive forms comparison, core components, foundation components, edge delivery services forms, AEM forms comparison, form builder comparison
-role: Architect, Developer, Admin
+role: Developer, Admin
 level: Intermediate
 feature: Adaptive Forms, Core Components, Edge Delivery Services
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
