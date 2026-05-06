@@ -20,6 +20,7 @@ These are the release notes for the 7 May 2026 release of the Universal Editor.
 
 ## What's New {#what-is-new}
 
+* You can now [drag-and-drop components in the editor to move them.](/help/sites-cloud/authoring/universal-editor/authoring.md#drag-and-drop-move)
 * A service worker has been introduced to reduce latency between the Universal Editor UI and the backend systems.
 * All adapters for Content Fragments (AEM 6.5, OpenAPI and GraphQL) now include the filters for the asset selector to ensure consistency and users being able to select allowed assets only.
 * `content:patch` intent is now provided.
