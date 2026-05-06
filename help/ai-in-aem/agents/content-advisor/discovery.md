@@ -93,11 +93,38 @@ For information on the MCP endpoint to access content discovery agent, contact A
    * **Search based on file format, asset type, asset status and Created by Email ID**: Show videos in `.mp4` format that are approved and `created by <user email ID>`.
    * **Search based on file format, asset type, asset status and  Created Date**: Show images in `.PNG` format that are created after January 1, 2025 and `published by <user email ID>`
    * **Search based on MIME type, Created Date, and Published by Email ID**: Show `image/jpeg` created after `January 1, 2025` and `published by <user email ID>`.
-   * **Search based on file format and custom metadata properties**: Show images in `.JPEG` format that have `Product SKU ID = <SKU value>` (must be in metadata property = value format).
 
    * **Search for assets with missing metadata**: Show assets created in the last 90 days with `<Name of metadata property including custom properties>` is blank.
 
    * **Search for assets using file size, image width, and image height**: Show images larger than 5 MB with width greater than 2000 pixels and height greater than 1200 pixels.
+
+**Natural language support for custom metadata**
+
+The Content Discovery agent supports querying custom metadata properties defined in metadata schemas. You can reference metadata values directly in your prompts without needing to specify them using a strict key-value format. The agent interprets intent and matches relevant metadata fields automatically.
+
+Sample prompts:
+
+* **Finding assets which have a property value is not set**: Find me assets whose campaign Name is not set (the property must be indexed for appropriate results).
+
+* **Finding assets which have a property value set**: Find me assets whose campaign Name is set (the property must be indexed for appropriate results).
+
+* **Finding assets which have a property value  set to X**: Find me assets whose campaign Name is Coffee-day.
+
+* **Finding assets which have a property value  set to set of values X, Y**: Find me assets whose campaign Name is Coffee-day along with those whose campaign Name is tea-day.
+
+* **Showing the value of a particular property field**: Get me coffee assets also show me the campaign name of these assets.
+
+* **Find assets which match a date based property condition**: Get me assets whose license is not expired.
+
+
+
+
+
+
+
+
+
+
 
 
 **Folder-based content discovery:**  
@@ -147,13 +174,17 @@ The Content Discovery Agent allows users to find assets similar to a specific re
 
 **Sorting search results**
 
-The content discovery agent allows users to sort search results directly within their natural language prompts. Users can specify sorting criteria such as modified date, created date, or asset name, and choose ascending or descending order.
+The Content Discovery agent allows users to sort search results directly within their natural language prompts. Users can specify sorting criteria such as modified date, created date, or asset name, and choose ascending or descending order.
 
 Sample prompts:
 
 * Find mountain images sorted by modified date in descending order (shows the most recently modified assets first).
 
 * Show mountain images sorted by name in ascending order (shows the image names starting with letter A first followed by B, and so on).
+
+**Context-aware environment detection**
+
+In Admin view, the Content Discovery agent automatically detects the authoring environment and uses it to resolve prompts, without requiring you to specify the author URL explicitly.
 
 ### AEM Sites pages {#content-discovery-agent-aem-sites-pages}
 
@@ -197,13 +228,15 @@ Note: Form discovery currently supports Edge Delivery Services forms only and ta
 
 ### Assets {#discovery-agent-search-results-assets}
 
-The content discovery agent returns the top results for each query, sorted by relevance to ensure that the exact matches appear first. The agent combines metadata-driven queries with semantic search to assemble a focused set of likely matches, then uses an LLM to rank them based on user intent. This blended approach delivers accurate, context-aware results without depending entirely on a direct keyword match.
+The Content Discovery Agent returns the top results for each query, sorted by relevance to ensure that the exact matches appear first. The agent combines metadata-driven queries with semantic search to assemble a focused set of likely matches, then uses an LLM to rank them based on user intent. This blended approach delivers accurate, context-aware results without depending entirely on a direct keyword match.
 
-Each result includes asset name along with key asset metadata such as the asset path, creator, creation date, title, description, format, last modifier, last modified date, file size, dimensions, [Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md), and associated tags. If an asset is in approved state, the results also include [Dynamic Media with OpenAPI URL](/help/assets/dynamic-media-open-apis-overview.md). 
+Each result is displayed as an asset card, showing the asset name, preview, and key metadata such as description and format. You can click the Info icon on a card to view additional asset properties.
 
-You can click the asset path to seamlessly navigate to the asset location within AEM.
+Use the **Show Table** option to display results in a tabular format. Click **Show all results** to view the complete set of 20 retrieved assets in the right pane.
 
-![Search assets using content discovery agent](/help/ai-in-aem/agents/content-advisor/assets/search-results-discovery-agent.png)
+Each result also includes key asset metadata such as the asset path, size, created date and the creator, modified date along with the user who modified the asset, format, and description. If an asset is in approved state, the results also include [Dynamic Media with OpenAPI URL](/help/assets/dynamic-media-open-apis-overview.md). You can click the asset path to seamlessly navigate to the asset location within AEM.
+
+![Search assets using content discovery agent](/help/ai-in-aem/agents/content-advisor/assets/search-results-content-discovery-agent.png)
 
 You can use these asset details to quickly evaluate if an asset meets the requirements without navigating to each asset to view these details.
 
