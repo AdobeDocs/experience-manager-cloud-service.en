@@ -184,6 +184,16 @@ A selection of data types is available for defining your model:
   >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
   -->
 
+* **Composite**
+
+  * The **Composite** data type enables Content Fragments to store hierarchical, structured data by allowing fields to contain nested sub-fields. The sub-fields are other Content Fragments, dependent on specified Content Fragment Models. This feature provides a way to model complex data structures within a single fragment, similar to nested objects in JSON or embedded documents in NoSQL databases.
+
+  >[!NOTE]
+  >
+  >The Composite data type is currently in Limited Availability. 
+  >
+  >If you would like to participate, create a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+
 * **JSON Object**
   * Allows the Content Fragment author to enter JSON syntax into the corresponding elements of a fragment. 
     * To allow AEM to store direct JSON that you have copy/pasted from another service.
