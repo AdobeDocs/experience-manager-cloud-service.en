@@ -22,12 +22,8 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
-* A service worker has been introduced to reduce latency between the Universal Editor UI and the backend systems.
-* All adapters for Content Fragments (AEM 6.5, OpenAPI and GraphQL) now include the filters for the asset selector to ensure consistency and users being able to select allowed assets only.
-* `content:patch` intent is now provided.
-* To help with accessibility, author flow and landmarks have been defined.
+* 
 
 ## Other Upcoming Improvements {#other-improvements}
 
-* Unnecessary type assertions in `assignImageDimensionFields` were removed.
-* And issue was fixed where the server-side handling of the `add` operation iterated the string value, treating it as an object instead of a patch.
+* 
