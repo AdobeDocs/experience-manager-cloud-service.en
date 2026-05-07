@@ -22,30 +22,11 @@ The next planned release is Thursday, June 4, 2026.
 
 ## What's new - Cloud Manager {#cloud-manager-whats-new}
 
-* **Cloud Manager MCP server for AI-powered IDEs**
+* **Soft delete for a production program**
 
-    You can now use an MCP (Model Context Protocol) server that exposes Cloud Manager Public APIs as tools for AI-enabled IDEs (such as Cursor). After you connect it, you can use conversational prompts to list and manage programs, pipelines, environments, and repositories, helping you move faster without leaving your editor.
+    Cloud Manager now allows customers to delete production programs using a soft delete workflow. You can restore deleted programs within 30 days, providing you an additional safety window before permanent deletion. This feature is being rolled out progressively throughout May.
 
-    See the documentation [Use MCP with AEM as a Cloud Service](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md).
-
-    See the tutorial [Cloud Manager MCP Server](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager#).
-
-* **Faster builds with module caching**
-
-    A new build model compiles only changed modules (rather than the entire repo) using module-level caching to shorten build times. It applies to Code Quality non-production pipelines and development Full Stack non-production pipelines.
-
-    See [About using Smart Build in a non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build) and [Add a non-production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
-
-* **Self-serve host connectivity check**
-
-    Cloud Manager now lets you run self-serve checks from your environment. These checks verify host and port reachability and confirm DNS resolution using your program's configured network path, including egress. This capability helps you validate advanced networking and resolve integration issues faster without opening support cases or accessing pods. <!-- SKYOPS-23640 -->
-
-    See [Network Connectivity Test](/help/security/network-connectivity-test.md)
-
-* **Improved stability, performance, and reliability**
-
-    This release includes optimization and maintenance updates that improved the stability, performance, and reliability of Cloud Manager.
-
+    See [Mark a production program for deletion](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-production-program).
 
 ## Beta programs {#private-beta-program}
 
@@ -57,7 +38,7 @@ Participate in Cloud Manager's beta programs to get exclusive access to upcoming
 
 See also [AEM Beta programs](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
-The following opportunities are currently available:
+The following beta program opportunities are currently available:
 
 ### Edge Delivery Services with AEM Authoring and flexible publish tier configuration {#eds-with-aem-authoring}
 
