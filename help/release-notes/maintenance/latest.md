@@ -10,13 +10,17 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 25821 {#release-25821}
+## Release 25892 {#release-25892}
 
-Summarized below are the continuous improvements for maintenance release 25821, which was publicly released on May 5, 2026. The previous maintenance release was release 25520.
+Summarized below are the continuous improvements for maintenance release 25892, which was publicly released on May 5, 2026. The previous maintenance release was release 25520.
 
 The 2026.5.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-25821}
+>[!NOTE]
+>
+>Release 25821 has been made private. 
+
+### Enhancements {#enhancements-25892}
 
 * CQ-4362304: Create Guidelines frontend and update LLM config UI.
 * GRANITE-39546: Upgrade Apache Tika to 3.x.
@@ -46,7 +50,7 @@ The 2026.5.0 feature activation will provide the full feature set for this maint
 * SKYOPS-138356: Update `com.adobe.granite.oauth.server` to 1.1.36.
 * SKYOPS-138739: Update SnakeYAML to 2.6.
 
-### Fixed Issues {#fixed-issues-25821}
+### Fixed Issues {#fixed-issues-25892}
 
 * ASSETS-59546: Remove dependencies on deprecated commons-lang library.
 * ASSETS-64831: AssetProcessorProcess resetting processing attempt count causes stuck assets.
@@ -61,7 +65,7 @@ The 2026.5.0 feature activation will provide the full feature set for this maint
 * SITES-39267: Restore pagePath in relationship chain entries.
 * SITES-43715: Permission validation fails reading the resource status.
 
-#### AEM Guides {#guides-25821}
+#### AEM Guides {#guides-25892}
 
 * GUIDES-45110: When selecting an image in the Editor using the **Select file** dialog, only raster formats (such as JPG, PNG, and GIF) are displayed. Vector files (such as `.ai` and `.eps`) are not shown and cannot be selected.
 * GUIDES-41938: Creating a topic in a folder with spaces in its name incorrectly creates a duplicate folder where spaces are replaced by hyphens, and the topic is saved there instead of the original folder.
@@ -71,19 +75,19 @@ The 2026.5.0 feature activation will provide the full feature set for this maint
 
 For more information about the new and enhanced features and issues fixed in the release, view the [Experience Manager Guides release roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap). 
 
-### Known Issues {#known-issues-25821}
+### Known Issues {#known-issues-25892}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-25821}
+### Deprecated Features and APIs {#deprecated-25892}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-25821}
+### Security Fixes {#security-25892}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 19 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-25821}
+### Embedded Technologies {#embedded-tech-25892}
 
 |Technology|Version|Link|
 |---|---|---|
