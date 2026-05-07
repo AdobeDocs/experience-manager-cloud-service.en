@@ -14,7 +14,7 @@ To manage and edit programs, start at the [**My Programs** console](/help/implem
 From the **Program Overview**, users with the requisite permissions can edit [production programs created in your organization](creating-production-programs.md) and [sandbox programs created in your organization](creating-sandbox-programs.md). By editing a program, you can do the following:
 
 * Add Sites solution to an existing program with Assets and conversely.
-* Remove Sites or Assets from an existing program with both Sites and Assets.
+* Remove Sites or Assets from an existing program that has both Sites and Assets.
 * Add an unused solution entitlement to an existing program or create a new program.
 * Mark production programs for deletion.
 * Delete sandbox programs.
@@ -36,11 +36,11 @@ Anytime a program is edited, including adding or removing a solution or add-on, 
 1. On the **My Programs** page, click the program that you want to edit.
 1. Near the upper-left corner of the page, click the program's name, then select **Edit program**.
 
-   ![Edit program option on the Program's drop-down menu](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/edit-program.png)
+   ![Edit program option on the Program's drop-down menu](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/edit-program.png)
 
 1. In the **Edit Program** dialog box, use the tabs to set the various options you want.
 
-   ![General tab](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/edit-program-dialog-box.png)
+   ![General tab](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/edit-program-dialog-box.png)
 
    The options available for editing the program are the same options for program creation.
    * You can configure whether a publish tier is provisioned for new environments (Beta). See [Flexible Publish Tier (Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier).
