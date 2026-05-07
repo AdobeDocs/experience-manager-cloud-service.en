@@ -10,7 +10,9 @@ exl-id: 2b90b2b2-cdd0-4f1e-890f-2f58f578face
 This article covers two separate ways to use Anthropic Claude with AEM:
 
 - Manually configure one or more of AEM’s MCP servers in Claude (the servers described at [Using MCP with AEM as a Cloud Service — MCP servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#mcp-servers)).
-- Install the Adobe Experience Manager Connector from Anthropic’s connector marketplace. It includes a subset of the tools available in AEM's MCP servers.
+- Install the Adobe Experience Manager Connector from Anthropic’s connector marketplace. It currently has feature parity with Content MCP Server and will expose a growing subset of tools available in AEM's MCP servers.
+
+
 
 ## Manually configure AEM’s MCP servers in Claude {#manual-configure-aems-mcp-servers-in-claude}
 
