@@ -213,11 +213,11 @@ Use this prompt to validate entire migrated pages for full-page visual fidelity 
   1. Migrate a page.
   1. Apply a design.
   1. Run a block critique on key blocks
-  1. Run ap age critique for full validation.
+  1. Run a page critique for full validation.
 
 ### Figma Block Migration {#figma-block-migration}
 
-Use this prompt to migrating a block from Figma design to Edge Delivery Services.
+Use this prompt to migrate a block from Figma design to Edge Delivery Services.
 
 Note that you must set up your Figma details in [the Experience Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md) to use this prompt.
 
@@ -247,6 +247,64 @@ Note that you must set up your Figma details in [the Experience Modernization Co
   * All styles are extracted as CSS custom properties (design tokens) before any CSS is written.
   * This ensures the migrated block stays consistent with your design system.
 * The prompt requires the Figma URL (with `fileKey` and optional `node-id`) or a Figma file key directly as input.
+
+### Figma use cases for Experience Modernization {#figma-use-cases}
+
+These workflows build on [Figma Block Migration](#figma-block-migration), which migrates one block at a time from Figma. Use the patterns below when Figma drives a redesigned block library, when the live site remains the content source, or when you are creating a new page from a Figma frame rather than from an existing URL.
+
+#### Redesign migration using Figma-derived blocks {#figma-redesign-migration}
+
+Use this when an existing website is being migrated into a redesigned experience.
+
+In this workflow, you first create the target block collection from Figma. The site migration then runs against the **live source website** and maps source content into the blocks that were created from Figma.
+
+* **Figma** is the target design and block-library source.
+* **The live website** remains the source of content.
+
+##### Example prompts {#example-figma-redesign}
+
+1. Create the block collection from Figma:
+
+   * "Create the EDS block collection from these Figma components: `https://figma.com/design/{fileKey}?node-id={nodeId}`"
+
+1. Migrate source content into those blocks:
+
+   * "Migrate these pages and map the content to the Figma-derived block collection: URL1, URL2, URL3"
+
+##### What to know {#wtk-figma-redesign}
+
+* Figma is used first to establish the redesigned block set.
+* Site migration then maps real website content into that block set.
+* **Content validation** is done against the source website.
+* **Visual validation** is done against the Figma-derived block collection and design system.
+* New block variants should be created only when existing Figma-derived blocks cannot represent the source content.
+
+##### Recommended workflow {#figma-redesign-workflow}
+
+1. Identify the Figma components needed for the redesigned site.
+1. Migrate those components into Edge Delivery Services blocks or variants.
+1. Review the generated block collection and design tokens.
+1. Run site migration on representative source pages.
+1. Map source content into the Figma-derived blocks.
+1. Validate content against the source website.
+1. Validate visual output against the target Figma design.
+1. Refine blocks or mappings, then scale to more pages.
+
+#### Create a new page from Figma {#figma-new-page-from-figma}
+
+Use this when the page does not already exist on a source website and a Figma page or frame should drive creation of a new Edge Delivery Services page.
+
+##### Example prompts {#example-figma-new-page}
+
+* "Migrate this Figma page to EDS: `https://figma.com/design/{fileKey}?node-id={nodeId}`"
+
+##### What to know {#wtk-figma-new-page}
+
+* Works best with a **specific Figma frame or page**, not an entire file.
+* The frame should be organized into **clear page sections**.
+* Sections are mapped to existing blocks, default content, or new variants.
+* Text and assets come from Figma.
+* Dynamic features such as search, calculators, personalization, or store locators may require **separate block development** beyond what the Figma migration produces.
 
 ### Navigation Setup {#navigation-setup}
 
