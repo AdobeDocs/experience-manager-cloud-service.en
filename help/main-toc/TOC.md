@@ -257,6 +257,7 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.04.30 Release Notes](/help/release-notes/universal-editor/2026/2026-04-30.md)
       + [2026.04.09 Release Notes](/help/release-notes/universal-editor/2026/2026-04-09.md)
       + [2026.04.02 Release Notes](/help/release-notes/universal-editor/2026/2026-04-02.md)
       + [2026.03.26 Release Notes](/help/release-notes/universal-editor/2026/2026-03-26.md)
@@ -1570,6 +1571,7 @@ user-guide-title: AEM as a Cloud Service
     + [Content Copy](/help/implementing/developing/tools/content-copy.md)
     + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
     + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
+    + [Web Console](/help/implementing/developing/tools/web-console.md)
     + [Using CRXDE Lite](/help/implementing/developing/tools/crxde.md)
     + [Package Manager](/help/implementing/developing/tools/package-manager.md)
     + [The Link Externalizer](/help/implementing/developing/tools/externalizer.md)
@@ -1636,6 +1638,7 @@ user-guide-title: AEM as a Cloud Service
     + [Validating and Debugging using Dispatcher Tools Legacy](/help/implementing/dispatcher/validation-debug-legacy.md)
     + [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
     + [Configuring Traffic at the CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+    + [CDN Configuration Snippets for Common Scenarios](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)
     + [Pipeline-free URL Redirects](/help/implementing/dispatcher/pipeline-free-url-redirects.md)
     + [Edge Side Includes](/help/implementing/dispatcher/edge-side-includes.md)
     + [Configuring CDN Credentials and Authentication](/help/implementing/dispatcher/cdn-credentials-authentication.md)
