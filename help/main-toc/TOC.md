@@ -658,7 +658,7 @@ user-guide-title: AEM as a Cloud Service
     + [Content Advisor to access AEM content in Adobe and non-Adobe applications](/help/assets/integrate-adobe-non-adobe-applications.md)
     + [Content Advisor properties](/help/assets/content-advisor-properties.md)
     + [Content Advisor customizations](/help/assets/content-advisor-customization.md)
-    + [Integration for Dynamic Media with OpenAPI capabilities](/help/assets/integrate-dynamic-media-open-api.md)
+    + [Integration for Dynamic Media with OpenAPI capabilities](/help/assets/integrate-dynamic-media-openapi.md)
   + Content Fragments {#content-fragments}
     + [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
     + [Headless Delivery with Content Fragments and GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
