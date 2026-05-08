@@ -46,8 +46,8 @@ AEM exposes MCP servers as HTTP endpoints. The endpoints listed below are relati
 
 | **MCP Server** | **Endpoint**  | **Description**                                                                                                                                                                                                                                                                                                                                     |
 |---|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Content**  | `/content`  | Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing.                                                                                                                                                                                                                                |
-| **Content (read-only)** | `/content-readonly`  | Read-only content operations (Get, List/Search) for pages and content fragments.                                                                                                                                                                                                                                                                    |
+| **Content**  | `/content`  | Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing and assets search.                                                                          <br>Send an email to `aemagentsteam@adobe.com` to get the **assets search** enabled for you. Include the organization name along with the use case in the email.                                                                                                                                                    |
+| **Content (read-only)** | `/content-readonly`  | Read-only content operations (Get, List/Search) for pages and content fragments, plus assets search.                                                                             <br>Send an email to `aemagentsteam@adobe.com` to get the **assets search** enabled for you. Include the organization name along with the use case in the email.                                                                                                                                                                                      |
 | **Cloud Manager** | `/cloudmanager`  | Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered.                                                                                                                                                                                                                            |
 | **Experience Governance** | `/experience-governance`  | Evaluate content (text, images, pages) against brand governance rules, and list brand configurations and checks.<br/>Customers must signup for the [agents trial or have a paid license](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en) in order to access the Experience Governance MCP.|
 
@@ -175,6 +175,12 @@ Some representative scenarios include:
 
 * **Asset importing**
   * Import assets with status check
+
+* **Assets Search**
+
+   >[!NOTE]
+   >
+   >Send an email to `aemagentsteam@adobe.com` to get the asset search enabled for you. Include the organization name along with the use case in the email.
 
 ### Example Workflows {#example-workflows}
 
