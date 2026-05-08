@@ -12,6 +12,8 @@ index: false
 
 The Figma to Visual Content Fragments Job of the Experience Production Agent automates the process of recreating approved designs in HTML for Adobe Experience Manager (AEM) as a Cloud Service and Edge Delivery Services. 
 
+## Overview {#overview}
+
 Content Fragments contain only structured content, without formatting. So AEM allows you to directly preview, and deliver, your Content Fragments using a visual layout based on an HTML template.
 
 While defining style and layout information in hand-coded HTML templates is entirely feasible, it is a highly technical process that must be performed by web developers.
@@ -27,3 +29,31 @@ While defining style and layout information in hand-coded HTML templates is enti
 
 To streamline this process for [Visual Content Fragments](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md), the entire process of importing designs from Figma into AEM is available.
 -->
+
+## Prerequisites {#prerequisites}
+
+Before you start:
+
+<!-- where in AEM is the access token stored? -->
+
+* The Figma user needs to create an access token in Figma and store it in the AEM service.
+
+## To upload a design {#to-upload-a-design}
+
+The flow is as follows: 
+
+1. The designer (Figma user) creates the design in Figma.
+1. The design is approved.
+1. The Figma user sends a Figma share link to the AEM user.
+1. The AEM user can then use the AI Assistant to interact with the Figma to Visual Content Fragments Job and automatically recreate the approved design in AEM. 
+   * The agentic creation process includes reasoning capabilities that allow existing content models or fragments to be reused when already available.
+1. The agent generates a content model and fragment for the content, and an HTML file for layout and design. 
+
+## Sample Prompts {#sample-prompts}
+
+Sample prompts include:
+
+* To import from Figma:
+  * Import from Figma {*Figma_share_URL*} to AEM
+* To select the AEM program from agent suggestions:
+  * Import from Figma {*Figma_share_URL*} to {*AEMaaCS_program/environment_link*}
