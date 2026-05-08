@@ -8,6 +8,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 3aaa615f-d3bf-4d1a-9dff-b6e271f0e9a6
 ---
+
 # Web Console {#web-console}
 
 Learn how to use the Adobe Experience Manager's (AEM) Web Console to manage OSGi settings and bundles for local development.
@@ -16,21 +17,22 @@ Learn how to use the Adobe Experience Manager's (AEM) Web Console to manage OSGi
 
 AEM as a Cloud Service treats [configuration and code as immutable at run time.](/help/release-notes/aem-cloud-changes.md#apps-libs-immutable) This means that all configurations must be deployed as you would code in a production environment. For production instances, this ensures that quality gates are passed and offers a level of stability and clarity of your current environment.
 
-For development purposes, however, OSGi configuration updates and bundles changes are often needed to test ad-hoc development changes. As part of the AEM as a Cloud Service SDK, the Web Console allows this. See the document [Configuring OSGi for Adobe Experience Manager as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) for more information about OSGi configurations for AEM as a Cloud Service.
+However, ad-hoc [OSGi configuration](/help/implementing/deploying/configuring-osgi.md) updates and bundle changes are often needed to test local developments. As part of [the AEM as a Cloud Service SDK,](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) the Web Console enables such real-time updates.
 
-The console can be accessed from `http://<host>:<port>/system/console`
+With the AEM as a Cloud Service running locally, the console can be accessed from `http://<host>:<port>/system/console`.
 
-The Web Console offers a selection of screens for maintaining the OSGi bundles, including:
+The Web Console offers a selection of screens and options for maintaining the OSGi bundles, including:
 
-* [Configuration](#configuration): used for configuring the OSGi bundles, and is therefore the underlying mechanism for configuring AEM system parameters
-* [Bundles](#bundles): used for installing bundles
-* [Components](#components): used for controlling the status of components required for AEM
+* [Configuration](#configuration): For configuring the OSGi bundles, and is therefore the underlying mechanism for configuring AEM system parameters
+* [Bundles](#bundles): For installing bundles
+* [Components](#components): For controlling the status of components required for AEM
+* [Generating OSGi Configurations](#generating-osgi-configurations): For automatically generating OSGi configurations as JSON
 
-Any changes made are immediately applied to the running development system. No restart is required.
+Any changes made are immediately applied to the running SDK. No restart is required.
 
-In the Web Console, any descriptions that mention default settings relate to Sling defaults. AEM has its own defaults and so the defaults set might differ from those documented on the console.
+In the Web Console, any descriptions that mention default settings relate to Sling defaults. AEM has its own defaults and so the defaults set might differ from those documented by the console.
 
-The Web Console in Adobe Experience Manager (AEM) is based on the [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix is a community effort to implement the OSGi R4 Service Platform, which includes the OSGi framework and standard services.
+The Web Console in Adobe Experience Manager (AEM) is based on the [Apache Felix Web Management Console.](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html) Apache Felix is a community effort to implement the OSGi R4 Service Platform, which includes the OSGi framework and standard services.
 
 >[!NOTE]
 >
@@ -49,14 +51,14 @@ The **Configuration** screen is used for configuring OSGi bundles and is therefo
 
 A list of configurations is shown:
 
-![configMgr](assets/config-mgr.png)
+![The Configuration screen](assets/configuration.png)
 
-There are two types of configurations available from the drop-down lists on this screen:
+There are two types of configurations available from the list on this screen:
 
 * **Configurations** allow you to update the existing configurations. These have a persistent identity (PID) and can be either:
     * Standard and integral to AEM - These are required, if deleted the values return to the default settings.
     * Instances created from factory configurations - These instances are created by the user, deletion removes the instance.
-* **Factory Configurations** allow you to create an instance of the required functionality object. This is allocated to a Persistent Identity and then listed in the Configurations drop-down list.
+* **Factory Configurations** allow you to create an instance of the required functionality object. This is allocated to a Persistent Identity and then listed in the Configurations list.
 
 Selecting any entry from the list displays the parameters related to that configuration:
 
@@ -76,13 +78,13 @@ You can then update the parameters as required and:
 
 >[!TIP]
 >
->See [OSGi Configuration with the Web Console](/help/implementing/deploying/configuring-osgi.md) for further details.
+>Please see [Configuring OSGi for Adobe Experience Manager as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) for further details on OSGi configurations.
 
 ## Bundles {#bundles}
 
 The **Bundles** screen is used to install OSGi bundles required for AEM. The screen is accessed by either of the following methods:
 
-* The drop-down menu: **OSGi -&gt; Bundels**
+* The drop-down menu: **OSGi -&gt; Bundles**
 * URL: `http://<host>:<port>/system/console/bundles`
 
 A list of bundles is shown:
@@ -111,25 +113,24 @@ The list specifies the status of the bundle. clicking the name of a specific bun
 The **Components** screen allows you to enable and disable components. It can be accessed by either:
 
 * The drop-down menu: **Main -&gt; Components**
-
 * URL: `http://<host>:<port>/system/console/components`
 
-A list of components is shown. Various icons are available to enable you to enable, disable or (where appropriate) open configuration details for a specific component.
+A list of components is shown. Icons are available for each row to enable you to enable, disable or (where appropriate) open configuration details for a specific component.
 
 ![Components](assets/components.png)
 
 Clicking the name of a particular component displays further information on its status. Here you can also enable, disable, or reload the component.
 
-![Component detail](assets/component-detail.png)
+![Component detail](assets/component-details.png)
 
 >[!NOTE]
 >
->Enabling, or disabling, a component only applies until SDK is restarted.
+>Enabling or disabling a component only applies until SDK is restarted.
 >
 >The start state is defined within the component descriptor, which is generated during development and stored in the bundle at bundle creation time.
 
 ## Generating OSGi Configurations {#generating-osgi-configs}
 
-The Web Console can be used configure OSGi components, and export OSGi configurations as JSON. This is useful for configuring AEM-provided OSGi components whose OSGi properties and their value formats may not be well understood by the developer defining the OSGi configurations in the AEM project.
+The Web Console can be used to configure OSGi components and export OSGi configurations as JSON. This is useful for configuring AEM-provided OSGi components whose OSGi properties and value formats you may not be familiar with as you are defining OSGi configurations in your AEM project.
 
 Please see the document [Configuring OSGi for Adobe Experience Manager as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-web-console) for more information.
