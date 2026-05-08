@@ -239,7 +239,7 @@ Note that you must set up your Figma details in [the Experience Modernization Co
   1. **Mapping to existing blocks** — The agent identifies the closest matching block in your project's block library and creates a custom variant.
   1. **CSS generation** — The agent writes styles that reference the extracted CSS custom properties, ensuring design consistency.
   1. **Asset download** — The agent saves images and icons from Figma to the hosted environment's workspace.
-  1. **Edge Delivery Services content generation** — The agent creates the markdown file following EDS block structure
+  1. **Edge Delivery Services content generation** — The agent creates the markdown file following Edge Delivery Services block structure
   1. **Output validation** — The agent previews the result and performs visual comparison against the original Figma design.
 * The skill first reads metadata (step 1) to understand structure, and then extracts detailed design context (steps 2-5).
   * This phased approach prevents issues with large or complex Figma files.
@@ -248,30 +248,26 @@ Note that you must set up your Figma details in [the Experience Modernization Co
   * This ensures the migrated block stays consistent with your design system.
 * The prompt requires the Figma URL (with `fileKey` and optional `node-id`) or a Figma file key directly as input.
 
-### Figma use cases for Experience Modernization {#figma-use-cases}
+### Redesign Migration Using Figma-Derived Blocks {#figma-redesign-migration}
 
-These workflows build on [Figma Block Migration](#figma-block-migration), which migrates one block at a time from Figma. Use the patterns below when Figma drives a redesigned block library, when the live site remains the content source, or when you are creating a new page from a Figma frame rather than from an existing URL.
+Use this prompt when an existing website is being migrated into a redesigned experience.
 
-#### Redesign migration using Figma-derived blocks {#figma-redesign-migration}
-
-Use this when an existing website is being migrated into a redesigned experience.
-
-In this workflow, you first create the target block collection from Figma. The site migration then runs against the **live source website** and maps source content into the blocks that were created from Figma.
+In this workflow, you first create the target block collection from Figma. The site migration then runs against the live source website and maps source content into the blocks that were created from Figma.
 
 * **Figma** is the target design and block-library source.
 * **The live website** remains the source of content.
 
-##### Example prompts {#example-figma-redesign}
+#### Example Prompts {#example-figma-redesign}
 
 1. Create the block collection from Figma:
 
-   * "Create the EDS block collection from these Figma components: `https://figma.com/design/{fileKey}?node-id={nodeId}`"
+   * "Create the Edge Delivery Services block collection from these Figma components: `https://figma.com/design/{fileKey}?node-id={nodeId}`"
 
 1. Migrate source content into those blocks:
 
    * "Migrate these pages and map the content to the Figma-derived block collection: URL1, URL2, URL3"
 
-##### What to know {#wtk-figma-redesign}
+#### What to Know {#wtk-figma-redesign}
 
 * Figma is used first to establish the redesigned block set.
 * Site migration then maps real website content into that block set.
@@ -279,7 +275,7 @@ In this workflow, you first create the target block collection from Figma. The s
 * **Visual validation** is done against the Figma-derived block collection and design system.
 * New block variants should be created only when existing Figma-derived blocks cannot represent the source content.
 
-##### Recommended workflow {#figma-redesign-workflow}
+#### Recommended workflow {#figma-redesign-workflow}
 
 1. Identify the Figma components needed for the redesigned site.
 1. Migrate those components into Edge Delivery Services blocks or variants.
@@ -290,17 +286,17 @@ In this workflow, you first create the target block collection from Figma. The s
 1. Validate visual output against the target Figma design.
 1. Refine blocks or mappings, then scale to more pages.
 
-#### Create a new page from Figma {#figma-new-page-from-figma}
+### Create a New Page from Figma {#figma-new-page-from-figma}
 
-Use this when the page does not already exist on a source website and a Figma page or frame should drive creation of a new Edge Delivery Services page.
+Use this prompt when the page does not already exist on a source website and a Figma page or frame should drive creation of a new Edge Delivery Services page.
 
-##### Example prompts {#example-figma-new-page}
+#### Example Prompts {#example-figma-new-page}
 
-* "Migrate this Figma page to EDS: `https://figma.com/design/{fileKey}?node-id={nodeId}`"
+* "Migrate this Figma page to Edge Delivery Services: `https://figma.com/design/{fileKey}?node-id={nodeId}`"
 
-##### What to know {#wtk-figma-new-page}
+#### What to know {#wtk-figma-new-page}
 
-* Works best with a **specific Figma frame or page**, not an entire file.
+* This prompt works best with a **specific Figma frame or page**, not an entire file.
 * The frame should be organized into **clear page sections**.
 * Sections are mapped to existing blocks, default content, or new variants.
 * Text and assets come from Figma.
