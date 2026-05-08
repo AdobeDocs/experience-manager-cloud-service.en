@@ -22,6 +22,12 @@ After creating your templates you can then:
 >
 >See [Visual Content Fragments](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md) for uploading, assigning and using your template in AEM.
 
+<!--
+>[!NOTE]
+>
+>Use the [Figma to Visual Content Fragments Job](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) to automate loading an HTML design. 
+-->
+
 ## What you will learn {#what-you-will-learn}
 
 After providing a (very quick) introduction to: 
