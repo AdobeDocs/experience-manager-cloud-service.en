@@ -115,7 +115,7 @@ CTA Text (ctaText) - Textfield
 CTA Link (ctaLink) - Pathfield
 ```
 
-The agent echoes the field specification for confirmation, then generates all component files. Supported patterns include multifield with composite nested items, conditional show/hide logic, Core Component extension via Sling Resource Merger, and JUnit 5 tests using AEM Mocks.
+The agent echoes the field specification for confirmation, then generates all component files. Supported patterns include multifield with composite nested items, conditional show/hide logic, Core Component extension via Sling Resource Merger, and JUnit 5 tests using AEM Mocks. The design can come from various sources, including a text description, an image, or a Figma design url using Figma's MCP server.
 
 Learn more by following the [Component development using AEM Agent Skills tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development).
 
