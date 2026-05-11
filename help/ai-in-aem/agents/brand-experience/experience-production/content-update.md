@@ -27,9 +27,12 @@ You can access the content update skill from:
 
 You can access the job in AEM via the AI Assistant. 
 
-Open the AI Assistant from [`experience.adobe.com`,](https://experience.adobe.com) then start interacting by specifying your prompt in natural language using the `Ask AI Assistant anything` field:
+Open the [AI Assistant](/help/implementing/cloud-manager/ai-assistant-in-aem.md#ai-use) from the top-right toolbar to start a conversation. 
 
-![Content Update Job](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-ai-assistant-example.png)
+<!-- add image once in repo - via a different PR -->
+<!--
+![AI Assistant icon on the toolbar](/help/ai-in-aem/agents/brand-experience/experience-production/assets/ai-assistant-icon.png)
+-->
 
 ### Configuring the Publish URL {#configuring-the-publish-url}
 
