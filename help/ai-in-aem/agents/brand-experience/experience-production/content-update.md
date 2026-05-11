@@ -29,11 +29,13 @@ You can access the content update skill from:
 
 You can access the job in AEM via the AI Assistant. 
 
-Open the AI Assistant from [`experience.adobe.com`,](https://experience.adobe.com) then start interacting by specifying your prompt in natural language using the `Ask AI Assistant anything` field:
+Open the [AI Assistant](/help/implementing/cloud-manager/ai-assistant-in-aem.md#ai-use) from the top-right toolbar to start a conversation. 
 
-![Content Update Job](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-ai-assistant-example.png)
+![AI Assistant icon on the toolbar](/help/ai-in-aem/agents/brand-experience/experience-production/assets/ai-assistant-icon.png)
 
 ### Configuring the Publish URL {#configuring-the-publish-url}
+
+To instruct the agent where to apply updates you must supply a page link. You may provide either an author URL or a publish URL. 
 
 To use a publish (public facing) URL a one-time configuration must be made:
 
@@ -55,10 +57,6 @@ For example:
 
 To initiate content updates you can give a wide range of natural language prompts. You need to specify the public facing (publish) URL, or the author environment URL, of the page you want to update. Some, but not all, of the verbs that are supported; replace, update, remove, change, revised, modify, adjust, delete. 
 
->[!NOTE]
->
->File uploads can be used when interacting using [Jira](#jira), but are not supported with AI Assistant.
-
 ### Sample Prompts {#sample-prompts}
 
 Sample prompts include:
@@ -67,6 +65,18 @@ Sample prompts include:
 * on `<your-author-env-URL>` replace the image from "holdingcup.png" to "stairhead.png"
 * on `<your-publish-URL>` change "Take our Coffee Quiz" button to a more engaging version"
 * on `<your-author-env-URL>` remove the section "Rewards unclaimed is a Gift missed!"
+
+### Orchestration with the Brand Governance Agent  {#orchestration-with-the-brand-governance-agent}
+
+If the organization has imported their brand policy the Content Update job will use this policy during agentic content updates (see the [Overview](#overview) video).
+
+For a *prescriptive* prompt such as:
+
+* “on <your-publish-URL> update “Your perfect coffee is four questions away!” to “Your coffee, your way!”
+
+The Content Update job orchestrates with the [Brand Governance agent](/help/ai-in-aem/agents/brand-experience/overview.md) and notifies the user if the provided copy is on-brand or not.
+
+![Content Update skill - orchestration with the Brand Governance Agent](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-brand-experience.png)
 
 ## Jira {#jira}
 
@@ -119,12 +129,6 @@ In the case of a `process` command to trigger updates, the responses might follo
 ## Activation {#activation}
 
 You can explore AEM Agents through the [Playground](https://www.aem.live/developer/aem-playground), or connect with your CSM or TAM to discuss access via the Agentic SKU.
-
-## Limitations {#limitations}
-
-Please be aware of the following limitations:
-
-* File uploads can be used when interacting with [Jira](#jira), but are not supported when interacting with the [AI Assistant.](#ai-assistant)
 
 ## Additional Resources {#additional-resources}
 
