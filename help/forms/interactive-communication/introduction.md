@@ -39,17 +39,19 @@ Interactive Communication (IC) Editor is designed for efficiency, usability, and
 
 | **Feature**                          | **Key Capabilities**                                                                 |
 |--------------------------------------|---------------------------------------------------------------------------------------|
-| **WYSIWYG Editor**         | - Pixel perfection for accurate rendering <br> - Font styling controls <br> - Flexible layout for professional design |
-| **Layout Control**                   | - Positioning (absolute and flowed) <br> - Easy drag-and-drop functionality <br> - Use master pages to define consistent layouts          |
-| **Components** | - Access to newly introduced components, including tables, charts, and barcodes <br> - Ready-to-use components for faster design |
-| **Data Binding**                     | - Directly link components to data sources <br> - Automatically prefill fields for personalized communication |
-| **Rule Editor** | - Configure dynamic validations <br> - Add calculations and conditional logic for interactivity |
-| **Fragment Library**               | - Create modular building blocks (headers, footers, disclaimers, icons) <br> - Maintain consistency across multiple communications |
-| **Templates** | - Ensure uniform branding and structure across communications |
+| **WYSIWYG Editor**         | - Pixel perfection for accurate rendering <br> - [Font styling controls](/help/forms/interactive-communication/add-custom-fonts.md) <br> - Flexible layout for professional design |
+| [**Layout Control**](/help/forms/interactive-communication/handle-content-overflow.md)                   | - Positioning (absolute and flowed) <br> - Easy drag-and-drop functionality <br> - Use master pages to define consistent layouts          |
+| **Components** | - Access to newly introduced components, including [tables](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md), charts, and [barcodes](/help/forms/interactive-communication/barcode.md) <br> - Ready-to-use components for faster design |
+| [**Data Binding**](/help/forms/interactive-communication/configure-data-binding.md)                     | - Directly link components to data sources <br> - Automatically prefill fields for personalized communication |
+| [**Rule Editor**](/help/forms/interactive-communication/use-the-rule-editor.md) | - Configure dynamic validations <br> - Add calculations and conditional logic for interactivity |
+| [**Fragment Library**](/help/forms/interactive-communication/create-interactive-communication-fragment.md)               | - Create modular building blocks (headers, footers, disclaimers, icons) <br> - Maintain consistency across multiple communications |
+| [**Templates**](/help/forms/interactive-communication/create-interactive-communication-template.md) | - Ensure uniform branding and structure across communications |
 
 ## Onboarding 
 
 The Interactive Communication (IC) capability is available through the Early Access (EA) program. To request access, email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official email ID with your Environment ID and Organization ID. Once Adobe confirms your enrollment, follow the [Onboard to the Service](/help/forms/setup-forms-cloud-service.md) documentation to enable Interactive Communication in your AEM Forms environment.
+
+https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
 
 ## Next Steps
 

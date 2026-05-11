@@ -53,6 +53,10 @@ Generative AI is used throughout AEM:
 
   For digital Assets you can use AI to automatically assign descriptive tags, instead of relying on manual input. These AI-generated tags enhance metadata quality, making the assets easier to search, categorize, and recommend. This approach not only improves efficiency by eliminating manual tagging, but also ensures consistency and scalability across large volumes of digital content.
 
+* [AI Translation Integration](/help/sites-cloud/administering/translation/ai-translation-integration.md)
+
+  AI translation integration lets you use a large language model (LLM) as a translation service for content you author in Adobe Experience Manager. You connect AEM to your LLM provider (starting with Microsoft Azure OpenAI), reuse the same translation workflows as for other connectors, and optionally upload translation style guides so AEM can generate rules that keep tone, terminology, and brand language consistent across locales.
+   
 <!-- 
   * [AI Assistant in Adobe Experience Manager](/help/implementing/cloud-manager/aem-ai-assistant.md)
 -->
