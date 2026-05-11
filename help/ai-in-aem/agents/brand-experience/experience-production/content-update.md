@@ -72,7 +72,7 @@ If the organization has imported their brand policy the Content Update job will 
 
 For a *prescriptive* prompt such as:
 
-* “on <your-publish-URL> update “Your perfect coffee is four questions away!” to “Your coffee, your way!”
+* `on <your-publish-URL> update “Your perfect coffee is four questions away!” to “Your coffee, your way!”`
 
 The Content Update job orchestrates with the [Brand Governance agent](/help/ai-in-aem/agents/brand-experience/overview.md) and notifies the user if the provided copy is on-brand or not.
 
