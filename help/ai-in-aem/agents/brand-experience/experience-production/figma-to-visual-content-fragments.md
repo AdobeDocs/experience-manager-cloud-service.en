@@ -49,7 +49,7 @@ The flow is as follows:
    * When necessary, the agent will ask for more information, such as the AEM environment to use.
    * The agentic creation process includes reasoning capabilities that allow existing content models or fragments to be reused when already available.
 1. The agent generates a Content Fragment and a Content Fragment Model for the content, and an HTML template for the layout and design. 
-   * The agent provides direct links to the fragment, the model and the template.
+   * The agent provides a direct link to the fragment, from where you can access the model and the template.
 
 ## Sample Prompts {#sample-prompts}
 
