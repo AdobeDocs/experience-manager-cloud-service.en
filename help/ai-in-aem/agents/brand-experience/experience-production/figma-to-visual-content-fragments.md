@@ -45,9 +45,11 @@ The flow is as follows:
 1. The designer (Figma user) creates the design in Figma.
 1. The design is approved.
 1. The Figma user sends a Figma share link to the AEM user.
-1. The AEM user can then use the AI Assistant to interact with the Figma to Visual Content Fragments Job and automatically recreate the approved design in AEM. 
+1. Starting with an initial [prompt](#sample-prompts) the AEM user can then use the AI Assistant to interact with the Figma to Visual Content Fragments Job and automatically recreate the approved design in AEM. 
+   * When necessary, the agent will ask for more information, such as the AEM environment to use.
    * The agentic creation process includes reasoning capabilities that allow existing content models or fragments to be reused when already available.
-1. The agent generates a content model and fragment for the content, and an HTML file for layout and design. 
+1. The agent generates a Content Fragment and a Content Fragment Model for the content, and an HTML template for the layout and design. 
+   * The agent provides direct links to the fragment, the model and the template.
 
 ## Sample Prompts {#sample-prompts}
 
