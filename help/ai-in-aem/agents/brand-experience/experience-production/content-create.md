@@ -23,6 +23,8 @@ You can access the Content Create job from:
 
 * [The AI Assistant](#access-ai-assistant)
 
+>[!VIDEO](https://video.tv.adobe.com/v/3488436?learn=on)
+
 To use the Create Content Job:
 
 * You provide:
