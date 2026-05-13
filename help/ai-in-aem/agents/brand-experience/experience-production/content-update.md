@@ -14,13 +14,13 @@ The content update job of the [Experience Production Agent](/help/ai-in-aem/agen
 
 The content update job updates existing content, including content fragments, pages, forms and assets. The job can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description, and when used with Jira PDFs and screenshots can provide input too.
 
-The content update job transforms the details that you provide, either through natural language or visuals, into content updates on your page. You supply the URL of a page that needs updating, together with details of what needs updating, and the agent skill completes your task. When used with AEM as a Cloud Service, the job creates a new [launch](/help/sites-cloud/authoring/launches/overview.md) so you can review the updates before applying. When used with Document authoring, the job creates a new [version](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
+The content update job transforms the details that you provide, either through natural language or visuals, into content updates on your page. You supply the URL of a page that needs updating, together with details of what needs updating, and the agent job completes your task. When used with AEM as a Cloud Service, the job creates a new [launch](/help/sites-cloud/authoring/launches/overview.md) so you can review the updates before applying. When used with Document authoring, the job creates a new [version](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3486418?learn=on)
 
 ## Capabilities {#capabilities}
 
-You can access the content update skill from:
+You can access the content update job from:
 
 * [The AI Assistant](#ai-assistant)
 * [Jira](#jira)
@@ -45,13 +45,13 @@ To use a publish (public facing) URL a one-time configuration must be made:
 
 * Configuration:
 
-  1. Invoke the Content Update skill by requesting a content update for the URL.
+  1. Invoke the Content Update job by requesting a content update for the URL.
   1. The assistant will walk you through the configuration, by asking you a number of questions. 
   1. Once complete the publish URL is configured and can be used.
 
 For example:
 
-![Content Update skill - configure publish URL](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-publish-url-configuration.png)
+![Content Update job - configure publish URL](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-publish-url-configuration.png)
 
 ### Prompts {#prompts}
 
@@ -65,6 +65,7 @@ Sample prompts include:
 * on `<your-author-env-URL>` replace the image from "holdingcup.png" to "stairhead.png"
 * on `<your-publish-URL>` change "Take our Coffee Quiz" button to a more engaging version"
 * on `<your-author-env-URL>` remove the section "Rewards unclaimed is a Gift missed!"
+* on `<your-author-env-URL>` update based on the attached
 
 ### Orchestration with the Brand Governance Agent  {#orchestration-with-the-brand-governance-agent}
 
@@ -76,7 +77,13 @@ For a *prescriptive* prompt such as:
 
 The Content Update job orchestrates with the [Brand Governance agent](/help/ai-in-aem/agents/brand-experience/overview.md) and notifies the user if the provided copy is on-brand or not.
 
-![Content Update skill - orchestration with the Brand Governance Agent](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-brand-experience.png)
+![Content Update job - orchestration with the Brand Governance Agent](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-brand-experience.png)
+
+For more abstract prompts such as:
+
+* `on <your-publish-env-URL> change “Take our Coffee Quiz” button to a more engaging version`
+
+During generation the agent will utilize the brand guidelines to ensure that the output is on-brand.
 
 ## Jira {#jira}
 
