@@ -20,8 +20,5 @@ These are the release notes for the 14 May 2026 release of the Universal Editor.
 
 ## What's New {#what-is-new}
 
-* 
-
-## Other Upcoming Improvements {#other-improvements}
-
-* 
+* [The properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) now opens by default.
+* [Extension icons were migrated to Spectrum 2.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/header-menu/)
