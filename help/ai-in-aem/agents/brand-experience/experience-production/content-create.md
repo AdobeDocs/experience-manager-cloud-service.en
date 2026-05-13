@@ -9,7 +9,7 @@ role: User, Admin, Developer
 
 The Content Create job is the part of the [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) that creates new on-brand pages using natural language, a marketing brief, and an AEM template. It accelerates page production for Adobe Experience Manager (AEM) as a Cloud Service and Edge Delivery Services.
 
-<!-- see Limitations too -->
+<!-- see Limitations too and update when appropriate -->
 
 >[!NOTE]
 >
@@ -105,12 +105,6 @@ When generation finishes, the agent provides two links:
 After you choose to edit the page in AEM, it opens in your authoring environment (for example, the [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) or the [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md)).
 
 In the [Universal Editor](#universal-editor-edit-text-with-the-assistant), the AI Assistant is *context aware*: you can select elements on the canvas and work on them with the assistant.
-
-<!--
->[!NOTE]
->
-> Support for additional authoring surfaces will expand over time.
--->
 
 ### Universal Editor - edit text with the Assistant {#universal-editor-edit-text-with-the-assistant}
 
