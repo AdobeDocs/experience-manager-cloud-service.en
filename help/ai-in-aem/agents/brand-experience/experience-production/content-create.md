@@ -27,10 +27,13 @@ You can access the Content Create job from:
 
 To use the Create Content Job:
 
-* You provide:
+* You [provide](#provide-the-prompt-and-brief):
 
-  * a [natural-language prompt](#the-prompt): that describes what to create and where the page should live, 
-  * a [brief](#the-brief); covering goals, audience, topics, target word count, keywords, and similar guidance, 
+  * A natural-language prompt: that describes what to create and where the page should live.
+
+  * A brief:
+
+    * The Content Create job uses a marketing brief or document that describes what the agent should generate. The job accepts a wide range of formats for the brief. Effective briefs often specify goals, audience, topics, target word count, and keywords.
 
 * You then [Submit](#submit) the prompt and brief
 * Next you specifiy an [AEM template](#select-a-template): that defines the required layout
@@ -49,48 +52,27 @@ You can access the job in AEM via the AI Assistant.
 
 Open the [AI Assistant](/help/implementing/cloud-manager/ai-assistant-in-aem.md)  from the top-right toolbar of [`experience.adobe.com`](https://experience.adobe.com). 
 
-## The prompt {#the-prompt}
+## Provide the prompt and brief {#provide-the-prompt-and-brief}
 
 In the AI Assistant you need to:
 
-* use natural language to describe what you want done; for example, creating a new page based on your brief
-* identify where the page will be located, using a path or URL within your website
-* upload the brief relevant to your request
+1. Use natural language to describe what you want done and identifying where the page will be located, using a path or URL within your website. For example, creating a new page based on your brief:
+  
+   * `create a new page based on the attached at https://frescopa.coffee/sustainability/coffee-bean-types`
 
-  * To attach a file:
+     ![Content Create Job - add a prompt](/help/ai-in-aem/agents/brand-experience/experience-production/assets/create-content-example-create-page.png)
 
-    1. Select **+** in the lower-left of the AI Assistant and choose **Attach files**.
-    1. Add your brief file. The prompt area should show the attachment; for example, in the upper-left of the prompt.
+1. Upload the brief relevant to your request. To load the brief:
 
-* submit the prompt using the blue submit icon (blue arrowhead).
+   1. Select **+** in the lower-left of the AI Assistant and choose **Attach files**:
 
-To specify the prompt:
+      ![Content Create Job - load a brief](/help/ai-in-aem/agents/brand-experience/experience-production/assets/create-content-example-load-brief.png)
 
-* `create a new page based on the attached at https://frescopa.coffee/sustainability/coffee-bean-types`
+   1. Add your brief file. The loaded brief will be shown in the top-right of the prompt dialog:
 
-  ![Content Create Job - add a prompt](/help/ai-in-aem/agents/brand-experience/experience-production/assets/create-content-example-create-page.png)
+      ![Content Create Job - loaded brief](/help/ai-in-aem/agents/brand-experience/experience-production/assets/create-content-example-loaded-brief.png)
 
-## The brief {#the-brief}
-
-The Content Create job uses a marketing brief or document that describes what the agent should generate. The job accepts a wide range of formats for the brief. Effective briefs often specify goals, audience, topics, target word count, and keywords.
-
-To load the brief:
-
-![Content Create Job - load a brief](/help/ai-in-aem/agents/brand-experience/experience-production/assets/create-content-example-load-brief.png)
-
-The loaded brief will be shown in the top-right of the prompt dialog:
-
-![Content Create Job - loaded brief](/help/ai-in-aem/agents/brand-experience/experience-production/assets/create-content-example-loaded-brief.png)
-
-<!--
->[!NOTE]
->
-> File upload is part of the Limited Availability program and is only available if you are enrolled in the program.
--->
-
-## Submit {#submit}
-
-When you are ready, submit the prompt and the brief using the blue submit control.
+1. When you are ready, submit the prompt and the brief using the blue submit icon (blue arrowhead).
 
 ## Select a template {#select-a-template}
 
@@ -122,7 +104,7 @@ When generation finishes, the agent provides two links:
 
 After you choose to edit the page in AEM, it opens in your authoring environment (for example, the [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) or the [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md)).
 
-In the Universal Editor, the AI Assistant is *context aware*: you can select elements on the canvas and work on them with the assistant.
+In the [Universal Editor](#universal-editor-edit-text-with-the-assistant), the AI Assistant is *context aware*: you can select elements on the canvas and work on them with the assistant.
 
 <!--
 >[!NOTE]
@@ -130,12 +112,11 @@ In the Universal Editor, the AI Assistant is *context aware*: you can select ele
 > Support for additional authoring surfaces will expand over time.
 -->
 
-<!--
-## Edit text with the Assistant {#edit-text-with-the-assistant}
+### Universal Editor - edit text with the Assistant {#universal-editor-edit-text-with-the-assistant}
 
 To refine copy from the Assistant while authoring:
 
-1. Select the element in the Universal Editor.
+1. Select the element in the [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md).
 1. Open the AI Assistant from the upper-right corner, enter your prompt, and submit.
 
 Example prompts:
@@ -144,7 +125,6 @@ Example prompts:
 * `Update to be more engaging for the 30-40 year old age demographic and avid coffee drinker`
 
 Select **Apply changes** (or equivalent) so updates appear on the page.
--->
 
 ## Activation {#activation}
 
