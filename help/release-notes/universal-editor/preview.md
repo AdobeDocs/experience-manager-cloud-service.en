@@ -20,6 +20,6 @@ These **preview** release notes are provided as a convenience so you know what c
 >
 >The content of the actual release as well as the release date are subject to change.
 
-## Upcoming Improvements {#upcoming-improvements}
+## Upcoming Changes {#upcoming-improvements}
 
-* TBD
+* Minor improvements and fixes
