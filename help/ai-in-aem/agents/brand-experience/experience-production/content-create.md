@@ -36,7 +36,7 @@ To use the Create Content Job:
     * The Content Create job uses a marketing brief or document that describes what the agent should generate. The job accepts a wide range of formats for the brief. Effective briefs often specify goals, audience, topics, target word count, and keywords.
 
 * You then [Submit](#submit) the prompt and brief
-* Next you specifiy an [AEM template](#select-a-template): that defines the required layout
+* Next you specify an [AEM template](#select-a-template): that defines the required layout
 * The job will provide a [plan for you to review](#review-the-plan)
 * You can then [proceed with the generation](#proceed-with-generation), and [further refine in authoring if required](#further-refinement-in-authoring)
 
