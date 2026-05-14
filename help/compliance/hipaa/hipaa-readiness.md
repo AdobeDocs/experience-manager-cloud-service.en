@@ -2,7 +2,7 @@
 title: HIPAA readiness for Adobe Experience Manager as a Cloud Service
 description: Learn about Experience Manager as a Cloud Service support for the HIPAA Regulations, and how to comply when implementing a new AEM as a Cloud Service project.
 feature: Compliance
-role: Admin, Architect, Developer, Leader
+role: Admin, Developer, Leader
 exl-id: 9928811e-3487-430a-9e2f-04959460c95f
 ---
 # HIPAA readiness for Adobe Experience Manager as a Cloud Service {#hipaa-readiness-for-adobe-experience-manager-as-a-cloud-service}
@@ -28,7 +28,7 @@ For Adobe Experience Manager (AEM) as a Cloud Service, Adobe is providing docume
 
 The HIPAA Privacy, Security, and Breach Notification Rules establish important protections for individually identifiable health information known as Protected Health Information (PHI).
 
-Under HIPAA, a covered entity is a healthcare provider, health plan, or a healthcare clearinghouse. A business associate is an entity that provides services to a covered entity that involves access to PHI. The HIPAA Privacy and Security Rules require that a covered entity obtain written assurances from a business associate in the form of a Business Associate Agreement (BAA) requiring the business associate to safeguard the privacy and security of the Covered Entity’s PHI.
+Under HIPAA, a covered entity is a healthcare provider, health plan, or a healthcare clearinghouse. A business associate is an entity that provides services to a covered entity that involves access to PHI. The HIPAA Privacy and Security Rules require that a covered entity obtain written assurances from a business associate in the form of a Business Associate Agreement (BAA) requiring the business associate to safeguard the privacy and security of the Covered Entity's PHI.
 
 ### Providing PHI to Adobe {#providing-phi-to-adobe}
 
