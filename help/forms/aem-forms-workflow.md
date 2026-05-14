@@ -6,7 +6,7 @@ uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
 feature: Adaptive Forms
 role: User, Developer
-hide: yes
+hide: true
 hidefromtoc: yes
 exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
 ---

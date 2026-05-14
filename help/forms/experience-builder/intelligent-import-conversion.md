@@ -1,7 +1,7 @@
 ---
 title: Intelligent import and conversion
 description: Learn how to transform existing documents, PDFs, and images into interactive digital forms using Forms Experience Builder's intelligent import and conversion capabilities.
-hide: yes
+hide: true
 index: false
 hidefromtoc: yes
 role: Admin, Developer

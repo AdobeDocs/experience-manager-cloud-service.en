@@ -1,7 +1,7 @@
 ---
 title: Deploy and configure Forms Experience Builder
 description: Learn how to use the Forms Experience Builder to create and manage forms with progressive disclosure for all user types
-hide: yes
+hide: true
 index: false
 hidefromtoc: yes
 role: Admin, Developer
