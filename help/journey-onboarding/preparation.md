@@ -22,7 +22,7 @@ After reading this document, you should understand
 
 Don't worry if you are not familiar with all the terms used on this page. The terms are explained in the next part of the journey.
 
- <!--
+<!--
   REMOVED VIDEO AS PER CQDOC-23130. VIDEO NEEDS TO BE RECREATED/UPDATED
 ## Video {#video}
 

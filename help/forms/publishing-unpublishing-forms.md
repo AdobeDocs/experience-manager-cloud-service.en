@@ -6,7 +6,7 @@ topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 feature: Adaptive Forms
 role: User
-hide: yes
+hide: true
 hidefromtoc: yes
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
