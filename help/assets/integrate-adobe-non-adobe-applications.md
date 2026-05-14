@@ -195,6 +195,8 @@ The following table illustrates the Content Advisor feature support across Adobe
 | AEM Sites - Content Fragment Editor (in Content Reference field only)              |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      |  &minus;                                        |
 | Adobe Workfront Workflow                     |  &#10003;                                            | &#10003;                                                         | &minus;                                                      |  &#10003;                                        |
 | Adobe Workfront Planning                     |  &#10003;                                            | &#10003;                                                         | &minus;                                                      |  &#10003;                                        |
+| [AEM Assets View](/help/assets/assets-view-introduction.md)                     |  &#10003;                                            | &minus;                                                         | &minus;                                                      | &minus;                                        |
+| [AEM Content Hub](/help/assets/product-overview.md)                     |  &#10003;                                            | &#10003;                                                         | &minus;                                                      |  &minus;                                        |
 
 ## Content Advisor feature support across non-Adobe applications {#content-advisor-feature-support-non-adobe-applications}
 
