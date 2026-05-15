@@ -22,3 +22,7 @@ These are the release notes for the 14 May 2026 release of the Universal Editor.
 
 * [The properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) now opens by default.
 * [Extension icons were migrated to Spectrum 2.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/header-menu/)
+
+## Other Improvements {#other-improvements}
+
+* URLs with spaces and/or special characters now properly percent-encoded when stored by the rich text editor.
