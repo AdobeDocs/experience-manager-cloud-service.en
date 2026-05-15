@@ -2,7 +2,7 @@
 title: Project Documentation Skill
 description: Learn how the Experience Modernization Agent's documentation skill can help you accelerate project handovers.
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 111cc47d-085f-4cf4-81bc-332e6a31bbeb
 ---
 # Project Documentation Skill {#project-documentation}

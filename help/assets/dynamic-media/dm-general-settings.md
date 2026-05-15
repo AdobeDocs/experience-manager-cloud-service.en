@@ -14,7 +14,7 @@ exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
 # Configure Dynamic Media General Settings
 
 <!--
- hide: yes
+ hide: true
 hidefromtoc: yes
 -->
 

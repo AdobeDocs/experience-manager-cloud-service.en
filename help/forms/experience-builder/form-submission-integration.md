@@ -2,7 +2,7 @@
 title: Form submission and integration
 description: Learn how to configure form submissions and integrate Forms Experience Builder forms with external systems, APIs, and business workflows.
 feature: Edge Delivery Services
-hide: yes
+hide: true
 index: false
 hidefromtoc: yes
 role: Admin, Developer

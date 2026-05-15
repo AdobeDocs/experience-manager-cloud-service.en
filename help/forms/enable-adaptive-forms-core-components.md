@@ -7,7 +7,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
-hide: yes
+hide: true
 hidefromtoc: yes
 ---
 # Adaptive Forms Core Components on AEM Forms as a Cloud Service{#enable-headless-adaptive-forms-on-aem-forms-cloud-service}

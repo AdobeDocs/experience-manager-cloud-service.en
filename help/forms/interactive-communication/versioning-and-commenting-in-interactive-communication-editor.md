@@ -4,7 +4,7 @@ description: Versioning and Commenting in Interactive Communication Editor in AE
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: yes
+hide: true
 index: false
 hidefromtoc: yes
 exl-id: ca9917c0-d8bb-4381-afab-7ab888d992e8
