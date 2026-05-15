@@ -3,7 +3,7 @@ title: Create your first Interactive Communication
 description: Design Dynamic, Data-Driven Communications with Ease with AEM Forms Interactive Communications
 feature: Release Information
 role: Admin
-hide: yes
+hide: true
 hidefromtoc: yes
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: c58ea216-7de0-40e1-9493-9ceb472e5ef8
