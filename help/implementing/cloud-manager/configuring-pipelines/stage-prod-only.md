@@ -4,7 +4,6 @@ description: Learn how you can split staging and production deployments using de
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-hide: no
 hidefromtoc: no
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
