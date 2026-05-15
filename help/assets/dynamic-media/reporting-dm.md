@@ -4,7 +4,7 @@ description: Learn how to request an error report for Dynamic Media deliver URLs
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
-hide: yes
+hide: true
 hidefromtoc: yes
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
