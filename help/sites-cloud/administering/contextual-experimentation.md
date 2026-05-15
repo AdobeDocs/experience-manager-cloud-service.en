@@ -1,55 +1,144 @@
 ---
 title: Contextual Experimentation in AEM as a Cloud Service
-description: Learn how to use the experimentation plugin to add experimentation capabilities to your site.
+description: Learn how to use the experimentation rail to add experimentation capabilities to your site.
 feature: Administering
 role: Admin
-badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
 ---
 # Contextual Experimentation in AEM as a Cloud Service {#contextual-experimentation}
 
->[!NOTE]
->Currently, the contextual experimentation feature is available only through the beta program. Please contact either Adobe support or your account manager for access to the beta program.
-
 Experimentation is the practice of testing your site’s design, functionality and code in order to improve performance and make your site more effective and streamlined. This is achieved by changing either content or functionality, comparing the results with a prior version and picking the improvements that have measurable effects.
 
-When done correctly, it is a powerful pattern to improve conversions, engagement and visitor experience. In general, there are a couple of issues to avoid when looking to adopt the practice:
+When done right, it is a powerful pattern to improve conversions, engagement and visitor experience. In general, there are a couple of issues to avoid when looking to adopt the practice:
 
 * **Too little**: most companies are not experimenting enough, and when they do, they experiment with too little traffic to get meaningful results.
-* **Too slow**: many experimentation frameworks slow the site down so much that the potential new conversions can’t make up for the lost traffic and bounces due to slow rendering.
+* **Too slow**: many experimentation frameworks slow the site down so much that the potential new conversions can not make up for the lost traffic and bounces due to slow rendering.
 * **Too complex**: if it takes too much time to set up a new experiment, then fewer experiments will be run.
 
-For sites running on Adobe Experience Manager, there is the "out of the box" **experimentation plugin** that allows developers to add an experimentation capability to their sites. Three things make this approach different from other experimentation frameworks:
+For sites running on Adobe Experience Manager, developers have the option to add a new experimentation capability to their sites. Three things make this approach different from other experimentation frameworks:
 
 * It is easy to set up tests with the tools your authors are already familiar with and no separate login is needed.
 * It is deeply integrated into the AEM delivery system, does not slow down your site and is resilient to changes in code and content.
 * It allows the testing of simple content changes as well as experiments covering design, functionality, and code.
 
-## Before you start {#before-start}
+## Experimentation rail {#experimentation-rail}
 
-The experimentation plug-in is used within the context of [Edge Delivery Services](/help/edge/overview.md) so you will need a Github account, a content repository like SharePoint or Google Drive, and also you will need the [AEM Sidekick](https://www.aem.live/docs/sidekick). See also the [Getting Started – Universal Editor Developer Tutorial page](https://www.aem.live/developer/tutorial) and [Getting Started – Developer Tutorial](https://www.aem.live/developer/tutorial).
+The experimentation rail is your primary way to set up experiments. It can be used with your project either in an [Edge Delivery Services](/help/edge/overview.md) context or in the [Universal Editor](/help/implementing/universal-editor/introduction.md). As such, you will need a Github account, a content repository like SharePoint or Google Drive, and you will also need the [AEM Sidekick](https://www.aem.live/docs/sidekick) plug-in. If you want to use Universal editor you will also need access to an [AEM as a Cloud Service environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). See also the [Getting Started – Universal Editor Developer Tutorial page](https://www.aem.live/developer/tutorial).
 
-After you have everything set up, **please watch this video** titled [Instant experimentation](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html) for a short demonstration on how the experimentation plug-in works.
+>[!WARNING]
+>The experimentation engine is required in order to use the experimentation capability. Please make sure the engine is installed and updated correctly before implementing the steps below. See the following [installation page](https://github.com/adobe/aem-experimentation/tree/v2?tab=readme-ov-file#installation) for more details.
 
-## Frequently used terms {#frequently-used-terms}
+### Setting up experimentation by using AEM Sidekick in Edge Delivery Services
+
+To access the experimentation rail capabilities within your Edge Delivery Services Project you will need the [AEM Sidekick](https://www.aem.live/docs/sidekick) plug-in. To set up the sidekick follow these steps:
+
+1. Add the [AEM sidekick extension](https://chromewebstore.google.com/search/AEM%20Sidekick?hl=en-US&utm_source=ext_sidebar) and pin it in your browser.
+1. Open your project page in preview mode.
+1. On the AEM Sidekick bar, and click the settings icon ![Settings](/help/sites-cloud/administering/assets/settings-1.png) and select **Add this project**.
+1. Click the Experimentation tab to open the experimentation rail.
+
+### Setting up experimentation in Universal editor
+
+Before setting up experiments, keep in mind that you will need to use AEM sites as a content source to be able to author in Universal Editor. If needed, you can convert your existing project to AEM sites as a content source by following the tutorial presented in the [Setup AEM Sites as a Content Source](https://www.aem.live/developer/ue-tutorial) page. When you are ready to set up experiments in Universal Editor, follow these steps:
+
+1. Open your project in Universal Editor and check the **A/B** Icon Extension. In case the icon is not visible, confirm whether you have enabled the feature in the extension manager. If it is not enabled please enable it or request access.
+<!--1. Open your GitHub repository and check if the `plugins/experimention` folder exists. If not, you will need to set up the experimentation engine and MFE first (see the note above).-->
+1. Point your `fstab.yaml` configuration to your project configuration and link it to your AEM author instance. See also [Connect your code to your content](https://www.aem.live/developer/ue-tutorial#connect-your-code-to-your-content)
+1. Open your AEM instance and if you have your project ready, open it directly in Universal Editor.
+1. Open the project and the index page where you want to run experiments and click **Edit** on the top bar.
+1. Click the A/B icon to open the experimentation extension.
+
+>[!NOTE]
+>If you are having trouble setting up experimentation for you project please reach out to [aem-contextual-experimentation@adobe.com](aem-contextual-experimentation@adobe.com).
+
+>[!NOTE]
+>For more details on how to set up and configure the experimentation engine please refer to the documentation section from the following [repository](https://github.com/adobe/aem-experimentation/tree/v2-ui) .
+
+## Experiment variants and general workflow {#experiment-variants-workflow}
+
+Before following the rest of the guide to configure your first experiment, there are some frequently used terms that you should be familiar with:
+
+* **Control**: the experience prior to running the experiment. All experiments try to test and demonstrate an improvement over the control experience.
+* **Challenger**: an experience that is different from the control experience and is "tested" either against it or alongside it.
+* **Variants**: control and challenger are all variants of an experiment.
+* **Statistical Significance**: evaluating if your challenger is really better than the control. Calculating statistical significance allows you to rule out luck and concentrate on the results that have a real effect.
+
+Generally speaking, when setting up an experiment you will use a pre-existing page as the control page. By using the experimentation rail, you will then create a challenger page that is initially a copy of the control page. In the challenger page, you can test different things like content variants, different page layouts, call-to-action (CTA) and so on. You can also use AI generated variants, by using the **Generate variation** functionality in the experimentation rail.
+
+For each experiment, the traffic is initially split 50/50 between control and challenger but you can configure how the traffic is split as needed. After you activate the experiment you will receive data via the Operational Telemetry service.
+
+The [Operational Telemetry service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) gathers data, for example, the number of visitors in the control page versus the challenger page. You then use this data to pick the necessary improvements for your site. As long as you stay within the established design language of your website and use the existing functionality you should be able to set up an experiment variant and send it to production in a matter of minutes.
+
+>[!NOTE]
+>Keep in mind that the plug-in doesn't use any, nor persists any, end-user data that could lead to their identification. No end-user opt-in nor cookie consent is required when using the default configuration that uses the [Operational Telemetry service in AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md).
+
+<!--### Frequently used terms {#frequently-used-terms}
 
 Before following the rest of the guide to set up your first experiment, there are a few frequently used terms that you should be familiar with:
 
 * **Control**: the experience prior to running the experiment. All experiments try to test and demonstrate an improvement over the control experience.
 * **Challenger**: an experience that is different from the control experience and is "tested" against it or alongside it.
 * **Variants**: control and challenger are all variants of an experiment.
-* **Statistical Significance**: Evaluating if your challenger is really better than the control. Calculating statistical significance allows you to rule out luck and concentrate on the results that have a real effect.
+* **Statistical Significance**: Evaluating if your challenger is really better than the control. Calculating statistical significance allows you to rule out luck and concentrate on the results that have a real effect. -->
 
-## Experiment variants and general workflow {#experiment-variants-workflow}
+### Creating experiments in Universal editor
 
-Generally speaking, when setting up an experiment you will use a pre-existing page as the control page. You will then create a challenger page that will replace the control page for some of your visitors. In the challenger page, you can test different things like content variants, different page layouts, call-to-action (CTA) and so on. You can configure these experiment variants by adding metadata parameters in the control page (see below).
+To use the experimentation capabilities in Universal editor you must first set up the experimentation rail as detailed in the chapters presented above and make sure you use AEM sites as a content source. After everything is set up, follow these steps.
 
-The [Operational Telemetry service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) then gathers data, for example, the number of visitors in the control page versus the challenger page. You then use this data to pick the necessary improvements for your site. As long as you stay within the established design language of your website and use the existing block functionality you should be able to set up an experiment variant and send it to production in a matter of minutes.
+### Start editing you project in Universal Editor
 
->[!NOTE]
->Keep in mind that the plug-in doesn't use any, nor persists any, end-user data that could lead to their identification. No end-user opt-in nor cookie consent is required when using the default configuration that uses the [Operational Telemetry service in AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) .
+Open your AEM instance and if you have your project ready, open it directly in Universal Editor. If you do not have a project ready and AEM sites set up as a content source, create a new boilerplate project from the provided template. You could link either your repository or our sample repository to drive it [https://github.com/sudo-buddy/ue-experimentation](https://github.com/sudo-buddy/ue-experimentation). See also the [Setup AEM Sites as a Content Source](https://www.aem.live/developer/ue-tutorial) page. After the project is set up, open it and the index page where you want to run experiments and click **Edit** on the top bar.
 
-### Experiment Identifier {#experiment-identifier}
+### Launch the A/B Extension
+
+Click the **A/B** icon to open the experimentation extension. On your first use, the interface will be empty. Click **Create New** to start a new experiment.
+
+![a-b](/help/sites-cloud/administering/assets/a-b.png)
+
+### Configure the experiment details
+
+Some of the experiment values are pre-defined, as follows:
+
+**Experiment Type**: A/B test (only type supported for now)
+**Optimizing For**: Conversion (only type supported for now)
+
+You can also rename your experiment to something more descriptive for example, `homepage-head-experiment`.
+
+![Experiment-details](/help/sites-cloud/administering/assets/exp-values.png)
+
+### Add and Edit Variants
+
+Make sure you understand the concepts of challenger and variant as presented above before continuing. Click **Add New** to create a challenger variant:
+
+* You'll be taken to the challenger page in the same tab — it is initially just a copy of your control.
+* Either edit the page directly in-context or click **Generate Variation** to use AI assistance.
+* After making changes, return to the extension to proceed.
+
+![Control-variant](/help/sites-cloud/administering/assets/control-variant.png)
+
+### Define Other Properties and Save as Draft
+
+In the experimentation rail you can set a start and end date (both optional). If no start date is provided, the test begins once it is published. If no end date is provided, the test runs indefinitely. You can also adjust the traffic split, we recommend starting with an even 50/50 split.
+
+After you are done, click **Save** — this will save your experiment as a Draft. Note that the experiment is not active yet. You can return to the overview by clicking **Back to Experiment** or you can stay in the Edit interface to activate experiment.
+
+![Draft](/help/sites-cloud/administering/assets/draft-save.png)
+
+### Activate the Experiment
+
+Once you are ready, click **Activate** to launch the experiment and publish the experiment page. The test will begin collecting Operational Telemetry (RUM) data (see more details in the chapters below).
+
+![Activate](/help/sites-cloud/administering/assets/activate.png)
+
+### Monitor and Promote
+
+After the experiment reaches statistical significance, click **Promote** to make the desired variant your new control. Keep in mind that you can promote the experiment variant at any point after activation even if it does not reach statistical significance.
+
+### Using experimentation with AEM Sidekick in Edge Delivery Services
+
+If you have AEM sidekick installed you can use the experimentation rail directly with your project in Edge Delivery Service without using Universal Editor. The functionality is essentially the same as the A/B test described above, just keep in mind that you need to be **Preview** mode to edit and configure the test. After you finish configuring the test, click **Activate** to push both the control and the challenger variant live and start gathering telemetry data.
+
+<!-- ### Experiment Identifier {#experiment-identifier}
 
 Before you start, every experiment should have its own identifier for tracking and analytics purposes. A good starting point is to come up with a good, unique identifier for your experiment which will be the “Experiment ID”. Experiments are often numbered linearly or correlated to their Issue ID in an issue tracker or management system. Experiment IDs often use a prefix for the project, for example: `OPT-0134`, `EXP0004` or `CCX0076`.
 
@@ -65,7 +154,7 @@ Once the folder is created, put a copy of your control page into that folder, an
 
 ![control-page](/help/sites-cloud/administering/assets/control-page.png)
 
-Your copy of the challenger placed in the `experiments/<experiment-id>` folder might look like this:
+Your copy of the challenger placed in the experiments/experiment-id folder might look like this:
 
 ![challenger-page](/help/sites-cloud/administering/assets/challenger-page.png)
 
@@ -93,15 +182,13 @@ You can override the traffic split by configuring the metadata. For more informa
 
 As soon as you are ready to preview and stage your experiment, click Preview from the side-kick in the upper left side. Whenever you are previewing a page that has a running experiment, you will see the experimentation overlay in your `.aem.page` preview environment. The experimentation overlay lets you switch between the experiment variants and also provides traffic data.
 
-<!--
-- ![experimentation-overlay](/help/sites-cloud/administering/assets/experimentation-overlay.png)
+<!--- ![experimentation-overlay](/help/sites-cloud/administering/assets/experimentation-overlay.png)
 
-By using the experimentation overlay, authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.
--->
+By using the experimentation overlay, authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.-->
 
-The data collection to measure the effectiveness of each variant is based on the [Operational Telemetry service in AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md).
+<!--- The data collection to measure the effectiveness of each variant is based on the [Operational Telemetry service in AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md). -->
 
-### Send your Experiment Variant to Production {#production-experiment}
+<!--- ### Send your Experiment Variant to Production {#production-experiment}
 
 Select the experiment pages and click Publish from the side-kick to push both the control and the challenger variant(s) live.
 
@@ -111,10 +198,9 @@ Presented below are several use case examples for experiment variants. Generally
 
 #### Full Page Experiment {#full-page}
 
-You use a full page experiment to test between two variants of the same page. This is a full page variant of an a/b test where you have a control and a challenger page. You will replace the whole content of the "original" control page in the challenger variant with a different type of content. Keep in mind that by default the customer traffic is split evenly (50/50), but you can create custom splits if you like.
+You use a full page experiment to test between two variants of the same page. This is a full page variant of an a/b test where you have a control and a challenger page. You will replace the whole content of the "original" control page in the challenger variant with a different type of content. Keep in mind that by default the customer traffic is split evenly (50/50), but you can create custom splits if you like. -->
 
-<!--
-The metadata on the control page should look like this:
+<!--The metadata on the control page should look like this:
 
 METADATA SETUP
 
@@ -182,36 +268,28 @@ Audience: Chrome `https://{ref}--{repo}--{org}.hlx.page/page-for-chrome`
 
 After this configuration, the users will be triaged based on the browser they connect with and the appropriate challenger page will be served.
 
-Please keep in mind that the names above are only for illustration purposes. You can define the Audiences parameter and the challenger pages according to your needs, for example: Audience (Firefox) or Audience Firefox.
--->
+Please keep in mind that the names above are only for illustration purposes. You can define the Audiences parameter and the challenger pages according to your needs, for example: Audience (Firefox) or Audience Firefox.-->
 
 ## Other Considerations {#other-considerations}
 
-Presented below are several other aspects you should consider when using context experimentation.
+Presented below are several aspects you should consider when using context experimentation.
 
 ### Conversion {#conversion}
 
-Experiments are set up to address conversion (tracks clickable elements on your page). All experiments must be defined for the following:
+Experiments are set up to address conversion (tracks clickable elements on your page). Currently, we support page level experiments with one experiment per page.
 
-* Experiment type
-* What experience block the experiment will apply to
-* How many variants will the experiment contain
-* What is the composition of each variant
-
-### Make sure Experiment Variants are not indexed {#experiment-not-indexed}
+<!--### Make sure experiment Variants are not indexed {#experiment-not-indexed}
 
 When running experiments, it is usually best practice to exclude the variants from the sitemap and ensure they are not indexed by search engines. This is because the variant page could be seen as duplicate content and negatively impact SEO.
 
 You can do this by using either of the following two methods:
 
 * If you centralize all experiments in a dedicated folder, like `/experiments`: make sure your bulk `metadata.xlsx` sheet contains a row with `/experiments/**` as path, and a robots column with the values `noindex`, `nofollow`.
-* If you keep the experiment control and variants with the regular content: add a robots entry in the page metadata for each variant, with the value `noindex`, `nofollow`.
+* If you keep the experiment control and variants with the regular content: add a robots entry in the page metadata for each variant, with the value `noindex`, `nofollow`.-->
 
 ## Developer and Technical Resources {#dev-resources}
 
-Adobe Experience Manager uses [Operational Telemetry](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md
-
-) to gather operations data that is strictly necessary to discover and fix functional and performance issues on Adobe Experience Manager-powered sites. Operational Telemetry data can be used to diagnose performance issues. Operational Telemetry preserves the privacy of visitors through sampling (only a small portion of all page views will be monitored).
+Adobe Experience Manager uses [Operational Telemetry](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) to gather operations data that is strictly necessary to discover and fix functional and performance issues on Adobe Experience Manager-powered sites. Operational Telemetry data can be used to diagnose performance issues. Operational Telemetry preserves the privacy of visitors through sampling (only a small portion of all page views will be monitored).
 
 ### Privacy {#privacy-experimentation}
 
@@ -219,15 +297,3 @@ Adobe Experience Manager uses [Operational Telemetry](/help/sites-cloud/administ
 AEM Operational Telemetry does not use any client-side state or ID, such as cookies or `localStorage`, `sessionStorage` or similar, to collect usage metrics. Data is submitted transparently through a `Navigator.sendBeacon` call, not through pixels or similar techniques. There is no “fingerprinting” of devices or individuals via their IP address, User Agent string, or any other data for the purpose of capturing sampled data.
 
 It is not permitted to add any personal data into the Operational Telemetry data collection nor may Operational Telemetry data be used for use cases that go beyond strictly necessary.
-
-### FAQ {#faq}
-
-Presented below, is a list of frequently asked questions:
-
-Q: Can I adjust the split ratio between the variants of my experiment, for instance 10% on control and 90% on the challenger?
-
-Yes, the split ratio can be con figured via [metadata](#configure-experiment).
-
-Q: Can I experiment on both text and images?
-
-Yes, the variant can be a completely different page, so you can even test layout changes.
