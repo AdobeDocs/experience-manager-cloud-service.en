@@ -48,7 +48,7 @@ Before setting up experiments, keep in mind that you will need to use AEM sites 
 1. Click the A/B icon to open the experimentation extension.
 
 >[!NOTE]
->If you are having trouble setting up experimentation for you project please reach out to [aem-contextual-experimentation@adobe.com](aem-contextual-experimentation@adobe.com).
+>If you are having trouble setting up experimentation for you project please reach out to `aem-contextual-experimentation@adobe.com`.
 
 >[!NOTE]
 >For more details on how to set up and configure the experimentation engine please refer to the documentation section from the following [repository](https://github.com/adobe/aem-experimentation/tree/v2-ui) .
