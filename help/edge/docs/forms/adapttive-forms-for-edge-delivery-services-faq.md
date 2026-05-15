@@ -3,7 +3,7 @@ title: AEM Forms with Edge Delivery Services Frequently Asked Questions FAQ
 description: Get answers to common questions about AEM Forms with Edge Delivery Services and Universal Editor. Learn about multilingual forms, global templates, form fragments, analytics, and data integration capabilities.
 feature: Edge Delivery Services
 role: User, Developer
-hide: yes
+hide: true
 hidefromtoc: yes
 exl-id: b39601a1-7f37-4a7d-a4c8-7e79dca074e5
 ---

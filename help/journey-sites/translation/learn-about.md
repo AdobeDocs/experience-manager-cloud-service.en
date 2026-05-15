@@ -2,7 +2,6 @@
 title: Learn about AEM Sites content and how to translate it in AEM
 description: Learn AEM Sites concepts and the theory of AEM translation.
 index: true
-hide: no
 hidefromtoc: no
 exl-id: 1e5e739a-1fbd-49cf-b529-335696d7e2f4
 solution: Experience Manager Sites

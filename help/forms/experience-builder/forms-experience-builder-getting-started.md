@@ -1,7 +1,7 @@
 ---
 title: Getting started with Forms Experience Builder
 description: Learn the basics of creating your first AI-powered form with Forms Experience Builder. Step-by-step tutorial with examples and best practices.
-hide: yes
+hide: true
 index: false
 hidefromtoc: yes
 role: Admin, Developer

@@ -7,7 +7,7 @@ topic-tags: author
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 feature: Adaptive Forms
 role: User
-hide: yes
+hide: true
 hidefromtoc: yes
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
