@@ -1,21 +1,22 @@
 ---
 title: Setting Up Anthropic Claude with AEM MCP
-description: Learn how to configure Anthropic Claude to connect to AEM MCP servers
+description: Learn how to configure Anthropic Claude to connect to AEM’s MCP servers
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 2b90b2b2-cdd0-4f1e-890f-2f58f578face
 ---
 # Setting Up Anthropic Claude with AEM MCP {#setup-claude}
 
-Follow these steps to connect Anthropic Claude to AEM's MCP servers.
+This article covers two separate ways to use Anthropic Claude with AEM:
 
-* In Claude's MCP configuration, register one or more AEM MCP server URLs.
-* Complete the Adobe login flow.
-* Optionally, enable auto-confirm for certain tools in the configuration area. This option is recommended for search or read-only operations.
-* Ensure that the MCP server is selected before starting your conversation.
-* Ask Claude to perform AEM-related tasks. Claude selects the AEM Tools exposed by the MCP server based on your prompt.
+- Manually configure one or more of AEM’s MCP servers in Claude (the servers described at [Using MCP with AEM as a Cloud Service — MCP servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md#mcp-servers)).
+- Install the Adobe Experience Manager Connector from Anthropic’s connector marketplace. It currently has feature parity with Content MCP Server and will expose a growing subset of tools available in AEM's MCP servers.
 
-To configure Claude for AEM MCP, follow the steps below:
+
+
+## Manually configure AEM’s MCP servers in Claude {#manual-configure-aems-mcp-servers-in-claude}
+
+This section describes the **manual configuration** approach, where you add one or more of AEM’s MCP servers to Claude as custom connectors.
 
 >[!NOTE]
 >
@@ -29,7 +30,7 @@ To configure Claude for AEM MCP, follow the steps below:
 
    ![Connectors page in Settings with Add custom connector.](assets/claude-2.png)
 
-1. In the **Add custom connector** dialog, enter a display name (for example, **AEM Content MCP Service**) and your AEM MCP server URL, then choose **Add**. Use **Advanced settings** only when your deployment requires extra options.
+1. In the **Add custom connector** dialog, enter a display name (for example, **AEM Content MCP Service**) and your MCP server URL, then choose **Add**. Use **Advanced settings** only when your deployment requires extra options.
 
    ![Add custom connector dialog with name and MCP URL.](assets/claude-3.png)
 
@@ -49,8 +50,10 @@ To configure Claude for AEM MCP, follow the steps below:
 
    ![Chat composer with AEM Content MCP Service enabled in the tools menu.](assets/claude-7.png)
 
-## Adobe Experience Manager Claude Connector {#aem-claude-connector}
+## Install the Adobe Experience Manager Connector (Anthropic connector marketplace) {#install-adobe-experience-manager-connector}
 
-To install the **Adobe Experience Manager Claude Connector**, open **Settings** > **Connectors** in Claude. You can also open the Connectors page directly at [https://claude.ai/settings/connectors](https://claude.ai/settings/connectors). The connector registers an MCP server that exposes a growing set of tools for AEM workflows.
+This section describes the **installable connector** from Anthropic’s connector marketplace (as opposed to adding a custom connector URL). It includes a subset of the tools available in AEM's MCP servers.
+
+To install the **Adobe Experience Manager Connector**, open **Settings** > **Connectors** in Claude. You can also open the Connectors page directly at [https://claude.ai/settings/connectors](https://claude.ai/settings/connectors). The connector registers an MCP server that exposes a growing set of tools for AEM workflows.
 
 ![Installing the Adobe Experience Manager Claude Connector from the connectors directory.](assets/claude-connector.png)

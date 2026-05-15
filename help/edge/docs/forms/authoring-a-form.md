@@ -4,7 +4,7 @@ description: Learn about the various form authoring platforms available in Adobe
 feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
-hide: yes
+hide: true
 index: false
 hidefromtoc: yes
 ---

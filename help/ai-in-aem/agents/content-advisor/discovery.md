@@ -230,7 +230,7 @@ Note: Form discovery currently supports Edge Delivery Services forms only and ta
 
 The Content Discovery Agent returns the top results for each query, sorted by relevance to ensure that the exact matches appear first. The agent combines metadata-driven queries with semantic search to assemble a focused set of likely matches, then uses an LLM to rank them based on user intent. This blended approach delivers accurate, context-aware results without depending entirely on a direct keyword match.
 
-Each result is displayed as an asset card, showing the asset name, preview, and key metadata such as description and format. You can click the Info icon on a card to view additional asset properties.
+Each result is displayed as an asset card, displaying the asset name, preview, and key metadata such as description and format. You can click the Info icon on a card to view additional asset properties.
 
 Use the **Show Table** option to display results in a tabular format. Click **Show all results** to view the complete set of 20 retrieved assets in the right pane.
 

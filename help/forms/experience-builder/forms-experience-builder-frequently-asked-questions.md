@@ -2,7 +2,7 @@
 title: Forms Experience Builder - Frequently asked questions
 description: Find answers to common questions about Forms Experience Builder, including setup, usage, troubleshooting, and best practices.
 feature: Edge Delivery Services
-hide: yes
+hide: true
 index: false
 hidefromtoc: yes
 role: Admin, Developer

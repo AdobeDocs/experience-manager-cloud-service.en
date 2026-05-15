@@ -386,7 +386,7 @@ If you use a 3rd party library that currently requires Deprecated API, try updat
 
 If you decide to deploy your own version of the Deprecated API, e.g. your own version of Guava, make sure that all your bundles using this API will be wired to your version. If you decide to deploy the same major version as currently included in Cloud Service, no further action is needed. However, if you follow the recommendations and deploy the latest version then you need to adjust your Maven project, include that library as a new dependency before the `aem-sdk-api`. This way your code will be wired to the new version. Once you have made the changes, verify with the [AEM as a Cloud Service SDK Build Analyzer Maven Plugin](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) that the usage of the Deprecated API is not flagged anymore.
 
-If you are using ACS AEM Commons, use at least version 6.11.0 (latest version is recommended) and make sure that you [include the version for Cloud Service](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) by specifying the classifier `cloud` for the content package.
+If you are using ACS AEM Commons, use at least version 6.17.2 (latest version is recommended) and make sure that you [include the version for Cloud Service](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) by specifying the classifier `cloud` for the content package.
 
 If the import of a Deprecated API is marked as `optional`, you should still try to remove this. However, such an optional usage will not block deployments. But your deployment might be affected, once the optional import is not satisfied anymore.
 
@@ -396,7 +396,7 @@ If you are using `org.apache.sling.commons.auth`, or `org.apache.sling.commons.a
 
 Action list:
 
-* If you are using ACS AEM Commons update to latest version (at least 6.11.0) and make sure to use the `cloud` classifier.
+* If you are using ACS AEM Commons update to latest version (at least 6.17.2) and make sure to use the `cloud` classifier.
 * Migrate from `org.apache.sling.commons.auth` and/or `org.apache.sling.commons.auth.spi` to `org.apache.sling.auth` resp. `org.apache.sling.auth.spi`.
 
 ### Removal of `org.apache.felix.webconsole*` {#org.apache.felix.webconsole}
@@ -441,7 +441,7 @@ Remove the usage of Google Guava Core Libraries or include an appropriet version
 
 Action list:
 
-* If you are using ACS AEM Commons update to latest version (at least 6.11.0) and make sure to use the `cloud` classifier.
+* If you are using ACS AEM Commons update to latest version (at least 6.17.2) and make sure to use the `cloud` classifier.
 * If you are using `io.wcm:io.wcm.caconfig.extensions` update this to at least version 1.9.2
 * Replace usage of Google Guava Core Library with JDK collections or Apache Commons Collections4
 * If still required, add this bundle to your project (substitute the version with the latest available):
@@ -453,7 +453,7 @@ Remove usage of the non maintained Apache Commons libraries and replace them wit
 
 Action list:
 
-* If you are using ACS AEM Commons update to latest version (at least 6.11.0) and make sure to use the `cloud` classifier.
+* If you are using ACS AEM Commons update to latest version (at least 6.17.2) and make sure to use the `cloud` classifier.
 * Replace imports of `org.apache.commons.lang*` with `org.apache.commons.lang3`
 * Replace imports of `org.apache.commons.collections*` with `org.apache.commons.collecitons4`
 
@@ -479,7 +479,7 @@ Logback is not supported in Cloud Service, remove all usage of it. If you are us
 
 Action list:
 
-* If you are using ACS AEM Commons update to latest version (at least 6.11.0) and make sure to use the `cloud` classifier.
+* If you are using ACS AEM Commons update to latest version (at least 6.17.2) and make sure to use the `cloud` classifier.
 * Remove the code using packages from `ch.qos.logback`
 
 ### Usage of `org.slf4j.event and org.slf4j.spi` {#org.slf4j}
@@ -488,7 +488,7 @@ If you are using `org.slf4j.event` or `org.slf4j.spi`, remove all usage of it. I
 
 Action list:
 
-* If you are using ACS AEM Commons update to latest version (at least 6.11.0) and make sure to use the `cloud` classifier.
+* If you are using ACS AEM Commons update to latest version (at least 6.17.2) and make sure to use the `cloud` classifier.
 * If you are using the Apache Kafka Client and include the OSGi wrapper bundle from Apache ServiceMix (`org.apache.servicemix.bundles.kafka-clients`), replace it with the [AEM Apache Kafka Client Wrapper](https://repo.maven.apache.org/maven2/com/adobe/aem/osgi/com.adobe.aem.osgi.kafka-clients/4.0.0_1.0/). This is the same version as the one from Apache ServiceMix with just the usage of those two packages removed.
 * If you are using `com.adobe.aio.aem:aio-lib-osgi` update to the latest version (at least 2.0.12).
 * Remove the code using `org.slf4j.event` and `org.slf4j.spi`

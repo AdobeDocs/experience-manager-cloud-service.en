@@ -46,7 +46,7 @@ Once you setup [!DNL AEM Forms] as a Cloud Service, the groups listed in the bel
      <li>Import packages containing XDP</li> 
     </ul> </td> 
   </tr>
- <tr>
+  <tr>
    <td>forms-submission-reviewers</td> 
    <td>
     <ul> 
@@ -77,16 +77,12 @@ Once you setup [!DNL AEM Forms] as a Cloud Service, the groups listed in the bel
      <li>Access Correspondence Management letters or interactive communications using Agent UI</li> 
     </ul> </td> 
   </tr>
-  -->
-  <!--
-   <tr>
+  <tr>
    <td><p>workflow-editors</p> </td> 
    <td>
     <ul>
-    -->
-    <!-- <li>Create an inbox application</li>  -->
-    <!--
-     <li>Create a workflow model</li> 
+    <li>Create an inbox application</li>
+    <li>Create a workflow model</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -94,12 +90,10 @@ Once you setup [!DNL AEM Forms] as a Cloud Service, the groups listed in the bel
    <td>
     <ul> 
      <li>Use AEM inbox applications<br />
-     -->
-     <!-- 
      <strong>Note: </strong>You must have cm-agent-users and [!DNL workflow-users] group assignments to access Interactive Communications Agent UI in AEM inbox.</li>
-     -->
-    </ul> </td> 
+  </ul> </td> 
   </tr>
+  -->
   <tr>
    <td>[!DNL fd-administrators]</td> 
    <td>

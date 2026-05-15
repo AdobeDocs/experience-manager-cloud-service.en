@@ -2,7 +2,6 @@
 title: Configure the Translation Connector (AEM Sites)
 description: Learn how to connect AEM to a translation service.
 index: true
-hide: no
 hidefromtoc: no
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
 solution: Experience Manager Sites

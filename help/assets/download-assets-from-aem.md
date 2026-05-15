@@ -35,11 +35,20 @@ You can download assets from Experience Manager using the following methods:
 
 ## Download assets using [!DNL Experience Manager] interface {#download-assets}
 
-Experience Manager optimizes the download experience based on the asset quantity and size. Smaller files are downloaded from the user interface in real time. [!DNL Experience Manager] directly downloads single asset requests for the original file rather than enclosing single assets in a ZIP archive to allow for faster downloads. Experience Manager supports large downloads with asynchronous requests. Download requests larger than 100 GB are split into multiple ZIP archives with a maximum size of 100 MB each. 
+Experience Manager optimizes the download experience based on the asset quantity and size. Smaller files are downloaded from the user interface in real time. [!DNL Experience Manager] directly downloads single asset requests for the original file rather than enclosing single assets in a ZIP archive to allow for faster downloads. Experience Manager supports large downloads with asynchronous requests. Download requests larger than 100 GB are split into multiple ZIP archives with a maximum size of 100 MB each.
 
 By default, [!DNL Experience Manager] triggers a notification in the [[!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/inbox.md) upon generation of a download archive.
 
 ![Inbox notification](assets/inbox-notification-for-large-downloads.png)
+
+When a user requests download containing folders or collections, AEM performs a quick estimate of the number of items (Assets, Folders or Renditions) beneath the downloaded folder(s) or collections, to ensure that the requested download is within our supported limits. By default, downloads containing more than 50,000 items are blocked and AEM displays the `The selected items are larger than the configured maximum download limit` message.
+
+It is possible to increase the download size limit by adding an OSGI configuration shown below to your application code and [deploying via a Cloud Manager pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi):
+
+```
+com.adobe.cq.dam.download.impl.DownloadConfiguration   
+downloadMaxItems = 100000
+```
 
 
 ### Enable email notifications for large downloads {#enable-emails-for-large-downloads}

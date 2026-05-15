@@ -42,7 +42,10 @@ To enable Video Smart Crops, configure the metadata schema used for video assets
 
 The **Create Video Smartcrops** option is now available in the video asset metadata form.
 
+<!--
+broken link
 ![Create Video Smartcrops field](/help/assets/assets/video-smartcrop-metadata-field.png)
+-->
 
 ## Apply Video Smart Crops to approved videos {#apply-video-smart-crops}
 

@@ -7,7 +7,7 @@ topic-tags: develop
 discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
 feature: Adaptive Forms
 role: User
-hide: yes
+hide: true
 hidefromtoc: yes
 exl-id: f19b7e4f-d4aa-45da-b0dd-7ae8d119da74
 ---
