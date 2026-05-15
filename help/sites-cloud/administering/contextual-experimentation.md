@@ -42,14 +42,13 @@ To access the experimentation rail capabilities within your Edge Delivery Servic
 Before setting up experiments, keep in mind that you will need to use AEM sites as a content source to be able to author in Universal Editor. If needed, you can convert your existing project to AEM sites as a content source by following the tutorial presented in the [Setup AEM Sites as a Content Source](https://www.aem.live/developer/ue-tutorial) page. When you are ready to set up experiments in Universal Editor, follow these steps:
 
 1. Open your project in Universal Editor and check the **A/B** Icon Extension. In case the icon is not visible, confirm whether you have enabled the feature in the extension manager. If it is not enabled please enable it or request access.
-<!--1. Open your GitHub repository and check if the `plugins/experimention` folder exists. If not, you will need to set up the experimentation engine and MFE first (see the note above).-->
 1. Point your `fstab.yaml` configuration to your project configuration and link it to your AEM author instance. See also [Connect your code to your content](https://www.aem.live/developer/ue-tutorial#connect-your-code-to-your-content)
 1. Open your AEM instance and if you have your project ready, open it directly in Universal Editor.
 1. Open the project and the index page where you want to run experiments and click **Edit** on the top bar.
 1. Click the A/B icon to open the experimentation extension.
 
 >[!NOTE]
->If you are having trouble setting up experimentation for your project please reach out to [aem-contextual-experimentation@adobe.com](mailto:aem-contextual-experimentation@adobe.com).
+>If you are having trouble setting up experimentation for your project please reach out to `aem-contextual-experimentation@adobe.com`.
 
 >[!NOTE]
 >For more details on how to set up and configure the experimentation engine please refer to the documentation section from the following [repository](https://github.com/adobe/aem-experimentation/tree/v2-ui) .
