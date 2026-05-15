@@ -8,7 +8,7 @@ exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
 
 # Form Creation Job {#form-creation-job}
 
-The form creation job is part of the [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) that is designed to develop forms using natural language prompts. This job automatically generates appropriate form structure and  field types. The job is surfaced through AI Assistant.
+The form creation job is the part of the [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) that is designed to develop forms using natural language prompts. This job automatically generates appropriate form structure and  field types. The job is surfaced through AI Assistant.
 
 Some of the key benefits of form creation job include:
 
@@ -23,7 +23,6 @@ Some of the key benefits of form creation job include:
 * **Import a PDF document and convert it into form**: You can import and transform existing PDF documents into forms. The skill analyzes uploaded content to detect field types, preserve layouts, and enhance forms with responsive design and validation logic while ensuring brand and compliance standards are maintained.
 
 When you use either of these capabilities, you are prompted to choose the type of form to create. Specify either a Core Components-based adaptive forms template or an Edge Delivery Services-based adaptive forms template and indicate your preferred path to save the form. If you are creating a form based on Edge Delivery Services, you can also specify the GitHub URL of your repository.
-
 
 ### Sample Prompts {#sample-prompts}
 
@@ -98,3 +97,9 @@ The form creation skill combines form creation and site integration in a single 
 * *Create a simple survey form with 5 questions and embed it on the customer portal homepage*
 * *Build an event registration form with name, email, and date selection, then add it to /content/events/conference-2025*
 -->
+
+## Additional Resources {#additional-resources}
+
+The following resources may be useful as you continue to explore the Experience Production Agent:
+
+* You can also use the [Experience Production Agent Workbook](https://www.adobe.com/go/aem-epa-workbook) for guided, hands-on instructions.

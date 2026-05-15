@@ -30,6 +30,8 @@ This following sections of this document give an overview of important informati
 
 The following table offers a comprehensive list of such configurations with links to dedicated documentation describing its distinct configuration syntax and other information.
 
+For configurations related to CDN, in addition to the linked article in the table, also consult the [CDN Configuration Snippets for Common Scenarios](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md) article.
+
 | Type   | YAML `kind` Value | Description  | Publish Delivery | Edge Delivery |
 |---|---|---|---|---|
 | [Traffic Filter Rules, including WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | Declare rules to block malicious traffic | X | X |

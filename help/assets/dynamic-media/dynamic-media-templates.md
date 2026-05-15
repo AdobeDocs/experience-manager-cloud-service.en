@@ -1,50 +1,13 @@
 ---
 title: How to manage [!DNL Dynamic Media] templates?
 description: Learn how to create [!DNL Dynamic Media] templates using a WYSIWYG template editor and include multiple images, texts and shapes layers to quickly create banners and flyers and use them in downstream applications.
-hide: yes
+hide: true
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
 ---
 
 # [!DNL Dynamic Media] templates{#dynamic-media-templates}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime and Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets integration with Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI Extensibility</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>New</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Enable Dynamic Media Prime and Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Search Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Metadata Best Practices</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media with OpenAPI capabilities</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets developer documentation</b></a>
-        </td>
-    </tr>
-</table>
 
 Create real time customizable templates for your banners and flyers using [!DNL Dynamic Media] templates, a WYSIWYG template editor. Publish your [!DNL Dynamic Media] template and use it in downstream applications. A [!DNL Dynamic Media] template includes image and text layers. Add parameters to the image and text layers of the template and use [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) to reposition and resize the layer and update its content in real-time. 
 
@@ -181,10 +144,14 @@ Execute the following steps to format specific parts of a string:
 1. Select one or more characters in the string to format.
 1. Format the selection using the [properties panel](#properties-panel). The following formatting options are applicable to substrings and their parts:
    * **Font Style**: Bold, italic, underline, subscript, and superscript using the **[!UICONTROL Font Style]** option.
-   * **Font Properties**: Change font family, color, and size using the respective panel options.
+   * **Font Properties**: Change font family, color, size, and line spacing using the respective panel options.
    ![format-substring](/help/assets/assets/format-substring.png)
 
-[Each formatted string part displays as a substring in the substring selector, available within the parameters panel. Add parameters to these formatted parts to format them dynamically using the template's delivery URL](#substring-parameterisation).
+>[!NOTE]
+>
+>If a multi-line text layer contains substrings with different font sizes and a custom line spacing is applied, the preview or delivery output may not exactly match the Canvas View. In some cases, the generated output may display reduced spacing between lines.
+
+Each formatted string part displays as a substring in the substring selector, available within the parameters panel. [Add parameters to these formatted parts to format them dynamically using the template's delivery URL](#substring-parameterisation).
 
 ### Add shapes to the canvas {#add-shapes-to-the-canvas}
 

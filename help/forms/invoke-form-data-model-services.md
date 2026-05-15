@@ -6,7 +6,7 @@ topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 feature: Adaptive Forms, Form Data Model
 role: User
-hide: yes
+hide: true
 hidefromtoc: yes
 exl-id: 56e5cabd-a509-4ef9-9fea-3cc610f8dee1
 ---

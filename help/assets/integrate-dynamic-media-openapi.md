@@ -5,7 +5,7 @@ role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
 ---
-# Integration for Dynamic Media with OpenAPI capabilities {#integrate-dynamic-media-open-apis}
+# Integration for Dynamic Media with OpenAPI capabilities {#integrate-dynamic-media-openapis}
 
 Content Advisor allows you to integrate using various Adobe applications to enable them to work together seamlessly.
 

@@ -4,7 +4,7 @@ description:
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-hide: yes
+hide: true
 hidefromtoc: yes
 
 

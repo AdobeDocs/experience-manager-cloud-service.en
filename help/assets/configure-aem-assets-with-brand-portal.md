@@ -378,33 +378,27 @@ Ensure that you have performed the following steps:
 
 * [Obtain public certificate](#public-certificate)
 * [Create service account (JWT) connection](#createnewintegration)
--->
 
-<!--
 1. Open the IMS Configuration and navigate to the **[!UICONTROL Account]** tab. Keep the page open while [obtaining the public certificate](#public-certificate).
 
 1. Specify a **[!UICONTROL Title]** for the IMS account.
 
    In the **[!UICONTROL Authorization Server]** field, specify the URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)  
--->
-<!--
+
 1. Complete the configuration based on details from the [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). Click **[!UICONTROL Create]**.
--->
-   <!--
+
    Specify client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
 
    The IMS account is configured. 
 
    ![IMS Account configuration](assets/create-new-integration6.png)
 
- <!--  
 1. Select the IMS account configuration and click **[!UICONTROL Check Health]**.
 
    Click **[!UICONTROL Check]** in the dialog box. On successful configuration, a message appears that the *Token is retrieved successfully*.
 
    ![Adobe IMS Configurations Check Health.](assets/create-new-integration5.png)
--->
-<!--
+
 >[!CAUTION]
 >
 >You must have only one IMS configuration.

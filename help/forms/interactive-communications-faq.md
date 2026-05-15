@@ -3,7 +3,7 @@ title: Frequently asked questions
 description: Frequently asked questions
 feature: Release Information
 role: Admin
-hide: yes
+hide: true
 hidefromtoc: yes
 exl-id: 4cc1bff3-edfb-4826-b914-2a2231b703f9
 ---

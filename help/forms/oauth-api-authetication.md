@@ -5,7 +5,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 24fa5751-c006-4c39-bdc3-b46a4974638e
-hide: yes
+hide: true
 hidefromToC: yes
 index: false
 ---

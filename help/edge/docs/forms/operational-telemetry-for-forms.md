@@ -2,7 +2,7 @@
 title: Operational Telemetry for Edge Delivery Services for AEM Forms as a Cloud Service
 description: Operational Telemetry for Edge Delivery Services for AEM Forms as a Cloud Service involves the ongoing tracking and analysis of user interactions with forms.
 feature: Edge Delivery Services
-hide: yes
+hide: true
 hidefromtoc: yes
 role: Admin, Developer
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
