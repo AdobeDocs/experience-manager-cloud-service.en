@@ -2,7 +2,7 @@
 title: Troubleshooting in AEM Assets
 description: Troubleshoot common AEM Assets issues using the article links for key AEM Assets s=areas, such as uploads, metadata, search, delivery, and so on.
 hidefromtoc: yes
-hide: yes
+hide: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets)."
 exl-id: bcc0d481-4be4-4486-974b-89f89431c864
 ---

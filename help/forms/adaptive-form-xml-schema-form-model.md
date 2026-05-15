@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
-hide: yes
+hide: true
 hidefromtoc: yes
 ---
 # Design XML Schema for an Adaptive Form {#creating-adaptive-forms-using-xml-schema}

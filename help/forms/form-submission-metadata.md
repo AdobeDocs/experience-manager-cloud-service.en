@@ -4,7 +4,7 @@ description: Learn how to add information to metadata of a submitted form with u
 feature: Adaptive Forms
 role: User
 level: Intermediate
-hide: yes
+hide: true
 hidefromtoc: yes
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 12c54be1-378d-4dbe-9129-93ddc7c343a4
