@@ -3,7 +3,6 @@ title: Contextual Experimentation in AEM as a Cloud Service
 description: Learn how to use the experimentation rail to add experimentation capabilities to your site.
 feature: Administering
 role: Admin
-exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
 ---
 # Contextual Experimentation in AEM as a Cloud Service {#contextual-experimentation}
 
@@ -49,7 +48,7 @@ Before setting up experiments, keep in mind that you will need to use AEM sites 
 1. Click the A/B icon to open the experimentation extension.
 
 >[!NOTE]
->If you are having trouble setting up experimentation for your project please reach out to [aem-contextual-experimentation@adobe.com](mailto:aem-contextual-experimentation@adobe.com).
+>If you are having trouble setting up experimentation for you project please reach out to `aem-contextual-experimentation@adobe.com`.
 
 >[!NOTE]
 >For more details on how to set up and configure the experimentation engine please refer to the documentation section from the following [repository](https://github.com/adobe/aem-experimentation/tree/v2-ui) .
