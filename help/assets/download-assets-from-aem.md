@@ -35,11 +35,20 @@ You can download assets from Experience Manager using the following methods:
 
 ## Download assets using [!DNL Experience Manager] interface {#download-assets}
 
-Experience Manager optimizes the download experience based on the asset quantity and size. Smaller files are downloaded from the user interface in real time. [!DNL Experience Manager] directly downloads single asset requests for the original file rather than enclosing single assets in a ZIP archive to allow for faster downloads. Experience Manager supports large downloads with asynchronous requests. Download requests larger than 100 GB are split into multiple ZIP archives with a maximum size of 100 MB each. 
+Experience Manager optimizes the download experience based on the asset quantity and size. Smaller files are downloaded from the user interface in real time. [!DNL Experience Manager] directly downloads single asset requests for the original file rather than enclosing single assets in a ZIP archive to allow for faster downloads. Experience Manager supports large downloads with asynchronous requests. Download requests larger than 100 GB are split into multiple ZIP archives with a maximum size of 100 MB each.
 
 By default, [!DNL Experience Manager] triggers a notification in the [[!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/inbox.md) upon generation of a download archive.
 
 ![Inbox notification](assets/inbox-notification-for-large-downloads.png)
+
+When a user requests download containing folders or collections, AEM performs a quick estimate of the number of items (Assets, Folders or Renditions) beneath the downloaded folder(s) or collections, to ensure that the requested download is within our supported limits. By default, downloads containing more than 50,000 items are blocked and AEM displays the `The selected items are larger than the configured maximum download limit` message.
+
+It is possible to increase the download size limit by adding an OSGI configuration shown below to your application code and [deploying via a Cloud Manager pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi):
+
+```
+com.adobe.cq.dam.download.impl.DownloadConfiguration   
+downloadMaxItems = 100000
+```
 
 
 ### Enable email notifications for large downloads {#enable-emails-for-large-downloads}
@@ -100,32 +109,6 @@ When users download assets from shared links, [!DNL Assets] uses an asynchronous
 The [!UICONTROL Download Inbox] displays the processing status of each archive. Once the processing is complete, you can download the archives from the inbox.
 
 ![Download inbox](assets/link-sharing-download-inbox.png)
-
-## Enable asset download servlet {#enable-asset-download-servlet}
-
-The default servlet in [!DNL Experience Manager] allows authenticated users to issue arbitrarily large, concurrent download requests to create ZIP files of assets. The download preparation can have performance implications or can even overload the server and the network. To mitigate such potential DoS-like risks caused by this feature, `AssetDownloadServlet` OSGi component is disabled for publish instances. If you do not need the download feature on author instances, disable the servlet on author.
-
-To allow downloading assets from your DAM, say when using something like Asset Share Commons or other portal-like implementation, manually enable the servlet via an OSGi configuration. Adobe recommends setting the permissible download size as low as possible without affecting the day-to-day download requirements. A high value may impact performance.
-
-1. Create a folder with a naming convention that targets the publish run mode, that is, `config.publish`:
-
-   `/apps/<your-app-name>/config.publish`
-
-1. In the config folder, create a file of type `nt:file` named `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
-1. Populate `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` with the following. Sets a maximum size (in bytes) for the download as value of `asset.download.prezip.maxcontentsize`. The below sample configures the maximum size of the ZIP download to not exceed 100 KB.
-
-   ```java
-   enabled=B"true"
-   asset.download.prezip.maxcontentsize=I"102400"
-   ```
-
-## Disable asset download servlet {#disable-asset-download-servlet}
-
-If you do not need the download functionality, then disable the servlet to prevent any DoS-like risks. The `Asset Download Servlet` can be disabled on an [!DNL Experience Manager] author and publish instances by updating the dispatcher configuration to block any asset download requests. The servlet can also be manually disabled via the OSGi console directly.
-
-1. To block asset download requests via a dispatcher configuration edit the `dispatcher.any` configuration and add a new rule to the [filter section](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring).
-
-   `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 ## OnTime or OffTime rendition {#on-off-time-rendition}
 

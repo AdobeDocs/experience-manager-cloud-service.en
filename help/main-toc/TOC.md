@@ -27,6 +27,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Feature Release Notes {#release-notes}
     + [Current Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md)
     + 2026 {#2026}
+      + [Release Notes for 2026.3.0](/help/release-notes/release-notes-cloud/2026/2026-3-0.md)
       + [Release Notes for 2026.2.0](/help/release-notes/release-notes-cloud/2026/2026-2-0.md)
       + [Release Notes for 2026.1.0](/help/release-notes/release-notes-cloud/2026/2026-1-0.md)
     + 2025 {#2025}
@@ -100,6 +101,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2026 {#2026}
+      + [Maintenance Release Notes for 2026.4.0](/help/release-notes/maintenance/2026/2026-4-0.md)
       + [Maintenance Release Notes for 2026.3.0](/help/release-notes/maintenance/2026/2026-3-0.md)
       + [Maintenance Release Notes for 2026.2.0](/help/release-notes/maintenance/2026/2026-2-0.md)
       + [Maintenance Release Notes for 2026.1.0](/help/release-notes/maintenance/2026/2026-1-0.md)
@@ -140,6 +142,8 @@ user-guide-title: AEM as a Cloud Service
   + Cloud Manager Release Notes {#cloud-manager}
     + [Current](/help/implementing/cloud-manager/release-notes/current.md)
     + 2026 {#2026}
+      + [2026.4.0](/help/implementing/cloud-manager/release-notes/2026/2026-4-0.md)
+      + [2026.3.0](/help/implementing/cloud-manager/release-notes/2026/2026-3-0.md)
       + [2026.2.0](/help/implementing/cloud-manager/release-notes/2026/2026-2-0.md)
       + [2026.1.0](/help/implementing/cloud-manager/release-notes/2026/2026-1-0.md)
     + 2025 {#2025}
@@ -253,6 +257,8 @@ user-guide-title: AEM as a Cloud Service
     + [Current Release Notes for Universal Editor](/help/release-notes/universal-editor/current.md)
     + [Preview Release Notes for the Universal Editor](/help/release-notes/universal-editor/preview.md)
     + 2026 {#2026}
+      + [2026.04.30 Release Notes](/help/release-notes/universal-editor/2026/2026-04-30.md)
+      + [2026.04.09 Release Notes](/help/release-notes/universal-editor/2026/2026-04-09.md)
       + [2026.04.02 Release Notes](/help/release-notes/universal-editor/2026/2026-04-02.md)
       + [2026.03.26 Release Notes](/help/release-notes/universal-editor/2026/2026-03-26.md)
       + [2026.03.19 Release Notes](/help/release-notes/universal-editor/2026/2026-03-19.md)
@@ -512,6 +518,7 @@ user-guide-title: AEM as a Cloud Service
       + [Delete Considerations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
       + [Analyzing Structure](/help/sites-cloud/administering/content-fragments/analysis.md)
       + [Previewing Fragments](/help/sites-cloud/administering/content-fragments/preview.md)
+      + [Reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
       + [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
       + [Assets in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
       + [Content Fragments with Adobe Journey Optimizer](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
@@ -559,6 +566,7 @@ user-guide-title: AEM as a Cloud Service
         + [Language Copy Wizard](/help/sites-cloud/administering/translation/wizard.md)
         + [Identifying Content to Translate](/help/sites-cloud/administering/translation/rules.md)
         + [Configuring the Translation Integration Framework](/help/sites-cloud/administering/translation/integration-framework.md)
+        + [Configuring AI Translation Integration](/help/sites-cloud/administering/translation/ai-translation-integration.md)
         + [Connecting to Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md)
         + [Translation Best Practices](/help/sites-cloud/administering/translation/best-practices.md)
     + [Administering Tags](/help/sites-cloud/administering/tags.md)
@@ -588,7 +596,6 @@ user-guide-title: AEM as a Cloud Service
   + [Troubleshoot AEM Assets issues](/help/assets/troubleshoot-aem-assets.md)
   + [Assets Collaborator users](/help/assets/assets-collaborator-users.md)
   + Manage digital assets {#manage}
-    + [Content Advisor to access AEM content in Adobe applications](/help/assets/content-advisor-adobe-applications.md)
     + [Share assets](/help/assets/share-assets.md)
     + [Reprocessing assets](/help/assets/reprocessing.md)
     + [Malware detection](/help/assets/malware-detection.md)
@@ -623,18 +630,6 @@ user-guide-title: AEM as a Cloud Service
     + [Process assets using [!DNL Creative Cloud] APIs](/help/assets/cc-api-integration.md)
     + [Color tags for images](/help/assets/color-tag-images.md)
     + [Manage PDF documents](/help/assets/manage-pdf-documents.md)
-    + Micro-Frontend Asset Selector {#asset-selector}
-      + [Asset Selector overview](/help/assets/overview-asset-selector.md)
-      + Asset Selector integrations {#asset-selector-integration}
-        + [Asset Selector integrations overview](/help/assets/integrate-asset-selector.md)
-        + [Integrate Asset Selector with an Adobe application](/help/assets/integrate-asset-selector-adobe-app.md)
-        + [Integrate Asset Selector with a non-Adobe application](/help/assets/integrate-asset-selector-non-adobe-app.md)
-        + [Integrate Asset Selector for Dynamic Media with OpenAPI capabilities](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-      + [Asset Selector properties](/help/assets/asset-selector-properties.md)
-      + [Asset Selector examples](/help/assets/asset-selector-examples.md)
-      + [Asset Selector customizations](/help/assets/asset-selector-customization.md)
-      + [Asset Selector upload](/help/assets/asset-selector-upload.md)
-      + [Asset Selector collections](/help/assets/asset-selector-collections.md)
     + [Micro-Frontend Destination Selector](/help/assets/destination-selector.md)
   + Configure, administer, and extend [!DNL Assets] {#admin}
     + [Detect duplicate assets](/help/assets/detect-duplicate-assets.md)
@@ -658,6 +653,12 @@ user-guide-title: AEM as a Cloud Service
     + [Configure [!DNL Assets] with [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
     + [Publish assets to [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
     + [Publish assets from [!DNL Brand Portal] to [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)
+
+  + Content Advisor {#content-advisor}
+    + [Content Advisor to access AEM content in Adobe and non-Adobe applications](/help/assets/integrate-adobe-non-adobe-applications.md)
+    + [Content Advisor properties](/help/assets/content-advisor-properties.md)
+    + [Content Advisor customizations](/help/assets/content-advisor-customization.md)
+    + [Integration for Dynamic Media with OpenAPI capabilities](/help/assets/integrate-dynamic-media-openapi.md)
   + Content Fragments {#content-fragments}
     + [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
     + [Headless Delivery with Content Fragments and GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -1570,6 +1571,7 @@ user-guide-title: AEM as a Cloud Service
     + [Content Copy](/help/implementing/developing/tools/content-copy.md)
     + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
     + [AEM Repo Tool](/help/implementing/developing/tools/repo-tool.md)
+    + [Web Console](/help/implementing/developing/tools/web-console.md)
     + [Using CRXDE Lite](/help/implementing/developing/tools/crxde.md)
     + [Package Manager](/help/implementing/developing/tools/package-manager.md)
     + [The Link Externalizer](/help/implementing/developing/tools/externalizer.md)
@@ -1636,6 +1638,7 @@ user-guide-title: AEM as a Cloud Service
     + [Validating and Debugging using Dispatcher Tools Legacy](/help/implementing/dispatcher/validation-debug-legacy.md)
     + [CDN in AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
     + [Configuring Traffic at the CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+    + [CDN Configuration Snippets for Common Scenarios](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)
     + [Pipeline-free URL Redirects](/help/implementing/dispatcher/pipeline-free-url-redirects.md)
     + [Edge Side Includes](/help/implementing/dispatcher/edge-side-includes.md)
     + [Configuring CDN Credentials and Authentication](/help/implementing/dispatcher/cdn-credentials-authentication.md)

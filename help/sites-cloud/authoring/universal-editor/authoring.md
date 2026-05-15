@@ -118,7 +118,7 @@ The rich text editor (RTE) of the Universal Editor allows the author to apply st
 * **Unlink**
   * Remove link from selected text.
 * **Image**
-  * Specify a URL or use the [asset selector](/help/assets/overview-asset-selector.md#using-asset-selector) to select an asset from AEM.
+  * Specify a URL or use the [Content Advisor](/help/assets/integrate-adobe-non-adobe-applications.md) to select an asset from AEM.
 * **Table**
   * Use the drop-down to insert a new table of the selected number of columns and rows or insert and remove new columns/rows.
 * **Alignment**
@@ -146,7 +146,7 @@ You can view its details in the [properties panel.](/help/sites-cloud/authoring/
 ![Editing media](assets/ue-edit-media.png)
 
 1. Tap or click the preview of the selected image in the properties panel.
-1. The [asset selector](/help/assets/overview-asset-selector.md#using-asset-selector) window opens to allow you to select an asset.
+1. The [Content Advisor](/help/assets/integrate-adobe-non-adobe-applications.md) window opens to allow you to select an asset.
 1. Select to select a new asset.
 1. Select **Select** to return to the properties panel where the asset was replaced.
 
@@ -242,7 +242,18 @@ The selected component deleted.
 
 ### Reordering and Moving Components {#reordering-components}
 
-You can move and reorder components using the context menu or the content tree.
+You can move and reorder components using drag-and-drop, the context menu, or the content tree.
+
+>[!NOTE]
+>
+>Components can only be moved between containers if the target containers [component filter](/help/implementing/universal-editor/filtering.md) allows the selected component.
+
+#### Move Components with Drag-and-Drop {#drag-and-drop-move}
+
+1. Click and drag the component you wish to move.
+   * As you mouse over the destination, the editor will show you where the component will be placed if you drop it with a horizontal blue line.
+   ![Drag-and-drop a component to move it](assets/drag-and-drop-component-move.png)
+1. Drop the component to relocate it.
 
 #### Move Components with the Context Menu {#move-context-menu}
 
@@ -265,7 +276,7 @@ The component is moved in both the editor and the content tree.
 >
 >The context menu options can only move components within their containers. If you wish to move components between containers, [use the content tree.](#reorder-content-tree)
 
-#### Reorder Components with the Content Tree {#reorder-content-tree}
+#### Move Components with the Content Tree {#reorder-content-tree}
 
 1. If not already in [content tree mode](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), switch to it.
 1. Select a container component in the content tree or in the editor.
@@ -277,10 +288,6 @@ The component is moved in both the editor and the content tree.
 1. The dragged component is grayed in the content tree, while your insertion point is represented by a blue line. Release the component to place it in its new location.
 
 The components are reordered in both the content tree and in the editor.
-
->[!NOTE]
->
->Components can only be moved between containers if the target containers [component filter](/help/implementing/universal-editor/filtering.md) allows the selected component.
 
 ### Undo and Redo {#undo-redo}
 

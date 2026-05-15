@@ -2,7 +2,6 @@
 title: AEM Sites Translation Journey
 description: Start here for a guided journey through translating your AEM Sites content using AEM's powerful translation tools.
 index: true
-hide: no
 hidefromtoc: no
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 solution: Experience Manager Sites

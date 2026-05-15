@@ -6,7 +6,7 @@ topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 feature: Adaptive Forms
 role: User
-hide: yes
+hide: true
 hidefromtoc: yes
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 59ae0eed-d832-4f46-9f99-7bcca9f82306

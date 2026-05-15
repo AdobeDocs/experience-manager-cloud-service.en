@@ -73,7 +73,7 @@ Customers with a license with a logging vendor or who host a logging product can
       <td>Sumo Logic</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td style="background-color: #ffb3b3;">Future</td>
+      <td>Yes</td>
     </tr>
   </tbody>
 </table>
@@ -517,8 +517,6 @@ The "Ingest Logs" scope attribute is required for the Token.
 
 ### Sumo Logic {#sumologic}
 
-Log Forwarding to Sumo Logic supports AEM and Dispatcher Logs; CDN logs are not yet supported.
-
 When configuring Sumo Logic for data ingestion you will be presented with an "HTTP Source Address" which provides the host, receiverURI and the private key in a single string.  For example:
 
 `https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
@@ -538,9 +536,12 @@ You will need to copy the last section of the URL (without the preceeding `/`) a
   ```
 
 >[!NOTE]
->CDN Log support for SumoLogic is planned for the future. Please email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) to register interest.
+>The `index` field behavior depends on the log type:
 >
-> You will require a Sumo Logic Enterprise subscription to take advantage of the "index" field functionality.  Non-Enterprise subscriptions will have their logs routed to the `sumologic_default` partition as standard.  See the [Sumo Logic Partitioning Documentation](https://help.sumologic.com/docs/search/optimize-search-partitions/) for more information.
+>* **AEM logs (including Apache/Dispatcher)**: routed to the partition specified by `index`, provided you have a Sumo Logic Enterprise subscription. Non-Enterprise subscriptions route to the `sumologic_default` partition instead.
+>* **CDN logs**: the `index` field is ignored, as indexing is not technically supported for CDN logs forwarded to Sumo Logic. CDN logs are always routed to the `sumologic_default` partition.
+>
+>See the [Sumo Logic Partitioning Documentation](https://help.sumologic.com/docs/search/optimize-search-partitions/) for more information.
 
 ## Log Entry Formats {#log-formats}
 

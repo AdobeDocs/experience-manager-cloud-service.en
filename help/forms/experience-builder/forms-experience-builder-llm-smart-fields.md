@@ -1,7 +1,7 @@
 ---
 title: LLM-enhanced smart fields in Forms Experience Builder
 description: Learn how to create intelligent form fields with pre-populated options using AI knowledge base for geographic data, business classifications, and industry standards.
-hide: yes
+hide: true
 index: false
 hidefromtoc: yes
 role: Admin, Developer

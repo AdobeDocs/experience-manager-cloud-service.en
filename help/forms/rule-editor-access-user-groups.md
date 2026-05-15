@@ -4,7 +4,7 @@ description: There are different types of users with varied skills that work wit
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
-hide: yes
+hide: true
 hidefromtoc: yes
 exl-id: 2ef0e685-458b-4117-b02a-55dd3472577e
 ---

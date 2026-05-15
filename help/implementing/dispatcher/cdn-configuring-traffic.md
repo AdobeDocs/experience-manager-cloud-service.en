@@ -21,6 +21,8 @@ Additionally, if the CDN cannot contact its origin, you can write a rule that re
 
 All these rules, declared in a configuration file in source control, are deployed by using the Cloud Manager [config pipeline](/help/operations/config-pipeline.md). Be aware that the cumulative size of the configuration file, including traffic filter rules, cannot exceed 100KB.
 
+For additional code snippets for common scenarios, see the [CDN Configuration Snippets for Common Scenarios](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md) article.
+
 ## Order of Evaluation {#order-of-evaluation}
 
 Functionally, the various features mentioned previously are evaluated in the following sequence:
@@ -379,6 +381,8 @@ Explained in the table below are the available actions.
 
 You can leverage the AEM CDN to route traffic to different backends, including non-Adobe applications (perhaps on a per-path or subdomain basis).
 
+The request properties `originalPath` and `originalUrl` are the immutable original path (without query parameters) and full URL (including query parameters), respectively—each taken before any CDN [request transformations](#request-transformations). Use them in `when` conditions when you need to anchor rules on what the client initially sent, rather than values that may have been rewritten earlier in the evaluation sequence. Use `originalPath` for path-only matching; use `originalUrl` when the query string must be part of the condition (for example, routing or filtering on a specific initial request URL).
+
 Configuration example:
 
 ```
@@ -388,7 +392,7 @@ data:
   originSelectors:
     rules:
       - name: example-com
-        when: { reqProperty: path, like: /proxy* }
+        when: { reqProperty: originalPath, like: /proxy* }
         action:
           type: selectOrigin
           originName: example-com
@@ -519,7 +523,7 @@ data:
           allOf:
             - reqProperty: domain
               equals: www.example.com
-            - reqProperty: path
+            - reqProperty: originalPath
               like: /graphql*
         action:
           type: selectOrigin
@@ -548,13 +552,13 @@ data:
   redirects:
     rules:
       - name: redirect-absolute
-        when: { reqProperty: path, equals: "/page.html" }
+        when: { reqProperty: originalPath, equals: "/page.html" }
         action:
           type: redirect
           status: 301
           location: https://example.com/page
       - name: redirect-relative
-        when: { reqProperty: path, equals: "/anotherpage.html" }
+        when: { reqProperty: originalPath, equals: "/anotherpage.html" }
         action:
           type: redirect
           location: /anotherpage

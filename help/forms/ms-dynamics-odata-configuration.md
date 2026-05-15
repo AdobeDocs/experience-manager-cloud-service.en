@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-hide: yes
+hide: true
 hidefromtoc: yes
 ---
 # [!DNL Microsoft Dynamics] OData configuration {#microsoft-dynamics-odata-configuration}

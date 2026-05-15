@@ -4,7 +4,6 @@ description: Learn how to add an Edge Delivery pipeline to build and deploy your
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-hide: no
 index: false
 hidefromtoc: no
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
