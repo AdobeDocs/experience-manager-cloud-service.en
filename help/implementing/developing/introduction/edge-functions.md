@@ -3,8 +3,8 @@ title: AEM Edge Functions
 description: Learn how to execute JavaScript at the CDN layer with AEM Edge Functions to enable personalization, security, and dynamic experiences close to the end user.
 feature: Developing, Edge Delivery Services
 role: Developer
+exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
 ---
-
 # AEM Edge Functions {#aem-edge-functions}
 
 >[!IMPORTANT]

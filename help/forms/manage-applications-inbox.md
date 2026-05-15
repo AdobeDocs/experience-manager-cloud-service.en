@@ -7,7 +7,7 @@ topic-tags: document_services, publish
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 feature: Adaptive Forms
 role: User
-hide: yes
+hide: true
 hidefromtoc: yes
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 92130660-9942-426f-ae2f-4f3300f9735c

@@ -2,7 +2,7 @@
 title: Forms Experience Builder
 description: Craft powerful forms faster using Form Fragments
 feature: Edge Delivery Services
-hide: yes
+hide: true
 index: false
 hidefromtoc: yes
 role: Admin, Developer
