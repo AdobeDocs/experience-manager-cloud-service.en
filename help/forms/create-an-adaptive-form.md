@@ -6,7 +6,6 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 hide: true
-hidefromtoc: yes
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
 ---

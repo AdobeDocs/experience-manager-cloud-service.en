@@ -4,7 +4,6 @@ description: Learn to use email templates with Adaptive forms.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 hide: true
-hidefromtoc: yes
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 640130c0-e5d2-4af1-8ed9-c3bdde31d958
 ---
