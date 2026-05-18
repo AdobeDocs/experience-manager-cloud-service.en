@@ -28,7 +28,7 @@ See also [Health Assessment patterns](#ha-patterns) for rule definitions and rem
 1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
 1. In the **Quick access** section, click **Experience Manager**.
 1. In the left side panel, click **Cloud Manager**.
-1. Select an organization that you want. The image below is for illustration. Select your own organization name.
+1. Select an organization that you want to use. The image below is for illustration. Select your own organization name.
 
     ![Selecting an organization in Cloud Manager](/help/implementing/cloud-manager/reports/assets/ha-org.png)
 
@@ -48,7 +48,7 @@ See also [Health Assessment patterns](#ha-patterns) for rule definitions and rem
 1. [Access the Health Assessment page](#access-health-assessment).
 1. In the upper-right corner of the **Health Assessment** page, confirm the target environment that you are about to assess.
 
-    If the environment is incorrect, click ![Chevron down or drop-down menu to selected a different environment](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) to choose the correct environment from the list.
+    If the environment is incorrect, click ![Chevron down or drop-down menu to select a different environment](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) to choose the correct environment from the list.
 
 1. Click **Run Report**.
 
@@ -109,7 +109,7 @@ On the **Health Assessment** page, review the **Past Reports** section for the f
 
 ![Review past reports](/help/implementing/cloud-manager/reports/assets/ha-past-reports.png)
 
-* To the right of the **Past Reports** heading, click ![Chevron down or drop-down menu to selected a different environment](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) to sort past reports by date.
+* To the right of the **Past Reports** heading, click ![Chevron down or drop-down menu to select a different environment](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) to sort past reports by date.
 * To the far right of a report, click ![Ellipsis icon or More icon](https://spectrum.adobe.com/static/icons/ui_18/More.svg), then click **View details** or **Download**.
 
 
