@@ -55,9 +55,23 @@ AEM Assets view enables you to customize the following actions in Browse view:
 
 * Customize the actions that display when you click More options (...) in the asset card.
 
-* Customize the actions available in the Header menu.
-
 For more information, see [Browse View](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
+
+## Customize header menu in Assets view {#customize-header-menu-assets-view}
+
+AEM Assets view enables you to customize the header menu—the buttons at the top right of the browse and details screens. You can:
+
+* Add custom buttons to the header menu before the built-in header menu buttons.
+
+* Hide built-in header menu buttons for the current browse or details context.
+
+* Override built-in header menu button clicks so your extension handles the action instead of the default handler.
+
+In browse view, header menu customization is context-aware across assets, search, trash, recently viewed, and collections. You can add custom buttons in any of these contexts. Built-in buttons such as **Create folder** and **Add assets** (in the assets context) and **Create collection** (in collections) can be hidden or overridden where they are available.
+
+In details view, you can add custom buttons and customize built-in actions such as **Assign tasks** and **Download**.
+
+For more information, including API references and code examples, see [Browse View](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/#custom-header-menu-buttons) and [Details View](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/details-view/#custom-header-menu-buttons-in-details-view).
 
 ## Open custom dialogs in Assets view {#open-custom-dialogs-assets-view}
 
