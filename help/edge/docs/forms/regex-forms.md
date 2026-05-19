@@ -4,7 +4,6 @@ description: Edge Delivery Services for AEM Forms commonly used regex expression
 feature: Edge Delivery Services
 role: User
 hide: true
-hidefromtoc: yes
 exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
 ---
 # Commonly used regex expressions for validations
