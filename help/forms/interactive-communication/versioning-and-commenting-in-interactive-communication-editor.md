@@ -6,7 +6,6 @@ feature: Interactive Communication
 role: User, Developer, Admin
 hide: true
 index: false
-hidefromtoc: yes
 exl-id: ca9917c0-d8bb-4381-afab-7ab888d992e8
 ---
 # Versioning and Commenting in Interactive Communication Editor
