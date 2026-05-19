@@ -137,7 +137,7 @@ Useful for scenarios including debugging and data analysis, you can include more
 
 #### Region, Continent, and Organization Properties as Matching Conditions {#matching-conditions}
 
-CDN rules can now match based on region, continent, and organization for use cases including blocking traffic and redirects. `clientRegion` and `clientContinent` augment the already-supported `clientCountry` to match based on geography, while `clientAsName` and `clientAsNumber` match Autonomous Systems to identify large ISPs, companies, or cloud providers. Learn more about these [newly exposed request properties](/help/security/traffic-filter-rules-including-waf.md#condition-structure).
+CDN rules can now match based on region, continent, and organization for use cases including blocking traffic and redirects. `clientRegion` and `clientContinent` augment the already-supported `clientCountry` to match based on geography, while `clientAsName` and `clientAsNumber` match Autonomous Systems to identify large ISPs, companies, or cloud providers. Learn more about these [newly exposed request properties](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure).
 
 #### Set Cookie Value {#cookie-attributes}
 
