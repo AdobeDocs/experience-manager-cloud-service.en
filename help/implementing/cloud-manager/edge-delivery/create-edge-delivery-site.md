@@ -5,6 +5,7 @@ feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
 ---
+
 # Create your first Edge Delivery site with one click{#about-one-click-edge-delivery-site}
 
 Creating your first Edge Delivery site with one click is designed to help you automate the onboarding and deployment of Edge Delivery sites within Cloud Manager. It greatly simplifies the process by having you click a single button. The single click provisions the required infrastructure, integrates with GitHub for version control, and configures your document and asset storage in Google Drive.
@@ -45,7 +46,7 @@ See also [Introduction to Edge Delivery Services in Cloud Manager](/help/impleme
 1. In the **Create Edge Delivery site** dialog box, in the **Project name** text field, enter the name of your site.
 1. Under **Authoring options**, select one of the following:
     * **Doc Authoring** — Author content in Google Drive or SharePoint. This option is the default and does not require an AEM environment.
-    * **AEM Authoring (Beta)** — Author content in AEM using the Universal Editor. If you choose this option, under **Select template**, select an initial template for your Edge Delivery site.
+    * **AEM Authoring** — Author content in AEM using the Universal Editor. If you choose this option, under **Select template**, select an initial template for your Edge Delivery site.
 
     ![Create Edge Delivery site dialog box with AEM Authoring selected.](/help/implementing/cloud-manager/edge-delivery/assets/eds-create-aem-authoring.png)
 
@@ -75,11 +76,7 @@ See also [Publish content from AEM Author to Edge Delivery](#publish-from-aem-au
     | Give users access to the content repository on Google Drive | <ul><li> In the **Edge Delivery sites** list box, to the far right of your site's name, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) to open the drop-down menu.</li><li>Click ![Users Add icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_UsersAdd_18_N.svg) **Gain access to the content repository** in the drop-down menu.</li><li>In the **`Add collaborators to your site`** dialog box, enter the email address of a contributor, then click ![Checkmark icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg).</li><li>Continue adding contributor emails, as necessary.</li><li>When you are finished, click **Add collaborators**.</li><li>To share the link with your content collaborators, in the **Collaboration added successfully** dialog box, click **OK**.</li><li>In the Collaboration added successfully dialog box, click ![Copy icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) to copy the link and share it with your collaborators.<br>Before sharing the link, confirm that collaborators are logged in with the email address associated with their IMS account. If their IMS email account is unavailable, they must use the email address added as a collaborator. Doing so ensures that collaborators can access the link and see the content to edit or update on Google Drive.</li><li>When done editing, click **Publish site** in Cloud Manager, as described above.<br>Or, preview the changes made, as described above.</li></ul> |
     | Give users access to the base repository on GitHub | <ul><li> In the **Edge Delivery sites** list box, to the far right of your site's name, click ![More icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) to open the drop-down menu.</li><li>Click ![Code icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) **Gain access to the base repository** in the drop-down menu.</li><li>In the **Access the base repository for your site** dialog box, enter the GitHub username of a collaborator, then click ![Checkmark icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg).</li><li>Continue adding GitHub usernames, as necessary.</li><li>When you are finished, click **Add collaborators**.</li>Users must grant access to their own GitHub username to view the repository. |
 
-## Publish content from AEM Author to Edge Delivery (Beta) {#publish-from-aem-author}
-
->[!NOTE]
->
->The publishing feature described here is in Beta. To join the Beta, email [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) with your Adobe Organization ID and Program ID.
+## Publish content from AEM Author to Edge Delivery {#publish-from-aem-author}
 
 This capability is available only for Edge Delivery sites created with the AEM Authoring option.
 
