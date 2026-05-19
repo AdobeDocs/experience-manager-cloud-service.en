@@ -5,7 +5,6 @@ feature: Release Information
 role: Admin
 hide: true
 index: false
-hidefromtoc: yes
 exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
 ---
 

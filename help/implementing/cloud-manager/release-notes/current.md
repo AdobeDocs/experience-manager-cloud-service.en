@@ -24,7 +24,7 @@ The next planned release is Thursday, June 4, 2026.
 
 * **Soft delete for a production program**
 
-    Cloud Manager now allows customers to delete production programs using a soft delete workflow. You can restore deleted programs within 30 days, providing you an additional safety window before permanent deletion. This feature is being rolled out progressively throughout May.
+    Cloud Manager now allows customers to delete production programs using a soft delete workflow. You can restore deleted programs within 30 days, providing you with an additional safety window before permanent deletion. This feature is being rolled out progressively throughout May.
 
     See [Mark a production program for deletion](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-production-program).
 
@@ -69,7 +69,7 @@ For more information, see the following:
 * [Using Smart Build in a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build).
 * [Add a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
 
-To join the Beta, email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe OrgID and Program ID.
+To join the Beta, email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe Organization ID and Program ID.
 
 <!-- 
 OLD
