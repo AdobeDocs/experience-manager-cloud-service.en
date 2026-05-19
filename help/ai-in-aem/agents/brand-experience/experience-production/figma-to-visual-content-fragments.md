@@ -3,8 +3,8 @@ title: Figma to Visual Content Fragments Job
 description: Learn what the Brand Experience Agent's Figma to Visual Content Fragments job is and what it can do for you.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
-hide: yes
-hidefromtoc: true
+hide: true
+hidefromtoc: yes
 index: false
 ---
 
