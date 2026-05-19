@@ -67,6 +67,20 @@ Sample prompts include:
 * on `<your-author-env-URL>` remove the section "Rewards unclaimed is a Gift missed!"
 * on `<your-author-env-URL>` update based on the attached
 
+### File Upload in AI Assistant {#file-upload-in-ai-assistant}
+
+As well as entering natural language prompts directly, you can also upload a document to request changes.
+
+Use the `+` icon in the bottom left of the prompt menu to upload a file specifying your requirements. Supported file formats include; PDF, JPG, PNG, DOCX, and others.
+
+![Content Update job - file upload](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-file-upload.png)
+
+For example an annotated PDF, specifying the requested changes:
+
+![Content Update job - annotated PDF](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-annotated-pdf.png)
+
+>[!VIDEO](https://video.tv.adobe.com/v/3491297?learn=on)
+
 ### Orchestration with the Brand Governance Agent  {#orchestration-with-the-brand-governance-agent}
 
 If the organization has imported their brand policy the Content Update job will use this policy during agentic content updates (see the [Overview](#overview) video).
@@ -132,6 +146,26 @@ In the case of a `process` command to trigger updates, the responses might follo
 * The following image shows an example Jira that triggers the `process`command for the content update job:
 
   ![Example Jira using the content update job of the Brand Experience Agent](assets/content-update-jira-example.png)
+
+## Further refinement in authoring {#further-refinement-in-authoring}
+
+After you choose to edit the page in AEM, it opens in your authoring environment (for example, the [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) or the [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md)).
+
+In the [Universal Editor](#universal-editor-edit-text-with-the-assistant), the AI Assistant is *context aware*: you can select elements on the canvas and work on them with the assistant.
+
+### Universal Editor - edit text with the Assistant {#universal-editor-edit-text-with-the-assistant}
+
+To refine copy from the Assistant while authoring:
+
+1. Select the element in the [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md).
+1. Open the AI Assistant from the upper-right corner, enter your prompt, and submit.
+
+Example prompts:
+
+* `Update to Explore the World of Coffee`
+* `Update to be more engaging for the 30-40 year old age demographic and avid coffee drinker`
+
+Select **Apply changes** (or equivalent) so updates appear on the page.
 
 ## Activation {#activation}
 
