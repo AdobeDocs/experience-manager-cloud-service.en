@@ -4,7 +4,6 @@ description: Frequently asked questions
 feature: Release Information
 role: Admin
 hide: true
-hidefromtoc: yes
 exl-id: 4cc1bff3-edfb-4826-b914-2a2231b703f9
 ---
 # Frequently asked questions

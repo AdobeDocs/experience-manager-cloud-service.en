@@ -6,7 +6,6 @@ feature: Interactive Communication
 role: User, Developer, Admin
 hide: true
 index: false
-hidefromtoc: yes
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
 ---

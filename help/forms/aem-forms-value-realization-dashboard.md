@@ -4,7 +4,6 @@ description: Effortlessly monitor form submissions on your AEM Forms instances w
 feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
-hidefromtoc: yes
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
 ---
 # Understanding your value realization dashboard

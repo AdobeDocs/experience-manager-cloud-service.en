@@ -4,7 +4,6 @@ description: Use Adaptive Forms expressions to add automatic validation, calcula
 feature: Adaptive Forms, Foundation Components
 role: User
 hide: true
-hidefromtoc: yes
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: e5b77cc1-5fb1-4f73-afe6-64f1c407e42b
 ---

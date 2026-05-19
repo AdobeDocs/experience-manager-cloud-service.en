@@ -4,7 +4,6 @@ description: Find answers to common questions about Forms Experience Builder, in
 feature: Edge Delivery Services
 hide: true
 index: false
-hidefromtoc: yes
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: f43c2586-9075-47dc-aa45-5ed2d2979b6d

@@ -13,7 +13,7 @@ Learn about the New Relic One application performance monitoring (APM) service f
 
 ## About New Relic One {#introduction}
 
-Adobe places a great emphasis on the monitoring, availability, and performance of your application. AEM as a Cloud Service includes access to New Relic One monitoring, giving teams comprehensive visibility into system and environment performance metrics as part of the standard product offering.
+Adobe places emphasis on the monitoring, availability, and performance of your application. AEM as a Cloud Service includes access to New Relic One monitoring, giving teams comprehensive visibility into system and environment performance metrics as part of the standard product offering.
 
 This article outlines how to manage access to New Relic One application performance monitoring (APM) features in AEM as a Cloud Service environments. Effective management of these features supports optimal performance and maximizes the benefits of AEM as a Cloud Service.
 
@@ -29,7 +29,7 @@ New Relic One APM for AEM as a Cloud Service has many features.
 
 * Holistic performance optimization by combining key metrics from infrastructure-level monitoring and application (Adobe Experience Manager) monitoring.
 
-* Automatic change trackers for Cloud Manager pipeline executions, AEM upgrades and Code Restore operations. These trackers let teams correlate deployments with application performance changes directly in New Relic One.
+* Automatic change trackers for Cloud Manager pipeline executions, AEM upgrades, and Code Restore operations. These trackers let teams correlate deployments with application performance changes directly in New Relic One.
 
 ## Activate your New Relic One sub-account {#activate-sub-account}
 
@@ -90,7 +90,7 @@ Once the users are defined, New Relic sends a confirmation email to each one. Fr
 
 >[!NOTE]
 >
->If you are managing the New Relic One users, you must also add yourself as a user too. Being the **Business Owner** or **Deployment Manager** does not suffice to have access to New Relic One.
+>If you are managing the New Relic One users, you must also add yourself as a user. Being the **Business Owner** or **Deployment Manager** is not enough to have access to New Relic One.
 
 ## Activate your New Relic One user account {#activate-user-account}
 
@@ -110,13 +110,13 @@ Once a New Relic One user account is created, as described in [Manage New Relic 
 
 1. New Relic sends you an email containing a link to confirm the account.
 
-If you do not receive a confirmation email from New Relic, see the [troubleshooting section](#troubshooting).
+If you do not receive a confirmation email from New Relic, see the [troubleshooting section](#troubleshooting).
 
 ## Open New Relic One {#accessing-new-relic}
 
-Once you have [activated your New Relic account](#activate-account), you can open New Relic One by way of Cloud Manager or directly.
+Once you have [activated your New Relic account](#activate-account), you can open New Relic One using Cloud Manager or directly.
 
-**To open New Relic One by way of Cloud Manager:**
+**To open New Relic One using Cloud Manager:**
 
 1. Sign into Cloud Manager at [experience.adobe.com](https://experience.adobe.com).
    1. In the **Quick access** section, click **Experience Manager**.
@@ -142,11 +142,11 @@ If you are asked to verify your email during login to New Relic One, it means th
 
 If you do not verify your email address, New Relic attempts to log you in with the most recently created user record associated with your email address. To avoid verifying your email during each login, click the **Remember Me** checkbox in the login screen.
 
-For more help, open a support ticket by way of the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+For more help, open a support ticket using the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Use change tracker {#change-tracker}
 
-Cloud Manager automatically sends change trackers to New Relic One whenever supported pipeline executions, AEM upgrades and Code Restore are complete. These trackers appear as change events in New Relic's **Change Tracking** view, letting your team correlate deployments with shifts in application performance, error rates, and throughput.
+Cloud Manager automatically sends change trackers to New Relic One whenever supported pipeline executions, AEM upgrades, and Code Restore are complete. These trackers appear as change events in New Relic's **Change Tracking** view, letting your team correlate deployments with shifts in application performance, error rates, and throughput.
 
 <!-- See also [Introduction to change tracking](https://docs.newrelic.com/docs/change-tracking/overview/) and [Record and view deployments](https://docs.newrelic.com/docs/apm/apm-ui-pages/events/record-deployments/). -->
 
@@ -173,7 +173,7 @@ After a supported pipeline execution completes, you can view the corresponding c
 
 **To view change trackers in New Relic One:**
 
-1. [Access New Relic One](#accessing-new-relic) by way of Cloud Manager or directly.
+1. [Access New Relic One](#accessing-new-relic) using Cloud Manager or directly.
 1. Navigate to **APM & Services** and select the application for the relevant environment.
 1. On the application summary page, look for change tracker indicators on the chart. Hover over a tracker to see deployment details.
 
@@ -222,7 +222,7 @@ If you were added as a New Relic One user, as described in [Manage New Relic One
 
 1. New Relic sends you an email containing a link to confirm the account.
 
-If you complete the sign-up process and are unable to log in to your account due to email or password error messages, log a support ticket by way of the [Admin Console](https://adminconsole.adobe.com/).
+If you complete the sign-up process and are unable to log in to your account due to email or password error messages, log a support ticket using the [Admin Console](https://adminconsole.adobe.com/).
 
 If you do not receive an email from New Relic, do the following:
 
@@ -242,7 +242,7 @@ If you do not receive an email from New Relic, do the following:
 >
 >Follow the same steps in the [Activate Your New Relic One Sub-Account](#activate-sub-account) section of this document to re-activate your New Relic One sub-account.
 
-For more help or additional guidance on New Relic One offerings for your AEM as a Cloud Service Program, open a support ticket by way of the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+For more help or additional guidance on New Relic One offerings for your AEM as a Cloud Service Program, open a support ticket using the [AEM Support Portal](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 ## Frequently asked questions {#faqs}
 
