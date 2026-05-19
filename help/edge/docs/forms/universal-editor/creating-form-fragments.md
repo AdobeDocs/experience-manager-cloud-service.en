@@ -230,8 +230,8 @@ You can perform several operations on form fragments using the AEM Forms user in
     </tr>
     <!--
     <tr>
-   <td><p>Add Dictionary</p> </td>
-   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
+    <td><p>Add Dictionary</p> </td>
+    <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
     </tr>
     -->
     <tr>

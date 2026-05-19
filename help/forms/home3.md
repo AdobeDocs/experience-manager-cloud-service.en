@@ -5,8 +5,7 @@ landing-page-description: Modular digital form platform with independent compone
 keywords: AEM Forms, digital forms, form builder, adaptive forms, form integration, workflow automation, form analytics, document services
 role: Admin, Developer, User
 feature: Adaptive Forms, Release Information
-hide: yes
-hidefromtoc: yes
+hide: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
