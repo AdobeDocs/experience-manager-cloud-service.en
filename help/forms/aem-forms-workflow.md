@@ -7,7 +7,6 @@ topic-tags: publish, document_services
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: yes
 exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
 ---
 # Forms-centric workflow on OSGi {#forms-centric-workflow-on-osgi}

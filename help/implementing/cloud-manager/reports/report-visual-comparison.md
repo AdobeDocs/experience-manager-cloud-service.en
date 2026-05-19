@@ -5,7 +5,6 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 index: false
-hidefromtoc: yes
 hide: true
 exl-id: 88645197-af7a-4ce2-834f-0952d2f8f7fa
 ---

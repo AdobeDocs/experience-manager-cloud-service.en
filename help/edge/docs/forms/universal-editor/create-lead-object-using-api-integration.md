@@ -7,7 +7,6 @@ level: Beginner, Intermediate
 keywords: integrating API in rule editor, invoke service enhancements
 exl-id: 55835ffe-1b77-449b-b76d-16c0a343cf5c
 hide: true
-hidefromtoc: yes
 index: false
 ---
 # Create Salesforce Lead object using API Integration
