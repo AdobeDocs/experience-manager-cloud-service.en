@@ -4,7 +4,6 @@ description: Learn essential best practices for creating user-friendly, accessib
 feature: Edge Delivery Services
 role: Admin, Developer
 hide: true
-hidefromtoc: yes
 exl-id: 67b6873b-bb93-4d38-963c-2ca65a1a644b
 ---
 # Best Practices for Creating Forms

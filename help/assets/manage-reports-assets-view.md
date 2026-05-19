@@ -6,7 +6,6 @@ exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
 hide: true
-hidefromtoc: yes
 ---
 # Manage reports {#manage-reports}
 

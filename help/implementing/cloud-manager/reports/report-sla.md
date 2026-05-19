@@ -40,7 +40,7 @@ The line graph of a selected year includes data points for each month from Janua
 
 1. (Optional) Do any of the following:
 
-    * Roll your cursor over a data point in the line graph to show the specific values for that point.
+    * Move your cursor over a data point in the line graph to show the specific values for that point.
     * Below the line graph's year, click the icon **Download** to save a PNG image file of the line graph.
     * Click a metric name to see just that metric's data. Or, press `Shift` on the keyboard while selecting or deselecting one or more metric names.  
 
@@ -61,5 +61,5 @@ SLA reporting gives you insight into the performance of your AEM production envi
 
 ## Preview environments {#preview}
 
-The preview environment is intended as a tool for content authors to verify the content's final experience before publishing. Because of this functionality, preview environments are not designed with high-availability and do not have an associated SLA.
+The preview environment is intended as a tool for content authors to verify the content's final experience before publishing. Because of this functionality, preview environments are not designed with high availability and do not have an associated SLA.
 

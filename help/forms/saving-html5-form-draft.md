@@ -10,7 +10,6 @@ exl-id: a9879445-d626-4279-8a95-a9009294b483
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
-hidefromtoc: yes
 ---
 
 # Saving an HTML5 form as a draft {#saving-an-html-form-as-a-draft}

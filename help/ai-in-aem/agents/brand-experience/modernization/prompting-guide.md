@@ -213,11 +213,11 @@ Use this prompt to validate entire migrated pages for full-page visual fidelity 
   1. Migrate a page.
   1. Apply a design.
   1. Run a block critique on key blocks
-  1. Run ap age critique for full validation.
+  1. Run a page critique for full validation.
 
 ### Figma Block Migration {#figma-block-migration}
 
-Use this prompt to migrating a block from Figma design to Edge Delivery Services.
+Use this prompt to migrate a block from Figma design to Edge Delivery Services.
 
 Note that you must set up your Figma details in [the Experience Modernization Console](/help/ai-in-aem/agents/brand-experience/modernization/console.md) to use this prompt.
 
@@ -239,7 +239,7 @@ Note that you must set up your Figma details in [the Experience Modernization Co
   1. **Mapping to existing blocks** — The agent identifies the closest matching block in your project's block library and creates a custom variant.
   1. **CSS generation** — The agent writes styles that reference the extracted CSS custom properties, ensuring design consistency.
   1. **Asset download** — The agent saves images and icons from Figma to the hosted environment's workspace.
-  1. **Edge Delivery Services content generation** — The agent creates the markdown file following EDS block structure
+  1. **Edge Delivery Services content generation** — The agent creates the markdown file following Edge Delivery Services block structure
   1. **Output validation** — The agent previews the result and performs visual comparison against the original Figma design.
 * The skill first reads metadata (step 1) to understand structure, and then extracts detailed design context (steps 2-5).
   * This phased approach prevents issues with large or complex Figma files.
@@ -247,6 +247,60 @@ Note that you must set up your Figma details in [the Experience Modernization Co
   * All styles are extracted as CSS custom properties (design tokens) before any CSS is written.
   * This ensures the migrated block stays consistent with your design system.
 * The prompt requires the Figma URL (with `fileKey` and optional `node-id`) or a Figma file key directly as input.
+
+### Redesign Migration Using Figma-Derived Blocks {#figma-redesign-migration}
+
+Use this prompt when an existing website is being migrated into a redesigned experience.
+
+In this workflow, you first create the target block collection from Figma. The site migration then runs against the live source website and maps source content into the blocks that were created from Figma.
+
+* **Figma** is the target design and block-library source.
+* **The live website** remains the source of content.
+
+#### Example Prompts {#example-figma-redesign}
+
+1. Create the block collection from Figma:
+
+   * "Create the Edge Delivery Services block collection from these Figma components: `https://figma.com/design/{fileKey}?node-id={nodeId}`"
+
+1. Migrate source content into those blocks:
+
+   * "Migrate these pages and map the content to the Figma-derived block collection: URL1, URL2, URL3"
+
+#### What to Know {#wtk-figma-redesign}
+
+* Figma is used first to establish the redesigned block set.
+* Site migration then maps real website content into that block set.
+* **Content validation** is done against the source website.
+* **Visual validation** is done against the Figma-derived block collection and design system.
+* New block variants should be created only when existing Figma-derived blocks cannot represent the source content.
+
+#### Recommended workflow {#figma-redesign-workflow}
+
+1. Identify the Figma components needed for the redesigned site.
+1. Migrate those components into Edge Delivery Services blocks or variants.
+1. Review the generated block collection and design tokens.
+1. Run site migration on representative source pages.
+1. Map source content into the Figma-derived blocks.
+1. Validate content against the source website.
+1. Validate visual output against the target Figma design.
+1. Refine blocks or mappings, then scale to more pages.
+
+### Create a New Page from Figma {#figma-new-page-from-figma}
+
+Use this prompt when the page does not already exist on a source website and a Figma page or frame should drive creation of a new Edge Delivery Services page.
+
+#### Example Prompts {#example-figma-new-page}
+
+* "Migrate this Figma page to Edge Delivery Services: `https://figma.com/design/{fileKey}?node-id={nodeId}`"
+
+#### What to know {#wtk-figma-new-page}
+
+* This prompt works best with a **specific Figma frame or page**, not an entire file.
+* The frame should be organized into **clear page sections**.
+* Sections are mapped to existing blocks, default content, or new variants.
+* Text and assets come from Figma.
+* Dynamic features such as search, calculators, personalization, or store locators may require **separate block development** beyond what the Figma migration produces.
 
 ### Navigation Setup {#navigation-setup}
 
@@ -407,3 +461,9 @@ Use this prompt to troubleshoot problems with blocks, images, CSS, or preview.
   1. Block code
   1. Browser console
 * The agent has the capability to check local previews at `http://localhost:3000`.
+
+<!--
+## Additional Sections {#additional-sections}
+
+@gwalt, is the additional content in the prompting guide wiki ready to be added here?
+-->

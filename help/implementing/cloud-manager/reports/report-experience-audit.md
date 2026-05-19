@@ -5,6 +5,12 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 
 # Experience Audit dashboard {#experience-audit-dashboard}
@@ -20,7 +26,7 @@ Experience Audit validates the deployment process and helps ensure that the chan
 1. Meet baseline standards for performance, accessibility, best practices, and SEO.
 1. Do not introduce regressions.
 
-Experience Audit in Cloud Manager ensures that the user's experience on the site are of the highest standards.
+Experience Audit in Cloud Manager ensures that the user's experience on the site is of the highest standards.
 
 The audit results are informational and allow the deployment manager to see the scores and the change between the current and previous scores. This insight is valuable to determine if there is a regression that was introduced with the current deployment.
 
@@ -58,7 +64,7 @@ Experience Audit is available by default for production pipelines. It can be opt
 1. For both production and non-production pipelines, you define the paths that should be included in the Experience Audit on the **Experience Audit** tab.
 
    * Page paths must start with `/` and are relative to your site.
-   * For example, if your site is `wknd.site` and would like to include `https://wknd.site/us/en/about-us.html` in the Experience Audit, enter the path `/us/en/about-us.html`.
+   * For example, if your site is `wknd.site` and you would like to include `https://wknd.site/us/en/about-us.html` (example URL only) in the Experience Audit, enter the path `/us/en/about-us.html`.
 
    ![Defining a path for the Experience Audit](/help/implementing/cloud-manager/reports/assets/experience-audit-add-page.png)
 
@@ -143,21 +149,21 @@ When moving the mouse over the chart, a tooltip displays the values for the Goog
 
 ![Trend details](/help/implementing/cloud-manager/reports/assets/experience-audit-trend-details.png)
 
-If you click on the chart at a point in time, a pop-up opens with detail of that scan. Click the **open experience audit scan** to load that scan results into the **[Experience Audit scan results](#scan-results)** section.
+If you click on the chart at a point in time, a pop-up opens with details of that scan. Click the **open experience audit scan** to load those scan results into the **[Experience Audit scan results](#scan-results)** section.
 
 ![Select different scan](/help/implementing/cloud-manager/reports/assets/experience-audit-open-scan.png)
 
 #### Experience Audit scan results {#scan-results}
 
-The **Experience Audit scan results** section gives details of scores on all scanned pages. Use the **Prev** and **Next** buttons to page through the results and choose on how many the display should paginate.
+The **Experience Audit scan results** section gives details of scores on all scanned pages. Use the **Prev** and **Next** buttons to page through the results and choose how many the display should show.
 
 ![Scanned pages](/help/implementing/cloud-manager/reports/assets/experience-audit-scanned-pages.png)
 
-Click the link of a particular page updates the filter **Select** of the [**Page scores &mdash; trend** section](#trend) and shows the **Raw reports** tab that gives you scores for every audit of the page. Click the report date in the **Lighthouse Report** column to retrieve a JSON file of the raw data.
+Clicking the link of a particular page updates the filter **Select** of the [**Page scores &mdash; trend** section](#trend) and shows the **Raw reports** tab that gives you scores for every audit of the page. Click the report date in the **Lighthouse Report** column to retrieve a JSON file of the raw data.
 
 ![Raw report](/help/implementing/cloud-manager/reports/assets/experience-audit-raw-reports.png)
 
-A new tab that opens in your browser, directs you to `https://googlechrome.github.io/lighthouse/viewer/`. It automatically loads a signed URL containing the Lighthouse raw JSON report for the selected page, allowing for detailed inspection.
+A new tab that opens in your browser directs you to `https://googlechrome.github.io/lighthouse/viewer/`. It automatically loads a signed URL containing the Lighthouse raw JSON report for the selected page, allowing for detailed inspection.
 
 ![Viewing raw report](/help/implementing/cloud-manager/reports/assets/experience-audit-view-raw-report.png)
 
