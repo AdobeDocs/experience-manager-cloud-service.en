@@ -75,7 +75,7 @@ Use the `+` icon in the bottom left of the prompt menu to upload a file specifyi
 
 ![Content Update job - file upload](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-file-upload.png)
 
-For example an annotated PDF, specifying the requested changes:
+For example, an annotated PDF specifying the requested changes:
 
 ![Content Update job - annotated PDF](/help/ai-in-aem/agents/brand-experience/experience-production/assets/content-update-annotated-pdf.png)
 
