@@ -4,7 +4,7 @@ description: Learn what the Brand Experience Agent's Figma to Visual Content Fra
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 hide: yes
-hidefromtoc: yes
+hidefromtoc: true
 index: false
 ---
 

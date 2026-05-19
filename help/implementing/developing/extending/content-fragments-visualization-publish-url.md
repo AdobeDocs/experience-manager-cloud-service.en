@@ -310,11 +310,11 @@ An example is:
 
 ## CORS and Security Considerations {#cors-and-security-considerations}
 
-| Concern | Details | 
+| Concern | Details |
 |--- |--- |
-| CORS | The Content Fragment Visualization service configures CORS on the `/adobe/**` path with configurable allowed origins.<br>The [Inline Element (fetch + innerHTML)](#inline-element-fetch-and-innerhtml) 1 and [Customer Element + Shadow DOM](#custom-element-and-shadow-dom-recommended) techniques (which use `fetch()`) require the host page’s origin to be in the allowed list. <br>The [iFrame](#iframe) technique does not require CORS. | 
-| CSP/X-Frame-Options | The service does not set `Content-Security-Policy` or `X-Frame-Options` headers on the published HTML. If your CDN or Dispatcher adds these headers, verify that they permit framing (for [iFrame](#iframe)) or `fetch()` access (for inline/shadow DOM) from your host origins. | 
-| Content trust | The published HTML is pre-rendered from authored Content Fragment data using [Handlebars templates](/help/implementing/developing/extending/content-fragments-visualization-templates.md) managed by the service. It does not include user-generated scripts. However, as with any innerHTML injection, ensure you trust the source origin. | 
+| CORS | The Content Fragment Visualization service configures CORS on the `/adobe/**` path with configurable allowed origins.<br>The [Inline Element (fetch + innerHTML)](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md#inline-element-fetch-and-innerhtml) 1 and [Customer Element + Shadow DOM](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md#custom-element-and-shadow-dom-recommended) techniques (which use `fetch()`) require the host page’s origin to be in the allowed list. <br>The [iFrame](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md#iframe) technique does not require CORS. |
+| CSP/X-Frame-Options | The service does not set `Content-Security-Policy` or `X-Frame-Options` headers on the published HTML. If your CDN or Dispatcher adds these headers, verify that they permit framing (for [iFrame](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md#iframe)) or `fetch()` access (for inline/shadow DOM) from your host origins. |
+| Content trust | The published HTML is pre-rendered from authored Content Fragment data using [Handlebars templates](/help/implementing/developing/extending/content-fragments-visualization-templates.md) managed by the service. It does not include user-generated scripts. However, as with any innerHTML injection, ensure you trust the source origin. |
 
 ### Choose the appropriate technique {#choose-the-appropriate-technique}
 
