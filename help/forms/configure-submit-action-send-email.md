@@ -7,7 +7,7 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 role: User, Developer
 ---
-# Configure the Send Email submit action for an Adaptive Form
+# Configure the Send Email submit action for an Adaptive Form  
 
 The **[!UICONTROL Send Email]** Submit Action enables you to send an email to one or more recipients upon successful submission of the form. This Submit Action enables you to create an email that can include form data in a predefined format. For instance, consider the following template where customer name, shipping address, state name, and ZIP code are retrieved from the submitted form data:
 

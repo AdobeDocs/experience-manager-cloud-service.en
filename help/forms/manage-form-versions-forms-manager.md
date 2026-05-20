@@ -8,7 +8,7 @@ exl-id: cd2c6e15-99a6-4b4e-bfd1-8291a2001ebe
 ---
 # Manage Form Assets Versions in Forms Manager UI
 
-Forms Manager now supports versioning for form assets. You can create versions, view version history, and restore earlier versions of your assets from the Forms Manager UI.
+Forms Manager now supports versioning for form assets. You can create versions, view version history, and restore earlier versions of your assets from the Forms Manager UI. 
 
 ## Supported asset types {#supported-asset-types}
 

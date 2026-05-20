@@ -101,6 +101,9 @@ You can now discover, evaluate, and reuse approved assets from AEM Assets direct
 
 ### New Features in AEM Forms
 
+* **Versioning support in Forms Manager**
+Forms Manager now [supports versioning for Adaptive Forms (Core Components and Foundation Components)](/help/forms/manage-form-versions-forms-manager.md), form fragments, themes, XDP templates, and binary assets. Create versions, view complete version history, and restore earlier states of your form assets directly from the Forms & Documents console.
+
 * **Override reCAPTCHA cloud configuration with OSGi**  
 reCAPTCHA Enterprise project IDs, site keys, and secrets that you keep with your source files can resolve to different values on each Cloud Service environment after you [add the Context-Aware Configuration override and deploy through Cloud Manager](/help/forms/captcha-adaptive-forms.md#override-recaptcha-osgi).
 

@@ -14,7 +14,7 @@ exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
 
 For example, using Workfront Fusion, you can create a scenario to gather data with Adaptive Form, process the data, and send the data to a data store for archival. Once a scenario is set up, Workfront Fusion automatically executes the tasks whenever a user fills out a form, updating the data store seamlessly.
 
-AEM Forms as a Cloud Service provides an OOTB connector to connect and submit an Adaptive Form to Adobe Workfront Fusion. Submitting a form to Adobe Workfront Fusion can offer several advantages:
+AEM Forms as a Cloud Service provides an OOTB connector to connect and submit an Adaptive Form to Adobe Workfront Fusion. Submitting a form to Adobe Workfront Fusion can offer several advantages: 
 
 * It enabled seamless transfer of form submissions data to Workfront Fusion workflows.
 * It helps automate various tasks triggered by form submissions. This can include initiating projects, assigning tasks to specific team members, sending notifications, and updating project statuses—all without manual intervention.
