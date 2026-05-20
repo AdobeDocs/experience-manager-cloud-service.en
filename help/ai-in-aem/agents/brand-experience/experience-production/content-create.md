@@ -7,7 +7,7 @@ role: User, Admin, Developer
 
 # Content Create Job {#content-create}
 
-The Content Create job is the part of the [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) that creates new on-brand pages using natural language, a marketing brief, and an AEM template. It accelerates page production for Adobe Experience Manager (AEM) as a Cloud Service and Edge Delivery Services.
+The Content Create job is the part of the [Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) that creates new on-brand pages using natural language, a marketing brief, and an AEM template. The job accelerates page production for Adobe Experience Manager (AEM) as a Cloud Service and Edge Delivery Services.
 
 <!-- see Limitations too and update when appropriate -->
 

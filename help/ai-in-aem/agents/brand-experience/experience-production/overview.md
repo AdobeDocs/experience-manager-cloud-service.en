@@ -35,7 +35,9 @@ The [Content Create](/help/ai-in-aem/agents/brand-experience/experience-producti
 
 >[!NOTE]
 >
->The Content Create job is currently in Limited Availability. If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+>The Content Create job is currently in Limited Availability. 
+>
+>If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ### Form Creation Job {#form-creation}
 
