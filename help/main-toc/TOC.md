@@ -101,6 +101,7 @@ user-guide-title: AEM as a Cloud Service
   + AEMaaCS Maintenance Release Notes {#maintenance}
     + [Current Maintenance Release Notes](/help/release-notes/maintenance/latest.md)
     + 2026 {#2026}
+      + [Maintenance Release Notes for 2026.5.0](/help/release-notes/maintenance/2026/2026-5-0.md)
       + [Maintenance Release Notes for 2026.4.0](/help/release-notes/maintenance/2026/2026-4-0.md)
       + [Maintenance Release Notes for 2026.3.0](/help/release-notes/maintenance/2026/2026-3-0.md)
       + [Maintenance Release Notes for 2026.2.0](/help/release-notes/maintenance/2026/2026-2-0.md)
@@ -663,7 +664,7 @@ user-guide-title: AEM as a Cloud Service
   + Content Fragments {#content-fragments}
     + [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
     + [Headless Delivery with Content Fragments and GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
-    + [Enable Content Fragment Functionality for your Instance](/help/assets/content-fragments/content-fragments-configuration-browser.md)
+    + [Enable Content Fragment Functionality for your instance](/help/assets/content-fragments/content-fragments-configuration-browser.md)
     + [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
     + [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md)
     + [Variations - Authoring Fragment Content](/help/assets/content-fragments/content-fragments-variations.md)
@@ -1129,6 +1130,7 @@ user-guide-title: AEM as a Cloud Service
       + Experience Production Agent {#experience-production}
         + [Overview](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)
         + [Content Update Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
+        + [Content Create Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md)
         + [Communication Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
         + [Form Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
         + [Figma to Visual Content Fragments Job](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md)
@@ -1681,3 +1683,4 @@ user-guide-title: AEM as a Cloud Service
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 + Troubleshooting {#troubleshooting}
   + {hide-from-toc} [Troubleshoot AEM Assets and Forms issues](/help/troubleshooting/home.md)
+

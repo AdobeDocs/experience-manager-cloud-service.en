@@ -50,11 +50,7 @@ These two options also have different capabilities:
 For full setup instructions, see [Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed)
 
 
-## About Edge Delivery Services with AEM authoring (Beta) {#eds-aem-authoring}
-
->[!NOTE]
->
->The flexible publish tier and AEM authoring crosswalk features described here are in Beta. To join the Beta, email [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com) with your Adobe Organization ID and Program ID.
+## About Edge Delivery Services with AEM authoring {#eds-aem-authoring}
 
 Modern web experiences require high-performance delivery, but many organizations also rely on established AEM authoring workflows, governance, and content reuse patterns. To help your teams modernize delivery without disrupting authoring, Cloud Manager introduces capabilities that let you do the following:
 
@@ -122,8 +118,6 @@ An Edge Delivery Services can be added in a number of different ways depending o
 
 
 ## About the Edge Delivery to-do list in Cloud Manager {#ed-todo-list}
-
-<!-- &#x2460; for "1" inside circle -->
 
 The **Edge Delivery to-do list** in Cloud Manager is an onboarding task checklist meant to guide you through onboarding, managing your Edge Delivery site all the way to [Go-Live](/help/journey-onboarding/go-live-checklist.md).
 
