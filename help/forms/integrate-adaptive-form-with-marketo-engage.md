@@ -11,7 +11,7 @@ exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
 
 ![Workflow](/help/forms/assets/workflow-marketo-4.png)
 
-After creating the cloud service configuration to integrate Marketo Engage with AEM Forms, you can configure an Adaptive Form to integrate with [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home). 
+After creating the cloud service configuration to integrate Marketo Engage with AEM Forms, you can configure an Adaptive Form to integrate with [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home).  
 
 You can connect Marketo Engage to an Adaptive Form using the form wizard, which simplifies the configuration process by guiding you through each step. It includes selecting templates, styles, and data fields, as well as setting up data mapping to ensure your form is ready to communicate with Marketo Engage once created. Using the form wizard, you can also configure the Adaptive Form to submit data directly to Adobe Marketo Engage upon submission.
 

@@ -13,7 +13,7 @@ exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
 
 Adaptive Forms editor provides the **Submit to Marketo Engage** submit action to send Adaptive Forms data to Adobe Marketo Engage for processing. You can configure an existing Adaptive Form to submit data to [Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home) on submission. 
 
-Various out-of-the-box submit actions for handling form submissions are available. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md) article.
+Various out-of-the-box submit actions for handling form submissions are available. You can learn more about these options in the [Adaptive Form Submit Action](/help/forms/configure-submit-actions-core-components.md) article.  
 
 ## Consideration while configuring submit action to Marketo Engage for form
 

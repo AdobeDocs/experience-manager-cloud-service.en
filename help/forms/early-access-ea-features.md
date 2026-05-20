@@ -43,7 +43,6 @@ The Generative AI capabilities on offer via AEM Forms AI Assistant are:
 * **Configure Submit Action**: Use Generative AI prompts to effortlessly configure a submit action for your form. Choose from a library of pre-built submit actions or from a list of custom submit actions, created and deployed by your own development team.
 
 -->
-
 <!--
 
 ### AEM Forms Workfront Fusion Connector
