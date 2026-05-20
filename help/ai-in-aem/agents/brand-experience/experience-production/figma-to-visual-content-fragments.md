@@ -70,3 +70,11 @@ Sample prompts include:
   * Import from Figma {*Figma_share_URL*} to AEM
 * To select the AEM program from agent suggestions:
   * Import from Figma {*Figma_share_URL*} to {*AEMaaCS_program/environment_link*}
+
+## Additional Resources {#additional-resources}
+
+The following resources may be useful as you continue to explore Visual Content Fragments:
+
+* [Visual Content Fragments](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md)
+* [Visual Content Fragments - Templates](/help/implementing/developing/extending/content-fragments-visualization-templates.md)
+* [Visual Content Fragments - Deliver with the Publish URL](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md)
