@@ -102,7 +102,7 @@ When generation finishes, the agent provides two links:
 
 ## Further refinement in authoring {#further-refinement-in-authoring}
 
-After you choose to edit the page in AEM, it opens in your authoring environment (for example, the [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) or the [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md)).
+After you choose to edit the page in AEM, it opens in your authoring environment; for example, the [Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) or the [Page Editor](/help/sites-cloud/authoring/page-editor/introduction.md).
 
 In the [Universal Editor](#universal-editor-edit-text-with-the-assistant), the AI Assistant is *context aware*: you can select elements on the canvas and work on them with the assistant.
 
