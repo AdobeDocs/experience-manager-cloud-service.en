@@ -20,7 +20,7 @@ Discover the quality gates available in the [AEM as a Cloud Service deployment p
 
 The following diagram provides a high-level overview of the available pipelines in the context of an overall testing strategy and the [AEM as a Cloud Service deployment process](/help/implementing/cloud-manager/deploy-code.md).
 
-![AEM Cloud Service deployment quality gates](assets/functional-testing/quality-gates-compact.svg)
+![AEM Cloud Service deployment quality gates](assets/functional-testing/quality-gates-compact.png)
 
 ## Purpose of functional testing
 
@@ -36,7 +36,7 @@ It is important to note that these quality gates are not intended to be a compre
 
 The following diagram provides a detailed view of available quality gates and their use in the overall testing strategy and the [AEM as a Cloud Service deployment process](/help/implementing/cloud-manager/deploy-code.md).
 
-![AEM Cloud Service deployment quality gates](assets/functional-testing/quality-gates-overview.svg)
+![AEM Cloud Service deployment quality gates](assets/functional-testing/quality-gates-overview.png)
 
 ### Summary customer provided quality gates
 
