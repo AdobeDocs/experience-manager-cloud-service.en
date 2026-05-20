@@ -60,6 +60,16 @@ The [Content Create](/help/ai-in-aem/agents/brand-experience/experience-producti
 
 [The communication creation job](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)  creates Interactive Communications using natural language prompts and automatically generates personalized, data-driven correspondence for print (in PDF format). The job is surfaced through AI Assistant.
 
+### Figma to Visual Content Fragments Job {#figma-to-visual-content-fragments}
+
+The [Figma to Visual Content Fragments](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) job creates new pages based on a marketing brief, a template and a natural language prompt.
+
+>[!NOTE]
+>
+>The Figma to Visual Content Fragments job is currently in Limited Availability. 
+>
+>If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
 ## Experience Development Agent {#experience-development}
 
 [The Experience Development Agent](/help/ai-in-aem/agents/brand-experience/development/development.md) streamlines technical evolution within AEM by assisting with template updates, component configuration, and troubleshooting, reducing dependency on lengthy development cycles.

@@ -51,6 +51,16 @@ The [Communication Creation](/help/ai-in-aem/agents/brand-experience/experience-
 >
 > The Communications Creation skill is currently in alpha. If you would like to participate, please send a request from your official email address to [aem-forms-ea@adobe.com.](mailto:aem-forms-ea@adobe.com)
 
+### Figma to Visual Content Fragments Job {#figma-to-visual-content-fragments}
+
+The [Figma to Visual Content Fragments](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) job creates new pages based on a marketing brief, a template and a natural language prompt.
+
+>[!NOTE]
+>
+>The Figma to Visual Content Fragments job is currently in Limited Availability. 
+>
+>If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
 ## Use with other agents {#use-with-other-agents}
 
 The agent is able to work with other agent skills, examples include:

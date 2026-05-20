@@ -12,6 +12,12 @@ index: false
 
 The Figma to Visual Content Fragments Job of the Experience Production Agent automates the process of recreating approved designs in HTML for Adobe Experience Manager (AEM) as a Cloud Service and Edge Delivery Services. 
 
+>[!NOTE]
+>
+>The Figma to Visual Content Fragments job is currently in Limited Availability. 
+>
+>If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
 ## Overview {#overview}
 
 Content Fragments contain only structured content, without formatting. So AEM allows you to directly preview, and deliver, your Content Fragments using a visual layout based on an HTML template.
@@ -36,7 +42,15 @@ Before you start:
 
 <!-- where in AEM is the access token stored? -->
 
-* The Figma user needs to create an access token in Figma and store it in the AEM service.
+* Importing from Figma requires authentication. The Figma user needs to create an access token in Figma and store it in the AEM service.
+
+  This is achieved by:
+
+  * generating a personal token in Figma 
+  * logging into Adobe Experience Cloud
+  * persisting the token at:
+  
+    `https://experience.adobe.com/#/{@ADOBE_IMS_ORG}/aem/figmatocontentfragment`
 
 ## To upload a design {#to-upload-a-design}
 
