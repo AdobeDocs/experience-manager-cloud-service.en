@@ -662,7 +662,7 @@ user-guide-title: AEM as a Cloud Service
   + Content Fragments {#content-fragments}
     + [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
     + [Headless Delivery with Content Fragments and GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
-    + [Enable Content Fragment Functionality for your Instance](/help/assets/content-fragments/content-fragments-configuration-browser.md)
+    + [Enable Content Fragment Functionality for your instance](/help/assets/content-fragments/content-fragments-configuration-browser.md)
     + [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
     + [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md)
     + [Variations - Authoring Fragment Content](/help/assets/content-fragments/content-fragments-variations.md)
