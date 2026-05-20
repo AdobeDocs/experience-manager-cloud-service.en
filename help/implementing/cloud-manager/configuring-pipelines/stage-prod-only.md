@@ -73,7 +73,7 @@ Prod-only and stage-only pipelines are created in a similar fashion to the stand
 
 1. On the **Source Code** tab, select **Full Stack Code**. This option builds and deploys the entire AEM application (back-end, Dispatcher/web tier config, and any front-end modules in the repo).
 
-1. In the **Eligible Deployment Environments** drop-down list, select the **stage** environment as the deployment environment for your pipeline. Selecting stage creates a pipeline dedicated to the stage environment (production promotion happens by way of a separate pipeline).
+1. In the **Eligible Deployment Environments** drop-down list, select the **stage** environment as the deployment environment for your pipeline. Selecting stage creates a pipeline dedicated to the stage environment (production promotion happens through a separate pipeline).
 
 1. Select your **Repository** and **Git Branch** in the respective drop-down lists, then click **Continue**. 
 

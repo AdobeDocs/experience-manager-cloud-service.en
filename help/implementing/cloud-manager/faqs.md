@@ -110,7 +110,7 @@ If [adding a RepositoryInitializer OSGi configuration](#cloud-manager-deployment
 
 ## I am unable to set a variable using an aio command. What can I do? {#set-variable} 
 
-You may receive a `403` error such as the following when attempting to list or set pipeline variables by way of `aio` commands.
+You may receive a `403` error such as the following when attempting to list or set pipeline variables using `aio` commands.
 
 ```shell
 $ aio cloudmanager:list-pipeline-variables 222

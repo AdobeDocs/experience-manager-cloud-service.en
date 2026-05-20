@@ -51,7 +51,7 @@ Content requests can have variances within an organization's analytics reporting
 | Bots | Unknown bots that AEM has not pre-identified and removed may cause tracking discrepancies. |
 | Report Suites | Pages within the same AEM instance can report to different analytics report suites. This process can split data across multiple suites, depending on configuration. |
 | Third-Party Monitoring and Security Tools | Monitoring and security scanning tools (for example, uptime checkers or vulnerability scanners) may request pages, generating server-side content requests not visible in analytics reports. |
-| API Access | Requests to AEM pages or content through APIs (for example, by way of Adobe Experience Manager as a Headless CMS) still count as content requests but do not trigger analytics tracking. |
+| API Access | Requests to AEM pages or content through APIs (for example, through Adobe Experience Manager as a Headless CMS) still count as content requests but do not trigger analytics tracking. |
 | Prefetch Requests | Prefetching (for example, using a service worker or edge function) can increase traffic volumes by requesting pages in advance. These requests are counted server-side but do not execute client-side analytics code. |
 | DDOS | Adobe uses filtering to detect and block many DDoS attacks. However, some attack requests may still be counted as content requests before filters apply.|
 | Traffic Blockers | In-browser privacy features or corporate firewalls may block analytics scripts from loading. These users still generate server-side content requests. |

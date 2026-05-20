@@ -41,7 +41,7 @@ AEM as a Cloud Service offers a built-in CDN (Content Delivery Network) service,
 * Cloud Manager manages custom domain names and certificates installed in the AEM-managed CDN.
 * Custom domain names and certificates installed in a BYO CDN are managed directly within that CDN. 
 
-**Domains managed in your own CDN do not require installation through Cloud Manager** - They are made available to AEM by way of X-Forwarded-Host and match the vhosts defined in the Dispatcher. See the [CDN documentation](/help/implementing/dispatcher/cdn.md).
+**Domains managed in your own CDN do not require installation through Cloud Manager** - They are made available to AEM through X-Forwarded-Host and match the vhosts defined in the Dispatcher. See the [CDN documentation](/help/implementing/dispatcher/cdn.md).
 
 In one environment, you can have both domains installed in the AEM-managed CDN and installed in a BYO CDN.
 
