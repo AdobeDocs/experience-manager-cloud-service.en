@@ -12,14 +12,14 @@ role: Admin, Developer
 Learn how the Cloud Manager UI is organized and how to navigate to manage your programs and environments.
 
 
-The Cloud manage UI is primarily composed of two graphical interfaces:
+The Cloud Manager UI is primarily composed of two graphical interfaces:
 
 * [The My Programs console](#my-programs-console) is where you can view and manage all of your programs.
 * [The Program Overview window](#program-overview) is where you can see the detail of and manage an individual program.
 
 >[!TIP]
 >
->Also check out the [onboarding documentation journey](/help/journey-onboarding/overview.md) for a complete overview of how to get up-and-running with AEM as a Cloud Service using Cloud Manager.
+>See the [onboarding documentation journey](/help/journey-onboarding/overview.md) for a complete overview of how to get started quickly with AEM as a Cloud Service using Cloud Manager.
 
 
 ## AI Assistant in AEM
@@ -29,7 +29,7 @@ For customers who have [completed pre-requisite criteria](/help/implementing/clo
 
 ## My Programs Console {#my-programs-console}
 
-When you log into Cloud Manager at at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization, you arrive at the **My Programs** console.
+When you log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization, you arrive at the **My Programs** console.
 
 ![My Programs console](assets/my-programs-console.png)
 
@@ -70,7 +70,7 @@ The program toolbar provides links to switch between Cloud Manager programs and 
 ![Program toolbar](assets/program-toolbar.png)
 
 1. The **My Programs** selector opens a drop-down where you can select other programs quickly or take context-appropriate actions such as creating a new program
-1. The **Getting Started** link gives you access to the [onboarding documentation journey](/help/journey-onboarding/overview.md) to get you up-and-running with Cloud Manager.
+1. The **Getting Started** link gives you access to the [onboarding documentation journey](/help/journey-onboarding/overview.md) to get you started quickly with Cloud Manager.
 1. The action button offers context-appropriate actions such as adding a program.
 
 ### Statistics and call-to-actions {#statistics}
@@ -156,7 +156,7 @@ The ![More icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_More_
 
 ### Quick links section {#quick-links-section}
 
-The quick links section gives you access to commonly used resources that are related.
+The quick links section gives you access to related, commonly used resources.
 
 ## Program overview page {#program-overview}
 
@@ -166,21 +166,21 @@ When a program is selected in the **[My Programs](#my-programs-console)** consol
 
 The program overview gives you access to all details of a Cloud Manager program. Like the **My Programs** console, it is made of several parts.
 
-1. [Toolbars](#program-overview-toolbar) to jump back to the My Programs console quickly, and to navigate the program
-1. [Tabs](#program-tabs) to switch between different aspects of the program
-1. A [call-to-action](#cta) based on the last actions of the program
-1. An [overview of the environments](#environments) of the program
-1. An [overview of the pipelines](#pipelines) of the program
-1. An [overview of the performance](#performance) of the program
-1. Links to [useful resources](#useful-resources)
+1. [Toolbars](#program-overview-toolbar) to move back to the My Programs console quickly, and to navigate the program.
+1. [Tabs](#program-tabs) to switch between different aspects of the program.
+1. A [call-to-action](#cta) based on the last actions of the program.
+1. An [overview of the environments](#environments) of the program.
+1. An [overview of the pipelines](#pipelines) of the program.
+1. An [overview of the performance](#performance) of the program.
+1. Links to [useful resources](#useful-resources).
 
 ### Toolbars {#program-overview-toolbar}
 
-The toolbars for the program overview are similar to those toolbars of the [My Programs console](#my-programs-toolbars). Only the differences are illustrated here.
+The toolbars for the program overview are similar to those of the [My Programs console](#my-programs-toolbars). Only the differences are illustrated here.
 
 #### Cloud Manager header {#cloud-manager-header-2}
 
-In the upper-left corner of the page is the Adobe Cloud Manager header. You can click ![Side menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to show or hide the side menu of tabs to other areas of the software.
+In the upper-left corner of the page is the Adobe Cloud Manager header. You can click ![Side menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) to show or hide the side menu of tabs to other areas of the application.
 
 ![Cloud Manager side menu](assets/cloud-manager-hamburger.png)
 
@@ -188,11 +188,11 @@ Click Adobe Cloud Manager to return to Home.
 
 #### Program toolbar {#program-toolbar-2}
 
-The program toolbar still gives you access to switch to other programs quickly, but additionally gives access to context-appropriate actions such as adding and editing the program.
+The program toolbar still gives you access to switch to other programs quickly, but also gives access to context-appropriate actions, such as adding and editing the program.
 
 ![Program toolbar](assets/cloud-manager-program-toolbar.png)
 
-The toolbar always shows the tab that you currently are on, even if you have hidden the tabs using ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg).
+The toolbar always shows the tab that you are currently on, even if you have hidden the tabs using ![Show menu icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg).
 
 ### Program tabs {#program-tabs}
 
@@ -228,11 +228,11 @@ In the upper-left corner of the [Cloud Manager header](#cloud-manager-header-2),
 
 ### Call-to-action {#cta}
 
-The call-to-action section gives you helpful information depending on the status of your program. For a new program, you may see next steps given and a reminder of a go-live date, [set during program creation](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
+The call-to-action section gives you helpful information depending on the status of your program. For a new program, you may see next steps and a reminder of a go-live date that was [set during program creation](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 ![Call-to-action for a new program](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
-For a live program, the status of your last deployment with links for details and starting a new deployment.
+For a live program, the status of your last deployment is shown with links for details and starting a new deployment.
 
 ![Call-to-action](/help/implementing/cloud-manager/assets/info-banner.png)
 

@@ -47,7 +47,6 @@ The Content Fragment Model effectively defines the structure of the resulting Co
 
 1. Open the required model for **Edit**; use either one of the quick action links, or select the model and then the action from the toolbar.
 
-
    ![Properties](assets/cf-cfmodels-empty-model.png)
 
    Once open the model editor shows:
@@ -155,11 +154,11 @@ A selection of data types is available for defining your model:
     * Create a new Content Fragment, based on the appropriate model
     * Create new instances of the field 
   * The reference specifies the path to the referenced resource; for example `/content/dam/path/to/resource`
-  
-    <!--
+
+  <!--
     * Internally the reference is held as a universally unique ID (UUID) that references the resource
     * You do not need to know the UUID; in the fragment editor you can browse to the required fragment.
-    -->
+  -->
 
   <!--
   >[!NOTE]
@@ -172,11 +171,11 @@ A selection of data types is available for defining your model:
   * If an image is referenced, you can opt to show a thumbnail
   * The field can be configured to allow fragment authors to create new instances of the field 
   * The reference specifies the path to the referenced resource; for example `/content/dam/path/to/resource` 
-  
-    <!--
+
+  <!--
     * Internally the reference is held as a universally unique ID (UUID) that references the resource
     * You do not need to know the UUID; in the fragment editor you can browse to the required asset resource
-    -->
+  -->
 
   <!--
   >[!NOTE]
@@ -253,7 +252,7 @@ Many properties are self-explanatory, for certain properties additional details 
 * See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
 
 * **Translatable**
-  
+
   Checking the **Translatable** checkbox on a field in the Content Fragment Model editor will:
 
   * Ensure the field's property name is added to the translation configuration, context `/content/dam/<sites-configuration>`, if not already present. 
@@ -281,7 +280,7 @@ Various data types now include the possibility to define validation requirements
   * **Max Number of Items**
 
   These are validated in the [Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md).
-  
+
 ## Using References to form Nested Content {#using-references-to-form-nested-content}
 
 Content Fragments can form nested content, using either of the following data types:
@@ -295,7 +294,7 @@ Content Fragments can form nested content, using either of the following data ty
   * References other fragments, dependent on the specific models specified.
   * Provided by the **Fragment Reference** data type
   * Allows you to include/retrieve structured data.
-  
+
     >[!NOTE]
     >
     >This method is of particular interest when you are using [Headless Content Delivery using Content Fragments with GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).

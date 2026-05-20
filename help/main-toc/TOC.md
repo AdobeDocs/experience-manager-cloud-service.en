@@ -1128,6 +1128,7 @@ user-guide-title: AEM as a Cloud Service
       + Experience Production Agent {#experience-production}
         + [Overview](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)
         + [Content Update Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
+        + [Content Create Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md)
         + [Communication Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
         + [Form Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
       + Experience Modernization Agent {#modernization}
@@ -1677,3 +1678,4 @@ user-guide-title: AEM as a Cloud Service
     + [A Quick Guide to WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 + Troubleshooting {#troubleshooting}
   + {hide-from-toc} [Troubleshoot AEM Assets and Forms issues](/help/troubleshooting/home.md)
+
