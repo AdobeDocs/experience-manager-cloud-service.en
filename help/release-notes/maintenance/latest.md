@@ -10,7 +10,7 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 25892 {#release-26125}
+## Release 26125 {#release-26125}
 
 Summarized below are the continuous improvements for maintenance release 26125, which was publicly released on May 20, 2026. The previous maintenance release was release 25892.
 
@@ -52,7 +52,7 @@ Deprecated and removed features and APIs in AEM as a Cloud Service are detailed 
 
 ### Security Fixes {#security-26125}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses a number of identified vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 19 vulnerabilities, reinforcing our commitment to robust system protection.
 
 ### Embedded Technologies {#embedded-tech-26125}
 
