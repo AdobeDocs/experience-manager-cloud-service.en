@@ -17,7 +17,7 @@ The Content Create job is the part of the [Experience Production Agent](/help/ai
 
 ## Overview {#overview}
 
-The Content Create job generates new on-brand pages using natural language along with a marketing brief and AEM template. 
+The Content Create job generates new on-brand pages using natural language together with a marketing brief and AEM template. 
 
 You can access the Content Create job from:
 
