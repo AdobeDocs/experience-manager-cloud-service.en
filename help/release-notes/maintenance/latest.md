@@ -20,7 +20,7 @@ The 2026.5.0 feature activation will provide the full feature set for this maint
 
 * ASSETS-56957: Added multi-audio track and multi-caption upload support for videos in Dynamic Media with OpenAPI.
 * ASSETS-58563: Added Adobe Commerce integration to AEM Assets.
-* ASSETS-65603: Improved folder listing performance in Touch UI by allowing configuration of a reduced asset coun.
+* ASSETS-65603: Improved Folder listing performance in Touch UI by allowing configuration of a reduced asset count.
 * ASSETS-66032: Added advanced networking proxy support to Assets Bulk Import for environments with IP-restricted cloud storage.
 * CQ-4363346: Enhanced the Translation Guideline UI with support for downloading sample guidelines, uploading guideline files in JSON, PDF, and DOCX formats, and deleting existing guidelines.
 * GRANITE-67514: Isolated an internal caching library bundle to prevent transform job failures and conflicts with customer-deployed bundles.
