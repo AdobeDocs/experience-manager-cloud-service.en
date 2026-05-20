@@ -3,9 +3,6 @@ title: Figma to Visual Content Fragments Job
 description: Learn what the Brand Experience Agent's Figma to Visual Content Fragments job is and what it can do for you.
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
-hide: true
-hidefromtoc: yes
-index: false
 ---
 
 # Figma to Visual Content Fragments Job {#figma-to-visual-content-fragments-job}
@@ -49,7 +46,7 @@ Before you start:
   * generating a personal token in Figma 
   * logging into Adobe Experience Cloud
   * persisting the token at:
-  
+
     `https://experience.adobe.com/#/{@ADOBE_IMS_ORG}/aem/figmatocontentfragment`
 
 ## To upload a design {#to-upload-a-design}
