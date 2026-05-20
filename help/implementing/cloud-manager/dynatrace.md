@@ -10,7 +10,7 @@ role: Admin, Developer
 
 Adobe provides the ability to use Dynatrace to monitor AEM as a Cloud Service as a part of enterprise deployment, identify the cause of any potential issues, and take action to remediate them as needed. 
 
-With Dynatrace, you can get seamless observability for all your AEM applications. Dynatrace discovers your AEM apps and shows their paths, from website to container to the cloud service, to reveal the user experience. Intertwined with end-to-end traces across every tier and Real Use Monitoring, take your AEM content-led experiences to the next level without gaps or blind spots. If anomalies arise, Dynatrace diagnoses them in real time, with the Davis AI engine. It pinpoints the root cause down to the broken code before your customers are affected, minimizing the mean time to repair.
+With Dynatrace, you can get seamless observability for all your AEM applications. Dynatrace discovers your AEM apps and shows their paths, from website to container to the Cloud Service, to reveal the user experience. Combined with end-to-end tracing across every tier and Real User Monitoring, elevate your AEM content-driven experiences without gaps or blind spots. If anomalies arise, Dynatrace diagnoses them in real time, with the Davis AI engine. It pinpoints the root cause down to the broken code before your customers are affected, minimizing the mean time to repair.
 
 To learn more about Dynatrace, see the [Adobe AEM Cloud Service integration](https://www.dynatrace.com/hub/detail/adobe-experience-manager-1/).
 
@@ -40,14 +40,14 @@ The details required for connectivity requests are described below:
 
 ### Which license do I need for Dynatrace AEM Monitoring? {#which-license-do-i-need-for-AEM-monitoring}
 
-Dynatrace AEM monitoring requires a Dynatrace license. Dynatrace AEM licensing is based on [full-stack monitoring for Kubernetes containers](https://docs.dynatrace.com/docs/shortlink/dps-hosts#gib-hour-calculation-for-containers-and-application-only-monitoring). The memory sizes of monitored AEM containers (author and publisher services) are automatically detected.
+Dynatrace AEM monitoring requires a Dynatrace license. Dynatrace AEM licensing is based on [full-stack monitoring for Kubernetes containers](https://docs.dynatrace.com/docs/license/capabilities/app-infra-observability#gib-hour-calculation-for-containers-and-application-only-monitoring). The memory sizes of monitored AEM containers (author and publisher services) are automatically detected.
 
 The Adobe deployment specifications per AEM environment are:
 
 * Production: On average, 4 containers, 16 GB of memory each
 * Non-production: On average, 4 containers, 8 GB of memory each
 
-To learn more about Dynatrace licensing, see the [Dynatrace Platform Subscription](https://docs.dynatrace.com/docs/shortlink/dynatrace-platform-subscription).
+To learn more about Dynatrace licensing, see the [Dynatrace Platform Subscription](https://docs.dynatrace.com/docs/license).
 
 ### How do I get my Dynatrace Connection Details? {#how-do-i-get-my-dynatrace-connection-details}
 
