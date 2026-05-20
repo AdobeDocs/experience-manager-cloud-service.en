@@ -129,6 +129,13 @@ Learn more about [Local Development with AI Tools](/help/ai-in-aem/local-develop
 
 #### Experience Governance MCP Server {#gov-mcp-server}
 
+### New features in AEM Forms {#forms-new-features}
+
+**Versioning support in Forms Manager**
+Forms Manager now [supports versioning for Adaptive Forms (Core Components and Foundation Components)](/help/forms/manage-form-versions-forms-manager.md), form fragments, themes, XDP templates, and binary assets. Create versions, view complete version history, and restore earlier states of your form assets directly from the Forms & Documents console.
+
+### Early Access Features in AEM Forms {#forms-early-access-features}
+
 The Experience Governance MCP Server is now generally available (GA). It integrates with AI developer tools and chatbots that support the Model Context Protocol (MCP), allowing you to safeguard brand integrity and compliance using natural language prompts in your chatbot or IDE. You can evaluate content (text, images, pages) against brand governance rules, and retrieve brand configurations and available governance checks.
 
 Learn more about [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) and the [Governance Agent](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).

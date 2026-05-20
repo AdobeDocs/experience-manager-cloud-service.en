@@ -111,6 +111,10 @@ When looking at the asset details, any image with content credentials added, suc
 
 ### New features in AEM Forms {#forms-new-prerelease-features}
 
+#### Connect an Adaptive Form with Adobe Workfront 
+
+Forms as a Cloud Service offers an out-of-the-box option to effortlessly [connect an Adaptive Form with Adobe Workfront](/help/forms/submit-adaptive-form-to-workfront-fusion.md). This simplifies the process of submitting an Adaptive Form to an Adobe Workfront scenario, allowing you trigger a Workfront Fusion scenario on submission of an Adaptive Form. 
+
 #### Enhanced Visual Rule Editor for Core Component Based Adaptive Forms
 
 This release brings a significant upgrade to the Visual Rule Editor for adaptive forms based on core components. You can now: 

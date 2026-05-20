@@ -106,6 +106,8 @@ AI-generated video captions in Adobe Dynamic Media use artificial intelligence t
 
 ### New features in AEM Forms {#forms-new-features}
 
+* **[Integrate Adaptive Forms with Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)**: AEM Forms as a Cloud Service now includes an easy-to-use option to connect Adaptive Forms with Adobe Marketo Engage. This integration allows you to create Adaptive Forms directly with Marketo Engage's lead capture and related custom objects. You can now prefill form fields with data from Marketo Engage and submit data back to automate workflows like smart campaigns and email automation. You can also connect an Adaptive Form with the Munchkin library to track the number of visits, clicks, and form submissions.
+
 * **Manage Publication**: You can use the [Manage Publication](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option))workflow to publish or unpublish forms across environments, typically from the author instance to the publish and preview instances. It allows users to publish, unpublish, or schedule the publication of content in a streamlined manner.
 
 * **[Auto-save a draft for Core Components based Adaptive Forms](/help/forms/save-core-component-based-form-as-draft.md)**: Users can now benefit from an auto-save feature that saves a partially completed form as a draft automatically. They can return later to finish filling it out on the same or other device. This feature improves conversion rates for organizations by reducing form abandonment, as users do not need to start over form filling from the beginning.
