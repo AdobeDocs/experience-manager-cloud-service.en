@@ -1,6 +1,6 @@
 ---
 title: Dynatrace
-description: Learn how to use Dynatrace with AEM as a Cloud Service
+description: Learn how to use Dynatrace with AEM as a Cloud Service.
 exl-id: b58c8b82-a098-4d81-bc36-664e890c8f66
 solution: Experience Manager
 feature: Log Files, Developing
@@ -16,7 +16,7 @@ To learn more about Dynatrace, see the [Adobe AEM Cloud Service integration](htt
 
 ![AEM author and publisher performance metrics](/help/implementing/cloud-manager/assets/dynatrace-performance-metrics.png)
 
-## Integrating Dynatrace with AEM as a Cloud Service {#integrating-dynatrace-with-aem-as-a-cloud-service}
+## Integrate Dynatrace with AEM as a Cloud Service {#integrating-dynatrace-with-aem-as-a-cloud-service}
 
 Dynatrace customers may monitor their AEM environments by requesting connectivity through a customer support ticket.
 
@@ -51,7 +51,7 @@ To learn more about Dynatrace licensing, see the [Dynatrace Platform Subscriptio
 
 ### How do I get my Dynatrace Connection Details? {#how-do-i-get-my-dynatrace-connection-details}
 
-1. Execute the following API request to your Dynatrace environment:  
+1. Run the following API request to your Dynatrace environment:  
 
    ```
    curl -X GET "<environmentUrl>/api/v1/deployment/installer/agent/connectioninfo" -H "accept: application/json" -H "Authorization: Api-Token <accessToken>"

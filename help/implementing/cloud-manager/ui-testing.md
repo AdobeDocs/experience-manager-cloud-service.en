@@ -149,7 +149,7 @@ The assembly descriptor instructs the plugin to create an archive of type `.tar.
 
 The assembly descriptor also excludes some files that might be generated while running the UI tests locally. This process guarantees a smaller archive and faster builds.
 
-Cloud Manager automatically picks up the Docker build-context archive and builds the test image during deployment pipelines. Eventually, Cloud Manager runs the Docker image to execute the UI tests against your application.
+Cloud Manager automatically picks up the Docker build-context archive and builds the test image during deployment pipelines. Eventually, Cloud Manager runs the Docker image to run the UI tests against your application.
 
 The build should produce either zero or one archive. If it produces zero archives, the test step passes by default. If the build produces more than one archive, which archive is selected is non-deterministic.
 
@@ -487,7 +487,7 @@ Before activating UI tests in a Cloud Manager pipeline, Adobe recommends that yo
 
 1. Open a shell and navigate to the `ui.tests` folder in your repository.
 
-1. Execute the following command to start the tests using Maven.
+1. Run the following command to start the tests using Maven.
 
    ```shell
    mvn verify -Pui-tests-local-execution \

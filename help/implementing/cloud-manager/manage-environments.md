@@ -263,7 +263,7 @@ The **Update** option's behavior varies depending on the configuration and curre
 
 | State | The Update option... |
 | --- | --- |
-| The pipeline has already been updated | prompts the user to execute the pipeline. |
+| The pipeline has already been updated | prompts the user to run the pipeline. |
 | The pipeline is already being updated | informs the user that an update is already running. |
 | The pipeline does not exist | prompts the user to create one. |
 
