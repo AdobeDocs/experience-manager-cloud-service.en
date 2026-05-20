@@ -38,8 +38,8 @@ The 2026.5.0 feature activation will provide the full feature set for this maint
 * ASSETS-66669: Fixed the Home button on the Search Results page not navigating to the Start screen in Touch UI when Unified Shell is enabled.
 * ASSETS-66683: Fixed an approval loop in Dynamic Media with OpenAPI triggered by upload failures, which created backlogs and disrupted asset approval workflows.
 * ASSETS-67113: Fixed Bulk Import ignoring SVG assets when filtering by MIME type `image/svg+xml`.
-* CQ-4363355: Fixed translation requests in the GenAI Translation Connector being routed to an incorrect regional endpoint due to a hardcoded static URL.
 * CQ-4363466: Fixed cloud configuration path resolution failures affecting third-party translation connectors that use custom configuration resolution.
+* CQ-4363355: Fixed translation requests in the GenAI Translation Connector being routed to an incorrect regional endpoint due to a hardcoded static URL.
 * SITES-44186: Fixed meta tag injection on Author breaking Page Editor event handling for some customers.
 
 ### Known Issues {#known-issues-26125}
