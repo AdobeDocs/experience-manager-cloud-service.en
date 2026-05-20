@@ -7,7 +7,7 @@ role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
 ---
-# Configure an Adaptive Form for REST Endpoint submit action
+# Configure an Adaptive Form for REST Endpoint submit action 
 
 Use the **[!UICONTROL Submit to REST Endpoint]** action to post the submitted data to a REST URL. The URL can be of an internal (the server on which the form is rendered) or an external server.
 
