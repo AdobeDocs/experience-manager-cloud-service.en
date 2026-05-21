@@ -25,7 +25,7 @@ The **SSL Certificates** page provides the status of your SSL certificates.
 | Status of SSL certificate | Description |
 | --- | --- |
 | Green  | The certificate is valid for at least 14 days from the current date.  |
-| Orange  | The certificate is due to expire in less than 14 days.<br>&bull; Ensure that you have a plan to renew your certificate and replace it by way of the Cloud Manager user interface to avoid possible site access or outages.<br>&bull; Cloud Manager sends regular notifications in the UI to alert you of an impending certificate expiration. |
+| Orange  | The certificate is due to expire in less than 14 days.<br>&bull; Ensure that you have a plan to renew your certificate and replace it through the Cloud Manager user interface to avoid possible site access or outages.<br>&bull; Cloud Manager sends regular notifications in the UI to alert you of an impending certificate expiration. |
 | Red | The SSL certificate is expired.<br>See [Update an expired customer managed SSL certificate](#update-ssl-certificate) or [Delete an SSL certificate](#deleting-an-ssl-certificate). |
 
 ## Update an expired customer managed SSL certificate {#update-ssl-certificate}
