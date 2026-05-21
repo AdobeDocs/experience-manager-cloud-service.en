@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # Visual Content Fragments - Deliver with the Publish URL {#visual-content-fragments-deliver-with-the-publish-url}
 
-When a visual Content Fragment is published, the rendered HTML is made available via the Adobe Experience Manager (AEM) as a Cloud Service publish tier at a URL with this structure:
+When a Content Fragment that is based on a model with one or multiple attached HTML templates is published, the rendered HTML of that fragment is made available via the Adobe Experience Manager (AEM) as a Cloud Service publish tier at a URL with this structure:
 
 ```html
 https://publish-p<programId>-e<envId>.adobeaemcloud.com/adobe/stable/previewtemplates/contentFragments/<templateId>/<fragmentId>/<variation>.html
@@ -16,7 +16,7 @@ This URL returns a *self-contained HTML document* (including inline CSS and stru
 
 ## Embedding Techniques — Overview {#embedding-techniques-overview}
 
-There are three distinct approaches for consuming the Publish URL on a host page. Each comes with distinct trade-offs around style isolation, layout behavior, accessibility, and complexity.
+There are three distinct approaches for consuming HTML from a Visual Content Fragment on a host page. Each comes with distinct characteristics around style isolation, layout behavior, accessibility, and complexity.
 
 | | Inline Element | iframe | Custom Element + Shadow DOM |
 |--- |--- |--- |--- |
