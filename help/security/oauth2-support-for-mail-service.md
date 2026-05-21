@@ -250,3 +250,11 @@ In the cURL token request, replace the scope with:
 ### Troubleshooting {#troubleshooting}
 
 If the mail service is not working properly, regenerate the `refreshToken`. Use [Generating the Refresh Token](#generating-the-refresh-token) when you use SMTP and OAuth2, or [Generating the Refresh Token](#graph-generating-the-refresh-token) when you use Microsoft Graph. Pass the new value via Cloud Manager API; deployment can take a few minutes.
+
+#### Community Diagnostic Tool: AEM Email Doctor {#aem-email-doctor}
+
+The open-source [AEM Email Doctor](https://github.com/rwunsch/aem-email-doctor) tool (Apache-2.0) can help diagnose OAuth2 mail configuration issues between AEM as a Cloud Service and Microsoft&reg; 365. It performs an end-to-end validation of OAuth2 token generation and the SMTP handshake against `smtp.office365.com:587`, prints the full handshake transcript, and generates the matching OSGi configurations (`com.day.cq.mailer.oauth.impl.OAuthConfigurationProviderImpl` and `com.day.cq.mailer.DefaultMailService`) along with the corresponding Cloud Manager variable commands.
+
+This lets you quickly narrow down — before opening a support escalation — whether a problem is on the **AEM side** (for example incomplete scopes, an expired refresh token, port or address mismatches in the OSGi configuration) or on the **Microsoft&reg; side** (for example tenant-wide SMTP AUTH disabled, app registration, Send-As permissions).
+
+The tool is community-maintained and is not officially supported by Adobe. For questions or feedback, reach out to the author on Slack at `wunsch@adobe.com`.
