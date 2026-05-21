@@ -20,8 +20,4 @@ These are the release notes for the 21 May 2026 release of the Universal Editor.
 
 ## What's New {#what-is-new}
 
-* 
-
-## Other Improvements {#other-improvements}
-
-* 
+* Minor improvements and fixes
