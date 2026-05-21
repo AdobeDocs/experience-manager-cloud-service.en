@@ -133,8 +133,6 @@ When configuring a **Content Fragment** [component on your page](/help/sites-clo
 >
 >For full details see [Integration - AEM Sites with Core Components](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md#integration-aem-sites-with-core-components)
 
-<!-- CQDOC-23232 - update page authoring for fragments? -->
-
 ### Deliver to an external application {#deliver-to-an-external-application}
 
 You can deliver your visual fragment to an external application. 
