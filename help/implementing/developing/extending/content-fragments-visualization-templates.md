@@ -6,9 +6,9 @@ role: Admin, Developer
 ---
 # Visual Content Fragments - Templates {#visual-content-fragments-templates}
 
-In Adobe Experience Manager (AEM) as a Cloud Service, HTML templates can be used to preview, and deliver, Content Fragments. 
+In Adobe Experience Manager (AEM) as a Cloud Service, HTML templates can be used to visualize Content Fragments and deliver them in HTML format
 
-You can create HTML templates in your code editor of choice, then upload and assign them to Content Fragment Models in AEM. HTML templates allow you to control exactly how your Content Fragments are displayed. Once assigned, a template is available to be used with any Content Fragment based on the model, by mapping the HTML template to the Content Model and Fragment with Handlebars.js syntax as content placeholders. Combined into a Visual Content Fragment, this allows visual preview of the fragment, or delivery of the modular  experience in HTML format to any channel; for example, browser, email, mobile application, or others. 
+HTML templates allow you to control how your Content Fragments are displayed. You can create HTML templates in your code editor of choice, then upload and assign them to Content Fragment Models in AEM.  Content placeholders using Handlebars.js allow mapping the template to datatypes in the Content Fragment Model. Once assigned to a model, a template is available to be used with any Content Fragment based on the model, to visualize the fragment or to delivery it as a modular experience in HTML format to any channel, for example web, email, mobile application, or others. 
 
 This article explains how to create custom HTML templates with Handlebars syntax for rendering Visual Content Fragments.
 
@@ -50,9 +50,9 @@ To understand and work with the technologies covered here you should have:
 * Familiarity with AEM Content Fragments and Content Fragment Models
 * Understanding of your Content Fragment models
 
-## Using a template {#using-a-template}
+## Using a content fragment HTML template {#using-a-template}
 
-### Using a template in AEM {#using-a-template-in-aem}
+### Using a content fragment HTML template in AEM {#using-a-template-in-aem}
 
 For details of how to use your template in AEM see:
 
@@ -60,9 +60,9 @@ For details of how to use your template in AEM see:
 * [Preview action for a selected fragment - from the console](/help/sites-cloud/administering/content-fragments/managing.md#actions-selected-content-fragment)
 * [Preview your fragment - from the fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md#preview-content-fragment)
 
-### Using the Publish URL {#using-the-publish-url}
+### Using the Visual Content Fragment Publish URL {#using-the-publish-url}
 
-Once you have created visual Content Fragments using the template you can then use the [Publish URL of your Visual Content Fragments](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md).
+Once you have created Visual Content Fragments using the template you can then use the [Publish URL of your Visual Content Fragments](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md).
 
 ## Handlebars - the (very) basics {#handlebars-the-very-basics}
 
