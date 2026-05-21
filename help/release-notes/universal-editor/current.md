@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.05.14 Release Notes
-description: These are the release notes for the 2026.05.14 release of the Universal Editor.
+title: Universal Editor 2026.05.21 Release Notes
+description: These are the release notes for the 2026.05.21 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.05.14 Release Notes {#release-notes}
+# Universal Editor 2026.05.21 Release Notes {#release-notes}
 
-These are the release notes for the 14 May 2026 release of the Universal Editor.
+These are the release notes for the 21 May 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -20,9 +20,8 @@ These are the release notes for the 14 May 2026 release of the Universal Editor.
 
 ## What's New {#what-is-new}
 
-* [The properties panel](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel) now opens by default.
-* [Extension icons were migrated to Spectrum 2.](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/header-menu/)
+* 
 
 ## Other Improvements {#other-improvements}
 
-* URLs with spaces and/or special characters now properly percent-encoded when stored by the rich text editor.
+* 
