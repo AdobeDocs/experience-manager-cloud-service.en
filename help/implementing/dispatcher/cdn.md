@@ -91,7 +91,7 @@ Configuration instructions:
 1. Set the `X-Forwarded-Host` header with the domain name so AEM can determine the host header. For example: `X-Forwarded-Host:example.com`.
 1. Set `X-AEM-Edge-Key`. The value should be configured using a Cloud Manager config pipeline first and then the same edge key should be configured in the customer CDN, as described in [this article](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
-   * Needed so that the Adobe CDN can validate the source of the requests and pass the `X-Forwarded-*` headers to the AEM application. For example,`X-Forwarded-For` is used to determine the client IP. So, it becomes the responsibility of the trusted caller (that is, the customer managed CDN) to ensure the correctness of the `X-Forwarded-*` headers (see the note below).
+   * Needed so that the Adobe CDN can validate the source of the requests and pass the `X-Forwarded-*` headers to the AEM application. For example,`X-Forwarded-For` is used to determine the client IP. So, it becomes the responsibility of the trusted caller (that is, the customer managed CDN) to ensure the correctness of the `X-Forwarded-*` headers (see the note below). See also [how to test forwarded headers with `x-aem-debug`](#test-forwarded-headers).
    * Optionally, access to Adobe CDN's ingress can be blocked when an `X-AEM-Edge-Key` is not present. Inform Adobe if you need direct access to Adobe CDN's ingress (to be blocked).
 
 See the [Sample CDN vendor configurations](#sample-configurations) section for configuration examples from leading CDN vendors.
@@ -114,6 +114,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 ```
 
+
 >[!NOTE]
 >
 >When using your own CDN, you do not need to install domains and certificates in Cloud Manager. The routing in the Adobe CDN is done by using the default domain `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`, which should be sent in the request `Host` header. Overwriting the request `Host` header with a custom domain name may route the request incorrectly through the Adobe CDN or result in 421 errors.
@@ -134,14 +135,6 @@ This customer CDN configuration is supported for the publish tier and the previe
 
 To debug a BYOCDN configuration, use the `x-aem-debug` header with a value of `edge=true`. For example:
 
-In Linux:
-
-```
-curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
-
-```
-
-In Windows:
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
@@ -151,10 +144,30 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Fo
 This process reflects certain properties used in the request in the `x-aem-debug` response header. For example:
 
 ```
-x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
+x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,x-aem-edge-Key=set,host=redactedaemdomain,x-forwarded-host=wknd.site
 ```
 
+
+
 This process allows verification of details such as the host values, edge authentication configuration, and the x-forwarded-host header value. It also identifies whether an edge key is set and which key is used if a match exists.
+
+#### Test forwarded headers with x-aem-debug {#test-forwarded-headers}
+
+To test that a visitor cannot control forwarded headers (`X-Forwarded-For`, `X-Forwarded-Host`, `Forwarded`), the AEM-managed CDN clears visitor-supplied values and sets trusted ones. Call your site with random values and inspect the `x-aem-debug` response header:
+
+```
+curl https://www.example.com -v --header "X-Forwarded-Host: bad.example.com" --header "x-aem-debug: edge=true"
+```
+
+```
+curl https://www.example.com -v --header "X-Forwarded-For: 1.2.3.4" --header "x-aem-debug: edge=true"
+```
+
+Replace `www.example.com` with your site's domain. The `x-aem-debug` response header should reflect your site's host and your client IP; the values you sent must not appear. For example:
+
+```
+x-aem-debug: edge=true,x-forwarded-host=www.example.com, x-forwarded-for=....
+```
 
 >[!NOTE]
 >

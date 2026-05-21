@@ -4,9 +4,8 @@ description: Copy and Paste in Interactive Communication Editor in AEM Forms all
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: yes
+hide: true
 index: false
-hidefromtoc: yes
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
 ---

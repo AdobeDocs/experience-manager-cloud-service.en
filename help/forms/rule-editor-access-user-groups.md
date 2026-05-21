@@ -4,8 +4,7 @@ description: There are different types of users with varied skills that work wit
 feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
-hide: yes
-hidefromtoc: yes
+hide: true
 exl-id: 2ef0e685-458b-4117-b02a-55dd3472577e
 ---
 # Grant rule editor access to select user groups {#grant-rule-editor-access-to-select-user-groups}

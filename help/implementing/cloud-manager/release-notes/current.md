@@ -24,7 +24,7 @@ The next planned release is Thursday, June 4, 2026.
 
 * **Soft delete for a production program**
 
-    Cloud Manager now allows customers to delete production programs using a soft delete workflow. You can restore deleted programs within 30 days, providing you an additional safety window before permanent deletion. This feature is being rolled out progressively throughout May.
+    Cloud Manager now allows customers to delete production programs using a soft delete workflow. You can restore deleted programs within 30 days, providing you with an additional safety window before permanent deletion. This feature is being rolled out progressively throughout May.
 
     See [Mark a production program for deletion](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-production-program).
 
@@ -34,7 +34,7 @@ Participate in Cloud Manager's beta programs to get exclusive access to upcoming
 
 >[!IMPORTANT]
 >
->Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk.
+>Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (through Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk.
 
 See also [AEM Beta programs](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
@@ -69,7 +69,7 @@ For more information, see the following:
 * [Using Smart Build in a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build).
 * [Add a production pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
 
-To join the Beta, email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe OrgID and Program ID.
+To join the Beta, email [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com) with your Adobe Organization ID and Program ID.
 
 <!-- 
 OLD
