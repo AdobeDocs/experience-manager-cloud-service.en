@@ -136,7 +136,7 @@ When the pull request is merged or closed, the full stack code quality pipeline 
 
 >[!TIP]
 >
->See [GitHub Check Annotations](github-annotations.md) for details on the information provided by way of GitHub when pull request checks are run.
+>See [GitHub Check Annotations](github-annotations.md) for details on the information provided through GitHub when pull request checks are run.
 
 >[!TIP]
 >

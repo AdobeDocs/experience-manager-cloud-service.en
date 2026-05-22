@@ -42,6 +42,16 @@ Experience Modernization removes the friction from large-scale site migrations b
 
 [The Content Update job](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) updates existing content — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description, and when used with Jira PDFs and screenshots can provide input too.
 
+### Content Create Job {#content-create}
+
+The [Content Create](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md) job creates new pages based on a marketing brief, a template and a natural language prompt.
+
+>[!NOTE]
+>
+>The Content Create job is currently in Limited Availability. 
+>
+>If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
 ### Forms Creation Job {#forms-creation}
 
 [The Forms Creation job](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md) removes the friction from building adaptive forms and personalized correspondence by transforming natural language requirements into fully structured, branded outputs, empowering business users to create scalable, data-driven experiences without dependency on development or IT teams.
