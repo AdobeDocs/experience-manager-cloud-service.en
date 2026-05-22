@@ -14,6 +14,8 @@ https://publish-p<programId>-e<envId>.adobeaemcloud.com/adobe/stable/previewtemp
 
 This URL returns a *self-contained HTML document* (including inline CSS and structure) that can be embedded in any web context. 
 
+<!-- CQDOC-23232 - remove when GA -->
+
 >[!NOTE]
 >
 >Visual Content Fragments are currently in Limited Availability. 

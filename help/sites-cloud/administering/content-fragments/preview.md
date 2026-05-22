@@ -90,6 +90,8 @@ You can preview a Content Fragment in an external application:
 
 ## Preview with Visualization (HTML) Templates {#preview-with-visualization-html-templates}
 
+<!-- CQDOC-23232 - remove when GA -->
+
 >[!NOTE]
 >
 >Visual Content Fragments are currently in Limited Availability. 

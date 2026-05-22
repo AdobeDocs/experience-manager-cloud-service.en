@@ -398,6 +398,8 @@ You can:
 
   * With [Visualization Templates](/help/sites-cloud/administering/content-fragments/preview.md#preview-with-visualization-html-templates)
 
+    <!-- CQDOC-23232 - remove when GA -->
+
     >[!NOTE]
     >
     >Visual Content Fragments are currently in Limited Availability. 

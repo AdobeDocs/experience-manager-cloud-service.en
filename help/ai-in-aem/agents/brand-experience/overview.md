@@ -56,6 +56,8 @@ The [Content Create](/help/ai-in-aem/agents/brand-experience/experience-producti
 
 The [Figma to Visual Content Fragments](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) job imports Figma designs to AEM Content Models, Content Fragments and HTML templates.
 
+<!-- CQDOC-23232 - remove when GA -->
+
 >[!NOTE]
 >
 >The Figma to Visual Content Fragments job is currently in Limited Availability. 

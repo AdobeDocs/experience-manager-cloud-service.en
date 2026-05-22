@@ -8,9 +8,11 @@ role: Admin, Developer
 
 In Adobe Experience Manager (AEM) as a Cloud Service, HTML templates can be used to visualize Content Fragments and deliver them in HTML format.
 
+<!-- CQDOC-23232 - remove when GA -->
+
 >[!NOTE]
 >
->Visual Content Fragments are currently in Limited Availability. 
+>Visual Content Fragments and the Figma to Visual Content Fragments job are currently in Limited Availability. 
 >
 >If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 

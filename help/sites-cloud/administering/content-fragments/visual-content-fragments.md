@@ -14,6 +14,8 @@ Content Fragments contain structured content that is intended for JSON output, w
 
 The rendered output of an AEM Content Fragment that uses the layout and design of an attached HTML template is called a *Visual Content Fragment*. 
 
+<!-- CQDOC-23232 - remove when GA -->
+
 >[!NOTE]
 >
 >Visual Content Fragments are currently in Limited Availability. 
