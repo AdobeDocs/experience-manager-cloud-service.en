@@ -33,8 +33,7 @@ Before you start:
 
   * generating a personal token in Figma 
   * logging into Adobe Experience Cloud at 'https://experience.adobe.com'
-  * persisting the token at 'https://experience.adobe.com/#/aem/figmatocontentfragment`
-
+  * persisting the token at `https://experience.adobe.com/#/aem/figmatocontentfragment`
 
 ## To upload a design {#to-upload-a-design}
 
