@@ -46,7 +46,7 @@ Multiple surrogate keys are separated by spaces. These surrogate keys can be use
 
 ## Edge Function Fetch Cache (Inner) {#fetch-cache}
 
-The Edge Function fetch cache sits between the Edge Function and the backends it calls. It caches the **backend's response** to `fetch()` calls made within your Edge Function code. It also holds any data your code stores via the [**Core Cache API**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache) or [**Simple Cache API**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/SimpleCache) — programmatic caching interfaces that give you fine-grained control over what gets cached, for how long, and under which surrogate keys.
+The Edge Function fetch cache sits between the Edge Function and the backends it calls. It caches the **backend's response** to `fetch()` calls made within your Edge Function code. It also holds any data your code stores via the [**Core Cache API**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache/insert) or [**Simple Cache API**](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/SimpleCache) — programmatic caching interfaces that give you fine-grained control over what gets cached, for how long, and under which surrogate keys.
 
 It is **not** influenced by headers you set on the Edge Function's outgoing response — only by the backend's response headers, by [`CacheOverride`](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache-override/CacheOverride/) options on your fetch calls, or by surrogate keys you assign programmatically when writing to the Core Cache API.
 
@@ -114,7 +114,7 @@ The `purge-cache` CLI command purges the **Edge Function fetch cache** (the back
 Surrogate keys used in purge commands must match the keys that were **tagged on the cached content at the time it was stored**. This is the same concept as [surrogate key–based purging](/help/implementing/dispatcher/cdn-cache-purge.md#surrogate-key-purge) used in the AEM CDN, but applied to the Edge Function's internal cache. These keys come from:
 
 - The `Surrogate-Key` response header that the backend returns when the Edge Function fetches from it.
-- Keys you assign programmatically when writing to the [Core Cache API](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache) (e.g., via the `surrogateKeys` option when inserting a cache entry).
+- Keys you assign programmatically when writing to the [Core Cache API](https://js-compute-reference-docs.edgecompute.app/docs/fastly:cache/CoreCache/insert) (e.g., via the `surrogateKeys` option when inserting a cache entry).
 
 For example, if your backend responds with:
 
