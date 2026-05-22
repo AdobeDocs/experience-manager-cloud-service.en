@@ -24,7 +24,7 @@ These **preview** release notes are provided as a convenience so you know what c
 
 * A new button has been added to the toolbar [to access AEM page properties.](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)
   * This brings the functionality of the former `aem-page-properties` [extension](/help/implementing/universal-editor/extending.md) natively to the Universal Editor.
-  * The button is shown only when the remote page has a connection with protocol `aem`, `aem65`, `xwalk`, or `xwalk65` and a unique page path can be resolved from the current editable.
+  * The button is shown only when the remote page has a [connection with protocol](/help/implementing/universal-editor/component-definition.md#plugins) `aem`, or `xwalk` and a unique page path can be resolved from the current editable.
 
 ## Upcoming Changes {#upcoming-improvements}
 
