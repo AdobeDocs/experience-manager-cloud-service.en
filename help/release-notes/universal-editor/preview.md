@@ -29,3 +29,4 @@ These **preview** release notes are provided as a convenience so you know what c
 ## Upcoming Changes {#upcoming-improvements}
 
 * The default background color of the edit canvas is now white (#FFFFFF) when the app sets no background color of its own.
+
