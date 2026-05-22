@@ -83,6 +83,7 @@ The following use cases require additional implementation effort in addition to 
 The scraping skill does not support the following sources.
 
 * Intranet or protected sources such as content behind authentication, VPNs, or firewalls that is not accessible
+  * As an alternative, use [SLICC](https://www.sliccy.com) which can leverage the authentication context from your browser to access protected sources.
 * Complex dynamic content such as content requiring sophisticated user interaction to appear in the DOM.
   * Client-side rendered content is supported if the content is accessible via a specific URL.
   * Elements hidden via CSS but present in the DOM like tabs, accordions or carousels are also supported.
