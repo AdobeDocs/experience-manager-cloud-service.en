@@ -52,6 +52,16 @@ The [Content Create](/help/ai-in-aem/agents/brand-experience/experience-producti
 >
 >If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
+### Figma to Visual Content Fragments Job {#figma-to-visual-content-fragments}
+
+The [Figma to Visual Content Fragments](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) job imports Figma designs to AEM Content Models, Content Fragments and HTML templates.
+
+>[!NOTE]
+>
+>The Figma to Visual Content Fragments job is currently in Limited Availability. 
+>
+>If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
 ### Forms Creation Job {#forms-creation}
 
 [The Forms Creation job](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md) removes the friction from building adaptive forms and personalized correspondence by transforming natural language requirements into fully structured, branded outputs, empowering business users to create scalable, data-driven experiences without dependency on development or IT teams.
@@ -59,16 +69,6 @@ The [Content Create](/help/ai-in-aem/agents/brand-experience/experience-producti
 ### Communication Creation Job {#communication-creation}
 
 [The communication creation job](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)  creates Interactive Communications using natural language prompts and automatically generates personalized, data-driven correspondence for print (in PDF format). The job is surfaced through AI Assistant.
-
-### Figma to Visual Content Fragments Job {#figma-to-visual-content-fragments}
-
-The [Figma to Visual Content Fragments](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) job creates new pages based on a marketing brief, a template and a natural language prompt.
-
->[!NOTE]
->
->The Figma to Visual Content Fragments job is currently in Limited Availability. 
->
->If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ## Experience Development Agent {#experience-development}
 

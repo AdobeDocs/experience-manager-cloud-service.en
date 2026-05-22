@@ -39,6 +39,16 @@ The [Content Create](/help/ai-in-aem/agents/brand-experience/experience-producti
 >
 >If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
+### Figma to Visual Content Fragments Job {#figma-to-visual-content-fragments}
+
+The [Figma to Visual Content Fragments](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) job imports Figma designs to AEM Content Models, Content Fragments and HTML templates.
+
+>[!NOTE]
+>
+>The Figma to Visual Content Fragments job is currently in Limited Availability. 
+>
+>If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
 ### Form Creation Job {#form-creation}
 
 The [Form Creation](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md) job enables users to build adaptive forms through natural language prompts without dependency on development or IT teams. This capability accelerates form development while maintaining brand consistency and allowing business users to create forms without deep technical product knowledge.
@@ -50,16 +60,6 @@ The [Communication Creation](/help/ai-in-aem/agents/brand-experience/experience-
 >[!NOTE]
 >
 > The Communications Creation skill is currently in alpha. If you would like to participate, please send a request from your official email address to [aem-forms-ea@adobe.com.](mailto:aem-forms-ea@adobe.com)
-
-### Figma to Visual Content Fragments Job {#figma-to-visual-content-fragments}
-
-The [Figma to Visual Content Fragments](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) job creates new pages based on a marketing brief, a template and a natural language prompt.
-
->[!NOTE]
->
->The Figma to Visual Content Fragments job is currently in Limited Availability. 
->
->If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ## Use with other agents {#use-with-other-agents}
 
