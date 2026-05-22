@@ -14,13 +14,13 @@ This reference covers each supported migration pattern, how to provide BPA findi
 
 Every migration session follows this sequence:
 
-1. **Name the pattern** — you specify one pattern (for example, `scheduler`)
-2. **Provide findings** — from a BPA CSV file, CAM via MCP, or specific file paths
-3. **Agent reads transformation rules** — the skill reads the relevant best-practices module before making any code changes
-4. **First batch of five** — the agent transforms up to five findings and reports what it changed
-5. **You review and continue** — after reviewing each batch, reply `continue` to proceed to the next
+1. **Name the pattern**: specify one pattern (for example, `scheduler`)
+2. **Provide findings**: from a BPA CSV file, CAM via MCP, or specific file paths
+3. **Agent reads transformation rules**: the skill reads the relevant best-practices module before making any code changes
+4. **First batch of five**: the agent transforms up to five findings and reports what it changed
+5. **You review and continue**: after reviewing each batch, reply `continue` to proceed to the next
 
-The agent processes one pattern and one batch at a time. It does not proceed automatically — each batch requires your confirmation.
+The agent processes one pattern and one batch at a time. It does not proceed automatically; each batch requires your confirmation.
 
 ## Migration Patterns {#patterns}
 
@@ -58,13 +58,13 @@ Targets synchronous OSGi `EventHandler` services that need to be adapted for AEM
 
 ### Asset API {#asset-api}
 
-Targets classes using deprecated `AssetManager`, `DAMEvent`, or legacy DAM APIs not supported in AEMaaCS. The agent replaces them with the supported AEM Assets API equivalents.
+Targets classes using deprecated `AssetManager`, `DAMEvent`, or unsupported DAM APIs. The agent replaces them with the supported AEM Assets API equivalents.
 
 **BPA pattern id:** `assetApi`
 
 ### HTL Lint (data-sly-test) {#htl-lint}
 
-Targets HTL templates under `ui.apps` that produce `data-sly-test: redundant constant value comparison` lint warnings. The agent discovers affected templates by scanning the content package directly — this pattern does not require a BPA CSV or CAM connection.
+Targets HTL templates under `ui.apps` that produce `data-sly-test: redundant constant value comparison` lint warnings. The agent discovers affected templates by scanning the content package directly; this pattern does not require a BPA CSV or CAM connection.
 
 **BPA pattern id:** `htlLint`
 
@@ -79,7 +79,7 @@ Converts OSGi configurations in `ui.config` to Cloud Manager–compatible `.cfg.
 
 AEMaaCS requires OSGi configurations to be stored as `.cfg.json` files, with environment-specific configs in runmode-scoped folders (`config.author/`, `config.publish/`, `config.dev/`, and so on). The agent:
 
-* Converts legacy `.config`, `.cfg`, and XML-format OSGi configs to `.cfg.json`
+* Converts existing `.config`, `.cfg`, and XML-format OSGi configs to `.cfg.json`
 * Splits configs containing both author- and publish-specific values into separate runmode-scoped files
 * Validates property types against the OSGi metatype specification (strings, integers, booleans, arrays)
 * Flags Adobe-owned PIDs for manual review rather than auto-converting them
@@ -88,10 +88,10 @@ AEMaaCS requires OSGi configurations to be stored as `.cfg.json` files, with env
 
 Moves plaintext secrets and environment-specific values out of committed config files and replaces them with Cloud Manager placeholders:
 
-* `$[secret:NAME]` — for passwords, tokens, and other sensitive values
-* `$[env:NAME]` — for non-sensitive values that differ per environment (for example, service URLs)
+* `$[secret:NAME]`: for passwords, tokens, and other sensitive values
+* `$[env:NAME]`: for non-sensitive values that differ per environment (for example, service URLs)
 
-The corresponding variables and secrets are applied in Cloud Manager and injected at runtime — no values are stored in source control.
+The corresponding variables and secrets are applied in Cloud Manager and injected at runtime; no values are stored in source control.
 
 >[!IMPORTANT]
 >The agent never outputs secret values in the conversation. All sensitive data is written to a gitignored handoff file for you to apply via the Cloud Manager API or UI.
@@ -112,7 +112,7 @@ Scan my config files and create Cloud Manager environment secrets or variables.
 
 ### MCP Error Handling {#mcp-errors}
 
-If the MCP connection returns an error — including project-not-found or authentication failures — the agent stops and shows you the error. It does not automatically switch to another source. From the stopped state, you can:
+If the MCP connection returns an error (including project-not-found or authentication failures), the agent stops and shows you the error. It does not automatically switch to another source. From the stopped state, you can:
 
 * Confirm the correct project from the list the agent displayed
 * Supply a BPA CSV path as an alternative

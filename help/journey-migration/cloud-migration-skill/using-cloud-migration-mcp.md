@@ -8,7 +8,7 @@ role: Developer
 
 # Using the AEM Cloud Migration MCP {#using-cloud-migration-mcp}
 
-The **AEM Cloud Migration MCP** is a hosted [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that connects your IDE agent to **Cloud Acceleration Manager (CAM)**. Once configured, the [AEM Cloud Migration Skill](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md) can fetch Best Practices Analyzer findings directly from your CAM project — no CSV export required.
+The **AEM Cloud Migration MCP** is a hosted [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that connects your IDE agent to **Cloud Acceleration Manager (CAM)**. Once configured, the [AEM Cloud Migration Skill](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md) can fetch Best Practices Analyzer findings directly from your CAM project without requiring a CSV export.
 
 ## MCP Server URL {#server-url}
 
