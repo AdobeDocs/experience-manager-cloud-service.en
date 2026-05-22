@@ -119,7 +119,7 @@ After [enabling Dynamic Media with OpenAPI](#activate-dynamic-media-with-openapi
 
  Before accessing the API, you must to be added to the `AEM Assets DM OpenAPI Users - delivery  - Program xxxx - Environment yyyy` product profile.
 
- Once the access token is fetched, using any of the authentication methods, you can [define the API key in the cURL request](/help/assets/search-assets-api.md) and start using [Dynamic Media with OpenAPIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+ Once the access token is fetched using any of the authentication methods, you can [define the API key in the cURL request](/help/assets/search-assets-api.md) and start using [Dynamic Media with OpenAPIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 ### Create and list [!DNL Dynamic Media] companies {#create-and-list-dynamic-media-companies}
 
