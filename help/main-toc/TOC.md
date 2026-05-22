@@ -1497,6 +1497,7 @@ user-guide-title: AEM as a Cloud Service
     + [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md)
     + [Disallow the Serialization of ResourceResolvers via Sling Model Exporter](/help/implementing/developing/disallow-resourceresolver-serialization.md)
     + [AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md)
+    + [AEM Edge Functions Caching](/help/implementing/developing/introduction/edge-functions-caching.md)
     + Full Stack AEM Development {#full-stack}
       + [Getting Started Developing AEM Sites - WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
       + [Structure of the AEM UI](/help/implementing/developing/introduction/ui-structure.md)
