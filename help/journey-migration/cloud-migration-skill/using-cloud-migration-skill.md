@@ -1,7 +1,6 @@
 ---
 title: Using the AEM Cloud Migration Skill
 description: Reference for each migration pattern supported by the AEM Cloud Migration Skill, including OSGi config conversion, BPA source options, and session management guidance.
-exl-id: c4d5e6f7-a8b9-0123-d4e5-f6a7b8c9d012
 feature: Migration
 role: Developer
 ---

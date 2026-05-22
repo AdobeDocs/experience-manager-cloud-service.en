@@ -1,7 +1,6 @@
 ---
 title: AI-Assisted Code Migration to AEM as a Cloud Service
 description: Overview of the AEM Cloud Migration Skill and MCP, an AI agent solution that reads BPA findings and migrates AEM 6.x code to AEM as a Cloud Service, pattern by pattern.
-exl-id: a3b2c4e5-d6f7-8901-b2c3-d4e5f6a7b890
 feature: Migration
 role: Developer
 ---
