@@ -14,9 +14,9 @@ This article explains how to create custom HTML templates with Handlebars syntax
 
 After creating your templates you can then:
 
-* [Use your templates in AEM](#using-a-template-in-aem)
+* [Use your templates in AEM](#using-a-content-fragment-html-template-in-aem)
 
-* Use the [Publish URL of your Visual Content Fragments](#using-the-publish-url)
+* Use the [Publish URL of your Visual Content Fragments](#using-the-visual-content-fragment-publish-url)
 
 >[!NOTE]
 >
@@ -50,9 +50,9 @@ To understand and work with the technologies covered here you should have:
 * Familiarity with AEM Content Fragments and Content Fragment Models
 * Understanding of your Content Fragment models
 
-## Using a content fragment HTML template {#using-a-template}
+## Using a Content Fragment HTML template {#using-a-content-fragment-html-template}
 
-### Using a content fragment HTML template in AEM {#using-a-template-in-aem}
+### Using a Content Fragment HTML template in AEM {#using-a-content-fragment-html-template-in-aem}
 
 For details of how to use your template in AEM see:
 
@@ -60,7 +60,7 @@ For details of how to use your template in AEM see:
 * [Preview action for a selected fragment - from the console](/help/sites-cloud/administering/content-fragments/managing.md#actions-selected-content-fragment)
 * [Preview your fragment - from the fragment editor](/help/sites-cloud/administering/content-fragments/authoring.md#preview-content-fragment)
 
-### Using the Visual Content Fragment Publish URL {#using-the-publish-url}
+### Using the Visual Content Fragment Publish URL {#using-the-visual-content-fragment-publish-url}
 
 Once you have created Visual Content Fragments using the template you can then use the [Publish URL of your Visual Content Fragments](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md).
 

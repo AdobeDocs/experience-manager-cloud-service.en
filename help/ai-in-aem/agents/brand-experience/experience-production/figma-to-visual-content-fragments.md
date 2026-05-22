@@ -19,9 +19,9 @@ The Figma to Visual Content Fragments Job of the [Experience Production Agent](/
 
 AEM Visual Content Fragments allow previewing and delivering Content Fragments using a visual layout based on an [HTML template](/help/implementing/developing/extending/content-fragments-visualization-templates.md).
 
-While defining style and layout information in hand-coded HTML templates is entirely feasible, it is a highly technical process that is commonly performed by web developers.
+While defining style and layout information in hand-coded HTML templates is entirely feasible, it is a highly technical process that is usually performed by web developers.
 
-To streamline this process for [Visual Content Fragments](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md), and since visual designs for modular experiences are often created in Figma, it is also possible to directly import designs from Figma directly into AEM.
+To streamline this process for [Visual Content Fragments](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md), and since visual designs for modular experiences are often created in Figma, it is also possible to directly import designs from Figma into AEM.
 
 ## Prerequisites {#prerequisites}
 
@@ -32,7 +32,7 @@ Before you start:
   This is achieved by:
 
   * generating a personal token in Figma 
-  * logging into Adobe Experience Cloud at 'https://experience.adobe.com'
+  * logging into Adobe Experience Cloud at `https://experience.adobe.com`
   * persisting the token at `https://experience.adobe.com/#/aem/figmatocontentfragment`
 
 ## To upload a design {#to-upload-a-design}
@@ -42,9 +42,9 @@ The flow is as follows:
 1. The designer (Figma user) creates the design in Figma.
 1. The Figma user creates a share link to the design object in Figma.
 1. The Figma user sends the share link to the AEM user.
-1. Starting with an initial [prompt](#sample-prompts) the AEM user can then use the AI Assistant to interact with the Figma to Visual Content Fragments Job and automatically recreate the approved design in AEM. AEM will automatically create required Content Fragment Models, Content Fragments and HTML templates. 
+1. Starting with an initial [prompt](#sample-prompts) the AEM user can then use the AI Assistant to interact with the Figma to Visual Content Fragments Job and automatically recreate the approved design in AEM. AEM will automatically create the required Content Fragment Models, Content Fragments and HTML templates. 
    * When necessary, the agent will ask for more information, such as the AEM environment to use.
-   * The agentic creation process includes also includes capabilities that allow reusing existing content models or fragments when already available.
+   * The agentic creation process also includes capabilities that allow reusing existing content models or fragments when already available.
 1. The agent generates a Content Fragment and a Content Fragment Model for the content, and an HTML template for the layout and design. 
    * The agent provides a direct link to the fragment, from where you can access the model and the template.
 
