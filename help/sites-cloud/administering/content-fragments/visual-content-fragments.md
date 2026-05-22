@@ -1,18 +1,18 @@
 ---
 title: Visual Content Fragments
-description: Learn how to preview and publish Visual Content Fragments using HTML templates. 
+description: Learn how to visualize and publish Visual Content Fragments using HTML templates. 
 feature: Content Fragments
 role: User, Developer
 ---
 # Visual Content Fragments {#visual-content-fragments}
 
-Content Fragments contain only structured content, without formatting. So AEM allows you to directly preview, and deliver, your Content Fragments using a visual layout based on an HTML template:
+While Content Fragments contain structured content that is intended for JSON output, without design or layout, the addition of HTML templates allows creating fully decorated, visual experiences with structured content in HTML format:
 
-* Previewing a fragment visually helps content quality assurance, allowing authors and readers to review content before it is used. 
+* Visualizing a content fragment helps content quality assurance, allowing stakeholders to review content before it is used, without having to open Content Fragment Editor
 
-* Delivering a visual fragment aids omnichannel delivery; such as embedding in email systems or mobile apps.
+* Delivering a visual fragment aids omnichannel delivery, for reuse of modular experiences across channels such as web, email or mobile apps.
 
-The rendered output of an AEM Content Fragment combined with the layout and design of an HTML template is called a *Visual Content Fragment*. 
+The rendered output of an AEM Content Fragment that uses layout and design of an attached HTML template is called a *Visual Content Fragment*. 
 
 HTML templates contain layout and design information, enabling the visualization of Content Fragments. The connection between a template and a Content Fragment is established using Handlebars syntax to map HTML tags to data types (fields) defined in the Content Fragment Model. This definition allows content authored in the respective fields of the Content Fragment Editor to be displayed in the appropriate locations within the template. 
 
@@ -20,11 +20,11 @@ You (or your development team) can [create and customize your own HTML templates
 
 >[!NOTE]
 >
->A **Generic Template** is always available within AEM as a default, associated with every model. This template enables key/value pairs in structured content to be displayed in a clean, table-style format. 
+>A **Generic Template** is always available within AEM as a default, associated with every model. This template enables key/value pairs in structured content to be displayed in a clean, table-style format to support content QA use cases. 
 
 ## Create a Template {#create-a-template}
 
-The templates used for previewing and delivering Visual Content Fragments are HTML templates developed using Handlebars.
+HTML templates developed using Handlebars.js syntax as placeholders for content that is authored in Content Fragment fields allow previewing and delivering Visual Content Fragments in HTML format.
 
 For details on developing your own templates see [Visual Content Fragments - Templates](/help/implementing/developing/extending/content-fragments-visualization-templates.md).
 
@@ -45,18 +45,18 @@ To upload your new HTML template:
 
    ![Preview Fragment with Generic HTML Template](/help/sites-cloud/administering/content-fragments/assets/cf-visual-html-template-configure-default.png)
 
-1. Select **+** to upload your template from an HTML file (`.html`). A dialog will allow you to **Browse** your local file system and select your template file.
+1. Select **+** to upload your template as an HTML file (`.html`). A dialog will allow you to **Browse** your local file system and select your template file.
 1. Once uploaded two views of the template are shown for you to review:
 
-   * left: a basic rendering without content
-   * right: the handlebars code
+   * left: a rendering of the template without content
+   * right: the HTML code, that can also be edited here before importing to AEM
 
    ![Review HTML template on upload](/help/sites-cloud/administering/content-fragments/assets/cf-visual-html-template-upload-review.png)
 
 1. Select **Next** to continue.
 1. Enter a **Template name** for use in AEM.
 1. Confirm with **Create Template**.
-1. The template will be created in AEM and listed under **HTML Templates**.
+1. The template will be created in AEM and listed in properties of Content Fragment Models under **HTML Templates**.
    Once loaded it can be used for [previewing fragments](#preview-your-fragment-with-a-template). You can also **[Download](#download-your-template)** or **[Delete](#download-your-template)** the template.
 
 ## Preview your fragment with a Template {#preview-your-fragment-with-a-template}
@@ -65,7 +65,7 @@ To preview your Content Fragment using a template:
 
 >[!NOTE]
 >
->As the **Generic Template** is always available you can preview your fragment without loading any customized templates.
+>As the **Generic Template** is always available you can preview your fragment without loading any custom templates.
 
 1. In the Content Fragment console navigate to the location of your fragment.
 
@@ -76,32 +76,30 @@ To preview your Content Fragment using a template:
 1. Select **Preview** from the top toolbar of:
 
    * the Content Fragment console 
-   * the editor, where you can then select **Template**
+   * the editor, where you can then select **Preview** and then **Template**
 
-In both cases a new model window will open. 
+In both cases a new modal window will open. 
 
-1. If no customized templates are available, then AEM will use the **Generic Template** to display your fragment. The **Generic Template**:
+1. If no custom templates are available, then AEM will use the **Generic Template** to display your fragment. The **Generic Template**:
 
    * displays the fields of your fragment in table form; name and content
-   * shows the content of referenced fragments in separate tables, with the same format
+   * shows the fully hydrated content of referenced fragments in the same view 
 
-1. If customized templates are available, you can select the template you want to use (including the **Generic Template**).
+1. If custom templates are available, you can select which template you want to use (including the **Generic Template**).
 
-1. If configured you can also select the **Preview URL** and the **Publish URL**.
+1. If the Content Fragment is published you can also view and copy its **Preview URL** and **Publish URL**.
 
 For example, preview with the **Generic Template**:
 
 ![Preview Fragment with Generic HTML Template](/help/sites-cloud/administering/content-fragments/assets/cf-visual-html-template-referenced-fragment.png)
 
-## Deliver your visual fragment {#deliver-your-visual-fragment}
+## Deliver your Visual Content Fragment {#deliver-your-visual-fragment}
 
-The visual fragment can be delivered to a range of targets by directly accessing the HTML.
+The visual content fragment can be delivered to a range of targets in HTML format.
 
 ### Deliver to the browser {#deliver-to-the-browser}
 
-Copy the **Preview URL** or the **Publish URL** and access this directly from your browser. 
-
-The HTML representation of your fragment is seen.
+Copy the **Preview URL** or the **Publish URL** to render a Visual Content Fragment in your browser. 
 
 ### Deliver to Edge Delivery Services {#deliver-to-edge-delivery-services}
 
@@ -116,35 +114,26 @@ You can deliver your visual fragment in an Edge Delivery Service (EDS) page.
 >
 >For full details see [Integration with Edge Delivery Services (Embed Block)](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md#integration-with-edge-services-embed-block)
 
-### Deliver to an AEM page {#deliver-to-an-AEM-page}
+### Deliver to an AEM page using Core Components {#deliver-to-an-AEM-page}
 
-You can deliver your visual fragment a Content Fragment component on your AEM page.
+You can deliver your Visual Content Fragment in an AEM page using the Content Fragment Core Component.
 
-When configuring a **Content Fragment** [component on your page](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page):
+When adding a **Content Fragment** in a page using the Content Fragment Core Component [component on your page](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page):
 
-1. Select **Content Fragment Visualization**.
+1. Select **Visual Content Fragment**.
 1. Select the required **Visualization Template**.
 
    ![Configure Content Fragment component for a visual fragment](/help/sites-cloud/administering/content-fragments/assets/cf-visual-template-aem-page.png)
 
-1. The visual fragment will be shown, and the page can be published.
+1. The visual fragment will be shown in the page.
 
 >[!NOTE]
 >
 >For full details see [Integration - AEM Sites with Core Components](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md#integration-aem-sites-with-core-components)
 
-### Deliver to an external application {#deliver-to-an-external-application}
-
-You can deliver your visual fragment to an external application. 
-
-See:
-
-* [Preview in an external application](/help/sites-cloud/administering/content-fragments/preview.md#preview-in-an-external-application)
-* [Integration with External Sites](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md#integration-with-external-sites)
-
 ## Download your template {#download-your-template}
 
-To download your new HTML template from AEM:
+To download your HTML template from AEM:
 
 1. In the Content Fragment console open the tab for **Content Fragment Models**.
 1. Navigate to the location of your fragment model.
