@@ -128,6 +128,7 @@ You can deliver your Visual Content Fragment in an AEM page using the Core Compo
 
 When configuring a **Content Fragment** [component on your page](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page):
 
+1. Specify the required **Content Fragment**.
 1. Select **Content Fragment Visualization**.
 1. Select the required **Visualization Template** from the drop down list.
 

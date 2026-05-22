@@ -64,6 +64,15 @@ Content Fragments can also be delivered in:
   * provides a visual representation to help previewing, and reviewing, the content
   * provides a visual representation for direct, and immediate, use by external channels and applications
 
+  <!-- CQDOC-23232 - remove when GA -->
+
+  >[!NOTE]
+  >
+  >Visual Content Fragments are currently in Limited Availability. 
+  >
+  >If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
+
 The number of communication channels is increasing annually. Typically channels refer to the delivery mechanism, either as the:
 
 * Physical channel; for example, desktop, mobile.
