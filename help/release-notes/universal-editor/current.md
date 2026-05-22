@@ -22,7 +22,7 @@ These are the release notes for the 28 May 2026 release of the Universal Editor.
 
 * A new button has been added to the toolbar [to access AEM page properties.](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)
   * This brings the functionality of the former `aem-page-properties` [extension](/help/implementing/universal-editor/extending.md) natively to the Universal Editor.
-  * The button is shown only when the remote page has a [connection with protocol](/help/implementing/universal-editor/component-definition.md#plugins) `aem`, or `xwalk` and a unique page path can be resolved from the current editable.
+  * The button is shown only when the remote page has a [connection with protocol](/help/implementing/universal-editor/component-definition.md#plugins) `aem` or `xwalk` and a unique page path can be resolved from the current editable.
 
 ## Other Improvements {#other-improvements}
 
