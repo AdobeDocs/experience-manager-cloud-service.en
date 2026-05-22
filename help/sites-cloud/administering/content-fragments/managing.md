@@ -398,6 +398,12 @@ You can:
 
   * With [Visualization Templates](/help/sites-cloud/administering/content-fragments/preview.md#preview-with-visualization-html-templates)
 
+    >[!NOTE]
+    >
+    >Visual Content Fragments are currently in Limited Availability. 
+    >
+    >If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
   * On the [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) instance 
 
 * Publish your Content Fragments to:

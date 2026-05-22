@@ -14,6 +14,12 @@ https://publish-p<programId>-e<envId>.adobeaemcloud.com/adobe/stable/previewtemp
 
 This URL returns a *self-contained HTML document* (including inline CSS and structure) that can be embedded in any web context. 
 
+>[!NOTE]
+>
+>Visual Content Fragments are currently in Limited Availability. 
+>
+>If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
 ## Embedding Techniques — Overview {#embedding-techniques-overview}
 
 There are three distinct approaches for consuming HTML from a Visual Content Fragment on a host page. Each comes with distinct characteristics around style isolation, layout behavior, accessibility, and complexity.

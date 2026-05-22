@@ -90,6 +90,12 @@ You can preview a Content Fragment in an external application:
 
 ## Preview with Visualization (HTML) Templates {#preview-with-visualization-html-templates}
 
+>[!NOTE]
+>
+>Visual Content Fragments are currently in Limited Availability. 
+>
+>If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
 AEM allows you to preview your Content Fragment using a visual layout based on an HTML template. 
 
 See [Visual Content Fragments](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md) for details on how to [preview your fragment with templates](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md#preview-your-template-with-a-template).

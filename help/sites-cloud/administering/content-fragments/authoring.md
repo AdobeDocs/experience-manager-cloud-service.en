@@ -550,6 +550,12 @@ Both options are available using **Preview** in the top toolbar:
 
   * Allows you to preview your Content Fragment with **[Visualization (HTML) Templates](#preview-with-visualization-html-templates)**.
 
+  >[!NOTE]
+  >
+  >Visual Content Fragments are currently in Limited Availability. 
+  >
+  >If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
 ## Publish your Fragment {#publish-content-fragment}
 
 You can **Publish** your fragment to either your:
