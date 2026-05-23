@@ -23,8 +23,8 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
 >[!NOTE]
 >
->* Sharing an Assets folder of the type `sling:OrderedFolder`, is not supported when sharing to Experience Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
->* Experience Manager does not allow using `subassets` word as the name of a folder. It is a keyword reserved for node that contain subassets for compound assets
+>* Sharing an Assets folder of the type `sling:OrderedFolder` is not supported when sharing to Experience Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
+>* Experience Manager does not allow using `subassets` word as the name of a folder. It is a keyword reserved for nodes that contain subassets for compound assets.
 
 1. Navigate to the place in your digital assets folder where you want to create a folder. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
 1. In the **[!UICONTROL Title]** field, provide a folder name. By default, DAM uses the title that you provided as the folder name. Once the folder is created, you can override the default and specify another folder name.
@@ -236,9 +236,9 @@ The other properties and metadata information is retained. A partial copy is not
 
    * cq5dam 
 
-   To configure rendition dimensions of an image at the asset detail level, overlay the `renditionpicker` node (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) and configure the value of the width property. Configure the property **[!UICONTROL size (Long) in KB]** in place of width to customize rendition on asset detail page based on image size. For size-based customization, the property `preferOriginal` assigns preference to the original if the size of the matched rendition is greater than the original.
+   To configure rendition dimensions of an image at the asset detail level, overlay the `renditionpicker` node (`/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) and configure the value of the width property. Configure the property **[!UICONTROL size (Long) in KB]** in place of width to customize rendition on asset detail page based on image size. For size-based customization, the property `preferOriginal` assigns preference to the original if the size of the matched rendition is greater than the original.
 
-   Similarly, you can customize the Annotation page image by overlaying `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
+   Similarly, you can customize the Annotation page image by overlaying `/libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
    <!--![chlimage_1-222](assets/chlimage_1-222.png)-->
 
@@ -300,7 +300,7 @@ Understand the following limitations and tips related to publishing or unpublish
 * The option to [!UICONTROL Manage Publication] is available only to the user accounts that have replication permissions.
 * While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because those may be referenced by other published assets.
 * Empty folders are not published.
-* If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
+* If you publish an asset that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
 
 ## Closed user group {#closed-user-group}
 
@@ -447,7 +447,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
    >[!NOTE]
    >
-   >You can add multiple annotations, before you save them.
+   >You can add multiple annotations before you save them.
 
 1. Select **[!UICONTROL Close]** to exit from the Annotation mode.
 1. To view the notification, log in to Assets with Aaron MacDonald's credentials and click the **[!UICONTROL Notifications]** icon to view the notification.
@@ -642,7 +642,7 @@ To know details of Collection management, see [manage Collections](/help/assets/
 
 When browsing assets from within [!DNL Experience Manager] user interface, the expired assets are not displayed. To prevent viewing, searching, and fetching of expired assets when browsing assets from desktop app and Asset Link, administrators can do the following configuration. The configuration works for all users, irrespective of administrator privilege.
 
-Execute the following CURL command. Ensure read access on `/conf/global/settings/dam/acpapi/` for the users who access assets. Users who are part of `dam-user` group have the permission by default.
+Execute the following CURL command. Ensure read access on `/conf/global/settings/dam/acpapi/` for the users who access assets. Users who are part of the `dam-user` group have the permission by default.
 
 ```curl
 curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
