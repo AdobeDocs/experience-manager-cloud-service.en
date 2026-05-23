@@ -233,7 +233,7 @@ Select the configuration and click **[!UICONTROL Dry Run]** to invoke a test run
 
 When you import assets or folders in bulk, [!DNL Experience Manager Assets] imports the whole structure of what exists in the import source. [!DNL Experience Manager] follows the inbuilt rules for special characters in the asset and folder names, therefore these filenames need sanitization. For both folder name and asset name, the title defined by the user remains unchanged and is stored in `jcr:title`. 
 
-During bulk import, [!DNL Experience Manager] look for the existing folders  to avoid reimporting the assets and folders, and also verifies the sanitization rules applied in the parent folder where the import takes place. If the sanitization rules are applied in the parent folder, the same rules are applied to the import source. For new import, the following sanitization rules are applied to manage the filenames of assets and folders.  
+During bulk import, [!DNL Experience Manager] looks for the existing folders  to avoid reimporting the assets and folders, and also verifies the sanitization rules applied in the parent folder where the import takes place. If the sanitization rules are applied in the parent folder, the same rules are applied to the import source. For new import, the following sanitization rules are applied to manage the filenames of assets and folders.  
 
 **Disallowed names in bulk import**
 
@@ -270,7 +270,7 @@ For asset filenames, the JCR name and path is sanitized using the API: `JcrUtil.
 
 **Handling folder name in bulk import**
 
-For folder filenames, the JCR name and path is sanitized using the API: `DamUtil.getSanitizedFolderName`.
+For folder filenames, the JCR name and path are sanitized using the API: `DamUtil.getSanitizedFolderName`.
 
 * Upper case characters are converted to lower case
 * Unicode characters are not changed
@@ -357,8 +357,8 @@ Experience Manager displays the job history. On the Bulk Import job history page
 
 In addition to web browser user interface, [!DNL Experience Manager] supports other clients on desktop. They also provide upload experience without the need to go to the web browser.
 
-* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) provides access to assets from [!DNL Experience Manager] in Adobe Photoshop, Adobe Illustrator, and Adobe InDesign desktop applications. You can upload the currently open document into [!DNL Experience Manager] directly from Adobe Asset Link user interface from within these desktop applications.
-* [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) simplifies working with assets on desktop, independent on their file type or native application that handles them. It is useful to upload files in nested folder hierarchies from your local file system, as browser upload only supports uploading flat file lists.
+* [[!DNL Adobe Asset Link]](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) provides access to assets from [!DNL Experience Manager] in Adobe Photoshop, Adobe Illustrator, and Adobe InDesign desktop applications. You can upload the currently open document into [!DNL Experience Manager] directly from the Adobe Asset Link user interface within these desktop applications.
+* [[!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) simplifies working with assets on desktop, regardless of their file type or the native application that handles them. It is useful to upload files in nested folder hierarchies from your local file system, as browser upload only supports uploading flat file lists.
 
 ## Process assets when uploaded {#process-when-uploaded}
 
@@ -396,7 +396,7 @@ Technical details of the upload APIs and protocol, and links to open-source SDK 
 
 * Some upload methods do not stop you from uploading assets with [forbidden characters](#filename-handling) in the filenames. The characters are replaced with `-` symbol.
 
-* Uploading assets using the browser only supports flat file lists and not nested folder hierarchies. To upload all assets inside nested folder, consider using [desktop app](#upload-assets-desktop-clients).
+* Uploading assets using the browser only supports flat file lists and not nested folder hierarchies. To upload all assets inside a nested folder, consider using [desktop app](#upload-assets-desktop-clients).
 
 * Bulk import method imports the entire folder structure as it exists on the data source. However, only the non-empty folders are created in [!DNL Experience Manager].
 
