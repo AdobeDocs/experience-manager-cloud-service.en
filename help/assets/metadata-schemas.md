@@ -123,7 +123,7 @@ To ensure that the component is displayed properly in the metadata schema form, 
 * **Placeholder**: Use this property to specify relevant placeholder text regarding the metadata property.
 * **Required**: Use this property to mark a metadata property as mandatory on the properties page.
 * **Disable Edit**: Use this property to disallow any edits to a property on the properties page.
-* **Show Empty Field In Read Only**: Mark this property to display a metadata property on the properties page even if it has no value. By default, when a metadata property has no value, it is not be listed on the properties page.
+* **Show Empty Field In Read Only**: Mark this property to display a metadata property on the properties page even if it has no value. By default, when a metadata property has no value, it is not listed on the properties page.
 * **Show list ordered**: Use this property to display an ordered list of choices.
 * **Choices**: Use this property to specify choices in a list.
 * **Description** : Use this property to add a short description for the metadata component.
@@ -132,7 +132,7 @@ To ensure that the component is displayed properly in the metadata schema form, 
 
 >[!NOTE]
 >
->The [!UICONTROL Hidden Field] component does not include these attributes. Instead, it includes properties, such as attributes Name, Value, Field Label, and Description. The values for the Hidden Field component are sent as a POST parameter whenever the asset is saved. It is not be saved as metadata for the asset.
+>The [!UICONTROL Hidden Field] component does not include these attributes. Instead, it includes properties, such as attributes Name, Value, Field Label, and Description. The values for the Hidden Field component are sent as a POST parameter whenever the asset is saved. It is not saved as metadata for the asset.
 
 If you select the **[!UICONTROL Required]** option, you can search for assets missing mandatory metadata. From the **[!UICONTROL Filters]** panel, expand the **[!UICONTROL Metadata Validation]** predicate and select the **[!UICONTROL Invalid]** option. The search results display assets missing mandatory metadata that you configured through the schema form.
 
