@@ -45,7 +45,7 @@ There are two deployment types for Edge Delivery Services in Adobe Managed CDN:
 These two options also have different capabilities:
 
 * **Config Pipeline** is available for AEM as a Cloud Service environments.
-* **Config Pipeline** is currently available for Edge environments only by way of the limited Beta program.
+* **Config Pipeline** is currently available for Edge environments only through the limited Beta program.
 
 For full setup instructions, see [Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed)
 

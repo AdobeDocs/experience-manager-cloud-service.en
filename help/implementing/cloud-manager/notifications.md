@@ -13,11 +13,11 @@ Learn how Cloud Manager notifies you of important events.
 
 ## Notifications in Cloud Manager {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] sends you notifications when a production pipeline starts and completes (successfully or unsuccessfully), at the start of a production deployment.
+[!UICONTROL Cloud Manager] sends you notifications when a production pipeline starts and completes (successfully or unsuccessfully) at the start of a production deployment.
 
 These notifications are sent through the [!UICONTROL Experience Cloud] notification system to users in the **Business Owner**, **Program Manager**, and **Deployment Manager** roles.
 
-The notifications appear in a sidebar within [!UICONTROL Cloud Manager] and throughout the Adobe [!UICONTROL Experience Cloud]. The bell icon in the header is badged when you have new notifications.
+The notifications appear in a sidebar within [!UICONTROL Cloud Manager] and throughout the Adobe [!UICONTROL Experience Cloud]. The bell icon in the header is assigned a badge when you have new notifications.
 
 ![Notifications icon](assets/notifications-bell-badged.png)
 
@@ -45,7 +45,7 @@ Click the gear icon at the top of the notifications sidebar to open the **Experi
 
 ### Subscriptions {#subscriptions}
 
-Subscriptions define for which products you receive notifications and which notifications.
+Subscriptions define the products for which you receive notifications and which types of notifications.
 
 ![Notification subscriptions](assets/notifications-subscriptions.png)
 
@@ -59,11 +59,11 @@ Priority alerts are marked with a **HIGH** tag. You can configure them to be exc
 
 ![Notification priority](assets/notifications-priority.png)
 
-Use the drop-down to add to the list of categories that qualify as priority. Click the X next to the category names to remove them.
+Use the drop-down menu to add to the list of categories that qualify as priority. Click X next to the category names to remove them.
 
 ### Alerts {#alerts}
 
-Alerts appear in the top-right corner of your window for a few seconds. Use the **Alerts** section to define for which notifications you receive alerts.
+Alerts appear in the top-right corner of your window for a few seconds. Use the **Alerts** section to define the notifications for which you receive alerts.
 
 ![Notification alerts](assets/notifications-alerts.png)
 
@@ -79,10 +79,10 @@ Notifications are available in the web user interface across Adobe [!UICONTROL E
 
 ![Notification emails](assets/notifications-emails.png)
 
-By default no emails are sent. You can choose to receive emails as:
+By default, no emails are sent. You can choose to receive emails as:
 
 * Instantly
 * Daily
 * Weekly
 
-When you choose **Instant notifications**, emails are sent immediately for every notification. For **Daily digest** and **Weekly digest** you can choose when your daily digest is sent and on which day and when your weekly digest is sent.
+When you choose **Instant notifications**, emails are sent immediately for every notification. For **Daily digest** and **Weekly digest**, you can choose when your daily digest is sent and on which day and when your weekly digest is sent.
