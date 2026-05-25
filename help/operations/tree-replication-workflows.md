@@ -14,7 +14,7 @@ For other replication topics, see [Replication](/help/operations/replication.md)
 
 ## Tree Activation Workflow Step {#tree-activation}
 
-The Tree Activaton workflow step is intended to performantly replicate a deep hierarchy of content nodes. It automatically pauses when the queue grows too large in order to allow other replications to proceed in parallel with minimal latency. 
+The Tree Activation workflow step is intended to performantly replicate a deep hierarchy of content nodes. It automatically pauses when the queue grows too large in order to allow other replications to proceed in parallel with minimal latency. 
 
 Create a Workflow Model that uses the `TreeActivation` process step:
 
@@ -52,9 +52,9 @@ Create a Workflow Model that uses the `TreeActivation` process step:
 | maxTreeSize    | 500000  | Maximum number of nodes for a tree to be considered small       |
 | maxQueueSize   | 10      | Maximum number of items in replication queue                    |
 | enableVersion  | false   | Enable versioning                                               |
-| dryRun         | false   | When set to true replication is not acutally called             |
+| dryRun         | false   | When set to true replication is not actually called             |
 | userId         |         | only for job. On workflow the user calling the workflow is used |
-| filters        |         | List of node filter names. See supported filter below           |
+| filters        |         | List of node filter names. See supported filters below           |
 
 **Support Filters**
 

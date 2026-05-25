@@ -44,13 +44,7 @@ Including a folder's children for the "publish later" option invokes the Publish
 
 You can find more detailed information on Manage Publication on the [Publishing Fundamentals documentation](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
-### Tree Activation Workflow Step {#tree-activation}
-
-Use the Tree Activation workflow step to performantly replicate deep content hierarchies in bulk. See [Tree Replication Workflows](/help/operations/tree-replication-workflows.md#tree-activation) for configuration, parameters, and monitoring instructions.
-
-### Publish Content Tree Workflow {#publish-content-tree-workflow}
-
-The Publish Content Tree workflow is deprecated in favor of the Tree Activation workflow step. See [Tree Replication Workflows](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow) for details.
+To replicate deep content hierarchies in bulk, use a workflow-based approach. See [Tree Replication Workflows](/help/operations/tree-replication-workflows.md) for the recommended Tree Activation workflow step, configuration parameters, and monitoring guidance. The deprecated Publish Content Tree workflow is also documented there for reference.
 
 ### Replication API {#replication-api}
 
@@ -77,7 +71,7 @@ replicator.replicate(session,ReplicationActionType.ACTIVATE, new String[]{"/cont
 Resource enResource = resourceResolver.getResource("/content/we-retail/en");
 Resource deResource = resourceResolver.getResource("/content/we-retail/de");
 ReplicationStatus enStatus = enResource.adaptTo(ReplicationStatus.class);
-// if you need to get the status for more more than 1 resource at once, this approach is more performant
+// if you need to get the status for more than 1 resource at once, this approach is more performant
 Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchReplicationStatus(enResource,deResource);
 ```
 
@@ -130,7 +124,7 @@ You can directly invalidate content by using either Sling Content Invalidation (
 **Replication API Capacity Limits**
 
 Replicate fewer than 100 paths at a time, with 500 being the limit. Above the limit, a `ReplicationException` is thrown. 
-If your application logic does not require atomic replication, this limit can be overcome by setting the `ReplicationOptions.setUseAtomicCalls` to false, which accepts any number of paths, but internally create buckets to stay below this limit.
+If your application logic does not require atomic replication, this limit can be overcome by setting the `ReplicationOptions.setUseAtomicCalls` to false, which accepts any number of paths, but internally creates buckets to stay below this limit.
 
 The size of the content transmitted per replication call must not exceed `10 MB`. This rule includes the nodes and properties, but not any binaries (workflow packages and content packages are considered binaries). 
 
