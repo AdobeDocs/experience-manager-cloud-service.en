@@ -79,7 +79,7 @@ Create a Workflow Model that uses the `TreeActivation` process step:
 | Name           | default | description                                                     |
 | -------------- | ------- | --------------------------------------------------------------- |
 | path           |         | root path to start from                                         |
-| agentId        | publish | Replication agent name to use                                   |
+| agentId        | publish | Agent that receives the replication (`publish` or `preview`)    |
 | chunkSize      | 50      | Number of paths to bundle into a single replication             |
 | maxTreeSize    | 500000  | Maximum number of nodes for a tree to be considered small       |
 | maxQueueSize   | 10      | Maximum number of items in replication queue                    |
@@ -161,7 +161,7 @@ Alternatively, you can create a Workflow Model that uses the `Publish Content Tr
 * `includeChildren` (boolean value, default: `false`). The value `false` means that only the path is published; `true` means that children are published too.
 * `replicateAsParticipant` (boolean value, default: `false`). If configured as `true`, the replication is using the `userid` of the principal which performed the participant step.
 * `enableVersion` (boolean value, default: `false`). This parameter determines if a new version is created upon replication.
-* `agentId` (string value, default means only agents for publish are used). It is recommended to be explicit about the agentId; for example, setting it the value: publish. Setting the agent to `preview` publishes to the preview service.
+* `agentId` (string value, default means only agents for publish are used). Specify the target agent explicitly—for example, `publish` for the live publish tier or `preview` for the preview tier.
 * `filters` (string value, default means that all paths are activated). Available values are: 
   * `onlyActivated` - only activate pages that have (already) been activated. Acts as a form of reactivation.
   * `onlyModified` - activate only paths which are already activated and have a modification date later than the activation date.
@@ -218,11 +218,22 @@ ReplicationStatus enStatus = enResource.adaptTo(ReplicationStatus.class);
 Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchReplicationStatus(enResource,deResource);
 ```
 
-**Replication with Specific Agents**
+**Replication agents**
 
-When replicating resources, as in the example above, only the agents that are active by default are used. In AEM as a Cloud Service, it means only the agent called "publish", which connects the author to the publish tier.
+AEM as a Cloud Service provides two predefined replication agents that route content from author to a target tier through Sling Content Distribution:
 
-To support the preview functionality, a new agent called "preview" has been added, which is not active by default. This agent is used to connect the author to the preview tier. If you want to replicate only by way of the preview agent, you must explicitly select this preview agent by way of an `AgentFilter`.
+* **publish** — Replicates activated content to the live publish tier. This agent is enabled by default and is used when you publish from the UI, workflows, or the Replication API unless you specify otherwise.
+* **preview** — Replicates content to the preview tier so authors can review changes before they go live. This agent is not enabled by default.
+
+You can view and monitor both agents from **Tools** > **Deployment** > **Distribution**:
+
+   ![Distribution agents showing publish and preview](/help/operations/assets/replication-agents.png "Distribution agents")
+
+Selecting an agent card opens its status, logs, and queue details.
+
+**Replication with specific agents**
+
+When you replicate with the API as shown above, only agents that are enabled by default are used—in AEM as a Cloud Service, that is **publish** only. To replicate exclusively to the preview tier, pass an `AgentFilter` that selects the preview agent:
 
 See the following example:
 
@@ -247,7 +258,7 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 In case you do not provide such a filter and only use the "publish" agent, the "preview" agent is not used and the replication action does not affect the preview tier.
 
-The overall `ReplicationStatus` of a resource is only modified if the replication action includes at least one agent which is active by default. In the example above, this flow was not the case. The replication was just using the "preview" agent. Therefore, you must use the new `getStatusForAgent()` method, which allows querying the status for a specific agent. This method also works for the "publish" agent. It returns a non-null value if there has been any replication action done using the provided agent.
+The overall `ReplicationStatus` of a resource updates only when the replication includes at least one agent that is enabled by default. In the example above, only **preview** was used, so `ReplicationStatus.isActivated` remains `false`. Use `getStatusForAgent()` to check status for a specific agent—for example, `getStatusForAgent("preview")` after a preview-only replication, or `getStatusForAgent("publish")` for the live publish tier.
 
 ### Methods of Invalidating Content {#invalidating-content}
 
