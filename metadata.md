@@ -6,6 +6,10 @@ index: true
 type: Documentation
 solution: Experience Manager, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager, Experience Manager Screens
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: "Experience Manager"
+usetq: true
 landing-page-name: experience-manager
 landing-page-breadcrumb-title: AEM
 version: Experience Manager as a Cloud Service
