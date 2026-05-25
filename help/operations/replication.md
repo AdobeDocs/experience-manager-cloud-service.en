@@ -218,7 +218,7 @@ ReplicationStatus enStatus = enResource.adaptTo(ReplicationStatus.class);
 Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchReplicationStatus(enResource,deResource);
 ```
 
-**Replication agents**
+**Replication Agents**
 
 AEM as a Cloud Service provides two predefined replication agents that route content from author to a target tier through Sling Content Distribution:
 
@@ -229,9 +229,9 @@ You can view and monitor both agents from **Tools** > **Deployment** > **Distrib
 
    ![Distribution agents showing publish and preview](/help/operations/assets/replication-agents.png "Distribution agents")
 
-Selecting an agent card opens its status, logs, and queue details.
+Selecting an agent card opens its status, logs, and [queue details](#replication-queues).
 
-**Replication with specific agents**
+**Replication with Specific Agents**
 
 When you replicate with the API as shown above, only agents that are enabled by default are used—in AEM as a Cloud Service, that is **publish** only. To replicate exclusively to the preview tier, pass an `AgentFilter` that selects the preview agent:
 
@@ -256,7 +256,7 @@ ReplicationStatus afterStatus = enResource.adaptTo(ReplicationStatus.class); // 
 ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); // previewStatus.isActivated == true
 ```
 
-In case you do not provide such a filter and only use the "publish" agent, the "preview" agent is not used and the replication action does not affect the preview tier.
+If you replicate without an `AgentFilter`, only **publish** is used and the preview tier is not affected.
 
 The overall `ReplicationStatus` of a resource updates only when the replication includes at least one agent that is enabled by default. In the example above, only **preview** was used, so `ReplicationStatus.isActivated` remains `false`. Use `getStatusForAgent()` to check status for a specific agent—for example, `getStatusForAgent("preview")` after a preview-only replication, or `getStatusForAgent("publish")` for the live publish tier.
 
@@ -264,7 +264,7 @@ The overall `ReplicationStatus` of a resource updates only when the replication 
 
 You can directly invalidate content by using either Sling Content Invalidation (SCD) from author (the preferred method) or by using the Replication API to invoke the publish Dispatcher flush replication agent. See [Caching](/help/implementing/dispatcher/caching.md) page for further details.
 
-**Replication API capacity limits**
+**Replication API Capacity Limits**
 
 Replicate fewer than 100 paths at a time, with 500 being the limit. Above the limit, a `ReplicationException` is thrown. 
 If your application logic does not require atomic replication, this limit can be overcome by setting the `ReplicationOptions.setUseAtomicCalls` to false, which accepts any number of paths, but internally create buckets to stay below this limit.
@@ -272,21 +272,32 @@ If your application logic does not require atomic replication, this limit can be
 The size of the content transmitted per replication call must not exceed `10 MB`. This rule includes the nodes and properties, but not any binaries (workflow packages and content packages are considered binaries). 
 
 
+## Replication Queues {#replication-queues}
+
+Each replication agent displays two replication queues. AEM as a Cloud Service no longer shows a separate queue for each publish pod—the publish tier scales automatically, so per-pod queues added complexity without practical benefit. Queue status is consolidated as follows:
+
+* **persisted** — The change is durably stored on the publish tier. After an item clears this queue, the content is persisted; publish instances reach a consistent state over time.
+* **fully published** — The change is live on all publish pods and the Dispatcher cache is cleared for the affected paths. After an item clears this queue, visitors receive the updated content.
+
+### Monitor Replication Queues {#monitor-replication-queues}
+
+1. From the AEM [Global Navigation](/help/sites-cloud/authoring/basic-handling.md#global-navigation), navigate to **Tools** > **Deployment**.
+
+   ![Navigate to Distribution from Tools](/help/operations/assets/replication-agent-navigation.png "Distribution navigation")
+
+1. Select **Distribution**, then open the **publish** or **preview** agent card.
+
+1. On the **Status** tab, verify each queue shows a healthy status. Review **Items Pending** for work waiting to process, and **Last Item Processed** for recent activity.
+
+   ![Replication queues showing persisted and fully published](/help/operations/assets/replication-queues.png "Replication queues")
+
+1. Select **Test Connection** to verify the agent can reach the distribution service.
+1. Select the **Logs** tab to view the history of content publications.
+
+   ![Replication logs](/help/operations/assets/publish-logs.png "Logs")
+
 ## Troubleshooting {#troubleshooting}
 
-To troubleshoot replication, navigate to the Replication Queues in the AEM Author Service Web UI:
+If content cannot be published, the publication is reverted from the AEM Publish Service. Use [Monitor Replication Queues](#monitor-replication-queues) to open the agent **Status** tab and identify the affected queue.
 
-1. From the AEM [Global Navigation](/help/sites-cloud/authoring/basic-handling.md#global-navigation), navigate to **Tools** > **Deployment** > **Distribution**
-1. Select the card **publish**
-
-   ![Status](assets/publish-status.png "Status")
-
-1. Check the queue status which should be green
-1. You can test the connection to the replication service
-1. Select the **Logs** tab which shows the history of content publications
-
-![Logs](assets/publish-logs.png "Logs")
-
-If the content couldn't be published, the whole publication is reverted from the AEM Publish Service.
-
-In that case, the main, editable queue shows a red status and should be reviewed to identify which items caused the cancelation of the publication. By clicking that queue, its pending items show up, from which a single item or all items can be cleared if needed.
+When a queue shows a red status, review its pending items to find what caused the failure. Select the queue to view pending items, then clear individual items or the entire queue if needed.
