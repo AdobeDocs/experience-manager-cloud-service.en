@@ -9,7 +9,7 @@ exl-id: 9cebe65c-6aea-4096-9c58-f88295a80639
 
 >[!IMPORTANT]
 >
->AEM Edge Functions is a **beta** feature. Features and documentation may change without notice. To join the early access program and provide feedback, email [aemcs-edge-functions-feedback@adobe.com](mailto:aemcs-edge-functions-feedback@adobe.com).
+>AEM Edge Functions is a **beta** feature. Features and documentation may change without notice. To join the early access program and provide feedback, email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com).
 
 AEM Edge Functions lets you execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences without a round trip to your origin.
 
@@ -20,7 +20,7 @@ Common use cases include:
 - Reformatting or aggregating responses from third-party APIs before they reach the browser
 - Composing and serving server-rendered HTML at the edge using content stitched from multiple backends
 
-AEM Edge Functions is compatible with both Edge Delivery Services and the AEM Cloud Service Java-stack.
+AEM Edge Functions is compatible with both Edge Delivery Services and the AEM as a Cloud Service Java-stack.
 
 ## Key Benefits {#key-benefits}
 
@@ -185,6 +185,39 @@ Adobe Managed CDN does not expose a remote debugger, but does expose log streami
 ```bash
 aio aem edge-functions tail-logs <function-name>
 ```
+
+## Caching and Cache Purging {#caching}
+
+Edge Functions can significantly reduce origin load and improve response times by caching data at the edge. However, caching requires intentional design — particularly in Edge Functions where **two independent cache layers** are involved:
+
+```
+Browser → AEM CDN (CDN Cache) → AEM Edge Functions (Fetch Cache) → Backend (AEM, APIs, etc.)
+```
+
+Before configuring caching, consider how your content behaves:
+
+- **Truly unique-per-request content** (session tokens, real-time pricing for a specific user) should bypass caching to avoid serving incorrect results.
+- **Cohort-based personalization** (content tailored by region, device type, or audience segment) can often be cached with shorter TTLs or `Vary` headers, since many users share the same variant.
+- **Stable, shared content** (product catalogs, CMS pages, API responses that change on a known schedule) benefits from aggressive caching with explicit invalidation via surrogate keys.
+- **Getting it wrong in either direction has consequences.** Over-caching causes stale content bugs that are difficult to diagnose across two cache layers. Under-caching defeats the performance and origin-offload purpose of using Edge Functions at all.
+
+Because the CDN and the Edge Function's internal fetch cache operate independently, a change to underlying data requires deliberate invalidation of **both** layers. Understanding this architecture is essential for reliable cache management.
+
+For the detailed technical guidance on configuring caching behavior, controlling cache lifetimes, using surrogate keys, and purging cached content, see [Caching in AEM Edge Functions](/help/implementing/developing/introduction/edge-functions-caching.md).
+
+## Limitations {#limitations}
+
+Each Edge Function invocation runs inside a sandbox with resource limits enforced by the underlying compute platform.
+
+### Maximum Outbound Fetch Calls per Invocation {#max-fetch-calls}
+
+AEM Edge Functions enforce a hard limit of **32 backend requests per execution** (that is, per incoming request handled by your function). Once this limit is reached, any further `fetch()` calls fail with the following error:
+
+```
+Requested backend named '…' does not exist
+```
+
+When you see this error and your origin configuration is correct, the most likely cause is that the per-invocation backend request quota has been exhausted. See [Fastly Compute resource limits](https://docs.fastly.com/products/compute-resource-limits#default-limits) for the full list of platform limits.
 
 ## Configuration Reference {#configuration-reference}
 

@@ -52,7 +52,7 @@ A possible solution would be the following.
 
 For example, a change on the main branch in project A is automatically pushed to the main branch in Cloud Manager's Git repository. There could be a mapping between branches like a push to a branch named `dev` in project A is pushed to a branch named `development` in Cloud Manager's Git repository. Similar steps are required for project B.
 
-Depending on the branching strategy and workflows, the syncing can be configured for different branches. If the used Git repository does not provide a concept similar to GitHub actions, an integration by way of Jenkins (or similar) is possible as well. In this case, a webhook triggers a Jenkins job, which does the work.
+Depending on the branching strategy and workflows, the syncing can be configured for different branches. If the used Git repository does not provide a concept similar to GitHub actions, an integration through Jenkins (or similar) is possible as well. In this case, a webhook triggers a Jenkins job, which does the work.
 
 Follow these steps so you can add a new, third source or repository.
 

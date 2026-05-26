@@ -15,7 +15,7 @@ The Brand Experience Agent accelerates the modernization and evolution of digita
 The Brand Experience Agent delivers its outcomes through the following agents, each specializing in a specific set of jobs:
 
 * [Experience Modernization Agent](#experience-modernization) - Migrates websites to cloud-ready formats
-* [Experience Production Agent](#experience-production) - Reduces time-to-market with content updates, form creation, and communications
+* [Experience Production Agent](#experience-production) - Reduces time-to-market with content updates, content creation, Figma to Visual Content Fragment imports, form creation, and communications
 * [Development Agent](#development) - Provides AI-assisted troubleshooting and build automation
 
 Through these agents, the Brand Experience Agent absorbs the heavy operational work behind updates and modernization, helping teams deliver changes faster and with greater confidence in today's AI era.
@@ -34,6 +34,8 @@ Through these agents, the Brand Experience Agent absorbs the heavy operational w
 
 Experience Modernization removes the friction from large-scale site migrations by automatically modernizing existing experiences, helping teams transition faster while maintaining continuity, quality, and trust.
 
+Migrations can be driven from a live source website, from Figma designs, or a combination of both. The agent supports [redesign migrations that map source content into Figma-derived blocks](/help/ai-in-aem/agents/brand-experience/modernization/overview.md#figma-redesign) and [generating new pages directly from Figma frames.](/help/ai-in-aem/agents/brand-experience/modernization/overview.md#figma-new-page)
+
 ## Experience Production Agent {#experience-production}
 
 [The Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) automates high effort and high-volume tasks. It Empowers teams and turns manual, weeks-long processes into fast, AI-assisted workflows that keep every experience current and consistent, helping the business achieve its goals.
@@ -41,6 +43,28 @@ Experience Modernization removes the friction from large-scale site migrations b
 ### Content Update Job {#content-update}
 
 [The Content Update job](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) updates existing content — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description, and when used with Jira PDFs and screenshots can provide input too.
+
+### Content Create Job {#content-create}
+
+The [Content Create](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md) job creates new pages based on a marketing brief, a template and a natural language prompt.
+
+>[!NOTE]
+>
+>The Content Create job is currently in Limited Availability. 
+>
+>If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
+### Figma to Visual Content Fragments Job {#figma-to-visual-content-fragments}
+
+The [Figma to Visual Content Fragments](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) job imports Figma designs to AEM Content Models, Content Fragments and HTML templates.
+
+<!-- CQDOC-23232 - remove when GA -->
+
+>[!NOTE]
+>
+>The Figma to Visual Content Fragments job is currently in Limited Availability. 
+>
+>If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ### Forms Creation Job {#forms-creation}
 

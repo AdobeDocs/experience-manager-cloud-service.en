@@ -63,7 +63,7 @@ A user in the **Business Owner** or **Deployment Manager** role can follow these
 
 ## Pre-existing CDN configurations {#pre-existing-cdn}
 
-If you have a pre-existing CDN (Content Delivery Network) configuration for your IP Allow Lists, there is an informative message on the **IP Allow List** page. The message encourages you to add these configurations by way of the user interface so they are visible and configurable in Cloud Manager.
+If you have a pre-existing CDN (Content Delivery Network) configuration for your IP Allow Lists, there is an informative message on the **IP Allow List** page. The message encourages you to add these configurations through the user interface so they are visible and configurable in Cloud Manager.
 
 The message disappears once all pre-existing environment configurations are migrated using the UI. It may take 1-2 business days for the message to disappear.
 

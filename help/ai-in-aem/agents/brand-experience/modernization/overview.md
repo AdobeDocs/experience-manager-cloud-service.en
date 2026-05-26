@@ -38,6 +38,24 @@ The Experience Modernization Agent offers skills for creating new Edge Delivery 
 
 Detailed skills include page migration, bulk import, design extraction, navigation setup, and web scraping.
 
+## Figma-Based Migrations and Page Creation {#figma}
+
+In addition to live-site migrations, the Experience Modernization Agent can use Figma as a design source. To use these capabilities, set up your Figma details in [the Experience Modernization Console.](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
+
+### Redesign Migration Using Figma-Derived Blocks {#figma-redesign}
+
+When you are migrating an existing website into a redesigned experience, the agent [first establishes the redesigned block collection from Figma components,](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-redesign-migration) and then runs site migration against the live source website and maps source content into those Figma-derived blocks.
+
+* **Figma** is the target design and block-library source.
+* **The live website** remains the source of content.
+* Content is validated against the source website; visual output is validated against the Figma-derived design system.
+
+### Create a New Page from Figma {#figma-new-page}
+
+When a page does not already exist on a source website, the agent [generates a new Edge Delivery Services page directly from a Figma frame or page,](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-new-page-from-figma) mapping Figma sections to existing blocks, default content, or new variants. Text and assets come from Figma.
+
+For details on these workflows, individual Figma block migration, and prompting tips, see the [Prompting Guide for the Experience Modernization Agent.](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
+
 ## Block Development Capabilities {#block-development}
 
 The Experience Modernization Agent takes advantage of general Edge Delivery Services development capabilities that serve various development tasks, providing continuous value beyond initial site creation or migration.
@@ -83,6 +101,7 @@ The following use cases require additional implementation effort in addition to 
 The scraping skill does not support the following sources.
 
 * Intranet or protected sources such as content behind authentication, VPNs, or firewalls that is not accessible
+  * As an alternative, use [SLICC](https://www.sliccy.com) which can leverage the authentication context from your browser to access protected sources.
 * Complex dynamic content such as content requiring sophisticated user interaction to appear in the DOM.
   * Client-side rendered content is supported if the content is accessible via a specific URL.
   * Elements hidden via CSS but present in the DOM like tabs, accordions or carousels are also supported.

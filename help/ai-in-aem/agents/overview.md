@@ -14,8 +14,8 @@ These agents are available in Adobe Experience Manager (AEM) as a Cloud Service 
 >
 >The agents are only available on AEM as a Cloud Service and Edge Delivery Services. 
 >
->* They are not currently available for AEM 6.5, nor AEM 6.5 LTS.
->* They are not available on AEM On-prem, nor Managed Services.
+>* Agents will progressively become available for AEM 6.5 LTS on Managed Services. Customers who are interested to participate in our co-innovation program should contact their Adobe Customer Success Engineer, Technical Account Manager or Customer Service Manager to check for availability.
+>* Agents will not be available on AEM 6.5/AEM 6.5 LTS On-Prem.
 
 ## Accessing Agents {#accessing-agents}
 
@@ -54,8 +54,8 @@ The [Governance Agent](/help/ai-in-aem/agents/governance/overview.md) safeguards
 
 Please be aware of the following general limitations of the AEM agents:
 
-* The agents are only available for AEM as a Cloud Service and Edge Delivery Services. 
-* They are not currently available for AEM 6.5, nor AEM 6.5 LTS.
-* They are not currently available on AEM On-prem, nor Managed Services.
+* The agents are available on AEM as a Cloud Service and Edge Delivery Services.
+* Agents will progressively become available for AEM 6.5 LTS on Managed Services. Customers who are interested to participate in our co-innovation program should contact their Adobe Customer Success Engieer, Technical Account Manager or Customer Service Manager to check for availability.
+* Agents will not be available on AEM 6.5/AEM 6.5 LTS On-Prem.
 
 See the individual pages for agent-specific limitations.

@@ -9,11 +9,9 @@ exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
 ---
 # Configure Marketo Engage data source for existing Adaptive Forms
 
-<span class="preview"> The feature is available under early adopter program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-
 ![Workflow](/help/forms/assets/workflow-marketo-2.png)
 
-After creating the cloud service configuration to integrate Marketo Engage with existing AEM Forms, you can configure the data source for forms.
+After creating the cloud service configuration to integrate Marketo Engage with existing AEM Forms, you can configure the data source for forms. 
 
 Configuring data integration enables users to connect to various data sources or schemas. Integrating with the Marketo Engage data source and using it across different forms facilitates operations on that data. To explore the supported out-of-the-box data sources for an Adaptive Form, refer to the [Configure Data Sources](/help/forms/configure-data-sources.md) article.
 

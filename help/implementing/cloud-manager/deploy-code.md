@@ -13,7 +13,7 @@ Learn how to deploy your code to Production using Cloud Manager pipelines in AEM
 
 ![Production pipeline diagram](./assets/configure-pipeline/production-pipeline-diagram.png)
 
-Deploying code seamlessly to Stage and then through to Production is done through a Production pipeline. The Production pipeline execution is broken into the two following logical phases:
+Deploying code seamlessly to Stage and then through to Production is done through a Production pipeline. The Production pipeline execution is broken into two logical phases:
 
 1. **Deployment to Stage environment** - The code is built and deployed to the Stage environment for automated functional testing, UI testing, experience audit, and User Acceptance Testing (UAT).
 1. **Deployment to Production environment** - Once the build is validated on Stage, and approved for promotion to Production, the same build artifact is deployed to the Production environment.
@@ -26,11 +26,11 @@ All Cloud Service deployments follow a rolling process to ensure zero downtime. 
 
 >[!NOTE]
 >
->The Dispatcher cache is wiped out on each deployment. It is subsequently "warmed up" before the new publish nodes accept traffic.
+>The Dispatcher cache is cleared with each deployment and then warmed before the new publish nodes begin accepting traffic.
 
 ## Deploy your code with Cloud Manager in AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 
-Once you have [configured your production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) including repository, environment, and testing environment, you are ready to deploy your code.
+Once you have [configured your production Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) including the repository, environment, and testing environment, you are ready to deploy your code.
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) and select the appropriate organization.
 

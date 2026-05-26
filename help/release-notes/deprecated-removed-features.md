@@ -265,6 +265,12 @@ The APIs in the table below (click to expand to see it) have been announced as d
     <td>3/31/2027 (Tentative)</td>
   </tr>
   <tr>
+    <td>com.day.cq.commons.predicate</td>
+    <td>This API is deprecated. Please use com.day.cq.commons.predicates instead.</td>
+    <td>6/1/2024</td>
+    <td>3/31/2027 (Tentative)</td>
+  </tr>
+  <tr>
     <td>org.apache.sling.runmode</td>
     <td></td>
     <td>2015</td>

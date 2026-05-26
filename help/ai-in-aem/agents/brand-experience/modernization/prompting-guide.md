@@ -71,6 +71,7 @@ Use this prompt when migrating content from an existing website to Edge Delivery
   * When migrating multiple pages, the agent loads existing custom variants first and reuses them when styling matches (70% similarity threshold based on purpose, colors, typography, spacing, layout).
 * Header, navigation, and footer are excluded from page migration. These are handled by dedicated skills.
 * Each migration creates import infrastructure (page templates, block parsers, transformers) for future bulk imports.
+* Dynamic Media and Scene7 images are detected in the source and preserved as DM URLs rather than imported as static renditions, so responsive and on-the-fly transformations remain intact. This applies to both Document Authoring and AEM Sites/Universal Editor migrations.
 
 ### Bulk Import {#bulk-import}
 

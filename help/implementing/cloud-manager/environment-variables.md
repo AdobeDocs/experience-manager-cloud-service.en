@@ -15,25 +15,25 @@ Environment variables can be either environment-specific values or environment s
 
 ## About environment variables {#overview}
 
-Environment variables offer a host of benefits to users of AEM as a Cloud Service such as the following:
+Environment variables provide several benefits for AEM as a Cloud Service users, including the following:
 
 * They allow the behavior of your code and application to vary based on context and environment. For example, they can be used to enable different configurations in the development environment compared to the production or stage environments to avoid costly mistakes.
-* They only need to be configured and setup once and can be updated and deleted when necessary.
-* Their values can be updated at any point in time and take effect immediately without the need for any code changes or deployments.
+* They only need to be configured and set up once and can be updated and deleted when necessary.
+* Their values can be updated at any time and take effect immediately without requiring code changes or deployments.
 * They can separate code from configuration and remove the need to include sensitive information in version control.
-* They improve the security of the AEM as a Cloud Service application since they live outside of the code.
+* They improve AEM as a Cloud Service application security because they exist outside the codebase.
 
 Typical use cases for using environment variables include the following:
 
-* Connecting your AEM application with different external endpoints
-* Using a reference when storing passwords instead of directly in the code base
-* When multiple development environments exist in a program and some configuration differs from one environment to the next
+* Connecting your AEM application with different external endpoints.
+* Using a reference when storing passwords instead of storing them directly in the code base.
+* Multiple development environments exist in a program, and some configurations differ from one environment to another.
 
 ## Add an environment variable {#add-variables}
 
-If you want to add multiple variables, Adobe recommends that you add the first variable, then use ![Add icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg ) **Add** in the **Environment Configuration** dialog to add the additional variables. This method means you can add them with one update to the environment.
+If you want to add multiple variables, Adobe recommends that you add the first variable, then use ![Add icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg ) **Add** in the **Environment Configuration** dialog to add the additional variables. This method lets you add them with a single environment update.
 
-To add, update, or delete environment variables, you must be a member of the [**Deployment Manager** role](/help/onboarding/cloud-manager-introduction.md#role-based-premissions).
+To add, update, or delete environment variables, you must be a member of the [Deployment Manager role](/help/onboarding/cloud-manager-introduction.md#role-based-premissions).
 
 **To add an environment variable:**
 
@@ -53,7 +53,7 @@ To add, update, or delete environment variables, you must be a member of the [**
    | --- | --- |
    | Name | A unique name of the configuration variable. It identifies the specific variable that is used in the environment. It must adhere to the following naming conventions:<ul><li>Variables can only contain alphanumeric characters and the underscore (`_`).</li><li>There is a limit of 200 variables per environment.</li><li>Each name must be 100 characters or less.</li></ul> |
    | Value | The value that the variable holds. |
-   | Step Applied | Select which service to which the variable applies. Select **All** to have the variable applied to all services.<ul><li>**All**</li><li>**Author**</li><li>**Publish**</li><li>**Preview**</li></ul> |
+   | Step Applied | Select the service to which the variable applies. Select **All** to have the variable applied to all services.<ul><li>**All**</li><li>**Author**</li><li>**Publish**</li><li>**Preview**</li></ul> |
    | Type | Select if the variable is normal or a secret. |
 
    ![Adding a variable](assets/add-variable.png)
@@ -72,7 +72,7 @@ To add, update, or delete environment variables, you must be a member of the [**
 
 After you have created environment variables, you can update them using ![Add/Update - Add circle icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Add / Update** to open the **Environment Configuration** dialog box.
 
-If you want to update multiple variables, Adobe recommends that you use the **Environment Configuration** dialog box to update all necessary variables at once before clicking **Save**. This way you can add them with one update to the environment.
+If you want to update multiple variables, Adobe recommends that you use the **Environment Configuration** dialog box to update all necessary variables at once before clicking **Save**. This approach lets you update them with a single environment update.
 
 **To update an environment variable:**
 
@@ -115,9 +115,9 @@ If you want to update multiple variables, Adobe recommends that you use the **En
 
 ## Use of environment variables {#using}
 
-Environment variables can make your `pom.xml` configurations more secure and flexible. For example, passwords needn't be hard coded and your configuration can adapt based on the values in environment variables.
+Environment variables can make your `pom.xml` configurations more secure and flexible. For example, passwords do not need hard-coded values, and your configuration can adapt to environment variable values.
 
-You can access environment variables and secrets by way of XML as follows:
+You can access environment variables and secrets through XML as follows:
 
 `${env.VARIABLE_NAME}`
 
@@ -127,7 +127,7 @@ See also the [official Maven documentation](https://maven.apache.org/settings.ht
 
 ## Availability of environment variables {#availability}
 
-Environment variables can be used in several places as follows:
+Environment variables can be used in several places, as follows:
 
 | Where environment variables can be used | Description |
 | --- | --- |

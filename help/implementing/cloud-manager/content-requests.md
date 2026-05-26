@@ -51,7 +51,7 @@ Content requests can have variances within an organization's analytics reporting
 | Bots | Unknown bots that AEM has not pre-identified and removed may cause tracking discrepancies. |
 | Report Suites | Pages within the same AEM instance can report to different analytics report suites. This process can split data across multiple suites, depending on configuration. |
 | Third-Party Monitoring and Security Tools | Monitoring and security scanning tools (for example, uptime checkers or vulnerability scanners) may request pages, generating server-side content requests not visible in analytics reports. |
-| API Access | Requests to AEM pages or content through APIs (for example, by way of Adobe Experience Manager as a Headless CMS) still count as content requests but do not trigger analytics tracking. |
+| API Access | Requests to AEM pages or content through APIs (for example, through Adobe Experience Manager as a Headless CMS) still count as content requests but do not trigger analytics tracking. |
 | Prefetch Requests | Prefetching (for example, using a service worker or edge function) can increase traffic volumes by requesting pages in advance. These requests are counted server-side but do not execute client-side analytics code. |
 | DDOS | Adobe uses filtering to detect and block many DDoS attacks. However, some attack requests may still be counted as content requests before filters apply.|
 | Traffic Blockers | In-browser privacy features or corporate firewalls may block analytics scripts from loading. These users still generate server-side content requests. |
@@ -155,6 +155,6 @@ trafficFilters:
       action: block
 ```
 
-Replace the example values with the country code, network or bot name you want to block. See [Traffic filter rules syntax](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) and [Condition structure](/help/security/traffic-filter-rules-including-waf.md#condition-structure) for more options.
+Replace the example values with the country code, network or bot name you want to block. See [Traffic filter rules syntax](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) and [Condition structure](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) for more options.
 
-* Some bots hit a site very heavily one day and vanish the next. Such functionality can frustrate any attempts to block a specific IP address or user agent.  One generic approach is to introduce a [rate limit rule](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Review the [examples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) and craft a rule that matches your tolerance for a rapid rate of requests.  Review the [Condition Structure](/help/security/traffic-filter-rules-including-waf.md#condition-structure) syntax for any exceptions that you may want to allow to a generic rate limit.
+* Some bots hit a site very heavily one day and vanish the next. Such functionality can frustrate any attempts to block a specific IP address or user agent.  One generic approach is to introduce a [rate limit rule](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules).  Review the [examples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) and craft a rule that matches your tolerance for a rapid rate of requests.  Review the [Condition Structure](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) syntax for any exceptions that you may want to allow to a generic rate limit.
