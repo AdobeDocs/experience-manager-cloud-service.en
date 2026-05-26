@@ -116,6 +116,15 @@ Adaptive Forms that submit to a Microsoft SharePoint list now support [certifica
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
 
+#### IDE AI tooling for AEM 6.5 to AEM Cloud Service Migration {#cm-ide-migration}
+
+Accelerate your migration from AEM 6.5 to AEM as a Cloud Service (Java stack) by using IDE AI tooling to act on the recommendations of the Best Practices Analyzer Report. 
+
+Learn more about [IDE AI tooling for Cloud Migration](help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
+
+
+[!VIDEO](https://video.tv.adobe.com/v/3491438/?quality=12)
+
 #### IDE AI tooling for AEM Java and Dispatcher Development {#ai-dev}
 
 Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. 
@@ -173,9 +182,8 @@ Common use cases include:
 * Acting as middleware between the CDN and your origin
 * Reformatting responses from third-party APIs (and perhaps aggregating multiple API responses) before delivering them to the browser
 * Composing and serving server-rendered HTML at the edge using content stitched from various backends
-* Exposing an MCP server for AI Assistants like ChatGPT and Claude to access custom tools
 
-We have a limited number of opportunities available for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
+Join the beta for either AEM Publish Delivery or Edge Delivery Services projects for live production sites. If you're interested in participating or want to learn more, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) with a brief description of your use case.
 
 #### Web Tier Config Pipeline Troubleshooting (Beta Program) {#devagent-webtier}
 
@@ -183,15 +191,9 @@ The Development Agent's [pipeline troubleshooting](/help/ai-in-aem/agents/brand-
 
 To request access to the beta, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com). Pre-existing access to Agents in AEM is required.
 
-#### Replication AI Troubleshooting (Alpha Program) {#replication-ai-troubleshooting-alpha}
+#### Replication AI Troubleshooting (Beta Program) {#replication-ai-troubleshooting-alpha}
 
-Using the AI Assistant in AEM Author and other interfaces, you can troubleshoot replication-related issues such as blocked queues. To join the Alpha Program, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com), describing your interest.
-
-#### IDE AI tooling for AEM 6.5 to AEM Cloud Service Migration (Beta Program) {#cm-ide-migration}
-
-Accelerate your migration from AEM 6.5 to AEM as a Cloud Service (Java stack) by using IDE AI tooling to act on the recommendations of the [Best Practices Analyzer Report](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
-
-Email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) for more information and to request access to the feature.
+Using the AI Assistant in AEM Author and other interfaces, you can troubleshoot replication-related issues such as blocked queues. To join the Beta Program, email [aem-devagent@adobe.com](mailto:aem-devagent@adobe.com), describing your interest.
 
 #### Edge Authentication for Edge Delivery Services (Beta Program) {#edge-authentication}
 
