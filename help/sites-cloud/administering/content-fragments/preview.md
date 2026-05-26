@@ -9,7 +9,7 @@ exl-id: 40c02806-76a2-43ed-982c-0410c2125a36
 ---
 # Previewing Content Fragments {#previewing-content-fragments}
 
-Content Fragments can be used for both headless delivery and page authoring. As the fragments are solely content, without formatting, reviewing them can be more challenging. So multiple methods of previewing your fragments, in a variety of scenarios, are provided.
+Content Fragments can be used for both Headless delivery and page authoring. As the fragments are solely content, without formatting, reviewing them can be more challenging. So multiple methods of previewing your fragments, in a variety of scenarios, are provided.
 
 There are several methods available for Content Fragments, accessible from the Console Fragments console and editor. The console and editor described in this section have been developed for headless content delivery (though they can be used for all scenarios).
 
@@ -105,4 +105,3 @@ See [Visual Content Fragments](/help/sites-cloud/administering/content-fragments
 >[!NOTE]
 >
 >See [Visual Content Fragments - Templates](/help/implementing/developing/extending/content-fragments-visualization-templates.md) for details on how to create, customize and upload your own HTML templates.
-

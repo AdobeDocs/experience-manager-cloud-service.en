@@ -16,6 +16,7 @@ The agent provides the following jobs:
 
 * [Content Update](#content-update)
 * [Content Create](#content-create)
+* [Figma to Visual Content Fragments Job](#figma-to-visual-content-fragments)
 * [Form Creation](#form-creation)
 * [Communications Creation](#communications-creation)
 

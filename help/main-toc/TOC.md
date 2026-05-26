@@ -1133,9 +1133,9 @@ user-guide-title: AEM as a Cloud Service
         + [Overview](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)
         + [Content Update Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
         + [Content Create Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md)
+        + [Figma to Visual Content Fragments Job](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md)
         + [Communication Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
         + [Form Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
-        + [Figma to Visual Content Fragments Job](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md)
       + Experience Modernization Agent {#modernization}
         + [Overview](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
         + [Getting Started](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)

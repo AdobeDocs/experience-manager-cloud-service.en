@@ -548,7 +548,7 @@ Both options are available using **Preview** in the top toolbar:
 
 * **Template**
 
-  * Allows you to preview your Content Fragment with **[Visualization (HTML) Templates](#preview-with-visualization-html-templates)**.
+  * This option allows you to preview your Content Fragment with **[Visualization (HTML) Templates](#preview-with-visualization-html-templates)**.
 
     <!-- CQDOC-23232 - remove when GA -->
 

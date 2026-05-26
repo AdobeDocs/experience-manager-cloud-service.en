@@ -6,7 +6,7 @@ role: Admin, Developer
 ---
 # Visual Content Fragments - Deliver with the Publish URL {#visual-content-fragments-deliver-with-the-publish-url}
 
-When a Content Fragment that is based on a model with one or multiple attached HTML templates is published, the rendered HTML of that fragment is made available via the Adobe Experience Manager (AEM) as a Cloud Service publish tier at a URL with this structure:
+When a Content Fragment that is based on a model with one, or multiple, attached HTML templates is published, the rendered HTML of that fragment is made available via the Adobe Experience Manager (AEM) as a Cloud Service publish tier at a URL with this structure:
 
 ```html
 https://publish-p<programId>-e<envId>.adobeaemcloud.com/adobe/stable/previewtemplates/contentFragments/<templateId>/<fragmentId>/<variation>.html

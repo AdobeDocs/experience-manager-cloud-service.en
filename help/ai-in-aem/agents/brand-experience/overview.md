@@ -15,7 +15,7 @@ The Brand Experience Agent accelerates the modernization and evolution of digita
 The Brand Experience Agent delivers its outcomes through the following agents, each specializing in a specific set of jobs:
 
 * [Experience Modernization Agent](#experience-modernization) - Migrates websites to cloud-ready formats
-* [Experience Production Agent](#experience-production) - Reduces time-to-market with content updates, form creation, and communications
+* [Experience Production Agent](#experience-production) - Reduces time-to-market with content updates, content creation, Figma to Visual Content Fragment imports, form creation, and communications
 * [Development Agent](#development) - Provides AI-assisted troubleshooting and build automation
 
 Through these agents, the Brand Experience Agent absorbs the heavy operational work behind updates and modernization, helping teams deliver changes faster and with greater confidence in today's AI era.
