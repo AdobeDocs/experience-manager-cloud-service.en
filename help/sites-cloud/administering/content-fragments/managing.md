@@ -89,7 +89,7 @@ The main/right panel (table view) of the console provides a range of information
 
 * **Title**
   * A padlock icon indicates that the fragment is [checked out](#check-out-and-check-in) and locked by one user; selecting the padlock icon shows details of the account that has checked out the fragment.
-  * The information (i) icon provides quick access to additional, fragment specific, information in the right panel. 
+  * The information (i) icon provides quick access to additional, fragment specific, information and configuration options in the right panel. 
 * **Name**
   * Provides a link to open the fragment in the editor.
 * **Model**
@@ -182,6 +182,7 @@ Selecting a specific fragment opens a toolbar focused on the actions available f
 * **[Manage Tags](#manage-tags)**
 * **[Copy](#copy-a-content-fragment)**
 * **[Replace](#find-and-replace)**
+* **[Preview](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md#preview-your-fragment-with-a-template)**
 * **Move**
 * **Rename**
 * **[Check Out and Check In](#check-out-and-check-in)**
@@ -391,19 +392,35 @@ You can view, and edit, the properties (metadata) of a fragment using the [Prope
 
 ## Publishing and Previewing a Fragment {#publishing-and-previewing-a-fragment}
 
-You can publish your Content Fragments to:
+You can:
 
-* the **[Publish Service](/help/headless/deployment/architecture.md)** - for full, public access
+* Preview your Content Fragments:
 
-* the **[Preview Service](/help/headless/deployment/architecture.md)** - to [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) the content prior to full availability
+  * With [Visualization Templates](/help/sites-cloud/administering/content-fragments/preview.md#preview-with-visualization-html-templates)
 
-  >[!CAUTION]
-  >
-  >Publishing Content Fragments to the **Preview Service** is only available from the Content Fragments console; using the **Publish** action.
+    <!-- CQDOC-23232 - remove when GA -->
 
-  >[!NOTE]
-  >
-  >For more details about the Preview environments, see [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+    >[!NOTE]
+    >
+    >Visual Content Fragments are currently in Limited Availability. 
+    >
+    >If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
+  * On the [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) instance 
+
+* Publish your Content Fragments to:
+
+  * the **[Publish Service](/help/headless/deployment/architecture.md)** - for full, public access
+
+  * the **[Preview Service](/help/headless/deployment/architecture.md)** - to [preview](/help/sites-cloud/administering/content-fragments/preview.md#preview-instance) the content prior to full availability
+
+    >[!CAUTION]
+    >
+    >Publishing Content Fragments to the **Preview Service** is only available from the Content Fragments console; using the **Publish** action.
+
+    >[!NOTE]
+    >
+    >For more details about the Preview environments, see [Manage Environments](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 >[!CAUTION]
 >

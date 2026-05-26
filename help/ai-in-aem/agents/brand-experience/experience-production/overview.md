@@ -39,6 +39,18 @@ The [Content Create](/help/ai-in-aem/agents/brand-experience/experience-producti
 >
 >If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
+### Figma to Visual Content Fragments Job {#figma-to-visual-content-fragments}
+
+The [Figma to Visual Content Fragments](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) job imports Figma designs to AEM Content Models, Content Fragments and HTML templates.
+
+<!-- CQDOC-23232 - remove when GA -->
+
+>[!NOTE]
+>
+>The Figma to Visual Content Fragments job is currently in Limited Availability. 
+>
+>If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
 ### Form Creation Job {#form-creation}
 
 The [Form Creation](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md) job enables users to build adaptive forms through natural language prompts without dependency on development or IT teams. This capability accelerates form development while maintaining brand consistency and allowing business users to create forms without deep technical product knowledge.
