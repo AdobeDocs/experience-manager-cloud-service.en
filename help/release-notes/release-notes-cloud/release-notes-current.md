@@ -223,6 +223,12 @@ In beta, Rapid Development Environments (RDEs) now support a feature [to take a 
 
 Please email [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) if there is interest in using and providing feedback on this feature.
 
+#### AEM code issue detection and auto-fix via IDE AI agent  (Alpha Program) {#ide-ai-aemcode-issues}
+
+Java-stack teams using [AI-assisted development](/help/ai-in-aem/local-development-with-ai-tools.md) in tools like Cursor, Claude Code, Visual Studio, and IntelliJ can now go further: a new IDE agent skill detects and auto-fixes issues directly in your AEM codebase, reducing review cycles and catching problems earlier in development.
+
+This feature is in alpha. Join the program to try it and share feedback with the team at [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com).
+
 #### Expanded Application Performance Monitoring (APM) (Alpha program) {#apm-alpha}
 
 For observability, AEM Cloud Service currently supports Adobe-provided [New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) and customer-managed [Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace). As we explore support for additional APM options, please email us at [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) with your preferred vendor or technology, along with use cases.
