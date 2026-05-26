@@ -34,6 +34,8 @@ Through these agents, the Brand Experience Agent absorbs the heavy operational w
 
 Experience Modernization removes the friction from large-scale site migrations by automatically modernizing existing experiences, helping teams transition faster while maintaining continuity, quality, and trust.
 
+Migrations can be driven from a live source website, from Figma designs, or a combination of both. The agent supports [redesign migrations that map source content into Figma-derived blocks](/help/ai-in-aem/agents/brand-experience/modernization/overview.md#figma-redesign) and [generating new pages directly from Figma frames.](/help/ai-in-aem/agents/brand-experience/modernization/overview.md#figma-new-page)
+
 ## Experience Production Agent {#experience-production}
 
 [The Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md) automates high effort and high-volume tasks. It Empowers teams and turns manual, weeks-long processes into fast, AI-assisted workflows that keep every experience current and consistent, helping the business achieve its goals.
