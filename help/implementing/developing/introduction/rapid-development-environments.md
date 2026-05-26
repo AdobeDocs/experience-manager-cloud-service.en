@@ -1263,8 +1263,8 @@ Developers who use both plugins, the `aio-cli-plugin-cloudmanager` and the `aio-
 
 ##### Keep using context `aio-cli-plugin-cloudmanager`
 
-The context can still be used. A deprecation warning is shown in the RDE plugin. This warning can be omitted by using the ```--quiet``` mode. More recent versions of the RDE plugin do not offer the fallback to read the context `aio-cli-plugin-cloudmanager` any longer. To continue to use it, simply configure the default context to `aio-cli-plugin-cloudmanager`. See [the example to set up a local context](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) above.
+The context can still be used. A deprecation warning is shown in the RDE plugin. This warning can be omitted by using the `--quiet` mode. More recent versions of the RDE plugin do not offer the fallback to read the context `aio-cli-plugin-cloudmanager` any longer. To continue to use it, simply configure the default context to `aio-cli-plugin-cloudmanager`. See [the example to set up a local context](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) above.
 
 ##### Use any other context name also for the Cloud Manager plug-in
 
-The Cloud Manager plug-ins offer a parameter to define a context to be used. It does not support the IMS default context configuration just yet. To do so, configure the RDE plugin using [the example to set up a local context](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) and tell the Cloud Manager plugin to use `myContext` like ```--imsContextName=myContext``` in every call to it.
+The Cloud Manager plug-ins offer a parameter to define a context to be used. It does not support the IMS default context configuration just yet. To do so, configure the RDE plugin using [the example to set up a local context](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools) and tell the Cloud Manager plugin to use `myContext` like `--imsContextName=myContext` in every call to it.
