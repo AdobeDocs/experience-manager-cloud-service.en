@@ -8,14 +8,6 @@ role: Admin, Developer
 
 In Adobe Experience Manager (AEM) as a Cloud Service, HTML templates can be used to visualize Content Fragments and deliver them in HTML format.
 
-<!-- CQDOC-23232 - remove when GA -->
-
->[!NOTE]
->
->Visual Content Fragments and the Figma to Visual Content Fragments job are currently in Limited Availability. 
->
->If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
-
 HTML templates allow you to control how your Content Fragments are displayed. You can create HTML templates in your code editor of choice, then upload and assign them to Content Fragment Models in AEM.  Content placeholders using Handlebars.js allow mapping the template to data types in the Content Fragment Model. Once assigned to a model, a template is available to be used with any Content Fragment based on the model, to visualize the fragment or to delivery it as a modular experience in HTML format to any channel, for example web, email, mobile application, or others. 
 
 This article explains how to create custom HTML templates with Handlebars syntax for rendering Visual Content Fragments.
