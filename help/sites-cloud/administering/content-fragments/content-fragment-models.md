@@ -187,6 +187,8 @@ A selection of data types is available for defining your model:
 
   * The **Composite** data type enables Content Fragments to store hierarchical, structured data by allowing fields to contain nested sub-fields. The sub-fields are other Content Fragments, dependent on specified Content Fragment Models. This feature provides a way to model complex data structures within a single fragment, similar to nested objects in JSON or embedded documents in NoSQL databases.
 
+<!-- CQDOC-23583 - remove when GA -->
+
   >[!NOTE]
   >
   >The Composite data type is currently in Limited Availability. 
@@ -314,6 +316,14 @@ Content Fragments can form nested content, using any of the following data types
 
 * [Composite](#composite-data) data type:
 
+  <!-- CQDOC-23583 - remove when GA -->
+
+  >[!NOTE]
+  >
+  >The Composite data type is currently in Limited Availability. 
+  >
+  >If you would like to participate, create a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+
   * References other fragments, dependent on the specific models specified.
   * The referenced fragments are fully embedded in, and integral to, the  referencing fragment. They have a true parent-child relationship.
     * The Composite Data Type allows you to define a group of fields as an inline, repeatable structure inside a parent fragment instead of pointing to a separate fragment reference. 
@@ -432,6 +442,14 @@ In addition to standard properties you can define:
 >There is also recurrence protection for Fragment References in GraphQL. If you create a deep query across two Content Fragments that reference each other, it returns null.
 
 ### Composite Data {#composite-data}
+
+<!-- CQDOC-23583 - remove when GA -->
+
+>[!NOTE]
+>
+>The Composite data type is currently in Limited Availability. 
+>
+>If you would like to participate, create a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
 The **Composite** data type enables Content Fragments to store hierarchical, structured data by allowing fields to contain nested sub-fields. The sub-fields are themselves Content Fragments, dependent on specified Content Fragment Models and fully embedded in the parent fragment. 
 
