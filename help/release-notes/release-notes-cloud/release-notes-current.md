@@ -120,11 +120,19 @@ Adaptive Forms that submit to a Microsoft SharePoint list now support [certifica
 
 Accelerate your migration from AEM 6.5 to AEM as a Cloud Service (Java stack) by using IDE AI tooling to act on the recommendations of the Best Practices Analyzer Report. 
 
-Learn more about [IDE AI tooling for Cloud Migration](help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
-
+Learn more about [IDE AI tooling for Cloud Migration](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
 
 [!VIDEO](https://video.tv.adobe.com/v/3491438/?quality=12)
 
+#### Replication Queue Status Display Changes {#replication-queue-status-display}
+
+In the Author UI, Replication agents now display two consolidated queues—**persisted** and **fully published**—instead of separate queues per publish pod, reducing complexity while reflecting the automatic scaling of the publish tier.
+
+Learn more about [Replication Queues](/help/operations/replication.md#replication-queues).
+
+![Replication queues showing persisted and fully published](/help/operations/assets/replication-queues.png "Replication queues")
+
+<!--
 #### IDE AI tooling for AEM Java and Dispatcher Development {#ai-dev}
 
 Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. 
@@ -132,6 +140,8 @@ Java-stack teams are increasingly using AI-assisted development in tools such as
 IDE tooling can be used by coding agents to generate and debug AEM code and dispatcher configuration. As one example, the video walkthrough below demonstrates building an AEM component using Agent Skills.  
 
 Learn more about [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md) and feel free to email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) with questions or feedback.
+
+-->
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
