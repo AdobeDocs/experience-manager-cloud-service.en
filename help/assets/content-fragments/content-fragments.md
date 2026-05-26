@@ -351,7 +351,7 @@ Use Rich Text fields (the **Multi line text** Data Type) with consideration:
 
 * Fields
 
-  Limit the number of Rich Text fields per model. For performance reasons it is not recommended to have more than ten Rich Text fields in one model. If needed, it is recommended that you use [nested Content Fragments](/help/assets/content-fragments/content-fragments-models.md#using-references-to-form-nested-content).
+  Limit the number of Rich Text fields per model. For performance reasons it is not recommended to have more than ten Rich Text fields in one model. If needed, it is recommended that you use [nested Content Fragments](/help/assets/content-fragments/content-fragments-models.md#nested-content).
 
 * Content
 

@@ -151,7 +151,7 @@ A selection of data types is available for defining your model:
   * Allows fragment authors to access and select areas of tags
 
 * **Fragment Reference**
-  * References other Content Fragments; can be used to [create nested content](#using-references-to-form-nested-content)
+  * References other Content Fragments; can be used to [create nested content](#nested-content)
   * The data type can be configured to allow fragment authors to:
     * Edit the referenced fragment directly.
     * Create a new Content Fragment, based on the appropriate model
@@ -159,7 +159,7 @@ A selection of data types is available for defining your model:
   * The reference specifies the path to the referenced resource; for example `/content/dam/path/to/resource`
 
 * **Fragment Reference (UUID)**
-  * References other Content Fragments; can be used to [create nested content](#using-references-to-form-nested-content)
+  * References other Content Fragments; can be used to [create nested content](#nested-content)
   * The data type can be configured to allow fragment authors to:
     * Edit the referenced fragment directly.
     * Create a new Content Fragment, based on the appropriate model
@@ -172,13 +172,13 @@ A selection of data types is available for defining your model:
   >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
 
 * **Content Reference**
-  * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
+  * References other content, of any type; can be used to [create nested content](#nested-content)
   * If an image is referenced, you can opt to show a thumbnail
   * The field can be configured to allow fragment authors to create new instances of the field 
   * The reference specifies the path to the referenced resource; for example `/content/dam/path/to/resource`  
 
 * **Content Reference (UUID)**
-  * References other content, of any type; can be used to [create nested content](#using-references-to-form-nested-content)
+  * References other content, of any type; can be used to [create nested content](#nested-content)
   * If an image is referenced, you can opt to show a thumbnail
   * The field can be configured to allow fragment authors to create new instances of the field 
   * In the editor, the reference specifies the path to the referenced resource; internally the reference is held as a universally unique ID (UUID) that references the resource
@@ -290,7 +290,7 @@ Various data types now include the possibility to define validation requirements
   * The max value is validated in the [original Content Fragment Editor](/help/assets/content-fragments/content-fragments-variations.md).
   * Both are validated in the [Content Fragment Editor](/help/sites-cloud/administering/content-fragments/authoring.md).
 
-## Using References to form Nested Content {#using-references-to-form-nested-content}
+## Nested Content {#nested-content}
 
 Content Fragments can form nested content, using either of the following data types:
 
