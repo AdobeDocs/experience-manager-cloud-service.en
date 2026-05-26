@@ -17,6 +17,7 @@ Learn how to manage your **Content Fragments** in Adobe Experience Manager (AEM)
 >
 >* [Managing Content Fragment Models](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) 
 >* [Viewing and Managing Assets in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+>* [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 
 After defining your [Content Fragment Models](#creating-a-content-model) you can use these to:
 
