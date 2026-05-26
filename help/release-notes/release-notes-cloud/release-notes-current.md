@@ -124,35 +124,6 @@ IDE tooling can be used by coding agents to generate and debug AEM code and disp
 
 Learn more about [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md) and feel free to email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) with questions or feedback.
 
-
->[!VIDEO](https://video.tv.adobe.com/v/3484978/?learn=on&enablevpops)
-
-#### Experience Governance MCP Server {#gov-mcp-server}
-
-The Experience Governance MCP Server is now generally available (GA). It integrates with AI developer tools and chatbots that support the Model Context Protocol (MCP), allowing you to safeguard brand integrity and compliance using natural language prompts in your chatbot or IDE. You can evaluate content (text, images, pages) against brand governance rules, and retrieve brand configurations and available governance checks.
-
-Learn more about [AEM MCP Servers](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md) and the [Governance Agent](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview).
-
-
->[!VIDEO](https://video.tv.adobe.com/v/3486258/?learn=on&enablevpops)
-
-#### Claude Connector {#aem-claude-connector}
-
-Claude users can browse Anthropic’s [Connector marketplace](https://claude.ai/settings/connectors) to 1-click install the [Adobe Experience Manager Connector](/help/ai-in-aem/mcp-support/setup-claude.md#aem-claude-connector). This MCP server exposes a growing set of tools to interact with AEM, including editing content through prompting.
-
-#### AEM OIDC on Publish New Features {#aem-oidc-on-publish-new-features}
-
-* Fix: Query parameters from original request are lost after authentication
-* Custom Redirect After Authentication in OIDC Authentication [documentation](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md#custom-redirect-after-authentication)
-
-#### Mail Service support for Microsoft Graph API {#mail-service-graph-api}
-
-AEM's Mail Service now supports Microsoft&reg; Outlook (via Microsoft 365) using the Microsoft Graph API. This is particularly helpful for organizations that do not allow SMTP, which is already supported by the Mail Service. Authentication is via OAuth 2.0. [Learn how to configure](/help/security/oauth2-support-for-mail-service.md#microsoft-graph-api).
-
-#### CDN Logs can be Forwarded to Sumo Logic {#sumo-cdn-logforwarding}
-
-The [Log Forwarding feature](/help/implementing/developing/introduction/log-forwarding.md#sumologic) now supports sending CDN logs to Sumo Logic. Previously, log forwarding to Sumo Logic was limited to AEM logs.
-
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
 #### IMS Authentication Rich Errors {#ims-auth-rich-errors}
