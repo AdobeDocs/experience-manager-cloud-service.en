@@ -9,6 +9,10 @@ role: Developer
 
 The **AEM Cloud Migration** solution is an agent-based toolset that guides developers through migrating AEM 6.x, AMS, or on-premise Java code and OSGi configurations to **AEM as a Cloud Service (AEMaaCS)**. It works inside any AI-enabled IDE that supports agent skills and the Model Context Protocol (MCP).
 
+The following demo video provides a quick end-to-end walkthrough of the AEM Cloud Migration solution and is included for reference.
+
+>[!VIDEO](https://publish.tv.adobe.com/bucket/7642/category/12553/video/3491438/)
+
 The solution consists of two components:
 
 | Component | Role |
