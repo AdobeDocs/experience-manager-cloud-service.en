@@ -195,6 +195,9 @@ The following table illustrates the Content Advisor feature support across Adobe
 | AEM Sites - Content Fragment Editor (in Content Reference field only)              |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      |  &minus;                                        |
 | Adobe Workfront Workflow                     |  &#10003;                                            | &#10003;                                                         | &minus;                                                      |  &#10003;                                        |
 | Adobe Workfront Planning                     |  &#10003;                                            | &#10003;                                                         | &minus;                                                      |  &#10003;                                        |
+| [AEM Assets View](/help/assets/assets-view-introduction.md)                     |  &#10003;                                            | &minus;                                                         | &minus;                                                      | &minus;                                        |
+| [AEM Content Hub](/help/assets/product-overview.md)                     |  &#10003;                                            | &#10003;                                                         | &minus;                                                      |  &minus;                                        |
+| [Adobe Journey Optimizer (AJO) for B2C](http://experienceleague.adobe.com/en/docs/journey-optimizer/using/ajo-home)                     |  &#10003;                                            | &#10003;                                                         | &#10003;                                                      |  &#10003;                                        |
 
 ## Content Advisor feature support across non-Adobe applications {#content-advisor-feature-support-non-adobe-applications}
 
@@ -209,3 +212,4 @@ For more information about the integrations, properties, and customizations, ref
 * [Content Advisor properties](/help/assets/content-advisor-properties.md)
 
 * [Content Advisor customizations](/help/assets/content-advisor-customization.md)
+

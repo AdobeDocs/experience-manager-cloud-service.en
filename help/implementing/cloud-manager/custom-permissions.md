@@ -1,58 +1,55 @@
 ---
 title: Custom Permissions
-description: Learn how you can use custom permissions to create custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Managers users.
+description: Discover how to create custom permission profiles in Cloud Manager to control user access to specific programs, pipelines, and environments.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Developer
 ---
 
-# Custom Permissions {#custom-permissions}
+# Custom permissions {#custom-permissions}
 
-Learn how you can use custom permissions to create custom permission profiles with configurable permissions to restrict access to programs, pipelines, and environments for Cloud Managers users.
+Discover how to set up tailored permission profiles in Cloud Manager. You can configure specific access controls for programs, pipelines, and environments, giving you granular control over what each user can do.
 
 ## Introduction {#introduction}
 
-Cloud Manager has a set of pre-defined roles which govern access to various Cloud Manager features:
+Cloud Manager has a set of pre-defined roles that govern access to various Cloud Manager features:
 
 * Business Owner
 * Program Manager
 * Deployment Manager
 * Developer
 
-Custom permissions let users create custom permission profiles with configurable permissions to restrict access for Cloud Managers users to programs, pipelines, and environments.
+Custom permissions let users create custom permission profiles with configurable permissions to restrict access for Cloud Manager users to programs, pipelines, and environments.
 
 >[!TIP]
->
 >For details on pre-defined roles, see [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md).
 
-## Using Custom Permissions {#using}
+## Use custom permissions {#using}
 
-To create and use your own custom permissions, it requires three steps:
+Creating and using your own custom permissions requires the following three steps:
 
 1. [Create a product profile](#create).
 1. [Assign custom permissions to the product profile](#assign-permissions).
 1. [Assign users to the product profile](#assign-users).
 
-This section details these steps. You may find it useful to see the [Terms](#terms) and [Configurable Permissions](#configurable-permissions) sections as you create your own custom permissions.
+>[!TIP]
+>You may find it helpful to review the [Terms](#terms) and [Configurable Permissions](#configurable-permissions) sections as you create your own custom permissions.
 
->[!NOTE]
->
->You must have product administrator rights in the Admin Console for Adobe Experience Manager as a Cloud Service to create profiles and manage permissions for Cloud Manager.
+>[!IMPORTANT]
+>You must have product administrator rights in the Admin Console for Adobe Experience Manager as a Cloud Service to create product profiles and manage permissions for Cloud Manager.
 
-### Create a New Product Profile {#create}
-
-First create a product profile to which you can assign custom permissions.
+### Create a product profile {#create}
 
 1. Log into Cloud Manager at [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. On the Cloud Manager landing page, select the **Manage Access** button. 
+1. On the Cloud Manager landing page, click **Manage Access**. 
 
-  ![Manage Access button](assets/manage-access.png)
+   ![Manage Access button](assets/manage-access.png)
 
-1. You are redirected to the **Products** tab of the Admin Console, where you can manage users and permissions for Cloud Manager. In the Admin Console, select the **New Profile** button.
+1. In the Admin Console, click **New profile**.
 
-  ![New Profile button](assets/admin-console-new-profile.png)
+   ![New Profile button](assets/admin-console-new-profile.png)
 
 1. Provide the general details about the profile.
 
@@ -61,95 +58,83 @@ First create a product profile to which you can assign custom permissions.
    * **Description** - An informative description of the profile explaining its purpose (optional)
    * **Notify users by email** - Users receive an email notification when they are added to or removed from this profile.
 
-1. Select **Save** when complete.
+1. Click **Save**.
 
 The new product profile is saved and is visible in the list of product profiles in the Admin Console.
 
-### Assign Custom Permissions to Profile {#assign-permissions}
+### Assign custom permissions to the product profile {#assign-permissions}
 
-Now that you have a new product profile, you can assign custom permissions to it.
+1. In the Admin Console, click the name of the [new product profile you created](#create).
 
-1. In the Admin Console, select the name of the [new product profile you created](#create).
-
-1. In the window that opens, select the **Permissions** tab to view a list of editable permissions.
+1. In the **Custom Profile** page, click the **Permissions** tab.
 
    ![Editable permissions](assets/permissions-tab.png)
 
-1. Select the **Edit** link of a permission so you can edit it.
+1. In the row of a permission name, click **Edit**.
 
-1. The **Edit Permission** window opens.
-   * The permission you selected in the previous step is selected in the left column.
-   * The permission items available for assignment for the permission are in the middle column labeled **Available Permission** Items.
-   * The assigned permission items are in the right column labeled **Included Permission Items**.
+1. In the **Edit permissions for Custom Profile** dialog box, do one of the following:
 
-   ![Edit permission items](assets/edit-permission-items.png)
+   * Near the top of the **Available permissions items** column, click ![Add icon or Plus sign icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Add all** to add all permissions.
+   * To add a single permission to the **Included permission items** column, click its associated ![Add icon or Plus sign icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg).
 
-1. Select the plus (`+`) icon next to the permission item so you can add it to the column **Included Permission Items**.
+      ![Edit permission items](assets/edit-permission-items.png)
 
-   * Select the `i` icon next to a permission item if you want to learn more about it.
+1. Click **Save**.
 
-1. Select the **Add all** button at the top of the **Available Permissions** column so you can add all permissions.
+### Assign users to the product profile {#assign-users}
 
-1. Select **Save** when you are finished defining the permission items for your new product profile.
+1. In the Admin Console, click the name of the [new product profile to which you assigned custom permissions](#assign-permissions).
 
-Your new product profile is now saved with its custom permissions.
+1. In the window that opens, click the **Users** tab.
 
-### Assign Users to the Custom Permissions {#assign-users}
+1. Click **Add Users** and assign users to the product profile with custom permissions.
 
-You can now assign users to the new product profile you created with custom permissions.
+In [Manage product profiles for enterprise users](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html), see **Add users and user groups to a product profile** for more details on how to use the Admin Console.
 
-1. In the Admin Console, select the name of the [new product profile to which you assigned custom permissions](#assign-permissions).
+## Configurable permissions {#configurable-permissions}
 
-1. In the window that opens, select the **Users** tab.
-
-1. Select the **Add Users** button and assign users to your new product profile with custom permissions.
-
-See the section **Add users and user groups to a product profile** of the document [Manage product profiles for enterprise users](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) for more details on how to use the Admin Console.
-
-## Configurable Permissions {#configurable-permissions}
-
-The following permissions are available for creating custom profiles.
+The following permissions are available when you create a custom product profile.
 
 | Permission | Description |
 | --- | --- |
-| Program Create | Let users create a program. |
-| Program Access | Let users access programs. |
-| Program Edit | Let users edit programs. |
-| Environment Create | Let users create an environment. |
-| Environment Edit | Let users update and edit environments. |
-| Environment Logs Read | Let users read environment logs. |
-| Environment Variables Manage | Let users create/edit/delete environment configurations. |
-| Environment Restore Create | Let users create an environment restore. |
-| Rapid Development Environment Reset | Let users reset the Rapid Development Environment (RDE). |
-| Content Copy Manage | Let users manage content copy operations. |
-| Pipeline Create | Let users create pipelines. |
-| Pipeline Delete | Let users delete pipelines. |
-| Pipeline Edit | Let users edit pipelines. |
-| Production Deployments Approve/Reject | Let users approve or reject a production deployment step. |
-| Pipeline Executions Cancel | Let users cancel pipeline executions. |
-| Pipeline Executions Start | Let users start a new pipeline execution. |
-| Override/Reject Important Metric Failures | Let users override/reject important metric failures. |
-| Production Deployments Schedule | Let users schedule a production deployment step. |
-| Repository Info Access | Let users access repository info and generate an access password. |
-| Repository Create | Let users create Git repositories. |
-| Repository Delete | Let users delete Git repositories. |
-| Repository Edit | Let users edit Git repositories. |
-| Repository Code Generate | Let users generate a project from archetype. |
-| Domain Name Manage | Let users create/edit/delete domain names. |
-| IP Allowlist Manage | Let users create/edit/delete IP allowlist and IP allowlist binding. |
-| Network Infrastructure Manage | Let users create/edit/delete network infrastructure. |
-| SSL Certificate Manage | Let users create/edit/delete SSL certificate. |
-| New Relic Sub Account User Manage | Let users read/edit New Relic subaccount users. |
+| `Program Create` | Let users create a program. |
+| `Program Access` | Let users access programs. |
+| `Program Edit` | Let users edit programs. |
+| `Environment Create` | Let users create an environment. |
+| `Environment Edit` | Let users update and edit environments. |
+| `Environment Logs Read` | Let users read environment logs. |
+| `Environment Variables Manage` | Let users create/edit/delete environment configurations. |
+| `Environment Restore Create` | Let users create an environment restore. |
+| `Rapid Development Environment Reset` | Let users reset the Rapid Development Environment (RDE). |
+| `Content Copy Manage` | Let users manage content copy operations. |
+| `Pipeline Create` | Let users create pipelines. |
+| `Pipeline Delete` | Let users delete pipelines. |
+| `Pipeline Edit` | Let users edit pipelines. |
+| `Production Deployments Approve/Reject` | Let users approve or reject a production deployment step. |
+| `Pipeline Executions Cancel` | Let users cancel pipeline executions. |
+| `Pipeline Executions Start` | Let users start a new execution pipeline. |
+| `Override/Reject Important Metric Failures` | Let users override/reject important metric failures. |
+| `Production Deployments Schedule` | Let users schedule a production deployment step. |
+| `Repository Info Access` | Let users access repository info and generate an access password. |
+| `Repository Create` | Let users create Git repositories. |
+| `Repository Delete` | Let users delete Git repositories. |
+| `Repository Edit` | Let users edit Git repositories. |
+| `Repository Code Generate` | Let users generate a project from archetype. |
+| `Domain Name Manage` | Let users create/edit/delete domain names. |
+| `IP Allowlist Manage` | Let users create/edit/delete IP allowlist and IP allowlist binding. |
+| `Network Infrastructure Manage` | Let users create/delete/edit/test network infrastructure. |
+| `SSL Certificate Manage` | Let users create/edit/delete SSL certificate. |
+| `New Relic Sub Account User Manage` | Let users read/edit New Relic subaccount users. |
 
-### Organization-Level Permissions {#organization-level}
+### Organization-level permissions {#organization-level}
 
 Organization-level permissions refer to permissions which are always given across all programs in an organization.
 
 The following permissions are organization-level permissions:
 
-* **Program Create** - This permission lets users create a program in the organization.
-* **Repository Info Access** This tenant/organization level permission allows users to generate a username, password, and repository URL for access and contributing to a customer project.
-  * The username and password for repository access is common across all the repositories in the organization. However, the repository URL is unique to each program.
+* **`Program Create`** - This permission lets users create a program in the organization.
+* **Repository Info Access** - This tenant/organization level permission allows users to generate a username, password, and repository URL for accessing and contributing to a customer project.
+  * The username and password for repository access are common across all the repositories in the organization. However, the repository URL is unique to each program.
   * See [Accessing Repositories](/help/implementing/cloud-manager/managing-code/accessing-repos.md) for more information.
 
 ## Terms {#terms}
@@ -164,7 +149,7 @@ The following terms are used in creating and managing custom permissions and pre
 | Configurable Permission | Cloud Manager permissions that you can configure in the permission profile. |
 | Permission Item | A program, environment, or pipeline resource on which a permission can be applied. |
 
-Permission items refer to the scope where permission is applied. Typically, it is one of the following.
+Permission items refer to the scope where permissions are applied. Typically, it is one of the following.
 
 | Permission Item Type | Example | Description |
 | --- | --- | --- |
@@ -176,10 +161,10 @@ Permission items refer to the scope where permission is applied. Typically, it i
 ## Usage notes {#usage-notes}
 
 * A custom permissions profile also lists AMS programs, environments, and pipelines while configuring permissions.
-* Resources like program, environment, and pipeline that were created in Cloud Manager may take up two minutes to display in Admin Console for permission configuration.
+* Resources like program, environment, and pipeline that were created in Cloud Manager may take several minutes to display in Admin Console for permission configuration.
 * In rare scenarios where a custom permissions service fails to respond, predefined profiles are still available and users in predefined profiles still have appropriate access.
 
-## Frequently Asked Questions {#faq}
+## Frequently asked questions {#faq}
 
 ### Which permission profiles are predefined permission profiles?
 
@@ -190,13 +175,13 @@ Permission items refer to the scope where permission is applied. Typically, it i
 
 For details on pre-defined roles, see [AEM as a Cloud Service Team and Product Profiles](/help/onboarding/aem-cs-team-product-profiles.md).
 
-### What happens to predefined permission profiles with introduction to custom profiles?
+### What happens to predefined permission profiles with the introduction of custom profiles?
 
 Default product profiles and Cloud Manager roles continue to work the same as before.
 
 ### Can I edit predefined permission profiles?
 
-No, default profiles are non-editable. You cannot add or remove permissions to the default permission profile. You can only add or remove users from predefined profiles.
+No. Default profiles are non-editable. You cannot add or remove permissions from the default permission profile. You can only add or remove users from predefined profiles.
 
 ### Should I delete predefined permission profiles since custom profiles are now available?
 
@@ -204,8 +189,8 @@ Do not delete predefined permission profiles from the Admin Console.
 
 ### Can I add users to multiple permission profiles?
 
-Yes, A user can be part of multiple profiles including predefined and custom permission profiles. When a user is assigned to multiple profiles, the combined permissions from all the assigned permission profiles are available to that user.
+Yes. A user can be part of multiple profiles including predefined and custom permission profiles. When a user is assigned to multiple profiles, the combined permissions from all the assigned permission profiles are available to that user.
 
 ### What happens if a user has permission to edit an environment/pipeline but doesn't have access to a program which contains the environment/pipeline?
 
-In this case, the user is unable to access the environment or pipeline if they do not have the **Program Access** permissions containing the environment or pipeline.
+The user is unable to access the environment or pipeline if they do not have the **Program Access** permissions containing the environment or pipeline.

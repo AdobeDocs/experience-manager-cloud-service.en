@@ -121,7 +121,7 @@ Log in to your DNS service provider and create a `CNAME` record to point your cu
 
 An apex domain is a custom domain that does not contain a subdomain, such as `example.com`. An apex domain is configured with an `A`, `ALIAS`, or `ANAME` record through your DNS provider. Apex domains must point to specific IP addresses.
 
-Add the following `A` records to your domain's DNS settings by way of your domain provider.
+Add the following `A` records to your domain's DNS settings through your domain provider.
 
 * `A RECORD`
 

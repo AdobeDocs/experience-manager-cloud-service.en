@@ -15,6 +15,8 @@ The Experience Production Agent automates high effort and high-volume tasks. It 
 The agent provides the following jobs:
 
 * [Content Update](#content-update)
+* [Content Create](#content-create)
+* [Figma to Visual Content Fragments Job](#figma-to-visual-content-fragments)
 * [Form Creation](#form-creation)
 * [Communications Creation](#communications-creation)
 
@@ -26,7 +28,29 @@ The agent provides the following jobs:
 
 ### Content Update Job {#content-update}
 
-The [Content Update](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) job updates existing content — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, or adding content elements to keep experiences accurate and current. Inputs can be natural language description, and when used with Jira PDFs and screenshots can provide input too.
+The [Content Update](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md) job updates existing content — including content fragments, pages, forms and assets — with ease. The agent can perform actions such as updating, removing, replacing, and adding content elements to keep experiences accurate and current. Inputs can be natural language description, and when used with Jira, PDFs and screenshots can provide input too.
+
+### Content Create Job {#content-create}
+
+The [Content Create](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md) job creates new pages based on a marketing brief, a template and a natural language prompt.
+
+>[!NOTE]
+>
+>The Content Create job is currently in Limited Availability. 
+>
+>If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
+
+### Figma to Visual Content Fragments Job {#figma-to-visual-content-fragments}
+
+The [Figma to Visual Content Fragments](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md) job imports Figma designs to AEM Content Models, Content Fragments and HTML templates.
+
+<!-- CQDOC-23232 - remove when GA -->
+
+>[!NOTE]
+>
+>The Figma to Visual Content Fragments job is currently in Limited Availability. 
+>
+>If you would like to participate, please send a request from your official email address to [experience-production-agent@adobe.com](mailto:experience-production-agent@adobe.com).
 
 ### Form Creation Job {#form-creation}
 

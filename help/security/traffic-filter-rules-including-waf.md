@@ -135,75 +135,9 @@ The format of the traffic filter rules in the `cdn.yaml` file is described below
 | **Property**   | **Most traffic filter rules**  | **WAF traffic filter rules**  | **Type**  | **Default value**  | **Description**  |
 |---|---|---|---|---|---|
 | name  | X  | X  | `string`  | -  | Rule name (64 chars long, can only contain alphanumerics and - )  |
-| when  | X  | X  | `Condition`  | -  | The basic structure is:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[See Condition Structure syntax](#condition-structure) below, which describes the getters, predicates, and how to combine multiple conditions.  |
+| when  | X  | X  | `Condition`  | -  | The basic structure is:<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>See [Condition Structure](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) in *Configuring Traffic at the CDN* for getters, predicates, and how to combine multiple conditions.  |
 | action  | X  | X  | `Action` | log  | log, allow, block, or Action object. Default is log |
 |  rateLimit | X  |   | `RateLimit`  | not defined  | Rate limiting configuration. Rate limiting is disabled if not defined.<br><br>There is a separate section further below describing the rateLimit syntax, along with examples.  |
-
-### Condition Structure {#condition-structure}
-
-A Condition can be either a simple Condition or a group of Conditions.
-
-**Simple Condition**
-
-A Simple Condition is composed of a getter and a predicate.
-
-```
-{ <getter>: <value>, <predicate>: <value> }
-```
-
-**Group Conditions**
-
-A Group of Conditions is composed of multiple Simple and/or Group Conditions.
-
-```
-<allOf|anyOf>:
-  - { <getter>: <value>, <predicate>: <value> }
-  - { <getter>: <value>, <predicate>: <value> }
-  - <allOf|anyOf>:
-    - { <getter>: <value>, <predicate>: <value> }
-```
-
-|  **Property** | **Type**  | **Meaning**  |
-|---|---|---|
-| **allOf**  | `array[Condition]` | **and** operation. true if all listed conditions return true  |
-|  **anyOf** |  `array[Condition]` | **or** operation. true if any of listed conditions return true  |
-
-**Getter**
-
-| **Property**   | **Type**  | **Description**  |
-|---|---|---|
-| reqProperty  | `string`  | Request property.<br><br>One of:<br><ul><li>`path`: Returns the full path of a URL without the query parameters. (use `pathRaw` for the unescaped variant)</li><li>`originalPath`: Returns the immutable original path of the request without the query parameters — the path before any CDN request transformations.</li><li>`url`: Returns the full URL including the query parameters. (use `urlRaw` for the unescaped variant)</li><li>`originalUrl`: Returns the immutable original full URL of the request including the query parameters — the URL before any CDN request transformations.</li><li>`queryString`: Returns the query part of a URL</li><li>`method`: Returns the HTTP method used in the request.</li><li>`tier`: Returns one of `author`, `preview`, or `publish`.</li><li>`domain`: Returns the domain property (as defined in the `Host` header) in lower-case</li><li>`clientIp`: Returns the client IP.</li><li>`forwardedDomain`: Returns the first domain defined in the `X-Forwarded-Host` header in lower-case</li><li>`forwardedIp`: Returns the first IP in `X-Forwarded-For` header.</li><li>`clientRegion`: Returns the country subdivision code that identify in which region the client is located as described in [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2).</li><li>`clientCountry`: Returns a two letter code ([Regional indicator symbol](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) that identify in which country the client is located.</li><li>`clientContinent`: Returns a two letter code (AF, AN, AS, EU, NA, OC, SA) that identify in which continent the client is located.</li><li>`clientAsNumber`: Returns the [Autonomous System](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) number associated to the client IP.</li><li>`clientAsName`: Returns the name associated to the Autonomous System number.</li></ul> |
-| reqHeader  | `string`  | Returns Request Header with specified name  |
-| queryParam  | `string` | Returns Query Parameter with specified name  |
-| reqCookie  | `string`  | Returns Cookie with specified name  |
-| postParam  | `string`  | Returns Post Parameter with specified name from Request body. Only works when body is of content type `application/x-www-form-urlencoded` |
-
-**Predicate**
-
-| **Property**  | **Type**  | **Meaning**  |
-|---|---|---|
-|  **equals** | `string`  | true if the getter result equals to provided value  |
-|  **doesNotEqual** | `string`  | true if the getter result is not equal to provided value  |
-| **like**  | `string`  | true if getter result matches provided pattern  |
-| **notLike**  | `string`  | true if getter result does not match provided pattern  |
-| **matches**  | `string`  | true if getter result matches provided regex  |
-| **doesNotMatch**  | `string`  | true if getter result does not match provided regex  |
-| **in**  | `array[string]`  | true if provided list contains getter result  |
-|  **notIn** | `array[string]`  | true if provided list does not contain getter result  |
-|  **exists** | `boolean`  | true when set to true and property exists or when set to false and property does not exist  |
-
-**Notes**
-
-* The request property `clientIp` can only be used with the following predicates: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` can also be compared against IP ranges when using `in` and `notIn` predicates. The following example implements a condition to evaluate if a client IP is in the IP range of 192.168.0.0/24 (so from 192.168.0.0 to 192.168.0.255):
-
-```
-when:
-  reqProperty: clientIp
-  in: [ "192.168.0.0/24" ]
-```
-
-* Adobe recommends the use of [regex101](https://regex101.com/) and [Fastly Fiddle](https://fiddle.fastly.dev/) when working with regex. You can also learn more about how Fastly handles regex from [fastly documentation - Regular expressions in Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
-
 
 ### Action Structure {#action-structure}
 
@@ -465,6 +399,8 @@ data:
           type: block
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
+
+For additional code snippets for advanced scenarios, see the [CDN Configuration Snippets for Common Scenarios](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md) article.
 
 ## CVE Rules {#cve-rules}
 

@@ -1,14 +1,14 @@
 ---
-title: Universal Editor 2026.04.30 Release Notes
-description: These are the release notes for the 2026.04.30 release of the Universal Editor.
+title: Universal Editor 2026.05.21 Release Notes
+description: These are the release notes for the 2026.05.21 release of the Universal Editor.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 ---
 
-# Universal Editor 2026.04.30 Release Notes {#release-notes}
+# Universal Editor 2026.05.21 Release Notes {#release-notes}
 
-These are the release notes for the 30 April 2026 release of the Universal Editor.
+These are the release notes for the 21 May 2026 release of the Universal Editor.
 
 >[!TIP]
 >
@@ -18,6 +18,7 @@ These are the release notes for the 30 April 2026 release of the Universal Edito
 >
 >For the current release notes for Adobe Experience Manager as a Cloud Service, please see [this page.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## Improvements {#other-improvements}
+## What's New {#what-is-new}
 
-* An issue was fixed where [the badge of an editable item](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content) was obscuring the item behind it in some situations.
+* Minor improvements and fixes
+

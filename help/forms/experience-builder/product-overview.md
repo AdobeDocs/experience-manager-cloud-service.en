@@ -2,9 +2,8 @@
 title: Forms Experience Builder
 description: Craft powerful forms faster using Form Fragments
 feature: Edge Delivery Services
-hide: yes
+hide: true
 index: false
-hidefromtoc: yes
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 183e999c-9896-49a2-b29b-7c77da380df9
@@ -49,8 +48,6 @@ Transform existing documents into interactive digital experiences. The Forms Exp
 >[!VIDEO](https://video.tv.adobe.com/v/3463164/)
 
 ## Onboarding & pre-requisites 
-
-The Forms Experience Builder is currently available through an Early Access Program. To request access, send an email to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) from your official Email ID. 
 
 Experience Builder requires AEM Forms as a Cloud Service production author environment with [Adaptive Forms Core Components](/help/forms/enable-adaptive-forms-core-components.md).  
 

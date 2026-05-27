@@ -8,7 +8,7 @@ exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
 
 # Universal Editor Preview Release Notes {#preview}
 
-These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 7 May 2026.
+These are the release notes for the **preview version** of the Universal Editor. These features are currently available in your Universal Editor's **preview environment**. These features are scheduled to be released to general availability on 28 May 2026.
 
 These **preview** release notes are provided as a convenience so you know what changes to the Universal Editor are upcoming and you can test them by [switching to your preview version.](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -22,12 +22,11 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Features {#upcoming-features}
 
-* A service worker has been introduced to reduce latency between the Universal Editor UI and the backend systems.
-* All adapters for Content Fragments (AEM 6.5, OpenAPI and GraphQL) now include the filters for the asset selector to ensure consistency and users being able to select allowed assets only.
-* `content:patch` intent is now provided.
-* To help with accessibility, author flow and landmarks have been defined.
+* A new button has been added to the toolbar [to access AEM page properties.](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)
+  * This brings the functionality of the former `aem-page-properties` [extension](/help/implementing/universal-editor/extending.md) natively to the Universal Editor.
+  * The button is shown only when the remote page has a [connection with protocol](/help/implementing/universal-editor/component-definition.md#plugins) `aem`, or `xwalk` and a unique page path can be resolved from the current editable.
 
-## Other Upcoming Improvements {#other-improvements}
+## Upcoming Changes {#upcoming-improvements}
 
-* Unnecessary type assertions in `assignImageDimensionFields` were removed.
-* And issue was fixed where the server-side handling of the `add` operation iterated the string value, treating it as an object instead of a patch.
+* The default background color of the edit canvas is now white (#FFFFFF) when the app sets no background color of its own.
+

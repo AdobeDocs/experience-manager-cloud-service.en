@@ -5,8 +5,7 @@ badgeSaas: label="AEM Sites" type="Positive" tooltip="Applies to AEM Sites)."
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-hide: yes
-hidefromtoc: yes
+hide: true
 index: false
 exl-id: 5039cf92-21ff-4d6c-a684-72eab13b519d
 ---
@@ -196,3 +195,4 @@ In most scenarios, MSM for Content Fragments matches the behavior of MSM for Sit
 ## Limitations {#limitations}
 
 * On-modify triggers, and the associated rollout configuration, do not exist for Content Fragments.
+

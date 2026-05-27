@@ -5,8 +5,7 @@ content-type: troubleshooting
 topic-tags: publish
 feature: Adaptive Forms
 role: User
-hide: yes
-hidefromtoc: yes
+hide: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="Applies to AEM Forms)."
 exl-id: 597fa30c-6fb7-46c2-8ee1-2986c4860266
 ---
