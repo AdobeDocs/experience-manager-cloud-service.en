@@ -51,6 +51,45 @@ Use the Filters panel to search for assets based on metadata. You can filter sea
 
 The default filters include file format, approved by, date approved, expired and not expired assets, and expiration date. Administrators can also configure the filters that display in the list of filters. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md#configure-filters-content-hub).
 
+## AI Search in Content Hub {#ai-search-aem-assets-content-hub}
+
+AI Search in AEM Assets Content Hub is an advanced search capability that understands the meaning and intent behind a user's query rather than relying on exact keyword matches. It uses artificial intelligence (AI) and machine learning to deliver more accurate and context-aware results.
+
+Unlike traditional keyword-based search, which looks for exact terms, AI Search interprets relationships between words, concepts, and user intent. This ensures that users find what they are looking for—even if their query is phrased differently, contains typos, or is in another language.
+
+Some if its key benefits include:
+
+* **Multilingual support**: Search across multiple languages without requiring exact translations. Users can find relevant content regardless of their query language.
+
+* **Handles misspellings**: Interprets typos and spelling errors, ensuring accurate results even with imperfect input.
+
+* **Understands synonyms**: Delivers results for related terms and phrases, so users do not need to guess the right keyword.
+
+* **Context-Aware search**: Recognizes the intent behind a query, not just the exact words.
+
+### Examples for AI Search in Content Hub {#examples-ai-search-aem-assets-content-hub}
+
+**Example Prompt**: *Woman drinking coffee*
+
+The traditional keyword-based search looks for exact matches of asset metadata, such as `Woman`, `drinking`, `Coffee`, and returns assets that include all these terms in the metadata.
+
+However, AI Search matches similar words such as `Girl`, `Lady` in the case of `Woman` and `Cappuccino` and `Latte` in the case of `Coffee`.
+
+Similarly, you can specify this prompt in Spanish or misspell `Woman` as `Wman` and still get the same results.
+
+
+### Enable or disable AI search in Content Hub {#enable-disable-ai-search-content-hub}
+
+Execute the following steps to enable or disable AI Search in Content Hub:
+
+1. Navigate to your user profile icon and click **[!UICONTROL Configurations]**.
+
+1. In the **[!UICONTROL Search]** tab, select **[!UICONTROL AI Search]** to enable AI Search for Content Hub or **[!UICONTROL Keyword]** to disable it.
+
+   ![AI Search in Content Hub](/help/assets/assets/ai-search-content-hub.png)
+
+1. Click **[!UICONTROL Save]**.
+
 <!--
 
 <table>
