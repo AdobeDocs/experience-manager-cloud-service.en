@@ -119,3 +119,4 @@ The skill and MCP complement the other tools in the **Implementation Phase**:
 - **Content Transfer Tool**: migrates repository content from AEM 6.x to AEMaaCS.
 
 See the [Implementation Phase overview](/help/journey-migration/implementation.md) for the full picture.
+
