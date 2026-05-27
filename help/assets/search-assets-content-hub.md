@@ -196,6 +196,57 @@ To perform Bulk Search in the [!DNL Content Hub], execute the following steps:
 
   ![Bulk Search UI](assets/bulk-search-ui.png)
 
+## Configure sorting in Content Hub {#configure-sorting-aem-assets-content-hub}
+
+Content Hub provides out-of-the-box sorting options to help users organize asset search results. Administrators can also enable custom metadata fields as sorting options so that users can sort assets based on business-specific metadata, such as Channel, Region, SKU, or Campaign.
+
+### Default sorting options {#default-sorting-options}
+
+By default, Content Hub includes the following sorting options on the Content Hub home page:
+
+* Size
+
+* Modified
+
+* Name
+
+* Relevance
+
+### Add custom metadata fields as sorting options {#add-custom-metadata-fields-for-sorting}
+
+Administrators can configure additional metadata fields to appear in the sorting menu.
+
+To enable a metadata field for sorting:
+
+1. Click the user profile icon and select **Configurations**.
+1. Navigate to the **Filters** tab.
+1. Locate the metadata field that you want to enable for sorting.
+1. Click the edit icon for the field.
+1. In the Edit Filter dialog, enable the **Sorting** option.
+1. Click **Confirm** and save the configuration.
+
+For example, enabling sorting for the Channel metadata field allows users to sort asset results using the Channel value.
+
+![Basic search](assets/enable-filters-sorting.png)
+
+### Use custom sorting options on the Content Hub home page {#use-custom-sorting-options}
+
+After you enable sorting for a metadata field:
+
+* The field appears in the sorting menu on the Content Hub home page.
+* Custom sorting fields are displayed below a separator line in the sorting menu.
+* The separator visually differentiates administrator-configured custom fields from the default out-of-the-box sorting options.
+
+For example, if the Channel metadata field is enabled for sorting, the sorting menu displays:
+
+* Default fields such as Size, Modified, Name, and Relevance
+* A separator line
+* The custom field Channel
+
+This distinction helps users quickly identify standard sorting options versus organization-specific metadata-based sorting options.
+
+![Basic search](assets/custom-sorting-options.png)
+
 ## Do more with search {#do-more-with-search}
 
 [!DNL The Content Hub] is not limited to search, instead it allows you to perform additional actions, such as [download](download-assets-content-hub.md), [share](share-assets-content-hub.md), and [add assets to collection](collections-content-hub.md), right from the search or preview interface. Select the assets on the search results page to view these options.
