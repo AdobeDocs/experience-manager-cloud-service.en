@@ -79,11 +79,37 @@ See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Content Advisor now available for Adobe Workfront and non-Adobe applications**
+### New features in Content Hub {#new-features-content-hub}
 
-Content Advisor is now available for Adobe Workfront and non-Adobe (third-party) applications, extending intelligent asset discovery and content reuse beyond Adobe Express and AEM Sites. This release brings the full Content Advisor experience, including AI-powered search, context-aware recommendations, campaign brief–based discovery, access to Dynamic Media renditions, Content Fragment discovery, filters, and asset metadata to Adobe Workfront workflows and external applications.
+**AI Search**
 
-You can now discover, evaluate, and reuse approved assets from AEM Assets directly within your preferred applications, enabling consistent asset usage, improved efficiency, and streamlined content creation across both Adobe and non-Adobe applications.
+AEM Assets Content Hub now includes AI Search, an advanced search capability that understands the meaning and intent behind user queries instead of relying only on exact keyword matches. AI Search delivers more accurate and context-aware results by recognizing relationships between words, concepts, and user intent. It supports multilingual queries, handles misspellings and typos, understands synonyms, and surfaces relevant assets even when users do not use exact metadata terms. 
+
+For example, a search for `Woman drinking coffee` can also return assets tagged with related terms such as `Lady`, `Girl`, `Latte`, or `Cappuccino`. 
+
+Administrators can enable or disable AI Search in Content Hub using the Configurations menu by selecting either AI Search or traditional keyword search.
+
+**Custom Sorting options**
+
+Content Hub now allows administrators to enable custom metadata fields as sorting options on the Content Hub home page. In addition to the default sorting options, Size, Modified, Name, and Relevance, administrators can configure business-specific metadata fields such as Channel, Region, SKU, or Campaign to help users organize search results more effectively.
+
+>[!IMPORTANT]
+>
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
+### New features in Dynamic Media with OpenAPI capabilities {#new-features-dynamic-media-openapi}
+
+**Video Smart Crops**
+
+Dynamic Media with OpenAPI capabilities now support Video Smart Crops for video assets in AEM Assets. Video Smart Crops use AI-powered analysis to automatically keep the primary subject in focus across different aspect ratios and devices, helping deliver optimized viewing experiences on web, mobile, and social channels. Once enabled and configured by administrators, organizations can generate smart cropped video outputs for approved assets and dynamically deliver the most appropriate framing during playback.
+
+**Multi-caption and multi-audio track support for videos**
+
+Dynamic Media with OpenAPI capabilities now support multiple captions and multiple audio tracks for video assets. It enables organizations to deliver localized and accessible video experiences to global audiences by associating multiple language-specific caption and audio tracks with a single primary video. Authors can efficiently manage these tracks from a unified interface, simplifying multilingual content delivery and supporting regional accessibility requirements.
+
+>[!IMPORTANT]
+>
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
