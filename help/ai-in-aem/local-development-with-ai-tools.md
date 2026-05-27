@@ -50,6 +50,7 @@ Adobe publishes AEM as a Cloud Service skills in the **[adobe/skills](https://gi
 |`ensure-agents-md`|Bootstraps `AGENTS.md` and `CLAUDE.md` tailored to the project's actual module structure|
 |`create-component`|Scaffolds a complete AEM component: component definition, dialog XML, HTL template, Sling Model, unit tests, and clientlibs|
 |`dispatcher`|AI-powered Dispatcher and Apache HTTPD configuration assistant covering config authoring, technical advisory, incident response, performance tuning, and security hardening|
+|`migration`|Migrates AEM 6.x, AMS, or on-premise Java code and OSGi configurations to AEM as a Cloud Service, driven by [Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) findings from a CSV export or [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)|
 |`workflow`|This is the single entry point for all AEM as a Cloud Service Workflow skills. It Covers workflow model design, custom process step and participant chooser development, launcher configuration, workflow triggering, and production support including debugging stuck/failed workflows, triaging incidents with Cloud Manager logs, thread pool analysis, and Sling Job diagnostics for the Granite Workflow Engine.|
 
 ### Install Skills {#install-skills}
@@ -119,6 +120,16 @@ CTA Link (ctaLink) - Pathfield
 The agent echoes the field specification for confirmation, then generates all component files. Supported patterns include multifield with composite nested items, conditional show/hide logic, Core Component extension via Sling Resource Merger, and JUnit 5 tests using AEM Mocks. The design can come from various sources, including a text description, an image, or a Figma design url using Figma's MCP server.
 
 Learn more by following the [Component development using AEM Agent Skills tutorial.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)
+
+### Use the Migration Skill {#use-the-migration-skill}
+
+The `migration` skill guides the agent through migrating AEM Java code and OSGi configurations to AEM as a Cloud Service. It works one pattern at a time: you name the pattern (for example, `scheduler` or `replication`), point the agent at your Best Practices Analyzer findings, and it locates the affected files in your project and applies the correct transformations in batches, pausing for your review after each one.
+
+Supported patterns include Sling Scheduler, ResourceChangeListener, Replication API, OSGi EventListener and EventHandler, Assets API, HTL lint fixes, and OSGi config conversion with Cloud Manager secrets and environment variable extraction.
+
+The skill pairs with the [Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md) to fetch findings directly from [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md). Without the MCP configured, the skill falls back to a local [BPA](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) CSV export, or you can point it at specific files manually.
+
+For full setup instructions and pattern reference, see [AI-Assisted Code Migration to AEM as a Cloud Service](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
 
 ### Use the Dispatcher Skill {#use-the-dispatcher-skill}
 

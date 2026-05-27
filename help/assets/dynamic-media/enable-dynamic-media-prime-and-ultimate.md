@@ -17,7 +17,8 @@ This article provides the end-to-end workflow to enable the [!DNL Dynamic Media]
 To enable [!DNL Dynamic Media] Ultimate:
 
 1. [Activate [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi) 
-1. [Configure [!DNL Dynamic Media] solutions](#configure-dynamic-media-solutions) 
+1. [Configure [!DNL Dynamic Media] solutions](#configure-dynamic-media-solutions)
+1. [Access Dynamic Media APIs](#access-dynamic-media-apis) 
 1. [Create and list [!DNL Dynamic Media] companies](#create-and-list-dynamic-media-companies)
 1. [Configure custom domain in delivery tier](#configure-custom-domain-in-delivery-tier) 
 
@@ -119,7 +120,7 @@ After [enabling Dynamic Media with OpenAPI](#activate-dynamic-media-with-openapi
 
  Before accessing the API, you must be added to the `AEM Assets DM OpenAPI Users - delivery  - Program xxxx - Environment yyyy` product profile.
 
- Once the access token is fetched using any of the authentication methods, you can [define the client ID as the API key in the cURL request](/help/assets/search-assets-api.md) and start using [Dynamic Media with OpenAPIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
+ Once the access token is fetched using any of the authentication methods, you can [define client ID as the API key in the cURL request](/help/assets/search-assets-api.md) and start using [Dynamic Media with OpenAPIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 ### Create and list [!DNL Dynamic Media] companies {#create-and-list-dynamic-media-companies}
 
