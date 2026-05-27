@@ -113,7 +113,7 @@ Accelerate your migration from AEM 6.5 to AEM as a Cloud Service (Java stack) by
 
 Learn more about [IDE AI tooling for Cloud Migration](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
 
-[!VIDEO](https://video.tv.adobe.com/v/3491438/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3491438/?quality=12)
 
 #### Replication Queue Status Display Changes {#replication-queue-status-display}
 
