@@ -148,7 +148,7 @@ When you have configured AEM Assets Content Hub for Production and other lower e
 
 To provide a thumbnail preview for file types such as .ZIP in AEM Assets Content Hub, you can add a rendition named `cq5dam.<label>.<width>.<height>.<ext>` to the root of the path where the .ZIP is available in AEM as a Cloud Service authoring environment. For example, `cq5dam.preview.500.500.png`.
 
-Content Hub picks the rendition with the greatest width among all `cq5dam.*` renditions; a custom rendition only wins if its encoded width exceeds existing auto-generated renditions.
+Content Hub picks the rendition with the greatest width among all `cq5dam.*` renditions; a custom rendition displays as a thumbnal preview only if its encoded width exceeds existing auto-generated renditions.
 
 The image that you add as rendition:
 
