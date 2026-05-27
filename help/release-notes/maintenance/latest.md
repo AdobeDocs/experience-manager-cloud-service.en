@@ -12,7 +12,7 @@ The following section outlines the technical release notes for the current maint
 
 ## Release 26309 {#release-26309}
 
-Summarized below are the continuous improvements for maintenance release 26309, which was publicly released on May 26, 2026 (replacing release 26125). The previous maintenance release was release 25892.
+Summarized below are the continuous improvements for maintenance release 26309, which was publicly released on May 26, 2026. The previous maintenance release was release 25892.
 
 The 2026.5.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
