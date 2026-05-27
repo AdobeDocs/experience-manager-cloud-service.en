@@ -1667,6 +1667,7 @@ user-guide-title: AEM as a Cloud Service
   + [Actions Center](/help/operations/actions-center.md)
   + [Content Search and indexing](/help/operations/indexing.md)
   + [Content Replication Service](/help/operations/replication.md)
+  + [Tree Replication Workflows](/help/operations/tree-replication-workflows.md)
   + [Additional Publish Regions](/help/operations/additional-publish-regions.md)
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
   + [Maintenance Tasks](/help/operations/maintenance.md)
