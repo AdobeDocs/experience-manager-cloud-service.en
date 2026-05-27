@@ -136,3 +136,4 @@ For BPA reports with many findings, the batch-by-batch approach lets you validat
 The agent searches for and edits files only within the open IDE workspace folders. It does not scan parent directories, sibling folders, or other locations on disk.
 
 If a BPA finding references a file path that does not exist in the workspace, the agent stops and tells you which paths are missing. Open the correct project folder or provide the paths explicitly to continue.
+
