@@ -81,13 +81,18 @@ See [Cloud Manager beta programs](/help/implementing/cloud-manager/release-notes
 
 ### New features in Content Hub {#new-features-content-hub}
 
+<<<<<<< Updated upstream
 **AI Search**
+=======
+**AI Search in Content Hub**
+>>>>>>> Stashed changes
 
 AEM Assets Content Hub now includes AI Search, an advanced search capability that understands the meaning and intent behind user queries instead of relying only on exact keyword matches. AI Search delivers more accurate and context-aware results by recognizing relationships between words, concepts, and user intent. It supports multilingual queries, handles misspellings and typos, understands synonyms, and surfaces relevant assets even when users do not use exact metadata terms. 
 
 For example, a search for `Woman drinking coffee` can also return assets tagged with related terms such as `Lady`, `Girl`, `Latte`, or `Cappuccino`. 
 
 Administrators can enable or disable AI Search in Content Hub using the Configurations menu by selecting either AI Search or traditional keyword search.
+<<<<<<< Updated upstream
 
 **Custom Sorting options**
 
@@ -110,6 +115,8 @@ Dynamic Media with OpenAPI capabilities now support multiple captions and multip
 >[!IMPORTANT]
 >
 >These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+=======
+>>>>>>> Stashed changes
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
