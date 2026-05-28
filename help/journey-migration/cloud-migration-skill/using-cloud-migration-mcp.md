@@ -88,3 +88,4 @@ Use this to decide which patterns to prioritize in your sessions.
 ## What's Next {#whats-next}
 
 With the MCP configured, see [Using the Cloud Migration Skill](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md) for a full reference on migration patterns and session management.
+

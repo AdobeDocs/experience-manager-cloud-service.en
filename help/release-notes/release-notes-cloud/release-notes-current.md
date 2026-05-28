@@ -140,11 +140,12 @@ Adaptive Forms that submit to a Microsoft SharePoint list now support [certifica
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
 
-#### IDE AI tooling for AEM 6.5 to AEM Cloud Service Migration {#cm-ide-migration}
+#### AI-Assisted Code Migration to AEM as a Cloud Service
+ {#aem-ide-cs-migration}
 
-Accelerate your migration from AEM 6.5 to AEM as a Cloud Service (Java stack) by using IDE AI tooling to act on the recommendations of the Best Practices Analyzer Report. 
+Accelerate your migration from AEM 6.5 (or earlier) to AEM as a Cloud Service (Java-stack) by using IDE AI tooling to act on the recommendations of the Best Practices Analyzer Report. 
 
-Learn more about [IDE AI tooling for Cloud Migration](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md).
+Learn more about [IDE AI tooling for Cloud Migration](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md), and also other [Local Development with AI tools](/help/ai-in-aem/local-development-with-ai-tools.md) (Agent Skills and local MCP servers). 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3491438/?quality=12)
 
@@ -155,17 +156,6 @@ In the Author UI, Replication agents now display two consolidated queues—**per
 Learn more about [Replication Queues](/help/operations/replication.md#replication-queues).
 
 ![Replication queues showing persisted and fully published](/help/operations/assets/replication-queues.png "Replication queues")
-
-<!--
-#### IDE AI tooling for AEM Java and Dispatcher Development {#ai-dev}
-
-Java-stack teams are increasingly using AI-assisted development in tools such as Cursor, Claude Code, Visual Studio, and IntelliJ to speed up feature delivery and improve code quality. 
-
-IDE tooling can be used by coding agents to generate and debug AEM code and dispatcher configuration. As one example, the video walkthrough below demonstrates building an AEM component using Agent Skills.  
-
-Learn more about [Local Development with AI Tools](/help/ai-in-aem/local-development-with-ai-tools.md) and feel free to email [aemcs-ai-ide-tools-feedback@adobe.com](mailto:aemcs-ai-ide-tools-feedback@adobe.com) with questions or feedback.
-
--->
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Important Notices {#foundation-notices}
 
@@ -206,6 +196,16 @@ See the [deprecation article](/help/release-notes/deprecated-removed-features.md
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
 
+
+#### Snapshots for RDEs (*Public Beta* Program) {#rde-snapshot-program}
+
+In public beta (early June), Rapid Development Environments (RDEs) now support a feature [to take a snapshot](/help/implementing/developing/introduction/rapid-development-environments.md#snapshots) of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
+
+In early June, updating to the latest aio plugins will enable this feature. 
+
+*By using the RDE Snapshots Beta, you acknowledge that it is still in development and that you should not rely on the correct functioning of the technology or availability of data. While we have tested this feature extensively, there is a small possibility that your RDE could become unstable. If this occurs, a reset will restore it to a working state.*
+
+
 #### AEM Edge Functions (Beta Program) {#edge-functions}
 
 [AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md) allows you to execute JavaScript at the CDN layer, bringing data processing closer to the end user. This reduces latency and enables responsive, dynamic experiences at the edge.
@@ -240,12 +240,6 @@ If interested, please email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-
 Validate a production build with internal-only test traffic before exposing it to end users. Ship to production, route only canary traffic (using a special header), monitor behavior, then either promote to live traffic or roll back—without impacting customers.
 
 Email [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) to request access and share feedback.
-
-#### Snapshots for RDEs (Beta Program) {#rde-snapshot-program}
-
-In beta, Rapid Development Environments (RDEs) now support a feature [to take a snapshot](/help/implementing/developing/introduction/rapid-development-environments.md#snapshots) of the current state of code and content, which can be restored at a later time. This can be useful when syncing code that may need to be reverted, or when switching between development of different features. It's also possible to restore just the mutable content as a known starting point for testing.
-
-Please email [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com) if there is interest in using and providing feedback on this feature.
 
 #### AEM code issue detection and auto-fix via IDE AI agent  (Alpha Program) {#ide-ai-aemcode-issues}
 
