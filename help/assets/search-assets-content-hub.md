@@ -221,7 +221,7 @@ To enable a metadata field for sorting:
 1. Click the user profile icon and select **Configurations**.
 1. Navigate to the **Filters** tab.
 1. Locate the metadata field that you want to enable for sorting.
-1. Click the edit icon for the field.
+1. Click the edit icon available for that particular metadata field.
 1. In the Edit Filter dialog, enable the **Sorting** option.
 1. Click **Confirm** and save the configuration.
 
