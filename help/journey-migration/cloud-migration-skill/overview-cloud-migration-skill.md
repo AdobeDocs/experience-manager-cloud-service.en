@@ -11,7 +11,7 @@ The **AEM Cloud Migration** solution is an agent-based toolset that guides devel
 
 The following demo video provides a quick end-to-end walkthrough of the AEM Cloud Migration solution and is included for reference.
 
->[!VIDEO](https://publish.tv.adobe.com/bucket/7642/category/12553/video/3491438/)
+>[!VIDEO](https://video.tv.adobe.com/v/3491438?learn=on)
 
 The solution consists of two components:
 
