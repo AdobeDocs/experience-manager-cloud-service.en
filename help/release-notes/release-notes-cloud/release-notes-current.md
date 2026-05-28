@@ -108,7 +108,7 @@ With event-driven insights, teams can better understand content engagement and b
 
 **Video Smart Crops**
 
-Dynamic Media with OpenAPI capabilities now support Video Smart Crops for video assets in AEM Assets. Video Smart Crops use AI-powered analysis to automatically keep the primary subject in focus across different aspect ratios and devices, helping deliver optimized viewing experiences on web, mobile, and social channels. Once enabled and configured by administrators, organizations can generate smart cropped video outputs for approved assets and dynamically deliver the most appropriate framing during playback.
+Dynamic Media with OpenAPI capabilities now support Video Smart Crops for video assets in AEM Assets. Video Smart Crops use AI-powered analysis to automatically keep the primary subject in focus across different aspect ratios and devices, helping deliver optimized viewing experiences on web and mobile. Once enabled and configured by administrators, organizations can generate smart cropped video outputs for approved assets and dynamically deliver the most appropriate framing during playback.
 
 **Multi-caption and multi-audio track support for videos**
 
