@@ -134,9 +134,10 @@ Adaptive Forms that submit to a Microsoft SharePoint list now support [certifica
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation New Features {#foundation-new}
 
-#### IDE AI tooling for AEM 6.5 to AEM Cloud Service Migration {#cm-ide-migration}
+#### AI-Assisted Code Migration to AEM as a Cloud Service
+ {#aem-ide-cs-migration}
 
-Accelerate your migration from AEM 6.5 to AEM as a Cloud Service (Java stack) by using IDE AI tooling to act on the recommendations of the Best Practices Analyzer Report. 
+Accelerate your migration from AEM 6.5 (or earlier) to AEM as a Cloud Service (Java-stack) by using IDE AI tooling to act on the recommendations of the Best Practices Analyzer Report. 
 
 Learn more about [IDE AI tooling for Cloud Migration](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md), and also other [Local Development with AI tools](/help/ai-in-aem/local-development-with-ai-tools.md) (Agent Skills and local MCP servers). 
 
