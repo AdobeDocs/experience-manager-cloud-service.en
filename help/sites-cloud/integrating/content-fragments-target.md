@@ -15,25 +15,25 @@ role: Admin
 
 You can export [Content Fragments](/help/sites-cloud/authoring/fragments/content-fragments.md), created in Adobe Experience Manager as a Cloud Service (AEM), to Adobe Target (Target). They can then be used as offers in Target activities, to test and personalize experiences at scale.
 
-There is the option available for exporting a content fragment to Adobe Target:
+Following is the option available for exporting a content fragment to Adobe Target:
 
 * JSON: Support for headless content delivery
 
 <!-- * GraphQL query ??? -->
 
-To prepare your instance for exporting AEM Content Fragments to Adobe Target you need to: 
+To prepare your instance for exporting AEM Content Fragments to Adobe Target, you need to: 
 
 * [Integrate with Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 * [Add the Cloud Configuration](#add-the-cloud-configuration)
 * [Add the Legacy Configuration](#add-the-legacy-configuration)
 
-After that you can:
+Having done that, you can:
 
 * [Export a Content Fragment to Adobe Target](#exporting-a-content-fragment-to-adobe-target)
 * [Use your Content Fragments in Adobe Target](#using-your-content-fragments-in-adobe-target)
 * And also [Delete a Content Fragment already exported to Adobe Target](#deleting-a-content-fragment-already-exported-to-adobe-target)
 
-Content Fragments can be exported to the default workspace in Adobe Target, or to user-defined workspaces for Adobe Target.
+Content Fragments can be exported to Adobe Target's default workspace or user-defined workspaces.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Content Fragments can be exported to the default workspace in Adobe Target, or t
 
 >[!NOTE]
 >
->Adobe Target workspaces can be used to allow members of an organization (group) to create and manage offers and activities for this organization only; without giving access to other users. For example, country-specific organizations within a global concern.
+>Adobe Target workspaces can be used to allow members of an organization (group) to create and manage offers and activities for this organization only, without giving access to other users. For example, country-specific organizations within a global concern.
 
 ## Prerequisites {#prerequisites}
 
@@ -61,10 +61,10 @@ The following action is required:
 
 ## Add the Cloud Configuration {#add-the-cloud-configuration}
 
-Before exporting a fragment you need to add the **Cloud Configuration** for **Adobe Target** to the fragment, or folder. This also enables you to:
+Before exporting a fragment, you need to add the **Cloud Configuration** for **Adobe Target** to the fragment or folder. This also enables you to:
 
-* specify the format option(s) to be used for the export
-* select a Target workspace as destination
+* specify the format option(s) to be used for the export.
+* select a Target workspace as destination.
 
 The required options can be selected in **Properties** of the required folder; the specification is inherited as necessary.
 
@@ -158,7 +158,7 @@ Can this still occur?
 If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
 -->
 
-   * **Use accurate targeting:** By default this check box is selected. If selected, the cloud service configuration will wait for the context to load before loading content. See note that follows.
+   * **Use accurate targeting:** By default, this check box is selected. If selected, the cloud service configuration will wait for the context to load before loading content. See note that follows.
 
    * **Synchronize Segments from Adobe Target:** Select this option to download segments that are defined in Target to use them in AEM. Select this option when the API Type property is REST, because inline segments are not supported and you always need to use segments from Target. (The AEM term of 'segment' is equivalent to the Target 'audience'.)
 
@@ -187,7 +187,7 @@ If you do not see your cloud configuration, see note in [Configuring A4T Analyti
 
      >[!NOTE]
      >
-     >By default when you opt into the Adobe Target configuration wizard, Accurate Targeting is enabled.
+     >By defaul,t when you opt into the Adobe Target configuration wizard, Accurate Targeting is enabled.
      >
      >Accurate targeting means that the cloud service configuration waits for the context to load before loading content. As a result, in terms of performance, accurate targeting may create a few millisecond delay before loading content.
      >
@@ -203,7 +203,7 @@ If you do not see your cloud configuration, see note in [Configuring A4T Analyti
 
 After you configure the Target cloud configuration, add a Target framework. The framework identifies the default parameters that are sent to Adobe Target from the available [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) components. Target uses the parameters to determine the segments that apply to the current context.
 
-You can create multiple frameworks for a single Target configuration. Multiple frameworks are useful when you need to send a different set of parameters to Target for different sections of your website. Create a framework for each set of parameters that you need to send. Associate each section of your website with the appropriate framework. Note t*hat a web page can use only one framework at a time.
+You can create multiple frameworks for a single Target configuration. Multiple frameworks are useful when you need to send a different set of parameters to Target for different sections of your website. Create a framework for each set of parameters that you need to send. Associate each section of your website with the appropriate framework. Note that a web page can use only one framework at a time.
 
 1. On your Target configuration page, click the **+** (plus sign) next to Available Configurations.
 
@@ -286,7 +286,7 @@ When you associate a page with the framework, the child pages inherit the associ
 >
 >For media assets, such as images, only a reference is exported to Target. The asset itself remains stored in AEM Assets and is delivered from the AEM publish instance.
 >
->Due to this the Content Fragment, with all related assets, must be published before exporting to Target.
+>Due to this, the Content Fragment, with all related assets, must be published before exporting to Target.
 
 To export a Content Fragment from AEM to Target (after specifying the Cloud Configuration):
 
@@ -365,7 +365,7 @@ To avoid such situations:
     * The offer will likely still render, as the Content Fragment was pushed to Target
     * Any references in the Content Fragment may not work correctly if referenced assets were deleted in AEM as well.
 
-  * Of course, any further modifications to the Content Fragment are impossible as the Content Fragment does not exist anymore in AEM.
+  * Of course, any further modifications to the Content Fragment are impossible, as the Content Fragment does not exist anymore in AEM.
 
 ## Further Resources {#further-resources}
 
