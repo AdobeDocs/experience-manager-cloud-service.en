@@ -780,7 +780,7 @@ Most commands support the global `--json` flag which suppresses console output a
 ### Status {#status}
 
 <details>
-  <summary>Expand to see Status examples</summary>
+<summary>Expand to see Status examples</summary>
 
 #### A clean RDE {#clean-rde}
 
@@ -916,7 +916,7 @@ Most commands support the global `--json` flag which suppresses console output a
 ### Delete {#delete}
 
 <details>
-  <summary>Expand to see Delete examples</summary>
+<summary>Expand to see Delete examples</summary>
 
 ```$ aio aem rde delete com.adobe.granite.hotdev.demo-1.0.0.SNAPSHOT --json```
 
@@ -998,7 +998,7 @@ Most commands support the global `--json` flag which suppresses console output a
 ### History {#history}
 
 <details>
-  <summary>Expand to see History examples</summary>
+<summary>Expand to see History examples</summary>
 
 ```$ aio aem rde history --json```
 
@@ -1095,7 +1095,7 @@ Most commands support the global `--json` flag which suppresses console output a
 ### Reset {#reset}
 
 <details>
-  <summary>Expand to see Reset examples</summary>
+<summary>Expand to see Reset examples</summary>
 
 #### Fire and Forget, No-Wait {#fire-and-forget-no-wait}
 
@@ -1138,7 +1138,7 @@ Most commands support the global `--json` flag which suppresses console output a
 ### Restart {#restart}
 
 <details>
-  <summary>Expand to see restart examples</summary>
+<summary>Expand to see restart examples</summary>
 
 ```$ aio aem rde restart --json```
 
@@ -1239,7 +1239,7 @@ To use the RDE plugin, it requires you to be a member of the Cloud Manager **Dev
 
 Alternatively, you can confirm that you have this developer role if you log in to the developer console by running the following command:
 
-   `aio cloudmanager:environment:open-developer-console`
+`aio cloudmanager:environment:open-developer-console`
 
 >[!TIP]
 >
