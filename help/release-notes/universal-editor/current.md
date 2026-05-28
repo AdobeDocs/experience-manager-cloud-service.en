@@ -27,4 +27,4 @@ These are the release notes for the 28 May 2026 release of the Universal Editor.
 ## Other Improvements {#other-improvements}
 
 * The default background color of the edit canvas is now white (#FFFFFF) when the app sets no background color of its own.
-* An issue was fixed where copy and pasting accross pages was not working.
+* An issue was fixed where copy and pasting across pages was not working.
