@@ -25,7 +25,7 @@ The following release (2021.5.0) will be on May 27, 2021.
 
 ### What is New {#what-is-new-foundation}
 
-* [Publish Content Tree workflow](/help/operations/replication.md#publish-content-tree-workflow) - A new workflow model and step provides increased performance when publishing deep hierarchies of content.
+* [Publish Content Tree workflow](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow) - A new workflow model and step provides increased performance when publishing deep hierarchies of content.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
