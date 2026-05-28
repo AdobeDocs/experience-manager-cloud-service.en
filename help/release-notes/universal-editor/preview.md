@@ -23,3 +23,4 @@ These **preview** release notes are provided as a convenience so you know what c
 ## Upcoming Changes {#upcoming-improvements}
 
 * An issue was fixed where changing selected text from *Heading* to *Code* in the Rich Text Editor could revert the formatting to *Paragraph* instead of preserving the selected code style.
+ 
