@@ -185,7 +185,7 @@ To view and edit collection metadata:
 
 ## Share links for collections {#share-collection-links}
 
-[!DNL Assets view] enables you to generate a link and share collections and assets within collections with external stakeholders, who do not have access to the [!DNL Assets view] application. You can define an expiration date for the link and then share it with others using your preferred communication method like email or messaging services. Recipients of the link can preview assets and download them.
+[!DNL Assets view] enables you to generate a link and share collections and assets within collections with external stakeholders who do not have access to the [!DNL Assets view] application. You can define an expiration date for the link and then share it with others using your preferred communication method like email or messaging services. Recipients of the link can preview assets and download them.
 
 ![Share link for assets](assets/share-link-collections.png)
 
