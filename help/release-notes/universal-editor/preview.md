@@ -20,6 +20,10 @@ These **preview** release notes are provided as a convenience so you know what c
 >
 >The content of the actual release as well as the release date are subject to change.
 
+## Upcoming Features {#upcoming-features}
+
+* The Universal Editor now supports global filter configuration for Rich Text Editor and Asset Selector components.
+
 ## Upcoming Changes {#upcoming-improvements}
 
 * An issue was fixed where changing selected text from *Heading* to *Code* in the Rich Text Editor could revert the formatting to *Paragraph* instead of preserving the selected code style.
