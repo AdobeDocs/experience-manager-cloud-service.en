@@ -416,6 +416,10 @@ user-guide-title: AEM as a Cloud Service
         + {hide-from-toc} [Overview](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
         + {hide-from-toc} [Important Considerations](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
         + {hide-from-toc} [Using User Mapping Tool](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
+  + AI-Assisted Code Migration {#cloud-migration-skill}
+    + [Overview](/help/journey-migration/cloud-migration-skill/overview-cloud-migration-skill.md)
+    + [Using the Cloud Migration Skill](/help/journey-migration/cloud-migration-skill/using-cloud-migration-skill.md)
+    + [Using the Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md)
   + Code Refactoring Tools {#refactoring-tools}
     + [Getting Started with Refactoring Tools](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
     + [Refactoring Tools Overview](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
@@ -522,6 +526,7 @@ user-guide-title: AEM as a Cloud Service
       + [Delete Considerations](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
       + [Analyzing Structure](/help/sites-cloud/administering/content-fragments/analysis.md)
       + [Previewing Fragments](/help/sites-cloud/administering/content-fragments/preview.md)
+      + [Visual Content Fragments](/help/sites-cloud/administering/content-fragments/visual-content-fragments.md)
       + {hide-from-toc} [Reuse Content Fragments using MSM](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md)
       + [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
       + [Assets in the Content Fragments Console](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
@@ -1133,6 +1138,7 @@ user-guide-title: AEM as a Cloud Service
         + [Overview](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)
         + [Content Update Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
         + [Content Create Job](/help/ai-in-aem/agents/brand-experience/experience-production/content-create.md)
+        + [Figma to Visual Content Fragments Job](/help/ai-in-aem/agents/brand-experience/experience-production/figma-to-visual-content-fragments.md)
         + [Communication Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
         + [Form Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
       + Experience Modernization Agent {#modernization}
@@ -1497,6 +1503,7 @@ user-guide-title: AEM as a Cloud Service
     + [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md)
     + [Disallow the Serialization of ResourceResolvers via Sling Model Exporter](/help/implementing/developing/disallow-resourceresolver-serialization.md)
     + [AEM Edge Functions](/help/implementing/developing/introduction/edge-functions.md)
+    + [AEM Edge Functions Caching](/help/implementing/developing/introduction/edge-functions-caching.md)
     + Full Stack AEM Development {#full-stack}
       + [Getting Started Developing AEM Sites - WKND Tutorial](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
       + [Structure of the AEM UI](/help/implementing/developing/introduction/ui-structure.md)
@@ -1609,6 +1616,8 @@ user-guide-title: AEM as a Cloud Service
     + [Customizing and Extending Content Fragments](/help/implementing/developing/extending/content-fragments-customizing.md)
     + [Content Fragments Configuring Components for Rendering](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
     + [Customizing the Content Fragment Console and Editor](/help/implementing/developing/extending/content-fragments-console-and-editor.md)
+    + [Visual Content Fragments - Templates](/help/implementing/developing/extending/content-fragments-visualization-templates.md)
+    + [Visual Content Fragments - Deliver with the Publish URL](/help/implementing/developing/extending/content-fragments-visualization-publish-url.md)
     + Manage Search Forms {#manage-search-forms}
       + [Configuring Search Forms](/help/implementing/developing/extending/search-forms.md)
       + [Configure search filters for Inbox](/help/implementing/developing/extending/configure-inbox-search-rail.md)
@@ -1659,6 +1668,7 @@ user-guide-title: AEM as a Cloud Service
   + [Actions Center](/help/operations/actions-center.md)
   + [Content Search and indexing](/help/operations/indexing.md)
   + [Content Replication Service](/help/operations/replication.md)
+  + [Tree Replication Workflows](/help/operations/tree-replication-workflows.md)
   + [Additional Publish Regions](/help/operations/additional-publish-regions.md)
   + [Infrastructure and Service Monitoring in AEM as a Cloud Service](/help/operations/monitoring.md)
   + [Maintenance Tasks](/help/operations/maintenance.md)

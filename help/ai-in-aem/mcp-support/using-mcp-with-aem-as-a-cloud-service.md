@@ -41,10 +41,11 @@ AEM exposes MCP servers as HTTP endpoints. The endpoints listed below are relati
 
 |MCP Server|Endpoint|Description|
 |---|---|---|
-|**Content**|`/content`|Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing and assets search.<br>If you are interested, you must sign up for the [agents trial or have a paid license](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) in order to access the Experience Governance MCP.|
-|**Content (read-only)**|`/content-readonly`|Read-only content operations (get, list/search) for pages and content fragments, plus assets search.<br>If you are interested, you must sign up for the [agents trial or have a paid license](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) in order to access the Experience Governance MCP.|
+|**Content**|`/content`|Content operations including create, read, update, and delete (CRUD) for pages and content fragments, plus asset importing and assets search.<br>Send an email to `aemcs-mcp-feedback@adobe.com` to have the **asset search** enabled for you. Include the organization name along with the use case in the email.|
+|**Content (read-only)**|`/content-readonly`|Read-only content operations (get, list/search) for pages and content fragments, plus assets search.<br>Send an email to `aemcs-mcp-feedback@adobe.com` to have the **asset search** enabled for you. Include the organization name along with the use case in the email.|
 |**Cloud Manager**|`/cloudmanager`|Manage Cloud Manager entities including programs, environments, repositories and pipelines, which can also be triggered.|
 |**Experience Governance**|`/experience-governance`|Evaluate content (text, images, pages) against brand governance rules, and list brand configurations and checks.<br/>If you are interested, you must sign up for the [agents trial or have a paid license](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial) in order to access the Experience Governance MCP.|
+|**Cloud Migration**|`/cloud-migration`|Fetch Best Practices Analyzer (BPA) findings from Cloud Acceleration Manager (CAM) by migration pattern or severity level, enabling AI agents to drive code migration from AEM 6.x to AEM as a Cloud Service. See [Using the Cloud Migration MCP](/help/journey-migration/cloud-migration-skill/using-cloud-migration-mcp.md).|
 
 The specific tools exposed by each MCP server may evolve over time. In practice, you can ask your MCP-enabled application to discover tools via a prompt such as:
 
@@ -171,7 +172,7 @@ Some representative scenarios include:
 
    >[!NOTE]
    >
-   >Send an email to `aemagentsteam@adobe.com` to have the asset search enabled for you. Include the organization name along with the use case in the email.
+   >Send an email to `aemcs-mcp-feedback@adobe.com` to have the asset search enabled for you. Include the organization name along with the use case in the email.
 
 ### Example Workflows {#example-workflows}
 
