@@ -1267,3 +1267,8 @@ Additional resources are available:
 * [Handlebars built-in helpers](https://handlebarsjs.com/guide/builtin-helpers.html)
 * [AEM Content Fragments documentation](/help/sites-cloud/administering/content-fragments/overview.md)
 
+<!-- CQDOC-23650 - add link when docs are stable; not experimental -->
+
+<!--
+* [Content Fragment Visualization Templates APIs (experimental)](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/cvt/#)
+-->

@@ -327,3 +327,16 @@ Use the following as a decision guide to help you choose the appropriate techniq
 | Need fastest prototype, same-origin, and CSS conflicts are acceptable? | Inline Element |
 | Embedding in Edge Delivery Services? | Embed block (iframe under the hood) |
 | Embedding in AEM Sites pages? | Core Component (Shadow DOM, built-in) |
+
+
+## Additional resources {#additional-resources}
+
+Additional resources are available:
+
+* [AEM Content Fragments documentation](/help/sites-cloud/administering/content-fragments/overview.md)
+
+<!-- CQDOC-23650 - add link when docs are stable; not experimental -->
+
+<!--
+* [Content Fragment Visualization Templates APIs (experimental)](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/cvt/#)
+-->
