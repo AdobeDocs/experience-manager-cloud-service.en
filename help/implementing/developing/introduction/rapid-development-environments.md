@@ -18,6 +18,7 @@ Once the changes have been tested in an RDE, they can be deployed to a regular C
 > Rapid Development environments should be limited to development, error analysis, and functional tests, and are not designed to process high workloads, nor large amounts of content.
 
 >[!NOTE]
+>
 > Get in touch with the RDE developers on Adobe's [Discord channel](https://discord.com/channels/1131492224371277874/1245304281184079872). Feel free to ask any questions or give feedback regarding RDE topics.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
@@ -79,7 +80,7 @@ After you have added an RDE for your program using Cloud Manager, you can intera
 
 >[!IMPORTANT]
 >
->Make sure you have version 20 of [Node and NPM installed](https://nodejs.org/en/download/) for Adobe I/O (AIO) CLI and related plugins to work properly.
+> Make sure you have version 20 of [Node and NPM installed](https://nodejs.org/en/download/) for Adobe I/O (AIO) CLI and related plugins to work properly.
 
 
 1. Install the AIO CLI tools according to this [procedure](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/tools/cli-install).
@@ -109,8 +110,8 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    aio login --no-open
    ```
 
-   >[!NOTE]
-   > The login command with the `--no-open` option outputs a URL in the terminal instead of opening your default browser. You can copy and open it with an **incognito** window of your browser. This ability ensures that your current session in the main browser window remains unaffected, letting you log in with the specific account and organization required for your task.
+>[!NOTE]
+> The login command with the `--no-open` option outputs a URL in the terminal instead of opening your default browser. You can copy and open it with an **incognito** window of your browser. This ability ensures that your current session in the main browser window remains unaffected, letting you log in with the specific account and organization required for your task.
 
    The first command creates a new login context configuration, called `mycontext`, in your local `.aio` configuration file (the file is created if needed. The second command sets the context `mycontext` to be the "current" context; that is, the default.
 
@@ -621,10 +622,10 @@ The following example illustrates how to tail the author tier, with one package 
 >[!TIP]
 >
 >If you see the error `RDECLI:UNEXPECTED_API_ERROR` when playing with the logs commands for the author service, please reset your environment and try again. This error is thrown if your latest reset operation was before the end of May 2024.
->
->```
->aio aem:rde:reset
->```
+
+```
+aio aem:rde:reset
+```
 
 See `aio aem:rde:logs --help` for the full set of command line options.
 
@@ -1240,13 +1241,13 @@ Alternatively, you can confirm that you have this developer role if you log in t
 
    `aio cloudmanager:environment:open-developer-console`
 
-   >[!TIP]
-   >
-   >If you see the `Warning: cloudmanager:* is not a aio command.` error, you must install the [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) by running the following command:
-   >
-   >```
-   >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
-   >```
+>[!TIP]
+>
+>If you see the `Warning: cloudmanager:* is not a aio command.` error, you must install the [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) by running the following command:
+
+```
+aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+```
 
 Verify that the login was completed successfully by running the following:
 
