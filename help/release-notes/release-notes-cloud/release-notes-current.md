@@ -195,6 +195,10 @@ See the [deprecation article](/help/release-notes/deprecated-removed-features.md
 
 ### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Early Adopter Features {#foundation-early-adopter}
 
+#### Manage Quiet Hours and Update Free Periods with the AEM AI Assistant (Limited Availability) {#quiet-hours-ai}
+
+You can now view, create, and edit Quiet Hours and Update Free Periods directly through the AEM AI Assistant.
+The key benefit is fewer scheduling errors. As you make a request, the assistant guides you through what is possible and flags the limits that apply, such as the three-period cap, the mandatory one-week gap between periods, and the planned maintenance exclusion windows you cannot schedule over. So instead of discovering a constraint after a failed configuration, Business Owners and Deployment Managers are steered to a valid schedule in the same conversation. This protects critical business windows from automatic maintenance updates while reducing back-and-forth and misconfiguration.
 
 #### Snapshots for RDEs (*Public Beta* Program) {#rde-snapshot-program}
 
