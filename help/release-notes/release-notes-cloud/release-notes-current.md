@@ -28,11 +28,15 @@ The release date of [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] cu
 
 You can find the latest maintenance release notes [here](/help/release-notes/maintenance/latest.md).
 
+<!-- 
+
 ## Release Video {#release-video}
 
 Have a look at the May 2026 Release Overview video for a summary of the features added in the 2026.5.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3491490/?quality=12)
+
+-->
 
 ## AEM Beta Programs {#aem-beta-programs}
 
