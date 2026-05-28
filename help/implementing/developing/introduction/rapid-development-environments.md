@@ -272,7 +272,7 @@ However, with careful coordination, it is possible for more than one developer t
 
   `aio aem rde <command> --organizationId=<value> --programId=<value> --environmentId=<value>`
 
-  Requires an ```aio login``` to be performed.
+  Requires an `aio login` to be performed.
 
 ### Deploy to RDE {#deploy-to-rde}
 
@@ -657,7 +657,7 @@ You can reset the RDE and return it to a default state by running the following:
 
 `aio aem:rde:reset`
 
-This process usually takes a few minutes and reports ```Environment reset.``` when successful or ```Failed to reset the environment.``` on errors. For a structured output, see the chapter about ```--json``` output below.
+This process usually takes a few minutes and reports `Environment reset.` when successful or `Failed to reset the environment.` on errors. For a structured output, see the chapter about `--json` output below.
 
 Use the [status command](#check-the-status-of-the-rde) to check when the environment is ready again.
 
@@ -775,7 +775,7 @@ To cancel a pending deletion and retain a snapshot, run:
 
 ## Commands That Support JSON Output {#commands-that-support-json-output}
 
-Most commands support the global ```--json``` flag which suppresses console output and returns valid json to be processed in scripts. Below are some supported commands, with examples of the json output.
+Most commands support the global `--json` flag which suppresses console output and returns valid json to be processed in scripts. Below are some supported commands, with examples of the json output.
 
 ### Status {#status}
 
