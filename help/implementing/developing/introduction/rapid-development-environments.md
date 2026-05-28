@@ -111,6 +111,7 @@ After you have added an RDE for your program using Cloud Manager, you can intera
    ```
 
 >[!NOTE]
+>
 > The login command with the `--no-open` option outputs a URL in the terminal instead of opening your default browser. You can copy and open it with an **incognito** window of your browser. This ability ensures that your current session in the main browser window remains unaffected, letting you log in with the specific account and organization required for your task.
 
    The first command creates a new login context configuration, called `mycontext`, in your local `.aio` configuration file (the file is created if needed. The second command sets the context `mycontext` to be the "current" context; that is, the default.
@@ -205,10 +206,9 @@ Adobe recommends the following workflow for developing a new feature:
 
 * Reset the RDE if it has been used by another feature and you want to [reset it to a default state](#reset-the-rde). <!-- Alexandru: hiding for now, do not delete This can be done by way of [Cloud Manager](#reset-the-rde-in-cloud-manager) or by way of the [command line](#reset-the-rde-using-the-command-line). -->Reset takes a few minutes and all existing content and code is deleted. You can use the RDE status command to confirm the RDE is ready. The RDE comes back up with the most recent AEM release version.
 
-  >[!IMPORTANT]
-  >
-  >If your staging and production environments are not receiving automatic AEM release updates and are behind the latest version, the RDE may run a different version of AEM. As a result, the code behavior in the RDE might not match how it functions in staging and production. In that case, it is important to perform thorough testing of the code on staging before deploying it to production.
-
+>[!IMPORTANT]
+>
+>If your staging and production environments are not receiving automatic AEM release updates and are behind the latest version, the RDE may run a different version of AEM. As a result, the code behavior in the RDE might not match how it functions in staging and production. In that case, it is important to perform thorough testing of the code on staging before deploying it to production.
 
 * Using the RDE command-line interface, sync local code to the RDE. You can install various types of files, including the following:
 
