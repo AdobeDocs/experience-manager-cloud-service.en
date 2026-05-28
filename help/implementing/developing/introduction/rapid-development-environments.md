@@ -161,11 +161,11 @@ Once the programs are retrieved, the user can select from the list and also type
 
 To see the current environment context, run the following:
 
-```aio aem rde setup --show```
+`aio aem rde setup --show`
 
 The command responds with a result similar to the following:
 
-```Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)```
+`Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)`
 
 ### Manual Setup Procedure in a Non-Interactive Environment {#manual-setup-procedure-in-a-non-interactive-environment}
 
@@ -784,7 +784,7 @@ Most commands support the global `--json` flag which suppresses console output a
 
 #### A clean RDE {#clean-rde}
 
-```$ aio aem rde status --json```
+`$ aio aem rde status --json`
 
 ```json
 {
@@ -804,7 +804,7 @@ Most commands support the global `--json` flag which suppresses console output a
 
 #### An RDE with Some Installed Bundles {#an-rde-with-some-installed-bundles}
 
-```$ aio aem rde status --json```
+`$ aio aem rde status --json`
 
 ```json
 {
@@ -877,7 +877,7 @@ Most commands support the global `--json` flag which suppresses console output a
 <details>
   <summary>Expand to see Install examples</summary>
 
-```$ aio aem rde install ~/Downloads/hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip --json```
+`$ aio aem rde install ~/Downloads/hotdev.demo.ui.apps.all-1.0.0-SNAPSHOT.zip --json`
 
 ```json
 {
@@ -918,7 +918,7 @@ Most commands support the global `--json` flag which suppresses console output a
 <details>
 <summary>Expand to see Delete examples</summary>
 
-```$ aio aem rde delete com.adobe.granite.hotdev.demo-1.0.0.SNAPSHOT --json```
+`$ aio aem rde delete com.adobe.granite.hotdev.demo-1.0.0.SNAPSHOT --json`
 
 ```json
 {
@@ -1000,7 +1000,7 @@ Most commands support the global `--json` flag which suppresses console output a
 <details>
 <summary>Expand to see History examples</summary>
 
-```$ aio aem rde history --json```
+`$ aio aem rde history --json`
 
 ```json
 {
@@ -1099,7 +1099,7 @@ Most commands support the global `--json` flag which suppresses console output a
 
 #### Fire and Forget, No-Wait {#fire-and-forget-no-wait}
 
-```$ aio aem rde reset --no-wait --json```
+`$ aio aem rde reset --no-wait --json`
 
 ```json
 {
@@ -1111,7 +1111,7 @@ Most commands support the global `--json` flag which suppresses console output a
 
 #### Wait for Completion, Reset Successfully {#wait-for-completion-reset-successfully}
 
-```$ aio aem rde reset --json```
+`$ aio aem rde reset --json`
 
 ```json
 {
@@ -1123,7 +1123,7 @@ Most commands support the global `--json` flag which suppresses console output a
   
 #### Wait for Completion, Reset Failed {#wait-for-completion-reset-failed}
 
-```$ aio aem rde reset --json```
+`$ aio aem rde reset --json`
 
 ```json
 {
@@ -1140,7 +1140,7 @@ Most commands support the global `--json` flag which suppresses console output a
 <details>
 <summary>Expand to see restart examples</summary>
 
-```$ aio aem rde restart --json```
+`$ aio aem rde restart --json`
 
 ```json
 {
