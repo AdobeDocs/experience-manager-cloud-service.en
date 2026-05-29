@@ -174,7 +174,7 @@ intuitive and improving the mobile form-filling experience.
 
 ### Improved Tree Replication Performance (and deprecation of Publish Content Tree Workflow) {#tree-replication-performance}
 
-[Tree Activation Workflow Step](/help/operations/replication.md#tree-activation) is a new workflow model step recommended for replicating deep content hierarchies. Of note, it allows independent replications (e.g., through quick publish or manage publication) to proceed in parallel with the in-progress tree replication workflow. This is particularly useful if you need to publish some time-sensitive content while a bulk replication is still in-progress. Tree Replication Step replaces Publish Content Tree Workflow and its related Workflow Step, which are now deprecated. 
+[Tree Activation Workflow Step](/help/operations/tree-replication-workflows.md#tree-activation) is a new workflow model step recommended for replicating deep content hierarchies. Of note, it allows independent replications (e.g., through quick publish or manage publication) to proceed in parallel with the in-progress tree replication workflow. This is particularly useful if you need to publish some time-sensitive content while a bulk replication is still in-progress. Tree Replication Step replaces Publish Content Tree Workflow and its related Workflow Step, which are now deprecated. 
 
 ### OpenAPI-based APIs - Early Adopter Program {#open-apis-earlyadopter}
 
