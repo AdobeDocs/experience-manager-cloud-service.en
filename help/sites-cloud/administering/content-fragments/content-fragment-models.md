@@ -450,7 +450,7 @@ In addition to standard properties you can define:
 >
 >If you would like to participate, create a [support ticket](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 
-The **Composite** data type enables Content Fragments to store hierarchical, structured data by allowing fields to contain nested sub-fields. The sub-fields are themselves Content Fragments, dependent on specified Content Fragment Models and fully embedded in the parent fragment. 
+The **Composite** data type enables Content Fragments to store hierarchical, structured data by allowing fields to contain nested sub-fields. The sub-fields are themselves Content Fragments, dependent on specified Content Fragment Models and fully embedded in the *parent* fragment. 
 
 The Composite data type provides a way to model complex data structures within a single fragment, similar to nested objects in JSON or embedded documents in NoSQL databases.
 
@@ -466,7 +466,7 @@ The Composite data type offers several benefits when modeling data:
 
 * Simplified authoring with native support for repeatable field groups. 
 
-  Reusable field groups, such as addresses, can now be edited and duplicated directly within the primary authoring context, such as a contract, without requiring authors to navigate between main and referenced content contexts.
+  Reusable field groups, such as addresses, can be edited and duplicated directly within the primary authoring context, such as a contract, without requiring authors to navigate between main and referenced content contexts.
 
 * Improved content management and delivery performance. 
 
@@ -480,7 +480,7 @@ A Composite field embeds a model-defined group of fields directly inside the par
 
   Composite items are edited in the same editor view as the parent fragment, in a dedicated panel, with no tab switching.
 
-* Step-and-repeat as a multifield
+* Step-and-repeat as a multi-field
 
   A multi-value composite supports add, remove, and reorder of items, each conforming to one of the configured models.
 
@@ -494,7 +494,7 @@ A Composite field embeds a model-defined group of fields directly inside the par
 
 * Native in delivery
 
-  GraphQL and OpenAI (Freyja) return composite content as a nested object on the parent payload. No reference to resolve at delivery time, no separate JCR node to fetch.
+  GraphQL and OpenAI return composite content as a nested object on the parent payload. There is no reference to resolve at delivery time, no separate JCR node to fetch.
 
 * Cleaner reference semantics
 
@@ -515,7 +515,7 @@ When to use Composite (and when not):
 
   * Your content is genuinely reusable across fragments. Fragment references remain the right answer for shared content; composite is for inlined content.
   * You rely on the (original) Touch UI Editor only. Composite is supported in the new Content Fragment Editor, but the original Touch UI Editor will block editing of composite fields.
-  * The customer depends on capabilities that are still under construction (MSM Live Copies, Launches, Core Components / .model.json, Universal Editor partial). See Current limitations.
+  * You depend on capabilities that are still under construction (MSM Live Copies, Launches, Core Components / .model.json, Universal Editor partial). See limitations.
 
 #### Use Composite {#use-composite}
 
@@ -525,12 +525,14 @@ When to use Composite (and when not):
   
   When configuring it:
 
-  * Allowed models. Pick one or more Content Fragment Models whose fields will appear as composite items. Multi-model is supported (the author chooses which model when adding an item).
-  * Single value vs. multi-value. Single-value composite holds at most one item; multi-value supports add/remove/reorder with min/max constraints.
-  * Min/max. For multi-value composites, set min/max bounds.
-  * Variations. Composite fields participate in variations (2026.06).
-
-  Composite support in the new (Headless) CF Model Editor is on the roadmap but not yet implemented (SITES-43786: Support for the composite data type in the new model editor). For now, model authoring happens in the classic Touch UI Model Editor.
+  * Allowed model 
+    Pick one or more Content Fragment Models whose fields will appear as composite items. Multi-model is supported (the author chooses which model when adding an item).
+  * Single value vs. multi-value 
+    Single-value composite holds at most one item; multi-value supports add/remove/reorder with min/max constraints.
+  * Min/max
+    For multi-value composites, set min/max bounds.
+  * Variations
+    Composite fields participate in variations.
 
 * From the new Content Fragment Editor
 
