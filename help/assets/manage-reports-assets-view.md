@@ -36,8 +36,8 @@ The AEM Assets view environment offers comprehensive reporting capabilities thro
 
 **To create a report:** 
 
-1. Navigate to **Reports** and click **Create report** (from the top right). The **create report** dialog box displays the below fields: 
-![create-report](/help/assets/assets/executed-reports1.svg)
+1. Navigate to **Reports** and click **Create report** (from the top right). The **create report** dialog box displays.
+
 
    **In Configuration tab:** 
 
@@ -197,8 +197,7 @@ To schedule a report, follow the steps below:
    1. **Title:** Add a title to the report. 
    1. **Description**: Add an optional description to the report. 
    1. **Select folder path:** Select a folder path to generate a report for assets that will be uploaded to or downloaded from that specific folder in the future. 
-   1. Toggle **Schedule report:** Toggle to schedule the report for a later time or for its repeated occurrence.
-   ![schedule report](/help/assets/assets/schedule-reports1.svg) 
+   1. Toggle **Schedule report:** Toggle to schedule the report for a later time or for its repeated occurrence. 
 
    1. **Choose frequency:** Specify the interval for generating the report (for example, daily, weekly, monthly, yearly, or once) and set the date and time to run the report along with the end date for recurrence. For a one-time report, select the date range for the report on the selected activity type in the AEM environment. For example, if you need a report on downloaded assets from the 10th to the 29th (future dates) of a specific month, select these dates in the **Select date interval** field.  
 
@@ -237,10 +236,10 @@ Assets view enables you to view real-time data for your Assets view environment 
 Click **[!UICONTROL Insights]** available in the left navigation pane to view the following automatically generated charts:
 
 * **Downloads**: The number of assets downloaded from the Assets view environment in the last 30 days or 12 months represented using a line graph.
-![insights-downloads](/help/assets/assets/insights-downloads2341.svg)
+
 
 * **Uploads**: The number of assets uploaded to the Assets view environment in the last 30 days or 12 months represented using a line graph.
-![insights-uploads](/help/assets/assets/insights-uplods2.svg)
+
 
 <!--
 * **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.
@@ -253,12 +252,11 @@ Click **[!UICONTROL Insights]** available in the left navigation pane to view th
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **Top Searches**: View top searched terms along with the number of times those terms are searched within your Assets view environment in the last 30 days or 12 months represented in a tabular format.
-![insights-uploads](/help/assets/assets/insights-top-search.svg)
+
   <!--
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
 * **Asset Count by size:** Segments the total asset count in your Assets View environment into different size ranges, highlighting the count and percentage of assets in each size range, represented by a donut chart.
-![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
+
 * **Asset Count by Asset Type:** Segments the total asset count in your Assets View environment, highlighting the count and percentage of assets based on their file types, represented by a donut chart.
-![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)

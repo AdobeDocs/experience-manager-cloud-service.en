@@ -21,6 +21,10 @@ The update free periods and quiet hours features are configured on a "per progra
 
 Additionally, for information on scheduled AEM as a Cloud Service automatic maintenance periods, please refer to the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) page.
 
+## Manage with the AEM AI Assistant manage-ai-assistant (Limited Availability) {#manage-ai-assistant}
+
+In addition to the Cloud Manager interface, you can manage quiet hours and update free periods through the AEM AI Assistant. The assistant can list your current quiet hours and update free periods, create a new update free period or quiet hours interval, and edit or remove existing ones, all from a natural language request. Because the assistant guides you through the available options and the rules that apply as you go, it helps you avoid invalid configurations before they happen. It surfaces the relevant limits in the conversation, including the maximum of three update free periods within a floating 365-day window, the mandatory one-week interval between periods, the 8-hour limit on quiet hours, and the restriction on scheduling during planned maintenance exclusion periods. As with the manual configuration, these actions apply per program and are available only to users with the Business Owner or Deployment Manager role.
+
 ## Quiet hours {#quiet-hours}
 
 By using the quiet hours feature you can define a time window during the day without any automatic updates. All maintenance updates will shift to occur outside of the configured time window. If, for example, an update is scheduled during your specified quiet hours, it will automatically start after the quiet hour interval ends. The configured time interval cannot exceed 8 hours so that updates can still occur daily.

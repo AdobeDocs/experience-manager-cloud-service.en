@@ -10,13 +10,17 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release 26125 {#release-26125}
+## Release 26309 {#release-26309}
 
-Summarized below are the continuous improvements for maintenance release 26125, which was publicly released on May 20, 2026. The previous maintenance release was release 25892.
+Summarized below are the continuous improvements for maintenance release 26309, which was publicly released on May 26, 2026. The previous maintenance release was release 25892.
 
 The 2026.5.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-26125}
+>[!NOTE]
+>
+>Release 26125 has been made private. 
+
+### Enhancements {#enhancements-26309}
 
 * ASSETS-56957: Added multi-audio track and multi-caption upload support for videos in Dynamic Media with OpenAPI.
 * ASSETS-58563: Added Adobe Commerce integration to AEM Assets.
@@ -28,7 +32,7 @@ The 2026.5.0 feature activation will provide the full feature set for this maint
 * SITES-42835: Experimental: AEM Forms pages created outside the Content API are now accessible via the AEM Sites Content API without requiring migration or schema changes.
 * SITES-44265: Added a stable replicated page identifier to the Content API that remains valid after page moves, preventing stale-reference 404 errors.
 
-### Fixed Issues {#fixed-issues-26125}
+### Fixed Issues {#fixed-issues-26309}
 
 * ASSETS-36208: Fixed image profiles not appearing in folder properties when Dynamic Media is disabled.
 * ASSETS-63240: Fixed bulk multi-select Relate operations in Append Mode leaving users on a blank page instead of returning to the Assets console.
@@ -42,15 +46,15 @@ The 2026.5.0 feature activation will provide the full feature set for this maint
 * CQ-4363355: Fixed translation requests in the GenAI Translation Connector being routed to an incorrect regional endpoint due to a hardcoded static URL.
 * SITES-44186: Fixed meta tag injection on Author breaking Page Editor event handling for some customers.
 
-### Known Issues {#known-issues-26125}
+### Known Issues {#known-issues-26309}
 
 None.
 
-### Deprecated Features and APIs {#deprecated-26125}
+### Deprecated Features and APIs {#deprecated-26309}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-26125}
+### Security Fixes {#security-26309}
 
 AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 19 vulnerabilities, reinforcing our commitment to robust system protection.
 

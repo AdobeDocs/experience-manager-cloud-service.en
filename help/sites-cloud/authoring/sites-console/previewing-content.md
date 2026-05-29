@@ -49,7 +49,7 @@ https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.htm
 
 See [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) for more information on how retrieve the URLs for your environments.
 
-Content may also be published to preview by using a [publish content tree workflow](/help/operations/replication.md#publish-content-tree-workflow) with the `agentId` parameter set to `preview` or by using the [replication API](/help/operations/replication.md#replication-api) with an `AgentFilter` configured for preview.
+Content may also be published to preview by using a [publish content tree workflow](/help/operations/tree-replication-workflows.md#publish-content-tree-workflow) with the `agentId` parameter set to `preview` or by using the [replication API](/help/operations/replication.md#replication-api) with an `AgentFilter` configured for preview.
 
 ## Unpublishing Content from Preview {#unpublishing-content-from-preview}
 
