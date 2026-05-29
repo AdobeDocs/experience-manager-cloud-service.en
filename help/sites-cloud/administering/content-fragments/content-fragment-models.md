@@ -327,9 +327,8 @@ Content Fragments can form nested content, using any of the following data types
   * References other fragments, dependent on the specific models specified.
   * The referenced fragments are fully embedded in, and integral to, the  referencing fragment. They have a true parent-child relationship.
     * The Composite Data Type allows you to define a group of fields as an inline, repeatable structure inside a parent fragment instead of pointing to a separate fragment reference. 
-  * The composite fields is edited in the same editor session as the parent fragment.
+  * The composite fields are edited in the same editor session as the parent fragment.
   * Allows you to include/retrieve structured data.
-  * Allows you to model complex data structures within a single fragment, similar to nested objects in JSON or embedded documents in NoSQL databases.
   * Suitable for repeatable field groups where modular reuse is not the primary goal. 
   * Enables the use of flatter, easier-to-manage content structures, and can also help improve system and API performance.
   
@@ -457,6 +456,8 @@ The Composite data type provides a way to model complex data structures within a
 
 Authors edit composite fields in the same editor session as the parent fragment, and delivery APIs return composite content as a nested object (rather than a reference to be resolved).
 
+#### Benefits of Composite {#benefits-of-composite}
+
 The Composite data type offers several benefits when modeling data:
 
 * Easier management of content structures. 
@@ -470,3 +471,159 @@ The Composite data type offers several benefits when modeling data:
 * Improved content management and delivery performance. 
 
   Simpler content structures with fewer fragment references reduce the overhead of reference resolution during authoring, publishing, and delivery operations. They also decrease the size and complexity of JSON payloads, helping improve API efficiency and overall client-side performance. 
+
+#### Properties of Composite {#properties-of-composite}
+
+A Composite field embeds a model-defined group of fields directly inside the parent fragment node, with these properties:
+
+* Single-session authoring
+
+  Composite items are edited in the same editor view as the parent fragment, in a dedicated panel, with no tab switching.
+
+* Step-and-repeat as a multifield
+
+  A multi-value composite supports add, remove, and reorder of items, each conforming to one of the configured models.
+
+* Multi-model composite
+
+  A single composite field can accept items from multiple allowed models. The author picks which model to use when adding a new item.
+
+* Variations
+
+  Top-level variations apply to composite trees: a variation may have a different number of composite items, or different content per item, than the master. Selection is at the top-level only; nested content reflects the chosen variation.
+
+* Native in delivery
+
+  GraphQL and OpenAI (Freyja) return composite content as a nested object on the parent payload. No reference to resolve at delivery time, no separate JCR node to fetch.
+
+* Cleaner reference semantics
+
+ You can model "this content belongs to its parent and is not reused" as composite, and reserve fragment references for content that is genuinely reusable. The two are complementary, not substitutes.
+
+#### When to use Composite {#when-to-use-composite}
+
+When to use Composite (and when not):
+
+* Recommended composite when you:
+
+  * Build "page-like" or "card list-like" content where the children are not reused elsewhere.
+  * Are experiencing reference-graph performance issues, either at delivery or at publication.
+  * Have authors complaining about tab-switching workflows for nested content.
+  * Need multi-field step-and-repeat groups that currently require custom data types or external tooling.
+
+* Be cautious when:
+
+  * Your content is genuinely reusable across fragments. Fragment references remain the right answer for shared content; composite is for inlined content.
+  * You rely on the (original) Touch UI Editor only. Composite is supported in the new Content Fragment Editor, but the original Touch UI Editor will block editing of composite fields.
+  * The customer depends on capabilities that are still under construction (MSM Live Copies, Launches, Core Components / .model.json, Universal Editor partial). See Current limitations.
+
+#### Use Composite {#use-composite}
+
+* From the Content Fragment Model Editor
+
+  In the Touch UI (original) Content Fragment Model Editor, the Composite data type appears in the list of available field types. 
+  
+  When configuring it:
+
+  * Allowed models. Pick one or more Content Fragment Models whose fields will appear as composite items. Multi-model is supported (the author chooses which model when adding an item).
+  * Single value vs. multi-value. Single-value composite holds at most one item; multi-value supports add/remove/reorder with min/max constraints.
+  * Min/max. For multi-value composites, set min/max bounds.
+  * Variations. Composite fields participate in variations (2026.06).
+
+  Composite support in the new (Headless) CF Model Editor is on the roadmap but not yet implemented (SITES-43786: Support for the composite data type in the new model editor). For now, model authoring happens in the classic Touch UI Model Editor.
+
+* From the new Content Fragment Editor
+
+  Authors open a fragment that contains a composite field and see:
+
+  * A panel-style rendering for the composite field, not an inline form. Selecting the composite item opens its fields in a dedicated editor area within the same browser session.
+  * Add / Remove / Reorder controls for multi-value composites.
+  * For multi-model fields, an **Add** dialog lets the author pick which model to instantiate.
+  * A variation selector at the top level. Once a variation is chosen, the entire nested composite tree reflects that variation. Items can differ in count and content between variations.
+
+  >[!NOTE]
+  >
+  >The original Touch UI Fragment Editor will block editing of composite fields.
+
+* From the Management OpenAPI (Content Fragments Management API)
+
+  The composite data type is fully covered across the main Management OpenAPI operations:
+
+  * `GET /adobe/sites/cf/fragments/{uuid\}` returns composite values as nested field structures.
+  * `GET /adobe/sites/cf/fragments/{uuid\}?partial={fieldPath\}` resolves a single composite subtree, used by the editor to expand a composite on demand. This is the endpoint tracked in Splunk for adoption (references=direct&partial=…).
+  * `POST` / `PATCH` / `PUT` accept composite payloads, single and bulk.
+  * For models, `GET` and `POST` model operations support defining composite fields with allowed `modelIds`.
+  * Variations: `GET` model and UI schema endpoints support a variation query parameter; the variation `GET` fragment endpoint supports `partial`; `PATCH` on variations: Support `partial` parameter on variation PATCH endpoint.
+
+* From the Delivery APIs
+
+  * GraphQL (AEM-native delivery). Composite content is returned natively in query responses. You can query a composite field the same way ypu query a nested object. No reference resolution is needed, so depth and round-trips drop accordingly. 
+
+  * REST Delivery API. There are two paths:
+
+  * pre-baked at publish time
+  * in-process delivery from AEM
+
+  >[!NOTE]
+  >
+  >If the model used inside a composite field is not published, the delivery API will skip that composite content (with a warn log on the server). This is similar to the existing behavior for fragments missing a published model. 
+  >
+  >Make sure customer publish pipelines include all models that compositions reference.
+
+#### Migrate Fragment References to Composite  {#migrate-fragment-references-to-composite}
+
+If you already have a content model based on Fragment references and want to convert to composite you can use the model migration mechanism. 
+
+To use the migration tool:
+
+* Your administrator changes a field's type in a Content Fragment Model. For composite conversion, this means switching a fragment-reference field to a composite field that allows the previously-referenced models.
+* A background job iterates over every fragment that uses the changed model.
+* For each fragment, the referenced child fragment's content is inlined into the parent as a composite item, removing the reference link.
+* The operation is transactional. While the migration is running, the Java API still serves the old model and old content. Only on commit does the system switch to the new model and start exposing the inlined composite content.
+
+>[!NOTE]
+>
+>The same framework also supports simpler type changes (for example, converting a number field to a string), which is the original use case.
+
+#### Limitations of Composite{#limitations-of-composite}
+
+The list below consolidates the current limitations of the Composite data type:
+
+* Authoring surface
+
+  * Touch UI Fragment Editor (original editor)
+    Composite fields are not supported. 
+  * New (Headless) Content Fragment Model Editor
+    * The Composite type is not yet supported. Model authoring uses the original Touch UI Model Editor.
+  * Admin UI / search
+    * Composite fragments do not appear in search results. This is by design to limit content-tree complexity exposed via search, not a defect.
+
+* Nesting and complexity
+
+  * No complexity guardrails in the UI
+    * The system can technically accept composite structures that are very expensive to render or process (deep nesting plus large multifield arrays at multiple levels). Future work will add a complexity metric (depth + cumulative multi-field item counts + field counts) and surface it in the model editor.
+
+* Cross-feature support
+
+  * MSM (Multi Site Manager)
+    * Live Copy creation does not include composite child nodes.
+  * Launches
+    * Launches do not include composite child nodes.
+  * Translation
+    * Translatable metadata stays at the element level (this is the intended behavior, not at the composite container level). 
+  * Core Components / .model.json
+    * Page rendering via Core Components and the Sling Model exporter (.model.json) does not yet support composite. 
+  * Universal Editor
+    * Limited changes needed to support partial resolution for composite.
+  * Visual Content Fragments (Content Fragments with HTML templates)
+    * Need to ensure nested structures are materialized with composite instead of references by default.
+
+* Delivery surface
+
+  * GraphQL variation support for composite is not implemented. 
+  * AEM ingestion needs to be extended for composite. 
+
+* API ergonomics
+
+  * Auto-populate empty fields when adding a composite row. 
+  * Single-value composite has no enforced cardinality of 1. The Java API allows adding additional items to a single-value composite without rejecting; today the validation is missing on the API side.
