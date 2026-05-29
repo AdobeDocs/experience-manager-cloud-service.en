@@ -53,7 +53,7 @@ The default filters include file format, approved by, date approved, expired and
 
 ## AI Search in Content Hub {#ai-search-aem-assets-content-hub}
 
-AI Search in AEM Assets Content Hub is an advanced search capability that understands the meaning and intent behind a user's query rather than relying on exact keyword matches. It uses artificial intelligence (AI) and machine learning to deliver more accurate and context-aware results.
+AI Search in AEM Assets Content Hub is an advanced search capability that understands the meaning and intent behind a user's query rather than relying on exact keyword matches. It uses artificial intelligence (AI) and machine learning to deliver more accurate and contextually relevant results.
 
 Unlike traditional keyword-based search, which looks for exact terms, AI Search interprets relationships between words, concepts, and user intent. This ensures that users find what they are looking for—even if their query is phrased differently, contains typos, or is in another language.
 
@@ -65,7 +65,7 @@ Some if its key benefits include:
 
 * **Understands synonyms**: Delivers results for related terms and phrases, so users do not need to guess the right keyword.
 
-* **Context-Aware search**: Recognizes the intent behind a query, not just the exact words.
+* **Contextually relevant search**: Recognizes the intent behind a query, not just the exact words.
 
 ### Examples for AI Search in Content Hub {#examples-ai-search-aem-assets-content-hub}
 
@@ -223,7 +223,7 @@ To enable a metadata field for sorting:
 1. Locate the metadata field that you want to enable for sorting.
 1. Click the edit icon available for that particular metadata field.
 1. In the Edit Filter dialog, enable the **Sorting** option.
-1. Click **Confirm** and save the configuration.
+1. Click **Confirm** and save the configuration. The updates take effect when the **Status** field value for the metadata field is displayed as `Active`.
 
 For example, enabling sorting for the Channel metadata field allows users to sort asset results using the Channel value.
 

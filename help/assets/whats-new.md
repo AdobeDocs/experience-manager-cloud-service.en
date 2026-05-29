@@ -25,7 +25,7 @@ The release date of Content Hub feature release (2026.05.0) is May 28, 2026 (sam
 
 **AI Search**
 
-AEM Assets Content Hub now includes AI Search, an advanced search capability that understands the meaning and intent behind user queries instead of relying only on exact keyword matches. AI Search delivers more accurate and context-aware results by recognizing relationships between words, concepts, and user intent. It supports multilingual queries, handles misspellings and typos, understands synonyms, and surfaces relevant assets even when users do not use exact metadata terms. 
+AEM Assets Content Hub now includes AI Search, an advanced search capability that understands the meaning and intent behind user queries instead of relying only on exact keyword matches. AI Search delivers more accurate and contextually relevant results by recognizing relationships between words, concepts, and user intent. It supports multilingual queries, handles misspellings and typos, understands synonyms, and surfaces relevant assets even when users do not use exact metadata terms. 
 
 For example, a search for `Woman drinking coffee` can also return assets tagged with related terms such as `Lady`, `Girl`, `Latte`, or `Cappuccino`. 
 
