@@ -43,7 +43,7 @@ For example, search for all the **[!UICONTROL JPEG]** images with keyword `archi
 
 1. Navigate to **[!UICONTROL Modified]** > specify the date range. 
 
-    ![Basic search](assets/basic-search.png)
+   ![Basic search](assets/basic-search.png)
 
 ## Narrow your search results using filters {#narrow-down-search-results}
 
@@ -152,7 +152,7 @@ Execute the following steps to enable or disable AI Search in Content Hub:
         </ul>
       </td>
      </tr>
-     <!--<tr>
+     <tr>
       <td>Subject</td>
       <td>Classification of assets based on their theme. For example, colorful, hiking, outdoors.</td>
       <td>NA</td>
@@ -167,7 +167,7 @@ Execute the following steps to enable or disable AI Search in Content Hub:
         </ul>
       </td>
      </tr>    
-     <!--<tr>
+     <tr>
       <td>Asset ID</td>
       <td>Unique number that identifies the asset.</td>
       <td>NA</td>
