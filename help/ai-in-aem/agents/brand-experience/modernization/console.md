@@ -51,7 +51,7 @@ The top menu bar provides:
 
 ## Home Page {#home-page}
 
-The **Home** view is your starting point for using the console. 
+The **Home** page is your starting point for using the console. 
 
 * At the top is a [prompt input](#prompt-input) for making requests of the console.
 * Below the prompt panel are suggested prompts for getting started with your project.
@@ -66,10 +66,11 @@ The prompt input provides controls for interacting with the AI.
   * **Plan mode**: The AI analyzes requests and outlines an approach without making changes, which is useful for understanding strategy before committing.
   * **Execute mode**: The AI carries out the plan and makes actual file changes.
 * **Attach files** (paperclip icon): Upload and attach files to the prompt for additional context (e.g. reference designs, screenshots, specs)
+* **Prompt queue** (clock icon): Additional prompts can be queued up to be automatically executed once the current prompt has completed.
 
 ## Chat Page {#chat-page}
 
-The [**Chat** page](https://aemcoder.adobe.io/chat) is the main interface for interacting with Experience Modernization agent. This page is split into a resizable [chat panel](#chat-panel) and a [workspace panel](#workspace-panel).
+The [**Chat** page](https://aemcoder.adobe.io/chat) is the main interface for interacting with Experience Modernization agent. This page is split into a resizable [chat panel](#chat-panel) and [workspace panel](#workspace-panel).
 
 ## Chat panel {#chat-panel}
 
@@ -85,13 +86,9 @@ The chat panel header includes links for navigating to the [Home](#home-page) an
 
 The workspace panel displays all the content and code for your site. The header at the top of the panel includes a picker to select the specific view you want to focus on. The actions available in the workspace header will change based on the currently selected view.
 
-* **Files view** (directory icon) to browse the code files in the current workspace
-* **Changes view** (branch icon) to view the diffs of files changes created by your work on the project
+### Content views {#content-view}
 
-
-### Content view {#content-view}
-
-The **Content view** contains multiple modes for displaying the selected page content. A collapsible file browser displays all the availble page content for your site.
+The **Content views** contain multiple modes for displaying the selected page content. A collapsible file browser displays all the availble page content for your site.
 
 * **Preview** (document with magnifying glass icon) to view the rendered HTML content 
 * **Document view** (document icon) to view the underlying document authoring content structure, respectively
@@ -113,21 +110,21 @@ The following actions are available in the contnet views:
 
 ![Upload content](assets/upload-content.png)
 
-### Code View {#code-view}
+### Code views {#code-view}
 
-The **Code view** provides tools for browsing your project files and managing code changes. The view includes a file browser for an overview of your code files or changes as diffs, and a preview area for viewing the selected file or changes.
+The **Code views** provides tools for browsing your project files and managing code changes. The view includes a file browser for an overview of your code files or changes as diffs, and a preview area for viewing the selected file or changes.
 
 * **Files** to browse the code files in the current workspace
 * **Changes** to view the diffs of files changes created by your work on the project
 
 ![Code view](assets/code-view.png)
 
-#### File Actions {#file-actions}
+#### File actions {#file-actions}
 
 * **Add to chat** adds the selected file (or selected lines  from the file) to the chat panel for context.
 * **Download** download the selected file to your local file system
 
-#### Changes Actions {#changes-actions}  
+#### Changes actions {#changes-actions}  
 
 * **Add** (+ icon) to stage the changed file
 * **Discard** (arrow icon) to discard the changed file
