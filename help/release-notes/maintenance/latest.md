@@ -51,6 +51,17 @@ The 2026.6.0 feature activation will provide the full feature set for this maint
 * CQ-4362438 - Fixed Language Copy did not rewrite internal links inside Experience Fragments during translation in AEM Translation.
 * CQ-4361979 - Fixed translated sub-pages reverting to English after Experience Fragment translation in AEM Translation.
 * SITES-41928 - Contexthub + Unified Shell overlap makes component menu inaccessible in editor
+* SITES-43802 - "false" string displayed in Insert Component modal on AEM Sites
+* SITES-41121 - Screen reader announces component name and an invisible group name
+* SITES-40752 - Side panel components list is keyboard accessible
+* SITES-25377 - Content in the Side Rail Assets reloads when the Filter field receives focus
+* SITES-25364 - Input instructions are not linked to the checkbox in code
+* SITES-25308 - Focus indicator of buttons in the Demographic toolbar does not meet minimum contrast requirements
+* SITES-25263 - Date field in Timewarp modal has aria-haspopup=dialog
+* SITES-25217 - Info icon is too small
+* SITES-24703 - Focus indicator for listbox popup button is cut off
+* SITES-24525 - Incorrect heading role for modal buttons is used
+* SITES-24497 - Landmarks of the same type are not labelled
 
 ### Known Issues {#known-issues-26353}
 
