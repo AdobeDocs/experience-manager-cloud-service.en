@@ -51,7 +51,7 @@ Once you complete those steps to migrate the content, continue with the followin
 
 ## Validate Content {#validate-content}
 
-Validate the content of the selected page in the preview panel. Any errors will be displayed by clicking the **Errors** button. 
+Validate the content of the selected page in the preview of the content panel. Any errors will be displayed by clicking the **Errors** button. 
 Continue your chat conversation with the agent to fix the errors. Use the **Add to chat** feature to target fixes to specific elements of the page, parser files, or transformer files.
 
 ![Contextual chat](assets/contextual-chat.png)
@@ -60,7 +60,7 @@ Continue your chat conversation with the agent to fix the errors. Use the **Add 
 
 To upload your content to AEM:
 
-1. Make sure you are in the **Content** view and click the **Upload content** button on the top-right.
+1. Make sure you are in a **Content** view and click the **Upload content** button on the top-right.
 1. In the **Create content package** dialog, choose the pages to include in the package.
    * Optionally enter a **Package name** (defaults to the site name if left empty).
    * Use **Select all**, **Clear selection**, **Expand all**, or **Collapse all** to manage the list.
