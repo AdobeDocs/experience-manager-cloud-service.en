@@ -43,7 +43,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 Content requests can have variances within an organization's analytics reporting tools as summarized in the following table. In general, avoid using analytics tools that rely on client-side instrumentation to report the number of content requests for a site. These tools often miss a large portion of traffic because they depend on user consent to be activated. Analytics tools gathering data server-side in log files, or CDN reports for customers adding their own CDN on top of AEM as a Cloud Service, provide better counts. 
 
-|Reason For Variance|Explanation|
+|Reason for variance|Explanation|
 |---|---|
 | End user consent | Analytics tools relying on client-side instrumentation often depend on user consent to be triggered. This workflow could represent the majority of the traffic not being tracked. For customers who want to measure content requests on their own, Adobe recommends that you rely on analytics tools to gather data from server-side or CDN reports. |
 | Tagging | All pages or API calls that are tracked as Adobe Experience Manager content requests may not be tagged with Analytics tracking. |
@@ -70,7 +70,7 @@ The following tables list the types of included and excluded content requests, w
 >[!NOTE]
 >If an API request returns an HTML response, it may be classified as a content request, depending on its usage context. API requests returning non-UI data are typically excluded.
 
-| Request Type | Content Request | Description |
+| Request type | Content request | Description |
 | --- | --- | --- |
 | HTTP Code 100-299 | Included | Includes successful requests that return full or partial HTML or JSON content.<br>HTTP Code 206: These requests deliver only a portion of the full content. Partial requests are included when they deliver part of an HTML or JSON response used in rendering page content. |
 | HTTP libraries for automation | Included | Requests made by tools or libraries that retrieve page content. Examples include the following: <br>&bull; Amazon CloudFront<br>&bull; Apache Http Client<br>&bull; Asynchronous HTTP Client<br>&bull; Axios<br>&bull; Azureus<br>&bull; Curl<br>&bull; GitHub Node Fetch<br>&bull; Guzzle<br>&bull; Go-http-client<br>&bull; Headless Chrome<br>&bull; Java&trade; Client<br>&bull; Jersey<br>&bull; Node Oembed<br>&bull; okhttp<br>&bull; Python Requests<br>&bull; Reactor Netty<br>&bull; Wget<br>&bull; WinHTTP<br>&bull; Fast HTTP<br>&bull; GitHub Node Fetch<br>&bull; Reactor Netty<br><br>It can also include custom agents or AI-driven automation when the traffic is not classified as a well-known bot.|
@@ -78,11 +78,11 @@ The following tables list the types of included and excluded content requests, w
 | `<link rel="prefetch">` requests | Included | When customers preload or prefetch content (for example, with `<link rel="prefetch">`), the system counts those server-side requests. Beware that this approach can increase traffic, depending on how many of these pages are prefetched. |
 | Traffic that blocks Adobe Analytics or Google Analytics reporting | Included | It is more common that visitors of sites have privacy software installed (Ad-blockers, and so on) that impact the accuracy of Google Analytics or Adobe Analytics. AEM as a Cloud Service counts requests on the first entry-point into the Adobe operated infrastructure and not the client-side. |
 
-See also [License Dashboard](/help/implementing/cloud-manager/license-dashboard.md).
+See also [License dashboard](/help/implementing/cloud-manager/license-dashboard.md).
 
 ### Types of excluded content requests {#excluded-content-request}
 
-| Request Type | Content Request | Description |
+| Request type | Content request | Description |
 | --- | --- | --- |
 | HTTP Code 500+ | Excluded | Errors returned to the visitor when something goes wrong on AEM as a Cloud Service or the customer custom code.|
 | HTTP Code 400-499 | Excluded | Errors returned to the visitor when the content does not exist (404) or there are other content or request-related issues.|
@@ -157,4 +157,4 @@ trafficFilters:
 
 Replace the example values with the country code, network or bot name you want to block. See [Traffic filter rules syntax](/help/security/traffic-filter-rules-including-waf.md#rules-syntax) and [Condition structure](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) for more options.
 
-* Some bots can overload a site with traffic one day and then disappear the next. Such functionality can frustrate any attempts to block a specific IP address or user agent. One generic approach is to introduce a [rate limit rule](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules). Review the [examples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) and craft a rule that matches your tolerance for a rapid rate of requests. Review the [Condition Structure](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) syntax for any exceptions that you may want to allow to a generic rate limit.
+Some bots can overload a site with traffic one day and then disappear the next. Such functionality can frustrate any attempts to block a specific IP address or user agent. One generic approach is to introduce a [rate limit rule](/help/security/traffic-filter-rules-including-waf.md#rate-limit-rules). Review the [examples](/help/security/traffic-filter-rules-including-waf.md#ratelimiting-examples) and craft a rule that matches your tolerance for a rapid rate of requests. Review the [Condition Structure](/help/implementing/dispatcher/cdn-configuring-traffic.md#condition-structure) syntax for any exceptions that you may want to allow to a generic rate limit.
