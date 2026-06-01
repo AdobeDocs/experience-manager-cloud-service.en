@@ -38,7 +38,7 @@ To publish assets while uploading them to a folder whose [!DNL Dynamic Media Pub
 
 1. Click **[!UICONTROL Add Assets]** > **[!UICONTROL Browse]** > **[!UICONTROL Browse Files]** to navigate to the appropriate folder to upload assets. The **[!UICONTROL Publish Options]** section displays the **[!UICONTROL DM Publish Mode]** as **[!UICONTROL Upon Activation]**. 
 
-   ![Upload image upon activation](/help/assets/assets/upload-uactivation.svg)
+   ![Upload image upon activation](/help/assets/assets/upload-activation.png)
 
 1. Select **[!UICONTROL Publish to AEM and Dynamic Media]** and click **[!UICONTROL Upload]**. The assets are published to [!DNL AEM and Dynamic Media] at the same time. To see the updated publish status for these assets, see [Check Publish status](#check-publish-status). 
 
@@ -48,7 +48,7 @@ To publish assets while uploading them to a folder whose [!UICONTROL Dynamic Med
 
 1. Click **[!UICONTROL Add Assets]** > **[!UICONTROL Browse]** > **[!UICONTROL Browse Files]** to navigate to the appropriate folder to upload assets. The **[!UICONTROL Publish Options]** section displays the **[!UICONTROL DM Publish Mode]** as **[!UICONTROL Immediate]**. 
 
-   ![file upload image - immediate mode](/help/assets/assets/resized-image-pdf-svg-new.svg)
+   ![file upload image - immediate mode](/help/assets/assets/dynaimc-media-publish-upon-activation.png)
 
    As the [!UICONTROL Dynamic Media Publish Mode] is **[!UICONTROL Immediate]**, the uploaded assets are automatically published to [!DNL Dynamic Media] when you click **[!UICONTROL Upload]**. 
 
@@ -64,7 +64,7 @@ To publish assets during upload to a folder with [!UICONTROL Dynamic Media Publi
 
 1. Click **[!UICONTROL Add Assets]** > **[!UICONTROL Browse]** > **[!UICONTROL Browse Files]** to navigate to the appropriate folder to upload assets. The **[!UICONTROL Publish Options]** section displays the **[!UICONTROL DM Publish Mode]** as **[!UICONTROL Selective Publish]**. 
 
-  ![upload image-selective piblish mode](/help/assets/assets/upload-selective.svg)
+     ![upload image-selective piblish mode](/help/assets/assets/upload-selective.png)
 
 1. Select **[!UICONTROL Publish to AEM]**, **[!UICONTROL Publish to Dynamic Media]**, or both as per your requirements and click **Upload**. 
  
@@ -78,13 +78,9 @@ To publish assets using the asset browse page:
 
 1. Click **[!UICONTROL Assets]** in the **[!UICONTROL Assets Management]** section available in the left pane. 
 1. Select one or more assets or folders that you need to publish and click **[!UICONTROL Publish]**.
-1. Select **[!UICONTROL AEM]** and click **[!UICONTROL Publish]** to publish assets to [!DNL AEM and Dynamic Media].
-
-   ![assets browse](/help/assets/assets/browse-uactivation-immediate.svg) 
+1. Select **[!UICONTROL AEM]** and click **[!UICONTROL Publish]** to publish assets to [!DNL AEM and Dynamic Media]. 
 
    You cannot publish a folder that has the [!DNL Dynamic Media] Publish Mode set to **[!UICONTROL Selective Publishing]**. All other selected folders or assets get published to [!DNL AEM and Dynamic Media] after selecting [!DNL AEM]. 
-
-   ![assets browse](/help/assets/assets/browse-selective123.svg)
 
 ## Publish assets using search results page {#publish-assets-using-search-results-page}
 
@@ -93,8 +89,6 @@ To publish assets using the asset search results page:
 1. Specify the criteria in the search bar and click the search icon to view the results.
 1. Select the assets that you need to publish and click **[!UICONTROL Publish].**
 1. Select [!DNL AEM, Dynamic Media], or both as per your requirements and click **[!UICONTROL Publish]**. 
-
-   ![search image](/help/assets/assets/search-mode.svg)
 
    The option to publish to [!DNL Dynamic Media] on the search results page depends on the [!DNL Dynamic Media] Publish Mode set on the folder where the asset is available in the repository.
 

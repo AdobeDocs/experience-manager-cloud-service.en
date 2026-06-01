@@ -63,25 +63,25 @@ Unlike traditional keyword-based search, which looks for exact terms, AI Search 
 
 Some if its key benefits include:
 
-   * Multilingual support: Search across multiple languages without requiring exact translations. Users can find relevant content regardless of their query language.
+* Multilingual support: Search across multiple languages without requiring exact translations. Users can find relevant content regardless of their query language.
 
-   * Handles misspellings: Interprets typos and spelling errors, ensuring accurate results even with imperfect input.
+* Handles misspellings: Interprets typos and spelling errors, ensuring accurate results even with imperfect input.
 
-   * Understands synonyms: Delivers results for related terms and phrases, so users do not need to guess the right keyword.
+* Understands synonyms: Delivers results for related terms and phrases, so users do not need to guess the right keyword.
 
-   * Context-Aware search: Recognizes the intent behind a query, not just the exact words.
+* Context-Aware search: Recognizes the intent behind a query, not just the exact words.
 
-   >[!IMPORTANT]
-   > 
-   >* Minimum required AEM release version to access AI Search within Content Advisor is `21994`
-   >* AI Search support is coming soon for Content Fragments.
-   
+>[!IMPORTANT]
+> 
+>* Minimum required AEM release version to access AI Search within Content Advisor is `21994`
+>* AI Search support is coming soon for Content Fragments.
+
 
 ### Smart suggestions based on context and intent {#smart-suggestions-content-advisor}
 
- Content Advisor displays smart suggestions based on the context of the host Adobe application. This helps you quickly discover and use assets that align with your content needs without the time-consuming manual search.
+Content Advisor displays smart suggestions based on the context of the host Adobe application. This helps you quickly discover and use assets that align with your content needs without the time-consuming manual search.
 
-   ![Suggested Content Advisor content](assets/content-advisor-smart-suggestions.png)
+![Suggested Content Advisor content](assets/content-advisor-smart-suggestions.png)
 
 >[!IMPORTANT]
 > 
@@ -94,15 +94,15 @@ Some if its key benefits include:
 
 Content Advisor allows you to upload a campaign brief document to discover relevant assets without manually entering search keywords. Content Advisor analyzes the information in the campaign brief to understand the campaign's intent and recommends relevant assets available in AEM Assets.
 
-  ![Include assets from Assets add-on](assets/content-advisor-upload-briefs.png)
+![Include assets from Assets add-on](assets/content-advisor-upload-briefs.png)
 
-   >[!IMPORTANT]
-   >
-   >* Content Advisor analyzes the information available as text in the campaign brief to recommend relevant assets. It does not analyze the information available as images in the campaign brief.
-   >* The supported file types that you can upload as a campaign brief include PDF, DOCX, and TXT documents. 
-   >* You must sign a GenAI Rider to access this feature within Content Advisor. To sign GenAI rider, contact your Adobe representative.
-   >* Minimum required AEM release version to access this feature is `21994`.
-   >* Upload Campaign Brief support is coming soon for Content Fragments.
+>[!IMPORTANT]
+>
+>* Content Advisor analyzes the information available as text in the campaign brief to recommend relevant assets. It does not analyze the information available as images in the campaign brief.
+>* The supported file types that you can upload as a campaign brief include PDF, DOCX, and TXT documents. 
+>* You must sign a GenAI Rider to access this feature within Content Advisor. To sign GenAI rider, contact your Adobe representative.
+>* Minimum required AEM release version to access this feature is `21994`.
+>* Upload Campaign Brief support is coming soon for Content Fragments.
 
 ### Dynamic Media asset renditions available for use {#dynamic-media-renditions-content-advisor}
 
@@ -154,9 +154,9 @@ Custom filterschema is supported for Assets (Files) but not yet supported for Fo
 
 ### Access and reuse recent and saved searches {#saved-searches-content-advisor}
 
- Saved searches created in the Assets view are also available, enabling you to reuse predefined search criteria. Saved searches works consistently between Assets view and Content Advisor across browsers. This helps you efficiently locate assets using consistent search patterns across AEM Assets and other Adobe applications.
+Saved searches created in the Assets view are also available, enabling you to reuse predefined search criteria. Saved searches works consistently between Assets view and Content Advisor across browsers. This helps you efficiently locate assets using consistent search patterns across AEM Assets and other Adobe applications.
 
- To save your frequently used search using Content Advisor:
+To save your frequently used search using Content Advisor:
 
 1. Specify a search term (optional), click the filters icon, and select the options based on your requirements to create a search query.
 
