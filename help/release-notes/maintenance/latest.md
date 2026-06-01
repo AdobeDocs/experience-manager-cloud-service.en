@@ -10,33 +10,61 @@ role: Admin
 
 The following section outlines the technical release notes for the current maintenance release of Experience Manager as a Cloud Service.
 
-## Release X {#release-X}
+## Release 26353 {#release-26353}
 
-Summarized below are the continuous improvements for maintenance release X, which was publicly released on June 4, 2026. The previous maintenance release was release 26309.
+Summarized below are the continuous improvements for maintenance release 26353, which was publicly released on June 3, 2026. The previous maintenance release was release 26309.
 
 The 2026.6.0 feature activation will provide the full feature set for this maintenance release. See the [Experience Manager Releases Roadmap](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) for more information.
 
-### Enhancements {#enhancements-X}
+### Enhancements {#enhancements-26353}
+
+* SITES-11784 - Content Fragment Editor: Significantly improved loading performance for fragments containing many Rich Text Editor (RTE) fields
+* SITES-42675 - Introduced new endpoint for searching variations of a provided content fragment
+* SITES-32196 - Get user's first name and last name separately — API responses expose creator/modifier/publisher first and last name separately, alongside the fullName.
+* SITES-34223 - Page deletion runs asynchronously
+* SITES-42899 - Retries on async page deletion to improve reliability.
+* SITES-42912 - Performance improvements for reference adjustment during folder move
+* SITES-43942 - Edge Delivery with Universal Editor: reject publishing images exceeding maximum image width and height
+* SITES-42979 - Edge Delivery with Universal Editor: reject publishing assets without an extension
+* SITES-42730 - Edge Delivery with Universal Editor: remove editor instrumentation for locked pages
+* SITES-42706 - Edge Delivery with Universal Editor: Support cross-site linking on multi-site setups
+* SITES-30753 - Edge Delivery with Universal Editor: Replace Edge Host configuration with a configurable cache ttl for authoring
+* CQ-4360727 - Added tags & asset metadata and i18n dictionary harvesting support for Agentic Translation workflows in AEM Translation.
+* CQ-4363507 - Improved handling of long running dispatcher to increase stability in translation workflows.
+
+### Fixed Issues {#fixed-issues-26353}
+
+* SITES-43180 - GraphQL: Fixed an issue where queries using duplicate field aliases returned incomplete results — sub-fields present only in the second alias were silently dropped from the response
+* SITES-43498 - Content Fragment Editor: Fixed a save failure for fragments containing DateTime fields whose millisecond value ends in a trailing zero (e.g. 14:12:16.610Z)
+* SITES-43543 - GraphQL: Fixed schema generation failure when Content Fragment Models reference other models via tag-based lookups across configuration hierarchies
+* SITES-39242 - Missing thumbnail of model in configuration with localized characters in name in Content Fragment Models
+* SITES-28592 - Unlocalized strings in Content Fragment Model editor > 'Model is locked' dialog
+* SITES-43516 - Fixed intermittent failure to page events
+* SITES-41163 - Page move/republish dialog no longer pre-selects Republish for pages modified since last publish without warning, preventing accidental publication of work-in-progress content.
+* SITES-41397 - ETag for list/search projection summary now matches GET-by-UUID when checkbox enumeration values are patched in a different order than the model defines.
+* SITES-42086 - Orphaned Page Node Remains on Preview After Page Move — Page move on Preview removes the old page node entirely instead of leaving an orphan cq:Page without jcr:content.
+* SITES-31978 - Sites pagecolumnpreview leads to OOM when replication queue is huge — Page column preview no longer loads the full replication queue into memory, avoiding OOM when the queue is very large.
+* SITES-40216 - Edge Delivery with Universal Editor: Fix unpublishing the source page of a livecopy with localized URLs turned on
+* SITES-44433 - Edge Delivery with Universal Editor: Fix sanitization of og:image, twitter:image and og:image_secure when publishing
+* SITES-37955 - Edge Delivery with Universal Editor: Fix replication checks being skipped for referenced assets
+* CQ-4363421 - Added fix for Microsoft Translation workflow returning invalid target language code error for Simplified Chinese (zh-CN) for large sized content in AEM Translation.
+* CQ-4362438 - Fixed Language Copy did not rewrite internal links inside Experience Fragments during translation in AEM Translation.
+* CQ-4361979 - Fixed translated sub-pages reverting to English after Experience Fragment translation in AEM Translation.
+* SITES-41928 - Contexthub + Unified Shell overlap makes component menu inaccessible in editor
+
+### Known Issues {#known-issues-26353}
 
 None.
 
-### Fixed Issues {#fixed-issues-X}
-
-None.
-
-### Known Issues {#known-issues-X}
-
-None.
-
-### Deprecated Features and APIs {#deprecated-X}
+### Deprecated Features and APIs {#deprecated-26353}
 
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
-### Security Fixes {#security-X}
+### Security Fixes {#security-26353}
 
-AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses X vulnerabilities, reinforcing our commitment to robust system protection.
+AEM as a Cloud Service is dedicated to optimizing your platform's security and performance. This maintenance release addresses 40 identified vulnerabilities, reinforcing our commitment to robust system protection.
 
-### Embedded Technologies {#embedded-tech-X}
+### Embedded Technologies {#embedded-tech-26353}
 
 |Technology|Version|Link|
 |---|---|---|
@@ -44,5 +72,5 @@ AEM as a Cloud Service is dedicated to optimizing your platform's security and p
 |AEM SLING API | 2.27.6 |[Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html)|
 |AEM HTL| 1.4.28-1.4.0 |[HTML Template Language Specification](https://github.com/adobe/htl-spec)|
 |Apache HTTP Server| 2.4.65 | [Apache Httpd 2.4.65](https://apache.googlesource.com/httpd/+/refs/tags/2.4.65/CHANGES)|
-|AEM Core Components| 2.30.4|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
+|AEM Core Components| 2.31.0|[AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components)|
 |Node.js|14 (default)|[Supported Node.js versions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions)|
