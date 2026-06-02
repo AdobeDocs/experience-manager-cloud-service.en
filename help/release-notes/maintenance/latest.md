@@ -31,6 +31,15 @@ The 2026.6.0 feature activation will provide the full feature set for this maint
 * SITES-30753 - Edge Delivery with Universal Editor: Replace Edge Host configuration with a configurable cache ttl for authoring
 * CQ-4360727 - Added tags & asset metadata and i18n dictionary harvesting support for Agentic Translation workflows in AEM Translation.
 * CQ-4363507 - Improved handling of long running dispatcher to increase stability in translation workflows.
+* FORMS-24887 - Document of Record (DoR) generation now supports excluding attachments from the DoR Portable Document Format (PDF). Organizations can reduce DoR file size when attachments are delivered separately to the destination.
+* FORMS-21919 - Document of Record (DoR) generation is now supported for Adaptive Forms core components embedded in Sites. Authors can generate DoR output directly from embedded forms without moving forms out of the Sites context.
+* FORMS-24318 - Authors can now set document expiration (daysUntilSigningDeadline) when configuring the Send PDF via Email submit action on Adaptive Forms. Agreements submitted to Adobe Sign honor the configured value instead of defaulting to no expiration.
+* FORMS-25547 - Fragment variables can now be bound to Form Data Model and fragment references in Interactive Communication documents, so authors can connect reusable fragment data across IC content.
+* FORMS-25503 - Interactive Communication documents now support binding fragment variables through schema and Sling Models, which keeps variable resolution consistent across authoring and runtime.
+* FORMS-25502 - Fragment variables now resolve correctly during Interactive Communication rendering, so bound content displays as authored instead of falling back to empty values.
+* FORMS-25424 - Interactive Communication content fragments can now be bound to variables, giving authors a direct way to map fragment content into IC documents.
+* FORMS-25456 - Interactive Communications table components now support merge row, merge cell, and undo or redo actions in the editor. Authors can adjust table layout without recreating the structure.
+* FORMS-23801 - The Interactive Communications Editor now supports dynamic tables as a configurable property. Authors can define table behavior in the property sheet and have it transform correctly in the editor and Extensible Forms Description Language (XDP) output.
 
 ### Fixed Issues {#fixed-issues-26353}
 
@@ -62,6 +71,11 @@ The 2026.6.0 feature activation will provide the full feature set for this maint
 * SITES-24703 - Focus indicator for listbox popup button is cut off
 * SITES-24525 - Incorrect heading role for modal buttons is used
 * SITES-24497 - Landmarks of the same type are not labelled
+* FORMS-25129 - Renaming a field to include spaces breaks Rule Editor behavior. The generated script no longer executes as expected, and associated form logic stops working.
+* FORMS-24826 - Form submissions fail to complete in the MiniMed EForm Sandbox production tenant. External customers validating forms before production use cannot finish their workflows.
+* FORMS-25480 - Document of Record (DoR) output from templates with panels configured with wrapData set to true (for example, wrapInData.xdp) can omit panel data, reducing the accuracy of generated documents.
+* FORMS-25501 - Adobe Sign workflows remain in a pending state when the sign status is not returned after the Adobe Sign step, blocking downstream processing.
+* FORMS-25126 - The Adaptive Forms rule editor does not allow edits to previously created rules, preventing updates to business logic and slowing form maintenance.
 
 ### Known Issues {#known-issues-26353}
 
