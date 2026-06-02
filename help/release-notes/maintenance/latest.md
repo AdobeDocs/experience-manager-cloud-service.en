@@ -34,12 +34,6 @@ The 2026.6.0 feature activation will provide the full feature set for this maint
 * FORMS-24887 - Document of Record (DoR) generation now supports excluding attachments from the DoR Portable Document Format (PDF). Organizations can reduce DoR file size when attachments are delivered separately to the destination.
 * FORMS-21919 - Document of Record (DoR) generation is now supported for Adaptive Forms core components embedded in Sites. Authors can generate DoR output directly from embedded forms without moving forms out of the Sites context.
 * FORMS-24318 - Authors can now set document expiration (daysUntilSigningDeadline) when configuring the Send PDF via Email submit action on Adaptive Forms. Agreements submitted to Adobe Sign honor the configured value instead of defaulting to no expiration.
-* FORMS-25547 - Fragment variables can now be bound to Form Data Model and fragment references in Interactive Communication documents, so authors can connect reusable fragment data across IC content.
-* FORMS-25503 - Interactive Communication documents now support binding fragment variables through schema and Sling Models, which keeps variable resolution consistent across authoring and runtime.
-* FORMS-25502 - Fragment variables now resolve correctly during Interactive Communication rendering, so bound content displays as authored instead of falling back to empty values.
-* FORMS-25424 - Interactive Communication content fragments can now be bound to variables, giving authors a direct way to map fragment content into IC documents.
-* FORMS-25456 - Interactive Communications table components now support merge row, merge cell, and undo or redo actions in the editor. Authors can adjust table layout without recreating the structure.
-* FORMS-23801 - The Interactive Communications Editor now supports dynamic tables as a configurable property. Authors can define table behavior in the property sheet and have it transform correctly in the editor and Extensible Forms Description Language (XDP) output.
 
 ### Fixed Issues {#fixed-issues-26353}
 
