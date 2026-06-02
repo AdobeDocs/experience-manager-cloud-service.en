@@ -77,6 +77,8 @@ None.
 
 ### Deprecated Features and APIs {#deprecated-26353}
 
+* Content Fragment text summarization will be sunset in the next major AEM as a Cloud Service release 2026.7. It is recommended to use AEM Generate Variations instead.
+
 Deprecated and removed features and APIs in AEM as a Cloud Service are detailed in the [Deprecated and Removed Features and APIs](/help/release-notes/deprecated-removed-features.md) document.
 
 ### Security Fixes {#security-26353}
