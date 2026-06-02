@@ -37,7 +37,7 @@ Learn the first steps to get started using the Experience Modernization Agent an
 
 The console launches in demo mode when you first sign in. This mode allows you to explore an existing site where you can try out migrating additional pages. A banner at the bottom the screen indicates that you are in demo mode.
 
-![Demo mode](assets/demo-mo.png)
+![Demo mode](assets/demo-mode.png)
 
 ## Connect Your Site {#connect-repo}
 
@@ -52,6 +52,10 @@ When ready to begin working on your own site you can exit demo mode by connectin
    ![Replace existing workspace](assets/replace-existing-workspace.png)
 
 Your GitHub project and site is now connected to the console.
+
+If demo mode has been exited but a new project has not been connected, subsequent visits to Experience Modernization agent will force a site to be connected first.
+
+![Site connection](assets/first-sign-on.png)
 
 ## Console Home
 
@@ -100,7 +104,6 @@ To upload your content to [Document Authoring](https://da.live):
 1. Select the files you want to upload and click **Upload**.
    ![Upload content dialog](assets/upload-content.png)
 1. The console indicates upload process by disabling the **Upload** button.
-   ![Uploading](assets/uploading.png)
 1. Once complete, a notification appears at the bottom of the console.
    ![View in AEM](assets/view-in-aem.png)
 
