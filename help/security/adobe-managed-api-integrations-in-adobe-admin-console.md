@@ -91,3 +91,4 @@ If you previously disabled an integration and want to enable it again:
 >[!NOTE]
 >
 >If you cannot find the Service Integration in the add-user dialog (for example, because Adobe removed it from your organization rather than from the profile only), contact [Adobe Customer Support](https://helpx.adobe.com/support.html) to request provisioning. Adobe does not automatically re-add a Service Integration that your administrator removed.
+
