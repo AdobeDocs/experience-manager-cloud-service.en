@@ -104,9 +104,14 @@ AEM Assets Delivery APIs now support asset search and asset download events, ena
 
 With event-driven insights, teams can better understand content engagement and build more connected digital asset workflows. For more details, see the [API documentation](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/asset_downloaded).
 
+**Asset Delivery URL**
+
+Content Hub now allows users to copy an asset's delivery URL directly from the asset properties. This enhancement makes it easier to share and embed approved assets across websites, applications, and external systems. By providing quick access to delivery-ready links, teams can streamline content distribution workflows and accelerate asset reuse across digital experiences.
+
 >[!IMPORTANT]
 >
 >These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+
 
 ### New features in Dynamic Media with OpenAPI capabilities {#new-features-dynamic-media-openapi}
 
