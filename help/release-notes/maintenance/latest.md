@@ -31,6 +31,17 @@ The 2026.6.0 feature activation will provide the full feature set for this maint
 * SITES-30753 - Edge Delivery with Universal Editor: Replace Edge Host configuration with a configurable cache ttl for authoring
 * CQ-4360727 - Added tags & asset metadata and i18n dictionary harvesting support for Agentic Translation workflows in AEM Translation.
 * CQ-4363507 - Improved handling of long running dispatcher to increase stability in translation workflows.
+* SITES-32578 - MSM OpenAPI - Define the Reset inheritance call
+* SITES-32580 - MSM OpenAPI - Implement Detach
+* SITES-32581 - MSM OpenAPI - Implement Reset
+* SITES-32582 - MSM OpenAPI - Implement Suspend
+* SITES-41333 - MSM OpenAPI - Implement Resume
+* SITES-35050 - Release Core Components 2.31.0
+* SITES-43855 - Launch creation / edit performance improvement for CF count less than batch size
+* SITES-44267 - Fix MSM OpenAPI schema mismatch
+* SITES-44323 - Remove Delete Live Copy endpoint from MSM OpenAPI schema
+* SITES-44430 - MSM OpenAPI - Fix Get Inheritance Details live copy ID validation
+* SITES-45016 - Release CIF components 2.18.4
 * FORMS-24887 - Document of Record (DoR) generation now supports excluding attachments from the DoR Portable Document Format (PDF). Organizations can reduce DoR file size when attachments are delivered separately to the destination.
 * FORMS-21919 - Document of Record (DoR) generation is now supported for Adaptive Forms core components embedded in Sites. Authors can generate DoR output directly from embedded forms without moving forms out of the Sites context.
 * FORMS-24318 - Authors can now set document expiration (daysUntilSigningDeadline) when configuring the Send PDF via Email submit action on Adaptive Forms. Agreements submitted to Adobe Sign honor the configured value instead of defaulting to no expiration.
@@ -65,6 +76,26 @@ The 2026.6.0 feature activation will provide the full feature set for this maint
 * SITES-24703 - Focus indicator for listbox popup button is cut off
 * SITES-24525 - Incorrect heading role for modal buttons is used
 * SITES-24497 - Landmarks of the same type are not labelled
+* SITES-40639 - Reverting inheritance and selecting to sync CF element inside LC folder does NOT work
+* SITES-41785 - Incorrect root path and name added to create live copy job result for pages
+* SITES-42700 - MSM OpenAPI - Synchronize endpoint returns 500 response if live copy is not found
+* SITES-42705 - Break Inheritance for Thumbnail in Page Properties does not protect /jcr:content/image node from rollout
+* SITES-42735 - Investigating create live copy failures when FT_SITES-32861 is enabled
+* SITES-42736 - MSM rollout only updates first hyperlink in RTE
+* SITES-42889 - sourceRootResource property of page launch set as uuid if mix:referenceable mixin applied on source page
+* SITES-42953 - Rollout rewrites DAM links with uppercase file-extensions to non-existent paths
+* SITES-42986 - LOC: ALL: Unlocalized strings in Skyline > Commerce
+* SITES-43034 - Launches – "Live Date" column sorts alphanumerically instead of chronologically
+* SITES-43047 - Manual Rollout Skipped for Shallow Live Copies after 2026.2 Release
+* SITES-43116 - MSM Rollout dialog stuck (spinner never completes) – NPE in <code>AsyncOperationServlet.doGet</code>
+* SITES-43196 - MSM OpenAPI - "Get a Live Copy Source Details" call should return 400 when the CF is not a source
+* SITES-43197 - MSM OpenAPI - PUT /{liveCopyId}/brokenInheritanceElements returns 204 on success although it is documented to return 200
+* SITES-43198 - MSM OpenAPI - Add 400 Bad Request to "Get the Details of the Live Copy" and "Get Live Copy Sources" call schema
+* SITES-43413 - Component-level "Rollout" Action Throws "doRollout undefined" JS Error – Fails
+* SITES-43668 - Incorrect URL Reference Re-write during Blueprint Rollout with Nested Live-Copies
+* SITES-44145 - Nested Launch promotion skips production version, prevents rollback
+* SITES-44204 - MSM OpenAPI - Reset - fix Etag path, support empty body
+* SITES-44682 - Batch deactivation of blueprint pages triggers duplicate rollout events for child pages
 * FORMS-25129 - Renaming a field to include spaces breaks Rule Editor behavior. The generated script no longer executes as expected, and associated form logic stops working.
 * FORMS-24826 - Form submissions fail to complete in the MiniMed EForm Sandbox production tenant. External customers validating forms before production use cannot finish their workflows.
 * FORMS-25480 - Document of Record (DoR) output from templates with panels configured with wrapData set to true (for example, wrapInData.xdp) can omit panel data, reducing the accuracy of generated documents.
