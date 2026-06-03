@@ -86,7 +86,7 @@ If you previously disabled an integration and want to enable it again:
 1. Select **Add user** or **Add API**, then search for the Service Integration by the exact name listed in the catalog.
 1. Add the Service Integration back to the product profile. The integration resumes on its next scheduled or user-initiated run.
 
-**Example — AEM Managed CDN Integration:** Go to **Cloud Manager** > **Deployment Manager** and add **AEM Managed CDN Integration** again using **Add user** or **Add API**.
+**Example — AEM Managed CDN Integration:** Go to **Cloud Manager** > **Deployment Manager** and add **AEM Managed CDN Integration** again using **Add user** or **Add API**. 
 
 >[!NOTE]
 >
