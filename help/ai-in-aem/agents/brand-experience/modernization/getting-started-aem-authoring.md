@@ -5,6 +5,7 @@ feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 94a5e40b-af4a-42ed-922b-b1ec9bb82e24
 ---
+
 # Getting Started with the Experience Modernization Agent for AEM Authoring Projects {#getting-started-aem-authoring}
 
 For AEM authoring projects using the Universal Editor, preparation of the Experience Modernization Agent differs from the standard Edge Delivery flow. This document covers those setup differences. Once the steps below are complete, follow the main [Getting Started with the Experience Modernization Agent](getting-started.md) guide.

@@ -16,7 +16,7 @@ Reference guide for the Experience Modernization Console interface and capabilit
 
 ## Overview {#overview}
 
-The Experience Modernization Console is a hosted, AI-assisted development environment for Edge Delivery Services, exposed as a web interface at [`aemcoder.adobe.io`](https://aemcoder.adobe.io). After connecting to their GitHub project, you can immediately start prompting changes in natural language without any further setup or local environment configuration.
+The Experience Modernization Console is a hosted, AI-assisted development environment for Edge Delivery Services, exposed as a web interface at [`aemcoder.adobe.io`.](https://aemcoder.adobe.io) After connecting to their GitHub project, you can immediately start prompting changes in natural language without any further setup or local environment configuration.
 
 >[!TIP]
 >
@@ -37,7 +37,7 @@ Developers retain full control over what ships. All changes made through the con
 
 ## Navigation {#navigation}
 
-After signing into the console at [aemcoder.adobe.io](https://aemcoder.adobe.io), you arrive on the [home page](#home-page) of the console. Once you have started chatting you will be taking directly to the [chat page](#chat-page) on subsequent visits to Experience Modernization agent.
+After signing into the console at [aemcoder.adobe.io,](https://aemcoder.adobe.io) you arrive on the [home page](#home-page) of the console. Once you have started chatting you will be taking directly to the [chat page](#chat-page) on subsequent visits to Experience Modernization agent.
 
 ![Home screen of console](assets/console-home.png)
 
@@ -58,7 +58,7 @@ The **Home** page is your starting point for using the console.
 * A **Start chatting** button that takes you to the [chat page](#chat-page).
 * A **Settings** button to access the [project settings](#settings-page) page
 
-### Prompt input {#prompt-input}
+### Prompt Input {#prompt-input}
 
 The prompt input provides controls for interacting with the AI.
 
@@ -70,9 +70,9 @@ The prompt input provides controls for interacting with the AI.
 
 ## Chat Page {#chat-page}
 
-The [**Chat** page](https://aemcoder.adobe.io/chat) is the main interface for interacting with Experience Modernization agent. This page is split into a resizable [chat panel](#chat-panel) and [workspace panel](#workspace-panel).
+The [**Chat** page](https://aemcoder.adobe.io/chat) is the main interface for interacting with Experience Modernization agent. This page is split into a resizable [chat panel](#chat-panel) and [workspace panel.](#workspace-panel)
 
-## Chat panel {#chat-panel}
+## Chat Panel {#chat-panel}
 
 The chat panel allows you to view and continue your conversation with the Experience Modernization agent. The chat panel includes the chat message history and a [prompt input](#prompt-input) for making additional requests of the console.
 
@@ -82,13 +82,13 @@ The chat panel header includes links for navigating to the [Home](#home-page) an
   * **Clear chat**: This resets the conversation and clears the AI's context window. Use this option when starting a new task unrelated to the previous conversation.
   * **Download chat**: This downloads the conversation history as a markdown file.
 
-## Workspace panel {#workspace-panel}
+## Workspace Panel {#workspace-panel}
 
 The workspace panel displays all the content and code for your site. The header at the top of the panel includes a picker to select the specific view you want to focus on. The actions available in the workspace header will change based on the currently selected view.
 
-### Content views {#content-view}
+### Content Views {#content-view}
 
-The **Content views** contain multiple modes for displaying the selected page content. A collapsible file browser displays all the availble page content for your site.
+The **Content views** contain multiple modes for displaying the selected page content. A collapsible file browser displays all the available page content for your site.
 
 * **Preview** (document with magnifying glass icon) to view the rendered HTML content 
 * **Document view** (document icon) to view the underlying document authoring content structure, respectively
@@ -98,7 +98,7 @@ The **Content views** contain multiple modes for displaying the selected page co
 
 ![Content view](assets/content-imported.png)
 
-The following actions are available in the contnet views:
+The following actions are available in the content views:
 
 * **Refresh** icon to update the preview panel rendering.
 * **Responsive mode** to view the rendered HTML content in a desktop, tablet, or mobile view
@@ -110,7 +110,7 @@ The following actions are available in the contnet views:
 
 ![Upload content](assets/upload-content.png)
 
-### Code views {#code-view}
+### Code Views {#code-view}
 
 The **Code views** provides tools for browsing your project files and managing code changes. The view includes a file browser for an overview of your code files or changes as diffs, and a preview area for viewing the selected file or changes.
 
@@ -119,12 +119,12 @@ The **Code views** provides tools for browsing your project files and managing c
 
 ![Code view](assets/code-view.png)
 
-#### File actions {#file-actions}
+#### File Actions {#file-actions}
 
 * **Add to chat** adds the selected file (or selected lines  from the file) to the chat panel for context.
 * **Download** download the selected file to your local file system
 
-#### Changes actions {#changes-actions}  
+#### Changes Actions {#changes-actions}  
 
 * **Add** (+ icon) to stage the changed file
 * **Discard** (arrow icon) to discard the changed file

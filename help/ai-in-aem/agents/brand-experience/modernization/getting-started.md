@@ -33,7 +33,7 @@ Learn the first steps to get started using the Experience Modernization Agent an
 1. Navigate to [`aemcoder.adobe.io`.](https://aemcoder.adobe.io)
 1. Log in with your Adobe ID.
 
-## Demo Mode
+## Demo Mode {#demo-mode}
 
 The console launches in demo mode when you first sign in. This mode allows you to explore an existing site where you can try out migrating additional pages. A banner at the bottom the screen indicates that you are in demo mode.
 
@@ -57,7 +57,7 @@ If demo mode has been exited but a new project has not been connected, subsequen
 
 ![Site connection](assets/first-sign-on.png)
 
-## Console Home
+## Console Home {#console-home}
 
 When you visit [aemcoder](https://aemcoder.adobe.io) the Home Page will appear until a chat conversation has been started. The home page allows you to get started chatting by either typing your first prompt or by selecting one of the suggested prompts.
 
@@ -89,10 +89,6 @@ Now you have both the content and styles imported into the console.
 
 ## Upload Content {#upload-content}
 
->[!TIP]
->
->If you are working on an AEM Sites and Universal Editor project, uploading content to AEM works slightly differently. Refer to [Getting Started with the Experience Modernization Agent for AEM Sites/Universal Editor Projects](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content) for specific upload instructions.
-
 To upload your content to [Document Authoring](https://da.live):
 
 1. Make sure you are in a **Content** view and then click the **Upload content** button on the top-right.
@@ -112,6 +108,10 @@ To access the uploaded content in Document Authoring, optionally click **View in
 ![Content in Document Authoring](assets/content-in-document-authoring.png)
 
 Your imported content is now in Document Authoring.
+
+>[!TIP]
+>
+>If you are working on an AEM Sites and Universal Editor project, uploading content to AEM works slightly differently. Refer to [Getting Started with the Experience Modernization Agent for AEM Sites/Universal Editor Projects](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md#upload-content) for specific upload instructions.
 
 ## Push Code Changes {#push-code-changes}
 
