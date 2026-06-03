@@ -20,7 +20,7 @@ Common use cases include:
 - Reformatting or aggregating responses from third-party APIs before they reach the browser
 - Composing and serving server-rendered HTML at the edge using content stitched from multiple backends
 
-AEM Edge Functions is compatible with both Edge Delivery Services and the AEM Cloud Service Java-stack.
+AEM Edge Functions is compatible with both Edge Delivery Services and the AEM as a Cloud Service Java-stack.
 
 ## Key Benefits {#key-benefits}
 
@@ -209,7 +209,7 @@ For the detailed technical guidance on configuring caching behavior, controlling
 
 Each Edge Function invocation runs inside a sandbox with resource limits enforced by the underlying compute platform.
 
-### Maximum Outbound Fetch Calls Per Invocation {#max-fetch-calls}
+### Maximum Outbound Fetch Calls per Invocation {#max-fetch-calls}
 
 AEM Edge Functions enforce a hard limit of **32 backend requests per execution** (that is, per incoming request handled by your function). Once this limit is reached, any further `fetch()` calls fail with the following error:
 

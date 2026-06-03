@@ -43,13 +43,52 @@ For example, search for all the **[!UICONTROL JPEG]** images with keyword `archi
 
 1. Navigate to **[!UICONTROL Modified]** > specify the date range. 
 
-    ![Basic search](assets/basic-search.png)
+   ![Basic search](assets/basic-search.png)
 
 ## Narrow your search results using filters {#narrow-down-search-results}
 
 Use the Filters panel to search for assets based on metadata. You can filter search results based on various search predicates. You can select all the appropriate predicates to minimize or narrow down your search results. You can choose more than 10 predicates while filtering your search results. When you select multiple options within a filter, Content Hub displays the assets that match any of the options selected within a filter. However, when you select multiple options across filters, Content Hub only displays the assets that match all options selected across filters to narrow down your search results. 
 
 The default filters include file format, approved by, date approved, expired and not expired assets, and expiration date. Administrators can also configure the filters that display in the list of filters. For more information, see [Configure Content Hub user interface](configure-content-hub-ui-options.md#configure-filters-content-hub).
+
+## AI Search in Content Hub {#ai-search-aem-assets-content-hub}
+
+AI Search in AEM Assets Content Hub is an advanced search capability that understands the meaning and intent behind a user's query rather than relying on exact keyword matches. It uses artificial intelligence (AI) and machine learning to deliver more accurate and contextually relevant results.
+
+Unlike traditional keyword-based search, which looks for exact terms, AI Search interprets relationships between words, concepts, and user intent. This ensures that users find what they are looking for—even if their query is phrased differently, contains typos, or is in another language.
+
+Some if its key benefits include:
+
+* **Multilingual support**: Search across multiple languages without requiring exact translations. Users can find relevant content regardless of their query language.
+
+* **Handles misspellings**: Interprets typos and spelling errors, ensuring accurate results even with imperfect input.
+
+* **Understands synonyms**: Delivers results for related terms and phrases, so users do not need to guess the right keyword.
+
+* **Contextually relevant search**: Recognizes the intent behind a query, not just the exact words.
+
+### Examples for AI Search in Content Hub {#examples-ai-search-aem-assets-content-hub}
+
+**Example Prompt**: *Woman drinking coffee*
+
+The traditional keyword-based search looks for exact matches of asset metadata, such as `Woman`, `drinking`, `Coffee`, and returns assets that include all these terms in the metadata.
+
+However, AI Search matches similar words such as `Girl`, `Lady` in the case of `Woman` and `Cappuccino` and `Latte` in the case of `Coffee`.
+
+Similarly, you can specify this prompt in Spanish or misspell `Woman` as `Wman` and still get the same results.
+
+
+### Enable or disable AI search in Content Hub {#enable-disable-ai-search-content-hub}
+
+Execute the following steps to enable or disable AI Search in Content Hub:
+
+1. Navigate to your user profile icon and click **[!UICONTROL Configurations]**.
+
+1. In the **[!UICONTROL Search]** tab, select **[!UICONTROL AI Search]** to enable AI Search for Content Hub or **[!UICONTROL Keyword]** to disable it.
+
+   ![AI Search in Content Hub](/help/assets/assets/ai-search-content-hub.png)
+
+1. Click **[!UICONTROL Save]**.
 
 <!--
 
@@ -113,7 +152,7 @@ The default filters include file format, approved by, date approved, expired and
         </ul>
       </td>
      </tr>
-     <!--<tr>
+     <tr>
       <td>Subject</td>
       <td>Classification of assets based on their theme. For example, colorful, hiking, outdoors.</td>
       <td>NA</td>
@@ -128,7 +167,7 @@ The default filters include file format, approved by, date approved, expired and
         </ul>
       </td>
      </tr>    
-     <!--<tr>
+     <tr>
       <td>Asset ID</td>
       <td>Unique number that identifies the asset.</td>
       <td>NA</td>
@@ -156,6 +195,57 @@ To perform Bulk Search in the [!DNL Content Hub], execute the following steps:
 1. Add a search query containing delimiters that are specified in the configuration. The search query should contain a string accompanied by multiple comma-separated values.
 
   ![Bulk Search UI](assets/bulk-search-ui.png)
+
+## Configure sorting in Content Hub {#configure-sorting-aem-assets-content-hub}
+
+Content Hub provides out-of-the-box sorting options to help users organize asset search results. Administrators can also enable custom metadata fields as sorting options so that users can sort assets based on business-specific metadata, such as Channel, Region, SKU, or Campaign.
+
+### Default sorting options {#default-sorting-options}
+
+By default, Content Hub includes the following sorting options on the Content Hub home page:
+
+* Size
+
+* Modified
+
+* Name
+
+* Relevance
+
+### Add custom metadata fields as sorting options {#add-custom-metadata-fields-for-sorting}
+
+Administrators can configure additional metadata fields to appear in the sorting menu.
+
+To enable a metadata field for sorting:
+
+1. Click the user profile icon and select **Configurations**.
+1. Navigate to the **Filters** tab.
+1. Locate the metadata field that you want to enable for sorting.
+1. Click the edit icon available for that particular metadata field.
+1. In the Edit Filter dialog, enable the **Sorting** option.
+1. Click **Confirm** and save the configuration. The updates take effect when the **Status** field value for the metadata field is displayed as `Active`.
+
+For example, enabling sorting for the Channel metadata field allows users to sort asset results using the Channel value.
+
+![Basic search](assets/enable-filters-sorting.png)
+
+### Use custom sorting options on the Content Hub home page {#use-custom-sorting-options}
+
+After you enable sorting for a metadata field:
+
+* The field appears in the sorting menu on the Content Hub home page.
+* Custom sorting fields are displayed below a separator line in the sorting menu.
+* The separator visually differentiates administrator-configured custom fields from the default out-of-the-box sorting options.
+
+For example, if the Channel metadata field is enabled for sorting, the sorting menu displays:
+
+* Default fields such as Size, Modified, Name, and Relevance
+* A separator line
+* The custom field Channel
+
+This distinction helps users quickly identify standard sorting options versus organization-specific metadata-based sorting options.
+
+![Basic search](assets/custom-sorting-options.png)
 
 ## Do more with search {#do-more-with-search}
 
