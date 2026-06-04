@@ -55,7 +55,7 @@ To get exclusive access to upcoming features before their general release, you c
 
 >[!IMPORTANT]
 >
->Beta releases contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (by way of Adobe Support Services or otherwise) the beta releases. Customers use beta releases at their own risk and should not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
+>Beta releases contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support the beta releases. Customers use beta releases at their own risk and should not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
 
 See also [AEM Beta programs](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
@@ -69,7 +69,7 @@ Cloud Manager introduces two capabilities designed to support modern delivery ar
 You can now deliver sites using Edge Delivery Services while continuing to author content in AEM Author mode. Depending on your workflow preferences, you can choose from the following authoring approaches:
 
     * Document-based authoring
-    * AEM Author-based authoring
+    * AEM-based authoring
 
 For more information, see [Create Edge Delivery site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md#one-click-edge-delivery-site).
 
@@ -83,7 +83,7 @@ To join the Beta, email [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-bet
 
 ### Faster builds with module caching {#quick-build-cm-pipelines}
 
-A new build model compiles only changed modules (rather than the entire repository) using module-level caching to shorten build times. It applies to production pipelines. You control which production pipelines use **Smart Build**.
+A new build model compiles only changed modules (rather than the entire repository) using module-level caching to reduce build times. It applies to production pipelines. You control which production pipelines use **Smart Build**.
 
 For more information, see the following:
 
@@ -117,9 +117,9 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 ## Bug fixes {#bug-fixes}
 
 * **Environment stuck in Updating with no active operation**
-    An issue is now resolved where environments could become permanently stuck in an Updating state even when no pipeline run or configuration change was in progress. Affected environments can now be managed normally without requiring manual intervention from Adobe support. (CMGR-77133)
+    An issue is now resolved where environments become permanently stuck in an Updating state even when no pipeline run or configuration change is in progress. Affected environments can now be managed normally without requiring manual intervention from Adobe support. (CMGR-77133)
 * **Advanced Networking - wrong port-forward rule deleted on duplicate source ports**
-    When two port-forwarding rules in Advanced Networking shared the same source port (portOrig), deleting one rule would incorrectly remove the other. Cloud Manager now correctly identifies and removes only the intended rule. (CMGR-77019)
+    When two port-forwarding rules in Advanced Networking share the same source port (portOrig), deleting one rule incorrectly removes the other. Cloud Manager now correctly identifies and removes only the intended rule. (CMGR-77019)
 
 <!-- There are no significant bug fixes in the June 2026 Cloud Manager release. -->
 
