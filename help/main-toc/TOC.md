@@ -755,7 +755,7 @@ user-guide-title: AEM as a Cloud Service
       + [Optimize images](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
       + [Create vanity URLs](/help/assets/vanity-urls.md)
       + [Cache Management](/help/assets/cache-management-dynamic-media-open-api.md)
-      + [Multi audio and Multi captions](/help/assets/multi-audio-multi-captions.md)
+      + [Multi audio and Multi captions](/help/assets/multi-audio-multi-caption.md)
       + [Frequently asked questions](/help/assets/dynamic-media-open-apis-faqs.md)
   + Working with Assets view {#assets-view}
     + [Introduction](/help/assets/assets-view-introduction.md)
