@@ -27,18 +27,17 @@ The next planned release is Thursday, July 9, 2026.
 * **Customer-managed keys (CMK) self-service**
     Customers can now configure Customer-Managed Keys directly from Cloud Manager, without requiring Adobe support involvement. A new CMK option is available during program creation, in program edit settings, and on the Environment details page.
 
-    CMK status is displayed on program cards.
+    CMK status is displayed on My Programs cards and in the license dashboard, giving administrators clear visibility into encryption configuration across all environments. This approach simplifies compliance workflows for organizations that require control over their own encryption keys.
 
-    
-    
-    
-    
-    
-     and in the license dashboard, giving administrators clear visibility into encryption configuration across all environments. This simplifies compliance workflows for organizations that require control over their own encryption keys. 
+    ![My Programs card showing a Customer Managed Key icon](/help/implementing/cloud-manager/release-notes/assets/cmk-status-on-program-card.png)
+    *My Programs card*
+  
 
-<!-- CMGR-74880 -->
+    ![Set up for production dialog box showing Security tab with Customer Managed Keys option selected](/help/implementing/cloud-manager/release-notes/assets/cmk-security-tab-in-set-up-for-production-dlg.png)
+    *Customer Managed Keys selected in the Security tab of the Set up for production dialog box*
 
-    KT: KT - CMK configuration for Cloud Service programs
+    ![Showing the number of Customer Managed Keys available in the license dashboard](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
+    *Showing the number of Customer Managed Keys available in the license dashboard*
 
 * **Environment variable limit increased to 400**
     Cloud Manager now supports up to 400 environment variables per environment, doubled from the previous limit of 200. 
