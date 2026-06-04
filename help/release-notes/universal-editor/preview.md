@@ -22,4 +22,6 @@ These **preview** release notes are provided as a convenience so you know what c
 
 ## Upcoming Changes {#upcoming-improvements}
 
-* 
+* An issue has been fixed where empty nodes were not properly deleted from the JCR during certain operations.
+* Decorative images are now properly hidden from assistive technologies.
+
