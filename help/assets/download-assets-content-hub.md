@@ -26,7 +26,7 @@ To download one or more assets and their renditions, execute the following steps
 
    ![download an asset](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
 
-   Alternatively, click the asset thumbnail and then click ![download](/help/assets/assets/download-icon.svg) to select and view the available renditions on the dialog box before downloading them.
+   Alternatively, click the asset thumbnail and then click ![download](/help/assets/assets/download-icon.svg) to select and view the available renditions on the dialog box before downloading them. You can also copy the delivery URL for the asset renditions if you navigate to Asset properties and click the Download icon. The option to copy the delivery URL is available only if the approval target of the asset is [set to Delivery](/help/assets/approve-assets-content-hub.md#set-approval-target).
 
 * To download multiple assets and their renditions:
    1. Select the assets, click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** and review the list of selected assets in the **[!UICONTROL Download assets]** dialog box. Click ![unselect](/help/assets/assets/Close.svg) next to an asset to unselect it from the list. 
