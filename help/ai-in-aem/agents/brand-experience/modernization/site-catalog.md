@@ -113,7 +113,7 @@ To override and analyze every page, tell the agent:
 * `analyze every page`
 * `run the full site`
 
-## Bulk Import Workflow {#bulk-import}
+## Bulk Import Workflow {#bulk-import}
 
 The site catalog skill is part of the recommended approach for migrating a full site.
 
