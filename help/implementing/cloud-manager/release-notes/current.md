@@ -24,13 +24,30 @@ The next planned release is Thursday, July 9, 2026.
 
 ## What's new - Cloud Manager {#cloud-manager-whats-new}
 
+* **Customer-managed keys (CMK) self-service**
+    Customers can now configure Customer-Managed Keys directly from Cloud Manager, without requiring Adobe support involvement. A new CMK option is available during program creation, in program edit settings, and on the Environment details page.
 
+    CMK status is displayed on program cards.
 
+    
+    
+    
+    
+    
+     and in the license dashboard, giving administrators clear visibility into encryption configuration across all environments. This simplifies compliance workflows for organizations that require control over their own encryption keys. 
 
+<!-- CMGR-74880 -->
 
+    KT: KT - CMK configuration for Cloud Service programs
 
+* **Environment variable limit increased to 400**
+    Cloud Manager now supports up to 400 environment variables per environment, doubled from the previous limit of 200. 
 
+    Pipeline variables remain capped at 200. The UI enforces the correct limit per context and prevents additions beyond the allowed threshold.
 
+    This change supports customers with more complex deployment configurations that require a larger number of environment-specific settings.
+
+<!--CMGR-76755 · CMGR-76753 -->
 
 
 ## Beta programs {#private-beta-program}
@@ -100,7 +117,12 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 ## Bug fixes {#bug-fixes}
 
-There are no significant bug fixes in the June 2026 Cloud Manager release.
+* **Environment stuck in Updating with no active operation**
+    An issue is now resolved where environments could become permanently stuck in an Updating state even when no pipeline run or configuration change was in progress. Affected environments can now be managed normally without requiring manual intervention from Adobe support. (CMGR-77133)
+* **Advanced Networking - wrong port-forward rule deleted on duplicate source ports**
+    When two port-forwarding rules in Advanced Networking shared the same source port (portOrig), deleting one rule would incorrectly remove the other. Cloud Manager now correctly identifies and removes only the intended rule. (CMGR-77019)
+
+<!-- There are no significant bug fixes in the June 2026 Cloud Manager release. -->
 
 <!-- ## Known issues {#known-issues} -->
 
