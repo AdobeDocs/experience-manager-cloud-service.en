@@ -44,10 +44,8 @@ Before you install the connector, follow these pre-installation steps:
    >* p{PROGRAM_ID}.external.adobeaemcloud.com
    >
    >* To find the IP of your program, open a terminal window and run a command, such as:
-   >
    >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >
    >    ```
 
 1. Ensure that the following overlays do not exist in [!DNL Experience Manager] repository. If you have pre-existing overlays on these paths you either need to remove the overlays, or merge the delta of changes between the two:
