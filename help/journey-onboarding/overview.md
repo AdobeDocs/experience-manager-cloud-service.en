@@ -109,3 +109,4 @@ If you want to know what Adobe recommends on how to get your team onboarded onto
 The following are additional, optional resources if you would like to go beyond the content of the onboarding journey.
 
 * [Onboarding to AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding) - This brief video gives an overview of the Cloud Service onboarding process for AEM.
+

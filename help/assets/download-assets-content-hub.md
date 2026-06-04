@@ -20,10 +20,13 @@ See the [types of renditions available in Content Hub](#types-of-renditions).
 To download one or more assets and their renditions, execute the following steps: 
 
 * To download a single asset and its renditions:
+
    1. Select ![download](/help/assets/assets/download-icon.svg) available on the asset card to preview the asset and its available renditions.
    1. Select the available renditions and click the **[!UICONTROL Download]** option in the dialog box to download the selected renditions as a ZIP file. If the dialog box displays an asset license (for licensed asset), accept the licensing terms and conditions and click **[!UICONTROL Download]**. 
-![download an asset](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
-    Alternatively, click the asset thumbnail and then click ![download](/help/assets/assets/download-icon.svg) to select and view the available renditions on the dialog box before downloading them.
+
+   ![download an asset](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+
+   Alternatively, click the asset thumbnail and then click ![download](/help/assets/assets/download-icon.svg) to select and view the available renditions on the dialog box before downloading them. You can also copy the delivery URL for the asset renditions if you navigate to Asset properties and click the Download icon. The option to copy the delivery URL is available only if the approval target of the asset is [set to Delivery](/help/assets/approve-assets-content-hub.md#set-approval-target).
 
 * To download multiple assets and their renditions:
    1. Select the assets, click ![download](/help/assets/assets/download-icon.svg) **[!UICONTROL Download]** and review the list of selected assets in the **[!UICONTROL Download assets]** dialog box. Click ![unselect](/help/assets/assets/Close.svg) next to an asset to unselect it from the list. 
@@ -36,18 +39,22 @@ To download one or more assets and their renditions, execute the following steps
       > * **[!UICONTROL Create a separate folder for each asset]** option is available only for authenticated [!DNL Content Hub] users. [!DNL Content Hub] enables public users to download assets as individual assets.
 
    1. Click **[!UICONTROL Download]** to download your selected assets and their renditions. 
+
 ![download multiple assets](/help/assets/assets/bulk-asset-download-content-hub.png)
 
 You can continue using [!DNL Content Hub] while the download is in progress. Content Hub does not interrupt your workflow during the download process.
+
 ![download multiple assets](/help/assets/assets/download-assets-notification-ch.png)
+
 If **[!UICONTROL Download assets]** dialog box displays assets licenses, then select each license from the left pane ([!UICONTROL T&C Documents] section) to preview the license and display the selected assets associated with the license in the middle pane of the dialog box. After reviewing each license, select the renditions, click **[!UICONTROL I have read and accepted the terms & conditions mentioned above]** and select **[!UICONTROL Download]** to download them.
+
 ![download multiple assets](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
-   >[!NOTE]
-   >
-   >* The renditions display only if their visibility is enabled using the [[!UICONTROL Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
-   >* The users with access to [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) can view and download dynamic and smart crop renditions.
-   >* The preview of the license displays only if the asset is approved using [!DNL Assets as a Cloud Service] authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+>[!NOTE]
+>
+>* The renditions display only if their visibility is enabled using the [[!UICONTROL Configuration]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub) User Interface.
+>* The users with access to [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) can view and download dynamic and smart crop renditions.
+>* The preview of the license displays only if the asset is approved using [!DNL Assets as a Cloud Service] authoring environment. For more information, see [Manage licensed assets on Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 <!--
 
