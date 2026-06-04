@@ -4,8 +4,6 @@ description: Versioning and Commenting in Interactive Communication Editor in AE
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
 exl-id: ca9917c0-d8bb-4381-afab-7ab888d992e8
 ---
 # Versioning and Commenting in Interactive Communication Editor
@@ -84,21 +82,38 @@ The IC will be restored to the selected version, allowing authors to undo unwant
 
 ## Compare Two Versions
 
-Authors can visually compare two versions to understand changes made across updates. This is useful for UI, layout, or content-related reviews.
+You can compare any two versions of an Interactive Communication side by side as PDF previews, making it easy to spot layout and static content differences without opening each version individually.
 
-To compare:
+>[!NOTE]
+>
+> This comparison covers layout and static content only. Dynamic field values are not included.
 
-1. Navigate to Versions for the selected IC.
+To compare two versions:
 
-1. Choose any version from the list.
+1. Navigate to **Forms > Forms & Documents** in AEM.
 
-1. Select Compare to Current.
+1. Select the Interactive Communication you want to compare.
 
-A side-by-side preview displays the differences between the two versions.
+1. Click **Compare Version** from the action toolbar.
+
+1. Choose the version to compare from the version selector.
+
+1. A new tab opens with the selected version and the current version displayed side by side as PDF previews.
+
+**Current limitations:**
+
+- **Large text blocks:** If a paragraph has been rewritten or rearranged, both pages render identically to their source PDF — there is no visual cue that text content has changed.
+- **Dynamic data:** Dynamic field values are not rendered in the comparison view. Only static layout and content differences are visible.
+
+For step-by-step instructions, see [Compare Interactive Communication Versions](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md).
 
 ## Add Comments to an Interactive Communication
 
-Commenting enables reviewers and authors to collaborate directly inside the Interactive Communication Editor.
+Commenting enables reviewers and authors to add general notes directly inside the Interactive Communication Editor using the Comments panel.
+
+>[!NOTE]
+>
+> **Comments vs. Annotations:** The Comments panel supports general notes attached to the IC as a whole. For positioned, component-level review feedback — where a reviewer pins a comment to a specific field or section on the canvas — use the Annotations feature instead. See [Review and Annotate an Interactive Communication](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md).
 
 To add a comment:
 
@@ -106,15 +121,15 @@ To add a comment:
 
 1. Navigate to the Comments panel.
 
-1. Enter your feedback or notes and click Add Comment.
+1. Enter your feedback or notes and click **Add Comment**.
 
 Comments help streamline workflows between authors, reviewers, and stakeholders.
 
 >[!NOTE]
 >
->When using commenting inside Interactive Communications, the standalone "Review and Approval" workflow for forms is automatically disabled.
+> When using commenting inside Interactive Communications, the standalone "Review and Approval" workflow for forms is automatically disabled.
 
-Versioning and commenting in the Interactive Communication Editor provide:
+Together, these tools give teams:
 
 - Structured content governance
 
@@ -122,6 +137,12 @@ Versioning and commenting in the Interactive Communication Editor provide:
 
 - Traceable change history
 
-- Easy rollback and comparison features
+- Easy rollback and comparison
 
-These capabilities support controlled authoring, compliance, and iteration throughout the lifecycle of customer communications.
+Use them to maintain controlled authoring, meet compliance requirements, and iterate confidently throughout the lifecycle of customer communications.
+
+## See also
+
+- [Compare Interactive Communication Versions](/help/forms/interactive-communication/howto/compare-interactive-communication-versions.md)
+- [Review and Annotate an Interactive Communication](/help/forms/interactive-communication/howto/review-and-annotate-interactive-communication.md)
+- [Create an Interactive Communication](/help/forms/interactive-communication/create-interactive-communication.md)

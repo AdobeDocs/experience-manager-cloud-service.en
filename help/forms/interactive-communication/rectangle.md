@@ -103,3 +103,9 @@ Rectangles can be combined with other layout elements like subforms or container
 - Hide rectangles if they are only needed for design purposes during editing but not required in the final output. 
 
 The Rectangle component is a non-interactive yet powerful tool in the IC Editor. When styled and positioned effectively, it enhances layout precision, visual flow, and user experience without adding complexity to data binding or interactivity.
+
+## See also
+
+- [Line Component](/help/forms/interactive-communication/line.md)
+- [Image Component](/help/forms/interactive-communication/image.md)
+- [Handle Content Overflow in Interactive Communication Editor](/help/forms/interactive-communication/handle-content-overflow.md)

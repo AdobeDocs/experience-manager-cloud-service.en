@@ -102,3 +102,9 @@ Authors can place the field within subforms or layout containers for alignment a
 - Bind the field to a meaningful schema path if integration with back-end  
 
 The Image Field component in interactive communication editor is a versatile component that enhances form interactivity by enabling visual content uploads. When designed with styling, validation, and data binding, it supports a seamless user experience and efficient data capture for image-based submissions.
+
+## See also
+
+- [Image Component](/help/forms/interactive-communication/image.md)
+- [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
+- [Use the Rule Editor in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md)

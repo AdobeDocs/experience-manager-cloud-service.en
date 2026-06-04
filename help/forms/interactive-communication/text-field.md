@@ -124,3 +124,11 @@ Authors can place the field in subforms or layout grids for alignment and attach
 - Bind directly to the data model whenever possible for simpler maintenance. 
 
 The Text Field component in the IC editor is a versatile building block that streamlines data capture. When configured thoughtfully, with well-chosen typography, clear labels, proper validation, and solid data binding, it delivers a seamless, user-friendly experience and reliable data for downstream processing.
+
+## See also
+
+- [Text Box Component](/help/forms/interactive-communication/text-box.md)
+- [Numeric Field Component](/help/forms/interactive-communication/numeric-field.md)
+- [Unbound Variable Component](/help/forms/interactive-communication/unbound-variable.md)
+- [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
+- [Use the Rule Editor in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md)

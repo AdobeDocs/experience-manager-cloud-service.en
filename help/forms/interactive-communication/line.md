@@ -104,3 +104,8 @@ The Line component is often used to:
 - Hide unnecessary lines to avoid distraction while preserving layout spacing. 
 
 The Line component in the Interactive Communication editor is a simple yet powerful design element. When used strategically, it enhances the visual structure of communication documents, helping users better navigate content and ensuring a cleaner, more polished layout.
+
+## See also
+
+- [Rectangle Component](/help/forms/interactive-communication/rectangle.md)
+- [Image Component](/help/forms/interactive-communication/image.md)

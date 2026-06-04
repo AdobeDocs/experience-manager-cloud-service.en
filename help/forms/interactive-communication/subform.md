@@ -101,3 +101,9 @@ Subforms can also be used as containers for drag-and-drop design alignment in bo
 - Apply conditional visibility rules to optimize user experience in complex forms. 
 
 The **Subform** component in the Interactive Communication editor provides a powerful way to structure and control complex form layouts. Whether organizing input fields, managing dynamic content, or enabling modular design, subforms enhance both usability and maintainability across document templates.
+
+## See also
+
+- [Handle Content Overflow in Interactive Communication Editor](/help/forms/interactive-communication/handle-content-overflow.md)
+- [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
+- [Use the Rule Editor in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md)

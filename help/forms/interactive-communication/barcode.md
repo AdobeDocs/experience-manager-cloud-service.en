@@ -148,3 +148,8 @@ Authors can embed the barcode in layout containers and style it according to the
 - Maintain adequate margins to prevent clipping when printed. 
 
 The Barcode component in the Interactive Communication editor empowers document creators to bridge the gap between digital and physical systems. When implemented effectively, it enhances automation, improves user convenience, and supports seamless integration with scanning devices and workflows.
+
+## See also
+
+- [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
+- [Generate PDF Preview in Interactive Communication Editor](/help/forms/interactive-communication/generate-pdf-preview.md)

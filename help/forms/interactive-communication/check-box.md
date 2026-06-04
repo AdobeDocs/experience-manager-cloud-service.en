@@ -114,3 +114,9 @@ Check boxes can be placed inside layout grids or panels and grouped together for
 - Use visibility rules when checkboxes are dependent on prior inputs or conditions. 
 
 The Check Box component in the Interactive Communication editor is a simple yet essential component for binary inputs. With support for styling, conditional presence, and flexible data binding, it plays a key role in enhancing interactivity and user control in smart digital forms. When implemented with thoughtful labels, consistent styling, and meaningful data integration, checkboxes contribute significantly to a smooth and intuitive form experience.
+
+## See also
+
+- [Radio Button Component](/help/forms/interactive-communication/radio-button.md)
+- [Configure Data Binding in Interactive Communication Editor](/help/forms/interactive-communication/configure-data-binding.md)
+- [Use the Rule Editor in Interactive Communication Editor](/help/forms/interactive-communication/use-the-rule-editor.md)
