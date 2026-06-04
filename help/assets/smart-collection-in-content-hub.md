@@ -33,7 +33,6 @@ To create a Smart Collection:
  >[!NOTE]
  >
  >A Smart Collection does not store individual assets. It stores the search criteria and automatically includes assets that match the defined filters.
-
 6. In the **New Collection** dialog, specify the following details:
    * Title for the collection
    * Optional description
@@ -41,7 +40,6 @@ To create a Smart Collection:
    * Collection visibility (Private or Public)
    * Access settings based on selected visibility
     ![Create Smart Collection](assets/create-sc.png)
-
 7. Select **Create smart collection**.
 
 The Smart Collection is created and automatically includes assets that match the configured search criteria.
