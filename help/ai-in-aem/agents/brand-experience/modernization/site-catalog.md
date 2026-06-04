@@ -100,7 +100,7 @@ By default, the skill limits deep page analysis to 1000 URLs. For sites with up 
 
 For sites with more than 1000 URLs, the agent pauses and asks how to proceed:
 
-* Increase the sampling cap (up to a maximum 5000 URLs)
+* Increase the sampling cap (up to a maximum 4000 URLs)
 * Analyze a specific group only (e.g. only `/products/*` or `/blog/*`)
 * Analyze all URLs and run the full site with no sampling
 
@@ -129,4 +129,4 @@ The site catalog skill has the following limitations.
 
 * **Public sites only** — The target must be publicly accessible (no authentication, VPN, or firewall).
 * **Dynamic content is not supported** — Content requiring user interaction to appear in the DOM may not be captured.
-* **Default 1000 URL limit** - The deep analysis phase is by default limited to 1000 URLs, [which can be overridden](#sampling) to up to a maximum of 5000 URLs.
+* **Default 1000 URL limit** - The deep analysis phase is by default limited to 1000 URLs, [which can be overridden](#sampling) to up to a maximum of 4000 URLs.
