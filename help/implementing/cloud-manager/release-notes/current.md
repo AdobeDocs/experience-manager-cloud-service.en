@@ -1,40 +1,61 @@
 ---
-title: Release Notes for Cloud Manager 2026.5.0
-description: Learn about the release of Cloud Manager 2026.5.0 in Adobe Experience Manager as a Cloud Service.
+title: Release Notes for Cloud Manager 2026.6.0
+description: Learn about the release of Cloud Manager 2026.6.0 in Adobe Experience Manager as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 ---
-# Release notes for Cloud Manager 2026.5.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
+# Release notes for Cloud Manager 2026.6.0 in Adobe Experience Manager as a Cloud Service {#release-notes}
 
-<!-- https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2025.08.0+Release -->
+<!-- 
+https://wiki.corp.adobe.com/display/DMSArchitecture/%5BKT%5D+Cloud+Manager+2025.08.0+Release 
+-->
 
-Learn about the release of Cloud Manager 2026.5.0 in AEM (Adobe Experience Manager) as a Cloud Service.
+Learn about the release of Cloud Manager 2026.6.0 in AEM (Adobe Experience Manager) as a Cloud Service.
 
 See also the [current release notes for Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Release dates {#release-date}
 
-The release date for Cloud Manager 2026.5.0 in AEM as a Cloud Service is Thursday, May 7, 2026. 
+The release date for Cloud Manager 2026.6.0 in AEM as a Cloud Service is Thursday, June 4, 2026. 
 
-The next planned release is Thursday, June 4, 2026.
+The next planned release is Thursday, July 9, 2026.
 
 
 ## What's new - Cloud Manager {#cloud-manager-whats-new}
 
-* **Soft delete for a production program**
+* **Customer-managed keys (CMK) self-service**
+    Customers can now configure Customer-Managed Keys directly from Cloud Manager, without requiring Adobe support involvement. A new CMK option is available during program creation, in program edit settings, and on the Environment details page.
 
-    Cloud Manager now allows customers to delete production programs using a soft delete workflow. You can restore deleted programs within 30 days, providing you with an additional safety window before permanent deletion. This feature is being rolled out progressively throughout May.
+    CMK status is displayed on My Programs cards and in the license dashboard, giving administrators clear visibility into encryption configuration across all environments. This approach simplifies compliance workflows for organizations that require control over their own encryption keys.
 
-    See [Mark a production program for deletion](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-production-program).
+    ![My Programs card showing a Customer Managed Key icon](/help/implementing/cloud-manager/release-notes/assets/cmk-status-on-program-card.png)
+    *My Programs card*
+  
+
+    ![Set up for production dialog box showing Security tab with Customer Managed Keys option selected](/help/implementing/cloud-manager/release-notes/assets/cmk-security-tab-in-set-up-for-production-dlg.png)
+    *Customer Managed Keys selected in the Security tab of the Set up for production dialog box*
+
+    ![Showing the number of Customer Managed Keys available in the license dashboard](/help/implementing/cloud-manager/release-notes/assets/cmk-license-dashboard.png)
+    *Showing the number of Customer Managed Keys available in the license dashboard*
+
+* **Environment variable limit increased to 400**
+    Cloud Manager now supports up to 400 environment variables per environment, doubled from the previous limit of 200. 
+
+    Pipeline variables remain capped at 200. The UI enforces the correct limit per context and prevents additions beyond the allowed threshold.
+
+    This change supports customers with more complex deployment configurations that require a larger number of environment-specific settings.
+
+<!--CMGR-76755 · CMGR-76753 -->
+
 
 ## Beta programs {#private-beta-program}
 
-Participate in Cloud Manager's beta programs to get exclusive access to upcoming features before their general release.
+To get exclusive access to upcoming features before their general release, you can participate in Cloud Manager's beta programs.
 
 >[!IMPORTANT]
 >
->Beta releases may contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (through Adobe Support Services or otherwise) the beta releases. Adobe advises customers to use caution and not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Accordingly, any use of the beta releases is entirely at the customer's own risk.
+>Beta releases contain defects and are provided "AS IS" without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support the beta releases. Customers use beta releases at their own risk and should not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
 
 See also [AEM Beta programs](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
@@ -45,10 +66,10 @@ The following beta program opportunities are currently available:
 Cloud Manager introduces two capabilities designed to support modern delivery architectures.
 
 * **Edge Delivery Services with AEM Authoring**
-You can now deliver sites using Edge Delivery Services while continuing to author content in AEM Author mode. Depending on your workflow preferences, you can choose between the following authoring approaches:
+You can now deliver sites using Edge Delivery Services while continuing to author content in AEM Author mode. Depending on your workflow preferences, you can choose from the following authoring approaches:
 
     * Document-based authoring
-    * AEM Author-based authoring
+    * AEM-based authoring
 
 For more information, see [Create Edge Delivery site in Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md#one-click-edge-delivery-site).
 
@@ -62,7 +83,7 @@ To join the Beta, email [grp-beta_xwalk-publish_config@adobe.com](mailto:grp-bet
 
 ### Faster builds with module caching {#quick-build-cm-pipelines}
 
-A new build model compiles only changed modules (rather than the entire repository) using module-level caching to shorten build times. It applies to production pipelines. You control which production pipelines use **Smart Build**.
+A new build model compiles only changed modules (rather than the entire repository) using module-level caching to reduce build times. It applies to production pipelines. You control which production pipelines use **Smart Build**.
 
 For more information, see the following:
 
@@ -95,7 +116,12 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 ## Bug fixes {#bug-fixes}
 
-There are no significant bug fixes in the May 2026 Cloud Manager release.
+* **Environment stuck in Updating with no active operation**
+    An issue is now resolved where environments become permanently stuck in an Updating state even when no pipeline run or configuration change is in progress. Affected environments can now be managed normally without requiring manual intervention from Adobe support. (CMGR-77133)
+* **Advanced Networking - wrong port-forward rule deleted on duplicate source ports**
+    When two port-forwarding rules in Advanced Networking share the same source port (portOrig), deleting one rule incorrectly removes the other. Cloud Manager now correctly identifies and removes only the intended rule. (CMGR-77019)
+
+<!-- There are no significant bug fixes in the June 2026 Cloud Manager release. -->
 
 <!-- ## Known issues {#known-issues} -->
 
