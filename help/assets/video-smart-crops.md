@@ -5,7 +5,8 @@ role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="Applies to AEM Assets."
 ---
 
-# Apply Video Smart Crops to approved videos {#apply-video-smart-crops-dmwoapi}
+Apply Video Smart Crops to approved videos {#apply-video-smart-crops-dmwoapi}
+================================================
 
 [!DNL Dynamic Media with OpenAPI capabilities] enables you to generate Video Smart Cropped outputs for video assets in [!DNL Adobe Experience Manager (AEM)].
 
@@ -13,7 +14,8 @@ Video Smart Crops analyze video content and dynamically adjust framing to keep t
 
 To use this feature, configure the metadata schema for video assets. Once enabled, users can apply Video Smart Crops by updating asset metadata and approving the asset.
 
-## Before you begin {#prerequisites-for-video-smart-crops}
+Before you begin {#prerequisites-for-video-smart-crops}
+--------------------------------------------------------
 
 Ensure you have:
 
@@ -22,7 +24,8 @@ Ensure you have:
 * Dynamic Media with OpenAPI capabilities enabled for your environment.
 * Video assets available in AEM Assets.
 
-## Enable Video Smart Crops for videos (Admin) {#enable-video-smart-crops}
+Enable Video Smart Crops for videos (Admin) {#enable-video-smart-crops}
+------------------------------------------------------------------------
 
 To enable Video Smart Crops, configure the metadata schema used for video assets.
 
@@ -54,7 +57,8 @@ Execute the following steps:
 
 > **NOTE:** If the `dm_video` metadata schema is used in your environment, ensure that the same configuration is also applied to the `dm_video` schema. This ensures consistent behavior of Video Smart Crops across all video schema types.
 
-## Apply Video Smart Crops to approved videos {#apply-video-smart-crops}
+Apply Video Smart Crops to approved videos {#apply-video-smart-crops}
+----------------------------------------------------------------------
 
 You can apply Video Smart Crops to video assets by enabling the metadata field and approving the asset.
 
@@ -72,7 +76,8 @@ Execute the following steps:
 
 A confirmation message displays after the properties are updated successfully.
 
-## View Video Smart Cropped outputs {#view-video-smart-crops}
+View Video Smart Cropped outputs {#view-video-smart-crops}
+----------------------------------------------------------
 
 Once Video Smart Crops are generated, include the `mode=smartcrop` parameter in the `/play` endpoint video delivery request to render them.
 
