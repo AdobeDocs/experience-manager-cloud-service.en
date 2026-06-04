@@ -37,18 +37,17 @@ Before you install the connector, follow these pre-installation steps:
 
    * [Workfront Event Subscription API IPs](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html)
 
-   >[!IMPORTANT]
-   >
-   >* If you have Advanced Networking configured for your program and are using IP Allow Listing, then due to a limitation with the Enhanced Workfront Connector architecture you also need to add the program egress IP to the allow-list in Cloud Manager.
-   >
-   >* p{PROGRAM_ID}.external.adobeaemcloud.com
-   >
-   >* To find the IP of your program, open a terminal window and run a command, such as:
-   >
-   >    ```
-   >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >
-   >    ```
+> [!IMPORTANT]
+>
+> * If you have Advanced Networking configured for your program and are using IP Allow Listing, then due to a limitation with the Enhanced Workfront Connector architecture you also need to add the program egress IP to the allow-list in Cloud Manager.
+>
+> * Program egress host: `p{PROGRAM_ID}.external.adobeaemcloud.com`
+>
+> * To find the IP of your program, open a terminal window and run a command, such as:
+>
+>   ```
+>   dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
+>   ```
 
 1. Ensure that the following overlays do not exist in [!DNL Experience Manager] repository. If you have pre-existing overlays on these paths you either need to remove the overlays, or merge the delta of changes between the two:
 
